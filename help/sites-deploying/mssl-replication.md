@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Utilizza la procedura seguente per creare una chiave privata e un certificato au
 
    | Opzione | Autore | Pubblicazione |
    |---|---|---|
-   | -alias | creazione | pubblicazione |
+   | -alias | author | pubblicazione |
    | -keystore | author.keystore | publish.keystore |
 
 1. Per esportare il certificato, immetti il comando seguente utilizzando i valori di opzione della tabella seguente:
@@ -80,7 +80,7 @@ Utilizza la procedura seguente per creare una chiave privata e un certificato au
 
    | Opzione | Autore | Pubblicazione |
    |---|---|---|
-   | -alias | creazione | pubblicazione |
+   | -alias | author | pubblicazione |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -134,7 +134,7 @@ Genera una chiave privata e un certificato in formato pkcs#12. Utilizzare [openS
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -in | author.cer | publish.cer |
-   | -name | creazione | pubblicazione |
+   | -name | author | pubblicazione |
 
 ## Installare la chiave privata e TrustStore in Author {#install-the-private-key-and-truststore-on-author}
 
@@ -202,8 +202,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 ### Installare il certificato di authoring {#install-the-author-certificate}
 
 1. Apri la pagina Gestione utente per l’istanza Publish. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Individua l’account utente utilizzato per eseguire le richieste di replica e tocca o fai clic sul nome utente.
-1. Se nell&#39;area Impostazioni account viene visualizzato il collegamento Crea TrustStore, fare clic sul collegamento, creare una password per il TrustStore e fare clic su OK.
+1. Se nell&#39;area Archivio fonti attendibili globale viene visualizzato il collegamento Crea TrustStore, fare clic sul collegamento, creare una password per il TrustStore e fare clic su OK.
 1. Nell&#39;area Impostazioni account fare clic su Gestisci TrustStore.
 1. Fare clic su Aggiungi certificato da file CER.
 1. Accertati che l’opzione Mappa certificato a utente sia selezionata. Fai clic su Seleziona file di certificato, seleziona author.cer, quindi fai clic su Apri.
