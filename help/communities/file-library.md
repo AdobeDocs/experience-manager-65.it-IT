@@ -1,8 +1,6 @@
 ---
 title: Funzione Libreria file
-seo-title: File Library Feature
 description: La funzione Libreria file consente ai visitatori del sito che hanno effettuato l'accesso di caricare, gestire e scaricare file
-seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '733'
 ht-degree: 9%
 
 ---
@@ -35,17 +33,17 @@ Per aggiungere una `File Library` per passare da un componente a una pagina in m
 
 * `Communities / File Library`
 
-e trascinarlo nella posizione desiderata su una pagina.
+Trascinarlo nella posizione desiderata su una pagina.
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
 
-Quando [librerie lato client richieste](/help/communities/essentials-file-library.md#essentials-for-client-side) sono inclusi, è così che `File Library` Il componente verrà visualizzato:
+Quando [librerie lato client richieste](/help/communities/essentials-file-library.md#essentials-for-client-side) sono inclusi, è così che `File Library` viene visualizzato il componente:
 
 ![file-library1](assets/file-library1.png)
 
 ### Configurazione della libreria dei file {#configuring-file-library}
 
-Seleziona la inserita `File Library` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `File Library` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo modifica.
 
 ![configure-new](assets/configure-new.png)
 
@@ -65,7 +63,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
 * **Dimensione file massima**
 
-  Questo valore limita la dimensione del file caricato. Il limite predefinito è 104857600 (10 Mb).
+  Questo valore limita la dimensione del file caricato. Il limite predefinito è 104857600 (10 MB).
 
 * **Lunghezza massima messaggio**
 
@@ -73,7 +71,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
 * **Tipi di file consentiti**
 
-  Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato in modo che siano consentiti tutti i tipi di file.
+  Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati tipi di file, non sono consentiti i tipi di file non specificati. Il valore predefinito non è specificato in modo che siano consentiti tutti i tipi di file.
 
 * **Editor Rich Text**
 
@@ -85,11 +83,11 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
 * **Consenti assegnazione tag**
 
-  Se questa opzione è selezionata, verrà abilitata la possibilità di aggiungere un tag al file. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, la possibilità di aggiungere un tag al file è abilitata. L&#39;impostazione predefinita è deselezionata.
 
 * **Namespace consentiti**
 
-  Se è selezionata l’opzione Consenti assegnazione tag, i tag disponibili saranno limitati agli spazi dei nomi selezionati. Se non è selezionata alcuna opzione, sono consentiti tutti. Il valore predefinito è tutti gli spazi dei nomi.
+  Se è selezionata l’opzione Consenti assegnazione tag, i tag disponibili sono limitati agli spazi dei nomi selezionati. Se non è selezionato alcuno spazio dei nomi, sono consentiti tutti. Il valore predefinito è tutti gli spazi dei nomi.
 
 * **Limite di suggerimenti**
 
@@ -97,7 +95,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
 * **Consenti votazione**
 
-  Se questa opzione è selezionata, verrà abilitata la possibilità di votare per un file. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, la possibilità di votare per un file è abilitata. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti Segui**
 
@@ -113,7 +111,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
 * **Pattern menzioni interfaccia**
 
-  Specifica la stringa di pattern consentita per taggare (@mention) l’utente registrato in un post. Esempio `~{{familyName}}{{givenName}}`.
+  Specifica la stringa di pattern consentita in modo da assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
 
 * **Consenti risposte concatenate**
 
@@ -129,7 +127,7 @@ Sotto **Moderazione utenti** , configura la moderazione dei commenti, se i comme
 
 * **Elimina commenti**
 
-  Se questa opzione è selezionata, il visitatore che ha pubblicato il commento potrà eliminarlo. Il valore predefinito è selezionato.
+  Se questa opzione è selezionata, il visitatore che ha pubblicato il commento può eliminarlo, se lo desidera. Il valore predefinito è selezionato.
 
 * **Rifiuta commenti**
 

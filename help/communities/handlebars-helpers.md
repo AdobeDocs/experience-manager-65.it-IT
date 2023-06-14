@@ -1,8 +1,6 @@
 ---
 title: Helper Handlebars SCF
-seo-title: SCF Handlebars Helpers
 description: Handlebars Helper metodi per facilitare il lavoro con SCF
-seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +8,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -113,7 +111,7 @@ Un helper per aggiungere due estensioni sotto un div, una per il testo completo 
 
 * **safeString**: booleano
 
-  (Facoltativo) Valore booleano che indica se applicare o meno Handlebars.SafeString() prima di restituire il risultato. Il valore predefinito è false.
+  (Facoltativo) Valore booleano che indica se applicare Handlebars.SafeString() prima di restituire il risultato. Il valore predefinito è false.
 
 ### Esempio {#example}
 
@@ -183,7 +181,7 @@ Un helper per restituire il contenuto a seconda di un condizionale di uguaglianz
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Un helper di blocco che verifica il valore corrente di [Modalità WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) in un elenco di modalità separato da stringhe.
+Un helper di blocco che verifica il valore corrente di [Modalità WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) in un elenco di modalità separato da stringhe.
 
 ### Parametri {#parameters-4}
 
@@ -193,7 +191,7 @@ Un helper di blocco che verifica il valore corrente di [Modalità WCM](https://h
 
 * **modalità**: Stringa
 
-  (Facoltativo) Un elenco separato da virgole di [Modalità WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) per eseguire il test se impostato.
+  (Facoltativo) Un elenco separato da virgole di [Modalità WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) per eseguire il test se impostato.
 
 ### Esempio {#example-2}
 
@@ -236,9 +234,9 @@ Vedi anche [Internazionalizzazione delle stringhe nel codice JavaScript](../../h
 
 Un helper per includere un componente come risorsa non esistente in un modello.
 
-Questo consente di personalizzare la risorsa a livello di programmazione più facilmente di quanto non sia possibile per una risorsa aggiunta come nodo JCR. Consulta [Aggiungere o includere un componente community](scf.md#add-or-include-a-communities-component).
+Questo metodo consente di personalizzare la risorsa a livello di programmazione più facilmente di quanto non sia possibile per una risorsa aggiunta come nodo JCR. Consulta [Aggiungere o includere un componente community](scf.md#add-or-include-a-communities-component).
 
-È possibile includere solo alcuni componenti di Communities. Per l’AEM 6.1, quelli che possono essere inclusi sono [commenti](essentials-comments.md), [valutazione](rating-basics.md), [recensioni](reviews-basics.md), e [votazione](essentials-voting.md).
+Sono disponibili solo alcuni componenti di Communities da includere. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
 Questo helper, appropriato solo sul lato server, offre funzionalità simili a [cq:include](../../help/sites-developing/taglib.md) per gli script JSP.
 
@@ -254,7 +252,7 @@ Questo helper, appropriato solo sul lato server, offre funzionalità simili a [c
 
 * **resourceType**: Stringa
 
-  (Facoltativo) il tipo di risorsa verrà impostato automaticamente sul tipo di risorsa dal contesto.
+  (Facoltativo) il tipo di risorsa viene impostato automaticamente sul tipo di risorsa dal contesto.
 
 * **modello**: Stringa
 
@@ -274,7 +272,7 @@ Questo helper, appropriato solo sul lato server, offre funzionalità simili a [c
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Questo includerà un nuovo componente commenti all’indirizzo `this.id` + /comments
+Include un nuovo componente commenti in `this.id` + /comments
 
 ## IncludeClientLib {#includeclientlib}
 
@@ -286,19 +284,19 @@ Questo helper, appropriato solo sul lato server, offre funzionalità simili a [u
 
 * **categorie**: Stringa
 
-  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Questo includerà tutte le librerie JavaScript e CSS per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
+  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Includi tutte le librerie JavaScript e CSS per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
 
 * **tema**: Stringa
 
-  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Ciò includerà tutte le librerie relative al tema (sia CSS che JS) per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
+  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Includi tutte le librerie relative al tema (sia CSS che JS) per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
 
 * **js**: Stringa
 
-  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie JavaScript per le categorie specificate.
+  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Include tutte le librerie JavaScript per le categorie specificate.
 
 * **css**: Stringa
 
-  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie CSS per le categorie specificate.
+  (Facoltativo) Un elenco di categorie di librerie client separate da virgole. Include tutte le librerie CSS per le categorie specificate.
 
 ### Esempi {#examples-2}
 
@@ -379,7 +377,7 @@ Depending on how long in the past, may return
 
 Helper che codifica una stringa di origine per il contenuto dell’elemento HTML per evitare attacchi XSS.
 
-NOTA: questa non è una convalida e non deve essere utilizzata per la scrittura di valori di attributo.
+NOTA: questo helper non è un validatore e non deve essere utilizzato per la scrittura di valori di attributo.
 
 ### Parametri {#parameters-9}
 
@@ -397,7 +395,7 @@ NOTA: questa non è una convalida e non deve essere utilizzata per la scrittura 
 
 Helper che codifica una stringa di origine per la scrittura in un valore di attributo HTML per evitare attacchi XSS.
 
-NOTA: questo non è un validatore e non deve essere utilizzato per la scrittura di attributi utilizzabili (href, src, gestori eventi).
+NOTA: questo helper non è un validatore e non deve essere utilizzato per scrivere attributi utilizzabili (href, src, gestori eventi).
 
 ### Parametri {#parameters-10}
 
@@ -415,7 +413,7 @@ NOTA: questo non è un validatore e non deve essere utilizzato per la scrittura 
 
 Helper che codifica una stringa di origine per la scrittura di contenuti di stringhe JavaScript per evitare attacchi XSS.
 
-NOTA: questa non è una convalida e non deve essere utilizzata per la scrittura in JavaScript arbitrario.
+NOTA: questo helper non è un validatore e non deve essere utilizzato per la scrittura in JavaScript arbitrario.
 
 ### Parametri {#parameters-11}
 
@@ -433,7 +431,7 @@ var input = {{xss-jsString topic-title}}
 
 Helper che bonifica un URL per la scrittura come valore di attributo HTML href o di risorsa per proteggersi da XSS.
 
-NOTA: potrebbe essere restituita una stringa vuota
+NOTA: questo helper potrebbe restituire una stringa vuota.
 
 ### Parametri {#parameters-12}
 
@@ -450,7 +448,7 @@ NOTA: potrebbe essere restituita una stringa vuota
 ## Panoramica di base di Handlebars.js {#handlebars-js-basic-overview}
 
 * Una chiamata helper Handlebars è un identificatore semplice (il *nome* dell&#39;helper), seguito da zero o più parametri separati da spazi.
-* I parametri possono essere un semplice oggetto String, number, booleano o JSON, nonché una sequenza facoltativa di coppie chiave-valore (argomenti hash) come ultimi parametri.
+* I parametri possono essere un semplice oggetto String, number, booleano o JSON e una sequenza facoltativa di coppie chiave-valore (argomenti hash) come ultimi parametri.
 * Le chiavi negli argomenti hash devono essere identificatori semplici.
 * I valori negli argomenti hash sono espressioni Handlebars: identificatori semplici, percorsi o stringhe.
 * Il contesto attuale, `this`, è sempre disponibile per gli assistenti Handlebars.
@@ -459,7 +457,7 @@ NOTA: potrebbe essere restituita una stringa vuota
 
 * Gli helper di blocco sono funzioni che possono essere richiamate da qualsiasi punto del modello. Possono richiamare un blocco del modello zero o più volte con un contesto diverso ogni volta. Contengono un contesto tra `{{#*name*}}` e `{{/*name*}}`.
 
-* Handlebars fornisce un parametro finale agli helper denominato &quot;options&quot;. L’oggetto speciale &quot;options&quot; include
+* Handlebars fornisce un parametro finale agli helper chiamato &#39;options&#39;. L’oggetto speciale &quot;options&quot; include
 
    * Dati privati facoltativi (options.data)
    * Proprietà chiave-valore facoltative dalla chiamata (options.hash)
@@ -526,7 +524,7 @@ Gli helper personalizzati devono essere implementati sul lato server e sul lato 
 
 ### Helper personalizzati lato server {#server-side-custom-helpers}
 
-Per implementare e registrare un helper SCF personalizzato sul lato server, è sufficiente implementare l’interfaccia Java [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), rendilo un [Servizio OSGi](../../help/sites-developing/the-basics.md#osgi) e installarlo come parte di un bundle OSGi.
+Per implementare e registrare un helper SCF personalizzato sul lato server, è sufficiente implementare l’interfaccia Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), rendilo un [Servizio OSGi](../../help/sites-developing/the-basics.md#osgi) e installarlo come parte di un bundle OSGi.
 
 Ad esempio:
 

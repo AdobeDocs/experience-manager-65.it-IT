@@ -1,8 +1,6 @@
 ---
 title: Funzione blog
-seo-title: Blog Feature
 description: Informazioni community in formato di inserimento nel diario
-seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1652'
 ht-degree: 7%
 
 ---
@@ -55,17 +53,17 @@ Se desiderate aggiungere un blog a una pagina in modalità di creazione, utilizz
 * `Communities / Blog`
 * `Communities / Blog Sidebar`
 
-e trascinarli in una pagina in cui dovrebbe apparire il blog.
+Trascinali nella posizione in cui dovrebbe apparire il blog.
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
 
-Quando [librerie lato client richieste](/help/communities/blog-developer-basics.md#essentials-for-client-side) sono inclusi, è così che `Blog` Il componente verrà visualizzato:
+Quando [librerie lato client richieste](/help/communities/blog-developer-basics.md#essentials-for-client-side) sono inclusi, `Blog` Il componente viene visualizzato come segue:
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Configurazione del blog {#configuring-blog}
 
-Seleziona la inserita `Blog` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `Blog` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo modifica.
 
 ![configura](assets/configure-new.png)
 
@@ -85,7 +83,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Dimensioni minime immagine per miniatura**
 
-  Dimensione minima (in byte) dell&#39;immagine per la generazione della miniatura per le immagini in linea. Il valore predefinito è 100000 byte (100 KB).
+  Dimensione minima (in byte) dell&#39;immagine per la generazione della miniatura per le immagini in linea. Il valore predefinito è 100000 byte (100 kb).
 
 * **Dimensione massima miniatura**
 
@@ -99,7 +97,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
   Aggiungere i membri con privilegi autorizzati a creare il contenuto.
 
-* **Blocca i contenuti generati dagli utenti in modalità di modifica Creazione**
+* **Blocca i contenuti generati dall&#39;utente in modalità Modifica autore**
 
   Se questa opzione è abilitata, blocca i contenuti generati dagli utenti durante la modifica in modalità Creazione.
 
@@ -123,7 +121,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Moderato**
 
-  Se questa opzione è selezionata, è necessario approvare la pubblicazione di post di blog e commenti prima che vengano visualizzati in un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, è necessario approvare la pubblicazione di post di blog e commenti prima di visualizzarli in un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
 
 * **Chiuso**
 
@@ -147,7 +145,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Tipi di file consentiti**
 
-  Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, il caricamento di quelli non specificati non sarà consentito. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
+  Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Dimensione massima per file immagine allegato**
 
@@ -181,7 +179,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Consenti contenuto in primo piano**
 
-  Se selezionata, l’idea può essere identificata come [contenuto in primo piano](/help/communities/featured.md). L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, l’idea viene identificata come [contenuto in primo piano](/help/communities/featured.md). L&#39;impostazione predefinita è deselezionata.
 
 * **Abilita menzione**
 
@@ -193,7 +191,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Pattern menzioni interfaccia**
 
-  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Esempio `~{{familyName}}{{givenName}}`.
+  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
@@ -201,7 +199,7 @@ Sotto **Moderazione utenti** , specificare le impostazioni di moderazione:
 
 * **Rifiuta post**
 
-  Se questa opzione è selezionata, i moderatori membri di fiducia potranno rifiutare i post e impedirne la visualizzazione nel forum pubblico. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, i moderatori membri di fiducia possono negare i post e impedirne la visualizzazione nel forum pubblico. L&#39;impostazione predefinita è deselezionata.
 
 * **Chiudi/Riapri argomenti**
 
@@ -229,11 +227,11 @@ Sotto **Moderazione utenti** , specificare le impostazioni di moderazione:
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Sotto **Campo tag** , specificare i tag che possono essere applicati se **Consenti assegnazione tag** è il controllo della **Impostazioni** scheda :
+Sotto **Campo tag** , specificare quali tag possono essere applicati se **Consenti assegnazione tag** è il controllo della **Impostazioni** scheda :
 
 * **Namespace consentiti**
 
-  Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
+  Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati ai tag all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
@@ -249,7 +247,7 @@ Sotto **Impostazioni barra laterale diario** , specificare il formato della data
 
 * **Formato data**
 
-  Formato utilizzato per visualizzare gli archivi dei post di blog. Il formato utilizza i segnaposto seguendo la convenzione Java.
+  Formato utilizzato per visualizzare gli archivi dei post di blog. Il formato utilizza i segnaposto seguendo la convenzione Java™.
 
    * aaaa : anno intero, come &#39;2015&#39;
    * aa : anno breve, come &#39;15&#39;
@@ -267,9 +265,9 @@ Sotto **Impostazioni barra laterale diario** , specificare il formato della data
    * Categorie
    * Archivi
 
-* **Percorso componente BLOP**
+* **Percorso componente blog**
 
-  *(Facoltativo)* Posizione della risorsa blog da cui devono essere elencati gli articoli di blog. Se non specificato, utilizzerà il componente resourceType `social/journal/components/hbs/journal` che viene visualizzato sulla stessa pagina.
+  *(Facoltativo)* Posizione della risorsa blog da cui devono essere elencati gli articoli di blog. Se non specificato, viene utilizzato il componente resourceType `social/journal/components/hbs/journal` che viene visualizzato sulla stessa pagina.
 
    * Ad esempio `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -279,7 +277,7 @@ Sotto **Impostazioni barra laterale diario** , specificare il formato della data
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 
-Nell&#39;ambiente di pubblicazione, la funzione blog visualizzerà l&#39;articolo di blog più recente seguito da articoli di blog più vecchi in ordine decrescente di creazione. Le barre laterali del blog consentono ai visitatori del sito di applicare filtri per limitare la selezione degli articoli di blog visualizzati.
+Nell&#39;ambiente di pubblicazione, la funzione blog mostra l&#39;articolo di blog più recente seguito da articoli di blog precedenti in ordine decrescente di creazione. Le barre laterali del blog consentono ai visitatori del sito di applicare filtri per limitare la selezione degli articoli di blog visualizzati.
 
 L&#39;articolo del blog è seguito da un link per pubblicare o visualizzare commenti.
 
@@ -289,13 +287,13 @@ Altre funzionalità dipendono dal fatto che il visitatore del sito sia un modera
 
 ### Utilizzo degli articoli {#working-with-articles}
 
-Durante la creazione di un nuovo articolo di blog, è possibile scegliere di:
+Quando si crea un articolo di blog, è possibile scegliere di effettuare le seguenti operazioni:
 
 1. Pubblica immediatamente
 1. Pubblicare una bozza
 1. Pubblica a una data e un’ora pianificate
 
-Gli articoli del blog verranno visualizzati nella scheda appropriata (Pubblicato, Bozze o Pianificato) per i membri in grado di creare al momento della pubblicazione.
+Gli articoli del blog vengono visualizzati nella scheda appropriata (Pubblicato, Bozze o Pianificato) per i membri in grado di creare al momento della pubblicazione.
 
 #### Moderatori e amministratori {#moderators-and-administrators}
 
@@ -309,7 +307,7 @@ Quando l&#39;utente connesso è un membro della community o [membro privilegiato
 
 In particolare, essi possono:
 
-* Crea un nuovo articolo di blog
+* Creare un articolo di blog
 * Pubblica un nuovo articolo di blog per conto di un altro membro
 * Pubblica un commento su un articolo di blog
 * Modifica il proprio articolo o commento sul blog
@@ -334,4 +332,4 @@ Per la moderazione dei post e dei commenti di blog, consultate [Moderazione dei 
 
 Per assegnare tag ai post e ai commenti di blog, consultate [Assegnazione di tag ai contenuti generati dagli utenti](/help/communities/tag-ugc.md).
 
-Per la traduzione di post e commenti di blog, vedi [Traduzione dei contenuti generati dagli utenti](/help/communities/translate-ugc.md).
+Per la traduzione di post e commenti di blog, vedi [Traduzione di contenuti generati dall&#39;utente](/help/communities/translate-ugc.md).
