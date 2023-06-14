@@ -2,10 +2,10 @@
 title: Note sulla versione 2022 di AEM Content and Commerce
 description: Note sulla versione 2022 di AEM Content and Commerce
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 46%
+source-wordcount: '816'
+ht-degree: 35%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 46%
 
 ## Panoramica dei requisiti di sistema
 
-Esaminare i requisiti di sistema minimi nella tabella seguente per la versione CIF in uso o che si prevede di utilizzare in futuro.
+Esaminare i requisiti minimi di sistema nella tabella seguente per la versione CIF attualmente in uso o che si prevede di utilizzare in futuro.
 
 | Componente | Requisiti di sistema |
 |:-------|:-----:|
-| Componente aggiuntivo CIF | Minimo: schemi GraphQL del Magento 2.3.5 per AEM 6.5.7 |
+| Componente aggiuntivo CIF | Minimo: schemi GraphQL di AEM 6.5.7, Adobe Commerce 2.3.5 |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -45,7 +45,7 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 ### Novità {#what-is-new-july}
 
 * Associazione di pagine AEM a prodotti e categorie tramite le proprietà della pagina AEM e panoramica nella cabina di comando del prodotto
-   ![associazione pagina pannello di comando del prodotto](/help/assets/CIF/product_cockpit_page_association.png)
+  ![associazione pagina pannello di comando del prodotto](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Data di rilascio: giugno 2022
 
@@ -57,7 +57,7 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 ### Novità {#what-is-new-june}
 
-* L’arricchimento del catalogo dei prodotti ora supporta le pagine AEM. Questo consente agli autori di gestire l’associazione pagina - prodotto.
+* L’arricchimento del catalogo dei prodotti ora supporta le pagine AEM, consentendo agli autori di gestire l’associazione pagina - prodotto.
 
 * Vari miglioramenti dei componenti core CIF
 
@@ -65,7 +65,7 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 * Aggiungere token di accesso al recupero prezzi lato client
 
-* Componente pagina errato in Data Layer
+* Componente pagina errato in Data Layer.
 
 ## Data di rilascio: maggio 2022
 
@@ -87,7 +87,7 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 ### Correzioni di bug {#bug-fixes-may}
 
-* Il campo del selettore prodotti con più valori mostra il secondo e gli ulteriori prodotti come non validi
+* Il campo del selettore prodotti con più valori mostra prodotti secondari e aggiuntivi come non validi
 
 * Il selettore prodotti viene talvolta nascosto dietro i componenti
 
@@ -103,11 +103,11 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 * Accesso rapido alla cabina di comando del prodotto: accesso semplice e dettagliato alle informazioni di prodotto con un solo clic nell’editor di Sites
 
-   ![Abilitare la lista dei desideri](/help/assets/CIF/enable-wishlist.png)
+  ![Abilitare la lista dei desideri](/help/assets/CIF/enable-wishlist.png)
 
 * Supporto per componenti di marketing commerce aggiuntivi: i componenti possono essere configurati per mostrare un’invito all’azione di aggiunta al carrello e aggiunta alla lista dei desideri
 
-   ![Collegamento all’editor di Sites per la cabina di comando del prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Collegamento all’editor di Sites per la cabina di comando del prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## Data di rilascio: febbraio 2022
 
@@ -121,9 +121,9 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 * Beta: supporto per i componenti core di ricerca CIF di AEM Commerce LiveSearch
 * SEO migliorata per scenari multi-store: ora puoi configurare i formati URL per PDP/PLP a livello di store tramite le proprietà CIF Cloud Config
-* Il selettore prodotti supporta i prodotti in staging tramite la nuova opzione di filtro nell’interfaccia utente.  In questo modo i professionisti dei contenuti possono preparare la gestione contenuti di prodotto per i prossimi lanci
+* Il selettore prodotti supporta i prodotti in staging tramite la nuova opzione di filtro nell’interfaccia utente. Consente ai professionisti dei contenuti di preparare la gestione dei contenuti dei prodotti per i prossimi lanci
 * Gestione semplificata della configurazione CIF e della gestione degli errori utilizzando il nome della configurazione cloud CIF anziché l’URL proxy
-* Selezione manuale della categoria per l’elenco dei prodotti e i componenti Carosello. Questo consente agli utenti del contenuto di utilizzare questi componenti sulle pagine di contenuto, al di fuori dell’esperienza del catalogo
+* Selezione manuale della categoria per l’elenco dei prodotti e i componenti Carosello. Consente agli utenti del contenuto di utilizzare questi componenti sulle pagine di contenuto, al di fuori dell’esperienza di catalogo
 
 ## Data di rilascio: gennaio 2022
 

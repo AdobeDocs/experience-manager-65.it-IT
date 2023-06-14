@@ -1,8 +1,6 @@
 ---
 title: Creazione di estensioni personalizzate
-seo-title: Creating Custom Extensions
-description: Puoi richiamare il codice personalizzato in Adobe Campaign dall’AEM o dall’AEM ad Adobe Campaign
-seo-description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign
+description: Puoi richiamare il codice personalizzato in Adobe Campaign dall’AEM o dall’AEM ad Adobe Campaign.
 uuid: 8392aa0d-06cd-4b37-bb20-f67e6a0550b1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +8,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
@@ -32,21 +30,21 @@ Consulta [Integrazione dell’AEM con Adobe Campaign 6.1](/help/sites-administer
 
 ## Esempio 1: da AEM ad Adobe Campaign {#example-aem-to-adobe-campaign}
 
-L’integrazione standard tra AEM e Campaign si basa su JSON e JSSP (JavaScript Server Page). Questi file JSSP si trovano nella console Campaign e iniziano tutti con **amc** (Adobe Marketing Cloud)
+L’integrazione standard tra AEM e Campaign si basa su JSON e JSSP (JavaScript Server Page). Questi file JSSP si trovano nella console Campaign e iniziano tutti con **aec** (Adobe Experience Cloud)
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
->[Per questo esempio, consulta la sezione Geometrixx](/help/sites-developing/we-retail.md), disponibile in Condivisione pacchetti.
+>[Per questo esempio, vedi Geometrixx](/help/sites-developing/we-retail.md), disponibile in Condivisione pacchetti.
 
-In questo esempio, creiamo un nuovo file JSSP personalizzato e lo chiamiamo dal lato AEM per recuperare il risultato. Può essere utilizzato, ad esempio, per recuperare dati da Adobe Campaign o per salvarli in Adobe Campaign.
+In questo esempio, è stato creato un nuovo file JSSP personalizzato e lo chiama dal lato AEM per recuperare il risultato. Può essere utilizzato, ad esempio, per recuperare dati da Adobe Campaign o per salvarli in Adobe Campaign.
 
-1. In Adobe Campaign, per creare un nuovo file JSSP, fai clic su **Nuovo** icona.
+1. In Adobe Campaign, per creare un file JSSP, fai clic su **Nuovo** icona.
 
    ![](do-not-localize/chlimage_1-4a.png)
 
-1. Immetti il nome di questo file JSSP. In questo esempio utilizziamo **cus:custom.jssp** (ovvero sarà nel **cus** namespace).
+1. Immetti il nome di questo file JSSP. In questo esempio, **cus:custom.jssp** viene utilizzato (nel senso che si trova nella **cus** namespace).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -60,7 +58,7 @@ In questo esempio, creiamo un nuovo file JSSP personalizzato e lo chiamiamo dal 
    ```
 
 1. Salvare i dati. Il lavoro rimanente è svolto dall&#39;AEM.
-1. Crea un semplice servlet sul lato AEM per chiamare questo JSSP. In questo esempio, supponiamo quanto segue:
+1. Crea un semplice servlet sul lato AEM che puoi chiamare JSSP. In questo esempio, puoi assumere quanto segue:
 
    * È attiva la connessione tra AEM e Campaign
    * Il servizio cloud di Campaign è configurato su **/content/geometrixx-outdoors**
@@ -79,7 +77,7 @@ In questo esempio, creiamo un nuovo file JSSP personalizzato e lo chiamiamo dal 
    return results.bodyAsString();
    ```
 
-1. Come vedi in questo esempio, devi passare le credenziali nella chiamata di. Puoi ottenere questo risultato tramite il metodo getCredentials() in cui passi in una pagina in cui è configurato il servizio cloud Campaign.
+1. In questo esempio, devi passare le credenziali nella chiamata di. Puoi ottenerli tramite il metodo getCredentials() in cui passi in una pagina in cui è configurato il servizio cloud Campaign.
 
    ```xml
    // page containing the cloudservice for Adobe Campaign
@@ -170,21 +168,21 @@ AEM offre API pronte all’uso per recuperare gli oggetti disponibili in qualsia
 
 >[!NOTE]
 >
->[Per questo esempio, consulta la sezione Geometrixx](/help/sites-developing/we-retail.md), disponibile in Condivisione pacchetti.
+>[Per questo esempio, vedi Geometrixx](/help/sites-developing/we-retail.md), disponibile in Condivisione pacchetti.
 
-Per ogni nodo nell’Explorer è presente un’API ad esso collegata. Ad esempio, per il nodo:
+Per ogni nodo dell’Explorer è presente un’API ad esso collegata. Ad esempio, per il nodo:
 
 * [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
-l’API è:
+L’API è:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Fine dell’URL **.1.json** può essere sostituito da **.2.json**, **.3.json**, in base al numero di livelli secondari che si desidera ottenere Per ottenere tutti loro la parola chiave **infinito** può essere utilizzato:
+Fine dell’URL **.1.json** può essere sostituito da **.2.json**, **.3.json**, in base al numero di sottolivelli che sei interessato a ottenere. Per ottenere tutte le parole chiave, **infinito** può essere utilizzato:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Ora per utilizzare l’API dobbiamo sapere che per impostazione predefinita l’AEM utilizza l’autenticazione di base.
+Per utilizzare l’API, l’AEM utilizza per impostazione predefinita l’autenticazione di base.
 
 Una libreria JS denominata **amcIntegration.js** è disponibile in 6.1.1 (build 8624 e successive) che implementa tale logica tra diverse altre.
 

@@ -1,8 +1,6 @@
 ---
 title: Modificare l'aspetto
-seo-title: Alter the Appearance
 description: Modificare lo script
-seo-description: Modify the script
 uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -44,7 +42,7 @@ Per non mostrare l&#39;avatar accanto a ogni commento pubblicato:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Eliminare le linee o circondarle con `<!--` e `-->` per commentarli. Inoltre, i caratteri &quot;xxx&quot; vengono aggiunti come indicatore visivo di dove sarebbe stato l’avatar.
+Eliminare le linee o circondarle con `<!--` e `-->` quindi li commenta. Inoltre, i caratteri &quot;xxx&quot; vengono aggiunti come indicatore visivo di dove sarebbe stato l’avatar.
 
 ```xml
    xxx
@@ -63,7 +61,7 @@ Invia il componente dei commenti sovrapposti all’istanza di pubblicazione util
 
 Dalla navigazione globale, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]** e fai clic su **[!UICONTROL Attiva albero]**.
 
-Per il percorso iniziale immettere: `/apps/social/commons` e seleziona **[!UICONTROL Attiva]**.
+Per il percorso iniziale, immetti `/apps/social/commons` e seleziona **[!UICONTROL Attiva]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
@@ -71,6 +69,6 @@ Per il percorso iniziale immettere: `/apps/social/commons` e seleziona **[!UICON
 
 Se accedi all’istanza Publish come amministratore, ad esempio https://localhost:4503/crx/de come amministratore/amministratore, puoi verificare che i componenti sovrapposti siano presenti.
 
-Se esci e accedi di nuovo come `aaron.mcdonald@mailinator.com/password` e aggiorna la pagina, noterai che il commento pubblicato non viene più visualizzato con un avatar, ma con un semplice &quot;xxx&quot;.
+Se ci si disconnette e si accede come `aaron.mcdonald@mailinator.com/password` e aggiorna la pagina, osserva che un avatar non viene visualizzato con il commento pubblicato. Viene invece visualizzato un semplice &quot;xxx&quot;.
 
 ![create-template-component](assets/create-template-component.png)

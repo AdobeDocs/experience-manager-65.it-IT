@@ -1,8 +1,6 @@
 ---
-title: Configurazione di AEM Forms per inviare i dati del modulo a un processo AEM Forms on JEE
-seo-title: Configuring AEM Forms to submit form data to an AEM Forms on JEE process
-description: AEM Forms consente di integrare i moduli adattivi con i processi di AEM Forms su JEE per l’elaborazione dei dati dei moduli.
-seo-description: AEM Forms allows you to integrate adaptive forms with AEM Forms on JEE processes for processing form data.
+title: Configurazione di AEM Forms per inviare dati a un processo AEM Forms on JEE
+description: Integra i moduli adattivi con i processi di AEM Forms su JEE per l’elaborazione dei dati dei moduli.
 uuid: 71a894d7-7c0a-43a6-afe5-40c4a15c66d6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,20 +9,20 @@ discoiquuid: ff97424d-b384-4149-9a3c-b4f00aaa1def
 docset: aem65
 role: Admin
 exl-id: 025a3314-8b9d-48e1-a74f-ea0c933e21e3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
-# Configurazione di AEM Forms per inviare i dati del modulo a un processo AEM Forms on JEE{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
+# Configurazione di AEM Forms per inviare i dati del modulo a un modulo AEM durante il processo JEE{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
-I moduli adattivi supportano l’invio di dati a un processo AEM Forms su JEE per l’ulteriore elaborazione. Consente di attivare un processo AEM Forms su JEE con i dati disponibili nel modulo inviato. Per consentire all’istanza di AEM Forms di inviare un modulo adattivo al processo AEM Forms on JEE, effettua le seguenti operazioni:
+I moduli adattivi supportano l’invio di dati al processo AEM Forms su JEE per l’ulteriore elaborazione. Consente di attivare un processo AEM Forms su JEE con i dati disponibili nel modulo inviato. Effettua le seguenti operazioni per consentire all’istanza di AEM Forms di inviare un modulo adattivo ad AEM Forms durante il processo JEE:
 
 ## Configurare il server AEM Forms {#configure-your-aem-forms-server}
 
-Per consentire al server AEM forms di inviare dati a un server AEM Forms su JEE, effettua le seguenti operazioni:
+Effettua le seguenti operazioni per consentire al tuo server AEM Forms di inviare dati a un server AEM Forms su JEE:
 
 1. Vai alla console di configurazione web AEM all’indirizzo https://[*host*]:[*porta*]/system/console/configMgr.
 
@@ -36,7 +34,7 @@ Per consentire al server AEM forms di inviare dati a un server AEM Forms su JEE,
 
 ## Mappare i dati con i campi del processo {#map-data-with-process-fields}
 
-Una volta configurato AEM Forms, mappa l’XML dati e gli allegati dal modulo inviato ai campi nel processo AEM Forms on JEE. Per effettuare questo collegamento:
+Dopo aver configurato AEM Forms, mappa l’XML dati e gli allegati dal modulo inviato ai campi nel processo AEM Forms on JEE. Effettua le seguenti operazioni:
 
 1. Nella console di configurazione web dell’AEM, fai clic su per modificare **Individuazione processo e richiamo LiveCycle guida** configurazione.
 1. Specifica i seguenti parametri:

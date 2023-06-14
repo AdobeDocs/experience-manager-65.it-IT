@@ -1,8 +1,6 @@
 ---
 title: Configurare l’ambiente per l’app AEM Forms
-seo-title: Set up environment for AEM Forms app
 description: Hardware, software e licenze per creare e distribuire l'app AEM Forms.
-seo-description: Hardware, software, and licenses to build and deploy the AEM Forms app.
 uuid: 4123a6b7-5766-476c-9afb-f57029b148ad
 contentOwner: robhagat
 content-type: reference
@@ -11,9 +9,9 @@ topic-tags: forms-app
 discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
@@ -24,24 +22,24 @@ Per creare e distribuire l&#39;app AEM Forms sono necessari i seguenti component
 
 ## Per dispositivi Windows {#for-windows-devices}
 
-* Microsoft Windows 10
-* Microsoft Visual Studio 2015
-* Strumenti Microsoft Visual Studio per Apache Cordova
+* Microsoft® Windows 10
+* Microsoft® Visual Studio 2015
+* Strumenti Microsoft® Visual Studio per Apache Cordova
 
 ## Per dispositivi iOS {#for-ios-devices}
 
-* Apple Mac basato su Intel con Mac OS X 10.9.5 o versione successiva
+* Apple Mac basato su Intel con macOS X 10.9.5 o versione successiva
 * iOS SDK 8.4 o versione successiva
 * Versione Xcode: Xcode 6.4 per OS X o versione successiva
 * Iscrizione al programma iOS Developer Enterprise
 * Certificato Enterprise per la distribuzione interna di app iOS
 * Apple iPad con iOS 8.4 o versione successiva
 
-## Per dispositivi Android {#for-android-devices}
+## Per dispositivi Android™ {#for-android-devices}
 
-* Android Development Toolkit (bundle ADT) che può essere scaricato da [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
-* Se l’ambiente è configurato su un sistema MAC, l’ADT deve essere installato nella cartella Applicazioni.
-* Se ADT è installato in un&#39;altra posizione in MAC o se l&#39;ambiente è configurato in un sistema Windows, il percorso dell&#39;SDK ADT deve essere aggiornato in `local.properties` file disponibile in `src\android` cartella nell&#39;archivio di origine estratto `mobileworkspace-src.zip`. In questo file, selezionare `sdk.dir` variabile alla posizione ADT SDK sul desktop.
+* Android™ Development Toolkit (bundle ADT) che può essere scaricato da [https://developer.android.com/studio](https://developer.android.com/studio)
+* Se l’ambiente è configurato su un sistema Mac, l’ADT deve essere installato nella cartella Applicazioni.
+* Se ADT è installato in un&#39;altra posizione in Mac o se l&#39;ambiente è configurato in un sistema Windows, il percorso dell&#39;SDK ADT deve essere aggiornato in `local.properties` file. Questo file è disponibile nel `src\android` cartella nell&#39;archivio di origine estratto `mobileworkspace-src.zip`. In questo file, selezionare `sdk.dir` variabile alla posizione ADT SDK sul desktop.
 
 >[!NOTE]
 >

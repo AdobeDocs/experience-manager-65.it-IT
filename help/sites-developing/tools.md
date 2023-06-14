@@ -1,8 +1,6 @@
 ---
 title: Strumenti di test e tracciamento
-seo-title: Testing and Tracking Tools
 description: L’AEM fornisce un framework per testare l’interfaccia utente dei componenti e un meccanismo per testare e debug i componenti
-seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
 uuid: 12abedb5-4ee7-4389-9340-e628adbbc053
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ content-type: reference
 discoiquuid: 3cf0fd8d-7fc8-468a-bb1e-1debb68a82a5
 docset: aem65
 exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 1%
@@ -31,15 +29,15 @@ Di seguito sono riportati due strumenti di test open source:
 
 **Selenio**
 
-Selenium viene utilizzato per il test di funzione in un browser con un utente per attività. Registra i passaggi di test (clic) come tabelle HTML o classi Java.
+Selenium viene utilizzato per il test di funzione in un browser con un utente per attività. Registra i passaggi di test (clic) come tabelle HTML o classi Java™.
 
-Per ulteriori informazioni, consulta [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Per ulteriori informazioni, consulta [https://www.selenium.dev/](https://www.selenium.dev/).
 
 **JMeter**
 
 JMeter viene utilizzato per tenere traccia delle richieste e può essere utilizzato per test funzionali, di prestazioni e di stress.
 
-Per ulteriori informazioni, consulta [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
+Per ulteriori informazioni, consulta [https://jmeter.apache.org/](https://jmeter.apache.org/).
 
 Esistono anche molti strumenti proprietari per automatizzare i test e gestire i piani di test.
 
@@ -55,13 +53,13 @@ Un sistema di tracciamento dei bug che può essere configurato in base alle tue 
 
 Anche se non si tratta di uno strumento specifico per il monitoraggio dei bug, i fogli di calcolo sono spesso *errore* utilizzati per questo scopo in quanto sono facili da comprendere e la maggior parte degli utenti ha esperienza delle loro funzionalità.
 
-Se vengono utilizzati per il tracciamento:
+Se questi fogli di calcolo vengono utilizzati per il tracciamento:
 
 * dovrebbero essere mantenuti semplici.
 * il numero di singoli fogli di calcolo deve essere ridotto al minimo.
 * essi devono essere aggiornati regolarmente.
-* deve essere conservata una sola copia master e tutti devono sapere dove si trova.
+* deve essere conservata una sola copia primaria e tutti devono sapere dove si trova la copia primaria.
 * devono essere accessibili a tutti i membri del progetto.
-* se la sicurezza è un problema (spesso si verifica in grandi aziende) e l’accesso comune non è possibile, le copie possono essere distribuite purché tutti comprendano che si tratta di copie e non possono essere aggiornate.
+* se la sicurezza è un problema (spesso si verifica nelle grandi aziende) e l’accesso comune non è possibile, è possibile distribuire le copie purché tutti comprendano che i fogli di calcolo sono copie e non possono essere aggiornati.
 
 Anche in questo caso, esistono molti strumenti proprietari per monitorare i bug e i requisiti delle funzioni.

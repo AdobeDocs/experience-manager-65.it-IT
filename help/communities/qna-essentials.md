@@ -1,8 +1,6 @@
 ---
 title: Nozioni di base su QnA
-seo-title: QnA Essentials
 description: Funzione forum domande e risposte
-seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +8,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 2%
 
 ---
@@ -30,7 +28,7 @@ Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzi
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">incluso</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">include</a></td>
    <td>No</td>
   </tr>
   <tr>
@@ -56,15 +54,15 @@ Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzi
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [API QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [Endpoint D/R](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [Endpoint D/R](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
 ### Funzione D/R {#qna-function}
 
-Una struttura del sito della community che include [Funzione QnA](functions.md#qna-function) avrà configurato `QnA` nonché le impostazioni relative alla moderazione e all&#39;assegnazione di tag. La funzione QnA supporta l’identificazione di un’ [gruppo utenti membro privilegiato](users.md#privileged-members-group).
+Una struttura del sito della community che include [Funzione QnA](functions.md#qna-function) ha configurato `QnA` e le impostazioni relative a moderazione e assegnazione di tag. La funzione QnA supporta l’identificazione di un’ [gruppo utenti membro privilegiato](users.md#privileged-members-group).
 
 ### Accesso ai post del forum sul QnA (UGC) {#accessing-qna-forum-posts-ugc}
 

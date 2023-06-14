@@ -1,13 +1,11 @@
 ---
 title: Hub guida utente di AEM 6.5
-seo-title: AEM 6.5 User Guide Hub
-description: Una panoramica di tutte le risorse essenziali per comprendere, installare, gestire e utilizzare AEM 6.5
-seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
+description: Una panoramica delle risorse essenziali per comprendere, installare, gestire e utilizzare AEM 6.5
 exl-id: 51788662-6214-408e-98d9-692950c366be
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 9%
+source-wordcount: '212'
+ht-degree: 15%
 
 ---
 
@@ -15,7 +13,7 @@ ht-degree: 9%
 
 ## Introduzione {#introduction}
 
-| [Primi passi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=it) | [Video sulle funzioni](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html) | [Note sulla versione](https://helpx.adobe.com/it/experience-manager/6-5/release-notes.html) |
+| [Primi passi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/home.html?lang=it) | [Esercitazioni](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html) | [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it) |
 |:-:|:-:|:-:|
 | Scopri tutorial e articoli per iniziare a usare l’AEM | Una selezione di video che evidenziano 6.5 nuove funzioni | Scopri le novità di AEM 6.5 |
 
@@ -38,11 +36,11 @@ ht-degree: 9%
 I delegati del supporto possono ottenere supporto assistito tramite:
 
 * Web: Portale di supporto Experience Manager
-* Telefono: [Trovare il numero di telefono della propria regione.](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
+* Telefono: [Trovare il numero di telefono della propria regione.](https://experienceleague.adobe.com/?support-tab=home&amp;lang=it#support)
 
 >[!NOTE]
 >
->Non sei sicuro di essere un **delegato di supporto**? Scopri se [tipo di utente applicabile a te](https://helpx.adobe.com/experience-cloud/supported-users.html) e scopri il nostro [termini di supporto enterprise](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+>Non so se sei un **delegato di supporto**? Scopri se [tipo di utente applicabile a te](https://helpx.adobe.com/experience-cloud/supported-users.html) e scopri Adobe [termini di supporto enterprise](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
 ## Community {#community}
 
@@ -52,4 +50,4 @@ Partecipa alla conversazione!
 * [Forum AEM Communities](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
 * [Forum AEM Forms](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-forms.html)
 * [Forum AEM Assets](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
-* [Forum AEM Mobile](https://forums.adobe.com/community/experiencemanagermobile)
+* [Forum AEM Mobile](https://experienceleaguecommunities.adobe.com/)

@@ -1,16 +1,14 @@
 ---
 title: Rimozione dei siti di Geometrixx
-seo-title: Removing the Geometrixx Sites
 description: Scopri come rimuovere il contenuto del Geometrixx di esempio.
-seo-description: Learn how to remove the sample Geometrixx content.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -44,5 +42,5 @@ Ora disponi di un’istanza AEM &quot;vuota&quot; senza siti dimostrativi.
 
 >[!NOTE]
 >
->Durante l&#39;aggiornamento, i siti geometrixx vengono reinstallati automaticamente. Se non desideri questi esempi, potrebbe essere necessario rimuovere i siti web geometrixx dopo l’aggiornamento.
+>Durante l&#39;aggiornamento, i siti di Geometrixx vengono reinstallati automaticamente. Se non si desidera utilizzare questi esempi, rimuovere i siti Web di Geometrixx dopo l&#39;aggiornamento.
 
