@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
+source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
 workflow-type: tm+mt
-source-wordcount: '3860'
+source-wordcount: '3870'
 ht-degree: 4%
 
 ---
@@ -134,6 +134,7 @@ ht-degree: 4%
 + Forms adattivo - Authoring di base {#adaptive-forms-basic-authoring}
    + [Best practice per l’utilizzo dei moduli adattivi](using/adaptive-forms-best-practices.md)
    + [Creazione di un modulo adattivo](using/creating-adaptive-form.md)
+   + [Creare o aggiungere un modulo adattivo alla pagina di AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [Frammenti di moduli adattivi](using/adaptive-form-fragments.md)
    + [Configurazione dell’azione Invia](using/configuring-submit-actions.md)
    + [Utilizzo del CAPTCHA nei moduli adattivi](using/captcha-adaptive-forms.md)
