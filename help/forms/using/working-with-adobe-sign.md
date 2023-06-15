@@ -11,9 +11,9 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
+source-git-commit: 66674f0e2621d8786ab4d662cddad373122d8b51
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3855'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,8 @@ Per aggiungere campi a un modulo adattivo e personalizzare varie opzioni relativ
    >
    >    * Utilizzo di [!DNL Adobe Sign] il blocco non è obbligatorio [!DNL Adobe Sign] in un modulo adattivo. Se non usa [!DNL Adobe Sign] blocca e aggiungi i campi per i firmatari, quindi il campo firma predefinito viene visualizzato nella parte inferiore dei documenti di firma.
    >    * Utilizzare [!DNL Adobe Sign] solo per i moduli adattivi che generano automaticamente documenti di record. Se utilizzi un XDP personalizzato per generare un documento di record o un modulo adattivo basato su modello di modulo, [!DNL Adobe Sign] blocco non supportato.
-
+   >
+   >
 
 1. Seleziona la **[!UICONTROL Blocco Adobe Sign]** e tocca il pulsante **Modifica** ![aem_6_3_edit](assets/aem_6_3_edit.png) icona. Vengono visualizzate le opzioni per aggiungere campi e formattare l&#39;aspetto di un campo.
 
@@ -194,11 +195,13 @@ Per un modulo adattivo puoi avere un solo firmatario o più firmatari. Quando ag
 
    * **[!UICONTROL Indirizzo e-mail del firmatario]:** Specifica l’indirizzo e-mail del firmatario. Il firmatario riceve i documenti/moduli da firmare all&#39;indirizzo e-mail specificato. Puoi scegliere di utilizzare un indirizzo e-mail fornito in un campo del modulo, nel profilo utente AEM dell’utente connesso o immettere manualmente un indirizzo e-mail. È un passaggio obbligatorio. Assicurati che l’indirizzo e-mail del primo firmatario o dell’unico firmatario (in caso di firmatario singolo) non sia identico a [!DNL Adobe Sign] account utilizzato per configurare AEM Cloud Services.
 
-   * **[!UICONTROL Metodo di autenticazione del firmatario]:** Specifica il metodo per autenticare un utente prima di aprire un modulo per la firma. Puoi scegliere tra l’autenticazione basata su telefono, knowledge base e social identity.
+   * **[!UICONTROL Metodo di autenticazione del firmatario]:** Specifica il metodo per autenticare un utente prima di aprire un modulo per la firma. Puoi scegliere tra l’autenticazione basata su telefono, knowledge base e social identity. Per Adobe Acrobat Sign Solutions for Government sono disponibili solo opzioni di autenticazione tramite telefono e knowledge-based.
+
    >[!NOTE]
    >
    >    * Per impostazione predefinita, l’autenticazione basata su identità social fornisce un’opzione per eseguire l’autenticazione utilizzando Facebook, Google e LinkedIn. Puoi contattare [!DNL Adobe Sign] supporto per abilitare altri provider di autenticazione social.
-
+   >
+   >
 
    * **[!DNL Adobe Sign]campi da compilare o firmare:** Seleziona [!DNL Adobe Sign] campi per il firmatario. Un modulo adattivo può avere più [!DNL Adobe Sign] campi. Puoi scegliere di abilitare campi specifici per un firmatario. Nel campo vengono visualizzati tutti i [!DNL Adobe Sign] Blocchi. Quando selezioni un blocco, vengono selezionati tutti i campi del blocco. Puoi utilizzare l’icona X per deselezionare un campo.
 
@@ -248,7 +251,8 @@ Dopo [modifica delle proprietà di un modulo adattivo per il segno di Adobe](../
 
    Applica firme digitali al modulo adattivo utilizzando:
 
-   * Firme cloud: firma con un [ID digitale](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) ospitato da un provider di servizi di trust.
+   * Firme cloud: firma con un [ID digitale](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) ospitato da un provider di servizi di trust. L’opzione Firma cloud non è disponibile per Adobe Acrobat Sign Solutions for Government.
+
    * Adobe Acrobat o Reader: scarica e apri il documento con Adobe Acrobat o Reader per firmare utilizzando una smart card, un token USB o un ID digitale basato su file.
 
    Dopo aver aggiunto il campo firma cloud al modulo adattivo, esegui i seguenti passaggi per completare il processo di configurazione:
@@ -257,7 +261,6 @@ Dopo [modifica delle proprietà di un modulo adattivo per il segno di Adobe](../
    * [Seleziona Adobe Sign Cloud Service per un modulo adattivo](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
    * [Aggiungere firmatari Adobe Sign a un modulo adattivo](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
    * [Seleziona Azione di invio per un modulo adattivo](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
-
 
 ## Creare un’esperienza di firma interna ai moduli {#create-in-form-signing-experience}
 
@@ -297,7 +300,6 @@ Per configurare il componente Passaggio firma, effettua le seguenti operazioni:
    >
    >* Quando si trascina **[!UICONTROL Passaggio di firma]** componente del modulo, il **[!UICONTROL Il firmatario e la persona che compila il modulo corrispondono?]** l&#39;opzione è impostata automaticamente su **Sì**. È necessario per il corretto funzionamento del modulo.
    >* Utilizza il componente Passaggio di riepilogo dopo il componente Passaggio di firma per una migliore esperienza. Il passaggio Riepilogo invia automaticamente e immediatamente il modulo dopo aver completato la firma nel componente Passaggio firma. Se non utilizzi il passaggio di riepilogo, l’invio automatico viene attivato solo dopo l’intervallo impostato utilizzando [Servizio di configurazione Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-
    >
    >Alcune best practice sono:
    >
@@ -306,7 +308,6 @@ Per configurare il componente Passaggio firma, effettua le seguenti operazioni:
    >* I moduli adattivi contenenti il passaggio di firma non possono avere un pulsante di invio.
    >* L’invio dei moduli adattivi contenenti la fase Firma viene gestito tramite un servizio in background o la fase Riepilogo. Se esiste un firmatario configurato che compila anche il modulo, il vantaggio di gestire l’invio del modulo adattivo utilizzando il passaggio di riepilogo è che valuta immediatamente che il firmatario ha firmato il modulo e richiama l’azione di invio. Un servizio in background impiega più tempo per valutare se tutti i firmatari configurati hanno firmato il modulo e ritarda l’invio del modulo adattivo.
    >* Progettare il modulo in modo da non consentire a un utente di tornare da un pannello contenente il passaggio Firma o Riepilogo.
-
 
 
 ### Configurare il componente per la pagina di ringraziamento o il passaggio di riepilogo {#configure-the-thank-you-page-or-summary-step-component}
