@@ -2,19 +2,15 @@
 title: Creare o aggiungere un modulo adattivo alla pagina di AEM Sites
 description: Scopri come creare o aggiungere facilmente un modulo adattivo alla pagina AEM Sites. Scopri le tecniche e le best practice passo passo per integrare moduli dinamici e personalizzabili nel tuo sito web, ottimizzando le tue esperienze digitali per il massimo impatto.
 feature: Adaptive Forms
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2862'
 ht-degree: 0%
 
 ---
 
 
 # Creare o aggiungere un modulo adattivo alla pagina di AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
-
-[!BADGE documentazione preliminare]{type=Caution tooltip="Stato giallo"}
-
-<span class="preview"> Questa è la documentazione pre-release e soggetta a modifiche.</span>
 
 Con AEM Forms puoi incorporare facilmente i moduli adattivi nelle pagine web. Questo consente ai visitatori di compilare e inviare i moduli in modo comodo, senza mai uscire dalla pagina in cui si trovano. In questo modo, possono rimanere coinvolti senza difficoltà con altri elementi del sito web interagendo attivamente con il modulo.
 
@@ -236,8 +232,6 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
    ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Seleziona un modello di dati modulo. Apri **[!UICONTROL Base]** scheda. Nel servizio di preriempimento, seleziona **[!UICONTROL Servizio preriempimento bozza di Forms Portal]**.
-
-
 1. Clic **[!UICONTROL Fine]**.
 
 ## Reindirizza l’utente a un nuovo utente all’invio del modulo o mostra un messaggio di ringraziamento
