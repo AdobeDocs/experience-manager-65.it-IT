@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1022'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Sposta il contenuto dell’app mobile nel file system.
 
 ### Utilizzo di PhoneGap CLI per la generazione {#using-the-phonegap-cli-to-build}
 
-Utilizza PhoneGap CLI per compilare e installare l’applicazione. Per informazioni su come utilizzare PhoneGap CLI, consulta PhoneGap [Interfaccia della riga di comando](https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html) documentazione.
+Utilizza PhoneGap CLI per compilare e installare l’applicazione. Per informazioni sull&#39;utilizzo di PhoneGap CLI, vedere l&#39;interfaccia della riga di comando PhoneGap (`https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html`).
 
 1. Apri un terminale o un prompt dei comandi e cambia la directory corrente con il file ZIP dell’applicazione scaricato. Ad esempio, la seguente modifica la directory nel file ng-app-cli.1392137825303.zip:
 
@@ -162,7 +162,7 @@ Invia le risorse della tua applicazione a PhoneGap Build per la compilazione per
 
    **Nota:** La versione beta di AEM Beta non crea una notifica nella casella in entrata al completamento della compilazione.
 
-1. Nella finestra di dialogo Corretto, fai clic su PhoneGap Build per aprire la pagina Adobe PhoneGap Build in [https://build.phonegap.com/apps](https://build.phonegap.com/apps). Se stai aspettando che l&#39;app venga visualizzata, puoi controllare [Stato PhoneGap Build](https://status.build.phonegap.com/) pagina.
+1. Nella finestra di dialogo Corretto, fai clic su PhoneGap Build per aprire la pagina Adobe PhoneGap Build in `https://build.phonegap.com/apps`. Se stai aspettando che la tua app venga visualizzata, puoi controllare lo stato della PhoneGap Build all’indirizzo `https://status.build.phonegap.com/`.
 
    Per informazioni sull&#39;installazione della build, vedere [Documentazione di PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 

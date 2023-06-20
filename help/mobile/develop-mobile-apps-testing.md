@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Quando si sviluppa un’app mobile, vi sono molti nuovi problemi specifici per i
 
 * Funzionale: l’app soddisfa tutti i requisiti?
 * Usabilità - L’app è facile da usare e da comprendere per il cliente?
-* Prestazioni: cosa accade durante un picco nell’utilizzo? Gli elementi dell’app, come swipes e caroselli, sono rapidi e non distolgono l’esperienza?
+* Prestazioni: cosa accade durante un picco nell’utilizzo? Gli elementi dell’app, come campioni e caroselli, sono rapidi e non distolgono l’esperienza?
 * Errore o interruzioni: cosa succede quando si verifica una chiamata o una notifica in arrivo mentre l’app è in esecuzione? Cosa succede in caso di interruzione o spegnimento della rete?
 * Installazione e aggiornamenti: qual è l’esperienza di installazione? Come vengono inviati gli aggiornamenti?
 * Tecnico: l’app consuma troppo energia da un dispositivo?
@@ -46,7 +46,7 @@ Quando si sviluppa un’app mobile, vi sono molti nuovi problemi specifici per i
 
 ## Test manuale {#manual-testing}
 
-Oltre al test automatico, l’app deve essere sottoposta a un ciclo di test manuale. I clienti che eseguono l’app su un dispositivo reale non possono essere duplicati da uno script. Anche qui, hai molte opzioni. Puoi utilizzare una piattaforma, come HockeyApp, per definire chi ha accesso e raccogliere feedback. In alternativa, è possibile affidare l&#39;intero processo a un servizio come UTest, ElusiveStars o Testin. Se disponi di un gruppo di tester interni, ma non di dispositivi diversi, puoi eseguire test manuali sui loro pool di dispositivi tramite i servizi cloud. Un servizio di questo tipo è SauceLabs. Puoi anche creare app da remoto per PhoneGap Enterprise e installarle su dispositivi locali come livello di test di accettazione o dimostrazione. Consulta la [PhoneGap](https://phonegap.com/) per le funzioni e la documentazione più recenti. Qualunque sia l&#39;approccio adottato, le prove manuali devono:
+Oltre al test automatico, l’app deve essere sottoposta a un ciclo di test manuale. I clienti che eseguono l’app su un dispositivo reale non possono essere duplicati da uno script. Anche qui, hai molte opzioni. Puoi utilizzare una piattaforma, come HockeyApp, per definire chi ha accesso e raccogliere feedback. In alternativa, è possibile affidare l&#39;intero processo a un servizio come UTest, ElusiveStars o Testin. Se disponi di un gruppo di tester interni, ma non di dispositivi diversi, puoi eseguire test manuali sui loro pool di dispositivi tramite i servizi cloud. Un servizio di questo tipo è SauceLabs. Puoi anche creare app da remoto per PhoneGap Enterprise e installarle su dispositivi locali come livello di test di accettazione o dimostrazione. Visualizza PhoneGap (`https://phonegap.com/`) per le funzioni e la documentazione più recenti. Qualunque sia l&#39;approccio adottato, le prove manuali devono:
 
 * ha raggiunto un vasto target di tester,
 * effettuare prove su un ampio pool di dispositivi (idealmente dispositivi reali, ma simulatori/emulatori se non sono disponibili dispositivi reali),

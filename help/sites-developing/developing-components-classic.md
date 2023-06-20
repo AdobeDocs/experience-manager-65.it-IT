@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
 source-wordcount: '2392'
 ht-degree: 1%
@@ -85,23 +85,23 @@ Esistono tre metodi per accedere al contenuto in WCM AEM:
 
 * Tramite l’oggetto proprietà introdotto in `global.jsp`:
 
-   L&#39;oggetto properties è un&#39;istanza di ValueMap (vedere [API Sling](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) e contiene tutte le proprietà della risorsa corrente.
+  L&#39;oggetto properties è un&#39;istanza di ValueMap (vedere [API Sling](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) e contiene tutte le proprietà della risorsa corrente.
 
-   Esempio: `String pageTitle = properties.get("jcr:title", "no title");` utilizzato nello script di rendering di un componente pagina.
+  Esempio: `String pageTitle = properties.get("jcr:title", "no title");` utilizzato nello script di rendering di un componente pagina.
 
-   Esempio: `String paragraphTitle = properties.get("jcr:title", "no title");` utilizzato nello script di rendering di un componente paragrafo standard.
+  Esempio: `String paragraphTitle = properties.get("jcr:title", "no title");` utilizzato nello script di rendering di un componente paragrafo standard.
 
 * Attraverso il `currentPage` oggetto introdotto in `global.jsp`:
 
-   Il `currentPage` L&#39;oggetto è un&#39;istanza di una pagina (vedere [API AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). La classe page fornisce alcuni metodi per accedere al contenuto.
+  Il `currentPage` L&#39;oggetto è un&#39;istanza di una pagina (vedere [API AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). La classe page fornisce alcuni metodi per accedere al contenuto.
 
-   Esempio: `String pageTitle = currentPage.getTitle();`
+  Esempio: `String pageTitle = currentPage.getTitle();`
 
 * Via `currentNode` oggetto introdotto in `global.jsp`:
 
-   Il `currentNode` l&#39;oggetto è un&#39;istanza di un nodo (vedere [API JCR](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Le proprietà di un nodo sono accessibili da `getProperty()` metodo.
+  Il `currentNode` l&#39;oggetto è un&#39;istanza di un nodo (vedere [API JCR](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Le proprietà di un nodo sono accessibili da `getProperty()` metodo.
 
-   Esempio: `String pageTitle = currentNode.getProperty("jcr:title");`
+  Esempio: `String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## Librerie di tag JSP {#jsp-tag-libraries}
 
@@ -167,6 +167,7 @@ Per sviluppare nuovi componenti per l’AEM basati su componenti esistenti, è p
 
       * `cq:dialog` - finestra di dialogo per l’interfaccia touch
       * `dialog` - finestra di dialogo per l’interfaccia classica
+
    * sostituzione del `.jsp` file (assegna un nome al nuovo componente)
    * o rielaborazione completa dell&#39;intero componente, se si desidera
 
@@ -178,7 +179,6 @@ Per sviluppare nuovi componenti per l’AEM basati su componenti esistenti, è p
    >
    >* L’interfaccia touch utilizza [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) componenti
    >* L’interfaccia classica utilizza [Widget ExtJS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
-
 
    >[!NOTE]
    >
@@ -215,9 +215,9 @@ Una volta sviluppato il componente, questo viene aggiunto al sistema paragrafo, 
 
    * aggiunta `?wcmmode=design` alla fine dell’URL e accedendo di nuovo, ad esempio:
 
-      `<contextPath>/ Test.html?wcmmode=design`
+     `<contextPath>/ Test.html?wcmmode=design`
 
-   * clic su Progettazione nella barra laterale
+   * clic su Progettazione nel Sidekick
 
    Ora sei in modalità progettazione e puoi modificare il sistema paragrafo.
 
@@ -275,16 +275,17 @@ Per creare il nuovo componente, utilizziamo il componente textimage standard com
    >* Interfaccia touch: `textimage/cq:dialog`
    >* Interfaccia classica: `textimage/dialog`
 
-
 1. Modifica i metadati del componente:
 
    * Nome componente
 
       * Imposta `jcr:description` a `Text Image Component (Extended)`
       * Imposta `jcr:title` a `Text Image (Extended)`
+
    * Gruppo, in cui il componente è elencato nella barra laterale (lascia invariato)
 
       * Esci `componentGroup` imposta su `General`
+
    * Componente padre del nuovo componente (il componente textimage standard)
 
       * Imposta `sling:resourceSuperType` a `foundation/components/textimage`
@@ -308,6 +309,7 @@ Per creare il nuovo componente, utilizziamo il componente textimage standard com
       * Cambia xtype in cqinclude (per ereditare dal componente standard).
       * Aggiungi una proprietà percorso con valori `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`e `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, rispettivamente.
       * Rimuovi tutte le altre proprietà o sottonodi.
+
    * Per tab3:
 
       * Lascia le proprietà e i sottonodi senza modifiche
@@ -318,9 +320,11 @@ Per creare il nuovo componente, utilizziamo il componente textimage standard com
          * `xtype`: `selection`
          * `fieldLabel`: `Image Position`
          * `type`: `select`
+
       * Aggiungi sottonodo `position/options` di tipo `cq:WidgetCollection` per rappresentare le due scelte per il posizionamento dell&#39;immagine e sotto di essa creare due nodi, o1 e o2 di tipo `nt:unstructured`.
       * Per nodo `position/options/o1` impostare le proprietà: `text` a `Left` e `value` a `left.`
       * Per nodo `position/options/o2` impostare le proprietà: `text` a `Right` e `value` a `right`.
+
    * Elimina scheda4.
 
    La posizione dell&#39;immagine viene mantenuta nel contenuto come `imagePosition`proprietà del nodo che rappresenta `textimage` paragrafo. Dopo questi passaggi, la finestra di dialogo del componente si presenta così:
@@ -355,7 +359,7 @@ Per creare il nuovo componente, utilizziamo il componente textimage standard com
 Una volta sviluppato il componente, è possibile aggiungerlo al sistema paragrafo, consentendo agli autori di selezionare e utilizzare il componente durante la modifica di una pagina. Questi passaggi ti consentono di testare il componente.
 
 1. Apri una pagina in Geometrixx, ad esempio Inglese/Azienda.
-1. Passa alla modalità progettazione facendo clic su Progettazione nella barra laterale.
+1. Passare alla modalità progettazione facendo clic su Progettazione nel Sidekick.
 1. Modificate la struttura del sistema paragrafo facendo clic su Modifica (Edit) nel sistema paragrafo al centro della pagina. Viene visualizzato un elenco di componenti, che possono essere inseriti nel sistema paragrafo, e che dovrebbero includere il componente appena sviluppato, Immagine testo (estesa) . Attivarla per il sistema paragrafo selezionandola e facendo clic su OK.
 1. Torna alla modalità di modifica.
 1. Aggiungi il paragrafo Immagine di testo (estesa) al sistema paragrafo, inizializza il testo e l’immagine con contenuti di esempio. Salva le modifiche.

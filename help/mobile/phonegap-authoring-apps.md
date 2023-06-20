@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -93,9 +93,9 @@ Queste icone rappresentano un pacchetto di rilascio dei contenuti per l’app
 
 ### Sezione PhoneGap Build {#the-phonegap-build-tile}
 
-Il **PhoneGap Build** si connette con [https://build.phonegap.com](https://build.phonegap.com) per generare e ospitare build remote. Una volta creata, la build viene resa disponibile come download o direttamente sul dispositivo tramite un codice QR.
+Il **PhoneGap Build** si connette con `https://build.phonegap.com` per generare e ospitare build remote. Una volta creata, la build viene resa disponibile come download o direttamente sul dispositivo tramite un codice QR.
 
-In alternativa, è possibile scaricare l&#39;origine del dispositivo per la generazione locale tramite [CLI di PhoneGap](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html).
+In alternativa, è possibile scaricare l&#39;origine del dispositivo per la generazione locale tramite PhoneGap CLI (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
 ![PhoneGap Build](assets/chlimage_1-140.png)
 

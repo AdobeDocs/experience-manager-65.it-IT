@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '2691'
+source-wordcount: '2687'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Il rendering del corpo di una pagina di Angular viene eseguito in modo diverso a
 
 In modalità di authoring, ogni singola pagina viene riprodotta separatamente. Angular non gestisce l’instradamento tra le pagine e non viene utilizzato un ng-view per caricare un modello parziale che contiene i componenti della pagina. Il contenuto del modello della pagina (template.jsp) viene invece incluso sul lato server tramite `cq:include` tag.
 
-Questa strategia consente di abilitare le funzioni di authoring (ad esempio l’aggiunta e la modifica di componenti nel sistema paragrafo, nella barra laterale, nella modalità progettazione e così via) per funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in modalità di creazione AEM.
+Questa strategia consente di abilitare le funzioni di authoring (ad esempio l’aggiunta e la modifica di componenti nel Sidekick paragrafo, nel sistema, nella modalità progettazione e così via) per funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in modalità di creazione AEM.
 
 L’inclusione template.jsp è racchiusa in un `div` elemento che contiene `ng-controller` direttiva. Questa struttura consente il collegamento dei contenuti DOM al controller. Pertanto, anche se le pagine che si presentano sul lato client hanno esito negativo, i singoli componenti che lo fanno funzionano correttamente (vedi la sezione sui Componenti di seguito).
 
@@ -370,7 +370,7 @@ La directory www contiene tutti i contenuti web (file HTML, JS e CSS) che implem
 
 #### www/config.xml {#www-config-xml}
 
-Il [Documentazione di PhoneGap](https://docs.phonegap.com) fa riferimento a questo file come a un &quot;file di configurazione globale&quot;. Il file config.xml contiene molte proprietà dell’app, come il nome dell’app, le preferenze dell’app (ad esempio se una visualizzazione web di iOS consente o meno l’overscroll) e le dipendenze dei plug-in che sono *solo* utilizzato da PhoneGap Build.
+Documentazione di PhoneGap (`https://docs.phonegap.com`) fa riferimento a questo file come a un &quot;file di configurazione globale&quot;. Il file config.xml contiene molte proprietà dell’app, come il nome dell’app, le preferenze dell’app (ad esempio se una visualizzazione web di iOS consente o meno l’overscroll) e le dipendenze dei plug-in che sono *solo* utilizzato da PhoneGap Build.
 
 Il file config.xml è un file statico in AEM ed è esportato così com’è tramite Content Sync.
 
@@ -382,7 +382,7 @@ Il file config.xml contiene `content` elemento:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-In entrata [documentazione di PhoneGap](https://docs.phonegap.com), questo elemento è descritto come &quot;L&#39;elemento facoltativo &lt;content> definisce la pagina iniziale dell’app nella directory delle risorse web di livello superiore. Il valore predefinito è index.html, che in genere viene visualizzato nella directory www di primo livello di un progetto.&quot;
+Nella documentazione di PhoneGap (`https://docs.phonegap.com`), questo elemento è descritto come &quot;L&#39;elemento facoltativo &lt;content> definisce la pagina iniziale dell’app nella directory delle risorse web di livello superiore. Il valore predefinito è index.html, che in genere viene visualizzato nella directory www di primo livello di un progetto.&quot;
 
 PhoneGap Build non riesce se non è presente un file index.html. Pertanto, questo file è incluso.
 

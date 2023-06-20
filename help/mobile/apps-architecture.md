@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2667'
 ht-degree: 0%
 
 ---
@@ -369,7 +369,7 @@ La directory www contiene tutti i contenuti web (file HTML, JS e CSS) che implem
 
 #### www/config.xml {#www-config-xml}
 
-Il [Documentazione di PhoneGap](https://docs.phonegap.com) fa riferimento a questo file come a un &quot;file di configurazione globale&quot;. Il file config.xml contiene molte proprietà dell’app, come il nome dell’app, le preferenze dell’app (ad esempio se una visualizzazione web di iOS consente o meno l’overscroll) e le dipendenze dei plug-in che sono *solo* utilizzato da PhoneGap Build.
+Documentazione di PhoneGap (`https://docs.phonegap.com`) fa riferimento a questo file come a un &quot;file di configurazione globale&quot;. Il file config.xml contiene molte proprietà dell’app, come il nome dell’app, le preferenze dell’app (ad esempio se una visualizzazione web di iOS consente o meno l’overscroll) e le dipendenze dei plug-in che sono *solo* utilizzato da PhoneGap Build.
 
 Il file config.xml è un file statico in AEM ed è esportato così com’è tramite Content Sync.
 
@@ -381,7 +381,7 @@ Il file config.xml contiene `content` elemento:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-In entrata [documentazione di PhoneGap](https://docs.phonegap.com), questo elemento è descritto come &quot;L&#39;elemento facoltativo &lt;content> definisce la pagina iniziale dell’app nella directory delle risorse web di livello superiore. Il valore predefinito è index.html, che in genere viene visualizzato nella directory www di primo livello di un progetto.&quot;
+Nella documentazione di PhoneGap (`https://docs.phonegap.com`), questo elemento è descritto come &quot;L&#39;elemento facoltativo &lt;content> definisce la pagina iniziale dell’app nella directory delle risorse web di livello superiore. Il valore predefinito è index.html, che in genere viene visualizzato nella directory www di primo livello di un progetto.&quot;
 
 PhoneGap Build non riesce se non è presente un file index.html. Pertanto, questo file è incluso.
 

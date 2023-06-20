@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ L’AEM sfrutta Adobe PhoneGap e Adobe Publishing Solutions per creare e gestire
 * Introduzione delle visualizzazioni Web di HTML5 a nuove o preesistenti **nativo** applicazioni tramite Cordova WebViews.
 * Creazione, cura e condivisione di contenuti multimediali avanzati su tutti i canali di distribuzione, tra cui web, mobile-web, mobile-app e stampa.
 
-L’AEM si integra con l’Adobe **[servizio PhoneGap Build](https://build.phonegap.com/)** per semplificare il processo di sviluppo e distribuzione delle applicazioni.
+L&#39;AEM si integra con il servizio Adobe PhoneGap Build (`https://build.phonegap.com/`) per semplificare la creazione e la distribuzione delle applicazioni.
 
 **Adobe ContentSync** consente agli utenti di scaricare facilmente gli aggiornamenti di pagine e contenuti Over-the-Air (OTA) sui propri dispositivi senza dover reinstallare l’applicazione o scaricare da appStore, Google Play o altre origini dell’app.
 
@@ -73,7 +73,7 @@ Gli sviluppatori di IOS devono essere a conoscenza di un problema aperto relativ
 
 >[!NOTE]
 >
->Per maggiori dettagli su &quot;App Transport Security&quot;, consulta la seguente sezione di [Documenti prerelease iOS9 di Apple](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) e questo [Discussione sull&#39;overflow dello stack](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Per maggiori dettagli su &quot;App Transport Security&quot;, consulta la seguente sezione di [Documentazione prerelease iOS9 di Apple](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) e questo [Discussione sull&#39;overflow dello stack](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Sviluppo di applicazioni mobili in AEM {#developing-mobile-applications-in-aem-1}
 
