@@ -11,7 +11,7 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 4e6521f0d40fc10e016bf197d5b31033192e3214
+source-git-commit: 031c683029c61f8f49c07d276c27e05b3fcfd5fc
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 0%
@@ -40,9 +40,9 @@ Gli utenti di AEM Forms possono utilizzare il servizio reCAPTCHA di Google per i
 
 ### Configurare reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
-1. Creare un [Progetto reCAPTCHA Enterprise](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) abilitato con [API di reCAPTCHA Enterprise](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-reCAPTCHA-enterprise-api).
+1. Creare un [Progetto reCAPTCHA Enterprise](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) abilitato con [API di reCAPTCHA Enterprise](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
 1. [Ottenere](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) l’ID del progetto.
-1. Creare un [Chiave API](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) e un [chiave del sito per i siti web](https://cloud.google.com/reCAPTCHA-enterprise/docs/create-key#create-key).
+1. Creare un [Chiave API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) e un [chiave del sito per i siti web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. Crea un contenitore di configurazione per i servizi cloud.
 
    1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**. Consulta la [Browser configurazioni](/help/sites-administering/configurations.md) per ulteriori informazioni.
@@ -60,7 +60,7 @@ Gli utenti di AEM Forms possono utilizzare il servizio reCAPTCHA di Google per i
    1. Tocca **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Seleziona il contenitore di configurazione creato nel passaggio precedente e tocca **[!UICONTROL Crea]**.
    1. Seleziona la versione come Enterprise reCAPTCHA e specifica Nome; ID progetto, Chiave sito e Chiave API (ottenuta nei passaggi 2 e 3) per il servizio Enterprise reCAPTCHA.
    1. Seleziona il tipo di chiave; il tipo di chiave deve essere lo stesso della chiave del sito configurata nel progetto cloud Google, ad esempio, **Casella di selezione chiave sito** o **Chiave del sito basata su punteggio**.
-   1. Specifica un punteggio di soglia compreso tra 0 e 1 ([Fai clic per ulteriori informazioni sul punteggio](https://cloud.google.com/reCAPTCHA-enterprise/docs/interpret-assessment#interpret_scores)). I punteggi superiori o uguali ai punteggi di soglia identificano l’interazione umana, altrimenti considerata interazione da bot.
+   1. Specifica un punteggio di soglia compreso tra 0 e 1 ([Fai clic per ulteriori informazioni sul punteggio](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). I punteggi superiori o uguali ai punteggi di soglia identificano l’interazione umana, altrimenti considerata interazione da bot.
 
       > Nota:
       >
@@ -77,7 +77,7 @@ Una volta abilitato, il servizio reCAPTCHA Enterprise è disponibile per l’uti
 
 ## Configurare Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
-1. Ottenere [coppia di chiavi API reCAPTCHA](https://www.google.com/reCAPTCHA/admin) da Google. Include un **chiave del sito** e un **chiave segreta**.
+1. Ottenere [coppia di chiavi API reCAPTCHA](https://www.google.com/recaptcha/admin) da Google. Include un **chiave del sito** e un **chiave segreta**.
 1. Crea un contenitore di configurazione per i servizi cloud.
    1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**. Consulta la [Browser configurazioni](/help/sites-administering/configurations.md) per ulteriori informazioni.
    1. Effettua le seguenti operazioni per abilitare la cartella globale per le configurazioni cloud oppure ignora questo passaggio per creare e configurare un’altra cartella per le configurazioni del servizio cloud.
