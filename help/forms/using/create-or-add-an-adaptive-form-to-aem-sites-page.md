@@ -2,15 +2,20 @@
 title: Creare o aggiungere un modulo adattivo alla pagina di AEM Sites
 description: Scopri come creare o aggiungere facilmente un modulo adattivo alla pagina AEM Sites. Scopri le tecniche e le best practice passo passo per integrare moduli dinamici e personalizzabili nel tuo sito web, ottimizzando le tue esperienze digitali per il massimo impatto.
 feature: Adaptive Forms
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2883'
 ht-degree: 0%
 
 ---
 
-
 # Creare o aggiungere un modulo adattivo alla pagina di AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | Questo articolo |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 
 Con AEM Forms puoi incorporare facilmente i moduli adattivi nelle pagine web. Questo consente ai visitatori di compilare e inviare i moduli in modo comodo, senza mai uscire dalla pagina in cui si trovano. In questo modo, possono rimanere coinvolti senza difficoltà con altri elementi del sito web interagendo attivamente con il modulo.
 
@@ -246,7 +251,3 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
    * Per configurare un URL di reindirizzamento, per l’opzione Invia seleziona l’opzione Reindirizza all’URL e specifica un indirizzo assoluto o un URL di reindirizzamento o un percorso relativo di una pagina AEM Sites.
 
    * Per configurare un messaggio personalizzato o di ringraziamento, per l’opzione Invia seleziona l’opzione Mostra messaggio e specifica un messaggio nella casella Contenuto messaggio. Si tratta di una casella di testo RTF, è possibile utilizzare l&#39;opzione a schermo intero per visualizzare tutti gli elementi RTF disponibili.
-
-
-
-
