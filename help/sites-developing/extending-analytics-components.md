@@ -291,10 +291,10 @@ Il contenuto della `topnav.jsp` Il file dovrebbe essere visualizzato come segue:
 
 #### Aggiunta del componente Tracciamento al Sidekick {#adding-the-tracking-component-to-sidekick}
 
-Aggiungi alla barra laterale i componenti abilitati per il tracciamento con Adobe Analytics in modo da poterli aggiungere al framework.
+Aggiungi al Sidekick i componenti abilitati per il tracciamento con Adobe Analytics in modo da poterli aggiungere al framework.
 
 1. Apri il framework di Adobe Analytics dalla configurazione di Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
-1. Nella barra laterale fare clic sul pulsante Progettazione.
+1. In Sidekick, fare clic sul pulsante Progettazione.
 
    ![Pulsante Progettazione con un quadrato ad angolo retto.](assets/chlimage_1a.png)
 
