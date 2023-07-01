@@ -1,8 +1,6 @@
 ---
 title: Creazione e modifica di app tramite la console App
-seo-title: Creating and Editing Apps Using the Apps Console
 description: Segui questa pagina per scoprire come creare e modificare le app utilizzando la console delle app.
-seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '2615'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
@@ -62,7 +60,7 @@ La pagina relativa alla lingua ha due finalità:
 
 ### Home page {#the-home-page}
 
-All&#39;apertura dell&#39;applicazione viene visualizzata la home page o la pagina index.html di una variante di lingua di un&#39;applicazione.La home page fornisce agli utenti un menu di collegamenti a varie pagine dell&#39;applicazione. Il sistema paragrafo consente di aggiungere componenti alla pagina per la creazione di contenuti.
+All&#39;apertura dell&#39;applicazione viene visualizzata la home page o la pagina index.html di una variante di lingua di un&#39;applicazione. La home page fornisce agli utenti un menu di collegamenti a varie pagine dell’applicazione. Il sistema paragrafo consente di aggiungere componenti alla pagina per la creazione di contenuti.
 
 ## Creazione di un’applicazione mobile {#creating-a-mobile-application}
 
@@ -89,9 +87,9 @@ Sono disponibili schede aggiuntive (e facoltative) per build Cloud Service e per
 La procedura seguente utilizza l’interfaccia utente touch per creare un’app mobile.
 
 1. Nella barra, fai clic su App.
-1. Tocca o fai clic sull’icona Crea.
+1. Fai clic sull’icona Crea.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![L’icona Crea indicata da un segno più all’interno di un quadrato.](do-not-localize/chlimage_1-7.png)
 
 1. (Facoltativo) Nella scheda Avanzate, fornisci una descrizione dell’applicazione e, se necessario, modifica l’URL del server.
 1. (Facoltativo) Se si utilizza la PhoneGap Build per compilare l&#39;applicazione, nella scheda Genera selezionare la configurazione da utilizzare.
@@ -114,30 +112,30 @@ Dopo aver creato un’app mobile, puoi modificarne le proprietà.
 1. Nella barra, tocca o fai clic su App.
 1. Seleziona l’applicazione da configurare e fai clic sull’icona Visualizza proprietà pagina.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![L’icona Visualizza proprietà pagina indicata dalla lettera I in un cerchio.](do-not-localize/chlimage_1-8.png)
 
 1. Per modificare i valori delle proprietà, tocca o fai clic sull’icona Modifica.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![L’icona Modifica indicata da una matita.](do-not-localize/chlimage_1-9.png)
 
 1. Configura le proprietà Base e Avanzate, quindi tocca o fai clic sull&#39;icona Fine.
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![L&#39;icona Fine è indicata da un segno di spunta.](do-not-localize/chlimage_1-10.png)
 
 #### Configurare una variante di lingua dell’applicazione {#configure-a-language-variation-of-the-application}
 
-1. Nella barra, tocca o fai clic su App.
+1. Nella barra, fai clic su App.
 1. Fai clic su per approfondire l’app mobile da modificare nell’Admin Console delle app. Selezionare la versione della lingua dell&#39;applicazione da configurare e fare clic sull&#39;icona Visualizza proprietà applicazione.
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![L&#39;icona Visualizza proprietà applicazione indicata dalla lettera I all&#39;interno di un cerchio.](do-not-localize/chlimage_1-11.png)
 
 1. Per modificare i valori delle proprietà, tocca o fai clic sull’icona Modifica.
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![L’icona Modifica indicata da una matita.](do-not-localize/chlimage_1-12.png)
 
 1. Configura le proprietà nelle schede Base, Avanzate, Genera e Analytics, quindi tocca o fai clic sull’icona Fine.
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![L&#39;icona Fine è indicata da un segno di spunta.](do-not-localize/chlimage_1-13.png)
 
 ### Authoring del contenuto di un’applicazione mobile {#authoring-the-content-of-a-mobile-application}
 
@@ -167,7 +165,7 @@ Eseguire la procedura seguente sull&#39;istanza in cui si desidera aggiornare la
 1. Nella barra, tocca o fai clic su App, quindi tocca o fai clic sull’applicazione.
 1. Seleziona la pagina iniziale e tocca o fai clic sull’icona Aggiorna cache.
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![Icona Aggiorna cache indicata da un barile con un simbolo di riciclo.](do-not-localize/chlimage_1-14.png)
 
 ### Utilizzo dei modelli di app {#using-app-templates}
 
@@ -251,7 +249,7 @@ Ogni pagina categoria utilizza la stessa struttura di contenuto della pagina Ing
 
 ### Pagina Prodotti - App Geometrixx Mobile {#the-products-page-geometrixx-mobile-app}
 
-La pagina Prodotti e la relativa gerarchia di pagine figlie implementano un sistema di classificazione per le pagine di prodotti. Le pagine più basse in ciascun ramo della gerarchia sono pagine di prodotto che contengono un componente Prodotto.
+La pagina Prodotti e la relativa gerarchia di pagine figlie implementano un sistema di classificazione per le pagine di prodotti. Le pagine più basse in ciascun ramo della gerarchia sono pagine di prodotti che contengono un componente Prodotto ng.
 
 La pagina Prodotti non è disponibile per gli utenti dell’applicazione. La pagina Ingranaggio consente di accedere a ogni pagina di prodotto.
 
@@ -281,7 +279,7 @@ Quando si utilizza l&#39;applicazione, la pagina Percorsi è disponibile dall&#3
 
 ## Componenti mobili di esempio {#sample-mobile-components}
 
-Diversi componenti sono immediatamente disponibili nella barra laterale quando si creano le pagine di un’app mobile. I componenti appartengono al gruppo di componenti PhoneGap.
+Diversi componenti sono immediatamente disponibili in Sidekick durante l’authoring delle pagine di un’app mobile. I componenti appartengono al gruppo di componenti PhoneGap.
 
 ### Carosello scorrevole {#swipe-carousel}
 

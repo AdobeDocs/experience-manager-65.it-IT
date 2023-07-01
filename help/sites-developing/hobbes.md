@@ -1,8 +1,6 @@
 ---
 title: Verifica dell’interfaccia utente
-seo-title: Testing Your UI
 description: AEM fornisce un framework per automatizzare i test per l’interfaccia utente dell’AEM
-seo-description: AEM provides a framework for automating tests for your AEM UI
 uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '771'
 ht-degree: 2%
 
 ---
@@ -32,7 +30,7 @@ Il framework di test AEM utilizza Hobbes.js, una libreria di test scritta in Jav
 
 >[!NOTE]
 >
->Consulta Hobbes.js [documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) per informazioni complete sull’API.
+>Consulta Hobbes.js [documentazione](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) per informazioni complete sull’API.
 
 ## Struttura delle prove {#structure-of-tests}
 
@@ -63,21 +61,21 @@ Le suite di test possono essere eseguite singolarmente. Quando si esegue una sui
 
 Un’icona di spunta indica che il test è stato superato:
 
-![](do-not-localize/chlimage_1-2.png)
+![Icona segno di spunta.](do-not-localize/chlimage_1-2.png)
 
 Un’icona &quot;X&quot; indica un test non riuscito:
 
-![](do-not-localize/chlimage_1-3.png)
+![Icona test non riuscito indicata da una X all&#39;interno di un cerchio.](do-not-localize/chlimage_1-3.png)
 
 Per eseguire una suite di test:
 
-1. Nel pannello Test, tocca o fai clic sul nome del Test case che desideri eseguire per espandere i dettagli delle azioni.
+1. Nel pannello Test, tocca o fai clic sul nome del Test Case che desideri eseguire per espandere i dettagli delle azioni.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Tocca o fai clic sul pulsante **Esegui test** pulsante.
+1. Clic **Esegui test**.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Immagine del pulsante Esegui test, indicata da un puntatore a destra all&#39;interno di un cerchio.](do-not-localize/chlimage_1-4.png)
 
 1. Il segnaposto viene sostituito con il contenuto della pagina durante l’esecuzione del test.
 
@@ -95,9 +93,9 @@ Le suite di test vengono eseguite in sequenza nell’ordine in cui compaiono nel
 
 1. Nel pannello Test, tocca o fai clic su **Esegui tutti i test** o **Eseguire i test** sotto il titolo della suite di test che desideri eseguire.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Immagine del pulsante Esegui tutti i test e del pulsante Esegui test, indicata da un puntatore a destra all&#39;interno di un cerchio.](do-not-localize/chlimage_1-5.png)
 
-1. Per visualizzare i risultati di ogni test case, tocca o fai clic sul titolo del test case. Tocca o fai clic sul nome del test nel **Risultato** mostra tutti i dettagli.
+1. Per visualizzare i risultati di ogni test case, fare clic sul titolo del test case. Facendo clic sul nome del test in **Risultato** mostra tutti i dettagli.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -105,7 +103,7 @@ Le suite di test vengono eseguite in sequenza nell’ordine in cui compaiono nel
 
 La procedura seguente illustra i passaggi della creazione ed esecuzione di una suite di test utilizzando [Contenuto We.Retail](/help/sites-developing/we-retail.md), ma puoi modificare facilmente il test per utilizzare una pagina web diversa.
 
-Per informazioni dettagliate sulla creazione di suite di test personalizzate, vedi [Documentazione API di Hobbes.js](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
+Per informazioni dettagliate sulla creazione di suite di test personalizzate, vedi [Documentazione API di Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
 
 1. Apri CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Fare clic con il pulsante destro del mouse `/etc/clientlibs` cartella e fai clic su **Crea > Crea cartella**. Tipo `myTests` per il nome e fai clic su **OK**.
@@ -118,8 +116,8 @@ Per informazioni dettagliate sulla creazione di suite di test personalizzate, ve
 
    | Nome | Tipo | Valore |
    |---|---|---|
-   | `categories` | Stringa[] | `granite.testing.hobbes.tests` |
-   | `dependencies` | Stringa[] | `granite.testing.hobbes.testrunner` |
+   | `categories` | String[] | `granite.testing.hobbes.tests` |
+   | `dependencies` | String[] | `granite.testing.hobbes.testrunner` |
 
    >[!NOTE]
    >

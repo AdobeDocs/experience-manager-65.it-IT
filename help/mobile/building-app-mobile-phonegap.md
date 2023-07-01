@@ -1,8 +1,6 @@
 ---
 title: Creazione di applicazioni mobili
-seo-title: Building Mobile Applications
-description: Questa pagina fornisce un articolo completo e dettagliato su come creare un’app mobile utilizzando il codice disponibile da GitHub. Puoi creare l’applicazione da installare su un dispositivo o un simulatore per testarla o per pubblicarla negli app store. Puoi creare applicazioni localmente utilizzando l'interfaccia della riga di comando di PhoneGap o nel cloud utilizzando PhoneGap Build.
-seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
+description: Questa pagina fornisce un articolo completo e dettagliato su come creare un’app mobile utilizzando il codice disponibile su GitHub. Crea l’applicazione da installare su un dispositivo o simulatore per test o per la pubblicazione in app store. Puoi creare applicazioni localmente utilizzando l'interfaccia della riga di comando di PhoneGap o nel cloud utilizzando PhoneGap Build.
 uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1058'
 ht-degree: 1%
 
 ---
@@ -59,16 +57,16 @@ Compilare l&#39;applicazione PhoneGap sul computer utilizzando l&#39;interfaccia
 
 Per generare utilizzando PhoneGap CLI, è necessario installare Node.js e l’utility client PhoneGap. Per eseguire la procedura seguente è necessaria una connessione Internet.
 
-1. Scarica e installa [Node.js](https://nodejs.org/).
+1. Scarica e installa [Node.js](https://nodejs.org/it).
 1. Apri un terminale o un prompt dei comandi e immetti il seguente comando del nodo per installare l&#39;utility PhoneGap:
 
    ```shell
    npm install -g phonegap
    ```
 
-   In un sistema Unix o Linux, potrebbe essere necessario anteporre al comando il prefisso `sudo`.
+   In un sistema UNIX® o Linux®, potrebbe essere necessario anteporre al comando il prefisso `sudo`.
 
-   Il terminale mostra i risultati di una serie di comandi HTTP GET. Quando l&#39;installazione ha esito positivo, il terminale mostra dove vengono installate le librerie in modo simile all&#39;esempio seguente:
+   Il terminale mostra i risultati di una serie di comandi HTTP GET. Quando l’installazione ha esito positivo, il terminale mostra dove vengono installate le librerie in modo simile all’esempio seguente:
 
    ```xml
    /usr/local/bin/phonegap -> /usr/local/lib/node_modules/phonegap/bin/phonegap.js
@@ -88,16 +86,16 @@ Per generare utilizzando PhoneGap CLI, è necessario installare Node.js e l’ut
 1. (Facoltativo) Ottieni l’SDK per la piattaforma mobile di destinazione:
 
    * Per creare app per la piattaforma iOS, installa la versione più recente di [Xcode](https://developer.apple.com/xcode/).
-   * Per creare app Android, installa il [SDK per Android](https://developer.android.com/).
+   * Per creare app Android™, installa il [SDK per Android™](https://developer.android.com/).
 
 ### Download del file ZIP del contenuto {#downloading-the-content-zip-file}
 
 Sposta il contenuto dell’app mobile nel file system.
 
 1. Nella pagina Applicazioni mobili, seleziona l’applicazione.
-1. (Facoltativo) Per creare l’applicazione per installazioni complete, sulla barra degli strumenti, tocca o fai clic sull’icona Cancella cache.
+1. (Facoltativo) Per creare l&#39;applicazione per installazioni complete, fare clic sull&#39;icona Cancella cache sulla barra degli strumenti.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Icona di cancellazione della cache indicata da un simbolo di collegamento interrotto.](do-not-localize/chlimage_1.png)
 
    >[!NOTE]
    >
@@ -105,7 +103,7 @@ Sposta il contenuto dell’app mobile nel file system.
 
 1. Sulla barra degli strumenti, tocca o fai clic sull’icona Scarica risorse CLI.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Icona Scarica risorse CLI indicata dal simbolo della tavoletta sovrapposta.](do-not-localize/chlimage_1-1.png)
 
 1. Dopo aver salvato il file ZIP, fai clic su Chiudi nella finestra di dialogo Corretto.
 1. Estrai il contenuto del file ZIP.
@@ -120,7 +118,7 @@ Utilizza PhoneGap CLI per compilare e installare l’applicazione. Per informazi
    cd ~/Downloads/ng-app-cli.1392137825303
    ```
 
-1. Immetti il comando phonegap per la piattaforma di destinazione. Ad esempio, il comando seguente crea l’app per Android:
+1. Immetti il comando phonegap per la piattaforma di destinazione. Ad esempio, il comando seguente crea l’app per Android™:
 
    ```shell
    phonegap build android
@@ -140,7 +138,7 @@ Creare una configurazione di PhoneGap Build in modo da poter utilizzare i serviz
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. Nella finestra di dialogo Crea configurazione, digita un valore per la proprietà Titolo. Per impostazione predefinita, il valore della proprietà Name è derivato dal titolo, tuttavia è possibile immettere un nome. Fai clic su Crea.
+1. Nella finestra di dialogo Crea configurazione digitare un valore per la proprietà Titolo. Per impostazione predefinita, il valore della proprietà Name è derivato dal titolo, tuttavia è possibile immettere un nome. Fai clic su Crea.
 1. Nella finestra di dialogo Configurazione PhoneGap Build digitare il nome utente e la password della PhoneGap Build e quindi fare clic su OK.
 
 ### Utilizzo delle PhoneGap Build {#using-phonegap-build}
@@ -150,7 +148,7 @@ Invia le risorse della tua applicazione a PhoneGap Build per la compilazione per
 1. Nella pagina Mobile Applications (Applicazioni mobili), apri l’app mobile. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
 1. (Facoltativo) Per creare l&#39;applicazione per installazioni complete, selezionarla e fare clic sull&#39;icona Cancella cache.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Icona di cancellazione della cache indicata da un simbolo di collegamento interrotto.](do-not-localize/chlimage_1-2.png)
 
    >[!NOTE]
    >
@@ -158,7 +156,7 @@ Invia le risorse della tua applicazione a PhoneGap Build per la compilazione per
 
 1. Selezionare la pagina iniziale, quindi fare clic sull&#39;icona Genera remoto.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Icona Genera remoto indicata da due ingranaggi di arrotondamento.](do-not-localize/chlimage_1-3.png)
 
    **Nota:** La versione beta di AEM Beta non crea una notifica nella casella in entrata al completamento della compilazione.
 

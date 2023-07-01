@@ -8,9 +8,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '525'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ In questo esempio, è stato creato un nuovo file JSSP personalizzato e lo chiama
 
 1. In Adobe Campaign, per creare un file JSSP, fai clic su **Nuovo** icona.
 
-   ![](do-not-localize/chlimage_1-4a.png)
+   ![L’icona Nuovo è indicata da una pagina con una stella nell’angolo in alto a sinistra.](do-not-localize/chlimage_1-4a.png)
 
 1. Immetti il nome di questo file JSSP. In questo esempio, **cus:custom.jssp** viene utilizzato (nel senso che si trova nella **cus** namespace).
 

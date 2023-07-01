@@ -1,8 +1,6 @@
 ---
 title: Console di gestione membri e gruppi
-seo-title: Members & Groups Management Consoles
 description: Come accedere alle console di gestione dei membri e dei gruppi
-seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '942'
 ht-degree: 4%
 
 ---
@@ -55,7 +53,7 @@ Nell’ambiente di authoring, per raggiungere la console Membri per la gestione 
 
 Seleziona l’icona del pannello laterale a sinistra del `Members` per aprire o disattivare il pannello laterale di ricerca.
 
-![](assets/leftpanel-icon.png)
+![Icona del pannello laterale di ricerca.](assets/leftpanel-icon.png)
 
 
 ![member-console2](assets/member-console2.png)
@@ -97,19 +95,19 @@ L&#39;utente può cambiare il proprio indirizzo e-mail quando aggiorna il profil
 
 * **[!UICONTROL Password]**
 
-   (*Obbligatorio*) La password di accesso.
+  (*Obbligatorio*) La password di accesso.
 
 * **[!UICONTROL Ripeti password]**
 
-   (*Obbligatorio*) Immettere nuovamente la password per la verifica.
+  (*Obbligatorio*) Immettere nuovamente la password per la verifica.
 
 * **[!UICONTROL Aggiungi membro ai siti]**
 
-   (*Facoltativo*) Selezionare dai siti community esistenti per aggiungere il membro al gruppo di membri del sito community.
+  (*Facoltativo*) Selezionare un membro dai siti community esistenti per aggiungerlo al gruppo membri del sito community.
 
 * **[!UICONTROL Aggiungi membro a gruppi]**
 
-   (*Facoltativo*) Selezionare un gruppo di membri esistente per aggiungere il membro a tale gruppo.
+  (*Facoltativo*) Selezionare un gruppo di membri esistente per aggiungere il membro a tale gruppo.
 
 * Seleziona **[!UICONTROL Salva]**
 
@@ -122,17 +120,17 @@ In Impostazioni account un amministratore della community può effettuare le seg
 
    * Non vietato Un membro ha pieno accesso al sito della community.
 
-   Il valore predefinito è `Not Banned`.
+  Il valore predefinito è `Not Banned`.
 
 * **[!UICONTROL Limiti per contributi]**
 
-   Se questa opzione è selezionata, la capacità del membro di pubblicare contenuti è limitata.
+  Se questa opzione è selezionata, la capacità del membro di pubblicare contenuti è limitata.
 Il valore predefinito dipende dalla configurazione dei limiti dei contributi.
 Consulta [Limiti contributi membri](limits.md).
 
 * **[!UICONTROL Modifica password]**
 
-   Collegamento presente quando si modifica un membro esistente. Consente a un amministratore di comunità di reimpostare una password per un membro.
+  Collegamento presente quando si modifica un membro esistente. Consente a un amministratore di comunità di reimpostare una password per un membro.
 
 ### GENERALE - Foto {#general-photo}
 
@@ -181,23 +179,23 @@ I campi obbligatori per la creazione di un nuovo gruppo di membri lato pubblicaz
 
 * **[!UICONTROL ID]**
 
-   (*Obbligatorio*) ID univoco del gruppo.
+  (*Obbligatorio*) ID univoco del gruppo.
 
-   *Una volta creato, l’ID non può essere modificato.*
+  *Una volta creato, l’ID non può essere modificato.*
 
 * **[!UICONTROL Nome]**
 
-   (*Facoltativo*) Il nome visualizzato del gruppo.
+  (*Facoltativo*) Il nome visualizzato del gruppo.
 
-   Il valore predefinito è l’ID.
+  Il valore predefinito è l’ID.
 
 * **[!UICONTROL Descrizione]**
 
-   (*Facoltativo*) Descrizione dello scopo e delle autorizzazioni del gruppo.
+  (*Facoltativo*) Descrizione dello scopo e delle autorizzazioni del gruppo.
 
 * **[!UICONTROL Aggiungi membri al gruppo]**
 
-   (*Facoltativo*) Selezionare i membri lato pubblicazione da includere come membri iniziali del gruppo.
+  (*Facoltativo*) Selezionare i membri lato pubblicazione da includere come membri iniziali del gruppo.
 
 * Seleziona **[!UICONTROL Salva]**
 

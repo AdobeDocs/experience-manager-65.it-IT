@@ -1,8 +1,6 @@
 ---
 title: ClientContext nei dettagli
-seo-title: Client Context in Detail
 description: ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente
-seo-description: The Client Context represents a dynamically assembled collection of user data
 uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +10,9 @@ discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -25,11 +23,11 @@ ht-degree: 0%
 >
 >ClientContext è stato sostituito da ContextHub. Consulta la sezione [documentazione correlata](/help/sites-developing/contexthub.md) per i dettagli.
 
-ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Puoi utilizzare i dati per determinare il contenuto da visualizzare su una pagina web in una determinata situazione (targeting del contenuto). I dati sono disponibili anche per l’analisi dei siti web e per qualsiasi codice JavaScript presente nella pagina.
+ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Puoi utilizzare i dati per determinare il contenuto da visualizzare su una pagina web in una determinata situazione (targeting del contenuto). I dati sono disponibili anche per l’analisi dei siti web e per qualsiasi JavaScript sulla pagina.
 
 ClientContext è costituito principalmente dai seguenti aspetti:
 
-* L’archivio della sessione, che contiene i dati utente.
+* Archivio di sessione contenente i dati utente.
 * L’interfaccia utente che visualizza i dati utente e fornisce gli strumenti per simulare l’esperienza utente.
 * A [API JavaScript](/help/sites-developing/ccjsapi.md) per interagire con gli archivi di sessione.
 
@@ -46,9 +44,9 @@ ClientContext include vari archivi di sessione che contengono dati utente. I dat
 
 Il framework ClientContext fornisce un [API JavaScript](/help/sites-developing/ccjsapi.md) che puoi utilizzare per interagire con gli archivi di sessione per leggere e scrivere i dati utente e per ascoltare e reagire agli eventi di archiviazione. Puoi anche creare archivi di sessione per i dati utente da utilizzare per il targeting del contenuto o per altri scopi.
 
-I dati dell&#39;archivio sessione rimangono nel client. ClientContext non riscrive i dati sul server. Per inviare dati al server, utilizza un modulo o sviluppa codice JavaScript personalizzato.
+I dati dell&#39;archivio sessione rimangono nel client. ClientContext non riscrive i dati sul server. Per inviare dati al server, utilizza un modulo o sviluppa JavaScript personalizzato.
 
-Ogni archivio sessione è una raccolta di coppie proprietà-valore. L’archivio delle sessioni rappresenta una raccolta di dati (di qualsiasi tipo) il cui significato concettuale può essere deciso dal progettista e/o dallo sviluppatore. Il codice JavaScript di esempio seguente definisce un oggetto che rappresenta i dati di profilo che l’archivio sessione potrebbe contenere:
+Ogni archivio sessione è una raccolta di coppie proprietà-valore. L’archivio delle sessioni rappresenta una raccolta di dati (di qualsiasi tipo) il cui significato concettuale può essere deciso dal progettista e/o dallo sviluppatore. L’esempio di codice JavaScript che segue definisce un oggetto che rappresenta i dati di profilo che l’archivio di sessione potrebbe contenere:
 
 ```
 {
@@ -77,9 +75,9 @@ Un componente archivio contesto è un componente CQ che può essere aggiunto a C
 I componenti dell’archivio contesto possono includere i seguenti elementi:
 
 * Script JSP che definiscono l’aspetto in ClientContext.
-* Proprietà per elencare il componente nella barra laterale.
+* Proprietà per elencare il componente nel Sidekick.
 * Finestre di dialogo di modifica per la configurazione delle istanze dei componenti.
-* JavaScript che inizializza l&#39;archivio di sessione.
+* JavaScript che inizializza l’archivio della sessione.
 
 Per una descrizione dei componenti dell&#39;archivio di contesto installati che è possibile aggiungere all&#39;archivio di contesto, vedere [Componenti ClientContext disponibili](/help/sites-administering/client-context.md#available-client-context-components).
 
@@ -128,19 +126,19 @@ Crea un archivio di sessione per i dati da aggiungere e recuperare da ClientCont
 
 1. Crea una cartella della libreria client con `categories` valore proprietà di `personalization.stores.kernel`. ClientContext carica automaticamente le librerie client di questa categoria.
 
-1. Configura la cartella della libreria client in modo che abbia una dipendenza dal `personalization.core.kernel` cartella della libreria client. Il `personalization.core.kernel` La libreria client fornisce l&#39;API JavaScript ClientContext.
+1. Configura la cartella della libreria client in modo che abbia una dipendenza dal `personalization.core.kernel` cartella della libreria client. Il `personalization.core.kernel` La libreria client fornisce l’API JavaScript ClientContext.
 
-1. Aggiungi il codice JavaScript che crea e inizializza l’archivio della sessione.
+1. Aggiungi il JavaScript che crea e inizializza l’archivio della sessione.
 
 L’inclusione di JavaScript nella libreria client personalization.store.kernel determina la creazione dell’archivio al caricamento del framework ClientContext.
 
 >[!NOTE]
 >
->Se crei un archivio di sessione come parte di un componente archivio di contesto, in alternativa puoi inserire il codice JavaScript nel file init.js.jsp del componente. In questo caso, l’archivio della sessione viene creato solo se il componente viene aggiunto a ClientContext.
+>Se crei un archivio sessione come parte di un componente archivio contesto, in alternativa puoi inserire JavaScript nel file init.js.jsp del componente. In questo caso, l’archivio della sessione viene creato solo se il componente viene aggiunto a ClientContext.
 
 #### Tipi di archivi di sessione {#types-of-session-stores}
 
-Gli archivi di sessione vengono creati e disponibili durante una sessione del browser oppure vengono memorizzati in modo permanente nell’archiviazione del browser o nei cookie. L’API JavaScript di ClientContext definisce diverse classi che rappresentano entrambi i tipi di archivi dati:
+Gli archivi di sessione vengono creati e disponibili durante una sessione del browser oppure vengono memorizzati in modo permanente nell’archiviazione del browser o nei cookie. L’API JavaScript ClientContext definisce diverse classi che rappresentano entrambi i tipi di archivi dati:
 
 * ` [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)`: questi oggetti risiedono solo nel DOM della pagina. I dati vengono creati e memorizzati per tutta la durata della pagina.
 * ` [CQ_Analytics.PerstistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore)`: questi oggetti risiedono nel DOM della pagina e vengono mantenuti nell’archiviazione del browser o nei cookie. I dati sono disponibili su più pagine e tra sessioni utente.
@@ -153,7 +151,7 @@ L’API fornisce anche estensioni di queste classi, specializzate per l’archiv
 
 #### Creazione dell&#39;oggetto archivio sessione {#creating-the-session-store-object}
 
-Il codice JavaScript della cartella della libreria client crea e inizializza l’archivio delle sessioni. L’archivio sessione deve quindi essere registrato utilizzando Context Store Manager. Nell&#39;esempio seguente viene creata e registrata una [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) oggetto.
+Il JavaScript della cartella della libreria client crea e inizializza l’archivio della sessione. L’archivio sessione deve quindi essere registrato utilizzando Context Store Manager. Nell&#39;esempio seguente viene creata e registrata una [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) oggetto.
 
 ```
 //Create the session store
@@ -206,11 +204,11 @@ ID del div in cui deve essere eseguito il rendering dell’archivio.
 >
 >Tutti i componenti ClientContext sono estensioni dei componenti Generic Store o Generic Store Properties. Diversi esempi sono installati in `/libs/cq/personalization/components/contextstores` cartella.
 
-#### Configurazione dell&#39;aspetto nella barra laterale {#configuring-the-appearance-in-sidekick}
+#### Configurazione dell&#39;aspetto nel Sidekick {#configuring-the-appearance-in-sidekick}
 
-Quando si modifica ClientContext, i componenti dell’archivio contestuale vengono visualizzati nella barra laterale. Come per tutti i componenti, il `componentGroup` e `jcr:title` le proprietà del componente contesto client determinano il gruppo e il nome del componente.
+Quando si modifica ClientContext, i componenti dell’archivio contestuale vengono visualizzati nel Sidekick. Come per tutti i componenti, il `componentGroup` e `jcr:title` le proprietà del componente contesto client determinano il gruppo e il nome del componente.
 
-Tutti i componenti che hanno un `componentGroup` valore proprietà di `Client Context` viene visualizzato nella barra laterale per impostazione predefinita. Se utilizzi un valore diverso per `componentGroup` , è necessario aggiungere manualmente il componente alla barra laterale utilizzando la modalità Progettazione.
+Tutti i componenti che hanno un `componentGroup` valore proprietà di `Client Context` viene visualizzato in Sidekick per impostazione predefinita. Se utilizzi un valore diverso per `componentGroup` , è necessario aggiungere manualmente il componente al Sidekick utilizzando la modalità Progettazione.
 
 #### Istanze componente archivio contesto {#context-store-component-instances}
 
@@ -220,9 +218,9 @@ Quando ClientContext viene inizializzato, questi nodi vengono elaborati.
 
 #### Inizializzazione dell&#39;archivio sessioni associato {#initializing-the-associated-session-store}
 
-Aggiungi un file init.js.jsp al componente per generare codice JavaScript che inizializza l’archivio sessioni utilizzato dal componente archivio contesto. Ad esempio, utilizza lo script di inizializzazione per recuperare le proprietà di configurazione del componente e utilizzarle per popolare l’archivio della sessione.
+Aggiungi un file init.js.jsp al componente per generare il codice JavaScript che inizializza l’archivio sessioni utilizzato dal componente archivio contesto. Ad esempio, utilizza lo script di inizializzazione per recuperare le proprietà di configurazione del componente e utilizzarle per popolare l’archivio della sessione.
 
-Il codice JavaScript generato viene aggiunto alla pagina quando ClientContext viene inizializzato al caricamento della pagina sia sulle istanze di authoring che di pubblicazione. Questa JSP viene eseguita prima del caricamento e del rendering dell’istanza del componente dell’archivio di contesto.
+Il JavaScript generato viene aggiunto alla pagina quando ClientContext viene inizializzato al caricamento della pagina sia sulle istanze di authoring che di pubblicazione. Questa JSP viene eseguita prima del caricamento e del rendering dell’istanza del componente dell’archivio di contesto.
 
 Il codice deve impostare il tipo MIME del file su `text/javascript`, o non viene eseguito.
 
@@ -323,9 +321,9 @@ Il tag ha il seguente formato:
 
 #### Implementazione del metodo del renderer dell’archivio sessioni {#implementing-the-session-store-renderer-method}
 
-L’archivio delle sessioni avrà quindi bisogno di un metodo &quot;renderer&quot; che verrà chiamato ogni volta che è necessario eseguire il rendering del componente. La funzione di rendering viene chiamata con due parametri:
+L’archivio delle sessioni avrà quindi bisogno di un metodo &quot;renderer&quot; che verrà chiamato ogni volta che sarà necessario eseguire il rendering del componente. La funzione di rendering viene chiamata con due parametri:
 
-* Archivio {String} @param Archivio di cui eseguire il rendering
+* @param {String} store Archivio per il rendering
 * @param {String} ID div del div in cui deve essere eseguito il rendering dell’archivio.
 
 ## Interazione con gli archivi di sessione {#interacting-with-session-stores}
@@ -353,7 +351,7 @@ function getName(){
 
 La sessione memorizza gli eventi di attivazione, pertanto è possibile aggiungere listener e attivare eventi in base a tali eventi.
 
-Gli archivi di sessione sono basati su `Observable` pattern. Si estendono [ `CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) che fornisce ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` metodo.
+Gli archivi di sessione sono basati su `Observable` pattern. Si estendono [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) che fornisce ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` metodo.
 
 Nell&#39;esempio seguente viene aggiunto un listener al `update` evento del `profile` archivio sessioni.
 
@@ -599,7 +597,7 @@ Aggiungi il componente Archivio posizione a ClientContext in modo che venga iniz
 1. Fare clic su Ctrl-Alt-C (Windows) o su Control-Opzione-C (Mac) per aprire ClientContext.
 1. Fare clic sull&#39;icona Modifica nella parte superiore di ClientContext per aprire ClientContext Designer.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Icona Modifica indicata da una matita all’interno di un quadrato.](do-not-localize/chlimage_1.png)
 
 1. Trascina il componente Archivio posizione in ClientContext.
 
@@ -617,11 +615,11 @@ Per creare un secondo contesto client è necessario duplicare il ramo:
 `/etc/clientcontext/default`
 
 * La sottocartella:
-   `/content`
+  `/content`
 conterrà il contenuto del contesto client personalizzato.
 
 * La cartella:
-   `/contextstores`
+  `/contextstores`
 consente di definire diverse configurazioni per gli archivi contestuali.
 
 Per utilizzare il contesto client personalizzato, modifica la proprietà

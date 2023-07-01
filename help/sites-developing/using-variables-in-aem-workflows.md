@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
 exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
-source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '2048'
+source-wordcount: '2096'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Per creare una variabile:
    * Modello dati modulo: specifica un percorso per il modello dati modulo.
    * ArrayList - Specificare un sottotipo per la raccolta.
 
-1. Specifica una descrizione facoltativa per la variabile e tocca ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per salvare le modifiche. La variabile viene visualizzata nell’elenco disponibile nel riquadro a sinistra.
+1. Specifica una descrizione facoltativa per la variabile e tocca ![Icona Salva indicata da un segno di spunta all’interno di una casella.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per salvare le modifiche. La variabile viene visualizzata nell’elenco disponibile nel riquadro a sinistra.
 
 Quando crei delle variabili, prendi in considerazione le seguenti procedure:
 
@@ -92,10 +92,10 @@ A seconda del tipo di dati della variabile, puoi utilizzare le seguenti opzioni 
 Per aggiungere la mappatura tra variabili, eseguire le operazioni seguenti:
 
 1. Nella pagina di modifica del flusso di lavoro, tocca l’icona Passaggi disponibile nella barra laterale del modello di flusso di lavoro.
-1. Trascina la selezione **Imposta variabile** passa all’editor del flusso di lavoro, tocca il passaggio e seleziona ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configura).
+1. Trascina la selezione **Imposta variabile** passa all’editor del flusso di lavoro, tocca il passaggio e seleziona ![Icona Configura indicata da una chiave inglese.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurare).
 1. Nella finestra di dialogo Imposta variabile, seleziona **[!UICONTROL Mappatura]** > **[!UICONTROL Aggiungi mappatura]**.
 1. In **Mappa variabile** , selezionare la variabile per la memorizzazione dei dati, selezionare la modalità di mappatura e specificare un valore da memorizzare nella variabile. Le modalità di mappatura variano in base al tipo di variabile.
-1. Mappa più variabili in modo da poter creare un’espressione significativa. Tocca ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per salvare le modifiche.
+1. Mappa più variabili in modo da poter creare un’espressione significativa. Tocca ![Icona Salva indicata da un segno di spunta all’interno di una casella.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per salvare le modifiche.
 
 ### Esempio 1: eseguire una query su una variabile XML per impostare il valore per una variabile stringa {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -250,8 +250,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Modificare una variabile {#edit-a-variable}
 
 1. Nella pagina Modifica flusso di lavoro, tocca l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
-1. Tocca il ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Modifica) accanto al nome della variabile da modificare.
-1. Modifica le informazioni sulla variabile e tocca ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per salvare le modifiche. Impossibile modificare il **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** campi per una variabile.
+1. Tocca il ![Icona Modifica indicata da un simbolo a forma di matita.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Modifica) accanto al nome della variabile da modificare.
+1. Modifica le informazioni sulla variabile e tocca ![Icona Salva contrassegnata da un segno di spunta.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per salvare le modifiche. Impossibile modificare il **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** campi per una variabile.
 
 ## Eliminare una variabile {#delete-a-variable}
 
@@ -261,4 +261,4 @@ Per eliminare una variabile:
 
 1. Nella pagina Modifica flusso di lavoro, tocca l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
 1. Tocca l’icona Elimina accanto al nome della variabile da eliminare.
-1. Tocca ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per confermare ed eliminare la variabile.
+1. Tocca ![Icona Fine indicata da un simbolo di segno di spunta.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per confermare ed eliminare la variabile.

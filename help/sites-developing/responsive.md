@@ -1,8 +1,6 @@
 ---
 title: Progettazione reattiva per le pagine web
-seo-title: Responsive design for web pages
-description: Con il design reattivo, le stesse pagine possono essere visualizzate in modo efficace su più dispositivi in più orientamenti
-seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
+description: Con il design reattivo, le stesse pagine possono essere visualizzate in modo efficace su più dispositivi in più orientamenti.
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '5336'
+source-wordcount: '5375'
 ht-degree: 0%
 
 ---
@@ -23,6 +21,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (come _React_). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
+>
 
 >[!NOTE]
 >
@@ -52,7 +51,7 @@ Per informazioni sull’implementazione del comportamento di progettazione reatt
 * [Griglie fluide](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Immagini adattive](/help/sites-developing/responsive.md#using-adaptive-images)
 
-Durante la progettazione, utilizzare **[!UICONTROL Barra laterale]** per visualizzare in anteprima le pagine per diverse dimensioni dello schermo.
+Durante la progettazione, utilizzare **[!UICONTROL Sidekick]** per visualizzare in anteprima le pagine per diverse dimensioni dello schermo.
 
 ## Prima di sviluppare {#before-you-develop}
 
@@ -174,15 +173,15 @@ Lo script JSP genera il seguente codice HTML che fa riferimento ai fogli di stil
 
 ## Anteprima per dispositivi specifici {#previewing-for-specific-devices}
 
-Visualizza le anteprime delle pagine in diverse dimensioni di riquadro di visualizzazione per verificare il comportamento del design reattivo. In entrata **[!UICONTROL Anteprima]** modalità, **[!UICONTROL Barra laterale]** include un **[!UICONTROL Dispositivi]** menu a discesa utilizzato per selezionare un dispositivo. Quando selezioni un dispositivo, la pagina cambia in base alle dimensioni del riquadro di visualizzazione.
+Visualizza le anteprime delle pagine in diverse dimensioni di riquadro di visualizzazione per verificare il comportamento del design reattivo. In entrata **[!UICONTROL Anteprima]** modalità, **[!UICONTROL Sidekick]** include un **[!UICONTROL Dispositivi]** menu a discesa utilizzato per selezionare un dispositivo. Quando selezioni un dispositivo, la pagina cambia in base alle dimensioni del riquadro di visualizzazione.
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
-Per attivare l&#39;anteprima del dispositivo in **[!UICONTROL Barra laterale]**, è necessario configurare la pagina e **[!UICONTROL MobileEmulatorProvider]** servizio. Un’altra configurazione di pagina controlla l’elenco dei dispositivi visualizzati nella **[!UICONTROL Dispositivi]** elenco.
+Per attivare l&#39;anteprima del dispositivo in **[!UICONTROL Sidekick]**, è necessario configurare la pagina e **[!UICONTROL MobileEmulatorProvider]** servizio. Un’altra configurazione di pagina controlla l’elenco dei dispositivi visualizzati nella **[!UICONTROL Dispositivi]** elenco.
 
 ### Aggiunta dell&#39;elenco dei dispositivi {#adding-the-devices-list}
 
-Il **[!UICONTROL Dispositivi]** viene visualizzato in **[!UICONTROL Barra laterale]** quando la pagina include lo script JSP che esegue il rendering del **[!UICONTROL Dispositivi]** elenco. Per aggiungere **[!UICONTROL Dispositivi]** elenca a **[!UICONTROL Barra laterale]**, includi `/libs/wcm/mobile/components/simulator/simulator.jsp` script in `head` della pagina.
+Il **[!UICONTROL Dispositivi]** viene visualizzato in **[!UICONTROL Sidekick]** quando la pagina include lo script JSP che esegue il rendering del **[!UICONTROL Dispositivi]** elenco. Per aggiungere **[!UICONTROL Dispositivi]** elenca a **[!UICONTROL Sidekick]**, includi `/libs/wcm/mobile/components/simulator/simulator.jsp` script in `head` della pagina.
 
 Includi il seguente codice nella JSP che definisce `head` sezione:
 
@@ -201,7 +200,7 @@ Ad esempio, per creare un ` [sling:OsgiConfig](/help/sites-deploying/configuring
 * Cartella padre: `/apps/application_name/config`
 * Nome: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
-   Il - `*alias*` suffix è necessario perché il servizio MobileEmulatorProvider è un servizio di fabbrica. Utilizzare qualsiasi alias univoco per questa factory.
+  Il - `*alias*` suffix è necessario perché il servizio MobileEmulatorProvider è un servizio di fabbrica. Utilizzare qualsiasi alias univoco per questa factory.
 
 * jcr:primaryType: `sling:OsgiConfig`
 
@@ -211,12 +210,12 @@ Aggiungi la seguente proprietà nodo:
 * Tipo: `String[]`
 * Valore: i percorsi dei componenti della pagina che eseguono il rendering delle pagine web. Ad esempio, l’app geometrixx-media utilizza i seguenti valori:
 
-   ```
-   geometrixx-media/components/page
-    geometrixx-unlimited/components/pages/page
-    geometrixx-unlimited/components/pages/coverpage
-    geometrixx-unlimited/components/pages/issue
-   ```
+  ```
+  geometrixx-media/components/page
+   geometrixx-unlimited/components/pages/page
+   geometrixx-unlimited/components/pages/coverpage
+   geometrixx-unlimited/components/pages/issue
+  ```
 
 ### Specifica dei gruppi di dispositivi {#specifying-the-device-groups}
 
@@ -235,6 +234,7 @@ Utilizza la console Strumenti per: [creare e modificare gruppi di dispositivi](/
 >[!NOTE]
 >
 >Per i gruppi di dispositivi utilizzati per la progettazione reattiva, modifica il gruppo di dispositivi e nella scheda Generale seleziona Disattiva emulatore. Questa opzione impedisce la visualizzazione del carosello dell’emulatore, che non è rilevante per la progettazione reattiva.
+>
 
 ## Utilizzo di immagini adattive {#using-adaptive-images}
 
@@ -326,6 +326,7 @@ L’esempio seguente HTML seleziona due rappresentazioni DAM della stessa immagi
 >* Script che genera il HTML: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
 >
 >La sezione successiva fornisce dettagli su questo componente.
+>
 
 ### Informazioni sul rendering delle immagini nell’AEM {#understanding-image-rendering-in-aem}
 
@@ -366,6 +367,7 @@ Il componente deve eseguire le seguenti attività:
 >[!NOTE]
 >
 >Il client web utilizza le librerie JavaScript matchMedia e Picturefill (o librerie simili) per valutare i selettori multimediali.
+>
 
 Il servlet che elabora la richiesta di immagine deve eseguire le seguenti attività:
 
@@ -603,9 +605,9 @@ Il percorso dell’immagine, le dimensioni e i valori di qualità devono essere 
 
 * Il percorso dell&#39;immagine viene memorizzato come valore di una proprietà denominata `fileReference`.
 
-Quando crei una pagina, utilizza **Barra laterale** per specificare l&#39;immagine e aggiungere `image` alle proprietà della pagina:
+Quando crei una pagina, utilizza **Sidekick** per specificare l&#39;immagine e aggiungere `image` alle proprietà della pagina:
 
-1. In entrata **Barra laterale**, fare clic su **Pagina** e quindi fare clic su **Proprietà pagina**.
+1. In entrata **Sidekick**, fare clic su **Pagina** e quindi fare clic su **Proprietà pagina**.
 1. Fai clic su **Immagine** e specificare l&#39;immagine.
 1. Fai clic su **OK**.
 
@@ -657,6 +659,7 @@ Il `ImageReferenceModificationServlet` la classe sostituisce la `createLayer` e 
 
 >[!NOTE]
 >Il [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) La classe fornisce il metodo getFileReference.
+>
 
 ## Sviluppo di una griglia di fluidi {#developing-a-fluid-grid}
 
@@ -698,6 +701,7 @@ Ad esempio, l&#39;applicazione geometrixx-media di esempio contiene il component
 >[!NOTE]
 >
 >Quando un componente include più `cq:include` elementi che fanno riferimento al componente parsys, ciascuno `path` l&#39;attributo deve avere un valore diverso.
+>
 
 #### Ridimensionamento della griglia dei componenti Pagina {#scaling-the-page-component-grid}
 
@@ -862,13 +866,13 @@ Per ogni intervallo di larghezze dei riquadri di visualizzazione di destinazione
 
 Le griglie consentono di ridimensionare i blocchi di contenuto in base alle diverse dimensioni dei riquadri di visualizzazione. I blocchi di contenuto si estendono su un numero specifico di colonne. Quando la larghezza delle colonne aumenta o diminuisce per adattarsi a dimensioni di riquadro di visualizzazione diverse, la larghezza dei blocchi di contenuto aumenta o diminuisce di conseguenza. Il ridimensionamento può supportare sia riquadri di grandi dimensioni che riquadri di medie dimensioni sufficientemente ampi da consentire il posizionamento affiancato dei blocchi di contenuto.
 
-![](do-not-localize/chlimage_1-1a.png)
+![Immagine di due griglie, una più piccola dell&#39;altra.](do-not-localize/chlimage_1-1a.png)
 
 #### Riposizionamento del contenuto nella griglia {#repositioning-content-in-the-grid}
 
 La dimensione dei blocchi di contenuto può essere limitata da una larghezza minima, oltre la quale il ridimensionamento non è più efficace. Per i riquadri di visualizzazione più piccoli, la griglia può essere utilizzata per distribuire blocchi di contenuto in verticale anziché in orizzontale.
 
-![](do-not-localize/chlimage_1-2a.png)
+![Immagine di due griglie, una riposizionata più piccola dell&#39;altra.](do-not-localize/chlimage_1-2a.png)
 
 ### Progettazione della griglia {#designing-the-grid}
 
@@ -953,7 +957,7 @@ Utilizza lo stile float del `.row-fluid` in modo da poter controllare se i blocc
 
 Aggiungi lo stile al `.row-fluid` all&#39;interno di ogni query multimediale. Imposta il valore in base al layout di pagina utilizzato per la query multimediale. Ad esempio, il diagramma seguente illustra una riga che distribuisce il contenuto orizzontalmente per i riquadri di visualizzazione larghi e verticalmente per quelli stretti.
 
-![](do-not-localize/chlimage_1-3a.png)
+![Due immagini di blocchi di contenuto in una riga, la seconda che mostra la riga riposizionata.](do-not-localize/chlimage_1-3a.png)
 
 I seguenti CSS possono implementare questo comportamento:
 

@@ -1,8 +1,6 @@
 ---
 title: Creare un sito web completo (JSP)
-seo-title: Create a Fully-Featured Website (JSP)
 description: Questa esercitazione consente di creare un sito Web completo di tutte le funzioni con AEM
-seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ content-type: reference
 discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
 source-wordcount: '4935'
 ht-degree: 3%
@@ -24,7 +22,7 @@ ht-degree: 3%
 >
 >Questo articolo descrive come creare un sito web utilizzando JSP e basato sull’interfaccia classica. L’Adobe consiglia di sfruttare le tecnologie AEM più recenti per i siti web, come descritto in dettaglio nell’articolo [Guida introduttiva allo sviluppo per AEM Sites](/help/sites-developing/getting-started.md).
 
-Questa esercitazione consente di creare un sito web completo di tutte le funzioni con Adobe Experience Manager (AEM). Il sito web sarà basato su un sito web generico ed è destinato principalmente agli sviluppatori web. Tutti gli sviluppi avverranno all’interno di un ambiente di authoring.
+Questa esercitazione consente di creare un sito web completo di tutte le funzioni con Adobe Experience Manager (AEM). Il sito web sarà basato su un sito web generico ed è destinato principalmente agli sviluppatori web. Tutto lo sviluppo avviene all’interno di un ambiente di authoring.
 
 Questo tutorial descrive come:
 
@@ -293,8 +291,8 @@ Ad esempio, nel codice JSP del componente, puoi fare riferimento agli script for
       * **Nome:** sling:resourceSuperType
       * **Tipo:** Stringa
       * **Valore:** foundation/components/page
-   1. Fai clic su Salva tutto.
 
+   1. Fai clic su Salva tutto.
 
 1. Apri `contentpage.jsp` file in `/apps/mywebsite/components/contentpage` e sostituisci il codice esistente con il seguente codice:
 
@@ -313,7 +311,7 @@ Ad esempio, nel codice JSP del componente, puoi fare riferimento agli script for
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Apri la sorgente della pagina per visualizzare gli elementi JavaScript e HTML generati dagli script head.jsp e body.jsp. Lo snippet di script seguente apre la barra laterale quando si apre la pagina:
+   Apri la sorgente della pagina per visualizzare gli elementi JavaScript e HTML generati dagli script head.jsp e body.jsp. Il seguente snippet di script apre il Sidekick quando apri la pagina:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -481,7 +479,7 @@ Per includere topnav nel componente contentpage:
 Il componente Pagina definisce le proprietà che consentono di fornire i sottotitoli per le pagine. Aggiungi i sottotitoli che forniscono informazioni sul contenuto della pagina.
 
 1. Nel browser, apri la **Prodotti** pagina.
-1. Sulla barra laterale **Pagina** , fare clic su **Proprietà pagina**.
+1. Sul Sidekick **Pagina** , fare clic su **Proprietà pagina**.
 1. Nella scheda Base della finestra di dialogo, espandi **Altri titoli e descrizioni,** e per **Sottotitolo** proprietà, tipo **cosa facciamo**. Fai clic su **OK**.
 1. Ripeti i passaggi precedenti per aggiungere il sottotitolo **sui nostri servizi** al **Servizi** pagina.
 1. Ripeti i passaggi precedenti per aggiungere il sottotitolo **la fiducia che guadagniamo** al **Clienti** pagina.
@@ -524,9 +522,9 @@ In questo esercizio, Sling confronta questi URL con lo script /apps/mywebsite/co
 
 1. Copia il seguente codice in `navimage.png.java.`Il codice estende la classe AbstractImageServlet:
 
-   * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un oggetto ImageContext che memorizza le proprietà della risorsa corrente.
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un oggetto ImageContext che memorizza le proprietà della risorsa corrente.
    * La pagina padre della risorsa viene estratta dall&#39;oggetto ImageContext. Vengono quindi ottenuti il titolo e il sottotitolo della pagina.
-   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) viene utilizzato per generare l’immagine dal file navimage_bg.jpg della progettazione del sito, dal titolo della pagina e dal sottotitolo della pagina.
+   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) viene utilizzato per generare l’immagine dal file navimage_bg.jpg della progettazione del sito, dal titolo della pagina e dal sottotitolo della pagina.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -656,7 +654,7 @@ Crea il componente listchildren che genera un elenco di collegamenti alle pagine
 
 #### Creazione di pagine di prodotti {#creating-product-pages}
 
-Crea due pagine che si trovano sotto la pagina Prodotti. Per ogni pagina, che descrive due prodotti specifici, puoi impostare un titolo, una descrizione e una data.
+Crea due pagine che si trovano sotto la pagina Prodotti. Per ogni pagina che descrive due prodotti specifici, imposta un titolo, una descrizione e una data.
 
 1. Nell&#39;albero delle cartelle della pagina Siti Web selezionare l&#39;elemento Siti Web/Sito Web personale/Inglese/Prodotti e fare clic su Nuovo > Nuova pagina.
 1. Nella finestra di dialogo, immetti i seguenti valori delle proprietà, quindi fai clic su Crea:
@@ -679,6 +677,7 @@ Crea due pagine che si trovano sotto la pagina Prodotti. Per ogni pagina, che de
       * Nome: `jcr:description`
       * Tipo: `String`
       * Valore: `This is a description of the Product 1!.`
+
    1. Clic **Aggiungi**.
    1. In **Proprietà** , crea un&#39;altra proprietà utilizzando i seguenti valori:
 
@@ -686,9 +685,8 @@ Crea due pagine che si trovano sotto la pagina Prodotti. Per ogni pagina, che de
       * Tipo: String
       * Valore: 02/14/2008
       * Fai clic su Aggiungi.
+
    1. Fai clic su Salva tutto.
-
-
 
 1. In CRXDE Lite, imposta una descrizione e una data per la pagina del prodotto 2:
 
@@ -698,6 +696,7 @@ Crea due pagine che si trovano sotto la pagina Prodotti. Per ogni pagina, che de
       * Nome: jcr:description
       * Tipo: String
       * Valore: questa è una descrizione del prodotto 2!.
+
    1. Clic **Aggiungi**.
    1. Nelle stesse caselle di testo sostituire i valori precedenti con i valori seguenti:
 
@@ -705,9 +704,8 @@ Crea due pagine che si trovano sotto la pagina Prodotti. Per ogni pagina, che de
       * Tipo: String
       * Valore: 05/11/2012
       * Fai clic su Aggiungi.
+
    1. Fai clic su Salva tutto.
-
-
 
 #### Creazione del componente Elenco elementi figlio {#creating-the-list-children-component-1}
 
@@ -1031,16 +1029,16 @@ public class img_GET extends AbstractImageServlet {
 
 In questa sezione viene descritto come impostare un&#39;immagine come logo utilizzando la finestra di dialogo modalità progettazione.
 
-1. Con la pagina Prodotti aperta nel browser, fai clic sul pulsante Progettazione nella parte inferiore della barra laterale per accedere alla modalità progettazione.
+1. Con la pagina Prodotti aperta nel browser, fai clic sul pulsante Progettazione nella parte inferiore del Sidekick per accedere alla modalità progettazione.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Pulsante Progettazione indicato da un quadrato destro.](do-not-localize/chlimage_1-1.png)
 
 1. Nella barra Progettazione logo, fai clic su Modifica per utilizzare la finestra di dialogo per modificare le impostazioni del componente logo.
 1. Nella finestra di dialogo, fai clic su nel pannello della scheda Immagine, individua l’immagine logo.png estratta dal file mywebsite.zip e fai clic su OK.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
-1. Fate clic sul triangolo sulla barra del titolo della barra laterale per tornare alla modalità Modifica.
+1. Fate clic sul triangolo sulla barra del titolo del Sidekick per tornare alla modalità Modifica.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -1124,7 +1122,7 @@ Create un componente che visualizzi un&#39;immagine nel sistema paragrafo. Per r
 
 #### Creazione del componente Immagine {#creating-the-image-component-1}
 
-1. Fai clic con il pulsante destro del mouse sulla `/apps/mywebsite/components/logo` e fai clic su Copia.
+1. Fare clic con il pulsante destro del mouse `/apps/mywebsite/components/logo` e fai clic su Copia.
 1. Fare clic con il pulsante destro del mouse `/apps/mywebsite/components` e fare clic su Incolla.
 1. Fare clic con il pulsante destro del mouse `Copy of logo` , fare clic su Rinomina, eliminare il testo esistente e digitare `image`.
 
@@ -1206,7 +1204,7 @@ In questa sezione viene utilizzato un nodo cq:editConfig per consentire di trasc
 
 #### Aggiunta dell’icona {#adding-the-icon}
 
-In questa sezione, aggiungi l’icona da visualizzare accanto al componente immagine quando è elencato nella barra laterale:
+In questa sezione aggiungi l’icona da visualizzare accanto al componente immagine quando è elencato in Sidekick:
 
 1. In CRXDE Lite, fai clic con il pulsante destro del mouse sul file `/libs/foundation/components/image/icon.png` e seleziona **Copia.**
 1. Fare clic con il pulsante destro del mouse sul nodo `/apps/mywebsite/components/image` e fai clic su **Incolla**, quindi fai clic su **Salva tutto**.
@@ -1216,11 +1214,11 @@ In questa sezione, aggiungi l’icona da visualizzare accanto al componente imma
 In questa sezione verrà visualizzata la **Prodotti** e aggiungi il componente immagine al sistema paragrafo.
 
 1. Nel browser, ricarica il **Prodotti** pagina.
-1. Nella barra laterale, fai clic su **modalità progettazione** icona.
+1. Nel Sidekick, fai clic su **modalità progettazione** icona.
 1. Fare clic sul pulsante Modifica per modificare la finestra di dialogo di progettazione della parte.
 1. Nella finestra di dialogo, un elenco di **Componenti consentiti** viene visualizzato; passa a **Sito Web personale**, seleziona la **Componente Immagine personale** e fai clic su **OK.**
 1. Torna a **modalità di modifica.**
-1. Fare doppio clic sulla cornice parsys (su **Trascina qui i componenti o le risorse**). Il **Inserisci nuovo componente** e **Barra laterale** i selettori si presentano come segue:
+1. Fare doppio clic sulla cornice parsys (su **Trascina qui i componenti o le risorse**). Il **Inserisci nuovo componente** e **Sidekick** i selettori si presentano come segue:
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -1281,10 +1279,10 @@ La casella di input per la ricerca sarà visualizzata come segue sul **Inglese**
       * Titolo: Componente Ricerca personale
       * Descrizione: questo è il mio componente di ricerca
       * Gruppo: MyWebsite
+
    1. Fare clic su Avanti, quindi di nuovo su Avanti.
    1. Nel pannello Padri consentiti, fate clic sul pulsante + e digitate `*/parsys`.
    1. Fare clic su Avanti e quindi su OK.
-
 
 1. Fai clic su Salva tutto.
 1. Copia i seguenti nodi e incollali nel nodo apps/mywebsite/components/search:
@@ -1500,11 +1498,11 @@ Per includere una casella di input di ricerca nella sezione sinistra della pagin
 In questa sezione aggiungi il componente Ricerca al sistema paragrafo.
 
 1. Nel browser, apri la pagina Ricerca.
-1. Nella barra laterale, fai clic sull’icona della modalità progettazione.
+1. Nel Sidekick, fate clic sull&#39;icona della modalità progettazione.
 1. Nel blocco Design of par (sotto il titolo Search), fare clic su Edit (Modifica).
 1. Nella finestra di dialogo, scorri fino a  **I miei siti Web** gruppo, seleziona **Componente Ricerca personale** e fai clic su **OK**.
-1. Nella barra laterale, fate clic sul triangolo per tornare alla modalità di modifica.
-1. Trascina il componente Ricerca personale dalla barra laterale alla cornice parsys. Si presenta come segue:
+1. Su Sidekick, fate clic sul triangolo per tornare alla modalità di modifica.
+1. Trascinate il componente Ricerca personale dal Sidekick alla cornice parsys. Si presenta come segue:
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 

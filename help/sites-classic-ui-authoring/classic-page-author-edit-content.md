@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 13%
+source-wordcount: '1836'
+ht-degree: 12%
 
 ---
 
@@ -28,7 +28,7 @@ Il contenuto viene aggiunto tramite [componenti](/help/sites-classic-ui-authorin
 >
 >Nell’eventualità di problemi, rivolgiti al tuo amministratore di sistema.
 
-## Barra laterale {#sidekick}
+## Sidekick {#sidekick}
 
 La barra laterale è uno strumento chiave per la creazione delle pagine. Varia quando si crea una pagina, in modo che sia sempre visibile.
 
@@ -207,19 +207,19 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 Il bordo inferiore della barra laterale contiene due icone importanti per l&#39;anteprima delle pagine:
 
-![](do-not-localize/chlimage_1-5.png)
+![Bordo inferiore della barra laterale con una riga orizzontale di sette icone. Due delle icone all&#39;inizio della riga, l&#39;icona di modifica e l&#39;icona della modalità di anteprima, sono indicate rispettivamente da un simbolo a forma di matita e da un simbolo di lente di ingrandimento.](do-not-localize/chlimage_1-5.png)
 
 * L’icona a forma di matita mostra che al momento sei in modalità di modifica e puoi aggiungere, modificare, spostare o eliminare contenuti.
 
-   ![](do-not-localize/chlimage_1-6.png)
+  ![Icona Modifica indicata da un simbolo a forma di matita.](do-not-localize/chlimage_1-6.png)
 
 * L’icona della lente di ingrandimento consente di selezionare la modalità di anteprima in cui verrà visualizzata la pagina, così come verrà visualizzata nell’ambiente di pubblicazione (a volte è necessario anche un aggiornamento della pagina):
 
-   ![](do-not-localize/chlimage_1-7.png)
+  ![Icona della modalità Anteprima indicata da un simbolo di lente di ingrandimento.](do-not-localize/chlimage_1-7.png)
 
-   In modalità anteprima la barra laterale viene ridotta, fai clic sull’icona freccia giù per tornare alla modalità di modifica:
+  In modalità anteprima la barra laterale viene ridotta, fai clic sull’icona freccia giù per tornare alla modalità di modifica:
 
-   ![](do-not-localize/chlimage_1-8.png)
+  ![Una barra con AEM come titolo e un&#39;icona della modalità di modifica a destra del titolo indicato da un simbolo di freccia giù.](do-not-localize/chlimage_1-8.png)
 
 ## Trova e sostituisci {#find-replace}
 
@@ -286,7 +286,6 @@ Il comportamento dei comandi Annulla e Ripristina è simile a quello di altri pr
 >* annulla un massimo di 20 azioni di modifica (impostazione predefinita).
 >* utilizza anche [Scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) per annullare e ripetere.
 >
-
 
 Potete utilizzare le opzioni Annulla (Undo) e Ripristina (Redo) per i seguenti tipi di modifiche di pagina:
 

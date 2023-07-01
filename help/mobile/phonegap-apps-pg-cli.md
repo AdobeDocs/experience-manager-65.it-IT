@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '666'
 ht-degree: 1%
 
 ---
@@ -89,10 +89,10 @@ phonegap run ios
 >1. Passa a questa nuova cartella (test cd)
 >1. Esegui `phonegap create helloWorld`
 >1. Navigare in helloWorld (cd helloWorld)
->1. Esegui `phonegap run android` (o sostituisci android con iOS come sopra).
->1. L’emulatore apre l’esecuzione dell’app PhoneGap appena creata, indicando &quot;Device Ready&quot; (Pronto per il dispositivo) se JavaScript Bridge to native è operativo.
+>1. Esegui `phonegap run android` (o sostituisci Android™ con iOS come sopra).
+1. L’emulatore apre l’esecuzione dell’app PhoneGap appena creata, indicando &quot;Device Ready&quot; (Pronto per il dispositivo) se JavaScript Bridge to native è operativo.
 >
->Questa risoluzione dei problemi verifica che l’ambiente di sviluppo CLI di PhoneGap funzioni correttamente.
+Questa risoluzione dei problemi verifica che l’ambiente di sviluppo CLI di PhoneGap funzioni correttamente.
 
 ## Eseguire il debug di JavaScript con il debug di Safari e IOS {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -147,13 +147,13 @@ phonegap run <platform> --emulator
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-* Utilizza i pulsanti di controllo per continuare l’esecuzione, passare al di sopra, passare ai metodi e uscire dai metodi:
+* Utilizza i pulsanti di controllo per continuare l’esecuzione, eseguire un passaggio, eseguire un passaggio e uscire dai metodi:
 
-![](do-not-localize/chlimage_1-4.png)
+![Cinque diversi pulsanti di controllo funzionanti allineati in una riga orizzontale.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
->Per visualizzare i valori delle variabili, nel metodo corrente, passa il puntatore del mouse.
+Per visualizzare i valori delle variabili, nel metodo corrente, passa il puntatore del mouse.
 
 ## Passaggi successivi {#the-next-steps}
 

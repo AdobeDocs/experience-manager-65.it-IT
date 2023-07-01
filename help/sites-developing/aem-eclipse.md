@@ -1,8 +1,6 @@
 ---
 title: Strumenti AEM Developer per Eclipse
-seo-title: AEM Developer Tools for Eclipse
 description: Strumenti AEM Developer per Eclipse
-seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +8,16 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '788'
 ht-degree: 4%
 
 ---
 
 # Strumenti AEM Developer per Eclipse{#aem-developer-tools-for-eclipse}
 
-![](do-not-localize/chlimage_1-9.png)
+![Motivo immagine circolare per gli strumenti per sviluppatori AEM per Eclipse.](do-not-localize/chlimage_1-9.png)
 
 ## Panoramica {#overview}
 
@@ -159,6 +157,6 @@ Il sito web ufficiale Apache Sling IDE tooling per Eclipse fornisce informazioni
 
 Il seguente funzionario [Eclipse](https://www.eclipse.org/) La documentazione di può essere utile per configurare l’ambiente:
 
-* [Guida introduttiva a Eclipse](https://www.eclipse.org/getting-started/)
+* [Guida introduttiva a Eclipse](https://eclipseide.org/getting-started/)
 * [Guida di Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
 * [Integrazione Maven (m2eclipse)](https://www.eclipse.org/m2e/)

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '3511'
+source-wordcount: '3532'
 ht-degree: 1%
 
 ---
@@ -49,6 +49,7 @@ Puoi pubblicare le risorse digitali su Dynamic Media Classic (Scene7) dalla cons
 >[!NOTE]
 >
 >Experience Manager pubblica in Dynamic Media Classic (Scene7) in modo asincrono. Dopo aver selezionato **[!UICONTROL Pubblica]**, la pubblicazione della risorsa in Dynamic Media Classic (Scene7) potrebbe richiedere alcuni secondi.
+>
 
 ### Pubblicazione dalla console Assets {#publishing-from-the-assets-console}
 
@@ -56,7 +57,7 @@ Se le risorse si trovano in una cartella di destinazione di Dynamic Media Classi
 
 1. Nell’interfaccia utente classica di Experience Manager, seleziona **[!UICONTROL Risorse digitali]** per accedere a digital asset manager.
 
-1. Seleziona la risorsa (o le risorse) o la cartella dall’interno della cartella di destinazione da pubblicare su Dynamic Media Classic (Scene7), fai clic con il pulsante destro del mouse e seleziona (Copia negli Appunti) **[!UICONTROL Pubblica su Dynamic Media Classic (Scene7)]**. In alternativa, è possibile selezionare **[!UICONTROL Pubblica su Dynamic Media Classic (Scene7)]** dal **[!UICONTROL Strumenti]** menu.
+1. Seleziona la risorsa o la cartella all’interno della cartella di destinazione da pubblicare su Dynamic Media Classic (Scene7), fai clic con il pulsante destro del mouse e seleziona (Copia negli Appunti) **[!UICONTROL Pubblica su Dynamic Media Classic (Scene7)]**. In alternativa, è possibile selezionare **[!UICONTROL Pubblica su Dynamic Media Classic (Scene7)]** dal **[!UICONTROL Strumenti]** menu.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -203,9 +204,9 @@ Per impostare queste opzioni di configurazione, apri (facendo doppio clic) un co
 
 Il componente Zoom di HTML5 mostra un’immagine più grande quando si preme il pulsante +.
 
-La risorsa presenta strumenti di zoom in basso. Seleziona **[!UICONTROL +]** per ingrandire. Seleziona **[!UICONTROL -]** per ridurre. Selezione del **[!UICONTROL x]** oppure la freccia di ripristino riporta l&#39;immagine alle dimensioni originali in cui è stata importata. Seleziona le frecce diagonali per renderle a schermo intero. Seleziona **[!UICONTROL Modifica]** in modo da poter configurare il componente. Con questo componente, puoi configurare [impostazioni comuni a tutti i componenti di Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
+La risorsa presenta strumenti di zoom in basso. Seleziona **[!UICONTROL +]** per ingrandire. Seleziona **[!UICONTROL -]** per ridurre. Selezione del **[!UICONTROL x]** oppure la freccia di ripristino riporta l&#39;immagine alle dimensioni originali con cui è stata importata. Seleziona le frecce diagonali per renderle a schermo intero. Seleziona **[!UICONTROL Modifica]** in modo da poter configurare il componente. Con questo componente, puoi configurare [impostazioni comuni a tutti i componenti di Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
 
-![](do-not-localize/chlimage_1-3.png)
+![Immagine dei fiori di tulipano nel componente Zoom di HTML5.](do-not-localize/chlimage_1-3.png)
 
 ### A comparsa {#flyout}
 
@@ -223,7 +224,7 @@ Nel componente a comparsa HTML5, la risorsa viene visualizzata come schermata di
 
 Il componente Immagine Dynamic Media Classic (Scene7) consente di aggiungere la funzionalità Dynamic Media Classic (Scene7) alle immagini, ad esempio modificatori Dynamic Media Classic (Scene7), predefiniti per immagini o visualizzatori e nitidezza. Il componente immagine Dynamic Media Classic (Scene7) è simile ad altri componenti immagine in Experience Manager con speciali funzionalità Dynamic Media Classic (Scene7). In questo esempio, l’immagine ha il modificatore URL di Dynamic Media Classic (Scene7), `&op_invert=1` applicato.
 
-![](do-not-localize/chlimage_1-4.png)
+![Immagine di una sfera all&#39;interno del componente immagine Dynamic Media Classic (Scene 7)](do-not-localize/chlimage_1-4.png)
 
 **Titolo, Testo Alt** - Nella scheda Avanzate, aggiungi un titolo all&#39;immagine e testo alternativo per gli utenti che hanno la grafica disattivata.
 
@@ -233,7 +234,7 @@ Il componente Immagine Dynamic Media Classic (Scene7) consente di aggiungere la 
 
 **Predefinito visualizzatore** - Seleziona un predefinito visualizzatore esistente dal menu a discesa. Se il predefinito visualizzatore che stai cercando non è visibile, devi renderlo visibile. Consulta Gestione dei predefiniti per i visualizzatori. Non è possibile selezionare un predefinito visualizzatore se si utilizza un predefinito immagine e viceversa.
 
-**Configurazione Dynamic Media Classic (Scene7)** - Seleziona la configurazione Dynamic Media Classic (Scene7) da utilizzare per recuperare i predefiniti immagine attivi dall&#39;SPS.
+**Configurazione Dynamic Media Classic (Scene7)** - Selezionate la configurazione Dynamic Media Classic (Scene7) da utilizzare per recuperare i predefiniti immagine attivi dall&#39;SPS.
 
 **Predefinito immagine** : seleziona un predefinito immagine esistente dal menu a discesa. Se il predefinito immagine che state cercando non è visibile, dovete renderlo visibile. Consulta Gestione dei predefiniti per immagini. Non è possibile selezionare un predefinito visualizzatore se si utilizza un predefinito immagine e viceversa.
 
@@ -331,10 +332,9 @@ Se disponi di più configurazioni, per impostazione predefinita in Experience Ma
 >* Quando [Anteprima protetta abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), le risorse pubblicate e non pubblicate su Dynamic Media Classic (Scene7) vengono visualizzate nel browser del contenuto di Dynamic Media Classic (Scene7).
 >* Se non vede **[!UICONTROL Dynamic Media Classic (Scene7)]** o **[!UICONTROL S7]** come opzione nel browser del contenuto, è necessario [configurare Dynamic Media Classic (Scene7) per l’utilizzo con Experience Manager](/help/sites-administering/scene7.md).
 >* Per i video, il browser dei contenuti di Dynamic Media Classic (Scene7) supporta:
-   >   * Set video adattivi: contenitore di tutte le rappresentazioni video necessarie per una riproduzione fluida su più schermi
-   >   * Video MP4 singolo
-   >   * Singolo video F4V
-
+>   * Set video adattivi: contenitore di tutte le rappresentazioni video necessarie per una riproduzione fluida su più schermi
+>   * Video MP4 singolo
+>   * Singolo video F4V
 
 ### Sfoglia contenuto {#browsing-content-in-the-classic-ui}
 
@@ -357,7 +357,6 @@ Per impostazione predefinita, le risorse vengono visualizzate per nome file. Tut
 >* Singolo video F4V
 >
 
-
 ### Cercare risorse Dynamic Media Classic (Scene7) con il browser del contenuto {#searching-for-scene-assets-with-the-content-browser}
 
 La ricerca di risorse Dynamic Media Classic (Scene7) è simile alla ricerca di risorse Experience Manager. L’eccezione è che quando esegui una ricerca, visualizzi effettivamente una visualizzazione remota delle risorse nel sistema Dynamic Media Classic (Scene7), anziché importarle direttamente in Experience Manager.
@@ -366,7 +365,7 @@ Per visualizzare e cercare le risorse puoi utilizzare sia l’interfaccia classi
 
 Quando esegui una ricerca in una delle due interfacce, puoi filtrare in base ai seguenti criteri (illustrati qui nell’interfaccia touch):
 
-**Immettete le parole chiave** - È possibile cercare le risorse per nome. Durante la ricerca delle parole chiave, immetti il nome del file che inizia con. Ad esempio, digitando la parola &quot;nuotare&quot; si cercheranno i nomi dei file di risorse che iniziano con tali lettere in tale ordine. Accertati di selezionare Invio dopo aver digitato il termine per trovare la risorsa.
+**Immettete le parole chiave** - È possibile cercare le risorse per nome. Durante la ricerca delle parole chiave, immetti il nome del file che inizia con. Ad esempio, digitando la parola &quot;nuotare&quot; si cercheranno i nomi dei file di risorse che iniziano con tali lettere in tale ordine. Assicurati di selezionare `Enter` dopo aver digitato il termine per trovare la risorsa.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -397,7 +396,6 @@ Per impostazione predefinita, in Experience Manager vengono cercate la cartella 
 >* Durante la ricerca di un video, viene eseguita la ricerca in un&#39;unica rappresentazione. I risultati restituiscono la rappresentazione originale (solo &#42;.mp4) e la rappresentazione codificata.
 >* Durante la ricerca in un set di video adattivi, esegui una ricerca nella cartella e in tutte le sottocartelle, ma solo se hai aggiunto una parola chiave alla ricerca. Se non è stata aggiunta alcuna parola chiave, la ricerca nelle sottocartelle non verrà eseguita in Experience Manager.
 >
-
 
 **Stato pubblicazione** - Puoi filtrare le risorse in base allo stato di pubblicazione: Non pubblicato o Pubblicato. Se non selezioni alcuno stato di pubblicazione, per impostazione predefinita Experience Manager esegue la ricerca in tutti gli stati di pubblicazione.
 
