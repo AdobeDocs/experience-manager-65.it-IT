@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 54%
+source-wordcount: '1805'
+ht-degree: 55%
 
 ---
 
@@ -40,11 +40,11 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
 * Componente [**Contenitore di layout**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   Questo componente è disponibile nel [browser dei componenti](/help/sites-authoring/author-environment-tools.md#components-browser) e fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia dinamica. Può essere impostato anche come sistema paragrafo predefinito sulla tua pagina.
+  Questo componente è disponibile nel [browser dei componenti](/help/sites-authoring/author-environment-tools.md#components-browser) e fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia dinamica. Può essere impostato anche come sistema paragrafo predefinito sulla tua pagina.
 
 * [**Modalità Layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-   Una volta che il Contenitore di layout è collocato nella pagina, è possibile utilizzare la modalità di **Layout** per posizionare i contenuti all’interno della griglia dinamica.
+  Una volta che il Contenitore di layout è collocato nella pagina, è possibile utilizzare la modalità di **Layout** per posizionare i contenuti all’interno della griglia dinamica.
 
 * [**Emulatore**](#selecting-a-device-to-emulate)
 Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
@@ -101,7 +101,7 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
 1. Seleziona l’icona **Emulatore** sulla barra degli strumenti in alto:
 
-   ![](do-not-localize/screen_shot_2018-03-23at084256.png)
+   ![Emulatore](do-not-localize/screen_shot_2018-03-23at084256.png)
 
 1. Viene aperta la barra degli strumenti dell’emulatore.
 
@@ -109,13 +109,13 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
    La barra degli strumenti dell’emulatore mostra le seguenti opzioni di layout aggiuntive:
 
-   * **Ruota dispositivo** - Consente di ruotare l&#39;orientamento di un dispositivo da verticale a orizzontale e viceversa.
+   * **Ruota dispositivo**: consente di ruotare l’orientamento di un dispositivo da verticale a orizzontale e viceversa.
 
-   ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
+     ![Ruota dispositivo](do-not-localize/screen_shot_2018-03-23at084612.png) ![Ruota dispositivo](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Seleziona il dispositivo**: consente di definire un dispositivo specifico da emulare da un elenco (ved. il passaggio successivo).
 
-   ![](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![Seleziona il dispositivo](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Per selezionare un dispositivo specifico da emulare puoi effettuare le seguenti operazioni:
 
@@ -138,8 +138,6 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
    * La piega può anche essere considerata l’interruzione di riga della pagina (da non confondere con la [punti di interruzione](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) per il contenuto. Viene visualizzato per comodità, per mostrare quale parte del contenuto verrà visualizzata sul dispositivo prima dello scorrimento.
    * La linea per la piega non viene visualizzata se l&#39;altezza del dispositivo emulato è superiore alle dimensioni dello schermo.
    * La piega è indicata per comodità dell’autore e non viene visualizzata nella pagina pubblicata.
-
-
 
 ## Aggiunta di un contenitore di layout e del relativo contenuto (modalità di modifica) {#adding-a-layout-container-and-its-content-edit-mode}
 
@@ -172,7 +170,7 @@ Come con altri componenti, puoi selezionare e quindi intervenire (opzioni Copia,
 
    È necessario selezionare l’opzione **Elemento padre**.
 
-   ![](do-not-localize/screen_shot_2018-03-23at085417.png)
+   ![Opzione principale](do-not-localize/screen_shot_2018-03-23at085417.png)
 
 1. Se il componente layout è nidificato, seleziona la **Elemento padre** Questa opzione presenta una selezione a discesa che consente di selezionare il contenitore di layout nidificato o i relativi elementi principali.
 
@@ -212,62 +210,63 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
 
 * Ridimensiona i componenti di contenuto utilizzando i punti blu. Il ridimensionamento viene sempre eseguito con snap-to-grid. Quando si ridimensiona la griglia di sfondo, viene mostrato come facilitare l’allineamento:
 
-   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
+  ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
-   >[!NOTE]
-   >
-   >Proporzioni e rapporti relativi saranno mantenuti al ridimensionamento di componenti come le **immagini**.
+  >[!NOTE]
+  >
+  >Proporzioni e rapporti relativi saranno mantenuti al ridimensionamento di componenti come le **immagini**.
 
 * Facendo clic/toccando un componente di contenuti la barra degli strumenti consente di:
 
    * **Elemento padre**
 
-      Consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
+     Consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
 
    * **Mobile in nuova riga**
 
-      Il componente verrà spostato su una nuova riga, a seconda dello spazio disponibile all’interno della griglia.
+     Il componente verrà spostato su una nuova riga, a seconda dello spazio disponibile all’interno della griglia.
 
    * **Nascondi componente**
 
-      Il componente verrà reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
-   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
+     Il componente verrà reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
+
+  ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Verrà visualizzata la barra degli strumenti per questa modalità.
 
-   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente layout e dei componenti ad esso appartenenti. Esempio:
+  La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente layout e dei componenti ad esso appartenenti. Esempio:
 
    * **Elemento padre:** consente di selezionare il componente principale.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090823.png)
+     ![Elemento padre](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **Mostra componenti nascosti** - Mostra tutti i componenti o singoli componenti. Il numero indica quanti componenti nascosti sono attualmente presenti. Il contatore indica quanti componenti sono nascosti.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091007.png)
+     ![Mostra componenti nascosti](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **Ripristina layout punto di interruzione**: consente di tornare al layout predefinito e non verrà quindi applicato alcun layout personalizzato.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![Layout punto di interruzione server](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Mobile in nuova riga:** consente di alzare il componente di una posizione, se lo spazio è sufficiente.
 
-   ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
    * **Nascondi componente:** consente di nascondere il componente corrente.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090834.png)
+     ![Nascondi componente](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-   >[!NOTE]
-   >
-   >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
+     >[!NOTE]
+     >
+     >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
 
-   * **Rivela componenti**
-Seleziona i componenti principali per visualizzare la barra degli strumenti delle azioni con 
-l’opzione **Mostra componenti nascosti**. In questo esempio, due componenti sono nascosti.
-   ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+   * **Mostra componenti**
+Seleziona i componenti principali per visualizzare la barra degli strumenti delle azioni con l’opzione **Mostra componenti nascosti**. In questo esempio, due componenti sono nascosti.
 
-   Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.
+     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
-   ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+  Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.
 
-   Selezionando **Ripristina tutto**, tutti i componenti nascosti diventano visibili.
+  ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+
+  Selezionando **Ripristina tutto**, tutti i componenti nascosti diventano visibili.

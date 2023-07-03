@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,13 @@ Per attivare o disattivare un componente:
 
 1. Tocca o fai clic sul pulsante **Elemento padre** icona.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103204.png)
+   ![Elemento padre](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    In questo modo viene selezionato il sistema paragrafo contenente il componente corrente.
 
 1. Il **Configura** nella barra delle azioni dell&#39;elemento padre verrà visualizzata l&#39;icona del sistema paragrafo.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![Configura](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Seleziona questa opzione per visualizzare la finestra di dialogo.
 
@@ -121,7 +121,7 @@ Per attivare o disattivare un componente:
 
 1. Utilizza il **Configura** per aprire la finestra di dialogo.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![Icona Configura](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    Nella finestra di dialogo per progettazione puoi configurare il componente in base ai parametri di progettazione disponibili.
 
@@ -151,12 +151,12 @@ Per attivare o disattivare un componente:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Utilizza l’icona** Elimina **per rimuovere una voce da un elenco di finestre di dialogo a più voci.
+   Utilizza il **Elimina** per rimuovere una voce da un elenco di finestre di dialogo a più voci.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![Eliminare](do-not-localize/screen_shot_2018-03-22at103809.png)
 
    Utilizza il **Sposta** per modificare l&#39;ordine delle voci in un elenco di finestre di dialogo a più voci.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103816.png)
+   ![Sposta](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Tocca o fai clic sul pulsante **Fine** per salvare e chiudere la finestra.
