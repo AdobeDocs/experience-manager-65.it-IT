@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 3802eb71dc6d17db4b1158d8d433ba1c516e54f2
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 41%
+source-wordcount: '3011'
+ht-degree: 42%
 
 ---
 
@@ -26,7 +26,6 @@ ht-degree: 41%
 >* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
-
 ## Guida introduttiva {#getting-started}
 
 ### Interfaccia touch {#a-touch-enabled-ui}
@@ -39,7 +38,7 @@ Poiché l’interfaccia utente dell’AEM è dotata di funzionalità touch, puoi
 
 Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navigazione](#navigation-panel). Selezionando una delle opzioni si apre la rispettiva console.
 
-![bh-01](assets/bh-01.png)
+![Navigazione](assets/bh-01.png)
 
 >[!NOTE]
 >
@@ -51,7 +50,7 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 Ogni volta che un utente accede a una console per la prima volta, viene avviato un tutorial di navigazione del prodotto. Dedica un minuto a fare clic o toccare per ottenere una buona panoramica delle operazioni di base dell’AEM.
 
-![bh-02](assets/bh-02.png)
+![Navigazione nel prodotto ](assets/bh-02.png)
 
 Tocca o fai clic su **Avanti** per passare alla pagina successiva della panoramica. Tocca o fai clic su **Chiudi** oppure tocca o fai clic all’esterno della finestra di dialogo della panoramica per chiuderla.
 
@@ -63,7 +62,7 @@ Puoi spostarti tra le diverse console utilizzando il pannello di navigazione glo
 
 Per chiudere il pannello di navigazione globale e tornare alla posizione precedente, tocca o fai clic su **Chiudi**.
 
-![bh-03](assets/bh-03.png)
+![Navigazione globale](assets/bh-03.png)
 
 >[!NOTE]
 >
@@ -80,7 +79,7 @@ Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
 Il pannello di navigazione consente di accedere alle console AEM:
 
-![bh-01](assets/bh-01.png)
+![Navigazione](assets/bh-01.png)
 
 Il titolo della scheda del browser si aggiorna per riflettere la posizione in cui ci si sposta nelle console e nel contenuto.
 
@@ -135,95 +134,95 @@ Nel pannello di navigazione sono disponibili le console seguenti:
 
 Nel pannello Strumenti, ogni opzione nel pannello laterale contiene una serie di sottomenu. Il [Console Strumenti](/help/sites-administering/tools-consoles.md) qui puoi accedere a console e strumenti specifici per la gestione dei siti web, delle risorse digitali e di altri aspetti dell’archivio dei contenuti.
 
-![bh-04](assets/bh-04.png)
+![Pannello Strumenti](assets/bh-04.png)
 
 ## Intestazione {#the-header}
 
 L’intestazione di è sempre presente nella parte superiore dello schermo. Anche se la maggior parte delle opzioni nell’intestazione rimangono le stesse indipendentemente dalla posizione in cui ti trovi nel sistema, alcune sono specifiche per il contesto.
 
-![bh-03](assets/bh-03.png)
+![Intestazione](assets/bh-03.png)
 
 * [Navigazione globale](#navigatingconsolesandtools)
 
-   Seleziona il collegamento **Adobe Experience Manager** per spostarti tra le diverse console.
+  Seleziona il collegamento **Adobe Experience Manager** per spostarti tra le diverse console.
 
-   ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
+  ![il collegamento Adobe Experience Manager](assets/screen_shot_2018-03-23at103615.png)
 
 * [Ricerca](/help/sites-authoring/search.md)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103542.png)
+  ![Ricerca](do-not-localize/screen_shot_2018-03-23at103542.png)
 
-   È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
+  È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
 * [Soluzioni](https://www.adobe.com/it/experience-cloud.html)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103552.png)
+  ![Soluzioni](do-not-localize/screen_shot_2018-03-23at103552.png)
 
 * [Aiuto](#accessinghelptouchoptimizedui)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103547.png)
+  ![Aiuto](do-not-localize/screen_shot_2018-03-23at103547.png)
 
 * [Notifiche](/help/sites-authoring/inbox.md)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103558.png)
+  ![Notifiche](do-not-localize/screen_shot_2018-03-23at103558.png)
 
-   Questa icona viene contrassegnata con il numero di notifiche incomplete attualmente assegnate.
+  Questa icona viene contrassegnata con il numero di notifiche incomplete attualmente assegnate.
 
-   >[!NOTE]
-   >
-   >L’AEM preconfigurato viene precaricato con le attività amministrative assegnate al gruppo di utenti amministratori. Consulta [Casella in entrata - Attività amministrative predefinite](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) per i dettagli.
+  >[!NOTE]
+  >
+  >L’AEM preconfigurato viene precaricato con le attività amministrative assegnate al gruppo di utenti amministratori. Consulta [Casella in entrata - Attività amministrative predefinite](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) per i dettagli.
 
 * [Proprietà utente](/help/sites-authoring/user-properties.md)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103603.png)
+  ![Proprietà utente](do-not-localize/screen_shot_2018-03-23at103603.png)
 
 * [Selettore della barra](/help/sites-authoring/basic-handling.md#rail-selector)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![](do-not-localize/screen_shot_2018-03-23at103943.png)
 
-   Le opzioni visualizzate dipendono dalla console corrente. Ad esempio, in **Sites** puoi selezionare solo il contenuto (opzione predefinita), la timeline, i riferimenti o il pannello laterale del filtro.
+  Le opzioni visualizzate dipendono dalla console corrente. Ad esempio, in **Sites** puoi selezionare solo il contenuto (opzione predefinita), la timeline, i riferimenti o il pannello laterale del filtro.
 
-   ![screen_shot_2018-03-23at104029](assets/screen_shot_2018-03-23at104029.png)
+  ![Selettore della barra](assets/screen_shot_2018-03-23at104029.png)
 
 * Breadcrumb
 
-   ![bh-05](assets/bh-05.png)
+  ![Breadcrumb](assets/bh-05.png)
 
-   Situate al centro della barra, le breadcrumb mostrano sempre la descrizione dell’elemento attualmente selezionato e consentono di spostarsi all’interno di una console specifica. Nella console Sites puoi spostarti tra i vari livelli del sito web.
+  Situate al centro della barra, le breadcrumb mostrano sempre la descrizione dell’elemento attualmente selezionato e consentono di spostarsi all’interno di una console specifica. Nella console Sites puoi spostarti tra i vari livelli del sito web.
 
-   Fai clic sul testo della breadcrumb per visualizzare un elenco a discesa con i livelli della gerarchia dell’elemento attualmente selezionato. Fai clic su una voce per passare alla posizione desiderata.
+  Fai clic sul testo della breadcrumb per visualizzare un elenco a discesa con i livelli della gerarchia dell’elemento attualmente selezionato. Fai clic su una voce per passare alla posizione desiderata.
 
-   ![bh-06](assets/bh-06.png)
+  ![Livelli gerarchici](assets/bh-06.png)
 
 * Selezione del periodo di tempo di Analytics
 
-   ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
+  ![Periodo di tempo di Analytics](assets/screen_shot_2018-03-23at104126.png)
 
-   È disponibile solo nella vista a elenco. Consulta [vista a elenco](#list-view) per ulteriori informazioni.
+  È disponibile solo nella vista a elenco. Consulta [vista a elenco](#list-view) per ulteriori informazioni.
 
 * Pulsante **Crea**
 
-   ![screen_shot_2018-03-23at104301](assets/screen_shot_2018-03-23at104301.png)
+  ![Crea](assets/screen_shot_2018-03-23at104301.png)
 
-   Dopo che hai fatto clic, le opzioni visualizzate sono adatte alla console/al contesto.
+  Dopo che hai fatto clic, le opzioni visualizzate sono adatte alla console/al contesto.
 
 * [Viste](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-   L’icona Visualizza si trova all’estrema destra della barra degli strumenti dell’AEM. Poiché indica anche la visualizzazione corrente, questa cambia. Ad esempio, la visualizzazione predefinita **Vista a colonne** presenta questa icona:
+  L’icona Visualizza si trova all’estrema destra della barra degli strumenti dell’AEM. Poiché indica anche la visualizzazione corrente, questa cambia. Ad esempio, la visualizzazione predefinita **Vista a colonne** presenta questa icona:
 
-   ![bh-07](assets/bh-07.png)
+  ![Vista a colonne](assets/bh-07.png)
 
-   È possibile passare dalla vista a colonne, alla vista a schede e alla vista a elenco e nella vista a elenco sono visualizzate anche le impostazioni di visualizzazione.
+  È possibile passare dalla vista a colonne, alla vista a schede e alla vista a elenco e nella vista a elenco sono visualizzate anche le impostazioni di visualizzazione.
 
-   ![bh-09](assets/bh-09.png)
+  ![Cambia visualizzazione](assets/bh-09.png)
 
 * Navigazione tramite tastiera
 
-   Potete navigare in un sito web utilizzando solo la tastiera. Questa utilizza la funzionalità standard del browser del **SCHEDA** chiave (o **OPZ+TAB**) per spostarti tra gli elementi della pagina che sono *focalizzabile*.
+  Potete navigare in un sito web utilizzando solo la tastiera. Questa utilizza la funzionalità standard del browser del **SCHEDA** chiave (o **OPZ+TAB**) per spostarti tra gli elementi della pagina che sono *focalizzabile*.
 
-   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. Questo diventa visibile quando *scheda* tramite le opzioni di intestazione, e velocizza la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
+  Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. Questo diventa visibile quando *scheda* tramite le opzioni di intestazione, e velocizza la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
 
-   ![bh-30](assets/bh-30.png)
+  ![Passa al contenuto principale](assets/bh-30.png)
 
 ## Accedere all’Aiuto   {#accessing-help}
 
@@ -231,42 +230,42 @@ Sono disponibili diverse risorse di Aiuto:
 
 * **Barra degli strumenti della console**
 
-   A seconda della tua posizione, **Aiuto** apre le risorse appropriate:
+  A seconda della tua posizione, **Aiuto** apre le risorse appropriate:
 
-   ![bh-10](assets/bh-10.png)
+  ![Barra degli strumenti della console](assets/bh-10.png)
 
 * **Navigazione**
 
-   La prima volta che accedi al sistema, compare [una serie di diapositive introduttive su come navigare in AEM](/help/sites-authoring/basic-handling.md#product-navigation).
+  La prima volta che accedi al sistema, compare [una serie di diapositive introduttive su come navigare in AEM](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **Editor pagina**
 
-   La prima volta che modifichi una pagina, compare una serie di diapositive che introducono l’editor di pagine.
+  La prima volta che modifichi una pagina, compare una serie di diapositive che introducono l’editor di pagine.
 
-   ![bh-11](assets/bh-11.png)
+  ![Editor pagina](assets/bh-11.png)
 
-   Esamina questa panoramica come faresti con la [panoramica di navigazione del prodotto](/help/sites-authoring/basic-handling.md#product-navigation) la prima volta che accedi a una console.
+  Esamina questa panoramica come faresti con la [panoramica di navigazione del prodotto](/help/sites-authoring/basic-handling.md#product-navigation) la prima volta che accedi a una console.
 
-   Dal menu [**Informazioni sulle pagine** puoi selezionare **Aiuto**](/help/sites-authoring/author-environment-tools.md#accessing-help) per accedervi di nuovo in un secondo tempo.
+  Dal menu [**Informazioni sulle pagine** puoi selezionare **Aiuto**](/help/sites-authoring/author-environment-tools.md#accessing-help) per accedervi di nuovo in un secondo tempo.
 
 * **Console Strumenti**
 
-   Dalla sezione **Strumenti** console è inoltre possibile accedere al **Risorse**:
+  Dalla sezione **Strumenti** console è inoltre possibile accedere al **Risorse**:
 
    * **Documentazione**
 Consulta la documentazione su Web Experience Management.
 
    * **Risorse per sviluppatori**
 Risorse per sviluppatori e download
-   >[!NOTE]
-   >
-   >Puoi accedere in qualsiasi momento ai tasti di scelta rapida, semplicemente utilizzando il tasto di scelta rapida `?` (punto interrogativo) all’interno della console.
-   >
-   >Per una panoramica di tutte le scelte rapide da tastiera, consulta la seguente documentazione:
-   >
-   >    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >    * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
+  >[!NOTE]
+  >
+  >Puoi accedere in qualsiasi momento ai tasti di scelta rapida, semplicemente utilizzando il tasto di scelta rapida `?` (punto interrogativo) all’interno della console.
+  >
+  >Per una panoramica di tutte le scelte rapide da tastiera, consulta la seguente documentazione:
+  >
+  >* [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+  >* [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
 ## Barra delle azioni  {#actions-toolbar}
 
@@ -294,7 +293,7 @@ In entrata [Vista a schede](#cardviewquickactions) alcune azioni sono disponibil
 
 La azioni rapide sono visibili con un tocco prolungato (su dispositivo touch) sulla scheda di una risorsa. Le azioni rapide disponibili possono dipendere dalla console e dal contesto. Ad esempio, ecco le azioni rapide per una pagina nella **Sites** console:
 
-![bh-13](assets/bh-13.png)
+![Azioni rapide](assets/bh-13.png)
 
 ## Visualizzazione e selezione delle risorse {#viewing-and-selecting-resources}
 
@@ -372,7 +371,7 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
 * In entrata **Vista a elenco** vengono selezionati tutti gli elementi dell’elenco.
 * Nella **Vista a colonne**, vengono selezionati tutti gli elementi nella colonna più a sinistra.
 
-![schermata_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
+![Seleziona tutto](assets/screen-shot_2019-03-05at094659.png)
 
 #### Deselezionare tutti gli elementi {#deselecting-all}
 
@@ -384,7 +383,7 @@ Per deselezionare tutti gli elementi e uscire dalla modalità di selezione, effe
 
 * o utilizzando **escape**.
 
-![bh-14](assets/bh-14.png)
+![Deseleziona](assets/bh-14.png)
 
 In tutte le viste, tutti gli elementi possono essere deselezionati toccando escape sulla tastiera se si utilizza un dispositivo desktop.
 
@@ -392,7 +391,7 @@ In tutte le viste, tutti gli elementi possono essere deselezionati toccando esca
 
 1. Ad esempio, nella vista a schede:
 
-   ![bh-15](assets/bh-15.png)
+   ![Seleziona - Vista a schede](assets/bh-15.png)
 
 1. Dopo la selezione di una risorsa, l’intestazione superiore è coperta dalla [barra delle azioni](#actionstoolbar), che permette di accedere alle azioni applicabili alla risorsa selezionata.
 
@@ -400,7 +399,7 @@ In tutte le viste, tutti gli elementi possono essere deselezionati toccando esca
 
 ### Vista a colonne {#column-view}
 
-![bh-16](assets/bh-16.png)
+![Vista a colonne](assets/bh-16.png)
 
 La vista a colonne consente una navigazione visiva di una struttura del contenuto attraverso una serie di colonne a cascata. Questa vista consente di visualizzare e scorrere la struttura ad albero del sito web.
 
@@ -410,11 +409,10 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
    * Il nome della risorsa e la freccia vengono evidenziati quando tocca o fai clic su di essa.
 
-   ![bh-17](assets/bh-17.png)
+     ![Vista a colonne](assets/bh-17.png)
 
    * Gli elementi secondari della risorsa su cui è stato fatto clic o su cui è stato effettuato il tocco vengono visualizzati nella colonna a destra della risorsa.
    * Se tocchi o fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli verranno visualizzati nella colonna finale.
-
 
 * Tocca o fai clic sulla miniatura per selezionare la risorsa.
 
@@ -422,9 +420,9 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
    * I dettagli della risorsa selezionata sono visualizzati nella colonna finale.
    * La barra degli strumenti delle azioni diventa disponibile.
 
-   ![bh-18](assets/bh-18.png)
+     ![Vista a colonne](assets/bh-18.png)
 
-   Quando una pagina viene selezionata nella vista a colonne, la pagina selezionata viene visualizzata nella colonna finale insieme ai seguenti dettagli:
+  Quando una pagina viene selezionata nella vista a colonne, la pagina selezionata viene visualizzata nella colonna finale insieme ai seguenti dettagli:
 
    * Titolo pagina
    * Nome pagina (parte dell’URL della pagina)
@@ -432,7 +430,6 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
    * Dettagli modifica
    * Lingua della pagina
    * Dettagli pubblicazione
-
 
 ### Vista a schede {#card-view}
 
@@ -450,29 +447,29 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
 * [Azioni rapide](#quick-actions) sono inoltre disponibili in questa visualizzazione, ad esempio la selezione e le azioni più comuni, come la modifica.
 
-   ![bh-13-1](assets/bh-13-1.png)
+  ![Vista a schede - Azioni rapide](assets/bh-13-1.png)
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
 ### Vista a elenco  {#list-view}
 
-![bh-19](assets/bh-19.png)
+![Vista a elenco](assets/bh-19.png)
 
 * Nella vista a elenco sono elencate le informazioni di ogni risorsa al livello corrente.
 * Per spostarti verso il basso nella struttura, tocca o fai clic sul nome delle risorse; per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
 * Per selezionare tutti gli elementi nell’elenco, utilizza la casella di selezione in alto a sinistra nell’elenco.
 
-   ![bh-20](assets/bh-20.png)
+  ![Vista a elenco - Seleziona tutto](assets/bh-20.png)
 
    * Quando tutti gli elementi dell&#39;elenco sono selezionati, questa casella di controllo appare selezionata.
 
       * Tocca o fai clic sulla casella di controllo per deselezionare tutto.
+
    * Quando sono selezionati solo alcuni elementi, viene visualizzato un segno meno.
 
       * Tocca o fai clic sulla casella di controllo per selezionare tutto.
       * Tocca o fai di nuovo clic sulla casella di controllo per deselezionare tutto.
-
 
 * Per seleziona le colonne da visualizzare utilizza l’opzione **Impostazioni vista** sotto il pulsante Viste. Sono disponibili le seguenti colonne da visualizzare:
 
@@ -486,33 +483,33 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
    * **Visitatori univoci**
    * **Tempo sulla pagina**
 
-   ![bh-21](assets/bh-21.png)
+  ![Impostazioni vista - Configura colonne](assets/bh-21.png)
 
-   Per impostazione predefinita, la colonna **Nome** è visualizzata e costituisce una porzione dell’URL della pagina. In alcuni casi, l’autore potrebbe dover accedere a pagine in una lingua diversa e la visualizzazione del nome della pagina (che in genere rimane invariata) può essere di grande aiuto se l’autore non conosce la lingua della pagina.
+  Per impostazione predefinita, la colonna **Nome** è visualizzata e costituisce una porzione dell’URL della pagina. In alcuni casi, l’autore potrebbe dover accedere a pagine in una lingua diversa e la visualizzazione del nome della pagina (che di solito è immutabile) può essere di grande aiuto se l’autore non conosce la lingua della pagina.
 
 * Cambia l’ordine degli elementi utilizzando la barra verticale punteggiata all’estrema destra di ciascun elemento dell’elenco.
 
-   >[!NOTE]
-   >
-   >La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
+  >[!NOTE]
+  >
+  >La modifica dell’ordine funziona solo all’interno di una cartella ordinata il cui valore `jcr:primaryType` è impostato su `sling:OrderedFolder`.
 
-   ![bh-22](assets/bh-22.png)
+  ![Cambia ordine](assets/bh-22.png)
 
-   Tocca o fai clic sulla barra di selezione verticale e trascina l’elemento in una nuova posizione nell’elenco.
+  Tocca o fai clic sulla barra di selezione verticale e trascina l’elemento in una nuova posizione nell’elenco.
 
-   ![bh-23](assets/bh-23.png)
+  ![Ordine di modifica - Trascina](assets/bh-23.png)
 
 * Puoi visualizzare i dati di Analytics visualizzando le colonne appropriate utilizzando **Impostazioni vista** .
 
-   Puoi filtrare i dati di Analytics per gli ultimi 30, 90 o 365 giorni utilizzando le opzioni di filtro sul lato destro dell’intestazione.
+  Puoi filtrare i dati di Analytics per gli ultimi 30, 90 o 365 giorni utilizzando le opzioni di filtro sul lato destro dell’intestazione.
 
-   ![bh-24](assets/bh-24.png)
+  ![Analytics](assets/bh-24.png)
 
 ## Selettore della barra {#rail-selector}
 
 Il **selettore della barra** è disponibile in alto a sinistra nella finestra e visualizza opzioni che dipendono dalle console correnti.
 
-![bh-25](assets/bh-25.png)
+![Selettore della barra](assets/bh-25.png)
 
 Ad esempio, in Sites puoi selezionare solo il contenuto (opzione predefinita), la struttura del contenuto, la timeline, i riferimenti o il pannello laterale del filtro.
 
@@ -528,7 +525,7 @@ La struttura del contenuto può essere utilizzata per spostarsi rapidamente nell
 
 Utilizzando il pannello laterale della struttura del contenuto insieme a una vista a elenco o a schede, gli utenti possono facilmente vedere la struttura gerarchica del progetto e spostarsi facilmente all’interno della struttura del contenuto con il pannello laterale della struttura del contenuto, nonché visualizzare informazioni di pagina dettagliate nella vista a elenco.
 
-![bh-26](assets/bh-26.png)
+![Struttura contenuto](assets/bh-26.png)
 
 >[!NOTE]
 >
@@ -554,8 +551,8 @@ La colonna della timeline consente di effettuare le seguenti operazioni:
       * [Flussi di lavoro](/help/sites-authoring/workflows-applying.md)
 
          * ad eccezione di [flussi di lavoro transitori](/help/sites-developing/workflows.md#transient-workflows) poiché non vengono salvate informazioni sulla cronologia per questi
-      * e Mostra tutto
 
+      * e Mostra tutto
 
 * [Aggiungere o visualizzare commenti sulla voce selezionata. ](#timelineaddingandviewingcomments) La casella **Commento** è visualizzata in fondo all’elenco degli eventi. Per registrare un commento, digitalo e premi Invio. Il commento verrà visualizzato quando selezioni **Commenti** o **Mostra tutto**.
 
@@ -564,9 +561,9 @@ La colonna della timeline consente di effettuare le seguenti operazioni:
    * [Salvare una versione](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [Avviare un flusso di lavoro](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**.
+Queste opzioni sono accessibili tramite la freccia accanto al **Commento** campo.
 
-![bh-27](assets/bh-27.png)
+![Timeline ](assets/bh-27.png)
 
 ### Riferimenti {#references}
 
@@ -586,4 +583,4 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
 
 Verrà aperto un pannello simile alla [Ricerca](/help/sites-authoring/search.md) con i filtri di posizione già impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
 
-![bh-29](assets/bh-29.png)
+![Filtro](assets/bh-29.png)
