@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '3047'
+source-wordcount: '3082'
 ht-degree: 42%
 
 ---
@@ -46,51 +46,51 @@ La barra degli strumenti offre l’accesso a numerose opzioni. A seconda del con
 
 * **Attiva/Disattiva pannello laterale**
 
-   Questo apre/chiude il pannello laterale, che contiene [Browser risorse](/help/sites-authoring/author-environment-tools.md#assets-browser), [Browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser), e [Struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree).
+  Questo apre/chiude il pannello laterale, che contiene [Browser risorse](/help/sites-authoring/author-environment-tools.md#assets-browser), [Browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser), e [Struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree).
 
-   ![](do-not-localize/screen_shot_2018-03-22at111425.png)
+  ![Attiva/Disattiva pannello laterale](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **Informazioni sulle pagine**
 
-   Fornisce l&#39;accesso a [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information) menu che include i dettagli e le azioni che possono essere eseguite sulla pagina, tra cui la visualizzazione e la modifica delle informazioni sulla pagina, la visualizzazione delle proprietà della pagina e la pubblicazione/annullamento della pubblicazione della pagina.
+  Fornisce l&#39;accesso a [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information) menu che include i dettagli e le azioni che possono essere eseguite sulla pagina, tra cui la visualizzazione e la modifica delle informazioni sulla pagina, la visualizzazione delle proprietà della pagina e la pubblicazione/annullamento della pubblicazione della pagina.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111437.png)
+  ![Informazioni sulle pagine](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **Emulatore**
 
-   Attiva/disattiva [barra degli strumenti emulatore](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), utilizzato per emulare l’aspetto della pagina su un altro dispositivo. Questa funzione viene attivata automaticamente in modalità layout.
+  Attiva/disattiva [barra degli strumenti emulatore](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), utilizzato per emulare l’aspetto della pagina su un altro dispositivo. Questa funzione viene attivata automaticamente in modalità layout.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111442.png)
+  ![Emulatore](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
-   Apre il [context hub](/help/sites-authoring/ch-previewing.md). Disponibile solo in modalità Anteprima.
+  Apre il [context hub](/help/sites-authoring/ch-previewing.md). Disponibile solo in modalità Anteprima.
 
-   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **Titolo pagina**
 
-   Questo è puramente informativo.
+  Questo è puramente informativo.
 
-   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
 * **Selettore modalità**
 
-   Visualizza il [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) e consente di selezionare un’altra modalità, ad esempio modifica, layout, timewarp o targeting.
+  Visualizza il [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) e consente di selezionare un’altra modalità, ad esempio modifica, layout, timewarp o targeting.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![chlimage_1-120](assets/chlimage_1-120.png)
 
 * **Anteprima**
 
-   Abilita [modalità anteprima](/help/sites-authoring/editing-content.md#preview-mode). In questo modo la pagina viene visualizzata così come verrà visualizzata al momento della pubblicazione.
+  Abilita [modalità anteprima](/help/sites-authoring/editing-content.md#preview-mode). In questo modo la pagina viene visualizzata così come verrà visualizzata al momento della pubblicazione.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![chlimage_1-121](assets/chlimage_1-121.png)
 
 * **Annotazioni**
 
-   Consente di aggiungere [annotazioni](/help/sites-authoring/annotations.md) alla pagina durante la revisione. Dopo la prima annotazione, l’icona passa a un numero che indica il numero di annotazioni sulla pagina.
+  Consente di aggiungere [annotazioni](/help/sites-authoring/annotations.md) alla pagina durante la revisione. Dopo la prima annotazione, l’icona passa a un numero che indica il numero di annotazioni sulla pagina.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111638.png)
+  ![Annotazioni](do-not-localize/screen_shot_2018-03-22at111638.png)
 
 ### Notifica di stato {#status-notification}
 
@@ -122,11 +122,11 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
 * Quando aggiungi un nuovo componente alla pagina (trascinandolo dal browser dei componenti):
 
-   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
 * Quando si sposta un componente esistente:
 
-   ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
 
 ## Inserimento di un componente {#inserting-a-component}
 
@@ -230,77 +230,77 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
 * **Modifica**
 
-   [In base al tipo di componente,](/help/sites-authoring/default-components.md) questo comando consente di [modificare il contenuto del componente](#edit-content). Spesso è disponibile una barra degli strumenti.
+  [In base al tipo di componente,](/help/sites-authoring/default-components.md) questo comando consente di [modificare il contenuto del componente](#edit-content). Spesso è disponibile una barra degli strumenti.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112936.png)
+  ![Modifica](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configura**
 
-   [In base al tipo di componente,](/help/sites-authoring/default-components.md) questo comando consente di modificare e configurare le proprietà del componente. In genere presenta una finestra di dialogo.
+  [In base al tipo di componente,](/help/sites-authoring/default-components.md) questo comando consente di modificare e configurare le proprietà del componente. In genere presenta una finestra di dialogo.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![Configura](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Copia**
 
-   Il componente verrà copiato negli Appunti. Dopo l’azione Incolla, il componente originale rimane.
+  Il componente verrà copiato negli Appunti. Dopo l’azione Incolla, il componente originale rimane.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113000.png)
+  ![Copia](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Taglia**
 
-   Il componente verrà copiato negli Appunti. Dopo l’azione Incolla, il componente originale verrà rimosso.
+  Il componente verrà copiato negli Appunti. Dopo l’azione Incolla, il componente originale verrà rimosso.
 
-   ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
 
 * **Eliminare**
 
-   Il componente verrà eliminato dalla pagina con la tua conferma.
+  Il componente verrà eliminato dalla pagina con la tua conferma.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113012.png)
+  ![Eliminare](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Inserisci componente**
 
-   Verrà aperta la finestra di dialogo per [aggiungi un nuovo componente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  Verrà aperta la finestra di dialogo per [aggiungi un nuovo componente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![](do-not-localize/screen_shot_2018-03-22at113017.png)
+  ![Inserisci componente](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Incolla**
 
-   Il componente verrà incollato dagli Appunti alla pagina. Se l&#39;originale rimane, dipende dal fatto se avete usato la copia o il taglio.
+  Il componente verrà incollato dagli Appunti alla pagina. Se l&#39;originale rimane, dipende dal fatto se avete usato la copia o il taglio.
 
    * È possibile incollare nella stessa pagina o in una pagina diversa.
    * L’elemento incollato verrà incollato sopra l’elemento in cui hai selezionato l’azione Incolla.
    * L&#39;azione Incolla viene visualizzata solo se negli Appunti è presente del contenuto.
 
-   ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
-   >[!NOTE]
-   >
-   >Se si incolla in un&#39;altra pagina già aperta prima dell&#39;operazione Taglia/Copia, è necessario aggiornare la pagina per visualizzare il contenuto incollato.
+  >[!NOTE]
+  >
+  >Se si incolla in un&#39;altra pagina già aperta prima dell&#39;operazione Taglia/Copia, è necessario aggiornare la pagina per visualizzare il contenuto incollato.
 
 * **Gruppo**
 
-   Questo consente di selezionare più componenti contemporaneamente. Lo stesso può essere ottenuto su un dispositivo desktop da un **Ctrl+clic** o **Comando+clic**.
+  Questo consente di selezionare più componenti contemporaneamente. Lo stesso può essere ottenuto su un dispositivo desktop da un **Ctrl+clic** o **Comando+clic**.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113240.png)
+  ![Gruppo](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Elemento padre**
 
-   Consente di selezionare il componente principale del componente selezionato.
+  Consente di selezionare il componente principale del componente selezionato.
 
-   ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
 
 * **Layout**
 
-   Questo consente di modificare [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente selezionato. Questo si applica solo al componente selezionato e non attiva il [Modalità Layout](/help/sites-authoring/author-environment-tools.md#page-modes) per l’intera pagina.
+  Questo consente di modificare [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente selezionato. Questo si applica solo al componente selezionato e non attiva il [Modalità Layout](/help/sites-authoring/author-environment-tools.md#page-modes) per l’intera pagina.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113044.png)
+  ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Converti in variante di frammento di esperienza**
 
-   Consente di creare un nuovo [Frammento esperienza](/help/sites-authoring/experience-fragments.md) dal componente selezionato o di aggiungerlo a un frammento di esperienza esistente.
+  Consente di creare un nuovo [Frammento esperienza](/help/sites-authoring/experience-fragments.md) dal componente selezionato o di aggiungerlo a un frammento di esperienza esistente.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113033.png)
+  ![Converti in variante frammento esperienza](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Modifica (contenuto) {#edit-content}
 
@@ -317,28 +317,28 @@ Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti
 
 * [Componente testo](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-   ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
 
 * Componente immagine
 
-   ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
 
-   >[!NOTE]
-   >
-   >La modifica non funziona su un componente immagine vuoto.
-   >
-   >
-   >Devi [trascinare o caricare un’immagine (mediante Configura)](/help/sites-authoring/default-components-foundation.md#image) prima di iniziare a modificarlo.
+  >[!NOTE]
+  >
+  >La modifica non funziona su un componente immagine vuoto.
+  >
+  >
+  >Devi [trascinare o caricare un’immagine (mediante Configura)](/help/sites-authoring/default-components-foundation.md#image) prima di iniziare a modificarlo.
 
 * Componente immagine - schermo intero
 
-   [L’accesso alla modalità a tutto schermo](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) per il componente immagine consente di avere più spazio per modificare l’immagine oltre che per visualizzare opzioni di modifica aggiuntive, ad esempio **Launch Map (Avvia mappa)** e **Ripristina zoom**. Inoltre, lo schermo intero consente di selezionare i predefiniti di ritaglio.
+  [L’accesso alla modalità a tutto schermo](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) per il componente immagine consente di avere più spazio per modificare l’immagine oltre che per visualizzare opzioni di modifica aggiuntive, ad esempio **Launch Map (Avvia mappa)** e **Ripristina zoom**. Inoltre, lo schermo intero consente di selezionare i predefiniti di ritaglio.
 
-   ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
 * Componenti costituiti da più componenti di base, ad esempio [Componente base testo e immagine](/help/sites-authoring/default-components-foundation.md#text-image), per prima cosa chiedi di confermare quale insieme di opzioni di modifica desideri:
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Trascinare risorse nel componente {#drag-and-drop-assets-into-component}
 
@@ -356,7 +356,7 @@ Per tipi di componenti specifici puoi trascinare e rilasciare le risorse dal bro
 
 Per tutti i componenti è possibile accedere alla (e uscire dalla) modalità a tutto tramite:
 
-![](do-not-localize/chlimage_1-20.png)
+![Modifica modalità a tutto schermo](do-not-localize/chlimage_1-20.png)
 
 Per esempio, il componente **Testo**:
 
@@ -391,7 +391,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
    Tocca o fai clic sull’azione **Layout** per modificare il layout del componente.
 
-   ![](do-not-localize/chlimage_1-21.png)
+   ![Barra degli strumenti del componente](do-not-localize/chlimage_1-21.png)
 
 1. Una volta selezionata l’azione Layout:
 
@@ -405,7 +405,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
 1. Dopo aver apportato le modifiche necessarie, fai clic sul pulsante **Chiudi** nel menu Azioni del componente per interrompere la modifica del layout del componente. La barra degli strumenti del componente torna al normale stato di modifica.
 
-   ![](do-not-localize/screen_shot_2018-03-22at133920.png)
+   ![Chiudi](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
@@ -425,27 +425,27 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 * **Live Copy**
 
-   La barra degli strumenti del componente, se il componente si trova su una pagina che fa parte di una Live Copy o di un lancio (basato su una Live Copy). Ad esempio:
+  La barra degli strumenti del componente, se il componente si trova su una pagina che fa parte di una Live Copy o di un lancio (basato su una Live Copy). Ad esempio:
 
-   ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
 
-   L’opzione Annulla ereditarietà è disponibile:
+  L’opzione Annulla ereditarietà è disponibile:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134406.png)
+  ![Annulla ereditarietà](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-   Oppure riabilita l&#39;ereditarietà se è già stata annullata:
+  Oppure riabilita l&#39;ereditarietà se è già stata annullata:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134417.png)
+  ![Riabilita ereditarietà](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-   L’azione Rollout è disponibile anche nel blueprint o nella sorgente Live Copy:
+  L’azione Rollout è disponibile anche nel blueprint o nella sorgente Live Copy:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134516.png)
+  ![Rollout](do-not-localize/screen_shot_2018-03-22at134516.png)
 
 * **Un sistema di paragrafi ereditato**
 
-   La finestra di dialogo di configurazione. Ad esempio, come con il sistema paragrafo ereditato:
+  La finestra di dialogo di configurazione. Ad esempio, come con il sistema paragrafo ereditato:
 
-   ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ## Modificare il modello di pagina {#editing-the-page-template}
 
@@ -485,7 +485,6 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 >* Utilizza la [scelta rapida da tastiera](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` per passare dall’anteprima all’ultima modalità selezionata.
 >
 
-
 >[!NOTE]
 >
 >Il cookie della modalità WCM è impostato per entrambe le opzioni.
@@ -517,7 +516,7 @@ Una pagina può essere bloccata da:
    1. Seleziona la pagina con [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Seleziona l’icona del lucchetto.
 
-   ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor pagina**
 
@@ -552,7 +551,7 @@ Nel menu Informazioni pagina è presente l’opzione **Sblocca** e l’icona Blo
 
 Le icone seguenti consentono di annullare o ripristinare un’azione. Vengono visualizzate sulla barra degli strumenti quando necessario:
 
-![](do-not-localize/screen_shot_2018-03-23at093614.png)
+![Annulla e Ripristina](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >
@@ -585,14 +584,13 @@ Il comportamento dei comandi Annulla e Ripristina è simile a quello di altri pr
 >* Utilizza anche [Scelte rapide da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) per annullare e ripetere.
 >
 
-
 Potete utilizzare le opzioni Annulla (Undo) e Ripristina (Redo) per i seguenti tipi di modifiche di pagina:
 
 * Aggiunta, modifica, rimozione e spostamento di paragrafi
 * Modifica diretta del contenuto dei paragrafi
 * Copiare, tagliare e incollare elementi in una pagina
 
-I campi modulo di cui viene eseguito il rendering dei componenti modulo non devono avere valori specificati durante l’authoring delle pagine. Pertanto, i comandi Annulla e Ripristina non influiscono sulle modifiche apportate ai valori di questi tipi di componenti. Ad esempio, non è possibile annullare la selezione di un valore in un elenco a discesa.
+I campi modulo di cui viene eseguito il rendering dei componenti modulo non devono avere valori specificati durante la creazione di pagine. Pertanto, i comandi Annulla e Ripristina non influiscono sulle modifiche apportate ai valori di questi tipi di componenti. Ad esempio, non è possibile annullare la selezione di un valore in un elenco a discesa.
 
 >[!NOTE]
 >

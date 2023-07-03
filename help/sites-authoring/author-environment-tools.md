@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2242'
 ht-degree: 44%
 
 ---
@@ -69,21 +69,21 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 * **Dispositivo mobile (ad es. iPad)**
 
-   Il browser Componenti copre completamente la pagina in fase di modifica.
+  Il browser Componenti copre completamente la pagina in fase di modifica.
 
-   Per aggiungere un componente alla pagina, tocca e tieni premuto il componente richiesto e spostalo verso destra (il browser componenti si chiude per mostrare nuovamente la pagina), dove puoi posizionare il componente.
+  Per aggiungere un componente alla pagina, tocca e tieni premuto il componente richiesto e spostalo verso destra (il browser componenti si chiude per mostrare nuovamente la pagina), dove puoi posizionare il componente.
 
-   ![ateat-04](assets/ateat-04.png)
+  ![ateat-04](assets/ateat-04.png)
 
 * **Dispositivo desktop**
 
-   Il browser Componenti viene aperto sul lato sinistro della finestra.
+  Il browser Componenti viene aperto sul lato sinistro della finestra.
 
-   Per aggiungere un componente alla pagina, fai clic sul componente richiesto e trascinalo nella posizione desiderata.
+  Per aggiungere un componente alla pagina, fai clic sul componente richiesto e trascinalo nella posizione desiderata.
 
-   ![ateat-05](assets/ateat-05.png)
+  ![ateat-05](assets/ateat-05.png)
 
-   I componenti sono rappresentati da
+  I componenti sono rappresentati da
 
    * Nome componente
    * Gruppo di componenti (in grigio)
@@ -92,16 +92,16 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
       * Le icone dei componenti standard sono monocromatiche.
       * Le abbreviazioni sono sempre i primi due caratteri del nome del componente.
 
-   Dalla barra degli strumenti nella parte superiore del browser **Componenti**, puoi effettuare le seguenti operazioni:
+  Dalla barra degli strumenti nella parte superiore del browser **Componenti**, puoi effettuare le seguenti operazioni:
 
    * Filtrare i componenti per nome
    * Limitare la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa
 
-   Per una descrizione più dettagliata del componente, tocca o fai clic sull’icona delle informazioni posta accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per **Contenitore di layout**:
+  Per una descrizione più dettagliata del componente, tocca o fai clic sull’icona delle informazioni posta accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per **Contenitore di layout**:
 
-   ![ateat-06](assets/ateat-06.png)
+  ![ateat-06](assets/ateat-06.png)
 
-   Per ulteriori informazioni sui componenti disponibili, consulta la sezione sulla [console Componenti](/help/sites-authoring/default-components-console.md).
+  Per ulteriori informazioni sui componenti disponibili, consulta la sezione sulla [console Componenti](/help/sites-authoring/default-components-console.md).
 
 ## Browser Risorse {#assets-browser}
 
@@ -150,23 +150,23 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 * **Dispositivo mobile come iPad**
 
-   Il browser Risorse copre completamente la pagina in fase di modifica.
+  Il browser Risorse copre completamente la pagina in fase di modifica.
 
-   Per aggiungere una risorsa alla pagina, tocca e tieni premuto sulla risorsa richiesta, quindi spostala verso destra: il browser Risorse si chiude per mostrare di nuovo la pagina, dove puoi aggiungere la risorsa al componente richiesto.
+  Per aggiungere una risorsa alla pagina, tocca e tieni premuto sulla risorsa richiesta, quindi spostala verso destra: il browser Risorse si chiude per mostrare di nuovo la pagina, dove puoi aggiungere la risorsa al componente richiesto.
 
-   ![ateat-09](assets/ateat-09.png)
+  ![ateat-09](assets/ateat-09.png)
 
 * **Dispositivo desktop**
 
-   Il browser Risorse viene aperto sul lato sinistro della finestra.
+  Il browser Risorse viene aperto sul lato sinistro della finestra.
 
-   Per aggiungere una risorsa alla pagina, fai clic sulla risorsa richiesta e trascinala sul componente o sulla posizione desiderata.
+  Per aggiungere una risorsa alla pagina, fai clic sulla risorsa richiesta e trascinala sul componente o sulla posizione desiderata.
 
-   ![ateat-10](assets/ateat-10.png)
+  ![ateat-10](assets/ateat-10.png)
 
 Se devi apportare rapidamente una modifica a una risorsa, puoi avviare [l’editor risorse](/help/assets/manage-assets.md) direttamente dal browser Risorse facendo clic sull&#39;icona Modifica accanto al nome della risorsa.
 
-![](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Dispositivo desktop Assets Browser](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Struttura contenuto {#content-tree}
 
@@ -174,7 +174,7 @@ Il **Struttura contenuto** offre una panoramica di tutti i componenti della pagi
 
 Struttura contenuto è una scheda che si trova nel pannello laterale, insieme ai browser Componenti e Risorse. Per aprire (o chiudere) il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
-![](do-not-localize/screen_shot_2018-03-22at142042.png)
+![Struttura contenuto](do-not-localize/screen_shot_2018-03-22at142042.png)
 
 Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Se necessario, seleziona la scheda **Struttura contenuto**. Una volta aperta è possibile visualizzare una struttura ad albero della pagina o del modello, che permette di capire come il contenuto è strutturato gerarchicamente. Inoltre, in una pagina complessa, consente di spostarsi più facilmente tra i componenti della pagina.
 
@@ -196,19 +196,19 @@ Facendo clic sul componente, questo viene evidenziato nell’editor pagina. Le a
 
 * Ad esempio, una pagina di base:
 
-   `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
 
-   ![ateat-12](assets/ateat-12.png)
+  ![ateat-12](assets/ateat-12.png)
 
-   Se il componente su cui fai clic nella struttura ad albero è modificabile, a destra del nome compare un’icona a forma di chiave inglese. Facendo clic su questa icona si avvia direttamente la finestra di dialogo di modifica del componente.
+  Se il componente su cui fai clic nella struttura ad albero è modificabile, a destra del nome compare un’icona a forma di chiave inglese. Facendo clic su questa icona si avvia direttamente la finestra di dialogo di modifica del componente.
 
-   ![](do-not-localize/screen_shot_2018-03-22at142725.png)
+  ![Icona chiave inglese - Modifica](do-not-localize/screen_shot_2018-03-22at142725.png)
 
 * Oppure una pagina che fa parte di un [live copy](/help/sites-administering/msm.md), dove i componenti vengono ereditati da un’altra pagina; ad esempio:
 
-   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
-   ![ateat-13](assets/ateat-13.png)
+  ![ateat-13](assets/ateat-13.png)
 
 ## Frammenti - Browser Contenuto associato {#fragments-associated-content-browser}
 
@@ -320,7 +320,6 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* La [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Shift-M` consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
 >
 
-
 ## Selezione del percorso {#path-selection}
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso: [campi percorso](/help/sites-authoring/author-environment-tools.md#path-fields) offerta di completamento automatico e il [browser percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) consente una selezione più solida.
@@ -333,7 +332,7 @@ I campi percorso dispongono di funzionalità di completamento automatico e look-
 
 Fai clic sul pulsante **Apri finestra di dialogo per selezione** nel campo percorso per aprire la finestra di dialogo del [browser Percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) e utilizzare opzioni di selezione più dettagliate.
 
-![](do-not-localize/screen_shot_2018-03-22at154427.png)
+![Apri finestra di dialogo per selezione](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 Oppure puoi iniziare a digitare nel campo percorso e AEM fornirà i percorsi corrispondenti mentre digiti.
 
@@ -351,7 +350,7 @@ Il browser Percorsi è organizzato come la [vista a colonne](/help/sites-authori
 * In qualsiasi momento puoi utilizzare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic su **X** nel campo di ricerca per cancellare la ricerca.
 * Per limitare l’ambito della ricerca, puoi visualizzare le opzioni filtro e filtrare il risultato in base a un determinato percorso.
 
-   ![ateat-21](assets/ateat-21.png)
+  ![ateat-21](assets/ateat-21.png)
 
 ## Scelte rapide da tastiera {#keyboard-shortcuts}
 
