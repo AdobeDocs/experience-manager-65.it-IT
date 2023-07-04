@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b4370d23c7b1bd43e1f02a862f11952d04892eb3
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '226'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ In questo esempio viene riattivata l’interfaccia classica per la console Sites
 
    Per esempio
 
-   [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
+   [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
 1. Seleziona il nodo corrispondente alla console per la quale desideri riabilitare l’interfaccia classica. Nel nostro esempio, riattiveremo l’interfaccia utente classica per la console Sites.
 
@@ -50,6 +50,6 @@ In questo esempio viene riattivata l’interfaccia classica per la console Sites
 
 1. Il **Interfaccia classica** l’opzione è nuovamente disponibile come opzione a comparsa in admin console.
 
-   ![](assets/syui-01-2019-02-27-15-16-55.png)
+   ![opzione popover dell’interfaccia classica](assets/syui-01-2019-02-27-15-16-55.png)
 
 Ripeti questi passaggi per ogni console per la quale desideri riabilitare l’accesso alla versione dell’interfaccia classica.

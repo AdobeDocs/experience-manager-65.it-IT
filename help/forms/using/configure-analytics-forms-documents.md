@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: 66631fd0813f623f3321072fc00fd90f7fa33d21
+source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1533'
 ht-degree: 3%
 
 ---
@@ -112,7 +112,7 @@ Per creare una suite di rapporti, effettua le seguenti operazioni.
 Per configurazione di Cloud Service si intendono le informazioni sul tuo account Adobe Analytics. La configurazione consente ad Adobe Experience Manager (AEM) di connettersi ad Adobe Analytics. Crea una configurazione separata per ogni account Analytics utilizzato.
 
 1. Accedi all’istanza di authoring dell’AEM come amministratore.
-1. Nell’angolo in alto a sinistra, fai clic su **Adobe Experience Manager** > **Strumenti** ![](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services legacy**.
+1. Nell’angolo in alto a sinistra, fai clic su **Adobe Experience Manager** > **Strumenti** ![icona a forma di martello](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services legacy**.
 1. Individua **Adobe Analytics** icona. Clic **Mostra configurazioni** e quindi fai clic su **[+]** per aggiungere una nuova configurazione.
 
    Se sei un utente alle prime armi, fai clic su **Configura ora**.
@@ -145,7 +145,7 @@ Un framework Adobe Analytics è un set di mappature tra variabili Adobe Analytic
 
    ![information_to_send_to_report_suite](assets/information_to_send_to_report_suite.png)
 
-1. Trascina un **Componente analisi modulo** dal **altro** categoria da SideKick al framework.
+1. Trascina un **Componente analisi modulo** dal **altro** categoria dal Sidekick al framework.
 1. Per mappare le variabili di Analytics con le variabili definite nel componente, trascina una variabile da AEM Content Finder su un campo del componente di tracciamento.
 
    ![Mappatura delle variabili AEM con le variabili Adobe Analytics](assets/analytics_new.png)
@@ -169,6 +169,7 @@ Un framework Adobe Analytics è un set di mappature tra variabili Adobe Analytic
    * **Cron di sincronizzazione report di Analytics**: specifica l’espressione cron per recuperare i rapporti da Adobe Analytics. Il valore predefinito è 0 0 2 ? &#42; &#42;.
 
    * **Timeout recupero rapporto:** Specifica la durata in secondi dell&#39;attesa della risposta del server al rapporto di analisi. Il tempo predefinito è di 120 secondi.
+
    >[!NOTE]
    >
    >Possono essere necessari fino a 10 secondi in più per l’operazione di recupero del rapporto di timeout rispetto al numero di secondi specificato.

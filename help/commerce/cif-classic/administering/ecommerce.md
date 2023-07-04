@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '751'
 ht-degree: 2%
 
 ---
@@ -137,11 +137,11 @@ L’eCommerce dell’AEM fornisce:
    * Voucher
    * e altri
 
-   ![](/help/sites-administering/assets/chlimage_1-130.png)
+  ![esempio di componenti geometrixx](/help/sites-administering/assets/chlimage_1-130.png)
 
-   >[!NOTE]
-   >
-   >Il framework di integrazione fornito dall’AEM ti consente inoltre di creare componenti AEM aggiuntivi per le funzionalità di e-commerce, indipendentemente dal motore di eCommerce specifico.
+  >[!NOTE]
+  >
+  >Il framework di integrazione fornito dall’AEM ti consente inoltre di creare componenti AEM aggiuntivi per le funzionalità di e-commerce, indipendentemente dal motore di eCommerce specifico.
 
 * **Ricerca** - utilizzando:
 
@@ -150,28 +150,28 @@ L’eCommerce dell’AEM fornisce:
    * una ricerca di terze parti
    * o una combinazione degli stessi.
 
-   ![](/help/sites-administering/assets/chlimage_1-131.png)
+  ![esempio di ricerca](/help/sites-administering/assets/chlimage_1-131.png)
 
 * Utilizza la capacità dell’AEM di **presentare i contenuti su più canali**, che si tratti dell&#39;intera finestra del browser o del dispositivo mobile. In questo modo i contenuti vengono consegnati nel formato richiesto dai visitatori.
 
-   ![](/help/sites-administering/assets/chlimage_1-132.png)
+  ![esempio di visualizzazione mobile](/help/sites-administering/assets/chlimage_1-132.png)
 
 * La capacità di **sviluppare un’implementazione personalizzata dell’integrazione in base al [Quadro per l’eCommerce dell’AEM](#the-framework)**.
 
-   Le due implementazioni attualmente disponibili sono entrambe basate sulla stessa API generale (il framework). L’implementazione di una nuova integrazione comporta solo l’implementazione delle funzioni necessarie per l’integrazione. I componenti front-end possono essere utilizzati da qualsiasi nuova implementazione in quanto utilizzano le interfacce (in modo che siano indipendenti dall’implementazione).
+  Le due implementazioni attualmente disponibili sono entrambe basate sulla stessa API generale (il framework). L’implementazione di una nuova integrazione comporta solo l’implementazione delle funzioni necessarie per l’integrazione. I componenti front-end possono essere utilizzati da qualsiasi nuova implementazione in quanto utilizzano le interfacce (in modo che siano indipendenti dall’implementazione).
 
 * La possibilità di sviluppare **commercio basato sull’esperienza e basato sui dati e sull’attività dell’acquirente**. Questo consente di realizzare molti scenari:
 
    * Un esempio potrebbe essere la riduzione delle spese di spedizione quando l&#39;ordine totale supera un importo specifico.
    * Un altro potrebbe consentire di fornire offerte stagionali che utilizzano dati di profilo (ad esempio, posizione). Questi possono quindi essere evidenziati, anche in questo caso a seconda di altri fattori, se necessario.
 
-   Nell’esempio seguente viene mostrato un teaser poiché il contenuto del carrello è inferiore a $ 75:
+  Nell’esempio seguente viene mostrato un teaser poiché il contenuto del carrello è inferiore a $ 75:
 
-   ![](/help/sites-administering/assets/chlimage_1-133.png)
+  ![carrello con contesto cliente](/help/sites-administering/assets/chlimage_1-133.png)
 
-   Questo può essere modificato quando il contenuto del carrello supera i $ 75:
+  Questo può essere modificato quando il contenuto del carrello supera i $ 75:
 
-   ![](/help/sites-administering/assets/chlimage_1-134.png)
+  ![carrello con contesto client dopo la modifica](/help/sites-administering/assets/chlimage_1-134.png)
 
 * E altre caratteristiche, tra cui:
 
