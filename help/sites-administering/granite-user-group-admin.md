@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '945'
 ht-degree: 5%
 
 ---
@@ -32,9 +32,9 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console app
 
 * [Amministrazione utente](#user-administration)
 
-   ![chlimage_1-73](assets/chlimage_1-73a.png)
+  ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-   Il **Utenti** elenchi console:
+  Il **Utenti** elenchi console:
 
    * il nome utente
    * il nome di accesso dell’utente (nome account)
@@ -42,9 +42,9 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console app
 
 * [Amministrazione gruppo](#group-administration)
 
-   ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![chlimage_1-74](assets/chlimage_1-74a.png)
 
-   Il **Gruppi** elenchi console:
+  Il **Gruppi** elenchi console:
 
    * il nome del gruppo
    * la descrizione del gruppo
@@ -56,7 +56,7 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console app
 
 1. Utilizza il **Aggiungi utente** icona:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Aggiungi utente](do-not-localize/chlimage_1-1.png)
 
 1. Il **Crea utente** Il modulo verrà aperto:
 
@@ -66,16 +66,16 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console app
 
    * **ID**
 
-      Identificazione univoca dell&#39;account utente. È obbligatorio e non può contenere spazi.
+     Identificazione univoca dell&#39;account utente. È obbligatorio e non può contenere spazi.
 
    * **Indirizzo e-mail**
    * **Password**
 
-      La password è obbligatoria.
+     La password è obbligatoria.
 
    * **Ripeti password**
 
-      Questo è obbligatorio in quanto è necessario per la conferma della password.
+     Questo è obbligatorio in quanto è necessario per la conferma della password.
 
    * **Nome**
    * **Cognome**
@@ -93,24 +93,23 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console app
    * **Impostazioni account**
 
       * **Stato**
-Puoi contrassegnare l’account come 
-**attivo** o **inattivo**.
+Puoi contrassegnare l’account come **attivo** o **inattivo**.
+
    * **Foto**
 
-      Qui puoi caricare una foto da usare come avatar.
+     Qui puoi caricare una foto da usare come avatar.
 
-      Tipi di file accettati: `.jpg .png .tif .gif`
+     Tipi di file accettati: `.jpg .png .tif .gif`
 
-      Dimensione preferita: `240x240px`
+     Dimensione preferita: `240x240px`
 
    * **Aggiungi utente a gruppi**
 
-      Utilizza il menu a discesa di selezione per selezionare i gruppi di cui l’utente deve essere membro. Una volta selezionata, utilizza **X** dal nome da deselezionare prima del salvataggio.
+     Utilizza il menu a discesa di selezione per selezionare i gruppi di cui l’utente deve essere membro. Una volta selezionata, utilizza **X** dal nome da deselezionare prima del salvataggio.
 
    * **Gruppi**
 
-      Elenco di gruppi di cui l&#39;utente è attualmente membro. Utilizza il **X** dal nome da deselezionare prima del salvataggio.
-
+     Elenco di gruppi di cui l&#39;utente è attualmente membro. Utilizza il **X** dal nome da deselezionare prima del salvataggio.
 
 1. Dopo aver definito l’account utente, utilizza:
 
@@ -146,7 +145,7 @@ Puoi contrassegnare l’account come
 1. Utilizza la casella di selezione per contrassegnare uno o più utenti.
 1. Utilizza il **Gruppi** icona:
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Utilizzo dell’icona Gruppi](do-not-localize/chlimage_1-2.png)
 
    Per aprire il menu a discesa di selezione del gruppo:
 
@@ -164,7 +163,7 @@ Puoi contrassegnare l’account come
 1. Utilizza la casella di selezione per contrassegnare uno o più utenti.
 1. Utilizza il **Elimina** icona per eliminare i dettagli utente:
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Elimina dettagli utente esistenti](do-not-localize/chlimage_1-3.png)
 
 1. Ti verrà chiesto di confermare l’eliminazione, quindi un messaggio confermerà che l’effettiva eliminazione ha avuto luogo.
 
@@ -174,7 +173,7 @@ Puoi contrassegnare l’account come
 
 1. Utilizza l’icona Aggiungi gruppo:
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Aggiungi un nuovo gruppo](do-not-localize/chlimage_1-4.png)
 
 1. Il **Crea gruppo** Il modulo verrà aperto:
 
@@ -184,23 +183,23 @@ Puoi contrassegnare l’account come
 
    * **ID**
 
-      Identificatore univoco del gruppo. Questo è obbligatorio e non può contenere spazi.
+     Identificatore univoco del gruppo. Questo è obbligatorio e non può contenere spazi.
 
    * **Nome**
 
-      Un nome per il gruppo, che verrà visualizzato nella console Gruppi.
+     Un nome per il gruppo, che verrà visualizzato nella console Gruppi.
 
    * **Descrizione**
 
-      Descrizione del gruppo.
+     Descrizione del gruppo.
 
    * **Aggiungi membri al gruppo**
 
-      Utilizza il menu a discesa di selezione per selezionare gli utenti da aggiungere al gruppo. Una volta selezionata, utilizza **X** dal nome da deselezionare prima del salvataggio.
+     Utilizza il menu a discesa di selezione per selezionare gli utenti da aggiungere al gruppo. Una volta selezionata, utilizza **X** dal nome da deselezionare prima del salvataggio.
 
    * **Membri del gruppo**
 
-      Elenco di utenti del gruppo. Utilizza il **X** dal nome da deselezionare prima del salvataggio.
+     Elenco di utenti del gruppo. Utilizza il **X** dal nome da deselezionare prima del salvataggio.
 
 1. Dopo aver definito il gruppo, utilizzare:
 
@@ -218,7 +217,7 @@ Puoi contrassegnare l’account come
 1. Utilizza la casella di selezione per contrassegnare un gruppo.
 1. Utilizza il **Copia** icona per copiare i dettagli del gruppo:
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Copia un gruppo esistente](do-not-localize/chlimage_1-5.png)
 
 1. Il **Modifica impostazioni gruppo** il modulo verrà aperto.
 
@@ -231,6 +230,6 @@ Puoi contrassegnare l’account come
 1. Utilizza la casella di selezione per contrassegnare uno o più gruppi.
 1. Utilizza il **Elimina** per eliminare i dettagli del gruppo:
 
-   ![](do-not-localize/chlimage_1-6.png)
+   ![Eliminazione di un gruppo esistente](do-not-localize/chlimage_1-6.png)
 
 1. Ti verrà chiesto di confermare l’eliminazione, quindi un messaggio confermerà che l’effettiva eliminazione ha avuto luogo.

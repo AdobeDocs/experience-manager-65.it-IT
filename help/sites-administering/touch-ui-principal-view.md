@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -30,41 +30,41 @@ AEM 6.5 introduce la gestione delle autorizzazioni per utenti e gruppi. La funzi
 
 La nuova gestione delle autorizzazioni basata sull’interfaccia utente è accessibile tramite la scheda Autorizzazioni in Sicurezza, come illustrato di seguito:
 
-![](assets/screen_shot_2019-03-17at63333pm.png)
+![Interfaccia utente per la gestione delle autorizzazioni](assets/screen_shot_2019-03-17at63333pm.png)
 
 La nuova visualizzazione consente di esaminare più facilmente l’intero insieme di privilegi e restrizioni per una determinata entità principale in tutti i percorsi in cui sono state concesse esplicitamente le autorizzazioni. Questo elimina la necessità di passare a
 
 CRXDE per gestire privilegi e restrizioni avanzati. È stato consolidato nella stessa visualizzazione. Il valore predefinito della visualizzazione è Gruppo &quot;tutti&quot;.
 
-![](assets/unu-1.png)
+![Vista del gruppo &quot;tutti&quot;](assets/unu-1.png)
 
 È disponibile un filtro che consente all’utente di selezionare il tipo di entità da esaminare **Utenti**, **Gruppi**, o **Tutti** e cerca un’entità principale **.**
 
-![](assets/image2019-3-20_23-52-51.png)
+![Cerca tipi di entità](assets/image2019-3-20_23-52-51.png)
 
 ### Visualizzazione delle autorizzazioni per un’entità {#viewing-permissions-for-a-principal}
 
 Il frame a sinistra consente agli utenti di scorrere verso il basso per trovare un’entità principale o cercare un gruppo o un utente in base al filtro selezionato, come illustrato di seguito:
 
-![](assets/doi-1.png)
+![Visualizzare le autorizzazioni per un’entità](assets/doi-1.png)
 
 Facendo clic sul nome, a destra vengono visualizzate le autorizzazioni assegnate. Nel riquadro delle autorizzazioni viene visualizzato l&#39;elenco delle voci di controllo di accesso in percorsi specifici con le limitazioni configurate.
 
-![](assets/trei-1.png)
+![Visualizza elenco ACL](assets/trei-1.png)
 
 ### Aggiunta di una nuova voce di controllo di accesso per un&#39;entità {#adding-new-access-control-entry-for-a-principal}
 
 È possibile aggiungere nuove autorizzazioni aggiungendo una nuova voce di controllo degli accessi facendo clic sul pulsante Aggiungi voce ACE.
 
-![](assets/patru.png)
+![Aggiungere un nuovo ACL per un&#39;entità](assets/patru.png)
 
 Viene visualizzata la finestra mostrata di seguito. Il passaggio successivo consiste nel scegliere un percorso in cui configurare l’autorizzazione.
 
-![](assets/cinci-1.png)
+![Configurare il percorso delle autorizzazioni](assets/cinci-1.png)
 
 Qui selezioniamo un percorso per il quale desideri configurare un’autorizzazione **dam-users**:
 
-![](assets/sase-1.png)
+![Configurazione di esempio per dam-users](assets/sase-1.png)
 
 Dopo aver selezionato il percorso, il flusso di lavoro torna a questa schermata, in cui l’utente può quindi selezionare uno o più privilegi dagli spazi dei nomi disponibili (come `jcr`, `rep` o `crx`) come mostrato di seguito.
 
@@ -74,17 +74,17 @@ I privilegi possono essere aggiunti effettuando una ricerca utilizzando il campo
 >
 >Per un elenco completo dei privilegi e delle descrizioni, vedere [questa pagina](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Autorizzazione di ricerca per un determinato percorso](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
 
 Dopo aver selezionato l&#39;elenco dei privilegi, l&#39;utente può scegliere il Tipo di autorizzazione: Nega o Consenti, come illustrato di seguito.
 
-![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
+![Seleziona autorizzazione](assets/screen_shot_2019-03-17at63938pm.png) ![Seleziona autorizzazione](assets/screen_shot_2019-03-17at63947pm.png)
 
 ### Utilizzo delle restrizioni {#using-restrictions}
 
 Oltre all’elenco dei privilegi e al tipo di autorizzazione su un determinato percorso, questa schermata consente anche di aggiungere restrizioni per il controllo degli accessi a grana fine, come illustrato di seguito:
 
-![](assets/image2019-3-21_1-4-14.png)
+![Aggiungi restrizioni](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Oltre all’elenco dei privilegi e al tipo di autorizzazione su un determinato p
 
 Le restrizioni possono essere aggiunte come mostrato di seguito scegliendo il tipo di restrizione, immettendo il valore e premendo il tasto **+** icona.
 
-![](assets/sapte-1.png) ![](assets/opt-1.png)
+![Aggiungere il tipo di restrizione](assets/sapte-1.png) ![Aggiungere il tipo di restrizione](assets/opt-1.png)
 
 La nuova voce ACE viene visualizzata nell&#39;elenco di controllo di accesso come illustrato di seguito. Tieni presente che `jcr:write` è un privilegio aggregato che include `jcr:removeNode` che è stato aggiunto in precedenza, ma non è mostrato di seguito come suo coperto in `jcr:write`.
 
@@ -110,17 +110,17 @@ Viene visualizzata la schermata di modifica con ACE configurati preselezionati. 
 
 Stiamo aggiungendo il `addChildNodes` privilegio per **dam-users** nel percorso specificato.
 
-![](assets/image2019-3-21_0-45-35.png)
+![Aggiungi privilegio](assets/image2019-3-21_0-45-35.png)
 
-Le modifiche possono essere salvate facendo clic su **Salva** in alto a destra, e le modifiche si rifletteranno nelle nuove autorizzazioni per **dam-users **come mostrato di seguito:
+Le modifiche possono essere salvate facendo clic su **Salva** in alto a destra, e le modifiche si rifletteranno nelle nuove autorizzazioni per **dam-users** come mostrato di seguito:
 
-![](assets/zece-1.png)
+![Salva modifiche](assets/zece-1.png)
 
 ### Eliminazione di ACE {#deleting-aces}
 
 È possibile eliminare le voci di controllo di accesso per rimuovere tutte le autorizzazioni concesse a un utente/gruppo/ruolo in un percorso specifico. L&#39;icona X accanto a ACE può essere utilizzata per eliminarla come illustrato di seguito:
 
-![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
+![Elimina ACE](assets/image2019-3-21_0-53-19.png) ![Elimina ACE](assets/unspe.png)
 
 ### Combinazioni di privilegi dell’interfaccia classica {#classic-ui-privilege-combinations}
 

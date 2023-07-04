@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2026'
 ht-degree: 12%
 
 ---
@@ -144,11 +144,11 @@ Dove &lt;text_x> può essere una combinazione di testo statico e variabili di st
 * `${userId}`, ID dell’utente che ha attivato l’evento.
 * `${modifications}`, descrive il tipo di evento di pagina e il percorso della pagina nel formato:
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
+  &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
-   Ad esempio:
+  Ad esempio:
 
-   PageModified => /content/geometrixx/en/products
+  PageModified => /content/geometrixx/en/products
 
 ### Modelli e-mail per notifica flusso di lavoro {#email-templates-for-workflow-notification}
 
@@ -342,7 +342,7 @@ Infine, conferma la configurazione:
 1. Cerca **Azure Active Directory** nella barra di ricerca e fai clic sul risultato. In alternativa, è possibile navigare direttamente in [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Fai clic su **Registrazione app** - **Nuova registrazione**
 
-   ![](assets/oauth-outlook1.png)
+   ![Configurazione di Microsoft Outlook](assets/oauth-outlook1.png)
 
 1. Compila le informazioni in base alle tue esigenze, quindi fai clic su **Registra**
 1. Vai alla nuova app creata e seleziona **Autorizzazioni API**
@@ -397,7 +397,7 @@ Quindi, integra le impostazioni OAuth2 con AEM:
 
 Una volta configurate, le impostazioni avranno un aspetto simile a questo:
 
-![](assets/oauth-outlook-smptconfig.png)
+![Vista configurazioni lato AEM](assets/oauth-outlook-smptconfig.png)
 
 Ora, attiva i componenti OAuth. Per farlo, segui questi passaggi:
 

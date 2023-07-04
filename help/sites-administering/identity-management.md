@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1226'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ I singoli visitatori del sito web possono essere identificati solo se è possibi
 * [AEM Communities](/help/communities/overview.md)I visitatori del sito devono effettuare l&#39;accesso per pubblicare contenuti nella community.
 * [Gruppi utenti chiusi](/help/sites-administering/cug.md)
 
-   Potrebbe essere necessario limitare l’accesso al sito web (o a sue sezioni) a visitatori specifici.
+  Potrebbe essere necessario limitare l’accesso al sito web (o a sue sezioni) a visitatori specifici.
 
 * [Personalizzazione](/help/sites-administering/personalization.md) Consentire ai visitatori di configurare alcuni aspetti delle modalità di accesso al sito web.
 
@@ -33,15 +33,15 @@ La funzionalità di accesso (e disconnessione) è fornita da un [account con un 
 
 * Autoregistrazione dal sito web
 
-   A [Sito community](/help/communities/sites-console.md) può essere configurato per consentire ai visitatori di registrarsi autonomamente o di accedere con i propri account Facebook o Twitter.
+  A [Sito community](/help/communities/sites-console.md) può essere configurato per consentire ai visitatori di registrarsi autonomamente o di accedere con i propri account Facebook o Twitter.
 
 * Richiesta di registrazione dal sito web
 
-   Per un gruppo di utenti chiuso puoi consentire ai visitatori di richiedere la registrazione, ma applicare l’autorizzazione tramite un flusso di lavoro.
+  Per un gruppo di utenti chiuso puoi consentire ai visitatori di richiedere la registrazione, ma applicare l’autorizzazione tramite un flusso di lavoro.
 
 * Registra ogni account dall’ambiente di authoring
 
-   Se disponi di un numero limitato di profili che necessitano comunque dell’autorizzazione, puoi decidere di registrarli direttamente.
+  Se disponi di un numero limitato di profili che necessitano comunque dell’autorizzazione, puoi decidere di registrarli direttamente.
 
 Per consentire ai visitatori di registrarsi, è possibile utilizzare una serie di componenti e moduli per raccogliere le informazioni di identificazione richieste, quindi le informazioni di profilo aggiuntive (spesso facoltative). Dopo la registrazione, essi dovrebbero anche essere in grado di verificare e aggiornare i dati che hanno presentato.
 
@@ -106,7 +106,7 @@ Per visualizzare i dettagli del profilo, fai clic su **Il mio profilo** nell’a
 1. Premi **control-alt-C** per aprire il contesto client.
 1. Nell’angolo in alto a sinistra del contesto client, fai clic su **Caricare un profilo** pulsante.
 
-   ![](do-not-localize/loadprofile.png)
+   ![Pulsante Carica profilo](do-not-localize/loadprofile.png)
 
 1. Seleziona un altro profilo dall’elenco a discesa nella finestra di dialogo; ad esempio, **Alison Parker**.
 1. Fai clic su **OK**.
@@ -156,11 +156,11 @@ Questa operazione viene eseguita con:
 
 * [Provider di stato](#state-providers)
 
-   Gestire i due stati di una proprietà specifica e le transizioni tra i due stati.
+  Gestire i due stati di una proprietà specifica e le transizioni tra i due stati.
 
 * [Flussi di lavoro](#workflows)
 
-   Gestire le azioni relative agli stati.
+  Gestire le azioni relative agli stati.
 
 È possibile definire più stati, ad esempio in Geometrixx:
 

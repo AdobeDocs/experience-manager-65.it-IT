@@ -12,9 +12,9 @@ discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 002b9035f37a1379556378686b64d26bbbc30288
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2527'
 ht-degree: 5%
 
 ---
@@ -90,6 +90,7 @@ Una volta abilitata la sincronizzazione degli utenti, vengono sincronizzati solo
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
       * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * individuare `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * seleziona la configurazione esistente da aprire per la modifica (icona a forma di matita) Verifica `name`: **`socialpubsync`**
@@ -97,8 +98,7 @@ Una volta abilitata la sincronizzazione degli utenti, vengono sincronizzati solo
       * seleziona la `Enabled` casella di controllo
       * seleziona `Save`
 
-
-![](assets/chlimage_1-20.png)
+![Agente di distribuzione Apache Sling](assets/chlimage_1-20.png)
 
 ### 2. Crea utente autorizzato {#createauthuser}
 
@@ -111,15 +111,15 @@ Questo utente autorizzato verrà utilizzato nel passaggio 3 per configurare la d
    * accedere a [Console di sicurezza](/help/sites-administering/security.md)
 
       * ad esempio: [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
+
    * crea un nuovo utente
 
       * ad esempio, `usersync-admin`
+
    * aggiungi questo utente a **`administrators`** gruppo utenti
    * [aggiungi ACL per questo utente a /home](#howtoaddacl)
 
       * `Allow jcr:all` con restrizione `rep:glob=*/activities/*`
-
-
 
 >[!CAUTION]
 >
@@ -128,7 +128,6 @@ Questo utente autorizzato verrà utilizzato nel passaggio 3 per configurare la d
 >* L&#39;utente predefinito assegnato è **`admin`**.
 >* Non usi `communities-user-admin user.`
 >
-
 
 #### Come aggiungere ACL {#addacls}
 
@@ -148,7 +147,7 @@ Questo utente autorizzato verrà utilizzato nel passaggio 3 per configurare la d
 
 * seleziona **Salva tutto**
 
-![](assets/chlimage_1-21.png)
+![Finestra Aggiungi ACL](assets/chlimage_1-21.png)
 
 Consulta anche
 
@@ -167,6 +166,7 @@ Una volta che un utente autorizzato, un membro di **`administrators`** Il gruppo
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
       * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * individuare `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * seleziona la configurazione esistente da aprire per la modifica (icona a forma di matita) Verifica `property name`: **`socialpubsync-publishUser`**
 
@@ -174,8 +174,7 @@ Una volta che un utente autorizzato, un membro di **`administrators`** Il gruppo
 
       * ad esempio, `usersync-admin`
 
-
-![](assets/chlimage_1-22.png)
+![Provider segreto di trasporto per password crittografata](assets/chlimage_1-22.png)
 
 ### 4. Agente di distribuzione Apache Sling - Factory agenti coda {#apache-sling-distribution-agent-queue-agents-factory}
 
@@ -187,17 +186,17 @@ Una volta che un utente autorizzato, un membro di **`administrators`** Il gruppo
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
       * ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+
    * individuare `Apache Sling Distribution Agent - Queue Agents Factory`
 
       * seleziona la configurazione esistente da aprire per la modifica (icona a forma di matita) Verifica `Name`: `socialpubsync-reverse`
 
       * seleziona la `Enabled` casella di controllo
       * seleziona `Save`
+
    * **repeat** per ogni istanza di pubblicazione
 
-
-
-![](assets/chlimage_1-23.png)
+![Factory agenti coda](assets/chlimage_1-23.png)
 
 ### 5. Sincronizzazione Adobe Social - Diff Observer Factory {#diffobserver}
 
@@ -209,17 +208,17 @@ Una volta che un utente autorizzato, un membro di **`administrators`** Il gruppo
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
       * ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+
    * individuare **`Adobe Social Sync - Diff Observer Factory`**
 
       * seleziona la configurazione esistente da aprire per la modifica (icona matita)
 
-         Verifica `agent name`: `socialpubsync-reverse`
+        Verifica `agent name`: `socialpubsync-reverse`
 
       * seleziona la `Enabled` casella di controllo
       * seleziona `Save`
 
-
-![](assets/screen-shot_2019-05-24at090809.png)
+![Diff Observer Factory](assets/screen-shot_2019-05-24at090809.png)
 
 ### 6. Trigger di distribuzione Apache Sling - Fabbrica dei trigger pianificati {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
@@ -233,17 +232,17 @@ Per impostazione predefinita, l’autore esegue il polling delle modifiche ogni 
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
       * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * individuare `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
       * seleziona la configurazione esistente da aprire per la modifica (icona matita)
 
          * Verifica `Name`: `socialpubsync-scheduled-trigger`
+
       * imposta `Interval in Seconds` all&#39;intervallo desiderato
       * seleziona `Save`
 
-
-
-![](assets/chlimage_1-24.png)
+![Fabbrica attivatori pianificati](assets/chlimage_1-24.png)
 
 ## Configurazione per più istanze di pubblicazione {#configure-for-multiple-publish-instances}
 
@@ -259,12 +258,12 @@ La configurazione predefinita è per una singola istanza di pubblicazione. Poich
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
       * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * individuare `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * seleziona la configurazione esistente da aprire per la modifica (icona a forma di matita) Verifica `Name`: `socialpubsync`
 
-
-![](assets/chlimage_1-25.png)
+![Factory agenti di sincronizzazione](assets/chlimage_1-25.png)
 
 * **Endpoint esportazione**
 Deve essere presente un endpoint di esportazione per ogni istanza di pubblicazione. Ad esempio, se sono presenti 2 istanze Publish, localhost:4503 e 4504, devono essere presenti 2 voci:
@@ -292,11 +291,11 @@ Se sono presenti dati personalizzati che devono essere sincronizzati tra più is
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
       * ad esempio, `https://localhost:4503/system/console/configMgr`
+
    * individuare `AEM Communities User Sync Listener`
    * seleziona la configurazione esistente da aprire per la modifica (icona a forma di matita) Verifica `Name`: `socialpubsync-scheduled-trigger`
 
-
-![](assets/chlimage_1-26.png)
+![Listener di sincronizzazione utenti AEM Communities](assets/chlimage_1-26.png)
 
 * **Tipi di nodo**
 Elenco dei tipi di nodo che verranno sincronizzati. Qualsiasi tipo di nodo diverso da sling:Folder deve essere elencato qui (sling:folder viene gestito separatamente).
@@ -340,7 +339,7 @@ Per verificare che tutti i valori degli ID Sling siano diversi, per ogni istanza
 1. sfoglia per `http://<host>:<port>/system/console/status-slingsettings`
 1. controlla il valore di **ID Sling**
 
-![](assets/chlimage_1-27.png)
+![Controllo del valore di Sling ID](assets/chlimage_1-27.png)
 
 Se l’ID Sling di un’istanza Publish corrisponde all’ID Sling di qualsiasi altra istanza Publish:
 
@@ -350,10 +349,10 @@ Se l’ID Sling di un’istanza Publish corrisponde all’ID Sling di qualsiasi 
    * cerca ed elimina il file denominato *sling.id.file*
 
       * ad esempio, su un sistema Linux:
-         `rm -i $(find . -type f -name sling.id.file)`
+        `rm -i $(find . -type f -name sling.id.file)`
 
       * ad esempio, in un sistema Windows:
-         `use windows explorer and search for *sling.id.file*`
+        `use windows explorer and search for *sling.id.file*`
 
 1. avvia l’istanza Publish
 
@@ -387,10 +386,10 @@ Per consentire la corretta sincronizzazione degli aggiornamenti, è necessario m
    * per sovrascrivere i nodi rep:policy esistenti con quelli nuovi, aggiungete un terzo filtro pacchetto:
 
       * `/home/users|+.*/rep:policy`
+
    * per impedire la distribuzione dei criteri, impostare
 
       * `Acl Handling:` `IGNORE`
-
 
 ![Generatore pacchetti Vault - Fabbrica](assets/vault-package-builder-factory.png)
 
@@ -423,13 +422,13 @@ Per verificare lo stato della coda di distribuzione:
       * cerca voci in `/var/sling/distribution/packages`
 
          * nodi di cartelle denominati con il modello `distrpackage_*`
+
    * utilizzo [Gestione pacchetti](/help/sites-administering/package-manager.md)
 
       * cerca pacchetti in sospeso (non ancora installati)
 
          * denominato con il pattern `socialpubsync-vlt*`
          * creato da `communities-user-admin`
-
 
 Quando la coda di distribuzione è vuota, disabilita la sincronizzazione utente:
 
@@ -453,7 +452,7 @@ I risultati vengono visualizzati semplicemente inserendo la console di diagnosti
 
 Questo viene visualizzato quando Sincronizzazione utente non è stata abilitata:
 
-![](assets/chlimage_1-28.png)
+![Avviso di mancato funzionamento di Diagnostica sincronizzazione utenti](assets/chlimage_1-28.png)
 
 #### Eseguire la diagnostica per le istanze di pubblicazione {#how-to-run-diagnostics-for-publish-instances}
 
@@ -463,7 +462,7 @@ Nell’elenco è incluso un URL per ogni istanza di pubblicazione che eseguirà 
 
 **Nota**: prima di avviare l’URL, il *utente di sincronizzazione autorizzato* deve già essere connesso a tale istanza di pubblicazione.
 
-![](assets/chlimage_1-29.png)
+![Diagnostica per le istanze di pubblicazione](assets/chlimage_1-29.png)
 
 ### Configurazione aggiunta in modo errato {#configuration-improperly-added}
 
@@ -473,23 +472,23 @@ Di seguito sono riportate le visualizzazioni delle configurazioni predefinite mo
 
 #### (author) Un agente di distribuzione Apache Sling - Sync Agents Factory {#author-one-apache-sling-distribution-agent-sync-agents-factory}
 
-![](assets/chlimage_1-30.png)
+![Visualizzazione Configurazioni predefinite modificate nella console Web](assets/chlimage_1-30.png)
 
 #### (author) Una credenziale trasporto distribuzione Apache Sling - Credenziali utente basate su DistributionTransportSecretProvider {#author-one-apache-sling-distribution-transport-credentials-user-credentials-based-distributiontransportsecretprovider}
 
-![](assets/chlimage_1-31.png)
+![Visualizzazione Configurazioni predefinite modificate nella console Web](assets/chlimage_1-31.png)
 
 #### (pubblicazione) Un agente di distribuzione Apache Sling - Queue Agents Factory {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![](assets/chlimage_1-32.png)
+![Visualizzazione Configurazioni predefinite modificate nella console Web](assets/chlimage_1-32.png)
 
 #### (pubblicazione) One Adobe Social Sync - Diff Observer Factory {#publish-one-adobe-social-sync-diff-observer-factory}
 
-![](assets/chlimage_1-33.png)
+![Visualizzazione Configurazioni predefinite modificate nella console Web](assets/chlimage_1-33.png)
 
 #### (author) Un trigger di distribuzione Apache Sling - Factory di trigger pianificati {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-![](assets/chlimage_1-34.png)
+![Visualizzazione Configurazioni predefinite modificate nella console Web](assets/chlimage_1-34.png)
 
 ### Modifica eccezione operazione durante l&#39;elaborazione della risposta {#modify-operation-exception-during-response-processing}
 
@@ -540,8 +539,8 @@ Vedere la sezione [9. ID Sling univoco](#unique-sling-id)
 
          * Scheda Filtri: Aggiungi filtro: Percorso directory principale: `/home`
          * Scheda Avanzate: Gestione AC: `Overwrite`
-   * [esportare il pacchetto](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
+   * [esportare il pacchetto](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
 * in altre istanze di pubblicazione:
 
@@ -576,6 +575,7 @@ Per rimuovere un&#39;istanza Publish da [Agente di distribuzione Apache Sling - 
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
+
    * riabilita sincronizzazione utenti
 
       * controlla la `Enabled` casella di controllo per [Agente di distribuzione Apache Sling - Factory agenti di sincronizzazione](#apache-sling-distribution-agent-sync-agents-factory)

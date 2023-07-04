@@ -10,9 +10,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5402'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ Le tabelle seguenti elencano ogni elemento insieme a:
    <td>Evita di eliminare o disabilitare questo account, in quanto influisce negativamente sul funzionamento delle istanze di authoring. Se esistono requisiti di sicurezza che richiedono di eliminarlo, assicurati di testare correttamente gli effetti che ha sui tuoi sistemi per primi.</td>
   </tr>
   <tr>
-   <td><p>creazione</p> <p>Password predefinita: author</p> </td>
+   <td><p>author</p> <p>Password predefinita: author</p> </td>
    <td>User</td>
    <td><p>Un account autore autorizzato a scrivere in /content. Comprende i privilegi dei collaboratori e degli utenti.</p> <p>Può essere utilizzato come webmaster in quanto ha accesso all’intera struttura /content.</p> <p>Questo account non è un utente predefinito, ma un altro utente demo di Geometrixx</p> </td>
    <td><p>L’Adobe consiglia di eliminare completamente l’account o di modificare la password predefinita.</p> <p>Preferibilmente durante l’installazione, anche se può essere eseguita in seguito.</p> </td>
@@ -284,14 +284,14 @@ Di seguito sono riportati alcuni consigli sulla gestione degli elenchi di contro
 
 * Non assegnare autorizzazioni direttamente agli utenti. Assegnale solo ai gruppi.
 
-   Questo semplifica la manutenzione, in quanto il numero di gruppi è molto inferiore al numero di utenti e anche meno volatile.
+  Questo semplifica la manutenzione, in quanto il numero di gruppi è molto inferiore al numero di utenti e anche meno volatile.
 
 * Se desideri che un gruppo o un utente possa modificare solo le pagine, non concedere loro i diritti di creazione o negazione. Concedi loro solo i diritti di modifica e lettura.
 * Utilizza Rifiuta con moderazione. Per quanto possibile utilizzare solo Consenti.
 
-   L’utilizzo di nega può causare effetti imprevisti se le autorizzazioni vengono applicate in un ordine diverso da quello previsto. Se un utente è membro di più gruppi, le istruzioni Deny di un gruppo possono annullare l&#39;istruzione Allow di un altro gruppo o viceversa. È difficile avere una panoramica quando si verifica una situazione del genere e può facilmente portare a risultati imprevisti, mentre le assegnazioni consentite non causano tali conflitti.
+  L’utilizzo di nega può causare effetti imprevisti se le autorizzazioni vengono applicate in un ordine diverso da quello previsto. Se un utente è membro di più gruppi, le istruzioni Deny di un gruppo possono annullare l&#39;istruzione Allow di un altro gruppo o viceversa. È difficile avere una panoramica quando si verifica una situazione del genere e può facilmente portare a risultati imprevisti, mentre le assegnazioni consentite non causano tali conflitti.
 
-   L’Adobe consiglia di utilizzare Consenti anziché Rifiuta visualizzazione [Best practice](#best-practices).
+  L’Adobe consiglia di utilizzare Consenti anziché Rifiuta visualizzazione [Best practice](#best-practices).
 
 Prima di modificare una di queste autorizzazioni, accertati di comprendere come funzionano e come si relazionano tra loro. Consulta la documentazione di CRX che illustra come WCM per AEM [valuta i diritti di accesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), e esempi sulla configurazione degli elenchi di controllo di accesso.
 
@@ -391,7 +391,7 @@ Per accedere alla protezione WCM AEM, effettuare una delle seguenti operazioni:
 
 * Dalla schermata iniziale o da varie posizioni in AEM, fai clic sull’icona di sicurezza:
 
-![](do-not-localize/wcmtoolbar.png)
+![Scheda Sicurezza WCM AEM](do-not-localize/wcmtoolbar.png)
 
 * Passa direttamente a `https://<server>:<port>/useradmin`. Accertati di accedere a AEM come amministratore.
 
@@ -640,7 +640,6 @@ Il privilegio di replica è il diritto di pubblicare il contenuto e può essere 
 >* I privilegi di replica di un utente sostituiscono quelli di un gruppo.
 >* I diritti di replica Consenti hanno una precedenza maggiore rispetto ai diritti di replica Nega. Consulta [Autorizzazioni in AEM](#permissions-in-aem) per ulteriori informazioni.
 >
-
 
 Per impostare i privilegi di replica:
 
