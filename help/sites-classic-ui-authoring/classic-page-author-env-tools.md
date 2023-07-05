@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '902'
 ht-degree: 7%
 
 ---
@@ -40,11 +40,11 @@ Varie **Aiuto** Le risorse sono accessibili direttamente dall&#39;AEM:
 
 Oltre all&#39;accesso [aiuto dalle barre degli strumenti della console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), è inoltre possibile accedere alla guida dalla barra laterale (utilizzando la ? ) durante la modifica di una pagina:
 
-![](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick compresso](do-not-localize/sidekick-collapsed-2.png)
 
 Oppure utilizzando **Aiuto** nella finestra di dialogo per modifica di componenti specifici; verrà visualizzata la guida contestuale.
 
-## Barra laterale {#sidekick}
+## Sidekick {#sidekick}
 
 Il **Componenti** La scheda della barra laterale consente di sfogliare i componenti disponibili per l’aggiunta alla pagina corrente. Il gruppo richiesto può essere espanso, quindi un componente può essere trascinato nella posizione desiderata sulla pagina.
 
@@ -165,7 +165,7 @@ Per visualizzare i riferimenti diretti alle pagine:
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-In alcune situazioni sono disponibili ulteriori azioni dalla barra laterale, tra cui:
+In alcune situazioni sono disponibili ulteriori azioni da parte del Sidekick, tra cui:
 
 * [Lanci](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Live Copy](/help/sites-administering/msm.md)
@@ -188,9 +188,9 @@ Anche la console del sito web [fornisce informazioni sullo stato corrente della 
 
 Durante la modifica di una pagina con l’interfaccia utente classica, è possibile accedere a diverse modalità utilizzando le icone nella parte inferiore della barra laterale:
 
-![](do-not-localize/chlimage_1-12.png)
+![Modalità pagina  ](do-not-localize/chlimage_1-12.png)
 
-La riga di icone nella parte inferiore della barra laterale consente di cambiare modalità per l’utilizzo delle pagine:
+La riga di icone nella parte inferiore del Sidekick consente di cambiare modalità per l&#39;utilizzo delle pagine:
 
 * [Modifica](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 Questa è la modalità predefinita e consente di modificare la pagina, aggiungere o eliminare componenti ed effettuare altre modifiche.
@@ -209,7 +209,6 @@ In questa modalità, puoi modificare la progettazione della pagina configurando 
 >* [ClientContext](/help/sites-administering/client-context.md)
 >* Siti Web: apre la console Siti Web.
 >* Ricarica: aggiorna la pagina.
-
 
 ## Scelte rapide da tastiera {#keyboard-shortcuts}
 

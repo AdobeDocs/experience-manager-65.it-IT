@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 49%
+source-wordcount: '507'
+ht-degree: 48%
 
 ---
 
@@ -28,7 +28,7 @@ L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti,
 
 La funzione Ricerca è disponibile nella barra degli strumenti superiore:
 
-![](do-not-localize/chlimage_1-17.png)
+![Ricerca](do-not-localize/chlimage_1-17.png)
 
 La barra di ricerca consente di effettuare le seguenti operazioni:
 
@@ -61,7 +61,7 @@ Per cercare e filtrare le risorse:
 
 1. Per approfondire la ricerca, seleziona il simbolo della barra laterale (in alto a sinistra) per aprire il pannello laterale **Filtri e opzioni**.
 
-   ![](do-not-localize/screen_shot_2018-03-23at101542.png)
+   ![Filtri e opzioni](do-not-localize/screen_shot_2018-03-23at101542.png)
 
    In base al tipo di risorsa, la funzione Ricerca mostrerà una selezione predefinita di criteri di ricerca/filtro.
 
@@ -80,7 +80,8 @@ Per cercare e filtrare le risorse:
    >
    >    * A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Assets e Communities sono comprensibilmente specializzati.
    >    * La tua istanza come [Cerca in Forms](/help/sites-administering/search-forms.md) possono essere personalizzate (in base alla sede all’interno dell’AEM).
-
+   >
+   >
 
    ![schermata_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 

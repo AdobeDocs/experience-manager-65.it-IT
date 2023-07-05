@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1526'
 ht-degree: 34%
 
 ---
@@ -33,11 +33,11 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
 
 * Il tuo [notifica](/help/sites-authoring/inbox.md) (barra degli strumenti) verrà incrementato:
 
-   ![](do-not-localize/wf-57.png)
+  ![Indicatore di notifica](do-not-localize/wf-57.png)
 
 * L&#39;oggetto viene inserito nelle notifiche della [Casella in entrata](/help/sites-authoring/inbox.md):
 
-   ![wf-58](assets/wf-58.png)
+  ![wf-58](assets/wf-58.png)
 
 * Quando utilizzi l’editor pagina, la barra di stato mostra quanto segue:
 
@@ -48,18 +48,18 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
       * utilizza le frecce sinistra/destra per spostarti tra le informazioni sullo stato dei vari flussi di lavoro.
       * tocca o fai clic sul numero effettivo per aprire un elenco a discesa di tutti i flussi di lavoro applicabili, quindi seleziona il flusso di lavoro da visualizzare nella barra di stato.
 
-   ![wf-59](assets/wf-59.png)
+  ![wf-59](assets/wf-59.png)
 
-   >[!NOTE]
-   >
-   >La barra di stato è visibile solo agli utenti con i privilegi del flusso di lavoro, per esempio, i membri del gruppo `workflow-users`.
-   >
-   >
-   >Le azioni vengono visualizzate quando l’utente corrente è direttamente coinvolto nel passaggio corrente del flusso di lavoro.
+  >[!NOTE]
+  >
+  >La barra di stato è visibile solo agli utenti con i privilegi del flusso di lavoro, per esempio, i membri del gruppo `workflow-users`.
+  >
+  >
+  >Le azioni vengono visualizzate quando l’utente corrente è direttamente coinvolto nel passaggio corrente del flusso di lavoro.
 
 * Quando **Timeline** è aperto per la risorsa, verrà visualizzato il passaggio del flusso di lavoro. Quando tocchi o fai clic sul banner dell’avviso, vengono visualizzate anche le azioni disponibili:
 
-   ![schermata_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
+  ![schermata_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
 ### Completamento di un passaggio partecipante {#completing-a-participant-step}
 
@@ -229,19 +229,19 @@ I dettagli del flusso di lavoro sono visualizzati in schede e le azioni appropri
 
 * Scheda **ELEMENTO DI LAVORO:**
 
-   ![wf-72](assets/wf-72.png)
+  ![wf-72](assets/wf-72.png)
 
 * Scheda **INFORMAZIONI SUL FLUSSO DI LAVORO**:
 
-   ![wf-73](assets/wf-73.png)
+  ![wf-73](assets/wf-73.png)
 
-   Se [Fasi flusso di lavoro](/help/sites-developing/workflows.md#workflow-stages) sono stati configurati per il modello, è possibile visualizzare lo stato di avanzamento in base a questi:
+  Se [Fasi flusso di lavoro](/help/sites-developing/workflows.md#workflow-stages) sono stati configurati per il modello, è possibile visualizzare lo stato di avanzamento in base a questi:
 
-   ![wf-107](assets/wf-107.png)
+  ![wf-107](assets/wf-107.png)
 
 * Scheda **COMMENTI**:
 
-   ![wf-75](assets/wf-75.png)
+  ![wf-75](assets/wf-75.png)
 
 È possibile aprire i dettagli dell&#39;elemento di lavoro in uno a partire da:
 

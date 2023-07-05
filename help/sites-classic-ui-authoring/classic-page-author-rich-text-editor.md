@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1841'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ L’Editor Rich Text offre una serie di funzioni, tra cui [dipende dalla configu
 
 ### Formati di caratteri di base {#basic-character-formats}
 
-![](do-not-localize/cq55_rte_basicchars.png)
+![Barra degli strumenti Formato carattere](do-not-localize/cq55_rte_basicchars.png)
 
 Qui puoi applicare la formattazione ai caratteri selezionati (evidenziati); alcune opzioni dispongono anche di tasti di scelta rapida:
 
@@ -98,7 +98,7 @@ Un formato specifico può essere solo modificato (il valore predefinito è **[!U
 
 ### Taglia, Copia, Incolla {#cut-copy-paste}
 
-![](do-not-localize/cq55_rte_cutcopypaste.png)
+![Barra degli strumenti Taglia, Copia e Incolla](do-not-localize/cq55_rte_cutcopypaste.png)
 
 Le funzioni standard di **[!UICONTROL Taglia]** e **[!UICONTROL Copia]** sono disponibili. Diversi gusti di **[!UICONTROL Incolla]** sono fornite per soddisfare diversi formati.
 
@@ -112,7 +112,7 @@ Le funzioni standard di **[!UICONTROL Taglia]** e **[!UICONTROL Copia]** sono di
 
 ### Annulla, Ripristina {#undo-redo}
 
-![](do-not-localize/cq55_rte_undoredo.png)
+![Annulla, Ripeti barra degli strumenti](do-not-localize/cq55_rte_undoredo.png)
 
 L’AEM tiene un registro delle ultime 50 azioni eseguite nel componente corrente, in ordine cronologico. Se necessario, queste azioni possono essere annullate (e quindi ripristinate) in ordine rigoroso.
 
@@ -126,7 +126,7 @@ L’AEM tiene un registro delle ultime 50 azioni eseguite nel componente corrent
 
 ### Allineamento {#alignment}
 
-![](do-not-localize/cq55_rte_alignment.png)
+![Barra degli strumenti Allineamento](do-not-localize/cq55_rte_alignment.png)
 
 Il testo può essere allineato a sinistra, al centro o a destra.
 
@@ -134,7 +134,7 @@ Il testo può essere allineato a sinistra, al centro o a destra.
 
 ### Rientro {#indentation}
 
-![](do-not-localize/cq55_rte_indent.png)
+![Barra degli strumenti Rientro](do-not-localize/cq55_rte_indent.png)
 
 Il rientro di un paragrafo può essere aumentato o diminuito. Il paragrafo selezionato verrà rientrato; il nuovo testo inserito manterrà il livello di rientro corrente.
 
@@ -142,7 +142,7 @@ Il rientro di un paragrafo può essere aumentato o diminuito. Il paragrafo selez
 
 ### Elenchi {#lists}
 
-![](do-not-localize/cq55_rte_lists.png)
+![Barra degli strumenti Elenchi](do-not-localize/cq55_rte_lists.png)
 
 È possibile creare elenchi puntati e numerati all&#39;interno del testo. Selezionare il tipo di elenco e iniziare a digitare o evidenziare il testo da convertire. In entrambi i casi, un feed di riga avvierà una nuova voce di elenco.
 
@@ -154,11 +154,11 @@ Lo stile di un elenco può essere modificato semplicemente posizionando il curso
 
 ### Collegamenti {#links}
 
-![](do-not-localize/cq55_rte_links.png)
+![Barra degli strumenti Collegamenti](do-not-localize/cq55_rte_links.png)
 
 Un collegamento a un URL (all’interno del sito web o una posizione esterna) viene generato evidenziando il testo richiesto e facendo clic sull’icona del collegamento ipertestuale:
 
-![](do-not-localize/chlimage_1-9.png)
+![Icona Collegamento ipertestuale](do-not-localize/chlimage_1-9.png)
 
 Una finestra di dialogo ti consente di specificare l’URL di destinazione e se deve essere aperto in una nuova finestra.
 
@@ -178,11 +178,11 @@ Operazioni disponibili:
 
 Per interrompere il collegamento, posizionare il cursore in un punto qualsiasi all&#39;interno del testo del collegamento e fare clic su [!UICONTROL Scollega] icona:
 
-![](do-not-localize/chlimage_1-10.png)
+![Icona Scollega](do-not-localize/chlimage_1-10.png)
 
 ### Ancoraggi {#anchors}
 
-![](do-not-localize/cq55_rte_anchor.png)
+![Barra degli strumenti Ancoraggi](do-not-localize/cq55_rte_anchor.png)
 
 È possibile creare un ancoraggio in qualsiasi punto del testo posizionando il cursore o selezionando del testo. Quindi fai clic sul pulsante **Ancoraggio** per aprire la finestra di dialogo.
 
@@ -196,7 +196,7 @@ L’ancoraggio viene visualizzato quando il componente viene modificato e ora pu
 
 ### Trova e sostituisci {#find-and-replace}
 
-![](do-not-localize/cq55_rte_findreplace.png)
+![Barra degli strumenti Trova e sostituisci](do-not-localize/cq55_rte_findreplace.png)
 
 L&#39;AEM fornisce sia **Trova** e un **Sostituisci** (Trova e sostituisci).
 
@@ -222,7 +222,7 @@ Le immagini possono essere trascinate da Content Finder per aggiungerle al testo
 
 ### Controllo ortografia {#spelling-checker}
 
-![](do-not-localize/cq55_rte_spellchecker.png)
+![Controllo ortografia](do-not-localize/cq55_rte_spellchecker.png)
 
 Il correttore ortografico controllerà tutto il testo nel componente corrente.
 
@@ -240,15 +240,15 @@ Le tabelle sono disponibili sia:
 
 * Come **Tabella** componente
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+  ![Componente tabella](assets/chlimage_1-105.png)
 
 * Dall&#39;interno del **Testo** componente
 
-   ![](do-not-localize/chlimage_1-11.png)
+  ![Barra degli strumenti Testo](do-not-localize/chlimage_1-11.png)
 
-   >[!NOTE]
-   >
-   >Sebbene nell’editor Rich Text siano disponibili tabelle, si consiglia di utilizzare **Tabella** durante la creazione di tabelle.
+  >[!NOTE]
+  >
+  >Sebbene nell’editor Rich Text siano disponibili tabelle, si consiglia di utilizzare **Tabella** durante la creazione di tabelle.
 
 In entrambi i **Testo** e **Tabella** la funzionalità per la tabella dei componenti è disponibile tramite il menu di scelta rapida (in genere con il pulsante destro del mouse), facendo clic all’interno della tabella, ad esempio:
 
@@ -362,7 +362,6 @@ La creazione di una tabella nidificata creerà una nuova tabella indipendente al
 >* Windows IE: utilizzare Ctrl+pulsante principale del mouse-clic (in genere a sinistra) per selezionare più celle.
 >* Firefox: trascina il puntatore per selezionare un intervallo di celle.
 
-
 #### Rimuovi tabella {#remove-table}
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
@@ -371,7 +370,7 @@ Utilizza l’opzione per rimuovere la tabella dall’interno di **[!UICONTROL Te
 
 ### Caratteri speciali {#special-characters}
 
-![](do-not-localize/cq55_rte_specialchars.png)
+![Barra degli strumenti Caratteri speciali](do-not-localize/cq55_rte_specialchars.png)
 
 È possibile rendere disponibili caratteri speciali per l’editor Rich Text, che possono variare a seconda dell’installazione.
 
@@ -381,7 +380,7 @@ Utilizza il passaggio del mouse per visualizzare una versione ingrandita del car
 
 ### Modalità di modifica origine {#source-editing-mode}
 
-![](do-not-localize/cq55_rte_sourceedit.png)
+![Barra degli strumenti della modalità di modifica origine](do-not-localize/cq55_rte_sourceedit.png)
 
 La modalità di modifica della sorgente consente di visualizzare e modificare le HTML sottostanti del componente.
 

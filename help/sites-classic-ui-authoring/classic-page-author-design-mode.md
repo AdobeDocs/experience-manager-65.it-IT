@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -43,31 +43,31 @@ Ad esempio, il contenuto di una pagina di prodotto può contenere un sistema par
 
 In modalità Progettazione, la barra laterale viene ridotta a icona e puoi configurare i componenti accessibili per l’authoring:
 
-1. Per accedere alla modalità Progettazione, apri una pagina per la modifica e utilizza l’icona della barra laterale:
+1. Per accedere alla modalità Progettazione, apri una pagina per la modifica e utilizza l’icona del Sidekick:
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Modalità progettazione](do-not-localize/chlimage_1.png)
 
 1. Clic **Modifica** sul sistema Paragrafo (**Disegno della parte**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
-1. Viene aperta una finestra di dialogo in cui sono elencati i gruppi di componenti visualizzati nella barra laterale e i singoli componenti in essi contenuti.
+1. Viene aperta una finestra di dialogo in cui sono elencati i gruppi di componenti visualizzati nel Sidekick e i singoli componenti in essi contenuti.
 
    Seleziona questa opzione per aggiungere o rimuovere i componenti da rendere disponibili nella barra laterale.
 
    ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. La barra laterale consente di ridurre al minimo le dimensioni in modalità Progettazione. Facendo clic sulla freccia potete ingrandire la barra laterale e tornare alla modalità di modifica:
+1. Il Sidekick si riduce a icona in modalità Progettazione. Facendo clic sulla freccia è possibile ingrandire il Sidekick e tornare alla modalità di modifica:
 
-   ![](do-not-localize/sidekick-collapsed.png)
+   ![Sidekick ridotto a icona](do-not-localize/sidekick-collapsed.png)
 
 ## Configurazione della progettazione di un componente {#configuring-the-design-of-a-component}
 
 In modalità Progettazione è inoltre possibile configurare gli attributi per i singoli componenti. Ogni componente ha i propri parametri, l’esempio seguente mostra **Immagine** componente:
 
-1. Per accedere alla modalità Progettazione, apri una pagina per la modifica e utilizza l’icona della barra laterale:
+1. Per accedere alla modalità Progettazione, apri una pagina per la modifica e utilizza l’icona del Sidekick:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Modalità progettazione - Sidekick](do-not-localize/chlimage_1-1.png)
 
 1. Puoi configurare la progettazione dei componenti.
 
@@ -77,6 +77,6 @@ In modalità Progettazione è inoltre possibile configurare gli attributi per i 
 
 1. Clic **OK** per salvare le modifiche.
 
-1. La barra laterale consente di ridurre al minimo le dimensioni in modalità Progettazione. Facendo clic sulla freccia potete ingrandire la barra laterale e tornare alla modalità di modifica:
+1. Il Sidekick si riduce a icona in modalità Progettazione. Facendo clic sulla freccia è possibile ingrandire il Sidekick e tornare alla modalità di modifica:
 
-   ![](do-not-localize/sidekick-collapsed-1.png)
+   ![Sidekick ridotto a icona](do-not-localize/sidekick-collapsed-1.png)

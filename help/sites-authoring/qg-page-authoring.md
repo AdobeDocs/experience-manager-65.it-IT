@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1580'
 ht-degree: 53%
 
 ---
@@ -64,7 +64,6 @@ Prima di fornire una panoramica delle specifiche, ecco una piccola raccolta di s
 >* [Scelte rapide da tastiera durante la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 >
-
 
 ### Ricerca di una pagina {#finding-your-page}
 
@@ -119,6 +118,7 @@ La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
    * Sulla scheda compare un segno di spunta per indicare che è stata selezionata la pagina.
+
    >[!NOTE]
    >
    >Una volta nella modalità di selezione, **Seleziona** (un segno di spunta) verrà modificata in **Deseleziona** (croce).
@@ -154,8 +154,9 @@ Per modificare la pagina:
       * selezionando la scheda componenti (la [browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser))
       * trascinamento del componente richiesto sulla pagina.
 
-      Il pannello laterale può essere aperto (e chiuso) con:
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+     Il pannello laterale può essere aperto (e chiuso) con:
+
+     ![Apri pannello laterale](do-not-localize/screen_shot_2018-03-21at160738.png)
 
    * [Modificare il contenuto di un componente esistente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) sulla pagina:
 
@@ -163,18 +164,21 @@ Per modificare la pagina:
       * Apri l’editor locale per il componente toccando e tenendo premuto o facendo doppio clic con il tasto Slow. Verranno visualizzate le azioni disponibili (per alcuni componenti, la selezione sarà limitata).
       * Per visualizzare tutte le azioni disponibili, entra in modalità a schermo intero utilizzando:
 
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+     ![Modalità a tutto schermo](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurare le proprietà di un componente esistente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
       * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza il **Configura** (chiave inglese) per aprire la finestra di dialogo.
+
    * [Spostare un componente](/help/sites-authoring/editing-content.md#moving-a-component) oppure:
 
       * Trascina il componente richiesto nella nuova posizione.
       * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza le icone **Taglia** e quindi **Incolla** dove richiesto.
+
    * [Copiare (e incollare)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
       * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza le icone **Taglia** e quindi **Incolla** come richiesto.
+
    >[!NOTE]
    >
    >È possibile utilizzare **Incolla** per collocare i componenti sulla stessa pagina o su una pagina differente. Se si incolla un componente in una pagina che era già aperta prima dell’operazione Taglia o Copia, sarà necessario aggiornare la pagina.
@@ -182,15 +186,17 @@ Per modificare la pagina:
    * [Eliminare](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
       * Apri la barra degli strumenti del componente toccando o facendo clic, quindi utilizza l’icona **Elimina**.
+
    * [Aggiungere annotazioni](/help/sites-authoring/annotations.md#annotations) alla pagina:
 
       * Seleziona la modalità **Annota** (icona a forma di fumetto). Aggiungi le annotazioni utilizzando l’icona **Aggiungi annotazione** (segno più). Esci dalla modalità di annotazione utilizzando la X in alto a destra.
 
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+     ![Annotazioni](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Visualizzare l’anteprima di una pagina](/help/sites-authoring/editing-content.md#preview-mode) (per vedere come apparirà nell’ambiente di pubblicazione)
 
       * Seleziona **Anteprima** dalla barra degli strumenti.
+
    * Torna alla modalità di modifica (o seleziona un’altra modalità) utilizzando **Modifica** selettore a discesa.
 
    >[!NOTE]
@@ -209,17 +215,16 @@ Esistono due metodi (principali) di [modifica delle proprietà di pagina](/help/
       * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa appropriata.
       * La barra degli strumenti, se la [pagina è stata selezionata](#selectiingyourpageforfurtheraction).
 
-   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
+  ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
    1. Verranno visualizzate le proprietà di pagina. È possibile apportare le modifiche desiderate e poi selezionare Salva per applicarle
-
 
 * Quando [modifica della pagina](#editing-your-page-content):
 
    1. Apri **Informazioni pagina** menu.
    1. Seleziona **Apri proprietà** per aprire la finestra di dialogo per la modifica delle proprietà.
 
-   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
+  ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
 ### Pubblicazione della pagina (o annullamento della pubblicazione) {#publishing-your-page-or-unpublishing}
 
@@ -233,22 +238,22 @@ Esistono due metodi principali per [pubblicazione della pagina](/help/sites-auth
       * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa appropriata.
       * La barra degli strumenti, se la [pagina è stata selezionata](#selectiingyourpageforfurtheraction) (consente anche di accedere a [Pubblica più tardi](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
-   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
+  ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Quando [modifica della pagina](#editing-your-page-content):
 
    1. Apri **Informazioni pagina** menu.
    1. Seleziona **Pubblica pagina**.
 
-   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
+  ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * L’annullamento della pubblicazione di una pagina dalla console può essere eseguito solo tramite l’opzione **Gestisci pubblicazione**, disponibile solamente nella barra degli strumenti (non tramite le azioni rapide).
 
-   Il **Annulla pubblicazione pagina** è ancora disponibile tramite il **Informazioni pagina** nell’editor.
+  Il **Annulla pubblicazione pagina** è ancora disponibile tramite il **Informazioni pagina** nell’editor.
 
-   ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
+  ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
 
-   Consulta [Pubblicazione delle pagine](/help/sites-authoring/publishing-pages.md#unpublishing-pages) per ulteriori informazioni.
+  Consulta [Pubblicazione delle pagine](/help/sites-authoring/publishing-pages.md#unpublishing-pages) per ulteriori informazioni.
 
 ### Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina   {#move-copy-and-paste-or-delete-your-page}
 
@@ -265,12 +270,15 @@ Queste azioni possono essere tutte attivate da:
    * Copia:
 
       * Sarà poi necessario passare alla nuova posizione e incollare.
+
    * Sposta:
 
       * Verrà visualizzata la procedura guidata per la raccolta delle informazioni necessarie allo spostamento della pagina. Segui le istruzioni sullo schermo.
+
    * Elimina:
 
       * Viene richiesto di confermare l’operazione.
+
    >[!NOTE]
    >
    >Elimina non è disponibile come azione rapida.
@@ -330,6 +338,7 @@ Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto
    * **Ripristina questa versione**
 
       * La versione sarà ripristinata.
+
    * **Mostra differenze**
 
       * La pagina verrà aperta evidenziando le differenze (tra le due versioni).

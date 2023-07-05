@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 45%
+source-wordcount: '641'
+ht-degree: 46%
 
 ---
 
@@ -53,14 +53,13 @@ Per la creazione e la visualizzazione delle annotazioni viene utilizzata una [mo
 >* [Aggiunta di annotazioni alle risorse video](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
-
 ### Aggiunta di annotazioni a un componente {#annotating-a-component}
 
 La modalità Annota consente di creare, modificare, spostare o eliminare annotazioni nel contenuto:
 
 1. Puoi accedere alla modalità Annota utilizzando l’icona nella barra degli strumenti (in alto a destra) durante la modifica di una pagina:
 
-   ![](do-not-localize/screen_shot_2018-03-22at110414.png)
+   ![Annotazioni](do-not-localize/screen_shot_2018-03-22at110414.png)
 
    È ora possibile visualizzare tutte le annotazioni esistenti.
 
@@ -83,16 +82,17 @@ La modalità Annota consente di creare, modificare, spostare o eliminare annotaz
    * Inserisci il testo dell’annotazione.
    * Crea uno schizzo (linee e forme) per evidenziare un’area del componente.
 
-      Quando create uno sketch, il cursore si trasforma in un reticolo incrociato. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
-   ![](do-not-localize/screen_shot_2018-03-22at110640.png)
+     Quando create uno sketch, il cursore si trasforma in un reticolo incrociato. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
+
+     ![Schizzo](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Scegli o modifica il colore:
 
-   ![](do-not-localize/chlimage_1-19.png)
+     ![Scegli/cambia colore](do-not-localize/chlimage_1-19.png)
 
    * Elimina l’annotazione.
 
-   ![](do-not-localize/screen_shot_2018-03-22at110647.png)
+     ![Elimina annotazione](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Per chiudere la finestra di dialogo dell’annotazione, tocca o fai clic all’esterno della finestra di dialogo. Viene mostrata una vista troncata (la prima parola) dell’annotazione, insieme a eventuali schizzi:
 
@@ -103,12 +103,12 @@ La modalità Annota consente di creare, modificare, spostare o eliminare annotaz
    * Tocca o fai clic sul marcatore di testo per aprire l’annotazione. Una volta aperta l’annotazione, è possibile visualizzare il testo completo, apportare modifiche o eliminare l’annotazione.
 
       * Gli schizzi non possono essere eliminati indipendentemente dall’annotazione.
+
    * Riposiziona il marcatore di testo.
    * Tocca o fai clic su una linea di uno schizzo per selezionarlo e trascinarlo nella posizione desiderata.
    * Sposta o copia un componente.
 
       * Vengono spostate o copiate anche tutte le annotazioni e gli schizzi correlati e la loro posizione rispetto al paragrafo rimane invariata.
-
 
 1. Per uscire dalla modalità Annotazione e tornare alla modalità precedente, tocca o fai clic sull’icona Annota (simbolo x) a destra della barra degli strumenti superiore.
 

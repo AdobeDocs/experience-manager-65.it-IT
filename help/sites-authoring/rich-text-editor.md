@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '264'
 ht-degree: 51%
 
 ---
@@ -46,7 +46,7 @@ Questa barra degli strumenti contiene le opzioni seguenti:
 
 ## Modifica a tutto schermo {#full-screen-editing}
 
-Per i componenti basati su testo, tocca la modalità a tutto schermo nella barra degli strumenti ![](do-not-localize/screen_shot_2018-03-21at163236.png) apre l’editor Rich Text e nasconde il resto del contenuto della pagina.
+Per i componenti basati su testo, tocca la modalità a tutto schermo nella barra degli strumenti ![Modalità di modifica a schermo intero](do-not-localize/screen_shot_2018-03-21at163236.png) apre l’editor Rich Text e nasconde il resto del contenuto della pagina.
 
 In modalità a schermo intero vengono visualizzate tutte le opzioni configurate utilizzabili per l’authoring. La disponibilità è nelle opzioni [dipende dalla configurazione](/help/sites-administering/rich-text-editor.md).
 

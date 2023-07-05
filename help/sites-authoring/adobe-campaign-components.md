@@ -9,9 +9,9 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2839'
 ht-degree: 5%
 
 ---
@@ -85,7 +85,7 @@ Puoi caricare un’immagine, quindi modificarla e manipolarla (ad esempio ritagl
 
 Dopo che l’immagine è stata caricata (e non prima) puoi utilizzare [modifica diretta](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) per ritagliare/ruotare l&#39;immagine come richiesto:
 
-![](do-not-localize/chlimage_1-10.png)
+![Barra degli strumenti di modifica diretta](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Dopo che l’immagine è stata caricata (e non prima) puoi utilizzare [modifica 
 
 Nella modalità di modifica a schermo intero sono disponibili diverse opzioni aggiuntive, ad esempio mappa e zoom:
 
-![](do-not-localize/chlimage_1-11.png)
+![Modalità di modifica a schermo intero](do-not-localize/chlimage_1-11.png)
 
 Quando viene caricata un’immagine, puoi configurare quanto segue:
 
@@ -132,6 +132,7 @@ Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 >È necessario immettere le informazioni nel **Testo alternativo** campo in **Avanzate** o l’immagine non può essere salvata e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’esempio seguente mostra un componente Immagine (Campaign) visualizzato.
 
@@ -150,8 +151,7 @@ Didascalia del collegamento. Questo è il testo visualizzato dagli utenti.
 Aggiunge ulteriori informazioni sull&#39;utilizzo del collegamento.
 
 * **TipoCollegamento**
-Nell’elenco a discesa, seleziona tra 
-**URL personalizzato** e un **Documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
+Nell’elenco a discesa, seleziona tra **URL personalizzato** e un **Documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo**
 Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per aggiungere più elementi.
@@ -161,6 +161,7 @@ Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per a
 >È necessario immettere le informazioni nel **Tipo di collegamento** campo in **Informazioni URL** oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’esempio seguente mostra un componente Collega (Campagna) visualizzato.
 
@@ -196,11 +197,11 @@ Quando fai clic su per configurare il componente, selezioni Testo o Immagine.
 
 Selezione **Testo** visualizza un editor in linea:
 
-![](do-not-localize/chlimage_1-12.png)
+![Barra degli strumenti Testo](do-not-localize/chlimage_1-12.png)
 
 Selezione **Immagine** visualizza l&#39;editor locale per le immagini:
 
-![](do-not-localize/chlimage_1-13.png)
+![Barra degli strumenti Immagine](do-not-localize/chlimage_1-13.png)
 
 Consulta [Componente Immagine (Campaign)](#image-campaign) per ulteriori informazioni sull&#39;utilizzo delle immagini. Consulta [Componente Testo e personalizzazione (Campaign)](#text-personalization-campaign) per ulteriori informazioni sull&#39;utilizzo del testo.
 
@@ -234,6 +235,7 @@ Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 >Il **Testo alternativo** campo in **Avanzate** è richiesta una scheda oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’esempio seguente mostra un componente Testo e immagine (Campaign) visualizzato.
 
@@ -300,7 +302,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
   <tr>
    <td><p>Casella di selezione (Campaign)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>Non contattare più (tramite alcun canale)</p> </td>
+   <td><p>No contatto più lungo (tramite qualsiasi canale)</p> </td>
   </tr>
   <tr>
    <td><p>Campo data (Campaign)</p> <p>Campo data/HTML 5 (Campaign)</p> </td>

@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 0%
+source-wordcount: '666'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Per modificare il periodo di reporting di una pagina di approfondimento dei cont
 
 1. Se l’intervallo temporale non viene visualizzato nella parte superiore della pagina, tocca o fai clic sull’icona Attiva/Disattiva intervallo temporale.
 
-   ![](do-not-localize/chlimage_1-22.png)
+   ![Attiva/disattiva tempistica](do-not-localize/chlimage_1-22.png)
 
 1. Per modificare la data di inizio del periodo di reporting, trascinare il cerchio visualizzato sul lato sinistro dell&#39;area ombreggiata sulla data di inizio desiderata.
 
@@ -92,7 +92,7 @@ Per creare un&#39;attività per un consiglio SEO, attenersi alla procedura descr
 
 1. Tocca o fai clic sull’icona delle informazioni per il consiglio SEO (Search Engine Optimization).
 
-   ![](do-not-localize/chlimage_1-23.png)
+   ![Icona informazioni](do-not-localize/chlimage_1-23.png)
 
 1. Fare clic sull&#39;icona del triangolo racchiuso accanto all&#39;icona delle informazioni.
 

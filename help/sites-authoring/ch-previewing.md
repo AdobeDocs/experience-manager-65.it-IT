@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '369'
 ht-degree: 30%
 
 ---
@@ -42,7 +42,7 @@ La barra degli strumenti di ContextHub è disponibile in modalità Anteprima. La
 
 1. Per visualizzare la barra degli strumenti, fai clic o tocca l’icona di ContextHub.
 
-   ![](do-not-localize/screen_shot_2018-03-23at093621.png)
+   ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
 ## Funzioni del modulo interfaccia utente {#ui-module-features}
 
@@ -68,4 +68,4 @@ La sovrapposizione a comparsa di un modulo può includere elementi modulo che co
 
 Le sovrapposizioni a comparsa possono includere un&#39;icona su cui si tocca o si fa clic per espandere il contenuto a comparsa in modo da coprire l&#39;intera finestra o schermata del browser.
 
-![](do-not-localize/chlimage_1-18.png)
+![Schermo intero](do-not-localize/chlimage_1-18.png)
