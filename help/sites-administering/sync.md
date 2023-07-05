@@ -40,7 +40,7 @@ I dati utente, insieme ai relativi [ACL](/help/sites-administering/security.md),
 
 Rispetto alla replica tradizionale, la sincronizzazione degli utenti con la distribuzione Sling offre i seguenti vantaggi:
 
-* *utenti*, *profili utente* e *gruppi di utenti* creati al momento della pubblicazione non vengono creati all’autore
+* *utenti*, *profili utente* e *gruppi di utenti* create al momento della pubblicazione non vengono create nell’ambiente di authoring
 
 * La distribuzione Sling imposta le proprietà negli eventi JCR, consentendo di agire all’interno dei listener di eventi lato pubblicazione senza preoccuparsi di cicli di replica infiniti
 * La distribuzione Sling invia solo i dati utente alle istanze di pubblicazione non originarie, eliminando il traffico non necessario
