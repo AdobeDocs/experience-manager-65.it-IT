@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '2575'
-ht-degree: 2%
+source-wordcount: '2583'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,6 @@ Questa pagina consente di estendere le funzionalità del gestore multisito:
 >* [Configurazioni blueprint per Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
 >* [Configurazioni di rollout di Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
-
 >[!CAUTION]
 >
 >Multi Site Manager e la relativa API vengono utilizzati per la creazione di un sito web, quindi sono destinati solo all’ambiente di authoring.
@@ -50,13 +49,13 @@ La gestione multisito è costituita dai seguenti pacchetti:
 
 I principali oggetti API MSM interagiscono come segue (vedi anche [Termini utilizzati](/help/sites-administering/msm.md#terms-used)):
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![Oggetti API MSM principali](assets/chlimage_1-73.png)
 
 * **`Blueprint`**
 
-   A `Blueprint` (come in [configurazione blueprint](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) specifica le pagine da cui una live copy può ereditare il contenuto.
+  A `Blueprint` (come in [configurazione blueprint](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) specifica le pagine da cui una live copy può ereditare il contenuto.
 
-   ![chlimage_1-74](assets/chlimage_1-74.png)
+  ![Blueprint](assets/chlimage_1-74.png)
 
    * Utilizzo di una configurazione blueprint ( `Blueprint`) è facoltativo, ma:
 
@@ -66,7 +65,7 @@ I principali oggetti API MSM interagiscono come segue (vedi anche [Termini utili
 
 * **`LiveRelationship`**
 
-   Il `LiveRelationship` specifica la connessione (relazione) tra una risorsa nel ramo live copy e la relativa risorsa sorgente/blueprint equivalente.
+  Il `LiveRelationship` specifica la connessione (relazione) tra una risorsa nel ramo live copy e la relativa risorsa sorgente/blueprint equivalente.
 
    * Le relazioni vengono utilizzate per la realizzazione dell’ereditarietà e del rollout.
    * `LiveRelationship` Gli oggetti forniscono accesso (riferimenti) alle configurazioni di rollout ( `RolloutConfig`), `LiveCopy`, e `LiveStatus` oggetti correlati alla relazione.
@@ -75,7 +74,7 @@ I principali oggetti API MSM interagiscono come segue (vedi anche [Termini utili
 
 * **`LiveCopy`**
 
-   `LiveCopy` contiene i dettagli di configurazione per le relazioni ( `LiveRelationship`) tra le risorse live copy e le relative risorse sorgente/blueprint.
+  `LiveCopy` contiene i dettagli di configurazione per le relazioni ( `LiveRelationship`) tra le risorse live copy e le relative risorse sorgente/blueprint.
 
    * Utilizza il `LiveCopy` classe per accedere al percorso della pagina, al percorso della pagina sorgente/blueprint, alle configurazioni di rollout e se le pagine figlie sono incluse anche nel `LiveCopy`.
 
@@ -83,21 +82,21 @@ I principali oggetti API MSM interagiscono come segue (vedi anche [Termini utili
 
 * **`LiveStatus`**
 
-   `LiveStatus` gli oggetti forniscono accesso allo stato di runtime di un `LiveRelationship`. Utilizza per eseguire una query sullo stato di sincronizzazione di una Live Copy.
+  `LiveStatus` gli oggetti forniscono accesso allo stato di runtime di un `LiveRelationship`. Utilizza per eseguire una query sullo stato di sincronizzazione di una Live Copy.
 
 * **`LiveAction`**
 
-   A `LiveAction` è un’azione eseguita su ogni risorsa coinvolta nel rollout.
+  A `LiveAction` è un’azione eseguita su ogni risorsa coinvolta nel rollout.
 
    * Le LiveActions vengono generate solo da RolloutConfigs.
 
 * **`LiveActionFactory`**
 
-   Crea `LiveAction` oggetti a cui è stato assegnato un `LiveAction` configurazione. Le configurazioni vengono memorizzate come risorse nell’archivio.
+  Crea `LiveAction` oggetti a cui è stato assegnato un `LiveAction` configurazione. Le configurazioni vengono memorizzate come risorse nell’archivio.
 
 * **`RolloutConfig`**
 
-   Il `RolloutConfig` contiene un elenco di `LiveActions`, da utilizzare quando viene attivato. Il `LiveCopy` eredita il `RolloutConfig` e il risultato è presente nel `LiveRelationship`.
+  Il `RolloutConfig` contiene un elenco di `LiveActions`, da utilizzare quando viene attivato. Il `LiveCopy` eredita il `RolloutConfig` e il risultato è presente nel `LiveRelationship`.
 
    * Quando si imposta una Live Copy per la prima volta, viene utilizzato anche un RolloutConfig (che attiva le LiveActions).
 
@@ -105,8 +104,8 @@ I principali oggetti API MSM interagiscono come segue (vedi anche [Termini utili
 
 Crea azioni di sincronizzazione personalizzate da utilizzare con le configurazioni di rollout. Creare un&#39;azione di sincronizzazione quando [azioni installate](/help/sites-administering/msm-sync.md#installed-synchronization-actions) non soddisfano i requisiti specifici dell&#39;applicazione. A tale scopo, crea due classi:
 
-* Un&#39;implementazione del [ `com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) che esegue l&#39;azione.
-* Un componente OSGI che implementa [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) e crea istanze della `LiveAction` classe.
+* Un&#39;implementazione del [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) che esegue l&#39;azione.
+* Un componente OSGI che implementa [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) e crea istanze della `LiveAction` classe.
 
 Il `LiveActionFactory` crea istanze del `LiveAction` classe per una determinata configurazione:
 
@@ -147,9 +146,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 I seguenti oggetti vengono forniti come parametri del `execute` metodo del `LiveAction` oggetto:
 
-* A [ `Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) oggetto che rappresenta l’origine della Live Copy.
+* A [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) oggetto che rappresenta l’origine della Live Copy.
 * A `Resource` oggetto che rappresenta la destinazione della Live Copy.
-* Il [ `LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) oggetto per la live copy.
+* Il [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) oggetto per la live copy.
 * Il `autoSave` il valore indica se il `LiveAction` deve salvare le modifiche apportate all’archivio.
 
 * Il valore reset indica la modalità di rollout reset.
@@ -166,7 +165,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->Il `Resource` possono essere `null` o `Resources` oggetti che non si adattano `Node` oggetti, come [ `NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) oggetti.
+>Il `Resource` possono essere `null` o `Resources` oggetti che non si adattano `Node` oggetti, come [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) oggetti.
 
 ## Creazione di una nuova configurazione di rollout {#creating-a-new-rollout-configuration}
 
@@ -205,7 +204,6 @@ Per creare una nuova configurazione di rollout:
    >* Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
    >* Apporta le modifiche in `/apps`
 
-
 1. Sotto questo **Crea** un nodo con le seguenti proprietà:
 
    * **Nome**: nome del nodo della configurazione di rollout. md#install-synchronization-actions), ad esempio `contentCopy` o `workflow`.
@@ -213,17 +211,14 @@ Per creare una nuova configurazione di rollout:
 
 1. Aggiungi le seguenti proprietà a questo nodo:
    * **Nome**: `jcr:title`
-
-      **Tipo**: `String`
-      **Valore**: titolo che verrà visualizzato nell’interfaccia utente di.
+     **Tipo**: `String`
+     **Valore**: titolo che verrà visualizzato nell’interfaccia utente di.
    * **Nome**: `jcr:description`
-
-      **Tipo**: `String`
-      **Valore**: descrizione facoltativa.
+     **Tipo**: `String`
+     **Valore**: descrizione facoltativa.
    * **Nome**: `cq:trigger`
-
-      **Tipo**: `String`
-      **Valore**: Il [Attivatore rollout](/help/sites-administering/msm-sync.md#rollout-triggers) da utilizzare. Seleziona da:
+     **Tipo**: `String`
+     **Valore**: Il [Attivatore rollout](/help/sites-administering/msm-sync.md#rollout-triggers) da utilizzare. Seleziona da:
       * `rollout`
       * `modification`
       * `publish`
@@ -639,7 +634,7 @@ L&#39;elenco delle lingue è memorizzato sotto `/libs/wcm/core/resources/languag
 * Il `country` del nodo memorizza il nome completo del paese per il codice.
 * Quando il nome del nodo è costituito solo da un codice della lingua (ad esempio `en`), la proprietà country è `*`, e un&#39;ulteriore `defaultCountry` La proprietà memorizza il codice della lingua-paese per indicare il paese da utilizzare.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![Definizione lingua](assets/chlimage_1-76.png)
 
 Per modificare le lingue:
 
@@ -648,7 +643,7 @@ Per modificare le lingue:
 
    Denomina la nuova cartella `wcm`.
 
-1. Ripeti il passaggio precedente per creare `/apps/wcm/core` struttura di cartelle. Creare un nodo di tipo `sling:Folder` in `core` ha chiamato `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
+1. Ripeti il passaggio precedente per creare `/apps/wcm/core` struttura di cartelle. Creare un nodo di tipo `sling:Folder` in `core` ha chiamato `resources`. <!-- ![Resources](assets/chlimage_1-77.png) -->
 
 1. Fare clic con il pulsante destro del mouse `/libs/wcm/core/resources/languages` e fai clic su **Copia**.
 1. Fare clic con il pulsante destro del mouse `/apps/wcm/core/resources` cartella e fai clic su **Incolla**. Modificare i nodi figlio come richiesto.
@@ -656,7 +651,7 @@ Per modificare le lingue:
 1. Clic **Strumenti**, **Operazioni** allora **Console web**. Da questa console fai clic su **OSGi**, quindi **Configurazione**.
 1. Individua e fai clic su **Gestione lingua WCM Day CQ** e modificare il valore di **Elenco lingue** a `/apps/wcm/core/resources/languages`, quindi fai clic su **Salva**.
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![Gestione lingua WCM Day CQ](assets/chlimage_1-78.png)
 
 ## Configurazione dei blocchi MSM nelle proprietà della pagina (interfaccia touch) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
@@ -693,7 +688,7 @@ Se una proprietà di pagina è soggetta a rollout e quindi, in caso di annullame
       * **Tipo**: `String`
 
       * **Valore**: detiene il nome della proprietà in questione (ed è paragonabile al valore della proprietà) `name`; ad esempio, vedi
-         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+        `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Quando `cq-msm-lockable` è stato definito, la rottura/chiusura della catena interagirà con MSM nel modo seguente:
 
@@ -702,12 +697,12 @@ Quando `cq-msm-lockable` è stato definito, la rottura/chiusura della catena int
    * **Relativo** (ad es. `myProperty` o `./myProperty`)
 
       * aggiungerà e rimuoverà la proprietà da `cq:propertyInheritanceCancelled`.
+
    * **Assoluto** (ad es. `/image`)
 
       * interrompendo la catena, l’ereditarietà verrà annullata aggiungendo il `cq:LiveSyncCancelled` mixin a `./image` e l&#39;impostazione `cq:isCancelledForChildren` a `true`.
 
       * la chiusura della catena ripristina l’ereditarietà.
-
 
 >[!NOTE]
 >

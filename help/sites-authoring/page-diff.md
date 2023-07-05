@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 47%
+source-wordcount: '578'
+ht-degree: 46%
 
 ---
 
@@ -52,7 +52,7 @@ Ad esempio, se si confrontano le versioni, la versione corrente viene visualizza
 
 L’origine di entrambe le pagine viene visualizzata in modo chiaro nella barra dell’intestazione nella parte superiore della finestra del browser.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![Origine mostrata nell’intestazione](assets/chlimage_1-109.png)
 
 La differenza rileva le modifiche a livello di componente e HTML. Gli elementi che sono stati modificati vengono evidenziati con colori diversi.
 
@@ -78,7 +78,7 @@ Per concentrarti su un contenuto particolare, fai clic sull’icona schermo inte
 
 Il lato selezionato occupa l’intera finestra, ma nella parte superiore rimane visualizzata la barra che consente di alternare tra le due pagine.
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![La barra in alto consente di passare da una pagina all’altra](assets/chlimage_1-110.png)
 
 Per chiudere la visualizzazione a schermo intero, fai clic sull’icona per uscire dalla modalità a tutto schermo.
 

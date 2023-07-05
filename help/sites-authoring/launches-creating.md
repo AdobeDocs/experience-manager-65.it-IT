@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 48%
+source-wordcount: '1040'
+ht-degree: 46%
 
 ---
 
@@ -41,6 +41,7 @@ Puoi creare un lancio dalla console Sites o Launches:
    * **Lanci**:
 
       1. Seleziona **Crea lancio** dalla barra degli strumenti per aprire la procedura guidata.
+
    * **Sites**:
 
       1. Seleziona **Crea** nella barra degli strumenti per aprire la casella di selezione.
@@ -59,7 +60,7 @@ Puoi creare un lancio dalla console Sites o Launches:
 
    Ripeti in base alle esigenze.  
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Seleziona sorgente e aggiungi pagine](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
@@ -77,7 +78,7 @@ Puoi creare un lancio dalla console Sites o Launches:
 
    Procedi con **Successivo**.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![Specificare se includere le pagine](assets/chlimage_1-226.png)
 
 1. Nel passaggio **Proprietà** della procedura guidata puoi specificare:
 
@@ -86,11 +87,11 @@ Puoi creare un lancio dalla console Sites o Launches:
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
    * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Con questa opzione il lancio diventa un [live copy](/help/sites-administering/msm.md).
 
-      Per impostazione predefinita, questa opzione è selezionata.
+     Per impostazione predefinita, questa opzione è selezionata.
 
    * **Data lancio**: la data e l&#39;ora in cui la copia del lancio deve essere attivata (in base alla segnalazione **Produzione pronta**; consulta [Lanci: l&#39;ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![Specificare le proprietà](assets/chlimage_1-227.png)
 
 1. Utilizzare **Crea** per completare il processo e creare il nuovo lancio. Viene visualizzata una finestra di dialogo di conferma in cui viene richiesto se desideri aprire immediatamente il lancio.
 
@@ -101,22 +102,20 @@ Puoi creare un lancio dalla console Sites o Launches:
 
 ### Creare un lancio con un nuovo modello {#create-launch-with-new-template}
 
-Quando [creazione di un lancio](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) puoi scegliere se utilizzare un nuovo modello:
-
-**con un nuovo modello per sostituire la pagina**
+Quando [creazione di un lancio](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) puoi scegliere se utilizzare un nuovo modello con l’opzione: **utilizzo di un nuovo modello per sostituire la pagina**
 
 >[!CAUTION]
 >
 >Questa opzione è disponibile solo quando crei un lancio dalla console **Sites**. Non è disponibile quando crei un lancio dalla console **Lanci**.
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![Utilizza un nuovo modello per sostituire la pagina](assets/chlimage_1-228.png)
 
 Quando selezioni questa opzione:
 
 * aggiornare le altre opzioni disponibili,
 * includi un nuovo passaggio in cui puoi selezionare il modello richiesto.
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![Seleziona modello](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
@@ -139,11 +138,11 @@ La creazione di un lancio nidificato dalla console **Lanci** è molto simile all
 1. Nella console **Lanci** seleziona **Crea**.
 1. Fai clic su **Aggiungi pagine**, quindi specifica `/content/launches` nel filtro per individuare il ramo lanci. Scegli il lancio necessario e conferma con **Seleziona**:
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![Seleziona lancio](assets/chlimage_1-230.png)
 
 1. Procedi con **Successivo** e completare **Proprietà** come con qualsiasi altro lancio.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![Specificare le proprietà](assets/chlimage_1-231.png)
 
 #### Creazione di un lancio nidificato: console Sites {#creating-a-nested-launch-sites-console}
 

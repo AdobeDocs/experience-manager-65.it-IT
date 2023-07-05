@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '2702'
 ht-degree: 28%
 
 ---
@@ -322,7 +322,7 @@ Per impostazione predefinita, sono escluse diverse proprietà e tipi di nodo, de
 
 Per impostazione predefinita, le proprietà che corrispondono alle seguenti espressioni regolari sono escluse (ovvero non aggiornate) al momento del rollout:
 
-![chlimage_1](assets/chlimage_1.png)
+![CQ MSM Content Update Action](assets/chlimage_1.png)
 
 Puoi modificare le espressioni che definiscono l’elenco di esclusione secondo le tue esigenze.
 
@@ -384,7 +384,7 @@ Puoi anche configurare le configurazioni di rollout per una pagina Live Copy qua
 
    La sezione **Configurazione** mostra le configurazioni di rollout ereditate dalla pagina.
 
-   ![chlimage_1-1](assets/chlimage_1-1.png)
+   ![Configurazione](assets/chlimage_1-1.png)
 
 1. Se necessario, regola il flag **Ereditarietà Live Copy**. Se selezionato, la configurazione della Live Copy ha effetto su tutti gli elementi secondari.
 
@@ -392,7 +392,7 @@ Puoi anche configurare le configurazioni di rollout per una pagina Live Copy qua
 
    Le configurazioni di rollout selezionate vengono visualizzate sotto l’elenco a discesa.
 
-   ![chlimage_1-2](assets/chlimage_1-2.png)
+   ![Configurazioni di rollout selezionate](assets/chlimage_1-2.png)
 
 1. Tocca o fai clic su **Salva**.
 
@@ -413,8 +413,7 @@ Le pagine figlie della pagina blueprint ereditano la configurazione. Quando conf
 Specifica una configurazione di rollout da utilizzare come impostazione predefinita del sistema. Per specificare il valore predefinito, configura il servizio OSGi:
 
 * **Day CQ WCM Live Relationship Manager**
-il PID del servizio è 
-`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+il PID del servizio è `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configurare il servizio utilizzando [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un [nodo archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 

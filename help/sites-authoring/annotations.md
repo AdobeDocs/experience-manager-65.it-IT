@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 46%
+source-wordcount: '642'
+ht-degree: 45%
 
 ---
 
@@ -120,4 +120,4 @@ La modalità Annota consente di creare, modificare, spostare o eliminare annotaz
 
 Le annotazioni non vengono visualizzate in modalità Modifica, ma il contrassegno in alto a destra della barra degli strumenti mostra il numero di annotazioni esistenti per la pagina corrente. Il contrassegno sostituisce l’icona Annotazioni predefinita, ma continua a fungere da collegamento rapido per attivare o disattivare la modalità Annota:
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![Indicatore delle annotazioni](assets/chlimage_1-242.png)

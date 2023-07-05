@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 25%
+source-wordcount: '540'
+ht-degree: 32%
 
 ---
 
@@ -34,7 +34,7 @@ L’ambiente di authoring fornisce i meccanismi per creare, aggiornare e riveder
 * Un autore crea e rivede il contenuto (che può essere di diversi tipi; ad esempio pagine, risorse, pubblicazioni, ecc.)
 * che, a un certo punto, sarà pubblicato sul tuo sito web.
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![Panoramica degli ambienti](assets/chlimage_1-132.png)
 
 Nell’ambiente di authoring le funzionalità dell’AEM sono rese disponibili tramite due interfacce utente. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
 
@@ -44,9 +44,9 @@ L’autore utilizza il cosiddetto **ambiente di authoring**, che fornisce un’i
 
 >[!NOTE]
 >
->Il tuo account necessita dei diritti di accesso appropriati per creare, modificare o pubblicare contenuti.
+>Per creare, modificare o pubblicare contenuti, il tuo account deve disporre dei diritti di accesso appropriati.
 
-A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui:
+A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui (tra le altre):
 
 * generare nuovo contenuto o modificare contenuto esistente in una pagina
 * utilizzare modelli predefiniti per creare nuove pagine di contenuto
@@ -79,15 +79,14 @@ Quando il sito AEM è [sito community](/help/communities/overview.md), o include
 >Sfortunatamente a volte c&#39;è una sovrapposizione nella terminologia utilizzata. Ciò può accadere con:
 >
 >* **Pubblicare/Annullare la pubblicazione**
-   >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
 >* **Attivare/Disattivare**
-   >  Sinonimi di pubblicare/annullare la pubblicazione.
+>  Sinonimi di pubblicare/annullare la pubblicazione.
 >
 >* **Replicare/Replica**
-   >  Questi sono i termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
+>  Questi sono i termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
 >
-
 
 #### Dispatcher {#dispatcher}
 

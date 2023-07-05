@@ -10,10 +10,10 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 26%
+source-wordcount: '773'
+ht-degree: 25%
 
 ---
 
@@ -48,7 +48,6 @@ ht-degree: 26%
 >* [Lanci: l’ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per maggiori dettagli sulla promozione e la pubblicazione automatiche.
 >
 
-
 Puoi promuovere i lanci da **Sites** console o **Lanci** console:
 
 1. Apri:
@@ -60,17 +59,18 @@ Puoi promuovere i lanci da **Sites** console o **Lanci** console:
       1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
       1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
       1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
+
    * il **Lanci** console:
 
       1. Seleziona il lancio (tocca o fai clic sulla miniatura).
       1. Seleziona **Promuovi**.
-
 
 1. Nel primo passaggio puoi specificare:
 
    * **Destinazione**
 
       * **Elimina lancio dopo la promozione**
+
    * **Ambito**
 
       * **Promuovi tutto il lancio**
@@ -89,7 +89,7 @@ Puoi promuovere i lanci da **Sites** console o **Lanci** console:
 1. Seleziona **Successivo** per procedere.
 1. Puoi rivedere le pagine da promuovere, a seconda dell’intervallo di pagine scelto:
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![Pagine di revisione da promuovere](assets/chlimage_1-102.png)
 
 1. Seleziona **Promuovi**.
 
@@ -97,7 +97,7 @@ Puoi promuovere i lanci da **Sites** console o **Lanci** console:
 
 Quando modifichi una pagina di lancio, il **Promuovi lancio** L&#39;azione è disponibile anche da **Informazioni pagina**. Si aprirà la procedura guidata per raccogliere le informazioni necessarie.
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![Promuovi lancio](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Quando modifichi una pagina di lancio, il **Promuovi lancio** L&#39;azione è di
 
 Dopo aver creato un lancio nidificato, puoi promuoverlo nuovamente in qualsiasi origine, inclusa la sorgente principale (produzione).
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![Panoramica della promozione di un lancio nidificato](assets/chlimage_1-104.png)
 
 1. Come con [Creazione di un lancio nidificato](#creatinganestedlaunchlaunchwithinalaunch), accedi e seleziona il lancio richiesto nel **Lanci** console o **Riferimenti** barra.
 1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
@@ -121,6 +121,7 @@ Puoi promuovere su qualsiasi sorgente.
 
       * **Elimina lancio dopo la promozione**
 Dopo la promozione, il lancio selezionato e tutti i lanci nidificati al suo interno verranno eliminati.
+
    * **Ambito**
 Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono state modificate. In quest’ultimo caso, puoi selezionare di includere/escludere le sottopagine. La configurazione predefinita prevede di promuovere solo le modifiche alla pagina corrente:
 
@@ -129,12 +130,12 @@ Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono sta
       * **Promuovi la pagina corrente**
       * **Promuovi la pagina corrente e le sottopagine**
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![Impostazioni per la promozione di un lancio](assets/chlimage_1-105.png)
 
 1. Seleziona **Avanti**.
 1. Rivedi i dettagli della promozione prima di selezionare **Promuovi**:
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![Rivedi dettagli e Promuovi](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >
@@ -142,7 +143,7 @@ Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono sta
 
 1. Le modifiche verranno promosse e riflesse in **Lanci** console:
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![Console Launches](assets/chlimage_1-107.png)
 
 ## Elaborazione di pagine promosse tramite Flusso di lavoro AEM {#processing-promoted-pages-using-aem-workflow}
 
@@ -156,4 +157,4 @@ Per avviare automaticamente un flusso di lavoro quando le pagine vengono promoss
 
 Ad esempio, puoi generare automaticamente le richieste di attivazione pagina non appena un autore promuove una pagina di lancio. Configura un modulo di avvio del flusso di lavoro per avviare il flusso di lavoro Attivazione richiesta quando viene modificato il nodo del pacchetto.
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![Modulo di avvio flusso di lavoro](assets/chlimage_1-108.png)

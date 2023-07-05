@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 36%
+source-wordcount: '846'
+ht-degree: 35%
 
 ---
 
@@ -53,7 +53,7 @@ I lanci consentono di:
 
       * Le pagine sorgente possono essere ricavate da più rami (separati).
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+  ![Panoramica delle azioni di lancio](assets/chlimage_1-111.png)
 
 * Modifica la configurazione del lancio:
 
@@ -67,32 +67,32 @@ I lanci consentono di:
       * Promuovi il contenuto del lancio in **Target** (pagine sorgente) quando è pronto per la pubblicazione.
       * Pubblica il contenuto dalle pagine sorgente (dopo la promozione).
       * Promuovi tutte le pagine o solo le pagine modificate.
+
    * Automaticamente - questo implica le seguenti attività:
 
       * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
 
       * Il **Produzione pronta** flag: può essere impostato solo durante la modifica di un lancio.
       * Se il **Produzione pronta** è impostato, il lancio verrà promosso automaticamente alle pagine di produzione nella **Launch**(**Live**) **data**. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
-         Se la data non è stata impostata, il flag non ha alcun effetto.
-
+        Se la data non è stata impostata, il flag non ha alcun effetto.
 
 * Aggiorna parallelamente la pagina sorgente e la pagina di lancio:
 
    * Le modifiche apportate alle pagine sorgenti vengono automaticamente implementate nella copia lancio (se impostate con ereditarietà; ovvero come Live Copy).
    * Le modifiche apportate alla copia di lancio possono essere effettuate senza interrompere gli aggiornamenti automatici o le pagine sorgenti.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+  ![Panoramica degli aggiornamenti](assets/chlimage_1-112.png)
 
 * [Creare un lancio nidificato](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - un lancio all’interno di un lancio:
 
    * L’origine è un lancio esistente.
    * È possibile [promuovere un lancio nidificato](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) a qualsiasi destinazione; può trattarsi di un lancio principale o delle pagine sorgente di livello superiore (Produzione).
 
-   ![chlimage_1-113](assets/chlimage_1-113.png)
+  ![Panoramica del lancio nidificato](assets/chlimage_1-113.png)
 
-   >[!CAUTION]
-   >
-   >L’eliminazione del lancio rimuove il lancio stesso e tutti i lanci nidificati discendenti.
+  >[!CAUTION]
+  >
+  >L’eliminazione del lancio rimuove il lancio stesso e tutti i lanci nidificati discendenti.
 
 >[!NOTE]
 >
@@ -121,8 +121,8 @@ La console Lanci fornisce una panoramica dei lanci e consente di eseguire azioni
 1. Apri **Riferimenti** e seleziona la pagina sorgente.
 1. Seleziona **Lanci**, verranno elencati i lanci esistenti:
 
-   ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
+   ![Scheda Riferimento - Lanci](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Tocca o fai clic sul lancio appropriato per visualizzare l&#39;elenco delle azioni possibili:
 
-   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Seleziona lancio per mostrare le azioni possibili](assets/screen-shot_2019-03-05at121952-1.png)

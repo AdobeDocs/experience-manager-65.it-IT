@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 37%
+source-wordcount: '553'
+ht-degree: 34%
 
 ---
 
@@ -44,7 +44,7 @@ La **Panoramica Live Copy** può essere aperto dal pannello laterale **Riferimen
 1. Nella console **Sites**, [passa alla pagina blueprint e selezionala](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Apri **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** e seleziona **Live Copy**.
 
-   ![chlimage_1-359](assets/chlimage_1-359.png)
+   ![Pannello Riferimenti - Live Copy](assets/chlimage_1-359.png)
 
    >[!NOTE]
    >
@@ -60,7 +60,7 @@ La **Panoramica Live Copy** può essere aperta quando si visualizzano le proprie
 1. Apri **Proprietà** per la pagina blueprint appropriata.
 1. Apri la scheda **Blueprint**: l’opzione **Panoramica Live Copy** è disponibile nella barra degli strumenti superiore:
 
-   ![chlimage_1-360](assets/chlimage_1-360.png)
+   ![Scheda Blueprint - Panoramica Live Copy](assets/chlimage_1-360.png)
 
 1. Seleziona **Panoramica Live Copy** per mostrare e utilizzare la panoramica di tutte le live copy relative alla blueprint corrente.
 
@@ -81,7 +81,7 @@ Il **Panoramica Live Copy** può essere utilizzato anche per eseguire azioni sul
 
 Quando selezioni una pagina blueprint, sono disponibili le seguenti azioni:
 
-![chlimage_1-361](assets/chlimage_1-361.png)
+![Blueprint selezionata - azioni disponibili](assets/chlimage_1-361.png)
 
 * Modifica
 
@@ -95,7 +95,7 @@ Quando selezioni una pagina blueprint, sono disponibili le seguenti azioni:
 
 Quando selezioni una pagina Live Copy, sono disponibili le seguenti azioni:
 
-![chlimage_1-362](assets/chlimage_1-362.png)
+![Pagina Live Copy selezionata - azioni disponibili](assets/chlimage_1-362.png)
 
 * Modifica
 
@@ -136,10 +136,10 @@ La console **Stato relazione** dispone di due schede che forniscono una serie di
 
 Questa scheda fornisce informazioni dettagliate sullo stato della relazione tra blueprint e Live Copy:
 
-![chlimage_1-363](assets/chlimage_1-363.png)
+![Informazioni sullo stato della relazione](assets/chlimage_1-363.png)
 
 ### Informazioni Live Copy {#live-copy-information}
 
 Questa scheda ti consente di visualizzare e modificare la configurazione della Live Copy:
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![Informazioni Live Copy](assets/chlimage_1-364.png)

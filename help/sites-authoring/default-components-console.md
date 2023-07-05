@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '263'
 ht-degree: 55%
 
 ---
@@ -42,35 +42,37 @@ Per visualizzare i dettagli di un componente specifico, tocca o fai clic sulla r
 
 * **Proprietà**
 
-   ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
+  ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
 
-   Nella scheda Proprietà puoi:
+  Nella scheda Proprietà puoi:
 
    * Visualizzare le proprietà generali del componente.
    * Visualizza come [è stata definita un&#39;icona o un&#39;abbreviazione](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
 
       * Facendo clic sull’origine dell’icona si aprirà quel componente.
+
    * Visualizza **Tipo di risorsa** e **Super Type risorsa** (se definito) per il componente.
 
       * Facendo clic sul Super Type della risorsa si aprirà quel componente.
-   >[!NOTE]
-   >
-   >Poiché `/apps` non è modificabile in fase di esecuzione, la console Componenti è disponibile in sola lettura.
+
+  >[!NOTE]
+  >
+  >Poiché `/apps` non è modificabile in fase di esecuzione, la console Componenti è disponibile in sola lettura.
 
 * **Criteri**
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+  ![Criteri](assets/chlimage_1-169.png)
 
 * **Utilizzo live**
 
-   ![chlimage_1-170](assets/chlimage_1-170.png)
+  ![Utilizzo live](assets/chlimage_1-170.png)
 
-   >[!CAUTION]
-   >
-   >A causa della natura delle informazioni raccolte, può essere necessario qualche momento per combinarle e visualizzarle.
+  >[!CAUTION]
+  >
+  >A causa della natura delle informazioni raccolte, può essere necessario qualche momento per combinarle e visualizzarle.
 
 * **Documentazione**
 
-   Se lo sviluppatore ha fornito [documentazione del componente](/help/sites-developing/developing-components.md#documenting-your-component), apparirà sulla **Documentazione** scheda. Se la documentazione non è disponibile, la scheda **Documentazione** non verrà visualizzata.
+  Se lo sviluppatore ha fornito [documentazione del componente](/help/sites-developing/developing-components.md#documenting-your-component), apparirà sulla **Documentazione** scheda. Se la documentazione non è disponibile, la scheda **Documentazione** non verrà visualizzata.
 
-   ![chlimage_1-171](assets/chlimage_1-171.png)
+  ![Documentazione](assets/chlimage_1-171.png).
