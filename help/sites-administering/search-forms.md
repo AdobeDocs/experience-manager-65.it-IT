@@ -6,12 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1a3e0f90bbe133a7b0fc383b997e69b10ca82478
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2067'
 ht-degree: 12%
 
 ---
+
 
 # Configurazione dei moduli di ricerca{#configuring-search-forms}
 
@@ -29,7 +30,7 @@ A [intervallo di predicato](#predicates-and-their-settings)s sono disponibili co
 
 La prima volta che accedi a questa console puoi vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione appropriata è quella predefinita (predefinita) e non può essere eliminata. Dopo aver personalizzato la configurazione, il blocco scompare, a meno che non si [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default), nel qual caso vengono ripristinati il valore predefinito (e l’indicatore del lucchetto).
 
-![chlimage_1-374](assets/chlimage_1-374.png)
+![Finestra Cerca moduli](assets/chlimage_1-374.png)
 
 ## Configurazioni {#configurations}
 
@@ -37,63 +38,63 @@ Le configurazioni predefinite disponibili sono:
 
 * **Editor pagina (ricerca documenti):**
 
-   Questa configurazione definisce le opzioni disponibili durante la ricerca di un documento nel browser Risorse (quando si modifica una pagina).
+  Questa configurazione definisce le opzioni disponibili durante la ricerca di un documento nel browser Risorse (quando si modifica una pagina).
 
 * **Editor pagina (ricerca immagini):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di immagini nel browser Risorse (quando si modifica una pagina).
+  Questa configurazione definisce le opzioni disponibili per la ricerca di immagini nel browser Risorse (quando si modifica una pagina).
 
 * **Editor pagina (ricerca manoscritto):**
 
-   Questa configurazione definisce le opzioni disponibili per la ricerca di manoscritti nel browser Risorse (quando si modifica una pagina).
+  Questa configurazione definisce le opzioni disponibili per la ricerca di manoscritti nel browser Risorse (quando si modifica una pagina).
 
 * **Editor pagina (ricerca pagine):**
 
-   Questa configurazione definisce le opzioni disponibili durante la ricerca di pagine nel browser Risorse (durante la modifica di una pagina).
+  Questa configurazione definisce le opzioni disponibili durante la ricerca di pagine nel browser Risorse (durante la modifica di una pagina).
 
 * **Editor pagina (ricerca paragrafi):**
 
-   Questa configurazione definisce le opzioni disponibili durante la ricerca di paragrafi nel browser Risorse (quando si modifica una pagina).
+  Questa configurazione definisce le opzioni disponibili durante la ricerca di paragrafi nel browser Risorse (quando si modifica una pagina).
 
 * **Editor pagina (ricerca prodotti):**
 
-   Questa configurazione definisce le opzioni disponibili durante la ricerca di prodotti nel browser Risorse (durante la modifica di una pagina).
+  Questa configurazione definisce le opzioni disponibili durante la ricerca di prodotti nel browser Risorse (durante la modifica di una pagina).
 
 * **Editor pagina (Dynamic Media Classic) [precedentemente Scene7] search)**:
 
-   Questa configurazione definisce le opzioni disponibili durante la ricerca di risorse Scene7 nel browser Risorse (durante la modifica di una pagina).
+  Questa configurazione definisce le opzioni disponibili durante la ricerca di risorse Scene7 nel browser Risorse (durante la modifica di una pagina).
 
 * **Barra di ricerca amministrazione sito**:
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando utilizza la barra di ricerca della console Sites.
+  Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando utilizza la barra di ricerca della console Sites.
 
 * **Editor pagina (ricerca video):**
 
-   Questa configurazione definisce le opzioni disponibili durante la ricerca di video nel browser Risorse (quando si modifica una pagina).
+  Questa configurazione definisce le opzioni disponibili durante la ricerca di video nel browser Risorse (quando si modifica una pagina).
 
 * **Barra di ricerca amministrazione risorse:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando utilizza la console Assets.
+  Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando utilizza la console Assets.
 
 * **Barra di ricerca amministrazione progetti:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca in un catalogo di e-commerce.
+  Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca in un catalogo di e-commerce.
 
 * **Barra di ricerca amministrazione ordini:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca di ordini commerce.
+  Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca di ordini commerce.
 
 * **Barra di ricerca amministrazione raccolte prodotti:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca nelle raccolte di prodotti commerce.
+  Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca nelle raccolte di prodotti commerce.
 
 * **Barra di ricerca amministrazione prodotti:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca di prodotti commerce.
+  Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca di prodotti commerce.
 
 * **Barra di ricerca amministrazione progetti:**
 
-   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca nei progetti.
+  Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca nei progetti.
 
 ## Predicati e relative impostazioni {#predicates-and-their-settings}
 
@@ -329,11 +330,11 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
 >[!NOTE]
 >
 >* I predicati di ricerca comuni sono definiti in:
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* I predicati di ricerca relativi solo a siteadmin (interfaccia classica) si trovano in:
-   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
-   >   * Sono obsoleti e disponibili solo per compatibilità con le versioni precedenti.
+>  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>   * Sono obsoleti e disponibili solo per compatibilità con le versioni precedenti.
 >
 >Queste informazioni sono solo a scopo di riferimento, non è necessario apportare modifiche a `/libs`.
 
@@ -343,47 +344,46 @@ A seconda del predicato, è disponibile una selezione di impostazioni per la con
 
 * **Etichetta campo**
 
-   L’etichetta che verrà visualizzata come intestazione comprimibile o come etichetta del campo del predicato.
+  L’etichetta che verrà visualizzata come intestazione comprimibile o come etichetta del campo del predicato.
 
 * **Descrizione**
 
-   Dettagli descrittivi per l’utente.
+  Dettagli descrittivi per l’utente.
 
 * **Segnaposto**
 
-   Testo vuoto o il segnaposto del predicato se non viene immesso testo filtrante.
+  Testo vuoto o il segnaposto del predicato se non viene immesso testo filtrante.
 
 * **Nome proprietà**
 
-   Proprietà su cui eseguire la ricerca. Utilizza un percorso relativo e i caratteri jolly `*/*/*` specifica la profondità della proprietà relativa al `jcr:content` (ogni asterisco rappresenta un livello di nodo).
+  Proprietà su cui eseguire la ricerca. Utilizza un percorso relativo e i caratteri jolly `*/*/*` specifica la profondità della proprietà relativa al `jcr:content` (ogni asterisco rappresenta un livello di nodo).
 
-   Se desideri eseguire la ricerca solo su un nodo figlio di primo livello della risorsa che ha `x` proprietà sul `jcr:content` utilizzo del nodo `*/jcr:content/x`
+  Se desideri eseguire la ricerca solo su un nodo figlio di primo livello della risorsa che ha `x` proprietà sul `jcr:content` utilizzo del nodo `*/jcr:content/x`
 
 * **Profondità proprietà**
 
-   Profondità massima per la ricerca di tale proprietà nelle risorse. Quindi una ricerca su quella proprietà può essere eseguita su una risorsa e su elementi figlio ricorsivi fino a quando il livello degli elementi figlio non è uguale alla profondità specificata.
+  Profondità massima per la ricerca di tale proprietà nelle risorse. Quindi una ricerca su quella proprietà può essere eseguita su una risorsa e su elementi figlio ricorsivi fino a quando il livello degli elementi figlio non è uguale alla profondità specificata.
 
 * **Valore proprietà**
 
-   Il valore della proprietà come stringa assoluta o come linguaggio di espressione; ad esempio, `cq:Page` o
+  Il valore della proprietà come stringa assoluta o come linguaggio di espressione; ad esempio, `cq:Page` o
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Testo intervallo**
 
-   Etichetta del campo intervallo nel **Intervallo date** predicato.
+  Etichetta del campo intervallo nel **Intervallo date** predicato.
 
 * **Percorso opzione**
 
-   L’utente può selezionare il percorso utilizzando Browser percorsi nella scheda Impostazione predicati. Dopo aver selezionato **+** viene utilizzata per aggiungere la selezione all’elenco delle opzioni valide (quindi **-** da rimuovere se necessario).
+  L’utente può selezionare il percorso utilizzando Browser percorsi nella scheda Impostazione predicati. Dopo aver selezionato **+** viene utilizzata per aggiungere la selezione all’elenco delle opzioni valide (quindi **-** da rimuovere se necessario).
 
-   Le opzioni sono nodi di contenuto creati dall’utente con la seguente struttura:
+  Le opzioni sono nodi di contenuto creati dall’utente con la seguente struttura:
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Percorso nodo opzioni**
-Effettivamente uguale al 
-**Percorso opzioni**, solo questo campo si trova nel predicato comune, l’altro è specifico per le risorse.
+Effettivamente uguale al **Percorso opzioni**, solo questo campo si trova nel predicato comune, l’altro è specifico per le risorse.
 
 * **Selezione singola**
 Se questa opzione è selezionata, le opzioni vengono visualizzate come caselle di controllo che consentono una sola selezione. Se selezionata per errore, è possibile deselezionare una casella di controllo.
@@ -411,7 +411,6 @@ Le etichette per le caselle di controllo di pubblicazione e Live Copy per il pre
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### Aggiungere/modificare un campo predicato e definire le impostazioni dei campi {#add-edit-a-predicate-field-and-define-field-settings}
 
 Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
@@ -419,20 +418,21 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 1. [Apri la configurazione personalizzata](#creating-opening-a-customized-configuration) per l&#39;aggiornamento.
 1. Per aggiungere un nuovo campo, aprire **Seleziona predicato** e trascina il predicato richiesto nella posizione desiderata. Ad esempio, il **Predicato intervallo di date**:
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![Modifica di un modulo di ricerca](assets/chlimage_1-375.png)
 
 1. A seconda che:
 
    * Stai aggiungendo un nuovo campo:
 
-      Dopo l’aggiunta del predicato, **Impostazioni** viene aperta e vengono visualizzate le proprietà che possono essere definite.
+     Dopo l’aggiunta del predicato, **Impostazioni** viene aperta e vengono visualizzate le proprietà che possono essere definite.
 
    * Desideri aggiornare un predicato esistente:
 
-      Seleziona il campo predicato (a destra), quindi apri il **Impostazioni** scheda.
+     Seleziona il campo predicato (a destra), quindi apri il **Impostazioni** scheda.
+
    Ad esempio, le impostazioni per **Predicato intervallo di date**:
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![Proprietà per predicato intervallo di date](assets/chlimage_1-376.png)
 
 1. Apporta le modifiche necessarie e conferma con **Fine**.
 
@@ -440,11 +440,11 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 
 1. Seleziona l’icona Anteprima:
 
-   ![](do-not-localize/chlimage_1-31.png)
+   ![Icona Anteprima](do-not-localize/chlimage_1-31.png)
 
 1. In questo modo i moduli di ricerca verranno visualizzati così come saranno visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.
 
-   ![chlimage_1-377](assets/chlimage_1-377.png)
+   ![Anteprima del modulo di ricerca](assets/chlimage_1-377.png)
 
 1. **Chiudi** l’anteprima per restituire e completare la configurazione.
 
@@ -453,7 +453,7 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 1. [Apri la configurazione personalizzata](#creating-opening-a-customized-configuration) per l&#39;aggiornamento.
 1. Seleziona il campo predicato (a destra), apri la **Impostazioni** e quindi selezionare la scheda **Elimina** in basso a sinistra.
 
-   ![](do-not-localize/chlimage_1-32.png)
+   ![Icona Elimina](do-not-localize/chlimage_1-32.png)
 
 1. Una finestra di dialogo richiede la conferma dell’azione di eliminazione.
 
@@ -471,7 +471,7 @@ L’eliminazione di una configurazione personalizzata viene eseguita dalla conso
 
 1. Seleziona la configurazione richiesta (ad esempio, **Editor pagina (ricerca paragrafi)**) e quindi il **Elimina** nella barra degli strumenti:
 
-   ![chlimage_1-378](assets/chlimage_1-378.png)
+   ![Eliminazione di un modulo](assets/chlimage_1-378.png)
 
 1. La configurazione personalizzata verrà eliminata e verrà ripristinata la configurazione predefinita (indicata dalla ricomparsa del simbolo del lucchetto nella console).
 
@@ -490,7 +490,7 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
    * `jcr:title` : l’etichetta del campo da visualizzare nella barra di ricerca
    * `value` : il valore della proprietà in cui eseguire la ricerca
 
-   ![chlimage_1-379](assets/chlimage_1-379.png)
+   ![Aggiunta di opzioni in CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,6 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Apporta le modifiche in `/apps.`
 
-
 1. Apri **Cerca in Forms** e selezionare la configurazione da aggiornare. Ad esempio: **Barra di ricerca amministrazione siti**.
 
    Quindi tocca o fai clic sul pulsante **Modifica moduli di ricerca** icona.
@@ -514,21 +513,22 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
 
    * **Nome proprietà**
 
-      Specifica la proprietà del nodo da cercare sui nodi di destinazione. Ad esempio:
+     Specifica la proprietà del nodo da cercare sui nodi di destinazione. Ad esempio:
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **Percorso nodo opzione**
 
-      Seleziona il percorso in cui si trovano le opzioni. Ad esempio:
+     Seleziona il percorso in cui si trovano le opzioni. Ad esempio:
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
-   ![chlimage_1-380](assets/chlimage_1-380.png)
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
+   ![Aggiunta del percorso proprietà](assets/chlimage_1-380.png)
 
 1. Seleziona **Fine** per salvare la configurazione.
 1. Passa alla console appropriata (in questo esempio, **Sites**) e aprire la **Ricerca** barra. Saranno visibili i nuovi moduli di ricerca definiti e le varie opzioni. Seleziona l’opzione desiderata per visualizzare i risultati della ricerca:
 
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![I risultati finali](assets/chlimage_1-381.png)
 
 ## Autorizzazioni utente {#user-permissions}
 

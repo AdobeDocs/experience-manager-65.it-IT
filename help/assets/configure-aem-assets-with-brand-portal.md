@@ -13,12 +13,13 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 14988b55c21131391fdcb033373774ee170f5305
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2124'
 ht-degree: 11%
 
 ---
+
 
 # Configurare AEM Assets con Brand Portal {#configure-integration-65}
 
@@ -103,6 +104,7 @@ La configurazione di AEM Assets con Brand Portal richiede configurazioni sia nel
 >Un’istanza Autore AEM Assets deve essere configurata con un solo tenant Brand Portal.
 
 Se stai configurando AEM Assets con Brand Portal per la prima volta, effettua le seguenti operazioni nella sequenza elencata:
+
 1. [Recuperare il certificato pubblico](#public-certificate)
 1. [Creare la connessione dell’account di servizio (JWT)](#createnewintegration)
 1. [Configurare l’account IMS](#create-ims-account-configuration)
@@ -274,7 +276,7 @@ Per configurare l’account IMS, effettua le seguenti operazioni.
 
    Clic **[!UICONTROL Verifica]** nella finestra di dialogo. Una volta completata la configurazione, viene visualizzato un messaggio che informa che *Token recuperato correttamente*.
 
-   ![](assets/create-new-integration5.png)
+   ![Finestra di conferma configurazione integra](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
@@ -298,7 +300,7 @@ Per configurare il servizio cloud Brand Portal, effettua le seguenti operazioni:
 
    In **[!UICONTROL URL servizio]** , specifica l’URL del tenant Brand Portal (organizzazione).
 
-   ![](assets/create-cloud-service.png)
+   ![Finestra Configurazione Brand Portal](assets/create-cloud-service.png)
 
 1. Fai clic su **[!UICONTROL Salva e chiudi]**. Viene creata la configurazione cloud.
 
@@ -312,17 +314,17 @@ Per convalidare la configurazione, effettua le seguenti operazioni:
 
 1. Dalla sezione **Strumenti** ![Strumenti](assets/do-not-localize/tools.png) , passa a **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]**.
 
-   ![](assets/test-integration1.png)
+   ![Pannello Strumenti](assets/test-integration1.png)
 
 1. Nella pagina Replica, fai clic su **[!UICONTROL Agenti per creazione]**.
 
-   ![](assets/test-integration2.png)
+   ![Pagina di replica](assets/test-integration2.png)
 
    Puoi vedere i quattro agenti di replica creati per il tenant Brand Portal.
 
    Individua gli agenti di replica del tenant Brand Portal e fai clic sull’URL dell’agente di replica.
 
-   ![](assets/test-integration3.png)
+   ![Configurazione della replica delle risorse](assets/test-integration3.png)
 
    >[!NOTE]
    >
@@ -330,11 +332,11 @@ Per convalidare la configurazione, effettua le seguenti operazioni:
 
 1. Per verificare la connessione tra AEM Assets e Brand Portal, fai clic sul pulsante **[!UICONTROL Verifica connessione]** icona.
 
-   ![](assets/test-integration4.png)
+   ![Verifica delle impostazioni di replica delle risorse](assets/test-integration4.png)
 
    Viene visualizzato un messaggio che informa che *il pacchetto di prova è stato consegnato correttamente*.
 
-   ![](assets/test-integration5.png)
+   ![Output di conferma del test](assets/test-integration5.png)
 
 1. Verifica i risultati del test per tutti e quattro gli agenti di replica.
 
@@ -362,6 +364,7 @@ Consulta [Documentazione di Brand Portal](https://experienceleague.adobe.com/doc
 ## Configurazione aggiornamento {#upgrade-integration-65}
 
 Per aggiornare le configurazioni esistenti alla console Adobe Developer, effettua le seguenti operazioni nella sequenza elencata:
+
 1. [Verificare i processi in esecuzione](#verify-jobs)
 1. [Elimina configurazioni esistenti](#delete-existing-configuration)
 1. [Creare la configurazione](#configure-new-integration-65)
@@ -376,13 +379,13 @@ Prima di apportare qualsiasi modifica, assicurati di non eseguire alcun processo
 
 1. Nella pagina Replica, fai clic su **[!UICONTROL Agenti per creazione]**.
 
-   ![](assets/test-integration2.png)
+   ![Agenti di replica per le risorse](assets/test-integration2.png)
 
 1. Individua gli agenti di replica del tenant Brand Portal.
 
    Assicurati che **La coda è inattiva** per tutti gli agenti di replica, nessun processo di pubblicazione è attivo.
 
-   ![](assets/test-integration3.png)
+   ![Impostazioni coda di replica](assets/test-integration3.png)
 
 ### Elimina configurazioni esistenti {#delete-existing-configuration}
 
@@ -395,15 +398,15 @@ Durante l’eliminazione delle configurazioni esistenti, devi eseguire il seguen
 
 1. Accedi a `/etc/replications/agents.author` ed elimina tutti e quattro gli agenti di replica del tenant Brand Portal.
 
-   ![](assets/delete-replication-agent.png)
+   ![Agente di replica in CRXDE](assets/delete-replication-agent.png)
 
 1. Accedi a `/etc/cloudservices/mediaportal` ed elimina la configurazione del servizio cloud Brand Portal.
 
-   ![](assets/delete-cloud-service.png)
+   ![Dettagli dell’agente di replica in CRXDE](assets/delete-cloud-service.png)
 
 1. Accedi a `/home/users/mac` ed elimina **Utente Mac** del tuo tenant Brand Portal.
 
-   ![](assets/delete-mac-user.png)
+   ![Maggiori dettagli dell’agente di replica in CRXDE](assets/delete-mac-user.png)
 
 
 Ora puoi [crea configurazione](#configure-new-integration-65) tramite la console Adobe Developer nell’istanza di authoring AEM 6.5.

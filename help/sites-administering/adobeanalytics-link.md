@@ -10,12 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
+
 
 # Configurazione del tracciamento dei collegamenti per Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
@@ -28,7 +29,7 @@ Quando gli utenti fanno clic sui collegamenti nelle pagine del sito web, è poss
 1. Utilizzo di **Mostra configurazioni**, apri il framework Adobe Analytics richiesto.
 1. Espandi **Configurazione tracciamento collegamenti** e configura come richiesto (questa pagina fornisce ulteriori dettagli):
 
-   ![aa-08](assets/aa-08.png)
+   ![Framework di analisi](assets/aa-08.png)
 
 ## Tracciamento dei download di file {#tracking-file-downloads}
 
@@ -48,7 +49,7 @@ Per impostazione predefinita, viene tenuta traccia dei download dei seguenti tip
 * pdf
 * xls
 
-Ad esempio, con il tracciamento dei download abilitato per i file PDF, ogni volta che gli utenti fanno clic su collegamenti a file PDF, viene tracciato il download del PDF.
+Ad esempio, con il tracciamento del download abilitato per i file PDF, ogni volta che gli utenti fanno clic su collegamenti a file PDF, viene tracciato il download del PDF.
 
 Le proprietà di tracciamento del download del framework sono implementate come codice nel `analytics.sitecatalyst.js` file generato per una pagina. Il seguente codice di esempio rappresenta la configurazione predefinita di tracciamento del download:
 
@@ -80,19 +81,19 @@ Abilita il tracciamento dei collegamenti esterni.
 * **Filtri esterni**
 (Facoltativo) Definisce i filtri per la corrispondenza agli URL esterni delle destinazioni dei collegamenti. Quando le destinazioni dei collegamenti corrispondono al filtro, il collegamento viene tracciato. I filtri esterni sono utili per tenere traccia solo di alcuni collegamenti esterni sulle pagine.
 
-   Per specificare i collegamenti esterni di cui tenere traccia, digitare tutto o parte dell&#39;URL della destinazione del collegamento. Separa più filtri con una virgola. Racchiudere i valori letterali stringa tra virgolette singole. Nessun valore (il valore predefinito di `''`, due virgolette singole) tiene traccia di tutti i collegamenti esterni.
+  Per specificare i collegamenti esterni di cui tenere traccia, digitare tutto o parte dell&#39;URL della destinazione del collegamento. Separa più filtri con una virgola. Racchiudere i valori letterali stringa tra virgolette singole. Nessun valore (il valore predefinito di `''`, due virgolette singole) tiene traccia di tutti i collegamenti esterni.
 
 * **Filtri interni**
 Definisce i filtri per la corrispondenza con gli URL dei collegamenti interni. Quando il collegamento è destinato a URL che corrispondono a questo filtro, il collegamento non viene tracciato. Il valore predefinito è un comando javascript che restituisce il nome host dell&#39;URL per l&#39;indirizzo della finestra corrente.
 
-   Per specificare i collegamenti interni non tracciati, digita tutto o parte dell’URL interno della destinazione del collegamento. Separa più filtri con una virgola. Racchiudere i valori letterali stringa tra virgolette singole.
+  Per specificare i collegamenti interni non tracciati, digita tutto o parte dell’URL interno della destinazione del collegamento. Separa più filtri con una virgola. Racchiudere i valori letterali stringa tra virgolette singole.
 
-   Il valore predefinito è `'javascript:,'+window.location.hostname`
+  Il valore predefinito è `'javascript:,'+window.location.hostname`
 
 * **Lascia stringa di query**
 Include i parametri URL durante la valutazione delle corrispondenze con filtri interni ed esterni.
 
-   Abilita questa opzione per includere i parametri URL durante la valutazione degli URL di destinazione del collegamento rispetto ai filtri esterni e interni.
+  Abilita questa opzione per includere i parametri URL durante la valutazione degli URL di destinazione del collegamento rispetto ai filtri esterni e interni.
 
 Le proprietà di tracciamento dei collegamenti esterni sono implementate come codice nel `analytics.sitecatalyst.js` file generato per una pagina. Il seguente codice di esempio viene generato per una pagina associata a un framework che ha abilitato il tracciamento dei collegamenti esterni con la seguente configurazione:
 
@@ -123,14 +124,14 @@ Proprietà per l’invio di dati variabili con clic sui collegamenti:
 * **Link Track Events**
 Immetti le variabili evento Adobe Analytics da utilizzare per il conteggio dei clic sui collegamenti.
 
-   Separa più nomi di variabili con una virgola.
+  Separa più nomi di variabili con una virgola.
 
-   Il valore predefinito di `None` non causa il tracciamento degli eventi.
+  Il valore predefinito di `None` non causa il tracciamento degli eventi.
 
 * **Variabili di tracciamento collegamenti**
 Immetti le variabili Adobe Analytics da inviare ad Adobe Analytics quando fai clic sui collegamenti. Separa più nomi di variabili con una virgola.
 
-   Il valore predefinito di `None` non invia dati di variabili.
+  Il valore predefinito di `None` non invia dati di variabili.
 
 Quando specifichi gli eventi e le variabili da inviare, la configurazione viene implementata come codice nel `analytics.sitecatalyst.js` file generato per una pagina. Il codice di esempio seguente viene generato per una pagina quando il framework tiene traccia del `event10` evento e `prop4` proprietà:
 
@@ -148,7 +149,7 @@ Per esplorare il comportamento di tracciamento dei collegamenti dell’integrazi
 Questo esempio illustra il funzionamento della mappatura nel contesto del tracciamento e del debugger:
 
 1. Apri il framework che è stato associato a una pagina web.
-1. Trascina **Pagina** componente nell&#39;area mappature del framework. Il **Pagina** il componente appartiene al **Generale** gruppo di componenti nella barra laterale.
+1. Trascina **Pagina** componente nell&#39;area mappature del framework. Il **Pagina** il componente appartiene al **Generale** nel Sidekick.
 
    >[!NOTE]
    >
@@ -178,7 +179,7 @@ Questo esempio illustra il funzionamento della mappatura nel contesto del tracci
  </tbody>
 </table>
 
-1. Trascina il componente Ricerca nell’area delle mappature del framework. Il componente Ricerca appartiene al gruppo di componenti Generale nella barra laterale. Configura la mappatura in base alla tabella seguente, trascinando la variabile Analytics (SiteCatalyst) dal pannello laterale sinistro:
+1. Trascina il componente Ricerca nell’area delle mappature del framework. Il componente Ricerca appartiene al gruppo di componenti Generale nel Sidekick. Configura la mappatura in base alla tabella seguente, trascinando la variabile Analytics (SiteCatalyst) dal pannello laterale sinistro:
 
 <table>
  <tbody>
@@ -236,7 +237,7 @@ Questo esempio illustra il funzionamento della mappatura nel contesto del tracci
 
 La chiamata effettuata sarà simile alla seguente quando viene visualizzata con Adobe Marketing Cloud Debugger:
 
-![aa-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
+![Adobe Marketing Cloud Debugger](assets/aa-leavequerysearch-blank.png)
 
 >[!NOTE]
 >
@@ -250,7 +251,7 @@ La chiamata effettuata sarà simile alla seguente quando viene visualizzata con 
 
 I dettagli delle chiamate visualizzati in Adobe Marketing Cloud Debugger sono simili a quelli del seguente esempio:
 
-![aa-leavequerysearch-active](assets/aa-leavequerysearch-active.png)
+![Adobe Marketing Cloud Debugger](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
@@ -323,7 +324,7 @@ Per configurare il tracciamento dei collegamenti per un **Testo** componente:
 
 1. Selezionare il testo da utilizzare come ipertesto e fare clic sul pulsante Collegamento ipertestuale.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Icona collegamento](do-not-localize/chlimage_1.png)
 
 1. Aggiungi l’URL di destinazione nella casella Collega a, quindi espandi l’area Tracciamento collegamenti.
 
@@ -333,7 +334,7 @@ Per configurare il tracciamento dei collegamenti per un **Testo** componente:
    >
    >L’opzione sarà attivata solo dopo aver selezionato un collegamento valido nell’editor Rich Text.
 
-   ![aa-17](assets/aa-17.png)
+   ![Abilitazione del tracciamento dei collegamenti](assets/aa-17.png)
 
 1. Abilita **Tracciamento personalizzato dei collegamenti** per ignorare la configurazione di tracciamento dei collegamenti del framework Adobe Analytics e per abilitare il tracciamento dei collegamenti per il collegamento corrente.
 

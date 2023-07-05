@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
+
 
 # Console classica per l’assegnazione di tag dell’interfaccia utente{#classic-ui-tagging-console}
 
@@ -30,7 +31,7 @@ Per accedere alla console di assegnazione tag dell’interfaccia classica:
 * accedi con privilegi amministrativi
 * ad esempio, passa alla console, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
-![](assets/managing_tags_usingthetagasministrationconsole.png)
+![Finestra della console classica](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ## Creazione di tag e spazi dei nomi {#creating-tags-and-namespaces}
 
@@ -38,33 +39,29 @@ Per accedere alla console di assegnazione tag dell’interfaccia classica:
 
    Se si seleziona **Tag** puoi creare uno spazio dei nomi:
 
-   ![](assets/creating_tags_andnamespaces.png)
+   ![Creazione di una finestra di dialogo dello spazio dei nomi](assets/creating_tags_andnamespaces.png)
 
    Se selezioni uno spazio dei nomi (ad esempio **Demo**) puoi creare un tag all’interno di tale spazio dei nomi:
 
-   ![](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![Creazione di una finestra di dialogo di tag](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. In entrambi i casi immettere:
 
    * **Titolo**
-(
-*Obbligatorio*) Titolo da visualizzare per il tag. È possibile immettere qualsiasi carattere, ma si consiglia di non utilizzare i seguenti caratteri speciali:
+(*Obbligatorio*) Titolo da visualizzare per il tag. È possibile immettere qualsiasi carattere, ma si consiglia di non utilizzare i seguenti caratteri speciali:
 
       * `colon (:)` - delimitatore dello spazio dei nomi
       * `forward slash (/)` - delimitatore di tag secondari
 
-      Questi caratteri non vengono visualizzati se vengono immessi.
+     Questi caratteri non vengono visualizzati se vengono immessi.
 
    * **Nome**
-(
-*Obbligatorio*) Nome del nodo del tag.
+(*Obbligatorio*) Nome del nodo del tag.
 
    * **Descrizione**
-(
-*Facoltativo*) Descrizione del tag.
+(*Facoltativo*) Descrizione del tag.
 
    * seleziona **Crea**
-
 
 ## Modifica dei tag {#editing-tags}
 
@@ -90,7 +87,7 @@ Per accedere alla console di assegnazione tag dell’interfaccia classica:
 
 **Elenco** apre una nuova finestra che mostra i percorsi di tutte le pagine che utilizzano il tag evidenziato:
 
-![](assets/list_showing_wheretagsarereferenced.png)
+![Ricerca di riferimenti ai tag](assets/list_showing_wheretagsarereferenced.png)
 
 ## Spostamento dei tag {#moving-tags}
 
@@ -107,7 +104,7 @@ Per aiutare gli amministratori e gli sviluppatori di tag a ripulire la tassonomi
 
 Il **Sposta tag** viene visualizzata come segue:
 
-![](assets/move_tag.png)
+![Spostamento di un tag](assets/move_tag.png)
 
 >[!NOTE]
 >
@@ -129,7 +126,7 @@ Per unire un tag in un altro:
 
 Il **Unisci tag** viene visualizzata come segue:
 
-![](assets/mergetag.png)
+![Unione di un tag](assets/mergetag.png)
 
 ## Conteggio dell’utilizzo dei tag {#counting-usage-of-tags}
 
@@ -158,7 +155,7 @@ La procedura seguente illustra come tradurre il `title`del tag **Animali** in in
 
 La finestra di dialogo si presenta come segue:
 
-![](assets/edit_tag.png)
+![Modifica di un tag](assets/edit_tag.png)
 
 La console Assegnazione tag utilizza l’impostazione della lingua utente, quindi per il tag Animal viene visualizzato &quot;Animaux&quot; per un utente che imposta la lingua sul francese nelle proprietà dell’utente.
 
@@ -175,11 +172,11 @@ Per impostazione predefinita, il tag `titles`nella pagina, le proprietà vengono
 
    Seleziona la **Animali** (**Animaux**) e seleziona all’esterno della finestra di dialogo per chiuderla e aggiungere il tag alle proprietà della pagina.
 
-   ![](assets/french_tag.png)
+   ![Modifica di un altro tag](assets/french_tag.png)
 
 Per impostazione predefinita, nella finestra di dialogo Proprietà pagina viene visualizzato il tag `titles`in base alla lingua della pagina.
 
-In generale, la lingua del tag viene presa dalla lingua della pagina se questa è disponibile. Quando [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) viene utilizzato in altri casi (ad esempio nei moduli o nelle finestre di dialogo), il linguaggio dei tag dipende dal contesto.
+In generale, la lingua del tag viene presa dalla lingua della pagina se questa è disponibile. Quando [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) viene utilizzato in altri casi (ad esempio nei moduli o nelle finestre di dialogo), il linguaggio dei tag dipende dal contesto.
 
 >[!NOTE]
 >

@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1250'
 ht-degree: 2%
 
 ---
+
 
 # Gestione identità{#identity-management}
 
@@ -61,11 +62,11 @@ A [modulo](/help/sites-authoring/default-components.md#form-component) può esse
 Gli utenti possono, ad esempio, richiedere un nuovo profilo utilizzando la pagina Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![modulo di registrazione](assets/registerform.png)
+![Modulo di registrazione di esempio](assets/registerform.png)
 
 Quando si invia la richiesta, viene visualizzata la pagina del profilo in cui l’utente può fornire i dati personali.
 
-![profilepage](assets/profilepage.png)
+![Pagina profilo di esempio](assets/profilepage.png)
 
 Il nuovo account è visibile anche nel [Console Utenti](/help/sites-administering/security.md).
 
@@ -79,7 +80,7 @@ Ad esempio, gli utenti possono effettuare l’accesso o creare un nuovo account 
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![accesso](assets/login.png)
+![Pagina di accesso di esempio](assets/login.png)
 
 ## Disconnessione {#logging-out}
 
@@ -106,13 +107,13 @@ Per visualizzare i dettagli del profilo, fai clic su **Il mio profilo** nell’a
 1. Premi **control-alt-C** per aprire il contesto client.
 1. Nell’angolo in alto a sinistra del contesto client, fai clic su **Caricare un profilo** pulsante.
 
-   ![Pulsante Carica profilo](do-not-localize/loadprofile.png)
+   ![Caricare un’icona di profilo](do-not-localize/loadprofile.png)
 
 1. Seleziona un altro profilo dall’elenco a discesa nella finestra di dialogo; ad esempio, **Alison Parker**.
 1. Fai clic su **OK**.
 1. Fai di nuovo clic su **Il mio profilo**. Il modulo verrà aggiornato con i dettagli di Alison.
 
-   ![profilealison](assets/profilealison.png)
+   ![Profilo di esempio di Alison](assets/profilealison.png)
 
 1. Ora puoi utilizzare **Modifica profilo** o **Cambia password** per aggiornare i dettagli.
 
@@ -136,11 +137,11 @@ Puoi aggiungere campi alla definizione del profilo. Ad esempio, per aggiungere u
 
    La prossima volta che visualizzi un profilo puoi selezionare un colore preferito:
 
-   ![aparkerfavcolor](assets/aparkerfavcolour.png)
+   ![Campo campione colore preferito di Alison Parker](assets/aparkerfavcolour.png)
 
    Il campo verrà salvato in **profilo** sezione dell’account utente pertinente:
 
-   ![aparkercrxdelite](assets/aparkercrxdelite.png)
+   ![Dati di Alison Parker in CRXDE](assets/aparkercrxdelite.png)
 
 ## Stati del profilo {#profile-states}
 
@@ -188,7 +189,7 @@ I profili vengono memorizzati nel repository dei contenuti come parte del[accoun
 
 Il profilo si trova in `/home/users/geometrixx`:
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![Profili come visualizzati in CRXDE](assets/chlimage_1-138.png)
 
 In un’installazione standard (authoring o pubblicazione) tutti hanno accesso in lettura all’intera serie di informazioni di profilo di tutti gli utenti. tutti sono un &quot;*Gruppo incorporato contenente automaticamente tutti gli utenti e i gruppi esistenti. Impossibile modificare l&#39;elenco dei membri*&quot;.
 
@@ -205,7 +206,7 @@ Se tale accesso non è appropriato per l&#39;installazione in uso, è possibile 
 
 Questa operazione può essere eseguita utilizzando **[Controllo dell’accesso](/help/sites-administering/user-group-ac-admin.md#access-right-management)** scheda:
 
-![aclmanager](assets/aclmanager.png)
+![Gestione degli ACL in CRXDE](assets/aclmanager.png)
 
 ## Componenti del profilo {#profile-components}
 
@@ -220,22 +221,22 @@ Questo componente offre due campi per:
 
 Con le impostazioni predefinite, il componente viene visualizzato come segue:
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
+![Finestra di dialogo Verifica password](assets/dc_profiles_checkedpassword.png)
 
 ### Foto avatar profilo {#profile-avatar-photo}
 
 Questo componente offre all’utente un meccanismo per selezionare e caricare un file di foto avatar.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
+![Selettore avatar](assets/dc_profiles_avatarphoto.png)
 
 ### Nome completo profilo {#profile-detailed-name}
 
 Questo componente consente all’utente di immettere un nome dettagliato.
 
-![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
+![Finestra di dialogo Nome dettagliato](assets/dc_profiles_detailedname.png)
 
 ### Genere profilo {#profile-gender}
 
 Questo componente consente all’utente di inserire il proprio genere.
 
-![dc_profiles_gender](assets/dc_profiles_gender.png)
+![Selettore genere](assets/dc_profiles_gender.png)

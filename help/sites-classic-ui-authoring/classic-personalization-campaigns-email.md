@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
+
 
 # E-mail marketing{#e-mail-marketing}
 
@@ -56,13 +57,13 @@ Questo documento descrive le nozioni di base sulla creazione di newsletter in AE
 
 1. Seleziona la vista a elenco, utilizzando l’icona:
 
-   ![Vista a elenco](do-not-localize/mcm_icon_listview-1.png)
+   ![Icona della vista a elenco](do-not-localize/mcm_icon_listview-1.png)
 
 1. Clic **Nuovo...**
 
    È possibile specificare **Titolo**, **Nome** e il tipo di esperienza da creare; in questo caso, Newsletter.
 
-   ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
+   ![Finestra di dialogo Crea esperienza](assets/mcm_createnewsletter.png)
 
 1. Fai clic su **Crea**.
 
@@ -70,7 +71,7 @@ Questo documento descrive le nozioni di base sulla creazione di newsletter in AE
 
    Il **Elenco destinatari predefiniti** è un campo obbligatorio in quanto costituisce il punto di contatto per la newsletter (consulta [Utilizzo degli elenchi](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) per ulteriori informazioni sugli elenchi).
 
-   ![mcm_newsletterdialog](assets/mcm_newnewsletterdialog.png)
+   ![Finestra di dialogo delle proprietà della pagina](assets/mcm_newnewsletterdialog.png)
 
    * **Nome mittente**
 Nome che deve apparire come mittente della newsletter.
@@ -110,7 +111,7 @@ Puoi aggiungere contenuti, incluso il contenuto dinamico, alla newsletter come f
    >
    >Puoi personalizzare le newsletter utilizzando le variabili. Nella newsletter Geometrixx, le variabili sono disponibili nel componente Testo. I valori per le variabili vengono ereditati dalle informazioni nel profilo utente.
 
-   ![mcm_newsletter_content](assets/mcm_newsletter_content.png)
+   ![Modifica del contenuto di una newsletter](assets/mcm_newsletter_content.png)
 
 1. Per inserire delle variabili, selezionale dall’elenco e fai clic su **Inserisci**. Le variabili vengono compilate dal profilo.
 
@@ -128,13 +129,13 @@ Per personalizzare una newsletter e simulare il suo aspetto:
 
 1. Posiziona il cursore nel punto in cui vuoi visualizzare la variabile, seleziona una variabile dall’elenco a discesa e fai clic su **Inserisci**. Esegui questa operazione per tutte le variabili necessarie e fai clic su **OK**.
 
-   ![mcm_newsletter_variables](assets/mcm_newsletter_variables.png)
+   ![Aggiunta di variabili](assets/mcm_newsletter_variables.png)
 
 1. Per simulare l&#39;aspetto della variabile inviata, premere CTRL+ALT+C per aprire il contesto del client e selezionare **Carica**. Seleziona l’utente dall’elenco di cui desideri caricare il profilo e fai clic su **OK**.
 
    Le informazioni del profilo caricato hanno popolato le variabili.
 
-   ![mc_newsletter_testvariables](assets/mc_newsletter_testvariables.png)
+   ![Variabili di prova](assets/mc_newsletter_testvariables.png)
 
 ## Verifica delle newsletter in client di posta elettronica diversi {#testing-newsletters-in-different-e-mail-clients}
 
@@ -161,11 +162,11 @@ Per passare da un client all&#39;altro, fare clic sull&#39;icona corrispondente 
 
 1. Fai clic su un client di posta elettronica nella barra superiore per visualizzare l’aspetto della newsletter in tale client.
 
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+   ![Cambio dei client e-mail](assets/chlimage_1-119.png)
 
 1. Ripetere questo passaggio per tutti i client di posta elettronica aggiuntivi che si desidera visualizzare.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+   ![Modifica dei client e-mail](assets/chlimage_1-120.png)
 
 ## Personalizzazione delle impostazioni della newsletter {#customizing-newsletter-settings}
 
@@ -178,11 +179,11 @@ Per personalizzare le impostazioni delle newsletter:
 
 1. Da MCM, apri la newsletter per la quale desideri personalizzare le impostazioni.
 
-   ![mcm_newsletter_open](assets/mcm_newsletter_open.png)
+   ![Apertura di una newsletter](assets/mcm_newsletter_open.png)
 
 1. Nella parte superiore della newsletter, fai clic su **Impostazioni**.
 
-   ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
+   ![Modifica delle impostazioni delle newsletter](assets/mcm_newsletter_settings.png)
 1. Inserisci il **Da** indirizzo e-mail
 
 1. Modifica il **Oggetto** del messaggio di posta elettronica, se necessario.
@@ -213,7 +214,7 @@ Per visualizzare i notiziari di prova di volo:
 
 1. Nella parte superiore della newsletter, fai clic su **Test** da verificare prima dell’invio.
 
-   ![mcm_newsletter_testsettings](assets/mcm_newsletter_testsettings.png)
+   ![Impostazioni per testare una newsletter](assets/mcm_newsletter_testsettings.png)
 
 1. Inserisci l’indirizzo e-mail del test in cui desideri inviare la newsletter e fai clic su **Invia**. Se desideri modificare il profilo, carica un altro profilo nel contesto client. A tale scopo, premere CTRL+ALT+C e selezionare Carica e carica un profilo.
 
@@ -253,11 +254,11 @@ Per inviare una newsletter dall’interno della campagna:
 
 1. Nell’elenco del destinatario, seleziona l’elenco che desideri ricevere la newsletter e fai clic su **Successivo**.
 
-   ![mcm_newslettersend](assets/mcm_newslettersend.png)
+   ![Invio di una newsletter](assets/mcm_newslettersend.png)
 
 1. Il completamento dell&#39;installazione è confermato. Clic **Invia** per inviare effettivamente la newsletter.
 
-   ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
+   ![Conferma inviata newsletter](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
@@ -277,15 +278,15 @@ Per inviare una newsletter da un elenco:
 
 1. In **Strumenti** menu, seleziona **Invia newsletter**. Il **Invia newsletter** viene visualizzata la finestra.
 
-   ![mcm_newslettersendfromlist](assets/mcm_newslettersendfromlist.png)
+   ![Console newsletter](assets/mcm_newslettersendfromlist.png)
 
 1. In **Newsletter** , seleziona la newsletter da inviare e fai clic su **Successivo**.
 
-   ![mcm_newslettersenddialog](assets/mcm_newslettersenddialog.png)
+   ![Finestra di dialogo Invia newsletter](assets/mcm_newslettersenddialog.png)
 
 1. Il completamento dell&#39;installazione è confermato. Clic **Invia** per inviare la newsletter selezionata all&#39;elenco di lead specificato.
 
-   ![mcm_newslettersenddialog_confirm](assets/mcm_newslettersenddialog_confirmation.png)
+   ![Invia conferma](assets/mcm_newslettersenddialog_confirmation.png)
 
    La newsletter viene inviata ai destinatari selezionati.
 
@@ -299,6 +300,6 @@ Per iscriversi a una newsletter (utilizzando il sito Web Geometrixx come esempio
 
 1. Clic **Siti Web** e passare alla Geometrixx **Barra degli strumenti** e aprilo.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+   ![Esempio di abbonamento](assets/chlimage_1-121.png)
 
 1. Nella newsletter Geometrixx **Registrati** , immettere l&#39;indirizzo di posta elettronica e fare clic su **Registrati**. Sei abbonato alla newsletter.

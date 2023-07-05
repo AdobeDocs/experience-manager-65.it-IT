@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 4dd216167f97eb6f6181586b57694b139872c5ef
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '958'
 ht-degree: 5%
 
 ---
+
 
 # Operazioni Granite: amministrazione di utenti e gruppi{#granite-operations-user-and-group-administration}
 
@@ -26,7 +27,7 @@ Questi conti sono alla base della [Conti AEM](/help/sites-administering/security
 
 Le console di amministrazione di utenti e gruppi Granite sono entrambe disponibili dal **[Strumenti](/help/sites-administering/tools-consoles.md)** console dell’interfaccia touch:
 
-![chlimage_1-72](assets/chlimage_1-72a.png)
+![Console Strumenti](assets/chlimage_1-72a.png)
 
 Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console appropriata. In entrambi è possibile intervenire utilizzando la casella di selezione e quindi le azioni dalla barra degli strumenti, oppure aprendo i dettagli dell’account tramite il collegamento in **Nome**.
 
@@ -42,7 +43,7 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console app
 
 * [Amministrazione gruppo](#group-administration)
 
-  ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![Console di gestione utenti](assets/chlimage_1-74a.png)
 
   Il **Gruppi** elenchi console:
 
@@ -56,11 +57,11 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console app
 
 1. Utilizza il **Aggiungi utente** icona:
 
-   ![Aggiungi utente](do-not-localize/chlimage_1-1.png)
+   ![Icona Aggiungi utente](do-not-localize/chlimage_1-1.png)
 
 1. Il **Crea utente** Il modulo verrà aperto:
 
-   ![chlimage_1-75](assets/chlimage_1-75a.png)
+   ![Modulo dettagli utente](assets/chlimage_1-75a.png)
 
    Qui puoi immettere i dettagli utente per l’account (la maggior parte sono standard e auto-esplicativi):
 
@@ -132,11 +133,11 @@ Puoi contrassegnare l’account come **attivo** o **inattivo**.
 
 1. Ora puoi modificare i dettagli come in [Aggiunta di un nuovo utente](#adding-a-new-user). Sotto **Impostazioni account** esiste un collegamento per **Cambia password**.
 
-   ![chlimage_1-76](assets/chlimage_1-76a.png)
+   ![Finestra di dialogo Impostazioni account](assets/chlimage_1-76a.png)
 
 1. Il **Cambia password** viene aperta una finestra di dialogo. Immettere e ridigitare la nuova password, insieme alla password. Utilizzare **OK** per confermare le modifiche.
 
-   ![chlimage_1-77](assets/chlimage_1-77a.png)
+   ![Finestra di dialogo Modifica password](assets/chlimage_1-77a.png)
 
    Un messaggio conferma che la password è stata cambiata.
 
@@ -149,7 +150,7 @@ Puoi contrassegnare l’account come **attivo** o **inattivo**.
 
    Per aprire il menu a discesa di selezione del gruppo:
 
-   ![chlimage_1-78](assets/chlimage_1-78a.png)
+   ![Selettore gruppi](assets/chlimage_1-78a.png)
 
 1. Nella casella di selezione è possibile selezionare o deselezionare i gruppi a cui deve appartenere l&#39;account utente.
 
@@ -177,7 +178,7 @@ Puoi contrassegnare l’account come **attivo** o **inattivo**.
 
 1. Il **Crea gruppo** Il modulo verrà aperto:
 
-   ![chlimage_1-79](assets/chlimage_1-79a.png)
+   ![Modulo Dettagli gruppo](assets/chlimage_1-79a.png)
 
    Qui puoi immettere i dettagli del gruppo:
 

@@ -9,12 +9,13 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '961'
 ht-degree: 4%
 
 ---
+
 
 # Console di gestione membri e gruppi {#members-groups-management-consoles}
 
@@ -47,7 +48,7 @@ Nell’ambiente di authoring, per raggiungere la console Membri per la gestione 
 >
 >Non sarà possibile utilizzare la console Membri se [servizio tunnel](deploy-communities.md#tunnel-service-on-author) non è abilitato.
 
-![member-console1](assets/member-console1.png)
+![La console membro](assets/member-console1.png)
 
 ### Ricerca {#search-features}
 
@@ -56,7 +57,7 @@ Seleziona l’icona del pannello laterale a sinistra del `Members` per aprire o 
 ![Icona del pannello laterale di ricerca.](assets/leftpanel-icon.png)
 
 
-![member-console2](assets/member-console2.png)
+![Opzioni filtro per la console membri](assets/member-console2.png)
 
 Selezionare l&#39;icona di ricerca sul lato sinistro del `Members` per far chiudere il pannello laterale di ricerca.
 
@@ -76,7 +77,7 @@ Le intestazioni di colonna sono
 
 Seleziona `Create Member` per creare un utente nell’ambiente di pubblicazione.
 
-![create-member1](assets/create-member1.png)
+![Finestra Crea nuovo membro](assets/create-member1.png)
 
 ### GENERALE - Dettagli membro {#general-member-details}
 
@@ -150,7 +151,7 @@ Il `BADGES` Il pannello consente di assegnare manualmente i badge e di revocarli
 
 Vedi anche [Punteggio e distintivi](implementing-scoring.md).
 
-![create-member2](assets/create-member2.png)
+![Finestra Modifica impostazioni appartenenza](assets/create-member2.png)
 
 * **[!UICONTROL Aggiungi badge]**
    * Inizia a digitare per selezionare [badge disponibili](badges.md). Una volta selezionato un badge, scegli ogni sito, o tutti i siti, in cui il badge deve essere visualizzato insieme all’avatar del membro.
@@ -173,7 +174,7 @@ Per accedere alla console Gruppi:
 
 Seleziona `Add Group` per creare un gruppo nell’ambiente di pubblicazione.
 
-![group-console1](assets/group-console1.png)
+![Finestra Crea nuovo gruppo](assets/group-console1.png)
 
 I campi obbligatori per la creazione di un nuovo gruppo di membri lato pubblicazione sono:
 

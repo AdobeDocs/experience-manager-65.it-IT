@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 02afc4eb78acaacc40d3ba1830ccb1e9c3907d0f
+source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1973'
 ht-degree: 0%
 
 ---
+
 
 # ClientContext{#client-context}
 
@@ -26,9 +27,9 @@ ht-degree: 0%
 
 ClientContext è un meccanismo che fornisce determinate informazioni sulla pagina corrente e sul visitatore. È possibile aprirlo utilizzando **Ctrl-Alt-C** (Windows) o **control-option-c** (Mac)
 
-![](assets/clientcontext_alisonparker.png)
+![Esempio della finestra ClientContext](assets/clientcontext_alisonparker.png)
 
-In entrambi i [ambiente di pubblicazione e di authoring in cui vengono visualizzate le informazioni](#propertiesavailableintheclientcontext) informazioni su:
+Sia nell’ambiente di pubblicazione che in quello di authoring vengono visualizzate informazioni su:
 
 * Il visitatore; a seconda dell’istanza, alcune informazioni sono richieste o derivate.
 * Tag pagina e il numero di accessi a tali tag da parte del visitatore corrente (visualizzato quando si sposta il mouse su un tag specifico).
@@ -38,7 +39,7 @@ In entrambi i [ambiente di pubblicazione e di authoring in cui vengono visualizz
 
 Le icone (disponibili solo nell’ambiente di authoring) consentono di configurare i dettagli del contesto client:
 
-![](do-not-localize/clientcontext_icons.png)
+![Icone Modifica, Carica e Reimposta della finestra ClientContext](do-not-localize/clientcontext_icons.png)
 
 * **Modifica**
 Viene aperta una nuova pagina che consente di: [modificare, aggiungere o rimuovere una proprietà di profilo](#editingprofiledetails).
@@ -116,6 +117,7 @@ Ad esempio, se il mouse si trova sulla parte sinistra o destra della finestra. Q
 **Tag cloud** Mostra i tag impostati nella pagina corrente e quelli raccolti durante la navigazione nel sito. Lo spostamento del mouse su un tag indica il numero di accessi effettuati dall&#39;utente corrente alle pagine contenenti il tag specifico.
 
 >[!NOTE]
+>
 I tag impostati sulle risorse DAM visualizzate nelle pagine visitate non verranno conteggiati.
 
 **Store tecnografica** Questo componente dipende dall’installazione.
@@ -127,6 +129,7 @@ Questo archivio sessione non dispone di un componente di contesto client predefi
 Per ulteriori informazioni, consulta [ClientContext nei dettagli](/help/sites-developing/client-context.md).
 
 >[!NOTE]
+>
 I dati di pagina non sono più nel contesto client come componente predefinito. Se necessario, puoi aggiungerlo modificando il contesto del client e aggiungendo **Proprietà store generico** , quindi configurando per definire il **Archivia** as `pagedata`.
 
 ## Modifica del profilo ClientContext {#changing-the-client-context-profile}
@@ -149,11 +152,11 @@ Al termine, potrai [reimpostare il profilo](#resetting-the-profile-to-the-curren
 
 1. Fai clic sull’icona Carica profilo:
 
-   ![](do-not-localize/clientcontext_loadprofile.png)
+   ![Icona Carica profilo di ClientContext](do-not-localize/clientcontext_loadprofile.png)
 
 1. Viene aperta la finestra di dialogo in cui puoi selezionare il profilo da caricare:
 
-   ![](assets/clientcontext_profileloader.png)
+   ![La finestra di dialogo Caricatore profilo, che mostra il menu a discesa per selezionare un profilo](assets/clientcontext_profileloader.png)
 
 1. Clic **OK** da caricare.
 
@@ -163,7 +166,7 @@ Puoi anche selezionare un profilo con il cursore di selezione:
 
 1. Fare doppio clic sull&#39;icona che rappresenta l&#39;utente corrente. Il selettore si apre e utilizza le frecce per navigare e visualizzare i profili disponibili:
 
-   ![](assets/clientcontext_profileselector.png)
+   ![Selettore utente](assets/clientcontext_profileselector.png)
 
 1. Fai clic sul profilo da caricare. Una volta caricati i dettagli, fai clic all’esterno del selettore per chiuderlo.
 
@@ -171,13 +174,13 @@ Puoi anche selezionare un profilo con il cursore di selezione:
 
 1. Utilizza l’icona di reimpostazione per ripristinare il profilo nel contesto client su quello dell’utente corrente:
 
-   ![](do-not-localize/clientcontext_resetprofile.png)
+   ![Icona di ripristino](do-not-localize/clientcontext_resetprofile.png)
 
 ### Modifica della piattaforma del browser {#changing-the-browser-platform}
 
 1. Fai doppio clic sull’icona che rappresenta la piattaforma del browser. Il selettore si apre e utilizza le frecce per navigare e visualizzare le piattaforme/browser disponibili:
 
-   ![](assets/clientcontext_browserplatform.png)
+   ![Selettore piattaforma browser](assets/clientcontext_browserplatform.png)
 
 1. Fai clic sul browser della piattaforma da caricare. Una volta caricati i dettagli, fai clic all’esterno del selettore per chiuderlo.
 
@@ -185,7 +188,7 @@ Puoi anche selezionare un profilo con il cursore di selezione:
 
 1. Fai doppio clic sull’icona di geolocalizzazione. Viene aperta una mappa espansa, in cui è possibile trascinare il marcatore in una nuova posizione:
 
-   ![](assets/clientcontext_geomocationrelocate.png)
+   ![Dettagli di geolocalizzazione](assets/clientcontext_geomocationrelocate.png)
 
 1. Fai clic all’esterno della mappa per chiuderla.
 
@@ -193,7 +196,7 @@ Puoi anche selezionare un profilo con il cursore di selezione:
 
 1. Fai doppio clic sulla sezione Tag Cloud del Client Context. Viene aperta la finestra di dialogo, in cui puoi selezionare i tag:
 
-   ![](assets/clientcontext_tagselection.png)
+   ![Finestra di dialogo Tag cloud](assets/clientcontext_tagselection.png)
 
 1. Fare clic su OK per caricare in ClientContext.
 
@@ -205,13 +208,13 @@ La modifica di un contesto client può essere utilizzata per impostare (o reimpo
 
 La modifica di un contesto client può essere utilizzata per impostare (o reimpostare) i valori di determinate proprietà. Questo consente di testare scenari specifici (particolarmente utili per [segmentazione](/help/sites-administering/campaign-segmentation.md) e [campagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
-![](assets/clientcontext_alisonparker_edit.png)
+![Modifica di ClientContext](assets/clientcontext_alisonparker_edit.png)
 
 ### Aggiunta di un componente proprietà {#adding-a-property-component}
 
 Dopo aver aperto il **Pagina progettazione ClientContext**, è inoltre possibile **Aggiungi** una proprietà completamente nuova che utilizza i componenti disponibili (i componenti sono elencati sia nella barra laterale che nella **Inserisci nuovo componente** che viene aperta dopo un doppio clic sul pulsante **Trascina qui i componenti o le risorse** box):
 
-![](assets/clientcontext_alisonparker_new.png)
+![Aggiunta di una proprietà alla finestra ClientContext](assets/clientcontext_alisonparker_new.png)
 
 ### Rimozione di un componente proprietà {#removing-a-property-component}
 
@@ -231,11 +234,11 @@ Aggiungi il componente JSONP Store a ClientContext e utilizzalo per recuperare e
 1. Per aprire ClientContext, premere Ctrl-Alt-c (Windows) o Control-option-c (Mac).
 1. Fare clic sull&#39;icona Modifica nella parte superiore di ClientContext per aprire ClientContext Designer.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Icona collegamento](do-not-localize/chlimage_1.png)
 
 1. Trascina il componente JSONP Store su ClientContext.
 
-   ![](assets/chlimage_1-4.jpeg)
+   ![Trascinamento del componente Archivio JSONP in ClientContext](assets/chlimage_1-4.jpeg)
 
 1. Fai doppio clic sul componente per aprire la finestra di dialogo per modifica.
 1. Nella casella URL servizio JSONP, immetti il seguente URL, quindi fai clic su Recupera archivio:
@@ -244,12 +247,12 @@ Aggiungi il componente JSONP Store a ClientContext e utilizzalo per recuperare e
 
    Il componente chiama il servizio JSONP ed elenca tutte le proprietà contenute nei dati restituiti. Le proprietà incluse nell&#39;elenco sono quelle che saranno disponibili in ClientContext.
 
-   ![](assets/chlimage_1-40.png)
+   ![Le proprietà del servizio JSONP](assets/chlimage_1-40.png)
 
 1. Fai clic su OK.
 1. Torna alla home page dei Geometrixx Outdoors e aggiorna la pagina. ClientContext ora include le informazioni dal componente JSONP Store.
 
-   ![](assets/chlimage_1-41.png)
+   ![Esempio del componente JSONP popolato con dati](assets/chlimage_1-41.png)
 
 ### Creare il segmento {#create-the-segment}
 
@@ -270,7 +273,7 @@ Utilizza i dati dell&#39;archivio sessione creato con il componente archivio JSO
 1. Fai clic con il pulsante destro del mouse sul segmento Inverno e fai clic su Apri.
 1. Trascina la proprietà Store generico nel contenitore AND predefinito.
 
-   ![](assets/chlimage_1-5.jpeg)
+   ![Aggiunta di un componente all’editor segmento](assets/chlimage_1-5.jpeg)
 
 1. Fai doppio clic sul componente per aprire la finestra di dialogo per modifica, specifica i seguenti valori delle proprietà, quindi fai clic su OK:
 

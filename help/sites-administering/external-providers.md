@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ec4f24528089fe3de639b974ff4ab6f8807fc7fc
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 1%
+source-wordcount: '448'
+ht-degree: 2%
 
 ---
+
 
 # Analytics con provider esterni {#analytics-with-external-providers}
 
@@ -70,15 +71,15 @@ Per la configurazione di base:
 1. Dal riquadro di sinistra espandere **Configurazioni Cloud Services**.
 1. Doppio clic su **Snippet generico di analisi** per aprire la pagina:
 
-   ![](assets/analytics_genericoverview.png)
+   ![Snippet generico di analisi](assets/analytics_genericoverview.png)
 
 1. Fai clic sul + per aggiungere una nuova configurazione utilizzando la finestra di dialogo; assegna almeno un nome, ad esempio Google Analytics:
 
-   ![](assets/analytics_addconfig.png)
+   ![Creare la configurazione](assets/analytics_addconfig.png)
 
 1. Clic **Crea**, la finestra di dialogo snippet si apre immediatamente - incolla il frammento javascript appropriato nel campo:
 
-   ![](assets/analytics_snippet.png)
+   ![Modifica del componente](assets/analytics_snippet.png)
 
 1. Clic **OK** per salvare.
 
@@ -90,12 +91,12 @@ Dopo aver creato la configurazione del servizio, è ora necessario configurare l
 1. Apri **Proprietà pagina** dalla barra laterale, quindi **Cloud Services** scheda.
 1. Clic **Aggiungi servizio**, quindi selezionare il servizio richiesto, ad esempio **Snippet generico di analisi**:
 
-   ![](assets/analytics_selectservice.png)
+   ![Aggiunta di un servizio cloud](assets/analytics_selectservice.png)
 
 1. Clic **OK** per salvare.
 1. Verrai reindirizzato al **Cloud Services** scheda. Il **Snippet generico di analisi** è ora elencato con il messaggio `Configuration reference missing`. Utilizza l’elenco a discesa per selezionare la tua istanza di servizio specifica, ad esempio google-analytics:
 
-   ![](assets/analytics_selectspecificservice.png)
+   ![Aggiunta della configurazione del servizio cloud](assets/analytics_selectspecificservice.png)
 
 1. Clic **OK** per salvare.
 

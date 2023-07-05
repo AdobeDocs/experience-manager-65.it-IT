@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
+
 
 # Editor in blocco{#the-bulk-editor}
 
@@ -46,11 +47,11 @@ Un esempio per illustrare un caso d’uso di questo tipo è incluso nel Geometri
 1. Accedi a **Supporto** e quindi al **Soddisfazione del servizio clienti** sondaggio.
 1. **Modifica** il **Inizio modulo** paragrafo. Nella finestra di dialogo, fai clic su **Avanzate** , espandere la scheda **Configurazione azione**, quindi fai clic su **Visualizza dati...**.
 
-   ![](assets/custsatsurvey.png)
+   ![Esempio di sondaggio sulla soddisfazione del cliente](assets/custsatsurvey.png)
 
 1. L’editor collettivo è completamente personalizzabile. Tuttavia, in questo esempio l’editor collettivo non consente agli utenti di modificare il contenuto, ma solo di esportare le informazioni in un foglio di calcolo.
 
-   ![](assets/bulkeditor.png)
+   ![Console dell’editor in blocco](assets/bulkeditor.png)
 
 ## Come utilizzare l’editor in blocco {#how-to-use-the-bulk-editor}
 
@@ -100,16 +101,16 @@ Per utilizzare l&#39;editor in blocco per modificare più elementi contemporanea
 
 Ad esempio:
 
-![](assets/searchfilter.png)
+![Opzioni filtro dell’editor in blocco](assets/searchfilter.png)
 
 1. Clic **Ricerca**. L’Editor collettivo visualizza i risultati.
 Nell’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca vengono restituite e visualizzate con le colonne richieste.
 
-   ![](assets/chlimage_1-39.png)
+   ![Risultati dell’editor in blocco](assets/chlimage_1-39.png)
 
 1. Per apportare le modifiche necessarie, fare doppio clic in una cella.
 
-   ![](assets/srchresultedit.png)
+   ![Modifica in blocco](assets/srchresultedit.png)
 
 1. Clic **Salva** per salvare le modifiche (il **Salva** dopo aver modificato una cella).
 
@@ -137,12 +138,12 @@ Per esportare il contenuto:
    >
    >Per impostazione predefinita, le modifiche sono codificate in [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (noto anche come CP-1252). È possibile selezionare UTF-8 per esportare le modifiche in UTF-8.
 
-   ![](assets/srchrsesultexport.png)
+   ![Esportazione dei risultati](assets/srchrsesultexport.png)
 
 1. Seleziona il percorso e conferma di voler scaricare il file.
 1. Dopo aver scaricato il file, è possibile aprirlo dal foglio di calcolo, ad esempio Microsoft Excel. Il programma per fogli di calcolo importa il file e lo converte in un formato foglio di calcolo.
 
-   ![](assets/exportinexcel.png)
+   ![Risultati esportati in un foglio di calcolo](assets/exportinexcel.png)
 
 ### Importazione del contenuto {#importing-content}
 
