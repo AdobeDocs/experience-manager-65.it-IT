@@ -8,9 +8,9 @@ uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
 discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
@@ -43,33 +43,33 @@ Quindi, scegliete una delle viste, come illustrato di seguito:
 
 ### Vista a schede {#card-view}
 
-![](assets/unu.png)
+![La vista a schede mostra le miniature di diverse risorse immagine.](assets/unu.png)
 
 ### Selezione di massa nella vista a schede {#bulk-selection-in-card-view}
 
 È possibile selezionare risorse o pagine in blocco utilizzando **Seleziona tutto** pulsante in alto a destra:
 
-![](assets/doi.png) ![](assets/trei.png)
+![Seleziona Tutto, nell’angolo superiore destro della Vista a schede.](assets/doi.png) ![Tutte le miniature delle risorse immagini nella Vista a schede vengono visualizzate come selezionate con segni di spunta.](assets/trei.png)
 
 ### Vista a elenco  {#list-view}
 
 Lo stesso vale per la vista a elenco:
 
-![](assets/patru_modified.png)
+![Viene evidenziata l&#39;opzione Seleziona tutto nell&#39;angolo superiore destro della Vista elenco.](assets/patru_modified.png)
 
 ### Selezione in blocco nella vista a elenco {#bulk-selection-in-list-view}
 
 Nella Vista a elenco, utilizza **Seleziona tutto** oppure utilizzare la casella di controllo a sinistra per la selezione in serie.
 
-![](assets/cinci.png) ![](assets/sase.png)
+![La Vista live mostra le miniature e le immagini delle risorse delle immagini e viene visualizzata in righe orizzontali.](assets/cinci.png) ![Casella di riepilogo che mostra le miniature e le immagini delle risorse immagine e una casella di controllo a sinistra di Nome.](assets/sase.png)
 
 ### Vista a colonne {#column-view}
 
-![](assets/sapte.png)
+![La Vista a colonne mostra le miniature delle risorse di immagini visualizzate in colonne verticali.](assets/sapte.png)
 
 ### Selezione in blocco nella vista a colonne {#bulk-selection-in-column-view}
 
-![](assets/opt.png)
+![Tutte le miniature delle risorse immagini nella Vista a colonne vengono visualizzate come selezionate con segni di spunta.](assets/opt.png)
 
 ## Operazioni abilitate in blocco {#bulk-enabled-operations}
 
@@ -77,8 +77,8 @@ Dopo la selezione, è possibile eseguire una delle tre azioni abilitate in blocc
 
 Qui, **Sposta** L&#39;operazione viene eseguita sulle risorse selezionate sopra. In una qualsiasi delle visualizzazioni, questo fa sì che tutte le risorse vengano spostate nella posizione scelta e non solo in quelle caricate sullo schermo.
 
-![](assets/noua.png)
+![Sposta le risorse mostrando una cartella selezionata nella Vista a colonne.](assets/noua.png)
 
 Per altre operazioni che non sono abilitate in blocco, come **Download,** verrà visualizzato un avviso che segnala che solo gli elementi caricati nel browser verranno inclusi nell’operazione.
 
-![](assets/zece.png)
+![La vista Risorse mostra le risorse immagine selezionate e la finestra di dialogo a comparsa &quot;Azione di massa non supportata&quot;.](assets/zece.png)

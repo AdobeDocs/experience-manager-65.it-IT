@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 3802eb71dc6d17db4b1158d8d433ba1c516e54f2
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '3011'
-ht-degree: 42%
+source-wordcount: '3024'
+ht-degree: 41%
 
 ---
 
@@ -178,7 +178,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
 * [Selettore della barra](/help/sites-authoring/basic-handling.md#rail-selector)
 
-  ![](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![L’elenco dei selettori della barra è visualizzato sul lato sinistro della schermata Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
   Le opzioni visualizzate dipendono dalla console corrente. Ad esempio, in **Sites** puoi selezionare solo il contenuto (opzione predefinita), la timeline, i riferimenti o il pannello laterale del filtro.
 

@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 20%
@@ -60,7 +60,7 @@ Puoi selezionare e modificare i **Surf artico a Lofoten** frammento:
 
 Qui è possibile [modifica e gestisci](/help/assets/content-fragments/content-fragments.md) frammento utilizzando le schede (pannello laterale sinistro):
 
-<!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
+<!--![cf-45-aa](do-not-localize/cf-45-aa.png) ![cf-45-a](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
 * **[Varianti](/help/assets/content-fragments/content-fragments-variations.md)** tra cui [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
 * **[Contenuto associato](/help/assets/content-fragments/content-fragments-assoc-content.md)**

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 53%
+source-wordcount: '1558'
+ht-degree: 45%
 
 ---
 
@@ -40,17 +40,17 @@ Prima di fornire una panoramica delle specifiche, ecco una piccola raccolta di s
 
 * **Crea**
 
-   * Questo pulsante è presente in molte console; le opzioni visualizzate sono contestuali e quindi cambiano in base allo scenario specifico.
+   * Questo pulsante è disponibile in molte console; le opzioni visualizzate sono contestuali e quindi possono variare a seconda dello scenario.
 
 * Riordinamento delle pagine in una cartella
 
-   * Può essere eseguito nella [vista a elenco](/help/sites-authoring/basic-handling.md#list-view). Le modifiche saranno applicate e risulteranno visibili anche nelle altre viste.
+   * Questa operazione può essere eseguita in [Vista a elenco](/help/sites-authoring/basic-handling.md#list-view). Le modifiche vengono applicate e visualizzate in altre viste.
 
 #### Authoring delle pagine {#page-authoring}
 
 * Collegamenti di navigazione
 
-   * ***I collegamenti non sono disponibili per la navigazione*** quando sei in **Modifica** modalità. Per navigare con i collegamenti è necessario [anteprima della pagina](/help/sites-authoring/editing-content.md#previewing-pages) utilizzando:
+   * ***I collegamenti non sono disponibili per la navigazione*** quando sei in **Modifica** modalità. Per navigare con i collegamenti, è necessario [anteprima della pagina](/help/sites-authoring/editing-content.md#previewing-pages) utilizzando:
 
       * [Modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode)
       * [Visualizza come pubblicato](/help/sites-authoring/editing-content.md#view-as-published)
@@ -69,7 +69,7 @@ Prima di fornire una panoramica delle specifiche, ecco una piccola raccolta di s
 
 Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseguire ricerche:
 
-1. Apri la console **Sites** (mediante l’opzione **Sites** del pannello [Navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation), che si apre (a discesa) quando selezioni il collegamento Adobe Experience Manager (in alto a sinistra).
+1. Apri **Sites** console (utilizzando il **Sites** opzione in [Navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation)) - viene attivato (a discesa) quando selezioni il collegamento Adobe Experience Manager (in alto a sinistra).
 
 1. Spostati verso il basso all’interno della struttura toccando/facendo clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla vista che stai utilizzando, [A schede, Elenco o Colonna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
@@ -85,14 +85,14 @@ Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseg
 
 ### Creazione di una nuova pagina {#creating-a-new-page}
 
-Per [creare una nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+A [creare una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Passa alla posizione in cui desideri creare la nuova pagina.](#finding-your-page)
+1. [Passa alla posizione](#finding-your-page) dove desideri creare la pagina.
 1. Utilizza il **Crea** e quindi seleziona **Pagina** dall’elenco:
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. Verrà aperta la procedura guidata che ti guiderà attraverso la raccolta delle informazioni necessarie quando [creazione di una nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page). Seguire le istruzioni visualizzate sullo schermo.
+1. Verrà aperta la procedura guidata che ti guiderà attraverso la raccolta delle informazioni necessarie quando [creazione di una nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page). Seguire le istruzioni visualizzate.
 
 ### Selezione della pagina per ulteriori azioni   {#selecting-your-page-for-further-action}
 
@@ -134,8 +134,6 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
 
 ### Modifica del contenuto delle pagine {#editing-your-page-content}
 
-Per modificare la pagina:
-
 1. [Passa alla pagina](#finding-your-page) da modificare.
 1. [Apri la pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) tramite l’icona Modifica (matita):
 
@@ -146,9 +144,9 @@ Per modificare la pagina:
    * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa appropriata.
    * La barra degli strumenti, se la [pagina è stata selezionata](#selectiingyourpageforfurtheraction).
 
-1. All’apertura dell’editor puoi:
+1. All’apertura dell’editor, puoi:
 
-   * [Aggiungere un nuovo componente alla pagina](/help/sites-authoring/editing-content.md#inserting-a-component) da:
+   * [Aggiungere un nuovo componente alla pagina](/help/sites-authoring/editing-content.md#inserting-a-component):
 
       * apertura del pannello laterale
       * selezionando la scheda componenti (la [browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser))
@@ -161,7 +159,7 @@ Per modificare la pagina:
    * [Modificare il contenuto di un componente esistente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) sulla pagina:
 
       * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza il **Modifica** (matita) per aprire la finestra di dialogo
-      * Apri l’editor locale per il componente toccando e tenendo premuto o facendo doppio clic con il tasto Slow. Verranno visualizzate le azioni disponibili (per alcuni componenti, la selezione sarà limitata).
+      * Apri l’editor locale per il componente toccando e tenendo premuto o facendo doppio clic con il tasto Slow. Vengono visualizzate le azioni disponibili (per alcuni componenti è una selezione limitata).
       * Per visualizzare tutte le azioni disponibili, entra in modalità a schermo intero utilizzando:
 
      ![Modalità a tutto schermo](do-not-localize/screen_shot_2018-03-21at160706.png)
@@ -201,7 +199,7 @@ Per modificare la pagina:
 
    >[!NOTE]
    >
-   >Per navigare utilizzando i collegamenti nel contenuto è necessario utilizzare [Modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode).
+   >Per navigare utilizzando i collegamenti presenti nel contenuto, è necessario utilizzare [Modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode).
 
 ### Modifica delle proprietà pagina   {#editing-the-page-properties}
 
@@ -269,15 +267,15 @@ Queste azioni possono essere tutte attivate da:
 
    * Copia:
 
-      * Sarà poi necessario passare alla nuova posizione e incollare.
+      * Passa alla nuova posizione e incolla.
 
    * Sposta:
 
-      * Verrà visualizzata la procedura guidata per la raccolta delle informazioni necessarie allo spostamento della pagina. Segui le istruzioni sullo schermo.
+      * Viene visualizzata la procedura guidata per raccogliere le informazioni necessarie per spostare la pagina. Seguire le istruzioni visualizzate.
 
    * Elimina:
 
-      * Viene richiesto di confermare l’operazione.
+      * Ti viene chiesto di confermare l’azione.
 
    >[!NOTE]
    >
@@ -288,7 +286,7 @@ Queste azioni possono essere tutte attivate da:
 [Il blocco di una pagina](/help/sites-authoring/editing-content.md#locking-a-page) non consente ad altri autori di utilizzarla mentre vi lavori. L’icona o il pulsante Blocca (e Sblocca) è disponibile:
 
 * La barra degli strumenti, se la [pagina è stata selezionata](#selecting-your-page-for-further-action).
-* Il [menu a discesa Informazioni pagina](#editing-the-page-properties) durante la modifica di una pagina.
+* Il [Menu a discesa Informazioni pagina](#editing-the-page-properties) durante la modifica di una pagina.
 * La barra degli strumenti della pagina durante la modifica di una pagina (quando la pagina è bloccata)
 
 Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
@@ -297,7 +295,7 @@ Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
 ### Accesso ai riferimenti di pagina {#accessing-page-references}
 
-[L’accesso rapido ai riferimenti](/help/sites-authoring/author-environment-tools.md#references) a/da una pagina è disponibile nella barra laterale Riferimenti.
+[Accesso rapido ai riferimenti](/help/sites-authoring/author-environment-tools.md#references) in una pagina o da una pagina sono disponibili nella barra laterale Riferimenti.
 
 1. Seleziona l’icona **Riferimenti** dalla barra degli strumenti (prima o dopo aver [selezionato la pagina](#selecting-your-page-for-further-action)):
 
@@ -331,14 +329,14 @@ Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   Se una versione della pagina è già stata salvata, sarà elencata nella Timeline.
+   Se una versione della pagina è già stata salvata, viene elencata nella Timeline.
 
 1. Tocca o fai clic sulla versione da ripristinare. Verranno visualizzati pulsanti di azione aggiuntivi:
 
    * **Ripristina questa versione**
 
-      * La versione sarà ripristinata.
+      * La versione viene ripristinata.
 
    * **Mostra differenze**
 
-      * La pagina verrà aperta evidenziando le differenze (tra le due versioni).
+      * La pagina viene aperta evidenziando le differenze (tra le due versioni).
