@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
 workflow-type: tm+mt
 source-wordcount: '2021'
 ht-degree: 0%
@@ -75,6 +75,7 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
 
       * [Copia e incolla testo formattato da altre applicazioni](#pasteformattedtext)
       * [Evidenzia parti di testo](#highlightemphasize)
+
    * [Caratteri speciali](#specialcharacters)
    * [Scelte rapide da tastiera](/help/forms/using/keyboard-shortcuts.md)
 
@@ -147,7 +148,7 @@ L’interfaccia utente dell’agente supporta 210 caratteri speciali. L’ammini
 
 ### Frammenti di documenti {#document-fragments}
 
-![](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **Frecce Su/Giù**: frecce per spostare i frammenti di documento verso l’alto o il basso nella comunicazione interattiva.
 * **Elimina**: se consentito, elimina il frammento di documento dalla comunicazione interattiva.
@@ -324,20 +325,20 @@ Nella tabella seguente viene illustrato l&#39;esempio `ccrDocumentInstance` Impl
   <td><p><strong>Esempi di servizi di database</strong></p></td> 
    </tr>
   <tr>
-   <td><p>Puoi creare una bozza per una comunicazione interattiva o inviarla direttamente. L’API per l’operazione di salvataggio controlla se la comunicazione interattiva viene inviata come bozza e include un nome della bozza. L’API chiama quindi il servizio mySQLDataBaseServiceCRUD con Salva come metodo di input.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>Il servizio mySQLDataBaseServiceCRUD verifica il metodo Save come metodo di input e genera un ID bozza generato automaticamente e lo restituisce all'AEM. La logica per generare un ID bozza può variare in base al database.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>Puoi creare una bozza per una comunicazione interattiva o inviarla direttamente. L’API per l’operazione di salvataggio controlla se la comunicazione interattiva viene inviata come bozza e include un nome della bozza. L’API chiama quindi il servizio mySQLDataBaseServiceCRUD con Salva come metodo di input.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
+   <td><p>Il servizio mySQLDataBaseServiceCRUD verifica il metodo Save come metodo di input e genera un ID bozza generato automaticamente e lo restituisce all'AEM. La logica per generare un ID bozza può variare in base al database.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>
-   <td><p>L’API per l’operazione di aggiornamento recupera lo stato della bozza di comunicazione interattiva e controlla se la comunicazione interattiva include un nome di bozza. L'API chiama il servizio mySQLDataBaseServiceCRUD per aggiornare tale stato nel database.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>L’API per l’operazione di aggiornamento recupera lo stato della bozza di comunicazione interattiva e controlla se la comunicazione interattiva include un nome di bozza. L'API chiama il servizio mySQLDataBaseServiceCRUD per aggiornare tale stato nel database.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
    <td><p>Il servizio mySQLDataBaseServiceCRUD verifica Update come metodo di input e salva lo stato della bozza di comunicazione interattiva nel database.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>L’API per l’operazione GET controlla se la comunicazione interattiva include un ID bozza. L’API chiama quindi il servizio mySQLDataBaseServiceCRUD con Get come metodo di input per recuperare i dati per la comunicazione interattiva.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
-   <td><p>Il servizio mySQLDataBaseServiceCRUD verifica Get come metodo di input e recupera i dati per la comunicazione interattiva in base all'ID bozza.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   <td><p>Il servizio mySQLDataBaseServiceCRUD verifica Get come metodo di input e recupera i dati per la comunicazione interattiva in base all'ID bozza.</p></br><img src="assets/get-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>L'API per l'operazione getAll chiama il servizio mySQLGetALLData per recuperare i dati per tutte le comunicazioni interattive salvate nel database.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
-   <td><p>Il servizio mySQLGetALLData recupera i dati per tutte le comunicazioni interattive salvate nel database.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   <td><p>Il servizio mySQLGetALLData recupera i dati per tutte le comunicazioni interattive salvate nel database.</p></br><img src="assets/getall-operation-service.png"/></td>
    </tr>
   </tbody>
 </table>

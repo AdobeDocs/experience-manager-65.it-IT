@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
 workflow-type: tm+mt
-source-wordcount: '3082'
-ht-degree: 42%
+source-wordcount: '3080'
+ht-degree: 43%
 
 ---
 
@@ -40,7 +40,7 @@ Il contenuto viene aggiunto tramite [componenti](/help/sites-authoring/default-c
 
 Dalla barra degli strumenti della pagina è possibile accedere alle funzionalità appropriate, a seconda della configurazione della pagina.
 
-![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
+![Barra degli strumenti della pagina](assets/screen_shot_2018-03-22at111338.png)
 
 La barra degli strumenti offre l’accesso a numerose opzioni. A seconda del contesto e della configurazione correnti, alcune opzioni potrebbero non essere disponibili.
 
@@ -66,25 +66,25 @@ La barra degli strumenti offre l’accesso a numerose opzioni. A seconda del con
 
   Apre il [context hub](/help/sites-authoring/ch-previewing.md). Disponibile solo in modalità Anteprima.
 
-  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![Context Hub](assets/screen_shot_2018-03-22at111543.png)
 
 * **Titolo pagina**
 
   Questo è puramente informativo.
 
-  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![Titolo pagina](assets/screen_shot_2018-03-22at111554.png)
 
 * **Selettore modalità**
 
   Visualizza il [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) e consente di selezionare un’altra modalità, ad esempio modifica, layout, timewarp o targeting.
 
-  ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![Selettore modalità](assets/chlimage_1-120.png)
 
 * **Anteprima**
 
   Abilita [modalità anteprima](/help/sites-authoring/editing-content.md#preview-mode). In questo modo la pagina viene visualizzata così come verrà visualizzata al momento della pubblicazione.
 
-  ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![Modalità anteprima](assets/chlimage_1-121.png)
 
 * **Annotazioni**
 
@@ -96,7 +96,7 @@ La barra degli strumenti offre l’accesso a numerose opzioni. A seconda del con
 
 Se una pagina fa parte di uno o più [flussi di lavoro](/help/sites-authoring/workflows.md), queste informazioni vengono visualizzate in una barra di notifica nella parte superiore dello schermo durante la modifica della pagina.
 
-![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
+![notifica dei flussi di lavoro](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ Il completamento e la delega delle fasi del flusso di lavoro a partire dalla bar
 
 Se la pagina è soggetta a più flussi di lavoro, il numero dei flussi di lavoro viene visualizzato all’estremità destra della notifica, insieme ai pulsanti freccia che consentono di scorrere i flussi di lavoro.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![Notifica per numero di flussi di lavoro](assets/chlimage_1-122.png)
 
 ## Segnaposto Componente {#component-placeholder}
 
@@ -122,11 +122,11 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
 * Quando aggiungi un nuovo componente alla pagina (trascinandolo dal browser dei componenti):
 
-  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![aggiunta di un nuovo componente](assets/screen_shot_2018-03-22at111928.png)
 
 * Quando si sposta un componente esistente:
 
-  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![spostamento di un componente esistente](assets/screen_shot_2018-03-22at112445.png)
 
 ## Inserimento di un componente {#inserting-a-component}
 
@@ -153,13 +153,13 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
    * Seleziona la **Inserisci componente** nella barra degli strumenti di un componente esistente o nella scheda **Trascina qui i componenti** casella.
 
-   ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
+   ![Inserisci selezione componente](assets/screen_shot_2018-03-22at112536.png)
 
    * Se utilizzi un dispositivo desktop, puoi fare doppio clic sulla casella **Trascina qui i componenti**.
 
    Viene visualizzata la finestra di dialogo **Inserisci nuovo componente**, che consente di selezionare il componente richiesto:
 
-   ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
+   ![Inserisci nuovo componente](assets/screen_shot_2018-03-22at112650.png)
 
 1. Il componente selezionato verrà aggiunto nella parte inferiore della pagina. [Modifica](#editmovecopypastedelete) il componente, se necessario.
 
@@ -218,7 +218,7 @@ Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
 Se sfogliando le risorse disponibili scopri che è necessario apportare una rapida modifica a una risorsa, puoi avviare il [editor risorse](/help/assets/manage-assets.md) direttamente dal browser, facendo clic sull’icona di modifica accanto al nome della risorsa.
 
-![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
+![icona modifica](assets/screen_shot_2018-03-22at112735.png)
 
 ## Modifica/Configura/Copia/Taglia/Elimina/Incolla {#edit-configure-copy-cut-delete-paste}
 
@@ -226,7 +226,7 @@ Selezionando un componente si aprirà la barra degli strumenti, che consente di 
 
 Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descritte solo alcune.
 
-![screen_shot_2018-03-22at112909](assets/screen_shot_2018-03-22at112909.png)
+![opzioni della barra degli strumenti del componente](assets/screen_shot_2018-03-22at112909.png)
 
 * **Modifica**
 
@@ -250,7 +250,7 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
   Il componente verrà copiato negli Appunti. Dopo l’azione Incolla, il componente originale verrà rimosso.
 
-  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![Taglia](assets/screen_shot_2018-03-22at113007.png)
 
 * **Eliminare**
 
@@ -272,7 +272,7 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
    * L’elemento incollato verrà incollato sopra l’elemento in cui hai selezionato l’azione Incolla.
    * L&#39;azione Incolla viene visualizzata solo se negli Appunti è presente del contenuto.
 
-  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![Incolla](assets/screen_shot_2018-03-22at113553.png)
 
   >[!NOTE]
   >
@@ -288,7 +288,7 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
   Consente di selezionare il componente principale del componente selezionato.
 
-  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![Elemento padre](assets/screen_shot_2018-03-22at113028.png)
 
 * **Layout**
 
@@ -317,11 +317,11 @@ Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti
 
 * [Componente testo](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![Componente testo](assets/screen_shot_2018-03-22at120215.png)
 
 * Componente immagine
 
-  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![Componente immagine](assets/screen_shot_2018-03-22at120252.png)
 
   >[!NOTE]
   >
@@ -334,11 +334,11 @@ Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti
 
   [L’accesso alla modalità a tutto schermo](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) per il componente immagine consente di avere più spazio per modificare l’immagine oltre che per visualizzare opzioni di modifica aggiuntive, ad esempio **Launch Map (Avvia mappa)** e **Ripristina zoom**. Inoltre, lo schermo intero consente di selezionare i predefiniti di ritaglio.
 
-  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![Componente immagine a schermo intero](assets/screen_shot_2018-03-22at120529.png)
 
 * Componenti costituiti da più componenti di base, ad esempio [Componente base testo e immagine](/help/sites-authoring/default-components-foundation.md#text-image), per prima cosa chiedi di confermare quale insieme di opzioni di modifica desideri:
 
-  ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![Opzioni di modifica dei componenti](assets/chlimage_1-123.png)
 
 ### Trascinare risorse nel componente {#drag-and-drop-assets-into-component}
 
@@ -360,7 +360,7 @@ Per tutti i componenti è possibile accedere alla (e uscire dalla) modalità a t
 
 Per esempio, il componente **Testo**:
 
-![screen_shot_2018-03-22at121616](assets/screen_shot_2018-03-22at121616.png)
+![Editor di testo](assets/screen_shot_2018-03-22at121616.png)
 
 >[!NOTE]
 >
@@ -373,7 +373,7 @@ Per spostare un componente paragrafo:
 1. Seleziona il paragrafo da spostare con la pressione del tasto e del tasto o con il tasto e il tasto.
 1. Trascinare il paragrafo nella nuova posizione. L&#39;AEM indica dove il paragrafo può essere depositato. Rilascialo nella posizione desiderata.
 
-   ![screen_shot_2018-03-22at121821](assets/screen_shot_2018-03-22at121821.png)
+   ![spostamento del componente paragrafo](assets/screen_shot_2018-03-22at121821.png)
 
 1. Il paragrafo è stato spostato.
 
@@ -387,7 +387,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
 1. In modalità **Modifica** nella console Sites, quando si seleziona un componente viene visualizzata la sua barra degli strumenti.
 
-   ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
+   ![Modalità di modifica nel modulo](assets/screen_shot_2018-03-22at133756.png)
 
    Tocca o fai clic sull’azione **Layout** per modificare il layout del componente.
 
@@ -399,7 +399,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
    * La barra degli strumenti dell’emulatore viene visualizzata nella parte superiore dello schermo.
    * Le azioni Layout invece delle azioni di modifica standard vengono visualizzate nella barra degli strumenti del componente.
 
-   ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
+   ![Anteprima modulo su più dispositivi](assets/screen_shot_2018-03-22at133843.png)
 
    Ora puoi modificare il layout del componente, in modo analogo a come lo si modifica nella [modalità di layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
@@ -427,7 +427,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
   La barra degli strumenti del componente, se il componente si trova su una pagina che fa parte di una Live Copy o di un lancio (basato su una Live Copy). Ad esempio:
 
-  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![Live Copy ](assets/screen_shot_2018-03-22at134339.png)
 
   L’opzione Annulla ereditarietà è disponibile:
 
@@ -445,7 +445,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
   La finestra di dialogo di configurazione. Ad esempio, come con il sistema paragrafo ereditato:
 
-  ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![Sistema paragrafo ereditato](assets/chlimage_1-124.png)
 
 ## Modificare il modello di pagina {#editing-the-page-template}
 
@@ -464,7 +464,7 @@ Il [Modalità pagina Stato Live Copy](/help/sites-authoring/author-environment-t
 
 Esempio:
 
-![screen_shot_2018-03-22at134820](assets/screen_shot_2018-03-22at134820.png)
+![Stato ereditarietà Live Copy](assets/screen_shot_2018-03-22at134820.png)
 
 ## Aggiunta di annotazioni {#adding-annotations}
 
@@ -499,7 +499,7 @@ Durante la modifica del contenuto è possibile visualizzare l’anteprima della 
 
 Durante l’authoring, la modalità di anteprima è disponibile utilizzando l’icona in alto a destra nell’editor di pagine:
 
-![chlimage_1-125](assets/chlimage_1-125.png)
+![Anteprima](assets/chlimage_1-125.png)
 
 ### Visualizza come pubblicato {#view-as-published}
 
@@ -516,7 +516,7 @@ Una pagina può essere bloccata da:
    1. Seleziona la pagina con [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Seleziona l’icona del lucchetto.
 
-  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![Icona Blocca](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor pagina**
 
@@ -525,7 +525,7 @@ Una pagina può essere bloccata da:
 
 Una volta eseguito il blocco le informazioni di visualizzazione della console vengono aggiornate e, durante la modifica, un simbolo a forma di lucchetto viene visualizzato nella barra degli strumenti.
 
-![screen_shot_2018-03-22at135010](assets/screen_shot_2018-03-22at135010.png)
+![Simbolo lucchetto](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
@@ -539,7 +539,7 @@ La procedura di sblocco di una pagina è molto simile a quella di [blocco](#lock
 
 Nel menu Informazioni pagina è presente l’opzione **Sblocca** e l’icona Blocca nella console Sites viene sostituita dall’icona **Sblocca**.
 
-![screen_shot_2018-03-22at134942](assets/screen_shot_2018-03-22at134942.png)
+![Sblocca](assets/screen_shot_2018-03-22at134942.png)
 
 >[!CAUTION]
 >
