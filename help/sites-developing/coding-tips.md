@@ -1,18 +1,14 @@
 ---
 title: Suggerimenti per la codifica
-seo-title: Coding Tips
 description: Suggerimenti per la codifica per AEM
-seo-description: Tips for coding for AEM
-uuid: 1bb1cc6a-3606-4ef4-a8dd-7c08a7cf5189
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -21,15 +17,15 @@ ht-degree: 0%
 
 ## Utilizza il più possibile taglib o HTL {#use-taglibs-or-htl-as-much-as-possible}
 
-L’inclusione di scriptlet nei JSP rende difficile il debug dei problemi nel codice. Inoltre, includendo gli scriptlet nelle JSP, è difficile separare la logica di business dal livello di visualizzazione, il che rappresenta una violazione del principio di responsabilità singola e del modello di progettazione MVC.
+L’inclusione di scriptlet nei JSP rende difficile il debug dei problemi nel codice. Inoltre, includendo gli scriptlet nei JSP, è difficile separare la logica di business dal livello di visualizzazione, il che rappresenta una violazione del principio di responsabilità singola e del modello di progettazione MVC.
 
 ### Scrivi codice leggibile {#write-readable-code}
 
-Il codice viene scritto una volta, ma letto molte volte. Dedicare un po&#39; di tempo all&#39;inizio per ripulire il codice che scriviamo darà i suoi frutti mentre noi e altri sviluppatori dobbiamo leggerlo più tardi.
+Il codice viene scritto una volta, ma letto molte volte. Dedicare un po&#39; di tempo prima per pulire il codice scritto dà i suoi frutti mentre tu e altri sviluppatori lo leggete in seguito.
 
 ### Scegli nomi che rivelano le intenzioni {#choose-intention-revealing-names}
 
-Idealmente, un altro programmatore non dovrebbe aprire un modulo per capire cosa fa. Allo stesso modo, dovrebbero essere in grado di dire cosa fa un metodo senza leggerlo. Meglio possiamo sottoscrivere queste idee, più facile sarà leggere il nostro codice e più veloce saremo in grado di scrivere e modificare il nostro codice.
+Idealmente, un altro programmatore non dovrebbe aprire un modulo per capire cosa fa. Allo stesso modo, dovrebbero essere in grado di dire cosa fa un metodo senza leggerlo. Più si possono sottoscrivere a queste idee, più facile è leggere il codice e più veloce è la scrittura e la modifica del codice.
 
 Nella base di codice AEM sono utilizzate le seguenti convenzioni:
 
@@ -37,11 +33,11 @@ Nella base di codice AEM sono utilizzate le seguenti convenzioni:
 * Una singola implementazione di un’interfaccia è denominata `<Interface>Impl`, ovvero `ReaderImpl`.
 * Le implementazioni multiple di un’interfaccia sono denominate `<Variant><Interface>`, ovvero `JcrReader` e `FileSystemReader`.
 * Le classi base astratte sono denominate `Abstract<Interface>` o `Abstract<Variant><Interface>`.
-* I pacchetti sono denominati `com.adobe.product.module`.  Ogni artefatto Maven o bundle OSGi deve avere un proprio pacchetto.
-* Le implementazioni Java sono inserite in un pacchetto impl sotto la relativa API.
+* I pacchetti sono denominati `com.adobe.product.module`. Ogni artefatto Maven o bundle OSGi deve avere un proprio pacchetto.
+* Le implementazioni Java™ vengono inserite in un pacchetto impl sotto la relativa API.
 
 
-Tieni presente che queste convenzioni non devono necessariamente essere applicate alle implementazioni dei clienti, ma è importante che vengano definite e rispettate in modo che il codice possa rimanere gestibile.
+Queste convenzioni non si applicano necessariamente alle implementazioni dei clienti, ma è importante che vengano definite e rispettate in modo che il codice possa rimanere gestibile.
 
 Idealmente, i nomi dovrebbero rivelare la loro intenzione. Un test di codice comune per i casi in cui i nomi non sono chiari come dovrebbero essere è la presenza di commenti che spiegano a cosa serve la variabile o il metodo:
 
@@ -56,7 +52,7 @@ Idealmente, i nomi dovrebbero rivelare la loro intenzione. Un test di codice com
    <td><p>int elapsedTimeInDays;</p> </td>
   </tr>
   <tr>
-   <td><p>//ottieni immagini con tag<br /> elenco pubblico getItems() {}</p> </td>
+   <td><p>//ottieni immagini con tag<br /> public List getItems() {}</p> </td>
    <td><p>elenco pubblico getTaggedImages() {}</p> </td>
   </tr>
  </tbody>
@@ -68,7 +64,7 @@ DRY afferma che lo stesso set di codice non deve mai essere duplicato. Questo va
 
 ### Evita le regole CSS nude {#avoid-naked-css-rules}
 
-Le regole CSS devono essere specifiche per l’elemento di destinazione nel contesto dell’applicazione. Ad esempio, una regola CSS applicata a *.content .center* sarebbe troppo ampio e potrebbe potenzialmente avere un impatto su molti contenuti nel sistema, richiedendo ad altri di ignorare questo stile in futuro. *.myapp-centertext* sarebbe una regola più specifica in quanto specifica centrato *text* nel contesto dell&#39;applicazione.
+Le regole CSS devono essere specifiche per l’elemento di destinazione nel contesto dell’applicazione. Ad esempio, una regola CSS applicata a *.content .center* sarebbe troppo ampio e potrebbe potenzialmente avere un impatto su molti contenuti nel sistema, richiedendo ad altri di ignorare questo stile in futuro. considerando quanto segue: *.myapp-centertext* sarebbe una regola più specifica in quanto specifica centrato *text* nel contesto dell&#39;applicazione.
 
 ### Eliminare l’utilizzo delle API obsolete {#eliminate-usage-of-deprecated-apis}
 
@@ -76,7 +72,7 @@ Quando un’API è obsoleta, è sempre meglio trovare il nuovo approccio consigl
 
 ### Scrivi codice localizzabile {#write-localizable-code}
 
-Eventuali stringhe non fornite da un autore devono essere racchiuse in una chiamata al dizionario i18n dell’AEM tramite *I18n.get()* in JSP/Java e *CQ.I18n.get()* in JavaScript. Questa implementazione restituirà la stringa che gli è stata passata se non viene trovata alcuna implementazione, quindi offre la flessibilità di implementare la localizzazione dopo aver implementato le funzioni nella lingua primaria.
+Eventuali stringhe non fornite da un autore devono essere racchiuse in una chiamata al dizionario AEM i18n tramite *I18n.get()* in JSP/Java e *CQ.I18n.get()* in JavaScript. Questa implementazione restituirà la stringa che gli è stata passata se non viene trovata alcuna implementazione, quindi offre la flessibilità di implementare la localizzazione dopo aver implementato le funzioni nella lingua primaria.
 
 ### Esci dai percorsi delle risorse per la sicurezza {#escape-resource-paths-for-safety}
 
@@ -88,9 +84,9 @@ AEM fornisce un’API XSS per pulire facilmente i parametri e garantire la sicur
 
 ### Implementare la registrazione appropriata {#implement-appropriate-logging}
 
-Per il codice Java, l’AEM supporta slf4j come API standard per la registrazione dei messaggi e deve essere utilizzato insieme alle configurazioni rese disponibili tramite la console OSGi per motivi di coerenza nell’amministrazione. Slf4j espone cinque diversi livelli di registrazione. Per scegliere il livello in cui registrare un messaggio, si consiglia di utilizzare le seguenti linee guida:
+Per il codice Java™, AEM supporta slf4j come API standard per la registrazione dei messaggi e deve essere utilizzato con le configurazioni rese disponibili tramite la console OSGi per motivi di coerenza nell’amministrazione. Slf4j espone cinque diversi livelli di registrazione. L’Adobe consiglia di utilizzare le seguenti linee guida nella scelta del livello in cui registrare un messaggio:
 
-* ERRORE: quando si è verificato un errore nel codice e l’elaborazione non può continuare. Ciò si verifica spesso a seguito di un’eccezione imprevista. In questi scenari è in genere utile includere le tracce dello stack.
+* ERRORE: quando si è verificato un errore nel codice e l’elaborazione non può continuare. Ciò si verifica spesso a seguito di un’eccezione imprevista. In questi scenari è utile includere le tracce dello stack.
 * AVVERTENZA: se qualcosa non funziona correttamente, l’elaborazione può continuare. Questo sarà spesso il risultato di un’eccezione che ci aspettavamo, ad esempio *PathNotFoundException*.
 * INFORMAZIONI: informazioni utili per il monitoraggio di un sistema. Tieni presente che questa è l’impostazione predefinita e che la maggior parte dei clienti la lascerà nei propri ambienti. Pertanto, non utilizzarlo in modo eccessivo.
 * DEBUG: informazioni di livello inferiore sull’elaborazione. Utile quando si esegue il debug di un problema con il supporto.

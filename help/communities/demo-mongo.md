@@ -1,9 +1,6 @@
 ---
 title: Come impostare MongoDB per la demo
-seo-title: How to Setup MongoDB for Demo
-description: Come impostare MSRP per un’istanza di authoring e un’istanza di pubblicazione
-seo-description: How to setup MSRP for one author instance and one publish instance
-uuid: d2035a9e-f05c-4f90-949d-7cdae9646750
+description: Impostare MSRP per un'istanza di authoring e un'istanza di pubblicazione
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -11,9 +8,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -24,7 +21,7 @@ ht-degree: 0%
 
 Questo tutorial descrive come impostare [MSRP](msrp.md) per *un autore* istanza e *una pubblicazione* dell&#39;istanza.
 
-Con questa configurazione, il contenuto della community è accessibile sia dagli ambienti di authoring che da quelli di pubblicazione senza la necessità di inoltrare o invertire i contenuti generati dagli utenti (UGC, User Generated Content).
+Con questa configurazione, il contenuto della community è accessibile sia dagli ambienti di authoring che da quelli di pubblicazione senza la necessità di inoltrare o invertire i contenuti generati dagli utenti (UGC, User-Generated Content).
 
 Questa configurazione è adatta per *non produzione* ambienti come quelli di sviluppo e/o dimostrazione.
 
@@ -38,17 +35,17 @@ Questa configurazione è adatta per *non produzione* ambienti come quelli di svi
 
 ### Installare MongoDB {#install-mongodb}
 
-* Scarica MongoDB da [https://www.mongodb.org/](https://www.mongodb.org/)
+* Scarica MongoDB da [https://www.mongodb.com/](https://www.mongodb.com/)
 
    * Scelta del sistema operativo:
 
-      * Linux
+      * Linux®
       * Mac 10.8
       * Windows 7
+
    * Scelta versione:
 
       * Utilizza almeno la versione 2.6
-
 
 * Configurazione di base
 
@@ -56,9 +53,9 @@ Questa configurazione è adatta per *non produzione* ambienti come quelli di svi
    * Configura per monGod:
 
       * Non è necessario configurare i monghi o la condivisione.
-   * La cartella MongoDB installata sarà indicata come &lt;mongo-install>.
-   * Il percorso della directory dei dati definito viene indicato come &lt;mongo-dbpath>.
 
+   * La cartella MongoDB installata è denominata &lt;mongo-install>.
+   * Il percorso della directory dati definito è denominato &lt;mongo-dbpath>.
 
 * MongoDB può essere eseguito sullo stesso host dell’AEM o in remoto.
 
@@ -100,13 +97,13 @@ I seguenti comandi sono un esempio di configurazione di un set di repliche con 3
 
    * Adatto a qualsiasi sistema operativo.
    * Solr versione 7.0.
-   * Solr richiede Java 1.7 o versione successiva.
+   * Solr richiede Java™ 1.7 o versione successiva.
 
 * Configurazione di base
 
    * Segui l’impostazione Solr di esempio.
    * Nessun servizio richiesto.
-   * La cartella Solr installata sarà indicata come &lt;solr-install>.
+   * La cartella Solr installata è denominata &lt;solr-install>.
 
 ### Configurare Solr per AEM Communities {#configure-solr-for-aem-communities}
 
@@ -122,20 +119,21 @@ Il metodo di esecuzione di Solr può variare a seconda della versione e delle mo
 Per semplicità, utilizzando la versione 4.10 come esempio, avviare Solr in modalità standalone:
 
 * cd a &lt;solrinstall>/example
-* java -jar start.jar
+* Java™ -jar start.jar
 
-Verrà avviato un server HTTP Solr utilizzando la porta predefinita 8983. È possibile passare alla console Solr per ottenere una console Solr da testare.
+Questo processo avvia un server HTTP Solr utilizzando la porta predefinita 8983. È possibile passare alla console Solr per ottenere una console Solr da testare.
 
 * console Solr predefinita: [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
 >Se Solr Console non è disponibile, controlla i registri in &lt;solrinstall>/example/logs. Verificare se SOLR sta tentando di eseguire il binding a un nome host specifico che non può essere risolto (ad esempio, &quot;user-macbook-pro&quot;).
-In tal caso, aggiorna il file etc/hosts con una nuova voce per questo nome host (ad esempio 127.0.0.1 user-macbook-pro) e Solr verrà avviato correttamente.
+>
+In caso affermativo, aggiorna `etc/hosts` con una nuova voce per questo nome host (ad esempio, 127.0.0.1 user-macbook-pro) per avviare correttamente Solr.
 
 ### SolrCloud {#solrcloud}
 
-Per eseguire una configurazione di base (non di produzione) di solrCloud, inizia a utilizzare solr con:
+Per eseguire un&#39;installazione di base (non di produzione) di solrCloud, avvia solr con:
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
@@ -143,7 +141,7 @@ Per eseguire una configurazione di base (non di produzione) di solrCloud, inizia
 
 Avvia l’authoring e pubblica le istanze AEM, se necessario.
 
-Se l’AEM era in esecuzione prima dell’avvio di MongoDB, sarà necessario riavviare le istanze dell’AEM.
+Se l’AEM era in esecuzione prima dell’avvio di MongoDB, è necessario riavviare le istanze dell’AEM.
 
 Segui le istruzioni riportate nella pagina della documentazione principale: [MSRP - Archivio comune MongoDB](msrp.md)
 
@@ -161,7 +159,7 @@ Per testare e verificare il Common Store MongoDB, pubblica un commento sull’is
 
    ![view-comment](assets/view-comment.png)
 
-   Nota: nonostante la presenza di nodi JCR sotto il *asipath* in fase di authoring, sono per il framework SCF. L’UGC effettivo non è in JCR, ma in MongoDB.
+   Nota: nonostante la presenza di nodi JCR sotto il *asipath* in authoring, questi nodi sono per il framework SCF. L’UGC effettivo non è in JCR, ma in MongoDB.
 
 1. Visualizza UGC in mongodb **[!UICONTROL Community]** > **[!UICONTROL Raccolte]** > **[!UICONTROL Contenuto]**
 
@@ -184,7 +182,7 @@ Per testare e verificare il Common Store MongoDB, pubblica un commento sull’is
 
 1. Verificare che MSRP sia stato configurato come provider predefinito:
 
-   * Su tutte le istanze AEM di authoring e pubblicazione, rivedi il [Console di configurazione archiviazione](srp-config.md) oppure controlla l’archivio AEM:
+   * Su tutte le istanze AEM di authoring e pubblicazione, rivedi il [Console di configurazione archiviazione](srp-config.md), o controlla l&#39;archivio AEM:
 
    * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) non contiene un [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) significa che il provider di archiviazione è JSRP.
    * Se il nodo srpc esiste e contiene un nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito.

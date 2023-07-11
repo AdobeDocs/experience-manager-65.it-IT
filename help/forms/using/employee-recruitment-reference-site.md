@@ -1,14 +1,10 @@
 ---
 title: Procedura dettagliata sul sito di riferimento per la selezione dei dipendenti
-seo-title: Employee recruitment
 description: Il sito di riferimento AEM Forms mostra come le organizzazioni possono utilizzare le funzioni di AEM Forms per implementare il flusso di lavoro di selezione dei dipendenti.
-seo-description: AEM Forms reference site showcases how organizations can use AEM Forms features to implement employee recruitment workflow.
-uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -86,13 +82,13 @@ La home page di We.Finance e la pagina relativa alla carriera sono pagine AEM Si
 
 ### Vedi tu stesso {#see-it-yourself}
 
-Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` e fai clic su **[!UICONTROL Carriera]**. Clic **[!UICONTROL Ricerca]** per compilare l&#39;elenco dei processi e quindi fare clic su **[!UICONTROL Applica]** per un lavoro. Compila i dettagli nel modulo e invia la domanda.
+Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` e fai clic su **[!UICONTROL Carriera]**. Clic **[!UICONTROL Ricerca]** in modo da compilare l&#39;elenco dei job e quindi fare clic su **[!UICONTROL Applica]** per un lavoro. Compila i dettagli nel modulo e invia la domanda.
 
-Assicurarsi di specificare un ID e-mail valido nell&#39;applicazione, in quanto tutte le comunicazioni effettuate tramite questa procedura dettagliata verranno inviate all&#39;ID e-mail specificato.
+Assicurarsi di specificare un ID e-mail valido nell&#39;applicazione, in quanto tutte le comunicazioni effettuate tramite questa procedura dettagliata vengono inviate all&#39;ID e-mail specificato.
 
 ## John Jacobs ha selezionato il profilo di Sarah Rose per la selezione del responsabile dell&#39;assunzione {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-L&#39;organizzazione riceve la candidatura di lavoro inviata da Sarah. A John Jacobs, un reclutatore, viene assegnato il compito di rivedere il profilo di Sarah. Esamina l’attività nella sua casella in entrata AEM, trova il profilo che corrisponde ai requisiti del lavoro e fa clic su Shortlist. Il profilo di Sarah viene inoltrato a Gloria Rios, la responsabile delle assunzioni, per la sua approvazione.
+L&#39;organizzazione riceve la candidatura di lavoro inviata da Sarah. A John Jacobs, un reclutatore, viene assegnato il compito di rivedere il profilo di Sarah. John rivede l’attività nella sua casella in entrata AEM, trova il profilo che corrisponde ai requisiti del lavoro e fa clic su Shortlist. Il profilo di Sarah viene inoltrato a Gloria Rios, la responsabile delle assunzioni, per la sua approvazione.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -146,7 +142,7 @@ John Doe pianifica l&#39;intervista e invia i dettagli a Sarah Rose
 
 ## Sarah Rose riceve l&#39;e-mail con il programma del colloquio {#sarah-rose-receives-the-email-with-interview-schedule}
 
-Sarah Rose riceve l’e-mail con il programma dei colloqui, la sede del colloquio e altri dettagli. Fa clic su Accept per indicare che è a posto con il programma e la sede del colloquio. Come guidata da informazioni precise, Sarah si presenta alle interviste.
+Sarah Rose riceve l’e-mail con il programma dei colloqui, la sede del colloquio e altri dettagli. Sarah fa clic su Accept per indicare che la programmazione e il luogo del colloquio sono corretti. Come guidata da informazioni precise, Sarah si presenta alle interviste.
 
 ![sarahroseinterviewemail](assets/sarahroseinterviewemail.png)
 
@@ -166,7 +162,7 @@ Gloria Rios seleziona Sarah Rose dopo le interviste
 
 ## John Doe richiede ulteriori informazioni {#john-doe-requests-more-information}
 
-Prima di chiedere a un candidato di entrare nell&#39;organizzazione, il suo background deve essere controllato. John Doe apre e rivede i dettagli del candidato selezionato e scopre che alcuni dei suoi dettagli relativi all&#39;impiego e all&#39;istruzione non sono ancora stati compilati. I clic di John Doe richiedono ulteriori informazioni.
+Prima di chiedere a un candidato di entrare nell&#39;organizzazione, bisogna controllare il background di Sarah. John Doe apre e rivede i dettagli del candidato selezionato e scopre che alcuni dei suoi dettagli relativi all&#39;impiego e all&#39;istruzione non sono ancora stati compilati. I clic di John Doe richiedono ulteriori informazioni.
 
 ![johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
 

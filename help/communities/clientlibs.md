@@ -1,19 +1,15 @@
 ---
 title: Clientlibs per i componenti Communities
-seo-title: Clientlibs for Communities Components
 description: Librerie lato client per le community
-seo-description: Client-side libraries for Communities
-uuid: d2a9f986-96cf-4ee8-81e6-36a96f45ddcb
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
@@ -34,9 +30,9 @@ Per informazioni di base, visitare il sito:
 
 Le clientlibs sono necessarie per il corretto funzionamento (JavaScript) e lo stile (CSS) di un componente.
 
-Quando esiste un [funzione community](/help/communities/functions.md) per una funzione, tutti i componenti e le configurazioni necessari, comprese le clientlibs richieste, saranno presenti nel sito community. Solo se gli autori devono disporre di componenti aggiuntivi, è necessario aggiungere altre clientlibs.
+Quando esiste un [funzione community](/help/communities/functions.md) per una funzione, tutti i componenti e le configurazioni necessari, comprese le clientlibs richieste, sono presenti nel sito community. Solo se gli autori devono disporre di componenti aggiuntivi, è necessario aggiungere altre clientlibs.
 
-Quando mancano le clientlibs richieste, [aggiunta di un componente Communities a una pagina](/help/communities/author-communities.md) potrebbe causare errori javascript e un aspetto imprevisto.
+Quando mancano le clientlibs richieste, [aggiunta di un componente Communities a una pagina](/help/communities/author-communities.md) potrebbe causare errori JavaScript e un aspetto imprevisto.
 
 ### Esempio: revisioni posizionate senza clientlibs {#example-placed-reviews-without-clientlibs}
 
@@ -61,7 +57,7 @@ Ad esempio, nella parte superiore della sezione [Pagina Revisioni](https://local
 
 ## Aggiunta di clientlibs richieste {#adding-required-clientlibs}
 
-Per aggiungere un componente Communities a una pagina, se non è già presente, sarà necessario aggiungere le clientlibs richieste per il componente.
+Quando si desidera aggiungere un componente Communities a una pagina, se non è già presente, è necessario aggiungere le clientlibs richieste per il componente.
 
 Utilizzare [CRXDE|Lite](#using-crxde-lite) per modificare un elenco clientlibslist esistente per una pagina del sito community.
 
@@ -83,8 +79,8 @@ Per aggiungere una libreria client per un sito community tramite [CRXDE Lite](/h
          * Ripeti l’operazione per aggiungere altre librerie client.
 
          * Seleziona **OK**.
-   * Seleziona **Salva tutto**.
 
+   * Seleziona **Salva tutto**.
 
 >[!NOTE]
 >

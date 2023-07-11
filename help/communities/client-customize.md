@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | **[⇐ funzioni di base](essentials.md)** | **[⇒ di personalizzazione lato server](server-customize.md)** |
 |---|---|
-|  | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |
+|   | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |
 
 Per personalizzare l’aspetto e/o il comportamento di un componente AEM Communities sul lato client, esistono diversi approcci.
 
@@ -53,7 +53,7 @@ Questo è diverso da [sovrapposizione](#overlays) il componente predefinito in c
 
 Per un rapido esempio di estensione del componente Commenti, prova [Tutorial sul componente Estendi commenti](extend-comments.md).
 
-## Binding JavaScript {#javascript-binding}
+## Associazione JavaScript {#javascript-binding}
 
 Lo script HBS per il componente deve essere associato agli oggetti, ai modelli e alle viste JavaScript che implementano questa funzione.
 
@@ -63,7 +63,7 @@ Per associare un componente, l’intero script del componente deve essere racchi
 
 * `data-component-id`=&quot;{{id}}&quot;
 
-   viene risolto nella proprietà id dal contesto
+  viene risolto nella proprietà id dal contesto
 
 * `data-scf-component`=&quot;*&lt;resourcetype>*
 
@@ -87,13 +87,13 @@ Quando si estende o si sovrappone un componente, è possibile aggiungere proprie
 
 ## CSS interfaccia {#skinning-css}
 
-Personalizzare i componenti in modo che corrispondano al tema generale del sito web può essere ottenuto &quot;scuoiando&quot; - cambiando i colori, font, immagini, pulsanti, collegamenti, spaziatura e anche il posizionamento in una certa misura.
+Personalizzare i componenti in modo che corrispondano al tema generale del sito web può essere ottenuto &quot;scuoiando&quot;: cambiando colori, font, immagini, pulsanti, collegamenti, spaziatura e persino posizionando in una certa misura.
 
-È possibile eseguire lo skin sostituendo in modo selettivo gli stili del framework o scrivendo fogli di stile completamente nuovi. I componenti SCF definiscono classi CSS con spazio dei nomi, modulari e semantiche che influenzano i vari elementi che compongono un componente.
+È possibile eseguire lo skin sostituendo in modo selettivo gli stili del framework o scrivendo fogli di stile completamente nuovi. I componenti SCF definiscono classi CSS con spazio dei nomi, modulari e semantiche che influiscono sui vari elementi che compongono un componente.
 
 Per applicare lo skin a un componente:
 
-1. Identifica gli elementi da modificare (ad esempio, area del compositore, pulsanti della barra degli strumenti, tipo di carattere del messaggio e così via).
+1. Identificare gli elementi che si desidera modificare (ad esempio l&#39;area del compositore, i pulsanti della barra degli strumenti, il carattere del messaggio e così via).
 1. Identifica la classe CSS o le regole che influenzano questi elementi.
 1. Creare un file del foglio di stile (css).
 1. Includere il foglio di stile in una cartella della libreria client ([clientlibs](#clientlibs-for-scf)) per il sito e assicurati che sia incluso dai modelli e dalle pagine con [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
@@ -104,17 +104,17 @@ Gli stili personalizzati sovrascriveranno gli stili di framework predefiniti e i
 
 >[!CAUTION]
 >
->Qualsiasi nome di classe CSS con prefisso `scf-js` ha un utilizzo specifico nel codice javascript. Queste classi influiscono sullo stato di un componente (ad esempio, da nascosto a visibile) e non devono essere ignorate né rimosse.
+>Qualsiasi nome di classe CSS con prefisso `scf-js` ha un utilizzo specifico nel codice JavaScript. Queste classi influiscono sullo stato di un componente (ad esempio, da nascosto a visibile) e non devono essere ignorate né rimosse.
 >
->Mentre il `scf-js` Le classi non influiscono sugli stili, i nomi delle classi possono essere utilizzati nei fogli di stile con l&#39;avvertenza che, poiché controllano gli stati degli elementi, possono verificarsi effetti collaterali.
+>Mentre il `scf-js` le classi non influiscono sugli stili, i nomi delle classi possono essere utilizzati nei fogli di stile con l&#39;avvertenza che, poiché controllano gli stati degli elementi, possono verificarsi effetti collaterali.
 
 ## Estensione di JavaScript {#extending-javascript}
 
-Per estendere un’implementazione JavaScript di componenti, è necessario:
+Per estendere un’implementazione JavaScript dei componenti, devi:
 
-1. Crea un componente per l’app con un jcr:resourceSuperType impostato sul valore del jcr:resourceType del componente esteso, ad esempio social/forum/components/hbs/forum.
-1. Esaminare il codice JavaScript del componente SCF predefinito per determinare i metodi da registrare utilizzando SCF.registerComponent().
-1. Copia il codice JavaScript del componente esteso o inizia da zero.
+1. Crea un componente per la tua app con un jcr:resourceSuperType impostato sul valore del jcr:resourceType del componente esteso, ad esempio social/forum/components/hbs/forum.
+1. Esamina il JavaScript del componente SCF predefinito per determinare quali metodi devono essere registrati utilizzando SCF.registerComponent().
+1. Copia il JavaScript del componente esteso o inizia da zero.
 1. Estendere il metodo.
 1. Utilizzare SCF.registerComponent() per registrare tutti i metodi con le impostazioni predefinite o con gli oggetti e le visualizzazioni personalizzate.
 
@@ -200,10 +200,10 @@ Le clientlibs dell’autore richieste possono essere identificate inserendo &quo
 
 Ogni sito è diverso nel modo in cui gestisce le librerie client. Vari fattori includono:
 
-* Velocità complessiva: forse il desiderio è che il sito sia reattivo, ma è accettabile che la prima pagina sia un po&#39; lenta da caricare. Se molte pagine utilizzano lo stesso JavaScript, è possibile incorporare i vari JavaScript in una libreria client e farvi riferimento dalla prima pagina da caricare. Il codice JavaScript in questo singolo download rimane memorizzato nella cache, riducendo al minimo la quantità di dati da scaricare per le pagine successive.
-* Breve tempo alla prima pagina: forse il desiderio è che la prima pagina venga caricata rapidamente. In questo caso, JavaScript si trova in più file di piccole dimensioni a cui fare riferimento solo quando necessario.
+* Velocità complessiva: forse il desiderio è che il sito sia reattivo, ma è accettabile che la prima pagina sia un po&#39; lenta da caricare. Se molte pagine utilizzano lo stesso JavaScript, i vari JavaScript possono essere incorporati in una libreria client e a cui si fa riferimento dalla prima pagina da caricare. Il JavaScript in questo singolo download rimane memorizzato nella cache, riducendo al minimo la quantità di dati da scaricare per le pagine successive.
+* Breve tempo alla prima pagina: forse il desiderio è che la prima pagina venga caricata rapidamente. In questo caso, il JavaScript si trova in più file di piccole dimensioni a cui fare riferimento solo quando necessario.
 * Equilibrio tra il primo caricamento della pagina e i download successivi.
 
 | **[⇐ funzioni di base](essentials.md)** | **[⇒ di personalizzazione lato server](server-customize.md)** |
 |---|---|
-|  | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |
+|   | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |
