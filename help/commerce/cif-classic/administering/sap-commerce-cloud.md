@@ -1,14 +1,13 @@
 ---
 title: Utilizzo dell'AEM con SAP Commerce Cloud
 description: Scopri come utilizzare l’AEM con SAP Commerce Cloud.
-uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1702'
 ht-degree: 2%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 2%
 
 Dopo l’installazione è possibile configurare l’istanza:
 
-1. [Configurare la ricerca con facet per i Geometrixx Outdoors](#configure-the-facetted-search-for-geometrixx-outdoors).
+1. [Configurare la ricerca di Geometrixx Outdoors con facet](#configure-the-facetted-search-for-geometrixx-outdoors).
 1. [Configurare la versione del catalogo](#configure-the-catalog-version).
 1. [Configurare la struttura di importazione](#configure-the-import-structure).
 1. [Configurare gli attributi del prodotto da caricare](#configure-the-product-attributes-to-load).
@@ -25,7 +24,7 @@ Dopo l’installazione è possibile configurare l’istanza:
 1. [Configurare la funzione di importazione catalogo](#configure-the-catalog-importer).
 1. Utilizza il [importazione per importare il catalogo](#catalog-import) in una sede specifica dell’AEM.
 
-## Configurare la ricerca con facet per i Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Configurare la ricerca di Geometrixx Outdoors con facet {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -52,27 +51,27 @@ Dopo l’installazione è possibile configurare l’istanza:
    >
    >Utilizza il menu di scelta rapida (in genere clic con il pulsante destro del mouse) per selezionare `Create Solr sort`.
    >
-   >Per Hybris 5.0.0 aprire il `Indexed Types` , fare doppio clic su `ClothesVariantProduct`, quindi la scheda `SOLR Sort`.
+   >Per Hybris 5.0.0 aprire il `Indexed Types` , fare doppio clic `ClothesVariantProduct`, quindi la scheda `SOLR Sort`.
 
    ![chlimage_1-36](/help/sites-administering/assets/chlimage_1-36a.png)
 
-1. In **Tipi indicizzati** scheda imposta il **Tipo composto** a:
+1. In **Tipi indicizzati** , impostare **Tipo composto** a:
 
    `Product - Product`
 
-1. In **Tipi indicizzati** scheda regola **Query indicizzatore** per `full`:
+1. In **Tipi indicizzati** , regola il **Query indicizzatore** per `full`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}})
    ```
 
-1. In **Tipi indicizzati** scheda regola **Query indicizzatore** per `incremental`:
+1. In **Tipi indicizzati** , regola il **Query indicizzatore** per `incremental`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime
    ```
 
-1. In **Tipi indicizzati** scheda regola `category` sfaccettatura. Fare doppio clic sull&#39;ultima voce dell&#39;elenco delle categorie per aprire **Proprietà indicizzata** scheda:
+1. In **Tipi indicizzati** , regola il `category` sfaccettatura. Fare doppio clic sull&#39;ultima voce dell&#39;elenco delle categorie per aprire **Proprietà indicizzata** scheda:
 
    >[!NOTE]
    >
@@ -85,7 +84,7 @@ Dopo l’installazione è possibile configurare l’istanza:
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
 1. **Salva le modifiche.**
-1. Di nuovo da **Tipi di articoli SOLR**, regola `price` facet in base alle schermate seguenti. Come con `category`, doppio clic su `price` per aprire **Proprietà indicizzata** scheda:
+1. Di nuovo da **Tipi di articoli SOLR**, regola `price` facet in base alle schermate seguenti. Come con `category`, doppio clic `price` per aprire **Proprietà indicizzata** scheda:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
 
@@ -106,7 +105,7 @@ Il **Versione catalogo** ( `hybris.catalog.version`) importato può essere confi
 **Configurazione Day CQ Commerce Hybris**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**Versione catalogo** è in genere impostato su `Online` o `Staged` (impostazione predefinita).
+**Versione catalogo** è impostato su `Online` o `Staged` (impostazione predefinita).
 
 >[!NOTE]
 >
@@ -199,7 +198,7 @@ Le seguenti proprietà indicano il collegamento con l’ibrido:
 
 >[!NOTE]
 >
->L’implementazione ibrida (ad es. `geometrixx-outdoors/en_US`) memorizza solo gli ID prodotto e altre informazioni di base in `/etc/commerce`.
+>L’implementazione ibrida (ovvero `geometrixx-outdoors/en_US`) memorizza solo gli ID prodotto e altre informazioni di base in `/etc/commerce`.
 >
 >Ogni volta che vengono richieste informazioni su un prodotto, viene fatto riferimento al server ibrido.
 
@@ -207,7 +206,7 @@ Le seguenti proprietà indicano il collegamento con l’ibrido:
 
 1. Se necessario, elimina tutti i dati di prodotto esistenti utilizzando CRXDE Lite.
 
-   1. Passa alla sottostruttura contenente i dati del prodotto:
+   1. Passare alla sottostruttura contenente i dati del prodotto:
 
       `/etc/commerce/products`
 
@@ -244,7 +243,7 @@ Le seguenti proprietà indicano il collegamento con l’ibrido:
 
 ### Importazione incrementale {#incremental-import}
 
-1. Controllare le informazioni detenute nell’AEM per i prodotti in questione, nel sottoalbero pertinente nell’ambito:
+1. Controllare le informazioni detenute nell’AEM per i prodotti in questione, nel sottoalbero appropriato alla voce:
 
    `/etc/commerce/products`
 
@@ -252,7 +251,7 @@ Le seguenti proprietà indicano il collegamento con l’ibrido:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. In hybris, aggiornare le informazioni contenute sul(i) prodotto(i) rivelante(i).
+1. In hybris, aggiornare le informazioni contenute sui prodotti rilevanti.
 
 1. Aprire l’importatore di ibridi in AEM:
 
@@ -262,7 +261,7 @@ Le seguenti proprietà indicano il collegamento con l’ibrido:
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. Seleziona la casella di selezione **Importazione incrementale**.
+1. Seleziona la casella di controllo **Importazione incrementale**.
 1. Clic **Importa catalogo** per avviare l&#39;importazione.
 
    Una volta completati, puoi verificare i dati aggiornati in AEM in:
@@ -276,7 +275,7 @@ Le seguenti proprietà indicano il collegamento con l’ibrido:
 
 Il processo di importazione può richiedere molto tempo, pertanto come estensione della sincronizzazione di prodotto puoi selezionare aree specifiche del catalogo per un aggiornamento rapido che viene attivato manualmente. Questo utilizza il feed di esportazione insieme alla configurazione degli attributi standard.
 
-1. Controllare le informazioni detenute nell’AEM per i prodotti in questione, nel sottoalbero pertinente nell’ambito:
+1. Controllare le informazioni detenute nell’AEM per i prodotti in questione, nel sottoalbero appropriato alla voce:
 
    `/etc/commerce/products`
 
@@ -284,9 +283,9 @@ Il processo di importazione può richiedere molto tempo, pertanto come estension
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. In hybris, aggiornare le informazioni contenute sul(i) prodotto(i) rivelante(i).
+1. In hybris, aggiornare le informazioni contenute sui prodotti rilevanti.
 
-1. In modalità ibrida, aggiungi i prodotti alla coda Express; ad esempio:
+1. In modalità ibrida, aggiungi uno o più prodotti alla coda Express; ad esempio:
 
    ![chlimage_1-43](/help/sites-administering/assets/chlimage_1-43a.png)
 
@@ -298,7 +297,7 @@ Il processo di importazione può richiedere molto tempo, pertanto come estension
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. Seleziona la casella di selezione **Aggiornamento rapido**.
+1. Seleziona la casella di controllo **Aggiornamento rapido**.
 1. Clic **Importa catalogo** per avviare l&#39;importazione.
 
    Una volta completati, puoi verificare i dati aggiornati in AEM in:
@@ -309,7 +308,7 @@ Il processo di importazione può richiedere molto tempo, pertanto come estension
 
 ## Configurare la funzione di importazione catalogo {#configure-the-catalog-importer}
 
-Il catalogo ibrido può essere importato in AEM, utilizzando l&#39;importazione batch per cataloghi ibridi, categorie e prodotti.
+Il catalogo ibrido può essere importato in AEM, utilizzando l’importazione batch per i cataloghi ibridi, le categorie e i prodotti.
 
 I parametri utilizzati dall’importazione possono essere configurati per:
 
@@ -357,7 +356,7 @@ Per rimuovere uno o più prodotti dal catalogo:
 1. Inizializza l’importazione eseguendo due aggiornamenti incrementali (consulta [Importazione catalogo](#catalog-import)):
 
    * La prima esecuzione si traduce in un set di prodotti modificati, indicato nell’elenco dei registri.
-   * Per la seconda volta non è necessario aggiornare alcun prodotto.
+   * Per la seconda volta, non è necessario aggiornare alcun prodotto.
 
    >[!NOTE]
    >
@@ -369,7 +368,7 @@ Per rimuovere uno o più prodotti dal catalogo:
 
    [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-1. Rimuovi il prodotto nella console Hybris. Utilizza l’opzione **Modifica stato approvazione** per impostare lo stato su `unapproved`. Il prodotto verrà rimosso dal feed live.
+1. Rimuovi il prodotto nella console Hybris. Utilizza l’opzione **Modifica stato approvazione** per impostare lo stato su `unapproved`. Il prodotto viene rimosso dal feed vivo.
 
    Ad esempio:
 
@@ -378,21 +377,21 @@ Per rimuovere uno o più prodotti dal catalogo:
    * Cerca `Cajamara`
    * Seleziona questo prodotto e modifica lo stato di approvazione in `unapproved`
 
-1. Eseguire un altro aggiornamento incrementale (vedere [Importazione catalogo](#catalog-import)). Il registro elencherà il prodotto eliminato.
-1. [Rollout](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) il catalogo appropriato. La pagina del prodotto e quella del prodotto saranno state rimosse dall’AEM.
+1. Eseguire un altro aggiornamento incrementale (vedere [Importazione catalogo](#catalog-import)). Il registro elenca il prodotto eliminato.
+1. [Rollout](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) il catalogo appropriato. La pagina del prodotto e quella del prodotto sono state rimosse dall’AEM.
 
    Ad esempio:
 
    * Apri:
 
-      [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
+     [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
    * Eseguire il rollout di `Hybris Base` catalogo
    * Apri:
 
-      [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
+     [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * Il `Cajamara` il prodotto sarà stato rimosso dal `Bike` categoria
+   * Il `Cajamara` il prodotto viene rimosso dal `Bike` categoria
 
 1. Per ripristinare il prodotto:
 
@@ -436,4 +435,3 @@ Per aggiungere la cronologia degli ordini al [contesto client](/help/sites-devel
    >* Fai clic sul segmento ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
    >
    >* Il segmento viene creato utilizzando **Proprietà cronologia ordini** caratteristica.
-

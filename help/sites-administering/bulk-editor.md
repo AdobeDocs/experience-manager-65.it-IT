@@ -1,19 +1,15 @@
 ---
 title: Editor in blocco
-seo-title: The Bulk Editor
 description: Scopri come utilizzare l’editor in blocco.
-seo-description: Learn how to use the Bulk Editor.
-uuid: 5f5e4190-d9b2-40a6-8cf4-4b7aebe35ad3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1159'
 ht-degree: 1%
 
 ---
@@ -21,10 +17,10 @@ ht-degree: 1%
 
 # Editor in blocco{#the-bulk-editor}
 
-L’editor in blocco consente di modificare in modo molto efficiente quando il contesto della pagina visiva non è necessario, in quanto consente di:
+L’editor in blocco consente di modificare in modo efficiente quando il contesto della pagina visiva non è necessario, in quanto consente di:
 
 * ricerca (e visualizzazione) di contenuti da più pagine, utilizzando GQL (Google Query Language)
-* modifica questo contenuto direttamente nell’editor in blocco
+* modificare questo contenuto direttamente nell’editor in blocco
 * salva le modifiche (nelle pagine di origine)
 * esporta questo contenuto in un file di foglio di calcolo separato da tabulazioni (.tsv)
 
@@ -32,7 +28,7 @@ L’editor in blocco consente di modificare in modo molto efficiente quando il c
 >
 >Puoi anche importare il contenuto nell’archivio, ma per impostazione predefinita questa opzione è disabilitata per l’editor in blocco come disponibile nella **Strumenti** console.
 
-Questa sezione descrive come lavorare con l’editor in blocco nel **Strumenti** console. In genere, gli amministratori utilizzano l’editor in blocco per cercare e modificare più elementi. A tale scopo, compila la tabella utilizzando una query GQL e quindi seleziona gli elementi di contenuto su cui lavorare. Gli autori generalmente utilizzano l’editor in blocco come parte di un’applicazione di editor in blocco personalizzata accessibile tramite [elenco prodotti](/help/sites-authoring/default-components.md#productlist) componente.
+Questa sezione descrive come lavorare con l’Editor collettivo in **Strumenti** console. In genere, gli amministratori utilizzano l’Editor collettivo per cercare e modificare più elementi. A tale scopo, compila la tabella utilizzando una query GQL e quindi seleziona gli elementi di contenuto su cui lavorare. Gli autori generalmente utilizzano l’Editor collettivo come parte di un’applicazione personalizzata per l’editor collettivo accessibile tramite [elenco prodotti](/help/sites-authoring/default-components.md#productlist) componente.
 
 >[!CAUTION]
 >
@@ -49,7 +45,7 @@ Un esempio per illustrare un caso d’uso di questo tipo è incluso nel Geometri
 
    ![Esempio di sondaggio sulla soddisfazione del cliente](assets/custsatsurvey.png)
 
-1. L’editor collettivo è completamente personalizzabile. Tuttavia, in questo esempio l’editor collettivo non consente agli utenti di modificare il contenuto, ma solo di esportare le informazioni in un foglio di calcolo.
+1. L’editor collettivo è completamente personalizzabile, anche se in questo esempio l’editor collettivo non consente agli utenti di modificare il contenuto, ma solo di esportare le informazioni in un foglio di calcolo.
 
    ![Console dell’editor in blocco](assets/bulkeditor.png)
 
@@ -64,7 +60,7 @@ L’editor in blocco consente di:
 
 ### Ricerca e modifica dei contenuti {#searching-and-editing-content}
 
-Per utilizzare l&#39;editor in blocco per modificare più elementi contemporaneamente:
+Per utilizzare l&#39;Editor collettivo per modificare più elementi contemporaneamente:
 
 1. In **Strumenti** , fai clic su **Importatori** per espanderla.
 1. Fai doppio clic su **Editor in blocco** per aprirlo.
@@ -78,11 +74,11 @@ Per utilizzare l&#39;editor in blocco per modificare più elementi contemporanea
   </tr>
   <tr>
    <td>Percorso directory principale</td>
-   <td>Indica il percorso della directory principale cercato dall’editor in blocco.<br /> Ad esempio, <code>/content/geometrixx/en</code>. L’editor collettivo esegue ricerche in tutti i nodi secondari.</td>
+   <td>Indica il percorso della directory principale cercato dall'editor di massa.<br /> Ad esempio, <code>/content/geometrixx/en</code>. L’editor collettivo esegue la ricerca su tutti i nodi secondari.</td>
   </tr>
   <tr>
    <td>Parametri di query</td>
-   <td>Utilizzando i parametri GQL, inserisci la stringa di ricerca che desideri che l’editor collettivo cerchi nel repository; ad esempio, <code>type:Page</code> cerca tutte le pagine nel percorso principale, <code>text:professional</code> cerca tutte le pagine contenenti la parola "professionale" e <code>"jcr:title":English</code> cerca tutte le pagine il cui titolo è "English". È possibile cercare solo stringhe.</td>
+   <td>Utilizzando i parametri GQL, immetti la stringa di ricerca che desideri che l’Editor collettivo cerchi nel repository; ad esempio, <code>type:Page</code> cerca tutte le pagine nel percorso principale, <code>text:professional</code> cerca tutte le pagine contenenti la parola "professionale" e <code>"jcr:title":English</code> cerca tutte le pagine il cui titolo è "English". È possibile cercare solo stringhe.</td>
   </tr>
   <tr>
    <td>Casella di controllo Modalità contenuto</td>
@@ -90,7 +86,7 @@ Per utilizzare l&#39;editor in blocco per modificare più elementi contemporanea
   </tr>
   <tr>
    <td>Proprietà/Colonne</td>
-   <td>Selezionare le caselle di controllo relative alle proprietà che si desidera vengano restituite dall'editor bulk. Le proprietà selezionate sono le intestazioni di colonna nel riquadro dei risultati. Per impostazione predefinita, il percorso del nodo viene visualizzato nei risultati.</td>
+   <td>Selezionare le caselle di controllo relative alle proprietà che si desidera vengano restituite dall'Editor collettivo. Le proprietà selezionate sono le intestazioni di colonna nel riquadro dei risultati. Per impostazione predefinita, il percorso del nodo viene visualizzato nei risultati.</td>
   </tr>
   <tr>
    <td>Proprietà personalizzate/Colonne</td>
@@ -108,7 +104,7 @@ Nell’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca v
 
    ![Risultati dell’editor in blocco](assets/chlimage_1-39.png)
 
-1. Per apportare le modifiche necessarie, fare doppio clic in una cella.
+1. Apportare le modifiche necessarie facendo doppio clic in una cella.
 
    ![Modifica in blocco](assets/srchresultedit.png)
 
@@ -120,10 +116,10 @@ Nell’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca v
 
 #### Parametri di query GQL aggiuntivi {#additional-gql-query-parameters}
 
-* **percorso:** cerca solo nodi sotto questo percorso. Se specifichi più di un termine con un prefisso di percorso, verrà considerato solo l’ultimo.
-* **tipo:** restituisce solo nodi dei tipi di nodo specificati. Sono inclusi i tipi principali e mixin. È possibile specificare più tipi di nodo separati da virgole. GQL restituirà nodi di uno qualsiasi dei tipi specificati.
-* **ordine:** ordina il risultato in base alle proprietà specificate. È possibile specificare più nomi di proprietà separati da virgole. Per ordinare il risultato in ordine decrescente, aggiungi al nome della proprietà il prefisso meno. Ad esempio: order:-name. L&#39;utilizzo di un segno più restituirà il risultato in ordine crescente, che è anche l&#39;impostazione predefinita.
-* **limite:** limita il numero di risultati utilizzando un intervallo. Ad esempio: limit:10..20 Si noti che l&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un intervallo di apertura:limit:10. o limite:..20 Se i punti vengono omessi e viene specificato un solo valore, GQL restituirà al massimo questo numero di risultati. Ad esempio, limite:10 (restituirà i primi 10 risultati)
+* **percorso:** cerca solo nodi sotto questo percorso. Se specificate più di un termine con un prefisso di percorso, viene considerato solo l&#39;ultimo.
+* **tipo:** restituisce solo nodi dei tipi di nodo specificati. Sono inclusi i tipi principali e mixin. È possibile specificare più tipi di nodo separati da virgole. GQL restituisce nodi di uno qualsiasi dei tipi specificati.
+* **ordine:** ordina il risultato in base alle proprietà specificate. È possibile specificare più nomi di proprietà separati da virgole. Per ordinare il risultato in ordine decrescente, aggiungi al nome della proprietà il prefisso meno. Ad esempio, order:-name. L&#39;utilizzo di un segno più restituisce il risultato in ordine crescente, che è anche l&#39;impostazione predefinita.
+* **limite:** limita il numero di risultati utilizzando un intervallo. Ad esempio, limit:10..20 L&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un intervallo di apertura:limit:10. o limite:..20 Se i punti vengono omessi e viene specificato un solo valore, GQL restituirà al massimo questo numero di risultati. Ad esempio, limit:10 (restituisce i primi dieci risultati).
 
 ### Esportazione del contenuto {#exporting-content}
 
@@ -141,13 +137,13 @@ Per esportare il contenuto:
    ![Esportazione dei risultati](assets/srchrsesultexport.png)
 
 1. Seleziona il percorso e conferma di voler scaricare il file.
-1. Dopo aver scaricato il file, è possibile aprirlo dal foglio di calcolo, ad esempio Microsoft Excel. Il programma per fogli di calcolo importa il file e lo converte in un formato foglio di calcolo.
+1. Dopo aver scaricato il file, puoi aprirlo dal programma del foglio di calcolo, ad esempio Microsoft® Excel. Il programma per fogli di calcolo importa il file e lo converte in un formato foglio di calcolo.
 
    ![Risultati esportati in un foglio di calcolo](assets/exportinexcel.png)
 
 ### Importazione del contenuto {#importing-content}
 
-Per impostazione predefinita, la funzionalità di importazione è nascosta all&#39;apertura dell&#39;Editor collettivo. Aggiunta del parametro `hib=false` all&#39;URL visualizzerà il **Importa** nella pagina Bulk Editor. È possibile importare contenuto da qualsiasi scheda ( `.tsv`). Affinché l&#39;importazione funzioni correttamente, le intestazioni di colonna (prima riga di celle) devono corrispondere alle intestazioni di colonna della tabella in cui si esegue l&#39;importazione.
+Per impostazione predefinita, la funzionalità di importazione è nascosta all&#39;apertura dell&#39;Editor collettivo. Aggiunta del parametro `hib=false` all’URL mostra il **Importa** nella pagina Bulk Editor. È possibile importare contenuto da qualsiasi scheda ( `.tsv`). Affinché l&#39;importazione funzioni correttamente, le intestazioni di colonna (prima riga di celle) devono corrispondere alle intestazioni di colonna della tabella in cui si esegue l&#39;importazione.
 
 >[!NOTE]
 >

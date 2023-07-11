@@ -1,18 +1,14 @@
 ---
 title: Implementazione di riferimento We.Retail
-seo-title: We.Retail Reference Implementation
 description: We.Retail è un'anteprima tecnologica di un'implementazione di riferimento che illustra il modo consigliato di stabilire una presenza online con l'AEM
-seo-description: We.Retail is a technology preview of a reference implementation that illustrates the recommended way of setting up an online presence with AEM
-uuid: d8833192-b592-4812-bf9b-bd882e8ee7f0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '749'
 ht-degree: 9%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 9%
 
 We.Retail è un&#39;implementazione di riferimento e un contenuto di esempio che illustra il modo consigliato di impostare una presenza online con Adobe Experience Manager.
 
-We.Retail sfrutta le più recenti tecnologie AEM come HTL, i layout reattivi, i modelli modificabili, i componenti core e molto altro.
+We.Retail utilizza le tecnologie AEM più recenti, come HTL, layout reattivi, modelli modificabili, componenti core e molto altro.
 
 Anche se illustra una vendita verticale, il modo in cui il sito viene configurato può essere applicato a qualsiasi verticale e solo le funzioni del catalogo dei prodotti e del carrello sono specifiche per la vendita al dettaglio.
 
@@ -49,7 +45,7 @@ We.Retail viene fornito come contenuto di esempio dell&#39;AEM. Per utilizzare, 
 
 >[!CAUTION]
 >
->We.Retail non deve essere installato sulle istanze di produzione. Le istanze di produzione devono essere avviate in `nosamplecontent` [runmode](/help/sites-deploying/configure-runmodes.md).
+>Non installare We.Retail sulle istanze di produzione. Le istanze di produzione devono essere avviate in `nosamplecontent` [modalità di esecuzione](/help/sites-deploying/configure-runmodes.md).
 
 >[!CAUTION]
 >
@@ -109,11 +105,11 @@ CODICE SU GITHUB
 Puoi trovare il codice di questa pagina su GitHub
 
 * [Apri progetto aem-sample-we-retail su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
-* Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip)
+* Scarica il progetto come [un file ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
 
-L’ultima versione può essere [scaricato direttamente](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) come pacchetto installabile.
+L’ultima versione può essere [scaricato direttamente](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) come pacchetto installabile.
 
-In caso di problemi, invia una segnalazione [Problemi GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+In caso di problemi, invia una [Problema GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
 Sentiti libero di usare il fork o di contribuire con [richieste pull](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 

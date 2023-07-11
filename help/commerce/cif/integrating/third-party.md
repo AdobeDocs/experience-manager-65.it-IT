@@ -3,16 +3,16 @@ title: Integrazione di AEM e Commerce di terze parti tramite Commerce Integratio
 description: Le aziende possono richiedere soluzioni commerce di terze parti aggiuntive per potenziare la propria vetrina. Commerce Integration Framework (CIF) può essere utilizzato in tali scenari di integrazione per collegare una soluzione commerce di terze parti ad Adobe Experience Manager utilizzando I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
-source-git-commit: 885d0763fca9ad4eab499081adca9b83875b27e1
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 3%
+source-wordcount: '507'
+ht-degree: 2%
 
 ---
 
 # Integrazione AEM e Commerce di terze parti tramite Commerce Integration Framework {#aem-third-party}
 
-L’integrazione di una soluzione non Adobe Commerce è uno scenario comune per CIF. soluzioni di terze parti con API e schemi diversi vengono connesse tramite un livello di integrazione.
+L’integrazione di una soluzione non Adobe Commerce è uno scenario comune per CIF. Le soluzioni di terze parti con API e schemi diversi vengono connesse tramite un livello di integrazione.
 
 ## Architettura {#architecture}
 
@@ -46,7 +46,7 @@ Per i componenti lato client critici in termini di prestazioni, si consiglia di 
 
 ## Sviluppo di un’integrazione {#develop-integration}
 
-È consigliabile utilizzare [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) per il livello di integrazione. È incluso nel componente aggiuntivo CIF per terzi. Poiché funziona con un approccio simile a quello dei microservizi, è adatto per integrare facilmente più soluzioni.
+L’Adobe consiglia di utilizzare [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html) per il livello di integrazione. È incluso nel componente aggiuntivo CIF per terzi. Poiché funziona con un approccio simile a quello dei microservizi, è adatto per integrare facilmente più soluzioni.
 
 Il [implementazione di riferimento](https://github.com/adobe/commerce-cif-graphql-integration-reference) è un ottimo punto di partenza per creare l’integrazione con la soluzione commerce. Sebbene supporti GraphQL, può anche essere integrato con qualsiasi altro tipo di API, come REST.
 
@@ -54,11 +54,11 @@ Questo livello di integrazione non è necessario se è disponibile un livello di
 
 ## Connettori predefiniti {#connectors}
 
-I connettori rappresentano un buon punto di partenza per i progetti. Sono forniti con una connessione specifica della soluzione Commerce e una mappatura API predefinita. Questi connettori sono costruiti da terze parti e non sono gestiti da Adobe. Per ulteriori informazioni, contattare il partner.
+I connettori rappresentano un buon punto di partenza per i progetti. Sono forniti con una connessione specifica per la soluzione Commerce e una mappatura API predefinita. Questi connettori sono costruiti da terze parti e non sono gestiti da Adobe. Contattare il rispettivo partner per informazioni.
 
 * [Commerce SAP](https://github.com/diconium/commerce-cif-graphql-integration-hybris), realizzata da Diconium
 * [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), realizzata da Diconium
 
 >[!TIP]
 >
->Anche se i connettori aiutano i progetti ad accelerare l’integrazione con Commerce, non sono plug-in-play. Le soluzioni Enterprise Commerce sono in genere altamente personalizzate e richiedono un’integrazione personalizzata. È necessaria una buona conoscenza della piattaforma commerce, degli schemi GraphQL di Adobe Commerce e di Adobe I/O Runtime.
+>Anche se i connettori aiutano i progetti ad accelerare l’integrazione con Commerce, non sono plug-in-play. Le soluzioni Enterprise Commerce sono altamente personalizzate e richiedono un&#39;integrazione personalizzata. È necessaria una buona conoscenza della piattaforma commerce, degli schemi GraphQL di Adobe Commerce e di Adobe I/O Runtime.

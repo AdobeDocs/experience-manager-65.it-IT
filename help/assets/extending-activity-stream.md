@@ -5,24 +5,24 @@ contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
 
 # Integrare [!DNL Assets] con flusso di attività {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] Gli utenti eseguono molte azioni, come creare, caricare ed eliminare le risorse. Puoi registrare queste azioni in modo da fornire una cronologia di ciò che è stato fatto da un utente. Questa sezione descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurarlo [!DNL Experience Manager] per registrare eventi specifici.
+[!DNL Adobe Experience Manager Assets] Gli utenti eseguono molte azioni, come creare, caricare ed eliminare risorse. Puoi registrare queste azioni in modo da fornire una cronologia di ciò che è stato fatto da un utente. Questa sezione descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurarlo [!DNL Experience Manager] per registrare eventi specifici.
 
 ## Considerazioni sulle prestazioni e comportamento predefinito {#performance-considerations-and-default-behavior}
 
-Questa integrazione potrebbe richiedere l’utilizzo di CPU e spazio su disco, ad esempio durante l’importazione in blocco. Per questi motivi il [!DNL Assets] L’integrazione con il flusso di attività è disabilitata per impostazione predefinita.
+Questa integrazione potrebbe richiedere l’utilizzo di CPU e spazio su disco, ad esempio durante l’importazione in blocco. Per questi motivi, la [!DNL Assets] L’integrazione con il flusso di attività è disabilitata per impostazione predefinita.
 
 ## Eventi di azione supportati {#supported-action-events}
 
-I seguenti eventi possono essere configurati per la registrazione:
+Puoi configurare i seguenti eventi da registrare:
 
 * Licenza accettata (ACCETTATA)
 * Risorsa creata (ASSET_CREATED)
@@ -52,10 +52,10 @@ Il [Console web](/help/sites-deploying/configuring-osgi.md) consente di accedere
 
 1. Verifica **[!UICONTROL Abilita questo servizio]**.
 
-1. Controlla quale **[!UICONTROL Tipi di evento]** desideri essere registrato nel flusso di attività dell’utente.
+1. Controlla quale **[!UICONTROL Tipi di evento]** che desideri registrare nel flusso di attività dell’utente.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
 ## Leggi eventi registrati {#reading-recorded-events}
 
-Gli eventi registrati vengono memorizzati come attività. Puoi leggerli a livello di programmazione utilizzando [API di ActivityManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Gli eventi registrati vengono memorizzati come attività. Puoi leggerli a livello di programmazione utilizzando [API di ActivityManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
