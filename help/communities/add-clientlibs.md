@@ -1,19 +1,15 @@
 ---
 title: Aggiungi Clientlibs
-seo-title: Add Clientlibs
 description: Aggiungere una ClientLibraryFolder
-seo-description: Add a ClientLibraryFolder
-uuid: 2944923d-caca-4607-81a4-4122a2ce8e41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '672'
 ht-degree: 2%
 
 ---
@@ -45,7 +41,7 @@ In **Proprietà** scheda per il nuovo `clientlibs` , immetti il **categorie** pr
 * Clic **Aggiungi**
 * Clic **Salva tutto**
 
-Nota: anteprima del valore delle categorie con &quot;apps&quot;. è una convenzione per identificare l’applicazione proprietaria come presente nella cartella /apps, non in /libs.  IMPORTANTE: aggiungere un segnaposto `js.tx`t e **`css.txt`** file. (Non è ufficialmente un cq:ClientLibraryFolder senza di loro).
+Nota: anteprima del valore delle categorie con &quot;apps&quot;. è una convenzione per identificare l’applicazione proprietaria come presente nella cartella /apps, non in /libs. IMPORTANTE: aggiungere un segnaposto `js.tx`t e **`css.txt`** file. (Non è ufficialmente un cq:ClientLibraryFolder senza di loro).
 
 1. Clic con il pulsante destro **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Seleziona **Crea file...**
@@ -75,15 +71,15 @@ Quindi crea un file in clientlibs denominato style.css e imposta il contenuto su
 
 ### Incorpora librerie client SCF {#embed-scf-clientlibs}
 
-In **Proprietà** scheda per `clientlibs` , immettere la proprietà String con più valori **incorporare**. Ciò incorpora le [librerie lato client (clientlibs) per i componenti SCF](/help/communities/client-customize.md#clientlibs-for-scf). Per questo tutorial vengono aggiunte molte delle clientlibs necessarie per i componenti Communities.
+In **Proprietà** scheda per `clientlibs` , immettere la proprietà String con più valori **incorporare**. Ciò incorpora le [librerie lato client (clientlibs) per i componenti SCF](/help/communities/client-customize.md#clientlibs-for-scf). Per questa esercitazione, vengono aggiunte molte delle clientlibs necessarie per i componenti Community.
 
-**Nota** che questo potrebbe essere o meno l&#39;approccio desiderato da utilizzare per un sito di produzione, in quanto ci sono considerazioni di convenienza rispetto alle dimensioni/velocità delle clientlibs scaricate per ogni pagina.
+Questo potrebbe essere o meno l&#39;approccio desiderato da utilizzare per un sito di produzione, in quanto ci sono considerazioni di convenienza rispetto alle dimensioni/velocità delle clientlibs scaricate per ogni pagina.
 
-Se utilizzi una sola funzione su una pagina, puoi includere la libreria client completa della funzione direttamente sulla pagina, ad esempio
+Se utilizzi una sola funzione su una pagina, puoi includere la libreria client completa della funzione direttamente sulla pagina, ad esempio,
 
 `% ui:includeClientLib categories=cq.social.hbs.forum" %`
 
-In questo caso, includendole tutte e quindi sono preferite le clientlibs SCF di base che sono le clientlibs dell’autore:
+In questo caso, includendoli tutti e quindi si preferiscono le clientlibs SCF di base che sono le clientlibs dell’autore:
 
 * Nome : **`embed`**
 * Tipo : **`String`**
@@ -110,7 +106,7 @@ Ecco come `/etc/designs/an-scf-sandbox/clientlibs` dovrebbe ora essere visualizz
 
 ### Includi clientlibs nel modello PlayPage {#include-clientlibs-in-playpage-template}
 
-Senza includere `apps.an-scf-sandbox` Nella categoria ClientLibraryFolder della pagina, i componenti SCF non saranno funzionali né formattati in quanto i JavaScript e gli stili necessari non saranno disponibili.
+Senza includere `apps.an-scf-sandbox` Nella categoria ClientLibraryFolder della pagina, i componenti SCF non sono funzionali né formattati in quanto JavaScript e gli stili necessari non sono disponibili.
 
 Ad esempio, senza includere clientlibs, il componente SCF comments (commenti SCF) non viene formattato:
 
@@ -180,9 +176,9 @@ Per creare un pacchetto:
       * Clic **Aggiungi filtro**
       * Percorso principale: vai a `/content/an-scf-sandbox**`
       * Clic **Fine**
-   * Fai clic su **Salva**
 
+   * Fai clic su **Salva**
 
 * Clic **Genera**
 
-Ora puoi selezionare **Scarica** per salvarlo su disco e **Carica pacchetto** altrove, nonché selezionare **Altro > Replica** per inviare la sandbox a un’istanza di pubblicazione localhost per espandere il realm della sandbox.
+Ora puoi selezionare **Scarica** per salvarlo su disco e **Carica pacchetto** altrove e seleziona **Altro > Replica** per inviare la sandbox a un’istanza di pubblicazione localhost per espandere il realm della sandbox.

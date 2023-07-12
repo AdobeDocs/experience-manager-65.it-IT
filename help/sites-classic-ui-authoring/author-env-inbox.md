@@ -1,17 +1,15 @@
 ---
 title: Casella in entrata
 description: Puoi ricevere notifiche da varie aree dell’AEM, ad esempio notifiche su elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
-uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -40,7 +38,7 @@ Per visualizzare le notifiche:
    >
    >` https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Le notifiche verranno elencate. Puoi intraprendere le azioni necessarie:
+1. Le notifiche sono elencate. Puoi intraprendere le azioni necessarie:
 
    * [Iscrizione alle notifiche](#subscribing-to-notifications)
    * [Elaborazione delle notifiche](#processing-your-notifications)
@@ -69,11 +67,11 @@ Per iscriverti alle notifiche:
 1. Seleziona il canale di notifica:
 
    * **Casella in entrata**: le notifiche vengono visualizzate nella casella in entrata AEM.
-   * **E-mail**: le notifiche verranno inviate tramite e-mail all’indirizzo e-mail definito nel profilo utente.
+   * **E-mail**: le notifiche vengono inviate tramite e-mail all’indirizzo e-mail definito nel profilo utente.
 
    >[!NOTE]
    >
-   >È necessario configurare alcune impostazioni per ricevere una notifica tramite e-mail. È inoltre possibile personalizzare il modello e-mail o aggiungere un modello e-mail per una nuova lingua. Fare riferimento a [Configurazione delle notifiche e-mail](/help/sites-administering/notification.md#configuringemailnotification) per configurare le notifiche e-mail in AEM.
+   >È necessario configurare alcune impostazioni per ricevere una notifica tramite e-mail. È inoltre possibile personalizzare il modello e-mail o aggiungere un modello e-mail per una nuova lingua. Consulta [Configurazione delle notifiche e-mail](/help/sites-administering/notification.md#configuringemailnotification) per configurare le notifiche e-mail in AEM.
 
 1. Seleziona le azioni di pagina per le quali inviare la notifica:
 
@@ -90,7 +88,7 @@ Quando una pagina viene eliminata o spostata, viene replicata automaticamente un
 1. Definisci i percorsi delle pagine per le quali riceverai una notifica:
 
    * Clic **Aggiungi** per aggiungere una nuova riga alla tabella.
-   * Fai clic su **Percorso** e immettere il percorso, ad esempio `/content/docs`.
+   * Fai clic su **Percorso** e immettere il percorso, ad esempio: `/content/docs`.
 
    * Da notificare per tutte le pagine appartenenti alla sottostruttura, imposta **Esatto?** a **No**.
 Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso, imposta **Esatto?** a **Sì**.
@@ -103,7 +101,7 @@ Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso,
 
 ## Elaborazione delle notifiche {#processing-your-notifications}
 
-Se hai scelto di ricevere le notifiche nella casella in entrata dell’AEM, questa si riempirà di notifiche. È possibile [visualizzare le notifiche](#viewing-your-notifications) quindi seleziona le notifiche richieste per:
+Se si è scelto di ricevere notifiche nella cartella Posta in arrivo AEM, la cartella Posta in arrivo viene riempita con le notifiche. È possibile [visualizzare le notifiche](#viewing-your-notifications), quindi seleziona le notifiche richieste per:
 
 * Approva facendo clic su **Approva**: il valore in **Letto** è impostata su **true**.
 

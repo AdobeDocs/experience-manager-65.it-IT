@@ -1,24 +1,19 @@
 ---
 title: Creare una sandbox SCF
-seo-title: Create An SCF Sandbox
-description: Questo tutorial è principalmente destinato agli sviluppatori, nuovi all’AEM, che sono interessati a utilizzare i componenti SCF.  Questo video illustra come creare un sito Sandbox SCF
-seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
-uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
+description: Questo tutorial è principalmente destinato agli sviluppatori, nuovi all’AEM, che sono interessati a utilizzare i componenti SCF. Questo video illustra come creare un sito Sandbox SCF
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
 # Creare una sandbox SCF  {#create-an-scf-sandbox}
-
 
 A partire dalle community AEM 6.1, il modo più semplice per creare rapidamente una sandbox è quello di creare un sito community. Consulta [Guida introduttiva ad AEM Communities](getting-started.md).
 
@@ -26,7 +21,7 @@ Un altro strumento utile per gli sviluppatori è il [Guida ai componenti della c
 
 L&#39;esercizio di creazione di un sito web può essere utile per comprendere la struttura di un sito web AEM che può includere caratteristiche di Communities, fornendo allo stesso tempo semplici pagine su cui esplorare la possibilità di lavorare con [framework della componente social network (SCF)](scf.md).
 
-Questo tutorial è principalmente destinato agli sviluppatori, nuovi all’AEM, che sono interessati a utilizzare i componenti SCF. Questo video illustra la creazione del sito Sandbox SCF, in modo simile al tutorial per [Come creare un sito web Internet completo](../../help/sites-developing/website.md) che si concentra sulle strutture del sito, come la navigazione, il logo, la ricerca, la barra degli strumenti e l’elenco delle pagine figlie.
+Questo tutorial è principalmente destinato agli sviluppatori, nuovi all’AEM, che sono interessati a utilizzare i componenti SCF. Questo video illustra la creazione del sito Sandbox SCF, in modo simile al tutorial per [Come creare un sito web Internet completo](../../help/sites-developing/website.md) che si concentra su strutture all’interno del sito, come la navigazione, il logo, la ricerca, la barra degli strumenti e l’elenco delle pagine figlie.
 
 Lo sviluppo avviene su un’istanza di authoring, mentre la sperimentazione con il sito è consigliata su un’istanza di pubblicazione.
 
@@ -80,7 +75,7 @@ Per lavorare con CRXDE Lite, devi accedere con privilegi di sviluppatore o ammin
 * `password: admin`
 
 
-**Presta attenzione** che questo accesso verrà interrotto e dovrai effettuare nuovamente l&#39;accesso periodicamente utilizzando il menu a discesa sulla parte destra della barra degli strumenti di CRXDe Lite.
+Questo login va in timeout ed è necessario effettuare nuovamente l’accesso periodicamente utilizzando il menu a discesa nell’estremità destra della barra degli strumenti di CRXDE Lite.
 
 Se non hai effettuato l’accesso, non potrai navigare nell’archivio JCR o eseguire operazioni di modifica/salvataggio.
 

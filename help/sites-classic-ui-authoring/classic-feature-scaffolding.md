@@ -1,24 +1,22 @@
 ---
 title: Scaffolding
-description: A volte può essere necessario creare un set di pagine di grandi dimensioni che condividono la stessa struttura ma hanno contenuti diversi. Con lo scaffolding è possibile creare un modulo (uno scaffold) con campi che riflettono la struttura desiderata per le pagine e quindi utilizzare questo modulo per creare facilmente pagine basate su questa struttura.
-uuid: 5904abc0-b256-4da4-a7d7-3c17ea299648
+description: A volte può essere necessario creare un set di pagine di grandi dimensioni con una struttura comune ma contenuti diversi. Con lo scaffolding è possibile creare un modulo (uno scaffold) con campi che riflettono la struttura desiderata per le pagine e quindi utilizzare questo modulo per creare facilmente pagine basate su questa struttura.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
 
 # Scaffolding{#scaffolding}
 
-A volte può essere necessario creare un set di pagine di grandi dimensioni che condividono la stessa struttura ma hanno contenuti diversi. Tramite l’interfaccia AEM standard, dovrai creare ogni pagina, trascinare i componenti appropriati nella pagina e compilarli singolarmente.
+A volte può essere necessario creare un set di pagine di grandi dimensioni con una struttura comune ma contenuti diversi. Tramite l’interfaccia standard di Adobe Experience Manager (AEM), dovrai creare ogni pagina, trascinare i componenti appropriati nella pagina e compilarli singolarmente.
 
 Con lo scaffolding è possibile creare un modulo (uno scaffold) con campi che riflettono la struttura desiderata per le pagine e quindi utilizzare questo modulo per creare facilmente pagine basate su questa struttura.
 
@@ -31,8 +29,8 @@ Con lo scaffolding è possibile creare un modulo (uno scaffold) con campi che ri
 Le impalcature sono memorizzate in **Strumenti** console dell’amministratore del sito.
 
 * Apri **Strumenti** e fai clic su **Scaffolding pagine predefinito**.
-* In questo clic su **geometrix**.
-* Sotto **geometrix** troverai un’ *pagina scaffold* ha chiamato **Notizie**. Fai doppio clic per aprire questa pagina.
+* Sotto fai clic su **Geometrixx**.
+* Sotto **Geometrixx**, è possibile trovare un *pagina scaffold* ha chiamato **Notizie**. Fare doppio clic per aprire la pagina.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
@@ -42,10 +40,10 @@ Lo scaffold è costituito da un modulo con un campo per ogni elemento di contenu
 
 Le proprietà della pagina di scaffolding sono:
 
-* **Testo titolo**: nome della pagina di scaffolding stessa. In questo esempio si chiama &quot;News&quot;.
+* **Testo titolo**: nome della pagina di scaffolding stessa. In questo esempio, si chiama &quot;News&quot;.
 * **Descrizione**: questo viene visualizzato sotto il titolo nella pagina di scaffolding.
-* **Modello di destinazione**: questo è il modello che verrà utilizzato da questo scaffold per creare una nuova pagina. In questo esempio si tratta di un *Pagina contenuto Geometrixx* modello.
-* **Percorso di destinazione**: questo è il percorso della pagina padre sotto la quale questo scaffold creerà nuove pagine. In questo esempio il percorso è */content/geometrixx/en/news*.
+* **Modello di destinazione**: questo è il modello che verrà utilizzato da questo scaffold per creare una pagina. In questo esempio, è un *Pagina contenuto Geometrixx* modello.
+* **Percorso di destinazione**: questo è il percorso della pagina padre sotto la quale questo scaffold creerà le pagine. In questo esempio, il percorso è */content/geometrixx/en/news*.
 
 Il corpo dell&#39;impalcatura è la forma. Quando un utente desidera creare una pagina utilizzando lo scaffold compila il modulo e fa clic su *Crea*, in basso. In **Notizie** esempio precedente il modulo include i campi seguenti:
 
@@ -60,15 +58,15 @@ Il corpo dell&#39;impalcatura è la forma. Quando un utente desidera creare una 
 
 ### Creazione di uno scaffold {#creating-a-scaffold}
 
-Per creare un nuovo scaffold, passare al **Strumenti** console, quindi **Scaffolding pagine predefinito** e crea una nuova pagina. Sarà disponibile un tipo di modello a pagina singola, il *Modello per scaffolding.*
+Per creare un nuovo scaffold, passare al **Strumenti** console, quindi **Scaffolding pagine predefinito** e creare una pagina. È disponibile un tipo di modello a pagina singola, il *Modello per scaffolding.*
 
-Vai a **Proprietà pagina** della nuova pagina e imposta *Testo titolo*, *Descrizione*, *Modello di destinazione* e *Percorso di destinazione*, come descritto in precedenza.
+Vai a **Proprietà pagina** della nuova pagina e imposta *Testo titolo*, *Descrizione*, *Modello di destinazione*, e *Percorso di destinazione*, come descritto in precedenza.
 
-Successivamente, devi definire la struttura della pagina che verrà creata da questo scaffold. Per eseguire questa operazione, vai a **[modalità progettazione](/help/sites-authoring/page-authoring.md#sidekick)** sulla pagina scaffold. Verrà visualizzato un collegamento che consente di modificare lo scaffold in **editor di finestre di dialogo**.
+Successivamente, devi definire la struttura della pagina che verrà creata da questo scaffold. Per fare questo, vai in **[modalità progettazione](/help/sites-authoring/page-authoring.md#sidekick)** sulla pagina scaffold. Verrà visualizzato un collegamento che consente di modificare lo scaffold in **editor di finestre di dialogo**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
-Utilizzando l’editor delle finestre di dialogo puoi specificare le proprietà che verranno create ogni volta che viene creata una nuova pagina utilizzando questo scaffold.
+Utilizzando l’editor delle finestre di dialogo, puoi specificare le proprietà che verranno create ogni volta che viene creata una nuova pagina utilizzando questo scaffold.
 
 La definizione della finestra di dialogo per uno scaffold funziona in modo simile a quella di un componente (vedere [Componenti](/help/sites-developing/components.md)). Tuttavia, si applicano alcune importanti differenze:
 
@@ -78,7 +76,7 @@ La definizione della finestra di dialogo per uno scaffold funziona in modo simil
 
 Guarda l’esempio **Notizie** la finestra di dialogo scaffold nell’editor di finestre di dialogo consente di spiegare come funziona. Passa alla modalità progettazione nella pagina scaffold e fai clic sul collegamento dell’editor delle finestre di dialogo.
 
-Ora fai clic sul campo della finestra di dialogo **Finestra di dialogo > Pannello a schede > Testo > Testo**, come segue:
+Fare clic sul campo della finestra di dialogo **Finestra di dialogo > Pannello a schede > Testo > Testo**, come segue:
 
 ![textedit](assets/textedit.png)
 
@@ -97,9 +95,9 @@ Consente di definire la posizione di archiviazione del contenuto per il testo ch
 * Il fatto che la stringa memorizzata qui debba essere interpretata come *testo RTF*, e
 * quale componente deve essere utilizzato per eseguire il rendering di questo contenuto nella pagina risultante.
 
-Tieni presente che in una finestra di dialogo di un componente normale non dovrai specificare queste informazioni perché sono implicite nel fatto che la finestra di dialogo è già associata a un componente specifico.
+In una normale finestra di dialogo di un componente non è necessario specificare queste informazioni perché sono implicite nel fatto che la finestra di dialogo è già associata a un componente specifico.
 
-Per specificare queste due informazioni si utilizzano i campi nascosti. Fai clic sul primo campo nascosto **Finestra di dialogo > Pannello a schede > Testo > Nascosto**, come segue:
+Per specificare queste due informazioni, utilizzare i campi nascosti. Fai clic sul primo campo nascosto **Finestra di dialogo > Pannello a schede > Testo > Nascosto**, come segue:
 
 ![nascosto](assets/hidden.png)
 
@@ -113,13 +111,13 @@ La proprietà name di questo campo nascosto è
 
 Questa è una proprietà booleana utilizzata per interpretare la stringa di testo memorizzata in `./jcr:content/par/text/text`.
 
-Poiché sappiamo che il testo deve essere interpretato come testo RTF, specifichiamo `value` proprietà di questo campo come `true`.
+Poiché sappiamo che il testo deve essere interpretato come testo RTF, specifichiamo il `value` proprietà di questo campo come `true`.
 
 >[!CAUTION]
 >
->L’editor di finestre di dialogo consente all’utente di modificare i valori di *esistente* proprietà nella definizione della finestra di dialogo. Per aggiungere una nuova proprietà, l’utente deve utilizzare [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio, quando un nuovo campo nascosto viene aggiunto a una definizione di finestra di dialogo con l’editor di finestre di dialogo, non dispone di un *valore* (ad esempio, una proprietà denominata &quot;value&quot;). Se il campo nascosto in questione richiede un valore predefinito *valore* da impostare, questa proprietà deve essere aggiunta manualmente con uno degli strumenti CRX. Impossibile aggiungere il valore con l’editor di finestre di dialogo stesso. Tuttavia, una volta presente la proprietà, il relativo valore può essere modificato con l’editor di finestre di dialogo.
+>L’editor di finestre di dialogo consente all’utente di modificare i valori di *esistente* proprietà nella definizione della finestra di dialogo. Per aggiungere una nuova proprietà, l’utente deve utilizzare [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio, quando un nuovo campo nascosto viene aggiunto a una definizione di finestra di dialogo con l’editor di finestre di dialogo, non dispone di un *valore* proprietà (ovvero una proprietà denominata &quot;value&quot;). Se il campo nascosto in questione richiede l’impostazione di una proprietà di valore predefinita, questa deve essere aggiunta manualmente con uno degli strumenti CRX. Impossibile aggiungere il valore con l’editor di finestre di dialogo stesso. Tuttavia, una volta presente la proprietà, il relativo valore può essere modificato con l’editor di finestre di dialogo.
 
-Il secondo campo nascosto può essere visualizzato facendo clic su di esso in questo modo:
+Per visualizzare il secondo campo nascosto, fai clic su di esso in questo modo:
 
 ![hidden2](assets/hidden2.png)
 
@@ -131,7 +129,7 @@ La proprietà name di questo campo nascosto è
 
 `./jcr:content/par/text/sling:resourceType`
 
-e il valore fisso specificato per questa proprietà è
+Il valore fisso specificato per questa proprietà è
 
 `foundation/components/textimage`
 
@@ -156,7 +154,7 @@ Questi mostrano che il componente non può essere modificato fino a quando l’e
 
 Facendo clic sul simbolo del lucchetto o sull’icona dell’immagine è possibile interrompere l’ereditarietà:
 
-* il simbolo diventerà un lucchetto aperto.
+* il simbolo diventa un lucchetto aperto.
 * una volta sbloccato, puoi modificare il contenuto.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
