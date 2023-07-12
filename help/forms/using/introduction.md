@@ -10,9 +10,9 @@ discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ HTML5 forms è una nuova funzionalità del software Adobe Experience Manager 6.0
 
 I moduli HTML5 generano documenti basati su costrutti standard di HTML5. Puoi visualizzare i moduli di HTML5 in tutti i browser moderni che supportano HTML5. Non è necessario installare altri plug-in per browser. Per ulteriori informazioni sui browser supportati, consulta [Piattaforme client supportati](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
-![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
+![Anteprima modulo HTML5](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
 ## Funzionalità chiave dei moduli di HTML5 {#key-capabilities-of-html-forms-br}
 

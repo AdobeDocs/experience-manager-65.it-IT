@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Nella vista Backbone è disponibile una mappa degli eventi che mappa i vari even
 
 Quando una vista viene inizializzata, chiama il modello corrispondente per recuperare i dati dal server. Quando tutti i dati richiesti da una visualizzazione sono disponibili, la visualizzazione esegue il rendering dei dati nel formato specificato dal modello HTML. Più viste possono condividere lo stesso modello per la comunicazione.
 
-![](do-not-localize/aem_forms_workflow.png)
+![L’AEM forma la vista della spina dorsale](do-not-localize/aem_forms_workflow.png)
 
 Ecco un esempio:
 

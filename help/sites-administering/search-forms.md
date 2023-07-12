@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 1a3e0f90bbe133a7b0fc383b997e69b10ca82478
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2068'
 ht-degree: 12%
 
 ---
@@ -397,7 +397,7 @@ Le etichette per le caselle di controllo di pubblicazione e Live Copy per il pre
 
 ### Creazione/apertura di una configurazione personalizzata {#creating-opening-a-customized-configuration}
 
-1. Accedi a **Strumenti**, **Generale**, **Cerca in Forms**.
+1. Accedi a **Strumenti** >>  **Generale** >> **Cerca in Forms**.
 
 1. Seleziona la configurazione da personalizzare.
 1. Utilizza il **Modifica** per aprire la configurazione per l’aggiornamento.
@@ -440,7 +440,7 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 
 1. Seleziona l’icona Anteprima:
 
-   ![Icona Anteprima](do-not-localize/chlimage_1-31.png)
+   ![Anteprima moduli di ricerca](do-not-localize/chlimage_1-31.png)
 
 1. In questo modo i moduli di ricerca verranno visualizzati così come saranno visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.
 

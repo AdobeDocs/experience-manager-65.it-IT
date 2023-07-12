@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Puoi toccare il **Configura** ![configura](assets/configure.png) per impostare l
 >[!NOTE]
 >
 >Le firme vengono sempre salvate in formato PNG.
+>
 
 ## Configurare un modulo adattivo per l’utilizzo della firma scarabocchio {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -54,12 +55,14 @@ Puoi toccare il **Configura** ![configura](assets/configure.png) per impostare l
    >[!NOTE]
    >
    >Il componente Passaggio di firma occupa l’intera larghezza disponibile per il modulo. Si consiglia di non avere altri componenti nella sezione contenente il componente Passaggio di firma.
+   >
 
-1. Nel browser Contenuti, tocca **Contenitore modulo**, e tocca il **Configura** ![](/help/forms/using/assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo. Accedi a **Contenitore modulo adattivo** > **Firma elettronica** e deseleziona la **Abilita Adobe Sign** opzione. Tocca Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche.
+1. Nel browser Contenuti, tocca **Contenitore modulo**, e tocca il **Configura** ![configura](/help/forms/using/assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo. Accedi a **Contenitore modulo adattivo** > **Firma elettronica** e deseleziona la **Abilita Adobe Sign** opzione. Tocca Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche.
 
    >[!NOTE]
    >
    >Quando aggiungi un componente Passaggio di firma a un modulo adattivo, l’opzione Abilita Adobe Sign viene selezionata automaticamente.
+   >
 
 1. Tocca il **Configura** ![configura](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del passaggio Firma. Configura le seguenti proprietà:
 

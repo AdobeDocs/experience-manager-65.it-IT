@@ -10,16 +10,16 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 # Usa modello dati modulo{#use-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![immagine protagonista](do-not-localize/data-integration.png)
 
 L’integrazione dei dati in AEM Forms consente di utilizzare diverse origini dati di back-end per creare un modello di dati modulo da utilizzare come schema in vari moduli adattivi e flussi di lavoro di comunicazione interattiva. Richiede la configurazione delle origini dati e la creazione di un modello dati modulo basato su oggetti e servizi modello dati disponibili nelle origini dati. Per ulteriori informazioni, vedi:
 

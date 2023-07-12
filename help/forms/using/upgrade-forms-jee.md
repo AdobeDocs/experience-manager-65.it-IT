@@ -9,9 +9,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ AEM 6.5.12.0 Forms su JEE fornisce due tipi di programmi di installazione: Progr
 
 Nella tabella seguente sono illustrati gli scenari per l&#39;utilizzo del programma di installazione completo e patch.
 
-![](assets/full-and-patch-installer.png)
+![Scenario del programma di installazione completo e patch](assets/full-and-patch-installer.png)
 
 Eseguire la procedura seguente per utilizzare il programma di installazione completo per aggiornare il Forms AEM 6.3 esistente su JEE o il Forms AEM 6.4 su JEE al Forms AEM 6.5.12.0 su JEE:
 

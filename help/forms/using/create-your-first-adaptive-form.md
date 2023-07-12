@@ -9,9 +9,9 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 318347178fd626dea8e5a15caa7cdad8fe353eba
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '966'
 ht-degree: 9%
 
 ---
@@ -95,7 +95,7 @@ Obiettivi:
 
 ## Passaggio 4: Personalizzare lo stile del modulo adattivo {#step-style-your-adaptive-form}
 
-![](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![adapative-form-styling](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
 I moduli adattivi forniscono temi e un [editor](../../forms/using/themes.md) creare temi per i moduli adattivi. Un tema contiene dettagli sullo stile di componenti e pannelli ed è possibile riutilizzarlo in diversi formati. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando si applica il tema al modulo, lo stile specificato viene applicato ai componenti corrispondenti del modulo. I moduli adattivi supportano anche lo stile in linea per gli stili specifici di un modulo.
 

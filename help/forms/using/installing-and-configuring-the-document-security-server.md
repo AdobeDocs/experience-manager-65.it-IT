@@ -8,9 +8,9 @@ contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ La funzionalità di protezione dei documenti è disponibile solo in AEM Forms su
 
 <!--fix above link-->
 
-![](do-not-localize/document-security-server_topology.png)
+![Topologia del server di Document Security](do-not-localize/document-security-server_topology.png)
 
 Il diagramma seguente mostra l’architettura tipica di AEM Forms Document Security:
 

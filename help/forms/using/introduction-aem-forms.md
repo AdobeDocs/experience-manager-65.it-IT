@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '894'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ Nelle grandi aziende, i moduli sono spesso creati una volta sola, per poi essere
 
 AEM Forms fornisce strumenti di gestione dei moduli che consentono non solo di gestire i moduli adattivi, ma anche i moduli XFA, i PDF forms e le risorse correlate. Per ulteriori informazioni, consulta [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
 
-![](do-not-localize/4th-draft.gif)
+![Funzionalità dei moduli AEM](do-not-localize/4th-draft.gif)
 
 ### Funzionalità principali {#key-capabilities}
 

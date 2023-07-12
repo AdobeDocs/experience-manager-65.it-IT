@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Hai bisogno di [Pacchetto del componente aggiuntivo AEM Forms](https://helpx.ado
 
 Per creare una variabile, effettua le seguenti operazioni:
 
-1. In un’istanza AEM, passa a Strumenti ![](/help/forms/using/assets/hammer.png) > Workflow > Modelli.
+1. In un’istanza AEM, passa a Strumenti ![Strumenti](/help/forms/using/assets/hammer.png) > Workflow > Modelli.
 1. Tocca **[!UICONTROL Crea]** e specifica il titolo e un nome facoltativo per il modello di flusso di lavoro. Seleziona il modello e tocca **[!UICONTROL Modifica]**.
 1. Tocca l’icona delle variabili disponibile nella barra laterale del modello di flusso di lavoro, quindi tocca **[!UICONTROL Aggiungi variabile]**.
 

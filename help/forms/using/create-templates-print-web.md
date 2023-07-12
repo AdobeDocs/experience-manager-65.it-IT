@@ -10,7 +10,7 @@ discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 0%
@@ -93,6 +93,7 @@ Per creare un modello XDP per il canale di stampa, effettua le seguenti operazio
 
       * Spese
       * Grafici
+
    * Chiamate dettagliate
    * PayNow
    * ValueAddedServices
@@ -162,6 +163,7 @@ Per creare un frammento di layout per il canale Stampa della comunicazione inter
    1. Seleziona **.xdp** dal **Salva come tipo** elenco a discesa.
 
    1. Tocca **Salva**.
+
    Dopo aver creato un modello XDP per il frammento di layout utilizzando Progettazione Forms, è necessario [caricare](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) sul server AEM Forms, in modo che il modello sia disponibile per l’uso durante la creazione di frammenti di layout.
 
 ## Crea modello per canale web {#create-template-for-web-channel}
@@ -231,7 +233,7 @@ Per creare un modello per il canale web in, esegui la procedura seguente: **Crea
    1. Specifica **Dettagli fattura** nel campo Titolo.
    1. Seleziona **1** dal **Numero di colonne** elenco a discesa.
 
-   1. Tocca ![](/help/forms/using/assets/done_icon.png) per salvare le proprietà.
+   1. Tocca ![Salva](/help/forms/using/assets/done_icon.png) per salvare le proprietà.
 
    Il nome del pannello viene aggiornato a **Dettagli fattura** nella struttura del contenuto.
 
@@ -275,4 +277,4 @@ In base al caso d’uso, devi includere **Paga ora** e **Abbonati** (componenti 
 
    ![Componenti consentiti](assets/allowed_components_af_new.png)
 
-1. Tocca ![done_icon](assets/done_icon.png) per salvare le proprietà.
+1. Tocca ![salva](assets/done_icon.png) per salvare le proprietà.

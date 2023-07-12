@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '3682'
 ht-degree: 2%
 
 ---
 
 # Flusso di lavoro incentrato su Forms su OSGi{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![immagine protagonista](do-not-localize/header.png)
 
 Le aziende raccolgono dati da centinaia e migliaia di moduli, da vari sistemi back-end e da origini dati online o offline. Hanno anche un set dinamico di utenti per prendere decisioni sui dati, che comporta processi iterativi di revisione e approvazione.
 
@@ -236,7 +236,7 @@ Un amministratore (membro del gruppo fd-administrators) può configurare una car
   </tr>
   <tr>
    <td><span class="uicontrol">Elabora file tramite</code></td>
-   <td>Seleziona la <span class="uicontrol">Flusso di lavoro </code>opzione. </code></td>
+   <td>Seleziona la <span class="uicontrol">Flusso di lavoro </code>opzione. </td>
   </tr>
   <tr>
    <td><span class="uicontrol">Modello flusso di lavoro</code></td>

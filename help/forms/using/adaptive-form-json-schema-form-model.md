@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 5%
+source-wordcount: '1718'
+ht-degree: 4%
 
 ---
 
@@ -393,163 +393,163 @@ Devi essere membro di [forms-power-user group](forms-groups-privileges-tasks.md)
   </tr>
   <tr>
    <td>Campo testo</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Campo numerico</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Stepper numerico</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Pulsante di scelta</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Telefono</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Interruttore</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Pulsante</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
   </tr>
   <tr>
    <td>Casella di controllo</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Elenchi a discesa</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Scelta dell'immagine</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Campo immissione data</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Selettore data</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Allegato file</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Immagine</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -558,9 +558,9 @@ Devi essere membro di [forms-power-user group](forms-groups-privileges-tasks.md)
   </tr>
   <tr>
    <td>Draw</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -569,9 +569,9 @@ Devi essere membro di [forms-power-user group](forms-groups-privileges-tasks.md)
   </tr>
   <tr>
    <td>Pannello</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>

@@ -9,9 +9,9 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 Questo articolo include una panoramica, alcuni esempi di casi di utilizzo, un flusso di lavoro per la creazione e differenze tra comunicazione interattiva e lettera.
 
-![](do-not-localize/correspondence-management.png)
+![immagine protagonista](do-not-localize/correspondence-management.png)
 
 Le comunicazioni interattive centralizzano e gestiscono la creazione, l’assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive, quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto.
 

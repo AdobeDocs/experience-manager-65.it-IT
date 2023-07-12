@@ -10,16 +10,16 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
 
 # Tutorial: pubblicare il modulo adattivo {#tutorial-publish-your-adaptive-form}
 
-![](do-not-localize/13-publish-your-adaptive-form-small.png)
+![Immagine protagonista](do-not-localize/13-publish-your-adaptive-form-small.png)
 
 Questo tutorial è un passaggio del [Creare il primo modulo adattivo](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) serie. Si consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
@@ -69,7 +69,8 @@ AEM [!DNL Forms] fornire una componente, AEM [!DNL Forms] Contenitore per incorp
    * Se si modifica solo il modulo incorporato in una pagina del sito pubblicata, pubblicare il modulo originale e le modifiche si riflettono nella pagina del sito pubblicata. La pagina del sito pubblicata include un riferimento al modulo e non richiede la ripubblicazione della pagina.
    * Se si modifica il [!DNL Sites] e il modulo incorporato, ripubblica il [!DNL Sites] e il modulo.
 
-      ![incorporare in aem-sites](assets/embed-in-aem-sites.png)
+     ![incorporare in aem-sites](assets/embed-in-aem-sites.png)
+
    Modulo di modifica indirizzo di spedizione e fatturazione aggiunto a un AEM [!DNL Sites] pagina.
 
 ## Incorporare il modulo adattivo in una pagina web esterna {#embed-the-adaptive-form-in-an-external-webpage}
