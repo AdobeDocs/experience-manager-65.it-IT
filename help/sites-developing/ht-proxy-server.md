@@ -1,18 +1,14 @@
 ---
 title: Come utilizzare lo strumento Server proxy
-seo-title: How to use the Proxy Server Tool
 description: Il server proxy funge da server intermedio che inoltra le richieste tra un client e un server
-seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
-uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -44,7 +40,7 @@ Avvia il server dalla riga di comando:
 
 `<host>`
 
-Questo è l’indirizzo host dell’istanza CRX a cui desideri connetterti. Se l’istanza si trova nel computer locale, verrà `localhost`.
+Questo è l’indirizzo host dell’istanza CRX a cui desideri connetterti. Se l&#39;istanza si trova nel computer locale, `localhost`.
 
 `<remoteport>`
 
@@ -52,7 +48,7 @@ Porta host dell&#39;istanza CRX di destinazione. Ad esempio, l’impostazione pr
 
 `<localport>`
 
-Questa è la porta del computer locale a cui desideri connetterti per accedere all’istanza CRX tramite il proxy.
+Questa è la porta del computer locale che desideri connettere per accedere all’istanza CRX tramite il proxy.
 
 **Opzioni**
 
@@ -98,7 +94,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Mostra il numero di byte passati tra client ( `C`) e il server ( `S`) al 6° collegamento e alla velocità media.
+Mostra il numero di byte passati tra client ( `C`) e il server ( `S`) alla sesta connessione e alla velocità media.
 
 **Esempio di output del registro**
 
@@ -106,11 +102,11 @@ Ad esempio, considera una pagina che produce il seguente codice quando richiesto
 
 ### Esempio {#example}
 
-Ad esempio, considera un documento HTML molto semplice che si trova nell’archivio in
+Ad esempio, considera un semplice documento HTML nell’archivio in
 
 `/content/test.html`
 
-accanto a un file di immagine in
+Accanto a un file di immagine in
 
 `/content/test.jpg`
 
@@ -128,13 +124,13 @@ Il contenuto di `test.html` è:
 </html>
 ```
 
-Supponendo che l’istanza dell’AEM sia in esecuzione su `localhost:4502` il proxy viene avviato in questo modo:
+Supponendo che l’istanza dell’AEM sia in esecuzione su `localhost:4502`, il proxy viene avviato in questo modo:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-È ora possibile accedere all’istanza CQ/CRX tramite il proxy in `localhost:4444` e tutte le comunicazioni tramite questa porta sono registrate in `test.log`.
+È ora possibile accedere all’istanza CQ/CRX tramite il proxy in `localhost:4444` e tutte le comunicazioni effettuate tramite questa porta sono registrate a `test.log`.
 
-Se ora guardiamo l’output del proxy vedremo l’interazione tra il browser e l’istanza dell’AEM.
+Se ora guardi l’output del proxy, puoi vedere l’interazione tra il browser e l’istanza dell’AEM.
 
 All&#39;avvio, il proxy restituisce quanto segue:
 
@@ -143,11 +139,11 @@ starting proxy for localhost:4502 on port 4444
 using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 ```
 
-Quindi apriamo un browser e accediamo alla pagina di prova:
+Ora apri un browser e accedi alla pagina di prova:
 
 `http://localhost:4444/content/test.html`
 
-e vediamo che il browser crea un `GET` richiesta per la pagina:
+E vedete che il browser crea un `GET` richiesta per la pagina:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -219,7 +215,7 @@ Per verificare se keep-alive funziona:
 
 **Ricerca di richieste perse**
 
-Se perdi le richieste in un’impostazione server complessa, ad esempio con un firewall e un dispatcher, puoi utilizzare il server proxy per scoprire dove è stata persa la richiesta. In caso di firewall:
+Se perdi le richieste in un’impostazione server complessa, ad esempio con un firewall e un Dispatcher, puoi utilizzare il server proxy per scoprire dove è stata persa la richiesta. Se è presente un firewall:
 
 * Avviare un proxy prima di un firewall
 * Avvia un altro proxy dopo un firewall

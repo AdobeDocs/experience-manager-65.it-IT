@@ -1,27 +1,23 @@
 ---
 title: Commenti essenziali
-seo-title: Comments Essentials
 description: Panoramica del componente Commenti
-seo-description: Comments component overview
-uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '335'
 ht-degree: 4%
 
 ---
 
 # Commenti essenziali {#comments-essentials}
 
-Questa pagina fornisce informazioni di base sull’utilizzo del sistema dei commenti (componente commenti) e opzioni per la gestione dei contenuti generati dagli utenti (UGC, User Generated Content) generati quando i membri pubblicano commenti o risposte.
+Questa pagina fornisce informazioni di base sull’utilizzo del sistema dei commenti (componente commenti) e opzioni per la gestione dei contenuti generati dagli utenti (UGC, User-Generated Content) generati quando i membri pubblicano commenti o risposte.
 
-Il componente commenti stabilisce un sistema di commenti tale che ogni singolo post sia rappresentato da una componente commento (singolare). È il sistema di commenti incluso nella pagina. Il sistema di commenti creerà i singoli commenti quando richiamato.
+Il componente commenti stabilisce un sistema di commenti tale che ogni singolo post sia rappresentato da una componente commento (singolare). È il sistema di commenti incluso nella pagina. Il sistema di commenti crea i singoli commenti quando richiamato.
 
 ## Nozioni di base per lato client {#essentials-for-client-side}
 
@@ -79,9 +75,9 @@ Ciò si applica a qualsiasi componente che estende un sistema di commenti.
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API Commenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [API Commenti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Endpoint commenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Endpoint commenti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 

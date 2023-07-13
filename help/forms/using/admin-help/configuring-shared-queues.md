@@ -1,18 +1,14 @@
 ---
 title: Configurazione delle code condivise
-seo-title: Configuring Shared Queues
 description: Le code condivise consentono di configurare e gestire in modo efficace le code utente. Scopri come configurare le code condivise.
-seo-description: Shared Queues allow you to configure and manage user queues effectively. Learn how to configure shared queues.
-uuid: 69ab611d-334b-40a5-bd2d-533d4cb25eda
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
 exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -31,27 +27,27 @@ Questa opzione consente di gestire le code condivise assegnate a un utente selez
 
 ## Gestione dell’accesso a una coda di utenti selezionata {#managing-access-to-a-selected-user-queue}
 
-La funzionalità Gestisci accesso a un utente consente di gestire l&#39;accesso a una coda di utenti selezionata. Puoi concedere o revocare l’accesso a una coda di utenti selezionata ad altri utenti dell’organizzazione. Ad esempio, Kara Bowman è fuori sede. Utilizzando la funzionalità di gestione dell’accesso a un utente, la sua coda può essere condivisa con Akira Tanaka e John Jacobs per il completamento. In un secondo momento, quando Kara Bowman ritorna in ufficio, puoi revocare l&#39;accesso alla sua coda da Akira Tanaka e John Jacobs.
+La funzionalità Gestisci accesso a un utente consente di gestire l&#39;accesso a una coda di utenti selezionata. Puoi concedere o revocare l’accesso a una coda di utenti selezionata ad altri utenti dell’organizzazione. Ad esempio, Kara Bowman è fuori sede. Utilizzando la funzionalità di gestione dell’accesso a un utente, la coda di Kara può essere condivisa con Akira Tanaka e John Jacobs per il completamento. In un secondo momento, quando Kara ritorna in ufficio, puoi revocare l&#39;accesso alla sua coda da Akira Tanaka e John Jacobs.
 
 Una volta condivise, queste attività possono essere completate dall’utente, con accesso alla coda, utilizzando Workspace.
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per il rilascio di moduli AEM.
+>Flex Workspace è obsoleto per la versione con moduli AEM.
 
 ### Configurazione dell’accesso a una coda di utenti selezionata {#configuring-access-to-a-selected-user-queue}
 
 1. Accedere alla console di amministrazione utilizzando un account Administrator.
-1. Seleziona **Servizi** > **flusso di lavoro moduli** > **Coda condivisa**.
+1. Seleziona **Servizi** > **Forms Workflow** > **Coda condivisa**.
 
-1. Nella scheda Gestione accesso a un utente individuare e selezionare l&#39;utente di cui si desidera condividere la coda. In qualsiasi punto, il riquadro in basso a destra mostra l’elenco degli utenti con accesso alla coda di utenti selezionata.
+1. Nella scheda Gestisci accesso a un utente individuare e selezionare l&#39;utente di cui si desidera condividere la coda. In qualsiasi punto, nel riquadro in basso a destra viene visualizzato l’elenco degli utenti con accesso alla coda di utenti selezionata.
 1. Nel riquadro in basso a sinistra, individua e seleziona l’utente. Fai clic su Condividi.
 1. Fai clic su Salva per completare l’operazione.
 
 ### Revoca dell&#39;accesso a una coda di utenti selezionata {#revoking-access-to-a-selected-user-queue}
 
 1. Accedere alla console di amministrazione utilizzando un account Administrator.
-1. Seleziona **Servizi** > **flusso di lavoro moduli** > **Coda condivisa**.
+1. Seleziona **Servizi** > **Forms Workflow** > **Coda condivisa**.
 
 1. Nella scheda Gestione accesso a un utente individuare e selezionare l&#39;utente di cui si desidera gestire la coda.
 1. Nel riquadro in basso a destra viene visualizzato l’elenco degli utenti con accesso alla coda di utenti selezionata. Seleziona l’utente e fai clic su Revoca.
@@ -65,22 +61,22 @@ Una volta assegnate, queste attività possono essere completate dall’utente ut
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per il rilascio di moduli AEM.
+>Flex Workspace è obsoleto per la versione con moduli AEM.
 
 ### Concessione dell’accesso a una coda di utenti selezionata {#granting-access-to-a-selected-user-queue}
 
 1. Accedere alla console di amministrazione utilizzando un account Administrator.
-1. Seleziona **Servizi** > **flusso di lavoro moduli** > **Coda condivisa**.
+1. Seleziona **Servizi** > **Forms Workflow** > **Coda condivisa**.
 
-1. Nella scheda Gestione accesso a un utente individuare e selezionare l&#39;utente di cui si desidera condividere la coda. In qualsiasi punto, il riquadro in basso a destra mostra l’elenco degli utenti con accesso alla coda di utenti selezionata.
-1. Nel riquadro in basso a sinistra, individuare e selezionare le code utente che si desidera condividere con l&#39;utente selezionato. Fai clic su Condividi.
+1. Nella scheda Gestisci accesso a un utente, individua e seleziona l’utente di cui desideri condividere la coda. In qualsiasi punto, nel riquadro in basso a destra viene visualizzato l’elenco degli utenti con accesso alla coda di utenti selezionata.
+1. Nel riquadro in basso a sinistra, individuare e selezionare le code utente da condividere con l&#39;utente selezionato. Fai clic su Condividi.
 1. Fai clic su Salva per completare l’operazione.
 
 ### Revoca dell&#39;accesso a una coda di utenti selezionata {#revoking_access_to_a_selected_user_queue-1}
 
 1. Accedere alla console di amministrazione utilizzando un account Administrator.
-1. Seleziona **Servizi** > **flusso di lavoro moduli** > **Coda condivisa**.
+1. Seleziona **Servizi** > **Forms Workflow** > **Coda condivisa**.
 
-1. Nella scheda Gestione dell&#39;accesso di un utente individuare e selezionare l&#39;utente di cui si desidera gestire la coda.
+1. Nella scheda Gestisci l&#39;accesso di un utente individuare e selezionare l&#39;utente di cui si desidera gestire la coda.
 1. Nel riquadro inferiore destro viene visualizzato l&#39;elenco delle code utente assegnate all&#39;utente selezionato. Seleziona la coda utente e fai clic su Revoca.
 1. Fai clic su Salva per completare l’operazione.
