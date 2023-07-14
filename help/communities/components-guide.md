@@ -1,25 +1,21 @@
 ---
 title: Guida ai componenti della community
-seo-title: Community Components Guide
 description: Strumento di sviluppo interattivo per iniziare a utilizzare il framework dei componenti social (SCF)
-seo-description: An interactive development tool to get started with the social component framework (SCF)
-uuid: 120e56d1-b93c-4f92-bab4-6bb5e40e0ddf
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1181'
 ht-degree: 2%
 
 ---
 
 # Guida ai componenti della community  {#community-components-guide}
 
-La guida ai componenti community è uno strumento di sviluppo interattivo per [framework della componente social network (SCF)](scf.md). Fornisce un elenco dei componenti AEM Communities disponibili o delle funzioni più complesse create da più componenti.
+La guida ai componenti community è uno strumento di sviluppo interattivo per [framework della componente social network (SCF)](scf.md). Fornisce un elenco dei componenti di Adobe Experience Manager (AEM) Communities disponibili o delle funzioni più complesse create da più componenti.
 
 Oltre alle informazioni di base per ciascun componente, la guida consente di sperimentare il funzionamento dei componenti e delle funzioni SCF e come configurarli o personalizzarli.
 
@@ -27,7 +23,7 @@ Per informazioni sulle nozioni di base di sviluppo relative a ciascun componente
 
 ## Guida introduttiva {#getting-started}
 
-La guida deve essere utilizzata nelle installazioni di sviluppo di istanze di authoring (localhost:4502) e pubblicazione (localhost:4503).
+La guida deve essere utilizzata nelle installazioni di sviluppo di istanze di authoring (localhost:4502) e di pubblicazione (localhost:4503).
 
 Per accedere al sito Componenti community, vai a
 
@@ -36,19 +32,19 @@ Per accedere al sito Componenti community, vai a
 Le interazioni con i componenti Community variano a seconda di:
 
 * Il server (di authoring o pubblicazione).
-* Indica se il visitatore del sito ha eseguito o meno l&#39;accesso.
+* Indica se il visitatore del sito ha effettuato o meno l&#39;accesso.
 * Se l&#39;accesso è stato eseguito, i privilegi assegnati al membro.
-* Indica se l&#39;SRP predefinito è o meno [JSRP](jsrp.md), è in uso.
+* Indica se l&#39;SRP predefinito [JSRP](jsrp.md), è in uso.
 
 Per accedere alla modalità di modifica, inserisci `editor.html` o `cf#` come primo segmento di percorso dopo il nome del server:
 
 * Interfaccia standard:
 
-   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * Interfaccia classica:
 
-   [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -56,7 +52,7 @@ Per accedere alla modalità di modifica, inserisci `editor.html` o `cf#` come pr
 >
 >Per passare a una pagina di un componente, seleziona innanzitutto la modalità Anteprima per attivare i collegamenti.
 >
->Con la pagina del componente visualizzata nel browser, torna alla modalità Modifica per aprire la finestra di dialogo di modifica del componente.
+>Con la pagina del componente visualizzata nel browser, torna alla modalità Modifica per aprire la finestra di dialogo per modifica del componente.
 >
 >Per informazioni generali sull&#39;authoring, vedere [guida rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 >
@@ -86,7 +82,7 @@ Il corpo principale della guida mostra:
    * Se incluso, il testo visualizzato è: &quot;Questo componente è incluso in modo dinamico&quot;.
    * Se non è disponibile, non viene visualizzato alcun testo
 
-1. Componente o feature di esempio: un&#39;istanza attiva del componente o della feature. Se un componente viene modificato, può essere modificato con modifiche apportate ai modelli, agli stili CSS e ai dati forniti nella sezione Scheda.
+1. Componente o feature di esempio: un&#39;istanza attiva del componente o della feature. Se un componente viene modificato, può essere modificato con modifiche apportate ai modelli, CSS e dati forniti nella sezione Scheda.
 
 >[!NOTE]
 >
@@ -106,15 +102,15 @@ Sotto **Modelli** scheda:
 
 * **Includi componente secondario con sling:include**
 
-   Se questa opzione è deselezionata, la Guida dei componenti utilizzerà la risorsa esistente nell’archivio (un nodo jcr che è figlio di un nodo par).
+  Se questa opzione è deselezionata, la Guida dei componenti utilizza la risorsa esistente nell’archivio (un nodo jcr che è figlio di un nodo par).
 
    * il testo visualizzato è: &quot;Questo componente è incluso tramite il suo nodo par&quot;.
 
-   Se questa opzione è selezionata, nella Guida dei componenti verrà utilizzato sling per includere in modo dinamico un componente del resourceType del nodo figlio (risorsa non esistente).
+  Se questa opzione è selezionata, nella Guida dei componenti viene utilizzato sling per includere in modo dinamico un componente del resourceType del nodo figlio (risorsa non esistente).
 
    * il testo visualizzato è: &quot;Questo componente è incluso in modo dinamico&quot;.
 
-   L&#39;impostazione predefinita è deselezionata.
+  L&#39;impostazione predefinita è deselezionata.
 
 ### Pubblica interazioni {#publish-interactions}
 
@@ -132,7 +128,7 @@ Per ulteriori informazioni, visita [Clientlibs per i componenti Communities](cli
 
 ## Impersonazione {#impersonation}
 
-Nell’istanza di authoring, in cui si è spesso connessi come amministratore o sviluppatore, per avere un’idea del componente connesso come un altro utente, utilizza la casella di testo a sinistra del **[!UICONTROL Impersona]** per digitare il nome utente o selezionarlo dall&#39;elenco a discesa, quindi fare clic sul pulsante. Fai clic su Ripristina per disconnettersi e terminare la rappresentazione.
+Nell’istanza di authoring, in cui si è spesso connessi come amministratore o sviluppatore, per avere un’idea del componente connesso come un altro utente, utilizza la casella di testo a sinistra del **[!UICONTROL Impersona]** per digitare il nome utente o selezionarlo dall&#39;elenco a discesa, quindi fare clic sul pulsante. Fai clic su Ripristina per uscire e terminare la rappresentazione.
 
 Non è necessario che l’istanza Publish sia rappresentata. È sufficiente utilizzare il collegamento Login/Logout per rappresentare vari utenti, ad esempio [utenti demo](tutorials.md#demo-users).
 
@@ -169,7 +165,7 @@ Utilizzando il componente commenti come esempio, nell’istanza di authoring o d
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
-1. Ora sono disponibili 3 schede per Modelli, CSS e Dati.
+1. Da notare che ora sono disponibili tre schede per Modelli, CSS e Dati.
 
 ![community-component5](assets/community-component5.png)
 

@@ -1,17 +1,13 @@
 ---
 title: Utilizzo dei commenti
-seo-title: Using Comments
 description: La funzione Commenti consente ai visitatori del sito che hanno effettuato l’accesso di condividere le proprie opinioni e conoscenze
-seo-description: Comments feature lets signed-in site visitors share their opinions and knowledge
-uuid: 40acd962-846c-483c-b789-aab3a7d2b31b
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -65,43 +61,43 @@ Sotto **Commenti** , specificare la modalità di immissione dei commenti da part
 
 * **Consenti risposte**
 
-   Se selezionato, consente ai membri di rispondere ai commenti esistenti. Il valore predefinito è deselezionato.
+  Se selezionato, consente ai membri di rispondere ai commenti esistenti. Il valore predefinito è deselezionato.
 
 * **Commenti per pagina**
 
-   Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Il valore predefinito è 10.
+  Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Il valore predefinito è 10.
 
 * **Consenti caricamenti file**
 
-   Se questa opzione è selezionata, l&#39;opzione per caricare un file viene visualizzata con la casella di immissione testo. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, l&#39;opzione per caricare un file viene visualizzata con la casella di immissione testo. Il valore predefinito è deselezionato.
 
 * **Dimensione file massima**
 
-   Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Questo valore limita la dimensione del file caricato. Il limite predefinito è 10 MB.
+  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Questo valore limita la dimensione del file caricato. Il limite predefinito è 10 MB.
 
 * **Lunghezza massima messaggio**
 
-   Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
+  Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
 
 * **Tipi di file consentiti**
 
-   Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati tipi di file, quelli non specificati non sono consentiti. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
+  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati tipi di file, quelli non specificati non sono consentiti. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Editor Rich Text**
 
-   Se questa opzione è selezionata, i commenti vengono immessi con il markup. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, i commenti vengono immessi con il markup. Il valore predefinito è deselezionato.
 
 * **Consenti votazione**
 
-   Se questa opzione è selezionata, l&#39;opzione per votare verso l&#39;alto o verso il basso viene visualizzata con la casella di immissione testo. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, l&#39;opzione per votare verso l&#39;alto o verso il basso viene visualizzata con la casella di immissione testo. Il valore predefinito è deselezionato.
 
 * **Consenti Segui**
 
-   Se questa opzione è selezionata, consentire ai membri di seguire i commenti. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consentire ai membri di seguire i commenti. Il valore predefinito è deselezionato.
 
 * **Visualizza badge**
 
-   Se questa opzione è selezionata, consenti la visualizzazione dei distintivi ottenuti e aggiudicati. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consenti la visualizzazione dei distintivi ottenuti e aggiudicati. Il valore predefinito è deselezionato.
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
@@ -109,39 +105,39 @@ Sotto **Moderazione utenti** , specificare la modalità di gestione dei commenti
 
 * **Premoderazione**
 
-   Se questa opzione è selezionata, i commenti devono essere approvati prima di essere visualizzati in un sito pubblicato. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, i commenti devono essere approvati prima di essere visualizzati in un sito pubblicato. Il valore predefinito è deselezionato.
 
 * **Elimina commenti**
 
-   Se questa opzione è selezionata, il membro che ha pubblicato il commento potrà eliminarlo. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, il membro che ha pubblicato il commento potrà eliminarlo. Il valore predefinito è deselezionato.
 
 * **Rifiuta commenti**
 
-   Se questa opzione è selezionata, consenti ai moderatori di rifiutare i commenti. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consenti ai moderatori di rifiutare i commenti. Il valore predefinito è deselezionato.
 
 * **Chiudi/Riapri commenti**
 
-   Se questa opzione è selezionata, consenti ai moderatori di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consenti ai moderatori di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
 
 * **Segnala commenti**
 
-   Se questa opzione è selezionata, consenti ai membri di segnalare i commenti non appropriati. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consenti ai membri di segnalare i commenti non appropriati. Il valore predefinito è deselezionato.
 
 * **Elenco di motivi per segnalazione**
 
-   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
 
 * **Motivo per segnalazione personalizzato**
 
-   Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
 
 * **Soglia moderazione**
 
-   Immetti il numero di volte in cui un commento deve essere segnalato dai membri prima che il moderatore riceva una notifica. Il valore predefinito è una tantum (1).
+  Immetti il numero di volte in cui un commento deve essere segnalato dai membri prima che il moderatore riceva una notifica. Il valore predefinito è una tantum (1).
 
 * **Limite segnalazione**
 
-   Immettere il numero di volte in cui un commento deve essere segnalato prima di essere nascosto alla visualizzazione pubblica. Questo numero deve essere maggiore o uguale al **Soglia moderazione**. Il valore predefinito è 5.
+  Immettere il numero di volte in cui un commento deve essere segnalato prima di essere nascosto alla visualizzazione pubblica. Questo numero deve essere maggiore o uguale al **Soglia moderazione**. Il valore predefinito è 5.
 
 #### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
@@ -149,11 +145,11 @@ Sotto **Impostazioni di ordinamento** , specificare l&#39;ordinamento dei commen
 
 * **Campo di ordinamento**
 
-   Tirare verso il basso per selezionare uno dei `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, o `Most Liked`.
+  Tirare verso il basso per selezionare uno dei `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, o `Most Liked`.
 
 * **Ordinamento**
 
-   Tirare verso il basso per selezionare uno dei `Ascending` o `Descending`.
+  Tirare verso il basso per selezionare uno dei `Ascending` o `Descending`.
 
 ### Passaggio a un tipo di commento personalizzato {#changing-to-a-custom-comment-type}
 
@@ -167,19 +163,19 @@ Sotto **Tipi di risorse** , specificare il resourceType personalizzato per le nu
 
 * **Tipo risorsa commento**
 
-   Passare al resourceType di un&#39;estensione `comment` componente (commento singolo) in /apps. Ad esempio `/apps/social/commons/components/hbs/comments/comment`
+  Passare al resourceType di un&#39;estensione `comment` componente (commento singolo) in /apps. Ad esempio `/apps/social/commons/components/hbs/comments/comment`
 
-   Questa risorsa identifica il resourceType del UGC creato quando un visitatore pubblica un commento.
+  Questa risorsa identifica il resourceType del UGC creato quando un visitatore pubblica un commento.
 
 * **Tipo di risorsa per votazione**
 
-   Passare al resourceType di un&#39;estensione `voting` componente in /apps. Ad esempio `/apps/social/components/hbs/voting`
+  Passare al resourceType di un&#39;estensione `voting` componente in /apps. Ad esempio `/apps/social/components/hbs/voting`
 
-   Questa risorsa identifica il tipo di risorsa dell’UGC creato quando un visitatore pubblica un voto.
+  Questa risorsa identifica il tipo di risorsa dell’UGC creato quando un visitatore pubblica un voto.
 
 * **Tipo risorsa sistema commenti**
 
-   Passare al resourceType di un&#39;estensione `comments`componente (sistema di commenti) in /apps. Lascia vuoto a meno che il modello della pagina non sia [include in modo dinamico](/help/communities/scf.md#add-or-include-a-communities-component) il sistema di commenti nello script sottostante, anziché essere aggiunto alla pagina come risorsa (nodo commenti). Per saperne di più leggi le [{{include}} aiutante](/help/communities/handlebars-helpers.md#include).
+  Passare al resourceType di un&#39;estensione `comments`componente (sistema di commenti) in /apps. Lascia vuoto a meno che il modello della pagina non sia [include in modo dinamico](/help/communities/scf.md#add-or-include-a-communities-component) il sistema di commenti nello script sottostante, anziché essere aggiunto alla pagina come risorsa (nodo commenti). Per saperne di più leggi le [{{include}} aiutante](/help/communities/handlebars-helpers.md#include).
 
 ### Esperienza visitatore del sito {#site-visitor-experience}
 
