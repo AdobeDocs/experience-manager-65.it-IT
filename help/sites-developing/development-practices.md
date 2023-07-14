@@ -1,25 +1,21 @@
 ---
 title: Procedure di sviluppo
-seo-title: Development Practices
-description: Best practice per lo sviluppo sull’AEM
-seo-description: Best practices for developing on AEM
-uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
+description: Best practice per lo sviluppo su Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
 # Procedure di sviluppo{#development-practices}
 
-## Lavora in base a una definizione di Fine {#work-according-to-a-definition-of-done}
+## Lavora secondo una definizione di Fine (DoD) {#work-according-to-a-definition-of-done}
 
 Ogni team ha una definizione diversa di cosa significa &quot;fatto&quot;, ma è importante averne una e assicurarsi che una storia soddisfi i criteri definiti prima di essere accettata.
 
@@ -40,9 +36,9 @@ Cose come i livelli di rientro e lo spazio vuoto possono non sembrare importanti
 
 ### Obiettivo per un’elevata copertura dei test  {#aim-for-high-test-coverage}
 
-Le dimensioni dell’implementazione di un progetto aumentano, così come il tempo necessario per testarla. Senza una buona copertura dei test, il team di test non sarà in grado di scalare e gli sviluppatori alla fine saranno sepolti in bug.
+Le dimensioni dell’implementazione di un progetto aumentano, così come il tempo necessario per testarla. Senza una buona copertura dei test, il team di test non può scalare e gli sviluppatori alla fine vengono sepolti nei bug.
 
-Gli sviluppatori devono utilizzare TDD, scrivendo unit test non riusciti prima del codice di produzione che soddisferà i loro requisiti. Il controllo qualità dovrebbe creare una serie automatizzata di test di accettazione per garantire che il sistema funzioni come previsto da un livello elevato.
+Gli sviluppatori devono provare lo sviluppo basato su test (TDD, Test Driven Development), scrivendo test di unità non riusciti prima del codice di produzione che soddisfa i loro requisiti. Il controllo qualità dovrebbe creare una serie automatizzata di test di accettazione per garantire che il sistema funzioni come previsto da un livello elevato.
 
 Sono disponibili framework personalizzati, come Jackalope e Prosper, per semplificare l’ironia sulle API JCR al fine di garantire la produttività degli sviluppatori durante la scrittura di unit test.
 
@@ -52,15 +48,15 @@ Il sistema deve essere disponibile per la dimostrazione all’azienda alla fine 
 
 ### Implementare un ambiente di integrazione continua e utilizzarlo {#implement-a-continuous-integration-environment-and-use-it}
 
-L’implementazione di un ambiente di integrazione continua consente di eseguire in modo semplice e ripetibile unit test e integration test. Disaccoppierà inoltre le distribuzioni dal team di sviluppo, consentendo alle altre parti del team di essere più efficienti e di effettuare distribuzioni più stabili e prevedibili.
+L’implementazione di un ambiente di integrazione continua consente di eseguire in modo semplice e ripetuto unit test e integration test. Separa inoltre le distribuzioni dal team di sviluppo, consentendo alle altre parti del team di essere più efficienti e di effettuare distribuzioni più stabili e prevedibili.
 
 ### Mantieni il ciclo di sviluppo veloce mantenendo i tempi di build bassi {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
-Se l’esecuzione degli unit test richiede molto tempo, gli sviluppatori eviteranno di eseguirli e perderanno il loro valore. Se la generazione e la distribuzione del codice richiedono molto tempo, le persone lo faranno meno spesso. La scelta di ridurre i tempi di realizzazione è una priorità e garantisce che il tempo investito nella copertura dei test e nell’infrastruttura CI continuerà a rendere il team più produttivo.
+Se l’esecuzione degli unit test richiede molto tempo, gli sviluppatori eviteranno di eseguirli e perderanno il loro valore. Se la generazione e la distribuzione del codice richiedono molto tempo, le persone lo faranno meno spesso. La priorità è data ai tempi di realizzazione brevi, per garantire che il tempo investito nella copertura dei test e nell’infrastruttura CI continui a rendere il team più produttivo.
 
-### Ottimizza Sonar e altri strumenti di analisi del codice statico e agisci sui loro rapporti {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Ottimizza Sonar e altri strumenti di analisi del codice statico e agisci in base ai loro rapporti {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
-Gli strumenti di analisi del codice possono essere utili, ma solo se i loro rapporti portano ad azioni da parte del team di sviluppo. Se non si ottimizza l’analisi fornita da questi strumenti, i consigli che generano non saranno rilevanti e perderanno valore.
+Gli strumenti di analisi del codice possono essere utili, ma solo se i loro rapporti portano ad azioni da parte del team di sviluppo. Senza ottimizzare l’analisi fornita da questi strumenti, i consigli che generano diventano irrilevanti e perdono valore.
 
 ### Segui la regola di Scout per ragazzi {#follow-the-boy-scout-rule}
 
@@ -68,4 +64,4 @@ Gli Scout di ragazzi hanno una regola: &quot;Lascialo meglio di come l&#39;hai t
 
 ### Evita di implementare le funzioni YAGNI {#avoid-implementing-yagni-features}
 
-Le funzionalità YAGNI (o non ne hai bisogno) sono implementate quando prevediamo di avere bisogno di qualcosa in futuro, anche se non ne abbiamo bisogno ora. Idealmente, dovremmo implementare la cosa più semplice che funzionerà oggi e utilizzare il refactoring continuo per garantire che l&#39;architettura del sistema evolva con i requisiti nel tempo. Questo ci permetterà di concentrarci su ciò che conta e prevenire l’eccesso di codice e il creep delle funzioni.
+Le funzionalità YAGNI (You Aren Gonna Need It) sono implementate quando ci aspettiamo che avremo bisogno di qualcosa in futuro, anche se non ne abbiamo bisogno ora. Idealmente, dovremmo implementare la cosa più semplice che funzionerà oggi e utilizzare il refactoring continuo per garantire che l&#39;architettura del sistema evolva con i requisiti nel tempo. Questo ci permette di concentrarci su ciò che conta e prevenire l’eccesso di codice e il creep delle funzioni.

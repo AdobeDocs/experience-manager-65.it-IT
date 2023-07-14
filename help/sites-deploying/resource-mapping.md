@@ -1,27 +1,23 @@
 ---
 title: Mappatura delle risorse
-seo-title: Resource Mapping
-description: Scopri come definire reindirizzamenti, URL personalizzati e host virtuali per AEM utilizzando la mappatura delle risorse.
-seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
-uuid: 2ca2d0e4-6f90-4ecc-82db-26991f08c66f
+description: Scopri come definire reindirizzamenti, URL personalizzati e host virtuali per Adobe Experience Manager utilizzando la mappatura delle risorse.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 3%
+source-wordcount: '522'
+ht-degree: 2%
 
 ---
 
 # Mappatura delle risorse{#resource-mapping}
 
-La mappatura delle risorse viene utilizzata per definire reindirizzamenti, URL personalizzati e host virtuali per l’AEM.
+La mappatura delle risorse viene utilizzata per definire reindirizzamenti, URL personalizzati e host virtuali per Adobe Experience Manager (AEM).
 
 Ad esempio, puoi utilizzare queste mappature per:
 
@@ -32,11 +28,11 @@ Un possibile prefisso di mappatura HTTP per tutte le richieste a `localhost:4503
 
 `localhost:4503/content/we-retail/en/products.html`
 
-da accedere tramite:
+Da accedere tramite:
 
 `localhost:4503/we-retail/en/products.html`
 
-poiché la mappatura aggiungerà automaticamente il prefisso `/content` a `/we-retail/en/products.html`.
+Poiché la mappatura aggiunge automaticamente il prefisso `/content` a `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -44,7 +40,7 @@ poiché la mappatura aggiungerà automaticamente il prefisso `/content` a `/we-r
 
 >[!NOTE]
 >
->Consulta la documentazione di Sling e [Mappature per la risoluzione delle risorse](https://sling.apache.org/site/resources.html) e [Risorse](https://sling.apache.org/site/mappings-for-resource-resolution.html) per ulteriori informazioni.
+>Consulta la documentazione di Sling e [Mappature per la risoluzione delle risorse](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) e [Risorse](https://sling.apache.org/documentation/the-sling-engine/resources.html) per ulteriori informazioni.
 
 ## Visualizzazione delle definizioni di mappatura {#viewing-mapping-definitions}
 
@@ -70,15 +66,15 @@ Ad esempio:
 
 **Pattern** `^[^/]+/[^/]+/welcome$`
 
-attiverà:
+Attiva:
 
 **Sostituto** `/libs/cq/core/content/welcome.html`.
 
-per reindirizzare una richiesta:
+Per reindirizzare una richiesta:
 
 `https://localhost:4503/welcome` ``
 
-a:
+A:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -86,7 +82,7 @@ All’interno dell’archivio vengono create nuove definizioni di mappatura.
 
 >[!NOTE]
 >
->Sono disponibili numerose risorse che spiegano come definire espressioni regolari, ad esempio [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Sono disponibili molte risorse che spiegano come definire le espressioni regolari. Ad esempio: [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Creazione di definizioni di mappatura in AEM {#creating-mapping-definitions-in-aem}
 
@@ -102,7 +98,7 @@ Per creare il mapping che aggiunge il prefisso a qualsiasi richiesta a https://l
 
 1. Utilizzo di CRXDE passa a `/etc/map/http`.
 
-1. Crea un nuovo nodo:
+1. Crea un nodo:
 
    * **Tipo** `sling:Mapping`
 Questo tipo di nodo è destinato a tali mappature, anche se il suo utilizzo non è obbligatorio.
@@ -117,16 +113,16 @@ Questo tipo di nodo è destinato a tali mappature, anche se il suo utilizzo non 
       * **Tipo** `String`
 
       * **Valore** `localhost.4503/`
+
    * **Nome** `sling:internalRedirect`
 
       * **Tipo** `String[]`
 
       * **Valore** `/content/`
 
-
 1. Clic **Salva tutto**.
 
-Questa gestirà una richiesta come:
+Questo gestisce una richiesta come:
 `localhost:4503/geometrixx/en/products.html`
 come se:
 `localhost:4503/content/geometrixx/en/products.html`
@@ -134,8 +130,8 @@ come se:
 
 >[!NOTE]
 >
->Consulta [Risorse](https://sling.apache.org/site/mappings-for-resource-resolution.html) nella documentazione di Sling per ulteriori informazioni sulle proprietà sling disponibili e su come configurarle.
+>Consulta [Risorse](https://sling.apache.org/documentation/the-sling-engine/resources.html) nella documentazione di Sling per ulteriori informazioni sulle proprietà sling disponibili e su come configurarle.
 
 >[!NOTE]
 >
->È possibile utilizzare `/etc/map.publish` per mantenere le configurazioni dell’ambiente di pubblicazione. Questi devono quindi essere replicati e la nuova posizione ( `/etc/map.publish`) configurato per **Posizione mappatura** del [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) dell’ambiente di pubblicazione.
+>È possibile utilizzare `/etc/map.publish` per mantenere le configurazioni dell’ambiente di pubblicazione. Questi devono essere replicati e la nuova posizione ( `/etc/map.publish`) configurato per **Posizione mappatura** del [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) dell’ambiente di pubblicazione.

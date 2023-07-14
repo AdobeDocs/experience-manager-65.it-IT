@@ -1,19 +1,15 @@
 ---
 title: Estensione e configurazione di Importazione progettazione per le pagine di destinazione
-seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Scopri come configurare l’Importazione progettazione per le pagine di destinazione.
-seo-description: Learn how to configure the Design Importer for landing pages.
-uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '3503'
+source-wordcount: '3502'
 ht-degree: 0%
 
 ---
@@ -28,7 +24,7 @@ Di seguito sono riportati i passaggi logici per fare in modo che Importazione pr
 
 1. Creare un TagHandler
 
-   * Un gestore di tag è un POJO che gestisce tag HTML di un tipo specifico. Il &quot;tipo&quot; di tag HTML che TagHandler può gestire è definito tramite la proprietà OSGi di TagHandlerFactory &quot;tagpattern.name&quot;. Questa proprietà OSGi è essenzialmente un regex che deve corrispondere al tag HTML di input che desideri gestire. Tutti i tag nidificati vengono inviati al gestore di tag per la gestione. Ad esempio, se ti registri per un div che contiene un &lt;p> , il tag &lt;p> Il tag verrà anche inviato al tuo TagHandler e sta a te come desideri gestirlo.
+   * Un gestore di tag è un POJO che gestisce tag HTML di un tipo specifico. Il &quot;tipo&quot; di tag HTML che TagHandler può gestire è definito tramite la proprietà OSGi di TagHandlerFactory &quot;tagpattern.name&quot;. Questa proprietà OSGi è essenzialmente un regex che deve corrispondere al tag HTML di input che desideri gestire. Tutti i tag nidificati vengono inviati al gestore di tag per la gestione. Ad esempio, se ti registri per un div che contiene un &lt;p> , il tag &lt;p> Il tag verrà anche inviato al tuo TagHandler e spetta a te decidere come gestirlo.
    * L’interfaccia del gestore di tag è simile a quella del gestore di contenuti SAX. Riceve eventi SAX per ogni tag html. In qualità di provider di gestori di tag, devi implementare alcuni metodi del ciclo di vita che vengono automaticamente chiamati dal framework di importazione progettazione.
 
 1. Creare il TagHandlerFactory corrispondente.
@@ -127,11 +123,11 @@ I browser che supportano il &quot;trascinamento&quot; dello zip di progettazione
 
 ### Modernizzatore non supportato {#modernizr-is-not-supported}
 
-`Modernizr.js` è uno strumento basato su javascript che rileva le funzionalità native dei browser e rileva se sono adatte o meno agli elementi html5. Le progettazioni che utilizzano Modernizzatore per migliorare il supporto nelle versioni precedenti di browser diversi possono causare problemi di importazione nella soluzione della pagina di destinazione. `Modernizr.js` Gli script non sono supportati con Importazione progettazione.
+`Modernizr.js` è uno strumento basato su JavaScript che rileva le funzionalità native dei browser e rileva se sono adatte o meno agli elementi html5. Le progettazioni che utilizzano Modernizzatore per migliorare il supporto nelle versioni precedenti di browser diversi possono causare problemi di importazione nella soluzione della pagina di destinazione. `Modernizr.js` Gli script non sono supportati con Importazione progettazione.
 
 ### Le proprietà di pagina non vengono conservate al momento dell&#39;importazione del pacchetto di progettazione {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
-Qualsiasi proprietà di pagina (ad esempio, dominio personalizzato, imposizione HTTPS, ecc.) impostato per una pagina (che utilizza il modello Pagina di destinazione vuota) prima dell’importazione del pacchetto di progettazione viene perso dopo l’importazione della progettazione. Pertanto, si consiglia di impostare le proprietà della pagina dopo l’importazione del pacchetto di progettazione.
+Qualsiasi proprietà di pagina (ad esempio, Dominio personalizzato, Applicazione di HTTPS e così via) impostata per una pagina (che utilizza il modello Pagina di destinazione vuota) prima dell’importazione del pacchetto di progettazione viene persa dopo l’importazione della progettazione. Pertanto, si consiglia di impostare le proprietà della pagina dopo l’importazione del pacchetto di progettazione.
 
 ### Presunto markup solo HTML {#html-only-markup-assumed}
 
@@ -191,7 +187,7 @@ Includendo il markup sopra riportato nel HTML, si verifica quanto segue:
 * Imposta il `jcr:title` del componente titolo creato al testo all’interno del tag titolo racchiuso in div.
 * Imposta il `type` al tag titolo, in questo caso `h1`.
 
-Il componente Titolo supporta 7 tipi: `h1, h2, h3, h4, h5, h6` e `default`.
+Il componente Titolo supporta sette tipi: `h1, h2, h3, h4, h5, h6` e `default`.
 
 **Dichiarazione tag componente breve**:
 
@@ -251,7 +247,7 @@ Proprietà supportate
 
 * Etichetta con opzioni grassetto, corsivo e sottolineato
 * URL di Target, supporta URL di terze parti e AEM
-* Opzioni di rendering della pagina (stessa finestra, nuova finestra, ecc.)
+* Opzioni di rendering della pagina (stessa finestra, nuova finestra e così via)
 
 Tag HTML per includere il componente click-through nel file zip importato. Qui href corrisponde all’URL di destinazione, &quot;Visualizza dettagli prodotto&quot; corrisponde all’etichetta e così via.
 
@@ -284,9 +280,9 @@ Proprietà supportate
 * Ritaglio immagine, rotazione
 * Testo al passaggio del mouse, descrizione, dimensione in pixel
 * URL di Target, supporta URL di terze parti e AEM
-* Opzioni di rendering della pagina (stessa finestra, nuova finestra, ecc.)
+* Opzioni di rendering della pagina (stessa finestra, nuova finestra e così via)
 
-Tag HTML per includere il componente collegamento grafico nello zip importato. Qui href viene mappato sull’URL di destinazione, img src sarà l’immagine di rendering, &quot;title&quot; sarà preso come testo al passaggio del mouse e così via.
+Tag HTML per includere il componente collegamento grafico nello zip importato. Qui href corrisponde all’URL di destinazione, img src corrisponde all’immagine di rendering, &quot;title&quot; viene preso come testo al passaggio del mouse e così via.
 
 ```xml
 <div id="cqcanvas">
@@ -304,9 +300,9 @@ Tag HTML per includere il componente collegamento grafico nello zip importato. Q
 >
 >Per creare un collegamento grafico clickthrough, devi racchiudere un tag di ancoraggio e il tag immagine in un div con `data-cq-component="clickthroughgraphicallink"` attributo.
 >
->Esempio: `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>Ad esempio `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
->Non sono supportati altri modi per associare un’immagine a un tag di ancoraggio utilizzando gli stili CSS, ad esempio il markup seguente non funziona:
+>Non sono supportati altri modi per associare un’immagine a un tag di ancoraggio utilizzando gli stili CSS. Ad esempio, il markup seguente non funziona:
 >
 >`<div data-cq-component="clickthroughgraphicallink">`
 >
@@ -315,6 +311,7 @@ Tag HTML per includere il componente collegamento grafico nello zip importato. Q
 >`</div>`
 >
 >con un associato `css .hasbackground { background-image: pathtoimage }`
+>
 
 ### Modulo lead {#lead-form}
 
@@ -323,19 +320,19 @@ Un modulo lead è un modulo utilizzato per raccogliere le informazioni sul profi
 **Funzioni supportate**
 
 * Campi lead predefiniti: nome, cognome, indirizzo, dominio, genere, informazioni, ID utente, ID e-mail, pulsante di invio sono disponibili nella barra laterale. È sufficiente trascinare il componente richiesto nel modulo del lead.
-* Con l’aiuto di questi componenti, l’autore può progettare un modulo lead indipendente; questi campi corrispondono ai campi del modulo lead. In un’applicazione zip indipendente o importata, l’utente può aggiungere campi aggiuntivi utilizzando i campi del modulo cq:form o cta lead, assegnare loro un nome e progettarli in base ai requisiti.
+* Con l’aiuto di questi componenti, l’autore può progettare un modulo lead indipendente; questi campi corrispondono ai campi del modulo lead. In un’applicazione zip indipendente o importata, l’utente può aggiungere campi aggiuntivi utilizzando i campi del modulo cq:form o cta lead, il nome e progettarli in base ai requisiti.
 * Mappa i campi del modulo lead utilizzando nomi predefiniti specifici del modulo lead CTA, ad esempio: firstName per nome nel modulo lead e così via.
-* I campi non mappati al modulo lead verranno mappati su componenti cq:form: testo, radio, casella di controllo, menu a discesa, nascosto, password.
+* I campi non mappati ai componenti modulo lead vengono mappati su cq:form: testo, radio, casella di controllo, menu a discesa, nascosto, password.
 * L’utente può fornire il titolo utilizzando il tag &quot;label&quot; e lo stile utilizzando l’attributo di stile &quot;class&quot; (disponibile solo per i componenti del modulo lead CTA).
 * La pagina di ringraziamento e l’elenco delle iscrizioni possono essere forniti come parametro nascosto del modulo (presente nel file index.htm) oppure possono essere aggiunti/modificati dalla barra di modifica di &quot;Inizio del modulo lead&quot;
 
-   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
-   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
 * I vincoli come - obbligatorio possono essere forniti dalla configurazione di modifica di ciascun componente.
 
-Tag HTML per includere il componente collegamento grafico nello zip importato. Qui &quot;firstName&quot; è mappato al lead form firstName e così via, tranne che per le caselle di controllo: queste due caselle di controllo sono mappate al componente a discesa cq:form.
+Tag HTML per includere il componente collegamento grafico nello zip importato. Qui &quot;firstName&quot; è mappato al firstName del modulo lead e così via, tranne che per le caselle di controllo: queste due caselle di controllo sono mappate al componente a discesa cq:form.
 
 ```xml
 <div id="cqcanvas">
@@ -447,7 +444,7 @@ Scopri come creare un nuovo modello in AEM [qui](/help/sites-developing/template
 
 ### Riferimento a un componente dalla pagina di destinazione {#referring-a-component-from-landing-page}
 
-Supponiamo di avere un componente a cui desideri fare riferimento nel HTML utilizzando l’attributo data-cq-component in modo che l’importazione progettazione esegua il rendering di un componente che includi in questa posizione. Ad esempio, desideri fare riferimento al componente tabella ( `resourceType = /libs/foundation/components/table`). È necessario aggiungere quanto segue in HTML:
+Supponiamo di avere un componente a cui desideri fare riferimento nel HTML utilizzando l’attributo data-cq-component in modo che l’importazione progettazione esegua il rendering di un componente che includi in questa posizione. Ad esempio, si desidera fare riferimento al componente tabella ( `resourceType = /libs/foundation/components/table`). È necessario aggiungere quanto segue in HTML:
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -467,7 +464,7 @@ L’utilizzo di selettori CSS simili a quelli seguenti non è consigliato con el
 | E:nth-of-type(n) | un elemento E, l’n-esimo elemento di pari livello del suo tipo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-of-type(n) | un elemento E, l’n-esimo pari livello del suo tipo, a partire dall’ultimo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-Ciò è dovuto al fatto che elementi html aggiuntivi come &lt;div> vengono aggiunti al codice Html generato dopo l’importazione.
+Questo perché elementi HTML aggiuntivi come &lt;div> vengono aggiunti al codice Html generato dopo l’importazione.
 
 * Anche gli script che si basano su una struttura simile a quella descritta sopra non sono consigliati per l’uso con elementi contrassegnati per la conversione in componenti AEM.
 * Utilizzo degli stili nei tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&amp;ast;&quot;> non è consigliato.
@@ -519,7 +516,7 @@ La tabella seguente descrive brevemente le proprietà:
   <tr>
    <td> </td>
    <td>Sostituisci pattern</td>
-   <td>Pattern che sostituisce le corrispondenze trovate. Puoi utilizzare riferimenti a gruppi regex come $1, $2. Inoltre, questo modello supporta parole chiave come {designPath} che vengono risolte con il valore effettivo durante l’importazione.</td>
+   <td>Pattern che sostituisce le corrispondenze trovate. Puoi utilizzare riferimenti a gruppi regex come $1, $2. Inoltre, questo modello supporta parole chiave come {designPath} che vengono risolti con il valore effettivo durante l’importazione.</td>
   </tr>
  </tbody>
 </table>
@@ -530,10 +527,12 @@ La tabella seguente descrive brevemente le proprietà:
 >Se devi apportare delle modifiche al pattern di ricerca, quando apri l’editor delle proprietà felix, devi aggiungere manualmente i caratteri barra rovesciata per evitare i metacaratteri regex. Se non aggiungi manualmente i caratteri barra rovesciata, il regex non è considerato valido e non sostituirà quello precedente.
 >
 >Ad esempio, se la configurazione predefinita è
->`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->E devi sostituire >`CQ_DESIGN_PATH` con `VIPURL` nel modello di ricerca, il modello di ricerca deve essere simile al seguente:
-`/\* *VIPURL *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>
+>E devi sostituire `CQ_DESIGN_PATH` con `VIPURL` nel modello di ricerca, il modello di ricerca deve essere simile al seguente:
+>
+>`/\* *VIPURL *\*/ *(['"])`
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -545,14 +544,14 @@ Se il pacchetto di progettazione contiene un markup di componente parsys, dopo l
 
 ### Messaggi di errore visualizzati durante l’importazione {#error-messages-displayed-during-import}
 
-In caso di errori (ad esempio, se il pacchetto importato non è un file ZIP valido), l’importazione della progettazione non importa il pacchetto e visualizza un messaggio di errore sopra la pagina appena sopra la casella di trascinamento. Di seguito sono riportati alcuni esempi di scenari di errore. Dopo aver corretto l’errore, puoi reimportare lo zip aggiornato nella stessa pagina di destinazione vuota. Di seguito sono riportati i diversi scenari in cui vengono generati errori:
+In caso di errori, ad esempio se il pacchetto importato non è un file ZIP valido, l&#39;importazione del progetto non importa il pacchetto. Nella parte superiore della pagina viene invece visualizzato un messaggio di errore sopra la casella di trascinamento. Di seguito sono riportati alcuni esempi di scenari di errore. Dopo aver corretto l’errore, puoi reimportare lo zip aggiornato nella stessa pagina di destinazione vuota. Di seguito sono riportati i diversi scenari in cui vengono generati errori:
 
 * Il pacchetto di progettazione importato non è un archivio zip valido.
 * Il pacchetto di progettazione importato non contiene un index.html al livello superiore.
 
 ### Avvisi visualizzati dopo l’importazione {#warnings-displayed-after-import}
 
-In caso di avvertenze (ad esempio, HTML fa riferimento a immagini che non esistono nel pacchetto), l’importazione di progetti importa lo zip ma visualizza allo stesso tempo un elenco di problemi/avvertenze nel riquadro dei risultati. Facendo clic sul collegamento dei problemi, viene visualizzato un elenco di avvertenze che evidenziano eventuali problemi all’interno del pacchetto di progettazione. Di seguito sono riportati i diversi scenari in cui gli avvisi vengono rilevati e visualizzati dall&#39;utilità di importazione della progettazione:
+Se sono presenti avvertenze (ad esempio, HTML fa riferimento a immagini che non esistono nel pacchetto), l’importazione di progetti importa lo zip ma allo stesso tempo visualizza un elenco di problemi/avvertenze nel riquadro dei risultati. Facendo clic sul collegamento dei problemi, viene visualizzato un elenco di avvertenze che segnalano eventuali problemi all’interno del pacchetto di progettazione. Di seguito sono riportati i diversi scenari in cui gli avvisi vengono rilevati e visualizzati dall&#39;utilità di importazione della progettazione:
 
 * HTML fa riferimento a immagini che non esistono all’interno del pacchetto.
 * HTML fa riferimento a script che non esistono nel pacchetto.
@@ -560,7 +559,7 @@ In caso di avvertenze (ad esempio, HTML fa riferimento a immagini che non esisto
 
 ### Dove vengono memorizzati i file del file ZIP in AEM? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-Dopo l’importazione della pagina di destinazione, i file (immagini, css, js, ecc.) all’interno del pacchetto di progettazione siano conservati nel seguente sito in AEM:
+Dopo l’importazione della pagina di destinazione, i file (immagini, css, js e così via) all’interno del pacchetto di progettazione vengono memorizzati nel seguente percorso in AEM:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
@@ -570,7 +569,7 @@ Supponiamo che la pagina di destinazione sia creata in We.Retail della campagna 
 
 ### Formattazione non mantenuta {#formatting-not-preserved}
 
-Quando crei il CSS, tieni presente le seguenti limitazioni:
+Quando crei un file CSS, tieni presente le seguenti limitazioni:
 
 Se un testo e un’immagine (modificabile) sono simili ai seguenti:
 
@@ -589,7 +588,7 @@ con un CSS applicato alla classe `box` come segue:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-Then `box img` viene utilizzato in importazione progettazione, la formattazione della pagina di destinazione risultante non viene mantenuta. Per ovviare a questo problema, tieni presente che AEM aggiunge tag div nel CSS e riscrive il codice di conseguenza. In caso contrario, alcune regole CSS non saranno valide.
+Then `box img` viene utilizzato in importazione progettazione, la formattazione della pagina di destinazione risultante non sembra essere stata mantenuta. Per ovviare a questo problema, l’AEM aggiunge tag div nel CSS e riscrive il codice di conseguenza. In caso contrario, alcune regole CSS non saranno valide.
 
 ```xml
 .box img
@@ -598,4 +597,5 @@ Then `box img` viene utilizzato in importazione progettazione, la formattazione 
 ```
 
 >[!NOTE]
-Inoltre, i designer devono essere consapevoli del fatto che solo il codice all’interno del **id=cqcanvas** il tag viene riconosciuto dall’importazione, altrimenti la progettazione non viene mantenuta.
+>
+>Inoltre, i designer devono essere consapevoli del fatto che solo il codice all’interno del **id=cqcanvas** il tag viene riconosciuto dall’importazione, altrimenti la progettazione non viene mantenuta.

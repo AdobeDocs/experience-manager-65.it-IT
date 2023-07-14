@@ -1,16 +1,14 @@
 ---
 title: Aggiunta del tracciamento di Adobe Analytics ai componenti
 description: Aggiunta del tracciamento di Adobe Analytics ai componenti
-uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -38,7 +36,7 @@ La voce ContextHub deve essere inclusa immediatamente sotto il `<head>` , mentre
 
 Il `contexthub` script inserito dopo il `<head>` aggiunge le funzioni ContextHub alla pagina.
 
-Il `cloudservices` script aggiunti in `<head>` e `<body>` le sezioni si applicano alle configurazioni dei servizi cloud aggiunte alla pagina. (Se la pagina utilizza più di una configurazione di Cloud Services, devi includere il jsp ContextHub e il jsp dei Cloud Services una sola volta.)
+Il `cloudservices` script aggiunti in `<head>` e `<body>` le sezioni si applicano alle configurazioni dei servizi cloud aggiunte alla pagina. (Se la pagina utilizza più di una configurazione di Cloud Services, devi includere ContextHub jsp e Cloud Services jsp una sola volta.)
 
 Quando si aggiunge un framework Adobe Analytics alla pagina, il `cloudservices` Gli script generano JavaScript relativi ad Adobe Analytics e riferimenti a librerie lato client, in modo simile all’esempio seguente:
 
@@ -135,7 +133,7 @@ I componenti possono interagire con il framework di Adobe Analytics quando il co
 * `cq:trackevents`: identifica gli eventi CQ esposti dal componente. Consulta Eventi personalizzati.
 * `cq:trackvars`: assegna un nome alle variabili CQ mappate con le proprietà Adobe Analytics.
 * `cq:componentName`: nome del componente visualizzato nel Sidekick.
-* `cq:componentGroup`: il Sidekick che include il componente.
+* `cq:componentGroup`: gruppo nella barra laterale che include il componente.
 
 Il codice nel JSP del componente aggiunge il JavaScript alla pagina che attiva il tracciamento e definisce i dati tracciati. Il nome dell’evento e i nomi dei dati utilizzati in JavaScript devono corrispondere ai valori corrispondenti del `analytics` proprietà del nodo.
 
@@ -170,19 +168,19 @@ Configura il componente topnav e modifica il file JSP per definire gli eventi e 
    * Nome: `analytics`
    * Tipo: `nt:unstructured`
 
-1. Aggiungi la seguente proprietà al nodo Analytics per denominare l’evento di tracciamento:
+1. Aggiungi la seguente proprietà al nodo di Analytics in modo da poter denominare l’evento di tracciamento:
 
    * Nome: cq:trackevents
    * Tipo: String
    * Valore: topnavClick
 
-1. Aggiungi la seguente proprietà al nodo Analytics per denominare le variabili di dati:
+1. Aggiungi la seguente proprietà al nodo Analytics in modo da poter denominare le variabili di dati:
 
    * Nome: cq:trackvars
    * Tipo: String
    * Valore: topnavTarget,topnavLocation
 
-1. Aggiungi la seguente proprietà al nodo Analytics per denominare il componente per il Sidekick:
+1. Aggiungi la seguente proprietà al nodo Analytics per denominare il componente per la barra laterale:
 
    * Nome: cq:componentName
    * Tipo: String
@@ -196,7 +194,7 @@ Configura il componente topnav e modifica il file JSP per definire gli eventi e 
 
 1. Fai clic su Salva tutto.
 1. Apri `topnav.jsp` file.
-1. Nell&#39;elemento a, aggiungi il seguente attributo:
+1. Nell&#39;elemento, aggiungi il seguente attributo:
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')"
@@ -362,7 +360,7 @@ Il `analytics` del componente deve esporre i nomi delle variabili utilizzando il
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-Il modulo eCommerce fornisce diversi componenti che generano dati di variabili s.products. Ad esempio, il componente submitorder ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genera JavaScript simile al seguente esempio:
+Il modulo eCommerce fornisce diversi componenti che generano dati di variabili s.products. Ad esempio, il `submitorder` componente ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genera JavaScript simile al seguente esempio:
 
 ```
 <script type="text/javascript">
@@ -440,4 +438,4 @@ Il modulo eCommerce fornisce diversi componenti che generano dati di variabili s
 
 In genere, i browser web limitano la dimensione delle richieste di GET. Poiché i valori di prodotto CQ e SKU sono percorsi di archivio, gli array di prodotti che includono più valori possono superare il limite di dimensioni della richiesta. Pertanto, i componenti devono limitare il numero di elementi nel `product` array di ciascun `CQ_Analytics.record function`. Crea più funzioni se il numero di elementi da monitorare può superare il limite.
 
-Ad esempio, il componente eCommerce submitorder limita il numero di `product` elementi in una chiamata a quattro. Quando il carrello contiene più di quattro prodotti, genera più `CQ_Analytics.record` funzioni.
+Ad esempio, l’eCommerce `submitorder` il componente limita il numero di `product` elementi in una chiamata a quattro. Quando il carrello contiene più di quattro prodotti, genera più `CQ_Analytics.record` funzioni.

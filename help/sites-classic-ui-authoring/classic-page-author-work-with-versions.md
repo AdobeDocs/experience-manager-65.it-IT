@@ -1,18 +1,16 @@
 ---
 title: Utilizzo delle versioni delle pagine
 description: Il controllo delle versioni crea un'istantanea di una pagina in un determinato momento.
-uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 22%
+source-wordcount: '1353'
+ht-degree: 16%
 
 ---
 
@@ -29,7 +27,7 @@ Il controllo delle versioni crea un&#39;istantanea di una pagina in un determina
 Per creare una nuova versione di una pagina:
 
 1. Nel browser, apri la pagina per la quale desideri creare una nuova versione.
-1. Nella barra laterale, seleziona la **Controllo delle versioni** , quindi la scheda **Crea versione** scheda secondaria.
+1. Nel Sidekick, seleziona **Controllo delle versioni** , quindi la scheda **Crea versione** scheda secondaria.
 
    ![screen_shot_2012-02-14alle40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -41,7 +39,7 @@ Per creare una nuova versione di una pagina:
 >
 >Quando la pagina viene attivata, viene creata automaticamente una versione.
 
-## Ripristino di una versione di pagina dalla barra laterale {#restoring-a-page-version-from-sidekick}
+## Ripristino di una versione di pagina dal Sidekick {#restoring-a-page-version-from-sidekick}
 
 Per ripristinare la pagina a una versione precedente:
 
@@ -50,7 +48,7 @@ Per ripristinare la pagina a una versione precedente:
 
    ![screen_shot_2012-02-14alle42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
-1. Seleziona la versione da ripristinare e seleziona **Ripristina**.
+1. Seleziona la versione da ripristinare e fai clic su **Ripristina**.
 
 ## Ripristino di una versione di pagina dalla console {#restoring-a-page-version-from-the-console}
 
@@ -61,7 +59,7 @@ Questo metodo può essere utilizzato per ripristinare una versione della pagina.
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Selezione **Ripristina versione...** elenca le versioni dei documenti nella cartella corrente. Anche se una pagina è stata eliminata, verrà elencata l’ultima versione:
+1. Selezione **Ripristina versione...** elenca le versioni dei documenti nella cartella corrente. Anche se una pagina è stata eliminata, viene elencata l’ultima versione:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -88,7 +86,7 @@ Per confrontare la versione corrente della pagina con una versione precedente:
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Seleziona la versione da confrontare e fai clic su **Diff.** pulsante.
+1. Seleziona la versione da confrontare e fai clic sul pulsante **Diff.** pulsante.
 1. Le differenze tra la versione corrente e la versione selezionata vengono visualizzate come segue:
 
    * Il testo eliminato è di colore rosso e barrato.
@@ -114,7 +112,7 @@ Per effettuare questo collegamento:
 
 >[!NOTE]
 >
->Se le versioni vengono rimosse dal repository, Timewarp non può mostrare la visualizzazione corretta. Inoltre, se sono stati modificati alcuni elementi (come codice, css, immagini ecc.) per il rendering del sito web, la visualizzazione sarà diversa da quella originale, in quanto per tali elementi non vengono conservate precedenti versioni nell’archivio.
+>Se le versioni vengono rimosse dall’archivio, Timewarp non può mostrare la visualizzazione corretta. Inoltre, se sono stati modificati alcuni elementi (come codice, css e immagini) per il rendering del sito web, la visualizzazione è diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nell’archivio.
 
 ### Utilizzo del calendario Timewarp {#using-the-timewarp-calendar}
 
@@ -140,7 +138,7 @@ La versione del calendario viene utilizzata se si dispone di un giorno specifico
 
    >[!NOTE]
    >
-   >Non è possibile modificare la versione precedente della pagina. ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >Non è possibile modificare la versione precedente della pagina. ma solo visualizzarla. Se desideri ripristinare la versione precedente, puoi farlo manualmente utilizzando [ripristinare](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Dopo aver visualizzato la pagina, fai clic su:
 
@@ -155,13 +153,13 @@ La versione timeline viene utilizzata se desideri visualizzare una panoramica de
 
 Se si desidera visualizzare la sequenza temporale del documento:
 
-1. Per visualizzare la linea temporale potete effettuare le seguenti operazioni:
+1. Per visualizzare la linea temporale, effettuate una delle seguenti operazioni:
 
    1. Apri **Controllo delle versioni** e quindi fare clic su **Timewarp** (vicino alla parte inferiore della barra laterale).
 
-   1. Utilizza la finestra di dialogo della barra laterale visualizzata dopo [utilizzo del calendario Timewarp](#using-the-timewarp-calendar).
+   1. Utilizzate la finestra di dialogo della barra laterale visualizzata dopo [utilizzo del calendario Timewarp](#using-the-timewarp-calendar).
 
-1. Fai clic su **Mostra timeline** - viene visualizzata la sequenza temporale del documento, ad esempio:
+1. Clic **Mostra timeline** - viene visualizzata la sequenza temporale del documento, ad esempio:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -169,13 +167,13 @@ Se si desidera visualizzare la sequenza temporale del documento:
 
    * Tutte le righe indicano le versioni pubblicate.
 Quando viene attivata una pagina, inizia una nuova riga. Ogni volta che il documento viene modificato, viene visualizzato un nuovo colore.
-Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata durante l’intervallo di tempo della versione verde iniziale e la linea gialla indica che la pagina è stata modificata durante un intervallo di tempo della versione rossa, ecc.
+Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata durante l’intervallo di tempo della versione verde iniziale e la linea gialla indica che la pagina è stata modificata in un determinato momento durante la versione rossa e così via.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Clic:
 
-   1. **Vai** per visualizzare il contenuto della pagina pubblicata nel momento selezionato.
+   1. **Vai** per visualizzare il contenuto della pagina pubblicata al momento selezionato.
    1. Quando si mostra quel contenuto, utilizza **Esci da Timewarp** per uscire e tornare alla pagina di authoring corrente.
 
 ### Limitazioni di Timewarp {#timewarp-limitations}
@@ -186,10 +184,10 @@ Timewarp semplifica al massimo la riproduzione di una pagina in un determinato m
 * **Timewarp utilizza le versioni di pagina**: se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa verrà riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
 * **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
 
-* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](#main-pars-title-1).
+* **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, puoi farlo manualmente utilizzando [ripristinare](#main-pars-title-1).
 
-* **Timewarp si basa solo sul contenuto della pagina**: se sono stati modificati alcuni elementi (come codice, css, risorse/immagini ecc.) per il rendering del sito web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nell’archivio.
+* **Timewarp si basa solo sul contenuto della pagina** - Se sono stati modificati alcuni elementi (come codice, css e risorse immagine) per il rendering del sito web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nell’archivio.
 
 >[!CAUTION]
 >
->Timewarp è uno strumento progettato per aiutare gli autori a comprendere e creare i propri contenuti. Non deve essere utilizzato come registro di controllo o per fini legali.
+>Timewarp è progettato per aiutare gli autori a comprendere e creare i loro contenuti. Non deve essere utilizzato come registro di controllo o per fini legali.

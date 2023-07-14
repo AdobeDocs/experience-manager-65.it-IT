@@ -1,19 +1,15 @@
 ---
 title: Teaser e strategie
-seo-title: Teasers and Strategies
 description: Le campagne utilizzano spesso i teaser come meccanismo per attrarre un segmento specifico della popolazione di visitatori, fino a contenuti incentrati sui loro interessi. Uno o più teaser sono definiti per una campagna specifica.
-seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
-uuid: c78ec858-4b0a-48d5-99b2-5ddd9e15183d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1196'
 ht-degree: 6%
 
 ---
@@ -24,7 +20,7 @@ Le campagne utilizzano spesso i teaser come meccanismo per attrarre un segmento 
 
 >[!NOTE]
 >
->Il componente Teaser è diventato obsoleto in AEM 6.2. Utilizza il [Componente di destinazione](/help/sites-authoring/content-targeting-touch.md) invece.
+>Il componente Teaser è ora obsoleto nell’AEM 6.2. Invece, utilizza [Componente di destinazione](/help/sites-authoring/content-targeting-touch.md).
 
 * **Pagine marchio** sono memorizzate nella sezione Campagne del sito web. Un brand contiene le singole campagne.
 * **Pagine della campagna** sono memorizzate nella sezione Campagne del sito web. Ogni campagna ha una singola pagina, in cui sono conservate le definizioni del teaser. La pagina contenitore, o panoramica, contiene anche determinate informazioni e statistiche relative alle singole pagine teaser.
@@ -32,17 +28,17 @@ Le campagne utilizzano spesso i teaser come meccanismo per attrarre un segmento 
 I teaser all’interno dell’AEM sono composti da diverse parti:
 
 * **Pagine teaser** sono memorizzate nella pagina della campagna appropriata e contengono le definizioni dei paragrafi teaser disponibili per ciascuna campagna specifica. Queste definizioni vengono utilizzate quando vengono visualizzati i paragrafi del teaser, incluse le varianti di contenuto, il segmento da utilizzare per selezionare una variante e un fattore di incremento.
-* Il **Componente teaser** è disponibile come opzione predefinita e consente di creare un’istanza del paragrafo del teaser specifico in una pagina di contenuto. Puoi trascinare il componente teaser dalla barra laterale, quindi specificare la definizione del teaser per creare un paragrafo teaser personalizzato. **Nota:** Il componente Teaser è diventato obsoleto in AEM 6.2. Utilizza il [Componente di destinazione](/help/sites-authoring/content-targeting-touch.md) invece.
+* Il **Componente teaser** è disponibile come opzione predefinita e consente di creare un’istanza del paragrafo del teaser specifico in una pagina di contenuto. Puoi trascinare il componente teaser dalla barra laterale, quindi specificare la definizione del teaser per creare un paragrafo teaser personalizzato. **Nota:** Il componente Teaser è ora obsoleto nell’AEM 6.2. Invece, utilizza [Componente di destinazione](/help/sites-authoring/content-targeting-touch.md).
 * **Paragrafi teaser** sono istanze effettive del teaser all’interno di una pagina di contenuto. Questi attirano un segmento di visitatori fino a contenuti incentrati sui loro interessi.
-* Le pagine che contengono il contenuto della campagna si concentrano su un segmento di visitatori specifico. Di solito i paragrafi teaser conducono il visitatore a tali pagine.
+* Le pagine che contengono il contenuto della campagna si concentrano su un segmento di visitatori specifico. Di solito, i paragrafi teaser portano il visitatore a tali pagine.
 
 ## Strategie {#strategies}
 
-Quando si aggiunge un paragrafo teaser a una pagina è necessario definire **Strategia**.
+Quando aggiungi un paragrafo teaser a una pagina, devi definire **Strategia**.
 
 In questo caso, poiché i segmenti assegnati si risolvono tutti correttamente, sono disponibili diversi teaser da selezionare. Il **Strategia** specifica quindi un criterio aggiuntivo da utilizzare per selezionare il teaser visualizzato:
 
-* **Punteggio clickstream**, si basa sui tag e sugli hit tag correlati presenti nel contesto client del visitatore (mostra la frequenza con cui un visitatore ha fatto clic sulle pagine contenenti il rispettivo tag). Vengono confrontate le percentuali di hit per i tag definiti nella pagina teaser.
+* **Punteggio clickstream**, si basa sui tag e sugli hit tag correlati presenti nel contesto client del visitatore (mostra la frequenza con cui un visitatore ha fatto clic sulle pagine che contengono il rispettivo tag). Vengono confrontate le percentuali di hit per i tag definiti nella pagina teaser.
 * **Casuale**, per la selezione &quot;casuale&quot;; utilizza il fattore casuale generato per una pagina, visualizzabile con [contesto client](/help/sites-administering/client-context.md).
 * **Primo** nell’elenco dei segmenti risolti. L’ordine è quello dei teaser all’interno della pagina del contenitore della campagna.
 
@@ -112,10 +108,10 @@ Utilizziamo inoltre le seguenti definizioni di teaser:
 
 Quindi, se applichiamo questo a un visitatore in cui:
 
-* **S1**, **S2** e **S6** risoluzione riuscita
+* **S1**, **S2 e **S6** risoluzione riuscita
 
-* il tag **marketing** ha 3 hit
-* il tag **business** ha 6 hit
+* il tag **marketing** ha tre hit
+* il tag **business** ha sei hit
 
 Possiamo vedere il risultato:
 
@@ -224,22 +220,22 @@ Questi valori vengono utilizzati per determinare i teaser che il visitatore vedr
 >
 >Se, dopo le tecniche di risoluzione di cui sopra, sono disponibili più teaser per la selezione, una selezione interna (casuale) selezionerà un singolo teaser per la visualizzazione.
 >
->Ad esempio, se la strategia era Punteggio di clickstream e T5 aveva lo stesso Punteggio di clickstream di T6 (cioè 6 invece di 3) allora la selezione interna (casuale) sarebbe stata utilizzata per selezionare uno di questi due.
+>Ad esempio, se la strategia era Punteggio di clickstream e T5 aveva lo stesso Punteggio di clickstream di T6 (ovvero sei invece di tre), la selezione interna (casuale) sarebbe stata utilizzata per selezionare uno di questi due.
 
-Le pagine/paragrafi teaser vengono utilizzate per indirizzare specifici segmenti di visitatori a contenuti incentrati sui loro interessi. Possono presentare una serie di opzioni tra cui scegliere il visitatore o mostrare un solo paragrafo teaser basato sul segmento specifico del visitatore; ad esempio, il paragrafo teaser mostrato può dipendere dall’età del visitatore.
+Le pagine/paragrafi teaser vengono utilizzate per indirizzare specifici segmenti di visitatori a contenuti incentrati sui loro interessi. Possono presentare una serie di opzioni tra cui scegliere il visitatore o mostrare un solo paragrafo teaser basato sul segmento specifico del visitatore. Ad esempio, il paragrafo del teaser mostrato può dipendere dall’età del visitatore.
 
 In genere, una pagina teaser è un’azione temporanea che dura per un periodo di tempo specifico, fino a quando non viene sostituita dalla pagina teaser successiva.
 
-Dopo aver creato il brand e la campagna, puoi creare e configurare l’esperienza del teaser.
+Dopo aver creato il brand e la campagna, puoi creare e configurare l’esperienza teaser.
 
 ### Creazione di un punto di contatto per il teaser {#creating-a-touchpoint-for-your-teaser}
 
 >[!NOTE]
 >
->Il componente Teaser è diventato obsoleto in AEM 6.2. Utilizza il [Componente di destinazione](/help/sites-authoring/content-targeting-touch.md) invece.
+>Il componente Teaser è ora obsoleto nell’AEM 6.2. Invece, utilizza [Componente di destinazione](/help/sites-authoring/content-targeting-touch.md).
 
 1. Passa alla pagina del contenuto in cui desideri inserire il paragrafo del teaser che porterà alla pagina della campagna.
-1. Aggiungi un **Teaser** componente (disponibile nella **Personalizzazione** sezione della barra laterale) nella posizione desiderata. La prima volta che viene creato, viene mostrato che il percorso della campagna non è ancora configurato:
+1. Aggiungi un **Teaser** componente (disponibile nella **Personalizzazione** sezione della barra laterale) nella posizione desiderata. La prima volta che viene creato, mostra che il percorso della campagna non è ancora configurato:
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -250,13 +246,14 @@ Percorso della pagina della campagna che contiene la pagina del singolo teaser; 
 
    * **[Strategia](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
 Metodo utilizzato per la selezione quando più segmenti vengono risolti correttamente.
+
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. Clic **OK** per salvare. A seconda dei segmenti impostati sul teaser e del profilo dell’utente attualmente connesso come, verrà visualizzato il contenuto appropriato:
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
-1. Passa il puntatore del mouse sul paragrafo teaser per visualizzare l’icona del punto interrogativo (nell’angolo in basso a destra del componente). Fai clic su questo pulsante per visualizzare i segmenti applicati e se sono attualmente risolti.
+1. Passa il puntatore del mouse sul paragrafo teaser per visualizzare l’icona del punto interrogativo (angolo in basso a destra del componente). Fai clic su questo pulsante per visualizzare i segmenti applicati e se sono attualmente risolti.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 

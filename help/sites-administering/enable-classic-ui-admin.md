@@ -1,17 +1,13 @@
 ---
 title: Admin Console
-seo-title: Admin Consoles
 description: Scopri come utilizzare gli Admin Console disponibili nell’AEM.
-seo-description: Lear how to use the Admin Consoles available in AEM.
-uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: 729e5eb99b0c14f3d2fd8c3f4ec636f7fb52124f
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 2%
@@ -27,7 +23,7 @@ Ogni console con una versione dell’interfaccia classica in `/libs/cq/core/cont
 
 In questo esempio viene riattivata l’interfaccia classica per la console Sites.
 
-1. Utilizzando CRXDE Lite, trova il nodo corrispondente all’Admin Console per il quale desideri riabilitare l’interfaccia classica. Si trovano in:
+1. Utilizzando CRXDE Lite, individua il nodo corrispondente all’Admin Console per il quale desideri riabilitare l’interfaccia classica. Si trovano in:
 
    `/libs/cq/core/content/nav`
 
@@ -49,7 +45,7 @@ In questo esempio viene riattivata l’interfaccia classica per la console Sites
 
    `enableDesktopOnly = {Boolean}true`
 
-1. Il **Interfaccia classica** l’opzione è nuovamente disponibile come opzione a comparsa in admin console.
+1. Il **Interfaccia classica** L’opzione è nuovamente disponibile come opzione a comparsa nell’Admin Console.
 
    ![opzione popover dell’interfaccia classica](assets/syui-01-2019-02-27-15-16-55.png)
 

@@ -3,11 +3,10 @@ title: Adobe Experience Manager Mobili - Preparazione al RGPD
 description: Adobe Experience Manager Mobili - Preparazione al RGPD
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
-discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '688'
 ht-degree: 1%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD, CCPA, ecc.
+>Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD e CCPA.
 
 ## Supporto per il RGPD di AEM Mobile {#aem-mobile-gdpr-support}
 
@@ -26,15 +25,15 @@ AEM Mobile è pronta ad assistere i clienti con i loro obblighi di conformità a
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Il prodotto per la pubblicazione digitale di Adobe (che precede AEM Mobile) supporta le iniziative Adobe di preparazione al RGPD. Consulta [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Di seguito sono riportate le specifiche sul supporto delle funzioni relative al RGPD nel prodotto Digital Publishing Suite, incluso come utilizzare Adobe per avviare le richieste RGPD.
+Il prodotto per la pubblicazione digitale di Adobe (che precede AEM Mobile) supporta le iniziative Adobe di preparazione al RGPD. Consulta [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). Di seguito sono riportate le specifiche sul supporto delle funzioni relative al RGPD nel prodotto di Digital Publishing Suite, incluso come utilizzare l’Adobe per avviare le richieste RGPD.
 
-Per evitare di confondere AEM Mobile con il precedente prodotto Digital Publishing Suite, puoi accedere al prodotto Digital Publishing Suite qui:
+Per evitare di confondere AEM Mobile con il prodotto di Digital Publishing Suite precedente, puoi accedere al prodotto di Digital Publishing Suite facendo clic qui:
 
 [https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
 ### Avvio di una richiesta RGPD {#initiating-a-gdpr-request}
 
-Contatta l’Assistenza clienti Adobe per avviare una richiesta RGPD per Digital Publishing Suite.
+Contatta l’Assistenza clienti Adobe per avviare una richiesta RGPD per il Digital Publishing Suite.
 
 Per individuare i dati dei clienti sono necessari i seguenti ID. Qualsiasi sottoinsieme ricevuto implica che gli altri ID non erano applicabili a questo utente.
 
@@ -52,11 +51,11 @@ Fornire almeno una delle seguenti informazioni:
 
 **Adobe eliminerà i miei acquisti App Store quando si avvia una richiesta DELETE?**
 
-Adobe eliminerà le informazioni di cui dispone sugli acquisti da app store (abbonamenti, ecc.) ma gli acquisti negli App Store continueranno ad essere registrati. Se l’app (utente finale) è registrata nell’app store, tali entrate verranno ritirate e inviate all’Adobe e, successivamente, verranno considerate come nuovi acquisti e verranno ripristinate dall’app affinché possa nuovamente accedervi.
+Adobe elimina le informazioni di cui dispone sugli acquisti dell’app store (abbonamenti e così via), ma gli acquisti sono ancora registrati negli app store. Se l’app (utente finale) è registrata nell’app store, tali entrate vengono prelevate nuovamente e inviate all’Adobe e successivamente, vengono considerate come nuovi acquisti e vengono ripristinate dall’app affinché possa nuovamente accedervi.
 
 **Un Adobe eliminerà i diritti forniti dal cliente quando si avvia una richiesta DELETE?**
 
-Adobe eliminerà le informazioni di cui dispone sulle quote aggiuntive di adesione dirette del cliente. Se l’app (utente finale) accede al meccanismo OAuth utilizzato dal cliente, invierà informazioni ad Adobe e i servizi sceglieranno nuovamente i diritti aggiuntivi.
+L&#39;Adobe elimina le informazioni di cui dispone in merito alle quote aggiuntive spettanti direttamente al cliente. Se l’app (utente finale) accede al meccanismo OAuth utilizzato dal cliente, invia informazioni ad Adobe e i servizi raccolgono nuovamente i diritti aggiuntivi.
 
 **Quali sono le aspettative dell&#39;utente finale?**
 
@@ -64,7 +63,7 @@ Poiché la chiave per assegnare i diritti all’app risiede sul dispositivo come
 
 **Cosa succede quando un’app viene condivisa tra persone su un dispositivo?**
 
-Adobe dispone di pochissime informazioni che vengono associate direttamente a un utente specifico. Associa i dati utilizzando un UUID creato in modo casuale che viene conservato nei dati dell’app e trasmesso in ogni richiesta avviata dall’app. Ciò significa che gli utenti finali che condividono l’app sullo stesso dispositivo utilizzeranno lo stesso UUID e che tutti i dati saranno considerati di proprietà della persona che effettua la richiesta RGPD. Per entrambe le richieste di accesso ed eliminazione, DPSC considererà le persone che condividono un’app come un’unica persona.
+L’Adobe dispone di informazioni minime che vengono associate direttamente a un utente specifico. Associa i dati utilizzando un UUID creato in modo casuale che viene conservato nei dati dell’app e trasmesso in ogni richiesta avviata dall’app. Ciò significa che gli utenti finali che condividono l’app sullo stesso dispositivo utilizzano lo stesso UUID e che tutti i dati sono considerati di proprietà della persona che effettua la richiesta RGPD. Per entrambe le richieste di accesso ed eliminazione, DPSC considera le persone che condividono un’app come un’unica persona.
 
 **Quali dati personali vengono tracciati con Analytics?**
 
@@ -72,13 +71,13 @@ Nessuno. Sono presenti dati tracciati, ma si trovano a livello di app (non perso
 
 **L’utente finale ha fornito le informazioni, ma non è stato trovato nulla. Perché no?**
 
-Con l’evolversi del prodotto Digital Publishing Suite, le implementazioni dei servizi sono state modificate e più dati sono stati offuscati. Se non sono stati trovati dati utilizzando i dati forniti dall’utente, significa che i dati dell’utente non possono essere tracciati per quella persona.
+Con l’evoluzione del prodotto di Digital Publishing Suite, le implementazioni dei servizi sono state modificate e più dati sono stati offuscati. Se non sono stati trovati dati utilizzando i dati forniti dall’utente, significa che i dati dell’utente non possono essere tracciati per quella persona.
 
 ### Esempio {#example}
 
 Contatta l’Assistenza clienti Adobe per avviare una richiesta RGPD.
 
-Ecco un esempio degli input e degli output risultanti da una richiesta RGPD di Digital Publishing Suite:
+Di seguito è riportato un esempio degli input e degli output risultanti da una richiesta RGPD Digital Publishing Suite:
 
 #### Input: {#inputs}
 

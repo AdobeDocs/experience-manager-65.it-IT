@@ -1,20 +1,16 @@
 ---
 title: Distribuzione e manutenzione
-seo-title: Deploying and Maintaining
 description: Scopri come iniziare a installare l’AEM.
-seo-description: Learn how to get started with the AEM installation.
-uuid: 4429ac4d-abd7-47d8-b19d-773accb7cc7a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 4%
+source-wordcount: '1766'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +35,7 @@ In questa pagina trovi:
    * [Directory di installazione decompressa](#unpacked-install-directory)
    * [Avvio e arresto](#starting-and-stopping)
 
-Una volta acquisite familiarità con queste nozioni di base, le informazioni più avanzate e dettagliate sono disponibili nelle seguenti sottopagine:
+Dopo aver acquisito familiarità con queste nozioni di base, puoi trovare informazioni più avanzate e dettagliate nelle seguenti sottopagine:
 
 * [Requisiti tecnici](/help/sites-deploying/technical-requirements.md)
 * [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md)
@@ -64,15 +60,15 @@ Una volta acquisite familiarità con queste nozioni di base, le informazioni pi�
 
 ### Che cos’è l’AEM? {#what-is-aem}
 
-Adobe Experience Manager è un sistema client-server basato su Web per la creazione, la gestione e la distribuzione di siti Web commerciali e servizi correlati. Combina una serie di funzioni a livello di infrastruttura e di applicazione in un unico pacchetto integrato.
+Adobe Experience Manager è un sistema client-server basato su Web per la creazione, la gestione e la distribuzione di siti Web commerciali e servizi correlati. Combina diverse funzioni a livello di infrastruttura e di applicazione in un unico pacchetto integrato.
 
 A livello di infrastruttura, l’AEM fornisce quanto segue:
 
 * **Server applicazioni Web**: AEM può essere distribuito in modalità indipendente (include un server web Jetty integrato) o come applicazione web all’interno di un server applicazioni di terze parti.
 * **Framework applicazione Web**: AEM incorpora Sling Web Application Framework che semplifica la scrittura di applicazioni web RESTful orientate ai contenuti.
-* **Archivio dei contenuti**: AEM include Java Content Repository (JCR), un tipo di database gerarchico progettato specificamente per i dati non strutturati e semistrutturati. L’archivio memorizza non solo il contenuto rivolto all’utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall’applicazione.
+* **Archivio dei contenuti**: AEM include Java™ Content Repository (JCR), un tipo di database gerarchico progettato appositamente per i dati non strutturati e semistrutturati. L’archivio memorizza non solo il contenuto rivolto all’utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall’applicazione.
 
-Su questa base, l&#39;AEM offre anche una serie di funzionalità a livello di applicazione per la gestione di:
+Su questa base, l’AEM offre anche diverse funzionalità a livello di applicazione per la gestione di:
 
 * **Siti Web**
 * **Applicazioni mobili**
@@ -88,16 +84,16 @@ Il server AEM è **Basato su Java** e viene eseguito sulla maggior parte dei sis
 
 ### Scenari di implementazione tipici {#typical-deployment-scenarios}
 
-Nella terminologia AEM, per &quot;istanza&quot; si intende una copia dell’AEM in esecuzione su un server. Le installazioni dell’AEM in genere coinvolgono almeno due istanze, in genere eseguite su macchine separate:
+Nella terminologia AEM, per &quot;istanza&quot; si intende una copia dell’AEM in esecuzione su un server. Le installazioni AEM in genere richiedono almeno due istanze, in genere eseguite in computer separati:
 
 * **Autore**: istanza AEM utilizzata per creare, caricare e modificare i contenuti e amministrare il sito web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
 * **Pubblica**: istanza dell’AEM che rende pubblici i contenuti pubblicati.
 
-Queste istanze sono identiche in termini di software installato. Si differenziano solo per configurazione. Inoltre, la maggior parte delle installazioni utilizza un dispatcher:
+Queste istanze sono identiche in termini di software installato. Si differenziano solo per configurazione. Inoltre, la maggior parte delle installazioni utilizza un’istanza di Dispatcher:
 
-* **Dispatcher**: server web statico (Apache httpd, Microsoft IIS, ecc.) potenziato con il modulo dispatcher per AEM. Memorizza nella cache le pagine web prodotte dall’istanza di pubblicazione per migliorare le prestazioni.
+* **Dispatcher**: server web statico (Apache httpd, Microsoft® IIS e così via) potenziato con il modulo Dispatcher dell’AEM. Memorizza nella cache le pagine web prodotte dall’istanza di pubblicazione per migliorare le prestazioni.
 
-Sono disponibili molte opzioni ed elaborazioni avanzate per questa configurazione, ma il pattern di base di authoring, pubblicazione e dispatcher è al centro della maggior parte delle distribuzioni. Inizieremo concentrandoci su una configurazione relativamente semplice. Seguirà la discussione sulle opzioni di distribuzione avanzate.
+Sono disponibili molte opzioni ed elaborazioni avanzate per questa configurazione, ma il pattern di base di authoring, pubblicazione e Dispatcher è al centro della maggior parte delle distribuzioni. Iniziamo concentrandoci su una configurazione semplice. Di seguito vengono illustrate le opzioni di distribuzione avanzate.
 
 Le sezioni seguenti descrivono entrambi gli scenari:
 
@@ -107,7 +103,7 @@ Le sezioni seguenti descrivono entrambi gli scenari:
 
 ### On-premise {#on-premise}
 
-È possibile installare AEM sui server dell&#39;ambiente aziendale. Le istanze di installazione tipiche includono: ambienti di sviluppo, test e pubblicazione. Consulta la sezione [Guida introduttiva](/help/sites-deploying/deploy.md#getting%20started) per informazioni di base su come ottenere il software AEM per installarlo localmente.
+È possibile installare AEM sui server dell&#39;ambiente aziendale. Le istanze di installazione tipiche includono: ambienti di sviluppo, test e pubblicazione. Consulta [Guida introduttiva](/help/sites-deploying/deploy.md#getting%20started) per informazioni di base su come ottenere il software AEM per installarlo localmente.
 
 Per ulteriori informazioni sulle tipiche implementazioni on-premise, consulta [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md).
 
@@ -119,9 +115,9 @@ Con AEM Managed Services i clienti possono realizzare i seguenti vantaggi:
 
 **Time-to-Market più rapido:** Grazie all’infrastruttura cloud flessibile di Adobe Managed Services, le organizzazioni possono pianificare, avviare e ottimizzare rapidamente le esperienze digitali di successo. Adobe gestisce l’architettura cloud senza richiedere capitale, hardware o software aggiuntivo e i Customer Solutions Engineer di Adobe, aiutano con l’architettura AEM, il provisioning, la personalizzazione per la connessione alle app back-end e le best practice per la pubblicazione.
 
-**Prestazioni più elevate:** Offre esperienze digitali affidabili per la tua azienda con quattro opzioni di disponibilità dei servizi: 99,5%, 99,9%, 99,95% e 99,99%. Consente inoltre il backup automatico e modelli di disaster recovery multimodali per garantire affidabilità e gestione di emergenza.
+**Prestazioni più elevate:** Offre esperienze digitali affidabili per la tua azienda con quattro opzioni di disponibilità dei servizi: 99,5%, 99,9%, 99,95% e 99,99%. Inoltre, consente il backup automatico e modelli di disaster recovery multimodali per garantire affidabilità e gestione di emergenza.
 
-**Costi IT ottimizzati:** La guida proattiva e la competenza tecnica aiutano le organizzazioni a mantenere aggiornata la versione più recente dell’AEM. Adobe Platinum Maintenance and Support viene incluso automaticamente nelle nuove implementazioni di AMS Enterprise/Basic, offrendo competenze tecniche ed esperienza operativa per aiutare le organizzazioni a mantenere le applicazioni mission-critical. Le funzionalità di base gratuite di Analytics o Target offrono ulteriore valore, soprattutto per le organizzazioni di fascia media con esigenze limitate di analisi e personalizzazione.
+**Costi IT ottimizzati:** Le organizzazioni che si occupano di consulenza proattiva e assistenza tecnica sono sempre al corrente dell’ultima versione dell’AEM. Adobe Platinum Maintenance and Support viene incluso automaticamente nelle nuove implementazioni di AMS Enterprise/Basic, offrendo competenze tecniche ed esperienza operativa per aiutare le organizzazioni a mantenere le proprie applicazioni mission-critical. Le funzionalità di base gratuite di Analytics o Target offrono ulteriore valore, soprattutto per le organizzazioni di fascia media con esigenze limitate di analisi e personalizzazione.
 
 **Massima sicurezza:** Garantisce la sicurezza fisica, di rete e dei dati di livello enterprise, ospitando le applicazioni dei clienti in una struttura ad accesso limitato, dietro i sistemi firewall o all&#39;interno di un cloud privato virtuale. Include macchine virtuali a tenant singolo con crittografia di storage dei dati affidabile, antivirali e isolamento dei dati.
 
@@ -133,19 +129,19 @@ Per ulteriori informazioni su Cloud Manager e sulle relative risorse, consulta [
 
 ### Prerequisiti {#prerequisites}
 
-Mentre le istanze di produzione vengono in genere eseguite su computer dedicati che eseguono un sistema operativo ufficialmente supportato (vedi [Requisiti tecnici](/help/sites-deploying/technical-requirements.md)), il server di Experience Manager verrà eseguito su qualsiasi sistema che supporta [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+Mentre le istanze di produzione vengono eseguite su computer dedicati che eseguono un sistema operativo ufficialmente supportato (vedi [Requisiti tecnici](/help/sites-deploying/technical-requirements.md)), il server di Experience Manager verrà eseguito su qualsiasi sistema che supporta [**Java™ Standard Edition 8**](https://www.oracle.com/java/technologies/downloads/#java8).
 
-A scopo di familiarizzazione e per lo sviluppo su AEM è abbastanza comune utilizzare un&#39;istanza installata sul computer locale che esegue Apple OS X o versioni desktop di Microsoft Windows o Linux.
+A scopo di familiarizzazione e per lo sviluppo su AEM, è comune utilizzare un’istanza installata sul computer locale con Apple OS X o versioni desktop di Microsoft® Windows o Linux®.
 
-Sul lato client, AEM funziona con tutti i browser moderni (**Microsoft Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) su sistemi operativi desktop e tablet. Consulta [Piattaforme client supportate](/help/sites-deploying/technical-requirements.md#supported-client-platforms) per i dettagli.
+Sul lato client, AEM funziona con tutti i browser moderni (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) su sistemi operativi desktop e tablet. Consulta [Piattaforme client supportate](/help/sites-deploying/technical-requirements.md#supported-client-platforms) per i dettagli.
 
 ### Recupero del software {#getting-the-software}
 
 I clienti con un contratto di manutenzione e supporto valido devono aver ricevuto una notifica e-mail con un codice ed essere in grado di scaricare l’AEM dal [**Sito Web Adobe Licensing**](https://licensing.adobe.com/). I partner commerciali possono richiedere l’accesso al download da [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
-Il pacchetto software AEM è disponibile in due formati:
+Il pacchetto software AEM è disponibile in due forme:
 
-* **cq-quickstart-6.5.0.jar:** Un eseguibile autonomo *barattolo* che include tutto il necessario per iniziare a utilizzare.
+* **cq-quickstart-6.5.0.jar:** Un eseguibile autonomo *barattolo* file che include tutto il necessario per l&#39;esecuzione.
 
 * **cq-quickstart-6.5.0.war:** A *guerra* per la distribuzione in un server applicazioni di terze parti.
 
@@ -155,15 +151,15 @@ Nella sezione seguente vengono descritte le **installazione autonoma**. Per ulte
 
 1. Creare una directory di installazione nel computer locale. Ad esempio:
 
-   Percorso di installazione UNIX: **/opt/aem**
+   Percorso di installazione UNIX®: **/opt/aem**
 
    Percorso di installazione di Windows: **`C:\Program Files\aem`**
 
-   Allo stesso modo, è comune installare istanze di esempio in una cartella direttamente sul desktop. In ogni caso, ci riferiremo genericamente a questa posizione come:
+   Allo stesso modo, è comune installare istanze di esempio in una cartella direttamente sul desktop. In ogni caso, questa posizione viene genericamente indicata come:
 
    `<aem-install>`
 
-   *Si noti che il percorso della directory dei file deve essere costituito solo da caratteri ASCII US.*
+   *Il percorso della directory dei file deve essere costituito solo da caratteri ASCII US.*
 
 1. Posiziona **barattolo** e **licenza** file in questa directory:
 
@@ -173,7 +169,7 @@ Nella sezione seguente vengono descritte le **installazione autonoma**. Per ulte
        license.properties
    ```
 
-   Se non fornisci un’ `license.properties` , AEM reindirizzerà il browser a un **Benvenuti** all&#39;avvio, dove è possibile immettere un codice di licenza. Se non si dispone ancora di un codice di licenza, è necessario richiedere un codice di licenza valido all&#39;Adobe.
+   Se non fornisci un’ `license.properties` , AEM reindirizza il browser a un **Benvenuti** all&#39;avvio, dove è possibile immettere un codice di licenza. Se non si dispone ancora di un codice di licenza, è necessario richiedere un codice di licenza valido all&#39;Adobe.
 
 1. Per avviare l&#39;istanza in un ambiente GUI, fare doppio clic sul pulsante **`cq-quickstart-6.5.0.jar`** file.
 
@@ -183,13 +179,13 @@ Nella sezione seguente vengono descritte le **installazione autonoma**. Per ulte
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
-L’AEM impiegherà alcuni minuti per decomprimere il file jar, installarsi e avviare. La procedura sopra descritta comporta:
+L’AEM impiega qualche minuto per decomprimere il file jar, installarsi e avviare. La procedura sopra descritta comporta:
 
 * un **Autore AEM** istanza
 * in esecuzione **localhost**
 * sulla porta **4502**
 
-Per accedere all’istanza, fai clic sul browser per:
+Per accedere all’istanza, seleziona:
 
 **`https://localhost:4502`**
 
@@ -205,13 +201,13 @@ Ad esempio, rinominando il file in
 
 **`cq-author-p4502.jar`**
 
-e il suo avvio darà luogo a un’istanza di authoring in esecuzione su **`localhost:4502`**.
+Quando viene avviata, l’istanza di authoring viene eseguita su **`localhost:4502`**.
 
 Analogamente, rinominare e avviare il file
 
 **`cq-publish-p4503.jar`**
 
-si tradurrà in un’istanza Publish in esecuzione su **`localhost:4503`**.
+Risultati in un’istanza Publish in esecuzione su **`localhost:4503`**.
 
 Ad esempio, installa queste due istanze in
 
@@ -226,7 +222,7 @@ Per ulteriori informazioni sulla personalizzazione dell&#39;installazione, veder
 
 ### Directory di installazione decompressa {#unpacked-install-directory}
 
-Quando il file jar quickstart viene avviato per la prima volta, si decomprime nella stessa directory in una nuova sottodirectory denominata `crx-quickstart`. Dovresti finire con quanto segue:
+Quando il file jar quickstart viene avviato per la prima volta, si disinserisce nella stessa directory in una nuova sottodirectory denominata `crx-quickstart`. Dovresti avere quanto segue:
 
 ```xml
 <aem-install>/
@@ -264,11 +260,11 @@ Una volta che l’AEM si è disimballato e si è avviato per la prima volta, fac
 
 Per arrestare l&#39;istanza dall&#39;interfaccia utente grafica, fare clic sul pulsante **on/off** accendere la finestra dell&#39;applicazione desktop.
 
-È inoltre possibile arrestare e avviare AEM dalla riga di comando. Se hai già installato l’istanza per la prima volta, il **script della riga di comando** si trovano qui:
+È inoltre possibile arrestare e avviare AEM dalla riga di comando. Se hai già installato l’istanza per la prima volta, il **script della riga di comando** sono qui:
 
 **`<aem-install>/crx-quickstart/bin/`**
 
-Questa cartella contiene i seguenti script di shell base Unix:
+Questa cartella contiene i seguenti script di shell UNIX® bash:
 
 * **`start`**: avvia l’istanza
 * `stop`: arresta l’istanza
@@ -285,7 +281,7 @@ L’AEM avvia e reindirizza automaticamente il browser web alla pagina appropria
 
 ![schermata di accesso](assets/screen_shot_2019-04-08at83533am.png)
 
-Una volta effettuato l’accesso, puoi accedere all’AEM. Per ulteriori informazioni, a seconda del ruolo, consulta:
+Una volta effettuato l’accesso, puoi accedere all’AEM. Per ulteriori informazioni, a seconda del ruolo, vedi quanto segue:
 
 * [Authoring  ](/help/sites-authoring/home.md)
 * [Amministrazione](/help/sites-administering/home.md)

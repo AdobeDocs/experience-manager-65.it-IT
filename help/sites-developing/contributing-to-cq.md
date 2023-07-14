@@ -1,18 +1,14 @@
 ---
 title: Contribuire all’AEM
-seo-title: Contributing to AEM
 description: L’AEM è sviluppato seguendo metodologie comprovate comunemente utilizzate in grandi progetti open source
-seo-description: AEM is developed following proven methodologies commonly practiced in large open source projects
-uuid: ffef60ae-8a9a-4c4b-8cbd-3cd72792a42e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2672'
 ht-degree: 0%
 
 ---
@@ -23,18 +19,18 @@ ht-degree: 0%
 
 L’AEM è sviluppato seguendo metodologie comprovate comunemente utilizzate in grandi progetti open source. Molti elementi core nello stack di tecnologia AEM sono infatti mantenuti come progetti open source attivi, come Sling e Jackrabbit, che hanno contribuito alla Apache Software Foundation. Un aspetto importante di questo spirito che è presente in AEM è che si è incoraggiati a utilizzare le mailing list disponibili e i forum online per interazioni dirette con il team di sviluppo.
 
-Se contribuisci ai componenti dell’AEM, devi acquisire familiarità con l’AEM come faresti quando contribuisci a un progetto open source e comunicare con il team di base esistente come faresti quando intendi contribuire a tale progetto.
+Se contribuisci ai componenti dell’AEM, impara a conoscere l’AEM come faresti quando contribuisci a un progetto open-source e comunica con il team di base esistente come faresti quando hai intenzione di contribuire a tale progetto.
 
 ## Esperienza richiesta {#required-experience}
 
-Il protocollo HTTP (HyperText Transfer Protocol) è fondamentale per tutte le nostre attività. Pertanto, prima di contribuire all’AEM, è necessario avere una conoscenza approfondita di HTTP, idealmente nella misura in cui si sarebbe in grado di scrivere la propria implementazione Java di un server HTTP multithread con thread-pooling. È inoltre necessario conoscere il comportamento keep-alive di HTTP/1.1 e le interazioni lato server/client con JavaScript, in particolare lo stile di interazione asincrona rappresentato dall&#39;AJAX.
+Il protocollo HTTP (HyperText Transfer Protocol) è fondamentale per tutte le attività svolte. Pertanto, prima di contribuire all’AEM, è necessario avere una conoscenza approfondita di HTTP, idealmente nella misura in cui è possibile scrivere una propria implementazione Java™ di un server HTTP multithread con thread-pooling. È inoltre necessario conoscere il comportamento keep-alive di HTTP/1.1 e le interazioni lato server/client con JavaScript, in particolare lo stile di interazione asincrona rappresentato dall&#39;AJAX.
 
 Poiché il dinamismo delle pagine e i contenuti interattivi sono fondamentali per l&#39;esperienza WM, è essenziale avere una conoscenza approfondita del modello a oggetti documento e del suo potenziale di manipolazione programmatica in risposta agli eventi. È necessario avere una certa conoscenza, ad esempio, della manipolazione DOM in tempo reale e del comportamento di trascinamento su più documenti del browser (ad esempio, utilizzando gli iframe).
 
-Al livello più alto, quindi, dovresti avere una solida conoscenza di:
+Al livello più alto, dovresti avere una solida conoscenza di:
 
 * il [Protocollo HTTP/1.1](https://www.ietf.org/rfc/rfc2616.txt)
-* HTML (preferibilmente [HTML5](https://dev.w3.org/html5/spec/Overview.html))
+* HTML (preferibilmente [HTML5](https://html.spec.whatwg.org/))
 * Cascading Style Sheets
 * XML (Extensible Markup Language)
 * Modelli di progettazione Asynchronous JavaScript and XML (AJAX)
@@ -45,19 +41,19 @@ Al livello più alto, quindi, dovresti avere una solida conoscenza di:
 * Cookie del browser
 * e altri concetti moderni di sviluppo web
 
-Lo stack tecnologico di Adobe Experience Manager si basa sulla [Apache Felix](https://felix.apache.org/) Contenitore OSGI con [Apache Sling](https://sling.apache.org/site/index.html) framework web e incorpora un archivio di contenuti Java ([JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)) in base a [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html). Devi acquisire familiarità con questi singoli progetti, così come con qualsiasi altro componente open source (ad esempio, Apache Lucene) utilizzato nell’area in cui intendi contribuire.
+Lo stack tecnologico di Adobe Experience Manager si basa sulla [Apache Felix](https://felix.apache.org/documentation/index.html) Contenitore OSGI con [Apache Sling](https://sling.apache.org/index.html) framework web e incorpora un archivio di contenuti Java™ ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) in base a [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Acquisisci familiarità con questi singoli progetti e con qualsiasi altro componente open-source (ad esempio, Apache Lucene) utilizzato nell’area in cui intendi contribuire.
 
 ## Conoscenza tribale {#tribal-knowledge}
 
-Alcuni concetti e principi guida sono profondamente radicati nella cultura antica. Questa sezione elenca alcuni dei problemi &quot;profondamente legati al DNA&quot; di cui dovresti essere a conoscenza.
+Alcuni concetti e principi guida sono profondamente radicati nella cultura antica. Questa sezione elenca alcuni dei problemi &quot;profondamente legati al DNA&quot; che dovresti conoscere.
 
 ### Tutto è contenuto {#everything-is-content}
 
-Il contenuto include non solo tutti i dati persistenti dell’applicazione web. Il codice del programma, le librerie, gli script, i modelli, i HTML, i CSS, le immagini e gli artefatti di tutti i tipi, qualsiasi cosa e tutto viene mantenuto nel repository dei contenuti e importato/esportato sotto forma di pacchetti tramite Gestione pacchetti e Condivisione pacchetti.
+Il contenuto include non solo tutti i dati persistenti dell’applicazione web. Il codice del programma, le librerie, gli script, i modelli, i HTML, i CSS, le immagini e gli artefatti di tutti i tipi, qualsiasi cosa e tutto viene mantenuto nell’archivio dei contenuti e importato/esportato sotto forma di pacchetti tramite Gestione pacchetti e Condivisione pacchetti.
 
 ### Modello di David {#david-s-model}
 
-Il modo in cui il contenuto deve essere modellato in un Java Content Repository richiede un modo completamente diverso di pensare rispetto a quello che è pratica comune nel settore del software per la modellazione dei dati nel mondo relazionale. Lettura essenziale per tutti i nuovi utenti della gestione dei contenuti con la modalità JCR [David&#39;s Model: una guida per la modellazione dei contenuti](https://wiki.apache.org/jackrabbit/DavidsModel).
+Il modo in cui il contenuto deve essere modellato in un Java™ Content Repository richiede un modo di pensare completamente diverso rispetto a quello che è pratica comune nel settore del software per la modellazione dei dati nel mondo relazionale. Lettura essenziale per tutti i nuovi utenti della gestione dei contenuti con la modalità JCR [David&#39;s Model: una guida per la modellazione dei contenuti](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### RESTfulness {#restfulness}
 
@@ -69,17 +65,17 @@ Poiché REST fornisce la filosofia che guida gran parte di ciò che facciamo, do
 
 ### Risoluzione richiesta Sling {#sling-request-resolution}
 
-Un aspetto chiave per comprendere l’AEM è il modo in cui le richieste in entrata si relazionano al contenuto e al comportamento dell’applicazione, il modo in cui il contenuto è strutturato nell’archivio dei contenuti e il punto in cui l’AEM cerca la logica dell’applicazione per gestire la richiesta. Scopri Apache [Scomposizione URL Sling](https://sling.apache.org/site/url-decomposition.html) e il modo in cui applica lo stile architettonico REST e i suoi vincoli di sistema senza stato, memorizzabili nella cache e su più livelli.
+Un aspetto chiave per comprendere l’AEM è il modo in cui le richieste in entrata si relazionano al contenuto e al comportamento dell’applicazione, il modo in cui il contenuto è strutturato nell’archivio dei contenuti e il punto in cui l’AEM cerca la logica dell’applicazione per gestire la richiesta. Scopri Apache [Scomposizione URL Sling](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html) e il modo in cui applica lo stile architettonico REST e i suoi vincoli di sistema senza stato, memorizzabili nella cache e su più livelli.
 
-Gli aspetti chiave per comprendere la risoluzione delle richieste di Apache Sling sono il modo in cui le richieste vengono principalmente mappate a una risorsa specifica nel Content Repository, il modo in cui le proprietà aggiuntive della richiesta, insieme alle proprietà di questi oggetti di contenuto, determinano quale codice dell’applicazione verrà richiamato per riprodurre il contenuto e il modo in cui il codice in /apps sostituisce il codice in /libs.
+Gli aspetti chiave per comprendere la risoluzione delle richieste di Apache Sling sono il modo in cui le richieste vengono principalmente mappate a una risorsa specifica nel Content Repository, il modo in cui le proprietà aggiuntive della richiesta, insieme alle proprietà di questi oggetti di contenuto, determinano quale codice dell’applicazione viene richiamato per riprodurre il contenuto e il modo in cui il codice in /apps sostituisce il codice in /libs.
 
 ### Quickstart {#quickstart}
 
 Nessun passaggio tre: per installare ed eseguire, è sufficiente scaricare e fare doppio clic sul file JAR Quickstart. Non c&#39;è nessun passaggio tre. Per qualsiasi funzionalità opzionale aggiuntiva è sufficiente installare il pacchetto appropriato da Condivisione pacchetti.
 
-Dimensioni ridotte di Quickstart: mantenere al minimo le dimensioni del file JAR Quickstart. Utilizza le librerie in modo intelligente e ottimizzato, spostando le funzionalità facoltative nella condivisione dei pacchetti.
+Dimensioni ridotte di Quickstart: mantenere al minimo le dimensioni del file JAR Quickstart. Utilizza in modo intelligente e ottimizzato le librerie, spostando le funzionalità facoltative in Condivisione pacchetti.
 
-Tempi di avvio più rapidi: quando si apporta una modifica che potrebbe influire sul tempo di avvio, assicurarsi che questo venga ridotto, non più.
+Tempi di avvio più rapidi: quando si apporta una modifica che potrebbe influire sul tempo di avvio, assicurarsi che sia più breve, non più lungo.
 
 ### Snella e media {#lean-and-mean}
 
@@ -91,7 +87,7 @@ Accoppiamento libero: favoriamo le interazioni liberamente accoppiate rispetto a
 
 ### Non interrompere la demo {#don-t-break-the-demo}
 
-Acquisisci familiarità con gli script demo e le funzionalità dei prodotti che vengono mostrati più spesso nelle demo. Devi capire che, come minimo, nulla di ciò che fai deve mai interrompere una funzione di &quot;script demo&quot;. Il prodotto di base deve essere sempre pronto per la dimostrazione, anche durante lo sviluppo.
+Acquisisci familiarità con gli script demo e le funzionalità dei prodotti che vengono mostrati più spesso nelle demo. Devi capire che niente di ciò che fai deve mai interrompere una funzione di &quot;script dimostrativo&quot;. Il prodotto di base deve essere sempre pronto per la dimostrazione, anche durante lo sviluppo.
 
 ### Design affidabile {#design-for-reliability}
 
@@ -105,55 +101,55 @@ Non dipendere dagli hook di arresto, assicurati di eseguire la pulizia all&#39;a
 
 ### Essere pronti per il clustering elastico {#be-ready-for-elastic-clustering}
 
-Essere sempre pronti per il clustering elastico, presupporre sempre che sia presente il clustering. Come regola generale, rispettare tutto ciò che si trova nell’archivio dei contenuti significa supportare il clustering integrato.
+Essere sempre pronti per il clustering elastico; presupporre sempre che sia presente il clustering. In genere, rispettare tutto ciò che si trova nell’archivio dei contenuti significa supportare il clustering integrato.
 
 ### Progettazione per compatibilità con le versioni precedenti {#design-for-backward-compatibility}
 
-Non devi fare nulla per violare il vecchio codice di un cliente. Considera solo `/libs` deve contenere il codice del prodotto che può essere aggiornato durante un aggiornamento. Il `/apps` dell’archivio è il codice del progetto e il codice `/etc` contiene configurazioni personalizzate che devono essere mantenute. In genere, non sovrascrivere nulla in `/apps`, `/content` e `/home`. Dopo un aggiornamento, il vecchio codice di progetto, le configurazioni e il contenuto devono continuare a funzionare come prima dell’aggiornamento.
+Non devi fare nulla per violare il vecchio codice di un cliente. Considera solo `/libs` deve contenere il codice del prodotto che può essere aggiornato durante un aggiornamento. Il `/apps` dell’archivio è il codice del progetto e il codice `/etc` contiene configurazioni personalizzate che devono essere mantenute. In genere, non sovrascrivere nulla in `/apps`, `/content`, e `/home`. Dopo un aggiornamento, il vecchio codice di progetto, le configurazioni e il contenuto dovrebbero continuare a funzionare come prima dell’aggiornamento.
 
-La progettazione per la compatibilità con le versioni precedenti garantisce inoltre che l&#39;esperienza di aggiornamento corrisponda alla semplicità dell&#39;installazione iniziale. È sufficiente arrestare l’AEM, sostituire il file JAR di Quickstart e riavviare AEM. Con una base di installazione in rapida crescita, l&#39;efficienza dell&#39;aggiornamento sarà un vantaggio sempre più significativo.
+La progettazione per la compatibilità con le versioni precedenti assicura inoltre che l’esperienza di aggiornamento corrisponda alla semplicità dell’installazione iniziale. È sufficiente arrestare l’AEM, sostituire il file JAR di Quickstart e riavviare l’AEM. Con una base di installazione in rapida crescita, l&#39;efficienza dell&#39;aggiornamento è un vantaggio sempre più significativo.
 
 Anche se le API esistenti possono e devono essere contrassegnate come obsolete quando sono più recenti, una migliore funzionalità le sostituisce, tutte le API che sono state rese pubbliche in una precedente versione 5.x devono rimanere funzionali, in quanto potrebbero essere utilizzate nel codice personalizzato dell’applicazione. Nessuna API di questo tipo deve essere rimossa.
 
-La compatibilità con le versioni precedenti dovrebbe essere tenuta presente anche in relazione alla coerenza generale della struttura dei contenuti e dell’esperienza utente.
+È inoltre necessario tenere presente la compatibilità con le versioni precedenti per quanto riguarda la coerenza generale della struttura dei contenuti e l’esperienza utente.
 
 ## Concetti di base {#core-concepts}
 
 **Istanza Autore** - In genere, per motivi di sicurezza, governance e altri motivi, un sito di produzione divide le istanze AEM in istanze Author e Publish. Per ulteriori informazioni sull’architettura di distribuzione (incluse le istanze Author/Publish), consulta la documentazione sulle istanze AEM.
 
-**Caching, frittura e cottura al forno** - Tradizionalmente, i concetti di cottura al forno e frittura rappresentano un&#39;importante distinzione tra i diversi sistemi di gestione dei contenuti web. Nel gergo del CMS, &quot;baking&quot; si riferisce al concetto di commit dei dati in file statici al momento della pubblicazione, mentre &quot;fying&quot; si riferisce al concetto di elaborazione dei dati per la presentazione finale al momento della richiesta (ovvero, appena nel tempo).
+**Caching, frittura e cottura al forno** - Tradizionalmente, i concetti di cottura al forno e frittura rappresentano un&#39;importante distinzione tra i diversi sistemi di gestione dei contenuti web. In gergo CMS, &quot;baking&quot; si riferisce al concetto di commit dei dati in file statici al momento della pubblicazione, mentre &quot;fying&quot; si riferisce al concetto di elaborazione dei dati per la presentazione finale al momento della richiesta (ovvero, appena nel tempo).
 
 **Clustering e bilanciamento del carico** - Per aumentare la disponibilità e migliorare le prestazioni di un ambiente di produzione, in genere si combinano più istanze di authoring e/o pubblicazione (in cluster), rendendole disponibili per diversi gruppi di utenti o bilanciandole con il carico dietro una configurazione di Dispatcher.
 
 È inoltre possibile combinare più istanze dell’archivio dei contenuti per creare un *elevata disponibilità* Soluzione JCR, che può essere integrata con la soluzione AEM per massimizzare la protezione contro guasti hardware e software. Consulta [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter) per ulteriori informazioni.
 
-**Componente** - In AEM, un componente è un tipo di oggetto, le cui istanze possono generalmente essere create trascinandole e rilasciandole, ad esempio, dalla barra laterale. Ad esempio, i componenti predefiniti forniti con l’AEM includono i componenti Testo, Titolo, Tag Cloud, Carosello, Immagine ed Elenco, tutti disponibili nella barra laterale in fase di esecuzione.
+**Componente** - In AEM, un componente è un tipo di oggetto, le cui istanze possono generalmente essere create trascinandole e rilasciandole, ad esempio, dal Sidekick. Ad esempio, i componenti predefiniti forniti con AEM includono i componenti Testo, Titolo, Tag Cloud, Carosello, Immagine ed Elenco, tutti disponibili dal Sidekick in fase di esecuzione.
 
 **Content Finder** - In modalità authoring, Content Finder è un pannello speciale (cornice) sul lato sinistro della pagina che, a seconda della scheda selezionata nella parte superiore, visualizza elenchi di immagini, documenti, risorse di Flash, pagine, paragrafi o risorse del repository che è possibile trascinare e rilasciare dal Content Finder nella pagina su cui si sta lavorando (sulla destra).
 
 **Risorse digitali** - In AEM, le risorse digitali sono (tipicamente) immagini e file rich media. Per ulteriori informazioni, consulta Utilizzo delle risorse digitali in DAM.
 
-**Dispatcher** - Dispatcher è sia uno strumento di caching e bilanciamento del carico, sia alcune misure di sicurezza.
+**Dispatcher** - Dispatcher è uno strumento di caching e bilanciamento del carico e fornisce alcune protezioni di sicurezza.
 
 **Widget ExtJS** - La maggior parte degli elementi dell’interfaccia utente dell’AEM utilizzano ExtJS, una libreria di widget di terze parti scritta in JavaScript. ExtJS dispone di widget per l&#39;interfaccia utente personalizzabili a elevate prestazioni e di un modello di componente ben progettato ed estensibile.
 
-**JCR, Java Content Repository** - La specifica Java Content Repository (JSR-283) fornisce sia un modello di dati astratti che un&#39;interfaccia di programmazione dell&#39;applicazione per realizzare un repository di dati NoSQL ampiamente scalabile che combina le caratteristiche di un file system e di un database di oggetti. Anche se non è necessario comprendere JSR-283 in modo esaustivo, è necessario prendere tempo per acquisire familiarità con le funzionalità di base di JCR e il modello dati sottostante, perché JCR è ciò che rende possibile la filosofia &quot;tutto è contenuto&quot; dell’AEM.
+**JCR, Java™ Content Repository** - Le specifiche di Java™ Content Repository (JSR-283) forniscono sia un modello di dati astratti che un&#39;interfaccia di programmazione dell&#39;applicazione per realizzare un repository di dati NoSQL ampiamente scalabile che combina le caratteristiche di un file system e di un database di oggetti. Anche se non è necessario comprendere JSR-283 in modo esaustivo, è necessario prendere tempo per acquisire familiarità con le funzionalità di base di JCR e il modello dati sottostante, perché JCR è ciò che rende possibile la filosofia &quot;tutto è contenuto&quot; dell’AEM.
 
 In sostanza, JCR è un sistema di nodi e proprietà, in cui i nodi possono ereditare da altri nodi e tutto il contenuto viene memorizzato come proprietà *valori*. Oltre all’ereditarietà ordinaria, JCR consente il concetto di nodi &quot;mixin&quot;, che consente la modellazione di più ereditarietà.
 
-JCR dispone di una serie di tipi di nodo e di proprietà predefiniti, ma in generale il sistema di digitazione è abbastanza flessibile e (in effetti) uno dei punti di forza di JCR è che consente di memorizzare e gestire contenuti strutturati e non strutturati con la stessa facilità. In altre parole, JCR può gestire dati altamente strutturati, ma può anche ospitare strutture di dati dinamici arbitrari senza vincoli di schema.
+JCR dispone di diversi tipi di nodo e tipi di proprietà predefiniti, ma in generale il sistema di digitazione è flessibile e uno dei punti di forza di JCR è che consente di memorizzare e gestire contenuti strutturati e non strutturati con la stessa facilità. In altre parole, JCR può gestire dati altamente strutturati, ma può anche ospitare strutture di dati dinamici arbitrari senza vincoli di schema.
 
-Il JavaDoc per l’API Java di JCR è [qui](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Il JavaDoc per l’API Java™ di JCR è [qui](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Prima di tentare di leggere JavaDoc o la specifica JCR, è possibile esaminare [questa spiegazione di alto livello](/help/sites-developing/the-basics.md#java-content-repository) di JCR come implementato da Adobe Experience Services.
 
 **Gestione multisito (MSM)** - La funzione MSM dell&#39;AEM aiuta i clienti a gestire contenuti multilingue e multinazionali, consentendo loro di bilanciare il branding centralizzato con i contenuti localizzati.
 
-**OSGi** - OSGi è la tecnologia runtime basata su servizi che fornisce la base per lo sviluppo Java modularizzato nell’AEM. Si tratta di un framework che fornisce non solo un ambiente di caricamento ed esecuzione altamente dinamico (e sicuro) per le risorse di codice (noti come bundle), ma anche un controllo completo sulla visibilità e sul ciclo di vita dei vari servizi esposti dai bundle. Un registro di servizio fornisce un modello di cooperazione per i bundle che tiene conto delle dinamiche del ciclo di vita (e dei requisiti di versione). OSGi risolve molti dei problemi che gli application server erano destinati a risolvere, ma lo fa in modo leggero e altamente dinamico, rendendo possibile, ad esempio, l’implementazione a caldo dei servizi (rendendo il nuovo codice immediatamente disponibile senza riavviare il server).
+**OSGi** - OSGi è la tecnologia runtime basata sui servizi che fornisce la base per lo sviluppo modularizzato Java™ nell’AEM. Si tratta di un framework che fornisce non solo un ambiente di caricamento ed esecuzione altamente dinamico (e sicuro) per le risorse di codice (noti come bundle), ma anche un controllo completo sulla visibilità e sul ciclo di vita dei vari servizi esposti dai bundle. Un registro di servizio fornisce un modello di cooperazione per i bundle che tiene conto delle dinamiche del ciclo di vita (e dei requisiti di versione). OSGi risolve molti dei problemi che gli application server erano destinati a risolvere, ma lo fa in modo leggero e altamente dinamico, rendendo possibile, ad esempio, l’implementazione a caldo dei servizi (rendendo il nuovo codice immediatamente disponibile senza riavviare il server).
 
 **Parsys, Sistema paragrafi** - Il sistema paragrafo (parsys) è un componente composto che consente agli autori di aggiungere componenti di tipi diversi a una pagina e contiene altri componenti paragrafo. Ogni tipo di paragrafo è rappresentato come componente. Anche il sistema paragrafo è un componente che contiene gli altri componenti paragrafo.
 
-**Microkernel** - Ogni area di lavoro nel repository può essere configurata separatamente per memorizzare i propri dati tramite un microkernel specifico (una classe che gestisce la lettura e la scrittura dei dati). Analogamente, l’archivio delle versioni a livello di repository può anche essere configurato in modo indipendente per utilizzare un particolare microkernel. Sono disponibili diversi microkernel, in grado di memorizzare dati in diversi formati di file o database relazionali. (Ad esempio, esistono gestori di persistenza per MongoDB, DB2 o Oracle) Il microkernel predefinito per l’AEM è TarMK (vedi di seguito ulteriori informazioni).
+**Microkernel** - Ogni area di lavoro nel repository può essere configurata separatamente per memorizzare i propri dati tramite un microkernel specifico (una classe che gestisce la lettura e la scrittura dei dati). Analogamente, l’archivio delle versioni a livello di repository può anche essere configurato in modo indipendente per utilizzare un particolare microkernel. Sono disponibili diversi microkernel, in grado di memorizzare dati in vari formati di file o database relazionali. (Ad esempio, esistono gestori di persistenza per MongoDB, DB2® o Oracle) Il microkernel predefinito per l’AEM è TarMK (vedi di seguito ulteriori informazioni).
 
 **Pubblica istanza** - Per motivi di sicurezza, governance e altri motivi, in genere un sito di produzione divide le istanze AEM in istanze Author e Publish. Per ulteriori informazioni sull’architettura di distribuzione (incluse le istanze Author/Publish), consulta la documentazione sulle istanze AEM.
 
@@ -167,17 +163,17 @@ Molte opzioni di avvio (come il numero di porta attivo e se l’istanza AEM in q
 java -jar <quickstartfilename>.jar -help
 ```
 
-**Agenti di replica** - Gli agenti di replica sono fondamentali per l’AEM in quanto meccanismo utilizzato per pubblicare (attivare) i contenuti da un ambiente di authoring a uno di pubblicazione; svuotano i contenuti dalla cache di Dispatcher; restituiscono i contenuti generati dall’utente (ad esempio, l’input del modulo) dall’ambiente di pubblicazione all’ambiente di authoring.
+**Agenti di replica** - Gli agenti di replica sono fondamentali per l’AEM in quanto meccanismo utilizzato per pubblicare (attivare) i contenuti da un ambiente di authoring a uno di pubblicazione; svuotano i contenuti dalla cache di Dispatcher; restituiscono i contenuti generati dall’utente (ad esempio, l’input di un modulo) dall’ambiente di pubblicazione all’ambiente di authoring.
 
 **Scaffolding** : con lo scaffolding è possibile creare un modulo (uno scaffold) con campi che riflettono la struttura desiderata per le pagine e quindi utilizzare questo modulo per creare facilmente pagine basate su questa struttura.
 
 **Segmentazione** - I visitatori del sito hanno interessi e obiettivi diversi quando arrivano su un sito. Comprendere gli obiettivi dei visitatori e soddisfare le loro aspettative è un importante prerequisito di successo per il marketing online. La segmentazione consente di ottenere questo risultato analizzando e caratterizzando i dettagli di un visitatore.
 
-**Barra laterale** - La barra laterale è una finestra mobile simile a una palette che viene visualizzata nella pagina modificabile, dalla quale è possibile trascinare nuovi componenti e eseguire le azioni applicabili alla pagina.
+**Sidekick** - Il Sidekick è una finestra mobile, simile a una palette, che viene visualizzata nella pagina modificabile, dalla quale è possibile trascinare nuovi componenti e eseguire le azioni applicabili alla pagina.
 
 **Site Catalyst** : il SiteCatalyst offre agli esperti di marketing un’unica posizione per misurare, analizzare e ottimizzare i dati integrati da tutte le iniziative online su più canali di marketing. Puoi utilizzare Adobe SiteCatalyst per analizzare i dati dai siti web dell’AEM.
 
-**Archiviazione Tar (TarMK)** - TarMK è il sistema di persistenza predefinito nell’AEM. Anche se l’AEM può essere configurato per utilizzare un sistema di persistenza diverso (come MongoDB), TarMK ha alcuni vantaggi in quanto è ottimizzato per le prestazioni per i tipici casi d’uso JCR (quindi è molto veloce), utilizza un formato dati standard di settore e può essere sottoposto a backup in modo rapido e semplice.
+**Archiviazione Tar (TarMK)** - TarMK è il sistema di persistenza predefinito nell’AEM. Anche se l’AEM può essere configurato per utilizzare un sistema di persistenza diverso (come MongoDB), TarMK ha alcuni vantaggi in quanto è ottimizzato per le prestazioni per i tipici casi d’uso JCR (quindi è veloce), utilizza un formato dati standard di settore e può essere sottoposto a backup in modo rapido e semplice.
 
 **Modello** - In AEM, un modello specifica un particolare tipo di pagina. Definisce la struttura di una pagina (specificando anche in genere un’immagine di miniatura e varie proprietà). Ad esempio, puoi avere modelli separati per pagine di prodotti, sitemap e informazioni di contatto.
 

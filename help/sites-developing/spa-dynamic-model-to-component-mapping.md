@@ -1,16 +1,12 @@
 ---
 title: Mappatura di un modello dinamico a un componente per SPA
-seo-title: Dynamic Model to Component Mapping for SPAs
-description: Questo articolo descrive come si verifica il modello dinamico alla mappatura dei componenti nell’SDK SPA di JavaScript per l’AEM.
-seo-description: This article describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
-uuid: 337b8d90-efd7-442e-9fac-66c33cc26212
+description: Scopri come avviene la mappatura dinamica dei componenti nel JavaScript SPA SDK per Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
@@ -19,7 +15,7 @@ ht-degree: 0%
 
 # Mappatura di un modello dinamico a un componente per SPA{#dynamic-model-to-component-mapping-for-spas}
 
-Questo documento descrive come si verifica il modello dinamico per la mappatura dei componenti nell’SDK SPA di JavaScript per l’AEM.
+Questo documento descrive come avviene la mappatura del modello dinamico ai componenti nell’SDK SPA JavaScript per Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -31,13 +27,13 @@ Il `ComponentMapping` viene fornito come pacchetto NPM al progetto front-end. Me
 
 Ogni elemento presente nel modello contiene un `:type` che espone un tipo di risorsa AEM. Una volta montato, il componente front-end può eseguire il rendering utilizzando il frammento di modello ricevuto dalle librerie sottostanti.
 
-Consulta la sezione [Blueprint SPA](/help/sites-developing/spa-blueprint.md) per ulteriori informazioni sull&#39;analisi del modello e sull&#39;accesso al modello da parte del componente front-end.
+Consulta [Blueprint SPA](/help/sites-developing/spa-blueprint.md) per ulteriori informazioni sull&#39;analisi del modello e sull&#39;accesso al modello da parte del componente front-end.
 
 Vedi anche il pacchetto npm: [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Applicazione a pagina singola basata su modello {#model-driven-single-page-application}
 
-Le applicazioni a pagina singola che sfruttano l’SDK JavaScript per SPA per AEM sono basate su modelli:
+Le applicazioni a pagina singola che utilizzano JavaScript SPA SDK per AEM sono basate su modelli:
 
 1. I componenti front-end si registrano nel [Archivio mappatura componenti](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Quindi il [Contenitore](/help/sites-developing/spa-blueprint.md#container), una volta fornito con un modello da [Provider modello](/help/sites-developing/spa-blueprint.md#the-model-provider), scorre sul contenuto del modello ( `:items`).
@@ -46,10 +42,10 @@ Le applicazioni a pagina singola che sfruttano l’SDK JavaScript per SPA per AE
 
 ## Inizializzazione app {#app-initialization}
 
-Ogni componente viene esteso con le funzionalità [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider). L&#39;inizializzazione assume pertanto la seguente forma generale:
+Ogni componente viene esteso con le funzionalità [`ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider). L&#39;inizializzazione assume pertanto la seguente forma generale:
 
 1. Ogni provider di modelli si inizializza e ascolta le modifiche apportate al pezzo di modello che corrisponde al relativo componente interno.
-1. Il [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) deve essere inizializzato come rappresentato da [flusso di inizializzazione](/help/sites-developing/spa-blueprint.md).
+1. Il [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) deve essere inizializzato come rappresentato da [flusso di inizializzazione](/help/sites-developing/spa-blueprint.md).
 
 1. Una volta memorizzata, il gestore modelli della pagina restituisce il modello completo dell’app.
 1. Questo modello viene quindi passato alla directory principale front-end [Contenitore](/help/sites-developing/spa-blueprint.md#container) componente dell&#39;applicazione.

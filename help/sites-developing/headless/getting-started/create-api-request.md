@@ -2,10 +2,10 @@
 title: Guida rapida all’accesso e alla distribuzione di frammenti di contenuto headless
 description: Scopri come utilizzare l’API REST di AEM Assets per gestire i frammenti di contenuto e l’API GraphQL per la distribuzione headless dei contenuti di frammenti di contenuto.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 66%
+source-wordcount: '558'
+ht-degree: 31%
 
 ---
 
@@ -18,25 +18,25 @@ Scopri come utilizzare l’API REST di AEM Assets per gestire i frammenti di con
 [Dopo aver creato alcuni frammenti di contenuto,](create-content-fragment.md) puoi utilizzare le API AEM per distribuirle senza problemi.
 
 * [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto.
-   * Per utilizzare questo [gli endpoint devono essere definiti e abilitati in AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) e, se necessario, l’[Interfaccia GraphiQL deve essere installata](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
+   * Per utilizzare questo, [gli endpoint devono essere definiti e abilitati in AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)e, se necessario, [Interfaccia GraphiQL installata](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [API REST di Assets](/help/assets/assets-api-content-fragments.md) consente di creare e modificare frammenti di contenuto (e altre risorse).
 
-Il resto di questa guida sarà incentrato sull’accesso a GraphQL e la distribuzione di frammenti di contenuto.
+Il resto di questa guida si concentra sull’accesso a GraphQL e sulla distribuzione di frammenti di contenuto.
 
 ## Come distribuire un frammento di contenuto con GraphQL {#how-to-deliver-a-content-fragment}
 
-Gli architetti di informazioni dovranno progettare query per i loro endpoint di canale per distribuire contenuti. In genere queste query devono essere considerate solo una volta per endpoint per modello. Ai fini di questa guida introduttiva, è sufficiente crearne una.
+Gli architetti di informazioni devono progettare query per gli endpoint di canale per distribuire i contenuti. Queste query devono essere considerate solo una volta per endpoint per modello. Ai fini di questa guida introduttiva, è sufficiente crearne una.
 
 1. Accedi all’AEM e accedi a [Interfaccia GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Esempio: `http://<host>:<port>/aem/graphiql.html`.
 
-1. GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto e distribuirli direttamente come JSON.
+1. GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto e distribuirli senza problemi come JSON.
    * Il pannello a sinistra ti consente di creare la query.
    * Nel pannello a destra vengono visualizzati i risultati.
    * L’editor delle query dispone del completamento del codice e dei tasti di scelta rapida per eseguire facilmente la query.
-      ![Editor GraphiQL](assets/graphiql.png)
+     ![Editor GraphiQL](assets/graphiql.png)
 
-1. Supponendo che il modello che abbiamo creato si chiama `person` con campi `firstName`, `lastName` e `position`, possiamo creare una semplice query per recuperare il contenuto del frammento di contenuto.
+1. Supponendo che il modello creato sia stato chiamato `person` con campi `firstName`, `lastName`, e `position`, puoi creare una semplice query per recuperare il contenuto del frammento di contenuto.
 
    ```text
    query 
@@ -53,7 +53,6 @@ Gli architetti di informazioni dovranno progettare query per i loro endpoint di 
    ```
 
 1. Inserisci la query nel pannello a sinistra.
-
 <!--
    ![GraphiQL query](assets/graphiql-query.png)
 -->
@@ -62,18 +61,18 @@ Gli architetti di informazioni dovranno progettare query per i loro endpoint di 
    ![Risultati GraphiQL](assets/graphiql-results.png)
 
 1. Clic:
-   * **Documentazione** in alto a destra per visualizzare la documentazione contestuale per aiutarti a creare le query che si adattano ai tuoi modelli.
+   * **Documentazione** in alto a destra per visualizzare la documentazione contestuale per aiutarti a creare query che si adattano ai tuoi modelli.
    * **Cronologia** nella barra degli strumenti superiore per visualizzare le query precedenti.
    * **Salva con nome** e **Salva** per salvare le query, dopodiché puoi elencarle e recuperarle dalla **Query persistenti** pannello e **Pubblica**.
-      ![Documentazione di GraphiQL](assets/graphiql-documentation.png)
+     ![Documentazione di GraphiQL](assets/graphiql-documentation.png)
 
-GraphQL consente query strutturate in grado di eseguire il targeting non solo di set di dati specifici o di singoli oggetti di dati, ma anche di fornire elementi specifici degli oggetti, risultati nidificati, offerte di supporto per variabili di query e molto altro.
+GraphQL consente query strutturate che possono essere indirizzate non solo a set di dati specifici o a singoli oggetti di dati, ma che possono anche fornire elementi specifici degli oggetti, risultati nidificati, offerte di supporto per variabili di query e molto altro.
 
-GraphQL può evitare richieste API iterative e consegna in eccesso, e consente invece la distribuzione in massa di esattamente ciò che è necessario per il rendering come risposta a una singola query API. Il JSON risultante può essere utilizzato per inviare dati ad altri siti o app.
+GraphQL può evitare richieste API iterative e consegne eccessive. Al contrario, consente la distribuzione in blocco di ciò che è esattamente necessario per il rendering come risposta a una singola query API. Il JSON risultante può essere utilizzato per inviare dati ad altri siti o app.
 
 ## Passaggi successivi {#next-steps}
 
-Tutto qui. Ora hai una conoscenza di base della gestione dei contenuti headless in AEM. Naturalmente, sono disponibili molte altre risorse da approfondire per una comprensione completa delle funzioni disponibili.
+Tutto qui. Ora hai una conoscenza di base della gestione dei contenuti headless in AEM. Sono disponibili molte altre risorse da approfondire per una comprensione completa delle funzioni disponibili.
 
 * **[Browser configurazioni](create-configuration.md)** - Per informazioni dettagliate sul browser di configurazione AEM
 * **[Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)**: per informazioni dettagliate sulla creazione e la gestione dei frammenti di contenuto

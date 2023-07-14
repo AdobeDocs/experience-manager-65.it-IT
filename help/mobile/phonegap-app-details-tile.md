@@ -1,18 +1,14 @@
 ---
 title: Gestisci sezione app
-seo-title: Manage App Tile
 description: Segui questa pagina per scoprire Gestisci sezione app nel dashboard dell’app, che consente di modificare i dettagli dell’applicazione.
-seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
-uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1252'
 ht-degree: 2%
 
 ---
@@ -23,13 +19,13 @@ ht-degree: 2%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Il **Gestisci app** Il riquadro nel dashboard delle app consente di modificare i dettagli dell’applicazione. Per aprire la pagina Dettagli, fai clic sul collegamento dei dettagli del riquadro Gestisci app. Dalla pagina Gestisci app puoi modificare le impostazioni di configurazione dell&#39;applicazione PhoneGap (config.xml) e preparare l&#39;applicazione per l&#39;invio ai vari archivi dell&#39;applicazione.
+Il **Gestisci app** Il riquadro nel dashboard delle app consente di modificare i dettagli dell’applicazione. Per aprire la pagina Dettagli, fai clic sul collegamento dei dettagli del riquadro Gestione app. Dalla pagina Gestisci app puoi modificare le impostazioni di configurazione dell&#39;applicazione PhoneGap (config.xml) e preparare l&#39;applicazione per l&#39;invio ai vari archivi dell&#39;applicazione.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 ## Informazioni sulla sezione Gestione app {#understanding-the-manage-app-tile}
 
-Puoi eseguire il drill-through in ogni sezione della **Gestisci app** per visualizzare o modificare i dettagli fai clic su &quot;...&quot; nell’angolo in basso a destra.
+Puoi eseguire il drill-through in ogni sezione della **Gestisci app** per visualizzare o modificare i dettagli, fai clic su &quot;...&quot; in basso a destra.
 
 ### Scheda Base {#the-basic-tab}
 
@@ -50,7 +46,7 @@ Le piattaforme visualizzate sono guidate dal contenuto config.xml di PhoneGap:
 </widget>
 ```
 
-Per visualizzare i dettagli dell’applicazione ai clienti, ogni negozio di applicazioni del fornitore, ad esempio Apple App Store o Google Play Store, richiede una o più schermate dell’app mobile. Queste schermate possono avere requisiti rigidi relativi a dimensioni e contenuto (in pratica devono rappresentare realmente l’applicazione). Le app AEM supportano la selezione e la gestione di queste schermate per le piattaforme supportate e la visualizzazione delle dimensioni delle porte in base alle esigenze dell&#39;archivio applicazioni di ciascun fornitore.
+Ogni negozio di applicazioni del fornitore, ad esempio Apple App Store o Google Play Store, richiede una o più schermate dell’app mobile per mostrare ai clienti i dettagli dell’applicazione. Queste schermate possono avere requisiti rigidi relativi a dimensioni e contenuto (in pratica devono rappresentare realmente l’applicazione). Le app AEM supportano la selezione e la gestione di queste schermate per le piattaforme supportate e la visualizzazione delle dimensioni delle porte in base alle esigenze dell&#39;archivio applicazioni di ciascun fornitore.
 
 >[!NOTE]
 >
@@ -78,7 +74,7 @@ In questa sezione puoi definire l’URL del server di aggiornamento dei contenut
 
 **Versione PhoneGap** è la versione in cui desideri compilare l’applicazione con PhoneGap. Si consiglia di mantenere la versione corrente per essere certi di ottenere le funzioni e le correzioni di bug più recenti e avanzate.
 
-**URL server di aggiornamento contenuti** è l&#39;URL che verrà utilizzato dall&#39;applicazione per richiamare gli aggiornamenti di ContentSync. Deve essere impostato sull’URL del dispatcher o, se non lo si utilizza, su una delle istanze di pubblicazione che verranno utilizzate per distribuire gli aggiornamenti ContentSync all’applicazione.
+**URL server di aggiornamento contenuti** è l&#39;URL che verrà utilizzato dall&#39;applicazione per richiamare gli aggiornamenti di ContentSync. Deve essere impostato sull’URL di Dispatcher o, se non si utilizza un’istanza di Dispatcher, su una delle istanze di pubblicazione che verrà utilizzata per distribuire gli aggiornamenti ContentSync all’applicazione.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -112,9 +108,9 @@ La funzionalità di esportazione consente di raccogliere in modo semplice le sch
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-#### Metadati Android {#android-metadata}
+#### Metadati Android™ {#android-metadata}
 
-Quando si seleziona la piattaforma Android, a questo punto non è possibile impostare metadati personalizzati. Quando si fa clic sul pulsante di download, viene generato un file zip con un file delle proprietà che contiene tutti i metadati e le schermate associate.
+Quando si seleziona la piattaforma Android™, a questo punto non è possibile impostare metadati personalizzati. Quando fai clic sul pulsante di download, viene generato un file zip con un file delle proprietà che contiene tutti i metadati e le schermate associate.
 
 La funzionalità di esportazione consente di raccogliere in modo semplice le schermate e i metadati che possono essere trasmessi all’editore dell’applicazione per l’input nell’archivio applicazioni specifico del fornitore.
 
@@ -124,7 +120,7 @@ La funzionalità di esportazione consente di raccogliere in modo semplice le sch
 
 Una delle caratteristiche principali delle app AEM è la capacità di un’app mobile di richiedere nuovi contenuti tramite ContentSync, dove il contenuto può essere costituito da risorse html, pagine, video, immagini, testo e altro ancora. Una volta che un autore di contenuti ha aggiornato il contenuto e lo pubblica, il server ne rende disponibile l’aggiornamento per il download dell’app mobile.
 
-La proprietà URL del server di aggiornamento dei contenuti è l&#39;URL che deve puntare a un&#39;istanza di pubblicazione, direttamente o tramite il dispatcher o la rete CDN. Il formato dell’URL è semplicemente:
+La proprietà URL del server di aggiornamento dei contenuti è l&#39;URL che deve puntare a un&#39;istanza di pubblicazione, direttamente o tramite Dispatcher o CDN. Il formato dell’URL è semplicemente:
 
 `https://[hostname]:[port]`
 
@@ -150,13 +146,13 @@ Il **Schermate** Questa scheda mostra le risoluzioni supportate per le schermate
 
 ### Scheda Autenticazione {#the-authentication-tab}
 
-Il **Autenticazione** consente di selezionare un client OAuth da associare all&#39;applicazione e consente a uno sviluppatore di utilizzare l&#39;autenticazione OAuth di Adobe Experience Manager.
+Il **Autenticazione** Questa scheda consente di selezionare un client OAuth da associare all&#39;applicazione e consente a uno sviluppatore di utilizzare l&#39;autenticazione OAuth di Adobe Experience Manager.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ### Passaggi successivi {#the-next-steps}
 
-Dopo aver appreso come gestire il riquadro app nel dashboard dell’applicazione, consulta le seguenti risorse per altri ruoli di authoring:
+Dopo aver appreso come gestire il riquadro app nel dashboard dell’applicazione, consulta le risorse seguenti per altri ruoli di authoring:
 
 * [Modifica dei metadati dell’app](/help/mobile/phonegap-editmetadata.md)
 * [Definizioni delle app](/help/mobile/phonegap-app-definitions.md)

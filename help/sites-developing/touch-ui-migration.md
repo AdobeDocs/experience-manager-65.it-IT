@@ -1,28 +1,24 @@
 ---
 title: Migrazione all’interfaccia utente touch
-seo-title: Migration to the Touch UI
 description: Migrazione all’interfaccia utente touch
-seo-description: Migration to the Touch UI
-uuid: 47c43b56-532b-4ada-8503-04d66bab3564
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '659'
 ht-degree: 5%
 
 ---
 
 # Migrazione all’interfaccia utente touch{#migration-to-the-touch-ui}
 
-A partire dalla versione 6.0, Adobe Experience Manager (AEM) ha introdotto una nuova interfaccia utente denominata *interfaccia touch* (noto anche semplicemente come *interfaccia touch*). È allineato al Adobe Marketing Cloud e alle linee guida generali dell’interfaccia utente di Adobe. Questa è diventata l’interfaccia utente standard in AEM con l’interfaccia legacy orientata al desktop denominata *interfaccia classica*.
+A partire dalla versione 6.0, Adobe Experience Manager (AEM) ha introdotto una nuova interfaccia utente denominata *interfaccia touch* (noto anche semplicemente come *interfaccia touch*). È allineato al Adobe Experience Cloud e alle linee guida generali dell’interfaccia utente di Adobe. Questa è diventata l’interfaccia utente standard in AEM con l’interfaccia legacy orientata al desktop denominata *interfaccia classica*.
 
-Se utilizzi l’AEM con l’interfaccia classica, dovrai agire per migrare l’istanza. Questa pagina ha lo scopo di fungere da trampolino di lancio fornendo collegamenti a singole risorse.
+Se utilizzi l’AEM con l’interfaccia classica, adotta un’azione per migrare l’istanza. Questa pagina ha lo scopo di fungere da trampolino di lancio fornendo collegamenti a singole risorse.
 
 >[!NOTE]
 >
@@ -30,7 +26,7 @@ Se utilizzi l’AEM con l’interfaccia classica, dovrai agire per migrare l’i
 
 ## Nozioni di base {#the-basics}
 
-Durante la migrazione, tieni presente le seguenti (principali) differenze tra l’interfaccia utente classica e l’interfaccia touch:
+Durante la migrazione, tieni presente le seguenti differenze principali tra l’interfaccia utente classica e l’interfaccia touch:
 
 <table>
  <tbody>
@@ -40,7 +36,7 @@ Durante la migrazione, tieni presente le seguenti (principali) differenze tra l�
   </tr>
   <tr>
    <td>È descritto nell’archivio JCR come struttura di nodi. Ogni nodo che rappresenta un elemento dell’interfaccia utente è denominato <em>Widget ExtJS</em> ed eseguito sul lato client da <code>ExtJS</code>.</td>
-   <td>Descritto anche nell’archivio JCR come struttura di nodi. Tuttavia, in questo caso ogni nodo fa riferimento a un tipo di risorsa Sling (componente Sling), che è responsabile del rendering. L’interfaccia utente viene quindi sottoposta a rendering lato server.</td>
+   <td>Descritto anche nell’archivio JCR come struttura di nodi. Tuttavia, in questo caso, ogni nodo fa riferimento a un tipo di risorsa Sling (componente Sling), che è responsabile del rendering. L’interfaccia utente viene quindi sottoposta a rendering lato server.</td>
   </tr>
   <tr>
    <td><p><code>sling:resourceType</code></p>
@@ -78,7 +74,7 @@ Durante la migrazione, tieni presente le seguenti (principali) differenze tra l�
   <tr>
    <td><p>Gestione degli eventi:</p>
     <ul>
-     <li>I widget per finestre di dialogo fanno direttamente riferimento al codice JavaScript.</li>
+     <li>I widget per finestre di dialogo fanno riferimento direttamente al codice JavaScript.</li>
     </ul> </td>
    <td><p>Gestione degli eventi:</p>
     <ul>
@@ -107,7 +103,7 @@ Prima di iniziare, controlla lo stato e i consigli correlati:
 * [Stato delle funzioni dell’interfaccia touch](/help/release-notes/touch-ui-features-status.md)
 * [Interfaccia utente di Recommendations per i clienti](/help/sites-deploying/ui-recommendations.md)
 
-Le nozioni di base sullo sviluppo dell’interfaccia utente touch forniranno una base solida:
+Le nozioni di base sullo sviluppo dell’interfaccia utente touch forniscono una solida base:
 
 * [Concetti dell’interfaccia touch dell’AEM](/help/sites-developing/touch-ui-concepts.md)
 * [Struttura dell’interfaccia utente touch dell’AEM](/help/sites-developing/touch-ui-structure.md)
@@ -149,12 +145,12 @@ Sebbene non siano direttamente correlate a una migrazione all’interfaccia uten
 Per informazioni complete sullo sviluppo dell’AEM, consulta la raccolta di risorse sotto:
 
 * [Guida utente sullo sviluppo](/help/sites-developing/home.md)
-* [Documentazione dell’interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Documentazione dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Sites - Tutorials e video](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en)
 * [Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
 >
->Gli strumenti di modernizzazione dell’AEM sono un’iniziativa della comunità e non sono supportati o garantiti dall’Adobe.
+>Gli strumenti di modernizzazione dell’AEM sono un’iniziativa della comunità e non sono supportati o giustificati dall’Adobe.

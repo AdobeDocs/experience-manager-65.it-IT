@@ -1,18 +1,14 @@
 ---
 title: Librerie di tag
-seo-title: Tag Libraries
 description: Le librerie di tag Granite, CQ e Sling consentono di accedere a funzioni specifiche da utilizzare nello script JSP dei modelli e dei componenti
-seo-description: The Granite, CQ, and Sling tag libraries give you access to specific functions for use in the JSP script of your templates and components
-uuid: e622d47b-cfb3-4b4a-b8e3-e1adee294219
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2465'
 ht-degree: 0%
 
 ---
@@ -43,19 +39,19 @@ Il `<ui:includeClientLib>` tag Include una libreria client HTML AEM, che può es
 
 Ha i seguenti attributi:
 
-**categorie** : elenco di categorie di librerie client separate da virgole. Questo includerà tutte le librerie JavaScript e CSS per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
+**categorie** : elenco di categorie di librerie client separate da virgole. Sono incluse tutte le librerie JavaScript e CSS per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**tema** : elenco di categorie di librerie client separate da virgole. Ciò includerà tutte le librerie relative al tema (sia CSS che JS) per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
+**tema** : elenco di categorie di librerie client separate da virgole. Sono incluse tutte le librerie relative al tema (sia CSS che JS) per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js** : elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie JavaScript per le categorie specificate.
+**js** : elenco di categorie di librerie client separate da virgole. Sono incluse tutte le librerie JavaScript per le categorie specificate.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css** : elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie CSS per le categorie specificate.
+**css** : elenco di categorie di librerie client separate da virgole. Sono incluse tutte le librerie CSS per le categorie specificate.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
@@ -97,7 +93,7 @@ Quando sviluppi lo script jsp di un componente AEM, si consiglia di includere il
 <%@include file="/libs/foundation/global.jsp"%>
 ```
 
-Dichiara le taglib sling, CQ e jstl ed espone gli oggetti di scripting regolarmente utilizzati definiti da [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects) tag. Questo accorcia e semplifica il codice jsp del componente.
+Dichiara le taglib sling, CQ e jstl ed espone gli oggetti di scripting regolarmente utilizzati definiti da [`<cq:defineObjects />`](#amp-lt-cq-defineobjects) tag. Questo accorcia e semplifica il codice jsp del componente.
 
 ### &lt;cq:text> {#cq-text}
 
@@ -121,7 +117,7 @@ Sono disponibili i seguenti attributi facoltativi:
 
 **tagName** - Nome dell&#39;elemento che circonda un output non vuoto. Il valore predefinito è DIV.
 
-**segnaposto** : valore predefinito da utilizzare per il testo nullo o vuoto in modalità di modifica, ovvero il segnaposto. Il controllo predefinito viene eseguito dopo la formattazione facoltativa e l’escape, ovvero viene scritto così com’è nell’output. Il valore predefinito è:
+**segnaposto** : valore predefinito da utilizzare per il testo nullo o vuoto nella modalità di modifica, ovvero il segnaposto. Il controllo predefinito viene eseguito dopo la formattazione facoltativa e l’escape, ovvero viene scritto così com’è nell’output. Il valore predefinito è:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
@@ -181,9 +177,9 @@ Se il `source` attributo non impostato:
 
 * Se il `language` non è impostato, il `source` attributo predefinito `auto`.
 
-Il &quot;pacchetto di contenuti&quot; può essere semplicemente utilizzato da JSTL standard `<fmt:message>` tag. La ricerca di messaggi tramite chiavi è duplice:
+Il &quot;pacchetto di contenuti&quot; può essere utilizzato da JSTL standard `<fmt:message>` tag. La ricerca di messaggi tramite chiavi è duplice:
 
-1. Innanzitutto, cerca le traduzioni per le proprietà JCR della risorsa sottostante di cui è attualmente eseguito il rendering. Ciò ti consente di definire una semplice finestra di dialogo per componenti per modificare tali valori.
+1. Innanzitutto, cerca le traduzioni per le proprietà JCR della risorsa sottostante di cui viene eseguito il rendering. In questo modo è possibile definire una finestra di dialogo per la modifica di tali valori.
 1. Se il nodo non contiene una proprietà denominata esattamente come la chiave, il fallback consiste nel caricare un bundle di risorse dalla richiesta sling ( `SlingHttpServletRequest.getResourceBundle(Locale)`). La lingua o le impostazioni locali per questo bundle sono definite dagli attributi di lingua e origine di `<cq:setContentBundle>` tag.
 
 Il `<cq:setContentBundle>` può essere utilizzato come segue in un jsp.
@@ -258,25 +254,25 @@ Dovresti utilizzare `<cq:include>` o `<sling:include>`?
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` è stato dichiarato obsoleto a partire da AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) in alternativa, è necessario utilizzare.
+>`<cq:includeClientLib>` Obsoleto da AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) in alternativa, è necessario utilizzare.
 
 Il `<cq:includeClientLib>` tag Include una libreria client HTML AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte in jsp. Questo tag è un wrapper di convenienza intorno al `com.day.cq.widget.HtmlLibraryManager` dell&#39;interfaccia di servizio.
 
 Ha i seguenti attributi:
 
-**categorie** : elenco di categorie di librerie client separate da virgole. Questo includerà tutte le librerie JavaScript e CSS per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
+**categorie** : elenco di categorie di librerie client separate da virgole. Sono incluse tutte le librerie JavaScript e CSS per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**tema** : elenco di categorie di librerie client separate da virgole. Ciò includerà tutte le librerie relative al tema (sia CSS che JS) per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
+**tema** : elenco di categorie di librerie client separate da virgole. Sono incluse tutte le librerie relative al tema (sia CSS che JS) per le categorie specificate. Il nome del tema viene estratto dalla richiesta.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js** : elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie JavaScript per le categorie specificate.
+**js** : elenco di categorie di librerie client separate da virgole. Sono incluse tutte le librerie JavaScript per le categorie specificate.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css** : elenco di categorie di librerie client separate da virgole. Verranno incluse tutte le librerie CSS per le categorie specificate.
+**css** : elenco di categorie di librerie client separate da virgole. Sono incluse tutte le librerie CSS per le categorie specificate.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
@@ -300,7 +296,7 @@ Il `<cq:includeClientLib>` tag può essere utilizzato come segue in una jsp:
 
 ### &lt;cq:defineObjects> {#cq-defineobjects}
 
-Il `<cq:defineObjects>` Il tag espone i seguenti oggetti di script utilizzati regolarmente a cui lo sviluppatore può fare riferimento. Inoltre, espone gli oggetti definiti dal [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) tag.
+Il `<cq:defineObjects>` Il tag espone i seguenti oggetti di script utilizzati regolarmente a cui lo sviluppatore può fare riferimento. Inoltre, espone gli oggetti definiti dal [`<sling:defineObjects>`](#amp-lt-sling-defineobjects) tag.
 
 **componentContext**
 
@@ -442,7 +438,7 @@ Il `<cq:defineObjects>` Il tag espone i seguenti oggetti di script utilizzati re
 
 ### &lt;cq:requestURL> {#cq-requesturl}
 
-Il `<cq:requestURL>` Il tag scrive l’URL della richiesta corrente in JspWriter. I due tag [ `<cq:addParam>`](#amp-lt-cq-addparam) e [ `<cq:removeParam>`](#amp-lt-cq-removeparam) e possono essere utilizzati all’interno del corpo di questo tag per modificare l’URL della richiesta corrente prima che venga scritto.
+Il `<cq:requestURL>` Il tag scrive l’URL della richiesta corrente in JspWriter. I due tag [`<cq:addParam>`](#amp-lt-cq-addparam) e [`<cq:removeParam>`](#amp-lt-cq-removeparam) e possono essere utilizzati all’interno del corpo di questo tag per modificare l’URL della richiesta corrente prima che venga scritto.
 
 Consente di creare collegamenti alla pagina corrente con parametri diversi. Ad esempio, consente di trasformare la richiesta:
 
@@ -464,7 +460,7 @@ Esempi:
 
 ### &lt;cq:addParam> {#cq-addparam}
 
-Il `<cq:addParam>` aggiunge al tag che lo racchiude un parametro di richiesta con il nome e il valore specificati [ `<cq:requestURL>`](#amp-lt-cq-requesturl) tag.
+Il `<cq:addParam>` aggiunge al tag che lo racchiude un parametro di richiesta con il nome e il valore specificati [`<cq:requestURL>`](#amp-lt-cq-requesturl) tag.
 
 Ha i seguenti attributi:
 
@@ -484,7 +480,7 @@ Ha i seguenti attributi:
 
 ### &lt;cq:removeParam> {#cq-removeparam}
 
-Il `<cq:removeParam>` rimuove un parametro di richiesta con il nome e il valore specificati dall’allegato [ `<cq:requestURL>`](#amp-lt-cq-requesturl) tag. Se non viene fornito alcun valore, vengono rimossi tutti i parametri con il nome specificato.
+Il `<cq:removeParam>` rimuove un parametro di richiesta con il nome e il valore specificati dall’allegato [`<cq:requestURL>`](#amp-lt-cq-requesturl) tag. Se non viene fornito alcun valore, vengono rimossi tutti i parametri con il nome specificato.
 
 Ha i seguenti attributi:
 
@@ -549,7 +545,7 @@ Ha i seguenti attributi:
 
 >[!NOTE]
 >
->Risoluzione della risorsa e dello script inclusi in `<sling:include>` è lo stesso di una normale risoluzione URL sling. Per impostazione predefinita, i selettori, l’estensione, ecc. dalla richiesta corrente vengono utilizzati anche per lo script incluso. Possono essere modificate tramite gli attributi tag: ad esempio `replaceSelectors="foo.bar"` consente di sovrascrivere i selettori.
+>Risoluzione della risorsa e dello script inclusi in `<sling:include>` è lo stesso di una normale risoluzione URL sling. Per impostazione predefinita, i selettori, l’estensione e così via della richiesta corrente vengono utilizzati anche per lo script incluso. Possono essere modificate tramite gli attributi tag: ad esempio `replaceSelectors="foo.bar"` consente di sovrascrivere i selettori.
 
 Esempi:
 
@@ -583,11 +579,11 @@ Il `<sling:defineObjects>` Il tag espone i seguenti oggetti di script utilizzati
 
 **slingRequest**
 
-* L’oggetto SlingHttpServletRequest, che fornisce l’accesso alle informazioni dell’intestazione della richiesta HTTP - estende la richiesta standard HttpServletRequest - e fornisce l’accesso a elementi specifici di Sling come risorse, informazioni sul percorso, selettore e così via.
+* L’oggetto SlingHttpServletRequest, che fornisce l’accesso alle informazioni dell’intestazione della richiesta HTTP - estende la richiesta standard HttpServletRequest - e fornisce l’accesso a elementi specifici di Sling come la risorsa, le informazioni sul percorso e il selettore.
 
 **slingResponse**
 
-* Oggetto SlingHttpServletResponse, che fornisce accesso alla risposta HTTP creata dal server. Attualmente corrisponde alla HttpServletResponse da cui si estende.**richiesta**
+* Oggetto SlingHttpServletResponse, che fornisce accesso alla risposta HTTP creata dal server. È lo stesso di HttpServletResponse da cui si estende.**richiesta**
 * L’oggetto richiesta JSP standard che è un HttpServletRequest puro.**risposta**
 * L’oggetto di risposta JSP standard che è un HttpServletResponse puro.
 
@@ -597,7 +593,7 @@ Il `<sling:defineObjects>` Il tag espone i seguenti oggetti di script utilizzati
 
 .**sling**
 
-* Un oggetto SlingScriptHelper, contenente metodi di convenienza per gli script, principalmente sling.include(&#39;/some/other/resource&#39;) per includere le risposte di altre risorse all&#39;interno di questa risposta (esempio: incorporare snippet HTML di intestazione) e sling.getService(foo.bar.Service.class) per recuperare i servizi OSGi disponibili in Sling (notazione delle classi a seconda del linguaggio di script).
+* Oggetto SlingScriptHelper contenente metodi di convenienza per gli script, principalmente sling.include(&#39;/some/other/resource&#39;) per includere le risposte di altre risorse all&#39;interno di questa risposta (ad esempio, incorporando snippet HTML di intestazione) e sling.getService(foo.bar.Service.class) per recuperare i servizi OSGi disponibili in Sling (notazione di classe a seconda del linguaggio di script).
 
 **resource**
 
@@ -609,7 +605,7 @@ Il `<sling:defineObjects>` Il tag espone i seguenti oggetti di script utilizzati
 
 **log**
 
-* Fornisce un logger SLF4J per la registrazione al sistema di registro Sling dall’interno di script, ad esempio log.info(&quot;Esecuzione dello script&quot;).
+* Fornisce un logger SLF4J per la registrazione al sistema di registro Sling dall’interno di script, ad esempio log.info(&quot;Executing my script&quot;).
 
 * Ha i seguenti attributi:
 
@@ -634,7 +630,7 @@ l **NomeRisorsaRisolutoreNome**
 
 ## Libreria tag JSTL {#jstl-tag-library}
 
-Il [Libreria tag standard per pagine JavaServer](https://www.oracle.com/technetwork/java/index-jsp-135995.html) contiene molti tag utili e standard. Le taglib core, formattazione e funzioni sono definite dalla `/libs/foundation/global.jsp` come mostrato nello snippet seguente.
+Il [Libreria tag standard per pagine JavaServer](https://www.oracle.com/java/technologies/java-server-tag-library.html) contiene molti tag utili e standard. Le taglib core, formattazione e funzioni sono definite dalla `/libs/foundation/global.jsp` come mostrato nello snippet seguente.
 
 ### Estratto di /libs/foundation/global.jsp {#extract-of-libs-foundation-global-jsp}
 
@@ -644,4 +640,4 @@ Il [Libreria tag standard per pagine JavaServer](https://www.oracle.com/technetw
 <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions" %>
 ```
 
-Dopo aver importato `/libs/foundation/global.jsp` come descritto in precedenza, è possibile utilizzare `c`, `fmt` e `fn` prefissi per accedere a tali taglib. La documentazione ufficiale del JSTL è disponibile all&#39;indirizzo [Tutorial su Java EE 5: libreria di tag standard per pagine JavaServer](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).
+Dopo aver importato `/libs/foundation/global.jsp` come descritto in precedenza, è possibile utilizzare `c`, `fmt` e `fn` prefissi per accedere a tali taglib. La documentazione ufficiale del JSTL è disponibile all&#39;indirizzo [Tutorial su Java™ EE 5: libreria di tag standard per pagine JavaServer](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).

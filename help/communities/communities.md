@@ -1,18 +1,14 @@
 ---
 title: Comunità in via di sviluppo
-seo-title: Developing Communities
-description: Creazione e personalizzazione di funzionalità della community quali forum, gruppi di utenti e altro ancora
-seo-description: Create and customize community features such as forums, user groups, and more
-uuid: 51dc54da-9090-4d36-adf9-72d5479062a5
+description: Crea e personalizza funzioni community come forum, gruppi di utenti e altro ancora.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '391'
 ht-degree: 5%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 5%
 
 ## Panoramica {#overview}
 
-AEM Communities semplifica la creazione e la personalizzazione di funzioni per la community come forum, gruppi di utenti, blog, domande e risposte, calendari, commenti, recensioni, voti, valutazioni e assegnazioni. Queste funzioni consentono di immettere nell’ambiente di pubblicazione i contenuti generati dagli utenti (UGC, User Generated Content).
+Le community Adobe Experience Manager (AEM) semplificano la creazione e la personalizzazione di funzioni quali forum, gruppi di utenti, blog, domande e risposte, calendari, commenti, recensioni, voti, valutazioni e assegnazioni. Queste funzioni consentono di immettere nell’ambiente di pubblicazione i contenuti generati dagli utenti (UGC, User-Generated Content).
 
 La base di un [sito community](overview.md#communitiessites) è il [framework della componente social](scf.md) (SCF). La creazione di un sito community inizia con la selezione di un [modello per sito community](sites-console.md) composto da [funzioni community](functions.md).
 
@@ -36,7 +32,7 @@ Per una panoramica e tutorial introduttivi, visita:
 
 ## Distribuzioni consigliate {#recommended-deployments}
 
-* [Archiviazione contenuti community](working-with-srp.md): illustra le scelte SRP disponibili per un archivio comune UGC
+* [Archiviazione contenuti community](working-with-srp.md): illustra le scelte del provider di risorse social network (SRP) disponibili per un archivio comune UGC
 * [Topologie consigliate per le community](topologies.md): descrive le topologie in base al caso d’uso e alla scelta SRP
 
 ## Framework componenti social {#social-component-framework}
@@ -66,7 +62,7 @@ I componenti, le funzioni e le funzioni di AEM Communities forniscono i blocchi 
 
 ## Gruppi community {#community-groups}
 
-[Gruppi community](overview.md#communitygroups) è il concetto che consente ai membri della community di creare sottocomunità all’interno del sito community. La creazione di un gruppo community può verificarsi nell’ambiente di pubblicazione o di authoring.
+[Gruppi community](overview.md#communitygroups) si tratta del concetto di consentire ai membri della community di creare sottocomunità all’interno del sito community. La creazione di un gruppo community può verificarsi nell’ambiente di pubblicazione o di authoring.
 
 * [Nozioni di base sul gruppo community](essentials-groups.md)
 * [Funzione Gruppi](functions.md#groups-function)
@@ -92,7 +88,7 @@ I componenti, le funzioni e le funzioni di AEM Communities forniscono i blocchi 
 
 ## Documentazione delle community correlate {#related-communities-documentation}
 
-* Visita [Distribuzione delle community](deploy-communities.md) per informazioni sulle distribuzioni consigliate e sulla configurazione del dispatcher.
+* Visita [Distribuzione delle community](deploy-communities.md) per informazioni sulle distribuzioni consigliate e sulla configurazione di Dispatcher.
 
 * Visita [Amministrazione di siti community](administer-landing.md) per informazioni sulla creazione di un sito community, sulla configurazione di modelli di sito community, sulla moderazione del contenuto della community, sulla gestione dei membri e sulla configurazione dei messaggi.
 

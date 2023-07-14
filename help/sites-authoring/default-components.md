@@ -1,25 +1,23 @@
 ---
 title: Componenti predefiniti
-description: Adobe Experience Manager viene fornito con una varietà di componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web.
-uuid: 55caeec3-add7-4d05-a620-07e33901adb7
+description: Adobe Experience Manager è dotato di vari componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 21%
+source-wordcount: '425'
+ht-degree: 18%
 
 ---
 
 # Componenti{#components}
 
-Adobe Experience Manager (AEM) viene fornito con una varietà di componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. I componenti sono disponibili quando si [modifica una pagina](/help/sites-authoring/editing-content.md) e, per facilitare l’applicazione di filtri, sono raggruppati per area funzionale principale, ovvero per gruppi di componenti.
+Adobe Experience Manager (AEM) viene fornito con vari componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. I componenti sono disponibili quando si [modifica una pagina](/help/sites-authoring/editing-content.md) e, per facilitare l’applicazione di filtri, sono raggruppati per area funzionale principale, ovvero per gruppi di componenti.
 
-I componenti sono disponibili quando [modifica di una pagina](/help/sites-authoring/editing-content.md). Per facilitare il filtraggio, i componenti sono raggruppati per area funzionale principale (ad esempio, gruppo di componenti).
+I componenti sono disponibili quando [modifica di una pagina](/help/sites-authoring/editing-content.md). Per facilitare il filtraggio, i componenti sono raggruppati per area funzionale principale (ovvero per gruppi di componenti).
 
 >[!NOTE]
 >
@@ -38,7 +36,7 @@ Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pa
 
 * [Modifica contenuto - Modalità a tutto schermo](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Per ulteriori informazioni sull’aggiunta di componenti a una pagina, consulta l’articolo [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md).
+Per ulteriori informazioni sull’aggiunta di componenti a una pagina, consulta [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md).
 I componenti sono ordinati in base a varie categorie, denominate gruppi di componenti. Esempi di tali gruppi di componenti includono:
 
 * **We.Retail**: include i Componenti core proxy da utilizzare con [Implementazione di riferimento We.Retail](/help/sites-developing/we-retail.md).

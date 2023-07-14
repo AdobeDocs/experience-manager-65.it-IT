@@ -1,18 +1,14 @@
 ---
 title: Configurazioni Cloud Service
-seo-title: Cloud Service Configurations
 description: Puoi estendere le istanze esistenti per creare configurazioni personalizzate
-seo-description: You can extend the existing instances to create your own configurations
-uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '563'
 ht-degree: 3%
 
 ---
@@ -28,11 +24,11 @@ Puoi estendere le istanze esistenti per creare configurazioni personalizzate.
 I principi utilizzati per lo sviluppo delle configurazioni si basano sui seguenti concetti:
 
 * I servizi/adattatori vengono utilizzati per recuperare le configurazioni.
-* Le configurazioni (ad esempio proprietà/paragrafi) vengono ereditate dai padri.
-* Riferito dai nodi di analisi per percorso.
+* Le configurazioni (ad esempio, proprietà/paragrafi) vengono ereditate dai padri.
+* Riferito dai nodi di Analytics per percorso.
 * Facilmente estensibile.
 * Offre la flessibilità necessaria per gestire configurazioni più complesse, ad esempio [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Supporto per le dipendenze (ad es. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) i plug-in richiedono un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Supporto per le dipendenze (ad esempio, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) i plug-in richiedono un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
 
 ## Struttura {#structure}
 
@@ -40,15 +36,15 @@ Il percorso di base delle configurazioni è:
 
 `/etc/cloudservices`.
 
-Per ogni tipo di configurazione verranno forniti un modello e un componente. In questo modo è possibile disporre di modelli di configurazione in grado di soddisfare la maggior parte delle esigenze dopo la personalizzazione.
+Per ogni tipo di configurazione, viene fornito un modello e un componente. In questo modo è possibile disporre di modelli di configurazione in grado di soddisfare la maggior parte delle esigenze dopo la personalizzazione.
 
-Per fornire una configurazione per un nuovo servizio è necessario:
+Per fornire una configurazione per i nuovi servizi, eseguire le operazioni seguenti:
 
-* creare una pagina di servizio in
+* Creare una pagina di servizio in
 
-   `/etc/cloudservices`
+  `/etc/cloudservices`
 
-* sotto questo:
+* Sotto questo:
 
    * un modello di configurazione
    * un componente di configurazione
@@ -57,7 +53,7 @@ Il modello e il componente devono ereditare il `sling:resourceSuperType` dal mod
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-o componente base rispettivamente
+O componente base rispettivamente
 
 `cq/cloudserviceconfigs/components/configpage`
 
@@ -67,11 +63,11 @@ Il fornitore di servizi deve inoltre fornire la pagina del servizio:
 
 ### Modello {#template}
 
-Il modello estenderà il modello di base:
+Il modello estende il modello base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-e definisci un `resourceType` che punta al componente personalizzato.
+E definisci un `resourceType` che punta al componente personalizzato.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -137,7 +133,7 @@ propertyname
 
 ### API {#api}
 
-Per la documentazione di riferimento sull’API consulta [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Per la documentazione di riferimento sull’API, consulta [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### Integrazione AEM {#aem-integration}
 
@@ -152,7 +148,7 @@ La scheda fornisce anche:
 
 Quando si memorizzano le credenziali utente per il servizio, tutte le password devono essere crittografate.
 
-Per ottenere questo risultato, aggiungi un campo modulo nascosto. Questo campo deve contenere l’annotazione `@Encrypted` nel nome della proprietà, ad esempio per `password` il nome sarà scritto come:
+Per ottenere questo risultato, aggiungi un campo modulo nascosto. Questo campo deve contenere l’annotazione `@Encrypted` nel nome della proprietà; ovvero, per `password` il nome sarà scritto come:
 
 `password@Encrypted`
 
@@ -176,7 +172,7 @@ La proprietà verrà quindi crittografata automaticamente (utilizzando `CryptoSu
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Percorso di riferimento a un componente da includere automaticamente nella pagina.<br /> Viene utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente prima del <code>body</code> ).<br /> Nel caso di Analytics e Target, lo usiamo per includere funzionalità aggiuntive, come le chiamate JavaScript per monitorare il comportamento dei visitatori.</td>
+   <td>Percorso di riferimento a un componente da includere automaticamente nella pagina.<br /> Viene utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente prima del <code>body</code> ).<br /> Nel caso di Adobe Analytics e Adobe Target, utilizziamo questo per includere funzionalità aggiuntive, come le chiamate JavaScript per monitorare il comportamento dei visitatori.</td>
   </tr>
   <tr>
    <td>descrizione</td>
@@ -217,10 +213,9 @@ La proprietà verrà quindi crittografata automaticamente (utilizzando `CryptoSu
 
 Questi servizi sono forniti per impostazione predefinita:
 
-* [Snippet tracker](/help/sites-administering/external-providers.md) (Google, WebTrends, ecc.)
+* [Snippet tracker](/help/sites-administering/external-providers.md) (Google, WebTrends e così via)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
-
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 

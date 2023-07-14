@@ -1,18 +1,14 @@
 ---
 title: Pubblica contenuto di annullamento pubblicazione
-seo-title: Publish UnPublish Content
 description: Una volta acquisite familiarità con le azioni di gestione dei contenuti su articoli, banner e raccolte, segui questa pagina per scoprire come pubblicare i contenuti. Puoi anche annullare la pubblicazione dei contenuti.
-seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
-uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
@@ -27,11 +23,11 @@ Una volta acquisite familiarità con le azioni di gestione dei contenuti su arti
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni sulla progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni sulla progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) nella Guida in linea.
 
 ## Pubblicazione/annullamento della pubblicazione del contenuto {#publishing-unpublishing-the-content}
 
-Questa funzione è diversa da &quot;AEM Publish&quot;. Non stiamo inviando contenuti a un’istanza del server di pubblicazione AEM per renderli visualizzabili pubblicamente. In questo caso, stiamo informando Mobile On-Demand che il contenuto selezionato deve essere reso pubblico all’interno dell’app Mobile On-Demand live.
+Questa funzione è diversa da &quot;AEM Publish&quot;. Non stai inviando contenuti a un’istanza del server di pubblicazione AEM per renderli visualizzabili pubblicamente. In questo caso, informi Mobile On-Demand che il contenuto selezionato deve essere reso pubblico all’interno dell’app Mobile On-Demand live.
 
 >[!NOTE]
 >
@@ -53,11 +49,9 @@ Il flusso di lavoro generale per pubblicare/annullare la pubblicazione di un art
 
 ### Passaggi successivi {#the-next-steps}
 
-Dopo aver appreso come creare e pubblicare i contenuti, consulta
+Dopo aver appreso come creare e pubblicare i contenuti, vedi quanto segue:
 
 * [Sviluppo di contenuti AEM per AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Amministrazione di contenuti per l’utilizzo di AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Oppure è ancora necessario conoscere gli argomenti relativi all’authoring, consulta
-
-[Creazione di contenuti AEM per le app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+Oppure, per ulteriori informazioni sugli argomenti relativi all&#39;authoring, consultate [Creazione di contenuti AEM per le app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md).

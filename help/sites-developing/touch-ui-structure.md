@@ -1,25 +1,21 @@
 ---
-title: Struttura dell’interfaccia utente touch dell’AEM
-seo-title: Structure of the AEM Touch-Enabled UI
-description: L’interfaccia utente ottimizzata per il tocco, come implementata in AEM, ha diversi principi di base ed è costituita da diversi elementi chiave
-seo-description: The touch-optimized UI, as implemented in AEM, has several underlying principles and is made up of several key elements
-uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
+title: Struttura dell’interfaccia utente di Adobe Experience Manager con funzionalità touch
+description: L’interfaccia utente ottimizzata per il tocco, implementata in Adobe Experience Manager, ha diversi principi di base ed è costituita da diversi elementi chiave
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 3%
 
 ---
 
-# Struttura dell’interfaccia utente touch dell’AEM{#structure-of-the-aem-touch-enabled-ui}
+# Struttura dell’interfaccia utente di Adobe Experience Manager con funzionalità touch{#structure-of-the-aem-touch-enabled-ui}
 
-L’interfaccia utente touch dell’AEM ha diversi principi di base ed è costituita da diversi elementi chiave:
+L’interfaccia utente touch di Adobe Experience Manager (AEM) ha diversi principi di base ed è costituita da diversi elementi chiave:
 
 ## Console {#consoles}
 
@@ -47,7 +43,7 @@ La barra dell’intestazione mostra gli elementi globali, tra cui:
 * Ricerca
 * icona per accedere alle risorse della guida
 * icona per accedere ad altre soluzioni
-* un indicatore di (e accesso a) eventuali avvisi o elementi della casella in entrata che ti aspettano
+* un indicatore (e l&#39;accesso a) di tutti gli avvisi o elementi della casella in entrata che ti aspettano
 * l’icona utente, insieme a un collegamento per la gestione del profilo
 
 ### Barra degli strumenti {#toolbar}
@@ -58,7 +54,7 @@ In qualsiasi posizione, la barra degli strumenti mostra le azioni attualmente di
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
-Dipende anche dal fatto che una risorsa sia attualmente selezionata:
+Dipende anche dalla selezione di una risorsa:
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -80,7 +76,7 @@ Quando si creano le pagine, le aree strutturali sono le seguenti.
 
 ### Frame del contenuto {#content-frame}
 
-Il rendering del contenuto della pagina viene eseguito nel frame del contenuto. Il frame del contenuto è completamente indipendente dall’editor, per garantire che non vi siano conflitti dovuti a CSS o JavaScript.
+Il rendering del contenuto della pagina viene eseguito nel frame del contenuto. Il frame del contenuto è indipendente dall’editor, per garantire che non vi siano conflitti dovuti a CSS o JavaScript.
 
 La cornice di contenuto si trova nella sezione destra della finestra, sotto la barra degli strumenti.
 
@@ -101,9 +97,9 @@ Il frame dell&#39;editor è un contenitore (astratto) per tutti *elementi di aut
 
 ### Pannello laterale {#side-panel}
 
-Contiene due schede predefinite che consentono di selezionare risorse e componenti; possono essere trascinati da qui e rilasciati sulla pagina.
+Contiene due schede predefinite che consentono di selezionare risorse e componenti. Possono essere trascinati da qui e inseriti nella pagina.
 
-Il pannello laterale è nascosto per impostazione predefinita. Se questa opzione è selezionata, verrà visualizzata sul lato sinistro o scorrerà per coprire l&#39;intera finestra (quando la dimensione della finestra è inferiore a 1024 px, come ad esempio su un dispositivo mobile).
+Il pannello laterale è nascosto per impostazione predefinita. Se questa opzione è selezionata, verrà visualizzata sul lato sinistro o scorrerà per coprire l&#39;intera finestra (quando la dimensione della finestra è inferiore a una larghezza di 1024 px, come ad esempio su un dispositivo mobile).
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -127,7 +123,7 @@ Nella scheda Componenti puoi selezionare uno dei componenti disponibili. Puoi an
 
 ### Sovrapposizioni {#overlays}
 
-Questi si sovrappongono alla cornice del contenuto e vengono utilizzati dal [livelli](#layer) realizzare i meccanismi che consentono di interagire (in modo completamente trasparente) con i componenti e i relativi contenuti.
+Questi si sovrappongono alla cornice del contenuto e vengono utilizzati dal [livelli](#layer) realizzare i meccanismi necessari per interagire (in modo trasparente) con i componenti e i relativi contenuti.
 
 Le sovrapposizioni sono live nel frame dell’editor (con tutti gli altri elementi di authoring della pagina), anche se in realtà sovrappongono i componenti appropriati nel frame del contenuto.
 
@@ -146,7 +142,7 @@ L’AEM viene fornito con diversi livelli già implementati per l’authoring de
 
 >[!NOTE]
 >
->I livelli sono un concetto potente che influisce sulla visualizzazione e sull’interazione dell’utente con il contenuto della pagina. Quando sviluppate i vostri livelli dovete assicurarvi che il livello si ripulisca quando viene chiuso.
+>I livelli sono un concetto potente che influisce sulla visualizzazione e sull’interazione dell’utente con il contenuto della pagina. Quando sviluppate i vostri livelli, dovete assicurarvi che il livello si ripulisca quando viene chiuso.
 
 ### Switcher livello {#layer-switcher}
 
@@ -158,7 +154,7 @@ Il selettore livelli è disponibile come elenco a discesa dalla barra degli stru
 
 ### Barra degli strumenti del componente {#component-toolbar}
 
-Ogni istanza di un componente mostra la propria barra degli strumenti quando fa clic su di esso (una volta o con un doppio clic lento). La barra degli strumenti contiene le azioni specifiche (ad esempio copia, incolla, open-editor) disponibili per l’istanza del componente (Modificabile) nella pagina.
+Ogni istanza di un componente mostra la propria barra degli strumenti quando viene selezionata (una volta o con un doppio clic lento). La barra degli strumenti contiene le azioni specifiche (ad esempio, copia, incolla, open-editor) disponibili per l’istanza del componente (Modificabile) nella pagina.
 
 A seconda dello spazio disponibile, le barre degli strumenti del componente sono posizionate nell’angolo superiore o inferiore destro del componente appropriato.
 
@@ -166,6 +162,6 @@ A seconda dello spazio disponibile, le barre degli strumenti del componente sono
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori dettagli sui concetti relativi all’interfaccia utente touch, continua con l’articolo [Concetti dell’interfaccia touch dell’AEM](/help/sites-developing/touch-ui-concepts.md).
+Per ulteriori dettagli sui concetti relativi all’interfaccia touch, consulta [Concetti dell’interfaccia touch dell’AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Per ulteriori informazioni tecniche, vedere [Set di documentazione JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l’editor di pagine touch.
+Per ulteriori informazioni tecniche, consulta [Set di documentazione JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) per l’editor di pagine touch.

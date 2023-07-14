@@ -1,18 +1,16 @@
 ---
 title: Utilizzare le versioni delle pagine di contenuto
 description: Creare, confrontare e ripristinare le versioni di una pagina
-uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 0a06837576e102d0e46f7afd0f5a197c292ddae7
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 38%
+source-wordcount: '1497'
+ht-degree: 37%
 
 ---
 
@@ -56,7 +54,7 @@ Puoi creare una versione della risorsa da:
 1. Passa alla pagina per la quale desideri creare una versione.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Seleziona la **Crea** nella barra degli strumenti per aprire la finestra di dialogo.
-1. Nella finestra di dialogo, puoi immettere un **Etichetta** e un **Commento** se necessario:
+1. Nella finestra di dialogo, puoi immettere un **Etichetta** e un **Commento**, se necessario:
 
    ![Inserisci un’etichetta e un commento](assets/screen_shot_2012-02-15at105050am.png)
 

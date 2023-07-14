@@ -1,19 +1,15 @@
 ---
 title: Mappatura dei dati dei componenti con le proprietà di Adobe Analytics
-seo-title: Mapping Component Data with Adobe Analytics Properties
 description: Scopri come mappare i dati dei componenti con le proprietà del SiteCatalyst.
-seo-description: Learn how to map component data with SiteCatalyst properties.
-uuid: b08ab37f-ad58-4c04-978f-8e21a3823ae8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1440'
 ht-degree: 1%
 
 ---
@@ -57,7 +53,7 @@ Utilizza la procedura seguente per mappare le variabili dei componenti CQ con le
 
    >[!NOTE]
    >
-   >Puoi mappare più variabili di Analytics (ad es. `props`, `eVars`, `events`) alla stessa variabile CQ (ad es. `pagedata.title`)
+   >Puoi mappare più variabili di Analytics (ad esempio, `props`, `eVars`, `events`) alla stessa variabile CQ (ad esempio, `pagedata.title`)
 
    >[!CAUTION]
    >
@@ -65,7 +61,6 @@ Utilizza la procedura seguente per mappare le variabili dei componenti CQ con le
    >
    >* `eVars` e `props` sono mappati su variabili CQ che iniziano con `pagedata.X` o `eventdata.X`
    >* considerando che gli eventi devono essere mappati su variabili che iniziano con `eventdata.events.X`
-
 
 1. Per rendere il framework disponibile nell’istanza di pubblicazione del sito, apri il **Pagina** scheda della barra laterale e fare clic su **Attiva framework.**
 
@@ -94,7 +89,7 @@ Diversi componenti di AEM Commerce utilizzano questi nomi di variabili.
 1. Verificare che l&#39;RSID selezionato sia quello utilizzato nei passaggi precedenti.
 1. In entrata **Rapporti** (sul lato sinistro della pagina) seleziona **Conversione personalizzata**, quindi **Conversione personalizzata 1-10** e seleziona la variabile corrispondente a `eVar7`
 
-1. A seconda della versione di Adobe Analytics in uso, è necessario attendere in media 45 minuti prima che il rapporto venga aggiornato con il termine di ricerca utilizzato, ad esempio melanzana nell’esempio
+1. A seconda della versione di Adobe Analytics in uso, è necessario attendere in media 45 minuti per l&#39;aggiornamento del rapporto con il termine di ricerca utilizzato, ad esempio melanzana
 
 ## Utilizzo di Content Finder (cf#) con i framework di Adobe Analytics {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
@@ -111,7 +106,7 @@ A seconda della vista selezionata per il framework, il content finder verrà com
 
 L’elenco può essere manipolato nei seguenti modi:
 
-1. In **Vista AEM**, l’elenco può essere filtrato a seconda del tipo di variabile selezionata utilizzando i 3 pulsanti di filtro:
+1. In **Vista AEM**, l’elenco può essere filtrato a seconda del tipo di variabile selezionato utilizzando i tre pulsanti di filtro:
 
    * Se *nessun pulsante* è selezionato, l’elenco mostra l’elenco completo.
    * Se il **Traffico** è selezionato, l’elenco mostra solo le variabili appartenenti alla sezione Traffico.
@@ -127,23 +122,23 @@ L’elenco può essere manipolato nei seguenti modi:
    1. L’elenco può essere ricaricato in qualsiasi momento utilizzando il pulsante con frecce ruotanti.
    1. Se nel framework sono selezionati più RSID, tutte le variabili dell&#39;elenco verranno visualizzate utilizzando tutte le etichette utilizzate negli RSID selezionati.
 
-
 1. Nella vista Adobe Analytics, Content Finder mostra tutte le variabili CQ appartenenti ai componenti di tracciamento trascinati nella vista CQ.
 
-   * ad esempio nel caso in cui **Scarica componente** è il *solo un trascinato* nella vista CQ (con due variabili mappabili) *eventdata.downloadLink* e *eventdata.events.startDownload*), il Content Finder si presenta così quando si passa alla vista Adobe Analytics:
+   * Ad esempio, se il **Scarica componente** è il *solo un trascinato* nella vista CQ (con due variabili mappabili) *eventdata.downloadLink* e *eventdata.events.startDownload*), il Content Finder si presenta così quando si passa alla vista Adobe Analytics:
 
    ![aa-22](assets/aa-22.png)
 
-   * Le variabili possono essere trascinate e rilasciate su qualsiasi variabile Adobe Analytics appartenente a una delle tre sezioni della variabile (**Traffico**, **Conversione** e **Eventi**).
+   * Le variabili possono essere trascinate e rilasciate su qualsiasi variabile Adobe Analytics appartenente a una delle tre sezioni delle variabili (**Traffico**, **Conversione** e **Eventi**).
 
    * Quando si trascina un nuovo componente di tracciamento nel framework in visualizzazione CQ, le variabili CQ appartenenti al componente vengono aggiunte automaticamente al Content Finder (cf#) in visualizzazione Adobe Analytics.
+
    >[!NOTE]
    >
    >È possibile mappare una sola variabile CQ a una variabile Adobe Analytics in un dato momento.
 
 ## Utilizzo delle viste AEM e Analytics {#using-aem-view-and-analytics-view}
 
-In qualsiasi momento, gli utenti possono passare tra due modi diversi di visualizzazione delle mappature di Adobe Analytics quando si trovano su una pagina del framework. I due punti di vista forniscono una migliore panoramica delle mappature all&#39;interno del quadro, da due prospettive distinte.
+In qualsiasi momento, gli utenti possono passare da una modalità all’altra per visualizzare le mappature di Adobe Analytics quando si trovano su una pagina del framework e viceversa. Le due opinioni forniscono una migliore panoramica delle mappature all&#39;interno del quadro, da due prospettive distinte.
 
 ### Vista AEM {#aem-view}
 
@@ -161,14 +156,14 @@ Prendendo l’immagine precedente come esempio, il **Vista AEM** ha le seguenti 
 
       1. I componenti ereditati sono bloccati.
       1. Per sbloccare un componente ereditato, fai doppio clic sul lucchetto accanto al nome del componente
-      1. Per ripristinare l’ereditarietà è necessario eliminare il componente sbloccato, dopodiché riacquisterà lo stato bloccato.
-   1. **Trascina qui i componenti da includere nel framework di analisi**: i componenti possono essere trascinati dalla barra laterale e rilasciati qui.
+      1. Per ripristinare l’ereditarietà, elimina il componente sbloccato; dopodiché recupera lo stato bloccato.
+
+   1. **Trascina qui i componenti da includere nel framework di analisi**: i componenti possono essere trascinati dal Sidekick e rilasciati qui.
    1. Puoi trovare tutti i componenti attualmente inclusi nel framework di analisi:
 
       1. Per aggiungere un componente, trascinane uno dalla scheda Componenti della barra laterale
       1. Per eliminare un componente e tutte le relative mappature, seleziona Elimina dal menu di scelta rapida del componente, quindi accetta l’eliminazione nella finestra di dialogo di conferma.
       1. Tieni presente che un componente può essere eliminato solo dal framework in cui è stato creato e non può essere eliminato dai framework secondari nel senso tradizionale del termine (può solo essere sovrascritto).
-
 
 ### Vista Analytics {#analytics-view}
 
@@ -185,16 +180,16 @@ Prendendo l’immagine precedente come esempio, il **Vista AEM** ha le seguenti 
       * Variabile traffico ( `prop1`) mappato a una variabile CQ ( `eventdata.downloadLink`)
 
       * Quando il componente è associato a un lucchetto, questo significa che viene ereditato da un framework padre e quindi non può essere modificato
+
    * **Conversione**:
 
       * Variabile di conversione ( `eVar1`) mappato a una variabile CQ ( `pagedata.title`)
 
-      * Variabile di conversione ( `eVar3`) mappato a un’espressione javascript aggiunta in linea facendo doppio clic sul campo della variabile CQ e immettendo il codice manualmente
+      * Variabile di conversione ( `eVar3`) mappato a un’espressione JavaScript aggiunta in linea facendo doppio clic sul campo della variabile CQ e immettendo il codice manualmente
+
    * **Evento**:
 
       * Variabile evento ( `event1`) mappato a un evento CQ ( `eventdata.events.pageView`)
-
-
 
 >[!NOTE]
 >
@@ -203,6 +198,8 @@ Prendendo l’immagine precedente come esempio, il **Vista AEM** ha le seguenti 
 >Ad esempio, accanto a `prop3` puoi aggiungere:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 per inviare *titolo* di una pagina concatenata con i relativi *sitesection* utilizzo *:* (due punti) e preceduto da *Adobe* as `prop3`
+>
 
 >[!CAUTION]
+>
 È possibile mappare una sola variabile CQ a una variabile Adobe Analytics in un dato momento.
