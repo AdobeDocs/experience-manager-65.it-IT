@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di tag per classificare il contenuto di un sito web
+title: Utilizzo dei tag
 description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
@@ -9,14 +9,15 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 70%
+source-wordcount: '569'
+ht-degree: 72%
 
 ---
 
-# Utilizzo dei tag{#using-tags}
+
+# Utilizzo dei tag {#using-tags}
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette che possono essere allegate a una pagina, una risorsa o altro contenuto per consentire alle ricerche di trovarlo e contenuto correlato.
 
@@ -54,7 +55,7 @@ Come per le pagine, è possibile eseguire le operazioni seguenti su tag e spazi 
 
 * Consente di attivare singoli tag.
 
-   Come per le pagine, è necessario attivare i nuovi tag creati prima che siano disponibili nell’ambiente di pubblicazione.
+  Come per le pagine, è necessario attivare i nuovi tag creati prima che siano disponibili nell’ambiente di pubblicazione.
 
 >[!NOTE]
 >

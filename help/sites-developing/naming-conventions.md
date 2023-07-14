@@ -1,5 +1,5 @@
 ---
-title: Convenzioni di denominazione dei nodi nell’archivio dei contenuti Jave
+title: Convenzioni di denominazione dei nodi nel Java Content Repository
 description: I nodi nell’archivio sono soggetti alle convenzioni di denominazione dell’archivio dei contenuti Java
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
@@ -8,14 +8,14 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8cfc42dc8fdf4dc0bfd3f002385f100c81b15993
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 7%
 
 ---
 
-# Convenzioni di denominazione{#naming-conventions}
+# Convenzioni di denominazione {#naming-conventions}
 
 I nodi nell’archivio sono soggetti alle convenzioni di denominazione del [Archivio dei contenuti Java](/help/sites-developing/the-basics.md#java-content-repository). Tuttavia, l’AEM impone ulteriori convenzioni per il nome dei nodi della pagina.
 
