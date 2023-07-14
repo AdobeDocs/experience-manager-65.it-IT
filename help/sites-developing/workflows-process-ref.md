@@ -1,18 +1,14 @@
 ---
 title: Guida di riferimento per il processo dei flusso di lavoro
-seo-title: Workflow Process Reference
 description: Guida di riferimento per il processo dei flusso di lavoro
-seo-description: null
-uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: cf3b739fd774bc860d9906b9884d22fd532fd5dd
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -25,12 +21,12 @@ L’AEM fornisce diverse fasi del processo che possono essere utilizzate per cre
 
 Per ogni fase del processo, vengono descritte le seguenti caratteristiche.
 
-### Classe Java o percorso ECMA {#java-class-or-ecma-path}
+### Java™ Class o percorso ECMA {#java-class-or-ecma-path}
 
-I passaggi del processo sono definiti da una classe Java o da un ECMAScript.
+I passaggi del processo sono definiti da una classe Java™ o da un ECMAScript.
 
-* Per i processi di classe Java, viene fornito il nome completo della classe.
-* Per i processi ECMAScript viene fornito il percorso dello script.
+* Per i processi di classe Java™, viene fornito il nome completo della classe.
+* Per i processi ECMAScript, viene fornito il percorso dello script.
 
 ### Payload {#payload}
 
@@ -38,7 +34,7 @@ Il payload è l’entità su cui agisce un’istanza del flusso di lavoro. Il pa
 
 Ad esempio, se un flusso di lavoro viene applicato a una pagina AEM *P* allora *P* viene passato da un passaggio all’altro con l’avanzare del flusso di lavoro; ogni passaggio agisce facoltativamente su *P* in qualche modo.
 
-Nel caso più comune, il payload è un nodo JCR nell’archivio (ad esempio, una pagina o una risorsa AEM). Un payload del nodo JCR viene passato come stringa costituita da un percorso JCR o da un identificatore JCR (UUID). In alcuni casi il payload può essere una proprietà JCR (passata come percorso JCR), un URL, un oggetto binario o un oggetto Java generico. Singoli passaggi del processo che agiscono sul payload solitamente si aspettano un payload di un determinato tipo, oppure agiscono in modo diverso a seconda del tipo di payload. Per ogni processo descritto di seguito, viene descritto il tipo di payload previsto, se presente.
+Nel caso più comune, il payload è un nodo JCR nell’archivio (ad esempio, una pagina o una risorsa AEM). Un payload del nodo JCR viene passato come stringa costituita da un percorso JCR o da un identificatore JCR (UUID). A volte il payload può essere una proprietà JCR (passata come percorso JCR), un URL, un oggetto binario o un oggetto Java™ generico. Singoli passaggi del processo che agiscono sul payload solitamente si aspettano un payload di un determinato tipo, oppure agiscono in modo diverso a seconda del tipo di payload. Per ogni processo descritto di seguito, viene descritto il tipo di payload previsto, se presente.
 
 ### Argomenti {#arguments}
 
@@ -75,7 +71,7 @@ A tale scopo, si consiglia di utilizzare un utente del servizio creato con il so
 >
 >Se aggiorni una versione precedente a AEM 6.2, potrebbe essere necessario aggiornare l’implementazione.
 >
->Nelle versioni precedenti, la sessione di amministrazione è stata passata al `WorkflowProcess` implementazioni e potevano quindi avere pieno accesso all’archivio senza dover definire ACL specifici.
+>Nelle versioni precedenti, la sessione di amministrazione è stata passata al `WorkflowProcess` implementazioni e potrebbero quindi avere accesso completo all’archivio senza dover definire ACL specifici.
 >
 >Le autorizzazioni sono ora definite come sopra ([Autorizzazioni](#permissions)). Come è il metodo consigliato per aggiornare l’implementazione.
 >
@@ -85,7 +81,7 @@ A tale scopo, si consiglia di utilizzare un utente del servizio creato con il so
 >
 >* abilita **Elaborazione flusso di lavoro in modalità legacy**
 >
->Verrà ripristinato il vecchio comportamento, ovvero fornire una sessione di amministrazione al `WorkflowProcess` e fornire nuovamente l’accesso illimitato a tutto l’archivio.
+>In questo modo si torna al vecchio comportamento di fornire una sessione di amministrazione al `WorkflowProcess` e fornire nuovamente l’accesso illimitato a tutto l’archivio.
 
 ## Processi di controllo del flusso di lavoro {#workflow-control-processes}
 
@@ -95,7 +91,7 @@ I processi seguenti non eseguono alcuna azione sul contenuto. Servono a controll
 
 Il `AbsoluteTimeAutoAdvancer` (Avanzamento automatico tempo assoluto) si comporta in modo identico a **Avanzamento automatico**, con la differenza che il timeout avviene in un determinato momento e in una data specificata, invece che dopo un determinato periodo di tempo.
 
-* **Classe Java**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Java™ Class**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Payload**: nessuna.
 * **Argomenti**: nessuna.
 * **Timeout**: il processo scade quando vengono raggiunte l’ora e la data impostate.
@@ -104,7 +100,7 @@ Il `AbsoluteTimeAutoAdvancer` (Avanzamento automatico tempo assoluto) si comport
 
 Il `AutoAdvancer` Il processo porta automaticamente il flusso di lavoro al passaggio successivo. Se esiste più di un possibile passaggio successivo (ad esempio, se è presente una suddivisione O), questo processo fa avanzare il flusso di lavoro lungo *ciclo di lavorazione predefinito*, se ne è stato specificato uno, altrimenti il flusso di lavoro non verrà avanzato.
 
-* **Classe Java**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Java™ Class**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
 * **Payload**: nessuna.
 * **Argomenti**: nessuna.
@@ -112,9 +108,9 @@ Il `AutoAdvancer` Il processo porta automaticamente il flusso di lavoro al passa
 
 ### ProcessAssembler (Assemblatore processi) {#processassembler-process-assembler}
 
-Il `ProcessAssembler` Il processo esegue più sottoprocessi in sequenza in un unico passaggio del flusso di lavoro. Per utilizzare `ProcessAssembler`, creare un singolo passaggio di questo tipo nel flusso di lavoro e impostarne gli argomenti per indicare i nomi e gli argomenti dei sottoprocessi che si desidera eseguire.
+Il `ProcessAssembler` Il processo esegue più processi secondari in sequenza in un singolo passaggio del flusso di lavoro. Per utilizzare `ProcessAssembler`, creare un singolo passaggio di questo tipo nel flusso di lavoro e impostarne gli argomenti per indicare i nomi e gli argomenti dei sottoprocessi che si desidera eseguire.
 
-* **Classe Java**: `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Java™ Class**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
 * **Payload**: risorsa DAM, pagina AEM o nessun payload (a seconda dei requisiti dei sottoprocessi).
 * **Argomenti**:
@@ -136,7 +132,7 @@ Ad esempio:
 
 * Estrai i metadati dalla risorsa.
 * Crea tre miniature delle tre dimensioni specificate.
-* Crea un’immagine JPEG dalla risorsa, supponendo che la risorsa non sia originariamente né un GIF né un PNG (in questo caso non viene creato alcun JPEG).
+* Crea un’immagine JPEG dalla risorsa, supponendo che la risorsa non sia originariamente un GIF o un PNG (in tal caso non viene creato alcun JPEG).
 * Imposta la data dell’ultima modifica sulla risorsa.
 
 ```shell
@@ -152,7 +148,7 @@ I processi seguenti eseguono attività semplici o fungono da esempi.
 
 >[!CAUTION]
 >
->Tu ***deve*** non modificare nulla in `/libs` percorso.
+>Non modificare nulla nella `/libs` percorso.
 >
 >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e può essere sovrascritto quando si applica un hotfix o un feature pack).
 
@@ -200,7 +196,7 @@ Questo è un esempio di processo ECMAScript.
 
 Blocca il payload del workflow.
 
-* **Classe Java:** `com.day.cq.workflow.impl.process.LockProcess`
+* **Classe Java™:** `com.day.cq.workflow.impl.process.LockProcess`
 
 * **Payload:** JCR_PATH e JCR_UUID
 * **Argomenti:** Nessuno
@@ -215,7 +211,7 @@ La fase non ha alcun effetto nelle seguenti circostanze:
 
 Sblocca il payload del flusso di lavoro.
 
-* **Classe Java:** `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Classe Java™:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
 * **Payload:** JCR_PATH e JCR_UUID
 * **Argomenti:** Nessuno
@@ -232,9 +228,9 @@ Il processo seguente esegue un&#39;attività correlata alla versione.
 
 ### CreateVersionProcess {#createversionprocess}
 
-Crea una nuova versione del payload del flusso di lavoro (pagina AEM o risorsa DAM).
+Crea una versione del payload del flusso di lavoro (pagina AEM o risorsa DAM).
 
-* **Classe Java**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
+* **Classe Java™**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
 * **Payload**: percorso JCR o UUID che fa riferimento a una pagina o una risorsa DAM
 * **Argomenti**: nessuna

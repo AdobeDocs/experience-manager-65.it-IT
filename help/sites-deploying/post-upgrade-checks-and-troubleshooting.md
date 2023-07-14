@@ -1,20 +1,16 @@
 ---
 title: Controlli post-aggiornamento e risoluzione dei problemi
-seo-title: Post Upgrade Checks and Troubleshooting
 description: Scopri come risolvere i problemi che potrebbero verificarsi dopo un aggiornamento.
-seo-description: Learn how to troubleshoot issues that might appear after an upgrade.
-uuid: 3f525f2c-8d25-4bb8-a57e-3adf667edde8
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
 feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1785'
 ht-degree: 0%
 
 ---
@@ -56,10 +52,10 @@ Lo scopo principale di questa funzione è ridurre la necessità di interpretazio
 
 In particolare, garantisce che:
 
-* Gli errori di aggiornamento rilevati dal framework di aggiornamento possono essere centralizzati in un unico rapporto di aggiornamento.
+* Gli errori di aggiornamento rilevati dal framework di aggiornamento sono centralizzati in un unico rapporto di aggiornamento.
 * Il rapporto sull’aggiornamento include indicatori sul necessario intervento manuale.
 
-A questo scopo, sono state apportate modifiche alla modalità di generazione dei registri in `upgrade.log` file.
+Per risolvere questo problema, sono state apportate modifiche alla modalità di generazione dei registri in `upgrade.log` file.
 
 Di seguito è riportato un report di esempio che non mostra errori durante l’aggiornamento:
 
@@ -71,7 +67,7 @@ Di seguito è riportato un report di esempio che mostra un bundle non installato
 
 **error.log**
 
-Il registro degli errori deve essere attentamente rivisto durante e dopo l’avvio dell’AEM utilizzando la versione target jar. Eventuali avvertenze o errori devono essere esaminati. In generale, è consigliabile cercare i problemi all’inizio del registro. Gli errori che si verificano più avanti nel registro possono in realtà essere effetti collaterali di una causa principale che viene richiamata all’inizio del file. Se si verificano errori e avvisi ripetuti, vedi di seguito per [Analisi dei problemi relativi all’aggiornamento](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
+Il file error.log deve essere esaminato attentamente durante e dopo l’avvio dell’AEM utilizzando la versione target jar. Eventuali avvertenze o errori devono essere esaminati. In generale, è consigliabile cercare i problemi all’inizio del registro. Gli errori che si verificano più avanti nel registro possono in realtà essere effetti collaterali di una causa principale che viene richiamata all’inizio del file. Se si verificano errori e avvisi ripetuti, vedi di seguito per [Analisi dei problemi relativi all’aggiornamento](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
 ### Verificare i bundle OSGi {#verify-osgi-bundles}
 
@@ -83,15 +79,15 @@ In seguito all’aggiornamento, dovresti notare che la versione Oak è stata agg
 
 ### Cartella PreUpgradeBackup di Inspect {#inspect-preupgradebackup-folder}
 
-Durante l’aggiornamento, AEM tenterà di eseguire il backup delle personalizzazioni e di memorizzarle sotto `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Per visualizzare questa cartella in CRXDE Lite potrebbe essere necessario [abilita temporaneamente CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+Durante l’aggiornamento, AEM tenta di eseguire il backup delle personalizzazioni e di memorizzarle sotto `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Per visualizzare questa cartella in CRXDE Lite, potrebbe essere necessario [abilita temporaneamente CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
-La cartella con il timestamp deve avere una proprietà denominata `mergeStatus` con un valore di `COMPLETED`. Il **to-process** la cartella deve essere vuota e la **sovrascritto** node indica quali nodi sono stati sovrascritti durante l’aggiornamento. Contenuto sotto **avanzi** Il nodo indica il contenuto che non è stato possibile unire in modo sicuro durante l’aggiornamento. Se l’implementazione dipende da uno dei nodi secondari (e non è già installata dal pacchetto di codice aggiornato), sarà necessario unirli manualmente.
+La cartella con il timestamp deve avere una proprietà denominata `mergeStatus` con un valore di `COMPLETED`. Il **to-process** la cartella deve essere vuota e la **sovrascritto** node indica quali nodi sono stati sovrascritti durante l’aggiornamento. Il contenuto sotto il nodo degli avanzi indica il contenuto che non è stato possibile unire in modo sicuro durante l’aggiornamento. Se l’implementazione dipende da uno qualsiasi dei nodi secondari (e non già installati dal pacchetto di codice aggiornato), deve essere unita manualmente.
 
 Disattiva CRXDE Lite seguendo questo esercizio se si trova in un ambiente di stage o produzione.
 
 ### Convalida iniziale delle pagine {#initial-validation-of-pages}
 
-Eseguire una convalida iniziale su diverse pagine dell’AEM. Se si aggiorna un ambiente di authoring, aprire la pagina Start e la pagina di benvenuto ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). In entrambi gli ambienti Author e Publish apri alcune pagine di applicazioni e verifica che vengano riprodotte correttamente. In caso di problemi, consultare il `error.log` per la risoluzione dei problemi.
+Eseguire una convalida iniziale su diverse pagine dell’AEM. Se si aggiorna un ambiente di authoring, aprire la pagina Start e la pagina di benvenuto ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). In entrambi gli ambienti Author e Publish, apri alcune pagine di applicazioni e verifica che vengano riprodotte correttamente. In caso di problemi, consultare il `error.log` per la risoluzione dei problemi.
 
 ### Applicazione dei Service Pack per AEM {#apply-aem-service-packs}
 
@@ -105,7 +101,7 @@ Diverse funzioni dell’AEM richiedono passaggi aggiuntivi dopo l’aggiornament
 
 #### Abilita raccolta oggetti inattivi dell’archivio dati {#enable-data-store-garbage-collection}
 
-Se utilizzi un archivio dati file, assicurati che l’attività Raccolta oggetti inattivi dell’archivio dati sia abilitata e aggiunta all’elenco Manutenzione settimanale. Le istruzioni sono descritte [qui](/help/sites-administering/data-store-garbage-collection.md).
+Se utilizzi un archivio dati file, accertati che l’attività Raccolta oggetti inattivi dell’archivio dati sia abilitata e aggiunta all’elenco Manutenzione settimanale. Le istruzioni sono descritte [qui](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -113,7 +109,7 @@ Se utilizzi un archivio dati file, assicurati che l’attività Raccolta oggetti
 
 #### Abilita pulizia revisioni online {#enable-online-revision-cleanup}
 
-Se utilizzi MongoMK o il nuovo formato di segmento TarMK, assicurati che l’attività Pulizia revisioni sia abilitata e aggiunta all’elenco Manutenzione giornaliera. Istruzioni descritte [qui](/help/sites-deploying/revision-cleanup.md).
+Se utilizzi MongoMK o il nuovo formato di segmento TarMK, accertati che l’attività Pulizia revisioni sia abilitata e aggiunta all’elenco Manutenzione giornaliera. Istruzioni descritte [qui](/help/sites-deploying/revision-cleanup.md).
 
 ### Esegui piano di test {#execute-test-plan}
 
@@ -137,19 +133,19 @@ Questi scenari dovrebbero aiutare a individuare la causa principale dei problemi
 
 La migrazione dei dati da CRX2 a Oak dovrebbe essere fattibile per qualsiasi scenario a partire da Istanze di origine basate su CQ 5.4. Accertati di seguire esattamente le istruzioni di aggiornamento riportate in questo documento, che includono la preparazione del `repository.xml`, accertandosi che non venga avviato alcun autenticatore personalizzato tramite JAAS e che l’istanza sia stata controllata per individuare incoerenze prima di avviare la migrazione.
 
-Se la migrazione non riesce, puoi individuare la causa principale esaminando il `upgrade.log`. Se il problema non è ancora noto, segnalalo all’Assistenza clienti.
+Se la migrazione non riesce ancora, puoi capire qual è la causa principale esaminando il `upgrade.log`. Se il problema non è ancora noto, segnalalo all’Assistenza clienti.
 
 ### Aggiornamento Non Eseguito {#the-upgrade-did-not-run}
 
-Prima di iniziare i passaggi di preparazione, assicurati di eseguire il **sorgente** eseguendolo prima con il comando java -jar aem-quickstart.jar. Questo è necessario per assicurarsi che il file quickstart.properties sia generato correttamente. Se manca, l’aggiornamento non funzionerà. In alternativa, è possibile verificare se il file è presente cercando in `crx-quickstart/conf` nella cartella di installazione dell’istanza di origine. Inoltre, quando si avvia AEM per avviare l’aggiornamento, questo deve essere eseguito con il comando java -jar aem-quickstart.jar. L’avvio da uno script di avvio non avvia AEM in modalità di aggiornamento.
+Prima di iniziare i passaggi di preparazione, assicurati di eseguire il **sorgente** eseguendolo prima con il comando Java™ -jar aem-quickstart.jar. Questo è necessario per assicurarsi che il file quickstart.properties sia generato correttamente. Se manca, l’aggiornamento non funzionerà. In alternativa, è possibile verificare se il file è presente cercando in `crx-quickstart/conf` nella cartella di installazione dell’istanza di origine. Inoltre, quando si avvia AEM per avviare l’aggiornamento, questo deve essere eseguito con il comando Java™ -jar aem-quickstart.jar. L’avvio da uno script di avvio non avvia AEM in modalità di aggiornamento.
 
 ### Impossibile aggiornare pacchetti e bundle  {#packages-and-bundles-fail-to-update-}
 
-Nel caso in cui i pacchetti non vengano installati durante l’aggiornamento, i bundle in essi contenuti non verranno aggiornati. Questa categoria di problemi è in genere causata da una configurazione errata dell’archivio dati. Vengono inoltre visualizzati come **ERRORE** e **AVVERTI** messaggi in error.log. Poiché nella maggior parte di questi casi l’accesso predefinito potrebbe non funzionare, puoi utilizzare CRXDE direttamente per esaminare e trovare i problemi di configurazione.
+Nel caso in cui i pacchetti non vengano installati durante l’aggiornamento, i bundle in essi contenuti non verranno aggiornati. Questa categoria di problemi è causata da una configurazione errata dell’archivio dati. Vengono inoltre visualizzati come **ERRORE** e **AVVERTI** messaggi in error.log. Poiché nella maggior parte di questi casi l’accesso predefinito potrebbe non funzionare, puoi utilizzare CRXDE direttamente per verificare e individuare i problemi di configurazione.
 
 ### Alcuni bundle AEM non passano allo stato attivo {#some-aem-bundles-are-not-switching-to-the-active-state}
 
-Se i bundle non si avviano, è necessario verificare la presenza di eventuali dipendenze non soddisfatte.
+Se sono presenti bundle che non si avviano, verifica la presenza di eventuali dipendenze non soddisfatte.
 
 Nel caso in cui il problema sia presente ma si basi su un’installazione non riuscita del pacchetto che ha portato a un mancato aggiornamento dei bundle, questi verranno considerati incompatibili per la nuova versione. Per ulteriori informazioni su come risolvere il problema, consulta **Impossibile aggiornare pacchetti e bundle** sopra.
 
@@ -161,19 +157,19 @@ Se i bundle personalizzati non passano allo stato attivo, è probabile che ci si
 
 L’API rimossa deve essere contrassegnata come obsoleta in una delle versioni precedenti. Le istruzioni su una migrazione diretta del codice sono disponibili in questo avviso di elementi obsoleti. Adobe mira al controllo delle versioni semantiche, ove possibile, in modo che le versioni possano indicare modifiche che causano interruzioni.
 
-È inoltre consigliabile verificare se il cambiamento che ha causato il problema era assolutamente necessario e ripristinarlo in caso contrario. Controlla anche se l’aumento di versione dell’esportazione del pacchetto è stato aumentato più del necessario, seguendo un rigoroso controllo delle versioni semantiche.
+È inoltre consigliabile verificare se la modifica che ha causato il problema è necessaria e, in caso contrario, ripristinarla. Controlla anche se l’aumento di versione dell’esportazione del pacchetto è stato aumentato più del necessario, seguendo un rigoroso controllo delle versioni semantiche.
 
 ### Interfaccia utente di Platform non funzionante {#malfunctioning-platform-ui}
 
-Se alcune funzionalità dell’interfaccia utente non funzionano correttamente dopo l’aggiornamento, devi innanzitutto verificare la presenza di sovrapposizioni personalizzate dell’interfaccia. Alcune strutture potrebbero essere state modificate e la sovrapposizione potrebbe richiedere un aggiornamento o risultare obsoleta.
+Se alcune funzionalità dell’interfaccia utente non funzionano correttamente dopo l’aggiornamento, è necessario innanzitutto verificare la presenza di sovrapposizioni personalizzate dell’interfaccia. Alcune strutture potrebbero essere state modificate e la sovrapposizione potrebbe richiedere un aggiornamento o risultare obsoleta.
 
-Quindi, verifica la presenza di eventuali errori JavaScript che possono essere tracciati fino alle estensioni aggiunte personalizzate collegate alle librerie client. Lo stesso vale per i CSS personalizzati che potrebbero causare problemi al layout dell’AEM.
+Quindi, controlla eventuali errori JavaScript che possono essere tracciati fino alle estensioni aggiunte personalizzate collegate alle librerie client. Lo stesso vale per i CSS personalizzati che potrebbero causare problemi al layout dell’AEM.
 
 Infine, verifica la presenza di errori di configurazione che JavaScript potrebbe non essere in grado di risolvere. Questo accade in genere con le estensioni disattivate in modo improprio.
 
 ### Componenti personalizzati, modelli o estensioni dell’interfaccia utente non funzionanti {#malfunctioning-custom-components-templates-or-ui-extensions}
 
-Nella maggior parte dei casi, le cause principali di questi problemi sono le stesse dei bundle non avviati o dei pacchetti non installati, con l’unica differenza che i problemi iniziano a verificarsi quando si utilizzano i componenti per la prima volta.
+In genere, le cause principali di questi problemi sono le stesse dei bundle non avviati o dei pacchetti non installati, con l’unica differenza che i problemi iniziano a verificarsi quando si utilizzano i componenti per la prima volta.
 
 Il modo per trattare il codice personalizzato errato è quello di eseguire prima i test di fumo per identificare la causa. Una volta trovato, guarda i consigli in questo [link] sezione dell&#39;articolo per i modi di fissarli.
 
@@ -183,7 +179,7 @@ Il modo per trattare il codice personalizzato errato è quello di eseguire prima
 
 ### Analisi dei file error.log e upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
-Nella maggior parte delle situazioni i registri devono essere consultati per individuare eventuali errori al fine di individuare la causa di un problema. Tuttavia, in caso di aggiornamenti è anche necessario monitorare i problemi di dipendenza, in quanto i vecchi bundle potrebbero non essere aggiornati correttamente.
+Nella maggior parte delle situazioni, i registri devono essere consultati per gli errori per individuare la causa di un problema. Tuttavia, con gli aggiornamenti, è anche necessario monitorare i problemi di dipendenza in quanto i vecchi bundle potrebbero non essere aggiornati correttamente.
 
 Il modo migliore per farlo è quello di eliminare error.log rimuovendo tutti i messaggi che si prevede non siano correlati al problema che stai affrontando. Puoi eseguire questa operazione tramite uno strumento come grep, utilizzando:
 
@@ -203,4 +199,4 @@ In alcuni casi è possibile trovare anche messaggi WARN in quanto possono esserc
 
 ### Contattare il supporto Adobe {#contacting-adobe-support}
 
-Se hai già consultato i consigli su questa pagina e riscontri ancora problemi, contatta l’Assistenza Adobe. Per fornire quante più informazioni possibili al tecnico del supporto che lavora al tuo caso, assicurati di includere il file upgrade.log dal tuo aggiornamento.
+Se hai già esaminato i consigli in questa pagina e riscontri ancora problemi, contatta l’Assistenza Adobe. Per fornire quante più informazioni possibili al tecnico del supporto che lavora al tuo caso, assicurati di includere il file upgrade.log dal tuo aggiornamento.

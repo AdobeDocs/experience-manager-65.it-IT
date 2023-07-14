@@ -1,27 +1,23 @@
 ---
 title: Provare i frammenti di contenuto in We.Retail
-seo-title: Trying out Content Fragments in We.Retail
 description: Provare i frammenti di contenuto in We.Retail
-seo-description: null
-uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 20%
+source-wordcount: '455'
+ht-degree: 17%
 
 ---
 
 # Provare i frammenti di contenuto in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-I Frammenti di contenuto consentono di creare contenuto versatile utilizzabile in qualsiasi canale, con possibili varianti per canali specifici. **We.Retail** (disponibile in un’istanza standard dell’AEM) fornisce il frammento **Surf artico a Lofoten** come campione di base. Questo mostra che:
+I Frammenti di contenuto consentono di creare contenuto versatile utilizzabile in qualsiasi canale, con possibili varianti per canali specifici. **We.Retail** (come disponibile in un’istanza predefinita di Adobe Experience Manager) fornisce il frammento **Surf artico a Lofoten** come campione di base. Questo mostra che:
 
-* I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). I frammenti di contenuto consentono di creare contenuto utilizzabile in qualsiasi canale, con possibili varianti per canali specifici.
+* I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici.
 
    * Consulta [Dove trovare le risorse dei frammenti di contenuto in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -35,7 +31,7 @@ Per la documentazione completa sulla creazione, la gestione, l’utilizzo e lo s
 
 >[!NOTE]
 >
->I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
+>I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
 >
 >* **Frammenti di contenuto** sono contenuti editoriali, principalmente testo e immagini correlate. Sono contenuti puri, senza design e layout.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
@@ -48,7 +44,7 @@ In We.Retail sono presenti diversi frammenti di contenuto di esempio; naviga tra
 
 Questi includono **Surf artico a Lofoten**, un frammento con le relative risorse visive:
 
-* Naviga tramite **Risorse**, **File**, **We.Retail**, **Inglese**, **Esperienze**, **Artic Surfing a Lofoten**:
+* Naviga tramite **Risorse**, **File**, **We.Retail**, **Inglese**, **Esperienze**, **Surf artico a Lofoten**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 

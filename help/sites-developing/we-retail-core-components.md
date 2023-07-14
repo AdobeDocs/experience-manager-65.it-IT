@@ -1,19 +1,15 @@
 ---
 title: Prova dei componenti core in We.Retail
-seo-title: Trying out Core Components in We.Retail
 description: Prova dei componenti core in We.Retail
-seo-description: null
-uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 3%
+source-wordcount: '533'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +19,7 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
 ## Prova {#trying-it-out}
 
-1. Avvia l&#39;AEM con il contenuto di esempio We.Retail e apri [Console Componenti](/help/sites-authoring/default-components-console.md).
+1. Avvia Adobe Experience Manager (AEM) con il contenuto di esempio We.Retail e apri [Console Componenti](/help/sites-authoring/default-components-console.md).
 
    **Navigazione globale -> Strumenti -> Componenti**
 
@@ -36,14 +32,14 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Tutti i Componenti core sono denominati **v1**, a indicare che si tratta della prima versione di questo componente core. Versioni regolari verranno rilasciate in futuro, che saranno compatibili con le versioni di AEM e consentiranno un facile aggiornamento in modo da poter sfruttare le funzioni più recenti.
+1. Tutti i componenti core sono denominati **v1**, a indicare che si tratta della prima versione di questo componente core. Versioni regolari verranno rilasciate in futuro, che saranno compatibili con le versioni di AEM e consentiranno un facile aggiornamento in modo da poter sfruttare le funzioni più recenti.
 1. Clic **Testo (v1)**.
 
    Vedi che il **Tipo di risorsa** del componente è `/apps/core/wcm/components/text/v1/text`. I componenti core si trovano in `/apps/core/wcm/components` Le versioni di e sono suddivise per componente.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Fai clic sul pulsante **Documentazione** per visualizzare la documentazione per gli sviluppatori del componente.
+1. Fai clic su **Documentazione** per visualizzare la documentazione per gli sviluppatori del componente.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -52,7 +48,7 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Fai clic su **Utilizzo live** per vedere su quali pagine questo componente è attualmente utilizzato. Fai clic sul primo **Grazie** per modificare la pagina.
+1. Fai clic su **Utilizzo live** per vedere su quali pagine viene utilizzato questo componente. Fai clic sul primo **Grazie** per modificare la pagina.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -66,7 +62,7 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Una volta annullata l’ereditarietà e selezionati i componenti di testo, sono disponibili molte altre opzioni. Fai clic su** Modifica**.
+1. Una volta annullata l’ereditarietà e selezionati i componenti di testo, sono disponibili molte altre opzioni. Clic **Modifica**.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -74,12 +70,12 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Dalla sezione **Informazioni pagina** selezione menu **Modifica modello**.
+1. Dalla sezione **Informazioni pagina** menu, seleziona **Modifica modello**.
 1. Nell’Editor modelli della pagina, fai clic su **Policy** del componente Testo nella sezione **Contenitore di layout** della pagina.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. I Componenti core consentono all’autore di un modello di configurare quali proprietà sono disponibili per gli autori di pagine. Queste includono funzioni quali le origini Incolla consentite, le opzioni di formattazione, gli stili di paragrafo disponibili e così via.
+1. I Componenti core consentono all’autore di un modello di configurare quali proprietà sono disponibili per gli autori di pagine. Queste includono funzioni quali le origini Incolla consentite, le opzioni di formattazione e gli stili di paragrafo disponibili.
 
    Tali finestre di dialogo di progettazione sono disponibili per molti componenti core e funzionano in parallelo con l’editor di modelli. Una volta abilitate, sono disponibili per l’autore tramite gli editor dei componenti.
 
@@ -87,6 +83,6 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni sui Componenti core, consulta il documento di authoring [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per una panoramica delle funzionalità dei componenti core e del documento per sviluppatori [Sviluppo di componenti core](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) per una panoramica tecnica.
+Per ulteriori informazioni sui Componenti core, consulta il documento di authoring [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per una panoramica delle funzionalità dei componenti core e del documento per sviluppatori [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per una panoramica tecnica.
 
 Inoltre, potrebbe essere utile approfondire le indagini [modelli modificabili](/help/sites-developing/we-retail-editable-templates.md). Consulta il documento di authoring [Creazione di modelli di pagina](/help/sites-authoring/templates.md) o la pagina del documento per sviluppatori [Modelli - Modificabili](/help/sites-developing/page-templates-editable.md) per informazioni complete sui modelli modificabili.

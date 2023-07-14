@@ -1,28 +1,24 @@
 ---
 title: Single Sign-On
-seo-title: Single Sign On
-description: Scopri come configurare il Single Sign On (SSO) per un’istanza AEM.
-seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
-uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
+description: Scopri come configurare il Single Sign On (SSO) per un’istanza di Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
-discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 0%
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
 # Single Sign-On {#single-sign-on}
 
-Single Sign-On (SSO) consente a un utente di accedere a più sistemi dopo aver fornito le credenziali di autenticazione, ad esempio un nome utente e una password. L&#39;autenticazione viene eseguita da un sistema separato, denominato autenticatore attendibile, che fornisce agli Experienci Manager le credenziali utente. Experience Manager verifica e applica le autorizzazioni di accesso per l’utente (ovvero determina quali risorse l’utente può accedere).
+Single Sign-On (SSO) consente a un utente di accedere a più sistemi dopo aver fornito le credenziali di autenticazione, ad esempio un nome utente e una password. L&#39;autenticazione viene eseguita da un sistema separato, denominato autenticatore attendibile, che fornisce agli Experienci Manager le credenziali utente. Experience Manager verifica e applica le autorizzazioni di accesso per l’utente (ovvero, determina quali risorse l’utente può accedere).
 
-Il servizio Gestore autenticazione SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) elabora i risultati di autenticazione forniti dall&#39;autenticatore attendibile. Il gestore di autenticazione SSO cerca un SSID (SSO Identifier) come valore di un attributo speciale nelle posizioni seguenti in questo ordine:
+Il servizio Gestore autenticazione SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) elabora i risultati di autenticazione forniti dall&#39;autenticatore attendibile. Il gestore di autenticazione SSO cerca un identificatore SSO (SSID) come valore di un attributo speciale nelle posizioni seguenti in questo ordine:
 
 1. Intestazioni richiesta
 1. Cookie
@@ -35,11 +31,11 @@ Configura i due servizi seguenti per riconoscere il nome dell&#39;attributo che 
 * Il modulo di accesso.
 * Il servizio di autenticazione SSO.
 
-È necessario specificare lo stesso nome di attributo per entrambi i servizi. L&#39;attributo è incluso nel `SimpleCredentials` fornito a `Repository.login`. Il valore dell’attributo è irrilevante e ignorato, la sua mera presenza è importante e verificata.
+Specificare lo stesso nome di attributo per entrambi i servizi. L&#39;attributo è incluso nel `SimpleCredentials` fornito a `Repository.login`. Il valore dell’attributo è irrilevante e ignorato, la sua mera presenza è importante e verificata.
 
 ## Configurazione dell’SSO {#configuring-sso}
 
-Per configurare SSO per un’istanza AEM, è necessario configurare [Gestore autenticazione SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Per configurare SSO per un&#39;istanza AEM, è necessario configurare [Gestore autenticazione SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
 1. Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le pratiche consigliate.
 
@@ -49,7 +45,8 @@ Per configurare SSO per un’istanza AEM, è necessario configurare [Gestore aut
    * **Nomi intestazione**: `LOGON_USER`
    * **Formato ID**: `^<DOMAIN>\\(.+)$`
 
-      Dove `<*DOMAIN*>` viene sostituito dal nome di dominio dell’utente.
+     Dove `<*DOMAIN*>` viene sostituito dal nome del tuo dominio.
+
    Per CoSign:
 
    * **Percorso:** secondo necessità; ad esempio, `/`
@@ -62,8 +59,6 @@ Per configurare SSO per un’istanza AEM, è necessario configurare [Gestore aut
    * **Nomi intestazione:** SM_USER
    * **Formato ID**: così com’è
 
-
-
 1. Verificare che Single Sign-On funzioni come richiesto, inclusa l&#39;autorizzazione.
 
 >[!CAUTION]
@@ -74,32 +69,31 @@ Per configurare SSO per un’istanza AEM, è necessario configurare [Gestore aut
 >
 >Qualsiasi utente che può accedere direttamente all’istanza AEM senza passare per il server web sarà in grado di agire come qualsiasi altro utente inviando l’intestazione, il cookie o il parametro, se i nomi sono noti.
 >
->Inoltre, accertati che tra intestazioni, cookie e nomi dei parametri di richiesta, sia configurato solo quello necessario per la configurazione SSO.
+>Inoltre, accertati che tra intestazioni, cookie e nomi di parametri di richiesta sia configurato solo quello necessario per la configurazione SSO.
+>
 
 >[!NOTE]
 >
->Il Single Sign-On viene spesso utilizzato in combinazione con [LDAP](/help/sites-administering/ldap-config.md).
+>Il Single Sign-On viene spesso utilizzato con [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Se utilizzi anche il [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) con Microsoft Internet Information Server (IIS) sarà necessaria una configurazione aggiuntiva in:
+>Se utilizzi anche il [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) con Microsoft® Internet Information Server (IIS), è necessaria una configurazione aggiuntiva in:
 >
->* `disp_iis.ini`
->* IIS
+* `disp_iis.ini`
+* IIS
 >
->In entrata `disp_iis.ini` imposta:
->(vedere [installazione di Dispatcher con Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) per maggiori informazioni)
+In entrata `disp_iis.ini` set: (vedere [installazione di Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en#microsoft-internet-information-server) per maggiori informazioni)
 >
->* `servervariables=1` inoltra le variabili del server IIS come intestazioni di richiesta all’istanza remota
->* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Authorization&quot; diversa da &quot;Basic&quot; con il suo equivalente &quot;Basic&quot;)
+* `servervariables=1` inoltra le variabili del server IIS come intestazioni di richiesta all’istanza remota
+* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Authorization&quot; diversa da &quot;Basic&quot; con il suo equivalente &quot;Basic&quot;)
 >
->In IIS:
+In IIS:
 >
->* disable **Accesso anonimo**
+* disable **Accesso anonimo**
 >
->* abilita **Autenticazione integrata di Windows**
+* abilita **Autenticazione integrata di Windows**
 >
-
 
 Puoi vedere quale gestore di autenticazione viene applicato a qualsiasi sezione della struttura del contenuto utilizzando **Autenticatore** della console Felix; ad esempio:
 
@@ -157,13 +151,13 @@ Oppure puoi utilizzare il seguente comando curl per inviare il `TestHeader` inte
 
 >[!NOTE]
 >
->Quando utilizzi il parametro request in un browser, vedrai solo alcuni dei HTML, senza CSS. Questo perché tutte le richieste del HTML vengono effettuate senza il parametro di richiesta.
+Quando utilizzi il parametro di richiesta in un browser, vengono visualizzati solo alcuni dei HTML, senza CSS. Questo perché tutte le richieste del HTML vengono effettuate senza il parametro di richiesta.
 
 ## Rimozione dei collegamenti di disconnessione AEM {#removing-aem-sign-out-links}
 
 Quando si utilizza l’SSO, l’accesso e la disconnessione vengono gestiti esternamente, pertanto i collegamenti di disconnessione di proprietà dell’AEM non sono più applicabili e devono essere rimossi.
 
-Il collegamento per la disconnessione nella schermata di benvenuto può essere rimosso seguendo la procedura riportata di seguito.
+Il collegamento di disconnessione nella schermata di benvenuto può essere rimosso seguendo la procedura riportata di seguito.
 
 1. Sovrapposizione `/libs/cq/core/components/welcome/welcome.jsp` a `/apps/cq/core/components/welcome/welcome.jsp`
 1. rimuovi la parte seguente da jsp.
