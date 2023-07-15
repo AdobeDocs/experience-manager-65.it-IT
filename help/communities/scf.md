@@ -1,18 +1,14 @@
 ---
 title: Framework componenti social
-seo-title: Social Component Framework
 description: Il framework dei componenti social (SCF) semplifica il processo di configurazione, personalizzazione ed estensione dei componenti Community
-seo-description: The social component framework (SCF) simplifies the process of configuring, customizing, and extending Communities components
-uuid: 23b4418d-b91c-46fc-bf42-1154ef79fe5a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1478'
 ht-degree: 0%
 
 ---
@@ -55,23 +51,23 @@ Per personalizzare o estendere i componenti, scrivi solo le sovrapposizioni e le
 * Per aspetto:
    * Modifica il modello JS e il CSS.
 * Per Look, Feel e UX:
-   * Modificare il modello JS, CSS e [estendere/sostituire JavaScript](client-customize.md#extending-javascript).
+   * Modificare il modello JS, il CSS e [estendere/sostituire JavaScript](client-customize.md#extending-javascript).
 * Per modificare le informazioni disponibili per il modello JS o per l’endpoint GET:
    * Estendi il [ComponenteSocial](server-customize.md#socialcomponent-interface).
 * Per aggiungere l&#39;elaborazione personalizzata durante le operazioni:
    * Scrivi un [OperationExtension](server-customize.md#operationextension-class).
-* Per aggiungere una nuova operazione personalizzata:
+* Per aggiungere un&#39;operazione personalizzata:
    * Crea un nuovo [Operazione di post Sling](server-customize.md#postoperation-class).
    * Usa esistente [OperationServices](server-customize.md#operationservice-class) secondo necessità.
-   * Aggiungi codice JavaScript per richiamare l’operazione dal lato client in base alle esigenze.
+   * Aggiungi il codice JavaScript per richiamare l’operazione dal lato client in base alle esigenze.
 
 ## Framework lato server {#server-side-framework}
 
 Il framework fornisce API per accedere alle funzionalità sul server e supportare l’interazione tra client e server.
 
-### API Java {#java-apis}
+### API Java™ {#java-apis}
 
-Le API Java forniscono classi e interfacce astratte che vengono facilmente ereditate o sottoclassificate.
+Le API Java™ forniscono classi e interfacce astratte che vengono facilmente ereditate o sottoclassificate.
 
 Le classi principali sono descritte nella [Personalizzazione lato server](server-customize.md) pagina.
 
@@ -131,11 +127,11 @@ Gli script HBS sono semplici, senza logica, sono compilati sia sul server che su
 
 Il framework fornisce diversi [Handlebars Helpers](handlebars-helpers.md) utili per lo sviluppo di SocialComponents.
 
-Sul server, quando Sling risolve una richiesta GET, identifica lo script che verrà utilizzato per rispondere alla richiesta. Se lo script è un modello HBS (con estensione hbs), Sling delegherà la richiesta al motore Handlebars. Il motore Handlebars otterrà quindi il componente SocialComponent dal SocialComponentFactory appropriato, creerà un contesto ed eseguirà il rendering del HTML.
+Sul server, quando Sling risolve una richiesta GET, identifica lo script utilizzato per rispondere alla richiesta. Se lo script è un modello HBS (con estensione hbs), Sling delegherà la richiesta al motore Handlebars. Il motore Handlebars otterrà quindi il componente SocialComponent dal SocialComponentFactory appropriato, creerà un contesto ed eseguirà il rendering del HTML.
 
 ### Nessuna restrizione di accesso {#no-access-restriction}
 
-I file di modello Handlebars (HBS) sono simili ai file di modello .jsp e .html, ma possono essere utilizzati per il rendering sia nel browser client che nel server. Pertanto, un browser client che richiede un modello lato client riceverà un file con estensione hbs dal server.
+I file di modello Handlebars (HBS) sono simili ai file di modello .jsp e .html, ma possono essere utilizzati per il rendering sia nel browser client che nel server. Pertanto, un browser client che richiede un modello lato client riceve un file con estensione hbs dal server.
 
 Questo richiede che tutti i modelli HBS nel percorso di ricerca sling (qualsiasi file .hbs in /libs/ o /apps) possano essere recuperati da qualsiasi utente dall’ambiente di authoring o pubblicazione.
 
@@ -143,7 +139,7 @@ L&#39;accesso HTTP ai file con estensione hbs non può essere vietato.
 
 ### Aggiungere o includere un componente community {#add-or-include-a-communities-component}
 
-La maggior parte dei componenti di Communities deve essere *aggiunto* come risorsa indirizzabile Sling. È possibile che alcuni dei componenti di Communities siano *incluso* in un modello come risorsa non esistente per consentire l’inclusione dinamica e la personalizzazione della posizione in cui scrivere il contenuto generato dall’utente (UGC, User Generated Content).
+La maggior parte dei componenti di Communities deve essere *aggiunto* come risorsa indirizzabile Sling. È possibile che alcuni dei componenti di Communities siano *incluso* in un modello come risorsa non esistente per consentire l’inclusione dinamica e la personalizzazione della posizione in cui scrivere il contenuto generato dall’utente (UGC, User-Generated Content).
 
 In entrambi i casi, i [librerie client richieste](clientlibs.md) deve essere presente anche.
 
@@ -157,7 +153,7 @@ Il risultato è un nodo figlio JCR sotto un nodo par, che è indirizzabile Sling
 
 L&#39;inclusione di un componente si riferisce al processo di aggiunta di un riferimento a un [risorsa &quot;non esistente&quot;](srp.md#for-non-existing-resources-ners) (nessun nodo JCR) all’interno del modello, ad esempio utilizzando un linguaggio di script.
 
-A partire da AEM 6.1, quando un componente viene incluso dinamicamente invece che aggiunto, è possibile modificare le proprietà del componente in modalità author *design *.
+A partire da Adobe Experience Manager (AEM) 6.1, quando un componente viene incluso dinamicamente invece che aggiunto, è possibile modificarne le proprietà nell’istanza di authoring *progettazione* modalità.
 
 Solo alcuni componenti di AEM Communities possono essere inclusi in modo dinamico. Sono:
 
@@ -166,7 +162,7 @@ Solo alcuni componenti di AEM Communities possono essere inclusi in modo dinamic
 * [Recensioni](reviews-basics.md)
 * [Votazione](essentials-voting.md)
 
-Il [Guida ai componenti della community](components-guide.md) consente di impostare l’aggiunta o l’inclusione di componenti inclusi.
+Il [Guida ai componenti della community](components-guide.md) consente di passare dall’aggiunta di componenti inclusi all’inclusione di.
 
 **Quando si utilizza Handlebars** lingua dei modelli, la risorsa non esistente viene inclusa utilizzando [include helper](handlebars-helpers.md#include) specificando il relativo resourceType:
 
@@ -189,17 +185,17 @@ Consulta [Helper Handlebars SCF](handlebars-helpers.md) per un elenco e una desc
 
 ## Framework lato client {#client-side-framework}
 
-### Framework JavaScript Visualizzazione Modello {#model-view-javascript-framework}
+### Framework JavaScript vista modello {#model-view-javascript-framework}
 
-Il quadro comprende un&#39;estensione [Backbone.js](https://www.backbonejs.org/), framework JavaScript per la visualizzazione del modello, per facilitare lo sviluppo di componenti avanzati e interattivi. La natura orientata agli oggetti supporta un framework estensibile/riutilizzabile. La comunicazione tra client e server è semplificata tramite l’API HTTP.
+Il quadro comprende un&#39;estensione [Backbone.js](https://backbonejs.org/), framework JavaScript per la visualizzazione del modello, per facilitare lo sviluppo di componenti avanzati e interattivi. La natura orientata agli oggetti supporta un framework estensibile/riutilizzabile. La comunicazione tra client e server è semplificata con l’API HTTP.
 
-Il framework sfrutta i modelli Handlebars lato server per eseguire il rendering dei componenti per il client. I modelli si basano sulle risposte JSON generate dall’API HTTP. Le visualizzazioni si associano a HTML generate dai modelli Handlebars e forniscono interattività.
+Il framework utilizza modelli Handlebars lato server per eseguire il rendering dei componenti per il client. I modelli si basano sulle risposte JSON generate dall’API HTTP. Le visualizzazioni si associano a HTML generate dai modelli Handlebars e forniscono interattività.
 
 ### Convenzioni CSS {#css-conventions}
 
 Di seguito sono riportate le convenzioni consigliate per la definizione e l’utilizzo delle classi CSS:
 
-* Utilizza nomi selettori di classi CSS con spazi chiari ed evita nomi generici come &quot;intestazione&quot;, &quot;immagine&quot;, ecc.
+* Utilizza nomi selettori di classi CSS con spazi chiari ed evita nomi generici come &quot;intestazione&quot; e &quot;immagine&quot;.
 * Definisci stili selettori di classe specifici in modo che i fogli di stile CSS funzionino correttamente con altri elementi e stili nella pagina. Esempio: `.social-forum .topic-list .li { color: blue; }`
 * Mantenere le classi CSS per lo stile separate dalle classi CSS per l&#39;interfaccia utente guidata da JavaScript.
 

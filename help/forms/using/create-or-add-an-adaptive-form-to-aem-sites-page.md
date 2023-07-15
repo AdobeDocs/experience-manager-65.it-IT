@@ -1,16 +1,16 @@
 ---
-title: Creare o aggiungere un modulo adattivo alla pagina di AEM Sites
+title: Creare o aggiungere un modulo adattivo alla pagina AEM Sites
 description: Scopri come creare o aggiungere facilmente un modulo adattivo alla pagina AEM Sites. Scopri le tecniche e le best practice passo passo per integrare moduli dinamici e personalizzabili nel tuo sito web, ottimizzando le tue esperienze digitali per il massimo impatto.
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '2883'
-ht-degree: 0%
+source-wordcount: '2913'
+ht-degree: 1%
 
 ---
 
-# Creare o aggiungere un modulo adattivo alla pagina di AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Creare o aggiungere un modulo adattivo alla pagina AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -23,7 +23,7 @@ Con AEM Forms puoi incorporare facilmente i moduli adattivi nelle pagine web. Qu
 
 AEM Forms fornisce i componenti Contenitore modulo adattivo e Forms adattivo - Incorpora. È possibile utilizzare il Contenitore di moduli adattivi per creare un nuovo modulo in un frammento di esperienza o in una pagina AEM Sites, mentre il componente Incorpora di Forms adattivo consente di aggiungere un modulo adattivo esistente o crearne uno nuovo tramite l’editor di Forms adattivo.
 
-![](/help/forms/using/assets/adaptive-form-in-sites-page.png)
+![Modulo adattivo nella pagina Sites](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
 ## Vantaggi dell’utilizzo del componente Contenitore modulo adattivo nell’Editor pagina o nel Frammento di esperienza AEM
 
@@ -177,7 +177,7 @@ Per convertire un modulo adattivo nella pagina di AEM Sites in un frammento di e
 1. Apri la pagina AEM Sites contenente il modulo adattivo (nel componente Contenitore Forms adattivo) in modalità di modifica.
 1. Apri la Struttura contenuto e seleziona la **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Nella barra dei menu, seleziona ![Icona Converti in variante di frammento esperienza](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) Icona Converti in variante di frammento esperienza.
-   ![](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![Conversione di un modulo in una pagina Sites in un frammento esperienza](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Viene visualizzata una finestra di dialogo per convertire il contenitore Moduli adattivi in un nuovo frammento di esperienza o aggiungerlo a un frammento di esperienza esistente
 1. Nella finestra di dialogo Converti in variante di frammento di esperienza, imposta i valori per le seguenti opzioni:
@@ -195,7 +195,7 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona la **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo con cui configurare le azioni di invio.
-   ![](/help/forms/using/assets/adaptive-forms-container.png)
+   ![Contenitore di moduli adattivi](/help/forms/using/assets/adaptive-forms-container.png)
 1. Seleziona e configura un’azione Invia in base alle tue esigenze. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](configuring-submit-actions.md)
 
 
@@ -213,7 +213,7 @@ Per configurare uno schema JSON o un modello dati modulo per il modulo:
 1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona la **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
-   ![](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
+   ![Contenitore moduli adattivi modello dati modulo](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
 1. Seleziona e configura uno schema JSON o un modello dati modulo, in base ai requisiti. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](configuring-submit-actions.md).
 
    * Quando selezioni il **[!UICONTROL Modello modulo]** , utilizza **[!UICONTROL Seleziona modello dati modulo]** per selezionare un modello di dati modulo preconfigurato.
@@ -235,7 +235,7 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona la **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
-   ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
+   ![Editor pagina per servizi di precompilazione fdm aem sites](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Seleziona un modello di dati modulo. Apri **[!UICONTROL Base]** scheda. Nel servizio di preriempimento, seleziona **[!UICONTROL Servizio preriempimento bozza di Forms Portal]**.
 1. Clic **[!UICONTROL Fine]**.
 

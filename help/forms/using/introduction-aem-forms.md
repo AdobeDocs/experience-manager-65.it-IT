@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '898'
 ht-degree: 10%
 
 ---
@@ -96,7 +96,7 @@ L&#39;acquisizione dei dati offline e la loro sincronizzazione alla successiva c
 * Dashboard personalizzabili per informazioni in tempo reale sulle operazioni aziendali
 * API per la connessione con strumenti di reporting di terze parti
 
-![](do-not-localize/3rd-draft.gif)
+![Terza bozza](do-not-localize/3rd-draft.gif)
 
 ## Comunicazione personalizzata {#personalized-communication}
 
@@ -112,9 +112,9 @@ Documenti personalizzati come ricevute, kit di benvenuto e rendiconti possono es
 * Conversione e assemblaggio di documenti
 * Supporto per la consegna di documenti in batch o on-demand tramite più canali, inclusi web, e-mail e carta
 * Audit trail con cronologia modifiche
-* Supporto per le firme digitali per la convalida dell’integrità dei contenuti e dell’identità del firmatario
+* Supporto per le firme digitali per la convalida dell&#39;integrità dei contenuti e dell&#39;identità del firmatario
 * Componente aggiuntivo Document Security per AEM Forms, tra cui crittografia, criteri di utilizzo, tracciamento e controllo
 
-![](do-not-localize/layout-02.png)
+![Layout due](do-not-localize/layout-02.png)
 
 Flusso di lavoro di comunicazione personalizzato semplificato

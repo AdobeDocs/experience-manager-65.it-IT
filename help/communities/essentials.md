@@ -1,16 +1,12 @@
 ---
 title: Nozioni di base su componenti, funzioni e funzioni
-seo-title: Component, Function and Feature Essentials
 description: Funzionamento di siti, modelli e gruppi della community
-seo-description: How community sites, templates, and groups function
-uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
@@ -19,11 +15,11 @@ ht-degree: 17%
 
 # Nozioni di base su componenti, funzioni e funzioni  {#component-function-and-feature-essentials}
 
-Le funzioni di AEM Communities richiedono che i visitatori del sito diventino membri e accedano al [sito community](overview.md#communitiessites) prima di poter pubblicare il contenuto. Pertanto, [modelli per sito community](sites.md), da cui è stato creato un sito community [creato](sites-console.md), sono progettati per includere una funzione di accesso, nonché profili utente, messaggi, ricerca, moderazione e traduzione.
+Le funzioni di Adobe Experience Manager (AEM) Communities richiedono che i visitatori del sito diventino membri e accedano al [sito community](overview.md#communitiessites) prima di poter pubblicare il contenuto. Pertanto, [modelli per sito community](sites.md), da cui è stato creato un sito community [creato](sites-console.md), sono progettati per includere una funzione di accesso e profili utente, messaggi, ricerca, moderazione e traduzione.
 
 Un sito community supporta i membri che creano gruppi community quando [funzione gruppi community](functions.md#groups-function) è incluso nel modello di sito community selezionato.
 
-Di seguito sono riportati collegamenti a informazioni essenziali su componenti, funzioni e funzioni di Communities.
+Di seguito sono riportati collegamenti a informazioni essenziali per componenti, funzioni e funzioni di Communities.
 
 ## Componenti base {#base-components}
 

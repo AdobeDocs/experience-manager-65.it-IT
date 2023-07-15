@@ -1,18 +1,14 @@
 ---
 title: Panoramica del provider di risorse di archiviazione
-seo-title: Storage Resource Provider Overview
 description: Archiviazione comune per community
-seo-description: Common storage for Communities
-uuid: abdf4e5a-767b-428f-9aa4-0dc06819a26e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-A partire da AEM Communities 6.1, il contenuto della community, comunemente denominato user generated content (UGC), viene memorizzato in un unico archivio comune fornito da un [provider di risorse di archiviazione](working-with-srp.md) (SRP)
+A partire da Adobe Experience Manager (AEM) Communities 6.1, i contenuti community, comunemente denominati contenuti generati dagli utenti (UGC, User-Generated Content), sono memorizzati in un unico archivio comune fornito da un [provider di risorse di archiviazione](working-with-srp.md) (SRP)
 
 Esistono diverse opzioni SRP, tutte accessibili da UGC tramite una nuova interfaccia AEM Communities, la [API SocialResourceProvider](srp-and-ugc.md) (API SRP), che include tutte le operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD).
 
@@ -31,7 +27,7 @@ Tutti i componenti SCF vengono implementati utilizzando l’API SRP, consentendo
 
 >[!NOTE]
 >
->**Componenti personalizzati**: per i clienti con licenza di AEM Communities, l’API SRP è disponibile per gli sviluppatori di componenti personalizzati al fine di accedere a UGC indipendentemente dalla topologia sottostante. Consulta [Nozioni di base su SRP e UGC](srp-and-ugc.md).
+>**Componenti personalizzati**: per i clienti con licenza di AEM Communities, l’API SRP è disponibile per gli sviluppatori di componenti personalizzati per l’accesso a UGC, indipendentemente dalla topologia sottostante. Consulta [Nozioni di base su SRP e UGC](srp-and-ugc.md).
 
 Consulta anche:
 
@@ -41,17 +37,17 @@ Consulta anche:
 
 ## Informazioni sull’archivio {#about-the-repository}
 
-Per comprendere i criteri SRP, è utile comprendere il ruolo dell’archivio AEM (OAK) in un sito della community AEM.
+Per comprendere la SRP, è utile comprendere il ruolo dell’archivio dell’AEM (Oak) in un sito della community dell’AEM.
 
-**Java Content Repository (JCR)**
-Questo standard definisce un modello dati e un&#39;interfaccia di programmazione dell&#39;applicazione ([API JCR](https://jackrabbit.apache.org/jcr/jcr-api.html)) per gli archivi di contenuti. Combina le caratteristiche dei file system convenzionali con quelle dei database relazionali e aggiunge una serie di funzioni aggiuntive di cui le applicazioni di contenuti hanno spesso bisogno.
+**Java™ Content Repository (JCR)**
+Questo standard definisce un modello dati e un&#39;interfaccia di programmazione dell&#39;applicazione ([API JCR](https://jackrabbit.apache.org/jcr/jcr-api.html)) per gli archivi di contenuti. Combina le caratteristiche dei file system convenzionali con quelle dei database relazionali e aggiunge diverse funzioni aggiuntive di cui le applicazioni di contenuti hanno spesso bisogno.
 
-Un’implementazione del JCR è l’archivio dell’AEM, OAK.
+Un’implementazione del JCR è l’archivio dell’AEM, Oak.
 
-**Apache Jackrabbit Oak (OAK)**
-[OAK](../../help/sites-deploying/platform.md) è un’implementazione di JCR 2.0 che è un sistema di storage dei dati appositamente progettato per applicazioni incentrate sui contenuti. Si tratta di un tipo di database gerarchico progettato per i dati non strutturati e semistrutturati. L’archivio memorizza non solo il contenuto rivolto all’utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall’applicazione. L’interfaccia utente per l’accesso al contenuto è [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+**Apache Jackrabbit Oak**
+[Oak](../../help/sites-deploying/platform.md) è un’implementazione di JCR 2.0, un sistema di storage dei dati progettato per applicazioni incentrate sui contenuti. Si tratta di un tipo di database gerarchico progettato per i dati non strutturati e semistrutturati. L’archivio memorizza non solo il contenuto rivolto all’utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall’applicazione. L’interfaccia utente per l’accesso al contenuto è [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-Sia JCR che OAK vengono in genere utilizzati per fare riferimento all’archivio AEM.
+Sia JCR che Oak vengono in genere utilizzati per fare riferimento all’archivio AEM.
 
 Dopo aver sviluppato il contenuto del sito nell’ambiente di authoring privato, deve essere copiato nell’ambiente di pubblicazione pubblico. Questo viene spesso fatto attraverso un&#39;operazione chiamata *[replica](deploy-communities.md#replication-agents-on-author)*. Questo accade sotto il controllo dell’autore/sviluppatore/amministratore.
 
@@ -71,7 +67,7 @@ Quando UGC viene salvato nello storage condiviso, esiste una singola istanza di 
 
 ### ASRP {#asrp}
 
-Nel caso di ASRP, UGC non viene memorizzato in JCR, ma in un servizio cloud ospitato e gestito da Adobe. Le UGC memorizzate in ASRP non possono essere visualizzate con CRXDE Lite né accessibili utilizzando l’API JCR.
+Se è presente ASRP, UGC non viene memorizzato in JCR, ma in un servizio cloud ospitato e gestito da Adobe. Le UGC memorizzate in ASRP potrebbero non essere visualizzate con CRXDE Lite o non essere accessibili utilizzando l’API JCR.
 
 Consulta [ASRP - Provider risorsa di archiviazione Adobe](asrp.md).
 
@@ -81,7 +77,7 @@ ASRP utilizza Adobe Cloud per le query.
 
 ### MSRP {#msrp}
 
-Nel caso di MSRP, UGC non viene memorizzato in JCR, ma in MongoDB. I contenuti generati dagli utenti (UGC) memorizzati in MSRP non possono essere visualizzati con CRXDE Lite né essere accessibili utilizzando l’API JCR.
+Se è presente, MSRP, UGC non è memorizzato in JCR, ma in MongoDB. Le UGC memorizzate in MSRP potrebbero non essere visualizzate con CRXDE Lite o non essere accessibili utilizzando l’API JCR.
 
 Consulta [MSRP - Provider risorsa di archiviazione MongoDB](msrp.md).
 
@@ -95,7 +91,7 @@ JSRP è il provider predefinito per l’accesso a tutti i contenuti generati dag
 
 Consulta [JSRP - Provider risorsa di archiviazione JCR](jsrp.md).
 
-Nel caso di JSRP, mentre UGC è memorizzato in JCR e accessibile sia tramite API CRXDE Lite che JCR, si consiglia vivamente di non utilizzare mai l’API JCR in questo modo, altrimenti le modifiche future potrebbero influenzare il codice personalizzato.
+Se è presente JSRP, mentre UGC è memorizzato in JCR e accessibile tramite l’API CRXDE Lite e JCR, si consiglia di non utilizzare mai l’API JCR per farlo, altrimenti le modifiche future potrebbero influenzare il codice personalizzato.
 
 Inoltre, l’archivio per gli ambienti di authoring e pubblicazione non è condiviso. Anche se un cluster di istanze di pubblicazione genera un archivio di pubblicazione condiviso, l’UGC immesso al momento della pubblicazione non sarà visibile nell’autore, pertanto non sarà possibile gestire l’UGC dall’autore. L’UGC viene mantenuto solo nell’archivio AEM (JCR) dell’istanza in cui è stato inserito.
 
@@ -122,7 +118,7 @@ Consulta [Nozioni di base su SRP e UGC](srp-and-ugc.md) per il codice di esempio
 
 ### Per le risorse non esistenti (NER) {#for-non-existing-resources-ners}
 
-Alcuni componenti di Communities sono inclusi all’interno di uno script e pertanto richiedono un nodo indirizzabile Sling per supportare le funzioni di Communities. [Componenti inclusi](scf.md#add-or-include-a-communities-component) sono denominate risorse non esistenti (NER).
+Alcuni componenti di Communities sono inclusi in uno script e quindi richiedono un nodo indirizzabile Sling per supportare le funzioni di Communities. [Componenti inclusi](scf.md#add-or-include-a-communities-component) sono denominate risorse non esistenti (NER).
 
 I nodi shadow forniscono una posizione indirizzabile Sling nell’archivio.
 
@@ -136,13 +132,13 @@ Di seguito è riportato un esempio di nodo ombra che utilizza [Componente Commen
 
 * Il componente esiste nell’archivio locale in:
 
-   `/content/community-components/en/comments/jcr:content/content/includable/comments`
+  `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 * Il nodo shadow corrispondente esiste nell’archivio locale in:
 
-   `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
+  `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-Non verrà trovato alcun contenuto generato dall&#39;utente (UGC) nel nodo shadow.
+Nessun UGC trovato nel nodo shadow.
 
 Il comportamento predefinito consiste nell’impostare nodi shadow in un’istanza Publish ogni volta che si fa riferimento alla sottostruttura pertinente per una lettura o una scrittura.
 

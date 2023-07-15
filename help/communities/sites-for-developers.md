@@ -1,19 +1,15 @@
 ---
 title: Nozioni di base sul sito community
-seo-title: Community Site Essentials
 description: Esportazione ed eliminazione di siti community e creazione di modelli di sito personalizzati
-seo-description: Exporting and deleting community sites and creating custom site templates
-uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 2%
+source-wordcount: '497'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +52,7 @@ Esempio: `/content/sites/engage/en/configuration`
 
 >[!CAUTION]
 >
->Se al modello personalizzato viene assegnato il nome *sitepage.hbs*, quindi tutti i siti della community verranno personalizzati.
+>Se al modello personalizzato viene assegnato il nome *sitepage.hbs*, quindi tutti i siti della community vengono personalizzati.
 
 ### Esempio di modello di sito personalizzato {#custom-site-template-example}
 
@@ -73,7 +69,7 @@ Identificare il modello personalizzato aggiungendo un `page-template` al nodo di
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Assicurati di **Salva tutto** e replica il codice personalizzato in tutte le istanze AEM (il codice personalizzato non viene incluso quando il contenuto del sito community viene pubblicato dalla console).
+Assicurati di **Salva tutto** e replica il codice personalizzato in tutte le istanze di Adobe Experience Manager (AEM) (il codice personalizzato non viene incluso quando il contenuto del sito community viene pubblicato dalla console).
 
 La procedura consigliata per la replica del codice personalizzato è [creare un pacchetto](../../help/sites-administering/package-manager.md#creating-a-new-package) e distribuirlo su tutte le istanze.
 
@@ -83,9 +79,9 @@ Una volta creato un sito community, è possibile esportarlo come pacchetto AEM m
 
 È disponibile dal sito [Console Siti community](sites-console.md#exporting-the-site).
 
-Tieni presente che UGC e codice personalizzato non sono inclusi nel pacchetto per il sito community.
+UGC e codice personalizzato non sono inclusi nel pacchetto per il sito community.
 
-Per esportare UGC, utilizza [Strumento di migrazione UGC per AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), strumento di migrazione open source disponibile su GitHub.
+Per esportare UGC, utilizza [Strumento di migrazione UGC per AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), strumento di migrazione open-source disponibile su GitHub.
 
 ## Eliminazione di un sito community {#deleting-a-community-site}
 
@@ -105,17 +101,17 @@ Per identificare l&#39;ID sito univoco associato al sito community, utilizzando 
 
 * L’ID sito è il terzo componente di `rep:principalName`
 
-   Ad esempio, se `rep:principalName = community-enable-nrh9h-members`
+  Ad esempio, se `rep:principalName = community-enable-nrh9h-members`
 
    * **nome del sito** = *abilita*
    * **ID sito** = *nrh9h*
    * **ID sito univoco** = *enable-nrh9h*
 
-### Contenuto generato dall&#39;utente {#user-generated-content}
+### Contenuti generati dall&#39;utente {#user-generated-content}
 
-Ottieni il progetto Communities-srp-tools da Github:
+Ottieni il progetto Communities-srp-tools da GitHub:
 
-* [https://github.com/Adobe-Marketing-Cloud/communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/communities-srp-tools)
+* [https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 Contiene un servlet per eliminare tutti i contenuti generati dagli utenti (UGC, User-Generated Content) da qualsiasi SRP.
 
