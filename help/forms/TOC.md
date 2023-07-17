@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '3870'
+source-wordcount: '3881'
 ht-degree: 4%
 
 ---
@@ -127,14 +127,17 @@ ht-degree: 4%
    + [Introduzione all’integrazione dei dati di AEM Forms](using/data-integration.md)
    + [Configurare origini dati](using/configure-data-sources.md)
    + [Configurazione di Microsoft Dynamics Odata](using/ms-dynamics-odata-configuration.md)
-   + [Flusso delle credenziali client OAuth 2.0 per l’integrazione con Salesforce](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Crea modello dati modulo](using/create-form-data-models.md)
    + [Utilizzare il modello dati del modulo](using/work-with-form-data-model.md)
    + [Usa modello dati modulo](using/using-form-data-model.md)
++ Forms adattivo - Componenti core {#adaptive-forms-core-components}
+   + [Abilitare i componenti core per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md)
+   + [Creare un modulo adattivo basato su Componenti core](/help/forms/using/create-an-adaptive-form-core-components.md)
+   + [Creazione di temi per Forms adattivo basato su Componenti core](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
 + Forms adattivo - Authoring di base {#adaptive-forms-basic-authoring}
    + [Best practice per l’utilizzo dei moduli adattivi](using/adaptive-forms-best-practices.md)
    + [Creazione di un modulo adattivo](using/creating-adaptive-form.md)
-   + [Creare o aggiungere un modulo adattivo alla pagina di AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+   + [Creare o aggiungere un modulo adattivo alla pagina AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [Frammenti di moduli adattivi](using/adaptive-form-fragments.md)
    + [Configurazione dell’azione Invia](using/configuring-submit-actions.md)
    + [Utilizzo del CAPTCHA nei moduli adattivi](using/captcha-adaptive-forms.md)
@@ -692,7 +695,6 @@ ht-degree: 4%
    + [Impossibile ripristinare l’archivio CRX](/help/forms/using/restore-crx-repository.md)
    + [Errori di servizio non disponibile dopo l’installazione del service pack AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Problema di installazione del service pack AEM Forms JEE 6.5.15.0 nell’ambiente JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [Distribuzione EAR non riuscita sul server WebLogic JEE](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Documentazione legacy {#legacy-documentation}
    + [Utilizzo del servizio Execute Script in AEM Forms su JEE Workbench per generare dati XML](developing/building-xml.md)
    + [Compressione e decompressione di file tramite un’istanza di AEM Forms su JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)

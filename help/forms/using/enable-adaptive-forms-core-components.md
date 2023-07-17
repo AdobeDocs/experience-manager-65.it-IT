@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 5%
@@ -150,6 +150,6 @@ Quando i componenti core Adaptive Forms sono abilitati per il tuo ambiente, allâ
 ## Passaggio successivo
 
 * [Creare un modulo adattivo basato su Componenti core](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Creazione di temi per Forms adattivo basato su Componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)

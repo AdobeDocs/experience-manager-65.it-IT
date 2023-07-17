@@ -9,7 +9,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 3%
@@ -30,13 +30,13 @@ Prima di iniziare, scopri i tipi di componenti Forms disponibili:
 
 * [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it): si tratta di componenti di acquisizione dati standardizzati. Questi componenti forniscono funzionalità di personalizzazione, riducono i tempi di sviluppo e i costi di manutenzione per le esperienze di registrazione digitale. Uno sviluppatore può personalizzare e assegnare uno stile a questi componenti. L’Adobe consiglia di sfruttare questi componenti moderni ed estensibili per sviluppare Forms adattivo.
 
-* [Componenti adattivi di Forms Foundation](creating-adaptive-form.md): si tratta dei classici (vecchi) componenti di acquisizione dati. Puoi continuare a utilizzarli per modificare i componenti di base esistenti basati su modulo adattivo. Se stai creando moduli, l’Adobe consiglia di utilizzare  [Componenti core Forms adattivi](creating-adaptive-form-core-components.md) per creare un Forms adattivo.
+* [Componenti adattivi di Forms Foundation](creating-adaptive-form.md): si tratta dei classici (vecchi) componenti di acquisizione dati. Puoi continuare a utilizzarli per modificare i componenti di base esistenti basati su modulo adattivo. Se stai creando moduli, l’Adobe consiglia di utilizzare  [Componenti core Forms adattivi](/help/forms/using/create-adaptive-form.md) per creare un Forms adattivo.
 
 ## Prerequisiti
 
 Per creare un modulo adattivo è necessario quanto segue:
 
-* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: è richiesto il progetto Archetipo AEM versione 41 o successiva per [abilitare i Componenti core per il tuo ambiente](/help/forms/using/installing-core-components.md). Quando si abilitano i Componenti core per l’ambiente, viene **Forms adattivo (componente core)** Il modello e il tema Canvas vengono aggiunti al tuo ambiente.
+* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: è richiesto il progetto Archetipo AEM versione 41 o successiva per [abilitare i Componenti core per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Quando si abilitano i Componenti core per l’ambiente, viene **Forms adattivo (componente core)** Il modello e il tema Canvas vengono aggiunti al tuo ambiente.
 
 * **Un modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’azione &quot;look and feel&quot; e &quot;submit&quot; definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il modello denominato `blank` è supportato OOTB:
 
@@ -46,7 +46,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 
   >[!NOTE]
   >
-  > In caso contrario, **Forms adattivo (componente core)** modello nell&#39;ambiente, [Abilitare i componenti core Forms adattivi per il tuo ambiente](/help/forms/using/installing-core-components.md). Quando si abilitano i Componenti core per l’ambiente, viene **Forms adattivo (componente core)** viene aggiunto al tuo ambiente.
+  > In caso contrario, **Forms adattivo (componente core)** modello nell&#39;ambiente, [Abilitare i componenti core Forms adattivi per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Quando si abilitano i Componenti core per l’ambiente, viene **Forms adattivo (componente core)** viene aggiunto al tuo ambiente.
 
 * **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando applicate un tema, lo stile specificato viene riflesso sui componenti corrispondenti.  Il `Canvas` Il tema viene aggiunto per impostazione predefinita quando abiliti i componenti core per il tuo ambiente. È inoltre possibile [scaricare e personalizzare i temi di riferimento](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
@@ -91,7 +91,7 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 
    ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare un’azione di invio](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-1. Seleziona e configura un **[!UICONTROL Azione di invio]**, in base alle tue esigenze. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](/help/forms/configuring-submit-actions.md)
+1. Seleziona e configura un **[!UICONTROL Azione di invio]**, in base alle tue esigenze. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](/help/forms/using/configuring-submit-actions.md)
 
 <!--
     
@@ -117,8 +117,8 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
 
 È possibile utilizzare il modello dati modulo per collegare un modulo a un&#39;origine dati per inviare e ricevere dati in base alle azioni degli utenti. Puoi anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo:
 
-* [Creare uno schema JSON e caricarlo nell’ambiente](/help/forms/adaptive-form-json-schema-form-model.md)
-* [Creare un modello di dati modulo](/help/forms/create-form-data-models.md)
+* [Creare uno schema JSON e caricarlo nell’ambiente](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Creare un modello di dati modulo](/help/forms/using/create-form-data-models.md)
 
 ### Configurare uno schema JSON o un modello dati modulo per il modulo
 
@@ -141,7 +141,7 @@ Per configurare uno schema JSON o un modello dati modulo per il modulo:
 
 Puoi utilizzare il servizio di precompilazione per compilare automaticamente i campi di un modulo adattivo utilizzando dati esistenti. Quando un utente apre un modulo, i valori di tali campi vengono precompilati. Operazioni disponibili:
 
-* [Creare un servizio di precompilazione personalizzato](/help/forms/prepopulate-adaptive-form-fields.md)
+* [Creare un servizio di precompilazione personalizzato](/help/forms/using/prepopulate-adaptive-form-fields.md)
 * [Utilizza il servizio di precompilazione del modello dati del modulo](#fdm-prefill-service)
 
 ### Utilizzare il servizio di precompilazione del modello dati modulo per precompilare i campi di un modulo adattivo {#fdm-prefill-service}
@@ -171,6 +171,6 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 
 ## Consulta anche
 
-* [Creare un modulo adattivo basato su Componenti core](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Creare un modulo adattivo basato su Componenti core](create-an-adaptive-form-core-components.md)
+* [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
