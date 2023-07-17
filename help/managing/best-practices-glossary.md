@@ -1,26 +1,22 @@
 ---
 title: Glossario
-seo-title: Glossary
 description: Questo glossario elenca (alfabeticamente) i dettagli di tutti i documenti di recapito contenuti nell'elenco di controllo del progetto.
-seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
-uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: f21b0b5cb4246ffb22c9d9a219a622f36741d9b8
 workflow-type: tm+mt
-source-wordcount: '7036'
+source-wordcount: '6949'
 ht-degree: 0%
 
 ---
 
 # Glossario{#glossary}
 
-Questo glossario elenca (in ordine alfabetico) i dettagli di tutti i documenti del deliverable [Elenco di controllo progetto](/help/managing/best-practices-checklist.md).
+Questo glossario elenca (in ordine alfabetico) i dettagli di tutti i documenti del documento finale [Elenco di controllo progetto](/help/managing/best-practices-checklist.md).
 
 ## Accettazione da parte delle parti interessate {#acceptance-from-business-stakeholders}
 
@@ -37,7 +33,7 @@ I test di accettazione vengono utilizzati per confermare che:
 * Gli utenti accettano la soluzione e possono considerare di utilizzarla.
 * Il cliente accetta il progetto.
 
-Prima pianifichi e progetti i test di accettazione, più semplice sarà la distribuzione finale. Devono essere definiti insieme al cliente e al team di controllo qualità.
+Prima pianifica e progetta i test di accettazione, più semplice sarà la distribuzione finale. Devono essere definiti insieme al cliente e al team di controllo qualità.
 
 Anche se potrebbe non essere possibile definire tutti i dettagli all&#39;inizio del progetto, le definizioni iniziali dovrebbero essere discusse e concordate. Le prove di accettazione saranno probabilmente basate sui requisiti fondamentali (funzionalità e prestazioni).
 
@@ -47,7 +43,7 @@ Assicurati che i livelli richiesti di accesso al sistema siano stati concessi a 
 
 ### Elenco di controllo della sicurezza di Adobe {#adobe-security-checklist}
 
-Il [Elenco di controllo della sicurezza di Adobe](/help/sites-administering/security-checklist.md) è la lista di controllo ufficiale fornita per garantire la sicurezza dell’AEM al momento dell’installazione. Contiene le misure di sicurezza e i passaggi di verifica necessari per garantire l’integrità dell’istanza.
+Il [Elenco di controllo della sicurezza di Adobe](/help/sites-administering/security-checklist.md) è l’elenco di controllo ufficiale fornito per garantire la sicurezza di Adobe Experience Manager (AEM) al momento dell’installazione. Contiene le misure di sicurezza e i passaggi di verifica necessari per garantire l’integrità dell’istanza.
 
 ### Configurazione del progetto del portale di assistenza Adobe {#adobe-support-portal-project-set-up}
 
@@ -65,7 +61,7 @@ Formazione per il personale addetto alla produzione (authoring) dei contenuti pe
 
 ### Esame certificazione AEM {#aem-certification-exam}
 
-Assicurati che l’utente tipo appropriato sia registrato per assumere [esami di certificazione](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Assicurati che siano registrati gli utenti tipo appropriati per [esami di certificazione](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### Certificato AEM {#aem-certified}
 
@@ -73,11 +69,11 @@ Assicurati che la persona appropriata abbia trasmesso le [esami di certificazion
 
 ### Formazione tecnica AEM {#aem-technical-training}
 
-Fornisci una formazione tecnica per la persona appropriata, ad esempio sviluppatori, architetti, ingegneri e professionisti aziendali.
+Fornisci formazione tecnica per la persona appropriata, ad esempio sviluppatori, architetti, ingegneri e professionisti aziendali.
 
 ### Contratto sui KPI definiti come obiettivi per il progetto {#agreement-on-kpis-defined-as-goals-for-the-project}
 
-Gli indicatori prestazioni chiave (KPI, Key Performance Indicators) consentono a un’organizzazione di definire e misurare i progressi compiuti verso il raggiungimento degli obiettivi e degli obiettivi organizzativi. Una volta che un&#39;organizzazione ha analizzato la sua missione e definito i suoi obiettivi, deve misurare i progressi verso tali obiettivi. I KPI forniscono un meccanismo di misurazione.
+Gli indicatori prestazioni chiave (KPI, Key Performance Indicators) consentono a un’organizzazione di definire e misurare i progressi compiuti verso il raggiungimento degli obiettivi organizzativi. Una volta che un&#39;organizzazione ha analizzato la propria missione e definito i propri obiettivi, deve misurare i progressi verso tali obiettivi. I KPI forniscono un meccanismo di misurazione.
 
 ### Allineare i KPI aziendali e quelli relativi alle prestazioni {#align-business-and-performance-kpis}
 
@@ -97,12 +93,12 @@ Il [architettura dell&#39;applicazione](/help/managing/best-practices.md#develop
 
 Si concentra su:
 
-* Come interagiranno tra loro e con gli utenti.
+* Come interagiscono tra loro e con gli utenti.
 * I dati che devono essere utilizzati e prodotti dalle applicazioni, anziché la loro struttura interna.
 
 ### Attività di manutenzione specifiche dell’applicazione definite {#application-specific-maintenance-tasks-defined}
 
-Oltre alle normali attività di manutenzione di Adobe Experience Manager (AEM), è necessario definire altre attività operative da eseguire per la manutenzione ordinaria della soluzione.
+Oltre alle attività di manutenzione standard di Adobe Experience Manager (AEM), è necessario definire altre attività operative da eseguire per la manutenzione ordinaria della soluzione.
 
 ### Personale Adeguatamente Formato {#appropriately-trained-staff}
 
@@ -183,7 +179,7 @@ Il concetto di backup e ripristino descrive le funzionalità tecniche che verran
 
 Test completo basato sul concetto di backup e ripristino.
 
-### Business case {#business-case-s}
+### Casi di studio {#business-case-s}
 
 Un documento business case presenta gli argomenti relativi all’esecuzione dell’azione, all’esecuzione di un’azione alternativa (se disponibile) o alla mancata esecuzione di alcuna azione. Le argomentazioni dovrebbero essere equilibrate, basate su fatti concreti (ove possibile/pertinenti) e mettere in evidenza sia i benefici che i rischi per tutti i casi.
 
@@ -201,7 +197,7 @@ L’analista commerciale deve confermare di aver compreso appieno:
 
 Le organizzazioni utilizzano gli indicatori prestazioni chiave (KPI, Key Performance Indicators) per valutare il successo nel raggiungimento degli obiettivi.
 
-I KPI aziendali definiscono valori misurabili che dimostrano l’efficacia con cui un’azienda sta raggiungendo gli obiettivi aziendali chiave. È importante scegliere i KPI appropriati alla tua azienda/scenario con definizioni chiare di cosa sono, come saranno misurati, come saranno utilizzati e da chi.
+I KPI aziendali definiscono valori misurabili che dimostrano l’efficacia con cui un’azienda sta raggiungendo gli obiettivi aziendali chiave. È importante scegliere i KPI appropriati alla tua azienda/scenario con definizioni chiare di cosa sono, come sono misurati, come vengono utilizzati e da chi.
 
 ### Documentazione sui requisiti aziendali {#business-requirements-documentation}
 
@@ -213,7 +209,7 @@ Nell&#39;esaminare la soluzione aziendale, il BRD dovrebbe rispondere alla doman
 
 I processi di valutazione dei rischi e i test di penetrazione possono produrre problemi e risultati che devono essere affrontati nell&#39;architettura o nello sviluppo della soluzione.
 
-Qualsiasi adeguamento derivante da questi processi deve essere rivisto e approvato dall&#39;azienda e valutato rispetto agli obiettivi generali.
+Qualsiasi modifica derivante da questi processi deve essere rivista e approvata dall&#39;azienda e valutata rispetto agli obiettivi generali.
 
 ### Strategia di memorizzazione in cache {#caching-strategy}
 
@@ -223,7 +219,7 @@ Ad esempio, elementi come immagini, JavaScript e altri file server possono esser
 
 ### Linee guida per la codifica {#coding-guidelines}
 
-Le linee guida per la codifica definiscono i principi di base che gli sviluppatori devono rispettare durante lo sviluppo della soluzione. Tali misure possono comprendere, tra l&#39;altro:
+Le linee guida per la codifica definiscono i principi di base che gli sviluppatori devono rispettare durante lo sviluppo della soluzione. Tra questi possono figurare:
 
 * convenzioni di denominazione
 * utilizzo del servizio
@@ -259,7 +255,7 @@ Verificare che il concetto di sicurezza sia attivo.
 
 ### Concetto di relazione componenti e modelli {#components-and-templates-relationship-concept}
 
-Struttura dei modelli e dei componenti che verranno utilizzati nella nuova applicazione. Include dettagli quali regole di ereditarietà, autorizzazioni e relazioni, tra gli altri.
+Struttura dei modelli e dei componenti utilizzati nella nuova applicazione. Include dettagli quali regole di ereditarietà, autorizzazioni e relazioni, tra gli altri.
 
 ### Specifiche di relazione di componenti e modelli {#components-and-templates-relationship-specification}
 
@@ -277,7 +273,7 @@ Pianifica/implementa modelli di queste interfacce per garantire che i test siano
 
 ### Documento sull’architettura dei contenuti {#content-architecture-document}
 
-Documentazione dell’architettura proposta per il contenuto. I dettagli dovrebbero includere (tra l&#39;altro):
+Documentazione dell’architettura proposta per il contenuto. I dettagli dovrebbero comprendere, tra l&#39;altro:
 
 * struttura contenuto
 * concetti di assegnazione tag
@@ -299,10 +295,10 @@ Documentazione dell’architettura e del formato del contenuto correnti. che ver
 
 Politiche del cliente relative a:
 
-* processi di backup sia per i dati che per la soluzione
+* processi di backup dei dati e della soluzione
 * archiviazione del backup
 * conferma che il backup funziona come previsto
-* ripristino, in caso di guasto
+* ripristino in caso di errore
 
 ### Linee guida per la codifica dei clienti {#customer-coding-guidelines}
 
@@ -324,7 +320,7 @@ La pianificazione definita dal cliente per le versioni negli ambienti di produzi
 
 ### Criteri e requisiti di reporting per clienti {#customer-reporting-policies-and-requirements}
 
-Qualsiasi politica e/o requisito del cliente in materia di reporting. Questi possono includere:
+Qualsiasi politica, o requisito, o entrambi, che il cliente ha in relazione alla generazione di rapporti. Questi possono includere:
 
 * con quale frequenza devono essere consegnati rapporti specifici
 * il formato per rapporti specifici
@@ -344,7 +340,7 @@ Il cliente (business e IT) disporrà di criteri che definiscono i livelli di sic
 
 ### Linee guida sulle specifiche cliente {#customer-specification-guidelines}
 
-Tutte le linee guida del cliente relative al formato, alla consegna e all&#39;approvazione delle specifiche.
+Tutte le linee guida del cliente relative al formato, alla consegna e all’approvazione delle specifiche.
 
 ### Rapporti sui test dei clienti {#customer-test-reports}
 
@@ -375,7 +371,7 @@ Verificare che le impostazioni di sicurezza predefinite per l&#39;AEM siano stat
 
 ### Criteri e processi di distribuzione/rilascio {#deployment-release-policies-and-processes}
 
-Criteri formalizzati che riguardano sia la distribuzione che le versioni del progetto. Questi possono includere:
+Criteri formalizzati relativi sia alla distribuzione che alle versioni del progetto. Questi possono includere:
 
 * tempo per le versioni
 * pianificazione delle vacanze
@@ -406,7 +402,7 @@ Il team di sviluppo deve confermare di aver compreso appieno:
 
 * ambito del progetto
 * tutte le aspettative dei clienti
-* che questa sia la base per tutte le decisioni prese per persona, per fase nel progetto
+* la base di tutte le decisioni prese per persona, per fase nel progetto
 
 ### Specifiche finestre di dialogo {#dialogs-specification}
 
@@ -472,7 +468,7 @@ Le aspettative possono includere:
 
 ### Requisiti di Experience Design {#experience-designs-requirements}
 
-Requisiti per l&#39;intera esperienza della soluzione. Questo copre fattori come, tra gli altri, la personalizzazione, la persistenza tra dispositivi e l’esperienza utente.
+Requisiti per l&#39;intera esperienza della soluzione. Ciò riguarda, tra gli altri, fattori come la personalizzazione, la persistenza tra dispositivi e l’esperienza utente.
 
 ### Specifiche dell’esperienza {#experience-specifications}
 
@@ -480,7 +476,7 @@ Dettagli sui requisiti di progettazione dell’esperienza.
 
 ### Dipendenze utente e sistema esterno/Contesto del sistema {#external-system-and-user-dependencies-system-context}
 
-Un diagramma (o una serie di diagrammi) che delinea l’intero ecosistema della soluzione. Ciò dovrebbe includere elementi quali le integrazioni esterne, le interfacce, le dipendenze e le reti.
+Un diagramma (o una serie di diagrammi) che delinea l’intero ecosistema della soluzione. Ciò dovrebbe includere elementi quali integrazioni esterne, interfacce, dipendenze e reti.
 
 ### Sistema e procedura di fallback {#fallback-system-and-procedure}
 
@@ -495,11 +491,11 @@ Test completo del sistema di fallback.
 
 ### Disconnessione del sistema di fallback dalle parti interessate del business {#fallback-system-sign-off-from-business-stakeholders}
 
-Dare l’approvazione, da parte delle parti interessate, che il sistema di fallback e le relative procedure garantiranno le funzionalità aziendali critiche.
+Dare l’approvazione, da parte delle parti interessate, del fatto che il sistema di fallback e le procedure correlate garantiscono le funzionalità aziendali critiche.
 
 ### Conferma di fattibilità sui KPI {#feasibility-confirmation-on-kpis}
 
-Risultati di uno studio di fattibilità sia per AEM che per la progettazione della soluzione di alto livello. Questi devono essere misurati rispetto ai KPI per garantire che possano essere soddisfatti.
+Risultati di uno studio di fattibilità sia per AEM che per la progettazione di soluzioni di alto livello. Questi devono essere misurati rispetto ai KPI per garantire che possano essere soddisfatti.
 
 ### Contratto finalizzato {#finalized-contract}
 
@@ -521,7 +517,7 @@ Timeline e pianificazione delle attività necessarie per:
 
 ### Definiti percorsi felici {#happy-paths-defined}
 
-Un percorso felice è uno scenario predefinito che non presenta condizioni eccezionali o di errore. È composta dalla sequenza di attività eseguite quando tutto va come previsto.
+Un percorso felice è uno scenario predefinito che non presenta condizioni eccezionali o di errore. È composto dalla sequenza di attività eseguite quando tutto va come previsto.
 
 ### Stime hardware {#hardware-estimates}
 
@@ -545,11 +541,11 @@ I dettagli di base su queste funzioni sono generalmente noti, pertanto questo do
 
 ### Progettazione di soluzioni di alto livello {#high-level-solution-design}
 
-Il progetto di soluzione di alto livello spiega l&#39;architettura che verrà utilizzata per lo sviluppo della soluzione. Il diagramma dell&#39;architettura fornisce una panoramica dell&#39;intero sistema, identificando i componenti principali che verranno sviluppati per il prodotto e le relative interfacce.
+Il progetto di soluzione di alto livello spiega l&#39;architettura utilizzata per lo sviluppo della soluzione. Il diagramma dell&#39;architettura fornisce una panoramica dell&#39;intero sistema, identificando i componenti principali sviluppati per il prodotto e le relative interfacce.
 
 ### Mappa di sistema di alto livello {#high-level-system-map}
 
-Questa mappa del sistema dovrebbe fornire un diagramma di livello molto elevato del sistema. Differisce dal contesto della soluzione in quanto è una mappa generalizzata di tutti i sistemi coinvolti, non ci sono interfacce in questo diagramma.
+Questa mappa del sistema dovrebbe fornire un diagramma di alto livello del sistema. Differisce dal contesto della soluzione in quanto è una mappa generalizzata di tutti i sistemi coinvolti, non ci sono interfacce in questo diagramma.
 
 ### Struttura dei contenuti storici {#historical-content-structure}
 
@@ -621,7 +617,7 @@ Implementazione dei flussi di lavoro progettati.
 
 ### Concetto di implementazione {#implementation-concept}
 
-Il concetto di implementazione fornisce i principi guida per l&#39;intera implementazione. Essa dovrebbe prendere in considerazione:
+Il concetto di implementazione fornisce i principi guida per l&#39;intera implementazione. Esso dovrebbe prendere in considerazione:
 
 * Operazioni
 * Manutenzione
@@ -630,7 +626,7 @@ Il concetto di implementazione fornisce i principi guida per l&#39;intera implem
 * Sicurezza
 * Scalabilità
 
-Questo concetto può anche delineare i framework, le librerie e altri artefatti utilizzati nella soluzione.
+Questo concetto delinea anche i framework, le librerie e altri artefatti utilizzati nella soluzione.
 
 ### Informa l’Adobe di supporto sulla pianificazione del lancio {#inform-adobe-support-about-the-go-live-schedule}
 
@@ -654,7 +650,7 @@ Processi chiari registrano tutti i problemi incontrati e tengono traccia delle a
 
 Un sistema di tracciamento, insieme ai processi richiesti, per registrare tutti i problemi incontrati e monitorare le attività in corso allo scopo di garantire che tutti i problemi siano risolti.
 
-Tutte le parti interessate al progetto dovrebbero avere accesso al fine di facilitare la trasparenza dello stato di avanzamento del progetto.
+Tutte le parti interessate al progetto dovrebbero avere accesso per facilitare la trasparenza dello stato di avanzamento del progetto.
 
 Alcuni esempi includono Atlassian JIRA e HP Quality Center.
 
@@ -679,13 +675,13 @@ Una descrizione degli strumenti che verranno utilizzati nell’implementazione; 
 
 ### Elenco di utenti che richiedono l’accesso al portale di supporto Adobe {#list-of-users-that-require-access-to-adobe-support-portal}
 
-Un elenco di tutti gli utenti e i ruoli che avranno bisogno di accedere al portale di supporto Adobe.
+Un elenco di tutti gli utenti e i ruoli che devono accedere al portale di supporto Adobe.
 
 L&#39;elenco è normalmente composto dall&#39;architetto della soluzione e/o dal personale IT del cliente.
 
 ### Analisi file di registro {#log-file-analysis}
 
-Un’analisi, insieme ai consigli risultanti, che definisce cosa deve essere registrato per monitorare la soluzione:
+Un’analisi, insieme ai consigli risultanti, che definisce ciò che deve essere registrato per monitorare la soluzione:
 
 * attività da registrare
 * livello di granularità
@@ -864,7 +860,7 @@ I risultati devono corrispondere ai KPI e alle aspettative definiti per le prest
 
 ### Concetto di test basati su persone {#persona-based-testing-concept}
 
-I test basati su Persona sono un metodo basato sui diversi utenti tipo descritti in Progettazioni esperienze. Inoltre, verifica gli account e i livelli di autorizzazione correlati.
+I test basati su persone sono un metodo basato su diversi utenti tipo descritti in Progettazioni esperienze. Inoltre, verifica gli account e i livelli di autorizzazione correlati.
 
 Questa funzione viene spesso utilizzata nei test di accettazione utente (UAT, User Acceptance Testing).
 
@@ -890,7 +886,7 @@ Verifica che l’ambiente di produzione sia pronto, con implementazioni automati
 
 ### Approvazione della produzione da parte delle parti interessate {#production-sign-off-from-business-stakeholders}
 
-Prima di passare al lancio nell’ambiente di produzione, è necessario concedere l’approvazione produzione (PSO). Questo è il risultato di una revisione della versione che entrerà in produzione, insieme a eventuali problemi noti. L’abbonamento è incluso nella pianificazione del lancio.
+Prima di eseguire il lancio nell’ambiente di produzione, è necessario concedere l’abbonamento alla produzione (PSO). Questo è il risultato di una revisione della versione che entrerà in produzione, insieme a eventuali problemi noti. L’abbonamento viene dato nell’ambito della pianificazione del lancio.
 
 ### Processo e criteri di approvazione produzione {#production-sign-off-process-and-policy}
 
@@ -904,7 +900,7 @@ Definisci il piano di comunicazione per le parti interessate e il team del proge
 
 Il [stime iniziali](#project-efforts-initial-estimates) sono stati ad alto livello e realizzati conformemente ai requisiti di alto livello per l&#39;attuazione.
 
-Questi sono ora rivisti, perfezionati e ampliati per fornire le stime finali. Le stime devono essere fornite da ciascun responsabile del progetto, compresi la gestione del progetto, la consulenza, l’architettura, il test e lo sviluppo.
+Questi vengono ora rivisti, perfezionati e ampliati per fornire le stime finali. Le stime devono essere fornite da ciascun responsabile del progetto, compresi la gestione del progetto, la consulenza, l’architettura, il test e lo sviluppo.
 
 Queste stime vengono utilizzate per le risorse e la definizione del budget.
 
@@ -944,7 +940,7 @@ Deve mirare a dimostrare la fattibilità della soluzione, verificare che possa s
 
 ### Regole di rimozione {#purge-rules}
 
-L’AEM gestisce più versioni di risorse e contenuti. Le regole di eliminazione sono progettate e configurate per rimuovere periodicamente le versioni precedenti al fine di mantenere lo stato e le dimensioni dell’archivio.
+L’AEM gestisce più versioni di risorse e contenuti. Le regole di eliminazione sono progettate e configurate per rimuovere periodicamente le versioni precedenti in modo da mantenere lo stato e le dimensioni dell’archivio.
 
 ### Formato e cadenza rapporto qualità {#quality-report-format-and-cadence}
 
@@ -975,7 +971,7 @@ Versione finale in esecuzione e attiva in produzione.
 
 ### Condizioni di contratto rilevanti {#relevant-contract-terms}
 
-È necessario evidenziare le condizioni contrattuali specifiche che sono rilevanti per l&#39;implementazione del progetto, ad esempio le tappe contrattuali, i periodi di fatturazione o i requisiti del personale.
+Evidenziare i termini contrattuali specifici rilevanti per l&#39;attuazione del progetto, ad esempio le tappe contrattuali, i periodi di fatturazione o i requisiti del personale.
 
 ### Cadenza di reporting {#reporting-cadence}
 
@@ -1001,9 +997,9 @@ Assicurati che tutti i ruoli richiesti per andare in diretta siano dotati di per
 
 ### Valutazione del rischio {#risk-assessment}
 
-La valutazione dei rischi viene eseguita dai reparti IT e/o di sicurezza del cliente.
+La valutazione dei rischi viene eseguita dal reparto IT del cliente, dal reparto di sicurezza o da entrambi.
 
-Valuta i rischi tecnici e commerciali del progetto. La valutazione è necessaria affinché la soluzione garantisca la conformità ai criteri di sicurezza.
+Valuta i rischi tecnici e commerciali del progetto. La valutazione è necessaria affinché la soluzione garantisca la conformità con i criteri di sicurezza.
 
 ### Piano di attenuazione dei rischi {#risk-mitigation-plan}
 
@@ -1020,13 +1016,13 @@ Esse mirano a indicare l&#39;efficienza della soluzione in termini economici def
 
 ### Concetto di ruoli e diritti {#roles-and-rights-concept}
 
-Precisazione dettagliata dei concetti relativi ai ruoli e ai diritti di accesso richiesti per la nuova domanda, compresa una descrizione dettagliata:
+Precisazione dettagliata dei concetti relativi ai ruoli e ai diritti di accesso richiesti per la nuova domanda, compresa una descrizione di alto livello di:
 
 * ruoli
 * gruppi
 * utenti
 * autorizzazioni
-* nonché gestione degli utenti e provisioning
+* gestione e provisioning degli utenti
 
 ### Il concetto di ruoli e diritti soddisfa le linee guida sulla sicurezza {#roles-and-rights-concept-meets-security-guidelines}
 
@@ -1051,7 +1047,7 @@ Queste linee guida definiscono come deve essere eseguita la codifica di sviluppo
 
 ### Elenco di controllo della sicurezza {#security-checklist}
 
-Elenco di controllo specifico del progetto relativo agli elementi, basato sul concetto di sicurezza e su eventuali criteri aggiuntivi necessari per garantire la conformità della soluzione.
+Elenco di controllo specifico per il progetto, basato sul concetto di sicurezza insieme a eventuali criteri aggiuntivi necessari per garantire la conformità della soluzione.
 
 Spesso questo è incluso anche come parte dei passaggi post-distribuzione nel runbook.
 
@@ -1061,7 +1057,7 @@ Definire e documentare i dettagli della configurazione di sicurezza richiesta pe
 
 ### Bozza del concetto di sicurezza {#security-concept-draft}
 
-Un profilo di alto livello che descrive la configurazione di sicurezza del:
+Uno schema di alto livello che copre la configurazione di sicurezza del:
 
 * applicazione
 * architettura
@@ -1095,11 +1091,11 @@ I test antifumo devono essere eseguiti su tutti i sistemi per garantire il corre
 
 ### Strategia dell&#39;architettura software {#software-architecture-strategy}
 
-La strategia di alto livello per l&#39;architettura del software, compresi servizi, servlet, framework e altre decisioni di implementazione.
+Strategia di alto livello per l&#39;architettura software, inclusi servizi, servlet, framework e altre decisioni di implementazione.
 
 ### Preparazione della commissione di esame della soluzione e set di cadenza delle riunioni {#solution-review-board-established-and-meeting-cadence-set}
 
-Il Solution Review Board è solitamente composto da rappresentanti dei clienti.
+Il Solution Review Board è composto da rappresentanti del cliente.
 
 Il consiglio di amministrazione tiene riunioni periodiche per esaminare su base continuativa i requisiti attualmente definiti e le relative specifiche. L’obiettivo è garantire l’allineamento con la definizione di successo e i criteri e fornire inoltre un contributo allo sviluppo dei requisiti.
 
@@ -1127,7 +1123,7 @@ Eventuali linee guida del cliente su come eseguire la specifica.
 
 ### Definizione e comunicazione del processo di revisione e approvazione delle specifiche {#specification-review-and-approval-process-defined-and-communicated}
 
-Dovrebbe essere messa in atto una chiara procedura per l&#39;approvazione delle specifiche da parte del cliente. Questo processo garantisce la chiarezza e la solidità dell&#39;ambito di applicazione dei requisiti.
+Dovrebbe essere istituita una chiara procedura per l’approvazione delle specifiche da parte del cliente. Questo processo garantisce la chiarezza e la solidità dell&#39;ambito di applicazione dei requisiti.
 
 ### Personale selezionato per la formazione di amministratore AEM {#staff-selected-for-aem-administrator-training}
 
@@ -1162,7 +1158,7 @@ Le relazioni sullo stato sono uno strumento chiave di comunicazione. Il formato 
 
 Il cliente, lo sponsor del progetto e il project manager o consulente devono specificare:
 
-* Che cosa definisce un risultato di successo del progetto.
+* Cosa definisce un risultato di successo del progetto?
 * I criteri specifici necessari per soddisfare tale definizione di successo.
 
 Questi vengono utilizzati per garantire il rispetto dei criteri di successo:
@@ -1172,7 +1168,7 @@ Questi vengono utilizzati per garantire il rispetto dei criteri di successo:
 
 ### Supporto nella convalida dei problemi segnalati {#support-in-validation-of-reported-issues}
 
-Una parte delle responsabilità del responsabile della qualità è garantire che siano disponibili risorse per supportare qualsiasi utente durante il test. Ad esempio, per aiutare l’utente durante il test, la segnalazione di problemi e la convalida dei problemi nell’ambiente di test.
+Parte delle responsabilità del responsabile della qualità è garantire che siano disponibili risorse a supporto di qualsiasi utente durante il test. Ad esempio, per aiutare l’utente durante il test, la segnalazione di problemi e la convalida dei problemi nell’ambiente di test.
 
 ### Processi di supporto e accesso al portale di supporto Adobe {#support-processes-and-access-to-adobe-support-portal}
 
@@ -1186,11 +1182,11 @@ Proposta iniziale e definizione dell’architettura per tutti gli ambienti della
 
 ### Documentazione sull’architettura di sistema {#system-architecture-documentation}
 
-Un documento che descrive l’architettura del sistema, incluse le interfacce, la posizione della rete e le integrazioni per tutti gli ambienti, oltre a ulteriori informazioni.
+Un documento che descrive l&#39;architettura del sistema, incluse le interfacce, la posizione di rete e le integrazioni per tutti gli ambienti, tra le altre informazioni.
 
 ### Concetto sulla sicurezza dell&#39;architettura di sistema {#system-architecture-security-concept}
 
-Descrizione dettagliata di come rendere l&#39;architettura di sistema conforme a qualsiasi criterio di sicurezza. Ciò può riguardare:
+Descrizione di alto livello di come rendere l&#39;architettura di sistema conforme a qualsiasi criterio di sicurezza. Ciò può riguardare:
 
 * firewall e regole firewall
 * aree di protezione
@@ -1200,7 +1196,7 @@ Descrizione dettagliata di come rendere l&#39;architettura di sistema conforme a
 
 ### Fattori di rischio del sistema identificati e verificati {#system-risk-factors-identified-and-verified}
 
-Tutti i fattori di rischio individuati nella valutazione del rischio (o in altre revisioni) sono identificati e valutati:
+Tutti i fattori di rischio individuati nella valutazione del rischio (o in altri riesami) sono identificati e valutati:
 
 * il livello di rischio implicito in ciascuno di essi
 * insieme allo sforzo stimato necessario per apportare eventuali modifiche all&#39;attuazione necessarie per affrontarle.
@@ -1243,7 +1239,7 @@ Le specifiche tecniche riguardano (tra l&#39;altro):
 
 ### Specifica modello {#template-specification}
 
-Specifiche dei modelli richiesti. Questi dovrebbero includere dettagli quali parsys, blueprint e mappatura dell’ereditarietà, tra gli altri.
+Specifiche dei modelli richiesti. Questi dovrebbero coprire dettagli tra cui parsys, blueprint e mappatura dell’ereditarietà.
 
 Le specifiche si basano sui requisiti aziendali e sui requisiti di esperienza.
 
@@ -1274,7 +1270,7 @@ Si noti che:
 
 ### Suite di test {#test-suite}
 
-Selezione della suite di automazione e degli strumenti. Questi verranno utilizzati per automatizzare i test, inclusi quelli per i casi d’uso.
+Selezione della suite di automazione e degli strumenti. Vengono utilizzati per automatizzare i test, inclusi quelli per i casi d’uso.
 
 ### Suite di strumenti di prova selezionata {#test-tooling-suite-selected}
 
@@ -1282,7 +1278,7 @@ Suite di automazione e strumenti selezionati per l’automazione del caso d’us
 
 ### Concetto di test {#testing-concept}
 
-Il concetto di test è lo schema di test di altissimo livello per il progetto, che include test di controllo qualità, UAT, prestazioni, sicurezza e integrazione.
+Il concetto di test è il profilo di alto livello dei test per il progetto, tra cui test di controllo qualità, UAT, prestazioni, sicurezza e integrazione.
 
 ### Piani di prova {#testing-plans}
 
@@ -1312,9 +1308,9 @@ Concetto per garantire la sicurezza di eventuali integrazioni di terze parti. De
 
 Assicurati che tutti i sistemi di terze parti siano disponibili, con la documentazione appropriata, per l’implementazione dell’integrazione.
 
-### Accesso a sistemi di terze parti abilitato {#third-party-systems-access-enabled}
+### Accesso ai sistemi di terze parti abilitato {#third-party-systems-access-enabled}
 
-Diritti di accesso richiesti concessi ai rispettivi ruoli utilizzati in combinazione con sistemi di terze parti.
+Diritti di accesso richiesti concessi ai rispettivi ruoli utilizzati con sistemi di terze parti.
 
 ### Concetto di testing di terze parti {#third-party-testing-concept}
 
@@ -1341,13 +1337,13 @@ Ciò dovrebbe definire i calendari dei progetti e le tappe contrattuali da utili
 
 ### Totale sforzi progetto {#total-project-efforts}
 
-Tutte le stime di sforzo, provenienti da ogni lead del progetto, devono essere consolidate, inclusi i costi generali, lo sviluppo, l&#39;ingegneria di sistema, gli sforzi di architettura e test.
+Tutte le stime di sforzo, provenienti da ogni lead del progetto, devono essere consolidate, inclusi i costi generali, lo sviluppo, l&#39;ingegneria di sistema, l&#39;architettura e i test.
 
 Se l&#39;accordo prevede un livello di sostegno, dovrebbero essere inclusi anche il sostegno e gli sforzi operativi.
 
 ### Materiale per la formazione {#training-materials}
 
-Materiale da utilizzare nelle sessioni di formazione. I materiali devono essere creati specificamente per la soluzione e progettati per essere utilizzati in combinazione con le Guide utente.
+Materiale da utilizzare nelle sessioni di formazione. I materiali devono essere creati specificamente per la soluzione e progettati per essere utilizzati con le Guide utente.
 
 ### Comprendere l&#39;ambito del progetto e le aspettative {#understands-scope-of-project-and-expectations}
 
@@ -1391,15 +1387,15 @@ Le Guide utente forniscono informazioni e assistenza agli utenti della soluzione
 
 ### Piano di budget convalidato {#validated-budget-plan}
 
-Il piano di bilancio deve essere rivisto e convalidato da tutte le parti interessate. Devono verificare dettagli quali fatturazione, importi e metodi/tempistiche del reporting di budget.
+Il piano di bilancio deve essere rivisto e convalidato da tutte le parti interessate. Devono controllare dettagli quali fatturazione, importi e metodi/tempistiche dei rapporti di budget.
 
 ### Risultati test white box {#white-box-test-results}
 
-Il test del white box è un metodo che verifica le strutture interne o il funzionamento di un&#39;applicazione, anziché la sua funzionalità. I test white box possono essere applicati a livello di unità, integrazione e sistema del processo di test del software.
+Il test del white box è un metodo che verifica le strutture interne o il funzionamento di un&#39;applicazione, anziché la sua funzionalità. I test white box possono essere applicati a livello di unità, integrazione e sistema del processo di test software.
 
 ### Specifiche del flusso di lavoro {#workflow-specifications}
 
-In base al concetto di flussi di lavoro, queste specifiche definiscono in dettaglio i passaggi che creeranno l’intero flusso di lavoro.
+In base al concetto di flussi di lavoro, queste specifiche definiscono in dettaglio i passaggi che creano l’intero flusso di lavoro.
 
 Le specifiche di ciascun flusso di lavoro devono includere (come minimo):
 
@@ -1413,5 +1409,5 @@ Le specifiche di ciascun flusso di lavoro devono includere (come minimo):
 
 I flussi di lavoro ti consentono di automatizzare le attività dell’AEM. Il concetto di flussi di lavoro illustra:
 
-* i processi che richiedono l&#39;automazione
+* processi che richiedono automazione
 * i servizi e i ruoli in AEM che saranno interessati

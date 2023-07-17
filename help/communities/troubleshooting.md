@@ -1,16 +1,14 @@
 ---
 title: Community risoluzione problemi
 description: Risoluzione dei problemi della community, inclusi i problemi noti
-uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -42,14 +40,14 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 Il problema è che la stringa di formato per com.day.cq.commons.date.RelativeTimeFormat è stata modificata tra 5.4 e 5.5 in modo tale che la &quot;a&quot; per &quot;fa&quot; non è più accettata.
 
-Pertanto, qualsiasi codice che utilizza l’API RelativeTimeFormat() deve essere modificato:
+Pertanto, qualsiasi codice che utilizza l’API RelativeTimeFormat() deve cambiare:
 
 * Da: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * A: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-L’errore varia in modalità di authoring e pubblicazione. Quando si scrive, il messaggio non viene visualizzato e gli argomenti del forum non vengono visualizzati. Al momento della pubblicazione, genera l’errore sulla pagina.
+L’errore varia in modalità di authoring e pubblicazione. Quando si scrive, l&#39;operazione non riesce e gli argomenti del forum non vengono visualizzati. Al momento della pubblicazione, genera l’errore sulla pagina.
 
-Consulta la [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API per ulteriori informazioni.
+Consulta la [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API per ulteriori informazioni.
 
 ## Preoccupazioni comuni {#common-concerns}
 
@@ -59,11 +57,11 @@ Durante l’avvio (non il primo, ma ogni volta dopo) nei registri può essere vi
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` è stato sostituito da `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Questo avviso può essere tranquillamente ignorato come `jknack.handlebars.Handlebars`, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene fornito con la propria utilità helper i18n. All’avvio, è sostituito da uno specifico AEM [helper i18n](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
+Questo avviso può essere tranquillamente ignorato come `jknack.handlebars.Handlebars`, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene fornito con la propria utilità helper i18n. All’avvio, viene sostituito con uno specifico per AEM [helper i18n](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
 
 ### Avviso nei registri: processOsgiEventQueue OakResourceListener {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-La pubblicazione di un certo numero di argomenti del forum di Social Communities può causare la creazione di enormi quantità di log di avvisi e informazioni da OakResourceListener processOsgiEventQueue.
+La pubblicazione di diversi argomenti del forum di Social Communities può causare l&#39;invio di enormi quantità di log di avvisi e informazioni da OakResourceListener processOsgiEventQueue.
 
 Questi avvisi possono essere tranquillamente ignorati.
 

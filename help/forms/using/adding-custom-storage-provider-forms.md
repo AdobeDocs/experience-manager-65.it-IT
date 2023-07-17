@@ -1,18 +1,14 @@
 ---
 title: Archiviazione personalizzata per il componente Bozze e invii
-seo-title: Custom storage for drafts and submissions component
 description: Scopri come personalizzare l’archiviazione dei dati utente per le bozze e gli invii.
-seo-description: See how to customize the storage of user data for drafts and submissions.
-uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -27,14 +23,14 @@ Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla b
 
 ## Prerequisiti  {#prerequisites}
 
-* Abilita [componenti del portale forms](/help/forms/using/enabling-forms-portal-components.md)
-* Creare un [pagina portale moduli](/help/forms/using/creating-form-portal-page.md)
-* Abilita [portale moduli adattivi per moduli](/help/forms/using/draft-submission-component.md)
+* Abilita [Componenti di Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Creare un [Pagina portale Forms](/help/forms/using/creating-form-portal-page.md)
+* Abilita [moduli adattivi per Forms Portal](/help/forms/using/draft-submission-component.md)
 * Scopri [dettagli di implementazione dell’archiviazione personalizzata](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Servizio dati bozza {#draft-data-service}
 
-Per personalizzare l’archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi del `DraftDataService` di rete. Nel codice di esempio seguente vengono descritti i metodi e gli argomenti.
+Per personalizzare l&#39;archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi del `DraftDataService` di rete. Nel codice di esempio seguente vengono descritti i metodi e gli argomenti.
 
 ```java
 /**
@@ -188,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-Il portale Forms utilizza il concetto di identificatore universalmente univoco (UUID) per generare un ID univoco per ogni bozza e modulo inviato. Puoi anche generare un ID univoco. È possibile implementare l&#39;interfaccia FPKeyGeneratorService, sostituirne i metodi e sviluppare una logica personalizzata per generare un ID univoco personalizzato per ogni bozza e modulo inviato. Inoltre, imposta il rango del servizio dell&#39;implementazione di generazione ID personalizzata su un valore superiore a 0. In questo modo si garantisce che venga utilizzata l’implementazione personalizzata invece di quella predefinita.
+Forms Portal utilizza il concetto di Universally Unique IDentifier (UUID) per generare un ID univoco per ogni bozza e modulo inviato. Puoi anche generare un ID univoco. È possibile implementare l&#39;interfaccia FPKeyGeneratorService, sostituirne i metodi e sviluppare una logica personalizzata per generare un ID univoco personalizzato per ogni bozza e modulo inviato. Inoltre, imposta il rango del servizio dell&#39;implementazione di generazione ID personalizzata su un valore superiore a 0. In questo modo si garantisce che venga utilizzata l’implementazione personalizzata invece di quella predefinita.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -207,7 +203,7 @@ Puoi utilizzare l’annotazione seguente per aumentare la classificazione del se
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Per utilizzare l’annotazione precedente, importa nel progetto quanto segue:
+Per utilizzare l’annotazione precedente, importa quanto segue nel progetto:
 
 ```java
 import org.apache.felix.scr.annotations.Properties;
