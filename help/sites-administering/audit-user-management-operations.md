@@ -1,31 +1,27 @@
 ---
-title: Come controllare le operazioni di gestione degli utenti in AEM
-seo-title: How to Audit User Management Operations in AEM
-description: Scopri come controllare le operazioni di gestione degli utenti in AEM.
-seo-description: Learn how to audit User Management Operations in AEM.
-uuid: 9d177afb-172c-4858-a678-254c97cfa472
+title: Controllare le operazioni di gestione degli utenti in Adobe Experience Manager
+description: Scopri come controllare le operazioni di gestione degli utenti in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 1%
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
-# Come controllare le operazioni di gestione degli utenti in AEM{#how-to-audit-user-management-operations-in-aem}
+# Controllare le operazioni di gestione degli utenti in Adobe Experience Manager (AEM) {#how-to-audit-user-management-operations-in-aem}
 
 ## Introduzione {#introduction}
 
-L’AEM ha introdotto la possibilità di registrare le modifiche delle autorizzazioni in modo che possano essere verificate in un secondo momento.
+AEM ha introdotto la possibilità di registrare le modifiche alle autorizzazioni in modo da poterle controllare in un secondo momento.
 
-Questo miglioramento consente di controllare le azioni CRUD (Create, Read, Update, Delete, Crea, Leggi, Aggiorna, Elimina) sulle autorizzazioni e le assegnazioni di gruppi di utenti. In particolare, registrerà:
+Questo miglioramento consente di controllare le azioni CRUD (Create, Read, Update, Delete, Crea, Leggi, Aggiorna, Elimina) sulle autorizzazioni e le assegnazioni di gruppi di utenti. In particolare, registra:
 
 * Creazione di un nuovo utente
 * Utente aggiunto a un gruppo
@@ -35,10 +31,10 @@ Per impostazione predefinita, le voci vengono scritte nel `error.log` file. Per 
 
 ## Reindirizzamento dell&#39;output a un file di log separato {#redirecting-the-output-to-a-separate-log-file}
 
-Per reindirizzare l’output di registrazione a un file di registro separato, è necessario creare un nuovo **Logger di registrazione Sling di Apache** configurazione. Utilizzeremo `useraudit.log` come nome del file separato nell’esempio seguente.
+Per reindirizzare l&#39;output di registrazione a un file di registro separato, creare un **Logger di registrazione Sling di Apache** configurazione. Utilizziamo `useraudit.log` come nome del file separato nell’esempio seguente.
 
 1. Passa alla console Web navigando in *https://serveraddress:serverport/system/console/configMgr*
-1. Cerca **Configurazione logger registrazione Sling Apache**. Premere quindi &quot;+&quot; sul lato destro della voce per creare una nuova configurazione di fabbrica.
+1. Cerca **Configurazione logger registrazione Sling Apache**. Premere quindi &quot;+&quot; sul lato destro della voce per creare una configurazione di fabbrica.
 1. Crea la seguente configurazione:
 
    * **Livello registro:** Informazioni
@@ -46,9 +42,9 @@ Per reindirizzare l’output di registrazione a un file di registro separato, è
    * **Pattern messaggio:** livello predefinito
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Per inserire entrambi i logger nel **Logger** , è necessario immettere il nome del primo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
+   Per immettere entrambi i logger nel **Logger** , è necessario immettere il nome del primo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
 
-## Output di esempio {#example-output}
+## Esempio di output {#example-output}
 
 Se configurato correttamente, l’output dovrebbe essere simile al seguente:
 

@@ -1,16 +1,14 @@
 ---
 title: Adobe Experience Manager Mobili On-Demand
-description: L’avvio di una nuova esperienza di app AEM Mobile richiede una coerenza di ruoli prima di essere pronta per la modifica dei contenuti. Segui questa pagina per iniziare a utilizzare i servizi mobili on-demand dell’AEM.
-uuid: 175c609d-3cb8-4a1b-bfea-278df272e500
+description: L’avvio di una nuova esperienza di app mobile Adobe Experience Manager (AEM) richiede una coerenza di ruoli prima di essere pronta per la modifica dei contenuti. Segui questa pagina per iniziare a utilizzare i servizi mobili on-demand dell’AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
-discoiquuid: dc6891cd-19cc-4dff-8bda-a41ed8af8bfb
 exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Se non utilizzi AEM come origine per la gestione dei contenuti, consulta [Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Se non utilizzi Adobe Experience Manager (AEM) come origine per la gestione dei contenuti, consulta [Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 AEM fornisce diversi strumenti che consentono di integrare i contenuti nelle applicazioni mobili.
 
@@ -45,7 +43,7 @@ L’app Verifica preliminare AEM può essere considerata un ambiente di test per
 
 AEM Mobile è solo uno dei pilastri che compongono l&#39;intera piattaforma AEM.
 
-L’avvio di una nuova esperienza di app AEM Mobile richiede una coerenza di ruoli prima di essere pronta per la modifica dei contenuti. I seguenti ruoli forniscono un punto di partenza per la creazione di una nuova applicazione AEM Mobile:
+L’avvio di una nuova esperienza di app AEM Mobile richiede una coerenza di ruoli prima di essere pronta per la modifica dei contenuti. I seguenti ruoli forniscono un punto di partenza per la creazione di un’applicazione AEM Mobile:
 
 * **Amministratore**
 * **Sviluppatore**
@@ -57,11 +55,11 @@ L’avvio di una nuova esperienza di app AEM Mobile richiede una coerenza di ruo
 
 ### Informazioni sul dashboard dell’applicazione AEM Mobile {#understanding-the-aem-mobile-application-dashboard}
 
-Prima di comprendere i ruoli e le responsabilità, l’utente deve avere una conoscenza approfondita di **Centro controllo AEM Mobile** o **Dashboard applicazione**. Clic [qui](/help/mobile/mobile-apps-ondemand-application-dashboard.md) per una comprensione approfondita.
+Prima di comprendere i ruoli e le responsabilità, l’utente deve conoscere a fondo **Centro controllo AEM Mobile** o **Dashboard applicazione**. Clic [qui](/help/mobile/mobile-apps-ondemand-application-dashboard.md) per una comprensione approfondita.
 
 ### Amministratore AEM {#aem-administrator}
 
-Un ***Amministratore AEM*** è responsabile dell’aggiunta di una nuova applicazione al catalogo AEM Mobile, sia tramite la creazione guidata di una nuova app, sia tramite l’importazione di un’applicazione esistente. Amministratori AEM che creano una nuova app utilizzando AEM Mobile *creazione guidata* in genere, seleziona uno dei modelli di app desiderati dai nostri esempi di riferimento predefiniti o (nella maggior parte dei casi) da un modello di app personalizzato creato da *Sviluppatori AEM.*
+Un ***Amministratore AEM*** è responsabile dell’aggiunta di un’applicazione al catalogo AEM Mobile, tramite la creazione guidata di un’app o l’importazione di un’applicazione esistente. Amministratori AEM che creano un’app utilizzando AEM Mobile *creazione guidata* in genere, seleziona uno dei modelli di app desiderati dagli esempi di riferimento predefiniti di Adobe o (in genere) da un modello di app personalizzato creato da *Sviluppatori AEM.*
 
 Un amministratore AEM è responsabile delle seguenti attività durante la creazione di un’app tramite AEM Mobile On-demand Services:
 
@@ -74,7 +72,7 @@ Per iniziare a utilizzare i ruoli e le responsabilità di un amministratore, con
 
 ## Sviluppatore AEM {#aem-developer}
 
-Un **Sviluppatore AEM** estende e crea modelli web e componenti personalizzati per consentire a *AEM Author *di creare esperienze mobili belle e coinvolgenti. Questi modelli e componenti non sono ottimizzati solo per il mondo delle app mobili, ma comunicano sia con il dispositivo che con il server AEM (qualsiasi server remoto) agli endpoint del servizio omni-channel. L’editor di contenuti integrato AEM viene utilizzato da *Autori AEM* per creare esperienze avanzate e pertinenti all’interno dell’app, inclusa l’integrazione con il resto di Adobe Marketing Cloud.
+Un **Sviluppatore AEM** estende e crea modelli web e componenti personalizzati per consentire a *AEM Author *di creare esperienze mobili belle e coinvolgenti. Questi modelli e componenti non sono ottimizzati solo per il mondo delle app mobili, ma comunicano sia con il dispositivo che con il server AEM (qualsiasi server remoto) agli endpoint del servizio omni-channel. L’editor di contenuti integrato AEM viene utilizzato da *Autori AEM* creare esperienze avanzate e pertinenti all’interno dell’app, inclusa l’integrazione con il resto di Adobe Experience Cloud.
 
 Uno sviluppatore AEM è responsabile delle seguenti attività durante la creazione di un’app tramite AEM Mobile On-demand Services:
 
@@ -91,7 +89,7 @@ Per iniziare a utilizzare i ruoli e le responsabilità dello sviluppatore, consu
 
 ## Autore AEM {#aem-author}
 
-Un ***Autore AEM* (o *Addetto marketing*)**utilizza modelli e componenti personalizzati sviluppati o pronti all’uso per aggiungere e modificare pagine, trascinare e rilasciare componenti e aggiungere contenuti multimediali di tutti i tipi da DAM, incluse immagini, video e frammenti di testo (frammenti di contenuto). L’editor di contenuti integrato AEM viene quindi utilizzato da *Autori AEM* per creare esperienze avanzate e pertinenti all’interno dell’app, inclusa l’integrazione con il resto di Adobe Marketing Cloud.
+Un ***Autore AEM* (o *Addetto marketing*)**utilizza modelli e componenti personalizzati sviluppati o pronti all’uso per aggiungere e modificare pagine, trascinare e rilasciare componenti e aggiungere contenuti multimediali di tutti i tipi da DAM, incluse immagini, video e frammenti di testo (frammenti di contenuto). L’editor di contenuti integrato AEM viene quindi utilizzato da *Autori AEM* creare esperienze avanzate e pertinenti all’interno dell’app, inclusa l’integrazione con il resto di Adobe Experience Cloud.
 
 Un autore AEM deve comprendere i seguenti argomenti durante la creazione di un’app tramite AEM Mobile On-demand Services:
 

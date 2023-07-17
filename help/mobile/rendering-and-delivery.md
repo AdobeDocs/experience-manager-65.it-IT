@@ -1,17 +1,13 @@
 ---
 title: Rendering e consegna
-seo-title: Rendering and Delivery
 description: Rendering e consegna
-seo-description: null
-uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '580'
 ht-degree: 7%
 
 ---
@@ -22,11 +18,11 @@ ht-degree: 7%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Il contenuto dell’AEM può essere facilmente reso tramite [Servlet Sling predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
+Il contenuto di Adobe Experience Manager (AEM) può essere facilmente renderizzato tramite [Servlet Sling predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
 
 In genere, questi rendering predefiniti percorrono l’archivio e restituiscono il contenuto così com’è.
 
-L’AEM, tramite Sling, supporta anche lo sviluppo e la distribuzione di renderer sling personalizzati per assumere il controllo completo dello schema e del contenuto renderizzati.
+AEM, tramite Sling, supporta anche lo sviluppo e la distribuzione di renderer sling personalizzati per assumere il controllo completo dello schema e del contenuto renderizzati.
 
 I rendering predefiniti di Content Services colmano il gap tra i predefiniti di Sling e lo sviluppo personalizzato, consentendo la personalizzazione e il controllo di molti aspetti dei contenuti renderizzati senza sviluppo.
 
@@ -120,14 +116,14 @@ La tabella seguente mostra le proprietà delle configurazioni di esportazione:
   </tr>
   <tr>
    <td>excludeChildren</td>
-   <td>Stringa[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>non escludere nulla</td>
    <td>nomi figlio</td>
    <td>includi solo gli elementi figlio specificati dall’esportazione JSON, escludi altro</td>
   </tr>
   <tr>
    <td>renameProperties</td>
-   <td>Stringa[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>non rinominare nulla</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>rinominare le proprietà utilizzando le sostituzioni</td>
@@ -173,7 +169,7 @@ Content Services include due configurazioni di esportazione:
 
 #### Configurazione di esportazione predefinita {#default-export-configuration}
 
-La configurazione di esportazione predefinita di Content Services verrà applicata se è specificata una configurazione nell&#39;URI richiesto.
+La configurazione di esportazione predefinita di Content Services viene applicata se è specificata una configurazione nell&#39;URI richiesto.
 
 &lt;resource>.caas[.&lt;depth-int>].json
 

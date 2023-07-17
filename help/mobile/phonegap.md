@@ -1,13 +1,11 @@
 ---
-title: Authoring per Adobe PhoneGap Enterprise nell’AEM
+title: Authoring per Adobe PhoneGap Enterprise in Adobe Experience Manager
 description: PhoneGap
-uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 4%
@@ -22,7 +20,7 @@ ht-degree: 4%
 
 Adobe Experience Manager (AEM) Mobile è solo un pilastro che costituisce l&#39;intera piattaforma AEM.
 
-L’avvio di una nuova esperienza di app AEM Mobile richiede una coerenza di ruoli prima di essere pronta per la modifica dei contenuti. I seguenti ruoli forniscono un punto di partenza per la creazione di una nuova applicazione AEM Mobile:
+L’avvio di una nuova esperienza di app AEM Mobile richiede una coerenza di ruoli prima di essere pronta per la modifica dei contenuti. I seguenti ruoli forniscono un punto di partenza per la creazione di un’applicazione AEM Mobile:
 
 * **Amministratore**
 * **Sviluppatore**
@@ -39,14 +37,14 @@ Consulta le seguenti risorse per iniziare:
 * [Gestisci sezione app](/help/mobile/phonegap-app-details-tile.md)
 * [Modifica dei metadati dell’app](/help/mobile/phonegap-editmetadata.md)
 * [Definizioni delle app](/help/mobile/phonegap-app-definitions.md)
-* [Creazione di una nuova app AEM Mobile tramite la procedura guidata](/help/mobile/phonegap-create-new-app.md)
+* [Creazione di un’app AEM Mobile tramite la procedura guidata](/help/mobile/phonegap-create-new-app.md)
 * [Importa un&#39;app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
 Per saperne di più **Content Services**, vedi [Panoramica di Content Services](/help/mobile/develop-content-as-a-service.md) per iniziare.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Per informazioni sui ruoli e le responsabilità di amministratore e sviluppatore, consulta le risorse seguenti:
+Per informazioni sui ruoli e sulle responsabilità di un amministratore e di uno sviluppatore, consulta le risorse seguenti:
 
 * [Sviluppo per Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
 * [Amministrazione di contenuti per Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)

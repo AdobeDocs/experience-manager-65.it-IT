@@ -1,18 +1,14 @@
 ---
 title: Creazione configurazione esportazione risorse condivise
-seo-title: Creating Shared Resources Export Configuration
 description: Segui questa pagina per scoprire come esportare risorse condivise da Adobe Experience Manager (AEM) per caricarle in AEM Mobile.
-seo-description: Follow this page to learn about exporting shared resources from Adobe Experience Manager (AEM) for upload to AEM Mobile.
-uuid: 99b8ff94-8135-4643-a15b-aa6fb91f5401
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 1edf6c76-ccb1-40b6-bdf6-924f1461cd28
 exl-id: 576b4567-c7b6-4196-84e7-47e980637540
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '299'
 ht-degree: 1%
 
 ---
@@ -27,15 +23,15 @@ ht-degree: 1%
 >
 >**Prerequisito**:
 >
->Prima di scoprire come creare e modificare le risorse condivise, consulta [Sincronizzazione contenuti](/help/mobile/mobile-ondemand-contentsync.md) per comprendere i concetti di base.
+>Prima di scoprire come creare e modificare risorse condivise, consulta [Sincronizzazione contenuti](/help/mobile/mobile-ondemand-contentsync.md) per comprendere i concetti di base.
 
-Gli utenti di AEM Mobile utilizzano Sincronizzazione contenuti per esportare contenuti live in contenuti statici da utilizzare nelle app mobili. Questa esportazione si verifica quando i contenuti vengono caricati in Mobile On-Demand Services da AEM Mobile.
+Gli utenti di dispositivi mobili Adobe Experience Manager (AEM) utilizzano la sincronizzazione dei contenuti per esportare contenuti live in contenuti statici da utilizzare nelle app mobili. Questa esportazione si verifica quando i contenuti vengono caricati in Mobile On-Demand Services da AEM Mobile.
 
 La proprietà ***dps-exportTemplate*** indicato nella tabella precedente, definisce il percorso delle configurazioni di esportazione dell’app. Impostare questa proprietà per creare e modificare le risorse condivise.
 
-Le risorse seguenti descrivono l’esportazione di risorse condivise da Adobe Experience Manager (AEM) per il caricamento in AEM Mobile.
+Le risorse seguenti descrivono l’esportazione di risorse condivise da AEM per il caricamento in AEM Mobile.
 
-Le risorse HTML condivise consentono agli articoli di condividere risorse HTML che altrimenti dovrebbero essere duplicate per tutti gli articoli e che possono includere icone, font, JavaScript e CSS.
+Le risorse HTML condivise consentono agli articoli di condividere risorse HTML che altrimenti verrebbero duplicate per tutti gli articoli e che possono includere icone, font, JavaScript e CSS.
 
 La configurazione di Sincronizzazione contenuti trovata in **&lt;dps-exporttemplate>/dps-HTMLResources>** deve essere configurato per esportare tutto il contenuto di un articolo necessario per il rendering statico della proprietà sul dispositivo.
 
@@ -47,7 +43,6 @@ La configurazione di Sincronizzazione contenuti trovata in **&lt;dps-exporttempl
 >* esecuzione dell’istanza AEM
 >* nessun contesto personalizzato configurato o una porta diversa
 >
-
 
 Per visualizzare un esempio di risorsa condivisa, consulta i passaggi seguenti:
 

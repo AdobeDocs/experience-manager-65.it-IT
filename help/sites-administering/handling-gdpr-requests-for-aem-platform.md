@@ -1,20 +1,16 @@
 ---
-title: Gestione delle richieste RGPD per la Fondazione AEM
-seo-title: Handling GDPR Requests for the AEM Foundation
-description: Gestione delle richieste RGPD per la Fondazione AEM
-seo-description: null
-uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
+title: Gestione delle richieste RGPD per Adobe Experience Manager Foundation
+description: Gestione delle richieste RGPD per Adobe Experience Manager Foundation
 contentOwner: sarchiz
-discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 55%
+source-wordcount: '436'
+ht-degree: 43%
 
 ---
 
-# Gestione delle richieste RGPD per la Fondazione AEM{#handling-gdpr-requests-for-the-aem-foundation}
+# Gestione delle richieste RGPD per Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
@@ -22,7 +18,7 @@ ht-degree: 55%
 
 ## Supporto per il RGPD di AEM Foundation {#aem-foundation-gdpr-support}
 
-A livello di AEM Foundation, i dati personali memorizzati sono il profilo utente. Pertanto, le informazioni contenute in questo articolo riguardano principalmente come accedere ed eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso ed eliminazione relative al RGPD.
+A livello di AEM Foundation, i dati personali memorizzati sono il profilo utente. Pertanto, le informazioni contenute in questo articolo riguardano principalmente come accedere ed eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso al RGPD e di cancellazione.
 
 ## Accesso a un profilo utente {#accessing-a-user-profile}
 
@@ -42,7 +38,7 @@ A livello di AEM Foundation, i dati personali memorizzati sono il profilo utente
 
 ### API HTTP {#http-api}
 
-Come accennato, Adobe fornisce API per l’accesso ai dati utente, al fine di facilitare l’automazione. Esistono diversi tipi di API che puoi utilizzare:
+Come accennato, Adobe fornisce API per accedere ai dati utente, per facilitare l’automazione. Esistono diversi tipi di API che puoi utilizzare:
 
 **API UserProperties**
 
@@ -86,7 +82,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   L’interfaccia utente indica quindi che l’utente è stato disattivato togliendo il grigio e aggiungendo un blocco alla scheda del profilo:
+   L’interfaccia utente indica che l’utente è disattivato togliendo il grigio e aggiungendo un blocco alla scheda del profilo:
 
    ![disableduser](assets/disableduser.png)
 
@@ -109,7 +105,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### API HTTP {#http-api-1}
 
-Le procedure seguenti utilizzano lo `curl` strumento della riga di comando per illustrare come disabilitare l’utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
+Le procedure seguenti utilizzano `curl` strumento da riga di comando per illustrare come disabilitare l&#39;utente con **[!UICONTROL caverna]** `userId` ed eliminare i profili di `cavery` disponibili nel percorso predefinito.
 
 * *Individuazione della home utente*
 

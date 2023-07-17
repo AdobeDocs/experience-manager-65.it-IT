@@ -1,24 +1,20 @@
 ---
-title: Utenti di servizi in AEM
-seo-title: Service Users in AEM
-description: Scopri gli utenti del servizio in AEM.
-seo-description: Learn about Service Users in AEM.
-uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
+title: Utenti del servizio in Adobe Experience Manager
+description: Scopri gli utenti del servizio in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
 
-# Utenti di servizi in AEM{#service-users-in-aem}
+# Utenti del servizio in Adobe Experience Manager (AEM) {#service-users-in-aem}
 
 ## Panoramica {#overview}
 
@@ -66,7 +62,7 @@ Inoltre, assicurati che tutte le nuove funzioni sviluppate siano conformi ai seg
 
 * **Rispetta le impostazioni di privacy**
 
-   * Nel caso di profili privati, un esempio è quello di non esporre l’immagine del profilo, l’e-mail o il nome completo trovati sul profilo privato `/profile` nodo.
+   * Se sono presenti profili privati, ad esempio, potrebbe essere utile non esporre l’immagine del profilo, l’e-mail o il nome completo trovati nel profilo privato `/profile` nodo.
 
 ## Controllo accesso rigoroso {#strict-access-control}
 
@@ -88,7 +84,7 @@ Se quanto sopra non va a buon fine, Sling 7 offre un servizio di mappatura degli
 * Consentono di mappare i servizi agli utenti
 * Consentono di definire gli utenti dei servizi secondari
 * Il punto di configurazione centrale è: `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
-* `service-id` = `service-name` [ &quot;:&quot; nome-servizio-secondario ] 
+* `service-id` = `service-name` [&quot;:&quot; nome-servizio-secondario]
 
 * `service-id` è mappato a un risolutore risorse e/o a un ID utente dell’archivio JCR per l’autenticazione
 * `service-name` è il nome simbolico del bundle che fornisce il servizio
@@ -97,28 +93,28 @@ Se quanto sopra non va a buon fine, Sling 7 offre un servizio di mappatura degli
 
 ### Sostituzione della sessione di amministrazione con un utente del servizio {#replacing-the-admin-session-with-a-service-user}
 
-Un utente del servizio è un utente JCR senza password impostata e con un set minimo di privilegi necessari per eseguire un’attività specifica. Se non viene impostata alcuna password, non sarà possibile accedere con un utente del servizio.
+Un utente del servizio è un utente JCR senza password impostata e con un set minimo di privilegi necessari per eseguire un’attività specifica. Se non viene impostata alcuna password, non sarà possibile effettuare l&#39;accesso con un utente del servizio.
 
-Un modo per rendere obsoleta una sessione amministrativa consiste nel sostituirla con sessioni utente di servizio. Se necessario, può anche essere sostituito da più utenti di servizi secondari.
+Un modo per rendere obsoleta una sessione amministrativa consiste nel sostituirla con sessioni utente di servizio. Se necessario, può anche essere sostituito da più utenti del servizio secondario.
 
 Per sostituire la sessione di amministrazione con un utente del servizio, è necessario effettuare le seguenti operazioni:
 
 1. Identifica le autorizzazioni necessarie per il servizio, tenendo presente il principio delle autorizzazioni minime.
-1. Controlla se è già disponibile un utente con esattamente la configurazione delle autorizzazioni necessaria. Crea un nuovo utente del servizio di sistema se nessun utente esistente soddisfa le tue esigenze. Per creare un nuovo utente di servizio è necessario RTC. A volte, ha senso creare più utenti di servizi secondari (ad esempio, uno per la scrittura e uno per la lettura) per suddividere ulteriormente l’accesso.
-1. Imposta e verifica le ACE per l&#39;utente.
+1. Controlla se è già disponibile un utente con esattamente la configurazione delle autorizzazioni necessaria. Crea un utente del servizio di sistema se nessun utente esistente soddisfa le tue esigenze. RTC è necessario per creare un utente di servizio. A volte, ha senso creare più utenti di servizi secondari (ad esempio, uno per la scrittura e uno per la lettura) per suddividere ulteriormente l’accesso.
+1. Configurare e testare le ACE per l&#39;utente.
 1. Aggiungi un `service-user` mappatura per il servizio e per `user/sub-users`
 
 1. Rendi la funzione sling dell’utente del servizio disponibile per il bundle: aggiorna alla versione più recente di `org.apache.sling.api`.
 
 1. Sostituisci il `admin-session` nel codice con `loginService` o `getServiceResourceResolver` API.
 
-## Creazione di un nuovo utente del servizio {#creating-a-new-service-user}
+## Creazione di un utente del servizio {#creating-a-new-service-user}
 
 Dopo aver verificato che nessun utente nell’elenco degli utenti del servizio AEM è applicabile al tuo caso d’uso e che i corrispondenti problemi RTC sono stati approvati, puoi procedere e aggiungere il nuovo utente al contenuto predefinito.
 
 L’approccio consigliato consiste nel creare un utente del servizio che possa utilizzare Esplora archivio all’indirizzo *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 
-L’obiettivo è ottenere un `jcr:uuid` obbligatoria per creare l’utente tramite un’installazione del pacchetto di contenuti.
+L’obiettivo è ottenere un `jcr:uuid` che è obbligatoria per creare l’utente tramite un’installazione del pacchetto di contenuti.
 
 Per creare utenti del servizio, segui questi passaggi:
 
@@ -149,15 +145,15 @@ Quando aggiungi il file .content.xml corrispondente al contenuto del bundle, ass
 
 ## Aggiunta di una modifica alla configurazione ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti, è necessario creare una configurazione di fabbrica per ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` servizio. Per mantenere questa configurazione modulare, è possibile fornire tali configurazioni utilizzando [Meccanismo di correzione Sling](https://issues.apache.org/jira/browse/SLING-3578). Il modo consigliato per installare tali configurazioni con il bundle è utilizzare [Caricamento iniziale del contenuto Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti, creare una configurazione di fabbrica per ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` servizio. Per mantenere modulare questa configurazione, è possibile fornire utilizzando [Meccanismo di correzione Sling](https://issues.apache.org/jira/browse/SLING-3578). Il modo consigliato per installare tali configurazioni con il bundle è utilizzare [Caricamento iniziale del contenuto Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Crea una sottocartella SLING-INF/content sotto la cartella src/main/resources del bundle
-1. In questa cartella crea un file denominato org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml con il contenuto della configurazione di fabbrica (incluse tutte le mappature utente dei servizi secondari). Esempio:
+1. In questa cartella, crea un file denominato org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml con il contenuto della configurazione di fabbrica (incluse tutte le mappature utente dei servizi secondari). Esempio:
 
 1. Creare un `SLING-INF/content` cartella sotto il `src/main/resources` cartella del bundle;
 1. Crea un file in questa cartella `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` con il contenuto della configurazione di fabbrica, incluse tutte le mappature utente dei servizi secondari.
 
-   A scopo illustrativo, prendi un file denominato `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`:
+   A scopo illustrativo, prendere il file denominato `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -184,7 +180,7 @@ Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti,
    </Sling-Initial-Content>
    ```
 
-1. Installa il bundle e assicurati che la configurazione di fabbrica sia stata installata. Per farlo, segui questi passaggi:
+1. Installa il bundle e assicurati che la configurazione di fabbrica sia installata. Per farlo, segui questi passaggi:
 
    * Vai alla console web all’indirizzo *https://serverhost:serveraddress/system/console/configMgr*
    * Cerca **Modifica del servizio User Mapper di Apache Sling**
@@ -195,7 +191,7 @@ Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti,
 Chiamate a `loginAdministrative()` vengono spesso visualizzate insieme alle sessioni condivise. Queste sessioni vengono acquisite al momento dell’attivazione del servizio e vengono disconnesse solo dopo che il servizio è stato arrestato. Anche se si tratta di una pratica comune, ciò comporta due problemi:
 
 * **Sicurezza:** Tali sessioni di amministrazione vengono utilizzate per memorizzare nella cache e restituire risorse o altri oggetti associati alla sessione condivisa. Più avanti nello stack di chiamate questi oggetti potrebbero essere adattati a sessioni o risolutori di risorse con privilegi elevati e spesso non è chiaro al chiamante che si tratta di una sessione di amministrazione con cui stanno operando.
-* **Prestazioni:** Nelle sessioni condivise Oak possono verificarsi problemi di prestazioni e al momento non è consigliabile utilizzarli.
+* **Prestazioni:** In Oak, le sessioni condivise possono causare problemi di prestazioni e non è consigliabile utilizzarle.
 
 La soluzione più ovvia per il rischio di sicurezza è semplicemente sostituire il `loginAdministrative()` chiama con un `loginService()` uno a un utente con privilegi limitati. Tuttavia, questo non avrà alcun impatto sul potenziale deterioramento delle prestazioni. Una possibilità per mitigare questo consiste nel racchiudere tutte le informazioni richieste in un oggetto che non ha alcuna associazione con la sessione. Quindi, crea (o elimina) la sessione su richiesta.
 
@@ -214,7 +210,7 @@ Il primo metodo è quello preferito.
 
 ## Elaborazione di eventi, preprocessori di replica e processi {#processing-events-replication-preprocessors-and-jobs}
 
-Durante l’elaborazione di eventi o processi e, in alcuni casi, di flussi di lavoro, la sessione corrispondente che ha attivato l’evento viene generalmente persa. Questo porta i gestori di eventi e gli elaboratori di processi a utilizzare spesso sessioni amministrative per svolgere il proprio lavoro. Esistono diversi approcci possibili per risolvere questo problema, ciascuno con i suoi vantaggi e svantaggi:
+Durante l’elaborazione di eventi o processi e talvolta di flussi di lavoro, la sessione corrispondente che ha attivato l’evento viene persa. Questo porta i gestori di eventi e gli elaboratori di processi a utilizzare spesso sessioni amministrative per svolgere il proprio lavoro. Esistono diversi approcci possibili per risolvere questo problema, ciascuno con i suoi vantaggi e svantaggi:
 
 1. Passa il `user-id` nel payload dell’evento e utilizza la rappresentazione.
 
@@ -226,7 +222,7 @@ Durante l’elaborazione di eventi o processi e, in alcuni casi, di flussi di la
 
    **Vantaggi:** Coerente con il progetto corrente. Richiede modifiche minime.
 
-   **Svantaggi:** Ha bisogno di utenti di servizi molto potenti per essere flessibile, il che può facilmente portare a escalation di privilegi. Evita il modello di protezione.
+   **Svantaggi:** Necessita di utenti di servizi potenti per essere flessibili, il che può facilmente portare a escalation di privilegi. Evita il modello di protezione.
 
 1. Passa una serializzazione del `Subject` nel payload dell’evento e crea un `ResourceResolver` in base a tale argomento. Un esempio potrebbe essere l’utilizzo di JAAS `doAsPrivileged` nel `ResourceResolverFactory`.
 
@@ -234,13 +230,13 @@ Durante l’elaborazione di eventi o processi e, in alcuni casi, di flussi di la
 
    **Svantaggi:** Necessita del refactoring. Anche il fatto che il codice pertinente in materia di sicurezza sia trasparente per il consumatore dell’evento potrebbe causare problemi.
 
-Il terzo approccio è attualmente la tecnica di elaborazione preferita.
+Il terzo approccio è la tecnica di elaborazione preferita.
 
 ## Processi flusso di lavoro {#workflow-processes}
 
-All’interno delle implementazioni dei processi di flusso di lavoro, la sessione utente corrispondente che ha attivato il flusso di lavoro in genere viene persa. Questo porta a processi di flusso di lavoro che spesso utilizzano sessioni amministrative per eseguire il proprio lavoro.
+All’interno delle implementazioni dei processi di flusso di lavoro, viene persa la sessione utente corrispondente che ha attivato il flusso di lavoro. Questo porta a processi di flusso di lavoro che spesso utilizzano sessioni amministrative per eseguire il proprio lavoro.
 
-Per risolvere questi problemi, si consiglia di adottare gli stessi approcci indicati in [Elaborazione di eventi, preprocessori di replica e processi](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) essere utilizzati.
+Per risolvere questi problemi, si consiglia di utilizzare gli stessi approcci indicati in [Elaborazione di eventi, preprocessori di replica e processi](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) essere utilizzati.
 
 ## Processori Sling POST e pagine eliminate {#sling-post-processors-and-deleted-pages}
 

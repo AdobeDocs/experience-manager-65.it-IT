@@ -1,16 +1,14 @@
 ---
 title: Introduzione ai servizi Adobe Experience Manager Mobile On-Demand
-description: Introduzione all’amministrazione dell’app per servizi mobili on-demand dell’AEM. Fornisce una panoramica dei ruoli e delle responsabilità di un amministratore AEM per i servizi on demand.
-uuid: fd99c032-287a-489b-9690-b18980c55c29
+description: Introduzione all’amministrazione dell’app per servizi mobili on-demand di Adobe Experience Manager (AEM). Fornisce una panoramica dei ruoli e delle responsabilità di un amministratore AEM per i servizi on demand.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 content-type: reference
 topic-tags: administering-on-demand-services-app
-discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: ff7e37f24990a94510331a33cb05b7b44b3bfe85
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Se non utilizzi AEM come origine per la gestione dei contenuti, consulta [Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Se non utilizzi Adobe Experience Manager (AEM) come origine per la gestione dei contenuti, consulta [Guida di AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## Amministratore AEM {#aem-administrator}
 
@@ -33,7 +31,7 @@ ht-degree: 2%
 >
 >Prima di iniziare a configurare l’ambiente per AEM Mobile On-demand Services, consulta [AEM Mobile Application Dashboard o Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Un ***Amministratore AEM*** è responsabile dell’aggiunta di una nuova applicazione al catalogo AEM Mobile, sia tramite la creazione guidata di una nuova app, sia tramite l’importazione di un’applicazione esistente. Amministratori AEM che creano una nuova app utilizzando AEM Mobile *creazione guidata* in genere, seleziona uno dei modelli di app desiderati dai nostri esempi di riferimento predefiniti o (nella maggior parte dei casi) da un modello di app personalizzato creato da *Sviluppatori AEM.*
+Un ***Amministratore AEM*** è responsabile dell’aggiunta di un’applicazione al catalogo AEM Mobile, tramite la creazione guidata di un’app o l’importazione di un’applicazione esistente. Amministratori AEM che creano un’app utilizzando AEM Mobile *creazione guidata* in genere, seleziona uno dei modelli di app desiderati dagli esempi di riferimento predefiniti di Adobe o (in genere) da un modello di app personalizzato creato da *Sviluppatori AEM.*
 
 >[!NOTE]
 >
@@ -41,7 +39,7 @@ Un ***Amministratore AEM*** è responsabile dell’aggiunta di una nuova applica
 
 Un amministratore AEM è responsabile delle seguenti attività durante la creazione di un’app tramite AEM Mobile On-demand Services:
 
-* [Configurazione di AEM Mobile](/help/mobile/aem-mobile-setup.md), che riguarda
+* [Configurazione di AEM Mobile](/help/mobile/aem-mobile-setup.md) che copra
 
    * Provisioning di AEM Mobile
    * Creazione di progetti per AEM Mobile

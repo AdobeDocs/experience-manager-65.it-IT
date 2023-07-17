@@ -1,17 +1,13 @@
 ---
 title: Operazioni di elaborazione in blocco
-seo-title: Bulk Processing Operations
-description: null
-seo-description: null
+description: Nullo
 page-status-flag: never-activated
-uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
-discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 2%
+source-wordcount: '503'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +16,9 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-Con la versione più recente di AEM, il pulsante Seleziona tutto è stato esteso a tutte le visualizzazioni: Vista a elenco, Vista a colonne e Vista a schede. Il pulsante Seleziona tutto ora seleziona tutto il contenuto di una determinata cartella o raccolta e non solo le risorse e le pagine caricate e visibili nel browser client.
+Con la versione più recente di Adobe Experience Manager (AEM), il pulsante Seleziona tutto è stato esteso a tutte le visualizzazioni: Elenco, Colonna e Scheda. Il pulsante Seleziona tutto ora seleziona tutto il contenuto di una determinata cartella o raccolta e non solo le risorse e le pagine caricate e visibili nel browser client.
 
-Le azioni chiave sono state abilitate per l&#39;operazione in blocco: **Sposta**, **Elimina** e **Copia**. Una nuova finestra di dialogo consentirà ai clienti di sapere per quali azioni l’elaborazione in blocco non è disponibile.
+Le azioni chiave sono state abilitate per l&#39;operazione in blocco: **Sposta**, **Elimina**, e **Copia**. Una nuova finestra di dialogo consente ai clienti di sapere per quali azioni l’elaborazione in blocco non è disponibile.
 
 ## Come Usare {#how-to-use}
 
@@ -37,7 +33,7 @@ Per il momento, sono state aggiunte tre operazioni all’elaborazione in blocco:
 * Eliminare
 
 In futuro verrà aggiunto il supporto per ulteriori operazioni.
-Per utilizzare questa funzione, devi passare alla cartella o raccolta in cui desideri eseguire l’operazione in blocco su Pages o Assets.
+Per utilizzare questa funzione, accedi alla cartella o raccolta in cui desideri eseguire l’operazione collettiva su Pagine o Risorse.
 
 Quindi, scegliete una delle viste, come illustrato di seguito:
 
@@ -75,10 +71,10 @@ Nella Vista a elenco, utilizza **Seleziona tutto** oppure utilizzare la casella 
 
 Dopo la selezione, è possibile eseguire una delle tre azioni abilitate in blocco: **Sposta**, **Copia** o **Elimina**.
 
-Qui, **Sposta** L&#39;operazione viene eseguita sulle risorse selezionate sopra. In una qualsiasi delle visualizzazioni, questo fa sì che tutte le risorse vengano spostate nella posizione scelta e non solo in quelle caricate sullo schermo.
+Qui, **Sposta** L&#39;operazione viene eseguita sulle risorse selezionate sopra. In una qualsiasi delle visualizzazioni, questo determina lo spostamento di tutte le risorse nella posizione scelta e non solo di quelle caricate sullo schermo.
 
 ![Sposta le risorse mostrando una cartella selezionata nella Vista a colonne.](assets/noua.png)
 
-Per altre operazioni che non sono abilitate in blocco, come **Download,** verrà visualizzato un avviso che segnala che solo gli elementi caricati nel browser verranno inclusi nell’operazione.
+Per altre operazioni che non sono abilitate in blocco, come **Download,** viene visualizzato un avviso che indica che nell’operazione sono inclusi solo gli elementi caricati nel browser.
 
 ![La vista Risorse mostra le risorse immagine selezionate e la finestra di dialogo a comparsa &quot;Azione di massa non supportata&quot;.](assets/zece.png)
