@@ -9,14 +9,20 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 0%
+source-wordcount: '1893'
+ht-degree: 1%
 
 ---
 
 # Configurazione dell’azione Invia{#configuring-the-submit-action}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=it) |
+| AEM 6.5 | Questo articolo |
+
 
 ## Introduzione all’invio di azioni {#introduction-to-submit-actions}
 
@@ -68,6 +74,7 @@ Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati co
 Configurazione dell’azione di invio endpoint REST
 
 >[!NOTE]
+>
 Per passare i campi come parametri in un URL REST, tutti i campi devono avere nomi di elementi diversi, anche se i campi sono posizionati su pannelli diversi.
 
 ### Registra i dati inviati a una risorsa o a un endpoint di riposo esterno  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
@@ -98,6 +105,7 @@ In questo esempio, `data` memorizza i dati XML e `att` memorizza i dati dell&#39
 Il **Invia e-mail** azione di invio invia un messaggio e-mail a uno o più destinatari in seguito all’invio corretto del modulo. L’e-mail generata può contenere dati del modulo in un formato predefinito.
 
 >[!NOTE]
+>
 Tutti i campi modulo devono avere nomi di elementi diversi, anche se sono inseriti in pannelli diversi), ad esempio per includere i dati del modulo in un messaggio e-mail.
 
 ## Invia PDF tramite e-mail {#send-pdf-via-email}
@@ -105,6 +113,7 @@ Tutti i campi modulo devono avere nomi di elementi diversi, anche se sono inseri
 Il **Invia PDF tramite e-mail** azione di invio invia un messaggio e-mail con un PDF contenente i dati del modulo a uno o più destinatari non appena il modulo viene inviato correttamente.
 
 >[!NOTE]
+>
 Questa azione di invio è disponibile per i moduli adattivi basati su XFA e per i moduli di adattamento basati su XSD che dispongono del modello del documento di record.
 
 ## Richiama un Forms Workflow {#invoke-a-forms-workflow}
@@ -138,6 +147,7 @@ L’azione Invia inserisce quanto segue nella posizione del payload del flusso d
 * **File di dati**: contiene i dati inviati al modulo adattivo. È possibile utilizzare **[!UICONTROL Percorso file di dati]** per specificare il nome del file e il percorso del file relativo al payload. Ad esempio, il `/addresschange/data.xml` percorso crea una cartella denominata `addresschange` e lo posiziona in relazione al payload. È inoltre possibile specificare solo `data.xml` per inviare solo i dati inviati senza creare una gerarchia di cartelle. Utilizza l’opzione variabile e seleziona la variabile dall’elenco di variabili disponibili per il modello di flusso di lavoro.
 
 >[!NOTE]
+>
 Le variabili possono essere utilizzate indipendentemente dal fatto che il modello di flusso di lavoro sia contrassegnato o meno per l’archiviazione dati esterna.
 
 * **Allegati**: puoi utilizzare la **[!UICONTROL Percorso allegato]** per specificare il nome della cartella in cui archiviare gli allegati caricati nel modulo adattivo. La cartella viene creata in relazione al payload. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni, utilizza l’opzione della variabile e seleziona la variabile dall’elenco di variabili disponibili per il modello di flusso di lavoro.
@@ -169,6 +179,7 @@ Abilitazione della convalida lato server
 Se l&#39;utente finale ignora tali convalide e invia i moduli, il server esegue nuovamente la convalida. Se la convalida non riesce alla fine del server, la transazione di invio viene interrotta. All’utente finale viene nuovamente presentato il modulo originale. I dati acquisiti e inviati vengono presentati all’utente come un errore.
 
 >[!NOTE]
+>
 La convalida lato server convalida il modello del modulo. Si consiglia di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile HTML e la manipolazione DOM nella stessa libreria client.
 
 ### Supporto di funzioni personalizzate nelle espressioni di convalida {#supporting-custom-functions-in-validation-expressions-br}

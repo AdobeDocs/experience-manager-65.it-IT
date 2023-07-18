@@ -12,14 +12,19 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 0%
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
 # Supporto di nuove lingue per la localizzazione di moduli adattivi{#supporting-new-locales-for-adaptive-forms-localization}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
+| AEM 6.5 | Questo articolo |
 
 ## Informazioni sui dizionari delle impostazioni internazionali {#about-locale-dictionaries}
 
@@ -38,9 +43,8 @@ Esistono due metodi per identificare le impostazioni locali del modulo adattivo.
 * esaminare i seguenti parametri nell&#39;ordine specificato:
 
    * Parametro di richiesta `afAcceptLang`
-Per ignorare le impostazioni locali del browser per gli utenti, puoi trasmettere il 
-`afAcceptLang` per forzare le impostazioni locali. Ad esempio, il seguente URL forzerà il rendering del modulo nelle impostazioni internazionali giapponesi:
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+Per ignorare le impostazioni locali del browser per gli utenti, puoi trasmettere il `afAcceptLang` per forzare le impostazioni locali. Ad esempio, il seguente URL forzerà il rendering del modulo nelle impostazioni internazionali giapponesi:
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * Impostazioni locali del browser impostate per l&#39;utente, specificate nella richiesta utilizzando `Accept-Language` intestazione.
 

@@ -8,14 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
-source-git-commit: 0ca7d76d0f5a3e440e5df9c986e3bb0efec368c1
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 2%
 
 ---
 
 # Creazione e gestione delle revisioni ai moduli{#creating-and-managing-reviews-to-forms}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=it) |
+| AEM 6.5 | Questo articolo |
 
 ## Recensione {#review}
 
@@ -39,7 +45,6 @@ Una revisione è un meccanismo che consente a uno o più revisori di aggiungere 
    >* L’amministratore può accedere a tutti i gruppi associati agli utenti del modulo.
    >* Il gruppo Utenti del servizio non è disponibile per la selezione per la revisione.
 
-
 ### Azioni che si verificano quando viene impostata una revisione {#actions-that-occur-when-a-review-is-set-up}
 
 Questa sezione descrive cosa accade quando si crea o si configura una revisione.
@@ -59,7 +64,6 @@ Questa sezione descrive cosa accade quando si crea o si configura una revisione.
 >
 >* È possibile modificare solo le revisioni in corso.
 >* Le recensioni completate non possono essere modificate.
-
 
 1. Passare alla scheda Moduli e selezionare un modulo.
 
@@ -111,4 +115,5 @@ Questa sezione descrive cosa accade il **Revisione aggiornamento/fine**:
    1. **Revisori**: per ogni revisore, l’attività incompleta correlata alla revisione viene terminata. L’attività non viene più visualizzata come &quot;In sospeso&quot; nella sezione Notifiche del revisore.
    1. **Iniziatore**: l&#39;attività assegnata all&#39;iniziatore di revisione è contrassegnata come completata. L&#39;attività viene rimossa dalla sezione Notifica dell&#39;iniziatore di revisione.
    1. **Tutti**: la revisione viene visualizzata nella sezione Revisioni precedenti. Non è possibile aggiungere altri commenti.
+
    ![revisione completata](assets/review-complete-imgg.png)

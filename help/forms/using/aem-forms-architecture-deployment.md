@@ -11,14 +11,19 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
 
 # Architettura e topologie di implementazione per AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html) |
+| AEM 6.5 | Questo articolo |
 
 ## Architettura {#architecture}
 
@@ -74,9 +79,9 @@ L’immagine seguente mostra diverse configurazioni del server AEM Form e i rela
 * **Elaborazione dei dati del modulo non elaborati in arrivo da un’istanza Publish:** Ciò si ottiene principalmente su un’istanza di elaborazione tramite flussi di lavoro AEM che si attivano quando i dati arrivano. I flussi di lavoro possono utilizzare il passaggio Modello dati modulo fornito come strumento pronto all’uso per archiviare i dati o il documento in un archivio dati appropriato.
 * **Archiviazione sicura dei dati dei moduli**: l’elaborazione fornisce un archivio dietro il firewall per i dati dei moduli non elaborati isolati dagli utenti. Né i progettisti di moduli nell’istanza Autore né gli utenti finali nell’istanza Pubblica possono accedere a questo archivio.
 
-   >[!NOTE]
-   >
-   >L’Adobe consiglia di utilizzare un archivio dati di terze parti per salvare i dati elaborati finali invece di utilizzare l’archivio AEM.
+  >[!NOTE]
+  >
+  >L’Adobe consiglia di utilizzare un archivio dati di terze parti per salvare i dati elaborati finali invece di utilizzare l’archivio AEM.
 
 * **Archiviazione e post-elaborazione dei dati di corrispondenza provenienti da un’istanza Publish:** I flussi di lavoro AEM eseguono la post-elaborazione opzionale delle definizioni di lettere corrispondenti. Questi flussi di lavoro possono salvare i dati elaborati finali in appositi archivi di dati esterni.
 
@@ -140,7 +145,7 @@ I clienti di AEM Forms che intendono utilizzare le cartelle controllate per l’
 
 ### Topologia per l’utilizzo delle funzionalità dei servizi basati su documenti per l’elaborazione offline basata su API {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
 
-I clienti AEM Forms che intendono utilizzare solo la funzionalità servizi documentali possono avere una topologia simile a quella visualizzata di seguito. Questa topologia consiglia di utilizzare un cluster di AEM Forms sui server OSGi. Questa topologia è consigliata quando la maggior parte degli utenti accede a livello di programmazione (utilizzando le API) al server AEM Forms e l’intervento tramite l’interfaccia utente è minimo. La topologia è molto utile in più scenari di client software. Ad esempio, più clienti che utilizzano il servizio PDF Generator per creare documenti PDF su richiesta.
+I clienti AEM Forms che intendono utilizzare solo la funzionalità servizi documentali possono avere una topologia simile a quella visualizzata di seguito. Questa topologia consiglia di utilizzare un cluster di AEM Forms sui server OSGi. Questa topologia è consigliata quando la maggior parte degli utenti accede a livello di programmazione (utilizzando le API) al server AEM Forms e l’intervento tramite l’interfaccia utente è minimo. La topologia è molto utile in più scenari di client software. Ad esempio, più clienti che utilizzano il servizio PDF Generator possono creare documenti PDF su richiesta.
 
 Anche se AEM Forms consente di impostare ed eseguire tutte le funzionalità da un singolo server, è necessario eseguire la pianificazione della capacità, il bilanciamento del carico e la configurazione di server dedicati per funzionalità specifiche in un ambiente di produzione. Ad esempio, per un ambiente che utilizza il servizio PDF Generator per convertire migliaia di pagine al giorno e più moduli adattivi per l’acquisizione dei dati, configura server AEM Forms separati per il servizio PDF Generator e le funzionalità dei moduli adattivi. Consente di fornire prestazioni ottimali e scalare i server in modo indipendente l&#39;uno dall&#39;altro.
 

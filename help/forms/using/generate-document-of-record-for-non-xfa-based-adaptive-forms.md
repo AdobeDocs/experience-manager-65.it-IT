@@ -11,14 +11,20 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '3466'
-ht-degree: 2%
+source-wordcount: '3488'
+ht-degree: 3%
 
 ---
 
 # Generare un documento di record per i moduli adattivi{#generate-document-of-record-for-adaptive-forms}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) |
+| AEM 6.5 | Questo articolo |
+
 
 ## Panoramica {#overview}
 
@@ -287,7 +293,8 @@ Per configurare un documento di record per i moduli adattivi, effettua le seguen
    >
    >    * Il modulo adattivo è basato su schema
    >    * Stai utilizzando **Associa modello modulo come modello del documento record** opzione per documento record
-
+   >
+   >
 
 1. Clic **Fine.**
 

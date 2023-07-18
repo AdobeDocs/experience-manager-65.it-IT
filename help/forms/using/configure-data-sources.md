@@ -10,14 +10,20 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2112'
 ht-degree: 1%
 
 ---
 
 # Configurare origini dati{#configure-data-sources}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
+| AEM 6.5 | Questo articolo |
+
 
 ![Integrazione dei dati](do-not-localize/data-integeration.png)
 
@@ -51,7 +57,6 @@ L’integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://o
    >
    > 1. Vai a https://&#39;[server]:[porta]&#39;/system/console/crypto.
    > 1. In **[!UICONTROL Testo normale]** , specifica la password o qualsiasi stringa da crittografare e tocca **[!UICONTROL Protect]**.
-
    >
    >Il testo crittografato viene visualizzato nel campo Testo protetto che è possibile specificare nella configurazione.
 
@@ -131,7 +136,8 @@ Per configurare i servizi RESTful, effettuare le seguenti operazioni:
       * Schema: protocolli di trasferimento utilizzati dall’API REST. Il numero di tipi di schema visualizzati nell&#39;elenco a discesa dipende dagli schemi definiti nell&#39;origine Swagger.
       * Host: il nome di dominio o l’indirizzo IP dell’host che serve l’API REST. È un campo obbligatorio.
       * Percorso base: prefisso URL per tutti i percorsi API. È un campo facoltativo.\
-         Se necessario, modifica i valori precompilati per questi campi.
+        Se necessario, modifica i valori precompilati per questi campi.
+
    * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base, chiave API, autenticazione personalizzata o autenticazione reciproca per accedere al servizio RESTful e fornire di conseguenza i dettagli per l’autenticazione.
 
    Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specifica il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dalla **[!UICONTROL Posizione]** e specificare il nome dell&#39;intestazione o il parametro di query nell&#39; **[!UICONTROL Nome parametro]** di conseguenza.
@@ -176,10 +182,10 @@ I servizi web basati su SOAP sono descritti utilizzando [Specifiche di Web Servi
    * Endpoint servizio. Specificare un valore in questo campo per sostituire l&#39;endpoint del servizio indicato in WSDL.
    * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base, autenticazione personalizzata, token X509 o autenticazione reciproca per accedere al servizio SOAP e fornire di conseguenza i dettagli per l&#39;autenticazione.
 
-      Se si seleziona **[!UICONTROL Token X509]** come tipo di autenticazione, configura il certificato X509. Per ulteriori informazioni, consulta [Configurare i certificati](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+     Se si seleziona **[!UICONTROL Token X509]** come tipo di autenticazione, configura il certificato X509. Per ulteriori informazioni, consulta [Configurare i certificati](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Specifica l’alias KeyStore per il certificato X509 in **[!UICONTROL Alias chiave]** campo. Specifica il tempo, in secondi, rimanente la validità della richiesta di autenticazione, nel **[!UICONTROL Time To Live]** campo. Facoltativamente, seleziona per firmare il corpo del messaggio o l’intestazione della marca temporale o entrambi.
 
-      Se si seleziona **[!UICONTROL Autenticazione reciproca]** come tipo di autenticazione, consulta [Autenticazione reciproca basata su certificato per i servizi web RESTful e SOAP](#mutual-authentication).
+     Se si seleziona **[!UICONTROL Autenticazione reciproca]** come tipo di autenticazione, consulta [Autenticazione reciproca basata su certificato per i servizi web RESTful e SOAP](#mutual-authentication).
 
 1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio web SOAP.
 

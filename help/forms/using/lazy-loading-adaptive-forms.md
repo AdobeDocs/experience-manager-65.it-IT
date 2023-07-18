@@ -10,14 +10,19 @@ discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 1%
+source-wordcount: '1034'
+ht-degree: 2%
 
 ---
 
 # Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento{#improve-performance-of-large-forms-with-lazy-loading}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html) |
+| AEM 6.5 | Questo articolo |
 
 ## Introduzione al caricamento lento {#introduction-to-lazy-loading}
 
@@ -32,17 +37,17 @@ Prima di configurare il caricamento lento dei frammenti nel modulo adattivo, è 
 * **Identificare e creare frammenti**
 Puoi configurare solo frammenti di modulo adattivi per il caricamento lento. Un frammento è un segmento autonomo che si trova al di fuori di un modulo adattivo e può essere riutilizzato in tutti i moduli. Quindi, il primo passo verso l&#39;implementazione del caricamento lento è identificare le sezioni logiche in una forma e convertirle in frammenti. È possibile creare un frammento da zero o salvare come frammento un pannello modulo esistente.
 
-   Per ulteriori informazioni sulla creazione di frammenti, consulta [Frammenti di moduli adattivi](../../forms/using/adaptive-form-fragments.md).
+  Per ulteriori informazioni sulla creazione di frammenti, consulta [Frammenti di moduli adattivi](../../forms/using/adaptive-form-fragments.md).
 
 * **Identificare e contrassegnare i valori globali**
 Le transazioni basate su Forms richiedono elementi dinamici per acquisire dati rilevanti dagli utenti ed elaborarli per semplificare l&#39;esperienza di compilazione dei moduli. Ad esempio, il modulo include il campo A nel frammento X il cui valore determina la validità del campo B in un altro frammento. In questo caso, se il frammento X è contrassegnato per il caricamento lazy, il valore del campo A deve essere disponibile per convalidare il campo B anche quando il frammento X non è caricato. A questo scopo, puoi contrassegnare il campo A come globale, in modo che il relativo valore sia disponibile per la convalida del campo B quando il frammento X non viene caricato.
 
-   Per informazioni su come rendere globale un valore di campo, vedere [Configurazione del caricamento lento](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Per informazioni su come rendere globale un valore di campo, vedere [Configurazione del caricamento lento](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **Scrivere regole per controllare la visibilità dei campi**
 Forms include alcuni campi e sezioni che non sono applicabili a tutti gli utenti e in tutte le condizioni. Gli autori e gli sviluppatori di Forms utilizzano le regole di visibilità o di visualizzazione per controllarne la visibilità in base agli input degli utenti. Ad esempio, il campo Indirizzo ufficio non viene visualizzato agli utenti che scelgono Disoccupato nel campo Stato impiego di un modulo. Per ulteriori informazioni sulla scrittura delle regole, consulta [Utilizzo dell’editor di regole](../../forms/using/rule-editor.md).
 
-   Puoi sfruttare le regole di visibilità nei frammenti caricati in modo differito in modo che i campi condizionali vengano visualizzati solo quando sono richiesti. Inoltre, contrassegna il campo condizionale globale in modo che faccia riferimento a esso nell’espressione di visibilità del frammento caricato in modo differito.
+  Puoi sfruttare le regole di visibilità nei frammenti caricati in modo differito in modo che i campi condizionali vengano visualizzati solo quando sono richiesti. Inoltre, contrassegna il campo condizionale globale in modo che faccia riferimento a esso nell’espressione di visibilità del frammento caricato in modo differito.
 
 ## Configurazione del caricamento lento {#configuring-lazy-loading}
 
@@ -87,4 +92,4 @@ Di seguito sono riportati alcuni punti importanti da tenere presenti durante lo 
 * Utilizzare la proprietà globally available dei campi per rendere disponibili a tutti gli altri pannelli di un modulo i campi presenti in un pannello di caricamento lazy.
 * Non inoltrare il valore di riferimento di un campo all’interno di un pannello lento indipendentemente dal fatto che il campo sia contrassegnato globalmente tra frammenti o meno.
 * Utilizza la funzione di ripristino del pannello per ripristinare tutto ciò che è visibile nel pannello utilizzando la seguente espressione di clic.\
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()

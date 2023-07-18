@@ -10,14 +10,19 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 2%
+source-wordcount: '548'
+ht-degree: 4%
 
 ---
 
 # Stile in linea dei componenti di moduli adattivi {#inline-styling-of-adaptive-form-components}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html) |
+| AEM 6.5 | Questo articolo |
 
 È possibile definire l’aspetto e lo stile generali di un modulo adattivo specificando gli stili utilizzando [editor temi](../../forms/using/themes.md). Inoltre, puoi applicare stili CSS in linea ai singoli componenti del modulo adattivo e visualizzare all’istante l’anteprima delle modifiche. Gli stili in linea sostituiscono gli stili forniti nel tema.
 

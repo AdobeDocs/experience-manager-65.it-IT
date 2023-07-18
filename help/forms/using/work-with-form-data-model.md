@@ -10,14 +10,19 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '4165'
+source-wordcount: '4187'
 ht-degree: 0%
 
 ---
 
 # Utilizzare il modello dati del modulo{#work-with-form-data-model}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html) |
+| AEM 6.5 | Questo articolo |
 
 ![integrazione dei dati](do-not-localize/data-integeration.png)
 
@@ -204,10 +209,9 @@ Utilizza l’attributo request per recuperare le proprietà associate dall’ori
    >[!NOTE]
    >
    >* Se utilizzi un modello statico, sovrapponi head.jsp in:
-      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    >* Se utilizzi un modello modificabile, sovrapponi aftemplatedpage.jsp in:
-      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. Imposta [!DNL paramMap] per l’attributo di richiesta. Ad esempio, includi il seguente codice nel file .jsp nella cartella delle app:
 

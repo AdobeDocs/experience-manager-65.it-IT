@@ -9,14 +9,19 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '7575'
+source-wordcount: '7594'
 ht-degree: 0%
 
 ---
 
 # Flusso di lavoro incentrato su Forms su OSGi - Riferimento passaggio {#forms-centric-workflow-on-osgi-step-reference}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6.5 | Questo articolo |
 
 I modelli di workflow consentono di convertire una regola business in un processo ripetitivo automatizzato. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. È possibile [includere vari passaggi del flusso di lavoro AEM in un modello per raggiungere la logica di business](/help/sites-developing/workflows-models.md#extending-aem).
 
@@ -51,7 +56,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 * **Evidenzia l&#39;azione e commenta dall&#39;ultima attività in Dettagli attività:** Selezionare questa opzione per visualizzare l&#39;ultima azione eseguita e il commento ricevuto nella sezione dei dettagli di un&#39;attività.
 * **Tipo:** Scegliere il tipo di documento da compilare all&#39;avvio del flusso di lavoro. Puoi scegliere un modulo adattivo, un modulo adattivo di sola lettura, un documento PDF non interattivo, un’interfaccia utente di Interactive Communication Agent o un documento canale web di comunicazione interattiva.
 * **Usa modulo adattivo:** Specifica il metodo per individuare il modulo adattivo di input. Questa opzione è disponibile se si seleziona Modulo adattivo o Modulo adattivo di sola lettura dall’elenco a discesa Tipo. Puoi utilizzare il modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile di tipo String per specificare il percorso.\
-   È possibile associare più moduli adattivi a un flusso di lavoro. Di conseguenza, puoi specificare un modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
+  È possibile associare più moduli adattivi a un flusso di lavoro. Di conseguenza, puoi specificare un modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
 
 * **Utilizzare la comunicazione interattiva:** Specifica il metodo per individuare la comunicazione interattiva di input. Puoi utilizzare la comunicazione interattiva inviata al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile di tipo String per specificare il percorso. Questa opzione è disponibile se si seleziona Interfaccia utente agente comunicazione interattiva o Documento canale web comunicazione interattiva dall’elenco a discesa Tipo.
 
@@ -72,7 +77,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
       * **Scegli un servizio di precaricamento personalizzato:** Seleziona il servizio di precompilazione per recuperare i dati e precompilare il documento del canale web di comunicazione interattiva o l’interfaccia utente dell’agente.
       * **Utilizza il servizio preriempimento della comunicazione interattiva selezionato in precedenza:** Utilizza questa opzione per utilizzare il servizio di precompilazione della comunicazione interattiva definito nell’elenco a discesa Usa comunicazione interattiva.
       * **Mappatura attributi richiesta:** Utilizza la sezione Mappatura attributi della richiesta per definire [nome e valore dell’attributo di richiesta](../../forms/using/work-with-form-data-model.md#bindargument). Recupera i dettagli dall’origine dati in base al nome e al valore dell’attributo specificati nella richiesta. È possibile definire un valore di attributo della richiesta utilizzando un valore letterale o una variabile di tipo di dati String.\
-         Il servizio di precompilazione e le opzioni di mappatura degli attributi della richiesta sono disponibili solo se dall’elenco a discesa Tipo si seleziona Interfaccia utente agente di comunicazione interattiva o Documento canale web di comunicazione interattiva.
+        Il servizio di precompilazione e le opzioni di mappatura degli attributi della richiesta sono disponibili solo se dall’elenco a discesa Tipo si seleziona Interfaccia utente agente di comunicazione interattiva o Documento canale web di comunicazione interattiva.
 
 * **Informazioni inviate:** I campi elencati di seguito fungono da posizioni di output per l&#39;attività:
 
@@ -94,7 +99,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 * **Argomenti:** Il campo è disponibile quando nel campo Selettore partecipanti è selezionato uno script diverso da RandomParticipantChoose. Il campo consente di fornire un elenco di argomenti separati da virgole per lo script selezionato nel campo Selettore partecipanti.
 
 * **Utente o gruppo:** L&#39;attività viene assegnata all&#39;utente o al gruppo selezionato. L’opzione è disponibile quando **A un utente o gruppo specifico, opzione** è selezionato in **Assegna opzioni** campo. Il campo elenca tutti gli utenti e i gruppi del gruppo flusso di lavoro-utenti.\
-   Il **Utente o gruppo** Il menu a discesa elenca gli utenti e i gruppi a cui l&#39;utente connesso ha accesso. La visualizzazione del nome utente dipende dalla disponibilità delle autorizzazioni di accesso per **utenti** in crx-repository per quel particolare utente.
+  Il **Utente o gruppo** Il menu a discesa elenca gli utenti e i gruppi a cui l&#39;utente connesso ha accesso. La visualizzazione del nome utente dipende dalla disponibilità delle autorizzazioni di accesso per **utenti** in crx-repository per quel particolare utente.
 
 * **[!UICONTROL Invia e-mail di notifica]**: seleziona questa opzione per inviare notifiche e-mail all’assegnatario. Queste notifiche vengono inviate quando un’attività viene assegnata a un utente o a un gruppo. È possibile utilizzare **[!UICONTROL Indirizzo e-mail destinatario]** per specificare il meccanismo di recupero dell’indirizzo e-mail.
 
@@ -134,7 +139,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 
 ## Passaggio Invia e-mail {#send-email-step}
 
-Utilizza la fase e-mail per inviare un’e-mail, ad esempio un’e-mail con un documento record, un collegamento di un modulo adattivo, un collegamento di una comunicazione interattiva o un documento PDF allegato. Il passaggio Invia e-mail supporta [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello di e-mail HTML per definire l’aspetto, la combinazione di colori e il comportamento del dell’e-mail.
+Utilizza la fase e-mail per inviare un’e-mail, ad esempio un’e-mail con un documento record, un collegamento di un modulo adattivo, un collegamento di una comunicazione interattiva o un documento PDF allegato. Il passaggio Invia e-mail supporta [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello di e-mail HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
 Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il [servizio e-mail](../../forms/using/aem-forms-workflow.md) è configurato. Il passaggio e-mail presenta le seguenti proprietà:
 
@@ -259,7 +264,7 @@ Il passaggio Richiama servizio modello dati modulo include i campi elencati di s
    * **Recupera dai metadati del flusso di lavoro:** Utilizza l’opzione quando il valore da utilizzare viene salvato in una proprietà di metadati del flusso di lavoro. Ad esempio, emailAddress.
    * **[!UICONTROL Relativo al payload]**: utilizza l’opzione per recuperare il file allegato salvato in un percorso relativo al payload. Selezionare l&#39;opzione e specificare il nome della cartella che include il file allegato oppure specificare il nome del file allegato nella casella di testo.
 
-      Ad esempio, se la cartella relativa al payload nell’archivio CRX include un file allegato in corrispondenza di `attachment\attachment-folder` posizione, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato **[!UICONTROL Relativo al payload]** opzione.
+     Ad esempio, se la cartella relativa al payload nell’archivio CRX include un file allegato in corrispondenza di `attachment\attachment-folder` posizione, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato **[!UICONTROL Relativo al payload]** opzione.
    * **Notazione in punti JSON:** Utilizza l’opzione quando il valore da utilizzare si trova in un file JSON. Ad esempio, insurance.customerDetails.emailAddress. L’opzione JSON Dot Notation è disponibile solo se è selezionata l’opzione Mappa campi di input da JSON di input.
    * **Mappa i campi di input da JSON di input:** Specifica il percorso di un file JSON per ottenere il valore di input di alcuni argomenti del servizio dal file JSON. Il percorso del file JSON può essere relativo al payload, un percorso assoluto oppure puoi selezionare un documento JSON di input utilizzando una variabile di tipo JSON o Modello dati modulo.
 
@@ -288,13 +293,13 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 * **Seleziona percorso allegato di input tramite:** Percorso degli allegati. Questi allegati sono inclusi nel documento di firma. È possibile mantenere gli allegati in una posizione relativa al payload, specificare un percorso assoluto degli allegati o recuperare gli allegati memorizzati in una variabile di matrice di tipo dati Documento.
 
 
-   Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i file direttamente disponibili nella cartella verranno allegati al documento di firma. Se nelle cartelle sono disponibili file direttamente disponibili nel percorso di allegato specificato, tali file vengono inclusi nel documento di firma come allegati. Le eventuali cartelle presenti nelle cartelle direttamente disponibili vengono ignorate.
+  Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i file direttamente disponibili nella cartella verranno allegati al documento di firma. Se nelle cartelle sono disponibili file direttamente disponibili nel percorso di allegato specificato, tali file vengono inclusi nel documento di firma come allegati. Le eventuali cartelle presenti nelle cartelle direttamente disponibili vengono ignorate.
 
 * **Giorni mancanti alla scadenza:** Un documento viene contrassegnato come dovuto (scadenza passata) dopo che non vi è alcuna attività sull&#39;attività per il numero di giorni specificato in **Giorni mancanti alla scadenza** campo. Il numero di giorni viene conteggiato dopo che il documento è stato assegnato a un utente per la firma.
 * **Frequenza e-mail promemoria:** Puoi inviare un promemoria e-mail a intervalli giornalieri o settimanali. La settimana viene conteggiata dal giorno in cui il documento viene assegnato a un utente per la firma.
 * **Processo di firma:** È possibile scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un firmatario riceve il documento alla volta per la firma. Dopo che il primo firmatario ha completato la firma del documento, quest&#39;ultimo viene inviato al secondo firmatario e così via. In ordine parallelo, più firmatari possono firmare un documento alla volta.
 * **URL di reindirizzamento:** Specifica un URL di reindirizzamento. Dopo aver firmato il documento, puoi reindirizzare l’assegnatario a un URL. Di solito, questo URL contiene un messaggio di ringraziamento o ulteriori istruzioni.
-* **Fase flusso di lavoro:** Un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello (barra laterale > Pagina > Proprietà pagina > Stadi).
+* **Fase flusso di lavoro:** Un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello (Sidekick > Pagina > Proprietà pagina > Stadi).
 * **Seleziona firmatari:** Specificare il metodo di selezione dei firmatari per il documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un firmatario.
 * **Script o servizio per selezionare i firmatari:** L’opzione è disponibile solo se l’opzione Dinamicamente è selezionata nel campo Seleziona firmatari. È possibile specificare un codice ECMAScript o un servizio per scegliere i firmatari e le opzioni di verifica per un documento.
 * **Dettagli firmatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manuale è selezionata nel campo Seleziona firmatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile del tipo di dati String per definire i valori per **[!UICONTROL E-mail]**, **[!UICONTROL Codice paese]**, e **[!UICONTROL Numero di telefono]** campi. Il **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** i campi vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dal **[!UICONTROL Verifica in due fasi]** elenco a discesa.
@@ -437,7 +442,7 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 
 * **[!UICONTROL Seleziona posizione principale contenuto tramite]**: radice del contenuto è un valore stringa che specifica l’URI, il riferimento assoluto o la posizione nell’archivio per recuperare le risorse relative utilizzate dalla progettazione del modulo. Ad esempio, se la progettazione del modulo fa riferimento a un’immagine relativamente, come ../myImage.gif, myImage.gif deve trovarsi in repository://. Il valore predefinito è repository://, che punta al livello principale dell’archivio.
 
-   Quando scegli una risorsa dall’applicazione, il percorso URI della directory principale del contenuto deve avere la struttura corretta. Ad esempio, se un modulo viene scelto da un’applicazione denominata SampleApp e si trova in SampleApp/1.0/forms/Test.xdp, l’URI della directory principale dei contenuti deve essere specificato come repository://administrator@password/Applications/SampleApp/1.0/forms/ o repository:/Applications/SampleApp/1.0/forms/ (quando l’autorità è null). Quando l’URI della directory principale del contenuto viene specificato in questo modo, i percorsi di tutte le risorse a cui si fa riferimento nel modulo verranno risolti in base a questo URI.
+  Quando scegli una risorsa dall’applicazione, il percorso URI della directory principale del contenuto deve avere la struttura corretta. Ad esempio, se un modulo viene scelto da un’applicazione denominata SampleApp e si trova in SampleApp/1.0/forms/Test.xdp, l’URI della directory principale dei contenuti deve essere specificato come repository://administrator@password/Applications/SampleApp/1.0/forms/ o repository:/Applications/SampleApp/1.0/forms/ (quando l’autorità è null). Quando l’URI della directory principale del contenuto viene specificato in questo modo, i percorsi di tutte le risorse a cui si fa riferimento nel modulo verranno risolti in base a questo URI.
 
 * **[!UICONTROL Seleziona file XCI tramite]**: i file XCI vengono utilizzati per descrivere i font e altre proprietà utilizzati per gli elementi di progettazione dei moduli. È possibile mantenere un file XCI relativo al payload, in un percorso assoluto o utilizzando una variabile di tipo dati Documento.
 

@@ -11,14 +11,19 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 1%
+source-wordcount: '1663'
+ht-degree: 2%
 
 ---
 
 # Creazione di una pagina del portale dei moduli{#creating-a-forms-portal-page}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM 6.5 | Questo articolo |
 
 I componenti del portale Forms forniscono ai Web Developers i componenti necessari per creare e personalizzare un portale dei moduli nei siti Web creati con Adobe Experience Manager (AEM). Per una rapida panoramica del portale Forms, vedi [Introduzione alla pubblicazione di moduli su un portale](../../forms/using/introduction-publishing-forms.md).
 
@@ -158,7 +163,7 @@ Il **Modifica** La finestra di dialogo include diverse schede che forniscono le 
 
 ### Riquadro di ricerca {#search-pane}
 
-Il riquadro di ricerca consente di aggiungere i componenti Predicato data, Predicato di testo completo, Predicato proprietà e Predicato tag dalla categoria Predicati di Document Services nella barra laterale AEM. Questi componenti implementano la funzionalità di ricerca per consentire agli utenti di eseguire ricerche nei moduli elencati.
+Il riquadro di ricerca consente di aggiungere i componenti Predicato data, Predicato testo completo, Predicato proprietà e Predicato tag dalla categoria Predicati di Document Services in AEM Sidekick. Questi componenti implementano la funzionalità di ricerca per consentire agli utenti di eseguire ricerche nei moduli elencati.
 
 **Suggerimento** *È possibile controllare l&#39;elenco dei moduli visualizzati nel portale dei moduli in base a criteri predefiniti e nascondere la funzionalità di ricerca per gli utenti finali. Per controllare l’elenco dei moduli, utilizza i componenti Predicato per applicare i filtri di ricerca. Puoi anche specificare i valori di filtro predefiniti e disattivare la ricerca dalla scheda Visualizzazione della finestra di dialogo Modifica componente.*
 

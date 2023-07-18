@@ -3,15 +3,21 @@ title: Integrazione di Salesforce con AEM Forms tramite il flusso delle credenzi
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: Passaggi per integrare l’integrazione di Salesforce con AEM Forms utilizzando il flusso delle credenziali del client OAuth 2.0
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-source-git-commit: cc0375f5b5616f82a73bd983a9da95225c51db99
+exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 0%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
-
 # Integrazione di Salesforce tramite il flusso delle credenziali client OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) |
+| AEM 6.5 | Questo articolo |
+
 
 Per integrare AEM Forms con l’applicazione Salesforce, viene utilizzato il flusso delle credenziali client OAuth 2.0. Si tratta di un metodo standardizzato e sicuro per la comunicazione diretta senza il coinvolgimento degli utenti. In questo flusso, l’applicazione client (Modulo AEM) scambia le credenziali client, definite nell’applicazione connessa Salesforce, per ottenere un token di accesso. Le credenziali client richieste includono la chiave consumer e il segreto consumer.
 
@@ -74,5 +80,3 @@ Swagger è un set open-source di regole, specifiche e strumenti per sviluppare e
 1. Se la connessione ha esito positivo, fare clic sul pulsante **[!UICONTROL Crea]** pulsante.
 
 Ora puoi [creare il modello dati del modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) per integrare l’origine dati configurata con il modulo adattivo.
-
-

@@ -11,14 +11,19 @@ discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 1%
+source-wordcount: '1995'
+ht-degree: 2%
 
 ---
 
 # Gestire i metadati del modulo{#manage-form-metadata}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
+| AEM 6.5 | Questo articolo |
 
 ## Panoramica  {#overview-nbsp}
 
@@ -78,12 +83,12 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
   </tr> 
   <tr> 
    <td>Creato</td> 
-   <td>Tutti i bundle </td> 
+   <td>Tutti</td> 
    <td>Valore di sola lettura che specifica l’ora di creazione della risorsa.</td> 
   </tr> 
   <tr> 
    <td>Data ultima modifica</td> 
-   <td>Tutti i bundle </td> 
+   <td>Tutti</td> 
    <td>Valore di sola lettura che specifica l’ora dell’ultima modifica apportata alla risorsa.</td> 
   </tr> 
   <tr> 
@@ -203,7 +208,6 @@ Le risorse presentano valori di proprietà esistenti che possono essere visualiz
    * Il pannello sinistro contiene la miniatura del modulo
    * Il pannello a destra contiene proprietà di metadati in modalità di sola lettura, distribuite tra varie schede.
 
-
 ## Aggiungi/aggiorna valori metadati modulo {#add-update-form-metadata-values}
 
 Puoi modificare il valore delle proprietà dei metadati esistenti o aggiungere nuovi valori a un campo delle proprietà dei metadati esistente (ad esempio, quando un campo dei metadati è vuoto).
@@ -240,7 +244,6 @@ Per i moduli adattivi, sono disponibili funzionalità aggiuntive che consentono 
 >* Utilizza un’immagine quadrata per la miniatura. Quando si utilizza un&#39;immagine non quadrata e si visualizza la miniatura nella vista a elenco, la miniatura appare ritagliata.
 >* Una volta caricata o generata una nuova immagine, la miniatura viene sostituita da questa immagine e non può essere ripristinata all&#39;immagine precedente.
 >
-
 
 ## Aggiungere metadati personalizzati {#add-custom-metadata}
 

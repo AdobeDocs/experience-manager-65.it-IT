@@ -10,14 +10,20 @@ topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1105'
 ht-degree: 0%
 
 ---
 
 # Incorporare un modulo adattivo o una comunicazione interattiva nella pagina dei siti AEM {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html) |
+| AEM 6.5 | Questo articolo |
+
 
 ## Panoramica {#overview}
 
@@ -62,10 +68,10 @@ Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando i
       * **Messaggio di ringraziamento**: scrivi un messaggio utilizzando l’editor Rich Text. Questa opzione è disponibile solo quando si sceglie di visualizzare un messaggio di ringraziamento.
       * **Pagina di ringraziamento**: sfoglia e seleziona la pagina da visualizzare all’invio del modulo. Questa opzione è disponibile solo quando si sceglie di visualizzare una pagina di ringraziamento.
       * **Aggiorna pagina all&#39;invio**: abilita per aggiornare la pagina contenente il modulo adattivo incorporato in modo da visualizzare la pagina di ringraziamento. In caso contrario, la pagina di ringraziamento sostituisce il modulo adattivo nel contenitore AEM Forms, senza aggiornare la pagina. Questa opzione è disponibile solo quando si sceglie di visualizzare una pagina di ringraziamento.
+
    * **Tema**: seleziona un tema che definisce lo stile dei componenti del modulo adattivo o della comunicazione interattiva. Lo stile include proprietà di aspetto quali lo stile del carattere, il colore di sfondo, le dimensioni e l&#39;allineamento.
    * **Altezza**: specifica l’altezza del contenitore. Lascia vuoto questo campo per ridimensionare automaticamente il contenitore.
    * **Libreria client CSS**: specifica il percorso di una libreria client CSS.
-
 
 1. Salva le impostazioni. Il modulo adattivo o la comunicazione interattiva sono ora incorporati nella pagina.
 
