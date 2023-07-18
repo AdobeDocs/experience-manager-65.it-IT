@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1866'
 ht-degree: 9%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 9%
 
 Poiché Adobe Experience Manager (AEM) è basato su Sling e utilizza un archivio JCR, i tipi di nodo offerti da entrambi sono disponibili per l’utilizzo:
 
-* [Tipi di nodo JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipi di nodo JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipi di nodo Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Oltre a questi. L’AEM fornisce una serie di tipi di nodo personalizzati.
+Oltre a questi tipi di nodo, l’AEM fornisce una serie di tipi di nodo personalizzati.
 
 ## Audit {#audit}
 
@@ -145,7 +145,7 @@ Definisce la pagina CQ predefinita.
 
 **Descrizione**
 
-Definisce un tipo mixin che contrassegna i nodi come pseudo-pagine. Questo significa che possono essere adattati per il supporto di modifica di pagine e WCM.
+Definisce un tipo mixin che contrassegna i nodi come pseudo-pagine. In altre parole, possono essere adattate per il supporto di modifica di pagine e WCM.
 
 **Definizione**
 
@@ -161,8 +161,8 @@ Definisce il nodo predefinito per il contenuto della pagina, con le proprietà m
 * `@prop jcr:description` - Descrizione della pagina.
 * `@prop cq:template` : percorso del modello utilizzato per creare la pagina.
 * `@prop cq:allowedTemplates` - Elenco di espressioni regolari utilizzate per determinare i percorsi del modello consentito.
-* `@prop pageTitle` - Titolo generalmente visualizzato nel `<title>` tag.
-* `@prop navTitle` - Titolo solitamente utilizzato nella navigazione.
+* `@prop pageTitle` - Titolo visualizzato nella `<title>` tag.
+* `@prop navTitle` - Titolo utilizzato nella navigazione.
 * `@prop hideInNav` - Specifica se la pagina deve essere nascosta nella navigazione.
 * `@prop onTime` - Ora di validità della pagina.
 * `@prop offTime` - Ora in cui la pagina non è più valida.
@@ -202,8 +202,8 @@ Definisce un modello CQ.
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - Modelli di espressioni regolari per determinare i percorsi dei modelli consentiti come modelli principali.
-* `@prop allowedChildren` - Modelli di espressioni regolari per determinare i percorsi dei modelli consentiti come modelli secondari.
+* `@prop allowedParents` - Modelli di espressioni regolari per determinare i percorsi ai modelli consentiti come modelli principali.
+* `@prop allowedChildren` - Modelli di espressioni regolari per determinare i percorsi ai modelli consentiti come modelli secondari.
 * `@prop ranking` : posizione all’interno dell’elenco dei modelli nella finestra di dialogo crea pagina.
 
 **Definizione**
@@ -232,15 +232,15 @@ Definisce un componente CQ.
 * `@prop dialogPath` - Percorso della finestra di dialogo primaria (alternativa alla finestra di dialogo).
 * `@node design_dialog` - Finestra di dialogo per progettazione.
 * `@prop cq:cellName` - Nome della cella di progettazione.
-* `@prop cq:isContainer` - Indica se si tratta di un componente contenitore. In questo modo, al posto dei nomi dei percorsi, vengono utilizzati i nomi delle celle dei componenti figlio. Ad esempio, il `parsys` è un componente contenitore. Se questo valore non è definito, il controllo viene eseguito in base all&#39;esistenza di un `cq:childEditConfig`.
+* `@prop cq:isContainer` - Indica se si tratta di un componente contenitore. Forza l&#39;utilizzo dei nomi di cella dei componenti figlio al posto dei nomi di percorso. Ad esempio, il `parsys` è un componente contenitore. Se questo valore non è definito, il controllo viene eseguito in base all&#39;esistenza di un `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Se è vero, nessuna decorazione `div` I tag vengono disegnati quando si include questo componente.
 * `@node cq:editConfig` : configurazione che definisce i parametri per la barra di modifica.
 * `@node cq:childEditConfig` : configurazione di modifica ereditata dai componenti figlio.
 * `@node cq:htmlTag` - Definisce gli attributi di tag aggiuntivi aggiunti al &quot;circostante&quot; `div` quando il componente è incluso.
 * `@node icon.png`: file contenente un’icona caratteristica.
 * `@node thumbnail.png` - File contenente una miniatura caratteristica.
-* `@prop allowedParents` - Modelli di espressioni regolari per determinare i percorsi dei componenti consentiti come componenti principali.
-* `@prop allowedChildren` - Modelli di espressioni regolari per determinare i percorsi dei componenti consentiti come componenti figlio.
+* `@prop allowedParents` - Modelli di espressioni regolari per determinare i percorsi di componenti consentiti come componenti principali.
+* `@prop allowedChildren` - Modelli di espressioni regolari per determinare i percorsi di componenti consentiti come componenti figlio.
 * `@node virtual` : contiene sottonodi che riflettono i componenti virtuali utilizzati per il trascinamento e il rilascio dei componenti.
 * `@prop componentGroup` - Nome del gruppo di componenti, utilizzato per il trascinamento e il rilascio del componente.
 * `@node cq:infoProviders` - Contiene sottonodi, ciascuno dei quali ha una proprietà `className` che si riferisce a un `PageInfoProvider`.
@@ -314,9 +314,9 @@ Definisce la configurazione della &quot;barra di modifica&quot;.
 
 **Descrizione**
 
-Configura una destinazione di rilascio di un componente. Il nome di questo nodo verrà utilizzato come ID per il trascinamento.
+Configura una destinazione di rilascio di un componente. Il nome di questo nodo viene utilizzato come ID per il trascinamento.
 
-* `@prop accept` - Elenco dei tipi MIME accettati da questo drop target; es. `["image/*"]`
+* `@prop accept` - Elenco dei tipi MIME accettati da questo drop target; ad esempio, `["image/*"]`
 * `@prop groups` - Elenco dei gruppi di trascinamento che accettano un&#39;origine.
 * `@prop propertyName` - Nome della proprietà utilizzata per memorizzare il riferimento.
 
@@ -332,7 +332,7 @@ Configura una destinazione di rilascio di un componente. Il nome di questo nodo 
 
 **Descrizione**
 
-Definisce un componente CQ virtuale. Attualmente vengono utilizzati solo per la procedura guidata di trascinamento del nuovo componente.
+Definisce un componente CQ virtuale. Attualmente utilizzato solo per la procedura guidata di trascinamento del nuovo componente.
 
 * `@prop jcr:title` - Titolo del componente.
 * `@prop jcr:description` - Descrizione del componente.
@@ -361,7 +361,7 @@ Definisce un componente CQ virtuale. Attualmente vengono utilizzati solo per la 
 
 **Descrizione**
 
-Definisce i listener (lato client) da eseguire su un evento di modifica. I valori devono fare riferimento a una funzione listener valida sul lato client o contenere un collegamento predefinito:
+Definisce i listener (lato client) da eseguire su un evento di modifica. I valori devono fare riferimento a una funzione listener lato client valida o contenere un collegamento predefinito:
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
@@ -444,7 +444,7 @@ Elenco dei contenitori.
 
 **Descrizione**
 
-`cq:attributes` è il tipo di nodo per i tag di versione ContentBus. Questo nodo ha solo una serie di proprietà; di queste tre sono predefinite: &quot;created&quot;, &quot;csd&quot;, e &quot;timestamp&quot;.
+Tipo di nodo `cq:attributes` è per i tag di versione ContentBus. Questo nodo ha solo una serie di proprietà; di queste tre sono predefinite, &quot;created&quot;, &quot;csd&quot; e &quot;timestamp&quot;.
 
 * `@prop created (long) mandatory copy` - Timestamp della creazione delle informazioni sulla versione, in genere l’ora di archiviazione della versione precedente o l’ora di creazione della pagina.
 * `@prop csd (string) mandatory copy` : attributo standard csd, copia della proprietà cq:csd del nodo della pagina
@@ -485,9 +485,9 @@ Gli elementi in una `cq:Cq4ContentPage` sono:
 
 Configurazione sondaggio.
 
-* `@prop source (String) mandatory` : URI dell’origine dati, obbligatorio e non deve essere vuoto
-* `@prop target (String)` : il percorso di destinazione in cui vengono memorizzati i dati recuperati dall’origine dati. Questa operazione è facoltativa e viene impostata automaticamente sul nodo cq:PollConfig.
-* `@prop interval (Long)` : l’intervallo in secondi in cui eseguire il polling per dati nuovi o aggiornati dall’origine dati. Questo è facoltativo e il valore predefinito è 30 minuti (1800 secondi).
+* `@prop source (String) mandatory` - URI origine dati. Obbligatorio e non può essere vuoto.
+* `@prop target (String)` : il percorso di destinazione in cui vengono memorizzati i dati recuperati dall’origine dati. Facoltativo e viene impostato automaticamente sul nodo cq:PollConfig.
+* `@prop interval (Long)` : l’intervallo in secondi in cui eseguire il polling per dati nuovi o aggiornati dall’origine dati. Facoltativo e il valore predefinito è 30 minuti (1800 secondi).
 * [Creazione di servizi di importazione dati personalizzati per Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definizione**
@@ -814,7 +814,7 @@ Qualsiasi utente/sito web pubblico può assegnare tag al contenuto (stile Web2.0
 
 **Descrizione**
 
-Aggiunge un `cq:userContent` sottonodo che può essere modificato dagli utenti. Ogni utente avrà il proprio `cq:userContent/<userid>` sottonodo, che in genere ha il mixin `cq:UserTaggable`.
+Aggiunge un `cq:userContent` sottonodo che può essere modificato dagli utenti. Ogni utente ha il proprio `cq:userContent/<userid>` sottonodo, che in genere ha il mixin `cq:UserTaggable`.
 
 **Definizione**
 
