@@ -1,37 +1,33 @@
 ---
 title: Sviluppo dell’editor in blocco
-seo-title: Developing the Bulk Editor
 description: L’assegnazione tag consente di categorizzare e organizzare i contenuti
-seo-description: Tagging allows content to be categorized and organized
-uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1836'
 ht-degree: 2%
 
 ---
 
 # Sviluppo dell’editor in blocco{#developing-the-bulk-editor}
 
-Questa sezione descrive come sviluppare lo strumento dell’editor collettivo e come estendere il componente Elenco prodotti, basato sull’editor collettivo.
+Questa sezione descrive come sviluppare lo strumento Bulk Editor e come estendere il componente Product List, basato sull’Bulk Editor.
 
 ## Parametri di query dell’editor in blocco {#bulk-editor-query-parameters}
 
-Quando si lavora con l’editor bulk, è possibile aggiungere diversi parametri di query all’URL per chiamare l’editor bulk con una configurazione specifica. Se desideri che l’editor collettivo venga sempre utilizzato con una determinata configurazione, ad esempio nel componente Elenco prodotti, devi modificare bulkeditor.jsp (che si trova in /libs/wcm/core/components/bulkeditor) o creare un componente con la configurazione specifica. Le modifiche apportate utilizzando i parametri di query non sono permanenti.
+Quando si lavora con l’editor in blocco, è possibile aggiungere diversi parametri di query all’URL per chiamare l’editor in blocco con una configurazione specifica. Se desideri utilizzare sempre l’Editor collettivo con una determinata configurazione, ad esempio nel componente Elenco prodotti, devi modificare `bulkeditor.jsp` (in /libs/wcm/core/components/bulkeditor) o crea un componente con la configurazione specifica. Le modifiche apportate utilizzando i parametri di query non sono permanenti.
 
 Ad esempio, se digiti quanto segue nell’URL del browser:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-l’editor in blocco viene visualizzato senza **Percorso directory principale** field as hrp=true nasconde il campo. Con il parametro hrp=false, viene visualizzato il campo (il valore predefinito).
+L’Editor collettivo viene visualizzato senza **Percorso directory principale** field as hrp=true nasconde il campo. Con il parametro hrp=false, viene visualizzato il campo (il valore predefinito).
 
-Di seguito è riportato un elenco dei parametri di query dell’editor in blocco:
+Di seguito è riportato un elenco dei parametri di query dell’editor di massa:
 
 >[!NOTE]
 >
@@ -164,16 +160,16 @@ Di seguito è riportato un elenco dei parametri di query dell’editor in blocco
 
 ### Sviluppo di un componente basato su Editor in blocco: il componente Elenco prodotti {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Questa sezione fornisce una panoramica sull’utilizzo dell’editor collettivo e fornisce una descrizione del componente Geometrixx esistente basato sull’editor collettivo: il componente Elenco prodotti.
+Questa sezione fornisce una panoramica sull’utilizzo dell’Editor collettivo e fornisce una descrizione del componente Geometrixx esistente basato sull’Editor collettivo: il componente Elenco prodotti.
 
-Il componente Elenco prodotti consente agli utenti di visualizzare e modificare una tabella di dati. Ad esempio, puoi utilizzare il componente Elenco prodotti per rappresentare i prodotti in un catalogo. Le informazioni vengono presentate in una tabella standard di HTML e tutte le modifiche vengono eseguite in **Modifica** , che contiene un widget BulkEditor. Questo Bulk Editor è esattamente lo stesso di quello accessibile all’indirizzo /etc/importers/bulkeditor.html o dal menu Strumenti. Il componente Elenco prodotti è stato configurato per funzionalità specifiche e limitate dell’editor in blocco. È possibile configurare ogni parte dell’editor per la modifica in serie (o componenti derivati dall’editor per la modifica in serie).
+Il componente Elenco prodotti consente agli utenti di visualizzare e modificare una tabella di dati. Ad esempio, puoi utilizzare il componente Elenco prodotti per rappresentare i prodotti in un catalogo. Le informazioni vengono presentate in una tabella standard di HTML e tutte le modifiche vengono eseguite in **Modifica** contenente un widget BulkEditor. Questo Bulk Editor è lo stesso di quello accessibile da /etc/importers/bulkeditor.html o dal menu Strumenti. Il componente Elenco prodotti è stato configurato per funzionalità specifiche e limitate dell’editor in blocco. È possibile configurare ogni parte dell’Editor collettivo (o dei componenti derivati dall’Editor collettivo).
 
-Con l’editor collettivo, puoi aggiungere, modificare, eliminare, filtrare ed esportare le righe, salvare le modifiche e importare un set di righe. Ogni riga viene memorizzata come nodo sotto l’istanza del componente Elenco prodotti stessa. Ogni cella è una proprietà di ogni nodo. Si tratta di una scelta di progettazione che può essere facilmente modificata. Ad esempio, è possibile memorizzare i nodi altrove nell’archivio. Il ruolo del servlet di query consiste nel restituire l’elenco dei nodi da visualizzare; il percorso di ricerca è definito come istanza dell’elenco di prodotti.
+Con l’Editor collettivo, puoi aggiungere, modificare, eliminare, filtrare ed esportare le righe, salvare le modifiche e importare un set di righe. Ogni riga viene memorizzata come nodo sotto l’istanza del componente Elenco prodotti stessa. Ogni cella è una proprietà di ogni nodo. Si tratta di una scelta di progettazione che può essere facilmente modificata. Ad esempio, è possibile memorizzare i nodi altrove nell’archivio. Il ruolo del servlet di query consiste nel restituire l’elenco dei nodi da visualizzare; il percorso di ricerca è definito come istanza dell’elenco di prodotti.
 
-Il codice sorgente del componente Elenco prodotti è disponibile nel repository all’indirizzo /apps/geometrixx/components/productlist ed è composto da diverse parti, come tutti i componenti AEM:
+Il codice sorgente del componente Elenco prodotti è disponibile nell’archivio in /apps/geometrixx/components/productlist ed è composto da diverse parti come tutti i componenti di Adobe Experience Manager (AEM):
 
 * Rendering HTML: il rendering viene eseguito in un file JSP (/apps/geometrixx/components/productlist/productlist.jsp). JSP legge i sottonodi del componente Elenco prodotti corrente e li visualizza come riga di una tabella HTML.
-* Finestra di dialogo per modifica, in cui puoi definire la configurazione dell’editor di massa. Configura la finestra di dialogo in base alle esigenze del componente: colonne disponibili e possibili azioni eseguite sulla griglia o sulla ricerca. Consulta [proprietà di configurazione dell’editor in blocco](#bulk-editor-configuration-properties) per informazioni su tutte le proprietà di configurazione.
+* Finestra di dialogo per modifica, in cui puoi definire la configurazione dell’editor di massa. Configura la finestra di dialogo in base alle esigenze del componente: colonne disponibili e possibili azioni eseguite sulla griglia o sulla ricerca. Consulta [Proprietà di configurazione dell’editor in blocco](#bulk-editor-configuration-properties) per informazioni su tutte le proprietà di configurazione.
 
 Ecco una rappresentazione XML dei sottonodi della finestra di dialogo:
 
@@ -268,7 +264,7 @@ Ecco una rappresentazione XML dei sottonodi della finestra di dialogo:
 
 ### Proprietà di configurazione dell’editor in blocco {#bulk-editor-configuration-properties}
 
-È possibile configurare ogni parte dell’editor in blocco. Nella tabella seguente sono elencate tutte le proprietà di configurazione per l’editor bulk.
+È possibile configurare ogni parte dell’editor di massa. Nella tabella seguente sono elencate tutte le proprietà di configurazione per l&#39;editor in blocco.
 
 <table>
  <tbody>
@@ -457,7 +453,7 @@ Puoi configurare per ciascuna colonna:
 
 Colonne CSS e di sola lettura
 
-L’editor in blocco dispone di tre configurazioni di colonna:
+L’editor collettivo dispone di tre configurazioni di colonna:
 
 * Cell CSS class name (cellCls): nome di classe CSS aggiunto a ogni cella della colonna configurata.
 * Stile cella (cellStyle): stile HTML aggiunto a ogni cella della colonna configurata.
@@ -514,26 +510,26 @@ Il seguente esempio si trova nel componente productlist (/apps/geometrixx/compon
 
 Se la proprietà di configurazione della casella di controllo è impostata su true, tutte le celle della colonna vengono visualizzate come caselle di controllo. Una casella selezionata invia **true** al server Salva servlet, **false** altrimenti. Nel menu dell’intestazione puoi anche **seleziona tutto** o **seleziona nessuno**. Queste opzioni sono attivate se l&#39;intestazione selezionata è l&#39;intestazione di una colonna di una casella di controllo.
 
-Nell&#39;esempio precedente la colonna di selezione contiene solo caselle di controllo come checkbox=&quot;true&quot;.
+Nell&#39;esempio precedente, la colonna di selezione contiene solo caselle di controllo come checkbox=&quot;true&quot;.
 
 **Posizione forzata**
 
 I metadati di posizione forzati forcedPosition consentono di specificare la posizione della colonna all&#39;interno della griglia: 0 è la prima posizione e &lt;number of=&quot;&quot; columns=&quot;&quot;>-1 è l&#39;ultima posizione. Qualsiasi altro valore viene ignorato.
 
-Nell&#39;esempio precedente la colonna di selezione è la prima colonna denominata forcedPosition=&quot;0&quot;.
+Nell&#39;esempio precedente, la colonna di selezione è la prima colonna denominata forcedPosition=&quot;0&quot;.
 
 ### Query Servlet {#query-servlet}
 
 Per impostazione predefinita, il servlet Query si trova in `/libs/wcm/core/components/bulkeditor/json.java`. Puoi configurare un altro percorso per recuperare i dati.
 
-Il servlet Query funziona come segue: riceve una query GQL e le colonne da restituire, calcola i risultati e li invia nuovamente all’editor in blocco come flusso JSON.
+Il servlet Query funziona come segue: riceve una query GQL e le colonne da restituire, calcola i risultati e li invia nuovamente all’editor bulk come flusso JSON.
 
 Nel caso del componente Elenco prodotti, i due parametri inviati al servlet Query sono i seguenti:
 
 * query: &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
 * colonne: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
-e il flusso JSON restituito è il seguente:
+Il flusso JSON viene restituito come segue:
 
 ```
 {
@@ -556,7 +552,7 @@ Puoi estendere il servlet Query per restituire un modello di ereditarietà compl
 
 ### Salva servlet {#save-servlet}
 
-Nella configurazione predefinita dell’editor bulk ogni riga è un nodo e il percorso di questo nodo viene memorizzato nel record di riga. L’editor bulk mantiene il collegamento tra la riga e il nodo attraverso il percorso jcr. Quando un utente modifica la griglia, viene creato un elenco di tutte le modifiche. Quando un utente fa clic su **Salva**, a ogni percorso viene inviata una query POST con i valori delle proprietà aggiornati. Questa è la base del concetto Sling e funziona bene se ogni cella è una proprietà del nodo. Tuttavia, se il servlet Query viene implementato per eseguire il calcolo dell’ereditarietà, questo modello non può funzionare in quanto una proprietà restituita dal servlet Query può essere ereditata da un altro nodo.
+Nella configurazione predefinita dell’Editor collettivo ogni riga è un nodo e il percorso di questo nodo viene memorizzato nel record di riga. L’Editor collettivo mantiene il collegamento tra la riga e il nodo attraverso il percorso jcr. Quando un utente modifica la griglia, viene creato un elenco di tutte le modifiche. Quando un utente fa clic su **Salva**, a ogni percorso viene inviata una query POST con i valori delle proprietà aggiornati. Questa è la base del concetto Sling e funziona bene se ogni cella è una proprietà del nodo. Tuttavia, se il servlet Query viene implementato per eseguire il calcolo dell’ereditarietà, questo modello non può funzionare in quanto una proprietà restituita dal servlet Query può essere ereditata da un altro nodo.
 
 Il concetto del servlet di salvataggio è che le modifiche non vengono inviate direttamente a ciascun nodo, ma a un servlet che esegue il processo di salvataggio. Questo consente a questo servlet di analizzare le modifiche e salvare le proprietà sul nodo giusto.
 
@@ -564,14 +560,14 @@ Ogni proprietà aggiornata viene inviata al servlet nel seguente formato:
 
 * Nome parametro: &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
 
-   Esempio: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
+  Esempio: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
 * Valore: &lt;value>
 
-   Esempio: 12123
+  Esempio: 12123
 
 Il servlet deve sapere dove è memorizzata la proprietà catalogCode.
 
 Un’implementazione predefinita del servlet Save è disponibile all’indirizzo /libs/wcm/bulkeditor/save/POST.jsp e viene utilizzata nel componente Elenco prodotti. Prende tutti i parametri dalla richiesta (con un &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> e scrive le proprietà sui nodi utilizzando l’API JCR. Crea anche un nodo se non esiste (righe inserite nella griglia).
 
-Il codice predefinito non deve essere utilizzato così come è, in quanto reimplementa ciò che il server fa in modo nativo (un POST su &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) ed è quindi solo un buon punto di partenza per la creazione di un servlet Save che gestirà un modello di ereditarietà delle proprietà.
+Il codice predefinito non deve essere utilizzato così com&#39;è perché reimplementa ciò che il server fa in modo nativo (un POST su &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) ed è quindi solo un buon punto di partenza per la creazione di un servlet Save in grado di gestire un modello di ereditarietà delle proprietà.

@@ -1,30 +1,26 @@
 ---
 title: Modalità Sviluppatore
-seo-title: Developer Mode
-description: Modalità sviluppatore apre un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni sulla pagina corrente
-seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
-uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
+description: La modalità Sviluppatore apre un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni sulla pagina corrente.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '686'
 ht-degree: 2%
 
 ---
 
 # Modalità Sviluppatore{#developer-mode}
 
-Durante la modifica delle pagine in AEM, diversi [modalità](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) , inclusa la modalità Sviluppatore. Viene aperto un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni sulla pagina corrente. Le tre schede sono:
+Durante la modifica delle pagine in Adobe Experience Manager (AEM), diversi [modalità](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) , inclusa la modalità Sviluppatore. Viene aperto un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni sulla pagina corrente. Le tre schede sono:
 
 * **[Componenti](#components)** per visualizzare informazioni sulla struttura e sulle prestazioni.
 * **[Test](#tests)** per eseguire test e analizzare i risultati.
-* **[Errori](#errors)** per visualizzare eventuali problemi.
+* **[Errori](#errors)** per visualizzare eventuali problemi che si verificano.
 
 Questi aiutano uno sviluppatore a:
 
@@ -38,10 +34,9 @@ Questi aiutano uno sviluppatore a:
 >
 >* È disponibile solo nell’interfaccia touch (quando si modificano le pagine).
 >* Non è disponibile su dispositivi mobili o piccole finestre sul desktop (a causa di limitazioni di spazio).
-   >
-   >   * Ciò si verifica quando la larghezza è inferiore a 1024 px.
+>
+>   * Ciò si verifica quando la larghezza è inferiore a 1024 px.
 >* È disponibile solo per gli utenti che sono membri di `administrators` gruppo.
-
 
 >[!CAUTION]
 >
@@ -59,9 +54,8 @@ Questi aiutano uno sviluppatore a:
 >Consulta:
 >
 >* Articolo della Knowledge Base, [Risoluzione dei problemi relativi all’interfaccia touch dell’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), per ulteriori suggerimenti e strumenti.
->* Sessione AEM Gems su [Modalità sviluppatore AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
+>* Sessione AEM Gems su [Modalità sviluppatore AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
 >
-
 
 ## Apertura modalità sviluppatore {#opening-developer-mode}
 
@@ -81,8 +75,8 @@ Il pannello è diviso in due schede:
 
 Viene mostrata una struttura ad albero componente che:
 
-* Consente di definire la catena di componenti e modelli di cui viene eseguito il rendering sulla pagina (SLY, JSP, ecc.). La struttura può essere espansa per mostrare il contesto all’interno della gerarchia.
-* Mostra il tempo di calcolo lato server necessario per eseguire il rendering del componente.
+* Consente di definire la catena di componenti e modelli di cui viene eseguito il rendering sulla pagina (SLY, JSP e così via). La struttura può essere espansa per mostrare il contesto all’interno della gerarchia.
+* Mostra il tempo di calcolo lato server per eseguire il rendering del componente.
 * Consente di espandere la struttura e selezionare componenti specifici all&#39;interno della struttura. La selezione consente di accedere ai dettagli dei componenti, ad esempio:
 
    * Percorso archivio
@@ -105,7 +99,7 @@ Ogni voce di componente può mostrare (ad esempio):
    * tutti gli script di componenti utilizzati per eseguire il rendering del componente.
    * il percorso del contenuto dell’archivio per questo componente specifico.
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+  ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Modifica script**: un collegamento che:
 
@@ -116,11 +110,11 @@ Ogni voce di componente può mostrare (ad esempio):
    * Gerarchia all’interno del componente selezionato.
    * I tempi di rendering per il componente selezionato sono isolati, tutti i singoli componenti nidificati al suo interno e il totale combinato.
 
-   ![chlimage_1-15](assets/chlimage_1-15.png)
+  ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >
->Alcuni collegamenti puntano agli script in `/libs`. Tuttavia, queste sono solo a scopo di riferimento, **non deve** modifica qualsiasi elemento in `/libs`, poiché eventuali modifiche apportate potrebbero andare perse. Ciò è dovuto al fatto che questo ramo è soggetto a modifiche ogni volta che si aggiorna o si applica un hotfix/feature pack. Qualsiasi modifica necessaria deve essere apportata in `/apps`, vedi [Sovrapposizioni e sostituzioni](/help/sites-developing/overlays.md).
+>Alcuni collegamenti puntano agli script in `/libs`. Tuttavia, queste sono solo a scopo di riferimento, **non deve** modifica qualsiasi elemento in `/libs`, poiché eventuali modifiche apportate potrebbero andare perse. Questo perché questo ramo può subire modifiche ogni volta che aggiorni o applichi un hotfix o un feature pack. Apporta le modifiche necessarie in `/apps`. Consulta [Sovrapposizioni e sostituzioni](/help/sites-developing/overlays.md).
 
 ### Errori {#errors}
 
@@ -131,7 +125,7 @@ Si spera che **Errori** La scheda sarà sempre vuota (come sopra), ma quando si 
 * Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato all’interno di CRXDE Lite.
 * Un avviso se il componente apre una sessione di amministrazione.
 
-Ad esempio, in una situazione in cui viene chiamato un metodo non definito, l&#39;errore risultante verrà visualizzato in **Errori** scheda:
+Ad esempio, in una situazione in cui viene chiamato un metodo non definito, l’errore risultante viene visualizzato in **Errori** scheda:
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -143,4 +137,4 @@ Anche la voce del componente nella struttura della scheda Componenti verrà cont
 >
 >In AEM 6.2, le funzioni di test della modalità Sviluppatore sono state reimplementate come applicazione per strumenti standalone.
 >
->Per maggiori dettagli, consulta [Verifica dell’interfaccia utente](/help/sites-developing/hobbes.md).
+>Per informazioni dettagliate, consulta [Verifica dell’interfaccia utente](/help/sites-developing/hobbes.md).
