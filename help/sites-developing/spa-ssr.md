@@ -1,20 +1,16 @@
 ---
 title: Rendering lato server e SPA
-seo-title: SPA and Server-Side Rendering
 description: "SPA e rendering lato server"
-seo-description: null
-uuid: 27e26e3f-65d4-4069-b570-58b8b9e2a1ae
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: f923a3b7d6821f63d059f310de783b11bf3e8ec3
+source-git-commit: a66814fa065b7545ec39fe9109b4c5815fa199da
 workflow-type: tm+mt
-source-wordcount: '1751'
-ht-degree: 2%
+source-wordcount: '1718'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Per utilizzare le funzioni di rendering lato server dell’SPA descritte nel presente documento è necessario AEM 6.5.1.0 o versione successiva.
+>Per utilizzare le funzioni di rendering lato server dell’SPA descritte nel presente documento, è necessario disporre di Adobe Experience Manager (AEM) 6.5.1.0 o versione successiva.
 
 ## Panoramica {#overview}
 
@@ -38,7 +34,7 @@ Tuttavia, questo può portare a tempi di caricamento iniziali più lunghi, sopra
 
 SSR non è richiesto per tutti i progetti. Sebbene l’AEM supporti completamente la SSR JS per l’SPA, l’Adobe sconsiglia di attuarla sistematicamente per ogni progetto.
 
-Quando si decide di implementare SSR, è necessario innanzitutto stimare la complessità, l&#39;impegno e i costi aggiuntivi che la SSR rappresenta in modo realistico per il progetto, inclusa la manutenzione a lungo termine. Un’architettura SSR dovrebbe essere scelta solo quando il valore aggiunto supera chiaramente i costi stimati.
+Quando decidi di implementare SSR, devi innanzitutto stimare quali ulteriori complessità, sforzi e costi aggiuntivi SSR rappresentano in modo realistico per il progetto, inclusa la manutenzione a lungo termine. Un’architettura SSR dovrebbe essere scelta solo quando il valore aggiunto supera chiaramente i costi stimati.
 
 In genere, SSR fornisce un valore quando è presente un &quot;sì&quot; chiaro a una delle seguenti domande:
 
@@ -51,10 +47,10 @@ Solo quando ad almeno una di queste due domande viene risposto con un chiaro &qu
 
 Se [sono certi che il tuo progetto richieda l&#39;implementazione di SSR](/help/sites-developing/spa-ssr.md#when-to-use-ssr), la soluzione consigliata da Adobe è l’utilizzo di Adobe I/O Runtime.
 
-Per ulteriori informazioni su Adobe I/O Runtime, consulta
+Per ulteriori informazioni su Adobe I/O Runtime, vedi:
 
-* [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - Panoramica del servizio
-* [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - per la documentazione dettagliata sulla piattaforma
+* [https://developer.adobe.com/runtime/](https://developer.adobe.com/runtime/) - Panoramica del servizio
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs/) - per la documentazione dettagliata sulla piattaforma
 
 Le sezioni seguenti descrivono come Adobe I/O Runtime può essere utilizzato per implementare SSR per l’SPA in due modelli diversi:
 
@@ -63,13 +59,13 @@ Le sezioni seguenti descrivono come Adobe I/O Runtime può essere utilizzato per
 
 >[!NOTE]
 >
->L’Adobe consiglia un’area di lavoro Adobe I/O Runtime separata per ogni ambiente (stage, prod, test, ecc.). Ciò consente di implementare i modelli SDLC (System Development Life Cycle) tipici con versioni diverse di una singola applicazione distribuite in ambienti diversi. Consulta il documento [CI/CD per applicazioni Project App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) per ulteriori informazioni.
+>L’Adobe consiglia un’area di lavoro Adobe I/O Runtime separata per ogni ambiente (stage, prod, test e così via). Ciò consente di implementare i modelli SDLC (System Development Life Cycle) tipici con versioni diverse di una singola applicazione distribuite in ambienti diversi. Consulta il documento [CI/CD per applicazioni Project App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) per ulteriori informazioni.
 >
 >Un’area di lavoro separata non è necessaria per ogni istanza (Author, Publish) a meno che non vi siano differenze nell’implementazione runtime per tipo di istanza.
 
 ## Configurazione Remote Renderer {#remote-renderer-configuration}
 
-L’AEM deve sapere dove è possibile recuperare i contenuti renderizzati in remoto. Indipendentemente da [il modello che si sceglie di implementare per SSR,](#adobe-i-o-runtime) sarà necessario specificare a AEM come accedere a questo servizio di rendering remoto.
+L’AEM deve sapere dove è possibile recuperare i contenuti renderizzati in remoto. Indipendentemente da [il modello che si sceglie di implementare per SSR,](#adobe-i-o-runtime), è necessario specificare a AEM come accedere a questo servizio di rendering remoto.
 
 Questa operazione viene eseguita tramite **RemoteContentRenderer - Servizio OSGi di Configuration Factory**. Cerca la stringa &quot;RemoteContentRenderer&quot; nella console di configurazione della console Web all&#39;indirizzo `http://<host>:<port>/system/console/configMgr`.
 
@@ -77,7 +73,7 @@ Questa operazione viene eseguita tramite **RemoteContentRenderer - Servizio OSGi
 
 Per la configurazione sono disponibili i seguenti campi:
 
-* **Schema percorso contenuto** - Espressione regolare per far corrispondere una parte del contenuto, se necessario
+* **Schema percorso contenuto** : espressione regolare che corrisponde a una parte del contenuto, se necessario
 * **URL endpoint remoto** : URL dell’endpoint responsabile della generazione del contenuto
    * Utilizza il protocollo HTTPS protetto se non si trova nella rete locale.
 * **Intestazioni di richiesta aggiuntive** - Intestazioni aggiuntive da aggiungere alla richiesta inviata all’endpoint remoto
@@ -92,7 +88,7 @@ Per la configurazione sono disponibili i seguenti campi:
 
 >[!NOTE]
 >
->Questa configurazione sfrutta [Rendering contenuto remoto,](#remote-content-renderer) che dispone di opzioni di estensione e personalizzazione aggiuntive.
+>Questa configurazione utilizza [Rendering contenuto remoto,](#remote-content-renderer) che dispone di opzioni di estensione e personalizzazione aggiuntive.
 
 ## Flusso di comunicazione basato sull’AEM {#aem-driven-communication-flow}
 
@@ -110,7 +106,7 @@ Quando si utilizza SSR, il [flusso di lavoro di interazione dei componenti](/hel
 
 ## Flusso di comunicazione basato su Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
-La sezione precedente descrive l’implementazione standard e consigliata del rendering lato server per quanto riguarda l’SPA nell’AEM, in cui l’AEM esegue il bootstrapping e la trasmissione dei contenuti.
+La sezione precedente descrive l’implementazione standard e consigliata del rendering lato server per quanto riguarda l’SPA nell’AEM, in cui l’AEM esegue il bootstrapping e la distribuzione dei contenuti.
 
 In alternativa, SSR può essere implementato in modo che Adobe I/O Runtime sia responsabile dell&#39;avvio, invertendo efficacemente il flusso di comunicazione.
 
@@ -128,7 +124,7 @@ Entrambi i modelli sono validi e supportati dall’AEM. Tuttavia, si dovrebbero 
    <td>
     <ul>
      <li>L'AEM gestisce le librerie di iniezione dove necessario</li>
-     <li>Le risorse devono essere mantenute solo sull'AEM<br /> </li>
+     <li>Gestisci solo risorse su AEM<br /> </li>
     </ul> </td>
    <td>
     <ul>
@@ -143,7 +139,7 @@ Entrambi i modelli sono validi e supportati dall’AEM. Tuttavia, si dovrebbero 
     </ul> </td>
    <td>
     <ul>
-     <li>Le risorse Clientlib richieste dall’applicazione, come CSS e JavaScript, dovranno essere rese disponibili dallo sviluppatore AEM tramite <code><a href="/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet">allowProxy</a></code> proprietà<br /> </li>
+     <li>Le risorse Clientlib richieste dall’applicazione, come CSS e JavaScript, devono essere rese disponibili dallo sviluppatore AEM tramite <code><a href="/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet">allowProxy</a></code> proprietà<br /> </li>
      <li>Le risorse devono essere sincronizzate tra AEM e Adobe I/O Runtime<br /> </li>
      <li>Per abilitare la creazione dell'SPA, potrebbe essere necessario un server proxy per Adobe I/O Runtime</li>
     </ul> </td>
@@ -153,15 +149,15 @@ Entrambi i modelli sono validi e supportati dall’AEM. Tuttavia, si dovrebbero 
 
 ## Pianificazione per SSR {#planning-for-ssr}
 
-In genere è necessario eseguire il rendering lato server solo di una parte dell’applicazione. L’esempio comune è il contenuto che verrà visualizzato sopra la piega al caricamento iniziale della pagina, eseguito sul lato server. In questo modo si risparmia tempo distribuendo al client contenuti già sottoposti a rendering. Quando l’utente interagisce con l’SPA, il contenuto aggiuntivo viene riprodotto dal client.
+È necessario eseguire il rendering lato server solo di una parte dell&#39;applicazione. L’esempio comune è il contenuto visualizzato sopra la piega al caricamento iniziale della pagina, di cui viene eseguito il rendering sul lato server. In questo modo si risparmia tempo distribuendo al client contenuti già sottoposti a rendering. Quando l’utente interagisce con l’SPA, il contenuto aggiuntivo viene riprodotto dal client.
 
-Se stai valutando l’implementazione del rendering lato server per l’SPA, devi verificare quali parti dell’app saranno necessarie.
+Se stai valutando l’implementazione del rendering lato server per l’SPA, controlla quali parti dell’app sono necessarie.
 
 ## Sviluppo di un SPA utilizzando la SSR {#developing-an-spa-using-ssr}
 
 Il rendering dei componenti SPA poteva essere eseguito dal client (nel browser) o dal lato server. Quando viene eseguito il rendering lato server, le proprietà del browser come le dimensioni della finestra e la posizione non sono presenti. Pertanto, i componenti dell’SPA devono essere isomorfi, senza presupporre dove saranno resi.
 
-Per sfruttare SSR, devi distribuire il codice in AEM e su Adobe I/O Runtime, che è responsabile del rendering lato server. La maggior parte del codice sarà lo stesso, ma le attività specifiche del server saranno diverse.
+Per utilizzare SSR, distribuisci il codice in AEM e su Adobe I/O Runtime, responsabile del rendering lato server. La maggior parte del codice sarà lo stesso, tuttavia, le attività specifiche del server saranno diverse.
 
 ## SSR per l’SPA nell’AEM {#ssr-for-spas-in-aem}
 
@@ -172,7 +168,7 @@ Proprio come l’AEM supporta i framework SPA Angular e React pronti all’uso, 
 * React: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Per un esempio semplicistico, fare riferimento al [App We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Viene eseguito il rendering dell&#39;intero lato server applicazioni. Anche se non si tratta di un esempio reale, questo illustra ciò che è necessario per implementare la SSR.
+Per un esempio semplicistico, vedi [App We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Viene eseguito il rendering dell&#39;intero lato server applicazioni. Anche se non si tratta di un esempio reale, questo illustra ciò che è necessario per implementare la SSR.
 
 >[!CAUTION]
 >
@@ -180,7 +176,7 @@ Per un esempio semplicistico, fare riferimento al [App We.Retail Journal](https:
 
 >[!NOTE]
 >
->Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+>Qualsiasi progetto AEM deve utilizzare [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta i progetti SPA utilizzando React o Angular e utilizza l’SDK dell’SPA.
 
 ## Utilizzo di Node.js {#using-node-js}
 
@@ -194,7 +190,7 @@ Per le istanze AEM locali, è anche possibile implementare SSR utilizzando un’
 
 >[!NOTE]
 >
->Se SSR deve essere implementato tramite Node.js, l’Adobe consiglia un’istanza di Node.js separata per ogni ambiente AEM (authoring, pubblicazione, stage, ecc.).
+>Se SSR deve essere implementato tramite Node.js, l’Adobe consiglia un’istanza di Node.js separata per ogni ambiente AEM (authoring, pubblicazione, stage e così via).
 
 ## Rendering contenuto remoto {#remote-content-renderer}
 
@@ -210,7 +206,7 @@ Questo servizio è utilizzato internamente da [RemoteContentRendererRequestHandl
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-Il `RemoteContentRendererRequestHandlerServlet` può essere utilizzato per impostare a livello di programmazione la configurazione della richiesta. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implementazione predefinita del gestore di richieste fornita, ti consente di creare più configurazioni OSGi per mappare una posizione nella struttura del contenuto a un endpoint remoto.
+Il `RemoteContentRendererRequestHandlerServlet` può essere utilizzato per impostare a livello di programmazione la configurazione della richiesta. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implementazione predefinita del gestore di richieste fornita, ti consente di creare più configurazioni OSGi per mappare una posizione nella struttura del contenuto su un endpoint remoto.
 
 Per aggiungere un gestore di richieste personalizzato, implementa `RemoteContentRendererRequestHandler` di rete. Assicurarsi di impostare `Constants.SERVICE_RANKING` proprietà del componente a un numero intero maggiore di 100, che corrisponde alla classificazione `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -244,4 +240,4 @@ Di solito, il modello HTL di un componente pagina è il destinatario principale 
 
 ### Requisiti {#requirements}
 
-I servlet sfruttano Sling Model Exporter per serializzare i dati del componente. Per impostazione predefinita, entrambe le opzioni `com.adobe.cq.export.json.ContainerExporter` e `com.adobe.cq.export.json.ComponentExporter` sono supportati come adattatori del modello Sling. Se necessario, puoi aggiungere le classi a cui la richiesta deve essere adattata utilizzando `RemoteContentRendererServlet` e l&#39;implementazione `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Le classi aggiuntive devono estendere `ComponentExporter`.
+I servlet utilizzano Sling Model Exporter per serializzare i dati del componente. Per impostazione predefinita, entrambe le opzioni `com.adobe.cq.export.json.ContainerExporter` e `com.adobe.cq.export.json.ComponentExporter` sono supportati come adattatori del modello Sling. Se necessario, puoi aggiungere le classi a cui la richiesta deve essere adattata utilizzando `RemoteContentRendererServlet` e l&#39;implementazione `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Le classi aggiuntive devono estendere `ComponentExporter`.
