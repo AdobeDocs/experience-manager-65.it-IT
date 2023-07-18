@@ -1,6 +1,6 @@
 ---
 title: Arricchire i dati di prodotto con i contenuti AEM associati
-description: Scopri come gli esperti di marketing possono arricchire i dati dei prodotti con i contenuti associati provenienti da Adobe Experience Manager. Contenuti come risorse e Frammenti di esperienza nell’AEM possono essere associati ai prodotti commerce. Una volta associati, questi tipi di contenuto possono essere inseriti in modo dinamico in un segnaposto all’interno di una pagina di prodotto o di categoria. Questo consente agli addetti al marketing di indirizzare l'attività a specifiche pagine di prodotti con contenuti aggiuntivi, come immagini e video.
+description: Scopri come gli esperti di marketing possono arricchire i dati dei prodotti con i contenuti associati provenienti da Adobe Experience Manager, aggiungendo in modo dinamico contenuti di marketing alle pagine dei prodotti. Questo consente agli addetti al marketing di indirizzare specifiche pagine di prodotti con contenuti aggiuntivi, come immagini e video.
 sub-product: Commerce
 version: 6.5
 doc-type: feature-video
@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: a600acb7d65fbfa1806ef582642a6c5ac7859890
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '350'
 ht-degree: 2%
 
 ---
