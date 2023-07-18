@@ -1,25 +1,21 @@
 ---
 title: Tipi di nodo personalizzati
-seo-title: Custom Node Types
-description: L’AEM si basa su Sling e utilizza un archivio JCR con tipi di nodo offerti da entrambi, ma l’AEM fornisce anche una serie di tipi di nodo personalizzati
-seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
-uuid: f2022504-e433-4b42-9cc1-eef41086483a
+description: Adobe Experience Manager (AEM) è basato su Sling e utilizza un archivio JCR con tipi di nodo offerti da entrambi, ma AEM fornisce anche una serie di tipi di nodo personalizzati
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1883'
 ht-degree: 9%
 
 ---
 
 # Tipi di nodo personalizzati{#custom-node-types}
 
-Poiché l’AEM si basa su Sling e utilizza un archivio JCR, i tipi di nodo offerti da entrambi sono disponibili per l’uso:
+Poiché Adobe Experience Manager (AEM) è basato su Sling e utilizza un archivio JCR, i tipi di nodo offerti da entrambi sono disponibili per l’utilizzo:
 
 * [Tipi di nodo JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipi di nodo Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)

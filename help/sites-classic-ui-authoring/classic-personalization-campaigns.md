@@ -1,18 +1,14 @@
 ---
 title: Campaign Management
-seo-title: Campaign Management
 description: La gestione delle campagne offre agli esperti di marketing digitale l’opportunità di distribuire contenuti personalizzati e creare così esperienze dedicate per i visitatori. Consente di orchestrare campagne di marketing su web, e-mail e servizi mobili, coinvolgendo in tal modo i visitatori.
-seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
-uuid: 202d614b-a607-45de-8c24-1ee66b230315
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
@@ -37,7 +33,7 @@ Questo documento descrive i vari elementi che compongono le campagne. Informazio
 La gestione delle campagne è composta da vari elementi:
 
 * **Marchi**
-In AEM, i marchi sono l’unità di livello principale e formano una raccolta di **Campagne**.
+In Adobe Experience Manager (AEM), i brand sono l’unità di livello principale e formano una raccolta di **Campagne**.
 
 * **Campagne**
 Una campagna è una raccolta di singoli **Esperienze**.
@@ -51,13 +47,13 @@ Il contenuto mirato forma le varie esperienze, presentate al visitatore all’in
      Le pagine teaser possono:
 
       * presenta una serie di opzioni tra cui il visitatore può scegliere
-      * mostra un solo paragrafo teaser basato sul segmento del visitatore specifico; ad esempio, il paragrafo teaser mostrato potrebbe dipendere dall’età del visitatore.
+      * mostra un solo paragrafo teaser basato sul segmento visitatore specifico. Ad esempio, il paragrafo del teaser mostrato può dipendere dall’età del visitatore.
 
      In genere, una pagina teaser è un’azione temporanea che dura per un periodo di tempo specifico, fino a quando non viene sostituita dalla pagina teaser successiva.
 
    * **Newsletter**
 
-     [Comunicazioni e-mail](#emailmarketing) sono utilizzati per coinvolgere gli utenti e incoraggiarli a visitare il sito web. Questi di solito assumono la forma di una newsletter, inviata al **Lead** (generalmente raggruppati in **Elenchi**). **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità. Si consiglia di: [sfruttare Adobe Campaign e l’integrazione con l’AEM](/help/sites-administering/campaign.md).
+     [Comunicazioni e-mail](#emailmarketing) sono utilizzati per coinvolgere gli utenti e incoraggiarli a visitare il sito web. Questi di solito assumono la forma di una newsletter, inviata al **Lead** (raggruppati in **Elenchi**). **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità. Si consiglia di: [utilizzare Adobe Campaign e l’integrazione per l’AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -73,17 +69,17 @@ Il contenuto mirato forma le varie esperienze, presentate al visitatore all’in
 
   Le informazioni raccolte sui visitatori e su come contattarli costituiscono la base per i lead. **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
 
-  Si consiglia di: [sfruttare Adobe Campaign e l’integrazione con l’AEM](/help/sites-administering/campaign.md).
+  Si consiglia di: [utilizzare Adobe Campaign e l’integrazione per l’AEM](/help/sites-administering/campaign.md).
 
 * **Elenchi**
 
-  I lead vengono in genere raggruppati in elenchi in modo da poter intraprendere azioni collettive su di essi. Nota: **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
+  I lead sono raggruppati in elenchi in modo da poter intraprendere azioni collettive su di essi. Nota: **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
 
-  Si consiglia di: [sfrutta Adobe Campaign e l’integrazione con l’AEM.](/help/sites-administering/campaign.md)
+  Si consiglia di: [utilizza Adobe Campaign e l’integrazione per l’AEM.](/help/sites-administering/campaign.md)
 
 * **Segmenti**
 
-  I visitatori del sito hanno interessi e obiettivi diversi quando arrivano su un sito. L’analisi di questo dato in base a fattori quali l’attività sul sito web, le informazioni sul profilo registrate e l’attività su altri siti web, ti aiuta a definire i segmenti. Il contenuto può quindi essere mirato in modo specifico per le esigenze e gli interessi del visitatore in base ai segmenti di corrispondenza.
+  I visitatori del sito hanno interessi e obiettivi diversi quando arrivano su un sito. L’analisi di questo dato in base a fattori quali l’attività sul sito web, le informazioni sul profilo registrate e l’attività su altri siti web, ti aiuta a definire i segmenti. Il contenuto può quindi essere mirato in base alle esigenze e agli interessi del visitatore, in base ai segmenti di corrispondenza.
 
 * **MCM**
 

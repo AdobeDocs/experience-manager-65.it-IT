@@ -1,19 +1,15 @@
 ---
 title: Accesso alla raccolta di statistiche di utilizzo aggregate
-seo-title: Opting Into Aggregated Usage Statistics Collection
 description: Scopri come fornire il consenso esplicito alle statistiche di utilizzo aggregate.
-seo-description: Learn how to opt into aggregated usage statistics.
-uuid: 8bd0b870-4bea-42e1-8179-e900164591b6
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 3%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 3%
 
 ## Introduzione {#introduction}
 
-Puoi contribuire a migliorare Adobe Marketing Cloud inviando statistiche Adobi su come interagisci con l’AEM. Queste informazioni non contengono dati sui visitatori del sito della tua azienda e verranno utilizzate solo per aiutare Adobe a fornire, supportare e migliorare l’esperienza utente.
+Puoi contribuire a migliorare Adobe Experience Cloud inviando statistiche Adobi su come interagisci con Adobe Experience Manager (AEM). Queste informazioni non contengono dati sui visitatori del sito della tua azienda e vengono utilizzate solo per aiutare Adobe a fornire, supportare e migliorare l’esperienza utente.
 
 Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’interfaccia utente touch o la console web.
 
@@ -34,7 +30,7 @@ Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’int
 
 >[!NOTE]
 >
->Puoi anche rinunciare in qualsiasi momento utilizzando [Console web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) oppure non selezionando l&#39;opzione di consenso nella schermata di consenso AEM.
+>Puoi rinunciare in qualsiasi momento utilizzando [Console web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) oppure non selezionando l&#39;opzione di consenso nella schermata di consenso AEM.
 
 ## Consenso tramite l’interfaccia utente touch {#opt-in-by-using-the-touch-ui}
 

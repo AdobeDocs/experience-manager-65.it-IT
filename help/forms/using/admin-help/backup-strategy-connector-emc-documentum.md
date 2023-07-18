@@ -6,16 +6,16 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b759b936-5907-4311-a5cc-60f321476368
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
 
 # Strategia di backup per il connettore per gli utenti di EMC Documentum® {#backup-strategy-for-connector-for-emc-documentum-users}
 
-Se è installato il connettore per EMC Documentum®, oltre alle istruzioni riportate in questo capitolo, la strategia di backup e ripristino deve includere il backup (o il ripristino) del computer in cui è installato il sistema ECM corrispondente. Consultare la documentazione di ECM Documentum®.
+Se è installato il connettore per EMC Documentum®, oltre alle istruzioni riportate in questo capitolo, la strategia di backup e ripristino deve includere il backup (o il ripristino) del computer su cui è installato il sistema ECM. Consultare la documentazione di ECM Documentum®.
 
 Eseguire il backup dell’ambiente dei moduli AEM utilizzando l’archivio ECM ed eseguendo le seguenti attività:
 
