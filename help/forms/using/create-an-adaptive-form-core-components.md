@@ -9,9 +9,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1725'
 ht-degree: 3%
 
 ---
@@ -19,10 +19,16 @@ ht-degree: 3%
 
 # Creazione di componenti core basati su Adaptive Forms {#creating-an-adaptive-form-core-components}
 
+
+<span class="preview"> L’Adobe consiglia di utilizzare i Componenti core per [aggiungere un Forms adattivo a una pagina AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [creare un Forms adattivo indipendente](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | Questo articolo |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it) |
+
+**Si applica a:** ❎ dei componenti core del modulo adattivo ✅ [Componenti di base per moduli adattivi](/help/forms/using/create-adaptive-form.md).
+
 
 I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si rivelano, inoltre, dinamici e adattivi. AEM Forms fornisce un’interfaccia utente intuitiva per la creazione rapida di Adaptive Forms. L’interfaccia utente offre una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati e creare un modulo adattivo.
 
@@ -38,17 +44,13 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 * **Abilitare i componenti core Forms adattivi per il tuo ambiente**: è richiesto il progetto Archetipo AEM versione 41 o successiva per [abilitare i Componenti core per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Quando si abilitano i Componenti core per l’ambiente, viene **Forms adattivo (componente core)** Il modello e il tema Canvas vengono aggiunti al tuo ambiente.
 
-* **Un modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’azione &quot;look and feel&quot; e &quot;submit&quot; definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il modello denominato `blank` è supportato OOTB:
-
-   * Il `blank` Questo modello è incluso in ogni nuovo ambiente AEM Forms on-premise e AMS.
-   * È possibile installare il pacchetto di riferimento tramite Gestione pacchetti per aggiungere `blank` modello per l’ambiente AEM Forms on-premise e AMS.
-   * È inoltre possibile [creare un nuovo modello di Forms adattivo (Componenti core)](template-editor.md) da zero.
+* **Un modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’azione &quot;look and feel&quot; e &quot;submit&quot; definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo.
 
   >[!NOTE]
   >
   > In caso contrario, **Forms adattivo (componente core)** modello nell&#39;ambiente, [Abilitare i componenti core Forms adattivi per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Quando si abilitano i Componenti core per l’ambiente, viene **Forms adattivo (componente core)** viene aggiunto al tuo ambiente.
 
-* **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando applicate un tema, lo stile specificato viene riflesso sui componenti corrispondenti.  Il `Canvas` Il tema viene aggiunto per impostazione predefinita quando abiliti i componenti core per il tuo ambiente. È inoltre possibile [scaricare e personalizzare i temi di riferimento](create-or-customize-themes-for-adaptive-forms-core-components.md).
+* **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando applicate un tema, lo stile specificato viene riflesso sui componenti corrispondenti.  Il `Canvas` Il tema viene aggiunto per impostazione predefinita quando abiliti i componenti core per il tuo ambiente. È inoltre possibile [scaricare e personalizzare i temi standard](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
 * **Autorizzazioni**: aggiungi gli utenti a [!DNL forms-users] gruppo. I membri della [!DNL forms-users] dispongono delle autorizzazioni per creare un modulo adattivo. Per un elenco dettagliato dei gruppi di utenti specifici per i moduli, consulta [Gruppi e autorizzazioni](forms-groups-privileges-tasks.md).
 
@@ -137,6 +139,10 @@ Per configurare uno schema JSON o un modello dati modulo per il modulo:
 
 1. Clic **[!UICONTROL Fine]**.
 
+>[!NOTE]
+>
+> Puoi modificare lo schema JSON o il modello dati del modulo per un modulo adattivo utilizzando le proprietà Contenitore guida.
+
 ## Configurare un servizio di precompilazione  {#configure-prefill-service-for-form}
 
 Puoi utilizzare il servizio di precompilazione per compilare automaticamente i campi di un modulo adattivo utilizzando dati esistenti. Quando un utente apre un modulo, i valori di tali campi vengono precompilati. Operazioni disponibili:
@@ -155,13 +161,15 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 1. Seleziona un modello di dati modulo. Apri **[!UICONTROL Base]** scheda. Nel servizio di preriempimento, seleziona **[!UICONTROL Servizio preriempimento modello dati modulo]**.
 1. Clic **[!UICONTROL Fine]**. Il modulo adattivo è ora configurato per l’utilizzo della precompilazione del modello dati del modulo. Ora puoi utilizzare la [editor di regole](rule-editor.md) per creare regole per precompilare i campi del modulo.
 
-## Modificare le proprietà di un modello di modulo adattivo {#edit-form-model}
+<!--
+## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-1. Seleziona il modulo adattivo e tocca ![Informazioni pagina](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Apri proprietà]**. Viene visualizzata la pagina Proprietà modulo.
+1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
-1. Vai a **[!UICONTROL Modello modulo]** e scegliere un modello di modulo. Se il modulo adattivo non dispone di un modello di modulo, puoi scegliere uno schema JSON o un modello di dati del modulo. Se invece il modulo adattivo è già basato su un modello di modulo, è possibile passare a un altro modello dello stesso tipo. Ad esempio, se il modulo utilizza uno schema JSON, puoi passare facilmente a un altro schema JSON e, analogamente, se il modulo utilizza un modello dati del modulo, puoi passare a un altro modello dati del modulo.
+1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
-1. Tocca **[!UICONTROL Salva]** per salvare le proprietà.
+1. Tap **[!UICONTROL Save]** to save the properties.
+-->
 
 ## Passaggio successivo
 

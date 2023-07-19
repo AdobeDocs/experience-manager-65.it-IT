@@ -8,26 +8,30 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '1988'
 ht-degree: 3%
 
 ---
 
 
-# Introduzione al tema {#introduction-to-theme}
+# Creare o personalizzare un tema per moduli adattivi {#introduction-to-theme}
+
+<span class="preview"> L’Adobe consiglia di utilizzare i Componenti core per [aggiungere un Forms adattivo a una pagina AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [creare un Forms adattivo indipendente](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | Questo articolo |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
+**Si applica a:** ❎ dei componenti core del modulo adattivo ✅ [Componenti di base per moduli adattivi](/help/forms/using/themes.md).
+
 In AEM Forms 6.5, un tema è una libreria client AEM che puoi utilizzare per definire gli stili (look and feel) di un modulo adattivo. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando applicate un tema, lo stile specificato viene riflesso sui componenti corrispondenti. Un tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo e può essere riutilizzato in più Forms adattivi.
 
-## Temi di riferimento disponibili {#available-reference-theme}
+## Temi disponibili {#available-standard-theme}
 
-L’ambiente AEM 6.5 fornisce i temi di riferimento elencati di seguito per i Forms adattivi basati su Componenti core:
+L’ambiente AEM 6.5 fornisce i temi elencati di seguito per i Forms adattivi basati su Componenti core:
 
 * [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
@@ -49,13 +53,13 @@ Un tema è un pacchetto che include il file CSS, i file JavaScript e le risorse 
 
 ## Creare un tema
 
-AEM Forms 6.5 fornisce, i temi di riferimento elencati di seguito per Forms adattivo basato su Componenti core.
+AEM Forms 6.5 fornisce, i temi standard elencati di seguito per i Componenti core basati su Adaptive Forms.
 
 * [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-È possibile [personalizzare uno di questi temi di riferimento per creare un tema](#customize-a-theme-core-components).
+È possibile [personalizza uno di questi temi standard per creare un tema](#customize-a-theme-core-components).
 
 ## Personalizzare un tema {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -90,26 +94,27 @@ La personalizzazione di un tema si riferisce al processo di modifica e personali
 
 La creazione o la personalizzazione di un tema è un processo in più fasi. Per creare/personalizzare il tema, effettua le seguenti operazioni:
 
-1. [Clonare un tema di riferimento](#clone-git-repo-of-theme)
+1. [Clona un tema standard](#clone-git-repo-of-theme)
 1. [Personalizzare l&#39;aspetto del tema](#customize-the-theme)
 1. [Preparare il tema per la distribuzione locale](#generate-the-clientlib)
-1. [Distribuire il tema in un ambiente di test locale](#deploy-the-theme-on-a-local-testing-environment)
-1. [Test del tema con un modulo adattivo locale](#test-the-theme-with-a-local-adaptive-form)
-1. Distribuire il tema nell’ambiente di produzione
+1. [Distribuire il tema in un ambiente locale](#deploy-the-theme-on-a-local-environment)
+1. [Distribuire il tema nell’ambiente di produzione](#5-deploy-a-theme-on-your-production-environment)
 
-![Flusso di lavoro di personalizzazione tema](/help/forms/using/assets/custom-theme-steps.png)
+<!--
+ ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
+-->
 
-Gli esempi forniti nel documento sono basati su **Area di lavoro** ma è possibile clonare qualsiasi tema di riferimento e personalizzarlo utilizzando le stesse istruzioni. Queste istruzioni sono applicabili a qualsiasi tema, consentendo di modificare i temi in base alle esigenze specifiche.
+Gli esempi forniti nel documento sono basati su **Area di lavoro** ma è possibile clonare qualsiasi tema standard e personalizzarlo utilizzando le stesse istruzioni. Queste istruzioni sono applicabili a qualsiasi tema, consentendo di modificare i temi in base alle esigenze specifiche.
 
 #### 1. Clona l’archivio Git del tema {#clone-git-repo-of-theme}
 
-Per clonare un tema di riferimento per Forms adattivo basato su Componenti core, scegli uno dei seguenti temi di riferimento:
+Per clonare un tema standard per Forms adattivo basato su Componenti core, scegli uno dei seguenti temi standard:
 
 * [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Per clonare un tema di riferimento, effettuate le seguenti istruzioni:
+Per clonare un tema standard, attenersi alle istruzioni riportate di seguito.
 
 1. Apri il prompt dei comandi o la finestra del terminale nell’ambiente di sviluppo locale.
 
@@ -206,7 +211,7 @@ Per distribuire un tema in un’istanza AEM, è necessario convertirlo in una li
 
    ![Percorso libreria client](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Distribuire il tema in un ambiente di test locale {#deploy-the-theme-on-a-local-testing-environment}
+#### 4. Distribuire il tema in un ambiente locale {#deploy-the-theme-on-a-local-environment}
 
 Per distribuire il tema nell’ambiente di sviluppo o di test locale, effettua le seguenti operazioni:
 
@@ -222,38 +227,40 @@ Per distribuire il tema nell’ambiente di sviluppo o di test locale, effettua l
 
    ![Build libreria client](/help/forms/using/assets/mvndeploy.png)
 
-#### 5. Testare il tema con un modulo adattivo locale {#test-the-theme-with-a-local-adaptive-form}
+<!--
 
-Per applicare e testare il tema personalizzato con un modulo adattivo:
+#### 5. Test the theme with a local Adaptive Form {#test-the-theme-with-a-local-adaptive-form}
 
-**Applicare un tema durante la creazione di un modulo adattivo**
+To apply and test the customized theme with an Adaptive Form:
 
-1. Accedi all’istanza Autore di AEM Forms.
+**Apply theme while creating an Adaptive Form**
 
-1. Tocca **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Log in to your AEM Forms author instance. 
 
-1. Clic **Crea** > **Forms adattivo**. Viene visualizzata la procedura guidata per la creazione di un modulo adattivo.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Seleziona il modello di componente core in **Sorgente** scheda.
-1. Seleziona il tema in **Stile** scheda.
-1. Fai clic su **Crea**.
+1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
-Viene creato un modulo adattivo con il tema selezionato.
+1. Select the core component template in the **Source** tab.
+1. Select the theme in the **Style** tab.
+1. Click **Create**.
 
-**Applicare un tema a un modulo adattivo esistente**
+An Adaptive Form with the selected theme is created. 
 
-1. Accedi all’istanza Autore di AEM Forms.
+**Apply theme to an existing Adaptive Form**
 
-1. Tocca **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Log in to your AEM Forms author instance. 
 
-1. Seleziona un modulo adattivo e fai clic su Proprietà.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Per **Libreria client tema** , selezionare il tema.
+1. Select an Adaptive Form and click Properties. 
 
-1. Fai clic su **Salva e chiudi**.
+1. For the **Theme Client Library** option, select the theme. 
 
-Il tema selezionato viene applicato al modulo adattivo.
+1. Click **Save & Close**.
 
+The selected theme is applied to the Adaptive Form. 
+-->
 
 #### 5. Distribuire un tema nell’ambiente di produzione {#deploy-theme}
 
@@ -278,14 +285,17 @@ Dopo l’installazione del pacchetto, il tema è disponibile per la selezione.
 
 I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
-1. Accedi all’istanza Autore di AEM Forms.
+1. Accedi all’istanza di authoring AEM locale.
+1. Immetti le credenziali nella pagina di accesso di Experience Manager. Tocca **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Clic **Crea** > **Forms adattivo**.
+1. Seleziona un modello di Componenti core Forms adattivi e fai clic su **Successivo**. Il **Aggiungi proprietà** viene visualizzato
+1. Specifica la **Nome** modulo adattivo.
 
-1. Tocca **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+   >[!NOTE]
+   >
+   > * Per impostazione predefinita, il `adaptiveform.theme.canvas3` Il tema è selezionato.
+   > * Puoi scegliere un tema diverso da **Libreria client tema** menu a discesa.
 
-1. Clic **Crea** > **Forms adattivo**. Viene visualizzata la procedura guidata per la creazione di un modulo adattivo.
-
-1. Seleziona il modello di componente core in **Sorgente** scheda.
-1. Seleziona il tema in **Stile** scheda.
 1. Fai clic su **Crea**.
 
 I temi per moduli adattivi vengono utilizzati come parte di un modello di modulo adattivo per definire lo stile durante la creazione di un modulo adattivo.
