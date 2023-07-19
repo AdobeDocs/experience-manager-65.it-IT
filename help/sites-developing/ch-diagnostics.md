@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 1%
@@ -63,7 +63,7 @@ La sezione URL contiene collegamenti alle funzioni di ContextHub:
 
 * **Editor configurazione:** Apre il [Pagina Configurazione ContextHub](ch-configuring.md) dove è possibile configurare store, modalità di interfaccia utente e moduli di interfaccia utente.
 
-* **Configurazione dei moduli ContextHub:** Apre il file /etc/cloudsettings/default/contexthub.config.kernel.js, che contiene la rappresentazione dell&#39;oggetto JavaScript delle configurazioni dell&#39;archivio ContextHub.
+* **Configurazione dei moduli ContextHub:** Apre il file /etc/cloudsettings/default/contexthub.config.kernel.js, che contiene la rappresentazione dell’oggetto JavaScript delle configurazioni dell’archivio ContextHub.
 * **Configurazione dell’interfaccia utente di ContextHub:** Apre il file /etc/cloudsettings/default/contexthub.config.ui.js, che contiene la rappresentazione dell’oggetto JavaScript delle configurazioni della modalità di interfaccia utente di ContextHub.
 * **kernel.js:** Apre il file /etc/cloudsettings/default/contexthub.kernel.js, che contiene il codice sorgente delle librerie client che implementano il framework ContextHub, il motore dei segmenti e i tipi di archivio.
 * **ui.js:** Apre il file /etc/cloudsettings/default/contexthub.ui.js, che contiene il codice sorgente delle librerie client che implementano i tipi di moduli UI e interfaccia utente di ContextHub.

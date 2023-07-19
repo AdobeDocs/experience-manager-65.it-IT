@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 exl-id: 50785534-5784-4354-b123-5e640b7c0242
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,7 @@ I modelli vengono utilizzati per determinare la modalità di creazione delle ent
 >[!NOTE]
 >
 >Esiste un modello all’esterno di un’app, poiché può essere utilizzato da più app.
+>
 
 Consulta **[Modelli](/help/mobile/administer-mobile-apps.md)** per creare e gestire modelli nel dashboard e nell’archivio.
 
@@ -65,6 +66,7 @@ Consulta **[Utilizzo delle entità](/help/mobile/spaces-and-entities.md)** per c
 >[!NOTE]
 >
 >Se il modello non corrisponde a un contenuto AEM esistente, ad esempio il cliente ha creato un nuovo modello, sarà disponibile un’interfaccia utente che consentirà al cliente di creare una nuova entità.
+>
 
 ### Spazi nel modello di contenuto {#spaces-in-content-model}
 

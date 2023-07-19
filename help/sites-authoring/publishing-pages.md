@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1663'
 ht-degree: 59%
 
 ---
@@ -29,15 +29,14 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
 >* **Pubblicare/Annullare la pubblicazione**
-   >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
 >* **Attivare/Disattivare**
-   >  Sinonimi di pubblicare/annullare la pubblicazione.
+>  Sinonimi di pubblicare/annullare la pubblicazione.
 >
 >* **Replicare/Replica**
-   >  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
+>  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
 >
-
 
 >[!NOTE]
 >
@@ -47,7 +46,6 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >* Questo [il flusso di lavoro potrebbe essere stato personalizzato](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) dal tuo team di sviluppo.
 >* Verrà visualizzato brevemente un messaggio che informa che il flusso di lavoro è stato attivato.
 >
-
 
 ## Pubblicazione delle pagine {#publishing-pages-1}
 
@@ -270,14 +268,14 @@ Puoi determinare lo stato di pubblicazione di una pagina:
 
 * Nelle [informazioni generali sulla risorsa nella console Sites](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   ![schermata_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
+  ![schermata_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 
-   Lo stato di pubblicazione è indicato nelle viste [a schede](/help/sites-authoring/basic-handling.md#card-view), [a colonne](/help/sites-authoring/basic-handling.md#column-view) e [a elenco](/help/sites-authoring/basic-handling.md#list-view) nella console Sites.
+  Lo stato di pubblicazione è indicato nelle viste [a schede](/help/sites-authoring/basic-handling.md#card-view), [a colonne](/help/sites-authoring/basic-handling.md#column-view) e [a elenco](/help/sites-authoring/basic-handling.md#list-view) nella console Sites.
 
 * Nella [timeline](/help/sites-authoring/basic-handling.md#timeline)
 
-   ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
+  ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 
 * Nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information) durante la modifica di una pagina
 
-   ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)
+  ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)

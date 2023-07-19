@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 44%
+source-wordcount: '2245'
+ht-degree: 45%
 
 ---
 
@@ -67,7 +67,7 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 >
 >Un dispositivo viene rilevato come mobile se la larghezza è inferiore a 1024 px. Questo può essere anche il caso di una piccola finestra del desktop.
 
-* **Dispositivo mobile (ad es. iPad)**
+* **Dispositivo mobile (ad esempio iPad)**
 
   Il browser Componenti copre completamente la pagina in fase di modifica.
 
@@ -252,7 +252,7 @@ Ad esempio, potete correggere un riferimento interrotto all&#39;interno di un co
 
 ## Eventi - Timeline {#events-timeline}
 
-Per le risorse appropriate (ad esempio, pagine dalla console **Sites** o risorse dalla console **Risorse**) è possibile [utilizzare la timeline per visualizzare le attività recenti relative agli elementi selezionati](/help/sites-authoring/basic-handling.md#timeline).
+Per le risorse appropriate (ad esempio, pagine dalla console **Sites** o risorse dalla console **Assets**) è possibile utilizzare la [timeline per visualizzare le attività recenti relative agli elementi selezionati](/help/sites-authoring/basic-handling.md#timeline).
 
 Apri la console richiesta, quindi accedi alla risorsa desiderata e apri la **Timeline** utilizzando:
 
@@ -317,7 +317,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* A seconda delle caratteristiche della pagina, alcune modalità potrebbero non essere disponibili.
 >* L’accesso ad alcune modalità richiede le autorizzazioni/i privilegi appropriati.
 >* La modalità Sviluppatore non è disponibile sui dispositivi mobili a causa di restrizioni di spazio.
->* La [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Shift-M` consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
+>* La [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) consente di passare da **Anteprima** alla modalità attualmente selezionata (ad esempio **Modifica**, **Layout** e così via) e viceversa.
 >
 
 ## Selezione del percorso {#path-selection}

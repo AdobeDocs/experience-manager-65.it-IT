@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 787c0c25da2258f234d3c821038d62bf8ef68932
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2348'
 ht-degree: 3%
 
 ---
@@ -70,16 +70,16 @@ Consulta [Configurare Cloud Services Dynamic Media](/help/assets/config-dms7.md#
       * [Organizzare le risorse digitali](/help/assets/organize-assets.md#organize-digital-assets).
       * [Cercare risorse 3D](/help/assets/search-assets.md).
       * [Utilizzare predicati personalizzati per filtrare i risultati della ricerca](/help/assets/search-assets.md#custompredicates).
+
    * Visualizzare risorse 3D
 
       * [Visualizzare e interagire con risorse 3D](#viewing-three-d-assets).
       * [Gestione del predefinito visualizzatore dimensionale](/help/assets/managing-viewer-presets.md).
+
    * Utilizzare i metadati delle risorse 3D
 
       * [Gestire i metadati per le risorse digitali](/help/assets/metadata.md).
-      * [Schemi di metadati](/help/assets/metadata-schemas.md).
-
-
+      * [Schemi metadati](/help/assets/metadata-schemas.md).
 
 1. **Pubblicare risorse 3D**
 
@@ -125,11 +125,11 @@ Vedi anche [Visualizzare l’anteprima delle risorse tramite l’interfaccia sof
    | Visualizzazione | Descrizione | Azione del mouse | Azione schermo tattile |
    | --- | --- | --- | --- |
    | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Fai clic con il pulsante sinistro del mouse e trascina. | Premete un solo dito e trascinate. |
-   | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fai clic con il pulsante destro del mouse e trascina con il mouse. | Premete due dita + trascinate. |
+   | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fare clic con il pulsante destro del mouse e trascinare. | Premete due dita + trascinate. |
    | **Zoom fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Rotellina di scorrimento. | Pizzico a due dita. |
    | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic su. | Tocca due volte. |
-   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |  |  |
-   | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
+   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |   |   |
+   | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |   |   |
 
 1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Chiudi]** per tornare alla pagina Risorse.
 
@@ -150,7 +150,7 @@ Vedi anche [Visualizzare l’anteprima delle risorse tramite l’interfaccia sof
    * Nella parte superiore destra della pagina, seleziona **[!UICONTROL Anteprima]** per inserire **[!UICONTROL Anteprima]** modalità.
    * Elimina `/editor.html` dall’URL della pagina nel browser.
 
-Una risorsa 3D completamente interattiva come visualizzata in    ![Risorsa 3D visualizzata nel componente File 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+   ![Risorsa 3D visualizzata nel componente File 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
 Una risorsa 3D completamente interattiva come visualizzata in **[!UICONTROL Anteprima]** modalità.
 
 1. In **[!UICONTROL Anteprima]** eseguire una delle operazioni seguenti:
@@ -158,11 +158,11 @@ Una risorsa 3D completamente interattiva come visualizzata in **[!UICONTROL Ante
    | Visualizzazione | Descrizione | Azione del mouse | Azione schermo tattile |
    | --- | --- | --- | --- |
    | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Fai clic con il pulsante sinistro del mouse e trascina. | Premete un solo dito e trascinate. |
-   | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fai clic con il pulsante destro del mouse e trascina con il mouse. | Premete due dita + trascinate. |
+   | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fare clic con il pulsante destro del mouse e trascinare. | Premete due dita + trascinate. |
    | **Zoom fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Rotellina di scorrimento. | Pizzico a due dita. |
    | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic su. | Tocca due volte. |
-   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |  |  |
-   | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |  |  |
+   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |   |   |
+   | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |   |   |
 
 ## Informazioni sull&#39;utilizzo del componente 3D Media {#working-with-three-d-media-component}
 
@@ -287,8 +287,8 @@ In caso contrario, utilizza i due metodi seguenti per pubblicare risorse Dynamic
 
 * **[!UICONTROL URL]** - Utilizzo **[!UICONTROL URL]** se utilizzi un sistema di gestione dei contenuti web di terze parti e desideri collegare risorse 3D di Dynamic Media alle pagine web utilizzando il visualizzatore dimensionale.
 
-   Consulta [Collegare gli URL all’applicazione web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+  Consulta [Collegare gli URL all’applicazione web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
 * **[!UICONTROL Incorpora]** - Utilizzo **[!UICONTROL Incorpora]** quando desideri visualizzare una risorsa 3D di Dynamic Media incorporata in una pagina web utilizzando il visualizzatore dimensionale. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita in **[!UICONTROL Incorpora]** .
 
-   Consulta [Incorpora il visualizzatore Dynamic Media Video, Immagine o Dimensionale in una pagina web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+  Consulta [Incorpora il visualizzatore Dynamic Media Video, Immagine o Dimensionale in una pagina web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

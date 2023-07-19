@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Ad esempio:
 
 * [Personalizzazione di un componente](/help/sites-developing/components.md)
 
-   Ciò comportava la sovrapposizione di una definizione di componente:
+  Ciò comportava la sovrapposizione di una definizione di componente:
 
    * Creare una nuova cartella di componenti in `/apps/<website-name>/components/<MyComponent>` copiando un componente esistente:
 
@@ -73,7 +73,7 @@ Ad esempio:
 
 * [Personalizzazione delle pagine visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
-   Questo caso prevede la sovrapposizione di un servlet:
+  Questo caso prevede la sovrapposizione di un servlet:
 
    * Nell’archivio, copia gli script predefiniti:
 
@@ -91,7 +91,6 @@ Ad esempio:
 >1. copia elemento in `/libs` a `/apps`
 >1. apporta le modifiche in `/apps`
 
-
 ## Quando utilizzare le query JCR e quando non utilizzarle {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 Le query JCR sono uno strumento potente se utilizzato correttamente. Essi sono appropriati per:
@@ -99,7 +98,7 @@ Le query JCR sono uno strumento potente se utilizzato correttamente. Essi sono a
 * query reali degli utenti finali, ad esempio ricerche full-text sul contenuto.
 * occasioni in cui i contenuti strutturati devono essere trovati nell’intero archivio.
 
-   In questi casi, assicurati che le query vengano eseguite solo quando assolutamente necessario, ad esempio all’attivazione di componenti o all’invalidazione della cache (anziché ad esempio Passaggi dei flussi di lavoro, Gestori di eventi che attivano modifiche al contenuto, Filtri, ecc.).
+  In questi casi, assicurati che le query vengano eseguite solo quando assolutamente necessario, ad esempio all’attivazione di componenti o all’annullamento della validità della cache (anziché, ad esempio, Passaggi dei flussi di lavoro, Gestori di eventi che attivano modifiche al contenuto, Filtri e così via).
 
 Le query JCR non devono mai essere utilizzate per richieste di rendering puro. Ad esempio, le query JCR non sono appropriate per
 
@@ -112,6 +111,7 @@ Per il rendering del contenuto, utilizza l’accesso di navigazione alla struttu
 >[!NOTE]
 >
 >Se si utilizza [Query Builder](/help/sites-developing/querybuilder-api.md), utilizzi le query JCR, in quanto Query Builder genera query JCR dal punto di vista tecnico.
+>
 
 ## Considerazioni sulla sicurezza {#security-considerations}
 

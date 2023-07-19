@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Di seguito è riportato un elenco di consigli di Gestione prodotti per Adobe Exp
     </ol> </td>
   </tr>
   <tr>
-   <td><p>Ha usato CQ/AEM per molti anni.</p> <p>Ha esteso l’interfaccia utente del prodotto (ad esempio Amministratore sito) e creato componenti con ampie finestre di dialogo per modifica.</p> </td>
+   <td><p>Ha usato CQ/AEM per molti anni.</p> <p>Ha esteso l’interfaccia utente del prodotto (ad esempio, Amministratore sito) e creato componenti con ampie finestre di dialogo per modifica.</p> </td>
    <td><p>Esegui l’aggiornamento alla versione 6.5 e configura l’interfaccia classica come predefinita per l’authoring delle pagine per tutti gli utenti. Consulta <a href="#selecting-your-ui">Selezione dell’interfaccia utente</a>.</p> <p>Quindi avvia un progetto per applicare la personalizzazione e ottimizzare le finestre di dialogo dei componenti in formato Coral 3. Consulta <a href="#resources-to-help">Risorse per l’Aiuto</a>.<br /> </p> </td>
   </tr>
  </tbody>

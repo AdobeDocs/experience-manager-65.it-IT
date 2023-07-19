@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '634'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Un emulatore:
 * È basato su ExtJS.
 * Funziona sulla pagina DOM.
 * Il suo aspetto è regolato tramite CSS.
-* Supporta i plug-in (ad esempio il plug-in di rotazione per dispositivi mobili).
+* Supporta i plug-in (ad esempio, il plug-in di rotazione per dispositivi mobili).
 * È attivo solo sull’autore.
 * Il suo componente base è in `/libs/wcm/emulator/components/base`.
 
@@ -110,26 +110,26 @@ Gli emulatori mobili esistenti:
 * Sono riportati di seguito /libs/wcm/mobile/components/emulators.
 * Sono disponibili tramite il servlet JSON all’indirizzo:
 
-   http://localhost:4502/bin/wcm/mobile/emulators.json
+  http://localhost:4502/bin/wcm/mobile/emulators.json
 
 Quando il componente Pagina si basa sul componente Pagina mobile ( `/libs/wcm/mobile/components/page`), la funzionalità dell’emulatore viene integrata automaticamente nella pagina tramite il seguente meccanismo:
 
 * Il componente Pagina mobile `head.jsp` include il componente iniziale dell’emulatore associato al gruppo di dispositivi (solo in modalità di authoring) e il CSS di rendering del gruppo di dispositivi tramite:
 
-   `deviceGroup.drawHead(pageContext);`
+  `deviceGroup.drawHead(pageContext);`
 
 * Il metodo `DeviceGroup.drawHead(pageContext)` include il componente init dell’emulatore, ovvero chiama il `init.html.jsp` del componente emulatore. Se il componente dell’emulatore non ha un proprio `init.html.jsp` e si basa sull&#39;emulatore di base mobile ( `wcm/mobile/components/emulators/base)`, lo script di inizializzazione dell’emulatore di base per dispositivi mobili è denominato ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* Lo script di inizializzazione dell’emulatore di base per dispositivi mobili definisce tramite Javascript:
+* Lo script di inizializzazione dell’emulatore di base mobile definisce tramite JavaScript:
 
    * Configurazione di tutti gli emulatori definiti per la pagina (emulatorConfigs)
    * Il gestore dell’emulatore che integra le funzionalità dell’emulatore nella pagina tramite:
 
-      `emulatorMgr.launch(config)`;
+     `emulatorMgr.launch(config)`;
 
-      Il gestore degli emulatori è definito da:
+     Il gestore degli emulatori è definito da:
 
-      `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### Creazione di un emulatore mobile personalizzato {#creating-a-custom-mobile-emulator}
 
@@ -152,4 +152,5 @@ Per creare un emulatore mobile personalizzato:
    * Nome = `canRotate`, Tipo = `Boolean`, Valore = `true`: per includere la funzionalità di rotazione.
 
    * Nome = `touchScrolling`, Tipo = `Boolean`, Valore = `true`: per includere la funzionalità di scorrimento touch.
+
    Puoi aggiungere altre funzionalità definendo i tuoi plug-in.

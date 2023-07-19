@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 4%
 
 ---
@@ -62,39 +62,39 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
 * **Tipo**
 
-   Specifica se visualizzare i dati relativi ai membri della community o ai contenuti generati dagli utenti (UGC, User-Generated Content).
+  Specifica se visualizzare i dati relativi ai membri della community o ai contenuti generati dagli utenti (UGC, User-Generated Content).
 
-   Seleziona da:
+  Seleziona da:
 
    * `Members`
    * `Content`
 
-   Il valore predefinito è `Members`.
+  Il valore predefinito è `Members`.
 
 * **Titolo da visualizzare**
 
-   Titolo descrittivo da visualizzare sopra i dati, ad esempio `Trending Content`.
+  Titolo descrittivo da visualizzare sopra i dati, ad esempio `Trending Content`.
 Il valore predefinito non è un titolo.
 
 * **Numero di visualizzazioni**
 
-   Il numero di elementi da elencare.
+  Il numero di elementi da elencare.
 Il valore predefinito è 10.
 
 * **Tipo di attività**
 
-   Seleziona una delle seguenti opzioni:
+  Seleziona una delle seguenti opzioni:
 
    * `Views`(visite alle pagine)
    * `Posts`(creazione UGC)
    * `Follows`
    * `Likes`
 
-   L&#39;impostazione predefinita è Viste.
+  L&#39;impostazione predefinita è Viste.
 
 * **Periodo di tempo**
 
-   Seleziona una delle seguenti opzioni:
+  Seleziona una delle seguenti opzioni:
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -103,16 +103,16 @@ Il valore predefinito è 10.
    * `This year (since Jan 1st)`
    * `Total`
 
-   Il valore predefinito è `Total`.
+  Il valore predefinito è `Total`.
 
 * **Percorso contesto**
 
-   Consente di eseguire l’ambito dell’attività in un sottoinsieme del sito, ad esempio un blog specifico.
+  Consente di eseguire l’ambito dell’attività in un sottoinsieme del sito, ad esempio un blog specifico.
 L&#39;impostazione predefinita corrisponde all&#39;intero sito community.
 
 * **Aggregazione conteggio dei membri**
 
-   Se è deselezionato (disattivato), vengono conteggiati solo i post di livello superiore. Ad esempio, se il contesto è la pagina principale (impostazione predefinita), allora un `Activity Type` di `Posts` non mostrerà mai alcuna attività, in quanto non è possibile pubblicare contenuti sulla pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi su tutte le pagine discendenti.
+  Se è deselezionato (disattivato), vengono conteggiati solo i post di livello superiore. Ad esempio, se il contesto è la pagina principale (impostazione predefinita), allora un `Activity Type` di `Posts` non mostrerà mai alcuna attività, in quanto non è possibile pubblicare contenuti sulla pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi su tutte le pagine discendenti.
 Il valore predefinito è selezionato.
 
 ### Pagina di esempio con 4 componenti {#example-page-with-components}

@@ -4,9 +4,9 @@ description: Scopri come risolvere i problemi più comuni relativi a MSM e ottie
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -27,13 +27,13 @@ MSM registra diversi servlet che possono essere richiesti con i selettori sugli 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Utilizza questo su una pagina blueprint per recuperare l’elenco di tutte le Live Copy ad essa collegate, con informazioni sullo stato di Live Copy aggiuntive.
    * ad esempio:
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilizza questo nelle pagine Live Copy per recuperare informazioni avanzate sulla loro connessione con le loro pagine blueprint. Se la pagina non è una Live Copy, non viene restituito nulla.
    * ad esempio:
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Questi servlet generano messaggi del registro DEBUG attraverso il logger `com.day.cq.wcm.msm` che può anche essere utile.
 
@@ -81,7 +81,7 @@ In alternativa, puoi effettuare le seguenti operazioni:
 
 ### Perché vedo le pagine Live Copy con il suffisso “_msm_moved“? {#moved-pages}
 
-Se viene eseguito il rollout di una pagina blueprint, la pagina Live Copy verrà aggiornata, oppure verrà creata una nuova pagina Live Copy, se non esiste ancora (ad esempio, quando ne viene eseguito il rollout per la prima volta, oppure la pagina Live Copy è stata eliminata manualmente).
+Se viene eseguito il rollout di una pagina blueprint, la pagina Live Copy verrà aggiornata oppure, se non esiste ancora, ne verrà creata una nuova (ad esempio, quando viene eseguito il rollout per la prima volta, oppure la pagina Live Copy è stata eliminata manualmente).
 
 In quest’ultimo caso, tuttavia, se esiste una pagina senza una proprietà `cq:LiveRelationship` con lo stesso nome, la pagina verrà rinominata di conseguenza prima che venga creata la pagina Live Copy.
 

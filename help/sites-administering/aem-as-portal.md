@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6088'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Il portlet può essere configurato con le seguenti preferenze:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Questo è il percorso iniziale del portlet: definisce il contenuto visualizzato inizialmente.</p> <p><strong>Importante</strong>: se il portlet è configurato per connettersi alle istanze di authoring e pubblicazione AEM in esecuzione su un percorso di contesto diverso da<strong> /</strong>, è necessario attivare la forza <strong>CQUrlInfo</strong> nella configurazione Html Library Manager di queste istanze AEM (ad esempio tramite Felix Webconsole) o la modifica non funzioneranno e la finestra di dialogo delle preferenze non verrà visualizzata.</p> </td>
+   <td><p>Questo è il percorso iniziale del portlet: definisce il contenuto visualizzato inizialmente.</p> <p><strong>Importante</strong>: se il portlet è configurato per connettersi alle istanze di authoring e pubblicazione AEM in esecuzione su un percorso di contesto diverso da<strong> /</strong>, è necessario attivare la forza <strong>CQUrlInfo</strong> nella configurazione Html Library Manager di queste istanze AEM (ad esempio, tramite Felix Webconsole) o la modifica non funzionerà e la finestra di dialogo delle preferenze non verrà visualizzata.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -638,7 +638,7 @@ Utilizzare il componente Portlet per aggiungere finestre portlet alle pagine AEM
 Per utilizzare l&#39;AEM come portale, eseguire le operazioni seguenti:
 
 1. Installare il componente Portlet e le librerie condivise.
-1. Aggiungi il componente Portlet alla barra laterale.
+1. Aggiungi il componente Portlet al Sidekick.
 1. Configurare e distribuire l&#39;applicazione Web che contiene i portlet che si desidera visualizzare nel componente Portal.
 1. Aggiungi il componente Portlet a una pagina e seleziona il portlet da visualizzare.
 
@@ -664,11 +664,11 @@ Il file JAR Quickstart per AEM contiene i file dei componenti portlet. Per otten
 1. Copiare cq-portlet-director-sharedlibs-x.x.x.jar nel disco rigido. Utilizzare qualsiasi mezzo per ottenere il file, ad esempio FileVault o un client WebDAV.
 1. Spostare il file cq-portlet-director-sharedlibs.x.x.jar nella cartella della libreria condivisa del server applicazioni in modo che le classi siano disponibili per le applicazioni portlet distribuite.
 
-### Aggiunta del componente Portlet alla barra laterale {#adding-the-portlet-component-to-sidekick}
+### Aggiunta del componente Portlet al Sidekick {#adding-the-portlet-component-to-sidekick}
 
 Aggiungi il componente portlet al sistema paragrafo affinché sia disponibile per gli autori.
 
-1. Nella barra laterale fare clic sull&#39;icona del righello per accedere alla modalità Progettazione.
+1. In Sidekick, fare clic sull&#39;icona del righello per accedere alla modalità Progettazione.
 1. Accanto al `Design of par` sopra il primo paragrafo, fai clic su **Modifica**.
 
 1. In **Generale** categoria del componente, selezionare la casella di controllo accanto al componente Portlet e fare clic su OK.
@@ -708,7 +708,7 @@ Distribuire i portlet nel contenitore Web del server applicazioni in modo che si
 
 Utilizza il componente Portal per aggiungere una finestra portlet alla pagina web. Utilizza le proprietà del componente per specificare il portlet da visualizzare.
 
-1. Nella pagina web, trascina **Portlet** dal gruppo Generale della barra laterale alla pagina.
+1. Nella pagina web, trascina **Portlet** dal gruppo Generale nel Sidekick alla pagina.
 
    >[!NOTE]
    >
@@ -766,7 +766,7 @@ Per configurare il portlet:
 
    >[!NOTE]
    >
-   >Se il portlet è configurato per connettersi alle istanze di creazione e pubblicazione AEM in esecuzione in un percorso di contesto diverso da** /**, è necessario abilitare la forza **CQUrlInfo** nella configurazione Html Library Manager di queste istanze AEM (ad esempio tramite Felix Webconsole) o la modifica non funzioneranno e la finestra di dialogo delle preferenze non verrà visualizzata.
+   >Se il portlet è configurato per connettersi alle istanze di creazione e pubblicazione AEM in esecuzione in un percorso di contesto diverso da** /**, è necessario abilitare la forza **CQUrlInfo** nella configurazione Html Library Manager di queste istanze AEM (ad esempio, tramite Felix Webconsole) o la modifica non funzionerà e la finestra di dialogo delle preferenze non verrà visualizzata.
 
 1. Salva le modifiche di configurazione nel server dell’app.
 

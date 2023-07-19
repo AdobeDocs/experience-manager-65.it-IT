@@ -1,8 +1,8 @@
 ---
-title: Riferimento API di ContextHub Javascript
-seo-title: ContextHub Javascript API Reference
+title: Riferimento API JavaScript di ContextHub
+seo-title: ContextHub JavaScript API Reference
 description: L’API JavaScript ContextHub è disponibile per gli script quando il componente ContextHub è stato aggiunto alla pagina
-seo-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
+seo-description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
 uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5006'
+source-wordcount: '5007'
 ht-degree: 2%
 
 ---
 
-# Riferimento API di ContextHub Javascript{#contexthub-javascript-api-reference}
+# Riferimento API JavaScript di ContextHub{#contexthub-javascript-api-reference}
 
-L&#39;API JavaScript ContextHub è disponibile per gli script quando [Il componente ContextHub è stato aggiunto alla pagina](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
+L’API JavaScript di ContextHub è disponibile per gli script quando [Il componente ContextHub è stato aggiunto alla pagina](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
 ## Costanti ContextHub {#contexthub-constants}
 
@@ -67,11 +67,11 @@ Nella tabella seguente sono elencati i nomi degli eventi che si verificano per l
 | ContextHub.Constants.EVENT_UI_CONTAINER_OPENED | Generato quando viene aperta l’interfaccia utente di ContextHub | ui-container-open |
 | ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED | Generato quando l’interfaccia utente di ContextHub è compressa | ui-container-closed |
 | ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED | Generato quando una proprietà viene modificata | ui-property-modified |
-| ContextHub.Constants.EVENT_UI_RENDERED | Generato ogni volta che viene eseguito il rendering dell’interfaccia utente di ContextHub (ad esempio dopo una modifica della proprietà) | con rendering dell&#39;interfaccia utente |
+| ContextHub.Constants.EVENT_UI_RENDERED | Generato ogni volta che viene eseguito il rendering dell’interfaccia utente di ContextHub (ad esempio, dopo una modifica della proprietà) | con rendering dell&#39;interfaccia utente |
 | ContextHub.Constants.EVENT_UI_INITIALIZED | Generato quando il contenitore dell’interfaccia utente viene inizializzato | inizializzato dall&#39;interfaccia utente |
 | ContextHub.Constants.ACTIVE_UI_MODE | Indica la modalità interfaccia utente attiva | /_/active-ui-mode |
 
-## Riferimento API di ContextHub Javascript {#contexthub-javascript-api-reference-2}
+## Riferimento API JavaScript di ContextHub {#contexthub-javascript-api-reference-2}
 
 L&#39;oggetto ContextHub consente di accedere a tutti gli archivi.
 
@@ -391,7 +391,7 @@ A `boolean` valore:
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-Archivio che contiene dati JSON. I dati vengono recuperati da un servizio JSONP esterno o, facoltativamente, da un servizio che restituisce dati JSON. Specifica i dettagli del servizio utilizzando [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) quando si crea un&#39;istanza di questa classe.
+Archivio che contiene dati JSON. I dati vengono recuperati da un servizio JSONP esterno o, facoltativamente, da un servizio che restituisce dati JSON. Specifica i dettagli del servizio utilizzando [`init`](/help/sites-developing/contexthub-api.md#init-name-config) quando si crea un&#39;istanza di questa classe.
 
 L’archivio utilizza la persistenza in memoria (variabile JavaScript). I dati del Negozio sono disponibili solo per la durata della pagina.
 
@@ -484,9 +484,9 @@ inizializza l&#39;oggetto ContextHub.Store.JSONPStore.
          * auto: //
          * true: https://
          * false: https://
+
       * timeout: (numero) il tempo di attesa della risposta del servizio JSONP prima del timeout, in millisecondi.
       * ttl: tempo minimo in millisecondi che intercorre tra le chiamate al servizio JSONP. (consultare la [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) funzione ).
-
 
 #### queryService(reload) {#queryservice-reload}
 
@@ -816,7 +816,7 @@ Analizza un valore stringa come JSON e lo converte in un oggetto JavaScript.
 
 **Restituisce**
 
-Un oggetto JavaScript.
+Oggetto JavaScript.
 
 **Esempio**
 
@@ -1109,7 +1109,7 @@ Restituisce i tipi di punto vendita registrati come candidati. Recupera i candid
 
 **Parametri**
 
-* **storeType:** (Stringa) Nome del tipo di archivio. Consulta la `storeType` parametro di [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) funzione.
+* **storeType:** (Stringa) Nome del tipo di archivio. Consulta la `storeType` parametro di [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) funzione.
 
 **Restituisce**
 
@@ -1121,7 +1121,7 @@ Restituisce un tipo di archivio dai candidati registrati. Se più di un tipo di 
 
 **Parametri**
 
-* storeType: (stringa) il nome del candidato dell’archivio. Consulta la `storeType` parametro di [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) funzione.
+* storeType: (stringa) il nome del candidato dell’archivio. Consulta la `storeType` parametro di [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) funzione.
 
 **Restituisce**
 
@@ -1133,7 +1133,7 @@ Restituisce i nomi dei tipi di punto vendita registrati come candidati. Questa f
 
 **Restituisce**
 
-Matrice di valori stringa, in cui ogni stringa è lo storetype con cui è stato registrato il candidato dell&#39;archivio. Consulta la `storeType` parametro di [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) funzione.
+Matrice di valori stringa, in cui ogni stringa è lo storetype con cui è stato registrato il candidato dell&#39;archivio. Consulta la `storeType` parametro di [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) funzione.
 
 #### registerStoreCandidate(store, storeType, priority, apply) {#registerstorecandidate-store-storetype-priority-applies}
 

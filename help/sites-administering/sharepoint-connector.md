@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1563'
 ht-degree: 3%
 
 ---
@@ -37,6 +37,7 @@ Tutte le funzionalità vengono implementate utilizzando i servizi web nativi di 
 >Il connettore SharePoint è supportato anche con AEM 6.1 service pack 2. Il connettore non supporta più il montaggio dell’archivio virtuale e, pertanto, non può essere montato. Se desideri accedere all’archivio di Sharepoint utilizzando le API Java, utilizza l’implementazione dell’archivio JCR del connettore Sharepoint nel progetto.
 >
 >L&#39;installazione, la configurazione, la gestione e le operazioni IT del server SharePoint e della relativa infrastruttura IT non rientrano nell&#39;ambito del presente documento. Consulta la documentazione del fornitore su [SharePoint](https://www.microsoft.com/sharepoint) per informazioni su questi argomenti. Il connettore richiede che queste parti dell&#39;infrastruttura siano installate, configurate e gestite correttamente.
+>
 
 ## Guida introduttiva {#getting-started}
 

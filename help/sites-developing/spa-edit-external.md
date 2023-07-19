@@ -2,9 +2,9 @@
 title: Modifica di un SPA esterno in Adobe Experience Manager
 description: Questo documento descrive i passaggi consigliati per caricare un SPA autonomo in un’istanza Adobe Experience Manager, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2440'
 ht-degree: 1%
 
 ---
@@ -237,7 +237,7 @@ Il `TestPage` dopo l’aggiunta del componente virtuale, il componente si presen
 >
 >Assicurati che `AEMText` il componente ha il suo `resourceType` nella configurazione per abilitare questa funzione.
 
-Ora puoi implementare le modifiche all’AEM seguendo i passaggi descritti nella sezione [Verificare la modifica del contenuto di testo su AEM](#verify-text-edit). Viene visualizzato un segnaposto per il file attualmente non esistente `text_20` nodo.
+Ora puoi implementare le modifiche all’AEM seguendo i passaggi descritti nella sezione [Verifica della modifica del contenuto di testo su AEM](#verify-text-edit). Viene visualizzato un segnaposto per il file attualmente non esistente `text_20` nodo.
 
 ![Nodo text_20 in AEM](assets/external-spa-text20-aem.png)
 

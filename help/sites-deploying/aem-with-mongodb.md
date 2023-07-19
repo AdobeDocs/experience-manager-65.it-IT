@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '6408'
 ht-degree: 0%
@@ -165,7 +165,7 @@ mongodburi=mongodb://aem:aempassword@mongodbserver1.customer.com:27000,mongodbse
 #Name of MongoDB database to use
 db=aem
 
-#Store binaries in custom BlobStore e.g. FileDataStore
+#Store binaries in custom BlobStore for example, FileDataStore
 customBlobStore=true
 
 cache=2048
@@ -178,16 +178,13 @@ Dove:
 Il server MongoDB a cui AEM deve connettersi. Vengono stabilite connessioni a tutti i membri noti del set di repliche predefinito. Se si utilizza MongoDB Cloud Manager, la sicurezza del server è abilitata. Pertanto, la stringa di connessione deve contenere un nome utente e una password appropriati. Le versioni non aziendali di MongoDB supportano solo l’autenticazione tramite nome utente e password. Per ulteriori informazioni sulla sintassi della stringa di connessione, consultare [documentazione](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
-Nome del database. Il valore predefinito per l’AEM è 
-`aem-author`.
+Nome del database. Il valore predefinito per l’AEM è `aem-author`.
 
 * `customBlobStore`
-Se la distribuzione memorizza i file binari nel database, questi fanno parte del working set. Per questo motivo, si consiglia di non conservare dati binari all’interno di MongoDB, preferendo un archivio dati alternativo come un 
-`FileSystem` archivio dati su un NAS.
+Se la distribuzione memorizza i file binari nel database, questi fanno parte del working set. Per questo motivo, si consiglia di non conservare dati binari all’interno di MongoDB, preferendo un archivio dati alternativo come un `FileSystem` archivio dati su un NAS.
 
 * `cache`
-Dimensione della cache in megabyte. Questo spazio viene distribuito tra le varie cache utilizzate in 
-`DocumentNodeStore`. Il valore predefinito è 256 MB. Tuttavia, le prestazioni di lettura Oak traggono vantaggio da una cache più ampia.
+Dimensione della cache in megabyte. Questo spazio viene distribuito tra le varie cache utilizzate in `DocumentNodeStore`. Il valore predefinito è 256 MB. Tuttavia, le prestazioni di lettura Oak traggono vantaggio da una cache più ampia.
 
 * `blobCacheSize`
 I BLOB utilizzati di frequente possono essere memorizzati nella cache dall’AEM per evitare di recuperarli dall’archivio dati. Questa operazione ha un impatto maggiore sulle prestazioni, in particolare quando si memorizzano i BLOB nel database MongoDB. Tutti gli archivi dati basati su file system usufruiscono della cache su disco a livello di sistema operativo.
@@ -210,16 +207,13 @@ cacheSizeInMB=128
 Dove:
 
 * `minRecordLength`
-Dimensioni in byte. I file binari di dimensioni inferiori o uguali a queste vengono memorizzati nell&#39;archivio nodi documento. Invece di memorizzare l’ID del BLOB, viene memorizzato il contenuto del binario. Se i file binari sono maggiori di queste dimensioni, l&#39;ID del file binario viene memorizzato come proprietà del documento nell&#39;insieme dei nodi. Il corpo del file binario viene memorizzato nel file 
-`FileDataStore` su disco. 4096 byte è una dimensione tipica del blocco del file system.
+Dimensioni in byte. I file binari di dimensioni inferiori o uguali a queste vengono memorizzati nell&#39;archivio nodi documento. Invece di memorizzare l’ID del BLOB, viene memorizzato il contenuto del binario. Se i file binari sono maggiori di queste dimensioni, l&#39;ID del file binario viene memorizzato come proprietà del documento nell&#39;insieme dei nodi. Il corpo del file binario viene memorizzato nel file `FileDataStore` su disco. 4096 byte è una dimensione tipica del blocco del file system.
 
 * `path`
-Percorso della directory principale dell’archivio dati. Per una distribuzione MongoMK, questo percorso deve essere un file system condiviso disponibile per tutte le istanze AEM. In genere viene utilizzato un server NAS (Network Attached Storage). Per implementazioni cloud come Amazon Web Services, il 
-`S3DataFileStore` è disponibile anche.
+Percorso della directory principale dell’archivio dati. Per una distribuzione MongoMK, questo percorso deve essere un file system condiviso disponibile per tutte le istanze AEM. In genere viene utilizzato un server NAS (Network Attached Storage). Per implementazioni cloud come Amazon Web Services, il `S3DataFileStore` è disponibile anche.
 
 * `cacheSizeInMB`
-Dimensione totale della cache binaria in MB. Viene utilizzato per memorizzare in cache dati binari inferiori a 
-`maxCacheBinarySize` impostazione.
+Dimensione totale della cache binaria in MB. Viene utilizzato per memorizzare in cache dati binari inferiori a `maxCacheBinarySize` impostazione.
 
 * `maxCachedBinarySize`
 Dimensione massima in byte di un file binario memorizzato nella cache binaria. Se si utilizza un archivio dati basato su file system, si sconsiglia di utilizzare valori elevati per la cache dell’archivio dati, in quanto i file binari sono già memorizzati nella cache dal sistema operativo.
@@ -550,6 +544,7 @@ echo "{nThreads:32,fileSizeMB:1000,r:true,mmf:true}" | mongoperf
 L&#39;output del secondo test deve essere considerevolmente superiore al primo, indicando le prestazioni di trasferimento della memoria.
 
 >[!NOTE]
+>
 Durante l&#39;esecuzione dei test, controllare le statistiche sull&#39;utilizzo di I/O per le macchine virtuali in questione nel sistema di monitoraggio del sistema operativo. Se indicano valori inferiori al 100% per le letture I/O, potrebbe verificarsi un problema con la macchina virtuale.
 
 **Verificare le prestazioni di scrittura dell’istanza MongoDB primaria**
@@ -660,6 +655,7 @@ Le impostazioni predefinite di Dispatcher consentono l’apertura di Criteri sul
 I CSP consentono di perfezionare i criteri. Tuttavia, in un’applicazione complessa, le intestazioni CSP devono essere sviluppate con cautela, in quanto i criteri troppo restrittivi possono interrompere parti dell’interfaccia utente.
 
 >[!NOTE]
+>
 Per ulteriori informazioni su come funziona, consulta [Pagina OWASP sull&#39;informativa sulla sicurezza dei contenuti](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Ridimensionamento {#sizing}
@@ -683,4 +679,5 @@ Per risolvere il problema, assicurarsi di eseguire prima l&#39;installazione con
 Se l’AEM è in esecuzione in un’implementazione di MongoMK persistence manager, [i nomi delle pagine non possono superare i 150 caratteri.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
+>
 Consulta la [Documentazione di MongoDB](https://docs.mongodb.com/manual/reference/limits/) così potrai acquisire familiarità con le limitazioni e le soglie note di MongoDB.

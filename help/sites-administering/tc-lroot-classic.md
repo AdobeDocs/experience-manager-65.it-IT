@@ -12,9 +12,9 @@ discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ La procedura seguente utilizza l’interfaccia utente classica per creare una di
 
       * Il codice della lingua supportato è un codice a due lettere minuscole, come definito dallo standard ISO-639-1
       * Il codice del paese supportato è in lettere minuscole o maiuscole, come definito dallo standard ISO 3166
+
    1. Seleziona il Modello e fai clic su Crea.
 
    ![newsletter](assets/newpagefr.png)
@@ -54,7 +55,7 @@ La procedura seguente utilizza l’interfaccia utente classica per creare una di
    |---|---|
    | auto | Utilizza il comportamento delle pagine padre |
    | ignora | Non crea una copia di questa pagina e dei relativi elementi figlio |
-   | `<language>+` (ad esempio, francese+) | Copia la pagina e tutti i relativi elementi figlio da tale lingua |
+   | `<language>+` (ad esempio, Francese+) | Copia la pagina e tutti i relativi elementi figlio da tale lingua |
    | `<language>` (ad esempio, francese) | Copia solo la pagina da tale lingua |
 
 1. Fare clic su OK per chiudere la finestra di dialogo.

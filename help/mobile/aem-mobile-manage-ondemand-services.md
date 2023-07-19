@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -46,6 +46,7 @@ Con l’app Verifica preliminare Mobile On Demand puoi visualizzare tutti i prog
 >[!NOTE]
 >
 >L’app Verifica preliminare AEM viene utilizzata per visualizzare in anteprima i contenuti e sfogliare le pagine. Per informazioni approfondite sulla verifica preliminare dell’app, fai clic su [qui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>
 
 ### Come procedere {#getting-ahead}
 

@@ -2,9 +2,9 @@
 title: Creazione e organizzazione di pagine con AEM
 description: Come creare e gestire le pagine con AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2526'
 ht-degree: 60%
 
 ---
@@ -37,10 +37,10 @@ La struttura di un sito web può essere considerata una struttura ad albero che 
 Di seguito è riportato un esempio tratto dal sito We.Retail, in cui una pagina di trekking utilizza i pantaloncini ( `desert-sky-shorts`) è accessibile:
 
 * Ambiente di authoring
-   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Ambiente di pubblicazione
-   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 A seconda della configurazione dell’istanza, utilizza `/content` potrebbe essere facoltativo nell’ambiente di pubblicazione.
 
@@ -209,12 +209,14 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
    * **Titolo**:
 
       * Questo viene presentato all’utente ed è obbligatorio.
+
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome deriva dal titolo.
       * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
       * Tu **impossibile inviare caratteri non validi** nel **Nome** campo. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
+
    >[!NOTE]
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
@@ -341,6 +343,7 @@ AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si r
 
       * Seleziona la destinazione facendo clic sulla miniatura della destinazione.
       * Fai clic su **Avanti** per continuare.
+
    * Utilizzare **Indietro** per tornare alla specifica del nome della pagina.
 
    >[!NOTE]
@@ -386,7 +389,7 @@ Tuttavia, se il numero di pagine interessate è superiore a un limite definito, 
       * **Ora** inizia subito l’esecuzione del processo asincrono.
       * **In seguito** consente di definire quando verrà avviato il processo asincrono.
 
-         ![Spostamento asincrono delle pagine](assets/asynchronous-page-move.png)
+        ![Spostamento asincrono delle pagine](assets/asynchronous-page-move.png)
 
 Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato processi asincroni** in](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) **Navigazione globale** -> **Strumenti** -> **Operazioni** -> **Processi**.
 
@@ -441,7 +444,6 @@ Puoi creare cartelle per organizzare file e pagine.
 >* Le azioni standard Sposta, Copia, Incolla, Elimina, Modifica, Pubblica, Annulla pubblicazione e Visualizza/Modifica proprietà possono essere eseguite in una cartella.
 >* Le cartelle non sono disponibili per la selezione all’interno di una Live Copy.
 >
-
 
 1. Apri **Sites** e passare alla posizione desiderata.
 1. Per aprire l&#39;elenco delle opzioni, selezionare **Crea** dalla barra degli strumenti

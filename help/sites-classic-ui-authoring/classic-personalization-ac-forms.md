@@ -8,9 +8,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ Adobe Campaign Prima di tutto, verifica che la connessione tra le istanze di aut
 >[!NOTE]
 >
 >Assicurati che le **acMapping** proprietà nel file della pagina **jcr:content** nodo impostato su **mapRecipient** o **profilo** quando si utilizza rispettivamente Adobe Campaign 6.1.x o Adobe Campaign Standard
+>
 
 ### Creazione di un modulo {#creating-a-form}
 
@@ -100,7 +101,7 @@ Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulter
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. Configura i campi aggiunti facendo doppio clic su di essi. Il **Adobe Campaign** scheda ti consente di collegare il campo a un campo nella tabella dei destinatari di Adobe Campaign. Puoi anche specificare se il campo fa parte della chiave di riconciliazione, che consente di riconoscere i destinatari già presenti nel database di Adobe Campaign.
+1. Configurare i campi aggiunti facendo doppio clic su di essi. Il **Adobe Campaign** scheda ti consente di collegare il campo a un campo nella tabella dei destinatari di Adobe Campaign. Puoi anche specificare se il campo fa parte della chiave di riconciliazione, che consente di riconoscere i destinatari già presenti nel database di Adobe Campaign.
 
    >[!CAUTION]
    >

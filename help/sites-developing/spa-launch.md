@@ -11,9 +11,9 @@ topic-tags: spa
 discoiquuid: 6c320633-ce0b-4eb1-bb54-05e1a514d139
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -34,4 +34,4 @@ Per informazioni su come integrare l’SPA con Adobe Experience Platform Launch,
 >
 >La KB a cui si fa riferimento è stata creata per abilitare l&#39;integrazione di Adobe Experience Platform Launch con SPA che non sfrutta l&#39;editor AEM SPA. Questi metodi devono anche consentire all’integrazione Adobe Experience Platform Launch di coesistere con l’SPA che è stato creato per utilizzare l’Editor SPA.
 >
->L’utilizzo di Redux insieme alle librerie SPA JavaScript non è stato completamente esplorato. Il supporto di Redux è pianificato in una versione futura dell’editor SPA.
+>L’utilizzo di Redux insieme alle librerie JavaScript SPA non è stato completamente esplorato. Il supporto di Redux è pianificato in una versione futura dell’editor SPA.

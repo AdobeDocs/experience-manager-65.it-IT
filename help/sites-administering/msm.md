@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2667'
+source-wordcount: '2668'
 ht-degree: 34%
 
 ---
@@ -307,7 +307,7 @@ La forma di base della Live Copy dispone di:
 
 #### Live Copy con pagine non Live Copy {#live-copy-with-non-live-copy-pages}
 
-Quando crei una Live Copy in AEM puoi visualizzare e navigare attraverso il ramo Live Copy e utilizzare le normali funzionalità AEM sul ramo Live Copy. Ciò significa che tu o un processo potete creare nuove risorse (pagine e/o paragrafi) all’interno del ramo Live Copy (ad esempio `myCanadaOnlyProduct`).
+Quando crei una Live Copy in AEM puoi visualizzare e navigare attraverso il ramo Live Copy e utilizzare le normali funzionalità AEM sul ramo Live Copy. Ciò significa che tu o un processo potete creare nuove risorse (pagine e/o paragrafi) all’interno del ramo Live Copy (ad esempio, `myCanadaOnlyProduct`).
 
 * Tali risorse non hanno alcuna relazione live con le pagine sorgente/blueprint e non sono sincronizzate.
 * Si possono verificare scenari che MSM gestisce come casi speciali. Ad esempio, quando crei una pagina con la stessa posizione e lo stesso nome nei rami sorgente/blueprint e Live Copy. Per tali situazioni vedi [Conflitti di rollout MSM](/help/sites-administering/msm-rollout-conflicts.md) per ulteriori informazioni.

@@ -12,9 +12,9 @@ discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2729'
 ht-degree: 0%
 
 ---
@@ -163,11 +163,13 @@ Di seguito è riportata la procedura da seguire per creare una configurazione co
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
+
    1. Crea una nuova cartella denominata `crx3` in `aem-standby/crx-quickstart/install`
 
    1. Crea la configurazione dell’archivio dati e inseriscila in `aem-standby/crx-quickstart/install/crx3`. In questo esempio, il file da creare è:
 
       * org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
+
    1. Modifica i file e crea le configurazioni necessarie.
 
    Di seguito sono riportati alcuni file di configurazione per una tipica istanza in standby:
@@ -305,7 +307,7 @@ Nel caso in cui l’istanza primaria non riesca per qualsiasi motivo, puoi impos
 >
 >È inoltre necessario modificare i file di configurazione in modo che corrispondano alle impostazioni utilizzate per l’istanza primaria.
 
-1. Andare alla posizione in cui è installata l&#39;istanza in standby e arrestarla.
+1. Andare alla posizione in cui è installata l&#39;istanza di standby e arrestarla.
 
 1. Nel caso in cui sia configurato un load balancer con la configurazione, a questo punto è possibile rimuovere il primario dalla configurazione del load balancer.
 1. Eseguire il backup di `crx-quickstart` cartella dalla cartella di installazione in standby. Può essere utilizzato come punto di partenza quando si imposta una nuova modalità di standby.

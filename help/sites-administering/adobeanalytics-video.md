@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1747'
 ht-degree: 2%
 
 ---
@@ -97,7 +97,7 @@ Nella tabella seguente vengono descritte le variabili CQ predefinite fornite per
   </tr>
   <tr>
    <td>eventdata.events.a.media.timePlayed</td>
-   <td>Inviato ogni volta che viene attivata una milestone, insieme a questo evento viene inviato anche il numero di secondi trascorsi dall’utente a guardare il segmento specificato. ad es. eventX=21<br /> </td>
+   <td>Inviato ogni volta che viene attivata una milestone, insieme a questo evento viene inviato anche il numero di secondi trascorsi dall’utente a guardare il segmento specificato. ad esempio, eventX=21<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.view </td>
@@ -290,7 +290,7 @@ Questo metodo è simile al metodo Milestones con la differenza che le milestone 
 
 1. Impostate l&#39;offset del brano.
 
-   * e.g.10,50,75,100
+   * ad esempio,10,50,75,100
 
    Inoltre, le informazioni inviate ad Adobe Analytics sono meno personalizzabili; sono disponibili solo 3 variabili per la mappatura:
 
@@ -343,7 +343,8 @@ Quando si utilizza il metodo ** secondi precedenti**, le chiamate di Adobe Analy
 
 1. Impostare lo scostamento del brano su un numero qualsiasi di secondi,
 
-   * es. 6
+   * ad esempio, 6
+
    >[!NOTE]
    >
    >Il campo Offset tracciamento accetta solo numeri interi superiori a 0

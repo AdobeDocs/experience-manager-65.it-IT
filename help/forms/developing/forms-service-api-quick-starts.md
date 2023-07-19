@@ -11,7 +11,7 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 0%
@@ -1974,7 +1974,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene precompilato un mo
 * `convertDataSource`: converte un `org.w3c.dom.Document` oggetto a un `com.adobe.idp.Document` oggetto. Questo metodo accetta un `org.w3c.dom.Document` come parametro di input e restituisce un `com.adobe.idp.Document` oggetto.
 * `renderPOForm`: utilizza l’API Java del servizio Forms per eseguire il rendering di un modulo di ordine di acquisto dinamico. Il `com.adobe.idp.Document` oggetto restituito da `convertDataSource` viene utilizzato per precompilare il modulo.
 
-   Tutti questi metodi vengono richiamati dall’interno del servlet Java di `doPost` metodo. (vedere [Precompilazione di Forms con layout fluibili](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
+  Tutti questi metodi vengono richiamati dall’interno del servlet Java di `doPost` metodo. (vedere [Precompilazione di Forms con layout fluibili](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
 
 ```java
 /*
@@ -2346,7 +2346,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene elaborato un modul
              if (processState == 1)
              {
  
-                 //Write the data back to to the client web browser
+                 //Write the data back to the client web browser
                  ServletOutputStream oOutput = resp.getOutputStream();
                  Document calData = formOut.getOutputContent();
  

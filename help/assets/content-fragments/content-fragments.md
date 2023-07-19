@@ -4,9 +4,9 @@ description: Scopri come i frammenti di contenuto in Adobe Experience Manager (A
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1991'
 ht-degree: 93%
 
 ---
@@ -32,13 +32,13 @@ I frammenti di contenuto contengono contenuto strutturato:
 I frammenti di contenuto possono essere consegnati anche in formato JSON, utilizzando le funzionalità di esportazione Sling Model (JSON) dei componenti core di AEM. Questo tipo di consegna:
 
 * consente di utilizzare il componente per gestire gli elementi di un frammento da consegnare;
-* consente la consegna in massa, aggiungendo più componenti core per frammenti di contenuto nella pagina utilizzata per la consegna API.
+* consente la consegna in massa, aggiungendo più componenti core per frammenti di contenuto nella pagina utilizzata per la consegna API
 
 Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, configurazione, manutenzione e utilizzo dei frammenti di contenuto:
 
 * [Abilita funzionalità frammento di contenuto per la tua istanza](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md): come abilitare, creare e definire i modelli
-* [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md): come creare frammenti di contenuto, quindi modificarli, pubblicarli e farvi riferimento.
+* [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md): come creare frammenti di contenuto, quindi modificarli, pubblicarli e farvi riferimento
 * [Varianti: authoring dei contenuti di frammenti](/help/assets/content-fragments/content-fragments-variations.md): come creare il contenuto di un frammento e quindi varianti del contenuto principale
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md): come utilizzare la sintassi markdown per il frammento
 * [Utilizzo di contenuti associati](/help/assets/content-fragments/content-fragments-assoc-content.md): come aggiungere contenuti associati
@@ -55,10 +55,9 @@ Più avanti e nelle pagine seguenti sono illustrate le attività di creazione, c
 >* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/assets-api-content-fragments.md)
 >* [API GraphQL di AEM per l’utilizzo con Frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si distinguono in base al meccanismo di consegna, come segue:
 
-* Canale fisico, ad esempio desktop o mobile.
+* Canale fisico; ad esempio, desktop, dispositivi mobili.
 * Forma di consegna in un canale fisico, ad esempio “pagina dei dettagli di un prodotto”, “pagina della categoria del prodotto” per desktop oppure “web mobile”, “app mobile” per dispositivi mobili.
 
 Tuttavia, probabilmente non vorrai utilizzare esattamente gli stessi contenuti per tutti i canali: vorrai piuttosto ottimizzarli in base ai singoli canali.
@@ -156,9 +155,9 @@ Le risorse possono essere utilizzate con un frammento di contenuto in diversi mo
    * Viene definita la posizione della risorsa.
    * Per ulteriori informazioni consulta [Inserimento di risorse nel frammento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) nell’editor di frammenti.
 
-   >[!NOTE]
-   >
-   >Le risorse visive inserite nel frammento di contenuto stesso sono associate al paragrafo precedente. Quando il frammento viene aggiunto a una pagina e quindi viene aggiunto del contenuto intermedio, queste risorse si spostano in relazione a tale paragrafo.
+  >[!NOTE]
+  >
+  >Le risorse visive inserite nel frammento di contenuto stesso sono associate al paragrafo precedente. Quando il frammento viene aggiunto a una pagina e quindi viene aggiunto del contenuto intermedio, queste risorse si spostano in relazione a tale paragrafo.
 
 * Come **Contenuto associato**
 
@@ -204,13 +203,13 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
    * Possono essere aggiunte solo a elementi di testo su più righe (qualsiasi tipo di frammento).
    * Sono associate al testo che precede (paragrafo).
 
-      >[!CAUTION]
-      >
-      >Le risorse possono essere rimosse (inavvertitamente) da un frammento se si passa al formato Testo normale.
+     >[!CAUTION]
+     >
+     >Le risorse possono essere rimosse (inavvertitamente) da un frammento se si passa al formato Testo normale.
 
-      >[!NOTE]
-      >
-      >È inoltre possibile aggiungere le risorse come [contenuto aggiuntivo (intermedio)](/help/sites-authoring/content-fragments.md#using-associated-content) quando si utilizza un frammento su una pagina, utilizzando Contenuto associato o risorse dal Browser risorse.
+     >[!NOTE]
+     >
+     >È inoltre possibile aggiungere le risorse come [contenuto aggiuntivo (intermedio)](/help/sites-authoring/content-fragments.md#using-associated-content) quando si utilizza un frammento su una pagina, utilizzando Contenuto associato o risorse dal Browser risorse.
 
 * **Contenuto associato**
 
@@ -231,11 +230,11 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
       * oppure in un secondo tempo:
 
          * visualizzando e modificando le **Proprietà** del frammento dalla console;
-         * modificando i **Metadati** nell’editor di frammenti.
+         * modificando i **Metadati** nell’editor di frammenti
 
-   >[!CAUTION]
-   >
-   >I profili di elaborazione dei metadati non sono applicabili ai frammenti di contenuto.
+  >[!CAUTION]
+  >
+  >I profili di elaborazione dei metadati non sono applicabili ai frammenti di contenuto.
 
 * **Principale**
 
@@ -243,9 +242,9 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 
       * Ogni frammento di contenuto dispone di un’istanza Principale.
       * L’elemento Principale non può essere eliminato.
+
    * L’elemento Principale è accessibile nella sezione **[Varianti](/help/assets/content-fragments/content-fragments-variations.md)** dell’editor di frammenti.
    * l’elemento Principale non è una variante in sé, ma è la base di tutte le varianti.
-
 
 * **Varianti**
 

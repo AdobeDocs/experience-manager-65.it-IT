@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '732'
 ht-degree: 9%
 
 ---
@@ -32,7 +32,7 @@ Il componente page di un SPA non fornisce gli elementi HTML dei suoi componenti 
 
 ## Gestione dei modelli di pagina {#page-model-management}
 
-La risoluzione e la gestione del modello di pagina sono delegate a un [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) modulo. L&#39;SPA deve interagire con `PageModelManager` modulo quando viene inizializzato per recuperare il modello della pagina iniziale e registrarsi per gli aggiornamenti del modello, per lo più prodotto quando l’autore modifica la pagina tramite l’Editor pagina. Il `PageModelManager` è accessibile dal progetto SPA come pacchetto npm. Interprete tra l&#39;AEM e l&#39;SPA, il `PageModelManager` deve accompagnare l’SPA.
+La risoluzione e la gestione del modello di pagina sono delegate a un [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) modulo. L&#39;SPA deve interagire con `PageModelManager` modulo quando viene inizializzato per recuperare il modello della pagina iniziale e registrarsi per gli aggiornamenti del modello, per lo più prodotto quando l’autore modifica la pagina tramite l’Editor pagina. Il `PageModelManager` è accessibile dal progetto SPA come pacchetto npm. Interprete tra l&#39;AEM e l&#39;SPA, il `PageModelManager` deve accompagnare l’SPA.
 
 Per consentire l’authoring della pagina, una libreria client denominata `cq.authoring.pagemodel.messaging` per fornire un canale di comunicazione tra l’SPA e l’editor pagina. Se il componente Pagina SPA eredita dalla pagina wcm/core, allora sono disponibili le seguenti opzioni per rendere `cq.authoring.pagemodel.messaging` categoria librerie client disponibile:
 
@@ -82,7 +82,7 @@ Le proprietà delle metarisorse che descrivono il contenuto dell’SPA:
 
 ## Metaproprietà {#meta-properties}
 
-* `cq:wcmmode`: modalità WCM degli editor (ad esempio pagina, modello)
+* `cq:wcmmode`: modalità WCM degli editor (ad esempio, pagina, modello)
 * `cq:pagemodel_root_url`: URL del modello principale dell’app. Fondamentale quando si accede direttamente a una pagina figlio, poiché il modello di pagina figlio è un frammento del modello principale dell’app. Il ` [PageModelManager](/help/sites-developing/spa-page-component.md)` quindi ricompone sistematicamente il modello iniziale dell&#39;applicazione come ingresso nell&#39;applicazione dal relativo punto di ingresso principale.
 
 * `cq:pagemodel_router`: attiva o disattiva la ` [ModelRouter](/help/sites-developing/spa-routing.md)` del `PageModelManager` libreria

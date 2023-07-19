@@ -2,10 +2,10 @@
 title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 97%
+source-wordcount: '791'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query G
 * selezionare l’**Endpoint** appropriato per la configurazione Sites da utilizzare per le query;
 * inserire direttamente nuove query;
 * creare e accedere a **[query persistenti](/help/sites-developing/headless/graphql-api/persisted-queries.md)**;
-* eseguire le query per visualizzare immediatamente i risultati;
+* eseguire le query per visualizzare immediatamente i risultati
 * gestire **variabili di query**;
 * salvare e gestire **query persistenti**;
 * pubblicare o annullare la pubblicazione di **query persistenti** (ad esempio, a/da `dev-publish`);
@@ -60,7 +60,7 @@ Puoi inserire la nuova query nell’editor, che si trova nel pannello centrale a
 A questo punto è sufficiente iniziare a digitare. L’editor, inoltre:
 
 * mostra ulteriori informazioni sugli elementi al passaggio del mouse;
-* fornisce funzioni quali evidenziazione della sintassi, completamento automatico e suggerimento automatico.
+* fornisce funzioni quali evidenziazione della sintassi, completamento automatico e suggerimento automatico
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Puoi eseguire immediatamente una nuova query oppure caricare ed eseguire una que
 In entrambi i casi, la query visualizzata nel pannello dell’editor è quella che verrà eseguita quando:
 
 * tocchi o fai clic sull’icona **Esegui query**;
-* utilizzi la scelta rapida di tastiera `Control-Enter`.
+* utilizzi la scelta rapida di tastiera `Control-Enter`
 
 ## Variabili di query {#query-variables}
 

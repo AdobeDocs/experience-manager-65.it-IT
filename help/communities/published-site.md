@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Passa al nuovo sito al momento della pubblicazione {#browse-to-new-site-on-publish}
 
-Dopo la pubblicazione del sito delle community appena creato, passare all&#39;URL visualizzato durante la creazione del sito, ma sul server di pubblicazione, ad esempio:
+Dopo la pubblicazione del sito delle community appena creato, individuare l&#39;URL visualizzato durante la creazione del sito, ma nel server di pubblicazione, ad esempio:
 
 * URL autore = https://localhost:4502/content/sites/engage/en.html
 * URL pubblicazione = https://localhost:4503/content/sites/engage/en.html
@@ -106,7 +106,6 @@ Osserva che la pagina Calendario è la home page perché il modello del sito di 
 >
 >* [Componenti community](/help/communities/author-communities.md) (per autori)
 >* [Nozioni di base su componenti, funzioni e funzioni](/help/communities/essentials.md) (per sviluppatori)
-
 
 ### Collegamento forum {#forum-link}
 

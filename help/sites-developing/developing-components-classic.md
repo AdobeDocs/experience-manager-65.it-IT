@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2393'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ Per sviluppare nuovi componenti per l’AEM basati su componenti esistenti, è p
 
    * `cq:dialog` - finestra di dialogo per l’interfaccia touch
    * `dialog` - finestra di dialogo per l’interfaccia classica
-   * `cq:editConfig` comportamento dei componenti nell&#39;ambiente di modifica (ad esempio, trascinamento della selezione)
+   * `cq:editConfig` - comportamento dei componenti nell&#39;ambiente di modifica (ad esempio, trascinamento della selezione)
    * `design_dialog` - finestra di dialogo per la modalità progettazione (solo interfaccia classica)
 
 1. Attiva il nuovo componente nel sistema paragrafo:

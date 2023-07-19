@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5903'
+source-wordcount: '5902'
 ht-degree: 0%
 
 ---
@@ -400,7 +400,7 @@ In alcuni casi, l&#39;alternanza tra le modalità di compattazione completa e co
       </ul> </li>
      <li>Spazio su disco ottenuto dalla pulizia della revisione
       <ul>
-       <li>Lo spazio viene recuperato solo al termine della fase di pulizia. Il completamento della fase di pulizia è contrassegnato dal messaggio di registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". La dimensione del post-cleanup è {} ({} byte) e lo spazio recuperato {} ({} byte). Il peso/profondità della mappa di compattazione è {}/{} ({} byte/{})."</li>
+       <li>Lo spazio viene recuperato solo al termine della fase di pulizia. Il completamento della fase di pulizia è contrassegnato dal messaggio di registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". La dimensione di post-pulizia è {} ({} byte) e spazio recuperato {} ({} byte). Peso/profondità mappa compattazione è {}/{} ({} byte/{}).".</li>
       </ul> </li>
      <li>Si è verificato un problema durante la pulizia della revisione
       <ul>

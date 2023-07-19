@@ -13,9 +13,9 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 2%
 
 ---
@@ -60,15 +60,15 @@ Per accedere alla console Gruppi:
    * La struttura del sito community deve includere una funzione di gruppo.
    * Queste schermate sono riprese dall&#39;esercitazione introduttiva dopo [creazione di gruppi al momento della pubblicazione](/help/communities/published-site.md).
 
-   ![create-group](assets/create-group.png)
+  ![create-group](assets/create-group.png)
 
 * Seleziona la **Cartella Gruppi** per aprirlo.
 
-   All’apertura, vengono visualizzati tutti i gruppi esistenti, siano essi creati durante l’authoring o la pubblicazione.
+  All’apertura, vengono visualizzati tutti i gruppi esistenti, siano essi creati durante l’authoring o la pubblicazione.
 
-   Da questa console Gruppi è possibile creare nuovi gruppi.
+  Da questa console Gruppi è possibile creare nuovi gruppi.
 
-   ![create-new-group](assets/create-new-group.png)
+  ![create-new-group](assets/create-new-group.png)
 
 * Seleziona la **Crea gruppo** pulsante.
 
@@ -78,34 +78,34 @@ Per accedere alla console Gruppi:
 
 * **Titolo gruppo community**
 
-   Titolo da visualizzare per il gruppo.
+  Titolo da visualizzare per il gruppo.
 Il titolo del gruppo viene visualizzato nel sito pubblicato.
 
 * **Descrizione gruppo community**
 
-   Descrizione del gruppo.
+  Descrizione del gruppo.
 
 * **Directory principale gruppo community**
 
-   Percorso della directory principale del gruppo.
+  Percorso della directory principale del gruppo.
 La directory principale predefinita è il sito padre, ma la directory principale può essere spostata in qualsiasi posizione all’interno del sito web. Non è consigliabile modificarlo.
 
 * **Lingue aggiuntive gruppo community disponibili** menu
 
-   Utilizzare il menu a discesa per selezionare le lingue disponibili per i gruppi community. Il menu visualizza tutte le lingue in cui è stato creato il sito della community principale. Gli utenti possono scegliere tra queste lingue per creare gruppi in più lingue in questo singolo passaggio. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti community.
+  Utilizzare il menu a discesa per selezionare le lingue disponibili per i gruppi community. Il menu visualizza tutte le lingue in cui viene creato il sito community principale. Gli utenti possono scegliere tra queste lingue per creare gruppi in più lingue in questo singolo passaggio. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti community.
 
 * **Nome gruppo community**
 
-   Il nome della pagina principale del gruppo che viene visualizzata nell&#39;URL. Evita di usare caratteri di sottolineatura (_) e parole chiave come risorse e configurazione nel nome del gruppo.
+  Il nome della pagina principale del gruppo che viene visualizzata nell&#39;URL. Evita di usare caratteri di sottolineatura (_) e parole chiave come risorse e configurazione nel nome del gruppo.
 
    * Ricontrollare il nome in quanto non può essere modificato facilmente dopo la creazione del gruppo.
    * L’URL di base viene visualizzato sotto al `Community Group Name`.
    * Per un URL valido, aggiungi &quot;.html&quot;
-      *ad esempio*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+     *ad esempio*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Modello per gruppo community** menu
 
-   Utilizza il menu a discesa per scegliere un [modello per gruppo community](/help/communities/tools.md).
+  Utilizza il menu a discesa per scegliere un [modello per gruppo community](/help/communities/tools.md).
 
 ### Passaggio 2: Progettazione {#step-design}
 
@@ -166,15 +166,15 @@ L&#39;impostazione di appartenenza consente di selezionare uno dei tre modi per 
 
 * **Iscrizione opzionale**
 
-   Se viene selezionato, il gruppo community è un gruppo pubblico. I membri del sito possono partecipare al gruppo e pubblicare i post senza partecipare esplicitamente al gruppo. L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il gruppo community è un gruppo pubblico. I membri del sito possono partecipare al gruppo e pubblicare i post senza partecipare esplicitamente al gruppo. L&#39;opzione Predefinita è selezionata.
 
 * **Iscrizione obbligatoria**
 
-   Se viene selezionato, il gruppo community è un gruppo aperto. I membri del sito della community possono visualizzare il contenuto del gruppo, ma per pubblicare il contenuto è necessario unirsi al gruppo. I membri si uniscono selezionando il `Join` nell’ambiente di pubblicazione. Impostazione predefinita non selezionata.
+  Se viene selezionato, il gruppo community è un gruppo aperto. I membri del sito della community possono visualizzare il contenuto del gruppo, ma per pubblicare il contenuto è necessario unirsi al gruppo. I membri si uniscono selezionando il `Join` nell’ambiente di pubblicazione. Impostazione predefinita non selezionata.
 
 * **Iscrizione limitata**
 
-   Se viene selezionato, il gruppo community è un gruppo segreto. I membri della community devono essere invitati esplicitamente. I membri invitati vengono inseriti nella casella di ricerca. I membri possono essere aggiunti in un secondo momento utilizzando [Console membri e gruppi](/help/communities/members.md) l’ambiente di authoring. Impostazione predefinita non selezionata.
+  Se viene selezionato, il gruppo community è un gruppo segreto. I membri della community devono essere invitati esplicitamente. I membri invitati vengono inseriti nella casella di ricerca. I membri possono essere aggiunti in un secondo momento utilizzando [Console membri e gruppi](/help/communities/members.md) l’ambiente di authoring. Impostazione predefinita non selezionata.
 
 **MINIATURA**
 

@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2482'
 ht-degree: 2%
 
 ---
@@ -53,11 +53,11 @@ Per istruzioni dettagliate su come abilitare la sincronizzazione in una farm di 
 
 * **pacchetto vlt**
 
-   Si tratta di un file zip di tutte le modifiche apportate a un editore, che devono essere distribuite tra gli editori. Le modifiche apportate a un editore generano eventi selezionati dal listener di eventi di modifica. In questo modo viene creato un pacchetto vlt contenente tutte le modifiche.
+  Si tratta di un file zip di tutte le modifiche apportate a un editore, che devono essere distribuite tra gli editori. Le modifiche apportate a un editore generano eventi selezionati dal listener di eventi di modifica. In questo modo viene creato un pacchetto vlt contenente tutte le modifiche.
 
 * **pacchetto di distribuzione**
 
-   Contiene informazioni sulla distribuzione di Sling. Si tratta di informazioni su dove il contenuto deve essere distribuito e quando è stato distribuito per ultimo.
+  Contiene informazioni sulla distribuzione di Sling. Si tratta di informazioni su dove il contenuto deve essere distribuito e quando è stato distribuito per ultimo.
 
 ## Cosa Succede Quando... {#what-happens-when}
 
@@ -124,13 +124,14 @@ Per configurare la configurazione degli agenti di sincronizzazione Apache Sling:
 
    * Seleziona la configurazione esistente da aprire per la modifica (icona a forma di matita).
 
-      Nome verifica: **socialpubsync**
+     Nome verifica: **socialpubsync**
 
    * Seleziona la casella di controllo **Abilitato**.
    * Seleziona **Utilizzare più code.**
    * Specifica **Endpoint esportazione** e **Endpoint importazione** (puoi aggiungere altri endpoint di esportazione e importazione).
 
-      Questi endpoint definiscono dove desideri ottenere il contenuto e da dove desideri inviarlo. L’autore recupera il contenuto dall’endpoint di esportazione specificato e lo invia agli editori (diversi dall’editore da cui ha recuperato il contenuto).
+     Questi endpoint definiscono dove desideri ottenere il contenuto e da dove desideri inviarlo. L’autore recupera il contenuto dall’endpoint di esportazione specificato e lo invia agli editori (diversi dall’editore da cui ha recuperato il contenuto).
+
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
 ### Adobe Granite Distribution - Provider segreto di trasporto con password crittografata {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
@@ -216,7 +217,7 @@ Per modificare l&#39;intervallo di polling:
 
    * Seleziona la configurazione esistente da aprire per la modifica (icona a forma di matita).
 
-      Verifica **socialpubsync -scheduled-trigger**
+     Verifica **socialpubsync -scheduled-trigger**
 
    * Imposta l’intervallo in secondi sull’intervallo desiderato, quindi salva.
 

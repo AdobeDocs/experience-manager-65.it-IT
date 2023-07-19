@@ -3,9 +3,9 @@ title: Configurare Editor Rich Text per creare pagine Web e siti accessibili.
 description: Configurare Editor Rich Text per creare pagine Web e siti accessibili.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Con gli elementi strutturali disponibili nell’editor Rich Text attraverso le o
 
 ## Utilizzo della funzione di modifica dell&#39;origine {#use-of-the-source-edit-feature}
 
-In alcuni casi, gli autori di contenuti dovranno esaminare e regolare il codice sorgente HTML creato con l’editor Rich Text. Ad esempio, un contenuto creato nell’editor Rich Text può richiedere un markup aggiuntivo per garantire la conformità a WCAG 2.0. Questa operazione può essere eseguita con [modifica origine](/help/sites-administering/rich-text-editor.md#aboutplugins) dell&#39;editor Rich Text. È possibile specificare [ `sourceedit` funzionalità in `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
+In alcuni casi, gli autori di contenuti dovranno esaminare e regolare il codice sorgente HTML creato con l’editor Rich Text. Ad esempio, un contenuto creato nell’editor Rich Text può richiedere un markup aggiuntivo per garantire la conformità a WCAG 2.0. Questa operazione può essere eseguita con [modifica origine](/help/sites-administering/rich-text-editor.md#aboutplugins) dell&#39;editor Rich Text. È possibile specificare [`sourceedit` funzionalità in `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -193,9 +193,7 @@ L’editor Rich Text può utilizzare `strong` e `em` tag al posto di `b` e `i`. 
 >* Il `itemId` per ogni campo corrispondente viene impostata sul nome dell&#39;attributo DOM appropriato (`TablePropertiesDialog`).
 >* L&#39;attributo viene impostato e/o rimosso esplicitamente dall&#39;elemento DOM (`Table`).
 
-
 >[!MORELIKETHIS]
 >
 >* [Guida rapida alle linee guida WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Creare contenuti accessibili (conformità WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
-

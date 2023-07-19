@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Il `DefaultPageNameProvider` servizio determina quale di queste variabili CQ è 
 
 * `pagedata.navTitle`: il servizio utilizza `page.getNavigationTitle()`
 
-Il `page` l&#39;oggetto è l&#39;oggetto è [ `com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Oggetto Java per la pagina.
+Il `page` l&#39;oggetto è l&#39;oggetto è [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Oggetto Java per la pagina.
 
 Se non mappi una variabile CQ su `s.pageName` nel framework, il valore per `s.pageName` viene generato dal percorso della pagina. Ad esempio, la pagina con il percorso `/content/geometrixx/en` utilizza il valore `content:geometrixx:en` per `s.pageName`.
 

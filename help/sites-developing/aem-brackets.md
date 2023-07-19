@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
@@ -69,9 +69,9 @@ Una volta installata l’estensione, puoi iniziare a sviluppare componenti AEM a
 
 Il progetto deve contenere almeno:
 
-1. a `jcr_root` cartella (ad es. `myproject/jcr_root`)
+1. a `jcr_root` cartella (ad esempio, `myproject/jcr_root`)
 
-1. a `filter.xml` file (ad es. `myproject/META-INF/vault/filter.xml`); per ulteriori dettagli sulla struttura del `filter.xml` consultare il file [Definizione filtro area di lavoro](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` file (ad esempio, `myproject/META-INF/vault/filter.xml`); per ulteriori dettagli sulla struttura del `filter.xml` consultare il file [Definizione filtro area di lavoro](https://jackrabbit.apache.org/filevault/filter.html).
 
 Tra parentesi **File** menu, scegliere **Apri cartella...** e scegliere `jcr_root` o la cartella del progetto principale.
 
@@ -89,10 +89,10 @@ Per sincronizzare i contenuti con e da un’istanza di sviluppo AEM, devi defini
 
 Le Impostazioni progetto consentono di definire:
 
-1. L’URL del server (ad es. `http://localhost:4502`)
+1. L’URL del server (ad esempio, `http://localhost:4502`)
 1. Tollerare i server che non dispongono di un certificato HTTPS valido (mantieni deselezionato, a meno che non sia necessario)
-1. Il nome utente utilizzato per la sincronizzazione del contenuto (ad esempio `admin`)
-1. La password dell&#39;utente (ad es. `admin`)
+1. Il nome utente utilizzato per la sincronizzazione del contenuto (ad esempio, `admin`)
+1. La password dell’utente (ad esempio, `admin`)
 
 ## Sincronizzazione dei contenuti {#synchronizing-content}
 

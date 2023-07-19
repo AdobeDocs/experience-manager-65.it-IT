@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '557'
 ht-degree: 5%
 
 ---
@@ -57,23 +57,23 @@ Identifica i tag UGC da visualizzare. Le opzioni di pull-down sono:
    * `From page and child pages`
    * `All tags`
 
-   Il valore predefinito è `From page and child pages`, dove &quot;page&quot; si riferisce al **Pagina** di seguito.
+  Il valore predefinito è `From page and child pages`, dove &quot;page&quot; si riferisce al **Pagina** di seguito.
 
 * **[!UICONTROL Pagina]**
 
-   (Obbligatorio se non `All tags)` Percorso dell’UGC per una pagina. Se lasciata vuota, la pagina corrente è predefinita.
+  (Obbligatorio se non `All tags)` Percorso dell’UGC per una pagina. Se lasciata vuota, la pagina corrente è predefinita.
 
 * **[!UICONTROL Nessun collegamento sui tag]**
 
-   Se questa opzione è selezionata, i tag vengono visualizzati nell’area dei tag come testo normale. Se questa opzione è deselezionata, i tag vengono visualizzati come collegamenti attivi che eseguono ricerche su tutto il contenuto a cui è applicato il tag. L&#39;impostazione predefinita è deselezionata e richiede **[!UICONTROL Percorso risultati di ricerca]** da impostare.
+  Se questa opzione è selezionata, i tag vengono visualizzati nell’area dei tag come testo normale. Se questa opzione è deselezionata, i tag vengono visualizzati come collegamenti attivi che eseguono ricerche su tutto il contenuto a cui è applicato il tag. L&#39;impostazione predefinita è deselezionata e richiede **[!UICONTROL Percorso risultati di ricerca]** da impostare.
 
 * **[!UICONTROL Percorso risultati ricerca]**
 
-   Percorso di una pagina in cui è presente un `Search Result` il componente è stato inserito, configurato per fare riferimento a UGC che include il percorso UGC specificato da **Pagina** impostazione.
+  Percorso di una pagina in cui è presente un `Search Result` il componente è stato inserito, configurato per fare riferimento a UGC che include il percorso UGC specificato da **Pagina** impostazione.
 
 ## Cambia visualizzazione tag cloud per social network {#change-display-of-social-tag-cloud}
 
-Per modificare la visualizzazione di **Tag cloud social**, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fare doppio clic sulla `Social Tag Cloud` per aprire una finestra di dialogo con una scheda aggiuntiva.
+Per modificare la visualizzazione di **Tag cloud social**, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fare doppio clic sul `Social Tag Cloud` per aprire una finestra di dialogo con una scheda aggiuntiva.
 
 Utilizzo di **[!UICONTROL Tag cloud per social network (progettazione)]** , specificare la modalità di visualizzazione dei tag. Un tag può essere un tag semplice, una singola parola nello spazio dei nomi predefinito o una tassonomia gerarchica:
 
@@ -81,43 +81,43 @@ Utilizzo di **[!UICONTROL Tag cloud per social network (progettazione)]** , spec
 
 * **[!UICONTROL Mostra percorsi titolo completi]**
 
-   Se questa opzione è selezionata, mostra i titoli dei tag padre e dello spazio dei nomi per ogni tag applicato.
+  Se questa opzione è selezionata, mostra i titoli dei tag padre e dello spazio dei nomi per ogni tag applicato.
 
-   Ad esempio:
+  Ad esempio:
 
    * Selezionato: `Geometrixx Media: Gadgets / Cars`
    * Deselezionato: `Cars`
 
-   Non c’è differenza per un tag semplice.
+  Non c’è differenza per un tag semplice.
 
-   L&#39;impostazione predefinita è deselezionata.
+  L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Mostra solo tag foglia]**
 
-   Se questa opzione è selezionata, vengono visualizzati solo i tag applicati che non contengono altri tag.
+  Se questa opzione è selezionata, vengono visualizzati solo i tag applicati che non contengono altri tag.
 
-   Ad esempio, dato il TagID di:
+  Ad esempio, dato il TagID di:
 
-   `Geometrixx Media: Gadgets / Cars`
+  `Geometrixx Media: Gadgets / Cars`
 
-   È possibile applicare 3 tag:
+  È possibile applicare 3 tag:
 
-   `Geometrixx Media (the namespace)`, `Gadgets`, e `Cars`
+  `Geometrixx Media (the namespace)`, `Gadgets`, e `Cars`
 
    * Selezionato: Solo `Cars` viene visualizzato, se applicato.
    * Deselezionato: `Geometrixx Media` e `Gadgets`nonché `Cars` viene visualizzato, se applicato.
 
-   Un tag semplice è un tag foglia.
+  Un tag semplice è un tag foglia.
 
-   L&#39;impostazione predefinita è deselezionata.
+  L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Modello collegamento]**
 
-   Modello, diverso da quello predefinito, utilizzato per visualizzare i collegamenti in un’area tag quando i collegamenti sono abilitati tramite la finestra di dialogo di modifica del componente.
+  Modello, diverso da quello predefinito, utilizzato per visualizzare i collegamenti in un’area tag quando i collegamenti sono abilitati tramite la finestra di dialogo di modifica del componente.
 
 * **[!UICONTROL Stessa dimensione per tutti i tag]**
 
-   Se questa opzione è selezionata, a tutte le parole presenti nell’area dei tag viene applicato lo stesso stile. Se questa opzione è deselezionata, lo stile delle parole varia a seconda dell&#39;utilizzo. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, a tutte le parole presenti nell’area dei tag viene applicato lo stesso stile. Se questa opzione è deselezionata, lo stile delle parole varia a seconda dell&#39;utilizzo. L&#39;impostazione predefinita è deselezionata.
 
 ## Informazioni aggiuntive {#additional-information}
 

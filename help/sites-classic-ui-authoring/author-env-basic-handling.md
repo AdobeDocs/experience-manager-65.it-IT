@@ -8,7 +8,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 7%
@@ -24,7 +24,6 @@ ht-degree: 7%
 >* Alcune funzionalità non sono disponibili in tutte le console e/o altre sono disponibili in alcune console. Informazioni specifiche sulle singole console e sulle relative funzionalità saranno descritte più dettagliatamente in altre pagine.
 >* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
-
 
 ## Schermata di benvenuto {#the-welcome-screen}
 
@@ -87,13 +86,13 @@ Il **Siti Web** console fornisce due riquadri per la navigazione e la gestione d
 
 * Riquadro sinistro
 
-   Mostra la struttura ad albero dei siti Web e le pagine all&#39;interno di tali siti.
+  Mostra la struttura ad albero dei siti Web e le pagine all&#39;interno di tali siti.
 
-   Mostra anche informazioni su altri aspetti o AEM, inclusi progetti, progetti e risorse.
+  Mostra anche informazioni su altri aspetti o AEM, inclusi progetti, progetti e risorse.
 
 * Riquadro destro
 
-   Mostra le pagine (nella posizione selezionata nel riquadro a sinistra) e può essere utilizzato per eseguire azioni.
+  Mostra le pagine (nella posizione selezionata nel riquadro a sinistra) e può essere utilizzato per eseguire azioni.
 
 Da qui puoi [gestire le pagine](/help/sites-authoring/managing-pages.md) utilizzando la barra degli strumenti, un menu di scelta rapida o aprendo una pagina per ulteriori azioni.
 
@@ -105,7 +104,7 @@ Da qui puoi [gestire le pagine](/help/sites-authoring/managing-pages.md) utilizz
 
 ## Accedere all’Aiuto   {#accessing-help}
 
-Su varie console (ad esempio siti web) è anche disponibile **Aiuto** disponibile, verrà aperto Condivisione pacchetti o il sito della documentazione.
+Su varie console (ad esempio, Siti web) è inoltre disponibile **Aiuto** disponibile, verrà aperto Condivisione pacchetti o il sito della documentazione.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
@@ -120,9 +119,9 @@ Il **Siti Web** in console le pagine di contenuto vengono elencate in una strutt
    * Elencare le pagine figlie nel riquadro di destra
    * Espandi inoltre la struttura nel riquadro a sinistra.
 
-      Per motivi di prestazioni, questa azione dipende dal numero di nodi secondari. Con un&#39;installazione standard questo metodo di espansione funziona quando `30` o meno nodi secondari.
+     Per motivi di prestazioni, questa azione dipende dal numero di nodi secondari. Con un&#39;installazione standard questo metodo di espansione funziona quando `30` o meno nodi secondari.
 
-* Facendo doppio clic sul nome della pagina (riquadro a sinistra) si espanderà anche la struttura, anche se questo effetto non è così evidente quando la pagina viene aperta contemporaneamente.
+* Facendo doppio clic sul nome della pagina (riquadro sinistro) si espanderà anche la struttura ad albero, anche se questo effetto non è così evidente quando la pagina viene aperta contemporaneamente.
 
 >[!NOTE]
 >

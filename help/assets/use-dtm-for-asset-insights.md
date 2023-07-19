@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 2%
@@ -54,7 +54,6 @@ Segui questi passaggi per abilitare Assets Insights tramite DTM.
    >* A seconda della posizione in cui è ospitato il tracciatore pagina di Assets Insights (ad Experience Manager, CDN e così via), l’origine dell’origine dello script potrebbe richiedere delle modifiche.
    >* Ad Experience Manager, il tracciatore di pagine in hosting, l’origine deve puntare a un’istanza Publish utilizzando il nome host dell’istanza di Dispatcher.
 
-
 1. Accesso `https://dtm.adobe.com`. Clic **[!UICONTROL Panoramica]** nella proprietà web e fai clic su **[!UICONTROL Aggiungi strumento]** oppure apri uno strumento Adobe Analytics esistente. Durante la creazione dello strumento, potete impostare **[!UICONTROL Metodo di configurazione]** a **[!UICONTROL Automatico]**.
 
    ![Aggiungi strumento Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
@@ -91,10 +90,10 @@ Segui questi passaggi per abilitare Assets Insights tramite DTM.
              "",  /** RSID to send tracking-call to */
              "",  /** Tracking Server to send tracking-call to */
              "",  /** Visitor Namespace to send tracking-call to */
-             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, e.g. 'listVar1' */
-             "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
-             "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
-             "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
+             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, for example, 'listVar1' */
+             "",  /** eVar to put Asset ID for Asset Click Events in, for example, 'eVar3' */
+             "",  /** event to include in tracking-calls for Asset Impression Events, for example, 'event8' */
+             "",  /** event to include in tracking-calls for Asset Click Events, for example, 'event7' */
              sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;
@@ -110,8 +109,8 @@ Segui questi passaggi per abilitare Assets Insights tramite DTM.
    * La regola di caricamento della pagina in DTM include solo `pagetracker.js` codice. Qualsiasi `assetAnalytics` I campi vengono considerati sostituzioni dei valori predefiniti. Non sono obbligatori per impostazione predefinita.
    * Le chiamate di codice `assetAnalytics.dispatcher.init()` dopo aver verificato che `_satellite.getToolsByType('sc')[0].getS()` è inizializzato e `assetAnalytics,dispatcher.init` è disponibile. Pertanto, non è necessario aggiungerla al passaggio 11.
    * Come indicato nei commenti all’interno del codice di Tracciamento pagina approfondimenti (**[!UICONTROL Strumenti > Risorse > Tracciamento pagina approfondimenti]**), quando il Tracciamento pagina non crea un `AppMeasurement` , i primi tre argomenti (RSID, Server di tracciamento e Spazio dei nomi visitatore) sono irrilevanti. Vengono invece passate stringhe vuote per evidenziarlo.\
-      Gli argomenti rimanenti corrispondono a quanto configurato nella pagina Configurazione approfondimenti (**[!UICONTROL Strumenti > Risorse > Configurazione approfondimenti]**).
-   * L&#39;oggetto AppMeasurement viene recuperato eseguendo una query `satelliteLib` per tutti i motori di SiteCatalyst disponibili. Se sono configurati più tag, modifica in modo appropriato l’indice del selettore di array. Le voci nell’array sono ordinate in base agli strumenti di SiteCatalyst disponibili nell’interfaccia di DTM.
+     Gli argomenti rimanenti corrispondono a quanto configurato nella pagina Configurazione approfondimenti (**[!UICONTROL Strumenti > Risorse > Configurazione approfondimenti]**).
+   * L&#39;oggetto AppMeasurement viene recuperato mediante query `satelliteLib` per tutti i motori di SiteCatalyst disponibili. Se sono configurati più tag, modifica in modo appropriato l’indice del selettore di array. Le voci nell’array sono ordinate in base agli strumenti di SiteCatalyst disponibili nell’interfaccia di DTM.
 
 1. Salvare e chiudere la finestra dell&#39;editor di codice, quindi salvare le modifiche nella configurazione dello strumento.
 1. In **[!UICONTROL Approvazioni]** , approva entrambe le approvazioni in sospeso. Il tag DTM è pronto per essere inserito nella pagina web.

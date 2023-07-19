@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2020'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ L’interfaccia utente dell’agente supporta 210 caratteri speciali. L’ammini
 * **Frecce Su/Giù**: frecce per spostare i frammenti di documento verso l’alto o il basso nella comunicazione interattiva.
 * **Elimina**: se consentito, elimina il frammento di documento dalla comunicazione interattiva.
 * **Interruzione di pagina prima** (applicabile ai frammenti secondari dell’area di destinazione): inserisce l’interruzione di pagina prima del frammento del documento.
-* **Rientro**: aumenta o diminuisce il rientro di un frammento di documento.
+* **Rientra**: aumenta o diminuisce il rientro di un frammento di documento.
 * **Interruzione di pagina dopo** (applicabile ai frammenti secondari dell’area di destinazione): inserisce l’interruzione di pagina dopo il frammento del documento.
 
 ![docfragoptions](assets/docfragoptions.png)

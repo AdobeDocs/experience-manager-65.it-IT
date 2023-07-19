@@ -2,7 +2,7 @@
 title: Internazionalizzazione delle stringhe dell’interfaccia utente
 seo-title: Internationalizing UI Strings
 description: API Java e JavaScript per internazionalizzare le stringhe
-seo-description: Java and Javascript APIs enable you to internationalize strings
+seo-description: Java and JavaScript APIs enable you to internationalize strings
 uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Le API Java e JavaScript consentono di internazionalizzare le stringhe nei segue
 
 * File Java di origine.
 * Script JSP.
-* JavaScript nelle librerie lato client o nell’origine pagina.
+* JavaScript nelle librerie lato client o nella sorgente pagina.
 * Valori delle proprietà del nodo JCR utilizzati nelle finestre di dialogo e nelle proprietà di configurazione dei componenti.
 
 Per una panoramica del processo di internazionalizzazione e localizzazione, consulta [Internazionalizzazione dei componenti](/help/sites-developing/i18n.md).
@@ -110,16 +110,16 @@ Il `I18N` classe definisce un valore statico `get` metodo utile quando è necess
 
 * Utilizza la preferenza della lingua dell’utente: specifica SlingHttpRequest come primo parametro.
 
-   `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 * Utilizza il linguaggio della pagina: specifica ResourceBundle come primo parametro.
 
-   `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
 ### Internazionalizzazione delle stringhe nel codice JavaScript {#internationalizing-strings-in-javascript-code}
 
 L’API JavaScript consente di localizzare le stringhe sul client. Come con [Java e JSP](#internationalizing-strings-in-java-and-jsp-code) JavaScript API consente di identificare le stringhe da localizzare, fornire suggerimenti di localizzazione e includere variabili nelle stringhe localizzate.
 
-Il `granite.utils` [cartella della libreria client](/help/sites-developing/clientlibs.md) fornisce l&#39;API JavaScript. Per utilizzare l’API, includi nella pagina questa cartella della libreria client. Le funzioni di localizzazione utilizzano `Granite.I18n` spazio dei nomi.
+Il `granite.utils` [cartella della libreria client](/help/sites-developing/clientlibs.md) fornisce l’API JavaScript. Per utilizzare l’API, includi nella pagina questa cartella della libreria client. Le funzioni di localizzazione utilizzano `Granite.I18n` spazio dei nomi.
 
 Prima di presentare le stringhe localizzate, è necessario impostare la lingua utilizzando `Granite.I18n.setLocale` funzione. La funzione richiede come argomento il codice della lingua della lingua:
 

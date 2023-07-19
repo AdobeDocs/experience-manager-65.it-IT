@@ -2,10 +2,10 @@
 title: Tradurre il contenuto
 description: Utilizza il connettore di traduzione e le regole per tradurre il contenuto headless.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2174'
-ht-degree: 95%
+source-wordcount: '2173'
+ht-degree: 94%
 
 ---
 
@@ -93,7 +93,7 @@ Per i translation project manager, spesso è necessario selezionare manualmente 
 
    ![Scheda informazioni base del progetto](assets/project-basic-tab.png)
 
-1. Nella scheda **Avanzate**, utilizza il menu a discesa **Lingua target** per selezionare le lingue in cui tradurre il contenuto. Tocca o fai clic su **Crea**.
+1. Il giorno **Avanzate** , utilizza la scheda **Lingua di destinazione** per selezionare le lingue in cui tradurre il contenuto. Tocca o fai clic su **Crea**.
 
    ![Scheda avanzate del progetto](assets/project-advanced-tab.png)
 

@@ -2,10 +2,10 @@
 title: Processi asincroni
 description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a consumo intensivo di risorse.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 98%
+source-wordcount: '895'
+ht-degree: 96%
 
 ---
 
@@ -101,7 +101,7 @@ Quando il numero di risorse o cartelle da eliminare supera la soglia, l’operaz
 
    ![Soglia per l’eliminazione delle risorse](assets/async-delete-threshold.png)
 
-1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio: Completato, Non riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. ad esempio, success, failed.
 1. Salva le modifiche.
 
 ### Configurare le operazioni di spostamento delle risorse asincrone {#configuring-asynchronous-move-operations}
@@ -114,7 +114,7 @@ Quando il numero di risorse, cartelle o riferimenti da spostare supera la soglia
 
    ![Soglia per lo spostamento delle risorse](assets/async-move-threshold.png)
 
-1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio: Completato, Non riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. ad esempio, success, failed.
 1. Salva le modifiche.
 
 ### Configurare le operazioni di spostamento delle pagine asincrone {#configuring-asynchronous-page-move-operations}
@@ -127,14 +127,14 @@ Quando il numero di riferimenti o pagine da spostare supera la soglia impostata,
 
    ![Soglia per lo spostamento delle pagine ](assets/async-page-move.png)
 
-1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio: Completato, Non riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. ad esempio, success, failed.
 1. Salva le modifiche.
 
 ### Configurare le operazioni MSM asincrone {#configuring-asynchronous-msm-operations}
 
 1. Dalla pagina di navigazione globale, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
 1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
-1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio: Completato, Non riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. ad esempio, success, failed.
 
    ![Configurazione MSM](assets/async-msm.png)
 
@@ -148,4 +148,3 @@ Quando il numero di riferimenti o pagine da spostare supera la soglia impostata,
 >* [Importare i metadati delle risorse](/help/assets/metadata.md#import-metadata).
 >* [Esportare i metadati delle risorse](/help/assets/metadata.md#export-metadata).
 >* [Utilizzare le risorse collegate per condividere le risorse DAM da implementazioni remote](/help/assets/use-assets-across-connected-assets-instances.md).
-

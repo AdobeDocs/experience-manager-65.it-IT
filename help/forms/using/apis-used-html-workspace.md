@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
 <table>
  <tbody>
   <tr>
-   <td><strong>Metodo Javascript</strong></td>
+   <td><strong>Metodo JavaScript</strong></td>
    <td><strong>Nome servizio</strong></td>
    <td><strong>Nome API</strong></td>
    <td><strong>Commenti</strong></td>
@@ -308,7 +308,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>getAssignmentsForTask</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>getAssignmentsForTask</td>
-   <td>Ottiene tutte le assegnazioni per un'attività. Ad esempio :- Se l’utente inoltra o consulta un’attività con un altro utente, si tratta di un’assegnazione per un’attività.</td>
+   <td>Ottiene tutte le assegnazioni per un'attività. Ad esempio, :- Se l’utente inoltra o consulta un’attività con un altro utente, si tratta di un’assegnazione per un’attività.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>

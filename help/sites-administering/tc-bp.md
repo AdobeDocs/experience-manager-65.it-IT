@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '837'
 ht-degree: 96%
 
 ---
@@ -41,7 +41,7 @@ La creazione o l’espansione di una presenza web globale può essere un process
 * Determina in che modo i contenuti vengono distribuiti da aree geografiche e Paesi. Considera quali Paesi condividono le lingue. Si consiglia di creare master di lingua, un livello di pagine non attivate, in cui il contenuto tradotto può essere rivisto e modificato e quindi inviato o trascinato a un sito del Paese che condivide tale lingua.
 * Sono disponibili due approcci per la creazione di master di lingua: tramite copie per lingua e tramite copie MSM/live.
 
-   * L’approccio tramite la copia per lingua è quello utilizzato nel framework di integrazione della traduzione pronto all’uso di AEM, e quindi è il modo più semplice per iniziare. Il framework fornisce un’interfaccia utente che semplifica inizialmente la propagazione e la traduzione delle modifiche al contenuto dal master in lingua principale (ad esempio inglese) ai master in lingua. Tuttavia, man mano che il progetto cresce, l’automazione del flusso di lavoro diventa sempre più necessaria per gestire la traduzione di un maggior numero di pagine e/o lingue.
+   * L’approccio tramite la copia per lingua è quello utilizzato nel framework di integrazione della traduzione pronto all’uso di AEM, e quindi è il modo più semplice per iniziare. Il framework fornisce un’interfaccia utente che semplifica inizialmente la propagazione e la traduzione delle modifiche apportate al contenuto dalla lingua principale (ad esempio inglese) al contenuto principale di un’altra lingua. Tuttavia, man mano che il progetto cresce, l’automazione del flusso di lavoro diventa sempre più necessaria per gestire la traduzione di un maggior numero di pagine e/o lingue.
    * L’approccio MSM/Live Copy può essere un’alternativa per i casi di utilizzo avanzati, in cui i siti sono più grandi e complessi. Una governance forte e l’automazione del flusso di lavoro sono necessarie fin dall’inizio per gestire le complesse relazioni di ereditarietà tra i master in inglese e in lingua e per ridurre il rischio di sovrascrittura delle traduzioni esistenti. Questa gestione può essere effettuata con l’aiuto di alcuni connettori di traduzione. Vedi [MSM e siti multilingue](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites) per ulteriori informazioni.
 
 * Se la lingua master dispone di varianti globali, è possibile utilizzare MSM per creare una Live Copy dal master globale da utilizzare per la traduzione. Ad esempio, se l’authoring globale viene eseguito in un master inglese americano, crea un master inglese internazionale come Live Copy e base per la traduzione in altre lingue.

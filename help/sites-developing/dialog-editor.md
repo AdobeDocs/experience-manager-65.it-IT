@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 L&#39;editor di finestre di dialogo fornisce un&#39;interfaccia grafica per creare e modificare facilmente finestre di dialogo e scaffold.
 
-Per vedere come funziona, vai a CRXDE Lite, apri la struttura ad albero dell’Explorer per `/libs/foundation/components/chart` e fai doppio clic sul nodo `dialog`:
+Per vedere come funziona, vai a CRXDE Lite, apri la struttura ad albero dell’Explorer per `/libs/foundation/components/chart` e fare doppio clic sul nodo `dialog`:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 

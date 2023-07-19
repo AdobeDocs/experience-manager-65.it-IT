@@ -11,9 +11,9 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,8 @@ Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel r
       >    * Eseguire l’aggiornamento all’istanza
       >    * Applicare un hotfix
       >    * Installare un feature pack
-
+      >    
+      >
 
    1. Fai clic su **OK**. La cartella css viene creata nel percorso specificato.
 

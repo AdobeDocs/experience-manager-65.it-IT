@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2327'
 ht-degree: 1%
 
 ---
@@ -85,11 +85,11 @@ Crea un dizionario per la gestione delle stringhe localizzate dell’interfaccia
    >
    >Struttura del file [Modulo Sling i18n](https://sling.apache.org/site/internationalization-support.html).
 
-1. Ricarica il traduttore e il percorso del dizionario (ad es. `/apps/myProject/i18n`) sarà disponibile nel selettore a discesa nella barra degli strumenti. Seleziona questa opzione per iniziare ad aggiungere stringhe e relative traduzioni.
+1. Ricarica il traduttore e il percorso del dizionario (ad esempio, `/apps/myProject/i18n`) sarà disponibile nel selettore a discesa nella barra degli strumenti. Seleziona questa opzione per iniziare ad aggiungere stringhe e relative traduzioni.
 
    >[!NOTE]
    >
-   >Il traduttore salva solo le traduzioni per le lingue effettivamente presenti nel percorso (ad esempio `/apps/myProject/i18n`).
+   >Il traduttore salva solo le traduzioni per le lingue effettivamente presenti nel percorso (ad esempio, `/apps/myProject/i18n`).
    >
    >Assicurati che corrispondano alle lingue mostrate nella griglia.
 
@@ -210,7 +210,7 @@ Dopo aver aggiunto la stringa inglese a un dizionario, è possibile aggiungere l
 
 1. Per modificare i testi tradotti di una delle stringhe, puoi effettuare le seguenti operazioni:
 
-   * Fai doppio clic sulla lingua appropriata per la stringa richiesta per modificare il singolo testo:
+   * Fare doppio clic sulla lingua appropriata per la stringa richiesta per modificare il testo:
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -337,7 +337,7 @@ Dopo aver definito un dizionario per una lingua nuova per l’istanza AEM, è ne
 
 Vari paesi utilizzano la stessa lingua, ad esempio Stati Uniti, Regno Unito e Australia utilizzano tutti l&#39;inglese. È indicato da un codice che indica sia la lingua che il paese, ad esempio `en_US`, `en_GB` e `en_AU`.
 
-I paesi predefiniti vengono utilizzati quando vengono visualizzati i flag (ad esempio, nella finestra di dialogo per la copia in lingua) e vengono utilizzati per risolvere il paese per un codice di lingua.
+I paesi predefiniti vengono utilizzati quando vengono visualizzati i flag (ad esempio, nella finestra di dialogo di copia per lingua), per risolvere il paese per un codice di lingua.
 
 >[!NOTE]
 >
@@ -353,17 +353,18 @@ Per modificare le definizioni predefinite:
 
    `/apps/wcm/core/resources/languages`
 
-   Quindi modificare o estendere l&#39;elenco. La proprietà `defaultCountry` su un nodo di lingua (ad es. `ja`) deve contenere il codice completo, ad esempio `ja_jp`, che definirebbe `jp` come paese predefinito per la lingua `ja`.
+   Quindi modificare o estendere l&#39;elenco. La proprietà `defaultCountry` in un nodo di lingua (ad esempio, `ja`) deve contenere il codice completo, ad esempio `ja_jp`, che definirebbe `jp` come paese predefinito per la lingua `ja`.
 
 1. Aggiornare il **Gestione lingua CQ WCM**.
 
    * **Elenco lingue**:
 
-      Percorso dell&#39;elenco delle lingue nell&#39;archivio. Impostate questo valore sulla posizione utilizzata per la sovrapposizione:
+     Percorso dell&#39;elenco delle lingue nell&#39;archivio. Impostate questo valore sulla posizione utilizzata per la sovrapposizione:
 
-      ```
-             /apps/wcm/core/resources/languages
-      ```
+     ```
+            /apps/wcm/core/resources/languages
+     ```
+
    Puoi eseguire questa operazione utilizzando la console Web OSGi:
 
    ```shell

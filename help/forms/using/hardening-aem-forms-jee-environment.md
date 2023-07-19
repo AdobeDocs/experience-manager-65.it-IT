@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7669'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Non installare o configurare AEM Forms su JEE utilizzando una shell radice. Per 
 
 **Installazione e configurazione in Windows**
 
-È necessario eseguire l’installazione su Windows come amministratore se si sta installando AEM Forms su JEE su JBoss utilizzando il metodo turnkey o se si sta installando PDF Generator. Inoltre, quando si installa PDF Generator su Windows con il supporto nativo dell&#39;applicazione, è necessario eseguire l&#39;installazione come lo stesso utente di Windows che ha installato Microsoft Office. Per ulteriori informazioni sui privilegi di installazione, consulta il documento Installazione e distribuzione di AEM Forms su JEE* per il server applicazioni.
+Se stai installando AEM Forms su JEE su JBoss utilizzando il metodo turnkey o se stai installando PDF Generator, è necessario eseguire l’installazione su Windows come amministratore. Inoltre, quando si installa PDF Generator su Windows con il supporto nativo dell&#39;applicazione, è necessario eseguire l&#39;installazione come lo stesso utente di Windows che ha installato Microsoft Office. Per ulteriori informazioni sui privilegi di installazione, consulta il documento Installazione e distribuzione di AEM Forms su JEE* per il server applicazioni.
 
 ### Protezione a livello di rete {#network-layer-security}
 
@@ -208,7 +208,6 @@ Per eseguire l’application server in cui viene distribuito AEM Forms su JEE, u
    >
    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
    >* Linux: /opt/jboss/
-
 
 1. Avviare il server applicazioni.
 
@@ -460,9 +459,9 @@ Questa tabella descrive le tecniche di controllo e registrazione che è possibil
  </tbody> 
 </table>
 
-### Consentire a un utente non amministratore di eseguire PDF Generator
+### Consenti a un utente non amministratore di eseguire PDF Generator
 
-È possibile consentire a un utente non amministratore di utilizzare PDF Generator. Normalmente, solo gli utenti con privilegi amministrativi possono utilizzare PDF Generator. Per consentire a un utente non amministratore di eseguire PDF Generator, effettuare le seguenti operazioni:
+È possibile abilitare un utente non amministratore all&#39;utilizzo di PDF Generator. Normalmente, solo gli utenti con privilegi amministrativi possono utilizzare PDF Generator. Per consentire a un utente non amministratore di eseguire PDF Generator, effettuare le seguenti operazioni:
 
 1. Creare una variabile di ambiente denominata PDFG_NON_ADMIN_ENABLED.
 
@@ -514,7 +513,7 @@ Alcuni URL sono evidenziati come applicazioni web rivolte all’utente finale. �
   </tr> 
   <tr> 
    <td><p>/pdfgui/*</p> </td> 
-   <td><p>applicazione Web di amministrazione di PDF Generator</p> </td> 
+   <td><p>applicazione web di amministrazione di PDF Generator</p> </td> 
    <td><p>Sì</p> </td> 
    <td><p>Sì</p> </td> 
   </tr> 
@@ -711,7 +710,7 @@ Quando si installa Document Services per la prima volta, l’elenco Referenti co
 
 **Gestione dell’elenco dei referenti consentiti**
 
-È possibile gestire l’elenco Referenti consentiti dall’interfaccia di gestione utente di Administration Console. L&#39;interfaccia User Management offre la funzionalità di creazione, modifica o eliminazione dell&#39;elenco. Consulta la sezione * [Prevenzione degli attacchi CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* sezione del *aiuto per l&#39;amministrazione* per ulteriori informazioni sull’utilizzo dell’elenco Referenti consentiti.
+È possibile gestire l’elenco Referenti consentiti dall’interfaccia di gestione utente di Administration Console. L&#39;interfaccia User Management offre la funzionalità di creazione, modifica o eliminazione dell&#39;elenco. Consulta la sezione * [Prevenzione degli attacchi CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* sezione del *aiuto per l’amministrazione* per ulteriori informazioni sull’utilizzo dell’elenco Referenti consentiti.
 
 **Gestione degli elenchi delle eccezioni e degli URI consentiti ai referenti**
 
@@ -728,7 +727,7 @@ AEM Forms su JEE fornisce API per gestire l’elenco Eccezioni referenti consent
 
 Per ulteriori informazioni sulle API, consulta la documentazione di riferimento* per AEM Forms su JEE API.
 
-Utilizza il ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** elenco delle eccezioni Referente consentite a livello globale, ovvero per definire le eccezioni applicabili a tutte le applicazioni. Questo elenco contiene solo URI con un percorso assoluto (ad es. `/index.html`) o un percorso relativo (ad es. `/sample/`). Puoi anche aggiungere un’espressione regolare alla fine di un URI relativo, ad esempio `/sample/(.)*`.
+Utilizza il ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** elenco delle eccezioni Referente consentite a livello globale, ovvero per definire le eccezioni applicabili a tutte le applicazioni. Questo elenco contiene solo URI con un percorso assoluto (ad esempio, `/index.html`) o un percorso relativo (ad esempio, `/sample/`). Puoi anche aggiungere un’espressione regolare alla fine di un URI relativo, ad esempio: `/sample/(.)*`.
 
 Il ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** l’ID elenco è definito come costante nella `UMConstants` classe del `com.adobe.idp.um.api` spazio dei nomi, trovato in `adobe-usermanager-client.jar`. Puoi utilizzare le API di AEM Forms per creare, modificare o modificare questo elenco. Ad esempio, per creare l’elenco Eccezioni referente consentite globali, utilizza:
 
@@ -1030,7 +1029,6 @@ Per impostazione predefinita, l’installazione chiavi in mano di AEM Forms su J
    >
    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
    >* Linux: /opt/jboss/.
-
 
 1. Avviare il servizio server applicazioni.
 

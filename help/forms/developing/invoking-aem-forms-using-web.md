@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '9905'
+source-wordcount: '9902'
 ht-degree: 0%
 
 ---
@@ -231,7 +231,7 @@ Protocollo di trasmissione per restituito `BLOB` Gli oggetti dipendono da divers
 
    * Il parametro dell&#39;endpoint SOAP del servizio Default Protocol for Output Blob Objects è impostato su Smart.
 
-      Per ogni servizio con un endpoint SOAP, la console di amministrazione consente di specificare il protocollo di trasmissione per i BLOB restituiti. (vedere [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
+     Per ogni servizio con un endpoint SOAP, la console di amministrazione consente di specificare il protocollo di trasmissione per i BLOB restituiti. (vedere [aiuto per l’amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
    * Il servizio AEM Forms accetta uno o più documenti come input.
 
@@ -475,7 +475,7 @@ Per generare i file della libreria Java Axis, effettuare le seguenti operazioni:
    * Aggiungi la directory bin al percorso della classe.
    * Imposta il `ANT_HOME` nella directory in cui è stata installata Ant.
 
-1. Installare Apache Axis 1.4 sul computer client. È disponibile all’indirizzo [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
+1. Installare Apache Axis 1.4 nel computer client. È disponibile all’indirizzo [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
 1. Impostare il percorso della classe per l&#39;utilizzo dei file JAR di Axis nel client del servizio Web, come descritto nelle istruzioni di installazione di Axis in [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Utilizzare lo strumento Apache WSDL2Java in Axis per generare classi proxy Java. Crea uno script di generazione della formica per eseguire questa attività. Lo script seguente è uno script di generazione Ant di esempio denominato build.xml:
 
@@ -685,7 +685,7 @@ Inserire l&#39;assembly client .NET appena creato nel computer in cui si sta svi
 
    * Assegnare l&#39;endpoint WSDL e il tipo di codifica al `javax.xml.ws.BindingProvider` dell&#39;oggetto `ENDPOINT_ADDRESS_PROPERTY` campo. Per richiamare `MyApplication/EncryptDocument` servizio che utilizza la codifica Base64, specificare il seguente valore URL:
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
    * Assegnare l’utente dei moduli AEM alla `javax.xml.ws.BindingProvider` dell&#39;oggetto `USERNAME_PROPERTY` campo.
    * Assegna il valore della password corrispondente al `javax.xml.ws.BindingProvider` dell&#39;oggetto `PASSWORD_PROPERTY` campo.
@@ -880,7 +880,7 @@ Per richiamare `MyApplication/EncryptDocument` Procedere utilizzando i file prox
 
    * Assegnare l&#39;endpoint WSDL e il tipo di codifica al `javax.xml.ws.BindingProvider` dell&#39;oggetto `ENDPOINT_ADDRESS_PROPERTY` campo. Per richiamare `MyApplication/EncryptDocument` servizio che utilizza la codifica SwaRef, specifica il seguente valore URL:
 
-      ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
+     ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
 
    * Assegnare l’utente dei moduli AEM alla `javax.xml.ws.BindingProvider` dell&#39;oggetto `USERNAME_PROPERTY` campo.
    * Assegna il valore della password corrispondente al `javax.xml.ws.BindingProvider` dell&#39;oggetto `PASSWORD_PROPERTY` campo.
@@ -1003,7 +1003,7 @@ Puoi richiamare un servizio AEM Forms utilizzando le classi proxy Java e i dati 
 
    * Assegnare l&#39;endpoint WSDL e il tipo di codifica al `javax.xml.ws.BindingProvider` dell&#39;oggetto `ENDPOINT_ADDRESS_PROPERTY` campo. Per richiamare `MyApplication/EncryptDocument` servizio che utilizza la codifica BLOB su HTTP, specifica il seguente valore URL:
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
    * Assegnare l’utente dei moduli AEM alla `javax.xml.ws.BindingProvider` dell&#39;oggetto `USERNAME_PROPERTY` campo.
    * Assegna il valore della password corrispondente al `javax.xml.ws.BindingProvider` dell&#39;oggetto `PASSWORD_PROPERTY` campo.

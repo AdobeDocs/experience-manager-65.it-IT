@@ -2,7 +2,7 @@
 title: Aggiunta di ContextHub alle pagine e accesso agli store
 description: Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub.
 
-L’API JavaScript di ContextHub fornisce accesso ai dati contestuali gestiti da ContextHub. Questa pagina descrive brevemente le funzioni principali dell’API per accedere e manipolare i dati contestuali. Per informazioni dettagliate ed esempi di codice, segui i collegamenti alla documentazione di riferimento delle API.
+L’API JavaScript ContextHub fornisce accesso ai dati contestuali gestiti da ContextHub. Questa pagina descrive brevemente le funzioni principali dell’API per accedere e manipolare i dati contestuali. Per informazioni dettagliate ed esempi di codice, segui i collegamenti alla documentazione di riferimento delle API.
 
 ## Aggiunta di ContextHub a un componente pagina {#adding-contexthub-to-a-page-component}
 
@@ -117,7 +117,7 @@ ContextHub include un framework di eventi che ti consente di reagire automaticam
 
 ## Utilizzo di Context Hub per manipolare i cookie {#using-context-hub-to-manipulate-cookies}
 
-L’API JavaScript di Context Hub fornisce supporto tra browser diversi per la gestione dei cookie del browser. Il [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace definisce diverse funzioni per creare, manipolare ed eliminare i cookie.
+L’API JavaScript di Context Hub fornisce supporto cross-browser per la gestione dei cookie del browser. Il [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace definisce diverse funzioni per creare, manipolare ed eliminare i cookie.
 
 ## Determinazione dei segmenti ContextHub risolti {#determining-resolved-contexthub-segments}
 

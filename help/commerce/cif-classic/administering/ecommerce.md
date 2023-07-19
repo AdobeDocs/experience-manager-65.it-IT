@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '753'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ L’Adobe fornisce due versioni di Commerce Integration Framework:
   </tr>
   <tr>
    <td>Quando utilizzare</td>
-   <td>Casi d’uso limitati: ad esempio, in cui potrebbe essere necessario importare cataloghi statici di piccole dimensioni</td>
+   <td>Casi d’uso limitati: ad esempio, scenari in cui potrebbe essere necessario importare cataloghi statici di piccole dimensioni</td>
    <td>Soluzione preferita nella maggior parte dei casi d’uso</td>
   </tr>
  </tbody>
@@ -163,7 +163,7 @@ L’eCommerce dell’AEM fornisce:
 * La possibilità di sviluppare **commercio basato sull’esperienza e basato sui dati e sull’attività dell’acquirente**. Questo consente di realizzare molti scenari:
 
    * Un esempio potrebbe essere la riduzione delle spese di spedizione quando l&#39;ordine totale supera un importo specifico.
-   * Un altro potrebbe consentire di fornire offerte stagionali che utilizzano dati di profilo (ad esempio, posizione). Questi possono quindi essere evidenziati, anche in questo caso a seconda di altri fattori, se necessario.
+   * Un altro potrebbe consentire di fornire offerte stagionali che utilizzano i dati del profilo (ad esempio, posizione). Questi possono quindi essere evidenziati, anche in questo caso a seconda di altri fattori, se necessario.
 
   Nell’esempio seguente viene mostrato un teaser poiché il contenuto del carrello è inferiore a $ 75:
 

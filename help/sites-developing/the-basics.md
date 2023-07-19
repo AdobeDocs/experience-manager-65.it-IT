@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3324'
+source-wordcount: '3327'
 ht-degree: 1%
 
 ---
@@ -137,8 +137,8 @@ Con Sling, puoi specificare quale script esegue il rendering di una determinata 
 
 La richiesta è suddivisa ed è possibile estrarre le informazioni necessarie. Nell’archivio viene eseguita la ricerca della risorsa richiesta (nodo del contenuto):
 
-* primo Sling controlla se un nodo esiste nella posizione specificata nella richiesta; ad esempio `../content/corporate/jobs/developer.html`
-* se non viene trovato alcun nodo, l’estensione viene rilasciata e la ricerca ripetuta; ad esempio `../content/corporate/jobs/developer`
+* in primo luogo, Sling controlla se un nodo esiste nella posizione specificata nella richiesta; ad esempio, `../content/corporate/jobs/developer.html`
+* se non viene trovato alcun nodo, l’estensione viene rilasciata e la ricerca ripetuta; ad esempio, `../content/corporate/jobs/developer`
 * Se non viene trovato alcun nodo, Sling restituirà il codice http 404 (Not Found).
 
 Sling consente anche di utilizzare come risorse elementi diversi dai nodi JCR, ma si tratta di una funzione avanzata.
@@ -152,7 +152,7 @@ Percorso specificato da `sling:resourceType` può essere:
 * assoluto
 * relativo, a un parametro di configurazione
 
-   I percorsi relativi sono consigliati da Adobe in quanto aumentano la portabilità.
+  I percorsi relativi sono consigliati da Adobe in quanto aumentano la portabilità.
 
 Tutti gli script Sling vengono memorizzati nelle sottocartelle di `/apps` o `/libs`, che verranno cercati in questo ordine (vedi [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -175,39 +175,39 @@ Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` quind
 
 * Richieste GET/HEAD e URL con estensione html (tipi di richiesta predefiniti, formato predefinito)
 
-   Lo script è /apps/hr/jobs/jobs.esp; l’ultima sezione di sling:resourceType forma il nome del file.
+  Lo script è /apps/hr/jobs/jobs.esp; l’ultima sezione di sling:resourceType forma il nome del file.
 
 * Richieste POST (tutti i tipi di richiesta tranne GET/HEAD, il nome del metodo deve essere in maiuscolo)
 
-   POST viene utilizzato nel nome dello script.
+  POST viene utilizzato nel nome dello script.
 
-   Lo script è `/apps/hr/jobs/jobs.POST.esp`.
+  Lo script è `/apps/hr/jobs/jobs.POST.esp`.
 
 * URL in altri formati, che non terminano con .html
 
-   Ad esempio `../content/corporate/jobs/developer.pdf`
+  Ad esempio `../content/corporate/jobs/developer.pdf`
 
-   Lo script sarà `/apps/hr/jobs/jobs.pdf.esp`; il suffisso viene aggiunto al nome dello script.
+  Lo script sarà `/apps/hr/jobs/jobs.pdf.esp`; il suffisso viene aggiunto al nome dello script.
 
 * URL con selettori
 
-   I selettori possono essere utilizzati per visualizzare lo stesso contenuto in un formato alternativo. Ad esempio una versione stampabile, un feed rss o un riepilogo.
+  I selettori possono essere utilizzati per visualizzare lo stesso contenuto in un formato alternativo. Ad esempio una versione stampabile, un feed rss o un riepilogo.
 
-   Se si considera una versione della stampante in cui il selettore potrebbe essere *stampa*; come in `../content/corporate/jobs/developer.print.html`
+  Se si considera una versione della stampante in cui il selettore potrebbe essere *stampa*; come in `../content/corporate/jobs/developer.print.html`
 
-   Lo script sarà `/apps/hr/jobs/jobs.print.esp`; il selettore viene aggiunto al nome dello script.
+  Lo script sarà `/apps/hr/jobs/jobs.print.esp`; il selettore viene aggiunto al nome dello script.
 
 * Se non è stato definito sling:resourceType:
 
    * il percorso del contenuto verrà utilizzato per cercare uno script appropriato se ResourceTypeProvider basato sul percorso è attivo.
 
-      Ad esempio, lo script per `../content/corporate/jobs/developer.html` genera una ricerca in `/apps/content/corporate/jobs/`.
+     Ad esempio, lo script per `../content/corporate/jobs/developer.html` genera una ricerca in `/apps/content/corporate/jobs/`.
 
    * verrà utilizzato il tipo di nodo principale.
 
 * Se non viene trovato alcuno script, verrà utilizzato lo script predefinito.
 
-   La rappresentazione predefinita è attualmente supportata come testo normale (.txt), HTML (.html) e JSON (.json), che elencheranno tutte le proprietà del nodo (formattate in modo appropriato). La rappresentazione predefinita per l’estensione .res, o per le richieste senza estensione di richiesta, consiste nello spool della risorsa (ove possibile).
+  La rappresentazione predefinita è attualmente supportata come testo normale (.txt), HTML (.html) e JSON (.json), che elencheranno tutte le proprietà del nodo (formattate in modo appropriato). La rappresentazione predefinita per l’estensione .res, o per le richieste senza estensione di richiesta, consiste nello spool della risorsa (ove possibile).
 * Per la gestione degli errori http (codici 403 o 404), Sling cercherà uno script in:
 
    * la posizione /apps/sling/servlet/errorhandler per [script personalizzati](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -248,19 +248,19 @@ Ad esempio:
    * b
 
       * sling:resourceSuperType = a
+
    * c
 
       * sling:resourceSuperType = b
+
    * x
 
       * sling:resourceType = c
+
    * y
 
       * sling:resourceType = c
       * sling:resourceSuperType = a
-
-
-
 
 Gerarchia dei tipi di:
 
@@ -327,7 +327,7 @@ Questo consente di eseguire le azioni seguenti su uno qualsiasi dei pacchetti al
 * aggiorna
 * disinstalla
 * visualizzare lo stato corrente
-* accedere a informazioni più dettagliate (ad es. nome simbolico, versione, posizione, ecc.) sui bundle specifici
+* accedere a informazioni più dettagliate (ad esempio, nome simbolico, versione, posizione, ecc.) sui bundle specifici
 
 Consulta [la console web](/help/sites-deploying/web-console.md), [Configurazione OSGI](/help/sites-deploying/configuring-osgi.md) e [Impostazioni configurazione OSGi](/help/sites-deploying/osgi-configuration-settings.md) per ulteriori informazioni.
 
@@ -418,29 +418,29 @@ L’elenco seguente offre una panoramica della struttura visualizzata all’inte
 
 * `/apps`
 
-   Relativo all’applicazione; include definizioni di componenti specifiche del sito web. I componenti sviluppati possono essere basati sui componenti predefiniti disponibili all’indirizzo `/libs/foundation/components`.
+  Relativo all’applicazione; include definizioni di componenti specifiche del sito web. I componenti sviluppati possono essere basati sui componenti predefiniti disponibili all’indirizzo `/libs/foundation/components`.
 
 * `/content`
 
-   Contenuto creato per il sito web.
+  Contenuto creato per il sito web.
 
 * `/etc`
 
 * `/home`
 
-   Informazioni su utenti e gruppi.
+  Informazioni su utenti e gruppi.
 
 * `/libs`
 
-   Librerie e definizioni che appartengono al nucleo dell&#39;AEM. Le sottocartelle in `/libs` rappresenta le funzioni predefinite dell’AEM, ad esempio ricerca o replica. Il contenuto in `/libs` non deve essere modificato in quanto influisce sul modo in cui funziona l’AEM. Le funzioni specifiche del sito web devono essere sviluppate in `/apps` (vedere [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  Librerie e definizioni che appartengono al nucleo dell&#39;AEM. Le sottocartelle in `/libs` rappresenta le funzioni predefinite dell’AEM, ad esempio ricerca o replica. Il contenuto in `/libs` non deve essere modificato in quanto influisce sul modo in cui funziona l’AEM. Le funzioni specifiche del sito web devono essere sviluppate in `/apps` (vedere [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
-   Area di lavoro temporanea.
+  Area di lavoro temporanea.
 
 * `/var`
 
-   File che vengono modificati e aggiornati dal sistema, ad esempio registri di controllo, statistiche e gestione degli eventi.
+  File che vengono modificati e aggiornati dal sistema, ad esempio registri di controllo, statistiche e gestione degli eventi.
 
 ## Ambienti {#environments}
 

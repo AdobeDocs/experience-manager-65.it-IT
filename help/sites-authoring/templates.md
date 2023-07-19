@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4872'
-ht-degree: 51%
+source-wordcount: '4871'
+ht-degree: 50%
 
 ---
 
@@ -80,14 +80,14 @@ La creazione di un nuovo modello tramite **Templates Console (Console modelli)**
    * Questo è un autore specifico che è membro del gruppo `template-authors`
 
       * In questo modo vengono assegnati i privilegi e le autorizzazioni necessarie.
+
    * Può configurare l’utilizzo di componenti e di altri dettagli di alto livello che richiedono:
 
       * Alcune conoscenze tecniche
 
          * Ad esempio, l&#39;utilizzo di pattern durante la definizione dei tracciati.
+
       * Informazioni tecniche fornite dallo sviluppatore.
-
-
 
 A causa della natura di alcune attività, come la creazione di una cartella, è necessario un ambiente di sviluppo che richiede conoscenza/esperienza.
 
@@ -265,7 +265,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 
 1. Apri la scheda **Avanzate**.
 
-1. In **Impostazioni modello** utilizza **Aggiungi campo** per specificare il percorso del modello.
+1. Sotto **Impostazioni modello** utilizzare **Aggiungi campo** per specificare i percorsi dei modelli.
 
    Il percorso può essere esplicito o utilizzare pattern. Esempio:
 
@@ -304,35 +304,35 @@ Durante la creazione o la modifica di un modello è possibile definire vari aspe
 
 * [Struttura](#editingatemplatestructure)
 
-   I componenti aggiunti in questo punto non possono essere spostati o rimossi dalle pagine risultanti dagli autori delle pagine. Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti dalle pagine risultanti, devi aggiungere al modello un sistema di paragrafi.
+  I componenti aggiunti in questo punto non possono essere spostati o rimossi dalle pagine risultanti dagli autori delle pagine. Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti dalle pagine risultanti, devi aggiungere al modello un sistema di paragrafi.
 
-   Quando i componenti sono bloccati, è possibile aggiungere contenuti che non possono essere modificati dagli autori delle pagine. Puoi sbloccare i componenti per definire [Contenuto iniziale](#editingatemplateinitialcontent).
+  Quando i componenti sono bloccati, è possibile aggiungere contenuti che non possono essere modificati dagli autori delle pagine. Puoi sbloccare i componenti per definire [Contenuto iniziale](#editingatemplateinitialcontent).
 
-   >[!NOTE]
-   >
-   >In modalità struttura, non è possibile spostare, tagliare o eliminare componenti padre di un componente sbloccato.
+  >[!NOTE]
+  >
+  >In modalità struttura, non è possibile spostare, tagliare o eliminare componenti padre di un componente sbloccato.
 
 * [Contenuto iniziale](#editingatemplateinitialcontent)
 
-   Quando un componente è stato sbloccato, è possibile definire il contenuto iniziale che verrà copiato nelle pagine risultanti, create dal modello. I componenti sbloccati possono essere modificati nella pagina o nelle pagine risultanti.
+  Quando un componente è stato sbloccato, è possibile definire il contenuto iniziale che verrà copiato nelle pagine risultanti, create dal modello. I componenti sbloccati possono essere modificati nella pagina o nelle pagine risultanti.
 
-   >[!NOTE]
-   >
-   >Nella modalità **Contenuto iniziale** e nelle pagine risultanti, tutti i componenti sbloccati che hanno un elemento padre accessibile (ad esempio i componenti all’interno di un contenitore di layout) possono essere eliminati.
+  >[!NOTE]
+  >
+  >Nella modalità **Contenuto iniziale** e nelle pagine risultanti, tutti i componenti sbloccati che hanno un elemento padre accessibile (ad esempio i componenti all’interno di un contenitore di layout) possono essere eliminati.
 
 * [Layout](#editingatemplatelayout)
 
-   Qui puoi predefinire il layout del modello per i formati di dispositivo richiesti. La modalità **Layout** per la creazione dei modelli ha le stesse funzionalità della modalità [**Layout** per la creazione delle pagine.](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+  Qui puoi predefinire il layout del modello per i formati di dispositivo richiesti. La modalità **Layout** per la creazione dei modelli ha le stesse funzionalità della modalità [**Layout** per la creazione delle pagine.](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
 * [Criteri di pagina](#editingatemplatepagepolicies)
 
-   In Criteri di pagina è possibile collegare alla pagina i criteri di pagina predefiniti. I criteri di pagina definiscono le varie configurazioni di progettazione.
+  In Criteri di pagina è possibile collegare alla pagina i criteri di pagina predefiniti. I criteri di pagina definiscono le varie configurazioni di progettazione.
 
 * [Stili](/help/sites-authoring/style-system.md)
 
-   Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
+  Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
 
-   Per ulteriori informazioni, consulta la [documentazione sul sistema di stili](/help/sites-authoring/style-system.md).
+  Per ulteriori informazioni, consulta la [documentazione sul sistema di stili](/help/sites-authoring/style-system.md).
 
 Il selettore **Modalità** nella barra degli strumenti consente di selezionare e modificare l’aspetto appropriato del modello:
 
@@ -366,160 +366,160 @@ In entrata **Struttura** modalità dell’editor modelli:
 
 * **Aggiungi componenti**
 
-   Esistono diversi meccanismi per aggiungere componenti al modello:
+  Esistono diversi meccanismi per aggiungere componenti al modello:
 
    * Dalla sezione **Componenti** nel pannello laterale.
    * Utilizzando il **Inserisci componente** opzione (**+** disponibile sulla barra degli strumenti dei componenti già presenti nel modello o nel **Trascina qui i componenti** casella.
 
    * Trascinando una risorsa (dalla **Risorse** nel pannello laterale) direttamente sul modello per generare il componente appropriato in situ.
 
-   Una volta aggiunto, ogni componente viene contrassegnato con:
+  Una volta aggiunto, ogni componente viene contrassegnato con:
 
    * Bordo
    * Un marcatore per mostrare il tipo di componente
    * Indicatore da visualizzare quando il componente è stato sbloccato
 
-   >[!NOTE]
-   >
-   >Quando si aggiunge al modello un componente **Titolo** pronto per l’uso, questo conterrà la **struttura** di testo predefinita.
-   >
-   >
-   >Se si modifica questa impostazione e si aggiunge un proprio testo, questo testo aggiornato verrà utilizzato quando si crea una pagina dal modello.
-   >
-   >
-   >Se si lascia il testo (struttura) predefinito, il titolo predefinito corrisponde al nome della pagina risultante.
+  >[!NOTE]
+  >
+  >Quando si aggiunge al modello un componente **Titolo** pronto per l’uso, questo conterrà la **struttura** di testo predefinita.
+  >
+  >
+  >Se si modifica questa impostazione e si aggiunge un proprio testo, questo testo aggiornato verrà utilizzato quando si crea una pagina dal modello.
+  >
+  >
+  >Se si lascia il testo (struttura) predefinito, il titolo predefinito corrisponde al nome della pagina risultante.
 
-   >[!NOTE]
-   >
-   >Sebbene non sia identica, l’aggiunta di componenti e risorse a un modello ha molte somiglianze con azioni simili durante la [creazione di pagine](/help/sites-authoring/editing-content.md).
+  >[!NOTE]
+  >
+  >Sebbene non sia identica, l’aggiunta di componenti e risorse a un modello ha molte somiglianze con azioni simili durante la [creazione di pagine](/help/sites-authoring/editing-content.md).
 
 * **Azioni dei componenti**
 
-   Esegui azioni sui componenti una volta aggiunti al modello. Ogni singola istanza dispone di una barra degli strumenti che ti consente di accedere alle azioni disponibili; la barra degli strumenti dipende dal tipo di componente.
+  Esegui azioni sui componenti una volta aggiunti al modello. Ogni singola istanza dispone di una barra degli strumenti che ti consente di accedere alle azioni disponibili; la barra degli strumenti dipende dal tipo di componente.
 
-   ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
+  ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
 
-   Può anche dipendere dalle azioni intraprese, ad esempio se un criterio è stato associato al componente, in tal caso l’icona di configurazione del progetto diventa disponibile.
+  Può anche dipendere dalle azioni intraprese, ad esempio se un criterio è stato associato al componente, in tal caso l’icona di configurazione del progetto diventa disponibile.
 
 * **Modifica e Configura**
 
-   Con queste due azioni è possibile aggiungere contenuti ai componenti.
+  Con queste due azioni è possibile aggiungere contenuti ai componenti.
 
 * **Bordo per indicare la struttura**
 
-   Quando si lavora in **Struttura** mode un bordo arancione indica il componente attualmente selezionato. Una linea tratteggiata indica anche il componente principale.
+  Quando si lavora in **Struttura** mode un bordo arancione indica il componente attualmente selezionato. Una linea tratteggiata indica anche il componente principale.
 
-   Ad esempio, nella schermata seguente **Testo** è selezionato, all&#39;interno di un **Contenitore di layout** (responsivegrid).
+  Ad esempio, nella schermata seguente **Testo** è selezionato, all&#39;interno di un **Contenitore di layout** (responsivegrid).
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 * **Criteri e proprietà (generale)**
 
-   I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
+  I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
 
-   Crea un criterio per i contenuti o selezionane uno esistente per un componente. In questo modo è possibile definire i dettagli del progetto.
+  Crea un criterio per i contenuti o selezionane uno esistente per un componente. In questo modo è possibile definire i dettagli del progetto.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
+  ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
-   La finestra di configurazione è divisa in due parti.
+  La finestra di configurazione è divisa in due parti.
 
    * Nella parte sinistra, in **Criteri**, è possibile selezionare un criterio esistente.
    * Nella parte destra, in **Proprietà** è possibile impostare le proprietà specifiche del tipo di componente.
 
-   Le proprietà disponibili dipendono dal componente selezionato. Ad esempio, per un componente testo le proprietà definiscono le opzioni di copia e incolla, le opzioni di formattazione e lo stile di paragrafo, tra le altre opzioni.
+  Le proprietà disponibili dipendono dal componente selezionato. Ad esempio, per un componente testo le proprietà definiscono le opzioni di copia e incolla, le opzioni di formattazione e lo stile di paragrafo, tra le altre opzioni.
 
-   ***Criterio***
+  ***Criterio***
 
-   I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
+  I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
 
-   In **Criterio** puoi selezionare un criterio esistente da applicare al componente tramite il menu a discesa.
+  In **Criterio** puoi selezionare un criterio esistente da applicare al componente tramite il menu a discesa.
 
-   ![chlimage_1-137](assets/chlimage_1-137.png)
+  ![chlimage_1-137](assets/chlimage_1-137.png)
 
-   Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al menu a discesa **Seleziona criterio**. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**.
+  Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al menu a discesa **Seleziona criterio**. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**.
 
-   ![chlimage_1-138](assets/chlimage_1-138.png)
+  ![chlimage_1-138](assets/chlimage_1-138.png)
 
-   Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
+  Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
 
-   ![chlimage_1-139](assets/chlimage_1-139.png)
+  ![chlimage_1-139](assets/chlimage_1-139.png)
 
-   La descrizione del criterio nel campo **Descrizione criterio** è facoltativa.
+  La descrizione del criterio nel campo **Descrizione criterio** è facoltativa.
 
-   Nella sezione **Altri modelli che utilizzano il criterio selezionato**, è possibile vedere facilmente quali altri modelli utilizzano i criteri selezionati nell’elenco a discesa **Seleziona criterio**.
+  Nella sezione **Altri modelli che utilizzano il criterio selezionato**, è possibile vedere facilmente quali altri modelli utilizzano i criteri selezionati nell’elenco a discesa **Seleziona criterio**.
 
-   ![chlimage_1-140](assets/chlimage_1-140.png)
+  ![chlimage_1-140](assets/chlimage_1-140.png)
 
-   >[!NOTE]
-   >
-   >Se vengono aggiunti come contenuto iniziale più componenti dello stesso tipo, lo stesso criterio si applica a tutti i componenti. Riflette la stessa restrizione in [**Modalità Progettazione** per modelli statici](/help/sites-authoring/default-components-designmode.md).
+  >[!NOTE]
+  >
+  >Se vengono aggiunti come contenuto iniziale più componenti dello stesso tipo, lo stesso criterio si applica a tutti i componenti. Riflette la stessa restrizione in [**Modalità Progettazione** per modelli statici](/help/sites-authoring/default-components-designmode.md).
 
-   ***Proprietà***
+  ***Proprietà***
 
-   Sotto **Proprietà** titolo puoi definire le impostazioni del componente. L’intestazione presenta due schede:
+  Sotto **Proprietà** titolo puoi definire le impostazioni del componente. L’intestazione presenta due schede:
 
    * Principale
    * Funzioni
 
-   *Principale*
+  *Principale*
 
-   Il giorno **Principale** , vengono definite le impostazioni più importanti del componente.
+  Il giorno **Principale** , vengono definite le impostazioni più importanti del componente.
 
-   Ad esempio, per un componente immagine le larghezze consentite possono essere definite insieme all’abilitazione del caricamento lento.
+  Ad esempio, per un componente immagine le larghezze consentite possono essere definite insieme all’abilitazione del caricamento lento.
 
-   Se un’impostazione consente più configurazioni, tocca o fai clic su **Aggiungi** per aggiungere un’altra configurazione.
+  Se un’impostazione consente più configurazioni, tocca o fai clic su **Aggiungi** per aggiungere un’altra configurazione.
 
-   ![chlimage_1-141](assets/chlimage_1-141.png)
+  ![chlimage_1-141](assets/chlimage_1-141.png)
 
-   Per rimuovere una configurazione, tocca o fai clic sul pulsante **Elimina** situato a destra della configurazione.
+  Per rimuovere una configurazione, tocca o fai clic sul pulsante **Elimina** situato a destra della configurazione.
 
-   Per rimuovere una configurazione, tocca o fai clic ** pulsante Elimina**.
+  Per rimuovere una configurazione, tocca o fai clic ** pulsante Elimina**.
 
-   ![chlimage_1-142](assets/chlimage_1-142.png)
+  ![chlimage_1-142](assets/chlimage_1-142.png)
 
-   *Funzioni*
+  *Funzioni*
 
-   Il **Funzioni** consente di abilitare o disabilitare funzioni aggiuntive del componente.
+  Il **Funzioni** consente di abilitare o disabilitare funzioni aggiuntive del componente.
 
-   Ad esempio, per un componente immagine puoi definire le proporzioni di ritaglio, gli orientamenti consentiti per le immagini e se sono consentiti caricamenti.
+  Ad esempio, per un componente immagine puoi definire le proporzioni di ritaglio, gli orientamenti consentiti per le immagini e se sono consentiti caricamenti.
 
-   ![chlimage_1-143](assets/chlimage_1-143.png)
+  ![chlimage_1-143](assets/chlimage_1-143.png)
 
-   >[!CAUTION]
-   >
-   >In AEM i rapporti di ritaglio sono definiti come **altezza/larghezza**. Questo differisce dalla definizione tradizionale di larghezza/altezza, per ragioni di compatibilità con versioni precedenti. Gli utenti che creano le pagine non noteranno alcuna differenza, purché sia stato definito chiaramente il **Nome**, che verrà visualizzato nell’interfaccia utente.
+  >[!CAUTION]
+  >
+  >In AEM i rapporti di ritaglio sono definiti come **altezza/larghezza**. Questo differisce dalla definizione tradizionale di larghezza/altezza, per ragioni di compatibilità con versioni precedenti. Gli utenti che creano le pagine non noteranno alcuna differenza, purché sia stato definito chiaramente il **Nome**, che verrà visualizzato nell’interfaccia utente.
 
-   >[!NOTE]
-   >
-   >[I criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni di interfaccia utente. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[!NOTE]
+  >
+  >[I criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni di interfaccia utente. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Criteri e proprietà (contenitore di layout)**
 
-   Le impostazioni dei criteri e delle proprietà di un contenitore di layout sono simili all’utilizzo generale, ma con alcune differenze.
+  Le impostazioni dei criteri e delle proprietà di un contenitore di layout sono simili all’utilizzo generale, ma con alcune differenze.
 
-   >[!NOTE]
-   >
-   >La configurazione di un criterio è obbligatoria per i componenti contenitore in quanto consente di definire i componenti che saranno disponibili nel contenitore.
+  >[!NOTE]
+  >
+  >La configurazione di un criterio è obbligatoria per i componenti contenitore in quanto consente di definire i componenti che saranno disponibili nel contenitore.
 
-   La finestra di configurazione è divisa in due parti, come nell’utilizzo generale della finestra.
+  La finestra di configurazione è divisa in due parti, come nell’utilizzo generale della finestra.
 
-   ***Criterio***
+  ***Criterio***
 
-   I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
+  I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
 
-   In **Criterio** puoi selezionare un criterio esistente da applicare al componente tramite il menu a discesa. Questo funziona come nell’uso generale della finestra.
+  In **Criterio** puoi selezionare un criterio esistente da applicare al componente tramite il menu a discesa. Questo funziona come nell’uso generale della finestra.
 
-   ***Proprietà***
+  ***Proprietà***
 
-   Sotto **Proprietà** intestazione puoi scegliere quali componenti sono disponibili per il contenitore layout e definirne le impostazioni. L’intestazione presenta tre schede:
+  Sotto **Proprietà** intestazione puoi scegliere quali componenti sono disponibili per il contenitore layout e definirne le impostazioni. L’intestazione presenta tre schede:
 
    * Componenti consentiti
    * Componenti standard
    * Impostazioni reattive
 
-   *Componenti consentiti*
+  *Componenti consentiti*
 
-   Il giorno **Componenti consentiti** , puoi definire quali componenti sono disponibili per il Contenitore di layout.
+  Il giorno **Componenti consentiti** , puoi definire quali componenti sono disponibili per il Contenitore di layout.
 
    * I componenti sono raggruppati in base ai rispettivi gruppi di componenti, che possono essere espansi e compressi.
    * È possibile selezionare un intero gruppo selezionando il nome del gruppo e deselezionando tutti gli elementi.
@@ -527,52 +527,53 @@ In entrata **Struttura** modalità dell’editor modelli:
    * È disponibile una ricerca per filtrare un componente in base al nome.
    * I conteggi elencati a destra del nome del gruppo di componenti rappresentano il numero totale di componenti selezionati in tali gruppi indipendentemente dal filtro.
 
-   ![chlimage_1-144](assets/chlimage_1-144.png)
+  ![chlimage_1-144](assets/chlimage_1-144.png)
 
-   *Componenti standard*
+  *Componenti standard*
 
-   Il giorno **Componenti predefiniti** definisci quali componenti vengono associati automaticamente a determinati tipi di file multimediali in modo che, quando un autore trascina una risorsa dal browser di risorse, l’AEM sappia a quale componente associarla. Solo i componenti con zone di rilascio sono disponibili per tale configurazione.
+  Il giorno **Componenti predefiniti** definisci quali componenti vengono associati automaticamente a determinati tipi di file multimediali in modo che, quando un autore trascina una risorsa dal browser di risorse, l’AEM sappia a quale componente associarla. Solo i componenti con zone di rilascio sono disponibili per tale configurazione.
 
-   Tocca o fai clic su **Aggiungi mappatura** per aggiungere un componente completamente nuovo e la mappatura del tipo MIME.
+  Tocca o fai clic su **Aggiungi mappatura** per aggiungere un componente completamente nuovo e la mappatura del tipo MIME.
 
-   Seleziona un componente nell’elenco e tocca o fai clic su **Aggiungi tipo** per aggiungere un altro tipo MIME a un componente già mappato. Fai clic sull’icona **Elimina** per rimuovere un tipo di MIME.
+  Seleziona un componente nell’elenco e tocca o fai clic su **Aggiungi tipo** per aggiungere un altro tipo MIME a un componente già mappato. Fai clic sull’icona **Elimina** per rimuovere un tipo di MIME.
 
-   ![chlimage_1-145](assets/chlimage_1-145.png)
+  ![chlimage_1-145](assets/chlimage_1-145.png)
 
-   *Impostazioni reattive*
+  *Impostazioni reattive*
 
-   Nella scheda **Impostazioni reattive** è possibile configurare il numero di colonne nella griglia risultante del contenitore layout.
+  Nella scheda **Impostazioni reattive** è possibile configurare il numero di colonne nella griglia risultante del contenitore layout.
 
 * **Sblocca/Blocca componenti**
 
-   Puoi sbloccare/bloccare i componenti per definire se il contenuto è disponibile per la modifica in **Contenuto iniziale** modalità.
+  Puoi sbloccare/bloccare i componenti per definire se il contenuto è disponibile per la modifica in **Contenuto iniziale** modalità.
 
-   Quando un componente è stato sbloccato:
+  Quando un componente è stato sbloccato:
 
    * Nel bordo viene visualizzato un indicatore di lucchetto aperto.
    * La barra degli strumenti del componente verrà regolata di conseguenza.
    * Tutti i contenuti già immessi non saranno più visualizzati in **Struttura** modalità.
 
       * Il contenuto già inserito è considerato contenuto iniziale ed è visibile solo nella modalità **Contenuto iniziale**.
+
    * L’elemento padre di un componente sbloccato non può essere spostato, tagliato o cancellato.
 
-   ![chlimage_1-146](assets/chlimage_1-146.png)
+  ![chlimage_1-146](assets/chlimage_1-146.png)
 
-   Ciò include lo sblocco di componenti contenitore in modo che possano essere aggiunti altri componenti, sia in modalità **Contenuto iniziale** che sulle pagine risultanti. Se hai già aggiunto componenti/contenuti al contenitore prima di sbloccarlo, questi non saranno più visualizzati in modalità **Struttura** ma saranno presenti in modalità **Contenuto iniziale**. In **Modalità struttura**, verrà mostrato solo il componente del contenitore stesso con il suo elenco di **Componenti consentiti**.
+  Ciò include lo sblocco di componenti contenitore in modo che possano essere aggiunti altri componenti, sia in modalità **Contenuto iniziale** che sulle pagine risultanti. Se hai già aggiunto componenti/contenuti al contenitore prima di sbloccarlo, questi non saranno più visualizzati in modalità **Struttura** ma saranno presenti in modalità **Contenuto iniziale**. In **Modalità struttura**, verrà mostrato solo il componente del contenitore stesso con il suo elenco di **Componenti consentiti**.
 
-   ![chlimage_1-147](assets/chlimage_1-147.png)
+  ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Per risparmiare spazio, il contenitore layout non cresce per accogliere l’elenco dei componenti consentiti. Piuttosto, il contenitore diventa un elenco scorrevole.
+  Per risparmiare spazio, il contenitore layout non cresce per accogliere l’elenco dei componenti consentiti. Piuttosto, il contenitore diventa un elenco scorrevole.
 
-   I componenti configurabili vengono visualizzati con l’icona **Policy**, che può essere toccata o su cui è possibile fare clic per modificare la policy e le proprietà del componente.
+  I componenti configurabili vengono visualizzati con l’icona **Policy**, che può essere toccata o su cui è possibile fare clic per modificare la policy e le proprietà del componente.
 
-   ![chlimage_1-148](assets/chlimage_1-148.png)
+  ![chlimage_1-148](assets/chlimage_1-148.png)
 
 * **Relazione con le pagine esistenti**
 
-   Se la struttura viene aggiornata dopo la creazione di pagine basate sul modello, a tali pagine verranno applicate le modifiche apportate al modello. Questo fatto è segnalato da un avviso nella barra degli strumenti e da finestre di dialogo di conferma.
+  Se la struttura viene aggiornata dopo la creazione di pagine basate sul modello, a tali pagine verranno applicate le modifiche apportate al modello. Questo fatto è segnalato da un avviso nella barra degli strumenti e da finestre di dialogo di conferma.
 
-   ![chlimage_1-149](assets/chlimage_1-149.png)
+  ![chlimage_1-149](assets/chlimage_1-149.png)
 
 ### Modifica di un modello - Contenuto iniziale - Autore {#editing-a-template-initial-content-author}
 
@@ -586,17 +587,17 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 
 * I componenti sbloccati disponibili per la modifica vengono contrassegnati. Quando sono selezionati, presentano un bordo blu:
 
-   ![chlimage_1-150](assets/chlimage_1-150.png)
+  ![chlimage_1-150](assets/chlimage_1-150.png)
 
 * I componenti sbloccati dispongono di una barra degli strumenti che consente di modificare e configurare il contenuto:
 
-   ![chlimage_1-151](assets/chlimage_1-151.png)
+  ![chlimage_1-151](assets/chlimage_1-151.png)
 
 * Se un componente del contenitore è stato sbloccato (in modalità **Struttura**), è possibile aggiungervi nuovi componenti (in modalità **Contenuto iniziale**). I componenti aggiunti in modalità **Contenuto iniziale** possono essere spostati o eliminati dalle pagine risultanti.
 
-   È possibile aggiungere un componente utilizzando l’area **Trascina qui i componenti** o l’opzione **Inserisci nuovo componente** dalla barra degli strumenti del contenitore appropriato.
+  È possibile aggiungere un componente utilizzando l’area **Trascina qui i componenti** o l’opzione **Inserisci nuovo componente** dalla barra degli strumenti del contenitore appropriato.
 
-   ![chlimage_1-152](assets/chlimage_1-152.png) ![chlimage_1-153](assets/chlimage_1-153.png)
+  ![chlimage_1-152](assets/chlimage_1-152.png) ![chlimage_1-153](assets/chlimage_1-153.png)
 
 * Se il contenuto iniziale del modello viene aggiornato dopo la creazione delle pagine basate sul modello, tali pagine non saranno influenzate dalle modifiche apportate al contenuto iniziale del modello.
 
@@ -638,24 +639,24 @@ Per accedere al **Progettazione pagina** finestra di dialogo:
 
 * Puoi selezionare un criterio esistente per la pagina dal menu a discesa **Seleziona criterio**.
 
-   ![chlimage_1-157](assets/chlimage_1-157.png)
+  ![chlimage_1-157](assets/chlimage_1-157.png)
 
-   Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al menu a discesa **Seleziona criterio**. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**.
+  Puoi aggiungere un nuovo criterio selezionando il pulsante di aggiunta accanto al menu a discesa **Seleziona criterio**. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**.
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
+  ![chlimage_1-158](assets/chlimage_1-158.png)
 
-   Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
+  Il criterio esistente selezionato nel menu a discesa **Seleziona criterio** può essere copiato come nuovo criterio utilizzando il pulsante Copia, accanto al menu a discesa. Quindi devi assegnare un nuovo titolo nel campo **Titolo criterio**. Per impostazione predefinita, il criterio copiato si chiama **Copia di X**, dove X è il titolo del criterio da cui è stato copiato.
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+  ![chlimage_1-159](assets/chlimage_1-159.png)
 
 * Aggiungi un titolo al criterio nel campo **Titolo criterio**. Un criterio deve avere un titolo che permetta di riconoscerlo facilmente nel menu a discesa **Seleziona criterio**.
 
-   ![chlimage_1-160](assets/chlimage_1-160.png)
+  ![chlimage_1-160](assets/chlimage_1-160.png)
 
 * La descrizione del criterio nel campo **Descrizione criterio** è facoltativa.
 * Nella sezione **Altri modelli che utilizzano il criterio selezionato**, è possibile vedere facilmente quali altri modelli utilizzano i criteri selezionati nell’elenco a discesa **Seleziona criterio**.
 
-   ![chlimage_1-161](assets/chlimage_1-161.png)
+  ![chlimage_1-161](assets/chlimage_1-161.png)
 
 #### Proprietà pagina {#page-properties}
 
@@ -665,19 +666,19 @@ Con le proprietà della pagina è possibile definire le librerie lato client ric
 
 * Specifica le librerie lato client da applicare alle pagine create con questo modello. Immissione del nome di una libreria nel campo di testo della **Librerie lato client** sezione.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+  ![chlimage_1-163](assets/chlimage_1-163.png)
 
 * Se sono necessarie più librerie, fai clic sul pulsante Aggiungi per aggiungere un ulteriore campo di testo al nome della libreria.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+  ![chlimage_1-164](assets/chlimage_1-164.png)
 
-   Aggiungi tutti i campi di testo necessari per le librerie lato client.
+  Aggiungi tutti i campi di testo necessari per le librerie lato client.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![chlimage_1-165](assets/chlimage_1-165.png)
 
 * Se necessario, definisci la posizione relativa delle librerie trascinando i campi con la maniglia di trascinamento.
 
-   ![chlimage_1-166](assets/chlimage_1-166.png)
+  ![chlimage_1-166](assets/chlimage_1-166.png)
 
 >[!NOTE]
 >
@@ -707,13 +708,16 @@ Quando crei dei modelli, prendi in considerazione quanto segue:
 
       * Queste vengono applicate immediatamente alle pagine risultanti.
       * La pubblicazione del modello modificato è ancora necessaria per consentire ai visitatori di visualizzare le modifiche.
+
    * Modifiche ai criteri di contenuto e alle configurazioni di progettazione:
 
       * Questi si applicano immediatamente alle pagine risultanti.
       * La pubblicazione delle modifiche è necessaria per consentire ai visitatori di visualizzarle.
+
    * Modifiche al contenuto iniziale:
 
       * Si applicano solo alle pagine create dopo le modifiche al modello.
+
    * Le modifiche al layout dipendono dall’appartenenza o meno del componente modificato:
 
       * Solo struttura - applicato immediatamente

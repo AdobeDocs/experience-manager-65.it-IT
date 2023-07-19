@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Widget percorso nodo</td>
-   <td><p>Visualizza il percorso del nodo attualmente selezionato.</p> <p>Puoi anche utilizzarlo per passare a un nodo, immettendo manualmente il percorso o incollandolo da un’altra posizione e premendo Invio.</p> <p>Fornisce inoltre supporto per la ricerca di nodi con un nome di nodo specifico. Inserisci il nome del nodo che desideri trovare e attendi (o premi il simbolo di ricerca sul lato destro). Prova a immettere, ad esempio, la stringa <em>quercia</em> per vedere come funziona. Se uno o più nodi vengono caricati nel riquadro dell'elenco delle cartelle, verrà visualizzato l'elenco e sarà possibile selezionare il percorso e premere Invio per individuarlo. Si noti che funziona solo per i nodi attualmente caricati nell’applicazione client CRXDE nel browser. Se si desidera eseguire una ricerca nell'intero repository, utilizzare Strumenti, quindi Query.</p> </td>
+   <td><p>Visualizza il percorso del nodo attualmente selezionato.</p> <p>Puoi anche utilizzarlo per passare a un nodo, immettendo manualmente il percorso o incollandolo da un’altra posizione e premendo Invio.</p> <p>Fornisce inoltre supporto per la ricerca di nodi con un nome di nodo specifico. Inserisci il nome del nodo che desideri trovare e attendi (o premi il simbolo di ricerca sul lato destro). È possibile provare a immettere, ad esempio, la stringa <em>quercia</em> per vedere come funziona. Se uno o più nodi vengono caricati nel riquadro dell'elenco delle cartelle, verrà visualizzato l'elenco e sarà possibile selezionare il percorso e premere Invio per individuarlo. Si noti che funziona solo per i nodi attualmente caricati nell’applicazione client CRXDE nel browser. Se si desidera eseguire una ricerca nell'intero repository, utilizzare Strumenti, quindi Query.</p> </td>
   </tr>
   <tr>
    <td>Riquadro di Explorer</td>
@@ -81,7 +81,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Scheda Controllo di accesso</td>
-   <td><p>Visualizza le autorizzazioni in base al percorso corrente, a livello di repository o entità principale.</p> <p>Le autorizzazioni sono suddivise in</p> <p>- <strong>Criterio di controllo dell’accesso applicabile</strong>: i criteri che possono essere applicati alla selezione corrente.</p> <p>- <strong>Criteri di controllo dell'accesso locale</strong>: i criteri correnti applicati localmente alla selezione corrente.</p> <p>- <strong>Criteri di controllo dell'accesso effettivi</strong>: i criteri correnti applicati per la selezione corrente, possono essere impostati localmente o ereditati dai nodi padre.</p> <p>Nota. Per poter visualizzare le informazioni sul controllo di accesso, l'utente connesso a CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL. L’utente anonimo non può visualizzare queste informazioni per impostazione predefinita. Accedi come, ad esempio amministratore per visualizzare le informazioni.</p> </td>
+   <td><p>Visualizza le autorizzazioni in base al percorso corrente, a livello di repository o entità principale.</p> <p>Le autorizzazioni sono suddivise in</p> <p>- <strong>Criterio di controllo dell’accesso applicabile</strong>: i criteri che possono essere applicati alla selezione corrente.</p> <p>- <strong>Criteri di controllo dell'accesso locale</strong>: i criteri correnti applicati localmente alla selezione corrente.</p> <p>- <strong>Criteri di controllo dell'accesso effettivi</strong>: i criteri correnti applicati per la selezione corrente, possono essere impostati localmente o ereditati dai nodi padre.</p> <p>Nota. Per poter visualizzare le informazioni sul controllo di accesso, l'utente connesso a CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL. L’utente anonimo non può visualizzare queste informazioni per impostazione predefinita. Accedi come, ad esempio, amministratore per visualizzare le informazioni.</p> </td>
   </tr>
   <tr>
    <td>Scheda Replica</td>
@@ -137,7 +137,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Widget di accesso<br /> </td>
-   <td><p>Visualizza gli utenti attualmente connessi e l'area di lavoro a cui sono connessi, ad esempio admin@crx.default.</p> <p>Fai clic su di esso per accedere o accedere nuovamente come utente specifico. Se non specifichi un'area di lavoro a cui accedere, verrà effettuato l'accesso all'area di lavoro predefinita, crx.default.</p> <p>Se desideri sfogliare il repository come utente anonimo, utilizza <strong>anonimo</strong> come nome di accesso e qualsiasi password (ad esempio, uno spazio o un punto).<br /> </p> <p>Se l’autorizzazione non è più valida (ad esempio, è scaduta), il widget di accesso visualizza "<strong>Non autorizzato - Accesso...</strong>". Fai clic su di esso per accedere di nuovo.</p> </td>
+   <td><p>Visualizza gli utenti attualmente connessi e l'area di lavoro a cui sono connessi, ad esempio admin@crx.default.</p> <p>Fai clic su di esso per accedere o accedere nuovamente come utente specifico. Se non specifichi un'area di lavoro a cui accedere, verrà effettuato l'accesso all'area di lavoro predefinita, crx.default.</p> <p>Se desideri sfogliare il repository come utente anonimo, utilizza <strong>anonimo</strong> come nome di accesso ed eventuali password (ad esempio, uno spazio o un punto).<br /> </p> <p>Se l’autorizzazione non è più valida (ad esempio, è scaduta), il widget di accesso visualizza "<strong>Non autorizzato - Accesso...</strong>". Fai clic su di esso per accedere di nuovo.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -237,7 +237,7 @@ Ora puoi adattare il nodo alle tue esigenze modificando le proprietà o creando 
 >
 >La maggior parte delle operazioni di modifica, incluso Crea nodo, mantiene tutte le modifiche in memoria e le memorizza nell’archivio solo al momento del salvataggio (tramite il pulsante &quot;Salva tutto&quot;). Tuttavia, alcune operazioni, come lo spostamento, vengono mantenute automaticamente.
 >
->La convalida che verifica se il nodo appena creato è consentito dal tipo di nodo del nodo principale viene eseguita prima dall’archivio JCR al momento del salvataggio delle modifiche. Se ricevi un messaggio di errore durante il salvataggio di un nodo, controlla se la struttura del contenuto è valida (ad esempio, non è possibile creare un nodo). `nt:unstructured` nodo come elemento secondario di `nt:folder` nodo ).
+>La convalida che verifica se il nodo appena creato è consentito dal tipo di nodo del nodo principale viene eseguita prima dall’archivio JCR al momento del salvataggio delle modifiche. Se ricevi un messaggio di errore durante il salvataggio di un nodo, controlla se la struttura del contenuto è valida (ad esempio, non puoi creare un nodo `nt:unstructured` nodo come elemento secondario di `nt:folder` nodo ).
 
 ## Creazione di una proprietà {#creating-a-property}
 

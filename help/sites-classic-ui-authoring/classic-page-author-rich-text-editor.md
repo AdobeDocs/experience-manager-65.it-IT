@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1843'
 ht-degree: 2%
 
 ---
@@ -168,7 +168,7 @@ Operazioni disponibili:
 
 * Digitare direttamente un URI
 * Utilizza la mappa del sito per selezionare una pagina all’interno del sito web
-* Inserisci l’URI, quindi aggiungi l’ancoraggio di destinazione; ad esempio `www.TargetUri.org#AnchorName`
+* Inserisci l’URI, quindi aggiungi l’ancoraggio di destinazione; ad esempio, `www.TargetUri.org#AnchorName`
 * Inserisci solo un ancoraggio (per fare riferimento alla &quot;pagina corrente&quot;); ad esempio, `#anchor`
 * Cerca una pagina nel Finder dei contenuti, quindi trascina l’icona della pagina nella finestra di dialogo Collegamento ipertestuale
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '748'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Operazioni disponibili:
 
 * [Definire insiemi di parametri di configurazione per ogni modalità di esecuzione](#defining-configuration-properties-for-a-run-mode).
 
-   Un set di base di parametri di configurazione viene applicato a tutte le modalità di esecuzione e puoi quindi regolare altri set in base allo scopo dell’ambiente specifico. Questi vengono applicati in base alle esigenze.
+  Un set di base di parametri di configurazione viene applicato a tutte le modalità di esecuzione e puoi quindi regolare altri set in base allo scopo dell’ambiente specifico. Questi vengono applicati in base alle esigenze.
 
 * [Definisci i bundle aggiuntivi da installare per una particolare modalità](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
@@ -89,25 +89,25 @@ La modalità di esecuzione è indicata da un suffisso nel nome della cartella. Q
 
 * `config`
 
-   Applicabile a tutte le modalità di esecuzione
+  Applicabile a tutte le modalità di esecuzione
 
 * `config.author`
 
-   Utilizzato per la modalità di esecuzione dell’autore
+  Utilizzato per la modalità di esecuzione dell’autore
 
 * `config.publish`
 
-   Utilizzato per la modalità di esecuzione pubblicazione
+  Utilizzato per la modalità di esecuzione pubblicazione
 
 * `config.<run-mode>`
 
-   Utilizzato per la modalità di esecuzione applicabile; ad esempio, config
+  Utilizzato per la modalità di esecuzione applicabile; ad esempio, config
 
 Consulta [Configurazione OSGi nell’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) per ulteriori dettagli sulla definizione dei singoli nodi di configurazione all&#39;interno di queste cartelle e sulla creazione di configurazioni per combinazioni di più modalità di esecuzione.
 
 >[!NOTE]
 >
->Per [Modalità di esecuzione dell’installazione](#installation-run-modes) (ad esempio, authoring) la modalità di esecuzione non può essere modificata dopo l’installazione. Tuttavia, le modifiche alle singole proprietà di configurazione avranno effetto al riavvio.
+>Per [Modalità di esecuzione dell’installazione](#installation-run-modes) (ad esempio, autore) la modalità di esecuzione non può essere modificata dopo l’installazione. Tuttavia, le modifiche alle singole proprietà di configurazione avranno effetto al riavvio.
 
 ## Definizione di bundle aggiuntivi da installare per una modalità di esecuzione {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -123,8 +123,8 @@ Queste cartelle sono di tipo `nt:folder` e devono contenere il pacchetto appropr
 Se sono state definite configurazioni per più modalità di esecuzione, è necessario definire quale deve essere utilizzata all&#39;avvio. Esistono diversi metodi per specificare quale modalità di esecuzione utilizzare; l’ordine di risoluzione è:
 
 1. [proprietà di sistema (](#using-a-system-property-in-the-start-script)
-1. [ ](#using-the-sling-properties-file)
-1. [ ](#using-the-r-option)
+1. [](#using-the-sling-properties-file)
+1. [](#using-the-r-option)
 1. [Rilevamento del nome file](#filename-detection-renaming-the-jar-file)
 
 Quando si utilizza un server applicazioni è inoltre possibile [definire la modalità di esecuzione in web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -155,14 +155,14 @@ java -jar cq-56-p4545.jar -r dev
 
 * Ad esempio, utilizza quanto segue per avviare un’istanza come istanza di pubblicazione di produzione situata negli Stati Uniti:
 
-   `-Dsling.run.modes=publish,prod,us`
+  `-Dsling.run.modes=publish,prod,us`
 
 ### Rilevamento del nome file - Ridenominazione del file jar {#filename-detection-renaming-the-jar-file}
 
 Le due modalità di esecuzione dell’installazione seguenti possono essere attivate rinominando il file jar dell’installazione prima dell’installazione:
 
 * pubblicazione
-* creazione
+* author
 
 Il file jar deve utilizzare la convenzione di denominazione:
 

@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '985'
 ht-degree: 2%
 
 ---
 
 # Configurare l’integrazione di AEM Assets con Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-I clienti di Adobe Experience Cloud possono sincronizzare le proprie risorse in Adobe Experience Manager Assets con Adobe Creative Cloud e viceversa. Puoi anche sincronizzare le risorse con Experience Cloud e viceversa. Puoi impostare questa sincronizzazione tramite [!DNL Adobe I/O]. Nome aggiornato di [!DNL Adobe Marketing Cloud] è [!DNL Adobe Experience Cloud].
+I clienti di Adobe Experience Cloud possono sincronizzare le proprie risorse in Adobe Experience Manager Assets con Adobe Creative Cloud, e viceversa. Puoi anche sincronizzare le risorse con Experience Cloud e viceversa. Puoi impostare questa sincronizzazione tramite [!DNL Adobe I/O]. Nome aggiornato di [!DNL Adobe Marketing Cloud] è [!DNL Adobe Experience Cloud].
 
 Il flusso di lavoro per impostare questa integrazione è:
 
@@ -165,10 +165,9 @@ AEM Assets lets you share folders containing assets with Adobe Creative Cloud us
 
 The AEM Assets-Marketing Cloud synchronization is designed in a way that the user machine instance from where the asset is uploaded retains the right to modify the asset. Only these changes are propagated to the other instance.
 
-For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and vice versa for asset uploaded from Marketing Cloud.
+For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and conversely for asset uploaded from Marketing Cloud.
 -->
 
 >[!MORELIKETHIS]
 >
 >* [Best practice per l’integrazione di Assets e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
-

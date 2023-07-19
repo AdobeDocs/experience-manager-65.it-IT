@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Tutti i file non dinamici che non cambiano nel tempo possono e devono essere mem
    </Location>
    ```
 
-   Questo consente alla cache intermedia (ad esempio la cache del browser) di memorizzare file CSS, JavaScript, PNG e GIF per un massimo di un mese, fino alla scadenza. Ciò significa che non devono essere richieste dall’AEM o dal server web, ma possono rimanere nella cache del browser.
+   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare file CSS, JavaScript, PNG e GIF per un massimo di un mese, fino alla scadenza. Ciò significa che non devono essere richieste dall’AEM o dal server web, ma possono rimanere nella cache del browser.
 
    Le altre sezioni del sito non devono essere memorizzate nella cache in un’istanza Autore, in quanto sono soggette a modifiche in qualsiasi momento.
 
@@ -75,7 +75,7 @@ Tutti i file non dinamici che non cambiano nel tempo possono e devono essere mem
    </Location>
    ```
 
-   Questo consente alla cache intermedia (ad esempio la cache del browser) di memorizzare file CSS, JavaScript, PNG e GIF per un massimo di un giorno nelle cache client. Anche se questo esempio illustra le impostazioni globali per tutto ciò che segue `/content` e `/etc/designs`, dovresti renderlo più granulare.
+   Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare file CSS, JavaScript, PNG e GIF per un massimo di un giorno nelle cache client. Anche se questo esempio illustra le impostazioni globali per tutto ciò che segue `/content` e `/etc/designs`, dovresti renderlo più granulare.
 
    A seconda della frequenza con cui il sito viene aggiornato, puoi anche considerare la memorizzazione in cache delle pagine di HTML. Un periodo di tempo ragionevole è di 1 ora:
 

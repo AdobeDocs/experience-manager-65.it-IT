@@ -4,10 +4,10 @@ description: Questo articolo introduce i concetti di una SPA e spiega come utili
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 0e8ad326e883f73e795929ce7d5d36f1bcdc5347
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 73%
+source-wordcount: '1967'
+ht-degree: 70%
 
 ---
 
@@ -50,7 +50,7 @@ La procedura dettagliata si basa sulle funzionalità di AEM standard e sull’ap
 
 ### Cos’è una SPA? {#what-is-a-spa}
 
-Un’applicazione a pagina singola (SPA) è diversa da una pagina convenzionale in quanto viene sottoposta a rendering lato client ed è principalmente basata su Javascript, utilizza le chiamate Ajax per caricare i dati e aggiornare dinamicamente la pagina. La maggior parte o tutto il contenuto viene recuperato una volta nel caricamento di una singola pagina con risorse aggiuntive caricate in modo asincrono in base alle esigenze, a seconda dell’interazione dell’utente con la pagina.
+Un’applicazione a pagina singola (SPA) differisce da una pagina convenzionale in quanto viene sottoposta a rendering lato client ed è principalmente basata su JavaScript, poiché si basa sulle chiamate Ajax per caricare i dati e aggiornare dinamicamente la pagina. La maggior parte o tutto il contenuto viene recuperato una volta nel caricamento di una singola pagina con risorse aggiuntive caricate in modo asincrono in base alle esigenze, a seconda dell’interazione dell’utente con la pagina.
 
 Questo riduce la necessità di aggiornare le pagine e offre all’utente un’esperienza caratterizzata da fluidità e rapidità, che si rivela più simile all’esperienza assicurata da un’app nativa.
 
@@ -183,7 +183,7 @@ Nella sezione successiva, [Caricamento di un’applicazione SPA,](#loading-an-sp
 
 1. Passa a **Rete** degli strumenti per sviluppatori e ricarica la pagina.
 
-   Le richieste di immagini vengono ignorate. Nota che le risorse principali caricate per la pagina sono la pagina stessa, il CSS, il JavaScript di React, le sue dipendenze e i dati JSON per la pagina.
+   Ignorando le richieste di immagini, tieni presente che le risorse primarie caricate per la pagina sono la pagina stessa, il CSS, il JavaScript di React, le relative dipendenze e i dati JSON per la pagina.
 
    ![Passaggio 5](assets/spa-walkthrough-step-1-5.png)
 

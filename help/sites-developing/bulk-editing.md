@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ A causa della possibilità di valori diversi, le proprietà della pagina non son
 * Alcuni campi sono in genere univoci, ad esempio il titolo di una pagina. È necessario decidere se è utile abilitare questi campi per la modifica in blocco, quando verrà applicato un valore.
 * Alcuni campi possono avere più valori, che devono essere rappresentati in modo significativo durante il rendering.
 
-   Ad esempio, la casella di controllo &quot;Pronto per la pubblicazione&quot;. Questo potrebbe avere diversi valori prima della modifica in blocco (ad esempio pronto, in revisione, in corso).
+  Ad esempio, la casella di controllo &quot;Pronto per la pubblicazione&quot;. Questo potrebbe avere diversi valori prima della modifica in blocco (ad esempio, pronto, in revisione, in corso).
 
 >[!CAUTION]
 >
@@ -36,7 +36,6 @@ A causa della possibilità di valori diversi, le proprietà della pagina non son
 >* Non disponibile per le pagine all’interno di una Live Copy.
 >* Disponibile solo per le pagine con lo stesso tipo di risorsa.
 >
-
 
 >[!NOTE]
 >
@@ -55,7 +54,6 @@ A causa della possibilità di valori diversi, le proprietà della pagina non son
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
-
 
 I campi sono abilitati nel componente Pagina (*non* sul modello):
 
@@ -92,6 +90,5 @@ I campi sono abilitati nel componente Pagina (*non* sul modello):
    >
    >    1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
    >    1. Apporta le modifiche in `/apps`
-
 
 1. Seleziona **Salva tutto** per mantenere gli aggiornamenti.

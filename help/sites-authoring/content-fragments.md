@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 92%
+source-wordcount: '1141'
+ht-degree: 90%
 
 ---
 
@@ -74,6 +74,7 @@ I frammenti di contenuto consentono:
    * Apri il browser **Risorse** e applica il filtro **Frammenti di contenuto** (l’impostazione predefinita è Immagini). Poi trascina il frammento desiderato sull’istanza del componente.
 
    * Seleziona il componente del frammento di contenuto, quindi **Configura** dalla barra degli strumenti. Nella finestra di dialogo, apri la finestra di dialogo di selezione per individuare e selezionare il **frammento di contenuto** richiesto.
+
    >[!NOTE]
    >
    >In alternativa, puoi trascinare un frammento di contenuto specifico direttamente nella pagina. In questo modo verrà creato automaticamente il componente associato (Frammento di contenuto).
@@ -90,7 +91,8 @@ I frammenti di contenuto consentono:
    >
    >    * [Layout dinamico](/help/sites-authoring/responsive-layout.md)
    >    * [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md)
-
+   >
+   >
 
 ### Selezione dell’elemento o della variante {#selecting-the-element-or-variation}
 
@@ -100,7 +102,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
 * **Frammento di contenuto**
 
-   Specifica il frammento da utilizzare.
+  Specifica il frammento da utilizzare.
 
 * **Modalità di visualizzazione**:
 
@@ -113,9 +115,9 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
    * Il valore predefinito **Principale** sarà sempre disponibile.
    * Se il frammento è stato creato con un modello appropriato, sarà disponibile una selezione.
 
-   >[!NOTE]
-   >
-   >Gli elementi disponibili dipendono dal modello utilizzato.
+  >[!NOTE]
+  >
+  >Gli elementi disponibili dipendono dal modello utilizzato.
 
 * **Variazione**
 
@@ -124,7 +126,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
 * **Paragrafi**: specifica l’intervallo di paragrafi da includere:
 
-   * **Tutti i bundle**
+   * **Tutti**
    * **Intervallo**: ad esempio, `1`, `3-5`, `9-*`
 
       * **Tratta le intestazioni come paragrafi propri**
@@ -175,14 +177,13 @@ Per il contenuto intermedio è possibile:
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
 >
 
-
 ### Uso di contenuti associati  {#using-associated-content}
 
 Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](#adding-in-between-content).
 
 >[!NOTE]
 >
->Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+>Esistono vari metodi per aggiungere [risorse visive (ad esempio immagini)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
 >[!NOTE]
 >
@@ -196,7 +197,7 @@ Da qui puoi trascinare le risorse nella posizione richiesta (su un componente es
 
 ### Risorse inserite nel frammento {#assets-inserted-into-the-fragment}
 
-Se sono state inserite risorse, ad esempio immagini, nel frammento stesso, le opzioni per la modifica di tali risorse nell’editor pagina sono limitate. <!-- Removed link as it was a 404 on helpx -->
+Se sono state inserite delle risorse (ad esempio immagini) nel frammento stesso, le opzioni per la modifica di tali risorse nell’editor pagina sono limitate. <!-- Removed link as it was a 404 on helpx -->
 
 Ad esempio, per un’immagine è possibile:
 

@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1293'
 ht-degree: 4%
 
 ---
@@ -49,11 +49,11 @@ Sotto **[!UICONTROL Classificazioni consentite]** , specificare l&#39;elenco com
 
 * **[!UICONTROL Classificazioni consentite]**
 
-   Un elenco di valutazioni tra cui un membro può scegliere.
+  Un elenco di valutazioni tra cui un membro può scegliere.
 
-   Utilizzare la freccia su, la freccia giù e i pulsanti di eliminazione per modificare le selezioni visibili.
+  Utilizzare la freccia su, la freccia giù e i pulsanti di eliminazione per modificare le selezioni visibili.
 
-   Clic **[!UICONTROL Aggiungi elemento]** per aggiungere un’altra scelta di valutazione.
+  Clic **[!UICONTROL Aggiungi elemento]** per aggiungere un’altra scelta di valutazione.
 
 Sotto **[!UICONTROL Classificazioni richieste]** , immettere nuovamente gli elementi dall&#39;elenco di **[!UICONTROL Classificazioni consentite]** che devono essere valutati. Se un elemento viene specificato solo nella scheda Classificazioni consentite, può non essere contrassegnato quando viene inviato dal membro.
 
@@ -63,11 +63,11 @@ Sul sito web, le valutazioni richieste sono contrassegnate da un asterisco. Se u
 
 * **[!UICONTROL Classificazioni richieste]**
 
-   Un sottoinsieme di valutazioni consentite, che indica quali valutazioni sono richieste.
+  Un sottoinsieme di valutazioni consentite, che indica quali valutazioni sono richieste.
 
-   Utilizzare la freccia su, la freccia giù e i pulsanti di eliminazione per modificare le selezioni visibili.
+  Utilizzare la freccia su, la freccia giù e i pulsanti di eliminazione per modificare le selezioni visibili.
 
-   Clic **[!UICONTROL Aggiungi elemento]** per aggiungere un’altra scelta di risposta.
+  Clic **[!UICONTROL Aggiungi elemento]** per aggiungere un’altra scelta di risposta.
 
 >[!NOTE]
 >
@@ -79,35 +79,35 @@ Sotto **[!UICONTROL Recensioni]** , specificare la modalità di gestione delle r
 
 * **[!UICONTROL Consenti risposte]**
 
-   Se questa opzione è selezionata, consenti le risposte alle revisioni. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti le risposte alle revisioni. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Chiuso]**
 
-   Se questa opzione è selezionata, la revisione verrà chiusa alle nuove revisioni e risposte. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, la revisione verrà chiusa alle nuove revisioni e risposte. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Consenti caricamenti file]**
 
-   Se questa opzione è selezionata, consenti il caricamento degli allegati per la revisione. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti il caricamento degli allegati per la revisione. L&#39;impostazione predefinita è deselezionata.
 
 * **Dimensione file massima**
 
-   Rilevante solo se **[!UICONTROL Consenti caricamenti file]** è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 10 MB.
+  Rilevante solo se **[!UICONTROL Consenti caricamenti file]** è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 10 MB.
 
 * **[!UICONTROL Lunghezza massima messaggio]**
 
-   Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
+  Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
 
 * **[!UICONTROL Tipi di file consentiti]**
 
-   Rilevante solo se **[!UICONTROL Consenti caricamenti file]** è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
+  Rilevante solo se **[!UICONTROL Consenti caricamenti file]** è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **[!UICONTROL Editor Rich Text]**
 
-   Se questa opzione è selezionata, i post possono essere immessi con markup. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, i post possono essere immessi con markup. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Consenti votazione]**
 
-   Se questa opzione è selezionata, includere la funzionalità di votazione per un argomento. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, includere la funzionalità di votazione per un argomento. L&#39;impostazione predefinita è deselezionata.
 
 Sotto **[!UICONTROL Moderazione utenti]** , specifica come vengono gestite le recensioni postate. Per ulteriori informazioni, consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
@@ -115,39 +115,39 @@ Sotto **[!UICONTROL Moderazione utenti]** , specifica come vengono gestite le re
 
 * **[!UICONTROL Premoderazione]**
 
-   Se questa opzione è selezionata, le recensioni devono essere approvate prima di essere visualizzate su un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, le recensioni devono essere approvate prima di essere visualizzate su un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Elimina recensioni]**
 
-   Se questa opzione è selezionata, il membro che ha pubblicato la revisione potrà eliminarla. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, il membro che ha pubblicato la revisione potrà eliminarla. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Rifiuta recensioni]**
 
-   Se questa opzione è selezionata, consenti ai moderatori di rifiutare le recensioni. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti ai moderatori di rifiutare le recensioni. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Chiudi/Riapri recensioni]**
 
-   Se questa opzione è selezionata, consenti ai moderatori di chiudere e riaprire le recensioni. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti ai moderatori di chiudere e riaprire le recensioni. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Segnala recensioni]**
 
-   Se questa opzione è selezionata, consenti ai membri di segnalare le revisioni non appropriate. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consenti ai membri di segnalare le revisioni non appropriate. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Elenco di motivi per segnalazione]**
 
-   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare una revisione come inappropriata. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare una revisione come inappropriata. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Motivo per segnalazione personalizzato]**
 
-   Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare una revisione come inappropriata. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare una revisione come inappropriata. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Soglia moderazione]**
 
-   Immetti il numero di volte in cui i membri devono segnalare una revisione prima che il moderatore riceva una notifica. Il valore predefinito è una tantum (1).
+  Immetti il numero di volte in cui i membri devono segnalare una revisione prima che il moderatore riceva una notifica. Il valore predefinito è una tantum (1).
 
 * **[!UICONTROL Limite segnalazione]**
 
-   Immettere il numero di volte in cui è necessario contrassegnare una revisione prima che venga nascosta alla visualizzazione pubblica. Questo numero deve essere maggiore o uguale al **[!UICONTROL Soglia moderazione]**. Il valore predefinito è 5.
+  Immettere il numero di volte in cui è necessario contrassegnare una revisione prima che venga nascosta alla visualizzazione pubblica. Questo numero deve essere maggiore o uguale al **[!UICONTROL Soglia moderazione]**. Il valore predefinito è 5.
 
 ### Aggiunta di un riepilogo di revisione (visualizzazione) a una pagina {#adding-a-review-summary-display-to-a-page}
 
@@ -179,13 +179,13 @@ Sotto **[!UICONTROL Riepilogo recensioni]** scheda
 
 * `Review Path`
 
-   immetti o sfoglia l’istanza inserita del `reviews`componente da riepilogare, ad esempio, se aggiunto alla pagina web del [Geometrixx sito di coinvolgimento,](getting-started.md) il percorso sarà:
+  immetti o sfoglia l’istanza inserita del `reviews`componente da riepilogare, ad esempio, se aggiunto alla pagina web del [Geometrixx sito di coinvolgimento,](getting-started.md) il percorso sarà:
 
-   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
+  `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-   Se questa opzione è selezionata, includi la visualizzazione di un grafico a barre indicante il numero di stelle di valutazione presenti nelle recensioni da riepilogare. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, includi la visualizzazione di un grafico a barre indicante il numero di stelle di valutazione presenti nelle recensioni da riepilogare. L&#39;impostazione predefinita è deselezionata.
 
 ### Passaggio a un tipo di revisione personalizzato {#changing-to-a-custom-review-type}
 
@@ -193,7 +193,7 @@ Il componente Recensioni utilizza il sistema di commenti.
 
 Modificando il tipo di risorsa Commento, il sistema di commenti non genererà più un&#39;istanza di un commento utilizzando l&#39;impostazione predefinita, ma piuttosto una che è stata personalizzata (estesa) dagli sviluppatori.
 
-Una volta noti i tipi di risorse personalizzati, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fare doppio clic sulla `Comments` per aprire una finestra di dialogo con una scheda aggiuntiva.
+Una volta noti i tipi di risorse personalizzati, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fare doppio clic sul `Comments` per aprire una finestra di dialogo con una scheda aggiuntiva.
 
 Sotto **[!UICONTROL Tipi di risorse]** , specificare il resourceType personalizzato per le nuove istanze del `Comments or Voting` componenti:
 
@@ -201,19 +201,19 @@ Sotto **[!UICONTROL Tipi di risorse]** , specificare il resourceType personalizz
 
 * **[!UICONTROL Tipo risorsa commento]**
 
-   Passare al resourceType di un&#39;estensione `comment`componente (commento singolo) in /apps. Esempio: `/apps/social/commons/components/hbs/comments/comment`.
+  Passare al resourceType di un&#39;estensione `comment`componente (commento singolo) in /apps. Esempio: `/apps/social/commons/components/hbs/comments/comment`.
 
-   Questa risorsa identificherà il resourceType del UGC creato quando un visitatore pubblica un commento.
+  Questa risorsa identificherà il resourceType del UGC creato quando un visitatore pubblica un commento.
 
 * **[!UICONTROL Tipo di risorsa per votazione]**
 
-   Passare al resourceType di un&#39;estensione `voting`componente in /apps. Esempio: `/apps/social/components/hbs/voting`.
+  Passare al resourceType di un&#39;estensione `voting`componente in /apps. Esempio: `/apps/social/components/hbs/voting`.
 
-   Questa risorsa identificherà il tipo di risorsa dell’UGC creato quando un visitatore pubblica un voto.
+  Questa risorsa identificherà il tipo di risorsa dell’UGC creato quando un visitatore pubblica un voto.
 
 * **[!UICONTROL Tipo risorsa sistema commenti]**
 
-   Passare al resourceType di un&#39;estensione `comments`componente (sistema di commenti) in /apps. Lascia vuoto a meno che il modello della pagina non sia [include in modo dinamico](scf.md#add-or-include-a-communities-component) il sistema di commenti nello script sottostante, anziché essere aggiunto alla pagina come risorsa (nodo commenti). Per saperne di più leggi le [{{include}} aiutante](handlebars-helpers.md#include).
+  Passare al resourceType di un&#39;estensione `comments`componente (sistema di commenti) in /apps. Lascia vuoto a meno che il modello della pagina non sia [include in modo dinamico](scf.md#add-or-include-a-communities-component) il sistema di commenti nello script sottostante, anziché essere aggiunto alla pagina come risorsa (nodo commenti). Per saperne di più leggi le [{{include}} aiutante](handlebars-helpers.md#include).
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 4dd216167f97eb6f6181586b57694b139872c5ef
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '959'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 Poiché Granite incorpora l’implementazione dell’archivio CRX della specifica API JCR, ha una propria amministrazione di utenti e gruppi.
 
-Questi conti sono alla base della [Conti AEM](/help/sites-administering/security.md) e le eventuali modifiche apportate all’account con l’amministrazione Granite verranno applicate se/quando gli account sono accessibili da [Console Utenti AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (ad es. `http://localhost:4502/useradmin`). Dalla console Utenti AEM puoi anche gestire i privilegi e altre specifiche AEM.
+Questi conti sono alla base della [Conti AEM](/help/sites-administering/security.md) e le eventuali modifiche apportate all’account con l’amministrazione Granite verranno applicate se/quando gli account sono accessibili da [Console Utenti AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (ad esempio, `http://localhost:4502/useradmin`). Dalla console Utenti AEM puoi anche gestire i privilegi e altre specifiche AEM.
 
 Le console di amministrazione di utenti e gruppi Granite sono entrambe disponibili dal **[Strumenti](/help/sites-administering/tools-consoles.md)** console dell’interfaccia touch:
 

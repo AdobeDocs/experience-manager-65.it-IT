@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Di seguito sono elencati i gestori di app predefiniti:
 
 * ***includeModifiedPagesOnly - Boolean*** : se false o omesso, esegui il rendering di tutte le pagine e controlla gli aggiornamenti nel rendering. Se true, base differisce in base alle modifiche apportate a una pagina lastModified.
 * ***+ riscrittura (nodo)***
-   ***- relativeParentPath - Stringa*** : il percorso per scrivere tutti gli altri percorsi relativi a.
+  ***- relativeParentPath - Stringa*** : il percorso per scrivere tutti gli altri percorsi relativi a.
 
 >[!NOTE]
 >

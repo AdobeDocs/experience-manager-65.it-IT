@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 Utilizza xgettext-maven-plugin per estrarre le stringhe dal codice sorgente che devono essere tradotte. Il plug-in Maven estrae le stringhe in un file XLIFF che invii per la traduzione. Le stringhe vengono estratte dalle seguenti posizioni:
 
 * File Java di origine
-* File di origine JavaScript
+* File sorgente JavaScript
 * Rappresentazioni XML delle risorse SVN (nodi JCR)
 
 ## Configurazione dell’estrazione della stringa {#configuring-string-extraction}

@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,7 @@ Dopo aver creato un’app utilizzando questo modello, puoi aggiungere all’app 
 >Il ***redirectTarget*** viene calcolato come parte dell’operazione create app e tenta di risolvere un percorso, se nel modello di app è disponibile una proprietà redirectTarget e il valore di redirectTarget è definito come relativo. Quando il processo di creazione dell&#39;app trova un valore relativo per redirectTarget nel modello di app, il valore viene aggiunto alla posizione risolta di creazione dell&#39;app.
 >
 >Ad esempio, se un modello di app definisce un ***redirectTarget*** con un valore di &quot;*master di lingua/it*&quot;, e l’app è stata creata in &quot;*/content/mobileapps/fooApp*&quot;, il valore finale per redirectTarget dopo la creazione dell’app sarà &quot;*/content/mobileapps/fooApp/language-masters/it*&quot;.
+>
 
 ## Creazione di modelli di contenuto {#creating-content-templates}
 
@@ -124,6 +125,7 @@ Un componente semplice è incluso nell’archivio del codice, la cui origine è 
 >[!NOTE]
 >
 >Non sono attualmente disponibili componenti predefiniti per AEM Mobile.
+>
 
 Puoi aggiungere componenti alla pagina. Qualsiasi componente può essere utilizzato in un’app AEM Mobile, ma se applicato potrebbe non essere riprodotto correttamente.
 

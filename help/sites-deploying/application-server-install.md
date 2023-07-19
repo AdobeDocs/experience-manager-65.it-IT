@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Se implementato, si verifica quanto segue per impostazione predefinita:
 * la modalità di esecuzione è `author`
 * l’istanza (archivio, ambiente Felix OSGI, bundle e così via) è installata in `${user.dir}/crx-quickstart`dove `${user.dir}` è la directory di lavoro corrente, il percorso di crx-quickstart viene chiamato `sling.home`
 
-* la directory principale del contesto è il nome del file .war, ad esempio : `aem-6`
+* la directory principale del contesto è il nome del file .war, ad esempio: `aem-6`
 
 #### Configurazione {#configuration}
 
@@ -131,7 +131,7 @@ Impostare gli argomenti di memoria nel file conf (ad esempio, `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-Se si utilizza lo scanner di distribuzione per per installare l&#39;applicazione Web AEM, potrebbe essere opportuno aumentare il `deployment-timeout,` per il set a `deployment-timeout` nel file xml dell&#39;istanza (ad es. `configuration/standalone.xml)`:
+Se si utilizza lo scanner di distribuzione per per installare l&#39;applicazione Web AEM, potrebbe essere opportuno aumentare il `deployment-timeout,` per il set a `deployment-timeout` nel file xml dell’istanza (ad esempio, `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -241,7 +241,7 @@ Prima di una distribuzione, leggi [Descrizione generale](#general-description) s
       * rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario
       * Ripristina file web.xml
 
-   * Rinomina il file .war dell’AEM in ROOT.war se desideri distribuirlo come web app principale, rinominalo ad esempio aemauthor.war se desideri avere aemauthor come directory principale del contesto
+   * Rinomina il file .war dell’AEM in ROOT.war se desideri distribuirlo come web app principale, rinominalo ad esempio in aemauthor.war se desideri avere aemauthor come directory principale del contesto
    * copiarlo nella cartella webapps di tomcat
    * attendi l’installazione di AEM
 

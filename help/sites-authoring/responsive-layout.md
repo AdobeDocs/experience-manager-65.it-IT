@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1806'
 ht-degree: 55%
 
 ---
@@ -24,7 +24,7 @@ Questo fornisce un sistema paragrafo che consente di posizionare i componenti al
 Il contenitore layout:
 
 * Consente di eseguire lo snap orizzontale alla griglia, oltre alla possibilità di posizionare i componenti affiancati nella griglia e di definire quando devono essere compressi o ridisposti.
-* Utilizza punti di interruzione predefiniti (ad esempio per telefono, tablet, ecc.) per consentirti di definire il comportamento richiesto dei contenuti per i dispositivi o gli orientamenti correlati.
+* Utilizza punti di interruzione predefiniti (ad esempio per telefoni, tablet ecc.) per consentirti di definire il comportamento richiesto dei contenuti per i dispositivi o gli orientamenti correlati.
 
    * Ad esempio, puoi personalizzare la dimensione del componente o specificare se può essere visualizzato su dispositivi specifici.
 

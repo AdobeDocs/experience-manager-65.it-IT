@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 56%
+source-wordcount: '519'
+ht-degree: 61%
 
 ---
 
@@ -54,38 +54,38 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Lingua**
 
-   Consente di definire la lingua da usare nell’interfaccia dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco disponibile.
+  Consente di definire la lingua da usare nell’interfaccia dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco disponibile.
 
-   Questa configurazione viene utilizzata anche per l’interfaccia classica.
+  Questa configurazione viene utilizzata anche per l’interfaccia classica.
 
 * **Gestione finestre**
 
-   Definisce il comportamento o l&#39;apertura delle finestre. Puoi selezionare:
+  Definisce il comportamento o l&#39;apertura delle finestre. Puoi selezionare:
 
    * **Finestre multiple** (Predefinito)
 
       * Le pagine verranno aperte in una nuova finestra.
+
    * **Finestra singola**
 
       * Le pagine verranno aperte nella finestra corrente.
 
-
 * **Mostra azioni desktop per Assets**
 
-   Questa opzione richiede l’utilizzo dell’app desktop AEM.
+  Questa opzione richiede l’utilizzo dell’app desktop AEM.
 
 * **Colore annotazione**
 
-   Definisce il colore predefinito utilizzato per le annotazioni.
+  Definisce il colore predefinito utilizzato per le annotazioni.
 
    * Fai clic sul blocco di colori per aprire il selettore di campioni e selezionare un colore.
    * In alternativa, immetti nel campo il codice esadecimale del colore desiderato.
 
 * **Presentazione data relativa**
 
-   Per migliorare la leggibilità, AEM presenterà le date degli ultimi sette giorni come date relative (ad esempio, tre giorni fa) e le date più lontane come date esatte (ad esempio, il 20 marzo 2017).
+  Per migliorare la leggibilità, AEM presenterà le date degli ultimi sette giorni come date relative (ad esempio, tre giorni fa) e le date più lontane come date esatte (ad esempio, il 20 marzo 2017).
 
-   Questa opzione definisce il modo in cui il sistema visualizza le date. Sono disponibili le seguenti opzioni:
+  Questa opzione definisce il modo in cui il sistema visualizza le date. Sono disponibili le seguenti opzioni:
 
    * **Mostra sempre data esatta**: viene sempre visualizzata la data esatta e non una data relativa.
    * **1 giorno**: viene visualizzata la data relativa per le date entro un giorno; in caso contrario viene visualizzata una data esatta.
@@ -100,21 +100,21 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Abilita scelte rapide**
 
-   AEM supporta una serie di scelte rapide da tastiera per ottimizzare l’authoring.
+  AEM supporta una serie di scelte rapide da tastiera per ottimizzare l’authoring.
 
    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
-   Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita sono abilitate, ma possono essere disabilitate, ad esempio se un utente ha determinati requisiti di accessibilità.
+  Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita sono abilitate, ma possono essere disabilitate, ad esempio se un utente ha determinati requisiti di accessibilità.
 
 * **Usa esperienza di authoring classica**
 
-   Questa opzione abilita [interfaccia classica](/help/sites-classic-ui-authoring/home.md)authoring delle pagine basato su. Per impostazione predefinita viene utilizzata l’interfaccia utente standard.
+  Questa opzione abilita [interfaccia classica](/help/sites-classic-ui-authoring/home.md)authoring delle pagine basato su. Per impostazione predefinita viene utilizzata l’interfaccia utente standard.
 
 * **Abilita pagina iniziale di Assets**
 
-   Questa opzione è disponibile solo se l’amministratore di sistema ha abilitato l’esperienza Pagina iniziale di Assets per l’intera organizzazione.
+  Questa opzione è disponibile solo se l’amministratore di sistema ha abilitato l’esperienza Pagina iniziale di Assets per l’intera organizzazione.
 
 * **Configurazione Stock**
 
-   Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

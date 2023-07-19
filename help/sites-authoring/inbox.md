@@ -8,9 +8,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 29%
 
 ---
@@ -29,8 +29,8 @@ Puoi ricevere notifiche da varie aree dell’AEM, inclusi flussi di lavoro e pro
    * elementi di lavoro che rappresentano azioni da eseguire sul contenuto della pagina;
 
       * sono il prodotto di workflow **Partecipante** passaggi
-   * elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito.
 
+   * elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito.
 
 Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visualizzarle e intervenire.
 
@@ -47,7 +47,6 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
 >
-
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
 
@@ -114,22 +113,22 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
 * **Vista calendario**
 
-   Per **Vista calendario** puoi configurare:
+  Per **Vista calendario** puoi configurare:
 
    * **Raggruppa per**
    * **Pianificazione** o **Nessuna**
    * **Dimensioni scheda**
 
-   ![wf-92](assets/wf-92.png)
+  ![wf-92](assets/wf-92.png)
 
 * **Vista a elenco**
 
-   Per **Vista a elenco** puoi configurare il meccanismo di ordinamento:
+  Per **Vista a elenco** puoi configurare il meccanismo di ordinamento:
 
    * **Campo di ordinamento**
    * **Ordinamento**
 
-   ![wf-83](assets/inbox-settings.png)
+  ![wf-83](assets/inbox-settings.png)
 
 ### Casella in entrata - Controllo amministratore {#inbox-admin-control}
 
@@ -149,7 +148,7 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
    * **Elimina colonna**: tocca il ![eliminare](assets/delete_updated.svg) per eliminare la colonna dalla casella in entrata AEM.
    * **Sposta colonna**: trascina ![sposta](assets/move_updated.svg) per spostare una colonna in una nuova posizione nella casella in entrata AEM.
 
-   ![admin-control](assets/admin-control-column-customize.png)
+  ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalizzazione branding**
 
@@ -181,6 +180,7 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
       * mostra le proprietà dell&#39;elemento
       * apri un dashboard o una procedura guidata appropriati per ulteriori azioni
       * apri documentazione correlata
+
    * **Indietro** per tornare a un passaggio precedente.
    * Visualizzazione del payload di un flusso di lavoro.
    * Creazione di un progetto dall’elemento.
@@ -190,7 +190,6 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
    >Per ulteriori informazioni, consulta:
    >
    >* Elementi del flusso di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-authoring/workflows-participating.md)
-
 
 1. A seconda dell’elemento selezionato, verrà avviata un’azione, ad esempio:
 
@@ -207,7 +206,6 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
    * Conferma l’azione appropriata, ad esempio Riassegna.
    * Annulla l’azione.
    * Freccia indietro; ad esempio, se è stata aperta una Action Wizard o una pagina della documentazione, puoi tornare alla Casella in entrata.
-
 
 ## Creazione di un’attività {#creating-a-task}
 
@@ -260,9 +258,11 @@ Per alcune attività puoi creare un [Progetto](/help/sites-authoring/projects.md
       * **Data inizio**
       * **Data di scadenza**
       * **Utente** e ruolo
+
    * **Avanzate**
 
       * **Nome**
+
    >[!NOTE]
    >
    >Consulta [Creazione di un progetto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) per informazioni complete.

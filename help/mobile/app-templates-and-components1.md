@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '406'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,6 @@ Questo nodo contiene *a jcr:content (cq:PageContent)* che deve essere utilizzato
 >* [Modelli](/help/sites-developing/templates.md)
 >* [Componenti](/help/sites-developing/components.md)
 >
-
 
 Dopo aver acquisito le nozioni di base su Modelli e componenti, consulta le risorse seguenti:
 

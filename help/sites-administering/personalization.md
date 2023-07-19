@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: d6b595b6b5477b5cad662e219f1abd483491897f
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1687'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ La personalizzazione può essere utilizzata in molti casi, ad esempio:
 
 * Gli utenti richiedono un accesso per l’autorizzazione; questo verrà collegato a un profilo che fornisce le informazioni necessarie per la personalizzazione; possibili dettagli come la loro posizione, la relazione con il prodotto, la cronologia dell’utilizzo, le responsabilità di budgeting, ecc.
 * Tali istanze possono variare tra siti diversi, ad esempio:
-* Società che forniscono siti web a una parte altamente specializzata del loro mercato, ad esempio una società farmaceutica che fornisce un sito web specializzato per i medici.
+* Aziende che forniscono siti web a una parte altamente specializzata del loro mercato, ad esempio, una società farmaceutica che fornisce un sito web specializzato per i medici.
 * Aziende che forniscono siti Web che consentono ai clienti di visualizzare le informazioni relative al conto corrente e alla fatturazione, ad esempio i provider telefonici.
 
 ### Sito Web vendita e distribuzione {#sales-site}
@@ -138,7 +138,7 @@ Tuttavia, il controllo degli accessi può essere utilizzato per creare una forma
 
 Vari componenti sono forniti con AEM per la personalizzazione. Alcuni consentono agli utenti di accedere e modificare i loro profili, altri (come I miei gadget) consentono agli utenti di configurare una pagina specifica:
 
-| Titolo nella barra laterale | Scopo |
+| Titolo nel Sidekick | Scopo |
 |---|---|
 | Campo per password verificata | Richiede la password e la conferma della password. |
 | Iscrizione all&#39;accesso combinato | Consente all&#39;utente di accedere a un account esistente o a un nuovo account. |

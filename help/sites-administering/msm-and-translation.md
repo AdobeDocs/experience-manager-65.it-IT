@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '351'
 ht-degree: 41%
 
 ---
@@ -51,7 +51,7 @@ Il diagramma seguente illustra l’intersezione dei concetti principali (ma non 
 >
 >In questo scenario (e simili) MSM non gestisce le diverse versioni linguistiche in quanto tali.
 >
->* [MSM](/help/sites-administering/msm.md) gestisce la distribuzione dei contenuti tradotti da un blueprint (ad esempio, un master globale) alle live copy (ad esempio, i siti locali), entro i limiti della lingua.
+>* [MSM](/help/sites-administering/msm.md) gestisce la distribuzione dei contenuti tradotti da una blueprint (ad esempio, una pagina mastro globale) alle live copy (ad esempio, i siti locali), entro i limiti della lingua.
 >* Le capacità di integrazione delle [traduzioni](/help/sites-administering/translation.md) di AEM, in collaborazione con servizi di gestione della localizzazione di terze parti, gestiscono le lingue e traducono i contenuti in diverse lingue.
 >
 >Per casi di utilizzo più avanzati, MSM può essere utilizzato anche tra le lingue master.

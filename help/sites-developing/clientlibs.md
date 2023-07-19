@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 7ceee6819618d785f04029b9ac1c6f763995b3ac
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2862'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ Poiché HTL è la tecnologia preferita per lo sviluppo dei siti AEM, deve essere
 
 ### Utilizzo di HTL {#using-htl}
 
-In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite [ `data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** : carica solo i file CSS delle librerie client di riferimento.
 * **js** : carica solo i file JavaScript delle librerie client di riferimento.
@@ -102,7 +102,7 @@ Per informazioni complete, inclusi gli attributi per filtrare le librerie JS, CS
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, che in passato veniva comunemente utilizzato per includere le librerie client, è diventato obsoleto a partire dalla versione 5.6 dell’AEM. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) deve essere utilizzato invece come descritto sopra.
+>`<cq:includeClientLib>`, che in passato veniva comunemente utilizzato per includere le librerie client, è diventato obsoleto a partire dalla versione 5.6 dell’AEM. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) deve essere utilizzato invece come descritto sopra.
 
 ## Creazione di cartelle di librerie client {#creating-client-library-folders}
 
@@ -115,7 +115,7 @@ Le cartelle delle librerie client contengono i seguenti elementi:
 * I file sorgente JS e/o CSS da unire.
 * Risorse che supportano gli stili CSS, ad esempio i file di immagine.
 
-   **Nota:** È possibile utilizzare le sottocartelle per organizzare i file di origine.
+  **Nota:** È possibile utilizzare le sottocartelle per organizzare i file di origine.
 * Uno `js.txt` file e/o uno `css.txt` file che identifica i file sorgente da unire nei file JS e/o CSS generati.
 
 ![clientlibarch](assets/clientlibarch.png)
@@ -399,7 +399,7 @@ YUI è impostato come minimizzatore predefinito in AEM. Per cambiare in GCC, seg
 1. Abilita **Minimizza** (se non già abilitata).
 1. Imposta il valore **Configurazioni predefinite processore JS** a `min:gcc`.
 
-   Le opzioni possono essere passate se separate da un punto e virgola, ad esempio `min:gcc;obfuscate=true`.
+   Le opzioni possono essere trasmesse se separate ad esempio da un punto e virgola, `min:gcc;obfuscate=true`.
 
 1. Clic **Salva** per salvare le modifiche.
 

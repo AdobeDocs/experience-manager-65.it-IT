@@ -10,16 +10,16 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '839'
 ht-degree: 4%
 
 ---
 
 # Dashboard{#dashboards}
 
-Utilizzando l’AEM puoi gestire molti contenuti di tipi diversi (ad esempio pagine, risorse). I dashboard dell’AEM offrono un modo semplice e personalizzabile di definire le pagine che visualizzano i dati consolidati.
+Con l’AEM puoi gestire molti contenuti di tipi diversi (ad esempio pagine, risorse). I dashboard dell’AEM offrono un modo semplice e personalizzabile di definire le pagine che visualizzano i dati consolidati.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Per creare un nuovo dashboard, procedere come segue:
 1. In **Strumenti** , fare clic su **Console di configurazione**.
 1. Nell&#39;albero, fare doppio clic su **Dashboard**.
 1. Clic **Nuovo dashboard**.
-1. Digita il **Titolo** (ad es. Il mio dashboard) e **Nome**.
+1. Digita il **Titolo** (ad esempio, My Dashboard) e **Nome**.
 1. Fai clic su **Crea**.
 
 ### Clonazione Di Un Dashboard {#cloning-a-dashboard}
@@ -73,7 +73,7 @@ I componenti del dashboard non sono altro che normali [Componenti AEM](/help/sit
 
 ### Componenti di reporting di Web Analytics {#web-analytics-reporting-components}
 
-L’AEM viene fornito con un set di componenti che restituiscono più metriche delle [SiteCatalyst](/help/sites-administering/adobeanalytics.md) dati. Tali componenti sono elencati nella barra laterale sotto **Dashboard** sezione.
+L’AEM viene fornito con un set di componenti che restituiscono più metriche delle [SiteCatalyst](/help/sites-administering/adobeanalytics.md) dati. Tali componenti sono elencati nel Sidekick sotto **Dashboard** sezione.
 
 Ogni componente di reporting fornisce almeno tre schede:
 
@@ -114,7 +114,7 @@ Ogni componente definisce anche impostazioni specifiche.
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Granularità data** Unità di tempo dell’asse X (ad esempio giorno, ora).
+**Granularità data** Unità di tempo dell’asse X (ad esempio, giorno, ora).
 
 **Metriche** L’elenco degli eventi che desideri visualizzare.
 
@@ -150,7 +150,7 @@ Questo componente visualizza un grafico che mostra la sezione più visitata di u
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Granularità data** Unità di tempo dell’asse X (ad esempio giorno, ora).
+**Granularità data** Unità di tempo dell’asse X (ad esempio, giorno, ora).
 
 **Metriche** L’evento che desideri visualizzare.
 

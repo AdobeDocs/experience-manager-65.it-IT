@@ -12,7 +12,7 @@ discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3425'
 ht-degree: 4%
@@ -100,8 +100,7 @@ Questa replica viene eseguita dall’ambiente di authoring da:
 * **Agente predefinito (pubblicazione)**
 Questo agente replica il contenuto nell’istanza di pubblicazione predefinita.
 I dettagli di questo (configurazione e registri) sono accessibili dalla console Strumenti dell’ambiente di authoring; oppure:
-
-   `https://localhost:4502/etc/replication/agents.author/publish.html`.
+  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Agenti di replica - Pronti all’uso {#replication-agents-out-of-the-box}
 
@@ -127,17 +126,17 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
 * **Nome**
 
-   Nome univoco dell’agente di replica.
+  Nome univoco dell’agente di replica.
 
 * **Descrizione**
 
-   Descrizione dello scopo che verrà fornito da questo agente di replica.
+  Descrizione dello scopo che verrà fornito da questo agente di replica.
 
 * **abilitato**
 
-   Indica se l’agente di replica è attualmente abilitato.
+  Indica se l’agente di replica è attualmente abilitato.
 
-   Quando l&#39;agente è **abilitato** la coda verrà visualizzata come:
+  Quando l&#39;agente è **abilitato** la coda verrà visualizzata come:
 
    * **Attivo** quando gli elementi vengono elaborati.
    * **Inattivo** quando la coda è vuota.
@@ -145,94 +144,94 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
 * **Tipo di serializzazione**
 
-   Tipo di serializzazione:
+  Tipo di serializzazione:
 
    * **Predefinito**: imposta se l’agente deve essere selezionato automaticamente.
    * **Scaricamento del Dispatcher**: selezionalo se l’agente deve essere utilizzato per scaricare la cache del dispatcher.
 
 * **Ritardo per riprovare**
 
-   Ritardo (tempo di attesa in millisecondi) tra due tentativi, in caso di problema.
+  Ritardo (tempo di attesa in millisecondi) tra due tentativi, in caso di problema.
 
-   Predefiniti: `60000`
+  Predefiniti: `60000`
 
 * **ID utente agente**
 
-   A seconda dell’ambiente, l’agente utilizzerà questo account utente per:
+  A seconda dell’ambiente, l’agente utilizzerà questo account utente per:
 
    * raccogliere e creare pacchetti di contenuti dall’ambiente di authoring
    * creare e scrivere contenuti nell’ambiente di pubblicazione
 
-   Lascia questo campo vuoto per utilizzare l’account utente di sistema (l’account definito in sling come utente amministratore); per impostazione predefinita è `admin`).
+  Lascia questo campo vuoto per utilizzare l’account utente di sistema (l’account definito in sling come utente amministratore); per impostazione predefinita è `admin`).
 
-   >[!CAUTION]
-   >
-   >Per un agente nell’ambiente di authoring, questo account *deve* disporre dell&#39;accesso in lettura a tutti i percorsi che si desidera replicare.
+  >[!CAUTION]
+  >
+  >Per un agente nell’ambiente di authoring, questo account *deve* disporre dell&#39;accesso in lettura a tutti i percorsi che si desidera replicare.
 
-   >[!CAUTION]
-   >
-   >Per un agente nell’ambiente di pubblicazione, questo account *deve* disporre dell&#39;accesso di creazione/scrittura necessario per replicare il contenuto.
+  >[!CAUTION]
+  >
+  >Per un agente nell’ambiente di pubblicazione, questo account *deve* disporre dell&#39;accesso di creazione/scrittura necessario per replicare il contenuto.
 
-   >[!NOTE]
-   >
-   >Può essere utilizzato come meccanismo per selezionare contenuti specifici da replicare.
+  >[!NOTE]
+  >
+  >Può essere utilizzato come meccanismo per selezionare contenuti specifici da replicare.
 
 * **Livello registro**
 
-   Specifica il livello di dettaglio da utilizzare per i messaggi di registro.
+  Specifica il livello di dettaglio da utilizzare per i messaggi di registro.
 
    * `Error`: verranno registrati solo gli errori
    * `Info`: verranno registrati errori, avvisi e altri messaggi informativi
    * `Debug`: nei messaggi verrà utilizzato un livello di dettaglio elevato, principalmente a scopo di debug
 
-   Predefiniti: `Info`
+  Predefiniti: `Info`
 
 * **Usa per replica inversa**
 
-   Indica se questo agente verrà utilizzato per la replica inversa; restituisce l&#39;input dell&#39;utente dall&#39;ambiente di pubblicazione a quello di authoring.
+  Indica se questo agente verrà utilizzato per la replica inversa; restituisce l&#39;input dell&#39;utente dall&#39;ambiente di pubblicazione a quello di authoring.
 
 * **Aggiornamento alias**
 
-   Se si seleziona questa opzione, in Dispatcher vengono abilitate le richieste di annullamento della validità di un alias o di un percorso personalizzato. Vedi anche [Configurazione di un agente di svuotamento del Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
+  Se si seleziona questa opzione, in Dispatcher vengono abilitate le richieste di annullamento della validità di un alias o di un percorso personalizzato. Vedi anche [Configurazione di un agente di svuotamento del Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
 #### Trasporto {#transport}
 
 * **URI**
 
-   Specifica il servlet di ricezione nella posizione di destinazione. In particolare, puoi specificare il nome host (o alias) e il percorso contestuale dell’istanza target qui.
+  Specifica il servlet di ricezione nella posizione di destinazione. In particolare, puoi specificare il nome host (o alias) e il percorso contestuale dell’istanza target qui.
 
-   Ad esempio:
+  Ad esempio:
 
    * Un agente predefinito può replicare in `https://localhost:4503/bin/receive`
    * Un agente di Dispatcher Flush può replicarsi in `https://localhost:8000/dispatcher/invalidate.cache`
 
-   Il protocollo qui specificato (HTTP o HTTPS) determinerà il metodo di trasporto.
+  Il protocollo qui specificato (HTTP o HTTPS) determinerà il metodo di trasporto.
 
-   Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Questo campo viene utilizzato per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare l’URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
+  Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Questo campo viene utilizzato per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare l’URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
 
 * **User**
 
-   Nome utente dell’account da utilizzare per accedere alla destinazione.
+  Nome utente dell’account da utilizzare per accedere alla destinazione.
 
 * **Password**
 
-   Password per l’account da utilizzare per accedere alla destinazione.
+  Password per l’account da utilizzare per accedere alla destinazione.
 
 * **Dominio NTLM**
 
-   Dominio per autenticazione NTML.
+  Dominio per autenticazione NTML.
 
 * **Host NTLM**
 
-   Host per autenticazione NTML.
+  Host per autenticazione NTML.
 
 * **Abilita SSL relaxed**
 
-   Abilita questa opzione se desideri che i certificati SSL autocertificati vengano accettati.
+  Abilita questa opzione se desideri che i certificati SSL autocertificati vengano accettati.
 
 * **Consenti certificati scaduti**
 
-   Abilita questa opzione se desideri che vengano accettati i certificati SSL scaduti.
+  Abilita questa opzione se desideri che vengano accettati i certificati SSL scaduti.
 
 #### Proxy {#proxy}
 
@@ -240,80 +239,80 @@ Le seguenti impostazioni sono necessarie solo se è necessario un proxy:
 
 * **Host proxy**
 
-   Nome host del proxy utilizzato per il trasporto.
+  Nome host del proxy utilizzato per il trasporto.
 
 * **Porta proxy**
 
-   Porta del proxy.
+  Porta del proxy.
 
 * **Utente proxy**
 
-   Nome utente dell’account da utilizzare.
+  Nome utente dell’account da utilizzare.
 
 * **Password proxy**
 
-   Password dell’account da utilizzare.
+  Password dell’account da utilizzare.
 
 * **Dominio proxy NTLM**
 
-   Dominio proxy NTLM.
+  Dominio proxy NTLM.
 
 * **Host proxy NTLM**
 
-   Dominio proxy NTLM.
+  Dominio proxy NTLM.
 
 #### Esteso {#extended}
 
 * **Interfaccia**
 
-   Qui puoi definire l’interfaccia socket a cui effettuare l’associazione.
+  Qui puoi definire l’interfaccia socket a cui effettuare l’associazione.
 
-   Consente di impostare l&#39;indirizzo locale da utilizzare per la creazione di connessioni. Se non è impostato, verrà utilizzato l’indirizzo predefinito. Questo è utile per specificare l&#39;interfaccia da utilizzare su sistemi multi-homed o cluster.
+  Consente di impostare l&#39;indirizzo locale da utilizzare per la creazione di connessioni. Se non è impostato, verrà utilizzato l’indirizzo predefinito. Questo è utile per specificare l&#39;interfaccia da utilizzare su sistemi multi-homed o cluster.
 
 * **Metodo HTTP**
 
-   Il metodo HTTP da utilizzare.
+  Il metodo HTTP da utilizzare.
 
-   Per un agente di Dispatcher Flush, questo è quasi sempre un valore GET e non deve essere modificato (POST sarebbe un altro valore possibile).
+  Per un agente di Dispatcher Flush, questo è quasi sempre un valore GET e non deve essere modificato (POST sarebbe un altro valore possibile).
 
 * **Intestazioni HTTP**
 
-   Vengono utilizzati per gli agenti di Dispatcher Flush e specificano gli elementi che devono essere scaricati.
+  Vengono utilizzati per gli agenti di Dispatcher Flush e specificano gli elementi che devono essere scaricati.
 
-   Per un agente di Dispatcher Flush, non è necessario modificare le tre voci standard:
+  Per un agente di Dispatcher Flush, non è necessario modificare le tre voci standard:
 
    * `CQ-Action:{action}`
    * `CQ-Handle:{path}`
    * `CQ-Path:{path}`
 
-   Questi vengono utilizzati, a seconda dei casi, per indicare l&#39;azione da eseguire durante lo scaricamento dell&#39;handle o del percorso. I sottoparametri sono dinamici:
+  Questi vengono utilizzati, a seconda dei casi, per indicare l&#39;azione da eseguire durante lo scaricamento dell&#39;handle o del percorso. I sottoparametri sono dinamici:
 
    * `{action}` indica un’azione di replica
 
    * `{path}` indica un percorso
 
-   Sono sostituite dal percorso/azione pertinente alla richiesta e pertanto non devono essere &quot;hardcoded&quot;:
+  Sono sostituite dal percorso/azione pertinente alla richiesta e pertanto non devono essere &quot;hardcoded&quot;:
 
-   >[!NOTE]
-   >
-   >Se hai installato AEM in un contesto diverso da quello predefinito consigliato, dovrai registrare il contesto nelle intestazioni HTTP. Ad esempio:
-   >`CQ-Handle:/<*yourContext*>{path}`
+  >[!NOTE]
+  >
+  >Se hai installato AEM in un contesto diverso da quello predefinito consigliato, dovrai registrare il contesto nelle intestazioni HTTP. Ad esempio:
+  >`CQ-Handle:/<*yourContext*>{path}`
 
 * **Chiudi connessione**
 
-   Abilita questa opzione per chiudere la connessione dopo ogni richiesta.
+  Abilita questa opzione per chiudere la connessione dopo ogni richiesta.
 
 * **Timeout di connessione**
 
-   Timeout (in millisecondi) da applicare quando si tenta di stabilire una connessione.
+  Timeout (in millisecondi) da applicare quando si tenta di stabilire una connessione.
 
 * **Timeout socket**
 
-   Timeout (in millisecondi) da applicare quando si attende il traffico dopo che è stata stabilita una connessione.
+  Timeout (in millisecondi) da applicare quando si attende il traffico dopo che è stata stabilita una connessione.
 
 * **Versione protocollo**
 
-   Versione del protocollo; ad esempio `1.0` per HTTP/1.0.
+  Versione del protocollo; ad esempio `1.0` per HTTP/1.0.
 
 #### Attivatori {#triggers}
 
@@ -321,31 +320,31 @@ Queste impostazioni vengono utilizzate per definire i trigger per la replica aut
 
 * **Ignora predefinito**
 
-   Se selezionato, l&#39;agente è escluso dalla replica predefinita; ciò significa che non verrà utilizzato se un autore di contenuto richiede un&#39;azione di replica.
+  Se selezionato, l&#39;agente è escluso dalla replica predefinita; ciò significa che non verrà utilizzato se un autore di contenuto richiede un&#39;azione di replica.
 
 * **In caso di modifica**
 
-   In questo caso, quando si modifica una pagina, viene attivata automaticamente una replica da parte di questo agente. Viene utilizzato principalmente per gli agenti di Dispatcher Flush, ma anche per la replica inversa.
+  In questo caso, quando si modifica una pagina, viene attivata automaticamente una replica da parte di questo agente. Viene utilizzato principalmente per gli agenti di Dispatcher Flush, ma anche per la replica inversa.
 
 * **Al momento della distribuzione**
 
-   Se selezionato, l&#39;agente replicherà automaticamente qualsiasi contenuto contrassegnato per la distribuzione quando viene modificato.
+  Se selezionato, l&#39;agente replicherà automaticamente qualsiasi contenuto contrassegnato per la distribuzione quando viene modificato.
 
 * **Ora di attivazione/disattivazione raggiunta**
 
-   In questo modo viene attivata la replica automatica (per attivare o disattivare una pagina in base alle esigenze) quando si verificano i tempi di attivazione o disattivazione definiti per una pagina. Viene utilizzato principalmente per gli agenti di Dispatcher Flush.
+  In questo modo viene attivata la replica automatica (per attivare o disattivare una pagina in base alle esigenze) quando si verificano i tempi di attivazione o disattivazione definiti per una pagina. Viene utilizzato principalmente per gli agenti di Dispatcher Flush.
 
 * **Al ricevimento**
 
-   Se selezionato, l&#39;agente effettuerà la replica a catena ogni volta che riceve eventi di replica.
+  Se selezionato, l&#39;agente effettuerà la replica a catena ogni volta che riceve eventi di replica.
 
 * **Nessun aggiornamento di stato**
 
-   Se questa opzione è selezionata, l’agente non forzerà un aggiornamento dello stato di replica.
+  Se questa opzione è selezionata, l’agente non forzerà un aggiornamento dello stato di replica.
 
 * **Nessun controllo delle versioni**
 
-   Se questa opzione è selezionata, l&#39;agente non forzerà il controllo delle versioni delle pagine attivate.
+  Se questa opzione è selezionata, l&#39;agente non forzerà il controllo delle versioni delle pagine attivate.
 
 ## Configurazione degli agenti di replica {#configuring-your-replication-agents}
 
@@ -358,6 +357,7 @@ Dalla scheda Strumenti nell’ambiente di authoring è possibile configurare gli
 >[!NOTE]
 >
 >Quando un dispatcher gestisce le richieste HTTP per le istanze di authoring o pubblicazione, la richiesta HTTP dall’agente di replica deve includere l’intestazione PATH. Oltre alla procedura seguente, devi aggiungere l’intestazione PATH all’elenco delle intestazioni client di Dispatcher. (vedere [/clientheaders (intestazioni client)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
+>
 
 1. Accedere a **Strumenti** nell’AEM.
 1. Clic **Replica** (riquadro sinistro per aprire la cartella).
@@ -429,14 +429,14 @@ Per configurare la replica dei contenuti per un’ulteriore istanza di pubblicaz
       * Imposta il **Ritardo per riprovare** a `60000`.
 
       * Lascia **Tipo di serializzazione** as `Default`.
+
    * In **Trasporto** scheda:
 
       * Immetti l’URI richiesto per la nuova istanza di pubblicazione; ad esempio,
-         `https://localhost:4504/bin/receive`.
+        `https://localhost:4504/bin/receive`.
 
       * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
       * Se necessario, puoi configurare altri parametri.
-
 
 1. Clic **OK** per salvare le impostazioni.
 
@@ -453,9 +453,7 @@ In caso di problemi, puoi controllare i registri nell’istanza di authoring. A 
 >1. Configura un agente di replica per la replica nell’ambiente di pubblicazione.
 >1. Configurare un account utente con i diritti di accesso necessari per leggere il contenuto che verrà replicato in tale ambiente di pubblicazione specifico.
 >1. Assegna l’account utente come **ID utente agente** per l’agente di replica.
-
 >
-
 
 ### Configurazione di un agente di Dispatcher Flush {#configuring-a-dispatcher-flush-agent}
 
@@ -474,10 +472,11 @@ Gli agenti predefiniti sono inclusi nell&#39;installazione. Tuttavia, è ancora 
       * Lascia **Tipo di serializzazione** as `Dispatcher Flush`o impostarlo come tale se si crea un nuovo agente.
 
       * (facoltativo) Seleziona **Aggiornamento alias** per abilitare le richieste di annullamento della validità di alias o percorsi personalizzati in Dispatcher.
+
    * In **Trasporto** scheda:
 
       * Immetti l’URI richiesto per la nuova istanza di pubblicazione; ad esempio,
-         `https://localhost:80/dispatcher/invalidate.cache`.
+        `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
       * Se necessario, puoi configurare altri parametri.
@@ -499,7 +498,7 @@ L’accesso alle pagine utilizzate per configurare gli agenti di replica può es
 
 >[!NOTE]
 >
->L’impostazione di tali autorizzazioni non influirà sugli utenti che replicano il contenuto (ad esempio, dalla console Siti Web o dall’opzione della barra laterale). Il framework di replica non utilizza la &quot;sessione utente&quot; dell’utente corrente per accedere agli agenti di replica durante la replica delle pagine.
+>L’impostazione di tali autorizzazioni non influirà sugli utenti che replicano il contenuto (ad esempio, dalla console Siti web o dall’opzione della barra laterale). Il framework di replica non utilizza la &quot;sessione utente&quot; dell’utente corrente per accedere agli agenti di replica durante la replica delle pagine.
 
 ### Configurazione degli agenti di replica da CRXDE Lite {#configuring-your-replication-agents-from-crxde-lite}
 

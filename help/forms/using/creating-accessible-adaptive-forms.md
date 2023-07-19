@@ -10,9 +10,9 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2054'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,6 @@ Per utilizzare l&#39;opzione Accessibilità, effettuare le seguenti operazioni:
 >
 >* Il pulsante di opzione e la casella di controllo possono avere solo due opzioni per l&#39;accessibilità, ovvero Testo personalizzato e Titolo.
 >* Per i moduli adattivi basati su XFA, l’opzione di accessibilità viene ereditata dalle opzioni di accessibilità impostate in XDP. Le descrizioni comandi da XDP sono mappate a Descrizione breve e la didascalia a Titolo. Le altre opzioni funzionano nello stato corrente.
-
 
 ### 3. Fornire equivalenti testuali per le immagini {#provide-text-equivalents-for-images}
 

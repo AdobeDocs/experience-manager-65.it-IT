@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
 exl-id: 4b3acc7c-f1f7-4837-ae3a-9435d6ce1349
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '287'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono
 
 In genere, contenuti come gli articoli devono avere lo stesso aspetto per tutti gli autori e anche per le app. È quindi essenziale rendere gli script, i CSS e i font disponibili a tutti. Questa operazione invia tali risorse condivise a Mobile On-Demand che possono quindi essere utilizzate in base alle esigenze.
 
-Dopo aver configurato e associato l’app a una configurazione cloud, puoi caricare le risorse condivise. Per i passaggi dettagliati sull’associazione dell’app a una configurazione cloud, fai clic su [qui](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+Una volta configurata e associata l’app a una configurazione cloud, puoi caricare le risorse condivise. Per i passaggi dettagliati sull’associazione dell’app a una configurazione cloud, fai clic su [qui](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >

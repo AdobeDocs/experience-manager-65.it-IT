@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '4150'
 ht-degree: 0%
@@ -94,6 +94,7 @@ Quando si esegue il rendering di moduli HTML che contengono sia funzionalità di
 Gli script di modulo che si trovano nell&#39;evento form:ready vengono eseguiti una sola volta durante il rendering iniziale del modulo e non vengono eseguiti per i recuperi di pagina successivi. Al contrario, l’evento form:calculate viene eseguito per ogni navigazione della pagina in cui viene eseguito il rendering del modulo.
 
 >[!NOTE]
+>
 In un modulo multipagina, le modifiche apportate da JavaScript a una pagina non vengono mantenute se si passa a un&#39;altra pagina.
 
 È possibile richiamare script personalizzati prima di inviare un modulo. Questa funzione funziona su tutti i browser disponibili. Tuttavia, può essere utilizzato solo quando gli utenti eseguono il rendering del modulo HTML con `Output Type` proprietà impostata su `Form Body`. Non funzionerà quando `Output Type` è `Full HTML`. Per informazioni su come configurare questa funzione, consulta Configurazione dei moduli nella guida per l’amministrazione.
@@ -167,6 +168,7 @@ Lo script seguente mantiene `fillColor` di un campo in base al valore di `hidden
 ```
 
 >[!NOTE]
+>
 Gli oggetti statici non vengono visualizzati in un modulo di rendering HTML quando sono nidificati all&#39;interno di una cella di tabella. Ad esempio, un cerchio e un rettangolo nidificati all’interno di una cella di tabella non vengono visualizzati all’interno di un modulo di rendering HTML. Tuttavia, questi stessi oggetti statici vengono visualizzati correttamente quando si trovano all’esterno della tabella.
 
 ## Firma digitale di moduli HTML {#digitally-signing-html-forms}
@@ -189,6 +191,7 @@ Per informazioni sulla firma digitale di un documento, vedere [Firma digitale e 
 È consigliabile limitare l&#39;utilizzo delle regole di convalida per i campi modulo durante il rendering del modulo come modulo HTML. Alcune regole di convalida potrebbero non essere supportate per i moduli HTML. Ad esempio, quando un pattern di convalida MM-GG-AAAA viene applicato a un `Date/Time` che si trova in una struttura di modulo di cui è stato eseguito il rendering come modulo HTML, non funziona correttamente, anche se la data è stata digitata correttamente. Tuttavia, questo modello di convalida funziona correttamente per i moduli renderizzati come PDF.
 
 >[!NOTE]
+>
 Per ulteriori informazioni sul servizio Forms, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
@@ -224,9 +227,11 @@ Quando si esegue il rendering di un modulo come HTML, è possibile specificare u
 Gli URL HTTP in cui vengono pubblicati i dati del modulo possono essere specificati impostando l’URL di destinazione utilizzando l’API client del servizio Forms oppure possono essere specificati nel pulsante Invia contenuto nella progettazione del modulo XDP. Se l’URL di destinazione è specificato nella progettazione del modulo, non impostare un valore utilizzando l’API client del servizio Forms.
 
 >[!NOTE]
+>
 Il rendering di un modulo HTML con una barra degli strumenti è facoltativo.
 
 >[!NOTE]
+>
 Se si esegue il rendering di un modulo HTML, si consiglia di non aggiungere una barra degli strumenti al modulo.
 
 **Rendering di un modulo HTML**
@@ -278,6 +283,7 @@ Eseguire il rendering di un modulo HTML utilizzando l’API Forms (Java):
    * Per eseguire il rendering del modulo HTML all’interno di tag HTML completi, richiama `HTMLRenderSpec` dell&#39;oggetto `setOutputType` metodo e passaggio `OutputType.FullHTMLTags`. (Impostazione facoltativa).
 
    >[!NOTE]
+   >
    Il rendering di Forms in HTML non viene eseguito correttamente quando `StandAlone` l&#39;opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il `ApplicationWebRoot` il valore viene specificato utilizzando `URLSpec` oggetto passato al `FormsServiceClient` dell&#39;oggetto `(Deprecated) renderHTMLForm` metodo). Quando `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell’URI della radice web nella console di amministrazione deve essere impostato come valore dell’URI dell’applicazione web del modulo. Per eseguire questa operazione, accedi alla console di amministrazione, fai clic su Servizi > Forms e imposta l’URI della directory principale del web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
 
 1. Rendering di un modulo HTML
@@ -335,6 +341,7 @@ Eseguire il rendering di un modulo HTML utilizzando l’API Forms (servizio web)
    * Per eseguire il rendering del modulo HTML all’interno di tag HTML completi, richiama `HTMLRenderSpec` dell&#39;oggetto `setOutputType` metodo e passaggio `OutputType.FullHTMLTags`.
 
    >[!NOTE]
+   >
    Il rendering di Forms in HTML non viene eseguito correttamente quando `StandAlone` l&#39;opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il `ApplicationWebRoot` il valore viene specificato utilizzando `URLSpec` oggetto passato al `FormsServiceClient` dell&#39;oggetto `(Deprecated) renderHTMLForm` metodo). Quando `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell’URI della radice web nella console di amministrazione deve essere impostato come valore dell’URI dell’applicazione web del modulo. Per eseguire questa operazione, accedi alla console di amministrazione, fai clic su Servizi > Forms e imposta l’URI della directory principale del web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
 
 1. Rendering di un modulo HTML

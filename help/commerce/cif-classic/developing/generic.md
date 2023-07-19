@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -49,8 +49,8 @@ Il framework di eCommerce può essere utilizzato con qualsiasi soluzione di eCom
 
       * Se trovato, il valore viene utilizzato per filtrare la ricerca del servizio di e-commerce.
       * Se non viene trovato, viene utilizzato il servizio di e-commerce con il livello più alto.
-   * A `cq:Commerce` mixin viene utilizzato in modo che `cq:commerceProvider` alle risorse fortemente tipizzate.
 
+   * A `cq:Commerce` mixin viene utilizzato in modo che `cq:commerceProvider` alle risorse fortemente tipizzate.
 
 * Il `cq:commerceProvider` La proprietà viene utilizzata anche per fare riferimento alla definizione di commerce factory appropriata.
 
@@ -97,11 +97,11 @@ Il **CommerceSession**:
    * esegue operazioni di aggiunta/rimozione/ecc.
    * esegue i vari calcoli sul carrello;
 
-      `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
+     `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
 * Possiede la persistenza del **ordine** dati:
 
-   `CommerceSession.getUserContext()`
+  `CommerceSession.getUserContext()`
 
 * È possibile recuperare/aggiornare i dettagli di consegna utilizzando `updateOrder(Map<String, Object> delta)`
 * Possiede anche il **pagamento** elaborazione della connessione
@@ -129,7 +129,6 @@ Qualsiasi risorsa di prodotto può essere rappresentata da un `Product API`. La 
 >
 >1. `size`
 >1. più un altro
-
 >
 >   Questa variante aggiuntiva viene selezionata tramite `variationAxis` proprietà del riferimento al prodotto (in genere `color` per i Geometrixx Outdoors).
 
@@ -197,7 +196,7 @@ public interface Product extends Adaptable {
  * Interface for filtering variants and AxisFilter provided as common implementation
  *
  * The <code>VariantFilter</code> is used to filter variants,
- * e.g. when using {@link Product#getVariants(VariantFilter filter)}.
+ * for example, when using {@link Product#getVariants(VariantFilter filter)}.
  */
 public interface VariantFilter {
     public boolean includes(Product product);
@@ -249,11 +248,11 @@ public class AxisFilter implements VariantFilter {
          * I riferimenti ai prodotti contengono una `productData` , che punta ai dati del prodotto (in genere sotto `/etc/commerce/products`).
          * I dati del prodotto sono gerarchici; gli attributi del prodotto vengono ereditati dai predecessori di un nodo di dati del prodotto.
          * I riferimenti ai prodotti possono anche contenere proprietà locali, che sostituiscono quelle specificate nei dati dei loro prodotti.
+
       * Un prodotto stesso:
 
          * Senza un `productData` proprietà.
          * Un nodo di prodotto che contiene tutte le proprietà localmente (e non contiene una proprietà productData) eredita gli attributi di prodotto direttamente dai propri predecessori.
-
 
 * **Struttura di prodotto AEM-generica**
 
@@ -321,11 +320,11 @@ public class AxisFilter implements VariantFilter {
       * Sconti sulla quantità.
       * Valute diverse.
       * IVA esente e IVA esente.
+
    * I modificatori sono completamente aperti con la seguente interfaccia:
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
-
 
 **Archiviazione**
 
@@ -432,36 +431,37 @@ Il punto di ingresso per l’API di ricerca è `CommerceService#search` che rest
 
    * Un voucher è un componente basato su pagina che viene creato/modificato con la console Siti web e memorizzato in:
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * Fornitura voucher:
 
       * Un codice voucher (che deve essere digitato nel carrello dall’acquirente).
       * Etichetta del voucher (da mostrare dopo che l&#39;acquirente l&#39;ha inserito nel carrello).
       * Un percorso di promozione (che definisce l&#39;azione applicata dal voucher).
+
    * I voucher non hanno date/ore di attivazione e disattivazione, ma utilizzano quelle delle campagne principali.
    * I motori di commercio esterno possono anche fornire buoni; questi richiedono un minimo di:
 
       * Un codice voucher
       * Un `isValid()` metodo
+
    * Il **Voucher** componente ( `/libs/commerce/components/voucher`) fornisce:
 
       * Un renderer per l&#39;amministrazione dei voucher; questo mostra tutti i voucher attualmente nel carrello.
       * Le finestre di dialogo per modifica (modulo) per l’amministrazione (aggiunta/rimozione) dei voucher.
       * Azioni necessarie per aggiungere o rimuovere i voucher dal carrello.
 
-
-
 * Promozioni:
 
    * Una promozione è un componente basato su pagina che viene creato/modificato con la console Siti web e memorizzato in:
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * Offerta promozioni:
 
       * Una priorità
       * Un percorso del gestore delle promozioni
+
    * È possibile collegare le promozioni a una campagna per definirne data/ora di attivazione/disattivazione.
    * Puoi collegare le promozioni a un’esperienza per definirne i segmenti.
    * Le promozioni non collegate a un’esperienza non si attivano da sole, ma possono comunque essere attivate da un voucher.
@@ -469,19 +469,18 @@ Il punto di ingresso per l’API di ricerca è `CommerceService#search` che rest
 
       * renderer e finestre di dialogo per l&#39;amministrazione della promozione
       * sottocomponenti per il rendering e la modifica dei parametri di configurazione specifici dei gestori di promozioni
+
    * Sono forniti due gestori di promozioni:
 
       * `DiscountPromotionHandler`, che applica uno sconto assoluto o percentuale a livello di carrello
       * `PerfectPartnerPromotionHandler`, che applica uno sconto assoluto o percentuale sul prodotto, se il prodotto partner si trova anche nel carrello
+
    * Il ClientContext `SegmentMgr` risolve segmenti e ClientContext `CartMgr` risolve le promozioni. Ogni promozione soggetta ad almeno un segmento risolto verrà attivata.
 
       * Le Promozioni Attivate vengono rimandate al server tramite una chiamata AJAX per ricalcolare il carrello.
       * Nel pannello ClientContext vengono visualizzate anche le promozioni attivate (e i voucher aggiunti).
 
-
-
-
-L&#39;aggiunta/rimozione di un voucher da un carrello viene eseguita tramite `CommerceSession` API:
+L&#39;aggiunta o la rimozione di un voucher da un carrello viene eseguita tramite `CommerceSession` API:
 
 ```java
 /**
@@ -522,7 +521,7 @@ Il `AbstractJcrCommerceSession` fornito può applicare i voucher. I voucher rest
 
 * `jcr:title` (Stringa) - per la descrizione del voucher
 * `code` (Stringa) - il codice che l&#39;utente deve immettere per applicare questo voucher
-* `promotion` (Stringa): la promozione da applicare; ad esempio `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (Stringa) - la promozione da applicare; ad esempio, `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 I gestori delle promozioni sono servizi OSGi che modificano il carrello. Il carrello supporterà diversi hook che saranno definiti nel `PromotionHandler` di rete.
 

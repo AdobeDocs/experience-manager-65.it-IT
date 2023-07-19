@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
@@ -27,14 +27,14 @@ AEM offre diversi meccanismi per personalizzare la funzionalità di authoring de
 
 * Clientlibs
 
-   Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare una libreria client personalizzata in `/apps.` La nuova libreria client deve:
+  Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare una libreria client personalizzata in `/apps.` La nuova libreria client deve:
 
    * dipende dalla libreria client di authoring `cq.authoring.editor.sites.page`
    * fa parte del programma `cq.authoring.editor.sites.page.hook` categoria
 
 * Sovrapposizioni
 
-   Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre le funzionalità standard (in `/libs`) con funzionalità personalizzate (in `/apps`). Quando si crea una sovrapposizione, non è necessaria una copia 1:1 dell&#39;originale, in quanto [sling resource merger](/help/sites-developing/sling-resource-merger.md) consente l’ereditarietà.
+  Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre le funzionalità standard (in `/libs`) con funzionalità personalizzate (in `/apps`). Quando si crea una sovrapposizione, non è necessaria una copia 1:1 dell&#39;originale, in quanto [sling resource merger](/help/sites-developing/sling-resource-merger.md) consente l’ereditarietà.
 
 >[!NOTE]
 >
@@ -53,7 +53,6 @@ Questi possono essere utilizzati in molti modi per estendere la funzionalità di
 >
 
 
-
 >[!CAUTION]
 >
 >Tu ***deve*** non modificare nulla in `/libs` percorso.
@@ -64,7 +63,6 @@ Questi possono essere utilizzati in molti modi per estendere la funzionalità di
 >
 >1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
 >1. Apporta le modifiche in `/apps`
-
 
 ## Aggiungi nuovo livello (modalità) {#add-new-layer-mode}
 
@@ -152,14 +150,14 @@ In un’installazione standard di AEM:
 
    * `cq:inplaceEditing`
 
-      ad esempio:
+     ad esempio:
 
       * `/libs/foundation/components/text/cq:editConfig`
       * `/libs/foundation/components/image/cq:editConfig`
 
          * proprietà: `editorType`
 
-            Definisce il tipo di editor in linea che verrà utilizzato quando viene attivata la modifica diretta per quel componente; ad esempio `text`, `textimage`, `image`, `title`.
+           Definisce il tipo di editor in linea che verrà utilizzato quando viene attivata la modifica diretta per quel componente; ad esempio, `text`, `textimage`, `image`, `title`.
 
 1. Ulteriori dettagli di configurazione dell’editor possono essere configurati utilizzando una `config` nodo contenente configurazioni e un ulteriore `plugin` per contenere i dettagli necessari della configurazione del plug-in.
 
@@ -260,4 +258,4 @@ Per avere un comportamento personalizzato durante tale attivazione, puoi sovrapp
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. Aggiornare il [modello di flusso di lavoro](/help/sites-developing/workflows-models.md) e configurazioni/script correlati, in base alle esigenze.
-1. Rimuovi il diritto al [ `replicate` azione](/help/sites-administering/security.md#actions) da tutti gli utenti appropriati per tutte le pagine rilevanti; affinché questo flusso di lavoro venga attivato come azione predefinita quando uno qualsiasi degli utenti tenta di pubblicare (o replicare) una pagina.
+1. Rimuovi il diritto al [`replicate` azione](/help/sites-administering/security.md#actions) da tutti gli utenti appropriati per tutte le pagine rilevanti; affinché questo flusso di lavoro venga attivato come azione predefinita quando uno qualsiasi degli utenti tenta di pubblicare (o replicare) una pagina.

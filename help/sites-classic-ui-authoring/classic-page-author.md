@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,14 @@ Una volta posizionata sulla pagina, è possibile aprire una finestra di dialogo 
 * **Modifica diretta**
 I componenti Testo e Immagine possono essere modificati direttamente nella pagina web senza aprire una finestra di dialogo o eseguire un’azione di salvataggio esplicita.
 
-* **[Barra laterale](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
+* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
 Una finestra mobile &quot;Inspector&quot; che appare sulla pagina modificabile. Da qui è possibile trascinare nuovi componenti sulla pagina e eseguire azioni specifiche per la pagina.
 
 * **[Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
 Sul lato sinistro di ogni pagina modificabile, Content Finder consente di accedere rapidamente a una serie di risorse, tra cui risorse digitali (come altre immagini, elementi di Flash e documenti), altre pagine e paragrafi. Questi elementi possono essere trascinati sulla pagina, ad esempio per posizionare le risorse o creare collegamenti ad altre pagine.
 
 * **Menu di scelta rapida**
-Facendo clic con il pulsante destro del mouse sulla maggior parte degli elementi sullo schermo (ad esempio, i paragrafi nella pagina), viene visualizzato un menu di scelta rapida con le opzioni di azione appropriate.
+Facendo clic con il pulsante destro del mouse sulla maggior parte degli elementi sullo schermo, ad esempio i paragrafi della pagina, viene visualizzato un menu di scelta rapida con le opzioni di azione appropriate.
 
 * **Cerca durante la digitazione**
 In alcuni scenari (ad esempio, la selezione del percorso nelle finestre di dialogo di modifica) la ricerca di contenuto tramite l’interfaccia AEM presenta corrispondenze dinamiche durante la digitazione della query.

@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 17%
+source-wordcount: '1870'
+ht-degree: 15%
 
 ---
 
@@ -24,7 +24,6 @@ Per creare una copia per lingua, attiva uno dei seguenti flussi di lavoro per la
 >
 >* Gli utenti che creano progetti di traduzione sono membri del gruppo `projects-administrators`.
 >* Il fornitore di servizi di traduzione supporta la traduzione dei file binari.
-
 
 ## Creare e tradurre il flusso di lavoro {#create-and-translate-workflow}
 
@@ -67,7 +66,7 @@ Se utilizzi questa opzione, le risorse da tradurre vengono copiate nella directo
 
 1. Clic **[!UICONTROL Crea e traduci]** in basso.
 
-1. Nell’elenco **[!UICONTROL Lingue di destinazione]**, seleziona le lingue per le quali vuoi creare una struttura di cartelle.
+1. Dalla sezione **[!UICONTROL Lingue di destinazione]** selezionare le lingue per le quali si desidera creare una struttura di cartelle.
 
 1. Dalla sezione **[!UICONTROL Progetto]** elenco, seleziona **[!UICONTROL Crea un nuovo progetto di traduzione]**.
 
@@ -118,7 +117,7 @@ Se utilizzi questa opzione, il flusso di lavoro di traduzione viene eseguito per
 1. Clic **[!UICONTROL Copie per lingua]** in **[!UICONTROL Copie]**. Viene visualizzato un elenco delle copie di traduzione disponibili.
 1. Clic **[!UICONTROL Crea e traduci]** in basso.
 
-1. Nell’elenco **[!UICONTROL Lingue di destinazione]**, seleziona le lingue per le quali vuoi creare una struttura di cartelle.
+1. Dalla sezione **[!UICONTROL Lingue di destinazione]** selezionare le lingue per le quali si desidera creare una struttura di cartelle.
 
 1. Dall’elenco **[!UICONTROL Progetto]**, seleziona **[!UICONTROL Aggiungi al progetto di traduzione esistente]** per eseguire il flusso di lavoro di traduzione nella cartella.
 

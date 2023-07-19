@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '671'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,6 @@ Questi possono essere utilizzati in molti modi per estendere le console AEM. Di 
 >
 
 
-
 >[!CAUTION]
 >
 >Tu ***deve*** non modificare nulla in `/libs` percorso.
@@ -54,9 +53,7 @@ Questi possono essere utilizzati in molti modi per estendere le console AEM. Di 
 >1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
 >
 >1. Apporta le modifiche in `/apps`
-
 >
-
 
 Ad esempio, la seguente posizione all’interno del `/libs` La struttura può essere sovrapposta:
 
@@ -142,17 +139,18 @@ Per personalizzare le colonne nella vista a elenco:
 
    * Sul nodo:
 
-      ```
-             /apps/wcm/core/content/common/availablecolumns
-      ```
+     ```
+            /apps/wcm/core/content/common/availablecolumns
+     ```
 
    * Aggiungi le nuove colonne o rimuovi quelle esistenti.
+
    Consulta [Utilizzo delle sovrapposizioni (e di Sling Resource Merger)](/help/sites-developing/overlays.md) per ulteriori informazioni.
 
 1. Facoltativamente:
 
    * Se desideri inserire dati aggiuntivi, devi scrivere una [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
-      `pageInfoProviderType` proprietà.
+     `pageInfoProviderType` proprietà.
 
    Ad esempio, consulta la classe/bundle allegato (da GitHub) di seguito.
 

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 6%
 
 ---
@@ -29,15 +29,14 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
 >* **Pubblicare/Annullare la pubblicazione**
-   >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
 >* **Attivare/Disattivare**
-   >  Sinonimi di pubblicare/annullare la pubblicazione.
+>  Sinonimi di pubblicare/annullare la pubblicazione.
 >
 >* **Replicare/Replica**
-   >  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
+>  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
 >
-
 
 >[!NOTE]
 >
@@ -46,7 +45,6 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >* Verrà attivato un flusso di lavoro per notificare alla persona appropriata la richiesta di pubblicazione.
 >* Verrà visualizzato un messaggio (per un breve periodo di tempo) per informarti di questo problema.
 >
-
 
 ## Pubblicazione di una pagina {#publishing-a-page}
 
@@ -73,6 +71,8 @@ Esistono due metodi per attivare una pagina:
    >[!NOTE]
    >
    >Se necessario, AEM richiede l’attivazione o la riattivazione di tutte le risorse collegate alla pagina. Puoi selezionare o deselezionare le caselle di controllo per attivare tali risorse.
+   >
+   >
 
 1. Se necessario, AEM richiede l’attivazione o la riattivazione di tutte le risorse collegate alla pagina. Puoi selezionare o deselezionare le caselle di controllo per attivare tali risorse.
 
@@ -82,13 +82,13 @@ Esistono due metodi per attivare una pagina:
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
-### Attivazione di una pagina dalla barra laterale {#activating-a-page-from-sidekick}
+### Attivazione di una pagina da un Sidekick {#activating-a-page-from-sidekick}
 
 Puoi anche attivare una pagina quando è aperta per la modifica.
 
 Dopo aver aperto la pagina e averne modificato il contenuto:
 
-1. Seleziona la **Pagina** nella barra laterale.
+1. Seleziona la **Pagina** nel Sidekick.
 1. Clic **Attiva pagina**.
 Nella parte superiore destra della finestra viene visualizzato un messaggio che conferma l’attivazione della pagina.
 

@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 3%
@@ -112,7 +112,6 @@ Il **Strumenti e-mail** Il componente per ExactTarget può aggiungere ulteriori 
 >* Sono necessari due degli strumenti e-mail: **Indirizzo postale (obbligatorio)** e **Centro profili (obbligatorio)**. Quando l’e-mail viene pubblicata su ExactTarget, per impostazione predefinita questi due strumenti e-mail vengono aggiunti al fondo di ogni e-mail.
 >
 
-
 ### Aggiunta di testo e strumenti di personalizzazione alla posta elettronica {#adding-text-and-personalization-tool-to-your-e-mail}
 
 Puoi aggiungere campi personalizzati in un messaggio e-mail aggiungendo il **Testo e personalizzazione** alla pagina:
@@ -157,9 +156,10 @@ Le e-mail/newsletter possono essere pubblicate nel servizio di posta elettronica
 
 >[!NOTE]
 >
->Se un’e-mail/newsletter viene pubblicata con lo stesso nome di un’e-mail/newsletter già pubblicata, l’e-mail/newsletter precedente non viene sostituita. Viene invece creata una nuova e-mail/newsletter con lo stesso nome (gli ID di due newsletter sono tuttavia diversi).
+>Se viene pubblicata un’e-mail/newsletter con lo stesso nome di un’e-mail/newsletter già pubblicata, l’e-mail/newsletter precedente non viene sostituita. Viene invece creata una nuova e-mail/newsletter con lo stesso nome (gli ID di due newsletter sono tuttavia diversi).
 >
 >Quando si pubblica l’e-mail/newsletter per il provider di servizi di posta elettronica, l’e-mail/newsletter viene pubblicata anche nell’istanza di pubblicazione dell’AEM.
+>
 
 ### Aggiornamento Di Un Messaggio Di Posta Elettronica Pubblicato {#updating-a-published-e-mail}
 

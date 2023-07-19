@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 7%
+source-wordcount: '460'
+ht-degree: 6%
 
 ---
 
@@ -81,22 +81,22 @@ La configurazione OSGi è:
   <tr>
    <td><strong>Proprietà di riferimento</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>Nome della proprietà che contiene il riferimento al frammento, ad esempio <code>fragmentPath</code> o <code>fileReference</code></td>
+   <td>Nome della proprietà che contiene il riferimento al frammento; ad esempio, <code>fragmentPath</code> o <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Proprietà elemento/i</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>Il nome della proprietà che contiene i nomi degli elementi da riprodurre; ad esempio<code>elementName</code></td>
+   <td>Il nome della proprietà che contiene i nomi degli elementi da riprodurre; ad esempio,<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Proprietà variante</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>Il nome della proprietà che contiene il nome della variante da riprodurre; ad esempio<code>variationName</code></td>
+   <td>Il nome della proprietà che contiene il nome della variante da riprodurre; ad esempio,<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
 
-Per alcune funzionalità (ad esempio, per eseguire il rendering solo di un intervallo di paragrafi) è necessario attenersi ad alcune convenzioni:
+Per alcune funzionalità (ad esempio, per eseguire il rendering solo di un intervallo di paragrafi) è necessario rispettare alcune convenzioni:
 
 <table>
  <tbody>

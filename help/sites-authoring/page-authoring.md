@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Sul lato sinistro di una pagina modificabile è possibile aprire un browser scor
 Sul lato sinistro di una pagina modificabile è possibile aprire un browser scorrevole; da qui le risorse possono essere trascinate sulla pagina; ad esempio per posizionare le risorse o creare collegamenti ad altre pagine.
 
 * **Barra degli strumenti del componente**
-Con un singolo clic/tocco o un doppio clic/tocco lento viene visualizzata la barra degli strumenti appropriata (singolo per la barra degli strumenti di modifica locale, quindi doppio lento per la barra degli strumenti completa).
+Con un singolo clic/tocco o un doppio clic/tocco lento viene visualizzata la barra degli strumenti appropriata (singola per la barra degli strumenti di modifica locale, quindi doppia lenta per la barra degli strumenti completa).
 
 * **[Layout reattivo](/help/sites-authoring/responsive-layout.md)**
 Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva.

@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3584'
 ht-degree: 2%
 
 ---
@@ -52,27 +52,26 @@ Come con [tutti i componenti](/help/sites-developing/components.md), i component
 >1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs` in `/apps`
 >2. Apporta le modifiche in `/apps`
 
-
 Il `/libs/cq/workflow/components/model/step` il componente è l’antenato comune più vicino del **Passaggio processo**, **Passaggio partecipante**, e **Passaggio partecipante dinamico**, che ereditano tutti i seguenti elementi:
 
 * `step.jsp`
 
-   Il `step.jsp` script esegue il rendering del titolo del componente del passaggio quando viene aggiunto a un modello.
+  Il `step.jsp` script esegue il rendering del titolo del componente del passaggio quando viene aggiunto a un modello.
 
-   ![wf-22-1](assets/wf-22-1.png)
+  ![wf-22-1](assets/wf-22-1.png)
 
 * [cq:dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
-   Una finestra di dialogo con le seguenti schede:
+  Una finestra di dialogo con le seguenti schede:
 
    * **Comune**: per modificare il titolo e la descrizione.
    * **Avanzate**: per modificare le proprietà delle notifiche e-mail.
 
-   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
+  ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
-   >[!NOTE]
-   >
-   >Quando le schede della finestra di dialogo per modifica di un componente del passaggio non corrispondono a questo aspetto predefinito, il componente del passaggio dispone di script definiti, proprietà del nodo o schede di dialogo che sovrascrivono queste schede ereditate.
+  >[!NOTE]
+  >
+  >Quando le schede della finestra di dialogo per modifica di un componente del passaggio non corrispondono a questo aspetto predefinito, il componente del passaggio dispone di script definiti, proprietà del nodo o schede di dialogo che sovrascrivono queste schede ereditate.
 
 ### Script ECMA {#ecma-scripts}
 
@@ -92,7 +91,7 @@ Puoi utilizzare i metadati del flusso di lavoro per mantenere le informazioni ne
 
 Esistono tre tipi di oggetti MetaDataMap: per `Workflow`, `WorkflowData` e `WorkItem` oggetti. Tutte hanno lo stesso scopo: archiviare i metadati.
 
-Un elemento di lavoro dispone di una MetaDataMap specifica che può essere utilizzata solo mentre l&#39;elemento di lavoro (ad esempio il passaggio) è in esecuzione.
+Un elemento di lavoro dispone di una MetaDataMap specifica che può essere utilizzata solo mentre l&#39;elemento di lavoro (ad esempio, il passaggio ) è in esecuzione.
 
 Entrambi `Workflow` e `WorkflowData` i metadata sono condivisi sull&#39;intero flusso di lavoro. Per questi casi si consiglia di utilizzare solo il `WorkflowData` mappa metadati.
 
@@ -125,7 +124,6 @@ Per specificare i valori predefiniti per il **Titolo** e **Descrizione** campi s
 >  Questo requisito è soddisfatto quando la finestra di dialogo per modifica utilizza la scheda Comune che `/libs/cq/flow/components/step/step` il componente implementa.
 >
 >* Il componente del passo o un predecessore del componente non sostituisce il `step.jsp` scrivi che `/libs/cq/flow/components/step/step` il componente implementa.
-
 
 1. Sotto `cq:Component` , aggiungere il seguente nodo:
 
@@ -669,7 +667,6 @@ function getParticipant() {
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
-
 Puoi sviluppare i passaggi del flusso di lavoro per ottenere le risorse del pacchetto ed elaborarle. I seguenti membri della `com.day.cq.workflow.collection` forniscono accesso ai pacchetti del flusso di lavoro:
 
 * `ResourceCollection`: classe del pacchetto del flusso di lavoro.
@@ -826,21 +823,21 @@ Un modo semplice per iniziare a creare un passaggio personalizzato consiste nel 
 
    * `sling:resourceSuperType`
 
-      Deve ereditare da un passaggio esistente.
+     Deve ereditare da un passaggio esistente.
 
-      In questo esempio ereditiamo dal passaggio base in `cq/workflow/components/model/step`, ma puoi utilizzare altri super tipi come `participant`, `process`, ecc.
+     In questo esempio ereditiamo dal passaggio base in `cq/workflow/components/model/step`, ma puoi utilizzare altri super tipi come `participant`, `process`, ecc.
 
    * `jcr:title`
 
-      è il titolo visualizzato quando il componente è elencato nel browser dei passaggi (pannello laterale sinistro dell’editor modelli di flusso di lavoro).
+     è il titolo visualizzato quando il componente è elencato nel browser dei passaggi (pannello laterale sinistro dell’editor modelli di flusso di lavoro).
 
    * `cq:icon`
 
-      Utilizzato per specificare un [Icona rosso corallo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) per il passaggio.
+     Utilizzato per specificare un [Icona rosso corallo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) per il passaggio.
 
    * `componentGroup`
 
-      Deve essere uno dei seguenti:
+     Deve essere uno dei seguenti:
 
       * Flusso di lavoro collaborazione
       * Flusso di lavoro DAM
@@ -873,11 +870,12 @@ Dopo [Creazione del passaggio di base](#creating-the-basic-step), definisci il p
 
    * `cq:inherit`
 
-      Se impostato su `true`, il componente del passaggio erediterà le proprietà dal passaggio specificato in `sling:resourceSuperType`.
+     Se impostato su `true`, il componente del passaggio erediterà le proprietà dal passaggio specificato in `sling:resourceSuperType`.
 
    * `cq:disableTargeting`
 
-      Imposta come richiesto.
+     Imposta come richiesto.
+
    ![wf-39](assets/wf-39.png)
 
 1. Configurare le proprietà sul nodo `cq:formsParameter` come segue:
@@ -886,7 +884,7 @@ Dopo [Creazione del passaggio di base](#creating-the-basic-step), definisci il p
 
    * `jcr:title`
 
-      Imposta il titolo predefinito sulla scheda del passo nella mappa del modello e nel **Titolo** campo del **Personalizzato - Proprietà passaggio** finestra di dialogo per configurazione.
+     Imposta il titolo predefinito sulla scheda del passo nella mappa del modello e nel **Titolo** campo del **Personalizzato - Proprietà passaggio** finestra di dialogo per configurazione.
 
    * Puoi anche definire proprietà personalizzate.
 

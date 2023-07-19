@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -27,18 +27,18 @@ Ogni pagina ha un set di [proprietà](/help/sites-authoring/editing-page-propert
 
 Lo stato predefinito per ogni proprietà di pagina è:
 
-* nascosta nella vista di creazione (ad es. **Crea pagina** procedura guidata)
+* nascosta nella vista di creazione (ad esempio, **Crea pagina** procedura guidata)
 
-* disponibile nella vista di modifica (ad es. **Visualizza proprietà**)
+* disponibile nella vista di modifica (ad esempio, **Visualizza proprietà**)
 
 I campi devono essere configurati in modo specifico se è necessaria una modifica. Questa operazione viene eseguita utilizzando le proprietà del nodo appropriate:
 
-* Proprietà di pagina da rendere disponibile nella visualizzazione di creazione (ad es. **Crea pagina** procedura guidata):
+* Proprietà di pagina da rendere disponibile nella visualizzazione di creazione (ad esempio, **Crea pagina** procedura guidata):
 
    * Nome: `cq:showOnCreate`
    * Tipo: `Boolean`
 
-* Proprietà di pagina da rendere disponibile nella vista di modifica (ad es. **Visualizza**/**Modifica**) **Proprietà** opzionale):
+* Proprietà di pagina da rendere disponibile nella vista di modifica (ad esempio, **Visualizza**/**Modifica**) **Proprietà** opzionale):
 
    * Nome: `cq:hideOnEdit`
    * Tipo: `Boolean`
@@ -71,12 +71,15 @@ Ad esempio, per impostazione predefinita [**Crea pagina** procedura guidata](/he
    >Come riferimento, vedere:
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
+   >
    Tuttavia, ***deve*** non modificare nulla in `/libs` percorso.
+   >
    Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+   >
    Il metodo consigliato per la configurazione e altre modifiche è:
+   >
    1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
    1. Apporta le modifiche in `/apps`
-
 
 1. Imposta il `path` proprietà su `basic` per puntare alla sostituzione della scheda di base (vedi anche il passaggio successivo). Ad esempio:
 
@@ -99,6 +102,7 @@ Ad esempio, per impostazione predefinita [**Crea pagina** procedura guidata](/he
    Il **Altri titoli e descrizioni** non verrà più visualizzata nella sezione **Crea pagina** procedura guidata.
 
 >[!NOTE]
+>
 Quando configuri le proprietà della pagina da utilizzare con le Live Copy, consulta [Configurazione dei blocchi MSM nelle proprietà della pagina](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) per ulteriori dettagli.
 
 ## Configurazione di esempio delle proprietà di pagina {#sample-configuration-of-page-properties}

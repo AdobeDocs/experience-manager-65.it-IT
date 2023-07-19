@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -53,21 +53,21 @@ Nell’app AEM Forms, con il pulsante sinistro del mouse viene aperta una nuova 
 
    * &quot;toccare .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;toccare .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;toccare .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;toccare .task-content&quot; : &quot;onTaskClick&quot;,
+     &quot;toccare .task-content&quot; : &quot;onTaskClick&quot;,
 
-      &quot;toccare .last_empty_div&quot; : &quot;onTaskClick&quot;,
+     &quot;toccare .last_empty_div&quot; : &quot;onTaskClick&quot;,
+
    e sostituisci con
 
    * &quot;swipe .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .task-content&quot; : &quot;onTaskClick&quot;,
+     &quot;swipe .task-content&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
-
+     &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 1. Salva e chiudi `task.js` file.
 1. Crea ed esegui l’app AEM Forms. Ora è possibile aprire un utilizzando con le opzioni scorri a sinistra e scorri a destra.

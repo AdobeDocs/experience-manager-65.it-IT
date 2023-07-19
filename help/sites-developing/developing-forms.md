@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
@@ -128,13 +128,13 @@ Puoi aggiungere una tua azione in `/apps` come segue:
 1. Nella cartella crea:
 
    1. Uno script post.
-Il nome dello script è `post.POST.<extension>`, ad es. `post.POST.jsp`
-Lo script post viene richiamato quando un modulo viene inviato per elaborare il modulo, contiene il codice che gestisce i dati provenienti dal modulo 
-`POST`.
+Il nome dello script è `post.POST.<extension>`ad esempio: `post.POST.jsp`
+Lo script post viene richiamato quando un modulo viene inviato per elaborare il modulo, contiene il codice che gestisce i dati provenienti dal modulo `POST`.
 
    1. Aggiungi uno script di inoltro che viene richiamato al momento dell’invio del modulo.
-Il nome dello script è `forward.<extension`>, ad es. `forward.jsp`
+Il nome dello script è `forward.<extension`>, ad esempio `forward.jsp`
 Questo script può definire un percorso. La richiesta corrente viene quindi inoltrata al percorso specificato.
+
    La chiamata necessaria è `FormsHelper#setForwardPath` (2 varianti). Un caso tipico è quello di eseguire una convalida, o logica, per trovare il percorso di destinazione e quindi inoltrarlo a tale percorso, consentendo al servlet Sling POST predefinito di eseguire l’archiviazione effettiva in JCR.
 
    Potrebbe anche essere presente un altro servlet che esegue l’elaborazione effettiva, in questo caso l’azione modulo e `forward.jsp` fungerebbe solo da codice &quot;colla&quot;. Un esempio è l’azione e-mail in `/libs/foundation/components/form/actions/mail`, che inoltra i dettagli a `<currentpath>.mail.html`posizione di un servlet di posta.
@@ -153,6 +153,7 @@ Questo script può definire un percorso. La richiesta corrente viene quindi inol
       1. validationRT del modulo: `clientvalidation.jsp`
       1. il modulo viene caricato tramite la risorsa di caricamento se impostata
       1. `addfields.jsp` durante il rendering interno `<form></form>`
+
    * durante la gestione di un modulo `POST`:
 
       1. `init.jsp`
@@ -163,22 +164,18 @@ Questo script può definire un percorso. La richiesta corrente viene quindi inol
 
       1. se non è stato impostato alcun percorso di inoltro, invoca `post.POST.jsp` (termina qui, no `cleanup.jsp` chiamato)
 
-
-
-
 1. Sempre nella cartella, se lo desideri, aggiungi:
 
    1. Script per l’aggiunta di campi.
-Il nome dello script è `addfields.<extension>`, ad es. `addfields.jsp`
-Un 
-`addfields` lo script viene richiamato immediatamente dopo la scrittura del HTML per l&#39;inizio del modulo. Questo consente all’azione di aggiungere campi di input personalizzati o altri HTML di questo tipo all’interno del modulo.
+Il nome dello script è `addfields.<extension>`ad esempio: `addfields.jsp`
+Un `addfields` lo script viene richiamato immediatamente dopo la scrittura del HTML per l&#39;inizio del modulo. Questo consente all’azione di aggiungere campi di input personalizzati o altri HTML di questo tipo all’interno del modulo.
 
    1. Uno script di inizializzazione.
-Il nome dello script è `init.<extension>`, ad es. `init.jsp`
+Il nome dello script è `init.<extension>`ad esempio: `init.jsp`
 Questo script viene richiamato al momento del rendering del modulo. Può essere utilizzato per inizializzare le specifiche dell’azione.
 
    1. Uno script di pulizia.
-Il nome dello script è `cleanup.<extension>`, ad es. `cleanup.jsp`
+Il nome dello script è `cleanup.<extension>`ad esempio: `cleanup.jsp`
 Questo script può essere utilizzato per eseguire la pulizia.
 
 1. Utilizza il **Forms** componente in un parsys. Il **Tipo di azione** Il menu a discesa includerà ora la nuova azione.
@@ -220,10 +217,10 @@ I vincoli possono essere imposti a due livelli:
 
 1. All&#39;interno di questa cartella, possono essere necessari i seguenti script:
 
-   * Uno script di convalida client: il nome dello script è `clientvalidation.<extension>`, ad es. `clientvalidation.jsp`
+   * Uno script di convalida client: il nome dello script è `clientvalidation.<extension>`ad esempio: `clientvalidation.jsp`
 Viene richiamato quando viene eseguito il rendering del campo modulo. Può essere utilizzato per creare JavaScript client per convalidare il campo sul client.
 
-   * Uno script di convalida del server: il nome dello script è `servervalidation.<extension>`, ad es. `servervalidation.jsp`
+   * Uno script di convalida del server: il nome dello script è `servervalidation.<extension>`ad esempio: `servervalidation.jsp`
 Viene richiamato al momento dell’invio del modulo. Può essere utilizzato per convalidare il campo sul server dopo l’invio.
 
 >[!NOTE]
@@ -284,6 +281,7 @@ In JavaScript, le condizioni utilizzano il valore della proprietà Nome elemento
 
       * **tutto** - se tutte le condizioni devono essere true per mostrare o nascondere il componente
       * **qualsiasi** - se solo una o più condizioni devono essere soddisfatte per mostrare o nascondere il componente
+
    * Nella riga della condizione, visualizzata come predefinita, selezionare un componente, un operatore e quindi specificare un valore.
    * Se necessario, aggiungi altre condizioni facendo clic su **Aggiungi condizione**.
 
@@ -306,7 +304,6 @@ In JavaScript, le condizioni utilizzano il valore della proprietà Nome elemento
    >* in **Anteprima** modalità nell’ambiente di authoring (richiede un ricaricamento della pagina al primo passaggio all’anteprima)
    >
    >* sull’ambiente di pubblicazione
-
 
 #### Gestione dei riferimenti ai componenti interrotti {#handling-broken-component-references}
 

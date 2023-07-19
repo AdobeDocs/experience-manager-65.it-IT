@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ L&#39;interfaccia utente presentata al moderatore nell&#39;istanza di pubblicazi
 
 Utilizzo di [Coinvolgi Geometrixx](http://localhost:4503/content/sites/engage/en.html) sito creato quando [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum su cui si possono eseguire varie attività di moderazione nell&#39;ambiente di pubblicazione, come mostrato di seguito.
 
-Aaron McDonald (aaron.mcdonald@mailinator.com) è stato identificato come membro fidato della community, aggiungendolo al gruppo community-engagement-moderators durante la creazione del sito.
+Aaron McDonald (aaron.mcdonald@mailinator.com) è stato identificato come membro fidato della community aggiungendolo al gruppo community-engagement-moderators durante la creazione del sito.
 
 Rebekah Larsen (rebekah.larsen@trashymail.com) può essere aggiunto come membro del gruppo community-engagement-members utilizzando il [Console Membri](members.md).
 
@@ -56,11 +56,11 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
    * Seleziona nuovo post
    * Inserisci l’oggetto
 
-      Quando cambiare il nettare in Alimentazione Uccelli Humming
+     Quando cambiare il nettare in Alimentazione Uccelli Humming
 
    * Inserisci il corpo del testo
 
-      Non ho avuto molto successo quando appendo una mangiatoia di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarlo prima?
+     Non ho avuto molto successo quando appendo una mangiatoia di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarlo prima?
 
    * Seleziona post
    * Seleziona disconnessione
@@ -71,7 +71,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
    * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
    * Inserisci il commento per Pubblica risposta
 
-      Cambio il mio una volta alla settimana e lo prendo da maggio a ottobre.
+     Cambio il mio una volta alla settimana e lo prendo da maggio a ottobre.
 
    * Seleziona risposta
    * Seleziona disconnessione
@@ -82,7 +82,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
    * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
    * Inserisci il commento per Pubblica risposta
 
-      Vendo nettare e alimentatori - visita https://my.viral.url/
+     Vendo nettare e alimentatori - visita https://my.viral.url/
 
    * Seleziona risposta
    * Seleziona disconnessione

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ Per definire una mappatura di dominio per **Esternalizzatore** servizio:
 
       * utilizzare https per applicare i collegamenti https, se desiderato
       * verrà utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
+
    * **server** è il nome host (può essere un nome di dominio o un indirizzo ip).
    * **porta** (facoltativo) è il numero della porta.
    * **contextpath** (facoltativo) è impostato solo se AEM è installato come app web in un percorso di contesto diverso.
@@ -100,7 +101,6 @@ Questa sezione mostra alcuni esempi di come **Esternalizzatore** Il servizio pu�
 
    * `https://www.website.com/contextpath/my/page.html`
 
-
 1. **Per esternalizzare un percorso con il dominio &quot;author&quot;:**
 
    ```java
@@ -115,7 +115,6 @@ Questa sezione mostra alcuni esempi di come **Esternalizzatore** Il servizio pu�
 
    * `https://author.website.com/contextpath/my/page.html`
 
-
 1. **Per esternalizzare un percorso con il dominio &quot;locale&quot;:**
 
    ```java
@@ -129,6 +128,5 @@ Questa sezione mostra alcuni esempi di come **Esternalizzatore** Il servizio pu�
    `myExternalizedUrl` finisce con il valore:
 
    * `https://publish-3.internal/contextpath/my/page.html`
-
 
 1. Puoi trovare altri esempi nella sezione [JavaScript](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).

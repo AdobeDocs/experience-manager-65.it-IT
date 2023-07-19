@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4957'
+source-wordcount: '4956'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
    * model: ID del modello da interrogare. Per visualizzare un conteggio delle istanze del flusso di lavoro non riuscite per tutti i modelli di flusso di lavoro, non specificare alcun valore. L’ID è il percorso del nodo del modello, ad esempio:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: numero di istanze del flusso di lavoro non riuscite.
 
@@ -101,7 +101,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
    * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
    * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze non riuscite di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: dati tabulari relativi alle istanze terminate, contenenti le colonne seguenti:
 
@@ -119,7 +119,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
    * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
    * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificare alcun modello per applicare l&#39;operazione agli elementi di lavoro non riusciti di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: dati tabulari relativi agli elementi di lavoro non riusciti che vengono ritentati, incluse le colonne seguenti:
 
@@ -136,7 +136,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
    * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze del flusso di lavoro di tutti i modelli del flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Numero di giorni dall’avvio del flusso di lavoro: età in giorni delle istanze del flusso di lavoro da eliminare.
    * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
 
@@ -155,7 +155,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
    * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze del flusso di lavoro di tutti i modelli del flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: numero di istanze di flusso di lavoro non aggiornate.
 
@@ -165,7 +165,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
    * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze non aggiornate di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
 
 * Valore restituito: elenco di istanze del flusso di lavoro riavviate.
@@ -181,7 +181,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
    * Modello: (facoltativo) l’ID del modello per il quale viene restituito il numero di istanze in esecuzione. Non specificare alcun modello per restituire il numero di istanze in esecuzione di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: numero di istanze del flusso di lavoro in esecuzione.
 
@@ -191,7 +191,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
    * Modello: (facoltativo) l’ID del modello per il quale viene restituito il numero di istanze completate. Non specificare alcun modello per restituire il numero di istanze completate di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: numero di istanze del flusso di lavoro completate.
 
@@ -201,7 +201,7 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
    * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze del flusso di lavoro di tutti i modelli del flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Numero di giorni dal completamento del flusso di lavoro: il numero di giorni in cui le istanze del flusso di lavoro sono state completate.
    * Dry run: (facoltativo) specifica un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguirla effettivamente. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
 
@@ -556,11 +556,11 @@ Sola lettura.
 
    * `target`: (Facoltativo) A `String` valore che rappresenta il nome del file ZIP o della directory in cui archiviare i dati del repository. Per utilizzare un file ZIP, Includi l’estensione del nome del file ZIP. Per utilizzare una directory, non includere alcuna estensione di file.
 
-      Per eseguire un backup incrementale, specificare la directory utilizzata in precedenza per il backup.
+     Per eseguire un backup incrementale, specificare la directory utilizzata in precedenza per il backup.
 
-      È possibile specificare un percorso assoluto o relativo. I percorsi relativi sono relativi alla directory principale della directory crx-quickstart.
+     È possibile specificare un percorso assoluto o relativo. I percorsi relativi sono relativi alla directory principale della directory crx-quickstart.
 
-      Se non specificate alcun valore, il valore predefinito è `backup-currentdate.zip` viene utilizzato, dove `currentdate` è nel formato `yyyyMMdd-HHmm`.
+     Se non specificate alcun valore, il valore predefinito è `backup-currentdate.zip` viene utilizzato, dove `currentdate` è nel formato `yyyyMMdd-HHmm`.
 
 * Valore restituito: nessuno
 

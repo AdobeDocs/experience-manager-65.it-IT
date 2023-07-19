@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4483'
+source-wordcount: '4484'
 ht-degree: 2%
 
 ---
@@ -161,7 +161,7 @@ La cartella nella cartella appropriata `importers` la cartella deve corrisponder
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
-Il formato del file di importazione di origine è definito dall&#39;importazione. In alternativa, l’importazione può stabilire una connessione (ad esempio WebDAV o http) al motore di e-commerce.
+Il formato del file di importazione di origine è definito dall&#39;importazione. In alternativa, l’importazione può stabilire una connessione (ad esempio, WebDAV o http) al motore di e-commerce.
 
 ## Ruoli {#roles}
 
