@@ -1,10 +1,10 @@
 ---
-title: Note sulla versione 2021 di AEM Content and Commerce
-description: Note sulla versione 2021 di AEM Content and Commerce
+title: Note sulla versione 2021 di Adobe Experience Manager Content and Commerce
+description: Note sulla versione 2021 di Adobe Experience Manager Content and Commerce
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1318'
 ht-degree: 13%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 13%
 
 ## Panoramica dei requisiti di sistema
 
-Esaminare i requisiti di sistema minimi nella tabella seguente per la versione CIF in uso o che si prevede di utilizzare in futuro.
+Esaminare i requisiti minimi di sistema nella tabella seguente per la versione CIF attualmente in uso o che si prevede di utilizzare in futuro.
 
 | Componente | Requisiti di sistema |
 |:-------|:-----:|
-| Componente aggiuntivo CIF | Minimo: schemi GraphQL di AEM 6.5.7, Adobe Commerce 2.3.5 |
+| Componente aggiuntivo CIF | Minimo: schemi Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL |
 | Componenti core CIF | [Requisiti di sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archetipo progetto AEM | [Requisiti di sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -51,7 +51,7 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 * Il componente aggiuntivo CIF supporta la versione più recente di Commerce v2.4.3 con nuovi API e schemi di GraphQL
 
-* Gli autori possono aggiungere collegamenti alle pagine di prodotti e cataloghi nei campi di testo utilizzando l’editor Rich Text. Alla barra degli strumenti dell’editor Rich Text è stata aggiunta un’icona CIF che consente di aprire i selettori per cercare e selezionare rapidamente il prodotto o la categoria senza uscire dal contesto.
+* Gli autori possono aggiungere collegamenti alle pagine di prodotti e cataloghi nei campi di testo utilizzando l’editor Rich Text. Alla barra degli strumenti dell’editor Rich Text è stata aggiunta un’icona CIF che apre i selettori per cercare e selezionare rapidamente il prodotto o la categoria senza uscire dal contesto.
 
 * I carrelli e le pagine di pagamento pop-up esistenti sono stati sostituiti da carrelli e pagine di pagamento dedicati per l’AEM. I componenti di queste pagine vengono generati utilizzando i componenti PEGRA estensibili di Adobe Commerce
 
@@ -71,11 +71,11 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 * La nuova scheda &quot;Contenuto e-commerce associato&quot; nell’editor di Sites aumenta l’efficienza dell’autore grazie all’accesso rapido ai contenuti dei prodotti AEM pertinenti per il contesto corrente
 
-   ![Contenuto e-commerce associato](/help/assets/CIF/associated-commerce-content.png)
+  ![Contenuto e-commerce associato](/help/assets/CIF/associated-commerce-content.png)
 
-* È stata migliorata l’interfaccia utente di selezione dei prodotti per una migliore esperienza utente, maggiore efficienza e supporto per cataloghi di prodotti complessi
+* È stata migliorata l’interfaccia utente per la selezione dei prodotti, per una migliore esperienza utente, una maggiore efficienza e il supporto per cataloghi di prodotti complessi
 
-   ![Nuovo selettore prodotti](/help/assets/CIF/product-picker.png)
+  ![Nuovo selettore prodotti](/help/assets/CIF/product-picker.png)
 
 * Rispetta la proprietà &quot;include_in_menu&quot; nel componente di navigazione
 
@@ -99,7 +99,7 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 * Nuova interfaccia utente per il selettore delle categorie per migliorare l’esperienza utente, l’efficienza e il supporto per cataloghi di prodotti complessi
 
-   ![Nuovo selettore categorie](/help/assets/CIF/category-picker.png)
+  ![Nuovo selettore categorie](/help/assets/CIF/category-picker.png)
 
 * Migliore supporto A11Y per i componenti core CIF
 
@@ -111,7 +111,7 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 * Errori CIF JS durante il passaggio di distribuzione di AEM CS
 
-* Correzione dell&#39;accesso ai prodotti non elaborati per gli elementi dell&#39;elenco prodotti mappati
+* Correggi l&#39;accesso ai prodotti non elaborati per gli elementi dell&#39;elenco di prodotti mappati
 
 ## Data di rilascio: luglio 2021
 
@@ -175,7 +175,7 @@ Esaminare i requisiti di sistema minimi nella tabella seguente per la versione C
 
 ### Novità {#what-is-new-april}
 
-* Supporto per la categoria UID: questo consente di sbloccare le integrazioni con soluzioni commerce di terze parti per i sistemi che utilizzano Stringhe per gli ID categoria
+* Supporto per la categoria UID: questo consente di sbloccare le integrazioni con e-commerce di terze parti per i sistemi che utilizzano Stringhe per gli ID categoria
 
 * Estensione AEM per il PWA Studi, incl. integrazione di esempio
 
