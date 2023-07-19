@@ -8,17 +8,15 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
+source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
 workflow-type: tm+mt
-source-wordcount: '1988'
+source-wordcount: '1968'
 ht-degree: 3%
 
 ---
 
 
 # Creare o personalizzare un tema per moduli adattivi {#introduction-to-theme}
-
-<span class="preview"> L’Adobe consiglia di utilizzare i Componenti core per [aggiungere un Forms adattivo a una pagina AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [creare un Forms adattivo indipendente](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -290,6 +288,7 @@ I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 1. Clic **Crea** > **Forms adattivo**.
 1. Seleziona un modello di Componenti core Forms adattivi e fai clic su **Successivo**. Il **Aggiungi proprietà** viene visualizzato
 1. Specifica la **Nome** modulo adattivo.
+
 
    >[!NOTE]
    >
