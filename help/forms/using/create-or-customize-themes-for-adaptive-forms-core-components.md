@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 3%
@@ -179,10 +179,9 @@ Allo stesso modo, è possibile utilizzare `variable.scss` file per impostare la 
 
 -->
 
->
+>[!NOTE]
 >
 > Quando uno stile viene definito sia a livello di tema che a livello di componente, lo stile definito a livello di componente ha la priorità.
-
 
 #### 3. Preparare il tema per la distribuzione {#generate-the-clientlib}
 
@@ -275,9 +274,10 @@ Dopo l’installazione del pacchetto, il tema è disponibile per la selezione.
 
 ![Libreria client di temi](/help/forms/using/assets/themeclientlibrary.png)
 
+>[!NOTE]
 >
 >
->In caso di difficoltà durante l’accesso alla finestra di dialogo di accesso in un’istanza di pubblicazione per installare il pacchetto tramite Gestione pacchetti, prova ad accedere tramite il seguente URL: `http://[Publish Server URL]:[PORT]/system/console`. Questo consente di accedere all’istanza Publish, continuando con il processo di installazione.
+> In caso di difficoltà durante l’accesso alla finestra di dialogo di accesso in un’istanza di pubblicazione per installare il pacchetto tramite Gestione pacchetti, prova ad accedere tramite il seguente URL: `http://[Publish Server URL]:[PORT]/system/console`. Questo consente di accedere all’istanza Publish, continuando con il processo di installazione.
 
 ## Applicare un tema a un modulo adattivo {#using-theme-in-adaptive-form}
 
