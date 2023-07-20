@@ -1,19 +1,15 @@
 ---
 title: Scadenza degli oggetti statici
-seo-title: Expiration of Static Objects
-description: Scopri come configurare l’AEM in modo che gli oggetti statici non scadano (per un periodo di tempo ragionevole).
-seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
-uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
+description: Scopri come configurare Adobe Experience Manager in modo che gli oggetti statici non scadano (per un periodo di tempo ragionevole).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -27,13 +23,13 @@ Questo ha il seguente impatto:
 * Ripartisce il carico delle richieste dall&#39;infrastruttura del server.
 * Aumenta le prestazioni di caricamento della pagina, poiché il browser memorizza nella cache gli oggetti nel browser.
 
-Le scadenze sono specificate dallo standard HTTP relativo alla &quot;scadenza&quot; dei file (vedi, ad esempio, il capitolo 14.21 del [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Questo standard utilizza l’intestazione per consentire ai client di memorizzare in cache gli oggetti fino a quando non vengono considerati obsoleti; tali oggetti vengono memorizzati in cache per il periodo di tempo specificato senza che venga eseguito alcun controllo dello stato sul server di origine.
+Le scadenze sono specificate dallo standard HTTP relativo alla &quot;scadenza&quot; dei file (ad esempio, vedi il capitolo 14.21 del [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Questo standard utilizza l’intestazione per consentire ai client di memorizzare in cache gli oggetti fino a quando non vengono considerati obsoleti; tali oggetti vengono memorizzati in cache per il periodo di tempo specificato senza che venga eseguito alcun controllo dello stato sul server di origine.
 
 >[!NOTE]
 >
->Questa configurazione è completamente separata (e non funzionerà per) da Dispatcher.
+>Questa configurazione è separata (e non funzionerà) da Dispatcher.
 >
->Lo scopo del Dispatcher è quello di memorizzare in cache i dati davanti all’AEM.
+>Lo scopo del Dispatcher è quello di memorizzare in cache i dati prima di Adobe Experience Manager (AEM).
 
 Tutti i file non dinamici che non cambiano nel tempo possono e devono essere memorizzati in cache. A seconda dell’ambiente, la configurazione del server HTTPD Apache potrebbe essere simile a una delle seguenti:
 
@@ -77,7 +73,7 @@ Tutti i file non dinamici che non cambiano nel tempo possono e devono essere mem
 
    Questo consente alla cache intermedia (ad esempio, la cache del browser) di memorizzare file CSS, JavaScript, PNG e GIF per un massimo di un giorno nelle cache client. Anche se questo esempio illustra le impostazioni globali per tutto ciò che segue `/content` e `/etc/designs`, dovresti renderlo più granulare.
 
-   A seconda della frequenza con cui il sito viene aggiornato, puoi anche considerare la memorizzazione in cache delle pagine di HTML. Un periodo di tempo ragionevole è di 1 ora:
+   A seconda della frequenza con cui il sito viene aggiornato, puoi anche considerare la memorizzazione in cache delle pagine di HTML. Un periodo di tempo ragionevole è di un’ora:
 
    ```xml
    <Location /content>

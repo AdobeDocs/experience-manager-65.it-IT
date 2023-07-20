@@ -1,18 +1,14 @@
 ---
 title: Modelli di app e componenti
-seo-title: App Templates and Components
 description: Segui questa pagina per scoprire di più sui modelli e i componenti dell’app. Fornisce informazioni dettagliate sulla struttura dei modelli.
-seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
-uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 1%
 
 ---
@@ -32,7 +28,7 @@ Ogni Modello presenta una selezione di componenti disponibili per l’uso.
 
 >[!NOTE]
 >
->Per scoprire come sviluppare l’applicazione AEM utilizzando CRXDE Lite, consulta [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Per informazioni su come sviluppare l’applicazione Adobe Experience Manager (AEM) utilizzando CRXDE Lite, consulta [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Un modello è la base di una pagina.
 
@@ -54,7 +50,7 @@ Un modello viene creato sotto un nodo di tipo **cq:Template**.
 * **jcr:title** - titolo del modello; viene visualizzato nella finestra di dialogo durante la creazione di una pagina.
 * **jcr:descrizione** : descrizione del modello; viene visualizzata nella finestra di dialogo durante la creazione di una pagina.
 
-Questo nodo contiene *a jcr:content (cq:PageContent)* che deve essere utilizzato come base per il nodo di contenuto delle pagine risultanti; questo fa riferimento, utilizzando *sling:resourceType*, il componente da utilizzare per il rendering del contenuto effettivo di una nuova pagina.
+Questo nodo contiene *a jcr:content (cq:PageContent)* che viene utilizzato come base per il nodo di contenuto delle pagine risultanti. Questo fa riferimento, utilizzando *sling:resourceType*, il componente da utilizzare per il rendering del contenuto effettivo di una nuova pagina.
 
 >[!NOTE]
 >

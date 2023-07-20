@@ -1,27 +1,23 @@
 ---
 title: Migrazione dei contenuti differita
-seo-title: Lazy Content Migration
-description: Scopri la Migrazione dei contenuti lazy in AEM 6.4.
-seo-description: Learn about Lazy Content Migration in AEM 6.4.
-uuid: f5b0aa84-5638-4708-9da2-89964d394632
+description: Scopri la migrazione dei contenuti Lazy in Adobe Experience Manager 6.4.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
-discoiquuid: d72b8844-d782-4b5b-8999-338217dbefb9
 docset: aem65
 feature: Upgrading
 exl-id: 946c7c2a-806b-4461-a38b-9c2e5ef1e958
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '687'
 ht-degree: 6%
 
 ---
 
 # Migrazione dei contenuti differita {#lazy-content-migration}
 
-Per motivi di compatibilità con le versioni precedenti, contenuti e configurazione in **/etc** e **/content** a partire da AEM 6.3 non verrà toccato o trasformato immediatamente con l’aggiornamento. Questo viene fatto per garantire che le dipendenze delle applicazioni del cliente da tali strutture rimangano intatte. La funzionalità relativa a queste strutture di contenuto è ancora la stessa anche se il contenuto in una AEM 6.5 preconfigurata sarebbe ospitato in un’altra posizione.
+Per motivi di compatibilità con le versioni precedenti, contenuti e configurazione in **/etc** e **/content** a partire da Adobe Experience Manager (AEM) 6.3 non verrà toccato o trasformato immediatamente con l’aggiornamento. Questo viene fatto per garantire che le dipendenze delle applicazioni del cliente da tali strutture rimangano intatte. La funzionalità relativa a queste strutture di contenuto è ancora la stessa anche se il contenuto in una AEM 6.5 preconfigurata sarebbe ospitato in un’altra posizione.
 
 Anche se non tutte queste posizioni possono essere trasformate automaticamente, si verificano alcuni ritardi `CodeUpgradeTasks` noto anche come Migrazione dei contenuti differita. Questo consente ai clienti di attivare tali trasformazioni automatiche riavviando l’istanza con questa proprietà di sistema:
 
@@ -29,9 +25,9 @@ Anche se non tutte queste posizioni possono essere trasformate automaticamente, 
 -Dcom.adobe.upgrade.forcemigration=true
 ```
 
-Questo causerà la `CodeUpgradeTasks` da eseguire durante la migrazione.
+Questo causa la `CodeUpgradeTasks` da eseguire durante la migrazione.
 
-Anche se l’obiettivo è un’esecuzione efficiente, questo processo di aggiornamento è sincrono e quindi comporta un tempo di inattività a seconda della quantità di contenuto da elaborare. Si consiglia di valutare i tempi di esecuzione in un ambiente stage prima di un sistema di produzione per pianificare un intervallo di manutenzione appropriato.
+Anche se l’obiettivo è un’esecuzione efficiente, questo processo di aggiornamento è sincrono e quindi comporta un tempo di inattività a seconda della quantità di contenuto da elaborare. L&#39;Adobe consiglia di valutare i tempi di esecuzione in un ambiente stage prima di un sistema di produzione per pianificare un intervallo di manutenzione appropriato.
 
 Poiché questo in genere richiede anche la regolazione dell’applicazione, questa attività deve essere eseguita insieme alla distribuzione dell’applicazione corrispondente.
 
@@ -43,8 +39,8 @@ Di seguito è riportato l&#39;elenco completo `CodeUpgradeTasks` introdotto al p
 | `Cq60MSMContentUpgrade` | &lt; 6.0 | Immediato | Rileva tutto `LiveRelationShips` da `VersionStorage` che sono stati eliminati e aggiungono la proprietà di esclusione all’elemento padre |
 | `Cq61CloudServicesContentUpgrade` | &lt; 6.1 | Immediato | Ristruttura i servizi cloud per la sicurezza per impostazione predefinita |
 | `Cq62ConfContentUpgrade` | &lt; 6.2 | Immediato | Rimuove il collegamento basato su proprietà da **/content** a **/conf** (sostituito dal meccanismo OSGi), genera la configurazione OSGi corrispondente |
-| `Cq62FormsContentUpgrade` | &lt; 6.2 | Immediato | A causa della gestione di merge_preserve, la regola di negazione sicura per impostazione predefinita sostituisce le autorizzazioni specificate, rendendo necessario riordinare il sistema durante l&#39;aggiornamento |
-| `CQ62Html5SmartFileUpgrade` | &lt; 6.2 | Immediato | Rileva i componenti che utilizzano il widget Html5SmartFile, cerca gli utilizzi del componente nel contenuto e ripristina la persistenza, spostando efficacemente il binario di un livello inferiore e non memorizzandolo a livello di componente. |
+| `Cq62FormsContentUpgrade` | &lt; 6.2 | Immediato | A causa della gestione di merge_preserve, la regola di negazione sicura per impostazione predefinita sostituisce le autorizzazioni specificate, rendendo necessario il riordinamento al momento dell’aggiornamento |
+| `CQ62Html5SmartFileUpgrade` | &lt; 6.2 | Immediato | Rileva i componenti utilizzando il widget Html5SmartFile, cerca gli utilizzi del componente nel contenuto e ripristina la persistenza, spostando efficacemente il binario di un livello inferiore e non memorizzandolo a livello di componente. |
 | `Cq62ProjectsCodeUpgrade` | &lt; 6.2 | Immediato | Sposta i progetti obsoleti da **/etc/projects** a **/content/projects** |
 | `Cq62TargetCampaignsContentUpgrade` | &lt; 6.2 | Immediato | Introduce un livello contenitore nella gerarchia (Aree) e regola i riferimenti. |
 | `Cq62TargetContentUpgrade` | &lt; 6.2 | Immediato | Imposta i nomi delle posizioni fisse per i componenti di destinazione. |
