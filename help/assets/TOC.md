@@ -6,10 +6,12 @@ audience: end-user
 user-guide-title: Guida di Assets
 breadcrumb-title: Guida di Assets
 user-guide-description: Crea, gestisci, elabora e distribuisci le risorse digitali.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+role: User
+feature: Asset Management
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
@@ -107,7 +109,7 @@ ht-degree: 46%
    + [Facet di ricerca](search-facets.md)
    + [Comprendere i concetti relativi ai metadati](metadata-concepts.md)
    + [Configurare la funzionalità metadati](metadata-config.md)
-   + [Schemi di metadati](metadata-schemas.md)
+   + [Schemi metadati](metadata-schemas.md)
    + [Write-back XMP alle rappresentazioni](xmp-writeback.md)
    + [Condivisione dei collegamenti delle risorse](link-sharing.md)
    + [Rapporti sulle risorse](asset-reports.md)
@@ -137,7 +139,7 @@ ht-degree: 46%
    + [Applicare una filigrana alle risorse](watermarking.md)
    + [Modelli di risorse](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configurare  [!DNL Assets]  con  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configurare [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Pubblicare risorse su [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Pubblicare cartelle in [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Pubblicare raccolte in [!DNL Brand Portal]](brand-portal-publish-collection.md)
@@ -147,7 +149,7 @@ ht-degree: 46%
    + [Abilita funzionalità frammento di contenuto per la tua istanza](content-fragments/content-fragments-configuration-browser.md)
    + [Modelli per frammenti di contenuto](content-fragments/content-fragments-models.md)
    + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
-   + [Varianti - Authoring dei contenuti di frammenti ](content-fragments/content-fragments-variations.md)
+   + [Varianti - Authoring dei contenuti di frammenti](content-fragments/content-fragments-variations.md)
    + [Contenuti associati a frammenti di contenuto](content-fragments/content-fragments-assoc-content.md)
    + [Metadati - Proprietà dei frammenti](content-fragments/content-fragments-metadata.md)
    + [Frammenti di contenuto - Considerazioni sull’eliminazione](content-fragments/content-fragments-delete.md)
