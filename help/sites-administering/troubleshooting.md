@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2f3168c9bd39926ee8cf86b48cc0daef9d783a1c
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '252'
 ht-degree: 3%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 3%
 # Utilizzo dei registri{#working-with-logs}
 
 Questa sezione include informazioni dettagliate sui registri disponibili per aiutarti a risolvere eventuali problemi.
+
+>[!NOTE]
+>
+>Per ulteriori informazioni sui registri, consulta:
+>
+>* [Manutenzione del registro di controllo dell’AEM](/help/sites-administering/operations-audit-log.md)
+>* [Utilizzo dei record di controllo e dei file di registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX registra i registri dettagliati. Dopo aver decompresso e avviato Quickstart, i registri sono disponibili nelle seguenti posizioni:
 
