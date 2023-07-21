@@ -1,17 +1,13 @@
 ---
 title: Hosting di due istanze dell’area di lavoro AEM Forms su un server
-seo-title: Hosting two AEM Forms workspace instances on one server
 description: Come gli amministratori LC possono personalizzare HTML WS per ospitare due istanze su un singolo server accessibile tramite URL diversi.
-seo-description: How LC administrators can customize HTML WS to host two instances on a single server accessible via different URLs.
-uuid: 0584f512-6b92-4418-b71c-93605cfa1927
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 L’installazione e le impostazioni predefinite di AEM Forms consentono di rendere disponibile una sola area di lavoro AEM Forms sul server. Tuttavia, potrebbe essere necessario ospitare due diverse istanze dell’area di lavoro di AEM Forms su un singolo server AEM Forms. Le due istanze sono accessibili da URL diversi.
 
-Gli amministratori di AEM Forms personalizzano l’area di lavoro per creare due URL diversi e rendere disponibili due aree di lavoro sullo stesso server. In questo articolo di personalizzazione, si presuppone che le due aree di lavoro siano accessibili da `https://'[server]:[port]'/lc/ws` e `https://'[server]:[port]':/lc/ws2`.
+Gli amministratori di AEM Forms personalizzano l’area di lavoro per creare due URL diversi e rendere disponibili due aree di lavoro sullo stesso server. In questo articolo di personalizzazione, si può presumere che le due aree di lavoro siano accessibili all’indirizzo `https://'[server]:[port]'/lc/ws` e `https://'[server]:[port]':/lc/ws2`.
 
 Per configurare l’area di lavoro di AEM Forms, segui la procedura riportata di seguito.
 

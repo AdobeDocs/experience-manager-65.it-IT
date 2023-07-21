@@ -1,19 +1,15 @@
 ---
 title: Personalizzazione dell’authoring delle pagine
-seo-title: Customizing Page Authoring
-description: AEM offre diversi meccanismi per personalizzare la funzionalità di authoring delle pagine
-seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
-uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
+description: Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la funzionalità di authoring delle pagine.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 1%
+source-wordcount: '1340'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 1%
 >
 >Questo documento descrive come personalizzare l’authoring delle pagine nella moderna interfaccia touch e non si applica all’interfaccia classica.
 
-AEM offre diversi meccanismi per personalizzare la funzionalità di authoring delle pagine (e [console](/help/sites-developing/customizing-consoles-touch.md)) della tua istanza di authoring.
+Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la funzionalità di authoring delle pagine (e [console](/help/sites-developing/customizing-consoles-touch.md)) della tua istanza di authoring.
 
 * Clientlibs
 
@@ -38,7 +34,7 @@ AEM offre diversi meccanismi per personalizzare la funzionalità di authoring de
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [Set di documentazione JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
+>Per ulteriori informazioni, consulta [Set di documentazione JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Questi possono essere utilizzati in molti modi per estendere la funzionalità di authoring delle pagine nell’istanza AEM. Di seguito è riportata una selezione (ad alto livello).
 
@@ -48,20 +44,20 @@ Questi possono essere utilizzati in molti modi per estendere la funzionalità di
 >
 >* Utilizzo e creazione di [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilizzo e creazione di [sovrapposizioni](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Struttura dell’interfaccia utente touch dell’AEM](/help/sites-developing/touch-ui-structure.md) per informazioni dettagliate sulle aree strutturali utilizzate per l’authoring delle pagine.
 >
 
 
 >[!CAUTION]
 >
->Tu ***deve*** non modificare nulla in `/libs` percorso.
+>***Do not*** modificare qualsiasi elemento in `/libs` percorso.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+>Il motivo è che il contenuto di `/libs` viene sovrascritto, la prossima volta che aggiorni l’istanza (e potrebbe anche essere sovrascritto quando applichi un hotfix o un feature pack).
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
->1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
+>1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
 >1. Apporta le modifiche in `/apps`
 
 ## Aggiungi nuovo livello (modalità) {#add-new-layer-mode}
@@ -72,7 +68,7 @@ Quando modifichi una pagina, sono disponibili vari [modalità](/help/sites-autho
 
 Un&#39;istanza AEM standard fornisce il livello MSM. Consente di accedere ai dati relativi a [gestione multisito](/help/sites-administering/msm.md) e lo evidenzia nel livello.
 
-Per vederlo in azione puoi modificare qualsiasi [Copia lingua We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (o qualsiasi altra pagina live copy) e seleziona la **Stato Live Copy** modalità.
+Per vederlo in azione, puoi modificare qualsiasi [Copia lingua We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (o qualsiasi altra pagina live copy) e seleziona la **Stato Live Copy** modalità.
 
 Puoi trovare la definizione del livello MSM (per riferimento) in:
 
@@ -80,7 +76,7 @@ Puoi trovare la definizione del livello MSM (per riferimento) in:
 
 ### Esempio di codice {#code-sample}
 
-Questo è un pacchetto di esempio che mostra come creare un nuovo livello (modalità), che è un nuovo livello per la vista MSM.
+Questo è un pacchetto di esempio che mostra come creare un livello (modalità), che è un nuovo livello per la vista MSM.
 
 CODICE SU GITHUB
 
@@ -91,11 +87,11 @@ Puoi trovare il codice di questa pagina su GitHub
 
 ## Aggiungi nuova categoria selezione al browser risorse {#add-new-selection-category-to-asset-browser}
 
-Il browser Risorse mostra risorse di vari tipi/categorie (ad esempio immagini, documenti, ecc.). Le risorse possono essere filtrate anche in base a queste categorie di risorse.
+Il browser Risorse mostra risorse di vari tipi/categorie (ad esempio, immagini e documenti). Le risorse possono essere filtrate anche in base a queste categorie di risorse.
 
 ### Esempio di codice {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` è un pacchetto di esempio che mostra come aggiungere un nuovo gruppo a asset finder. Questo esempio si connette a [Flickr](https://www.flickr.com)Il flusso pubblico di e li mostra nel pannello laterale.
+`aem-authoring-extension-assetfinder-flickr` è un pacchetto di esempio che mostra come aggiungere un gruppo a asset finder. Questo esempio si connette a [Flickr](https://www.flickr.com)Il flusso pubblico di e li mostra nel pannello laterale.
 
 CODICE SU GITHUB
 
@@ -106,11 +102,11 @@ Puoi trovare il codice di questa pagina su GitHub
 
 ## Filtrare le risorse {#filtering-resources}
 
-Durante l’authoring delle pagine, l’utente deve spesso selezionare tra le risorse (ad esempio pagine, componenti, risorse, ecc.). Può assumere la forma di un elenco, ad esempio, dal quale l’autore deve scegliere un elemento.
+Durante l’authoring delle pagine, l’utente deve spesso selezionare tra le risorse (ad esempio pagine, componenti e risorse). Può assumere la forma di un elenco, ad esempio, dal quale l’autore deve scegliere un elemento.
 
-Al fine di mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Ad esempio, se [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) Il componente viene utilizzato per consentire all’utente di selezionare il percorso di una particolare risorsa. I percorsi presentati possono essere filtrati nel modo seguente:
+Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Ad esempio, se [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) Il componente viene utilizzato per consentire all’utente di selezionare il percorso di una particolare risorsa. I percorsi presentati possono essere filtrati nel modo seguente:
 
-* Implementare il predicato personalizzato implementando [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) di rete.
+* Implementare il predicato personalizzato implementando [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) di rete.
 * Specifica un nome per il predicato e fai riferimento a tale nome quando utilizzi il `pathbrowser`.
 
 Per ulteriori dettagli sulla creazione di un predicato personalizzato, vedi [questo articolo](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -157,11 +153,11 @@ In un’installazione standard di AEM:
 
          * proprietà: `editorType`
 
-           Definisce il tipo di editor in linea che verrà utilizzato quando viene attivata la modifica diretta per quel componente; ad esempio, `text`, `textimage`, `image`, `title`.
+           Definisce il tipo di editor in linea utilizzato quando viene attivata la modifica diretta per quel componente; ad esempio, `text`, `textimage`, `image`, `title`.
 
-1. Ulteriori dettagli di configurazione dell’editor possono essere configurati utilizzando una `config` nodo contenente configurazioni e un ulteriore `plugin` per contenere i dettagli necessari della configurazione del plug-in.
+1. Ulteriori dettagli di configurazione dell’editor possono essere configurati utilizzando una `config` nodo contenente configurazioni e un `plugin` per contenere i dettagli necessari della configurazione del plug-in.
 
-   Di seguito è riportato un esempio di definizione delle proporzioni per il plug-in di ritaglio immagine del componente immagine. Tieni presente che a causa delle dimensioni dello schermo potenzialmente molto limitate, i rapporti di aspetto del ritaglio sono stati spostati nell’editor a schermo intero e possono essere visualizzati solo lì.
+   Di seguito è riportato un esempio di definizione delle proporzioni per il plug-in di ritaglio immagine del componente immagine. A causa del potenziale delle dimensioni limitate dello schermo, le proporzioni del ritaglio sono state spostate nell’editor a schermo intero e possono essere visualizzate solo lì.
 
    ```xml
    <cq:inplaceEditing
@@ -185,7 +181,7 @@ In un’installazione standard di AEM:
 
    >[!CAUTION]
    >
-   >Si noti che nei rapporti di ritaglio AEM, come stabilito dal `ratio` proprietà, sono definiti come **altezza/larghezza**. Questo differisce dalla definizione tradizionale di larghezza/altezza e viene fatto per motivi di compatibilità con le versioni precedenti. Gli utenti che creano i file non noteranno alcuna differenza, purché sia stata definita la `name` chiaramente, poiché questo è ciò che viene visualizzato nell’interfaccia utente.
+   >I rapporti di ritaglio AEM, fissati `ratio` proprietà, sono definiti come **altezza/larghezza**. Ciò differisce dalla definizione tradizionale di larghezza/altezza e viene fatto per ragioni di compatibilità con le versioni precedenti. Gli utenti che creano i file non noteranno alcuna differenza, purché sia stata definita la `name` chiaramente, poiché questo è ciò che viene visualizzato nell’interfaccia utente.
 
 #### Creazione di un nuovo editor locale {#creating-a-new-in-place-editor}
 
@@ -209,7 +205,7 @@ Per implementare un nuovo editor locale (nella libreria client):
 
 #### Esempio di codice per la creazione di un nuovo editor locale {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` è un pacchetto di esempio che mostra come creare un nuovo editor locale in AEM.
+`aem-authoring-extension-inplace-editor` è un pacchetto di esempio che mostra come creare un editor locale in AEM.
 
 CODICE SU GITHUB
 
@@ -243,9 +239,9 @@ Il flusso di lavoro preconfigurato, **Richiesta di attivazione**:
 
 * Appare automaticamente nel menu appropriato quando un autore di contenuti **non ha** i diritti di replica appropriati, ma **ha** iscrizione a DAM-Users e Authors.
 
-* In caso contrario, non verrà visualizzato nulla, poiché i diritti di replica sono stati rimossi.
+* In caso contrario, non viene visualizzato nulla, poiché i diritti di replica sono stati rimossi.
 
-Per avere un comportamento personalizzato durante tale attivazione, puoi sovrapporre **Richiesta di attivazione** workflow:
+Per avere un comportamento personalizzato su tale attivazione, puoi sovrapporre il **Richiesta di attivazione** workflow:
 
 1. In entrata `/apps` sovrapporre **Sites** procedura guidata:
 

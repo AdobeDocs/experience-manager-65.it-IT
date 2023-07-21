@@ -1,19 +1,15 @@
 ---
 title: Limitazioni per l’editor
-seo-title: Editor Limitations
 description: L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell’utilizzo dell’editor che per gli sviluppatori.
-seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
-uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 10%
+source-wordcount: '306'
+ht-degree: 11%
 
 ---
 
@@ -33,7 +29,7 @@ Quando [modifica di una pagina](/help/sites-authoring/editing-content.md), i col
 
 ### Strutturare le pagine {#structure-pages}
 
-Impossibile denominare le pagine `structure`. Pagine denominate `structure` non sarà modificabile nell’editor pagina.
+Impossibile denominare le pagine `structure`. Pagine denominate `structure` non sono modificabili nell’editor pagina.
 
 ## Limitazioni CSS {#css-limitations}
 
@@ -43,15 +39,15 @@ Con le interazioni dell’editor con CSS, uno sviluppatore potrebbe incontrare l
 
 Gli elementi con posizionamento assoluto possono causare problemi nella posizione della sovrapposizione.
 
-* In questo caso, assicurati che le dimensioni dell’elemento con posizionamento assoluto siano corrette, perché l’editor creerà una sovrapposizione con le stesse dimensioni.
+* In questo caso, assicurati che le dimensioni dell’elemento con posizionamento assoluto siano corrette perché l’editor crea una sovrapposizione con le stesse dimensioni.
 
 ### unità vh {#vh-units}
 
-`vh` non sono supportate perché l’altezza dell’iframe deve essere regolata automaticamente dall’AEM.
+`vh` non sono supportate perché l’altezza dell’iframe deve essere regolata automaticamente da Adobe Experience Manager (AEM).
 
 ### Immagini di sfondo fisse {#fixed-background-images}
 
-È possibile che le immagini di sfondo fisse non vengano visualizzate come fisse durante lo scorrimento poiché sono incorporate in un iframe.
+È possibile che le immagini di sfondo fisse non vengano visualizzate come fisse durante lo scorrimento perché sono incorporate in un iframe.
 
 * Selezione **Visualizza pagina come pubblicata** nelle azioni della barra dell’intestazione, la pagina viene visualizzata correttamente.
 
@@ -59,7 +55,7 @@ Gli elementi con posizionamento assoluto possono causare problemi nella posizion
 
 L&#39;altezza 100% non è supportata nell&#39;elemento body di una pagina.
 
-* È possibile trovare una soluzione alternativa per implementare un corpo a schermo intero &quot;stirando&quot; l’elemento body come segue:
+* È possibile trovare una soluzione alternativa per implementare un corpo a schermo intero &quot;allungando&quot; l’elemento body come segue:
 
 ```xml
 body {

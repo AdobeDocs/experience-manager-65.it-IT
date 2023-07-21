@@ -1,30 +1,26 @@
 ---
 title: Esternalizzazione degli URL
-seo-title: Externalizing URLs
 description: Externalizer è un servizio OSGI che consente di trasformare in modo programmatico un percorso di risorsa in un URL esterno e assoluto
-seo-description: The Externalizer is an OSGI service that allows you to programmatically transform a resource path into an external and absolute URL
-uuid: 65bcc352-fc8c-4aa0-82fb-1321a035602d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
 # Esternalizzazione degli URL{#externalizing-urls}
 
-Nell&#39;AEM, la **Esternalizzatore** è un servizio OSGI che consente di trasformare in modo programmatico un percorso di risorsa (ad esempio, `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) inserendo un prefisso DNS nel percorso.
+In Adobe Experience Manager (AEM), il **Esternalizzatore** è un servizio OSGI che consente di trasformare in modo programmatico un percorso di risorsa (ad esempio, `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) inserendo un prefisso DNS nel percorso.
 
 Poiché un’istanza non può conoscere il proprio URL visibile esternamente se è in esecuzione dietro un livello web e poiché a volte è necessario creare un collegamento al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
 
-Questa pagina spiega come configurare **Esternalizzatore** e come utilizzarlo. Per ulteriori informazioni, consultare [JavaScript](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Questa pagina spiega come configurare **Esternalizzatore** e come utilizzarlo. Per ulteriori informazioni, consultare [JavaScript](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 
@@ -50,10 +46,10 @@ Per definire una mappatura di dominio per **Esternalizzatore** servizio:
 
    Dove:
 
-   * **schema** è solitamente http o https, ma può anche essere ftp, ecc.
+   * **schema** è http o https, ma può anche essere ftp e così via.
 
-      * utilizzare https per applicare i collegamenti https, se desiderato
-      * verrà utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
+      * se necessario, utilizza https per applicare i collegamenti https
+      * viene utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
 
    * **server** è il nome host (può essere un nome di dominio o un indirizzo ip).
    * **porta** (facoltativo) è il numero della porta.
@@ -61,7 +57,7 @@ Per definire una mappatura di dominio per **Esternalizzatore** servizio:
 
    Esempio: `production https://my.production.instance`
 
-   I seguenti nomi di mappatura sono predefiniti e devono sempre essere impostati in quanto AEM si basa su di essi:
+   I seguenti nomi di mappatura sono predefiniti e devono essere impostati perché AEM si basa su di essi:
 
    * `local` : l’istanza locale
    * `author` - DNS del sistema di authoring
@@ -69,7 +65,7 @@ Per definire una mappatura di dominio per **Esternalizzatore** servizio:
 
    >[!NOTE]
    >
-   >Una configurazione personalizzata consente di aggiungere una nuova categoria, ad esempio `production`, `staging` o anche sistemi esterni non AEM come `my-internal-webservice`. È utile evitare di codificare tali URL in posizioni diverse nella base di codice di un progetto.
+   >Una configurazione personalizzata consente di aggiungere una categoria, ad esempio `production`, `staging`, o anche sistemi esterni non AEM come `my-internal-webservice`. È utile evitare di codificare tali URL in posizioni diverse nella base di codice di un progetto.
 
 1. Clic **Salva** per salvare le modifiche.
 
@@ -129,4 +125,4 @@ Questa sezione mostra alcuni esempi di come **Esternalizzatore** Il servizio pu�
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. Puoi trovare altri esempi nella sezione [JavaScript](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+1. Puoi trovare altri esempi nella sezione [JavaScript](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
