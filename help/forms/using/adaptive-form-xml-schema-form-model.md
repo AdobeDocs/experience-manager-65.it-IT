@@ -5,14 +5,16 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 5%
+source-wordcount: '1130'
+ht-degree: 6%
 
 ---
 
 # Creazione di moduli adattivi tramite lo schema XML {#creating-adaptive-forms-using-xml-schema}
+
+<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Prerequisiti {#prerequisites}
 
@@ -290,7 +292,7 @@ Quando si fa doppio clic su un elemento in Content Finder, in una finestra popup
 
 ![Campo bindref di un elemento schema XML](assets/dblclick.png)
 
-bindRef</code> mostra l’associazione tra un elemento della struttura e un elemento o un attributo in uno schema.
+Il <code>bindRef</code> mostra l’associazione tra un elemento della struttura e un elemento o un attributo in uno schema.
 
 >[!NOTE]
 >

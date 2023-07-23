@@ -9,14 +9,16 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4586'
 ht-degree: 0%
 
 ---
 
 # Best practice per l’utilizzo dei moduli adattivi {#best-practices-for-working-with-adaptive-forms}
+
+<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Panoramica {#overview}
 
@@ -259,7 +261,7 @@ Di seguito sono riportate alcune best practice per la localizzazione dei moduli 
 * Eventuali modifiche, come l’aggiunta di un nuovo componente o l’applicazione di uno script in un modulo localizzato, non vengono localizzate automaticamente. Pertanto, è necessario finalizzare un modulo prima di localizzarlo per evitare più cicli di localizzazione.
 * Utilizzare `afAcceptLang` parametro di richiesta per ignorare le impostazioni locali del browser ed eseguire il rendering del modulo nelle impostazioni locali specificate. Ad esempio, il seguente URL forzerà il rendering del modulo nelle impostazioni locali giapponesi, indipendentemente dalle impostazioni locali specificate nell’impostazione del browser:
 
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * AEM Forms attualmente supporta la localizzazione dei contenuti dei moduli adattivi nelle lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). Tuttavia, è possibile aggiungere il supporto per nuove lingue per i moduli adattivi in fase di esecuzione. Per ulteriori informazioni, consulta [Supporto di nuove lingue per la localizzazione di moduli adattivi](/help/forms/using/supporting-new-language-localization.md).
 
@@ -269,7 +271,7 @@ Di seguito sono riportate alcune best practice per la localizzazione dei moduli 
 
 Puoi configurare un’ulteriore istanza del server AEM Forms che si trova dietro il firewall in un’area protetta. Puoi utilizzare questa istanza per:
 
-* **Elaborazione batch**: processi ricorrenti o pianificati in batch con carico elevato. Ad esempio, la stampa di istruzioni, la generazione di corrispondenze e l&#39;utilizzo di servizi basati su documenti come PDF Generator, Output e Assembler.
+* **Elaborazione batch**: processi ricorrenti o pianificati in batch con carico elevato. Ad esempio, la stampa di istruzioni, la generazione di corrispondenze e l&#39;utilizzo di servizi per la gestione dei documenti come PDF Generator, Output e Assembler.
 * **Memorizzazione dei dati PII**: salva i dati PII sul server di elaborazione. Non è necessario se utilizzi già un provider di archiviazione personalizzato per l’archiviazione dei dati PII.
 
 ### Spostamento di un progetto in un altro ambiente {#moving-project-to-another-environment}
@@ -312,7 +314,7 @@ In un ambiente di produzione, si consiglia di non archiviare i dati del modulo i
 
 * **Memorizzazione dei dati di invio**: se utilizzi l’archivio di invio del portale dei moduli, devi implementare un SPI personalizzato per memorizzare i dati di invio in un database. Consulta [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md) per un esempio di integrazione.
 
-   È inoltre possibile scrivere un&#39;azione di invio personalizzata che memorizzi i dati del modulo e l&#39;allegato in un archivio protetto. Consulta [Scrittura dell’azione di invio personalizzata per i moduli adattivi](/help/forms/using/custom-submit-action-form.md) per ulteriori informazioni.
+  È inoltre possibile scrivere un&#39;azione di invio personalizzata che memorizzi i dati del modulo e l&#39;allegato in un archivio protetto. Consulta [Scrittura dell’azione di invio personalizzata per i moduli adattivi](/help/forms/using/custom-submit-action-form.md) per ulteriori informazioni.
 
 * **Lunghezza ID bozza**: quando salvi un modulo adattivo come bozza, viene generato un ID bozza per identificare la bozza in modo univoco. Il valore minimo per la lunghezza del campo ID bozza è di 26 caratteri. L&#39;Adobe consiglia di impostare la lunghezza dell&#39;ID bozza su 26 o più caratteri.
 

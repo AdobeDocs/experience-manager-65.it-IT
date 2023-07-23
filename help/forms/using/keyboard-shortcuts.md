@@ -10,14 +10,16 @@ topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1204'
 ht-degree: 3%
 
 ---
 
 # Scelte rapide da tastiera per AEM Forms {#aem-forms-keyboard-shortcuts}
+
+<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzate con l’Editor di moduli adattivi, l’Editor temi, il Browser contenuti e la Gestione della corrispondenza per i sistemi operativi Windows e Macintosh.
 
@@ -53,7 +55,6 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 >* Windows: Ctrl+clic sui componenti richiesti.
 >* MAC OS: Comando+clic sui componenti richiesti.
 >
-
 
 ## Editor temi  {#themeeditor}
 

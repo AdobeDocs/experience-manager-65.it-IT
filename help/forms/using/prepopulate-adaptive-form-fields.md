@@ -10,14 +10,16 @@ discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2248'
 ht-degree: 0%
 
 ---
 
 # Precompilare i campi del modulo adattivo{#prefill-adaptive-form-fields}
+
+<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -137,7 +139,7 @@ Per i campi il cui modello è lo schema XML, i dati vengono precompilati nel `af
 
 >[!NOTE]
 >
->Si consiglia di non utilizzare campi non associati nei pannelli associati (pannelli con `bindRef` creato trascinando i componenti dalla barra laterale o dalla scheda Origini dati). Potrebbe causare la perdita di dati di questi campi non associati. Inoltre, si consiglia di assegnare nomi univoci ai campi nel modulo, in particolare per i campi non associati.
+>Si consiglia di non utilizzare campi non associati nei pannelli associati (pannelli con `bindRef` creato trascinando i componenti dalla scheda Sidekick o Origini dati). Potrebbe causare la perdita di dati di questi campi non associati. Inoltre, si consiglia di assegnare nomi univoci ai campi nel modulo, in particolare per i campi non associati.
 
 #### Esempio senza afData e wrapper afBoundData {#an-example-without-afdata-and-afbounddata-wrapper}
 
