@@ -4,7 +4,7 @@ description: Scopri come creare o aggiungere facilmente un modulo adattivo alla 
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 4992416c0deec7eab51920fd9c7e1e2b10887ea5
+source-git-commit: 600dcc52829ff2c5e54176bda7631845ef24f986
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 1%
@@ -45,17 +45,17 @@ L’utilizzo di Adaptive Form Container nell’editor di pagine AEM consente di 
 
 Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
-* **Aggiungere un modulo adattivo personalizzato a una pagina di AEM Sites:** Crea un nuovo modulo da zero, adattandolo in modo specifico alle tue esigenze e preferenze di progettazione.
+* **[Aggiungere un modulo adattivo personalizzato a una pagina di AEM Sites:](#create-an-adaptive-form-in-sites-editor)** Crea un nuovo modulo da zero, adattandolo in modo specifico alle tue esigenze e preferenze di progettazione.
 
-* **Aggiungere un modulo adattivo personalizzato a un frammento di esperienza:** Estendi la portata dei moduli aggiungendoli ai frammenti esperienza AEM per consentirne il riutilizzo su più pagine o siti.
+* **[Aggiungere un modulo adattivo personalizzato a un frammento di esperienza:](#create-an-adaptive-form-in-experience-fragment)** Estendi la portata dei moduli aggiungendoli ai frammenti esperienza AEM per consentirne il riutilizzo su più pagine o siti.
 
-* **Aggiungere più moduli a una pagina o a un frammento di esperienza di AEM Sites:**  Aggiungere più moduli a una pagina per fornire più scelte agli utenti in base alle loro preferenze e requisiti. Questi possono essere una combinazione di forme nuove di zecca da zero e moduli esistenti.
-
-* **Convertire un modulo adattivo in frammento di esperienza:** Converti un modulo adattivo aggiunto a una pagina AEM Sites in un frammento di esperienza per riutilizzare il modulo su più pagine AEM Sites.
+* **[Convertire un modulo adattivo in frammento di esperienza:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** Converti un modulo adattivo aggiunto a una pagina AEM Sites in un frammento di esperienza per riutilizzare il modulo su più pagine AEM Sites.
 
 * **Creare e aggiungere moduli basati su modelli approvati a una pagina AEM Sites:** Utilizza modelli preapprovati per creare rapidamente moduli in linea con le linee guida di branding e gli standard di progettazione della tua organizzazione. L’opzione è disponibile solo per Forms adattivo creato con il componente Forms Editor adattivo o Forms adattivo - Incorpora.
 
 * **Aggiungere moduli esistenti a una pagina AEM Sites:** È possibile integrare facilmente i moduli già creati nei siti Web, consentendo ai visitatori di interagire direttamente con essi. L’opzione è disponibile solo per Forms adattivo creato con il componente Forms Editor adattivo o Forms adattivo - Incorpora.
+
+* **Aggiungere più moduli a una pagina o a un frammento di esperienza di AEM Sites:**  Aggiungere più moduli a una pagina per fornire più scelte agli utenti in base alle loro preferenze e requisiti. Questi possono essere una combinazione di forme nuove di zecca da zero e moduli esistenti.
 
 ## Considerazioni {#consideration}
 
