@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1861'
 ht-degree: 5%
 
 ---
@@ -727,6 +727,20 @@ Per limitare i valori accettabili per un componente modulo adattivo, puoi aggiun
   </tr>
  </tbody>
 </table>
+
+
+
+## Abilita dati conformi allo schema {#enablig-schema-compliant-data}
+
+Per consentire al modulo adattivo di generare i dati conformi allo schema all’invio del modulo, effettua le seguenti operazioni:
+
+1. Vai alla console web di Experience Manager all’indirizzo `https://server:host/system/console/configMgr`.
+1. Individua **[!UICONTROL Configurazione del canale web per la comunicazione di moduli adattivi e interattivi]**.
+1. Tocca per aprire la configurazione in modalità di modifica.
+1. Seleziona la **[!UICONTROL Genera dati conformi allo schema]** casella di controllo.
+1. Salva le impostazioni.
+
+![configurazione di un modulo adattivo e di un canale web di comunicazione interattiva](/help/forms/using/assets/af-ic-web-channel-configuration.png)
 
 ## Costrutti non supportati  {#non-supported-constructs}
 

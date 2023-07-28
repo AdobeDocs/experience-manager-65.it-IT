@@ -4,9 +4,9 @@ seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credenti
 description: Passaggi per integrare l’integrazione di Salesforce con AEM Forms utilizzando il flusso delle credenziali del client OAuth 2.0
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
-source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
+source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '424'
 ht-degree: 2%
 
 ---
@@ -15,37 +15,27 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM 6.5 | Questo articolo |
 
+Puoi utilizzare le credenziali client OAuth 2.0 per integrare AEM Forms con l’applicazione Salesforce. Le credenziali client OAuth 2.0 sono un metodo standard e sicuro per la comunicazione diretta senza il coinvolgimento dell’utente.
 
-Per integrare AEM Forms con l’applicazione Salesforce, viene utilizzato il flusso delle credenziali client OAuth 2.0. Si tratta di un metodo standardizzato e sicuro per la comunicazione diretta senza il coinvolgimento degli utenti. In questo flusso, l’applicazione client (Modulo AEM) scambia le credenziali client, definite nell’applicazione connessa Salesforce, per ottenere un token di accesso. Le credenziali client richieste includono la chiave consumer e il segreto consumer.
+![Flusso di lavoro durante l’impostazione della comunicazione tra l’applicazione AEM Forms e Salesforce](/help/forms/using/assets/salesforce-workflow.png)
 
-## Vantaggi dell’integrazione di Salesforce con AEM Forms tramite il flusso delle credenziali client OAuth 2.0 {#advantages-of-integrating-saleforce-aemforms}
+AEM Forms scambia le credenziali del client (chiave consumer e segreto consumer), definite nell’applicazione connessa Salesforce, per ottenere un token di accesso.
 
-AEM Forms supporta l’integrazione di Salesforce con il flusso del codice di autorizzazione, oltre al flusso delle credenziali del client OAuth 2.0. Nel flusso Codice di autorizzazione OAuth 2.0, l’applicazione client (AEM Forms) ottiene l’accesso alle risorse per conto di un utente Salesforce, con alcune limitazioni:
+L’utilizzo delle credenziali del client OAuth 2.0 per l’autenticazione rispetto all’autenticazione del flusso del codice di autorizzazione offre diversi vantaggi:
 
-* Sono consentite al massimo cinque connessioni per utente. Ulteriori connessioni revocano automaticamente le connessioni meno recenti.
-* Se un utente viene disattivato, perde l’accesso o aggiorna una password, la configurazione dell’origine dati AEM non funziona più.
+* L&#39;autenticazione delle credenziali client OAuth 2.0 consente più di cinque connessioni per utente.
+* La configurazione dell’origine dati dell’AEM continua a funzionare su disattivazione, modifiche di accesso, aggiornamento della password per un utente AEM.
 
 ## Prerequisiti {#prerequisites}
 
-Per recuperare e recuperare i dati tra gli ambienti Salesforce e AEM è necessario soddisfare alcuni prerequisiti prima di procedere ulteriormente:
+Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambiente AEM:
 
-+++ **Configurare un’applicazione connessa Saleforce con un flusso di credenziali client e un utente solo API**
+* Creare un [App connessa Salesforce con flusso di credenziali client OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) e un utente solo API per la tua organizzazione e ottenere la chiave del consumatore e il segreto del consumatore per l’app.
 
-È obbligatorio creare un’app Salesforce connessa con un flusso di credenziali client OAuth 2.0 e un utente solo API per la tua organizzazione. Per i passaggi dettagliati, consulta l’articolo [Flusso delle credenziali client OAuth 2.0 per l&#39;integrazione server-to-server](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5). Questi passaggi ti aiutano a ottenere la chiave del consumatore e il segreto del consumatore.
-
->[!NOTE]
->
-> Assicurati di annotare la chiave del consumatore e il segreto del consumatore in quanto sono necessari durante la creazione di una configurazione di origine dati AEM.
-
-+++
-
-+++ **Creare un file Swagger**
-
-Swagger è un set open-source di regole, specifiche e strumenti per sviluppare e descrivere le API RESTful. [Creare un file Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) prima di integrare Salesforce con AEM Forms.
-
+* Assicurati che il file Swagger sia configurato in modo appropriato per corrispondere alle API della tua organizzazione. In alternativa, puoi scegliere di [creare un file Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) da zero, personalizzato per l’utilizzo nell’ambiente AEM.
 >[!NOTE]
 >
 > AEM 6.5 supporta solo le specifiche dei file Swagger 2.0.
