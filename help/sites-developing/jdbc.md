@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 061af6f3318d68b50c5f606ad50db7a39da0f4fd
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Il plug-in determina automaticamente quali pacchetti importare e li elenca nel f
 
 * Indicare nel POM che i pacchetti sono facoltativi. Utilizzare questa soluzione quando la connessione JDBC non richiede effettivamente i membri del pacchetto. Utilizzare l&#39;elemento Import-Package per indicare pacchetti facoltativi come nell&#39;esempio seguente:
 
-   `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
+  `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
 * Racchiudi i file JAR che contengono i pacchetti in un bundle OSGi che esporta i pacchetti e distribuisci il bundle. Utilizzare questa soluzione quando i membri del pacchetto sono necessari durante l&#39;esecuzione del codice.
 
 La conoscenza del codice sorgente consente di decidere quale soluzione utilizzare. Puoi anche provare entrambe le soluzioni ed eseguire test per convalidarle.
@@ -86,7 +86,7 @@ La conoscenza del codice sorgente consente di decidere quale soluzione utilizzar
 
 I seguenti collegamenti aprono le pagine di download di alcuni prodotti di database più diffusi:
 
-* [Microsoft® SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
+* [Microsoft® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 * [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
@@ -170,6 +170,7 @@ L&#39;esempio di codice JSP seguente ottiene un&#39;istanza dell&#39;origine dat
 >[!NOTE]
 >
 >Se il metodo getDataSource genera un&#39;eccezione perché l&#39;origine dati non è stata trovata, verificare che la configurazione del servizio del pool di connessioni sia corretta. Verificare i nomi, i valori e i tipi di dati delle proprietà.
+>
 
 <!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]

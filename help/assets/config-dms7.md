@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 48540664fa80ac7ecc94a2d9dc56682ceaf67206
+source-git-commit: 78842fb50d5aa5e5c22801389713cb3c69cac4bf
 workflow-type: tm+mt
-source-wordcount: '6491'
+source-wordcount: '6489'
 ht-degree: 3%
 
 ---
@@ -236,7 +236,7 @@ Quando si esegue la modalità Dynamic Medie - Scene7 su AEM, al momento la funzi
 
 1. Il giorno **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** , selezionare la casella di controllo per le due impostazioni seguenti:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Se attivata, questa impostazione memorizza in cache i risultati delle autorizzazioni per 120 secondi o due minuti (impostazione predefinita) per il salvataggio.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Se attivata, questa impostazione memorizza in cache i risultati delle autorizzazioni per 120 secondi (due minuti) (impostazione predefinita) per il salvataggio.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` : se selezionata, questa impostazione convalida l’accesso di un utente che visualizza l’anteprima delle risorse tramite Dynamic Medie Image Server.
 
    ![Abilitare le impostazioni dell’elenco di controllo degli accessi in modalità Dynamic Medie - Scene7](/help/assets/assets-dm/acl.png)
@@ -703,7 +703,7 @@ L’impostazione Scene7 Upload Connection sincronizza le risorse Experience Mana
 
    Il **[!UICONTROL Numero di connessioni]** l&#39;impostazione controlla il numero massimo di connessioni HTTP consentite, ad Experience Manager il caricamento su Dynamic Medie; in genere, è sufficiente il valore predefinito di dieci connessioni.
 
-   Il **[!UICONTROL Timeout processo attivo]** determina il tempo di attesa per la pubblicazione delle risorse Dynamic Medie caricate nel server di consegna. Per impostazione predefinita, questo valore è di 2100 secondi o 35 minuti.
+   Il **[!UICONTROL Timeout processo attivo]** determina il tempo di attesa per la pubblicazione delle risorse Dynamic Medie caricate nel server di consegna. Questo valore è 2100 secondi (35 minuti) per impostazione predefinita.
 
    Per la maggior parte dei casi d’uso è sufficiente impostare 2100.
 
