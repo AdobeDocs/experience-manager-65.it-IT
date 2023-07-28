@@ -7,12 +7,13 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
+
 
 # Utenti del servizio in Adobe Experience Manager (AEM) {#service-users-in-aem}
 
@@ -79,7 +80,12 @@ Sia che si applichi il controllo degli accessi durante la ristrutturazione dei c
 
 ## Utenti e mappature dei servizi {#service-users-and-mappings}
 
-Se quanto sopra non va a buon fine, Sling 7 offre un servizio di mappatura degli utenti del servizio, che consente di configurare una mappatura bundle-to-user e due metodi API corrispondenti: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` e ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` che restituiscono un risolutore sessione/risorsa con i privilegi solo di un utente configurato. Questi metodi presentano le seguenti caratteristiche:
+Se quanto sopra non va a buon fine, Sling 7 offre un servizio di mappatura degli utenti del servizio, che consente di configurare una mappatura bundle-to-user e due metodi API corrispondenti:
+
+* [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
+* [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
+
+I metodi restituiscono un risolutore sessione/risorsa con i privilegi solo di un utente configurato. Questi metodi presentano le seguenti caratteristiche:
 
 * Consentono di mappare i servizi agli utenti
 * Consentono di definire gli utenti dei servizi secondari
@@ -145,7 +151,7 @@ Quando aggiungi il file .content.xml corrispondente al contenuto del bundle, ass
 
 ## Aggiunta di una modifica alla configurazione ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti, creare una configurazione di fabbrica per ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` servizio. Per mantenere modulare questa configurazione, è possibile fornire utilizzando [Meccanismo di correzione Sling](https://issues.apache.org/jira/browse/SLING-3578). Il modo consigliato per installare tali configurazioni con il bundle è utilizzare [Caricamento iniziale del contenuto Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Per aggiungere una mappatura dal servizio agli utenti di sistema corrispondenti, creare una configurazione di fabbrica per [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) servizio. Per mantenere modulare questa configurazione, è possibile fornire utilizzando [Meccanismo di correzione Sling](https://issues.apache.org/jira/browse/SLING-3578). Il modo consigliato per installare tali configurazioni con il bundle è utilizzare [Caricamento iniziale del contenuto Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Crea una sottocartella SLING-INF/content sotto la cartella src/main/resources del bundle
 1. In questa cartella, crea un file denominato org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml con il contenuto della configurazione di fabbrica (incluse tutte le mappature utente dei servizi secondari). Esempio:
