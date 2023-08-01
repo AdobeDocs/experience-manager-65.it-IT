@@ -1,6 +1,6 @@
 ---
 title: Distribuire elementi multimediali dinamici
-description: Scopri come distribuire le risorse Dynamic Media
+description: Scopri come distribuire risorse Dynamic Medie, come video e immagini, alle pagine web.
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,20 +11,20 @@ docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '319'
 ht-degree: 13%
 
 ---
 
 # Distribuire elementi multimediali dinamici{#delivering-dynamic-media-assets}
 
-Il modo in cui distribuisci le risorse Dynamic Media, sia video che immagini, dipende da come viene implementato il sito web.
+Il modo in cui distribuisci le risorse Dynamic Medie, sia video che immagini, dipende da come viene implementato il sito web.
 
-Dynamic Media offre diverse opzioni:
+Dynamic Medie offre diverse opzioni:
 
-* Se il tuo sito web è ospitato su Adobe Experience Manager, allora desideri aggiungere le risorse Dynamic Media direttamente alla tua pagina.
+* Se il tuo sito web è ospitato su Adobe Experience Manager, allora desideri aggiungere le risorse Dynamic Medie direttamente alla tua pagina.
 * Se il tuo sito web non è sull’Experience Manager, puoi scegliere:
 
    * Incorporare il video o l’immagine sul sito web.
@@ -37,7 +37,7 @@ Dynamic Media offre diverse opzioni:
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
-* [Aggiungere risorse Dynamic Media alle pagine web](/help/assets/adding-dynamic-media-assets-to-pages.md)
+* [Aggiungere risorse Dynamic Medie alle pagine web](/help/assets/adding-dynamic-media-assets-to-pages.md)
 * [Incorporare il visualizzatore di video o immagini in una pagina web](/help/assets/embed-code.md)
 * [Attivazione della protezione hotlinking in Dynamic Media](/help/assets/hotlink-protection.md)
 * [Collegamento degli URL all’applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md)
@@ -47,8 +47,8 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 * [Utilizzo di set di regole per la trasformazione degli URL](/help/assets/using-rulesets-to-transform-urls.md)
 
 
-## Distribuzione HTTP/2 delle risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## Distribuzione HTTP/2 delle risorse Dynamic Medie {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager ora supporta la distribuzione di tutti i contenuti Dynamic Media (immagini e video) tramite HTTP/2. In altre parole, è disponibile un URL pubblicato o un codice di incorporamento per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui browser e server comunicano, consentendo tempi di risposta e di caricamento migliori per tutte le risorse Dynamic Media.
+Experience Manager ora supporta la distribuzione di tutti i contenuti Dynamic Medie (immagini e video) tramite HTTP/2. In altre parole, è disponibile un URL pubblicato o un codice di incorporamento per l’immagine o il video da integrare con qualsiasi applicazione che accetta una risorsa in hosting. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui browser e server comunicano, consentendo tempi di risposta e di caricamento migliori per tutte le risorse Dynamic Medie.
 
 Per ulteriori informazioni, consulta [Domande frequenti sulla distribuzione HTTP/2 dei contenuti](/help/sites-administering/scene7-http2faq.md).

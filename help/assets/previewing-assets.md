@@ -1,6 +1,6 @@
 ---
 title: Visualizzare l’anteprima delle risorse
-description: Scopri come visualizzare in anteprima le risorse in Dynamic Media.
+description: Scopri come visualizzare in anteprima le risorse, come video e immagini, in Dynamic Medie applicando predefiniti per immagini e predefiniti per visualizzatori.
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1380'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Un visualizzatore è una raccolta di varie impostazioni o *predefiniti*, ad esem
 
 Oltre a utilizzare la funzione di anteprima dedicata per video, set 360 gradi e set di immagini, puoi anche visualizzare in anteprima una risorsa utilizzando i predefiniti visualizzatore che hai creato. In alternativa, utilizzate i predefiniti immagine per visualizzare in anteprima le rappresentazioni delle immagini.
 
-* [Applicare predefiniti immagine](/help/assets/image-presets.md)
+* [Applica predefiniti immagine](/help/assets/image-presets.md)
 * [Applica predefiniti visualizzatore](/help/assets/viewer-presets.md)
 
 >[!NOTE]

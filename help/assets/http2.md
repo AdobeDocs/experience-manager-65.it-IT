@@ -1,6 +1,6 @@
 ---
 title: Distribuzione di contenuti HTTP2
-description: HTTP/2 migliora il modo in cui browser e server comunicano, consentendo un trasferimento più rapido delle informazioni e riducendo la quantità di potenza di elaborazione necessaria.
+description: Scopri come HTTP/2 migliora il modo in cui browser e server comunicano, consentendo un trasferimento più rapido delle informazioni e riducendo la quantità di potenza di elaborazione necessaria.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,9 +10,9 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
-source-git-commit: a78de999992d4ab2fc63b5f7e796aa0d5527cb26
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '735'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ Adobe è orgogliosa di annunciare la disponibilità della distribuzione HTTP/2 d
 
 >[!NOTE]
 >
->Questa funzione richiede l’utilizzo della rete CDN preconfigurata fornita in bundle con Adobe Experience Manager Dynamic Media. Qualsiasi altra rete CDN personalizzata non è supportata con questa funzione.
+>Questa funzione richiede l’utilizzo della rete CDN preconfigurata fornita in bundle con Adobe Experience Manager Dynamic Medie. Qualsiasi altra rete CDN personalizzata non è supportata con questa funzione.
 
 ## Cos’è HTTP/2? {#what-is-http}
 
@@ -35,7 +35,7 @@ Il seguente sito web descrive HTTP/2 e i relativi vantaggi in modo breve e sempl
 
 ## Quali sono i vantaggi principali del passaggio a HTTP/2 per la distribuzione dei contenuti? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-Il miglioramento delle prestazioni può variare notevolmente. Si basa su molti fattori come il codice del sito web, il modo in cui utilizzi Dynamic Media, il dispositivo del consumatore, lo schermo e la posizione.
+Il miglioramento delle prestazioni può variare notevolmente. Si basa su molti fattori come il codice del sito web, il modo in cui utilizzi Dynamic Medie, il dispositivo del consumatore, lo schermo e la posizione.
 
 I test eseguiti da Adobe hanno prodotto i seguenti risultati:
 
@@ -51,14 +51,14 @@ La dimostrazione seguente illustra la differenza tra il caricamento di HTTP/1 e 
 Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 * Utilizza HTTPS sicuro per le richieste rich media.
-* Utilizza la rete CDN (Content Delivery Network) fornita dall’Adobe come parte della licenza Dynamic Media.
+* Utilizza la rete CDN (Content Delivery Network) fornita dall’Adobe come parte della licenza Dynamic Medie.
 * Utilizza un dominio dedicato (non aziendale: h.assetsadobe#.com).
 
-   Se disponi già di un dominio dedicato, puoi dare il consenso tramite l’Adobe di Assistenza clienti.
+  Se disponi già di un dominio dedicato, puoi dare il consenso tramite l’Adobe di Assistenza clienti.
 
-   Se non disponi di un dominio dedicato, Adobe pianifica di pianificare la transizione a HTTP/2 nel 2018.
+  Se non disponi di un dominio dedicato, Adobe pianifica di pianificare la transizione a HTTP/2 nel 2018.
 
-## Qual è il processo per abilitare HTTP/2 per il mio account Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
+## Qual è il processo per abilitare HTTP/2 per il mio account Dynamic Medie? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
 La richiesta di passare a HTTP/2 viene avviata automaticamente, ma non eseguita automaticamente.
 
@@ -70,7 +70,8 @@ La richiesta di passare a HTTP/2 viene avviata automaticamente, ma non eseguita 
       1. Tutti i domini da trasferire su HTTP/2.
       1. Verifica di utilizzare HTTPS sicuro per le richieste rich media.
       1. Verifica di utilizzare la rete CDN tramite Adobe e di non essere gestito con una relazione diretta.
-      1. Verifica di utilizzare un dominio dedicato. Se utilizzi Dynamic Media, utilizzi un dominio dedicato.
+      1. Verifica di utilizzare un dominio dedicato. Se utilizzi Dynamic Medie, utilizzi un dominio dedicato.
+
    1. L’Assistenza clienti ti aggiunge alla lista di attesa dei clienti HTTP/2 in base all’ordine in cui sono state inviate le richieste.
    1. Quando Adobe è pronto a gestire la richiesta, l’Assistenza clienti ti contatta per coordinare la transizione e impostare una data di scadenza.
    1. Riceverai una notifica dopo il completamento e potrai verificare se la transizione a HTTP2 è andata a buon fine.
@@ -78,7 +79,6 @@ La richiesta di passare a HTTP/2 viene avviata automaticamente, ma non eseguita 
       Poiché il browser non dichiara questo fatto, è necessario scaricare un’estensione.
 
       Per Firefox e Chrome, esiste un’estensione denominata &quot;HTTP/2 and SPDY Indicator&quot;. I browser supportano solo http/2 in modo sicuro, pertanto è necessario chiamare un URL con https per verificare. Se http/2 è supportato, è indicato dall’estensione sotto forma di un simbolo di Flash blu e di un’intestazione &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
-
 
 ## Quando è prevista la transizione a HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
