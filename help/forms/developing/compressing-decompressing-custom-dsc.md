@@ -2,9 +2,9 @@
 title: Comprimere e decomprimere file utilizzando un’istanza di AEM Forms su JEE DSC personalizzata
 description: Scopri come comprimere e decomprimere i file utilizzando un DSC personalizzato di AEM Forms su JEE
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ## Conoscenze preliminari {#prerequisites}
 
-Esperienza con AEM Forms nella gestione dei processi JEE, nella programmazione Java di base e nella creazione di componenti personalizzati.
+Esperienza con AEM Forms nella gestione dei processi JEE, nella programmazione Java™ di base e nella creazione di componenti personalizzati.
 
 **Altri prodotti aggiuntivi richiesti**
 
-Editor Java come [Eclipse](https://www.eclipse.org/) o [IDE Netbeans](https://netbeans.apache.org/)
+Editor Java™ come [Eclipse](https://www.eclipse.org/) o [IDE Netbeans](https://netbeans.apache.org/)
 
 ## Livello utente {#user-level}
 
@@ -187,7 +187,7 @@ Il file component.xml viene visualizzato qui:
 
 ## Creazione pacchetti e distribuzione del componente {#packaging-deploying-component}
 
-1. Compila il progetto Java e crea un file .JAR.
+1. Compila il progetto Java™ e crea un file .JAR.
 1. Distribuisci il componente (file .JAR) in AEM Forms sul runtime JEE tramite Workbench.
 1. Avvia il servizio da Workbench (vedi la figura seguente).
 
@@ -213,7 +213,7 @@ Puoi utilizzare questo servizio ZIP per i seguenti casi d’uso:
 
 * Trova tutti i file in una determinata cartella e restituisce i file come documento compresso.
 
-* Fornisci un file ZIP contenente una serie di documenti PDF che possono essere estesi in lettura dopo averli decompressi. Questo richiede il modulo AEM Forms on JEE Reader Extensions.
+* Fornisci un file ZIP contenente diversi documenti PDF che possono essere estesi in lettura dopo averli decompressi. Questo richiede il modulo AEM Forms on JEE Reader Extensions.
 
 * Fornisci un file ZIP contenente un tipo di documento eterogeneo che può essere decompresso e convertito come documento PDF utilizzando il servizio Genera PDF.
 

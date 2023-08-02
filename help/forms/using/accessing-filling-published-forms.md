@@ -1,18 +1,14 @@
 ---
 title: Accesso e compilazione di moduli pubblicati
-seo-title: Accessing and filling published forms
 description: Forms Portal fornisce agli sviluppatori web componenti per creare e personalizzare un portale di moduli su siti web creati con Adobe Experience Manager (AEM).
-seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
-uuid: 44731604-5d97-46fa-baa9-0c020c634fa7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -60,7 +56,7 @@ La ricerca full-text consente di trovare ed elencare i moduli in base alle parol
 
 Finestra di dialogo di ricerca avanzata
 
-La funzione Ricerca avanzata consente di cercare i moduli in base alle proprietà specificate. Questo fornisce risultati più specifici rispetto alla ricerca full-text. La ricerca avanzata include ricerche basate su tag, proprietà (ad esempio Autore, Descrizione e Titolo), data di modifica e testo completo.
+La funzione Ricerca avanzata consente di cercare i moduli in base alle proprietà specificate. Questo fornisce un risultato più specifico rispetto alla ricerca full-text. La ricerca avanzata include ricerche basate su tag, proprietà (ad esempio Autore, Descrizione e Titolo), data di modifica e testo completo.
 
 L’elenco mostra i moduli basati sui parametri di ricerca. Ogni modulo incluso nei risultati della ricerca viene visualizzato con un&#39;icona, che è collegata al modulo associato. È possibile fare clic sull&#39;icona per aprire e utilizzare il modulo associato.
 
@@ -76,7 +72,7 @@ Ogni modulo contiene informazioni della Guida che consentono a un utente di comp
 
 #### Bozze e invio {#drafts-and-submission}
 
-L’utente può salvare una bozza di un modulo facendo clic sul pulsante Salva. In questo modo l’utente può lavorare su un modulo per un certo periodo di tempo prima di inviarlo.
+È possibile salvare una bozza di modulo facendo clic su **Salva**. In questo modo l&#39;utente può lavorare su un modulo per un certo periodo di tempo prima di inviarlo.
 
 I dati compilati nel modulo (inclusi gli allegati) vengono salvati come bozza sul server. La bozza di un modulo può essere salvata un numero qualsiasi di volte. Il modulo salvato viene visualizzato nella scheda Bozze del componente Bozza e invio della pagina.
 
@@ -92,9 +88,9 @@ Componente Bozze e invii
 
 ## Avviare un nuovo modulo utilizzando i dati del modulo inviati {#start-a-new-form-using-submitted-form-data}
 
-Alcuni moduli devono essere compilati e inviati molto spesso. Ad esempio, il modulo per la presentazione della dichiarazione dei redditi individuale viene inviato ogni anno. In questi casi, mentre alcune informazioni cambiano ogni volta che si compila il modulo, la maggior parte di esse, come i dati personali e familiari, non cambiano. Tuttavia, è necessario compilare nuovamente l&#39;intero modulo da zero.
+Alcuni moduli devono essere compilati e inviati spesso. Ad esempio, il modulo per la presentazione della dichiarazione dei redditi individuale viene inviato ogni anno. In questi casi, mentre alcune informazioni cambiano ogni volta che si compila il modulo, la maggior parte di esse, come i dati personali e familiari, non cambiano. Tuttavia, è necessario compilare nuovamente l&#39;intero modulo da zero.
 
-AEM Forms può contribuire a ottimizzare l’esperienza di compilazione dei moduli e a ridurre in modo significativo il tempo necessario per compilare e inviare nuovamente un modulo. Gli utenti finali possono avviare un nuovo modulo utilizzando i dati di un modulo inviato. Questa funzionalità è incorporata nel [Componente Bozze e invii](../../forms/using/draft-submission-component.md). Quando si aggiungono bozze e il componente Invio alla pagina del portale dei moduli e la si pubblica, gli utenti finali troveranno un’opzione nelle schede Forms e Forms bozze inviate per avviare un nuovo modulo utilizzando i dati di un modulo inviato. L’immagine seguente evidenzia tale opzione.
+AEM Forms può contribuire a ottimizzare l’esperienza di compilazione dei moduli e a ridurre in modo significativo il tempo necessario per compilare e inviare nuovamente un modulo. Gli utenti finali possono avviare un nuovo modulo utilizzando i dati di un modulo inviato. Questa funzionalità è incorporata nel [Componente Bozze e invii](../../forms/using/draft-submission-component.md). Quando si aggiungono bozze e componenti Invio alla pagina del portale dei moduli e la si pubblica, gli utenti finali visualizzano un&#39;opzione nelle schede Forms e Forms bozza inviati per avviare un nuovo modulo utilizzando i dati di un modulo inviato. L’immagine seguente evidenzia tale opzione.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 
