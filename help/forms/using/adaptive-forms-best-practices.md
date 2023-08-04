@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
 workflow-type: tm+mt
-source-wordcount: '4586'
+source-wordcount: '4738'
 ht-degree: 0%
 
 ---
@@ -103,6 +103,7 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
 Puoi creare un modulo adattivo utilizzando i modelli di modulo abilitati in **Browser configurazioni**. Per attivare i modelli di modulo, vedere [Creazione di un modello di modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
 
 I modelli di modulo possono essere caricati anche da pacchetti di moduli adattivi creati in un altro computer di authoring. I modelli di modulo sono resi disponibili mediante l&#39;installazione di [pacchetti aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it). Alcune delle best practice consigliate sono:
+
 * Il **nosamplecontent** La modalità di esecuzione è consigliata solo per i nodi di authoring e non di pubblicazione.
 * L’authoring di risorse come moduli adattivi, temi, modelli o configurazioni cloud viene eseguito solo sui nodi di authoring, che possono essere pubblicati sui nodi di pubblicazione configurati.
 Per ulteriori informazioni, consulta [Pubblicazione e annullamento della pubblicazione di moduli e documenti](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
@@ -154,6 +155,39 @@ L’editor di regole fornisce un editor visivo e un editor di codice per la scri
 
 * Gli autori di moduli adattivi potrebbero dover scrivere codice JavaScript per creare una logica di business in un modulo. Anche se JavaScript è potente ed efficace, è probabile che possa compromettere le aspettative di sicurezza. Pertanto, devi assicurarti che l’autore del modulo sia un utente fidato e che esistano processi per rivedere e approvare il codice JavaScript prima che un modulo venga messo in produzione. L’amministratore può limitare l’accesso all’editor di regole ai gruppi di utenti in base al loro ruolo o funzione. Consulta [Concedere l’accesso all’editor di regole a specifici gruppi di utenti](/help/forms/using/rule-editor-access-user-groups.md).
 * È possibile utilizzare le espressioni nelle regole per rendere dinamici i moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per ulteriori informazioni sulle espressioni e sulle relative best practice, consulta [Espressioni modulo adattivo](/help/forms/using/adaptive-form-expressions.md).
+
+* L’Adobe consiglia di utilizzare operazioni sincrone JavaScript anziché asincrone durante la creazione di regole con l’editor di regole. L&#39;uso di operazioni asincrone è fortemente sconsigliato. Tuttavia, se ti trovi in una situazione in cui le operazioni asincrone sono inevitabili, è essenziale implementare le funzioni di chiusura JavaScript. In questo modo, puoi proteggere efficacemente da potenziali condizioni di concorrenza, garantendo prestazioni ottimali alle tue implementazioni di regole e mantenendo la stabilità nell’intero processo.
+
+  Ad esempio, supponiamo che sia necessario recuperare dati da un’API esterna e quindi applicare alcune regole in base a tali dati. Utilizziamo una chiusura per gestire la chiamata API asincrona e ci assicuriamo che le regole vengano applicate dopo il recupero dei dati. Di seguito è riportato un codice di esempio:
+
+  ```JavaScript
+       function fetchDataFromAPI(apiEndpoint, callback) {
+        // Simulate asynchronous API call with setTimeout
+        setTimeout(() => {
+          // Assuming the API call is successful, we receive some data
+          const data = {
+            someValue: 42,
+          };
+          // Invoke the callback with the fetched data
+          callback(data);
+        }, 2000); // Simulate a 2-second delay for the API call
+      }
+      // Rule implementation using Closure
+      function ruleImplementation(apiEndpoint) {
+        // Using a closure to handle the asynchronous API call and rule application
+        // say you have set this value in street field inside address panel
+        var streetField = address.street;
+        fetchDataFromAPI(apiEndpoint, (data) => {
+          streetField.value = data.someValue;
+        });
+      }
+      // Example usage of the rule implementation
+      const apiEndpoint = "https://example-api.com/data";
+      ruleImplementation(apiEndpoint);
+  ```
+
+  In questo esempio, `fetchDataFromAPI` simula una chiamata API asincrona utilizzando `setTimeout`. Una volta recuperati i dati, richiama la funzione di callback fornita, che è la chiusura per gestire la successiva applicazione della regola. Il `ruleImplementation` contiene la logica della regola.
+
 
 ### Utilizzo dei temi {#working-with-themes}
 
