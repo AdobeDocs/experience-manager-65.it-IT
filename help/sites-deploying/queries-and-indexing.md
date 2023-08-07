@@ -8,10 +8,10 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
 workflow-type: tm+mt
-source-wordcount: '2619'
-ht-degree: 1%
+source-wordcount: '3033'
+ht-degree: 2%
 
 ---
 
@@ -131,6 +131,84 @@ L’indice Lucene dispone delle seguenti opzioni di configurazione:
 * Il **includePropertyTypes** che definisce il sottoinsieme dei tipi di proprietà inclusi nell&#39;indice.
 * Il **excludePropertyNames** proprietà che definisce un elenco di nomi di proprietà, ovvero proprietà che devono essere escluse dall&#39;indice.
 * Il **reindicizzare** contrassegna che quando è impostato su **true**, attiva una reindicizzazione completa del contenuto.
+
+### Ricerca full-text {#understanding-fulltext-search}
+
+La documentazione in questa sezione si applica ad Apache Lucene, Elasticsearch, nonché agli indici full-text, ad esempio, PostgreSQL, SQLite, MySQL. L’esempio seguente è per AEM / Oak / Lucene.
+
+<b>Dati da indicizzare</b>
+
+Il punto di partenza sono i dati che devono essere indicizzati. Prendi ad esempio i seguenti documenti:
+
+| <b>ID documento</b> | <b>Percorso</b> | <b>Testo completo</b> |
+| --- | --- | --- |
+| 100 | /content/rubik | &quot;Rubik è un marchio finlandese.&quot; |
+| 200 | /content/rubiksCube | &quot;Il cubo di Rubik è stato inventato nel 1974.&quot; |
+| 300 | /content/cube | &quot;Un cubo è un oggetto tridimensionale.&quot; |
+
+
+<b>Indice invertito</b>
+
+Il meccanismo di indicizzazione suddivide il testo completo in parole chiamate &quot;token&quot; e crea un indice denominato &quot;indice invertito&quot;. Questo indice contiene l&#39;elenco dei documenti in cui viene visualizzato per ogni parola.
+
+Parole molto brevi, comuni (chiamate anche &quot;parole non significative&quot;) non sono indicizzate. Tutti i token vengono convertiti in minuscolo e viene applicato lo stemming.
+
+Osserva caratteri speciali come *&quot;-&quot;* non sono indicizzati.
+
+| <b>Token</b> | <b>ID documento</b> |
+| --- | --- |
+| 194 | ..., 200,... |
+| brand | ..., 100,... |
+| cubo | ..., 200, 300,... |
+| dimensione | 300 |
+| finlandese | ..., 100,... |
+| inventare | 200 |
+| oggetto | ..., 300,... |
+| rubik | .., 100, 200,... |
+
+L&#39;elenco dei documenti è ordinato. Questa operazione risulta utile quando si esegue una query.
+
+<b>Ricerca in corso</b>
+
+Di seguito è riportato un esempio di query. Notare che tutti i caratteri speciali (come *&#39;*) sono stati sostituiti da uno spazio:
+
+```
+/jcr:root/content//element(\*; cq:Page)`[` jcr:contains('Rubik s Cube')`]`
+```
+
+Le parole vengono tokenizzate e filtrate nello stesso modo in cui vengono indicizzate (le parole a carattere singolo vengono rimosse, ad esempio). In questo caso, la ricerca è per:
+
+```
++:fulltext:rubik +:fulltext:cube
+```
+
+L&#39;indice consulterà quindi l&#39;elenco dei documenti per tali parole. Se sono presenti molti documenti, gli elenchi possono essere molto grandi. Ad esempio, supponiamo che contengano quanto segue:
+
+
+| <b>Token</b> | <b>ID documento</b> |
+| --- | --- |
+| rubik | 10, 100, 200, 1000 |
+| cubo | 30, 200, 300, 2000 |
+
+
+Lucene girerà avanti e indietro tra i due elenchi (o round robin) `n` elenchi, durante la ricerca `n` word):
+
+* Leggi nel &quot;rubik&quot; ottiene la prima voce: trova 10
+* Lettura nel &quot;cubo&quot; ottiene la prima voce `>` = 10. 10 non è stato trovato, quindi quello successivo è 30.
+* Leggi in &quot;rubik&quot; ottiene la prima voce `>` = 30: trova 100.
+* Lettura nel &quot;cubo&quot; ottiene la prima voce `>` = 100: trova 200.
+* Leggi in &quot;rubik&quot; ottiene la prima voce `>` = 200. 200. Quindi il documento 200 corrisponde a entrambi i termini. Questo viene ricordato.
+* Leggi nella &quot;rubik&quot; ottiene la prossima voce: 1000.
+* Lettura nel &quot;cubo&quot; ottiene la prima voce `>` = 1000: trova 2000.
+* Leggi in &quot;rubik&quot; ottiene la prima voce `>` = 2000: fine dell’elenco.
+* Finalmente possiamo smettere di cercare.
+
+L’unico documento trovato che contiene entrambi i termini è 200, come nell’esempio seguente:
+
+| 200 | /content/rubiksCube | &quot;Il cubo di Rubik è stato inventato nel 1974.&quot; |
+| --- | --- | --- |
+
+Quando vengono trovate più voci, queste vengono ordinate in base al punteggio.
 
 ### Indice della proprietà Lucene {#the-lucene-property-index}
 
@@ -280,7 +358,7 @@ In casi quali il caricamento di parole non significative in cui è necessario ca
 
 ### Indice Solr {#the-solr-index}
 
-L&#39;indice Solr ha lo scopo di effettuare ricerche full-text, ma può anche essere utilizzato per indicizzare la ricerca in base al percorso, alle restrizioni di proprietà e alle restrizioni di tipo primario. Ciò significa che l’indice Solr in Oak può essere utilizzato per qualsiasi tipo di query JCR.
+L&#39;indice Solr è una ricerca full-text, ma può anche essere utilizzato per indicizzare la ricerca in base al percorso, alle restrizioni di proprietà e alle restrizioni di tipo primario. Ciò significa che l’indice Solr in Oak può essere utilizzato per qualsiasi tipo di query JCR.
 
 L’integrazione nell’AEM avviene a livello di archivio, in modo che Solr sia uno dei possibili indici che possono essere utilizzati in Oak, la nuova implementazione dell’archivio fornita con AEM.
 
@@ -366,7 +444,7 @@ AEM 6.1 integra anche due strumenti di indicizzazione presenti in AEM 6.0 come p
 1. **Spiega query**, strumento progettato per aiutare gli amministratori a comprendere come vengono eseguite le query;
 1. **Gestore indice Oak**, interfaccia utente Web per la gestione degli indici esistenti.
 
-Ora puoi raggiungerli andando in **Strumenti - Operazioni - Dashboard - Diagnosi** dalla schermata di benvenuto dell’AEM.
+Ora puoi raggiungerli andando in **Strumenti - Operazioni - Dashboard - Diagnosi** dalla schermata iniziale dell’AEM.
 
 Per ulteriori informazioni su come utilizzarli, vedi [Documentazione del dashboard operazioni](/help/sites-administering/operations-dashboard.md).
 
