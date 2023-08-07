@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
+source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1975'
 ht-degree: 3%
 
 ---
@@ -20,8 +20,9 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | Questo articolo |
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+| AEM 6.5 | Questo articolo |
+
 
 **Si applica a:** ❎ dei componenti core del modulo adattivo ✅ [Componenti di base per moduli adattivi](/help/forms/using/themes.md).
 
@@ -51,7 +52,7 @@ Un tema è un pacchetto che include il file CSS, i file JavaScript e le risorse 
 
 ## Creare un tema
 
-AEM Forms 6.5 fornisce i temi elencati di seguito per Forms adattivo basato su Componenti core.
+AEM Forms 6.5 fornisce i temi elencati di seguito per i Componenti core basati su Adaptive Forms.
 
 * [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
@@ -332,9 +333,10 @@ Per rimuovere i temi inutilizzati o indesiderati:
 
 ## Consulta anche
 
-* [Creare un modulo adattivo basato su Componenti core](create-an-adaptive-form-core-components.md)
+* [Creare componenti core basati sul modulo adattivo](create-an-adaptive-form-core-components.md)
 * [Utilizza l’editor di regole per aggiungere un comportamento dinamico al modulo](rule-editor.md)
 * [Creazione o personalizzazione di temi per Forms adattivo basato su Componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
