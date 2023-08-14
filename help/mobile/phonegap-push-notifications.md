@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Essere in grado di avvisare immediatamente gli utenti della tua app mobile di Adobe Experience Manager (AEM) con notifiche importanti è fondamentale per il valore di un’app mobile e delle sue campagne di marketing. Qui sono descritti i passaggi da seguire per consentire all’app di ricevere notifiche push. Scopri anche come configurare e inviare push da AEM Mobile all’app installata sul telefono. Inoltre, questa sezione descrive come configurare [Collegamenti profondi](#deeplinking) alle notifiche push.
+Essere in grado di avvisare immediatamente gli utenti della tua app mobile Adobe Experience Manager (AEM) con notifiche importanti è fondamentale per il valore di un’app mobile e delle relative campagne di marketing. Qui sono descritti i passaggi da seguire per consentire all’app di ricevere notifiche push. Scopri anche come configurare e inviare push da AEM Mobile all’app installata sul telefono. Inoltre, questa sezione descrive come configurare [Collegamenti profondi](#deeplinking) alle notifiche push.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Per utilizzare i numeri APN, è necessario un **Certificato** file (un file con 
 
 >[!NOTE]
 >
->Google sta sostituendo GCM con un servizio simile denominato Firebase Cloud Messaging (FCM). Per ulteriori informazioni su FCM, fare clic su [qui](https://developers.google.com/cloud-messaging/faq).
+>Google sta sostituendo GCM con un servizio simile denominato Firebase Cloud Messaging (FCM). Per ulteriori informazioni su FCM, fare clic su [qui](https://firebase.google.com/docs/cloud-messaging/).
 
 Vai alla pagina Google [qui](https://developer.android.com/google/gcm/index.html) per acquisire familiarità con Google Cloud Messaging per Android™.
 
@@ -223,7 +223,7 @@ targetRootDirectory=&quot;www&quot; type=&quot;notificationsconfig&quot;/>
 
 Le librerie client delle notifiche push devono essere aggiunte all’app seguendo questi passaggi:
 
-In CRXDE Lite:
+In CRXDE Liti:
 
 1. Accedi a */etc/designs/phonegap/&lt;app name=&quot;&quot;>/clientlibsall.*
 1. Fare doppio clic sulla sezione di incorporamento nel riquadro delle proprietà.
@@ -259,10 +259,10 @@ Prima di creare e distribuire sul dispositivo mobile configurato, devi configura
 1. Crea i gruppi di autorizzazione appropriati per le notifiche push.
 1. Accedi all’AEM come utente appropriato, quindi fai clic sulla scheda App.
 1. Fai clic sull’app.
-1. Trova il riquadro Gestisci Cloud Services e fai clic sulla matita per modificare le configurazioni cloud.
+1. Trova il riquadro Gestisci Cloud Service e fai clic sulla matita per modificare le configurazioni cloud.
 1. Seleziona Amazon SNS Connection, Pushwoosh Connection o Adobe Mobile Services come configurazione della notifica.
 1. Immettere le proprietà del provider e fare clic su Invia per salvarle, quindi su Fine. In questa fase non vengono verificati in remoto, tranne nel caso in cui sia presente AMS.
-1. Ora dovresti vedere la configurazione appena immessa nella sezione Gestisci Cloud Services.
+1. Ora dovresti vedere la configurazione appena immessa nella sezione Gestisci Cloud Service.
 
 ### Passaggio 6: creare e distribuire l’app {#step-build-and-deploy-the-app}
 
@@ -321,7 +321,7 @@ Crea la notifica, aggiungi il testo di un pulsante e il percorso del collegament
 >
 >Per accedere al riquadro Notifica push nel dashboard, segui i passaggi indicati di seguito.
 
-1. Fai clic sul pulsante Modifica nell’angolo in alto a destra della sezione **Gestisci Cloud Services** affiancare.
+1. Fai clic sul pulsante Modifica nell’angolo in alto a destra della sezione **Gestisci Cloud Service** affiancare.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 

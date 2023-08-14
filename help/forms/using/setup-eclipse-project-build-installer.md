@@ -1,17 +1,13 @@
 ---
 title: Creare l’app Android di AEM Forms
-seo-title: Build the AEM Forms Android app
 description: Passaggi per configurare il progetto Android Studio e creare il file .apk per l’app AEM Forms per Android
-seo-description: Steps to set up the Android Studio project and build the .apk file for the AEM Forms app for Android
-uuid: 2e140aaf-5be5-4d5d-9941-9d1f4bf2debd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 6%
 
 ---
@@ -99,7 +95,7 @@ Esegui la procedura seguente per generare il file .apk utilizzando Android Studi
 
 ## Usa Bridge di debug Android {#build-android-debug-bridge}
 
-Una volta generato il file .apk, esegui il seguente comando per installare l’applicazione su un dispositivo Android utilizzando [Bridge di debug Android](https://developer.android.com/tools/help/adb.html).
+Una volta generato il file .apk, esegui il seguente comando per installare l’applicazione su un dispositivo Android utilizzando [Bridge di debug Android](https://developer.android.com/tools/adb).
 
 **Utenti Windows:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
