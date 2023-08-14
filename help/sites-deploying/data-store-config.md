@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3550'
 ht-degree: 2%
 
 ---
@@ -139,6 +139,10 @@ Sono disponibili le seguenti opzioni di configurazione:
 
 L’AEM può essere configurato per memorizzare i dati nel servizio di archiviazione semplice (S3) di Amazon. Utilizza il `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID per la configurazione.
 
+>[!NOTE]
+>
+>AEM 6.5 supporta la memorizzazione di dati in Amazon S3, tuttavia il supporto non è esteso alla memorizzazione di dati in altre piattaforme, i cui fornitori possono avere le proprie implementazioni delle API S3 di Amazon.
+
 Per abilitare la funzionalità di archiviazione dati di S3, è necessario scaricare e installare un feature pack contenente il connettore S3 Datastore. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e scarica la versione più recente dalle versioni 1.10.x del feature pack (ad esempio, com.adobe.granite.oak.s3connector-1.10.0.zip). È inoltre necessario scaricare e installare il service pack AEM più recente, come indicato nella [Note sulla versione di AEM 6.5](/help/release-notes/release-notes.md) pagina.
 
 >[!NOTE]
@@ -230,8 +234,8 @@ Puoi utilizzare il file di configurazione con le opzioni descritte di seguito.
 
 | Chiave | Descrizione | Predefiniti | Obbligatorio |
 | --- | --- | --- | --- |
-| accessKey | ID chiave di accesso per l’utente IAM con accesso al bucket. |  | Sì, quando non si utilizzano i ruoli IAM. |
-| secretKey | Chiave di accesso segreta per l’utente IAM con accesso al bucket. |  | Sì, quando non si utilizzano i ruoli IAM. |
+| accessKey | ID chiave di accesso per l’utente IAM con accesso al bucket. | | Sì, quando non si utilizzano i ruoli IAM. |
+| secretKey | Chiave di accesso segreta per l’utente IAM con accesso al bucket. | | Sì, quando non si utilizzano i ruoli IAM. |
 | cacheSize | Dimensione (in byte) della cache locale. | 64GB | No. |
 | connectionTimeout | Imposta il tempo di attesa (in millisecondi) prima del timeout durante la creazione iniziale di una connessione. | 10000 | No. |
 | maxCachedBinarySize | I file binari con dimensione minore o uguale a questo valore (in byte) vengono memorizzati nella cache della memoria. | 17408 (17 KB) | No. |
@@ -239,10 +243,10 @@ Puoi utilizzare il file di configurazione con le opzioni descritte di seguito.
 | maxErrorRetry | Imposta il numero massimo di tentativi per le richieste non riuscite (recuperabili). | 3 | No. |
 | minRecordLength | Dimensione minima (in byte) di un oggetto da archiviare nell&#39;archivio dati. | 16384 | No. |
 | percorso | Percorso locale dell’archivio dati dell’AEM. | `crx-quickstart/repository/datastore` | No. |
-| proxyHost | Impostare l&#39;host proxy opzionale tramite cui il client si connette. |  | No. |
-| proxyPort | Impostare la porta proxy opzionale attraverso la quale il client si connette. |  | No. |
-| s3Bucket | Nome del bucket S3. |  | Sì |
-| s3EndPoint | Endpoint API REST S3. |  | No. |
+| proxyHost | Impostare l&#39;host proxy opzionale tramite cui il client si connette. | | No. |
+| proxyPort | Impostare la porta proxy opzionale attraverso la quale il client si connette. | | No. |
+| s3Bucket | Nome del bucket S3. | | Sì |
+| s3EndPoint | Endpoint API REST S3. | | No. |
 | s3Region | Area in cui risiede il bucket. Vedi questo [pagina](https://docs.aws.amazon.com/general/latest/gr/s3.html) per ulteriori dettagli. | Area in cui è in esecuzione l’istanza di AWS. | No. |
 | socketTimeout | Impostare la quantità di tempo di attesa (in millisecondi) per il trasferimento dei dati su una connessione aperta stabilita prima che la connessione venga interrotta per timeout e chiusa. | 50000 | No. |
 | stagingPurgeInterval | Intervallo (in secondi) per la rimozione dei caricamenti completati dalla cache di staging. | 300 | No. |
@@ -391,7 +395,8 @@ Per configurare la replica senza binari con S3, sono necessari i seguenti passag
    >
    >    * Per le versioni Oak **1.2.x** utilizzare Oak-run **1.2.12 o successiva**
    >    * Per le versioni Oak **più recente di quanto sopra**, utilizza la versione di Oak-run che corrisponde al core Oak dell’installazione AEM.
-
+   >
+   >
 
 1. Infine, convalida la configurazione. Per eseguire la convalida, cerca un file univoco aggiunto all’archivio dati da ogni archivio che lo condivide. Il formato dei file è `repository-[UUID]`, dove l’UUID è un identificatore univoco di ogni singolo archivio.
 
@@ -500,7 +505,6 @@ Per eseguire la raccolta di oggetti inattivi dell’archivio dati:
 >2. Aggiungi il `blobTrackSnapshotIntervalInSecs=L"0"` parametro in `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` file. Questo parametro richiede Oak 1.12.0, 1.10.2 o versione successiva.
 >3. Riavvia l’istanza AEM.
 
-
 Con le versioni più recenti di AEM, la raccolta di oggetti inattivi dell’archivio dati può essere eseguita anche sugli archivi dati condivisi da più di un archivio. Per poter eseguire la raccolta di oggetti inattivi dell’archivio dati in un archivio dati condiviso, effettua le seguenti operazioni:
 
 1. Assicurati che tutte le attività di manutenzione configurate per la raccolta di oggetti inattivi dell’archivio dati siano disabilitate in tutte le istanze dell’archivio che condividono l’archivio dati.
@@ -513,4 +517,5 @@ Con le versioni più recenti di AEM, la raccolta di oggetti inattivi dell’arch
    1. Vai alla console JMX e seleziona Repository Manager Mbean.
    1. Fai clic su **Fare clic su startDataStoreGC(markOnly booleano)** collegamento.
    1. Nella finestra di dialogo seguente, immetti `false` per `markOnly` di nuovo il parametro.
+
    Tutti i file trovati vengono fascicolati utilizzando la fase contrassegno utilizzata in precedenza ed eliminano gli altri file non utilizzati dall&#39;archivio dati.
