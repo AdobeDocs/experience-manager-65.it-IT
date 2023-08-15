@@ -4,16 +4,16 @@ description: Scopri come utilizzare Frammenti di contenuto AEM con GraphQL per l
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 89%
+source-wordcount: '684'
+ht-degree: 80%
 
 ---
 
 # Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Con Adobe Experience Manager (AEM), puoi utilizzare Frammenti di contenuto e l’API GraphQL AEM (un’implementazione personalizzata, basata su GraphQL standard) per fornire contenuti strutturati da utilizzare nelle applicazioni. La possibilità di personalizzare un’unica query API consente di recuperare e fornire il contenuto specifico che desideri riprodurre (come risposta alla singola query API).
+Con Adobe Experience Manager (AEM), puoi utilizzare Frammenti di contenuto e l’API GraphQL AEM (un’implementazione personalizzata, basata su GraphQL standard) per fornire contenuti strutturati da utilizzare nelle applicazioni. La possibilità di personalizzare una singola query API consente di recuperare e fornire il contenuto specifico che desideri riprodurre (come risposta alla singola query API).
 
 <!--
 >[!NOTE]
@@ -28,14 +28,13 @@ Con Adobe Experience Manager (AEM), puoi utilizzare Frammenti di contenuto e l�
 >* [AEM Commerce sfrutta i dati da una piattaforma commerce tramite GraphQL](/help/commerce/cif/integrating/magento.md).
 >* [I Frammenti di contenuto AEM collaborano con l’API GraphQL di AEM (un’implementazione personalizzata, basata su GraphQL standard) per fornire contenuti strutturati da utilizzare nelle applicazioni](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
-
 ## CMS headless {#headless-cms}
 
 Un sistema per la gestione dei contenuti (CMS) headless è:
 
 * “*Un sistema per la gestione dei contenuti headless, o CMS headless, è un sistema di gestione dei contenuti (CMS) di back-end progettato come archivio che rende i contenuti accessibili tramite un’API per visualizzarli su qualsiasi dispositivo“.*
 
-   Vedi [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+  Vedi [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
 In termini di authoring di frammenti di contenuto in AEM, questo significa che:
 
@@ -49,13 +48,13 @@ GraphQL è:
 
 * “*...un linguaggio di query per le API e un runtime per l’esecuzione di tali query con i dati esistenti.*”
 
-   Vedi [GraphQL.org](https://graphql.org)
+  Vedi [GraphQL.org](https://graphql.org)
 
-L’[API GraphQL di AEM](#aem-graphql-api) consente di eseguire query (complesse) sui [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md); ogni query è basata su un tipo di modello specifico. Il contenuto restituito può quindi essere utilizzato dalle applicazioni.
+Il [API GRAPHQL AEM](#aem-graphql-api) consente di eseguire query (complesse) sul [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md); ogni query è basata su un tipo di modello specifico. Il contenuto restituito può quindi essere utilizzato dalle applicazioni.
 
 ## API GraphQL di AEM {#aem-graphql-api}
 
-Per Adobe Experience, è stata sviluppata un’implementazione personalizzata dell’API GraphQL standard. Per informazioni, consulta [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+Ad Adobe, è stata sviluppata un’implementazione personalizzata dell’API GraphQL standard. Per informazioni, consulta [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 L’implementazione dell’API GraphQL per AEM si basa sulle [librerie Java GraphQL](https://graphql.org/code/#java).
 
@@ -97,7 +96,7 @@ Il **[Riferimento frammento](/help/assets/content-fragments/content-fragments-mo
 
 * Fa riferimento a un altro frammento, a seconda di un modello per frammento di contenuto specifico.
 
-* Consente di recuperare dati strutturati.
+* Consente di recuperare i dati strutturati.
 
    * Quando è definito come **multifeed**, è possibile fare riferimento a (recuperare) più frammenti secondari dal frammento principale.
 

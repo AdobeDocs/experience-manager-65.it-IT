@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 0afd721ff02f2c9abeed40c4b8f4fdf169523c35
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '10068'
+source-wordcount: '10067'
 ht-degree: 3%
 
 ---
@@ -56,13 +56,13 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, la dimensione predefinita del file di caricamento delle risorse è pari o inferiore a 2 GB. Per configurare il caricamento di risorse di dimensioni superiori a 2 GB e fino a 15 GB, consulta [(Facoltativo) Configura Dynamic Media in modalità Scene7 per il caricamento di risorse superiori a 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>In modalità Dynamic Medie - Scene7, la dimensione predefinita del file di caricamento delle risorse è pari o inferiore a 2 GB. Per configurare il caricamento di risorse di dimensioni superiori a 2 GB e fino a 15 GB, consulta [(Facoltativo) Configura Dynamic Medie in modalità Scene7 per il caricamento di risorse superiori a 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!IMPORTANT]
 >
->Le risorse caricate in Experience Manager con un nome file che supera i 100 caratteri hanno un nome abbreviato quando vengono utilizzate in Dynamic Media.
+>Le risorse caricate in Experience Manager con un nome file che supera i 100 caratteri hanno un nome abbreviato quando vengono utilizzate in Dynamic Medie.
 >
->I primi 100 caratteri nel nome del file vengono utilizzati così come sono; tutti i caratteri rimanenti vengono sostituiti da una stringa alfanumerica. Questo metodo di ridenominazione garantisce un nome univoco quando la risorsa viene utilizzata in Dynamic Media. Inoltre, deve contenere la lunghezza massima consentita per il nome del file di risorse in Dynamic Media.
+>I primi 100 caratteri nel nome del file vengono utilizzati così come sono; tutti i caratteri rimanenti vengono sostituiti da una stringa alfanumerica. Questo metodo di ridenominazione garantisce un nome univoco quando la risorsa viene utilizzata in Dynamic Medie. Inoltre, deve contenere la lunghezza massima consentita per il nome del file di risorse in Dynamic Medie.
 
 Puoi scegliere di caricare le risorse nelle cartelle con o senza un profilo di elaborazione assegnato.
 
@@ -161,15 +161,15 @@ Il caricamento seriale delle risorse è abilitato per impostazione predefinita. 
 
 ### Caricare le risorse tramite FTP {#uploading-assets-using-ftp}
 
-Dynamic Media consente il caricamento in batch delle risorse tramite il server FTP. Se desideri caricare risorse di grandi dimensioni (>1 GB) o intere cartelle e sottocartelle, utilizza l’FTP. Puoi anche impostare il caricamento FTP su base pianificata ricorrente.
+Dynamic Medie consente il caricamento in batch delle risorse tramite il server FTP. Se desideri caricare risorse di grandi dimensioni (>1 GB) o intere cartelle e sottocartelle, utilizza l’FTP. Puoi anche impostare il caricamento FTP su base pianificata ricorrente.
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, la dimensione predefinita del file di caricamento delle risorse è pari o inferiore a 2 GB. Per configurare il caricamento di risorse di dimensioni superiori a 2 GB e fino a 15 GB, consulta [(Facoltativo) Configura Dynamic Media in modalità Scene7 per il caricamento di risorse superiori a 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+>In modalità Dynamic Medie - Scene7, la dimensione predefinita del file di caricamento delle risorse è pari o inferiore a 2 GB. Per configurare il caricamento di risorse di dimensioni superiori a 2 GB e fino a 15 GB, consulta [(Facoltativo) Configura Dynamic Medie in modalità Scene7 per il caricamento di risorse superiori a 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!NOTE]
 >
->Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installa il Feature Pack 18912 sul [!DNL Experience Manager] istanze di authoring. Contatto [Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support) per accedere a FP-18912 e completare la configurazione dell’account FTP. Per ulteriori informazioni, consulta [Installare il 18912 del feature pack per la migrazione in blocco delle risorse](/help/assets/bulk-ingest-migrate.md).
+>Per caricare le risorse tramite FTP in modalità Dynamic Medie - Scene7, installa il Feature Pack 18912 sul [!DNL Experience Manager] istanze di authoring. Contatto [Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support) per accedere a FP-18912 e completare la configurazione dell’account FTP. Per ulteriori informazioni, consulta [Installare il 18912 del feature pack per la migrazione in blocco delle risorse](/help/assets/bulk-ingest-migrate.md).
 >
 >Se utilizzi l’FTP per caricare le risorse, le impostazioni di caricamento specificate in [!DNL Experience Manager] vengono ignorati. Vengono invece utilizzate le regole di elaborazione dei file definite in Dynamic Media Classic.
 
@@ -214,7 +214,7 @@ Per annullare un processo di caricamento in corso, fai clic su **[!UICONTROL Ann
 | | Opzioni di modifica delle immagini | Potete conservare le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Consulta [Impostazione delle opzioni per le modifiche immagine al caricamento](#setting-image-editing-options-at-upload). |
 | | Opzioni PostScript | Potete rasterizzare i file di PostScript®, ritagliare i file, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
 | | Opzioni Photoshop | Potete creare modelli da file Adobe® Photoshop®, gestire i livelli, specificare il nome dei livelli, estrarre il testo e specificare come le immagini vengono ancorate ai modelli.<br> I modelli non sono supportati in [!DNL Experience Manager].<br> Consulta [Impostazione delle opzioni di caricamento Photoshop](#setting-photoshop-upload-options). |
-| | Opzioni PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br>Gli eCatalog non sono supportati in [!DNL Experience Manager]. <br> Consulta [Impostazione delle opzioni di caricamento di PDF](#setting-pdf-upload-options).<br>**Nota**: per un PDF, il numero massimo di pagine da considerare per l’estrazione è 5000 per i nuovi caricamenti. Questo limite verrà modificato in 100 pagine (per tutti i PDF) il 31 dicembre 2022. Vedi anche [Limitazioni di Dynamic Media](/help/assets/limitations.md). |
+| | Opzioni PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br>Gli eCatalog non sono supportati in [!DNL Experience Manager]. <br> Consulta [Impostazione delle opzioni di caricamento di PDF](#setting-pdf-upload-options).<br>**Nota**: per un PDF, il numero massimo di pagine da considerare per l’estrazione è 5000 per i nuovi caricamenti. Questo limite verrà modificato in 100 pagine (per tutti i PDF) il 31 dicembre 2022. Vedi anche [Limitazioni di Dynamic Medie](/help/assets/limitations.md). |
 | | Opzioni Illustrator | Potete rasterizzare i file Adobe Illustrator®, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
 | | Opzioni eVideo | Potete trascodificare un file video scegliendo un predefinito video.<br> Consulta [Impostazione delle opzioni di caricamento di eVideo](#setting-evideo-upload-options). |
 | | Predefiniti set di batch | Per creare un set di immagini o un set 360 gradi dai file caricati, fai clic sulla colonna Attivo per il predefinito che desideri utilizzare. È possibile selezionare più predefiniti. I predefiniti vengono creati nella pagina Impostazione applicazione/Predefiniti set di batch di Dynamic Media Classic.<br> Consulta [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e set 360 gradi](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) per ulteriori informazioni sulla creazione di predefiniti per set di batch.<br> Consulta [Impostazione dei predefiniti per set di batch al caricamento](#setting-batch-set-presets-at-upload). |
@@ -264,7 +264,7 @@ Quando caricate i file immagine PostScript (EPS) o Illustrator (AI), potete form
 
 I file di Photoshop Document (PSD) vengono utilizzati in genere per la creazione di modelli di immagine. Quando carichi un file PSD, puoi creare automaticamente un modello di immagine dal file (seleziona l’ [!UICONTROL Crea modello] nella schermata di caricamento).
 
-Dynamic Media crea più immagini da un file PSD con livelli se utilizzate il file per creare un modello; crea un&#39;immagine per ogni livello.
+Dynamic Medie crea più immagini da un file PSD con livelli se utilizzate il file per creare un modello; crea un&#39;immagine per ogni livello.
 
 Utilizza il [!UICONTROL Opzioni di ritaglio] e [!UICONTROL Opzioni profilo colore], descritto in precedenza, con le opzioni di caricamento di Photoshop.
 
@@ -288,7 +288,7 @@ Utilizza il [!UICONTROL Opzioni di ritaglio] e [!UICONTROL Opzioni profilo color
 
 Quando carichi un file PDF, puoi formattarlo in vari modi. Ritagliate le pagine, estraete le parole di ricerca, immettete una risoluzione in pixel per pollice e scegliete uno spazio colore. I file PDF spesso contengono un margine di ritaglio, indicatori di ritaglio, indicatori di registrazione e altri indicatori della stampante. È possibile ritagliare questi segni dai lati delle pagine durante il caricamento di un file PDF.
 
-Il numero massimo di pagine da considerare per un PDF per l’estrazione è 5000 per i nuovi caricamenti. Questo limite verrà modificato in 100 pagine (per tutti i PDF) il 31 dicembre 2022. Vedi anche [Limitazioni di Dynamic Media](/help/assets/limitations.md).
+Il numero massimo di pagine da considerare per un PDF per l’estrazione è 5000 per i nuovi caricamenti. Questo limite verrà modificato in 100 pagine (per tutti i PDF) il 31 dicembre 2022. Vedi anche [Limitazioni di Dynamic Medie](/help/assets/limitations.md).
 
 >[!NOTE]
 >
@@ -383,7 +383,7 @@ Per visualizzare in anteprima una risorsa tramite tastiera, effettua le seguenti
 
 >[!MORELIKETHIS]
 >
->* [Anteprima risorse Dynamic Media](/help/assets/previewing-assets.md).
+>* [Anteprima risorse Dynamic Medie](/help/assets/previewing-assets.md).
 >* [Visualizzare le risorse secondarie](managing-linked-subassets.md#viewing-subassets).
 
 ## Modificare proprietà e metadati {#editing-properties}
@@ -488,7 +488,7 @@ Per spostare risorse o cartelle:
 
    >[!NOTE]
    >
-   >* Se nella nuova posizione non è presente alcuna risorsa con lo stesso nome, è possibile specificare lo stesso nome per la risorsa. Tuttavia, se sposti la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, utilizza un nome diverso. Se utilizzate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa è denominata Square, il sistema genera il nome Square1 per la relativa copia.
+   >* Se nella nuova posizione non è presente alcuna risorsa con lo stesso nome, è possibile specificare lo stesso nome per la risorsa. Tuttavia, se sposti la risorsa in una posizione in cui esiste già una risorsa con lo stesso nome, utilizza un nome diverso. Se utilizzate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa è denominata Square, il sistema genera il nome Square1 per la relativa copia.
    >* Durante la ridenominazione, il nome del file non può contenere spazi.
 
 1. Il giorno **[!UICONTROL Seleziona destinazione]** eseguire una delle operazioni seguenti:

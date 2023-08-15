@@ -2,9 +2,9 @@
 title: Componente RemotePage
 description: Il componente RemotePage è un componente di pagina personalizzato per la modifica dell’SPA di React remoto all’interno dell’AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: 41aac3b4ea3b100e9d927bef161929477d667a95
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Vedi l’articolo [Modifica di un SPA esterno all’interno dell’AEM](spa-edit
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
-   ![Punti di ingresso](assets/asset-manifest-entrypoints.png)
+  ![Punti di ingresso](assets/asset-manifest-entrypoints.png)
 
 * L’applicazione deve essere in grado di inizializzare in un `<div id="root"></div>` sotto l&#39;elemento body. Se è previsto un markup diverso per la creazione dell’istanza da parte dell’app, questo deve essere regolato di conseguenza negli script HTL del componente proxy che ha `sling:resourceSuperType="spa-project-core/components/remotepage`.
 

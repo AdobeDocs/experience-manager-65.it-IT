@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 82%
+source-wordcount: '1692'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ Come per la maggior parte dei sistemi è necessario effettuare l&#39;accesso. In
 * Password
 * Collegamento per accedere alla schermata di accesso
 
-Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso di problemi, ti consigliamo di contattare il team di supporto per il progetto interno.
+Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso di problemi, l’Adobe consiglia di contattare il team interno di supporto al progetto.
 
 ### Navigazione {#navigation}
 
@@ -166,11 +166,11 @@ Come esempi:
 
 * Frammento che richiede solo più informazioni, alcune con un tipo specifico. Come scoprirai andando avanti nel tuo percorso, i riferimenti sono fondamentali per i contenuti headless.
 
-   ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+  ![Editor frammento di contenuto - Frammento personale](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
 * Frammento che consente di scrivere una lunga sezione di testo. Qui sono disponibili opzioni aggiuntive per la gestione e la formattazione del testo. Puoi anche aprire i singoli campi di testo in un editor a schermo intero (utilizzando l’icona a forma di piccolo schermo a destra)
 
-   ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
@@ -190,26 +190,26 @@ OK, questa potrebbe sembrare una sezione leggermente ambigua, ma una volta apert
 
 * **Modelli per frammenti di contenuto**
 
-   Il nome del modello di frammento di contenuto verrà visualizzato nella parte superiore dell’editor, direttamente sotto il nome del frammento. Questo è anche un collegamento che ti porta all’editor modelli.
+  Il nome del modello di frammento di contenuto verrà visualizzato nella parte superiore dell’editor, direttamente sotto il nome del frammento. Questo è anche un collegamento che ti porta all’editor modelli.
 I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di contenuto quando definiscono la struttura utilizzata. Tuttavia, la creazione e la modifica di tali elementi è (in genere) responsabilità di un’altra persona, l’architect di contenuti.
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni, consulta il Percorso Architect di contenuti AEM headless.
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni, consulta il Percorso Architect di contenuti AEM headless.
 
 * **Contenuto associato**
 
-   Questo è abbastanza ovvio in quanto è una scheda nell&#39;editor.
+  Questo è abbastanza ovvio in quanto è una scheda nell&#39;editor.
 
-   I frammenti di contenuto sono disponibili in AEM in diverse versioni. Originariamente erano disponibili per l’uso “tradizionale” durante l’authoring delle pagine....e sono ancora utilizzati in questo contesto. Questo può comportare l’associazione di risorse (ad esempio immagini) che, pur non essendo incorporate nel frammento, devono essere disponibili all’autore durante la creazione di una pagina.
+  I frammenti di contenuto sono disponibili in AEM in diverse versioni. Originariamente erano disponibili per l’uso “tradizionale” durante l’authoring delle pagine....e sono ancora utilizzati in questo contesto. Questo può comportare l’associazione di risorse (ad esempio immagini) che, pur non essendo incorporate nel frammento, devono essere disponibili all’autore durante la creazione di una pagina.
 
 * **Anteprima**
 
-   Questa è un’altra scheda nell’editor e fornisce una vista tecnica, destinata principalmente agli sviluppatori.
+  Questa è un’altra scheda nell’editor e fornisce una vista tecnica, destinata principalmente agli sviluppatori.
 
 * **Aggiorna i riferimenti di pagina**
 
-   Questa azione è disponibile nel menu a discesa **...** (puntini di sospensione). Non è interessante per gli autori headless in quanto si riferisce all’authoring delle pagine.
+  Questa azione è disponibile nel menu a discesa **...** (puntini di sospensione). Non è interessante per gli autori headless in quanto si riferisce all’authoring delle pagine.
 
 ### Pubblicazione {#publishing}
 
@@ -250,6 +250,7 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
       * [Applica la configurazione alla cartella Risorse](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Creazione di un frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Varianti - Authoring di frammenti di contenuto](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
@@ -259,7 +260,6 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
       * [Modelli per frammenti di contenuto - Proprietà](/help/assets/content-fragments/content-fragments-models.md#properties)
 
       * [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
-
 
 * Guide introduttive
    * [Guida rapida alla creazione di una cartella di risorse headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)

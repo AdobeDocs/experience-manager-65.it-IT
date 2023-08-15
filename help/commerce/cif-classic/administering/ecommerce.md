@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '749'
 ht-degree: 2%
 
 ---
@@ -141,7 +141,7 @@ L’eCommerce dell’AEM fornisce:
 
   >[!NOTE]
   >
-  >Il framework di integrazione fornito dall’AEM ti consente inoltre di creare componenti AEM aggiuntivi per le funzionalità di e-commerce, indipendentemente dal motore di eCommerce specifico.
+  >Il framework di integrazione fornito dall’AEM consente inoltre di creare componenti AEM aggiuntivi per le funzionalità di e-commerce, indipendentemente dal motore di eCommerce specifico.
 
 * **Ricerca** - utilizzando:
 
@@ -163,7 +163,7 @@ L’eCommerce dell’AEM fornisce:
 * La possibilità di sviluppare **commercio basato sull’esperienza e basato sui dati e sull’attività dell’acquirente**. Questo consente di realizzare molti scenari:
 
    * Un esempio potrebbe essere la riduzione delle spese di spedizione quando l&#39;ordine totale supera un importo specifico.
-   * Un altro potrebbe consentire di fornire offerte stagionali che utilizzano i dati del profilo (ad esempio, posizione). Questi possono quindi essere evidenziati, anche in questo caso a seconda di altri fattori, se necessario.
+   * Un altro potrebbe consentirti di fornire offerte stagionali che utilizzano dati di profilo (ad esempio, posizione). Questi possono quindi essere evidenziati, anche in questo caso a seconda di altri fattori, se necessario.
 
   Nell’esempio seguente viene mostrato un teaser poiché il contenuto del carrello è inferiore a $ 75:
 

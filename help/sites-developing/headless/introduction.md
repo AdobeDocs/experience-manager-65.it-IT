@@ -2,10 +2,10 @@
 title: Sviluppo headless per siti AEM 6.5
 description: Scopri come le potenti funzionalità headless di AEM 6.5, come i modelli di contenuto, i frammenti di contenuto e l’API GraphQL, collaborano per gestire le esperienze a livello centrale e distribuirle tra i canali.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 38%
+source-wordcount: '495'
+ht-degree: 36%
 
 ---
 
@@ -23,7 +23,7 @@ L’implementazione headless ignora la gestione di pagine e componenti come avvi
 
 ## Confronto tra headful e headless {#headful-headless}
 
-Questo documento si concentra sul modello completo di implementazione headless dell’AEM. Ma la scelta tra headful e headless non deve essere per forza binaria in AEM. Le funzioni headless consentono di gestire e distribuire i contenuti a diversi endpoint, consentendo agli autori dei contenuti di modificare le applicazioni a pagina singola. Tutto questo direttametne in AEM.
+Questo documento si concentra sul modello completo di implementazione headless dell’AEM. Tuttavia, la scelta tra headful e headless non deve essere necessariamente binaria nell’AEM. Le funzioni headless consentono di gestire e distribuire i contenuti a diversi endpoint, consentendo agli autori dei contenuti di modificare le applicazioni a pagina singola. Tutto questo direttametne in AEM.
 
 >[!TIP]
 >

@@ -11,9 +11,9 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di ri
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   In caso contrario, se non è necessario eseguire il rendering selettivo delle informazioni (in questo caso, le transazioni), lascia vuota la condizione eliminando quanto segue nella finestra di dialogo: `${}`. Il salvataggio di un’espressione ripetuta viene abilitato quando la finestra dell’espressione ripetuta è vuota (senza ${} quando non è necessaria alcuna ripetizione) o quando contiene una condizione valida per la ripetizione.
+   In caso contrario, se non è necessario eseguire il rendering selettivo delle informazioni (in questo caso, le transazioni), lascia vuota la condizione eliminando quanto segue nella finestra di dialogo: `${}`. Il salvataggio di un&#39;espressione ripetuta viene attivato quando la finestra dell&#39;espressione ripetuta è vuota (senza ${} quando non è necessaria alcuna ripetizione) o quando contiene una condizione valida per la ripetizione.
 
 1. Seleziona un separatore per la formattazione del testo dinamico e tocca il segno di spunta per salvare:
 
@@ -206,7 +206,7 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di ri
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 
-   Il testo statico viene ripetuto con i dettagli della transazione. La ripetizione del testo statico è facilitata dalla ripetizione applicata al testo in questa procedura. La condizione ${DD_creditcard_TransactionAmount > 0.5} garantisce che le transazioni al di sotto di USD .5 non vengano visualizzate nella lettera.
+   Il testo statico viene ripetuto con i dettagli della transazione. La ripetizione del testo statico è facilitata dalla ripetizione applicata al testo in questa procedura. La condizione ${DD_creditcard_TransactionAmount > 0.5}, si assicura che le transazioni inferiori a USD 0,5 non vengano visualizzate nella lettera.
 
    >[!NOTE]
    >
@@ -220,7 +220,7 @@ Potrebbe essere necessario utilizzare repeat all’interno di una condizione. Ge
 
 Ad esempio, si ripete (formattato in rosso) all’interno di una condizione (formattata in verde).
 
-Mentre la ripetizione esegue il rendering delle transazioni con carta di credito, la condizione ${DD_creditcard_nooftransaction > 0} assicura che il rendering del costrutto di ripetizione sia eseguito solo se è presente almeno una transazione.
+Mentre la ripetizione esegue il rendering delle transazioni con carta di credito, la condizione ${DD_creditcard_nooftransaction > 0} assicura che venga eseguito il rendering del costrutto di ripetizione solo se è presente almeno una transazione.
 
 ![Repewitincondition](assets/repeatwitincondition.png)
 
@@ -232,7 +232,7 @@ Allo stesso modo, in base alle tue esigenze, puoi creare:
 
 ### Condizione in linea vuota {#empty-inline-condition}
 
-Potrebbe essere necessario inserire condizioni in linea vuote e incorporare testo ed elementi DD in un secondo momento. Gestione della corrispondenza consente di eseguire questa operazione.
+Potrebbe essere necessario inserire condizioni in linea vuote e incorporare testo ed elementi DD in un secondo momento. Gestione della corrispondenza consente di farlo.
 
 ![emptycondition](assets/emptycondition.png)
 

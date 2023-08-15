@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1442'
 ht-degree: 69%
 
 ---
@@ -43,6 +43,7 @@ Puoi utilizzare Frammenti esperienza:
 >Per poter accedere in scrittura ai frammenti esperienza, l’account utente deve essere registrato nel gruppo
 >
 >    `experience-fragments-editors`
+>
 In caso di problemi, contatta l’amministratore di sistema.
 
 ## Quando utilizzare i frammenti esperienza?   {#when-should-you-use-experience-fragments}
@@ -79,13 +80,15 @@ La creazione di cartelle consente di:
 
 * creare una struttura significativa per i frammenti esperienza, ad esempio, in base alla classificazione
 
-   >[!NOTE]
-   Non è necessario allineare la struttura dei frammenti esperienza alla struttura delle pagine del sito.
+  >[!NOTE]
+  >
+  Non è necessario allineare la struttura dei frammenti esperienza alla struttura delle pagine del sito.
 
 * [allocare i modelli consentiti a livello di cartella](#configure-allowed-templates-folder)
 
-   >[!NOTE]
-   Per creare un modello personalizzato, puoi utilizzare [l’editor modelli](/help/sites-authoring/templates.md).
+  >[!NOTE]
+  >
+  Per creare un modello personalizzato, puoi utilizzare [l’editor modelli](/help/sites-authoring/templates.md).
 
 Nel progetto WKND alcuni frammenti esperienza vengono strutturati in base a `Contributors`. La struttura utilizzata illustra anche come utilizzare altre funzioni, come la gestione multisito (incluse le copie per lingua).
 
@@ -104,11 +107,13 @@ Per creare e configurare una cartella per i frammenti esperienza, è consigliabi
 1. [Configurare i modelli di frammento esperienza consentiti per la cartella](#configure-allowed-templates-folder).
 
 >[!NOTE]
+>
 È anche possibile configurare i [modelli consentiti per l’istanza](#configure-allowed-templates-instance), ma questo metodo **non** è consigliato in quanto i valori possono essere sovrascritti in seguito a un aggiornamento.
 
 ### Configurare i modelli consentiti per la cartella {#configure-allowed-templates-folder}
 
 >[!NOTE]
+>
 Si tratta del metodo consigliato per specificare i **modelli consentiti**, poiché i valori non verranno sovrascritti in seguito a un aggiornamento.
 
 1. Individua la cartella **Frammenti esperienza** necessaria.
@@ -126,6 +131,7 @@ Si tratta del metodo consigliato per specificare i **modelli consentiti**, poich
    ![Proprietà dei frammenti esperienza - Modelli consentiti](/help/sites-authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
+   >
    Per ulteriori informazioni, consulta [Modelli per frammenti esperienza](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Seleziona **Salva e chiudi**.
@@ -133,7 +139,9 @@ Si tratta del metodo consigliato per specificare i **modelli consentiti**, poich
 ### Configurare i modelli consentiti per l’istanza {#configure-allowed-templates-instance}
 
 >[!CAUTION]
+>
 È consigliabile non utilizzare questo metodo per modificare i **modelli consentiti**, in quanto i modelli specificati possono essere sovrascritti in seguito a un aggiornamento.
+>
 Utilizza questa finestra di dialogo solo a scopo informativo.
 
 1. Individua la console **Frammenti esperienza** necessaria.
@@ -147,6 +155,7 @@ Utilizza questa finestra di dialogo solo a scopo informativo.
    ![Configura frammenti esperienza](assets/ef-01.png)
 
    >[!NOTE]
+   >
    Per ulteriori informazioni, consulta [Modelli per frammenti esperienza](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Seleziona **Salva**.
@@ -176,7 +185,9 @@ Per creare un frammento esperienza:
    ![xf-04](assets/xf-04.png)
 
    >[!NOTE]
+   >
    I tag del modello Frammento di esperienza non verranno uniti ai tag presenti nella pagina root Frammento di esperienza.
+   >
    Sono completamente separati.
 
 1. Fai clic su **Crea**.
@@ -192,6 +203,7 @@ Per creare un frammento esperienza:
 L’editor dei frammenti esperienza offre funzionalità simili al normale editor di pagina.
 
 >[!NOTE]
+>
 Consulta [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md) per ulteriori informazioni su come utilizzare l’editor pagina.
 
 La procedura di esempio seguente illustra come creare un teaser per un prodotto:
@@ -253,6 +265,7 @@ Ora puoi utilizzare il frammento di esperienza durante l’authoring delle pagin
    ![xf-09](assets/xf-09.png)
 
    >[!NOTE]
+   >
    L’opzione Modifica, nella barra degli strumenti del componente, funziona come una scelta rapida per aprire il frammento nell’editor frammenti.
 
 ## Blocchi predefiniti {#building-blocks}
@@ -308,7 +321,10 @@ I dettagli del frammento vengono visualizzati in diverse posizioni:
    Le proprietà sono disponibili in diverse schede:
 
    >[!CAUTION]
+   >
    Queste schede vengono visualizzate quando apri **Proprietà** dalla console Frammenti esperienza.
+   >
+   >
    Se scegli **Apri proprietà** durante la modifica di un frammento esperienza, vengono visualizzate le [proprietà di pagina](/help/sites-authoring/editing-page-properties.md) appropriate.
 
    ![ef-05](assets/ef-05.png)
@@ -325,27 +341,28 @@ I dettagli del frammento vengono visualizzati in diverse posizioni:
       * **Numero di varianti non web** - inf **Solo informazioni**
 
       * **Numero di pagine che utilizzano questo frammento** - solo informativo
+
    * **Servizi cloud**
 
       * **Configurazione cloud**
       * **Configurazioni Cloud Service**
       * **ID pagina Facebook**
       * **Bacheca Pinterest**
+
    * **Riferimenti**
 
       * Un elenco di riferimenti.
+
    * **Stato social media**
 
       * Dettagli delle varianti per social media.
-
-
-
 
 ## Rendering HTML semplice {#the-plain-html-rendition}
 
 Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML semplice dal browser.
 
 >[!NOTE]
+>
 Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello di consentire ad altre applicazioni (ad esempio, applicazioni web di terze parti o implementazioni personalizzate per dispositivi mobili) di accedere ai contenuti del frammento esperienza direttamente dall’URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}

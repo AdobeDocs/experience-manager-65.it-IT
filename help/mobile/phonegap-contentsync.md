@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2959'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questo documento fa parte del [Guida introduttiva ad Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guida di, punto di partenza consigliato per AEM Mobile.
+>Questo documento fa parte del [Guida introduttiva a Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guida di, punto di partenza consigliato per AEM Mobile.
 
 Utilizza Sincronizzazione contenuti per creare pacchetti di contenuti in modo che possano essere utilizzati nelle applicazioni native per dispositivi mobili. Le pagine create in AEM possono essere utilizzate come contenuto dell’app, anche quando il dispositivo è offline. Inoltre, poiché le pagine AEM sono basate su standard web, funzionano su più piattaforme e consentono di incorporarle in qualsiasi wrapper nativo. Questa strategia riduce lo sforzo di sviluppo e consente di aggiornare facilmente i contenuti dell’app.
 
@@ -353,7 +353,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 }
 ```
 
-Il `LogoUpdateHandler` la classe implementa `ContentUpdateHandler` dell&#39;interfaccia `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` metodo, che utilizza diversi argomenti:
+Il `LogoUpdateHandler` la classe implementa `ContentUpdateHandler` dell&#39;interfaccia `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` metodo, che accetta diversi argomenti:
 
 * A `ConfigEntry` istanza che consente di accedere alla voce di configurazione per la quale viene chiamato il gestore e alle relative proprietà.
 * A `lastUpdated` timestamp che indica l’ultimo aggiornamento della cache da parte di Content Sync. Il contenuto che non è stato modificato dopo tale marca temporale non deve essere aggiornato dal gestore.

@@ -2,16 +2,16 @@
 title: Guida rapida alle linee guida WCAG 2.1
 description: Guida rapida alle linee guida WCAG 2.1
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 99%
+source-wordcount: '1774'
+ht-degree: 97%
 
 ---
 
 # Guida rapida alle linee guida WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) è stato sviluppato per garantire la massima conformità alle linee guida per l’accessibilità dei contenuti web.
+Adobe Experience Manager (AEM) è stato sviluppato per garantire la massima conformità con le linee guida per l’accessibilità dei contenuti web.
 
 La [versione 2.1 delle linee guida per l’accessibilità dei contenuti web (WCAG)](https://www.w3.org/TR/WCAG/) è costituita da una serie di indicazioni riconosciute a livello internazionale sviluppate dal [World Wide Web Consortium (W3C)](https://www.w3.org/) nell’ambito dell’iniziativa [WAI (Web Accessibility Initiative)](https://www.w3.org/WAI/).
 
@@ -68,7 +68,7 @@ In particolare:
 * Le linee guida sono numerate da 1.1 a 4.1 e la prima cifra corrisponde al principio padre.
 * Ogni linea guida è costituita da uno o più **criteri di successo**.
 * I criteri di successo sono formulati come istruzioni, che possono essere `True` o `False` per una determinata pagina web.
-* I criteri di successo possono includere una o più opzioni oppure eccezioni, ovvero situazioni in cui non è necessario soddisfare i criteri di successo.
+* I criteri di successo possono includere una o più scelte oppure eccezioni, ovvero situazioni in cui non è necessario soddisfare i criteri di successo.
 * I criteri di successo sono numerati in base alla linea guida e al principio padre, da 1.1.1 a 4.1.1. Hanno anche un nome breve che riassume l’intento del criterio, per un riferimento più semplice. Ad esempio, il criterio di successo [1.1.1 prevede contenuto non testuale](https://www.w3.org/TR/WCAG/#non-text-content).
 * I criteri di successo includono un elenco delle **tecniche** correlate (descritte più in dettaglio di seguito).
 

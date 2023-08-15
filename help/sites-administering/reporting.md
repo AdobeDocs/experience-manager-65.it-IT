@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2804'
 ht-degree: 5%
 
 ---
@@ -88,7 +88,7 @@ La freccia viene visualizzata all&#39;estrema destra della cella del titolo (da 
 
 ![reportcolumnsort](assets/reportcolumnsort.png)
 
-Le opzioni disponibili nel menu dipendono dalla configurazione della colonna (effettuata durante lo sviluppo del progetto), mentre tutte le opzioni non valide saranno disattivate.
+Le opzioni disponibili nel menu dipendono dalla configurazione della colonna (come effettuato durante lo sviluppo del progetto), tutte le opzioni non valide saranno disattivate.
 
 ### Ordinamento dei dati {#sorting-the-data}
 
@@ -113,7 +113,7 @@ Sulle colonne appropriate puoi anche configurare **Impostazioni filtro** e/o **A
 
 #### Filtri {#filters}
 
-Le impostazioni del filtro consentono di specificare i criteri per la visualizzazione delle voci. Gli operatori disponibili sono:
+Impostazioni filtro consente di specificare i criteri per le voci da visualizzare. Gli operatori disponibili sono:
 
 * `contains`
 * `equals`
@@ -166,13 +166,13 @@ Una volta avviata la raccolta dei dati, puoi selezionare:
 
 * **Periodo**
 
-   È possibile selezionare le date di inizio e di fine per la visualizzazione dei dati del rapporto.
+  È possibile selezionare le date di inizio e di fine per la visualizzazione dei dati del rapporto.
 
 * **Intervallo**
 
-   Mese, Settimana, Giorno, Ora possono essere selezionati per la scala e l’aggregazione del rapporto.
+  Mese, Settimana, Giorno, Ora possono essere selezionati per la scala e l’aggregazione del rapporto.
 
-   Ad esempio, se per febbraio 2011 sono disponibili snapshot giornaliere:
+  Ad esempio, se per febbraio 2011 sono disponibili snapshot giornaliere:
 
    * Se l&#39;intervallo è impostato su `Day`, ogni istantanea viene visualizzata come un singolo valore nel grafico.
    * Se l&#39;intervallo è impostato su `Month`, tutte le istantanee di febbraio vengono aggregate in un singolo valore (visualizzato come un singolo punto nel grafico).
@@ -185,11 +185,11 @@ Durante la raccolta degli snapshot è possibile:
 
 * Utilizzare **Fine...** per reinizializzare la raccolta.
 
-   **Fine** &quot;congela&quot; la struttura del rapporto (ovvero le colonne assegnate al rapporto e che sono raggruppate, ordinate, filtrate, ecc.) e inizia a creare snapshot.
+  **Fine** &quot;congela&quot; la struttura del rapporto (ovvero le colonne assegnate al rapporto e che sono raggruppate, ordinate, filtrate, ecc.) e inizia a creare snapshot.
 
 * Apri **Modifica** finestra di dialogo per selezionare **Nessuna istantanea di dati** per terminare la raccolta fino a quando richiesto.
 
-   **Modifica** attiva o disattiva solo l&#39;acquisizione di istantanee. Se l&#39;acquisizione delle istantanee viene nuovamente attivata, viene utilizzato lo stato del report al termine dell&#39;ultima esecuzione per l&#39;acquisizione di ulteriori istantanee.
+  **Modifica** attiva o disattiva solo l&#39;acquisizione di istantanee. Se l&#39;acquisizione delle istantanee viene nuovamente attivata, viene utilizzato lo stato del report al termine dell&#39;ultima esecuzione per l&#39;acquisizione di ulteriori istantanee.
 
 >[!NOTE]
 >
@@ -239,29 +239,29 @@ Questa è una posizione in cui il periodo per la raccolta degli snapshot per [Da
 
 * **Titolo**
 
-   Puoi definire un titolo personalizzato.
+  Puoi definire un titolo personalizzato.
 
 * **Descrizione**
 
-   Puoi definire una tua descrizione.
+  Puoi definire una tua descrizione.
 
 * **Percorso directory principale** (*attivo solo per alcuni rapporti*)
 
-   Utilizzare questa opzione per limitare il report a una sezione (secondaria) dell’archivio.
+  Utilizzare questa opzione per limitare il report a una sezione (secondaria) dell’archivio.
 
 * **Elaborazione rapporto**
 
    * **aggiorna i dati automaticamente**
 
-      I dati del rapporto verranno aggiornati ogni volta che si aggiorna la definizione del rapporto.
+     I dati del rapporto verranno aggiornati ogni volta che si aggiorna la definizione del rapporto.
 
    * **aggiorna i dati manualmente**
 
-      Questa opzione può essere utilizzata per evitare ritardi causati da operazioni di aggiornamento automatico quando il volume di dati è elevato.
+     Questa opzione può essere utilizzata per evitare ritardi causati da operazioni di aggiornamento automatico quando il volume di dati è elevato.
 
-      Selezionando questa opzione, i dati del rapporto devono essere aggiornati manualmente quando viene modificato un qualsiasi aspetto della configurazione del rapporto. Significa anche che non appena modifichi un aspetto della configurazione, la tabella del rapporto verrà spenta.
+     Selezionando questa opzione, i dati del rapporto devono essere aggiornati manualmente quando viene modificato un qualsiasi aspetto della configurazione del rapporto. Significa anche che non appena modifichi un aspetto della configurazione, la tabella del rapporto verrà spenta.
 
-      Quando selezionato, **[Carica dati](#load-data)** verrà visualizzato il pulsante (accanto a **Modifica** sulla relazione). **Carica dati** carica i dati e aggiorna i dati del rapporto mostrati.
+     Quando selezionato, **[Carica dati](#load-data)** verrà visualizzato il pulsante (accanto a **Modifica** sulla relazione). **Carica dati** carica i dati e aggiorna i dati del rapporto mostrati.
 
 * **Snapshot**
 È possibile definire la frequenza delle istantanee, giornaliera, oraria o non.
@@ -312,11 +312,11 @@ Ciò significa che puoi vedere, ad esempio:
 
 * Quali componenti vengono utilizzati e dove.
 
-   Utile, ad esempio, durante il test.
+  Utile, ad esempio, durante il test.
 
 * Come vengono distribuite le istanze di un componente specifico.
 
-   Questo può essere interessante se pagine specifiche (ad esempio, &quot;pagine pesanti&quot;) presentano problemi di prestazioni.
+  Questo può essere interessante se pagine specifiche (ad esempio, &quot;pagine pesanti&quot;) presentano problemi di prestazioni.
 
 * Identificare le parti del sito con modifiche frequenti/meno frequenti.
 * Scopri come il contenuto della pagina si sviluppa nel tempo.
@@ -344,33 +344,33 @@ Per generare il rapporto puoi specificare:
 
 * **Periodo (ore)**
 
-   Il numero di ore (passate) da analizzare.
+  Il numero di ore (passate) da analizzare.
 
-   Predefiniti: `24`
+  Predefiniti: `24`
 
 * **max. Risultati**
 
-   Numero massimo di righe di output.
+  Numero massimo di righe di output.
 
-   Predefiniti: `50`
+  Predefiniti: `50`
 
 * **max Richieste**
 
-   Numero massimo di richieste da analizzare.
+  Numero massimo di richieste da analizzare.
 
-   Predefinito: `-1` (tutti)
+  Predefinito: `-1` (tutti)
 
 * **Indirizzo e-mail**
 
-   Invia i risultati a un indirizzo e-mail.
+  Invia i risultati a un indirizzo e-mail.
 
-   Facoltativo; predefinito: vuoto
+  Facoltativo; predefinito: vuoto
 
 * **Esegui ogni giorno alle (hh: mm)**
 
-   Specifica a che ora il report deve essere eseguito automaticamente su base giornaliera.
+  Specifica a che ora il report deve essere eseguito automaticamente su base giornaliera.
 
-   Facoltativo; predefinito: vuoto
+  Facoltativo; predefinito: vuoto
 
 ![reporthealth](assets/reporthealth.png)
 
@@ -410,7 +410,7 @@ Questo rapporto fornisce informazioni sui contenuti generati dagli utenti, che s
 * Tipo
 * Identificatore utente
 
-Consenti di:
+Consente di:
 
 * Scopri quali pagine ricevono il maggior numero di commenti.
 * Ottieni una panoramica di tutti i commenti lasciati da specifici visitatori del sito, forse correlati ai problemi.
@@ -438,9 +438,9 @@ Questo rapporto fornisce informazioni su tutti gli utenti che hanno registrato u
 * Hashcode NTLM
 * ID utente
 
-Consenti di:
+Consente di:
 
-* Scopri la distribuzione demografica dei tuoi utenti.
+* Scopri la distribuzione demografica degli utenti.
 * Generare rapporti sui campi personalizzati aggiunti ai profili.
 
 ![reportusercanned](assets/reportusercanned.png)
@@ -460,25 +460,25 @@ Dalla sezione **Definizioni** scheda che puoi definire:
 
 * **Titolo**
 
-   Titolo personalizzato per la colonna generica.
+  Titolo personalizzato per la colonna generica.
 
 * **Proprietà**
 
-   Il nome della proprietà come memorizzato nell’archivio, in genere all’interno del profilo dell’utente.
+  Il nome della proprietà come memorizzato nell’archivio, in genere all’interno del profilo dell’utente.
 
 * **Percorso**
 
-   Di solito la proprietà viene ricavata da `profile`.
+  Di solito la proprietà viene ricavata da `profile`.
 
 * **Tipo**
 
-   Seleziona il tipo di campo da `String`, `Number`, `Integer`, `Date`.
+  Seleziona il tipo di campo da `String`, `Number`, `Integer`, `Date`.
 
 * **Aggregato predefinito**
 
-   Definisce l’aggregato utilizzato per impostazione predefinita se la colonna è separata in un rapporto con almeno una colonna raggruppata. Seleziona l’aggregato richiesto da `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+  Definisce l’aggregato utilizzato per impostazione predefinita se la colonna è separata in un rapporto con almeno una colonna raggruppata. Seleziona l’aggregato richiesto da `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Ad esempio: *Conteggio* per un `String` campo indica che il numero di `String` vengono visualizzati i valori per la colonna nello stato aggregato.
+  Ad esempio: *Conteggio* per un `String` campo indica che il numero di `String` vengono visualizzati i valori per la colonna nello stato aggregato.
 
 In **Esteso** scheda puoi anche definire gli aggregati e i filtri disponibili:
 
@@ -534,7 +534,7 @@ Poiché nell’ambiente di pubblicazione non è consentita alcuna configurazione
 
 >[!CAUTION]
 >
->L’accesso a questi rapporti può rappresentare un problema di sicurezza; pertanto ti consigliamo di configurare Dispatcher in modo che `/etc/reports` non è disponibile per i visitatori esterni. Consulta la [Elenco di controllo della sicurezza](security-checklist.md) per ulteriori dettagli.
+>L’accesso a questi rapporti può rappresentare un problema di sicurezza; pertanto, l’Adobe consiglia di configurare Dispatcher in modo che `/etc/reports` non è disponibile per i visitatori esterni. Consulta la [Elenco di controllo della sicurezza](security-checklist.md) per ulteriori dettagli.
 
 ## Autorizzazioni necessarie per l’esecuzione dei rapporti {#permissions-needed-for-running-reports}
 
@@ -547,22 +547,22 @@ In un’installazione standard dell’AEM sono preimpostate le seguenti autorizz
 
 * **Report utente**
 
-   `user administrators` - lettura e scrittura
+  `user administrators` - lettura e scrittura
 
 * **Report attività pagina**
 
-   `contributors` - lettura e scrittura
+  `contributors` - lettura e scrittura
 
 * **Report componente**
 
-   `contributors` - lettura e scrittura
+  `contributors` - lettura e scrittura
 
 * **Report per contenuti generati dall&#39;utente**
 
-   `contributors` - lettura e scrittura
+  `contributors` - lettura e scrittura
 
 * **Report di istanze flusso di lavoro**
 
-   `workflow-users` - lettura e scrittura
+  `workflow-users` - lettura e scrittura
 
 Tutti i membri del `administrators` dispongono dei diritti necessari per creare nuovi rapporti.

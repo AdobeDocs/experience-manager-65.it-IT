@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1881'
 ht-degree: 6%
 
 ---
@@ -33,7 +33,7 @@ AEM Forms è una potente piattaforma di classe enterprise e l’acquisizione dei
 
 ## Topologia di distribuzione {#deployment-topology}
 
-Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata nell’AEM. Per eseguire le funzionalità di acquisizione dati di AEM Forms è sufficiente almeno un’istanza AEM Author e AEM Publish. Per eseguire le funzionalità di acquisizione dati di AEM Forms AEM Forms, si consiglia di utilizzare la topologia riportata di seguito. Per informazioni dettagliate sulla topologia, vedere [Architettura e topologie di implementazione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata nell’AEM. Per eseguire le funzionalità di acquisizione dei dati di AEM Forms è necessario disporre almeno di un’istanza Autore AEM e Pubblicazione AEM. Per eseguire le funzionalità di acquisizione dati di AEM Forms AEM Forms, si consiglia di utilizzare la topologia riportata di seguito. Per informazioni dettagliate sulla topologia, vedere [Architettura e topologie di implementazione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![recommended-topology](assets/recommended-topology.png)
 
@@ -99,7 +99,6 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione da
 >* Se OpenSSL è già installato sul server, aggiornalo alla versione più recente.
 >* Crea i symlink libcurl.so, libcrypto.so e libssl.so che puntano rispettivamente alla versione più recente delle librerie libcurl, libcrypto e libssl.
 >
-
 
 * Installare il seguente pacchetto a 64 bit dal supporto di installazione:
 
@@ -226,7 +225,7 @@ Per utilizzare Adobe Sign con AEM Forms: [Integrare Adobe Sign con AEM Forms](/h
 
 #### Configurare Adobe Analytics {#configure-adobe-analytics}
 
-AEM Forms si integra con Adobe Analytics che consente di acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili.
+AEM Forms si integra con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili.
 
 Per utilizzare Adobe Analytics con AEM Forms, consulta [Configurazione di analisi e rapporti](/help/forms/using/configure-analytics-forms-documents.md).
 

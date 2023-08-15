@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2463'
 ht-degree: 2%
 
 ---
@@ -88,8 +88,7 @@ All&#39;apertura di un [Modello predefinito e/o legacy](/help/sites-developing/w
 * Inizialmente il modello e le relative proprietà vengono presentati in modalità di sola lettura come:
    * I flussi di lavoro predefiniti si trovano in `/libs`
    * I flussi di lavoro legacy si trovano in `/etc`
-Selezione 
-**Modifica** consente di:
+Selezione **Modifica** consente di:
 * copia del flusso di lavoro in `/conf`
 * rendere disponibile il browser Passaggi
 * consente di apportare modifiche
@@ -152,6 +151,7 @@ Per aggiungere passaggi al modello di flusso di lavoro:
    * Tocca o fai clic sul passaggio* *nel modello di flusso di lavoro e seleziona **Configura** dalla barra degli strumenti del componente.
 
    * Fare doppio clic sul passaggio.
+
    >[!NOTE]
    >
    >Per informazioni sui componenti della fase principale installati con AEM, consulta [Riferimento passaggi flusso di lavoro](/help/sites-developing/workflows-step-ref.md).
@@ -416,7 +416,8 @@ Per definire una regola OR, procedere come segue:
    * Definisci come **Percorso predefinito** impostando **Valore** a `true`.
 
    * As **Regola**, imposta il percorso dello script. Ad esempio:
-      `/apps/myapp/workflow/scripts/myscript1.ecma`
+     `/apps/myapp/workflow/scripts/myscript1.ecma`
+
    >[!NOTE]
    >
    >Se necessario, puoi cambiare l’ordine della filiale.
@@ -424,7 +425,7 @@ Per definire una regola OR, procedere come segue:
 1. Modifica le proprietà del **Ramo 2** del **Suddivisione O**.
 
    * As **Regola**, imposta il percorso dell&#39;altro script. Ad esempio:
-      `/apps/myapp/workflow/scripts/myscript2.ecma`
+     `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Imposta le proprietà dei singoli passaggi in ciascun ramo. Assicurati che le **Utente/Gruppo** è impostato.
 1. Clic **Sincronizza** (barra degli strumenti dell’editor) per mantenere le modifiche apportate al modello di runtime.

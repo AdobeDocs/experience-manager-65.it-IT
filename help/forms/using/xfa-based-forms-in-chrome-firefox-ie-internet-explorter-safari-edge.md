@@ -4,9 +4,9 @@ description: Impossibile aprire PDF forms basati su XFA in Google Chrome, Firefo
 seo-title: Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer, or Apple Safari
 feature: Adaptive Forms
 exl-id: fdd15315-e0d6-4d80-acb4-2e0ecec716c4
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Molte versioni recenti del browser hanno incluso il proprio supporto limitato per i PDF forms basati su XFA. Anche se questi browser possono aprire PDF forms basati su XFA, le funzionalità fornite sono limitate. Se non riesci ad aprire o inviare un modulo PDF basato su XFA in un browser moderno, utilizza uno dei seguenti metodi:
 
 * Utilizzare [Adobe ® Acrobat®](https://www.adobe.com/acrobat.html) o [Adobe ® Adobe ® Reader ®](https://get.adobe.com/reader/), versione 8 o successiva per aprire e inviare PDF forms basati su XFA.
-* Acrobat e Reader in Microsoft® Windows® consentono di configurare per l&#39;apertura dei PDF in modalità Visualizzazione protetta, impedendo l&#39;apertura dei PDF forms basati su XFA. Assicurati che la modalità Visualizzazione protetta nell’Acrobat o nel Reader sia disabilitata. Per ulteriori informazioni, consulta [Visualizzazione protetta (solo Windows)](https://helpx.adobe.com/in/reader/using/protected-mode-windows.html).
+* Acrobat e Reader, in Microsoft® Windows®, consentono di configurare per l&#39;apertura dei PDF in modalità Visualizzazione protetta, che impedisce l&#39;apertura dei PDF forms basati su XFA. Assicurati che la modalità Visualizzazione protetta nell’Acrobat o nel Reader sia disabilitata. Per ulteriori informazioni, consulta [Visualizzazione protetta (solo Windows)](https://helpx.adobe.com/in/reader/using/protected-mode-windows.html).
 * (Per sviluppatori Forms) Adobe Experience Manager Forms fornisce anche supporto per:
 
    * [eseguire il rendering di moduli basati su XFA in HTML5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/introduction.html?#key-capabilities-of-html-forms-br) in modo che i moduli possano essere aperti in browser che supportano HTML5, inclusi i browser in esecuzione su dispositivi mobili come iPad. La rappresentazione HTML5 dei moduli mantiene il layout della struttura del modulo e supporta la maggior parte delle logiche del modulo (ad esempio JavaScript, calcolo del modulo e convalide del modulo) incorporate nel modello di modulo XFA.

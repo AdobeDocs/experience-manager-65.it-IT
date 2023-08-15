@@ -6,9 +6,9 @@ role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Il modo più semplice per organizzare le risorse è salvarle nelle cartelle. È 
 
 Utilizzando i tag, come metadati, puoi facilmente cercare le risorse, creare raccolte utilizzando i risultati della ricerca, migliorare la classificazione delle ricerche per alcune risorse e utilizzare gli algoritmi di intelligenza artificiale di Adobe Sensei per l’individuazione delle risorse.
 
-[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che ti consentano di trovare la risorsa giusta con pochi clic. L’assegnazione tag avanzati utilizza Adobe Sensei, il framework di intelligenza artificiale e apprendimento automatico di Adobe, che può essere addestrato per riconoscere e applicare tag standard e specifici per l’azienda alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse
+[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che ti consentono di trovare la risorsa giusta con pochi clic. L’assegnazione tag avanzati utilizza Adobe Sensei, il framework di intelligenza artificiale e apprendimento automatico di Adobe, che può essere addestrato per riconoscere e applicare tag standard e specifici per l’azienda alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse
 
 Per ulteriori informazioni, consulta i seguenti articoli:
 
@@ -78,4 +78,4 @@ La standardizzazione dell’utilizzo dei metadati, della denominazione dei file 
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
 >* [Profili metadati](/help/assets/metadata-config.md#metadata-profiles).
 >* [Profili video](video-profiles.md).
->* [Profili immagine Dynamic Media](image-profiles.md).
+>* [Profili immagine Dynamic Medie](image-profiles.md).

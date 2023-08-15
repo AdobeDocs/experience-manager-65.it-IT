@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3025'
-ht-degree: 42%
+source-wordcount: '3017'
+ht-degree: 41%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 42%
 
 ### Interfaccia touch {#a-touch-enabled-ui}
 
-L’interfaccia utente AEM è stata abilitata per il tocco. Un’interfaccia touch consente di interagire con il software con azioni come toccare, tenere premuto e scorrere. Questo è in contrasto con il funzionamento di un&#39;interfaccia desktop tradizionale con azioni del mouse come clic, doppio clic, clic con il pulsante destro del mouse e passaggio del mouse.
+L’interfaccia utente AEM è stata abilitata per il tocco. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali toccare, tenere premuto e scorrere. Questo è in contrasto con il funzionamento di un&#39;interfaccia desktop tradizionale con azioni del mouse come clic, doppio clic, clic con il pulsante destro del mouse e passaggio del mouse.
 
 Poiché l’interfaccia utente dell’AEM è dotata di funzionalità touch, puoi utilizzare i gesti touch sui dispositivi touch (ad esempio, dispositivi mobili o tablet) e le azioni del mouse su un dispositivo desktop tradizionale.
 
@@ -401,7 +401,7 @@ In tutte le viste, tutti gli elementi possono essere deselezionati toccando esca
 
 ![Vista a colonne](assets/bh-16.png)
 
-La vista a colonne consente una navigazione visiva di una struttura del contenuto attraverso una serie di colonne a cascata. Questa vista consente di visualizzare e scorrere la struttura ad albero del sito web.
+La vista a colonne consente una navigazione visiva di una struttura del contenuto attraverso una serie di colonne a cascata. Questa visualizzazione consente di visualizzare e scorrere la struttura ad albero del sito web.
 
 Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengono visualizzate in una colonna a destra. Selezionando una risorsa nella colonna di destra, le risorse figlie verranno visualizzate in un’altra colonna a destra e così via.
 
@@ -537,7 +537,7 @@ Utilizzando il pannello laterale della struttura del contenuto insieme a una vis
 
 La timeline può essere utilizzata per visualizzare e/o avviare eventi che si sono verificati sulla risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
-La colonna della timeline consente di effettuare le seguenti operazioni:
+La colonna della timeline consente di:
 
 * [Visualizzare vari eventi relativi all’elemento selezionato.](#timelineviewevents)
 

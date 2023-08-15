@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3080'
-ht-degree: 43%
+source-wordcount: '3067'
+ht-degree: 38%
 
 ---
 
@@ -112,7 +112,7 @@ La notifica elenca il flusso di lavoro in esecuzione sulla pagina. Se l’utente
 
 Il completamento e la delega delle fasi del flusso di lavoro a partire dalla barra delle notifiche funzionano in modo analogo alla [partecipazione ai flussi di lavoro](/help/sites-authoring/workflows-participating.md) a partire dalla casella in entrata delle Notifiche.
 
-Se la pagina è soggetta a più flussi di lavoro, il numero dei flussi di lavoro viene visualizzato all’estremità destra della notifica, insieme ai pulsanti freccia che consentono di scorrere i flussi di lavoro.
+Se la pagina è soggetta a più flussi di lavoro, il numero di flussi di lavoro viene visualizzato all’estremità destra della notifica, insieme ai pulsanti freccia che consentono di scorrere i flussi di lavoro.
 
 ![Notifica per numero di flussi di lavoro](assets/chlimage_1-122.png)
 
@@ -157,7 +157,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
    * Se utilizzi un dispositivo desktop, puoi fare doppio clic sulla casella **Trascina qui i componenti**.
 
-   Viene visualizzata la finestra di dialogo **Inserisci nuovo componente**, che consente di selezionare il componente richiesto:
+   Il **Inserisci nuovo componente** viene visualizzata una finestra di dialogo che consente di selezionare il componente richiesto:
 
    ![Inserisci nuovo componente](assets/screen_shot_2018-03-22at112650.png)
 
@@ -230,13 +230,13 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
 * **Modifica**
 
-  [In base al tipo di componente,](/help/sites-authoring/default-components.md) questo comando consente di [modificare il contenuto del componente](#edit-content). Spesso è disponibile una barra degli strumenti.
+  [Dipende dal tipo di componente](/help/sites-authoring/default-components.md) questo ti consentirà di [modificare il contenuto del componente](#edit-content). Spesso è disponibile una barra degli strumenti.
 
   ![Modifica](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configura**
 
-  [In base al tipo di componente,](/help/sites-authoring/default-components.md) questo comando consente di modificare e configurare le proprietà del componente. In genere presenta una finestra di dialogo.
+  [Dipende dal tipo di componente](/help/sites-authoring/default-components.md) questo ti consente di modificare e configurare le proprietà del componente. In genere presenta una finestra di dialogo.
 
   ![Configura](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -292,13 +292,13 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
 * **Layout**
 
-  Questo consente di modificare [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente selezionato. Questo si applica solo al componente selezionato e non attiva il [Modalità Layout](/help/sites-authoring/author-environment-tools.md#page-modes) per l’intera pagina.
+  Questo ti consente di modificare [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente selezionato. Questo si applica solo al componente selezionato e non attiva il [Modalità Layout](/help/sites-authoring/author-environment-tools.md#page-modes) per l’intera pagina.
 
   ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Converti in variante di frammento di esperienza**
 
-  Consente di creare un nuovo [Frammento esperienza](/help/sites-authoring/experience-fragments.md) dal componente selezionato o di aggiungerlo a un frammento di esperienza esistente.
+  Questo ti consente di creare un nuovo [frammento esperienza](/help/sites-authoring/experience-fragments.md) dal componente selezionato o aggiungilo a un frammento di esperienza esistente.
 
   ![Converti in variante frammento esperienza](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -494,7 +494,7 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 Durante la modifica del contenuto è possibile visualizzare l’anteprima della pagina utilizzando [modalità](/help/sites-authoring/author-environment-tools.md#page-modes). Questa modalità:
 
 * Nasconde vari meccanismi di modifica per fornire un’indicazione rapida di come apparirà la pagina una volta pubblicata.
-* Consente di utilizzare i collegamenti per spostarsi.
+* Consente di utilizzare i collegamenti per navigare.
 * Does **non** aggiorna il contenuto della pagina.
 
 Durante l’authoring, la modalità di anteprima è disponibile utilizzando l’icona in alto a destra nell’editor di pagine:
@@ -507,7 +507,7 @@ L’opzione **Visualizza come pubblicato**, è disponibile nel menu [Informazion
 
 ## Blocco di una pagina   {#locking-a-page}
 
-AEM consente di bloccare una pagina in modo da impedire che i contenuti possano essere modificati. Questa funzione è utile quando si devono apportare numerose modifiche a una pagina oppure se occorre bloccarla per un breve periodo di tempo.
+AEM consente di bloccare una pagina in modo che nessun altro possa modificarne il contenuto. Questa funzione è utile quando si devono apportare numerose modifiche a una pagina oppure se occorre bloccarla per un breve periodo di tempo.
 
 Una pagina può essere bloccata da:
 
@@ -549,7 +549,7 @@ Nel menu Informazioni pagina è presente l’opzione **Sblocca** e l’icona Blo
 
 ## Annullamento e ripristino di operazioni di modifica delle pagine {#undoing-and-redoing-page-edits}
 
-Le icone seguenti consentono di annullare o ripristinare un’azione. Vengono visualizzate sulla barra degli strumenti quando necessario:
+Le icone seguenti consentono di annullare o ripristinare un’azione. Questi sono visualizzati nella barra degli strumenti quando appropriato:
 
 ![Annulla e Ripristina](do-not-localize/screen_shot_2018-03-23at093614.png)
 
@@ -590,7 +590,7 @@ Potete utilizzare le opzioni Annulla (Undo) e Ripristina (Redo) per i seguenti t
 * Modifica diretta del contenuto dei paragrafi
 * Copiare, tagliare e incollare elementi in una pagina
 
-I campi modulo di cui viene eseguito il rendering dei componenti modulo non devono avere valori specificati durante la creazione di pagine. Pertanto, i comandi Annulla e Ripristina non influiscono sulle modifiche apportate ai valori di questi tipi di componenti. Ad esempio, non è possibile annullare la selezione di un valore in un elenco a discesa.
+I campi modulo di cui viene eseguito il rendering dei componenti modulo non devono avere valori specificati durante l’authoring delle pagine. Pertanto, i comandi Annulla e Ripristina non influiscono sulle modifiche apportate ai valori di questi tipi di componenti. Ad esempio, non è possibile annullare la selezione di un valore in un elenco a discesa.
 
 >[!NOTE]
 >

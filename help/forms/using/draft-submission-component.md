@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti o
 
 Quando si utilizza l’azione di invio Forms Portal o si abilita l’opzione Memorizza dati nel portale dei moduli in un modulo adattivo, i dati del modulo vengono memorizzati nell’archivio AEM. In un ambiente di produzione, si consiglia di non memorizzare i dati delle bozze o dei moduli inviati nell’archivio AEM. Per memorizzare le bozze e i dati dei moduli inviati, è necessario integrare il componente bozze e invio con un archivio sicuro come il database aziendale.
 
-Il portale Forms consente di memorizzare i dati nell&#39;archivio AEM locale, nell&#39;archivio AEM remoto o in un database. AEM Forms consente di personalizzare l’implementazione della memorizzazione dei dati utente per le bozze e gli invii. È possibile sovrascrivere i metodi predefiniti per specificare in che modo i dati relativi a bozze e invii vengono memorizzati in un archivio scelto. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
+Il portale Forms consente di archiviare i dati nell&#39;archivio AEM locale, nell&#39;archivio AEM remoto o in un database. AEM Forms consente di personalizzare l’implementazione della memorizzazione dei dati utente per le bozze e gli invii. È possibile sovrascrivere i metodi predefiniti per specificare in che modo i dati relativi a bozze e invii vengono memorizzati in un archivio scelto. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
 
 Forms portal fornisce servizi pronti all’uso (API) per memorizzare i dati sull’archivio crx delle istanze di pubblicazione AEM Forms locali e remote. Puoi sostituire le implementazioni predefinite, descritte in [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md) con implementazioni personalizzate per sostituire le funzionalità predefinite. Per informazioni dettagliate sui metodi necessari in un’implementazione personalizzata per memorizzare il contenuto in una posizione protetta, consulta [Personalizzazione dei servizi dati per bozze e invii](/help/forms/using/custom-draft-submission-data-services.md) e [Archiviazione personalizzata per il componente Bozze e invii.](/help/forms/using/adding-custom-storage-provider-forms.md)
 

@@ -1,14 +1,14 @@
 ---
 title: Concetti
-description: Concetti generali sull’e-commerce con Adobe Experience Manager.
+description: Concetti generali di e-commerce con Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4484'
+source-wordcount: '4478'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Il framework di integrazione fornisce i meccanismi e i componenti necessari per:
 Ciò significa che:
 
 * Gli acquirenti possono registrarsi e fare acquisti senza attendere.
-* Gli acquirenti vedono le variazioni di prezzo senza indugio.
+* Gli acquirenti vedono subito le variazioni di prezzo.
 * I prodotti possono essere aggiunti in base alle esigenze.
 
 >[!NOTE]
@@ -115,7 +115,7 @@ Il framework consente di accedere a funzionalità quali:
 
 L’eCommerce dell’AEM è implementato con un motore di eCommerce:
 
-* Il framework di integrazione dell’eCommerce è stato creato per consentire di integrare facilmente un motore di eCommerce con l’AEM. Il motore di eCommerce appositamente creato controlla i dati dei prodotti, i carrelli, il pagamento e l’evasione degli ordini, mentre l’AEM controlla la visualizzazione dei dati e le campagne di marketing.
+* Il framework di integrazione dell’eCommerce è stato creato per consentirti di integrare facilmente un motore di eCommerce con l’AEM. Il motore di eCommerce appositamente creato controlla i dati dei prodotti, i carrelli, il pagamento e l’evasione degli ordini, mentre l’AEM controlla la visualizzazione dei dati e le campagne di marketing.
 
 
 >[!NOTE]
@@ -198,7 +198,7 @@ Anche se la posizione effettiva può dipendere dall’implementazione; ad esempi
 
 #### Categorie strutturali e di marketing {#structural-versus-marketing-categories}
 
-Se le due categorie seguenti possono essere differenziate, ciò ti consente di specificare chiaramente gli URL con una struttura significativa (strutture di `cq:Page` e quindi molto vicino alla classica gestione dei contenuti AEM):
+Se le due categorie seguenti possono essere differenziate, questo ti consente di specificare chiaramente gli URL con una struttura significativa (strutture di `cq:Page` e quindi molto vicino alla classica gestione dei contenuti AEM):
 
 * *Categorie strutturali
 
@@ -239,7 +239,7 @@ Per i prodotti appropriati, possono essere conservate anche informazioni sulle v
 
 ### Attributi del prodotto {#product-attributes}
 
-I singoli attributi mantenuti per ciascun prodotto possono dipendere dal motore di eCommerce utilizzato e dall’implementazione dell’AEM. Sono disponibili (a seconda del caso) quando si visualizzano pagine di prodotto e/o si modificano informazioni sul prodotto e possono includere:
+I singoli attributi mantenuti per ciascun prodotto possono dipendere dal motore di eCommerce utilizzato e dall’implementazione dell’AEM. Questi sono disponibili (a seconda dei casi) quando si visualizzano pagine di prodotto e/o si modificano informazioni sul prodotto e possono includere:
 
 * **Immagine**
 
@@ -418,7 +418,7 @@ Per tutte le implementazioni, è possibile tenere presenti i seguenti punti:
 
   Maggiore è il numero di nodi disponibili, maggiore è la flessibilità del contenuto (ad esempio, parsys). Tuttavia, tutto è un compromesso e hai bisogno di flessibilità individuale (per impostazione predefinita) durante la manipolazione (ad esempio) di prodotti 30K?
 
-* Evita la duplicazione il più possibile (consulta localizzazione) o, in caso affermativo, pensa a quanti nodi porta la duplicazione.
+* Evita la duplicazione il più possibile (consulta localizzazione) o, quando lo fai, pensa a quanti nodi porta la duplicazione.
 * Prova a assegnare tag al contenuto il più possibile per preparare l’ottimizzazione della query.
 
   Ad esempio:
@@ -528,7 +528,7 @@ Per l&#39;AEM:
 
 ### Promozioni {#promotions}
 
-Le promozioni, insieme ai voucher, consentono di realizzare scenari come:
+Le promozioni, insieme ai voucher, ti permettono di realizzare scenari come:
 
 * Un&#39;azienda fornisce prezzi personalizzati per i dipendenti, che è un elenco di utenti creato a mano.
 * I clienti a lungo termine ricevono sconti su tutti gli ordini.
@@ -865,4 +865,4 @@ Se hai bisogno di un’implementazione più completa, puoi effettuare le seguent
 * Estendi il componente di ricerca predefinito con la funzionalità necessaria.
 * Implementare il metodo di ricerca nel `CommerceService` e quindi utilizza il componente di ricerca eCommerce nella pagina di ricerca.
 
-Quando utilizzi un motore di eCommerce, l’API di ricerca di eCommerce può essere completamente implementata nella soluzione del motore di eCommerce, in modo da poter utilizzare il componente di ricerca di eCommerce fornito come strumento pronto all’uso. La ricerca con facet consente di cercare in JCR e/o nel motore:
+Quando utilizzi un motore di eCommerce, l’API di ricerca di eCommerce può essere completamente implementata nella soluzione del motore di eCommerce, in modo da poter utilizzare il componente di ricerca di eCommerce fornito come strumento pronto all’uso. La ricerca sfaccettata consente di cercare JCR e/o il motore:

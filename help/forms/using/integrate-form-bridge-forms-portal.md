@@ -11,16 +11,16 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
 # Integrazione di Form Bridge con portale personalizzato per HTML5 Forms{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge è un&#39;API bridge di HTML5 forms che consente di interagire con un modulo. Per informazioni di riferimento sull’API di FormBridge, consulta [Riferimento API di FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge è un’API bridge di HTML5 forms che consente di interagire con un modulo. Per informazioni di riferimento sull’API di FormBridge, consulta [Riferimento API di FormBridge](/help/forms/using/form-bridge-apis.md).
 
 È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi modulo dalla pagina HTML e inviare il modulo. Ad esempio, puoi utilizzare l’API per creare un’esperienza simile a una procedura guidata.
 
@@ -80,7 +80,11 @@ Un’applicazione HTML esistente può sfruttare l’API FormBridge per interagir
    >
    >
    >Il &lt;div id=&quot;rightdiv&quot;> tag su **riga 18** contiene il frammento HTML del modulo XFA.
+   >
+   >
    Lo stile della pagina è suddiviso in due contenitori: **left** e **destra**. Il contenitore corretto contiene il modulo. Il contenitore sinistro dispone di due campi di input e fa parte della pagina HTML esterna.
+   >
+   >
    Nella schermata seguente viene illustrato come il modulo viene visualizzato in un browser.
 
    ![portale](assets/portal.jpg)

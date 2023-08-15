@@ -1,14 +1,14 @@
 ---
 title: Dispositivi mobili con sincronizzazione contenuti
-description: Segui questa pagina per scoprire di più sulla sincronizzazione dei contenuti. Le pagine create in Adobe Experience Manager (AEM) possono essere utilizzate come contenuto dell’app, anche quando il dispositivo non è in linea. Inoltre, poiché le pagine AEM sono basate su standard web, funzionano su più piattaforme e consentono di incorporarle in qualsiasi wrapper nativo. Questa strategia riduce lo sforzo di sviluppo e consente di aggiornare facilmente i contenuti dell’app.
+description: Segui questa pagina per scoprire di più sulla sincronizzazione dei contenuti. Le pagine create in Adobe Experience Manager (AEM) possono essere utilizzate come contenuto dell’app, anche quando il dispositivo è offline. Inoltre, poiché le pagine AEM sono basate su standard web, funzionano su più piattaforme e consentono di incorporarle in qualsiasi wrapper nativo. Questa strategia riduce lo sforzo di sviluppo e consente di aggiornare facilmente i contenuti dell’app.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2974'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Utilizza Sincronizzazione contenuti per creare pacchetti di contenuti in modo che possano essere utilizzati nelle applicazioni native per dispositivi mobili. Le pagine create in Adobe Experience Manager (AEM) possono essere utilizzate come contenuto dell’app, anche quando il dispositivo non è in linea. Inoltre, poiché le pagine AEM sono basate su standard web, funzionano su più piattaforme e consentono di incorporarle in qualsiasi wrapper nativo. Questa strategia riduce lo sforzo di sviluppo e consente di aggiornare facilmente i contenuti dell’app.
+Utilizza Sincronizzazione contenuti per creare pacchetti di contenuti in modo che possano essere utilizzati nelle applicazioni native per dispositivi mobili. Le pagine create in Adobe Experience Manager (AEM) possono essere utilizzate come contenuto dell’app, anche quando il dispositivo è offline. Inoltre, poiché le pagine AEM sono basate su standard web, funzionano su più piattaforme e consentono di incorporarle in qualsiasi wrapper nativo. Questa strategia riduce lo sforzo di sviluppo e consente di aggiornare facilmente i contenuti dell’app.
 
 Il framework di sincronizzazione dei contenuti crea un file di archivio contenente il contenuto web. Il contenuto può essere qualsiasi cosa, da semplici pagine, immagini e file PDF o intere applicazioni Web. L’API di sincronizzazione dei contenuti consente di accedere al file di archivio dalle app per dispositivi mobili o dai processi di generazione, in modo che il contenuto possa essere recuperato e incluso nell’app.
 
@@ -347,7 +347,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 }
 ```
 
-Il `LogoUpdateHandler` la classe implementa `ContentUpdateHandler` dell&#39;interfaccia `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` metodo, che utilizza diversi argomenti:
+Il `LogoUpdateHandler` la classe implementa `ContentUpdateHandler` dell&#39;interfaccia `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` metodo, che accetta diversi argomenti:
 
 * A `ConfigEntry` istanza che consente di accedere alla voce di configurazione per la quale viene chiamato il gestore e alle relative proprietà.
 * A `lastUpdated` timestamp che indica l’ultimo aggiornamento della cache da parte di Content Sync. Il contenuto che non è stato modificato dopo tale marca temporale non deve essere aggiornato dal gestore.

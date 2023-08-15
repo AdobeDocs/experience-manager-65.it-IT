@@ -1,6 +1,6 @@
 ---
 title: Layout reattivo per le pagine di contenuto
-description: Adobe Experience Manager ti consente di realizzare un layout dinamico per le pagine.
+description: Adobe Experience Manager consente di realizzare un layout dinamico per le pagine.
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,18 +8,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 55%
+source-wordcount: '1796'
+ht-degree: 48%
 
 ---
 
 # Layout reattivo{#responsive-layout}
 
-AEM consente di disporre di un layout reattivo per le pagine utilizzando **Contenitore di layout** componente.
+AEM consente di disporre di un layout dinamico per le pagine utilizzando **Contenitore di layout** componente.
 
-Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato della periferica o della finestra. Il componente viene utilizzato [**insieme alla modalità** Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout reattivo (o dinamico) in base al dispositivo.
+Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato della periferica o della finestra. Il componente viene utilizzato insieme al [**Layout** modalità](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout dinamico a seconda del dispositivo.
 
 Il contenitore layout:
 
@@ -40,14 +40,14 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
 * Componente [**Contenitore di layout**](#adding-a-layout-container-and-its-content-edit-mode)
 
-  Questo componente è disponibile nel [browser dei componenti](/help/sites-authoring/author-environment-tools.md#components-browser) e fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia dinamica. Può essere impostato anche come sistema paragrafo predefinito sulla tua pagina.
+  Questo componente è disponibile nel [browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser) e fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia reattiva. Può essere impostato anche come sistema paragrafo predefinito sulla tua pagina.
 
 * [**Modalità Layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
   Una volta che il Contenitore di layout è collocato nella pagina, è possibile utilizzare la modalità di **Layout** per posizionare i contenuti all’interno della griglia dinamica.
 
 * [**Emulatore**](#selecting-a-device-to-emulate)
-Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
+Questo consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi vedere come verrà eseguito il rendering del contenuto utilizzando l’emulatore.
 
 Con questi meccanismi di griglia reattiva è possibile:
 
@@ -109,7 +109,7 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
    La barra degli strumenti dell’emulatore mostra le seguenti opzioni di layout aggiuntive:
 
-   * **Ruota dispositivo**: consente di ruotare l’orientamento di un dispositivo da verticale a orizzontale e viceversa.
+   * **Ruota dispositivo** - Consente di ruotare l&#39;orientamento di un dispositivo da verticale a orizzontale e viceversa.
 
      ![Ruota dispositivo](do-not-localize/screen_shot_2018-03-23at084612.png) ![Ruota dispositivo](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -216,7 +216,7 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
   >
   >Proporzioni e rapporti relativi saranno mantenuti al ridimensionamento di componenti come le **immagini**.
 
-* Facendo clic/toccando un componente di contenuti la barra degli strumenti consente di:
+* Tocca o fai clic su un componente di contenuto; la barra degli strumenti ti consente di:
 
    * **Elemento padre**
 

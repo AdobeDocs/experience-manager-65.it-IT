@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6036'
+source-wordcount: '6026'
 ht-degree: 7%
 
 ---
@@ -131,7 +131,7 @@ Per informazioni sulla personalizzazione del componente Immagine adattiva, consu
 
 ### Carosello {#carousel}
 
-Il componente Carosello consente di visualizzare le immagini associate alle singole pagine:
+Il componente Carosello consente di visualizzare le immagini associate a singole pagine:
 
 * uno alla volta
 * per un breve periodo

@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ Adobe Campaign Prima di tutto, verifica che la connessione tra le istanze di aut
 >[!NOTE]
 >
 >Assicurati che le **acMapping** proprietà nel file della pagina **jcr:content** nodo impostato su **mapRecipient** o **profilo** quando si utilizza rispettivamente Adobe Campaign Classic o Adobe Campaign Standard
+>
 
 1. In AEM, in Sites, individua il punto in cui desideri creare una nuova pagina.
 1. Crea una pagina e seleziona **Profilo Adobe Campaign Classic** o **Profilo Adobe Campaign Standard** e fai clic su **Successivo**.
@@ -64,7 +65,7 @@ Adobe Campaign Prima di tutto, verifica che la connessione tra le istanze di aut
 
 1. In **Nome** , aggiungi il nome della pagina. Deve essere un nome JCR valido.
 1. In **Titolo** , inserisci un titolo e fai clic su **Crea**.
-1. Apri la pagina e seleziona **Apri proprietà** e in Cloud Services aggiungi la configurazione di Adobe Campaign e seleziona il segno di spunta per salvare le modifiche.
+1. Apri la pagina e seleziona **Apri proprietà** e in Cloud Service aggiungi la configurazione di Adobe Campaign e seleziona il segno di spunta per salvare le modifiche.
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
@@ -80,7 +81,7 @@ Forms dedicato ad Adobe Campaign dispone di componenti specifici. Questi compone
 
 Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulteriori informazioni su una panoramica più generale dell’utilizzo dei moduli in Adobe Experience Manager, consulta [Componenti modalità di modifica](/help/sites-authoring/default-components-foundation.md).
 
-1. Seleziona **Apri proprietà** e in Cloud Services aggiungi la configurazione di Adobe Campaign e seleziona il segno di spunta per salvare le modifiche.
+1. Seleziona **Apri proprietà** e in Cloud Service aggiungi la configurazione di Adobe Campaign e seleziona il segno di spunta per salvare le modifiche.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 

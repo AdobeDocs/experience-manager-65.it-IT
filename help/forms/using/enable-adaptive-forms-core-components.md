@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '888'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 7%
 
 **Si applica a:** ✅ Componenti core modulo adattivo ❎ Componenti base modulo adattivo.
 
-L’abilitazione dei componenti core di Forms adattivi consente di iniziare a creare, pubblicare e distribuire [Forms adattivo basato su componenti core](create-an-adaptive-form-core-components.md) e [Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) dall’ambiente Forms AEM 6.5.
+L’abilitazione dei componenti core adattivi di Forms consente di iniziare a creare, pubblicare e distribuire [Forms adattivo basato su componenti core](create-an-adaptive-form-core-components.md) e [Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) dall’ambiente Forms AEM 6.5.
 
 Per abilitare i componenti core HAdaptive Forms nell’ambiente Forms AEM 6.5, imposta e implementa un’ [AEM Archetipo 41 o versione successiva](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) progetto basato (con le opzioni Forms abilitate) su tutte le istanze Author e Publish.
 

@@ -9,7 +9,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5f4bbad87768cf6bd73771f9eac6e01ab3bf3309
 workflow-type: tm+mt
 source-wordcount: '6171'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Nella pagina Impostazioni tipo di file è possibile eseguire le operazioni ripor
 
 Creare o modificare un&#39;impostazione del tipo di file per specificare il modo in cui l&#39;applicazione gestisce la conversione dei tipi di file supportati. In Windows è possibile impostare le impostazioni dell&#39;applicazione per ogni tipo di file supportato. In UNIX e Linux è possibile impostare le impostazioni dell&#39;applicazione per HTML-to-PDF e OpenOffice.
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Servizi]** > **[!UICONTROL Generatore PDF]** > **[!UICONTROL Impostazioni tipo di file]**.
+1. Nella console di amministrazione, fai clic su **[!UICONTROL Servizi]** > **[!UICONTROL PDF Generator]** > **[!UICONTROL Impostazioni tipo di file]**.
 1. Fai clic su Nuovo o sul nome di un’impostazione.
 1. Nella casella Estensioni nome file digitare le estensioni del nome file, separate da virgole, per i tipi di file accettati per l&#39;applicazione. Non includere il periodo prima o uno spazio tra le estensioni. Il valore predefinito è `bmp,gif,jpeg,jpg,tif,tiff,png`.
 1. (Facoltativo) Per utilizzare il riconoscimento del codice ottico (OCR) del testo in immagini o immagini, selezionate Usa OCR (Use OCR) e impostate le seguenti opzioni:
@@ -106,7 +106,7 @@ Creare o modificare un&#39;impostazione del tipo di file per specificare il modo
 
 È possibile eliminare un&#39;impostazione del tipo di file non più utilizzata.
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Servizi > Generatore di PDF> Impostazioni tipo di file]**.
+1. Nella console di amministrazione, fai clic su **[!UICONTROL Servizi > PDF Generator > Impostazioni tipo di file]**.
 1. Selezionare la casella di controllo accanto all&#39;impostazione da eliminare. È possibile selezionare più origini. Le impostazioni prive di una casella di controllo accanto a esse sono sempre incluse in PDF Generator e non possono essere eliminate.
 1. Clic **[!UICONTROL Elimina]** e nella pagina Conferma eliminazione fai clic su **[!UICONTROL Elimina]**.
 
@@ -218,7 +218,7 @@ Abilitare queste opzioni per specificare l&#39;aspetto della finestra:
 
 ## Flash video in impostazioni PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator supporta la possibilità di inviare un video, ad Adobe un Flash (file SWF o FLV), e di creare un file PDF con un video, ad Adobe un Flash incorporato. Questa conversione non richiede l&#39;installazione del Flash Player Adobe nel server Forms. Per istruzioni sull’accesso a questa opzione, consulta [Creare o modificare le impostazioni del tipo di file](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator supporta la possibilità di inviare un video, ad Adobe un Flash (file SWF o FLV) e di creare un file PDF con un video, ad Adobe un Flash incorporato. Questa conversione non richiede l&#39;installazione del Flash Player Adobe nel server Forms. Per istruzioni sull’accesso a questa opzione, consulta [Creare o modificare le impostazioni del tipo di file](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Estensioni nome file:** Elenco separato da virgole delle estensioni dei nomi di file che possono essere convertite.
 
@@ -410,7 +410,7 @@ Selezionate una delle seguenti opzioni di compressione Flate dal menu a discesa:
 
 Queste opzioni determinano la modalità di conversione dei file di Microsoft Excel. Per istruzioni sull&#39;accesso a queste opzioni, vedere [Creare o modificare le impostazioni del tipo di file](#create-or-edit-file-type-settings).
 
-**Prova OpenOffice come convertitore di fallback**: quando questa opzione è selezionata e una conversione con Microsoft Excel ha esito negativo o raggiunge il limite di timeout specificato, PDF Generator tenta di eseguire la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene scritta un&#39;eccezione.
+**Prova OpenOffice come convertitore di fallback**: quando questa opzione è selezionata e una conversione con Microsoft Excel ha esito negativo o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene scritta un&#39;eccezione.
 
 **Estensioni nome file**: specifica le estensioni del nome file per i tipi di file, separati da virgole, accettati per l&#39;applicazione. Il valore predefinito è `xls,xlsx`. Non includere un punto prima o uno spazio tra le estensioni.
 
@@ -440,7 +440,7 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Exc
 
 Queste opzioni determinano la modalità di conversione dei file di Microsoft PowerPoint. Per istruzioni sull&#39;accesso a queste opzioni, vedere [Creare o modificare le impostazioni del tipo di file](/help/forms/using/admin-help/configuring-file-type-settings1.md#create-or-edit-file-type-settings).
 
-**[!UICONTROL Prova OpenOffice come convertitore di fallback]**: quando questa opzione è selezionata e una conversione con Microsoft PowerPoint ha esito negativo o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene scritta un&#39;eccezione.
+**[!UICONTROL Prova OpenOffice come convertitore di fallback]**: quando questa opzione è selezionata e una conversione con Microsoft PowerPoint non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene scritta un&#39;eccezione.
 
 **[!UICONTROL Estensioni nome file]**: specifica le estensioni del nome file per i tipi di file, separati da virgole, accettati per l&#39;applicazione. Il valore predefinito è ppt,pptx. Non includere un punto prima o uno spazio tra le estensioni.
 
@@ -485,7 +485,7 @@ Queste opzioni determinano la modalità di conversione dei file di progetto di M
 
 Queste opzioni determinano la modalità di conversione dei file di Microsoft Word. Per istruzioni sull&#39;accesso a queste opzioni, vedere [Creare o modificare le impostazioni del tipo di file](#create-or-edit-file-type-settings).
 
-**[!UICONTROL Prova OpenOffice come convertitore di fallback]**: quando questa opzione è selezionata e una conversione con Microsoft Word ha esito negativo o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene scritta un&#39;eccezione.
+**[!UICONTROL Prova OpenOffice come convertitore di fallback]**: quando questa opzione è selezionata e una conversione con Microsoft Word non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene scritta un&#39;eccezione.
 
 **[!UICONTROL Estensioni nome file]**: specifica le estensioni del nome file per i tipi di file, separati da virgole, accettati per l&#39;applicazione. Il valore predefinito è `doc,docx,rtf,txt`. Non includere un punto prima o uno spazio tra le estensioni.
 
@@ -573,7 +573,7 @@ Queste opzioni determinano la modalità di conversione dei file AutoCAD. Per ist
 
 **[!UICONTROL Crea file conforme a PDF/A-1b]**: Forza l’utilizzo dell’impostazione Adobe PDF PDF/A-1b.
 
-**[!UICONTROL Converti tutti i livelli]**: per default, il Generatore di PDF converte solo il livello di default dei file AutoCAD in PDF anziché tutti i livelli all&#39;interno del file. Selezionate questa opzione per convertire tutti i livelli del file.
+**[!UICONTROL Converti tutti i livelli]**: per default, PDF Generator converte solo il livello di default dei file AutoCAD in PDF anziché tutti i livelli all&#39;interno del file. Selezionate questa opzione per convertire tutti i livelli del file.
 
 **[!UICONTROL Incorpora informazioni scala]**: mantiene le informazioni sulla scala del disegno.
 
@@ -585,7 +585,7 @@ Queste opzioni determinano la modalità di conversione dei file AutoCAD. Per ist
 
 Queste opzioni determinano la modalità di conversione dei file di OpenOffice. Per istruzioni sull&#39;accesso a queste opzioni, vedere [Creare o modificare le impostazioni del tipo di file](/help/forms/using/admin-help/configuring-file-type-settings1.md#create-or-edit-file-type-settings).
 
-**Prova PDFMaker come fallback Converter**: quando questa opzione è selezionata e una conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta di eseguire la conversione utilizzando PDFMaker. Se la conversione tramite PDFMaker non riesce o raggiunge il limite di timeout specificato, nel file di registro viene scritta un&#39;eccezione.
+**Prova PDFMaker come fallback Converter**: quando questa opzione è selezionata e una conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando PDFMaker. Se la conversione tramite PDFMaker non riesce o raggiunge il limite di timeout specificato, nel file di registro viene scritta un&#39;eccezione.
 
 **Estensioni nome file**: specifica le estensioni del nome file per i tipi di file, separati da virgole, accettati per questa applicazione. Il valore predefinito è `odt,odp,ods,odg,odf,sxw,sxi,sxd`. Non includere un punto prima o uno spazio tra le estensioni.
 

@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 294d12e7d1b5293f165a164ff1fcc624f7b2b648
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1567'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 È probabile che i clienti abbandonino un modulo se l’esperienza che fornisce non è coinvolgente. Se da un lato è frustrante per i clienti, dall’altro può anche aumentare il volume e i costi del supporto per la tua organizzazione. Identificare e fornire la giusta esperienza del cliente che aumenti il tasso di conversione è fondamentale oltre che impegnativo. Adobe Experience Manager Forms è la chiave di questo problema.
 
-AEM Forms si integra con Adobe Target, una soluzione Adobe Marketing Cloud, per offrire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Una delle funzionalità principali di Target è il test A/B, che consente di configurare rapidamente test A/B simultanei, presentare contenuti rilevanti a utenti mirati e identificare l’esperienza che determina un migliore tasso di conversione.
+AEM Forms si integra con Adobe Target, una soluzione Adobe Marketing Cloud, per offrire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Una delle funzionalità principali di Target è il test A/B, che consente di configurare rapidamente test A/B simultanei, presentare contenuti rilevanti agli utenti target e identificare l’esperienza che determina un migliore tasso di conversione.
 
 Con AEM Forms puoi configurare ed eseguire test A/B sui moduli adattivi in tempo reale. Fornisce inoltre funzionalità di reporting pronte all’uso e personalizzabili per visualizzare le prestazioni in tempo reale delle esperienze dei moduli e identificare quella che massimizza il coinvolgimento e la conversione degli utenti.
 
@@ -84,6 +84,7 @@ Oltre al server jboss, è possibile aggiungere l&#39;argomento -Dabtesting.enabl
 >[!NOTE]
 >
 >Se aggiorni gli URL di Target configurati in un secondo momento, accertati di aggiornare tutti i test A/B in esecuzione in modo che puntino agli URL correnti. Per informazioni sull’aggiornamento dei test A/B, consulta [Aggiorna test A/B](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>
 
 ## Creare tipi di pubblico in AEM {#create-audiences-within-aem}
 
@@ -113,7 +114,7 @@ Per creare un test A/B per un modulo adattivo, effettua le seguenti operazioni.
 1. Fai clic su **Seleziona** nella barra degli strumenti e seleziona il modulo adattivo.
 1. Clic **Altro** nella barra degli strumenti e seleziona **Configurare il test A/B**. Viene visualizzata la pagina Configura test A/B.
 
-[ ](assets/ab-test-configure-1.png)
+[](assets/ab-test-configure-1.png)
 
 1. Specifica un **Nome attività** test A/B.
 
@@ -153,7 +154,7 @@ Dopo aver consentito l’esecuzione del test A/B per il periodo desiderato, puoi
 
 1. Seleziona il modulo adattivo e fai clic su **Altro** e quindi fare clic su **Rapporto test A/B**. Il report viene visualizzato.
 
-[ ](assets/ab-test-report-3.png)
+[](assets/ab-test-report-3.png)
 
 1. Analizza il rapporto e verifica di disporre di un numero sufficiente di punti dati per dichiarare vincitrice una delle esperienze con prestazioni migliori. Puoi scegliere di continuare con lo stesso test A/B per più tempo o dichiarare un vincitore e terminare il test A/B.
 1. Per dichiarare un vincitore e terminare il test A/B, fai clic su **Termina test A/B** nel dashboard di reporting. Viene visualizzata una finestra di dialogo in cui viene richiesto di dichiarare vincitrice una delle due esperienze. Scegli un vincitore e conferma di terminare il test A/B.

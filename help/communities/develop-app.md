@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '572'
 ht-degree: 5%
 
 ---
@@ -47,7 +47,7 @@ Utilizzo di CRXDE Lite:
 
 ### Script per la testa e il corpo {#head-and-body-scripts}
 
-1. In entrata **CRXDE Lite** riquadro di esplorazione, passare a `/apps/an-scf-sandbox/components/playpage` e fare doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
+1. In entrata **CRXDE Liti** riquadro di esplorazione, passare a `/apps/an-scf-sandbox/components/playpage` e fare doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -97,6 +97,7 @@ Utilizzo di CRXDE Lite:
    1. Fai clic con il pulsante destro del mouse e seleziona (Copia negli Appunti) `Create > Create File...`
 
       * Nome: **body.jsp**
+
    1. Clic **[!UICONTROL Salva tutto]**.
 
    Apri `/apps/an-scf-sandbox/components/playpage/body.jsp` e incolla il testo seguente:

@@ -6,9 +6,9 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Esistono varie regole da seguire quando si rinomina il file jar quickstart:
 >
 >* il numero di porta deve essere composto da 4 o 5 cifre
 >* queste cifre devono seguire un trattino
->* se il nome del file contiene altre cifre, il numero di porta deve essere preceduto da `-p`
+>* se il nome file contiene altre cifre, il numero di porta deve essere preceduto da `-p`
 >* il prefisso &quot;cq5&quot; all’inizio del nome file viene ignorato
 >
 
@@ -67,7 +67,7 @@ Infine, se esegui un’istanza aggiornata da AEM 6.3, assicurati che la seguente
 
 ## Modalità di esecuzione {#run-modes}
 
-**Modalità di esecuzione** consente di regolare l’istanza AEM per uno scopo specifico; ad esempio, authoring o pubblicazione, test, sviluppo, Intranet, ecc. Queste modalità consentono inoltre di controllare l’utilizzo di contenuti campione. Questo contenuto di esempio viene definito prima che venga creato il modulo quickstart e può includere pacchetti, configurazioni e così via. Questo può essere particolarmente utile per le installazioni pronte per la produzione quando si desidera mantenere l&#39;installazione snella e senza contenuti di esempio. Per ulteriori informazioni, consulta:
+**Modalità di esecuzione** consente di regolare l’istanza AEM per uno scopo specifico; ad esempio, authoring o pubblicazione, test, sviluppo, Intranet e così via. Queste modalità consentono inoltre di controllare l’utilizzo di contenuti campione. Questo contenuto di esempio viene definito prima che venga creato il modulo quickstart e può includere pacchetti, configurazioni e così via. Questo può essere particolarmente utile per le installazioni pronte per la produzione quando si desidera mantenere l&#39;installazione snella e senza contenuti di esempio. Per ulteriori informazioni, consulta:
 
 * [Modalità di esecuzione](/help/sites-deploying/configure-runmodes.md)
 
@@ -322,7 +322,7 @@ Prima di installare l’istanza Publish nell’ambiente EC2, effettua le seguent
 I seguenti collegamenti possono essere utilizzati per verificare che l’installazione sia operativa (tutti gli esempi si basano sul fatto che l’istanza è in esecuzione sulla porta 8080 di localhost, che CRX sia installato in /crx e Launchpad in /):
 
 * `https://localhost:8080/crx/de`
-La console CRXDE Lite.
+La console CRXDE Liti.
 
 * `https://localhost:8080/system/console`
 Console Web.
@@ -334,16 +334,16 @@ Sebbene vi siano molte possibilità di configurare AEM WCM, è necessario intrap
 * Consulta la [Elenco di controllo della sicurezza](/help/sites-administering/security-checklist.md) per le attività necessarie per garantire la protezione del sistema.
 * Rivedi l’elenco degli utenti e dei gruppi predefiniti installati con WCM AEM. Verifica se desideri intervenire su altri account - consulta [Sicurezza e amministrazione degli utenti](/help/sites-administering/security.md) per ulteriori dettagli.
 
-## Accesso a CRXDE Lite e alla console web {#accessing-crxde-lite-and-the-web-console}
+## Accesso a CRXDE Liti e alla console web {#accessing-crxde-lite-and-the-web-console}
 
 Una volta avviato WCM per AEM, puoi anche accedere a:
 
-* [CRXDE Lite](#accessing-crxde-lite) : utilizzato per accedere e gestire l’archivio
+* [CRXDE Liti](#accessing-crxde-lite) : utilizzato per accedere e gestire l’archivio
 * [Console web](#accessing-the-web-console) : utilizzato per gestire o configurare i bundle OSGi (noti anche come console OSGi)
 
-### Accesso a CRXDE Lite {#accessing-crxde-lite}
+### Accesso a CRXDE Liti {#accessing-crxde-lite}
 
-Per aprire CRXDE Lite puoi selezionare **CRXDE Lite** dalla schermata di benvenuto o utilizza il browser per passare a
+Per aprire CRXDE Liti puoi selezionare **CRXDE Liti** dalla schermata di benvenuto o utilizza il browser per passare a
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp

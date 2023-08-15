@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2385'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ Un esempio di come sviluppare un componente è descritto in dettaglio in [Estens
 
 Per sviluppare nuovi componenti per l’AEM basati su componenti esistenti, è possibile copiare il componente, creare un file JavaScript per il nuovo componente e memorizzarlo in una posizione accessibile all’AEM (vedere anche [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
 
-1. Utilizzando CRXDE Lite, crea una cartella di componenti in:
+1. Utilizzando CRXDE Liti, crea una cartella di componenti in:
 
    / `apps/<myProject>/components/<myComponent>`
 
@@ -193,7 +193,7 @@ Per sviluppare nuovi componenti per l’AEM basati su componenti esistenti, è p
 
 1. Attiva il nuovo componente nel sistema paragrafo:
 
-   * utilizzo di CRXDE Lite per aggiungere il valore `<path-to-component>` (ad esempio, `/apps/geometrixx/components/myComponent`) ai componenti proprietà del nodo `/etc/designs/geometrixx/jcr:content/contentpage/par`
+   * utilizzo di CRXDE Liti per aggiungere il valore `<path-to-component>` (ad esempio, `/apps/geometrixx/components/myComponent`) ai componenti proprietà del nodo `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * seguendo le istruzioni in [Aggiunta di nuovi componenti ai sistemi paragrafo](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
 1. In WCM per AEM, apri una pagina del sito web e inserisci un paragrafo del tipo appena creato per assicurarti che il componente funzioni correttamente.

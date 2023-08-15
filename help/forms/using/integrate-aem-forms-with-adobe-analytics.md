@@ -3,9 +3,9 @@ title: Come integrare AEM Forms con Adobe Analytics?
 description: AEM Forms si integra con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati.
 docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
-source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Per creare regole basate su **[!UICONTROL Adobe Experience Manager Forms]** este
 
    * **[!UICONTROL Cancella variabili]**: utilizza questo tipo di azione per cancellare la traccia dati in modo che l’evento si registri una sola volta in [!DNL Adobe Analytics].
 
-      L&#39;approccio consigliato è quello di utilizzare **[!UICONTROL Imposta variabili]** tipo di azione per configurare l’evento e gli elementi dati, quindi utilizza **[!UICONTROL Invia beacon]** per inviare dati e quindi utilizzare **[!UICONTROL Cancella variabili]** per cancellare la traccia dati.
+     L&#39;approccio consigliato è quello di utilizzare **[!UICONTROL Imposta variabili]** tipo di azione per configurare l’evento e gli elementi dati, quindi utilizza **[!UICONTROL Invia beacon]** per inviare dati e quindi utilizzare **[!UICONTROL Cancella variabili]** per cancellare la traccia dati.
 
 1. In **[!UICONTROL Proprietà]** , mappa le opzioni della suite di rapporti disponibili nell’elenco a discesa con gli elementi dati definiti utilizzando [Configurare gli elementi dati](#configure-data-elements).
 
@@ -202,7 +202,7 @@ Prima di creare la configurazione di Adobe Launch, crea un’ [Configurazione Ad
 
 Per creare una configurazione Launch di Adobe, effettua le seguenti operazioni:
 
-1. Nell’istanza Autore di AEM Forms, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazioni di Adobe Launch]**.
+1. Nell’istanza Autore di AEM Forms, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazioni di Adobe Launch]**.
 
 1. Seleziona una cartella per creare la configurazione e tocca **[!UICONTROL Crea]**.
 
@@ -232,6 +232,7 @@ Dopo aver abilitato [!DNL Adobe Analytics] per un modulo adattivo è possibile: 
 
 >[!NOTE]
 >Nel caso in cui entrambi [Analytics tramite Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) e **Analytics utilizzando Adobe Launch** le funzioni di siano attivate simultaneamente, **Analytics utilizzando Adobe Launch** avrà la precedenza.
+> 
 
 ### Creare regole per acquisire eventi personalizzati (facoltativo) {#capture-custom-events}
 

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3212'
 ht-degree: 1%
 
 ---
@@ -272,7 +272,7 @@ Ci sono due modi per generare e distribuire la tua app utilizzando PhoneGap.
 
 **Nota:** Per il test delle notifiche push, gli emulatori non sono sufficienti, perché le notifiche push utilizzano un protocollo distinto tra il provider push (Apple o Google) e il dispositivo. L&#39;hardware e gli emulatori Mac/PC correnti non supportano questa funzionalità.
 
-1. *PhoneGap Build* è un servizio offerto da PhoneGap che consente di creare l&#39;app sui server e di scaricarla direttamente sul dispositivo. Consulta la documentazione sulle PhoneGap Build all’indirizzo `https://build.phonegap.com/` per scoprire come impostare e utilizzare PhoneGap Build.
+1. *PhoneGap Build* è un servizio offerto da PhoneGap che consente di creare l&#39;app sul server e di scaricarla direttamente sul dispositivo. Consulta la documentazione sulle PhoneGap Build all’indirizzo `https://build.phonegap.com/` per scoprire come impostare e utilizzare PhoneGap Build.
 
 1. *Interfaccia della riga di comando PhoneGap* (CLI) consente di utilizzare un set completo di comandi PhoneGap sulla riga di comando per generare, eseguire il debug e distribuire l&#39;app. Consulta la documentazione per gli sviluppatori di PhoneGap (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) per scoprire come impostare e utilizzare PhoneGap CLI.
 

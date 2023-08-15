@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2481'
 ht-degree: 2%
 
 ---
@@ -205,7 +205,7 @@ Per garantire la sincronizzazione dei membri:
 
 ### Trigger di distribuzione Apache Sling - Factory dei trigger pianificati {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-Questa configurazione consente di configurare l’intervallo di polling (dopo il quale gli editori vengono ping e le modifiche estratte dall’autore) per sincronizzare le modifiche tra gli editori.
+Questa configurazione consente di configurare l’intervallo di polling (dopo il quale viene eseguito il ping degli editori e le modifiche vengono estratte dall’autore) per sincronizzare le modifiche tra gli editori.
 
 L’autore esegue il polling degli editori ogni 30 secondi (impostazione predefinita). Se sono presenti pacchetti nella cartella `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, quindi recupererà tali pacchetti e li installerà su altri editori.
 
@@ -343,7 +343,7 @@ Se la distribuzione Sling non riesce, prova i seguenti passaggi di debug:
    Assicurati che non vengano aggiunte o modificate più configurazioni; è invece necessario modificare le configurazioni predefinite esistenti.
 1. **Verifica configurazioni**
 
-   Assicurati che tutte le [Configurazioni](/help/communities/sync.md#bestpractices) sono impostati in modo appropriato nell’istanza di AEM Author, come indicato nella [Best practice](/help/communities/sync.md#main-pars-header-863110628).
+   Assicurati che tutte le [Configurazioni](/help/communities/sync.md#bestpractices) sono impostati in modo appropriato nell’istanza di creazione dell’AEM, come indicato nella [Best practice](/help/communities/sync.md#main-pars-header-863110628).
 
 1. **Verifica autorizzazioni utente autorizzate**
 

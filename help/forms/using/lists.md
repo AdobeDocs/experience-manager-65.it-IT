@@ -8,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '6908'
+source-wordcount: '6913'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
    ![Barra degli strumenti Paragrafo](assets/fonteditingtoolbar.png)
 
    Barra degli strumenti Paragrafo
-   [ ![Barra degli strumenti Allineamento](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra degli strumenti Allineamento
+   [![Barra degli strumenti Allineamento](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra degli strumenti Allineamento
 
    ![Barra degli strumenti Elenco](assets/bulleteditingtoolbar.png)
 
@@ -237,7 +237,7 @@ Un elenco è un gruppo di contenuti correlati che è possibile utilizzare in un 
 
 1. Specificare le seguenti informazioni per l&#39;elenco:
 
-   * **Titolo (facoltativo): Invio** il titolo dell’elenco. Il titolo non deve essere univoco e può contenere caratteri speciali e non inglesi. Gli elenchi sono indicati dai relativi titoli (se disponibili), ad esempio nelle miniature e nelle proprietà della risorsa.
+   * **Titolo (facoltativo): Invio** il titolo dell’elenco. Il titolo non deve necessariamente essere univoco e può contenere caratteri speciali e non inglesi. Gli elenchi sono indicati dai relativi titoli (se disponibili), ad esempio nelle miniature e nelle proprietà della risorsa.
    * **Nome:** Nome univoco dell&#39;elenco. Non possono esistere due risorse (testo, condizione o elenco) in nessuno stato con lo stesso nome. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini in lingua inglese. Nel campo Nome viene inserito automaticamente il valore specificato nel campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti da trattini nel campo Nome. Anche se il valore nel campo Titolo viene copiato automaticamente nel Nome, è possibile modificarlo.
    * **Descrizione (facoltativa)**: digita una descrizione della risorsa.
    * **Dizionario dati (facoltativo)**: facoltativamente, seleziona il dizionario dati a cui connetterti. È possibile aggiungere all’elenco solo le risorse che utilizzano lo stesso dizionario dati dell’elenco, oppure le risorse a cui non è assegnato alcun dizionario dati. L’assegnazione di un dizionario dati a un elenco semplifica la ricerca dell’elenco appropriato da parte di chi crea un modello di lettera.
@@ -309,7 +309,7 @@ L’editor delle condizioni consente di specificare una condizione predefinita. 
 1. Seleziona **Crea > Condizione**.
 1. Specificare le seguenti informazioni per l&#39;elenco:
 
-   * **Titolo (facoltativo):** Inserisci il titolo della condizione. Il titolo non deve essere univoco e può contenere caratteri speciali e non inglesi. Le condizioni sono indicate dai relativi titoli (se disponibili), ad esempio nelle miniature e nelle proprietà della risorsa.
+   * **Titolo (facoltativo):** Inserisci il titolo della condizione. Il titolo non deve necessariamente essere univoco e può contenere caratteri speciali e non inglesi. Le condizioni sono indicate dai relativi titoli (se disponibili), ad esempio nelle miniature e nelle proprietà della risorsa.
    * **Nome:** Nome univoco della condizione. Non possono esistere due risorse (testo, condizione o elenco) in nessuno stato con lo stesso nome. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini in lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti da trattini nel campo Nome. Anche se il valore nel campo Titolo viene copiato automaticamente nel Nome, è possibile modificarlo.
    * **Descrizione (facoltativa)** Digitare una descrizione della condizione.
    * **Dizionario dati (facoltativo)**: facoltativamente, seleziona il dizionario dati a cui connetterti. È possibile aggiungere all’elenco solo le risorse che utilizzano lo stesso dizionario dati della condizione, o le risorse a cui non è assegnato alcun dizionario dati. L’assegnazione di un dizionario dati a un elenco semplifica la ricerca della condizione appropriata da parte di chi crea un modello di lettera.
@@ -398,7 +398,7 @@ Per un esempio dettagliato dell’utilizzo di tabelle statiche e dinamiche nei f
 1. Gestione corrispondenza visualizza gli XDP disponibili. Seleziona l’XDP su cui desideri basare il frammento di layout e tocca **Successivo**.
 1. Specificare le seguenti informazioni per il layout:
 
-   * **Titolo (facoltativo):** Inserisci il titolo del frammento di layout. Il titolo non deve essere univoco e può contenere caratteri speciali e non inglesi. I frammenti di layout sono indicati dai relativi titoli (se disponibili), ad esempio nelle miniature e nelle proprietà della risorsa.
+   * **Titolo (facoltativo):** Inserisci il titolo del frammento di layout. Il titolo non deve necessariamente essere univoco e può contenere caratteri speciali e non inglesi. I frammenti di layout sono indicati dai relativi titoli (se disponibili), ad esempio nelle miniature e nelle proprietà della risorsa.
    * **Nome:** Nome univoco del frammento di layout. Non possono esistere due risorse (testo, condizione o elenco) in nessuno stato con lo stesso nome. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini in lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti da trattini nel campo Nome. Anche se il valore nel campo Titolo viene copiato automaticamente nel Nome, è possibile modificarlo. Questo nome viene visualizzato nell’elenco dell’interfaccia utente Gestione risorse.
    * **Descrizione (facoltativa)**: descrizione che viene visualizzata nell’elenco dell’interfaccia utente Gestione risorse.
    * **Tag (facoltativo)**: facoltativamente, seleziona i tag da applicare alla condizione. Puoi anche digitare il nome di un nuovo tag e crearlo.
@@ -437,7 +437,7 @@ Per impostare l&#39;associazione predefinita:
 
 1. Nell&#39;elenco Associazione predefinita per nuove sottomaschere selezionare **Nessuna associazione dati**.
 
-In questo modo, per impostazione predefinita, le sottomaschere inserite utilizzando il comando Inserisci > Sottomaschera o mediante trascinamento della selezione dalla tavolozza oggetti hanno un&#39;associazione &quot;none&quot;. Ciò significa che, per impostazione predefinita, qualsiasi nuova sottomaschera è un&#39;area di destinazione a meno che non si aggiunga contenuto, non si modifichi l&#39;impostazione di associazione o non si denomini la sottomaschera con un suffisso &quot;_int&quot;.
+In questo modo, per impostazione predefinita, le sottomaschere inserite utilizzando il comando Inserisci > Sottomaschera o mediante trascinamento della selezione dalla tavolozza degli oggetti hanno un&#39;associazione &quot;none&quot;. Ciò significa che, per impostazione predefinita, qualsiasi nuova sottomaschera è un&#39;area di destinazione a meno che non si aggiunga contenuto, non si modifichi l&#39;impostazione di associazione o non si denomini la sottomaschera con un suffisso &quot;_int&quot;.
 
 #### Conformità alla sezione 508 {#section-compliance}
 
@@ -527,7 +527,7 @@ Per ulteriori informazioni sulla progettazione dei layout, vedere [Guida di Desi
 1. Crea un frammento di layout basato su XDP statico. Nella scheda Tabella delle proprietà viene visualizzato che la tabella è statica (campo Configurazione per ). Il numero di righe (1) e colonne (3) è derivato dal frammento XDP/Layout.
 
    Puoi modificare il numero di colonne e righe qui. In base alla scelta effettuata in questa schermata, il numero di righe e colonne di una tabella statica rimane fisso nella lettera creata con questo layout.
-   [ ![Creare uno schermo per frammenti di layout](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   [![Creare uno schermo per frammenti di layout](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Crea una lettera utilizzando entrambi i frammenti di layout. Quando inserisci l’XDP dinamico nella lettera, imposta l’associazione dei suoi campi agli elementi di raccolta del dizionario dati.
 

@@ -2,7 +2,7 @@
 title: Collegamento di AEM Forms con Adobe LiveCycle
 seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: Il connettore di LiveCycle AEM consente di avviare LiveCycle ES4 Document Services dall’interno di app e flussi di lavoro AEM.
-seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
+seo-description: AEM LiveCycle connector lets you start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,12 @@ Anche se le proprietà sono auto-esplicative, quelle importanti sono le seguenti
 
 * **URL server** - Specifica l&#39;URL del server di LiveCycle. Se desideri che il LiveCycle e l’AEM comunichino con https, inizia AEM con la seguente JVM
 
-   ```java
-   argument
-    -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
-   ```
+  ```java
+  argument
+   -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
+  ```
 
-   opzione.
+  opzione.
 
 * **Nome utente**- Specifica il nome utente dell&#39;account utilizzato per stabilire la comunicazione tra AEM e LiveCycle. L’account è un account utente di LiveCycle che dispone delle autorizzazioni necessarie per avviare Document Services.
 * **Password**- Specifica la password.
@@ -162,7 +162,7 @@ La configurazione dell’SDK del client di LiveCycle contiene un’impostazione 
 
 ### RunAsManager {#runasmanager}
 
-Come parte dell’integrazione, viene fornito un nuovo servizio RunAsManager. Consente di controllare a livello di programmazione le credenziali da utilizzare per effettuare chiamate al server di LiveCycle.
+Come parte dell’integrazione, viene fornito un nuovo servizio RunAsManager. Consente di controllare a livello di programmazione le credenziali da utilizzare quando si effettua una chiamata al server di LiveCycle.
 
 ```java
 import com.adobe.livecycle.dsc.clientsdk.security.PasswordCredential;

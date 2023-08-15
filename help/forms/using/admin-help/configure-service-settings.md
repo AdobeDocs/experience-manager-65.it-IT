@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 3e6eba85dbd9e98ac29fed55c1787e5633bafc04
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '10683'
+source-wordcount: '10678'
 ht-degree: 0%
 
 ---
@@ -249,11 +249,11 @@ Il servizio Generate PDF ( `GeneratePDFService`) converte i file in vari formati
 
 Per il servizio Generate PDF sono disponibili le impostazioni seguenti.
 
-**Impostazioni Adobe PDF:** Il nome delle impostazioni Adobe PDF preconfigurate da applicare a un processo di conversione, se tali impostazioni non sono specificate come parte dei parametri di chiamata API. Le impostazioni di Adobe PDF vengono configurate nella console di amministrazione facendo clic su Servizi > Generatore di PDF > Impostazioni di Adobe PDF. Queste impostazioni sono applicabili solo alle conversioni basate su PDFMaker.
+**Impostazioni Adobe PDF:** Il nome delle impostazioni Adobe PDF preconfigurate da applicare a un processo di conversione, se tali impostazioni non sono specificate come parte dei parametri di chiamata API. Le impostazioni di Adobe PDF vengono configurate nella console di amministrazione facendo clic su Servizi > PDF Generator > Impostazioni Adobe PDF. Queste impostazioni sono applicabili solo alle conversioni basate su PDFMaker.
 
-**Impostazioni di protezione:** Il nome delle impostazioni di sicurezza preconfigurate da applicare a un processo di conversione, se tali impostazioni non sono specificate come parte dei parametri di chiamata API. Le impostazioni di protezione vengono configurate nella console di amministrazione facendo clic su Servizi > Generatore di PDF > Impostazioni protezione.
+**Impostazioni di protezione:** Il nome delle impostazioni di sicurezza preconfigurate da applicare a un processo di conversione, se tali impostazioni non sono specificate come parte dei parametri di chiamata API. Le impostazioni di protezione vengono configurate nella console di amministrazione facendo clic su Servizi > PDF Generator > Impostazioni protezione.
 
-**Impostazioni tipo file:** Nome dell’impostazione del tipo di file preconfigurato da applicare a un processo di conversione, se tali impostazioni non sono specificate come parte dei parametri di chiamata API. Le impostazioni del tipo di file vengono configurate nella console di amministrazione facendo clic su Servizi > Generatore di PDF > Impostazioni tipo di file.
+**Impostazioni tipo file:** Nome dell’impostazione del tipo di file preconfigurato da applicare a un processo di conversione, se tali impostazioni non sono specificate come parte dei parametri di chiamata API. Le impostazioni del tipo di file vengono configurate nella console di amministrazione facendo clic su Servizi > PDF Generator > Impostazioni tipo di file.
 
 **Usa Acrobat WebCapture (solo Windows):** Quando questa impostazione è true, il servizio Generate PDF utilizza Acrobat X Pro per tutte le conversioni da HTML a PDF. Questo può migliorare la qualità dei file PDF prodotti da HTML, anche se le prestazioni possono essere leggermente inferiori. Il valore predefinito è false.
 
@@ -267,7 +267,7 @@ Per il servizio Generate PDF sono disponibili le impostazioni seguenti.
 
 **Dimensioni pool da HTML a PDF:** Dimensione del pool del convertitore HTML-PDF nel servizio Genera PDF. Questa impostazione consente di controllare il numero massimo di conversioni HTML-PDF simultanee che il servizio Genera PDF può eseguire. Il valore predefinito di questa impostazione (consigliato per i sistemi a processore singolo) è 3, che può essere aumentato nei sistemi a più processori.
 
-**Dimensioni pool OCR:** Dimensione del pool di PaperCaptureService utilizzato da PDF Generator per l&#39;OCR. Il valore predefinito di questa impostazione (consigliato per i sistemi a processore singolo) è 3, che può essere aumentato nei sistemi a più processori. Questa impostazione è valida solo nei sistemi Windows.
+**Dimensioni pool OCR:** Dimensione del pool di PaperCaptureService utilizzato da PDF Generator per OCR. Il valore predefinito di questa impostazione (consigliato per i sistemi a processore singolo) è 3, che può essere aumentato nei sistemi a più processori. Questa impostazione è valida solo nei sistemi Windows.
 
 **Famiglia Di Font Di Fallback Per Conversioni Da HTML A PDF:** Nome della famiglia di caratteri da utilizzare nei documenti PDF quando il carattere utilizzato nel HTML originale non è disponibile per il server AEM forms. Specificare una famiglia di tipi di carattere se si prevede di convertire le pagine HTML che utilizzano tipi di carattere non disponibili. Ad esempio, le pagine create in lingue regionali potrebbero utilizzare font non disponibili.
 
@@ -484,7 +484,7 @@ Per il servizio Configurazione PDFG sono disponibili le seguenti impostazioni ( 
 
 **File di avvio PS:** Nome del file di avvio richiesto da Adobe Acrobat Distiller. Il valore predefinito è example.ps.
 
-**Timeout conversione server:** Timeout massimo di conversione del processo (in secondi) per il servizio Generate PDF e il servizio Distiller. Questa impostazione limita il timeout massimo di conversione che può essere specificato nel file config.xml e nelle pagine della console di amministrazione per PDF Generator. Il valore predefinito è 270.
+**Timeout conversione server:** Timeout massimo di conversione del processo (in secondi) per il servizio Generate PDF e il servizio Distiller. Questa impostazione limita il timeout massimo di conversione che può essere specificato nel file config.xml e nelle pagine della console di amministrazione di PDF Generator. Il valore predefinito è 270.
 
 **Timeout globale server:** Durante l’esecuzione delle conversioni di PDF, un server Forms tiene conto del limite di timeout. Configura il valore di timeout per risolvere il problema.
 
@@ -530,7 +530,7 @@ Il servizio Archivio ( `RepositoryService`) fornisce servizi di archiviazione e 
 
 È possibile utilizzare il repository predefinito incluso nei moduli AEM oppure un repository di terze parti (EMC Documentum Content Server, IBM FileNet Content Manager o IBM Content Manager).
 
-Il servizio del provider dell&#39;archivio è un delegato del servizio che funge da interfaccia per un servizio del provider. Questo consente di connettersi a un’API comune e non è necessario sapere quale servizio provider sta implementando le funzionalità di archiviazione. Il servizio Provider repository fornisce l&#39;archiviazione del database per le risorse del servizio repository.
+Il servizio del provider dell&#39;archivio è un delegato del servizio che funge da interfaccia per un servizio del provider. Questo consente di connettersi a un’API comune e di non dover essere a conoscenza di quale servizio provider sta implementando le funzionalità di archiviazione. Il servizio Provider repository fornisce l&#39;archiviazione del database per le risorse del servizio repository.
 
 Per il servizio Archivio è disponibile la seguente impostazione.
 
@@ -606,7 +606,7 @@ Per il servizio Firma sono disponibili le impostazioni seguenti.
 
 **Segui gli URI nell’AIA del certificato:** Specifica se gli URI (Uniform Resource Identifiers) nell&#39;AIA del certificato vengono elaborati durante l&#39;individuazione del percorso. Il valore predefinito è false.
 
-**Estensione dei vincoli di base richiesta nei certificati CA:** Specifica se per i certificati CA deve essere presente l&#39;estensione del certificato Basic Constraints dell&#39;autorità di certificazione (CA). Alcuni primi certificati radice certificati tedeschi (7 e precedenti) non sono conformi alla RFC 3280 e non contengono l&#39;estensione del vincolo di base. Se si sa che il certificato EE di un utente è concatenato fino a una radice tedesca di questo tipo, deselezionare questa casella di controllo. Il valore predefinito è true.
+**Estensione dei vincoli di base richiesta nei certificati CA:** Specifica se l&#39;estensione del certificato Basic Constraints dell&#39;autorità di certificazione (CA) deve essere presente per i certificati CA. Alcuni primi certificati radice certificati tedeschi (7 e precedenti) non sono conformi alla RFC 3280 e non contengono l&#39;estensione del vincolo di base. Se si sa che il certificato EE di un utente è concatenato fino a una radice tedesca di questo tipo, deselezionare questa casella di controllo. Il valore predefinito è true.
 
 **Richiedi Firma Del Certificato Valida Durante La Creazione Della Catena:** Specifica se il generatore di catene richiede firme valide per i certificati utilizzati per creare le catene. Quando questa casella di controllo è selezionata, il generatore di catene non crea catene con firme RSA non valide nei certificati. Considerare la catena CA > ICA > EE se la firma della CA su un ICA non è valida. Se questa impostazione è true, la costruzione della catena si fermerà all&#39;ICA e l&#39;autorità di certificazione non verrà inclusa nella catena. Se questa impostazione è false, viene prodotta la catena completa di 3 certificati. Questa impostazione non influisce sulle firme DSA. Il valore predefinito è false.
 
@@ -634,7 +634,7 @@ Per il servizio Firma sono disponibili le impostazioni seguenti.
 
 **Consulta prima l’URI locale:** Specifica se la posizione CRL specificata nell&#39;URI locale o nella ricerca CRL deve avere la preferenza rispetto a qualsiasi posizione specificata in un certificato ai fini del controllo delle revoche. Il valore predefinito è false.
 
-**URI locale per ricerca CRL:** URL del provider CRL locale. Questo valore viene visualizzato solo se l&#39;impostazione Consulta prima URI locale è impostata su true. Nessun valore predefinito.
+**URI locale per ricerca CRL:** URL del provider CRL locale. Questo valore viene visualizzato solo se l&#39;impostazione Consulta URI locale per primo è impostata su true. Nessun valore predefinito.
 
 **Stile verifica revoca:** Specifica lo stile di verifica delle revoche utilizzato per determinare lo stato di attendibilità del certificato del provider CRL in base allo stato di revoca osservato. Il valore predefinito è BestEffort.
 

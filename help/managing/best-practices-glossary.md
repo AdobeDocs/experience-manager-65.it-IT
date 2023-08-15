@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: f21b0b5cb4246ffb22c9d9a219a622f36741d9b8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6949'
+source-wordcount: '6948'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Si concentra su:
 
 ### Attività di manutenzione specifiche dell’applicazione definite {#application-specific-maintenance-tasks-defined}
 
-Oltre alle attività di manutenzione standard di Adobe Experience Manager (AEM), è necessario definire altre attività operative da eseguire per la manutenzione ordinaria della soluzione.
+Oltre alle normali attività di manutenzione di Adobe Experience Manager (AEM), è necessario definire altre attività operative da eseguire per la manutenzione ordinaria della soluzione.
 
 ### Personale Adeguatamente Formato {#appropriately-trained-staff}
 
@@ -1407,7 +1407,7 @@ Le specifiche di ciascun flusso di lavoro devono includere (come minimo):
 
 ### Concetto sui flussi di lavoro {#workflows-concept}
 
-I flussi di lavoro ti consentono di automatizzare le attività dell’AEM. Il concetto di flussi di lavoro illustra:
+I flussi di lavoro consentono di automatizzare le attività dell’AEM. Il concetto di flussi di lavoro illustra:
 
 * processi che richiedono automazione
 * i servizi e i ruoli in AEM che saranno interessati

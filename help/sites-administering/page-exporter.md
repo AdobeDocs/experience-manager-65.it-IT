@@ -2,16 +2,16 @@
 title: Esportatore pagina
 description: Scopri come utilizzare l’Esportatore di pagine AEM.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
 
 # Esportatore pagina{#the-page-exporter}
 
-L’AEM consente di esportare una pagina come pagina web completa, comprese le immagini, `.js` e `.css` file.
+L’AEM consente di esportare una pagina come pagina web completa, comprese immagini, `.js` e `.css` file.
 
 Una volta configurata, richiedi un’esportazione di pagina dal browser sostituendo `html` con `export.zip` nell’URL. Questo genera un file di archivio (zip), contenente la pagina sottoposta a rendering in formato html, insieme alle risorse di riferimento. Tutti i percorsi nella pagina (ad esempio, percorsi alle immagini) vengono riscritti in modo da puntare ai file inclusi nell’archivio o alle risorse sul server. Il file di archivio (zip) può quindi essere scaricato dal browser.
 
@@ -20,7 +20,6 @@ Una volta configurata, richiedi un’esportazione di pagina dal browser sostitue
 >A seconda del browser e delle impostazioni, il download sarà:
 >* un file di archivio (`<page-name>.export.zip`)
 >* una cartella (`<page-name>`); di fatto il file di archivio è già stato espanso
-
 
 ## Esportazione di una pagina {#exporting-a-page}
 
@@ -47,7 +46,6 @@ Seleziona il modello richiesto per il sito, quindi conferma con **OK**.
    È accessibile tramite:
    * localhost:4502/content/we-retail/language-masters/en.export.zip
 
-
 1. Scarica il file di archivio nel file system.
 
 1. Se necessario, decomprimi il file nel file system. Una volta espansa, sarà presente una cartella con lo stesso nome della pagina selezionata. Questa cartella contiene:
@@ -55,8 +53,8 @@ Seleziona il modello richiesto per il sito, quindi conferma con **OK**.
    * la sottocartella `content`, che è la radice di una serie di sottocartelle che riflettono il percorso della pagina nell’archivio
 
       * all&#39;interno di questa struttura è presente il file html per la pagina selezionata (`<page-name>.html`)
-   * altre risorse (`.js` file, `.css` file, immagini e così via) si trovano in base alle impostazioni nel modello di esportazione
 
+   * altre risorse (`.js` file, `.css` file, immagini e così via) si trovano in base alle impostazioni nel modello di esportazione
 
 1. Apri il file HTML della pagina (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) nel browser per controllare il rendering.
 
@@ -73,7 +71,7 @@ Un’installazione standard di AEM include un modello predefinito in `/etc/conte
 * Il `default` Il modello mostra come configurare un’esportazione di pagine, in modo da fungere da base per un nuovo modello di esportazione.
 
 * Per visualizzare la struttura dei nodi del modello nel browser in formato JSON, richiedi il seguente URL:
-   `http://localhost:4502/etc/contentsync/templates/default.json`
+  `http://localhost:4502/etc/contentsync/templates/default.json`
 
 Il metodo più semplice per creare un nuovo modello di esportazione pagina consiste in:
 
@@ -85,7 +83,7 @@ Il metodo più semplice per creare un nuovo modello di esportazione pagina consi
 
 Per creare un modello completamente nuovo:
 
-1. In entrata **CRXDE Lite**, crea un nodo sotto `/etc/contentsync/templates`:
+1. In entrata **CRXDE Liti**, crea un nodo sotto `/etc/contentsync/templates`:
 
    * `Name`: nome appropriato per il sito; ad esempio, `<mysite>`. Il nome viene visualizzato nella finestra di dialogo delle proprietà della pagina quando si sceglie il modello di esportazione della pagina.
 
@@ -121,19 +119,18 @@ Il nodo della pagina viene utilizzato per copiare il codice HTML della pagina ne
    * È definito con la proprietà `Name`imposta su `page`.
    * Il tipo di nodo è `nt:unstructured`
 
-   Il `page` Il nodo ha le seguenti proprietà:
+  Il `page` Il nodo ha le seguenti proprietà:
 
    * A `type` proprietà impostata con il valore `pages`.
 
    * Non ha un `path` come il percorso della pagina corrente viene copiato dinamicamente nella configurazione.
-
-   <!--
+  <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
 
 * `rewrite`
 Il nodo di riscrittura definisce come vengono riscritti i collegamenti nella pagina esportata. I collegamenti riscritti possono puntare ai file inclusi nel file zip o alle risorse sul server.
-   <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 Il nodo di progettazione viene utilizzato per copiare la progettazione utilizzata per la pagina esportata. Presenta le seguenti caratteristiche:
@@ -143,16 +140,14 @@ Il nodo di progettazione viene utilizzato per copiare la progettazione utilizzat
    * È definito con la proprietà `Name` imposta su `design`.
    * Il tipo di nodo è `nt:unstructured`.
 
-   Il `design` Il nodo ha le seguenti proprietà:
+  Il `design` Il nodo ha le seguenti proprietà:
 
    * A `type` proprietà impostata sul valore `copy`.
 
    * Non ha un `path` , poiché il percorso della pagina corrente viene copiato dinamicamente nella configurazione.
 
-
 * `generic`
-Un nodo generico viene utilizzato per copiare risorse come clientlibs 
-`.js` o `.css` file nel file zip. Presenta le seguenti caratteristiche:
+Un nodo generico viene utilizzato per copiare risorse come clientlibs `.js` o `.css` file nel file zip. Presenta le seguenti caratteristiche:
 
    * È facoltativo.
    * Si trova sotto `/etc/contentsync/templates/<mysite>`.
@@ -160,16 +155,16 @@ Un nodo generico viene utilizzato per copiare risorse come clientlibs
    * Il tipo di nodo è `nt:unstructured`.
    * Ha un `type` proprietà e `type` proprietà correlate. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-   Ad esempio, il seguente nodo di configurazione copia `mysite.clientlibs.js` file nel file zip:
+  Ad esempio, il seguente nodo di configurazione copia `mysite.clientlibs.js` file nel file zip:
 
-   ```xml
-   "mysite.clientlibs.js": {
-       "extension": "js",
-       "type": "clientlib",
-       "path": "/etc/designs/mysite/clientlibs",
-       "jcr:primaryType": "nt:unstructured"
-   }
-   ```
+  ```xml
+  "mysite.clientlibs.js": {
+      "extension": "js",
+      "type": "clientlib",
+      "path": "/etc/designs/mysite/clientlibs",
+      "jcr:primaryType": "nt:unstructured"
+  }
+  ```
 
 **Implementazione di una configurazione personalizzata**
 

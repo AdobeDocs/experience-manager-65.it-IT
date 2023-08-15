@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 16%
+source-wordcount: '797'
+ht-degree: 14%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 I flussi di lavoro dei progetti disponibili includono:
 
-* **Flusso di lavoro di approvazione progetto:** questo flusso di lavoro consente di assegnare dei contenuti a un utente, rivederli e approvarli.
+* **Flusso di lavoro di approvazione progetto** - Questo flusso di lavoro consente di assegnare il contenuto a un utente, rivederlo e approvarlo.
 * **Richiedi lancio**: flusso di lavoro per richiedere un lancio.
 * **Richiedi pagina di destinazione**: flusso di lavoro per richiedere una pagina di destinazione.
 * **Richiedi e-mail**: flusso di lavoro per la richiesta di un’e-mail.
@@ -31,7 +31,7 @@ I flussi di lavoro dei progetti disponibili includono:
 
 A seconda del modello di progetto selezionato, sono disponibili alcuni flussi di lavoro:
 
-|  | **Progetto semplice** | **Progetto multimediale** | **Progetto servizio fotografico per prodotto** | **Progetto di traduzione** |
+|   | **Progetto semplice** | **Progetto multimediale** | **Progetto servizio fotografico per prodotto** | **Progetto di traduzione** |
 |---|:-:|:-:|:-:|:-:|
 | Richiedi copia |  | x |  |  |
 | Servizio fotografico per prodotto |  | x | x |  |

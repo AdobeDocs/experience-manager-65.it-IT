@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -155,6 +155,7 @@ Utilizza le opzioni in **I miei filtri** pannello a **Aggiungi** ![lc_pr_add_fil
    * **Aggiorna**: aggiorna il rapporto con i dati più recenti presenti nell’archiviazione
 
    * **Esporta in CSV**: esporta i dati del rapporto in un file separato da virgole.
+
    >[!NOTE]
    >
    >Quando si esporta un rapporto, l’intero risultato della ricerca viene esportato in un file CSV e non solo nella pagina corrente
@@ -248,11 +249,6 @@ Puoi visualizzare i dettagli di un processo/attività AEM Forms specifico:
    * Proprietario attività
    * Data e ora di creazione assegnazione attività
    * Data e ora di aggiornamento attività
-
-
-
-
-
 
 1. Clic **Torna a Ricerca processi/attività** per tornare al risultato della ricerca da cui sono stati espansi i dettagli del processo/attività.
 

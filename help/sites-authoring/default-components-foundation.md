@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '7210'
+source-wordcount: '7198'
 ht-degree: 9%
 
 ---
@@ -160,7 +160,7 @@ Per informazioni sulla personalizzazione del componente Immagine adattiva, consu
 >
 >Questo componente di base è obsoleto. L’Adobe consiglia di utilizzare [Componente core Carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=it) invece.
 
-Il componente Carosello consente di visualizzare le immagini associate alle singole pagine:
+Il componente Carosello consente di visualizzare le immagini associate a singole pagine:
 
 * uno alla volta
 * per un breve periodo
@@ -256,7 +256,7 @@ Di seguito è riportato un esempio di dati del grafico seguito dal grafico a bar
 
 >[!NOTE]
 >
->Puoi creare un controllo grafico dell’AEM personalizzato che visualizzi i dati nel JCR dell’AEM. Per informazioni, consulta [Visualizzazione dei dati di Adobe Experience Manager in un grafico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>Puoi creare un controllo grafico dell’AEM personalizzato che visualizzi i dati nel JCR dell’AEM. Per informazioni, consulta [Visualizzazione dei dati Adobe Experience Manager in un grafico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
 
 ### Frammenti di contenuto {#content-fragment}
 
@@ -1442,7 +1442,7 @@ Consente di creare un campo nascosto. Questi campi nascosti possono essere utili
 >
 >Questo componente di base è obsoleto. L’Adobe consiglia di utilizzare [Componente core pulsante modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) invece.
 
-Un pulsante immagine consente di creare un pulsante con un’immagine e un testo personalizzati:
+Un pulsante immagine consente di creare un pulsante con un&#39;immagine e un testo personalizzati:
 
 ![dc_form_imagebutton](assets/dc_form_imagebutton.png)
 

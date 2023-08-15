@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Nella scheda Work Manager (Responsabile del lavoro) vengono visualizzate le stat
 
 **Completato:** Visualizza tutti gli elementi di lavoro eseguiti correttamente. Gli elementi di lavoro persistenti rimangono in questo stato e gli elementi non persistenti vengono eliminati al completamento dei callback ai gestori di callback. È possibile eliminare questi elementi utilizzando l&#39;operazione Elimina elementi. Consultate Gestire gli elementi di lavoro o i job.
 
-**Non riuscito:** Visualizza tutti gli elementi di lavoro non completati correttamente a causa di una condizione di errore. Questi elementi di lavoro possono essere ritentati più volte utilizzando l&#39;operazione Riprova elementi. Consultate Gestire gli elementi di lavoro o i job. Un collegamento Errore nella colonna Stato consente di accedere ai dettagli relativi all&#39;errore.
+**Non riuscito:** Visualizza tutti gli elementi di lavoro non completati correttamente a causa di una condizione di errore. Questi elementi di lavoro possono essere ritentati più volte utilizzando l&#39;operazione Riprova elementi. Consultate Gestire gli elementi di lavoro o i job. Un collegamento Errore nella colonna Stato consente di accedere ai dettagli sull&#39;errore.
 
 **Sconosciuto:** Visualizza tutti gli elementi di lavoro con stato sconosciuto.
 
@@ -60,7 +60,7 @@ Nella scheda Work Manager (Responsabile del lavoro) vengono visualizzate le stat
 
 **Richiesta non riuscita:** Visualizza i processi per i quali è stata effettuata una richiesta non riuscita.
 
-**Non riuscito:** Visualizza i processi non completati correttamente a causa di una condizione di errore. Un collegamento Errore nella colonna Stato consente di accedere ai dettagli relativi all&#39;errore.
+**Non riuscito:** Visualizza i processi non completati correttamente a causa di una condizione di errore. Un collegamento Errore nella colonna Stato consente di accedere ai dettagli sull&#39;errore.
 
 **Termina richiesta:** Visualizza i processi per i quali è stata effettuata una richiesta di interruzione.
 

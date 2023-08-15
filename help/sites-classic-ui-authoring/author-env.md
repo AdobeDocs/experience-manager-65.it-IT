@@ -2,7 +2,7 @@
 title: Utilizzo dell’ambiente di authoring
 seo-title: Working with the Author Environment
 description: L’ambiente di authoring consente di eseguire attività relative all’authoring (inclusa l’authoring delle pagine e la gestione delle risorse) e di amministrare le attività necessarie per generare e gestire i contenuti sul sito web.
-seo-description: The author environment allows you to perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
+seo-description: The author environment lets you perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
 uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '248'
 ht-degree: 2%
 
 ---
@@ -38,6 +38,7 @@ Per ottenere questo risultato, sono disponibili due interfacce utente grafiche, 
    * È stato progettato per essere utilizzato su dispositivi desktop.
    * Non viene più mantenuto.
    * La documentazione seguente si concentra su questa interfaccia classica. Per informazioni sull’authoring nell’interfaccia utente moderna basata su touch, consulta la sezione [Documentazione di authoring standard](/help/sites-authoring/author.md).
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Interfaccia touch
@@ -48,7 +49,9 @@ Per ottenere questo risultato, sono disponibili due interfacce utente grafiche, 
    * Consulta la [Documentazione di authoring standard](/help/sites-authoring/author.md) per ulteriori dettagli su come effettuare l’authoring utilizzando l’interfaccia utente touch. La documentazione seguente si concentra sull’interfaccia utente classica.
 
    * Desktop:
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Dispositivi tablet (o desktop con larghezza inferiore a 1024 pixel):
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)

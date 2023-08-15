@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2758'
+source-wordcount: '2755'
 ht-degree: 1%
 
 ---
@@ -159,7 +159,6 @@ Consulta [Componenti di Adobe Campaign](/help/sites-authoring/adobe-campaign-com
 >* Solo i campi di Adobe Campaign **Profili** viene presa in considerazione la dimensione di targeting.
 >* Quando si visualizzano le proprietà da **Sites**, non hai accesso ai campi contestuali di Adobe Campaign. Puoi accedervi direttamente dall’e-mail durante la modifica.
 
-
 Per inserire la personalizzazione:
 
 1. Inserisci un nuovo **Newsletter** > **Testo e personalizzazione (Campaign)** trascinandolo sulla pagina.
@@ -176,7 +175,6 @@ Per inserire la personalizzazione:
    >
    >* I campi di contesto disponibili corrispondono ai **Profili** dimensione di targeting in Adobe Campaign.
    >* Consulta [Collegamento di una pagina AEM a un’e-mail di Adobe Campaign](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
-
    >
    >**Per Adobe Campaign Classic:**
    >
@@ -184,7 +182,6 @@ Per inserire la personalizzazione:
    >
    >* Per aggiungere o nascondere elementi di personalizzazione, consulta [Gestione di campi e blocchi di personalizzazione](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Importante**: tutti i campi della tabella di seeding devono trovarsi anche nella tabella dei destinatari (o nella tabella dei contatti corrispondente).
-
 
 1. Inserire il testo digitandolo. Per inserire campi di contesto o blocchi di personalizzazione, fai clic sui componenti di Adobe Campaign e selezionali. Al termine, seleziona il segno di spunta.
 
@@ -235,6 +232,7 @@ In Adobe Campaign Classic:
 ![chlimage_1-34](assets/chlimage_1-34a.png)
 
 >[!NOTE]
+>
 Il contenuto non approvato può essere sincronizzato con una consegna in Adobe Campaign, ma la consegna non può essere eseguita. Solo i contenuti approvati possono essere inviati tramite le consegne di Campaign.
 
 ## Collegamento dell’AEM con Adobe Campaign Standard e Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
@@ -258,6 +256,7 @@ In questo modo puoi distribuire i contenuti. Puoi vedere se una newsletter è co
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
+>
 Se una newsletter è collegata a più consegne, indica il numero di consegne collegate (ma non ogni ID).
 
 Per collegare una pagina creata in AEM con un messaggio e-mail di Adobe Campaign:
@@ -273,7 +272,8 @@ Per collegare una pagina creata in AEM con un messaggio e-mail di Adobe Campaign
 1. Seleziona **Collegamento a un contenuto Adobe Experience Manager** nella barra degli strumenti per accedere all’elenco dei contenuti disponibili in AEM.
 
    >[!NOTE]
-   Se il **Collegamento con un’Adobe Experience Manager** nella barra delle azioni, verificare che l&#39;opzione **Modalità di modifica dei contenuti** è configurato correttamente su **Adobe Experience Manager** nelle proprietà e-mail.
+   >
+   Se il **Collegamento con un Adobe Experience Manager** nella barra delle azioni, verificare che l&#39;opzione **Modalità di modifica dei contenuti** è configurato correttamente su **Adobe Experience Manager** nelle proprietà e-mail.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
 
@@ -287,6 +287,7 @@ Per collegare una pagina creata in AEM con un messaggio e-mail di Adobe Campaign
    * Eventuali contenuti già collegati a una consegna.
 
    >[!NOTE]
+   >
    Per impostazione predefinita, il contenuto già sincronizzato con una consegna è nascosto. Tuttavia, puoi visualizzarlo e utilizzarlo. Ad esempio, se desideri utilizzare il contenuto come modello per diverse consegne.
 
    Quando l’e-mail è collegata a un contenuto AEM, il contenuto non può essere modificato in Adobe Campaign.
@@ -295,8 +296,11 @@ Per collegare una pagina creata in AEM con un messaggio e-mail di Adobe Campaign
 1. Esegui la consegna e-mail. Durante l’analisi della consegna viene recuperata la versione più aggiornata del contenuto dell’AEM.
 
    >[!NOTE]
-   Se il contenuto viene aggiornato in AEM mentre è collegato a un’e-mail, viene automaticamente aggiornato in Adobe Campaign durante l’analisi. La sincronizzazione può anche essere eseguita manualmente utilizzando **Aggiornare i contenuti di Adobe Experience Manager** dalla barra delle azioni contenuto.
+   >
+   Se il contenuto viene aggiornato in AEM mentre è collegato a un’e-mail, viene automaticamente aggiornato in Adobe Campaign durante l’analisi. La sincronizzazione può anche essere eseguita manualmente utilizzando **Aggiorna contenuto Adobe Experience Manager** dalla barra delle azioni contenuto.
+   >
    Puoi annullare il collegamento tra un’e-mail e il contenuto dell’AEM utilizzando **Eliminare il collegamento con il contenuto di Adobe Experience Manager** dalla barra delle azioni contenuto. Questo pulsante è disponibile solo se un contenuto è già collegato alla consegna. Per collegare un contenuto diverso a una consegna, è necessario eliminare il collegamento del contenuto corrente prima di poter stabilire un nuovo collegamento.
+   >
    Quando il collegamento viene eliminato, il contenuto locale viene mantenuto e diventa modificabile in Adobe Campaign. Se colleghi nuovamente il contenuto dopo averlo modificato, tutte le modifiche andranno perse.
 
 ### Sincronizzazione dei contenuti creati nell’AEM con una consegna da Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
@@ -315,8 +319,11 @@ In AEM, se una newsletter è collegata a una singola consegna, sulla pagina vien
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
+>
 Se la newsletter è collegata a più consegne, indica il numero di consegne collegate (ma non tutti gli ID).
+>
 [!NOTE]
+>
 Passaggio del flusso di lavoro **Pubblica su Adobe Campaign** è obsoleto in AEM 6.1. Questo passaggio faceva parte dell’integrazione di AEM 6.0 con Adobe Campaign e non è più necessario.
 
 Per sincronizzare il contenuto creato in AEM con una consegna da Adobe Campaign:
@@ -328,6 +335,7 @@ Per sincronizzare il contenuto creato in AEM con una consegna da Adobe Campaign:
 1. Seleziona **Sincronizza** nella barra degli strumenti per accedere all’elenco dei contenuti disponibili in AEM.
 
    >[!NOTE]
+   >
    Se il **Sincronizza** nella barra degli strumenti della consegna, verifica che l’opzione **Modalità di modifica dei contenuti** è configurato correttamente in **AEM** selezionando **Proprietà** > **Avanzate**.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
@@ -342,6 +350,7 @@ Per sincronizzare il contenuto creato in AEM con una consegna da Adobe Campaign:
    * Eventuali contenuti già collegati a una consegna.
 
    >[!NOTE]
+   >
    Per impostazione predefinita, il contenuto già sincronizzato con una consegna è nascosto. Tuttavia, puoi visualizzarlo e utilizzarlo. Ad esempio, se desideri utilizzare il contenuto come modello per diverse consegne.
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
@@ -351,9 +360,9 @@ Per sincronizzare il contenuto creato in AEM con una consegna da Adobe Campaign:
 1. Esegui la consegna. Durante l’analisi della consegna viene recuperata la versione più aggiornata del contenuto dell’AEM.
 
    >[!NOTE]
+   >
    * Dopo la sincronizzazione della consegna e del contenuto, il contenuto della consegna in Adobe Campaign diventa di sola lettura. L’oggetto e-mail e il relativo contenuto non possono più essere modificati.
    * Se il contenuto viene aggiornato nell’AEM mentre è collegato a una consegna in Adobe Campaign, viene automaticamente aggiornato nella consegna durante l’analisi della consegna. La sincronizzazione può anche essere eseguita manualmente utilizzando **Aggiorna contenuto ora** pulsante.
    * Puoi annullare la sincronizzazione tra una consegna e i contenuti AEM utilizzando **Desincronizza** pulsante. Questa opzione è disponibile solo se un contenuto è già sincronizzato con la consegna. Per sincronizzare un contenuto diverso con una consegna, è necessario annullare la sincronizzazione del contenuto corrente prima di poter stabilire un nuovo collegamento.
    * Se desincronizzato, il contenuto locale viene mantenuto e diventa modificabile in Adobe Campaign. Se sincronizzi nuovamente il contenuto dopo averlo modificato, tutte le modifiche andranno perse.
    * Per le consegne ricorrenti e continue, la sincronizzazione con il contenuto dell’AEM viene interrotta ogni volta che la consegna viene eseguita.
-

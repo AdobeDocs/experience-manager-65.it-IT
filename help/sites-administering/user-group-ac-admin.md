@@ -11,9 +11,9 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3118'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ In CRX ogni account utente è un nodo nell’area di lavoro. Un account utente C
 
 * È possibile specificare i diritti di accesso per l&#39;account utente.
 
-   Tuttavia, per semplificare la gestione, si consiglia di assegnare (nella maggior parte dei casi) i diritti di accesso agli account del gruppo. Assegnare i diritti di accesso a ogni singolo utente diventa rapidamente molto difficile da gestire (le eccezioni sono determinati utenti del sistema quando esistono solo una o due istanze).
+  Tuttavia, per semplificare la gestione, l&#39;Adobe consiglia di assegnare (nella maggior parte dei casi) i diritti di accesso agli account dei gruppi. Assegnare i diritti di accesso a ogni singolo utente diventa rapidamente molto difficile da gestire (le eccezioni sono determinati utenti del sistema quando esistono solo una o due istanze).
 
 **Account di gruppo** Gli account di gruppo sono insiemi di utenti e/o altri gruppi. Questi vengono utilizzati per semplificare la gestione in quanto una modifica dei diritti di accesso assegnati a un gruppo viene applicata automaticamente a tutti gli utenti di tale gruppo. Un utente non deve necessariamente appartenere a nessun gruppo, ma spesso appartiene a più gruppi.
 
@@ -75,20 +75,21 @@ CRX utilizza due concetti chiave per valutare i diritti di accesso:
    * Un account utente
    * Un account di gruppo
 
-      Se un account utente appartiene a uno o più gruppi, viene associato anche a ciascuno di tali gruppi principali.
+     Se un account utente appartiene a uno o più gruppi, viene associato anche a ciascuno di tali gruppi principali.
 
 * A **oggetto** viene utilizzato per rappresentare l’origine di una richiesta.
 
-   Viene utilizzato per consolidare i diritti di accesso applicabili a tale richiesta. Questi sono presi da:
+  Viene utilizzato per consolidare i diritti di accesso applicabili a tale richiesta. Questi sono presi da:
 
    * Entità utente principale
 
-      I diritti assegnati direttamente all’account utente.
+     I diritti assegnati direttamente all’account utente.
 
    * Tutte le entità di gruppo associate all&#39;utente
 
-      Tutti i diritti assegnati a qualsiasi gruppo a cui appartiene l&#39;utente.
-   Il risultato viene quindi utilizzato per consentire o negare l’accesso alla risorsa richiesta.
+     Tutti i diritti assegnati a qualsiasi gruppo a cui appartiene l&#39;utente.
+
+  Il risultato viene quindi utilizzato per consentire o negare l’accesso alla risorsa richiesta.
 
 #### Compilazione dell&#39;elenco dei diritti di accesso per un oggetto {#compiling-the-list-of-access-rights-for-a-subject}
 
@@ -110,7 +111,6 @@ L’elenco dei diritti di accesso applicabili al soggetto è costituito da:
 >* CRX utilizza una gerarchia di gruppi solo quando si include un gruppo come membro di un altro gruppo. Non esiste ereditarietà automatica delle autorizzazioni del gruppo.
 >* L&#39;ordine in cui si specificano i gruppi non influisce sui diritti di accesso.
 >
-
 
 ### Risoluzione di richieste e diritti di accesso {#resolving-request-and-access-rights}
 
@@ -223,19 +223,19 @@ Devi aver effettuato l’accesso all’area di lavoro appropriata, quindi puoi a
 
 * **UserID**
 
-   Nome breve dell’account, utilizzato per accedere a CRX.
+  Nome breve dell’account, utilizzato per accedere a CRX.
 
 * **Nome entità**
 
-   Nome di testo completo dell&#39;account.
+  Nome di testo completo dell&#39;account.
 
 * **Password**
 
-   Necessario per accedere a CRX con questo account.
+  Necessario per accedere a CRX con questo account.
 
 * **ntlmhash**
 
-   Assegnato automaticamente per ogni nuovo account e aggiornato quando la password viene cambiata.
+  Assegnato automaticamente per ogni nuovo account e aggiornato quando la password viene cambiata.
 
 * Puoi aggiungere nuove proprietà definendo un nome, un tipo e un valore. Fai clic su Salva (simbolo di graduazione verde) per ogni nuova proprietà.
 
@@ -280,7 +280,6 @@ Se un account ne rappresenta un altro è molto difficile da vedere. I file di re
 >* utenti
 >* gruppi con molti membri
 >
-
 
 ### Aggiornamento di un account utente {#updating-a-user-account}
 
@@ -348,17 +347,17 @@ Devi aver effettuato l’accesso all’area di lavoro appropriata, quindi puoi a
 
 * **GroupID**
 
-   Nome breve dell&#39;account del gruppo.
+  Nome breve dell&#39;account del gruppo.
 
 * **Nome entità**
 
-   Nome di testo completo per l&#39;account di gruppo.
+  Nome di testo completo per l&#39;account di gruppo.
 
 * Puoi aggiungere nuove proprietà definendo un nome, un tipo e un valore. Fai clic su Salva (simbolo di graduazione verde) per ogni nuova proprietà.
 
 * **Membri**
 
-   È possibile aggiungere utenti o altri gruppi come membri di questo gruppo.
+  È possibile aggiungere utenti o altri gruppi come membri di questo gruppo.
 
 **Iscrizione al gruppo**
 
@@ -440,7 +439,7 @@ In alternativa, eliminare un membro esistente con il simbolo del cestino.
 
 ## Gestione diritti di accesso {#access-right-management}
 
-Con il **Controllo dell’accesso** scheda di CRXDE Lite è possibile definire i criteri di controllo di accesso e assegnare i relativi privilegi.
+Con il **Controllo dell’accesso** scheda di CRXDE Liti è possibile definire i criteri di controllo di accesso e assegnare i relativi privilegi.
 
 Ad esempio, per **Percorso corrente** seleziona la risorsa richiesta nel riquadro di sinistra, la scheda Controllo di accesso nel riquadro in basso a destra:
 
@@ -450,19 +449,19 @@ I criteri sono suddivisi in categorie in base a:
 
 * **Criteri di controllo degli accessi applicabili**
 
-   Questi criteri possono essere applicati.
+  Questi criteri possono essere applicati.
 
-   Criteri disponibili per la creazione di un criterio locale. Dopo aver selezionato e aggiunto un criterio applicabile, questo diventa un criterio locale.
+  Criteri disponibili per la creazione di un criterio locale. Dopo aver selezionato e aggiunto un criterio applicabile, questo diventa un criterio locale.
 
 * **Criteri di controllo dell&#39;accesso locali**
 
-   Si tratta dei criteri di controllo di accesso applicati. Puoi quindi aggiornarli, ordinarli o rimuoverli.
+  Si tratta dei criteri di controllo di accesso applicati. Puoi quindi aggiornarli, ordinarli o rimuoverli.
 
-   Un criterio locale sostituirà tutti i criteri ereditati dall&#39;elemento padre.
+  Un criterio locale sostituirà tutti i criteri ereditati dall&#39;elemento padre.
 
 * **Criteri di controllo dell&#39;accesso effettivi**
 
-   Questi sono i criteri di controllo di accesso attualmente in vigore per qualsiasi richiesta di accesso. Mostrano i criteri aggregati derivati dai criteri locali e da quelli ereditati dal padre.
+  Questi sono i criteri di controllo di accesso attualmente in vigore per qualsiasi richiesta di accesso. Mostrano i criteri aggregati derivati dai criteri locali e da quelli ereditati dal padre.
 
 ### Selezione criteri {#policy-selection}
 
@@ -470,25 +469,25 @@ I criteri possono essere selezionati per:
 
 * **Percorso corrente**
 
-   Come nell’esempio precedente, seleziona una risorsa all’interno dell’archivio. Verranno visualizzati i criteri per questo &quot;percorso corrente&quot;.
+  Come nell’esempio precedente, seleziona una risorsa all’interno dell’archivio. Verranno visualizzati i criteri per questo &quot;percorso corrente&quot;.
 
 * **Archivio**
 
-   Seleziona il controllo dell&#39;accesso a livello di repository. Ad esempio, quando si imposta `jcr:namespaceManagement` privilegio, che è pertinente solo per l’archivio, non per un nodo.
+  Seleziona il controllo dell&#39;accesso a livello di repository. Ad esempio, quando si imposta `jcr:namespaceManagement` privilegio, che è pertinente solo per l’archivio, non per un nodo.
 
 * **Principale**
 
-   Entità registrata nell&#39;archivio.
+  Entità registrata nell&#39;archivio.
 
-   È possibile digitare **Entità** o fai clic sull&#39;icona a destra del campo per aprire **Seleziona entità** .
+  È possibile digitare **Entità** o fai clic sull&#39;icona a destra del campo per aprire **Seleziona entità** .
 
-   Ciò ti consente di: **Ricerca** per un **Utente** o **Gruppo**. Seleziona l’entità richiesta dall’elenco risultante, quindi fai clic su **OK** per riportare il valore alla finestra di dialogo precedente.
+  Questo consente di: **Ricerca** per un **Utente** o **Gruppo**. Seleziona l’entità richiesta dall’elenco risultante, quindi fai clic su **OK** per riportare il valore alla finestra di dialogo precedente.
 
 ![crx_accesscontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
 >[!NOTE]
 >
->Per semplificare la gestione, si consiglia di assegnare i diritti di accesso agli account di gruppo e non ai singoli account utente.
+>Per semplificare la gestione, l&#39;Adobe consiglia di assegnare i diritti di accesso agli account dei gruppi e non ai singoli account utente.
 >
 >È più facile gestire alcuni gruppi, piuttosto che molti account utente.
 
@@ -649,7 +648,7 @@ L’ordine nell’elenco indica l’ordine in cui vengono applicati i criteri.
 
 ### Verifica di un criterio di controllo degli accessi {#testing-an-access-control-policy}
 
-1. Dalla barra degli strumenti di CRXDE Lite, seleziona **Strumenti**, quindi **Test controllo accesso...**.
+1. Dalla barra degli strumenti di CRXDE Liti, seleziona **Strumenti**, quindi **Test controllo accesso...**.
 1. Nel riquadro in alto a destra viene visualizzata una nuova finestra di dialogo. Seleziona la **Percorso** e/o **Entità** che vuoi testare.
 1. Clic **Test** per visualizzare i risultati della selezione:
 

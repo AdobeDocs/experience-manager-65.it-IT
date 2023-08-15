@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3224'
-ht-degree: 5%
+source-wordcount: '3221'
+ht-degree: 4%
 
 ---
 
@@ -73,6 +73,7 @@ Quando crei un nuovo modello modificabile:
    * I componenti definiti nella struttura del modello non possono essere spostati in una pagina risultante né eliminati dalle pagine risultanti.
 
       * Se stai creando un modello in una cartella personalizzata al di fuori del `We.Retail` contenuto di esempio, puoi scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it).
+
    * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema paragrafo al modello.
    * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il contenuto iniziale.
 
@@ -85,6 +86,7 @@ Quando crei un nuovo modello modificabile:
    * I criteri per contenuto definiscono le proprietà di progettazione di un componente.
 
       * Ad esempio, i componenti disponibili o le dimensioni minima/massima.
+
    * Questi criteri sono applicabili al modello (e alle pagine create con il modello).
 
    Per informazioni dettagliate su come un autore di modelli definisce i criteri, consulta [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
@@ -178,12 +180,12 @@ Viene creato un elenco di tutte le voci consentite. Se le configurazioni si sovr
 
 Per creare una cartella, effettuare le seguenti operazioni:
 
-* A livello di programmazione o con CRXDE Lite
+* A livello di programmazione o con CRXDE Liti
 * Utilizzo del browser configurazioni
 
 ## Utilizzo di CRXDE Lite {#using-crxde-lite}
 
-1. È possibile creare una nuova cartella (in /conf) per l’istanza a livello di programmazione o con CRXDE Lite.
+1. È possibile creare una nuova cartella (in /conf) per l’istanza a livello di programmazione o con CRXDE Liti.
 
    Deve essere utilizzata la seguente struttura:
 
@@ -431,7 +433,7 @@ Quando si crea un nuovo modello modificabile, il valore viene copiato dal tipo d
 Se è stato creato un modello che può fungere da base per altri modelli, è possibile copiarlo come tipo di modello.
 
 1. Crea un modello come faresti con un modello modificabile [come documentato qui](/help/sites-authoring/templates.md#creating-a-new-template-template-author), che può fungere da base per il tipo di modello.
-1. Utilizzando CRXDE Lite, copia il modello appena creato da `templates` nodo a `template-types` nodo sotto [cartella modelli](/help/sites-developing/page-templates-editable.md#template-folders).
+1. Utilizzando CRXDE Liti, copia il modello appena creato da `templates` nodo a `template-types` nodo sotto [cartella modelli](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Elimina il modello da `templates` nodo sotto [cartella modelli](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Nella copia del modello che si trova in `template-types` nodo, elimina tutto `cq:template` e `cq:templateType` proprietà da tutti `jcr:content` nodi.
 
@@ -540,13 +542,13 @@ Quando [modificando un modello, puoi definire il layout](/help/sites-authoring/t
 I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente, ad esempio la disponibilità del componente o le dimensioni minima/massima. Questi criteri sono applicabili al modello (e alle pagine create con il modello). I criteri per i contenuti possono essere creati e selezionati nell’editor modelli.
 
 * La proprietà `cq:policy`, sulla `root` nodo
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Fornisce un riferimento relativo al criterio del contenuto per il sistema paragrafo della pagina.
 
 * La proprietà `cq:policy`, sui nodi espliciti dei componenti in `root`, fornisce collegamenti ai criteri per i singoli componenti.
 
 * Le definizioni effettive dei criteri sono memorizzate in:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -577,7 +579,7 @@ I criteri di pagina ti consentono di definire [criterio contenuto](#content-poli
    * Impostazione della proprietà status su `jcr:content` nodo.
 
       * Ad esempio, su:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definisci la proprietà:
 
@@ -589,9 +591,9 @@ I criteri di pagina ti consentono di definire [criterio contenuto](#content-poli
 
    * [Definire i percorsi dei modelli consentiti sulla **Proprietà pagina**](/help/sites-authoring/templates.md#allowing-a-template-author) della pagina appropriata o della pagina principale di un sottorramo.
    * Imposta la proprietà:
-      `cq:allowedTemplates`
-Il giorno 
-`jcr:content` nodo del ramo richiesto.
+     `cq:allowedTemplates`
+Il giorno `jcr:content` nodo del ramo richiesto.
+
    Ad esempio, con un valore di:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1285'
 ht-degree: 3%
 
 ---
@@ -30,11 +30,11 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
 * Componente [**Contenitore di layout**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-   Questo componente fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia reattiva. Può essere utilizzato come parsys predefinito per la pagina e/o reso disponibile agli autori nel browser componenti.
+  Questo componente fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia reattiva. Può essere utilizzato come parsys predefinito per la pagina e/o reso disponibile agli autori nel browser componenti.
 
    * Il valore predefinito **Contenitore di layout** componente definito in:
 
-      /libs/wcm/foundation/components/responsivegrid
+     /libs/wcm/foundation/components/responsivegrid
 
    * Puoi definire i contenitori di layout:
 
@@ -42,11 +42,10 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
       * Come parsys predefinito per la pagina.
       * Entrambi.
 
-         Puoi avere il contenitore di layout come standard per la pagina, consentendo allo stesso tempo all’utente di aggiungere ulteriori contenitori di layout all’interno di questo; ad esempio, per ottenere il controllo delle colonne.
+        Puoi avere il contenitore di layout come standard per la pagina, consentendo allo stesso tempo all’utente di aggiungere ulteriori contenitori di layout all’interno di questo; ad esempio, per ottenere il controllo delle colonne.
 
 * **[Modalità Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Una volta che il contenitore di layout è posizionato sulla pagina, è possibile utilizzare 
-**Layout** per posizionare il contenuto all’interno della griglia reattiva.
+Una volta che il contenitore di layout è posizionato sulla pagina, è possibile utilizzare **Layout** per posizionare il contenuto all’interno della griglia reattiva.
 
 * [**Emulatore**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Questo consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare come viene eseguito il rendering del contenuto utilizzando l’emulatore.
@@ -68,7 +67,7 @@ Con questi meccanismi di griglia reattiva è possibile:
 
 ## Configurazione dell’emulatore reattivo {#configuring-the-responsive-emulator}
 
-Queste attività ti consentono di visualizzare **Emulatore** sul tuo sito.
+Questa attività ti consente di visualizzare **Emulatore** sul tuo sito.
 
 ### Registrare i componenti pagina per l’emulazione {#register-your-page-components-for-emulation}
 
@@ -105,7 +104,7 @@ Queste procedure vengono utilizzate per **Layout** sul sito.
 * Sono ereditati dalla gerarchia dei nodi principali e possono essere sostituiti a piacimento.
 * Esiste un punto di interruzione predefinito (predefinito) che copre tutto ciò che si trova oltre l’ultimo *configurato* punto di interruzione.
 
-Possono essere definiti utilizzando CRXDE Lite o XML.
+Possono essere definiti utilizzando CRXDE Liti o XML.
 
 >[!NOTE]
 >
@@ -120,9 +119,9 @@ Possono essere definiti utilizzando CRXDE Lite o XML.
 >
 >  Quando l’ereditarietà è in funzione, puoi limitarla alla pagina principale del contenuto.
 
-#### Configurazione dei punti di interruzione tramite CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
+#### Configurazione dei punti di interruzione tramite CRXDE Liti {#configuring-breakpoints-using-crxde-lite}
 
-1. Utilizzando CRXDE Lite (o equivalente), accedi a:
+1. Utilizzando CRXDE Liti (o equivalente), accedi a:
 
    * Definizione del modello.
    * Il `jcr:content` della pagina.
@@ -188,15 +187,15 @@ I due esempi seguenti illustrano la definizione:
 
 * **HTL:**
 
-   ```xml
-   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
-   ```
+  ```xml
+  <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
+  ```
 
 * **JSP:**
 
-   ```
-   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
-   ```
+  ```
+  <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
+  ```
 
 ### Includi CSS reattivo {#include-the-responsive-css}
 
@@ -282,11 +281,11 @@ Per consentire agli autori di aggiungere ulteriori griglie reattive alle pagine 
 
 * **Ambiente di authoring**
 
-   Utilizzare [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) per attivare **Contenitore livello** per una pagina.
+  Utilizzare [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) per attivare **Contenitore livello** per una pagina.
 
 * **Definizione componente**
 
-   Utilizzare `allowedComponent` o un inclusione statica durante la definizione del componente.
+  Utilizzare `allowedComponent` o un inclusione statica durante la definizione del componente.
 
 ### Configurare la griglia del contenitore di layout {#configure-the-grid-of-the-layout-container}
 
@@ -309,6 +308,7 @@ Puoi configurare il numero di colonne disponibili per ogni istanza specifica del
    * Numero di colonne disponibili:
 
       * `columns="{String}8"`
+
    * Componenti che possono essere aggiunti al componente corrente:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`

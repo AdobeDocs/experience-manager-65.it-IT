@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 3%
 
 ---
@@ -132,7 +132,7 @@ Per applicare la configurazione del servizio di posta elettronica a una newslett
 1. Creare una configurazione del servizio di posta elettronica.
 1. Apri l’e-mail/newsletter.
 1. Apri le impostazioni dell’e-mail/newsletter facendo clic su **Impostazioni** o facendo clic su **Proprietà pagina in** la spalla.
-1. Clic **Aggiungi servizio** in **Cloud Services** scheda. Viene visualizzato l’elenco dei servizi. Seleziona la configurazione richiesta: **ExactTarget** o **Silverpop** - dall’elenco a discesa.
+1. Clic **Aggiungi servizio** in **Cloud Service** scheda. Viene visualizzato l’elenco dei servizi. Seleziona la configurazione richiesta: **ExactTarget** o **Silverpop** - dall’elenco a discesa.
 
    ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
 

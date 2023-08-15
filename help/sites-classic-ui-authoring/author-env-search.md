@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 10%
 
 ---
@@ -22,7 +22,7 @@ L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti,
 
 >[!NOTE]
 >
->All&#39;esterno dell&#39;ambiente di authoring sono disponibili altri meccanismi di ricerca, ad esempio [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>All&#39;esterno dell&#39;ambiente di authoring sono disponibili altri meccanismi di ricerca, ad esempio [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Informazioni di base sulla ricerca {#search-basics}
 
@@ -49,7 +49,6 @@ Il pannello di ricerca consente di eseguire ricerche in tutte le pagine del sito
 >* [Potenziamento](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
-
 Eseguire la ricerca facendo clic su **Ricerca** nella parte inferiore del riquadro. Clic **Reimposta** per cancellare i criteri di ricerca.
 
 ## Filtro {#filter}
@@ -60,7 +59,7 @@ In varie posizioni è possibile impostare (e cancellare) un filtro per approfond
 
 ## Trova e sostituisci {#find-and-replace}
 
-In **Siti Web** console a **Trova e sostituisci** L&#39;opzione di menu consente di cercare e sostituire più istanze di una stringa all&#39;interno di una sezione del sito Web.
+In **Siti Web** console a **Trova e sostituisci** opzione di menu consente di cercare e sostituire più istanze di una stringa, all’interno di una sezione del sito web.
 
 1. Selezionare la pagina principale, o cartella, in cui si desidera eseguire l&#39;azione di ricerca e sostituzione.
 1. Seleziona **Strumenti** allora **Trova e sostituisci**:

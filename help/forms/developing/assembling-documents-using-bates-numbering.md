@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1922'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Nella figura seguente viene illustrato un documento PDF contenente un identifica
 
 ![au_au_batesnumber](assets/au_au_batesnumber.png)
 
-Ai fini della presente discussione, l’identificatore univoco della pagina viene inserito nell’intestazione di un documento. Si supponga di utilizzare il seguente documento DDX.
+Ai fini della presente discussione, l&#39;identificatore di pagina univoco viene inserito nell&#39;intestazione di un documento. Si supponga di utilizzare il seguente documento DDX.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>
@@ -249,7 +249,7 @@ Assembla un documento PDF che utilizza identificatori di pagina univoci (numeraz
    Per ottenere il documento di PDF appena creato, effettuare le seguenti operazioni:
 
    * Accedere a `AssemblerResult` dell&#39;oggetto `documents` campo, che è un `Map` oggetto che contiene i documenti PDF risultanti.
-   * Effettua iterazione attraverso `Map` finché non viene individuata la chiave corrispondente al nome del documento risultante. Quindi esegui il cast del membro dell’array `value` a un `BLOB`.
+   * Effettua iterazione attraverso `Map` finché non viene individuata la chiave corrispondente al nome del documento risultante. Quindi esegui il cast del membro di array `value` a un `BLOB`.
    * Estrarre i dati binari che rappresentano il documento PDF accedendo al relativo `BLOB` dell&#39;oggetto `MTOM` proprietà. Restituisce una matrice di byte che è possibile scrivere in un file PDF.
 
 **Consulta anche**

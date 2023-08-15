@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Oltre alle impostazioni di registrazione globali, AEM consente di configurare im
 * formato da utilizzare per la scrittura dei messaggi di registro
 * il logger (il servizio OSGi che fornisce i messaggi di registro)
 
-Questo consente di canalizzare i messaggi di registro per un singolo servizio in un file separato. Ciò può essere particolarmente utile durante lo sviluppo o il test; ad esempio, quando è necessario un livello di registro aumentato per un servizio specifico.
+In questo modo è possibile canalizzare i messaggi di registro per un singolo servizio in un file separato. Ciò può essere particolarmente utile durante lo sviluppo o il test; ad esempio, quando è necessario un livello di registro aumentato per un servizio specifico.
 
 AEM utilizza quanto segue per scrivere i messaggi di registro nel file:
 
@@ -69,19 +69,19 @@ Questi elementi sono collegati dai seguenti parametri per gli elementi appropria
 
 * **Logger (Logger)**
 
-   Definisci i servizi che generano i messaggi.
+  Definisci i servizi che generano i messaggi.
 
 * **File di registro (Logger)**
 
-   Definisci il file fisico per l’archiviazione dei messaggi di registro.
+  Definisci il file fisico per l’archiviazione dei messaggi di registro.
 
-   Viene utilizzato per collegare un Logger con un Logger. Il valore deve essere identico allo stesso parametro nella configurazione di Logging Writer per la connessione da effettuare.
+  Viene utilizzato per collegare un Logger con un Logger. Il valore deve essere identico allo stesso parametro nella configurazione di Logging Writer per la connessione da effettuare.
 
 * **File di registro (Logging Writer)**
 
-   Definisci il file fisico in cui verranno scritti i messaggi del registro.
+  Definisci il file fisico in cui verranno scritti i messaggi del registro.
 
-   Questo deve essere identico allo stesso parametro nella configurazione di Logging Writer, altrimenti la corrispondenza non verrà effettuata. Se non viene trovata alcuna corrispondenza, verrà creato un writer implicito con la configurazione predefinita (rotazione giornaliera del registro).
+  Questo deve essere identico allo stesso parametro nella configurazione di Logging Writer, altrimenti la corrispondenza non verrà effettuata. Se non viene trovata alcuna corrispondenza, verrà creato un writer implicito con la configurazione predefinita (rotazione giornaliera del registro).
 
 ### Logger e writer standard {#standard-loggers-and-writers}
 
@@ -91,9 +91,9 @@ Il primo è un caso speciale in quanto controlla sia `request.log` e `access.log
 
 * Logger:
 
-   * Logger dati della richiesta personalizzabile Apache Sling
+   * Registratore dati di richieste personalizzabili Apache Sling
 
-      (org.apache.sling.engine.impl.log.RequestLoggerService)
+     (org.apache.sling.engine.impl.log.RequestLoggerService)
 
    * Scrivi messaggi sul contenuto della richiesta a `request.log`.
 
@@ -101,7 +101,7 @@ Il primo è un caso speciale in quanto controlla sia `request.log` e `access.log
 
    * Logger richieste Apache Sling
 
-      (org.apache.sling.engine.impl.log.RequestLogger)
+     (org.apache.sling.engine.impl.log.RequestLogger)
 
    * Scrive i messaggi in uno dei due modi `request.log` o `access.log`.
 
@@ -113,7 +113,7 @@ Le altre coppie seguono la configurazione standard:
 
    * Configurazione logger registrazione Sling Apache
 
-      (org.apache.sling.commons.log.LogManager.factory.config)
+     (org.apache.sling.commons.log.LogManager.factory.config)
 
    * Scritture `Information` messaggi a `logs/error.log`.
 
@@ -121,7 +121,7 @@ Le altre coppie seguono la configurazione standard:
 
    * Configurazione di Apache Sling Logging Writer
 
-      (org.apache.sling.commons.log.LogManager.factory.writer)
+     (org.apache.sling.commons.log.LogManager.factory.writer)
 
 * Logger:
 

@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2871'
 ht-degree: 27%
 
 ---
@@ -58,7 +58,6 @@ Un sito o una Live Copy si collega a un’area contenente le attività che devon
 >* Quando si utilizza la sincronizzazione con Adobe Target, è necessaria una licenza di Adobe Target.
 >
 
-
 ## Casi d’uso {#use-cases}
 
 Puoi impostare il supporto multisito per contenuti mirati in diversi modi, a seconda del caso d’uso. Questa sezione descrive come ciò potrebbe funzionare teoricamente con un marchio. Inoltre, in [Esempio: targeting del contenuto in base alla geografia](#example-targeting-content-based-on-geography), puoi vedere un’applicazione reale di targeting del contenuto su più siti.
@@ -92,7 +91,7 @@ Potresti anche avere **multiplo** marchi utilizzati in un sito, che potrebbe ess
 
 ## Esempio: targeting del contenuto in base alla geografia {#example-targeting-content-based-on-geography}
 
-L’utilizzo di più siti per contenuti mirati consente di condividere, eseguire il rollout o isolare i contenuti di personalizzazione. Per illustrare meglio come viene utilizzata questa funzione, considera uno scenario in cui desideri controllare come viene implementato il contenuto di destinazione in base alla geografia, come nello scenario seguente:
+L’utilizzo di più siti per contenuti mirati consente di condividere, distribuire o isolare i contenuti di personalizzazione. Per illustrare meglio come viene utilizzata questa funzione, considera uno scenario in cui desideri controllare come viene implementato il contenuto di destinazione in base alla geografia, come nello scenario seguente:
 
 Esistono quattro versioni dello stesso sito basate sulla geografia:
 
@@ -248,7 +247,6 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 >* Puoi solo sospendere o scollegare le Live Copy in un’attività.
 >* Non è necessario sospendere o scollegare le Live Copy per estendere un’attività ereditata. Puoi sempre creare **nuovo** esperienze e offerte locali per quell’attività. Se desideri modificare un’attività esistente, devi sospendere l’ereditarietà.
 >
-
 
 ### Sospensione dell’ereditarietà {#suspending-inheritance}
 

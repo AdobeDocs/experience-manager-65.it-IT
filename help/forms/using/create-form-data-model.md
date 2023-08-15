@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1511'
 ht-degree: 1%
 
 ---
@@ -55,9 +55,9 @@ Prima di iniziare, assicurati di disporre dei seguenti elementi:
 
 Per configurare il [!DNL MySQL] database:
 
-1. Installare il driver JDBC per [!DNL MySQL] database come bundle OSGi:
+1. Installa il driver JDBC per [!DNL MySQL] il database come bundle OSGi:
 
-   1. Scarica [!DNL MySQL] Bundle OSGi driver JDBC da `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
+   1. Scarica [!DNL MySQL] il bundle OSGi del driver JDBC da `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` . <!-- This URL is an insecure link but using https is not possible -->
    1. Accedere a AEM [!DNL Forms] Crea istanza come amministratore e vai ai bundle della console web AEM. L’URL predefinito è [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Tocca **[!UICONTROL Installa/Aggiorna]**. Un [!UICONTROL Caricare/Installare i bundle] viene visualizzata.
@@ -66,38 +66,36 @@ Per configurare il [!DNL MySQL] database:
 
 1. Configura [!DNL MySQL] database come origine dati:
 
-   1. Vai alla console web dell’AEM all’indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Individua **Origine dati in pool di connessione Apache Sling** configurazione. Tocca per aprire la configurazione in modalità di modifica.
+   1. Vai a AEM console Web all&#39;indirizzo [ https://localhost:4502/System/Console/configMgr ](https://localhost:4502/system/console/configMgr) .
+   1. Individua **la configurazione dell&#39;origine** Apache Sling Connection in pool. Toccate per aprire la configurazione in modalità modifica.
    1. Nella finestra di dialogo di configurazione, specifica i dettagli seguenti:
 
       * **Nome origine dati:** È possibile specificare qualsiasi nome. Ad esempio, specifica **WeRetailMySQL**.
       * **Nome proprietà servizio DataSource**: specifica il nome della proprietà del servizio contenente il nome DataSource. Viene specificato durante la registrazione dell’istanza dell’origine dati come servizio OSGi. Ad esempio: **datasource.name**.
       * **Classe driver JDBC**: specifica il nome della classe Java del driver JDBC. Per [!DNL MySQL] database, specificare **com.mysql.jdbc.Driver**.
-      * **URI connessione JDBC**: specifica l’URL di connessione del database. Per [!DNL MySQL] database in esecuzione sulla porta 3306 e schema weretail, l&#39;URL è: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI** di connessione JDBC: specifica URL di connessione del database. Per [!DNL MySQL] il database in esecuzione su porta 3306 e schema weretail, il URL è: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Quando [!DNL MySQL] il database è protetto da un firewall, quindi il nome host del database non è un DNS pubblico. L&#39;indirizzo IP del database deve essere aggiunto nel */etc/hosts* file del computer host AEM.
+      > Quando il database è dietro un firewall, il nome host del [!DNL MySQL] database non è un DNS pubblico. L&#39;indirizzo IP del database deve essere aggiunto nel *file/etc/hosts* della macchina host AEM.
 
       * **Nome utente:** Nome utente del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
       * **Password:** Password del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
 
       >[!NOTE]
       >
-      >AEM Forms non supporta l’autenticazione NT per [!DNL MySQL]. Vai alla console web dell’AEM all’indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e cerca &quot;Apache Sling Connection Pooled Datasource&quot;.For &quot;JDBC connection URI&quot; impostare il valore &quot;integratedSecurity&quot; su False e utilizzare il nome utente e la password creati per la connessione con [!DNL MySQL] database.
+      >AEM Forms non supporta l’autenticazione NT per [!DNL MySQL]. Vai a AEM console Web all&#39;indirizzo [ https://localhost:4502/System/Console/configMgr ](https://localhost:4502/system/console/configMgr) e ricerca &quot;Apache Sling Connection aggregate DataSource&quot;. Per la proprietà &quot;URI di connessione JDBC&quot; valore impostato &quot;integratedSecurity&quot; come falso e utilizzare il nome utente e password creato per la connessione con [!DNL MySQL] il database.
 
-      * **Test su prestito:** Abilita **[!UICONTROL Test su prestito]** opzione.
-      * **Test al ritorno:** Abilita **[!UICONTROL Test al ritorno]** opzione.
-      * **Query di convalida:** Specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio: **seleziona &#42; da customerdetails**.
+      * **Verifica in prestito:** Abilita l&#39; **[!UICONTROL opzione prova in prestito]** .
+      * **Test on return:** Abilita l&#39; **[!UICONTROL opzione test on return]** .
+      * **Query di convalida:** specifica una query SELECT SQL per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio: **seleziona &#42; da customerdetails**.
       * **Isolamento transazione**: imposta il valore su **READ_COMMIT**.
 
-         Lascia altre proprietà con impostazione predefinita [valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e tocca **[!UICONTROL Salva]**.
+        Lascia altre proprietà con impostazione predefinita [valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e tocca **[!UICONTROL Salva]**.
 
-         Viene creata una configurazione simile alla seguente.
+        Viene creata una configurazione simile alla seguente.
 
-         ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
-
-
+        ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
 ## Passaggio 2: creare il modello dati del modulo {#create-fdm}
 
@@ -140,6 +138,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
       * città
       * stadio
       * zipcode
+
    * **Servizi:**
 
       * ottenere
@@ -164,29 +163,29 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
       ![write-default](assets/write-default.png)
 
-      Aggiungere e configurare **id** come segue.
+      Aggiungi e configura l&#39; **argomento ID** come segue.
 
-      ![id-arg](assets/id-arg.png)
+      ![ID-ARG](assets/id-arg.png)
 
-   1. Tocca **[!UICONTROL Fine]** per salvare le proprietà dell’oggetto modello dati. Quindi, tocca **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+   1. Toccate **[!UICONTROL fine]** per salvare le proprietà dell&#39;oggetto modello dati. Quindi, tocca **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 
-      Il **[!UICONTROL ottenere]** e **[!UICONTROL aggiorna]** I servizi vengono aggiunti come servizi predefiniti per l&#39;oggetto modello dati.
+      I **[!UICONTROL Servizi Get]** e **[!UICONTROL Update]** vengono aggiunti come servizi predefiniti per l&#39;oggetto modello dati.
 
       ![data-model-object](assets/data-model-object.png)
 
 1. Vai a **[!UICONTROL Servizi]** e configurare **[!UICONTROL ottenere]** e **[!UICONTROL aggiorna]** servizi.
 
-   1. Seleziona la **[!UICONTROL ottenere]** servizio e tocco **[!UICONTROL Modifica proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
-   1. Nella finestra di dialogo Modifica proprietà, specifica quanto segue:
+   1. Seleziona il **[!UICONTROL servizio Get]** e tocca **[!UICONTROL modifica proprietà]** . Viene visualizzata la finestra di dialogo delle proprietà.
+   1. Specifica quanto segue nella finestra di dialogo Modifica Proprietà:
 
-      * **Titolo**: specifica il titolo del servizio. Ad esempio: Recupera indirizzo di spedizione.
-      * **Descrizione**: specifica la descrizione contenente i dettagli del funzionamento del servizio. Ad esempio:
+      * **Titolo** : specifica il titolo del servizio. Ad esempio: Recupera indirizzo di spedizione.
+      * **Descrizione** : specifica la descrizione che contiene il funzionamento dettagliato del servizio. Ad esempio:
 
-         Questo servizio recupera l’indirizzo di spedizione e altri dettagli del cliente da [!DNL MySQL] database
+        Questo servizio recupera l’indirizzo di spedizione e altri dettagli del cliente da [!DNL MySQL] database
 
       * **Oggetto modello di output**: seleziona lo schema contenente i dati del cliente. Ad esempio:
 
-         schema customerdetail
+        schema customerdetail
 
       * **Array di ritorno**: disabilita il **Array di ritorno** opzione.
       * **Argomenti**: argomento di selezione denominato **ID**.
@@ -202,20 +201,19 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
       * **Titolo**: specifica il titolo del servizio. Ad esempio, Aggiorna Indirizzo di spedizione.
       * **Descrizione**: specifica la descrizione contenente i dettagli del funzionamento del servizio. Ad esempio:
 
-         Questo servizio aggiorna l&#39;indirizzo di spedizione e i campi correlati nel database MySQL
+        Questo servizio aggiorna l&#39;indirizzo di spedizione e i campi correlati nel database MySQL
 
       * **Oggetto modello di input**: seleziona lo schema contenente i dati del cliente. Ad esempio:
 
-         schema customerdetail
+        schema customerdetail
 
       * **Tipo di output**: Seleziona **BOOLEANO**.
 
       * **Argomenti**: argomento di selezione denominato **ID** e **customerdetails**.
+
       Tocca **[!UICONTROL Fine]**. Il **[!UICONTROL aggiorna]** servizio per aggiornare i dettagli del cliente in [!DNL MySQL] il database è configurato.
 
       ![indirizzo-spedizione-aggiornamento](assets/shiiping-address-update.png)
-
-
 
 L’oggetto modello dati e i servizi nel modello dati del modulo sono configurati. È ora possibile verificare il modello dati del modulo.
 

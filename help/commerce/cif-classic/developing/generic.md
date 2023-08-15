@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Per utilizzare il livello di integrazione è disponibile una serie di componenti
 * Check-out
 * Ricerca
 
-Per la ricerca è disponibile un hook di integrazione che consente di utilizzare la ricerca AEM, una ricerca di terze parti o una combinazione delle due.
+Per la ricerca è disponibile un hook di integrazione che consente di utilizzare la ricerca AEM, una ricerca di terze parti o una combinazione di tali elementi.
 
 ## Selezione motore di eCommerce {#ecommerce-engine-selection}
 
@@ -82,7 +82,7 @@ In un’installazione standard AEM è necessaria un’implementazione specifica,
 
 >[!NOTE]
 >
->Utilizzando CRXDE Lite puoi vedere come viene gestito nel componente del prodotto per l’implementazione generica dell’AEM:
+>Utilizzando CRXDE Liti puoi vedere come viene gestito nel componente del prodotto per l’implementazione generica dell’AEM:
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -480,7 +480,7 @@ Il punto di ingresso per l’API di ricerca è `CommerceService#search` che rest
       * Le Promozioni Attivate vengono rimandate al server tramite una chiamata AJAX per ricalcolare il carrello.
       * Nel pannello ClientContext vengono visualizzate anche le promozioni attivate (e i voucher aggiunti).
 
-L&#39;aggiunta o la rimozione di un voucher da un carrello viene eseguita tramite `CommerceSession` API:
+L&#39;aggiunta/rimozione di un voucher da un carrello viene eseguita tramite `CommerceSession` API:
 
 ```java
 /**

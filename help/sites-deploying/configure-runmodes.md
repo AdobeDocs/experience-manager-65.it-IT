@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Ad ogni avvio è possibile selezionare anche modalità di esecuzione personalizz
 
 ## Utilizzo di samplecontent e nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-Queste modalità ti consentono di controllare l’utilizzo di contenuti campione. Il contenuto di esempio viene definito prima che venga generato l’avvio rapido e può includere pacchetti, configurazioni, ecc.:
+Queste modalità ti consentono di controllare l’utilizzo di contenuti di esempio. Il contenuto di esempio viene definito prima che venga generato l’avvio rapido e può includere pacchetti, configurazioni, ecc.:
 
 * Il `samplecontent` la modalità di esecuzione installerà questo contenuto (la modalità predefinita).
 
@@ -85,7 +85,7 @@ La modalità di esecuzione nosamplecontent è progettata per le installazioni di
 
 Un insieme di valori per le proprietà di configurazione, utilizzati per una particolare modalità di esecuzione, può essere salvato nel repository.
 
-La modalità di esecuzione è indicata da un suffisso nel nome della cartella. Questo consente di archiviare tutte le configurazioni in un archivio come. Ad esempio:
+La modalità di esecuzione è indicata da un suffisso nel nome della cartella. Questo consente di memorizzare tutte le configurazioni in un archivio come. Ad esempio:
 
 * `config`
 

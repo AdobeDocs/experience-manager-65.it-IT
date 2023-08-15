@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2558'
 ht-degree: 0%
@@ -209,11 +209,11 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
 
       * Valore stringa che rappresenta il nome della chiave. Questo valore deve corrispondere al valore dell&#39;elemento di origine PDF specificato nel documento DDX.
       * A `com.adobe.idp.Document` oggetto che contiene il documento di input PDF.
+
    * Aggiungere il documento XML segnalibro richiamando `java.util.Map` dell&#39;oggetto `put` e fornendo i seguenti argomenti:
 
       * Valore stringa che rappresenta il nome della chiave. Questo valore deve corrispondere al valore dell&#39;elemento di origine Segnalibri specificato nel documento DDX.
       * A `com.adobe.idp.Document` oggetto che contiene il documento XML segnalibro.
-
 
 1. Impostare le opzioni di runtime.
 
@@ -323,7 +323,7 @@ Assemblare un documento PDF con segnalibri utilizzando l&#39;API del servizio As
    Per ottenere il documento di PDF appena creato, effettuare le seguenti operazioni:
 
    * Accedere a `AssemblerResult` dell&#39;oggetto `documents` campo, che è un `Map` oggetto che contiene i documenti PDF risultanti.
-   * Effettua iterazione attraverso `Map` finché non viene individuata la chiave corrispondente al nome del documento risultante. Quindi esegui il cast del membro dell’array `value` a un `BLOB`.
+   * Effettua iterazione attraverso `Map` finché non viene individuata la chiave corrispondente al nome del documento risultante. Quindi esegui il cast del membro di array `value` a un `BLOB`.
    * Estrarre i dati binari che rappresentano il documento PDF accedendo al relativo `BLOB` dell&#39;oggetto `MTOM` campo. Restituisce una matrice di byte che è possibile scrivere in un file PDF.
 
 **Consulta anche**

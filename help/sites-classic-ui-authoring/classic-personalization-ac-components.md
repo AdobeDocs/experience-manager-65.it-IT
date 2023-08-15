@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 5%
+source-wordcount: '2531'
+ht-degree: 6%
 
 ---
 
@@ -112,6 +112,7 @@ Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 >È necessario immettere le informazioni nel **Testo alternativo** campo in **Avanzate** o l’immagine non può essere salvata e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’esempio seguente mostra un componente Immagine (Campaign) visualizzato.
 
@@ -132,8 +133,7 @@ Didascalia del collegamento. Questo è il testo visualizzato dagli utenti.
 Aggiunge ulteriori informazioni sull&#39;utilizzo del collegamento.
 
 * **TipoCollegamento**
-Nell’elenco a discesa, seleziona tra 
-**URL personalizzato** e un **Documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
+Nell’elenco a discesa, seleziona tra **URL personalizzato** e un **Documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo**
 Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per aggiungere più elementi.
@@ -143,6 +143,7 @@ Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per a
 >È necessario immettere le informazioni nel **Tipo di collegamento** campo in **Informazioni URL** oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’esempio seguente mostra un componente Collega (Campagna) visualizzato.
 
@@ -192,6 +193,7 @@ Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 >Il **Testo alternativo** campo in **Avanzate** è richiesta una scheda oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’esempio seguente mostra un componente Testo e immagine (Campaign) visualizzato.
 
@@ -247,7 +249,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
   <tr>
    <td><p>Casella di selezione (Campaign)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>Non contattare più (tramite alcun canale)</p> </td>
+   <td><p>No contatto più lungo (tramite qualsiasi canale)</p> </td>
   </tr>
   <tr>
    <td><p>Campo data (Campaign)</p> <p>Campo data/HTML 5 (Campaign)</p> </td>

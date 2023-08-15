@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3454'
 ht-degree: 2%
 
 ---
@@ -105,7 +105,7 @@ Il meccanismo per separare la logica dall&#39;aspetto aiuta a chiarire ciò che 
 
 I siti web moderni si basano fortemente sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. L’organizzazione e l’ottimizzazione della trasmissione di questo codice possono essere un problema complesso.
 
-Per risolvere questo problema, l’AEM fornisce **Cartelle libreria lato client**, che ti consente di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client. Il sistema di librerie lato client si occupa quindi di generare i collegamenti corretti nella pagina web finale per caricare il codice corretto.
+Per risolvere questo problema, l’AEM fornisce **Cartelle libreria lato client**, che consente di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client. Il sistema di librerie lato client si occupa quindi di generare i collegamenti corretti nella pagina web finale per caricare il codice corretto.
 
 Letto [Utilizzo delle librerie HTML lato client](/help/sites-developing/clientlibs.md) per ulteriori informazioni.
 
@@ -201,7 +201,6 @@ Per esempi, consulta:
 >* la sessione AEM Gems del [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 >* il relativo codice di esempio di cui [Esempio di codice: come personalizzare i campi della finestra di dialogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
-
 
 #### Creazione di un nuovo campo {#creating-a-new-field}
 
@@ -379,7 +378,6 @@ L’AEM offre la possibilità di configurare un sistema paragrafo sulla pagina i
    * Nome: `cq:authoring`
    * Tipo: `nt:unstructured`
 
-
 1. Crea un nuovo nodo che contenga tutti i mapping risorsa-componente:
 
    * Nome: `assetToComponentMapping`
@@ -396,27 +394,26 @@ L’AEM offre la possibilità di configurare un sistema paragrafo sulla pagina i
 
       * Tipo: `String`
       * Valore: il gruppo a cui appartiene l’attività correlata; per esempio, `media`
+
    * `assetMimetype`:
 
       * Tipo: `String`
       * Valore: il tipo MIME della relativa risorsa, ad esempio `image/*`
+
    * `droptarget`:
 
       * Tipo: `String`
       * Valore: il target di rilascio; ad esempio, `image`
+
    * `resourceType`:
 
       * Tipo: `String`
       * Valore: la risorsa del componente correlato, ad esempio `foundation/components/image`
+
    * `type`:
 
       * Tipo: `String`
       * Valore: il tipo, ad esempio `Images`
-
-
-
-
-
 
 Per esempi, consulta:
 
@@ -446,7 +443,7 @@ L’estensione:
 
 >[!NOTE]
 >
->Brackets è il meccanismo consigliato per la creazione di componenti. Sostituisce la funzionalità CRXDE Lite - Crea componente, progettata per l’interfaccia classica.
+>Brackets è il meccanismo consigliato per la creazione di componenti. Sostituisce la funzionalità CRXDE Liti - Crea componente, progettata per l’interfaccia classica.
 
 ## Migrazione da un componente classico {#migrating-from-a-classic-component}
 
@@ -458,7 +455,7 @@ Quando si migra un componente progettato per essere utilizzato con l’interfacc
 
 * Componenti
 
-   * Migra [ `cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) codice che utilizza funzioni classiche specifiche per l’interfaccia utente
+   * Migra [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) codice che utilizza funzioni classiche specifiche per l’interfaccia utente
    * Plug-in dell’editor Rich Text; per ulteriori informazioni consulta [Configurazione dell’editor Rich Text](/help/sites-administering/rich-text-editor.md).
    * [Migra `cq:listener` codice](#migrating-cq-listener-code) che utilizza funzioni specifiche dell’interfaccia classica
 

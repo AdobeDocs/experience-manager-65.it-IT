@@ -12,9 +12,9 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2694'
+source-wordcount: '2693'
 ht-degree: 4%
 
 ---
@@ -68,23 +68,23 @@ Per configurare le funzioni di Analytics for Communities, è necessario collabor
 
 * **Nome dell’azienda**
 
-   Azienda associata all’account Adobe Analytics.
+  Azienda associata all’account Adobe Analytics.
 
 * **Nome utente**
 
-   Il nome utente di accesso per l’utente autorizzato a gestire l’account Analytics (deve includere i privilegi di accesso al servizio Web).
+  Il nome utente di accesso per l’utente autorizzato a gestire l’account Analytics (deve includere i privilegi di accesso al servizio Web).
 
 * **Password**
 
-   Password di accesso per l&#39;utente autorizzato.
+  Password di accesso per l&#39;utente autorizzato.
 
 * **Data center di Analytics**
 
-   L’URL del data center di Analytics per l’account.
+  L’URL del data center di Analytics per l’account.
 
 * **Suite per report**
 
-   Nome della suite di rapporti di Analytics da utilizzare.
+  Nome della suite di rapporti di Analytics da utilizzare.
 
 ## Suite di rapporti Adobe Analytics per reporting video {#adobe-analytics-report-suite-for-video-reporting}
 
@@ -105,8 +105,8 @@ Accedendo a [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/ana
    * tipo **`Counter`**
 
       * non **`Counter (no subrelations)`**
-   * Possibilità di riutilizzare (rinominare) gli eventi esistenti o crearne di nuovi da utilizzare per le funzionalità delle community
 
+   * Possibilità di riutilizzare (rinominare) gli eventi esistenti o crearne di nuovi da utilizzare per le funzionalità delle community
 
 * [Gestione video](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
@@ -114,11 +114,11 @@ Accedendo a [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/ana
 
       * Attiva `Video Core`
       * Seleziona Salva
+
    * Console di misurazione Core video
 
       * Seleziona `Use Solution Variables`
       * Seleziona Salva
-
 
 Se si utilizza un **nuova suite di rapporti**, tieni presente che una nuova suite di rapporti può avere solo 4 evar e 6 variabili evento, mentre per le community sono necessarie 11 evar e 7 variabili evento.
 
@@ -162,7 +162,7 @@ Se non è abilitata, non viene mai creata un&#39;istanza del codice heartbeat vi
 
 Per creare una nuova integrazione Analytics, che integri Adobe Analytics con il sito della community AEM, utilizzando l’interfaccia utente standard nell’istanza di authoring:
 
-* Dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud Services]**
+* Dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud Service]**
 * Scorri verso il basso fino a **[!UICONTROL Adobe Analytics]**
 * Seleziona **[!UICONTROL Configura ora]** o **[!UICONTROL Mostra configurazioni]**
 
@@ -178,17 +178,17 @@ Nella finestra di dialogo Crea configurazione, i valori da immettere identifican
 
 * **Titolo**
 
-   (Obbligatorio) Titolo da visualizzare per la configurazione.
+  (Obbligatorio) Titolo da visualizzare per la configurazione.
 Ad esempio, immetti *Analisi community*
 
 * **Nome**
 
-   (Facoltativo) Se non viene specificato, per impostazione predefinita il nome verrà impostato su un nome di nodo valido derivato dal titolo.
+  (Facoltativo) Se non viene specificato, per impostazione predefinita il nome verrà impostato su un nome di nodo valido derivato dal titolo.
 Ad esempio, immetti *community*
 
 * **Modello**
 
-   Seleziona `Adobe Analytics Configuration`
+  Seleziona `Adobe Analytics Configuration`
 
 * Seleziona **Crea**
 
@@ -202,35 +202,35 @@ La creazione iniziale di una nuova configurazione di Analytics comporta la visua
 
 * **Azienda**
 
-   Azienda associata all’account Adobe Analytics.
+  Azienda associata all’account Adobe Analytics.
 
 * **Nome utente**
 
-   Il nome utente di accesso per l’utente autorizzato a gestire l’account Analytics.
+  Il nome utente di accesso per l’utente autorizzato a gestire l’account Analytics.
 
 * **Password**
 
-   Password di accesso per l&#39;utente autorizzato.
+  Password di accesso per l&#39;utente autorizzato.
 
 * **Datacenter**
 
-   Seleziona il data center di Analytics che ospita la suite di rapporti.
+  Seleziona il data center di Analytics che ospita la suite di rapporti.
 
 * **Non aggiungere tag di tracciamento alla pagina**
 
-   Lascia come predefinito (deselezionato).
+  Lascia come predefinito (deselezionato).
 
 * **Usa AppMeasurement**
 
-   Lascia come predefinito (deselezionato).
+  Lascia come predefinito (deselezionato).
 
 * **Non importare di notte le impression della pagina (creazione)**
 
-   Lascia come predefinito (deselezionato).
+  Lascia come predefinito (deselezionato).
 
 * **Non importare di notte le impression della pagina (pubblicazione)**
 
-   Lascia come predefinito (deselezionato).
+  Lascia come predefinito (deselezionato).
 
 Per salvare le impostazioni:
 
@@ -243,7 +243,7 @@ Per salvare le impostazioni:
 
 * Seleziona **OK**.
 
-   ![analytics-settings](assets/analytics-settings1.png)
+  ![analytics-settings](assets/analytics-settings1.png)
 
 ### Crea framework {#create-framework}
 
@@ -251,20 +251,20 @@ Dopo aver configurato correttamente la connessione di base ad Adobe Analytics, �
 
 * Seleziona `[+]` icona accanto a **[!UICONTROL Framework disponibili]** per creare un nuovo framework
 
-   ![analytics-framework](assets/analytics-framework.png)
+  ![analytics-framework](assets/analytics-framework.png)
 
 * **Titolo**
 
-   (Obbligatorio) Titolo da visualizzare per il framework. Ad esempio, immettere *Quadro comunitario*.
+  (Obbligatorio) Titolo da visualizzare per il framework. Ad esempio, immettere *Quadro comunitario*.
 
 * **Nome**
 
-   (Facoltativo) Se non viene specificato, per impostazione predefinita il nome verrà impostato su un nome di nodo valido derivato dal titolo.
+  (Facoltativo) Se non viene specificato, per impostazione predefinita il nome verrà impostato su un nome di nodo valido derivato dal titolo.
 Ad esempio, immetti *community*.
 
 * *Modello*
 
-   Seleziona `Adobe Analytics Framework`.
+  Seleziona `Adobe Analytics Framework`.
 
 * Seleziona **Crea**.
 
@@ -283,7 +283,7 @@ Seleziona la suite di rapporti che è stata configurata per il reporting video.
 Se una suite di rapporti non è ancora stata creata o non è configurata correttamente, vedi la sezione precedente:
 [Suite di rapporti Adobe Analytics per reporting video](#adobe-analytics-report-suite-for-video-reporting)
 
-La barra laterale non è necessaria e può essere ridotta a icona in modo da non ostacolare l’accesso alle impostazioni delle suite di rapporti.
+Il Sidekick non è necessario e può essere ridotto a icona in modo da non ostacolare l’accesso alle impostazioni delle suite di rapporti.
 
 #### Finestra di dialogo Suite di rapporti prima e dopo aver selezionato &quot;Aggiungi elemento&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
 
@@ -441,9 +441,9 @@ Di seguito è riportato un esempio di mappature predefinite:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
@@ -454,9 +454,9 @@ Di seguito è riportato un esempio di mappature predefinite:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
@@ -467,9 +467,9 @@ Di seguito è riportato un esempio di mappature predefinite:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
@@ -480,9 +480,9 @@ Di seguito è riportato un esempio di mappature predefinite:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
@@ -493,9 +493,9 @@ Di seguito è riportato un esempio di mappature predefinite:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
@@ -506,9 +506,9 @@ Di seguito è riportato un esempio di mappature predefinite:
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>e)</em></td>
+   <td><em>(e)</em></td>
    <td><em>f)</em></td>
-   <td><em>g)</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
@@ -527,8 +527,7 @@ Di seguito è riportato un esempio di mappature predefinite:
 * *Titolo componente UGC*: Argomenti trekking
 * *login (authorizableId)*: `aaron.mcdonald@mailinator.com`
 * *Percorso SRP a UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-o 
-*percorso del componente da seguire*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+o *percorso del componente da seguire*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
 * *percorso del contenuto del sito community*: `/content/sites/<site name>/en`
 
@@ -636,7 +635,7 @@ Attualmente, per personalizzare le metriche da monitorare, nell’archivio vengo
 L’argomento del forum è attualmente l’unico esempio di questa personalizzazione:
 
 * Nel server di pubblicazione principale, accedere con privilegi amministrativi.
-* Accedi a [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio: [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
+* Accedi a [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio: [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
 * Sotto il nodo jcr:content della directory principale della lingua (ad esempio `/content/sites/engage/en/jcr:content),`passa al componente configurato per la generazione di rapporti di Analytics.
 Ad esempio **`analytics/reportConfigs/social_forum_components_hbs_topic`**

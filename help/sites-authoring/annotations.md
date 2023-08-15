@@ -8,16 +8,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '641'
 ht-degree: 45%
 
 ---
 
 # Annotazioni durante la modifica di una pagina{#annotations-when-editing-a-page}
 
-L’aggiunta di contenuto alle pagine del sito web è spesso soggetta a discussioni prima che questo venga effettivamente pubblicato. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (anziché, ad esempio, al layout) consentono di aggiungere un’annotazione.
+L’aggiunta di contenuto alle pagine del sito web è spesso soggetta a discussioni prima che questo venga effettivamente pubblicato. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (anziché, ad esempio, al layout) ti consentono di aggiungere un’annotazione.
 
 Un’annotazione posiziona un marcatore colorato o una nota adesiva sulla pagina. può contenere commenti o domande inseriti da un utente e destinati ad altri autori o revisori.
 
@@ -55,7 +55,7 @@ Per la creazione e la visualizzazione delle annotazioni viene utilizzata una [mo
 
 ### Aggiunta di annotazioni a un componente {#annotating-a-component}
 
-La modalità Annota consente di creare, modificare, spostare o eliminare annotazioni nel contenuto:
+La modalità Annota consente di creare, modificare, spostare o eliminare le annotazioni nel contenuto:
 
 1. Puoi accedere alla modalità Annota utilizzando l’icona nella barra degli strumenti (in alto a destra) durante la modifica di una pagina:
 

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 61%
+source-wordcount: '1882'
+ht-degree: 60%
 
 ---
 
@@ -28,31 +28,32 @@ Le proprietà sono distribuite su più schede.
 
 * **Titolo**
 
-   Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, il **Siti Web** e la scheda **Sites** viste a schede/elenco.
+  Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, il **Siti Web** e la scheda **Sites** viste a schede/elenco.
 
-   Questo campo è obbligatorio.
+  Questo campo è obbligatorio.
 
 * **Tag**
 
-   Qui puoi aggiungere o rimuovere i tag nella pagina modificando l’elenco nella casella di selezione:
+  Qui puoi aggiungere o rimuovere i tag nella pagina modificando l’elenco nella casella di selezione:
 
    * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
    * Per aggiungere un tag completamente nuovo, digitane il nome in una casella di selezione vuota.
 
       * Il nuovo tag viene creato quando premi Invio.
       * Il nuovo tag viene quindi mostrato con un asterisco a destra che lo identifica come nuovo tag.
+
    * Con l’elenco a discesa puoi selezionare uno dei tag esistenti.
    * Quando passi il mouse su uno dei tag nella casella di selezione, viene visualizzata una x, che può essere utilizzata per rimuovere quel tag per quella pagina.
 
-   Per ulteriori informazioni sui tag, consulta [Utilizzo dei tag](/help/sites-authoring/tags.md).
+  Per ulteriori informazioni sui tag, consulta [Utilizzo dei tag](/help/sites-authoring/tags.md).
 
 * **Nascondi in navigazione**
 
-   Indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito finale.
+  Indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito finale.
 
 * **Marchio**
 
-   Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del Componente Pagina dalla versione 2.14.0 o successiva di [Componenti Core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+  Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del Componente Pagina dalla versione 2.14.0 o successiva di [Componenti Core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
    * **Override**: selezionalo per definire il marchio su questa pagina.
       * Il valore viene ereditato da tutte le pagine figlie a meno che non abbiano impostati anche i loro valori **Override**.
@@ -60,74 +61,74 @@ Le proprietà sono distribuite su più schede.
       * Il valore viene aggiunto al titolo della pagina dopo un carattere di barra come &quot;Cycling Tuscany | Always ready for the WKND&quot;
 * **Titolo pagina**
 
-   Titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se viene lasciato vuoto, sarà utilizzato il **Titolo**.
+  Titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se viene lasciato vuoto, sarà utilizzato il **Titolo**.
 
 * **Titolo navigazione**
 
-   Puoi specificare un titolo separato da utilizzare nella navigazione (ad esempio, se desideri qualcosa di più conciso). Se vuoto, **Titolo** verrà utilizzato.
+  Puoi specificare un titolo separato da utilizzare nella navigazione (ad esempio, se desideri qualcosa di più conciso). Se vuoto, **Titolo** verrà utilizzato.
 
 * **Sottotitolo**
 
-   Sottotitolo da utilizzare nella pagina.
+  Sottotitolo da utilizzare nella pagina.
 
 * **Descrizione**
 
-   Descrizione della pagina, il suo scopo o altri dettagli.
+  Descrizione della pagina, il suo scopo o altri dettagli.
 
 * **Ora di attivazione**
 
-   La data e l’ora in cui verrà attivata la pagina pubblicata. Quando viene pubblicata, la pagina rimarrà inattiva fino all’ora specificata.
+  La data e l’ora in cui verrà attivata la pagina pubblicata. Quando viene pubblicata, la pagina rimarrà inattiva fino all’ora specificata.
 
-   Lascia questi campi vuoti per le pagine che desideri pubblicare immediatamente (lo scenario più consueto).
+  Lascia questi campi vuoti per le pagine da pubblicare immediatamente (lo scenario più consueto).
 
 * **Ora di disattivazione**
 
-   L’ora in cui la pagina pubblicata verrà disattivata.
+  L’ora in cui la pagina pubblicata verrà disattivata.
 
-   Lascia di nuovo questi campi vuoti per un’azione immediata.
+  Lascia di nuovo questi campi vuoti per un’azione immediata.
 
 * **URL personalizzato**
 
-   Permette di inserire un URL personalizzato per questa pagina, che può consentirti di avere un URL più breve e/o più significativo.
+  Consente di immettere un URL personalizzato per questa pagina, che può consentire di avere un URL più breve e/o più espressivo.
 
-   Ad esempio, se l’URL personalizzato è impostato su `welcome`alla pagina identificata dal percorso `/v1.0/startpage`per il sito web `http://example.com,` allora `http://example.com/welcome`sarebbe l’URL personalizzato di `http://example.com/content/v1.0/startpage`
+  Ad esempio, se l’URL personalizzato è impostato su `welcome`alla pagina identificata dal percorso `/v1.0/startpage`per il sito web `http://example.com,` allora `http://example.com/welcome`sarebbe l’URL personalizzato di `http://example.com/content/v1.0/startpage`
 
-   >[!CAUTION]
-   >
-   >Gli URL personalizzati:
-   >
-   >* devono essere univoci, quindi accertati che il valore scelto non sia già utilizzato per un’altra pagina;
-   >* non supportano le espressioni regolari;
-   >* non devono essere impostati su una pagina esistente.
+  >[!CAUTION]
+  >
+  >Gli URL personalizzati:
+  >
+  >* devono essere univoci, quindi accertati che il valore scelto non sia già utilizzato per un’altra pagina;
+  >* non supportano le espressioni regolari;
+  >* non devono essere impostati su una pagina esistente.
+  >
 
-
-   Devi anche configurare Dispatcher per abilitare l’accesso agli URL personalizzati. Consulta [Abilitazione dell’accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
+  Devi anche configurare Dispatcher per abilitare l’accesso agli URL personalizzati. Consulta [Abilitazione dell’accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
 
 * **Reindirizza URL personalizzato**
 
-   Indica se desideri che la pagina utilizzi il Vanity URL.
+  Indica se desideri che la pagina utilizzi il Vanity URL.
 
 ### Avanzate  {#advanced}
 
 * **Lingua**
 
-   Lingua della pagina.
+  Lingua della pagina.
 
 * **Directory principale lingua**
 
-   Deve essere selezionato se la pagina è la directory principale di una copia per lingua.
+  Deve essere selezionato se la pagina è la directory principale di una copia per lingua.
 
 * **Reindirizza**
 
-   Indica la pagina a cui deve essere automaticamente reindirizzata la pagina.
+  Indica la pagina a cui deve essere automaticamente reindirizzata la pagina.
 
 * **Design**
 
-   Indicare [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
+  Indicare [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
 
 * **Alias**
 
-   Specificare un alias da utilizzare per la pagina.
+  Specificare un alias da utilizzare per la pagina.
 
    * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
    * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
@@ -136,38 +137,38 @@ Le proprietà sono distribuite su più schede.
 
 * **Ereditato da &lt;*percorso*>**
 
-   Indica se la pagina viene ereditata. e da dove.
+  Indica se la pagina viene ereditata. e da dove.
 
 * **Configurazione cloud**
 
-   Percorso della configurazione.
+  Percorso della configurazione.
 
 * **Modelli consentiti**
 
-   [Definire l’elenco dei modelli che saranno disponibili](/help/sites-authoring/templates.md#allowingatemplate) all’interno di questa sub-filiale.
+  [Definire l’elenco dei modelli che saranno disponibili](/help/sites-authoring/templates.md#allowingatemplate) all’interno di questa sub-filiale.
 
 * **Abilita** (Autenticazione richiesta)
 
-   Abilita (o disabilita) l’utilizzo dell’autenticazione per accedere alla pagina.
+  Abilita (o disabilita) l’utilizzo dell’autenticazione per accedere alla pagina.
 
-   >[!NOTE]
-   >
-   >Nella scheda **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions)** è possibile definire gruppi utenti chiusi per la pagina.
+  >[!NOTE]
+  >
+  >Nella scheda **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions)** è possibile definire gruppi utenti chiusi per la pagina.
 
-   >[!CAUTION]
-   >
-   >Il **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** consente di modificare le configurazioni del gruppo utenti chiusi (CUG) in base alla presenza del `granite:AuthenticationRequired` mixin. Se le autorizzazioni di pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza di `cq:cugEnabled` , verrà visualizzato un messaggio di avviso in **Autenticazione richiesta** e l&#39;opzione non sarà modificabile, né il [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions) essere modificabile.
-   >
-   >
-   >In questo caso, le autorizzazioni per il gruppo utenti chiusi devono essere modificate nel [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+  >[!CAUTION]
+  >
+  >Il **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** consente di modificare le configurazioni del gruppo utenti chiusi (CUG) in base alla presenza del `granite:AuthenticationRequired` mixin. Se le autorizzazioni di pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza di `cq:cugEnabled` , verrà visualizzato un messaggio di avviso in **Autenticazione richiesta** e l&#39;opzione non sarà modificabile, né il [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions) essere modificabile.
+  >
+  >
+  >In questo caso, le autorizzazioni per il gruppo utenti chiusi devono essere modificate nel [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 * **Pagina di accesso**
 
-   Pagina da utilizzare per l’accesso.
+  Pagina da utilizzare per l’accesso.
 
 * **Configurazione esportazione**
 
-   Specifica una configurazione di esportazione.
+  Specifica una configurazione di esportazione.
 
 ### Miniatura  {#thumbnail}
 
@@ -175,25 +176,25 @@ Mostra l&#39;immagine di anteprima della pagina. Operazioni disponibili:
 
 * **Genera anteprima**
 
-   Genera un’anteprima della pagina da utilizzare come miniatura.
+  Genera un’anteprima della pagina da utilizzare come miniatura.
 
 * **Carica immagine**
 
-   Carica un&#39;immagine da usare come miniatura.
+  Carica un&#39;immagine da usare come miniatura.
 
 * **Seleziona immagine**
 
-   Seleziona una risorsa esistente da usare come miniatura.
+  Seleziona una risorsa esistente da usare come miniatura.
 
 * **Versione precedente**
 
-   Questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi annullarla prima di salvare.
+  Questa opzione diventa disponibile dopo aver apportato una modifica alla miniatura. Se non desideri mantenere la modifica, puoi annullarla prima di salvare.
 
 ### Social media {#social-media}
 
 * **Condivisione social media**
 
-   Definisce le opzioni di condivisione disponibili sulla pagina. Espone le opzioni disponibili per [Condivisione del componente core](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
+  Definisce le opzioni di condivisione disponibili sulla pagina. Espone le opzioni disponibili per [Condivisione del componente core](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
 
    * **Abilita condivisione utenti per Facebook**
    * **Abilita condivisione utenti per Pinterest**
@@ -204,53 +205,54 @@ Definisci la variante del frammento esperienza utilizzata per generare i metadat
 
 * **Servizi cloud**
 
-   Definisci le proprietà per [servizi cloud](/help/sites-developing/extending-cloud-config.md).
+  Definisci le proprietà per [servizi cloud](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalizzazione {#personalization}
 
 * **Configurazioni ContextHub**
 
-   Seleziona la [Configurazione ContextHub](/help/sites-developing/ch-configuring.md) e [Percorso segmenti](/help/sites-administering/segmentation.md).
+  Seleziona la [Configurazione ContextHub](/help/sites-developing/ch-configuring.md) e [Percorso segmenti](/help/sites-administering/segmentation.md).
 
 * **Configurazione targeting**
 
-   Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-authoring/target-adobe-campaign.md).
+  Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-authoring/target-adobe-campaign.md).
 
-   >[!NOTE]
-   >Questa opzione richiede che l’account utente appartenga al gruppo `Target Adminstrators`.
+  >[!NOTE]
+  >Questa opzione richiede che l’account utente appartenga al gruppo `Target Adminstrators`.
 
 ### Autorizzazioni  {#permissions}
 
 * **Autorizzazioni**
 
-   In questa scheda puoi effettuare le seguenti operazioni:
+  In questa scheda puoi effettuare le seguenti operazioni:
 
    * [Aggiungere autorizzazioni](/help/sites-administering/user-group-ac-admin.md)
    * [Modificare un gruppo utenti chiuso](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
 
    * Visualizza le [autorizzazioni effettive](/help/sites-administering/user-group-ac-admin.md)
-   >[!CAUTION]
-   >
-   >Il **Autorizzazioni** consente di modificare le configurazioni del gruppo utenti chiusi (CUG) in base alla presenza del `granite:AuthenticationRequired` mixin. Se le autorizzazioni di pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza di `cq:cugEnabled` verrà visualizzato un messaggio di avviso e le autorizzazioni del gruppo utenti chiusi (CUG) non saranno modificabili, né il requisito di autenticazione per [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced) può essere modificata.
-   >
-   >
-   >In questo caso, le autorizzazioni per il gruppo utenti chiusi devono essere modificate nel [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-   >[!NOTE]
-   >
-   >La scheda Autorizzazioni non consente la creazione di gruppi CUG vuoti, che può essere utile come modo semplice per negare l’accesso a ogni utente. Per eseguire questa operazione è necessario utilizzare CRX Explorer. Consulta il documento [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md) per ulteriori informazioni.
+  >[!CAUTION]
+  >
+  >Il **Autorizzazioni** consente di modificare le configurazioni del gruppo utenti chiusi (CUG) in base alla presenza del `granite:AuthenticationRequired` mixin. Se le autorizzazioni di pagina sono configurate utilizzando configurazioni CUG obsolete, in base alla presenza di `cq:cugEnabled` verrà visualizzato un messaggio di avviso e le autorizzazioni del gruppo utenti chiusi (CUG) non saranno modificabili, né il requisito di autenticazione per [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced) può essere modificata.
+  >
+  >
+  >In questo caso, le autorizzazioni per il gruppo utenti chiusi devono essere modificate nel [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+
+  >[!NOTE]
+  >
+  >La scheda Autorizzazioni non consente la creazione di gruppi CUG vuoti, che può essere utile come modo semplice per negare l’accesso a ogni utente. Per eseguire questa operazione è necessario utilizzare CRX Explorer. Consulta il documento [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md) per ulteriori informazioni.
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   Definire le proprietà per una pagina Blueprint in [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
+  Definire le proprietà per una pagina Blueprint in [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
 ### Live Copy  {#live-copy}
 
 * **Livecopy**
 
-   Definire le proprietà per una pagina Live Copy in [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
+  Definire le proprietà per una pagina Live Copy in [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
 ### Struttura sito  {#site-structure}
 
@@ -315,7 +317,7 @@ Dalla console **Sites** è possibile selezionare più pagine e quindi utilizzare
 >
 >La modifica in serie delle proprietà è disponibile anche per le risorse. È molto simile, ma differisce per alcuni aspetti. Consulta [Modifica delle proprietà di più risorse](/help/assets/metadata.md) per i dettagli.
 >
->È inoltre disponibile [Editor in blocco](/help/sites-administering/bulk-editor.md), che consente di cercare contenuti da più pagine utilizzando GQL (Google Query Language) e quindi di modificarli direttamente nell’editor in blocco prima di salvare le modifiche apportate alle pagine di origine.
+>È inoltre disponibile [Editor in blocco](/help/sites-administering/bulk-editor.md), che consente di cercare contenuti da più pagine utilizzando GQL (Google Query Language) e quindi modificarli direttamente nell’editor in blocco prima di salvare le modifiche apportate alle pagine di origine.
 
 Puoi selezionare più pagine per la modifica in serie utilizzando diversi metodi, tra i quali:
 
@@ -339,35 +341,38 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 
 * **Visualizza**
 
-   Quando visualizzi Proprietà pagina per più pagine puoi vedere:
+  Quando visualizzi Proprietà pagina per più pagine puoi vedere:
 
    * Un elenco delle pagine interessate
 
       * Se necessario, seleziona o deseleziona
+
    * Schede
 
       * Come per la visualizzazione delle proprietà di una singola pagina, le proprietà sono ordinate in schede.
+
    * Un sottoinsieme di proprietà
 
       * Puoi vedere le proprietà che sono disponibili su tutte le pagine selezionate e che sono state esplicitamente definite come disponibili per la modifica in serie.
       * Se la tua selezione include una sola pagina, tutte le proprietà sono visibili.
+
    * Proprietà condivise con un valore comune
 
       * Nella modalità Visualizza vengono mostrate solo le proprietà con un valore comune.
       * Quando il campo ha più valori (ad esempio Tag), questi vengono visualizzati solo se *tutti* i valori sono applicati alle pagine selezionate. Se le pagine hanno in comune solo alcuni valori, questi verranno visualizzati solo in fase di modifica.
 
-   Se non esiste nessuna proprietà con un valore comune, viene visualizzato un messaggio.
+  Se non esiste nessuna proprietà con un valore comune, viene visualizzato un messaggio.
 
 * **Modifica**
 
-   Quando si modificano le proprietà di pagina per più pagine:
+  Quando si modificano le proprietà di pagina per più pagine:
 
    * Puoi aggiornare i valori nei campi disponibili.
 
       * I nuovi valori verranno applicati a tutte le pagine selezionate quando si seleziona **Fine**.
       * Quando il campo è multivalore (ad esempio Tag), è possibile aggiungere un nuovo valore o rimuovere un valore comune.
-   * I campi in comune ma con valori diversi nelle varie pagine saranno contraddistinti da uno speciale valore, ad esempio `<Mixed Entries>`.
 
+   * I campi in comune ma con valori diversi nelle varie pagine saranno contraddistinti da uno speciale valore, ad esempio `<Mixed Entries>`.
 
 >[!NOTE]
 >

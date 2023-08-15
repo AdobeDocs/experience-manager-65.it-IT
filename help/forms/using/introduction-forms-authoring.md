@@ -11,10 +11,10 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3161'
-ht-degree: 56%
+source-wordcount: '3156'
+ht-degree: 55%
 
 ---
 
@@ -174,7 +174,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Immagine</td>
-   <td>Consente di inserire un’immagine.</td>
+   <td>Consente di inserire un'immagine.</td>
   </tr>
   <tr>
    <td>Scelta dell'immagine</td>
@@ -230,7 +230,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Testo</td>
-   <td>Consente di specificare il testo statico.</td>
+   <td>Consente di specificare testo statico.</td>
   </tr>
   <tr>
    <td>Pulsante Invia</td>

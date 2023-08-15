@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '669'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ Puoi personalizzare la vista predefinita (colonna, scheda, elenco) per una conso
 
 ### Aggiungi nuova azione alla barra degli strumenti {#add-new-action-to-the-toolbar}
 
-1. Puoi creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un **Promuovi a Twitter** azione in:
+1. Puoi creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un **Promuovi al Twitter** azione in:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 

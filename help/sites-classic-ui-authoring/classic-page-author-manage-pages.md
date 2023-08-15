@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1909'
 ht-degree: 14%
 
 ---
@@ -40,13 +40,13 @@ Di seguito è riportato un estratto dal Geometrixx, in cui, ad esempio, `Triangl
 
 * Ambiente di authoring
 
-   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
 * Ambiente di pubblicazione
 
-   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   A seconda della configurazione dell’istanza, utilizza `/content` potrebbe essere facoltativo nell’ambiente di pubblicazione.
+  A seconda della configurazione dell’istanza, utilizza `/content` potrebbe essere facoltativo nell’ambiente di pubblicazione.
 
 ```xml
   /content
@@ -174,9 +174,11 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
       * Se si specifica una pagina **Nome** quando si crea una nuova pagina, l’AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall’AEM e dal JCR.
       * Nell’interfaccia classica **impossibile immettere caratteri non validi** nel **Nome** campo.
+
    * Fare clic sul modello da utilizzare per creare la nuova pagina.
 
-      Il modello viene utilizzato come base per la nuova pagina, ad esempio per determinare il layout di base di una pagina di contenuto.
+     Il modello viene utilizzato come base per la nuova pagina, ad esempio per determinare il layout di base di una pagina di contenuto.
+
    >[!NOTE]
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
@@ -269,27 +271,28 @@ Per spostare o rinominare una pagina:
 
    * **Destinazione**
 
-      Utilizza la mappa del sito (disponibile tramite il selettore a discesa) per selezionare il percorso in cui spostare la pagina.
+     Utilizza la mappa del sito (disponibile tramite il selettore a discesa) per selezionare il percorso in cui spostare la pagina.
 
-      Se rinomini solo la pagina, ignora questo campo.
+     Se rinomini solo la pagina, ignora questo campo.
 
    * **Sposta**
 
-      Specifica la pagina da spostare: in genere viene compilata per impostazione predefinita, a seconda di come e dove hai avviato l’azione di spostamento.
+     Specifica la pagina da spostare: in genere viene compilata per impostazione predefinita, a seconda di come e dove hai avviato l’azione di spostamento.
 
    * **Rinomina in**
 
-      L&#39;etichetta della pagina corrente viene visualizzata per impostazione predefinita. Se necessario, specifica la nuova etichetta della pagina.
+     L&#39;etichetta della pagina corrente viene visualizzata per impostazione predefinita. Se necessario, specifica la nuova etichetta della pagina.
 
    * **Regola**
 
-      Aggiorna i collegamenti nella pagina elencata che puntano alla pagina spostata: ad esempio, se la pagina A contiene collegamenti alla pagina B, in caso di spostamento della pagina B l’AEM regola i collegamenti nella pagina A.
+     Aggiorna i collegamenti nella pagina elencata che puntano alla pagina spostata: ad esempio, se la pagina A contiene collegamenti alla pagina B, in caso di spostamento della pagina B l’AEM regola i collegamenti nella pagina A.
 
-      Può essere selezionato/deselezionato per ogni singola pagina di riferimento.
+     Può essere selezionato/deselezionato per ogni singola pagina di riferimento.
 
    * **Ripubblica**
 
-      Ripubblica la pagina di riferimento; anche in questo caso è possibile selezionarla per ogni singola pagina.
+     Ripubblica la pagina di riferimento; anche in questo caso è possibile selezionarla per ogni singola pagina.
+
    >[!NOTE]
    >
    >Se la pagina è già stata attivata, lo spostamento la disattiverà automaticamente. Per impostazione predefinita, viene riattivato al termine dello spostamento, ma questo comportamento può essere modificato deselezionando la **Ripubblica** campo per la pagina in **Sposta** finestra.

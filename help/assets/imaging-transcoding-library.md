@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Gli argomenti della riga di comando per Imaging Transcoding Library possono incl
 
 ```shell
  -destMime PNG/JPEG: Mime type of output rendition
- -BitDepth 8/16: Preserves Bit Depth. Bitdepth ‘4’ is automatically converted to ‘8’
+ -BitDepth 8/16: Preserves Bit Depth. Bitdepth '4' is automatically converted to '8'
  -preserveBitDepth: Downscales Bit Depth (No upscaling)
  -preserveCMYK: Preserves CMYK color space
  -jpegQuality: Provides jpeg quality parameter (0-12 , corresponding to Photoshop qualities)
@@ -138,9 +138,8 @@ Se ad esempio si desidera creare miniature per un&#39;immagine TIFF utilizzando 
 
 1. Sincronizza il file aggiornato [!UICONTROL Aggiorna risorsa DAM] modello di workflow. Salva il flusso di lavoro.
 
-Verifica la configurazione, carica un’immagine TIFF e monitora il file error.log. Noterai `INFO` messaggi con menzioni di `SwitchEngineHandlingProcess execute: executing command line`. I registri menzionano le rappresentazioni generate. Al termine del flusso di lavoro, puoi visualizzare le nuove rappresentazioni in [!DNL Experience Manager].
+Per verificare la configurazione, carica un’immagine TIFF e monitora il file error.log. Noterai `INFO` messaggi con menzioni di `SwitchEngineHandlingProcess execute: executing command line`. I registri menzionano le rappresentazioni generate. Al termine del flusso di lavoro, puoi visualizzare le nuove rappresentazioni in [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >
 >* [Articolo sui tipi MIME supportati](assets-formats.md#supported-image-transcoding-library)
-

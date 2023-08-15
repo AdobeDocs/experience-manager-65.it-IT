@@ -2,10 +2,10 @@
 title: Gestione dei progetti di traduzione
 description: Scopri come gestire i progetti di traduzione in AEM.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 106fc0e1ef6d65f13bd3875783102da44694581e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3587'
-ht-degree: 56%
+source-wordcount: '3586'
+ht-degree: 57%
 
 ---
 
@@ -374,9 +374,9 @@ Per confrontare le copie per lingua con la lingua master:
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
-1. Le due pagine (lancio e sorgente) verranno aperte una accanto all’altra.
+1. Le due pagine (lancio e origine) verranno aperte una accanto all’altra.
 
-   Per informazioni complete sull’utilizzo di questa funzione, consulta [Differenza di pagina](/help/sites-authoring/page-diff.md).
+   Per informazioni complete sull’utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-authoring/page-diff.md).
 
 ## Completamento e archiviazione dei processi di traduzione {#completing-and-archiving-translation-jobs}
 
@@ -386,7 +386,7 @@ Dopo aver completato il job, lo stato del job è Completato.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Archivia un processo di traduzione quando è terminato e non è più necessario visualizzare i dettagli relativi allo stato. Quando archivi il processo, il riquadro Lavoro di traduzione viene rimosso dal progetto.
+Archivia un processo di traduzione quando è terminato e non è più necessario visualizzare i dettagli relativi allo stato. Quando archivi il processo, il riquadro Processo di traduzione viene rimosso dal progetto.
 
 ## Creazione della struttura di una copia per lingua {#creating-the-structure-of-a-language-copy}
 

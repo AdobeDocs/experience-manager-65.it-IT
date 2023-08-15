@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Una volta condivise, queste attività possono essere completate dall’utente, c
 
 ## Gestione delle code assegnate a un utente {#managing-queues-assigned-to-a-user}
 
-La funzionalità Gestisci accesso da utente consente di gestire le code assegnate a un utente selezionato. È possibile concedere o revocare l&#39;accesso alle code utente singolarmente a un utente selezionato. Ad esempio, si desidera assegnare le code utente di Akira Tanaka e John Jacobs a Kara Bowman. Utilizzando la funzionalità Gestisci accesso da parte di un utente, puoi cercare Kara Bowman e concedere l’accesso alle attività assegnate ad Akira Tanaka e John Jacobs. In un secondo momento, puoi revocare l’accesso di Kara Bowman a queste code di utenti.
+La funzionalità Gestisci accesso tramite utente consente di gestire le code assegnate a un utente selezionato. È possibile concedere o revocare l&#39;accesso alle code utente singolarmente a un utente selezionato. Ad esempio, si desidera assegnare le code utente di Akira Tanaka e John Jacobs a Kara Bowman. Utilizzando la funzionalità Gestisci accesso da parte di un utente, puoi cercare Kara Bowman e concedere l’accesso alle attività assegnate ad Akira Tanaka e John Jacobs. In un secondo momento, puoi revocare l’accesso di Kara Bowman a queste code di utenti.
 
 Una volta assegnate, queste attività possono essere completate dall’utente utilizzando Workspace.
 

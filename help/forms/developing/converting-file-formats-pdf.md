@@ -11,7 +11,7 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '7850'
 ht-degree: 0%
@@ -40,13 +40,13 @@ Il servizio Generate PDF utilizza applicazioni native per convertire in PDF i se
 
 >[!NOTE]
 >
->Il servizio Generate PDF non supporta le versioni a 64 bit di OpenOffice.
+Il servizio Generate PDF non supporta le versioni a 64 bit di OpenOffice.
 
 * Adobe Photoshop® CS2 per convertire PSD (solo Windows)
 
 >[!NOTE]
 >
->Photoshop CS3 e CS4 non sono supportati perché non supportano Windows Server 2003 o Windows Server 2008.
+Photoshop CS3 e CS4 non sono supportati perché non supportano Windows Server 2003 o Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 e 8 per convertire FM (solo Windows)
 * PageMaker di Adobe ® 7.0 per convertire PMD, PM6, P65 e PM (solo Windows)
@@ -86,7 +86,7 @@ Puoi eseguire queste attività utilizzando il servizio Genera PDF:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Generate PDF, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Per ulteriori informazioni sul servizio Generate PDF, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Conversione di documenti Word in documenti PDF {#converting-word-documents-to-pdf-documents}
 
@@ -94,11 +94,11 @@ In questa sezione viene descritto come utilizzare l&#39;API Generate PDF per con
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui formati di file aggiuntivi, vedere [Aggiunta del supporto per formati di file nativi aggiuntivi](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+Per ulteriori informazioni sui formati di file aggiuntivi, vedere [Aggiunta del supporto per formati di file nativi aggiuntivi](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Generate PDF, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Per ulteriori informazioni sul servizio Generate PDF, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -186,7 +186,6 @@ Convertire un documento di Microsoft Word in un documento di PDF utilizzando l&#
    * Richiama `CreatePDFResult` dell&#39;oggetto `getLogDocument` metodo. Questo restituisce un `com.adobe.idp.Document` oggetto.
    * Richiama `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per estrarre il documento di log.
 
-
 **Consulta anche**
 
 [Riepilogo dei passaggi](converting-file-formats-pdf.md#summary-of-steps)
@@ -207,7 +206,7 @@ Convertire un documento di Microsoft Word in un documento di PDF utilizzando l�
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un client Generate PDF.
 
@@ -265,7 +264,7 @@ Questa sezione descrive come utilizzare l’API Generate PDF per convertire in m
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Generate PDF, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Per ulteriori informazioni sul servizio Generate PDF, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -364,7 +363,7 @@ Converti il contenuto di HTML in un documento di PDF utilizzando Genera API PDF 
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
 
 1. Crea un client Generate PDF.
 
@@ -415,7 +414,7 @@ In questa sezione viene descritto come utilizzare l&#39;API di generazione Java 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Generate PDF, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Per ulteriori informazioni sul servizio Generate PDF, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-2}
 
@@ -515,7 +514,7 @@ Converti un documento PDF in un file RTF utilizzando l’API Genera PDF (servizi
 
    >[!NOTE]
    >
-   >Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
+   Sostituisci `localhost` con l’indirizzo IP del server che ospita AEM Forms.
 
 1. Creare un client Generate PDf.
 
@@ -668,9 +667,9 @@ Gerarchia di script e finestra di dialogo XML
 
 #### File XML di script {#script-xml-files}
 
-A *file XML script* specifica una serie di passaggi che indirizzano l&#39;applicazione nativa a passare a determinati elementi della finestra e quindi a fornire le risposte a tali elementi. La maggior parte delle risposte è costituita da testo o sequenze di tasti corrispondenti all&#39;input che l&#39;utente fornirebbe a un campo, una casella combinata o un pulsante nella finestra di dialogo corrispondente.
+A *file XML script* specifica una serie di passaggi che indirizzano l&#39;applicazione nativa a passare a determinati elementi della finestra e quindi a fornire risposte a tali elementi. La maggior parte delle risposte è costituita da testo o sequenze di tasti corrispondenti all&#39;input che l&#39;utente fornirebbe a un campo, una casella combinata o un pulsante nella finestra di dialogo corrispondente.
 
-Lo scopo del supporto del servizio Generate PDF per i file XML di script è quello di indirizzare un’applicazione nativa a stampare un file nativo. Tuttavia, i file XML di script possono essere utilizzati per eseguire qualsiasi operazione che un utente può eseguire quando interagisce con le finestre di dialogo dell&#39;applicazione nativa.
+Lo scopo del supporto del servizio Generate PDF per i file XML di script è quello di indirizzare un&#39;applicazione nativa a stampare un file nativo. Tuttavia, i file XML di script possono essere utilizzati per eseguire qualsiasi operazione che un utente può eseguire quando interagisce con le finestre di dialogo dell&#39;applicazione nativa.
 
 I passaggi in un file XML di script vengono eseguiti in ordine, senza alcuna opportunità di diramazione. L’unico test condizionale supportato è timeout/nuovo tentativo, che causa la chiusura di uno script se un passaggio non viene completato correttamente entro un periodo di tempo specifico e dopo un numero specifico di tentativi.
 
@@ -755,7 +754,7 @@ Dopo aver aggiunto questi file XML al file adobe-appmondata.jar, è necessario r
 
 Se si desidera indirizzare i file a una nuova applicazione nativa, è necessario creare un file XML di script per tale applicazione. Se si desidera modificare il modo in cui il servizio Generate PDF interagisce con un&#39;applicazione nativa già supportata, è necessario modificare lo script per tale applicazione.
 
-Lo script contiene istruzioni che consentono di spostarsi tra gli elementi della finestra dell’applicazione nativa e che forniscono risposte specifiche a tali elementi. Il file che contiene queste informazioni è `appmon.`[appname]&quot; `.script.`[lingua]`.xml`. Un esempio è appmon.notepad.script.en_US.xml.
+Lo script contiene istruzioni che consentono di spostarsi tra gli elementi della finestra dell&#39;applicazione nativa e che forniscono risposte specifiche a tali elementi. Il file che contiene queste informazioni è `appmon.`[appname]&quot; `.script.`[lingua]`.xml`. Un esempio è appmon.notepad.script.en_US.xml.
 
 #### Identificazione dei passaggi che lo script deve eseguire {#identifying-steps-the-script-must-execute}
 
@@ -850,7 +849,7 @@ Se si crea uno script per un&#39;applicazione nativa non supportata in precedenz
 
 >[!NOTE]
 >
->In questo contesto, il termine supplementare indica il contenuto `appmon.[applicationname].addition.[locale].xml` file. Tale file specifica sostituzioni e aggiunte al file XML della finestra di dialogo.
+In questo contesto, il termine supplementare indica il contenuto `appmon.[applicationname].addition.[locale].xml` file. Tale file specifica sostituzioni e aggiunte al file XML della finestra di dialogo.
 
 È inoltre possibile modificare il file XML della finestra di dialogo aggiuntiva per un&#39;applicazione nativa per i seguenti scopi:
 
@@ -863,7 +862,7 @@ Il nome del file XML della finestra di dialogo aggiuntiva deve utilizzare il for
 
 >[!NOTE]
 >
->Nessuna delle applicazioni generiche specificate nel file di configurazione native2pdfconfig.xml dispone di un file XML di dialogo primario. La sezione [Aggiunta o modifica del supporto per un formato di file nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) descrive tali specifiche.
+Nessuna delle applicazioni generiche specificate nel file di configurazione native2pdfconfig.xml dispone di un file XML di dialogo primario. La sezione [Aggiunta o modifica del supporto per un formato di file nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) descrive tali specifiche.
 
 Devi ordinare `windowList` elementi visualizzati come elementi figlio in un `window` elemento. (vedere [Ordinamento degli elementi window e windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
@@ -877,13 +876,13 @@ In questa procedura viene illustrato come aggiornare il file di configurazione d
 
 **Aggiornare il file di configurazione del servizio Generate PDF**
 
-1. Seleziona **Home** > **Servizi** > **Adobe PDF Generator** > **File di configurazione**, quindi selezionare **Esporta configurazione**.
+1. Seleziona **Home** > **Servizi** > **Adobe PDF Generator** > **File di configurazione** e quindi selezionare **Esporta configurazione**.
 1. Modifica il `filetype-settings` nel file native2pdfconfig.xml, in base alle esigenze.
-1. Seleziona **Home** > **Servizi** > **Adobe PDF Generator** >**File di configurazione**, quindi selezionare **Importa configurazione**. I dati di configurazione vengono importati nel servizio Genera PDF, sostituendo le impostazioni precedenti.
+1. Seleziona **Home** > **Servizi** > **Adobe PDF Generator** >**File di configurazione** e quindi selezionare **Importa configurazione**. I dati di configurazione vengono importati nel servizio Genera PDF, sostituendo le impostazioni precedenti.
 
 >[!NOTE]
 >
->Il nome dell’applicazione viene specificato come valore del `GenericApp` dell&#39;elemento `name` attributo. Questo valore deve corrispondere esattamente al nome corrispondente specificato nello script sviluppato per l’applicazione. Analogamente, il `GenericApp` dell&#39;elemento `displayName` deve corrispondere esattamente a quello dello script corrispondente `expectedWindow` didascalia della finestra. Tale equivalenza viene valutata dopo la risoluzione delle espressioni regolari visualizzate nel `displayName` o `caption` attributi.
+Il nome dell’applicazione viene specificato come valore del `GenericApp` dell&#39;elemento `name` attributo. Questo valore deve corrispondere esattamente al nome corrispondente specificato nello script sviluppato per l’applicazione. Analogamente, il `GenericApp` dell&#39;elemento `displayName` deve corrispondere esattamente a quello dello script corrispondente `expectedWindow` didascalia della finestra. Tale equivalenza viene valutata dopo la risoluzione delle espressioni regolari visualizzate nel `displayName` o `caption` attributi.
 
 In questo esempio, i dati di configurazione predefiniti forniti con il servizio Generate PDF sono stati modificati per specificare che Notepad (non Microsoft Word) deve essere utilizzato per elaborare i file con estensione .txt. Prima di questa modifica, Microsoft Word era stato specificato come applicazione nativa che avrebbe dovuto elaborare tali file.
 
@@ -983,7 +982,7 @@ In questo esempio viene specificato il modo in cui il servizio Generate PDF inte
 * from Adobe Systems Incorporated.
 *-->
 
-<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy we recommend using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
+<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
 
 <application name="Notepad" version="9.0" locale="en_US" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
 

@@ -2,10 +2,10 @@
 title: Guida rapida all’accesso e alla distribuzione di frammenti di contenuto headless
 description: Scopri come utilizzare l’API REST di AEM Assets per gestire i frammenti di contenuto e l’API GraphQL per la distribuzione headless dei contenuti di frammenti di contenuto.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 31%
+source-wordcount: '555'
+ht-degree: 24%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri come utilizzare l’API REST di AEM Assets per gestire i frammenti di con
 
 [Dopo aver creato alcuni frammenti di contenuto,](create-content-fragment.md) puoi utilizzare le API AEM per distribuirle senza problemi.
 
-* [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* [API di GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto.
    * Per utilizzare questo, [gli endpoint devono essere definiti e abilitati in AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)e, se necessario, [Interfaccia GraphiQL installata](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [API REST di Assets](/help/assets/assets-api-content-fragments.md) consente di creare e modificare frammenti di contenuto (e altre risorse).
 
@@ -31,7 +31,7 @@ Gli architetti di informazioni devono progettare query per gli endpoint di canal
    * Esempio: `http://<host>:<port>/aem/graphiql.html`.
 
 1. GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto e distribuirli senza problemi come JSON.
-   * Il pannello a sinistra ti consente di creare la query.
+   * Il pannello a sinistra consente di creare la query.
    * Nel pannello a destra vengono visualizzati i risultati.
    * L’editor delle query dispone del completamento del codice e dei tasti di scelta rapida per eseguire facilmente la query.
      ![Editor GraphiQL](assets/graphiql.png)
@@ -60,7 +60,7 @@ Gli architetti di informazioni devono progettare query per gli endpoint di canal
 1. Fai clic su **Esegui query** (freccia destra) o utilizza l’icona `Ctrl-Enter` e i risultati vengono visualizzati come JSON nel pannello di destra.
    ![Risultati GraphiQL](assets/graphiql-results.png)
 
-1. Clic:
+1. Fai clic su:
    * **Documentazione** in alto a destra per visualizzare la documentazione contestuale per aiutarti a creare query che si adattano ai tuoi modelli.
    * **Cronologia** nella barra degli strumenti superiore per visualizzare le query precedenti.
    * **Salva con nome** e **Salva** per salvare le query, dopodiché puoi elencarle e recuperarle dalla **Query persistenti** pannello e **Pubblica**.

@@ -2,10 +2,10 @@
 title: Come aggiornare il contenuto utilizzando le API di AEM Assets.
 description: In questa parte del Percorso per sviluppatori Headless di AEM, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 93%
+source-wordcount: '1037'
+ht-degree: 90%
 
 ---
 
@@ -41,7 +41,7 @@ Nella fase precedente del Percorso Headless, hai imparato a usare l’API GraphQ
 
 Allora perché è necessaria un&#39;altra API?
 
-L’API HTTP di Assets ti consente quanto segue: **Lettura** dei contenuti, ma consente anche di **Creare**, **Aggiornare** ed **Eliminare** i contenuti: azioni impossibili con l’API GraphQL.
+L’API HTTP di Assets consente di: **Letto** contenuti, ma consente anche di: **Crea**, **Aggiorna** e **Elimina** content: azioni che non sono possibili con l’API di GraphQL.
 
 L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager recente.
 
@@ -223,7 +223,6 @@ Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, ri
 >
 >* `/api/assets` **non è** necessario l’uso del selettore `.model`.
 >* `/content/path/to/page` **richiede** l’uso del selettore `.model`.
-
 
 ### Operazione {#operation}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 01029a80-f80e-450c-9c73-16d0662af26d
 docset: aem65
 exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 1%
 
 ---
@@ -36,13 +36,13 @@ Dopo aver configurato Silverpop Engage, è possibile pubblicare newsletter o e-m
 
 ## Creazione di una configurazione Silverpop {#creating-a-silverpop-configuration}
 
-È possibile aggiungere configurazioni Silverpop tramite **Cloud Services**, **Strumenti**, o **Punti finali API**. Tutti i metodi sono descritti in questa sezione.
+È possibile aggiungere configurazioni Silverpop tramite **Cloud Service**, **Strumenti**, o **Punti finali API**. Tutti i metodi sono descritti in questa sezione.
 
-### Configurazione di Silverpop tramite Cloud Services {#configuring-silverpop-via-cloudservices}
+### Configurazione di Silverpop tramite Cloud Service {#configuring-silverpop-via-cloudservices}
 
-Per creare una configurazione Silverpop in Cloud Services:
+Per creare una configurazione Silverpop in Cloud Service:
 
-1. In AEM, tocca o fai clic su **Strumenti** > **Distribuzione** > **Cloud Services**. (oppure accedere direttamente a `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. In AEM, tocca o fai clic su **Strumenti** > **Distribuzione** > **Cloud Service**. (oppure accedere direttamente a `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. In servizi di terze parti, fai clic su **Coinvolgimento Silverop** e poi **Configura**. Viene visualizzata la finestra di configurazione Silverpop.
 
    >[!NOTE]
@@ -61,8 +61,8 @@ Per creare una configurazione Silverpop in Cloud Services:
 
 Per creare una configurazione Silverpop in Strumenti:
 
-1. In AEM, tocca o fai clic su **Strumenti** > **Distribuzione** > **Cloud Services**. Oppure naviga direttamente da `https://<hostname>:<port>/misadmin#/etc`.
-1. Seleziona **Strumenti**, quindi **Configurazioni Cloud Services,** allora **Coinvolgimento Silverpop**.
+1. In AEM, tocca o fai clic su **Strumenti** > **Distribuzione** > **Cloud Service**. Oppure naviga direttamente da `https://<hostname>:<port>/misadmin#/etc`.
+1. Seleziona **Strumenti**, quindi **Configurazioni Cloud Service,** allora **Coinvolgimento Silverpop**.
 1. Clic **Nuovo**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
@@ -74,7 +74,7 @@ Per creare una configurazione Silverpop in Strumenti:
 
 Per aggiungere più configurazioni:
 
-1. Nella pagina di benvenuto, fai clic su **Cloud Services** e fai clic su **Coinvolgimento Silverpop**. Clic **Mostra configurazioni** che viene visualizzato se sono disponibili una o più configurazioni Silverpop. Sono elencate tutte le configurazioni disponibili.
+1. Nella pagina di benvenuto, fai clic su **Cloud Service** e fai clic su **Coinvolgimento Silverpop**. Clic **Mostra configurazioni** che viene visualizzato se sono disponibili una o più configurazioni Silverpop. Sono elencate tutte le configurazioni disponibili.
 1. Fai clic su **+** Accanto a Configurazioni disponibili. Apre il **Creare configurazioni** finestra. Segui la procedura di configurazione precedente per creare una configurazione.
 
 ### Configurazione degli endpoint API per la connessione a Silverpop {#configuring-api-end-points-for-connecting-to-silverpop}

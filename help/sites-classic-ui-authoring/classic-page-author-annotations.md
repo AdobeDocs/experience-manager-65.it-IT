@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '764'
 ht-degree: 8%
 
 ---
@@ -54,7 +54,7 @@ Ai fini del tracciamento, la linea del piè di pagina indica l’utente che ha c
 
 La conferma viene richiesta quando si seleziona di eliminare l’annotazione (l’eliminazione di un’annotazione comporta anche l’eliminazione di tutti gli schizzi associati all’annotazione).
 
-Le tre icone in alto a sinistra consentono di ridurre al minimo l’annotazione (insieme a eventuali schizzi correlati), modificare il colore e aggiungere gli schizzi.
+Le tre icone in alto a sinistra consentono di ridurre a icona l’annotazione (insieme a eventuali schizzi correlati), modificare il colore e aggiungere schizzi.
 
 >[!NOTE]
 >

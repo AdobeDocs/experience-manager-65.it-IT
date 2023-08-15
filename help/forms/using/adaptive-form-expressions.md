@@ -10,9 +10,9 @@ discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2802'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espress
 
 ## Best practice per le espressioni che coinvolgono il pannello ripetuto {#best-practices-for-expressions-involving-repeating-panel}
 
-I pannelli ripetuti sono istanze di un pannello aggiunte o rimosse dinamicamente, utilizzando API di script o dati precompilati. Per informazioni dettagliate sull’utilizzo del pannello ripetuto, consulta [creazione di moduli con sezioni ripetibili](/help/forms/using/creating-forms-repeatable-sections.md).
+I pannelli ripetuti sono istanze di un pannello che vengono aggiunte o rimosse dinamicamente, utilizzando API di script o dati precompilati. Per informazioni dettagliate sull’utilizzo del pannello ripetuto, consulta [creazione di moduli con sezioni ripetibili](/help/forms/using/creating-forms-repeatable-sections.md).
 
 * Per creare un pannello ripetuto, nella finestra di dialogo del pannello, apri le impostazioni e imposta il valore del campo conteggio massimo su più di 1.
 * Il valore di conteggio minimo delle impostazioni di ripetizione del pannello può essere uno o più ma non può essere superiore al valore di conteggio massimo.
@@ -279,7 +279,7 @@ Come accennato in precedenza, i moduli adattivi consentono all’autore di forni
 
 Per creare un pattern personalizzato per un tipo di campo specifico e riutilizzarlo per altri campi dello stesso tipo, effettua le seguenti operazioni:
 
-1. Passa a CRXDE Lite nell’istanza di authoring.
+1. Passa a CRXDE Liti nell’istanza di authoring.
 1. Crea una cartella per mantenere i modelli personalizzati. Nella directory /apps, crea un nodo di tipo sling:folder. Ad esempio, crea un nodo con il nome `customPatterns`. Sotto questo nodo, crea un altro nodo di tipo `nt:unstructed` e denominalo `textboxpatterns`. Questo nodo contiene i vari modelli personalizzati che desideri aggiungere.
 1. Apri la scheda Proprietà del nodo creato. Ad esempio, apri la scheda Proprietà di `textboxpatterns`. Aggiungi il `guideComponentType` su questo nodo e impostarne il valore su *fd/af/components/formatter/guideTextBox*.
 

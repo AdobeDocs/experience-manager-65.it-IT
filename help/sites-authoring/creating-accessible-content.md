@@ -2,16 +2,16 @@
 title: Creazione di contenuto accessibile per Adobe Experience Manager (conformità WCAG 2.1)
 description: Utilizzare l’AEM per rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '13818'
+source-wordcount: '13817'
 ht-degree: 85%
 
 ---
 
 # Creazione di contenuto accessibile (conformità WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
-Il [Linee guida per l’accessibilità dei contenuti web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), redatto da [un gruppo di lavoro del World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group), consistono in una serie di linee guida tecnologiche indipendenti e criteri di successo per contribuire a rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità.
+Il [Linee guida per l’accessibilità dei contenuti web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), redatto da [un gruppo di lavoro del World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group), consistono in una serie di linee guida indipendenti dalla tecnologia e criteri di successo per contribuire a rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità.
 
 Come introduzione, viene fornito un elenco di sezioni e documenti di supporto:
 
@@ -42,7 +42,6 @@ Nella sezione seguente sono illustrate le [basi delle linee guida WCAG 2.1](http
 >
 >* I [nomi brevi per le linee guida WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* La [numerazione utilizzata nelle linee guida WCAG 2.1](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) per facilitare i riferimenti incrociati al sito web WCAG.
-
 
 ## Principio 1: Percepibile  {#principle-perceivable}
 
@@ -314,9 +313,9 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
    * L’elemento `<ul>` viene utilizzato per gli elenchi *non ordinati* (puntati). Le singole voci dell’elenco sono identificate dall’elemento `<li>`. Nell’editor Rich Text, utilizza l’icona **Elenco puntato**.
    * L’elemento `<ol>`viene utilizzato per gli elenchi *numerati*. Le singole voci dell’elenco sono identificate dall’elemento `<li>`. Nell’editor Rich Text, utilizza l’icona **Elenco numerato**.
 
-   Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco pertinente. Come nell’esempio precedente che mostra come inserire il testo paragrafo, gli elementi elenco appropriati vengono aggiunti automaticamente all’HTML.
+  Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco pertinente. Come nell’esempio precedente che mostra come inserire il testo paragrafo, gli elementi elenco appropriati vengono aggiunti automaticamente all’HTML.
 
-   In modalità a tutto schermo, sono visibili le singole icone **Elenco puntato** ed **Elenco numerato**. Se non è attiva la modalità a tutto schermo, le due opzioni sono disponibili dietro la singola icona **Elenchi**.
+  In modalità a tutto schermo, sono visibili le singole icone **Elenco puntato** ed **Elenco numerato**. Se non è attiva la modalità a tutto schermo, le due opzioni sono disponibili dietro la singola icona **Elenchi**.
 
 * **Tabelle**: le tabelle di dati devono essere identificate utilizzando gli elementi di tabella HTML:
    * un elemento `<table>`
@@ -324,77 +323,76 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
    * un elemento `<th>` per ogni intestazione di riga e colonna
    * un elemento `<td>` per ogni cella di dati
 
-   Inoltre, le tabelle accessibili utilizzano i seguenti elementi e attributi:
+  Inoltre, le tabelle accessibili utilizzano i seguenti elementi e attributi:
 
    * L’elemento `<caption>` viene utilizzato per fornire una didascalia visibile per la tabella. Per impostazione predefinita, i sottotitoli vengono visualizzati centrati sopra la tabella, ma possono essere posizionati in modo appropriato utilizzando le CSS. La didascalia è associata alla tabella a livello di programmazione, pertanto è un metodo utile per fornire un’introduzione al contenuto.
    * L’elemento `<summary>` aiuta gli utenti non vedenti a comprendere più facilmente le informazioni presentate all’interno di una tabella, fornendo una sintesi di ciò che un utente vedente può vedere. Questo è utile quando si utilizzano layout di tabella complessi o non convenzionali (questo attributo non viene visualizzato nel browser, ma viene letto solo alle tecnologie per l’accessibilità).
    * L’attributo `scope` dell’elemento `<th>` viene utilizzato per indicare se una cella rappresenta un’intestazione per una particolare riga o colonna. Un approccio simile consiste nell’utilizzare gli attributi header e id in tabelle complesse, dove le celle di dati possono essere associate a una o più intestazioni.
 
-   >[!NOTE]
-   >
-   >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >[!NOTE]
+  >
+  >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
-   Per aprire la **Tabella** in cui è possibile selezionare la scheda **Proprietà tabella**:
+  Per aprire la **Tabella** in cui è possibile selezionare la scheda **Proprietà tabella**:
 
    * definisci una **Didascalia** appropriata.
    * È consigliabile rimuovere eventuali valori predefiniti per **Larghezza**, **Altezza**, **Bordo**, **Margine celle**, **Spaziatura celle**. dato che queste proprietà possono essere impostate in un foglio di stile globale.
 
-   Puoi quindi utilizzare le **Proprietà cella** per scegliere se la cella contiene dati o intestazione:
+  Puoi quindi utilizzare le **Proprietà cella** per scegliere se la cella contiene dati o intestazione:
 
 * **Enfasi**: utilizza l’elemento `<strong>` o `<em>` per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
    * Evidenzia il testo che desideri mettere in evidenza.
    * Fai clic su **B** icona (per `<strong>`) o **I** icona (per `<em>`) visualizzato all&#39;interno del **Proprietà** (assicurati che sia selezionato HTML).
 
-      >[!NOTE]
-      >
-      >L’editor Rich Text in un’installazione standard di AEM è configurato per utilizzare:
-      >
-      >* `<b>` per `<strong>`
-      >* `<i>` per `<em>`
-
-      >
-      >L’efficacia è la medesima, ma `<strong>` e `<em>` sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il tuo team di sviluppo può configurare l’editor Rich Text in modo che utilizzi `<strong>` e `<em>` (anziché `<b>` e `<i>`) durante lo sviluppo dell’istanza di progetto.
+     >[!NOTE]
+     >
+     >L’editor Rich Text in un’installazione standard di AEM è configurato per utilizzare:
+     >
+     >* `<b>` per `<strong>`
+     >* `<i>` per `<em>`
+     >
+     >L’efficacia è la medesima, ma `<strong>` e `<em>` sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il tuo team di sviluppo può configurare l’editor Rich Text in modo che utilizzi `<strong>` e `<em>` (anziché `<b>` e `<i>`) durante lo sviluppo dell’istanza di progetto.
 
 * **Tabelle dati complesse**: a volte, in presenza di tabelle complesse con due o più livelli di intestazioni, le Proprietà tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate utilizzando **intestazione** e **id** attributi.
 
-   >[!NOTE]
-   >
-   >L’attributo id non è disponibile in un’installazione standard. Può essere attivato configurando regole HTML e il serializzatore nell’editor Rich Text.
+  >[!NOTE]
+  >
+  >L’attributo id non è disponibile in un’installazione standard. Può essere attivato configurando regole HTML e il serializzatore nell’editor Rich Text.
 
-   Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
+  Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
 
-   ```xml
-     <table>
-       <tr>
-         <th rowspan="2" id="h">Homework</th>
-         <th colspan="3" id="e">Exams</th>
-         <th colspan="3" id="p">Projects</th>
-       </tr>
-       <tr>
-         <th id="e1" headers="e">1</th>
-         <th id="e2" headers="e">2</th>
-         <th id="ef" headers="e">Final</th>
-         <th id="p1" headers="p">1</th>
-         <th id="p2" headers="p">2</th>
-         <th id="pf" headers="p">Final</th>
-       </tr>
-       <tr>
-         <td headers="h">15%</td>
-         <td headers="e e1">15%</td>
-         <td headers="e e2">15%</td>
-         <td headers="e ef">20%</td>
-         <td headers="p p1">10%</td>
-         <td headers="p p2">10%</td>
-         <td headers="p pf">15%</td>
-       </tr>
-     </table>
-   ```
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
+    </table>
+  ```
 
-   A questo scopo, è necessario aggiungere il markup in AEM utilizzando direttamente la modalità di modifica sorgente.
+  A questo scopo, è necessario aggiungere il markup in AEM utilizzando direttamente la modalità di modifica sorgente.
 
-   >[!NOTE]
-   >
-   >Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor RTF, delle regole HTML e del serializzatore.
+  >[!NOTE]
+  >
+  >Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor RTF, delle regole HTML e del serializzatore.
 
 #### Ulteriori informazioni - Informazioni e correlazioni (1.3.1)  {#more-information-info-and-relationships}
 
@@ -523,9 +521,9 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 1.4.
    * Incidentale: testo o immagini di testo che fanno parte di un componente dell’interfaccia inattivo, [decorazione pura](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), non visibili o che fanno parte di un&#39;immagine che contiene altri contenuti visivi significativi, non richiedono alcun contrasto.
    * Logotipi: per il testo che fa parte di un logo o di un marchio non è previsto alcun requisito minimo di contrasto.
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni, consulta [Comprensione del contrasto in contenuti non testuali](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) per assicurarti che le persone che creano contenuti comprendano i requisiti aggiuntivi relativi agli elementi non testuali, tra cui le icone e gli elementi dell’interfaccia.
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni, consulta [Comprensione del contrasto in contenuti non testuali](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) per assicurarti che le persone che creano contenuti comprendano i requisiti aggiuntivi relativi agli elementi non testuali, tra cui le icone e gli elementi dell’interfaccia.
 
 #### Finalità - Contrasto (minimo) (1.4.3)  {#purpose-contrast-minimum}
 
@@ -560,8 +558,7 @@ Assicurati che il testo contrasti a sufficienza con il relativo sfondo. I rappor
 >* Consulta &quot;Conversione dimensioni font: pixel-point-em-rem-percent&quot; (Conversione dimensioni font: pixel-point-em-rem-percent) in `https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/`
 >* Vedi PMtoEM.com: conversione da PX a EM semplificata all’indirizzo `http://pxtoem.com/`
 
-
-Per controllare i rapporti di contrasto, utilizza uno strumento di contrasto del colore, ad esempio [Color Contrast Analyzer di The Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) o [Color Contrast Checker di WebAIM](https://webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare coppie di colori e rilevare eventuali problemi di contrasto.
+Per controllare i rapporti di contrasto, utilizza uno strumento di contrasto del colore, ad esempio [Color Contrast Analyzer di The Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) o [Color Contrast Checker di WebAIM](https://webaim.org/resources/contrastchecker/). Questi strumenti consentono di controllare coppie di colori e segnalare eventuali problemi di contrasto.
 
 In alternativa, se non desiderI specificare l’aspetto della pagina, puoi scegliere di non definire i colori del testo di sfondo e in primo piano. Non è richiesto alcun controllo del contrasto, in quanto il browser dell’utente determina i colori del testo e dello sfondo.
 
@@ -973,10 +970,10 @@ Lo scopo di questo criterio è fare in modo che il testo e gli altri contenuti l
 Per soddisfare questo criterio di successo, la lingua predefinita di una pagina web può essere identificata mediante l’attributo `lang` all’interno dell’elemento `<html>` nella parte superiore della pagina. Esempio:
 
 * Se una pagina è scritta in inglese, l’elemento `<html>` dovrebbe riportare:
-   `<html lang = "en">`
+  `<html lang = "en">`
 
 * Una pagina che deve essere resa in spagnolo dovrebbe invece adottare il seguente standard:
-   `<html lang = "es">`
+  `<html lang = "es">`
 
 In AEM, la lingua predefinita della pagina viene impostata durante la creazione, ma può anche essere cambiata durante la modifica di [Proprietà pagina](/help/sites-authoring/editing-page-properties.md).
 

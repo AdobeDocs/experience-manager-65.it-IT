@@ -6,22 +6,22 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '404'
 ht-degree: 10%
 
 ---
 
 # Creazione di un Cloud Service personalizzato{#creating-a-custom-cloud-service}
 
-Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Service personalizzati. Questo consente di inserire un markup personalizzato nella pagina in modo strutturato. Questa funzione è utile principalmente per i provider di analisi di terze parti, ad esempio Google Analytics, Chartbeat e così via. I Cloud Services vengono ereditati dalle pagine padre alle pagine figlie con la possibilità di interrompere l’ereditarietà a qualsiasi livello.
+Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Service personalizzati. Questo consente di inserire un markup personalizzato nella pagina in modo strutturato. Questa funzione è utile principalmente per i provider di analisi di terze parti, ad esempio Google Analytics, Chartbeat e così via. I Cloud Service vengono ereditati dalle pagine padre alle pagine figlie con la possibilità di interrompere l’ereditarietà a qualsiasi livello.
 
 >[!NOTE]
 >
 >Questa guida dettagliata per la creazione di un Cloud Service è un esempio di utilizzo delle Google Analytics. Tutto potrebbe non essere applicabile al tuo caso d’uso.
 
-1. In CRXDE Lite, crea un nodo sotto `/apps`:
+1. In CRXDE Liti, crea un nodo sotto `/apps`:
 
    * **Nome**: `acs`
    * **Tipo**: `nt:folder`
@@ -195,7 +195,7 @@ Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Servic
    * **Titolo**: `Google Analytics`
    * **Nome**: `googleanalytics`
 
-   Torna in CRXDE Lite e sotto `/etc/cloudservices/googleanalytics`, aggiungi la seguente proprietà a `jcr:content`:
+   Torna in CRXDE Liti e sotto `/etc/cloudservices/googleanalytics`, aggiungi la seguente proprietà a `jcr:content`:
 
    * **Nome**: `componentReference`
    * **Tipo**: `String`
@@ -209,5 +209,5 @@ Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Servic
    Scegli **Configurazione Google Analytics** e fai clic su **Crea**.
 
 1. Immetti un **ID account**, ad esempio `AA-11111111-1`. Fai clic su **OK**.
-1. Passa a una pagina e aggiungi la configurazione appena creata nelle proprietà della pagina, nella sezione **Cloud Services** scheda.
+1. Passa a una pagina e aggiungi la configurazione appena creata nelle proprietà della pagina, nella sezione **Cloud Service** scheda.
 1. Alla pagina verrà aggiunto il markup personalizzato.

@@ -10,9 +10,9 @@ discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 92092e1c050c9264c19e3cd9da9b240607af7bab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6178'
+source-wordcount: '6169'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Per ulteriori informazioni sull’interfaccia di authoring di comunicazioni inte
    |---|---|
    | Grafico | Aggiunge un grafico che è possibile utilizzare nella comunicazione interattiva per la rappresentazione visiva di dati bidimensionali recuperati da un insieme di modelli di dati del modulo. Per ulteriori informazioni, consulta [Utilizzo dei grafici nelle comunicazioni interattive](/help/forms/using/chart-component-interactive-communications.md). |
    | Frammento di documento | Consente di aggiungere a una comunicazione interattiva un componente riutilizzabile, ad esempio testo, elenco o condizione. Il componente aggiunto può essere basato su un modello di dati modulo o senza un modello di dati modulo. |
-   | Immagine | Consente di inserire un’immagine. |
+   | Immagine | Consente di inserire un&#39;immagine. |
 
    Trascina i componenti nella comunicazione interattiva e configurali come richiesto.
 
@@ -176,10 +176,10 @@ Tocca il frammento del documento e tocca ![configure_icon](assets/configure_icon
       * Annulla ereditarietà
       * Riabilita ereditarietà
       * Sincronizza
+
    * [Allegati e accesso alla libreria](../../forms/using/create-interactive-communication.md#attachmentslibrary)
    * [Proprietà campo XDP/Layout](../../forms/using/create-interactive-communication.md#xdplayoutfieldproperties)
    * [Aggiungere regole ai componenti](../../forms/using/create-interactive-communication.md#rules)
-
 
 1. Passa a **[!UICONTROL Canale web]**. Il canale web viene visualizzato nell’editor di comunicazione interattiva. Quando si passa per la prima volta dal canale di stampa al canale Web, viene eseguita automaticamente la sincronizzazione. Per ulteriori informazioni, consulta [Sincronizzazione del canale web dal canale di stampa](../../forms/using/create-interactive-communication.md#synchronize).
 
@@ -195,13 +195,13 @@ Tocca il frammento del documento e tocca ![configure_icon](assets/configure_icon
    |---|---|
    | Grafico | Aggiunge un grafico che è possibile utilizzare nella comunicazione interattiva per la rappresentazione visiva di dati bidimensionali recuperati da un insieme di modelli di dati del modulo. Per ulteriori informazioni, consulta [Utilizzo del componente grafico](../../forms/using/chart-component-interactive-communications.md). |
    | Frammento di documento | Consente di aggiungere un componente, testo, elenco o condizione riutilizzabile a una comunicazione interattiva. Il componente riutilizzabile aggiunto a una comunicazione interattiva potrebbe essere basato su un modello di dati modulo o senza un modello di dati modulo. |
-   | Immagine | Consente di inserire un’immagine. |
-   | Pannello | Ti consente di aggiungere una [Pannello](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) alla comunicazione interattiva. |
+   | Immagine | Consente di inserire un&#39;immagine. |
+   | Pannello | Consente di aggiungere un [Pannello](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) alla comunicazione interattiva. |
    | Tabella | Aggiunge una tabella che consente di organizzare i dati in righe e colonne. |
-   | Area di destinazione | Inserisce un&#39;area di destinazione in un canale web per organizzare i componenti specifici del canale web. L’area di destinazione è un contenitore semplice che consente di raggruppare componenti specifici per canale web. |
+   | Area di destinazione | Inserisce un&#39;area di destinazione in un canale web per organizzare i componenti specifici del canale web. L’area di destinazione è un contenitore semplice che consente di raggruppare componenti specifici per il canale web. |
    | Testo | Aggiunge testo formattato al canale web di una comunicazione interattiva. Il testo può inoltre utilizzare oggetti modello dati modulo per rendere dinamico il contenuto. |
-   | Pulsante | Ti consente di aggiungere una [Pulsante](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) alla comunicazione interattiva. Puoi utilizzare il componente Pulsante per passare ad altre comunicazioni interattive, moduli adattivi, altre risorse come immagini o frammenti di documenti o un URL esterno. |
-   | Separatore | Consente di inserire una linea orizzontale all’interno di una comunicazione interattiva. Utilizza questo componente per distinguere le sezioni in una corrispondenza. Ad esempio, è possibile utilizzare il componente Separatore per distinguere le sezioni Dettagli cliente e Dettagli carta di credito in un estratto conto relativo a una carta di credito. |
+   | Pulsante | Consente di aggiungere un [Pulsante](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) alla comunicazione interattiva. Puoi utilizzare il componente Pulsante per passare ad altre comunicazioni interattive, moduli adattivi, altre risorse come immagini o frammenti di documenti o un URL esterno. |
+   | Separatore | Consente di inserire una linea orizzontale in una comunicazione interattiva. Utilizza questo componente per distinguere le sezioni in una corrispondenza. Ad esempio, è possibile utilizzare il componente Separatore per distinguere le sezioni Dettagli cliente e Dettagli carta di credito in un estratto conto relativo a una carta di credito. |
 
 1. Se necessario, inserisci le risorse nel canale web.
 
@@ -268,6 +268,7 @@ Nel canale di stampa, puoi configurare gli allegati e l’accesso alla libreria 
       * Nessuno: l&#39;agente immetterà il valore della proprietà.
       * Frammento di testo: se selezionata, puoi sfogliare e selezionare un frammento di documento di testo il cui contenuto viene renderizzato nel campo. In alternativa, trascina il frammento del documento di testo sul nome del campo per impostare l’associazione tra di essi. Il frammento di documento di testo non deve contenere variabili.
       * Oggetto modello dati: selezionare una proprietà del modello dati del modulo il cui valore viene popolato nel campo. In alternativa, seleziona la **Origini dati** e trascina la proprietà sul campo.
+
    * **[!UICONTROL Valori predefiniti]**: il valore predefinito garantisce che il campo non sia vuoto se non è disponibile alcun valore fornito dall’oggetto modello dati o dal frammento di testo specificato. Se il tipo di associazione dati è none, il valore predefinito viene precompilato nel campo.
    * **[!UICONTROL Pattern di visualizzazione]**: puoi anche definire un formato di visualizzazione per un campo. Seleziona una delle opzioni predefinite dal menu **Tipo** per applicare un formato di visualizzazione a un campo. Seleziona **Personalizzato** per definire un pattern di visualizzazione non disponibile nell&#39;elenco. Per ulteriori informazioni, consulta [Modelli di visualizzazione dei dati](../../forms/using/create-interactive-communication.md#datadisplaypatterns)
 
@@ -276,7 +277,6 @@ Nel canale di stampa, puoi configurare gli allegati e l’accesso alla libreria 
    * **[!UICONTROL Descrizione]**: immetti una stringa di testo che sarà visibile al passaggio del mouse sull’agente nell’interfaccia utente dell’agente. Questa impostazione non è applicabile se il tipo di associazione è Frammento di testo.
    * **[!UICONTROL Obbligatorio]**: seleziona questa opzione per rendere il campo obbligatorio per l’agente. Questa impostazione non è applicabile se il tipo di associazione è Frammento di testo.
    * **[!UICONTROL Consenti più righe]**: seleziona questo campo per consentire l’inserimento di più righe di testo nel campo. Questa impostazione non è applicabile se il tipo di associazione è Frammento di testo.
-
 
 1. Tocca ![done_icon](assets/done_icon.png).
 
@@ -350,13 +350,13 @@ Per ulteriori informazioni, consulta:
 
          * **[!UICONTROL Nessuno]**
          * **[!UICONTROL Oggetto modello dati]**: il valore della proprietà del modello dati del modulo viene popolato nel campo. In alternativa, seleziona la **Origini dati** e trascina la proprietà sul campo.
+
       * **[!UICONTROL Oggetto modello dati]**: proprietà del modello dati del modulo il cui valore viene popolato nel campo.
       * **[!UICONTROL Valore predefinito]**: il valore predefinito garantisce che il campo non sia vuoto se non è disponibile alcun valore fornito dall’oggetto modello dati specificato. Il valore predefinito viene inserito automaticamente nel campo.
 
       * **[!UICONTROL Modificabile dall&#39;agente]**: seleziona per consentire all’agente di modificare il valore nel campo nell’interfaccia utente dell’agente.
+
    1. Tocca ![done_icon](assets/done_icon.png).
-
-
 
 1. Visualizza l’anteprima della comunicazione interattiva per visualizzare la tabella con i dati sottoposti a rendering.
 
@@ -389,7 +389,7 @@ Tocca il pannello principale nel modello Web e tocca **+** per aggiungere un **T
 1. Seleziona la casella di testo predefinita nella cella della tabella e tocca ![modifica](assets/edit.png) (Modifica).
 1. Digita il testo nella cella della tabella e tocca ![done_icon](assets/done_icon.png) per salvarlo.
 
-#### Creare un&#39;associazione tra celle di tabella ed elementi dell&#39;oggetto modello dati {#createbindingtablecells}
+#### Creare un&#39;associazione tra celle di tabella ed elementi oggetto modello dati {#createbindingtablecells}
 
 1. Seleziona la casella di testo predefinita nella riga della tabella e tocca ![modifica](assets/edit.png) (Modifica).
 1. Tocca l’elenco a discesa Oggetti modello dati e seleziona la proprietà.
@@ -536,7 +536,7 @@ Se si seleziona la **[!UICONTROL Usa stampa come master per canale web]** , è p
 
 Se si seleziona Stampa come master durante la creazione della comunicazione interattiva e non si seleziona l&#39;opzione di sincronizzazione automatica, è anche possibile trascinare gli elementi del canale di stampa nell&#39;interfaccia di creazione del canale Web.
 
-Accedi a **Origini dati** > **Contenuto principale** per visualizzare gli elementi del canale di stampa. Trascinare le aree di destinazione, i campi o le tabelle nell&#39;interfaccia di creazione dei canali Web. Un&#39;icona blu accanto al nome dell&#39;elemento indica che l&#39;elemento Canale di stampa è già stato incluso nel canale Web.
+Accedi a **Origini dati** > **Contenuto principale** per visualizzare gli elementi del canale di stampa. Trascinare le aree di destinazione, i campi o le tabelle nell&#39;interfaccia di creazione del canale Web. Un&#39;icona blu accanto al nome dell&#39;elemento indica che l&#39;elemento Canale di stampa è già stato incluso nel canale Web.
 
 ![Contenuto principale](assets/master_content.png)
 
@@ -562,7 +562,7 @@ Tocca **[!UICONTROL Sì]**.
 
 ### Sincronizza {#synchronize-1}
 
-Se si utilizza Stampa come master per il canale Web e si apportano modifiche al canale Stampa, è possibile sincronizzare il contenuto per apportare le modifiche appena apportate al canale Web.
+Se si utilizza Stampa come master per il canale Web e si apportano modifiche al canale di stampa, è possibile sincronizzare il contenuto per apportare al canale Web le modifiche appena apportate.
 
 1. Per sincronizzare il canale web con il canale di stampa, passa al canale web e tocca l’icona Altre opzioni.
 

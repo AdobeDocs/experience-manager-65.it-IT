@@ -2,10 +2,10 @@
 title: Come accedere al contenuto tramite API di consegna di AEM
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 96%
+source-wordcount: '1333'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Quindi... hai tutto questo contenuto, ben strutturato (in Frammenti di contenuto
 
 Ciò di cui hai bisogno è un modo per eseguire il targeting di contenuti specifici, selezionare ciò che ti serve e restituirlo all’app per un’ulteriore elaborazione.
 
-Con Adobe Experience Manager (AEM), puoi accedere in modo selettivo ai frammenti di contenuto, utilizzando l’API GraphQL dell’AEM, per restituire solo il contenuto necessario. Ciò significa che è possibile realizzare una distribuzione headless di contenuti strutturati da utilizzare nelle applicazioni.
+Con Adobe Experience Manager (AEM), puoi accedere in modo selettivo ai frammenti di contenuto, utilizzando l’API GraphQL AEM, per restituire solo il contenuto necessario. Ciò significa che è possibile realizzare una distribuzione headless di contenuti strutturati da utilizzare nelle applicazioni.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ GraphQL is used in various locations in AEM; for example:
 
 ## API GraphQL di AEM {#aem-graphql-api}
 
-L’API GraphQL di AEM è una versione personalizzata basata sulle specifiche API standard di GraphQL, appositamente configurata per consentire l’esecuzione di query (complesse) sui frammenti di contenuto.
+L’API GraphQL dell’AEM è una versione personalizzata basata sulla specifica API GraphQL standard, configurata appositamente per consentire l’esecuzione di query (complesse) sui frammenti di contenuto.
 
 I frammenti di contenuto vengono utilizzati, in quanto il contenuto è strutturato in base ai modelli di frammenti di contenuto. Questo soddisfa i requisiti fondamentali di GraphQL.
 

@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4738'
+source-wordcount: '4734'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ Inoltre, consulta Descrizioni dei componenti e best practice in [Introduzione al
 
 ### Utilizzo delle regole nei moduli adattivi {#using-rules-in-adaptive-forms}
 
-AEM Forms fornisce una [editor di regole](/help/forms/using/rule-editor.md) che consente di creare regole per aggiungere un comportamento dinamico ai componenti del modulo adattivo. Utilizzando queste regole, puoi valutare le condizioni e attivare azioni sui componenti, ad esempio mostrare o nascondere i campi, calcolare i valori, modificare dinamicamente l’elenco a discesa e così via.
+AEM Forms fornisce una [editor di regole](/help/forms/using/rule-editor.md) che consente di creare regole per aggiungere un comportamento dinamico ai componenti di moduli adattivi. Utilizzando queste regole, puoi valutare le condizioni e attivare azioni sui componenti, ad esempio mostrare o nascondere i campi, calcolare i valori, modificare dinamicamente l’elenco a discesa e così via.
 
 L’editor di regole fornisce un editor visivo e un editor di codice per la scrittura di regole. Quando scrivi le regole utilizzando la modalità editor di codice, tieni presente quanto segue:
 
@@ -212,7 +212,7 @@ Per risolvere i problemi di prestazioni con i moduli di grandi dimensioni, consi
 * Anche se ogni modulo è progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni. Ad esempio, dati personali, indirizzo, dettagli sull’impiego e così via. Crea [frammenti di moduli adattivi](/help/forms/using/adaptive-form-fragments.md) per gli elementi e le sezioni dei moduli comuni e utilizzarli in tutti i moduli. È inoltre possibile salvare un pannello in un modulo esistente come frammento. Qualsiasi modifica in un frammento si riflette in tutti i moduli adattivi associati. Promuove l’authoring collaborativo in quanto più autori possono lavorare contemporaneamente su diversi frammenti che compongono un modulo.
 
    * Analogamente ai moduli adattivi, si consiglia di definire nella libreria client tutti gli stili e gli script personalizzati specifici del frammento, utilizzando la finestra di dialogo del contenitore di frammenti. Inoltre, prova a creare frammenti autosufficienti che non dipendono da oggetti esterni.
-   * Evita l’utilizzo di script per più frammenti. Se è presente un oggetto esterno al frammento a cui si deve fare riferimento, provare a rendere tale oggetto parte del modulo principale. Se l’oggetto deve ancora risiedere in un altro frammento, fai riferimento a esso con il relativo nome nello script.
+   * Evita l’utilizzo di script per più frammenti. Se è presente un oggetto esterno al frammento a cui si deve fare riferimento, provare a rendere tale oggetto parte del modulo principale. Se l’oggetto deve ancora trovarsi in un altro frammento, fai riferimento a esso con il relativo nome nello script.
 
 * Utilizza Salva e riprendi con salvataggio automatico per salvare periodicamente il modulo adattivo e consentire agli utenti di visitarlo nuovamente in un secondo momento per completare il modulo.
 * Configura i frammenti per caricarli in modo differito. In fase di runtime, il rendering del frammento contrassegnato per il caricamento in modo differito viene eseguito solo quando necessario. Riduce in modo significativo il tempo di caricamento per i moduli di grandi dimensioni. È supportato anche nei frammenti con pannelli ripetibili. Per ulteriori informazioni, consulta [Configurare il caricamento lento](/help/forms/using/lazy-loading-adaptive-forms.md).

@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5530'
+source-wordcount: '5529'
 ht-degree: 2%
 
 ---
@@ -514,8 +514,8 @@ Prima di impostare i certificati, assicurati di disporre di:
 
 Per configurare i certificati, effettua le seguenti operazioni:
 
-1. Accedi all’istanza di AEM Author come amministratore. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
-1. Fai clic su **[!UICONTROL nome]** dell’account utente. Il **[!UICONTROL Modifica impostazioni utente]** viene visualizzata la pagina. Nell’istanza di authoring di AEM, i certificati risiedono in un KeyStore. Se in precedenza non è stato creato un KeyStore, fare clic su **[!UICONTROL Crea registro chiavi]** e impostare una nuova password per KeyStore. Se il server contiene già un KeyStore, salta questo passaggio.  Se utilizzi il certificato Adobe per le estensioni di Reader, la password del file Keystore è sempre la stessa della password della chiave privata.
+1. Accedi all’istanza di creazione dell’AEM come amministratore. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
+1. Fai clic su **[!UICONTROL nome]** dell’account utente. Il **[!UICONTROL Modifica impostazioni utente]** viene visualizzata la pagina. Nell’istanza Autore AEM, i certificati risiedono in un KeyStore. Se in precedenza non è stato creato un KeyStore, fare clic su **[!UICONTROL Crea registro chiavi]** e impostare una nuova password per KeyStore. Se il server contiene già un KeyStore, salta questo passaggio.  Se utilizzi il certificato Adobe per le estensioni di Reader, la password del file Keystore è sempre la stessa della password della chiave privata.
 1. Il giorno **[!UICONTROL Modifica impostazioni utente]** , seleziona la **[!UICONTROL KeyStore]** scheda. Espandi **[!UICONTROL Aggiungi chiave privata da file di archivio chiavi]** e fornire un alias. L’alias viene utilizzato per eseguire l’operazione Estensioni di Reader.
 1. Per caricare il file del certificato, fai clic su **[!UICONTROL Seleziona file di archivio chiavi]** e carica un &lt;filename>file PFX.
 
@@ -627,13 +627,13 @@ Potete utilizzare il file srt_config.yaml per configurare varie impostazioni per
 ```
 
 * **Lingua:** È un parametro obbligatorio. Supporta inglese (en), tedesco (de), francese (fr) e giapponese (ja). Il valore predefinito è en. Non ha alcun impatto sui servizi PDF Generator in esecuzione su AEM Forms su OSGi.
-* **aemTempDir:** Si tratta di un parametro facoltativo. Specifica la posizione di archiviazione temporanea di Adobe Experience Manager.
+* **aemTempDir:** Si tratta di un parametro facoltativo. Specifica il percorso di archiviazione temporanea di Adobe Experience Manager.
 * **utenti:** Si tratta di un parametro facoltativo. Puoi specificare un utente per verificare se dispone delle autorizzazioni necessarie e dell’accesso in lettura e scrittura alle directory necessarie per eseguire PDF Generator. Se non viene specificato alcun utente, i controlli specifici dell&#39;utente vengono ignorati e visualizzati come non riusciti nel rapporto.
 * **outputDir:** Specifica il percorso in cui salvare il rapporto SRT. La posizione di default è la directory di lavoro corrente dello strumento SRT.
 
 ## Risoluzione dei problemi
 
-Se riscontri problemi anche dopo aver risolto tutti i problemi segnalati dallo strumento SRT, esegui i seguenti controlli:
+Se si verificano problemi anche dopo aver risolto tutti i problemi segnalati dallo strumento SRT, eseguire i controlli seguenti:
 
 Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazione al sistema](#SRT) non segnala alcun errore.
 

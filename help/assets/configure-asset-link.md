@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3148'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,6 @@ Gli utenti di Adobe Asset Link possono connettersi a Experience Manager per cons
 >* La configurazione esistente continua a funzionare se utilizzi la stessa organizzazione Adobe IMS con Experience Manager e CCE.
 
 
-
 **Prerequisiti**
 
 1. Un’istanza Experience Manager in esecuzione con autenticazione Bearer configurata per AAL.
@@ -179,9 +178,9 @@ Le seguenti regole si applicano alle mappature dei gruppi in Experience Manager:
 * Adobe L’iscrizione al gruppo di utenti di Asset Link viene valutata quando l’utente si autentica e il periodo di tempo in **[!UICONTROL Tempo di scadenza utente]** proprietà in **[!UICONTROL Gestore di sincronizzazione predefinito Apache Jackrabbit Oak]** la configurazione è trascorsa. Attualmente, gli utenti possono essere aggiunti e rimossi dai gruppi in Experience Manager per sincronizzarli con gli elementi presenti in Adobe IMS.
 * Evitare conflitti di nomi di gruppo. Assicurati che i nomi utilizzati per i gruppi creati in Adobe IMS (per gestire gli utenti) siano diversi da tutti i nomi dei gruppi di Experienci Manager.
 
-   Ad esempio, accertati che siano diversi da `dam-users` e i gruppi creati dall&#39;amministratore Experience Manager.
+  Ad esempio, accertati che siano diversi da `dam-users` e i gruppi creati dall&#39;amministratore Experience Manager.
 
-   Un gruppo Adobe IMS il cui nome è in conflitto con il nome di un gruppo Experience Manager o di un gruppo creato manualmente non viene utilizzato per controllare le autorizzazioni utente.
+  Un gruppo Adobe IMS il cui nome è in conflitto con il nome di un gruppo Experience Manager o di un gruppo creato manualmente non viene utilizzato per controllare le autorizzazioni utente.
 * Se un utente Adobe IMS si connette a un’istanza Experience Manager sulla quale il nome dell’utente è in conflitto con quello di un utente Experience Manager creato in precedenza, all’utente Adobe IMS viene assegnato un altro nome con l’aggiunta di numeri per renderlo univoco.
 
 **Imposta controllo accesso per la prima volta**
@@ -291,4 +290,3 @@ In caso di problemi durante la configurazione o l’utilizzo di Adobe Asset Link
 >* [Informazioni su Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 >* [Utilizzare Asset Link nell’app desktop Creative Cloud e gestire le risorse](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [Configurare Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
-

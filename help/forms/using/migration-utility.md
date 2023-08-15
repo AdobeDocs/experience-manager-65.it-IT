@@ -2,7 +2,7 @@
 title: Migrare risorse e documenti AEM Forms
 seo-title: Migrate AEM Forms assets and documents
 description: L’utility di migrazione consente di migrare risorse e documenti AEM Forms da AEM 6.3 Forms o versioni precedenti a AEM 6.4 Forms.
-seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
+seo-description: The Migration utility lets you Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: a3fdf940-7fc2-441c-91c8-ad66ba47e5f2
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -13,9 +13,9 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1742'
 ht-degree: 1%
 
 ---
@@ -111,9 +111,11 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
 
       * Componenti personalizzati scritti per Adaptive Forms
       * Eventuali sovrapposizioni dei componenti.
+
    * Per migrare i modelli di modulo adattivo, tocca **Migrazione modello Forms adattivo** e nella pagina Migrazione componenti personalizzati, tocca **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
 
       * Modelli di modulo adattivo creati in `/apps` o `/conf` utilizzo dell’Editor modelli per AEM.
+
    * Migra i servizi di configurazione cloud di AEM Forms per sfruttare il nuovo paradigma del servizio cloud in base al contesto, che include l’interfaccia utente touch (sotto `/conf`). Quando esegui la migrazione dei servizi di configurazione cloud di AEM Forms, i servizi cloud in `/etc` vengono spostati in `/conf`. Se non disponi di personalizzazioni dei servizi cloud che dipendono dai percorsi legacy (`/etc`), si consiglia di eseguire l&#39;utility di migrazione subito dopo l&#39;aggiornamento alla versione 6.5 e di utilizzare la configurazione cloud Interfaccia touch per ulteriori operazioni. Se disponi di personalizzazioni di Cloud Services esistenti, continua a utilizzare l’interfaccia classica nelle impostazioni aggiornate fino a quando le personalizzazioni non vengono aggiornate in modo da allinearsi ai percorsi migrati (`/conf`) ed eseguire l&#39;utility di migrazione.
 
    Per eseguire la migrazione **Servizi cloud AEM Forms**, che includono quanto segue, tocca Migrazione configurazione cloud di AEM Forms (la migrazione della configurazione cloud è indipendente dal pacchetto di compatibilità di AEMFD), tocca Migrazione configurazioni cloud di AEM Forms e quindi, nella pagina Migrazione configurazione, tocca **Avvia migrazione**:
@@ -122,14 +124,17 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
 
       * Percorso origine: `/etc/cloudservices/fdm`
       * Percorso di destinazione: `/conf/global/settings/cloudconfigs/fdm`
+
    * Recaptcha
 
       * Percorso origine: `/etc/cloudservices/recaptcha`
       * Percorso di destinazione: `/conf/global/settings/cloudconfigs/recaptcha`
+
    * Adobe Sign
 
       * Percorso origine: `/etc/cloudservices/echosign`
       * Percorso di destinazione: `/conf/global/settings/cloudconfigs/echosign`
+
    * Servizi cloud Typekit
 
       * Percorso origine: `/etc/cloudservices/typekit`
@@ -144,15 +149,6 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
 
    * **Aggiunge i tag alle risorse**: aggiunge il tag &quot;Correspondence Management : Migrated Assets&quot; / &quot;Adaptive Forms : Migrated Assets&quot; (Gestione corrispondenza: risorse migrate). alle risorse migrate, in modo che gli utenti possano identificare le risorse migrate. Quando si esegue l&#39;utilità Migration, tutte le risorse esistenti nel sistema vengono contrassegnate come Migrate.
    * **Genera tag**: le categorie e le sottocategorie presenti nel sistema precedente vengono create come tag, che vengono quindi associati alle risorse di Gestione della corrispondenza pertinenti nell’AEM. Ad esempio, una categoria (Attestazioni) e una sottocategoria (Attestazioni) di un modello di lettera vengono generate come tag.
-
-
-
-
-
-
-
-
-
 
 1. Al termine dell&#39;esecuzione dell&#39;utilità di migrazione, passare alla [mansioni di manutenzione](#housekeepingtasks).
 

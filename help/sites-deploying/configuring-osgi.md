@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: bf55fcb855cbdad72c669058662ca70fe57e6632
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Entrambi i metodi possono essere utilizzati anche se ci sono sottili differenze,
 
 * [content-nodes (sling:osgiConfig) nell’archivio](#osgi-configuration-in-the-repository)
 
-   * Richiede la configurazione manuale con CRXDE Lite.
+   * Richiede la configurazione manuale con CRXDE Liti.
    * A causa delle convenzioni di denominazione `sling:OsgiConfig` è possibile collegare la configurazione a uno specifico [modalità di esecuzione](/help/sites-deploying/configure-runmodes.md). Puoi anche salvare le configurazioni per più di una modalità di esecuzione nello stesso archivio.
    * Tutte le configurazioni appropriate vengono applicate immediatamente (a seconda della modalità di esecuzione).
 
@@ -58,7 +58,7 @@ Indipendentemente dal metodo utilizzato, tutti i metodi di configurazione seguen
 * Assicurarsi che la copia o la replica del contenuto dell&#39;archivio ricrei configurazioni identiche.
 * Consente di estrarre le configurazioni in FileVault o Subversion per motivi di sicurezza o per ulteriori aggiornamenti.
 * Possono essere salvate in pacchetti da utilizzare per la configurazione di altre istanze.
-* Consente di eseguire i rollout di configurazione utilizzando gli script per propagare i dettagli di configurazione.
+* Consente di eseguire i rollout di configurazione utilizzando script per propagare i dettagli di configurazione.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Questi file possono essere inclusi nei pacchetti di contenuti e riutilizzati in 
 La console Web non mostra alcuna indicazione sulla posizione in cui sono state salvate le modifiche nell’archivio, ma è possibile individuarle facilmente:
 
 1. Creare il file di configurazione [modifica iniziale nella console web](#osgi-configuration-with-the-web-console).
-1. Apri CRXDE Lite.
+1. Apri CRXDE Liti.
 1. In **Strumenti** menu, seleziona **Query...** .
 1. Per cercare il PID della configurazione aggiornata, invia una query di **Tipo** `SQL`.
 
@@ -209,7 +209,7 @@ Per aggiungere una configurazione all’archivio, è necessario conoscere quanto
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. Esiste una configurazione in `/libs`? Per elencare tutte le configurazioni nell’istanza, utilizza **Query** in CRXDE Lite per inviare la seguente query SQL:
+1. Esiste una configurazione in `/libs`? Per elencare tutte le configurazioni nell’istanza, utilizza **Query** in CRXDE Liti per inviare la seguente query SQL:
 
    `select * from sling:OsgiConfig`
 
@@ -219,7 +219,7 @@ Per aggiungere una configurazione all’archivio, è necessario conoscere quanto
 
 Per aggiungere effettivamente la nuova configurazione all’archivio:
 
-1. Utilizza CRXDE Lite per passare a:
+1. Utilizza CRXDE Liti per passare a:
 
    ` /apps/<yourProject>`
 
@@ -328,7 +328,7 @@ L’elenco seguente mostra una piccola selezione delle configurazioni disponibil
 >
 >Poiché queste configurazioni risiedono in `/libs` non devono essere modificati direttamente, ma copiati nell&#39;area dell&#39;applicazione ( `/apps`) prima della personalizzazione.
 
-Per elencare tutti i nodi di configurazione nell’istanza, utilizza **Query** funzionalità di CRXDE Lite per inviare la seguente query SQL:
+Per elencare tutti i nodi di configurazione nell’istanza, utilizza **Query** funzionalità di CRXDE Liti per inviare la seguente query SQL:
 
 `select * from sling:OsgiConfig`
 

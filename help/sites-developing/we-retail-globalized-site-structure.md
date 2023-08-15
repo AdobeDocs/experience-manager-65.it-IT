@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '413'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ We.Retail è stato creato con una struttura del sito globalizzata che offre un m
 
 1. Torna alla vista a colonne, fai clic sulla Master lingua e visualizza le directory principali della lingua con il contenuto. Solo l&#39;inglese ha dei contenuti.
 
-   We.Retail non include alcun contenuto tradotto, ma è presente una struttura e una configurazione che consentono di dimostrare i servizi di traduzione.
+   We.Retail non include alcun contenuto tradotto, ma la struttura e la configurazione sono implementate per consentirti di dimostrare i servizi di traduzione.
 
    ![chlimage_1-90](assets/chlimage_1-90a.png)
 

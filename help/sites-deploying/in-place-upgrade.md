@@ -4,7 +4,7 @@ description: Scopri come eseguire un aggiornamento sul posto.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 0%
@@ -53,7 +53,6 @@ La migrazione effettiva viene eseguita utilizzando il file JAR standard per l’
 >
 >* `--promote-runmode nosamplecontent`
 >
-
 
 Per determinare il comando da eseguire, utilizzare il comando seguente:
 
@@ -124,7 +123,7 @@ Controlla i file di configurazione sotto `crx-quickstart/install` cartella. Se e
 
 **Una nota sugli archivi dati:**
 
-Mentre `FileDataStore` è la nuova impostazione predefinita per le installazioni AEM 6.3, non è necessario utilizzare un datastore esterno. L’utilizzo di un archivio dati esterno è consigliato come best practice per le distribuzioni di produzione, ma non è un prerequisito per l’aggiornamento. A causa della complessità già presente nell’aggiornamento dell’AEM, si consiglia di eseguire l’aggiornamento senza eseguire una migrazione dell’archivio dati. Se lo desideri, puoi eseguire successivamente una migrazione dell’archivio dati come sforzo separato.
+Mentre `FileDataStore` è la nuova impostazione predefinita per le installazioni AEM 6.3, non è necessario utilizzare un datastore esterno. L’utilizzo di un archivio dati esterno è consigliato come best practice per le distribuzioni di produzione, ma non è un prerequisito per l’aggiornamento. A causa della complessità già presente nell’aggiornamento dell’AEM, Adobe consiglia di eseguire l’aggiornamento senza eseguire una migrazione dell’archivio dati. Se lo desideri, puoi eseguire successivamente una migrazione dell’archivio dati come sforzo separato.
 
 ## Risoluzione dei problemi di migrazione {#troubleshooting-migration-issues}
 
@@ -168,7 +167,7 @@ Per eseguire l’aggiornamento, è importante avviare AEM utilizzando il file ja
 >
 >Se esegui Oracle Java 11 (o in genere versioni di Java più recenti di 8), sarà necessario aggiungere opzioni aggiuntive alla riga di comando all’avvio dell’AEM. Per ulteriori informazioni, consulta [Considerazioni su Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Tieni presente che l’avvio dell’AEM dallo script di avvio non avvierà l’aggiornamento. La maggior parte dei clienti inizia l’AEM utilizzando lo script di avvio e ha personalizzato questo script di avvio in modo da includere switch per configurazioni di ambiente come impostazioni di memoria, certificati di sicurezza, ecc. Per questo motivo, si consiglia di seguire questa procedura per determinare il comando di aggiornamento corretto:
+Tieni presente che l’avvio dell’AEM dallo script di avvio non avvierà l’aggiornamento. La maggior parte dei clienti inizia l’AEM utilizzando lo script di avvio e ha personalizzato questo script di avvio in modo da includere switch per configurazioni di ambiente come impostazioni di memoria, certificati di sicurezza, ecc. Per questo motivo, l’Adobe consiglia di seguire questa procedura per determinare il comando di aggiornamento corretto:
 
 1. In un’istanza AEM in esecuzione, esegui quanto segue dalla riga di comando:
 

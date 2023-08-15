@@ -1,5 +1,5 @@
 ---
-title: Monitoraggio e manutenzione dell’istanza di Adobe Experience Manager
+title: Monitoraggio e manutenzione del Adobe Experience Manager istanza
 description: Scopri come monitorare l’AEM.
 uuid: 14466552-5c92-4730-a427-85675a2b121c
 contentOwner: User
@@ -10,9 +10,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: bb27c7dfedd5a16728674f7584b0c462a92646e6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5934'
+source-wordcount: '5933'
 ht-degree: 1%
 
 ---
@@ -65,11 +65,11 @@ Spesso viene eseguito un backup completo a intervalli regolari (ad esempio, gior
 
 ### Backup dell&#39;installazione del software {#backing-up-your-software-installation}
 
-Dopo l&#39;installazione, o dopo modifiche significative della configurazione, creare un backup dell&#39;installazione del software.
+Dopo l&#39;installazione o modifiche significative nella configurazione, crea un backup dell&#39;installazione del software.
 
-Per eseguire questa operazione: [eseguire il backup dell&#39;intero repository](#backing-up-your-repository) e quindi:
+Per eseguire questa operazione, [ Esegui il backup dell&#39;intera archivio ](#backing-up-your-repository) e poi:
 
-1. Fermate l&#39;AEM.
+1. Interruzione AEM.
 1. Backup completo `<cq-installation-dir>` dal file system.
 
 >[!CAUTION]
@@ -126,19 +126,19 @@ Per eliminare le versioni di un sito Web, procedere come segue:
    ![Configurazione eliminazione versione](assets/version-purge-configuration.png)
 
    * **Percorsi di eliminazione**
-Imposta il percorso iniziale del contenuto da eliminare, ad esempio: 
-`/content/wknd`.
+Imposta il percorso iniziale del contenuto da eliminare, ad esempio: `/content/wknd`.
 
-      >[!CAUTION]
-      >
-      >L’Adobe consiglia di definire più percorsi per ciascuno dei siti web.
-      >
-      >La definizione di un percorso con troppi elementi figlio può allungare notevolmente il tempo necessario per eseguire l&#39;eliminazione.
+     >[!CAUTION]
+     >
+     >L’Adobe consiglia di definire più percorsi per ciascuno dei siti web.
+     >
+     >La definizione di un percorso con troppi elementi figlio può allungare notevolmente il tempo necessario per eseguire l&#39;eliminazione.
 
    * **Rimuovi versioni in modo ricorsivo**
 
       * Deseleziona questa opzione se desideri eliminare solo il nodo definito dal percorso.
       * Seleziona questa opzione per rimuovere il nodo definito dal percorso e dai relativi discendenti.
+
    * **Numero massimo di versioni**
 Imposta il numero massimo di versioni (per ogni nodo) che desideri mantenere. Lascia vuoto per non usare questa impostazione.
 
@@ -147,6 +147,7 @@ Imposta il numero minimo di versioni (per ogni nodo) che desideri mantenere. Las
 
    * **Validità massima versione**
 Imposta la validità massima della versione in giorni (per ogni nodo) che desideri mantenere. Lascia vuoto per non usare questa impostazione.
+
    Then **Salva**.
 
 1. Accedi/torna a **Finestra di manutenzione settimanale** finestra e seleziona **Esegui** per avviare immediatamente il processo.
@@ -177,20 +178,20 @@ Il processo elenca tutti i nodi che sono stati elaborati. Durante il processo, u
 Inoltre, la console fornisce informazioni utili sulle versioni:
 
 * `V 1.0`: numero di versione.
-* `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (di base) e non può essere eliminata.
+* `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (base) e non può essere eliminata.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: data della versione.
 
-Nell&#39;esempio seguente:
+Nell&#39;esempio successivo:
 
-* Il **[!DNL Shirts]** le versioni vengono eliminate perché la loro validità è superiore a due giorni.
+* Le versioni vengono eliminate perché la **[!DNL Shirts]** loro età di versione è superiore a due giorni.
 * Il **[!DNL Tonga Fashions!]** le versioni vengono eliminate perché il numero di versioni è maggiore di 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
 ## Utilizzo dei record di controllo e dei file di registro {#working-with-audit-records-and-log-files}
 
-I record di controllo e i file di registro relativi ad Adobe Experience Manager (AEM) sono disponibili in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare e dove è possibile trovarlo.
+I record di controllo e i file di registro relativi a Adobe Experience Manager (AEM) sono disponibili in varie posizioni. Di seguito viene fornita una panoramica di ciò che è possibile trovare e dove è possibile trovarlo.
 
 ### Utilizzo dei registri {#working-with-logs}
 
@@ -204,7 +205,7 @@ WCM AEM registra registri dettagliati. Dopo aver decompresso e avviato Quickstar
 
 La rotazione del file di registro si riferisce al processo che limita la crescita del file creando periodicamente un file. In AEM, un file di registro denominato `error.log` viene ruotato una volta al giorno in base alle regole specificate:
 
-* Il `error.log` il file viene rinominato in base al pattern {original_filename} `.yyyy-MM-dd`. Ad esempio, l’11 luglio 2010 il file di registro corrente viene rinominato `error.log-2010-07-10`, quindi un nuovo `error.og` viene creato.
+* Il `error.log` il file viene rinominato in base al modello {original_filename} `.yyyy-MM-dd`. Ad esempio, l’11 luglio 2010 il file di registro corrente viene rinominato `error.log-2010-07-10`, quindi un nuovo `error.og` viene creato.
 
 * I file di registro precedenti non vengono eliminati, pertanto è responsabilità dell&#39;utente pulire periodicamente i file di registro precedenti per limitare l&#39;utilizzo del disco.
 
@@ -227,25 +228,23 @@ Le azioni di moderazione sono registrate qui.
    * `error.log`
 I messaggi di errore (di diversi livelli di gravità) sono registrati qui.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 Questo registro viene utilizzato solo se [!DNL Dynamic Media] è abilitato. Fornisce statistiche e informazioni analitiche utilizzate per analizzare il comportamento del processo interno ImageServer.
 
    * `request.log`
 Ogni richiesta di accesso viene registrata qui insieme alla risposta.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 Questo registro viene utilizzato solo se [!DNL Dynamic Media] è abilitato. Il registro s7access registra ogni richiesta effettuata a [!DNL Dynamic Media] da a `/is/image` e `/is/content`.
 
    * `stderr.log`
-Contiene i messaggi di errore, di diverso livello di gravità, generati durante l&#39;avvio. Per impostazione predefinita, il livello di registro è impostato su 
-`Warning` ( `WARN`)
+Contiene i messaggi di errore, di diverso livello di gravità, generati durante l&#39;avvio. Per impostazione predefinita, il livello di registro è impostato su `Warning` ( `WARN`)
 
    * `stdout.log`
 Contiene i messaggi di registrazione che indicano gli eventi durante l&#39;avvio.
 
    * `upgrade.log`
-Fornisce un registro di tutte le operazioni di aggiornamento eseguite dal 
-`com.day.compat.codeupgrade` e `com.adobe.cq.upgradesexecutor` pacchetti.
+Fornisce un registro di tutte le operazioni di aggiornamento eseguite dal `com.day.compat.codeupgrade` e `com.adobe.cq.upgradesexecutor` pacchetti.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
@@ -293,47 +292,50 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
    * Nome: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
-      Dove `<identifier>` viene sostituito dal testo libero che è necessario immettere per identificare l&#39;istanza (non è possibile omettere queste informazioni).
+     Dove `<identifier>` viene sostituito dal testo libero che è necessario immettere per identificare l&#39;istanza (non è possibile omettere queste informazioni).
 
-      Ad esempio `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+     Ad esempio `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Tipo: `sling:OsgiConfig`
+
    >[!NOTE]
    >
-   >Sebbene non si tratti di un requisito tecnico, è consigliabile `<identifier>` univoco.
+   >Anche se non è un requisito tecnico, è consigliabile rendere `<identifier>` univoco.
 
-1. Imposta le seguenti proprietà su questo nodo:
+1. Impostate le seguenti proprietà su questo nodo:
 
    * Nome: `org.apache.sling.commons.log.file`
 
-      Tipo: String
+     Tipo: String
 
-      Valore: specifica il file di registro; ad esempio, `logs/myLogFile.log`
+     Valore: specifica il file di registro; ad esempio, `logs/myLogFile.log`
 
    * Nome: `org.apache.sling.commons.log.names`
 
-      Tipo: String[] (Stringa + Multiplo)
+     Tipo: String[] (Stringa + Multiplo)
 
-      Valore: specifica i servizi OSGi per i quali il logger deve registrare i messaggi; ad esempio, tutti i seguenti:
+     Valore: specifica i servizi OSGi per i quali il logger deve registrare i messaggi; ad esempio, tutti i seguenti:
 
       * `org.apache.sling`
       * `org.apache.felix`
       * `com.day`
+
    * Nome: `org.apache.sling.commons.log.level`
 
-      Tipo: String
+     Tipo: String
 
-      Valore: specifica il livello di registro richiesto ( `debug`, `info`, `warn`, o `error`); ad esempio, `debug`
+     Valore: specifica il livello di registro richiesto ( `debug`, `info`, `warn`, o `error`); ad esempio, `debug`
 
    * Configura gli altri parametri come richiesto:
 
       * Nome: `org.apache.sling.commons.log.pattern`
 
-         Tipo: `String`
+        Tipo: `String`
 
-         Valore: specifica il pattern del messaggio di registro come richiesto; ad esempio,
+        Valore: specifica il pattern del messaggio di registro come richiesto; ad esempio,
 
-         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+        `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.pattern` supporta fino a sei argomenti.
@@ -389,9 +391,10 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
    * Nome: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (uno scrittore)
 
-      Come per il logger, `<identifier>` viene sostituito dal testo libero che è necessario immettere per identificare l&#39;istanza (non è possibile omettere queste informazioni). Ad esempio `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+     Come per il logger, `<identifier>` viene sostituito dal testo libero che è necessario immettere per identificare l&#39;istanza (non è possibile omettere queste informazioni). Ad esempio `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Tipo: `sling:OsgiConfig`
+
    >[!NOTE]
    >
    >Sebbene non si tratti di un requisito tecnico, è consigliabile `<identifier>` univoco.
@@ -400,44 +403,43 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
    * Nome: `org.apache.sling.commons.log.file`
 
-      Tipo: `String`
+     Tipo: `String`
 
-      Valore: specifica il file di registro in modo che corrisponda al file specificato nel logger;
+     Valore: specifica il file di registro in modo che corrisponda al file specificato nel logger;
 
-      per questo esempio, `../logs/myLogFile.log`.
+     per questo esempio, `../logs/myLogFile.log`.
 
    * Configura gli altri parametri come richiesto:
 
       * Nome: `org.apache.sling.commons.log.file.number`
 
-         Tipo: `Long`
+        Tipo: `Long`
 
-         Valore: specifica il numero di file di registro da mantenere, ad esempio `5`
+        Valore: specifica il numero di file di registro da mantenere, ad esempio `5`
 
       * Nome: `org.apache.sling.commons.log.file.size`
 
-         Tipo: `String`
+        Tipo: `String`
 
-         Valore: specifica come necessario per controllare la rotazione del file per dimensione/data; ad esempio, `'.'yyyy-MM-dd`
+        Valore: specifica come necessario per controllare la rotazione del file per dimensione/data; ad esempio, `'.'yyyy-MM-dd`
+
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` controlla la rotazione del file di registro impostando:
    >
    >* una dimensione file massima
    >* una pianificazione data/ora
-
    >
    >per indicare quando viene creato un nuovo file (e il file esistente viene rinominato in base al pattern del nome).
    >
    >* È possibile specificare un limite di dimensione con un numero. Se non viene fornito alcun indicatore di dimensione, viene considerato come il numero di byte oppure è possibile aggiungere uno degli indicatori di dimensione: `KB`, `MB`, o `GB` (il caso viene ignorato).
-   >* È possibile specificare una pianificazione ora/data come `java.util.SimpleDateFormat` pattern. Definisce il periodo di tempo dopo il quale il file viene ruotato. Inoltre, il suffisso aggiunto al file ruotato (per l’identificazione).
-
+   >* Un programmare di data/ora può essere specificato come `java.util.SimpleDateFormat` pattern. Definisce il periodo di tempo dopo il quale il file viene ruotato. Inoltre, il suffisso aggiunto al file ruotato (per l&#39;identificazione).
    >
-   >Il valore predefinito è &#39;.&#39;dd/MM/yyyy (per la rotazione giornaliera dei log).
+   >Il valore predefinito è &#39;.&#39;yyyy-MM-DD (per la rotazione giornaliera del registro).
    >
-   >Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo questa data è preciso), ../logs/error.log viene rinominato ../logs/error.log.2010-01-20. La registrazione per il 21 gennaio viene generata in (nuovo e vuoto) ../logs/error.log fino al suo rollover al cambio di giorno successivo.
+   >Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo questa data si verifica per essere precisi),.. /logs/Error.log viene rinominato in.. /logs/error.log.2010-01-20. La registrazione del 21 gennaio viene emessa su (un nuovo e vuoto).. /logs/Error.log fino a quando non viene eseguito il rollback alla successiva modifica del giorno.
    >
-   >| `'.'yyyy-MM` | Rotazione all’inizio di ogni mese |
+   >| `'.'yyyy-MM` | Rotazione all&#39;inizio di ogni mese |
    >|---|---|
    >| `'.'yyyy-ww` | Rotazione al primo giorno di ogni settimana (a seconda delle impostazioni internazionali). |
    >| `'.'yyyy-MM-dd` | Rotazione ogni giorno a mezzanotte. |
@@ -448,11 +450,10 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >Nota: quando si specifica un&#39;ora/data:
    >
    >1. È necessario &quot;sfuggire&quot; al testo letterale all&#39;interno di una coppia di virgolette singole (&#39; &#39;);
-      >
-      >    Evita che alcuni caratteri vengano interpretati come lettere pattern.
+   >
+   >    Evita che alcuni caratteri vengano interpretati come lettere pattern.
    >
    >1. Utilizza solo i caratteri consentiti per un nome file valido in qualsiasi punto dell’opzione.
-
 
 1. Leggi il nuovo file di registro con lo strumento scelto.
 
@@ -546,16 +547,16 @@ Di seguito sono elencati i problemi di prestazioni comuni che si verificano, ins
 | Area | Sintomo | Per aumentare la capacità... | Per ridurre il volume... |
 |---|---|---|---|
 | Client | Utilizzo intensivo della CPU del client. | Installare una CPU client con prestazioni superiori. | Semplifica il layout (HTML). |
-|  | Utilizzo ridotto della CPU del server. | Esegui l’aggiornamento a un browser più veloce. | Miglioramento della cache lato client. |
-|  | Alcuni clienti sono veloci, altri lenti. |  |  |
+|   | Utilizzo ridotto della CPU del server. | Esegui l’aggiornamento a un browser più veloce. | Miglioramento della cache lato client. |
+|   | Alcuni clienti sono veloci, altri lenti. |  |  |
 | Server |  |  |  |
 | Rete | Utilizzo della CPU ridotto sia sui server che sui client. | Rimuovere eventuali colli di bottiglia della rete. | Migliora/ottimizza la configurazione della cache client. |
-|  | La navigazione locale sul server è (comparativamente) veloce. | Aumentare la larghezza di banda di rete. | Riduci il &quot;peso&quot; delle pagine web (ad esempio, meno immagini, HTML ottimizzati). |
+|   | La navigazione locale sul server è (comparativamente) veloce. | Aumentare la larghezza di banda di rete. | Riduci il &quot;peso&quot; delle pagine web (ad esempio, meno immagini, HTML ottimizzati). |
 | Server web | L&#39;utilizzo della CPU nel server Web è elevato. | Crea un cluster per i server web. | Riduci gli hit per pagina (visita). |
-|  |  | Utilizzare un load balancer hardware. |  |
+|   |  | Utilizzare un load balancer hardware. |  |
 | Applicazione | Utilizzo CPU server elevato. | Cluster per le istanze AEM. | Cercare ed eliminare hog di CPU e memoria (utilizzare l&#39;output di revisione del codice e di temporizzazione). |
-|  | Elevato consumo di memoria. |  | Migliora la memorizzazione nella cache a tutti i livelli. |
-|  | Tempi di risposta ridotti. |  | Ottimizza modelli e componenti (ad esempio struttura, logica). |
+|   | Elevato consumo di memoria. |  | Migliora la memorizzazione nella cache a tutti i livelli. |
+|   | Tempi di risposta ridotti. |  | Ottimizza modelli e componenti (ad esempio struttura, logica). |
 | Archivio |  |  |  |
 | Cache |  |  |  |
 
@@ -578,8 +579,8 @@ Tutte queste informazioni devono essere ottenute, ordinate e analizzate prima di
       * il problema si verifica solo in momenti specifici?
       * il problema si verifica solo su pagine specifiche?
       * sono interessate altre richieste?
-   * raccogliere quante più informazioni possibili per confrontarle con la propria conoscenza del sistema in circostanze normali:
 
+   * raccogliere quante più informazioni possibili per confrontarle con la propria conoscenza del sistema in circostanze normali:
 
 ### Strumenti per il monitoraggio e l&#39;analisi delle prestazioni {#tools-for-monitoring-and-analyzing-performance}
 
@@ -922,7 +923,7 @@ Comando dello strumento `jconsole` è disponibile con JDK.
 
    Ora puoi selezionare altre opzioni.
 
-### Monitoraggio delle prestazioni tramite (J)VisualVM {#monitoring-performance-using-j-visualvm}
+### Monitoraggio delle prestazioni tramite (J) VisualVM {#monitoring-performance-using-j-visualvm}
 
 Per JDK 6-8, il comando tool `visualvm` è disponibile. Dopo aver installato un JDK, puoi effettuare le seguenti operazioni:
 
@@ -1094,13 +1095,14 @@ Ripeti la procedura precedente sull’istanza di pubblicazione.
 Di seguito è riportato un elenco di suggerimenti su cosa controllare se si verificano alcuni problemi di prestazioni. L&#39;elenco non è (purtroppo) completo.
 
 >[!NOTE]
+>
 Per ulteriori informazioni, consulta anche i seguenti articoli:
+>
 * [Thread dump](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it)
 * [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it)
 * [Analizzare utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=it)
 * [Analizzare processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
-
 
 ### CPU al 100% {#cpu-at}
 
@@ -1132,13 +1134,13 @@ Se il sistema sta esaurendo lo spazio su disco o si notano problemi di accesso a
 * Se la raccolta delle informazioni di debug è stata disattivata, è possibile configurarla in varie posizioni, tra cui le seguenti:
 
    * [Gestore script Apache Sling JSP](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Gestore JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configurazione registrazione Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [CQ HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [Filtro di debug CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Apache Sling JavaScript handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Configurazione di registrazione di Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+   * [Gestore libreria CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [CQ Web Content Management Filtra di debug](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Logger](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Se e come hai configurato [Rimozione versione](/help/sites-deploying/version-purging.md)
+* Se e come hai configurato [ versione lo spurgo](/help/sites-deploying/version-purging.md)
 * Knowledge Base:
 
    * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=it)
@@ -1163,12 +1165,12 @@ Alcune scelte comuni sono:
 
 * Controllo catalogo dettagliato:
 
-   ```
-   -verbose:gc \
-    -Xloggc:$LOGS/verbosegc.log \
-    -XX:+PrintGCDetails \
-    -XX:+PrintGCDateStamps
-   ```
+  ```
+  -verbose:gc \
+   -Xloggc:$LOGS/verbosegc.log \
+   -XX:+PrintGCDetails \
+   -XX:+PrintGCDateStamps
+  ```
 
 Il registro risultante può essere acquisito da un visualizzatore GC come:
 
@@ -1178,18 +1180,20 @@ Oppure JConsole:
 
 * Queste impostazioni sono per una connessione JMX &quot;wide open&quot;:
 
-   ```
-   -Dcom.sun.management.jmxremote \
-    -Dcom.sun.management.jmxremote.port=8889 \
-    -Dcom.sun.management.jmxremote.authenticate=false \
-    -Dcom.sun.management.jmxremote.ssl=false
-   ```
+  ```
+  -Dcom.sun.management.jmxremote \
+   -Dcom.sun.management.jmxremote.port=8889 \
+   -Dcom.sun.management.jmxremote.authenticate=false \
+   -Dcom.sun.management.jmxremote.ssl=false
+  ```
 
 * Quindi collegarsi alla JVM con JConsole; vedere quanto segue:
-   ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
 
 È possibile vedere la quantità di memoria utilizzata, gli algoritmi GC utilizzati, il tempo necessario per l&#39;esecuzione e l&#39;effetto di questo processo sulle prestazioni dell&#39;applicazione. Senza di esso, la messa a punto è solo &quot;manopole che girano casualmente&quot;.
 
 >[!NOTE]
+>
 Ad Oracle, nella VM sono disponibili informazioni su:
+>
 [https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

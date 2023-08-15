@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1456'
 ht-degree: 0%
 
 ---
@@ -55,41 +55,41 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 
    * **Richiedi autenticazione chiamanti:** Questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
 
-      Se *Al momento è necessario che i chiamanti effettuino l&#39;autenticazione* è visualizzato, il chiamante del servizio deve essere autenticato e l&#39;entità utente principale per quel chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
+     Se *Al momento è necessario che i chiamanti effettuino l&#39;autenticazione* è visualizzato, il chiamante del servizio deve essere autenticato e l&#39;entità utente principale per quel chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
 
-      Se *I chiamanti non sono tenuti ad autenticare* , non è necessario che il chiamante del servizio sia autenticato. La chiamata del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fare clic su Richiedi autenticazione chiamanti.
+     Se *I chiamanti non sono tenuti ad autenticare* , il chiamante del servizio non deve essere autenticato. La chiamata del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fare clic su Richiedi autenticazione chiamanti.
 
    * **Esegui come:** Specifica l&#39;identità di runtime utilizzata da un servizio dopo che è stato richiamato. Per modificare questa opzione, fare clic su Cambia. Scegli una delle seguenti opzioni:
 
-      **Non specificato:** Viene utilizzato il comportamento predefinito.
+     **Non specificato:** Viene utilizzato il comportamento predefinito.
 
-      **Richiamatore:** Utilizza la stessa identità dell’utente che ha richiamato il servizio.
+     **Richiamatore:** Utilizza la stessa identità dell’utente che ha richiamato il servizio.
 
-      **Sistema:** Esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
+     **Sistema:** Esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
 
-      **Utente con nome:** Consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando si seleziona questa opzione, fare clic su Seleziona utente per visualizzare la pagina Seleziona utente principale, in cui è possibile cercare e selezionare l&#39;utente.
+     **Utente con nome:** Consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando si seleziona questa opzione, fare clic su Seleziona utente per visualizzare la pagina Seleziona utente principale, in cui è possibile cercare e selezionare l&#39;utente.
 
    * Per aggiungere un&#39;entità al profilo di sicurezza, fare clic su Aggiungi entità e selezionare l&#39;utente o il gruppo da aggiungere come entità. Fare clic su Avanti e quindi selezionare le autorizzazioni che si desidera assegnare all&#39;entità:
 
-      **INVOKE_PERM:** Per richiamare tutte le operazioni sul servizio
+     **INVOKE_PERM:** Per richiamare tutte le operazioni sul servizio
 
-      **MODIFY_CONFIG_PERM:** Per modificare la configurazione di un servizio
+     **MODIFY_CONFIG_PERM:** Per modificare la configurazione di un servizio
 
-      **SUPERVISOR_PERM:** Per visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
+     **SUPERVISOR_PERM:** Per visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
 
-      **START_STOP_PERM:** Per avviare e arrestare un servizio
+     **START_STOP_PERM:** Per avviare e arrestare un servizio
 
-      **ADD_REMOVE_ENDPOINTS_PERM:** Per aggiungere, rimuovere e modificare endpoint per un servizio
+     **ADD_REMOVE_ENDPOINTS_PERM:** Per aggiungere, rimuovere e modificare endpoint per un servizio
 
-      **CREATE_VERSION_PERM:** Per creare una nuova versione del servizio
+     **CREATE_VERSION_PERM:** Per creare una nuova versione del servizio
 
-      **DELETE_VERSION_PERM:** Per eliminare una versione del servizio
+     **DELETE_VERSION_PERM:** Per eliminare una versione del servizio
 
-      **MODIFY_VERSION_PERM:** Per modificare una versione del servizio
+     **MODIFY_VERSION_PERM:** Per modificare una versione del servizio
 
-      **READ_PERM:** Per visualizzare il servizio
+     **READ_PERM:** Per visualizzare il servizio
 
-      Fare clic su Fine per aggiungere l&#39;entità al profilo di protezione.
+     Fare clic su Fine per aggiungere l&#39;entità al profilo di protezione.
 
 1. Fai clic su Fine per completare la configurazione.
 
@@ -122,41 +122,41 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 
    * **Richiedi autenticazione chiamanti:** Questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
 
-      Se *Al momento è necessario che i chiamanti effettuino l&#39;autenticazione* è visualizzato, il chiamante del servizio deve essere autenticato e l&#39;entità utente principale per quel chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
+     Se *Al momento è necessario che i chiamanti effettuino l&#39;autenticazione* è visualizzato, il chiamante del servizio deve essere autenticato e l&#39;entità utente principale per quel chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
 
-      Se *I chiamanti non sono tenuti ad autenticare* , il chiamante del servizio potrebbe essere autenticato o meno. La chiamata del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fare clic su Richiedi autenticazione chiamanti.
+     Se *I chiamanti non sono tenuti ad autenticare* , il chiamante del servizio potrebbe essere autenticato o meno. La chiamata del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fare clic su Richiedi autenticazione chiamanti.
 
    * **Esegui come:** Specifica l&#39;identità di runtime utilizzata da un servizio dopo che è stato richiamato. Per modificare questa opzione, fare clic su Cambia. Scegli una delle seguenti opzioni:
 
-      **Non specificato:** Viene utilizzato il comportamento predefinito.
+     **Non specificato:** Viene utilizzato il comportamento predefinito.
 
-      **Richiamatore:** Utilizza la stessa identità dell’utente che ha richiamato il servizio.
+     **Richiamatore:** Utilizza la stessa identità dell’utente che ha richiamato il servizio.
 
-      **Sistema:** Esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
+     **Sistema:** Esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
 
-      **Utente con nome:** Consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando si seleziona questa opzione, fare clic su Seleziona utente per visualizzare la pagina Seleziona utente principale, in cui è possibile cercare e selezionare l&#39;utente.
+     **Utente con nome:** Consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando si seleziona questa opzione, fare clic su Seleziona utente per visualizzare la pagina Seleziona utente principale, in cui è possibile cercare e selezionare l&#39;utente.
 
    * Per aggiungere un&#39;entità al profilo di sicurezza, fare clic su Aggiungi entità e selezionare l&#39;utente o il gruppo da aggiungere come entità. Fare clic su Avanti e quindi selezionare le autorizzazioni che si desidera assegnare all&#39;entità:
 
-      **INVOKE_PERM:** Per richiamare tutte le operazioni sul servizio
+     **INVOKE_PERM:** Per richiamare tutte le operazioni sul servizio
 
-      **MODIFY_CONFIG_PERM:** Per modificare la configurazione di un servizio
+     **MODIFY_CONFIG_PERM:** Per modificare la configurazione di un servizio
 
-      **SUPERVISOR_PERM:** Per visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
+     **SUPERVISOR_PERM:** Per visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
 
-      **START_STOP_PERM:** Per avviare e arrestare un servizio
+     **START_STOP_PERM:** Per avviare e arrestare un servizio
 
-      **ADD_REMOVE_ENDPOINTS_PERM:** Per aggiungere, rimuovere e modificare endpoint per un servizio
+     **ADD_REMOVE_ENDPOINTS_PERM:** Per aggiungere, rimuovere e modificare endpoint per un servizio
 
-      **CREATE_VERSION_PERM:** Per creare una nuova versione del servizio
+     **CREATE_VERSION_PERM:** Per creare una nuova versione del servizio
 
-      **DELETE_VERSION_PERM:** Per eliminare una versione del servizio
+     **DELETE_VERSION_PERM:** Per eliminare una versione del servizio
 
-      **MODIFY_VERSION_PERM:** Per modificare una versione del servizio
+     **MODIFY_VERSION_PERM:** Per modificare una versione del servizio
 
-      **READ_PERM:** Per visualizzare il servizio
+     **READ_PERM:** Per visualizzare il servizio
 
-      Fare clic su Fine per aggiungere l&#39;entità al profilo di protezione.
+     Fare clic su Fine per aggiungere l&#39;entità al profilo di protezione.
 
 ## Rimuovere un archivio {#remove-an-archive}
 

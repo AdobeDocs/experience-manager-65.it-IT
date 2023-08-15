@@ -11,9 +11,9 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1312'
 ht-degree: 14%
 
 ---
@@ -57,7 +57,7 @@ Nel browser del contenuto è possibile visualizzare la gerarchia degli oggetti d
 
 * **Browser proprietà**
 
-   Consente di modificare le proprietà di un componente. Le proprietà cambiano in base al componente. Ad esempio, per visualizzare le proprietà del contenitore di documenti: seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **Contenitore documento**, quindi tocca ![cmppr](assets/cmppr.png).
+  Consente di modificare le proprietà di un componente. Le proprietà cambiano in base al componente. Ad esempio, per visualizzare le proprietà del contenitore di documenti: seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **Contenitore documento**, quindi tocca ![cmppr](assets/cmppr.png).
 
 * **Browser risorse**
 Segrega diversi tipi di contenuto, ad esempio frammenti di layout, immagini, documenti, pagine e video. L’autore può trascinare le risorse nella comunicazione interattiva.
@@ -69,7 +69,7 @@ Include componenti che è possibile utilizzare per creare i canali di stampa e w
 |---|---|---|---|
 | Grafico | ✓ | ✓ | Aggiunge un grafico che è possibile utilizzare in una comunicazione interattiva per la rappresentazione visiva di dati bidimensionali recuperati da un elemento di raccolta di modelli di dati modulo. |
 | Frammento di documento | ✓ | ✓ | Consente di aggiungere un componente, testo, elenco o condizione riutilizzabile a una comunicazione interattiva. Il componente riutilizzabile aggiunto a una comunicazione interattiva potrebbe essere basato su un modello di dati modulo o senza un modello di dati modulo. |
-| Immagine | ✓ | ✓ | Consente di inserire un’immagine. |
+| Immagine | ✓ | ✓ | Consente di inserire un&#39;immagine. |
 | Pannello | - | ✓ | Il componente Pannello è un segnaposto per raggruppare altri componenti e controlla il layout di un gruppo di componenti in una comunicazione interattiva. Un componente pannello consente inoltre di rendere un gruppo di componenti ripetibili per l’utente finale, ad esempio in più voci necessarie per compilare le credenziali educative. È inoltre consigliabile utilizzare un pannello ciascuno per una scheda di una comunicazione interattiva con più schede. |
 | Tabella | &#42; | ✓ | Aggiunge una tabella che consente di organizzare i dati in righe e colonne. |
 | Area di destinazione | &#42;&#42; | ✓ | Inserisce un&#39;area di destinazione in un canale web per organizzare i componenti specifici del canale web. |
@@ -144,7 +144,7 @@ La barra degli strumenti Pagina nella parte superiore fornisce opzioni che conse
 
       * Scopri di cosa è composta la comunicazione interattiva.
       * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
-   * Target: consente di abilitare o disabilitare i componenti personalizzati o i componenti predefiniti non elencati nella barra laterale.
 
+   * Target: consente di abilitare o disabilitare i componenti personalizzati o i componenti predefiniti non elencati nella barra laterale.
 
 * Anteprima: consente di visualizzare in anteprima come si presenterà la comunicazione interattiva quando verrà pubblicata.

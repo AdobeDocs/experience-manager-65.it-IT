@@ -5,9 +5,9 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1154'
 ht-degree: 5%
 
 ---
@@ -49,7 +49,7 @@ Di seguito sono riportati i dettagli delle funzionalità disponibili tramite var
 
 | Funzione obsoleta | Descrizione | [!DNL Workfront] e [!DNL Assets Essentials] *Nessun connettore (OTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Richiede il connettore* | WORKFRONT e [!DNL Experience Manager as a Cloud Service] *Nessun connettore (OTB)* |
 |----|----|----|-----|-----|
-| Metodi di implementazione | Appropriato per cui [!DNL Assets] offerta. | Assets Essentials | Adobe Managed Services, On-Premise | Servizio cloud |
+| Metodi di implementazione | Appropriato per cui [!DNL Assets] offerta. | Assets Essentials | Adobe Managed Services, on-premise | Servizio cloud |
 | **Generale** |
 | Invia file digitali da [!DNL Workfront] a [!DNL Assets] | È possibile caricare in AEM Assets l’ultima versione di un documento WF collegata come nuova versione del documento. | ✓ | ✓ | ✓ |
 | Collegare manualmente le cartelle AEM agli oggetti Workfront | Le cartelle AEM esistenti possono essere collegate come una cartella Workfront e le relative risorse secondarie vengono collegate come nuovi documenti Workfront. | ✓ | ✓ | ✓ |
@@ -77,7 +77,7 @@ Di seguito sono riportati i dettagli delle funzionalità disponibili tramite var
 | Invio in tempo reale di metadati Workfront aggiornati all’AEM | Aggiorna automaticamente all’AEM i metadati Workfront mappati senza eseguire il repushing di una risorsa o di una nuova versione di una risorsa. | ✓ | No | ✓ |
 | Mappare i metadati di Workfront alle cartelle di AEM Assets | Sincronizza i metadati del progetto Workfront con le cartelle AEM collegate. | No | ✓ | ✓ |
 | Aggiornamenti dei metadati AEM con nuove versioni | È possibile effettuare una configurazione in AEM per determinare se anche una risorsa con nuove versioni in Workfront deve essere sottoposta a push a seguito di eventuali modifiche apportate ai relativi metadati. | No | ✓ | No |
-| Aggiornamento automatico dei metadati AEM in caso di modifiche al Forms personalizzato in Workfront | AEM consente di iscriversi agli aggiornamenti ai moduli dei documenti in Workfront. Di conseguenza, qualsiasi aggiornamento dei metadati del modulo personalizzato del documento Workfront modifica i valori dei campi di metadati AEM mappati. | No | ✓ | No |
+| Aggiornamento automatico dei metadati AEM in caso di modifiche al Forms personalizzato in Workfront | AEM consente di abbonarsi agli aggiornamenti ai moduli dei documenti in Workfront. Di conseguenza, qualsiasi aggiornamento dei metadati del modulo personalizzato del documento Workfront modifica i valori dei campi di metadati AEM mappati. | No | ✓ | No |
 | **Flussi di lavoro (pronti all’uso)** |
 | Creare una nuova versione di bozza su risorse collegate | Quando si collega una risorsa in Workfront, è possibile generare automaticamente una bozza. | No | Personalizzati | No |
 | Imposta stato su oggetti Workfront | Impostare gli stati degli oggetti di Workfront in base a condizioni configurabili tramite flussi di lavoro AEM | No | ✓ | Prossimo |

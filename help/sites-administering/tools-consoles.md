@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 33%
+source-wordcount: '604'
+ht-degree: 34%
 
 ---
 
@@ -47,7 +47,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITE</td>
+   <td>CRXDE LITI</td>
   </tr>
   <tr>
    <td> </td>
@@ -394,7 +394,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Dashboard</td>
-   <td>Consente di creare dashboard di reporting, che offrono un modo personalizzabile di definire pagine che visualizzano dati consolidati.</td>
+   <td>Consente di creare dashboard di reporting, che offrono un modo personalizzabile di definire le pagine che visualizzano i dati consolidati.</td>
   </tr>
   <tr>
    <td>Documentazione personalizzata</td>

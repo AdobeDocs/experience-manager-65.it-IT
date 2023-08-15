@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 45%
+source-wordcount: '1557'
+ht-degree: 44%
 
 ---
 
@@ -69,13 +69,13 @@ Prima di fornire una panoramica delle specifiche, ecco una piccola raccolta di s
 
 Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseguire ricerche:
 
-1. Apri **Sites** console (utilizzando il **Sites** opzione in [Navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation)) - viene attivato (a discesa) quando selezioni il collegamento Adobe Experience Manager (in alto a sinistra).
+1. Apri **Sites** console (utilizzando il **Sites** opzione in [Navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation)) - viene attivato (a discesa) quando si seleziona il collegamento Adobe Experience Manager (in alto a sinistra).
 
 1. Spostati verso il basso all’interno della struttura toccando/facendo clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla vista che stai utilizzando, [A schede, Elenco o Colonna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Per spostarti in alto nella struttura, usa le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), che permettono di tornare alla posizione selezionata:
+1. Per spostarsi verso l’alto nella struttura, utilizza [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), che consente di tornare alla posizione selezionata:
 
    ![qgtap-01](assets/qgtap-01.png)
 

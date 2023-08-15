@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4871'
-ht-degree: 50%
+source-wordcount: '4864'
+ht-degree: 49%
 
 ---
 
@@ -334,7 +334,7 @@ Durante la creazione o la modifica di un modello è possibile definire vari aspe
 
   Per ulteriori informazioni, consulta la [documentazione sul sistema di stili](/help/sites-authoring/style-system.md).
 
-Il selettore **Modalità** nella barra degli strumenti consente di selezionare e modificare l’aspetto appropriato del modello:
+Il **Modalità** nella barra degli strumenti consente di selezionare e modificare l’aspetto appropriato del modello:
 
 * [Struttura](#editingatemplatestructure)
 * [Contenuto iniziale](#editingatemplateinitialcontent)
@@ -342,7 +342,7 @@ Il selettore **Modalità** nella barra degli strumenti consente di selezionare e
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
-L’opzione **Criterio pagina** nel menu **Informazioni pagina** consente invece di [selezionare i criteri di pagina richiesti](#editingatemplatepagepolicies):
+Mentre il **Criterio pagina** opzione sul **Informazioni pagina** menu consente di: [seleziona i criteri di pagina richiesti](#editingatemplatepagepolicies):
 
 ![screen_shot_2018-03-23at120604](assets/screen_shot_2018-03-23at120604.png)
 
@@ -356,7 +356,7 @@ In modalità **Struttura** si definiscono i componenti e i contenuti per il mode
 
 * I componenti definiti nella struttura del modello non possono essere spostati in una pagina risultante né eliminati dalle pagine risultanti.
 * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema paragrafo al modello.
-* I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il [contenuto iniziale](#editingatemplateinitialcontent).
+* I componenti possono essere sbloccati e bloccati di nuovo per consentirti di definire [contenuto iniziale](#editingatemplateinitialcontent).
 
 * Vengono definiti i criteri di design per i componenti e la pagina.
 
@@ -395,7 +395,7 @@ In entrata **Struttura** modalità dell’editor modelli:
 
 * **Azioni dei componenti**
 
-  Esegui azioni sui componenti una volta aggiunti al modello. Ogni singola istanza dispone di una barra degli strumenti che ti consente di accedere alle azioni disponibili; la barra degli strumenti dipende dal tipo di componente.
+  Esegui azioni sui componenti una volta aggiunti al modello. Ogni singola istanza dispone di una barra degli strumenti che consente di accedere alle azioni disponibili; la barra degli strumenti dipende dal tipo di componente.
 
   ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
 
@@ -417,7 +417,7 @@ In entrata **Struttura** modalità dell’editor modelli:
 
   I criteri di contenuto (o progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minima/massima. Sono applicabili al modello (e alle pagine create con il modello).
 
-  Crea un criterio per i contenuti o selezionane uno esistente per un componente. In questo modo è possibile definire i dettagli del progetto.
+  Crea un criterio per i contenuti o selezionane uno esistente per un componente. Questo consente di definire i dettagli della progettazione.
 
   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -479,7 +479,7 @@ In entrata **Struttura** modalità dell’editor modelli:
 
   *Funzioni*
 
-  Il **Funzioni** consente di abilitare o disabilitare funzioni aggiuntive del componente.
+  Il **Funzioni** Questa scheda ti consente di abilitare o disabilitare funzioni aggiuntive del componente.
 
   Ad esempio, per un componente immagine puoi definire le proporzioni di ritaglio, gli orientamenti consentiti per le immagini e se sono consentiti caricamenti.
 

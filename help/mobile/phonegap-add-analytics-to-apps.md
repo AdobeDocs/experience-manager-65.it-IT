@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Dopo aver eseguito questi passaggi, l’app sarà abilitata per segnalare tutte 
 
 Sono disponibili diverse API di tracciamento fornite in [API del plug-in PhoneGap di AMS.](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/phonegap/phonegap-methods.md)
 
-Questi consentono di tenere traccia degli stati e delle azioni, ad esempio a quali pagine gli utenti accedono nell’app, e a quali controlli vengono maggiormente utilizzati. Il modo più semplice per dotare l’app di tracciamento è utilizzare le API di Analytics fornite dal plug-in AMS.
+Questi consentono di tenere traccia degli stati e delle azioni, ad esempio delle pagine a cui gli utenti accedono nell’app, i controlli più utilizzati. Il modo più semplice per dotare l’app di tracciamento è utilizzare le API di Analytics fornite dal plug-in AMS.
 
 * ADB.trackState()
 * ADB.trackAction()

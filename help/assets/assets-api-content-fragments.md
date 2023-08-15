@@ -1,13 +1,13 @@
 ---
-title: Supporto dei frammenti di contenuto di Adobe Experience Manager nell’API HTTP delle risorse
+title: Supporto dei frammenti di contenuto di Adobe Experience Manager nell’API Assets HTTP
 description: Scopri il supporto per i frammenti di contenuto nell’API Assets HTTP di, un’importante componente della funzione di distribuzione headless dell’AEM.
 feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 48131c5accfe73b83197bd581ed5a22bc4890a56
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1956'
 ht-degree: 24%
 
 ---
@@ -33,7 +33,7 @@ Scopri il supporto per i frammenti di contenuto nell’API Assets HTTP di, un’
 >
 >L’implementazione corrente dell’API Assets HTTP si basa sulla [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) stile architettonico.
 
-Il [API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager di accedere ai contenuti (memorizzati nell’AEM) direttamente tramite l’API HTTP, mediante operazioni CRUD (Create, Read, Update, Delete, Create).
+Il [API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager di accedere ai contenuti (memorizzati nell’AEM) direttamente tramite l’API HTTP, mediante operazioni CRUD (Create, Read, Update, Delete).
 
 L’API consente di utilizzare Adobe Experience Manager come CMS (Content Management System) headless fornendo Content Services a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON.
 
@@ -239,7 +239,7 @@ Attualmente i modelli che definiscono la struttura di un frammento di contenuto 
 
 Per creare un nuovo frammento di contenuto, è necessario fornire il percorso (archivio interno) del modello.
 
-#### Contenuto associato  {#associated-content}
+#### Contenuto associato {#associated-content}
 
 Il contenuto associato non è attualmente esposto.
 

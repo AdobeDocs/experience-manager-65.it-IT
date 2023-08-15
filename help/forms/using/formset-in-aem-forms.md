@@ -11,9 +11,9 @@ discoiquuid: 80e3eec4-95e0-4731-a0e5-a617e9bcb069
 docset: aem65
 feature: Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2813'
 ht-degree: 0%
 
 ---
@@ -363,7 +363,7 @@ I seguenti modelli di dati non sono completamente supportati nel set di moduli:
    <td><strong>Esempio</strong></td>
   </tr>
   <tr>
-   <td>Mancata corrispondenza tra dimensioni di input e pattern</td>
+   <td>Mancata corrispondenza tra dimensione di input e dimensione del pattern</td>
    <td><p>Se pattern= num{z,zzz}</p> <p>E input=</p> <p>12,345 o</p> <p>1,23</p> </td>
   </tr>
   <tr>
@@ -376,7 +376,7 @@ I seguenti modelli di dati non sono completamente supportati nel set di moduli:
   </tr>
   <tr>
    <td>Pattern per stenografia </td>
-   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{}, oppure</p> <p>num.currency{}</p> </td>
+   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{}, o</p> <p>num.currency{}</p> </td>
   </tr>
  </tbody>
 </table>

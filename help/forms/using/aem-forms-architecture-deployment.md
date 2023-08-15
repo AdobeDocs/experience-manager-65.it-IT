@@ -11,9 +11,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2479'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ L’architettura di AEM Forms include i seguenti componenti:
    * **Rendering e invio modulo front-end**: interfaccia utente finale per gli utenti finali di AEM Forms (ad esempio, i cittadini che accedono a un sito web governativo). In questo modo è possibile visualizzare la copia trasformata di un modulo (in un browser Web) e le funzionalità di invio.
    * **API REST**: JSP e servlet esportano un sottoinsieme di servizi Forms per l’utilizzo remoto da parte di client basati su HTTP, come l’SDK mobile di Forms.
 
-**AEM Forms su OSGi:** Un ambiente AEM Forms su OSGi è il pacchetto standard AEM Author o AEM Publish con AEM Forms distribuito su di esso. Puoi eseguire AEM Forms su OSGi in un [ambiente server singolo, farm e configurazioni cluster](/help/sites-deploying/recommended-deploys.md). La configurazione del cluster è disponibile solo per le istanze di AEM Author.
+**AEM Forms su OSGi:** Un ambiente AEM Forms su OSGi è il pacchetto standard Autore AEM o Pubblicazione AEM con AEM Forms distribuito su di esso. Puoi eseguire AEM Forms su OSGi in un [ambiente server singolo, farm e configurazioni cluster](/help/sites-deploying/recommended-deploys.md). La configurazione del cluster è disponibile solo per le istanze di creazione AEM.
 
 **AEM Forms su JEE:** AEM Forms su JEE è un server AEM Forms in esecuzione sullo stack JEE. Dispone di AEM Author con pacchetti di componenti aggiuntivi AEM Forms e funzionalità AEM Forms JEE aggiuntive co-implementate in un singolo stack JEE in esecuzione su un server applicazioni. Puoi eseguire AEM Forms su JEE in configurazioni a server singolo e cluster. AEM Forms su JEE è necessario solo per eseguire la sicurezza dei documenti, la gestione dei processi e per i clienti di LiveCycle che eseguono l’aggiornamento ad AEM Forms. Di seguito sono riportati alcuni scenari aggiuntivi per utilizzare AEM Forms su JEE:
 
@@ -100,7 +100,7 @@ Le topologie AEM Forms su JEE consigliate di seguito sono principalmente per i c
 
 I clienti AEM Forms che intendono utilizzare solo servizi documentali o funzionalità di sicurezza dei documenti possono avere una topologia simile a quella visualizzata di seguito. Questa topologia consiglia di utilizzare una singola istanza di AEM Forms. Se necessario, puoi anche creare un cluster o una farm di server AEM Forms. Questa topologia è consigliata quando la maggior parte degli utenti accede alle funzionalità del server AEM Forms a livello di programmazione e l’intervento tramite l’interfaccia utente è minimo. La topologia è utile nelle operazioni di elaborazione in batch dei servizi documentali. Ad esempio, utilizzando il servizio di output per creare centinaia di documenti PDF non modificabili su base giornaliera.
 
-Sebbene AEM Forms consenta di impostare ed eseguire tutte le funzionalità da un singolo server, è necessario eseguire la pianificazione della capacità, il bilanciamento del carico e la configurazione di server dedicati per funzionalità specifiche in un ambiente di produzione. Ad esempio, per un ambiente che utilizza il servizio PDF Generator per convertire migliaia di pagine al giorno e aggiungere firme digitali per limitare l’accesso ai documenti, configura server AEM Forms separati per il servizio PDF Generator e le funzionalità di firma digitale. Consente di fornire prestazioni ottimali e scalare i server in modo indipendente l&#39;uno dall&#39;altro.
+AEM Forms consente di configurare ed eseguire tutte le funzionalità da un singolo server, ma è necessario eseguire la pianificazione della capacità, il bilanciamento del carico e la configurazione di server dedicati per funzionalità specifiche in un ambiente di produzione. Ad esempio, per un ambiente che utilizza il servizio PDF Generator per convertire migliaia di pagine al giorno e aggiungere firme digitali per limitare l’accesso ai documenti, configura server AEM Forms separati per il servizio PDF Generator e le funzionalità di firma digitale. Consente di fornire prestazioni ottimali e scalare i server in modo indipendente l&#39;uno dall&#39;altro.
 
 ![funzionalità di base](assets/basic-features.png)
 
@@ -108,7 +108,7 @@ Sebbene AEM Forms consenta di impostare ed eseguire tutte le funzionalità da un
 
 I clienti di AEM Forms che intendono utilizzare le funzioni di gestione dei processi di AEM Forms, ad esempio HTML Workspace, possono avere una topologia simile a quella visualizzata di seguito. Il server AEM Forms su JEE può trovarsi in una configurazione con un singolo server o cluster.
 
-Se si esegue l’aggiornamento dal LiveCycle ES4, questa topologia rispecchia fedelmente quella già esistente nel LiveCycle, ad eccezione dell’aggiunta di AEM Author integrato ad AEM Forms su JEE. Inoltre, non vi è alcuna modifica dei requisiti di clustering per i clienti che eseguono un aggiornamento. Se utilizzavi AEM Forms in un ambiente cluster, puoi continuare con lo stesso in AEM 6.5 Forms. Per una nuova installazione di AEM Forms of JEE per l’utilizzo di HTML Workspace, è necessario eseguire l’istanza di authoring AEM integrata nell’ambiente JEE.
+Se si esegue l’aggiornamento dal LiveCycle ES4, questa topologia rispecchia fedelmente quella già esistente nel LiveCycle, ad eccezione dell’aggiunta dell’istanza di creazione AEM integrata in AEM Forms su JEE. Inoltre, non vi è alcuna modifica dei requisiti di clustering per i clienti che eseguono un aggiornamento. Se utilizzavi AEM Forms in un ambiente cluster, puoi continuare con lo stesso in AEM 6.5 Forms. Per una nuova installazione di AEM Forms of JEE per l’utilizzo di HTML Workspace, è necessario eseguire l’istanza di authoring AEM integrata nell’ambiente JEE.
 
 L’archivio dati modulo è un archivio dati di terze parti utilizzato per memorizzare i dati elaborati finali dei moduli e delle comunicazioni interattive. Questo è un elemento facoltativo nella topologia. Se necessario, puoi anche scegliere di impostare un’istanza di elaborazione e utilizzare il relativo archivio come sistema di registrazione finale.
 
@@ -125,7 +125,7 @@ I clienti di AEM Forms che intendono utilizzare le funzionalità di acquisizione
 Puoi apportare le seguenti modifiche/personalizzazioni alla topologia suggerita:
 
 * L’utilizzo di HTML Workspace e dell’app AEM Forms richiede un’istanza di authoring o elaborazione AEM. È possibile utilizzare l’istanza di authoring dell’AEM integrata in AEM Forms sul server JEE invece di configurare un altro server di authoring dell’AEM esterno.
-* Un’istanza Autore AEM o Elaborazione è necessaria solo per i flussi di lavoro incentrati su Forms su OSGi, moduli adattivi, portale Forms e comunicazione interattiva.
+* Un’istanza di elaborazione o authoring AEM è necessaria solo per i flussi di lavoro incentrati su Forms su OSGi, moduli adattivi, portale dei moduli e comunicazione interattiva.
 * l’interfaccia utente interattiva dell’agente di comunicazione viene generalmente eseguita all’interno dell’organizzazione. Pertanto, puoi mantenere un server di pubblicazione per l’interfaccia utente dell’agente all’interno della rete privata.
 * I moduli AEM sull’istanza OSGi integrata nel server AEM Forms su JEE possono anche eseguire flussi di lavoro incentrati su Forms su OSGi e cartelle controllate.
 

@@ -1,6 +1,6 @@
 ---
-title: Aggiornamento ad Adobe Experience Manager 6.5
-description: Scopri le nozioni di base sull’aggiornamento di un’installazione Adobe Experience Manager (AEM) precedente a AEM 6.5.
+title: Aggiornamento a Adobe Experience Manager 6.5
+description: Scopri le nozioni di base sull’aggiornamento di un’installazione precedente di Adobe Experience Manager (AEM) a AEM 6.5.
 contentOwner: sarchiz
 topic-tags: upgrading
 content-type: reference
@@ -8,14 +8,14 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
 
-# Aggiornamento ad Adobe Experience Manager (AEM) 6.5 {#upgrading-to-aem}
+# Aggiornamento a Adobe Experience Manager (AEM) 6.5 {#upgrading-to-aem}
 
 Questa sezione riguarda l’aggiornamento di un impianto AEM a AEM 6.5:
 

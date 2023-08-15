@@ -1,8 +1,8 @@
 ---
 title: Gestione delle applicazioni e delle attività di Forms nella casella in entrata AEM
 seo-title: Manage Forms applications and tasks in AEM Inbox
-description: Casella in entrata AEM consente di avviare flussi di lavoro incentrati su Forms tramite l'invio di applicazioni e la gestione di attività.
-seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
+description: Casella in entrata AEM consente di avviare flussi di lavoro incentrati su Forms tramite l’invio di applicazioni e la gestione di attività.
+seo-description: AEM Inbox lets you launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1096'
 ht-degree: 3%
 
 ---
@@ -132,13 +132,13 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
 
    * Crea i seguenti nodi in CRX DE in `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` con le rispettive proprietà specificate nella tabella seguente:
 
-      | Nodo | Proprietà | Tipo |
-      |---|---|---|
-      | sharedWith | sharedWith | STRINGA |
-      | protetto | protetto | BOOLEANO |
-      | ha restituito | ha restituito | BOOLEANO |
-      | allowInboxSharing | allowInboxSharing | BOOLEANO |
-      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
+     | Nodo | Proprietà | Tipo |
+     |---|---|---|
+     | sharedWith | sharedWith | STRINGA |
+     | protetto | protetto | BOOLEANO |
+     | ha restituito | ha restituito | BOOLEANO |
+     | allowInboxSharing | allowInboxSharing | BOOLEANO |
+     | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
    * Implementare gli indici tramite un pacchetto AEM. È possibile utilizzare un’ [Archetipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto dell’archetipo AEM:

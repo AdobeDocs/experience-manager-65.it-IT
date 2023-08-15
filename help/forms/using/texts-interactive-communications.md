@@ -10,7 +10,7 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 0%
@@ -58,6 +58,7 @@ Il frammento di documento di testo nella comunicazione interattiva supporta il s
       * [Copia e incolla testo formattato da altre applicazioni](#paste)
 
       * [Evidenzia parti di testo](#highlight)
+
    * [Ripeti](/help/forms/using/cm-inline-condition.md)
    * [Caratteri speciali](#special)
    * [Ricerca e sostituzione di testo](#searching)
@@ -194,7 +195,7 @@ Utilizzando l’editor di regole in un testo, puoi creare regole per visualizzar
 
    ![appliedruletext](assets/appliedruletext.png)
 
-   Facendo clic sulla maniglia sinistra della regola applicata, si ottengono le opzioni per modificare o rimuovere la regola.
+   Facendo clic sul quadratino di ridimensionamento sinistro della regola applicata, si ottengono le opzioni per modificare o rimuovere la regola.
 
 ## Formattazione del testo {#formatting}
 

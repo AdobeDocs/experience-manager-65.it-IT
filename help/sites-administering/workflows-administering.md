@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 84%
+source-wordcount: '993'
+ht-degree: 83%
 
 ---
 
@@ -88,18 +88,16 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
    >* utilizzo dell’azione **Termina**
    >* quando una pagina, soggetta a un flusso di lavoro, viene eliminata (forzatamente), il flusso di lavoro viene terminato
 
-
 1. Seleziona un elemento specifico, quindi **Cronologia elementi aperti** per ulteriori dettagli:
 
    ![wf-99](assets/wf-99.png)
 
 ## Correzione degli errori di un&#39;istanza del flusso di lavoro {#fixing-workflow-instance-failures}
 
-Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
+Quando un flusso di lavoro non riesce, AEM fornisce **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
-Apre una finestra per visualizzare 
-**Messaggio di errore**, **Passaggio**, e **Stack errori**.
+Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio**, e **Stack errori**.
 
 * **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.
@@ -120,7 +118,7 @@ Per approfondire gli errori, quindi riprendere o terminare il flusso di lavoro i
 
 Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione.
 
-Configura **Adobe configurazione eliminazione flusso di lavoro Granite** per eliminare le istanze del flusso di lavoro in base alla loro età e al loro stato. È inoltre possibile eliminare le istanze del flusso di lavoro di tutti i modelli o di un modello specifico.
+Configura **Configurazione di eliminazione del flusso di lavoro di Adobe Granite** per eliminare le istanze del flusso di lavoro in base all’età e allo stato. È inoltre possibile eliminare le istanze del flusso di lavoro di tutti i modelli o di un modello specifico.
 
 Puoi anche creare più configurazioni del servizio per eliminare le istanze del flusso di lavoro che soddisfano criteri diversi. Ad esempio, crea una configurazione che elimina le istanze di un particolare modello di flusso di lavoro quando restano in esecuzione per molto più tempo del tempo previsto. Crea un’altra configurazione che elimina tutti i flussi di lavoro completati dopo un certo numero di giorni per ridurre al minimo le dimensioni dell’archivio.
 
@@ -186,7 +184,7 @@ Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying
 
 ## Utilizzo delle variabili del flusso di lavoro per i datastore di proprietà del cliente {#using-workflow-variables-customer-datastore}
 
-I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione fornita da Adobe (JCR). Per loro natura tali dati possono essere sensibili. È possibile salvare tutti i metadati/dati definiti dall’utente nel tuo spazio di archiviazione personale anziché nell’archiviazione fornita da Adobe. Queste sezioni descrivono come impostare queste variabili per l’archiviazione esterna.
+I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione fornita da Adobe (JCR). Per loro natura tali dati possono essere sensibili. È possibile salvare tutti i metadati/dati definiti dall’utente nel tuo spazio di archiviazione personale anziché nell’archiviazione fornita da Adobe. Le presenti sezioni descrivono come configurare queste variabili per l’archiviazione esterna.
 
 ### Impostare il modello per l’utilizzo dell’archiviazione esterna dei metadati {#set-model-for-external-storage}
 

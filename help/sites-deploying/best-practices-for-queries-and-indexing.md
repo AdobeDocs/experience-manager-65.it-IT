@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4614'
+source-wordcount: '4613'
 ht-degree: 7%
 
 ---
@@ -469,7 +469,7 @@ L’intero archivio nodi viene attraversato ogni volta (come specificato dai per
 
 2 quater. Il testo estratto viene memorizzato nel file system in un formato che può essere acquisito dal processo di reindicizzazione Oak (3a)
 
-Il testo pre-estratto viene identificato nel file CSV dall’impronta digitale binaria. Se il file binario è lo stesso, è possibile utilizzare lo stesso testo pre-estratto in tutte le istanze AEM. Poiché AEM Publish è solitamente un sottoinsieme di AEM Author, il testo pre-estratto da AEM Author può spesso essere utilizzato anche per reindicizzare AEM Publish (supponendo che AEM Publish abbia accesso al file system dei file di testo estratti).
+Il testo pre-estratto viene identificato nel file CSV dall’impronta digitale binaria. Se il file binario è lo stesso, è possibile utilizzare lo stesso testo pre-estratto in tutte le istanze AEM. Poiché la pubblicazione AEM è in genere un sottoinsieme di creazione AEM, il testo pre-estratto dall’autore AEM può spesso essere utilizzato anche per reindicizzare la pubblicazione AEM (supponendo che la pubblicazione AEM abbia accesso al file di testo estratto dal file system).
 
 Il testo pre-estratto può essere aggiunto in modo incrementale a nel tempo. La pre-estrazione del testo salta l’estrazione per i file binari estratti in precedenza, pertanto è consigliabile mantenere il testo pre-estratto nel caso in cui la reindicizzazione debba verificarsi nuovamente in futuro (supponendo che il contenuto estratto non sia eccessivamente grande. In caso affermativo, valutare la compressione del contenuto nel frattempo, poiché il testo viene compresso correttamente.
 

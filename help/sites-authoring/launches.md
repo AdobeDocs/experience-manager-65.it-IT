@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 35%
+source-wordcount: '843'
+ht-degree: 33%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 35%
 
 I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro.
 
-Il lancio creato consente di preparare modifiche pronte alla pubblicazione futura (mantenendo le tue pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, le promuovi di nuovo all’origine, quindi attiva le pagine sorgente (livello superiore). La promozione duplica il contenuto del lancio nelle pagine di origine e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
+Viene creato un lancio per consentire di apportare modifiche pronte per la pubblicazione futura (mantenendo le pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, le promuovi di nuovo all’origine, quindi attiva le pagine sorgente (livello superiore). La promozione duplica il contenuto del lancio nelle pagine di origine e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
 
 Ad esempio, le pagine di prodotti stagionali del tuo negozio online vengono aggiornate trimestralmente in modo che i prodotti in questione siano in linea con la stagione corrente. Per prepararti al prossimo aggiornamento trimestrale, puoi creare un lancio delle pagine web appropriate. Nel corso del trimestre, le seguenti modifiche vengono accumulate nella copia di lancio:
 

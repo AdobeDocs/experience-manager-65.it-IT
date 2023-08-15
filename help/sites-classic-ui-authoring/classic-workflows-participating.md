@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '542'
 ht-degree: 9%
 
 ---
@@ -25,13 +25,13 @@ Per elaborare un elemento di lavoro è possibile eseguire le azioni seguenti:
 
 * **Completa**
 
-   Puoi completare un elemento per consentire al flusso di lavoro di avanzare al passaggio successivo.
+  Puoi completare un elemento per consentire al flusso di lavoro di avanzare al passaggio successivo.
 
 * **Delega**
 
-   Se all&#39;utente è stato assegnato un passaggio, ma per qualsiasi motivo non è possibile eseguire un&#39;azione, è possibile delegare il passaggio a un altro utente o gruppo.
+  Se all&#39;utente è stato assegnato un passaggio, ma per qualsiasi motivo non è possibile eseguire un&#39;azione, è possibile delegare il passaggio a un altro utente o gruppo.
 
-   Gli utenti disponibili per la delega dipendono da chi è stato assegnato l’elemento di lavoro:
+  Gli utenti disponibili per la delega dipendono da chi è stato assegnato l’elemento di lavoro:
 
    * Se l&#39;elemento di lavoro è stato assegnato a un gruppo, i membri del gruppo sono disponibili.
    * Se l’elemento di lavoro è stato assegnato a un gruppo e poi è stato delegato a un utente, sono disponibili i membri del gruppo e il gruppo.
@@ -39,7 +39,7 @@ Per elaborare un elemento di lavoro è possibile eseguire le azioni seguenti:
 
 * **Indietro**
 
-   Se scopri che un passaggio, o una serie di passaggi, deve essere ripetuto, puoi fare un passo indietro. Questo consente di selezionare un passaggio, precedente nel flusso di lavoro, per la rielaborazione. Il flusso di lavoro ritorna al passaggio specificato, quindi procede da lì.
+  Se scopri che un passaggio, o una serie di passaggi, deve essere ripetuto, puoi fare un passo indietro. Questo consente di selezionare un passaggio, precedente nel flusso di lavoro, per la rielaborazione. Il flusso di lavoro ritorna al passaggio specificato, quindi procede da lì.
 
 ## Partecipazione a un flusso di lavoro {#participating-in-a-workflow}
 
@@ -49,11 +49,11 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
 
 * Il **Stato** della console Siti Web indica quando una pagina si trova in un flusso di lavoro:
 
-   ![workflowstatus-1](assets/workflowstatus-1.png)
+  ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Quando a te o a un gruppo a cui appartieni viene assegnato un elemento di lavoro come parte di un flusso di lavoro, l’elemento di lavoro viene visualizzato nella casella in entrata del flusso di lavoro AEM.
 
-   ![workflowinbox](assets/workflowinbox.png)
+  ![workflowinbox](assets/workflowinbox.png)
 
 ### Completamento di un passaggio partecipante {#completing-a-participant-step}
 

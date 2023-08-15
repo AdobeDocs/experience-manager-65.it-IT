@@ -10,10 +10,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 38%
+source-wordcount: '523'
+ht-degree: 42%
 
 ---
 
@@ -31,7 +31,6 @@ Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modifi
 >Non puoi spostare una pagina all’interno di un lancio. Il tentativo di eseguire questa azione attiva un messaggio di avviso:
 >
 >* Attenzione: questa pagina è l’origine di un lancio. Lo spostamento della pagina non è consentito.
-
 
 ### Modifica delle pagine di lanci soggette a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -59,9 +58,9 @@ Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **R
 
    ![schermata_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
 
-1. Le due pagine (lancio e sorgente) verranno aperte una accanto all’altra.
+1. Le due pagine (lancio e origine) verranno aperte una accanto all’altra.
 
-   Per informazioni complete sull’utilizzo di questa funzione, consulta [Differenza di pagina](/help/sites-authoring/page-diff.md).
+   Per informazioni complete sull’utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-authoring/page-diff.md).
 
 ## Modifica delle pagine sorgente utilizzate {#changing-the-source-pages-used}
 
@@ -72,6 +71,7 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
    * il [Console Launches](/help/sites-authoring/launches.md#the-launches-console):
 
       * Seleziona **Modifica**.
+
    * [Riferimenti (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) per visualizzare le azioni disponibili:
 
       * Seleziona **Modifica lancio**.
@@ -93,6 +93,7 @@ In qualsiasi momento è possibile modificare le proprietà per un lancio:
    * il [Console Launches](/help/sites-authoring/launches.md#the-launches-console):
 
       * Seleziona **Proprietà**.
+
    * [Riferimenti (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) per visualizzare le azioni disponibili:
 
       * Seleziona **Modifica proprietà**.

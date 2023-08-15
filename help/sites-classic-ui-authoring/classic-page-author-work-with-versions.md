@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 16%
+source-wordcount: '1352'
+ht-degree: 17%
 
 ---
 
@@ -82,7 +82,7 @@ Questo metodo può essere utilizzato per ripristinare una versione della pagina.
 Per confrontare la versione corrente della pagina con una versione precedente:
 
 1. Nel browser, apri la pagina da confrontare con una versione precedente.
-1. Nella barra laterale, seleziona la **Controllo delle versioni** , quindi la scheda **Ripristina versione** n scheda secondaria.
+1. Nel Sidekick, seleziona **Controllo delle versioni** , quindi la scheda **Ripristina versione** n scheda secondaria.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -95,7 +95,7 @@ Per confrontare la versione corrente della pagina con una versione precedente:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Nella barra laterale, seleziona la **Ripristina versione** e fai clic sulla scheda secondaria **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> per visualizzare la versione corrente.**
+1. Nel Sidekick, seleziona **Ripristina versione** e fai clic sulla scheda secondaria **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> per visualizzare la versione corrente.**
 
 ## Timewarp   {#timewarp}
 
@@ -171,7 +171,7 @@ Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
-1. Clic:
+1. Fai clic su:
 
    1. **Vai** per visualizzare il contenuto della pagina pubblicata al momento selezionato.
    1. Quando si mostra quel contenuto, utilizza **Esci da Timewarp** per uscire e tornare alla pagina di authoring corrente.

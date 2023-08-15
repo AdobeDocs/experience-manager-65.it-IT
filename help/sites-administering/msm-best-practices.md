@@ -4,10 +4,10 @@ description: Trova le best practice compilate dai team tecnici e di consulenza A
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 43%
+source-wordcount: '1614'
+ht-degree: 42%
 
 ---
 
@@ -186,7 +186,7 @@ Pertanto, si consiglia di: *solo* utilizzare `onModify` si attiva se i vantaggi 
 
 Ricorda che:
 
-* Oltre a personalizzare le azioni di rollout, MSM ti consente anche di personalizzare le proprietà dei nodi in fase di rollout. Il [La configurazione OSGi di MSM consente di escludere i tipi di nodo](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) dall&#39;origine alla live copy.
+* Oltre a personalizzare le azioni di rollout, MSM ti consente anche di personalizzare le proprietà dei nodi in fase di rollout. Il [La configurazione MSM OSGi consente di escludere i tipi di nodo](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) dall&#39;origine alla live copy.
 
 ## Ulteriori informazioni {#further-information}
 

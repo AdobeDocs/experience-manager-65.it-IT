@@ -1,17 +1,13 @@
 ---
 title: Flusso di lavoro incentrato su Forms su OSGi - Riferimento passaggio
-seo-title: Forms-centric workflow on OSGi - Step Reference
 description: I flussi di lavoro basati su Forms e sui passaggi OSGi consentono di creare rapidamente flussi di lavoro basati su moduli adattivi.
-seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
-uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '7594'
+source-wordcount: '7589'
 ht-degree: 0%
 
 ---
@@ -45,7 +41,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 * **Descrizione:** Spiegazione delle operazioni eseguite nell&#39;operazione. Queste informazioni sono utili per altri sviluppatori di processi quando si lavora in un ambiente di sviluppo condiviso.
 
 * **Percorso miniatura:** Percorso della miniatura dell’attività. Se non viene specificato alcun percorso, viene visualizzata la miniatura predefinita di un modulo adattivo e per il documento di record viene visualizzata un’icona predefinita.
-* **Fase flusso di lavoro:** Un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello (barra laterale > Pagina > Proprietà pagina > Stadi).
+* **Fase flusso di lavoro:** Un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello (Sidekick > Pagina > Proprietà pagina > Stadi).
 * **Priorità:** La priorità selezionata viene visualizzata nella casella in entrata AEM. Le opzioni disponibili sono Alta, Media e Bassa. Il valore predefinito è Medio.
 * **Data di scadenza:** Specificare il numero di giorni o di ore dopo i quali l&#39;attività viene contrassegnata come scaduta. Se si seleziona **Disattivato**, quindi l’attività non viene mai contrassegnata come scaduta. È inoltre possibile specificare un gestore di timeout per eseguire attività specifiche dopo la scadenza dell&#39;attività.
 
@@ -90,7 +86,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
    * **Salva modello di layout utilizzando:** Salva il modello layout utilizzando un percorso relativo al payload o memorizzalo in una variabile di tipo dati Documento. Il [modello di layout](../../forms/using/layout-design-details.md) fa riferimento a un file XDP creato con Forms Designer. Questa opzione è disponibile solo se dall’elenco a discesa Tipo selezioni Interfaccia utente agente di comunicazione interattiva.
 
 * **Assegnatario > Assegna opzioni:** Specificare il metodo di assegnazione dell&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selettore partecipanti oppure assegnare l&#39;attività a un utente o a un gruppo AEM specifico.
-* **Selettore partecipanti:** L’opzione è disponibile quando **Dinamicamente per un utente o un gruppo** nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, consulta [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato di Adobe Experience Manager Dynamic Participant.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **Selettore partecipanti:** L’opzione è disponibile quando **Dinamicamente per un utente o un gruppo** nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, consulta [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio Partecipante dinamico Adobe Experience Manager personalizzato.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
 
 * **Partecipanti:** Il campo è disponibile quando **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata in **Selettore partecipanti** campo. Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 

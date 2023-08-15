@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ AEM Forms fornisce flussi di lavoro personalizzati per richiamare le seguenti AP
 
 Il **Richiama DDX** workflow richiama `Invoke` API del servizio Assembler, che consente di assemblare o disassemblare documenti, aggiungere filigrana a un PDF e così via.
 
-1. Trascina **[!UICONTROL Richiama DDX]** passaggio del flusso di lavoro sotto la scheda Forms Workflow nella barra laterale.
+1. Trascina **[!UICONTROL Richiama DDX]** passaggio del flusso di lavoro nella scheda Forms Workflow in Sidekick.
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
 1. Nella finestra di dialogo Modifica componente configura i documenti di input, le opzioni di ambiente e i documenti di output e fai clic su **[!UICONTROL OK]**.
 
@@ -69,7 +69,7 @@ A seconda del DDX di input, l’API di richiamo può produrre più documenti di 
 
 Il passaggio del flusso di lavoro Converti in PDF/A richiama `toPDFA` API del servizio Assembler. Viene utilizzato per convertire i documenti PDF in documenti conformi a PDF/A.
 
-1. Trascina **[!UICONTROL ConvertToPDFA]** passaggio del flusso di lavoro sotto la scheda Forms Workflow nella barra laterale.
+1. Trascina **[!UICONTROL ConvertToPDFA]** passaggio del flusso di lavoro nella scheda Forms Workflow in Sidekick.
 
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
 1. Nella finestra di dialogo Modifica componente configura i documenti di input, le opzioni di conversione e i documenti di output e fai clic su **[!UICONTROL OK]**.
@@ -108,7 +108,7 @@ Il flusso di lavoro Modulo di Rendering PDF è un wrapper `renderPDFForm` API di
 
 ### Flusso di lavoro di Rendering modulo PDF {#render-pdf-form-workflow}
 
-1. Trascina il passaggio del flusso di lavoro Modulo di Rendering PDF nella scheda Forms Workflow nella barra laterale.
+1. Trascina il passaggio del flusso di lavoro Modulo di Rendering PDF nella scheda Forms Workflow in Sidekick.
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
 1. Nella finestra di dialogo Modifica componente configura i documenti di input, i documenti di output e i parametri aggiuntivi, quindi fai clic su **[!UICONTROL OK]**.
 
@@ -137,7 +137,7 @@ Il flusso di lavoro Genera PDF non interattivo è un wrapper `generatePDFOutput`
 
 ### Genera flusso di lavoro di output PDF non interattivo   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
-1. Trascina il flusso di lavoro Genera output PDF non interattivo nella scheda Forms Workflow nella barra laterale.
+1. Trascina il flusso di lavoro Genera output PDF non interattivo nella scheda Forms Workflow in Sidekick.
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
 1. Nella finestra di dialogo Modifica componente configura i documenti di input, i documenti di output e i parametri aggiuntivi, quindi fai clic su **[!UICONTROL OK]**.
 

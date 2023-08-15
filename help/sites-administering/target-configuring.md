@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2199'
 ht-degree: 30%
 
 ---
@@ -27,7 +27,7 @@ Il [Procedura guidata Opt-in](/help/sites-administering/opt-in.md) che [integra 
 
 Puoi anche configurare Adobe Target per utilizzare Adobe Target come origine per la generazione di rapporti quando esegui il targeting del contenuto configurando la configurazione di A4T Analytics Cloud.
 
-Per individuare la configurazione cloud e il framework, vai a **Cloud Services** tramite **Strumenti** > **Distribuzione** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Sotto Adobe Target, tocca o fai clic su **Mostra configurazioni**.
+Per individuare la configurazione cloud e il framework, vai a **Cloud Service** tramite **Strumenti** > **Distribuzione** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Sotto Adobe Target, tocca o fai clic su **Mostra configurazioni**.
 
 ### Proprietà configurazione destinazione predisposta {#provisioned-target-configuration-properties}
 
@@ -76,7 +76,7 @@ Puoi configurare Adobe Target per l’utilizzo di Adobe Analytics come origine p
 
 A questo scopo, specifica la configurazione cloud A4T con cui collegare la configurazione cloud di Adobe Target:
 
-1. Accedi a **Cloud Services** tramite **Logo AEM** > **Strumenti** > **Distribuzione** > **Cloud Services**.
+1. Accedi a **Cloud Service** tramite **Logo AEM** > **Strumenti** > **Distribuzione** > **Cloud Service**.
 1. Nella sezione **Adobe Target**, fai clic su **Configura ora**.
 1. Riconnetti alla configurazione di Adobe Target.
 1. In **Configurazione di A4T Analytics Cloud** dal menu a discesa, seleziona il framework.
@@ -87,7 +87,7 @@ A questo scopo, specifica la configurazione cloud A4T con cui collegare la confi
    >
    >Durante la configurazione di A4T con AEM, è possibile che in un riferimento alla configurazione manchi una voce. Per selezionare il framework di analisi, effettua le seguenti operazioni:
    >
-   >1. Accedi a **Strumenti** > **Generale** > **CRXDE Lite**.
+   >1. Accedi a **Strumenti** > **Generale** > **CRXDE Liti**.
    1. Accedi a [Finestra di dialogo Configurazione di A4T Analytics](#a4t-analytics-config-dialog) (vedi sotto)
    1. Impostare la proprietà **disable** a **false**.
    1. Tocca o fai clic su **Salva tutto**.
@@ -131,9 +131,9 @@ Puoi impostare la configurazione cloud in modo da sincronizzare i segmenti da Ad
 
 Segui la procedura seguente per creare una configurazione cloud di Target in AEM:
 
-1. Accedi a **Cloud Services** tramite **Logo AEM** > **Strumenti** > **Cloud Services** > **Cloud Services legacy**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Accedi a **Cloud Service** tramite **Logo AEM** > **Strumenti** > **Cloud Service** > **Cloud Service legacy**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   Il **Cloud Services** viene visualizzata la pagina della panoramica.
+   Il **Cloud Service** viene visualizzata la pagina della panoramica.
 
 1. Nella sezione **Adobe Target**, fai clic su **Configura ora**.
 1. Nella finestra di dialogo **Crea configurazione**:
@@ -150,7 +150,7 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
    >
    Durante la configurazione di A4T con AEM, è possibile che in un riferimento alla configurazione manchi una voce. Per selezionare il framework di analisi, effettua le seguenti operazioni:
    >
-   1. Accedi a **Strumenti** > **Generale** > **CRXDE Lite**.
+   1. Accedi a **Strumenti** > **Generale** > **CRXDE Liti**.
    1. Accedi a **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    1. Impostare la proprietà **disable** a **false**.
    1. Tocca o fai clic su **Salva tutto**.

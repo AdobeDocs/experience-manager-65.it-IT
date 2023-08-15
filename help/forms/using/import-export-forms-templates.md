@@ -11,9 +11,9 @@ discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2511'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,9 @@ ht-degree: 0%
 >* In AEM 6.4 Forms, la struttura e i percorsi dell’archivio crx sono cambiati. Se importi risorse da una versione precedente a Forms AEM 6.4 e il modulo presenta alcune dipendenze dalla struttura precedente, devi esportare manualmente le dipendenze. Per informazioni dettagliate sulle modifiche apportate alla struttura e ai percorsi dell’archivio, consulta [Ristrutturazione dell’archivio dell’AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
-
 ## Scaricare o caricare risorse Forms &amp; Documents {#download-or-upload-forms-amp-documents-assets}
 
-L’interfaccia utente di AEM Forms consente di esportare risorse da un’istanza AEM scaricandole come file binari o in un pacchetto AEM CRX. Puoi quindi importare il pacchetto AEM CRX scaricato o il file binario in un’altra istanza AEM.
+L’interfaccia utente di AEM Forms consente di esportare le risorse da un’istanza AEM scaricandole come file binari o in un pacchetto AEM CRX. Puoi quindi importare il pacchetto AEM CRX scaricato o il file binario in un’altra istanza AEM.
 
 L’esportazione e l’importazione tramite l’interfaccia utente di AEM Forms sono supportate per tutte le risorse, ad eccezione dei modelli di moduli adattivi e dei criteri per il contenuto dei moduli adattivi. Pertanto, all’esportazione di un modulo adattivo dall’interfaccia utente di AEM Forms, il modello di modulo adattivo e i criteri del contenuto correlati non vengono esportati automaticamente come altre risorse correlate.
 
@@ -195,7 +194,7 @@ Puoi utilizzare Gestione pacchetti AEM per esportare le applicazioni del flusso 
 
 ## Cartelle e organizzazione delle risorse {#folders-and-organizing-assets}
 
-L’interfaccia utente di AEM Forms utilizza le cartelle per organizzare le risorse. Queste cartelle vengono utilizzate per disporre le risorse create all’interno dell’interfaccia utente di AEM Forms. È possibile rinominare, creare sottocartelle e archiviare risorse e documenti in queste cartelle. L’organizzazione di documenti e risorse in una cartella consente di raggruppare i file per facilitarne la gestione. Puoi selezionare una cartella e scegliere se scaricarla o eliminarla.
+L’interfaccia utente di AEM Forms utilizza le cartelle per organizzare le risorse. Queste cartelle vengono utilizzate per disporre le risorse create all’interno dell’interfaccia utente di AEM Forms. È possibile rinominare, creare sottocartelle e archiviare risorse e documenti in queste cartelle. L’organizzazione di documenti e risorse in una cartella consente di raggruppare i file per semplificarne la gestione. Puoi selezionare una cartella e scegliere se scaricarla o eliminarla.
 
 La procedura seguente illustra come creare una cartella:
 
@@ -238,7 +237,7 @@ Per creare copie di risorse e lettere, completa i passaggi seguenti:
 
 ## Ricerca {#search-forms}
 
-L’interfaccia utente di AEM Forms consente di effettuare ricerche nei contenuti. Utilizzando la barra superiore, puoi toccare Cerca **[A]** per cercare nel contenuto risorse quali risorse e documenti.
+L’interfaccia utente di AEM Forms consente di eseguire ricerche nei contenuti. Utilizzando la barra superiore, puoi toccare Cerca **[A]** per cercare nel contenuto risorse quali risorse e documenti.
 
 Quando cerchi le risorse, AEM Forms visualizza il pannello laterale. Puoi anche toccare ![assets-browser-content-only](assets/assets-browser-content-only.png) > Filtro **[B]** per richiamare il pannello laterale. Utilizzando i vari filtri nel pannello laterale, puoi restringere la ricerca. Il pannello laterale consente inoltre di salvare le ricerche.
 

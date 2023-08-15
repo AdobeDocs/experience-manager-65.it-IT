@@ -4,16 +4,16 @@ description: Scopri come le varianti possono rendere ancora più flessibili i co
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 96%
+source-wordcount: '2422'
+ht-degree: 93%
 
 ---
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
-[Varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una funzione importante dei frammenti di contenuto dell’AEM, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici, rendendo ancora più flessibile la distribuzione di contenuti headless.
+[Varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica importante dei frammenti di contenuto dell’AEM, in quanto ti consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici, rendendo ancora più flessibile la distribuzione di contenuti headless.
 
 Dalla scheda **Varianti** è possibile:
 
@@ -114,7 +114,7 @@ Il formato può essere selezionato quando si utilizza l’editor a schermo inter
 
 ### Testo formattato {#rich-text}
 
-La modifica come testo formattato consente di applicare la seguente formattazione:
+La modifica in formato RTF consente di formattare:
 
 * Grassetto
 * Corsivo
@@ -151,7 +151,7 @@ Testo normale consente di inserire rapidamente contenuti senza formattazione o i
 >
 >Per informazioni complete vedi la documentazione relativa a [Markdown](/help/assets/content-fragments/content-fragments-markdown.md).
 
-Questo consente di formattare il testo utilizzando il linguaggio markdown. Puoi definire:
+Questo consente di formattare il testo utilizzando il markdown. Puoi definire:
 
 * Titoli
 * Paragrafi e interruzioni di riga
@@ -192,7 +192,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 #### Nuovo frammento di contenuto {#fragment-references-new-content-fragment}
 
-L’opzione **Nuovo frammento di contenuto** consente di creare un frammento completamente nuovo. A questo scopo, nell’editor viene aperta una variante della procedura guidata per creare un frammento di contenuto.
+Opzione **Nuovo frammento di contenuto** consente di creare un frammento completamente nuovo. A questo scopo, nell’editor viene aperta una variante della procedura guidata per creare un frammento di contenuto.
 
 Per creare un nuovo frammento, segui questi passaggi:
 
@@ -400,7 +400,7 @@ Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments
 
 ### Creazione di una variante {#creating-a-variation}
 
-Le varianti consentono di utilizzare il contenuto **principale** e modificarlo in base allo scopo (se necessario).
+Le varianti consentono di utilizzare **Principale** e modificarlo in base allo scopo (se necessario).
 
 Per creare una nuova variante:
 
@@ -461,7 +461,7 @@ Non è possibile eliminare l’elemento **Principale**.
 
 L’elemento **Principale** è parte integrante di un frammento di contenuto e, per definizione, contiene la copia principale del contenuto; le varianti ne contengono le singole versioni aggiornate e personalizzate. Quando viene aggiornato l’elemento Principale, è possibile che le modifiche apportate siano pertinenti anche per le varianti e, pertanto, devono essere propagate.
 
-Quando modifichi una variante, hai accesso all’azione che consente di sincronizzare l’elemento corrente della variante con l’elemento Principale. Questo consente di copiare automaticamente le modifiche apportate all’elemento Principale nella variante desiderata.
+Quando modifichi una variante, hai accesso all’azione che consente di sincronizzare l’elemento corrente della variante con l’elemento Principale. Questo consente di copiare automaticamente le modifiche apportate all’elemento Principale nella variante richiesta.
 
 >[!CAUTION]
 >

@@ -12,10 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 4%
+source-wordcount: '960'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ Consulta la [API di gestione dei frammenti di contenuto - Lato client](/help/sit
 >
 >Vedi anche [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/sites-developing/content-fragments-config-components-rendering.md) per ulteriori informazioni.
 
-I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). I frammenti di contenuto consentono di creare contenuto utilizzabile in qualsiasi canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche utilizzare una risorsa per frammenti di contenuto esistente tramite [trascinarlo dal browser risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, ad esempio l’immagine del componente di base). Il componente per frammenti di contenuto predefinito ne visualizza solo uno [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto di riferimento. Utilizzando la finestra di dialogo del componente è possibile definire [elemento, variante e intervallo di paragrafi di frammenti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) che desideri visualizzare sulla pagina.
+I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche utilizzare una risorsa per frammenti di contenuto esistente tramite [trascinarlo dal browser risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, ad esempio l’immagine del componente di base). Il componente per frammenti di contenuto predefinito ne visualizza solo uno [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto di riferimento. Utilizzando la finestra di dialogo del componente è possibile definire [elemento, variante e intervallo di paragrafi di frammenti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) che desideri visualizzare sulla pagina.
 
 >[!NOTE]
 >
@@ -124,7 +124,6 @@ Internamente, per tale rendering viene utilizzato il rewriter di Sling. La rispe
 >quindi il `serializerType` **deve** è aggiornato a:
 >
 >* `serializerType="html5-serializer"`
-
 
 La configurazione preconfigurata utilizza i seguenti trasformatori:
 

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1832'
 ht-degree: 12%
 
 ---
@@ -83,7 +83,7 @@ Per inserire un nuovo componente:
 
    A seconda dell’ambiente di produzione, queste scelte possono essere diverse. Per informazioni complete sui componenti, vedi [Componenti predefiniti](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
-1. Inserire il componente desiderato nella pagina. Quindi fai doppio clic sul paragrafo, viene visualizzata una finestra che consente di configurare il paragrafo e aggiungere contenuto.
+1. Inserire il componente desiderato nella pagina. Fai doppio clic sul paragrafo per aprire una finestra che consente di configurare il paragrafo e aggiungere contenuto.
 
 ### Inserimento di un componente tramite Content Finder {#inserting-a-component-using-the-content-finder}
 
@@ -223,7 +223,7 @@ Il bordo inferiore della barra laterale contiene due icone importanti per l&#39;
 
 ## Trova e sostituisci {#find-replace}
 
-Per modifiche su larga scala della stessa frase, **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** L&#39;opzione di menu consente di cercare e sostituire più istanze di una stringa all&#39;interno di una sezione del sito Web.
+Per modifiche su larga scala della stessa frase, **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** opzione di menu consente di cercare e sostituire più istanze di una stringa, all’interno di una sezione del sito web.
 
 ## Blocco di una pagina   {#locking-a-page}
 
@@ -299,7 +299,7 @@ Potete utilizzare le opzioni Annulla (Undo) e Ripristina (Redo) per i seguenti t
 * Aggiunta e rimozione di riferimenti
 * Modifica dei valori delle proprietà nelle finestre di dialogo dei componenti.
 
-I campi modulo di cui viene eseguito il rendering dei componenti modulo non devono avere valori specificati durante la creazione di pagine. Pertanto, i comandi Annulla e Ripristina non influiscono sulle modifiche apportate ai valori di questi tipi di componenti. Ad esempio, non è possibile annullare la selezione di un valore in un elenco a discesa.
+I campi modulo di cui viene eseguito il rendering dei componenti modulo non devono avere valori specificati durante l’authoring delle pagine. Pertanto, i comandi Annulla e Ripristina non influiscono sulle modifiche apportate ai valori di questi tipi di componenti. Ad esempio, non è possibile annullare la selezione di un valore in un elenco a discesa.
 
 >[!NOTE]
 >

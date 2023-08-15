@@ -13,9 +13,9 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 14988b55c21131391fdcb033373774ee170f5305
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 11%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 11%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
-Adobe Experience Manager Assets Brand Portal consente di pubblicare su Brand Portal le risorse approvate per il marchio da Adobe Experience Manager Assets e distribuirle agli utenti di Brand Portal.
+Adobe Experience Manager Assets Brand Portal consente di pubblicare in Brand Portal le risorse approvate per il marchio da Adobe Experience Manager Assets e distribuirle agli utenti di Brand Portal.
 
 AEM Assets è configurato con Brand Portal tramite la console Adobe Developer, che fornisce un token di account Adobe Identity Management Services (IMS) per l’autorizzazione del tenant Brand Portal.
 
@@ -290,7 +290,7 @@ Per configurare il servizio cloud Brand Portal, effettua le seguenti operazioni:
 
 1. Accedi all’istanza Autore di AEM Assets.
 
-1. Dalla sezione **Strumenti** ![Strumenti](assets/do-not-localize/tools.png) , passa a **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. Dalla sezione **Strumenti** ![Strumenti](assets/do-not-localize/tools.png) , passa a **[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Nella pagina Configurazioni Brand Portal, fai clic su **[!UICONTROL Crea]**.
 

@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 24%
+source-wordcount: '182'
+ht-degree: 14%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 24%
 
 I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro.
 
-Il lancio creato consente di preparare modifiche pronte alla pubblicazione futura (mantenendo le tue pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, le promuovi di nuovo all’origine, quindi attiva le pagine sorgente (livello superiore). La promozione duplica il contenuto del lancio nelle pagine di origine e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
+Viene creato un lancio per consentire di apportare modifiche pronte per la pubblicazione futura (mantenendo le pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, le promuovi di nuovo all’origine, quindi attiva le pagine sorgente (livello superiore). La promozione duplica il contenuto del lancio nelle pagine di origine e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
 
 >[!NOTE]
 >

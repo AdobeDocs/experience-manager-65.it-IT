@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2245'
-ht-degree: 32%
+source-wordcount: '2244'
+ht-degree: 31%
 
 ---
 
@@ -21,7 +21,6 @@ Prima di poter iniziare a assegnare tag alle risorse tramite Smart Content Servi
 >* Smart Content Services non è più disponibile per i nuovi [!DNL Experience Manager Assets] Clienti locali. I clienti on-premise esistenti che dispongono già di questa funzionalità possono continuare a utilizzare Smart Content Services.
 >* Smart Content Services è disponibile per [!DNL Experience Manager Assets] Clienti Managed Services che dispongono già di questa funzionalità abilitata.
 >* Nuovo [!DNL Experience Manager Assets] I clienti Managed Services possono seguire le istruzioni riportate in questo articolo per configurare Smart Content Services.
-
 
 Prima di utilizzare il Servizio di contenuti avanzati, verifica quanto segue:
 
@@ -48,11 +47,11 @@ Per configurare il Servizio di contenuti avanzati, segui questi passaggi di live
 
 ### Ottenere un certificato pubblico creando la configurazione del Servizio di contenuti avanzati {#obtain-public-certificate}
 
-Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer Console.
+Un certificato pubblico consente di autenticare il profilo sulla console Adobe Developer.
 
 1. Nell’interfaccia di [!DNL Experience Manager], accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Servizi cloud precedenti]**.
 
-1. Nella pagina Cloud Services, fai clic su **[!UICONTROL Configura ora]** in **[!UICONTROL Tag avanzati risorse]**.
+1. Nella pagina Cloud Service, fai clic su **[!UICONTROL Configura ora]** in **[!UICONTROL Tag avanzati risorse]**.
 
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specifica un titolo e un nome per la configurazione di tag avanzati. Fai clic su **[!UICONTROL Crea]**.
 
@@ -137,7 +136,7 @@ Per utilizzare le API del Servizio di contenuti avanzati, crea un’integrazione
 
 Per configurare l’integrazione, utilizza i valori di [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE], [!UICONTROL SEGRETO CLIENT], e [!UICONTROL ID CLIENT] campi dall’integrazione con Adobe Developer Console. La creazione di una configurazione cloud di tag avanzati consente l’autenticazione delle richieste API da [!DNL Experience Manager] distribuzione.
 
-1. In entrata [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Services legacy]** per aprire [!UICONTROL Cloud Services] console.
+1. In entrata [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Service legacy]** per aprire [!UICONTROL Cloud Service] console.
 
 1. In **[!UICONTROL Tag avanzati risorse]**, apri la configurazione creata in precedenza. Nella pagina delle impostazioni del servizio, fai clic su **[!UICONTROL Modifica]**.
 
@@ -160,9 +159,9 @@ Dopo aver completato la configurazione, puoi utilizzare un MBean JMX per convali
 
 1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]** per aprire la console OSGi. Clic **[!UICONTROL Principale] > [!UICONTROL JMX]**.
 
-1. Clic `com.day.cq.dam.similaritysearch.internal.impl`. Si apre **[!UICONTROL Attività varie di SimilaritySearch]**.
+1. Fai clic su `com.day.cq.dam.similaritysearch.internal.impl`. Si apre **[!UICONTROL Attività varie di SimilaritySearch]**.
 
-1. Clic `validateConfigs()`. Nella finestra di dialogo **[!UICONTROL Validate Configurations]** (Convalida configurazioni), fai clic su **[!UICONTROL Invoke]** (Richiama).
+1. Fai clic su `validateConfigs()`. Nella finestra di dialogo **[!UICONTROL Validate Configurations]** (Convalida configurazioni), fai clic su **[!UICONTROL Invoke]** (Richiama).
 
 I risultati della convalida vengono visualizzati nella stessa finestra di dialogo.
 
@@ -301,4 +300,3 @@ Per verificare se il Servizio di contenuti avanzati è stato addestrato sui tag 
 >
 >* [Panoramica e modalità di formazione dei tag avanzati](enhanced-smart-tags.md)
 >* [Tutorial video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
-

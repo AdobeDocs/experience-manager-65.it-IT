@@ -10,9 +10,9 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3838'
+source-wordcount: '3840'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Utilizza l’Editor del dizionario dati per creare un dizionario dati oppure puo
 1. Tocca **Crea dizionario dati**.
 1. Nella schermata Proprietà, aggiungi quanto segue:
 
-   * **Titolo:** (Facoltativo) Immetti il titolo del dizionario dati. Il titolo non deve essere univoco e può contenere caratteri speciali e non inglesi. Alle lettere e agli altri frammenti di documento viene fatto riferimento con il relativo titolo (se disponibile), ad esempio nelle proprietà delle miniature e delle risorse. I dizionari dati sono indicati con i relativi nomi e non con i titoli.
+   * **Titolo:** (Facoltativo) Immetti il titolo del dizionario dati. Il titolo non deve necessariamente essere univoco e può contenere caratteri speciali e non inglesi. Alle lettere e agli altri frammenti di documento viene fatto riferimento con il relativo titolo (se disponibile), ad esempio nelle proprietà delle miniature e delle risorse. I dizionari dati sono indicati con i relativi nomi e non con i titoli.
    * **Nome:** Nome univoco del dizionario dati. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini in lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo e i caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti da trattini. Anche se il valore nel campo Titolo viene copiato automaticamente nel Nome, è possibile modificarlo.
 
    * **Descrizione**: (facoltativo) descrizione del dizionario dati.
@@ -343,7 +343,7 @@ La tabella seguente descrive gli attributi comuni associati a un DDE:
 
 Un dizionario dati può includere anche elementi calcolati. Un elemento dizionario dati calcolato è sempre associato a un’espressione. Questa espressione viene valutata per ottenere il valore di un elemento del dizionario dati in fase di esecuzione. Un valore DDE calcolato è una funzione di altri valori o valori letterali DDE. Per impostazione predefinita, sono supportate le espressioni EL (JSP Expression Language). Le espressioni EL utilizzano i caratteri ${ } e le espressioni valide possono includere valori letterali, operatori, variabili (riferimenti agli elementi del dizionario dati) e chiamate di funzione. Quando si fa riferimento a un elemento del dizionario dati nell’espressione, viene utilizzato il nome di riferimento del DDE. Il nome di riferimento è univoco per ogni elemento del dizionario dati all’interno di un dizionario dati.
 
-Un PersonFullName DDE calcolato può essere associato a un’espressione di concatenazione EL come ${PersonFirstName} ${PersonLastName}.
+È possibile associare un valore DDE PersonFullName calcolato a un&#39;espressione di concatenazione EL come ${PersonFirstName} ${PersonLastName}.
 
 ## Mappatura del tipo di dati tra XSD e il dizionario dati {#data-type-mapping-between-xsd-and-data-dictionary-br}
 
@@ -496,7 +496,7 @@ Convalide applicate a livello dell’elemento del dizionario dati.
 * Un DDE non può essere calcolato e richiesto allo stesso tempo.
 * I DDE calcolati devono contenere un&#39;espressione valida.
 * I DDE calcolati non devono avere un&#39;associazione XML.
-* Non è possibile calcolare o richiedere un DDE che indica il tipo per un DDE di raccolta.
+* Non è possibile calcolare o richiedere un DDE che indica il tipo di un DDE di raccolta.
 * I DDE del sottotipo ENUM non devono contenere set di valori Null o vuoti.
 * L&#39;associazione XML di un DDE della raccolta non deve essere mappata a un attributo.
 * La sintassi di associazione XML deve essere valida, ad esempio deve essere visualizzata una sola @, la @ è consentita solo se seguita da un nome di attributo.

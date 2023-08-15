@@ -3,9 +3,9 @@ title: Configura l’Editor Rich Text per creare contenuti in Adobe Experience M
 description: Scopri come configurare l’Editor Rich Text di Adobe Experience Manager per l’authoring dei contenuti in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 53a18ec48331f1c25c15e8f7a59bd57e95639895
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2923'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Sono disponibili icone, caselle di selezione, barre degli strumenti e menu per un&#39;esperienza di modifica del testo WYSIWYG.
 
-Per informazioni sull’utilizzo delle funzioni dell’editor Rich Text per l’authoring, consulta [Utilizza l’editor Rich Text per l’authoring](/help/sites-authoring/rich-text-editor.md). L’editor Rich Text può essere configurato per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Il seguente flusso di lavoro illustra un ordine consigliato per il completamento delle attività di configurazione dell’Editor Rich Text in Experience Manager.
+Per informazioni sull’utilizzo delle funzioni dell’editor Rich Text per l’authoring, consulta [Utilizza l’editor Rich Text per l’authoring](/help/sites-authoring/rich-text-editor.md). L’editor Rich Text può essere configurato per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Il seguente flusso di lavoro illustra un ordine consigliato per il completamento delle attività di configurazione dell’editor Rich Text in Experience Manager.
 
 ![Sequenza di passaggi per scoprire come configurare l’editor Rich Text](assets/rte_workflow_v1.png)
 
@@ -38,7 +38,6 @@ L’interfaccia touch è quella standard, ad Experience Manager. Adobe di introd
 >* Per informazioni sulla rimozione dell’interfaccia classica, consulta [Note sulla versione dell’Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
 >* Per informazioni sulle differenze tra le diverse interfacce, consulta [Interfaccia utente touch e Interfaccia classica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
 >* Per informazioni dettagliate sull’interfaccia utente touch, consulta [Concetti dell’interfaccia utente touch di Experience Manager](/help/sites-developing/touch-ui-concepts.md)
-
 
 ## Varie modalità di editing {#editingmodes}
 
@@ -152,9 +151,9 @@ Configura le seguenti proprietà che si applicano in modalità di modifica Fines
 
 * `useFixedInlineToolbar`: imposta questa proprietà booleana definita nel nodo dell’editor Rich Text (uno con sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) a `True`, per fissare la barra degli strumenti dell’Editor Rich Text anziché mobile.
 
-   Quando questa proprietà è true, la modifica del testo Rich Text viene avviata per impostazione predefinita sull&#39;evento &quot;foundation-contentloaded&quot;.
+  Quando questa proprietà è true, la modifica del testo Rich Text viene avviata per impostazione predefinita sull&#39;evento &quot;foundation-contentloaded&quot;.
 
-   Per evitare questo problema, imposta la proprietà `customStart` a `True`e attiva l’evento &quot;rte-start&quot; per avviare la modifica dell’editor Rich Text. Quando questa proprietà è impostata su &#39;true&#39;, il comportamento predefinito, ovvero la velocità di avvio al clic, non funziona.
+  Per evitare questo problema, imposta la proprietà `customStart` a `True`e attiva l’evento &quot;rte-start&quot; per avviare la modifica dell’editor Rich Text. Quando questa proprietà è impostata su &#39;true&#39;, il comportamento predefinito, ovvero la velocità di avvio al clic, non funziona.
 
 * `customStart`: imposta questa proprietà booleana definita nel nodo dell’editor Rich Text su `True`, per controllare quando avviare l’editor Rich Text attivando l’evento `rte-start`.
 
@@ -398,4 +397,3 @@ Se gli aggiornamenti delle configurazioni dell’interfaccia vengono applicati a
 >* [Configurare l’editor Rich Text per i siti accessibili](rte-accessible-content.md)
 >* [Parità delle funzioni per l’interfaccia touch e l’interfaccia classica](../release-notes/touch-ui-features-status.md)
 >* [Esempio di tutorial per creare un componente composito con più campi](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)
-

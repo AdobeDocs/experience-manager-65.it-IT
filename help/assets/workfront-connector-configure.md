@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1735'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Gli abbonamenti agli eventi vengono utilizzati per notificare all’AEM gli even
 
 Per utilizzare queste funzioni, abilita sottoscrizioni eventi.
 
-* Modifica [!UICONTROL Strumenti Workfront] configurazione dei Cloud Services creata al passaggio 5 e selezionare [!UICONTROL Abbonamenti eventi] scheda.
+* Modifica [!UICONTROL Strumenti Workfront] configurazione dei Cloud Service creata al passaggio 5 e selezionare [!UICONTROL Abbonamenti eventi] scheda.
 * Seleziona la [!UICONTROL Integrazione personalizzata Workfront] creato nella sezione 6.
 * Clic [!UICONTROL Abilita sottoscrizioni eventi Workfront].
 
@@ -148,7 +148,7 @@ Nell’editor del flusso di lavoro, modifica le proprietà di **[!UICONTROL Work
 
 ## Sincronizzazione commenti {#comments-sync}
 
-1. In entrata [!DNL Experience Manager], accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]**, seleziona la configurazione e seleziona **[!UICONTROL Proprietà]**.
+1. In entrata [!DNL Experience Manager], accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione strumenti Workfront]**, seleziona la configurazione e seleziona **[!UICONTROL Proprietà]**.
 
    ![commenti sincronizzati](/help/assets/assets/comments-sync1.png)
 
@@ -168,7 +168,7 @@ Per verificare la sincronizzazione dei commenti da Workfront all’AEM, effettua
 
 Per mantenere la cronologia delle versioni delle risorse in AEM, configura il controllo delle versioni delle risorse in AEM.
 
-1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
+1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
 
 1. Seleziona opzione **[!UICONTROL Memorizza le risorse con lo stesso nome delle versioni della risorsa esistente]**. Se selezionata, questa opzione consente di memorizzare le risorse caricate con lo stesso nome e nella stessa posizione della versione della risorsa esistente. Se questa opzione non è selezionata, verrà creata una nuova risorsa con un nome diverso (ad esempio, `asset-name.pdf` e `asset-name-1.pdf`).
 
@@ -190,7 +190,7 @@ Nell’editor del flusso di lavoro di Experience Manager, modifica le proprietà
 
 ## Pubblicazione automatica delle risorse {#auto-publish-assets}
 
-1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
+1. Ad Experience Manager, l’accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione strumenti Workfront]** e aprire **[!UICONTROL Avanzate]** scheda.
 
 1. Seleziona **[!UICONTROL Pubblica automaticamente le risorse quando inviate da Workfront]**. Questa opzione consente la pubblicazione automatica delle risorse quando vengono inviate da Workfront all’AEM. Questa funzione può essere abilitata in modo condizionale specificando un campo modulo personalizzato Workfront e il valore su cui deve essere impostata. Ogni volta che un documento viene inviato al AEM, se soddisfa la condizione, la risorsa verrà pubblicata automaticamente.
 

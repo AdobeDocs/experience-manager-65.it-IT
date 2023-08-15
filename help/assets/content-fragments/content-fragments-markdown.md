@@ -4,16 +4,16 @@ description: Scopri in che modo l’editor dei frammenti di contenuto utilizza l
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '520'
 ht-degree: 91%
 
 ---
 
 # Markdown {#markdown}
 
-Quando sei [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor di frammenti di contenuto utilizza *markdown* sintassi per consentire di scrivere facilmente contenuti headless:
+Quando sei [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor di frammenti di contenuto utilizza *markdown* sintassi per scrivere facilmente contenuti headless:
 
 ![editor markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

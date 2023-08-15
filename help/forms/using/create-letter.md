@@ -9,9 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3982'
+source-wordcount: '3983'
 ht-degree: 2%
 
 ---
@@ -226,7 +226,7 @@ In questa tabella vengono fornite alcune linee guida che è possibile utilizzare
 
 ### Prerequisiti {#prerequisites}
 
-Per creare una corrispondenza, devi prima disporre quanto segue:
+Per creare una corrispondenza è necessario disporre quanto segue:
 
 * [Pacchetto di compatibilità](compatibility-package.md). Installare il pacchetto di compatibilità per visualizzare **Lettere** opzione sul **Forms** pagina.
 * La lettera XDP ([layout](/help/forms/using/document-fragments.md)).
@@ -251,7 +251,7 @@ Per creare una corrispondenza, devi prima disporre quanto segue:
 
 1. Immetti le proprietà per la corrispondenza e tocca **Salva:**
 
-   * **Titolo (facoltativo):** Immettere il titolo della lettera. Il titolo non deve essere univoco e può contenere caratteri speciali e non inglesi.
+   * **Titolo (facoltativo):** Immettere il titolo della lettera. Il titolo non deve necessariamente essere univoco e può contenere caratteri speciali e non inglesi.
    * **Nome:** Nome univoco della lettera. Non possono esistere due lettere con lo stesso nome in nessuno stato. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini in lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti da trattini nel campo Nome. Anche se il valore nel campo Titolo viene copiato automaticamente nel Nome, è possibile modificarlo.
    * **Descrizione (facoltativa):** Descrivi la lettera come riferimento.
    * **Dizionario dati (facoltativo)**: il dizionario dati può essere associato alla corrispondenza. Le risorse inserite successivamente in questa corrispondenza devono avere lo stesso dizionario dati scelto per la corrispondenza in questo campo o nessun dizionario dati.
@@ -278,7 +278,7 @@ Quando, dopo aver creato una corrispondenza, tocca Apri, Gestione corrispondenza
 
    ![Inserire moduli di dati e frammenti di layout](assets/insertdmandlf.png)
 
-1. Seleziona Modulo dati o Frammento layout per queste opzioni per ciascuna sottomaschera, quindi scegli i Moduli dati o i Frammenti layout da inserire. Un frammento di layout consente di inserire ulteriormente moduli di dati o frammenti di layout in esso in base al suo design (fino a quattro livelli).
+1. Seleziona Modulo dati o Frammento layout per queste opzioni per ciascuna sottomaschera, quindi scegli i Moduli dati o i Frammenti layout da inserire. Un frammento di layout consente di inserire ulteriori moduli di dati o frammenti di layout in esso in base alla progettazione (fino a quattro livelli).
 
    ![nestedlf](assets/nestedlf.png)
 
@@ -307,7 +307,6 @@ Quando, dopo aver creato una corrispondenza, tocca Apri, Gestione corrispondenza
    1. **Eliminare risorse**: tocca l’icona Elimina accanto a una risorsa per eliminarla.
    1. **Visualizzare in anteprima le risorse**: tocca l’icona mostra anteprima ( ![showpreview](assets/showpreview.png)) accanto a una risorsa.
 
-
 1. Tocca **Successivo**.
 1. La pagina Dati descrive in dettaglio come vengono utilizzati i campi dati e le variabili nel modello. I dati possono essere collegati a origini dati quali un dizionario dati o un input utente. Ogni campo definisce le proprietà da cui il dizionario dati mappa i dati o quale didascalia viene visualizzata per i campi di input dell’utente.
 
@@ -331,6 +330,7 @@ Quando, dopo aver creato una corrispondenza, tocca Apri, Gestione corrispondenza
    * **Convalida numero**: utilizza la funzione di convalida del numero per specificare il valore numerico minimo e massimo immesso in un campo o in una variabile. Quando si crea una convalida numerica, assicurarsi di specificare parametri di convalida validi. Immettere valori numerici sia per il valore minimo che per quello massimo.
 
    * **Convalida espressioni regolari**: utilizza Convalida espressioni regolari per definire un’espressione regolare utilizzata per convalidare il valore di un campo o di una variabile. Inoltre, è possibile personalizzare il messaggio di errore. Quando si crea un Convalida espressioni regolari, assicurarsi di specificare un&#39;espressione regolare valida.
+
    >[!NOTE]
    >
    >Le convalide di campi e variabili sono disponibili solo per campi o variabili con tipo di collegamento Utente o Elementi del dizionario dati non protetti.
@@ -386,7 +386,7 @@ I seguenti valori nella tabella
    <td>N/D</td> 
   </tr> 
   <tr> 
-   <td><strong>volta</strong></td> 
+   <td><strong>time</strong></td> 
    <td>Sì</td> 
    <td>No</td> 
    <td>Sì</td> 

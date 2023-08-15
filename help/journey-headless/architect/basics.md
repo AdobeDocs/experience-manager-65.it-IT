@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base sulla modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 89%
 
 ---
 
@@ -66,8 +66,8 @@ All’interno di un modello:
 
 1. **Tipi di dati** consente di definire i singoli attributi.
 Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo** e i relativi anni di servizio come **Numero**.
-1. I tipi di dati **Riferimento contenuto** e **Riferimento frammento** consentono di creare relazioni con altri contenuti all’interno di AEM.
-1. Il tipo di dati **Riferimento frammento** consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
+1. Tipi di dati **Riferimento contenuto** e **Riferimento frammento** consente di creare relazioni con altri contenuti all’interno dell’AEM.
+1. Il **Riferimento frammento** Il tipo di dati consente di realizzare più livelli di struttura nidificando i Frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
 Esempio:
 
@@ -113,7 +113,7 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 ## Livelli di struttura (frammenti nidificati) {#levels-of-structure-nested-fragments}
 
-Per la modellazione dei contenuti il tipo di dati **Riferimento frammento** consente di creare più livelli di struttura e relazioni.
+Per la modellazione dei contenuti **Riferimento frammento** tipo di dati consente di creare più livelli di struttura e relazioni.
 
 Con questo riferimento è possibile *connettere* vari modelli di frammenti di contenuto per rappresentare le interrelazioni. Questo consente all’applicazione headless di seguire le connessioni e accedere al contenuto in base alle necessità.
 
@@ -121,7 +121,7 @@ Con questo riferimento è possibile *connettere* vari modelli di frammenti di co
 >
 >Questo dovrebbe essere utilizzato con cautela e le migliori pratiche possono essere definite come *nidificare quanto necessario, ma il meno possibile*.
 
-I riferimenti frammento consentono di fare riferimento a un altro frammento.
+I riferimenti ai frammenti fanno proprio questo: ti consentono di fare riferimento a un altro frammento.
 
 Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di contenuto:
 

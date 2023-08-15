@@ -1,19 +1,19 @@
 ---
-title: Struttura dell’interfaccia utente di Adobe Experience Manager con funzionalità touch
-description: L’interfaccia utente ottimizzata per il tocco, implementata in Adobe Experience Manager, ha diversi principi di base ed è costituita da diversi elementi chiave
+title: Struttura dell’interfaccia utente touch di Adobe Experience Manager
+description: L’interfaccia utente ottimizzata per il tocco, come implementata in Adobe Experience Manager, ha diversi principi di base ed è costituita da diversi elementi chiave
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 3%
 
 ---
 
-# Struttura dell’interfaccia utente di Adobe Experience Manager con funzionalità touch{#structure-of-the-aem-touch-enabled-ui}
+# Struttura dell’interfaccia utente touch di Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
 
 L’interfaccia utente touch di Adobe Experience Manager (AEM) ha diversi principi di base ed è costituita da diversi elementi chiave:
 

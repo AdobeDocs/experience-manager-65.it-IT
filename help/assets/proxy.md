@@ -4,9 +4,9 @@ description: Un proxy è un [!DNL Experience Manager] istanza che utilizza i lav
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Un proxy è disponibile tramite HTTP Servlet quando è configurato per accettare
 
 * `job`
 
-   **Requisiti**: il parametro `jobevent` deve essere impostata come mappa di valori serializzati. Viene utilizzato per creare un `Event` per un processore di processi.
+  **Requisiti**: il parametro `jobevent` deve essere impostata come mappa di valori serializzati. Viene utilizzato per creare un `Event` per un processore di processi.
 
-   **Risultato**: aggiunge un nuovo processo. In caso di esito positivo, viene restituito un ID processo univoco.
+  **Risultato**: aggiunge un nuovo processo. In caso di esito positivo, viene restituito un ID processo univoco.
 
 ```shell
 curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
@@ -38,9 +38,9 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **Requisiti**: il parametro `jobid` deve essere impostato.
+  **Requisiti**: il parametro `jobid` deve essere impostato.
 
-   **Risultato**: restituisce una rappresentazione JSON del nodo dei risultati creato dal processore del processo.
+  **Risultato**: restituisce una rappresentazione JSON del nodo dei risultati creato dal processore del processo.
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -49,9 +49,9 @@ curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
 
 * `resource`
 
-   **Requisiti**: è necessario impostare il parametro jobid.
+  **Requisiti**: è necessario impostare il parametro jobid.
 
-   **Risultato**: restituisce una risorsa associata al processo specificato.
+  **Risultato**: restituisce una risorsa associata al processo specificato.
 
 ```shell
 curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
@@ -60,9 +60,9 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
 
 * `remove`
 
-   **Requisiti**: è necessario impostare il parametro jobid.
+  **Requisiti**: è necessario impostare il parametro jobid.
 
-   **Risultati**: se trovato, rimuove un processo.
+  **Risultati**: se trovato, rimuove un processo.
 
 ```shell
 curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
@@ -115,7 +115,7 @@ Le configurazioni di lavoro proxy e proxy sono disponibili tramite le configuraz
 
 >[!NOTE]
 >
->Consulta [Configurazione di InDesign Server Proxy Worker](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [Configurazione Cloud Services](../sites-developing/extending-cloud-config.md) per ulteriori informazioni.
+>Consulta [Configurazione di InDesign Server Proxy Worker](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [Configurazione Cloud Service](../sites-developing/extending-cloud-config.md) per ulteriori informazioni.
 
 Di seguito è riportato un esempio di utilizzo dell’API:
 
@@ -174,7 +174,7 @@ Il diagramma e i passaggi seguenti descrivono in dettaglio come procedere:
 
    Ad esempio, consulta `IDSJobProcessor.java` per il processo di lavoro proxy IDS.
 
-1. Utilizza di `ProxyUtil.java` in dam-commons. Questo consente di inviare processi ai lavoratori utilizzando il proxy DAM.
+1. Utilizza di `ProxyUtil.java` in dam-commons. In questo modo è possibile inviare processi ai lavoratori utilizzando il proxy DAM.
 
 >[!NOTE]
 >

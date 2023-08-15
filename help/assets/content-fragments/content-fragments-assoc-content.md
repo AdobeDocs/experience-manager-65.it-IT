@@ -4,10 +4,10 @@ description: Scopri in che modo la funzione di contenuto associato all’AEM for
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 60%
+ht-degree: 57%
 
 ---
 
@@ -30,7 +30,7 @@ Per creare l’associazione, devi prima [aggiungere le risorse multimediali a un
 1. A seconda che siano già state associate o meno delle raccolte, seleziona una delle seguenti opzioni:
 
    * **Associa contenuto**: questa sarà la prima raccolta associata
-   * **Associa raccolta**: raccolte associate già configurate
+   * **Associa raccolta** : raccolte associate già configurate
 
 1. Seleziona la raccolta richiesta.
 

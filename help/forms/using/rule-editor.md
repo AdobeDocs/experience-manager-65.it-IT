@@ -1,8 +1,8 @@
 ---
 title: Editor di regole per moduli adattivi
 seo-title: Adaptive forms rule editor
-description: L’editor di regole per moduli adattivi consente di aggiungere un comportamento dinamico e di creare una logica complessa nei moduli senza codificare o scrivere script.
-seo-description: Adaptive forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
+description: L’editor di regole per moduli adattivi consente di aggiungere un comportamento dinamico e di creare una logica complessa nei moduli senza codificare o creare script.
+seo-description: Adaptive forms rule editor lets you add dynamic behavior and build complex logic into forms without coding or scripting.
 uuid: c1b3d6e4-6f36-4352-ab57-9850d718e47c
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6941'
+source-wordcount: '6929'
 ht-degree: 0%
 
 ---
@@ -81,12 +81,12 @@ Sebbene sia possibile ottenere la maggior parte dei casi d’uso utilizzando qua
 * Per attivare un’azione in base a più condizioni, si consiglia di utilizzare il costrutto azione-condizione. Ad esempio, per mostrare e nascondere il campo A valutando le condizioni nei campi B, C e D, utilizzare Mostra o Nascondi tipo di regola nel campo A.
 * Utilizza il costrutto condizione-azione o condizione azione se la regola contiene un’azione per una condizione.
 * Se una regola verifica la presenza di una condizione ed esegue immediatamente un&#39;azione quando fornisce un valore in un campo o esce da un campo, si consiglia di scrivere una regola con il costrutto condizione-azione o il tipo di regola When nel campo in cui viene valutata la condizione.
-* La condizione nella regola When viene valutata quando un utente modifica il valore dell&#39;oggetto su cui viene applicata la regola When. Tuttavia, se desideri che l’azione si attivi quando il valore cambia sul lato server, come nel caso di precompilazione del valore, è consigliabile scrivere una regola When che attivi l’azione quando il campo viene inizializzato.
-* Quando si scrivono regole per gli oggetti menu a discesa, pulsanti di scelta o caselle di controllo, le opzioni o i valori di tali oggetti modulo nel modulo vengono precompilati nell’editor di regole.
+* La condizione nella regola When viene valutata quando un utente modifica il valore dell&#39;oggetto su cui viene applicata la regola When. Tuttavia, se si desidera attivare l&#39;azione quando il valore cambia sul lato server, like in caso di Prepopolamento del valore, si consiglia di scrivere un quando regola che attiva l&#39;azione quando il campo viene inizializzato.
+* Quando si scrivono le regole per gli oggetti a discesa, i pulsanti di scelta o le caselle di controllo, le opzioni o i valori di questi oggetti modulo nel modulo vengono precompilati nella editor regola.
 
-## Tipi di operatori ed eventi disponibili nell’editor di regole {#available-operator-types-and-events-in-rule-editor}
+## Tipi di operatori ed eventi disponibili in regola editor {#available-operator-types-and-events-in-rule-editor}
 
-L’editor di regole fornisce i seguenti operatori logici ed eventi utilizzando i quali è possibile creare regole.
+Il regola editor fornisce i seguenti operatori logici ed eventi utilizzando i quali è possibile creare regole.
 
 * **È uguale a**
 * **Non è uguale a**
@@ -179,13 +179,13 @@ La figura seguente illustra un esempio di aggiunta dinamica di caselle di contro
 
 **Aggiungi istanza** Aggiunge un&#39;istanza del pannello o della riga di tabella ripetibile specificata.
 
-**Rimuovi istanza** Rimuove un&#39;istanza del pannello o della riga di tabella ripetibile specificata.
+**Rimuovi istanza** rimuove un istanza del pannello o della riga di tabella ripetibile specificata.
 
-**Accedi a** Passa ad altre comunicazioni interattive, moduli adattivi, altre risorse come immagini o frammenti di documenti o un URL esterno. Per ulteriori informazioni, consulta [Pulsante Aggiungi alla comunicazione interattiva](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**** Passa a passa ad altre comunicazioni interattive, moduli adattivi, altri risorse come immagini o frammenti di documenti o un URL esterno. Per ulteriori informazioni, consulta [ aggiungere pulsante alla comunicazione ](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel) interattiva.
 
 ### Imposta valore di {#set-value-of}
 
-Il **[!UICONTROL Imposta valore di]** tipo di regola consente di impostare il valore di un oggetto modulo a seconda che la condizione specificata sia soddisfatta o meno. Il valore può essere impostato sul valore di un altro oggetto, una stringa letterale, un valore derivato da un&#39;espressione matematica o una funzione, un valore di una proprietà di un altro oggetto o l&#39;output di un servizio modello dati modulo. Analogamente, è possibile verificare la presenza di una condizione su un componente, una stringa, una proprietà o valori derivati da una funzione o un&#39;espressione matematica.
+Il **[!UICONTROL set valore di]** regola tipo consente di definire il valore di un oggetto modulo a seconda che la condizione specificata sia soddisfatta o meno. Il valore può essere impostato su un valore di un altro oggetto, una stringa letterale, un valore derivato da un&#39;espressione matematica o una funzione, un valore di una proprietà di un altro oggetto o l&#39;output di un servizio modello dati modulo. Analogamente, è possibile verificare la presenza di una condizione su un componente, una stringa, una proprietà o valori derivati da una funzione o un&#39;espressione matematica.
 
 Il tipo di regola Imposta valore non è disponibile per tutti gli oggetti modulo, ad esempio i pannelli e i pulsanti della barra degli strumenti. Una regola Set Value Of standard ha la seguente struttura:
 
@@ -197,7 +197,7 @@ Imposta il valore dell&#39;oggetto A su:
 
 Quando (facoltativo):
 
-(Condizione 1 AND Condizione 2 AND Condizione 3) è TRUE;
+(Condizione 1 e condizione 2 e condizione 3) è vero;
 
 
 
@@ -345,21 +345,21 @@ Per avviare l’interfaccia utente dell’editor di regole:
 
 Esaminiamo in dettaglio ogni componente dell’interfaccia utente dell’editor di regole.
 
-### A. Visualizzazione delle regole dei componenti {#a-component-rule-display}
+### A. componente-regola display {#a-component-rule-display}
 
-Visualizza il titolo dell’oggetto modulo adattivo tramite il quale è stato avviato l’editor di regole e il tipo di regola attualmente selezionato. Nell’esempio precedente, l’editor di regole viene avviato da un oggetto modulo adattivo denominato Stipendio e il tipo di regola selezionato è Quando.
+Visualizza il titolo dell&#39;oggetto modulo adattivo attraverso il quale è stato avviato il regola editor e il tipo di regola attualmente selezionato. Nell&#39;esempio precedente, il regola editor viene avviato da un oggetto modulo adattivo intitolato stipendio e il tipo di regola selezionato è quando.
 
-### B. Oggetti e funzioni del modulo {#b-form-objects-and-functions-br}
+### B. oggetti modulo e funzioni {#b-form-objects-and-functions-br}
 
-Il riquadro a sinistra nell’interfaccia utente dell’editor di regole include due schede: **[!UICONTROL Oggetti Forms]** e **[!UICONTROL Funzioni]**.
+Il riquadro a sinistra nella regola editor interfaccia utente include due schede **[!UICONTROL , Forms oggetti]** e **[!UICONTROL funzioni]** .
 
 La scheda Oggetti modulo mostra una vista gerarchica di tutti gli oggetti contenuti nel modulo adattivo. Visualizza il titolo e il tipo degli oggetti. Durante la scrittura di una regola, è possibile trascinare gli oggetti modulo nell’editor di regole. Quando si trascina un oggetto o una funzione in un segnaposto durante la creazione o la modifica di una regola, il segnaposto assume automaticamente il tipo di valore appropriato.
 
 Gli oggetti modulo a cui sono applicate una o più regole valide sono contrassegnati da un punto verde. Se una delle regole applicate a un oggetto modulo non è valida, l&#39;oggetto modulo viene contrassegnato con un punto giallo.
 
-La scheda Funzioni include un set di funzioni incorporate, ad esempio Somma di, Min di, Max di, Media di, Numero di e Convalida modulo. È possibile utilizzare queste funzioni per calcolare i valori nei pannelli e nelle righe di tabella ripetibili e utilizzarli nelle istruzioni di azione e condizione durante la scrittura delle regole. Tuttavia, puoi creare [funzioni personalizzate](#custom-functions) anche.
+Le funzioni scheda includono un set di funzioni incorporate, ad esempio la somma di, min, Max, media di, numero di e convalida modulo. È possibile utilizzare queste funzioni per calcolare i valori in pannelli ripetibili e righe di tabella e utilizzarli nelle istruzioni di azione e condizione durante la scrittura delle regole. Puoi, tuttavia, creare [ anche funzioni ](#custom-functions) personalizzate.
 
-![Scheda Funzioni](assets/functions.png)
+![Le funzioni scheda](assets/functions.png)
 
 >[!NOTE]
 >
@@ -373,7 +373,7 @@ Quando viene toccato, questo pulsante attiva o disattiva il riquadro delle funzi
 
 ### D. Editor di regole visive {#d-visual-rule-editor}
 
-L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Consente di selezionare un tipo di regola e di conseguenza di definire condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
+L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Ti consente di selezionare un tipo di regola e di definire di conseguenza condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
 
 Per ulteriori informazioni sull’utilizzo dell’editor di regole visive, consulta [Scrivi regole](#write-rules).
 
@@ -430,13 +430,13 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    Nel pulsante di opzione Stato civile, **Coniugato** e **Singolo** opzioni assegnate **0** e **1** rispettivamente. È possibile verificare i valori assegnati nella scheda Titolo della finestra di dialogo Modifica pulsante di opzione, come illustrato di seguito.
 
-   ![Valori dei pulsanti di scelta dall’editor di regole](assets/radio-button-values.png)
+   ![Valori pulsante radio da regola editor](assets/radio-button-values.png)
 
-1. In **Inserisci una stringa** nella regola, specifica **0**.
+1. **Nel campo Immetti una stringa** nella regola, specificare **0** .
 
-   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
+   ![regole di scrittura-visivo-editor-4](assets/write-rules-visual-editor-4.png)
 
-   La condizione è stata definita come `When Marital Status is equal to Married`. Quindi, definisci l’azione da eseguire se questa condizione è True.
+   La condizione è stata definita come `When Marital Status is equal to Married`. Successivo, definire l&#39;azione da eseguire se questa condizione è vera.
 
 1. Nell&#39;istruzione Then, selezionare **[!UICONTROL Spettacolo]** dal **[!UICONTROL Seleziona azione]** a discesa.
 
@@ -771,7 +771,7 @@ Puoi anche trascinare le condizioni all’interno di una regola per modificarla.
 
 ## Condizioni di espressione data {#dateexpression}
 
-L’editor di regole consente di utilizzare i confronti tra date per creare le condizioni.
+L’editor di regole consente di utilizzare i confronti tra date per creare condizioni.
 
 Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se l’ipoteca sulla casa è già stata accettata, che l’utente indica compilando il campo data.
 

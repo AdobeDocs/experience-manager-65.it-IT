@@ -10,9 +10,9 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2111'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ L’integrazione dei dati di AEM Forms consente di configurare e connettersi a d
 * Servizi web basati su SOAP
 * Servizi OData
 
-L’integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base e tipi di autenticazione con chiave API pronti all’uso e che consentono l’implementazione dell’autenticazione personalizzata per l’accesso ai servizi web. Mentre i servizi RESTful, SOAP-based e OData sono configurati in AEM Cloud Services, JDBC per i database relazionali e il connettore per il profilo utente AEM sono configurati nella console web AEM.
+L’integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base e tipi di autenticazione con chiave API pronti all’uso e che consentono l’implementazione dell’autenticazione personalizzata per l’accesso ai servizi web. Mentre i servizi RESTful, SOAP-based e OData sono configurati nei Cloud Service AEM, JDBC per i database relazionali e il connettore per il profilo utente AEM sono configurati nella console web AEM.
 
 ## Configurare il database relazionale {#configure-relational-database}
 
@@ -119,11 +119,11 @@ Per configurare la cartella per le configurazioni del servizio cloud:
 
 ## Configurare i servizi web RESTful {#configure-restful-web-services}
 
-Il servizio web RESTful può essere descritto utilizzando [Specifiche Swagger](https://swagger.io/specification/) in formato JSON o YAML in un file di definizione Swagger. Per configurare il servizio web RESTful in AEM Cloud Services, accertati di disporre del file Swagger sul file system o dell’URL in cui è ospitato il file.
+Il servizio web RESTful può essere descritto utilizzando [Specifiche Swagger](https://swagger.io/specification/) in formato JSON o YAML in un file di definizione Swagger. Per configurare il servizio Web RESTful nei servizi cloud AEM, accertati di disporre del file Swagger sul file system o dell’URL in cui è ospitato il file.
 
 Per configurare i servizi RESTful, effettuare le seguenti operazioni:
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](../../forms/using/configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
@@ -169,9 +169,9 @@ Per configurare il client HTTP del modello dati modulo, effettua le seguenti ope
 
 ## Configurare i servizi web SOAP {#configure-soap-web-services}
 
-I servizi web basati su SOAP sono descritti utilizzando [Specifiche di Web Services Description Language (WSDL)](https://www.w3.org/TR/wsdl). Per configurare il servizio web basato su SOAP in AEM Cloud Services, accertati di disporre dell’URL WSDL per il servizio web e procedi come segue:
+I servizi web basati su SOAP sono descritti utilizzando [Specifiche di Web Services Description Language (WSDL)](https://www.w3.org/TR/wsdl). Per configurare il servizio Web basato su SOAP nei servizi cloud AEM, verificare di disporre dell&#39;URL WSDL per il servizio Web e procedere come segue:
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](../../forms/using/configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
@@ -191,14 +191,14 @@ Specifica l’alias KeyStore per il certificato X509 in **[!UICONTROL Alias chia
 
 ## Configurare i servizi OData {#config-odata}
 
-Un servizio OData è identificato dall&#39;URL radice del servizio. Per configurare un servizio OData in AEM Cloud Services, accertati di disporre dell’URL principale del servizio ed effettua le seguenti operazioni:
+Un servizio OData è identificato dall&#39;URL radice del servizio. Per configurare un servizio OData nei servizi cloud AEM, accertarsi di disporre dell&#39;URL principale del servizio ed eseguire le operazioni seguenti:
 
 >[!NOTE]
 >
 >Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
 >Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, consulta [Configurazione Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Services > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](../../forms/using/configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 

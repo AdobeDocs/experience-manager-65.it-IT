@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6088'
+source-wordcount: '6086'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Per configurare il contenuto AEM in modo che venga visualizzato in un portale, v
 
 ## Amministrazione del portlet dei contenuti dell’AEM {#administering-the-aem-content-portlet}
 
-Il portlet dei contenuti dell’AEM consente di visualizzare il contenuto dell’AEM in un portale. Il portlet è disponibile all&#39;indirizzo `/crx-quickstart/opt/portal`e possono essere personalizzati in vari modi. Ad esempio, puoi personalizzare la gestione dell’SSO/autenticazione implementando un servizio di autenticazione personalizzato che generi le informazioni di autenticazione richieste affinché l’AEM possa sovrascrivere il comportamento predefinito. I plug-in utilizzano un’API definita che ti consente di aggiungere le tue funzionalità creando il plug-in rispetto all’API. Il plug-in può essere distribuito nel portlet in esecuzione. Per funzionare correttamente, è necessaria una configurazione dell’istanza di authoring e pubblicazione dell’AEM insieme al percorso del contenuto da visualizzare all’avvio.
+Il portlet dei contenuti dell’AEM consente di visualizzare il contenuto dell’AEM in un portale. Il portlet è disponibile all&#39;indirizzo `/crx-quickstart/opt/portal`e possono essere personalizzati in vari modi. Ad esempio, puoi personalizzare la gestione di SSO/autenticazione implementando un servizio di autenticazione personalizzato che generi le informazioni di autenticazione richieste affinché l’AEM possa sovrascrivere il comportamento predefinito. I plug-in utilizzano un’API definita che ti consente di aggiungere le tue funzionalità creando il plug-in rispetto all’API. Il plug-in può essere distribuito nel portlet in esecuzione. Per funzionare correttamente, è necessaria una configurazione dell’istanza di authoring e pubblicazione dell’AEM insieme al percorso del contenuto da visualizzare all’avvio.
 
 Alcune configurazioni possono essere modificate tramite le preferenze del portlet e altre tramite le configurazioni del servizio OSGi. Puoi modificare queste configurazioni utilizzando **config** o la console Web OSGi.
 
@@ -165,7 +165,7 @@ Per rilevare l’ambiente è possibile utilizzare una proprietà di sistema dive
 
 Nella sua configurazione predefinita, il portlet memorizza nella cache le risposte ricevute da WCM AEM in una cache specifica per l’utente. Le cache devono essere invalidate quando si verificano modifiche nel contenuto dell’istanza Publish. A questo scopo, in WCM per AEM è necessario configurare un agente di replica nell’istanza di authoring. La cache può anche essere scaricata manualmente. In questa sezione vengono descritte entrambe le procedure.
 
-Il portlet può essere configurato con una propria cache, in modo che il contenuto del portlet venga visualizzato senza richiedere l’accesso a AEM. Il portale è disponibile come contenuto in /libs/portal/director. Per accedere al contenuto, avvia un’istanza AEM e scarica il file da tale posizione utilizzando CRXDE Lite o Webdav.
+Il portlet può essere configurato con una propria cache, in modo che il contenuto del portlet venga visualizzato senza richiedere l’accesso a AEM. Il portale è disponibile come contenuto in /libs/portal/director. Per accedere al contenuto, avvia un’istanza AEM e scarica il file da tale posizione utilizzando CRXDE Liti o Webdav.
 
 Puoi distribuire questo bundle in fase di esecuzione o aggiungerlo all’applicazione web portlet all’indirizzo `WEB-INF/lib/resources/bundles` prima della distribuzione.
 
@@ -562,7 +562,7 @@ Se il sito non dispone di regole severe per la gestione delle informazioni sulle
  <tbody>
   <tr>
    <td>RequestTracker</td>
-   <td>Il Request Tracker riceve una notifica ogni volta che il contenuto viene visualizzato dal portlet. In questo modo è possibile tenere traccia delle chiamate al portlet.</td>
+   <td>Il Request Tracker riceve una notifica ogni volta che il contenuto viene visualizzato dal portlet. In questo modo è possibile tenere traccia delle chiamate del portlet.</td>
   </tr>
   <tr>
    <td>InvocationContextListener</td>
@@ -735,7 +735,7 @@ Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in 
 
 ### Download del file .war {#downloading-the-war-file}
 
-1. Utilizzando Webdav o CRXDE Lite, passa a /libs/portal/director.
+1. Utilizzando Webdav o CRXDE Liti, passa a /libs/portal/director.
 
 1. Scarica *cq-portlet-webapp.war*.
 

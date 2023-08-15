@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1797'
 ht-degree: 8%
 
 ---
@@ -78,7 +78,7 @@ Poiché le risorse non devono essere trasmesse in rete, le prestazioni complessi
 
 ### Elabora rappresentazioni {#processing-renditions}
 
-Dopo aver caricato le risorse nel sistema, devi elaborarle attraverso [!UICONTROL Aggiorna risorsa DAM] flusso di lavoro per estrarre metadati e generare rappresentazioni. Prima di eseguire questo passaggio, è necessario duplicare e modificare [!UICONTROL Aggiorna risorsa DAM] per soddisfare le tue esigenze. Il flusso di lavoro preconfigurato contiene molti passaggi che potrebbero non essere necessari, ad esempio la generazione PTIFF di Dynamic Media o [!DNL InDesign Server] integrazione.
+Dopo aver caricato le risorse nel sistema, devi elaborarle attraverso [!UICONTROL Aggiorna risorsa DAM] flusso di lavoro per estrarre metadati e generare rappresentazioni. Prima di eseguire questo passaggio, è necessario duplicare e modificare [!UICONTROL Aggiorna risorsa DAM] per soddisfare le tue esigenze. Il flusso di lavoro preconfigurato contiene molti passaggi che potrebbero non essere necessari, ad esempio la generazione PTIFF di Dynamic Medie o [!DNL InDesign Server] integrazione.
 
 Dopo aver configurato il flusso di lavoro in base alle tue esigenze, puoi eseguirlo in due modi:
 

@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2613'
+source-wordcount: '2612'
 ht-degree: 2%
 
 ---
@@ -153,7 +153,7 @@ Configura le seguenti proprietà durante la creazione di grafici per i canali di
   </tr>
   <tr>
    <td>Suggerimento</td>
-   <td><p>Formato in cui la descrizione viene visualizzata al passaggio del mouse su un punto dati nel grafico nel canale web. Il valore predefinito è ${x}(${y}). A seconda del tipo di grafico, quando si posiziona il mouse su un punto, una barra o una sezione del grafico, le variabili ${x}e ${y} vengono sostituite in modo dinamico con i valori corrispondenti sull'asse X e sull'asse Y e visualizzate nella descrizione comando.</p> <p>Per disattivare la descrizione comando, lasciare <span class="uicontrol">Descrizione</code> campo vuoto. Questa opzione non è applicabile ai grafici a linee e a superficie. Ad esempio, consulta <a href="#chartoutputprintweb">Esempio 1: output del grafico in stampa e sul Web</a>.</code></p> </td>
+   <td><p>Formato in cui la descrizione viene visualizzata al passaggio del mouse su un punto dati nel grafico nel canale web. Il valore predefinito è ${x}(${y}). A seconda del tipo di grafico, quando si posiziona il mouse su un punto, una barra o una sezione del grafico, le variabili ${x}e ${y} vengono sostituiti in modo dinamico con i valori corrispondenti sull'asse X e sull'asse Y e visualizzati nella descrizione comando.</p> <p>Per disattivare la descrizione comando, lasciare <span class="uicontrol">Descrizione</code> campo vuoto. Questa opzione non è applicabile ai grafici a linee e a superficie. Ad esempio, consulta <a href="#chartoutputprintweb">Esempio 1: output del grafico in stampa e sul Web</a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
@@ -167,12 +167,12 @@ Configura le seguenti proprietà durante la creazione di grafici per i canali di
      <li><strong>Colore punto</strong>: disponibile per i grafici Punto e Linea e Punto per specificare il colore dei punti nel grafico.<br /> </li>
      <li><strong>Colore area</strong>: disponibile per i grafici a superficie per specificare il colore dell'area sotto la linea del grafico.</li>
      <li><strong>Punto di riferimento &gt; Tipo di associazione: </strong>Disponibile per grafici a quadrante per<strong> </strong>specificare il tipo di associazione per il punto di riferimento. Utilizzare la proprietà dell'oggetto modello dati o testo statico per definire il valore per il punto di riferimento.</li>
-     <li><strong>Punto di riferimento &gt; Asse X: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di associazione per specificare il valore dell'asse X per il punto di riferimento.</code></li>
-     <li><strong>Punto di riferimento &gt; Asse Y: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di associazione per specificare il valore dell'asse Y per il punto di riferimento.</code></li>
-     <li><strong>Punto di riferimento &gt; Oggetto modello dati per serie: </strong>Disponibile per grafici a quadrante a serie multiple se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Definisci le proprietà oggetto modello dati del modulo per identificare la serie per il punto di riferimento. </code></li>
-     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per serie: </strong>Disponibile per grafici a quadrante a serie multiple se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Utilizzare la proprietà object del modello dati del modulo per la serie e il valore definito in questo campo per identificare la serie per il punto di riferimento.</code></li>
-     <li><strong>Punto di riferimento &gt; Oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Definisci una proprietà dell’oggetto modello dati del modulo di pari livello rispetto alle proprietà tracciate sull’asse X e sull’asse Y. Inoltre, per le serie multiple, definire una proprietà oggetto modello dati che sia un'entità figlio della proprietà oggetto modello dati definita per la serie.</code></li>
-     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Utilizzare la proprietà dell'oggetto modello dati del modulo per il punto di riferimento e il valore definito in questo campo per identificare il punto di riferimento per il grafico.<br /> <strong>Etichette quadrante &gt; In alto a sinistra:</strong> Disponibile per i grafici a quadrante per specificare il nome del quadrante superiore sinistro.</code></li>
+     <li><strong>Punto di riferimento &gt; Asse X: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di associazione per specificare il valore dell'asse X per il punto di riferimento.</li>
+     <li><strong>Punto di riferimento &gt; Asse Y: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di associazione per specificare il valore dell'asse Y per il punto di riferimento.</li>
+     <li><strong>Punto di riferimento &gt; Oggetto modello dati per serie: </strong>Disponibile per grafici a quadrante a serie multiple se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Definisci le proprietà oggetto modello dati del modulo per identificare la serie per il punto di riferimento. </li>
+     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per serie: </strong>Disponibile per grafici a quadrante a serie multiple se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Utilizzare la proprietà object del modello dati del modulo per la serie e il valore definito in questo campo per identificare la serie per il punto di riferimento.</li>
+     <li><strong>Punto di riferimento &gt; Oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Definisci una proprietà dell’oggetto modello dati del modulo di pari livello rispetto alle proprietà tracciate sull’asse X e sull’asse Y. Inoltre, per le serie multiple, definire una proprietà oggetto modello dati che sia un'entità figlio della proprietà oggetto modello dati definita per la serie.</li>
+     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Utilizzare la proprietà dell'oggetto modello dati del modulo per il punto di riferimento e il valore definito in questo campo per identificare il punto di riferimento per il grafico.<br /> <strong>Etichette quadrante &gt; In alto a sinistra:</strong> Disponibile per i grafici a quadrante per specificare il nome del quadrante superiore sinistro.</li>
      <li><strong>Etichette quadrante &gt; In alto a destra:</strong> Disponibile per i grafici a quadrante per specificare il nome del quadrante superiore destro.</li>
      <li><strong>Etichette quadrante &gt; In basso a destra: </strong>Disponibile per i grafici a quadrante per specificare il nome del quadrante inferiore destro.</li>
      <li><strong>Etichette quadrante &gt; In basso a sinistra: </strong>Disponibile per i grafici a quadrante per specificare il nome del quadrante inferiore sinistro.</li>
@@ -270,7 +270,7 @@ A questo scopo, specifica le seguenti proprietà:
 * **[!UICONTROL Tipo di grafico]** - Seleziona **[!UICONTROL Anello]** dall’elenco a discesa.
 * **[!UICONTROL Oggetti modello dati]** : seleziona le proprietà dell’oggetto modello dati per creare associazioni di dati per l’asse X (tipo di spesa) e l’asse Y (importo transazione).
 * **[!UICONTROL Raggio interno]** - Specificate il valore Raggio interno (Inner Radius) come 150 per specificare il raggio (in pixel) del cerchio interno del grafico.
-* **[!UICONTROL Descrizione]** - Utilizzare il formato predefinito ${x}(${y}) per visualizzare la descrizione comando. La descrizione comando viene visualizzata come: Tipo di spesa (Importo transazione). Esempio: debito per Bitcoin(10000).
+* **[!UICONTROL Descrizione]** - Utilizza il ${x}(${y}) per visualizzare la descrizione comando. La descrizione comando viene visualizzata come: Tipo di spesa (Importo transazione). Esempio: debito per Bitcoin(10000).
 
 ![Grafico ad anello nel canale web di una comunicazione interattiva](assets/sample_chart_web_new.png)
 

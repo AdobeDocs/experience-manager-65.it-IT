@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6228'
+source-wordcount: '6226'
 ht-degree: 0%
 
 ---
@@ -666,7 +666,6 @@ Per gestire ruoli e autorizzazioni tramite l’API del servizio Gestione autoriz
    * A `java.lang.String` oggetto che contiene l&#39;identificatore del ruolo.
    * Un array di `java.lang.String` oggetti contenenti gli identificatori principali.
 
-
 **Consulta anche**
 
 [Riepilogo dei passaggi](users.md#summary-of-steps)
@@ -713,7 +712,6 @@ Gestisci ruoli e autorizzazioni tramite l’API del servizio Gestione autorizzaz
 
    * A `string` oggetto che contiene l&#39;identificatore del ruolo.
    * Un array di `string` oggetti contenenti gli identificatori principali.
-
 
 **Consulta anche**
 
@@ -910,7 +908,7 @@ Prima di poter sincronizzare gli utenti a livello di programmazione, è necessar
 
 **Specificare il dominio enterprise**
 
-Prima di eseguire un&#39;operazione di sincronizzazione utilizzando l&#39;API User Management, è necessario specificare il dominio enterprise a cui appartengono gli utenti. È possibile specificare uno o più domini enterprise. Prima di poter eseguire un&#39;operazione di sincronizzazione a livello di programmazione, è necessario impostare un dominio enterprise utilizzando la console di amministrazione. (vedere [aiuto per l’amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Prima di eseguire un&#39;operazione di sincronizzazione utilizzando l&#39;API User Management, è necessario specificare il dominio enterprise a cui appartengono gli utenti. È possibile specificare uno o più domini enterprise. Prima di poter eseguire un&#39;operazione di sincronizzazione a livello di programmazione, è necessario impostare un dominio enterprise utilizzando la console di amministrazione. (vedere [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Richiama l’operazione di sincronizzazione**
 

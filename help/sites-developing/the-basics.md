@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3325'
 ht-degree: 1%
 
 ---
@@ -302,7 +302,7 @@ A questo scopo puoi utilizzare sling:include(&quot;/&lt;path>/&lt;resource>&quot
 
 ## OSGI {#osgi}
 
-OSGi definisce un’architettura per lo sviluppo e la distribuzione di librerie e applicazioni modulari (nota anche come Dynamic Module System per Java). I contenitori OSGi ti consentono di suddividere l’applicazione in singoli moduli (file jar con metadati aggiuntivi e denominati bundle nella terminologia OSGi) e di gestire le dipendenze incrociate tra di essi con:
+OSGi definisce un’architettura per lo sviluppo e la distribuzione di librerie e applicazioni modulari (nota anche come Dynamic Module System per Java). I contenitori OSGi consentono di suddividere l’applicazione in singoli moduli (file jar con metadati aggiuntivi e denominati bundle nella terminologia OSGi) e di gestire le dipendenze incrociate tra di essi con:
 
 * servizi implementati all’interno del contenitore
 * un contratto tra il contenitore e l’applicazione
@@ -432,7 +432,7 @@ L’elenco seguente offre una panoramica della struttura visualizzata all’inte
 
 * `/libs`
 
-  Librerie e definizioni che appartengono al nucleo dell&#39;AEM. Le sottocartelle in `/libs` rappresenta le funzioni predefinite dell’AEM, ad esempio ricerca o replica. Il contenuto in `/libs` non deve essere modificato in quanto influisce sul modo in cui funziona l’AEM. Le funzioni specifiche del sito web devono essere sviluppate in `/apps` (vedere [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  Librerie e definizioni che appartengono al nucleo dell’AEM. Le sottocartelle in `/libs` rappresenta le funzioni predefinite dell’AEM, ad esempio ricerca o replica. Il contenuto in `/libs` non deve essere modificato in quanto influisce sul modo in cui funziona l’AEM. Le funzioni specifiche del sito web devono essere sviluppate in `/apps` (vedere [Personalizzazione di componenti e altri elementi](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 

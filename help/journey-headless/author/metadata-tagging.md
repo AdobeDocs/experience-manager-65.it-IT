@@ -2,10 +2,10 @@
 title: Scopri come definire metadati e tag per i frammenti di contenuto
 description: Scopri come definire metadati e tag per i frammenti di contenuto
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
-source-git-commit: d33abafa0478de1f7b637a14df6d2b7712000c03
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 91%
+source-wordcount: '257'
+ht-degree: 83%
 
 ---
 
@@ -30,15 +30,15 @@ Esistono tre metodi per aggiungere metadati e tag:
 
 * Quando crei il frammento per la prima volta:
 
-   ![Crea frammento di contenuto: specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+  ![Crea frammento di contenuto: specificare il nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* Il **Varianti** dell’editor dei frammenti di contenuto ti consente di aggiungere valori predefiniti **Tag** dal progetto:
+* Il **Varianti** dell’editor dei frammenti di contenuto ti consente di aggiungere **Tag** dal progetto:
 
-   ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Editor frammento di contenuto - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* La scheda **Metadati** dell’editor Frammento di contenuto ti consente di aggiungere sia vari campi di metadati sia **Tag** predefiniti dal progetto:
+* Il **Metadati** nell’editor dei frammenti di contenuto ti consente di aggiungere sia vari campi di metadati che campi predefiniti **Tag** dal progetto:
 
-   ![Editor frammento di contenuto: metadati](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+  ![Editor frammento di contenuto: metadati](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
    * È inoltre direttamente accessibile tramite l’opzione **Proprietà** nella barra degli strumenti della console Assets.
 

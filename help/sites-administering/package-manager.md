@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3572'
 ht-degree: 2%
 
 ---
@@ -56,14 +56,14 @@ Per creare, modificare, caricare e installare pacchetti, gli utenti devono dispo
 È possibile accedere a Gestione pacchetti in tre modi:
 
 1. Dal menu principale dell’AEM -> **Strumenti** -> **Distribuzione** -> **Pacchetti**
-1. Da [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) utilizzo della barra del commutatore superiore
+1. Da [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md) utilizzo della barra del commutatore superiore
 1. Direttamente accedendo a `http://<host>:<port>/crx/packmgr/`
 
 ### Interfaccia utente di Gestione pacchetti {#ui}
 
 Gestione pacchetti è suddiviso in quattro aree funzionali principali:
 
-* **Pannello di navigazione sinistro** : questo pannello consente di filtrare e ordinare l’elenco dei pacchetti.
+* **Pannello di navigazione sinistro** - Questo pannello consente di filtrare e ordinare l’elenco dei pacchetti.
 * **Elenco pacchetti** : elenco dei pacchetti nell’istanza filtrati e ordinati per selezioni nel pannello di navigazione a sinistra.
 * **Registro attività** : questo pannello viene ridotto a icona in un primo momento ed espande per descrivere nel dettaglio l’attività di Gestione pacchetti, ad esempio quando un pacchetto viene generato o installato. Nella scheda Registro attività sono disponibili pulsanti aggiuntivi per:
    * **Cancella registro**
@@ -492,9 +492,9 @@ Prima dell’installazione del pacchetto, Gestione pacchetti crea automaticament
 >[!CAUTION]
 >
 >* Se stai installando risorse digitali, devi:
-   >  Innanzitutto, disattiva WorkflowLauncher.
-   >  Utilizza l’opzione del menu Componenti della console OSGi per disattivare
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>  Innanzitutto, disattiva WorkflowLauncher.
+>  Utilizza l’opzione del menu Componenti della console OSGi per disattivare
+>  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* Al termine dell’installazione, riattiva WorkflowLauncher.
 >
 >La disattivazione di WorkflowLauncher garantisce che il framework di importazione delle risorse non modifichi (involontariamente) le risorse al momento dell’installazione.

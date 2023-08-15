@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3584'
+source-wordcount: '3582'
 ht-degree: 2%
 
 ---
@@ -381,7 +381,7 @@ Quando si avviano le fasi del processo durante il processo di un flusso di lavor
 
 Per definire un passaggio del processo come componente del servizio OSGI (bundle Java):
 
-1. Crea il bundle e distribuiscilo nel contenitore OSGI. Consulta la documentazione sulla creazione di un bundle con [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) o [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
+1. Crea il bundle e distribuiscilo nel contenitore OSGI. Consulta la documentazione sulla creazione di un bundle con [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md) o [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
 
    >[!NOTE]
    >
@@ -528,7 +528,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 Per utilizzare lo script:
 
-1. Crea lo script (ad esempio con CRXDE Lite) e salvalo nell’archivio seguente `//apps/workflow/scripts/`
+1. Crea lo script (ad esempio con CRXDE Liti) e salvalo nell’archivio seguente `//apps/workflow/scripts/`
 1. Per specificare un titolo che identifichi lo script in **Passaggio processo** finestra di dialogo per modifica, aggiungi le seguenti proprietà alla `jcr:content` nodo dello script:
 
    | Nome | Tipo | Valore |
@@ -645,7 +645,7 @@ function getParticipant() {
 }
 ```
 
-1. Crea lo script (ad esempio con CRXDE Lite) e salvalo nell’archivio seguente `//apps/workflow/scripts`
+1. Crea lo script (ad esempio con CRXDE Liti) e salvalo nell’archivio seguente `//apps/workflow/scripts`
 1. Per specificare un titolo che identifichi lo script in **Passaggio processo** finestra di dialogo per modifica, aggiungi le seguenti proprietà alla `jcr:content` nodo dello script:
 
    | Nome | Tipo | Valore |
@@ -892,7 +892,7 @@ Dopo [Creazione del passaggio di base](#creating-the-basic-step), definisci il p
 
 1. Configurare le proprietà sul nodo `cq:listeners`.
 
-   Il `cq:listener` Questo nodo e le relative proprietà consentono di impostare gestori eventi che reagiscono agli eventi nell’editor modelli dell’interfaccia utente touch, ad esempio trascinando un passaggio in una pagina modello o modificando le proprietà di un passaggio.
+   Il `cq:listener` Il nodo e le relative proprietà consentono di impostare gestori eventi che reagiscono agli eventi nell’editor modelli dell’interfaccia utente touch, ad esempio il trascinamento di un passaggio in una pagina del modello o la modifica delle proprietà di un passaggio.
 
    **Proprietà:**
 

@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 34%
+source-wordcount: '2663'
+ht-degree: 33%
 
 ---
 
@@ -147,11 +147,11 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 * **Panoramica delle Live Copy** (**Sites**)
 
-   * Questa console consente di: [visualizzare e gestire la blueprint e le relative live copy](/help/sites-administering/msm-livecopy-overview.md).
+   * Questa console consente di [visualizzare e gestire la blueprint e le relative live copy](/help/sites-administering/msm-livecopy-overview.md).
 
 * **Blueprint** (**Strumenti** - **Sites**)
 
-   * Questa console consente di [creare e gestire le configurazioni della blueprint](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+   * Questa console consente di [creare e gestire le configurazioni blueprint](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -337,7 +337,7 @@ Una Live Copy è nota come Live Copy sovrapposta quando viene creata come figlia
 
 Qualsiasi pagina o ramo di pagine può essere utilizzata come origine di una Live Copy.
 
-Tuttavia, MSM consente anche di definire una configurazione blueprint che specifica un percorso sorgente. I vantaggi dell’utilizzo di una configurazione blueprint sono i seguenti:
+Tuttavia, MSM ti consente anche di definire una configurazione blueprint che specifica un percorso sorgente. I vantaggi dell’utilizzo di una configurazione blueprint sono i seguenti:
 
 * Consenti all&#39;autore di utilizzare **Rollout** su una blueprint: per inviare (esplicitamente) le modifiche alle Live Copy che ereditano da questa blueprint.
 * Consenti all’autore di utilizzare **Crea sito**; questo consente all’utente di selezionare facilmente le lingue e configurare la struttura della Live Copy.

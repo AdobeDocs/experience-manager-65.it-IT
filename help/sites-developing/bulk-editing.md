@@ -2,7 +2,7 @@
 title: Configurazione della pagina per la modifica in blocco delle proprietà di pagina
 seo-title: Configuring your Page for Bulk Editing of Page Properties
 description: La modifica in blocco delle proprietà di pagina consente di modificare le proprietà di più pagine contemporaneamente
-seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
+seo-description: Bulk editing of page properties lets you edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '413'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ A causa della possibilità di valori diversi, le proprietà della pagina non son
 
 I campi sono abilitati nel componente Pagina (*non* sul modello):
 
-1. Utilizzando CRXDE Lite (o un metodo equivalente) apri il componente Pagina.
+1. Utilizzando CRXDE Liti (o un metodo equivalente) apri il componente Pagina.
 
    Esempio: `/apps/core/wcm/components/page/v1/page`
 

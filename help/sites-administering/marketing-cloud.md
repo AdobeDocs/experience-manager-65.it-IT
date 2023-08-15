@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '845'
 ht-degree: 4%
 
 ---
@@ -75,7 +75,7 @@ In Adobe Experience Manager, puoi pubblicare le risorse digitali direttamente da
 
 Inoltre, puoi visualizzare le risorse Adobe Experience Manager pubblicate in Dynamic Media Classic in vari visualizzatori, ad esempio Zoom e video di base.
 
-Per ulteriori informazioni sull’integrazione di Adobe Experience Manager con Dynamic Media Classic, consulta [Integrazione con Dynamic Media Classic](/help/sites-administering/scene7.md) documentazione.
+Per ulteriori informazioni sull&#39;integrazione di Adobe Experience Manager con Dynamic Media Classic, vedere [Integrazione con Dynamic Media Classic](/help/sites-administering/scene7.md) documentazione.
 
 ## Integrazione con Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
@@ -95,7 +95,7 @@ L’integrazione dell’Audience Manager è stata rimossa nell’AEM 6.3.
 
 <!-- Search&Promote is end of life as of September 1, 2022 For information about integrating AEM and Search&Promote, see [Integrating with Adobe Search&Promote](/help/sites-administering/search-and-promote.md). -->
 
-## Integrazione con Adobe Campaign  {#integrating-with-adobe-campaign}
+## Integrazione con Adobe Campaign {#integrating-with-adobe-campaign}
 
 [Adobe Campaign](https://business.adobe.com/products/campaign/adobe-campaign.html) consente di gestire il contenuto della consegna e-mail direttamente in Adobe Experience Manager.
 

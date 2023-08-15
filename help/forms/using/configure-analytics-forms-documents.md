@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1532'
 ht-degree: 3%
 
 ---
@@ -109,10 +109,10 @@ Per creare una suite di rapporti, effettua le seguenti operazioni.
 
 ## Creazione della configurazione del Cloud Service {#creating-cloud-service-configuration}
 
-Per configurazione di Cloud Service si intendono le informazioni sul tuo account Adobe Analytics. La configurazione consente ad Adobe Experience Manager (AEM) di connettersi ad Adobe Analytics. Crea una configurazione separata per ogni account Analytics utilizzato.
+Per configurazione di Cloud Service si intendono le informazioni sul tuo account Adobe Analytics. La configurazione consente a Adobe Experience Manager (AEM) di connettersi ad Adobe Analytics. Crea una configurazione separata per ogni account Analytics utilizzato.
 
 1. Accedi all’istanza di authoring dell’AEM come amministratore.
-1. Nell’angolo in alto a sinistra, fai clic su **Adobe Experience Manager** > **Strumenti** ![icona a forma di martello](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services legacy**.
+1. Nell’angolo in alto a sinistra, fai clic su **Adobe Experience Manager** > **Strumenti** ![icona a forma di martello](/help/forms/using/assets/tools.png) > **Cloud Service** > **Cloud Service legacy**.
 1. Individua **Adobe Analytics** icona. Clic **Mostra configurazioni** e quindi fai clic su **[+]** per aggiungere una nuova configurazione.
 
    Se sei un utente alle prime armi, fai clic su **Configura ora**.
@@ -132,7 +132,7 @@ Per configurazione di Cloud Service si intendono le informazioni sul tuo account
 
 Un framework Adobe Analytics è un set di mappature tra variabili Adobe Analytics e variabili AEM. Utilizza un framework per configurare il modo in cui i moduli compilano i dati nei rapporti di Adobe Analytics. I framework sono associati a una configurazione Adobe Analytics. Puoi creare più framework per ogni configurazione.
 
-1. Nella console di AEM Cloud Services, fai clic su **Mostra configurazioni**, in Adobe Analytics.
+1. Nella console Servizi cloud AEM, fai clic su **Mostra configurazioni**, in Adobe Analytics.
 1. Fai clic su **[+]** accanto a accanto alla configurazione di Analytics.
 
    ![Configurazione Adobe Analytics](assets/adobe-analytics-cloud-services.png)

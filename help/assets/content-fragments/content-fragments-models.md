@@ -4,10 +4,10 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 6b9eb1a6df7cc4a8afab1c83d93d8a53bd94f6f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2332'
-ht-degree: 95%
+source-wordcount: '2328'
+ht-degree: 91%
 
 ---
 
@@ -55,7 +55,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
    Una volta aperto, l’editor modelli mostra:
 
    * a sinistra: campi già definiti
-   * a destra: **Tipi di dati** disponibili per la creazione di campi, oltre alle **Proprietà** da utilizzare dopo la creazione.
+   * a destra: **Tipi di dati** disponibili per la creazione di campi, oltre alle **Proprietà** da utilizzare dopo la creazione
 
    >[!NOTE]
    >
@@ -67,22 +67,22 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    * Trascina un tipo di dati obbligatorio nella posizione desiderata per un campo:
 
-      ![tipo di dati per il campo](assets/cfm-models-04.png)
+     ![tipo di dati per il campo](assets/cfm-models-04.png)
 
    * Una volta aggiunto un campo al modello, il pannello di destra visualizza le **Proprietà** che possono essere definite per quel particolare tipo di dati. Qui puoi definire ciò che è necessario per quel campo.
 
       * Molte proprietà sono auto-esplicative, per ulteriori dettagli vedi [Proprietà](#properties).
       * La digitazione di un’**Etichetta campo** completerà automaticamente il **Nome proprietà**. Se vuoto, può essere aggiornato manualmente in seguito.
 
-         >[!CAUTION]
-         >
-         >Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_”.
-         >
-         >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
-      Esempio:
+        >[!CAUTION]
+        >
+        >Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_”.
+        >
+        >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
-      ![proprietà del campo](assets/cfm-models-05.png)
+     Esempio:
 
+     ![proprietà del campo](assets/cfm-models-05.png)
 
 1. **Per rimuovere un campo**
 
@@ -131,10 +131,9 @@ Per definire il modello è disponibile una selezione di tipi di dati:
    * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
 Nell’editor modelli verrà mostrato come divisore che separa le sezioni dell’elenco dei tipi di dati di contenuto. Ogni istanza rappresenta l’inizio di una nuova scheda.
 Nell’editor frammenti ogni istanza viene visualizzata come una scheda.
-
-      >[!NOTE]
-      >
-      >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
+     >[!NOTE]
+     >
+     >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
 
 ## Proprietà {#properties}
 
@@ -143,18 +142,17 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 
 * **Nome proprietà**
 
-   Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **devono** contenere *solo* caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_“.
+  Quando aggiorni manualmente questa proprietà per un tipo di dati, tieni presente che i nomi **devono** contenere *solo* caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_“.
 
-   >[!CAUTION]
-   >
-   >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+  >[!CAUTION]
+  >
+  >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come** 
-Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore può visualizzare una singola istanza del campo o se può creare più istanze.
+Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore visualizzerà una singola istanza del campo o se potrà creare più istanze.
 
-* **Etichetta campo** 
-L’inserimento di 
-**Etichetta campo** genererà automaticamente un **Nome proprietà** che, se necessario, può essere aggiornato manualmente in seguito.
+* **Etichetta campo**
+Inserimento di un **Etichetta campo** genererà automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente se necessario.
 
 * **Convalida**
 La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.
@@ -165,24 +163,24 @@ La convalida di base è disponibile tramite meccanismi quali la proprietà **Obb
    * **Markdown**
    * **Testo normale**
 
-   Se non viene specificato diversamente, per questo campo viene utilizzato il valore predefinito **Rich Text**.
+  Se non viene specificato diversamente, per questo campo viene utilizzato il valore predefinito **Rich Text**.
 
-   La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
+  La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
 
 * **Univoco**
 Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti di contenuto creati dal modello corrente.
 
-   Questo viene utilizzato per impedire agli autori di contenuti di ripetere contenuti già aggiunti in un altro frammento dello stesso modello.
+  Questo viene utilizzato per impedire agli autori di contenuti di ripetere contenuti già aggiunti in un altro frammento dello stesso modello.
 
-   Ad esempio, un campo **Testo a riga singola** denominato `Country` nel modello per frammenti di contenuto non può avere il valore `Japan` in due frammenti di contenuto dipendenti. Viene visualizzato un avviso quando si tenta di eseguire la seconda istanza.
+  Ad esempio, un campo **Testo a riga singola** denominato `Country` nel modello per frammenti di contenuto non può avere il valore `Japan` in due frammenti di contenuto dipendenti. Viene visualizzato un avviso quando si tenta di eseguire la seconda istanza.
 
-   >[!NOTE]
-   >
-   >L’unicità è assicurata da directory principale lingua.
+  >[!NOTE]
+  >
+  >L’unicità è assicurata da directory principale lingua.
 
-   >[!NOTE]
-   >
-   >Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
+  >[!NOTE]
+  >
+  >Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
 
 * Vedi **[Riferimento contenuto](#content-reference)** per ulteriori dettagli su quel tipo di dati specifico e sulle relative proprietà.
 
@@ -222,10 +220,9 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 * **[Riferimento frammento](#fragment-reference-nested-fragments)** (frammenti nidificati)
    * Fa riferimento ad altri frammenti, a seconda dei modelli specifici indicati.
    * Consente di includere/recuperare dati strutturati.
-
-      >[!NOTE]
-      >
-      >Questo metodo è particolarmente interessante in relazione alla [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     >[!NOTE]
+     >
+     >Questo metodo è particolarmente interessante in relazione alla [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 >[!NOTE]
@@ -233,11 +230,10 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 >AEM ha una protezione periodica per:
 >
 >* Riferimenti contenuto
-   >  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
+>  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
 >
 >* Riferimenti frammento in GraphQL
-   >  Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituirà null.
-
+>  Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituirà null.
 
 ### Riferimento contenuto {#content-reference}
 
@@ -298,11 +294,11 @@ Specifica un percorso radice per tutti i frammenti a cui si fa riferimento.
 
 * **Consenti creazione di frammenti**
 
-   In questo modo l’autore del frammento potrà creare un nuovo frammento basato sul modello appropriato.
+  In questo modo l’autore del frammento potrà creare un nuovo frammento basato sul modello appropriato.
 
    * **fragmentreferencecomposite**: consente all’autore del frammento di creare un elemento composito selezionando più frammenti
 
-   ![Riferimento frammento](assets/cfm-fragment-reference.png)
+  ![Riferimento frammento](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
 >
@@ -367,15 +363,16 @@ Per configurare i **Criteri** dei **Modelli per frammenti di contenuto consentit
 
    * **Ereditato da`<folder>`**
 
-      I criteri vengono ereditati automaticamente durante la creazione di nuove cartelle secondarie; il criterio può essere riconfigurato (interrompendo l’ereditarietà) se le sottocartelle devono consentire modelli diversi dalla cartella principale.
+     I criteri vengono ereditati automaticamente durante la creazione di nuove cartelle secondarie; il criterio può essere riconfigurato (interrompendo l’ereditarietà) se le sottocartelle devono consentire modelli diversi dalla cartella principale.
 
    * **Modelli per frammenti di contenuto consentiti per percorso**
 
-      Possono essere consentiti più modelli.
+     Possono essere consentiti più modelli.
 
    * **Modelli per frammenti di contenuto consentiti per tag**
 
-      Possono essere consentiti più modelli.
+     Possono essere consentiti più modelli.
+
    ![Criterio del modello per frammento di contenuto](assets/cfm-model-policy-assets-folder.png)
 
 1. **Salva** eventuali modifiche.

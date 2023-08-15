@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Tutto deve essere archiviato nell’archivio anziché affidarsi a origini dati s
 
 ### Utilizza il principio di progettazione &quot;prima il modello di contenuto&quot; {#use-the-content-model-first-design-principle}
 
-Quando crei una nuova funzione, inizia sempre progettando prima la struttura del contenuto JCR, quindi cerca di leggere e scrivere il contenuto utilizzando i servlet Sling predefiniti. Questo consente di garantire il corretto funzionamento dell’implementazione con meccanismi di controllo dell’accesso predefiniti e di evitare la generazione di servlet di tipo CRUD non necessari.
+Quando crei una nuova funzione, inizia sempre progettando prima la struttura del contenuto JCR, quindi cerca di leggere e scrivere il contenuto utilizzando i servlet Sling predefiniti. Questo consente di garantire il corretto funzionamento dell’implementazione con meccanismi di controllo dell’accesso predefiniti, evitando di generare servlet di tipo CRUD non necessari.
 
 ### Essere RESTful {#be-restful}
 

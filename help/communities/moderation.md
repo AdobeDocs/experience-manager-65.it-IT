@@ -12,9 +12,9 @@ discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2041'
 ht-degree: 4%
 
 ---
@@ -186,8 +186,9 @@ Per aggiungere altre risorse da filtrare:
 
    * Ad esempio, per filtrare in base ai componenti di voto inclusi, immettere:
 
-      `Voting=social/tally/components/hbs/voting`
-   ![additional-contenttype](assets/additional-contenttype.png)
+     `Voting=social/tally/components/hbs/voting`
+
+  ![additional-contenttype](assets/additional-contenttype.png)
 
 * Seleziona Salva.
 * Aggiorna la console Community - Moderazione.
@@ -242,11 +243,11 @@ Il [progetto di esempio](https://github.com/Adobe-Marketing-Cloud/aem-communitie
 
 Per installare l’esempio per il filtro Tag:
 
-1. Apri Gestione pacchetti in AEM Author (`https://[aem-author]:4502/crx/packmgr/index.jsp`) e AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Apri Gestione pacchetti in AEM Author (`https://[aem-author]:4502/crx/packmgr/index.jsp`) e pubblicazione AEM (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
 1. Creare il pacchetto `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` dal codice Github, e installarlo e abilitarlo.
-1. Apri la console dei bundle in AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Apri la console dei bundle in AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e pubblicazione AEM ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Creare il pacchetto (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) da Github, e installarlo e attivarlo.
-1. Vai a **/apps/social/moderation/facets** nodo in AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) e AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
+1. Vai a **/apps/social/moderation/facets** node su AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) e pubblicazione AEM (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Aggiungere un utente tecnico **community-utility-reader** con `jcr:read` autorizzazioni.
 
 Per esporre i filtri personalizzati sui siti community esistenti:

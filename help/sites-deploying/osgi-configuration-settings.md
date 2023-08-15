@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3430'
+source-wordcount: '3429'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) son
 >
 >Questa configurazione deve essere effettuata utilizzando la console Felix in base alle esigenze all’avvio, prima che l’archivio sia disponibile.
 
-**Logger dati della richiesta personalizzabile Apache Sling** Configura:
+**Registratore dati di richieste personalizzabili Apache Sling** Configura:
 
 * **Nome logger** e **Formato registro** per configurare il percorso e il formato della registrazione delle richieste e degli accessi (impostazione predefinita: `request.log`). Questo file di registro è essenziale per l’analisi delle prestazioni o delle funzionalità di debug relative alla catena web. È abbinato al [Logger richieste Apache Sling](#apacheslingrequestlogger).
 
@@ -318,15 +318,15 @@ Utilizzando AEM Root Mapping puoi configurare l’interfaccia utente che desider
 
 * Per impostare l&#39;interfaccia touch come interfaccia predefinita, **Percorso di destinazione** deve puntare ai seguenti elementi:
 
-   ```shell
-      /projects.html
-   ```
+  ```shell
+     /projects.html
+  ```
 
 * Per impostare l&#39;interfaccia classica come interfaccia predefinita, **Percorso di destinazione** deve puntare ai seguenti elementi:
 
-   ```shell
-      /welcome.html
-   ```
+  ```shell
+     /welcome.html
+  ```
 
 >[!NOTE]
 >
@@ -340,8 +340,7 @@ Sono disponibili diverse proprietà di configurazione:
 Percorso per cui è attivo il gestore di autenticazione. Se questo parametro viene lasciato vuoto, il gestore di autenticazione viene disabilitato. Ad esempio, il percorso / determina l’utilizzo del gestore di autenticazione per l’intero archivio.
 
 * **Classifica dei servizi**
-Il valore Classifica servizio framework OSGi viene utilizzato per indicare l’ordine utilizzato per chiamare questo servizio. Questo valore è un 
-`int` valore in cui i valori più alti indicano una precedenza maggiore.
+Il valore Classifica servizio framework OSGi viene utilizzato per indicare l’ordine utilizzato per chiamare questo servizio. Questo valore è un `int` valore in cui i valori più alti indicano una precedenza maggiore.
 Il valore predefinito è `0`.
 
 * **Nomi intestazione**
@@ -354,8 +353,7 @@ Nomi dei cookie che potrebbero contenere un ID utente.
 Nomi dei parametri di richiesta che potrebbero fornire l’ID utente.
 
 * **Mappa utente**
-Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell’oggetto credenziali. La mappatura è definita qui. Se il nome utente 
-`admin` viene visualizzato su entrambi i lati della mappa, la mappatura viene ignorata. Il carattere &quot;=&quot; deve essere preceduta da &quot;\&quot;.
+Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell’oggetto credenziali. La mappatura è definita qui. Se il nome utente `admin` viene visualizzato su entrambi i lati della mappa, la mappatura viene ignorata. Il carattere &quot;=&quot; deve essere preceduta da &quot;\&quot;.
 
 * **Formato**
 Indica il formato in cui viene fornito l’ID utente. Utilizzare:

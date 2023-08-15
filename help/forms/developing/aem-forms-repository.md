@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '9117'
+source-wordcount: '9113'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,6 @@ Crea una cartella utilizzando l’API del servizio Repository (Java):
    Impostare la descrizione della cartella utilizzando `setDescription` e passa il seguente parametro:
 
    * A `String` che descrive la raccolta di risorse. In questo esempio, `"test Folder"` viene utilizzato `.`
-
 
 1. Scrivere la cartella nel repository
 
@@ -479,7 +478,7 @@ Puoi recuperare le risorse da una determinata posizione nell’archivio per legg
 
 L’archivio dispone dei seguenti quattro tipi di autorizzazioni:
 
-* **attraversare**: ti consente di elencare le risorse, ovvero di leggere i metadati delle risorse ma non il loro contenuto
+* **attraversare**: ti consente di elencare le risorse, ovvero di leggere i metadati delle risorse ma non il contenuto delle risorse
 * **letto**: consente di leggere il contenuto delle risorse
 * **scrivere**: consente di scrivere il contenuto delle risorse
 * **gestione degli elenchi di controllo di accesso (ACL)**: consente di manipolare gli ACL sulle risorse

@@ -2,7 +2,7 @@
 title: Recupero documenti XDP e PDF in AEM Forms
 seo-title: Getting XDP and PDF documents in AEM Forms
 description: AEM Forms consente di caricare moduli e risorse supportate da utilizzare con i moduli adattivi. Puoi anche caricare in blocco i moduli e le risorse correlate come file ZIP.
-seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
+seo-description: AEM Forms lets you upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: cd49b4a8-c282-4059-95a0-c98f6c92ab14
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Una volta completato il caricamento, un flusso di lavoro in background genera le
 
 ### Modalità protetta {#protected-mode}
 
-Il server AEM Forms ti consente di eseguire il codice JavaScript. Un codice JavaScript dannoso può danneggiare un ambiente AEM Forms. La modalità protetta impedisce ad AEM Forms di eseguire file XDP solo da posizioni e risorse attendibili. Tutti gli XDP disponibili nell’interfaccia utente di AEM Forms sono considerati risorse attendibili.
+Il server AEM Forms consente di eseguire il codice JavaScript. Un codice JavaScript dannoso può danneggiare un ambiente AEM Forms. La modalità protetta impedisce ad AEM Forms di eseguire file XDP solo da posizioni e risorse attendibili. Tutti gli XDP disponibili nell’interfaccia utente di AEM Forms sono considerati risorse attendibili.
 
 Per impostazione predefinita, la modalità protetta è attivata. Se necessario, puoi disattivare la modalità protetta:
 
@@ -81,7 +81,7 @@ Un modulo adattivo che fa riferimento a un XFA ha i suoi campi associati a quell
 La rimozione di un modello di modulo danneggia il modulo adattivo o il modello di modulo dipendente. Un modulo adattivo di questo tipo è talvolta indicato informalmente come modulo sporco. Nell’interfaccia utente di AEM Forms, puoi trovare i moduli dirty nei due modi seguenti.
 
 * Nella miniatura del modulo adattivo nell’elenco delle risorse viene visualizzata un’icona di avviso e il seguente messaggio viene visualizzato quando passi il puntatore sull’icona di avviso.\
-   `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
 
 ![Avviso per un modulo adattivo non sincronizzato dopo l’aggiornamento dell’XFA associato](assets/dirtyaf.png)
 

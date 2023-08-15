@@ -1,17 +1,13 @@
 ---
 title: Aggiungi azione/pulsante personalizzato nell’interfaccia utente per la creazione di corrispondenza
-seo-title: Add custom action/button in Create Correspondence UI
 description: Scopri come aggiungere un’azione/pulsante personalizzato nell’interfaccia utente per la creazione di corrispondenza
-seo-description: Learn how to add custom action/button in Create Correspondence UI
-uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 1%

@@ -8,9 +8,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -80,14 +80,14 @@ Forms dedicato ad Adobe Campaign dispone di componenti specifici. Questi compone
 Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulteriori informazioni su una panoramica più generale dell’utilizzo dei moduli in Adobe Experience Manager, consulta [Componenti modalità di modifica](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Passare al modulo da modificare.
-1. Nella casella degli strumenti, seleziona **Pagina** > **Proprietà pagina...** quindi vai al **Cloud Services** della finestra popup.
+1. Nella casella degli strumenti, seleziona **Pagina** > **Proprietà pagina...** quindi vai al **Cloud Service** della finestra popup.
 1. Aggiungi il servizio Adobe Campaign facendo clic su **Aggiungi servizio** e quindi selezionando la configurazione che corrisponde all’istanza di Adobe Campaign nell’elenco a discesa del servizio. Questa configurazione viene eseguita durante la configurazione della connessione tra le istanze. Per ulteriori informazioni, consulta [Collegamento dell’AEM ad Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >
    >Se necessario, sblocca la configurazione facendo clic sull’icona del lucchetto per poter aggiungere il servizio Adobe Campaign.
 
-1. Accedere ai parametri generali della maschera utilizzando **Modifica** all&#39;inizio del modulo. Il **Modulo** Questa scheda ti consente di selezionare una pagina di ringraziamento alla quale l’utente verrà reindirizzato dopo aver convalidato il modulo.
+1. Accedere ai parametri generali della maschera utilizzando **Modifica** all&#39;inizio del modulo. Il **Modulo** Questa scheda consente di selezionare una pagina di ringraziamento alla quale l&#39;utente verrà reindirizzato dopo aver convalidato il modulo.
 
    Il **Avanzate** modulo consente di selezionare il tipo di modulo. Il **Opzioni post** Questo campo consente di scegliere tra tre tipi di Adobe Campaign forms:
 

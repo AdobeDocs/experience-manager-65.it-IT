@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '897'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ L’ambiente di authoring di AEM offre diversi metodi per organizzare e modifica
 
 ## Amministrazione sito {#site-administration}
 
-Il **Siti Web** La console consente di gestire e navigare nel sito web. Utilizzando i due riquadri è possibile espandere la struttura del sito web e intraprendere azioni sull’elemento richiesto:
+Il **Siti Web** console consente di gestire e navigare nel sito web. Utilizzando i due riquadri è possibile espandere la struttura del sito web e intraprendere azioni sull’elemento richiesto:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -46,7 +46,7 @@ Oppure utilizzando **Aiuto** nella finestra di dialogo per modifica di component
 
 ## Sidekick {#sidekick}
 
-Il **Componenti** La scheda della barra laterale consente di sfogliare i componenti disponibili per l’aggiunta alla pagina corrente. Il gruppo richiesto può essere espanso, quindi un componente può essere trascinato nella posizione desiderata sulla pagina.
+Il **Componenti** scheda della barra laterale consente di sfogliare i componenti disponibili per l’aggiunta alla pagina corrente. Il gruppo richiesto può essere espanso, quindi un componente può essere trascinato nella posizione desiderata sulla pagina.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -59,7 +59,7 @@ Puoi utilizzare Content Finder per individuare una serie di risorse. Se necessar
 * [Immagini](#finding-images)
 * [Documenti](#finding-documents)
 * [Filmati](#finding-movies)
-* [Browser Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Browser Dynamic Medie](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [Pagine](#finding-pages)
 
 * [Paragrafi](#referencing-paragraphs-from-other-pages)
@@ -106,7 +106,7 @@ Questa scheda mostra tutte le pagine. Fare doppio clic su una pagina per aprirla
 
 ### Riferimento a paragrafi da altre pagine {#referencing-paragraphs-from-other-pages}
 
-Questa scheda ti consente di cercare un’altra pagina. Verranno elencati tutti i paragrafi di quella pagina. È quindi possibile trascinare un paragrafo nella pagina corrente per creare un riferimento al paragrafo originale.
+Questa scheda consente di cercare un’altra pagina. Verranno elencati tutti i paragrafi di quella pagina. È quindi possibile trascinare un paragrafo nella pagina corrente per creare un riferimento al paragrafo originale.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 

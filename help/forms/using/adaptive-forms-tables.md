@@ -10,9 +10,9 @@ discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2475'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ Colonna espansa di una tabella su un dispositivo mobile
 
 ## Unire i dati in una tabella {#merge-data-in-a-table}
 
-Le tabelle nei moduli adattivi consentono di compilare la tabella in fase di esecuzione utilizzando i dati di un file XML. Il file XML dati può trovarsi nel file system locale del computer in cui è in esecuzione il server AEM Forms o nell’archivio CRX.
+Le tabelle nei moduli adattivi consentono di popolare la tabella in fase di esecuzione utilizzando i dati di un file XML. Il file XML dati può trovarsi nel file system locale del computer in cui è in esecuzione il server AEM Forms o nell’archivio CRX.
 
 Prendiamo ad esempio la seguente tabella di riepilogo delle transazioni bancarie che vogliamo compilare con i dati di un file XML.
 

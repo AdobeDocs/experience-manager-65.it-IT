@@ -7,20 +7,20 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3251'
 ht-degree: 1%
 
 ---
 
 # Gestione dei progetti - Elenco di controllo delle best practice{#managing-projects-best-practices-checklist}
 
-La gestione di un progetto per l’implementazione di Adobe Experience Manager (AEM) richiede una pianificazione e una comprensione approfondite per garantire che tu sia a conoscenza dei problemi e delle decisioni (correlate) che devi prendere, prima e durante l’implementazione del progetto.
+La gestione di un progetto per l’implementazione di Adobe Experience Manager (AEM) richiede una pianificazione e una comprensione approfondite che garantiscano la consapevolezza dei problemi e delle decisioni (correlate) da prendere prima e durante l’implementazione del progetto.
 
 Per aiutarti, le best practice consistono in:
 
-* Un [elenco di controllo interattivo](/help/managing/best-practices-checklist.md) che ti consente di monitorare e tenere traccia dei tuoi progressi con queste best practice.
+* Un [elenco di controllo interattivo](/help/managing/best-practices-checklist.md) che ti consente di monitorare i tuoi progressi con queste best practice.
 
    * Definisce gli input e i risultati finali in base a fase, milestone e persona.
    * Fornisce panoramiche automatizzate (qualità, integrità e completezza) per indicare lo stato di avanzamento e l’integrità del progetto.
@@ -341,7 +341,7 @@ Lo sviluppo è una fase cruciale che richiede qualcosa di più di una semplice c
 
   Se necessario, assicurati che tutti i membri del team e la persona del progetto siano tenuti aggiornati.
 
-* **Documentazione**.
+* **Documentazione**
 
   Documentare completamente la soluzione, inclusi:
 

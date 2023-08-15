@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 75e1697c301dca3a649833a45caa1753fdc81514
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,6 @@ La funzione dei rapporti sulle transazioni è disponibile come parte del pacchet
 >* Prima di utilizzare la generazione rapporti sulle transazioni, assicurati che la replica inversa sia abilitata per tutte le istanze di pubblicazione.
 >* I dati delle transazioni vengono replicati in modo inverso da un’istanza Publish all’unica istanza di authoring o elaborazione corrispondente. L’istanza di authoring o elaborazione non può replicare ulteriormente i dati in un’altra istanza.
 >
-
 
 ### Abilita replica inversa su tutte le istanze di pubblicazione {#enable-reverse-replication-on-all-the-publish-instances}
 

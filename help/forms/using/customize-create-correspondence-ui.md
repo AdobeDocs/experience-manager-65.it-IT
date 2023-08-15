@@ -11,9 +11,9 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Gestione della corrispondenza consente di modificare il modello della soluzione per migliorare il valore del brand e aderire agli standard di branding della tua organizzazione. Il rebranding dell’interfaccia utente comporta la modifica del logo dell’organizzazione, visualizzato nell’angolo in alto a sinistra dell’interfaccia utente per la creazione di corrispondenza.
+Gestione della corrispondenza consente di aggiornare il modello della soluzione per migliorare il valore del brand e rispettare gli standard di branding della tua organizzazione. Il rebranding dell’interfaccia utente comporta la modifica del logo dell’organizzazione, visualizzato nell’angolo in alto a sinistra dell’interfaccia utente per la creazione di corrispondenza.
 
 Puoi modificare il logo nell’interfaccia utente per la creazione di corrispondenza con il logo dell’organizzazione.
 

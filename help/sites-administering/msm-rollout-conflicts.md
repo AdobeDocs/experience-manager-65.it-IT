@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 31%
+source-wordcount: '906'
+ht-degree: 28%
 
 ---
 
@@ -34,7 +34,7 @@ Per garantire che il rollout non sia bloccato, le definizioni possibili possono 
 * quali pagine saranno rinominate (e come),
 * come questo influenzerà eventuali contenuti pubblicati.
 
-   Il comportamento predefinito dell’AEM (predefinito) è che il contenuto pubblicato non sarà interessato. Pertanto, se una pagina creata manualmente nel ramo Live Copy è stata pubblicata, il contenuto verrà comunque pubblicato dopo la gestione e il rollout dei conflitti.
+  Il comportamento predefinito dell’AEM (predefinito) è che il contenuto pubblicato non sarà interessato. Pertanto, se una pagina creata manualmente nel ramo Live Copy è stata pubblicata, il contenuto verrà comunque pubblicato dopo la gestione e il rollout dei conflitti.
 
 Oltre alla funzionalità standard, è possibile aggiungere gestori di conflitti personalizzati per implementare regole diverse. Questi possono anche consentire la pubblicazione di azioni come un singolo processo.
 
@@ -44,11 +44,11 @@ Nelle sezioni seguenti viene utilizzato l’esempio di una nuova pagina `b`, cre
 
 * blueprint: `/b`
 
-   Una pagina master; con 1 pagina figlio, bp-level-1.
+  Una pagina master; con 1 pagina figlio, bp-level-1.
 
 * live copy: `/b`
 
-   Una pagina creata manualmente nel ramo Live Copy; con 1 pagina figlio, `lc-level-1`.
+  Una pagina creata manualmente nel ramo Live Copy; con 1 pagina figlio, `lc-level-1`.
 
    * Attivato al momento della pubblicazione come `/b`, insieme alla pagina figlio.
 
@@ -62,14 +62,14 @@ Nelle sezioni seguenti viene utilizzato l’esempio di una nuova pagina `b`, cre
    <td><strong>pubblica prima del rollout</strong></td>
   </tr>
   <tr>
-   <td><code>b</code> <br /> (creato nel ramo blueprint, pronto per il rollout)<br /> </td>
-   <td><code>b</code> <br /> (creato manualmente nel ramo live copy)<br /> </td>
-   <td><code>b</code> <br /> (contiene il contenuto della pagina b creato manualmente nel ramo live copy)</td>
+   <td><code>b</code><br /> <br /> (creato nel ramo blueprint, pronto per il rollout)<br /> </td>
+   <td><code>b</code><br /> <br /> (creato manualmente nel ramo live copy)<br /> </td>
+   <td><code>b</code><br /> <br /> (contiene il contenuto della pagina b creato manualmente nel ramo live copy)</td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (creato manualmente nel ramo live copy)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (contiene il contenuto della pagina)<br /> child-level-1 creato manualmente nel ramo live copy)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (creato manualmente nel ramo live copy)<br /> </td>
+   <td><code> /lc-level-1</code><br /> <br /> (contiene il contenuto della pagina)<br /> child-level-1 creato manualmente nel ramo live copy)</td>
   </tr>
  </tbody>
 </table>
@@ -82,9 +82,9 @@ Questa operazione viene eseguita utilizzando [Configurazione OSGi](/help/sites-d
 
 * **Gestire i conflitti con le pagine create manualmente**:
 
-   ( `rolloutmgr.conflicthandling.enabled`)
+  ( `rolloutmgr.conflicthandling.enabled`)
 
-   Impostato su true se il gestore di rollout deve gestire i conflitti da una pagina creata nella Live Copy con un nome esistente nella blueprint.
+  Impostato su true se il gestore di rollout deve gestire i conflitti da una pagina creata nella Live Copy con un nome esistente nella blueprint.
 
 AEM segue un [comportamento predefinito quando la gestione dei conflitti è stata disattivata](#behavior-when-conflict-handling-deactivated).
 
@@ -114,13 +114,13 @@ Questo gestore di conflitti ha la precedenza sulla blueprint. Pagina Live Copy `
 
 * live copy: `/b`
 
-   Viene spostato (all’interno della Live Copy) in `/b_msm_moved`. Questo funge da backup e assicura che non venga perso alcun contenuto.
+  Viene spostato (all’interno della Live Copy) in `/b_msm_moved`. Questo funge da backup e assicura che non venga perso alcun contenuto.
 
    * `lc-level-1` non viene spostato.
 
 * blueprint: `/b`
 
-   Viene distribuito alla pagina Live Copy `/b`.
+  Viene distribuito alla pagina Live Copy `/b`.
 
    * `bp-level-1` viene distribuito nella Live Copy.
 
@@ -137,17 +137,17 @@ Questo gestore di conflitti ha la precedenza sulla blueprint. Pagina Live Copy `
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (contiene il contenuto della pagina blueprint b su cui è stato eseguito il rollout)<br /> </td>
+   <td><code>b</code><br /> <br /> (contiene il contenuto della pagina blueprint b su cui è stato eseguito il rollout)<br /> </td>
    <td></td>
-   <td><code>b_msm_moved</code> <br /> (contiene il contenuto della pagina b creato manualmente nel ramo live copy)</td>
-   <td><code>b</code> <br /> (nessuna modifica; contiene il contenuto della pagina originale b creato manualmente nel ramo live copy e ora denominato b_msm_move)<br /> </td>
+   <td><code>b_msm_moved</code><br /> <br /> (contiene il contenuto della pagina b creato manualmente nel ramo live copy)</td>
+   <td><code>b</code><br /> <br /> (nessuna modifica; contiene il contenuto della pagina originale b creato manualmente nel ramo live copy e ora denominato b_msm_move)<br /> </td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code class="code"> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (nessuna modifica)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (nessuna modifica)</td>
    <td><code> </code></td>
-   <td><code> /lc-level-1</code> <br /> (nessuna modifica)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (nessuna modifica)</td>
   </tr>
  </tbody>
 </table>
@@ -164,9 +164,9 @@ I gestori di conflitti personalizzati possono:
 
    * **Classifica dei servizi**:
 
-      Definisce l&#39;ordine relativo ad altri gestori di conflitti ( `service.ranking`).
+     Definisce l&#39;ordine relativo ad altri gestori di conflitti ( `service.ranking`).
 
-      Il valore predefinito è 0.
+     Il valore predefinito è 0.
 
 ### Comportamento quando la gestione dei conflitti è disattivata {#behavior-when-conflict-handling-deactivated}
 
@@ -180,11 +180,11 @@ In questo caso la Live Copy ha effettivamente la precedenza. La pagina blueprint
 
 * blueprint: `/b`
 
-   Non viene copiata, ma viene ignorata.
+  Non viene copiata, ma viene ignorata.
 
 * live copy: `/b`
 
-   Rimane la stessa.
+  Rimane la stessa.
 
 <table>
  <caption>
@@ -198,13 +198,13 @@ In questo caso la Live Copy ha effettivamente la precedenza. La pagina blueprint
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (nessuna modifica; presenta il contenuto della pagina b creato manualmente nel ramo live copy)</td>
-   <td><code>b</code> <br /> (nessuna modifica; contiene il contenuto della pagina b creato manualmente nel ramo live copy)<br /> </td>
+   <td><code>b</code><br /> <br /> (nessuna modifica; presenta il contenuto della pagina b creato manualmente nel ramo live copy)</td>
+   <td><code>b</code><br /> <br /> (nessuna modifica; contiene il contenuto della pagina b creato manualmente nel ramo live copy)<br /> </td>
   </tr>
   <tr>
-   <td><code> /bp-level-1</code> </td>
-   <td><code> /lc-level-1</code> <br /> (nessuna modifica)</td>
-   <td><code> /lc-level-1</code> <br /> (nessuna modifica)</td>
+   <td><code> /bp-level-1</code><br /> </td>
+   <td><code> /lc-level-1</code><br /> <br /> (nessuna modifica)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (nessuna modifica)</td>
   </tr>
  </tbody>
 </table>

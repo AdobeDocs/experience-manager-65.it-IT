@@ -8,9 +8,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2977'
 ht-degree: 2%
 
 ---
@@ -219,7 +219,7 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 
 #### Estensione della ricerca {#extending-search}
 
-È possibile modificare un facet esistente o aggiungerne di nuovi utilizzando CRXDE Lite:
+È possibile modificare un facet esistente o aggiungerne di nuovi utilizzando CRXDE Liti:
 
 1. Accedi a:
 
@@ -344,7 +344,7 @@ Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
 
 <!-- Search&Promote is end of life as of September 1, 2022 ### Product Feed {#product-feed} -->
 
-<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration allows you to: -->
+<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration lets you: -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 * use the eCommerce API, independently of the underlying repository structure and commerce platform. -->
 <!-- Search&Promote is end of life as of September 1, 2022 * leverage the Index Connector feature of Search&Promote to provide a product feed in XML format. -->

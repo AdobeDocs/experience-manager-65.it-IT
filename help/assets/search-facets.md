@@ -6,9 +6,9 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2416'
 ht-degree: 17%
 
 ---
@@ -45,7 +45,6 @@ Per le ricerche full-text, aggiungi **[!UICONTROL Testo intero]** predicato al m
    >1. Elimina `type` nodo.
    >1. Dal percorso `/libs/settings/dam/search/facets/assets/jcr:content/items`, copia i nodi `asset`, `directory`, `typeor`, `excludepaths`, e `searchtype` al percorso indicato nel passaggio 1.
    >1. Salva le modifiche.
-
 
 1. In [!UICONTROL Modifica Forms di ricerca] , trascinare un predicato dalla **[!UICONTROL Seleziona predicato]** al riquadro principale. Ad esempio, trascina **[!UICONTROL Predicato proprietà]**.
 
@@ -208,4 +207,3 @@ Se non ti è stato assegnato un ruolo di amministratore, ecco un elenco di autor
 >
 >* [Estendere la funzionalità di ricerca delle risorse](searchx.md)
 >* [Cercare risorse](search-assets.md)
-

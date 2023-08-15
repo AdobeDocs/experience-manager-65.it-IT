@@ -1,19 +1,15 @@
 ---
 title: Utilizzo delle librerie lato client
-seo-title: Using Client-Side Libraries
 description: AEM fornisce cartelle di librerie lato client, che consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client
-seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
-uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2860'
 ht-degree: 2%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 2%
 
 I siti web moderni si basano fortemente sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. L’organizzazione e l’ottimizzazione della trasmissione di questo codice possono essere un problema complesso.
 
-Per risolvere questo problema, l’AEM fornisce **Cartelle libreria lato client**, che ti consente di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client. Il sistema di librerie lato client si occupa quindi di generare i collegamenti corretti nella pagina web finale per caricare il codice corretto.
+Per risolvere questo problema, l’AEM fornisce **Cartelle libreria lato client**, che consente di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client. Il sistema di librerie lato client si occupa quindi di generare i collegamenti corretti nella pagina web finale per caricare il codice corretto.
 
 ## Funzionamento delle librerie lato client in AEM {#how-client-side-libraries-work-in-aem}
 
@@ -50,7 +46,7 @@ Una cartella di libreria lato client è un nodo di archivio di tipo `cq:ClientLi
   - channels (string) multiple
 ```
 
-Per impostazione predefinita, `cq:ClientLibraryFolder` I nodi possono essere posizionati ovunque all&#39;interno del `/apps`, `/libs` e `/etc` sottostrutture dell’archivio (queste impostazioni predefinite e altre impostazioni possono essere controllate tramite **Adobe Granite HTML Library Manager** pannello del [Console di sistema](https://localhost:4502/system/console/configMgr)).
+Per impostazione predefinita, `cq:ClientLibraryFolder` I nodi possono essere posizionati ovunque all’interno del `/apps`, `/libs` e `/etc` sottostrutture dell’archivio (queste impostazioni predefinite e altre impostazioni possono essere controllate tramite **Adobe Granite HTML Library Manager** pannello del [Console di sistema](https://localhost:4502/system/console/configMgr)).
 
 Ogni `cq:ClientLibraryFolder` viene compilato con un set di file JS e/o CSS, insieme ad alcuni file di supporto (vedi di seguito). Le proprietà del `cq:ClientLibraryFolder` sono configurate come segue:
 
@@ -160,11 +156,11 @@ Quindi imposta il `allowProxy` proprietà su `foo` su true.
 
 >[!CAUTION]
 >
->L’Adobe consiglia di individuare le librerie client in `/apps` e renderle disponibili utilizzando il servlet proxy. Tuttavia, ricorda che la best practice richiede comunque che i siti pubblici non includano mai elementi serviti direttamente tramite un `/apps` o `/libs` percorso.
+>L’Adobe consiglia di individuare le librerie client in `/apps` e renderle disponibili utilizzando il servlet proxy. Tuttavia, ricorda che la best practice richiede ancora che i siti pubblici non includano mai elementi serviti direttamente tramite un `/apps` o `/libs` percorso.
 
 ### Creare una cartella della libreria client {#create-a-client-library-folder}
 
-1. Apri CRXDE Lite in un browser Web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Apri CRXDE Liti in un browser Web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Seleziona la cartella in cui desideri individuare la cartella della libreria client e fai clic su **Crea > Crea nodo**.
 1. Immettere un nome per il file di libreria e nell&#39;elenco Tipo selezionare `cq:ClientLibraryFolder`. Clic **OK** e quindi fare clic su **Salva tutto**.
 1. Per specificare la categoria o le categorie a cui appartiene la libreria, seleziona la `cq:ClientLibraryFolder` , aggiungere la seguente proprietà e quindi fare clic su **Salva tutto**:

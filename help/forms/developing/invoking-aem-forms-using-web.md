@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '9902'
+source-wordcount: '9901'
 ht-degree: 0%
 
 ---
@@ -231,7 +231,7 @@ Protocollo di trasmissione per restituito `BLOB` Gli oggetti dipendono da divers
 
    * Il parametro dell&#39;endpoint SOAP del servizio Default Protocol for Output Blob Objects è impostato su Smart.
 
-     Per ogni servizio con un endpoint SOAP, la console di amministrazione consente di specificare il protocollo di trasmissione per i BLOB restituiti. (vedere [aiuto per l’amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
+     Per ogni servizio con un endpoint SOAP, la console di amministrazione consente di specificare il protocollo di trasmissione per i BLOB restituiti. (vedere [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
    * Il servizio AEM Forms accetta uno o più documenti come input.
 
@@ -475,7 +475,7 @@ Per generare i file della libreria Java Axis, effettuare le seguenti operazioni:
    * Aggiungi la directory bin al percorso della classe.
    * Imposta il `ANT_HOME` nella directory in cui è stata installata Ant.
 
-1. Installare Apache Axis 1.4 nel computer client. È disponibile all’indirizzo [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
+1. Installare Apache Axis 1.4 sul computer client. È disponibile all’indirizzo [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
 1. Impostare il percorso della classe per l&#39;utilizzo dei file JAR di Axis nel client del servizio Web, come descritto nelle istruzioni di installazione di Axis in [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Utilizzare lo strumento Apache WSDL2Java in Axis per generare classi proxy Java. Crea uno script di generazione della formica per eseguire questa attività. Lo script seguente è uno script di generazione Ant di esempio denominato build.xml:
 
@@ -1329,7 +1329,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene richiamato un serv
  }
 ```
 
-### Utilizzo di un assembly client .NET e autenticazione basata su SAML {#using-a-net-client-assembly-and-saml-based-authentication}
+### Utilizzo di un assembly client .NET e dell&#39;autenticazione basata su SAML {#using-a-net-client-assembly-and-saml-based-authentication}
 
 È possibile richiamare un servizio Forms utilizzando un assembly client .NET e l&#39;autenticazione basata su SAML. Per eseguire questa operazione, è necessario utilizzare il Web Service Enhancements 3.0 (WSE). Per informazioni sulla creazione di un assembly client .NET che utilizza WSE, vedere [Creazione di un progetto .NET che utilizza DIME](#creating-a-net-project-that-uses-dime).
 

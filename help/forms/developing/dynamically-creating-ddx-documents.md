@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Per questa discussione, si supponga che il seguente documento DDX venga creato i
  </DDX>
 ```
 
-Questo documento DDX disassembla un documento PDF. È consigliabile avere familiarità con lo smontaggio dei documenti di PDF.
+Questo documento DDX disassembla un documento PDF. È consigliabile avere familiarità con lo smontaggio dei documenti PDF.
 
 >[!NOTE]
 >
@@ -127,19 +127,19 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
 
 1. Creare il documento DDX.
 
-   * Creare un Java `DocumentBuilderFactory` oggetto chiamando il `DocumentBuilderFactory` classe&quot; `newInstance` metodo.
+   * Creare un Java `DocumentBuilderFactory` oggetto chiamando il `DocumentBuilderFactory` class&#39; `newInstance` metodo.
    * Creare un Java `DocumentBuilder` oggetto chiamando il `DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` metodo.
    * Chiama il `DocumentBuilder` dell&#39;oggetto `newDocument` metodo per creare un&#39;istanza di `org.w3c.dom.Document` oggetto.
-   * Creare l&#39;elemento radice del documento DDX richiamando `org.w3c.dom.Document` dell&#39;oggetto `createElement` metodo. Questo metodo crea un `Element` oggetto che rappresenta l&#39;elemento principale. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `setAttribute` metodo. Infine, aggiungi l’elemento all’elemento header chiamando l’elemento dell’intestazione `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
-      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
+   * Creare l&#39;elemento radice del documento DDX richiamando `org.w3c.dom.Document` dell&#39;oggetto `createElement` metodo. Questo metodo crea un `Element` oggetto che rappresenta l&#39;elemento principale. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `setAttribute` metodo. Infine, aggiungi l’elemento all’elemento header chiamando l’ `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+     ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Creare `PDFsFromBookmarks` chiamando l&#39; `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Imposta un valore per `PDFsFromBookmarks` elemento chiamando il relativo `setAttribute` metodo. Aggiungi `PDFsFromBookmarks` elemento al `DDX` chiamando l&#39;elemento DDX `appendChild` metodo. Passa il `PDFsFromBookmarks` come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
-      ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
+     ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
 
    * Creare un `PDF` chiamando l&#39; `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento. Invia il valore restituito a `Element`. Imposta un valore per `PDF` elemento chiamando il relativo `setAttribute` metodo. Aggiungi `PDF` elemento al `PDFsFromBookmarks` chiamando l&#39; `PDFsFromBookmarks` dell&#39;elemento `appendChild` metodo. Passa il `PDF` come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
-      ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
+     ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
 
 1. Converte il documento DDX.
 
@@ -224,15 +224,15 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
    * Creare un `System.Xml.XmlElement` mediante il costruttore.
    * Creare l&#39;elemento radice del documento DDX richiamando `XmlElement` dell&#39;oggetto `CreateElement` metodo. Questo metodo crea un `Element` oggetto che rappresenta l&#39;elemento principale. Passa un valore stringa che rappresenta il nome dell’elemento al `CreateElement` metodo. Imposta un valore per l&#39;elemento DDX chiamando il relativo `SetAttribute` metodo. Infine, aggiungere l&#39;elemento al documento DDX chiamando `XmlElement` dell&#39;oggetto `AppendChild` metodo. Passa l&#39;oggetto DDX come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
-      ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
+     ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
-   * Creare il documento DDX `PDFsFromBookmarks` chiamando l&#39; `XmlElement` dell&#39;oggetto `CreateElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `CreateElement` metodo. Quindi, imposta un valore per l’elemento chiamando il relativo `SetAttribute` metodo. Aggiungi `PDFsFromBookmarks` all&#39;elemento principale chiamando il `DDX` dell&#39;elemento `AppendChild` metodo. Passa il `PDFsFromBookmarks` come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Crea il documento DDX `PDFsFromBookmarks` chiamando l&#39; `XmlElement` dell&#39;oggetto `CreateElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `CreateElement` metodo. Quindi, imposta un valore per l’elemento chiamando il relativo `SetAttribute` metodo. Aggiungi `PDFsFromBookmarks` all&#39;elemento principale chiamando il `DDX` dell&#39;elemento `AppendChild` metodo. Passa il `PDFsFromBookmarks` come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
-      ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
+     ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
 
-   * Creare il documento DDX `PDF` chiamando l&#39; `XmlElement` dell&#39;oggetto `CreateElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `CreateElement` metodo. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `SetAttribute` metodo. Aggiungi `PDF` elemento al `PDFsFromBookmarks` chiamando l&#39; `PDFsFromBookmarks` dell&#39;elemento `AppendChild` metodo. Passa il `PDF` come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Crea il documento DDX `PDF` chiamando l&#39; `XmlElement` dell&#39;oggetto `CreateElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `CreateElement` metodo. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `SetAttribute` metodo. Aggiungi `PDF` elemento al `PDFsFromBookmarks` chiamando l&#39; `PDFsFromBookmarks` dell&#39;elemento `AppendChild` metodo. Passa il `PDF` come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
-      ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
+     ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
 
 1. Converte il documento DDX.
 
@@ -240,7 +240,7 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
    * Popolare il `MemoryStream` con il documento DDX utilizzando `XmlElement` oggetto che rappresenta il documento DDX. Richiama `XmlElement` dell&#39;oggetto `Save` e trasmettere il `MemoryStream` oggetto.
    * Creare una matrice di byte e popolarla con i dati presenti nella `MemoryStream` oggetto. Il codice seguente mostra questa logica dell’applicazione:
 
-      ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
+     ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 
    * Creare un `BLOB` oggetto. Assegnare la matrice di byte al `BLOB` dell&#39;oggetto `MTOM` campo.
 
@@ -272,7 +272,7 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
    Per ottenere i documenti di PDF appena creati, effettuare le seguenti operazioni:
 
    * Accedere a `AssemblerResult` dell&#39;oggetto `documents` campo, che è un `Map` oggetto contenente i documenti PDF disassemblati.
-   * Effettua iterazione attraverso `Map` per ottenere ogni documento risultante. Quindi, esegui il cast del membro dell’array `value` a un `BLOB`.
+   * Effettua iterazione attraverso `Map` per ottenere ogni documento risultante. Quindi, esegui il cast del membro di array `value` a un `BLOB`.
    * Estrarre i dati binari che rappresentano il documento PDF accedendo al relativo `BLOB` dell&#39;oggetto `MTOM` proprietà. Restituisce una matrice di byte che è possibile scrivere in un file PDF.
 
 **Consulta anche**

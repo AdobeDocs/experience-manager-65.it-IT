@@ -2,10 +2,10 @@
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Imparare a utilizzare i riferimenti in Frammenti di contenuto, per i contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 98%
+source-wordcount: '726'
+ht-degree: 88%
 
 ---
 
@@ -39,17 +39,17 @@ Alcuni riferimenti sono costituiti da tipi di dati dedicati (ad esempio, Riferim
 
 ## Riferimenti al contenuto {#content-references}
 
-I riferimenti al contenuto fanno proprio questo: ti consentono di fare riferimento a qualsiasi altro contenuto. Questo apre un browser che consente di selezionare l’elemento di contenuto.
+I riferimenti ai contenuti fanno proprio questo: ti consentono di fare riferimento a qualsiasi altro contenuto. Verrà aperto un browser che consente di selezionare l’elemento di contenuto.
 
 ## Riferimenti a risorse/file multimediali {#assets-media-references}
 
-È possibile fare riferimento alle risorse (ad esempio, immagini o file multimediali) all’interno di un blocco di testo utilizzando l’opzione **Inserisci risorsa**. Questa apre un browser che consente di selezionare la risorsa.
+È possibile fare riferimento alle risorse (ad esempio, immagini o file multimediali) all’interno di un blocco di testo utilizzando l’opzione **Inserisci risorsa**. Verrà aperto un browser che consente di selezionare la risorsa.
 
 ![Frammenti di contenuto - Inserisci risorsa](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## Riferimenti ai frammenti {#fragment-references}
 
-Anche in questo caso, i riferimenti ai frammenti fanno solo questo: consentono di fare riferimento a un altro frammento. Per comprendere perché questo è significativo, è necessaria una spiegazione più completa.
+Anche in questo caso, i riferimenti ai frammenti fanno proprio questo: ti consentono di fare riferimento a un altro frammento. Per comprendere perché questo è significativo, è necessaria una spiegazione più completa.
 
 Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di contenuto:
 
@@ -75,7 +75,7 @@ In qualità di autore, non sei responsabile della definizione di queste relazion
 
 ### Come creare i frammenti nidificati {#author-nested-fragment}
 
-L’authoring dei riferimenti ai frammenti è abbastanza semplice (anche se in genere il campo non sarà etichettato come **Riferimento a frammento**). È possibile digitare direttamente il riferimento oppure (più probabilmente) selezionare l’icona della cartella per aprire un browser che consente di sfogliare e selezionare il frammento desiderato.
+L’authoring dei riferimenti ai frammenti è abbastanza semplice (anche se in genere il campo non sarà etichettato come **Riferimento a frammento**). Puoi digitare direttamente nel riferimento oppure (molto probabilmente) selezionare l’icona della cartella per aprire un browser che ti consenta di navigare e selezionare il frammento necessario.
 
 ![Frammenti di contenuto - Riferimenti](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -113,6 +113,7 @@ Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il
       * [Applica la configurazione alla cartella Risorse](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Creazione di un frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Varianti - Authoring di frammenti di contenuto](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
@@ -120,7 +121,6 @@ Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il
       * [Modelli per frammenti di contenuto - Tipi di dati](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
       * [Modelli per frammenti di contenuto - Proprietà](/help/assets/content-fragments/content-fragments-models.md#properties)
-
 
 * Guide introduttive
    * [Guida rapida alla creazione di una cartella di risorse headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)

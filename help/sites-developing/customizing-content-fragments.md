@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: ada61b87753f3f3e70acdca0e946428511bd7b00
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2784'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’elimi
 >
 >Il [Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) è ora consigliato. Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per ulteriori dettagli.
 
-È possibile fare riferimento ai frammenti di contenuto dalle pagine dell’AEM, come qualsiasi altro tipo di risorsa. L&#39;AEM fornisce [**Frammento di contenuto** componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) - a [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere, questo **Frammento di contenuto** Componente core.
+È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. L&#39;AEM fornisce [**Frammento di contenuto** componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) - a [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere, questo **Frammento di contenuto** Componente core.
 
 * Il componente utilizza `fragmentPath` per fare riferimento al frammento di contenuto effettivo. Il `fragmentPath` viene gestita nello stesso modo di proprietà simili di altri tipi di risorse, ad esempio quando il frammento di contenuto viene spostato in un’altra posizione.
 
@@ -138,7 +138,7 @@ Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’elimi
 * Inoltre, è possibile selezionare un intervallo di paragrafi per limitare l’output; ad esempio, può essere utilizzato per l’output a più colonne.
 * Il componente consente [contenuto intermedio](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-   * In questo caso il componente ti consente di inserire altre risorse (immagini, ecc.) tra i paragrafi del frammento a cui si fa riferimento.
+   * Qui il componente consente di inserire altre risorse (immagini, ecc.) tra i paragrafi del frammento a cui si fa riferimento.
    * Per i contenuti intermedi è necessario:
 
       * tieni presente la possibilità di riferimenti instabili; il contenuto intermedio (aggiunto durante l’authoring di una pagina) non ha una relazione fissa con il paragrafo a cui è posizionato, inserendo un nuovo paragrafo (nell’editor frammento di contenuto) prima che la posizione del contenuto intermedio possa perdere la posizione relativa

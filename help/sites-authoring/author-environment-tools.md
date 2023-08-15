@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2245'
-ht-degree: 45%
+source-wordcount: '2240'
+ht-degree: 44%
 
 ---
 
@@ -292,17 +292,17 @@ Inoltre, **Informazioni pagina** può fornire accesso ad analytics e alle raccom
 Esistono diverse modalità di modifica di una pagina che consentono di eseguire azioni diverse:
 
 * [Modifica](/help/sites-authoring/editing-content.md) : modalità da utilizzare per la modifica del contenuto della pagina.
-* [Layout](/help/sites-authoring/responsive-layout.md): consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout).
+* [Layout](/help/sites-authoring/responsive-layout.md) : consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout)
 
 * [Scaffolding](/help/sites-authoring/scaffolding.md) : ti aiuta a creare un set di pagine di grandi dimensioni che condividono la stessa struttura ma hanno contenuti diversi.
 * [Sviluppatore](/help/sites-developing/developer-mode.md) - consente di eseguire varie azioni (richiede privilegi). Ad esempio, è necessario esaminare i dettagli tecnici di una pagina e dei relativi componenti.
 
-* [Progettazione](/help/sites-authoring/default-components-designmode.md) : consente di abilitare/disabilitare i componenti per l’utilizzo in una pagina e di configurare la progettazione del componente (se la pagina è basata su un’ [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates)).
+* [Progettazione](/help/sites-authoring/default-components-designmode.md) : consente di abilitare/disabilitare i componenti da utilizzare su una pagina e di configurare la progettazione del componente (se la pagina è basata su un’ [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Targeting](/help/sites-authoring/content-targeting-touch.md) - aumentare la rilevanza dei contenuti attraverso il targeting e la misurazione su tutti i canali.
 * [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) : mostra i dati di Analytics per la pagina.
 
-* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - consente di visualizzare lo stato di una pagina in un determinato momento.
+* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) : consente di visualizzare lo stato di una pagina in un determinato momento.
 * [Stato Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : consente di ottenere una rapida panoramica dello stato della live copy e dei componenti che non vengono ereditati.
 * [Anteprima](/help/sites-authoring/editing-content.md#previewing-pages): utilizzato per visualizzare l’aspetto che la pagina avrà nell’ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.
 

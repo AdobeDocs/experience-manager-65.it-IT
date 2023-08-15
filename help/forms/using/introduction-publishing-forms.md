@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ In un tipico scenario di distribuzione di un portale incentrato sui moduli, lo s
 
 Tali scenari spesso causano problemi di gestione e ritardi nella produzione. Ad esempio, se nell&#39;archivio è disponibile una versione più recente di un modulo, è necessario sostituire il modulo sul livello Web, modificare l&#39;applicazione Web e ridistribuire il modulo sul sito pubblico. La ridistribuzione dell’applicazione web potrebbe causare tempi di inattività del server. In genere, il tempo di inattività del server è un’attività pianificata e pertanto le modifiche non possono essere inviate istantaneamente al sito pubblico.
 
-AEM Forms fornisce componenti portale che riducono i costi generali di gestione e i ritardi di produzione. I componenti consentono agli sviluppatori web di creare e personalizzare un portale Forms su siti web creati con Adobe Experience Manager (AEM).
+AEM Forms fornisce componenti portale che riducono i costi generali di gestione e i ritardi di produzione. I componenti consentono agli sviluppatori Web di creare e personalizzare un portale Forms nei siti Web creati con Adobe Experience Manager (AEM).
 
 ![Portale AEM Forms](assets/aem-forms-portal.png)
 
-I componenti del portale dei moduli consentono di aggiungere le funzionalità seguenti:
+I componenti portale moduli consentono di aggiungere le funzionalità seguenti:
 
 * Elencare i moduli in layout personalizzati. I layout predefiniti includono la vista a elenco, a schede e a pannello. È possibile creare layout personalizzati.
 * Consente di visualizzare metadati personalizzati e azioni personalizzate durante la visualizzazione dell’elenco.

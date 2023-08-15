@@ -1,16 +1,12 @@
 ---
 title: Aggiunta e configurazione di utenti
-seo-title: Adding and configuring users
-description: Le impostazioni Gestione utente nella console di amministrazione consentono di creare o eliminare utenti e di configurare altre impostazioni utente.
-seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
-uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
+description: Le impostazioni Gestione utente nella console di amministrazione consentono di creare o eliminare utenti e configurare altre impostazioni utente.
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1733'
 ht-degree: 0%
 
 ---
@@ -136,7 +132,6 @@ Evita di creare nomi utente che iniziano con un cancelletto (#). L&#39;esecuzion
 
    * Per rimuovere l&#39;utente da un gruppo, selezionare la casella di controllo relativa al gruppo e fare clic su **[!UICONTROL Elimina]** e quindi fare clic su **[!UICONTROL Salva]**.
 
-
 1. Per modificare i ruoli dell&#39;utente, fare clic su **[!UICONTROL Assegnazioni Ruolo]** ed effettuare le seguenti operazioni:
 
    * Per visualizzare un elenco di ruoli, fare clic su **[!UICONTROL Trova Ruoli]**.
@@ -166,7 +161,7 @@ Se un utente senza i moduli AEM e le autorizzazioni CQ richiesti tenta di accede
 * Soluzione per la gestione della corrispondenza
 * Area di lavoro moduli AEM
 
-   ***nota **: Flex Workspace è obsoleto per il rilascio di moduli AEM.*
+  ***nota **: Flex Workspace è obsoleto per il rilascio di moduli AEM.*
 
 * gestione moduli
 * Reporting processi

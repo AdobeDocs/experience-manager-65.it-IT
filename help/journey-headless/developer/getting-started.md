@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM Headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3031'
-ht-degree: 100%
+source-wordcount: '3024'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ I modelli per frammenti di contenuto definiscono la struttura dei dati e del con
 
 ### Frammenti di contenuto {#content-fragments}
 
-I Frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali.
+I frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali.
 
 I Frammenti di contenuto contengono contenuto strutturato e possono essere consegnati in formato JSON.
 
@@ -78,8 +78,8 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Per modificare il contenuto senza problemi, AEM offre due solide API.
 
-* API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
-* API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
+* L’API di GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
 Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure fai riferimento alla sezione [risorse aggiuntive](#additional-resources) per ulteriore documentazione.
 
@@ -139,9 +139,9 @@ Per ogni progetto riuscito è importante definire chiaramente non solo i requisi
 
 ### Ambito {#scope}
 
-È importante disporre di un ambito chiaramente definito per il progetto. L’ambito segnala i criteri di accettazione e consente di stabilire una definizione di operazione completata.
+È importante disporre di un ambito chiaramente definito per il progetto. L’ambito informa i criteri di accettazione e consente di stabilire una definizione di completato.
 
-La prima domanda che dovete porre è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che disponi o in futuro disporrai di un’applicazione di esperienza che hai creato con i tuoi strumenti di sviluppo e non con AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
+La prima domanda che dovete porre è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che in futuro si dispone o si disporrà di un’applicazione Experience creata con i propri strumenti di sviluppo e non con l’AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
 
 ### Ruoli e responsabilità {#roles-responsibilities}
 
@@ -156,7 +156,7 @@ I ruoli di ogni singolo progetto variano, ma quelli importanti da considerare ne
 
 L’amministratore è responsabile dell’impostazione e della configurazione di base del sistema. Ad esempio, l’amministratore configura l’organizzazione all’interno del sistema di gestione utenti di Adobe, denominato Identity Management System (IMS). L’amministratore è il primo utente dell’organizzazione a ricevere un invito e-mail da Adobe dopo che l’organizzazione è stata creata da Adobe in IMS. L’amministratore può accedere a IMS e aggiungere utenti di altri utenti tipo.
 
-Una volta configurati dall’amministratore, gli utenti ricevono le autorizzazioni per accedere a tutte le risorse di AEM per svolgere il loro lavoro come persone che contribuiscono alla distribuzione dell’applicazione di esperienza utilizzando AEM headless.
+Una volta configurati dall’amministratore, agli utenti vengono concesse le autorizzazioni di accesso a tutte le risorse AEM per svolgere il loro lavoro di collaboratori per la distribuzione dell’applicazione Experience tramite AEM Headless.
 
 L’amministratore deve essere l’utente che configura AEM e prepara l’ambiente di esecuzione per abilitare gli [autori di contenuti](#content-author) a creare e aggiornare contenuti e gli [sviluppatori](#developer) a utilizzare le API che recuperano o modificano il contenuto per le applicazioni di esperienza.
 
@@ -168,7 +168,7 @@ Gli autori dei contenuti devono tenere presenti le seguenti best practice.
 
 #### Pianificare la traduzione {#translation}
 
-Pianificare la traduzione all’inizio del progetto. Considerare “specialista della traduzione” colui o colei come utente tipo separato a cui spetta definire quale contenuto dovrebbe essere tradotto e quale no, e quale contenuto tradotto potrebbe essere modificato dai produttori di contenuti regionali o locali. 
+Pianificare la traduzione all’inizio del progetto. Considerare “specialista della traduzione” colui o colei come utente tipo separato a cui spetta definire quale contenuto dovrebbe essere tradotto e quale no, e quale contenuto tradotto potrebbe essere modificato dai produttori di contenuti regionali o locali.
 
 Creare un piano su quali contenuti devono essere tradotti.
 
@@ -255,7 +255,7 @@ Per capire il traffico e i modelli di traffico inizia raccogliendo ciò che sai 
 
 #### Frequenza di aggiornamento {#update-frequency}
 
-Spesso, nelle diverse sezioni di esperienze la frequenza di aggiornamento dei contenuti è diversa. È importante comprendere questo per poter perfezionare le configurazioni di CDN e cache. Questo è anche un importante contributo per gli [Architetti dei contenuti](#content-architects) quando progettano modelli per rappresentare il tuo contenuto. Ritieni che:
+Spesso, nelle diverse sezioni di esperienze la frequenza di aggiornamento dei contenuti è diversa. È importante comprendere questo aspetto per poter ottimizzare le configurazioni della CDN e della cache. Questo è anche un importante contributo per gli [Architetti dei contenuti](#content-architects) quando progettano modelli per rappresentare il tuo contenuto. Ritieni che:
 
 * Alcuni tipi di contenuto debbano scadere dopo un determinato periodo di tempo?
 * Esistano elementi specifici di un utente e, quindi, non possano essere memorizzati nella cache?

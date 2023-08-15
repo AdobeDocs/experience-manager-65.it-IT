@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3246'
+source-wordcount: '3242'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,6 @@ I modelli di flusso di lavoro sono costituiti da una serie di passaggi di vari t
 >* [Elaborazione delle risorse tramite gestori di contenuti multimediali e flussi di lavoro](/help/assets/media-handlers.md)
 >
 
-
 ## Proprietà passaggio {#step-properties}
 
 Ogni componente del passaggio ha una **Proprietà passaggio** che consente di definire e modificare le proprietà richieste.
@@ -49,20 +48,20 @@ Descrizione del passaggio.
 
 * **Stadio flusso di lavoro**
 
-   Un selettore a discesa per applicare una [Fase](/help/sites-developing/workflows.md#workflow-stages) al passaggio.
+  Un selettore a discesa per applicare una [Fase](/help/sites-developing/workflows.md#workflow-stages) al passaggio.
 
 * **Timeout**
 
-   Il periodo dopo il quale il passaggio &quot;scade&quot;.
+  Il periodo dopo il quale il passaggio &quot;scade&quot;.
 Puoi scegliere tra: **Disattivato**, **Immediato**, **1 ora**, **6 ore**, **12 ore**, **24 ore**.
 
 * **Gestore timeout**
 
-   Gestore che controlla il flusso di lavoro quando il passaggio scade. Ad esempio `Auto Advancer`
+  Gestore che controlla il flusso di lavoro quando il passaggio scade. Ad esempio `Auto Advancer`
 
 * **Avanzamento gestore**
 
-   Seleziona questa opzione per far avanzare automaticamente il flusso di lavoro al passaggio successivo dopo l’esecuzione. Se non viene selezionato, lo script di implementazione deve gestire l’avanzamento del flusso di lavoro.
+  Seleziona questa opzione per far avanzare automaticamente il flusso di lavoro al passaggio successivo dopo l’esecuzione. Se non viene selezionato, lo script di implementazione deve gestire l’avanzamento del flusso di lavoro.
 
 ### Proprietà passaggio: scheda Utente/gruppo {#step-properties-user-group-tab}
 
@@ -97,7 +96,7 @@ Per configurare la suddivisione:
 
 * Aggiungi i passaggi del flusso di lavoro ai rami in base alle esigenze.
 
-   ![wf-27](assets/wf-27.png)
+  ![wf-27](assets/wf-27.png)
 
 ## Passaggio contenitore {#container-step}
 
@@ -203,26 +202,28 @@ Per configurare la suddivisione:
    * **Comune**
 
       * Specifica il nome della divisione.
+
    * **Rami (*x)***
 
       * **Aggiungi ramo:** Aggiungi altri rami al passaggio.
       * **Seleziona espressione di indirizzamento**: per valutare il ramo attivo, seleziona l’espressione di indirizzamento. I valori possibili includono: Definizione regola, Script esterno e script ECMA.
-      * **Fai clic per aggiungere un’espressione**: se selezioni, aggiungi un’espressione per valutare il ramo attivo **Definizione di regola** come espressione di indirizzamento.
+      * **Fai clic per aggiungere un’espressione**: se selezioni, aggiungi un’espressione per valutare il ramo attivo **Definizione regola** come espressione di indirizzamento.
       * **Percorso script**: percorso di un file contenente lo script per valutare il ramo attivo, se selezioni **Script esterno** come espressione di indirizzamento.
       * **Script**: aggiungi lo script nella casella per valutare il ramo attivo, se selezioni **Script ECMA** come espressione di indirizzamento.
       * **Percorso predefinito**: se sono presenti più rami, viene seguito il ramo predefinito. Per impostazione predefinita, è possibile specificare un solo ramo.
 
-   >[!NOTE]
-   >
-   >    * Un ramo viene valutato alla volta in base all’espressione di indirizzamento.
-   >    * I rami vengono valutati dall’alto verso il basso.
-   >    * Viene eseguito il primo script che restituisce true.
-   >    * Se nessun ramo restituisce true, il flusso di lavoro non avanza.
+  >[!NOTE]
+  >
+  >    * Un ramo viene valutato alla volta in base all’espressione di indirizzamento.
+  >    * I rami vengono valutati dall’alto verso il basso.
+  >    * Viene eseguito il primo script che restituisce true.
+  >    * Se nessun ramo restituisce true, il flusso di lavoro non avanza.
+  >
+  >
 
-
-   >[!NOTE]
-   >
-   >Consulta [Definizione di una regola per una suddivisione OR](/help/sites-developing/workflows-models.md#defineruleecmascript).
+  >[!NOTE]
+  >
+  >Consulta [Definizione di una regola per una suddivisione OR](/help/sites-developing/workflows-models.md#defineruleecmascript).
 
 * Aggiungi i passaggi del flusso di lavoro ai rami in base alle esigenze.
 
@@ -248,7 +249,6 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 >* Il flusso di lavoro è stato completato (completato).
 >* Il flusso di lavoro viene interrotto.
 >
-
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ Puoi memorizzare i dati del widget nel payload del flusso di lavoro o nei metada
 * **Memorizza dati con il payload**
 
    * Per memorizzare i dati del widget come proprietà del payload del flusso di lavoro, utilizzate il seguente formato per il valore della proprietà name del nodo del widget:
-      `./jcr:content/nodename`
+     `./jcr:content/nodename`
 
    * I dati vengono memorizzati nel `nodename` del nodo payload. Se il nodo non contiene tale proprietà, la proprietà viene creata.
    * Quando viene memorizzato con il payload, gli utilizzi successivi della finestra di dialogo con lo stesso payload sovrascrivono il valore della proprietà.
@@ -294,7 +294,7 @@ Puoi memorizzare i dati del widget nel payload del flusso di lavoro o nei metada
 * **Memorizza dati con l’elemento di lavoro**
 
    * Per memorizzare i dati del widget come proprietà dei metadati dell&#39;elemento di lavoro, utilizzate il seguente formato per il valore della proprietà name:
-      `nodename`
+     `nodename`
 
    * I dati vengono memorizzati nel `nodename` proprietà dell&#39;elemento di lavoro `metadata`. I dati vengono conservati se la finestra di dialogo viene successivamente utilizzata con lo stesso payload.
 
@@ -402,50 +402,51 @@ Crea un servizio OSGi o un ECMAScript che seleziona un utente a cui assegnare l�
 
 * **ECMAscript**
 
-   Gli script devono includere una funzione denominata getParticipant che restituisce un ID utente come `String` valore. Memorizza gli script personalizzati, ad esempio, nel `/apps/myapp/workflow/scripts` cartella o una sottocartella.
+  Gli script devono includere una funzione denominata getParticipant che restituisce un ID utente come `String` valore. Memorizza gli script personalizzati, ad esempio, nel `/apps/myapp/workflow/scripts` cartella o una sottocartella.
 
-   Uno script di esempio è incluso in un’istanza AEM standard:
+  Uno script di esempio è incluso in un’istanza AEM standard:
 
-   `/libs/workflow/scripts/initiator-participant-chooser.ecma`
+  `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
-   >[!CAUTION]
-   >
-   >Non modificare nulla nella `/libs` percorso.
-   >
-   >
-   >Il motivo è che il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e può essere sovrascritto quando si applica un hotfix o un feature pack).
+  >[!CAUTION]
+  >
+  >Non modificare nulla nella `/libs` percorso.
+  >
+  >
+  >Il motivo è che il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e può essere sovrascritto quando si applica un hotfix o un feature pack).
 
-   Questo script seleziona l&#39;iniziatore del flusso di lavoro come partecipante:
+  Questo script seleziona l&#39;iniziatore del flusso di lavoro come partecipante:
 
-   ```
-   function getParticipant() {
-       return workItem.getWorkflow().getInitiator();
-   }
-   ```
+  ```
+  function getParticipant() {
+      return workItem.getWorkflow().getInitiator();
+  }
+  ```
 
-   >[!NOTE]
-   >
-   >Il **Selettore partecipante iniziatore flusso di lavoro** il componente estende **Passaggio partecipante dinamico** e utilizza questo script come implementazione del passaggio.
+  >[!NOTE]
+  >
+  >Il **Selettore partecipante iniziatore flusso di lavoro** il componente estende **Passaggio partecipante dinamico** e utilizza questo script come implementazione del passaggio.
 
 * **Servizio OSGi**
 
-   I servizi devono implementare [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) di rete. L’interfaccia definisce i seguenti membri:
+  I servizi devono implementare [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) di rete. L’interfaccia definisce i seguenti membri:
 
    * `SERVICE_PROPERTY_LABEL` campo: utilizzare questo campo per specificare il nome del selettore partecipanti. Il nome viene visualizzato in un elenco di selettori partecipanti disponibili nel **Passaggio partecipante dinamico** proprietà.
 
    * `getParticipant` metodo: restituisce l&#39;ID entità risolto dinamicamente come `String` valore.
-   >[!CAUTION]
-   >
-   >Il `getParticipant` Il metodo restituisce l&#39;ID entità risolto dinamicamente. Può essere un ID gruppo o un ID utente.
-   >
-   >
-   >Tuttavia, un ID gruppo può essere utilizzato solo per **Passaggio partecipante**, quando viene restituito un elenco di partecipanti. Per un **Passaggio partecipante dinamico**, viene restituito un elenco vuoto che non può essere utilizzato per la delega.
 
-   Per rendere la tua implementazione disponibile per **Passaggio partecipante dinamico** componenti, aggiungi la classe Java™ a un bundle OSGi che esporta il servizio e distribuisci il bundle al server AEM.
+  >[!CAUTION]
+  >
+  >Il `getParticipant` Il metodo restituisce l&#39;ID entità risolto dinamicamente. Può essere un ID gruppo o un ID utente.
+  >
+  >
+  >Tuttavia, un ID gruppo può essere utilizzato solo per **Passaggio partecipante**, quando viene restituito un elenco di partecipanti. Per un **Passaggio partecipante dinamico**, viene restituito un elenco vuoto che non può essere utilizzato per la delega.
 
-   >[!NOTE]
-   >
-   >**Selettore casuale partecipanti** è un servizio di esempio che seleziona un utente casuale ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). Il **Selezione casuale partecipanti** Un esempio di componente in un passaggio estende **Passaggio partecipante dinamico** e utilizza questo servizio come implementazione del passaggio.
+  Per rendere la tua implementazione disponibile per **Passaggio partecipante dinamico** componenti, aggiungi la classe Java™ a un bundle OSGi che esporta il servizio e distribuisci il bundle al server AEM.
+
+  >[!NOTE]
+  >
+  >**Selettore casuale partecipanti** è un servizio di esempio che seleziona un utente casuale ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). Il **Selezione casuale partecipanti** Un esempio di componente in un passaggio estende **Passaggio partecipante dinamico** e utilizza questo servizio come implementazione del passaggio.
 
 #### Passaggio partecipante dinamico - Esempio di servizio Selettore partecipanti {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -524,7 +525,7 @@ Creare un modulo da utilizzare con un **Passaggio partecipante modulo** come nor
 * Il **Inizio modulo** il componente deve avere un valore per `Form Identifier` proprietà.
 * I componenti del modulo devono avere **Nome elemento** impostata sul percorso del nodo in cui sono memorizzati i dati del campo. Il percorso deve individuare un nodo nel contenuto del payload del flusso di lavoro. Il valore utilizza il formato seguente:
 
-   `./jcr:content/path_to_node`
+  `./jcr:content/path_to_node`
 
 * Il modulo deve includere **Pulsante invio flusso di lavoro** componente. Non puoi configurare alcuna proprietà del componente.
 
@@ -583,13 +584,13 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
       * I servizi standard ECMAScripts e OSGi, vedi [Processi incorporati per le fasi del processo](/help/sites-developing/workflows-process-ref.md).
       * Creazione di ECMAScript per un passaggio del processo, vedere [Implementazione di un passaggio del processo con un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Creazione di servizi OSGi per un passaggio del processo, consulta [Implementazione di un passaggio del processo con una classe Java™](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+
    * **Avanzamento gestore**: seleziona questa opzione per far avanzare automaticamente il flusso di lavoro al passaggio successivo dopo l’esecuzione. Se non viene selezionato, lo script di implementazione deve gestire l’avanzamento del flusso di lavoro.
    * **Argomenti**: argomenti da passare al processo.
 
-
 ## Imposta variabile {#set-variable}
 
-Il passaggio Imposta variabile consente di impostare il valore di una variabile e di definire l&#39;ordine in cui i valori vengono impostati. La variabile viene impostata nell&#39;ordine in cui le mappature delle variabili sono elencate nel passaggio Imposta variabile.
+Il passaggio Imposta variabile consente di impostare il valore di una variabile e definire l&#39;ordine in cui i valori vengono impostati. La variabile viene impostata nell&#39;ordine in cui le mappature delle variabili sono elencate nel passaggio Imposta variabile.
 
 ![Aggiungi mappatura per impostare una variabile](assets/set_variable_addmappingnew.png)
 
@@ -609,5 +610,6 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
       * **XPATH:** Utilizzare l&#39;opzione per recuperare un valore da una variabile di tipo XML.
       * **Relativo al payload:** Utilizza l’opzione quando il valore da salvare nella variabile è disponibile in un percorso relativo al payload.
       * **Percorso assoluto:** Utilizza l’opzione quando il valore da salvare nella variabile è disponibile in un percorso assoluto.
+
    * **Specifica valore:** Per eseguire il mapping alla variabile, specifica un valore. Il valore specificato in questo campo dipende dalla modalità di mappatura.
    * **Aggiungi mappatura:** Utilizza questa opzione per aggiungere altre mappature per impostare un valore per la variabile.

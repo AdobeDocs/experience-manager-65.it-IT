@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b2c09e6b-a1d8-4b30-af2c-988442a3a986
 docset: aem65
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-I rapporti sulle transazioni in AEM Forms ti consentono di tenere un conteggio di tutte le transazioni effettuate a partire da una data specificata nella distribuzione AEM Forms. L’obiettivo è fornire informazioni sull’utilizzo dei prodotti e aiutare le parti interessate a comprendere i volumi di elaborazione digitale. Di seguito sono riportati alcuni esempi di transazioni:
+I rapporti sulle transazioni in AEM Forms consentono di tenere traccia di tutte le transazioni eseguite a partire da una data specificata nella distribuzione AEM Forms. L’obiettivo è fornire informazioni sull’utilizzo dei prodotti e aiutare le parti interessate a comprendere i volumi di elaborazione digitale. Di seguito sono riportati alcuni esempi di transazioni:
 
 * Invio di un modulo adattivo, di un modulo HTML5 o di un set di moduli
 * Rappresentazione di una stampa o versione web di una comunicazione interattiva

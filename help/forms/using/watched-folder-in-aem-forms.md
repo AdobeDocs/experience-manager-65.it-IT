@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '7149'
+source-wordcount: '7148'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,7 @@ Un amministratore può configurare una cartella di rete, nota come cartella cont
 Per creare una cartella controllata nel file system, è possibile utilizzare uno dei seguenti metodi:
 
 * Durante la configurazione delle proprietà di un nodo di configurazione di una cartella controllata, digita il percorso completo della directory principale nella proprietà folderPath e aggiungi il nome della cartella controllata da creare, come illustrato nell’esempio seguente: `C:/MyPDFs/MyWatchedFolder`
-Il 
-`MyWatchedFolder`la cartella non esiste, AEM Forms tenta di crearla nel percorso specificato.
+Il `MyWatchedFolder`la cartella non esiste, AEM Forms tenta di crearla nel percorso specificato.
 
 * Creare una cartella nel file system prima di configurare un endpoint Watched Folder, quindi specificare il percorso completo nella proprietà folderPath. Per informazioni dettagliate sulla proprietà folderPath, vedere [Proprietà cartella controllata](#watchedfolderproperties).
 
@@ -74,7 +73,7 @@ Puoi configurare le seguenti proprietà per una cartella controllata.
 
 * **runModes (Stringa)**: elenco separato da virgole delle modalità di esecuzione consentite per l’esecuzione del flusso di lavoro. Alcuni esempi sono:
 
-   * creazione
+   * author
 
    * pubblicazione
 
@@ -143,9 +142,9 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern
    * %R = numero casuale (tra 0 e 9)
    * %P = ID processo o processo
 
-   Ad esempio, se sono le 20:00 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati sarà C:/Test/WF0/failure/2009/07/17/20
+  Ad esempio, se sono le 20:00 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati sarà C:/Test/WF0/failure/2009/07/17/20
 
-   Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella dei risultati all&#39;interno della cartella controllata. Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+  Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella dei risultati all&#39;interno della cartella controllata. Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 >[!NOTE]
 >
@@ -155,11 +154,11 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern
 * **preserveFolderName (String):** Percorso in cui vengono archiviati i file dopo l’elaborazione. Il percorso può essere assoluto, relativo o nullo. È possibile utilizzare i modelli di file, come descritto per Cartella risultati. Il valore predefinito è preserve/%Y/%M/%D/.
 * **batchSize (Long)**: numero di file o cartelle da raccogliere per analisi. Utilizzare per evitare un sovraccarico del sistema; la scansione di troppi file contemporaneamente può causare un arresto anomalo. Il valore predefinito è 2.
 
-   Le impostazioni Intervallo di polling e Dimensione batch determinano il numero di file selezionati dalla cartella controllata in ogni analisi. La cartella controllata utilizza un pool di thread al quarzo per analizzare la cartella di input. Il pool di thread è condiviso con altri servizi. Se l&#39;intervallo di scansione è ridotto, i thread eseguono spesso la scansione della cartella di input. Se i file vengono rilasciati frequentemente nella cartella controllata, è necessario mantenere l’intervallo di scansione ridotto. Se i file vengono eliminati raramente, utilizzare un intervallo di scansione più ampio in modo che gli altri servizi possano utilizzare i thread.
+  Le impostazioni Intervallo di polling e Dimensione batch determinano il numero di file selezionati dalla cartella controllata in ogni analisi. La cartella controllata utilizza un pool di thread al quarzo per analizzare la cartella di input. Il pool di thread è condiviso con altri servizi. Se l&#39;intervallo di scansione è ridotto, i thread eseguono spesso la scansione della cartella di input. Se i file vengono rilasciati frequentemente nella cartella controllata, è necessario mantenere l’intervallo di scansione ridotto. Se i file vengono eliminati raramente, utilizzare un intervallo di scansione più ampio in modo che gli altri servizi possano utilizzare i thread.
 
-   Se si elimina un grande volume di file, ingrandire la dimensione del batch. Ad esempio, se il servizio avviato dall’endpoint &quot;cartella controllata&quot; è in grado di elaborare 700 file al minuto e gli utenti rilasciano i file nella cartella di input alla stessa velocità, impostare le dimensioni del batch su 350 e l’intervallo di polling su 30 secondi per migliorare le prestazioni della cartella controllata senza incorrere troppo nel costo della scansione della cartella controllata.
+  Se si elimina un grande volume di file, ingrandire la dimensione del batch. Ad esempio, se il servizio avviato dall’endpoint &quot;cartella controllata&quot; è in grado di elaborare 700 file al minuto e gli utenti rilasciano i file nella cartella di input alla stessa velocità, impostare le dimensioni del batch su 350 e l’intervallo di polling su 30 secondi per migliorare le prestazioni della cartella controllata senza incorrere troppo nel costo della scansione della cartella controllata.
 
-   Quando i file vengono rilasciati nella cartella controllata, vengono elencati i file nell’input, il che può ridurre le prestazioni se la scansione viene eseguita ogni secondo. L&#39;aumento dell&#39;intervallo di scansione può migliorare le prestazioni. Se il volume dei file da eliminare è ridotto, regolare di conseguenza le dimensioni del batch e l&#39;intervallo di polling. Ad esempio, se vengono rilasciati 10 file al secondo, prova a impostare pollInterval su 1 secondo e la dimensione batch su 10
+  Quando i file vengono rilasciati nella cartella controllata, vengono elencati i file nell’input, il che può ridurre le prestazioni se la scansione viene eseguita ogni secondo. L&#39;aumento dell&#39;intervallo di scansione può migliorare le prestazioni. Se il volume dei file da eliminare è ridotto, regolare di conseguenza le dimensioni del batch e l&#39;intervallo di polling. Ad esempio, se vengono rilasciati 10 file al secondo, prova a impostare pollInterval su 1 secondo e la dimensione batch su 10
 
 * **throttleOn (booleano)**: quando questa opzione è selezionata, limita il numero di processi della cartella controllata che AEM Forms elabora in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. Il valore predefinito è true. (vedere [Informazioni sulla limitazione](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
@@ -232,7 +231,7 @@ L’implementazione personalizzata accetta un contesto di elaborazione (un ogget
 * **getInputMap**: restituisce una mappa di tipo Map. Le chiavi della mappa sono il nome del file di input e un oggetto documento contenente il contenuto del file. Utilizza l’API getinputMap per leggere i file di input.
 * **getConfigParameters**: restituisce una mappa immutabile di tipo Map. La mappa contiene i parametri di configurazione di una cartella controllata.
 
-* **setResult**: l’implementazione di ContentProcessor utilizza l’API per scrivere il documento di output nella cartella dei risultati. È possibile specificare un nome per il file di output nell&#39;API setResult. L’API potrebbe scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output o del pattern di file specificato. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file.
+* **setResult**: l’implementazione di ContentProcessor utilizza l’API per scrivere il documento di output nella cartella dei risultati. È possibile specificare un nome per il file di output nell&#39;API setResult. L’API può scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output o del pattern di file specificato. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file.
 
 Ad esempio, il codice seguente è un’implementazione personalizzata dell’interfaccia ContentProcessor con una proprietà personalizzata foo=bar.
 
@@ -270,7 +269,7 @@ Gli script sono il codice personalizzato di reclamo ECMAScript scritto per elabo
 * **getWatchFolderId**: restituisce l’ID della cartella controllata.
 * **getInputMap**: restituisce una mappa di tipo Map. Le chiavi della mappa sono il nome del file di input e un oggetto documento contenente il contenuto del file. Utilizza l’API getinputMap per leggere i file di input.
 * **getConfigParameters**: restituisce una mappa immutabile di tipo Map. La mappa contiene i parametri di configurazione di una cartella controllata.
-* **setResult**: l’implementazione di ContentProcessor utilizza l’API per scrivere il documento di output nella cartella dei risultati. È possibile specificare un nome per il file di output nell&#39;API setResult. L’API potrebbe scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output o del pattern di file specificato. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file.
+* **setResult**: l’implementazione di ContentProcessor utilizza l’API per scrivere il documento di output nella cartella dei risultati. È possibile specificare un nome per il file di output nell&#39;API setResult. L’API può scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output o del pattern di file specificato. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file.
 
 Il codice seguente è un esempio di ECMAScript. Accetta i file di input, li copia in una posizione temporanea e restituisce un oggetto documento con il contenuto del file. Il contenuto dell&#39;oggetto documento viene salvato nella cartella dei risultati. Il percorso fisico della cartella dei risultati è configurato in [Nodo di configurazione della cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
@@ -342,7 +341,7 @@ Sono inoltre disponibili le seguenti API ProcessorContext:
 * getWatchFolderId: restituisce l&#39;ID della cartella controllata.
 * getInputMap: restituisce una mappa di tipo Map&lt;string document=&quot;&quot;>. Le chiavi della mappa sono il nome del file di input e un oggetto documento contenente il contenuto del file. Utilizza l’API getinputMap per leggere i file di input.
 * getConfigParameters: restituisce una mappa immutabile di tipo Map&lt;string object=&quot;&quot;>. La mappa contiene i parametri di configurazione di una cartella controllata.
-* setResult: l’implementazione di ContentProcessor utilizza l’API per scrivere il documento di output nella cartella dei risultati. È possibile specificare un nome per il file di output nell&#39;API setResult. L’API potrebbe scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output o del pattern di file specificato. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file
+* setResult: l’implementazione di ContentProcessor utilizza l’API per scrivere il documento di output nella cartella dei risultati. È possibile specificare un nome per il file di output nell&#39;API setResult. L’API può scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output o del pattern di file specificato. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file
 
 Considerazione per l’API setResult, se utilizzata nei flussi di lavoro:
 
@@ -594,7 +593,7 @@ Se il pattern di mappatura dei parametri di output termina con &quot;File.separa
 
 ## Utilizzo di PDF Generator con una cartella controllata {#using-pdf-generator-with-a-watched-folder}
 
-Puoi configurare una cartella controllata per avviare un flusso di lavoro, un servizio o uno script per elaborare i file di input. Nella sezione seguente verrà configurata una cartella controllata per avviare un ECMAScript. ECMAScript utilizzava PDF Generator per convertire i documenti di Microsoft Word (.docx) in documenti di PDF.
+Puoi configurare una cartella controllata per avviare un flusso di lavoro, un servizio o uno script per elaborare i file di input. Nella sezione seguente verrà configurata una cartella controllata per avviare un ECMAScript. ECMAScript utilizzerà PDF Generator per convertire i documenti di Microsoft Word (.docx) in documenti di PDF.
 
 Per configurare una cartella controllata con PDF Generator, effettua le seguenti operazioni:
 
@@ -604,7 +603,7 @@ Per configurare una cartella controllata con PDF Generator, effettua le seguenti
 
 ### Creare un ECMAScript {#create-an-ecmascript}
 
-ECMAScript utilizzerebbe l’API createPDF di PDF Generator per convertire i documenti Microsoft Word (.docx) in documenti PDF. Per creare lo script, effettua le seguenti operazioni:
+ECMAScript utilizzerà l&#39;API createPDF di PDF Generator per convertire i documenti Microsoft Word (.docx) in documenti PDF. Per creare lo script, effettua le seguenti operazioni:
 
 1. Apri CRXDE lite in una finestra del browser. L’URL è https://&#39;[server]:[porta]&#39;/crx/de.
 
@@ -648,7 +647,7 @@ ECMAScript utilizzerebbe l’API createPDF di PDF Generator per convertire i doc
 
 1. Seleziona il flusso di lavoro appena creato e fai clic su **Modifica**. Il flusso di lavoro si apre in una nuova finestra.
 
-1. Elimina il passaggio predefinito del flusso di lavoro. Trascina e rilascia il passaggio del processo dalla barra laterale al flusso di lavoro.
+1. Elimina il passaggio predefinito del flusso di lavoro. Trascinare la fase del processo dal Sidekick al workflow.
 
    ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
@@ -674,6 +673,7 @@ inputProcessorType (String): tipo di processo da avviare. In questa esercitazion
    * inputProcessorId (stringa): il comportamento della proprietà inputProcessorId si basa sul valore specificato per la proprietà inputProcessorType. In questo esempio, il valore della proprietà inputProcessorType è workflow. Pertanto, per la proprietà inputProcessorId, specifica il seguente percorso del flusso di lavoro PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): motivo del file di output. È possibile specificare una cartella o un modello di file. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file.
+
    Oltre alle proprietà obbligatorie di cui sopra, le cartelle controllate supportano anche alcune proprietà facoltative. Per un elenco completo e una descrizione delle proprietà facoltative, vedi [Proprietà cartella controllata](#watchedfolderproperties).
 
 ## Problemi noti {#watched-folder-known-issues}

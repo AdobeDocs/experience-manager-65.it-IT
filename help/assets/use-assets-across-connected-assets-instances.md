@@ -7,9 +7,9 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 578e9eb45ab996df841cb22e89d45fadfe90592b
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3950'
+source-wordcount: '3949'
 ht-degree: 17%
 
 ---
@@ -356,7 +356,7 @@ Per risolvere gli errori più comuni, effettuare le seguenti operazioni:
 
   ![Errore di cookie nel browser Chrome in modalità di navigazione in incognito](assets/chrome-cookies-incognito-dialog.png)
 
-* Se non riesci ad accedere alla distribuzione remota di DAM Adobe Managed Services dalla distribuzione Experience Manager Sites as a Cloud Service Sites, aggiorna la `aem_author.vhost` file, disponibile all’indirizzo `"/etc/httpd/conf.d/available_vhosts`, affinché DAM remoto includa le seguenti intestazioni nella configurazione di Dispatcher:
+* Se non riesci ad accedere alla distribuzione remota DAM Adobe Managed Services dalla distribuzione Experience Manager Sites as a Cloud Service Sites, aggiorna la `aem_author.vhost` file, disponibile all’indirizzo `"/etc/httpd/conf.d/available_vhosts`, affinché DAM remoto includa le seguenti intestazioni nella configurazione di Dispatcher:
 
   ```xml
   Header Set Access-Control-Allow-Origin <Local Sites instance host>

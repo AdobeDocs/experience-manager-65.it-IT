@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: ed2cb35593780cd627c15f493e58d3b68c55519b
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 0%
@@ -50,6 +50,7 @@ Di seguito puoi vedere come funziona in una distribuzione geograficamente distri
 >Il token incapsulato riguarda l’autenticazione. In questo modo il cookie può essere convalidato senza dover accedere all’archivio. Tuttavia, è ancora necessario che l’utente esista su tutte le istanze e che le informazioni memorizzate in tale utente siano accessibili a ogni istanza.
 >
 >Ad esempio, se un nuovo utente viene creato nell’istanza di pubblicazione numero uno, a causa del modo in cui funziona il token incapsulato, verrà autenticato correttamente nella pubblicazione numero due. Se l’utente non esiste nella seconda istanza di pubblicazione, la richiesta non avrà comunque esito positivo.
+>
 
 ## Configurazione del token incapsulato {#configuring-the-encapsulated-token}
 
@@ -59,7 +60,6 @@ Di seguito puoi vedere come funziona in una distribuzione geograficamente distri
 >* le sessioni permanenti sono abilitate, oppure
 >
 >* Gli utenti vengono già creati in AEM all&#39;avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati in situazioni in cui i gestori **creare** utenti durante il processo di sincronizzazione.
-
 
 Ci sono alcuni aspetti da tenere in considerazione durante la configurazione del token incapsulato:
 
