@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 7%
+source-wordcount: '2084'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 
 * **Forms inviato:** Quando i dati vengono inviati da qualsiasi tipo di modulo creato con AEM Forms e vengono inviati a qualsiasi archivio di dati o database, viene considerato invio modulo. L’invio di un modulo adattivo, di un modulo HTML5, di PDF forms e di un set di moduli, ad esempio, viene considerato come moduli inviati. Ogni modulo di un set di moduli è considerato un inoltro. Ad esempio, se una serie di moduli contiene 5 moduli, quando la serie di moduli viene sottomessa, il servizio di reporting delle transazioni conteggia tale serie come 5 invii.
 
-* **Documenti sottoposti a rendering:** La generazione di un documento mediante la combinazione di un modello e di dati, la firma o la certificazione digitale di un documento, l&#39;utilizzo di API di servizi di documentazione fatturabili per i servizi di documentazione o la conversione di un documento da un formato a un altro sono considerati documenti sottoposti a rendering.
+* **Documenti sottoposti a rendering:** La generazione di un documento mediante la combinazione di un modello e di dati, la firma o la certificazione digitale di un documento, l&#39;utilizzo di un&#39;API di servizi di gestione dei documenti fatturabile per i servizi di gestione dei documenti o la conversione di un documento da un formato a un altro vengono considerati documenti sottoposti a rendering.
 
 >[!NOTE]
 >
@@ -107,6 +107,26 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
   </tr>
  </tbody>
 </table>
+
+### Servizio DocAssurance {#DocAssurance-Service}
+
+<table>
+ <tbody>
+  <tr>
+   <td><p>API</p> </td>
+   <td>Descrizione</td>
+   <td>Categoria report transazioni</td>
+   <td>Informazioni aggiuntive</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-" target="_blank">secureDocument</a><br /> </td>
+   <td>Questa API consente di proteggere il documento. Puoi utilizzare l’API per firmare, certificare, estendere o crittografare un documento PDF.</td>
+   <td>Documenti elaborati</td>
+   <td>Vengono fatturate solo le operazioni di firma e certificazione di secureDocument.</td>
+  </tr>
+ </tbody>
+</table>
+
 
 ### Servizio Distiller {#distiller-service}
 
@@ -294,7 +314,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">richiamare</a></td>
    <td>Esegue il documento DDX specificato e restituisce un <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> oggetto contenente i documenti risultanti. </td>
    <td>Documenti elaborati</td>
-   <td>Tutti i formati di file di input supportati da PDF Generator, Forms e dai servizi di output, il servizio Assembler supporta tutti questi formati come formati di file di output. </td>
+   <td>Tutti i formati di file di input supportati dai servizi PDF Generator, Forms e Output, il servizio Assembler supporta tutti questi formati come formati di file di output. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
@@ -305,12 +325,16 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
  </tbody>
 </table>
 
+Il richiamo è considerato una transazione che dipende dall&#39;operazione eseguita. Viene considerata una transazione quando si eseguono una o più delle seguenti operazioni:
+1. Conversione da formato non PDF a formato PDF. Ad esempio, dal formato XDP al formato PDF (per la comunicazione interattiva e non interattiva), dalla conversione da Word al formato PDF.
+1. Conversione dal formato PDF al formato PDF/A.
+1. Conversione da formato PDF a formato non PDF. Ad esempio, dal formato PDF alla conversione del formato immagine, dal formato PDF alla conversione del formato testo.
+
+
 >[!NOTE]
 >
 >* L’API di richiamo del servizio assembler può chiamare internamente un’API fatturabile di un altro servizio a seconda dell’input. Pertanto, l’API di richiamo può essere contabilizzata come nessuna, singola o più transazioni. Il numero di transazioni conteggiate dipende dall’input e dalle API interne richiamate.
 >* Un singolo documento PDF prodotto utilizzando il servizio assembler può essere contabilizzato come nessuna, singola o più transazioni. Il numero di transazioni conteggiate dipende dal codice DDX fornito.
->
-
 
 ### Servizio Utilità PDF  {#pdf-utility-service}
 
@@ -324,7 +348,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
-   <td>Converte un documento PDF in un file XDP. Per convertire correttamente un documento PDF in un file XDP, il documento PDF deve contenere un flusso XFA nel dizionario AcroForm.</td>
+   <td>Converte un documento PDF in un file XDP. Affinché un documento PDF possa essere convertito in un file XDP, il documento PDF deve contenere un flusso XFA nel dizionario AcroForm.</td>
    <td>Documenti elaborati</td>
    <td> </td>
   </tr>
@@ -394,7 +418,7 @@ Tutti gli eventi di invio di moduli adattivi, HTML5 Forms e set di moduli vengon
    <td>
     <ul>
      <li>L’utilizzo del modulo adattivo all’interno di un modulo adattivo (set di moduli adattivi) contabilizza una sola transazione. All’interno di un modulo adattivo è possibile disporre di un numero qualsiasi di moduli adattivi.</li>
-     <li>Ogni modulo di un set di moduli di HTML5 Forms viene contabilizzato come una transazione separata. </li>
+     <li>Ogni modulo di un set di moduli HTML5 Forms viene contabilizzato come transazione separata. </li>
     </ul> </td>
   </tr>
  </tbody>
