@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
+source-git-commit: d636d987f5d62c9169bc4015d7ac50090e362faa
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2089'
 ht-degree: 6%
 
 ---
@@ -325,11 +325,10 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
  </tbody>
 </table>
 
-Il richiamo è considerato una transazione che dipende dall&#39;operazione eseguita. Viene considerata una transazione quando si eseguono una o più delle seguenti operazioni:
-1. Conversione da formato non PDF a formato PDF. Ad esempio, dal formato XDP al formato PDF (per la comunicazione interattiva e non interattiva), dalla conversione da Word al formato PDF.
+L’utilizzo dell’API di richiamo viene conteggiato come una transazione, quando si eseguono una o più delle seguenti operazioni:
+1. Conversione da formati non PDF a formati PDF. Ad esempio, la conversione dal formato XDP al formato PDF, che include forme di comunicazione interattive e non interattive, e la conversione da Word a PDF.
 1. Conversione dal formato PDF al formato PDF/A.
-1. Conversione da formato PDF a formato non PDF. Ad esempio, dal formato PDF alla conversione del formato immagine, dal formato PDF alla conversione del formato testo.
-
+1. Conversione dal formato PDF a formati non PDF. Gli esempi includono la trasformazione da PDF a formato immagine o la conversione da PDF a formato testo.
 
 >[!NOTE]
 >
