@@ -2,10 +2,10 @@
 title: Integrazione con Adobe Analytics tramite IMS
 description: Scopri come integrare AEM con Adobe Analytics utilizzando IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 65%
+source-wordcount: '1085'
+ht-degree: 63%
 
 ---
 
@@ -69,6 +69,12 @@ Utilizzando Adobe Developer Console è necessario creare un progetto (integrazio
 ### Creazione del progetto {#creating-the-project}
 
 Apri la console Adobe Developer per creare un progetto con Adobe Analytics che AEM utilizzerà:
+
+>[!CAUTION]
+>
+>Adobe Developer Al momento, supportiamo solo i **Account di servizio (JWT)** tipo di credenziali.
+>
+>Non utilizzare il **OAuth Server-to-Server** tipo di credenziali, che sarà supportato in futuro.
 
 1. Apri la console Adobe Developer per progetti:
 
@@ -190,7 +196,7 @@ Per confermare che la configurazione funziona come previsto:
 
 È ora possibile fare riferimento alla configurazione affinché un Cloud Service utilizzi l’API Analytics Standard:
 
-1. Apri **Strumenti** menu. Quindi, all&#39;interno del **Cloud Services** sezione, seleziona **Cloud Services legacy**.
+1. Apri **Strumenti** menu. Quindi, all&#39;interno del **Cloud Service** sezione, seleziona **Cloud Service legacy**.
 1. Scorri verso il basso fino a **Adobe Analytics** e seleziona **Configura ora**.
 
    Il **Crea configurazione** viene aperta una finestra di dialogo.
