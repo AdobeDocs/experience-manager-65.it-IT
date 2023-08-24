@@ -2,10 +2,10 @@
 title: Pubblicare contenuti tradotti
 description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 97%
+source-wordcount: '1364'
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggi
 Nel documento precedente del percorso di traduzione di AEM headless, [Traduci contenuto,](configure-connector.md) hai imparato a utilizzare i progetti di traduzione in AEM per tradurre i contenuti headless. Ora dovresti:
 
 * Sapere cos’è un progetto di traduzione.
-* Essere in grado di creare nuovi progetti di traduzione.
+* Essere in grado di creare progetti di traduzione.
 * Utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
 Una volta completata la traduzione iniziale, questo articolo illustra il passaggio successivo per la pubblicazione di tale contenuto e le operazioni da eseguire per aggiornare le traduzioni quando il contenuto sottostante nella directory principale della lingua cambia.
@@ -47,7 +47,7 @@ Per essere disponibile per il consumo, dopo essere stato creato sull’istanza d
 
 ## Pubblicazione del contenuto tradotto {#publishing}
 
-Quando si è soddisfatti dello stato dei contenuti tradotti, si devono pubblicare in modo che i servizi headless possano utilizzarli. Questa attività di solito non è responsabilità dello specialista della traduzione, ma è documentata qui per illustrare il flusso di lavoro completo.
+Quando si è soddisfatti dello stato dei contenuti tradotti, si devono pubblicare in modo che i servizi headless possano utilizzarli. Questa attività non è responsabilità dello specialista della traduzione, ma è documentata qui per illustrare il flusso di lavoro completo.
 
 >[!NOTE]
 >
@@ -78,24 +78,24 @@ Il contenuto headless tradotto è ora pubblicato. È ora possibile accedervi e u
 
 >[!TIP]
 >
->Per pubblicare più traduzioni contemporaneamente, è possibile selezionare più elementi (ad esempio cartelle multilingue) durante la pubblicazione.
+>Per pubblicare più traduzioni contemporaneamente, è possibile selezionare più elementi (ovvero cartelle multilingue) durante la pubblicazione.
 
 Quando si pubblicano i contenuti, sono disponibili opzioni aggiuntive, ad esempio per pianificare un’ora di pubblicazione, che vanno oltre l’ambito di questo percorso. Per ulteriori informazioni, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine del documento.
 
 ## Aggiornamento del contenuto tradotto {#updating-translations}
 
-La traduzione è raramente un esercizio occasionale. In genere, al termine della traduzione iniziale, gli autori dei contenuti continuano ad aggiungere e modificare il contenuto nella directory principale della lingua. Questo significa che devi aggiornare anche il contenuto tradotto.
+La traduzione è raramente un esercizio occasionale. In genere, al termine della traduzione iniziale, gli autori dei contenuti continuano ad aggiungere e modificare il contenuto nella directory principale della lingua. Ciò significa che devi aggiornare anche il contenuto tradotto.
 
-I requisiti specifici del progetto definiscono la frequenza con cui devi aggiornare le traduzioni e quale processo decisionale viene seguito prima di eseguire un aggiornamento. Una volta che hai deciso di aggiornare le traduzioni, il processo in AEM è molto semplice. Poiché la traduzione iniziale era basata su un progetto di traduzione, lo sono anche gli aggiornamenti.
+I requisiti specifici del progetto definiscono la frequenza con cui devi aggiornare le traduzioni e quale processo decisionale viene seguito prima di eseguire un aggiornamento. Una volta che hai deciso di aggiornare le traduzioni, il processo in AEM è semplice. Poiché la traduzione iniziale era basata su un progetto di traduzione, lo sono anche gli aggiornamenti.
 
 Tuttavia, come in precedenza, il processo varia leggermente se si sceglie di creare il progetto di traduzione automaticamente o manualmente.
 
 ### Aggiornamento di un progetto di traduzione creato automaticamente {#updating-automatic-project}
 
 1. Passa a **Navigazione** -> **Risorse** -> **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
-1. Seleziona la directory principale della lingua del progetto. In questo caso abbiamo selezionato `/content/dam/wknd/en`.
+1. Seleziona la directory principale della lingua del progetto. In questo caso, `/content/dam/wknd/en` è selezionato.
 1. Tocca o fai clic sul selettore della barra e mostra il pannello **Riferimenti**.
-1. Tocca o fai clic su **Copie in lingua**.
+1. Tocca o fai clic su **Copie per lingua**.
 1. Seleziona la casella di spunta delle **Copie in lingua**.
 1. Espandi la sezione **Aggiorna copie per lingua** nella parte inferiore del pannello dei riferimenti.
 1. Nel menu a discesa **Progetto**, seleziona **Aggiungi a un progetto di traduzione esistente**.
@@ -118,13 +118,13 @@ You see that a new job card was added to the project. In this example, another S
 ![Additional translation job added](assets/additional-translation-job.png)
 -->
 
-Noterai che le statistiche elencate nella nuova scheda (numero di risorse e frammenti di contenuto) sono diverse. Questo perché AEM riconosce ciò che è cambiato dopo l’ultima traduzione e include solo il contenuto che deve essere tradotto. Ciò include la ritraduzione dei contenuti aggiornati e la prima traduzione dei nuovi contenuti.
+Noterai che le statistiche elencate nella nuova scheda (numero di risorse e frammenti di contenuto) sono diverse. Questo perché l’AEM riconosce ciò che è cambiato dall’ultima traduzione e include solo il contenuto che deve essere tradotto. Ciò include la ritraduzione dei contenuti aggiornati e la prima traduzione dei nuovi contenuti.
 
 Da questo punto, [inizia e gestisci il tuo processo di traduzione proprio come hai fatto con l’originale.](translate-content.md#using-translation-project)
 
 ### Aggiornamento di un progetto di traduzione creato manualmente {#updating-manual-project}
 
-Per aggiornare una traduzione è possibile aggiungere al progetto esistente un nuovo processo responsabile della traduzione del contenuto aggiornato.
+Per aggiornare una traduzione, puoi aggiungere al progetto esistente un nuovo processo responsabile della traduzione del contenuto aggiornato.
 
 1. Passa a **Navigazione** -> **Progetti**.
 1. Tocca o fai clic sul progetto da aggiornare.
@@ -142,7 +142,7 @@ Per aggiornare una traduzione è possibile aggiungere al progetto esistente un n
    ![Seleziona lingua di destinazione](assets/select-target-language.png)
 
 1. Una volta impostata la lingua di destinazione del nuovo processo di traduzione, tocca o fai clic sul pulsante con i puntini di sospensione nella parte inferiore della scheda del processo per visualizzarne i dettagli.
-1. Il processo è vuoto al momento della creazione. Aggiungi contenuto al processo toccando o facendo clic sul pulsante **Aggiungi** e utilizzando il browser del percorso [come in precedenza durante la creazione del progetto di traduzione.](translate-content.md##manually-creating)
+1. Il processo è vuoto al momento della creazione. Aggiungi contenuto al processo toccando o facendo clic sul pulsante **Aggiungi** e utilizzando il browser del percorso [come in precedenza durante la creazione del progetto di traduzione.](translate-content.md#manually-creating)
 
 >[!TIP]
 >
@@ -168,4 +168,4 @@ essere in grado di tradurre i tuoi contenuti headless in AEM. Tuttavia AEM è un
 * [Gestione dei progetti di traduzione](/help/sites-administering/tc-manage.md) - Scopri i dettagli dei progetti di traduzione e le funzioni aggiuntive, come i flussi di lavoro di traduzione umana e i progetti multilingue.
 * [Concetti di authoring](/help/sites-authoring/author.md) - Scopri il modello dell’autore e di pubblicazione di AEM più dettagliatamente. Questo documento si concentra sull’authoring delle pagine anziché sui frammenti di contenuto, ma la teoria è ancora valida.
 * [Pubblicazione delle pagine](/help/sites-authoring/publishing-pages.md) - Scopri le funzioni aggiuntive disponibili per la pubblicazione dei contenuti. Questo documento si concentra sull’authoring delle pagine anziché sui frammenti di contenuto, ma la teoria è ancora valida.
-* [Ambiente e strumenti di authoring](/help/sites-authoring/author-environment-tools.md##path-selection) - AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser con percorso affidabile.
+* [Ambiente e strumenti di authoring](/help/sites-authoring/author-environment-tools.md#path-selection) - AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser con percorso affidabile.

@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 6ef87e4f86181f83b7c340e4954e9e85e6bb9ab1
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
 source-wordcount: '11269'
 ht-degree: 2%
@@ -449,7 +449,7 @@ Contemporaneamente alla creazione di un caso di supporto Adobe per abilitare DAS
 
 >[!IMPORTANT]
 >
->Tutti i video caricati *precedente* per abilitare il supporto di tracce multi-sottotitoli e multi-audio sul tuo account Dynamic Medie, [deve essere rielaborato](/help/assets/processing-profiles.md##reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia multi-sottotitoli e multi-audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
+>Tutti i video caricati *precedente* per abilitare il supporto di tracce multi-sottotitoli e multi-audio sul tuo account Dynamic Medie, [deve essere rielaborato](/help/assets/processing-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia multi-sottotitoli e multi-audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
 
 **Per abilitare il supporto per DASH, sottotitoli multipli e tracce audio multiple sul tuo account Dynamic Medie:**
 
@@ -625,7 +625,7 @@ I sottotitoli e i sottotitoli aggiunti sono supportati nei formati WebVTT e VTT 
 
 >[!IMPORTANT]
 >
->Tutti i video caricati *precedente* per abilitare il supporto di tracce multi-sottotitoli e multi-audio sul tuo account Dynamic Medie, [deve essere rielaborato](/help/assets/processing-profiles.md##reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia multi-sottotitoli e multi-audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
+>Tutti i video caricati *precedente* per abilitare il supporto di tracce multi-sottotitoli e multi-audio sul tuo account Dynamic Medie, [deve essere rielaborato](/help/assets/processing-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia multi-sottotitoli e multi-audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
 
 **Per aggiungere al video più sottotitoli e tracce audio multiple:**
 
@@ -693,7 +693,7 @@ Nel caso in cui Dynamic Medie sia stato configurato per la pubblicazione immedia
 
 >[!CAUTION]
 >
->Quando si caricano file di sottotitoli o file audio in un video già pubblicato, questi file vengono eliminati se [*rielabora*](/help/assets/processing-profiles.md##reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file dei sottotitoli e delle tracce audio nel video.
+>Quando si caricano file di sottotitoli o file audio in un video già pubblicato, questi file vengono eliminati se [*rielabora*](/help/assets/processing-profiles.md#reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file dei sottotitoli e delle tracce audio nel video.
 
 #### Aggiungere più sottotitoli a un video che ha un URL esistente con modificatore sottotitoli
 
