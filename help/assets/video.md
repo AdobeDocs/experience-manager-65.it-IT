@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: d11914d0902075bd36cf1e8f7405b8ac90157f15
+source-git-commit: 6ef87e4f86181f83b7c340e4954e9e85e6bb9ab1
 workflow-type: tm+mt
 source-wordcount: '11269'
 ht-degree: 2%
@@ -852,7 +852,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
 
 >[!IMPORTANT]
 >
-Questo argomento non viene più gestito attivamente. Viene fornito così com’è per gli utenti legacy di Dynamic Medie. Adobe consiglia di: [abilitare la capacità di traccia multi-sottotitolo e multi-audio](##enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, sottotitoli e tracce audio ai video.
+Questo argomento non viene più gestito attivamente. Viene fornito così com’è per gli utenti legacy di Dynamic Medie. Adobe consiglia di: [abilitare la capacità di traccia multi-sottotitolo e multi-audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, sottotitoli e tracce audio ai video.
 
 Puoi estendere la portata dei tuoi video ai mercati globali aggiungendo sottotitoli ai singoli video o ai set di video adattivi. Aggiungendo i sottotitoli, si evita di duplicare l&#39;audio o di utilizzare madrelingua per registrare nuovamente l&#39;audio per ogni lingua. Il video viene riprodotto nella lingua in cui è stato registrato. I sottotitoli delle lingue straniere vengono visualizzati in modo che persone di lingue diverse possano ancora comprendere la porzione audio.
 
