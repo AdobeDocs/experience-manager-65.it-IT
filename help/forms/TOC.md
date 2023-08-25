@@ -9,9 +9,9 @@ breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
 feature: Forms Service
-source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
 workflow-type: tm+mt
-source-wordcount: '3889'
+source-wordcount: '3897'
 ht-degree: 4%
 
 ---
@@ -134,7 +134,7 @@ ht-degree: 4%
    + [Usa modello dati modulo](using/using-form-data-model.md)
 + Forms adattivo - Componenti core {#adaptive-forms-core-components}
    + [Abilitare i componenti core per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md)
-   + [Creare un modulo adattivo basato su Componenti core](/help/forms/using/create-an-adaptive-form-core-components.md)
+   + [Creare componenti core basati sul modulo adattivo](/help/forms/using/create-an-adaptive-form-core-components.md)
    + [Creazione di temi per Forms adattivo basato su Componenti core](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
 + Forms adattivo - Authoring di base {#adaptive-forms-basic-authoring}
    + [Best practice per l’utilizzo dei moduli adattivi](using/adaptive-forms-best-practices.md)
@@ -163,6 +163,7 @@ ht-degree: 4%
    + [Associazione dei revisori di invio a un modulo](using/adding-reviewers-form.md)
    + [Creazione della Guida contestuale per i campi modulo](using/authoring-in-field-help.md)
    + [Utilizzare la modalità Layout per ridimensionare i componenti](/help/forms/using/resize-using-layout-mode.md)
+   + [Connettere e inviare i dati del modulo adattivo a Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
 + Forms adattivo - Authoring avanzato {#adaptive-forms-advanced-authoring}
    + [Creazione di moduli adattivi tramite lo schema JSON](using/adaptive-form-json-schema-form-model.md)
    + [Creazione di moduli adattivi tramite lo schema XML](using/adaptive-form-xml-schema-form-model.md)
@@ -569,7 +570,7 @@ ht-degree: 4%
       + [Backup dei dati dei moduli AEM](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [File di backup e ripristino](/help/forms/using/admin-help/files-back-recover.md)
       + [Strategia di backup e ripristino per i moduli AEM](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [Limitazioni del backup di PDF Generator](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [Limitazioni del backup PDF Generator](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [Strategie di backup per le cartelle controllate](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [Recupero dei dati dei moduli dell’AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [Strategia di backup per il connettore per gli utenti EMC Documentum](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
@@ -587,7 +588,7 @@ ht-degree: 4%
    + [Risoluzione dei problemi dei report dei processi](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Riferimenti per sviluppatori {#developer-reference}
    + [Nozioni di base per gli sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-   + [HTML Template Language ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
+   + [HTML Template Language ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
    + [Plug-in AEM per il debug dei moduli adattivi](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Riferimento API Java di AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [Riferimento API Java di AEM Forms su JEE](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
