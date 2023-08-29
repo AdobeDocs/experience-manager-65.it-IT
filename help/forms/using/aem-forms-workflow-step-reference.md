@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
+source-git-commit: 3c7b46c20b2f34bd83941649cbff2ac16c3aade2
 workflow-type: tm+mt
 source-wordcount: '7690'
 ht-degree: 0%
@@ -303,6 +303,7 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
   >* Nella sezione Ruolo è possibile specificare il ruolo del destinatario come Firmatario, Approvatore, Accettatore, Destinatario certificato, Form Filler e Delegatore.
   >* Se si seleziona Delegante nell&#39;opzione Ruolo, il Delegante può assegnare l&#39;attività di firma a un altro destinatario.
   >* Se hai configurato un metodo di autenticazione per [!DNL Adobe Sign], in base alla configurazione, seleziona un metodo di autenticazione come l’autenticazione basata su telefono, l’autenticazione basata su identità social, l’autenticazione basata su conoscenza, l’autenticazione basata su identità governativa.
+
 * **Script o servizio per selezionare i destinatari:** L’opzione è disponibile solo se hai selezionato Dinamicamente l’opzione nel campo Seleziona destinatari. È possibile specificare un ECMAScript o un servizio per scegliere i destinatari e le opzioni di verifica per un documento.
 * **Dettagli destinatario:** L’opzione è disponibile solo se l’opzione Manualmente è selezionata nel campo Seleziona destinatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile del tipo di dati String per definire i valori per **[!UICONTROL E-mail]**, **[!UICONTROL Codice paese]**, e **[!UICONTROL Numero di telefono]** campi. Il **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** i campi vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dal **[!UICONTROL Verifica in due fasi]** elenco a discesa.
 * **Variabile di stato:** Un documento abilitato per Adobe Sign memorizza lo stato di firma del documento in una variabile di tipo dati String. Specifica il nome della variabile di stato (adobeSignStatus). Una variabile di stato di un’istanza è disponibile in CRXDE in /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contiene lo stato di una variabile.
