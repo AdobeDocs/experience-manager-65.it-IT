@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
 workflow-type: tm+mt
-source-wordcount: '7589'
+source-wordcount: '7690'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ I modelli di workflow consentono di convertire una regola business in un process
 
 ## Passaggi Forms Workflow {#forms-workflow-steps}
 
-I passaggi del flusso di lavoro Forms eseguono operazioni specifiche per AEM Forms in un flusso di lavoro AEM. Questi passaggi consentono di creare rapidamente un flusso di lavoro adattivo basato su Forms su OSGi. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, processi aziendali interni e attraverso il firewall. Puoi anche utilizzare i passaggi di Forms Workflow per avviare i servizi documentali, integrarli con il flusso di lavoro della firma di Adobe Sign ed eseguire altre operazioni AEM Forms. Hai bisogno di [Componente aggiuntivo AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) per utilizzare questi passaggi in un flusso di lavoro.
+I passaggi di Forms Workflow eseguono operazioni specifiche per AEM Forms in un flusso di lavoro AEM. Questi passaggi consentono di creare rapidamente un flusso di lavoro adattivo basato su Forms su OSGi. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, processi aziendali interni e attraverso il firewall. Puoi anche utilizzare i passaggi di Forms Workflow per avviare i servizi documentali, integrarli con il flusso di lavoro della firma di Adobe Sign ed eseguire altre operazioni AEM Forms. Hai bisogno di [Componente aggiuntivo AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) per utilizzare questi passaggi in un flusso di lavoro.
 
 I passaggi del flusso di lavoro incentrati su Forms eseguono operazioni specifiche per AEM Forms in un flusso di lavoro AEM. Questi passaggi ti consentono di creare rapidamente un flusso di lavoro basato su Forms e adattivo per Forms su OSGi. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, interni e attraverso il firewall.
 
 >[!NOTE]
 >
->Se il modello di flusso di lavoro è contrassegnato per un archivio esterno e quindi per tutti i passaggi del flusso di lavoro di Forms, è possibile selezionare solo l&#39;opzione della variabile per memorizzare o recuperare file di dati e allegati.
+>Se il modello di flusso di lavoro è contrassegnato per un archivio esterno, per tutti i passaggi del Forms Workflow è possibile selezionare solo l&#39;opzione della variabile per memorizzare o recuperare file di dati e allegati.
 
 ## Assegna passaggio attività {#assign-task-step}
 
@@ -268,7 +268,7 @@ Il passaggio Richiama servizio modello dati modulo include i campi elencati di s
 * **Seleziona documento JSON di input tramite**: file JSON contenente i valori per tutti gli argomenti del servizio. Il percorso del file JSON può essere **relativo al payload** o un **percorso assoluto.** Puoi anche recuperare il documento JSON di input utilizzando una variabile di tipo di dati JSON o Modello dati modulo.
 
 * **Notazione in punti JSON:** Lascia vuoto il campo per utilizzare tutti gli oggetti del file JSON specificato come input per gli argomenti del servizio. Per leggere un oggetto JSON specifico dal file JSON specificato come input per gli argomenti del servizio, specifica la notazione del punto per l’oggetto JSON. Ad esempio, se disponi di un JSON simile a quello elencato all’inizio della sezione, specifica insurance.customerDetails per fornire tutti i dettagli di un cliente come input per il servizio.
-* **Output di service > Mappa e scrivi i valori di output in variabile o metadati:** Seleziona l’opzione per salvare i valori di output come proprietà del nodo di metadati dell’istanza del flusso di lavoro in crx-repository. Specifica il nome della proprietà dei metadati e seleziona l’attributo di output del servizio corrispondente da mappare con la proprietà dei metadati. Ad esempio, mappa phone_number restituito dal servizio di output con la proprietà phone_number dei metadati del flusso di lavoro. Analogamente, è possibile memorizzare l&#39;output in una variabile di tipo di dati Long.Quando si seleziona una proprietà per **[!UICONTROL Attributo di output del servizio da mappare]** , solo le variabili in grado di memorizzare i dati della proprietà selezionata vengono compilate per **[!UICONTROL Salva l’output in]** opzione.
+* **Output di service > Mappa e scrivi i valori di output in variabile o metadati:** Seleziona l’opzione per salvare i valori di output come proprietà del nodo di metadati dell’istanza del flusso di lavoro in crx-repository. Specifica il nome della proprietà dei metadati e seleziona l’attributo di output del servizio corrispondente da mappare con la proprietà dei metadati. Ad esempio, mappa phone_number restituito dal servizio di output con la proprietà phone_number dei metadati del flusso di lavoro. Allo stesso modo, puoi memorizzare l’output in una variabile di tipo dati Long. Quando selezioni una proprietà per **[!UICONTROL Attributo di output del servizio da mappare]** , solo le variabili in grado di memorizzare i dati della proprietà selezionata vengono compilate per **[!UICONTROL Salva l’output in]** opzione.
 
 * **Output di service > Salva output in variabile o in un file JSON:** Seleziona l’opzione per salvare i valori di output in un file JSON in un percorso assoluto, in un percorso relativo al payload o in una variabile.
 * **Salva documento JSON di output tramite le opzioni di seguito:** Salva il file JSON di output. Il percorso del file JSON di output può essere relativo al payload o a un percorso assoluto. Puoi anche salvare il file JSON di output utilizzando una variabile di tipo di dati JSON o Modello dati modulo.
@@ -277,7 +277,7 @@ Il passaggio Richiama servizio modello dati modulo include i campi elencati di s
 
 Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i documenti. Il passaggio Firma documento presenta le seguenti proprietà:
 
-* **Nome contratto:** Specificare il titolo del contratto. Il nome del contratto diventa parte dell’oggetto e del corpo del testo dell’e-mail inviata ai firmatari. È possibile memorizzare il nome in una variabile di tipo di dati String oppure selezionare **Letterale** per aggiungere manualmente il nome.
+* **Nome contratto:** Specificare il titolo del contratto. Il nome del contratto diventa parte dell’oggetto e del corpo del testo dell’e-mail inviata ai destinatari. È possibile memorizzare il nome in una variabile di tipo di dati String oppure selezionare **Letterale** per aggiungere manualmente il nome.
 
 * **Lingua:** Specifica la lingua per le opzioni di e-mail e verifica. È possibile archiviare le impostazioni locali in una variabile di tipo String oppure selezionare **Letterale** per scegliere le impostazioni locali dall&#39;elenco delle opzioni disponibili. È necessario definire il codice delle impostazioni locali durante la memorizzazione del valore relativo in una variabile. Ad esempio, specifica **en_US** per inglese e **fr_FR** per il francese.
 
@@ -293,20 +293,32 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 
 * **Giorni mancanti alla scadenza:** Un documento viene contrassegnato come dovuto (scadenza passata) dopo che non vi è alcuna attività sull&#39;attività per il numero di giorni specificato in **Giorni mancanti alla scadenza** campo. Il numero di giorni viene conteggiato dopo che il documento è stato assegnato a un utente per la firma.
 * **Frequenza e-mail promemoria:** Puoi inviare un promemoria e-mail a intervalli giornalieri o settimanali. La settimana viene conteggiata dal giorno in cui il documento viene assegnato a un utente per la firma.
-* **Processo di firma:** È possibile scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un firmatario riceve il documento alla volta per la firma. Dopo che il primo firmatario ha completato la firma del documento, quest&#39;ultimo viene inviato al secondo firmatario e così via. In ordine parallelo, più firmatari possono firmare un documento alla volta.
+* **Processo di firma:** È possibile scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un destinatario riceve il documento alla volta per la firma. Dopo che il primo destinatario ha completato la firma del documento, il documento viene inviato al secondo destinatario e così via. In parallelo, più destinatari possono firmare un documento alla volta.
 * **URL di reindirizzamento:** Specifica un URL di reindirizzamento. Dopo aver firmato il documento, puoi reindirizzare l’assegnatario a un URL. Di solito, questo URL contiene un messaggio di ringraziamento o ulteriori istruzioni.
 * **Fase flusso di lavoro:** Un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello (Sidekick > Pagina > Proprietà pagina > Stadi).
-* **Seleziona firmatari:** Specificare il metodo di selezione dei firmatari per il documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un firmatario.
-* **Script o servizio per selezionare i firmatari:** L’opzione è disponibile solo se l’opzione Dinamicamente è selezionata nel campo Seleziona firmatari. È possibile specificare un codice ECMAScript o un servizio per scegliere i firmatari e le opzioni di verifica per un documento.
-* **Dettagli firmatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manuale è selezionata nel campo Seleziona firmatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile del tipo di dati String per definire i valori per **[!UICONTROL E-mail]**, **[!UICONTROL Codice paese]**, e **[!UICONTROL Numero di telefono]** campi. Il **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** i campi vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dal **[!UICONTROL Verifica in due fasi]** elenco a discesa.
+* **Seleziona destinatari:** Specificare il metodo di scelta del destinatario del documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un destinatario. Quando selezioni Manualmente nel menu a discesa, aggiungi i dettagli del destinatario come E-mail, Ruolo e Metodo di autenticazione.
+
+  >[!NOTE]
+  >
+  >* Nella sezione Ruolo è possibile specificare il ruolo del destinatario come Firmatario, Approvatore, Accettatore, Destinatario certificato, Form Filler e Delegatore.
+  >* Se si seleziona Delegante nell&#39;opzione Ruolo, il Delegante può assegnare l&#39;attività di firma a un altro destinatario.
+  >* Se hai configurato un metodo di autenticazione per [!DNL Adobe Sign], in base alla configurazione, seleziona un metodo di autenticazione come l’autenticazione basata su telefono, l’autenticazione basata su identità social, l’autenticazione basata su conoscenza, l’autenticazione basata su identità governativa.
+* **Script o servizio per selezionare i destinatari:** L’opzione è disponibile solo se hai selezionato Dinamicamente l’opzione nel campo Seleziona destinatari. È possibile specificare un ECMAScript o un servizio per scegliere i destinatari e le opzioni di verifica per un documento.
+* **Dettagli destinatario:** L’opzione è disponibile solo se l’opzione Manualmente è selezionata nel campo Seleziona destinatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile del tipo di dati String per definire i valori per **[!UICONTROL E-mail]**, **[!UICONTROL Codice paese]**, e **[!UICONTROL Numero di telefono]** campi. Il **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** i campi vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dal **[!UICONTROL Verifica in due fasi]** elenco a discesa.
 * **Variabile di stato:** Un documento abilitato per Adobe Sign memorizza lo stato di firma del documento in una variabile di tipo dati String. Specifica il nome della variabile di stato (adobeSignStatus). Una variabile di stato di un’istanza è disponibile in CRXDE in /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contiene lo stato di una variabile.
-* **Salva documento firmato tramite le opzioni di seguito:** Specificare il percorso in cui conservare i documenti firmati. È possibile scegliere di sovrascrivere il file di payload, collocare il documento firmato in una posizione all&#39;interno della directory di payload o archiviare il documento firmato in una variabile di tipo Documento.
+* **[!UICONTROL Documento firmato]**: è possibile salvare lo stato del documento firmato in Variabile. Per aggiungere un audit trail della firma elettronica per una maggiore sicurezza e legalità al documento firmato, è possibile includere un rapporto di audit. È possibile salvare il documento firmato utilizzando la cartella Variabile o Payload.
+  >[!NOTE]
+  >
+  > Il rapporto di audit viene aggiunto all&#39;ultima pagina del documento firmato.
+<!--
+* **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
+-->
 
 ## Passaggi di Document Services {#document-services-steps}
 
 I servizi di documentazione AEM sono un insieme di servizi per la creazione, l’assemblaggio e la protezione di documenti PDF. AEM Forms fornisce un passaggio del flusso di lavoro AEM separato per ogni servizio documentale.
 
-Analogamente ad altri passaggi del flusso di lavoro di AEM Forms, come Assegna attività, Invia e-mail e Firma documento, puoi utilizzare le variabili in tutti i passaggi dei servizi dei documenti AEM. Per ulteriori informazioni sulla creazione e la gestione delle variabili, consulta [Variabili nei flussi di lavoro AEM](../../forms/using/variable-in-aem-workflows.md).
+Analogamente ad altri passaggi del flusso di lavoro di AEM Forms, come Assegna attività, Invia e-mail e Firma documento, puoi utilizzare le variabili in tutti i passaggi dei servizi documentali AEM. Per ulteriori informazioni sulla creazione e la gestione delle variabili, consulta [Variabili nei flussi di lavoro AEM](../../forms/using/variable-in-aem-workflows.md).
 
 ### Passaggio Applica marca temporale documento {#apply-document-time-stamp-step}
 
@@ -398,7 +410,7 @@ Invia un documento direttamente a una stampante. Supporta i seguenti meccanismi 
 
 ### Genera passaggio di output stampato {#generatePrintedOutput}
 
-Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL in base a un progetto di modulo e a un file di dati. Il file di dati viene unito alla struttura del modulo e formattato per la stampa. L&#39;output generato da questo passaggio può essere inviato direttamente a una stampante o salvato come file. È consigliabile utilizzare questo passaggio quando si desidera utilizzare le progettazioni dei moduli o i dati di un&#39;applicazione. Se le progettazioni di moduli o di moduli si trovano in rete, nel file system locale o in una posizione HTTP, utilizzare l&#39;operazione generatePrintedOutput.
+Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL in base a un progetto di modulo e a un file di dati. Il file di dati viene unito alla struttura del modulo e formattato per la stampa. L&#39;output generato da questo passaggio può essere inviato direttamente a una stampante o salvato come file. È consigliabile utilizzare questo passaggio quando si desidera utilizzare le progettazioni dei moduli o i dati di un&#39;applicazione. Se le progettazioni di moduli o moduli si trovano in rete, nel file system locale o in una posizione HTTP, utilizzare l&#39;operazione generatePrintedOutput.
 
 Ad esempio, l&#39;applicazione richiede l&#39;unione di una struttura di modulo con un file di dati. I dati contengono centinaia di record. Inoltre, richiede che l&#39;output venga inviato a una stampante che supporta ZPL. La struttura del modulo e i dati di input si trovano in un&#39;applicazione. Utilizzare l&#39;operazione generatePrintedOutput per unire ogni record con una struttura di modulo e inviare l&#39;output a una stampante che supporta ZPL.
 
@@ -449,7 +461,7 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 
 * **[!UICONTROL Copie]**: valore intero che specifica il numero di copie da generare per l’output. Il valore predefinito è 1.
 
-* **[!UICONTROL Stampa fronte retro]**: valore di impaginazione che specifica se utilizzare la stampa fronte/retro o fronte/retro. Le stampanti che supportano PostScript e PCL utilizzano questo valore.Se si specifica un valore letterale, selezionare uno dei valori seguenti:
+* **[!UICONTROL Stampa fronte retro]**: valore di impaginazione che specifica se utilizzare la stampa fronte/retro o fronte/retro. Le stampanti che supportano PostScript e PCL utilizzano questo valore. Se fornisci un valore letterale, seleziona uno dei seguenti valori:
    * **[!UICONTROL Bordo lungo fronte-retro]**: utilizza la stampa fronte/retro e la stampa con impaginazione a lungo termine.
    * **[!UICONTROL Bordo corto fronte-retro]**: utilizza la stampa fronte/retro e la stampa con impaginazione lato corto.
    * **[!UICONTROL Simplex]**: stampa fronte/retro.
