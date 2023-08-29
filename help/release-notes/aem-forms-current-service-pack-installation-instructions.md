@@ -2,9 +2,9 @@
 title: Istruzioni di installazione delle patch AEM Forms per AEM Forms
 description: Istruzioni per l’installazione del service pack di AEM Forms per l’ambiente OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
+source-git-commit: d179c45044bbc987d60e180debefb243a5ee7cc6
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1733'
 ht-degree: 9%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 9%
 
 ## Informazioni sulla versione
 
-| Prodotto | Adobe Experience Manager 6.5 Forms |
+| Prodotto | Forms Adobe Experience Manager 6.5 |
 |---|---|
-| Versione | 6.5.17.0 |
+| Versione | 6.5.18.0 |
 | Tipo | Versione Service Pack |
-| Data | 1 giugno 2023 |
+| Data | 29 agosto 2023 |
 | URL di download | [Ultime versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -33,7 +33,7 @@ Il service pack di Adobe Experience Manager (AEM) Forms include funzioni nuove e
 
 >[!NOTE]
 >
-> In Adobe viene rilasciato un programma di installazione completo ogni sei Service Pack. AEM 6.5 Forms Service Pack 12 (6.5.12.0) su JEE è stato l’ultimo programma di installazione completo. Il programma di installazione completo supporta le nuove piattaforme, mentre il programma di installazione dei Service Pack standard include nuove funzionalità, correzioni di bug e miglioramenti generali. Se stai eseguendo una nuova installazione o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.12.0 Forms su JEE rilasciato il 3 marzo 2022 invece del programma di installazione di Forms AEM 6.5 rilasciato l’8 aprile 2019. Dopo aver utilizzato il programma di installazione completo, installare il service pack più recente.
+> In Adobe viene rilasciato un programma di installazione completo ogni sei Service Pack. AEM 6.5 Forms Service Pack 18 (6.5.18.0) è l’ultimo programma di installazione completo di JEE. Il programma di installazione completo supporta le nuove piattaforme, mentre il programma di installazione dei Service Pack standard include nuove funzionalità, correzioni di bug e miglioramenti generali. Se stai eseguendo una nuova installazione o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE rilasciato il 29 agosto 2023 invece del programma di installazione di AEM 6.5 Forms rilasciato il 08 aprile 2019 o 6.5.12 AEM Forms Installer rilasciato il 03 marzo 2022. Dopo aver utilizzato il programma di installazione completo, installare il service pack più recente.
 
 ## Scaricare e installare Service Pack in un modulo AEM in un ambiente JEE {#download-and-install-for-jee-service-pack}
 
@@ -65,14 +65,13 @@ Il service pack di Adobe Experience Manager (AEM) Forms include funzioni nuove e
 1. Estrai **Archivio del programma di installazione di AEM Forms su JEE Service Pack** sul disco rigido:
 
    * **Windows**
-Passare alla directory appropriata sul supporto di installazione o sulla cartella del disco rigido in cui è stato copiato il programma di installazione, quindi fare doppio clic sul pulsante 
-`aemforms65_cfp_install.exe` file.
+Passare alla directory appropriata sul supporto di installazione o sulla cartella del disco rigido in cui è stato copiato il programma di installazione, quindi fare doppio clic sul pulsante `aemforms65_cfp_install.exe` file.
 
       * (Windows a 32 bit) `Windows\Disk1\InstData\VM`
       * (Windows a 64 bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+
    * **Linux®**
-Passare alla directory appropriata e da una shell e digitare 
-`./aem65_cfp_install.bin`.
+Passare alla directory appropriata e da una shell e digitare `./aem65_cfp_install.bin`.
 
       * (Linux®) `Linux/Disk1/InstData/NoVM`
 
@@ -89,10 +88,9 @@ Passare alla directory appropriata e da una shell e digitare
 
    * Oppure deseleziona il **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Prima dell’esecuzione **Gestione configurazione** utilizzo **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, passa a *`<AEMForms_Install_Dir>\configurationManager\bin`* directory e sostituzione [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) file.
 
-      >[!NOTE]
-      >
-      >* Aggiornamento o sostituzione del **ConfigurationManager.bat** file consente di evitare l&#39;aggiornamento manuale dei file con estensione lax.
-
+     >[!NOTE]
+     >
+     >* Aggiornamento o sostituzione del **ConfigurationManager.bat** file consente di evitare l&#39;aggiornamento manuale dei file con estensione lax.
 
 1. **[Solo per Unix]:** Il **Avvia Configuration Manager** per impostazione predefinita. Clic **[!UICONTROL Fine]** per eseguire Configuration Manager immediatamente o per eseguire **Gestione configurazione** in seguito, deseleziona la **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Puoi iniziare **Gestione configurazione** in un secondo momento utilizzando lo script appropriato nel `[AEM_forms_root]/configurationManager/bin` directory.
 
@@ -118,7 +116,6 @@ Passare alla directory appropriata e da una shell e digitare
 >
 > * Se si esegue l&#39;aggiornamento da **AEM Service Pack 6.5.15.0**, l&#39;installazione del **frammento servlet** non è obbligatorio. Per le versioni **AEM Service Pack 6.5.14.0** In precedenza, era obbligatorio installare il frammento servlet.
 > * È necessario installare **frammento servlet** per tutti i server applicazioni, tranne quelli in esecuzione su **JBoss® EAP 7.4.0**.
-
 
 
 Per scaricare e installare il frammento del servlet:
@@ -152,12 +149,13 @@ Il pacchetto viene installato automaticamente.
 
 * Utilizza il [API HTTP da Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it). Utilizzare  `cmd=install&recursive=true` affinché i pacchetti nidificati vengano installati.
 
-   >[!NOTE]
-   Experience Manager Service Pack non supporta l&#39;installazione di Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >[!NOTE]
+  >
+  Experience Manager Service Pack non supporta l&#39;installazione di Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   **Convalidare l’installazione**
+  **Convalidare l’installazione**
 
-   Per informazioni sulle piattaforme certificate per l’utilizzo di questa versione, consulta [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
+  Per informazioni sulle piattaforme certificate per l’utilizzo di questa versione, consulta [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
    1. Pagina delle informazioni sul prodotto (`/system/console/productinfo`) visualizza la stringa della versione aggiornata `Adobe Experience Manager (spversion)` in [!UICONTROL Prodotti installati].<!-- UPDATE FOR EACH NEW RELEASE -->
    1. Tutti i bundle OSGi sono **[!UICONTROL ATTIVO]** o **[!UICONTROL FRAMMENTO]** nella console OSGi (usa la console web: `/system/console/bundles`).
@@ -184,6 +182,7 @@ Il pacchetto viene installato automaticamente.
 1. Eseguire il backup del [Archivio CRX e schema database](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 
 >[!NOTE]
+>
 Se si installa AEM Forms Service Pack per il database relazionale, è necessario eseguire il backup di DB_schema.
 
 +++
@@ -210,12 +209,13 @@ Esistono due metodi diversi che è possibile utilizzare per installare automatic
 * Inserisci la confezione in `../crx-quickstart/install` quando il server è disponibile online. Il pacchetto viene installato automaticamente.
 * Utilizza il [API HTTP da Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it). Utilizzare `cmd=install&recursive=true` affinché i pacchetti nidificati vengano installati.
 
-   >[!NOTE]
-   Experience Manager Service Pack non supporta l&#39;installazione di Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >[!NOTE]
+  >
+  Experience Manager Service Pack non supporta l&#39;installazione di Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   **Convalidare l’installazione**
+  **Convalidare l’installazione**
 
-   Per informazioni sulle piattaforme certificate per l’utilizzo di questa versione, consulta [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
+  Per informazioni sulle piattaforme certificate per l’utilizzo di questa versione, consulta [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
    1. Pagina delle informazioni sul prodotto (`/system/console/productinfo`) visualizza la stringa della versione aggiornata `Adobe Experience Manager (spversion)` in [!UICONTROL Prodotti installati]. <!-- UPDATE FOR EACH NEW RELEASE -->
 

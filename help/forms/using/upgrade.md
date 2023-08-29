@@ -11,14 +11,14 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 077208ed8fea6a644487dbb46efb54ea44f303b4
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 4%
+source-wordcount: '341'
+ht-degree: 6%
 
 ---
 
-# Aggiornamento ad AEM 6.5 Forms{#upgrade-to-aem-forms}
+# Aggiornamento ad AEM 6.5 Forms {#upgrade-to-aem-forms}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -49,6 +49,7 @@ Il diagramma seguente mostra i percorsi di aggiornamento disponibili per AEM For
 
 ![Aggiornamento JEE 6.5](do-not-localize/jee-upgrade-6-5.png)
 
+
 Puoi eseguire un aggiornamento diretto da:
 
 * AEM 6.3 Forms su JEE
@@ -57,16 +58,14 @@ Puoi eseguire un aggiornamento diretto da:
 
 È inoltre possibile eseguire un aggiornamento multi-hop da
 
-* LiveCycle ES2
-* LiveCycle ES3
 * LiveCycle ES4 SP1
 * Forms AEM 6.0 su JEE
 * Forms AEM 6.1 su JEE
 * AEM 6.2 Forms su JEE
 
-AEM 6.5.12.0 Forms su JEE fornisce due tipi di installatori: [Installazione completa](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) e [Programma di installazione patch](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+AEM 6.5.18.0 Forms su JEE fornisce due tipi di installatori: [Installazione completa](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) e [Programma di installazione patch](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-**Installazione completa**: è possibile utilizzare il programma di installazione completo per configurare nuove istanze di AEM Forms o eseguire aggiornamenti da AEM 6.3 Forms su JEE, AEM 6.4 su JEE e l’aggiornamento out-of-the-place da AEM 6.5.x.x Forms su JEE a AEM 6.5.12.0 Forms su JEE.
+**Installazione completa**: è possibile utilizzare il programma di installazione completo per configurare nuove istanze di AEM Forms o eseguire aggiornamenti da AEM 6.5.x.x Forms su JEE a AEM 6.5.18.0 Forms su JEE.
 
 **Programma di installazione patch**: il programma di installazione delle patch è destinato ai clienti che già utilizzano le versioni 6.5.x.x di AEM. È possibile utilizzare il programma di installazione delle patch per eseguire l’aggiornamento alla versione più recente di AEM Forms.
 
