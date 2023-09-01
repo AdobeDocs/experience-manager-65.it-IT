@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
+source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
 workflow-type: tm+mt
-source-wordcount: '11363'
+source-wordcount: '11313'
 ht-degree: 2%
 
 ---
@@ -702,11 +702,7 @@ Nel caso in cui Dynamic Medie sia stato configurato per la pubblicazione immedia
 
 #### Aggiungere più sottotitoli a un video che ha un URL esistente con modificatore sottotitoli
 
-Dynamic Medie supporta l’aggiunta di una didascalia singola con video tramite un modificatore URL (consulta [didascalia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=en)).
-
-<!-- IS THE CORRECT LINK THE ONE ABOVE OR IS IT THE LINK BELOW???? -->
-
-Consulta [Distribuisci contenuti statici (non immagine)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) nel *Guida all’API per il server e il rendering immagini di Dynamic Medie* per ulteriori informazioni sull’utilizzo della funzione JSON in un URL.
+Dynamic Medie supporta l’aggiunta di una didascalia singola con video tramite un modificatore URL. Consulta [Aggiungi didascalie al video](#adding-captions-to-video).
 
 Le modifiche apportate a più sottotitoli hanno la precedenza su una didascalia aggiunta tramite un modificatore URL per i video pubblicati.
 
@@ -731,7 +727,7 @@ L’URL esistente con il modificatore didascalia ora può caricare più didascal
 | Stato sottotitolo o traccia audio | Descrizione |
 | --- | --- |
 | Elaborazione | Quando si aggiunge e si salva un nuovo file di sottotitoli o di tracce audio, lo stato diventa &quot;Elaborazione&quot;. Dynamic Medie elabora il file allegando il manifesto di streaming al video principale. |
-| Elaborato | Al termine dell&#39;elaborazione, il sottotitolo o il file di traccia audio viene visualizzato in stato &quot;Elaborato&quot;. È possibile visualizzare in anteprima i sottotitoli e i file di traccia audio che appaiono come &quot;elaborati&quot; *prima di* pubblichi il video in diretta. |
+| Elaborato | Al termine dell&#39;elaborazione, il sottotitolo o il file di traccia audio, o la traccia audio originale associata al video principale, appare in uno stato &quot;Elaborato&quot;. È possibile visualizzare in anteprima i sottotitoli e i file di traccia audio che appaiono come &quot;elaborati&quot; *prima di* pubblichi il video in diretta. |
 | Pubblicato | Uno stato &quot;Pubblicato&quot; rappresenta uno stato simile a &quot;Pubblicato&quot; per un video principale. Le risorse vengono pubblicate quando il video principale viene pubblicato e sono disponibili sull’URL pubblico di Dynamic Medie. |
 | Non riuscito | Lo stato &quot;Non riuscito&quot; indica che l&#39;elaborazione di un file di sottotitoli o traccia audio non è stata completata. Elimina il file dei sottotitoli o delle tracce audio e caricalo di nuovo. |
 | La pagina di cui è stata annullata la pubblicazione   | Quando si annulla esplicitamente la pubblicazione di un video principale pubblicato, vengono annullati anche i sottotitoli o i file di traccia audio aggiunti al video. |
@@ -857,7 +853,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
 
 >[!IMPORTANT]
 >
-Questo argomento non viene più gestito attivamente. Viene fornito così com’è per gli utenti legacy di Dynamic Medie. Adobe consiglia di: [abilitare la capacità di traccia multi-sottotitolo e multi-audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, sottotitoli e tracce audio ai video.
+Adobe consiglia di: [abilitare la capacità di traccia multi-sottotitolo e multi-audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, sottotitoli e tracce audio ai video.
 
 Puoi estendere la portata dei tuoi video ai mercati globali aggiungendo sottotitoli ai singoli video o ai set di video adattivi. Aggiungendo i sottotitoli, si evita di duplicare l&#39;audio o di utilizzare madrelingua per registrare nuovamente l&#39;audio per ogni lingua. Il video viene riprodotto nella lingua in cui è stato registrato. I sottotitoli delle lingue straniere vengono visualizzati in modo che persone di lingue diverse possano ancora comprendere la porzione audio.
 
