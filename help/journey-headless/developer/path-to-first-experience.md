@@ -2,10 +2,10 @@
 title: Percorso della tua prima esperienza con AEM Headless
 description: In questa parte del Percorso per sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 99%
+source-wordcount: '1992'
+ht-degree: 98%
 
 ---
 
@@ -151,3 +151,4 @@ Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo
 * [Creare modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md): documentazione tecnica sui modelli per frammenti di contenuto
 * [Creare frammenti di contenuto](/help/assets/content-fragments/content-fragments.md): documentazione tecnica sui frammenti di contenuto
 * [Query del contenuto con GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): documentazione tecnica sull’API GraphQL
+* Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

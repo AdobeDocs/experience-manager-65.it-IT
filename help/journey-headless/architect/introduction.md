@@ -2,10 +2,10 @@
 title: Percorso Architect di contenuti Adobe Experience Manager headless
 description: Introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e come modellare i contenuti per il tuo progetto.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 88%
+source-wordcount: '731'
+ht-degree: 86%
 
 ---
 
@@ -81,3 +81,6 @@ Ora che hai imparato i concetti e la terminologia, il passo successivo è [Scopr
 * Percorso per sviluppatori headless di AEM
    * [Scopri di più sullo sviluppo di CMS headless](/help/journey-headless/developer/learn-about.md)
    * [Scopri come modellare il contenuto](/help/journey-headless/developer/model-your-content.md)
+* [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

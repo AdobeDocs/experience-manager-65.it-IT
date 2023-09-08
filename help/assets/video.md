@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
+source-git-commit: 0738f53564cb2e2607d739d97bdd1bb2fc64ac6e
 workflow-type: tm+mt
-source-wordcount: '11313'
+source-wordcount: '11310'
 ht-degree: 2%
 
 ---
@@ -605,7 +605,6 @@ Alcuni dei casi d’uso da considerare per aggiungere sottotitoli multipli e tra
 | **Sottotitoli** | Supporto di più lingue |
 |  | Testo descrittivo per accessibilità |
 | **Tracce audio** | Supporto di più lingue |
-|  | Audio stereo e multicanale (audio surround) |
 |  | Brani di commento |
 |  | Audio descrittivo |
 
@@ -698,7 +697,7 @@ Nel caso in cui Dynamic Medie sia stato configurato per la pubblicazione immedia
 
 >[!CAUTION]
 >
->Quando si caricano file di sottotitoli o file audio in un video già pubblicato, questi file vengono eliminati se [*rielabora*](/help/assets/processing-profiles.md#reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file dei sottotitoli e delle tracce audio nel video.
+>Quando si caricano file di sottotitoli o file audio in un video pubblicato o non pubblicato, i file vengono eliminati se [*rielabora*](/help/assets/processing-profiles.md#reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file dei sottotitoli e delle tracce audio nel video.
 
 #### Aggiungere più sottotitoli a un video che ha un URL esistente con modificatore sottotitoli
 

@@ -2,10 +2,10 @@
 title: Come aggiornare il contenuto utilizzando le API di AEM Assets.
 description: In questa parte del Percorso per sviluppatori Headless di AEM, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 90%
+source-wordcount: '1066'
+ht-degree: 89%
 
 ---
 
@@ -329,3 +329,6 @@ Dovresti continuare il tuo percorso headless AEM rivedendo il documento successi
 * [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Spiegazione di CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=it)
 * [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=it)
+* Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

@@ -7,9 +7,9 @@ keywords: Aggiungi un gestore degli errori personalizzato, aggiungi un gestore d
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
+source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2281'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ Alcune delle opzioni per visualizzare le risposte di errore sono:
 
 Prima di utilizzare il gestore degli errori in un Forms adattivo:
 
-* [Abilitare i componenti core Forms adattivi per il tuo ambiente AEM Cloud Service](enable-adaptive-forms-core-components.md).
+* [Abilitare i componenti core Forms adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md).
 * Conoscenza di base per [creare una funzione personalizzata](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Installa la versione più recente di [Apache Maven](https://maven.apache.org/download.cgi).
 

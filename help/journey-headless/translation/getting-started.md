@@ -2,10 +2,10 @@
 title: Guida introduttiva alla traduzione headless in AEM
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 93%
+source-wordcount: '1495'
+ht-degree: 92%
 
 ---
 
@@ -190,3 +190,6 @@ Mentre si consiglia di procedere alla parte successiva del percorso di traduzion
 * [Identificazione del contenuto da tradurre](/help/sites-administering/tc-rules.md): scopri come le regole di traduzione identificano i contenuti da tradurre.
 * [Configurazione del Translation Integration Framework](/help/sites-administering/tc-tic.md): scopri come configurare il Translation Integration Framework per l’integrazione con i servizi di traduzione di terze parti.
 * [Gestione dei progetti di traduzione](/help/sites-administering/tc-manage.md): scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
+* Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

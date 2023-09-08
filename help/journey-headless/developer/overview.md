@@ -2,10 +2,10 @@
 title: Percorso per sviluppatori headless di AEM
 description: Documentazione di CMS headless AEM. Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità headless dell’AEM, le loro caratteristiche e come sfruttarle nei tuoi progetti.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 77%
+source-wordcount: '1230'
+ht-degree: 76%
 
 ---
 
@@ -91,3 +91,7 @@ Poiché tali percorsi sono progettati per essere indipendenti l’uno dall’alt
 * [Percorso di authoring headless](/help/journey-headless/author/overview.md): inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le potenzialità e i modi in cui modellare i contenuti sul tuo primo progetto headless.
 * [Percorso Architect headless](/help/journey-headless/architect/overview.md) - Inizia qui per un’introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e per vedere come modellare i contenuti per il tuo progetto.
 * [Documentazione tecnica AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it): se hai già una solida conoscenza delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
+
+   * Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+
+* Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

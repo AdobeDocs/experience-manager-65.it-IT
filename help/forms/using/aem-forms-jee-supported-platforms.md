@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 018ffe71d0186e1eb07e5f59e3d6a48ed316de47
+source-git-commit: 54bed871375ddc9d18af564318ceac95dd1dd2f9
 workflow-type: tm+mt
-source-wordcount: '3660'
+source-wordcount: '3667'
 ht-degree: 1%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 1%
 <div class="preview">
 
 L’Adobe ha rilasciato un [programma di installazione completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) con AEM 6.5 Forms Service Pack 18 (6.5.18.0) su JEE insieme ai programmi di installazione delle patch. Il programma di installazione completo fornisce il supporto per le nuove piattaforme, mentre il programma di installazione delle patch include solo correzioni di bug.
-
-Se stai eseguendo una nuova installazione o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare [Programma di installazione completo per Forms su JEE per AEM 6.5.18.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) rilasciato il 29 agosto 2023 invece del programma di installazione di Forms AEM 6.5 rilasciato l’8 aprile 2019.
+Se stai eseguendo una nuova installazione o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare [Programma di installazione completo per Forms su JEE per AEM 6.5.18.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) rilasciato il 31 agosto 2023 invece del programma di installazione di Forms AEM 6.5 rilasciato l’8 aprile 2019 o del programma di installazione di Forms dell’AEM 6.5.12 rilasciato il 3 marzo 2022.
 
 </div>
 
@@ -804,4 +803,3 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.10
 - 9 settembre 2020
 
    - La versione supportata dell’app iOS for AEM Forms è stata modificata in iOS 12. La versione precedente era iOS 11.
-

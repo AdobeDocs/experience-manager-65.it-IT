@@ -2,9 +2,9 @@
 title: Guida introduttiva ad AEM Headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '3024'
+source-wordcount: '3042'
 ht-degree: 95%
 
 ---
@@ -78,7 +78,7 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Per modificare il contenuto senza problemi, AEM offre due solide API.
 
-* L’API di GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* L’API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
 * L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
 Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure fai riferimento alla sezione [risorse aggiuntive](#additional-resources) per ulteriore documentazione.
@@ -275,7 +275,12 @@ Continua il tuo percorso AEM headless rivedendo il documento successivo [Percors
 
 Mentre si raccomanda di spostarsi nella parte successiva del percorso per lo sviluppo headless esaminando il documento [Percorso per la prima esperienza con AEM Headless,](path-to-first-experience.md) di seguito si trovano alcune risorse aggiuntive e facoltative per approfondire alcuni concetti menzionati in questo documento, ma non sono richieste per continuare il percorso headless.
 
+* [Headful e Headless in AEM](/help/sites-developing/headful-headless.md) - Una discussione completa sui livelli di integrazione headless disponibili in AEM
+
+* Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+
 * [Percorso di traduzione AEM headless](/help/journey-headless/translation/overview.md) - Questo percorso di documentazione ti consente di comprendere meglio la tecnologia headless, come AEM gestisce i contenuti headless e come tu puoi tradurli.
+
 * [Esercitazioni di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui queste esercitazioni pratiche per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
 * [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [Guida AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che mettono in evidenza le API GraphQL di AEM.
@@ -290,4 +295,4 @@ Mentre si raccomanda di spostarsi nella parte successiva del percorso per lo svi
 * [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Documentazione tecnica che spiega come creare richieste di accesso e distribuire frammenti di contenuto
 * [API REST di Assets](/help/assets/assets-api-content-fragments.md) - Documentazione tecnica che spiega come creare e modificare Frammenti di contenuto (e altre risorse)
 * [Query persistenti](/help/sites-developing/headless/graphql-api/persisted-queries.md) - Documentazione tecnica sulle query persistenti in AEM
-* [Headful e Headless in AEM](/help/sites-developing/headful-headless.md) - Una discussione completa sui livelli di integrazione headless disponibili in AEM
+* Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

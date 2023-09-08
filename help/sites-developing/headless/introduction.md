@@ -2,10 +2,10 @@
 title: Sviluppo headless per siti AEM 6.5
 description: Scopri come le potenti funzionalità headless di AEM 6.5, come i modelli di contenuto, i frammenti di contenuto e l’API GraphQL, collaborano per gestire le esperienze a livello centrale e distribuirle tra i canali.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 36%
+source-wordcount: '520'
+ht-degree: 35%
 
 ---
 
@@ -55,3 +55,4 @@ Sono disponibili diverse risorse per iniziare a utilizzare le funzionalità head
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | **Per gli utenti che non conoscono l’AEM e che non hanno accesso alla funzione headless** tecnologie, inizia qui per un’introduzione completa all’AEM e alle sue caratteristiche headless dalla teoria headless fino alla pubblicazione del tuo primo progetto headless. | Guida | Sviluppatori **senza esperienza di AEM e headless** | 1 ora |
 | [Guida introduttiva di Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Se sei un utente esperto di AEM** che necessita di un riepilogo delle principali funzioni headless di AEM, consulta questa breve panoramica. | Guida rapida | Sviluppatori e amministratori **con esperienza di AEM** | 20 minuti |
 | [Guida introduttiva all’headless per AEM - Tutorial pratico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it) | **Se preferisce un approccio pratico e ha familiarità con l’AEM**, questo tutorial si concentra direttamente sulla creazione di un semplice progetto headless. | Tutorial | Sviluppatori | 2 ore |
+| [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it) | Questa raccolta di risorse è fornita per entrambi **nuovo** e **esperto** sviluppatori. | Raccolta di risorse | Sviluppatori | |

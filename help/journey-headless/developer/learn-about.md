@@ -2,10 +2,10 @@
 title: Scopri di più sullo sviluppo di CMS headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri la tecnologia headless e perché utilizzarla.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1594'
-ht-degree: 93%
+source-wordcount: '1612'
+ht-degree: 92%
 
 ---
 
@@ -126,4 +126,6 @@ Sviluppa questa conoscenza e continua il tuo percorso AEM headless rivedendo il 
 
 Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva di AEM Headless](getting-started.md), di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma che non è necessario che continuino sul percorso headless.
 
+* Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
 * [Esercitazioni di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui queste esercitazioni pratiche per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
