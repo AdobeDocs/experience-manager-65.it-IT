@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: d63355e1042f6ad63a848b97c26dc2f29bab47b1
+source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
 workflow-type: tm+mt
-source-wordcount: '4459'
+source-wordcount: '4460'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 * **[Gestione avanzata degli errori con gestori di errori personalizzati nell’editor di regole](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** Ora puoi richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile
 
-* **[Passaggio del flusso di lavoro Adobe Sign migliorato](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html):** Il passaggio del flusso di lavoro Adobe Sign nei flussi di lavoro AEM è disponibile con i seguenti miglioramenti.
+* **[Passaggio del flusso di lavoro Adobe Sign migliorato](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** Il passaggio del flusso di lavoro Adobe Sign nei flussi di lavoro AEM è disponibile con i seguenti miglioramenti.
 
    * **Maggiore sicurezza con l&#39;autenticazione basata su documento ufficiale per Adobe Sign:** L&#39;autenticazione basata su documento ufficiale di Adobe Acrobat Sign offre un ulteriore livello di verifica, consentendo agli utenti di autenticare la propria identità utilizzando gli ID governativi (patente di guida, carta d&#39;identità, passaporto). Sfruttando i documenti di identificazione attendibili, questo miglioramento aggiunge un ulteriore livello di affidabilità al processo di firma, rendendolo ideale per scenari che richiedono maggiore sicurezza, conformità e convalida degli utenti.
 
@@ -160,9 +160,7 @@ Se stai eseguendo una nuova installazione o pianificando di utilizzare il softwa
 
 ### [!DNL Forms]{#forms-6518}
 
-<!--
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
--->
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release. -->
 
 * **Document Services**
    * Quando un utente utilizza un servizio transformPDF, questo ha esito negativo con un’eccezione: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
@@ -175,7 +173,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    * Quando un utente effettua l’aggiornamento ad AEM Forms e utilizza il servizio sendToPrinter, l’utilizzo dell’heap è in continuo aumento. (FORMS-10148)
    * Nel server EAP JBoss 7.4, la funzionalità e-mail non riesce con `java.io.IOException`. (FORMS-10138)
    * Quando un utente utilizza il servizio transformPDF, l’operazione non riesce e viene visualizzato un errore: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
-   * Dopo l’aggiornamento a AEM Service Pack 6.5.14.0, si verifica un problema nel servizio assembler quando si utilizza un modello specifico. (FORMS-9445, FORMS-9408)
+   * Dopo l’aggiornamento a AEM Service Pack 6.5.14.0, si verifica un problema nel servizio Assembler quando si utilizza un modello specifico. (FORMS-9445, FORMS-9408)
   <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
 * **Moduli adattivi**
    * Quando un utente tenta di chiamare una funzione personalizzata senza modificare un campo, ad esempio impostando il valore di un altro campo, l’operazione ha esito negativo. (FORMS-9921)
