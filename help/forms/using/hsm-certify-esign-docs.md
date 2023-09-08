@@ -1,18 +1,13 @@
 ---
 title: Utilizzare HSM per firmare o certificare digitalmente i documenti
-seo-title: Use HSM to certify eSigned documents
-description: Utilizzare dispositivi HSM o etoken per certificare documenti firmati
-seo-description: Use HSM or etoken devices to certify eSigned documents
-uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
+description: Utilizza il server HSM o il dispositivo eToken per firmare/certificare i documenti di PDF.
 contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
-exl-id: 4d423881-18e0-430a-849d-e1762366a849
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4a4a75018e960733908f40c631a24203290be55c
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -23,21 +18,14 @@ I moduli HSM (Hardware Security Module) e i token sono dispositivi di elaborazio
 
 Adobe Experience Manager Forms può utilizzare le credenziali memorizzate su un HSM o etoken per eSign o applicare firme digitali lato server a un documento. Per utilizzare un dispositivo HSM o etoken con AEM Forms:
 
-1. Abilitare il servizio DocAssurance.
-1. Configurare i certificati per l&#39;estensione di Reader.
-1. Crea un alias per il dispositivo HSM o etoken nella console web AEM.
-1. Utilizza le API del servizio DocAssurance per firmare o certificare i documenti con le chiavi digitali memorizzate sul dispositivo.
+1. [Abilitare il servizio DocAssurance](#configuredocassurance).
+1. [Creare un alias per il dispositivo HSM o etoken nella console web AEM](#configuredeviceinaemconsole).
+1. [Utilizza le API del servizio DocAssurance per firmare o certificare i documenti con le chiavi digitali memorizzate sul dispositivo](#programatically).
 
 ## Prima di configurare i dispositivi HSM o etoken con AEM Forms {#configurehsmetoken}
 
-* Installa [Componente aggiuntivo AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pacchetto.
+* Installare [Componente aggiuntivo AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pacchetto.
 * Installare e configurare il software client HSM o etoken sullo stesso computer del server AEM. Il software client è necessario per comunicare con i dispositivi HSM ed etoken.
-* (Solo per Microsoft Windows) Impostare la variabile di ambiente JAVA_HOME_32 in modo che punti alla directory in cui è installata la versione a 32 bit di Java 8 Development Kit (JDK 8). Il percorso predefinito della directory è C:\Program Files(x86)\Java\jdk&lt;version>
-* (Solo per AEM Forms su OSGi) Installa il certificato principale nell’archivio fonti attendibili. È necessario verificare il PDF firmato
-
->[!NOTE]
->
->In Microsoft Windows, sono supportati solo client LunaSA o EToken a 32 bit.
 
 ## Abilitare il servizio DocAssurance {#configuredocassurance}
 
@@ -45,7 +33,7 @@ Per impostazione predefinita, il servizio DocAssurance non è abilitato. Per abi
 
 1. Arresta l’istanza di authoring dell’ambiente AEM Forms.
 
-1. Apri [AEM_root]File \crx-quickstart\conf\sling.properties per la modifica.
+1. Apri [AEM_root]File \crx-quickstart\conf\sling.properties da modificare.
 
    >[!NOTE]
    >
@@ -62,37 +50,42 @@ Per impostazione predefinita, il servizio DocAssurance non è abilitato. Per abi
 1. Salva e chiudi il file sling.properties.
 1. Riavvia l’istanza AEM.
 
-## Configurare i certificati per le estensioni di Reader {#set-up-certificates-for-reader-extensions}
+<!--
 
-Per impostare i certificati, effettua le seguenti operazioni:
+## Set up certificates for Reader extensions {#set-up-certificates-for-reader-extensions}
 
-1. Accedi all’istanza di AEM Author come amministratore.
+Perform the following steps to setup certificates:
 
-1. Clic **Adobe Experience Manager** sulla barra di navigazione globale. Vai a **Strumenti** >  **Sicurezza** >  **Utenti**.
-1. Fai clic su **nome** dell’account utente. Il **Modifica impostazioni utente** viene visualizzata la pagina.
-1. Nell’istanza di authoring di AEM, i certificati risiedono in un KeyStore. Se in precedenza non è stato creato un KeyStore, fare clic su **Crea registro chiavi** e impostare una nuova password per KeyStore. Se il server contiene già un KeyStore, salta questo passaggio.
+1. Log in to AEM Author instance as an administrator.
 
-1. Il giorno **Modifica impostazioni utente** pagina, fai clic su **Gestisci KeyStore**.
+1. Click **Adobe Experience Manager** on Global Navigation Bar. Go to **Tools** &gt;  **Security** &gt;  **Users**.
+1. Click the **name** field of the user account. The **Edit User Settings** page opens.
+1. On the AEM Author instance, certificates reside in a KeyStore. If you have not created a KeyStore earlier, click **Create KeyStore** and set a new password for the KeyStore. If the server already contains a KeyStore, skip this step.
 
-1. Nella finestra di dialogo KeyStore Management, espandere **Aggiungi chiave privata da file di archivio chiavi** e fornire un alias. L’alias viene utilizzato per eseguire l’operazione Estensioni di Reader.
-1. Per caricare il file del certificato, fai clic su **Seleziona file di archivio chiavi** e carica un `.pfx` file.
-1. Aggiungi il **Password archivio chiavi**,**Password chiave privata**, e **Alias chiave privata** associato al certificato nei rispettivi campi. Clic **Invia**.
+1. On the **Edit User Settings** page, click **Manage KeyStore**.
 
-   >[!NOTE]
-   >
-   >Per determinare la P **Alias chiave privata** di un certificato, puoi utilizzare il comando Java keytool: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+1. On KeyStore Management dialog, expand the **Add Private Key from Key Store file** option and provide an alias. The alias is used to perform the Reader Extensions operation.
+1. To upload the certificate file, click **Select Key Store File** and upload a `.pfx` file.
+1. Add the **Key Store Password**,**Private Key Password**, and **Private Key Alias** that is associated with the certificate to the respective fields. Click **Submit**.
 
    >[!NOTE]
    >
-   >In **Password archivio chiavi** e **Password chiave privata** , specificare la password fornita con il file del certificato.
+   >To determine the **Private Key Alias** of a certificate, you can use the Java keytool command: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+
+   >[!NOTE]
+   >
+   >In the **Key Store Password** and **Private Key Password** fields, specify the password provided with the certificate file.
 
 >[!NOTE]
 >
->Per AEM Forms su OSGi, per verificare il PDF firmato, il certificato principale installato nell’archivio fonti attendibili.
+>For AEM Forms on OSGi, to verify the signed PDF, the root certificate installed in the Trust Store.
 
 >[!NOTE]
 >
->Quando passi all’ambiente di produzione, sostituisci le credenziali di valutazione con le credenziali di produzione. Prima di aggiornare una credenziale scaduta o di valutazione, è necessario eliminare le credenziali delle estensioni di Reader precedenti.
+>On moving to production environment, replace your evaluation credentials with production credentials. Ensure that you delete your old Reader Extensions credentials, before updating an expired or evaluations credential.
+
+-->
+
 
 ## Crea un alias per il dispositivo {#configuredeviceinaemconsole}
 
@@ -102,15 +95,15 @@ L’alias contiene tutti i parametri richiesti da un HSM o etoken. Eseguire le i
 1. Apri **Servizio configurazione credenziali HSM** e specifica i valori per i campi seguenti:
 
    * **Alias credenziali**: specifica una stringa utilizzata per identificare l’alias. Questo valore viene utilizzato come proprietà per alcune operazioni di firma digitale, ad esempio l&#39;operazione Firma campo.
-   * **Percorso DLL**: specifica il percorso completo della libreria client HSM o etoken sul server. Ad esempio, C:\Program Files\LunaSA\cryptoki.dll. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
+   * **Percorso DLL**: specifica il percorso della libreria client HSM o etoken sul server. Esempio: `C:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster è necessario assicurarsi che tutti i server del cluster utilizzino un percorso identico.
    * **Pin HSM**: specifica la password necessaria per accedere alla chiave del dispositivo.
-   * **ID slot HSM**: specifica un identificatore di slot di tipo integer. L&#39;ID dello slot viene impostato client per client. Se si registra un secondo computer in una partizione diversa (ad esempio, HSMPART2 sullo stesso dispositivo HSM), lo slot 1 viene associato alla partizione HSMPART2 per il client.
+   * **ID slot HSM**: specifica un identificatore di slot di tipo integer. L&#39;ID dello slot viene impostato client per client. Viene utilizzato per identificare lo slot su HSM che contiene la chiave privata per il segno/certificazione.
 
    >[!NOTE]
    >
    >Durante la configurazione di Etoken, specifica un valore numerico per il campo ID slot HSM. Per il corretto funzionamento delle operazioni di firma è necessario un valore numerico.
 
-   * **Certificato SHA1**: specifica il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali che stai utilizzando. Verificare che nel valore SHA1 non siano presenti spazi. Se utilizzi un certificato fisico, non è necessario.
+   * **Certificato SHA1**: specifica il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali in uso. Verificare che nel valore SHA1 non siano presenti spazi.
    * **Tipo di dispositivo HSM**: seleziona il produttore del dispositivo HSM (Luna o altro) o eToken.
 
    Fai clic su **Salva**. Il modulo di sicurezza hardware è configurato per AEM Forms. Ora puoi utilizzare il modulo di sicurezza hardware con AEM Forms per firmare o certificare i documenti.
