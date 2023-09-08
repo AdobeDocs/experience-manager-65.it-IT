@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
+source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4552'
 ht-degree: 2%
 
 ---
@@ -450,6 +450,8 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 #### Installazione
 
 * Sulla piattaforma JBoss® 7.1.4, quando l’utente installa il service pack Experience Manager 6.5.16.0 o versione successiva, `adobe-livecycle-jboss.ear` distribuzione non riuscita. (CQ-4351522, CQDOC-20159)
+* Dopo aver installato il programma di installazione completo AEM Service Pack 6.5.18.0, l’implementazione EAR non riesce su JEE utilizzando JBoss Turnkey (CQDOC-20803).
+Per risolvere il problema, individuare `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file e aggiornamento `Adobe_Adobe_JAVA_HOME` a `Adobe_JAVA_HOME` per tutte le occorrenze prima di eseguire gestione configurazione.
 
 #### Moduli adattivi
 
@@ -459,7 +461,12 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
 #### Comunicazioni interattive
 
-* Dopo l&#39;aggiornamento a AEM Service Pack 18, non è possibile modificare le lettere di comunicazione interattive. (FORMS-10578)
+* Dopo l&#39;aggiornamento a AEM Service Pack 18, non è possibile modificare le lettere di comunicazione interattive. (FORMS-10578) Per risolvere il problema, effettua le seguenti operazioni:
+
+   1. Scarica [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) dal collegamento SD.
+   1. Estrai il file di archivio Hotfix per ottenere un pacchetto Experience Manager (.zip) e i file bundle (.jar).
+   1. Carica e installa il pacchetto (.zip) tramite Gestione pacchetti.
+   1. Apri i bundle di Gestione configurazione `https://server:host/system/console/bundles`, carica e installa il bundle (.jar).
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
