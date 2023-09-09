@@ -1,6 +1,6 @@
 ---
 title: Ricerca completa
-description: Trova i contenuti più rapidamente grazie a una ricerca completa.
+description: Individua il contenuto più velocemente con funzionalità complete di ricerca.
 uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 49%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ La barra di ricerca consente di effettuare le seguenti operazioni:
 
 Per cercare e filtrare le risorse:
 
-1. Apri **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e immettere il termine di ricerca. Saranno presentati dei suggerimenti che potranno essere selezionati:
+1. Apri la **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e immetti il termine da cercare. Saranno presentati dei suggerimenti che potranno essere selezionati:
 
    ![s-01](assets/s-01.png)
 
@@ -52,7 +52,7 @@ Per cercare e filtrare le risorse:
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. Se necessario, puoi rimuovere il filtro di posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire ricerche su tutte le console/i tipi di risorse.
+1. Se necessario, puoi rimuovere il filtro posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire la ricerca in tutte le console e i tipi di risorse.
 1. Verranno visualizzati i risultati, raggruppati in base alla console e al tipo di risorsa correlato.
 
    Puoi selezionare una risorsa specifica (sulla quale eseguire ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:
@@ -78,7 +78,7 @@ Per cercare e filtrare le risorse:
    >
    >
    >
-   >    * A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Assets e Communities sono comprensibilmente specializzati.
+   >    * A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Risorse e Community sono chiaramente specifici.
    >    * La tua istanza come [Cerca in Forms](/help/sites-administering/search-forms.md) possono essere personalizzate (in base alla sede all’interno dell’AEM).
    >
    >
@@ -93,13 +93,13 @@ Per cercare e filtrare le risorse:
 
 >[!NOTE]
 >
->I criteri di ricerca vengono mantenuti quando si seleziona un elemento nei risultati di ricerca.
+>I criteri di ricerca vengono mantenuti quando selezioni un elemento nei risultati di ricerca.
 >
 >Quando selezioni un elemento nella pagina dei risultati, e quindi torni alla pagina di ricerca dopo avere utilizzato il pulsante indietro del browser, i criteri di ricerca rimangono.
 
 ## Ricerche salvate {#saved-searches}
 
-Oltre a eseguire ricerche in base a un&#39;ampia gamma di facet, è possibile salvare una particolare configurazione di ricerca per recuperarla e utilizzarla in una fase successiva:
+Oltre a eseguire ricerche in base a un’ampia gamma di facet, puoi anche salvare una particolare configurazione di ricerca per riutilizzarla in una fase successiva:
 
 1. Definisci i criteri di ricerca e seleziona **Salva**.
 
@@ -115,7 +115,7 @@ Oltre a eseguire ricerche in base a un&#39;ampia gamma di facet, è possibile sa
 
 1. Una volta salvato, è possibile:
 
-   * Utilizzare **x** (rispetto al nome della ricerca salvata) per avviare una nuova query (la ricerca salvata stessa non verrà eliminata).
+   * Utilizza **x** (rispetto al nome della ricerca salvata) per avviare una nuova query (la ricerca salvata stessa non verrà eliminata).
    * **Modifica ricerca salvata**, modifica le condizioni di ricerca, quindi **Salva** di nuovo.
 
 Per modificare le ricerche salvate, seleziona una ricerca e fai clic sull’opzione **Modifica ricerca salvata** nella parte inferiore del pannello di ricerca.

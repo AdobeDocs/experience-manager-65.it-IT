@@ -24,7 +24,7 @@ Il modo in cui distribuisci le risorse Dynamic Medie, sia video che immagini, di
 
 Dynamic Medie offre diverse opzioni:
 
-* Se il tuo sito web è ospitato su Adobe Experience Manager, allora desideri aggiungere le risorse Dynamic Medie direttamente alla tua pagina.
+* Se il tuo sito web è ospitato su Adobe Experience Manager, vuoi aggiungere le risorse Dynamic Medie direttamente alla pagina.
 * Se il tuo sito web non è sull’Experience Manager, puoi scegliere:
 
    * Incorporare il video o l’immagine sul sito web.

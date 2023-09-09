@@ -6,7 +6,7 @@ exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ Seleziona **Layout** dall’elenco a discesa visualizzato nella parte superiore 
 
    ![Modalità Layout](assets/layout_mode_ic_new.png)
 
-## Ridimensiona i componenti {#resize-components}
+## Ridimensionare i componenti {#resize-components}
 
 1. In modalità Layout, tocca il componente per ridimensionarlo. I punti blu vengono visualizzati all’inizio e alla fine della griglia reattiva.
 1. Trascina i punti blu per definire la posizione del componente nella griglia reattiva.

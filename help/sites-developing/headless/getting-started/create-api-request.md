@@ -5,7 +5,7 @@ exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 24%
+ht-degree: 45%
 
 ---
 
@@ -17,11 +17,11 @@ Scopri come utilizzare l’API REST di AEM Assets per gestire i frammenti di con
 
 [Dopo aver creato alcuni frammenti di contenuto,](create-content-fragment.md) puoi utilizzare le API AEM per distribuirle senza problemi.
 
-* [API di GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* L’[API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto.
    * Per utilizzare questo, [gli endpoint devono essere definiti e abilitati in AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)e, se necessario, [Interfaccia GraphiQL installata](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [API REST di Assets](/help/assets/assets-api-content-fragments.md) consente di creare e modificare frammenti di contenuto (e altre risorse).
 
-Il resto di questa guida si concentra sull’accesso a GraphQL e sulla distribuzione di frammenti di contenuto.
+Il resto di questa guida è incentrato sull’accesso a GraphQL e sulla distribuzione di frammenti di contenuto.
 
 ## Come distribuire un frammento di contenuto con GraphQL {#how-to-deliver-a-content-fragment}
 
@@ -36,7 +36,7 @@ Gli architetti di informazioni devono progettare query per gli endpoint di canal
    * L’editor delle query dispone del completamento del codice e dei tasti di scelta rapida per eseguire facilmente la query.
      ![Editor GraphiQL](assets/graphiql.png)
 
-1. Supponendo che il modello creato sia stato chiamato `person` con campi `firstName`, `lastName`, e `position`, puoi creare una semplice query per recuperare il contenuto del frammento di contenuto.
+1. Supponendo che il modello che hai creato si chiama `person` con campi `firstName`, `lastName` e `position`, puoi creare una semplice query per recuperare il contenuto del frammento di contenuto.
 
    ```text
    query 
@@ -66,7 +66,7 @@ Gli architetti di informazioni devono progettare query per gli endpoint di canal
    * **Salva con nome** e **Salva** per salvare le query, dopodiché puoi elencarle e recuperarle dalla **Query persistenti** pannello e **Pubblica**.
      ![Documentazione di GraphiQL](assets/graphiql-documentation.png)
 
-GraphQL consente query strutturate che possono essere indirizzate non solo a set di dati specifici o a singoli oggetti di dati, ma che possono anche fornire elementi specifici degli oggetti, risultati nidificati, offerte di supporto per variabili di query e molto altro.
+GraphQL consente query strutturate in grado di eseguire il targeting non solo di set di dati specifici o di singoli oggetti di dati, ma anche di fornire elementi specifici degli oggetti, risultati nidificati, offerte di supporto per variabili di query e molto altro.
 
 GraphQL può evitare richieste API iterative e consegne eccessive. Al contrario, consente la distribuzione in blocco di ciò che è esattamente necessario per il rendering come risposta a una singola query API. Il JSON risultante può essere utilizzato per inviare dati ad altri siti o app.
 

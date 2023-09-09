@@ -12,7 +12,7 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '3221'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -56,7 +56,7 @@ La creazione di modelli modificabili viene eseguita principalmente con [console 
 
 Per informazioni su come utilizzare modelli modificabili in un progetto AEM vedi [Creazione di un progetto AEM con Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
-Quando crei un nuovo modello modificabile:
+Quando viene creato un nuovo modello modificabile:
 
 1. Creare un [cartella per i modelli](#template-folders). Questa cartella non è obbligatoria, ma è una best practice consigliata.
 1. Seleziona un [tipo di modello](#template-type). Questo tipo viene copiato per creare [definizione modello](#template-definitions).
@@ -74,7 +74,7 @@ Quando crei un nuovo modello modificabile:
 
       * Se stai creando un modello in una cartella personalizzata al di fuori del `We.Retail` contenuto di esempio, puoi scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it).
 
-   * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema paragrafo al modello.
+   * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema di paragrafi al modello.
    * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il contenuto iniziale.
 
    Per informazioni dettagliate su come un autore di modelli definisce la struttura, consulta [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
@@ -85,7 +85,7 @@ Quando crei un nuovo modello modificabile:
 
    * I criteri per contenuto definiscono le proprietà di progettazione di un componente.
 
-      * Ad esempio, i componenti disponibili o le dimensioni minima/massima.
+      * Ad esempio, i componenti disponibili o le dimensioni minime/massime.
 
    * Questi criteri sono applicabili al modello (e alle pagine create con il modello).
 

@@ -14,7 +14,7 @@ exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '6026'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -26,7 +26,7 @@ Alcune sono immediatamente disponibili tramite la barra laterale, altre sono dis
 
 >[!CAUTION]
 >
->In questa sezione vengono descritti solo i componenti disponibili come predefiniti in un’installazione standard per AEM.
+>In questa sezione vengono descritti solo i componenti disponibili forniti in un’installazione standard di AEM.
 >
 >A seconda dell’istanza, è possibile che siano stati sviluppati in modo esplicito componenti personalizzati in base alle proprie esigenze. Questi componenti personalizzati possono anche avere lo stesso nome di alcuni dei componenti discussi qui.
 

@@ -14,7 +14,7 @@ exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1557'
-ht-degree: 44%
+ht-degree: 72%
 
 ---
 
@@ -44,13 +44,13 @@ Prima di fornire una panoramica delle specifiche, ecco una piccola raccolta di s
 
 * Riordinamento delle pagine in una cartella
 
-   * Questa operazione può essere eseguita in [Vista a elenco](/help/sites-authoring/basic-handling.md#list-view). Le modifiche vengono applicate e visualizzate in altre viste.
+   * Questa operazione può essere eseguita in [Vista elenco](/help/sites-authoring/basic-handling.md#list-view). Le modifiche vengono applicate e visualizzate in altre viste.
 
 #### Authoring delle pagine {#page-authoring}
 
 * Collegamenti di navigazione
 
-   * ***I collegamenti non sono disponibili per la navigazione*** quando sei in **Modifica** modalità. Per navigare con i collegamenti, è necessario [anteprima della pagina](/help/sites-authoring/editing-content.md#previewing-pages) utilizzando:
+   * ***I collegamenti non sono disponibili per la navigazione*** quando sei in modalità **Modifica**. Per navigare con i collegamenti, è necessario [anteprima della pagina](/help/sites-authoring/editing-content.md#previewing-pages) utilizzando:
 
       * [Modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode)
       * [Visualizza come pubblicato](/help/sites-authoring/editing-content.md#view-as-published)
@@ -61,7 +61,7 @@ Prima di fornire una panoramica delle specifiche, ecco una piccola raccolta di s
 >
 >Esistono diverse scelte rapide da tastiera che possono semplificare l’esperienza di authoring.
 >
->* [Scelte rapide da tastiera durante la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+>* [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 >
 
@@ -79,7 +79,7 @@ Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseg
 
    ![qgtap-01](assets/qgtap-01.png)
 
-1. È inoltre possibile [Ricerca](/help/sites-authoring/search.md) per una pagina. Puoi selezionare la pagina dai risultati mostrati.
+1. È inoltre possibile eseguire la [Ricerca](/help/sites-authoring/search.md) di una pagina. Puoi selezionare la pagina dai risultati mostrati.
 
    ![qgtap-03](assets/qgtap-03.png)
 
@@ -88,13 +88,13 @@ Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseg
 A [creare una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
 1. [Passa alla posizione](#finding-your-page) dove desideri creare la pagina.
-1. Utilizza il **Crea** e quindi seleziona **Pagina** dall’elenco:
+1. Utilizza l’icona **Crea** e seleziona **Pagina** dall’elenco:
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. Verrà aperta la procedura guidata che ti guiderà attraverso la raccolta delle informazioni necessarie quando [creazione di una nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page). Seguire le istruzioni visualizzate.
+1. Verrà aperta la procedura guidata che ti guiderà attraverso la raccolta delle informazioni necessarie durante la [creazione della nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page). Seguire le istruzioni visualizzate.
 
-### Selezione della pagina per ulteriori azioni   {#selecting-your-page-for-further-action}
+### Selezione della pagina per ulteriori azioni {#selecting-your-page-for-further-action}
 
 Puoi selezionare una pagina in modo da poter intervenire su di essa. Quando si seleziona una pagina, la barra degli strumenti viene aggiornata automaticamente in modo da visualizzare le azioni relative a tale risorsa.
 
@@ -158,17 +158,17 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
 
    * [Modificare il contenuto di un componente esistente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) sulla pagina:
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza il **Modifica** (matita) per aprire la finestra di dialogo
-      * Apri l’editor locale per il componente toccando e tenendo premuto o facendo doppio clic con il tasto Slow. Vengono visualizzate le azioni disponibili (per alcuni componenti è una selezione limitata).
+      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza l’icona **Modifica** (matita) per aprire la finestra di dialogo.
+      * Apri l’editor locale per il componente toccando e tenendo premuto o facendo un doppio clic lento. Vengono visualizzate le azioni disponibili (per alcuni componenti è una selezione limitata).
       * Per visualizzare tutte le azioni disponibili, entra in modalità a schermo intero utilizzando:
 
      ![Modalità a tutto schermo](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurare le proprietà di un componente esistente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza il **Configura** (chiave inglese) per aprire la finestra di dialogo.
+      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza l’icona **Configura** (chiave inglese) per aprire la finestra di dialogo.
 
-   * [Spostare un componente](/help/sites-authoring/editing-content.md#moving-a-component) oppure:
+   * [Sposta un componente](/help/sites-authoring/editing-content.md#moving-a-component) con una delle seguenti operazioni:
 
       * Trascina il componente richiesto nella nuova posizione.
       * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza le icone **Taglia** e quindi **Incolla** dove richiesto.
@@ -203,12 +203,12 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
 
 ### Modifica delle proprietà pagina   {#editing-the-page-properties}
 
-Esistono due metodi (principali) di [modifica delle proprietà di pagina](/help/sites-authoring/editing-page-properties.md):
+Esistono due metodi (principali) di [modifica delle proprietà di una pagina](/help/sites-authoring/editing-page-properties.md):
 
 * Dalla console **Sites**:
 
-   1. [Passa alla pagina](#finding-your-page) desideri pubblicare.
-   1. Seleziona la **Proprietà** da:
+   1. [Passa alla pagina](#finding-your-page) da pubblicare.
+   1. Seleziona l’icona **Proprietà** da:
 
       * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa appropriata.
       * La barra degli strumenti, se la [pagina è stata selezionata](#selectiingyourpageforfurtheraction).
@@ -217,20 +217,20 @@ Esistono due metodi (principali) di [modifica delle proprietà di pagina](/help/
 
    1. Verranno visualizzate le proprietà di pagina. È possibile apportare le modifiche desiderate e poi selezionare Salva per applicarle
 
-* Quando [modifica della pagina](#editing-your-page-content):
+* Durante la [modifica della pagina](#editing-your-page-content):
 
-   1. Apri **Informazioni pagina** menu.
+   1. Apri il menu **Informazioni pagina**.
    1. Seleziona **Apri proprietà** per aprire la finestra di dialogo per la modifica delle proprietà.
 
   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
 ### Pubblicazione della pagina (o annullamento della pubblicazione) {#publishing-your-page-or-unpublishing}
 
-Esistono due metodi principali per [pubblicazione della pagina](/help/sites-authoring/publishing-pages.md) (e anche di annullamento della pubblicazione):
+Esistono due metodi principali per la [pubblicazione della pagina](/help/sites-authoring/publishing-pages.md) (e anche di annullamento della pubblicazione):
 
 * Dalla console **Sites**:
 
-   1. [Passa alla pagina](#finding-your-page) desideri pubblicare.
+   1. [Passa alla pagina](#finding-your-page) da pubblicare.
    1. Seleziona l’icona **Pubblicazione rapida** da:
 
       * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa appropriata.
@@ -238,16 +238,16 @@ Esistono due metodi principali per [pubblicazione della pagina](/help/sites-auth
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
-* Quando [modifica della pagina](#editing-your-page-content):
+* Durante la [modifica della pagina](#editing-your-page-content):
 
-   1. Apri **Informazioni pagina** menu.
+   1. Apri il menu **Informazioni pagina**.
    1. Seleziona **Pubblica pagina**.
 
   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * L’annullamento della pubblicazione di una pagina dalla console può essere eseguito solo tramite l’opzione **Gestisci pubblicazione**, disponibile solamente nella barra degli strumenti (non tramite le azioni rapide).
 
-  Il **Annulla pubblicazione pagina** è ancora disponibile tramite il **Informazioni pagina** nell’editor.
+  L’opzione **Annulla pubblicazione pagina** è ancora disponibile tramite il menu **Informazioni pagina** nell’editor.
 
   ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
 
@@ -255,9 +255,9 @@ Esistono due metodi principali per [pubblicazione della pagina](/help/sites-auth
 
 ### Spostamento, utilizzo di Copia e Incolla o eliminazione della pagina   {#move-copy-and-paste-or-delete-your-page}
 
-Queste azioni possono essere tutte attivate da:
+Queste azioni possono essere tutte attivate nei seguenti modi:
 
-1. [Passa alla pagina](#finding-your-page) si desidera spostare, copiare, incollare o eliminare.
+1. [Passa alla pagina](#finding-your-page) da spostare, copiare e incollare o eliminare.
 1. Seleziona l’icona Copia (e quindi Incolla), Sposta o Elimina, a seconda delle necessità, utilizzando:
 
    * [Azioni rapide (solo vista a schede/desktop)](#quick-actions-card-view-desktop-only) per la risorsa richiesta.
@@ -275,7 +275,7 @@ Queste azioni possono essere tutte attivate da:
 
    * Elimina:
 
-      * Ti viene chiesto di confermare l’azione.
+      * Viene richiesto di confermare l’azione.
 
    >[!NOTE]
    >
@@ -286,7 +286,7 @@ Queste azioni possono essere tutte attivate da:
 [Il blocco di una pagina](/help/sites-authoring/editing-content.md#locking-a-page) non consente ad altri autori di utilizzarla mentre vi lavori. L’icona o il pulsante Blocca (e Sblocca) è disponibile:
 
 * La barra degli strumenti, se la [pagina è stata selezionata](#selecting-your-page-for-further-action).
-* Il [Menu a discesa Informazioni pagina](#editing-the-page-properties) durante la modifica di una pagina.
+* Il [menu a discesa Informazioni pagina](#editing-the-page-properties) durante la modifica di una pagina.
 * La barra degli strumenti della pagina durante la modifica di una pagina (quando la pagina è bloccata)
 
 Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
@@ -331,7 +331,7 @@ Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto
 
    Se una versione della pagina è già stata salvata, viene elencata nella Timeline.
 
-1. Tocca o fai clic sulla versione da ripristinare. Verranno visualizzati pulsanti di azione aggiuntivi:
+1. Tocca o fai clic sulla versione da ripristinare, verranno visualizzati pulsanti di azione aggiuntivi:
 
    * **Ripristina questa versione**
 

@@ -1,7 +1,7 @@
 ---
 title: Progetti
 seo-title: Projects
-description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso semplifica la gestione dei progetti.
+description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso ne semplifica la gestione.
 seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 17%
+ht-degree: 34%
 
 ---
 
@@ -26,7 +26,7 @@ In qualità di utente, puoi:
 
 * Creare ed eliminare progetti
 * Associare contenuto e cartelle di risorse a un progetto
-* Rimuovi collegamenti contenuto dal progetto
+* Rimuovere i collegamenti contenuto dal progetto
 
 ## Requisiti di accesso {#access-requirements}
 
@@ -38,7 +38,7 @@ Il modo più semplice per eseguire questa operazione è quello di **projects-use
 
 ## Console Progetti {#projects-console}
 
-Nella console Progetti puoi accedere e gestire i progetti in AEM.
+Dalla console Progetti è possibile accedere e gestire i tuoi progetti in AEM.
 
 ![Console Progetti](assets/screen-shot_2019-03-05at125110.png)
 
@@ -54,7 +54,7 @@ Puoi utilizzare il selettore della barra per passare da una modalità all’altr
 
 Solo contenuto è la modalità predefinita all’apertura della console. Mostrerà tutti i tuoi progetti.
 
-#### Timeline  {#timeline}
+#### Timeline {#timeline}
 
 La vista timeline consente di selezionare un singolo progetto e di visualizzarne le attività. Utilizza il selettore della barra o il tasto di scelta rapida `alt+1` per passare a questa visualizzazione.
 
@@ -86,13 +86,13 @@ Clic **Crea** per aggiungere un nuovo progetto.
 
 I progetti sono costituiti da diversi tipi di informazioni che si desidera gestire insieme. Queste informazioni sono rappresentate da diversi **Riquadri**.
 
-Al progetto possono essere associate le seguenti tessere.
+È possibile associare i seguenti riquadri al progetto.
 
 * [Risorse](#assets)
 * [Raccolte di risorse](#asset-collections)
 * [Esperienze](#experiences)
 * [Collegamenti](#links)
-* [Informazioni progetto](#project-info)
+* [Informazioni sul progetto](#project-info)
 * [Team](#team)
 * [Pagine di destinazione](#landing-pages)
 * [E-mail](#emails)
@@ -106,7 +106,7 @@ Fai clic sul pulsante con i puntini di sospensione in basso a destra di qualsias
 
 ### Assets {#assets}
 
-In **Risorse** sezione, puoi raccogliere tutte le risorse utilizzate per un particolare progetto.
+Nel riquadro **Risorse**, puoi raccogliere tutte le risorse utilizzate per un particolare progetto.
 
 ![Riquadro risorse](assets/project-tile-assets.png)
 
@@ -114,7 +114,7 @@ Le risorse vengono caricate direttamente nel riquadro.
 
 ### Raccolte di risorse {#asset-collections}
 
-Simile alle risorse, puoi aggiungere [raccolte risorse](/help/assets/manage-collections.md) direttamente al progetto. Puoi definire le raccolte in Assets.
+Come per le risorse, puoi aggiungere [raccolte di risorse](/help/assets/manage-collections.md) direttamente al progetto. Puoi definire le raccolte in Risorse.
 
 ![Riquadro raccolta risorse](assets/project-tile-asset-collection.png)
 
@@ -139,9 +139,9 @@ Il **Collegamenti** sezione consente di associare collegamenti esterni al proget
 
 Puoi denominare il collegamento con un nome facile da riconoscere, nonché modificare la miniatura.
 
-### Informazioni progetto {#project-info}
+### Informazioni sul progetto {#project-info}
 
-Il **Informazioni progetto** sezione fornisce informazioni generali sul progetto, tra cui una descrizione, lo stato del progetto (inattivo o attivo), una data di scadenza e i membri. Inoltre, è possibile aggiungere una miniatura del progetto, visualizzata nella pagina principale Progetti.
+Il **Informazioni progetto** sezione fornisce informazioni generali sul progetto, tra cui una descrizione, lo stato del progetto (inattivo o attivo), una data di scadenza e i membri. Inoltre, è possibile aggiungere una miniatura del progetto, che viene visualizzata nella pagina principale Progetti.
 
 ![Riquadro informazioni progetto](assets/project-tile-info.png)
 
@@ -155,7 +155,7 @@ Per impostare la traduzione, consulta il documento [Creazione di progetti di tra
 
 ### Team {#team}
 
-In questo riquadro è possibile specificare i membri del team di progetto. Durante la modifica, puoi immettere il nome del membro del team e assegnare il ruolo utente.
+In questo riquadro è possibile specificare i membri del team del progetto. Durante la modifica, è possibile immettere il nome del membro del team e assegnare il ruolo utente.
 
 ![Riquadro team](assets/project-tile-team.png)
 
@@ -185,7 +185,7 @@ Puoi avviare i flussi di lavoro per il progetto. Se sono in esecuzione flussi di
 
 A seconda del progetto creato, sono disponibili diversi flussi di lavoro.
 
-Questi sono descritti in [Utilizzo dei flussi di lavoro per i progetti.](/help/sites-authoring/projects-with-workflows.md)
+Questi sono descritti in [Utilizzo dei flussi di lavoro del progetto.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lanci {#launches}
 
@@ -214,14 +214,14 @@ In base al modello selezionato, all’interno del progetto sono disponibili dive
 
 I diversi ruoli utente sono definiti nel modello di progetto e vengono utilizzati per due motivi principali:
 
-1. Autorizzazioni: i ruoli utente rientrano in una delle tre categorie elencate: osservatore, editor, proprietario. Ad esempio, un fotografo o un copywriter avrà gli stessi privilegi di un editor. Le autorizzazioni determinano cosa può fare un utente al contenuto di un progetto.
+1. Autorizzazioni: i ruoli utente rientrano in una delle tre categorie elencate: osservatore, editor, proprietario. Ad esempio, un fotografo o un copywriter avrà gli stessi privilegi di un editor. Le autorizzazioni determinano cosa può fare un utente in relazione al contenuto di un progetto.
 1. Flussi di lavoro: i flussi di lavoro determinano chi sono le attività assegnate in un progetto. Le attività possono essere associate a un ruolo del progetto. Ad esempio, è possibile assegnare un&#39;attività ai fotografi in modo che tutti i membri del gruppo che hanno il ruolo di fotografo ottengano l&#39;attività.
 
-Tutti i progetti supportano i seguenti ruoli predefiniti per consentire l’amministrazione delle autorizzazioni di sicurezza e controllo.
+Tutti i progetti supportano i seguenti ruoli predefiniti che consentono di amministrare le autorizzazioni di protezione e controllo.
 
 | Ruolo | Descrizione | Autorizzazioni | Iscrizione al gruppo |
 |---|---|---|---|
-| Osservatore | L’utente con questo ruolo può visualizzare i dettagli del progetto, compreso lo stato. | Autorizzazioni di sola lettura per un progetto | `workflow-users` gruppo |
+| Osservatore | Un utente con questo ruolo può visualizzare i dettagli del progetto, compreso lo stato. | Autorizzazioni di sola lettura per un progetto | `workflow-users` gruppo |
 | Editor | Un utente con questo ruolo può caricare e modificare il contenuto di un progetto. | Accesso in lettura e scrittura a un progetto, ai metadati associati e alle risorse correlate<br>Privilegi per caricare un elenco di foto, servizi fotografici, rivedere e approvare le risorse<br>Autorizzazioni di scrittura su `/etc/commerce`<br>Autorizzazioni di modifica per un progetto specifico | `workflow-users` gruppo |
 | Proprietario | Un utente con questo ruolo può creare un progetto, avviare il lavoro in un progetto e spostare le risorse approvate nella cartella di produzione. Il proprietario può visualizzare ed eseguire anche tutte le altre attività del progetto. | Autorizzazioni di scrittura su `/etc/commerce` | `dam-users` per poter creare un progetto<br>`project-administrators` per creare un progetto e spostare le risorse |
 

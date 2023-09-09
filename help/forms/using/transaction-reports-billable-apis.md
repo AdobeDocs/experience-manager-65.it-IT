@@ -363,7 +363,7 @@ Tutti gli eventi di invio di moduli adattivi, HTML5 Forms e set di moduli vengon
 <table>
  <tbody>
   <tr>
-   <td><p>Caso d’uso </p> </td>
+   <td><p>Caso d’uso</p> </td>
    <td>Descrizione</td>
    <td>Categoria report transazioni</td>
    <td>Informazioni aggiuntive</td>
@@ -386,7 +386,7 @@ Tutti gli eventi di invio di moduli adattivi, HTML5 Forms e set di moduli vengon
 <table>
  <tbody>
   <tr>
-   <td><p>Caso d’uso </p> </td>
+   <td><p>Caso d’uso</p> </td>
    <td>Descrizione </td>
    <td>Categoria report transazioni</td>
    <td>Informazioni aggiuntive</td>

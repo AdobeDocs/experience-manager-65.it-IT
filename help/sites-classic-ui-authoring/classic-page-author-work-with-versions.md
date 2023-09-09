@@ -1,6 +1,6 @@
 ---
 title: Utilizzo delle versioni delle pagine
-description: Il controllo delle versioni crea un'istantanea di una pagina in un determinato momento.
+description: Il controllo delle versioni crea lo snapshot di una pagina in un determinato momento.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,15 +10,15 @@ exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 17%
+ht-degree: 21%
 
 ---
 
 # Utilizzo delle versioni di una pagina  {#working-with-page-versions}
 
-Il controllo delle versioni crea un&#39;istantanea di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
+Il controllo delle versioni crea lo snapshot di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
 
-* Crea una versione di una pagina.
+* Creare una versione di una pagina.
 * Ripristina una pagina a una versione precedente per annullare una modifica apportata, ad esempio, a una pagina.
 * Confronta la versione corrente di una pagina con una versione precedente, evidenziando differenze nel testo e nelle immagini.
 
@@ -105,7 +105,7 @@ Lo scopo è quello di consentire di tenere traccia del sito web pubblicato nel m
 
 Per effettuare questo collegamento:
 
-* Il sistema cerca la versione della pagina che era attiva al momento selezionato.
+* il sistema cerca la versione della pagina che era attiva al momento selezionato.
 * In altre parole, la versione mostrata era stata creata/attivata *prima* del momento temporale selezionato in Timewarp.
 * Anche quando si passa a una pagina che è stata eliminata viene eseguito il rendering, purché nell’archivio siano ancora disponibili le versioni precedenti della pagina.
 * Se non viene trovata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring, in modo da evitare un errore 404 di pagina non più visualizzabile.

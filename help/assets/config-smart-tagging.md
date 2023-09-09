@@ -59,7 +59,7 @@ Un certificato pubblico consente di autenticare il profilo sulla console Adobe D
 
    **[!UICONTROL URL servizio]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Ad esempio, `https://smartcontent.adobe.io/apac`. È possibile specificare `na`, `emea`, o, `apac` come aree geografiche in cui è ospitata l’istanza Autore Experience Manager.
+   Esempio: `https://smartcontent.adobe.io/apac`. È possibile specificare `na`, `emea`, o, `apac` come aree geografiche in cui è ospitata l’istanza Autore Experience Manager.
 
    >[!NOTE]
    >

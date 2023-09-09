@@ -1,7 +1,7 @@
 ---
 title: Utilizzo dei flussi di lavoro per i progetti
 seo-title: Working with Project Workflows
-description: Sono disponibili diversi flussi di lavoro di progetto pronti all’uso.
+description: Sono disponibili diversi flussi di lavoro per progetti già pronti all’uso.
 seo-description: A variety of project workflows are available out of the box.
 uuid: 376922ca-e09e-4ac8-88c8-23dac2b49dbe
 contentOwner: Guillaume Carlino
@@ -13,21 +13,21 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '797'
-ht-degree: 14%
+ht-degree: 40%
 
 ---
 
 
 # Utilizzo dei flussi di lavoro per i progetti {#working-with-project-workflows}
 
-I flussi di lavoro dei progetti disponibili includono:
+I flussi di lavoro per progetti disponibili includono:
 
 * **Flusso di lavoro di approvazione progetto** - Questo flusso di lavoro consente di assegnare il contenuto a un utente, rivederlo e approvarlo.
 * **Richiedi lancio**: flusso di lavoro per richiedere un lancio.
 * **Richiedi pagina di destinazione**: flusso di lavoro per richiedere una pagina di destinazione.
 * **Richiedi e-mail**: flusso di lavoro per la richiesta di un’e-mail.
 * **Servizio fotografico per prodotto e servizio fotografico per prodotto (Commerce)** - Mappatura di risorse con prodotti
-* **DAM - Crea e traduci copia e DAM - Crea copia lingua** : crea binari tradotti, metadati e tag per risorse e cartelle.
+* **DAM - Crea e traduci copia lingua e DAM - Crea copia per lingua**: vengono creati file binari tradotti, metadati e tag per risorse e cartelle.
 
 A seconda del modello di progetto selezionato, sono disponibili alcuni flussi di lavoro:
 
@@ -49,7 +49,7 @@ A seconda del modello di progetto selezionato, sono disponibili alcuni flussi di
 
 I passaggi per avviare e completare i flussi di lavoro sono gli stessi, indipendentemente dal flusso di lavoro scelto. Cambiano solo i passaggi.
 
-Avvia un flusso di lavoro direttamente in Progetti (ad eccezione di Crea copia per lingua DAM o Crea e traduci copia per lingua DAM). Le informazioni su eventuali attività in sospeso in un progetto sono elencate nella sezione **Attività** affiancare. Le notifiche per le attività da completare vengono visualizzate accanto all’icona utente.
+Avvia un flusso di lavoro direttamente in Progetti (ad eccezione di DAM - Crea copia per lingua o DAM - Crea e traduci copia per lingua). Le informazioni su eventuali attività in sospeso in un progetto sono elencate nel riquadro **Attività**. Le notifiche per le attività da completare vengono visualizzate accanto all’icona utente.
 
 Per ulteriori informazioni sull’utilizzo dei flussi di lavoro in AEM, consulta i seguenti documenti:
 
@@ -83,7 +83,7 @@ In **Approvazione progetto** flusso di lavoro, puoi assegnare il contenuto a un 
 
 1. In un progetto semplice, tocca o fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
 1. Nella procedura guidata del flusso di lavoro seleziona **Flusso di lavoro di approvazione progetto** e fai clic su **Successivo**.
-1. Inserisci un titolo e seleziona a chi assegnarlo. Se applicabile, immettere una descrizione, il percorso del contenuto, la priorità dell&#39;attività e una data di scadenza.
+1. Inserisci un titolo e seleziona a chi assegnarlo. Se necessario, puoi aggiungere una descrizione e il percorso del contenuto e impostare la priorità e la scadenza.
 
    ![Flusso di lavoro di approvazione progetto](assets/project-approval-workflow.png)
 
@@ -93,11 +93,11 @@ Il flusso di lavoro viene avviato. L&#39;attività viene visualizzata nella **At
 
 ## Richiedi flusso di lavoro di avvio {#request-launch-workflow}
 
-Questo flusso di lavoro ti consente di richiedere un lancio.
+Questo flusso di lavoro consente di richiedere un lancio.
 
 1. In un progetto semplice, tocca o fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
 1. Nella procedura guidata del flusso di lavoro seleziona **Richiedi flusso di lavoro di avvio** e fai clic su **Successivo**.
-1. Inserisci un titolo per il lancio e fornisci il percorso di origine del lancio. Puoi anche aggiungere una descrizione e una data di attivazione, se applicabile. Seleziona Eredita i dati live della pagina di origine o escludi le sottopagine a seconda di come desideri che si comporti il lancio.
+1. Inserisci un titolo per il lancio e specifica il percorso di origine del lancio. Se necessario, puoi anche aggiungere una descrizione e una data di pubblicazione. Seleziona Eredita i dati live della pagina sorgente o escludi le sottopagine a seconda di come desideri che si comporti il lancio.
 
    ![Richiedi flusso di lavoro di lancio](assets/project-request-launch-workflow.png)
 

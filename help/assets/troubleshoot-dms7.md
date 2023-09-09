@@ -33,7 +33,7 @@ Assicurati che Dynamic Medie sia stato configurato correttamente eseguendo le se
 
   Questo feature pack opzionale è per il supporto FTP o se state eseguendo la migrazione di risorse a Dynamic Medie da Dynamic Media Classic.
 
-* Passa all’interfaccia utente Cloud Services e conferma che l’account con provisioning sia visualizzato in **[!UICONTROL Configurazioni disponibili]**.
+* Passa all’interfaccia utente Cloud Service e conferma che l’account con provisioning sia visualizzato in **[!UICONTROL Configurazioni disponibili]**.
 * Assicurati che `Dynamic Media Asset Activation (scene7)` agente di replica abilitato.
 
   Questo agente di replica si trova in Agenti sull’autore.
@@ -177,7 +177,7 @@ In caso di problemi con il video, consulta le seguenti linee guida per la risolu
    <td>
     <ol>
      <li>Controlla l’istanza dell’Experience Manager con <code>-r dynamicmedia_scene7</code></li>
-     <li>Verifica che la Configurazione Dynamic Medie in Cloud Services sia impostata correttamente.</li>
+     <li>Verifica che la Configurazione Dynamic Medie in Cloud Service sia impostata correttamente.</li>
      <li>Verifica che la cartella disponga di un profilo video. Inoltre, controlla il profilo video.</li>
     </ol> </td>
   </tr>
@@ -255,7 +255,7 @@ Se le risorse di esempio o il disegno del predefinito visualizzatore non è stat
 1. Passa a Gestione pacchetti CRX: `https://localhost:4502/crx/packmgr/`.
 1. Cerca il pacchetto visualizzatore nell’elenco; inizia con `cq-dam-scene7-viewers-content`.
 1. Seleziona **Reinstalla**.
-1. In Cloud Services, passa alla pagina Configurazione Dynamic Medie, quindi apri la finestra di dialogo di configurazione per la configurazione Dynamic Medie - S7.
+1. In Cloud Service, passa alla pagina Configurazione Dynamic Medie, quindi apri la finestra di dialogo di configurazione per la configurazione Dynamic Medie - S7.
 1. Non apportare modifiche, seleziona **Salva**.
 Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, il CSS del predefinito visualizzatore e il disegno.
 
@@ -276,4 +276,4 @@ Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizz
 1. Elimina `viewer` cartella.
 1. Nell&#39;angolo superiore sinistro della pagina CRXDE Liti, seleziona **[!UICONTROL Salva tutto]**.
 1. Nell&#39;angolo superiore sinistro della pagina CRXDE Liti, seleziona la **Torna alla pagina principale** icona.
-1. Ricreare un [Configurazione Dynamic Medie in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+1. Ricreare un [Configurazione Dynamic Medie in Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).

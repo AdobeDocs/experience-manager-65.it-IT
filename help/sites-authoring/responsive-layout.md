@@ -11,7 +11,7 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1796'
-ht-degree: 48%
+ht-degree: 65%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 48%
 
 AEM consente di disporre di un layout dinamico per le pagine utilizzando **Contenitore di layout** componente.
 
-Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato della periferica o della finestra. Il componente viene utilizzato insieme al [**Layout** modalità](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout dinamico a seconda del dispositivo.
+Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo o della finestra. Il componente viene utilizzato insieme al [**Layout** modalità](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), che consente di creare e modificare il layout dinamico a seconda del dispositivo.
 
 Il contenitore layout:
 
-* Consente di eseguire lo snap orizzontale alla griglia, oltre alla possibilità di posizionare i componenti affiancati nella griglia e di definire quando devono essere compressi o ridisposti.
+* Consente di eseguire l’aggancio orizzontale alla griglia, oltre alla possibilità di posizionare i componenti affiancati nella griglia e di definire quando devono essere compressi o ridisposti.
 * Utilizza punti di interruzione predefiniti (ad esempio per telefoni, tablet ecc.) per consentirti di definire il comportamento richiesto dei contenuti per i dispositivi o gli orientamenti correlati.
 
    * Ad esempio, puoi personalizzare la dimensione del componente o specificare se può essere visualizzato su dispositivi specifici.
@@ -49,9 +49,9 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 * [**Emulatore**](#selecting-a-device-to-emulate)
 Questo consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi vedere come verrà eseguito il rendering del contenuto utilizzando l’emulatore.
 
-Con questi meccanismi di griglia reattiva è possibile:
+Con questi meccanismi basati su una griglia dinamica è possibile:
 
-* Utilizza i punti di interruzione per definire layout di contenuto diversi in base alla larghezza del dispositivo (in base al tipo e all’orientamento del dispositivo).
+* Utilizzare i punti di interruzione per definire layout di contenuto diversi in base alla larghezza del dispositivo (a seconda del tipo e dell’orientamento del dispositivo).
 * Utilizzare questi stessi punti di interruzione e layout di contenuti per assicurare che il contenuto sia dinamico rispetto alle dimensioni della finestra del browser sul desktop.
 * Utilizzare l’ancoraggio orizzontale sulla griglia per posizionarvi i componenti, ridimensionarli, definire quando dovrebbero venire compressi o ridisposti in modo da risultare affiancati o sovrapposti.
 * Nascondere componenti per layout di dispositivo specifici.
@@ -117,9 +117,9 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
      ![Seleziona il dispositivo](do-not-localize/screen_shot_2018-03-23at084743.png)
 
-1. Per selezionare un dispositivo specifico da emulare puoi effettuare le seguenti operazioni:
+1. Per selezionare un dispositivo specifico da emulare è possibile effettuare le seguenti operazioni:
 
-   * Utilizza l’icona Seleziona dispositivo e seleziona da un selettore a discesa.
+   * Utilizza l’icona Seleziona dispositivo e scegli da un selettore a discesa.
    * Tocca o fai clic sull’indicatore del dispositivo nella barra degli strumenti dell’emulatore.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
@@ -135,8 +135,8 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
-   * La piega può anche essere considerata l’interruzione di riga della pagina (da non confondere con la [punti di interruzione](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) per il contenuto. Viene visualizzato per comodità, per mostrare quale parte del contenuto verrà visualizzata sul dispositivo prima dello scorrimento.
-   * La linea per la piega non viene visualizzata se l&#39;altezza del dispositivo emulato è superiore alle dimensioni dello schermo.
+   * La piega può anche essere considerata l’interruzione di riga della pagina (da non confondere con i [punti di interruzione](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) per il contenuto. Viene visualizzata per comodità, per mostrare quale parte del contenuto sarà visibile all’utente sul dispositivo prima di scorrere in basso.
+   * La linea per la piega non verrà mostrata se l’altezza del dispositivo emulato è superiore alle dimensioni dello schermo.
    * La piega è indicata per comodità dell’autore e non viene visualizzata nella pagina pubblicata.
 
 ## Aggiunta di un contenitore di layout e del relativo contenuto (modalità di modifica) {#adding-a-layout-container-and-its-content-edit-mode}
@@ -201,14 +201,14 @@ La modalità **Layout** può essere avviata in due modi.
    * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Impostazione destinazione**.
    * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
 
-* Quando [modifica di un singolo componente.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* Durante la[modifica di un singolo componente.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * Utilizzando il **Layout** nel menu azione rapida del componente, puoi passare a **Layout** modalità.
-   * **Layout** la modalità persiste durante la modifica del componente e ritorna a **Modifica** una volta che lo stato attivo cambia su un altro componente.
+   * Utilizzando l’opzione **Layout** nel menu azione rapida del componente, puoi passare alla modalità **Layout**.
+   * La modalità **Layout** persiste quando si modifica il componente e torna alla modalità **Modifica** quando è attivo un altro componente.
 
 In modalità layout è possibile eseguire varie azioni su una griglia:
 
-* Ridimensiona i componenti di contenuto utilizzando i punti blu. Il ridimensionamento viene sempre eseguito con snap-to-grid. Quando si ridimensiona la griglia di sfondo, viene mostrato come facilitare l’allineamento:
+* Ridimensiona i componenti di contenuto utilizzando i punti blu. Il ridimensionamento viene sempre eseguito con la funzione Aggancia alla griglia. Quando si ridimensiona la griglia di sfondo, viene mostrato come facilitare l’allineamento:
 
   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 

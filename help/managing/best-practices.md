@@ -624,7 +624,7 @@ Per le best practice sull’implementazione, l’amministrazione, lo sviluppo o 
 
       * [Sviluppo: nozioni di base](/help/sites-developing/the-basics.md)
       * [Concetti MSM](/help/sites-administering/msm.md)
-      * [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
+      * [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
 
 * Documentazione correlata
 

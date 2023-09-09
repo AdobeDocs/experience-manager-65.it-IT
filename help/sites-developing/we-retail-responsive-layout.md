@@ -13,13 +13,13 @@ exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
 # Prova del layout dinamico in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Tutte le pagine We.Retail utilizzano il componente Contenitore di layout per implementare una progettazione reattiva. Il contenitore layout fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato della periferica o della finestra. Il componente viene utilizzato insieme al **Layout** nell’editor pagina, che consente di creare e modificare il layout dinamico a seconda del dispositivo.
+Tutte le pagine We.Retail utilizzano il componente Contenitore di layout per implementare una progettazione reattiva. Il contenitore layout fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo o della finestra. Il componente viene utilizzato insieme al **Layout** nell’editor pagina, che consente di creare e modificare il layout dinamico a seconda del dispositivo.
 
 ## Prova {#trying-it-out}
 

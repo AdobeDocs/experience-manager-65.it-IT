@@ -13,18 +13,18 @@ exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 42%
+ht-degree: 75%
 
 ---
 
 # Modifica dei lanci{#editing-launches}
 
-## Modifica delle pagine di un lancio {#editing-launch-pages}
+## Modifica delle pagine di lancio {#editing-launch-pages}
 
-Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificare il contenuto nella copia di lancio delle pagine.
+Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificarne il contenuto nella copia di lancio delle pagine.
 
 1. Accedi a [Lancio da Riferimenti (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) per visualizzare le azioni disponibili.
-1. Seleziona **Vai alla pagina** per aprire la pagina per la modifica.
+1. Seleziona **Vai alla pagina** per aprire la pagina su cui effettuare la modfica.
 
 >[!NOTE]
 >
@@ -43,18 +43,18 @@ Una Live Copy viene utilizzata per sincronizzare il contenuto *dal* ramo di orig
 
 Puoi apportare modifiche nello stesso modo in cui puoi modificare una Live Copy standard; ad esempio:
 
-* Facendo clic su un lucchetto chiuso si interrompe la sincronizzazione e si apportano nuovi aggiornamenti al contenuto del lancio. Una volta sbloccato (apri lucchetto), le modifiche non verranno sovrascritte da eventuali modifiche apportate nella stessa posizione all’interno del ramo di origine.
+* Facendo clic su un lucchetto chiuso si interrompe la sincronizzazione e si apportano nuovi aggiornamenti al contenuto del lancio. Una volta sbloccato (lucchetto aperto), le modifiche non verranno sovrascritte da eventuali modifiche apportate nella stessa posizione all’interno del ramo di origine.
 * **Sospendi** (e **Riprendi**) l’ereditarietà per una pagina specifica.
 
 Consulta [Modifica del contenuto della Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) per ulteriori informazioni.
 
-## Confronto tra una pagina di lancio e la relativa pagina di origine {#comparing-a-launch-page-to-its-source-page}
+## Confronto tra una pagina di lancio e la relativa pagina sorgente {#comparing-a-launch-page-to-its-source-page}
 
 Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
 1. In **Sites** console, [passa alla pagina sorgente del lancio e selezionala](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
-1. Apri **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** e seleziona **Lanci**.
-1. Seleziona il lancio specifico, quindi **Confronta con origine**:
+1. Apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** e seleziona **Lanci**.
+1. Seleziona il lancio specifico, quindi **Confronta con sorgente**:
 
    ![schermata_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
 
@@ -68,7 +68,7 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
 
 1. Accedi e seleziona il lancio in uno dei seguenti modi:
 
-   * il [Console Launches](/help/sites-authoring/launches.md#the-launches-console):
+   * [console Lanci](/help/sites-authoring/launches.md#the-launches-console):
 
       * Seleziona **Modifica**.
 
@@ -84,13 +84,13 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
    >
    >Per aggiungere pagine a un lancio, è necessario che si trovino al di sotto di una directory principale della lingua comune, ovvero all’interno di un singolo sito.
 
-## Modifica di una configurazione di Launch {#editing-a-launch-configuration}
+## Modifica di una configurazione di lancio {#editing-a-launch-configuration}
 
 In qualsiasi momento è possibile modificare le proprietà per un lancio:
 
 1. Accedi e seleziona il lancio in uno dei seguenti modi:
 
-   * il [Console Launches](/help/sites-authoring/launches.md#the-launches-console):
+   * [console Lanci](/help/sites-authoring/launches.md#the-launches-console):
 
       * Seleziona **Proprietà**.
 

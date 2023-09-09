@@ -65,9 +65,9 @@ Spesso viene eseguito un backup completo a intervalli regolari (ad esempio, gior
 
 ### Backup dell&#39;installazione del software {#backing-up-your-software-installation}
 
-Dopo l&#39;installazione o modifiche significative nella configurazione, crea un backup dell&#39;installazione del software.
+Dopo l&#39;installazione o modifiche significative nella configurazione, creare un backup dell&#39;installazione del software.
 
-Per eseguire questa operazione, [ Esegui il backup dell&#39;intera archivio ](#backing-up-your-repository) e poi:
+Per eseguire questa operazione, [eseguire il backup dell&#39;intero archivio](#backing-up-your-repository) e quindi:
 
 1. Interruzione AEM.
 1. Backup completo `<cq-installation-dir>` dal file system.
@@ -94,7 +94,7 @@ Per informazioni dettagliate sulla creazione di un backup &quot;a caldo&quot; on
 
 Il **Rimuovi versioni** Questo strumento serve per eliminare le versioni di un nodo o di una gerarchia di nodi nell’archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.
 
-Questa sezione tratta le operazioni di manutenzione relative alla funzione di controllo delle versioni dell’AEM. Il **Rimuovi versione** Questo strumento serve per eliminare le versioni di un nodo o di una gerarchia di nodi nell’archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.
+Questa sezione tratta le operazioni di manutenzione relative alla funzione di controllo delle versioni dell’AEM. Il **Rimuovi versione** Questo strumento serve per eliminare le versioni di un nodo o di una gerarchia di nodi nell’archivio. Il suo scopo principale è quello di aiutarti a ridurre le dimensioni del tuo archivio rimuovendo le vecchie versioni dei tuoi nodi.
 
 ### Panoramica {#overview}
 
@@ -180,11 +180,11 @@ Inoltre, la console fornisce informazioni utili sulle versioni:
 * `V 1.0`: numero di versione.
 * `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (base) e non può essere eliminata.
 
-* `Thu Mar 15 2012 08:37:32 GMT+0100`: data della versione.
+* `Thu Mar 15 2012 08:37:32 GMT+0100`: la data della versione.
 
-Nell&#39;esempio successivo:
+Nel prossimo esempio:
 
-* Le versioni vengono eliminate perché la **[!DNL Shirts]** loro età di versione è superiore a due giorni.
+* Le **[!DNL Shirts]** versioni vengono eliminate perché la loro versione è superiore a due giorni.
 * Il **[!DNL Tonga Fashions!]** le versioni vengono eliminate perché il numero di versioni è maggiore di 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -300,9 +300,9 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
    >[!NOTE]
    >
-   >Anche se non è un requisito tecnico, è consigliabile rendere `<identifier>` univoco.
+   >Sebbene non sia un requisito tecnico, è consigliabile rendere `<identifier>` unico.
 
-1. Impostate le seguenti proprietà su questo nodo:
+1. Impostare le seguenti proprietà su questo nodo:
 
    * Nome: `org.apache.sling.commons.log.file`
 
@@ -433,11 +433,11 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >per indicare quando viene creato un nuovo file (e il file esistente viene rinominato in base al pattern del nome).
    >
    >* È possibile specificare un limite di dimensione con un numero. Se non viene fornito alcun indicatore di dimensione, viene considerato come il numero di byte oppure è possibile aggiungere uno degli indicatori di dimensione: `KB`, `MB`, o `GB` (il caso viene ignorato).
-   >* Un programmare di data/ora può essere specificato come `java.util.SimpleDateFormat` pattern. Definisce il periodo di tempo dopo il quale il file viene ruotato. Inoltre, il suffisso aggiunto al file ruotato (per l&#39;identificazione).
+   >* È possibile specificare una pianificazione ora/data come `java.util.SimpleDateFormat` pattern. Definisce il periodo di tempo dopo il quale il file viene ruotato. Inoltre, il suffisso aggiunto al file ruotato (per l&#39;identificazione).
    >
-   >Il valore predefinito è &#39;.&#39;yyyy-MM-DD (per la rotazione giornaliera del registro).
+   >Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera dei log).
    >
-   >Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo questa data si verifica per essere precisi),.. /logs/Error.log viene rinominato in.. /logs/error.log.2010-01-20. La registrazione del 21 gennaio viene emessa su (un nuovo e vuoto).. /logs/Error.log fino a quando non viene eseguito il rollback alla successiva modifica del giorno.
+   >Ad esempio, alla mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di log dopo questa data si verifica per essere precisi), .. /logs/error.log viene rinominato in .. /logs/error.log.2010-01-20. La registrazione per il 21 gennaio è l&#39;output a (un nuovo e vuoto) .. /logs/error.log finché non viene eseguito il rollover al successivo cambio di giornata.
    >
    >| `'.'yyyy-MM` | Rotazione all&#39;inizio di ogni mese |
    >|---|---|
@@ -923,7 +923,7 @@ Comando dello strumento `jconsole` è disponibile con JDK.
 
    Ora puoi selezionare altre opzioni.
 
-### Monitoraggio delle prestazioni tramite (J) VisualVM {#monitoring-performance-using-j-visualvm}
+### Monitoraggio delle prestazioni con (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
 Per JDK 6-8, il comando tool `visualvm` è disponibile. Dopo aver installato un JDK, puoi effettuare le seguenti operazioni:
 
@@ -1037,7 +1037,7 @@ Per visualizzare quante risorse DAM sono attualmente gestite, utilizza una query
 
 #### Qual è la dimensione media delle risorse? {#what-is-the-average-size-of-the-assets}
 
-Per determinare la dimensione totale del `/var/dam` cartella:
+Per determinare la dimensione totale della `/var/dam` cartella:
 
 1. Utilizzare WebDAV per mappare l&#39;archivio al file system locale.
 
@@ -1134,13 +1134,13 @@ Se il sistema sta esaurendo lo spazio su disco o si notano problemi di accesso a
 * Se la raccolta delle informazioni di debug è stata disattivata, è possibile configurarla in varie posizioni, tra cui le seguenti:
 
    * [Gestore script Apache Sling JSP](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Apache Sling JavaScript handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configurazione di registrazione di Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [Gestore libreria CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ Web Content Management Filtra di debug](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Gestore JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Configurazione di registrazione Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+   * [Gestione libreria CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [CQ Web Content Management Filtra Debug](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Logger](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Se e come hai configurato [ versione lo spurgo](/help/sites-deploying/version-purging.md)
+* Se e come hai configurato [Versione Eliminazione](/help/sites-deploying/version-purging.md)
 * Knowledge Base:
 
    * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=it)
@@ -1159,7 +1159,7 @@ Se le prestazioni dell’istanza si deteriorano dopo ogni riavvio (a volte una s
 
 La Java™ Virtual Machine (JVM) è migliorata per quanto riguarda la messa a punto (soprattutto da Java™ 7). Di conseguenza, spesso è opportuno specificare una dimensione JVM fissa ragionevole e utilizzare le impostazioni predefinite.
 
-Se le impostazioni predefinite non sono adatte, è importante stabilire un metodo per monitorare e valutare le prestazioni di GC. Eseguire questa operazione prima di tentare di ottimizzare la JVM. Questo processo può includere fattori di monitoraggio, tra cui la dimensione dell’heap, l’algoritmo e altri aspetti.
+Se le impostazioni predefinite non sono adatte, è importante stabilire un metodo per monitorare e valutare le prestazioni di GC. Farlo prima di provare a regolare la JVM. Questo processo può includere fattori di monitoraggio, tra cui la dimensione dell’heap, l’algoritmo e altri aspetti.
 
 Alcune scelte comuni sono:
 

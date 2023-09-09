@@ -26,7 +26,7 @@ L’interfaccia classica utilizza ExtJS per creare widget che forniscono l’asp
 >
 >Anche se sia HTL (HTML Template Language) che JSP possono essere utilizzati per lo sviluppo di componenti per l’interfaccia utente classica, questa pagina illustra lo sviluppo con JSP. Ciò è dovuto esclusivamente alla cronologia dell’utilizzo di JSP nell’interfaccia classica.
 >
->HTL è ora il linguaggio di script consigliato per l’AEM. Consulta [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) e [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) per confrontare i metodi.
+>HTL è ora il linguaggio di script consigliato per l’AEM. Consulta [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) e [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) per confrontare i metodi.
 
 ## Struttura {#structure}
 

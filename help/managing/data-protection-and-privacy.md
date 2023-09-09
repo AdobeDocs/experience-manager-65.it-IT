@@ -12,7 +12,7 @@ exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 25%
+ht-degree: 41%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe fornisce documentazione e procedure (con API se disponibili) per l’ammin
 >
 >I dettagli qui documentati sono limitati a Adobe Experience Manager.
 >
->I dati provenienti da un altro servizio Adobe On-demand, insieme a eventuali richieste di accesso a dati personali correlate, richiedono l’esecuzione di azioni su tale servizio.
+>I dati provenienti da un altro servizio Adobe on-demand, insieme a eventuali richieste di accesso a dati personali correlate, richiederanno azioni su tale servizio.
 >
 >Per ulteriori informazioni, consulta [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html).
 
@@ -44,7 +44,7 @@ Le istanze di Adobe Experience Manager e le applicazioni che vengono eseguite su
 
 Di conseguenza, le normative sulla protezione dei dati, come GDPR, CCPA e altri, sono in gran parte responsabilità dei clienti.
 
-Come breve introduzione, le normative sulla privacy e la protezione dei dati includono nuove regole da seguire dai ruoli di:
+Come breve introduzione, le norme sulla privacy e la protezione dei dati includono nuove regole che devono essere seguite dai ruoli di:
 
 * Business Entities (CCPA) e/o Data Controllers (GDPR)
 
@@ -66,7 +66,7 @@ Per Adobe Experience Manager:
 
    * Il cliente gestisce i ruoli normativi, tra cui Business Entities e Service Provider, Data Controller e Data Processor, tra gli altri.
 
-   * Il Adobe Experience Platform Privacy Service non fa parte del flusso di lavoro per l’AEM, come illustrato nel diagramma seguente.
+   * Adobe Experience Platform Privacy Service non farà parte del flusso di lavoro per AEM, come illustrato nel diagramma seguente.
 
 * AEM include la documentazione e le procedure per l’amministratore della privacy del cliente e/o l’amministratore AEM per eseguire le richieste relative alla normativa sulla privacy, manualmente o tramite API, se disponibili.
 
@@ -74,11 +74,11 @@ Per Adobe Experience Manager:
 
    * Le procedure e le API sono invece documentate per l’utilizzo da parte dell’interfaccia utente/dei portali dei clienti che gestiscono le richieste di normativa sulla privacy.
 
-* AEM non include strumenti predefiniti per supportare il flusso di lavoro delle richieste di privacy.
+* AEM non includerà alcuno strumento predefinito per supportare il flusso di lavoro delle richieste di privacy.
 
    * L’Adobe fornisce la documentazione e le procedure per l’amministratore della privacy del cliente e l’amministratore AEM, consentendo loro di eseguire manualmente le richieste relative alle normative sulla privacy.
 
-Adobe fornisce procedure per la gestione delle richieste di accesso, cancellazione e rinuncia alla privacy relative a Adobe Experience Manager. A volte sono disponibili API che possono essere richiamate da un portale sviluppato dal cliente o da script per facilitare l’automazione.
+Adobe fornisce procedure per la gestione delle richieste di accesso, cancellazione e revoca del consenso in materia di privacy relative a Adobe Experience Manager. A volte sono disponibili API che possono essere richiamate da un portale sviluppato dal cliente o da script per facilitare l’automazione.
 
 Il diagramma seguente illustra l’aspetto di un flusso di lavoro per la richiesta di accesso a dati personali (illustrato con Adobe Experience Manager 6.5):
 
@@ -112,11 +112,11 @@ Consulta [AEM Mobile - Preparazione per la protezione dei dati e la privacy](/he
 
 Queste integrazioni Adobe Experience Manager si riferiscono ai servizi di protezione dei dati e privacy pronti (ad esempio, GDPR o CCPA). Nessun dato personale da Adobe Target o Adobe Analytics viene memorizzato in AEM in relazione alle integrazioni.
 
-Per ulteriori informazioni, vedi:
+Per ulteriori informazioni, consulta:
 
 * [Adobe Target - Panoramica sulla privacy](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Flusso di lavoro sulla privacy dei dati di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
+* [Flusso di lavoro sulla privacy dei dati di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=it)
 
 ## Community AEM {#aem-communities}
 

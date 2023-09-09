@@ -54,7 +54,7 @@ Questo consente di creare e modificare siti web dinamici il cui layout si riorga
 >
 >Anche se il **Contenitore di layout** Il componente è disponibile nell’interfaccia classica; la sua piena funzionalità è disponibile solo nell’interfaccia touch.
 
-Con questi meccanismi di griglia reattiva è possibile:
+Con questi meccanismi basati su una griglia dinamica è possibile:
 
 * Utilizza i punti di interruzione (che indicano il raggruppamento del dispositivo) per definire un comportamento di contenuto diverso in base al layout del dispositivo.
 * Nascondi i componenti in base al gruppo di dispositivi (definisci il punto di interruzione in cui un componente verrà nascosto).

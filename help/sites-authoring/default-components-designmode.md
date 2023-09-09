@@ -11,7 +11,7 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -93,9 +93,9 @@ Per attivare o disattivare un componente:
 
    * I componenti sono raggruppati in base ai rispettivi gruppi di componenti, che possono essere espansi e compressi.
    * È possibile selezionare un intero gruppo selezionando il nome del gruppo e deselezionando tutti gli elementi.
-   * Il segno meno rappresenta almeno uno, ma non tutti gli elementi di un gruppo sono selezionati.
+   * Il segno meno significa che è stato selezionato almeno un elemento del gruppo, ma non tutti.
    * È disponibile una ricerca per filtrare un componente in base al nome.
-   * I conteggi elencati a destra del nome del gruppo di componenti rappresentano il numero totale di componenti selezionati in tali gruppi indipendentemente dal filtro.
+   * I numeri elencati a destra del nome del gruppo di componenti rappresentano il numero totale di componenti selezionati in tale gruppo indipendentemente dal filtro.
 
    Puoi definire la configurazione per ogni componente pagina. Se le pagine figlie utilizzano lo stesso modello e/o componente pagina (solitamente allineato), la stessa configurazione verrà applicata al sistema paragrafo corrispondente.
 

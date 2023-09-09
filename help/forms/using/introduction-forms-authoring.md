@@ -14,7 +14,7 @@ exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '3156'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -194,7 +194,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Pannello</td>
-   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando <span class="uicontrol">Aggiungi pannello secondario</code> pulsante. Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando <span class="uicontrol">Barra degli strumenti Aggiungi pannello</code> pulsante. È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</p> </td>
+   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando il pulsante <span class="uicontrol">Aggiungi pannello</code>  pulsante. Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando il pulsante <span class="uicontrol">Aggiungi barra degli strumenti del</code> pulsante. È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</p> </td>
   </tr>
   <tr>
    <td>Casella password</td>

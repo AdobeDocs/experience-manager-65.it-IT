@@ -12,7 +12,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1442'
-ht-degree: 69%
+ht-degree: 82%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 69%
 
 Un frammento di esperienza è un gruppo di uno o più componenti, inclusi il contenuto e il layout, a cui è possibile fare riferimento all’interno delle pagine. Possono contenere qualsiasi componente.
 
-Un frammento esperienza:
+Un frammento di esperienza:
 
-* Fa parte di un’esperienza (pagina).
+* è parte di un’esperienza (pagina).
 * Può essere utilizzato su più pagine.
-* È basato su un modello (solo modificabile) per definire la struttura e i componenti.
+* Si basa su un modello (solo modificabile) che ne definisce struttura e componenti.
 * Questo modello viene utilizzato per creare la *pagina root* del frammento di esperienza.
-* è costituito da uno o più componenti, con layout, in un sistema paragrafo.
-* Può contenere altri frammenti esperienza.
+* È costituito da uno o più componenti, con layout, in un sistema paragrafo.
+* Può contenere altri frammenti di esperienza.
 * Può essere combinato con altri componenti (inclusi altri frammenti esperienza) per formare una pagina completa (esperienza).
 * Puoi creare una o più varianti in base alla pagina root.
 * Queste varianti possono condividere contenuti e/o componenti.
@@ -40,7 +40,7 @@ Puoi utilizzare Frammenti esperienza:
 
 >[!NOTE]
 >
->Per poter accedere in scrittura ai frammenti esperienza, l’account utente deve essere registrato nel gruppo
+>Per poter accedere in scrittura ai frammenti esperienza, l’account utente deve essere registrato nel gruppo:
 >
 >    `experience-fragments-editors`
 >
@@ -48,7 +48,7 @@ In caso di problemi, contatta l’amministratore di sistema.
 
 ## Quando utilizzare i frammenti esperienza?   {#when-should-you-use-experience-fragments}
 
-I frammenti esperienza sono indicati nei seguenti casi:
+I Frammenti di esperienza sono indicati nei seguenti casi:
 
 * Quando desideri riutilizzare le esperienze.
 
@@ -180,7 +180,7 @@ Per creare un frammento esperienza:
 
 1. Inserisci le **proprietà** per il **frammento esperienza**.
 
-   A **Titolo** è obbligatorio. Se il **Nome** viene lasciato vuoto, verrà derivato dal valore **Titolo**.
+   È obbligatorio un **Titolo**. Se il **Nome** viene lasciato vuoto, verrà derivato dal valore **Titolo**.
 
    ![xf-04](assets/xf-04.png)
 
@@ -221,7 +221,7 @@ La procedura di esempio seguente illustra come creare un teaser per un prodotto:
 
 Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 
-1. Apri il frammento per [modifica](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
+1. Apri la pagina per la [modifica](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
 1. Apri la scheda **Varianti**.
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
@@ -249,7 +249,7 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 
 Ora puoi utilizzare il frammento di esperienza durante l’authoring delle pagine:
 
-1. Apri qualsiasi pagina per la modifica.
+1. Apri la pagina da modificare.
 
    Ad esempio: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
@@ -276,7 +276,7 @@ Puoi selezionare uno o più componenti per creare un blocco predefinito da riuti
 
 Per creare un nuovo blocco predefinito:
 
-1. Nell’editor frammento di esperienza, seleziona i componenti da riutilizzare:
+1. Nell’editor Frammento di esperienza, seleziona i componenti da riutilizzare:
 
    ![xf-10](assets/xf-10.png)
 
@@ -294,7 +294,7 @@ Per creare un nuovo blocco predefinito:
 
 #### Gestione di un blocco predefinito {#managing-a-building-block}
 
-Il blocco predefinito è visibile in **Blocchi predefiniti** scheda. Per ciascun blocco sono disponibili le seguenti azioni:
+Il blocco predefinito è visibile nella scheda **Blocchi predefiniti**. Per ciascun blocco sono disponibili le seguenti azioni:
 
 * Vai a master: apri la variante della pagina root in una nuova scheda
 * Rinomina
@@ -340,7 +340,7 @@ I dettagli del frammento vengono visualizzati in diverse posizioni:
       * **Numero di varianti web** - solo informativo
       * **Numero di varianti non web** - inf **Solo informazioni**
 
-      * **Numero di pagine che utilizzano questo frammento** - solo informativo
+      * **Numero di pagine che utilizzano questo frammento** - solo informazioni
 
    * **Servizi cloud**
 
@@ -367,6 +367,6 @@ Sebbene sia disponibile direttamente dal browser, [lo scopo principale è quello
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
-Per impostazione predefinita, i frammenti di esperienza vengono consegnati in formato HTML. Può essere utilizzato sia dall’AEM che da canali di terze parti.
+Per impostazione predefinita, i frammenti di esperienza vengono forniti nel formato HTML. Può essere utilizzato sia dall’AEM che da canali di terze parti.
 
 Per l’esportazione in Adobe Target, è possibile utilizzare anche JSON. Consulta [Integrazione di Target con frammenti esperienza](/help/sites-administering/experience-fragments-target.md) per informazioni complete.

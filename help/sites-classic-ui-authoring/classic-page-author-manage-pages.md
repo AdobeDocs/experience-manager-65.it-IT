@@ -11,7 +11,7 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1909'
-ht-degree: 14%
+ht-degree: 21%
 
 ---
 
@@ -27,7 +27,7 @@ Questa sezione descrive come creare e gestire le pagine con Adobe Experience Man
 
 ## Organizzazione del sito web {#organizing-your-website}
 
-In qualità di autore, dovrai organizzare il tuo sito web all’interno dell’AEM. Ciò comporta la creazione e la denominazione delle pagine di contenuto in modo che:
+In qualità di autore, dovrai organizzare il tuo sito web all’interno di AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
 
 * si trovano facilmente nell’ambiente di authoring
 * i visitatori del sito possono facilmente sfogliarli nell’ambiente di pubblicazione
@@ -84,7 +84,7 @@ Durante la creazione di una nuova pagina sono disponibili due campi chiave:
 * **[Nome](#name)**:
 
    * Viene utilizzato per generare l’URI.
-   * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome deriva dal titolo.
+   * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome viene derivato dal titolo.
 
 Quando si crea una nuova pagina, l’AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
 
@@ -120,15 +120,15 @@ Nell’interfaccia classica **impossibile immettere caratteri non validi** nel *
 >
 >È consigliabile evitare di utilizzare un codice a due lettere come definito dallo standard ISO-639-1, a meno che non si tratti di una directory principale della lingua.
 >
->Consulta [Preparazione del contenuto per la traduzione](/help/sites-administering/tc-prep.md) per ulteriori informazioni.
+>Per ulteriori informazioni, consulta l’argomento relativo alla [preparazione dei contenuti per la traduzione](/help/sites-administering/tc-prep.md).
 
 ### Modelli {#templates}
 
-In AEM, un modello specifica un tipo di pagina specifico. Un modello verrà utilizzato come base per qualsiasi nuova pagina creata.
+In AEM, un modello specifica un tipo di pagina particolare. Un modello verrà utilizzato come base per qualsiasi nuova pagina creata.
 
-Il modello definisce la struttura di una pagina, incluse un’immagine di miniatura e altre proprietà. Ad esempio, puoi avere modelli separati per pagine di prodotti, sitemap e informazioni di contatto. I modelli sono costituiti da [componenti](#components).
+Il modello definisce la struttura di una pagina, incluse un’immagine di miniatura e altre proprietà. Ad esempio, puoi usare modelli distinti per pagine di prodotti, sitemap e informazioni di contatto. I modelli sono costituiti da [componenti](#components).
 
-L’AEM viene fornito con diversi modelli preconfigurati. I modelli disponibili dipendono dal singolo sito Web e le informazioni da fornire (al momento della creazione della nuova pagina) dipendono dall’interfaccia utente utilizzata. I campi chiave sono i seguenti:
+AEM viene fornito con diversi modelli preconfigurati. I modelli disponibili dipendono dal singolo sito Web e le informazioni da fornire (al momento della creazione della nuova pagina) dipendono dall’interfaccia utente utilizzata. I campi chiave sono i seguenti:
 
 * **Titolo**
 Il titolo visualizzato nella pagina web risultante.
@@ -243,7 +243,7 @@ Durante la copia, puoi copiare:
 
 >[!NOTE]
 >
->La ridenominazione di una pagina è inoltre soggetta [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nuovo nome della pagina.
+>La ridenominazione di una pagina è inoltre soggetta a [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nuovo nome della pagina.
 
 La procedura per spostare o rinominare una pagina è la stessa. Con la stessa azione puoi:
 
@@ -251,7 +251,7 @@ La procedura per spostare o rinominare una pagina è la stessa. Con la stessa az
 * rinominare una pagina nella stessa posizione
 * spostare una pagina in una nuova posizione e rinominarla contemporaneamente
 
-AEM offre la funzionalità di aggiornamento dei collegamenti interni alla pagina rinominata o spostata. Questa operazione può essere eseguita pagina per pagina per fornire la massima flessibilità.
+AEM offre la funzionalità di aggiornamento dei collegamenti interni alla pagina rinominata o spostata. Questa operazione può essere eseguita a livello di singola pagina, per assicurare la massima flessibilità.
 
 Per spostare o rinominare una pagina:
 
@@ -329,7 +329,7 @@ Per spostare o rinominare una pagina:
 
 >[!NOTE]
 >
->Le cartelle sono inoltre soggette ai [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nome della nuova cartella.
+>Le cartelle sono inoltre soggette a [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nome della nuova cartella.
 
 1. Apri **Siti Web** e passare alla posizione desiderata.
 1. In **Nuovo...** menu (fare clic sulla freccia accanto a **Nuovo...**), seleziona **Nuova cartella...**.

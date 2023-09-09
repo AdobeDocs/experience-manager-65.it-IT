@@ -38,11 +38,11 @@ L’utilizzo dei componenti di base è supportato, ma nella maggior parte dei ca
 
 >[!NOTE]
 >
->In questa sezione vengono descritti solo i componenti disponibili come predefiniti in un’installazione standard per AEM.
+>In questa sezione vengono descritti solo i componenti disponibili forniti in un’installazione standard di AEM.
 >
 >A seconda dell’istanza, è possibile che siano stati sviluppati in modo esplicito componenti personalizzati in base alle proprie esigenze. Questi componenti personalizzati possono anche avere lo stesso nome di alcuni dei componenti discussi qui.
 
-I componenti sono disponibili nel **Componenti** del pannello laterale dell’editor di pagine quando [modifica di una pagina](/help/sites-authoring/editing-content.md).
+I componenti sono disponibili nella scheda **Componenti** del pannello laterale dell’editor di pagine durante la [modifica di una pagina](/help/sites-authoring/editing-content.md).
 
 Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pagina. Puoi quindi modificarlo utilizzando:
 
@@ -462,7 +462,7 @@ Questo componente fornisce un sistema paragrafo a griglia che consente di aggiun
 
 >[!NOTE]
 >
->Questo componente è stato implementato con [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it).
+>Questo componente è stato implementato con [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it).
 
 ### Elenco {#list}
 

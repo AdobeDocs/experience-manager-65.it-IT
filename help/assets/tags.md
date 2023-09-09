@@ -796,7 +796,7 @@ Ad esempio: `https://ims-na1.adobelogin.com/`
 
 ## Configurare Experienci Platform Tags Cloud per l’integrazione {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. Nell’Experience Manager Autore, nell’angolo in alto a sinistra, seleziona la **[!UICONTROL Strumenti]** (martello), quindi vai a **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform configurazioni tag]**.
+1. Nell’Experience Manager Autore, nell’angolo in alto a sinistra, seleziona la **[!UICONTROL Strumenti]** (martello), quindi vai a **[!UICONTROL Cloud Service]** > **[!UICONTROL Experience Platform configurazioni tag]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -855,4 +855,4 @@ Tuttavia, è supportato nel nodo Publish di Experience Manager. Utilizzando le i
 
 È possibile aggirare questo limite. Specifica l’URL di sviluppo o staging della libreria Tag di Platform nella configurazione cloud di Tag di Experience Platform per il nodo Publish di Experience Manager qui sopra. In questo modo il nodo Publish di Experience Manager utilizza la versione di sviluppo o staging della libreria Tag di Experienci Platform.
 
-Consulta [Integrare Experience Manager con i tag Experienci Platform tramite [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) per ulteriori informazioni sulla configurazione di Experienci Platform Tags Cloud Configuration.
+Consulta [Integrare Experience Manager con i tag Experienci Platform tramite [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it) per ulteriori informazioni sulla configurazione di Experienci Platform Tags Cloud Configuration.

@@ -1,5 +1,5 @@
 ---
-title: Panoramica Live Copy
+title: Console Panoramica sulla Live Copy
 seo-title: Live Copy Overview Console
 description: Scopri le nozioni di base della console Panoramica Live Copy.
 seo-description: Learn about the basics of the Live Copy Overview Console.
@@ -18,7 +18,7 @@ ht-degree: 35%
 
 ---
 
-# Panoramica Live Copy{#live-copy-overview-console}
+# Console Panoramica sulla Live Copy{#live-copy-overview-console}
 
 La **Panoramica Live Copy** consente di:
 

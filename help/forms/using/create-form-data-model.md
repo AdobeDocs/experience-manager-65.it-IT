@@ -57,38 +57,38 @@ Per configurare il [!DNL MySQL] database:
 
 1. Installa il driver JDBC per [!DNL MySQL] il database come bundle OSGi:
 
-   1. Scarica [!DNL MySQL] il bundle OSGi del driver JDBC da `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` . <!-- This URL is an insecure link but using https is not possible -->
+   1. Scarica [!DNL MySQL] JDBC Driver OSGi Bundle da `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
    1. Accedere a AEM [!DNL Forms] Crea istanza come amministratore e vai ai bundle della console web AEM. L’URL predefinito è [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Tocca **[!UICONTROL Installa/Aggiorna]**. Un [!UICONTROL Caricare/Installare i bundle] viene visualizzata.
 
    1. Tocca **[!UICONTROL Scegli file]** per esplorare e selezionare [!DNL MySQL] Pacchetto OSGi del driver JDBC. Seleziona **[!UICONTROL Bundle iniziale]** e **[!UICONTROL Aggiorna pacchetti]**, e tocca **[!UICONTROL Installare o aggiornare]**. Assicurati che [!DNL Oracle Corporation's] Driver JDBC per [!DNL MySQL] è attivo. Il driver è installato.
 
-1. Configura [!DNL MySQL] database come origine dati:
+1. Configurare [!DNL MySQL] il database come origine dati:
 
-   1. Vai a AEM console Web all&#39;indirizzo [ https://localhost:4502/System/Console/configMgr ](https://localhost:4502/system/console/configMgr) .
-   1. Individua **la configurazione dell&#39;origine** Apache Sling Connection in pool. Toccate per aprire la configurazione in modalità modifica.
+   1. Vai a AEM console Web all&#39;indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Individua **la configurazione Apache Sling Connection Pooled DataSource** . Toccare per aprire la configurazione in modalità di modifica.
    1. Nella finestra di dialogo di configurazione, specifica i dettagli seguenti:
 
       * **Nome origine dati:** È possibile specificare qualsiasi nome. Ad esempio, specifica **WeRetailMySQL**.
       * **Nome proprietà servizio DataSource**: specifica il nome della proprietà del servizio contenente il nome DataSource. Viene specificato durante la registrazione dell’istanza dell’origine dati come servizio OSGi. Ad esempio: **datasource.name**.
       * **Classe driver JDBC**: specifica il nome della classe Java del driver JDBC. Per [!DNL MySQL] database, specificare **com.mysql.jdbc.Driver**.
-      * **URI** di connessione JDBC: specifica URL di connessione del database. Per [!DNL MySQL] il database in esecuzione su porta 3306 e schema weretail, il URL è: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI** connessione JDBC: specifica il URL di connessione del database. Per [!DNL MySQL] il database in esecuzione su porta 3306 e lo schema weretail, il URL è: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Quando il database è dietro un firewall, il nome host del [!DNL MySQL] database non è un DNS pubblico. L&#39;indirizzo IP del database deve essere aggiunto nel *file/etc/hosts* della macchina host AEM.
+      > Quando il database è protetto da un firewall, il [!DNL MySQL] nome host del database non è un DNS pubblico. L&#39;indirizzo *IP del database deve essere aggiunto nel file /etc/hosts* del computer host AEM.
 
       * **Nome utente:** Nome utente del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
       * **Password:** Password del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
 
       >[!NOTE]
       >
-      >AEM Forms non supporta l’autenticazione NT per [!DNL MySQL]. Vai a AEM console Web all&#39;indirizzo [ https://localhost:4502/System/Console/configMgr ](https://localhost:4502/system/console/configMgr) e ricerca &quot;Apache Sling Connection aggregate DataSource&quot;. Per la proprietà &quot;URI di connessione JDBC&quot; valore impostato &quot;integratedSecurity&quot; come falso e utilizzare il nome utente e password creato per la connessione con [!DNL MySQL] il database.
+      >AEM Forms non supporta l’autenticazione NT per [!DNL MySQL]. Vai alla console Web all AEM indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e ricerca &quot;Apache Sling Connection Pooled Datasource&quot;. Per la proprietà &quot;JDBC connection URI&quot; imposta il valore di &quot;integratedSecurity&quot; come False e utilizza il nome utente e il password creati per la connessione al [!DNL MySQL] database.
 
-      * **Verifica in prestito:** Abilita l&#39; **[!UICONTROL opzione prova in prestito]** .
-      * **Test on return:** Abilita l&#39; **[!UICONTROL opzione test on return]** .
-      * **Query di convalida:** specifica una query SELECT SQL per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio: **seleziona &#42; da customerdetails**.
+      * **Test in prestito:** attiva l&#39;opzione **[!UICONTROL Test su prestito]** .
+      * **Test on Return:** consente di abilitare l&#39;opzione **[!UICONTROL Test on Return.]**
+      * **Query di convalida:** specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio: **seleziona &#42; da customerdetails**.
       * **Isolamento transazione**: imposta il valore su **READ_COMMIT**.
 
         Lascia altre proprietà con impostazione predefinita [valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e tocca **[!UICONTROL Salva]**.
@@ -163,23 +163,23 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
       ![write-default](assets/write-default.png)
 
-      Aggiungi e configura l&#39; **argomento ID** come segue.
+      Aggiungi e configura l&#39;argomento **id** come segue.
 
-      ![ID-ARG](assets/id-arg.png)
+      ![id-arg](assets/id-arg.png)
 
-   1. Toccate **[!UICONTROL fine]** per salvare le proprietà dell&#39;oggetto modello dati. Quindi, tocca **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+   1. Toccare **[!UICONTROL Fine]** per salvare le proprietà dell&#39;oggetto modello dati. Quindi, tocca **[!UICONTROL Salva]** per salvare il modello di dati del modulo.
 
-      I **[!UICONTROL Servizi Get]** e **[!UICONTROL Update]** vengono aggiunti come servizi predefiniti per l&#39;oggetto modello dati.
+      I **[!UICONTROL servizi get]** e **[!UICONTROL update]** vengono aggiunti come servizi predefiniti per l&#39;oggetto modello dati.
 
       ![data-model-object](assets/data-model-object.png)
 
 1. Vai a **[!UICONTROL Servizi]** e configurare **[!UICONTROL ottenere]** e **[!UICONTROL aggiorna]** servizi.
 
-   1. Seleziona il **[!UICONTROL servizio Get]** e tocca **[!UICONTROL modifica proprietà]** . Viene visualizzata la finestra di dialogo delle proprietà.
-   1. Specifica quanto segue nella finestra di dialogo Modifica Proprietà:
+   1. Seleziona il **[!UICONTROL servizio Ottieni]** e tocca **[!UICONTROL Modifica Proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
+   1. Nella finestra di dialogo Modifica Proprietà, specifica quanto segue:
 
-      * **Titolo** : specifica il titolo del servizio. Ad esempio: Recupera indirizzo di spedizione.
-      * **Descrizione** : specifica la descrizione che contiene il funzionamento dettagliato del servizio. Ad esempio:
+      * **Titolo**: specifica il titolo del servizio. Ad esempio: Recupera indirizzo di spedizione.
+      * **Descrizione**: specificare una descrizione contenente il funzionamento dettagliato del servizio. Ad esempio:
 
         Questo servizio recupera l’indirizzo di spedizione e altri dettagli del cliente da [!DNL MySQL] database
 

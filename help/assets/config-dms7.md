@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Configurare Dynamic Medie - Modalità Scene7{#configuring-dynamic-media-scene-mode}
 
-Se utilizzi la configurazione di Adobe Experience Manager per ambienti diversi, ad esempio sviluppo, staging e produzione, configura i Cloud Services Dynamic Medie per ciascuno di questi ambienti.
+Se si utilizza la configurazione Adobe Experience Manager per ambienti diversi, ad esempio sviluppo, staging e produzione, configurare i Cloud Service Dynamic Medie per ciascuno di tali ambienti.
 
 ## Diagramma dell’architettura di Dynamic Medie - Modalità Scene7 {#architecture-diagram-of-dynamic-media-scene-mode}
 
@@ -36,7 +36,7 @@ In modalità Dynamic Medie - Scene7, la dimensione predefinita del file caricato
 
 >[!IMPORTANT]
 >
->Il seguente elenco di funzioni richiede l’utilizzo della rete CDN preconfigurata fornita in bundle con Adobe Experience Manager - Dynamic Medie. Qualsiasi altra rete CDN personalizzata non è supportata con queste funzioni.
+>Per visualizzare il seguente elenco di funzioni è necessario utilizzare la rete CDN preconfigurata fornita in bundle con Adobe Experience Manager - Dynamic Medie. Qualsiasi altra rete CDN personalizzata non è supportata con queste funzioni.
 >
 >* [Imaging avanzato](/help/assets/imaging-faq.md)
 >* [Annullamento validità cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
@@ -83,7 +83,7 @@ Il Feature Pack 18912 consente di acquisire in blocco le risorse tramite FTP o d
 
 Consulta [Installare il 18912 del feature pack per la migrazione in blocco delle risorse](/help/assets/bulk-ingest-migrate.md) per ulteriori informazioni.
 
-## Creare una configurazione Dynamic Medie in Cloud Services {#configuring-dynamic-media-cloud-services}
+## Creare una configurazione Dynamic Medie in Cloud Service {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
@@ -91,7 +91,7 @@ Consulta [Installare il 18912 del feature pack per la migrazione in blocco delle
 
 **To create a Dynamic Media Configuration in Cloud Services:** -->
 
-1. In modalità Autore Experience Manager, seleziona il logo di Experience Manager per accedere alla console di navigazione globale, fai clic sull’icona Strumenti e vai a **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione Dynamic Medie]**.
+1. In modalità Autore Experience Manager, seleziona il logo di Experience Manager per accedere alla console di navigazione globale, fai clic sull’icona Strumenti e vai a **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione Dynamic Medie]**.
 1. Nella pagina Browser configurazioni Dynamic Medie, nel riquadro a sinistra, selezionare **[!UICONTROL globale]** (non selezionare l&#39;icona della cartella a sinistra di **[!UICONTROL globale]**), quindi seleziona **[!UICONTROL Crea]**.
 1. Il giorno **[!UICONTROL Crea configurazione Dynamic Medie]** pagina, inserisci un titolo, l’indirizzo e-mail dell’account Dynamic Medie, la password, quindi seleziona la tua area geografica. Queste informazioni sono fornite da un Adobe nell’e-mail di provisioning. Se non hai ricevuto l’e-mail, contatta l’Assistenza clienti Adobe.
 
@@ -121,7 +121,7 @@ Consulta [Installare il 18912 del feature pack per la migrazione in blocco delle
    * **[!UICONTROL Azienda]** : nome dell’account Dynamic Medie.
      >[!IMPORTANT]
      >
-     In un&#39;istanza di Experience Manager è supportata una sola configurazione Dynamic Medie nei Cloud Services. Non aggiungere più di una configurazione. Più configurazioni Dynamic Medie in un’istanza Experience Manager sono _non_ supportati o consigliati dall’Adobe.
+     In un&#39;istanza di Experience Manager è supportata una sola configurazione Dynamic Medie nei Cloud Service. Non aggiungere più di una configurazione. Più configurazioni Dynamic Medie in un’istanza Experience Manager sono _non_ supportati o consigliati dall’Adobe.
 
      <!-- CQDOC-19579 and CQDOC-19612 -->
 
@@ -189,7 +189,7 @@ La password modificata viene salvata quando si seleziona **[!UICONTROL Salva]** 
 **Per cambiare la password in Dynamic Medie:**
 
 1. In modalità Autore Experience Manager, seleziona il logo di Experience Manager per accedere alla console di navigazione globale.
-1. A sinistra della console, seleziona l’icona Strumenti, quindi vai a **[!UICONTROL Cloud Services] > [!UICONTROL Configurazione Dynamic Medie]**.
+1. A sinistra della console, seleziona l’icona Strumenti, quindi vai a **[!UICONTROL Cloud Service] > [!UICONTROL Configurazione Dynamic Medie]**.
 1. Nella pagina Browser configurazioni Dynamic Medie, nel riquadro a sinistra, selezionare **[!UICONTROL globale]**. Non selezionare l&#39;icona della cartella a sinistra di **[!UICONTROL globale]**. Quindi, seleziona **[!UICONTROL Modifica]**.
 1. Il giorno **[!UICONTROL Modifica configurazione Dynamic Medie]** direttamente sotto il **[!UICONTROL Password]** campo, seleziona **[!UICONTROL Cambia password]**.
 1. In **[!UICONTROL Cambia password]** eseguire le operazioni seguenti:
@@ -226,7 +226,7 @@ Quando si esegue la modalità Dynamic Medie - Scene7 su AEM, al momento la funzi
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
-1. Viene visualizzata una nuova scheda del browser **[!UICONTROL Configurazione della console web Adobe Experience Manager]** pagina.
+1. Viene visualizzata una nuova scheda del browser **[!UICONTROL Configurazione console Web Adobe Experience Manager]** pagina.
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
@@ -407,7 +407,7 @@ In Experience Manager Assets è possibile aggiungere tipi MIME personalizzati pe
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
-1. Viene visualizzata una nuova scheda del browser **[!UICONTROL Configurazione della console web Adobe Experience Manager]** pagina.
+1. Viene visualizzata una nuova scheda del browser **[!UICONTROL Configurazione console Web Adobe Experience Manager]** pagina.
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
@@ -427,7 +427,7 @@ In Experience Manager Assets è possibile aggiungere tipi MIME personalizzati pe
 
 1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Salva]**.
 
-   A questo punto, puoi chiudere la scheda del browser che presenta la pagina Apri configurazione della console web Adobe Experience Manager.
+   A questo punto, è possibile chiudere la scheda del browser che include la pagina Apri configurazione console Web Adobe Experience Manager.
 
 1. Torna alla scheda del browser che presenta la console di Experience Manager aperta.
 1. Da Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
@@ -438,7 +438,7 @@ In Experience Manager Assets è possibile aggiungere tipi MIME personalizzati pe
 
    `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-1. Trascina il tipo di mime `image_vnd.dwg` e rilascialo direttamente sopra `image_` nell’albero come mostrato nella schermata seguente.
+1. Trascina il tipo di mime `image_vnd.dwg` e rilascialo direttamente sopra `image_` nell&#39;albero come mostrato nella schermata seguente.
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 

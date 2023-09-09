@@ -384,7 +384,7 @@ Utilizza la proprietà aem:afproperties per preconfigurare espressioni o script 
 }
 ```
 
-Devi essere membro di [forms-power-user group](forms-groups-privileges-tasks.md) per configurare script o espressioni per l&#39;oggetto modulo. La tabella seguente elenca tutti gli eventi script supportati per un componente modulo adattivo.
+Devi essere membro del [forms-power-user group](forms-groups-privileges-tasks.md) per configurare script o espressioni per l&#39;oggetto modulo. La tabella seguente elenca tutti gli eventi script supportati per un componente modulo adattivo.
 
 <table>
  <tbody>
@@ -396,7 +396,7 @@ Devi essere membro di [forms-power-user group](forms-groups-privileges-tasks.md)
    <td>Convalida</td>
    <td>Abilitato</td>
    <td>Conferma valore</td>
-   <td>Clic </td>
+   <td>Fai clic su </td>
    <td>Opzioni</td>
   </tr>
   <tr>

@@ -20,7 +20,7 @@ ht-degree: 60%
 
 Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno rese disponibili a seconda delle necessità.
 
-## Proprietà pagina   {#page-properties}
+## Proprietà pagina {#page-properties}
 
 Le proprietà sono distribuite su più schede.
 

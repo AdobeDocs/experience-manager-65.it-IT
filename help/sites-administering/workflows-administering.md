@@ -13,7 +13,7 @@ exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -192,7 +192,7 @@ Viene fornito un flag a livello di modello di flusso di lavoro per indicare che 
 
 La proprietà *userMetadataPersistenceEnabled* verrà memorizzata nel *nodo jcr:content* del modello di flusso di lavoro. Questo flag verrà reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
 
-L’illustrazione seguente mostra come impostare il flag su un flusso di lavoro.
+L’illustrazione seguente mostra come configurare il flag in un flusso di lavoro.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 

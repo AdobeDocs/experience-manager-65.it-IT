@@ -13,7 +13,7 @@ exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ![immagine protagonista](do-not-localize/data-integration.png)
 
-L’integrazione dei dati in AEM Forms consente di utilizzare diverse origini dati di back-end per creare un modello di dati modulo da utilizzare come schema in vari moduli adattivi e flussi di lavoro di comunicazione interattiva. Richiede la configurazione delle origini dati e la creazione di un modello dati modulo basato su oggetti e servizi modello dati disponibili nelle origini dati. Per ulteriori informazioni, vedi:
+L’integrazione dei dati in AEM Forms consente di utilizzare diverse origini dati di back-end per creare un modello di dati modulo da utilizzare come schema in vari moduli adattivi e flussi di lavoro di comunicazione interattiva. Richiede la configurazione delle origini dati e la creazione di un modello dati modulo basato su oggetti e servizi modello dati disponibili nelle origini dati. Per ulteriori informazioni, consulta:
 
 * [Integrazione dei dati di AEM Forms](../../forms/using/data-integration.md)
 * [Configurare origini dati](../../forms/using/configure-data-sources.md)

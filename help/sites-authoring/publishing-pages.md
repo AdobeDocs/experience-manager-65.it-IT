@@ -12,7 +12,7 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1662'
-ht-degree: 59%
+ht-degree: 72%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 
 >[!NOTE]
 >
->Se non disponi dei privilegi necessari per pubblicare una pagina specifica:
+>Se non disponi dei privilegi necessari per la pubblicazione di una pagina specifica:
 >
 >* Verrà attivato un flusso di lavoro per notificare alla persona appropriata la richiesta di pubblicazione.
 >* Questo [il flusso di lavoro potrebbe essere stato personalizzato](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) dal tuo team di sviluppo.
@@ -110,7 +110,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. Quando la pagina viene pubblicata, viene visualizzato un avviso che conferma la pubblicazione.
+1. Quando la pagina viene pubblicata, viene visualizzato un avviso che ne conferma la pubblicazione.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Il primo passo, **Opzioni**, consente di:
 
    * Scegliere di pubblicare le pagine selezionate o annullarne la pubblicazione.
-   * Scegli di eseguire l’azione ora o in una data successiva.
+   * Scegli se eseguire l’azione ora o in un secondo momento.
 
    Con Pubblica più tardi viene avviato un flusso di lavoro per attivare le pagine selezionate alla data e all’ora specificate. Al contrario, l’annullamento della pubblicazione in un secondo momento avvia un flusso di lavoro per annullare la pubblicazione della pagina o delle pagine selezionate in un momento specifico.
 
@@ -159,7 +159,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    Facendo clic su **Includi elementi figlio** viene visualizzata una finestra di dialogo che consente di includere:
 
-   * Solo gli elementi figli di primo livello.
+   * Solo gli elementi secondari di primo livello.
    * Solo pagine modificate.
    * Solo pagine già pubblicate.
 
@@ -193,7 +193,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    Le risorse sono raggruppate in base ai flussi di lavoro attivati e a ciascuna opzione specificata per:
 
-   * Definisci il titolo del flusso di lavoro.
+   * Definire il titolo del flusso di lavoro.
    * Mantieni il pacchetto del flusso di lavoro, a condizione che il flusso di lavoro abbia [supporto di più risorse](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definire un titolo del pacchetto del flusso di lavoro se è stata selezionata l’opzione per mantenere il pacchetto del flusso di lavoro.
 
@@ -235,19 +235,19 @@ Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazion
 
 ## Pubblicazione e annullamento della pubblicazione di una struttura {#publishing-and-unpublishing-a-tree}
 
-Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, tutte memorizzate nella stessa pagina principale, può essere più semplice pubblicare l’intera struttura in un’unica azione.
+Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, tutte memorizzate nella stessa pagina principale, può risultare più semplice pubblicare l’intera struttura in un’unica azione.
 
-È possibile utilizzare [Gestisci pubblicazione](/help/sites-authoring/publishing-pages.md#manage-publication) nella console sites.
+È possibile utilizzare [Gestisci pubblicazione](/help/sites-authoring/publishing-pages.md#manage-publication) nella console Sites.
 
-1. Nella console Sites, seleziona la pagina root della struttura da pubblicare o di cui vuoi annullare la pubblicazione e fai clic su **Gestisci pubblicazione**.
-1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Scegli se pubblicare o annullare la pubblicazione, quando deve avvenire e seleziona **Successivo** per continuare.
-1. In **Ambito** , seleziona la pagina root e fai clic su **Includi elementi figlio**.
+1. Nella console Sites, seleziona la pagina principale della struttura da pubblicare o di cui vuoi annullare la pubblicazione e fai clic su **Gestisci pubblicazione**.
+1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Scegli se e quando pubblicare o annullare la pubblicazione e seleziona **Avanti** per continuare.
+1. Nel passaggio **Ambito**, seleziona la pagina principale e fai clic su **Includi elementi secondari**.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
 1. In **Includi elementi figlio** deseleziona le opzioni seguenti:
 
-   * Solo gli elementi figli di primo livello
+   * Solo gli elementi secondari di primo livello
    * Solo pagine già pubblicate
 
    Queste opzioni sono selezionate per impostazione predefinita, pertanto è necessario ricordarsi di deselezionarle. Clic **Aggiungi** per confermare e aggiungere il contenuto alla pubblicazione o all’annullamento della pubblicazione.

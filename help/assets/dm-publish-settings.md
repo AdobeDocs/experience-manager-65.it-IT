@@ -21,7 +21,7 @@ ht-degree: 3%
 La configurazione di Dynamic Medie Publish Setup è disponibile solo se:
 
 * Dynamic Medie è in esecuzione in modalità Scene7. Consulta [Abilita Dynamic Medie in modalità Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Hai un *esistente* **[!UICONTROL Configurazione Dynamic Medie]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 o versioni successive. Consulta [Creare una configurazione Dynamic Medie in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Hai un *esistente* **[!UICONTROL Configurazione Dynamic Medie]** (in **[!UICONTROL Cloud Service]**) in Adobe Experience Manager 6.5.11 o versione successiva. Consulta [Creare una configurazione Dynamic Medie in Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Sei un amministratore di Experience Manager con privilegi di amministratore.
 
 Dynamic Medie Publish Setup è destinato all&#39;utilizzo da parte di sviluppatori e programmatori esperti di siti Web. Adobe Dynamic Medie consiglia agli utenti che modificano queste impostazioni di pubblicazione di avere familiarità con Adobe Dynamic Medie, gli standard e le convenzioni del protocollo HTTP e la tecnologia di imaging di base.
@@ -32,7 +32,7 @@ Vedi anche [Facoltativo - Impostazione e configurazione di Dynamic Medie - Impos
 
 >[!NOTE]
 >
->Eseguire l’aggiornamento da Dynamic Media Classic a Dynamic Medie su Adobe Experience Manager? Il [Impostazioni generali](/help/assets/dm-general-settings.md) Le pagine Configurazione pubblicazione e Configurazione della pagina in Dynamic Medie sono precompilate con i valori presi dal tuo account Dynamic Media Classic. Le eccezioni sono tutti i valori elencati in **[!UICONTROL Opzioni di caricamento predefinite]** nella pagina Impostazioni generali. Questi valori sono già in Experience Manager. Di conseguenza, qualsiasi modifica apportata in **[!UICONTROL Opzioni di caricamento predefinite]**, in una qualsiasi delle cinque schede, tramite l’interfaccia utente di Experience Manager, si riflette in Dynamic Medie, non in Dynamic Media Classic. Tutte le altre impostazioni e i valori in [Impostazioni generali](/help/assets/dm-general-settings.md) e la pagina Publish Setup (Impostazione pubblicazione) sono gestite tra Dynamic Media Classic e Dynamic Medie in Experience Manager.
+>Eseguire l&#39;aggiornamento da Dynamic Media Classic a Dynamic Medie su Adobe Experience Manager? Il [Impostazioni generali](/help/assets/dm-general-settings.md) Le pagine Configurazione pubblicazione e Configurazione della pagina in Dynamic Medie sono precompilate con i valori presi dal tuo account Dynamic Media Classic. Le eccezioni sono tutti i valori elencati in **[!UICONTROL Opzioni di caricamento predefinite]** nella pagina Impostazioni generali. Questi valori sono già in Experience Manager. Di conseguenza, qualsiasi modifica apportata in **[!UICONTROL Opzioni di caricamento predefinite]**, in una qualsiasi delle cinque schede, tramite l’interfaccia utente di Experience Manager, si riflette in Dynamic Medie, non in Dynamic Media Classic. Tutte le altre impostazioni e i valori in [Impostazioni generali](/help/assets/dm-general-settings.md) e la pagina Publish Setup (Impostazione pubblicazione) sono gestite tra Dynamic Media Classic e Dynamic Medie in Experience Manager.
 
 **Per configurare il server immagini dell&#39;installazione di Dynamic Medie Publish:**
 

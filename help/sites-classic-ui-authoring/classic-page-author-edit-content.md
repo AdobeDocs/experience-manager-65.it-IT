@@ -12,15 +12,15 @@ exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 12%
+ht-degree: 17%
 
 ---
 
 # Modifica del contenuto di una pagina{#editing-page-content}
 
-Una volta creata la pagina (nuova o come parte di un lancio o di una Live Copy), puoi modificare il contenuto per apportare gli aggiornamenti necessari.
+Una volta creata la pagina (nuova o come parte di un lancio o una live copy) è possibile aggiornarla modificandone i contenuti.
 
-Il contenuto viene aggiunto tramite [componenti](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (in base al tipo di contenuto) che possono essere trascinati sulla pagina. che possono quindi essere modificati, spostati o eliminati.
+Per aggiungere i contenuti si trascinano sulla pagina specifici [componenti](/help/sites-classic-ui-authoring/classic-page-author-default-components.md), in base al tipo di contenuto, che possono quindi essere modificati, spostati o eliminati.
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
    Nella posizione richiesta verrà creato un componente appropriato per il tipo di risorsa, che conterrà la risorsa selezionata.
 
-1. [Modifica](#editmovecopypastedelete) il componente, se necessario.
+1. Se necessario, [Modifica](#editmovecopypastedelete) il componente.
 
 ## Modifica di un componente (contenuto e proprietà) {#editing-a-component-content-and-properties}
 
@@ -203,7 +203,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 [Annotazioni](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) consenti ad altri autori di fornire feedback sui contenuti. Questo viene spesso utilizzato a scopo di revisione e convalida.
 
-## Anteprima delle pagine   {#previewing-pages}
+## Anteprima delle pagine {#previewing-pages}
 
 Il bordo inferiore della barra laterale contiene due icone importanti per l&#39;anteprima delle pagine:
 
@@ -287,11 +287,11 @@ Il comportamento dei comandi Annulla e Ripristina è simile a quello di altri pr
 >* utilizza anche [Scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) per annullare e ripetere.
 >
 
-Potete utilizzare le opzioni Annulla (Undo) e Ripristina (Redo) per i seguenti tipi di modifiche di pagina:
+I comandi Annulla e Ripristina possono essere utilizzati solo per i tipi di modifiche della pagina seguenti:
 
 * Aggiunta, modifica, rimozione e spostamento di paragrafi
-* Modifica diretta del contenuto dei paragrafi
-* Copiare, tagliare e incollare elementi in una pagina
+* Modifica locale del contenuto dei paragrafi
+* Operazioni Copia, Taglia e Incolla per elementi all’interno di una pagina
 * Copiare, tagliare e incollare elementi su più pagine
 * Aggiunta, rimozione e modifica di file e immagini
 * Aggiunta, rimozione e modifica di annotazioni e sketch

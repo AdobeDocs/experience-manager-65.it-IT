@@ -7,7 +7,7 @@ exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
 source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 29%
+ht-degree: 30%
 
 ---
 
@@ -50,7 +50,7 @@ Utilizza questa guida AEM 6.5 per creare, gestire, pubblicare e aggiornare modul
 
 * [Tutorial su AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)
 * [Guida utente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
-* [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
+* [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
 * [Guida utente dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
 * [Preparazione al RGPD](/help/managing/data-protection-and-privacy.md)

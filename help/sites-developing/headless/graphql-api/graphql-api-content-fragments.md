@@ -6,7 +6,7 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 79fa58e63596301e1669903ce10dd8b2ba7d0a1b
 workflow-type: tm+mt
 source-wordcount: '4774'
-ht-degree: 54%
+ht-degree: 56%
 
 ---
 
@@ -207,7 +207,7 @@ Ad esempio, se:
 
 1. Installi un pacchetto contenente `Content-Fragment-Model-1` e `Content-Fragment-Model-2`:
 
-   1. Tipi di GraphQL per `Model-1` e `Model-2` vengono generate.
+   1. sono generati tipi di GraphQL per `Model-1` e `Model-2`.
 
 1. Poi modifica `Content-Fragment-Model-2`:
 
@@ -383,7 +383,7 @@ Vedi [Query di esempio: tutte le città con una variante denominata](/help/sites
 
 >[!NOTE]
 >
->Se la variante specificata non esiste per un frammento di contenuto, i dati originali (noti anche come variante principale) vengono restituiti come impostazione predefinita (fallback).
+>Se per un frammento di contenuto non esiste la variante determinata, i dati originali (noti anche come variante primaria) vengono restituiti come impostazione predefinita (fallback).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -391,7 +391,7 @@ Vedi [Query di esempio: tutte le città con una variante denominata](/help/sites
 
 ## Variabili GraphQL {#graphql-variables}
 
-GraphQL consente di inserire variabili nella query. Per ulteriori informazioni, consulta [Documentazione di GraphQL per variabili](https://graphql.org/learn/queries/#variables).
+GraphQL consente di inserire variabili nella query. Per ulteriori informazioni, consulta la [documentazione di GraphQL per variabili](https://graphql.org/learn/queries/#variables).
 
 Ad esempio, per ottenere tutti i frammenti di contenuto di tipo `Article` che hanno una variante specifica, puoi specificare la variabile `variation` in GraphiQL.
 
@@ -855,7 +855,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
         >[!NOTE]
         >
-        >Se la variante specificata non esiste per un frammento di contenuto, la variante principale viene restituita come impostazione predefinita (fallback).
+        >Se per un frammento di contenuto non esiste la variante determinata, la variante principale viene restituita come impostazione predefinita (fallback).
 
         >[!CAUTION]
         >Il campo generato dal sistema `_variation` non può essere utilizzato insieme al filtro `includeVariations`.
@@ -1006,4 +1006,4 @@ In futuro, l’AEM prevede di investire nell’API GraphQL dell’AEM.*&quot;
 
 ## Tutorial: guida introduttiva ad AEM headless e GraphQL {#tutorial}
 
-Cerchi un pratico tutorial? Estrai [Guida introduttiva di AEM Headless e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) tutorial end-to-end che illustra come creare ed esporre contenuti utilizzando le API GraphQL dell’AEM e utilizzati da un’app esterna, in uno scenario CMS headless.
+Cerchi un pratico tutorial? Dai un’occhiata al tutorial [Guida introduttiva di AEM headless e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), che illustra come creare ed esporre contenuti, utilizzati da un’app esterna, mediante le API GraphQL di AEM in uno scenario CMS headless.

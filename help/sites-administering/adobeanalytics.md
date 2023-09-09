@@ -14,11 +14,11 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
-# Integrazione con Adobe Analytics {#integrating-with-adobe-analytics}
+# Integrazione con Adobe Analytics{#integrating-with-adobe-analytics}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |

@@ -7,7 +7,7 @@ exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '2328'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -151,8 +151,8 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 * **Rendering come** 
 Consente varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore visualizzerà una singola istanza del campo o se potrà creare più istanze.
 
-* **Etichetta campo**
-Inserimento di un **Etichetta campo** genererà automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente se necessario.
+* **Etichetta campo** 
+Se si inserisce un’**Etichetta campo** verrà generato automaticamente un **Nome proprietà** che, se necessario, potrà essere aggiornato manualmente.
 
 * **Convalida**
 La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.

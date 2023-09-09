@@ -58,7 +58,7 @@ I dati di esempio inseriti nello strumento mostrano quanto sia importante esegui
 
 Per i datastore di grandi dimensioni, puoi implementare un datastore condiviso sia tramite un datastore di file condiviso su un’unità collegata in rete sia tramite un datastore Amazon S3. In questo caso, non è necessario che le singole istanze conservino una copia dei file binari. Inoltre, un datastore condiviso facilita la replica senza binari e contribuisce a ridurre la larghezza di banda utilizzata per replicare le risorse negli ambienti di pubblicazione.
 
-#### Casi d’uso {#use-cases}
+#### Casi di utilizzo {#use-cases}
 
 L’archivio dati può essere condiviso tra un’istanza di authoring primaria e in standby per ridurre al minimo il tempo necessario per aggiornare l’istanza in standby con le modifiche apportate nell’istanza principale. Puoi anche condividere l’archivio dati tra le istanze di authoring e pubblicazione per ridurre al minimo il traffico durante la replica.
 

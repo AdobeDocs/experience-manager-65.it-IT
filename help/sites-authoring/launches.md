@@ -12,27 +12,27 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '843'
-ht-degree: 33%
+ht-degree: 77%
 
 ---
 
 # Lanci{#launches}
 
-I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro.
+I lanci consentono di creare in modo efficiente contenuti per una versione futura.
 
-Viene creato un lancio per consentire di apportare modifiche pronte per la pubblicazione futura (mantenendo le pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, le promuovi di nuovo all’origine, quindi attiva le pagine sorgente (livello superiore). La promozione duplica il contenuto del lancio nelle pagine di origine e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
+Viene creato un lancio per consentire di apportare modifiche pronte per la pubblicazione futura (mantenendo le pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, promuovile di nuovo alla sorgente, quindi attiva le pagine sorgente (livello superiore). La promozione duplica il contenuto del lancio nelle pagine sorgente e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
 
-Ad esempio, le pagine di prodotti stagionali del tuo negozio online vengono aggiornate trimestralmente in modo che i prodotti in questione siano in linea con la stagione corrente. Per prepararti al prossimo aggiornamento trimestrale, puoi creare un lancio delle pagine web appropriate. Nel corso del trimestre, le seguenti modifiche vengono accumulate nella copia di lancio:
+Ad esempio, le pagine di prodotti stagionali del tuo negozio online vengono aggiornate trimestralmente in modo che i prodotti in questione siano in linea con la stagione corrente. Per prepararti al prossimo aggiornamento trimestrale, puoi creare un lancio delle pagine web appropriate. Nel corso del trimestre, nella copia del lancio vengono accumulate le seguenti modifiche:
 
 * Modifiche apportate alle pagine sorgenti che si verificano in seguito alle consuete attività di manutenzione. Queste modifiche vengono duplicate automaticamente nelle pagine del lancio.
-* Modifiche che vengono eseguite direttamente sulle pagine di lancio in preparazione al trimestre successivo.
+* Modifiche che vengono eseguite direttamente sulle pagine di lancio in preparazione del prossimo trimestre.
 
 Nel trimestre successivo, promuovi le pagine di lancio in modo da poter pubblicare le pagine sorgenti (mantenendo i contenuti aggiornati). Puoi promuovere tutte le pagine o solo quelle che hai modificato.
 
 I lanci possono anche essere:
 
-* Creato per più rami principali. Nonostante sia possibile creare il lancio per l&#39;intero sito (e apportare le modifiche desiderate), questa operazione potrebbe risultare poco pratica perché l&#39;intero sito dovrà essere copiato. Quando sono coinvolte centinaia o anche migliaia di pagine, i requisiti di sistema e le prestazioni sono influenzati sia dall’azione di copia che, in un secondo momento, dai confronti richiesti per le attività di promozione.
-* Nidificato (un lancio all’interno di un lancio) per consentirti di creare un lancio da un lancio esistente in modo che gli autori possano sfruttare le modifiche già apportate, anziché dover apportare le stesse modifiche più volte per ogni lancio.
+* creati per più rami principali. Nonostante sia possibile creare il lancio per l&#39;intero sito (e apportare le modifiche desiderate), questa operazione potrebbe risultare poco pratica perché l&#39;intero sito dovrà essere copiato. Quando sono coinvolte centinaia o persino migliaia di pagine, i requisiti e le prestazioni di sistema sono influenzati sia dall’azione di copia che, in un secondo momento, dai confronti richiesti per le attività di promozione.
+* Nidificato (un lancio all’interno di un lancio) per consentirti di creare un lancio da uno esistente, in modo che gli autori possano sfruttare le modifiche già apportate, anziché dover apportare le stesse modifiche più volte per ogni lancio.
 
 Questa sezione descrive come creare, modificare e promuovere (e se necessario [eliminare](/help/sites-authoring/launches-creating.md#deleting-a-launch)) pagine di lancio dall&#39;interno della console Sites o [la console Launches](#the-launches-console):
 
@@ -64,7 +64,7 @@ I lanci consentono di:
 
    * Manualmente:
 
-      * Promuovi il contenuto del lancio in **Target** (pagine sorgente) quando è pronto per la pubblicazione.
+      * Promuovi il contenuto del lancio fino al **Target** (pagine sorgente) quando è pronto per la pubblicazione.
       * Pubblica il contenuto dalle pagine sorgente (dopo la promozione).
       * Promuovi tutte le pagine o solo le pagine modificate.
 
@@ -72,7 +72,7 @@ I lanci consentono di:
 
       * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
 
-      * Il **Produzione pronta** flag: può essere impostato solo durante la modifica di un lancio.
+      * Il flag **Pronto per la produzione** può essere impostato solo durante la modifica di un lancio.
       * Se il **Produzione pronta** è impostato, il lancio verrà promosso automaticamente alle pagine di produzione nella **Launch**(**Live**) **data**. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
         Se la data non è stata impostata, il flag non ha alcun effetto.
 
@@ -83,10 +83,10 @@ I lanci consentono di:
 
   ![Panoramica degli aggiornamenti](assets/chlimage_1-112.png)
 
-* [Creare un lancio nidificato](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - un lancio all’interno di un lancio:
+* [Creare un lancio nidificato](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) ovvero un lancio all’interno di un lancio:
 
    * L’origine è un lancio esistente.
-   * È possibile [promuovere un lancio nidificato](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) a qualsiasi destinazione; può trattarsi di un lancio principale o delle pagine sorgente di livello superiore (Produzione).
+   * È possibile [promuovere un lancio nidificato](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) per qualsiasi target; può trattarsi di un lancio principale o delle pagine sorgente di livello superiore (Produzione).
 
   ![Panoramica del lancio nidificato](assets/chlimage_1-113.png)
 
@@ -107,7 +107,7 @@ I lanci consentono di:
 >Quando la pagina viene promossa, qualsiasi modifica al contenuto viene riportata, ma le posizioni dei componenti non cambiano.
 
 
-### Console Lanci {#the-launches-console}
+### La console Lanci {#the-launches-console}
 
 La console Lanci fornisce una panoramica dei lanci e consente di eseguire azioni su quelli elencati. Puoi accedere alla console da:
 
@@ -115,10 +115,10 @@ La console Lanci fornisce una panoramica dei lanci e consente di eseguire azioni
 
 * Oppure direttamente con [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
-## Lanci in Riferimenti (console Sites) {#launches-in-references-sites-console}
+## Lanci nei Riferimenti (console Sites) {#launches-in-references-sites-console}
 
-1. In **Sites** , passa all&#39;origine dei lanci.
-1. Apri **Riferimenti** e seleziona la pagina sorgente.
+1. Nella console **Sites**, passa all’orginie dei lanci.
+1. Apri la barra **Riferimenti** e seleziona la pagina sorgente.
 1. Seleziona **Lanci**, verranno elencati i lanci esistenti:
 
    ![Scheda Riferimento - Lanci](assets/screen-shot_2019-03-05at121901-1.png)

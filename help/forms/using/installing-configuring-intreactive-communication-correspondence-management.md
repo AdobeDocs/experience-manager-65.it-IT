@@ -1,7 +1,7 @@
 ---
 title: Installare e configurare le comunicazioni interattive
 seo-title: Install and configure Interactive Communications
-description: Installa e configura AEM Forms comunicazioni interattive per creare corrispondenze commerciali, documenti, dichiarazioni, avvisi di benefit, marketing mail, fatture e kit di benvenuto.
+description: Installa e configura AEM Forms Interactive Communications per creare corrispondenze aziendali, documenti, dichiarazioni, avvisi sui vantaggi, marketing mail, fatture e kit di benvenuto.
 seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
@@ -24,7 +24,7 @@ Il modulo AEM ha la capacità di centralizzare la creazione, l’assemblaggio, l
 
 È possibile utilizzare la funzionalità di comunicazione interattiva per produrre comunicazioni in più formati. Ad esempio, web e PDF. È possibile integrare la comunicazione interattiva con il flusso di lavoro AEM per elaborare e distribuire la comunicazione assemblata ai clienti sul canale desiderato. Ad esempio, inviando una comunicazione all’utente finale tramite e-mail.
 
-Se stai effettuando l’aggiornamento da una versione precedente e hai già investito nella gestione della corrispondenza, puoi installare [pacchetto di compatibilità](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) per continuare a utilizzare la gestione della corrispondenza. Per informazioni sulle differenze tra la comunicazione interattiva e la gestione della corrispondenza, consulta [ Panoramica ](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management) sulla comunicazione interattiva.
+Se stai effettuando l’aggiornamento da una versione precedente e hai già investito nella gestione della corrispondenza, puoi installare [pacchetto di compatibilità](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) per continuare a utilizzare la gestione della corrispondenza. Per informazioni sulle differenze tra comunicazione interattiva e gestione della corrispondenza, vedere [Cenni preliminari](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management) sulla comunicazione interattiva.
 
 AEM Forms è una potente piattaforma di classe enterprise. La comunicazione interattiva è solo una delle funzionalità di AEM Forms. Per l’elenco completo delle funzionalità, consulta [Introduzione ad AEM Forms](../../forms/using/introduction-aem-forms.md).
 
@@ -92,16 +92,16 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
 1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
-1. **[!UICONTROL Nella sezione filtri]** :
-   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa della **[!UICONTROL soluzione]** .
-   2. Seleziona la versione e il tipo per il pacchetto. È inoltre possibile utilizzare l&#39; **[!UICONTROL opzione Search Downloads]** per filtrare i risultati.
-1. Tocca il nome del pacchetto applicabile al sistema operativo, seleziona **[!UICONTROL accetta termini]** EULA e tocca **[!UICONTROL Scarica]** .
+1. **[!UICONTROL Nella sezione Filtri]**:
+   1. Seleziona **[!UICONTROL Forms]** dall&#39;elenco a **[!UICONTROL discesa Soluzione]** .
+   2. Seleziona la versione e il tipo per il pacchetto. È inoltre possibile utilizzare l&#39;opzione **[!UICONTROL Search Download]** per filtrare i risultati.
+1. Toccare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini]** EULA, quindi toccare **[!UICONTROL Scarica]**.
 1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
-1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]** .
+1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
-   Puoi anche scaricare il pacchetto tramite le collegare dirette elencate nell&#39;articolo sulle [ versioni ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) di AEM Forms.
+   Puoi anche scaricare il pacchetto tramite la collegare diretta elencata nell&#39;articolo sulle [versioni](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) AEM Forms.
 
-1. Dopo aver installato il pacchetto, viene richiesto di riavviare il istanza AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendi che i messaggi ServiceEvent registrati e ServiceEvent non registrati vengano visualizzati nel [ AEM-Installation-Directory ] /CRX-QuickStart/logs/Error.log file e il registro sia stabile.
+1. Dopo aver installato il pacchetto, viene chiesto di riavviare il AEM istanza. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i [messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED smettano di apparire nel file AEM-Installation-Directory]/crx-quickstart/logs/error.log e che il registro sia stabile.
 1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
 
 ## Configurazioni post-installazione {#post-installation-configurations}
@@ -112,7 +112,7 @@ AEM Forms dispone di alcune configurazioni obbligatorie e opzionali. Le configur
 
 #### Configurare le librerie RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Esegui i seguenti passaggi su tutte le Autore e Publish istanze per avviare delega del librerie:
+Esegui i seguenti passaggi su tutte le istanze Autore e Publish per avviare il delegato del librerie:
 
 1. Arresta l’istanza AEM sottostante.
 1. Apri [Directory di installazione AEM]File \crx-quickstart\conf\sling.properties per la modifica.

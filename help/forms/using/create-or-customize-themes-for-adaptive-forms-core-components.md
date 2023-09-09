@@ -11,7 +11,7 @@ role: Admin, Developer
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1973'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -20,19 +20,19 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
 
 **Si applica a:** ❎ dei componenti core del modulo adattivo ✅ [Componenti di base per moduli adattivi](/help/forms/using/themes.md).
 
-In AEM Forms 6.5, un tema è una libreria client AEM che puoi utilizzare per definire gli stili (look and feel) di un modulo adattivo. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando applicate un tema, lo stile specificato viene riflesso sui componenti corrispondenti. Un tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo e può essere riutilizzato in più Forms adattivi.
+In AEM Forms 6.5, un tema è una libreria client AEM che puoi utilizzare per definire gli stili (look and feel) di un modulo adattivo. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Un tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo e può essere riutilizzato in più Forms adattivi.
 
 ## Temi disponibili {#available-theme}
 
 L’ambiente AEM 6.5 fornisce i temi elencati di seguito per i Forms adattivi basati su Componenti core:
 
-* [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -54,7 +54,7 @@ Un tema è un pacchetto che include il file CSS, i file JavaScript e le risorse 
 
 AEM Forms 6.5 fornisce i temi elencati di seguito per i Componenti core basati su Adaptive Forms.
 
-* [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -109,7 +109,7 @@ Gli esempi forniti nel documento sono basati su **Area di lavoro** ma è possibi
 
 Per clonare un tema per Forms adattivo basato su Componenti core, scegli uno dei seguenti temi:
 
-* [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -285,7 +285,7 @@ Dopo l’installazione del pacchetto, il tema è disponibile per la selezione.
 I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
 1. Accedi all’istanza di authoring AEM locale.
-1. Immetti le credenziali nella pagina di accesso di Experience Manager. Tocca **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Tocca **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
 1. Clic **Crea** > **Forms adattivo**.
 1. Seleziona un modello di Componenti core Forms adattivi e fai clic su **Successivo**. Il **Aggiungi proprietà** viene visualizzato
 1. Specifica la **Nome** modulo adattivo.
@@ -304,7 +304,7 @@ I temi per moduli adattivi vengono utilizzati come parte di un modello di modulo
 
 Per rimuovere i temi inutilizzati o indesiderati:
 
-1. Accedi all’istanza di authoring.
+1. Accedi all’istanza di authoring .
 1. Apri `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
 1. Accedi a `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
 1. Elimina la cartella dei temi e salva le modifiche.

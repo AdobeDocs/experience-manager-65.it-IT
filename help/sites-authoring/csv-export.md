@@ -1,7 +1,7 @@
 ---
 title: Esportazione in formato CSV
 seo-title: Export to CSV
-description: Esportare le informazioni sulle pagine in un file CSV nel sistema locale
+description: Esportare le informazioni relative alle pagine in un file CSV nel sistema locale
 seo-description: Export information about your pages to a CSV file on your local system
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
 contentOwner: Chris Bohnert
@@ -14,7 +14,7 @@ exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 71%
+ht-degree: 81%
 
 ---
 
@@ -47,8 +47,8 @@ Il **Crea esportazione CSV** procedura guidata:
       * Tempo sulla pagina
 * Profondità
    * Percorso principale
-   * Solo elementi figlio diretti
-   * Livelli aggiuntivi di elementi figlio
+   * Solo elementi secondari diretti
+   * Livelli aggiuntivi di elementi secondari
    * Livelli
 
 Il file `export.csv` risultante può essere aperto in Excel o in un’altra applicazione compatibile.

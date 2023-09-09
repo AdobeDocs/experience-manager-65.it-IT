@@ -709,7 +709,7 @@ Puoi anche aggiungere mappe immagine utilizzando l’editor di immagini. Per ult
 >
 >Per modificare un file TXT, impostare **Day CQ Link Externalizer** da Configuration Manager.
 
-## Timeline  {#timeline}
+## Timeline {#timeline}
 
 La timeline consente di visualizzare vari eventi per un elemento selezionato, ad esempio flussi di lavoro attivi per una risorsa, commenti/annotazioni, registri attività e versioni.
 

@@ -7,7 +7,7 @@ exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
 source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -44,8 +44,8 @@ Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambien
 
 ## Passaggi per configurare Salesforce con il flusso delle credenziali del client {#steps-to-create-aem-datasource-configuration}
 
-1. Accedi all’istanza di authoring.
-1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Origini dati]**.
+1. Accedi all’istanza di authoring .
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Origini dati]**.
 1. Seleziona la cartella di configurazione.
 1. Clic **[!UICONTROL Crea]** e **[!UICONTROL Crea configurazione origine dati]** viene visualizzato.
 1. Specifica la **[!UICONTROL Titolo]** e seleziona la **[!UICONTROL Tipo di servizio]** as **[!UICONTROL Servizio RESTful]**.
