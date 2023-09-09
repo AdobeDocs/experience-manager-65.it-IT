@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
 workflow-type: tm+mt
-source-wordcount: '3454'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +81,7 @@ Il rendering del componente verrà eseguito con [HTML](https://www.w3schools.com
 
 ### Utilizzo di HTML Template Language {#using-the-html-template-language}
 
-Il [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it), introdotto con AEM 6.0, sostituisce JSP (JavaServer Pages) come sistema di modelli lato server preferito e consigliato per HTML. Per gli sviluppatori web che devono creare solidi siti web aziendali, HTL consente di ottenere una maggiore sicurezza ed efficienza dello sviluppo.
+Il [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it), introdotto con AEM 6.0, sostituisce JSP (JavaServer Pages) come sistema di modelli lato server preferito e consigliato per HTML. Per gli sviluppatori web che devono creare solidi siti web aziendali, HTL consente di ottenere una maggiore sicurezza ed efficienza dello sviluppo.
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ Dopo aver creato il tipo di risorsa, puoi creare un’istanza del campo aggiunge
 
 Se desideri definire lo stile e il comportamento del componente, puoi creare una [libreria client](/help/sites-developing/clientlibs.md) che definisce i file CSS/LESS e JS personalizzati.
 
-Per caricare la libreria client solo per la finestra di dialogo del componente, ovvero non per un altro componente, è necessario impostare la proprietà `extraClientlibs`** **della finestra di dialogo al nome della categoria della libreria client appena creata. Questa opzione è consigliata se la libreria client è molto grande e/o il campo è specifico per tale finestra di dialogo e non sarà necessario in altre finestre di dialogo.
+Per caricare la libreria client solo per la finestra di dialogo del componente, ovvero non per un altro componente, è necessario impostare la proprietà `extraClientlibs` della finestra di dialogo al nome della categoria della libreria client appena creata. Questa opzione è consigliata se la libreria client è molto grande e/o il campo è specifico per tale finestra di dialogo e non sarà necessario in altre finestre di dialogo.
 
 Per caricare la libreria client per tutte le finestre di dialogo, imposta la proprietà category della libreria client su `cq.authoring.dialog`. Questo è il nome della categoria della libreria client che viene inclusa per impostazione predefinita durante il rendering di tutte le finestre di dialogo. Puoi eseguire questa operazione se la libreria client è piccola e/o il campo è generico e potrebbe essere riutilizzato in altre finestre di dialogo.
 
@@ -439,7 +439,7 @@ Il [Estensione parentesi AEM](/help/sites-developing/aem-brackets.md) fornisce u
 L’estensione:
 
 * Semplifica la sincronizzazione (non è richiesto Maven o File Vault) per aumentare l’efficienza degli sviluppatori e aiuta gli sviluppatori front-end con conoscenze AEM limitate a partecipare ai progetti.
-* Fornisce alcuni [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) supporto, linguaggio di modelli progettato per semplificare lo sviluppo di componenti e aumentare la sicurezza.
+* Fornisce alcuni [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) supporto, linguaggio di modelli progettato per semplificare lo sviluppo di componenti e aumentare la sicurezza.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ Quando si migra un componente progettato per essere utilizzato con l’interfacc
 
 * HTL
 
-   * Uso di [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) non è obbligatorio, ma se il componente deve essere aggiornato, è il momento ideale per prendere in considerazione [migrazione da JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * Uso di [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) non è obbligatorio, ma se il componente deve essere aggiornato, è il momento ideale per prendere in considerazione [migrazione da JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Componenti
 
