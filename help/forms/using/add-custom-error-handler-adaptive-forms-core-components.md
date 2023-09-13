@@ -7,15 +7,20 @@ keywords: Aggiungi un gestore degli errori personalizzato, aggiungi un gestore d
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
+source-git-commit: 6d6e74c61b2ecb13e7cc352d5278c40d2677d44d
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 1%
+source-wordcount: '2331'
+ht-degree: 2%
 
 ---
 
 
 # Gestori di errori in Forms adattivo (componenti core) {#error-handlers-in-adaptive-form}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-custom-error-handler-adaptive-forms-core-components.html) |
+| AEM 6.5 | Questo articolo |
 
 AEM Forms fornisce gestori predefiniti di successo e di errori per l’invio di moduli. Fornisce inoltre funzionalità per personalizzare le funzioni del gestore degli errori. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un servizio esterno viene richiamato utilizzando le API, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull’evento di successo o errore per l’invio. Le informazioni vengono passate come parametri al gestore pertinente per eseguire la funzione. Un gestore degli errori consente di gestire e visualizzare gli errori o i problemi di convalida rilevati.
 
@@ -310,3 +315,9 @@ Come risultato di questa regola, i valori immessi per **ID animale domestico** v
 Apri la console del browser e controlla la risposta e l’intestazione, ricevute dall’endpoint del servizio REST, per il messaggio di errore di convalida.
 
 La funzione del gestore degli errori personalizzato è responsabile dell’esecuzione di azioni aggiuntive, ad esempio la visualizzazione di una finestra di dialogo modale o l’invio di un evento di analisi, in base alla risposta all’errore. Una funzione di gestione degli errori personalizzata offre la flessibilità necessaria per adattare la gestione degli errori ai requisiti utente specifici.
+
+## Consulta anche {#see-also}
+
+* [Creare un modulo adattivo basato su Componenti core autonomi](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Creare stili o temi per i moduli](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [Creare o aggiungere un modulo adattivo alla pagina AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
