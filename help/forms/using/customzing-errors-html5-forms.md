@@ -1,17 +1,13 @@
 ---
 title: Personalizzazione dei messaggi di errore per i moduli HTML5
-seo-title: Customizing error messages for HTML5 forms
 description: Scopri come personalizzare la visualizzazione dei messaggi di errore per i moduli HTML5, incluso come modificarne la posizione e l’aspetto.
-seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
-uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 2%
 
 Nei moduli di HTML5, i messaggi di errore e gli avvisi hanno una posizione e un aspetto fissi (carattere e colore), l’errore viene visualizzato solo per un campo selezionato e solo un errore.
 
-L’articolo descrive i passaggi necessari per personalizzare i messaggi di errore di HTML5 forms in,
+L’articolo descrive i passaggi per personalizzare i messaggi di errore di HTML5 Forms in modo da poter effettuare le seguenti operazioni:
 
 * modificare l&#39;aspetto e la posizione dei messaggi di errore. Puoi fare in modo che l’errore venga visualizzato nella parte superiore, inferiore e destra di qualsiasi campo.
 * visualizza messaggi di errore per più campi in un dato momento.
@@ -36,14 +32,14 @@ Dopo aver estratto il pacchetto, apri la cartella CustomErrorManager-1.0-SNAPSHO
 
 ### Personalizzazione della posizione dei messaggi di errore  {#customizing-the-position-of-error-messages-nbsp}
 
-Per personalizzare la posizione del messaggio di errore, aggiungere &lt;div> per ogni campo di errore e avviso, posizionare il tag &lt;div> a sinistra o a destra e applicare gli stili css al &lt;div> tag. Per i passaggi dettagliati, consulta la procedura indicata di seguito:
+Per personalizzare la posizione del messaggio di errore, aggiungere una &lt;div> per ogni campo di errore e avviso, posizionare il tag &lt;div> a sinistra o a destra e applicare gli stili css al &lt;div> tag. Per i passaggi dettagliati, consulta la procedura indicata di seguito:
 
 1. Accedi a `CustomErrorManager-1.0-SNAPSHOT`e aprire la `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` cartella.
 1. Apri `customErrorManager.js` file per la modifica. Il `markError` nel file accetta i seguenti parametri:
 
-   |  |  |
+   |   |  |
    |---|---|
-   | jqWidget | jqWidget è l&#39;handle per il widget. |
+   | jqWidget | jqWidget è l&#39;handle di un widget. |
    | msg | contiene il messaggio di errore |
    | tipo | indica se si tratta di un errore o di un avviso |
 
@@ -88,7 +84,7 @@ Utilizza il pacchetto allegato per visualizzare simultaneamente i messaggi di er
 
 1. Passa alla cartella etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css.
 
-1. Apri il file sample.css per la modifica. Il file css contiene 2 id- #customError, #customWarning. Puoi utilizzare questi ID per modificare varie proprietà come il colore, la dimensione del font, ecc.
+1. Apri il file sample.css per la modifica. Il file css contiene 2 id- #customError, #customWarning. Puoi utilizzare questi ID per modificare varie proprietà, come il colore e la dimensione del font.
 
    Utilizzare il codice seguente per modificare la dimensione e il colore del carattere dei messaggi di errore/avviso.
 
@@ -120,9 +116,9 @@ Utilizza il pacchetto allegato per visualizzare simultaneamente i messaggi di er
 
 ## Esegui il rendering del modulo con il nuovo profilo.  {#render-the-form-with-the-new-profile-nbsp}
 
-I moduli html5 utilizzano un profilo predefinito con caratteristiche predefinite: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
+I moduli html5 utilizzano un profilo predefinito per impostazione predefinita: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
-Per visualizzare un modulo con i messaggi di errore personalizzati, esegui il rendering del modulo con il profilo di errore: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
+Per visualizzare un modulo con i messaggi di errore personalizzati, esegui il rendering del modulo con il profilo di errore: `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
 >[!NOTE]
 >

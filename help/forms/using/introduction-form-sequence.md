@@ -1,20 +1,16 @@
 ---
 title: Introduzione alla sequenza di moduli a più passaggi
-seo-title: Introduction to multi-step form sequence
-description: Con AEM Forms puoi definire una sequenza di pannelli di moduli in cui gli utenti dovranno spostarsi e compilare un modulo adattivo.
-seo-description: With AEM Forms, you can define a sequence of form panel in which you want users to navigate and fill an adaptive form.
-uuid: db1aac25-fe69-4e43-88d1-4a15389b507f
+description: Con AEM Forms puoi definire una sequenza di pannelli dei moduli in cui gli utenti dovranno spostarsi e compilare un modulo adattivo.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 0f335ea0-504f-4cc0-b97b-c3fc715bcc2e
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 49%
+source-wordcount: '589'
+ht-degree: 30%
 
 ---
 
@@ -28,21 +24,21 @@ ht-degree: 49%
 | AEM 6.5 | Questo articolo |
 
 
-I moduli adattivi consentono agli autori di moduli di creare con grande facilità un’esperienza di acquisizione dati in più passaggi. Offre supporto integrato per la creazione di più pannelli e l’associazione di ciascun pannello a diversi pattern di navigazione. Gli autori dei moduli possono raggruppare i campi modulo in sezioni logiche e rappresentare un gruppo come pannello. La navigazione tra i pannelli viene controllata mediante il layout del pannello. Gli autori possono scegliere di disporre i pannelli in layout diversi, ad esempio posizionandoli in sequenza utilizzando il layout della procedura guidata o in modo ad hoc utilizzando il layout a schede. Per informazioni sui layout dei pannelli, consultate [Funzionalità di layout dei moduli adattivi](../../forms/using/layout-capabilities-adaptive-forms.md).
+I moduli adattivi consentono agli autori di moduli di creare un’esperienza di acquisizione dati in più passaggi con grande facilità. Offre supporto integrato per la creazione di più pannelli e l’associazione di ciascun pannello a diversi pattern di navigazione. Gli autori dei moduli possono raggruppare i campi modulo in sezioni logiche e rappresentare un gruppo come pannello. La navigazione tra i pannelli viene controllata mediante il layout del pannello. Gli autori possono scegliere di disporre i pannelli in layout diversi, ad esempio posizionandoli in sequenza utilizzando il layout della procedura guidata o in modo ad hoc utilizzando il layout a schede. Per informazioni sui layout dei pannelli, consultate [Funzionalità di layout dei moduli adattivi](../../forms/using/layout-capabilities-adaptive-forms.md).
 
-In una tipica esperienza di compilazione dei moduli, sono necessari più passaggi rispetto all’acquisizione dei dati. L’invio completo di un modulo può comprendere altri passaggi, ad esempio la firma digitale del modulo, la verifica delle informazioni inserite nel modulo, l’elaborazione dei pagamenti e così via. Si differenzia da caso a caso.
+In una tipica esperienza di compilazione dei moduli, sono necessari più passaggi rispetto alla semplice acquisizione dei dati. L’invio completo di un modulo può includere altri passaggi, come la firma digitale del modulo, la verifica delle informazioni inserite nel modulo e l’elaborazione dei pagamenti. Si differenzia da caso a caso.
 
-Se il caso d’uso richiede una serie di passaggi per l’acquisizione dei dati o esistono normative che richiedono determinati passaggi, AEM Forms fornisce un modo per applicare tale struttura comune nei moduli. L’implementazione premeditata della struttura del modulo definisce la sequenza di passaggi per un modulo. ![Esempio di sequenza di moduli a più passaggi](assets/formpipeline.png)
+Se il caso d’uso richiede una serie di passaggi per l’acquisizione dei dati o esistono normative che richiedono determinati passaggi, AEM Forms fornisce un modo per applicare tale struttura comune nei moduli. L&#39;implementazione premeditata di una struttura di modulo definisce la sequenza di passaggi di un modulo. ![Esempio di sequenza di moduli a più passaggi](assets/formpipeline.png)
 
 Esempio di sequenza di moduli a più passaggi
 
-Prendiamo un caso d’uso in cui devi creare una sequenza per i passaggi di compilazione, verifica, firma e conferma di un modulo. I passaggi per creare una sequenza di questo tipo sono i seguenti:
+Prendiamo un caso d’uso in cui devi creare una sequenza per i passaggi di compilazione, verifica, firma e conferma di un modulo. Per creare una sequenza di questo tipo, effettuare le seguenti operazioni:
 
-1. Definire un modello di modulo e aggiungergli il pannello richiesto. Tieni presente che dovrebbe essere presente un pannello per ogni passaggio della sequenza. Tuttavia, puoi includere pannelli secondari all’interno di un pannello.
+1. Definisci un modello di modulo e aggiungi il pannello richiesto. Dovrebbe essere disponibile un pannello per ogni passaggio della sequenza. Tuttavia, puoi includere pannelli secondari all’interno di un pannello.
 
-   In questo esempio, possiamo aggiungere i seguenti pannelli:
+   In questo esempio, è possibile aggiungere i pannelli seguenti:
 
-   * **Riempimento**: contiene campi dei moduli per l’acquisizione dei dati. In questo caso, puoi includere pannelli secondari nidificati per creare sezioni per diversi tipi di informazioni, ad esempio personali, familiari, finanziarie e così via.
+   * **Riempimento**: contiene campi dei moduli per l’acquisizione dei dati. In questo caso, puoi includere pannelli secondari nidificati per creare sezioni per diversi tipi di informazioni, ad esempio personali, familiari e finanziarie.
 
    * **Verifica**: contiene **Verifica** componente che può essere utilizzato in un modulo adattivo basato su XFA. Le informazioni acquisite nel pannello Riempimento vengono visualizzate in modalità di sola lettura per la verifica.
 
@@ -54,6 +50,6 @@ Prendiamo un caso d’uso in cui devi creare una sequenza per i passaggi di comp
    * **Conferma**: contiene il componente **Riepilogo** che visualizza un messaggio di conferma dell’invio del modulo dopo che un utente firma il modulo e raggiunge il passaggio Conferma (riepilogo) nella sequenza. Gli autori possono configurare il testo del componente Riepilogo con un messaggio di ringraziamento, un collegamento al PDF generato e così via.
 
 1. Seleziona il layout del pannello principale come **[!UICONTROL Procedura guidata]**.
-1. Completare i passaggi successivi per creare il modello di modulo. Per ulteriori informazioni, consulta [Creazione di un modello di modulo adattivo personalizzato](../../forms/using/custom-adaptive-forms-templates.md).
+1. Completare i passaggi rimanenti per creare il modello di modulo. Consulta [Creazione di un modello di modulo adattivo personalizzato](../../forms/using/custom-adaptive-forms-templates.md).
 
-Dopo aver definito la sequenza del modulo nel modello di modulo, è possibile utilizzarla per creare moduli che avranno la struttura di base definita come sequenza in posizione, anche se è sempre possibile personalizzare il modulo in base alle proprie esigenze.
+Dopo aver definito la sequenza di moduli nel modello di modulo, è possibile utilizzarla per creare moduli con la struttura di base definita come sequenza. È sempre possibile personalizzare il modulo in base alle proprie esigenze.

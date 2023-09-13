@@ -1,20 +1,16 @@
 ---
 title: Ottimizzazione delle prestazioni del server AEM Forms
-seo-title: Performance tuning of AEM Forms server
 description: Affinché AEM Forms possa funzionare in modo ottimale, puoi ottimizzare le impostazioni della cache e i parametri JVM. Inoltre, l’utilizzo di un server web può migliorare le prestazioni dell’implementazione di AEM Forms.
-seo-description: For AEM Forms to perform optimally, you can fine-tune the cache settings and JVM parameters. Also, using a web server can enhance the performance of AEM Forms deployment.
-uuid: bf23b62c-7559-4726-8f4e-cc8b1457e501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 1%
+source-wordcount: '897'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +20,7 @@ Questo articolo illustra strategie e best practice da implementare per ridurre i
 
 ## Impostazioni cache {#cache-settings}
 
-Puoi configurare e controllare la strategia di caching per AEM Forms utilizzando **Configurazioni Forms per dispositivi mobili** Componente nella console Configurazione Web AEM all&#39;indirizzo:
+Puoi configurare e controllare la strategia di caching per AEM Forms utilizzando **Configurazioni Forms per dispositivi mobili** nella console Configurazione Web AEM all&#39;indirizzo:
 
 * (AEM Forms su OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms su JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
@@ -45,7 +41,7 @@ Le impostazioni predefinite della cache per AEM Forms potrebbero non essere suff
 
 >[!NOTE]
 >
->Se utilizzi Dispatcher AEM per memorizzare in cache i moduli adattivi, questo memorizza in cache anche i moduli contenenti dati precompilati. Se tali moduli vengono forniti dalla cache di Dispatcher AEM, ciò può portare a fornire agli utenti dati precompilati o non aggiornati. Pertanto, utilizza il Dispatcher dell’AEM per memorizzare in cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, la cache di un dispatcher non annulla automaticamente la validità dei frammenti memorizzati in cache. Pertanto, non utilizzarlo per memorizzare in cache i frammenti di modulo. Per tali moduli e frammenti, utilizza [Cache dei moduli adattivi](../../forms/using/configure-adaptive-forms-cache.md).
+>Se utilizzi Dispatcher AEM per memorizzare in cache i moduli adattivi, questo memorizza in cache anche i moduli contenenti dati precompilati. Se tali moduli vengono serviti dalla cache del Dispatcher AEM, ciò può portare a fornire agli utenti dati precompilati o non aggiornati. Pertanto, utilizza il Dispatcher dell’AEM per memorizzare in cache i moduli adattivi che non utilizzano dati precompilati. Inoltre, una cache di Dispatcher non annulla automaticamente la validità dei frammenti memorizzati in cache. Pertanto, non utilizzarlo per memorizzare in cache i frammenti di modulo. Per tali moduli e frammenti, utilizza [Cache dei moduli adattivi](../../forms/using/configure-adaptive-forms-cache.md).
 
 ## Parametri JVM {#jvm-parameters}
 
@@ -66,19 +62,19 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 I moduli adattivi e i moduli HTML5 vengono riprodotti in formato HTML5. L’output risultante potrebbe essere grande a seconda di fattori quali le dimensioni del modulo e le immagini nel modulo. Per ottimizzare il trasferimento di dati, l’approccio consigliato consiste nel comprimere la risposta del HTML utilizzando il server web da cui viene trasmessa la richiesta. Questo approccio riduce le dimensioni della risposta, il traffico di rete e il tempo necessario per lo streaming dei dati tra server e client.
 
-Ad esempio, per abilitare la compressione sul server web Apache 2.0 a 32 bit con JBoss, effettua le seguenti operazioni:
+Ad esempio, per abilitare la compressione sul server web Apache 2.0 a 32 bit con JBoss, effettua le seguenti operazioni®:
 
 >[!NOTE]
 >
 >Le istruzioni seguenti non sono valide per i server diversi da Apache Web Server 2.0 a 32 bit. Per i passaggi specifici di qualsiasi altro server, consulta la relativa documentazione di prodotto.
 
-La procedura seguente illustra le modifiche necessarie per abilitare la compressione con il server web Apache
+I passaggi seguenti illustrano le modifiche necessarie per abilitare la compressione con il server web Apache
 
 **Ottenere il software del server web Apache applicabile al sistema operativo**
 
 * Windows: scarica il server web Apache dal sito del progetto Apache HTTP Server.
-* Solaris a 64 bit: scarica il server web Apache dal sito web Sunfreeware for Solaris.
-* Linux: il server web Apache è preinstallato su un sistema Linux.
+* Solaris™ a 64 bit: scarica il server web Apache dal sito web Sunfreeware for Solaris™.
+* Linux®: il server web Apache è preinstallato su un sistema Linux®.
 
 Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni sono ottimizzate tramite HTTP.
 
@@ -92,7 +88,7 @@ Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni
 
    >[!NOTE]
    >
-   >Per Linux, il valore predefinito `APACHE_HOME` è `/etc/httpd/`.
+   >Per Linux®, il valore predefinito `APACHE_HOME` è `/etc/httpd/`.
 
 1. Configura il proxy sulla porta 4502 di crx.
 Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di configurazione.
@@ -110,7 +106,7 @@ Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di con
    <Location /content/xfaforms>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don’t compress
+           #Don't compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -127,7 +123,7 @@ Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di con
    <Location /content/forms/af>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don’t compress
+           #Don't compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -154,24 +150,24 @@ Per migliorare le prestazioni, è possibile indirizzare il software antivirus pe
 
 * Directory temporanea del server applicazioni. La posizione predefinita è:
 
-   * (Jboss) [Directory di installazione AEM]\jboss\standalone\tmp
-   * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (Websphere) \Programma Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+   * (JBoss®) [Directory di installazione AEM]\jboss\standalone\tmp
+   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+   * (WebSphere®) \Programma Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
 * **(AEM Forms solo su JEE)** Directory Global Document Storage (GDS). La posizione predefinita è:
 
-   * (JBoss) [directory principale del server applicazioni]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (JBoss®) [directory principale del server applicazioni]/server/&#39;server&#39;/svcnative/DocumentStorage
    * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [directory principale del server applicazioni]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+   * (WebSphere® [directory principale del server applicazioni]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
-* **(AEM Forms solo su JEE)** Registri del server AEM Forms e directory temporanea. La posizione predefinita è:
+* **(AEM Forms solo su JEE)** Registri di AEM Forms Server e directory temporanea. La posizione predefinita è:
 
    * Registri del server - [Directory di installazione di AEM Forms]\Adobe\moduli AEM\[app-server]\server\all\logs
    * Directory temporanea - [Directory di installazione di AEM Forms]\temp
 
 >[!NOTE]
 >
->* Se utilizzi una posizione diversa per GDS e la directory temporanea, apri AdminUI in `https://'[server]:[port]'/adminui`, passa a **Home > Impostazioni > Impostazioni sistema core > Configurazioni core** per confermare la posizione in uso.
-* Se le prestazioni del server AEM Forms sono lente anche dopo l’esclusione delle directory suggerite, escludi anche il file eseguibile Java (java.exe).
+* Se utilizzi una posizione diversa per GDS e la directory temporanea, apri AdminUI in `https://'[server]:[port]'/adminui`, passa a **Home > Impostazioni > Impostazioni sistema core > Configurazioni core** per confermare la posizione in uso.
 >
-
+* Se il server AEM Forms funziona lentamente anche dopo l’esclusione delle directory suggerite, escludi anche il file eseguibile Java™ (java.exe).
+>

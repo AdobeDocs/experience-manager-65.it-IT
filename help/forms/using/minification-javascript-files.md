@@ -1,25 +1,21 @@
 ---
 title: Minimizzazione dei file JavaScript
-seo-title: Minification of the JavaScript files
 description: Istruzioni per generare codice ridotto dopo le personalizzazioni dell’area di lavoro di AEM Forms per ottimizzare i file JS per il web.
-seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
-uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 exl-id: d88c6831-8ae9-426d-acb5-2a7e066ad158
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '188'
 ht-degree: 1%
 
 ---
 
 # Minimizzazione dei file JavaScript {#minification-of-the-javascript-files}
 
-La minimizzazione rimuove dal codice sorgente i caratteri ridondanti, come lo spazio vuoto, la nuova riga e i commenti. Questo migliora le prestazioni riducendo le dimensioni del codice. Anche se la minimizzazione non influisce sulla funzionalità, riduce la leggibilità del codice.
+La minimizzazione rimuove dal codice sorgente i caratteri ridondanti, come spazi vuoti, nuove righe e commenti. Questo migliora le prestazioni riducendo le dimensioni del codice. Anche se la minimizzazione non influisce sulla funzionalità, riduce la leggibilità del codice.
 
 Per generare un codice minimizzato per le modifiche semantiche, segui la procedura riportata di seguito.
 
@@ -31,7 +27,7 @@ Per generare un codice minimizzato per le modifiche semantiche, segui la procedu
 
 1. Aggiorna percorsi in `main.js` si trova in client-html/src/main/webapp/js, per modelli/viste aggiunti/aggiornati.
 
-   Ad esempio, l’aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
+   Ad esempio, l&#39;aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
 
    ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
@@ -45,7 +41,7 @@ Per generare un codice minimizzato per le modifiche semantiche, segui la procedu
 
 1. Aggiorna `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` nel caso in cui venga modificato/aggiunto un alias in `main.js`.
 
-   Ad esempio, l’aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
+   Ad esempio, l&#39;aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, cambia:
 
    ```xml
    <sharequeue
@@ -73,7 +69,7 @@ Per generare un codice minimizzato per le modifiche semantiche, segui la procedu
 
 >[!NOTE]
 >
->La minimizzazione funziona solo su JVM a 64 bit.
+>La minimizzazione funziona solo su una JVM a 64 bit.
 
 >[!NOTE]
 >

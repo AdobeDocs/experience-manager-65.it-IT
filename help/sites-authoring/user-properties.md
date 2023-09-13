@@ -1,20 +1,16 @@
 ---
 title: Configurazione dell’ambiente dell’account
-seo-title: Configuring Your Account Environment
 description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
-uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 61%
+source-wordcount: '514'
+ht-degree: 64%
 
 ---
 
@@ -24,11 +20,11 @@ Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambi
 
 Utilizza l’opzione [Utente](/help/sites-authoring/user-properties.md#user-settings) nell’[intestazione](/help/sites-authoring/basic-handling.md#the-header) e la relativa finestra di dialogo [Preferenze](#userpreferences) per modificare le opzioni utente.
 
-Per iniziare, accedi a [Utente](/help/sites-authoring/user-properties.md#user-settings) nell’intestazione.
+Per prima cosa, accedi all’opzione [Utente](/help/sites-authoring/user-properties.md#user-settings) nell’intestazione.
 
 ## Impostazioni utente {#user-settings}
 
-Il **Utente** La finestra di dialogo delle impostazioni consente di accedere a:
+Le impostazioni **Utente** consentono di accedere a:
 
 * Impersona
 
@@ -60,19 +56,19 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Gestione finestre**
 
-  Definisce il comportamento o l&#39;apertura delle finestre. Puoi selezionare:
+  Ciò definisce il comportamento o l’apertura delle finestre. Puoi selezionare:
 
-   * **Finestre multiple** (Predefinito)
+   * **Finestre multiple** (predefinito)
 
-      * Le pagine verranno aperte in una nuova finestra.
+      * Le pagine vengono aperte in una nuova finestra.
 
    * **Finestra singola**
 
-      * Le pagine verranno aperte nella finestra corrente.
+      * Le pagine vengono aperte nella finestra corrente.
 
 * **Mostra azioni desktop per Assets**
 
-  Questa opzione richiede l’utilizzo dell’app desktop AEM.
+  Questa opzione richiede l’utilizzo di un’app desktop AEM.
 
 * **Colore annotazione**
 
@@ -83,7 +79,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Presentazione data relativa**
 
-  Per migliorare la leggibilità, AEM presenterà le date degli ultimi sette giorni come date relative (ad esempio, tre giorni fa) e le date più lontane come date esatte (ad esempio, il 20 marzo 2017).
+  Per migliorare la leggibilità, AEM riproduce le date degli ultimi sette giorni come date relative (ad esempio, Tre giorni fa) e le date più lontane come date esatte (ad esempio, 20 marzo 2017).
 
   Questa opzione definisce il modo in cui il sistema visualizza le date. Sono disponibili le seguenti opzioni:
 
@@ -100,12 +96,12 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Abilita scelte rapide**
 
-  AEM supporta una serie di scelte rapide da tastiera per ottimizzare l’authoring.
+  AEM supporta diverse scelte rapide da tastiera per rendere più efficiente l’authoring.
 
    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
-  Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita sono abilitate, ma possono essere disabilitate, ad esempio se un utente ha determinati requisiti di accessibilità.
+  Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita sono abilitate, ma possono essere disabilitate, ad esempio, se un utente ha determinati requisiti di accessibilità.
 
 * **Usa esperienza di authoring classica**
 
@@ -113,7 +109,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Abilita pagina iniziale di Assets**
 
-  Questa opzione è disponibile solo se l’amministratore di sistema ha abilitato l’esperienza Pagina iniziale di Assets per l’intera organizzazione.
+  Questa opzione è disponibile solo se l’amministratore di sistema ha attivato l’esperienza Pagina iniziale risorse per l’intera organizzazione.
 
 * **Configurazione Stock**
 

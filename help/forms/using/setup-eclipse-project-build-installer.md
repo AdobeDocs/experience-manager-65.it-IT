@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
-source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '723'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ Per creare l’app Android per AEM Forms, effettua le seguenti operazioni nella 
 
 Il pacchetto del codice sorgente dell’app AEM Forms fa riferimento al `adobe-lc-mobileworkspace-src-<version>.zip` archivio. Questo archivio include il codice sorgente necessario per creare un’app AEM Forms personalizzata. L&#39;archivio è incluso nel `adobe-aemfd-forms-app-src-pkg-<version>.zip`disponibile nella pagina Distribuzione di software.
 
-Per scaricare il file `adobe-aemfd-forms-app-src-pkg-<version>.zip` file:
+Per scaricare `adobe-aemfd-forms-app-src-pkg-<version>.zip` file, effettuare le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
 1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
@@ -58,7 +58,7 @@ Dopo aver salvato adobe-lc-mobileworkspace-src-&lt;version>.zip sul file system 
 
 ### Creare un’app AEM Forms con Android Studio {#using-android-studio}
 
-Per creare l’app AEM Forms tramite Android Studio, effettua le seguenti operazioni:
+Per creare un’app AEM Forms con Android Studio, effettua le seguenti operazioni:
 
 1. Avvia l&#39;applicazione Android Studio sul computer.
 1. Clic **Apri un progetto Android Studio esistente**. Se la finestra di dialogo per aprire un progetto esistente non viene visualizzata automaticamente, selezionare **File** > **Apri**.
@@ -81,7 +81,7 @@ Per creare l’app AEM Forms tramite Android Studio, effettua le seguenti operaz
 
 ### Generare il file .apk con Android Studio {#generate-apk-android-studio}
 
-Esegui la procedura seguente per generare il file .apk utilizzando Android Studio:
+Per generare il file .apk con Android Studio, effettuate le seguenti operazioni:
 
 1. Avvia l&#39;applicazione Android Studio sul computer.
 1. Seleziona **Apri un progetto Android Studio esistente**. Se la finestra di dialogo per aprire un progetto esistente non viene visualizzata automaticamente, selezionare **File** > **Apri**.
@@ -89,7 +89,7 @@ Esegui la procedura seguente per generare il file .apk utilizzando Android Studi
 
    L’opzione Android viene visualizzata nel riquadro a sinistra.
 
-1. Seleziona **Genera** > **Genera APK** per generare il file apk.
+1. Per generare il file apk, selezionare **Genera** > **Genera APK**.
 
    Facoltativamente, seleziona **Genera** > **Genera APK firmato** per generare un [versione firmata](https://developer.android.com/studio/publish/app-signing) del file .apk.
 

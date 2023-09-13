@@ -1,18 +1,14 @@
 ---
 title: Scelte rapide da tastiera per AEM Forms
-seo-title: AEM Forms Keyboard Shortcuts
 description: Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzate con l’Editor di moduli adattivi, l’Editor temi, il Browser contenuti e la Gestione della corrispondenza per i sistemi operativi Windows e Macintosh.
-seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
-uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
-discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1208'
 ht-degree: 3%
 
 ---
@@ -25,13 +21,13 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 
 ## Editor di moduli adattivi {#adaptiveformeditor}
 
-| **Azione** | **Collegamento a Windows** | **Collegamento al sistema operativo Mac** |
+| **Azione** | **Collegamento a Windows** | **Collegamento a macOS** |
 |---|---|---|
 | Apri il browser Proprietà per il componente modulo adattivo selezionato | ALT+INVIO | ALT+INVIO |
-| Chiudi il browser Proprietà per il componente modulo adattivo selezionato | Ctrl+Alt+W | Comando+Alt+W |
+| Chiude il browser Proprietà per il componente modulo adattivo selezionato | Ctrl+Alt+W | Comando+Alt+W |
 | Salva le modifiche nel browser Proprietà per il componente modulo adattivo selezionato | Ctrl+S | Comando+S |
 | Modifica regola per il componente modulo adattivo selezionato | CTRL+ALT+INVIO | Comando+Alt+Invio |
-| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica, Scaffolding e così via. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&amp;ast; |
+| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&amp;ast; |
 | Annulla l’ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
 | Ripristina l’ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
 | Selezione di più componenti | Maiusc+clic | Maiusc+clic |
@@ -40,39 +36,39 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 | Incolla componenti | Ctrl+V | Ctrl+V |
 | Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&amp;O; |
 | Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&amp;ast; |
-| Applica il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | Ctrl+B&amp;ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | Ctrl+B&amp;ast; |
 | Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&amp;ast; |
-| Applica il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&amp;ST; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&amp;ST; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando sul sistema operativo Mac.
+>I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
 
 >[!NOTE]
 >
 >Selezione multipla su un dispositivo desktop:
 >
 >* Windows: Ctrl+clic sui componenti richiesti.
->* MAC OS: Comando+clic sui componenti richiesti.
+>* macOS: Comando+clic sui componenti richiesti.
 >
 
 ## Editor temi  {#themeeditor}
 
-| **Azione** | **Collegamento a Windows** | **Collegamento al sistema operativo Mac** |
+| **Azione** | **Collegamento a Windows** | **Collegamento a macOS** |
 |---|---|---|
-| Apri il browser delle proprietà per il componente selezionato in un tema | ALT+INVIO | ALT+INVIO |
-| Chiude il browser delle proprietà per il componente selezionato in un tema | Ctrl+Alt+W | Comando+Alt+W |
+| Apri il browser Proprietà per il componente selezionato in un tema | ALT+INVIO | ALT+INVIO |
+| Chiude il browser Proprietà per il componente selezionato in un tema | Ctrl+Alt+W | Comando+Alt+W |
 | Annulla l’ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
 | Ripristina l’ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
 | Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&amp;ast; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando sul sistema operativo Mac.
+>I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
 
 ## Browser contenuti  {#contentbrowser}
 
-| **Azione** | **Collegamento a Windows** | **Collegamento al sistema operativo Mac** |
+| **Azione** | **Collegamento a Windows** | **Collegamento a macOS** |
 |---|---|---|
 | Espandere tutte le relazioni nella struttura Oggetti modulo del browser Contenuto quando attivo | Ctrl+A per selezionare tutte le fisarmoniche seguite da Freccia destra per espandere | Comando+A per selezionare tutte le fisarmoniche seguite da Freccia destra per espandere |
 | Comprimi tutte le relazioni nella struttura Oggetti modulo del browser Contenuto quando è attivo | Ctrl+A per selezionare tutte le fisarmoniche seguite da Freccia sinistra per comprimere | Comando+A per selezionare tutte le fisarmoniche seguite da Freccia sinistra per comprimere |
@@ -81,12 +77,12 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 | Selezionare l&#39;elemento successivo nella struttura Oggetti di Forms | Freccia giù | Freccia giù |
 | Selezionare l&#39;elemento precedente nella struttura Oggetti di Forms | Freccia Su | Freccia Su |
 
-[1] Sostituisce Ctrl + Freccia destra per Windows e Comando + Freccia destra per Mac OS.\
-[2] Sostituisce Ctrl + Freccia sinistra per Windows e Comando + Freccia sinistra per Mac OS.
+[1] Sostituisce Ctrl + Freccia destra per Windows e Comando + Freccia destra per macOS.\
+[2] Sostituisce Ctrl + Freccia sinistra per Windows e Comando + Freccia sinistra per macOS.
 
 ## Gestione della corrispondenza {#correspondence-management}
 
-In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessibilità che è possibile utilizzare nell&#39;editor di testo di Gestione corrispondenza. È possibile utilizzare le seguenti scelte rapide:
+In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessibilità utilizzabili nell&#39;editor di testo Gestione corrispondenza. È possibile utilizzare le seguenti scelte rapide:
 
 * Creazione o modifica di un [Testo](texts-interactive-communications.md) risorsa
 * Modifica di un modulo di testo dopo aver toccato l’icona Modifica corrispondente ( ![edittextmodule](assets/edittextmodule.png)) quando [creazione di una corrispondenza](/help/forms/using/create-correspondence.md).
@@ -98,15 +94,15 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   <tr>
    <th><strong>Operazione</strong></th> 
    <th><strong>Collegamento a Windows</strong></th> 
-   <th><strong>Collegamento al sistema operativo Mac</strong><br /> </th> 
+   <th><strong>Collegamento a macOS</strong><br /> </th> 
   </tr>
   <tr>
-   <td><p>Seleziona parola corrente</p> </td> 
+   <td><p>Seleziona la parola corrente</p> </td> 
    <td><p>Ctrl+Maiusc+Freccia destra</p> </td> 
    <td>Comando+Maiusc+Freccia destra</td> 
   </tr>
   <tr>
-   <td><p>Seleziona parola precedente</p> </td> 
+   <td><p>Seleziona la parola precedente</p> </td> 
    <td><p>Ctrl+Maiusc+Freccia sinistra</p> </td> 
    <td>Comando+Maiusc+Freccia sinistra</td> 
   </tr>
@@ -146,12 +142,12 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
    <td>Opzione+freccia su</td> 
   </tr>
   <tr>
-   <td><p>Selezionare il testo uno per un carattere nella direzione posteriore</p> </td> 
+   <td><p>Selezionare il testo uno per uno nella direzione posteriore</p> </td> 
    <td><p>Maiusc+Freccia sinistra</p> </td> 
    <td>Maiusc+Freccia sinistra</td> 
   </tr>
   <tr>
-   <td><p>Selezionare il testo uno per un carattere in avanti</p> </td> 
+   <td><p>Selezionare il testo uno per uno nella direzione di avanzamento</p> </td> 
    <td><p>Maiusc+Freccia destra</p> </td> 
    <td>Maiusc+Freccia destra</td> 
   </tr>
@@ -161,7 +157,7 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
    <td>Maiusc+Tasto Su</td> 
   </tr>
   <tr>
-   <td><p>Selezionare il testo uno per un paragrafo in avanti</p> </td> 
+   <td><p>Selezionare il testo uno per un paragrafo nella direzione di avanzamento</p> </td> 
    <td><p>Maiusc+tasto Giù</p> </td> 
    <td>Maiusc+Tasto Giù</td> 
   </tr>
@@ -196,12 +192,12 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
    <td>Comando+Maiusc+Freccia Su</td> 
   </tr>
   <tr>
-   <td><p>Sposta il cursore nella posizione iniziale</p> </td> 
+   <td><p>Spostare il cursore nella posizione iniziale</p> </td> 
    <td><p>CTRL+HOME</p> </td> 
    <td>Comando+Freccia Su</td> 
   </tr>
   <tr>
-   <td><p>Sposta cursore alla posizione finale</p> </td> 
+   <td><p>Sposta il cursore nella posizione finale</p> </td> 
    <td><p>Ctrl+Fine</p> </td> 
    <td>Comando+Freccia giù</td> 
   </tr>
@@ -216,10 +212,10 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   <tr>
    <th><p><strong>Operazione</strong></p> </th> 
    <th><p><strong>Collegamento a Windows<br /> </strong></p> </th> 
-   <th><strong>Collegamento al sistema operativo Mac</strong></th> 
+   <th><strong>Collegamento a macOS</strong></th> 
   </tr>
   <tr>
-   <td><p>Allineamento del centro di un paragrafo</p> </td> 
+   <td><p>Allineamento di un paragrafo al centro</p> </td> 
    <td><p>CTRL+E</p> </td> 
    <td>Ctrl+Comando+E</td> 
   </tr>
@@ -248,7 +244,7 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   <tr>
    <th><strong>Operazione</strong></th> 
    <th><strong>Collegamento a Windows </strong></th> 
-   <th><strong>Collegamento al sistema operativo Mac</strong><br /> </th> 
+   <th><strong>Collegamento a macOS</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Annulla </p> </td> 
@@ -270,7 +266,7 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   <tr>
    <th><p><strong>Operazione</strong></p> </th> 
    <th><p><strong>Collegamento a Windows</strong></p> </th> 
-   <th><strong>Collegamento al sistema operativo Mac</strong></th> 
+   <th><strong>Collegamento a macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Aumenta la dimensione font </p> </td> 
@@ -292,7 +288,7 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   <tr>
    <th><strong>Operazione</strong></th> 
    <th><strong>Collegamento a Windows</strong></th> 
-   <th><strong>Collegamento al sistema operativo Mac</strong></th> 
+   <th><strong>Collegamento a macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Elimina parola a sinistra del cursore</p> </td> 
@@ -314,7 +310,7 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   <tr>
    <th><strong>Operazione</strong></th> 
    <th><strong>Collegamento a Windows<br /> </strong></th> 
-   <th><strong>Collegamento al sistema operativo Mac</strong></th> 
+   <th><strong>Collegamento a macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Incolla testo </p> </td> 
@@ -341,7 +337,7 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   <tr>
    <th><strong>Operazione</strong></th> 
    <th><strong>Collegamento a Windows</strong></th> 
-   <th><strong>Collegamento al sistema operativo Mac</strong></th> 
+   <th><strong>Collegamento a macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Applica il grassetto alle lettere</p> </td> 

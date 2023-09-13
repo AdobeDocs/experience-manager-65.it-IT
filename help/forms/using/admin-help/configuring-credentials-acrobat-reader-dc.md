@@ -1,42 +1,38 @@
 ---
-title: Configurazione delle credenziali per l’utilizzo con le estensioni Acrobat Reader DC
-seo-title: Configuring credentials for use with Acrobat Reader DC extensions
+title: Configurazione delle credenziali per l’utilizzo con le estensioni di Acrobat Reader DC
 description: Scopri come configurare le credenziali per l’utilizzo con le estensioni Acrobat Reader DC.
-seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
-uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 0%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
-# Configurazione delle credenziali per l’utilizzo con le estensioni Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
+# Configurazione delle credenziali per l’utilizzo con le estensioni di Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
-Per applicare i diritti di utilizzo ai documenti PDF, configura i moduli AEM con una credenziale valida per le estensioni Acrobat Reader DC. Durante l&#39;installazione dei moduli AEM potrebbero essere state configurate delle credenziali. Se non sono state configurate le credenziali delle estensioni Acrobat Reader DC durante l&#39;esecuzione di Configuration Manager o se è necessario importare una credenziale nuova o sostitutiva, è possibile utilizzare le pagine Gestione archivio fonti attendibili.
+Per applicare i diritti di utilizzo ai documenti PDF, configura i moduli AEM con una credenziale valida per le estensioni Acrobat Reader DC. Durante l&#39;installazione dei moduli AEM potrebbero essere state configurate delle credenziali. Se non sono state configurate le credenziali delle estensioni di Acrobat Reader DC durante l&#39;esecuzione di Configuration Manager oppure, se è necessario importare una credenziale nuova o sostitutiva, è possibile utilizzare le pagine Gestione archivio fonti attendibili.
 
-Se utilizzi una credenziale di valutazione, sostituiscila con una credenziale di produzione durante il passaggio all’ambiente di produzione. Per aggiornare una credenziale scaduta o di valutazione, eliminare innanzitutto la credenziale precedente delle estensioni Acrobat Reader DC.
+Se utilizzi una credenziale di valutazione, sostituiscila con una credenziale di produzione durante il passaggio all’ambiente di produzione. Per aggiornare una credenziale scaduta o di valutazione, elimina innanzitutto la credenziale delle estensioni Acrobat Reader DC precedente.
 
-Per informazioni su come ottenere le credenziali, vedere [Preparazione all’installazione dei moduli AEM (server singolo)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Per informazioni su come ottenere le credenziali, vedere [Preparazione all’installazione dei moduli AEM (server singolo)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-L&#39;archivio fonti attendibili può contenere più di una credenziale di estensioni Acrobat Reader DC. È necessario designare una di queste credenziali come credenziale di Reader Estensioni predefinita. Le credenziali predefinite vengono utilizzate quando un utente di Workbench non è in grado di determinare quali credenziali utilizzare durante la creazione del processo. Queste regole si applicano alle credenziali predefinite:
+L&#39;archivio fonti attendibili può contenere più di una credenziale Estensioni Acrobat Reader DC. Imposta una di queste credenziali come credenziale di Reader predefinita per le estensioni. Le credenziali predefinite vengono utilizzate quando un utente di Workbench non è in grado di determinare quali credenziali utilizzare durante la creazione del processo. Queste regole si applicano alle credenziali predefinite:
 
-* Se si importa una credenziale di estensioni Acrobat Reader DC e l&#39;archivio fonti attendibili non contiene altre credenziali di estensioni Acrobat Reader DC, questa verrà impostata come predefinita.
-* Se si importa una credenziale di estensioni Acrobat Reader DC con l&#39;opzione Predefinito selezionata, il tipo predefinito viene rimosso da una credenziale predefinita esistente. Le credenziali importate diventano predefinite.
-* Non è possibile eliminare le credenziali di un&#39;estensione Acrobat Reader DC predefinita. Per eliminare le credenziali predefinite, impostare innanzitutto un&#39;altra credenziale come predefinita. Un&#39;eccezione a questa regola è che se è presente una sola credenziale, è possibile eliminarla anche se è l&#39;impostazione predefinita.
-* Non è possibile aggiornare le credenziali di un&#39;estensione Acrobat Reader DC predefinita.
+* Se si importa una credenziale di Acrobat Reader DC Extensions e l&#39;archivio fonti attendibili non contiene altre credenziali di Acrobat Reader DC Extensions, questa verrà impostata come predefinita.
+* Se si importa una credenziale di Acrobat Reader DC Extensions con l&#39;opzione Predefinito selezionata, il tipo predefinito viene rimosso da una credenziale predefinita esistente. Le credenziali importate diventano predefinite.
+* Non è possibile eliminare le credenziali predefinite di Acrobat Reader DC Extensions. Per eliminare le credenziali predefinite, impostare innanzitutto un&#39;altra credenziale come predefinita. Un&#39;eccezione a questa regola è che se è presente una sola credenziale, è possibile eliminarla anche se è l&#39;impostazione predefinita.
+* Non è possibile aggiornare le credenziali predefinite delle estensioni di Acrobat Reader DC.
 
 >[!NOTE]
 >
->È inoltre possibile importare ed eliminare le credenziali a livello di programmazione. (vedere [Programmazione con i moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63).)
+>È inoltre possibile importare ed eliminare le credenziali a livello di programmazione. (vedere [Programmazione con i moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).)
 
-## Importare credenziali di estensioni Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
+## Importare una credenziale delle estensioni Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali locali.
 1. Fai clic su Importa e, in Tipo di archivio fonti attendibili, seleziona Credenziali estensioni Acrobat Reader DC.
@@ -56,7 +52,7 @@ L&#39;archivio fonti attendibili può contenere più di una credenziale di esten
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali locali.
 1. Selezionare le credenziali e fare clic su Elimina.
 
-## Sostituire una credenziale di estensioni Acrobat Reader DC {#replace-a-acrobat-reader-dc-extensions-credential}
+## Sostituire una credenziale delle estensioni Acrobat Reader DC {#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali locali.
 1. Prendere nota dell&#39;alias della credenziale esistente, quindi selezionarlo e fare clic su Elimina.

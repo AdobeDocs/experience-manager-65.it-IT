@@ -2,10 +2,10 @@
 title: Note sulla versione 2020 di AEM Content and Commerce
 description: Note sulla versione 2020 di AEM Content and Commerce
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 12%
+source-wordcount: '1352'
+ht-degree: 13%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 12%
 
 ### Novità {#what-is-new-november}
 
-* È stata aggiunta l’ereditarietà del modello a una pagina categoria specifica. Questa funzione migliora l’efficienza degli utenti aziendali perché consente a tutte le sottocategorie di ereditare il modello creato per una specifica categoria principale.
+* È stata aggiunta l’ereditarietà del modello a una pagina categoria specifica. Questa funzione migliora l’efficienza degli utenti aziendali in quanto consente a tutte le sottocategorie di ereditare il modello creato per una specifica categoria principale.
 
 * La vetrina di riferimento Venia è stata aggiornata per utilizzare Frammento esperienza per il piè di pagina. Gli utenti aziendali possono modificare il piè di pagina della pagina utilizzando gli strumenti di creazione AEM.
 
 ### Novità {#what-is-improved-november}
 
-* Il componente Checkout è stato migliorato per consentire agli acquirenti di entrare nel paese di destinazione e consentire gli indirizzi di fatturazione/spedizione al di fuori degli Stati Uniti.
+* Il componente Checkout è stato migliorato per consentire agli acquirenti di entrare nel paese di destinazione e fatturare/spedire al di fuori degli Stati Uniti.
 
 * Componente di navigazione esteso per idratare Adobe Client Data Layer.
 
@@ -43,9 +43,9 @@ ht-degree: 12%
 
 ### Novità {#what-is-new-october}
 
-* È stato aggiunto il nuovo componente Carosello categoria, che consente agli utenti aziendali di trascinare e rilasciare questo componente sulle pagine di contenuto dell’AEM per arricchire le pagine di contenuto con i dati di e-commerce.
+* È stato aggiunto un nuovo componente Carosello categoria per consentire agli utenti aziendali di trascinare e rilasciare questo componente sulle pagine di contenuto AEM per arricchire le pagine di contenuto con i dati di e-commerce.
 
-* Componenti core CIF estesi per idratare Adobe Client Data Layer inviando dati di e-commerce. Adobe Client Data Layer è un metodo standardizzato per raccogliere i dati e comunicarli ai server di reporting e analisi digitali. Per ulteriori informazioni, consulta [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Componenti core CIF estesi per idratare Adobe Client Data Layer inviando dati di e-commerce. Adobe Client Data Layer è un metodo standardizzato per raccogliere dati e comunicarli a Digital Analytics e ai server di reporting. Per ulteriori informazioni, consulta [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Pagine Dettagli prodotto ed Elenco prodotti estese per compilare automaticamente i metadati SEO (come titolo, metadescrizione, parole chiave meta) configurati dall’interfaccia utente di amministrazione di Adobe Commerce
 
@@ -65,9 +65,9 @@ ht-degree: 12%
 
 * Sono state aggiunte funzionalità di informazioni sull’account per consentire agli acquirenti di aggiornare le informazioni personali.
 
-* È stato implementato uno stile di paginazione con caricamento lazy per le pagine Elenco prodotti e Risultati ricerca per consentire agli sviluppatori di configurare questi componenti per visualizzare il pulsante &quot;Carica altro&quot; come stile di paginazione.
+* Per le pagine Elenco prodotti e Risultati ricerca viene implementato uno stile di impaginazione a caricamento lento per consentire agli sviluppatori di configurare questi componenti in modo da visualizzare il pulsante &quot;Carica altro&quot; come stile di impaginazione.
 
-* È stata implementata la pagina di reimpostazione della password che consente agli acquirenti di aggiornare/reimpostare la password dell’account.
+* La pagina di reimpostazione della password è implementata per consentire agli acquirenti di aggiornare/reimpostare la password dell’account.
 
 * È disponibile il supporto per i tipi di prodotti in bundle.
 
@@ -139,7 +139,7 @@ ht-degree: 12%
 
 Questa è la prima versione dei componenti core CIF supportata su Adobe Experience Manager.
 
-* Nelle pagine Elenco prodotti e Risultati ricerca è stato aggiunto l’ordinamento dei prodotti che consente agli acquirenti di ordinare in base a rilevanza, prezzo e nome del prodotto.
+* È stato aggiunto l’ordinamento dei prodotti nelle pagine Elenco prodotti e Risultati ricerca per consentire agli acquirenti di ordinare in base a rilevanza, prezzo e nome del prodotto.
 
 * È stato aggiunto il filtro delle categorie come facet per consentire agli acquirenti di filtrare in base alla categoria.
 
@@ -147,9 +147,9 @@ Questa è la prima versione dei componenti core CIF supportata su Adobe Experien
 
 ### Novità {#what-is-improved-june}
 
-* Le pagine Elenco prodotti e Risultati ricerca visualizzano il numero totale di elementi. Il numero di elementi viene aggiornato quando l’acquirente applica dei filtri.
+* Nelle pagine Elenco prodotti e Risultati ricerca viene visualizzato il numero totale di elementi. Il numero di elementi viene aggiornato quando l’acquirente applica dei filtri.
 
-* Ricerca con facet ottimizzata combinando query di categoria con query di ricerca prodotto.
+* La ricerca con facet è ottimizzata combinando una query di categoria con una query di ricerca prodotto.
 
 * I selettori di categorie/prodotti per l’anteprima della pagina rispettano cq:catalogPath.
 
@@ -169,7 +169,7 @@ Questa è la prima versione dei componenti core CIF supportata su Adobe Experien
 
 * Alla pagina di ricerca e alla pagina dell’elenco dei prodotti è stato aggiunto il supporto per la ricerca con facet, per consentire agli acquirenti di filtrare i risultati di ricerca in base ai facet di prodotto.
 
-* È stato aggiunto un nuovo servizio OSGi per personalizzare gli URL PDP/PLP a scopo di SEO (Search Engine Optimization). Per ulteriori informazioni, consulta questa [documentazione](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* È stato aggiunto un nuovo servizio OSGi per personalizzare gli URL PDP/PLP a scopo di SEO (Search Engine Optimization). Per ulteriori dettagli, vedi [documentazione](https://github.com/adobe/aem-core-cif-components).
 
 * L’associazione del prodotto viene creata automaticamente al momento della creazione di una configurazione cloud.
 
@@ -189,7 +189,7 @@ Questa è la prima versione dei componenti core CIF supportata su Adobe Experien
 
 ### Novità {#what-is-new-april}
 
-* Impostazioni di configurazione per il connettore CIF unificato e semplificato. Per ulteriori dettagli, controlla [Guida introduttiva](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) o [Configurazione del nuovo progetto CIF dell’AEM](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
+* Le impostazioni di configurazione per il connettore CIF sono unificate e semplificate. Per ulteriori dettagli, controlla [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it) o [Configurazione del nuovo progetto CIF dell’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it)
 
 ### Novità {#what-is-improved-april}
 
@@ -223,7 +223,7 @@ Questa è la prima versione dei componenti core CIF supportata su Adobe Experien
 
 * Carrello ottimizzato per visualizzare gli sconti.
 
-* I componenti Product Detail, Product Teaser ed Elenco prodotti supportano la visualizzazione di informazioni sui prezzi avanzati.
+* I componenti Dettagli prodotto, Product Teaser ed Elenco prodotti supportano la visualizzazione di informazioni avanzate sui prezzi.
 
 * Sono state migliorate la ricerca dei prodotti nella console Prodotti e nel selettore dei prodotti.
 
@@ -241,11 +241,11 @@ Questa è la prima versione dei componenti core CIF supportata su Adobe Experien
 
 * È stato aggiunto il componente Frammento esperienza (XF) per consentire ai clienti di creare XF nel progetto commerce.
 
-* Modifica la funzionalità della password disponibile nel mio account.
+* Modifica la funzionalità password disponibile nel mio account.
 
 * Supporto i18n per i componenti core CIF lato server AEM.
 
-* Componente prodotto generico correlato disponibile.
+* È disponibile un componente prodotto generico correlato.
 
 ### Novità {#what-is-improved-january}
 

@@ -1,17 +1,13 @@
 ---
 title: API utilizzate nell’area di lavoro di AEM Forms
-seo-title: APIs used in AEM Forms workspace
-description: API Java e JavaScript pubbliche e metodi di LiveCycle AEM Forms Workspace, esposti per la personalizzazione e l’automazione.
-seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
-uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
+description: Java&trade pubblico; API JavaScript e metodi di LiveCycle AEM Forms Workspace, esposti per la personalizzazione e l’automazione.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -44,7 +40,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>prepareForSubmit</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>prepareForSubmit</td>
-   <td>Viene richiamato prima dell’invio del modulo tramite DocumentSubmitServlet. Imposta l’ID attività in una variabile di sessione (insieme all’ora di scadenza) che viene recuperata durante l’invio effettivo.</td>
+   <td>Viene richiamato prima dell’invio di un modulo tramite DocumentSubmitServlet. Imposta l’ID attività in una variabile di sessione (insieme all’ora di scadenza) che viene recuperata durante l’invio effettivo.</td>
   </tr>
   <tr>
    <td>submitTask</td>
@@ -74,7 +70,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>invokeStartpoint</td>
    <td>ProcessManagementStartpointService</td>
    <td>invokeStartpoint</td>
-   <td>Viene richiamato un punto d'inizio e viene creata una nuova attività corrispondente a un punto d'inizio</td>
+   <td>Viene richiamato un punto d'inizio e viene creata un'attività corrispondente a un punto d'inizio</td>
   </tr>
   <tr>
    <td>getAllTasks</td>
@@ -92,19 +88,19 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>renderTask</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>rendering</td>
-   <td>Restituisce un’attività e le informazioni necessarie per eseguire il rendering di un modulo come URL del modulo, tipo di modulo, URL di dati, se necessario, ecc.</td>
+   <td>Se necessario, restituisce un’attività e le informazioni necessarie per eseguire il rendering del modulo come URL del modulo, tipo di modulo, URL di dati.</td>
   </tr>
   <tr>
    <td>submitWithPriorData</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>submitWithPriorData</td>
-   <td>Restituisce il risultato dell’API di invio di TaskManager utilizzando la chiave del risultato.</td>
+   <td>Restituisce il risultato dell'API di invio di TaskManager utilizzando la chiave di risultato.</td>
   </tr>
   <tr>
    <td>submitWithData</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>submitWithData</td>
-   <td>Invia i dati del modulo (passati come stringa) associati all’attività utilizzando l’API di invio di TaskManager. Viene utilizzato per i moduli flessibili che non chiamano l’API di invio di TaskManager.</td>
+   <td>Invia i dati del modulo (passati come stringa) associati all’attività utilizzando l’API submit di TaskManager. Viene utilizzato per i Flex Form che non chiamano l’API di invio di TaskManager.</td>
   </tr>
   <tr>
    <td>salva</td>
@@ -116,13 +112,13 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>completo</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>completo</td>
-   <td>Completa un'attività e l'attività viene passata al passaggio successivo in base alla progettazione del processo.</td>
+   <td>L'attività viene completata e passata al passaggio successivo in base alla progettazione del processo.</td>
   </tr>
   <tr>
    <td>getAttachment</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>getAttachment</td>
-   <td>Restituisce l'URL di un allegato in cui è disponibile un allegato.</td>
+   <td>Restituisce l’URL di un allegato in cui l’allegato è disponibile.</td>
   </tr>
   <tr>
    <td>getAllAttachments</td>
@@ -152,7 +148,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>reclamo</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>reclamo</td>
-   <td>Richiede un'operazione disponibile nella coda condivisa.</td>
+   <td>Richiede un'operazione disponibile in una coda condivisa.</td>
   </tr>
   <tr>
    <td>sblocca</td>
@@ -170,7 +166,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>rifiuta</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>rifiuta</td>
-   <td>Restituisce l'attività al proprietario precedente dell'attività.</td>
+   <td>Restituisce un'attività al proprietario precedente dell'attività.</td>
   </tr>
   <tr>
    <td>abbandonare</td>
@@ -182,13 +178,13 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>setVisibility</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>setVisibility</td>
-   <td>Imposta la visibilità di un'attività. Se la visibilità è impostata su false, l'attività non sarà più visibile all'utente.</td>
+   <td>Imposta la visibilità di un'attività. Se la visibilità è impostata su false, l’attività non sarà più visibile all’utente.</td>
   </tr>
   <tr>
    <td>getUsers</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsers</td>
-   <td>Viene utilizzato per la ricerca degli utenti. Restituisce tutti gli utenti se non viene specificato alcun nome, altrimenti restituisce gli utenti con il nome specificato.</td>
+   <td>Viene utilizzato per la ricerca degli utenti. Restituisce tutti gli utenti se non viene specificato alcun nome oppure restituisce gli utenti con un nome specificato.</td>
   </tr>
   <tr>
    <td>getUsersInGroup</td>
@@ -200,13 +196,13 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>grantQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>grantQueueAccess</td>
-   <td>Consente l'accesso della coda dell'utente connesso all'utente specificato. In pratica, sta condividendo la propria coda con un altro utente.</td>
+   <td>Consente l'accesso della coda dell'utente connesso a un utente specificato. In pratica stai condividendo la tua coda con un altro utente.</td>
   </tr>
   <tr>
    <td>requestQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>requestQueueAccess</td>
-   <td>Effettua la richiesta di accesso della coda dell’utente specificato per l’utente connesso. Se l’utente approva la richiesta, la coda dell’utente viene condivisa con l’utente connesso.</td>
+   <td>Effettua la richiesta di accesso di una coda di un utente specificato per l’utente connesso. Se l’utente approva la richiesta, la coda dell’utente viene condivisa con l’utente connesso.</td>
   </tr>
   <tr>
    <td>getGrantedUsers</td>
@@ -242,7 +238,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>getOutOfOfficeSettings</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>getOutOfOfficeSettings</td>
-   <td>Esci dalle impostazioni di ufficio di un utente.</td>
+   <td>Ottiene le impostazioni fuori sede di un utente.</td>
   </tr>
   <tr>
    <td>saveOutOfOfficeSettingsJson</td>
@@ -254,13 +250,13 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>getAllProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getAllProcesses</td>
-   <td>Restituisce l’elenco di tutti i processi.</td>
+   <td>Restituisce un elenco di tutti i processi.</td>
   </tr>
   <tr>
    <td>getParticipatedProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getParticipatedProcesses</td>
-   <td>Restituisce l'elenco di tutti i nomi di processo a cui partecipa l'utente connesso.</td>
+   <td>Restituisce un elenco di tutti i nomi di processo a cui partecipa l'utente connesso.</td>
   </tr>
   <tr>
    <td>getProcessInstance<br /> </td>
@@ -290,7 +286,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>getAllSearchTemplates</td>
    <td>ProcessManagementQueryService</td>
    <td>getAllSearchTemplates</td>
-   <td>Restituisce l’elenco di tutti i modelli di ricerca.</td>
+   <td>Restituisce un elenco di tutti i modelli di ricerca.</td>
   </tr>
   <tr>
    <td>getTemplate</td>
@@ -308,7 +304,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>getAssignmentsForTask</td>
    <td>ServizioAttivitàGestioneProcessi</td>
    <td>getAssignmentsForTask</td>
-   <td>Ottiene tutte le assegnazioni per un'attività. Ad esempio, :- Se l’utente inoltra o consulta un’attività con un altro utente, si tratta di un’assegnazione per un’attività.</td>
+   <td>Ottiene tutte le assegnazioni per un'attività. Ad esempio, se un utente inoltra o consulta un’attività con un altro utente, si tratta di un’assegnazione per un’attività.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
@@ -326,13 +322,13 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>getTasksForDirectReports</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getTasksForDirectReports</td>
-   <td>Restituisce tutte le attività dei referenti diretti del gestore connesso.</td>
+   <td>Restituisce tutte le attività dei referenti diretti del manager connesso.</td>
   </tr>
   <tr>
    <td>getTaskOfDirectReport<br /> </td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getDirectReportTask</td>
-   <td>Restituisce l’attività del referente diretto specificato del gestore connesso.</td>
+   <td>Restituisce un'attività di un referente diretto specificato del manager connesso.</td>
   </tr>
   <tr>
    <td>forwardTaskOfDirectReport</td>
@@ -395,7 +391,7 @@ Le seguenti API vengono utilizzate nell’area di lavoro di AEM Forms.
    <td>Carica un allegato sul server per un’attività.</td>
   </tr>
   <tr>
-   <td>getImageURL (viene chiamato anche direttamente dal modello html)</td>
+   <td>getImageURL (chiamato anche direttamente dal modello HTML)</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>getImage</td>
    <td>Ottiene l’immagine per un processo.</td>
