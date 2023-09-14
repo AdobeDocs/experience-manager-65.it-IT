@@ -1,14 +1,12 @@
 ---
 title: Strumenti AEM Developer per Eclipse
 description: Strumenti AEM Developer per Eclipse
-uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 8336a7257d3c5e75cd37381b0124c227c2d55dca
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 4%
@@ -42,7 +40,7 @@ Prima di utilizzare gli strumenti per sviluppatori dell’AEM, effettua le segue
 
 >[!NOTE]
 >
->In macOS, fai clic con il pulsante destro del mouse **Eclipse.app**, quindi selezionare **Mostra contenuto pacchetto** per trovare `eclipse.ini`.
+>In macOS, fai clic con il pulsante destro del mouse **Eclipse.app** e quindi selezionare **Mostra contenuto pacchetto** per trovare `eclipse.ini`.
 
 ## Come installare gli strumenti per sviluppatori AEM per Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 

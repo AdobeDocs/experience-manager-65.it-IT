@@ -1,14 +1,14 @@
 ---
 title: Accesso e compilazione di moduli pubblicati
-description: Forms Portal fornisce agli sviluppatori web componenti per creare e personalizzare un portale di moduli su siti web creati con Adobe Experience Manager (AEM).
+description: Forms Portal fornisce agli sviluppatori web i componenti necessari per creare e personalizzare un Forms Portal sui siti web creati con Adobe Experience Manager (AEM).
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -17,25 +17,25 @@ ht-degree: 0%
 
 In una configurazione della distribuzione del portale incentrata sui moduli, lo sviluppo dei moduli e lo sviluppo del portale sono due attività distinte. Mentre i progettisti di moduli progettano e memorizzano i moduli in un repository, gli sviluppatori Web creano un&#39;applicazione Web per l&#39;elenco dei moduli e gestiscono gli invii. Forms viene quindi copiato sul livello web in quanto non vi è alcuna comunicazione tra l’archivio Forms e l’applicazione web.
 
-Questo causa spesso problemi nella gestione della configurazione e ritardi nella produzione. Ad esempio, se nel repository è disponibile una versione più recente di un modulo, il progettista del modulo sostituisce il modulo sul livello Web, modifica l&#39;applicazione Web e ridistribuisce il modulo sul sito pubblico. La ridistribuzione dell’applicazione web può causare tempi di inattività del server. Poiché il tempo di inattività del server è un&#39;attività pianificata, le modifiche non possono essere inviate immediatamente al sito pubblico.
+Questo causa spesso problemi nella gestione della configurazione e ritardi nella produzione. Ad esempio, se nel repository è disponibile una versione più recente di un modulo, Progettazione moduli sostituisce il modulo sul livello Web, modifica l&#39;applicazione Web e ridistribuisce il modulo sul sito pubblico. La ridistribuzione dell’applicazione web può causare tempi di inattività del server. Poiché il tempo di inattività del server è un&#39;attività pianificata, le modifiche non possono essere inviate immediatamente al sito pubblico.
 
-Forms Portal riduce i costi generali di gestione e i ritardi di produzione. Fornisce agli sviluppatori web i componenti necessari per creare e personalizzare un portale di moduli su siti web creati con Adobe Experience Manager (AEM).
+Forms Portal riduce i costi generali di gestione e i ritardi di produzione. Fornisce agli sviluppatori web i componenti necessari per creare e personalizzare un portale Forms nei siti web creati con Adobe Experience Manager (AEM).
 
-Per ulteriori informazioni sul portale Forms e sulle relative funzioni, consulta [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
+Per ulteriori informazioni su Forms Portal e sulle sue funzioni, consulta [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
 
-## Guida introduttiva al portale dei moduli {#getting-started-with-forms-portal}
+## Guida introduttiva a Forms Portal {#getting-started-with-forms-portal}
 
-Passare alla pagina pubblicata del portale dei moduli. Per ulteriori informazioni sulla creazione di una pagina del portale dei moduli, vedere [Creazione di una pagina del portale dei moduli](../../forms/using/creating-form-portal-page.md).
+Passare alla pagina pubblicata di Forms Portal. Per ulteriori informazioni sulla creazione di una pagina di Forms Portal, consulta [Creazione di una pagina del portale Forms](../../forms/using/creating-form-portal-page.md).
 
-Il componente Ricerca ed elenco del portale rom visualizza i moduli disponibili nell’istanza Publish del server AEM. Questo elenco include tutti i moduli o i moduli definiti nel filtro al momento della creazione della pagina del portale dei moduli. Una pagina del portale dei moduli ha un aspetto simile a quello mostrato nell&#39;immagine seguente:
+Il componente Ricerca ed elenco di Forms Portal visualizza i moduli disponibili nell’istanza Publish del server AEM. Questo elenco include tutti i moduli o i moduli definiti nel filtro al momento dell&#39;authoring della pagina Forms Portal. Una pagina di Forms Portal ha un aspetto simile a quello mostrato nell’immagine seguente:
 
 ![Esempio di pagina del portale dei moduli ](assets/forms-portal-page.png)
 
-Esempio di pagina del portale dei moduli
+Esempio di pagina del portale Forms
 
 ### Ricerca ed elenco {#search-and-lister}
 
-Il componente Ricerca ed elenco consente di aggiungere le seguenti funzionalità al portale dei moduli:
+Il componente Ricerca ed elenco consente di aggiungere le seguenti funzionalità al portale Forms:
 
 * Elenca i moduli disponibili come predefiniti in visualizzazione pannello, scheda o griglia. Supporta anche modelli personalizzatiElenca i moduli da cartelle specifiche in Forms Manager.
 * Specifica come viene eseguito il rendering dei moduli: HTML5, PDF o entrambi.
@@ -88,9 +88,9 @@ Componente Bozze e invii
 
 ## Avviare un nuovo modulo utilizzando i dati del modulo inviati {#start-a-new-form-using-submitted-form-data}
 
-Alcuni moduli devono essere compilati e inviati spesso. Ad esempio, il modulo per la presentazione della dichiarazione dei redditi individuale viene inviato ogni anno. In questi casi, mentre alcune informazioni cambiano ogni volta che si compila il modulo, la maggior parte di esse, come i dati personali e familiari, non cambiano. Tuttavia, è necessario compilare nuovamente l&#39;intero modulo da zero.
+Alcuni moduli devono essere compilati e inviati spesso. Ad esempio, il modulo per la presentazione di una singola dichiarazione dei redditi viene inviato ogni anno. In questi casi, mentre alcune informazioni cambiano ogni volta che si compila il modulo, la maggior parte di esse, come i dati personali e familiari, non cambiano. Tuttavia, è necessario compilare nuovamente l&#39;intero modulo da zero.
 
-AEM Forms può contribuire a ottimizzare l’esperienza di compilazione dei moduli e a ridurre in modo significativo il tempo necessario per compilare e inviare nuovamente un modulo. Gli utenti finali possono avviare un nuovo modulo utilizzando i dati di un modulo inviato. Questa funzionalità è incorporata nel [Componente Bozze e invii](../../forms/using/draft-submission-component.md). Quando si aggiungono bozze e componenti Invio alla pagina del portale dei moduli e la si pubblica, gli utenti finali visualizzano un&#39;opzione nelle schede Forms e Forms bozza inviati per avviare un nuovo modulo utilizzando i dati di un modulo inviato. L’immagine seguente evidenzia tale opzione.
+AEM Forms può contribuire a ottimizzare l’esperienza di compilazione dei moduli e a ridurre in modo significativo il tempo necessario per compilare e inviare nuovamente un modulo. Gli utenti finali possono avviare un nuovo modulo utilizzando i dati di un modulo inviato. Questa funzionalità è incorporata in [Componente Bozze e invii](../../forms/using/draft-submission-component.md). Quando aggiungi il componente Bozze e invia alla pagina del portale Forms e lo pubblichi, gli utenti finali visualizzano un’opzione nelle schede Forms e Forms bozze inviate. L’opzione ti consente di avviare un nuovo modulo utilizzando i dati di un modulo inviato. L’immagine seguente evidenzia tale opzione.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 
