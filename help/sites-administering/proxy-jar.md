@@ -1,19 +1,15 @@
 ---
 title: Strumento Server proxy (proxy.jar)
-seo-title: Proxy Server Tool (proxy.jar)
 description: Informazioni su Proxy Server Tool in AEM.
-seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -47,7 +43,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Opzioni {#options}
 
 * **q (modalità non interattiva)** Non scrive le richieste nella finestra della console. Utilizzare questa opzione se non si desidera rallentare la connessione o se si registra l&#39;output in un file (vedere l&#39;opzione -logfile ).
-* **b (modalità binaria)** Se stai cercando combinazioni di byte specifiche nel traffico, abilita la modalità binaria. L’output conterrà quindi l’output esadecimale e di caratteri.
+* **b (modalità binaria)** Se stai cercando combinazioni di byte specifiche nel traffico, abilita la modalità binaria. L’output contiene l’output esadecimale e dei caratteri.
 * **t (voci di registro timestamp)** Aggiunge una marca temporale a ciascun output del registro. La marca temporale è in secondi, pertanto potrebbe non essere adatta per il controllo di singole richieste. Utilizzalo per individuare gli eventi che si sono verificati in un momento specifico se utilizzi il server proxy per un periodo di tempo più lungo.
 * **logfile &lt;filename> (scrittura su file di log)** Scrive la conversazione client-server in un file di log. Questo parametro funziona anche in modalità silenziosa.
 * **i &lt;numindentions> (aggiungi rientro)** Per una migliore leggibilità, a ogni connessione attiva viene applicato un rientro. Il valore predefinito è 16 livelli. (Novità della versione 1.16 di proxy.jar).
@@ -74,7 +70,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Verifica del funzionamento di Keep-Alive**
 
-**Keep-Alive** significa che un client riutilizza la connessione al server per trasportare più file (il codice della pagina, le immagini, i fogli di stile e così via). Senza keep-alive, il client deve stabilire una nuova connessione per ogni richiesta.
+**Keep-Alive** indica che un client riutilizza la connessione al server per trasportare più file (codice della pagina, immagini, fogli di stile e così via). Senza keep-alive, il client deve stabilire una nuova connessione per ogni richiesta.
 
 Per verificare se keep-alive funziona:
 
@@ -86,7 +82,7 @@ Per verificare se keep-alive funziona:
 
 **Ricerca di richieste perse**
 
-Se perdi le richieste in un’impostazione server complessa, ad esempio con un firewall e un dispatcher, puoi utilizzare il server proxy per scoprire dove è stata persa la richiesta. In caso di firewall:
+Se perdi le richieste in un’impostazione server complessa, ad esempio con un firewall e un Dispatcher, puoi utilizzare il server proxy per scoprire dove è stata persa la richiesta. Se è presente un firewall:
 
 1. Avviare un proxy prima di un firewall
 1. Avvia un altro proxy dopo un firewall
@@ -126,11 +122,11 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Mostra il numero di byte passati tra client e server nella 6a connessione e alla velocità media.
+Mostra il numero di byte passati tra client e server alla sesta connessione e alla velocità media.
 
 ## Esempio di output del registro {#an-example-of-log-output}
 
-Su richiesta, esamineremo un modello semplice che produca il seguente codice:
+Rivedi un modello semplice che, se richiesto, genera il seguente codice:
 
 ```xml
 <html>
@@ -144,13 +140,13 @@ Su richiesta, esamineremo un modello semplice che produca il seguente codice:
 </html>
 ```
 
-Se AEM è in esecuzione su localhost:4303, avviare il server proxy come indicato di seguito:
+Se l&#39;AEM è in esecuzione su localhost:4303, avviare il server proxy come indicato di seguito:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-È possibile accedere al server (`localhost:4303`) senza il server proxy, ma se vi accedi tramite `localhost:4444`, il server proxy registrerà la comunicazione. Apri un browser e accedi a una pagina creata con il modello precedente. In seguito, controlla il file di registro.
+È possibile accedere al server (`localhost:4303`) senza il server proxy, ma se vi accedi tramite `localhost:4444`, il server proxy registra la comunicazione. Apri un browser e accedi a una pagina creata con il modello precedente. In seguito, controlla il file di registro.
 
 >[!NOTE]
 >
@@ -181,7 +177,7 @@ Il client richiede una connessione keep-alive, in modo che il server possa invia
 C-0-#000369 -> [Connection: Keep-Alive ]
 ```
 
-Il server proxy è uno strumento utile per verificare se i cookie sono impostati correttamente o meno. In questo esempio viene illustrato:
+Il server proxy è uno strumento utile per verificare se i cookie sono impostati correttamente o meno. Qui puoi vedere quanto segue:
 
 * Cookie cq3session generato da AEM
 * il cookie del commutatore della modalità di visualizzazione generato dal CFC
@@ -281,4 +277,4 @@ L’esempio precedente è relativamente semplice, perché le due connessioni si 
 * in primo luogo, il server restituisce il codice HTML
 * quindi il browser richiede l’immagine e apre una nuova connessione
 
-In pratica, una pagina può generare molte richieste parallele per immagini, fogli di stile, file JavaScript e così via. Ciò significa che i registri presentano voci sovrapposte di connessioni aperte parallele. In tal caso, per migliorare la leggibilità, è consigliabile utilizzare l’opzione -i.
+In pratica, una pagina può generare molte richieste parallele per immagini, fogli di stile, file JavaScript e così via. Ciò significa che i registri presentano voci sovrapposte di connessioni aperte parallele. In tal caso, l’Adobe consiglia di utilizzare l’opzione -i per migliorare la leggibilità.

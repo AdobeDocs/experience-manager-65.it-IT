@@ -1,20 +1,16 @@
 ---
 title: Personalizzare l’interfaccia utente per la creazione di corrispondenza
-seo-title: Customize create correspondence UI
 description: Scopri come personalizzare l’interfaccia utente per la creazione di corrispondenza.
-seo-description: Learn how to customize create correspondence UI.
-uuid: 9dee9b6f-4129-4560-9bf8-db48110b76f7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 0%
+source-wordcount: '1084'
+ht-degree: 1%
 
 ---
 
@@ -42,20 +38,20 @@ Per impostare un&#39;immagine del logo a scelta, effettuare le seguenti operazio
 
 ## Creazione della struttura di cartelle richiesta {#creatingfolderstructure}
 
-Crea la struttura di cartelle, come spiegato di seguito, per ospitare l’immagine del logo personalizzato e il foglio di stile. La nuova struttura di cartelle con la cartella principale /apps è simile alla struttura della cartella /libs.
+Creare la struttura di cartelle, come spiegato di seguito, per ospitare l&#39;immagine del logo personalizzato e il foglio di stile. La nuova struttura di cartelle con la cartella principale /apps è simile alla struttura della cartella /libs.
 
 Per qualsiasi personalizzazione, crea una struttura di cartelle parallela, come spiegato di seguito, nel ramo /apps.
 
-Il ramo /apps (struttura di cartelle):
+Il `/apps` ramo (struttura cartelle):
 
-* Garantisce la sicurezza dei file in caso di aggiornamento del sistema. In caso di aggiornamento, feature pack o correzione rapida, il ramo /libs viene aggiornato e le modifiche nel ramo /libs vengono sovrascritte.
+* Garantisce la sicurezza dei file in caso di aggiornamento del sistema. In caso di aggiornamento, feature pack o correzione rapida, il `/libs` il ramo viene aggiornato e se le modifiche vengono memorizzate nel `/libs` vengono sovrascritti.
 * Consente di non disturbare il sistema/ramo attuale, che è possibile risolvere per errore se si utilizzano i percorsi predefiniti per la memorizzazione dei file personalizzati.
-* Consente alle risorse di ottenere una priorità più elevata quando l’AEM cerca le risorse. L’AEM è configurato per cercare prima il ramo /apps e quindi il ramo /libs per trovare una risorsa. Questo meccanismo significa che il sistema utilizza la sovrapposizione (e le personalizzazioni qui definite).
+* Consente alle risorse di ottenere una priorità più elevata quando l’AEM cerca le risorse. L’AEM è configurato per la ricerca nel `/apps` prima la diramazione e quindi la `/libs` per trovare una risorsa. Questo meccanismo significa che il sistema utilizza la sovrapposizione (e le personalizzazioni qui definite).
 
-Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel ramo /apps:
+Per creare la struttura di cartelle richiesta in, attenersi alla procedura descritta di seguito `/apps` ramo:
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
-1. Nella cartella delle app, crea una cartella denominata `css` con un percorso/struttura simile alla cartella css (che si trova nella cartella ccrui).
+1. Nella cartella delle app, crea una cartella denominata `css` con un percorso/struttura simile alla cartella css (nella cartella ccrui).
 
    Passaggi per creare la cartella css:
 
@@ -65,9 +61,9 @@ Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel r
 
    1. Assicurati che la finestra di dialogo Sovrapponi nodo abbia i seguenti valori:
 
-      **Percorso:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Percorso:** `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      **Posizione sovrapposizione:** /apps/
+      **Posizione sovrapposizione:** `/apps/`
 
       **Corrispondenza tipi di nodo:** Selezionato
 
@@ -75,7 +71,7 @@ Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel r
 
       >[!NOTE]
       >
-      >Non apportare modifiche nel ramo /libs. Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
+      >Non modificare `/libs` filiale. Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
       >
       >    
       >    
@@ -87,7 +83,7 @@ Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel r
 
    1. Fai clic su **OK**. La cartella css viene creata nel percorso specificato.
 
-1. Nella cartella delle app, crea una cartella denominata `imgs` con un percorso/struttura simile alla cartella imgs (che si trova nella cartella ccrui).
+1. Nella cartella delle app, crea una cartella denominata `imgs` con un percorso/struttura simile alla cartella imgs (nella cartella ccrui).
 
    1. Fare clic con il pulsante destro del mouse **img** cartella nel percorso seguente e selezionare **Sovrapponi nodo**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Assicurati che la finestra di dialogo Sovrapponi nodo abbia i seguenti valori:
@@ -111,7 +107,7 @@ Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel r
 Carica il file del logo personalizzato su CRX. Il rendering del logo è disciplinato dalle regole standard di HTML. I formati di file di immagine supportati dipendono dal browser utilizzato per accedere ad AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consulta la documentazione specifica per il browser sui formati di immagine supportati.
 
 * Le dimensioni predefinite dell&#39;immagine del logo sono 48 px &#42; 48 px Assicurati che l’immagine sia simile a questa dimensione o superiore a 48 px &#42; 48 px
-* Se l’altezza dell’immagine del logo è superiore a 50 px, l’interfaccia utente Crea corrispondenza ridimensiona l’immagine fino a un’altezza massima di 50 px, in quanto si tratta dell’altezza dell’intestazione. Durante il ridimensionamento dell’immagine, l’interfaccia utente Crea corrispondenza mantiene le proporzioni dell’immagine.
+* Se l’altezza dell’immagine del logo è superiore a 50 px, l’interfaccia utente per la creazione di corrispondenza ridimensiona l’immagine a un’altezza massima di 50 px, in quanto si tratta dell’altezza dell’intestazione. Durante il ridimensionamento dell’immagine, l’interfaccia utente Crea corrispondenza mantiene le proporzioni dell’immagine.
 * L&#39;interfaccia utente per la creazione di corrispondenza non consente di ridimensionare l&#39;immagine se è piccola, quindi assicurati di utilizzare un&#39;immagine con logo di almeno 48 px in altezza e larghezza sufficiente per una maggiore chiarezza.
 
 Per caricare il file del logo personalizzato in CRX, effettua le seguenti operazioni:
@@ -141,7 +137,7 @@ Per caricare il file del logo personalizzato in CRX, effettua le seguenti operaz
 
    Viene visualizzata la finestra di dialogo Modifica jcr:data.
 
-   Ora fai clic sulla cartella newlogo.png, fai doppio clic su jcr:content (opzione dim) e imposta il tipo nt:resource. Se non presente, crea una proprietà denominata jcr:content.
+   Fare clic sulla cartella newlogo.png, quindi fare doppio clic su jcr:content (opzione dim) e impostare il tipo nt:resource. Se non è presente, crea una proprietà denominata jcr:content.
 
 1. Nella finestra di dialogo Modifica jcr:dati, fai clic su **Sfoglia** e selezionare il file di immagine da utilizzare come logo (qui CustomLogo.png).
 
@@ -153,11 +149,11 @@ Per caricare il file del logo personalizzato in CRX, effettua le seguenti operaz
 
 1. Clic **Salva tutto**.
 
-## Creare il CSS per integrare il logo con l’interfaccia utente {#createcss}
+## Creare il CSS per il rendering del logo con l’interfaccia utente {#createcss}
 
 L&#39;immagine logo personalizzata richiede il caricamento di un foglio di stile aggiuntivo nel contesto del contenuto.
 
-Per impostare il foglio di stile per il rendering del logo, attenersi alla procedura descritta di seguito.
+Utilizza i seguenti passaggi per creare il foglio di stile per il rendering del logo con l’interfaccia utente:
 
 1. Passa a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, accedi come amministratore.
 1. Crea un file denominato customcss.css (non è possibile utilizzare un nome file diverso) nel percorso seguente:
@@ -178,9 +174,9 @@ Per impostare il foglio di stile per il rendering del logo, attenersi alla proce
 
    1. Clic **Salva tutto**.
 
-## Aggiorna l’interfaccia utente Crea corrispondenza per visualizzare il logo personalizzato {#refreshccrui}
+## Aggiorna l’interfaccia utente per la creazione di corrispondenza in modo da visualizzare il logo personalizzato {#refreshccrui}
 
-Cancella la cache del browser e apri l’istanza dell’interfaccia utente Crea corrispondenza nel browser. Dovresti visualizzare il tuo logo personalizzato.
+Cancella la cache del browser, quindi apri l’istanza dell’interfaccia utente Crea corrispondenza nel browser in modo da visualizzare il logo personalizzato.
 
 ![Creare un’interfaccia utente per la corrispondenza con un logo personalizzato](assets/0_1_introscreenshot-1.png)
 

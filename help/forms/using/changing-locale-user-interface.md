@@ -1,19 +1,15 @@
 ---
 title: Modifica delle impostazioni locali dell'interfaccia utente di AEM Forms Workspace
-seo-title: Changing the locale of AEM Forms workspace user interface
 description: Come modificare l’area di lavoro di AEM Forms per localizzare testo, categorie compresse, code e processi e il selettore data sull’interfaccia.
-seo-description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
-uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -36,11 +32,11 @@ Prima di eseguire i passaggi precedenti, assicurati di seguire i passaggi elenca
 
 ## Localizzazione del testo {#localizing-text}
 
-Per aggiungere il supporto per una lingua, effettua le seguenti operazioni *Nuovo* e il codice delle impostazioni internazionali del browser *nw*.
+Effettua le seguenti operazioni per aggiungere il supporto per una lingua *Nuovo* e il codice delle impostazioni internazionali del browser *nw*.
 
-1. Accedi a CRXDE Lite.
-L’URL predefinito di CRXDE Lite è `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Passa alla posizione `apps/ws/locales` e crea una nuova cartella `nw.`
+1. Accedi a CRXDE Liti.
+L’URL predefinito di CRXDE Liti è `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Passa alla posizione `apps/ws/locales` e crea una cartella `nw.`
 1. Copiare il file `translation.json`dalla posizione `/apps/ws/locales/en-US` alla posizione `/apps/ws/locales/nw` .
 1. Accedi a `/apps/ws/locales/nw` e apri `translation.json` per la modifica. Apporta al file translation.json le modifiche specifiche per le impostazioni internazionali.
 
@@ -50,9 +46,9 @@ L’URL predefinito di CRXDE Lite è `https://'[server]:[port]'/lc/crx/de/index.
 
 ## Localizzazione di categorie, code e processi compressi {#localizing-collapsed-categories-queues-and-processes}
 
-AEM Forms Workspace utilizza le immagini per visualizzare intestazioni di categorie, code e processi. Per localizzare queste intestazioni è necessario un pacchetto di sviluppo. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consulta [Creazione del codice dell’area di lavoro di AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+AEM Forms Workspace utilizza le immagini per visualizzare intestazioni di categorie, code e processi. Per localizzare queste intestazioni è necessario un pacchetto di sviluppo. Per informazioni dettagliate sulla creazione di un pacchetto di sviluppo, consulta [Creazione del codice dell’area di lavoro di AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-Nei passaggi seguenti, si presume che i nuovi file di immagine localizzati siano *Categories_nw.png*, *Queue_nw.png*, e *Processes_nw.png*. La larghezza consigliata delle immagini è 19 px.
+Nei passaggi seguenti, si presume che i nuovi file di immagine localizzati siano *Categories_nw.png*, *Queue_nw.png*, e *Processes_nw.png*. La larghezza consigliata delle immagini deve essere impostata su 19 pixel.
 
 >[!NOTE]
 >
@@ -60,7 +56,7 @@ Nei passaggi seguenti, si presume che i nuovi file di immagine localizzati siano
 
 ![collapsing_panels_image](assets/collapsing_panels_image.png)
 
-Per localizzare le immagini, effettua le seguenti operazioni:
+Per localizzare le immagini, effettuare le seguenti operazioni:
 
 1. Utilizzando un client WebDAV, inserire i file immagine nel */apps/ws/images* cartella.
 1. Accedi a */apps/ws/css*. Apri *newStyle.css* per modificare e aggiungere le seguenti voci:
@@ -81,7 +77,7 @@ Per localizzare le immagini, effettua le seguenti operazioni:
 
 1. Eseguire tutte le modifiche semantiche elencate in [Personalizzazione di Workspace](../../forms/using/introduction-customizing-html-workspace.md) articolo.
 1. Accedi a *js/runtime/utility* e aprire la *usersession.js* file per la modifica.
-1. Individua il codice elencato nel blocco di codice originale e aggiungi condizione *lang!== &#39;nw&#39;* all&#39;istruzione if:
+1. Individua il codice elencato nel blocco di codice originale e aggiungi la condizione *lang!== &#39;nw&#39;* all&#39;istruzione if:
 
    ```javascript
    // Orignal code
@@ -109,7 +105,7 @@ Per localizzare le immagini, effettua le seguenti operazioni:
 
 ## Localizzazione selezione data {#localizing-date-picker}
 
-È necessario un pacchetto di sviluppo per localizzare *datepicker* API. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consulta [Creazione del codice dell’area di lavoro di AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
+È necessario un pacchetto di sviluppo per individuare *datepicker* API. Per informazioni dettagliate sulla creazione di un pacchetto di sviluppo, consulta [Creazione del codice dell’area di lavoro di AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 1. Scarica ed estrai il file [Pacchetto interfaccia utente jQuery](https://jqueryui.com/download/all/), passa a *&lt;extracted jquery=&quot;&quot; ui=&quot;&quot; package=&quot;&quot;>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copia il file jquery.ui.datepicker-nw.js per il codice locale nw in apps/ws/js/libs/jqueryui e apporta al file le modifiche specifiche per la lingua.

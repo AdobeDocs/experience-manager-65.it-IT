@@ -1,19 +1,15 @@
 ---
 title: Concedere l’accesso all’editor di regole a specifici gruppi di utenti
-seo-title: Grant rule editor access to select user groups
-description: Concedi accesso limitato all’editor di regole per selezionare i gruppi di utenti.
-seo-description: Grant restricted access to rule editor to select user groups.
-uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
+description: Concedi un accesso limitato all’editor di regole per selezionare i gruppi di utenti.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 feature: Adaptive Forms
 exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '378'
 ht-degree: 7%
 
 ---
@@ -35,22 +31,22 @@ AEM Forms ti consente di limitare l’accesso all’editor di regole agli utenti
 
    ![1-2](assets/1-2.png)
 
-1. Nella finestra della console Web, individua e fai clic su **[!UICONTROL Configurazione di un modulo adattivo e di un canale web di comunicazione interattiva]**. **[!UICONTROL Configurazione di un modulo adattivo e di un canale web di comunicazione interattiva]** viene visualizzata. Non modificare alcun valore e fai clic su **Salva**.
+1. Nella finestra Console Web individuare e fare clic su **[!UICONTROL Configurazione di un modulo adattivo e di un canale web di comunicazione interattiva]**. **[!UICONTROL Configurazione di un modulo adattivo e di un canale web di comunicazione interattiva]** viene visualizzata. Non modificare alcun valore e fai clic su **Salva**.
 
-   Crea un file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config in CRX-repository.
+   Crea un file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config nel repository CRX.
 
 1. Accedi a CRXDE come amministratore. Apri il file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config per la modifica.
 1. Utilizzare la proprietà seguente per specificare il nome di un gruppo che può accedere all&#39;editor di regole (ad esempio, RuleEditorsUserGroup) e fare clic su **Salva tutto**.
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
-   Per abilitare l’accesso per più gruppi, specifica un elenco di valori separati da virgole:
+   Per abilitare l’accesso per più gruppi, specifica un elenco di valori separati da virgola:
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 
    ![Crea utente](assets/create_user_new.png)
 
-   Ora, quando un utente che non fa parte di un gruppo di utenti specificato (in questo caso RuleEditorsUserGroup) tocca un campo, l’icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile nella barra degli strumenti dei componenti:
+   Ora, quando un utente che non fa parte del gruppo di utenti specificato (in questo caso RuleEditorsUserGroup) tocca un campo, l’icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile nella barra degli strumenti dei componenti:
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 

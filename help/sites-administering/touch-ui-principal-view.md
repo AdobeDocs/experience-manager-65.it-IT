@@ -1,19 +1,15 @@
 ---
 title: Visualizzazione entità per la gestione delle autorizzazioni
-seo-title: Principal View for Permissions Management
 description: Scopri la nuova interfaccia utente touch che facilita la gestione delle autorizzazioni.
-seo-description: Learn about the new Touch UI interface that facilitates permissions management.
-uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '764'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-AEM 6.5 introduce la gestione delle autorizzazioni per utenti e gruppi. La funzionalità principale rimane la stessa dell’interfaccia classica, ma è più semplice da usare ed efficiente.
+AEM 6.5 introduce la gestione delle autorizzazioni per utenti e gruppi. La funzionalità principale rimane la stessa dell’interfaccia classica, ma è più semplice ed efficiente.
 
 ## Guida all’uso {#how-to-use}
 
@@ -55,7 +51,7 @@ Facendo clic sul nome, a destra vengono visualizzate le autorizzazioni assegnate
 
 ### Aggiunta di una nuova voce di controllo di accesso per un&#39;entità {#adding-new-access-control-entry-for-a-principal}
 
-È possibile aggiungere nuove autorizzazioni aggiungendo una nuova voce di controllo degli accessi facendo clic sul pulsante Aggiungi voce ACE.
+È possibile aggiungere nuove autorizzazioni aggiungendo una voce di controllo di accesso. È sufficiente fare clic sul pulsante Aggiungi ACE.
 
 ![Aggiungere un nuovo ACL per un&#39;entità](assets/patru.png)
 
@@ -63,7 +59,7 @@ Viene visualizzata la finestra mostrata di seguito. Il passaggio successivo cons
 
 ![Configurare il percorso delle autorizzazioni](assets/cinci-1.png)
 
-Qui selezioniamo un percorso per il quale desideri configurare un’autorizzazione **dam-users**:
+In questo caso, viene selezionato un percorso in cui è possibile configurare un’autorizzazione per **dam-users**:
 
 ![Configurazione di esempio per dam-users](assets/sase-1.png)
 
@@ -83,7 +79,7 @@ Dopo aver selezionato l&#39;elenco dei privilegi, l&#39;utente può scegliere il
 
 ### Utilizzo delle restrizioni {#using-restrictions}
 
-Oltre all’elenco dei privilegi e al tipo di autorizzazione su un determinato percorso, questa schermata consente anche di aggiungere restrizioni per il controllo degli accessi a grana fine, come illustrato di seguito:
+Oltre all’elenco dei privilegi e al tipo di autorizzazione su un determinato percorso, questa schermata consente di aggiungere restrizioni per il controllo degli accessi a grana fine, come illustrato di seguito:
 
 ![Aggiungi restrizioni](assets/image2019-3-21_1-4-14.png)
 
@@ -101,7 +97,7 @@ La nuova voce ACE viene visualizzata nell&#39;elenco di controllo di accesso com
 
 Le voci di controllo di accesso possono essere modificate selezionando un&#39;entità principale e scegliendo l&#39;ACE che si desidera modificare.
 
-Ad esempio, qui è possibile modificare la voce seguente per **dam-users** facendo clic sull’icona della matita a destra:
+Ad esempio, qui puoi modificare la voce seguente per **dam-users** facendo clic sull’icona della matita a destra:
 
 ![Aggiungi restrizione](assets/image2019-3-21_0-35-39.png)
 
@@ -109,11 +105,11 @@ Viene visualizzata la schermata di modifica con ACE configurati preselezionati. 
 
 ![Modifica voce](assets/noua-1.png)
 
-Stiamo aggiungendo il `addChildNodes` privilegio per **dam-users** nel percorso specificato.
+Qui le `addChildNodes` privilegio aggiunto per **dam-users** nel percorso specificato.
 
 ![Aggiungi privilegio](assets/image2019-3-21_0-45-35.png)
 
-Le modifiche possono essere salvate facendo clic su **Salva** in alto a destra, e le modifiche si rifletteranno nelle nuove autorizzazioni per **dam-users** come mostrato di seguito:
+Le modifiche possono essere salvate facendo clic su **Salva** in alto a destra e le modifiche si riflettono nelle nuove autorizzazioni per **dam-users** come mostrato di seguito:
 
 ![Salva modifiche](assets/zece-1.png)
 
@@ -125,7 +121,7 @@ Le modifiche possono essere salvate facendo clic su **Salva** in alto a destra, 
 
 ### Combinazioni di privilegi dell’interfaccia classica {#classic-ui-privilege-combinations}
 
-La nuova interfaccia utente delle autorizzazioni utilizza esplicitamente il set di privilegi di base invece di combinazioni predefinite che non riflettevano realmente i privilegi sottostanti concessi.
+La nuova interfaccia utente delle autorizzazioni utilizza esplicitamente il set di privilegi di base invece di combinazioni predefinite che non riflettono realmente i privilegi sottostanti esatti concessi.
 
 Ciò ha causato confusione su ciò che è esattamente configurato. Nella tabella seguente viene elencato il mapping tra le combinazioni di privilegi dell’interfaccia classica e i privilegi effettivi che le costituiscono:
 

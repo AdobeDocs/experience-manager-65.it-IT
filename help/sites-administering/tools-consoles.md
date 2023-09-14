@@ -1,26 +1,22 @@
 ---
 title: Console Strumenti
-seo-title: Tools Consoles
 description: Informazioni sulle diverse console Strumenti disponibili in AEM.
-seo-description: Learn about the different tools consoles throughout AEM.
-uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 34%
+source-wordcount: '594'
+ht-degree: 30%
 
 ---
 
 # Console Strumenti{#tools-consoles}
 
-Le console **Strumenti** permettono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. Al momento esistono due versioni del **Strumenti** a seconda dell’interfaccia utente in uso:
+Il **Strumenti** Le console consentono di accedere a diversi strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. Al momento esistono due versioni del **Strumenti** a seconda dell’interfaccia utente in uso:
 
 * [Strumenti - Interfaccia touch](#tools-touch-optimized-ui)
 * [Strumenti - Interfaccia classica](#tools-classic-ui)
@@ -47,7 +43,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITI</td>
+   <td>CRXDE Lite</td>
   </tr>
   <tr>
    <td> </td>
@@ -374,11 +370,11 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Configurazioni ClientContext<br /> </td>
-   <td>ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Le configurazioni cloud predefinite e di marketing sono disponibili qui.<br /> </td>
+   <td>ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Le configurazioni predefinite e di Experience Cloud sono disponibili qui.<br /> </td>
   </tr>
   <tr>
    <td>Configurazioni servizi cloud<br /> </td>
-   <td>Contiene le configurazioni relative all’integrazione con Adobe Marketing Cloud.</td>
+   <td>Contiene le configurazioni relative all’integrazione con Adobe Experience Cloud.</td>
   </tr>
   <tr>
    <td>Impostazioni cloud<br /> </td>
@@ -390,11 +386,11 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>DAM </td>
-   <td>Consente di accedere a varie opzioni.</td>
+   <td>Accesso a varie opzioni.</td>
   </tr>
   <tr>
    <td>Dashboard</td>
-   <td>Consente di creare dashboard di reporting, che offrono un modo personalizzabile di definire le pagine che visualizzano i dati consolidati.</td>
+   <td>Creare dashboard di reporting, che offrono un modo personalizzabile di definire pagine che visualizzano dati consolidati.</td>
   </tr>
   <tr>
    <td>Documentazione personalizzata</td>
@@ -406,11 +402,11 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Invio modulo</td>
-   <td>Contiene l’elenco degli invii di moduli ricevuti.</td>
+   <td>L’elenco dei moduli inviati.</td>
   </tr>
   <tr>
    <td>Importatori </td>
-   <td>Consente di accedere a varie opzioni.</td>
+   <td>Accesso a varie opzioni.</td>
   </tr>
   <tr>
    <td>Verifica collegamenti esterni</td>
@@ -426,11 +422,11 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Replica - Agenti di replica</td>
-   <td>Utilizzato per replicare i dati dall’ambiente di authoring a quello di pubblicazione quando si pubblicano le pagine, oppure con la replica inversa per restituire i commenti degli utenti dall’ambiente di pubblicazione all’ambiente di authoring.</td>
+   <td>Utilizzato per replicare i dati dall’istanza di authoring a Publish durante la pubblicazione delle pagine, oppure con replica inversa per restituire i commenti degli utenti dall’ambiente di pubblicazione all’istanza di authoring.</td>
   </tr>
   <tr>
    <td>Rapporti</td>
-   <td>AEM fornisce una serie di rapporti personalizzati, consente di creare rapporti personalizzati e/o svilupparne di propri.</td>
+   <td>AEM offre una serie di rapporti personalizzati, che consentono di creare rapporti personalizzati o di svilupparne di personalizzati.</td>
   </tr>
   <tr>
    <td>Scaffolding pagine predefinito</td>
@@ -438,7 +434,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Sicurezza - Configurazione self-service </td>
-   <td>Consente di configurare le e-mail che gli utenti ricevono automaticamente quando creano un account o reimpostano una password e di confermare una password reimpostata.</td>
+   <td>Configura le e-mail che gli utenti ricevono automaticamente quando creano un account o reimpostano una password e conferma la reimpostazione di una password.</td>
   </tr>
   <tr>
    <td>Segmentazione</td>
@@ -454,7 +450,7 @@ Le console **Strumenti** permettono di accedere a console e strumenti specifici 
   </tr>
   <tr>
    <td>Controllo delle versioni - Rimuovi versioni</td>
-   <td>Consente di eliminare le versioni delle pagine in base alle esigenze.</td>
+   <td>Rimuovi le versioni della pagina in base alle esigenze.</td>
   </tr>
   <tr>
    <td>Flusso di lavoro</td>
