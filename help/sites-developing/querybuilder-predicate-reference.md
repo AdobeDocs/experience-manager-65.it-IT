@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '2343'
+source-wordcount: '2347'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ Può essere utilizzato con qualsiasi valore per verificare la presenza di framme
 
 ### dateComparison {#datecomparison}
 
-Confronta due proprietà DATA JCR tra loro. Può verificare se sono uguali, ineguali, maggiori o maggiori o uguali.
+Confronta due proprietà DATA JCR tra loro. Puoi verificare se sono uguali, ineguali, maggiori o maggiori o uguali.
 
 Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca.
 
@@ -108,7 +108,7 @@ Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca
 
 ### intervallo di date {#daterange}
 
-Confronta le proprietà DATA JCR con un intervallo di data/ora. Utilizza il formato ISO8601 per data e ora ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) e consente anche rappresentazioni parziali, come `YYYY-MM-DD`. In alternativa, la marca temporale può essere fornita come numero di millisecondi dal 1970 nel fuso orario UTC, il formato di ora UNIX®.
+Confronta le proprietà DATA JCR con un intervallo di data/ora. Utilizza il formato ISO8601 per data e ora ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) e consente anche rappresentazioni parziali, come `YYYY-MM-DD`. In alternativa, la marca temporale può essere fornita come il numero di millisecondi dal 1970 nel fuso orario UTC, il formato ora UNIX®.
 
 Puoi cercare qualsiasi cosa tra due marche temporali, qualsiasi cosa più recente o più vecchia di una determinata data e anche scegliere tra intervalli inclusivi e aperti.
 
@@ -255,7 +255,7 @@ Controlla se un nodo è una risorsa principale DAM e non una risorsa secondaria.
 
 Questo è un predicato di solo filtro e non può utilizzare un indice di ricerca.
 
-Supporta l&#39;estrazione dei facet. Fornisce due bucket per le risorse principali e secondarie.
+Supporta l’estrazione facet e fornisce due bucket per le risorse principali e secondarie.
 
 #### Proprietà {#properties-9}
 
@@ -307,7 +307,7 @@ Supporta l&#39;estrazione di facet nello stesso modo del predicato dell&#39;inte
 
 ### orderby {#orderby}
 
-Consente di ordinare il risultato. Se è necessario ordinare per più proprietà, questo predicato deve essere aggiunto più volte utilizzando il prefisso numerico, ad esempio `1_orderby=first`, `2_oderby=second`.
+Consente di ordinare i risultati. Se è necessario ordinare per più proprietà, questo predicato deve essere aggiunto più volte utilizzando il prefisso numerico, ad esempio `1_orderby=first`, `2_oderby=second`.
 
 #### Proprietà {#properties-13}
 
@@ -333,7 +333,7 @@ Non supporta l&#39;estrazione dei facet.
 
 * **percorso**
 
-  Pattern di tracciato; a seconda dell’esatto, l’intera sottostruttura corrisponde (ad esempio, aggiungendo `//*` in xpath, ma tieni presente che non include il percorso di base) (exact=false, default) o solo una corrispondenza esatta del percorso, che può includere caratteri jolly ( `*`); se self è impostato, viene eseguita la ricerca nell&#39;intera sottostruttura, incluso il nodo di base.
+  Schema del percorso. A seconda dell’esatta, l’intera sottostruttura corrisponde (ad esempio, aggiungendo `//*` in xpath, ma tieni presente che non include il percorso di base) (exact=false, default) o solo una corrispondenza esatta del percorso, che può includere caratteri jolly ( `*`); se self è impostato, viene eseguita la ricerca nell&#39;intera sottostruttura, incluso il nodo di base.
 
 * **esatto**
 
@@ -383,7 +383,7 @@ Supporta l&#39;estrazione dei facet. Fornisce bucket per ogni valore di propriet
 
 Corrisponde a una proprietà JCR rispetto a un intervallo. Questo vale per le proprietà con tipi lineari come `LONG`, `DOUBLE`, e `DECIMAL`. Per `DATE`, consulta il predicato dell’intervallo di dati con input nel formato data ottimizzato.
 
-È possibile definire un limite inferiore e un limite superiore o solo uno di essi. L’operazione (ad esempio, &quot;minore di&quot; o &quot;minore o uguale a&quot;) può anche essere specificata per i limiti inferiore e superiore singolarmente.
+È possibile definire un limite inferiore e un limite superiore o solo uno di essi. L’operazione (ad esempio, &quot;minore di&quot; o &quot;minore o uguale a&quot;) può essere specificata anche per i limiti inferiore e superiore, singolarmente.
 
 Non supporta l&#39;estrazione dei facet.
 
@@ -553,7 +553,7 @@ Supporta l&#39;estrazione dei facet. Fornisce bucket per ogni tag univoco, utili
 
 ### tagsearch {#tagsearch}
 
-Cerca il contenuto con uno o più tag, specificando le parole chiave. In questo modo verranno innanzitutto cercati i tag che contengono queste parole chiave nei titoli, quindi verranno limitati solo gli elementi con queste parole chiave.
+Cerca il contenuto con uno o più tag, specificando le parole chiave. In questo modo, vengono innanzitutto cercati i tag che contengono queste parole chiave nei titoli, quindi vengono limitati solo gli elementi con queste parole chiave.
 
 Non supporta l&#39;estrazione dei facet.
 

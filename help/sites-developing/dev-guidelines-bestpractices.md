@@ -1,18 +1,14 @@
 ---
 title: Sviluppo AEM - Linee guida e best practice
-seo-title: AEM Development - Guidelines and Best Practices
 description: Linee guida e best practice per lo sviluppo sull’AEM
-seo-description: Guidelines and best practices for developing on AEM
-uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Linee guida per l’utilizzo di modelli e componenti {#guidelines-for-using-templates-and-components}
 
-I componenti e i modelli AEM costituiscono un toolkit molto potente. Possono essere utilizzati dagli sviluppatori per fornire agli utenti aziendali, agli editor e agli amministratori del sito web la funzionalità di adattare i loro siti web alle mutevoli esigenze aziendali (agilità dei contenuti) mantenendo al contempo il layout uniforme dei siti (protezione del marchio).
+I componenti e i modelli di Adobe Experience Manager (AEM) comprendono un potente toolkit. Possono essere utilizzati dagli sviluppatori per fornire agli utenti aziendali dei siti web, agli editor e agli amministratori la funzionalità di adattare i loro siti web alle mutevoli esigenze aziendali (agilità dei contenuti). Tutto questo mantenendo l&#39;uniformità del layout dei siti (protezione del marchio).
 
 Una sfida tipica per una persona responsabile di un sito web o di un insieme di siti web (ad esempio in una filiale di un&#39;azienda globale) è quella di introdurre un nuovo tipo di presentazione di contenuti sui propri siti web.
 
@@ -32,21 +28,21 @@ Il modo consigliato per affrontare tale sfida consiste nel:
 * Riutilizzare un modello esistente per creare un nuovo tipo di pagina. Il modello definisce approssimativamente la struttura della pagina (elementi di navigazione, pannelli e così via), che viene ulteriormente perfezionata dal relativo design (CSS, grafica).
 * Utilizza il sistema paragrafo (parsys/iparsys) nelle nuove pagine.
 * Definire il diritto di accesso alla modalità Progettazione dei sistemi paragrafo, in modo che solo le persone autorizzate (in genere l’amministratore) possano modificarli.
-* Definisci i componenti consentiti nel sistema paragrafo specificato in modo che gli editor possano quindi inserire i componenti richiesti nella pagina. Nel nostro caso potrebbe essere un componente elenco, che può attraversare una sottostruttura di pagine ed estrarre le informazioni in base a regole predefinite.
-* Gli editor aggiungono e configurano i componenti consentiti, nelle pagine di cui sono responsabili, per fornire all’azienda le funzionalità (informazioni) richieste.
+* Definisci i componenti consentiti nel sistema paragrafo specificato in modo che gli editor possano quindi inserire i componenti richiesti nella pagina. In questo caso, potrebbe essere un componente elenco, che può attraversare una sottostruttura di pagine ed estrarre le informazioni in base a regole predefinite.
+* Gli editor aggiungono e configurano i componenti consentiti sulle pagine di cui sono responsabili, per fornire all’azienda le funzionalità (informazioni) richieste.
 
-Questo illustra come questo approccio consenta agli utenti e agli amministratori del sito web che vi contribuiscono di rispondere rapidamente alle esigenze aziendali senza richiedere il coinvolgimento di team di sviluppo. Metodi alternativi, come la creazione di un nuovo modello, sono solitamente costosi e richiedono un processo di gestione delle modifiche e il coinvolgimento del team di sviluppo. Ciò rende l&#39;intero processo molto più lungo e costoso.
+Questo illustra come questo approccio consenta agli utenti e agli amministratori del sito web che vi contribuiscono di rispondere rapidamente alle esigenze aziendali senza richiedere il coinvolgimento di team di sviluppo. I metodi alternativi, come la creazione di un modello, sono in genere costosi e richiedono un processo di gestione delle modifiche e il coinvolgimento del team di sviluppo. Ciò rende l&#39;intero processo più lungo e costoso.
 
 Gli sviluppatori di sistemi basati sull’AEM dovrebbero pertanto utilizzare:
 
 * modelli e controllo di accesso alla progettazione del sistema paragrafo per uniformità e protezione del brand
 * sistema paragrafo, incluse le opzioni di configurazione per la flessibilità.
 
-Le seguenti regole generali per gli sviluppatori hanno senso nella maggior parte dei progetti usuali:
+Le seguenti regole generali per gli sviluppatori hanno senso nella maggior parte dei progetti comuni:
 
 * Mantieni basso il numero di modelli, anche se si tratta solo del numero di strutture di pagina fondamentalmente diverse sui siti web.
-* Fornisci la flessibilità necessaria e le funzionalità di configurazione necessarie ai componenti personalizzati.
-* Massimizzare l&#39;uso della potenza e della flessibilità del sistema di paragrafi dell&#39;AEM - i componenti parsys e iparsys.
+* Fornisci la flessibilità e le funzionalità di configurazione necessarie ai componenti personalizzati.
+* Massimizzare l&#39;uso della potenza e della flessibilità del sistema paragrafo dell&#39;AEM - i componenti parsys e iparsys.
 
 ### Personalizzazione di componenti e altri elementi {#customizing-components-and-other-elements}
 
@@ -64,7 +60,7 @@ Ad esempio:
 
   Ciò comportava la sovrapposizione di una definizione di componente:
 
-   * Creare una nuova cartella di componenti in `/apps/<website-name>/components/<MyComponent>` copiando un componente esistente:
+   * Creare una cartella di componenti in `/apps/<website-name>/components/<MyComponent>` copiando un componente esistente:
 
       * Ad esempio, per personalizzare la copia del componente Testo:
 
@@ -75,16 +71,16 @@ Ad esempio:
 
   Questo caso prevede la sovrapposizione di un servlet:
 
-   * Nell’archivio, copia gli script predefiniti:
+   * Nell’archivio, copia uno o più script predefiniti:
 
       * da `/libs/sling/servlet/errorhandler/`
       * a `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->Tu **non deve** modificare qualsiasi elemento in `/libs` percorso.
+>**Do not** modificare qualsiasi elemento in `/libs` percorso.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+>Il motivo è che il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
 >
 >Per la configurazione e altre modifiche:
 >
@@ -98,9 +94,9 @@ Le query JCR sono uno strumento potente se utilizzato correttamente. Essi sono a
 * query reali degli utenti finali, ad esempio ricerche full-text sul contenuto.
 * occasioni in cui i contenuti strutturati devono essere trovati nell’intero archivio.
 
-  In questi casi, assicurati che le query vengano eseguite solo quando assolutamente necessario, ad esempio all’attivazione di componenti o all’annullamento della validità della cache (anziché, ad esempio, Passaggi dei flussi di lavoro, Gestori di eventi che attivano modifiche al contenuto, Filtri e così via).
+  In questi casi, assicurati che le query vengano eseguite solo quando necessario. Ad esempio, all’attivazione di un componente o all’annullamento della validità della cache (anziché, ad esempio, Passaggi dei flussi di lavoro, Gestori di eventi che si attivano in caso di modifiche del contenuto e Filtri).
 
-Le query JCR non devono mai essere utilizzate per richieste di rendering puro. Ad esempio, le query JCR non sono appropriate per
+Non utilizzare mai query JCR per richieste di rendering puro. Ad esempio, le query JCR non sono appropriate per i seguenti elementi:
 
 * navigazione rendering
 * creazione di una panoramica sulle &quot;prime 10 ultime notizie&quot;
@@ -121,7 +117,7 @@ Per il rendering del contenuto, utilizza l’accesso di navigazione alla struttu
 
 ### Sessioni JCR (archivio) {#jcr-repository-sessions}
 
-È consigliabile utilizzare la sessione utente, non la sessione amministrativa. Ciò significa che deve utilizzare:
+Utilizza la sessione utente, non la sessione amministrativa. Ciò significa che deve utilizzare:
 
 ```java
 slingRequest.getResourceResolver().adaptTo(Session.class);
@@ -162,8 +158,8 @@ Le pagine di errore possono essere personalizzate per l’AEM. È consigliabile 
 
 Consulta [Personalizzazione delle pagine di errore visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md) per informazioni dettagliate.
 
-### Apri file nel processo Java {#open-files-in-the-java-process}
+### Apri file nel processo Java™ {#open-files-in-the-java-process}
 
-Poiché l&#39;AEM può accedere a un numero elevato di file, si consiglia di [aprire file per un processo Java](/help/sites-deploying/configuring.md#open-files-in-the-java-process) essere configurato in modo esplicito per l’AEM.
+Poiché l’AEM può accedere a molti file, si consiglia di specificare il numero [aprire file per un processo Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) essere configurato in modo esplicito per l’AEM.
 
-Per ridurre al minimo questo problema, è necessario che lo sviluppo garantisca che tutti i file aperti vengano chiusi correttamente il prima (significativamente) possibile.
+Per ridurre al minimo questo problema, lo sviluppo deve garantire che qualsiasi file aperto venga chiuso correttamente quando (significativamente) possibile.

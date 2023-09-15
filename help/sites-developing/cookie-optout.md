@@ -1,19 +1,15 @@
 ---
 title: Configurazione dell’utilizzo dei cookie
-seo-title: Configuring Cookie Usage
-description: AEM fornisce un servizio che consente di configurare e controllare il modo in cui i cookie vengono utilizzati con le pagine web
-seo-description: AEM provides a service that enables you to configure and control how cookies are used with your web pages
-uuid: 10d95176-0a56-41f1-9d36-01dbdac757d4
+description: AEM fornisce un servizio che consente di configurare e controllare il modo in cui i cookie vengono utilizzati con le pagine web.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 4%
+source-wordcount: '550'
+ht-degree: 6%
 
 ---
 
@@ -30,7 +26,7 @@ Utilizza questa funzione per assicurarti che le pagine siano conformi al consens
 
 Configura il servizio di rinuncia di Adobe Granite per specificare come vengono utilizzati i cookie sulle pagine web. La tabella seguente descrive le proprietà che puoi configurare.
 
-Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente vengono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il PID del servizio è `com.adobe.granite.optout`.
+Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il PID del servizio è `com.adobe.granite.optout`.
 
 | Nome proprietà (console Web) | Nome proprietà OSGi | Descrizione |
 |---|---|---|
@@ -40,18 +36,18 @@ Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying
 
 ## Convalida dell’utilizzo dei cookie {#validating-cookie-usage}
 
-Utilizza JavaScript lato client per chiamare il servizio Opt-out di Adobe Granite e verificare che sia possibile utilizzare un cookie. Utilizzare l&#39;oggetto javascript Granite.OptOutUtil per eseguire una delle operazioni seguenti:
+Utilizza JavaScript lato client per chiamare il servizio Opt-out di Adobe Granite e verificare che sia possibile utilizzare un cookie. Utilizzare l&#39;oggetto JavaScript Granite.OptOutUtil per eseguire una delle operazioni seguenti:
 
 * Ottieni un elenco di nomi di cookie che indicano che l’utente non acconsente all’utilizzo dei cookie a scopo di tracciamento.
 * Ottieni un elenco di cookie che possono essere utilizzati.
 * Determina se il browser web contiene un cookie che indica che l’utente non acconsente all’utilizzo dei cookie per il tracciamento.
 * Determina se è possibile utilizzare un cookie specifico.
 
-Granite.utils [cartella della libreria client](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) fornisce l&#39;oggetto Granite.OptOutUtil. Aggiungi il seguente codice al codice JSP dell&#39;intestazione della pagina per includere un collegamento alla libreria JavaScript:
+Granite.utils [cartella della libreria client](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) fornisce l&#39;oggetto Granite.OptOutUtil. Aggiungi il seguente codice all&#39;intestazione della pagina JSP per includere un collegamento alla libreria JavaScript:
 
 `<ui:includeClientLib categories="granite.utils" />`
 
-Ad esempio, la seguente funzione javascript determina se è consentito utilizzare il cookie COOKIE_NAME prima di scrivervi:
+Ad esempio, la seguente funzione JavaScript determina se il cookie COOKIE_NAME può essere utilizzato prima di scrivervi:
 
 ```
 function writeCookie(value){
@@ -70,7 +66,7 @@ Granite.OptOutUtil consente di determinare se l&#39;utilizzo dei cookie è conse
 
 ### funzione getCookieNames() {#getcookienames-function}
 
-Restituisce i nomi dei cookie che, se presenti, indicano che l’utente non ha dato il consenso all’uso dei cookie.
+I nomi dei cookie che, se presenti, indicano che l’utente non ha dato il consenso all’uso dei cookie.
 
 **Parametri**
 
@@ -82,7 +78,7 @@ Matrice di nomi di cookie.
 
 #### funzione getWhitelistCookieNames() {#getwhitelistcookienames-function}
 
-Restituisce i nomi dei cookie che possono essere utilizzati indipendentemente dal consenso dell’utente.
+I nomi dei cookie che possono essere utilizzati indipendentemente dal consenso dell’utente.
 
 **Parametri**
 

@@ -1,35 +1,31 @@
 ---
 title: Rimozione versione
-seo-title: Version Purging
 description: Questo articolo descrive le opzioni disponibili per l’eliminazione della versione.
-seo-description: This article describes the available options for version purging.
-uuid: a9fa25c7-e60e-4665-a726-99af9aac8f70
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
 
 # Rimozione versione{#version-purging}
 
-In un’installazione standard, AEM crea una nuova versione di una pagina o di un nodo quando attivi una pagina dopo l’aggiornamento del contenuto.
+In un’installazione standard, Adobe Experience Manager (AEM) crea una versione di una pagina o di un nodo quando attivi una pagina dopo l’aggiornamento del contenuto.
 
 >[!NOTE]
 >
->Se non viene apportata alcuna modifica al contenuto, verrà visualizzato il messaggio che indica che la pagina è stata attivata, ma non verrà creata alcuna nuova versione
+>Se non viene apportata alcuna modifica al contenuto, viene visualizzato il messaggio che indica che la pagina è stata attivata, ma non viene creata alcuna nuova versione.
 
-Puoi creare versioni aggiuntive su richiesta utilizzando **Controllo delle versioni** della barra laterale. Queste versioni vengono memorizzate nell’archivio e possono essere ripristinate se necessario.
+Puoi creare versioni aggiuntive su richiesta utilizzando **Controllo delle versioni** della barra laterale. Queste versioni vengono memorizzate nell’archivio e possono essere ripristinate, se necessario.
 
-Queste versioni non vengono mai eliminate, pertanto le dimensioni dell’archivio aumenteranno nel tempo e devono quindi essere gestite.
+Queste versioni non vengono mai eliminate, pertanto le dimensioni dell’archivio aumentano nel tempo e devono quindi essere gestite.
 
 L’AEM viene fornito con vari meccanismi per aiutarti a gestire l’archivio:
 
@@ -49,7 +45,7 @@ Quando la validità di una versione supera questo valore, viene eliminata dall�
 
 >[!CAUTION]
 >
->Per ottimizzare le dimensioni dell’archivio, è necessario eseguire frequentemente l’attività di rimozione della versione. L’attività deve essere pianificata al di fuori dell’orario di lavoro in presenza di una quantità limitata di traffico.
+>Per ottimizzare le dimensioni dell&#39;archivio, eseguire frequentemente l&#39;operazione di eliminazione della versione. L’attività deve essere pianificata al di fuori dell’orario di lavoro in presenza di una quantità limitata di traffico.
 
 ## Gestione versioni {#version-manager}
 
@@ -67,19 +63,19 @@ Una versione viene creata solo se l&#39;attivazione avviene su un percorso conte
 
 * `versionmanager.ivPaths`(Stringa[], impostazione predefinita: `{"/"}`) Specifica i percorsi in cui le versioni vengono create in modo implicito al momento dell&#39;attivazione se `versionmanager.createVersionOnActivation` è impostato su true.
 
-* `versionmanager.purgingEnabled` (Booleano, predefinito: false) Definisce se abilitare o meno la rimozione quando vengono create nuove versioni.
+* `versionmanager.purgingEnabled` (Booleano, impostazione predefinita: false) Definisce se abilitare la rimozione quando vengono create nuove versioni.
 
 * `versionmanager.purgePaths` (Stringa[], impostazione predefinita: {&quot;/content&quot;}) Specifica in quali percorsi eliminare le versioni quando vengono create nuove versioni.
 
-* `versionmanager.maxAgeDays` (int, impostazione predefinita: 30) Al momento dell’eliminazione della versione, tutte le versioni precedenti al valore configurato verranno rimosse. Se il valore è minore di 1, la rimozione non verrà eseguita in base alla data della versione.
+* `versionmanager.maxAgeDays` (int, impostazione predefinita: 30) Al momento dell’eliminazione della versione, vengono rimosse tutte le versioni precedenti al valore configurato. Se il valore è minore di 1, la rimozione non viene eseguita in base alla data della versione.
 
-* `versionmanager.maxNumberVersions` (int, impostazione predefinita 5) Al momento dell’eliminazione della versione, verranno rimosse tutte le versioni precedenti all’n-esima versione più recente. Se il valore è minore di 1, la rimozione non viene eseguita in base al numero di versioni.
+* `versionmanager.maxNumberVersions` (int, impostazione predefinita 5) Al momento dell’eliminazione della versione, vengono rimosse tutte le versioni precedenti all’n-esima versione più recente. Se il valore è minore di 1, la rimozione non viene eseguita in base al numero di versioni.
 
-* `versionmanager.minNumberVersions` (int, impostazione predefinita: 0) Il numero minimo di versioni che verranno mantenute indipendentemente dall’età. Se il valore è impostato su un valore minore di 1, non viene mantenuto alcun numero minimo di versioni.
+* `versionmanager.minNumberVersions` (int, valore predefinito 0) Il numero minimo di versioni conservate indipendentemente dall’età. Se il valore è impostato su un valore minore di 1, non viene mantenuto alcun numero minimo di versioni.
 
 >[!NOTE]
 >
->Si sconsiglia di mantenere un numero elevato di versioni nell’archivio. Pertanto, durante la configurazione dell’operazione di eliminazione della versione, presta attenzione a non escludere troppe versioni dalla rimozione, altrimenti la dimensione dell’archivio non verrà ottimizzata correttamente. Se conservi un numero elevato di versioni a causa di requisiti aziendali, contatta il supporto Adobe per trovare modi alternativi per ottimizzare la dimensione dell’archivio.
+>Si sconsiglia di mantenere molte versioni nell’archivio. Pertanto, durante la configurazione dell’operazione di eliminazione della versione, fai attenzione a non escludere troppe versioni dalla rimozione, altrimenti la dimensione dell’archivio non viene ottimizzata correttamente. Se conservi un numero elevato di versioni a causa di requisiti aziendali, contatta il supporto di Adobe per trovare modi alternativi per ottimizzare la dimensione dell’archivio.
 
 ### Combinazione delle opzioni di conservazione {#combining-retention-options}
 
@@ -95,12 +91,12 @@ Ad esempio, quando definisci il numero massimo di versioni da mantenere E la ver
 
 * Con:
 
-   * 10 versioni effettuate negli ultimi 60 giorni
-   * 3 di queste versioni create negli ultimi 30 giorni
+   * Sono state realizzate dieci versioni negli ultimi 60 giorni
+   * Tre di queste versioni sono state create negli ultimi 30 giorni
 
-* Significa che:
+* Ciò significa che:
 
-   * Le ultime 3 versioni verranno mantenute
+   * Le ultime tre versioni vengono mantenute
 
 Ad esempio, quando definisci il numero massimo E minimo di versioni da mantenere E la versione più vecchia da mantenere:
 
@@ -112,11 +108,11 @@ Ad esempio, quando definisci il numero massimo E minimo di versioni da mantenere
 
 * Con:
 
-   * 5 versioni effettuate 60 giorni fa
+   * Cinque versioni sono state realizzate 60 giorni fa
 
-* Significa che:
+* Ciò significa che:
 
-   * Verranno mantenute 3 versioni
+   * Vengono conservate tre versioni
 
 ## Strumento Rimuovi versioni {#purge-versions-tool}
 
