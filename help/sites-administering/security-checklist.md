@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
+source-git-commit: 465d3e956ecdd36eea5fe095e250652eedd4b3c5
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3005'
 ht-degree: 1%
 
 ---
@@ -57,11 +57,11 @@ Tali account includono:
 
 * L&#39;AEM `admin` account
 
-   Dopo aver modificato la password per l’account amministratore AEM, utilizza la nuova password per accedere a CRX.
+  Dopo aver modificato la password per l’account amministratore AEM, utilizza la nuova password per accedere a CRX.
 
 * Il `admin` password per la console Web OSGi
 
-   Questa modifica viene applicata anche all’account amministratore utilizzato per accedere alla console Web, pertanto utilizza la stessa password per l’accesso.
+  Questa modifica viene applicata anche all’account amministratore utilizzato per accedere alla console Web, pertanto utilizza la stessa password per l’accesso.
 
 Questi due account utilizzano credenziali separate e disporre di password distinte e sicure per ciascuno è fondamentale per una distribuzione sicura.
 
@@ -132,7 +132,7 @@ Per motivi di sicurezza, entrambi dovrebbero essere modificati per riflettere il
 
 * Il **utente trasporto** non deve essere l’utente amministratore. Piuttosto, imposta un utente sul sistema di pubblicazione che dispone solo dei diritti di accesso alle parti pertinenti del sistema di pubblicazione e utilizza le credenziali di tale utente per il trasporto.
 
-   Puoi iniziare dall’utente di ricezione della replica in bundle e configurare i diritti di accesso di questo utente in base alla tua situazione
+  Puoi iniziare dall’utente di ricezione della replica in bundle e configurare i diritti di accesso di questo utente in base alla tua situazione
 
 * Il **utente di replica** o **ID utente agente** inoltre, non deve essere l’utente amministratore, ma un utente in grado di visualizzare solo il contenuto replicato. L’utente di replica viene utilizzato per raccogliere il contenuto da replicare sul sistema di authoring prima che venga inviato all’editore.
 
@@ -158,7 +158,7 @@ Prima di renderli accessibili, questi bundle OSGi di sviluppo devono essere disi
 
 * Adobe di supporto per CRXDE (com.adobe.granite.crxde-support)
 * Adobe Granite CRX Explorer (com.adobe.granite.crx-explorer)
-* Adobe Granite CRXDE Lite (com.adobe.granite.crxde-lite)
+* Adobe Granite CRXDE Liti (com.adobe.granite.crxde-lite)
 
 ### Verifica se il bundle di sviluppo Sling è presente {#check-if-the-sling-development-bundle-is-present}
 
@@ -182,7 +182,7 @@ Il servizio di filtro dei referenti è un servizio OSGi che consente di configur
 * se è consentita un’intestazione referente vuota
 * e un elenco di server da consentire in aggiunta all’host del server.
 
-   Per impostazione predefinita, tutte le varianti di localhost e i nomi host correnti a cui è associato il server sono inclusi nell&#39;elenco.
+  Per impostazione predefinita, tutte le varianti di localhost e i nomi host correnti a cui è associato il server sono inclusi nell&#39;elenco.
 
 Per configurare il servizio filtro referenti:
 
@@ -262,17 +262,17 @@ Un attacco Denial of Service (DoS) è un tentativo di rendere la risorsa di un c
 * Un flusso di richieste provenienti da una sorgente esterna.
 * Una richiesta di informazioni superiore a quelle che il sistema è in grado di fornire.
 
-   Ad esempio, una rappresentazione JSON dell’intero archivio.
+  Ad esempio, una rappresentazione JSON dell’intero archivio.
 
 * Richiedendo una pagina di contenuto con un numero illimitato di URL, l’URL può includere un handle, alcuni selettori, un’estensione e un suffisso, ciascuno dei quali può essere modificato.
 
-   Ad esempio: `.../en.html` può essere richiesto anche come:
+  Ad esempio: `.../en.html` può essere richiesto anche come:
 
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
 
-   Tutte le varianti valide (ad esempio, restituiscono un `200` e sono configurati per essere memorizzati in cache) vengono memorizzati nella cache da Dispatcher, portando a un file system completo e a nessun servizio per ulteriori richieste.
+  Tutte le varianti valide (ad esempio, restituiscono un `200` e sono configurati per essere memorizzati in cache) vengono memorizzati nella cache da Dispatcher, portando a un file system completo e a nessun servizio per ulteriori richieste.
 
 Ci sono molti punti di configurazione per prevenire questi attacchi, ma solo i punti che si riferiscono all&#39;AEM sono discussi qui.
 
@@ -300,17 +300,18 @@ Per evitare l&#39;uso improprio del DoS, è possibile effettuare le seguenti ope
 
    * In particolare, il renderer JSON trasmette la struttura ad albero su più livelli.
 
-      Ad esempio:
+     Ad esempio:
 
-      `http://localhost:4502/.json`
+     `http://localhost:4502/.json`
 
-      potrebbe scaricare l’intero archivio in una rappresentazione JSON, il che potrebbe causare problemi significativi al server. Per questo motivo, Sling imposta un limite al numero di risultati massimi. Per limitare la profondità del rendering JSON, imposta il valore per quanto segue:
+     potrebbe scaricare l’intero archivio in una rappresentazione JSON, il che potrebbe causare problemi significativi al server. Per questo motivo, Sling imposta un limite al numero di risultati massimi. Per limitare la profondità del rendering JSON, imposta il valore per quanto segue:
 
-      **Max risultati JSON** ( `json.maximumresults`)
+     **Max risultati JSON** ( `json.maximumresults`)
 
-      nella configurazione per [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Quando questo limite viene superato, il rendering viene compresso. Il valore predefinito per Sling in AEM è `1000`.
+     nella configurazione per [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Quando questo limite viene superato, il rendering viene compresso. Il valore predefinito per Sling in AEM è `1000`.
 
    * Come misura preventiva, disattivate gli altri renderer predefiniti (HTML, testo normale, XML). Di nuovo, configurando [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
+
    >[!CAUTION]
    >
    >Non disabilitare il renderer JSON perché è necessario per il normale funzionamento dell’AEM.
@@ -392,7 +393,7 @@ Anche se non consigliato, puoi disattivarlo nel caso sia necessaria la vecchia i
 
 ### Pacchetto di protezione autorizzazioni anonime {#anonymous-permission-hardening-package}
 
-Per impostazione predefinita, l’AEM memorizza i metadati del sistema, ad esempio `jcr:createdBy` o `jcr:lastModifiedBy` come proprietà del nodo, accanto al contenuto normale, nell’archivio. A seconda della configurazione e della configurazione del controllo degli accessi, in alcuni casi ciò potrebbe causare l’esposizione di informazioni personali (PII, personally identifiable information), ad esempio quando tali nodi vengono visualizzati come JSON o XML non elaborati.
+Per impostazione predefinita, l’AEM memorizza i metadati del sistema, ad esempio `jcr:createdBy` o `jcr:lastModifiedBy` come proprietà del nodo, accanto al contenuto normale, nell’archivio. A seconda della configurazione e dell’impostazione del controllo di accesso, in alcuni casi ciò potrebbe causare l’esposizione di informazioni personali (PII, personally identifiable information), ad esempio quando tali nodi vengono visualizzati come JSON o XML non elaborati.
 
 Come tutti i dati dell’archivio, queste proprietà sono mediate dallo stack di autorizzazione Oak. L&#39;accesso ad esse dovrebbe essere limitato conformemente al principio del minimo privilegio.
 
@@ -450,19 +451,13 @@ In particolare, devi effettuare le seguenti operazioni:
 1. [Aggiorna il pacchetto di crittografia](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) se l’istanza di destinazione è già in esecuzione.
 1. Ripeti i passaggi precedenti per tutte le istanze a cui desideri replicare la chiave.
 
->[!NOTE]
->
->Puoi ripristinare il metodo di memorizzazione delle chiavi precedente alla versione 6.3 aggiungendo il seguente parametro alla prima installazione dell’AEM:
->
->`-Dcom.adobe.granite.crypto.file.disable=true`
-
 #### Replica delle chiavi per AEM 6.2 e versioni precedenti {#replicating-keys-for-aem-and-older-versions}
 
 In AEM 6.2 e versioni precedenti, le chiavi sono memorizzate nell’archivio sotto `/etc/key` nodo.
 
-Il modo consigliato per replicare in modo sicuro le chiavi nelle istanze consiste nel replicare solo questo nodo. È possibile replicare in modo selettivo i nodi tramite CRXDE Lite:
+Il modo consigliato per replicare in modo sicuro le chiavi nelle istanze consiste nel replicare solo questo nodo. È possibile replicare in modo selettivo i nodi tramite CRXDE Liti:
 
-1. Apri CRXDE Lite da *`https://&lt;serveraddress&gt;:4502/crx/de/index.jsp`*
+1. Apri CRXDE Liti da *`https://&lt;serveraddress&gt;:4502/crx/de/index.jsp`*
 1. Seleziona la `/etc/key` nodo.
 1. Vai a **Replica** scheda.
 1. Premere il tasto **Replica** pulsante.
