@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
 
 # Informazioni su [!DNL Adobe Experience Manager Assets] soluzione as a DAM {#administering-assets}
 
-[!DNL Assets] è uno strumento di gestione delle risorse digitali (DAM) che è parte integrante del [!DNL Experience Manager] e consente all&#39;azienda di gestire e distribuire le risorse digitali. Gli utenti di un’organizzazione possono gestire, archiviare e accedere a molti tipi di risorse digitali, come immagini, video, documenti, clip audio, file 3D e rich media, per utilizzarli sul web, nella stampa e nella distribuzione digitale.
+AEM [!DNL Assets] è uno strumento di gestione delle risorse digitali (DAM) che fa parte del [!DNL Experience Manager] e consente all&#39;azienda di gestire e distribuire le risorse digitali. Gli utenti di un’organizzazione possono gestire, archiviare e accedere a molti tipi di risorse digitali, come immagini, video, documenti, clip audio, file 3D e rich media, per utilizzarli sul web, nella stampa e nella distribuzione digitale.
 
 ## Che cos’è Digital Asset Management? {#what-is-digital-asset-management}
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [!DNL Assets] capacità di [!DNL Experience Manager] consente di effettuare le seguenti operazioni:
 
-* Consente di aggiungere e condividere immagini, documenti, file audio e file video in diversi formati.
+* Aggiungere e condividere immagini, documenti, file audio e file video in vari formati.
 * Gestisci le risorse raggruppandole per tag, lightbox o stelle (i tuoi preferiti). Aggiungere annotazioni alle risorse.
 * Per trovare le risorse, cercare i nomi dei file, il testo completo dei documenti, le date, il tipo di documento e i tag.
 * Aggiungere o modificare le informazioni sui metadati per le risorse. Insieme alla risorsa corrispondente viene automaticamente creata una versione dei metadati. Puoi importare o esportare i metadati delle risorse.
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ### [!DNL Experience Manager Assets] è integrato con [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
-[!DNL Assets] si integra completamente con [!DNL Sites] e funziona perfettamente per tutti i casi d’uso. Ad esempio, quando si creano pagine web, il [!DNL Sites] Gli autori possono trovare e utilizzare le risorse digitali tramite Content Finder. Interfaccia utente di [!DNL Assets] è uguale a quello di [!DNL Sites]. Consulta [panoramica di Sites](/help/sites-authoring/page-authoring.md) per informazioni dettagliate.
+[!DNL Assets] si integra completamente con [!DNL Sites] e funziona perfettamente per tutti i casi d’uso. Ad esempio, quando si creano pagine web, il [!DNL Sites] Gli autori possono trovare e utilizzare le risorse digitali tramite Content Finder. Interfaccia utente di [!DNL Assets] è uguale a quello di [!DNL Sites]. Vedi un [panoramica di Sites](/help/sites-authoring/page-authoring.md) per informazioni dettagliate.
 
 L’interfaccia utente di base è la stessa di [!DNL Sites]. Consulta [Panoramica dei siti](/help/sites-authoring/page-authoring.md) per informazioni dettagliate.
 
@@ -44,7 +44,7 @@ Per determinare se inserire un’immagine nell’archivio DAM o utilizzare un co
 
 ## Cosa sono le risorse digitali? {#what-are-digital-assets}
 
-Una risorsa è un documento, un’immagine, un video o dell’audio digitale (o parte di essi) che può avere più rappresentazioni e risorse secondarie (ad esempio, livelli in un file photoshop, slide in un file PowerPoint, pagine in un pdf e file in un file ZIP).
+Una risorsa è un documento, un’immagine, un video o dell’audio digitale (o parte di essi) che può avere più rappresentazioni. Può anche contenere risorse secondarie, ad esempio livelli in un file Photoshop, slide in un file PowerPoint, pagine in un pdf e file in un file ZIP.
 
 Una risorsa è essenzialmente un binario più metadati più rappresentazioni più risorse secondarie. Consulta la [Guida alle prestazioni di DAM](/help/sites-deploying/assets-performance-sizing.md) per informazioni dettagliate.
 
@@ -54,11 +54,11 @@ Una risorsa è essenzialmente un binario più metadati più rappresentazioni pi�
 
 ### [!DNL Experience Manager Assets] terminologia {#aem-assets-terminology}
 
-Utilizzo delle risorse digitali in [!DNL Experience Manager], è necessario comprendere la seguente terminologia:
+Utilizzo delle risorse digitali in [!DNL Experience Manager], può essere utile comprendere la terminologia seguente:
 
 * **Raccolta**: raccolta di risorse basata sulla posizione fisica (cartella), sulle proprietà comuni (cartella di ricerca salvata) o sulla selezione degli utenti (cartelle lightbox).
 
-* **Metadati** [!DNL Assets] dispongono di metadati, ad esempio autore, data di scadenza, informazioni DRM (Digital Rights Management) e così via. I metadati sono sotto controllo di accesso. [!DNL Assets] supporta i seguenti vari schemi di metadati comuni pronti all’uso:
+* **Metadati** [!DNL Assets] dispongono di metadati, ad esempio autore, data di scadenza e informazioni DRM (Digital Rights Management). I metadati sono sotto controllo di accesso. [!DNL Assets] supporta i seguenti vari schemi di metadati comuni pronti all’uso:
 
    * Dublin Core: include autore, descrizione, data, oggetto e così via.
    * IPTC: inclusi evento, modello, posizione e così via.
@@ -83,7 +83,7 @@ Le attività che puoi eseguire con questi flussi di lavoro preconfigurati:
 * Genera rappresentazioni e miniature per la risorsa, compresi il ridimensionamento e il ritaglio automatici, se necessario.
 * Se necessario, trascodifica la risorsa. Ad esempio, i video per l’utilizzo per dispositivi mobili e web vengono transcodificati con 24 fotogrammi al secondo, mentre i video da scaricare con 30 fotogrammi al secondo. L&#39;audio per l&#39;uso mobile e web viene transcodificato con 128 Kbps, l&#39;audio per il download con 192 Kbps.
 
-Naturalmente, puoi anche applicare manualmente i flussi di lavoro. Consulta [Gestori di risorse multimediali](media-handlers.md)per un elenco di flussi di lavoro predefiniti.
+Puoi anche applicare manualmente i flussi di lavoro. Consulta [Gestori di risorse multimediali](media-handlers.md)per un elenco di flussi di lavoro predefiniti.
 
 ## [!DNL Experience Manager Assets] e [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
@@ -93,4 +93,3 @@ Consulta [Assets e Media Library](medialibrary.md) per informazioni sulle differ
 >
 >* [Video introduttivo - Experience Manager Assets as a modern DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
 >* [Comprendere i concetti relativi ai metadati](/help/assets/metadata-concepts.md)
-

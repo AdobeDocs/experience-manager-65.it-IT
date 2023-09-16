@@ -1,27 +1,25 @@
 ---
 title: Amministrazione di eCommerce generico
-seo-title: Administering generic eCommerce
 description: La soluzione generica dell’AEM fornisce metodi per gestire le informazioni commerciali contenute nell’archivio.
-seo-description: The AEM generic solution provides methods of managing the commerce information held within the repository.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '2929'
 ht-degree: 2%
 
 ---
 
 # Amministrazione di eCommerce generico {#administering-generic-ecommerce}
 
-La soluzione generica dell’AEM fornisce metodi per gestire le informazioni di e-commerce conservate all’interno dell’archivio (anziché utilizzare un motore di e-commerce esterno). Ciò include:
+La soluzione generica Adobe Experience Manager (AEM) fornisce metodi per gestire le informazioni di e-commerce conservate all’interno dell’archivio (anziché utilizzare un motore di e-commerce esterno). Ciò include:
 
 * [Prodotti](/help/commerce/cif-classic/administering/concepts.md#products)
 * [Varianti prodotto](/help/commerce/cif-classic/administering/concepts.md#product-variants)
-* [Catalogo/i](/help/commerce/cif-classic/administering/concepts.md#catalogs)
+* [Cataloghi](/help/commerce/cif-classic/administering/concepts.md#catalogs)
 * [Promozioni](/help/commerce/cif-classic/administering/concepts.md#promotions)
 * [Voucher](/help/commerce/cif-classic/administering/concepts.md#vouchers)
 * [Ordini](/help/commerce/cif-classic/administering/concepts.md#shopping-cart-and-orders)
@@ -31,7 +29,7 @@ La soluzione generica dell’AEM fornisce metodi per gestire le informazioni di 
 >
 >L’installazione standard dell’AEM include l’implementazione eCommerce generica dell’AEM (JCR).
 >
->Attualmente, questa funzione è intesa a scopo dimostrativo o come base per un’implementazione personalizzata in base alle tue esigenze.
+>Questo è a scopo dimostrativo o come base per un’implementazione personalizzata in base alle tue esigenze.
 
 ## Prodotti e varianti di prodotto {#products-and-product-variations}
 
@@ -39,7 +37,7 @@ La soluzione generica dell’AEM fornisce metodi per gestire le informazioni di 
 >
 >Le procedure seguenti si applicano sia ai prodotti che alle varianti di prodotto.
 
-Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-authoring/scaffolding.md). Questo specifica i campi necessari per definire i prodotti e come vengono modificati.
+Prima di creare i prodotti, definisci un [impalcatura](/help/sites-authoring/scaffolding.md). Specifica i campi da definire, i prodotti e la modalità di modifica.
 
 È necessario uno scaffold per ogni tipo di prodotto distinto. Lo scaffold appropriato è associato ai prodotti da:
 
@@ -56,7 +54,7 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 >
 >`/etc/commerce/products/geometrixx-outdoors`
 >
->Puoi creare una nuova definizione di prodotto ovunque in senza alcuna configurazione aggiuntiva.
+>Puoi creare una definizione di prodotto ovunque sotto senza alcuna configurazione aggiuntiva.
 
 ### Importazione prodotti {#importing-products}
 
@@ -92,11 +90,11 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 
    >[!NOTE]
    >
-   >I prodotti verranno importati nella posizione corrente o in relazione a essa.
+   >I prodotti vengono importati nella posizione corrente o in relazione a essa.
 
    >[!NOTE]
    >
-   >Utilizzo ripetuto di **Successivo** e **Indietro** importa ripetutamente le definizioni dei prodotti. Tuttavia, poiché hanno gli stessi SKU, le informazioni esistenti nell’archivio verranno semplicemente sovrascritte.
+   >Utilizzo ripetuto di **Successivo** e **Indietro** importa ripetutamente le definizioni dei prodotti. Tuttavia, poiché hanno gli stessi SKU, le informazioni esistenti nell’archivio vengono sovrascritte.
 
 1. Seleziona **Fine** per chiudere la procedura guidata.
 
@@ -111,7 +109,7 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 
    * **Nome store**
 
-     I prodotti verranno importati in:
+     I prodotti vengono importati in:
 
      `/etc/commerce/products/<*store name*>/`
 
@@ -145,7 +143,7 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 
    ![Icona di creazione a forma di segno più](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. Verrà aperta la procedura guidata. Utilizza il **Base** e **Schede prodotto** per inserire [attributi prodotto](/help/commerce/cif-classic/administering/concepts.md#product-attributes) per il nuovo prodotto o variante di prodotto.
+1. Viene visualizzata la procedura guidata. Utilizza il **Base** e **Schede prodotto** per inserire [attributi prodotto](/help/commerce/cif-classic/administering/concepts.md#product-attributes) per il nuovo prodotto o variante di prodotto.
 
    >[!NOTE]
    >
@@ -167,7 +165,7 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 >
 >`/etc/commerce/products/...`
 >
->Ciò significa che, per impostazione predefinita, sono bloccati dalla [dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), quindi configura in base alle esigenze.
+>Ciò significa che, per impostazione predefinita, sono bloccati dalla [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), quindi configura in base alle esigenze.
 
 #### Modifica delle informazioni di prodotto - Interfaccia utente ottimizzata per il tocco {#editing-product-information-touch-optimized-ui}
 
@@ -181,7 +179,7 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 
    ![icona visualizza dati prodotto - icona informazioni](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
-1. Il [attributi prodotto](/help/commerce/cif-classic/administering/concepts.md#product-attributes) verrà visualizzato. Utilizzare **Modifica** e **Fine** per apportare modifiche.
+1. Il [attributi prodotto](/help/commerce/cif-classic/administering/concepts.md#product-attributes) vengono visualizzati. Utilizzare **Modifica** e **Fine** per apportare modifiche.
 
 ### Visualizzazione dei riferimenti ai prodotti {#showing-product-references}
 
@@ -192,12 +190,12 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 
    ![icona a doppia freccia](/help/sites-administering/do-not-localize/chlimage_1-16.png)
 
-1. Seleziona il prodotto richiesto: la barra secondaria viene aggiornata per mostrare i tipi di riferimento disponibili:
+1. Seleziona il prodotto desiderato: la barra secondaria viene aggiornata e mostra i tipi di riferimento disponibili:
 
    ![console prodotti con riferimenti aperti](/help/sites-administering/assets/chlimage_1-88.png)
 
 1. Tocca o fai clic sul tipo di riferimento (ad esempio, Pagine prodotto) per espandere l’elenco.
-1. Selezionate un riferimento specifico per visualizzare le opzioni:
+1. Seleziona un riferimento specifico per visualizzare le opzioni:
 
    * Passa a pagina prodotto
    * Modifica pagina prodotto
@@ -211,7 +209,7 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 
    ![icona della lente di ingrandimento](/help/sites-administering/do-not-localize/chlimage_1-17.png)
 
-1. Sono disponibili diversi facet per la ricerca di prodotti. È possibile utilizzare solo uno o più facet per una ricerca. I prodotti trovati verranno visualizzati:
+1. Sono disponibili diversi facet per la ricerca di prodotti. È possibile utilizzare solo uno o più facet per una ricerca. Vengono visualizzati i prodotti trovati:
 
    ![Dati dei prodotti nella console prodotti](/help/sites-administering/assets/chlimage_1-90.png)
 
@@ -225,14 +223,14 @@ Prima di creare i prodotti è necessario definire una [impalcatura](/help/sites-
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
-1. Ad esempio, puoi modificare le dimensioni che verranno visualizzate nella pagina di ricerca del prodotto. Fai clic su `sizegroup` nodo.
+1. Ad esempio, puoi modificare le dimensioni visualizzate nella pagina di ricerca del prodotto. Fai clic su `sizegroup` nodo.
 1. Clic `items` , quindi fai clic su `propertypredicate` nodo.
-1. È possibile modificare `propertyValues`. Ad esempio, puoi aggiungere XS o XXL oppure rimuovere una dimensione.
+1. Puoi modificare i `propertyValues`. Ad esempio, puoi aggiungere XS o XXL oppure rimuovere una dimensione.
 1. Clic **Salva tutto** e passa alla pagina di ricerca prodotti. Le modifiche verranno visualizzate.
 
 ### Risorse multiple {#multiple-assets}
 
-Puoi aggiungere più risorse al componente prodotto, quindi specificare la risorsa che verrà visualizzata nella pagina del prodotto.
+Puoi aggiungere più risorse al componente prodotto, quindi specificare la risorsa da visualizzare nella pagina del prodotto.
 
 >[!NOTE]
 >
@@ -247,32 +245,32 @@ Puoi aggiungere più risorse al componente prodotto, quindi specificare la risor
    >
    >Devi essere a livello di prodotto, non a livello di variante.
 
-1. Tocca o fai clic **Visualizza dati prodotto** con modalità di selezione o azioni rapide.
-1. Tocca o fai clic sull’icona Modifica.
+1. Seleziona la **Visualizza dati prodotto** con modalità di selezione o azioni rapide.
+1. Seleziona l’icona Modifica.
 1. Scorri fino a **Aggiungi**.
 
    ![Aggiunta della schermata dei dati del prodotto](/help/sites-administering/assets/chlimage_1-91.png)
 
-1. Tocca o fai clic **Aggiungi**. Viene visualizzato un nuovo segnaposto per la risorsa.
-1. Toccando/facendo clic su **Cambia **si apre una finestra di dialogo che consente di scegliere una risorsa.
+1. Seleziona **Aggiungi**. Viene visualizzato un nuovo segnaposto per la risorsa.
+1. Selezione **Cambia** apre una finestra di dialogo che consente di scegliere una risorsa.
 1. Seleziona la risorsa da aggiungere.
 
    >[!NOTE]
    >
    >Le risorse selezionabili sono [Risorse](/help/assets/assets.md).
 
-1. Tocca o fai clic sull’icona Fine.
+1. Seleziona l’icona Fine.
 
-Nel componente del prodotto sono ora memorizzate due risorse. Puoi configurare quale apparirà nella pagina del prodotto. Questo funziona con un sistema di categorie. Innanzitutto devi aggiungere una categoria alle singole risorse:
+Nel componente del prodotto sono ora memorizzate due risorse. Puoi configurare quale viene visualizzato nella pagina del prodotto. Questo funziona con un sistema di categorie. Innanzitutto devi aggiungere una categoria alle singole risorse:
 
-1. Tocca o fai clic **Visualizza dati prodotto**.
+1. Seleziona **Visualizza dati prodotto**.
 1. Digita un **Categoria risorsa** sotto le risorse, ad esempio `cat1` e `cat2`.
 
    >[!NOTE]
    >
    >Puoi anche utilizzare i tag per le categorie.
 
-1. Tocca o fai clic sull’icona Fine. Ora devi [rollout](#rolling-out-a-catalog) le tue modifiche.
+1. Seleziona l’icona Fine. Ora devi [rollout](#rolling-out-a-catalog) le tue modifiche.
 
 Ora le risorse nel componente prodotto hanno una categoria. Puoi configurare la categoria da visualizzare a tre diversi livelli:
 
@@ -282,7 +280,7 @@ Ora le risorse nel componente prodotto hanno una categoria. Puoi configurare la 
 
 >[!NOTE]
 >
->Se non imposti categorie, la prima risorsa verrà visualizzata nella pagina del prodotto.
+>Se non imposti categorie, la prima risorsa viene visualizzata nella pagina del prodotto.
 
 Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
 
@@ -298,26 +296,26 @@ Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
 
 1. Passa alla pagina del prodotto.
 1. **Modifica** il componente prodotto.
-1. Digita il **Categoria immagine** scelta effettuata ( `cat1` ad esempio).
-1. Tocca o fai clic **Fine**. La pagina viene aggiornata e viene visualizzata la risorsa corretta.
+1. Digita il **Categoria immagine** che hai scelto ( `cat1` ad esempio).
+1. Seleziona **Fine**. La pagina viene aggiornata e viene visualizzata la risorsa corretta.
 
 #### Catalogo  {#catalog}
 
 1. Passa al catalogo.
-1. Tocca o fai clic **Visualizza proprietà**.
-1. Tocca o fai clic su **Modifica**.
-1. Tocca o fai clic sul pulsante **Risorse** scheda.
+1. Seleziona **Visualizza proprietà**.
+1. Seleziona **Modifica**.
+1. Seleziona la **Risorse** scheda.
 1. Digita il valore richiesto **Categoria risorse di prodotto**.
-1. Tocca o fai clic **Fine**.
+1. Seleziona **Fine**.
 1. [Rollout](#rolling-out-a-catalog) le tue modifiche.
 
 #### Console Prodotti {#products-console}
 
 1. Utilizzo di **Prodotti** , passare al Prodotto richiesto.
-1. Tocca o fai clic **Visualizza dati prodotto**.
-1. Tocca o fai clic su **Modifica**.
+1. Seleziona **Visualizza dati prodotto**.
+1. Seleziona **Modifica**.
 1. Digita un **Categoria risorsa predefinita**.
-1. Tocca o fai clic **Fine**.
+1. Seleziona **Fine**.
 1. [Rollout](#rolling-out-a-catalog) le tue modifiche.
 
 ### Pubblicazione/Annullamento della pubblicazione delle informazioni di prodotto {#publishing-unpublishing-product-information}
@@ -326,7 +324,7 @@ Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
 
 >[!NOTE]
 >
->Spesso le informazioni sul prodotto vengono pubblicate attraverso le pagine che vi fanno riferimento. Ad esempio, quando pubblichi la pagina X che fa riferimento al prodotto Y, l’AEM ti chiederà se desideri pubblicare anche il prodotto Y.
+>Spesso le informazioni sul prodotto vengono pubblicate attraverso le pagine che vi fanno riferimento. Ad esempio, quando pubblichi la pagina X che fa riferimento al prodotto Y, l’AEM ti chiede se desideri pubblicare anche il prodotto Y.
 >
 >Per casi speciali, l’AEM supporta anche la pubblicazione diretta dai dati dei prodotti.
 
@@ -340,7 +338,7 @@ Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
 
    ![icona mondo](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![icona del mondo con una croce - nessun segno](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
-   Le informazioni sul prodotto saranno pubblicate o annullate, a seconda dei casi.
+   Le informazioni sul prodotto sono pubblicate o non pubblicate, a seconda dei casi.
 
 <!-- Search&Promote is end of life as of September 1, 2022 ### Product Feed {#product-feed} -->
 
@@ -355,7 +353,7 @@ Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
 
 ### Gestore eventi per aggiornamenti prodotto {#event-handler-for-product-updates}
 
-È disponibile un Gestore eventi che registra un evento quando un prodotto viene aggiunto, modificato o eliminato e quando viene aggiunta, modificata o eliminata una pagina di prodotto. Sono disponibili i seguenti eventi OSGi:
+È disponibile un Gestore eventi che registra un evento quando un prodotto viene aggiunto, modificato o eliminato e quando una pagina di prodotto viene aggiunta, modificata o eliminata. Sono disponibili i seguenti eventi OSGi:
 
 * `com/adobe/cq/commerce/pim/PRODUCT_ADDED`
 * `com/adobe/cq/commerce/pim/PRODUCT_MODIFIED`
@@ -436,7 +434,7 @@ Puoi configurare l’aspetto della finestra di dialogo quando fai clic sul punto
 
    ![scheda aggiungi al carrello](/help/sites-administering/assets/chlimage_1-97.png)
 
-1. Clic **AGGIUNGI AL CARRELLO**. È possibile utilizzare 3 opzioni di configurazione.
+1. Clic **AGGIUNGI AL CARRELLO**. È possibile utilizzare tre opzioni di configurazione.
 
    ![opzioni di configurazione](/help/sites-administering/assets/chlimage_1-98.png)
 
@@ -450,32 +448,32 @@ Puoi configurare l’aspetto della finestra di dialogo quando fai clic sul punto
 
 >[!NOTE]
 >
->Il catalogo farà riferimento ai dati di prodotto.
+>Il catalogo fa riferimento ai dati di prodotto.
 
 Per generare un catalogo:
 
 1. Apri la console Sites (ad esempio, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
-1. Passa alla posizione in cui desideri creare la nuova pagina.
+1. Passa alla posizione in cui desideri creare la pagina.
 1. Per aprire l&#39;elenco di opzioni, utilizzare **Crea** icona:
 
    ![create-icon](/help/sites-administering/do-not-localize/chlimage_1-23.png)
 
-1. Dall’elenco, seleziona **Crea catalogo**, verrà aperta la procedura guidata Crea catalogo.
+1. Dall’elenco, seleziona **Crea catalogo**. Viene visualizzata la procedura guidata Crea catalogo.
 
    ![creazione guidata catalogo](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Passa alla blueprint del catalogo richiesta.
-1. Tocca o fai clic **Seleziona** e tocca o fai clic sulla blueprint del catalogo richiesta.
-1. Tocca o fai clic **Successivo**.
+1. Seleziona la **Seleziona** e tocca o fai clic sulla blueprint del catalogo richiesta.
+1. Seleziona **Avanti**.
 
    ![creazione guidata proprietà catalogo](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Digita un **Titolo** e un **Nome**.
-1. Tocca o fai clic sul pulsante **Crea** pulsante. Viene creato il catalogo e viene visualizzata una finestra di dialogo.
+1. Seleziona il pulante **Crea.** Viene creato il catalogo e viene visualizzata una finestra di dialogo.
 
    ![finestra di dialogo per creazione catalogo](/help/sites-administering/assets/chlimage_1-101.png)
 
-1. Tocco/clic **Fine** ti riporta alla console Sites, dove potrai visualizzare il catalogo.
+1. Selezione del **Fine** ti riporta alla console Sites, dove puoi visualizzare il catalogo.
 
    Tocco/clic **Apri catalogo** apre il catalogo (ad esempio `http://localhost:4502/editor.html/content/test-catalog.html`).
 
@@ -483,7 +481,7 @@ Per generare un catalogo:
 
 >[!NOTE]
 >
->Il catalogo farà riferimento al tuo [Dati prodotto](#products-and-product-variants).
+>Il catalogo fa riferimento al tuo [Dati prodotto](#products-and-product-variants).
 
 1. Utilizzo di **Siti Web** , passare alla **Blueprint catalogo**, quindi il Catalogo base.
 
@@ -491,22 +489,22 @@ Per generare un catalogo:
 
    `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
-1. Crea una nuova pagina utilizzando **Blueprint sezione** modello.
+1. Creare una pagina utilizzando **Blueprint sezione** modello.
 
    Esempio: `Swimwear`.
 
-1. Apri il nuovo `Swimwear` , quindi fai clic su **Modifica blueprint** per aprire **Proprietà** , in cui è possibile impostare **Prodotti** selezione.
+1. Apri il nuovo `Swimwear` , quindi fai clic su **Modifica blueprint**. Il **Proprietà** viene visualizzata una finestra di dialogo che consente di impostare **Prodotti** selezione.
 
    Ad esempio, apri il **Tag/Parole chiave** per selezionare Attività, quindi Nuoto dalla sezione Geometrixx all&#39;aperto.
 
-1. Clic **OK** per salvare le proprietà; i prodotti di esempio saranno visualizzati sotto **Criteri di selezione del prodotto** nella pagina blueprint.
-1. Fai clic su **Modifiche rollout...**, seleziona **Rollout pagina e tutte le relative sottopagine**, quindi fai clic su **Successivo** allora **Rollout**. Una volta completato correttamente il rollout, **Stato** verrà visualizzato in verde.
+1. Clic **OK** in modo che le proprietà vengano salvate; i prodotti di esempio vengono visualizzati sotto **Criteri di selezione del prodotto** nella pagina blueprint.
+1. Clic **Modifiche rollout...**, seleziona **Rollout pagina e tutte le relative sottopagine**, quindi fai clic su **Successivo** allora **Rollout**. Una volta completato correttamente il rollout, **Stato** L&#39;indicatore viene visualizzato in verde.
 1. Ora puoi fare clic su **Chiudi** e controlla la nuova sezione del catalogo; ad esempio, in e in:
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
-1. Di nuovo dalla pagina blueprint fai clic su **Modifica blueprint** e nella **Proprietà** apri la finestra di dialogo **Pagina generata** scheda. Nel campo Elenco banner, seleziona l’immagine da mostrare; ad esempio, `summer.jpg`
-1. Clic **OK** per salvare le proprietà; le informazioni del banner verranno visualizzate nella sezione **Criteri di selezione del prodotto** nella pagina blueprint.
+1. Di nuovo dalla pagina blueprint fai clic su **Modifica blueprint** e nella **Proprietà** apri la finestra di dialogo **Pagina generata** scheda. Nel campo Elenco banner selezionare l&#39;immagine che si desidera visualizzare, ad esempio: `summer.jpg`
+1. Clic **OK** in modo che le proprietà vengano salvate; le informazioni del banner vengono visualizzate sotto **Criteri di selezione del prodotto** nella pagina blueprint.
 1. Effettua il rollout delle nuove modifiche.
 
 ### Rollout di un catalogo {#rolling-out-a-catalog}
@@ -527,7 +525,7 @@ Per eseguire il rollout di un catalogo:
    ![rollout](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
 1. Nella procedura guidata, imposta il rollout in base alle esigenze, quindi tocca o fai clic su **Modifiche rollout**.
-1. Viene visualizzata una finestra di dialogo. Tocca o fai clic **Fine** al termine del processo.
+1. Viene visualizzata una finestra di dialogo. Seleziona **Fine** al termine del processo.
 
 #### Rollout di un catalogo - Interfaccia classica {#rolling-out-a-catalog-classic-ui}
 
@@ -547,7 +545,7 @@ Per eseguire il rollout di un catalogo:
 
 1. Accedi a **Cataloghi** console, tramite **Commerce**.
 1. Passa alla posizione in cui desideri importare la blueprint del catalogo.
-1. Tocca o fai clic sul pulsante **Importa blueprint** icona.
+1. Seleziona la **Importa blueprint** icona.
 
    ![Icona Importa blueprint](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
@@ -555,7 +553,7 @@ Per eseguire il rollout di un catalogo:
 
    ![procedura guidata blueprint](/help/sites-administering/assets/chlimage_1-102.png)
 
-1. Tocca o fai clic **Fine** al termine dell’importazione.
+1. Seleziona **Fine** al termine dell’importazione.
 
 #### Importazione blueprint - Interfaccia classica {#blueprint-importer-classic-ui}
 
@@ -584,9 +582,9 @@ Per eseguire il rollout di un catalogo:
 >Per ulteriori informazioni, consulta [Promozioni e voucher](#promotions-and-vouchers).
 
 1. Apri **Siti Web** dell’istanza Autore.
-1. Nel riquadro a sinistra, selezionare la casella di controllo **Campagna**.
-1. Fai clic su **Nuovo**, seleziona la **Promozione** , quindi specifica un **Titolo** (e **Nome** se necessario) per il nuovo voucher.
-1. Fai clic su **Crea**. La nuova pagina della promozione verrà visualizzata nel riquadro di destra.
+1. Nel riquadro a sinistra, selezionare il **Campagna**.
+1. Clic **Nuovo**, seleziona la **Promozione** , quindi specifica un **Titolo** (e **Nome** se necessario) per il nuovo voucher.
+1. Fai clic su **Crea**. La nuova pagina della promozione viene visualizzata nel riquadro di destra.
 
 1. Modifica il **Proprietà** mediante:
 
@@ -606,11 +604,11 @@ Per eseguire il rollout di un catalogo:
 #### Creazione di un voucher - Interfaccia classica {#creating-a-voucher-classic-ui}
 
 1. Apri **Siti Web** dell’istanza Autore.
-1. Nel riquadro a sinistra, selezionare la casella di controllo **Campagna**.
-1. Fai clic su **Nuovo**, seleziona la **Voucher** , quindi specifica un **Titolo** (e **Nome** se necessario) per il nuovo voucher.
-1. Fai clic su **Crea**. La nuova pagina del voucher verrà visualizzata nel riquadro di destra.
+1. Nel riquadro a sinistra, selezionare il **Campagna**.
+1. Clic **Nuovo**, seleziona la **Voucher** , quindi specifica un **Titolo** (e **Nome** se necessario) per il nuovo voucher.
+1. Fai clic su **Crea**. La nuova pagina del voucher viene visualizzata nel riquadro di destra.
 
-1. Apri la nuova pagina del voucher con un doppio clic, quindi fai clic su **Modifica** per configurare le informazioni in base alle esigenze.
+1. Apri la nuova pagina del voucher con un doppio clic, quindi fai clic su **Modifica** e configura le informazioni come richiesto.
 1. Clic **OK** per salvare.
 
 1. Ora puoi attivare il voucher, in modo che gli acquirenti possano utilizzarlo nei loro carrelli sull’istanza Publish.
@@ -621,7 +619,7 @@ Per eseguire il rollout di un catalogo:
 
 Per rendere un voucher non disponibile ai clienti, puoi effettuare le seguenti operazioni:
 
-* Disattiva il voucher: rimarrà disponibile nell’ambiente di authoring per poterlo riattivare in un secondo momento.
+* Disattiva il voucher: rimane disponibile nell’ambiente di authoring per poterlo riattivare in un secondo momento.
 * Eliminalo completamente.
 
 Entrambe le azioni possono essere eseguite dalla **Siti Web** console.
@@ -630,11 +628,11 @@ Entrambe le azioni possono essere eseguite dalla **Siti Web** console.
 
 #### Modifica dei voucher - Interfaccia classica {#modifying-vouchers-classic-ui}
 
-Per modificare le proprietà di un voucher o di una promozione, puoi fare doppio clic su di esso nel **Siti Web** e fai clic su **Modifica**. Dopo averlo salvato, devi attivarlo in modo che le modifiche vengano inviate alle istanze di pubblicazione.
+Per modificare le proprietà di un voucher o di una promozione, è possibile fare doppio clic su di esso nel **Siti Web** e fai clic su **Modifica**. Dopo averlo salvato, devi attivarlo in modo che le modifiche vengano inviate alle istanze di pubblicazione.
 
 ### Aggiunta di voucher a un carrello {#adding-vouchers-to-a-cart}
 
-Per consentire agli utenti di aggiungere voucher ai loro carrelli, puoi utilizzare il **Voucher** componente (categoria Commerce). È necessario aggiungerlo alla stessa pagina in cui viene visualizzato il carrello (ma non è obbligatorio). Il componente voucher è semplicemente un modulo in cui l’utente può immettere un codice voucher; è il componente carrello che mostra effettivamente l’elenco dei voucher applicati e il relativo sconto.
+Per consentire agli utenti di aggiungere voucher ai loro carrelli, puoi utilizzare il **Voucher** componente (categoria Commerce). Aggiungilo alla stessa pagina in cui viene visualizzato il carrello (ma questo non è obbligatorio). Il componente voucher è semplicemente un modulo in cui l’utente può immettere un codice voucher; è il componente carrello che mostra effettivamente l’elenco dei voucher applicati e il relativo sconto.
 
 Nel sito demo (Geometrixx Outdoors - inglese) puoi vedere il modulo del voucher nella pagina del carrello, sotto il carrello effettivo.
 
@@ -644,7 +642,7 @@ Nel sito demo (Geometrixx Outdoors - inglese) puoi vedere il modulo del voucher 
 >
 >È opportuno ricordare che l’AEM preconfigurato non prevede azioni necessarie per le funzionalità standard relative agli ordini, come la restituzione delle merci, l’aggiornamento dello stato degli ordini, l’evasione, la generazione dei documenti di trasporto. Si tratta principalmente di un’anteprima tecnologica.
 >
->La gestione degli ordini generica in AEM è stata mantenuta di base; i campi disponibili nella procedura guidata dipendono dallo scaffold:
+>La gestione ordini generica in AEM è stata mantenuta di base; i campi disponibili nella procedura guidata dipendono dallo scaffold:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >Se si crea uno scaffold personalizzato, è possibile memorizzare ulteriori informazioni sull&#39;ordine.
@@ -664,7 +662,7 @@ Nel sito demo (Geometrixx Outdoors - inglese) puoi vedere il modulo del voucher 
 
    ![Icona di creazione a forma di segno più](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. Verrà aperta la procedura guidata. Utilizza il **Base**, **Contenuto**, **Pagamento** e **Evasione** schede per inserire [informazioni sul nuovo ordine](/help/commerce/cif-classic/administering/concepts.md#order-information).
+1. Viene visualizzata la procedura guidata. Utilizza il **Base**, **Contenuto**, **Pagamento**, e **Evasione** schede per inserire [informazioni sul nuovo ordine](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
 1. Seleziona **Crea** per salvare le informazioni.
 
@@ -682,5 +680,5 @@ Nel sito demo (Geometrixx Outdoors - inglese) puoi vedere il modulo del voucher 
 
    ![icona informazioni](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
-1. Il [informazioni ordine](/help/commerce/cif-classic/administering/concepts.md#order-information) verrà visualizzato. Utilizzare **Modifica** e **Fine** per apportare modifiche.
+1. Il [informazioni ordine](/help/commerce/cif-classic/administering/concepts.md#order-information) viene visualizzato. Utilizzare **Modifica** e **Fine** per apportare modifiche.
 

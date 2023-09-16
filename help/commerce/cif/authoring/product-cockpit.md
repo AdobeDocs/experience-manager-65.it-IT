@@ -2,9 +2,9 @@
 title: Cockpit prodotto
 description: Utilizzo della cabina di comando del prodotto
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '416'
 ht-degree: 1%
 
 ---
@@ -23,13 +23,13 @@ I dati dei prodotti in staging includono qualsiasi mutazione futura, ad esempio 
 
 ## Configurazione {#configuration}
 
-I cataloghi di prodotti devono essere configurati nell’AEM. Consulta [configurazione di store e cataloghi](/help/commerce/cif/getting-started.md#catalog) per ulteriori informazioni.
+I cataloghi di prodotti devono essere configurati in AEM. Consulta [configurazione di store e cataloghi](/help/commerce/cif/getting-started.md#catalog) per ulteriori informazioni.
 
 L’abilitazione delle funzioni di catalogo in staging richiede l’autenticazione. Consulta [Guida introduttiva](/help/commerce/cif/getting-started.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
->Le funzioni di catalogo in staging sono disponibili solo con Adobe Commerce e connettori di terze parti che supportano l’autenticazione basata su token.
+>Le funzioni del catalogo in staging sono disponibili solo con Adobe Commerce e connettori di terze parti che supportano l’autenticazione basata su token.
 
 ## Apertura della cabina di comando del prodotto {#opening-product-cockpit}
 
@@ -53,7 +53,7 @@ Facendo clic su un prodotto vengono caricate le varianti di prodotto, se disponi
 
 >[!NOTE]
 >
->I dati del catalogo dei prodotti nell’AEM sono dati recuperati in tempo reale tramite l’endpoint commerce configurato. Nessun dato del catalogo prodotti viene archiviato nell’AEM.
+>I dati del catalogo dei prodotti nell’AEM sono dati recuperati in tempo reale tramite l’endpoint commerce configurato. Nessun dato del catalogo dei prodotti viene memorizzato nell’AEM.
 
 ## Ricerca nei cataloghi di prodotti {#searching-product-catalog}
 
@@ -63,13 +63,13 @@ Nella scheda del filtro a sinistra è disponibile una ricerca full-text sull’i
 
 ## Esplorazione del catalogo prodotti di staging {#staged-product-catalogs}
 
-Per impostazione predefinita, la cabina di comando del prodotto mostra i dati live del catalogo dei prodotti. Se si utilizza il &quot;CATALOGO STAGNATO&quot; nella scheda del filtro a sinistra, il catalogo dei prodotti viene caricato per qualsiasi data selezionata.
+Per impostazione predefinita, la cabina di comando del prodotto mostra i dati live del catalogo dei prodotti. L’utilizzo del &quot;CATALOGO STAGNATO&quot; nella scheda del filtro a sinistra carica il catalogo dei prodotti per qualsiasi data selezionata.
 
 ![catalogo di staging](/help/commerce/cif/assets/staged-cockpit.png)
 
 ## Proprietà catalogo prodotti {#catalog-properties}
 
-Facendo clic sull&#39;icona delle proprietà di un prodotto o di una categoria si aprirà la visualizzazione delle proprietà dell&#39;oggetto selezionato. Le proprietà aperte di una variante di prodotto sono uguali alle proprietà del prodotto principale.
+Facendo clic sull&#39;icona delle proprietà di un prodotto o di una categoria si apre la visualizzazione delle proprietà dell&#39;oggetto selezionato. Le proprietà aperte di una variante di prodotto sono uguali alle proprietà del prodotto principale.
 
 ### Schede Commerce {#tabs}
 
