@@ -1,18 +1,14 @@
 ---
 title: Crea una pagina di esempio
-seo-title: Create a Sample Page
 description: Creare un sito community di esempio
-seo-description: Create a Sample community site
-uuid: 04a8f027-b7d8-493a-a9bd-5c4a6715d754
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
-discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
@@ -21,21 +17,21 @@ ht-degree: 2%
 
 A partire da AEM 6.1 Communities, il modo più semplice per creare una pagina di esempio è quello di creare un sito community semplice, costituito semplicemente da una funzione Pagina.
 
-Questo includerà un componente parsys in modo che tu possa [abilita componenti per l’authoring](basics.md#accessing-communities-components).
+Questo include un componente parsys che consente di: [abilita componenti per l’authoring](basics.md#accessing-communities-components).
 
 Un&#39;altra opzione per l&#39;esplorazione con componenti di esempio consiste nell&#39;utilizzare le feature presentate nella [Guida ai componenti della community](components-guide.md).
 
 ## Creare un sito community {#create-a-community-site}
 
-È molto simile alla creazione di un nuovo sito descritto in [Guida introduttiva ad AEM Communities](getting-started.md).
+È simile alla creazione di un sito descritto in [Guida introduttiva ad AEM Communities](getting-started.md).
 
-La differenza principale è che questa esercitazione creerà un nuovo modello di sito community che contiene solo [Funzione pagina](functions.md#page-function) per creare un semplice sito community privo di altre funzioni (diverse dalle funzioni precollegate di base per tutti i siti community).
+La differenza principale consiste nel fatto che questa esercitazione crea un modello di sito community contenente solo [Funzione pagina](functions.md#page-function) per creare un sito community semplice. Questa operazione è priva di altre funzioni (diverse dalle funzioni pre-cablate di base per tutti i siti della community).
 
 ### Crea nuovo modello sito {#create-new-site-template}
 
 Per iniziare, crea un’ [modello per sito community](sites.md).
 
-Dalla navigazione globale su un’istanza Autore, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > **[!UICONTROL Modelli del sito]**.
+Dalla navigazione globale in un’istanza Autore, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > **[!UICONTROL Modelli del sito]**.
 
 ![create-site-template](assets/create-site-template1.png)
 
@@ -63,7 +59,7 @@ Dalla navigazione globale su un’istanza Autore, seleziona **[!UICONTROL Strume
 
 ### Crea nuovo sito community {#create-new-community-site}
 
-Ora crea un nuovo sito community basato sul modello di sito semplice.
+Ora crea un sito community basato sul modello di sito semplice.
 
 Dopo aver creato il modello del sito, dalla navigazione globale seleziona **[!UICONTROL Community > Siti]**.
 
@@ -83,8 +79,7 @@ Dopo aver creato il modello del sito, dalla navigazione globale seleziona **[!UI
 
       * `Template`: scegli `Single Page Template`
 
-      ![create-community-site-template](assets/create-community-site-template.png)
-
+     ![create-community-site-template](assets/create-community-site-template.png)
 
 * Seleziona `Next`
 * Passaggio `2 - Design`
@@ -94,11 +89,11 @@ Dopo aver creato il modello del sito, dalla navigazione globale seleziona **[!UI
 * Seleziona `Next`
 * Seleziona `Next`
 
-   (Accetta tutte le impostazioni predefinite)
+  (Accetta tutte le impostazioni predefinite)
 
 * Seleziona `Create`
 
-   ![create-community-site](assets/create-community-site.png)
+  ![create-community-site](assets/create-community-site.png)
 
 ## Pubblicare il sito {#publish-the-site}
 
@@ -112,11 +107,11 @@ Dalla sezione [console per siti community](sites-console.md), seleziona l’icon
 
 Selezionare l&#39;icona Apri sito per visualizzare il sito in modalità di modifica.
 
-L’URL sarà [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
+L’URL è [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
 ![author-site](assets/author-site.png)
 
-Nella semplice home page è possibile vedere cosa è preconnesso attraverso le funzioni e i modelli della community e giocare con l&#39;aggiunta e la configurazione di componenti della community.
+Nella semplice home page è possibile vedere cosa è preconnesso tramite le funzioni e i modelli della community e giocare con l&#39;aggiunta e la configurazione di componenti della community.
 
 ## Visualizza sito alla pubblicazione {#view-site-on-publish}
 

@@ -1,18 +1,14 @@
 ---
 title: "Tutorial: creare frammenti di documento"
-seo-title: Create document fragments for Interactive Communication
 description: Creare frammenti di documenti per la comunicazione interattiva
-seo-description: Create document fragments for Interactive Communication
-uuid: 677d717e-e92e-434e-8266-6fbbf94f3867
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1674'
 ht-degree: 2%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 2%
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Questo tutorial è un passaggio del [Creare la prima comunicazione interattiva](/help/forms/using/create-your-first-interactive-communication.md) serie. Si consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
+Questo tutorial è un passaggio del [Creare la prima comunicazione interattiva](/help/forms/using/create-your-first-interactive-communication.md) serie. L’Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
 I frammenti di documento sono componenti riutilizzabili di una corrispondenza utilizzati per comporre una comunicazione interattiva. I frammenti di documento sono dei seguenti tipi:
 
@@ -29,7 +25,7 @@ I frammenti di documento sono componenti riutilizzabili di una corrispondenza ut
 * Elenco: l’elenco è un gruppo di frammenti di documento, inclusi testo, elenchi, condizioni e immagini.
 * Condizione: le condizioni ti consentono di definire quale contenuto viene incluso nella comunicazione interattiva in base ai dati ricevuti dal modello di dati del modulo.
 
-Questo tutorial illustra i passaggi necessari per creare più frammenti di documenti di testo in base all’anatomia fornita in [Pianificare la comunicazione interattiva](/help/forms/using/planning-interactive-communications.md) sezione. Al termine di questa esercitazione, sarai in grado di:
+Questo tutorial illustra i passaggi necessari per creare più frammenti di documenti di testo in base all’anatomia fornita in [Pianificare la comunicazione interattiva](/help/forms/using/planning-interactive-communications.md) sezione. Al termine di questa esercitazione, dovresti essere in grado di effettuare le seguenti operazioni:
 
 * Creare frammenti di documenti
 * Creare le variabili
@@ -44,15 +40,15 @@ Di seguito è riportato l’elenco dei frammenti di documento creati in questa e
 * [Riepilogo fatture](../../forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [Riepilogo delle spese](../../forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-Ogni frammento di documento include campi con testo statico, dati ricevuti dal modello di dati del modulo e dati immessi tramite l’interfaccia utente dell’agente. Tutti questi campi sono stati rappresentati nel [Pianificare la comunicazione interattiva](/help/forms/using/planning-interactive-communications.md) sezione.
+Ogni frammento di documento include campi con testo statico, dati ricevuti dal modello dati del modulo e dati immessi tramite l’interfaccia utente dell’agente. Tutti questi campi sono stati rappresentati nel [Pianificare la comunicazione interattiva](/help/forms/using/planning-interactive-communications.md) sezione.
 
 Durante la creazione di frammenti di documento in questa esercitazione, vengono create variabili per i campi che ricevono dati tramite l’interfaccia utente dell’agente.
 
 Utilizzare **FDM_Create_First_IC**, come descritto nella [Crea modello dati modulo](../../forms/using/create-form-data-model0.md) come modello dati modulo per creare frammenti di documento in questa esercitazione.
 
-## Passaggio 1: creare un frammento di documento di testo Dettagli fattura {#step-create-bill-details-text-document-fragment}
+## Passaggio 1: creare un frammento di documento di testo di dettagli fattura {#step-create-bill-details-text-document-fragment}
 
-Il frammento di documento Dettagli distinta include i campi seguenti:
+Il frammento del documento Dettagli distinta include i campi riportati di seguito.
 
 | Campo | Sorgente dati |
 |---|---|
@@ -61,7 +57,7 @@ Il frammento di documento Dettagli distinta include i campi seguenti:
 | Data di fatturazione | Interfaccia utente agente |
 | Il piano | Modello dati modulo |
 
-Esegui la procedura seguente per creare variabili per i campi con l’interfaccia utente di Agent come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento:
+Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati modulo nel frammento di documento, effettua le seguenti operazioni:
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Frammenti di documenti]**.
 
@@ -109,11 +105,11 @@ Esegui la procedura seguente per creare variabili per i campi con l’interfacci
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
-1. Clic **Salva** per creare il frammento di documento di testo Dettagli distinta.
+1. Clic **Salva** per creare il frammento del documento di testo Dettagli distinta.
 
-## Passaggio 2: creare un frammento del documento di testo Dettagli cliente {#step-create-customer-details-text-document-fragment}
+## Passaggio 2: creare un frammento del documento di testo dei dettagli del cliente {#step-create-customer-details-text-document-fragment}
 
-Il frammento di documento Dettagli cliente include i campi seguenti:
+Il frammento del documento Dettagli cliente include i campi seguenti:
 
 | Campo | Sorgente dati |
 |---|---|
@@ -126,7 +122,7 @@ Il frammento di documento Dettagli cliente include i campi seguenti:
 | Numero di relazione | Modello dati modulo |
 | Numero di connessioni | Interfaccia utente agente |
 
-Esegui la procedura seguente per creare variabili per i campi con l’interfaccia utente di Agent come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento:
+Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati modulo nel frammento di documento, effettua le seguenti operazioni:
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Frammenti di documenti]**.
 1. Seleziona **Crea** > **Testo**.
@@ -151,7 +147,6 @@ Esegui la procedura seguente per creare variabili per i campi con l’interfacci
 
    * Codice stato: tipo di numero
    * Numberconnections: tipo di numero
-
 
 1. Seleziona la **Oggetti modello dati** , posizionare il cursore nel riquadro di destra e fare doppio clic sulla **cliente** > **nome** proprietà.
 1. Premere Invio per spostare il cursore sulla riga successiva e fare doppio clic sulla **cliente** > **indirizzo** proprietà.
@@ -179,7 +174,7 @@ Esegui la procedura seguente per creare variabili per i campi con l’interfacci
 
 ## Passaggio 3: creare un frammento di documento di riepilogo delle fatture {#step-create-bill-summary-text-document-fragment}
 
-Il frammento di documento Riepilogo fatture include i campi riportati di seguito.
+Il frammento del documento Sintetico distinta include i campi riportati di seguito.
 
 | Campo | Sorgente dati |
 |---|---|
@@ -190,7 +185,7 @@ Il frammento di documento Riepilogo fatture include i campi riportati di seguito
 | Importo dovuto | Interfaccia utente agente |
 | Data di scadenza | Interfaccia utente agente |
 
-Esegui la procedura seguente per creare variabili per i campi con l’interfaccia utente di Agent come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento:
+Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati modulo nel frammento di documento, effettua le seguenti operazioni:
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Frammenti di documenti]**.
 1. Seleziona **Crea** > **Testo**.
@@ -218,7 +213,6 @@ Esegui la procedura seguente per creare variabili per i campi con l’interfacci
    * Importo: tipo di numero
    * Data scadenza: tipo di data
 
-
 1. Crea testo statico per i campi seguenti utilizzando il riquadro di destra:
 
    * Saldo precedente
@@ -227,7 +221,7 @@ Esegui la procedura seguente per creare variabili per i campi con l’interfacci
    * Addebiti periodo di fatturazione corrente
    * Importo dovuto
    * Data di scadenza
-   * Le spese di pagamento in ritardo dopo la data di scadenza sono pari a $ 20
+   * Le spese di pagamento in ritardo dopo la data di scadenza sono di $ 20
 
    ![Testo statico Riepilogo fatture](assets/bill_summary_static_new.png)
 
@@ -242,9 +236,9 @@ Esegui la procedura seguente per creare variabili per i campi con l’interfacci
 
 1. Clic **Salva** per creare il frammento del documento di testo Dettagli cliente.
 
-## Passaggio 4: creare un frammento di documento di testo per il riepilogo delle spese {#step-create-summary-of-charges-text-document-fragment}
+## Passaggio 4: creare un frammento di documento di testo riepilogo spese {#step-create-summary-of-charges-text-document-fragment}
 
-Il frammento di documento Riepilogo spese include i campi seguenti:
+Il frammento del documento Riepilogo spese include i campi riportati di seguito.
 
 | Campo | Sorgente dati |
 |---|---|
@@ -258,7 +252,7 @@ Il frammento di documento Riepilogo spese include i campi seguenti:
 | Oneri totali | Modello dati modulo |
 | TOTALE DA PAGARE | Modello dati modulo |
 
-Per creare testo statico e utilizzare gli elementi del modello dati modulo nel frammento di documento, effettua le seguenti operazioni:
+Per creare testo statico e utilizzare gli elementi del modello dati modulo nel frammento di documento, effettuare le seguenti operazioni:
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Frammenti di documenti]**.
 1. Seleziona **Crea** > **Testo**.

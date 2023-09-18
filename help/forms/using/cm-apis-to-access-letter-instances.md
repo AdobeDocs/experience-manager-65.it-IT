@@ -1,18 +1,14 @@
 ---
 title: API per accedere alle istanze delle lettere
-seo-title: APIs to access letter instances
 description: Scopri come utilizzare le API per accedere alle istanze di lettere.
-seo-description: Learn how to use APIs to access letter instances.
-uuid: e7fb7798-f49d-458f-87f5-22df5f3e7d10
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '594'
 ht-degree: 1%
 
 ---
@@ -37,12 +33,11 @@ Gestione della corrispondenza espone le API per recuperare le istanze di lettere
 
 >[!NOTE]
 >
->LetterInstanceService è un servizio OSGI e la relativa istanza può essere recuperata utilizzando @Reference in Java
->Classe o sling.getService(LetterInstanceService. Class ) in JSP.
+>LetterInstanceService è un servizio OSGI e la relativa istanza può essere recuperata utilizzando @Reference in Java™ Class o sling.getService(LetterInstanceService. Class ) in JSP.
 
 ### Utilizzo di getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L’API seguente trova le istanze di lettere in base all’oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è null, restituisce tutte le istanze di lettere. Questa API restituisce l’elenco di [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) oggetti, che possono essere utilizzati per estrarre informazioni aggiuntive sull&#39;istanza della lettera
+L’API seguente trova le istanze di lettere in base all’oggetto query (sia Inviato che Bozza). Se l&#39;oggetto query è null, restituisce tutte le istanze di lettere. Questa API restituisce un elenco di [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) che possono essere utilizzati per estrarre informazioni aggiuntive dell&#39;istanza della lettera.
 
 **Sintassi**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -54,7 +49,7 @@ L’API seguente trova le istanze di lettere in base all’oggetto query (sia In
   </tr>
   <tr>
    <td>query</td>
-   <td>Il parametro query viene utilizzato per trovare/filtrare l’istanza di Letter. Qui la query supporta solo attributi/proprietà di livello superiore dell’oggetto. Query è costituita da istruzioni e "attributeName" utilizzato nell'oggetto Statement deve essere il nome della proprietà nell'oggetto istanza Letter.<br /> </td>
+   <td>Il parametro query viene utilizzato per trovare/filtrare l’istanza di Letter. In questo caso, la query supporta solo attributi/proprietà di livello superiore dell’oggetto. Query è costituita da istruzioni e "attributeName" utilizzato nell'oggetto Statement deve essere il nome della proprietà nell'oggetto istanza Letter.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -139,8 +134,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 L&#39;istanza della lettera può essere di tipo Inviata o Bozza. L’apertura di entrambi i tipi di istanza della lettera mostra comportamenti diversi:
 
-* In caso di istanza di lettera Inviata, viene aperto un PDF che rappresenta l’istanza di lettera. L’istanza della lettera inviata persistente sul server contiene anche dataXML e XDP elaborato, che possono essere utilizzati per eseguire e personalizzare ulteriormente un caso d’uso, ad esempio la creazione di un PDF/A.
-* Nel caso dell’istanza Bozza lettera, l’interfaccia utente per la corrispondenza viene ricaricata nello stato precedente esatto, come era al momento della creazione della bozza
+* Nel caso di un’istanza di lettera Inviata, viene aperto un PDF che rappresenta l’istanza di lettera. L’istanza della lettera inviata è persistente sul server e contiene anche dataXML e XDP elaborato, che può essere utilizzato per eseguire e personalizzare ulteriormente un caso d’uso, ad esempio la creazione di un PDF/A.
+* Nel caso di un’istanza Bozza di lettera, l’interfaccia utente per la corrispondenza viene ricaricata esattamente nello stato precedente come era al momento della creazione della bozza
 
 ### Apertura dell&#39;istanza della bozza di lettera  {#opening-draft-letter-instance-nbsp}
 
@@ -150,7 +145,7 @@ L’interfaccia utente CCR supporta il parametro cmLetterInstanceId, che può es
 
 >[!NOTE]
 >
->Non è necessario specificare cmLetterId o cmLetterName/State/Version durante il ricaricamento di una corrispondenza, in quanto i dati inviati contengono già tutti i dettagli sulla corrispondenza ricaricata. RandomNo viene utilizzato per evitare problemi di cache del browser; è possibile utilizzare la marca temporale come numero casuale.
+Non è necessario specificare cmLetterId o cmLetterName/State/Version durante il ricaricamento di una corrispondenza, in quanto i dati inviati contengono già tutti i dettagli sulla corrispondenza ricaricata. RandomNo viene utilizzato per evitare problemi di cache del browser; è possibile utilizzare una marca temporale come numero casuale.
 
 ### Apertura istanza lettera inviata {#opening-submitted-letter-instance}
 

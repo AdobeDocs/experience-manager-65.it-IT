@@ -1,19 +1,15 @@
 ---
 title: Caratteri speciali personalizzati nella gestione della corrispondenza
-seo-title: Custom special characters in Correspondence Management
 description: Scopri come aggiungere caratteri speciali personalizzati in Gestione della corrispondenza.
-seo-description: Learn how to add custom special characters in Correspondence Management.
-uuid: a1890f6d-8e0c-471f-a9bd-861acf1f17e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-Gestione della corrispondenza dispone del supporto predefinito integrato di 210 caratteri speciali che è possibile inserire facilmente nelle lettere.
+Gestione della corrispondenza dispone del supporto predefinito per 210 caratteri speciali che è possibile inserire facilmente nelle lettere.
 
 Ad esempio, puoi inserire i seguenti caratteri speciali:
 
@@ -44,7 +40,7 @@ L’amministratore può aggiungere il supporto di caratteri speciali aggiuntivi/
 Per aggiungere il supporto per i caratteri speciali personalizzati, effettua le seguenti operazioni:
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
-1. Nella cartella delle app, crea una cartella denominata **[!UICONTROL caratteri speciali]** con un percorso/struttura simile alla cartella dei caratteri speciali (che si trova nella cartella textEditorConfig in libs):
+1. Nella cartella delle app, crea una cartella denominata **[!UICONTROL caratteri speciali]** con un percorso/struttura simile alla cartella dei caratteri speciali (nella cartella textEditorConfig in libs):
 
    1. Fare clic con il pulsante destro del mouse **caratteri speciali** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
 
@@ -60,14 +56,15 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettua le 
 
       >[!NOTE]
       >
-      >Non apportare modifiche nel ramo /libs. Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
+      >Non modificare il ramo /libs. Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe cambiare quando:
       >
       >
       >
       >    * Eseguire l’aggiornamento all’istanza
       >    * Applicare un hotfix
       >    * Installare un feature pack
-
+      >
+      >
 
    1. Clic **OK** e quindi fare clic su **Salva tutto**. La cartella dei caratteri speciali viene creata nel percorso specificato.
 
@@ -86,7 +83,7 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettua le 
 
 1. Aggiorna la pagina Editor di testo\Crea interfaccia utente per la corrispondenza. Il nodo aggiunto è l’ultimo nell’elenco dei caratteri speciali dell’interfaccia utente.
 1. Clic **Salva tutto**.
-1. Apporta le modifiche necessarie ai caratteri speciali:
+1. Modifiche ai caratteri speciali come richiesto:
 
 <table>
  <tbody>
@@ -100,7 +97,7 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettua le 
     <ol>
      <li>Aggiungi un nodo figlio in "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" con proprietà obbligatorie.</li>
      <li>Fai clic su Salva tutto</li>
-     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.</li>
+     <li>Aggiorna l'Editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -110,17 +107,17 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettua le 
      <li>Sovrapponi il nodo da aggiornare come descritto in precedenza e verifica tag e classi.</li>
      <li>Modificare i valori, ad esempio caption, value, endValue e multipleCaption. </li>
      <li>Fai clic su Salva tutto. </li>
-     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.</li>
+     <li>Aggiorna l'Editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Nascondi un carattere speciale</td>
+   <td>Nascondi carattere speciale</td>
    <td>
     <ol>
      <li>Sovrapponi il nodo da nascondere in "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li>
      <li>Aggiungi la proprietà sling:hideResource (booleana) al nodo (sotto le app) da nascondere. </li>
      <li>Fai clic su Salva tutto. </li>
-     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.<br /> </li>
+     <li>Aggiorna l'Editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -130,7 +127,7 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettua le 
      <li>Aggiungi la proprietà "sling:hideChildren (String o String[])" a "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
      <li>Aggiungi nomi di nodo (caratteri speciali da nascondere) come valori per la proprietà "sling:hideChildren". </li>
      <li>Fai clic su Salva tutto. </li>
-     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.<br /> </li>
+     <li>Aggiorna l'Editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -141,7 +138,7 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettua le 
      <li>Aggiungi la proprietà "sling:orderBefore (String)" al nodo figlio appena creato. </li>
      <li>Aggiungi il nome del nodo come valore prima del quale deve essere visualizzato il nuovo carattere speciale aggiunto. </li>
      <li>Fai clic su Salva tutto. </li>
-     <li>Aggiorna l'editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.<br /> </li>
+     <li>Aggiorna l'Editor di testo\Crea interfaccia utente per la corrispondenza per visualizzare le modifiche.<br /> </li>
     </ol> </td>
   </tr>
  </tbody>

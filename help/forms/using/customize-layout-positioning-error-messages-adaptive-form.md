@@ -1,38 +1,34 @@
 ---
 title: Personalizzare il layout e il posizionamento dei messaggi di errore di un modulo adattivo
-seo-title: Customize layout and positioning of error messages of an adaptive form
 description: Puoi personalizzare il layout e il posizionamento dei messaggi di errore di un adattivo per.
-seo-description: You can customize layout and positioning of the error messages of an adaptive for.
-uuid: 6d3490f6-c867-44c9-a527-55f6d7221f99
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
 
 # Personalizzare il layout e il posizionamento dei messaggi di errore di un modulo adattivo{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
-Puoi personalizzare il layout e il posizionamento dei messaggi di errore di un modulo adattivo. Puoi eseguire le seguenti personalizzazioni:
+È possibile personalizzare il layout e il posizionamento dei messaggi di errore di un modulo adattivo. Puoi eseguire le seguenti personalizzazioni:
 
-* Personalizza la posizione e il layout della didascalia di un campo senza apportare alcuna modifica alle proprietà CSS corrispondenti
+* Personalizza la posizione e il layout della didascalia di un campo senza modificare le proprietà CSS corrispondenti
 * Personalizzare la posizione dei messaggi di errore in linea
 * Personalizza il contenuto dell’indicatore della guida dinamica
-* Personalizza la posizione dei componenti campo (sottotitoli, widget, descrizione breve, descrizione lunga e indicatori di aiuto) senza apportare alcuna modifica alle proprietà CSS corrispondenti
+* Personalizza la posizione dei componenti campo (sottotitoli, widget, descrizione breve, descrizione lunga e indicatori di aiuto) senza modificare le proprietà CSS corrispondenti
 
 ## Personalizzare il layout dei campi {#customize-layout-of-fields}
 
-È possibile personalizzare il layout di un singolo campo o di tutti i campi per modificare la posizione della didascalia e dei messaggi di errore. Per applicare un layout personalizzato a un campo, effettua le seguenti operazioni:
+È possibile personalizzare il layout di un singolo campo o di tutti i campi per modificare la posizione della didascalia e dei messaggi di errore.
+
+Per applicare un layout personalizzato a un campo, eseguire le operazioni seguenti:
 
 ### Personalizzare il layout di un singolo campo {#customize-layout-of-a-single-field}
-
-Per applicare un layout personalizzato a un singolo campo, effettua le seguenti operazioni:
 
 1. Apri il modulo in **Stile** modalità. Per aprire il modulo in modalità stile, nella barra degli strumenti della pagina tocca ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) > **Stile**.
 1. Nella barra laterale, sotto **Oggetti modulo**, seleziona il campo e tocca il pulsante Modifica ![edit-button](assets/edit-button.png).
@@ -52,7 +48,7 @@ Creare un tema utilizzando Editor tema per personalizzare il layout di tutti i c
 
 ## Creare un layout di campo personalizzato {#create-a-custom-field-layout}
 
-1. Apri CRXDE lite. L’URL predefinito è https://&#39;[server]:[porta]&#39;/crx/de.
+1. Apri CRXDE Liti. L’URL predefinito è https://&#39;[server]:[porta]&#39;/crx/de.
 1. Copiare un layout di campo dal nodo /libs/fd/af/layouts/field (ad esempio, defaultFieldLayout) al nodo /apps (ad esempio, /apps/af-field-layout).
 1. Rinomina il nodo copiato e il file defaultFieldLayout.jsp. Ad esempio, errorOnRight.jsp.
 
@@ -82,7 +78,7 @@ Creare un tema utilizzando Editor tema per personalizzare il layout di tutti i c
    ```
 
 1. Per migliorare l’aspetto e il comportamento, includi la libreria client creata nel file di layout (errorOnRight.jsp).
-1. Apri la finestra di dialogo per modifica del campo, seleziona la **Stile** scheda. In **Configura layout campo** , selezionare il layout appena creato e fare clic su **OK**.
+1. Apri la finestra di dialogo di modifica del campo e seleziona la **Stile** scheda. In **Configura layout campo** , selezionare il layout appena creato e fare clic su **OK**.
 
 Il pacchetto ErrorOnRight.zip contiene codice per visualizzare messaggi di errore sul lato destro dei campi.
 

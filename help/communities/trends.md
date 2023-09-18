@@ -1,19 +1,15 @@
 ---
 title: Tendenze attività
-seo-title: Activity Trends
 description: Aggiunta di un componente Elenco attività community a una pagina
-seo-description: Adding a Community Activity List component to a page
-uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 4%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 4%
 
 ## Introduzione {#introduction}
 
-Il `Community Activity List` Questo componente consente di aggiungere informazioni sulle tendenze relative a post e visualizzazioni dei membri, nonché a post e visualizzazioni di contenuti.
+Il `Community Activity List` il componente consente di aggiungere informazioni sulle tendenze relative a post e visualizzazioni da parte dei membri, nonché a post e visualizzazioni di contenuto.
 
 Il documento descrive:
 
@@ -38,11 +34,7 @@ Consulta [Configurazione di Analytics per le funzioni di Communities](/help/comm
 
 ### Aggiunta di un elenco di attività community a una pagina {#adding-a-community-activity-list-to-a-page}
 
-Per aggiungere una `Community Activity List` a una pagina in modalità di authoring, individua il componente
-
-* `Communities / Community Activity List`
-
-e trascinarlo nella posizione desiderata su una pagina.
+Per aggiungere una `Community Activity List` a una pagina in modalità di authoring, individua il componente `Communities / Community Activity List` e trascinarlo nella posizione desiderata su una pagina.
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](/help/communities/basics.md).
 
@@ -52,7 +44,7 @@ La prima volta che viene inserito in una pagina di un sito community, viene visu
 
 ### Configurazione dell’elenco attività community  {#configuring-community-activity-list}
 
-Seleziona la inserita `Community Activity List` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `Community Activity List` , quindi selezionare il `Configure` in modo da poter aprire la finestra di dialogo modifica.
 
 ![configura](assets/configure-new.png)
 
@@ -107,15 +99,15 @@ Il valore predefinito è 10.
 
 * **Percorso contesto**
 
-  Consente di eseguire l’ambito dell’attività in un sottoinsieme del sito, ad esempio un blog specifico.
+  Questo consente di eseguire l’ambito dell’attività in un sottoinsieme del sito, ad esempio un blog specifico.
 L&#39;impostazione predefinita corrisponde all&#39;intero sito community.
 
 * **Aggregazione conteggio dei membri**
 
-  Se è deselezionato (disattivato), vengono conteggiati solo i post di livello superiore. Ad esempio, se il contesto è la pagina principale (impostazione predefinita), allora un `Activity Type` di `Posts` non mostrerà mai alcuna attività, in quanto non è possibile pubblicare contenuti sulla pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi su tutte le pagine discendenti.
+  Se è deselezionato (disattivato), vengono conteggiati solo i post di livello superiore. Ad esempio, se il contesto è la pagina principale (impostazione predefinita), allora un `Activity Type` di `Posts` non mostra mai alcuna attività in quanto non è possibile pubblicare contenuti sulla pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi su tutte le pagine discendenti.
 Il valore predefinito è selezionato.
 
-### Pagina di esempio con 4 componenti {#example-page-with-components}
+### Pagina di esempio con quattro componenti {#example-page-with-components}
 
 **Visitatori principali** config: Type = Membri, Activity type = Viste
 

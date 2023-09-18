@@ -1,16 +1,12 @@
 ---
 title: Proprietà di configurazione di Gestione corrispondenza
-seo-title: Correspondence Management Configuration Properties
 description: Questo argomento spiega come modificare Asset Composer con configurazioni specifiche per le soluzioni. Questo argomento descrive le proprietà che è possibile modificare, con la relativa descrizione, i valori predefiniti e i valori accettabili.
-seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
-uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 3%
@@ -76,7 +72,7 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
   <tr>
    <td><p>Tipo evidenziazione contenuto</p> </td>
    <td><p>Tipo di evidenziazione contenuto nell’applicazione Create Correspondence</p> </td>
-   <td><p>Riempi</p> </td>
+   <td><p>Compila</p> </td>
    <td><p>bordo/riempimento/nessuno</p> </td>
   </tr>
   <tr>

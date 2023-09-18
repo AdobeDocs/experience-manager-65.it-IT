@@ -1,18 +1,14 @@
 ---
 title: Funzione Contenuto in primo piano
-seo-title: Featured Content Feature
 description: La funzione Contenuto in primo piano consente ai visitatori del sito che hanno effettuato l’accesso di evidenziare il contenuto
-seo-description: The Featured Content feature lets signed-in site visitors highlight content
-uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 exl-id: 76b76e0e-531b-4f80-be70-68532ef81a7f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '338'
 ht-degree: 5%
 
 ---
@@ -29,7 +25,7 @@ La funzione di contenuto in primo piano fornisce un’area per i visitatori del 
 * [Idee](ideation-feature.md)
 * [D/R](working-with-qna.md)
 
-Una volta contrassegnato come in primo piano, il contenuto verrà elencato all’interno di questo componente, che può essere inserito in pagine di destinazione o aree specifiche che catturano facilmente l’attenzione dei membri della community.
+Una volta contrassegnato come in primo piano, il contenuto viene elencato all’interno di questo componente, che può essere inserito in pagine di destinazione o aree specifiche che catturano facilmente l’attenzione dei membri della community.
 
 La possibilità di includere contenuto può essere consentita o negata per ogni componente.
 
@@ -44,17 +40,17 @@ Per aggiungere una `Featured Content` a una pagina in modalità di authoring, ut
 
 * `Communities / Featured Content`
 
-e trascinarlo in una pagina in cui dovrebbe apparire il contenuto in primo piano.
+Trascinalo in una pagina in cui dovrebbe apparire il contenuto in primo piano.
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando [librerie lato client richieste](essentials-featured.md#essentials-for-client-side) sono inclusi, è così che `Featured Content` Il componente verrà visualizzato:
+Quando [librerie lato client richieste](essentials-featured.md#essentials-for-client-side) sono inclusi, è così che `Featured Content` viene visualizzato il componente:
 
 ![feature dcontent](assets/featuredcontent.png)
 
 ## Configurazione del contenuto in primo piano {#configuring-featured-content}
 
-Seleziona la inserita `Featured Content` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `Featured Content` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
 
 ![configure-new](assets/configure-new.png)
 
@@ -66,15 +62,15 @@ Sotto **[!UICONTROL Impostazioni]** , identifica il contenuto da visualizzare:
 
 * **[!UICONTROL Nome visualizzato]**
 
-   Titolo dell’elenco dei contenuti in primo piano. Ad esempio `Featured Questions` o `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
+  Titolo dell’elenco dei contenuti in primo piano. Ad esempio: `Featured Questions` o `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
 
 * **[!UICONTROL Posizione del contenuto in primo piano]**
 
-   *(Obbligatorio)* Passa alla pagina contenente il contenuto che potrebbe essere in primo piano (i componenti di quella pagina devono essere configurati per Consenti contenuto in primo piano). Esempio: `/content/sites/engage/en/forum`.
+  *(Obbligatorio)* Passa alla pagina contenente il contenuto che potrebbe essere visualizzato (i componenti di quella pagina devono essere configurati per Consenti contenuto in primo piano). Esempio: `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Limite di visualizzazione]**
 
-   Il numero massimo di contenuti in primo piano da visualizzare. Il valore predefinito è 5.
+  Il numero massimo di contenuti in primo piano da visualizzare. Il valore predefinito è 5.
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 
@@ -84,13 +80,13 @@ Quando un moderatore visualizza il contenuto pubblicato, ha accesso ai flag di m
 
 ![site-visitor-experience](assets/site-visitor-experience.png)
 
-Una volta contrassegnato come funzione, il flag di modifica diventa `Unfeature`.
+Dopo essere stato contrassegnato come caratteristica, il contrassegno di moderazione diventa `Unfeature`.
 
-La pagina contenente `Featured Content` componente, ora includerà questo post.
+La pagina contenente `Featured Content` componente, ora include questo post.
 
 ![site-visitor-experience1](assets/site-visitor-experience1.png)
 
-`Read More` è un collegamento al post effettivo.
+Il `Read More` collegamenti al post effettivo.
 
 ## Informazioni aggiuntive {#additional-information}
 

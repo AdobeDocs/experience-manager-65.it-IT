@@ -2,9 +2,9 @@
 title: Comprimere e decomprimere file utilizzando un’istanza di AEM Forms su JEE DSC personalizzata
 description: Scopri come comprimere e decomprimere i file utilizzando un DSC personalizzato di AEM Forms su JEE
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,13 @@ Editor Java™ come [Eclipse](https://www.eclipse.org/) o [IDE Netbeans](https:/
 
 Intermedio
 
-AEM Forms su JEE consente agli sviluppatori di creare DSC (Document Service Container) personalizzato per arricchire le funzioni predefinite. La creazione di tali componenti è collegabile all’ambiente di runtime di AEM Forms su JEE e ha lo scopo previsto. Questo articolo spiega come creare un servizio ZIP personalizzato che può essere utilizzato per comprimere un elenco di file in un file .zip e decomprimere un .zip in un elenco di documenti.
+AEM Forms su JEE consente agli sviluppatori di creare ASC (Acrobat Services Container) personalizzati per creare funzioni pronte all’uso. La creazione di tali componenti è collegabile all’ambiente di runtime di AEM Forms su JEE e ha lo scopo previsto. Questo articolo spiega come creare un servizio ZIP personalizzato che può essere utilizzato per comprimere un elenco di file in un file .zip e decomprimere un .zip in un elenco di documenti.
 
-## Creazione di un componente DSC personalizzato {#create-custom-dsc-component}
+## Creazione di un componente ASC personalizzato {#create-custom-dsc-component}
 
-Creare un componente DSC personalizzato con due operazioni di servizio per comprimere e decomprimere l&#39;elenco di documenti. Questo componente utilizza il pacchetto java.util.zip per la compressione e la decompressione. Per creare un componente personalizzato, segui i passaggi seguenti:
+Creare un componente ASC personalizzato con due operazioni di servizio per comprimere e decomprimere un elenco di documenti. Questo componente utilizza il pacchetto java.util.zip per la compressione e la decompressione.
+
+Per creare un componente ASC personalizzato:
 
 1. Aggiungi il file adobe-livecycle-client.jar alla libreria
 1. Aggiungi le icone richieste
@@ -203,7 +205,7 @@ Analogamente, l’operazione ZipDocuments del componente personalizzato può acc
 
 ![Documento ZIP](assets/zip-doc.jpg)
 
-La seguente orchestrazione del flusso di lavoro mostra come decomprimere il file ZIP specificato, comprimerlo nuovamente in un altro file ZIP e restituisce l’output (vedi la figura seguente).
+La seguente orchestrazione del flusso di lavoro mostra come decomprimere il file ZIP specificato, comprimerlo nuovamente in un altro file ZIP e restituire l’output (vedi la figura seguente).
 
 ![Decomprimi flusso di lavoro ZIP](assets/unzip-zip-process.jpg)
 
@@ -215,8 +217,8 @@ Puoi utilizzare questo servizio ZIP per i seguenti casi d’uso:
 
 * Fornisci un file ZIP contenente diversi documenti PDF che possono essere estesi in lettura dopo averli decompressi. Questo richiede il modulo AEM Forms on JEE Reader Extensions.
 
-* Fornisci un file ZIP contenente un tipo di documento eterogeneo che può essere decompresso e convertito come documento PDF utilizzando il servizio Genera PDF.
+* Specificare un file ZIP contenente un tipo di documento eterogeneo che può essere decompresso e convertito come documento PDF utilizzando il servizio Genera PDF.
 
 * La policy protegge un elenco di documenti e lo restituisce come file ZIP.
 
-* Consente agli utenti di scaricare tutti gli allegati di un&#39;istanza del processo come un singolo file ZIP.
+* Consenti agli utenti di scaricare tutti gli allegati di un’istanza del processo come un singolo file ZIP.

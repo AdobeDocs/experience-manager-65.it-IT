@@ -2,9 +2,9 @@
 title: Note sulla versione 2019 di AEM Content and Commerce
 description: Note sulla versione 2019 di AEM Content and Commerce
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '990'
 ht-degree: 10%
 
 ---
@@ -31,11 +31,11 @@ ht-degree: 10%
 
 ### Novità {#what-is-improved-november}
 
-* I selettori di categorie/prodotti sono stati migliorati per rispettare la visualizzazione specifica dello store di Adobe Commerce in una configurazione multi-store.
+* I selettori di categorie/prodotti sono stati migliorati per rispettare la vista specificata dello store di Adobe Commerce in una configurazione multi-store.
 
-* Componenti basati su React disponibili come pacchetto npm. Questo consente agli sviluppatori di utilizzare il pacchetto React Components come dipendenza per un nuovo progetto React per consentire la personalizzazione dei componenti esistenti o lo sviluppo di nuovi componenti basati su React.
+* I componenti basati su React sono disponibili come pacchetto npm. Questo consente agli sviluppatori di utilizzare il pacchetto React Components come dipendenza per un nuovo progetto React per consentire la personalizzazione dei componenti esistenti o lo sviluppo di nuovi componenti basati su React.
 
-* Personalizzazione delle query GraphQL semplificata. Questo consente agli sviluppatori di personalizzare i componenti CIF di base con meno codice.
+* La personalizzazione delle query GraphQL è stata semplificata. Questo consente agli sviluppatori di personalizzare i componenti CIF di base con meno codice.
 
 ## Data di rilascio: ottobre 2019
 
@@ -47,11 +47,11 @@ ht-degree: 10%
 
 ### Novità {#what-is-new-october}
 
-* Modelli completamente personalizzabili per la pagina dei dettagli e la pagina dell’elenco dei prodotti. Gli autori possono ora creare nuovi modelli e trascinare e rilasciare l’elenco dei prodotti e i componenti dei dettagli dei prodotti su tali modelli. Oltre ad aggiungere altri componenti, gli autori possono ora modificare anche il layout di questi modelli, dando loro una libertà illimitata di creare esperienze straordinarie combinando contenuti di marketing e di e-commerce.
+* Modelli completamente personalizzabili per la pagina dei dettagli e la pagina dell’elenco dei prodotti. Gli autori possono ora creare modelli e trascinare e rilasciare l’elenco dei prodotti e i componenti dei dettagli dei prodotti su tali modelli. Oltre ad aggiungere altri componenti, gli autori possono ora modificare anche il layout di questi modelli, dando loro una libertà illimitata di creare esperienze straordinarie combinando contenuti di marketing e di e-commerce.
 
-* Tutti i componenti core CIF compatibili con l’autore sono stati migliorati per supportare [Sistema di stili AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html). Sono stati forniti stili di esempio per il componente elenco prodotti.
+* Tutti i componenti core CIF compatibili con l’autore sono stati migliorati per supportare [Sistema di stili AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Sono stati forniti stili di esempio per il componente elenco prodotti.
 
-* Componenti lato client basati su React per la gestione degli account. Questa versione supporta le seguenti funzionalità: Accesso, Password dimenticata e Crea account.
+* Componenti lato client basati su React per la gestione degli account. Questa versione supporta le seguenti funzionalità: Accesso, Password dimenticata e Creazione di un account.
 
 ### Novità {#what-is-improved-october}
 
@@ -69,7 +69,7 @@ ht-degree: 10%
 
 ### Novità {#what-is-new-september}
 
-* Funzione con più modelli per consentire agli autori di arricchire pagine specifiche dei dettagli o dell’elenco dei prodotti. Gli autori possono creare facilmente una pagina di dettagli del prodotto o una pagina di elenco dei prodotti personalizzata e utilizzare il selettore di prodotti o categorie per assegnare la pagina personalizzata a uno o più prodotti o categorie specifici.
+* La funzione con più modelli consente agli autori di arricchire una pagina di dettagli di prodotto o una pagina di elenco prodotti specifica. Gli autori possono creare facilmente una pagina di dettagli del prodotto o una pagina di elenco dei prodotti personalizzata e utilizzare il selettore di prodotti o categorie per assegnare la pagina personalizzata a un prodotto o a una categoria specifica.
 
 * Associazione di più cataloghi per consentire agli autori di associare più cataloghi nella console dei prodotti AEM. Gli autori possono inoltre modificare e visualizzare le proprietà di associazione del catalogo dopo aver creato l&#39;associazione.
 
@@ -91,7 +91,7 @@ ht-degree: 10%
 
 ### Novità {#what-is-new-august}
 
-* L’incorporamento del connettore CIF in CIF Archetype è stato reso facoltativo per fornire agli sviluppatori maggiore flessibilità.
+* L’incorporamento del connettore CIF in CIF Archetype è facoltativo per fornire agli sviluppatori maggiore flessibilità.
 
 * I componenti CIF si sono separati dallo stile CSS specifico di &quot;Venia&quot; per consentire agli sviluppatori di applicare lo stile CSS desiderato.
 
@@ -99,7 +99,7 @@ ht-degree: 10%
 
 * Il caching di GraphQL è abilitato per alcune query GraphQL tramite HTTP GET per ridurre i tempi di risposta.
 
-* Visualizzazione descrizione prodotto abilitata nella console Prodotti AEM.
+* La vista di descrizione del prodotto è abilitata nella console Prodotti AEM.
 
 * Commerce Teaser estende il componente WCM Teaser per consentire agli autori di aggiungere campi CTA anche a una pagina di dettagli del prodotto o a una pagina di elenco dei prodotti.
 
@@ -107,7 +107,7 @@ ht-degree: 10%
 
 ### Novità {#what-is-improved-august}
 
-* La configurazione dello store di Adobe Commerce è stata spostata da OSGi alla console di prodotti AEM per rendere la configurazione dell’integrazione più semplice da creare.
+* La configurazione dello store di Adobe Commerce è stata spostata da OSGi alla console dei prodotti AEM per rendere la configurazione dell’integrazione più semplice da creare.
 
 ## Data di rilascio: luglio 2019
 
@@ -127,9 +127,9 @@ ht-degree: 10%
 
 * Rendering lato client dell’attributo price nei componenti Product Detail ed Product List per supportare il rendering degli attributi dinamici.
 
-* Carosello prodotti lato server per visualizzare l’elenco dei prodotti presentati in uno stile carosello.
+* Carosello prodotti lato server per visualizzare un elenco di prodotti in primo piano in uno stile carosello.
 
-* Elenco di categorie in primo piano lato server per visualizzare l’elenco delle categorie su una pagina AEM.
+* Elenco di categorie in primo piano lato server per visualizzare un elenco di categorie in una pagina AEM.
 
 ### Novità {#what-is-improved-july}
 

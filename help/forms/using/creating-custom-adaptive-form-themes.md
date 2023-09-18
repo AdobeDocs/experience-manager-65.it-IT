@@ -1,17 +1,13 @@
 ---
 title: Creazione di temi di moduli adattivi personalizzati
-seo-title: Creating custom adaptive form themes
-description: Un tema per moduli adattivi è una libreria client AEM che puoi utilizzare per definire gli stili (look and feel) di un modulo adattivo. Scopri come creare temi di moduli adattivi personalizzati.
-seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
-uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
+description: Un tema per moduli adattivi è una libreria client di Adobe Experience Manager che puoi utilizzare per definire gli stili (aspetto) di un modulo adattivo. Scopri come creare temi di moduli adattivi personalizzati.
 content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -20,12 +16,12 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->AEM Forms fornisce [Editor temi](/help/forms/using/themes.md) possibilità di creare e modificare moduli adattivi [temi](/help/forms/using/themes.md). Esegui i passaggi elencati in questo articolo solo se hai effettuato l’aggiornamento da una versione che non dispone di [Editor temi](/help/forms/using/themes.md) inoltre, è disponibile un investimento in temi creati utilizzando file Less/CSS (metodo di editor pre-tema).
+>Adobe Experience Manager (AEM) Forms fornisce [Editor temi](/help/forms/using/themes.md) possibilità di creare e modificare moduli adattivi [temi](/help/forms/using/themes.md). Esegui i passaggi elencati in questo articolo solo se hai effettuato l’aggiornamento da una versione che non dispone di [Editor temi](/help/forms/using/themes.md) inoltre, è disponibile un investimento in temi creati utilizzando file Less/CSS (metodo di editor pre-tema).
 
 ## Prerequisiti {#prerequisites}
 
 * Conoscenza del framework LESS (Leaner CSS)
-* Creare una libreria client in Adobe Experience Manager
+* Come creare una libreria client in Adobe Experience Manager
 * [Creazione di un modello di modulo adattivo](/help/forms/using/custom-adaptive-forms-templates.md) per utilizzare il tema creato
 
 ## Tema modulo adattivo {#adaptive-form-theme}
@@ -40,7 +36,7 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
 
 >[!NOTE]
 >
->La procedura seguente viene descritta utilizzando nomi di esempio per gli oggetti AEM come nodo, proprietà e cartelle.
+>La procedura seguente viene descritta utilizzando nomi di esempio per gli oggetti AEM come nodi, proprietà e cartelle.
 >
 >Se si esegue la procedura seguente utilizzando i nomi, il modello risultante dovrebbe essere simile allo snapshot seguente:
 
@@ -63,11 +59,11 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
 
    * `less` cartella: contiene `less` file di variabili in cui definire `less` variabili e `less mixins` utilizzati per gestire gli stili .css.
 
-      Questa cartella è costituita da `less` file di variabili, `less` file mixin, `less` file che definiscono gli stili utilizzando mixin e variabili. E tutti questi meno file vengono poi importati in styles.less.
+     Questa cartella è costituita da `less` file di variabili, `less` file mixin, `less` file che definiscono gli stili utilizzando mixin e variabili. E tutti questi meno file vengono poi importati in styles.less.
 
    * `css`cartella: contiene i file .css in cui si definiscono gli stili statici da utilizzare nel tema.
 
-   **Meno file variabili**: questi sono i file in cui puoi definire o sovrascrivere le variabili utilizzate per definire gli stili CSS.
+   **Meno file variabili**: questi sono i file in cui definisci o sostituisci le variabili utilizzate nella definizione degli stili CSS.
 
    I moduli adattivi forniscono variabili OOTB definite nei seguenti file .less:
 
@@ -109,7 +105,7 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **Meno file mixin:** È possibile definire le funzioni che accettano le variabili come argomenti. L’output di queste funzioni sono gli stili risultanti. Utilizza questi mixin in stili diversi, per evitare di ripetere gli stili CSS.
+   **Meno file mixin:** È possibile definire le funzioni che accettano le variabili come argomenti. L’output di queste funzioni è rappresentato dagli stili risultanti. Utilizza questi mixin in stili diversi, per evitare di ripetere gli stili CSS.
 
    I moduli adattivi forniscono mixin OOTB definiti in:
 
@@ -135,7 +131,7 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
    }
    ```
 
-   **File Styles.less:** Utilizza questo file per includere tutti i file meno importanti (variabili, mixin, stili) che devi utilizzare nella libreria client.
+   **File Styles.less:** Usa questo file per includere tutti i file meno importanti (variabili, mixin, stili) che devi utilizzare nella libreria client.
 
    Nell’esempio seguente `styles.less` file, l’istruzione di importazione può essere inserita in qualsiasi ordine.
 
@@ -218,7 +214,7 @@ Dopo aver creato un tema per moduli adattivi, effettua le seguenti operazioni pe
 
    1. Per utilizzare un tema nella pagina, devi aggiungere al nodo un file library.jsp che esegue l’override.
 
-      Importa quindi il tema creato in Per creare una sezione del tema per moduli adattivi in questo articolo.
+      Puoi quindi importare il tema creato in Per creare una sezione del tema per moduli adattivi in questo articolo.
 
       Il frammento di codice di esempio seguente importa `af.theme.forest` tema.
 
@@ -229,7 +225,7 @@ Dopo aver creato un tema per moduli adattivi, effettua le seguenti operazioni pe
 
    1. **Facoltativo**: nella pagina personalizzata, esegui l’override di header.jsp, footer.jsp e body.jsp, come richiesto.
 
-1. Creare un modello personalizzato (ad esempio: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) il cui jcr:content punta alla pagina personalizzata creata nel passaggio precedente (ad esempio: `myAfCustomizations/myAfPages/forestPage)`.
+1. Crea un modello personalizzato (ad esempio: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) il cui jcr:content punta alla pagina personalizzata creata nel passaggio precedente (ad esempio: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Snapshot dell’archivio CRX](assets/2-1.png)
 
