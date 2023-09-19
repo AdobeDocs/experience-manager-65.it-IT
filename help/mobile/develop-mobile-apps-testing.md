@@ -1,18 +1,14 @@
 ---
 title: Verifica delle app mobili
-seo-title: Testing Mobile Apps
 description: Verifica delle app mobili
-seo-description: null
-uuid: 3b402d34-5cab-4280-b8b9-88ad9f8fc5e4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
-discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 0%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Data l’ampia gamma di dispositivi sul mercato e di dispositivi in fase di rilascio, il test delle app è diventato estremamente importante. Si tratta di un’area in cui funzionalità e usabilità possono ottenere recensioni negative su un app store, ma un singolo difetto può causare la disinstallazione dell’app. È necessario prestare particolare attenzione ai piani di test e al controllo qualità. Il seguente collegamento tratta molti degli argomenti che devono essere affrontati in generale, ad esempio identificare l’ambiente, definire i casi di test, i tipi di test, i presupposti, il coinvolgimento del cliente, ecc. Vengono inoltre descritti gli strumenti utili per l’attività di test. Strumenti interni, come [Hobbes](/help/sites-developing/hobbes.md), può essere utile per i test dell’interfaccia utente basati sul web. [Giornata difficile](/help/sites-developing/tough-day.md) può sollecitare le istanze con un carico simulato. Se l’ambiente di test ha già esperienza con strumenti di terze parti, come Selenium, puoi utilizzare anche questi.
+Data l’ampia gamma di dispositivi sul mercato e di dispositivi in fase di rilascio, il test delle app è diventato imperativo. Si tratta di un’area in cui funzionalità e usabilità possono ottenere recensioni negative su un app store, ma un singolo difetto può causare la disinstallazione dell’app. Presta particolare attenzione ai piani di test e al controllo qualità. Il seguente collegamento tratta molti degli argomenti che devono essere trattati in generale, ad esempio l’identificazione dell’ambiente, la definizione dei casi di test, i tipi di test, i presupposti e il coinvolgimento dei clienti. Vengono inoltre descritti gli strumenti utili per l’attività di test. Strumenti interni, come [Hobbes](/help/sites-developing/hobbes.md), può essere utile per i test dell’interfaccia utente basati sul web. [Giornata difficile](/help/sites-developing/tough-day.md) può sollecitare le istanze con un carico simulato. Se l’ambiente di test ha già esperienza con strumenti di terze parti, come Selenium, puoi utilizzare anche questi.
 
 Quando si sviluppa un’app mobile, vi sono molti nuovi problemi specifici per i dispositivi che devono essere affrontati insieme a quelli dei test tradizionali.
 
@@ -40,13 +36,13 @@ Quando si sviluppa un’app mobile, vi sono molti nuovi problemi specifici per i
 
 ## Test automatizzati {#automated-testing}
 
-È necessario eseguire un certo grado di test automatizzati per coprire la varietà di dimensioni dello schermo, vincoli di memoria, metodi di input e sistemi operativi. Non solo copre la maggior parte dei casi di test, ma può velocizzare il test di regressione quando vengono introdotte nuove funzioni o nuovi dispositivi. Idealmente, gli strumenti di automazione dovrebbero ridurre o limitare la duplicazione degli sforzi. Utilizza strumenti o framework per applicare il tuo impegno di test a tutte le piattaforme. Il grafico seguente mostra una struttura semplificata di un ambiente di test per i test dell’interfaccia utente basati su web e per i test delle app mobili. Il lato sinistro del grafico mostra una serie di nodi Selenium con browser. SeleniumGrid può eseguire il farm out dei test comuni dell’interfaccia utente basati sul web in uno qualsiasi di questi nodi. L’hub Selenium può anche connettersi ad Appium per il test di app multipiattaforma. Sono mostrati solo i simulatori, ma puoi incorporare le utility adb, per Android e Xcode per i dispositivi iOS. Più avanti in questo documento vengono forniti collegamenti che consentono di trovare dettagli specifici per gli strumenti menzionati.
+È necessario eseguire un certo grado di test automatizzati per coprire la varietà di dimensioni dello schermo, vincoli di memoria, metodi di input e sistemi operativi. Non solo copre molti dei casi di prova, ma può accelerare il test di regressione quando vengono introdotte nuove funzioni o nuovi dispositivi. Idealmente, gli strumenti di automazione dovrebbero ridurre o limitare la duplicazione degli sforzi. Utilizza strumenti o framework per applicare il tuo impegno di test a tutte le piattaforme. Il grafico seguente mostra una struttura semplificata di un ambiente di test per i test dell’interfaccia utente basati su web e per i test delle app mobili. Il lato sinistro del grafico mostra una serie di nodi Selenium con browser. SeleniumGrid può eseguire il farm out dei test comuni dell’interfaccia utente basati sul web in uno qualsiasi di questi nodi. L’hub Selenium può anche connettersi ad Appium per il test di app multipiattaforma. Sono mostrati solo i simulatori, ma puoi incorporare le utility adb, per Android™ e Xcode per i dispositivi iOS. Più avanti in questo documento vengono forniti collegamenti che consentono di trovare dettagli specifici per gli strumenti menzionati.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
 ## Test manuale {#manual-testing}
 
-Oltre al test automatico, l’app deve essere sottoposta a un ciclo di test manuale. I clienti che eseguono l’app su un dispositivo reale non possono essere duplicati da uno script. Anche qui, hai molte opzioni. Puoi utilizzare una piattaforma, come HockeyApp, per definire chi ha accesso e raccogliere feedback. In alternativa, è possibile affidare l&#39;intero processo a un servizio come UTest, ElusiveStars o Testin. Se disponi di un gruppo di tester interni, ma non di dispositivi diversi, puoi eseguire test manuali sui loro pool di dispositivi tramite i servizi cloud. Un servizio di questo tipo è SauceLabs. Puoi anche creare app da remoto per PhoneGap Enterprise e installarle su dispositivi locali come livello di test di accettazione o dimostrazione. Visualizza PhoneGap (`https://phonegap.com/`) per le funzioni e la documentazione più recenti. Qualunque sia l&#39;approccio adottato, le prove manuali devono:
+Oltre al test automatico, l’app deve essere sottoposta a un ciclo di test manuale. I clienti che eseguono l’app su un dispositivo reale non possono essere duplicati da uno script. Anche qui, hai molte opzioni. Puoi utilizzare una piattaforma, come HockeyApp, per definire chi ha accesso e raccogliere feedback. In alternativa, è possibile affidare l&#39;intero processo a un servizio come UTest, ElusiveStars o Testin. Se disponi di un gruppo di tester interni, ma non di dispositivi diversi, puoi eseguire test manuali sui loro pool di dispositivi tramite i servizi cloud. Un servizio di questo tipo è SauceLabs. Puoi anche creare app da remoto per PhoneGap Enterprise e installarle su dispositivi locali come livello di test di accettazione o dimostrazione. Visualizza PhoneGap (`https://phonegap.com/`) per le funzioni e la documentazione più recenti. Indipendentemente dall’approccio adottato, il test manuale deve effettuare le seguenti operazioni:
 
 * ha raggiunto un vasto target di tester,
 * effettuare prove su un ampio pool di dispositivi (idealmente dispositivi reali, ma simulatori/emulatori se non sono disponibili dispositivi reali),
@@ -57,25 +53,25 @@ Oltre al test automatico, l’app deve essere sottoposta a un ciclo di test manu
    * usabilità,
    * aree di attenzione,
    * prestazioni,
-   * dati/consumo energetico, ecc.
+   * dati/consumo energetico e così via.
 
 ## Strumenti {#tools}
 
-È disponibile un’ampia gamma di strumenti per testare le app mobili. La scelta di quelli da utilizzare si baserà sulla tua situazione specifica: caratteristiche, prezzo, supporto, copertura, ecc. Di seguito è riportata solo una breve descrizione di alcuni degli strumenti e dei servizi disponibili.
+È disponibile un’ampia gamma di strumenti per testare le app mobili. La scelta di quelli da utilizzare deve essere basata sulla tua situazione specifica: caratteristiche, prezzo, supporto, copertura e così via. Di seguito è riportata solo una breve descrizione di alcuni degli strumenti e dei servizi disponibili.
 
 **Selenio**
 
 * Framework che include un&#39;API per gli script di test per alimentare WebDriver e controllare vari browser.
-* Puoi utilizzarlo in combinazione con Appium per il test su dispositivi reali.
+* Puoi utilizzarlo con Appium per il test su dispositivi reali.
 * SeleniumGrid indirizza i test tra nodi per i test paralleli.
 * L&#39;IDE di selenio aiuta a ridurre la scrittura di test case.
 
-Per ulteriori informazioni, consulta [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Per ulteriori informazioni, consulta [https://www.selenium.dev/](https://www.selenium.dev/).
 
 **Testdroide**
 
 * Servizio di test basato su cloud con hook di integrazione continua e test sul dispositivo reale.
-* Include un App Crawler che controlla la compatibilità del dispositivo, analizza i registri, analizza le visualizzazioni, acquisisce le schermate e monitora le prestazioni.
+* Incluso è un App Crawler che controlla la compatibilità del dispositivo, analizza i registri, analizza le viste, acquisisce le schermate e monitora le prestazioni.
 
 Per ulteriori informazioni, consulta [https://testdroid.com/](https://testdroid.com/).
 
@@ -95,10 +91,10 @@ Per ulteriori informazioni, consulta [https://saucelabs.com/](https://saucelabs.
 
 **AppTestNow**
 
-* Servizio di outsourcing che consente di testare le app mobili.
-* Include un ampio pool di dispositivi e offre un&#39;ampia gamma di tipi di test: prestazioni, qualità, funzionalità, certificazione, localizzazione, consumo di dati, ecc.
+* Servizio di outsourcing che esegue il test delle app mobili.
+* È incluso un ampio pool di dispositivi e offre una vasta gamma di tipi di test: prestazioni, qualità, funzionali, certificazione, localizzazione, consumo di dati e così via.
 
-Per ulteriori informazioni, consulta [https://www.apptestnow.com](https://www.apptestnow.com/).
+Per ulteriori informazioni, consulta [https://apptestnow.com/](https://apptestnow.com/).
 
 **Hockey App**
 
@@ -108,6 +104,6 @@ Per ulteriori informazioni, consulta [https://hockeyapp.net/features/](https://h
 
 **Jenkins**
 
-* Anche se non è uno strumento di test, Jenkins è un framework di integrazione continua che fornisce la spina dorsale per i test automatizzati. Sono disponibili numerosi plug-in di terze parti per estendere le funzionalità. Ad esempio, il plugin SeleniumGrid fornisce un’interfaccia utente per aiutare a gestire l’hub e i nodi Selenium.
+* Anche se non è uno strumento di test, Jenkins è un framework di integrazione continua che fornisce la spina dorsale per i test automatizzati. Sono disponibili numerosi plug-in di terze parti per estendere la funzionalità. Ad esempio, il plugin SeleniumGrid fornisce un’interfaccia utente per aiutare a gestire l’hub e i nodi Selenium.
 
-Per ulteriori informazioni, consulta [https://jenkins-ci.org/](https://jenkins-ci.org/) e [https://wiki.jenkins-ci.org/display/JENKINS/Plugins](https://wiki.jenkins-ci.org/display/JENKINS/Plugins).
+Per ulteriori informazioni, consulta [https://www.jenkins.io/](https://www.jenkins.io/) e [https://plugins.jenkins.io/](https://plugins.jenkins.io/).

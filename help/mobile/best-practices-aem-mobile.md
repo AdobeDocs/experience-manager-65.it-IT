@@ -1,14 +1,14 @@
 ---
 title: Best practice per AEM Mobile On-demand Services
-description: Scopri le best practice e le linee guida per gli sviluppatori AEM esperti per i siti che desiderano creare modelli e componenti per app mobili.
+description: Scopri le best practice e le linee guida per gli sviluppatori di Adobe Experience Manager (AEM) competenti per i siti che desiderano creare modelli e componenti per app mobili.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 La creazione di un’app AEM Mobile On-demand Services è diversa dalla creazione di un’app che viene eseguita direttamente nella shell Cordova (o PhoneGap). Gli sviluppatori devono avere familiarità con:
 
-* Plug-in supportati e plug-in specifici per AEM Mobile.
+* Plug-in supportati come plug-in predefiniti e plug-in specifici per dispositivi mobili Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ La creazione di un’app AEM Mobile On-demand Services è diversa dalla creazion
 
 ## Linee guida per gli sviluppatori AEM {#guidelines-for-aem-developers}
 
-Le seguenti linee guida aiutano gli sviluppatori esperti di AEM per i siti, che desiderano creare modelli e componenti per app mobili:
+Le seguenti linee guida aiutano gli sviluppatori AEM competenti per i siti che desiderano creare modelli e componenti per app mobili:
 
 **Strutturare modelli di siti AEM per incoraggiare il riutilizzo e l’estensibilità**
 
@@ -48,7 +48,7 @@ Le seguenti linee guida aiutano gli sviluppatori esperti di AEM per i siti, che 
 
 * Preferisci Sightly/HTL a JSP come linguaggio di modelli
 
-   * L’utilizzo di questa opzione favorisce la separazione del codice dal markup, offre una protezione XSS incorporata e una sintassi più familiare
+   * L’utilizzo di questa opzione favorisce la separazione del codice dal markup, offre una protezione XSS integrata e una sintassi più familiare
 
 **Ottimizza per prestazioni su dispositivo**
 
@@ -63,7 +63,7 @@ Le seguenti linee guida aiutano gli sviluppatori esperti di AEM per i siti, che 
 **Preferisci librerie JS e CSS lato client specifiche per l’app rispetto a quelle specifiche per il web**
 
 * Per evitare il sovraccarico in librerie come jQuery Mobile per gestire un&#39;ampia gamma di dispositivi e browser
-* Quando un modello viene eseguito nella visualizzazione web di un’app, puoi controllare le piattaforme e le versioni che l’app supporterà e sapere che sarà presente il supporto JavaScript. Ad esempio, preferisci Ionic (forse solo CSS) rispetto a jQuery Mobile e Onsen UI rispetto a Bootstrap.
+* Quando un modello viene eseguito nella visualizzazione web di un’app, puoi controllare le piattaforme e le versioni che l’app supporterà e sapere che sarà presente il supporto JavaScript. Ad esempio, preferisci Ionic (solo CSS) rispetto a jQuery Mobile e Onsen UI rispetto a Bootstrap.
 
 >[!NOTE]
 >
@@ -71,9 +71,9 @@ Le seguenti linee guida aiutano gli sviluppatori esperti di AEM per i siti, che 
 
 **Preferisci le micro librerie a quelle full stack**
 
-* Il tempo necessario per inserire i contenuti nel vetro del dispositivo verrà rallentato da ogni libreria da cui dipendono gli articoli. Questo rallentamento si aggrava quando si utilizza una nuova visualizzazione web per eseguire il rendering di ogni articolo, pertanto ogni libreria deve essere inizializzata di nuovo da zero
+* Il tempo necessario per inserire i contenuti nel vetro del dispositivo viene rallentato da ogni libreria da cui dipendono gli articoli. Questo rallentamento si aggrava quando si utilizza una nuova visualizzazione web per eseguire il rendering di ogni articolo, pertanto ogni libreria deve essere inizializzata di nuovo da zero
 * Se i tuoi articoli non sono generati come SPA (app a pagina singola), probabilmente non devi includere una libreria full stack come Angular
-* Preferisci librerie di dimensioni ridotte e monouso per aggiungere l’interattività necessaria per la pagina, ad esempio [Clic rapido](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
+* Preferisci librerie singole più piccole che consentono di aggiungere l’interattività richiesta dalla pagina, ad esempio [Clic rapido](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
 
 **Riduci al minimo le dimensioni del payload dell’articolo**
 
