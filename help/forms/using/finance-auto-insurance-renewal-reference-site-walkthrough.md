@@ -1,14 +1,14 @@
 ---
 title: Procedura dettagliata sul sito di riferimento per il rinnovo dell'assicurazione automatica We.Finance
-description: Procedura dettagliata sul sito di riferimento per il rinnovo dell'assicurazione automatica We.Finance
+description: Scopri il sito di riferimento We.Finance Auto Insurance Renewal con una procedura dettagliata.
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Il sito We.Finance è un sito di servizi finanziari progettato per aiutarti ad apprendere le funzionalità di comunicazione interattiva di AEM Forms.
 
-Leggi la procedura dettagliata relativa al caso d’uso di We.Finance Auto Insurance, che illustra il modo in cui l’AEM si forma e la sua integrazione con Microsoft® Dynamics consente di personalizzare l’esperienza del cliente in una società di servizi finanziari. La procedura dettagliata interattiva è progettata per facilitare l’implementazione di transazioni digitali complesse e la comunicazione con i clienti in una società finanziaria.
+Leggi una procedura dettagliata relativa a un caso d’uso di We.Finance Auto Insurance che illustra il modo in cui l’AEM si forma e la sua integrazione con Microsoft® Dynamics consente di personalizzare l’esperienza del cliente in una società di servizi finanziari. La procedura dettagliata interattiva è progettata per facilitare l’implementazione di transazioni digitali complesse e la comunicazione con i clienti in una società finanziaria.
 
 **Il percorso inizia con il caso d’uso:**
 
-Sarah Rose è un cliente We.Finance esistente e ha acquistato una polizza di assicurazione auto. Ora è il momento dell&#39;anno per rinnovare la polizza assicurativa di Sarah. Gloria Rios, Agente di Assicurazione, We.Finance invia un promemoria a Sarah in merito al rinnovo della sua polizza. Sarah segue le istruzioni fornite nell’e-mail e completa correttamente il processo.
+Sarah Rose è un cliente We.Finance esistente e ha acquistato una polizza di assicurazione auto. È quel periodo dell&#39;anno in cui Sarah rinnova la sua polizza assicurativa. Gloria Rios è la sua agente assicurativo. We.Finance invia un promemoria a Sarah in merito al rinnovo della sua politica. Sarah segue le istruzioni fornite nell’e-mail e completa correttamente il processo.
 
 ## Procedura dettagliata per l&#39;applicazione di assicurazione automatica {#auto-insurance-application-walkthrough}
 
@@ -34,7 +34,7 @@ Lo scenario di applicazione di Assicurazione automatica We.Finance è una narraz
 
 ### Gloria invia una comunicazione di rinnovo della polizza assicurativa da We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria accede all’istanza AEM e fa clic su **Rinnovo Assicurazione Automatica,** e quindi clic su **Apri l’interfaccia utente dell’agente.** Il clic precompila il documento di assicurazione con i dettagli della polizza di Sarah Rose. Clic su Gloria **Invia** e viene visualizzato un messaggio sullo schermo &quot;Invio avviato&quot; e quindi tra pochi secondi &quot;Invio completato&quot;.
+Gloria accede all’istanza AEM e fa clic su **Rinnovo Assicurazione Automatica,** e quindi clic su **Apri interfaccia utente agente**. Il clic precompila il documento di assicurazione con i dettagli della polizza di Sarah Rose. Clic su Gloria **Invia** e viene visualizzato un messaggio sullo schermo &quot;Invio avviato&quot; e quindi tra pochi secondi &quot;Invio completato&quot;.
 
 Sarah riceve un’e-mail con l’oggetto &quot;Rinnovo dell’assicurazione automatica&quot;.
 
@@ -42,7 +42,7 @@ Sarah riceve un’e-mail con l’oggetto &quot;Rinnovo dell’assicurazione auto
 
 #### Vedi tu stesso {#see-it-yourself}
 
-Vai a **Adobe Experience Manager** > **Forms** > **Forms e documenti** > **We.Finance** > **Assicurazione automatica**. Seleziona il rinnovo dell’assicurazione automatica **comunicazione interattiva** e fai clic su **Apri interfaccia utente agente**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Inserisci un indirizzo e-mail valido in modo che possano ricevere l’e-mail con il documento dei criteri allegato e fai clic su Invia.
+Vai a **Adobe Experience Manager** > **Forms** > **Forms e documenti** > **We.Finance** > **Assicurazione automatica**. Seleziona il rinnovo dell’assicurazione automatica **comunicazione interattiva** e fai clic su **Apri interfaccia utente agente**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Inserisci un indirizzo e-mail valido in modo che possano ricevere l’e-mail con il documento della policy allegato e fai clic su Invia.
 
 Puoi accedere e rivedere la comunicazione interattiva Auto Insurance Renewal direttamente da `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
@@ -68,11 +68,11 @@ Il **Rinnova ora** nell’e-mail indirizza Sarah alla policy sul web. Puoi visit
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 
-Puoi controllare il riepilogo dettagliato del rinnovo dell’assicurazione automatica e fare clic su **Rinnova ora** nella parte inferiore della pagina.
+Controlla il riepilogo dettagliato del rinnovo dell’assicurazione automatica e fai clic su **Rinnova ora** nella parte inferiore della pagina.
 
 ### Sarah raggiunge la pagina dei pagamenti {#sarah-reaches-the-payment-page}
 
-We.Finance porta Sarah alla pagina Pagamento. Sarah controlla nuovamente i suoi documenti dal numero della polizza e dalla data di scadenza. Sul lato destro della pagina, controlla il Riepilogo pagamenti del rinnovo con uno sconto del 10% sull&#39;importo totale.
+We.Finance porta Sarah alla pagina Pagamento. Sarah controlla nuovamente i suoi documenti dal numero della polizza e dalla data di scadenza. Sul lato destro della pagina, Sarah controlla il Riepilogo pagamenti del rinnovo con uno sconto del 10% sull’importo totale.
 
 #### Come funziona {#how-it-works-1}
 
