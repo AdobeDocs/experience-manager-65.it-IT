@@ -1,32 +1,28 @@
 ---
 title: Generazione rapporti
-seo-title: Reporting
-description: Scopri come utilizzare la funzione di reporting in AEM.
-seo-description: Learn how to work with Reporting in AEM.
-uuid: eee4befd-5fa9-4ebc-8eea-56e1534a6b9b
+description: Scopri come utilizzare la funzione di reporting in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '2804'
-ht-degree: 5%
+source-wordcount: '2776'
+ht-degree: 4%
 
 ---
 
 # Generazione rapporti {#reporting}
 
-Per aiutarti a monitorare e analizzare lo stato dell’istanza, l’AEM fornisce una selezione di rapporti predefiniti che possono essere configurati per i tuoi requisiti individuali:
+Per aiutarti a monitorare e analizzare lo stato dell’istanza, Adobe Experience Manager (AEM) fornisce una selezione di rapporti predefiniti che possono essere configurati per i tuoi requisiti individuali:
 
 * [Report componente](#component-report)
 * [Utilizzo disco](#disk-usage)
 * [Verifica stato](#health-check)
 * [Report attività pagina](#page-activity-report)
-* [Report per contenuti generati dall&#39;utente](#user-generated-content-report)
+* [Report di contenuti generati dall&#39;utente](#user-generated-content-report)
 * [Report utente](#user-report)
 * [Report di istanze flusso di lavoro](#workflow-instance-report)
 * [Report di workflow](#workflow-report)
@@ -35,13 +31,13 @@ Per aiutarti a monitorare e analizzare lo stato dell’istanza, l’AEM fornisce
 >
 >Questi rapporti sono disponibili solo nell’interfaccia classica. Per il monitoraggio e il reporting del sistema nell&#39;interfaccia utente moderna, vedi [Dashboard operazioni.](/help/sites-administering/operations-dashboard.md)
 
-È possibile accedere a tutti i rapporti da **Strumenti** console. Seleziona **Rapporti** nel riquadro di sinistra, fare doppio clic sul report richiesto nel riquadro di destra per aprirlo per la visualizzazione e/o la configurazione.
+È possibile accedere a tutti i rapporti da **Strumenti** console. Seleziona **Rapporti** nel riquadro di sinistra, fare doppio clic sul report richiesto nel riquadro di destra per aprirlo per la visualizzazione, la configurazione o entrambe.
 
-È possibile creare nuove istanze di un rapporto anche dalla sezione **Strumenti** console. Seleziona **Rapporti** nel riquadro di sinistra, quindi **Nuovo...** dalla barra degli strumenti. Definisci un **Titolo** e **Nome**, seleziona il tipo di rapporto desiderato, quindi fai clic su **Crea**. La nuova istanza di report verrà visualizzata nell’elenco. Fai doppio clic su questo per aprire, quindi trascina un componente dalla barra laterale per creare la prima colonna e avviare la definizione del rapporto.
+È possibile creare nuove istanze di un rapporto anche dalla sezione **Strumenti** console. Seleziona **Rapporti** nel riquadro di sinistra, quindi **Nuovo...** dalla barra degli strumenti. Definisci un **Titolo** e **Nome**, seleziona il tipo di rapporto desiderato, quindi fai clic su **Crea**. La nuova istanza di report viene visualizzata nell’elenco. Fai doppio clic su questo per aprire, quindi trascina un componente dalla barra laterale in modo da creare la prima colonna e avviare la definizione del rapporto.
 
 >[!NOTE]
 >
->Oltre ai rapporti standard AEM preconfigurati, puoi [sviluppare rapporti personalizzati (completamente nuovi)](/help/sites-developing/dev-reports.md).
+>Oltre ai rapporti standard AEM preconfigurati, puoi [sviluppare (nuovi) rapporti](/help/sites-developing/dev-reports.md).
 
 ## Nozioni di base sulla personalizzazione dei rapporti {#the-basics-of-report-customization}
 
@@ -49,7 +45,7 @@ Sono disponibili vari formati di rapporti. Tutti i rapporti seguenti utilizzano 
 
 * [Report componente](#component-report)
 * [Report attività pagina](#page-activity-report)
-* [Report per contenuti generati dall&#39;utente](#user-generated-content-report)
+* [Report di contenuti generati dall&#39;utente](#user-generated-content-report)
 * [Report utente](#user-report)
 * [Report di istanze flusso di lavoro](#workflow-instance-report)
 
@@ -60,7 +56,7 @@ Sono disponibili vari formati di rapporti. Tutti i rapporti seguenti utilizzano 
 >
 >* [Verifica stato](#health-check) utilizza i campi di selezione per specificare i dati sui quali si desidera creare rapporti.
 >* [Utilizzo disco](#disk-usage) utilizza i collegamenti per eseguire il drill-down della struttura dell’archivio.
->* [Report di flusso di lavoro](/help/sites-administering/reporting.md#workflow-report) offre una panoramica dei flussi di lavoro in esecuzione nell’istanza.
+>* [Flusso di lavoro](/help/sites-administering/reporting.md#workflow-report) offre una panoramica dei flussi di lavoro in esecuzione nell’istanza.
 >
 >Pertanto, le seguenti procedure per la configurazione delle colonne non sono appropriate. Per informazioni dettagliate, consulta le descrizioni dei singoli rapporti.
 
@@ -72,44 +68,44 @@ Il **Componenti** Nella scheda della barra laterale (disponibile nella pagina de
 
 Per modificare la selezione dei dati:
 
-* per aggiungere una nuova colonna, trascina il componente richiesto dalla barra laterale e rilascialo nella posizione desiderata
+* per aggiungere una colonna, trascina il componente richiesto dalla barra laterale e rilascialo nella posizione desiderata
 
-   * una spunta verde indica quando la posizione è valida e una coppia di frecce indica esattamente dove verrà posizionata
+   * un segno di spunta verde indica quando la posizione è valida e una coppia di frecce indica esattamente dove viene posizionata
    * un simbolo rosso &quot;no-go&quot; indica quando la posizione non è valida
 
-* per spostare una colonna, fai clic sull’intestazione, tieni premuto e trascina nella nuova posizione
-* per rimuovere una colonna, fai clic sul titolo della colonna, tieni premuto e trascina verso l’alto nell’area dell’intestazione del rapporto (un simbolo rosso meno indica che la posizione non è valida); rilascia il pulsante del mouse e la finestra di dialogo Elimina componenti richiederà la conferma che desideri eliminare la colonna.
+* per spostare una colonna, fare clic sull&#39;intestazione, tenere premuto e trascinare nella nuova posizione
+* per rimuovere una colonna, fare clic sul titolo della colonna, tenere premuto e trascinare verso l&#39;alto nell&#39;area dell&#39;intestazione del report (un simbolo meno rosso indica che la posizione non è valida). Rilasciare il pulsante del mouse e la finestra di dialogo Elimina componenti richiede la conferma dell&#39;eliminazione effettiva della colonna.
 
 ### Menu a discesa delle colonne {#column-drop-down-menu}
 
 Ogni colonna del rapporto ha un menu a discesa. Questa opzione diventa visibile quando il cursore del mouse si sposta sulla cella del titolo della colonna.
 
-La freccia viene visualizzata all&#39;estrema destra della cella del titolo (da non confondere con la freccia immediatamente a destra del testo del titolo che indica [meccanismo di ordinamento corrente](#sorting-the-data)).
+Viene visualizzata una freccia all&#39;estrema destra della cella del titolo (da non confondere con la freccia immediatamente a destra del testo del titolo che indica [meccanismo di ordinamento corrente](#sorting-the-data)).
 
 ![reportcolumnsort](assets/reportcolumnsort.png)
 
-Le opzioni disponibili nel menu dipendono dalla configurazione della colonna (come effettuato durante lo sviluppo del progetto), tutte le opzioni non valide saranno disattivate.
+Le opzioni disponibili nel menu dipendono dalla configurazione della colonna (effettuata durante lo sviluppo del progetto), mentre le opzioni non valide vengono disattivate (disattivate).
 
 ### Ordinamento dei dati {#sorting-the-data}
 
 I dati possono essere ordinati in base a una colonna specifica:
 
-* facendo clic sull&#39;intestazione di colonna appropriata; l&#39;ordinamento sarà crescente o decrescente, indicato da una freccia posta immediatamente accanto al testo del titolo
-* utilizzare il [menu a discesa della colonna](#column-drop-down-menu) per selezionare in modo specifico **Ordinamento crescente** o **Ordine decrescente**; anche in questo caso verrà indicata da una freccia accanto al testo del titolo
+* facendo clic sull&#39;intestazione di colonna appropriata; l&#39;ordinamento passa da crescente a decrescente e viene indicato da una freccia posta immediatamente accanto al testo del titolo
+* utilizzare il [menu a discesa della colonna](#column-drop-down-menu) per selezionare in modo specifico **Ordinamento crescente** o **Ordine decrescente**; anche in questo caso, viene indicata da una freccia accanto al testo del titolo
 
 ### Grafico dei gruppi e dei dati correnti {#groups-and-the-current-data-chart}
 
-Nelle colonne appropriate è possibile selezionare **Raggruppa per questa colonna** dal [menu a discesa della colonna](#column-drop-down-menu). I dati verranno raggruppati in base a ciascun valore distinto all’interno di tale colonna. È possibile selezionare più colonne da raggruppare. L’opzione è disattivata quando i dati nella colonna non sono appropriati, ovvero ogni voce è distinta e univoca, pertanto non è possibile creare gruppi, ad esempio la colonna ID utente del report utente.
+Nelle colonne appropriate, puoi selezionare **Raggruppa per questa colonna** dal [menu a discesa della colonna](#column-drop-down-menu). Raggruppa i dati in base a ogni valore distinto all’interno di quella colonna. È possibile selezionare più colonne da raggruppare. L’opzione è disattivata (disattivata) quando i dati nella colonna non sono appropriati. In altre parole, ogni voce è distinta e univoca, quindi non è possibile formare gruppi. Ad esempio, la colonna ID utente del report utente.
 
-Dopo il raggruppamento di almeno una colonna, un grafico a torta **Dati correnti** in base a questo raggruppamento. Se sono raggruppate più colonne, anche questo sarà indicato nel grafico.
+Dopo aver raggruppato almeno una colonna, un grafico a torta **Dati correnti** viene generato, in base a questo raggruppamento. Se sono raggruppate più colonne, ciò viene indicato nel grafico.
 
 ![reportuser](assets/reportuser.png)
 
-Spostando il cursore sul grafico a torta verrà visualizzato il valore aggregato per il segmento appropriato. Utilizza l’aggregato attualmente definito per la colonna, ad esempio conteggio, minimo, media, tra gli altri.
+Spostando il cursore sul grafico a torta viene visualizzato il valore aggregato per il segmento appropriato. Utilizza l’aggregato attualmente definito per la colonna, ad esempio conteggio, minimo, media, tra gli altri.
 
 ### Filtri e aggregati {#filters-and-aggregates}
 
-Sulle colonne appropriate puoi anche configurare **Impostazioni filtro** e/o **Aggregati** dal [menu a discesa della colonna](#column-drop-down-menu).
+Nelle colonne appropriate, puoi anche configurare **Impostazioni filtro** e/o **Aggregati** dal [menu a discesa della colonna](#column-drop-down-menu).
 
 #### Filtri {#filters}
 
@@ -153,7 +149,7 @@ Dati:
 Il rapporto può essere generato:
 
 1. Imposta **Raggruppamento** nella colonna richiesta.
-1. **Modifica** la configurazione per definire la frequenza con cui eseguire le istantanee, oraria o giornaliera.
+1. **Modifica** la configurazione che consente di definire istantanee orarie o giornaliere.
 1. **Fine...** la definizione per avviare la raccolta di snapshot.
 
    Il pulsante cursore rosso/verde in alto a sinistra indica quando vengono raccolte le istantanee.
@@ -162,7 +158,7 @@ Il grafico risultante è mostrato in basso a destra:
 
 ![reporttrends](assets/reporttrends.png)
 
-Una volta avviata la raccolta dei dati, puoi selezionare:
+Quando inizia la raccolta dei dati, puoi selezionare:
 
 * **Periodo**
 
@@ -181,13 +177,13 @@ Seleziona le tue esigenze, quindi fai clic su **Vai** per applicarli al report. 
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
-Durante la raccolta degli snapshot è possibile:
+Quando si raccolgono gli snapshot, è possibile:
 
 * Utilizzare **Fine...** per reinizializzare la raccolta.
 
-  **Fine** &quot;congela&quot; la struttura del rapporto (ovvero le colonne assegnate al rapporto e che sono raggruppate, ordinate, filtrate, ecc.) e inizia a creare snapshot.
+  **Fine** &quot;congela&quot; la struttura del report (ovvero le colonne assegnate al report e che sono raggruppate, ordinate, filtrate e così via) e inizia a creare snapshot.
 
-* Apri **Modifica** finestra di dialogo per selezionare **Nessuna istantanea di dati** per terminare la raccolta fino a quando richiesto.
+* Apri **Modifica** finestra di dialogo per selezionare **Nessuna istantanea di dati** per terminare la raccolta fino a quando non è necessario.
 
   **Modifica** attiva o disattiva solo l&#39;acquisizione di istantanee. Se l&#39;acquisizione delle istantanee viene nuovamente attivata, viene utilizzato lo stato del report al termine dell&#39;ultima esecuzione per l&#39;acquisizione di ulteriori istantanee.
 
@@ -196,11 +192,11 @@ Durante la raccolta degli snapshot è possibile:
 >Le istantanee vengono archiviate in `/var/reports/...` dove il resto del percorso rispecchia il percorso del rispettivo rapporto e ID creati al termine del rapporto.
 >
 >
->Le copie istantanee precedenti possono essere eliminate manualmente, se si è certi che non siano più necessarie.
+>Le copie istantanee precedenti possono essere eliminate manualmente, se si è certi di non aver più bisogno di tali istanze.
 
 >[!NOTE]
 >
->I rapporti preconfigurati non richiedono elevate prestazioni, ma si consiglia comunque di utilizzare istantanee giornaliere in un ambiente di produzione. Se possibile, esegui queste istantanee giornaliere in un momento in cui non c’è molta attività sul sito web; questo può essere definito con `Daily snapshots (repconf.hourofday)` parametro per **Configurazione reporting Day CQ**; vedi [Configurazione OSGI](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli su come configurarlo.
+>I rapporti preconfigurati non richiedono elevate prestazioni, ma si consiglia comunque di utilizzare istantanee giornaliere in un ambiente di produzione. Se possibile, esegui queste istantanee giornaliere in un momento in cui non c’è molta attività sul sito web. Questo può essere definito con `Daily snapshots (repconf.hourofday)` parametro per **Configurazione reporting Day CQ**. Consulta [Configurazione OSGI](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli su come configurarlo.
 
 #### Limiti di visualizzazione {#display-limits}
 
@@ -218,7 +214,7 @@ Per mantenere il grafico pulito per periodi di tempo più lunghi, è possibile i
 
 Pertanto, quando i limiti (appropriati) vengono superati:
 
-* i punti non verranno visualizzati
+* i punti non vengono visualizzati
 * la legenda del grafico dati cronologici potrebbe mostrare un numero di voci diverso da quello del grafico dati corrente
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
@@ -227,7 +223,7 @@ I rapporti personalizzati possono anche mostrare **Totale** per tutte le serie. 
 
 >[!NOTE]
 >
->Per i rapporti personalizzati i limiti possono essere impostati in modo diverso.
+>Per i rapporti personalizzati, i limiti possono essere impostati in modo diverso.
 
 ### Modifica (Report) {#edit-report}
 
@@ -253,15 +249,15 @@ Questa è una posizione in cui il periodo per la raccolta degli snapshot per [Da
 
    * **aggiorna i dati automaticamente**
 
-     I dati del rapporto verranno aggiornati ogni volta che si aggiorna la definizione del rapporto.
+     I dati del rapporto vengono aggiornati ogni volta che si aggiorna la definizione del rapporto.
 
    * **aggiorna i dati manualmente**
 
      Questa opzione può essere utilizzata per evitare ritardi causati da operazioni di aggiornamento automatico quando il volume di dati è elevato.
 
-     Selezionando questa opzione, i dati del rapporto devono essere aggiornati manualmente quando viene modificato un qualsiasi aspetto della configurazione del rapporto. Significa anche che non appena modifichi un aspetto della configurazione, la tabella del rapporto verrà spenta.
+     Selezionando questa opzione, i dati del rapporto devono essere aggiornati manualmente quando viene modificato un qualsiasi aspetto della configurazione del rapporto. Significa anche che quando modifichi un aspetto della configurazione, la tabella del rapporto risulta vuota.
 
-     Quando selezionato, **[Carica dati](#load-data)** verrà visualizzato il pulsante (accanto a **Modifica** sulla relazione). **Carica dati** carica i dati e aggiorna i dati del rapporto mostrati.
+     Quando selezionato, il **[Carica dati](#load-data)** viene visualizzato (accanto a **Modifica** sulla relazione). **Carica dati** carica i dati e aggiorna i dati del rapporto visualizzati.
 
 * **Snapshot**
 È possibile definire la frequenza delle istantanee, giornaliera, oraria o non.
@@ -272,25 +268,25 @@ Il **Carica dati** è visibile solo quando **aggiorna dati manualmente** è stat
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
-Clic su **Carica dati** ricarica i dati e aggiorna il rapporto visualizzato.
+Clic **Carica dati** ricarica i dati e aggiorna il rapporto visualizzato.
 
 Selezionando di aggiornare manualmente i dati si ottiene quanto segue:
 
-1. Non appena modifichi la configurazione del rapporto, la tabella dei dati del rapporto viene cancellata.
+1. Quando modifichi la configurazione del rapporto, la tabella dei dati del rapporto risulta vuota.
 
    Ad esempio, se modifichi il meccanismo di ordinamento di una colonna, i dati non vengono visualizzati.
 
-1. Se desideri visualizzare nuovamente i dati del rapporto, fai clic su **Carica dati** per ricaricare i dati.
+1. Se si desidera visualizzare nuovamente i dati del report, è necessario fare clic su **Carica dati** per ricaricare i dati.
 
 ### Fine (rapporto) {#finish-report}
 
 Quando **Fine** la relazione:
 
-* Definizione del rapporto *a partire da quel momento* verrà utilizzato per acquisire le istantanee (in seguito sarà possibile continuare a lavorare su una definizione di rapporto, in quanto è poi separata dalle istantanee).
-* Eventuali snapshot esistenti verranno rimossi.
+* Definizione del rapporto *a partire da quel momento* viene utilizzato per creare le istantanee. In seguito, è possibile continuare a lavorare su una definizione di report perché è separata dalle istantanee.
+* Eventuali snapshot esistenti vengono rimossi.
 * Vengono raccolti nuovi snapshot per [Dati storici](#historic-data).
 
-Con questa finestra di dialogo puoi definire o aggiornare il tuo titolo e la tua descrizione per il rapporto risultante.
+Questa finestra di dialogo consente di definire o aggiornare il titolo e la descrizione del report risultante.
 
 ![reportfinish](assets/reportfinish.png)
 
@@ -308,15 +304,15 @@ Il rapporto sui componenti fornisce informazioni sull’utilizzo dei componenti 
 * Ultima modifica
 * Pagina
 
-Ciò significa che puoi vedere, ad esempio:
+Ciò significa che è possibile visualizzare quanto segue:
 
-* Quali componenti vengono utilizzati e dove.
+* Quali componenti vengono utilizzati e dove vengono utilizzati.
 
   Utile, ad esempio, durante il test.
 
 * Come vengono distribuite le istanze di un componente specifico.
 
-  Questo può essere interessante se pagine specifiche (ad esempio, &quot;pagine pesanti&quot;) presentano problemi di prestazioni.
+  Questo può essere interessante se pagine specifiche (ovvero, &quot;pagine pesanti&quot;) riscontrano problemi di prestazioni.
 
 * Identificare le parti del sito con modifiche frequenti/meno frequenti.
 * Scopri come il contenuto della pagina si sviluppa nel tempo.
@@ -329,7 +325,7 @@ Tutti i componenti sono inclusi, standard per prodotto e specifici per progetto.
 
 Il report sull&#39;utilizzo del disco mostra informazioni sui dati archiviati nel repository.
 
-Il report inizia nella directory principale ( / ) dell’archivio; facendo clic su un ramo specifico è possibile eseguire il drill-down all’interno dell’archivio (il percorso corrente si rifletterà nel titolo del report).
+Il report inizia nella directory principale ( / ) dell’archivio facendo clic su un ramo specifico che è possibile espandere all’interno dell’archivio (il percorso corrente si riflette nel titolo del report).
 
 ![reportdiskusage](assets/reportdiskusage.png)
 
@@ -338,9 +334,10 @@ Il report inizia nella directory principale ( / ) dell’archivio; facendo clic 
 Questo rapporto analizza il registro di richieste corrente:
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`
-per aiutarti a identificare le richieste più costose entro un dato periodo.
 
-Per generare il rapporto puoi specificare:
+Per aiutarti a identificare le richieste più costose in un dato periodo.
+
+Per generare il rapporto, puoi specificare quanto segue:
 
 * **Periodo (ore)**
 
@@ -368,7 +365,7 @@ Per generare il rapporto puoi specificare:
 
 * **Esegui ogni giorno alle (hh: mm)**
 
-  Specifica a che ora il report deve essere eseguito automaticamente su base giornaliera.
+  Specificare un orario per l&#39;esecuzione automatica giornaliera del report.
 
   Facoltativo; predefinito: vuoto
 
@@ -397,7 +394,7 @@ Il rapporto attività pagina prende tutte le sue informazioni dal registro di au
 
 ![reportpageactivity](assets/reportpageactivity.png)
 
-### Report per contenuti generati dall&#39;utente {#user-generated-content-report}
+### Report di contenuti generati dall&#39;utente {#user-generated-content-report}
 
 Questo rapporto fornisce informazioni sui contenuti generati dagli utenti, che si tratti di commenti, valutazioni o forum.
 
@@ -449,7 +446,7 @@ Consente di:
 
 Il **Generico** è disponibile nel Report utente, in modo da poter accedere a informazioni personalizzate, in genere [profili utente](/help/sites-administering/identity-management.md#profiles-and-user-accounts)ad esempio, [Colore preferito come descritto in Aggiunta di campi alla definizione del profilo](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
 
-La finestra di dialogo Colonna generica si apre quando:
+La finestra di dialogo Colonna generica (Generic column) viene aperta quando eseguite una delle seguenti operazioni:
 
 * Trascina il componente generico dalla barra laterale al rapporto.
 * Selezionare le Proprietà colonna per una colonna generica esistente.
@@ -480,7 +477,7 @@ Dalla sezione **Definizioni** scheda che puoi definire:
 
   Ad esempio: *Conteggio* per un `String` campo indica che il numero di `String` vengono visualizzati i valori per la colonna nello stato aggregato.
 
-In **Esteso** scheda puoi anche definire gli aggregati e i filtri disponibili:
+In **Esteso** , puoi anche definire gli aggregati e i filtri disponibili:
 
 ![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png)
 
@@ -498,7 +495,7 @@ Questo offre una panoramica concisa, fornendo informazioni sulle singole istanze
 * Avviato
 * Stato
 
-In questo modo è possibile:
+Ciò significa che è possibile:
 
 * Monitora la durata media dei flussi di lavoro; se ciò accade regolarmente, può evidenziare i problemi con il flusso di lavoro.
 
@@ -512,21 +509,21 @@ Vengono fornite statistiche chiave sui flussi di lavoro in esecuzione nell’ist
 
 ## Utilizzo dei rapporti in un ambiente di pubblicazione {#using-reports-in-a-publish-environment}
 
-Dopo aver configurato i rapporti in base ai requisiti specifici, puoi attivarli per trasferire la configurazione nell’ambiente di pubblicazione.
+Dopo aver configurato i rapporti in base a esigenze specifiche, puoi attivarli per trasferire la configurazione nell’ambiente di pubblicazione.
 
 >[!CAUTION]
 >
 >Se vuoi **Dati storici** per l’ambiente di pubblicazione, **Fine** il rapporto sull’ambiente di authoring prima di attivare la pagina.
 
-La relazione appropriata sarà quindi accessibile in
+Il report appropriato è quindi accessibile in
 
 `/etc/reports`
 
-Ad esempio, il rapporto User Generated Content (Contenuto generato dall’utente) si trova in:
+Ad esempio, il rapporto User-Generated Content (Contenuto generato dall’utente) si trova in:
 
 `http://localhost:4503/etc/reports/ugcreport.html`
 
-Ora creerà rapporti sui dati raccolti dall’ambiente di pubblicazione.
+Questo ora genera rapporti sui dati raccolti dall’ambiente di pubblicazione.
 
 Poiché nell’ambiente di pubblicazione non è consentita alcuna configurazione di report, il **Modifica** e **Fine** non sono disponibili. Tuttavia, puoi selezionare **Periodo** e **Interval** per **Dati storici** segnala se gli snapshot vengono raccolti.
 
@@ -540,7 +537,7 @@ Poiché nell’ambiente di pubblicazione non è consentita alcuna configurazione
 
 Le autorizzazioni necessarie dipendono dall’azione:
 
-* I dati del rapporto vengono sostanzialmente raccolti utilizzando i privilegi dell’utente corrente.
+* I dati del rapporto vengono raccolti utilizzando i privilegi dell’utente corrente.
 * I dati storici vengono raccolti utilizzando i privilegi dell’utente che ha completato il rapporto.
 
 In un’installazione standard dell’AEM sono preimpostate le seguenti autorizzazioni per i rapporti:
@@ -557,7 +554,7 @@ In un’installazione standard dell’AEM sono preimpostate le seguenti autorizz
 
   `contributors` - lettura e scrittura
 
-* **Report per contenuti generati dall&#39;utente**
+* **Report di contenuti generati dall&#39;utente**
 
   `contributors` - lettura e scrittura
 
@@ -565,4 +562,4 @@ In un’installazione standard dell’AEM sono preimpostate le seguenti autorizz
 
   `workflow-users` - lettura e scrittura
 
-Tutti i membri del `administrators` dispongono dei diritti necessari per creare nuovi rapporti.
+Tutti i membri del `administrators` dispongono dei diritti necessari per creare rapporti.

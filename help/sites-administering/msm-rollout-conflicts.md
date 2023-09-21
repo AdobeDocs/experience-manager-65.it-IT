@@ -1,20 +1,16 @@
 ---
 title: Conflitti di rollout MSM
-seo-title: MSM Rollout Conflicts
 description: Scopri come gestire i conflitti di rollout di Multi Site Manager.
-seo-description: Learn how to deal with Multi Site Manager rollout conflicts.
-uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 28%
+source-wordcount: '905'
+ht-degree: 22%
 
 ---
 
@@ -30,25 +26,25 @@ Quando esistono delle pagine in conflitto (nei rami blueprint e Live Copy), MSM 
 
 Per garantire che il rollout non sia bloccato, le definizioni possibili possono includere:
 
-* quale pagina (blueprint o live copy) avrà priorità durante il rollout,
-* quali pagine saranno rinominate (e come),
-* come questo influenzerà eventuali contenuti pubblicati.
+* quale pagina (blueprint o live copy) ha la priorità durante il rollout,
+* quali pagine vengono rinominate (e come),
+* come questo influisce su qualsiasi contenuto pubblicato.
 
-  Il comportamento predefinito dell’AEM (predefinito) è che il contenuto pubblicato non sarà interessato. Pertanto, se una pagina creata manualmente nel ramo Live Copy è stata pubblicata, il contenuto verrà comunque pubblicato dopo la gestione e il rollout dei conflitti.
+  Il comportamento predefinito di Adobe Experience Manager (AEM) è che il contenuto pubblicato non è interessato. Pertanto, se una pagina creata manualmente nel ramo Live Copy è stata pubblicata, il contenuto viene comunque pubblicato dopo la gestione e il rollout dei conflitti.
 
 Oltre alla funzionalità standard, è possibile aggiungere gestori di conflitti personalizzati per implementare regole diverse. Questi possono anche consentire la pubblicazione di azioni come un singolo processo.
 
 ### Esempio di scenario {#example-scenario}
 
-Nelle sezioni seguenti viene utilizzato l’esempio di una nuova pagina `b`, creato sia nel ramo blueprint che Live Copy (creato manualmente), per illustrare i vari metodi di risoluzione dei conflitti:
+Nelle sezioni seguenti è necessario utilizzare l&#39;esempio di una nuova pagina `b`, creato sia nel ramo blueprint che Live Copy (creato manualmente), per illustrare i vari metodi di risoluzione dei conflitti:
 
 * blueprint: `/b`
 
-  Una pagina master; con 1 pagina figlio, bp-level-1.
+  Una pagina master; con una pagina figlio, bp-level-1.
 
 * live copy: `/b`
 
-  Una pagina creata manualmente nel ramo Live Copy; con 1 pagina figlio, `lc-level-1`.
+  Una pagina creata manualmente nel ramo Live Copy; con una pagina figlio, `lc-level-1`.
 
    * Attivato al momento della pubblicazione come `/b`, insieme alla pagina figlio.
 
@@ -107,8 +103,8 @@ Il gestore di conflitti predefinito:
 
 * Si chiama `ResourceNameRolloutConflictHandler`
 
-* Con questo gestore la pagina blueprint ha la precedenza.
-* La classificazione del servizio per questo gestore è impostata su bassa ( &quot;ovvero al di sotto del valore predefinito per `service.ranking` ) poiché si presume che i gestori personalizzati avranno bisogno di una classificazione più elevata. Tuttavia, la classificazione non è il valore minimo assoluto per garantire flessibilità quando necessario.
+* Con questo gestore, la pagina blueprint ha la precedenza.
+* La classificazione del servizio per questo gestore è impostata su bassa (ovvero al di sotto del valore predefinito per il `service.ranking` proprietà ) poiché si presume che i gestori personalizzati necessitino di una classificazione più elevata. Tuttavia, la classificazione non è il valore minimo assoluto per garantire flessibilità quando necessario.
 
 Questo gestore di conflitti ha la precedenza sulla blueprint. Pagina Live Copy `/b` viene spostato (all’interno del ramo live copy) in `/b_msm_moved`.
 
@@ -156,11 +152,11 @@ Questo gestore di conflitti ha la precedenza sulla blueprint. Pagina Live Copy `
 
 I gestori di conflitti personalizzati ti consentono di implementare regole personalizzate. Utilizzando il meccanismo di classificazione del servizio è inoltre possibile definire il modo in cui interagiscono con altri gestori.
 
-I gestori di conflitti personalizzati possono:
+I gestori di conflitti personalizzati possono disporre dei seguenti elementi:
 
-* Essere nominati in base alle tue esigenze.
-* Essere sviluppata/configurata in base alle tue esigenze; ad esempio, puoi sviluppare un gestore in modo che la pagina Live Copy abbia la precedenza.
-* Può essere progettato per essere configurato utilizzando [Configurazione OSGi](/help/sites-deploying/configuring-osgi.md), in particolare:
+* Nome in base alle tue esigenze.
+* Sviluppato/configurato in base alle tue esigenze; ad esempio, puoi sviluppare un gestore in modo che la pagina Live Copy abbia la precedenza.
+* Progettato per essere configurato utilizzando [Configurazione OSGi](/help/sites-deploying/configuring-osgi.md), in particolare:
 
    * **Classifica dei servizi**:
 
@@ -170,21 +166,21 @@ I gestori di conflitti personalizzati possono:
 
 ### Comportamento quando la gestione dei conflitti è disattivata {#behavior-when-conflict-handling-deactivated}
 
-Se si esegue manualmente [disattivare la gestione dei conflitti](#rollout-manager-and-conflict-handling) quindi l’AEM non interviene su alcuna pagina in conflitto (le pagine non in conflitto vengono distribuite come previsto).
+Se si esegue manualmente [disattivare la gestione dei conflitti](#rollout-manager-and-conflict-handling), l’AEM non interviene su alcuna pagina in conflitto (le pagine non in conflitto vengono distribuite come previsto).
 
 >[!CAUTION]
 >
 >L’AEM non fornisce alcuna indicazione che i conflitti vengano ignorati, in quanto questo comportamento deve essere configurato in modo esplicito, pertanto si presume che sia il comportamento richiesto.
 
-In questo caso la Live Copy ha effettivamente la precedenza. La pagina blueprint `/b` non viene copiato e la pagina live copy `/b` viene lasciato intatto.
+In questo caso, la Live Copy ha effettivamente la precedenza. La pagina blueprint `/b` non viene copiato e la pagina live copy `/b` viene lasciato intatto.
 
 * blueprint: `/b`
 
-  Non viene copiata, ma viene ignorata.
+  Non viene copiato, ma viene ignorato.
 
 * live copy: `/b`
 
-  Rimane la stessa.
+  Lo stesso.
 
 <table>
  <caption>
