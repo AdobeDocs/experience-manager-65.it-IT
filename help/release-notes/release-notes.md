@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: a15b9dae5cc4405122ee95e036a83fdfbf34f9bd
+source-git-commit: 4f6ef1a6cddec307af64ca888307f19c0450467d
 workflow-type: tm+mt
-source-wordcount: '4490'
+source-wordcount: '4548'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 * Risorse, Dynamic Medie - [Supporto di tracce multi-sottotitolo e multi-audio per video in Dynamic Medie](/help/assets/video.md#about-msma)- È ora possibile aggiungere facilmente più sottotitoli e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. Puoi personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
 
-* Risorse: dai risultati della ricerca, ora puoi passare alla posizione della cartella che contiene una risorsa, consentendo in tal modo di eseguire varie attività di gestione delle risorse. (ASSETS-23182)
+* Risorse: dai risultati della ricerca, ora puoi passare alla posizione della cartella che contiene una risorsa per eseguire varie attività di gestione delle risorse. (ASSETS-23182)
 
 **Miglioramenti principali**
 
@@ -51,7 +51,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 * Abilitazione dell’utente del componente Editor pagina/immagine di Sites per fare riferimento alle risorse dal Cloud Service di risorse remoto. (SITES-13448, SITES-13433)
 
-* Per trovare rapidamente un progetto nella vista a elenco in cui è possibile avere molti progetti nel sistema, Adobe ora fornisce il supporto per l’ordinamento lato server. I nodi del progetto sono ordinati sul backend in base alla colonna selezionata dall’utente prima di eseguirne il rendering nell’interfaccia utente. (NPR-41027)
+* Per trovare rapidamente un progetto nella vista a elenco, in cui è possibile che siano presenti molti progetti, Adobe ora supporta l’ordinamento lato server. I nodi del progetto sono ordinati sul backend in base alla colonna selezionata dall’utente prima di eseguirne il rendering nell’interfaccia utente. (NPR-41027)
 
 * L’AEM 6.5.18.0 supporta MongoDB da 5.0 a 6.0.
 
@@ -61,19 +61,19 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 **Forms**
 
-* **[Gestione avanzata degli errori con gestori di errori personalizzati nell’editor di regole](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** Ora puoi richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile
+* **[Gestione avanzata degli errori con gestori di errori personalizzati nell’editor di regole](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** - È ora possibile richiamare una funzione personalizzata (utilizzando la libreria client) in risposta a un errore restituito da un servizio esterno. Inoltre, è possibile fornire una risposta personalizzata agli utenti finali. In alternativa, è possibile eseguire azioni specifiche per gli errori restituiti da un servizio. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile
 
-* **[Passaggio del flusso di lavoro Adobe Sign migliorato](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** Il passaggio del flusso di lavoro Adobe Sign nei flussi di lavoro AEM è disponibile con i seguenti miglioramenti.
+* **[Passaggio del flusso di lavoro Adobe Sign migliorato](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - La fase del flusso di lavoro Adobe Sign nei flussi di lavoro AEM è disponibile con i seguenti miglioramenti.
 
-   * **Maggiore sicurezza con l&#39;autenticazione basata su documento ufficiale per Adobe Sign:** L&#39;autenticazione basata su documento ufficiale di Adobe Acrobat Sign offre un ulteriore livello di verifica, consentendo agli utenti di autenticare la propria identità utilizzando gli ID governativi (patente di guida, carta d&#39;identità, passaporto). Utilizzando documenti di identificazione attendibili, questo miglioramento aggiunge un ulteriore livello di affidabilità al processo di firma, rendendolo ideale per scenari che richiedono maggiore sicurezza, conformità e convalida degli utenti.
+   * **Sicurezza migliorata con autenticazione basata su ID governativi per Adobe Sign** - L&#39;autenticazione basata su documento ufficiale di Adobe Acrobat Sign offre un ulteriore livello di verifica. Consente agli utenti di autenticare la propria identità utilizzando gli ID governativi (patente di guida, carta d&#39;identità, passaporto). Utilizzando documenti di identificazione attendibili, questo miglioramento aggiunge un ulteriore livello di affidabilità al processo di firma, rendendolo ideale per scenari che richiedono maggiore sicurezza, conformità e convalida degli utenti.
 
-   * **Maggiore trasparenza con Audit Trail per documenti Adobe Sign:** Utilizza la funzione Audit Trail per ottenere informazioni dettagliate sul ciclo di vita dei documenti Adobe Sign. Con Audit Trail è ora possibile mantenere un registro completo di tutte le azioni e interazioni relative ai documenti. Questo include dettagli quali chi ha visualizzato, modificato o firmato il documento, insieme ai timestamp di ogni evento. Questo miglioramento è fondamentale per mantenere la conformità, risolvere le controversie e garantire l’integrità degli accordi digitali.
-
-
-   * **Sono stati estesi i ruoli per i destinatari del contratto oltre al solo firmatario:** Adobe Acrobat Sign ha la possibilità di espandere i ruoli per i destinatari del contratto oltre al solo firmatario per soddisfare meglio i requisiti del flusso di lavoro. Quando questa opzione è abilitata, ogni destinatario di un contratto ha il proprio ruolo configurabile singolarmente, con Firmatario come impostazione predefinita.
+   * **Maggiore trasparenza con Audit Trail per documenti Adobe Sign** : utilizza la funzione Audit Trail per ottenere informazioni dettagliate sul ciclo di vita dei documenti Adobe Sign. Con Audit Trail è ora possibile mantenere un registro completo di tutte le azioni e interazioni relative ai documenti. Questo include dettagli quali chi ha visualizzato, modificato o firmato il documento, insieme ai timestamp di ogni evento. Questo miglioramento è fondamentale per mantenere la conformità, risolvere le controversie e garantire l’integrità degli accordi digitali.
 
 
-* **[Programma di installazione completo per AEM Forms su JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: il service pack include un programma di installazione completo per AEM Forms su JEE con supporto per diverse nuove combinazioni di software, tra cui:
+   * **I ruoli per i destinatari del contratto sono stati estesi oltre al solo firmatario** - Adobe Acrobat Sign consente di espandere i ruoli dei destinatari del contratto oltre al solo firmatario per soddisfare meglio i requisiti del flusso di lavoro. Quando questa opzione è abilitata, ogni destinatario di un contratto ha il proprio ruolo configurabile singolarmente, con Firmatario come impostazione predefinita.
+
+
+* **[Programma di installazione completo per AEM Forms su JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** - Il service pack include un programma di installazione completo per AEM Forms su JEE che supporta diverse nuove combinazioni di software, tra cui:
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
    * Oracle WebLogic 14C su Windows Server 2022
@@ -81,7 +81,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
    * MongoDB 4.4
    * Connettore JDBC MySQL 8
 
-Se stai eseguendo una nuova installazione o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE. Per esplorare l’elenco completo dei nuovi software aggiunti e obsoleti, consulta la documentazione di AEM Forms su JEE o AEM Forms su OSGi.
+Se stai installando o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE. Per esplorare l’elenco completo dei nuovi software aggiunti e obsoleti, consulta la documentazione di AEM Forms su JEE o AEM Forms su OSGi.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -179,7 +179,7 @@ Se stai eseguendo una nuova installazione o pianificando di utilizzare il softwa
    * Quando un utente tenta di chiamare una funzione personalizzata senza modificare un campo, ad esempio impostando il valore di un altro campo, l’operazione ha esito negativo. (FORMS-9921)
    * Quando si utilizza la funzione di errore personalizzata per l’editor di regole in un modulo adattivo, si verificano i seguenti errori:
       * Quando un utente tenta di utilizzare @param{boolean} con una funzione, l’editor di regole non consente il passaggio di valori booleani a una funzione.
-      * Quando un utente tenta di utilizzare @param{string} con una funzione, l’editor di regole non passa i valori facoltativi e genera un avviso relativo alle regole incomplete. (FORMS-9816, FORMS-9815)
+      * Quando un utente tenta di utilizzare @param{string} con una funzione, l’editor di regole non passa i valori facoltativi e avvisa in caso di regole incomplete. (FORMS-9816, FORMS-9815)
    * Il gruppo utenti-moduli non riesce a chiamare l’editor di regole due volte in un modulo adattivo. (FORMS-9051)
    * In un editor visivo, quando un utente seleziona un oggetto Form, l’intero oggetto istanza del campo viene passato alla funzione personalizzata invece del solo valore del campo. (FORMS-10015)
    * Quando un utente crea un modulo adattivo basato su componenti core e aggiunge un componente di input di testo, `Is Empty` e `Is Not Empty` non funzionano nell’editor di regole. (FORMS-10098)
@@ -203,7 +203,7 @@ Se stai eseguendo una nuova installazione o pianificando di utilizzare il softwa
       * Quando un utente effettua la firma nella finestra di dialogo della firma utilizzando un pennello o una tastiera, premendo il tasto Invio la finestra di dialogo non viene chiusa.
       * Impossibile accedere alla finestra di dialogo di conferma della cancellazione della firma utilizzando una tastiera.
       * L&#39;assistente vocale non riesce a leggere le informazioni immesse in una finestra di dialogo.
-      * Non è possibile cancellare la firma senza utilizzare il mouse.  (FORMS-9317)
+      * Non è possibile cancellare la firma senza utilizzare il mouse. (FORMS-9317)
    * Quando un utente invia un modulo adattivo, l’assistente vocale non riesce a leggere i messaggi di errore relativi ai campi obbligatori. (FORMS-9316)
    * Quando un assistente vocale legge un modulo HTML, si verifica il problema durante la lettura del testo con crenatura (spaziatura). (FORMS-9258)
    * In un modulo adattivo, i riferimenti/le note a piè di pagina collegati al testo non vengono richiamati mediante l’assistente vocale. (FORMS-8920)
@@ -235,7 +235,7 @@ Se stai eseguendo una nuova installazione o pianificando di utilizzare il softwa
 #### Platform{#foundation-platform-6518}
 
 * Dopo un Experience Manager Vanilla, Service Pack 17 installazione, si verificano errori nel `stderr.log`. Le installazioni di Vanilla non devono generare errori. (CQ-4353637)
-* Il pulsante Crea nella schermata Assegnazione tag non rispetta l’ACL (elenco di controllo di accesso). (NPR-40973)
+* Il pulsante Crea nella schermata Assegnazione tag non rispetta l’ACL (Access Control List, Elenco di controllo di accesso). (NPR-40973)
 * Impossibile creare, accedere o entrambi i nodi della cache di ContextHub su Experience Manager. (NPR-40515)
 
 #### Replica{#foundation-replication-6518}
@@ -369,7 +369,24 @@ Consulta [Funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-fe
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* Relativamente a Oak From Service Pack 13 e versioni successive, è stato avviato il seguente registro di errori che influisce sulla cache di persistenza:
+* **La pubblicazione delle pagine non funziona nell’Editor pagina dopo l’aggiornamento a Service Pack 18 (6.5.18.0)**
+
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Dopo aver aggiornato un&#39;istanza di AEM AEM 6.5.0.0—6.5.17.0 a 6.5.18.0, quando si fa clic su **[!UICONTROL Pubblica pagina]** Nell’Editor pagina, vieni reindirizzato a un URL che non esiste.
+
+  Per risolvere il problema, eseguire una delle operazioni seguenti:
+
+   * Rimuovi la seguente proprietà &quot;path&quot;.
+
+     `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
+
+   * Incolla l’URL corretto direttamente nel browser.
+
+     `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html`
+
+
+
+* **Correlato a Oak**
+Da Service Pack 13 e versioni successive è stato avviato il seguente log degli errori che influisce sulla cache di persistenza:
 
   ```shell
   org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
@@ -439,7 +456,7 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 #### Piattaforme supportate
 
 * Le versioni JDK superiori a 1.8.0_281 non sono supportate per il server WebLogic JEE. (FORMS-8498, CQDOC-20383)
-* As [!DNL Microsoft®® Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] non supporta le installazioni chiavi in mano per [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
+* As [!DNL Microsoft® Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] non supporta le installazioni chiavi in mano per [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20 non è supportato per installare AEM Forms sul programma di installazione JEE. Per installare AEM Forms sul programma di installazione di JEE sono supportate solo JDK 11.0.19 o versioni precedenti. (FORMS-10659)
 
 #### Installazione
