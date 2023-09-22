@@ -1,31 +1,27 @@
 ---
 title: Ristrutturazione dell'archivio di asset in AEM 6.5
-seo-title: Assets Repository Restructuring in AEM 6.5
-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.5 per Assets.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Assets.
-uuid: 0e3d8163-6274-4d1b-91c7-32ca927fb83c
+description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in Adobe Experience Manager (AEM) 6.5 per Assets.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1041'
 ht-degree: 2%
 
 ---
 
 # Ristrutturazione dell&#39;archivio di asset in AEM 6.5 {#assets-repository-restructuring-in-aem}
 
-Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, i clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Assets. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) I clienti che eseguono l’aggiornamento a Adobe Experience Manager (AEM) 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Assets. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
 **Con aggiornamento 6.5**
 
 * [Varie](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc)
 
-**Prima di un aggiornamento futuro**
+**Prima di aggiornamenti futuri**
 
 * [Modello di notifica e-mail per evento risorsa/raccolta](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#asset-collection-event-e-mail-notification-template)
 * [Progettazioni condivisioni risorse classiche](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#classic-asset-share-designs)
@@ -52,7 +48,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Se un codice personalizzato dipende da questa posizione (ad es. il codice si basa esplicitamente su questo percorso), quindi il codice deve essere aggiornato per utilizzare la nuova posizione prima dell’aggiornamento; idealmente, le API Java vengono utilizzate quando disponibili per ridurre le dipendenze da qualsiasi percorso specifico nel JCR.</p> <p>Percorso temporaneo in cui conservare il file zip per il download da parte del client. Non è necessario eseguire l’aggiornamento da quando il client richiede di scaricare la risorsa. Genera il file nella nuova posizione.</p> </td>
+   <td><p>Se un codice personalizzato dipende da questa posizione, ovvero il codice si basa esplicitamente su questo percorso, è necessario aggiornare il codice per utilizzare la nuova posizione prima di eseguire l'aggiornamento. Idealmente, le API Java™ vengono utilizzate quando disponibili per ridurre le dipendenze da qualsiasi percorso specifico nel JCR.</p> <p>Percorso temporaneo in cui inserire un file zip da scaricare per il client. Non è necessario eseguire l’aggiornamento da quando il client richiede di scaricare la risorsa. Genera un file nella nuova posizione.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
@@ -61,7 +57,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
  </tbody>
 </table>
 
-## Prima di un aggiornamento futuro {#prior-to-upgrade}
+## Prima di aggiornamenti futuri {#prior-to-upgrade}
 
 ### Modello di notifica e-mail per evento risorsa/raccolta {#asset-collection-event-e-mail-notification-template}
 
@@ -81,7 +77,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
     <ol>
      <li>Il <code>/libs/settings/dam/notification</code> copia del modello di posta elettronica da <strong><code>/etc/notification/email/default</code></strong> a <strong><code>/apps/settings/notification/email/default</code></strong>
       <ol>
-       <li>Perché la destinazione è in<strong> <code>/apps</code></strong> questa modifica deve essere resa persistente in SCM.</li>
+       <li>Perché la destinazione è in<strong> <code>/apps</code></strong>, la modifica deve essere resa persistente in SCM.</li>
       </ol> </li>
      <li>Rimuovi la cartella: <strong><code>/etc/dam/notification/email/default</code></strong> dopo lo spostamento dei modelli di posta elettronica al suo interno.<br />
       <ol>
@@ -110,14 +106,14 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Per qualsiasi design gestito in SCM e non scritto in fase di esecuzione tramite le finestre di dialogo per progettazione, eseguire le azioni seguenti per allinearlo al modello più recente:</p>
+   <td><p>Per qualsiasi design gestito in SCM e non scritto in fase di esecuzione tramite finestre di dialogo per progettazione, eseguire le azioni seguenti per allinearlo al modello più recente:</p>
     <ol>
      <li>Copia le progettazioni dalla posizione precedente alla nuova posizione in <code>/apps</code>.</li>
      <li>Convertire qualsiasi risorsa CSS, JavaScript e statica nella progettazione in una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Libreria client</a> con <code>allowProxy = true</code>.</li>
-     <li>Aggiornare i riferimenti alla posizione precedente in <code>cq:designPath</code> proprietà tramite <strong>AEM &gt; Amministratore DAM &gt; Pagina condivisione risorse &gt; Proprietà pagina &gt; Scheda Avanzate &gt; Campo di progettazione</strong>.</li>
-     <li>Aggiorna le pagine che fanno riferimento alla posizione precedente per utilizzare la nuova categoria Libreria client. Questo richiede l’aggiornamento del codice di implementazione della pagina.</li>
-     <li>Aggiorna le regole del Dispatcher per consentire la distribuzione delle librerie client tramite <code>/etc.clientlibs/</code> servlet proxy</li>
-    </ol> <p>Per le progettazioni non gestite in SCM e in fase di esecuzione modificate tramite le finestre di dialogo per progettazione, non spostare le progettazioni modificabili da <code>/etc</code>.</p> </td>
+     <li>Aggiornare i riferimenti alla posizione precedente in <code>cq:designPath</code> proprietà a titolo di <strong>AEM &gt; Amministratore DAM &gt; Pagina condivisione risorse &gt; Proprietà pagina &gt; Scheda Avanzate &gt; Campo di progettazione</strong>.</li>
+     <li>Per utilizzare la nuova categoria Libreria client, aggiorna tutte le pagine che fanno riferimento alla posizione precedente. Questo richiede l’aggiornamento del codice di implementazione della pagina.</li>
+     <li>Aggiorna le regole di Dispatcher in modo da poter consentire la distribuzione di librerie client tramite <code>/etc.clientlibs/</code> servlet proxy</li>
+    </ol> <p>Per le progettazioni non gestite in SCM e le progettazioni modificate in fase di esecuzione tramite le finestre di dialogo per progettazione, non spostare le progettazioni modificabili da <code>/etc</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
@@ -140,11 +136,11 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Se i modelli di posta elettronica (<strong>downloadasset</strong> o <strong>transientworkflowcompleted</strong>) sono state modificate, quindi segui la procedura seguente per allinearle alla nuova struttura:</p>
+   <td><p>Se i modelli di posta elettronica (<strong>downloadasset</strong> o <strong>transientworkflowcompleted</strong>) sono stati modificati, quindi segui la procedura seguente per allinearli alla nuova struttura:</p>
     <ol>
      <li>Il modello di posta elettronica aggiornato deve essere copiato da <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> a <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
       <ol>
-       <li>Perché la destinazione è in<strong> <code>/apps</code></strong> questa modifica deve essere resa persistente in SCM.</li>
+       <li>Perché la destinazione è in<strong> <code>/apps</code></strong>, la modifica deve essere resa persistente in SCM.</li>
       </ol> </li>
      <li>Rimuovi la cartella: <code>/etc/dam/workflow/notification/email/downloadasset </code>dopo lo spostamento dei modelli di posta elettronica al suo interno.<br />
       <ol>
@@ -154,7 +150,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td>Mentre <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> è tecnicamente supportato per la ricerca (ha la precedenza prima di /apps tramite la normale ricerca Sling CAConfig, ma dopo <code>/etc</code>) il modello può essere inserito in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Tuttavia, questo non è consigliato in quanto non esiste un’interfaccia utente di runtime per facilitare la modifica del modello di e-mail.</td>
+   <td>Mentre <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> è tecnicamente supportato per la ricerca (ha la precedenza prima di /apps tramite la normale ricerca Sling CAConfig, ma dopo <code>/etc</code>) il modello può essere inserito in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Tuttavia, questa operazione non è consigliata in quanto non esiste un'interfaccia utente di runtime per facilitare la modifica del modello di posta elettronica.</td>
   </tr>
  </tbody>
 </table>
@@ -185,7 +181,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
     <ol>
      <li>Il modello di posta elettronica aggiornato deve essere copiato da <strong><code>/etc/dam/adhocassetshare</code></strong> a <strong><code>/apps/settings/dam/adhocassetshare</code></strong>
       <ol>
-       <li>Perché la destinazione è in<strong> <code>/apps</code></strong> questa modifica deve essere resa persistente in SCM.</li>
+       <li>Perché la destinazione è in<strong><code>/apps</code></strong>, la modifica deve essere resa persistente in SCM.</li>
       </ol> </li>
      <li>Rimuovi la cartella: <strong><code>/etc/dam/adhocassetshare</code></strong> dopo lo spostamento dei modelli di posta elettronica al suo interno.<br />
       <ol>
@@ -195,7 +191,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td>Mentre <code>/conf/global/settings/dam/adhocassetshare</code> è tecnicamente supportato per la ricerca (ha la precedenza prima <code>/apps</code> tramite la normale ricerca Sling CAConfig, ma dopo <code>/etc</code>), il modello può essere inserito in <code>/conf/global/settings/dam/adhocassetshare</code>. Tuttavia, questa operazione non è consigliata in quanto non esiste un'interfaccia utente di runtime per facilitare la modifica del modello di posta elettronica</td>
+   <td>Mentre <code>/conf/global/settings/dam/adhocassetshare</code> è tecnicamente supportato per la ricerca (ha la precedenza prima <code>/apps</code> tramite la consueta ricerca Sling CAConfig, ma dopo <code>/etc</code>), il modello può essere inserito in <code>/conf/global/settings/dam/adhocassetshare</code>. Tuttavia, questa operazione non è consigliata in quanto non esiste un'interfaccia utente di runtime per facilitare la modifica del modello di posta elettronica</td>
   </tr>
  </tbody>
 </table>
@@ -275,11 +271,11 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Per il predefinito visualizzatore pronto all’uso, sarà disponibile solo nella nuova posizione.</p> <p>Per il predefinito per visualizzatori personalizzati:</p>
+   <td><p>Per il predefinito visualizzatore pronto all’uso, è disponibile solo nella nuova posizione.</p> <p>Per il predefinito per visualizzatori personalizzati:</p>
     <ul>
-     <li>dovrai eseguire uno script di migrazione per spostare il nodo da <code>/etc</code> a <code>/conf</code>. Lo script si trova in <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
+     <li>esegui uno script di migrazione da cui spostare il nodo <code>/etc</code> a <code>/conf</code>. Lo script si trova in <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>oppure puoi modificare la configurazione e salvarla automaticamente nella nuova posizione.</li>
-    </ul> <p>Non è necessario modificare il codice copyURL/embed per puntare a <code>/conf</code>. La richiesta esistente a <code>/etc</code> verrà reindirizzato al contenuto corretto da <code>/conf</code>.</p> </td>
+    </ul> <p>Non è necessario modificare il codice copyURL/embed per puntare a <code>/conf</code>. La richiesta esistente a <code>/etc</code> viene reindirizzato al contenuto corretto da <code>/conf</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>

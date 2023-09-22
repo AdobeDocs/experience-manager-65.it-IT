@@ -1,19 +1,15 @@
 ---
 title: Integrazione con Salesforce
-seo-title: Integrating with Salesforce
-description: Scopri come integrare AEM con Salesforce.
-seo-description: Learn about integrating AEM with Salesforce.
-uuid: 3d6a249d-082f-4a10-b255-96482ccd2c65
+description: Scopri come integrare Adobe Experience Manager con Salesforce.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: bee7144e-4276-4e81-a3a0-5b7273af34fe
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-source-git-commit: c7958efbc4557ab3e50732da59faabf4e36c3844
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1552'
 ht-degree: 2%
 
 ---
@@ -21,17 +17,17 @@ ht-degree: 2%
 
 # Integrazione con Salesforce {#integrating-with-salesforce}
 
-L’integrazione di Salesforce con l’AEM fornisce funzionalità di gestione dei lead e sfrutta le funzionalità esistenti fornite da Salesforce come soluzione preconfigurata. Puoi configurare l’AEM in modo da pubblicare i lead in Salesforce e creare componenti che accedano ai dati direttamente da Salesforce.
+L’integrazione di Salesforce con Adobe Experience Manager (AEM) fornisce funzionalità di gestione dei lead e utilizza le funzionalità esistenti fornite da Salesforce con le impostazioni predefinite. Puoi configurare l’AEM in modo da pubblicare i lead in Salesforce e creare componenti che accedano ai dati direttamente da Salesforce.
 
 L’integrazione bidirezionale ed estensibile tra AEM e Salesforce consente di:
 
-* Le organizzazioni possono utilizzare e aggiornare completamente i dati per migliorare l’esperienza del cliente.
+* Organizzazioni che utilizzano e modificano completamente i dati per migliorare l’esperienza del cliente.
 * Coinvolgimento dalle attività di marketing alle attività di vendita.
 * Organizzazioni per trasmettere e ricevere automaticamente i dati da un archivio dati Salesforce.
 
 Questo documento descrive quanto segue:
 
-* come configurare i Cloud Services Salesforce (configurare AEM per l’integrazione con Salesforce).
+* come configurare i Cloud Service Salesforce (configurare AEM per l’integrazione con Salesforce).
 * come utilizzare le informazioni di contatto/lead Salesforce in ClientContext e per la personalizzazione.
 * come utilizzare il modello di flusso di lavoro Salesforce per pubblicare gli utenti AEM come lead per Salesforce.
 * come creare un componente che mostra i dati di Salesforce.
@@ -48,21 +44,21 @@ Per configurare l’AEM per l’integrazione con Salesforce:
 
 >[!CAUTION]
 >
->È necessario installare [API Forza Salesforce](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) prima di continuare con la procedura. Per ulteriori dettagli su come lavorare con i pacchetti, vedi [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md#package-share) pagina.
+>Installare [API Forza Salesforce](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) prima di continuare con la procedura. Per ulteriori dettagli su come lavorare con i pacchetti, vedi [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md#package-share) pagina.
 
-1. In AEM, vai a **Cloud Services**. In Servizi di terze parti, fai clic su **Configura ora** in **Salesforce**.
+1. In AEM, vai a **Cloud Service**. In Servizi di terze parti, fai clic su **Configura ora** in **Salesforce**.
 
    ![chlimage_1-70](assets/chlimage_1-70.png)
 
-1. Crea una nuova configurazione, ad esempio: **sviluppatore**.
+1. Crea una configurazione, ad esempio: **sviluppatore**.
 
    >[!NOTE]
    >
    >La nuova configurazione reindirizza a una nuova pagina: **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Si tratta esattamente dello stesso valore che è necessario specificare nell&#39;URL di richiamata durante la creazione dell&#39;applicazione di accesso remoto in Salesforce. Questi valori devono corrispondere.
 
-1. Accedi al tuo account Salesforce (oppure, se non ne hai uno, creane uno all’indirizzo [https://developer.force.com](https://developer.force.com).)
-1. In Salesforce, vai a **Crea** > **App** per accedere a **App collegate** (nelle versioni precedenti di salesforce, il flusso di lavoro era **Distribuisci** > **Accesso remoto**).
-1. Clic **Nuovo** per collegare AEM con Salesforce.
+1. Accedi al tuo account Salesforce (oppure, se non ne hai uno, creane uno all’indirizzo [https://developer.salesforce.com](https://developer.salesforce.com).)
+1. In Salesforce, vai a **Crea** > **App** per accedere a **App collegate** (nelle versioni precedenti di Salesforce, il flusso di lavoro era **Distribuisci** > **Accesso remoto**).
+1. Clic **Nuovo** in modo da collegare l&#39;AEM con Salesforce.
 
    ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -72,15 +68,15 @@ Per configurare l’AEM per l’integrazione con Salesforce:
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. Clic **Salva** per salvare la configurazione di salesforce. Salesforce crea un **chiave consumer** e **segreto consumer**, necessario per la configurazione dell’AEM.
+1. Clic **Salva** per salvare la configurazione Salesforce. Salesforce crea un **chiave consumer** e **segreto consumer**, necessario per la configurazione dell’AEM.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
    >[!NOTE]
    >
-   >Per attivare l’applicazione di accesso remoto in Salesforce, potrebbe essere necessario attendere diversi minuti (fino a 15 minuti).
+   >Attendi alcuni minuti (fino a 15 minuti) prima di attivare l’applicazione di accesso remoto in Salesforce.
 
-1. In AEM, vai a **Cloud Services** e passa alla configurazione di salesforce creata in precedenza (ad esempio, **sviluppatore**). Clic **Modifica** e inserisci la chiave cliente e il segreto cliente da salesforce.com.
+1. In AEM, vai a **Cloud Service** e passare alla configurazione Salesforce creata in precedenza (ad esempio, **sviluppatore**). Clic **Modifica** e inserisci la chiave cliente e il segreto cliente da salesforce.com.
 
    ![chlimage_1-15](assets/chlimage_1-15.jpeg)
 
@@ -89,13 +85,13 @@ Per configurare l’AEM per l’integrazione con Salesforce:
    | Chiave cliente | Immettere il valore ottenuto dalla pagina Registrazione applicazione di accesso remoto in salesforce.com |
    | Segreto cliente | Immettere il valore ottenuto dalla pagina Registrazione applicazione di accesso remoto in salesforce.com |
 
-1. Clic **Connetti a Salesforce** per connettersi. Salesforce richiede di consentire alla configurazione di connettersi a salesforce.
+1. Clic **Connetti a Salesforce** per connettersi. Salesforce richiede di consentire alla configurazione di connettersi a Salesforce.
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
    In AEM, viene visualizzata una finestra di dialogo di conferma che informa che la connessione è stata eseguita correttamente.
 
-1. Passa alla pagina principale del sito web e fai clic su **Proprietà pagina**. Quindi seleziona **Cloud Services** e aggiungi **Salesforce** e selezionare la configurazione corretta (ad esempio, **sviluppatore**).
+1. Passa alla pagina principale del sito web e fai clic su **Proprietà pagina**. Quindi seleziona **Cloud Service** e aggiungi **Salesforce** e selezionare la configurazione corretta (ad esempio, **sviluppatore**).
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -103,7 +99,7 @@ Per configurare l’AEM per l’integrazione con Salesforce:
 
 ## Esportazione di utenti AEM come lead Salesforce {#exporting-aem-users-as-salesforce-leads}
 
-Se desideri esportare un utente AEM come lead di Salesforce, devi configurare il flusso di lavoro in modo che pubblichi i lead in Salesforce.
+Se desideri esportare un utente AEM come lead Salesforce, configura il flusso di lavoro per pubblicare i lead in Salesforce.
 
 Per esportare gli utenti AEM come lead di Salesforce:
 
@@ -111,13 +107,13 @@ Per esportare gli utenti AEM come lead di Salesforce:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Selezionare l&#39;utente AEM che si desidera creare come lead come **Payload** per questo flusso di lavoro (home -> utenti). Accertati di selezionare il nodo del profilo dell’utente in quanto contiene informazioni come **givenName**, **familyName**, e così via, mappati sul lead di Salesforce **FirstName** e **Cognome** campi.
+1. Selezionare l&#39;utente AEM che si desidera creare come lead come **Payload** per questo flusso di lavoro (home -> utenti). Accertati di selezionare il nodo del profilo dell’utente in quanto contiene informazioni come **givenName**, e  **familyName**, mappati sul lead di Salesforce **FirstName** e **Cognome** campi.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
    >[!NOTE]
    >
-   >Prima di avviare questo flusso di lavoro, è necessario disporre di alcuni campi obbligatori per un nodo lead in AEM prima di poter pubblicare il prodotto in Salesforce. Questi sono **givenName**, **familyName**, **azienda** e **email**. Per un elenco completo dei mapping tra l’utente AEM e il lead Salesforce, consulta [Mappatura della configurazione tra l&#39;utente AEM e il lead Slaesforce.](#mapping-configuration-between-aem-user-and-salesforce-lead)
+   >Prima di avviare questo flusso di lavoro, è necessario disporre di alcuni campi obbligatori per un nodo lead in AEM prima di poter pubblicare il prodotto in Salesforce. Questi sono **givenName**, **familyName**, **azienda**, e **email**. Per un elenco completo delle mappature tra l’utente AEM e il lead Salesforce, consulta [Mappatura della configurazione tra l’utente AEM e il lead Salesforce.](#mapping-configuration-between-aem-user-and-salesforce-lead)
 
 1. Fai clic su **OK**. Le informazioni utente vengono esportate in salesforce.com. Puoi verificarlo all’indirizzo salesforce.com.
 
@@ -127,7 +123,7 @@ Per esportare gli utenti AEM come lead di Salesforce:
 
 ### Configurazione del flusso di lavoro di esportazione Salesforce.com {#configuring-the-salesforce-com-export-workflow}
 
-Potrebbe essere necessario configurare il flusso di lavoro di esportazione Salesforce.com in modo che corrisponda alla configurazione Salesforce.com corretta o per apportare altre modifiche.
+Se necessario, configura il flusso di lavoro di esportazione Salesforce.com in modo che corrisponda alla configurazione Salesforce.com corretta o che apporti altre modifiche.
 
 Per configurare il flusso di lavoro di esportazione Salesforce.com:
 
@@ -156,23 +152,23 @@ Per visualizzare o modificare la configurazione di mappatura corrente tra un ute
 
 ## Configurazione dell’archivio ClientContext Salesforce {#configuring-salesforce-client-context-store}
 
-L’archivio contestuale del client salesforce mostra informazioni aggiuntive sull’utente attualmente connesso rispetto a quelle già disponibili in AEM. Estrae queste informazioni aggiuntive da Salesforce a seconda della connessione dell’utente con Salesforce.
+L’archivio contestuale del client Salesforce mostra informazioni aggiuntive sull’utente attualmente connesso rispetto a quelle già disponibili in AEM. Estrae queste informazioni aggiuntive da Salesforce a seconda della connessione dell’utente con Salesforce.
 
-A questo scopo, devi configurare quanto segue:
+A questo scopo, configura quanto segue:
 
 1. Collega un utente AEM con un ID Salesforce tramite il componente Salesforce Connect.
-1. Aggiungi i dati profilo Salesforce nella pagina di contesto client per configurare le proprietà da visualizzare.
+1. Aggiungi i dati profilo Salesforce nella pagina di contesto del client per configurare le proprietà da visualizzare.
 1. (Facoltativo) Crea un segmento che utilizza i dati dell’archivio Salesforce Client Context.
 
 ### Collegamento di un utente AEM a un ID Salesforce {#linking-an-aem-user-with-a-salesforce-id}
 
-È necessario mappare un utente AEM con un ID Salesforce per caricarlo nel contesto client. In uno scenario reale, il collegamento si basa sui dati utente noti con convalida. Ai fini della dimostrazione, in questa procedura utilizzi il **Salesforce Connect** componente.
+Mappa un utente AEM con un ID Salesforce in modo da poterlo caricare nel contesto del client. In uno scenario reale, il collegamento si basa sui dati utente noti con convalida. A scopo dimostrativo, in questa procedura si utilizza **Salesforce Connect** componente.
 
 1. Accedi a un sito Web in AEM, accedi, trascina e rilascia la **Salesforce Connect** componente dalla barra laterale.
 
    >[!NOTE]
    >
-   >Se il **Salesforce Connect** il componente non è disponibile, vai a **Progettazione** visualizzarlo e selezionarlo per renderlo disponibile in **Modifica** visualizzazione.
+   >Se il **Salesforce Connect** non è disponibile, passa alla **Progettazione** visualizzarlo e selezionarlo per renderlo disponibile nel **Modifica** visualizzazione.
 
    ![chlimage_1-17](assets/chlimage_1-17.jpeg)
 
@@ -196,7 +192,7 @@ A questo scopo, devi configurare quanto segue:
 
 Puoi caricare i dati utente da Salesforce in ClientContext da utilizzare per la personalizzazione:
 
-1. Apri il contesto client che desideri estendere spostandoti, ad esempio: `http://localhost:4502/etc/clientcontext/default/content.html.`
+1. Aprire il contesto client che si desidera estendere spostandosi, ad esempio: `http://localhost:4502/etc/clientcontext/default/content.html.`
 
    ![chlimage_1-18](assets/chlimage_1-18.jpeg)
 
@@ -204,7 +200,7 @@ Puoi caricare i dati utente da Salesforce in ClientContext da utilizzare per la 
 
    ![chlimage_1-19](assets/chlimage_1-19.jpeg)
 
-1. Fai doppio clic sul componente per aprirlo. Seleziona **Aggiungi elemento** e seleziona una proprietà dall’elenco a discesa. Aggiungi tutte le proprietà che desideri e seleziona **OK**.
+1. Apri il componente facendo doppio clic su di esso. Seleziona **Aggiungi elemento** e seleziona una proprietà dall’elenco a discesa. Aggiungi tutte le proprietà che desideri e seleziona **OK**.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -221,7 +217,7 @@ Puoi creare un segmento che utilizza i dati dell’archivio Salesforce ClientCon
 
 ## Ricerca di lead {#searching-leads}
 
-L’AEM viene fornito con un componente di ricerca di esempio che cerca i lead in Salesforce in base ai criteri forniti. Questo componente mostra come utilizzare l’API REST Salesforce per cercare oggetti Salesforce. Per attivare una chiamata a salesforce.com, devi collegare una pagina a una configurazione Salesforce.
+L’AEM viene fornito con un componente di ricerca di esempio che cerca i lead in Salesforce in base ai criteri forniti. Questo componente mostra come utilizzare l’API REST di Salesforce per cercare oggetti Salesforce. Per attivare una chiamata a salesforce.com, collega una pagina a una configurazione Salesforce.
 
 >[!NOTE]
 >
@@ -229,7 +225,7 @@ L’AEM viene fornito con un componente di ricerca di esempio che cerca i lead i
 
 Per utilizzare questo componente:
 
-1. Passa alla pagina in cui desideri utilizzare questa configurazione. Apri le proprietà della pagina e seleziona **Cloud Services.** Clic **Aggiungi servizi** e seleziona **Salesforce** e la configurazione appropriata, quindi fai clic su **OK**.
+1. Passa alla pagina in cui desideri utilizzare questa configurazione. Apri le proprietà della pagina e seleziona **Cloud Service.** Clic **Aggiungi servizi** e seleziona **Salesforce** e la configurazione appropriata, quindi fai clic su **OK**.
 
    ![chlimage_1-20](assets/chlimage_1-20.jpeg)
 

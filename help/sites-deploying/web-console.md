@@ -1,30 +1,26 @@
 ---
 title: Console web in Adobe Experience Manager
-seo-title: Web Console
-description: Scopri come utilizzare la console web AEM.
-seo-description: Learn how to use the AEM web console.
-uuid: 7856b2b3-4216-421d-a315-cd9a55936362
+description: Scopri come utilizzare la console web Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '710'
 ht-degree: 2%
 
 ---
 
 # Console Web{#web-console}
 
-La console web in AEM si basa sulla [Console di gestione web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della community per implementare la piattaforma di servizio OSGi R4, che include il framework OSGi e i servizi standard.
+La console web in Adobe Experience Manager (AEM) è basata sulla [Console di gestione web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della community per implementare la piattaforma di servizio OSGi R4, che include il framework OSGi e i servizi standard.
 
 >[!NOTE]
 >
->Nella console Web le descrizioni che menzionano le impostazioni predefinite si riferiscono alle impostazioni predefinite di Sling.
+>Nella console Web, tutte le descrizioni che menzionano le impostazioni predefinite si riferiscono alle impostazioni predefinite di Sling.
 >
 >I valori predefiniti dell’AEM sono propri, pertanto quelli impostati potrebbero essere diversi da quelli documentati nella console.
 
@@ -73,9 +69,9 @@ Consente di aggiornare le configurazioni esistenti. Hanno un’identità persist
 * **Configurazioni di fabbrica**
 Consente di creare un&#39;istanza dell&#39;oggetto funzionalità richiesto.
 
-  Questo verrà allocato come identità persistente e quindi elencato nell’elenco a discesa Configurazioni.
+  Viene allocata a un’identità persistente e quindi elencata nell’elenco a discesa Configurazioni.
 
-Selezionando una voce dagli elenchi verranno visualizzati i parametri relativi a tale configurazione:
+Selezionando una voce dall’elenco vengono visualizzati i parametri relativi a tale configurazione:
 
 ![chlimage_1-21](assets/chlimage_1-21a.png)
 
@@ -85,11 +81,11 @@ Puoi quindi aggiornare i parametri come richiesto e:
 
   Salva le modifiche apportate.
 
-  Per una configurazione di fabbrica verrà creata una nuova istanza con un&#39;identità persistente. La nuova istanza verrà quindi elencata in Configurazioni.
+  Per una configurazione di fabbrica, viene creata un&#39;istanza con un&#39;identità persistente. La nuova istanza viene quindi elencata in Configurazioni.
 
 * **Ripristina**
 
-  Ripristina i parametri visualizzati sullo schermo agli ultimi salvati.
+  Ripristina i parametri mostrati sullo schermo agli ultimi salvati.
 
 * **Eliminare**
 
@@ -131,9 +127,9 @@ Utilizzando questa scheda è possibile:
 
 * **Aggiorna pacchetti**
 
-  Verificherà i riferimenti di tutti i pacchetti e li aggiornerà in base alle esigenze.
+  Questa verifica i riferimenti di tutti i colli e, se necessario, li aggiorna.
 
-  Ad esempio, dopo un aggiornamento, la vecchia e la nuova versione potrebbero essere ancora in esecuzione a causa di riferimenti precedenti. Questa opzione consente di controllare e spostare tutti i riferimenti alla nuova versione, interrompendo la vecchia versione.
+  Ad esempio, dopo un aggiornamento, la vecchia e la nuova versione potrebbero essere ancora in esecuzione a causa di riferimenti precedenti. Questa opzione controlla e sposta tutti i riferimenti alla nuova versione, consentendo l’interruzione della versione precedente.
 
 * **Avvia**
 
@@ -149,11 +145,11 @@ Utilizzando questa scheda è possibile:
 
 * **vedi lo stato**
 
-  L’elenco specifica lo stato corrente del bundle; facendo clic sul nome di un bundle specifico per visualizzare ulteriori informazioni.
+  L’elenco specifica lo stato del bundle; facendo clic sul nome di un bundle specifico per visualizzare ulteriori informazioni.
 
 >[!NOTE]
 >
->Dopo **Aggiorna** si consiglia di eseguire una **Aggiorna pacchetti**.
+>Dopo **Aggiorna**, l’Adobe consiglia di eseguire una **Aggiorna pacchetti**.
 
 ## Componenti {#components}
 

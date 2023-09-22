@@ -1,21 +1,17 @@
 ---
 title: Componenti per frammenti di contenuto
-seo-title: Components for Content Fragments
-description: I frammenti di contenuto AEM vengono creati e gestiti come risorse indipendenti dalla pagina
-seo-description: AEM content fragments are created and managed as page-independent assets
-uuid: 81a9e0fe-ed45-4880-b36c-4f49e2598389
+description: I frammenti di contenuto di Adobe Experience Manager (AEM) vengono creati e gestiti come risorse indipendenti dalla pagina
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 3%
+source-wordcount: '961'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +29,7 @@ Consulta la [API di gestione dei frammenti di contenuto - Lato client](/help/sit
 
 >[!CAUTION]
 >
->Il [Componente core Frammento di contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) è ora consigliato. Consulta [Sviluppo di componenti core](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) per ulteriori dettagli.
+>Il [Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en) è ora consigliato. Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per ulteriori dettagli.
 >
 >Questa sezione descrive il componente originale distribuito per essere utilizzato con i frammenti di contenuto (**Frammento di contenuto** nel **Generale** gruppo).
 
@@ -65,38 +61,38 @@ Solo l’editor dell’interfaccia touch supporta completamente i componenti per
 
 `cq.authoring.editor.plugin.cfm`
 
-Questa libreria aggiunge all’editor funzioni specifiche dei frammenti di contenuto. Ad esempio, sono disponibili il supporto per la possibilità di aggiungere e configurare frammenti di contenuto sulla pagina, la possibilità di cercare risorse di frammenti di contenuto nel browser delle risorse e contenuto associato nel pannello laterale.
+Questa libreria aggiunge all’editor funzioni specifiche dei frammenti di contenuto. È ad esempio disponibile il supporto per la possibilità di aggiungere e configurare frammenti di contenuto sulla pagina, per cercare le risorse dei frammenti di contenuto nel browser delle risorse e per il contenuto associato nel pannello laterale.
 
 ### Contenuto intermedio {#in-between-content}
 
 Il **Frammento di contenuto** t consente di rilasciare componenti aggiuntivi tra i diversi paragrafi del [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). In pratica, l’elemento visualizzato è composto da paragrafi diversi (ogni paragrafo è contrassegnato da un ritorno a capo). Tra ciascuno di questi paragrafi, è possibile inserire contenuto utilizzando altri componenti.
 
-Da un punto di vista tecnico, ogni paragrafo dell&#39;elemento visualizzato* * risiede in un proprio parsys, e ogni componente che aggiungi tra i paragrafi sarà (sotto il cofano) inserito nel parsys.
+Da un punto di vista tecnico, ogni paragrafo dell&#39;elemento visualizzato si trova in un proprio parsys, e ogni componente che aggiungi tra i paragrafi viene (sotto il cofano) inserito nel parsys.
 
 In altre parole, se l’istanza del componente Frammento di contenuto è composta da tre paragrafi, il componente avrà tre diversi parsys nell’archivio. Tutto il contenuto intermedio aggiunto al frammento di contenuto si trova effettivamente all’interno di questi parsys.
 
-Nell’archivio il contenuto intermedio viene memorizzato rispetto alla sua posizione all’interno della struttura generale del paragrafo, ovvero non viene associato al contenuto effettivo del paragrafo.
+Nell’archivio, il contenuto intermedio viene memorizzato rispetto alla sua posizione all’interno della struttura generale dei paragrafi, ovvero non viene associato al contenuto effettivo dei paragrafi.
 
-Per illustrare questo aspetto, consideriamo di avere:
+Per illustrare questo aspetto, tieni presente quanto segue:
 
 * Un’istanza di un frammento di contenuto composta da tre paragrafi
 * E che parte del contenuto è già stata inserita dopo il secondo paragrafo
 
-   * Ciò significa che il contenuto verrà memorizzato nel secondo parsys.
+   * Ciò significa che il contenuto viene memorizzato nel secondo parsys.
 
 Fondamentalmente, se la struttura paragrafo di questa istanza cambia (modificando la variante, l’elemento o l’intervallo di paragrafi visualizzati), ciò potrebbe influire sul contenuto intermedio visualizzato quando il contenuto del frammento di contenuto:
 
 * Viene modificato e viene aggiunto un altro paragrafo prima del secondo paragrafo:
 
-   * Il contenuto intermedio viene visualizzato dopo il paragrafo appena creato (il secondo parametro contiene ora il paragrafo appena creato).
+   * Il contenuto intermedio viene visualizzato dopo il paragrafo appena creato (il secondo parsys contiene ora il paragrafo appena creato).
 
 * Viene modificato e il secondo paragrafo viene rimosso:
 
-   * Il contenuto intermedio viene visualizzato dopo il paragrafo che in precedenza era il terzo (il secondo contiene ora il precedente terzo paragrafo).
+   * Il contenuto intermedio viene visualizzato dopo il paragrafo che in precedenza era il terzo (il secondo parsys ora contiene il precedente terzo paragrafo).
 
 * È configurato in modo da visualizzare solo il primo paragrafo:
 
-   * Il contenuto intermedio non verrà visualizzato (il secondo parsys non viene più renderizzato a causa della nuova configurazione).
+   * Il contenuto intermedio non viene visualizzato (il secondo parsys non viene più renderizzato a causa della nuova configurazione).
 
 ### Personalizzazione del componente Frammento di contenuto {#customizing-the-content-fragment-component}
 
@@ -105,7 +101,7 @@ Per utilizzare il componente predefinito frammento di contenuto come blueprint p
 * Riutilizza lo script di rendering HTL e il relativo POJO associato per vedere come viene implementata la funzione di contenuto intermedio.
 * Riutilizza il nodo del frammento di contenuto: `cq:editConfig`
 
-   * Il `afterinsert`/ `afteredit`/ `afterdelete` I listener vengono utilizzati per attivare gli eventi JS. Questi eventi verranno gestiti nel `cq.authoring.editor.plugin.cfm` libreria client per visualizzare il contenuto associato nel pannello laterale.
+   * Il `afterinsert`/ `afteredit`/ `afterdelete` I listener vengono utilizzati per attivare gli eventi JS. Questi eventi vengono gestiti nel `cq.authoring.editor.plugin.cfm` libreria client per visualizzare il contenuto associato nel pannello laterale.
    * Il `cq:dropTargets` sono configurate per supportare il trascinamento delle risorse dei frammenti di contenuto.
    * `cq:inplaceEditing` è configurato per supportare l’authoring di un frammento di contenuto nell’editor pagina. L’editor locale del frammento è definito nel `cq.authoring.editor.plugin.cfm` e consente di aprire la libreria corrente tramite un collegamento rapido [elemento/variante](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) nel [editor frammenti](/help/assets/content-fragments/content-fragments-variations.md).
 
@@ -113,7 +109,7 @@ Per utilizzare il componente predefinito frammento di contenuto come blueprint p
 
 La gestione dei frammenti di contenuto utilizza un processo di rendering interno per generare l’output HTML finale per una pagina. Viene utilizzato internamente dal componente Frammento di contenuto, ma anche dal processo in background che aggiorna i frammenti di riferimento nelle pagine di riferimento.
 
-Internamente, per tale rendering viene utilizzato il rewriter di Sling. La rispettiva configurazione si trova in `/libs/dam/config/rewriter/cfm` e possono essere regolati se necessario. Consulta la [Rewriter Apache Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) per ulteriori informazioni.
+Internamente, per tale rendering viene utilizzato il rewriter di Sling. La rispettiva configurazione si trova in `/libs/dam/config/rewriter/cfm` e possono essere regolati, se necessario. Consulta la [Rewriter Apache Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) per ulteriori informazioni.
 
 >[!CAUTION]
 >
@@ -121,7 +117,7 @@ Internamente, per tale rendering viene utilizzato il rewriter di Sling. La rispe
 >
 >* `/libs/dam/config/rewriter/cfm`
 >
->quindi il `serializerType` **deve** è aggiornato a:
+>Quindi il `serializerType` **deve** è aggiornato a:
 >
 >* `serializerType="html5-serializer"`
 
@@ -132,4 +128,4 @@ La configurazione preconfigurata utilizza i seguenti trasformatori:
 * `transformer-cfm-parfilter` : filtra i paragrafi indesiderati se è specificato un intervallo di paragrafi (come può essere fatto con il componente Frammento di contenuto)
 * `transformer-cfm-assetprocessor` : viene utilizzato internamente per recuperare un elenco delle risorse incorporate nel frammento
 
-Il processo di rendering viene esposto tramite [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) e possono essere utilizzati (ad esempio) da componenti personalizzati, se necessario.
+Il processo di rendering viene esposto tramite [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) e possono essere utilizzati (ad esempio) da componenti personalizzati, se necessario.

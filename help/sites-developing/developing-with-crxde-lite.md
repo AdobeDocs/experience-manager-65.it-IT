@@ -1,31 +1,27 @@
 ---
 title: Sviluppo con CRXDE Liti
-seo-title: Developing with CRXDE Lite
-description: CRXDE Liti è incorporato nell’AEM e consente di eseguire attività di sviluppo standard nel browser
-seo-description: CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser
-uuid: f4890354-d8b8-4fb9-af2f-3359f931f883
+description: CRXDE Liti è incorporato in Adobe Experience Manager (AEM) e consente di eseguire attività di sviluppo standard nel browser
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '2137'
+source-wordcount: '2120'
 ht-degree: 2%
 
 ---
 
 # Sviluppo con CRXDE Liti{#developing-with-crxde-lite}
 
-Questa sezione descrive come sviluppare l’applicazione AEM utilizzando CRXDE Liti.
+Questa sezione descrive come sviluppare l’applicazione Adobe Experience Manager (AEM) utilizzando CRXDE Liti.
 
-Per ulteriori informazioni sui diversi ambienti di sviluppo disponibili, consulta la panoramica.
+Per ulteriori informazioni sui diversi ambienti di sviluppo disponibili, consulta la documentazione della panoramica.
 
 CRXDE Liti è incorporato nell’AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Liti puoi creare un progetto, creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione.
-CRXDE Liti è consigliato quando non hai accesso diretto al server AEM, quando sviluppi un’applicazione estendendo o modificando i componenti predefiniti e i bundle Java o quando non hai bisogno di un debugger dedicato, del completamento del codice e dell’evidenziazione della sintassi.
+CRXDE Liti è consigliato quando non si dispone di accesso diretto al server AEM. Oppure, quando sviluppi un’applicazione estendendo o modificando i componenti predefiniti e i bundle Java™, oppure quando non hai bisogno di un debugger dedicato, del completamento del codice e dell’evidenziazione della sintassi.
 
 >[!NOTE]
 >
@@ -35,7 +31,7 @@ CRXDE Liti è consigliato quando non hai accesso diretto al server AEM, quando s
 
 >[!NOTE]
 >
->Si consiglia di utilizzare il [Strumenti per sviluppatori AEM per Eclipse](/help/sites-developing/aem-eclipse.md) e [Estensione per parentesi HTL AEM](/help/sites-developing/aem-brackets.md) durante lo sviluppo del progetto.
+>L’Adobe consiglia di utilizzare il [Strumenti per sviluppatori AEM per Eclipse](/help/sites-developing/aem-eclipse.md) e [Estensione per parentesi HTL AEM](/help/sites-developing/aem-brackets.md) durante lo sviluppo del progetto.
 
 ## Guida introduttiva di CRXDE Liti {#getting-started-with-crxde-lite}
 
@@ -61,19 +57,19 @@ CRXDE Liti offre le seguenti funzionalità:
  <tbody>
   <tr>
    <td>Barra del commutatore superiore</td>
-   <td>Consente di passare rapidamente da CRXDE Liti a Gestione pacchetti e Condivisione pacchetti.</td>
+   <td>Passaggio rapido tra CRXDE Liti, Gestione pacchetti e Condivisione pacchetti.</td>
   </tr>
   <tr>
    <td>Widget percorso nodo</td>
-   <td><p>Visualizza il percorso del nodo attualmente selezionato.</p> <p>Puoi anche utilizzarlo per passare a un nodo, immettendo manualmente il percorso o incollandolo da un’altra posizione e premendo Invio.</p> <p>Fornisce inoltre supporto per la ricerca di nodi con un nome di nodo specifico. Inserisci il nome del nodo che desideri trovare e attendi (o premi il simbolo di ricerca sul lato destro). È possibile provare a immettere, ad esempio, la stringa <em>quercia</em> per vedere come funziona. Se uno o più nodi vengono caricati nel riquadro dell'elenco delle cartelle, verrà visualizzato l'elenco e sarà possibile selezionare il percorso e premere Invio per individuarlo. Si noti che funziona solo per i nodi attualmente caricati nell’applicazione client CRXDE nel browser. Se si desidera eseguire una ricerca nell'intero repository, utilizzare Strumenti, quindi Query.</p> </td>
+   <td><p>Visualizza il percorso del nodo selezionato.</p> <p>Puoi anche utilizzarlo per passare a un nodo, immettendo manualmente il percorso o incollandolo da un’altra posizione e premendo Invio.</p> <p>Fornisce inoltre supporto per la ricerca di nodi con un nome di nodo specifico. Inserisci il nome del nodo che desideri trovare e attendi (o premi il simbolo di ricerca sul lato destro). È possibile provare a immettere, ad esempio, la stringa <em>quercia</em> per vedere come funziona. Se uno o più nodi vengono caricati nel riquadro dell'elenco delle cartelle, viene visualizzato l'elenco e puoi selezionare il percorso e premere Invio per individuarlo. Funziona solo per i nodi caricati nell’applicazione client CRXDE nel browser. Se si desidera eseguire una ricerca nell'intero repository, utilizzare Strumenti, quindi Query.</p> </td>
   </tr>
   <tr>
    <td>Riquadro di Explorer</td>
-   <td><p>Visualizza una struttura di tutti i nodi del repository.</p> <p>Fai clic su un nodo per visualizzarne le proprietà nel <strong>Proprietà</strong> scheda. Dopo aver fatto clic su un nodo, puoi selezionare un’azione nella barra degli strumenti. Fai di nuovo clic sul nodo per rinominarlo.</p> <p>Filtro navigazione albero (icona binoculare): consente di filtrare i nodi nell’archivio per i quali il nome contiene il testo di input. Si applica solo ai nodi che sono stati caricati localmente.<br /> </p> </td>
+   <td><p>Visualizza una struttura di tutti i nodi del repository.</p> <p>Fai clic su un nodo per visualizzarne le proprietà nella <strong>Proprietà</strong> scheda. Dopo aver fatto clic su un nodo, puoi selezionare un’azione nella barra degli strumenti. Fai di nuovo clic sul nodo per rinominarlo.</p> <p>Filtro navigazione albero (icona binoculare): consente di filtrare i nodi nell’archivio per i quali il nome contiene il testo di input. Si applica solo ai nodi che sono stati caricati localmente.<br /> </p> </td>
   </tr>
   <tr>
    <td>Riquadro di modifica</td>
-   <td><p><strong>Home</strong> scheda: consente di cercare contenuti e/o documentazione e di accedere alle risorse per gli sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto (home page e centro di supporto di Adobe).<br /> </p> <p>Fare doppio clic su un file in <strong>Esplora</strong> per visualizzarne il contenuto, ad esempio un file .jsp o .java. Puoi quindi modificarlo e salvare le modifiche.</p> <p>Dopo aver modificato un file in <strong>Modifica</strong> sulla barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura del repository.<br /> - <strong>Cerca/Sostituisci...</strong>: esegui la ricerca o sostituisci.<br /> <br /> Fare doppio clic sulla riga di stato del <strong>Modifica</strong> apre il riquadro <strong>Vai alla riga</strong> in modo da poter immettere un numero di riga specifico.<br /> </td>
+   <td><p><strong>Home</strong> scheda: consente di cercare contenuti e/o documentazione e di accedere alle risorse per gli sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto (home page e centro di supporto di Adobe).<br /> </p> <p>Fare doppio clic su un file in <strong>Esplora</strong> in modo da poterne visualizzare il contenuto. Ad esempio, un file .jsp o .java. Puoi quindi modificarlo e salvare le modifiche.</p> <p>Dopo aver modificato un file in <strong>Modifica</strong> sulla barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura del repository.<br /> - <strong>Cerca/Sostituisci...</strong>: esegui la ricerca o sostituisci.<br /> <br /> Fare doppio clic sulla riga di stato del <strong>Modifica</strong> apre il riquadro <strong>Vai alla riga</strong> in modo da poter immettere un numero di riga specifico.<br /> </td>
   </tr>
   <tr>
    <td>Scheda Proprietà<br /> </td>
@@ -81,15 +77,15 @@ CRXDE Liti offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Scheda Controllo di accesso</td>
-   <td><p>Visualizza le autorizzazioni in base al percorso corrente, a livello di repository o entità principale.</p> <p>Le autorizzazioni sono suddivise in</p> <p>- <strong>Criterio di controllo dell’accesso applicabile</strong>: i criteri che possono essere applicati alla selezione corrente.</p> <p>- <strong>Criteri di controllo dell'accesso locale</strong>: i criteri correnti applicati localmente alla selezione corrente.</p> <p>- <strong>Criteri di controllo dell'accesso effettivi</strong>: i criteri correnti applicati per la selezione corrente, possono essere impostati localmente o ereditati dai nodi padre.</p> <p>Nota. Per poter visualizzare le informazioni sul controllo di accesso, l'utente connesso a CRXDE Liti deve disporre dei diritti per la lettura delle voci ACL. L’utente anonimo non può visualizzare queste informazioni per impostazione predefinita. Accedi come, ad esempio, amministratore per visualizzare le informazioni.</p> </td>
+   <td><p>Visualizza le autorizzazioni in base al percorso, al livello di archivio o all’entità principale.</p> <p>Le autorizzazioni sono suddivise in</p> <p>- <strong>Criterio di controllo dell’accesso applicabile</strong>: i criteri che possono essere applicati alla selezione.</p> <p>- <strong>Criteri di controllo dell'accesso locale</strong>: criteri applicati localmente alla selezione.</p> <p>- <strong>Criteri di controllo dell'accesso effettivi</strong>: i criteri applicati per la selezione, possono essere impostati localmente o ereditati dai nodi principali.</p> <p>Nota. Per poter visualizzare le informazioni sul controllo di accesso, l'utente connesso a CRXDE Liti deve disporre dei diritti di lettura per le voci ACL. Per impostazione predefinita, l’utente anonimo non può visualizzare queste informazioni; ad esempio, effettua l’accesso come amministratore.</p> </td>
   </tr>
   <tr>
    <td>Scheda Replica</td>
-   <td><p>Visualizza lo stato di replica del nodo corrente. Puoi replicare e replicare per eliminare il nodo corrente.</p> </td>
+   <td><p>Visualizza lo stato di replica del nodo. Puoi replicare e replicare l’eliminazione del nodo.</p> </td>
   </tr>
   <tr>
    <td>Scheda Console<br /> </td>
-   <td><p><strong>Registri del server</strong>:</p> <p>Visualizza i messaggi dei registri. Puoi configurare il livello di registro, cancellare la console, fissare la posizione di scorrimento selezionata e abilitare/disabilitare la visualizzazione dei messaggi.<br /> </p> <p><strong>Controllo della versione</strong>:</p> <p>Visualizza i messaggi di controllo della versione.<br /> </p> </td>
+   <td><p><strong>Registri del server</strong>:</p> <p>Visualizza i messaggi dei registri. Puoi configurare il livello di registro, cancellare la console, fissare la posizione di scorrimento selezionata e abilitare o disabilitare la visualizzazione dei messaggi.<br /> </p> <p><strong>Controllo della versione</strong>:</p> <p>Visualizza i messaggi di controllo della versione.<br /> </p> </td>
   </tr>
   <tr>
    <td>Scheda Informazioni sulla build<br /> </td>
@@ -97,11 +93,11 @@ CRXDE Liti offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Aggiorna<br /> </td>
-   <td>Aggiorna la selezione corrente. Le modifiche apportate da altri utenti vengono aggiornate nella vista dell’archivio. Le modifiche apportate non vengono modificate.<br /> </td>
+   <td>Aggiorna la selezione. Le modifiche apportate da altri utenti vengono aggiornate nella vista dell’archivio. Le modifiche apportate non vengono modificate.<br /> </td>
   </tr>
   <tr>
    <td>Salva tutto</td>
-   <td><p><strong>Salva tutto</strong>:<br /> </p> <p>Salva tutte le modifiche apportate. Fino a quando non fai clic su Salva, le modifiche sono temporanee e andranno perse quando esci dalla console.</p> <p><strong>Versione precedente</strong>:</p> <p>Elimina tutte le modifiche apportate al nodo selezionato dall'ultima azione di salvataggio, quindi ricarica lo stato corrente dell'archivio per il nodo selezionato.</p> <p><strong>Ripristina tutto</strong>:</p> <p>Elimina tutte le modifiche apportate in tutto l'archivio dall'ultima azione di salvataggio, quindi ricarica lo stato corrente dell'archivio.</p> </td>
+   <td><p><strong>Salva tutto</strong>:<br /> </p> <p>Salva tutte le modifiche apportate. Fino a quando non fai clic su Salva, le modifiche sono temporanee e vengono perse quando esci dalla console.</p> <p><strong>Versione precedente</strong>:</p> <p>Elimina tutte le modifiche apportate al nodo selezionato dall'ultima azione di salvataggio, quindi ricarica lo stato dell'archivio per il nodo selezionato.</p> <p><strong>Ripristina tutto</strong>:</p> <p>Elimina tutte le modifiche apportate in tutto l'archivio dall'ultima azione di salvataggio, quindi ricarica lo stato dell'archivio.</p> </td>
   </tr>
   <tr>
    <td>Creare ...<br /> </td>
@@ -137,7 +133,7 @@ CRXDE Liti offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Widget di accesso<br /> </td>
-   <td><p>Visualizza gli utenti attualmente connessi e l'area di lavoro a cui sono connessi, ad esempio admin@crx.default.</p> <p>Fai clic su di esso per accedere o accedere nuovamente come utente specifico. Se non specifichi un'area di lavoro a cui accedere, verrà effettuato l'accesso all'area di lavoro predefinita, crx.default.</p> <p>Se desideri sfogliare il repository come utente anonimo, utilizza <strong>anonimo</strong> come nome di accesso ed eventuali password (ad esempio, uno spazio o un punto).<br /> </p> <p>Se l’autorizzazione non è più valida (ad esempio, è scaduta), il widget di accesso visualizza "<strong>Non autorizzato - Accesso...</strong>". Fai clic su di esso per accedere di nuovo.</p> </td>
+   <td><p>Visualizza gli utenti connessi e l'area di lavoro a cui hanno effettuato l'accesso, ad esempio admin@crx.default.</p> <p>Fai clic su di esso per accedere o accedere nuovamente come utente specifico. Se non si specifica un'area di lavoro a cui accedere, viene eseguito l'accesso all'area di lavoro predefinita crx.default.</p> <p>Se desideri sfogliare l’archivio come utente anonimo, utilizza <strong>anonimo</strong> come nome di accesso ed eventuali password (ad esempio, uno spazio o un punto).<br /> </p> <p>Se l’autorizzazione non è più valida (ad esempio, è scaduta), il widget di accesso visualizza "<strong>Non autorizzato - Accesso...</strong>". Fai clic su di esso per accedere di nuovo.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -147,7 +143,7 @@ CRXDE Liti offre le seguenti funzionalità:
 Per creare una cartella con CRXDE Liti:
 
 1. Apri CRXDE Liti nel browser.
-1. Nel riquadro di spostamento fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare la nuova cartella e selezionare **Crea...**, quindi **Crea cartella...**.
+1. Nel riquadro di spostamento fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare la cartella e selezionare **Crea...**, quindi **Crea cartella...**.
 
 1. Inserisci la cartella **Nome** e fai clic su **OK**.
 
@@ -160,7 +156,7 @@ Per creare un modello con CRXDE Liti:
 1. Apri CRXDE Liti nel browser.
 1. Nel riquadro di spostamento fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il modello e selezionare **Crea...**, quindi **Crea modello...**.
 
-1. Inserisci il **Etichetta**, **Titolo**, **Descrizione**, **Tipo di risorsa** e **Classificazione** del modello. Fai clic su **Avanti**.
+1. Inserisci il **Etichetta**, **Titolo**, **Descrizione**, **Tipo di risorsa**, e **Classificazione** del modello. Fai clic su **Avanti**.
 
 1. Questo passaggio è facoltativo: imposta **Percorsi consentiti**. Fai clic su **Avanti**
 
@@ -187,9 +183,9 @@ Per creare un componente con CRXDE Liti:
 1. Apri CRXDE Liti nel browser.
 1. Nel riquadro di spostamento fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il componente e selezionare **Crea...**, quindi **Crea componente...**.
 
-1. Inserisci il **Etichetta**, **Titolo**, **Descrizione**, **Tipo di risorsa super** e **Gruppo** del componente. Fai clic su **Avanti**.
+1. Inserisci il **Etichetta**, **Titolo**, **Descrizione**, **Tipo di risorsa super**, e **Gruppo** del componente. Fai clic su **Avanti**.
 
-1. Questo passaggio è facoltativo: imposta le proprietà del componente **È contenitore,** **Nessuna decorazione**, **Nome cella** e **Percorso finestra di dialogo**. Fai clic su **Avanti**.
+1. Questo passaggio è facoltativo: imposta le proprietà del componente **È contenitore,** **Nessuna decorazione**, **Nome cella**, e **Percorso finestra di dialogo**. Fai clic su **Avanti**.
 
 1. Questo passaggio è facoltativo: imposta la proprietà del componente **Elementi padre consentiti**. Fai clic su **Avanti**.
 
@@ -218,26 +214,26 @@ Crea una finestra di dialogo con la seguente struttura:
 
 `dialog[cq:Dialog]/items[cq:Widget]/items[cq:WidgetCollection]/tab1[cq:Panel]`
 
-Ora puoi adattare la finestra di dialogo alle tue esigenze modificando le proprietà o creando nuovi nodi.
+È ora possibile adattare la finestra di dialogo alle proprie esigenze modificando le proprietà o creando nodi.
 
-Per modificare una finestra di dialogo, puoi anche utilizzare l’Editor finestre di dialogo. Facendo doppio clic sul nodo della finestra di dialogo in CRXDE Liti verrà visualizzato l’editor. Ulteriori informazioni sull’Editor finestre di dialogo sono disponibili [qui](/help/sites-developing/dialog-editor.md).
+Per modificare una finestra di dialogo, puoi anche utilizzare l’Editor finestre di dialogo. Facendo doppio clic sul nodo della finestra di dialogo in CRXDE Liti viene visualizzato l’editor. Ulteriori informazioni sull’Editor finestre di dialogo sono disponibili [qui](/help/sites-developing/dialog-editor.md).
 
 ## Creazione di un nodo {#creating-a-node}
 
 Per creare un nodo con CRXDE Liti:
 
 1. Apri CRXDE Liti nel browser.
-1. Nel riquadro di spostamento fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nuovo nodo e selezionare **Crea...**, quindi **Crea nodo...**.
+1. Nel riquadro di spostamento fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nodo e selezionare **Crea...**, quindi **Crea nodo...**.
 1. Inserisci il **Nome** e **Tipo**. Fai clic su **OK**.
 1. Clic **Salva tutto** per salvare le modifiche sul server.
 
-Ora puoi adattare il nodo alle tue esigenze modificando le proprietà o creando nuovi nodi.
+Ora puoi adattare il nodo alle tue esigenze modificando le proprietà o creando nodi.
 
 >[!NOTE]
 >
->La maggior parte delle operazioni di modifica, incluso Crea nodo, mantiene tutte le modifiche in memoria e le memorizza nell’archivio solo al momento del salvataggio (tramite il pulsante &quot;Salva tutto&quot;). Tuttavia, alcune operazioni, come lo spostamento, vengono mantenute automaticamente.
+>La maggior parte delle operazioni di modifica, incluso Crea nodo, mantiene tutte le modifiche in memoria e le archivia nell’archivio solo al momento del salvataggio (tramite il pulsante &quot;Salva tutto&quot;). Tuttavia, alcune operazioni, come lo spostamento, vengono mantenute automaticamente.
 >
->La convalida che verifica se il nodo appena creato è consentito dal tipo di nodo del nodo principale viene eseguita prima dall’archivio JCR al momento del salvataggio delle modifiche. Se ricevi un messaggio di errore durante il salvataggio di un nodo, controlla se la struttura del contenuto è valida (ad esempio, non puoi creare un nodo `nt:unstructured` nodo come elemento secondario di `nt:folder` nodo ).
+>La convalida che verifica se il nodo appena creato è consentito dal tipo di nodo del nodo principale viene eseguita prima dall’archivio JCR al momento del salvataggio delle modifiche. Se ricevi un messaggio di errore durante il salvataggio di un nodo, controlla se la struttura del contenuto è valida (ad esempio, non è possibile creare un’ `nt:unstructured` nodo come elemento secondario di `nt:folder` nodo ).
 
 ## Creazione di una proprietà {#creating-a-property}
 
@@ -251,7 +247,7 @@ Per creare una proprietà con CRXDE Liti:
 
 ## Creazione di uno script {#creating-a-script}
 
-Per creare un nuovo script:
+Per creare uno script:
 
 1. Apri CRXDE Liti nel browser.
 1. Nel riquadro di spostamento fare clic con il pulsante destro del mouse sul componente in cui si desidera creare lo script e selezionare **Crea...**, quindi **Crea file...**.
@@ -264,7 +260,7 @@ Per creare un nuovo script:
 
 ## Esportazione e importazione di tipi di nodo {#exporting-and-importing-node-types}
 
-Con CRXDE Liti è possibile importare e/o esportare le definizioni dei tipi di nodo in [Notazione CND (Compact Namespace and Node Type Definition, spazio dei nomi compatto e definizione del tipo di nodo)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Con CRXDE Liti, puoi importare e/o esportare le definizioni dei tipi di nodo in [Notazione CND (Compact Namespace and Node Type Definition, spazio dei nomi compatto e definizione del tipo di nodo)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Per esportare la definizione di un tipo di nodo:
 
@@ -272,7 +268,7 @@ Per esportare la definizione di un tipo di nodo:
 1. Seleziona il nodo richiesto.
 1. Seleziona **Strumenti** allora **Esporta tipo di nodo**.
 
-1. La definizione, in notazione cnd, verrà visualizzata nel browser. Se necessario, salva le informazioni.
+1. La definizione, in notazione cnd, viene visualizzata nel browser. Se necessario, salva le informazioni.
 
 Per importare una definizione di tipo di nodo:
 
@@ -285,7 +281,7 @@ Per importare una definizione di tipo di nodo:
 
 ## Registrazione {#logging}
 
-Con CRXDE Liti è possibile visualizzare il file `error.log` che si trova nel file system in `<crx-install-dir>/crx-quickstart/server/logs` e filtrarlo con il livello di registro appropriato. Procedere come segue:
+Con CRXDE Liti è possibile visualizzare il file `error.log` nel file system in `<crx-install-dir>/crx-quickstart/server/logs` e filtrarlo con il livello di registro appropriato. Procedere come segue:
 
 1. Apri CRXDE Liti nel browser.
 1. In **Console** nella parte inferiore della finestra, nel menu a discesa a destra, seleziona **Registri server**.
@@ -296,11 +292,11 @@ Operazioni disponibili:
 
 * Regolare i parametri di registro nella console Felix facendo clic sul pulsante **Configurazioni di registrazione** icona.
 * Cancellare i messaggi facendo clic sul pulsante **Pennello** icona.
-* Fissa il messaggio alla selezione corrente facendo clic sul pulsante **Fissa** icona.
+* Fissa il messaggio in corrispondenza della selezione facendo clic sul pulsante **Fissa** icona.
 * Attiva o disattiva la visualizzazione dei messaggi facendo clic sul pulsante **Interrompi** icona.
 
 ## Controllo accesso {#access-control}
 
 >[!NOTE]
 >
->Consulta [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md) per ulteriori informazioni.
+>Consulta [Utenti, gruppi e amministrazione dei diritti di accesso](/help/sites-administering/user-group-ac-admin.md) per ulteriori informazioni.

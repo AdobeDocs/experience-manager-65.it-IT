@@ -1,52 +1,47 @@
 ---
 title: Configurazione dell’ambiente dell’account
-seo-title: Configuring your account environment
-description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring.
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment.
-uuid: a4a408f4-e33e-4304-90ab-f564ae772b7d
+description: Adobe Experience Manager (AEM) consente di configurare l’account e alcuni aspetti dell’ambiente di authoring.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 27%
+source-wordcount: '227'
+ht-degree: 17%
 
 ---
 
 # Configurazione dell’ambiente dell’account{#configuring-your-account-environment}
 
-Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring.
+Adobe Experience Manager (AEM) consente di configurare l’account e alcuni aspetti dell’ambiente di authoring.
 
 Utilizzo di [impostazioni account](#account-settings) e [preferenze utente](#user-preferences) è possibile definire le opzioni e le preferenze riportate di seguito.
 
 * **Barra degli strumenti di modifica**
-Specificare se si desidera disporre della barra degli strumenti di modifica globale. Questa barra degli strumenti, visualizzata nella parte superiore della finestra del browser, offre 
-**Copia**, **Taglia**, **Incolla**, **Elimina** pulsanti da utilizzare con i componenti paragrafo della pagina:
+Specificare se si desidera disporre della barra degli strumenti di modifica globale. Questa barra degli strumenti, visualizzata nella parte superiore della finestra del browser, offre **Copia**, **Taglia**, **Incolla**, **Elimina** pulsanti da utilizzare con i componenti paragrafo della pagina:
 
    * Mostra se necessario (predefinito)
    * Mostra sempre
    * Mantieni nascosto
 
 * **Impersona**
-Con il [Impersona](/help/sites-administering/security.md#impersonating-another-user) un utente può lavorare per conto di un altro utente.
+La funzionalità di [Impersona](/help/sites-administering/security.md#impersonating-another-user) consente a un utente di lavorare per conto di un altro utente.
 
 * **Lingua**
 Lingua da utilizzare per l’interfaccia utente dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco disponibile.
 
 * **Gestione finestre**
-Seleziona una delle seguenti opzioni:
+Puoi selezionare:
 
-   * Verranno aperte più pagine di Windows (predefinito) in una nuova finestra.
-   * Le pagine a finestra singola verranno aperte nella finestra corrente.
+   * Più pagine di Windows (predefinito) vengono aperte in una nuova finestra.
+   * Le pagine a finestra singola vengono aperte nella finestra corrente.
 
 ## Impostazioni account {#account-settings}
 
-L’icona utente consente di accedere a diverse opzioni:
+L’icona utente ti permette di accedere alle seguenti opzioni:
 
 * Esci
 * [Impersona](/help/sites-administering/security.md#impersonating-another-user)
@@ -57,7 +52,7 @@ L’icona utente consente di accedere a diverse opzioni:
 
 ### Preferenze utente {#user-preferences}
 
-Ogni utente può impostare autonomamente determinate proprietà. Disponibile da **Preferenze** nell’angolo in alto a destra delle console.
+Ogni utente può impostare autonomamente determinate proprietà. È disponibile dal sito **Preferenze** nell&#39;angolo superiore destro delle console.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 

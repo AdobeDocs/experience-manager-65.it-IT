@@ -1,16 +1,16 @@
 ---
 title: Utilizzo delle versioni delle pagine
-description: Il controllo delle versioni crea lo snapshot di una pagina in un determinato momento.
+description: Scopri il controllo delle versioni e come creare un’istantanea di una pagina in un momento specifico.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 21%
+source-wordcount: '1348'
+ht-degree: 19%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 21%
 Il controllo delle versioni crea lo snapshot di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
 
 * Creare una versione di una pagina.
-* Ripristina una pagina a una versione precedente per annullare una modifica apportata, ad esempio, a una pagina.
+* Ripristina una pagina a una versione precedente per annullare una modifica apportata a una pagina.
 * Confronta la versione corrente di una pagina con una versione precedente, evidenziando differenze nel testo e nelle immagini.
 
-## Creazione di una nuova versione   {#creating-a-new-version}
+## Creazione di una versione {#creating-a-new-version}
 
-Per creare una nuova versione di una pagina:
+Per creare una versione di una pagina:
 
-1. Nel browser, apri la pagina per la quale desideri creare una nuova versione.
+1. Nel browser, apri la pagina per la quale desideri creare una versione.
 1. Nel Sidekick, seleziona **Controllo delle versioni** , quindi la scheda **Crea versione** scheda secondaria.
 
    ![screen_shot_2012-02-14alle40259pm](assets/screen_shot_2012-02-14at40259pm.png)
@@ -107,7 +107,7 @@ Per effettuare questo collegamento:
 
 * il sistema cerca la versione della pagina che era attiva al momento selezionato.
 * In altre parole, la versione mostrata era stata creata/attivata *prima* del momento temporale selezionato in Timewarp.
-* Anche quando si passa a una pagina che è stata eliminata viene eseguito il rendering, purché nell’archivio siano ancora disponibili le versioni precedenti della pagina.
+* Viene eseguito anche il rendering quando si passa a una pagina che è stata eliminata, purché nell’archivio siano ancora disponibili le versioni precedenti della pagina.
 * Se non viene trovata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring, in modo da evitare un errore 404 di pagina non più visualizzabile.
 
 >[!NOTE]
@@ -134,7 +134,7 @@ La versione del calendario viene utilizzata se si dispone di un giorno specifico
 
    >[!NOTE]
    >
-   >Se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa verrà riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
+   >Se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa viene riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ La versione del calendario viene utilizzata se si dispone di un giorno specifico
 1. Dopo aver visualizzato la pagina, fai clic su:
 
    * **Esci da Timewarp** per uscire e tornare alla pagina di authoring corrente.
-   * [Mostra timeline](#using-the-timewarp-timeline) per visualizzare la timeline.
+   * [Mostra timeline](#using-the-timewarp-timeline) in modo da poter visualizzare la timeline.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -167,14 +167,14 @@ Se si desidera visualizzare la sequenza temporale del documento:
 
    * Tutte le righe indicano le versioni pubblicate.
 Quando viene attivata una pagina, inizia una nuova riga. Ogni volta che il documento viene modificato, viene visualizzato un nuovo colore.
-Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata durante l’intervallo di tempo della versione verde iniziale e la linea gialla indica che la pagina è stata modificata in un determinato momento durante la versione rossa e così via.
+Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata durante l’intervallo di tempo della versione verde iniziale. La linea gialla indica che la pagina è stata modificata durante la versione rossa e così via.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Fai clic su:
 
    1. **Vai** per visualizzare il contenuto della pagina pubblicata al momento selezionato.
-   1. Quando si mostra quel contenuto, utilizza **Esci da Timewarp** per uscire e tornare alla pagina di authoring corrente.
+   1. Quando visualizzi tale contenuto, utilizza **Esci da Timewarp** per uscire e tornare alla pagina di authoring corrente.
 
 ### Limitazioni di Timewarp {#timewarp-limitations}
 
@@ -186,7 +186,7 @@ Timewarp semplifica al massimo la riproduzione di una pagina in un determinato m
 
 * **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, puoi farlo manualmente utilizzando [ripristinare](#main-pars-title-1).
 
-* **Timewarp si basa solo sul contenuto della pagina** - Se sono stati modificati alcuni elementi (come codice, css e risorse immagine) per il rendering del sito web, la visualizzazione sarà diversa da come era all’origine, poiché per tali elementi non vengono conservate precedenti versioni nell’archivio.
+* **Timewarp si basa solo sul contenuto della pagina** - Se sono stati modificati alcuni elementi, ad esempio codice, css e risorse di immagini, per il rendering del sito web, la visualizzazione è diversa da quella originale. Il motivo è che tali elementi non dispongono del controllo delle versioni nell&#39;archivio.
 
 >[!CAUTION]
 >

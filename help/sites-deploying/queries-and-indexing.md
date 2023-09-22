@@ -1,6 +1,6 @@
 ---
 title: Query e indicizzazione Oak
-description: Scopri come configurare gli indici in AEM.
+description: Scopri come configurare gli indici in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,7 +8,7 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-A differenza di Jackrabbit 2, Oak non indicizza il contenuto per impostazione predefinita. Gli indici personalizzati devono essere creati quando necessario, come con i database relazionali tradizionali. Se non esiste un indice per una query specifica, verranno probabilmente attraversati molti nodi. La query può ancora funzionare, ma probabilmente è piuttosto lenta.
+A differenza di Jackrabbit 2, Oak non indicizza il contenuto per impostazione predefinita. Gli indici personalizzati devono essere creati quando necessario, come con i database relazionali tradizionali. Se non esiste un indice per una query specifica, è possibile che vengano attraversati molti nodi. La query potrebbe ancora funzionare, ma è probabilmente lenta.
 
 Se Oak rileva una query senza un indice, viene stampato un messaggio di registro di livello WARN:
 
@@ -84,7 +84,7 @@ L&#39;indice delle proprietà è utile per le query che hanno vincoli di proprie
    * **tipo:**  `property` (di tipo String)
    * **nome proprietà:**  `jcr:uuid` (di tipo Nome)
 
-   Questo particolare esempio indicizzerà il `jcr:uuid` proprietà, il cui lavoro consiste nell’esporre l’identificatore universalmente univoco (UUID) del nodo a cui è collegata.
+   Questo esempio particolare indicizza `jcr:uuid` proprietà, il cui lavoro consiste nell’esporre l’identificatore universalmente univoco (UUID) del nodo a cui è collegata.
 
 1. Salva le modifiche.
 
@@ -92,11 +92,11 @@ L’indice delle proprietà dispone delle seguenti opzioni di configurazione:
 
 * Il **tipo** proprietà specifica il tipo di indice e in questo caso deve essere impostato su **proprietà**
 
-* Il **propertyNames** proprietà indica l&#39;elenco delle proprietà che verranno memorizzate nell&#39;indice. Se manca, il nome del nodo viene utilizzato come valore di riferimento del nome di proprietà. In questo esempio, la proprietà **jcr:uuid** La proprietà il cui lavoro consiste nell’esporre l’identificatore univoco (UUID) del relativo nodo viene aggiunta all’indice.
+* Il **propertyNames** proprietà indica l&#39;elenco delle proprietà memorizzate nell&#39;indice. Se manca, il nome del nodo viene utilizzato come valore di riferimento del nome di proprietà. In questo esempio, la proprietà **jcr:uuid** La proprietà il cui lavoro consiste nell’esporre l’identificatore univoco (UUID) del relativo nodo viene aggiunta all’indice.
 
 * Il **univoco** flag che, se impostato su **true** aggiunge un vincolo di univocità nell&#39;indice delle proprietà.
 
-* Il **DeclaringNodeTypes** La proprietà consente di specificare un determinato tipo di nodo a cui verrà applicato l’indice.
+* Il **DeclaringNodeTypes** proprietà consente di specificare un determinato tipo di nodo a cui si applica solo l’indice.
 * Il **reindicizzare** flag che, se impostato su **true**, attiva una reindicizzazione completa del contenuto.
 
 ### Indice ordinato {#the-ordered-index}
@@ -107,9 +107,9 @@ L&#39;indice Ordinato è un&#39;estensione dell&#39;indice Proprietà. Tuttavia,
 
 Un indicizzatore full-text basato su Apache Lucene è disponibile in AEM 6.
 
-Se è configurato un indice full-text, tutte le query con una condizione full-text utilizzano l’indice full-text, indipendentemente dalle altre condizioni indicizzate e indipendentemente dalla restrizione del percorso.
+Se è configurato un indice full-text, tutte le query con una condizione full-text utilizzano l&#39;indice full-text, indipendentemente dall&#39;esistenza di altre condizioni indicizzate e da eventuali restrizioni di percorso.
 
-Se non è configurato alcun indice full-text, le query con condizioni full-text non funzioneranno come previsto.
+Se non è configurato alcun indice full-text, le query con condizioni full-text non funzionano come previsto.
 
 Poiché l’indice viene aggiornato tramite un thread in background asincrono, alcune ricerche full-text non sono disponibili per una piccola finestra di tempo fino al completamento dei processi in background.
 
@@ -134,7 +134,7 @@ L’indice Lucene dispone delle seguenti opzioni di configurazione:
 
 ### Ricerca full-text {#understanding-fulltext-search}
 
-La documentazione in questa sezione si applica ad Apache Lucene, Elasticsearch, nonché agli indici full-text, ad esempio, PostgreSQL, SQLite, MySQL. L’esempio seguente è per AEM / Oak / Lucene.
+La documentazione di questa sezione si applica, ad esempio, agli indici Apache Lucene, Elasticsearch e full-text di PostgreSQL, SQLite e MySQL. L’esempio seguente è per AEM / Oak / Lucene.
 
 <b>Dati da indicizzare</b>
 
@@ -151,9 +151,9 @@ Il punto di partenza sono i dati che devono essere indicizzati. Prendi ad esempi
 
 Il meccanismo di indicizzazione suddivide il testo completo in parole chiamate &quot;token&quot; e crea un indice denominato &quot;indice invertito&quot;. Questo indice contiene l&#39;elenco dei documenti in cui viene visualizzato per ogni parola.
 
-Parole molto brevi, comuni (chiamate anche &quot;parole non significative&quot;) non sono indicizzate. Tutti i token vengono convertiti in minuscolo e viene applicato lo stemming.
+Le parole brevi e comuni (dette anche &quot;parole non significative&quot;) non sono indicizzate. Tutti i token vengono convertiti in minuscolo e viene applicato lo stemming.
 
-Osserva caratteri speciali come *&quot;-&quot;* non sono indicizzati.
+Caratteri speciali come *&quot;-&quot;* non sono indicizzati.
 
 | <b>Token</b> | <b>ID documento</b> |
 | --- | --- |
@@ -161,12 +161,12 @@ Osserva caratteri speciali come *&quot;-&quot;* non sono indicizzati.
 | brand | ..., 100,... |
 | cubo | ..., 200, 300,... |
 | dimensione | 300 |
-| finlandese | ..., 100,... |
+| fine | ..., 100,... |
 | inventare | 200 |
 | oggetto | ..., 300,... |
-| rubik | .., 100, 200,... |
+| rubik | ..., 100, 200,... |
 
-L&#39;elenco dei documenti è ordinato. Questa operazione risulta utile quando si esegue una query.
+L&#39;elenco dei documenti è ordinato. Questo è utile quando si esegue una query.
 
 <b>Ricerca in corso</b>
 
@@ -182,7 +182,7 @@ Le parole vengono tokenizzate e filtrate nello stesso modo in cui vengono indici
 +:fulltext:rubik +:fulltext:cube
 ```
 
-L&#39;indice consulterà quindi l&#39;elenco dei documenti per tali parole. Se sono presenti molti documenti, gli elenchi possono essere molto grandi. Ad esempio, supponiamo che contengano quanto segue:
+L&#39;indice consulta l&#39;elenco dei documenti per tali parole. Se sono presenti molti documenti, l&#39;elenco può essere di grandi dimensioni. Ad esempio, supponiamo che contengano quanto segue:
 
 
 | <b>Token</b> | <b>ID documento</b> |
@@ -191,7 +191,7 @@ L&#39;indice consulterà quindi l&#39;elenco dei documenti per tali parole. Se s
 | cubo | 30, 200, 300, 2000 |
 
 
-Lucene girerà avanti e indietro tra i due elenchi (o round robin) `n` elenchi, durante la ricerca `n` word):
+Lucene gira avanti e indietro tra i due elenchi (o round robin) `n` elenchi, durante la ricerca `n` word):
 
 * Leggi nel &quot;rubik&quot; ottiene la prima voce: trova 10
 * Lettura nel &quot;cubo&quot; ottiene la prima voce `>` = 10. 10 non è stato trovato, quindi quello successivo è 30.
@@ -201,7 +201,7 @@ Lucene girerà avanti e indietro tra i due elenchi (o round robin) `n` elenchi, 
 * Leggi nella &quot;rubik&quot; ottiene la prossima voce: 1000.
 * Lettura nel &quot;cubo&quot; ottiene la prima voce `>` = 1000: trova 2000.
 * Leggi in &quot;rubik&quot; ottiene la prima voce `>` = 2000: fine dell’elenco.
-* Finalmente possiamo smettere di cercare.
+* Infine, puoi interrompere la ricerca.
 
 L’unico documento trovato che contiene entrambi i termini è 200, come nell’esempio seguente:
 
@@ -263,7 +263,7 @@ Dalla versione 1.2.0, Oak supporta gli analizzatori Lucene.
 
 Gli analizzatori vengono utilizzati sia quando un documento viene indicizzato che al momento della query. Un analizzatore esamina il testo dei campi e genera un flusso di token. Gli analizzatori Lucene sono composti da una serie di classi di tokenizzatore e filtro.
 
-Gli analizzatori possono essere configurati tramite `analyzers` nodo (di tipo `nt:unstructured`) all&#39;interno del `oak:index` definizione.
+Gli analizzatori possono essere configurati mediante `analyzers` nodo (di tipo `nt:unstructured`) all&#39;interno del `oak:index` definizione.
 
 L’analizzatore predefinito per un indice è configurato in `default` elemento secondario del nodo analizzatori.
 
@@ -302,9 +302,9 @@ Se desideri utilizzare un analizzatore predefinito, puoi configurarlo seguendo l
    * **Nome:** `stopwords`
    * **Tipo:** `nt:file`
 
-#### Creazione di analizzatori tramite composizione {#creating-analyzers-via-composition}
+#### Creazione di analizzatori tramite la composizione {#creating-analyzers-via-composition}
 
-Gli analizzatori possono essere composti anche in base a `Tokenizers`, `TokenFilters` e `CharFilters`. Per farlo, specifica un analizzatore e crea nodi secondari dei suoi tokenizer e filtri opzionali che verranno applicati nell’ordine elencato. Vedi anche [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Gli analizzatori possono essere composti anche in base a `Tokenizers`, `TokenFilters`, e `CharFilters`. Per farlo, specifica un analizzatore e crea nodi secondari dei suoi tokenizer e filtri opzionali applicati nell’ordine elencato. Vedi anche [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
 Considera questa struttura di nodi come un esempio:
 
@@ -344,7 +344,7 @@ Considera questa struttura di nodi come un esempio:
 
                * **Tipo:** `nt:file`
 
-Il nome dei filtri, charFilters e tokenizers viene formato rimuovendo i suffissi di fabbrica. Pertanto:
+Il nome dei filtri, charFilters e dei token viene formato rimuovendo i suffissi di fabbrica. Pertanto:
 
 * `org.apache.lucene.analysis.standard.StandardTokenizerFactory` diventa `standard`
 
@@ -368,7 +368,7 @@ Può essere configurato per funzionare come server remoto con l’istanza AEM.
 
 L&#39;AEM può anche essere configurato per funzionare con un&#39;istanza remota del server Solr:
 
-1. Scarica ed estrai l’ultima versione di Solr. Per ulteriori informazioni su come eseguire questa operazione, consulta [Documentazione di installazione di Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. Scarica ed estrai l’ultima versione di Solr. Per ulteriori informazioni su come eseguire questa operazione, vedi [Documentazione di installazione di Apache Solr](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Ora, crea due frammenti Solr. A tale scopo, creare cartelle per ogni frammento della cartella in cui è stato decompresso Solr:
 
    * Per la prima partizione, crea la cartella:
@@ -396,7 +396,7 @@ L&#39;AEM può anche essere configurato per funzionare con un&#39;istanza remota
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla configurazione di Solr e ZooKeeper, consulta [Documentazione sulla configurazione Solr](https://wiki.apache.org/solr/ConfiguringSolr) e [Guida introduttiva di ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
+   >Per ulteriori informazioni sulla configurazione di Solr e ZooKeeper, consulta [Documentazione sulla configurazione Solr](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) e [Guida introduttiva di ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
 1. Iniziare la prima partizione con il supporto ZooKeeper andando a `aemsolr1\node1` ed eseguendo il comando seguente:
 
@@ -431,7 +431,7 @@ L&#39;AEM può anche essere configurato per funzionare con un&#39;istanza remota
 
 Di seguito è riportato un esempio di configurazione di base che può essere utilizzata con tutte e tre le implementazioni Solr descritte in questo articolo. Esso ospita gli indici di proprietà dedicati che sono già presenti nell’AEM e non devono essere utilizzati con altre applicazioni.
 
-Per utilizzarlo correttamente, è necessario inserire il contenuto dell&#39;archivio direttamente nella home directory Solr. Nel caso di distribuzioni con più nodi, deve trovarsi direttamente nella cartella principale di ciascun nodo.
+Per utilizzarlo correttamente, è necessario inserire il contenuto dell&#39;archivio direttamente nella home directory Solr. In caso di distribuzioni con più nodi, questa deve trovarsi direttamente nella cartella principale di ciascun nodo.
 
 File di configurazione Solr consigliati
 
@@ -464,7 +464,7 @@ Questa sezione presenta una serie di raccomandazioni su ciò che deve essere fat
 
 #### Preparazione delle informazioni di debug per l&#39;analisi {#preparing-debugging-info-for-analysis}
 
-Il modo più semplice per ottenere le informazioni richieste per la query eseguita è tramite [Strumento Spiega query](/help/sites-administering/operations-dashboard.md#explain-query). Questo consente di raccogliere le informazioni precise necessarie per eseguire il debug di una query lenta senza dover consultare le informazioni a livello di registro. Ciò è utile se si conosce la query di cui viene eseguito il debug.
+Il modo più semplice per ottenere le informazioni richieste per la query in esecuzione è tramite [Strumento Spiega query](/help/sites-administering/operations-dashboard.md#explain-query). Questo consente di raccogliere le informazioni precise necessarie per eseguire il debug di una query lenta senza dover consultare le informazioni a livello di registro. Ciò è utile se si conosce la query di cui viene eseguito il debug.
 
 Se questo non è possibile per qualsiasi motivo, puoi raccogliere i registri di indicizzazione in un singolo file e utilizzarli per risolvere il problema specifico.
 
@@ -480,7 +480,7 @@ Il **com.day.cq.search** è applicabile solo se si utilizza l&#39;utilità Query
 
 >[!NOTE]
 >
->È importante che i registri siano impostati su DEBUG solo per la durata di esecuzione della query che si desidera risolvere. In caso contrario, nel tempo nei registri viene generata una grande quantità di eventi. Per questo motivo, una volta raccolti i registri richiesti, torna alla registrazione a livello INFO per le categorie sopra menzionate.
+>È importante che i registri siano impostati su DEBUG solo per la durata di esecuzione della query che si desidera risolvere. In caso contrario, nel tempo nei registri vengono generati molti eventi. Per questo motivo, una volta raccolti i registri richiesti, torna alla registrazione a livello INFO per le categorie sopra menzionate.
 
 Per abilitare la registrazione, segui questa procedura:
 
@@ -516,7 +516,7 @@ A volte è utile fornire l’output di MBean correlati all’indice per il debug
    * Statistiche query Oak
    * IndexStats
 
-1. Fare clic su ogni MBean per ottenere le statistiche sulle prestazioni. Crea uno screenshot o annotali in basso nel caso sia necessario l&#39;invio al supporto.
+1. Fare clic su ogni MBean per ottenere statistiche sulle prestazioni. Crea uno screenshot o annotali nel caso sia necessario un invio di supporto.
 
 Puoi ottenere la variante JSON di queste statistiche anche dai seguenti URL:
 
@@ -525,7 +525,7 @@ Puoi ottenere la variante JSON di queste statistiche anche dai seguenti URL:
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 
-Puoi anche fornire l’output JMX consolidato tramite `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Questo includerebbe tutti i dettagli MBean relativi a Oak in formato JSON.
+Puoi anche fornire un output JMX consolidato tramite `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Questo includerebbe tutti i dettagli MBean relativi a Oak in formato JSON.
 
 #### Altri dettagli {#other-details}
 

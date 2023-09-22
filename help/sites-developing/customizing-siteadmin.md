@@ -1,19 +1,15 @@
 ---
 title: Personalizzazione della console Siti web (interfaccia classica)
-seo-title: Customizing the Websites Console (Classic UI)
 description: La console di amministrazione dei siti Web può essere estesa per visualizzare colonne personalizzate
-seo-description: The Websites Administration console can be extended to display custom columns
-uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -38,7 +34,6 @@ Questo tutorial dettagliato spiega come visualizzare una nuova colonna nella con
 >* la console Community
 >
 
-
 ### Creazione del servizio OSGI {#creating-the-osgi-service}
 
 Il `ListInfoProvider` L&#39;interfaccia definisce due metodi:
@@ -60,7 +55,7 @@ Di seguito è riportato un esempio di implementazione:
 
 Per creare il servizio OSGI:
 
-1. In CRXDE Lite, [creare un bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. In CRXDE Liti, [creare un bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Aggiungi il codice di esempio seguente.
 1. Crea il bundle.
 
@@ -109,13 +104,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* L’implementazione deve decidere, in base alla richiesta e/o alla risorsa fornite, se aggiungere o meno le informazioni all’oggetto JSON.
->* Se il `ListInfoProvider` L’implementazione definisce una proprietà già esistente nell’oggetto di risposta. Il relativo valore verrà sovrascritto da quello fornito.
+>* Se il `ListInfoProvider` L’implementazione definisce una proprietà esistente nell’oggetto di risposta, il cui valore viene sovrascritto da quello fornito.
 >
->  È possibile utilizzare [classificazione dei servizi](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) per gestire l&#39;ordine di esecuzione di più `ListInfoProvider` implementazioni.
+>  È possibile utilizzare [classificazione dei servizi](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) per gestire l&#39;ordine di esecuzione di più `ListInfoProvider` implementazioni.
 
 ### Test del nuovo servizio {#testing-the-new-service}
 
-Quando apri la console di amministrazione dei siti web e esplori il sito, il browser effettua una chiamata AJAX per ottenere l’oggetto JSON utilizzato per creare la console. Ad esempio, quando si passa al `/content/geometrixx` cartella, la seguente richiesta viene inviata al server AEM per creare la console:
+Quando apri la console di amministrazione dei siti web e esplori il sito, il browser emette una chiamata Ajax per ottenere l’oggetto JSON utilizzato per generare la console. Ad esempio, quando si passa al `/content/geometrixx` cartella, la seguente richiesta viene inviata al server AEM per creare la console:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -132,7 +127,7 @@ Per assicurarti che il nuovo servizio sia in esecuzione dopo aver distribuito il
 
 Geometrixx L’ultimo passaggio consiste nell’adattare la struttura dei nodi della console di amministrazione dei siti web per visualizzare la nuova proprietà per tutte le pagine sovrapponendola `/libs/wcm/core/content/siteadmin`. Procedere come segue:
 
-1. In CRXDE Lite, crea la struttura dei nodi `/apps/wcm/core/content` con nodi di tipo `sling:Folder` per riflettere la struttura `/libs/wcm/core/content`.
+1. In CRXDE Liti, crea la struttura dei nodi `/apps/wcm/core/content` con nodi di tipo `sling:Folder` per riflettere la struttura `/libs/wcm/core/content`.
 
 1. Copiare il nodo `/libs/wcm/core/content/siteadmin` e incollalo sotto `/apps/wcm/core/content`.
 
@@ -141,7 +136,7 @@ Geometrixx L’ultimo passaggio consiste nell’adattare la struttura dei nodi d
    * Rimuovi **pageText**
 
    * Imposta **pathRegex** a `/content/geometrixx(/.*)?`
-In questo modo la configurazione della griglia sarà attiva per tutti i siti web geometrixx.
+In questo modo la configurazione della griglia viene attivata per tutti i siti Web di Geometrixx.
 
    * Imposta **storeProxySuffix** a `.pages.json`
 
@@ -161,10 +156,10 @@ In questo modo la configurazione della griglia sarà attiva per tutti i siti web
 
    * **xtype**: `gridcolumn` di tipo String
 
-1. (facoltativo) Rilascia le colonne che non desideri visualizzare in corrispondenza di `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (facoltativo) Rilascia le colonne che non desideri visualizzare `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` è un percorso personalizzato che, per impostazione predefinita, punta a `/libs/wcm/core/content/siteadmin`.
-Per reindirizzarlo alla tua versione di siteadmin su `/apps/wcm/core/content/siteadmin` definire la proprietà `sling:vanityOrder` per avere un valore superiore a quello definito il `/libs/wcm/core/content/siteadmin`. Il valore predefinito è 300, quindi qualsiasi valore più alto è adatto.
+Per reindirizzarlo alla tua versione di siteadmin su `/apps/wcm/core/content/siteadmin`, definisci la proprietà `sling:vanityOrder` per avere un valore superiore a quello definito il `/libs/wcm/core/content/siteadmin`. Il valore predefinito è 300, quindi qualsiasi valore più alto è adatto.
 
 1. Passa alla console di amministrazione dei siti Web e passa al Geometrixx:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -175,7 +170,7 @@ Per reindirizzarlo alla tua versione di siteadmin su `/apps/wcm/core/content/sit
 
 >[!CAUTION]
 >
->Se più configurazioni della griglia corrispondono al percorso richiesto definito da **pathRegex** , verrà utilizzata la prima, e non la più specifica, il che significa che l’ordine delle configurazioni è importante.
+>Se più configurazioni della griglia corrispondono al percorso richiesto definito da **pathRegex** , viene utilizzato il primo e non il più specifico, il che significa che l’ordine delle configurazioni è importante.
 
 ### Pacchetto di esempio {#sample-package}
 
