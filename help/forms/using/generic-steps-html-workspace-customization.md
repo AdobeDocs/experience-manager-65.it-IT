@@ -1,19 +1,15 @@
 ---
 title: Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms
-seo-title: Generic steps for AEM Forms workspace customization
-description: Come iniziare a personalizzare l’interfaccia utente di AEM Forms Workspace.
-seo-description: How to get started customizing AEM Forms workspace user interface.
-uuid: da6310b4-1c58-468d-85c6-975fd2c141f9
+description: Come iniziare a personalizzare l’interfaccia utente di Adobe Experience Manager Forms Workspace.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 exl-id: 45e50b47-1b36-4937-9e1a-cc7bfb953861
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '304'
 ht-degree: 1%
 
 ---
@@ -22,10 +18,10 @@ ht-degree: 1%
 
 I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
 
-1. Accedi a CRXDE Lite accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Creare un `sling:Folder` cartella denominata `ws` a `/apps`, se non esiste. Per creare un `sling:Folder` cartella, fare clic con il pulsante destro del mouse sulla `apps` cartella e seleziona **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Specifica il nome come `ws`, seleziona digita come `sling:Folder` e fai clic su **[!UICONTROL OK]**. Clic **[!UICONTROL Salva tutto]**.
+1. Accedi a CRXDE Liti accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Creare un `sling:Folder` cartella denominata `ws` a `/apps`, se non esiste. Per creare un `sling:Folder` cartella, fare clic con il pulsante destro del mouse sulla `apps` cartella e seleziona **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Specifica il nome come `ws`, seleziona digita come `sling:Folder`e fai clic su **[!UICONTROL OK]**. Clic **[!UICONTROL Salva tutto]**.
 1. Sfoglia per `/apps/ws`, e passare al **[!UICONTROL Controllo dell’accesso]** scheda.
-1. Seleziona la **[!UICONTROL Archivio]** opzione. In **[!UICONTROL Controllo dell’accesso]** , fare clic su **[!UICONTROL +]** per aggiungere una nuova voce. Clic **[!UICONTROL +]** di nuovo.
+1. Seleziona la **[!UICONTROL Archivio]** opzione. In **[!UICONTROL Controllo dell’accesso]** , fare clic su **[!UICONTROL +]** per aggiungere una voce. Clic **[!UICONTROL +]** di nuovo.
 1. Cerca e seleziona la **PERM_WORKSPACE_USER** Principale.
 
    ![Selezionare l&#39;entità PERM_WORKSPACE_USER come parte dei passaggi generici per personalizzare HTML Workspace](assets/perm_workspace_user.png)
@@ -42,9 +38,9 @@ I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
 
 1. Per le personalizzazioni CSS, effettua le seguenti operazioni:
 
-   1. Accedi a `/apps/ws` e crea una nuova cartella denominata `css`.
+   1. Accedi a `/apps/ws` e crea una cartella denominata `css`.
 
-   1. In `css` cartella, crea un nuovo file denominato `newStyle.css`.
+   1. In `css` cartella, crea un file denominato `newStyle.css`.
 
    1. Apri `/apps/ws/html`.jsp e cambia da
 
@@ -95,6 +91,6 @@ I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
 
    1. Copia /libs/ws/js/registry.js in `/apps/ws/js/registry.js`.
 
-1. Clic **[!UICONTROL Salva tutto]**, cancellare la cache e aggiornare l’area di lavoro di AEM Forms.
+1. Clic **[!UICONTROL Salva tutto]**, cancella la cache e aggiorna l’area di lavoro di AEM Forms.
 
    Accedere all’URL `https://'[server]:[port]'/lc/ws` e accedere con le credenziali amministratore/password. Il browser reindirizza a `https://'[server]:[port]'/lc/apps/ws/index.html`.

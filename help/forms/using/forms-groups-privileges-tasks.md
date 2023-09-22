@@ -1,20 +1,16 @@
 ---
 title: AEM Forms su gruppi e privilegi OSGi
-seo-title: AEM Forms on OSGi Groups and Privileges
-description: Assegnare utenti ai gruppi per gestire AEM Forms su OSGi
-seo-description: Assign users to the groups to manage AEM Forms on OSGi
-uuid: f269a206-356d-4cee-b449-05c5da87121a
+description: Assegnare utenti a gruppi per gestire Adobe Experience Manager (AEM) Forms su OSGi
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: Configuration
-discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '293'
 ht-degree: 6%
 
 ---
@@ -26,9 +22,9 @@ ht-degree: 6%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
 | AEM 6.5 | Questo articolo |
 
-È possibile [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi dell&#39;AEM. Questi criteri controllano i privilegi degli utenti che fanno parte del gruppo.
+È possibile [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in Adobe Experience Manager (AEM). Questi criteri controllano i privilegi degli utenti che fanno parte del gruppo.
 
-Dopo l&#39;installazione [Pacchetto del componente aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, ad esempio utenti di forms e utenti avanzati di forms, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni dei gruppi:
+Dopo aver installato [Pacchetto del componente aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, ad esempio utenti di forms e utenti avanzati di forms, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni del gruppo:
 
 <table>
  <tbody>
@@ -52,7 +48,7 @@ Dopo l&#39;installazione [Pacchetto del componente aggiuntivo AEM Forms](../../f
     <ul> 
      <li>Creare, visualizzare in anteprima, pubblicare e inviare moduli adattivi</li> 
      <li>Creare, visualizzare in anteprima e pubblicare comunicazioni interattive e frammenti di documenti</li> 
-     <li>Creare script per i moduli adattivi tramite l’editor di codice</li> 
+     <li>Creare script per i moduli adattivi utilizzando un editor di codice</li> 
      <li>Caricare risorse, inclusi script</li> 
      <li>Creare temi</li> 
      <li>Importare pacchetti contenenti XDP</li> 
@@ -99,7 +95,7 @@ Dopo l&#39;installazione [Pacchetto del componente aggiuntivo AEM Forms](../../f
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Utilizzare le applicazioni casella in entrata AEM<br /> <strong>Nota: </strong>Per accedere all’interfaccia utente di Interactive Communications Agent nella casella in entrata dell’AEM, è necessario disporre delle assegnazioni di gruppi cm-agent-users e workflow-users.</li> 
+     <li>Utilizzare le applicazioni casella in entrata AEM<br /> <strong>Nota: </strong>Per accedere all’interfaccia utente di Interactive Communications Agent nella casella in entrata AEM, è necessario disporre delle assegnazioni di gruppi cm-agent-users e workflow-users.</li> 
      <li>Gestire le istanze del flusso di lavoro</li> 
     </ul> </td> 
   </tr>
@@ -108,7 +104,7 @@ Dopo l&#39;installazione [Pacchetto del componente aggiuntivo AEM Forms](../../f
    <td>
     <ul> 
      <li>Configura PDF Generator</li> 
-     <li>Configura cartella controllata</li> 
+     <li>Configurare la cartella controllata</li> 
      <li>Gestire le applicazioni del flusso di lavoro</li> 
     </ul> </td> 
   </tr>

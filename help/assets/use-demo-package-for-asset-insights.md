@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '162'
 ht-degree: 2%
 
 ---
@@ -27,11 +27,11 @@ Utilizzando il pacchetto demo, puoi abilitare Adobe Assets Insights per acquisir
 
 [Ottieni file](assets/demosite.zip)
 
-1. Fare clic sulla pagina Web per aprirla nel browser.
+1. Fare clic sulla pagina Web visualizzata nel browser.
 
    >[!CAUTION]
    >
-   >La pagina web è configurata per caricare la risorsa dal server localhost. Nel caso in cui il server sia in esecuzione altrove, modifica l’indirizzo del server da localhost a indirizzo del server nel contenuto HTML della pagina web.
+   >La pagina web è configurata per caricare le risorse dal server localhost. Se il server è in esecuzione altrove, modificare l&#39;indirizzo del server da localhost all&#39;indirizzo del server nel contenuto HTML della pagina Web.
 
    >[!NOTE]
    >

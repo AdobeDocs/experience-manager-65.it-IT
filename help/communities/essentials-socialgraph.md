@@ -1,25 +1,21 @@
 ---
 title: Nozioni di base sui grafici social
-seo-title: Social Graph Essentials
-description: segui la panoramica del componente e dei seguenti componenti
-seo-description: follow component and following component overview
-uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
+description: Scopri i seguenti componenti e il componente Segui.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 2%
 
 ---
 
 # Nozioni di base sui grafici social  {#social-graph-essentials}
 
-Possibilità per un membro della community di seguire [attività](essentials-activities.md) L’eVar viene stabilito attraverso due componenti:
+Possibilità per un membro della community di seguire [attività](essentials-activities.md) e l’essere seguiti si stabilisce attraverso due componenti:
 
 Il `following` il componente deve essere associato a un&#39;altra risorsa e questa associazione è già stata stabilita per i membri e le funzionalità delle community esistenti in un [sito community](overview.md#communitiessites).
 
@@ -63,10 +59,10 @@ Il `following` componente elenca i membri che seguono il membro corrente o che s
      <li>Tipo: booleano</li>
      <li>Valore:<br />
       <ul>
-       <li><i>Vero </i>- Il <code>following</code> Il componente elencherà i membri che il membro attualmente connesso <code>follows</code></li>
-       <li><i>Falso </i>- Il <code>following</code> il componente elencherà i membri che <code>follow </code>il membro attualmente connesso</li>
+       <li><i>Vero </i>- Il <code>following</code> il componente elenca i membri che il membro connesso <code>follows</code></li>
+       <li><i>Falso </i>- Il <code>following</code> componente elenca i membri che <code>follow </code>il membro connesso</li>
       </ul> </li>
-    </ul> <p>Impostazione predefinita <i>true</i> se manca la proprietà. Attualmente, non è possibile impostare questa proprietà utilizzando la finestra di dialogo per modifica in modalità di authoring. La proprietà deve essere aggiunta a un’istanza di <code>following </code>nodo tramite <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>Impostazione predefinita <i>true</i> se manca la proprietà. Non è possibile impostare questa proprietà utilizzando la finestra di dialogo per modifica in modalità Creazione. La proprietà deve essere aggiunta a un’istanza di <code>following</code> nodo utilizzando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -83,8 +79,8 @@ Il `following` componente elenca i membri che seguono il membro corrente o che s
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API del grafico social network](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [API del grafico social network](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Endpoint grafico social network](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Endpoint grafico social network](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Personalizzazioni lato server](server-customize.md)
