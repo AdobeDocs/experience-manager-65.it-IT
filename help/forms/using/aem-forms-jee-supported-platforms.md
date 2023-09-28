@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 54bed871375ddc9d18af564318ceac95dd1dd2f9
+source-git-commit: d76fce58973bd011b53a5da41578b57a8e10912e
 workflow-type: tm+mt
-source-wordcount: '3667'
+source-wordcount: '3694'
 ht-degree: 1%
 
 ---
@@ -707,7 +707,7 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.18
 - Microsoft® Windows Server 2019 (64 bit)
 - Microsoft® Active Directory 2016
 
-Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.18.0 di AEM Forms del 2 giugno 2022:
+Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.17.0 di AEM Forms del 2 giugno 2022:
 
 - Microsoft® SharePoint 2016
 
@@ -731,15 +731,14 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.10
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
-<!--
+
 >[!NOTE]
 >
->The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
--->
+Una piattaforma obsoleta continua a ricevere supporto fino a quando non viene contrassegnata come rimossa o fino al termine del ciclo di vita della piattaforma stessa, a seconda di quale evento si verifichi per primo.
 
 ## Cronologia revisioni {#revision-history}
 
-- 31 agosto 2023
+- 6.5.18.0 (31 agosto 2023)
    - **Aggiornamenti della piattaforma**: [!DNL Adobe Experience Manager Forms] in JEE è stato aggiunto il supporto per le seguenti piattaforme:
       - MongoDB Enterprise 4.4
       - Oracle server WebLogic 14c
@@ -768,7 +767,7 @@ Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.10
       - OpenOffice 4.1.2
       - Acrobat 2017 (Classic track) versione 17.011.30078 o successiva
 
-- 1 settembre 2022
+- 6.5.10.0 (1 settembre 2022)
 
    - È stato aggiunto il supporto per l’SDK Oracle Java™ SE 11 (64 bit) per il server applicazioni JBoss® EAP 7.4.
 
