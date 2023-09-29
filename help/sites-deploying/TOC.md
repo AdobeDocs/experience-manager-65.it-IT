@@ -85,7 +85,7 @@ ht-degree: 12%
    + [Ristrutturazione dell’archivio comune in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell’archivio Sites in AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell&#39;archivio di asset in AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
-   + [Ristrutturazione dell’archivio Dynamic Media nell’AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+   + [Ristrutturazione dell’archivio Dynamic Medie nell’AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell’archivio Forms nell’AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell’archivio di e-commerce in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell’archivio per AEM Communities nella versione 6.5](communities-repository-restructuring-in-aem-6-5.md)

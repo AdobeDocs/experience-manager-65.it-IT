@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 35%
+ht-degree: 37%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 35%
    + [Amministrazione sito Web](msm-and-translation.md)
    + [Processi asincroni](asynchronous-jobs.md)
    + [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](msm.md)
-   + [Panoramica Live Copy](msm-livecopy-overview.md)
+   + [Console Panoramica sulla Live Copy](msm-livecopy-overview.md)
    + [Configurazione della sincronizzazione di una Live Copy](msm-sync.md)
    + [Creazione e sincronizzazione di Live Copy](msm-livecopy.md)
    + [Conflitti di rollout MSM](msm-rollout-conflicts.md)
@@ -87,9 +87,9 @@ ht-degree: 35%
    + [Come controllare le operazioni di gestione degli utenti in AEM](audit-user-management-operations.md)
    + [SSL per impostazione predefinita](ssl-by-default.md)
    + [Gestore di autenticazione SAML 2.0](saml-2-0-authenticationhandler.md)
-   + [Gruppi di utenti chiusi nell’AEM](closed-user-groups.md)
+   + [Gruppi di utenti chiusi in AEM](closed-user-groups.md)
    + [Operazioni Granite: amministrazione di utenti e gruppi](granite-user-group-admin.md)
-   + [Abilitazione di CRXDE Lite nell’AEM](enabling-crxde-lite.md)
+   + [Abilitazione di CRXDE Liti nell’AEM](enabling-crxde-lite.md)
    + [Configurazione di LDAP con AEM 6](ldap-config.md)
    + [Configurare la password amministratore durante l’installazione](security-configure-admin-password.md)
    + [Utenti di servizi in AEM](security-service-users.md)
@@ -113,7 +113,7 @@ ht-degree: 35%
    + [Integrazione con Salesforce](salesforce.md)
    + [Integrazione con Adobe Target](target.md)
    + [Integrazione con Adobe Learning Manager](adobe-learningmanager.md)
-   + [Integrazione con Adobe Analytics ](adobeanalytics.md)
+   + [Integrazione con Adobe Analytics](adobeanalytics.md)
    + [Connessione ad Adobe Analytics e creazione di framework](adobeanalytics-connect.md)
    + [Configurazione del tracciamento dei collegamenti per Adobe Analytics](adobeanalytics-link.md)
    + [Mappatura dei dati dei componenti con le proprietà di Adobe Analytics](adobeanalytics-mapping.md)
@@ -137,7 +137,7 @@ ht-degree: 35%
    + [Integrazione con BrightEdge Content Optimizer](brightedge.md)
    + [Produttore catalogo](catalog-producer.md)
    + [Integrazione con Silverpop Engage](silverpop.md)
-   + [Integrazione con Adobe Campaign ](campaign.md)
+   + [Integrazione con Adobe Campaign](campaign.md)
    + [Integrazione con ExactTarget](exacttarget.md)
    + [Analytics con provider esterni](external-providers.md)
    + [Integrazione con Adobe Marketing Cloud](marketing-cloud.md)

@@ -47,7 +47,7 @@ ht-degree: 70%
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [Domande frequenti](cif/faq.md)
-+ AEM CIF Classic {#classic}
++ AEM - CIF Classic {#classic}
    + [Panoramica](/help/commerce/cif-classic/home.md)
    + Distribuzione {#deploying}
       + [Panoramica di eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)

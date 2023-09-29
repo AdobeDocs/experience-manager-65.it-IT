@@ -51,7 +51,7 @@ ht-degree: 64%
    + [Creazione di modelli di pagina  ](templates.md)
    + [Sistema di stili](style-system.md)
    + [Utilizzo delle versioni di una pagina  ](working-with-page-versions.md)
-   + [Differenze tra pagine ](page-diff.md)
+   + [Differenze tra pagine](page-diff.md)
    + [Console Componenti](default-components-console.md)
    + [Layout reattivo](responsive-layout.md)
    + [Approfondimenti contenuto](content-insights.md)

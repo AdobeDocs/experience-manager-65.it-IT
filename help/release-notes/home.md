@@ -5,7 +5,7 @@ exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 41%
+ht-degree: 43%
 
 ---
 
@@ -42,12 +42,12 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 
 * [Tutorial su AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Guida utente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
-* [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
+* [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
 * [Guida utente dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
 * [Preparazione al RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
-* [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other?lang=it)
+* [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=it)
 
 ## Copyright, licenze e clausole di esclusione di responsabilità {#copyright-licenses-and-disclaimers}
 

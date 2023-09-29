@@ -42,7 +42,7 @@ ht-degree: 37%
    + [Librerie di tag](taglib.md)
    + Modelli{#templates}
       + [Modelli](templates.md)
-      + [Modelli di pagina - Modificabili ](page-templates-editable.md)
+      + [Modelli di pagina - Modificabili](page-templates-editable.md)
       + [Modelli di pagina - Statici](page-templates-static.md)
       + [Modelli per frammenti di contenuto](content-fragment-templates.md)
       + [Rendering modello adattivo](templates-adaptive-rendering.md)
@@ -172,7 +172,7 @@ ht-degree: 37%
    + [Strumenti AEM Modernization Tools](modernization-tools.md)
    + [Editor finestre di dialogo](dialog-editor.md)
    + [Strumento di conversione finestra di dialogo](dialog-conversion.md)
-   + [Sviluppo con CRXDE Lite](developing-with-crxde-lite.md)
+   + [Sviluppo con CRXDE Liti](developing-with-crxde-lite.md)
    + [Gestione dei pacchetti tramite Maven](vlt-mavenplugin.md)
    + [Come sviluppare progetti AEM utilizzando Eclipse](howto-projects-eclipse.md)
    + [Come creare progetti AEM con Apache Maven](ht-projects-maven.md)
