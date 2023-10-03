@@ -7,9 +7,9 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 8737c989927b1be148d440aa1944cf4cfb216b69
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2226'
 ht-degree: 51%
 
 ---
@@ -234,7 +234,9 @@ Apri la console richiesta, quindi accedi alla risorsa desiderata e apri i **Rife
 
 Per ulteriori informazioni, selezionate il tipo di riferimento appropriato. In alcune situazioni, quando selezioni un riferimento specifico sono disponibili ulteriori azioni, tra cui:
 
-* **Collegamenti in ingresso** fornisce un elenco di pagine che fanno riferimento alla pagina, insieme all’accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico
+* **Collegamenti in ingresso** fornisce un elenco di pagine che fanno riferimento alla pagina, insieme all’accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
+
+   * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente; ad esempio dal componente Elenco.
 
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 
