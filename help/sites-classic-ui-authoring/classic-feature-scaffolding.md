@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Per creare un nuovo scaffold, passare al **Strumenti** console, quindi **Scaffol
 
 Vai a **Proprietà pagina** della nuova pagina e imposta *Testo titolo*, *Descrizione*, *Modello di destinazione*, e *Percorso di destinazione*, come descritto in precedenza.
 
-Successivamente, devi definire la struttura della pagina che verrà creata da questo scaffold. Per fare questo, vai in **[modalità progettazione](/help/sites-authoring/page-authoring.md#sidekick)** sulla pagina scaffold. Verrà visualizzato un collegamento che consente di modificare lo scaffold in **editor di finestre di dialogo**.
+Successivamente, devi definire la struttura della pagina che verrà creata da questo scaffold. Per fare questo, vai in **[modalità progettazione](/help/sites-authoring/page-authoring.md#sidekick)** sulla pagina scaffold. Viene visualizzato un collegamento che consente di modificare lo scaffold in **editor di finestre di dialogo**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 

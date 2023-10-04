@@ -12,10 +12,10 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 1%
+source-wordcount: '1515'
+ht-degree: 2%
 
 ---
 
@@ -40,11 +40,11 @@ La moderazione dell’UGC è utile per riconoscere i contributi positivi e limit
 
 * [Console di moderazione in blocco](moderation.md)
 
-   La console di moderazione è accessibile agli amministratori e [moderatori community](/help/communities/users.md) nell’ambiente pubblico e dagli amministratori nell’ambiente di authoring. Ciò è possibile quando il contenuto della community viene memorizzato in una [archivio comune](/help/communities/working-with-srp.md).
+  La console di moderazione è accessibile agli amministratori e [moderatori community](/help/communities/users.md) nell’ambiente pubblico e dagli amministratori nell’ambiente di authoring. Ciò è possibile quando il contenuto della community viene memorizzato in una [archivio comune](/help/communities/working-with-srp.md).
 
 * [Moderazione nel contesto](in-context.md)
 
-   La moderazione nell&#39;ambiente di pubblicazione può essere eseguita da amministratori e moderatori della community direttamente sulla pagina in cui è stato pubblicato il contenuto.
+  La moderazione nell&#39;ambiente di pubblicazione può essere eseguita da amministratori e moderatori della community direttamente sulla pagina in cui è stato pubblicato il contenuto.
 
 ## Azioni di moderazione {#moderation-actions}
 
@@ -52,23 +52,23 @@ Le azioni che possono essere eseguite sui contenuti pubblicati (UGC, Post Conten
 
 * `Admin`
 
-   Un utente che è membro di [amministratori di community](users.md) gruppo.
+  Un utente che è membro di [amministratori di community](users.md) gruppo.
 
 * `Moderator`
 
-   Membro di un [moderatori community](users.md#publishenvironmentusersandgroups) gruppo (ha [autorizzazioni moderatore](in-context.md#moderatorpermissions)).
+  Membro di un [moderatori community](users.md#publishenvironmentusersandgroups) gruppo (ha [autorizzazioni moderatore](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
-   Utente che ha pubblicato il contenuto.
+  Utente che ha pubblicato il contenuto.
 
 * `Member`
 
-   Utente connesso senza autorizzazioni speciali.
+  Utente connesso senza autorizzazioni speciali.
 
 * `Visitor`
 
-   Utente anonimo.
+  Utente anonimo.
 
 <table>
  <tbody>
@@ -276,19 +276,19 @@ Per configurare il sentiment e le parole d’ordine:
 
 * **Parole di controllo positive**
 
-   Elenco separato da virgole di parole che contribuiscono a un&#39;opinione positiva che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
+  Elenco separato da virgole di parole che contribuiscono a un&#39;opinione positiva che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
 
 * **Parole di controllo negative**
 
-   Un elenco separato da virgole di parole che contribuiscono a un sentimento negativo che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
+  Un elenco separato da virgole di parole che contribuiscono a un sentimento negativo che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
 
 * **Percorso esplicito al nodo parole d&#39;ordine**
 
-   Posizione dell’archivio di un nodo contenente il nodo predefinito `positive` e `negative` proprietà che specificano le parole d&#39;ordine predefinite. Il valore predefinito è `/libs/settings/community/watchwords/default`.
+  Posizione dell’archivio di un nodo contenente il nodo predefinito `positive` e `negative` proprietà che specificano le parole d&#39;ordine predefinite. Il valore predefinito è `/libs/settings/community/watchwords/default`.
 
 * **Regole di valutazione**
 
-   Posizione dell’archivio delle regole per il calcolo della valutazione in base a parole d’ordine positive e negative. Il valore predefinito è `/libs/cq/workflow/components/workflow/social/sentiments/rules` (tuttavia, il flusso di lavoro non è più necessario).
+  Posizione dell’archivio delle regole per il calcolo della valutazione in base a parole d’ordine positive e negative. Il valore predefinito è `/libs/cq/workflow/components/workflow/social/sentiments/rules` (tuttavia, il flusso di lavoro non è più necessario).
 
 Di seguito è riportato un esempio di voce personalizzata per le parole chiave predefinite, quando `Explicit Path to Watchwords Node` è impostato su `/libs/settings/community/watchwords/default`.
 

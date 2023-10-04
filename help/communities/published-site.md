@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Tuttavia, una limitazione nota espone il contenuto del sito community a visitato
 
 Per proteggere il contenuto del sito community dall’accesso da parte di utenti anonimi tramite il contenuto JCR e JSON , effettua le seguenti operazioni:
 
-1. Nell’istanza di AEM Author, vai a https:// nomehost:port/editor.html/content/site/sitename.html.
+1. Nell’istanza Autore AEM, vai a https:// nomehost:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -173,7 +173,7 @@ Una volta creati entrambi i gruppi, seleziona il gruppo di baseball, un gruppo a
 
 `Discussions` `What's New` `Members`
 
-I collegamenti del gruppo vengono visualizzati sotto i collegamenti del sito principale e il risultato è il seguente:
+I collegamenti del gruppo vengono visualizzati sotto i collegamenti del sito principale e i risultati vengono visualizzati nella seguente schermata:
 
 ![grouplink2](assets/grouplink2.png)
 

@@ -1,18 +1,15 @@
 ---
 title: Configurazione di ContextHub
-seo-title: Configuring ContextHub
 description: Scopri come configurare Context Hub.
-seo-description: Learn how to configure Context Hub.
-uuid: f2988bb9-6878-42a2-bb51-c3f8683248c5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 1%
+source-wordcount: '1786'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +36,7 @@ There are two options to disable ContextHub:
 or
 -->
 
-* Utilizzare CRXDE Lite per impostare la proprietà `disabled` a **true** in `/libs/settings/cloudsettings/legacy/contexthub`
+* Utilizzare CRXDE Liti per impostare la proprietà `disabled` a **true** in `/libs/settings/cloudsettings/legacy/contexthub`
 
 >[!NOTE]
 >
@@ -251,14 +248,14 @@ Modifica la configurazione di ContextHub e seleziona l’opzione **Debug**
 
 ### Via CRXDE {#via-crxde}
 
-Utilizzare CRXDE Lite per impostare la proprietà `debug` a **true** in:
+Utilizzare CRXDE Liti per impostare la proprietà `debug` a **true** in:
 
 * `/conf/global/settings/cloudsettings` oppure
 * `/conf/<tenant>/settings/cloudsettings`
 
 >[!NOTE]
 >
->Per le configurazioni ContextHub ancora presenti nei percorsi legacy, la posizione per impostare `debug property` è è `/libs/settings/cloudsettings/legacy/contexthub`.
+>Per le configurazioni ContextHub ancora presenti nei percorsi legacy, la posizione in cui impostare `debug property` è `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### Modalità silenziosa {#silent-mode}
 
@@ -266,7 +263,7 @@ La modalità silenziosa sopprime tutte le informazioni di debug. A differenza de
 
 Questa funzione è utile per l’istanza Publish, in cui non desideri ricevere informazioni di debug. Poiché si tratta di un’impostazione globale, viene abilitata tramite OSGi.
 
-1. Apri **Configurazione della console web Adobe Experience Manager** a `http://<host>:<port>/system/console/configMgr`
+1. Apri **Configurazione console Web Adobe Experience Manager** a `http://<host>:<port>/system/console/configMgr`
 1. Cerca **Adobe Granite ContextHub**
 1. Fai clic sulla configurazione **Adobe Granite ContextHub** per modificarne le proprietà
 1. Seleziona l’opzione **Modalità silenziosa** e fai clic su **Salva**
@@ -287,7 +284,7 @@ Dopo un aggiornamento, il backup viene archiviato in una cartella denominata `co
 
 Il `yyyymmdd` parte del nome del nodo è la data in cui è stato eseguito l’aggiornamento.
 
-Per recuperare le configurazioni ContextHub, utilizza CRXDE Lite per copiare i nodi che rappresentano i tuoi store, le modalità dell’interfaccia utente e i moduli dell’interfaccia utente da sotto al `default-pre-upgrade_yyyymmdd_xxxxxx` nodo al di sotto:
+Per recuperare le configurazioni ContextHub, utilizza CRXDE Liti per copiare i nodi che rappresentano i tuoi store, le modalità dell’interfaccia utente e i moduli dell’interfaccia utente da sotto al `default-pre-upgrade_yyyymmdd_xxxxxx` nodo al di sotto:
 
 * `/conf/global/settings/cloudsettings` oppure
 * `/conf/<tenant>/settings/cloudsettings`

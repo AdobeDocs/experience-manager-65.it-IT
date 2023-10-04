@@ -1,18 +1,14 @@
 ---
 title: Rendering dei PDF forms interattivi
-seo-title: Rendering Interactive PDF Forms
 description: Utilizza il servizio Forms per eseguire il rendering dei PDF forms interattivi su dispositivi client, in genere browser web, per raccogliere informazioni dagli utenti. Puoi utilizzare il servizio Forms per eseguire il rendering dei moduli interattivi utilizzando l’API Java e l’API del servizio web.
-seo-description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
-uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2487'
 ht-degree: 0%
@@ -31,7 +27,7 @@ Il servizio Forms esegue il rendering dei PDF forms interattivi sui dispositivi 
 
 **Esempio di richiesta di prestito**
 
-Viene introdotta un&#39;applicazione di prestito di esempio per dimostrare come il servizio Forms utilizza moduli interattivi per raccogliere informazioni dagli utenti. Questa applicazione consente a un utente di compilare un modulo con i dati necessari per ottenere un prestito e quindi di inviare i dati al servizio Forms. Il diagramma seguente mostra il flusso logico della domanda di prestito.
+Viene introdotta un&#39;applicazione di prestito di esempio per dimostrare come il servizio Forms utilizza moduli interattivi per raccogliere informazioni dagli utenti. Questa applicazione consente a un utente di compilare un modulo con i dati necessari per ottenere un prestito e quindi di inviare i dati al servizio Forms. Il diagramma seguente mostra il flusso logico della richiesta di prestito.
 
 ![ri_ri_finsrv_loanapp_v1](assets/ri_ri_finsrv_loanapp_v1.png)
 
@@ -63,20 +59,20 @@ Nella tabella seguente vengono descritti i passaggi del diagramma.
   </tr>
   <tr>
    <td><p>5</p></td>
-   <td><p>Viene eseguito il rendering di un modulo di conferma sul browser web. Dati quali il nome e il cognome dell’utente vengono uniti al modulo prima che questo venga sottoposto a rendering. (vedere <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Precompilazione di Forms con layout fluibili</a>.)</p></td>
+   <td><p>Viene eseguito il rendering di un modulo di conferma sul browser web. Dati quali il nome e il cognome dell'utente vengono uniti al modulo prima che questo venga sottoposto a rendering. (vedere <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Precompilazione di Forms con layout fluibili</a>.)</p></td>
   </tr>
  </tbody>
 </table>
 
 **Modulo di prestito**
 
-Questo modulo di prestito interattivo è fornito dalla domanda di prestito campione `GetLoanForm` Servlet Java.
+Questo modulo di prestito interattivo è reso dalla richiesta di prestito campione `GetLoanForm` Servlet Java.
 
 ![ri_ri_loanform](assets/ri_ri_loanform.png)
 
 **Modulo di conferma**
 
-Il presente modulo è fornito dalla domanda di prestito campione `HandleData` Servlet Java.
+Il modulo è fornito dalla richiesta di prestito di esempio `HandleData` Servlet Java.
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
@@ -196,7 +192,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (Java
 1. Specificare i valori URI
 
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
-   * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passa un valore stringa che rappresenta la directory principale del web dell’applicazione.
+   * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passare un valore string che rappresenta la radice web dell&#39;applicazione.
    * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo si trovi nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository:///`.
    * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. Per eseguire i calcoli, è inoltre possibile specificare l&#39;URL a cui viene inviato un modulo.
 
@@ -206,6 +202,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (Java
    * Richiama `java.util.HashMap` dell&#39;oggetto `put` metodo per ciascun file da allegare al modulo sottoposto a rendering. Passa i seguenti valori a questo metodo:
 
       * Valore stringa che specifica il nome del file allegato, inclusa l&#39;estensione.
+
    * A `com.adobe.idp.Document` oggetto che contiene il file allegato.
 
    >[!NOTE]
@@ -226,7 +223,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (Java
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` oggetto &quot;s `getOutputContent` metodo.
+   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
    * Ottieni il tipo di contenuto del `com.adobe.idp.Document` oggetto richiamando il relativo `getContentType` metodo.
    * Imposta il `javax.servlet.http.HttpServletResponse` tipo di contenuto dell&#39;oggetto richiamando il relativo `setContentType` e passando il tipo di contenuto del `com.adobe.idp.Document` oggetto.
    * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser web client richiamando `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream` metodo.
@@ -250,7 +247,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (serv
 1. Specificare i valori URI
 
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
-   * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passa un valore stringa che rappresenta la directory principale del web dell’applicazione.
+   * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passare un valore string che rappresenta la radice web dell&#39;applicazione.
    * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo si trovi nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository:///`.
    * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. Per eseguire i calcoli, è inoltre possibile specificare l&#39;URL a cui viene inviato un modulo.
 
@@ -260,6 +257,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (serv
    * Richiama `java.util.HashMap` dell&#39;oggetto `put` metodo per ciascun file da allegare al modulo sottoposto a rendering. Passa i seguenti valori a questo metodo:
 
       * Valore stringa che specifica il nome dell&#39;allegato, inclusa l&#39;estensione del nome file
+
    * A `BLOB` oggetto che contiene il file allegato
 
    >[!NOTE]

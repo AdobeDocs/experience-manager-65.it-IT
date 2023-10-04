@@ -1,17 +1,13 @@
 ---
 title: Configurazione della campagna
-seo-title: Setting up your campaign
 description: Per impostare una nuova campagna devi creare un marchio che contenga le campagne, creare una campagna che contenga le esperienze e infine definire le proprietà per la nuova campagna.
-seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
-uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 1%
@@ -95,13 +91,13 @@ Configura le proprietà della campagna che controllano il comportamento:
 * **Priorità:** La priorità di questa campagna rispetto ad altre campagne. Quando più campagne sono contemporaneamente attive, la campagna con priorità più alta controlla l’esperienza del visitatore.
 * **Ora di attivazione e disattivazione:** Queste proprietà controllano il periodo di tempo in cui la campagna controlla l&#39;esperienza del visitatore. La proprietà On Time controlla il momento in cui la campagna inizia a controllare l’esperienza. La proprietà Off Time controlla quando le campagne non controllano più l’esperienza.
 * **Immagine:** L&#39;immagine che rappresenta la campagna in AEM.
-* **Cloud Services:** Le configurazioni di Cloud Service con cui è integrata la campagna. (vedere [Integrazione con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Cloud Service:** Le configurazioni di Cloud Service con cui è integrata la campagna. (vedere [Integrazione con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
 * **Adobe Target:** Proprietà che configurano le campagne integrate con Adobe Target. (vedere [Integrazione con Adobe Target](/help/sites-administering/target.md).)
 
 1. Da **Campagne**, seleziona il tuo marchio. Nel riquadro a destra, seleziona la campagna e fai clic su **Proprietà**.
 
-   Puoi immettere varie proprietà, tra cui una **Titolo**, **Descrizione** e qualsiasi **Cloud Services** tu vuoi.
+   Puoi immettere varie proprietà, tra cui una **Titolo**, **Descrizione** e qualsiasi **Cloud Service** tu vuoi.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -224,7 +220,6 @@ Per importare i lead da un elenco separato da virgole:
    >* Nel dashboard, fai clic su **Importa lead** nel **Elenchi** riquadro
    >* Clic **Elenchi** e nella **Strumenti** menu, seleziona **Importa lead**.
 
-
 1. In **Strumenti** menu, seleziona **Importa** **Lead**.
 
 1. Immettere le informazioni come descritto in Dati di esempio. È possibile importare i campi seguenti: email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress
@@ -235,6 +230,8 @@ Per importare i lead da un elenco separato da virgole:
    >
    >
    >`email,givenName,familyName` - se è redatto come `givenname`Ad esempio, il sistema non lo riconoscerà.
+   >
+   >
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 

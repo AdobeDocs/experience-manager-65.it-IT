@@ -1,19 +1,15 @@
 ---
 title: Configurazione delle opzioni client e server
-seo-title: Configuring client and server optionsn
 description: Scopri come configurare le varie opzioni client e server, ad esempio le impostazioni di configurazione del server, i ruoli di protezione dei documenti e il controllo degli eventi.
-seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
-uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '10242'
+source-wordcount: '10243'
 ht-degree: 0%
 
 ---
@@ -212,7 +208,7 @@ Quando si abilita il controllo del server, è possibile visualizzare gli eventi 
    * Per controllare tutti gli eventi nella categoria, seleziona Tutto.
    * Per controllare solo alcuni eventi, deselezionare Tutti, quindi selezionare le caselle di controllo accanto agli eventi che si desidera controllare.
 
-      (vedere [Opzioni di controllo degli eventi](configuring-client-server-options.md#event-auditing-options).)
+     (vedere [Opzioni di controllo degli eventi](configuring-client-server-options.md#event-auditing-options).)
 
 1. Fai clic su OK.
 
@@ -421,7 +417,7 @@ Queste impostazioni controllano il testo visualizzato nella finestra di dialogo 
 
 **Visualizzazione personalizzazione per certificato client**
 
-**Visualizza solo gli emittenti di credenziali attendibili:** Quando questa opzione è selezionata, l&#39;applicazione client presenta all&#39;utente solo i certificati di autorità di certificazione delle credenziali configurate per l&#39;attendibilità dei moduli AEM (vedere Gestione di certificati e credenziali). Se questa opzione non è selezionata, all’utente viene presentato un elenco di tutti i certificati presenti sul sistema dell’utente.
+**Visualizza solo gli emittenti di credenziali attendibili:** Quando questa opzione è selezionata, l&#39;applicazione client presenta all&#39;utente solo i certificati di autorità di certificazione delle credenziali configurate per l&#39;attendibilità dei moduli AEM (vedere Gestione di certificati e credenziali). Se questa opzione non è selezionata, all&#39;utente viene presentato un elenco di tutti i certificati presenti nel sistema dell&#39;utente.
 
 ## Configurare le filigrane dinamiche {#configure-dynamic-watermarks}
 
@@ -493,7 +489,7 @@ Alcune applicazioni client potrebbero non supportare le filigrane dinamiche. Con
    * Selezionare i tipi di filigrana da includere. Se si seleziona Testo personalizzato, nella casella adiacente digitare il testo da visualizzare per la filigrana. Tenere presente la lunghezza del testo che verrà visualizzato come filigrana.
    * Specificare le proprietà di formattazione del testo, ad esempio il nome, la dimensione, il colore di primo piano e il colore di sfondo del testo della filigrana. Specificate il colore di primo piano e di sfondo come valori esadecimali.
 
-      ***nota **: se selezioni l’opzione di ridimensionamento Adatta alla pagina, la proprietà Dimensione font non è disponibile per la modifica.*
+     ***nota **: se selezioni l’opzione di ridimensionamento Adatta alla pagina, la proprietà Dimensione font non è disponibile per la modifica.*
 
 1. Se hai selezionato PDF per le opzioni della filigrana avanzata, fai clic su **Sfoglia** accanto a Seleziona PDF filigrana per selezionare il documento PDF da utilizzare come filigrana.
 
@@ -645,7 +641,7 @@ Le impostazioni seguenti si trovano nell&#39;area Configurazione e-mail di invit
 
 ### Impostazioni e-mail di attivazione {#activation-email-settings}
 
-Dopo che gli utenti sono stati invitati a registrarsi, document security invia un’e-mail di attivazione. L’e-mail di attivazione contiene un collegamento alla pagina di attivazione dell’account, da cui gli utenti possono attivare l’account. Quando gli account vengono attivati, gli utenti possono accedere a document security utilizzando il proprio indirizzo e-mail e la password creati al momento della registrazione.
+Dopo che gli utenti sono stati invitati a registrarsi, document security invia un’e-mail di attivazione. L’e-mail di attivazione contiene un collegamento alla pagina di attivazione dell’account in cui gli utenti possono attivare l’account. Quando gli account vengono attivati, gli utenti possono accedere a document security utilizzando il proprio indirizzo e-mail e la password creati al momento della registrazione.
 
 Quando il destinatario attiva l’account utente, l’utente diventa un utente locale.
 
@@ -655,17 +651,17 @@ Le impostazioni seguenti si trovano nell&#39;area Configurazione e-mail di attiv
 >
 >È inoltre consigliabile configurare un messaggio nella schermata di accesso per indicare agli utenti esterni come contattare il proprio amministratore per ottenere una nuova password o altre informazioni.
 
-**Da:** Indirizzo e-mail dal quale viene inviata l’e-mail di attivazione. Questo indirizzo e-mail riceve gli avvisi di recapito non riusciti dall’host e-mail del dichiarante e anche tutti i messaggi che il destinatario invia in risposta all’e-mail di registrazione. Il formato predefinito dell&#39;indirizzo di posta elettronica Da è postmaster@[your_installation_domain].com.
+**Da:** Indirizzo e-mail dal quale viene inviata l’e-mail di attivazione. Questo indirizzo e-mail riceve gli avvisi di recapito non riusciti dall&#39;host e-mail del registrante e tutti i messaggi inviati dal destinatario in risposta all&#39;e-mail di registrazione. Il formato predefinito dell&#39;indirizzo di posta elettronica Da è postmaster@[your_installation_domain].com.
 
 **Oggetto:** Oggetto predefinito per il messaggio e-mail di attivazione.
 
 **Timeout:** Il numero di giorni dopo i quali scade l’invito di attivazione se l’utente non attiva l’account. Il valore predefinito è 30 giorni.
 
-**Messaggio:** Testo che appare nel corpo del messaggio un messaggio che indica che l’account utente del destinatario deve essere attivato. È inoltre possibile includere informazioni su come contattare un amministratore per ottenere una nuova password.
+**Messaggio:** Testo visualizzato nel corpo del messaggio per indicare che l&#39;account utente del destinatario deve essere attivato. È inoltre possibile includere informazioni su come contattare un amministratore per ottenere una nuova password.
 
 ### Configurare un messaggio e-mail di reimpostazione della password {#configure-a-password-reset-email}
 
-Se devi reimpostare la password di un utente invitato, viene generato un messaggio e-mail di conferma che invita l’utente a scegliere una nuova password. Non è possibile determinare la password di un utente; se l’utente la dimentica, è necessario reimpostarla.
+Se devi reimpostare la password di un utente invitato, viene generato un messaggio e-mail di conferma che invita l’utente a scegliere una nuova password. Impossibile determinare la password di un utente. Se l&#39;utente la dimentica, è necessario reimpostarla.
 
 Le impostazioni seguenti si trovano nell&#39;area E-mail reimpostazione password della pagina Registrazione utente invitato.
 
@@ -751,7 +747,7 @@ Puoi apportare le seguenti modifiche utilizzando il file di configurazione:
 
 ### Specificare un periodo di timeout per la sincronizzazione offline {#specify-a-timeout-period-for-offline-synchronization}
 
-Document Security consente agli utenti di aprire e utilizzare un documento protetto quando non sono connessi al server di Document Security. L’applicazione client dell’utente deve sincronizzarsi regolarmente con il server per mantenere i documenti validi per l’utilizzo offline. La prima volta che si apre un documento protetto, viene richiesto se il computer deve essere autorizzato a eseguire la sincronizzazione periodica del client.
+Document Security consente agli utenti di aprire e utilizzare un documento protetto quando non sono connessi al server di Document Security. L&#39;applicazione client dell&#39;utente deve sincronizzarsi regolarmente con il server per mantenere i documenti validi per l&#39;utilizzo offline. La prima volta che si apre un documento protetto, viene richiesto se il computer deve essere autorizzato a eseguire la sincronizzazione periodica del client.
 
 Per impostazione predefinita, la sincronizzazione viene eseguita automaticamente ogni quattro ore e in base alle esigenze quando un utente è connesso al server di Document Security. Se il periodo non in linea di un documento scade mentre l&#39;utente non è in linea, è necessario riconnettersi al server per consentire all&#39;applicazione client di eseguire la sincronizzazione con il server.
 

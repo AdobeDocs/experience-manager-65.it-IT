@@ -1,16 +1,12 @@
 ---
 title: File di backup e ripristino
-seo-title: Files to back up and recover
 description: Questo documento descrive l'applicazione e i file di dati di cui è necessario eseguire il backup.
-seo-description: This document describes the application and data files that must be backed up.
-uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -100,7 +96,7 @@ Configurare il database DB2 per l&#39;esecuzione in modalità log archivio.
 
 >[!NOTE]
 >
->Se l&#39;ambiente dei moduli AEM è stato aggiornato da una versione precedente di moduli AEM e utilizza DB2, il backup online non è supportato. In questo caso, è necessario chiudere i moduli AEM ed eseguire un backup offline. Le versioni future dei moduli AEM supporteranno il backup online per i clienti che eseguono l&#39;aggiornamento.
+Se l&#39;ambiente dei moduli AEM è stato aggiornato da una versione precedente di moduli AEM e utilizza DB2, il backup online non è supportato. In questo caso, è necessario chiudere i moduli AEM ed eseguire un backup offline. Le versioni future dei moduli AEM supporteranno il backup online per i clienti che eseguono l&#39;aggiornamento.
 
 IBM dispone di una suite di strumenti e sistemi di assistenza che consentono agli amministratori di database di gestire le attività di backup e ripristino:
 
@@ -136,7 +132,7 @@ Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il data
 
 >[!NOTE]
 >
->La modalità di registrazione binaria predefinita per MySQL è &quot;Statement&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). Se si utilizza la registrazione binaria in questa modalità predefinita, Content Services (obsoleto) non riesce. Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;Mista&quot;. Per abilitare la registrazione &quot;Mista&quot;, aggiungi il seguente argomento al file my.ini: `binlog_format=mixed log-bin=logname`
+La modalità di registrazione binaria predefinita per MySQL è &quot;Statement&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). Se si utilizza la registrazione binaria in questa modalità predefinita, Content Services (obsoleto) non riesce. Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;Mista&quot;. Per abilitare la registrazione &quot;Mista&quot;, aggiungi il seguente argomento al file my.ini: `binlog_format=mixed log-bin=logname`
 
 È possibile utilizzare l&#39;utilità mysqldump per ottenere il backup completo del database. I backup completi sono necessari, ma non sempre sono comodi. Producono file di backup di grandi dimensioni e richiedono tempo per la generazione. Per eseguire un backup incrementale, accertati di avviare il server con - `log-bin` come descritto nella sezione precedente. Ogni volta che il server MySQL viene riavviato, smette di scrivere nel registro binario corrente, ne crea uno nuovo e, da quel momento in poi, quello nuovo diventa quello corrente. È possibile forzare un passaggio manualmente con `FLUSH LOGS SQL` comando. Dopo il primo backup completo, i successivi backup incrementali vengono eseguiti utilizzando l&#39;utilità mysqladmin con `flush-logs` , che crea il file di registro successivo.
 
@@ -197,6 +193,6 @@ Se nell&#39;ambiente dei moduli AEM sono stati installati altri tipi di caratter
 
 >[!NOTE]
 >
->Per impostazione predefinita, i font di Adobe installati con i moduli AEM si trovano nel `[aem-forms root]/fonts` directory.
+Per impostazione predefinita, i font di Adobe installati con i moduli AEM si trovano nel `[aem-forms root]/fonts` directory.
 
 Se si sta reinizializzando il sistema operativo sul computer host e si desidera utilizzare i caratteri del sistema operativo precedente, è necessario eseguire anche il backup del contenuto della directory dei caratteri del sistema. Per istruzioni specifiche, consultare la documentazione del sistema operativo in uso.

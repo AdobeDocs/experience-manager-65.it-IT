@@ -1,16 +1,12 @@
 ---
 title: Strategia di backup e ripristino per i moduli AEM
-seo-title: Backup and recovery strategy for AEM forms
 description: Scopri come implementare una strategia per eseguire il backup dei dati e garantirne la sincronizzazione con i dati dei moduli AEM.
-seo-description: Learn how to implement a strategy to back up data and ensuring that it remains in sync with the AEM forms data.
-uuid: 98fc3115-76e5-4e58-aa30-3601866a441f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 0%
@@ -19,7 +15,7 @@ ht-degree: 0%
 
 # Strategia di backup e ripristino per i moduli AEM{#backup-and-recovery-strategy-for-aem-forms}
 
-Se l’implementazione dei moduli AEM memorizza dati personalizzati aggiuntivi in un database diverso, è tua responsabilità implementare una strategia per eseguire il backup di tali dati e assicurarti che rimangano sincronizzati con i dati dei moduli AEM. Inoltre, l&#39;applicazione deve essere progettata in modo da essere sufficientemente solida per gestire uno scenario in cui i database aggiuntivi non sono sincronizzati. Si consiglia vivamente di eseguire qualsiasi operazione di database nel contesto di una transazione per mantenere uno stato coerente.
+Se l’implementazione dei moduli AEM memorizza dati personalizzati aggiuntivi in un database diverso, è tua responsabilità implementare una strategia per eseguire il backup di tali dati e assicurarti che rimangano sincronizzati con i dati dei moduli AEM. Inoltre, l&#39;applicazione deve essere progettata in modo da essere sufficientemente solida da gestire uno scenario in cui i database aggiuntivi non sono sincronizzati. Si consiglia vivamente di eseguire qualsiasi operazione di database nel contesto di una transazione per mantenere uno stato coerente.
 
 Dopo aver identificato il modo in cui vengono utilizzati i moduli AEM, determinare quali file devono essere sottoposti a backup, la frequenza e la finestra di backup da rendere disponibili.
 

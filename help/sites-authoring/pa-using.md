@@ -1,16 +1,14 @@
 ---
 title: Visualizzazione dei dati di analisi delle pagine per misurare l’efficacia del contenuto delle pagine
 description: Utilizzare i dati di analisi delle pagine per misurare l’efficacia del contenuto delle pagine
-uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '636'
 ht-degree: 4%
 
 ---
@@ -36,9 +34,9 @@ Ogni colonna mostra un valore per il periodo di reporting corrente e indica anch
 >Per modificare il periodo di aggiornamento: [configurare l’intervallo di importazione](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Apri **Sites** console; ad esempio [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. Nell’angolo in alto a destra della barra degli strumenti, tocca o fai clic sull’icona per selezionare **Vista a elenco** (l’icona visualizzata dipende dal [vista corrente](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona per selezionare **Vista a elenco** (l’icona visualizzata dipende dal [vista corrente](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Di nuovo, nell’angolo in alto a destra della barra degli strumenti, tocca o fai clic sull’icona, quindi seleziona **Impostazioni vista**. Il **Configura colonne** viene aperta una finestra di dialogo. Apporta le modifiche necessarie e conferma con **Aggiorna**.
+1. Di nuovo, nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona, quindi seleziona **Impostazioni vista**. Il **Configura colonne** viene aperta una finestra di dialogo. Apporta le modifiche necessarie e conferma con **Aggiorna**.
 
    ![aa-04](assets/aa-04.png)
 

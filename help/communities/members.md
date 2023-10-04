@@ -1,15 +1,13 @@
 ---
 title: Console di gestione membri e gruppi
 description: Come accedere alle console di gestione dei membri e dei gruppi
-uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 4%
@@ -29,7 +27,7 @@ Utilizzo delle console Membri e Gruppi di Communities, membri e gruppi di membri
 
 ### Utenti su Autore {#users-on-author}
 
-Per la gestione di utenti e gruppi registrati in *autore* è necessario per utilizzare la console di sicurezza della piattaforma:
+Per la gestione di utenti e gruppi registrati in *autore* è necessario utilizzare la console di sicurezza della piattaforma:
 
 * Dalla navigazione globale, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
 * Dalla navigazione globale, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Gruppi]**.

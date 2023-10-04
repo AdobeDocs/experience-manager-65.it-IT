@@ -1,17 +1,13 @@
 ---
 title: Creazione di flussi di output dei documenti
-seo-title: Creating Document Output Streams
 description: Utilizzare il servizio Output per convertire i documenti come formati PDF (inclusi i documenti PDF/A), PostScript, Printer Control Language (PCL) e Zebra - ZPL, Intermec - IPL, Datamax - DPL e TecToshiba - TPCL.
-seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
-uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '19016'
 ht-degree: 0%
@@ -385,11 +381,11 @@ Crea un documento PDF utilizzando l’API di output (servizio web):
 
 ## Creazione di documenti PDF/A {#creating-pdf-a-documents}
 
-È possibile utilizzare il servizio di output per creare un documento PDF/A. Poiché PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, tutti i font sono incorporati e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuti audio e video. Analogamente ad altre attività del servizio di output, è possibile fornire sia una struttura di modulo che dati da unire a una struttura di modulo per creare un documento PDF/A.
+È possibile utilizzare il servizio di output per creare un documento PDF/A. Poiché PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, tutti i font vengono incorporati e il file non viene compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuti audio e video. Analogamente ad altre attività del servizio di output, è possibile fornire sia una struttura di modulo che dati da unire a una struttura di modulo per creare un documento PDF/A.
 
 La specifica PDF/A-1 è costituita da due livelli di conformità, ovvero a e b. La differenza principale tra i due è relativa al supporto della struttura logica (accessibilità), che non è richiesto per il livello di conformità b. Indipendentemente dal livello di conformità, PDF/A-1 impone che tutti i font siano incorporati nel documento PDF/A generato.
 
-Sebbene PDF/A sia lo standard per l’archiviazione dei documenti PDF PDF, non è obbligatorio utilizzarlo per l’archiviazione se un documento PDF standard soddisfa le esigenze della tua azienda. Lo scopo dello standard PDF/A è quello di stabilire un file PDF che possa essere memorizzato per un lungo periodo di tempo e soddisfare i requisiti di conservazione dei documenti. Ad esempio, non è possibile incorporare un URL in un PDF/A perché nel tempo l’URL potrebbe diventare non valido.
+Sebbene PDF/A sia lo standard per l&#39;archiviazione dei documenti PDF PDF, non è obbligatorio utilizzarlo per l&#39;archiviazione se un documento PDF standard soddisfa le esigenze della società. Lo scopo dello standard PDF/A è quello di stabilire un file PDF che possa essere memorizzato per un lungo periodo di tempo e soddisfare i requisiti di conservazione dei documenti. Ad esempio, non è possibile incorporare un URL in un PDF/A perché nel tempo l’URL potrebbe diventare non valido.
 
 L&#39;organizzazione deve valutare le proprie esigenze, il periodo di tempo in cui si intende conservare il documento, le considerazioni sulla dimensione del file e determinare la propria strategia di archiviazione. È possibile determinare a livello di programmazione se un documento PDF è compatibile con PDF/A utilizzando il servizio DocConverter. (vedere [Determinazione a livello di programmazione della conformità di PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
@@ -772,6 +768,7 @@ Passa un documento recuperato da Content Services (obsoleto) utilizzando il serv
       * Assegna al campo il nome utente dei moduli AEM `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
@@ -906,7 +903,7 @@ Passa un documento recuperato dal repository utilizzando il servizio di output e
 
 1. Recupera la progettazione del modulo dall’archivio di AEM Forms.
 
-   Richiama `ResourceRepositoryClient` dell&#39;oggetto `readResourceContent` e passa un valore stringa che specifica la posizione URI nel file XDP. Ad esempio, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Questo valore è obbligatorio. Questo metodo restituisce un `com.adobe.idp.Document` che rappresenta il file XDP.
+   Richiama `ResourceRepositoryClient` dell&#39;oggetto `readResourceContent` e passa un valore stringa che specifica la posizione URI nel file XDP. Esempio: `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Questo valore è obbligatorio. Questo metodo restituisce un `com.adobe.idp.Document` che rappresenta il file XDP.
 
 1. Esegui il rendering del modulo di PDF non interattivo.
 
@@ -1029,7 +1026,6 @@ Crea un documento PDF basato su frammenti utilizzando l’API del servizio di ou
    * Effettua iterazione attraverso `java.util.Map` finché non viene individuato il risultato `com.adobe.idp.Document` oggetto.
    * Richiama `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` metodo per estrarre il documento XDP assemblato.
 
-
 1. Utilizza il servizio di output per generare il documento PDF.
 
    Richiama `OutputClient` dell&#39;oggetto `generatePDFOutput2` e trasmettere i seguenti valori:
@@ -1096,6 +1092,7 @@ Crea un documento PDF basato su frammenti utilizzando l’API del servizio di ou
       * Assegna il nome utente dei moduli AEM a `OutputServiceClient.ClientCredentials.UserName.UserName`campo.
       * Assegna il valore della password corrispondente al `OutputServiceClient.ClientCredentials.UserName.Password`campo.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al `BasicHttpBindingSecurity.Transport.ClientCredentialType`campo.
+
    * Assegna la `BasicHttpSecurityMode.TransportCredentialOnly` valore costante per `BasicHttpBindingSecurity.Security.Mode`campo.
 
    >[!NOTE]
@@ -1113,8 +1110,7 @@ Crea un documento PDF basato su frammenti utilizzando l’API del servizio di ou
    Il `invokeDDX` il metodo restituisce un `AssemblerResult` oggetto contenente i risultati del processo ed eventuali eccezioni verificatesi. Per ottenere il documento XDP appena creato, effettuare le seguenti operazioni:
 
    * Accedere a `AssemblerResult` dell&#39;oggetto `documents` campo, che è un `Map` oggetto contenente i documenti PDF risultanti.
-   * Effettua iterazione attraverso `Map` oggetto per recuperare la struttura del modulo assemblato. Crea il cast del membro dell’array `value` a un `BLOB`. Passa questo `BLOB` al servizio di output.
-
+   * Effettua iterazione attraverso `Map` oggetto per recuperare la struttura del modulo assemblato. Cast del membro dell’array `value` a un `BLOB`. Passa questo `BLOB` al servizio di output.
 
 1. Utilizza il servizio di output per generare il documento PDF.
 
@@ -1550,10 +1546,9 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API di out
       * Il `PrintedOutputOptionsSpec` oggetto contenente le opzioni di runtime necessarie per stampare su un file.
       * Il `com.adobe.idp.Document` oggetto che rappresenta l&#39;origine dati XML contenente i dati del modulo da unire con la struttura del modulo.
 
-      Questo metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
+     Questo metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
 
-   * Creare un `com.adobe.idp.Document` oggetto da inviare alla stampante richiamando `OutputResult` oggetto &quot;s `getGeneratedDoc` metodo. Questo metodo restituisce un `com.adobe.idp.Document` oggetto.
-
+   * Creare un `com.adobe.idp.Document` oggetto da inviare alla stampante richiamando `OutputResult` dell&#39;oggetto `getGeneratedDoc` metodo. Questo metodo restituisce un `com.adobe.idp.Document` oggetto.
 
 1. Inviare il flusso di stampa a una stampante di rete
 
@@ -1622,8 +1617,8 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API di out
       * A `BLOB` oggetto popolato da `generatePrintedOutput` metodo. Il `generatePrintedOutput` Il metodo popola questo oggetto con i metadati generati che descrivono il documento. (Questo valore di parametro è obbligatorio solo per le chiamate al servizio web).
       * A `BLOB` oggetto popolato da `generatePrintedOutput` metodo. Il `generatePrintedOutput` Il metodo popola questo oggetto con i dati dei risultati. (Questo valore di parametro è obbligatorio solo per le chiamate al servizio web).
       * Un `OutputResult` oggetto che contiene i risultati dell&#39;operazione. (Questo valore di parametro è obbligatorio solo per le chiamate al servizio web).
-   * Creare un `BLOB` oggetto da inviare alla stampante ottenendo il valore del `OutputResult` oggetto &quot;s `generatedDoc` metodo. Questo metodo restituisce un `BLOB` oggetto che contiene i dati PostScript restituiti dal `generatePrintedOutput` metodo.
 
+   * Creare un `BLOB` oggetto da inviare alla stampante ottenendo il valore del `OutputResult` dell&#39;oggetto `generatedDoc` metodo. Questo metodo restituisce un `BLOB` oggetto che contiene i dati PostScript restituiti dal `generatePrintedOutput` metodo.
 
 1. Invia il flusso di stampa a una stampante di rete.
 
@@ -2052,7 +2047,6 @@ Crea regole di ricerca utilizzando l’API di output (Java):
    * Creare un `java.util.List` oggetto utilizzando un `java.util.ArrayList` costruttore.
    * Per ogni `Rule` oggetto creato, richiamare l&#39; `java.util.List` dell&#39;oggetto `add` e trasmettere il `Rule` oggetto.
 
-
 1. Impostare le opzioni di runtime di PDF.
 
    * Creare un `PDFOutputOptionsSpec` mediante il costruttore.
@@ -2141,7 +2135,6 @@ Crea regole di ricerca utilizzando l’API di output (servizio web):
 
    * Creare un `MyArrayOf_xsd_anyType` oggetto che memorizza le regole.
    * Assegna a ciascuno `Rule` oggetto a un elemento del `MyArrayOf_xsd_anyType` array. Richiama `MyArrayOf_xsd_anyType` dell&#39;oggetto `Add` metodo per ciascuno `Rule` oggetto.
-
 
 1. Imposta opzioni runtime di PDF
 

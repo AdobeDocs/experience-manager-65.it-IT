@@ -1,17 +1,15 @@
 ---
 title: Creazione e organizzazione delle pagine
 description: Questa sezione descrive come creare e gestire le pagine con AEM in modo da poter creare contenuti su di esse.
-uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 21%
+source-wordcount: '1906'
+ht-degree: 19%
 
 ---
 
@@ -323,7 +321,7 @@ Per spostare o rinominare una pagina:
 
 ### Blocco di una pagina   {#locking-a-page}
 
-È possibile [bloccare/sbloccare una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) da una console o quando si modifica una singola pagina. L’indicazione relativa al fatto che una pagina sia bloccata o meno è visualizzata in entrambe le posizioni.
+È possibile [bloccare/sbloccare una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) da una console o durante la modifica di una singola pagina. Le informazioni sulle pagine bloccate vengono visualizzate anche in entrambe le posizioni.
 
 ### Creazione di una nuova cartella {#creating-a-new-folder}
 

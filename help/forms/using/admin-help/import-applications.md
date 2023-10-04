@@ -1,16 +1,12 @@
 ---
 title: Importare e gestire le applicazioni
-seo-title: Import and manage applications
 description: Scopri come importare e gestire le applicazioni.
-seo-description: Learn how to import and manage applications.
-uuid: 7fba6c4e-1a3e-4a4b-9201-acf2ff66a9df
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -19,7 +15,7 @@ ht-degree: 0%
 
 # Importare e gestire le applicazioni{#import-and-manage-applications}
 
-Nelle forme AEM, un *applicazione* è un contenitore per l’archiviazione delle risorse necessarie per implementare una soluzione AEM forms. Esempi di risorse sono le progettazioni di moduli, i frammenti di moduli, le immagini, i processi, i file DDX, le guide dei moduli, le pagine di HTML e i file di SWF. Durante la fase di sviluppo di un progetto, gli utenti di Workbench possono distribuire le applicazioni direttamente dalla vista Applicazioni di Workbench. Una volta distribuite, queste applicazioni vengono visualizzate nella console di amministrazione, nella scheda Applicazioni della pagina Gestione applicazioni.
+Nelle forme AEM, un *applicazione* è un contenitore per l’archiviazione delle risorse necessarie per l’implementazione di una soluzione AEM forms. Esempi di risorse sono le progettazioni di moduli, i frammenti di moduli, le immagini, i processi, i file DDX, le guide dei moduli, le pagine di HTML e i file di SWF. Durante la fase di sviluppo di un progetto, gli utenti di Workbench possono distribuire le applicazioni direttamente dalla vista Applicazioni di Workbench. Una volta distribuite, queste applicazioni vengono visualizzate nella console di amministrazione, nella scheda Applicazioni della pagina Gestione applicazioni.
 
 Quando un’applicazione è completa e pronta per essere implementata su un server di produzione, l’utente di Workbench inserisce l’applicazione in un pacchetto *File di applicazione di moduli AEM* (.lca). L&#39;amministratore utilizza quindi la console di amministrazione per importare e distribuire il file dell&#39;applicazione utilizzando la scheda Applicazioni della pagina Gestione applicazioni.
 
@@ -81,7 +77,7 @@ Disdistribuire l&#39;applicazione prima di rimuoverla dal server.
 1. Selezionare la casella di controllo accanto all&#39;applicazione che si desidera rimuovere e fare clic su Rimuovi.
 1. Fare clic su OK nella finestra di dialogo di conferma visualizzata.
 
-## Importare la configurazione runtime di un’applicazione {#import-an-application-s-runtime-configuration}
+## Importare la configurazione runtime di un&#39;applicazione {#import-an-application-s-runtime-configuration}
 
 Se l&#39;amministratore dell&#39;applicazione ha esportato la configurazione di runtime di un&#39;applicazione, è possibile importarla nell&#39;applicazione distribuita. Puoi importarlo utilizzando la console di amministrazione o tramite la distribuzione LCA basata su script.
 
@@ -91,7 +87,7 @@ Se l&#39;amministratore dell&#39;applicazione ha esportato la configurazione di 
 1. Fare clic su Sfoglia e selezionare il file XML contenente la configurazione di runtime.
 1. Fai clic su Importa.
 
-## Esportare la configurazione runtime di un’applicazione {#export-an-application-s-runtime-configuration}
+## Esportare la configurazione runtime di un&#39;applicazione {#export-an-application-s-runtime-configuration}
 
 È possibile esportare le informazioni di configurazione runtime per le applicazioni distribuite.
 

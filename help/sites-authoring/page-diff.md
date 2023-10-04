@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 88%
+source-wordcount: '576'
+ht-degree: 86%
 
 ---
 
@@ -98,7 +98,7 @@ In alcune situazioni, il confronto delle differenze della pagina potrebbe non es
 
 >[!NOTE]
 >
->Le versioni non possono essere confrontate tra di loro. Solo la versione corrente può essere confrontata con altre versioni della pagina. La versione corrente è sempre la versione con le modifiche evidenziate.
+>Le versioni non possono essere confrontate tra loro. Solo la versione corrente può essere confrontata con altre versioni della pagina. La versione corrente è sempre la versione con le modifiche evidenziate.
 
 >[!NOTE]
 >

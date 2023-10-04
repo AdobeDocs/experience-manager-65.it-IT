@@ -2,10 +2,10 @@
 title: Creazione e organizzazione di pagine con AEM
 description: Come creare e gestire le pagine con AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 60%
+source-wordcount: '2523'
+ht-degree: 79%
 
 ---
 
@@ -25,7 +25,7 @@ Questa sezione descrive come creare e gestire le pagine con Adobe Experience Man
 
 ## Organizzazione del sito web {#organizing-your-website}
 
-In qualità di autore, dovrai organizzare il tuo sito web all’interno dell’AEM. Ciò comporta la creazione e la denominazione delle pagine di contenuto in modo che:
+In qualità di autore, dovrai organizzare il tuo sito web all’interno di AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
 
 * siano facilmente reperibili nell’ambiente di authoring;
 * i visitatori possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
@@ -88,13 +88,13 @@ Durante la creazione di una nuova pagina sono disponibili due campi chiave:
 * **[Nome](#name)**:
 
    * Viene utilizzato per generare l’URI.
-   * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome deriva dal titolo. Per ulteriori dettagli, consulta la seguente sezione sulle [restrizioni e best practice per i nomi delle pagine](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
+   * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome viene derivato dal titolo. Per ulteriori dettagli, consulta la seguente sezione sulle [restrizioni e best practice per i nomi delle pagine](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
 
 #### Restrizioni e best practice per i nomi delle pagine {#page-name-restrictions-and-best-practices}
 
 Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma sono correlati:
 
-* Durante la creazione di una pagina, solo il **Titolo** è obbligatorio. In caso negativo **Nome** viene fornito al momento della creazione della pagina, l’AEM genererà un nome a partire dai primi 64 caratteri del titolo (osservando la convalida stabilita di seguito). Vengono utilizzati solo i primi 64 caratteri, per rispettare la best practice sui nomi di pagina brevi.
+* Quando crei una pagina, l’unico campo obbligatorio è quello del **Titolo**. Se non viene fornito un **Nome** al momento della creazione della pagina, AEM ne genera uno dai primi 64 caratteri del titolo (rispettando le norme di convalida descritte di seguito). Vengono utilizzati solo i primi 64 caratteri, per rispettare la best practice sui nomi di pagina brevi.
 
 * Se un nome di una pagina è specificato manualmente dall’autore, il limite di 64 caratteri non è applicabile; tuttavia, potrebbero esserci altre limitazioni tecniche sulla lunghezza del nome della pagina.
 
@@ -139,15 +139,15 @@ Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [con
 >
 >È consigliabile evitare di utilizzare, come nome di pagina, codici di due lettere specificati dallo standard ISO-639-1, a meno che non si tratti dell’identificativo della lingua.
 >
->Consulta [Preparazione del contenuto per la traduzione](/help/sites-administering/tc-prep.md) per ulteriori informazioni.
+>Per ulteriori informazioni, consulta l’argomento relativo alla [preparazione dei contenuti per la traduzione](/help/sites-administering/tc-prep.md).
 
 ### Modelli {#templates}
 
-In AEM, un modello specifica un tipo di pagina specifico. Un modello verrà utilizzato come base per qualsiasi nuova pagina creata.
+In AEM, un modello specifica un tipo di pagina particolare. Un modello verrà utilizzato come base per qualsiasi nuova pagina creata.
 
-Il modello definisce la struttura di una pagina, incluse una miniatura e altre proprietà. Ad esempio, puoi avere modelli separati per pagine di prodotti, sitemap e informazioni di contatto. I modelli sono costituiti da [componenti](#components).
+Il modello definisce la struttura di una pagina, comprese una miniatura e altre proprietà. Ad esempio, puoi usare modelli distinti per pagine di prodotti, sitemap e informazioni di contatto. I modelli sono costituiti da [componenti](#components).
 
-L’AEM viene fornito con diversi modelli preconfigurati. I modelli disponibili dipendono dal singolo sito web. I campi chiave sono i seguenti:
+AEM viene fornito con diversi modelli preconfigurati. I modelli disponibili dipendono dal singolo sito web. I campi chiave sono i seguenti:
 
 * **Titolo**
 Il titolo visualizzato nella pagina web risultante.
@@ -172,7 +172,7 @@ I componenti sono gli elementi forniti da AEM che consentono di aggiungere speci
 * Video
 * E molti altri
 
-Dopo aver creato e aperto una pagina è possibile: [aggiungi contenuto utilizzando i componenti](/help/sites-authoring/editing-content.md#insertinganewparagraph), disponibili da [browser componenti](/help/sites-authoring/author-environment-tools.md#componentbrowser).
+Dopo aver creato e aperto una pagina puoi [aggiungervi il contenuto utilizzando i componenti](/help/sites-authoring/editing-content.md#insertinganewparagraph), disponibili nel [browser componenti](/help/sites-authoring/author-environment-tools.md#componentbrowser).
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
    * Usa le tre schede per specificare le [proprietà di pagina](/help/sites-authoring/editing-page-properties.md) da assegnare alla nuova pagina, quindi tocca o fai clic su **Crea** per creare la pagina.
 
-   * Utilizzare **Indietro** per tornare alla selezione del modello.
+   * Utilizza **Indietro** per tornare alla selezione del modello.
 
    I campi chiave sono:
 
@@ -212,16 +212,16 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
    * **Nome**:
 
-      * Viene utilizzato per generare l’URI. Se non viene specificato, il nome deriva dal titolo.
+      * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
       * Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
-      * Tu **impossibile inviare caratteri non validi** nel **Nome** campo. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
+      * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
 
    >[!NOTE]
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
 
-   Le informazioni minime necessarie per creare una nuova pagina sono **Titolo**.
+   Per creare una nuova pagina è necessario specificarne almeno il **Titolo**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -245,9 +245,9 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
 Dopo aver creato una pagina o essere passato a una pagina esistente (nella console), puoi aprirla per la modifica:
 
-1. Apri **Sites** console.
-1. Passa alla pagina che desideri modificare.
-1. Seleziona la pagina utilizzando:
+1. Apri la console **Sites**.
+1. Individua la pagina da modificare.
+1. Seleziona la pagina mediante:
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) e barra degli strumenti
@@ -266,13 +266,13 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 
 È possibile copiare una pagina e tutte le relative pagine secondarie in una nuova posizione:
 
-1. In **Sites** , naviga fino a individuare la pagina da copiare.
-1. Seleziona la pagina utilizzando:
+1. Nella console **Sites**, individua la pagina da copiare.
+1. Seleziona la pagina mediante:
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) e barra degli strumenti
 
-   E poi il **Copia** icona pagina:
+   E quindi l’icona **Copia** pagina:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
 
@@ -297,7 +297,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 
 >[!NOTE]
 >
->La ridenominazione di una pagina è inoltre soggetta [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nuovo nome della pagina.
+>La ridenominazione di una pagina è inoltre soggetta a [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nuovo nome della pagina.
 
 >[!NOTE]
 >
@@ -309,21 +309,21 @@ La procedura per spostare o rinominare una pagina è sostanzialmente la stessa e
 * Spostare la pagina senza rinominarla.
 * Spostare e rinominare allo stesso tempo.
 
-AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si riferiscono alla pagina da rinominare o spostare. Questa operazione può essere eseguita pagina per pagina per fornire la massima flessibilità.
+In AEM è disponibile una funzionalità che consente di aggiornare eventuali collegamenti interni che rimandano alla pagina da rinominare/spostare. Questa operazione può essere eseguita a livello di singola pagina, per assicurare la massima flessibilità.
 
-1. Spostarsi fino a individuare la pagina che si desidera spostare.
-1. Seleziona la pagina utilizzando:
+1. Individua la pagina da spostare.
+1. Seleziona la pagina mediante:
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) e barra degli strumenti
 
-   Quindi seleziona la **Sposta** icona pagina:
+   Quindi seleziona l’icona **Sposta** pagina:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
-   Verrà aperta la procedura guidata Sposta pagina.
+   Viene aperta la procedura guidata per lo spostamento delle pagine.
 
-1. Dalla sezione **Rinomina** fase della procedura guidata:
+1. Dal passaggio **Rinomina** della procedura guidata, puoi effettuare le seguenti operazioni:
 
    * Specifica il nome da assegnare alla pagina spostata, quindi tocca o fai clic su **Avanti**.
 
@@ -337,14 +337,14 @@ AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si r
    >
    >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
 
-1. Dalla sezione **Seleziona destinazione** fase della procedura guidata:
+1. Nel passaggio **Seleziona destinazione** della procedura guidata, puoi effettuare le seguenti operazioni:
 
-   * Utilizza il [vista a colonne](/help/sites-authoring/basic-handling.md#column-view) per passare alla nuova posizione della pagina:
+   * Utilizza la [vista a colonne](/help/sites-authoring/basic-handling.md#column-view) per accedere alla nuova posizione della pagina:
 
       * Seleziona la destinazione facendo clic sulla miniatura della destinazione.
       * Fai clic su **Avanti** per continuare.
 
-   * Utilizzare **Indietro** per tornare alla specifica del nome della pagina.
+   * Utilizza **Indietro** per specificare di nuovo il nome della pagina.
 
    >[!NOTE]
    >
@@ -366,7 +366,7 @@ AEM offre la funzionalità di aggiornare eventuali collegamenti interni che si r
 
    ![caop-09](assets/caop-09.png)
 
-1. Selezione **Sposta** completerà il processo e sposterà/rinominerà la pagina nel modo appropriato.
+1. Se selezioni **Sposta**, verrà completato il processo e la pagina verrà spostata/rinominata nel modo appropriato.
 
 >[!NOTE]
 >
@@ -404,7 +404,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 ### Eliminazione di una pagina {#deleting-a-page}
 
 1. Spostati fino a visualizzare la pagina da eliminare.
-1. Utilizzare [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) per selezionare la pagina richiesta, utilizza **Elimina** dalla barra degli strumenti:
+1. Utilizza la [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) per selezionare la pagina richiesta, quindi utilizza **Elimina** dalla barra degli strumenti:
 
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
@@ -414,7 +414,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 
 1. Una finestra di dialogo richiede conferma, utilizza:
 
-   * **Annulla** per interrompere l&#39;azione
+   * **Annulla** per interrompere l’azione
    * **Elimina** per confermare l’azione:
 
       * Se la pagina non ha riferimenti, verrà eliminata.
@@ -426,7 +426,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 
 ### Blocco di una pagina   {#locking-a-page}
 
-È possibile [bloccare/sbloccare una pagina](/help/sites-authoring/editing-content.md#locking-a-page) da una console o quando si modifica una singola pagina. L’indicazione relativa al fatto che una pagina sia bloccata o meno è visualizzata in entrambe le posizioni.
+È possibile [bloccare/sbloccare una pagina](/help/sites-authoring/editing-content.md#locking-a-page) da una console o durante la modifica di una singola pagina. Le informazioni sulle pagine bloccate vengono visualizzate anche in entrambe le posizioni.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 
@@ -436,7 +436,7 @@ Puoi creare cartelle per organizzare file e pagine.
 
 >[!NOTE]
 >
->Le cartelle sono inoltre soggette ai [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nome della nuova cartella.
+>Le cartelle sono inoltre soggette a [Convenzioni di denominazione delle pagine](#page-naming-conventions) quando si specifica il nome della nuova cartella.
 
 >[!CAUTION]
 >
@@ -445,8 +445,8 @@ Puoi creare cartelle per organizzare file e pagine.
 >* Le cartelle non sono disponibili per la selezione all’interno di una Live Copy.
 >
 
-1. Apri **Sites** e passare alla posizione desiderata.
-1. Per aprire l&#39;elenco delle opzioni, selezionare **Crea** dalla barra degli strumenti
+1. Apri la console **Sites** e passa alla posizione desiderata.
+1. Per aprire l’elenco delle opzioni, seleziona **Crea** dalla barra degli strumenti
 1. Seleziona **Cartella** per aprire la finestra di dialogo. Nella finestra puoi immettere il **Nome** e il **Titolo**:
 
    ![chlimage_1-119](assets/chlimage_1-119.png)

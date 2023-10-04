@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2853'
+source-wordcount: '2852'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ I principali aspetti del punteggio e dei distintivi sono:
 
 >[!CAUTION]
 >
->La struttura di implementazione visibile in CRXDE Lite è soggetta a modifiche una volta che l’interfaccia utente diventa disponibile.
+>La struttura di implementazione visibile in CRXDE Liti è soggetta a modifiche una volta che l’interfaccia utente diventa disponibile.
 
 ## Badge {#badges}
 
@@ -565,7 +565,7 @@ Se la funzione non funziona come previsto, assicurati che i dati siano stati imm
 
 È possibile provare rapidamente a assegnare punteggi e contrassegni utilizzando [Tutorial introduttivo](/help/communities/getting-started.md) (coinvolgere) sito:
 
-* Accedi a CRXDE Lite durante la creazione.
+* Accedi a CRXDE Liti durante la creazione.
 * Passa alla pagina base:
 
    * /content/sites/engagement/en/jcr:content
@@ -598,7 +598,7 @@ Se la funzione non funziona come previsto, assicurati che i dati siano stati imm
 
 Quindi, assicurati che i componenti forum e commenti consentano la visualizzazione dei badge:
 
-* Di nuovo utilizzando CRXDE Lite.
+* Di nuovo utilizzando CRXDE Liti.
 * Passa al componente forum
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`

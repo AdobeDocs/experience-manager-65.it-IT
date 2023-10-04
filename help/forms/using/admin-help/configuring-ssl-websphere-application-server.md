@@ -1,16 +1,12 @@
 ---
 title: Configurazione di SSL per l'Application Server WebSphere
-seo-title: Configuring SSL for WebSphere Application Server
 description: Scopri come configurare SSL per il server applicazioni WebSphere.
-seo-description: Learn how to configure SSL for WebSphere Application Server.
-uuid: f939a806-346e-41e0-b2c0-6d0ba83f8f6f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1225'
 ht-degree: 1%
@@ -30,21 +26,21 @@ Per abilitare SSL, WebSphere deve accedere a un account utente nel registro uten
 
 ### Creare un utente Linux o UNIX per WebSphere {#create-a-linux-or-unix-user-for-websphere}
 
-1. Accedi come utente root.
-1. Creare un utente immettendo il comando seguente in un prompt dei comandi:
+1. Accedi come utente principale.
+1. Crea un utente immettendo il comando seguente in un prompt dei comandi:
 
    * (Linux e Sun Solaris) `useradd`
    * (IBM AIX) `mkuser`
 
-1. Impostare la password del nuovo utente immettendo `passwd` al prompt dei comandi.
-1. (Linux e Solaris) Creare un file di password shadow immettendo `pwconv` (senza parametri) nel prompt dei comandi.
+1. Impostare il password del nuovo utente immettendo `passwd` il prompt dei comandi.
+1. (Linux e Solaris) Crea un file shadow password immettendo `pwconv` (senza parametri) nel prompt dei comandi.
 
    >[!NOTE]
    >
-   >(Linux e Solaris) Affinché il Registro di sistema del sistema operativo locale dell&#39;Application Server WebSphere funzioni correttamente, è necessario che esista un file di password shadow. Il nome del file della password shadow è in genere **/etc/shadow** e si basa sul file /etc/passwd. Se il file della password shadow non esiste, si verificherà un errore dopo l&#39;abilitazione della protezione globale e la configurazione del Registro di sistema come sistema operativo locale.
+   >(Linux e Solaris) Affinché il registro di sicurezza del sistema operativo locale di WebSphere Application Server funzioni, è necessario che esista un file shadow password. Il file shadow password è solitamente denominato **/etc/shadow** ed è basato sul file /etc/passwd. Se il file shadow password non esiste, si verifica un errore dopo l&#39;abilitazione della protezione globale e la configurazione del registro di utente come sistema operativo locale.
 
 1. Aprire il file di gruppo dalla directory /etc in un editor di testo.
-1. Aggiungere l&#39;utente creato nel passaggio 2 al `root` gruppo.
+1. Aggiungi al `root` gruppo il utente creato nel passaggio 2.
 1. Salva e chiudi il file 
 1. (UNIX con SSL abilitato) Avviare e arrestare WebSphere come utente root.
 
@@ -89,7 +85,7 @@ Per abilitare SSL, WebSphere deve accedere a un account utente nel registro uten
 1. Clic **Fine**.
 1. Riavviare il profilo WebSphere.
 
-   WebSphere inizierà a utilizzare il keystore e il truststore predefiniti.
+   WebSphere inizia a utilizzare il keystore e il truststore predefiniti.
 
 ## Abilita SSL (chiave personalizzata e truststore) {#enable-ssl-custom-key-and-truststore}
 
@@ -106,19 +102,19 @@ I TrustStore e i keystore possono essere creati utilizzando l&#39;utilità ikeym
 1. Clic **Certificato personale**.
 1. Se hai già aggiunto un keystore utilizzando ikeyman, verrà visualizzato il certificato. In caso contrario, devi aggiungere un nuovo certificato autofirmato eseguendo i seguenti passaggi:
 
-   1. Seleziona **Crea > Certificato autofirmato**.
-   1. Specifica i valori appropriati nel modulo del certificato. Accertati di mantenere Alias e nome comune come nome di dominio completo del computer.
-   1. Clic **Applica**.
+   1. Selezionare **Crea > Certificato** autofirmato.
+   1. Specificare i valori appropriati nel modulo del certificato. Assicurarsi di mantenere Alias e nome comune come nome di dominio completo della macchina.
+   1. Fare clic su **Applica**.
 
 1. Ripeti i passaggi da 2 a 10 per creare un truststore.
 
 ## Applica keystore personalizzato e truststore al server {#apply-custom-keystore-and-truststore-to-the-server}
 
-1. Nella console di amministrazione di WebSphere, selezionare **Sicurezza > Certificato SSL e gestione delle chiavi**.
-1. Clic **Gestisci configurazione di sicurezza endpoint**. Viene visualizzata la mappa topologica locale.
-1. In In entrata, seleziona l’elemento figlio diretto dei nodi.
+1. Nella console di amministrazione di WebSphere, selezionare **Sicurezza > gestione dei certificati SSL e delle chiavi**.
+1. Fare clic su **Gestisci configurazione** sicurezza endpoint. Viene visualizzata la mappa della topologia locale.
+1. In In entrata selezionare figlio diretto dei nodi.
 1. In Elementi correlati, selezionare **Configurazioni SSL**.
-1. Seleziona **NodeDefaultSSLSetting**.
+1. Selezionare **NodeDeafultSSLSetting**.
 1. Dall&#39;elenco a discesa nome truststore e nome keystore, selezionare il truststore personalizzato e il keystore creato.
 1. Clic **Applica**.
 1. Salva la configurazione principale.

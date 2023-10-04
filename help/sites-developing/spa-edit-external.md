@@ -2,7 +2,7 @@
 title: Modifica di un SPA esterno in Adobe Experience Manager
 description: Questo documento descrive i passaggi consigliati per caricare un SPA autonomo in un’istanza Adobe Experience Manager, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Modifica di un SPA esterno in Adobe Experience Manager {#editing-external-spa-within-aem}
 
-Quando si decide quale livello di integrazione si desidera avere tra l’SPA esterno e l’Adobe Experience Manager (AEM), spesso è necessario essere in grado di modificare e visualizzare l’SPA in AEM.
+Quando si decide quale livello di integrazione si desidera avere tra l’SPA esterno e il Adobe Experience Manager (AEM), spesso è necessario essere in grado di modificare e visualizzare l’SPA all’interno dell’AEM.
 
 ## Panoramica {#overview}
 
@@ -209,7 +209,7 @@ Il `AEMText` Il componente è ora disponibile per l’authoring su AEM.
 
 #### Verifica contenuto pagina in AEM {#verify-page-content}
 
-Per verificare che la pagina possa essere modificata, segui gli stessi passaggi descritti nella sezione [Verifica della modifica del contenuto di testo su AEM](#verify-text-edit).
+Per verificare che la pagina possa essere modificata, segui gli stessi passaggi descritti nella sezione [Verificare la modifica del contenuto di testo su AEM](#verify-text-edit).
 
 ![Modifica di una pagina in AEM](assets/external-spa-edit-page.png)
 
@@ -237,7 +237,7 @@ Il `TestPage` dopo l’aggiunta del componente virtuale, il componente si presen
 >
 >Assicurati che `AEMText` il componente ha il suo `resourceType` nella configurazione per abilitare questa funzione.
 
-Ora puoi implementare le modifiche all’AEM seguendo i passaggi descritti nella sezione [Verifica della modifica del contenuto di testo su AEM](#verify-text-edit). Viene visualizzato un segnaposto per il file attualmente non esistente `text_20` nodo.
+Ora puoi implementare le modifiche all’AEM seguendo i passaggi descritti nella sezione [Verificare la modifica del contenuto di testo su AEM](#verify-text-edit). Viene visualizzato un segnaposto per il file attualmente non esistente `text_20` nodo.
 
 ![Nodo text_20 in AEM](assets/external-spa-text20-aem.png)
 
@@ -343,7 +343,7 @@ Per abilitare la modifica all’interno dell’AEM per questo esempio di SPA, so
 
 1. Aggiungere helper all’interno del routing SPA.
 
-   * La nuova pagina creata non eseguirà ancora il rendering del contenuto previsto in AEM. Questo perché il router prevede un percorso di `/test` considerando che il percorso attivo dell&#39;AEM è `/wknd-spa-react/us/en/test`. Per adattarsi alla porzione dell’URL specifica per l’AEM, è necessario aggiungere degli helper sul lato SPA.
+   * La pagina appena creata non eseguirà ancora il rendering del contenuto previsto in AEM. Questo perché il router prevede un percorso di `/test` considerando che il percorso attivo dell&#39;AEM è `/wknd-spa-react/us/en/test`. Per adattarsi alla porzione dell’URL specifica per l’AEM, è necessario aggiungere degli helper sul lato SPA.
 
    ![Helper di routing](assets/external-spa-router-helper.png)
 

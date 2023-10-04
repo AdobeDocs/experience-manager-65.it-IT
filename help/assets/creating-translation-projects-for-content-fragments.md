@@ -1,20 +1,16 @@
 ---
 title: Creazione di progetti di traduzione per frammenti di contenuto
-seo-title: Creating Translation Projects for Content Fragments
 description: Scopri come tradurre i frammenti di contenuto.
-seo-description: Learn how to translate content fragments.
-uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -60,7 +56,7 @@ Se il frammento di contenuto include una raccolta, le risorse all’interno dell
 
 Per tradurre frammenti di contenuto che includono file multimediali diversi, modifica innanzitutto il framework di traduzione predefinito per abilitare la traduzione delle risorse e delle raccolte in linea associate ai frammenti di contenuto.
 
-1. Tocca o fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti > Implementazione > Cloud Services]**.
+1. Tocca o fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti > Implementazione > Cloud Service]**.
 1. Individua **[!UICONTROL Integrazione traduzione]** in **[!UICONTROL Adobe Marketing Cloud]**, quindi tocca o fai clic su **[!UICONTROL Mostra configurazioni]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

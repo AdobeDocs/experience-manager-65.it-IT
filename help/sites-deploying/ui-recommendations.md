@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Funzionalità per aggregare informazioni sul visitatore e utilizzarlo per vari s
 
 Negli ultimi anni Adobe ha aggiornato tutte le soluzioni Adobe Experience Cloud con un’interfaccia utente unificata. Gli utenti delle soluzioni di Experience Cloud godono di un’esperienza coerente con i pattern comuni su come utilizzare e utilizzare le applicazioni. Con ogni versione, Adobe ha perfezionato la propria interfaccia utente in base al feedback ricevuto dai clienti che lavorano sulle varie soluzioni.
 
-L’interfaccia utente originale per Adobe Experience Manager (precedentemente nota come CQ5), introdotta nel 2008 e utilizzata dai clienti che eseguono le versioni da 5.0 a 5.6.1, è presente in AEM 6.5. In questo modo i clienti possono eseguire l’aggiornamento alla versione 6.5 e beneficiare di una piattaforma aggiornata con nuove funzionalità, continuando a utilizzare la stessa interfaccia utente.
+L’interfaccia utente originale per Adobe Experience Manager (precedentemente nota come CQ5), introdotta nel 2008 e utilizzata dai clienti che eseguono le versioni 5.0-5.6.1, è presente in AEM 6.5. In questo modo i clienti possono eseguire l’aggiornamento alla versione 6.5 e beneficiare di una piattaforma aggiornata con nuove funzionalità, continuando a utilizzare la stessa interfaccia utente.
 
 L’Adobe consiglia ai clienti di pianificare il passaggio alla nuova interfaccia utente nel 2018/19. Questa operazione può essere eseguita durante l’aggiornamento alla versione 6.5 oppure in progetti separati dopo l’aggiornamento, che includerebbero le modifiche necessarie alle finestre di dialogo delle personalizzazioni e dei componenti.
 
@@ -56,7 +56,7 @@ L’interfaccia classica è stata rimossa con AEM 6.4 e Adobe non prevede di app
 
 ### Regole e Recommendations {#rules-and-recommendations}
 
-Di seguito è riportato un elenco di consigli di Gestione prodotti per Adobe Experience Manager 6.5:
+Di seguito è riportato un elenco di consigli di Product Management per Adobe Experience Manager 6.5:
 
 <table>
  <tbody>
@@ -77,7 +77,7 @@ Di seguito è riportato un elenco di consigli di Gestione prodotti per Adobe Exp
      <li>Configura l’azione "Modifica pagina" per aprire l’Editor pagina dell’interfaccia utente classica. Consulta <a href="#selecting-your-ui">Selezione dell’interfaccia utente</a>.</li>
     </ol> <p>Quindi, in una seconda fase:</p>
     <ol>
-     <li>Aggiorna le finestre di dialogo dei componenti per utilizzare il formato della finestra di dialogo Coral 3. L’Adobe consiglia di utilizzare il <a href="/help/sites-developing/modernization-tools.md">Strumenti di modernizzazione AEM</a> per aggiornare i componenti.</li>
+     <li>Aggiorna le finestre di dialogo dei componenti per utilizzare il formato della finestra di dialogo Coral 3. L’Adobe consiglia di utilizzare <a href="/help/sites-developing/modernization-tools.md">Strumenti di modernizzazione AEM</a> per aggiornare i componenti.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -89,7 +89,7 @@ Di seguito è riportato un elenco di consigli di Gestione prodotti per Adobe Exp
      <li>Configura l’azione "Modifica pagina" per aprire l’Editor pagina dell’interfaccia utente classica. Consulta <a href="#selecting-your-ui">Selezione dell’interfaccia utente</a>.</li>
     </ol> <p>Quindi, in una seconda fase:</p>
     <ol>
-     <li>Aggiorna le finestre di dialogo dei componenti per utilizzare il formato della finestra di dialogo Coral 3. L’Adobe consiglia di utilizzare il <a href="/help/sites-developing/modernization-tools.md">Strumenti di modernizzazione AEM</a> per aggiornare i componenti.</li>
+     <li>Aggiorna le finestre di dialogo dei componenti per utilizzare il formato della finestra di dialogo Coral 3. L’Adobe consiglia di utilizzare <a href="/help/sites-developing/modernization-tools.md">Strumenti di modernizzazione AEM</a> per aggiornare i componenti.</li>
      <li>Configura ContextHub (il sostituto del ClientContext) e aggiorna i modelli di pagina per utilizzare ContextHub. ContextHub dispone di una modalità di compatibilità che consente di caricare archivi di ClientContext personalizzati.</li>
     </ol> </td>
   </tr>

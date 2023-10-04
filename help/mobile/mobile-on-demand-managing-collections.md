@@ -1,16 +1,12 @@
 ---
 title: Gestione delle raccolte
-seo-title: Managing Collections
 description: Le raccolte rappresentano un bucket ben definito pieno di contenuti quali articoli o banner adatti al tema della copertina. Per ulteriori informazioni, segui questa pagina.
-seo-description: Collections represent a well defined bucket filled with content such as articles or banners that suits the cover's theme. Follow this page to learn more.
-uuid: 1d2e9769-d2cc-4d43-a428-e962a51eb5d0
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 1%
@@ -115,7 +111,7 @@ Flusso di lavoro generale per eliminare una raccolta:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
 1. Seleziona l’articolo da eliminare nel **Gestisci raccolte** affiancare.
-1. Assicurati che sia selezionato nell’elenco (seleziona gli altri da eliminare in base alle esigenze).
+1. Assicurati che sia selezionato nell’elenco, (seleziona gli altri da eliminare in base alle esigenze).
 1. Clic **Elimina** dalla barra delle azioni.
 1. Seleziona se desideri eliminare dall’AEM e da Mobile On-Demand.
 1. Fai clic su **Elimina**.

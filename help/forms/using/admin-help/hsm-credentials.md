@@ -1,16 +1,12 @@
 ---
 title: Gestione delle credenziali HSM
-seo-title: Managing HSM credentials
 description: Scopri come gestire le credenziali HSM.
-seo-description: Learn how to manage HSM credentials.
-uuid: 30ddcd4a-f771-44d5-bdef-4826adcd0c44
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -33,7 +29,7 @@ Le firme digitali dei moduli AEM possono utilizzare le credenziali memorizzate s
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali HSM, quindi fai clic su Aggiungi.
 1. Nella casella Nome profilo digitare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni di Firma digitale, ad esempio l&#39;operazione Firma campo.
-1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Ad esempio, `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
+1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Esempio: `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
 1. Fare clic su Verifica connettività HSM. Se i moduli AEM sono in grado di connettersi al dispositivo HSM, viene visualizzato un messaggio che informa che il dispositivo HSM è disponibile. Fai clic su Avanti.
 1. Utilizzare il Nome token, l&#39;ID slot o l&#39;Indice elenco slot per identificare la posizione in cui sono memorizzate le credenziali nell&#39;HSM.
 
@@ -48,7 +44,7 @@ Le firme digitali dei moduli AEM possono utilizzare le credenziali memorizzate s
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali HSM, quindi fai clic su Aggiungi.
 1. Nella casella Nome profilo digitare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni di Firma digitale, ad esempio l&#39;operazione Firma campo.
-1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Ad esempio, `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
+1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Esempio: `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
 1. Selezionare la casella di controllo Creazione profilo offline. Fai clic su Avanti.
 1. Nell&#39;elenco Periferiche HSM selezionare il produttore della periferica HSM in cui sono memorizzate le credenziali.
 1. Nell&#39;elenco Tipo slot (Slot Type), selezionate ID slot (Slot Id), Indice slot (Slot Index) o Nome token (Token Name) e specificate un valore nella casella Informazioni slot (Slot Info). I moduli AEM utilizzano queste impostazioni per determinare dove vengono memorizzate le credenziali nell&#39;HSM.
@@ -56,7 +52,7 @@ Le firme digitali dei moduli AEM possono utilizzare le credenziali memorizzate s
    * **Nome token:** Corrisponde al nome di una partizione (ad esempio, HSMPART1).
    * **ID slot:** L&#39;ID slot è un numero intero che corrisponde allo slot, che a sua volta corrisponde a una partizione. Ad esempio, il client (server Forms) è stato registrato prima con la partizione HSMPART1. Questo mappa lo slot 1 alla partizione HSMPART1 per questo client. Poiché HSMPART1 è la prima partizione registrata, l&#39;ID dello slot è 1 e le informazioni sullo slot vengono impostate su 1.
 
-      L&#39;ID dello slot viene impostato client per client. Se si registra un secondo computer in una partizione diversa (ad esempio, HSMPART2 sullo stesso dispositivo HSM), lo slot 1 verrà associato alla partizione HSMPART2 per tale client.
+     L&#39;ID dello slot viene impostato client per client. Se si registra un secondo computer in una partizione diversa (ad esempio, HSMPART2 sullo stesso dispositivo HSM), lo slot 1 verrà associato alla partizione HSMPART2 per tale client.
 
    * **Indice slot:** Se selezionate Indice slot (Slot Index), impostate le informazioni sullo slot su un numero intero corrispondente allo slot. Si tratta di un indice basato su 0, il che significa che se il client viene registrato prima con la partizione HSMPART1, lo slot 1 viene mappato a HSMPART1 per questo client. Poiché HSMPART1 è la prima partizione registrata, l&#39;indice di slot è 0.
 

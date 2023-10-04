@@ -1,14 +1,12 @@
 ---
 title: Integrazione di AEM 6.5 con Adobe Campaign Classic
 description: Scopri come integrare AEM 6.5 con Adobe Campaign Classic
-uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 67%
@@ -154,7 +152,7 @@ AEM adesso può comunicare con Adobe Campaign.
 >
 >Assicurati che il server di Adobe Campaign sia raggiungibile tramite Internet. L&#39;AEM non può accedere alle reti private.
 
-## Configurare la replica nell’istanza AEM Publish {#replication}
+## Configurare la replica nell’istanza di pubblicazione AEM {#replication}
 
 Il contenuto della campagna viene creato dagli autori di contenuti nell’istanza di authoring AEM. In genere questa istanza è disponibile solo internamente all’interno dell’organizzazione. Affinché contenuti come immagini e risorse siano accessibili ai destinatari della campagna, devi pubblicare tali contenuti.
 
@@ -190,7 +188,7 @@ Hai configurato la replica nell’istanza di pubblicazione dell’AEM in modo ch
 
 1. Accedi all’istanza di authoring di AEM come amministratore.
 1. Dalla barra laterale di navigazione globale, seleziona **Strumenti** > **Operazioni** > **Console web** > **Configurazione OSGi** e cerca **Day CQ link Externalizer**.
-1. Per impostazione predefinita, l’ultima voce nella **Domini** è destinato all’istanza Publish. Modifica l’URL dal valore predefinito `http://localhost:4503` nell’istanza Publish disponibile al pubblico.
+1. Per impostazione predefinita, l’ultima voce nella **Domini** è destinato all’istanza Publish. Modifica l’URL dal valore predefinito `http://localhost:4503` nell’istanza Publish pubblicamente disponibile.
 
    ![Configurazione di Externalizer](assets/acc-externalizer-config.png)
 

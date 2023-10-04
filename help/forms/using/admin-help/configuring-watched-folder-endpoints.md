@@ -1,16 +1,12 @@
 ---
 title: Configurazione degli endpoint della cartella controllata
-seo-title: Configuring watched folder endpoints
 description: Scopri come configurare gli endpoint per cartelle controllate.
-seo-description: Learn how to configure watched folder endpoints.
-uuid: 01fb5ff8-2071-44bd-9241-7d5d41a5b26e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '7163'
 ht-degree: 0%
@@ -35,7 +31,7 @@ Dopo aver configurato il servizio Cartelle controllate, aggiungi un endpoint per
 Puoi creare una cartella controllata nei due modi seguenti:
 
 * Quando si configurano le impostazioni per un endpoint di cartella controllata, digitare il percorso completo della directory padre nella casella Percorso e aggiungere il nome della cartella controllata da creare, come illustrato nell&#39;esempio seguente:
-   `  C:\MyPDFs\MyWatchedFolder`Poiché la cartella MyWatchedFolder non esiste già, i moduli AEM tentano di crearla in tale posizione.
+  `  C:\MyPDFs\MyWatchedFolder`Poiché la cartella MyWatchedFolder non esiste già, i moduli AEM tentano di crearla in tale posizione.
 
 * Creare una cartella nel file system prima di configurare un endpoint di cartella controllata, quindi digitare il percorso completo nella casella Percorso.
 
@@ -58,7 +54,7 @@ Per un endpoint di cartella controllata, gli utenti possono richiamare copiando 
 
 Per gli endpoint della cartella controllata, se il processo richiede un solo file di input, l’utente può copiare tale file nella directory principale della cartella controllata.
 
-Se il processo contiene più di un file di input, l&#39;utente deve creare una cartella al di fuori della gerarchia delle cartelle controllate che contenga tutti i file richiesti. Questa nuova cartella deve includere i file di input (e facoltativamente un file DDX se richiesto dal processo). Una volta creata la cartella dei processi, l’utente la copia nella cartella di input della cartella controllata.
+Se il processo contiene più di un file di input, l&#39;utente deve creare una cartella al di fuori della gerarchia delle cartelle controllate che contenga tutti i file richiesti. Questa nuova cartella deve includere i file di input (e facoltativamente un file DDX se richiesto dal processo). Una volta creata la cartella dei processi, l&#39;utente la copia nella cartella di input della cartella controllata.
 
 >[!NOTE]
 >
@@ -271,7 +267,7 @@ Le mappature dei parametri di output possono inoltre specificare pattern aggiunt
 * %F = Nome File Di Origine
 * %E = Estensione Nome File Di Origine
 
-Se il pattern di mappatura dei parametri di output termina con &quot;File.separator&quot;, che è il separatore di percorso, viene creata una cartella e il contenuto viene copiato in tale cartella. Se il modello non termina con &quot;File.separator&quot;, il contenuto (file di risultati o cartella) viene creato con tale nome. Per ulteriori informazioni sulle mappature dei parametri di output, consulta [Suggerimenti per le cartelle controllate](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+Se il pattern di mappatura dei parametri di output termina con &quot;File.separator&quot; (che è il separatore di percorso), viene creata una cartella e il contenuto viene copiato in tale cartella. Se il modello non termina con &quot;File.separator&quot;, il contenuto (file di risultati o cartella) viene creato con tale nome. Per ulteriori informazioni sulle mappature dei parametri di output, consulta [Suggerimenti per le cartelle controllate](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## Informazioni sulla limitazione {#about-throttling}
 
@@ -352,6 +348,7 @@ Quando la cartella controllata non è in grado di elaborare i file di origine ne
 
    * In Applicazioni e servizi, modificare il parametro Include File Pattern per l&#39;endpoint della cartella controllata in modo che non corrisponda a nessuno dei nuovi file di input (ad esempio, immettere `NOMATCH`).
    * Sospendere il processo di creazione dei nuovi file di input.
+
    Attendere che i moduli AEM vengano ripristinati ed elaborati tutti i file. La maggior parte dei file deve essere recuperata ed eventuali nuovi file di input elaborati correttamente. Il tempo di attesa per il recupero e l&#39;elaborazione dei file da parte della cartella controllata dipende dalla durata dell&#39;operazione da richiamare e dal numero di file da recuperare.
 
 1. Determinare quali file non possono essere elaborati. Se hai atteso un periodo di tempo adeguato e hai completato il passaggio precedente e nella cartella dell’area di visualizzazione sono ancora presenti file non elaborati, passa al passaggio successivo.
@@ -383,7 +380,7 @@ Di seguito sono riportati alcuni suggerimenti utili per la configurazione dell�
 * Utilizza la durata di eliminazione per mantenere pulita la cartella dei risultati. La cartella controllata pulisce tutti i file più vecchi della durata indicata nella durata di eliminazione. La durata è in giorni.
 * Quando si aggiunge un endpoint di cartella controllata, dopo aver selezionato il nome dell’operazione, viene popolato il mapping dei parametri di input. Per ogni input dell&#39;operazione, viene generato un campo di mappatura dei parametri di input. Di seguito sono riportati alcuni esempi di mappature dei parametri di input:
 
-   * Per `com.adobe.idp.Document` input: se l&#39;operazione di servizio ha un input di tipo `Document`, l’amministratore può specificare il tipo di mappatura come `Variable`. Watched Folder raccoglierà l’input dalla cartella di input della cartella controllata in base al pattern di file specificato per il parametro di input. Se l&#39;amministratore specifica `*.pdf` come parametro, ogni file con estensione .pdf verrà raccolto, convertito in `com.adobe.idp.Document`e il servizio richiamato.
+   * Per `com.adobe.idp.Document` input: se l&#39;operazione di servizio ha un input di tipo `Document`, l’amministratore può specificare il tipo di mappatura come `Variable`. La cartella controllata raccoglierà l&#39;input dalla cartella di input della cartella controllata in base al modello di file specificato per il parametro di input. Se l&#39;amministratore specifica `*.pdf` come parametro, ogni file con estensione .pdf verrà raccolto, convertito in `com.adobe.idp.Document`e il servizio richiamato.
    * Per `java.util.Map` input: se l&#39;operazione di servizio ha un input di tipo `Map`, l’amministratore può specificare il tipo di mappatura come `Variable` e inserisci un valore di mappatura con un pattern come `*.pdf`. Ad esempio, un servizio richiede una mappa di due `com.adobe.idp.Document` oggetti che rappresentano due file nella cartella di input, ad esempio 1.pdf e 2.pdf. Nella cartella controllata verrà creata una mappa con la chiave come nome del file e il valore come `com.adobe.idp.Document`.
    * Per `java.util.List` input: se l&#39;operazione di servizio ha un input di tipo List, l&#39;amministratore può specificare il tipo di mapping come `Variable` e inserisci un valore di mappatura con un pattern come `*.pdf`. Quando i file PDF vengono rilasciati nella cartella di input, la cartella controllata crea un elenco di `com.adobe.idp.Document` oggetti che rappresentano questi file e richiamano il servizio di destinazione.
    * Per `java.lang.String`: l’amministratore ha due opzioni. Innanzitutto, l’amministratore può specificare il tipo di mappatura come `Literal` e inserisci un valore di mappatura come stringa, ad esempio `hello.` La cartella controllata richiamerà il servizio con la stringa `hello`. In secondo luogo, l’amministratore può specificare il tipo di mappatura come `Variable` e inserisci un valore di mappatura con un pattern come `*.txt`. In quest’ultimo caso, i file con estensione .txt verranno letti come un documento forzato come una stringa per richiamare il servizio.
@@ -400,12 +397,12 @@ Di seguito sono riportati alcuni suggerimenti utili per la configurazione dell�
       1. Specificate un pattern per Escludi pattern file, ad esempio temp&amp;ast;.ps.
       1. Copia i file che iniziano con temp (ad esempio, temp1.ps) nella cartella controllata.
       1. Dopo aver copiato completamente il file nella cartella controllata, rinominare il file in modo che corrisponda al pattern specificato per Includi pattern file. La cartella controllata sposta quindi il file completato nell’area di visualizzazione.
+
    * Soluzione alternativa 2
 
-      Se si conosce il tempo massimo necessario per copiare i file in una cartella controllata, specificare il tempo di attesa in secondi. Watched Folder attende quindi il periodo di tempo specificato prima di spostare il file nell’area di visualizzazione.
+     Se si conosce il tempo massimo necessario per copiare i file in una cartella controllata, specificare il tempo di attesa in secondi. Watched Folder attende quindi il periodo di tempo specificato prima di spostare il file nell’area di visualizzazione.
 
-      Questo non è un problema per i file su Windows perché Windows blocca un file quando un thread sta scrivendo. Tuttavia, si tratta di un problema per le cartelle su Windows. Per le cartelle, è necessario seguire i passaggi descritti in Soluzione 1.
-
+     Questo non è un problema per i file su Windows perché Windows blocca un file quando un thread sta scrivendo. Tuttavia, si tratta di un problema per le cartelle su Windows. Per le cartelle, è necessario seguire i passaggi descritti in Soluzione 1.
 
 * Se l&#39;attributo dell&#39;endpoint Mantieni nome cartella per la cartella controllata è impostato su un percorso di directory null, la directory di gestione temporanea non viene eliminata come dovrebbe. La directory contiene ancora il file elaborato e la cartella temporanea.
 

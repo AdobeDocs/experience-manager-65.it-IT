@@ -1,17 +1,13 @@
 ---
 title: Richiamare AEM Forms tramite servizi Web
-seo-title: Invoking AEM Forms using Web Services
 description: Richiama i processi AEM Forms utilizzando i servizi web con supporto completo per la generazione WSDL.
-seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
-uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '9901'
 ht-degree: 0%
@@ -1231,7 +1227,7 @@ Un’applicazione client può recuperare l’asserzione da qualsiasi API di AEM 
 * Autenticazione dell’utente tramite uno dei metodi di autenticazione esposti dall’API AuthenticationManager. In genere si utilizzano il nome utente e la password, ma è anche possibile utilizzare l’autenticazione del certificato.
 * Utilizzo di `AuthenticationManager.getAuthResultOnBehalfOfUser` metodo. Questo metodo consente a un’applicazione client di ottenere un `AuthResult` per qualsiasi utente di AEM forms.
 
-un utente AEM forms può essere autenticato utilizzando un token SAML ottenuto. Questa asserzione SAML (frammento xml) può essere inviata come parte dell&#39;intestazione WS-Security con la chiamata al servizio Web per l&#39;autenticazione utente. In genere, un&#39;applicazione client ha autenticato un utente ma non ha memorizzato le credenziali utente. (Oppure l&#39;utente ha effettuato l&#39;accesso al client tramite un meccanismo diverso dall&#39;utilizzo di un nome utente e di una password.) In questa situazione, l’applicazione client deve richiamare AEM Forms e rappresentare un utente specifico che è autorizzato a richiamare AEM Forms.
+Un utente AEM forms può essere autenticato utilizzando un token SAML ottenuto. Questa asserzione SAML (frammento xml) può essere inviata come parte dell&#39;intestazione WS-Security con la chiamata al servizio Web per l&#39;autenticazione utente. In genere, un&#39;applicazione client ha autenticato un utente ma non ha memorizzato le credenziali utente. (Oppure l&#39;utente ha effettuato l&#39;accesso al client tramite un meccanismo diverso dall&#39;utilizzo di un nome utente e di una password.) In questa situazione, l’applicazione client deve richiamare AEM Forms e rappresentare un utente specifico che è autorizzato a richiamare AEM Forms.
 
 Per rappresentare un utente specifico, richiama `AuthenticationManager.getAuthResultOnBehalfOfUser` metodo che utilizza un servizio web. Questo metodo restituisce un `AuthResult` che contiene l’asserzione SAML per tale utente.
 

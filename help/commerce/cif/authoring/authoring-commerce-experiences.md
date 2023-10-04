@@ -2,9 +2,9 @@
 title: Authoring di esperienze Commerce
 description: Esperienze di lavoro e commerce
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ I selettori di prodotti e categorie sono finestre di dialogo modali dell’inter
 
 ### Selettore prodotti {#product-picker}
 
-Questo selettore consente di sfogliare la struttura del catalogo o di eseguire ricerche full-text per trovare il prodotto. I prodotti con variante offrono un’icona di cartella nella colonna &quot;Tipo&quot;. Fai clic sull’icona della cartella per aprire le varianti del prodotto selezionato.
+Questo selettore può offrire una navigazione nella struttura del catalogo o una ricerca full-text per trovare il prodotto. I prodotti con variante offrono un’icona di cartella nella colonna &quot;Tipo&quot;. Fai clic sull’icona della cartella per aprire le varianti del prodotto selezionato.
 
 ![Selettore prodotti](/help/commerce/cif/assets/authoring/product-picker.png)
 
@@ -33,13 +33,13 @@ Facendo clic sulla categoria principale, l’autore ritorna al livello del prodo
 
 ![Componente teaser senza selezione](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-La finestra di dialogo per la configurazione di questo componente richiede un prodotto. CIF utilizza lo SKU come identificatore del prodotto. Gli autori possono immettere manualmente lo SKU oppure fare clic sull’icona della cartella per aprire il selettore prodotti. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome del prodotto selezionato
+La finestra di dialogo per la configurazione di questo componente richiede un prodotto. L’CIF utilizza lo SKU come identificatore del prodotto. Gli autori possono immettere manualmente lo SKU oppure fare clic sull’icona della cartella per aprire il selettore prodotti. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome del prodotto selezionato
 
 ![Componente teaser con selezione](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
 ### Selettore categorie {#category-picker}
 
-Questo selettore consente di sfogliare la struttura del catalogo per trovare la categoria.
+Questo selettore può offrire una navigazione nella struttura del catalogo per trovare la categoria.
 
 ![Selettore categorie](/help/commerce/cif/assets/authoring/category-picker.png)
 
@@ -47,7 +47,7 @@ Questo selettore consente di sfogliare la struttura del catalogo per trovare la 
 
 ![Componente Carosello senza selezione](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-La finestra di dialogo per configurazione di questo componente richiede le categorie 1: n. CIF utilizza l’UID/ID come identificatore della categoria. Gli autori possono immettere manualmente l’UID oppure fare clic sull’icona della cartella per aprire il selettore delle categorie. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome della categoria selezionata.
+La finestra di dialogo per configurazione di questo componente richiede le categorie 1: n. L’CIF utilizza l’UID/ID come identificatore della categoria. Gli autori possono immettere manualmente l’UID oppure fare clic sull’icona della cartella per aprire il selettore delle categorie. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome della categoria selezionata.
 
 ![Componente Carosello con selezione](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
@@ -65,7 +65,7 @@ Analogamente alle risorse, i prodotti possono essere aggiunti a una pagina (crea
 
 ### Aggiunta di collegamenti nei campi di testo mediante l’editor Rich Text {#rte}
 
-Le pagine del catalogo dei prodotti CIF sono pagine virtuali sottoposte a rendering immediato. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine AEM. CIF aggiunge una nuova azione &quot;Collegamenti commerce&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
+Le pagine del catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering immediato. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine AEM. L’CIF aggiunge una nuova azione &quot;Collegamenti commerce&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 

@@ -1,19 +1,15 @@
 ---
 title: Protezione di documenti con criteri
-seo-title: Protecting Documents with Policies
 description: Utilizza il servizio Document Security per applicare dinamicamente le impostazioni di riservatezza ai documenti di Adobe PDF e mantenere il controllo su di essi. Il servizio Document Security consente inoltre agli utenti di mantenere il controllo sul modo in cui i destinatari utilizzano il documento PDF protetto tramite policy.
-seo-description: Use the Document Security service to dynamically apply confidentiality settings to Adobe PDF documents and to maintain control over the documents. The Document Security service also enables the users to maintain control over how recipients use the policy-protected PDF document.
-uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '15514'
+source-wordcount: '15513'
 ht-degree: 0%
 
 ---
@@ -143,7 +139,7 @@ Per creare un criterio, effettuare le seguenti operazioni:
 
 1. Includi file di progetto.
 1. Crea un oggetto API client di Document Security.
-1. Imposta gli attributi del criterio.
+1. Impostare gli attributi del criterio.
 1. Crea una voce criterio.
 1. Registra il criterio.
 
@@ -226,20 +222,20 @@ Crea una policy utilizzando Document Security API (Java):
    * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
    * Creare un `DocumentSecurityClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
 
-1. Imposta gli attributi del criterio.
+1. Impostare gli attributi del criterio.
 
    * Creare un `Policy` oggetto richiamando il `InfomodelObjectFactory` statico dell&#39;oggetto `createPolicy` metodo. Questo metodo restituisce un `Policy` oggetto.
-   * Impostare l’attributo name del criterio richiamando `Policy` dell&#39;oggetto `setName` e passando un valore stringa che specifica il nome del criterio.
+   * Impostare l&#39;attributo name del criterio richiamando `Policy` dell&#39;oggetto `setName` e passando un valore stringa che specifica il nome del criterio.
    * Impostare la descrizione del criterio richiamando `Policy` dell&#39;oggetto `setDescription` e passando un valore stringa che specifica la descrizione del criterio.
-   * Impostare il set di criteri a cui appartiene il nuovo criterio richiamando `Policy` dell&#39;oggetto `setPolicySetName` e passando un valore stringa che specifica il nome del set di criteri. (È possibile specificare `null` per questo valore di parametro che determina l’aggiunta del criterio a *I Miei Criteri* set di criteri.)
-   * Crea il periodo di validità del criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createValidityPeriod` metodo. Questo metodo restituisce un `ValidityPeriod` oggetto.
+   * Specificare il set di criteri a cui appartiene il nuovo criterio richiamando `Policy` dell&#39;oggetto `setPolicySetName` e passando un valore stringa che specifica il nome del set di criteri. (È possibile specificare `null` per questo valore di parametro che determina l’aggiunta del criterio a *I Miei Criteri* set di criteri.)
+   * Creare il periodo di validità del criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createValidityPeriod` metodo. Questo metodo restituisce un `ValidityPeriod` oggetto.
    * Impostare il numero di giorni per i quali un documento protetto tramite policy è accessibile richiamando `ValidityPeriod` dell&#39;oggetto `setRelativeExpirationDays` e viene passato un valore intero che specifica il numero di giorni.
-   * Imposta il periodo di validità del criterio richiamando `Policy` dell&#39;oggetto `setValidityPeriod` e passando il `ValidityPeriod` oggetto.
+   * Impostare il periodo di validità del criterio richiamando `Policy` dell&#39;oggetto `setValidityPeriod` e passando il `ValidityPeriod` oggetto.
 
 1. Crea una voce criterio.
 
    * Creare una voce di criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createPolicyEntry` metodo. Questo metodo restituisce un `PolicyEntry` oggetto.
-   * Specifica le autorizzazioni del criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createPermission` metodo. Trasmettere un membro dati statico che appartiene al `Permission` interfaccia che rappresenta l’autorizzazione. Questo metodo restituisce un `Permission` oggetto. Ad esempio, per aggiungere l’autorizzazione che consente agli utenti di copiare i dati da un documento PDF protetto tramite policy, passa `Permission.COPY`. (Ripeti questo passaggio per ogni autorizzazione da aggiungere).
+   * Specificare le autorizzazioni del criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createPermission` metodo. Trasmettere un membro dati statico che appartiene al `Permission` interfaccia che rappresenta l’autorizzazione. Questo metodo restituisce un `Permission` oggetto. Ad esempio, per aggiungere l’autorizzazione che consente agli utenti di copiare i dati da un documento PDF protetto tramite policy, passa `Permission.COPY`. (Ripeti questo passaggio per ogni autorizzazione da aggiungere).
    * Aggiungere l’autorizzazione alla voce del criterio richiamando `PolicyEntry` dell&#39;oggetto `addPermission` e passando il `Permission` oggetto. (Ripeti questo passaggio per ogni `Permission` oggetto creato).
    * Creare l’entità criterio richiamando `InfomodelObjectFactory` statico dell&#39;oggetto `createSpecialPrincipal` metodo. Trasmettere un membro dati che appartiene al `InfomodelObjectFactory` oggetto che rappresenta l&#39;entità principale. Questo metodo restituisce un `Principal` oggetto. Ad esempio, per aggiungere l&#39;editore del documento come entità principale, passare `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
    * Aggiungere l&#39;entità alla voce del criterio richiamando `PolicyEntry` dell&#39;oggetto `setPrincipal`e passando il `Principal` oggetto.
@@ -251,6 +247,7 @@ Crea una policy utilizzando Document Security API (Java):
    * Registra il criterio richiamando `PolicyManager` dell&#39;oggetto `registerPolicy` e fornendo i seguenti valori:
 
       * Il `Policy` oggetto che rappresenta il criterio da registrare.
+
    * Valore stringa che rappresenta il set di criteri a cui appartiene il criterio.
 
    Se si utilizza un account amministratore di AEM forms nelle impostazioni di connessione per creare `DocumentSecurityClient` , quindi specificare il nome del set di criteri quando si richiama `registerPolicy` metodo. Se si supera un `null` per il set di criteri, il criterio viene creato negli amministratori *I Miei Criteri* set di criteri.
@@ -288,16 +285,16 @@ Crea una policy utilizzando Document Security API (servizio web):
       * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
-
-1. Imposta gli attributi del criterio.
+1. Impostare gli attributi del criterio.
 
    * Creare un `PolicySpec` mediante il costruttore.
-   * Imposta il nome del criterio assegnando un valore stringa al `PolicySpec` dell&#39;oggetto `name` membro dati.
-   * Imposta la descrizione del criterio assegnando un valore stringa al `PolicySpec` dell&#39;oggetto `description` membro dati.
-   * Impostare il set di criteri a cui il criterio apparterrà assegnando un valore stringa al `PolicySpec` dell&#39;oggetto `policySetName` membro dati. Specificare un nome di set di criteri esistente. (È possibile specificare `null` per questo valore di parametro che determina l’aggiunta del criterio a *I Miei Criteri*.)
-   * Imposta il periodo di lease offline del criterio assegnando un valore intero al `PolicySpec` dell&#39;oggetto `offlineLeasePeriod` membro dati.
+   * Impostare il nome del criterio assegnando un valore stringa al `PolicySpec` dell&#39;oggetto `name` membro dati.
+   * Impostare la descrizione del criterio assegnando un valore stringa al `PolicySpec` dell&#39;oggetto `description` membro dati.
+   * Specificare il set di criteri a cui appartiene il criterio assegnando un valore stringa al `PolicySpec` dell&#39;oggetto `policySetName` membro dati. Specificare un nome di set di criteri esistente. (È possibile specificare `null` per questo valore di parametro che determina l’aggiunta del criterio a *I Miei Criteri*.)
+   * Impostare il periodo di lease non in linea del criterio assegnando un valore intero al `PolicySpec` dell&#39;oggetto `offlineLeasePeriod` membro dati.
    * Imposta il `PolicySpec` dell&#39;oggetto `policyXml` membro dati con un valore stringa che rappresenta i dati XML PDRL. Per eseguire questa operazione, creare una .NET `StreamReader` mediante il costruttore. Passa la posizione di un file XML PDRL che rappresenta il criterio a `StreamReader` costruttore. Quindi, richiama `StreamReader` dell&#39;oggetto `ReadLine` e assegna il valore restituito a una variabile stringa. Effettua iterazione attraverso `StreamReader` oggetto fino al `ReadLine` il metodo restituisce null. Assegna la variabile stringa a `PolicySpec` dell&#39;oggetto `policyXml` membro dati.
 
 1. Crea una voce criterio.
@@ -360,7 +357,7 @@ Prima di poter eseguire un’operazione Document Security Service a livello di p
 
 **Impostare gli attributi del criterio**
 
-Per modificare un criterio, è necessario modificare il valore degli attributi del criterio. L’unico attributo del criterio che non può essere modificato è l’attributo name. Ad esempio, per modificare il periodo di lease offline del criterio, è possibile modificare il valore dell’attributo del periodo di lease offline del criterio.
+Per modificare un criterio, è necessario modificare il valore degli attributi del criterio. L’unico attributo del criterio che non può essere modificato è l’attributo name. Ad esempio, per modificare il periodo di lease offline del criterio, è possibile modificare il valore dell&#39;attributo del periodo di lease offline del criterio.
 
 Quando si modifica il periodo di lease offline di un criterio utilizzando un servizio web, il `offlineLeasePeriod` campo sul `PolicySpec` viene ignorata. Per aggiornare il periodo di lease offline, modifica `OfflineLeasePeriod` nel documento PDRL XML. Quindi, fare riferimento al documento XML PDRL aggiornato utilizzando `PolicySpec` dell&#39;interfaccia `policyXML` membro dati.
 
@@ -393,9 +390,9 @@ Modifica una policy esistente utilizzando Document Security API (Java):
       * Valore stringa che rappresenta il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che comporta la `MyPolicies` set di criteri in uso.
       * Valore stringa che rappresenta il nome del criterio.
 
-1. Imposta gli attributi del criterio.
+1. Impostare gli attributi del criterio.
 
-   Modifica gli attributi del criterio per soddisfare i requisiti aziendali. Ad esempio, per modificare il periodo di lease offline del criterio, richiama `Policy` dell&#39;oggetto `setOfflineLeasePeriod` metodo.
+   Modifica gli attributi della policy per soddisfare i requisiti aziendali. Ad esempio, per modificare il periodo di lease offline del criterio, richiama `Policy` dell&#39;oggetto `setOfflineLeasePeriod` metodo.
 
 1. Aggiorna il criterio.
 
@@ -428,8 +425,8 @@ Modifica una policy esistente utilizzando Document Security API (servizio web):
       * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupera un criterio esistente.
 
@@ -438,9 +435,9 @@ Modifica una policy esistente utilizzando Document Security API (servizio web):
    * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che comporta la `MyPolicies` set di criteri in uso.
    * Valore stringa che specifica il nome del criterio.
 
-1. Imposta gli attributi del criterio.
+1. Impostare gli attributi del criterio.
 
-   Modifica gli attributi del criterio per soddisfare i requisiti aziendali.
+   Modifica gli attributi della policy per soddisfare i requisiti aziendali.
 
 1. Aggiorna il criterio.
 
@@ -531,8 +528,8 @@ Elimina una policy utilizzando l’API di Document Security (servizio web):
       * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Elimina il criterio.
 
@@ -629,8 +626,7 @@ Applica una policy a un documento PDF utilizzando Document Security API (Java):
       * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere `null` (se questo parametro è null, il valore del parametro precedente deve essere `null`).
       * A `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta la lingua utilizzata per selezionare il modello di MS Office. Questo valore di parametro è facoltativo e non viene utilizzato per i documenti PDF. Per proteggere un documento PDF, specifica `null`.
 
-      Il `protectDocument` il metodo restituisce un `RMSecureDocumentResult` oggetto contenente il documento PDF protetto tramite policy.
-
+     Il `protectDocument` il metodo restituisce un `RMSecureDocumentResult` oggetto contenente il documento PDF protetto tramite policy.
 
 1. Salvare il documento PDF.
 
@@ -674,8 +670,8 @@ Applicare una policy a un documento PDF utilizzando Document Security API (servi
       * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento PDF.
 
@@ -819,8 +815,8 @@ Rimuovi una policy da un documento PDF protetto tramite policy utilizzando Docum
       * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento PDF protetto tramite policy.
 
@@ -962,8 +958,8 @@ Revoca dell’accesso a un documento PDF protetto tramite policy utilizzando Doc
       * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento PDF protetto tramite policy
 
@@ -1024,7 +1020,7 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 **Recuperare l&#39;identificatore di licenza del documento di PDF revocato**
 
-Per ripristinare un documento PDF revocato, è necessario recuperare l&#39;identificatore di licenza del documento PDF revocato. Dopo aver ottenuto il valore dell&#39;identificatore della licenza, è possibile ripristinare un documento revocato. Se si tenta di ripristinare un documento non revocato, verrà generata un&#39;eccezione.
+Per ripristinare un documento PDF revocato, è necessario recuperare l&#39;identificatore di licenza del documento PDF revocato. Dopo aver ottenuto il valore dell&#39;identificatore di licenza, è possibile ripristinare un documento revocato. Se si tenta di ripristinare un documento non revocato, verrà generata un&#39;eccezione.
 
 **Ripristina l&#39;accesso al documento di PDF revocato**
 
@@ -1094,8 +1090,8 @@ Ripristinare l’accesso a un documento revocato utilizzando Document Security A
       * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare l&#39;identificatore di licenza del documento PDF revocato.
 
@@ -1228,8 +1224,8 @@ Inspect è un documento PDF protetto tramite policy utilizzando l’API Document
       * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento protetto tramite policy da esaminare.
 
@@ -1346,12 +1342,12 @@ Nella tabella seguente sono elencate le coppie chiave-valore necessarie per la c
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:HORIZ_ALIGN</code></p></td>
-   <td><p>Specifica l’allineamento orizzontale della filigrana. Il valore predefinito è center.</p></td>
+   <td><p>Specifica l'allineamento orizzontale della filigrana. Il valore predefinito è center.</p></td>
    <td><p>a sinistra, al centro o a destra</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:VERT_ALIGN</code></p></td>
-   <td><p>Specifica l’allineamento verticale della filigrana. Il valore predefinito è center.</p></td>
+   <td><p>Specifica l'allineamento verticale della filigrana. Il valore predefinito è center.</p></td>
    <td><p>superiore, centrale o inferiore</p></td>
   </tr>
   <tr>
@@ -1409,10 +1405,10 @@ Crea una filigrana utilizzando Document Security API (Java):
 1. Imposta attributi filigrana
 
    * Creare un `Watermark` oggetto richiamando il `InfomodelObjectFactory` statico dell&#39;oggetto `createWatermark` metodo. Questo metodo restituisce un `Watermark` oggetto.
-   * Impostare l’attributo name della filigrana richiamando `Watermark` dell&#39;oggetto `setName` e passando un valore stringa che specifica il nome del criterio.
-   * Impostare l’attributo di sfondo della filigrana richiamando `Watermark` dell&#39;oggetto `setBackground` metodo e passaggio `true`. Impostando questo attributo, la filigrana viene visualizzata sullo sfondo del documento.
-   * Impostare l’attributo di testo personalizzato della filigrana richiamando `Watermark` dell&#39;oggetto `setCustomText` e passando un valore stringa che rappresenta il testo della filigrana.
-   * Impostare l’attributo di opacità della filigrana richiamando `Watermark` dell&#39;oggetto `setOpacity` e viene passato un valore intero che specifica il livello di opacità. Il valore 100 indica che la filigrana è completamente opaca e il valore 0 indica che è completamente trasparente.
+   * Impostare l&#39;attributo del nome della filigrana richiamando `Watermark` dell&#39;oggetto `setName` e passando un valore stringa che specifica il nome del criterio.
+   * Impostare l&#39;attributo di sfondo della filigrana richiamando `Watermark` dell&#39;oggetto `setBackground` metodo e passaggio `true`. Impostando questo attributo, la filigrana viene visualizzata sullo sfondo del documento.
+   * Impostare l&#39;attributo di testo personalizzato della filigrana richiamando `Watermark` dell&#39;oggetto `setCustomText` e passando un valore stringa che rappresenta il testo della filigrana.
+   * Impostare l&#39;attributo di opacità della filigrana richiamando `Watermark` dell&#39;oggetto `setOpacity` e viene passato un valore intero che specifica il livello di opacità. Il valore 100 indica che la filigrana è completamente opaca e il valore 0 indica che è completamente trasparente.
 
 1. Registrare la filigrana.
 
@@ -1448,8 +1444,8 @@ Crea una filigrana utilizzando Document Security API (servizio web):
       * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Impostare gli attributi della filigrana.
 
@@ -1558,7 +1554,7 @@ Modifica una filigrana utilizzando Document Security API (Java):
 
 1. Impostare gli attributi della filigrana.
 
-   Impostare l’attributo di opacità della filigrana richiamando `Watermark` dell&#39;oggetto `setOpacity` e viene passato un valore intero che specifica il livello di opacità. Il valore 100 indica che la filigrana è completamente opaca e il valore 0 indica che è completamente trasparente.
+   Impostare l&#39;attributo di opacità della filigrana richiamando `Watermark` dell&#39;oggetto `setOpacity` e viene passato un valore intero che specifica il livello di opacità. Il valore 100 indica che la filigrana è completamente opaca e il valore 0 indica che è completamente trasparente.
 
    >[!NOTE]
    >
@@ -1595,8 +1591,8 @@ Modifica una filigrana utilizzando Document Security API (servizio web):
       * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperate la filigrana da modificare.
 
@@ -1723,8 +1719,8 @@ Cerca gli eventi utilizzando l’API di Rights Management (servizio web):
       * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Specificare gli eventi da cercare
 
@@ -2030,8 +2026,7 @@ Applicare una policy a un documento di Word utilizzando l’API Document Securit
       * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere `null` (se questo parametro è `null`, il valore del parametro precedente deve essere `null`).
       * A `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta la lingua utilizzata per selezionare il modello di MS Office. Il valore di questo parametro è facoltativo ed è possibile specificare `null`.
 
-      Il `protectDocument` il metodo restituisce un `RMSecureDocumentResult` oggetto che contiene il documento Word protetto tramite policy.
-
+     Il `protectDocument` il metodo restituisce un `RMSecureDocumentResult` oggetto che contiene il documento Word protetto tramite policy.
 
 1. Salvare il documento di Word.
 
@@ -2068,8 +2063,8 @@ Applicare una policy a un documento di Word utilizzando Document Security API (s
       * Assegna al campo il nome utente dei moduli AEM `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento di Word.
 
@@ -2212,8 +2207,8 @@ Rimuovi una policy da un documento Word protetto tramite policy utilizzando Docu
       * Assegna al campo il nome utente dei moduli AEM `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperare un documento Word protetto tramite policy
 

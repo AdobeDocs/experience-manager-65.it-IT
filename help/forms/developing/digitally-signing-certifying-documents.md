@@ -1,19 +1,15 @@
 ---
 title: Firma digitale e certificazione dei documenti
-seo-title: Digitally Signing and Certifying Documents
 description: Utilizzare il servizio Firma per aggiungere ed eliminare campi di firma digitale in un documento PDF, recuperare i nomi dei campi di firma presenti in un documento PDF, modificare i campi di firma, firmare digitalmente i documenti PDF, certificare i documenti PDF, convalidare le firme digitali presenti in un documento PDF, convalidare tutte le firme digitali presenti in un documento PDF e rimuovere una firma digitale da un campo di firma.
-seo-description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields located in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures located in a PDF document, validate all digital signatures located in a PDF document, and remove a digital signature from a signature field.
-uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '17046'
+source-wordcount: '17047'
 ht-degree: 0%
 
 ---
@@ -38,7 +34,7 @@ A volte un conflitto causa la firma del campo errato da parte del servizio di fi
 
 Se in un documento PDF sono presenti più campi firma, è consigliabile specificare i nomi completi dei campi firma. Ovvero specificare `form1[0].Form1[0].SignatureField1[0]`invece di `SignatureField1[0]`.
 
-È possibile eseguire queste attività utilizzando il servizio Firma:
+È possibile eseguire queste attività utilizzando il servizio di firma:
 
 * Aggiungere ed eliminare campi di firma digitale in un documento PDF. (vedere [Aggiunta di campi firma](digitally-signing-certifying-documents.md#adding-signature-fields).)
 * Recuperare i nomi dei campi firma presenti in un documento PDF. (vedere [Recupero dei nomi dei campi firma](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
@@ -138,9 +134,11 @@ Aggiungi un campo firma utilizzando Signature API (Java):
       * A `java.lang.Integer` valore che rappresenta il numero di pagina a cui viene aggiunto un campo firma.
       * A `PositionRectangle` oggetto che specifica la posizione del campo firma.
       * A `FieldMDPOptions` oggetto che specifica i campi del documento PDF bloccati dopo l&#39;applicazione di una firma digitale al campo firma. Il valore di questo parametro è facoltativo ed è possibile trasmettere `null`.
+
    * A `PDFSeedValueOptions` oggetto che specifica vari valori di runtime. Il valore di questo parametro è facoltativo ed è possibile trasmettere `null`.
 
-      Il `addSignatureField` il metodo restituisce un `com.adobe.idp`. `Document` oggetto che rappresenta un documento PDF contenente un campo firma.
+     Il `addSignatureField` il metodo restituisce un `com.adobe.idp`. `Document` oggetto che rappresenta un documento PDF contenente un campo firma.
+
    >[!NOTE]
    >
    >È possibile richiamare `SignatureServiceClient` dell&#39;oggetto `addInvisibleSignatureField` per aggiungere un campo firma invisibile.
@@ -557,7 +555,7 @@ Modifica un campo di firma utilizzando Signature API (servizio web):
 
 Le firme digitali possono essere applicate ai documenti PDF per garantire un livello di sicurezza adeguato. Le firme digitali, come le firme scritte a mano, forniscono un mezzo mediante il quale i firmatari si identificano e rilasciano dichiarazioni su un documento. La tecnologia utilizzata per apporre la firma digitale ai documenti consente di garantire che il firmatario e i destinatari siano chiari su ciò che è stato firmato e certi che il documento non sia stato modificato dopo la firma.
 
-I documenti PDF sono firmati mediante una tecnologia a chiave pubblica. Un firmatario ha due chiavi: una chiave pubblica e una chiave privata. La chiave privata viene memorizzata nelle credenziali di un utente che devono essere disponibili al momento della firma. La chiave pubblica viene archiviata nel certificato dell’utente che deve essere disponibile per i destinatari per convalidare la firma. Le informazioni sui certificati revocati si trovano nelle risposte CRL (Certificate Revocation List) e OCSP (Online Certificate Status Protocol) distribuite dalle autorità di certificazione (CA). L’ora della firma può essere ottenuta da una fonte attendibile nota come autorità di marca temporale.
+I documenti PDF sono firmati mediante una tecnologia a chiave pubblica. Un firmatario ha due chiavi: una chiave pubblica e una chiave privata. La chiave privata viene memorizzata nelle credenziali di un utente che devono essere disponibili al momento della firma. La chiave pubblica viene archiviata nel certificato dell&#39;utente che deve essere disponibile per i destinatari per convalidare la firma. Le informazioni sui certificati revocati si trovano nelle risposte CRL (Certificate Revocation List) e OCSP (Online Certificate Status Protocol) distribuite dalle autorità di certificazione (CA). L’ora della firma può essere ottenuta da una fonte attendibile nota come autorità di marca temporale.
 
 >[!NOTE]
 >
@@ -906,7 +904,7 @@ Apporre una firma digitale a un modulo interattivo utilizzando Forms e Signature
 
 1. Includi file di progetto
 
-   Includi i file JAR dei client, come adobe-signatures-client.jar e adobe-forms-client.jar, nel percorso di classe del progetto Java.
+   Includi i file JAR dei client, ad esempio adobe-signatures-client.jar e adobe-forms-client.jar, nel percorso di classe del progetto Java.
 
 1. Creazione di un client Forms e Signatures
 
@@ -929,10 +927,9 @@ Apporre una firma digitale a un modulo interattivo utilizzando Forms e Signature
       * A `URLSpec` oggetto contenente valori URI richiesti dal servizio Forms. È possibile specificare `null` per questo valore di parametro.
       * A `java.util.HashMap` oggetto che memorizza gli allegati. Questo è un parametro facoltativo e puoi specificare `null` se non si desidera allegare file al modulo.
 
-      Il `renderPDFForm2` il metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati modulo
+     Il `renderPDFForm2` il metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati modulo
 
    * Recuperare il modulo PDF richiamando `FormsResult` dell&#39;oggetto `getOutputContent` metodo. Questo metodo restituisce un `com.adobe.idp.Document` oggetto che rappresenta il modulo interattivo.
-
 
 1. Firma il modulo interattivo
 
@@ -994,6 +991,7 @@ Firmare digitalmente un modulo interattivo utilizzando Forms e Signature API (se
       * Assegna al campo il nome utente dei moduli AEM `SignatureServiceClient.ClientCredentials.UserName.UserName`.
       * Assegna il valore password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
       * Assegna il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * Assegna il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
@@ -1023,8 +1021,8 @@ Firmare digitalmente un modulo interattivo utilizzando Forms e Signature API (se
       * Parametro di output lungo utilizzato per memorizzare il numero di pagine nel modulo.
       * Parametro di output stringa utilizzato per il valore locale.
       * A `FormResult` valore che è un parametro di output utilizzato per memorizzare il modulo interattivo.
-   * Recuperare il modulo PDF richiamando `FormsResult` dell&#39;oggetto `outputContent` campo. Questo campo memorizza una `BLOB` oggetto che rappresenta il modulo interattivo.
 
+   * Recuperare il modulo PDF richiamando `FormsResult` dell&#39;oggetto `outputContent` campo. Questo campo memorizza una `BLOB` oggetto che rappresenta il modulo interattivo.
 
 1. Firma il modulo interattivo
 
@@ -1285,13 +1283,13 @@ Certifica un documento PDF utilizzando l’API di firma (servizio web):
 
 ## Verifica delle firme digitali {#verifying-digital-signatures}
 
-PDF È possibile verificare che le firme digitali non siano state modificate e che la firma digitale sia valida. Durante la verifica di una firma digitale, è possibile controllare lo stato della firma e le proprietà della firma, ad esempio l’identità del firmatario. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. Durante la verifica di una firma digitale, fare riferimento a un documento PDF contenente una firma digitale.
+PDF È possibile verificare che le firme digitali non siano state modificate e che la firma digitale sia valida. Durante la verifica di una firma digitale, è possibile controllare lo stato della firma e le relative proprietà, ad esempio l&#39;identità del firmatario. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. Durante la verifica di una firma digitale, fare riferimento a un documento PDF contenente una firma digitale.
 
 Supponiamo che l’identità del firmatario sia sconosciuta. Quando apri il documento PDF in Acrobat, un messaggio di avviso indica che l’identità del firmatario è sconosciuta, come illustrato nella figura seguente.
 
 ![vd_vd_verifysig](assets/vd_vd_verifysig.png)
 
-Analogamente, quando si verifica una firma digitale a livello di programmazione, è possibile determinare lo stato dell&#39;identità del firmatario. Ad esempio, se si verifica la firma digitale nel documento illustrato nell&#39;illustrazione precedente, l&#39;identità del firmatario risulterebbe sconosciuta.
+Analogamente, quando si verifica una firma digitale a livello di programmazione, è possibile determinare lo stato dell&#39;identità del firmatario. Se ad esempio si verifica la firma digitale nel documento illustrato nell&#39;illustrazione precedente, l&#39;identità del firmatario risulterà sconosciuta.
 
 >[!NOTE]
 >
@@ -1504,7 +1502,7 @@ Verifica una firma digitale utilizzando l’API del servizio di firma (servizio 
 1. Determinare l’identità del firmatario
 
    * Determinare l’identità del firmatario recuperando il valore del `PDFSignatureVerificationInfo` dell&#39;oggetto `signer` membro dati. Questo membro restituisce un `IdentityInformation` oggetto.
-   * Recupera il `IdentityInformation` dell&#39;oggetto `status` membro dati per determinare l’identità del firmatario. Questo membro dati restituisce un `IdentityStatus` valore di enumerazione che specifica l&#39;identità. Ad esempio, se il firmatario è attendibile, questo membro restituisce `IdentityStatus.TRUSTED`.
+   * Recupera il `IdentityInformation` dell&#39;oggetto `status` membro dati per determinare l&#39;identità del firmatario. Questo membro dati restituisce un `IdentityStatus` valore di enumerazione che specifica l&#39;identità. Ad esempio, se il firmatario è attendibile, questo membro restituisce `IdentityStatus.TRUSTED`.
 
 **Consulta anche**
 
@@ -1516,7 +1514,7 @@ Verifica una firma digitale utilizzando l’API del servizio di firma (servizio 
 
 ## Verifica di più firme digitali {#verifying-multiple-digital-signatures}
 
-AEM Forms fornisce i mezzi per verificare tutte le firme digitali che si trovano in un documento PDF. Si supponga che un documento PDF contenga più firme digitali come risultato di un processo aziendale che richiede firme da più firmatari. Si consideri, ad esempio, una transazione finanziaria che richiede la firma sia di un responsabile del prestito che di un manager. È possibile utilizzare l’API Java di Signature Service o l’API del servizio Web per verificare tutte le firme all’interno del documento PDF. Quando si verificano più firme digitali, è possibile controllare lo stato e le proprietà di ogni firma. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. È consigliabile avere familiarità con la verifica di una singola firma digitale.
+AEM Forms fornisce i mezzi per verificare tutte le firme digitali che si trovano in un documento PDF. Si supponga che un documento PDF contenga più firme digitali come risultato di un processo aziendale che richiede firme da più firmatari. Ad esempio, si consideri una transazione finanziaria che richiede la firma sia di un addetto al prestito che di un manager. È possibile utilizzare l’API Java di Signature Service o l’API del servizio Web per verificare tutte le firme all’interno del documento PDF. Quando si verificano più firme digitali, è possibile controllare lo stato e le proprietà di ogni firma. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. È consigliabile avere familiarità con la verifica di una singola firma digitale.
 
 >[!NOTE]
 >
@@ -1595,7 +1593,7 @@ Per verificare tutte le firme digitali presenti in un documento PDF, recuperare 
 
 **Iterazione di tutte le firme**
 
-Scorrere ogni firma. In altre parole, per ogni firma, verifica la firma digitale e controlla l’identità del firmatario e lo stato di ogni firma. (vedere [Verifica delle firme digitali](#verify-digital-signatures-using-the-java-api).)
+Scorrere ogni firma. In altre parole, per ogni firma, verificare la firma digitale e verificare l&#39;identità del firmatario e lo stato di ogni firma. (vedere [Verifica delle firme digitali](#verify-digital-signatures-using-the-java-api).)
 
 >[!NOTE]
 >

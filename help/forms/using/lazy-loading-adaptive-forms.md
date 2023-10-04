@@ -1,18 +1,14 @@
 ---
 title: Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento
-seo-title: Improve performance of large forms with lazy loading
 description: Il caricamento lento migliora in modo significativo le prestazioni di moduli adattivi complessi e di grandi dimensioni, posticipando l’inizializzazione e il caricamento dei frammenti di modulo fino a quando non sono visibili.
-seo-description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.
-uuid: 6be3d2f0-1b2a-4090-af66-2b08487c31bc
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1089'
 ht-degree: 3%
 
 ---
@@ -90,7 +86,7 @@ Alcune limitazioni, raccomandazioni e punti importanti da tenere a mente quando 
 
 Di seguito sono riportati alcuni punti importanti da tenere presenti durante lo sviluppo di script per pannelli con caricamento lazy:
 
-* Assicurati che gli script di inizializzazione e calcolo utilizzati nei campi di un frammento con caricamento lazy siano di natura idempotente. Gli script idempotenti sono quelli che hanno lo stesso effetto anche dopo più esecuzioni.
+* Assicurati che gli script di inizializzazione e calcolo utilizzati nei campi di un frammento con caricamento lazy siano idempotenti. Gli script idempotenti sono quelli che hanno lo stesso effetto anche dopo più esecuzioni.
 * Utilizzare la proprietà globally available dei campi per rendere disponibili a tutti gli altri pannelli di un modulo i campi presenti in un pannello di caricamento lazy.
 * Non inoltrare il valore di riferimento di un campo all’interno di un pannello lento indipendentemente dal fatto che il campo sia contrassegnato globalmente tra frammenti o meno.
 * Utilizza la funzione di ripristino del pannello per ripristinare tutto ciò che è visibile nel pannello utilizzando la seguente espressione di clic.\

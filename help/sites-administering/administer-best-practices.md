@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '529'
 ht-degree: 7%
 
 ---
@@ -34,7 +34,7 @@ I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 
 ## Risorse {#assets}
 
-Le best practice relative ad Assets, incluse la funzionalità Dynamic Media e l’integrazione con Dynamic Media Classic, sono descritte nei seguenti argomenti:
+Le best practice relative ad Assets, incluse la funzionalità Dynamic Medie e l’integrazione con Dynamic Media Classic, sono descritte nei seguenti argomenti:
 
 <table>
  <tbody>
@@ -46,7 +46,7 @@ Le best practice relative ad Assets, incluse la funzionalità Dynamic Media e l�
   <tr>
    <td>Organizzare il contenuto (gerarchia di cartelle)</td>
    <td><a href="/help/assets/organize-assets.md">Best practice per la gestione dei file</a></td>
-   <td>Gran parte dei profili di elaborazione si basa su cartelle, in quanto video, metadati ed elaborazione delle immagini sono sempre applicati alle cartelle. Questo documento sulle best practice descrive come definire e impostare la gerarchia di cartelle, in quanto ha un impatto significativo sulla modalità di elaborazione del contenuto. </td>
+   <td>La maggior parte dei profili di elaborazione si basa su cartelle, ad esempio video, metadati ed elaborazione delle immagini, che vengono sempre applicati alle cartelle. Questo documento sulle best practice descrive come definire e impostare la gerarchia di cartelle, in quanto ha un impatto significativo sulla modalità di elaborazione del contenuto. </td>
   </tr>
   <tr>
    <td>Integrazione di Scene7 e AEM</td>
@@ -59,9 +59,9 @@ Le best practice relative ad Assets, incluse la funzionalità Dynamic Media e l�
    <td>Come parte della documentazione su <a href="/help/assets/managing-image-presets.md">Gestione dei predefiniti per immagini</a>, questi argomenti descrivono cosa sono i predefiniti per immagini e le best practice per la selezione delle opzioni dei predefiniti per immagini.</td>
   </tr>
   <tr>
-   <td>Confronto tra Dynamic Media e l'integrazione diretta con Scene7</td>
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integrazione Scene7/AEM rispetto a Dynamic Media</a></td>
-   <td>Descrive quando è meglio utilizzare la soluzione Dynamic Media, quando integrare S7 con AEM o quando utilizzare entrambi.</td>
+   <td>Confronto tra Dynamic Medie e l'integrazione diretta con Scene7</td>
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integrazione Scene7/AEM rispetto a Dynamic Medie</a></td>
+   <td>Descrive quando è meglio utilizzare la soluzione Dynamic Medie, quando integrare S7 con AEM o quando utilizzare entrambi.</td>
   </tr>
  </tbody>
 </table>

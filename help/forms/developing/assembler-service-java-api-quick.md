@@ -1,16 +1,13 @@
 ---
 title: Servizio assemblatore API Java QuickStart (SOAP)
-seo-title: Assembler Service Java API QuickStart(SOAP)
 description: Servizio assemblatore API Java QuickStart (SOAP)
-uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 0%
@@ -170,7 +167,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito vengono uniti due d
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -309,7 +306,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene disassemblato
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
                  Object o = e.getValue();
  
@@ -588,7 +585,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene assemblato un
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -855,7 +852,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene determinato s
              //document that specifies if the input document is
              //PDF/A compliant
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -1160,7 +1157,7 @@ Esempio Nell&#39;esempio di codice Java seguente viene assemblato un documento P
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -1191,7 +1188,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene creato in mod
 * `createDDX`: crea un’ `org.w3c.dom.Document` oggetto che rappresenta il documento DDX inviato al servizio Assembler. Questo metodo definito dall&#39;utente restituisce `org.w3c.dom.Document` oggetto.
 * `convertDDX`: converte un `org.w3c.dom.Document` oggetto a un `com.adobe.idp.Document` oggetto. Questo metodo accetta un `org.w3c.dom.Document` come parametro di input e restituisce un `com.adobe.idp.Document` oggetto.
 
-   Entrambi questi metodi vengono richiamati in questo avvio rapido. (vedere [Creazione dinamica di documenti DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)&quot;
+  Entrambi questi metodi vengono richiamati in questo avvio rapido. (vedere [Creazione dinamica di documenti DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)&quot;
 
 ```java
 /*
@@ -1661,7 +1658,7 @@ Il seguente esempio di codice Java assembla frammenti XDP basati sui seguenti fi
  
              //Iterate through the map object to retrieve the result XDP document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the

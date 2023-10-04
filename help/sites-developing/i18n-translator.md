@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2327'
 ht-degree: 1%
@@ -65,7 +65,7 @@ Da questa console è inoltre possibile aggiungere i dizionari i18n a un progetto
 
 Crea un dizionario per la gestione delle stringhe localizzate dell’interfaccia utente. Dopo aver creato un dizionario, puoi utilizzarlo per gestirlo con lo strumento di traduzione.
 
-1. Utilizzando CRXDE Lite, aggiungi il nodo principale ( `sling:Folder`) per il nuovo dizionario come struttura per contenere le definizioni della lingua:
+1. Utilizzando CRXDE Liti, aggiungi il nodo principale ( `sling:Folder`) per il nuovo dizionario come struttura per contenere le definizioni della lingua:
 
    ` /apps/<projectName>/i18n`
 
@@ -251,7 +251,7 @@ Per esportare tutte o alcune delle sole stringhe inglesi, attenersi alla procedu
 
 1. Apri lo strumento di traduzione. `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Utilizza il menu a discesa Dizionari per selezionare il dizionario da esportare.
-1. Se state esportando un sottoinsieme delle stringhe, selezionate gli elementi nel dizionario da esportare. Se non si seleziona alcun elemento, vengono esportati tutti gli elementi.
+1. Se si sta esportando un sottoinsieme delle stringhe, selezionare gli elementi nel dizionario da esportare. Se non si seleziona alcun elemento, vengono esportati tutti gli elementi.
 1. Selezionate Esporta (Export) > Esporta selezione (Export Selection As Xliff) (Solo Stringhe).
 1. Nella finestra di dialogo visualizzata, copiare il testo e incollarlo in un file di testo.
 
@@ -283,7 +283,7 @@ Lo strumento Traduttore include le seguenti lingue nella tabella del dizionario:
 
 Per aggiungere o rimuovere lingue, attenersi alla procedura descritta di seguito.
 
-1. Utilizzando CRXDE Lite, crea un nuovo nodo:
+1. Utilizzando CRXDE Liti, crea un nuovo nodo:
 
    `/etc/languages`
 
@@ -300,7 +300,7 @@ Per aggiungere o rimuovere lingue, attenersi alla procedura descritta di seguito
    >
    >I codici della lingua devono essere in minuscolo.
 
-1. Clic **Salva tutto** in CRXDE Lite e ricaricare il traduttore. La griglia verrà aggiornata per mostrare le lingue definite.
+1. Clic **Salva tutto** in CRXDE Liti e ricaricare il traduttore. La griglia verrà aggiornata per mostrare le lingue definite.
 
    >[!NOTE]
    >

@@ -1,20 +1,16 @@
 ---
 title: Supporto di nuove lingue per la localizzazione di moduli adattivi
-seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms consente di aggiungere nuove lingue per la localizzazione dei moduli adattivi. Le lingue supportate per impostazione predefinita sono inglese, francese, tedesco e giapponese.
-seo-description: AEM Forms lets you add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
-uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '813'
 ht-degree: 2%
 
 ---
@@ -43,7 +39,7 @@ Esistono due metodi per identificare le impostazioni locali del modulo adattivo.
 * esaminare i seguenti parametri nell&#39;ordine specificato:
 
    * Parametro di richiesta `afAcceptLang`
-Per ignorare le impostazioni locali del browser per gli utenti, puoi trasmettere il `afAcceptLang` per forzare le impostazioni locali. Ad esempio, il seguente URL forzerà il rendering del modulo nelle impostazioni internazionali giapponesi:
+Per ignorare le impostazioni locali del browser per gli utenti, puoi trasmettere il `afAcceptLang` per forzare le impostazioni locali. Ad esempio, il seguente URL è stato forzato a eseguire il rendering del modulo nelle impostazioni internazionali giapponesi:
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * Impostazioni locali del browser impostate per l&#39;utente, specificate nella richiesta utilizzando `Accept-Language` intestazione.

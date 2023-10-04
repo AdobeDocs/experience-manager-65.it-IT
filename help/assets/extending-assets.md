@@ -5,16 +5,16 @@ contentOwner: AG
 role: Developer
 feature: Developer Tools
 exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 # Personalizzare ed estendere [!DNL Assets] {#customizing-and-extending-assets}
 
-L’Editor risorse è il punto di accesso principale che gli utenti di un Adobe di sito Web Enterprise Manager utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
+Asset Editor è il punto di accesso principale utilizzato dagli utenti di un sito Web Adobe Enterprise Manager per trovare, visualizzare e manipolare le risorse digitali nell&#39;archivio.
 
 Come un [!DNL Experience Manager] sviluppatore, puoi personalizzare ed estendere Asset Editor in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifiche.
 

@@ -1,17 +1,13 @@
 ---
 title: Richiamare AEM Forms tramite richieste REST
-seo-title: Invoking AEM Forms using REST Requests
 description: Richiama i processi creati in Workbench utilizzando le richieste REST.
-seo-description: Invoke processes created in Workbench using REST requests.
-uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2506'
 ht-degree: 0%
@@ -30,7 +26,7 @@ Quando si utilizzano richieste REST, si consiglia di non richiamare direttamente
 
 Quando si richiama un servizio utilizzando REST, viene richiesto di immettere un nome utente e una password per il modulo AEM. Tuttavia, se non si desidera specificare un nome utente e una password, è possibile disattivare la protezione del servizio.
 
-Per richiamare un servizio Forms (un processo diventa servizio quando viene attivato) utilizzando REST, configura un endpoint REST. (Consulta &quot;Gestione degli endpoint&quot; in [aiuto per l’amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Per richiamare un servizio Forms (un processo diventa servizio quando viene attivato) utilizzando REST, configura un endpoint REST. (Consulta &quot;Gestione degli endpoint&quot; in [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 Dopo aver configurato un endpoint REST, è possibile richiamare un servizio Forms utilizzando un metodo HTTP GET o POST.
 
@@ -49,45 +45,45 @@ I seguenti tipi di dati sono supportati quando si richiamano i servizi AEM Forms
 * Tipi di dati XML come `org.w3c.Document` e `org.w3c.Element`
 * Oggetti di raccolta come `java.util.List` e `java.util.Map`
 
-   Questi tipi di dati vengono comunemente accettati come valori di input per i processi creati in Workbench.
+  Questi tipi di dati vengono comunemente accettati come valori di input per i processi creati in Workbench.
 
-   Se viene richiamato un servizio Forms con il metodo HTTP POST, gli argomenti vengono passati nel corpo della richiesta HTTP. Se la firma del servizio AEM Forms dispone di un parametro di input di tipo stringa, il corpo della richiesta può contenere il valore di testo del parametro di input. Se la firma del servizio definisce più parametri di stringa, la richiesta può seguire il `application/x-www-form-urlencoded` notazione con i nomi del parametro utilizzati come nomi dei campi del modulo.
+  Se viene richiamato un servizio Forms con il metodo HTTP POST, gli argomenti vengono passati nel corpo della richiesta HTTP. Se la firma del servizio AEM Forms contiene un parametro di input di tipo stringa, il corpo della richiesta può contenere il valore di testo del parametro di input. Se la firma del servizio definisce più parametri di stringa, la richiesta può seguire i `application/x-www-form-urlencoded` notazione con i nomi del parametro utilizzati come nomi dei campi del modulo.
 
-   Se un servizio Forms restituisce un parametro di stringa, il risultato è una rappresentazione testuale del parametro di output. Se un servizio restituisce più parametri stringa, il risultato è un documento XML che codifica i parametri di output nel formato seguente:
-   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
+  Se un servizio Forms restituisce un parametro di stringa, il risultato è una rappresentazione testuale del parametro di output. Se un servizio restituisce più parametri stringa, il risultato è un documento XML che codifica i parametri di output nel formato seguente:
+  ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
-   >[!NOTE]
-   >
-   >Il `output-paramater1` value rappresenta il nome del parametro di output.
+  >[!NOTE]
+  >
+  >Il `output-paramater1` value rappresenta il nome del parametro di output.
 
-   Se un servizio Forms richiede un `com.adobe.idp.Document` , il servizio può essere richiamato solo utilizzando il metodo HTTP POST. Se il servizio ne richiede uno `com.adobe.idp.Document` , il corpo della richiesta HTTP diventa il contenuto dell&#39;oggetto Document di input.
+  Se un servizio Forms richiede un `com.adobe.idp.Document` , il servizio può essere richiamato solo utilizzando il metodo HTTP POST. Se il servizio ne richiede uno `com.adobe.idp.Document` , il corpo della richiesta HTTP diventa il contenuto dell&#39;oggetto Document di input.
 
-   Se un servizio AEM Forms richiede più parametri di input, il corpo della richiesta HTTP deve essere un messaggio MIME multiparte come definito dalla RFC 1867. (RFC 1867 è uno standard utilizzato dai browser web per caricare file sui siti web.) Ogni parametro di input deve essere inviato come parte separata del messaggio multipart e codificato nel `multipart/form-data` formato. Il nome di ogni parte deve corrispondere al nome del parametro.
+  Se un servizio AEM Forms richiede più parametri di input, il corpo della richiesta HTTP deve essere un messaggio MIME multiparte come definito dalla RFC 1867. (RFC 1867 è uno standard utilizzato dai browser web per caricare file sui siti web.) Ogni parametro di input deve essere inviato come parte separata del messaggio multipart e codificato nel `multipart/form-data` formato. Il nome di ogni parte deve corrispondere al nome del parametro.
 
-   Gli elenchi e le mappe vengono utilizzati anche come valori di input per i processi di AEM Forms creati in Workbench. Di conseguenza, puoi utilizzare questi tipi di dati quando utilizzi una richiesta REST. Gli array Java non sono supportati perché non vengono utilizzati come valore di input in un processo AEM Forms.
+  Gli elenchi e le mappe vengono utilizzati anche come valori di input per i processi di AEM Forms creati in Workbench. Di conseguenza, puoi utilizzare questi tipi di dati quando utilizzi una richiesta REST. Gli array Java non sono supportati perché non vengono utilizzati come valore di input in un processo AEM Forms.
 
-   Se un parametro di input è un elenco, un client REST può inviarlo specificando il parametro più volte (una volta per ogni elemento dell’elenco). Ad esempio, se A è un elenco di documenti, l&#39;input deve essere un messaggio in più parti costituito da più parti denominate A. In questo caso, ogni parte denominata A diventa un elemento nell&#39;elenco di input. Se B è un elenco di stringhe, l’input può essere un `application/x-www-form-urlencoded` messaggio costituito da più campi denominati B. In questo caso, ogni campo modulo denominato B diventa un elemento nell&#39;elenco di input.
+  Se un parametro di input è un elenco, un client REST può inviarlo specificando il parametro più volte (una volta per ogni elemento dell’elenco). Ad esempio, se A è un elenco di documenti, l&#39;input deve essere un messaggio in più parti costituito da più parti denominate A. In questo caso, ogni parte denominata A diventa un elemento nell&#39;elenco di input. Se B è un elenco di stringhe, l’input può essere un `application/x-www-form-urlencoded` messaggio costituito da più campi denominati B. In questo caso, ogni campo modulo denominato B diventa un elemento nell&#39;elenco di input.
 
-   Se un parametro di input è una mappa e si tratta del parametro di input solo dei servizi, ogni parte/campo del messaggio di input diventa un record chiave/valore nella mappa. Il nome di ogni parte/campo diventa la chiave del record. Il contenuto di ogni parte/campo diventa il valore del record.
+  Se un parametro di input è una mappa e si tratta del parametro di input solo dei servizi, ogni parte/campo del messaggio di input diventa un record chiave/valore nella mappa. Il nome di ogni parte/campo diventa la chiave del record. Il contenuto di ogni parte/campo diventa il valore del record.
 
-   Se una mappa di input non è l’unico parametro di input dei servizi, ogni record chiave/valore che appartiene alla mappa può essere inviato utilizzando un parametro denominato come concatenazione del nome del parametro e della chiave del record. Ad esempio, una mappa di input denominata `attributes` può essere inviato con un elenco delle seguenti coppie chiave/valori:
+  Se una mappa di input non è il solo parametro di input dei servizi, ogni record chiave/valore che appartiene alla mappa può essere inviato utilizzando un parametro denominato come concatenazione del nome del parametro e della chiave del record. Ad esempio, una mappa di input denominata `attributes` può essere inviato con un elenco delle seguenti coppie chiave/valori:
 
-   `attributesColor=red`
+  `attributesColor=red`
 
-   `attributesShape=box`
+  `attributesShape=box`
 
-   `attributesWidth=5`
+  `attributesWidth=5`
 
-   Questo si traduce in una mappa di tre record: `Color=red`, `Shape=box`, e `Width=5`.
+  Questo si traduce in una mappa di tre record: `Color=red`, `Shape=box`, e `Width=5`.
 
-   I parametri di output dei tipi di elenco e mappa diventano parte del messaggio XML risultante. L&#39;elenco di output è rappresentato in XML come una serie di elementi XML con un elemento per ogni elemento dell&#39;elenco. A ogni elemento viene assegnato lo stesso nome del parametro dell’elenco di output. Il valore di ogni elemento XML è uno dei due elementi seguenti:
+  I parametri di output dei tipi di elenco e mappa diventano parte del messaggio XML risultante. L&#39;elenco di output è rappresentato in XML come una serie di elementi XML con un elemento per ogni elemento dell&#39;elenco. A ogni elemento viene assegnato lo stesso nome del parametro dell’elenco di output. Il valore di ogni elemento XML è uno dei due elementi seguenti:
 
 * Rappresentazione testuale dell&#39;elemento nell&#39;elenco (se l&#39;elenco è costituito da tipi di stringa)
 * Un URL che punta al contenuto del documento (se l’elenco è costituito da `com.adobe.idp.Document` oggetti)
 
-   L&#39;esempio seguente è un messaggio XML restituito da un servizio che dispone di un singolo parametro di output denominato *list*, che è un elenco di interi.
-   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un parametro di mappa di output è rappresentato nel messaggio XML risultante come una serie di elementi XML con un elemento per ogni record della mappa. A ogni elemento viene assegnato lo stesso nome della chiave del record mappa. Il valore di ciascun elemento è una rappresentazione testuale del valore del record mappa (se la mappa è costituita da record con un valore stringa) o un URL che punta al contenuto del documento (se la mappa è costituita da record con `com.adobe.idp.Document` valore). Di seguito è riportato un esempio di messaggio XML restituito da un servizio con un singolo parametro di output denominato `map`. Questo valore di parametro è una mappa costituita da record a cui vengono associate le lettere `com.adobe.idp.Document` oggetti.
-   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
+  L&#39;esempio seguente è un messaggio XML restituito da un servizio che dispone di un singolo parametro di output denominato *list*, che è un elenco di interi.
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un parametro di mappa di output è rappresentato nel messaggio XML risultante come una serie di elementi XML con un elemento per ogni record della mappa. A ogni elemento viene assegnato lo stesso nome della chiave del record mappa. Il valore di ciascun elemento è una rappresentazione testuale del valore del record mappa (se la mappa è costituita da record con un valore stringa) o un URL che punta al contenuto del documento (se la mappa è costituita da record con `com.adobe.idp.Document` valore). Di seguito è riportato un esempio di messaggio XML restituito da un servizio con un singolo parametro di output denominato `map`. Questo valore di parametro è una mappa costituita da record a cui vengono associate le lettere `com.adobe.idp.Document` oggetti.
+  ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Chiamate asincrone {#asynchronous-invocations}
 
@@ -183,7 +179,7 @@ Vengono forniti i seguenti esempi di chiamata REST:
 * Richiamare il processo MyApplication/EncryptDocument tramite REST
 * Richiamare il processo MyApplication/EncryptDocument da Acrobat
 
-   Ogni esempio illustra come passare diversi tipi di dati a un processo AEM Forms
+  Ogni esempio illustra come passare diversi tipi di dati a un processo AEM Forms
 
 **Trasmissione di valori booleani a un processo**
 

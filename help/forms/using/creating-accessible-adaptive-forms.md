@@ -10,7 +10,7 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2111'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Dopo aver applicato un tema accessibile, esegui le correzioni aggiuntive elencat
 
 1. Imposta il testo di accessibilità personalizzato per il componente Selezione data. Ad esempio, immetti la data di nascita. Gli assistenti vocali leggono questi testi personalizzati di accessibilità.
 
-1. Utilizza una descrizione breve invece di una descrizione lunga per i componenti del modulo adattivo. Una descrizione lunga aggiunge un pulsante della guida. Assicurati che il modulo adattivo non disponga di alcun pulsante Aiuto.
+1. Utilizza una descrizione breve invece di una descrizione lunga per i componenti del modulo adattivo. Una descrizione lunga aggiunge un pulsante della guida. Assicurati che l’area adattiva non includa alcun pulsante Aiuto.
 
 1. Aggiungere testo personalizzato per l&#39;accesso facilitato a tutte le celle di sola lettura delle tabelle. Disattivare inoltre tutte le celle di sola lettura delle tabelle.
 
@@ -103,7 +103,7 @@ Dopo aver applicato un tema accessibile, esegui le correzioni aggiuntive elencat
 
 L’etichetta o il titolo di un componente identifica ciò che il componente modulo rappresenta. Ad esempio, il testo &quot;Nome&quot; indica agli utenti che devono immettere il proprio nome in un campo di testo. Per essere accessibile agli assistenti vocali, l’etichetta è associata a livello di programmazione a un componente modulo. In alternativa, il controllo modulo viene configurato con informazioni aggiuntive sull&#39;accessibilità.
 
-L’etichetta percepita dagli assistenti vocali non deve necessariamente essere la stessa della didascalia visiva. In alcuni casi può essere utile specificare meglio lo scopo del controllo. Per ogni oggetto campo di un modulo, è possibile utilizzare le opzioni di accesso facilitato per specificare ciò che l&#39;assistente vocale annuncia per identificare il campo modulo specifico.
+L’etichetta percepita dagli assistenti vocali non deve necessariamente essere la stessa della didascalia visiva. In alcuni casi può essere necessario specificare meglio lo scopo del controllo. Per ogni oggetto campo di un modulo, è possibile utilizzare le opzioni di accesso facilitato per specificare ciò che l&#39;assistente vocale annuncia per identificare il campo modulo specifico.
 
 Per utilizzare l&#39;opzione Accessibilità, effettuare le seguenti operazioni:
 

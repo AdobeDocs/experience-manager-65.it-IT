@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -59,13 +59,13 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
 
    * `less` cartella: contiene `less` file di variabili in cui definire `less` variabili e `less mixins` utilizzati per gestire gli stili .css.
 
-     Questa cartella è costituita da `less` file di variabili, `less` file mixin, `less` file che definiscono gli stili utilizzando mixin e variabili. E tutti questi meno file vengono poi importati in styles.less.
+     Questa cartella è costituita da `less` file di variabili, `less` file mixin, `less` file che definiscono gli stili utilizzando mixin e variabili. E tutti questi `less` I file vengono quindi importati in styles.less.
 
    * `css`cartella: contiene i file .css in cui si definiscono gli stili statici da utilizzare nel tema.
 
    **Meno file variabili**: questi sono i file in cui definisci o sostituisci le variabili utilizzate nella definizione degli stili CSS.
 
-   I moduli adattivi forniscono variabili OOTB definite nei seguenti file .less:
+   I moduli adattivi forniscono variabili OOTB definite nei seguenti elementi `.less` file:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -74,7 +74,7 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   È possibile utilizzare un numero inferiore di variabili fornite con i moduli adattivi, ignorare tali variabili oppure creare un numero inferiore di variabili.
+   È possibile utilizzare `less` variabili fornite con i moduli adattivi, è possibile ignorare queste variabili o crearne di nuove `less` variabili.
 
    >[!NOTE]
    >
@@ -131,11 +131,11 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
    }
    ```
 
-   **File Styles.less:** Usa questo file per includere tutti i file meno importanti (variabili, mixin, stili) che devi utilizzare nella libreria client.
+   **File Styles.less:** Usa questo file per includere tutti `less` file (variabili, mixin, stili) da utilizzare nella libreria client.
 
    Nell’esempio seguente `styles.less` file, l’istruzione di importazione può essere inserita in qualsiasi ordine.
 
-   Le istruzioni per importare i seguenti file .less sono obbligatorie:
+   Le istruzioni per importare quanto segue `.less` i file sono obbligatori:
 
    * `globalvariables.less`
    * `layoutvariables.less`

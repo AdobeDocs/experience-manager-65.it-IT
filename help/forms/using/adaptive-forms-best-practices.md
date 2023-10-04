@@ -1,15 +1,11 @@
 ---
 title: Best practice per l’utilizzo dei moduli adattivi
-seo-title: Best practices for working with adaptive forms
 description: Spiega le best practice per la configurazione di un progetto AEM Forms, lo sviluppo di moduli adattivi e l’ottimizzazione delle prestazioni del sistema AEM Forms.
-seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
-uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4734'
 ht-degree: 0%
@@ -293,7 +289,7 @@ Di seguito sono riportate alcune best practice per la localizzazione dei moduli 
 
 * Utilizza frammenti di modulo adattivi per elementi comuni a più moduli e localizza frammenti. In questo modo è possibile localizzare un frammento una volta e rifletterlo in tutte le forme in cui viene utilizzato il frammento localizzato.
 * Eventuali modifiche, come l’aggiunta di un nuovo componente o l’applicazione di uno script in un modulo localizzato, non vengono localizzate automaticamente. Pertanto, è necessario finalizzare un modulo prima di localizzarlo per evitare più cicli di localizzazione.
-* Utilizzare `afAcceptLang` parametro di richiesta per ignorare le impostazioni locali del browser ed eseguire il rendering del modulo nelle impostazioni locali specificate. Ad esempio, il seguente URL forzerà il rendering del modulo nelle impostazioni locali giapponesi, indipendentemente dalle impostazioni locali specificate nell’impostazione del browser:
+* Utilizzare `afAcceptLang` parametro di richiesta per ignorare le impostazioni locali del browser ed eseguire il rendering del modulo nelle impostazioni locali specificate. Ad esempio, il seguente URL viene forzato a eseguire il rendering del modulo nelle impostazioni locali giapponesi, indipendentemente dalle impostazioni locali specificate nell’impostazione del browser:
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 

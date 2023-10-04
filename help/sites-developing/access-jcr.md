@@ -1,41 +1,37 @@
 ---
 title: Come accedere a livello di programmazione al JCR per AEM
-seo-title: How to programmatically access the AEM JCR
-description: Puoi modificare in modo programmatico nodi e proprietà che si trovano all’interno dell’archivio AEM, che fa parte di Adobe Marketing Cloud
-seo-description: You can programmatically modify nodes and properties located within the AEM repository, which is part of the Adobe Marketing Cloud
-uuid: 2051d03f-430a-4cae-8f6d-e5bc727d733f
+description: Puoi modificare in modo programmatico nodi e proprietà che si trovano all’interno dell’archivio AEM, che fa parte di Adobe Experience Cloud
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
 
 # Come accedere a livello di programmazione al JCR per AEM{#how-to-programmatically-access-the-aem-jcr}
 
-Puoi modificare in modo programmatico i nodi e le proprietà che si trovano all’interno dell’archivio Adobe CQ, che fa parte di Adobe Marketing Cloud. Per accedere all’archivio CQ, utilizza l’API Java Content Repository (JCR). Puoi utilizzare l’API Java JCR per eseguire operazioni di creazione, sostituzione, aggiornamento ed eliminazione (CRUD) sul contenuto che si trova all’interno dell’archivio Adobe CQ. Per ulteriori informazioni sull’API Java JCR, consulta [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Puoi modificare in modo programmatico i nodi e le proprietà che si trovano all’interno dell’archivio Adobe CQ, che fa parte di Adobe Experience Cloud. Per accedere all’archivio CQ, utilizza l’API Java™ Content Repository (JCR). Puoi utilizzare l’API Java™ JCR per creare, sostituire, aggiornare ed eliminare (CRUD) contenuti che si trovano all’interno dell’archivio Adobe CQ. Per ulteriori informazioni sull’API Java™ JCR, consulta [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Questo articolo di sviluppo modifica Adobe CQ JCR da un’applicazione Java esterna. Al contrario, puoi modificare il JCR dall’interno di un bundle OSGi utilizzando l’API JCR. Per ulteriori informazioni, consulta [Persistenza dei dati CQ nel Java Content Repository](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
+>Questo articolo di sviluppo modifica Adobe CQ JCR da un’applicazione Java™ esterna. Al contrario, puoi modificare il JCR dall’interno di un bundle OSGi utilizzando l’API JCR. Per ulteriori informazioni, consulta [Persistenza dei dati CQ nel repository dei contenuti Java™](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
 
 >[!NOTE]
 >
->Per utilizzare l’API JCR, aggiungi `jackrabbit-standalone-2.4.0.jar` nel percorso della classe dell’applicazione Java. Puoi ottenere questo file JAR dalla pagina web Java JCR API all’indirizzo [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Per utilizzare l’API JCR, aggiungi `jackrabbit-standalone-2.4.0.jar` nel percorso della classe dell&#39;applicazione Java™. Puoi ottenere questo file JAR dalla pagina web API Java™ JCR all’indirizzo [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Per informazioni su come eseguire query su Adobe CQ JCR utilizzando l’API di query JCR, consulta [Query dei dati di Adobe Experience Manager tramite l’API JCR](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+Per informazioni su come eseguire query su Adobe CQ JCR utilizzando l’API di query JCR, consulta [Query dei dati Adobe Experience Manager tramite l’API JCR](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## Creare un’istanza dell’archivio {#create-a-repository-instance}
 
-Sebbene esistano diversi modi per connettersi a un archivio e stabilire una connessione, questo articolo di sviluppo utilizza un metodo statico che appartiene al `org.apache.jackrabbit.commons.JcrUtils` classe. Il nome del metodo è `getRepository`. Questo metodo accetta un parametro stringa che rappresenta l’URL del server Adobe CQ. Esempio `http://localhost:4503/crx/server`.
+Sebbene esistano diversi modi per connettersi a un archivio e stabilire una connessione, questo articolo di sviluppo utilizza un metodo statico che appartiene al `org.apache.jackrabbit.commons.JcrUtils` classe. Il nome del metodo è `getRepository`. Questo metodo accetta un parametro stringa che rappresenta l’URL del server Adobe CQ. Esempio: `http://localhost:4503/crx/server`.
 
 Il `getRepository`il metodo restituisce un `Repository`come mostrato nell&#39;esempio di codice seguente.
 
@@ -46,14 +42,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Creare un’istanza Session {#create-a-session-instance}
 
-Il `Repository`l’istanza rappresenta l’archivio CRX. Utilizzi il `Repository`per stabilire una sessione con l’archivio. Per creare una sessione, richiama `Repository`dell’istanza `login`e trasmettere un `javax.jcr.SimpleCredentials` oggetto. Il `login`il metodo restituisce un `javax.jcr.Session` dell&#39;istanza.
+Il `Repository`l’istanza rappresenta l’archivio CRX. Utilizzi il `Repository`per stabilire una sessione con l’archivio. Per creare una sessione, richiama `Repository`dell&#39;istanza `login`e trasmettere un `javax.jcr.SimpleCredentials` oggetto. Il `login`il metodo restituisce un `javax.jcr.Session` dell&#39;istanza.
 
 Si crea un `SimpleCredentials`utilizzando il costruttore e passando i seguenti valori stringa:
 
 * Il nome utente;
 * La password corrispondente
 
-Quando trasmetti il secondo parametro, chiama il file dell’oggetto String. `toCharArray`metodo. Il codice seguente mostra come chiamare il `login`metodo che restituisce un `javax.jcr.Sessioninstance`.
+Quando trasmetti il secondo parametro, chiama il file dell&#39;oggetto String `toCharArray`metodo. Il codice seguente mostra come chiamare il `login`metodo che restituisce un `javax.jcr.Sessioninstance`.
 
 ```java
 //Create a Session instance
@@ -62,7 +58,7 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Creare un’istanza del nodo {#create-a-node-instance}
 
-Utilizza un `Session`istanza per creare un `javax.jcr.Node` dell&#39;istanza. A `Node`consente di eseguire operazioni sui nodi. Ad esempio, puoi creare un nuovo nodo. Per creare un nodo che rappresenta il nodo principale, richiama il `Session`dell&#39;istanza `getRootNode` come illustrato nella riga di codice seguente.
+Utilizza un `Session`istanza per creare un `javax.jcr.Node` dell&#39;istanza. A `Node`consente di eseguire operazioni sui nodi. Ad esempio, puoi creare un nodo. Per creare un nodo che rappresenta il nodo principale, richiama il `Session`dell&#39;istanza `getRootNode` come illustrato nella riga di codice seguente.
 
 ```java
 //Create a Node
@@ -79,7 +75,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Recupera valori nodo {#retrieve-node-values}
 
-Per recuperare un nodo e il relativo valore, richiama `Node`dell’istanza `getNode`e passa un valore stringa che rappresenta il percorso completo del nodo. Considera la struttura dei nodi creata nell’esempio di codice precedente. Per recuperare il nodo del giorno, specifica adobe/day, come illustrato nel codice seguente:
+Per recuperare un nodo e il relativo valore, richiama `Node`dell&#39;istanza `getNode`e passa un valore stringa che rappresenta il percorso completo del nodo. Considera la struttura dei nodi creata nell’esempio di codice precedente. Per recuperare il nodo del giorno, specifica adobe/day, come illustrato nel codice seguente:
 
 ```java
 // Retrieve content
@@ -90,7 +86,7 @@ System.out.println(node.getProperty("message").getString());
 
 ## Creare nodi nel repository di Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
 
-L’esempio di codice Java seguente rappresenta una classe Java che si connette ad Adobe CQ, crea un `Session`e aggiunge nuovi nodi. A un nodo viene assegnato un valore di dati, quindi il valore del nodo e il relativo percorso vengono scritti nella console. Al termine della sessione, assicurati di disconnettersi.
+Nell&#39;esempio di codice Java™ riportato di seguito viene illustrata una classe Java™ che si connette ad Adobe CQ e crea un `Session`e aggiunge nuovi nodi. A un nodo viene assegnato un valore di dati, quindi il valore del nodo e il relativo percorso vengono scritti nella console. Al termine della sessione, assicurati di disconnettersi.
 
 ```java
 /*
@@ -142,6 +138,6 @@ try {
 }
 ```
 
-Dopo aver eseguito l&#39;esempio di codice completo e aver creato i nodi, è possibile visualizzare i nuovi nodi in **[!UICONTROL CRXDE Lite]**, come illustrato nella figura seguente.
+Dopo aver eseguito l&#39;esempio di codice completo e aver creato i nodi, è possibile visualizzare i nuovi nodi in **[!UICONTROL CRXDE Liti]**, come illustrato nella figura seguente.
 
 ![chlimage_1-68](assets/chlimage_1-68a.png)

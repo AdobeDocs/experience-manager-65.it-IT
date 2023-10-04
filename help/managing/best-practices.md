@@ -1,22 +1,22 @@
 ---
 title: Gestione dei progetti - Elenco di controllo delle best practice
-description: La gestione di un progetto per l’implementazione di Adobe Experience Manager (AEM) richiede pianificazione e comprensione. Gli elenchi di controllo per progetti sono intesi come una serie di best practice per la consegna dei progetti. Offrono assistenza in tutte le fasi del ciclo di vita del progetto e un monitoraggio di alto livello dello stato attuale.
+description: La gestione di un progetto per l’implementazione di Adobe Experience Manager (AEM) richiede pianificazione e comprensione. Gli elenchi di controllo per progetti sono intesi come una serie di best practice per la consegna dei progetti. Offrono assistenza in tutte le fasi del ciclo di vita del progetto e un monitoraggio di alto livello dello stato.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3240'
 ht-degree: 1%
 
 ---
 
 # Gestione dei progetti - Elenco di controllo delle best practice{#managing-projects-best-practices-checklist}
 
-La gestione di un progetto per l’implementazione di Adobe Experience Manager (AEM) richiede una pianificazione e una comprensione approfondite che garantiscano la consapevolezza dei problemi e delle decisioni (correlate) da prendere prima e durante l’implementazione del progetto.
+La gestione di un progetto per l’implementazione di Adobe Experience Manager (AEM) richiede pianificazione e comprensione, in modo da essere consapevoli dei problemi e delle decisioni (correlate) da adottare prima e durante l’implementazione del progetto.
 
 Per aiutarti, le best practice consistono in:
 
@@ -25,7 +25,7 @@ Per aiutarti, le best practice consistono in:
    * Definisce gli input e i risultati finali in base a fase, milestone e persona.
    * Fornisce panoramiche automatizzate (qualità, integrità e completezza) per indicare lo stato di avanzamento e l’integrità del progetto.
 
-* Documentazione, basata su [elenco di controllo](/help/managing/best-practices-checklist.md), che specifica:
+* Documentazione basata su [elenco di controllo](/help/managing/best-practices-checklist.md) che specifica:
 
    * [Heartbeat del progetto](#projectheartbeat) analisi.
    * [Stato per Ruolo](#status-by-role) panoramica.
@@ -117,7 +117,7 @@ I Quattro Fattori:
 
 ### Pianificazione {#planning}
 
-La pianificazione del progetto consolida la preparazione. Qui è necessario iniziare a convertire gli obiettivi e le aspettative in una roadmap ben definita, costituita da compiti concreti, vincolati da una comunicazione chiara, con revisioni rigorose per misurare i progressi.
+La pianificazione del progetto consolida la preparazione. Dovresti iniziare a convertire obiettivi e aspettative in una roadmap ben definita, costituita da compiti concreti, vincolati da una comunicazione chiara, con revisioni rigorose per misurare i progressi.
 
 #### Milestone {#milestones-1}
 
@@ -135,7 +135,7 @@ La pianificazione del progetto consolida la preparazione. Qui è necessario iniz
 
 * **Comunicazione**
 
-  La comunicazione è sempre fondamentale per il successo di qualsiasi progetto. Devi comunicare in modo chiaro ed efficiente per assicurarti che tutti siano:
+  La comunicazione è sempre fondamentale per il successo di qualsiasi progetto. Comunica in modo chiaro ed efficiente per garantire che tutti siano:
 
    * Lavorare per raggiungere gli stessi obiettivi di base
    * Dalla stessa base di informazioni
@@ -195,7 +195,7 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
 
   Si concentra su:
 
-   * Come interagiranno tra loro e con gli utenti.
+   * Come interagiscono tra loro e con gli utenti.
    * I dati che devono essere utilizzati e prodotti dalle applicazioni, anziché la loro struttura interna.
 
   Le definizioni dovrebbero comprendere:
@@ -203,7 +203,7 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
    * Struttura del codice di base per il progetto
    * Artefatti di codice (bundle, pacchetti e così via)
    * Raggruppamenti dei modelli/componenti e delle loro relazioni
-   * Dettagli di alto livello delle personalizzazioni richieste (seguiranno sovrapposizioni specifiche in seguito)
+   * Dettagli di alto livello delle personalizzazioni richieste (le sovrapposizioni specifiche verranno riportate in seguito)
    * Progettazione dei flussi di lavoro richiesti dalla soluzione (ad esempio creazione, approvazione, pubblicazione, trasformazioni, importazioni ed esportazioni di contenuti)
    * Particolare attenzione per eventuali moduli complessi, come MSM, Commerce, integrazione di terze parti
 
@@ -211,8 +211,8 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
 
   L’integrazione del sistema richiede di pianificare (quindi implementare):
 
-   * Come tutti i sottosistemi e [integrazioni di soluzioni](/help/sites-administering/integration.md) saranno riuniti per operare come un unico sistema coerente
-   * Come verranno integrati i sistemi di terze parti, insieme a eventuali considerazioni speciali, come offline/online, lato client/lato browser o gestione del fallover quando un sistema di terze parti è inattivo
+   * Come tutti i sottosistemi e [integrazioni di soluzioni](/help/sites-administering/integration.md) sono riuniti per funzionare come un unico sistema coerente
+   * Come vengono integrati i sistemi di terze parti, insieme a eventuali considerazioni speciali, come offline/online, lato client/lato browser o gestione del fallover quando un sistema di terze parti è inattivo
 
 * **Concetto del test**
 
@@ -570,7 +570,7 @@ Il responsabile della sicurezza:
 
 * Autori e utenti finali
 
-   * Le persone che utilizzeranno il sistema per creare e gestire il contenuto del sito Web.
+   * Persone che utilizzano il sistema per creare e gestire il contenuto del sito Web.
 
 ## Documenti e risultati finali richiesti {#required-documents-and-deliverables}
 

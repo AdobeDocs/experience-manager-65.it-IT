@@ -1,18 +1,14 @@
 ---
 title: Funzione di ricerca
-seo-title: Search Feature
 description: Aggiunta e configurazione della ricerca in un sito community
-seo-description: Adding and configuring Search to a Communities site
-uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 exl-id: e252b0e5-a2f8-468e-ac8c-951a5b0f2e32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 2%
 
 ---
@@ -57,8 +53,7 @@ Aggiungendo i percorsi di ricerca tramite il pulsante Aggiungi elemento, la rice
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Pagina dei risultati]**
-I risultati verranno visualizzati in una pagina separata specificata utilizzando il browser per selezionare una pagina contenente 
-`Search Results` componente.
+I risultati verranno visualizzati in una pagina separata specificata utilizzando il browser per selezionare una pagina contenente `Search Results` componente.
 
 ## Risultati di ricerca {#search-results}
 
@@ -90,11 +85,11 @@ Sotto **[!UICONTROL Impostazioni risultati di ricerca]** , è possibile specific
 
 * **[!UICONTROL Risultati di ricerca per pagina]**
 
-   Definisci il numero di topic/post mostrati per pagina. Il valore predefinito è 10.
+  Definisci il numero di topic/post mostrati per pagina. Il valore predefinito è 10.
 
 * **[!UICONTROL Percorsi di ricerca]**
 
-   Aggiungendo i percorsi di ricerca tramite il pulsante Aggiungi elemento, la ricerca del contenuto è limitata.
+  Aggiungendo i percorsi di ricerca tramite il pulsante Aggiungi elemento, la ricerca del contenuto è limitata.
 
 ## Informazioni aggiuntive {#additional-information}
 

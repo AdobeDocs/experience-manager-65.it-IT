@@ -1,16 +1,14 @@
 ---
 title: Modelli di pagina per le app mobili
 description: Segui questa pagina per ulteriori informazioni sui modelli di pagina. I componenti di pagina creati per la tua app si basano sul componente /libs/mobileapps/components/angular/ng-page.
-uuid: c53901c9-5974-4c6b-ac61-1c094a93c9d6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2666'
 ht-degree: 0%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 0%
 
 ## Modelli di pagina per le app mobili {#page-templates-for-mobile-apps-1}
 
-I componenti di pagina creati per la tua app si basano sul componente /libs/mobileapps/components/angular/ng-page ([apri in CRXDE Lite su un server locale](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Questo componente contiene i seguenti script JSP che il componente eredita o sostituisce:
+I componenti di pagina creati per la tua app si basano sul componente /libs/mobileapps/components/angular/ng-page ([apri in CRXDE Liti su un server locale](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Questo componente contiene i seguenti script JSP che il componente eredita o sostituisce:
 
 * ng-page.jsp
 * head.jsp
@@ -316,7 +314,7 @@ La directory after-platform_add contiene `copy_AMS_Conifg.js` file. Questo scrip
 
 #### .cordova/hook/after-preparation/ {#cordova-hooks-after-prepare}
 
-La directory di post-preparazione contiene `copy_resource_files.js` file. Questo script copia una serie di immagini di icone e schermate introduttive in posizioni specifiche della piattaforma.
+La directory di post-preparazione contiene `copy_resource_files.js` file. Questo script copia diverse immagini di icone e schermate introduttive in posizioni specifiche della piattaforma.
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 

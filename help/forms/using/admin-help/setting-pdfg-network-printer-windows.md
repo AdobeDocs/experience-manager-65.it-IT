@@ -1,17 +1,13 @@
 ---
 title: Configurazione di una stampante di rete PDFG (solo Windows)
-seo-title: Setting up a PDFG Network Printer (Windows only)
 description: Scopri come configurare una stampante di rete PDFG ( solo Windows )
-seo-description: Learn how to set up a PDFG Network Printer ( Windows only )
-uuid: 13b8481e-5ef0-4a07-9602-7bc4d9e05dd4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -30,7 +26,7 @@ Per configurare una stampante di rete PDFG sono necessari i seguenti passaggi:
 1. Nella console di amministrazione, configurare le impostazioni della stampante di rete PDFG. (vedere [Configurare le impostazioni della stampante di rete PDFG](setting-pdfg-network-printer-windows.md#configure-the-pdfg-network-printer-settings).)
 1. Assicurati che gli utenti siano configurati con un indirizzo e-mail valido nel database dei moduli AEM e assegna l’autorizzazione PDFGUser a ogni utente. <!-- Fix broken link See Setting up and organizing users -->
 1. Verificare che JRE6 a 32 bit sia installato nei computer degli utenti.
-1. Installare la stampante sui computer degli utenti. (vedere [Installare la stampante di rete PDFG sul computer di un utente](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
+1. Installare la stampante nei computer degli utenti. (vedere [Installare la stampante di rete PDFG sul computer di un utente](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
 
 ## Configura impostazioni e-mail per stampante di rete PDFG {#configure-email-settings-for-pdfg-network-printer}
 
