@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 6%
@@ -39,7 +39,6 @@ Quando si amministrano i flussi di lavoro è possibile avviarli utilizzando dive
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Progetti traduzione](/help/sites-administering/tc-manage.md)
 >
-
 
 ## Modelli flusso di lavoro {#workflow-models}
 
@@ -101,15 +100,16 @@ Un pacchetto di flusso di lavoro:
 
    * **Payload**
 
-      Può essere una pagina, un nodo, una risorsa, un pacchetto, e così via.
+     Può trattarsi di una pagina, un nodo, una risorsa, un pacchetto, ecc.
 
    * **Titolo**
 
-      Titolo facoltativo per identificare questa istanza.
+     Titolo facoltativo per identificare questa istanza.
 
    * **Commenti**
 
-      Un commento facoltativo per indicare i dettagli di questa istanza.
+     Un commento facoltativo per indicare i dettagli di questa istanza.
+
    ![wf-104](assets/wf-104.png)
 
 ## Creazione di una configurazione del modulo di avvio {#creating-a-launcher-configuration}
@@ -121,32 +121,33 @@ Un pacchetto di flusso di lavoro:
 
    * **Tipo evento**
 
-      Tipo di evento che avvierà il flusso di lavoro:
+     Tipo di evento che avvierà il flusso di lavoro:
 
       * Creato
       * Modificato
       * Rimosso
+
    * **Tipo di nodo**
 
-      Tipo di nodo a cui si applica il modulo di avvio del flusso di lavoro.
+     Tipo di nodo a cui si applica il modulo di avvio del flusso di lavoro.
 
    * **Percorso**
 
-      Percorso a cui si applica il modulo di avvio dei flussi di lavoro.
+     Percorso a cui si applica il modulo di avvio dei flussi di lavoro.
 
    * **Modalità di esecuzione**
 
-      Tipo di server a cui si applica il modulo di avvio del flusso di lavoro. Seleziona **Autore**, **Pubblica**, o **Creazione e pubblicazione**.
+     Tipo di server a cui si applica il modulo di avvio del flusso di lavoro. Seleziona **Autore**, **Pubblica**, o **Creazione e pubblicazione**.
 
    * **Condizioni**
 
-      Un elenco di condizioni per i valori dei nodi che, una volta valutati, determinano se il flusso di lavoro viene avviato. Ad esempio, la seguente condizione causa l’avvio del flusso di lavoro quando il nodo ha un nome di proprietà con il valore Utente:
+     Un elenco di condizioni per i valori dei nodi che, una volta valutati, determinano se il flusso di lavoro viene avviato. Ad esempio, la seguente condizione causa l’avvio del flusso di lavoro quando il nodo ha un nome di proprietà con il valore Utente:
 
-      name==User
+     name==User
 
    * **Funzioni**
 
-      Elenco di funzionalità da attivare. Seleziona le funzioni richieste utilizzando il selettore a discesa.
+     Elenco di funzionalità da attivare. Seleziona le funzioni richieste utilizzando il selettore a discesa.
 
    * **Funzioni disabilitate**
 
@@ -154,38 +155,35 @@ Un pacchetto di flusso di lavoro:
 
    * **Modello flusso di lavoro**
 
-      Il flusso di lavoro da avviare quando il Tipo di evento si verifica sul Tipo di nodo e/o Percorso nella Condizione definita.
+     Il flusso di lavoro da avviare quando il Tipo di evento si verifica sul Tipo di nodo e/o Percorso nella Condizione definita.
 
    * **Descrizione**
 
-      Testo personalizzato per descrivere e identificare la configurazione del modulo di avvio.
+     Testo personalizzato per descrivere e identificare la configurazione del modulo di avvio.
 
    * **Attiva**
 
-      Controlla se il modulo di avvio del flusso di lavoro è attivato:
+     Controlla se il modulo di avvio del flusso di lavoro è attivato:
 
       * Seleziona **Abilita** per avviare i flussi di lavoro quando le proprietà di configurazione sono soddisfatte.
       * Seleziona **Disattiva** quando il flusso di lavoro non deve essere eseguito (nemmeno quando le proprietà di configurazione sono soddisfatte).
+
    * **Escludi elenco**
 
-      Questo specifica eventuali eventi JCR da escludere (ovvero da ignorare) quando si stabilisce se un flusso di lavoro deve essere attivato.
+     Questo specifica eventuali eventi JCR da escludere (ovvero da ignorare) quando si stabilisce se un flusso di lavoro deve essere attivato.
 
-      Questa proprietà del modulo di avvio è un elenco di elementi separati da virgole: &quot;
+     Questa proprietà del modulo di avvio è un elenco di elementi separati da virgole: &quot;
 
       * `property-name` ignora qualsiasi `jcr` evento che si è attivato sul nome della proprietà specificato. &quot;
-      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite [ `ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite [`ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
 
-      Ad esempio:
+     Ad esempio:
 
-      `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
+     `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
 
-      Questa funzione può essere utilizzata per ignorare eventuali modifiche attivate da un altro processo di flusso di lavoro aggiungendo l’elemento da escludere:
+     Questa funzione può essere utilizzata per ignorare eventuali modifiche attivate da un altro processo di flusso di lavoro aggiungendo l’elemento da escludere:
 
-      `event-user-data:changedByWorkflowProcess`
-
-
-
-
+     `event-user-data:changedByWorkflowProcess`
 
 1. Seleziona **Crea**, per creare il modulo di avvio e tornare alla console.
 

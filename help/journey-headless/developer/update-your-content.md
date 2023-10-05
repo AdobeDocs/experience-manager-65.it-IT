@@ -2,10 +2,10 @@
 title: Come aggiornare il contenuto utilizzando le API di AEM Assets.
 description: In questa parte del Percorso per sviluppatori Headless di AEM, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1066'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -180,7 +180,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## API HTTP di Assets e frammenti di contenuto {#assets-http-api-content-fragments}
 
-I frammenti di contenuto vengono utilizzati per la distribuzione headless e un frammento di contenuto è un tipo speciale di risorsa. Sono utilizzati per accedere a dati strutturati, quali testi, numeri, date, ecc.
+I frammenti di contenuto vengono utilizzati per la distribuzione headless e un frammento di contenuto è un tipo speciale di risorsa. Vengono utilizzati per accedere a dati strutturati, tra cui testi, numeri, date.
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.

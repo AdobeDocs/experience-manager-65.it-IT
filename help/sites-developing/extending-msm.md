@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '2585'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -184,7 +184,7 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 
 Per creare una nuova configurazione di rollout:
 
-1. Apri CRXDE Lite; ad esempio:
+1. Apri CRXDE Liti; ad esempio:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Accedi a :
@@ -232,7 +232,7 @@ Le configurazioni di rollout sono memorizzate sotto [nodo di configurazione roll
 
 Aggiungi nodi figlio di tipo `cq:LiveSyncAction` per aggiungere azioni di sincronizzazione alla configurazione di rollout. L&#39;ordine dei nodi delle azioni di sincronizzazione determina l&#39;ordine in cui si verificano le azioni.
 
-1. Sempre in CRXDE Lite, seleziona il tuo [Configurazione rollout](#create-the-rollout-configuration) nodo.
+1. Sempre in CRXDE Liti, seleziona il tuo [Configurazione rollout](#create-the-rollout-configuration) nodo.
 
    Ad esempio:
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
@@ -560,7 +560,7 @@ Crea la configurazione di rollout MSM che utilizza `LiveActionFactory` creato:
 
 Configura la configurazione di rollout creata nella procedura precedente in modo che utilizzi `ExampleLiveActionFactory` classe.
 
-1. Apri CRXDE Lite; ad esempio, [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
+1. Apri CRXDE Liti; ad esempio, [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
 1. Crea il seguente nodo sotto `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Nome**: `exampleLiveAction`
@@ -638,7 +638,7 @@ L&#39;elenco delle lingue è memorizzato sotto `/libs/wcm/core/resources/languag
 
 Per modificare le lingue:
 
-1. Apri CRXDE Lite nel browser web; ad esempio, [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
+1. Apri CRXDE Liti nel browser web; ad esempio, [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
 1. Seleziona la `/apps` cartella e fai clic su **Crea**, quindi **Crea cartella.**
 
    Denomina la nuova cartella `wcm`.

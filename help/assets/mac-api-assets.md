@@ -6,10 +6,10 @@ role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1746'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -39,7 +39,7 @@ Dopo il [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresent
 
 ## Frammenti di contenuto {#content-fragments}
 
-A [frammento di contenuto](/help/assets/content-fragments/content-fragments.md) è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, tra cui testi, numeri, date. Poiché esistono diverse differenze `standard` risorse (come immagini o documenti), si applicano alcune regole aggiuntive alla gestione dei frammenti di contenuto.
+A [frammento di contenuto](/help/assets/content-fragments/content-fragments.md) è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, ad esempio testi, numeri, date e così via. Poiché esistono diverse differenze `standard` risorse (come immagini o documenti), si applicano alcune regole aggiuntive alla gestione dei frammenti di contenuto.
 
 Per ulteriori informazioni, consulta [Supporto per frammenti di contenuto nell’API HTTP di Experience Manager Assets](/help/assets/assets-api-content-fragments.md).
 

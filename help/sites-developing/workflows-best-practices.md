@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 1%
@@ -88,7 +88,7 @@ Durante la scrittura di processi di flusso di lavoro personalizzati, è necessar
 
 ### Posizioni {#locations}
 
-Le definizioni di modelli di flusso di lavoro, moduli di avvio, script e notifiche vengono conservate nell’archivio in base al tipo, ovvero predefinite, personalizzate e così via.
+Le definizioni di modelli di flusso di lavoro, moduli di avvio, script e notifiche vengono conservate nell’archivio in base al tipo, tra cui preconfigurata, personalizzata.
 
 >[!NOTE]
 >
@@ -100,35 +100,34 @@ I modelli di flusso di lavoro vengono memorizzati nell’archivio in base al tip
 
 * Le progettazioni predefinite dei flussi di lavoro si trovano nel seguente percorso:
 
-   `/libs/settings/workflow/models/`
+  `/libs/settings/workflow/models/`
 
-   >[!CAUTION]
-   >
-   >Non:
-   >
-   >* inserisci uno dei modelli di flusso di lavoro personalizzati in questa cartella
-   >* modificare qualsiasi elemento in `/libs`
-
-   >
-   >Poiché eventuali modifiche possono essere sovrascritte durante l&#39;aggiornamento o l&#39;installazione di hotfix, Cumulative Fix Pack o Service Pack.
+  >[!CAUTION]
+  >
+  >Non:
+  >
+  >* inserisci uno dei modelli di flusso di lavoro personalizzati in questa cartella
+  >* modificare qualsiasi elemento in `/libs`
+  >
+  >Poiché eventuali modifiche possono essere sovrascritte durante l&#39;aggiornamento o l&#39;installazione di hotfix, Cumulative Fix Pack o Service Pack.
 
 * Le progettazioni dei flussi di lavoro personalizzati si trovano in:
 
-   ```
-   /conf/global/settings/workflow/models/...
-   ```
+  ```
+  /conf/global/settings/workflow/models/...
+  ```
 
 * Le progettazioni dei flussi di lavoro in fase di esecuzione (sia pronte all’uso che personalizzate) si trovano nel seguente percorso:
 
-   `/var/workflow/models/`
+  `/var/workflow/models/`
 
 * Le progettazioni dei flussi di lavoro legacy (sia in fase di progettazione che in fase di runtime) si trovano nel seguente percorso:
 
-   `/etc/workflow/models/`
+  `/etc/workflow/models/`
 
-   >[!NOTE]
-   >
-   >Se questi progetti vengono modificati *utilizzo dell’interfaccia utente dell’AEM*, quindi i dettagli verranno copiati nelle nuove posizioni.
+  >[!NOTE]
+  >
+  >Se questi progetti vengono modificati *utilizzo dell’interfaccia utente dell’AEM*, quindi i dettagli verranno copiati nelle nuove posizioni.
 
 #### Posizioni - Moduli di avvio dei flussi di lavoro {#locations-workflow-launchers}
 
@@ -136,31 +135,30 @@ Anche le definizioni del modulo di avvio dei flussi di lavoro vengono memorizzat
 
 * I moduli di avvio dei flussi di lavoro preconfigurati si trovano nel seguente percorso:
 
-   `/libs/settings/workflow/launcher/`
+  `/libs/settings/workflow/launcher/`
 
-   >[!CAUTION]
-   >
-   >Non:
-   >
-   >* inserisci uno dei moduli di avvio dei flussi di lavoro personalizzati in questa cartella
-   >* modificare qualsiasi elemento in `/libs`
-
-   >
-   >Poiché eventuali modifiche possono essere sovrascritte durante l&#39;aggiornamento o l&#39;installazione di hotfix, Cumulative Fix Pack o Service Pack.
+  >[!CAUTION]
+  >
+  >Non:
+  >
+  >* inserisci uno dei moduli di avvio dei flussi di lavoro personalizzati in questa cartella
+  >* modificare qualsiasi elemento in `/libs`
+  >
+  >Poiché eventuali modifiche possono essere sovrascritte durante l&#39;aggiornamento o l&#39;installazione di hotfix, Cumulative Fix Pack o Service Pack.
 
 * I moduli di avvio dei flussi di lavoro personalizzati si trovano in:
 
-   ```
-   /conf/global/settings/workflow/launcher/...
-   ```
+  ```
+  /conf/global/settings/workflow/launcher/...
+  ```
 
 * I moduli di avvio dei flussi di lavoro legacy si trovano nel seguente percorso:
 
-   `/etc/workflow/launcher/`
+  `/etc/workflow/launcher/`
 
-   >[!NOTE]
-   >
-   >Se queste definizioni vengono modificate *utilizzo dell’interfaccia utente dell’AEM*, quindi i dettagli verranno copiati nelle nuove posizioni.
+  >[!NOTE]
+  >
+  >Se queste definizioni vengono modificate *utilizzo dell’interfaccia utente dell’AEM*, quindi i dettagli verranno copiati nelle nuove posizioni.
 
 #### Posizioni - Script del flusso di lavoro {#locations-workflow-scripts}
 
@@ -168,27 +166,26 @@ Anche gli script di flusso di lavoro vengono memorizzati nell’archivio in base
 
 * Gli script di flusso di lavoro predefiniti sono disponibili nel seguente percorso:
 
-   `/libs/workflow/scripts/`
+  `/libs/workflow/scripts/`
 
-   >[!CAUTION]
-   >
-   >Non:
-   >
-   >* inserisci uno degli script di flusso di lavoro personalizzati in questa cartella
-   >* modificare qualsiasi elemento in `/libs`
-
-   >
-   >Poiché eventuali modifiche possono essere sovrascritte durante l&#39;aggiornamento o l&#39;installazione di hotfix, Cumulative Fix Pack o Service Pack.
+  >[!CAUTION]
+  >
+  >Non:
+  >
+  >* inserisci uno degli script di flusso di lavoro personalizzati in questa cartella
+  >* modificare qualsiasi elemento in `/libs`
+  >
+  >Poiché eventuali modifiche possono essere sovrascritte durante l&#39;aggiornamento o l&#39;installazione di hotfix, Cumulative Fix Pack o Service Pack.
 
 * Gli script di flusso di lavoro personalizzati si trovano in:
 
-   ```
-   /apps/workflow/scripts/...
-   ```
+  ```
+  /apps/workflow/scripts/...
+  ```
 
 * Gli script di flusso di lavoro legacy si trovano nel percorso seguente:
 
-   `/etc/workflow/scripts/`
+  `/etc/workflow/scripts/`
 
 #### Posizioni - Notifiche flusso di lavoro {#locations-workflow-notifications}
 
@@ -196,34 +193,33 @@ Le notifiche del flusso di lavoro vengono memorizzate anche nell’archivio in b
 
 * Le definizioni predefinite delle notifiche dei flussi di lavoro si trovano nel seguente percorso:
 
-   `/libs/settings/workflow/notification/`
+  `/libs/settings/workflow/notification/`
 
-   >[!CAUTION]
-   >
-   >Non:
-   >
-   >* inserisci una delle definizioni di notifica del flusso di lavoro personalizzato in questa cartella
-   >* modificare qualsiasi elemento in `/libs`
-
-   >
-   >Poiché eventuali modifiche possono essere sovrascritte durante l&#39;aggiornamento o l&#39;installazione di hotfix, Cumulative Fix Pack o Service Pack.
+  >[!CAUTION]
+  >
+  >Non:
+  >
+  >* inserisci una delle definizioni di notifica del flusso di lavoro personalizzato in questa cartella
+  >* modificare qualsiasi elemento in `/libs`
+  >
+  >Poiché eventuali modifiche possono essere sovrascritte durante l&#39;aggiornamento o l&#39;installazione di hotfix, Cumulative Fix Pack o Service Pack.
 
 * Le definizioni di notifica del flusso di lavoro personalizzate si trovano in:
 
-   ```
-   /conf/global/settings/workflow/notification/...
-   ```
+  ```
+  /conf/global/settings/workflow/notification/...
+  ```
 
-   >[!NOTE]
-   >
-   >Se desideri ignorare il testo di una notifica del flusso di lavoro, crea un percorso sovrapposto in:
-   >
-   >
-   >`/conf/global/settings/workflow/notification/<path-under-libs>`
+  >[!NOTE]
+  >
+  >Se desideri ignorare il testo di una notifica del flusso di lavoro, crea un percorso sovrapposto in:
+  >
+  >
+  >`/conf/global/settings/workflow/notification/<path-under-libs>`
 
 * Le definizioni delle notifiche dei flussi di lavoro legacy si trovano nel percorso seguente:
 
-   `/etc/workflow/notification/`
+  `/etc/workflow/notification/`
 
 ### Sessioni di elaborazione {#process-sessions}
 

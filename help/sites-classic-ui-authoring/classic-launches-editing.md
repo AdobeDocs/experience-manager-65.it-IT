@@ -1,6 +1,6 @@
 ---
 title: Modifica dei lanci
-description: Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificare il contenuto nella copia di lancio delle pagine.
+description: Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificarne il contenuto nella copia di lancio delle pagine.
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,21 +9,21 @@ topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 3%
+ht-degree: 28%
 
 ---
 
 # Modifica dei lanci{#editing-launches}
 
-## Modifica delle pagine di un lancio {#editing-launch-pages}
+## Modifica delle pagine di lancio {#editing-launch-pages}
 
-Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificare il contenuto nella copia di lancio delle pagine.
+Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificarne il contenuto nella copia di lancio delle pagine.
 
 1. Apri la pagina per la modifica.
-1. Nella barra laterale, seleziona la **Controllo delle versioni** , quindi espandere **Lanci** gruppo. Il titolo del lancio attualmente in fase di modifica utilizza un font in grassetto.
+1. In Sidekick, seleziona la **Controllo delle versioni** , quindi espandere **Lanci** gruppo. Il titolo del lancio attualmente in fase di modifica utilizza un font in grassetto.
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
@@ -34,7 +34,7 @@ Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modifi
    >
    >È possibile utilizzare **Pagina** scheda della barra laterale per eseguire azioni quali **Crea pagina figlia**, tra gli altri.
 
-## Modifica di una configurazione di Launch {#editing-a-launch-configuration}
+## Modifica di una configurazione di lancio {#editing-a-launch-configuration}
 
 Dopo aver creato un lancio, puoi modificare il nome del lancio e la data del lancio. Puoi anche specificare un’immagine da associare al lancio.
 
@@ -48,16 +48,15 @@ Dopo aver creato un lancio, puoi modificare il nome del lancio e la data del lan
       * **Data attivazione**: equivalente alla data di lancio
       * **Produzione pronta**
 
-      Consulta [Lanci: l’ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e sull’interazione di questi campi.
+     Consulta [Lanci: l’ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e sull’interazione di questi campi.
 
    * In **Immagine** , puoi caricare un file di immagine.
-
 
 1. Fai clic su **Salva**.
 
 ## Esplorazione dello stato di avvio di una pagina {#discovering-the-launch-status-of-a-page}
 
-Quando modifichi un lancio di una pagina, le informazioni su tale lancio vengono visualizzate nella parte inferiore della sezione **Controllo delle versioni** scheda della barra laterale:
+Quando modifichi un lancio di una pagina, le informazioni su tale lancio vengono visualizzate nella parte inferiore della sezione **Controllo delle versioni** scheda del Sidekick:
 
 * Nome del lancio.
 * L’ora dall’ultima modifica.

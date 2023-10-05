@@ -10,7 +10,7 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
@@ -77,17 +77,17 @@ Vengono utilizzati per illustrare le prestazioni in condizioni diverse:
 
 * Normale
 
-   Condizioni in cui si troverà il sito, ad esempio, il 90% del tempo. Ad esempio, quando solo una parte degli autori utilizza il sistema.
+  Condizioni in cui si troverà il sito, ad esempio, il 90% del tempo. Ad esempio, quando solo una parte degli autori utilizza il sistema.
 
 * Picco
 
-   Condizioni che si verificheranno per un periodo di tempo proporzionalmente breve a causa di circostanze particolari; ad esempio, quando tutti gli autori utilizzano il sistema contemporaneamente o quando vengono pubblicati nuovi contenuti e un numero maggiore di visitatori visualizza il sito.
+  Condizioni che si verificheranno per un periodo di tempo proporzionalmente breve a causa di circostanze particolari; ad esempio, quando tutti gli autori utilizzano il sistema contemporaneamente o quando vengono pubblicati nuovi contenuti e un numero maggiore di visitatori visualizza il sito.
 
 * Estrema
 
-   Può essere utilizzato per emulare la previsione delle prestazioni quando vengono pubblicati nuovi contenuti estremamente interessanti sul sito web. Quindi può essere visto un picco estremo - anche se questo può non essere sempre completamente prevedibile.
+  Può essere utilizzato per emulare la previsione delle prestazioni quando vengono pubblicati nuovi contenuti estremamente interessanti sul sito web. Quindi può essere visto un picco estremo - anche se questo può non essere sempre completamente prevedibile.
 
-   Queste circostanze si verificano talvolta quando vengono messi a disposizione biglietti per eventi specifici o quando viene pubblicato per la prima volta un sito web molto atteso.
+  Queste circostanze si verificano talvolta quando vengono messi a disposizione biglietti per eventi specifici o quando viene pubblicato per la prima volta un sito web molto atteso.
 
 I risultati vengono quindi utilizzati per ottimizzare l’applicazione.
 

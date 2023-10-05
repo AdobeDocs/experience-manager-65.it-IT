@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1969'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Il JSONP Store è come qualsiasi altro store, ma carica informazioni che proveng
 >
 >L’archivio JSONP non memorizza nella cache le informazioni nel cookie, ma recupera tali dati a ogni caricamento di pagina.
 
-**Dati profilo** Mostra le informazioni raccolte nel profilo utente. Ad esempio, genere, età, indirizzo e-mail e così via.
+**Dati profilo** Mostra le informazioni raccolte nel profilo utente. Ad esempio, genere, età, indirizzo e-mail, tra gli altri.
 
 **Segmenti risolti** Mostra quali segmenti vengono attualmente risolti (spesso dipendenti da altre informazioni visualizzate nel contesto client). Ciò è di tuo interesse durante la configurazione di una campagna.
 

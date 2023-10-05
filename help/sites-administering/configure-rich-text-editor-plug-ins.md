@@ -3,17 +3,17 @@ title: Configurare i plug-in dell’Editor Rich Text
 description: Scopri come configurare i plug-in dell’Editor Rich Text di Adobe Experience Manager per abilitare singole funzionalità.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
-source-wordcount: '4405'
-ht-degree: 5%
+source-wordcount: '4395'
+ht-degree: 4%
 
 ---
 
 
 # Configurare i plug-in dell’Editor Rich Text {#configure-the-rich-text-editor-plug-ins}
 
-Le funzionalità dell’editor Rich Text sono disponibili tramite una serie di plug-in, ciascuno con la proprietà Features. È possibile configurare la proprietà features per attivare o disattivare una o più funzionalità dell’editor Rich Text. Questo articolo descrive come configurare in modo specifico i plug-in dell’editor Rich Text.
+Le funzionalità dell’editor Rich Text sono disponibili tramite una serie di plug-in, ciascuno con la proprietà Features. È possibile configurare la proprietà features per abilitare o disabilitare una o più funzionalità dell’editor Rich Text. Questo articolo descrive come configurare in modo specifico i plug-in dell’editor Rich Text.
 
 Per informazioni dettagliate sulle altre configurazioni dell’editor Rich Text, consulta [Configurare l’editor Rich Text](/help/sites-administering/rich-text-editor.md).
 
@@ -41,7 +41,7 @@ Per impostazione predefinita, `format`, `link`, `list`, `justify`, e `control` I
       * `text: .../text/dialog/items/tab1/items/text`
 
    * Sono di tipo: **jcr:primaryType** `cq:Widget`
-   * Entrambi hanno la seguente proprietà:
+   * Entrambi hanno le seguenti proprietà:
 
       * **Nome** `name`
       * **Tipo** `String`
@@ -71,7 +71,7 @@ Il `findreplace` Il plug-in non richiede alcuna configurazione. Funziona immedia
 
 Quando si utilizza la funzionalità di sostituzione, la stringa sostitutiva deve essere immessa contemporaneamente alla stringa da trovare. Tuttavia, è ancora possibile fare clic su Trova per cercare la stringa prima di sostituirla. Se la stringa sostitutiva viene immessa dopo aver fatto clic su Trova, la ricerca riprende dall’inizio del testo.
 
-La finestra di dialogo Trova e sostituisci diventa trasparente quando si fa clic su Trova e diventa opaca quando si fa clic su Sostituisci. Ciò consente all’autore di rivedere il testo che verrà sostituito. Se si fa clic su Sostituisci tutto, la finestra di dialogo si chiude e viene visualizzato il numero di sostituzioni effettuate.
+La finestra di dialogo Trova e sostituisci diventa trasparente quando si fa clic su Trova e diventa opaca quando si fa clic su Sostituisci. Questo consente all’autore di rivedere il testo che l’autore sostituisce. Se gli utenti fanno clic su Sostituisci tutto, la finestra di dialogo si chiude e viene visualizzato il numero di sostituzioni effettuate.
 
 ## Configurare le modalità Incolla {#paste-modes}
 
@@ -81,7 +81,7 @@ Quando si utilizza l’editor Rich Text, gli autori possono incollare il contenu
 
 * **Modalità testo normale**: incolla il contenuto degli Appunti come testo normale. Elimina tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserirli in [!DNL Experience Manager] componente.
 
-* **Modalità MS Word**: quando si copia da MS Word, incolla il testo con formattazione, incluse le tabelle. La copia e l’incolla di testo da un’altra origine, ad esempio una pagina web o MS Excel, non sono supportate e mantengono solo una formattazione parziale.
+* **Modalità MS® Word**: incolla il testo, incluse le tabelle, con formattazione durante la copia da MS® Word. La copia e l&#39;incollamento di testo da un&#39;altra origine, ad esempio una pagina Web o MS® Excel, non sono supportati e mantengono solo una formattazione parziale.
 
 ### Configurare le opzioni Incolla disponibili nella barra degli strumenti dell’editor Rich Text  {#configure-paste-options-available-on-the-rte-toolbar}
 
@@ -91,7 +91,7 @@ Nella barra degli strumenti dell’editor Rich Text è possibile fornire agli au
 
 * **[!UICONTROL Incolla come testo]**: fornisce funzionalità in modalità testo normale.
 
-* **[!UICONTROL Incolla da Word]**: fornisce la funzionalità della modalità MS Word.
+* **[!UICONTROL Incolla da Word]**: fornisce la funzionalità della modalità MS® Word.
 
 Per configurare l’editor Rich Text in modo da visualizzare le icone richieste, effettua le seguenti operazioni.
 
@@ -109,10 +109,10 @@ La configurazione consente i tre tipi di casi di utilizzo seguenti:
 
 * Incolla il contenuto degli Appunti come testo normale. Elimina tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserirli nel componente AEM. Configurato con `plaintext` di seguito.
 
-* Incolla il testo, incluse le tabelle, con formattazione durante la copia da MS Word. La copia e l’incolla di testo da un’altra origine, ad esempio una pagina web o MS Excel, non sono supportate e mantengono solo una formattazione parziale. Configurato con `wordhtml` di seguito.
+* Incollare il testo, incluse le tabelle, con formattazione durante la copia da MS® Word. La copia e l&#39;incollamento di testo da un&#39;altra origine, ad esempio una pagina Web o MS® Excel, non sono supportati e mantengono solo una formattazione parziale. Configurato con `wordhtml` di seguito.
 
 1. Nel componente, passa a `<rtePlugins-node>/edit` nodo. Crea i nodi se non esistono. Per ulteriori informazioni, consulta [attivare un plug-in](#activateplugin).
-1. In `edit` nodo creare una proprietà utilizzando i dettagli seguenti:
+1. In `edit` , creare una proprietà utilizzando i dettagli seguenti:
 
    * **Nome** `defaultPasteMode`
    * **Tipo** `String`
@@ -120,7 +120,7 @@ La configurazione consente i tre tipi di casi di utilizzo seguenti:
 
 ### Configurare i formati consentiti quando si incollano i contenuti {#pasteformats}
 
-Incolla-come-Microsoft-Word (`paste-wordhtml`) può essere ulteriormente configurata in modo da poter definire esplicitamente quali stili sono consentiti quando si incollano in AEM da un altro programma, ad esempio Microsoft Word.
+Incolla-come-Microsoft-Word (`paste-wordhtml`) può essere ulteriormente configurata in modo da poter definire esplicitamente quali stili sono consentiti quando si incollano in AEM da un altro programma, ad esempio Microsoft® Word.
 
 Ad esempio, se solo i formati e gli elenchi in grassetto devono essere consentiti quando si incolla in AEM, puoi filtrare gli altri formati. Questa operazione è denominata filtro di incollamento configurabile e può essere eseguita per entrambi:
 
@@ -132,12 +132,12 @@ Per i collegamenti, puoi anche definire i protocolli che vengono accettati autom
 Per configurare i formati consentiti quando si incolla testo in AEM da un altro programma:
 
 1. Nel componente, passa al nodo `<rtePlugins-node>/edit`. Crea i nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
-1. Crea un nodo sotto `edit` nodo in cui inserire le regole HTML incolla:
+1. Crea un nodo sotto `edit` in modo da poter mantenere le regole HTML Incolla:
 
    * **Nome** `htmlPasteRules`
    * **Tipo** `nt:unstructured`
 
-1. Crea un nodo sotto `htmlPasteRules`, per contenere i dettagli dei formati di base consentiti:
+1. Crea un nodo sotto `htmlPasteRules`, in modo da poter conservare i dettagli dei formati di base consentiti:
 
    * **Nome** `allowBasics`
    * **Tipo** `nt:unstructured`
@@ -163,7 +163,7 @@ Puoi utilizzare le seguenti proprietà per `htmlPasteRules`.
 | Proprietà | Tipo | Descrizione |
 |---|---|---|
 | `allowBlockTags` | Stringa | Definisce l’elenco dei tag di blocco consentiti. Alcuni tag di blocco possibili includono: <ul> <li>titoli (h1, h2, h3)</li> <li>lettere p)</li> <li>elenchi (ol, ul)</li> <li>tabelle (tabella)</li> </ul> |
-| `fallbackBlockTag` | Stringa | Definisce il tag di blocco utilizzato per tutti i blocchi con un tag di blocco non incluso in `allowBlockTags`. `p` nella maggior parte dei casi. |
+| `fallbackBlockTag` | Stringa | Definisce il tag di blocco utilizzato per tutti i blocchi con un tag di blocco non incluso in `allowBlockTags`. `p` di solito è sufficiente. |
 | tabella | nt:unstructured | Definisce il comportamento quando si incollano le tabelle. Questo nodo deve avere la proprietà `allow` (tipo booleano) per definire se è consentito incollare tabelle. Se consenti è impostato su `false`, è necessario specificare la proprietà `ignoreMode` (tipo String) per definire la modalità di gestione del contenuto della tabella incollato. Valori validi per `ignoreMode` sono: <ul> <li>`remove`: rimuove il contenuto della tabella.</li> <li>`paragraph`: trasforma le celle della tabella in paragrafi.</li> </ul> |
 | list | nt:unstructured | Definisce il comportamento quando si incollano gli elenchi. Deve avere la proprietà `allow` (tipo booleano) per definire se è consentito incollare gli elenchi. Se `allow` è impostato su `false`, è necessario specificare la proprietà `ignoreMode` (tipo Stringa) per definire come gestire il contenuto dell’elenco incollato. Valori validi per `ignoreMode` sono: <ul><li> `remove`: rimuove il contenuto dell’elenco.</li> <li>`paragraph`: trasforma le voci di elenco in paragrafi.</li> </ul> |
 
@@ -196,7 +196,7 @@ Gli autori possono applicare gli stili per modificare l&#39;aspetto di una parte
 Quando il plug-in Stili viene attivato per la prima volta, non sono disponibili stili predefiniti. L&#39;elenco popup è vuoto. Per fornire agli autori stili, effettuare le seguenti operazioni:
 
 * Abilita il selettore a discesa Stile.
-* Specificare la posizione dei fogli di stile.
+* Specificare le posizioni dei fogli di stile.
 * Specificare i singoli stili che possono essere selezionati dall&#39;elenco a discesa Stile.
 
 Per le configurazioni successive, per aggiungere altri stili, seguire solo le istruzioni per fare riferimento a un nuovo foglio di stile e specificare gli stili aggiuntivi.
@@ -207,7 +207,7 @@ Per le configurazioni successive, per aggiungere altri stili, seguire solo le is
 
 ### Abilitare l’elenco di selettori a discesa Stile {#styleselectorlist}
 
-Questa operazione viene eseguita abilitando il plug-in stili.
+Questa operazione viene eseguita abilitando il plug-in di stile.
 
 1. Nel componente, passa al nodo `<rtePlugins-node>/styles`. Crea i nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
 1. Creare `features` proprietà sul `styles` nodo:
@@ -224,14 +224,14 @@ Questa operazione viene eseguita abilitando il plug-in stili.
 
 ### Specificare la posizione del foglio di stile {#locationofstylesheet}
 
-Specificare quindi la posizione dei fogli di stile a cui si desidera fare riferimento:
+Specificare quindi le posizioni dei fogli di stile a cui si desidera fare riferimento:
 
 1. Passa al nodo principale del componente testo, ad esempio `/apps/<myProject>/components/text`.
 1. Aggiungi la proprietà `externalStyleSheets` al nodo principale di `<rtePlugins-node>`:
 
    * **Nome** `externalStyleSheets`
    * **Tipo** `String[]` (stringa multipla; fare clic su **Più** in CRXDE)
-   * **Valore/i** Percorso e nome di ogni foglio di stile che si desidera includere. Utilizza i percorsi dell’archivio.
+   * **Valori** Percorso e nome di ogni foglio di stile che si desidera includere. Utilizza i percorsi dell’archivio.
 
    >[!NOTE]
    >
@@ -254,17 +254,17 @@ Specificare quindi la posizione dei fogli di stile a cui si desidera fare riferi
 ### Specificare gli stili disponibili nell&#39;elenco a comparsa {#stylesindropdown}
 
 1. Nella definizione del componente, passa al nodo `<rtePlugins-node>/styles`, come creato in [Abilitazione del selettore a discesa dello stile](#styleselectorlist).
-1. Sotto il nodo `styles`, crea un nuovo nodo (chiamato anche `styles`) per mantenere disponibile l&#39;elenco:
+1. Sotto il nodo `styles`, creare un nodo (denominato anche `styles`) per mantenere disponibile l&#39;elenco:
 
    * **Nome** `styles`
    * **Tipo** `cq:WidgetCollection`
 
-1. Crea un nuovo nodo sotto `styles` per rappresentare un singolo stile:
+1. Crea un nodo sotto `styles` in modo da poter rappresentare un singolo stile:
 
    * **Nome**, è possibile specificare il nome, ma deve essere adatto allo stile
    * **Tipo** `nt:unstructured`
 
-1. Aggiungi la proprietà `cssName` a questo nodo per fare riferimento alla classe CSS:
+1. Aggiungi la proprietà `cssName` a questo nodo per poter fare riferimento alla classe CSS:
 
    * **Nome** `cssName`
    * **Tipo** `String`
@@ -282,7 +282,7 @@ Specificare quindi la posizione dei fogli di stile a cui si desidera fare riferi
 
 ### Configurare l’editor Rich Text per interruzioni di parola ottimali in giapponese {#jpwordwrap}
 
-Gli autori che utilizzano l’AEM per creare contenuti in lingua giapponese possono applicare uno stile ai caratteri per evitare interruzioni di riga laddove non siano necessarie. Questo consente agli autori di lasciare che le frasi si interrompano nella posizione desiderata. Lo stile di questa funzionalità si basa sulla classe CSS predefinita nel foglio di stile CSS.
+Gli autori che utilizzano l’AEM per creare contenuti in lingua giapponese possono applicare uno stile ai caratteri per evitare interruzioni di riga laddove non sia necessaria un’interruzione. Questo consente agli autori di lasciare che le frasi si interrompano nella posizione desiderata. Lo stile di questa funzionalità si basa sulla classe CSS predefinita nel foglio di stile CSS.
 
 >[!NOTE]
 >
@@ -290,21 +290,21 @@ Gli autori che utilizzano l’AEM per creare contenuti in lingua giapponese poss
 
 Per creare lo stile che gli autori possono applicare al testo giapponese, effettuare le seguenti operazioni:
 
-1. Crea un nuovo nodo sotto il nodo degli stili. Consulta [specifica un nuovo stile](#stylesindropdown).
+1. Crea un nodo sotto il nodo degli stili. Consulta [specifica un nuovo stile](#stylesindropdown).
    * Nome: `jpn-word-wrap`
    * Tipo: `nt:unstructure`
 
-1. Aggiungi la proprietà `cssName` al nodo per fare riferimento alla classe CSS. Questo nome di classe è un nome riservato per la funzione di ritorno a capo automatico giapponese.
+1. Aggiungi la proprietà `cssName` al nodo, in modo da poter fare riferimento alla classe CSS. Questo nome di classe è un nome riservato per la funzione di ritorno a capo automatico giapponese.
    * Nome: `cssName`
    * Tipo: `String`
    * Valore: `jpn-word-wrap` (senza precedenti `.`)
 
-1. Aggiungi il testo della proprietà allo stesso nodo. Il valore è il nome dello stile visualizzato dagli autori durante la selezione dello stile.
+1. Aggiungi il testo della proprietà allo stesso nodo. Il valore è il nome dello stile visualizzato dall’autore al momento della selezione dello stile.
    * Nome: `text`
 *Tipo: `String`
    * Valore: `Japanese word-wrap`
 
-1. Creare un foglio di stile e specificarne il percorso. Consulta [specificare la posizione del foglio di stile](#locationofstylesheet). Aggiungere il contenuto seguente al foglio di stile. Modifica il colore di sfondo come desiderato.
+1. Creare un foglio di stile e specificarne il percorso. Consulta [specifica posizione foglio di stile](#locationofstylesheet). Aggiungere il contenuto seguente al foglio di stile. Modifica il colore di sfondo come desiderato.
 
    ```css
    .text span.jpn-word-wrap {
@@ -323,7 +323,7 @@ Qualsiasi testo creato nell’editor Rich Text viene inserito all’interno di u
 
 >[!CAUTION]
 >
->Questo plug-in non è adatto per contenuti con struttura complessa, ad esempio elenchi o tabelle.
+>Questo plug-in non è adatto a contenuti con strutture complesse, ad esempio elenchi o tabelle.
 
 >[!NOTE]
 >
@@ -334,7 +334,7 @@ Quando il plug-in Formati di paragrafo viene attivato per la prima volta, non so
 * Abilitare l&#39;elenco dei selettori a discesa Formato.
 * Specifica i tag di blocco che possono essere selezionati come formati di paragrafo dal menu a discesa.
 
-Per le configurazioni successive, ad esempio per aggiungere altri formati, segui solo la parte pertinente delle istruzioni.
+Per le configurazioni o riconfigurazioni successive, ad esempio per aggiungere altri formati, segui solo la parte pertinente delle istruzioni.
 
 ### Abilita il selettore a discesa Formato {#formatselectorlist}
 
@@ -359,19 +359,19 @@ Se il plug-in non viene configurato ulteriormente, vengono attivati i seguenti f
 
 >[!CAUTION]
 >
-Durante la configurazione dei formati di paragrafo dell’editor Rich Text, non rimuovere il tag di paragrafo &lt;p> come opzione di formattazione. Se il `<p>` viene rimosso, l’autore di contenuto non può selezionare il tag **Formati dei paragrafi** anche se sono configurati altri formati.
+Durante la configurazione del formato paragrafo dell’editor Rich Text, non rimuovere il tag paragrafo &lt;p> come opzione di formattazione. Se il `<p>` viene rimosso, l’autore di contenuto non può selezionare il tag **Formati dei paragrafi** anche se sono configurati altri formati.
 
 ### Specificare i formati di paragrafo disponibili {#paraformatsindropdown}
 
 I formati dei paragrafi possono essere resi disponibili per la selezione:
 
 1. Nella definizione del componente, passa al nodo `<rtePlugins-node>/paraformat`, come creato in [Abilitazione del selettore a discesa Formato](#styleselectorlist).
-1. Sotto `paraformat` node crea un nuovo nodo, che contiene l’elenco dei formati:
+1. Sotto `paraformat` , crea un nodo per l&#39;elenco dei formati:
 
    * **Nome** `formats`
    * **Tipo** `cq:WidgetCollection`
 
-1. Crea un nuovo nodo sotto `formats` , contiene i dettagli per un singolo formato:
+1. Crea un nodo sotto `formats` , contiene i dettagli per un singolo formato:
 
    * **Nome**, è possibile specificare il nome, ma deve essere appropriato per il formato (ad esempio, myParagraph, myheader1).
    * **Tipo** `nt:unstructured`
@@ -380,7 +380,7 @@ I formati dei paragrafi possono essere resi disponibili per la selezione:
 
    * **Nome** `tag`
    * **Tipo** `String`
-   * **Valore** Il tag di blocco per il formato; ad esempio: p, h1, h2, ecc.
+   * **Valore** Il tag di blocco per il formato; ad esempio: p, h1, h2.
 
      Non è necessario inserire le parentesi angolari di delimitazione.
 
@@ -388,7 +388,7 @@ I formati dei paragrafi possono essere resi disponibili per la selezione:
 
    * **Nome** `description`
    * **Tipo** `String`
-   * **Valore** Testo descrittivo per questo formato, ad esempio Paragrafo, Titolo 1, Titolo 2 e così via. Questo testo viene visualizzato nell&#39;elenco di selezione Formato.
+   * **Valore** Testo descrittivo per questo formato, ad esempio Paragrafo, Titolo 1, Titolo 2. Questo testo viene visualizzato nell&#39;elenco di selezione Formato.
 
 1. Salva le modifiche.
 
@@ -406,7 +406,7 @@ In un impianto AEM standard, quando `misctools` il plug-in è abilitato per i ca
 
 >[!CAUTION]
 >
-L’aggiunta di caratteri speciali sostituisce la selezione predefinita. Se necessario, ridefinisci questi caratteri nella tua selezione.
+L’aggiunta di caratteri speciali sostituisce la selezione predefinita. Se necessario, definisci o ridefinisci questi caratteri nella tua selezione.
 
 ### Definisci un singolo carattere {#definesinglechar}
 
@@ -419,22 +419,22 @@ L’aggiunta di caratteri speciali sostituisce la selezione predefinita. Se nece
 
          (o `String / *` se si applicano tutte le funzioni di questo plug-in)
 
-1. Sotto `misctools` crea un nodo che contenga le configurazioni dei caratteri speciali:
+1. Sotto `misctools`, crea un nodo che contenga le configurazioni dei caratteri speciali:
 
    * **Nome** `specialCharsConfig`
    * **Tipo** `nt:unstructured`
 
-1. Sotto `specialCharsConfig` crea un altro nodo per l’elenco dei caratteri:
+1. Sotto `specialCharsConfig`, crea un altro nodo per l’elenco dei caratteri:
 
    * **Nome** `chars`
    * **Tipo** `nt:unstructured`
 
-1. Sotto `chars` aggiungi un nuovo nodo per contenere una singola definizione di carattere:
+1. Sotto `chars`, aggiungi un nodo per contenere una singola definizione di carattere:
 
    * **Nome** è possibile specificare il nome, ma deve riflettere il carattere, ad esempio metà.
    * **Tipo** `nt:unstructured`
 
-1. A questo nodo aggiungi la seguente proprietà:
+1. A questo nodo, aggiungi la seguente proprietà:
 
    * **Nome** `entity`
    * **Tipo** `String`
@@ -442,14 +442,14 @@ L’aggiunta di caratteri speciali sostituisce la selezione predefinita. Se nece
 
 1. Salva le modifiche.
 
-In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappresentato. Vedi sotto l&#39;esempio di mezzo. Ripeti i passaggi precedenti per rendere disponibili agli autori caratteri più speciali.
+In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappresentato. Vedi sotto l&#39;esempio di mezzo. Ripeti i passaggi precedenti per rendere disponibili agli autori altri caratteri speciali.
 
 ![In CRXDE, aggiungi un singolo carattere da rendere disponibile nella barra degli strumenti dell’editor Rich Text](assets/chlimage_1-106.png "In CRXDE, aggiungi un singolo carattere da rendere disponibile nella barra degli strumenti dell’editor Rich Text")
 
 ### Definire un intervallo di caratteri {#definerangechar}
 
 1. Utilizza i passaggi da 1 a 3 da [Definizione di un singolo carattere](#definesinglechar).
-1. Sotto `chars` aggiungi un nuovo nodo che contenga la definizione dell’intervallo di caratteri:
+1. Sotto `chars`, aggiungi un nodo che contenga la definizione dell’intervallo di caratteri:
 
    * **Nome** è possibile specificare il nome, ma deve riflettere l&#39;intervallo di caratteri, ad esempio le matite.
    * **Tipo** `nt:unstructured`
@@ -466,7 +466,7 @@ In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappr
 
 1. Salva le modifiche.
 
-   Ad esempio, definisci un intervallo da 9998 - 10000 fornisce i seguenti caratteri.
+   Ad esempio, definisci un intervallo 9998: 10000 contiene i seguenti caratteri.
 
    ![In CRXDE, definisci un intervallo di caratteri da rendere disponibili nell’editor Rich Text](assets/chlimage_1-107.png)
 
@@ -486,7 +486,7 @@ Puoi definire stili per tabelle e celle solo per l’interfaccia classica.
 >
 Copiare e incollare tabelle nel componente Editor Rich Text o da esso dipende dal browser. Non è supportato per tutti i browser. Puoi ottenere risultati diversi a seconda della struttura della tabella e del browser. Ad esempio, quando copi e incolla una tabella in un componente Editor Rich Text in Mozilla Firefox nell’interfaccia classica e nell’interfaccia touch, il layout della tabella non viene mantenuto.
 
-1. All’interno del componente passa al nodo `<rtePlugins-node>/table`. Crea i nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
+1. All’interno del componente, passa al nodo `<rtePlugins-node>/table`. Crea i nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
 1. Creare `features` proprietà sul `table` nodo:
 
    * **Nome** `features`
@@ -499,12 +499,12 @@ Copiare e incollare tabelle nel componente Editor Rich Text o da esso dipende da
    >
    * **Tipo** `String[]`
    >
-   * **Valore** s) uno dei seguenti elementi o entrambi, a seconda dei casi:
+   * **Valore** uno dei seguenti elementi o entrambi, a seconda delle necessità:
    * `table` per consentire la modifica delle proprietà della tabella, inclusi gli stili.
    * `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
 
-1. Definisci la posizione dei fogli di stile CSS in modo che facciano riferimento a essi. Consulta [Specifica della posizione del foglio di stile](#locationofstylesheet) come quando definisci [stili per il testo](#textstyles). La posizione può essere definita se sono stati definiti altri stili.
-1. Sotto `table` nodo creare i seguenti nuovi nodi (come richiesto):
+1. Definisci la posizione dei fogli di stile CSS in modo da poterli fare riferimento. Consulta [Specifica della posizione del foglio di stile](#locationofstylesheet) come quando definisci [stili per il testo](#textstyles). La posizione può essere definita se sono stati definiti altri stili.
+1. Sotto `table` , creare i seguenti nuovi nodi (come richiesto):
 
    * Per definire gli stili per l&#39;intera tabella (disponibile in **Proprietà tabella**):
 
@@ -516,12 +516,12 @@ Copiare e incollare tabelle nel componente Editor Rich Text o da esso dipende da
       * **Nome** `cellStyles`
       * **Tipo** `cq:WidgetCollection`
 
-1. Crea un nuovo nodo (sotto il `tableStyles` o `cellStyles` a seconda dei casi) per rappresentare un singolo stile:
+1. Creare un nodo (sotto `tableStyles` o `cellStyles` a seconda dei casi) in modo da poter rappresentare un singolo stile:
 
    * **Nome** è possibile specificare il nome, ma deve riflettere lo stile.
    * **Tipo** `nt:unstructured`
 
-1. In questo nodo crea le proprietà:
+1. In questo nodo, crea le proprietà:
 
    * Per definire lo stile CSS a cui fare riferimento
 
@@ -541,7 +541,7 @@ Ripeti i passaggi precedenti per ogni stile richiesto.
 
 ### Configurare le intestazioni nascoste nelle tabelle per l’accessibilità {#hiddenheader}
 
-Talvolta è possibile creare tabelle di dati senza testo visivo in un&#39;intestazione di colonna presupponendo che lo scopo dell&#39;intestazione sia implicito dalla relazione visiva della colonna con altre colonne. In questo caso, è necessario fornire testo interno nascosto nella cella dell’intestazione per consentire agli assistenti vocali e altre tecnologie per aiutare i lettori con varie esigenze a comprendere lo scopo della colonna.
+Talvolta è possibile creare tabelle di dati senza testo visivo in un&#39;intestazione di colonna presupponendo che lo scopo dell&#39;intestazione sia implicito dalla relazione visiva della colonna con altre colonne. In questo caso, è necessario fornire testo interno nascosto all’interno della cella nella cella dell’intestazione. In questo modo, gli assistenti vocali e altre tecnologie per l’accessibilità aiuteranno i lettori con varie esigenze a comprendere lo scopo della colonna.
 
 Per migliorare l’accessibilità in tali scenari, l’editor Rich Text supporta le celle di intestazione nascoste. Inoltre, fornisce le impostazioni di configurazione relative alle intestazioni nascoste nelle tabelle. Queste impostazioni consentono di applicare stili CSS alle intestazioni nascoste nelle modalità di modifica e anteprima. Per aiutare gli autori a identificare le intestazioni nascoste nella modalità di modifica, includi i seguenti parametri nel codice:
 
@@ -559,11 +559,11 @@ Se nel codice specifichi sia CSS che la stringa di stile, la classe CSS ha la pr
 
 ## Aggiungere dizionari per il controllo ortografico {#adddict}
 
-Quando il plug-in spellcheck è attivato, l&#39;editor Rich Text utilizza dizionari per ogni lingua appropriata. Questi vengono quindi selezionati in base alla lingua del sito web utilizzando la proprietà language della sottostruttura o estraendo la lingua dall’URL; ad esempio. il `/en/` la filiale viene selezionata come inglese, il `/de/` filiale come tedesco.
+Quando il plug-in spellcheck è attivato, l&#39;editor Rich Text utilizza dizionari per ogni lingua appropriata. Questi vengono quindi selezionati in base alla lingua del sito web utilizzando la proprietà language della sottostruttura o estraendo la lingua dall’URL. Ad esempio, il `/en/` la filiale viene selezionata come inglese, il `/de/` filiale come tedesco.
 
 >[!NOTE]
 >
-Il messaggio `Spell checking failed` viene visualizzato se si tenta di controllare una lingua non installata. I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file readme appropriati. Non modificare i file.
+Il messaggio `Spell checking failed` viene visualizzato se si tenta di controllare una lingua non installata. I dizionari standard sono disponibili in `/libs/cq/spellchecker/dictionaries`, insieme ai file readme appropriati. Non modificare i file.
 
 Un&#39;installazione standard per AEM include i dizionari per l&#39;inglese americano (`en_us`) e inglese britannico (`en_gb`). Per aggiungere altri dizionari, eseguire la procedura seguente.
 
@@ -580,8 +580,8 @@ Un&#39;installazione standard per AEM include i dizionari per l&#39;inglese amer
    >
    Solo dizionari nel `MySpell` per OpenOffice.org v2.0.1 o versioni precedenti, sono supportati. Poiché i dizionari sono ora file di archivio, si consiglia di verificare l&#39;archivio dopo averlo scaricato.
 
-1. Individua i file .aff e .dic. Mantieni il nome del file in minuscolo. Ad esempio: `de_de.aff` e `de_de.dic`.
-1. Carica i file .aff e .dic nell’archivio in `/apps/cq/spellchecker/dictionaries`.
+1. Individua il `.aff` e `.dic` file. Mantieni il nome del file in minuscolo. Ad esempio: `de_de.aff` e `de_de.dic`.
+1. Carica `.aff` e `.dic` file nell’archivio in `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 >
@@ -593,8 +593,8 @@ Se si incorporano le modifiche suggerite dal correttore ortografico, lo stato de
 
 L’editor Rich Text consente agli autori di annullare o ripristinare alcune delle ultime modifiche. Per impostazione predefinita, nella cronologia vengono memorizzate 50 modifiche. Puoi configurare questo valore come richiesto.
 
-1. All’interno del componente passa al nodo `<rtePlugins-node>/undo`. Crea questi nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
-1. Il giorno `undo` nodo creare la proprietà:
+1. All’interno del componente, passa al nodo `<rtePlugins-node>/undo`. Crea questi nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
+1. Il giorno `undo` , creare la proprietà:
 
    * **Nome** `maxUndoSteps`
    * **Tipo** `Long`
@@ -609,7 +609,7 @@ Quando il carattere di tabulazione viene premuto all&#39;interno di un testo, vi
 Per definire le dimensioni della scheda:
 
 1. Nel componente, passa al nodo `<rtePlugins-node>/keys`. Crea i nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
-1. Il giorno `keys` nodo creare la proprietà:
+1. Il giorno `keys` , creare la proprietà:
 
    * **Nome** `tabSize`
    * **Tipo** `String`
@@ -625,10 +625,10 @@ Quando il rientro è abilitato (impostazione predefinita), è possibile definire
 >
 Questa dimensione di rientro viene applicata solo ai paragrafi (blocchi) di testo e non influisce sul rientro degli elenchi effettivi.
 
-1. All’interno del componente passa al nodo `<rtePlugins-node>/lists`. Crea questi nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
-1. Il giorno `lists` nodo creare il `identSize` parametro:
+1. All’interno del componente, passa al nodo `<rtePlugins-node>/lists`. Crea questi nodi se non esistono. Per ulteriori dettagli, consulta [attivare un plug-in](#activateplugin).
+1. Il giorno `lists` , creare il `indentSize` parametro:
 
-   * **Nome**: `identSize`
+   * **Nome**: `indentSize`
    * **Tipo**: `Long`
    * **Valore**: numero di pixel necessari per il margine di rientro.
 
@@ -640,7 +640,7 @@ Questa opzione è applicabile solo quando si utilizza l’editor Rich Text in un
 
 Puoi definire l’altezza dello spazio modificabile mostrato nella finestra di dialogo del componente:
 
-1. Il giorno `../items/text` nella definizione della finestra di dialogo del componente, crea una nuova proprietà:
+1. Il giorno `../items/text` nella definizione della finestra di dialogo del componente, crea una proprietà:
 
    * **Nome** `height`
    * **Tipo** `Long`
@@ -662,7 +662,7 @@ Quando aggiungi collegamenti in AEM, puoi definire:
 Per configurare il modo in cui i collegamenti vengono aggiunti in AEM da un altro programma, definisci le regole di HTML.
 
 1. Con CRXDE Liti, individua il componente testo per il progetto.
-1. Crea un nuovo nodo allo stesso livello di `<rtePlugins-node>`, ovvero crea il nodo sotto il nodo principale di `<rtePlugins-node>`:
+1. Crea un nodo allo stesso livello di `<rtePlugins-node>`, ovvero crea il nodo sotto il nodo principale di `<rtePlugins-node>`:
 
    * **Nome** `htmlRules`
    * **Tipo** `nt:unstructured`
@@ -677,12 +677,12 @@ Per configurare il modo in cui i collegamenti vengono aggiunti in AEM da un altr
    >
    La posizione del `../items/text` può variare a seconda della struttura della finestra di dialogo; due esempi sono `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
-1. Sotto `htmlRules`, crea un nuovo nodo.
+1. Sotto `htmlRules`, crea un nodo.
 
    * **Nome** `links`
    * **Tipo** `nt:unstructured`
 
-1. Sotto `links` Il nodo definisce le proprietà come richiesto:
+1. Sotto `links` definire le proprietà in base alle esigenze:
 
    * Stile CSS per collegamenti interni:
 
@@ -700,26 +700,26 @@ Per configurare il modo in cui i collegamenti vengono aggiunti in AEM da un altr
 
       * **Nome** `protocols`
       * **Tipo** `String[]`
-      * **Valore**(s) uno o più protocolli
+      * **Valore** uno o più protocolli
 
    * **defaultProtocol** (proprietà di tipo **Stringa**): protocollo da utilizzare se l’utente non ne ha specificato esplicitamente uno.
 
       * **Nome** `defaultProtocol`
       * **Tipo** `String`
-      * **Valore**(s) uno o più protocolli predefiniti
+      * **Valore** uno o più protocolli predefiniti
 
-   * Definizione di come gestire l’attributo target di un collegamento. Crea un nuovo nodo:
+   * Definizione di come gestire l’attributo target di un collegamento. Crea un nodo:
 
       * **Nome** `targetConfig`
       * **Tipo** `nt:unstructured`
 
-     Sul nodo `targetConfig`: definisci le proprietà richieste:
+     Sul nodo `targetConfig`, definisci le proprietà richieste:
 
       * Specifica la modalità di destinazione:
 
          * **Nome** `mode`
          * **Tipo** `String`)
-         * **Valore** s) :
+         * **Valore**
 
             * `auto`: indica che viene scelto un target automatico
 

@@ -1,5 +1,5 @@
 ---
-title: Gruppi di utenti chiusi nell’AEM
+title: Gruppi di utenti chiusi in AEM
 description: Scopri i gruppi chiusi di utenti in AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,14 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '6845'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Gruppi di utenti chiusi nell’AEM{#closed-user-groups-in-aem}
+# Gruppi di utenti chiusi in AEM{#closed-user-groups-in-aem}
 
 ## Introduzione {#introduction}
 
@@ -364,7 +364,7 @@ session.save();
 
 #### Modificare un percorso di accesso esistente {#modify-an-existing-login-path}
 
-I passaggi per modificare un percorso di accesso esistente sono descritti di seguito. La modifica verrà registrata con Apache Sling Authenticator solo se `RequirementHandler` è stato configurato per la struttura contenente il nodo di destinazione. Il valore del percorso di accesso precedente verrà rimosso dalla registrazione. Questa modifica non influisce sul requisito di autenticazione associato al nodo di destinazione.
+Di seguito sono riportati i passaggi per modificare un percorso di accesso esistente. La modifica verrà registrata con Apache Sling Authenticator solo se `RequirementHandler` è stato configurato per la struttura contenente il nodo di destinazione. Il valore del percorso di accesso precedente verrà rimosso dalla registrazione. Questa modifica non influisce sul requisito di autenticazione associato al nodo di destinazione.
 
 ```java
 Node targetNode = [...]
@@ -718,7 +718,7 @@ Consulta la [Collegamento CUG](https://jackrabbit.apache.org/oak/docs/security/a
 
 ### Disattiva il requisito di autenticazione {#disable-the-authentication-requirement}
 
-Al fine di disabilitare il supporto per il requisito di autenticazione fornito dal `granite.auth.authhandler` è sufficiente rimuovere la configurazione associata a **Adobe di requisiti di autenticazione Granite e gestore del percorso di accesso**.
+Al fine di disabilitare il supporto per il requisito di autenticazione fornito dalla `granite.auth.authhandler` è sufficiente rimuovere la configurazione associata a **Adobe di requisiti di autenticazione Granite e gestore del percorso di accesso**.
 
 >[!NOTE]
 >
