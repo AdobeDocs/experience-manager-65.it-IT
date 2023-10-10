@@ -2,9 +2,9 @@
 title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per filtrare, impaginare e ordinare i frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 2ba17c43e84ad449ec858de57812f3ef82fca3e1
+source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1935'
 ht-degree: 60%
 
 ---
@@ -89,7 +89,10 @@ Consulta:
 
 Quando si utilizzano query GraphQL persistenti con una rete CDN, si consiglia di impostare intestazioni di controllo della cache HTTP appropriate.
 
-Ogni query persistente può avere un proprio set specifico di intestazioni di controllo cache. Le intestazioni possono essere impostate su [API GRAPHQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) o [IDE GraphiQL per AEM](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
+Ogni query persistente può avere un proprio set specifico di intestazioni di controllo cache. Le intestazioni possono essere impostate su [API GRAPHQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+
+<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+-->
 
 **Ulteriori riferimenti**
 
