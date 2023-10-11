@@ -2,9 +2,9 @@
 title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per filtrare, impaginare e ordinare i frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
+source-git-commit: 3ec34efc14cc49d0f45cb4b175573c33c1cc232e
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1966'
 ht-degree: 60%
 
 ---
@@ -91,6 +91,17 @@ Quando si utilizzano query GraphQL persistenti con una rete CDN, si consiglia di
 
 Ogni query persistente può avere un proprio set specifico di intestazioni di controllo cache. Le intestazioni possono essere impostate su [API GRAPHQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
+Possono essere impostati anche utilizzando **cURL** strumento da riga di comando. Ad esempio, utilizzando un’ `PUT` richiesta di creare una query normale racchiusa con controllo cache.
+
+```shell
+$ curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
 <!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
 -->
 
@@ -99,6 +110,7 @@ Ogni query persistente può avere un proprio set specifico di intestazioni di co
 Consulta:
 
 * [Memorizzazione in cache delle query persistenti](/help/sites-developing/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [Rendere persistente una query GraphQL](/help/sites-developing/headless/graphql-api/persisted-queries.md#how-to-persist-query)
 <!--
 * [Managing cache for your persisted queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache)
 -->
