@@ -5,13 +5,13 @@ sub-product: Edge Delivery Services
 audience: end-user
 user-guide-title: Servizi di consegna Edge
 breadcrumb-title: Servizi di consegna Edge
-user-guide-description: Scopri di più sui servizi di consegna Edge, un set di servizi componibili che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente e nuovi siti vengono avviati rapidamente.
+user-guide-description: Scopri i servizi di consegna Edge, un set di servizi componibili per un ambiente di sviluppo rapido in cui i contenuti possano essere aggiornati e pubblicati rapidamente dagli autori e che consenta il lancio rapido di nuovi siti.
 feature: Edge Delivery Services
 role: User
 source-git-commit: f824c2b8028999aec1d5ebaf0ad4951b5121eb79
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 0%
+ht-degree: 82%
 
 ---
 
