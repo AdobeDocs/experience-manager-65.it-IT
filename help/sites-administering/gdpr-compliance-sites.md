@@ -1,7 +1,7 @@
 ---
 title: AEM Sites - Preparazione al RGPD
 seo-title: AEM Sites - GDPR Readiness
-description: Scopri i dettagli sull’idoneità al RGPD per AEM Sites.
+description: Scopri le procedure per gestire le richieste RGPD in AEM Sites e come utilizzarle.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '837'
 ht-degree: 54%
 
 ---
@@ -86,22 +86,22 @@ In queste linee guida il consenso è implementato per impostazione predefinita. 
 
 * Se un visitatore del sito accetta i termini e le condizioni del sito, il cookie di rinuncia di ContextHub deve essere rimosso:
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * Se un visitatore del sito non accetta i termini e le condizioni del sito, il cookie di rinuncia di ContextHub deve essere impostato:
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * Per verificare se ContextHub è in esecuzione in modalità di rinuncia, è necessario effettuare la seguente chiamata nella console del browser:
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### Anteprima della persistenza di ContextHub {#previewing-persistence-of-contexthub}
 
@@ -116,6 +116,7 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
          * Archiviazione locale > (sito Web) > ContextHubPersistence
          * Archiviazione sessione > (sito Web) > ContextHubPersistence
          * Cookie > (sito Web) > SessionPersistence
+
    * Firefox:
 
       * Apri Strumenti di sviluppo web > Archiviazione:
@@ -123,6 +124,7 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
          * Archiviazione locale > (sito Web) > ContextHubPersistence
          * Archiviazione sessione > (sito Web) > ContextHubPersistence
          * Cookie > (sito Web) > SessionPersistence
+
    * Safari:
 
       * Apri Preferenze > Avanzate > Mostra menu Sviluppo nella barra dei menu
@@ -131,6 +133,7 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
          * Console > Archiviazione > Archiviazione locale > (sito Web) > ContextHubPersistence
          * Console > Archiviazione > Archiviazione sessione > (sito Web) > ContextHubPersistence
          * Console > Archiviazione > Cookie > (sito Web) > ContextHubPersistence
+
    * Internet Explorer:
 
       * Apri Strumenti di sviluppo > Console
@@ -138,9 +141,6 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
          * localStorage.getItem(&#39;ContextHubPersistence&#39;)
          * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
          * document.cookie
-
-
-
 
 * Utilizza l’API ContextHub nella console del browser:
 
@@ -151,8 +151,7 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      L’archivio ContextHub definisce il livello di persistenza da utilizzare, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
-
+     L’archivio ContextHub definisce il livello di persistenza da utilizzare, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
 
@@ -165,12 +164,12 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
       * Archiviazione locale > (sito Web) > ContextHubPersistence
       * Archiviazione sessione > (sito Web) > ContextHubPersistence
       * Cookie > (sito Web) > SessionPersistence
+
    * Firefox - apri Strumenti di sviluppo web > Archiviazione:
 
       * Archiviazione locale > (sito Web) > ContextHubPersistence
       * Archiviazione sessione > (sito Web) > ContextHubPersistence
       * Cookie > (sito Web) > SessionPersistence
-
 
 * Utilizza l’API ContextHub nella console del browser:
 
@@ -181,8 +180,7 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      L’archivio ContextHub definisce il livello di persistenza da utilizzare, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
-
+     L’archivio ContextHub definisce il livello di persistenza da utilizzare, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
 
@@ -197,27 +195,27 @@ Per cancellare la persistenza di ContextHub:
 
 * Per cancellare la persistenza degli archivi attualmente caricati:
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // in order to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
 * Per cancellare un livello di persistenza specifico, ad esempio, sessionStorage:
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * Per cancellare tutti i livelli di persistenza ContextHub, è necessario chiamare il codice appropriato per tutti i livelli:
 

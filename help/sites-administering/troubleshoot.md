@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi di Adobe Experience Manager
-description: Scopri come risolvere i problemi relativi all’AEM.
+description: Scopri come risolvere alcuni problemi che potrebbero verificarsi con Adobe Experience Manager.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 4%
+source-wordcount: '551'
+ht-degree: 3%
 
 ---
 
@@ -78,7 +78,7 @@ L’immagine thread è un elenco di tutti i thread Java™ attualmente attivi. S
 ### Utilizzo di Sling Thread Dumper {#using-sling-thread-dumper}
 
 1. Apri **Console web AEM**; ad esempio, in `https://localhost:4502/system/console/`.
-1. Seleziona la **Thread** in **Stato** scheda.
+1. Seleziona la **Threads** in **Stato** scheda.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -112,7 +112,7 @@ Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le ses
 
 Per analizzare le sessioni non chiuse e individuare il codice che non chiude una sessione, consultare l&#39;articolo della Knowledge Base [Analizza sessioni non chiuse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
-### Utilizzo della console web di Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
+### Utilizzo della console Web di Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
 Lo stato dei bundle OSGi può anche fornire un’indicazione anticipata di possibili problemi.
 

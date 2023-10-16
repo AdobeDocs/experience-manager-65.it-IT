@@ -1,13 +1,13 @@
 ---
 title: Utilizzo dell'AEM con SAP Commerce Cloud
-description: Scopri come utilizzare l’AEM con SAP Commerce Cloud.
+description: Scopri come utilizzare Adobe Experience Manager con SAP Commerce Cloud.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1704'
 ht-degree: 2%
 
 ---
@@ -204,7 +204,7 @@ Le seguenti proprietà indicano il collegamento con l’ibrido:
 
 ### Importazione completa {#full-import}
 
-1. Se necessario, elimina tutti i dati di prodotto esistenti utilizzando CRXDE Lite.
+1. Se necessario, elimina tutti i dati di prodotto esistenti utilizzando CRXDE Liti.
 
    1. Passare alla sottostruttura contenente i dati del prodotto:
 
@@ -237,7 +237,7 @@ Le seguenti proprietà indicano il collegamento con l’ibrido:
        /etc/commerce/products/outdoors
    ```
 
-   Puoi aprirlo in CRXDE Lite; ad esempio:
+   Puoi aprirlo in CRXDE Liti; ad esempio:
 
    `[http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
 
@@ -247,7 +247,7 @@ Le seguenti proprietà indicano il collegamento con l’ibrido:
 
    `/etc/commerce/products`
 
-   Puoi aprirlo in CRXDE Lite; ad esempio:
+   Puoi aprirlo in CRXDE Liti; ad esempio:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -279,7 +279,7 @@ Il processo di importazione può richiedere molto tempo, pertanto come estension
 
    `/etc/commerce/products`
 
-   Puoi aprirlo in CRXDE Lite; ad esempio:
+   Puoi aprirlo in CRXDE Liti; ad esempio:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
