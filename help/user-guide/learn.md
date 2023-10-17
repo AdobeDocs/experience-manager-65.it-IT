@@ -1,21 +1,19 @@
 ---
 title: Scopri le funzionalità di Adobe Experience Manager 6.5
-seo-title: Learn about Adobe Experience Manager 6.5 Capabilities
-description: Scopri le funzionalità essenziali di Adobe Experience Manager 6.5
-seo-description: An description of the essential capabilities of Adobe Experience Manager 6.5
+description: Scopri le funzionalità essenziali di Adobe Experience Manager 6.5.
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
-# Scopri le funzionalità di Adobe Experience Manager 6.5 {#learn-about-aem-64-capabilities}
+# Informazioni sulle funzionalità di Adobe Experience Manager 6.5 {#learn-about-aem-64-capabilities}
 
 ## Experience Manager Sites {#aem-sites}
 
-Experience Manager Sites è un sistema di gestione dei contenuti all’interno di Adobe Experience Manager. Offre un’unica posizione per creare, gestire e distribuire esperienze digitali su siti web, siti mobili e schermi sul sito per renderle globali, ma pertinenti e coinvolgenti a livello personale. [Ulteriori informazioni](https://business.adobe.com/products/experience-manager/sites/web-content-management.html) o [segui i nuovi tutorial sulle funzioni video.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en)
+Experience Manager Sites è un sistema di gestione dei contenuti all&#39;interno di Adobe Experience Manager. Offre un’unica posizione per creare, gestire e distribuire esperienze digitali su siti web, siti mobili e schermi sul sito per renderle globali, ma pertinenti e coinvolgenti a livello personale. [Ulteriori informazioni](https://business.adobe.com/products/experience-manager/sites/web-content-management.html) o [segui i nuovi tutorial sulle funzioni video.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=it)
 
 ## Experience Manager Assets {#aem-assets}
 

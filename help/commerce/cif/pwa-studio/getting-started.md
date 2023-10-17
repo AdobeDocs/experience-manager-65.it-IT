@@ -3,9 +3,8 @@ title: Guida introduttiva all’estensione AEM per PWA Studi
 description: Scopri come distribuire un progetto di contenuti e commerce headless AEM con PWA Studi.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -18,7 +17,7 @@ PWA Studi si integra perfettamente con Adobe Commerce tramite GraphQL, fornendo 
 
 I frammenti di contenuto sono parti di contenuto con una struttura predefinita che consente di utilizzarli in modo headless utilizzando GraphQL come API in formati diversi (ad esempio, JSON, Markdown) e renderizzati in modo indipendente. I frammenti di contenuto includono tutti i tipi di dati e i campi necessari affinché GraphQL possa garantire che l’applicazione richieda solo ciò che è disponibile e riceva ciò che è previsto. La flessibilità che forniscono in termini di struttura li rende perfetti per l&#39;utilizzo in più posizioni e su più canali.
 
-Con l’Editor modello per frammenti di contenuto in Adobe Experience Manager è facile progettare la struttura necessaria. Il problema principale per l’integrazione di Frammenti di contenuto di Adobe Experience Manager (o di qualsiasi altro dato) con l’applicazione PWA Studi è il recupero di dati da più endpoint GraphQL. Il motivo è che, per impostazione predefinita, PWA Studi funziona con un singolo endpoint Adobe Commerce GraphQL.
+L’Editor modello per frammenti di contenuto in Adobe Experience Manager semplifica la progettazione della struttura necessaria. Il problema principale per l’integrazione di Frammenti di contenuto di Adobe Experience Manager (o di qualsiasi altro dato) con l’applicazione PWA Studi è il recupero di dati da più endpoint GraphQL. Il motivo è che, per impostazione predefinita, PWA Studi funziona con un singolo endpoint Adobe Commerce GraphQL.
 
 ## Architettura {#architecture}
 
@@ -93,15 +92,15 @@ Segui la documentazione sui Frammenti di contenuto dell’AEM per impostare un e
 
 * Adobe di criteri di condivisione risorse tra origini granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Imposta il `allowedorigin` al nome host completo dell’applicazione PWA.
+  Imposta il `allowedorigin` al nome host completo dell’applicazione PWA.
 
-   Esempio:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Esempio:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtro referrer Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Imposta la proprietà allow.hosts sul nome host dell’applicazione PWA.
+  Imposta la proprietà allow.hosts sul nome host dell’applicazione PWA.
 
-   Esempio: pwa-studio-test-vflyn.local.pwadev
+  Esempio: pwa-studio-test-vflyn.local.pwadev
 
 Puoi trovare esempi completi di entrambe le configurazioni qui: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

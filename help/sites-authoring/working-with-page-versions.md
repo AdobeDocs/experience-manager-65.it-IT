@@ -1,24 +1,19 @@
 ---
 title: Utilizzare le versioni delle pagine di contenuto
-description: Creare, confrontare e ripristinare le versioni di una pagina
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: Creare, confrontare e ripristinare le versioni di una pagina in Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 37%
+source-wordcount: '1501'
+ht-degree: 65%
 
 ---
 
 # Utilizzo delle versioni di una pagina  {#working-with-page-versions}
 
-Il controllo delle versioni crea un&#39;istantanea di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
+Il controllo delle versioni crea lo snapshot di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
 
-* Crea una versione di una pagina.
+* Creare una versione di una pagina.
 * Ripristina una pagina a una versione precedente, ad esempio:
    * per annullare una modifica apportata alla pagina.
 * Confrontare la versione corrente della pagina con una versione precedente:
@@ -60,7 +55,7 @@ Puoi creare una versione della risorsa da:
 
 1. Conferma la nuova versione selezionando **Crea**.
 
-   La timeline viene aperta con le informazioni aggiornate per indicare che si tratta di una nuova versione.
+   Viene aperta la timeline con le informazioni aggiornate per indicare che si tratta di una nuova versione.
 
 ## Ripristino delle versioni {#reinstating-versions}
 
@@ -96,10 +91,10 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 
 Per **ripristinare** la pagina selezionata in una versione precedente:
 
-1. Passa alla pagina in cui desideri ripristinare una versione precedente.
+1. Passa alla pagina di cui desideri ripristinare una versione precedente.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**. Vengono elencate le versioni della pagina selezionata.
-1. Seleziona la versione da ripristinare. Vengono visualizzate le opzioni possibili:
+1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**. Vengono elencate le versioni disponibili per la pagina selezionata.
+1. Seleziona la versione da ripristinare. Vengono visualizzate le opzioni disponibili:
 
    ![Ripristina questa versione](assets/screen-shot_2019-03-05at112505.png)
 
@@ -148,7 +143,7 @@ Questo metodo può essere utilizzato per ripristinare una versione di una strutt
 
 1. Seleziona **Ripristina**, quindi **Ripristina struttura** dalla [barra delle azioni](/help/sites-authoring/basic-handling.md#actions-toolbar) in alto. Viene visualizzata la versione più recente della struttura:
 
-   ![Ripristina albero](/help/sites-authoring/assets/versions-restore-tree-02.png)
+   ![Ripristina struttura](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
 1. Utilizza il selettore data e ora in **Versioni più recenti alla data** per selezionare un&#39;altra versione della struttura, quella da ripristinare.
 
@@ -162,9 +157,9 @@ Questo metodo può essere utilizzato per ripristinare una versione di una strutt
 
 ## Anteprima di una versione   {#previewing-a-version}
 
-Puoi visualizzare in anteprima una versione specifica:
+Puoi visualizzare l’anteprima di una versione specifica:
 
-1. Passare alla pagina che si desidera confrontare.
+1. Passa alla pagina che desideri confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
 1. Vengono elencate le versioni della pagina. Seleziona la versione da visualizzare in anteprima:
@@ -175,15 +170,15 @@ Puoi visualizzare in anteprima una versione specifica:
 
    >[!CAUTION]
    >
-   >Se una pagina è stata spostata, non è più possibile eseguire un&#39;anteprima sulle versioni create prima dello spostamento.
+   >Se una pagina è stata spostata, non è più possibile eseguire un’anteprima delle versioni create prima dello spostamento.
    >
-   >* Se riscontri problemi con un’anteprima, controlla [Timeline](/help/sites-authoring/basic-handling.md#timeline) affinché la pagina possa vedere se è stata spostata.
+   >* Se riscontri problemi con un’anteprima, controlla la [Timeline](/help/sites-authoring/basic-handling.md#timeline), per constatare se la pagina da visualizzare è stata spostata.
 
 ## Confronto di una versione con la pagina corrente {#comparing-a-version-with-current-page}
 
-Per confrontare una versione precedente con la pagina corrente:
+Per mettere a confronto una versione precedente con la pagina corrente:
 
-1. Passare alla pagina che si desidera confrontare.
+1. Passa alla pagina che desideri confrontare.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Apri la colonna **Timeline** e seleziona **Mostra tutti** o **Versioni**.
 1. Vengono elencate le versioni della pagina. Seleziona la versione da confrontare:
@@ -202,14 +197,14 @@ Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di 
 
 La creazione dei contenuti è un processo continuo e collaborativo. Lo scopo di Timewarp è quello di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, per aiutarli a comprendere come è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione:
 
-* Il sistema cerca la versione della pagina che era attiva al momento selezionato.
+* il sistema cerca la versione della pagina che era attiva al momento selezionato.
    * Questa versione della pagina è stata creata/attivata *prima di* il momento selezionato in Timewarp.
 * Quando si passa a una pagina che è stata eliminata, questa viene riprodotta purché nell’archivio siano ancora disponibili le versioni precedenti della pagina.
 * Se non viene trovata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring (per evitare un errore 404 di pagina non trovata, che impedirebbe la navigazione).
 
 ### Utilizzo di Timewarp {#using-timewarp}
 
-Timewarp è un [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) dell’editor pagina. Per avviarlo, è sufficiente cambiarlo come si farebbe con qualsiasi altra modalità.
+Timewarp è una [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) dell’editor pagina. Per avviarlo, è sufficiente cambiarlo come si farebbe con qualsiasi altra modalità.
 
 1. Avvia l’editor per la pagina in cui desideri avviare Timewarp, quindi seleziona **Timewarp** nella selezione della modalità.
 
@@ -227,8 +222,8 @@ Timewarp è un [modalità](/help/sites-authoring/author-environment-tools.md#pag
 
 Timewarp semplifica al massimo la riproduzione di una pagina in un determinato momento. Tuttavia, a causa delle complessità dell’authoring continuo dei contenuti in AEM, questo non è sempre possibile. Tieni presenti queste limitazioni quando utilizzi Timewarp.
 
-* **Timewarp funziona in base alle pagine pubblicate** - Timewarp funziona correttamente solo se la pagina è stata già pubblicata. In caso contrario, timewarp mostra la pagina corrente nell’ambiente di authoring.
-* **Timewarp utilizza le versioni di pagina** - Se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa viene riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
+* **Timewarp funziona in base alle pagine pubblicate**: Timewarp funziona correttamente solo se la pagina è stata già pubblicata. In caso contrario, timewarp mostra la pagina corrente nell’ambiente di authoring.
+* **Timewarp utilizza le versioni di pagina**: se passi a una pagina che è stata rimossa o eliminata dall’archivio, questa verrà riprodotta correttamente se nell’archivio sono ancora disponibili versioni precedenti della pagina.
 * **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
 
 * **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando [ripristinare](#reverting-to-a-page-version).

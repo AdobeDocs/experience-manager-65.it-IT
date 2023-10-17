@@ -1,8 +1,8 @@
 ---
 title: Hub guida utente di AEM 6.5
-description: Una panoramica delle risorse essenziali per comprendere, installare, gestire e utilizzare AEM 6.5
+description: Una panoramica delle risorse essenziali per comprendere, installare, gestire e utilizzare AEM 6.5.
 exl-id: 51788662-6214-408e-98d9-692950c366be
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 15%

@@ -1,19 +1,14 @@
 ---
 title: Miglioramenti alla traduzione
-seo-title: Translation Enhancements
-description: Miglioramenti della traduzione in AEM.
-seo-description: Translation enhancements in AEM.
-uuid: 0563603f-327b-48f1-ac14-6777c06734b9
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+description: Miglioramenti e perfezionamenti incrementali delle funzionalità di gestione della traduzione AEM.
 topic-tags: site-features
 content-type: reference
-discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 28%
+source-wordcount: '686'
+ht-degree: 27%
 
 ---
 
@@ -69,7 +64,7 @@ Le modifiche manuali dei contenuti tradotti possono essere sincronizzate con il 
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Una vista a elenco mostra un confronto affiancato dell’originale e della traduzione per ogni componente di testo modificato. Seleziona gli aggiornamenti da sincronizzare con la memoria di traduzione e fai clic su **Aggiorna memoria**.
+1. Una vista a elenco mostra un confronto affiancato dell’originale e della traduzione per ogni componente di testo modificato. Seleziona gli aggiornamenti da sincronizzare con la memoria di traduzione e quindi fai clic su **Aggiorna memoria**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 

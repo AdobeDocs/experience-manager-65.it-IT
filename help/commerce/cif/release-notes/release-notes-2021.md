@@ -1,19 +1,19 @@
 ---
 title: Note sulla versione 2021 di Adobe Experience Manager Content and Commerce
-description: Note sulla versione 2021 di Adobe Experience Manager Content and Commerce
+description: Note sulla versione 2021 di Adobe Experience Manager Content and Commerce.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 13%
 
 ---
 
-# Panoramica sulla versione GitHub di Commerce Integration Framework
+# Panoramica sulla versione di Commerce integration framework GitHub
 
 ## Panoramica dei requisiti di sistema
 
-Esaminare i requisiti minimi di sistema nella tabella seguente per la versione CIF attualmente in uso o che si prevede di utilizzare in futuro.
+Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la versione dell&#39;CIF attualmente in uso o che si prevede di utilizzare in futuro.
 
 | Componente | Requisiti di sistema |
 |:-------|:-----:|
@@ -55,7 +55,7 @@ Esaminare i requisiti minimi di sistema nella tabella seguente per la versione C
 
 * I carrelli e le pagine di pagamento pop-up esistenti sono stati sostituiti da carrelli e pagine di pagamento dedicati per l’AEM. I componenti di queste pagine vengono generati utilizzando i componenti PEGRA estensibili di Adobe Commerce
 
-* Gli esercenti possono nascondere determinate categorie del catalogo dei prodotti nella navigazione utilizzando il backend di Commerce. Il componente core di navigazione CIF rispetta la configurazione back-end di commerce &quot;includi nel menu&quot; per mostrare/nascondere le categorie nella navigazione
+* Gli esercenti possono nascondere determinate categorie del catalogo dei prodotti nella navigazione utilizzando il backend di Commerce. Il componente core Navigazione CIF rispetta la configurazione back-end per l’e-commerce &quot;includi nel menu&quot; per mostrare/nascondere le categorie nella navigazione
 
 * AEM Storefront Venia restituisce l’errore HTTP 404 se la pagina della categoria o del prodotto non è stata trovata
 
@@ -85,7 +85,7 @@ Esaminare i requisiti minimi di sistema nella tabella seguente per la versione C
 
 * Errori JS durante il passaggio di distribuzione di AEM CS e quando non si utilizzano componenti lato client
 
-* Impossibile creare la configurazione cloud CIF in cartelle che hanno un nodo sling:configs
+* Impossibile creare la configurazione cloud CIF nelle cartelle con un nodo sling:configs
 
 ## Data di rilascio: agosto 2021
 
@@ -109,7 +109,7 @@ Esaminare i requisiti minimi di sistema nella tabella seguente per la versione C
 
 * Proprietà &quot;Testo invito all’azione&quot; interrotta nel teaser del prodotto
 
-* Errori CIF JS durante il passaggio di distribuzione di AEM CS
+* Errori CIF JS durante la fase di distribuzione di AEM CS
 
 * Correggi l&#39;accesso ai prodotti non elaborati per gli elementi dell&#39;elenco di prodotti mappati
 

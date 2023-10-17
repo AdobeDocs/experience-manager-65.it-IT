@@ -1,19 +1,11 @@
 ---
 title: Personalizzazione e targeting dei contenuti
-seo-title: Personalization and Content Targeting
-description: Scopri in che modo AEM può creare contenuti personalizzati
-seo-description: Learn how AEM can create personalized content
-uuid: 3a1aaa3d-5f57-4fb7-a4be-523f0d274b79
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
-discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
+description: Scopri come Adobe Experience Manager 6.5 può creare contenuti personalizzati.
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 35%
+source-wordcount: '521'
+ht-degree: 40%
 
 ---
 
@@ -68,6 +60,6 @@ AEM fornisce un motore di targeting integrato che elabora le richieste delle pag
 Il motore di targeting di Adobe Target permette di tenere traccia delle informazioni raccolte dalle visite della pagina in Adobe Target.
 
 * Quando utilizzi questo motore di targeting, puoi utilizzare i segmenti importati da Adobe Target per definire i tipi di pubblico per le esperienze.
-* Le attività che utilizzano il motore di Adobe Target sono [sincronizzato con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
+* Le attività che utilizzano il motore di Adobe Target sono [sincronizzate con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
 Puoi usare questo motore di targeting dopo averlo [integrato con Adobe Target](/help/sites-administering/opt-in.md).

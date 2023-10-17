@@ -1,10 +1,10 @@
 ---
 title: Impostazione del carrello e di Dispatcher
-description: Impostazione del carrello e di Dispatcher
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+description: Scopri il carrello e la configurazione di Adobe Experience Manager Dispatcher.
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 87%
+source-wordcount: '148'
+ht-degree: 79%
 
 ---
 

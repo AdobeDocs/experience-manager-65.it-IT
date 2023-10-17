@@ -1,15 +1,9 @@
 ---
 title: Panoramica di eCommerce
-seo-title: eCommerce Overview
 description: L’eCommerce generico AEM è disponibile come parte dell’installazione standard e offre tutte le funzionalità del framework eCommerce.
-seo-description: AEM generic eCommerce is available as part of the standard installation and provides you with the full functionality of the eCommerce framework.
-contentOwner: Guillaume Carlino
-topic-tags: e-commerce
-content-type: reference
-docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
@@ -20,9 +14,9 @@ ht-degree: 3%
 
 L’eCommerce generico AEM è disponibile come parte di un’installazione standard e offre tutte le funzionalità del framework eCommerce.
 
-L’Adobe fornisce due versioni di Commerce Integration Framework:
+L&#39;Adobe fornisce due versioni della Commerce integration framework:
 
-|                         | CIF on-prem | CIF Cloud |
+|                         | CIF on-premise | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versioni di AEM supportate | AEM on-prem o AMS 6.x | AEM AMS 6.4 e 6.5 |
 | Back-end | - AEM, Java <br> - Integrazione monolitica, mappatura pre-build (modello)<br> - Archivio JCR | - ADOBE COMMERCE <br>- Java e JavaScript <br>- Nessun dato Commerce memorizzato nell’archivio JCR |
@@ -36,7 +30,7 @@ L’Adobe fornisce due versioni di Commerce Integration Framework:
 
 ## Distribuzione di altre implementazioni {#deploying-other-implementations}
 
-Per AEM e Adobe Commerce, vedere [Integrazione di AEM e Adobe Commerce](/help/commerce/cif/integrating/magento.md) utilizzando [Framework di integrazione Commerce](/help/commerce/cif/introduction.md).
+Per AEM e Adobe Commerce, vedere [Integrazione di AEM e Adobe Commerce](/help/commerce/cif/integrating/magento.md) utilizzando [Commerce integration framework](/help/commerce/cif/introduction.md).
 
 >[!NOTE]
 >

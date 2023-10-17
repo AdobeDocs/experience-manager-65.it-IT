@@ -1,17 +1,11 @@
 ---
 title: Casella in entrata per gestire le attività
-description: Gestione delle attività tramite la casella in entrata.
-uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
+description: Gestione delle attività con la casella in entrata in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 29%
+source-wordcount: '1148'
+ht-degree: 42%
 
 ---
 
@@ -32,7 +26,7 @@ Puoi ricevere notifiche da varie aree dell’AEM, inclusi flussi di lavoro e pro
 
    * elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito.
 
-Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visualizzarle e intervenire.
+Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visualizzarle e interagire con loro.
 
 >[!NOTE]
 >
@@ -43,14 +37,14 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 >Per ulteriori informazioni sui tipi di elemento, vedi anche:
 >
 >* [Progetti](/help/sites-authoring/touch-ui-managing-projects.md)
->* [Progetti - Utilizzo delle attività](/help/sites-authoring/task-content.md)
+>* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md)
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
 >
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
 
-Da una qualsiasi delle console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può anche essere aperto per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
+Da una qualsiasi console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può essere aperto anche per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
 
 ![wf-80](assets/wf-80.png)
 
@@ -65,7 +59,7 @@ L’AEM preconfigurato è precaricato con quattro attività assegnate al gruppo 
 * [Configura Analytics e Targeting](/help/sites-administering/opt-in.md)
 * [Applica elenco di controllo sicurezza AEM](/help/sites-administering/security-checklist.md)
 * Abilita raccolta di dati di utilizzo aggregati
-* [Configura HTTPS](/help/sites-administering/ssl-by-default.md)
+* [Configurare HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Apertura della casella in entrata  {#opening-the-inbox}
 
@@ -123,7 +117,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
 * **Vista a elenco**
 
-  Per **Vista a elenco** puoi configurare il meccanismo di ordinamento:
+  Per **Vista a elenco** puoi configurare il metodo di ordinamento:
 
    * **Campo di ordinamento**
    * **Ordinamento**
@@ -237,9 +231,9 @@ Dalla casella in entrata è possibile creare le attività:
 
 ## Creazione di un progetto  {#creating-a-project}
 
-Per alcune attività puoi creare un [Progetto](/help/sites-authoring/projects.md) in base a tale attività:
+Per alcune attività puoi creare un [Progetto](/help/sites-authoring/projects.md) in base all’attività in questione:
 
-1. Seleziona l’attività appropriata, toccando/facendo clic sulla miniatura.
+1. Seleziona l’attività appropriata, toccando o facendo clic sulla miniatura.
 
    >[!NOTE]
    >
@@ -248,7 +242,7 @@ Per alcune attività puoi creare un [Progetto](/help/sites-authoring/projects.md
    >Gli elementi di lavoro (da un flusso di lavoro) non possono essere utilizzati per creare un progetto.
 
 1. Dalla barra degli strumenti, seleziona **Crea progetto** per aprire la procedura guidata.
-1. Seleziona il modello appropriato, quindi **Successivo**.
+1. Seleziona il modello appropriato, quindi **Avanti**.
 1. Specifica le proprietà richieste:
 
    * **Base**
@@ -265,7 +259,7 @@ Per alcune attività puoi creare un [Progetto](/help/sites-authoring/projects.md
 
    >[!NOTE]
    >
-   >Consulta [Creazione di un progetto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) per informazioni complete.
+   >Consulta [Creazione di un progetto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) per ricevere informazioni complete.
 
 1. Seleziona **Crea** per confermare l’azione.
 

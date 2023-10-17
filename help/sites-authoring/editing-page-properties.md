@@ -1,16 +1,11 @@
 ---
 title: Modifica delle proprietà di una pagina di contenuto
-description: Imposta le proprietà richieste per una pagina.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: Definisci le proprietà richieste per una pagina in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1868'
-ht-degree: 43%
+source-wordcount: '1872'
+ht-degree: 42%
 
 ---
 

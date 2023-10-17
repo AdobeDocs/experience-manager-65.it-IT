@@ -1,16 +1,11 @@
 ---
 title: Authoring
-description: Concetti relativi all’authoring in Adobe Experience Manager
-contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Concetti di authoring e pubblicazione in Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 20%
+source-wordcount: '553'
+ht-degree: 35%
 
 ---
 
@@ -32,7 +27,7 @@ L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare
 
 ![Panoramica degli ambienti](assets/chlimage_1-132.png)
 
-Nell’ambiente di authoring, le funzionalità dell’AEM sono rese disponibili tramite due interfacce utente. Per l’ambiente di pubblicazione, puoi progettare l’aspetto e il comportamento dell’interfaccia resa disponibile agli utenti.
+Nell’ambiente di authoring, le funzionalità dell’AEM sono rese disponibili tramite due interfacce utente. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
 
 ### Ambiente di authoring {#author-environment}
 
@@ -40,9 +35,9 @@ L’autore utilizza il cosiddetto **ambiente di authoring**, che fornisce un’i
 
 >[!NOTE]
 >
->Il tuo account necessita dei diritti di accesso appropriati per creare, modificare o pubblicare contenuti.
+>Per creare, modificare o pubblicare contenuti, il tuo account deve disporre dei diritti di accesso appropriati.
 
-A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui:
+A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui (tra le altre):
 
 * generare nuovo contenuto o modificare contenuto esistente in una pagina
 * utilizzare modelli predefiniti per creare nuove pagine di contenuto
@@ -53,7 +48,7 @@ A seconda della configurazione dell’istanza e dei diritti di accesso personali
 * spostare, copiare o eliminare pagine di contenuto, risorse e così via
 * pubblicare (o annullare la pubblicazione) pagine, risorse e così via
 
-Sono inoltre disponibili attività amministrative che consentono di gestire il contenuto:
+Sono anche disponibili attività amministrative per la gestione dei contenuti:
 
 * flussi di lavoro che controllano il modo in cui vengono gestite le modifiche; ad esempio, imporre una revisione prima della pubblicazione
 * progetti che coordinano singole attività
@@ -86,4 +81,4 @@ Quando il sito AEM è [sito community](/help/communities/overview.md), o include
 
 #### Dispatcher {#dispatcher}
 
-Per ottimizzare le prestazioni per i visitatori del sito Web, il **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)** implementa il bilanciamento del carico e il caching.
+Per ottimizzare le prestazioni dal punto di vista dei visitatori del sito web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) implementa funzioni di bilanciamento del carico e memorizzazione in cache.**

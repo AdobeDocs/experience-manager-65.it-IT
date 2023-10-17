@@ -1,11 +1,11 @@
 ---
 title: La comunità AEM
-description: La comunità AEM
+description: Scopri e crea connessioni con la community di Adobe Experience Manager.
 exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 6%
+source-wordcount: '323'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 La comunità AEM conta migliaia di membri in tutto il mondo. Si va da persone nuove a Experienci Manager, a esperti sviluppatori e amministratori. La community ti aiuta da domande sulle funzionalità dell’AEM fino a risposte alle domande sullo sviluppo. La comunità AEM organizza regolarmente sessioni di esperti con esperti interni ed esterni. Consente inoltre di produrre campioni, articoli e tutorial per l’utente.
 
-[Entra a far parte della community oggi stesso per accedere ai contenuti, alle persone e alle conoscenze migliori.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) È aperto a tutti. Se sei interessato all&#39;AEM, allora sei il benvenuto. Passate oggi!
+[Entra a far parte della community oggi stesso per accedere ai contenuti, alle persone e alle conoscenze migliori.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=it) È aperto a tutti. Se sei interessato all&#39;AEM, allora sei il benvenuto. Passate oggi!
 
 ## Quali eventi sono previsti per i membri della comunità AEM? {#events}
 
@@ -25,7 +25,7 @@ C&#39;è tutta una serie di eventi per i membri! Ogni mese si tengono sessioni i
 
 ## Posso ottenere esempi di codice che mi aiutino? {#code-samples}
 
-Il team della community AEM sta continuamente producendo guide ed esempi di codice per aiutare sviluppatori e utenti Experienci Manager a familiarizzare con la soluzione. [Di seguito è riportato un elenco di articoli pratici ed esempi di codice](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+Il team della community AEM sta continuamente producendo guide ed esempi di codice per aiutare sviluppatori e utenti Experienci Manager a familiarizzare con la soluzione. [Di seguito è riportato un elenco di articoli pratici ed esempi di codice](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=it).
 
 ## Chiedi alle sessioni degli esperti della community e al GEMS {#gems}
 

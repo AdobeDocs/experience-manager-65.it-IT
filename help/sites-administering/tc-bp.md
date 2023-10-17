@@ -1,20 +1,12 @@
 ---
 title: Best practice per la traduzione
-seo-title: Translation Best Practices
 description: Trova le best practice compilate dai team tecnici e di consulenza Adobi per aiutarti a iniziare a lavorare su progetti di traduzione.
-seo-description: Find best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
-uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features, best-practices
-content-type: reference
-discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +29,7 @@ La creazione o l’espansione di una presenza web globale può essere un process
 
 * Durante la progettazione della struttura del sito, esamina innanzitutto il contenuto e determina dove e in quale lingua viene creato il contenuto. Questa posizione deve essere il livello superiore del sito.
 * La best practice consiste in una **struttura basata sul linguaggio** con un massimo di 3 livelli tra l’authoring di livello superiore e i siti del Paese.
-* Utilizza una convenzione di denominazione di un sito in una lingua o in un paese che segue **Standard W3C**.
+* Utilizza una convenzione di denominazione di un sito in una lingua o in un Paese che segue gli **standard W3C**.
 * Determina in che modo i contenuti vengono distribuiti da aree geografiche e Paesi. Considera quali Paesi condividono le lingue. Si consiglia di creare master di lingua, un livello di pagine non attivate, in cui il contenuto tradotto può essere rivisto e modificato e quindi inviato o trascinato a un sito del Paese che condivide tale lingua.
 * Sono disponibili due approcci per la creazione di master di lingua: tramite copie per lingua e tramite copie MSM/live.
 

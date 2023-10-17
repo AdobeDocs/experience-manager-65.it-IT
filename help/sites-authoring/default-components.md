@@ -1,15 +1,11 @@
 ---
 title: Componenti predefiniti
-description: Adobe Experience Manager è dotato di vari componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
+description: Adobe Experience Manager viene fornito con vari componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 18%
+ht-degree: 37%
 
 ---
 
@@ -21,13 +17,13 @@ I componenti sono disponibili quando [modifica di una pagina](/help/sites-author
 
 >[!NOTE]
 >
->In questa sezione vengono descritti solo i componenti disponibili come predefiniti in un’installazione standard per AEM.
+>In questa sezione vengono descritti solo i componenti disponibili forniti in un’installazione standard di AEM.
 >
->A seconda dell’istanza, è possibile che siano stati sviluppati in modo esplicito componenti personalizzati in base alle proprie esigenze. Questi possono anche avere lo stesso nome di alcuni dei componenti discussi qui.
+>A seconda dell’istanza, è possibile che siano stati sviluppati in modo esplicito componenti personalizzati in base alle proprie esigenze. Questi potrebbero anche avere lo stesso nome di alcuni dei componenti descritti qui.
 
-## Utilizzo generale   {#general-usage}
+## Utilizzo generale {#general-usage}
 
-I componenti sono disponibili nel **Componenti** del pannello laterale dell’editor di pagine quando [modifica di una pagina](/help/sites-authoring/editing-content.md).
+I componenti sono disponibili nella scheda **Componenti** del pannello laterale dell’editor di pagine durante la [modifica di una pagina](/help/sites-authoring/editing-content.md).
 
 Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pagina. Puoi quindi modificarlo utilizzando:
 
@@ -36,7 +32,7 @@ Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pa
 
 * [Modifica contenuto - Modalità a tutto schermo](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Per ulteriori informazioni sull’aggiunta di componenti a una pagina, consulta [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md).
+Per ulteriori informazioni sull’aggiunta di componenti a una pagina, consulta l’articolo [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md).
 I componenti sono ordinati in base a varie categorie, denominate gruppi di componenti. Esempi di tali gruppi di componenti includono:
 
 * **We.Retail**: include i Componenti core proxy da utilizzare con [Implementazione di riferimento We.Retail](/help/sites-developing/we-retail.md).

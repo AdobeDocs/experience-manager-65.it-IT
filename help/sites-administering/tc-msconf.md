@@ -1,18 +1,13 @@
 ---
 title: Connessione a Microsoft&reg; Translator
-description: Scopri come collegare AEM a Microsoft&reg; Translator.
-uuid: 5e3916ec-36a0-4d31-94ff-c340a462411a
+description: Scopri come collegare Adobe Experience Manager a Microsoft&reg; Translator.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 feature: Language Copy
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 11%
+source-wordcount: '608'
+ht-degree: 14%
 
 ---
 
@@ -31,13 +26,13 @@ Dopo aver creato la configurazione, devi [attivarla](/help/sites-administering/t
 
 La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco per creare una configurazione di Microsoft® Translator.
 
-1. Nella barra, tocca o fai clic su Strumenti > Cloud Services.
+1. Nella barra, tocca o fai clic su Strumenti > Cloud Service.
 1. Nell’area Microsoft® Translator, seleziona Mostra configurazioni.
 1. Fai clic sul collegamento + accanto a Configurazioni disponibili.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-1. Digita un titolo per la configurazione. Il titolo identifica la configurazione nella console Cloud Services e negli elenchi a discesa delle proprietà della pagina. Il nome predefinito è basato sul titolo. Facoltativamente, digita un nome da utilizzare per il nodo dell’archivio che memorizza la configurazione. Utilizza il valore predefinito per la proprietà Configurazione principale, che corrisponde al percorso del nodo dell’archivio.
+1. Digita un titolo per la configurazione. Il titolo identifica la configurazione sia nella console Cloud Services che negli elenchi a discesa delle proprietà della pagina. Il nome predefinito è basato sul titolo. Facoltativamente, digita un nome da utilizzare per il nodo dell’archivio che memorizza la configurazione. Utilizza il valore predefinito per la proprietà Configurazione principale, che corrisponde al percorso del nodo dell’archivio.
 1. Fai clic su Crea.
 1. Nella finestra di dialogo visualizzata digitare i valori per le proprietà e quindi fare clic su OK.
 
@@ -59,7 +54,7 @@ Questa configurazione di Microsoft® Translator è ottimizzata per l’utilizzo 
 
 Le pagine di configurazione di Microsoft® Translation forniscono un comodo collegamento al sito web Microsoft® per ottenere un abbonamento a un account adeguato per i sistemi di produzione.
 
-1. Nella barra, tocca o fai clic su Strumenti > Operazioni > Cloud > Cloud Services.
+1. Nella barra, tocca o fai clic su Strumenti > Operazioni > Cloud > Cloud Service.
 1. Nell’area Microsoft® Translator, tocca o fai clic su Mostra configurazioni, quindi tocca o fai clic su Microsoft® Translator Trial License (Microsoft® Translation Configuration).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
@@ -72,7 +67,7 @@ Le pagine di configurazione di Microsoft® Translation forniscono un comodo coll
 
 Le pagine di configurazione di Microsoft® Translation forniscono un comodo collegamento al sito web Microsoft® per personalizzare il motore di traduzione Microsoft®. ([https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/](https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/))
 
-1. Nella barra, tocca o fai clic su Strumenti > Operazioni > Cloud > Cloud Services.
+1. Nella barra, tocca o fai clic su Strumenti > Operazioni > Cloud > Cloud Service.
 1. Nell’area Microsoft® Translator, tocca o fai clic su Mostra configurazioni, quindi tocca o fai clic sulla configurazione da personalizzare.
 1. Nella pagina di configurazione, fai clic su Personalizza Translator. Utilizza la pagina web Microsoft® che si apre per personalizzare il tuo servizio.
 

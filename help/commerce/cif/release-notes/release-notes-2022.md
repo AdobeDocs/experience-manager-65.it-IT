@@ -1,19 +1,19 @@
 ---
 title: Note sulla versione 2022 di AEM Content and Commerce
-description: Note sulla versione 2022 di AEM Content and Commerce
+description: Note sulla versione 2022 di Adobe Experience Manager Content and Commerce.
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '818'
 ht-degree: 35%
 
 ---
 
-# Panoramica sulla versione GitHub di Commerce Integration Framework
+# Panoramica sulla versione di Commerce integration framework GitHub
 
 ## Panoramica dei requisiti di sistema
 
-Esaminare i requisiti minimi di sistema nella tabella seguente per la versione CIF attualmente in uso o che si prevede di utilizzare in futuro.
+Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la versione dell&#39;CIF attualmente in uso o che si prevede di utilizzare in futuro.
 
 | Componente | Requisiti di sistema |
 |:-------|:-----:|

@@ -1,15 +1,15 @@
 ---
 title: Note sulla versione 2019 di AEM Content and Commerce
-description: Note sulla versione 2019 di AEM Content and Commerce
+description: Note sulla versione 2019 di Adobe Experience Manager Content and Commerce.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '992'
 ht-degree: 10%
 
 ---
 
-# Panoramica sulla versione GitHub di Commerce Integration Framework
+# Panoramica sulla versione di Commerce integration framework GitHub
 
 ## Data di rilascio: novembre 2019
 
@@ -17,7 +17,7 @@ ht-degree: 10%
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.7.1 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.6.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetipo | 0.6.2 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Archetipo CIF | 0.6.2 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-november}
 
@@ -35,7 +35,7 @@ ht-degree: 10%
 
 * I componenti basati su React sono disponibili come pacchetto npm. Questo consente agli sviluppatori di utilizzare il pacchetto React Components come dipendenza per un nuovo progetto React per consentire la personalizzazione dei componenti esistenti o lo sviluppo di nuovi componenti basati su React.
 
-* La personalizzazione delle query GraphQL è stata semplificata. Questo consente agli sviluppatori di personalizzare i componenti CIF di base con meno codice.
+* La personalizzazione delle query GraphQL è stata semplificata. Questo consente agli sviluppatori di personalizzare i componenti core CIF con meno codice.
 
 ## Data di rilascio: ottobre 2019
 
@@ -43,7 +43,7 @@ ht-degree: 10%
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.6.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.5.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetipo | 0.5.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Archetipo CIF | 0.5.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-october}
 
@@ -65,7 +65,7 @@ ht-degree: 10%
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.5.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.4.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetipo | 0.4.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Archetipo CIF | 0.4.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-september}
 
@@ -87,7 +87,7 @@ ht-degree: 10%
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.4.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.3.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetipo | 0.3.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Archetipo CIF | 0.3.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-august}
 
@@ -95,7 +95,7 @@ ht-degree: 10%
 
 * I componenti CIF si sono separati dallo stile CSS specifico di &quot;Venia&quot; per consentire agli sviluppatori di applicare lo stile CSS desiderato.
 
-* Funzione multi-store/sito per consentire l’utilizzo di componenti core CIF su più strutture di siti AEM e consentire all’implementazione client GraphQL sottostante di connettersi a diverse viste store/store di Adobe Commerce.
+* Funzione multi-store/sito per consentire l’uso dei componenti core CIF su più strutture di siti AEM e consentire all’implementazione client GraphQL sottostante di connettersi a diverse viste store/store di Adobe Commerce.
 
 * Il caching di GraphQL è abilitato per alcune query GraphQL tramite HTTP GET per ridurre i tempi di risposta.
 
@@ -115,7 +115,7 @@ ht-degree: 10%
 |:-------|:-----:|---------------------:|
 | Connettore CIF | 0.3.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componenti core CIF | 0.2.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetipo | 0.2.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Archetipo CIF | 0.2.0 | [Note sulla versione](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novità {#what-is-new-july}
 

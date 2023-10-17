@@ -1,10 +1,10 @@
 ---
 title: Intestazioni HTTP personalizzate
-description: Configurazione delle intestazioni HTTP personalizzate
+description: Scopri come configurare le intestazioni HTTP personalizzate in Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '278'
 ht-degree: 5%
 
 ---
@@ -13,11 +13,12 @@ ht-degree: 5%
 
 ## Panoramica {#overview}
 
-Per ottenere un maggiore controllo sul backend, gli autori possono configurare intestazioni HTTP personalizzate da inviare al motore di e-commerce, insieme a quelle già inviate da CIF. I casi d’uso comuni includono impostazioni multi-store in cui puoi utilizzare le intestazioni HTTP per controllare la risposta del back-end di Commerce.
+Per ottenere un maggiore controllo sul backend, gli autori possono configurare intestazioni HTTP personalizzate da inviare al motore di e-commerce, insieme a quelle già inviate dall’CIF. I casi d’uso comuni includono impostazioni multi-store in cui puoi utilizzare le intestazioni HTTP per controllare la risposta del back-end di Commerce.
 
 >[!NOTE]
 >
 >Gli sviluppatori possono sempre configurare intestazioni HTTP personalizzate utilizzando la configurazione client di GraphQL.
+>
 
 ## Configurazione {#configuration}
 
@@ -35,5 +36,5 @@ I componenti che utilizzano la configurazione del servizio cloud precedente invi
 
 Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non saranno disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. È possibile trovare un elenco di nomi di intestazione con restrizioni [qui](https://developer.mozilla.org/it-IT/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
 
-* &quot;Store&quot;: utilizzato da CIF per identificare lo store di Adobe Commerce
-* &quot;Preview-Version&quot;: utilizzato da CIF per recuperare i prodotti in staging
+* &quot;Store&quot;: utilizzato dall’CIF per identificare il negozio Adobe Commerce
+* &quot;Preview-Version&quot;: utilizzato dall&#39;CIF per recuperare i prodotti in staging
