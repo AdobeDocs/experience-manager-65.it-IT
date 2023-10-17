@@ -1,19 +1,15 @@
 ---
 title: Moderazione in contesto
-seo-title: In-Context Moderation
-description: Come eseguire le azioni del moderatore
-seo-description: How to perform moderator actions
-uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
+description: Scopri come gli amministratori e i membri attendibili della community possono eseguire azioni di moderazione in Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -30,7 +26,7 @@ Visita la panoramica sulla moderazione per una descrizione [azioni di moderazion
 
 ## Interfaccia utente di moderazione {#moderation-ui}
 
-L&#39;interfaccia utente presentata al moderatore nell&#39;istanza di pubblicazione è contenuta nella finestra di dialogo per la pubblicazione e la gestione dei contenuti generati dagli utenti (UGC, User Generated Content). Gli elementi dell’interfaccia utente dipendono dallo stato del visitatore del sito, che si tratti o meno di...
+L&#39;interfaccia utente presentata al moderatore nell&#39;istanza di pubblicazione è contenuta nella finestra di dialogo per la pubblicazione e la gestione dei contenuti generati dagli utenti (UGC, User-Generated Content). Gli elementi dell’interfaccia utente dipendono dallo stato del visitatore del sito, che si tratti o meno di...
 
 1. Membro che ha pubblicato il contenuto.
 1. Un moderatore membro attendibile.
@@ -40,11 +36,11 @@ L&#39;interfaccia utente presentata al moderatore nell&#39;istanza di pubblicazi
 
 ## Esempio {#example}
 
-Utilizzo di [Coinvolgi Geometrixx](http://localhost:4503/content/sites/engage/en.html) sito creato quando [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum su cui si possono eseguire varie attività di moderazione nell&#39;ambiente di pubblicazione, come mostrato di seguito.
+Utilizzo di [Coinvolgi Geometrixx](http://localhost:4503/content/sites/engage/en.html) sito creato quando [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare un thread in un forum in cui sperimentare varie attività di moderazione nell&#39;ambiente di pubblicazione. Vedi sotto.
 
-Aaron McDonald (aaron.mcdonald@mailinator.com) è stato identificato come membro fidato della community aggiungendolo al gruppo community-engagement-moderators durante la creazione del sito.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) è stato identificato come membro affidabile della community aggiungendolo al gruppo community-engagement-moderators durante la creazione del sito.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) può essere aggiunto come membro del gruppo community-engagement-members utilizzando il [Console Membri](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) può essere aggiunto come membro del gruppo community-engagement-members utilizzando il [Console Membri](members.md).
 
 Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestione di utenti e gruppi di utenti](users.md).
 
@@ -60,7 +56,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
    * Inserisci il corpo del testo
 
-     Non ho avuto molto successo quando appendo una mangiatoia di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarlo prima?
+     Non ho avuto molto successo quando appendo una mangiatoia di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
 
    * Seleziona post
    * Seleziona disconnessione
@@ -136,7 +132,7 @@ Disconnetti.
 
 ### Moderatore community (#2) {#community-moderator}
 
-Accedi come Aaron McDonald (aaron.mcdonal@mailinator.com), un moderatore della community, e accedi al thread selezionando Forum, quindi Leggi tutto per il post su hummingbird.
+Accedi come Aaron McDonald (`aaron.mcdonal@mailinator.com`), un moderatore della community, e accedere al thread selezionando Forum (Forum) e quindi Ulteriori informazioni sul post hummingbird.
 
 Avviso:
 
@@ -151,7 +147,7 @@ Seleziona la voce di menu Amministrazione per accedere al [console di moderazion
 
 Tieni presente che, per un moderatore della community, è visibile solo il contenuto moderabile del sito community di Geometrixx Engage.
 
-Nota che il moderatore della community dispone delle stesse opzioni dell’amministratore (l’immagine mostra la barra laterale di ricerca chiusa), ma non ha accesso ad altre console AEM.
+Il moderatore della community dispone delle stesse opzioni dell’amministratore (l’immagine mostra la barra laterale di ricerca chiusa), ma non ha accesso ad altre console AEM.
 
 Disconnetti.
 
@@ -159,7 +155,7 @@ Disconnetti.
 
 ### Autore di contenuti (#1) {#content-author}
 
-Accedi come Rebekah Larsen (rebekah.larsen@mailinator.com), un membro della community che ha avviato il thread, e accedi al thread selezionando Forum e quindi Leggi tutto per il post su hummingbird.
+Accedi come Rebekah Larsen (`rebekah.larsen@mailinator.com`), un membro della community che ha avviato il thread e vi ha accesso selezionando Forum e quindi Leggi tutto per il post su hummingbird.
 
 Avviso:
 

@@ -1,21 +1,17 @@
 ---
 title: Console Gruppi per community
-seo-title: Community Groups Console
-description: La console Gruppi consente di creare gruppi community
-seo-description: Groups console lets you create Community groups
-uuid: 21e2bde3-7354-4193-bcb3-c672c6342252
+description: Scopri la console Gruppi community, che consente di creare gruppi community quando la struttura di modelli di un sito community include la funzione gruppi.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1688'
 ht-degree: 2%
 
 ---
@@ -28,7 +24,7 @@ La console Gruppi consente di creare gruppi della community quando il sito [stru
 * Solo per l’ambiente di authoring, è disponibile una procedura guidata per la creazione di gruppi simile alla procedura guidata per la creazione di siti.
 * Se i membri possono o meno creare gruppi nell&#39;ambiente di pubblicazione, è possibile configurarlo quando si aggiunge una funzione Gruppi a una struttura del sito o del gruppo di community.
 
-Dei tre modelli di gruppo inclusi, solo `Reference Group` Il modello include una funzione di gruppi nella struttura.
+Dei tre modelli di gruppo inclusi, solo il `Reference Group` Il modello include una funzione di gruppi nella struttura.
 
 I diversi aspetti dei gruppi comunitari sono:
 
@@ -39,7 +35,7 @@ I diversi aspetti dei gruppi comunitari sono:
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
 -->
 
 >[!NOTE]
@@ -52,19 +48,19 @@ I diversi aspetti dei gruppi comunitari sono:
 
 Per accedere alla console Gruppi:
 
-* All&#39;autore, accedi con privilegi di amministratore.
+* In modalità Autore, accedi con privilegi di amministratore.
 * Dalla navigazione globale: **[!UICONTROL Community]** > **[!UICONTROL Sites]**.
 * Selezionare una cartella del sito community esistente per aprirla.
 * Selezionare un&#39;istanza di un sito community all&#39;interno della cartella.
 
    * La struttura del sito community deve includere una funzione di gruppo.
-   * Queste schermate sono riprese dall&#39;esercitazione introduttiva dopo [creazione di gruppi al momento della pubblicazione](/help/communities/published-site.md).
+   * Queste schermate sono tratte dall’esercitazione introduttiva dopo [creazione di gruppi al momento della pubblicazione](/help/communities/published-site.md).
 
   ![create-group](assets/create-group.png)
 
-* Seleziona la **Cartella Gruppi** per aprirlo.
+* Seleziona la **Cartella Gruppi** così puoi aprirlo.
 
-  All’apertura, vengono visualizzati tutti i gruppi esistenti, siano essi creati durante l’authoring o la pubblicazione.
+  All’apertura, vengono visualizzati tutti i gruppi esistenti, siano essi creati durante la creazione o la pubblicazione.
 
   Da questa console Gruppi è possibile creare nuovi gruppi.
 
@@ -99,7 +95,7 @@ La directory principale predefinita è il sito padre, ma la directory principale
   Il nome della pagina principale del gruppo che viene visualizzata nell&#39;URL. Evita di usare caratteri di sottolineatura (_) e parole chiave come risorse e configurazione nel nome del gruppo.
 
    * Ricontrollare il nome in quanto non può essere modificato facilmente dopo la creazione del gruppo.
-   * L’URL di base viene visualizzato sotto al `Community Group Name`.
+   * L’URL di base viene visualizzato sotto a `Community Group Name`.
    * Per un URL valido, aggiungi &quot;.html&quot;
      *ad esempio*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
@@ -131,12 +127,12 @@ L’immagine deve essere ridimensionata in modo da avere la larghezza prevista p
 
 Quando crei o selezioni un’immagine, tieni presente quanto segue:
 
-* L’altezza dell’immagine viene ritagliata a 120 pixel misurati dal bordo superiore dell’immagine
+* L&#39;altezza dell&#39;immagine viene ritagliata a 120 pixel misurati dal bordo superiore dell&#39;immagine
 * L&#39;immagine è bloccata sul bordo sinistro della finestra del browser
 * Non esiste alcun ridimensionamento dell’immagine, tale che quando la larghezza dell’immagine è:
 
    * Inferiore alla larghezza del browser, l’immagine viene ripetuta orizzontalmente.
-   * Maggiore della larghezza del browser, l’immagine verrà ritagliata.
+   * Maggiore della larghezza del browser, l&#39;immagine appare ritagliata.
 
 ### Passaggio 3: Impostazioni {#step-settings}
 
@@ -170,7 +166,7 @@ L&#39;impostazione di appartenenza consente di selezionare uno dei tre modi per 
 
 * **Iscrizione obbligatoria**
 
-  Se viene selezionato, il gruppo community è un gruppo aperto. I membri del sito della community possono visualizzare il contenuto del gruppo, ma per pubblicare il contenuto è necessario unirsi al gruppo. I membri si uniscono selezionando il `Join` nell’ambiente di pubblicazione. Impostazione predefinita non selezionata.
+  Se viene selezionato, il gruppo community è un gruppo aperto. I membri del sito della community possono visualizzare il contenuto del gruppo, ma devono unirsi al gruppo per pubblicare il contenuto. I membri si uniscono selezionando il `Join` nell’ambiente di pubblicazione. Impostazione predefinita non selezionata.
 
 * **Iscrizione limitata**
 
@@ -196,7 +192,7 @@ Se sono necessarie delle regolazioni, utilizzare **Indietro** per farle.
 
 Una volta **Crea** è selezionato e avviato, il processo di creazione del gruppo non può essere interrotto.
 
-Al termine del processo, la scheda del nuovo sito (gruppo) della comunità secondaria viene visualizzata nella console Gruppi di siti community, da cui gli autori possono aggiungere contenuto di pagina o gli amministratori possono modificare le proprietà del sito.
+Al termine del processo, la scheda per il nuovo sito (gruppo) della sottocommunity viene visualizzata nella console Gruppi di siti community, da cui gli autori possono aggiungere il contenuto della pagina oppure gli amministratori possono modificare le proprietà del sito.
 
 ![crea gruppo community](assets/create-community-groups.png)
 
@@ -212,7 +208,7 @@ Il contenuto della pagina di un gruppo può essere creato con gli stessi strumen
 
 ## Modifica proprietà gruppo {#modify-group-properties}
 
-Le proprietà di un sito della comunità secondaria esistente, specificate durante il processo di creazione del gruppo della comunità, possono essere modificate selezionando l&#39;icona Modifica sito che viene visualizzata quando si passa il puntatore sulla scheda del gruppo:
+Le proprietà di un sito di una comunità secondaria esistente, specificate durante il processo di creazione del gruppo di comunità, possono essere modificate selezionando l&#39;icona Modifica sito che viene visualizzata quando si passa il puntatore sulla scheda del gruppo:
 
 ![edit-site](assets/edit-site.png)
 
@@ -247,13 +243,13 @@ Modifica le impostazioni, tra cui il titolo visualizzato, l’URL e [gruppi di m
 Rimuovere (eliminare) le funzioni dalla struttura del sito.
 
    * **`Grid icon`**
-Modificare l&#39;ordine delle funzioni visualizzato nella barra di navigazione di primo livello del sito.
+Consente di modificare l&#39;ordine delle funzioni visualizzato nella barra di spostamento di primo livello del sito.
 
 >[!CAUTION]
 >
 >Anche se il titolo visualizzato può essere modificato senza effetti collaterali, si sconsiglia di modificare il nome URL di una funzione community appartenente a un sito community.
 >
->Ad esempio, la ridenominazione dell’URL non sposterà l’UGC esistente, causando la perdita dell’UGC.
+>Ad esempio, la ridenominazione dell’URL non sposta l’UGC esistente, pertanto ha l’effetto di &quot;perdere&quot; l’UGC.
 
 >[!CAUTION]
 >
@@ -284,7 +280,7 @@ Il [ISCRIZIONE](#membership) Il pannello è solo informativo. Non è possibile m
 
 ### Modifica miniatura {#modify-thumbnail}
 
-Il [MINIATURA](#thumbnail) Il pannello consente di caricare un’immagine per rappresentare il gruppo community presso i visitatori nell’ambiente di pubblicazione e nella console Gruppi del sito Communities nell’ambiente di authoring.
+Il [MINIATURA](#thumbnail) Il pannello consente di caricare un’immagine per rappresentare il gruppo community nei visitatori del sito nell’ambiente di pubblicazione e nella console Gruppi del sito Communities nell’ambiente di authoring.
 
 ## Pubblicare il gruppo {#publish-the-group}
 
@@ -292,7 +288,7 @@ Il [MINIATURA](#thumbnail) Il pannello consente di caricare un’immagine per ra
 
 Dopo aver creato o modificato un gruppo community, puoi pubblicarlo (attivarlo) selezionando la `Publish Site` icona.
 
-Una volta pubblicato correttamente il gruppo, viene visualizzato un messaggio:
+Dopo la pubblicazione del gruppo, viene visualizzato il seguente messaggio:
 
 ![pubblicato da gruppo](assets/group-published.png)
 
@@ -300,7 +296,7 @@ Una volta pubblicato correttamente il gruppo, viene visualizzato un messaggio:
 >
 >Il sito della community padre e i gruppi padre avrebbero dovuto essere già stati pubblicati.
 >
->Il sito della community e i gruppi nidificati devono essere pubblicati in modalità top-down.
+>Il sito community e i gruppi nidificati devono essere pubblicati in modalità top-down.
 
 ## Elimina il gruppo {#delete-the-group}
 

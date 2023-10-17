@@ -1,20 +1,16 @@
 ---
 title: Punteggio avanzato e badge
-seo-title: Advanced Scoring and Badges
-description: Impostazione del punteggio avanzato
-seo-description: Setting up advanced scoring
-uuid: 48caca57-43d3-4f2f-adf3-257428ba54d5
+description: Scopri come impostare il punteggio avanzato per consentire l’assegnazione di distintivi per identificare i membri come esperti.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1069'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-Il punteggio avanzato consente di assegnare distintivi per identificare i membri come esperti. Il punteggio avanzato assegna punti in base alla quantità *e* qualità del contenuto creato da un membro, mentre il punteggio di base assegna i punti semplicemente in base alla quantità di contenuto creato.
+Il punteggio avanzato consente di assegnare distintivi per identificare i membri come esperti. Il punteggio avanzato assegna punti in base alla quantità *e* qualità del contenuto creato da un membro, mentre il punteggio di base assegna punti in base alla quantità di contenuto creato.
 
 Questa differenza è dovuta al motore di punteggio utilizzato per calcolare i punteggi. Il motore di punteggio di base applica una matematica semplice. Il motore di punteggio avanzato è un algoritmo adattivo che premia i membri attivi che contribuiscono a contenuti importanti e rilevanti, dedotti attraverso l’elaborazione del linguaggio naturale (NLP) di un argomento.
 
@@ -51,7 +47,7 @@ Le differenze nell’impostazione delle regole di punteggio e badge sono:
 
    * `badgingType` imposta su `advanced`
    * `badgingLevels` imposta su **numero di livelli di esperti da premiare**
-   * Richiede `badgingPaths` array di badge invece delle soglie il mapping array punta ai badge.
+   * Richiede `badgingPaths` array di badge invece delle soglie la mappatura degli array punta ai badge.
 
 >[!NOTE]
 >
@@ -65,27 +61,27 @@ Il motore di punteggio avanzato fornisce una configurazione OSGi con parametri c
 
 * **Pesi punteggio**
 
-   Per un argomento, specifica il verbo a cui assegnare la priorità più elevata durante il calcolo del punteggio. È possibile immettere uno o più argomenti, ma è limitato a **un verbo per argomento**. Consulta [Argomenti e verbi](/help/communities/implementing-scoring.md#topics-and-verbs).
+  Per un argomento, specifica il verbo a cui assegnare la priorità più elevata durante il calcolo del punteggio. È possibile immettere uno o più argomenti, ma è limitato a **un verbo per argomento**. Consulta [Argomenti e verbi](/help/communities/implementing-scoring.md#topics-and-verbs).
 Immesso come `topic,verb` con escape virgola. Ad esempio:
-   `/social/forum/hbs/social/forum\,ADD`
+  `/social/forum/hbs/social/forum\,ADD`
 Il valore predefinito è impostato sul verbo ADD per i componenti QnA e forum.
 
 * **Intervallo punteggio**
 
-   L’intervallo per i punteggi avanzati è definito da questo valore (punteggio massimo possibile) e 0 (punteggio minimo possibile).
+  L’intervallo per i punteggi avanzati è definito da questo valore (punteggio massimo) e da 0 (punteggio più basso possibile).
 
-   Il valore predefinito è 100, quindi l’intervallo di punteggio è compreso tra 0 e 100.
+  Il valore predefinito è 100, quindi l’intervallo di punteggio è compreso tra 0 e 100.
 
 * **Intervallo di tempo di decadimento entità**
 
-   Questo parametro rappresenta il numero di ore dopo le quali tutti i punteggi di entità vengono decaduti. Questa opzione è necessaria per non includere più il contenuto precedente nei punteggi di un sito community.
+  Questo parametro rappresenta il numero di ore dopo le quali tutti i punteggi di entità vengono decaduti. Questa opzione è necessaria per non includere più il contenuto precedente nei punteggi di un sito community.
 
-   Il valore predefinito è 216000 ore (~24 anni).
+  Il valore predefinito è 216000 ore (~24 anni).
 
 * **Tasso di crescita del punteggio**
 Questo specifica il punteggio tra 0 e l’intervallo di punteggio, oltre il quale la crescita rallenta per limitare il numero di esperti.
 
-   Il valore predefinito è 50.
+  Il valore predefinito è 50.
 
 ## Regole di punteggio avanzate {#advanced-scoring-rules}
 
@@ -97,7 +93,7 @@ Se un membro ha ottenuto un distintivo di esperto su un argomento che non è pi�
 
 ### scoringType {#scoringtype}
 
-Una regola di punteggio è un set di sotto-regole di punteggio, ciascuna delle quali dichiara il `scoringType`.
+Una regola di punteggio è un set di regole secondarie di punteggio, ciascuna delle quali dichiara `scoringType`.
 
 Per richiamare il motore di punteggio avanzato, `scoringType`deve essere impostato su `advanced`.
 
@@ -115,13 +111,13 @@ L’algoritmo di punteggio avanzato utilizza l’elenco di parole contenute nel 
 
 Non ci si aspetta che questo file venga modificato.
 
-Se manca il file delle parole d’arresto, il motore di punteggio avanzato genera un errore.
+Se manca il file delle parole d’arresto, il motore di punteggio avanzato restituisce un errore.
 
 ## Regole di assegnazione dei badge avanzate {#advanced-badging-rules}
 
 Le proprietà della regola di badge avanzate sono diverse da [proprietà regola di assegnazione badge di base](/help/communities/implementing-scoring.md#badging-rules).
 
-Invece di associare i punti a un’immagine del badge, è necessario solo identificare il numero di esperti consentiti e l’immagine del badge da assegnare.
+Invece di associare i punti a un’immagine del badge, è sufficiente identificare il numero di esperti ammessi e l’immagine del badge da assegnare.
 
 ![regole di badging avanzate](assets/advanced-badging-rules.png)
 
@@ -130,7 +126,7 @@ Invece di associare i punti a un’immagine del badge, è necessario solo identi
   <tr>
    <th>Proprietà</th>
    <th>Tipo</th>
-   <th>Descrizione valore</th>
+   <th>Valore Descrizione</th>
   </tr>
   <tr>
    <td>badgingPath</td>
@@ -150,7 +146,7 @@ Invece di associare i punti a un’immagine del badge, è necessario solo identi
   <tr>
    <td>scoringRules</td>
    <td>Stringa[]</td>
-   <td><em>(Facoltativo)</em> Stringa con più valori per limitare la regola di assegnazione dei punteggi agli eventi di assegnazione dei punteggi identificati dalle regole di assegnazione dei punteggi elencate.<br /> Esempio di voce:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Il valore predefinito non prevede alcuna restrizione.</td>
+   <td><em>(Facoltativo)</em> Una stringa con più valori per limitare la regola di assegnazione dei punteggi agli eventi di punteggio identificati da una o più regole di punteggio elencate.<br /> Esempio di voce:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Il valore predefinito non prevede alcuna restrizione.</td>
   </tr>
  </tbody>
 </table>
@@ -163,7 +159,7 @@ In questa versione beta è incluso un distintivo per gli esperti basato su premi
 
 * `expert`
 
-   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
+  `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![badge esperto](assets/included-badge.png)
 
