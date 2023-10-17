@@ -1,14 +1,14 @@
 ---
 title: Avvio di PhoneGap AEM
-description: Scopri starterkit per sviluppatori.
+description: Scopri come utilizzare starterkit per iniziare a utilizzare le nozioni di base sullo sviluppo di Adobe Experience Manager Mobili.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Per gli sviluppatori, il punto migliore per iniziare è quello di guardare il Ad
 
 https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit
 
-Starterkit ti guida rapidamente attraverso le nozioni di base sullo sviluppo AEM Mobile, a partire dalla creazione e dalla governance del progetto, l’installazione degli strumenti necessari, la definizione di un archetipo Maven, la creazione, l’implementazione e la creazione di un’esperienza personalizzata.
+Lo starterkit ti guida rapidamente attraverso le nozioni di base sullo sviluppo per AEM Mobile. Inizia con la creazione e la governance del progetto, installando gli strumenti necessari, definendo un archetipo Maven, creando, distribuendo e quindi creando la tua esperienza.
 
 Gli sviluppatori possono utilizzare questo esempio come punto di partenza per provare un’applicazione AEM Mobile utilizzando PhoneGap. L’esecuzione del starterkit e dell’applicazione di riferimento offre una solida comprensione delle nozioni di base per la creazione di applicazioni mobili avanzate.
 
@@ -34,11 +34,11 @@ Gli sviluppatori possono utilizzare questo esempio come punto di partenza per pr
 
 >[!NOTE]
 >
->Una volta che hai avuto la possibilità di acquisire familiarità con starterkit, è importante conoscere Adobe Experience Manager *componenti e modelli.*
+>Una volta che avete avuto la possibilità di familiarizzare con il kit starterkit, è importante conoscere Adobe Experience Manager *componenti e modelli.*
 
 ## Modelli e componenti {#templates-and-components}
 
-AEM *Modelli* e *Componenti* consente ai proprietari di linee di business di creare esperienze personalizzate. Entrambi *Modelli *e *Componenti* sono disponibili come predefiniti o possono essere sviluppati dall’utente, lo sviluppatore estendendo i componenti esistenti o creando greenfield (avanzato). *Modelli* e *Componenti* sono ciò che consente all’autore di AEM di trascinare e rilasciare per creare esperienze coinvolgenti e rilevanti.
+AEM *Modelli* e *Componenti* consente ai proprietari di linee di business di creare esperienze personalizzate. Entrambi *Modelli *e *Componenti* sono disponibili come predefiniti o possono essere sviluppati dall’utente, lo sviluppatore estendendo i componenti esistenti o creando greenfield (avanzato). *Modelli* e *Componenti* sono ciò che consente all’autore dell’AEM di trascinare e rilasciare per creare esperienze coinvolgenti e rilevanti.
 
 1. [Creazione di componenti](/help/sites-developing/components.md)
 1. [Creazione di modelli](/help/sites-developing/templates.md)

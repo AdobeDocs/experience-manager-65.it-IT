@@ -1,15 +1,15 @@
 ---
 title: Editor in blocco
-description: Scopri come utilizzare l’editor in blocco.
+description: Scopri come utilizzare l’Editor collettivo per una modifica efficiente quando il contesto della pagina visiva non è necessario.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1159'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ L’editor in blocco consente di:
 Per utilizzare l&#39;Editor collettivo per modificare più elementi contemporaneamente:
 
 1. In **Strumenti** , fai clic su **Importatori** per espanderla.
-1. Fai doppio clic su **Editor in blocco** per aprirlo.
+1. Fai doppio clic su **Editor in blocco**.
 1. Inserire i requisiti di selezione:
 
 <table>
@@ -78,11 +78,11 @@ Per utilizzare l&#39;Editor collettivo per modificare più elementi contemporane
   </tr>
   <tr>
    <td>Parametri di query</td>
-   <td>Utilizzando i parametri GQL, immetti la stringa di ricerca che desideri che l’Editor collettivo cerchi nel repository; ad esempio, <code>type:Page</code> cerca tutte le pagine nel percorso principale, <code>text:professional</code> cerca tutte le pagine contenenti la parola "professionale" e <code>"jcr:title":English</code> cerca tutte le pagine il cui titolo è "English". È possibile cercare solo stringhe.</td>
+   <td>Utilizzando i parametri GQL, immetti la stringa di ricerca che desideri che l’Editor collettivo cerchi nel repository. Ad esempio: <code>type:Page</code> cerca tutte le pagine nel percorso principale, <code>text:professional</code> cerca tutte le pagine contenenti la parola "professionale" e <code>"jcr:title":English</code> cerca tutte le pagine il cui titolo è "English". È possibile cercare solo stringhe.</td>
   </tr>
   <tr>
    <td>Casella di controllo Modalità contenuto</td>
-   <td>Selezionare questa casella di controllo per leggere le proprietà in <code>jcr:content</code> nodo secondario dei risultati della ricerca, se esistente. Da utilizzare solo per le pagine. I nomi delle proprietà hanno il prefisso <code>"jcr:content/"</code></td>
+   <td>Selezionare questa casella di controllo per leggere le proprietà all'interno di <code>jcr:content</code> sottonodo dei risultati della ricerca, se esistente. Da utilizzare solo per le pagine. I nomi delle proprietà hanno il prefisso <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Proprietà/Colonne</td>
@@ -104,7 +104,7 @@ Nell’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca v
 
    ![Risultati dell’editor in blocco](assets/chlimage_1-39.png)
 
-1. Apportare le modifiche necessarie facendo doppio clic in una cella.
+1. Fare doppio clic su una cella per apportare eventuali modifiche.
 
    ![Modifica in blocco](assets/srchresultedit.png)
 
@@ -117,18 +117,18 @@ Nell’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca v
 #### Parametri di query GQL aggiuntivi {#additional-gql-query-parameters}
 
 * **percorso:** cerca solo nodi sotto questo percorso. Se specificate più di un termine con un prefisso di percorso, viene considerato solo l&#39;ultimo.
-* **tipo:** restituisce solo nodi dei tipi di nodo specificati. Sono inclusi i tipi principali e mixin. È possibile specificare più tipi di nodo separati da virgole. GQL restituisce nodi di uno qualsiasi dei tipi specificati.
+* **tipo:** restituisce solo nodi del tipo di nodo specificato. Sono inclusi i tipi principali e mixin. È possibile specificare più tipi di nodo separati da virgole. GQL restituisce nodi di uno qualsiasi dei tipi specificati.
 * **ordine:** ordina il risultato in base alle proprietà specificate. È possibile specificare più nomi di proprietà separati da virgole. Per ordinare il risultato in ordine decrescente, aggiungi al nome della proprietà il prefisso meno. Ad esempio, order:-name. L&#39;utilizzo di un segno più restituisce il risultato in ordine crescente, che è anche l&#39;impostazione predefinita.
-* **limite:** limita il numero di risultati utilizzando un intervallo. Ad esempio, limit:10..20 L&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un intervallo di apertura:limit:10. o limite:..20 Se i punti vengono omessi e viene specificato un solo valore, GQL restituirà al massimo questo numero di risultati. Ad esempio, limit:10 (restituisce i primi dieci risultati).
+* **limite:** limita il numero di risultati utilizzando un intervallo. Ad esempio, limit:10..20 L&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un intervallo di apertura:limit:10. o limite:..20 Se i punti vengono omessi e viene specificato un solo valore, GQL restituisce al massimo questo numero di risultati. Ad esempio, limit:10 (restituisce i primi dieci risultati).
 
 ### Esportazione del contenuto {#exporting-content}
 
-Potrebbe essere necessario esportare il contenuto e apportarvi modifiche in un foglio di calcolo Excel. È ad esempio possibile esportare una lista di distribuzione e modificare l&#39;indicativo di località di tutti i numeri di telefono elencati direttamente in Excel, aggiungere altre righe e così via.
+Se necessario, esporta il contenuto in un foglio di calcolo Excel per apportare eventuali modifiche. È ad esempio possibile esportare una lista di distribuzione e modificare l&#39;indicativo di località di tutti i numeri di telefono elencati direttamente in Excel oppure aggiungere altre righe.
 
 Per esportare il contenuto:
 
 1. Cercare il contenuto come descritto in [Ricerca e modifica dei contenuti](#searching-and-editing-content).
-1. Clic **Esporta** per esportare le modifiche in un foglio di calcolo Excel separato da tabulazioni. WCM AEM ti chiede dove desideri scaricare il file.
+1. Clic **Esporta** in modo da poter esportare le modifiche in un foglio di calcolo Excel separato da tabulazioni. WCM AEM ti chiede dove desideri scaricare il file.
 
    >[!NOTE]
    >

@@ -1,16 +1,14 @@
 ---
 title: Sviluppo di app con PhoneGap CLI
-description: Scopri come sviluppare app con PhoneGap CLI.
-uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
+description: Scopri come sviluppare app per dispositivi mobili con PhoneGap CLI utilizzando un ambiente di sviluppo con avvio automatico.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 1%
 
 In qualsiasi momento, come sviluppatore puoi eseguire l’app su un dispositivo o all’interno di un emulatore, purché sia stato configurato l’ambiente di sviluppo.
 
-Per eseguire gli esempi seguenti, è necessario un sistema che esegua OS X (Mac) con Xcode oppure un sistema Mac/Win/Linux con l&#39;SDK Android™ installato.
+Per eseguire gli esempi seguenti, è necessario un sistema che esegua macOS X con Xcode oppure un sistema Mac/Win/Linux con l&#39;SDK Android™ installato.
 
 ## Bootstrap l’ambiente di sviluppo {#bootstrap-your-development-environment}
 
@@ -153,7 +151,7 @@ phonegap run <platform> --emulator
 
 >[!NOTE]
 >
-Per visualizzare i valori delle variabili, nel metodo corrente, passa il puntatore del mouse.
+Per visualizzare i valori delle variabili nel metodo corrente, passa il puntatore del mouse.
 
 ## Passaggi successivi {#the-next-steps}
 

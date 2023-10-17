@@ -1,16 +1,12 @@
 ---
 title: Amministrazione dei flussi di lavoro
-seo-title: Administering Workflows
-description: Scopri come amministrare i flussi di lavoro in AEM.
-seo-description: Learn how to administer workflows in AEM.
-uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
+description: Scopri come automatizzare le attività di Adobe Experience Manager utilizzando i flussi di lavoro.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 2%
@@ -42,7 +38,6 @@ I processi aziendali stabiliti dalla tua organizzazione possono essere rappresen
 >* Creazione di modelli di flusso di lavoro ed estensione delle funzionalità del flusso di lavoro: [Sviluppo ed estensione dei flussi di lavoro](/help/sites-developing/workflows.md).
 >* Miglioramento delle prestazioni dei flussi di lavoro che utilizzano risorse server significative: [Elaborazione flusso di lavoro simultaneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
-
 
 ## Modelli e istanze del flusso di lavoro {#workflow-models-and-instances}
 
@@ -85,7 +80,7 @@ Un utente o un servizio esegue i passaggi del flusso di lavoro, a seconda del ti
 
 >[!NOTE]
 >
->Se si verifica un errore, l’implementazione del servizio/passaggio deve gestire il comportamento di uno scenario di errore. Il motore del flusso di lavoro ritenterà il processo, quindi registrerà un errore e arresterà l’istanza.
+>Se si verifica un errore, l’implementazione del servizio/passaggio deve gestire il comportamento di uno scenario di errore. Il motore del flusso di lavoro stesso tenta nuovamente il processo, quindi registra un errore e arresta l’istanza.
 
 ## Stato e azioni del flusso di lavoro {#workflow-status-and-actions}
 
@@ -102,13 +97,13 @@ Un flusso di lavoro può avere uno dei seguenti stati:
 >
 >Quando l&#39;esecuzione di un passo del processo genera errori, il passo viene visualizzato nella casella in entrata dell&#39;amministratore e lo stato del flusso di lavoro è **IN ESECUZIONE**.
 
-A seconda dello stato corrente, è possibile eseguire azioni sulle istanze del flusso di lavoro in esecuzione quando è necessario intervenire nella normale progressione di un&#39;istanza del flusso di lavoro:
+A seconda dello stato, è possibile eseguire azioni sulle istanze del flusso di lavoro in esecuzione quando è necessario intervenire nella normale progressione di un’istanza del flusso di lavoro:
 
 * **Sospendi**: la sospensione modifica lo stato del flusso di lavoro in Sospeso. Vedi Attenzione di seguito:
 
 >[!CAUTION]
 >
->Si è verificato un problema noto quando si contrassegna lo stato di un flusso di lavoro come &quot;Sospendi&quot;. In questo stato è possibile eseguire azioni sugli elementi del flusso di lavoro sospesi in una casella in entrata.
+>Si è verificato un problema noto quando si contrassegna lo stato di un flusso di lavoro come &quot;Sospendi&quot;. In questo stato, è possibile intervenire sugli elementi del flusso di lavoro sospesi in una casella in entrata.
 
 * **Riprendi**: riavvia un flusso di lavoro sospeso nello stesso punto dell’esecuzione in cui è stato sospeso, utilizzando la stessa configurazione.
 * **Termina**: termina l’esecuzione del flusso di lavoro e modifica lo stato in **INTERROTTO**. Impossibile riavviare un&#39;istanza di flusso di lavoro interrotta.

@@ -1,14 +1,14 @@
 ---
 title: Rappresentazioni video
-description: Rappresentazioni video
+description: Scopri come utilizzare Adobe Experience Manager Assets per generare rappresentazioni video per risorse video di vari formati, tra cui OGG, FLV e così via.
 uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ L’elenco delle rappresentazioni video viene visualizzato nel **[!UICONTROL Rap
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Per configurare il server proxy per le rappresentazioni con codifica DM: [configurare i servizi Dynamic Media Cloud](config-dynamic.md).
+Per configurare il server proxy per le rappresentazioni con codifica DM: [configurare i servizi Dynamic Medie Cloud](config-dynamic.md).
 
 Per generare rappresentazioni video con i parametri desiderati: [crea un profilo video corrispondente](video-profiles.md).
 
@@ -43,4 +43,4 @@ Dopo aver configurato il server proxy e creato i profili video, puoi includere q
 >
 >La riproduzione audio non funziona per i file OGG e WAV su Microsoft® Internet Explorer 11. Un errore `Invalid Source` viene visualizzata nella pagina dei dettagli della risorsa per le risorse con estensione OGG o WAV.
 >
->In MS® Edge e iPad, i file OGG non vengono riprodotti e viene generato un errore di formato non supportato.
+In MS® Edge e iPad, i file OGG non vengono riprodotti e viene generato un errore di formato non supportato.

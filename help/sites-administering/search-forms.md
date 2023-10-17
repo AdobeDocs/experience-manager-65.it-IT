@@ -1,14 +1,14 @@
 ---
 title: Configurazione dei moduli di ricerca
-description: Scopri come configurare Search Forms.
+description: Scopri come utilizzare Search Forms per personalizzare la selezione dei predicati di ricerca utilizzati nei pannelli di ricerca disponibili nelle console e nei pannelli AEM dell’ambiente di authoring.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2073'
 ht-degree: 12%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 Utilizzare **Cerca in Forms** personalizzare la selezione dei predicati di ricerca utilizzati nei pannelli di ricerca disponibili in varie console e/o pannelli AEM dell’ambiente di authoring. La personalizzazione di questi pannelli rende la funzionalità di ricerca versatile in base alle tue esigenze specifiche.
 
-A [intervallo di predicato](#predicates-and-their-settings)s sono disponibili come strumenti predefiniti. Puoi aggiungere più predicati, tra cui il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata dall’utente o il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori specificati per una particolare proprietà.
+A [intervallo di predicato](#predicates-and-their-settings)s sono disponibili come strumenti predefiniti. Puoi aggiungere più predicati, tra cui il predicato Property, per cercare risorse che corrispondono a una singola proprietà specificata. In alternativa, il predicato Options cerca le risorse che corrispondono a uno o più valori specificati per una particolare proprietà.
 
 È possibile [configurare i moduli di ricerca](#configuring-your-search-forms) utilizzato nelle diverse console e nel browser risorse (durante la modifica delle pagine). Il [finestre di dialogo per la configurazione di questi moduli](#configuring-your-search-forms) accessibile tramite:
 
@@ -28,7 +28,7 @@ A [intervallo di predicato](#predicates-and-their-settings)s sono disponibili co
 
       * **Moduli di ricerca**
 
-La prima volta che accedi a questa console puoi vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione appropriata è quella predefinita (predefinita) e non può essere eliminata. Dopo aver personalizzato la configurazione, il blocco scompare, a meno che non si [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default), nel qual caso vengono ripristinati il valore predefinito (e l’indicatore del lucchetto).
+La prima volta che accedi a questa console puoi vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione appropriata è quella predefinita (predefinita) e non può essere eliminata. Dopo aver personalizzato la configurazione, il blocco scompare a meno che [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default). In tal caso, viene ripristinato il valore predefinito (e l&#39;indicatore del lucchetto).
 
 ![Finestra Cerca moduli](assets/chlimage_1-374.png)
 
@@ -125,7 +125,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Componenti </td>
-   <td>Consente all’autore di cercare/filtrare le pagine contenenti un componente specifico. Ad esempio una galleria di immagini.<br /> </td>
+   <td>Consente all’autore di cercare/filtrare le pagine contenenti un componente specifico. Ad esempio, una galleria di immagini.<br /> </td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -295,7 +295,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
   </tr>
   <tr>
    <td>Intervallo cursore </td>
-   <td>Un predicato di ricerca comune che estende il predicato di intervallo con la funzionalità del cursore. Il valore della proprietà ricercata deve essere compreso tra i limiti del cursore.</td>
+   <td>Predicato di ricerca comune che estende il predicato di intervallo con la funzionalità del cursore. Il valore della proprietà ricercata deve essere compreso tra i limiti del cursore.</td>
    <td>
     <ul>
      <li>Etichetta campo</li>
@@ -336,7 +336,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Sono obsoleti e disponibili solo per compatibilità con le versioni precedenti.
 >
->Queste informazioni sono solo a scopo di riferimento, non è necessario apportare modifiche a `/libs`.
+>Queste informazioni sono esclusivamente a scopo di riferimento. Non modificare `/libs`.
 
 ### Impostazioni predicato {#predicate-settings}
 
@@ -344,7 +344,7 @@ A seconda del predicato, è disponibile una selezione di impostazioni per la con
 
 * **Etichetta campo**
 
-  L’etichetta che verrà visualizzata come intestazione comprimibile o come etichetta del campo del predicato.
+  Etichetta visualizzata come intestazione comprimibile o come etichetta di campo del predicato.
 
 * **Descrizione**
 
@@ -376,7 +376,7 @@ A seconda del predicato, è disponibile una selezione di impostazioni per la con
 
 * **Percorso opzione**
 
-  L’utente può selezionare il percorso utilizzando Browser percorsi nella scheda Impostazione predicati. Dopo aver selezionato **+** viene utilizzata per aggiungere la selezione all’elenco delle opzioni valide (quindi **-** da rimuovere se necessario).
+  L’utente può selezionare il percorso utilizzando Browser percorsi nella scheda Impostazione predicati. Dopo aver selezionato **+**, viene utilizzata per aggiungere la selezione all’elenco delle opzioni valide (quindi la **-** da rimuovere, se necessario).
 
   Le opzioni sono nodi di contenuto creati dall’utente con la seguente struttura:
 
@@ -388,10 +388,10 @@ Effettivamente uguale al **Percorso opzioni**, solo questo campo si trova nel pr
 * **Selezione singola**
 Se questa opzione è selezionata, le opzioni vengono visualizzate come caselle di controllo che consentono una sola selezione. Se selezionata per errore, è possibile deselezionare una casella di controllo.
 
-* **Nome/i proprietà Publish e Live Copy**
+* **Nomi delle proprietà Publish e Live Copy**
 Le etichette per le caselle di controllo di pubblicazione e Live Copy per il predicato specifico di Sites.
 
-* &amp;ast; sulle etichette dei campi nel **Impostazioni** scheda indica che i campi sono obbligatori e se viene lasciato vuoto, viene visualizzato un messaggio di errore
+* &amp;ast; sulle etichette dei campi nel **Impostazioni** indica che i campi sono obbligatori e, se lasciata vuota, viene visualizzato un messaggio di errore.
 
 ## Configurazione del Forms di ricerca {#configuring-your-search-forms}
 
@@ -416,15 +416,15 @@ Le etichette per le caselle di controllo di pubblicazione e Live Copy per il pre
 Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 
 1. [Apri la configurazione personalizzata](#creating-opening-a-customized-configuration) per l&#39;aggiornamento.
-1. Per aggiungere un nuovo campo, aprire **Seleziona predicato** e trascina il predicato richiesto nella posizione desiderata. Ad esempio, il **Predicato intervallo di date**:
+1. Per aggiungere un campo, aprire **Seleziona predicato** e trascina il predicato richiesto nella posizione desiderata. Ad esempio, il **Predicato intervallo di date**:
 
    ![Modifica di un modulo di ricerca](assets/chlimage_1-375.png)
 
 1. A seconda che:
 
-   * Stai aggiungendo un nuovo campo:
+   * Stai aggiungendo un campo:
 
-     Dopo l’aggiunta del predicato, **Impostazioni** viene aperta e vengono visualizzate le proprietà che possono essere definite.
+     Dopo l’aggiunta del predicato, il **Impostazioni** Viene visualizzata una scheda che mostra le proprietà che possono essere definite.
 
    * Desideri aggiornare un predicato esistente:
 
@@ -442,11 +442,11 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 
    ![Anteprima moduli di ricerca](do-not-localize/chlimage_1-31.png)
 
-1. In questo modo i moduli di ricerca verranno visualizzati così come saranno visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.
+1. In questo modo i moduli di ricerca vengono visualizzati come sono visualizzati (completamente espansi) nella colonna Ricerca della console appropriata.
 
    ![Anteprima del modulo di ricerca](assets/chlimage_1-377.png)
 
-1. **Chiudi** l’anteprima per restituire e completare la configurazione.
+1. **Chiudi** l&#39;anteprima per restituire e completare la configurazione.
 
 ### Eliminazione di un campo predicato {#deleting-a-predicate-field}
 
@@ -461,7 +461,7 @@ Puoi aggiungere o modificare i campi e definirne/aggiornarne le impostazioni:
 
 ### Eliminazione di una configurazione (per ripristinare il valore predefinito) {#deleting-a-configuration-to-reinstate-the-default}
 
-Dopo aver personalizzato una configurazione, i valori predefiniti verranno sostituiti. Puoi ripristinare la configurazione predefinita eliminando la configurazione personalizzata.
+Dopo aver personalizzato una configurazione, vengono ignorati i valori predefiniti. Puoi ripristinare la configurazione predefinita eliminando la configurazione personalizzata.
 
 >[!NOTE]
 >
@@ -473,11 +473,11 @@ L’eliminazione di una configurazione personalizzata viene eseguita dalla conso
 
    ![Eliminazione di un modulo](assets/chlimage_1-378.png)
 
-1. La configurazione personalizzata verrà eliminata e verrà ripristinata la configurazione predefinita (indicata dalla ricomparsa del simbolo del lucchetto nella console).
+1. La configurazione personalizzata viene eliminata e il valore predefinito viene ripristinato (questo viene indicato dalla ricomparsa del simbolo del lucchetto nella console).
 
 ### Aggiunta di predicati di opzioni {#adding-options-predicates}
 
-I predicati di opzione (Opzioni, Proprietà opzioni) consentono di configurare un elemento da cercare. Vengono in genere utilizzati per cercare elementi direttamente sotto la pagina, ad esempio una proprietà sul nodo della pagina.
+I predicati di opzione (Opzioni, Proprietà opzioni) consentono di configurare un elemento da cercare. Vengono utilizzati per cercare elementi direttamente sotto la pagina, ad esempio una proprietà sul nodo della pagina.
 
 L’esempio seguente (per eseguire ricerche in base al modello utilizzato per creare una pagina), illustra i passaggi necessari:
 
@@ -494,7 +494,7 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
 
    >[!NOTE]
    >
-   >Tu ***deve*** non modificare nulla in `/libs` percorso.
+   >Esegui ***non*** modificare qualsiasi elemento in `/libs` percorso.
    >
    >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
    >
@@ -526,7 +526,7 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
    ![Aggiunta del percorso proprietà](assets/chlimage_1-380.png)
 
 1. Seleziona **Fine** per salvare la configurazione.
-1. Passa alla console appropriata (in questo esempio, **Sites**) e aprire la **Ricerca** barra. Saranno visibili i nuovi moduli di ricerca definiti e le varie opzioni. Seleziona l’opzione desiderata per visualizzare i risultati della ricerca:
+1. Passa alla console appropriata (in questo esempio, **Sites**) e aprire la **Ricerca** barra. Sono visibili i nuovi moduli di ricerca definiti e le varie opzioni. Seleziona l’opzione desiderata per visualizzare i risultati della ricerca:
 
    ![I risultati finali](assets/chlimage_1-381.png)
 

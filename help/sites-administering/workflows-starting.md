@@ -1,25 +1,21 @@
 ---
 title: Avvio dei flussi di lavoro
-seo-title: Starting Workflows
-description: Scopri come avviare i flussi di lavoro in AEM.
-seo-description: Learn how to start Workflows in AEM.
-uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
+description: Scopri come amministrare i flussi di lavoro in Adobe Experience Manager in modo da poterli avviare utilizzando vari metodi, manualmente o automaticamente.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '799'
 ht-degree: 6%
 
 ---
 
 # Avvio dei flussi di lavoro{#starting-workflows}
 
-Quando si amministrano i flussi di lavoro è possibile avviarli utilizzando diversi metodi:
+Durante l’amministrazione dei flussi di lavoro puoi avviarli utilizzando vari metodi:
 
 * Manualmente:
 
@@ -87,13 +83,13 @@ Un pacchetto di flusso di lavoro:
 ## Avvio di un flusso di lavoro dalla console Modelli {#starting-a-workflow-from-the-models-console}
 
 1. Accedi a **Modelli** console utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Modelli**.
-1. Seleziona il flusso di lavoro (in base alla vista della console); se necessario, puoi anche utilizzare Cerca (in alto a sinistra):
+1. Seleziona il flusso di lavoro (in base alla vista della console); se necessario, puoi anche utilizzare la funzione di ricerca (in alto a sinistra):
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >Il **[Transitorio](/help/sites-developing/workflows.md#transient-workflows)** Questo indicatore mostra i flussi di lavoro per i quali la cronologia del flusso di lavoro non verrà mantenuta.
+   >Il **[Transitorio](/help/sites-developing/workflows.md#transient-workflows)** Questo indicatore mostra i flussi di lavoro per i quali la cronologia del flusso di lavoro non viene mantenuta.
 
 1. Seleziona **Avvia flusso di lavoro** dalla barra degli strumenti.
 1. Viene visualizzata la finestra di dialogo Esegui flusso di lavoro, che consente di specificare:
@@ -121,7 +117,7 @@ Un pacchetto di flusso di lavoro:
 
    * **Tipo evento**
 
-     Tipo di evento che avvierà il flusso di lavoro:
+     Tipo di evento che avvia il flusso di lavoro:
 
       * Creato
       * Modificato
@@ -170,12 +166,12 @@ Un pacchetto di flusso di lavoro:
 
    * **Escludi elenco**
 
-     Questo specifica eventuali eventi JCR da escludere (ovvero da ignorare) quando si stabilisce se un flusso di lavoro deve essere attivato.
+     Questo specifica eventuali eventi JCR da escludere (ovvero da ignorare) quando si determina se un flusso di lavoro deve essere attivato.
 
-     Questa proprietà del modulo di avvio è un elenco di elementi separati da virgole: &quot;
+     Questa proprietà di avvio è un elenco di elementi separato da virgole: &quot;
 
       * `property-name` ignora qualsiasi `jcr` evento che si è attivato sul nome della proprietà specificato. &quot;
-      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite [`ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Ad esempio:
 

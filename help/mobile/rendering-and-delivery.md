@@ -1,14 +1,14 @@
 ---
 title: Rendering e consegna
-description: Rendering e consegna
+description: Scopri come eseguire il rendering del contenuto Adobe Experience Manager tramite i servlet predefiniti di Sling per eseguire il rendering di JSON e altri formati.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 7%
+source-wordcount: '596'
+ht-degree: 6%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Il contenuto di Adobe Experience Manager (AEM) può essere facilmente renderizzato tramite [Servlet Sling predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
+Il contenuto Adobe Experience Manager (AEM) può essere facilmente renderizzato tramite [Servlet Sling predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
 
 In genere, questi rendering predefiniti percorrono l’archivio e restituiscono il contenuto così com’è.
 
@@ -42,7 +42,7 @@ Utilizzare **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quo
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>FACOLTATIVO</strong><br /> </p> <p>configurazione di esportazione trovata in /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omesso, verrà applicata la configurazione di esportazione predefinita </p> </td>
+   <td><p><strong>FACOLTATIVO</strong><br /> </p> <p>configurazione di esportazione trovata in /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omesso, viene applicata la configurazione di esportazione predefinita </p> </td>
   </tr>
   <tr>
    <td>PROFONDITÀ-INT</td>

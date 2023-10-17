@@ -1,25 +1,21 @@
 ---
 title: Configurazione per le app AEM
-seo-title: Configuring for AEM Apps
-description: Scopri come configurare le app AEM.
-seo-description: Learn how to configure AEM Apps.
-uuid: ab9acd93-da7f-4bb7-8d26-224044899068
+description: Scopri come utilizzare le app Adobe Experience Manager per aggiornare il contenuto dell’OTA dell’applicazione (over the air).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
 exl-id: f7aa5ac0-3d03-4c04-b9c2-1bda427b0588
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
 
 # Configurazione per le app AEM{#configuring-for-aem-apps}
 
-Le app Adobe Experience Manager consentono di aggiornare il contenuto dell’applicazione in diretta (OTA). Il contenuto aggiornato viene archiviato nell’istanza di pubblicazione. Per consentire all’app sul dispositivo di connettersi all’istanza Publish e verificare la disponibilità di aggiornamenti, l’istanza Publish deve essere configurata in modo da consentire l’utilizzo di un’intestazione referente vuota.
+Le app Adobe Experience Manager ti consentono di aggiornare il contenuto dell’OTA dell’applicazione (via etere). Il contenuto aggiornato viene archiviato nell’istanza di pubblicazione. Per consentire all’app sul dispositivo di connettersi all’istanza Publish e di verificare la disponibilità di aggiornamenti, l’istanza Publish deve essere configurata in modo da consentire l’utilizzo di un’intestazione referente vuota.
 
 ## Configurazione di un’intestazione di riferimento vuota {#configuring-empty-referrer-header}
 

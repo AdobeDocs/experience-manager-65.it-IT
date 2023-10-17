@@ -1,13 +1,13 @@
 ---
 title: Consegna dei contenuti
-description: Consegna dei contenuti
+description: Scopri come utilizzare tutti i contenuti in Adobe Experience Manager per fornire un’esperienza di app mirata.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '978'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Ciò include l’utilizzo di risorse, contenuto del sito, contenuto CaaS (over-t
 
 >[!NOTE]
 >
->**Contenuti trasmessi via etere** può provenire da uno dei precedenti tramite gestori ContentSync. Può essere utilizzato per raggruppare il pacchetto e la consegna tramite zip e mantenere gli aggiornamenti per tali pacchetti.
+>**Contenuti trasmessi via etere** può provenire da uno qualsiasi dei precedenti tramite gestori ContentSync. Può essere utilizzato per raggruppare il pacchetto e la consegna tramite zip e mantenere gli aggiornamenti per tali pacchetti.
 
 I servizi di contenuti forniscono tre tipi principali di materiale:
 
@@ -106,7 +106,7 @@ Per ottenere il binario per l’immagine &quot;carrello&quot;, viene utilizzata 
 
 ## Contenuto Packaged HTML {#packaged-html-content}
 
-I contenuti HTML sono necessari per i clienti che devono mantenere il layout dei contenuti. Questa funzione è utile per le applicazioni native che utilizzano un contenitore Web, ad esempio una visualizzazione Web Cordova, per visualizzare il contenuto.
+Il contenuto HTML è necessario per i clienti che devono mantenere il layout del contenuto. Questa funzione è utile per le applicazioni native che utilizzano un contenitore Web, ad esempio una visualizzazione Web Cordova, per visualizzare il contenuto.
 
 AEM Content Services fornisce contenuti HTML all’app mobile tramite l’API. I clienti che desiderano esporre contenuti AEM come HTML possono creare un’entità pagina HTML che punta all’origine di contenuto AEM.
 
@@ -127,15 +127,15 @@ Queste entità di contenuto vengono generate utilizzando un modello di contenuto
 
 Il contenuto può arrivare all’app in diversi modi.
 
-1. Contenuto GET ZIP tramite AEM Over-the-Air
+1. Contenuto GET ZIPS tramite AEM Over-the-Air
 
    * I gestori di sincronizzazione del contenuto possono aggiornare il pacchetto zip direttamente o chiamando i renderer di contenuto esistenti
 
       * Gestori di piattaforma
-      * Gestori AEMM
+      * Gestori AEM
       * Gestori personalizzati
 
-1. GET i contenuti direttamente tramite i renderer di contenuti
+1. GET il contenuto direttamente tramite i renderer di contenuto
 
    * Rendering Sling predefiniti preconfigurati
    * AEM Mobile/Content Services - Rendering contenuti

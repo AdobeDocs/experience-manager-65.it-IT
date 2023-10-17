@@ -1,18 +1,14 @@
 ---
 title: Gestione dell’accesso ai flussi di lavoro
-seo-title: Managing Access to Workflows
-description: Scopri come gestire l’accesso ai flussi di lavoro.
-seo-description: Learn how to manage access to Workflows.
-uuid: 58f79b89-fe56-4565-a869-8179c1ac68de
+description: Scopri come configurare gli elenchi di controllo di accesso in base agli account utente per consentire (o disabilitare) l’avvio e la partecipazione ai flussi di lavoro.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '575'
 ht-degree: 3%
 
 ---
@@ -49,20 +45,20 @@ I modelli di flusso di lavoro ereditano un elenco di controllo di accesso (ACL, 
 
 >[!NOTE]
 >
->Per informazioni sull’utilizzo di CRXDE Lite per configurare gli ACL, consulta [Gestione diritti di accesso](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Per informazioni sull’utilizzo di CRXDE Liti per configurare gli ACL, consulta [Gestione diritti di accesso](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ### Applica un ACL per il modello di flusso di lavoro specifico a /var/workflow/models {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Se il modello di flusso di lavoro è memorizzato in `/var/workflow/models` quindi puoi assegnare alla cartella un ACL specifico, relativo solo a quel flusso di lavoro:
+Se il modello di flusso di lavoro è memorizzato in `/var/workflow/models`Quindi puoi assegnare alla cartella un ACL specifico, relativo solo a quel flusso di lavoro:
 
-1. Apri CRXDE Lite nel browser Web (ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Apri CRXDE Liti nel browser Web (ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Nella struttura ad albero dei nodi, seleziona il nodo per la cartella dei modelli di flusso di lavoro:
 
    `/var/workflow/models`
 
 1. Fai clic su **Controllo dell’accesso** scheda.
 1. In **Criteri di controllo dell&#39;accesso locale** (**Elenco di controllo di accesso**), fare clic sull&#39;icona più per **Aggiungi voce**.
-1. In **Aggiungi nuova voce** finestra di dialogo aggiungi una nuova voce di controllo accesso con le seguenti proprietà:
+1. In **Aggiungi nuova voce** , aggiungere una voce di controllo di accesso con le seguenti proprietà:
 
    * **Entità**: `content-authors`
    * **Tipo**: `Deny`
@@ -91,7 +87,7 @@ Paragonabile ai flussi di lavoro DAM memorizzati in
 
 È quindi possibile aggiungere un ACL alla cartella stessa.
 
-1. Apri CRXDE Lite nel browser Web (ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Apri CRXDE Liti nel browser Web (ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Nella struttura ad albero del nodo, seleziona il nodo per la singola cartella nella cartella dei modelli di flusso di lavoro; ad esempio:
 
    `/var/workflow/models/prototypes`
@@ -99,7 +95,7 @@ Paragonabile ai flussi di lavoro DAM memorizzati in
 1. Fai clic su **Controllo dell’accesso** scheda.
 1. In **Criterio di controllo dell’accesso applicabile** fare clic sull&#39;icona più per **Aggiungi** una voce.
 1. In **Criteri di controllo dell&#39;accesso locale** (**Elenco di controllo di accesso**), fare clic sull&#39;icona più per **Aggiungi voce**.
-1. In **Aggiungi nuova voce** finestra di dialogo aggiungi una nuova voce di controllo accesso con le seguenti proprietà:
+1. In **Aggiungi nuova voce** , aggiungere una voce di controllo di accesso con le seguenti proprietà:
 
    * **Entità**: `content-authors`
    * **Tipo**: `Deny`

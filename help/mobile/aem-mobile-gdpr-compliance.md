@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager Mobili - Preparazione al RGPD
-description: Adobe Experience Manager Mobili - Preparazione al RGPD
+description: Scopri come Adobe Experience Manager è pronta ad aiutarti con gli obblighi di conformità ai requisiti RGPD.
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -49,17 +49,17 @@ Fornire almeno una delle seguenti informazioni:
 
 ### Domande frequenti {#frequently-asked-questions-faq}
 
-**Adobe eliminerà i miei acquisti App Store quando si avvia una richiesta DELETE?**
+**Adobe elimina i miei acquisti App Store quando si avvia una richiesta DELETE?**
 
-Adobe elimina le informazioni di cui dispone sugli acquisti dell’app store (abbonamenti e così via), ma gli acquisti sono ancora registrati negli app store. Se l’app (utente finale) è registrata nell’app store, tali entrate vengono prelevate nuovamente e inviate all’Adobe e successivamente, vengono considerate come nuovi acquisti e vengono ripristinate dall’app affinché possa nuovamente accedervi.
+Adobe elimina le informazioni di cui dispone sugli acquisti dell’app store (abbonamenti e così via), ma gli acquisti sono ancora registrati negli app store. Se l’app (utente finale) è registrata nell’App Store, le ricevute vengono prelevate nuovamente e inviate all’Adobe. Successivamente, questi vengono considerati come nuovi acquisti e vengono ripristinati dall’app, con accesso di nuovo.
 
-**Un Adobe eliminerà i diritti forniti dal cliente quando si avvia una richiesta DELETE?**
+**L’Adobe elimina i diritti forniti dal cliente quando si avvia una richiesta DELETE?**
 
 L&#39;Adobe elimina le informazioni di cui dispone in merito alle quote aggiuntive spettanti direttamente al cliente. Se l’app (utente finale) accede al meccanismo OAuth utilizzato dal cliente, invia informazioni ad Adobe e i servizi raccolgono nuovamente i diritti aggiuntivi.
 
 **Quali sono le aspettative dell&#39;utente finale?**
 
-Poiché la chiave per assegnare i diritti all’app risiede sul dispositivo come parte del software del visualizzatore, l’utente finale deve disinstallare l’app. L’utente finale deve capire che se reinstalla l’app, gli acquisti esistenti (associati all’utente dell’app store) e le quote di adesione diretta (associate all’utente OAuth del cliente) verranno comunque ripristinati.
+Poiché la chiave per assegnare i diritti all’app risiede sul dispositivo come parte del software del visualizzatore, l’utente finale deve disinstallare l’app. L’utente finale deve rendersi conto che se reinstalla l’app, gli acquisti esistenti (associati all’utente dell’app store) e le quote di adesione diretta (associate all’utente OAuth del cliente) vengono ancora ripristinati.
 
 **Cosa succede quando un’app viene condivisa tra persone su un dispositivo?**
 
