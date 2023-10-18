@@ -1,20 +1,16 @@
 ---
 title: Moderazione dei contenuti della community
-seo-title: Moderating Community Content
-description: Concetti e azioni di moderazione
-seo-description: Moderation concepts and actions
-uuid: 5c991d3a-0037-4d78-8f91-bb62e44441fa
+description: Scopri come moderare i contenuti generati dagli utenti in modo da poter riconoscere i contributi positivi e limitare quelli negativi, come lo spam e il linguaggio abusivo.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1516'
 ht-degree: 2%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-Il contenuto della community, noto anche come contenuto generato dall&#39;utente (UGC, User Generated Content), viene creato quando un membro (visitatore del sito connesso) pubblica contenuti da un sito pubblicato della community tramite l&#39;interazione con uno dei seguenti componenti della community:
+Il contenuto della community, noto anche come contenuto generato dall&#39;utente (UGC, User-Generated Content), viene creato quando un membro (visitatore del sito connesso) pubblica contenuti da un sito pubblicato della community tramite l&#39;interazione con uno dei seguenti componenti della community:
 
 * [Blog](/help/communities/blog-feature.md): i membri pubblicano un articolo o un commento sul blog.
 * [Calendario](/help/communities/calendar.md): i membri pubblicano un evento o un commento del calendario.
@@ -185,9 +181,9 @@ L&#39;azione Chiudi/Riapri può essere eseguita da amministratori o moderatori d
 
 Il contrassegno è un mezzo per qualsiasi membro che ha effettuato l’accesso, ad eccezione dell’autore del contenuto, per indicare che si è verificato un problema con il contenuto di un post. Una volta contrassegnato, viene visualizzata un’icona di rimozione del contrassegno che consente allo stesso membro di rimuovere il contrassegno dal contenuto.
 
-La moderazione nel contesto può essere configurata in modo da consentire ai membri di selezionare un motivo quando contrassegnano un post. È possibile configurare l’elenco dei motivi dei flag selezionabili, specificando anche se è possibile inserire un motivo personalizzato. Il motivo del flag viene salvato con l&#39;UGC, ma non attiva alcuna azione particolare. Solo il numero di flag attiva una notifica. Il contenuto contrassegnato viene annotato come tale, in modo che i moderatori possano agire di conseguenza.
+La moderazione nel contesto può essere configurata in modo da consentire ai membri di selezionare un motivo quando contrassegnano un post. L’elenco dei motivi del flag selezionabili è configurabile e specifica se è possibile inserire un motivo personalizzato. Il motivo del flag viene salvato con l&#39;UGC, ma non attiva alcuna azione particolare. Solo il numero di flag attiva una notifica. Il contenuto contrassegnato viene annotato come tale, in modo che i moderatori possano agire di conseguenza.
 
-Il sistema tiene traccia di tutti i flag, di chi li ha contrassegnati e del motivo del flag e invia un evento quando la soglia viene raggiunta. Se l&#39;UGC è Consentito da un moderatore della community, questi flag vengono archiviati. Dopo aver consentito e archiviato, se sono presenti segnalazioni successive, queste verranno archiviate come se non fossero presenti segnalazioni precedenti.
+Il sistema tiene traccia di tutti i flag, di chi li ha contrassegnati e del motivo del flag e invia un evento quando viene raggiunta la soglia. Se l&#39;UGC è Consentito da un moderatore della community, questi flag vengono archiviati. Dopo aver consentito e archiviato, se sono presenti segnalazioni successive, queste verranno archiviate come se non fossero presenti segnalazioni precedenti.
 
 ### Consenti {#allow}
 
@@ -197,7 +193,7 @@ L’azione Consenti è un’opzione per contenuti generati dagli utenti che è s
 
 ### Premoderazione {#premoderation}
 
-Quando l&#39;UGC è premoderato, il post non viene visualizzato sul sito pubblicato fino a quando non viene approvato da un&#39;azione di moderazione. Durante la creazione di un’ [sito community](/help/communities/sites-console.md), selezionando la casella [Il contenuto è premoderato](sites-console.md#moderation) consente la premoderazione per l&#39;intero sito. Una volta inseriti i componenti in una pagina, i componenti che supportano la moderazione possono essere configurati per la premoderazione utilizzando un’impostazione nella finestra di dialogo per modifica:
+Quando l&#39;UGC è premoderato, il post non viene visualizzato sul sito pubblicato fino a quando non viene approvato da un&#39;azione di moderazione. Durante la creazione di un’ [sito community](/help/communities/sites-console.md), selezionando la casella [Il contenuto è premoderato](sites-console.md#moderation) abilita la premoderazione per l&#39;intero sito. Quando i componenti vengono inseriti in una pagina, i componenti che supportano la moderazione possono essere configurati per la premoderazione utilizzando un’impostazione nella finestra di dialogo per modifica:
 
 * [Commenti](comments.md) e [recensioni](reviews.md)
 in **[!UICONTROL Moderazione utenti]** > **[!UICONTROL Pre-moderazione]**.
@@ -207,13 +203,13 @@ in **[!UICONTROL Impostazioni]** > **[!UICONTROL Moderato]**.
 
 ### Rilevamento posta indesiderata {#spam-detection}
 
-Il rilevamento spam è una funzionalità di moderazione automatica che filtra parti indesiderate di contenuti generati dagli utenti contrassegnandoli come spam. Una volta attivato, identifica se il contenuto generato dall’utente è spam o meno in base a una raccolta preconfigurata di parole spam. Le parole spam predefinite vengono fornite in
+Il rilevamento spam è una funzionalità di moderazione automatica che filtra parti indesiderate di contenuti generati dall’utente contrassegnandole come spam. Una volta attivato, identifica se un contenuto generato dall’utente è spam o meno in base a una raccolta preconfigurata di parole spam. Le parole spam predefinite vengono fornite in
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Tuttavia, per personalizzare o estendere le parole spam predefinite, crea un set di parole nella directory /apps seguendo la struttura delle parole spam predefinite mediante [sovrapposizione](/help/communities/overlay-comments.md).
+Tuttavia, per personalizzare o estendere le parole spam predefinite, crea un set di parole nella directory /apps seguendo la struttura delle parole spam predefinite con [sovrapposizione](/help/communities/overlay-comments.md).
 
-Un post generato dall’utente (per tutti i tipi di contenuto, ad esempio blog, forum e commenti) contenente parole spam è contrassegnato con il testo &quot;Questo post è stato classificato come spam&quot; sopra il post.
+Un post generato dall’utente (per tutti i tipi di contenuto, ad esempio blog, forum e commenti) contenente spam word è contrassegnato con il testo &quot;Questo post è stato classificato come spam&quot; sopra il post.
 
 Il moderatore può visualizzare un post di questo tipo e contrassegnarlo per consentire o negare la visualizzazione sul sito. Le azioni di moderazione su questi post possono essere eseguite nel contesto o tramite l&#39;interfaccia utente per la moderazione in blocco.
 
@@ -230,13 +226,13 @@ Per abilitare il motore di rilevamento di posta indesiderata, effettua le seguen
 
 >[!NOTE]
 >
->Il rilevamento spam è implementato solo per le impostazioni locali inglesi.
+>Il rilevamento spam è implementato solo per le lingue inglesi.
 
 ### Sentimento {#sentiment}
 
 La valutazione viene calcolata in base al numero di parole chiave positive e negative ([parole d&#39;ordine](#configuringwatchwords)) presente in un post (UGC).
 
-L’analisi del sentiment utilizza un set di regole preconfigurate e calcola il sentiment dell’UGC. Le regole predefinite si trovano in: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+L’analisi del sentiment utilizza un set di regole preconfigurate e calcola il sentiment dell’UGC. Le regole predefinite si trovano in `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
 
 Il valore generato dalle regole va da 1 (tutte le parole negative, nessuna parola positiva) a 10 (tutte le parole positive, nessuna parola negativa). Il valore 5 è un sentimento neutro ed è l&#39;impostazione predefinita.
 
@@ -247,7 +243,7 @@ Le regole definite nel componente /libs sono:
 * Regola 3: imposta il valore su 3 se il numero di parole negative è maggiore di quello positivo.
 * Regola 4: imposta il valore su 8 se il numero di parole positive è superiore a quello di parole negative.
 
-Per sovrascrivere o aggiungere regole, creare un set di regole nella directory /apps seguendo la struttura delle regole predefinite. Modifica la configurazione del sentiment per identificare la posizione delle regole.
+Per sovrascrivere o aggiungere regole, creare un set di regole nella directory /apps seguendo la struttura delle regole predefinite. Modifica la configurazione della valutazione in modo da identificare la posizione delle regole.
 
 Una volta analizzato, il sentiment viene memorizzato con l&#39;UGC.
 
@@ -255,13 +251,13 @@ Dalla sezione [console di moderazione in blocco](/help/communities/moderation.md
 
 #### Parole di controllo {#watchwords}
 
-Le comunità AEM forniscono *watchword analyzer* come fase del processo di valutazione [sentiment](#sentiment). Il contributo al valore del sentiment fornito dalle parole d&#39;ordine è dovuto a un confronto tra le parole d&#39;ordine negative e positive utilizzate nel contenuto pubblicato, nonché tra le parole non consentite.
+AEM Communities fornisce una *watchword analyzer* come fase del processo di valutazione [sentiment](#sentiment). Il contributo al valore di valutazione fornito dalle parole d&#39;ordine è dovuto a un confronto tra le parole d&#39;ordine negative e positive utilizzate nel contenuto pubblicato e le parole non consentite.
 
 #### Configura sentiment e parole d&#39;ordine {#configure-sentiment-and-watchwords}
 
 L’elenco delle parole d’ordine positive e negative può essere personalizzato così come le regole di valutazione.
 
-L’elenco predefinito di parole d’ordine può essere inserito come proprietà di un nodo nel repository, in modo simile all’elenco predefinito o escludendo l’elenco predefinito tramite la configurazione del servizio OSGi `sentimentprocess.name` con l&#39;elenco delle parole.
+L’elenco predefinito di parole d’ordine può essere inserito come proprietà di un nodo nell’archivio, in modo simile all’elenco predefinito o escludendo l’elenco predefinito tramite la configurazione del servizio OSGi `sentimentprocess.name` con l&#39;elenco delle parole.
 
 Il **sentimentprocess.name** può anche essere modificato per fare riferimento alla posizione di un set personalizzato di regole di valutazione.
 
@@ -270,7 +266,7 @@ Per configurare il sentiment e le parole d’ordine:
 * Accedi all’istanza di authoring come amministratore.
 * Apri [Console web](https://localhost:4502/system/console/configMgr).
 * Individua `sentimentprocess.name`.
-* Seleziona la configurazione da aprire in modalità di modifica.
+* Seleziona la configurazione in modo da poterla aprire in modalità di modifica.
 
 ![sentimentprocess](assets/sentimentprocess.png)
 
@@ -280,7 +276,7 @@ Per configurare il sentiment e le parole d’ordine:
 
 * **Parole di controllo negative**
 
-  Un elenco separato da virgole di parole che contribuiscono a un sentimento negativo che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
+  Elenco separato da virgole di parole che contribuiscono a un&#39;opinione negativa che ignora le impostazioni predefinite. L&#39;elenco predefinito è vuoto.
 
 * **Percorso esplicito al nodo parole d&#39;ordine**
 

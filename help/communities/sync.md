@@ -1,20 +1,16 @@
 ---
 title: Sincronizzazione utenti community
-seo-title: Communities User Synchronization
-description: Funzionamento della sincronizzazione degli utenti
-seo-description: How user synchronization works
-uuid: 772b82bd-a66c-4c1d-b80b-dcff77c873a3
+description: Scopri come funziona la sincronizzazione degli utenti nelle community Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2471'
 ht-degree: 2%
 
 ---
@@ -23,11 +19,11 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-In AEM Communities, dall’ambiente di pubblicazione (a seconda delle autorizzazioni configurate), *visitatori del sito* può diventare *membri*, creare *gruppi di utenti*, e modificarne le *profilo membro* .
+Nelle community Adobe Experience Manager (AEM), dall’ambiente di pubblicazione (a seconda delle autorizzazioni configurate), *visitatori del sito* può diventare *membri*, creare *gruppi di utenti*, e modificarne le *profilo membro* .
 
-*Dati utente* è un termine utilizzato per fare riferimento a *utenti*, *profili utente* e *gruppi di utenti*.
+*Dati utente* fa riferimento a *utenti*, *profili utente*, e *gruppi di utenti*.
 
-*Membri* è un termine utilizzato per fare riferimento a *utenti* registrati nell’ambiente di pubblicazione, a differenza degli utenti registrati nell’ambiente di authoring.
+*Membri* fare riferimento a *utenti* registrati nell’ambiente di pubblicazione, a differenza degli utenti registrati nell’ambiente di authoring.
 
 Per ulteriori informazioni sui dati utente, visita [Gestione di utenti e gruppi di utenti](/help/communities/users.md).
 
@@ -37,33 +33,31 @@ Per progettazione, i dati utente creati nell’ambiente di pubblicazione non ven
 
 La maggior parte dei dati utente creati nell’ambiente di authoring devono rimanere nell’ambiente di authoring e non vengono sincronizzati né replicati nelle istanze di pubblicazione.
 
-Quando [topologia](/help/communities/topologies.md) è un [farm di pubblicazione](/help/sites-deploying/recommended-deploys.md#tarmk-farm), la registrazione e le modifiche effettuate su un’istanza Publish devono essere sincronizzate con altre istanze Publish. I membri devono essere in grado di accedere e visualizzare i propri dati su qualsiasi nodo di pubblicazione.
+Quando [topologia](/help/communities/topologies.md) è un [farm di pubblicazione](/help/sites-deploying/recommended-deploys.md#tarmk-farm), la registrazione e le modifiche effettuate su un’istanza Publish devono essere sincronizzate con altre istanze Publish. I membri devono essere in grado di accedere e visualizzare i propri dati su qualsiasi nodo Publish.
 
-Quando la sincronizzazione degli utenti è abilitata, i dati utente vengono sincronizzati automaticamente tra le istanze di pubblicazione nella farm.
+Quando la sincronizzazione utente è abilitata, i dati utente vengono sincronizzati automaticamente tra le istanze Publish nella farm.
 
 ### Istruzioni di configurazione di User Sync {#user-sync-setup-instructions}
 
-Per istruzioni dettagliate su come abilitare la sincronizzazione in una farm di pubblicazione, consulta:
+Per istruzioni dettagliate su come abilitare la sincronizzazione in una farm di pubblicazione, consulta [Sincronizzazione utente](/help/sites-administering/sync.md).
 
-* [Sincronizzazione utente](/help/sites-administering/sync.md)
-
-## Sincronizzazione utente in background  {#user-sync-in-the-background}
+## Sincronizzazione utente in background {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
 * **pacchetto vlt**
 
-  Si tratta di un file zip di tutte le modifiche apportate a un editore, che devono essere distribuite tra gli editori. Le modifiche apportate a un editore generano eventi selezionati dal listener di eventi di modifica. In questo modo viene creato un pacchetto vlt contenente tutte le modifiche.
+  Si tratta di un file zip di tutte le modifiche apportate in un editore, che deve essere distribuito tra gli editori. Le modifiche apportate a un editore generano eventi selezionati dal listener di eventi di modifica. In questo modo viene creato un pacchetto vlt contenente tutte le modifiche.
 
 * **pacchetto di distribuzione**
 
-  Contiene informazioni sulla distribuzione di Sling. Si tratta di informazioni su dove il contenuto deve essere distribuito e quando è stato distribuito per ultimo.
+  Contiene informazioni sulla distribuzione di Sling. Si tratta di informazioni su dove deve essere distribuito il contenuto e quando è stato distribuito per ultimo.
 
 ## Cosa Succede Quando... {#what-happens-when}
 
 ### Pubblica sito dalla console Siti di Communities {#publish-site-from-communities-sites-console}
 
-Per l’autore, quando un sito community viene pubblicato da [Console Siti community](/help/communities/sites-console.md), l&#39;effetto è [replicare](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) Le pagine associate e Sling distribuiscono i gruppi di utenti community creati in modo dinamico, inclusa la loro appartenenza.
+Per gli autori, quando un sito community viene pubblicato da [Console Siti community](/help/communities/sites-console.md), l&#39;effetto è [replicare](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) Le pagine associate e Sling distribuiscono i gruppi di utenti community creati in modo dinamico, inclusa la loro appartenenza.
 
 ### L&#39;utente è stato creato o modifica il profilo al momento della pubblicazione {#user-is-created-or-edits-profile-on-publish}
 
@@ -73,31 +67,31 @@ Quando la topologia è [farm di pubblicazione](/help/communities/topologies.md) 
 
 ### Nuovo gruppo community creato al momento della pubblicazione {#new-community-group-is-created-on-publish}
 
-Anche se avviata da un’istanza Publish, la creazione del gruppo community, che si traduce in nuove pagine del sito e in un nuovo gruppo di utenti, si verifica effettivamente nell’istanza Autore.
+Anche se avviata da un’istanza Publish, la creazione del gruppo community, che si traduce in nuove pagine del sito e in un nuovo gruppo di utenti, si verifica in realtà nell’istanza Author.
 
-Come parte del processo, le nuove pagine del sito vengono replicate in tutte le istanze di pubblicazione. Il gruppo utenti community creato in modo dinamico e i relativi membri sono Sling distribuiti a tutte le istanze di pubblicazione.
+Come parte del processo, le nuove pagine del sito vengono replicate in tutte le istanze Publish. Il gruppo utenti community creato in modo dinamico e i relativi membri sono Sling distribuiti a tutte le istanze Publish.
 
 ### Gli utenti o i gruppi di utenti vengono creati utilizzando la console Sicurezza {#users-or-user-groups-are-created-using-security-console}
 
 Per progettazione, i dati utente creati nell’ambiente di pubblicazione non vengono visualizzati nell’ambiente di authoring e viceversa.
 
-Quando [Amministrazione utenti e sicurezza](/help/sites-administering/security.md) viene utilizzata per aggiungere nuovi utenti nell’ambiente di pubblicazione; se necessario, la sincronizzazione utenti sincronizzerà i nuovi utenti e la loro appartenenza al gruppo con altre istanze di pubblicazione. La sincronizzazione degli utenti sincronizzerà anche i gruppi di utenti creati tramite la console di sicurezza.
+Quando [Amministrazione utenti e sicurezza](/help/sites-administering/security.md) La console viene utilizzata per aggiungere nuovi utenti nell’ambiente di pubblicazione. Se necessario, la sincronizzazione utenti sincronizza i nuovi utenti e la loro appartenenza al gruppo con altre istanze di pubblicazione. La sincronizzazione degli utenti sincronizza anche i gruppi di utenti creati tramite la console di sicurezza.
 
 ### L&#39;utente pubblica il contenuto al momento della pubblicazione {#user-posts-content-on-publish}
 
-Per i contenuti generati dagli utenti (UGC, User Generated Content), i dati immessi in un’istanza di pubblicazione sono accessibili tramite [SRP configurato](/help/communities/srp-config.md).
+Per i contenuti generati dagli utenti (UGC, User-Generated Content), i dati immessi in un’istanza Publish sono accessibili tramite [SRP configurato](/help/communities/srp-config.md).
 
 ## Best practice {#bestpractices}
 
 Per impostazione predefinita, la sincronizzazione utente è **disabilitato**. Per abilitare la sincronizzazione degli utenti è necessario modificare *esistente* Configurazioni OSGi. Non è possibile aggiungere nuove configurazioni abilitando la sincronizzazione degli utenti.
 
-La sincronizzazione degli utenti si basa sull’ambiente di authoring per gestire le distribuzioni dei dati utente, anche se i dati utente non vengono creati sull’ambiente di authoring .
+La sincronizzazione degli utenti si basa sull’ambiente di authoring per gestire le distribuzioni dei dati utente, anche se i dati utente non vengono creati sull’ambiente di authoring.
 
 **Prerequisiti**
 
 1. Se utenti e gruppi di utenti sono già stati creati in un editore, si consiglia di: [sincronizzazione manuale](/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) i dati utente a tutti gli editori prima di configurare e abilitare la sincronizzazione utente.
 
-   Una volta abilitata la sincronizzazione utente, vengono sincronizzati solo gli utenti e i gruppi appena creati.
+   Dopo l&#39;abilitazione della sincronizzazione degli utenti, vengono sincronizzati solo gli utenti e i gruppi appena creati.
 
 1. Verifica che sia stato installato il codice più recente:
 
@@ -207,7 +201,7 @@ Per garantire la sincronizzazione dei membri:
 
 Questa configurazione consente di configurare l’intervallo di polling (dopo il quale viene eseguito il ping degli editori e le modifiche vengono estratte dall’autore) per sincronizzare le modifiche tra gli editori.
 
-L’autore esegue il polling degli editori ogni 30 secondi (impostazione predefinita). Se sono presenti pacchetti nella cartella `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, quindi recupererà tali pacchetti e li installerà su altri editori.
+L’autore esegue il polling degli editori ogni 30 secondi (impostazione predefinita). Se sono presenti pacchetti nella cartella `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, quindi recupera tali pacchetti e li installa su altri editori.
 
 Per modificare l&#39;intervallo di polling:
 
@@ -257,7 +251,7 @@ Su ogni istanza di pubblicazione AEM:
 
    `sling:OrderedFolder`
 
-   I tipi di nodo specificati in questa proprietà verranno sincronizzati e le informazioni sulle notifiche (blog e configurazioni seguite) verranno sincronizzate tra i diversi editori.
+   I tipi di nodo specificati in questa proprietà vengono sincronizzati e le informazioni sulle notifiche (blog e configurazioni seguite) vengono sincronizzate tra diversi editori.
 
 1. Aggiungi tutte le cartelle da sincronizzare in **Cartelle distribuite**. Ad esempio:
 
@@ -281,7 +275,7 @@ Su ogni istanza di pubblicazione AEM:
 
 L’istanza di authoring dell’AEM utilizza l’ID Sling per identificare da dove provengono i dati e a quali editori deve (o non deve) inviare nuovamente il pacchetto a.
 
-Assicurati che tutti gli editori in una farm di pubblicazione abbiano un ID Sling univoco. Se l’ID Sling è lo stesso per più istanze di pubblicazione in una farm di pubblicazione, la sincronizzazione degli utenti non riuscirà. Poiché l’autore non saprà da dove recuperare il pacchetto e dove installarlo.
+Assicurati che tutti gli editori in una farm di pubblicazione abbiano un ID Sling univoco. Se l’ID Sling è lo stesso per più istanze di pubblicazione in una farm di pubblicazione, la sincronizzazione degli utenti non riesce. Poiché l’autore non saprà da dove recuperare il pacchetto e dove installarlo.
 
 Per garantire un ID Sling univoco degli editori nella farm di pubblicazione, in ogni istanza di pubblicazione:
 
@@ -292,7 +286,7 @@ Per garantire un ID Sling univoco degli editori nella farm di pubblicazione, in 
 
    Se l’ID Sling di un’istanza Publish corrisponde all’ID Sling di qualsiasi altra istanza Publish:
 
-1. Arresta una delle istanze di pubblicazione con un ID Sling corrispondente.
+1. Arresta una delle istanze Publish con un ID Sling corrispondente.
 1. In `crx-quickstart/launchpad/felix` directory, cercare ed eliminare il file denominato *sling.id.file*
 
    Ad esempio, su un sistema Linux:
@@ -303,10 +297,10 @@ Per garantire un ID Sling univoco degli editori nella farm di pubblicazione, in 
 
    Utilizzare Esplora risorse e cercare `sling.id.file`
 
-1. Avvia l’istanza Publish. All’avvio gli verrà assegnato un nuovo ID Sling.
+1. Avvia l’istanza Publish. All’avvio gli viene assegnato un nuovo ID Sling.
 1. Verifica che **ID Sling** è ora univoco.
 
-Ripeti questi passaggi fino a quando tutte le istanze di pubblicazione non avranno un ID Sling univoco.
+Ripeti questi passaggi fino a quando tutte le istanze Publish non hanno un ID Sling univoco.
 
 ### Generatore pacchetti Vault - Fabbrica {#vault-package-builder-factory}
 
@@ -357,7 +351,7 @@ Se la distribuzione Sling non riesce, prova i seguenti passaggi di debug:
 
 1. **Controlla la configurazione del listener di sincronizzazione utenti di AEM Communities.** Se gli utenti creati sono sincronizzati ma le sottoscrizioni e i seguenti non funzionano, assicurati che la configurazione del listener di sincronizzazione utenti di AEM Communities disponga di:
 
-   * Tipi di nodo- Impostato su **rep:User, nt :unstructured**, **nt :resource**, **rep:ACL**, **sling:Cartella**, e **sling:OrderedFolder**.
+   * Tipi di nodo- Impostato su **rep:User, nt:unstructured**, **nt:resource**, **rep:ACL**, **sling:Cartella**, e **sling:OrderedFolder**.
    * Nodi ignorabili - impostati su **.token**, **sistema**, e **rep :cache**.
    * Cartelle distribuite: impostare le cartelle che si desidera distribuire.
 
@@ -388,13 +382,13 @@ Per eseguire il debug:
    1. Individua la configurazione **Agente di distribuzione Apache Sling - Factory agenti di sincronizzazione**.
    1. Deseleziona il **Abilitato** casella di controllo.
 
-      Quando si disabilita la sincronizzazione utente nell’istanza di authoring, gli endpoint (di esportazione e importazione) vengono disabilitati e l’istanza di authoring è statica. Il **vlt** i pacchetti non vengono ping o recuperati dall’autore.
+      Quando si disabilita la sincronizzazione utente nell’istanza di authoring (esportazione e importazione), gli endpoint vengono disabilitati e l’istanza di authoring è statica. Il **vlt** i pacchetti non vengono ping o recuperati dall’autore.
 
       Ora, se un utente viene creato nell’istanza di pubblicazione, il **vlt** il pacchetto viene creato in */var/sling/distribution/packages/ socialpubsync - vlt /data* nodo. E se questi pacchetti vengono inviati dall’autore a un altro servizio. Puoi scaricare ed estrarre questi dati per verificare quali proprietà vengono inviate ad altri servizi.
 
 1. Passare a un editore e creare un utente nell&#39;editore. Di conseguenza, vengono creati gli eventi.
-1. Controlla la [ordine dei registri](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), creato al momento della creazione dell’utente.
+1. Controlla la [ordine dei registri](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities) creato al momento della creazione dell’utente.
 1. Controlla se **vlt** pacchetto creato il **/var/sling/distribution/packages/socialpubsync-vlt/data**.
-1. Ora abilita la sincronizzazione degli utenti nell’istanza di authoring AEM.
+1. Ora abilita la sincronizzazione degli utenti nell’istanza Autore AEM.
 1. In caso di pubblicazione, modifica gli endpoint di esportazione o importazione in **Agente di distribuzione Apache Sling - Factory agenti di sincronizzazione**.
-Possiamo scaricare ed estrarre i dati del pacchetto per verificare quali tutte le proprietà vengono inviate ad altri editori e quali dati vengono perse.
+Possiamo scaricare ed estrarre i dati del pacchetto per verificare tutte le proprietà inviate ad altri editori e quali dati vengono persi.

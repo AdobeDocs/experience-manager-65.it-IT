@@ -1,20 +1,16 @@
 ---
 title: Modelli per gruppi
-seo-title: Group Templates
-description: Come accedere alla console Modelli di gruppo
-seo-description: How to access the Group Templates console
-uuid: 4cf20c91-32b0-4051-a98d-44e4eb50a231
+description: Scopri come accedere alla console Modelli di gruppo per un set di pagine e funzionalità collegate a un sito community.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '543'
 ht-degree: 3%
 
 ---
@@ -27,15 +23,15 @@ Un gruppo community viene incorporato in un modello di sito includendo [Funzione
 
 A partire da Communities [feature pack 1](/help/communities/deploy-communities.md#latestfeaturepack), è possibile nidificare i gruppi includendo la funzione Gruppi all’interno di un modello di gruppo.
 
-Quando si esegue un&#39;azione per creare un nuovo gruppo community, viene selezionato il modello (struttura) del gruppo. La selezione dipende dalla configurazione della funzione Gruppi quando viene aggiunta al sito o al modello di gruppo.
+Quando si esegue un&#39;azione per creare un gruppo community, viene selezionato il modello (struttura) del gruppo. La selezione dipende dalla configurazione della funzione Gruppi quando viene aggiunta al sito o al modello di gruppo.
 
 >[!NOTE]
 >
->Le console per la creazione di [siti community](/help/communities/sites-console.md), [modelli per sito community](/help/communities/sites.md), [modelli per gruppi community](/help/communities/tools-groups.md) e [funzioni community](/help/communities/functions.md) devono essere utilizzati solo nell’ambiente di authoring.
+>Le console per la creazione di [siti community](/help/communities/sites-console.md), [modelli per sito community](/help/communities/sites.md), [modelli per gruppi community](/help/communities/tools-groups.md), e [funzioni community](/help/communities/functions.md) devono essere utilizzati solo nell’ambiente di authoring.
 
 ## Console Modelli per gruppi {#group-templates-console}
 
-Per raggiungere la console dei modelli di gruppi nell’ambiente di authoring AEM:
+Per raggiungere la console dei modelli di gruppo nell’ambiente di authoring AEM:
 
 * Seleziona **Strumenti | Comunità | Modelli per gruppi,** dalla navigazione globale.
 
@@ -45,9 +41,9 @@ In questa console vengono visualizzati i modelli da cui [sito community](/help/c
 
 ## Crea modello gruppo {#create-group-template}
 
-Per iniziare a creare un nuovo modello di gruppo, seleziona `Create`.
+Per iniziare a creare un modello di gruppo, seleziona `Create`.
 
-Viene visualizzato il pannello Editor sito, che contiene 3 pannelli secondari:
+Viene visualizzato il pannello Editor sito, che contiene tre pannelli secondari:
 
 ### Informazioni di base {#basic-info}
 
@@ -57,15 +53,15 @@ Nel pannello Informazioni di base, vengono configurati un nome, una descrizione 
 
 * **Nome nuovo modello per gruppo**
 
-   ID del nome del modello.
+  ID del nome del modello.
 
 * **Descrizione**
 
-   Descrizione del modello.
+  Descrizione del modello.
 
 * **Disabilitato/abilitato**
 
-   Un interruttore che controlla se il modello è referenziabile.
+  Un interruttore che controlla se il modello è referenziabile.
 
 #### Miniatura  {#thumbnail}
 
@@ -85,11 +81,11 @@ Nel pannello Informazioni di base, vengono configurati un nome, una descrizione 
 
 ![Editor modelli per gruppi](assets/template-editor.png)
 
-Per aggiungere funzioni di community, trascinare il puntatore del mouse dal lato destro a quello sinistro nell&#39;ordine in cui devono essere visualizzati i collegamenti del menu del sito. Gli stili verranno applicati al modello durante la creazione del sito.
+Per aggiungere funzioni di community, trascinare il puntatore del mouse dal lato destro a quello sinistro nell&#39;ordine in cui devono essere visualizzati i collegamenti del menu del sito. Gli stili vengono applicati al modello durante la creazione del sito.
 
-Ad esempio, se desideri un forum, trascina la funzione forum dalla libreria e rilasciala sotto al generatore di modelli. Verrà aperta la finestra di dialogo per la configurazione del forum. Consulta la [console funzioni](/help/communities/functions.md) per informazioni sulle finestre di dialogo di configurazione.
+Ad esempio, se desideri un forum, trascina la funzione forum dalla libreria e rilasciala sotto al generatore di modelli. Questo determina l’apertura della finestra di dialogo per la configurazione del forum. Consulta la [console funzioni](/help/communities/functions.md) per informazioni sulle finestre di dialogo di configurazione.
 
-Continuare a trascinare le altre funzioni della community desiderate per un sito (gruppo) della community secondaria basato su questo modello.
+Continuare a trascinare tutte le altre funzioni community desiderate per un sito (gruppo) di comunità secondaria basato su questo modello.
 
 ![trascina funzioni](assets/dragfunctions.png)
 
@@ -99,6 +95,6 @@ Una volta rilasciate e configurate tutte le funzioni desiderate nell’area di c
 
 Quando si visualizzano i gruppi della community nel [Console Modelli per gruppi](#group-templates-console), è possibile selezionare un modello di gruppo esistente da modificare.
 
-La modifica di un modello di gruppo non avrà effetto sui siti community già creati dal modello. È possibile eseguire direttamente [modificare un sito community](/help/communities/sites-console.md#modify-structure)La struttura di.
+La modifica di un modello di gruppo non influisce sui siti community già creati dal modello. È possibile eseguire direttamente [modificare un sito community](/help/communities/sites-console.md#modify-structure)La struttura di.
 
 Questo processo fornisce gli stessi pannelli [creazione di un modello di gruppo](#create-group-template).

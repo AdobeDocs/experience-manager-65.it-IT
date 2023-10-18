@@ -1,6 +1,6 @@
 ---
 title: Console Siti community
-description: Come accedere alla console dei siti di Communities
+description: Scopri come accedere alla console Siti di Communities per la creazione, la modifica e la gestione dei siti.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3089'
 ht-degree: 4%
 
 ---
@@ -67,7 +67,7 @@ Ogni sito creato include una funzione di accesso, in quanto i visitatori del sit
 
 Il processo viene avviato selezionando `Create` nella parte superiore della console Sites di Communities.
 
-Il processo di creazione consiste in una serie di passaggi presentati come pannelli contenenti un set di funzioni da configurare (presentate come pannelli secondari). È possibile passare alla **Successivo** passaggio o **Indietro** al passaggio precedente prima di eseguire il commit del sito nel passaggio finale.
+Il processo di creazione consiste in una serie di passaggi presentati come pannelli contenenti un insieme di feature da configurare (presentate come pannelli secondari). È possibile passare alla **Successivo** passaggio o **Indietro** al passaggio precedente prima di eseguire il commit del sito nel passaggio finale.
 
 ### Passaggio 1: modello del sito {#step-site-template}
 
@@ -450,7 +450,7 @@ Il pannello PROGETTAZIONE consente di applicare un nuovo tema:
 
 ### Modifica impostazioni {#modify-settings}
 
-Il pannello SETTINGS (IMPOSTAZIONI) consente di accedere alla maggior parte delle impostazioni nei pannelli secondari di per il passaggio 3 della creazione di siti community:
+Il pannello SETTINGS (IMPOSTAZIONI) consente di accedere alla maggior parte delle impostazioni nei sottopannelli di per il passaggio 3 della creazione di siti community:
 
 * [User Management](#user-management)
 * [Tag](#tagging)
