@@ -1,26 +1,22 @@
 ---
 title: Nozioni di base su Mi piace
-seo-title: Liking Essentials
-description: Panoramica del componente Mi piace
-seo-description: Liking component overview
-uuid: 89f16859-c901-4090-8e16-363b95c508de
+description: Scopri come utilizzare il componente Mi piace, uno strumento utile che consente ai membri di esprimere un’opinione positiva su alcuni contenuti selezionando l’icona del cuore.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 1%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
 # Nozioni di base su Mi piace {#liking-essentials}
 
-Il componente Mi piace, un [conteggio](tally.md) sottoclasse, è uno strumento utile che consente ai membri di esprimere un’opinione positiva su un particolare contenuto selezionando semplicemente l’icona del cuore.
+Il componente Mi piace, una [conteggio](tally.md) sottoclasse, è uno strumento utile che consente ai membri di esprimere un’opinione positiva su un particolare contenuto selezionando semplicemente l’icona del cuore.
 
 È consentito posizionare più istanze di un componente di Mi piace sulla stessa pagina; ogni istanza deve essere configurata con un `tally name` proprietà.
 
@@ -61,9 +57,9 @@ La pubblicazione anonima di un elemento simile non è supportata. I visitatori d
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Punti finali conteggio](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Punti finali conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 

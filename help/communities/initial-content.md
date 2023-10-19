@@ -1,15 +1,15 @@
 ---
 title: Contenuto sandbox iniziale
-description: Crea contenuto
+description: Scopri come utilizzare il modello Pagina nella Sandbox per creare una pagina principale per una versione inglese di un sito web e una pagina figlia dalla pagina principale.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 4%
+source-wordcount: '490'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ In questa sezione vengono create le pagine seguenti che utilizzano tutte [modell
 
    * SCF Play: elemento secondario della pagina principale in cui eseguire la riproduzione.
 
-Anche se questo tutorial non approfondisce [copie per lingua](../../help/sites-administering/tc-prep.md), è progettato in modo che la pagina principale possa implementare il rilevamento della lingua preferita per l’utente tramite l’intestazione HTML e reindirizzare alla pagina principale appropriata per la lingua. La convenzione prevede l’utilizzo del codice del paese di due lettere per il nome del nodo della pagina, ad esempio &quot;en&quot; per l’inglese e &quot;fr&quot; per il francese.
+Questa esercitazione non approfondisce [copie per lingua](../../help/sites-administering/tc-prep.md). È invece progettato in modo che la pagina principale possa implementare il rilevamento della lingua preferita per l’utente tramite l’intestazione HTML e reindirizzare alla pagina principale appropriata per la lingua. La convenzione prevede l’utilizzo del codice del paese di due lettere per il nome del nodo della pagina, ad esempio &quot;en&quot; per l’inglese e &quot;fr&quot; per il francese.
 
 ## Crea prime pagine {#create-first-pages}
 

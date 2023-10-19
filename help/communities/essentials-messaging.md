@@ -1,19 +1,15 @@
 ---
 title: Nozioni di base sulla messaggistica
-seo-title: Messaging Essentials
-description: Panoramica del componente Messaggistica
-seo-description: Messaging component overview
-uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
+description: Scopri i dettagli sull’utilizzo di e con il componente Messaggistica per includere una funzione di messaggistica su un sito web.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '397'
 ht-degree: 2%
 
 ---
@@ -93,9 +89,9 @@ Vedi anche [Personalizzazioni lato client](/help/communities/client-customize.md
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
 * [Configurazione della messaggistica](/help/communities/configure-messaging.md)
-* [API client di messaggistica](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) per i componenti SCF
-* [API di messaggistica](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) per il servizio
-* [Endpoint di messaggistica](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [API client di messaggistica](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) per i componenti SCF
+* [API di messaggistica](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) per il servizio
+* [Endpoint di messaggistica](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personalizzazioni lato server](/help/communities/server-customize.md)
 
 >[!CAUTION]
@@ -107,8 +103,7 @@ Vedi anche [Personalizzazioni lato client](/help/communities/client-customize.md
 >
 >Ad esempio:
 >
->
-```
+>```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
 >```

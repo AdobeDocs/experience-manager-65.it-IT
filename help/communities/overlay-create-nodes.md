@@ -1,19 +1,15 @@
 ---
 title: Crea nodi
-seo-title: Create Nodes
-description: Sovrapponi il sistema di commenti
-seo-description: Overlay the comments system
-uuid: 802ae28b-9989-4c2c-b466-ab76a724efd3
+description: Scopri come sovrapporre il sistema di commenti con una versione personalizzata copiando il numero minimo di file necessari da /libs e modificandoli in /apps.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 11%
+source-wordcount: '297'
+ht-degree: 10%
 
 ---
 
@@ -23,9 +19,9 @@ Sovrapponi il sistema di commenti con una versione personalizzata copiando il nu
 
 >[!CAUTION]
 >
->Il contenuto della cartella /libs non viene mai modificato perché eventuali operazioni di reinstallazione o aggiornamento potrebbero eliminare o sostituire la cartella /libs, mentre il contenuto della cartella /apps non viene modificato.
+>Il contenuto della cartella /libs non viene mai modificato perché eventuali reinstallazioni o aggiornamenti potrebbero eliminare o sostituire la cartella /libs mentre il contenuto della cartella /apps viene lasciato invariato.
 
-Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) in un’istanza Autore, inizia creando un percorso nella cartella /apps identico al percorso dei componenti sovrapposti nella cartella /libs.
+Utilizzo di [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md) in un’istanza Autore, inizia creando un percorso nella cartella /apps identico al percorso dei componenti sovrapposti nella cartella /libs.
 
 Il percorso da duplicare è:
 
@@ -36,19 +32,19 @@ Alcuni nodi nel percorso sono cartelle e altri componenti.
 1. Sfoglia per [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 1. Crea `/apps/social` (se non esiste già)
    * Seleziona `/apps` nodo
-   * **[!UICONTROL Crea > Cartella...]**
+   * **[!UICONTROL Crea > Cartella]**
       * Inserisci il nome: `social`
 1. Seleziona `social` nodo
-   * **[!UICONTROL Crea]** > **[!UICONTROL Cartella...]**
+   * **[!UICONTROL Crea]** > **[!UICONTROL Cartella]**
       * Inserisci il nome: `commons`
 1. Seleziona `commons` nodo
-   * **[!UICONTROL Crea > Cartella...]**
+   * **[!UICONTROL Crea > Cartella]**
       * Inserisci il nome: `components`
 1. Seleziona `components` nodo
-   * **[!UICONTROL Crea > Cartella..]**.
+   * **[!UICONTROL Crea > Cartella]**.
       * Inserisci il nome: `hbs`
 1. Seleziona `hbs` nodo
-   * **[!UICONTROL Crea]** > **[!UICONTROL Crea componente...]**
+   * **[!UICONTROL Crea]** > **[!UICONTROL Crea componente]**
       * Immetti etichetta: `comments`
       * Inserisci il titolo: `Comments`
       * Immetti la descrizione: `List of comments without showing avatars`
@@ -57,7 +53,7 @@ Alcuni nodi nel percorso sono cartelle e altri componenti.
       * Clic **[!UICONTROL Successivo]** fino a **[!UICONTROL OK]**
 1. Seleziona `comments` nodo
 
-   * **[!UICONTROL Crea]** > **[!UICONTROL Crea componente...]**
+   * **[!UICONTROL Crea]** > **[!UICONTROL Crea componente]**
 
       * Immetti etichetta: `comment`
       * Inserisci il titolo: `Comment`
@@ -76,11 +72,10 @@ Alcuni nodi nel percorso sono cartelle e altri componenti.
 
 >[!NOTE]
 >
->Al fine di preservare la catena di ereditarietà, il `Super Type` (proprietà `sling:resourceSuperType`) dei componenti di sovrapposizione sono impostati sullo stesso valore della `Super Type` dei componenti sovrapposti, in questo caso:
+>Per mantenere la catena di ereditarietà, `Super Type` (proprietà `sling:resourceSuperType`) dei componenti di sovrapposizione sono impostati sullo stesso valore della `Super Type` dei componenti sovrapposti, in questo caso:
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
 
 La sovrapposizione è propria `Type`(proprietà `sling:resourceType`) deve essere un riferimento autonomo relativo in modo che qualsiasi contenuto non trovato in /apps venga quindi cercato in /libs.
 * Nome: `sling:resourceType`

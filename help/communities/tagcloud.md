@@ -1,18 +1,14 @@
 ---
 title: Utilizzo di Tag cloud per social network
-seo-title: Using Social Tag Cloud
-description: Aggiunta di un componente cloud per tag per social network a una pagina
-seo-description: Adding a Social Tag Cloud component to a page
-uuid: 8c400030-976c-457a-bb5f-e473909647a9
+description: Scopri come aggiungere un componente Cloud di tag per social network a una pagina che consenta ai membri della community con accesso esterno di identificare rapidamente gli argomenti di tendenza e individuare i contenuti con tag.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '569'
 ht-degree: 5%
 
 ---
@@ -29,7 +25,7 @@ Questa pagina documenta `Social Tag Cloud` impostazioni della finestra di dialog
 
 Per informazioni dettagliate per gli sviluppatori, consulta [Nozioni di base sui tag](tag.md).
 
-Consulta [Amministrazione dei tag](../../help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag, nonché sui tag di contenuto applicati.
+Consulta [Amministrazione dei tag](../../help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
 
 ## Aggiunta di un tag cloud per social network {#adding-a-social-tag-cloud}
 
@@ -37,13 +33,13 @@ Per aggiungere una `Social Tag Cloud` a una pagina in modalità di authoring, ut
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando [librerie lato client richieste](tag.md#essentials-for-client-side) sono inclusi, è così che `Social Tag Cloud` Il componente verrà visualizzato:
+Quando [librerie lato client richieste](tag.md#essentials-for-client-side) sono inclusi, è così che `Social Tag Cloud` viene visualizzato il componente:
 
 ![tag social](assets/social-tag.png)
 
 ## Configurazione di Tag Cloud per social network {#configuring-social-tag-cloud}
 
-Seleziona la inserita `Social Tag Cloud` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `Social Tag Cloud` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
 
 ![configura](assets/configure-new.png)
 
@@ -100,12 +96,12 @@ Utilizzo di **[!UICONTROL Tag cloud per social network (progettazione)]** , spec
 
   `Geometrixx Media: Gadgets / Cars`
 
-  È possibile applicare 3 tag:
+  È possibile applicare tre tag:
 
   `Geometrixx Media (the namespace)`, `Gadgets`, e `Cars`
 
-   * Selezionato: Solo `Cars` viene visualizzato, se applicato.
-   * Deselezionato: `Geometrixx Media` e `Gadgets`nonché `Cars` viene visualizzato, se applicato.
+   * Selezionato: Solo `Cars` vengono visualizzati, se applicati.
+   * Deselezionato: `Geometrixx Media`, `Gadgets`, e `Cars` sono visualizzati, se applicati.
 
   Un tag semplice è un tag foglia.
 

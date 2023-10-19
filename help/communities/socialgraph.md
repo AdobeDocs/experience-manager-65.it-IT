@@ -1,18 +1,14 @@
 ---
 title: Utilizzo di Social Graph
-seo-title: Using Social Graph
-description: Aggiunta di un componente seguente a una pagina
-seo-description: Adding a Following component to a page
-uuid: 8be6334b-e6c9-40bc-90a8-750b98419470
+description: Scopri come aggiungere un componente Segue a una pagina che consente ai membri della community con accesso effettuato di seguire o seguire le attività.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 exl-id: 2cd1436b-3727-4757-b28e-70756be78a4e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '197'
 ht-degree: 1%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Possibilità per un membro della community di seguire [attività](activities.md) L’eVar viene stabilito attraverso due componenti: `Follow` e `Following`.
+Possibilità per un membro della community di seguire [attività](activities.md) e l’essere seguiti si stabilisce attraverso due componenti: `Follow` e `Following`.
 
 Il `Follow` il componente deve essere associato a un&#39;altra risorsa e questa associazione è già stata stabilita per i membri e le funzionalità della community.
 
@@ -33,7 +29,7 @@ Se si desidera aggiungere un `Following` a una pagina in modalità di authoring,
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando [librerie lato client richieste](essentials-socialgraph.md#essentials-for-client-side) sono inclusi, è così che `Following` Il componente verrà visualizzato:
+Quando [librerie lato client richieste](essentials-socialgraph.md#essentials-for-client-side) sono inclusi, è così che `Following` viene visualizzato il componente:
 
 ![segue](assets/following.png)
 

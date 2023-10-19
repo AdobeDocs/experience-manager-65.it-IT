@@ -1,14 +1,14 @@
 ---
 title: Nozioni di base sul gruppo community
-description: Creazione dinamica di siti community
+description: Scopri come gli utenti autorizzati possono utilizzare la funzione Gruppi community per creare in modo dinamico una sottocommunity all’interno di un sito community.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 La funzione Gruppi community consente la creazione dinamica di una sottocommunity all’interno di un sito community da parte di utenti autorizzati dagli ambienti di pubblicazione e authoring.
 
-A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepack), è possibile nidificare i gruppi all’interno di altri gruppi
+A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepack), è possibile nidificare i gruppi all’interno di altri gruppi.
 
 ## Nozioni di base per lato client {#essentials-for-client-side}
 
@@ -85,9 +85,9 @@ A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepac
 
 Una struttura del sito della community che include [Funzione Gruppi](functions.md#groups-function) supporta la creazione di nuovi `community groups` dagli ambienti di pubblicazione e di authoring. Il gruppo community creato include `community groups member list` componente che elenca i membri del gruppo.
 
-Uno o più [modelli per gruppi community](tools-groups.md), che forniscono la struttura delle pagine del gruppo community, possono essere configurate per la funzione Gruppi quando la funzione viene aggiunta a una [modello per sito community](sites.md) o nidificati all&#39;interno di un modello di gruppo community.
+Uno o più [modelli per gruppi community](tools-groups.md), che forniscono la struttura delle pagine del gruppo community, può essere configurato per la funzione Gruppi. Ciò si verifica quando la funzione viene aggiunta a un [modello per sito community](sites.md) o nidificati all&#39;interno di un modello di gruppo community.
 
-L&#39;inclusione di più modelli di gruppo community comporta la presentazione di una scelta di progetto all&#39;utente autorizzato al momento della creazione di un nuovo gruppo community per il sito community, come illustrato nella sezione relativa a [gruppi community](creating-groups.md) per autori.
+L’inclusione di più modelli di gruppo community comporta una scelta. Vale a dire, la scelta del design presentato all&#39;utente autorizzato nel momento in cui viene creato un gruppo community per il sito community. Consulta la sezione su [gruppi community](creating-groups.md) per autori.
 
 ### Gruppi nidificati {#nested-groups}
 

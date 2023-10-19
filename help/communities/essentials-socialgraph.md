@@ -1,14 +1,14 @@
 ---
 title: Nozioni di base sui grafici social
-description: Scopri i seguenti componenti e il componente Segui.
+description: Scopri le nozioni di base di Social Graph utilizzando i componenti Segui e Segui su un sito della community.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '249'
 ht-degree: 2%
 
 ---

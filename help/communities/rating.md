@@ -1,25 +1,21 @@
 ---
 title: Utilizzo delle valutazioni
-seo-title: Using Ratings
-description: Aggiunta di un componente Valutazione a una pagina
-seo-description: Adding a Rating component to a page
-uuid: a986970b-1221-4648-9a69-410f4480e0ae
+description: Scopri come aggiungere un componente Valutazione a una pagina che consente ai membri della community di accesso di esprimere le proprie opinioni assegnando una valutazione al contenuto.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 exl-id: 7534ad5d-b408-4b09-bd3d-da7ab009d55b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '219'
 ht-degree: 2%
 
 ---
 
 # Utilizzo delle valutazioni {#using-ratings}
 
-Il `Rating` Il componente viene utilizzato da solo o insieme ad altre funzioni di Communities. Questo componente consente ai membri della community con accesso esterno di esprimere le proprie opinioni attraverso la valutazione del contenuto.
+Il `Rating` Il componente viene utilizzato da solo o con altre funzioni di Communities. Questo componente consente ai membri della community con accesso esterno di esprimere le proprie opinioni attraverso la valutazione del contenuto.
 
 ## Aggiunta di una valutazione a una pagina {#adding-a-rating-to-a-page}
 
@@ -27,17 +23,17 @@ Per aggiungere una `Rating` a una pagina in modalità di authoring, individua il
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando [librerie lato client richieste](rating-basics.md#essentials-for-client-side) sono inclusi, è così che `Rating` verrà visualizzato.
+Quando [librerie lato client richieste](rating-basics.md#essentials-for-client-side) sono inclusi, è così che `Rating` viene visualizzato.
 
 ![valutazione](assets/rating.png)
 
 ## Configurazione della valutazione {#configuring-rating}
 
-Seleziona la inserita `Rating` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `Rating` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
 
 ![configure-new](assets/configure-new.png)
 
-Sotto **[!UICONTROL Testi ed etichette]** specifica l’identificatore interno per la valutazione.
+Sotto **[!UICONTROL Testi ed etichette]** , si specifica l&#39;identificatore interno per la valutazione.
 
 ![tallyname](assets/tallyname.png)
 

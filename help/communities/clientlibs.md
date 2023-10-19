@@ -1,15 +1,15 @@
 ---
 title: Clientlibs per i componenti Communities
-description: Librerie lato client per le community
+description: Scopri come aggiungere librerie client-side (clientlibs) a una pagina per raccogliere i dettagli sull’utilizzo e utilizzare gli strumenti di debug per i componenti di Communities.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Questa sezione della documentazione descrive come aggiungere librerie client (clientlibs) a una pagina per i componenti Communities.
 
-Per informazioni di base, visitare il sito:
+Per informazioni di base, vedere:
 
 * [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md) che fornisce dettagli sull’utilizzo e strumenti di debug
 * [Clientlibs per SCF](/help/communities/client-customize.md#clientlibs) che fornisce informazioni utili per personalizzare i componenti SCF
@@ -61,7 +61,7 @@ Quando si desidera aggiungere un componente Communities a una pagina, se non è 
 
 Utilizzare [CRXDE|Lite](#using-crxde-lite) per modificare un elenco clientlibslist esistente per una pagina del sito community.
 
-Per aggiungere una libreria client per un sito community tramite [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Per aggiungere una libreria client a un sito community tramite [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Sfoglia per [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Individua il `clientlibslist` per la pagina alla quale desideri aggiungere il componente:
@@ -71,7 +71,7 @@ Per aggiungere una libreria client per un sito community tramite [CRXDE Lite](/h
 * Con `clientlibslist` nodo selezionato:
 
    * Individua la stringa[] proprietà `scg:requiredClientLibs`.
-   * Seleziona il relativo `Value` per accedere alla finestra di dialogo Array di stringhe.
+   * Seleziona il relativo `Value` in modo da poter accedere alla finestra di dialogo Array di stringhe.
 
       * Scorri verso il basso, se necessario.
       * Seleziona + per immettere una nuova libreria client.

@@ -1,26 +1,22 @@
 ---
 title: Modificare l'aspetto (HBS)
-seo-title: Alter the Appearance
-description: Modificare gli script HBS
-seo-description: Modify the HBS scripts
-uuid: cff24505-dbb3-4312-9b1b-c1693b8d1c98
+description: Scopri come modificare l’aspetto (HBS) modificando gli script HBS.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
 # Modificare l&#39;aspetto (HBS) {#alter-the-appearance-hbs}
 
-Ora che i componenti per il sistema di commenti personalizzato nella directory dell’applicazione (/apps) sono presenti, con una risorsa SuperType che fa riferimento al sistema di commenti predefinito e con il modello/vista personalizzato registrato, è possibile modificare l’implementazione.
+Ora che i componenti per il sistema di commenti personalizzato nella directory dell’applicazione (/apps) sono presenti, con una risorsa SuperType che fa riferimento al sistema di commenti predefinito e con il modello/vista personalizzato registrato, puoi modificare l’implementazione.
 
 Per una semplice dimostrazione, una funzione visiva, l’avatar mostrato dall’utente connesso che pubblica un commento, viene rimossa.
 
@@ -30,27 +26,27 @@ Per una semplice dimostrazione, una funzione visiva, l’avatar mostrato dall’
 
 ## Modificare gli script HBS {#modify-the-hbs-scripts}
 
-Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Utilizzo di [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Apri [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Commenta il tag che include l&#39;avatar per un post di commento (~ riga 21):
 
-      ```
-        <!--
-         <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-         -->
-      ```
+     ```
+       <!--
+        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+        -->
+     ```
 
 * Apri [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Commenta il tag che include l&#39;avatar per la voce di commento successiva (~ riga 44):
 
-      ```
-        <!--
-         <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
-         -->
-      ```
+     ```
+       <!--
+        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
+        -->
+     ```
 
 * Seleziona **Salva tutto**
 

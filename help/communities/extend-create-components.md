@@ -1,25 +1,21 @@
 ---
 title: Creare i componenti
-seo-title: Create the Components
-description: Creare il componente Commenti
-seo-description: Create the Comments component
-uuid: ea6e00d4-1db7-40ef-ae49-9ec55df58adf
+description: Scopri come estendere i componenti utilizzando il sistema di commenti composto dai componenti Commenti e Commenti.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '634'
 ht-degree: 5%
 
 ---
 
 # Creare i componenti  {#create-the-components}
 
-L’esempio di estensione dei componenti utilizza il sistema di commenti, che in realtà è composto da due componenti
+Nell’esempio di estensione dei componenti viene utilizzato il sistema di commenti, composto da due componenti.
 
 * Commenti: il sistema di commenti globale, ovvero il componente inserito in una pagina.
 * Commento: componente che acquisisce un’istanza di un commento pubblicato.
@@ -36,7 +32,7 @@ Entrambi i componenti devono essere implementati, soprattutto se si personalizza
 
 Queste direzioni specificano una **Gruppo** valore diverso da `.hidden` in modo che il componente possa essere reso disponibile dal browser componenti (barra laterale).
 
-L’eliminazione del file JSP creato automaticamente è dovuta al fatto che verrà utilizzato il file HBS predefinito.
+L’eliminazione del file JSP creato automaticamente è dovuta al fatto che viene utilizzato il file HBS predefinito.
 
 1. Sfoglia per **CRXDE|Lite** ([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp))
 
@@ -45,10 +41,10 @@ L’eliminazione del file JSP creato automaticamente è dovuta al fatto che verr
    * Seleziona la `/apps` nodo
 
       * **Crea cartella** denominato **[!UICONTROL personalizzato]**
+
    * Seleziona la `/apps/custom` nodo
 
       * **Crea cartella** denominato **[!UICONTROL componenti]**
-
 
 1. Seleziona la `/apps/custom/components` nodo
 
@@ -59,13 +55,13 @@ L’eliminazione del file JSP creato automaticamente è dovuta al fatto che verr
       * **Descrizione**: *Stile commenti alternativo*
       * **Super Type**: *social/commons/components/hbs/commenti*
       * **Gruppo**: *Personalizzato*
+
    * Seleziona **[!UICONTROL Avanti]**
    * Seleziona **[!UICONTROL Avanti]**
    * Seleziona **[!UICONTROL Avanti]**
    * Seleziona **[!UICONTROL OK]**
 
-
-1. Espandi il nodo appena creato: `/apps/custom/components/comments`
+1. Espandi il nodo creato: `/apps/custom/components/comments`
 1. Seleziona **[!UICONTROL Salva tutto]**
 1. Clic con il pulsante destro `comments.jsp`
 1. Seleziona **[!UICONTROL Elimina]**
@@ -77,7 +73,7 @@ L’eliminazione del file JSP creato automaticamente è dovuta al fatto che verr
 
 Queste direzioni sono impostate **Gruppo** a `.hidden` in quanto all’interno di una pagina deve essere incluso solo il componente principale.
 
-L’eliminazione del file JSP creato automaticamente è dovuta al fatto che verrà utilizzato il file HBS predefinito.
+L’eliminazione del file JSP creato automaticamente è dovuta al fatto che viene utilizzato il file HBS predefinito.
 
 1. Accedi a `/apps/custom/components/comments` nodo
 1. Fare clic con il pulsante destro del mouse sul nodo
@@ -89,13 +85,13 @@ L’eliminazione del file JSP creato automaticamente è dovuta al fatto che verr
       * **Descrizione**: *Stile commento alternativo*
       * **Super Type**: *social/commons/components/hbs/comments/comment*
       * **Gruppo**: `*.hidden*`
+
    * Seleziona **[!UICONTROL Avanti]**
    * Seleziona **[!UICONTROL Avanti]**
    * Seleziona **[!UICONTROL Avanti]**
    * Seleziona **[!UICONTROL OK]**
 
-
-1. Espandi il nodo appena creato: `/apps/custom/components/comments/comment`
+1. Espandi il nodo creato: `/apps/custom/components/comments/comment`
 1. Seleziona **[!UICONTROL Salva tutto]**
 1. Clic con il pulsante destro `comment.jsp`
 1. Seleziona **[!UICONTROL Elimina]**
@@ -107,7 +103,7 @@ L’eliminazione del file JSP creato automaticamente è dovuta al fatto che verr
 
 ### Copiare e modificare gli script HBS predefiniti {#copy-and-modify-the-default-hbs-scripts}
 
-Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Utilizzo di [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Copia `comments.hbs`
 
@@ -120,11 +116,11 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
       * Da `social/commons/components/hbs/comments`
       * A `/apps/custom/components/comments`
+
    * Modifica per includere il componente commento personalizzato (~riga 75):
 
       * Sostituisci `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
       * Con `{{include this resourceType='/apps/custom/components/comments/comment'}}`
-
 
 * Copia `comment.hbs`
 
@@ -143,9 +139,9 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
 ## Creare una cartella della libreria client {#create-a-client-library-folder}
 
-Per evitare di dover includere esplicitamente questa libreria client, è possibile utilizzare il valore delle categorie per la libreria client del sistema di commenti predefinito ( `cq.social.author.hbs.comments`), ma questa libreria client viene inclusa anche per tutte le istanze del componente predefinito.
+Per evitare di dover includere questa libreria client, è possibile utilizzare il valore delle categorie per la libreria client del sistema di commenti predefinito ( `cq.social.author.hbs.comments`). Tuttavia, questa libreria client dovrebbe quindi essere inclusa anche per tutte le istanze del componente predefinito.
 
-Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Utilizzo di [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Seleziona `/apps/custom/components/comments` nodo
 * Seleziona **[!UICONTROL Crea nodo]**
@@ -158,7 +154,7 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
       * **Nome** `dependencies` **Tipo** `String` **Valore** `cq.social.scf` `Multi`
 
 * Seleziona **[!UICONTROL Salva tutto]**
-* Con `/apps/custom/components/comments/clientlib`s nodo selezionato, crea 3 file:
+* Con `/apps/custom/components/comments/clientlib`s nodo selezionato, crea tre file:
 
    * **Nome**: `css.txt`
    * **Nome**: `js.txt`

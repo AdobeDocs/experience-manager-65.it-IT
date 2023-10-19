@@ -1,18 +1,14 @@
 ---
 title: Utilizzo di recensioni e riepilogo recensioni (visualizzazione)
-seo-title: Using Reviews and Reviews Summary (Display)
-description: Aggiunta dei componenti Riepilogo recensioni e recensioni a una pagina
-seo-description: Adding the Reviews and Reviews Summary components to a page
-uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
+description: Scopri come aggiungere i componenti Recensioni e Riepilogo recensioni a una pagina.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1285'
 ht-degree: 4%
 
 ---
@@ -33,13 +29,13 @@ Per aggiungere una `Reviews` a una pagina in modalità di authoring, utilizza il
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando [librerie lato client richieste](reviews-basics.md#essentials-for-client-side) sono inclusi, è così che `Reviews` verrà visualizzato.
+Quando [librerie lato client richieste](reviews-basics.md#essentials-for-client-side) sono inclusi, è così che `Reviews` viene visualizzato.
 
 ![create-review](assets/create-review.png)
 
 ## Configurazione delle recensioni {#configuring-reviews}
 
-Seleziona la inserita `Reviews` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `Reviews` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
 
 ![configure-new](assets/configure-new.png)
 
@@ -55,7 +51,7 @@ Sotto **[!UICONTROL Classificazioni consentite]** , specificare l&#39;elenco com
 
   Clic **[!UICONTROL Aggiungi elemento]** per aggiungere un’altra scelta di valutazione.
 
-Sotto **[!UICONTROL Classificazioni richieste]** , immettere nuovamente gli elementi dall&#39;elenco di **[!UICONTROL Classificazioni consentite]** che devono essere valutati. Se un elemento viene specificato solo nella scheda Classificazioni consentite, può non essere contrassegnato quando viene inviato dal membro.
+Sotto **[!UICONTROL Classificazioni richieste]** , reinserisci gli elementi dall&#39;elenco di **[!UICONTROL Classificazioni consentite]** necessari per la valutazione. Se un elemento viene specificato solo nella scheda Classificazioni consentite, può non essere contrassegnato quando viene inviato dal membro.
 
 Sul sito web, le valutazioni richieste sono contrassegnate da un asterisco. Se un elemento è obbligatorio e non è contrassegnato, viene visualizzato un messaggio per il membro e l&#39;invio viene negato fino a quando tutte le valutazioni richieste non vengono contrassegnate.
 
@@ -99,7 +95,7 @@ Sotto **[!UICONTROL Recensioni]** , specificare la modalità di gestione delle r
 
 * **[!UICONTROL Tipi di file consentiti]**
 
-  Rilevante solo se **[!UICONTROL Consenti caricamenti file]** è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
+  Rilevante solo se **[!UICONTROL Consenti caricamenti file]** è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati tipi di file, quelli non specificati non sono consentiti. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **[!UICONTROL Editor Rich Text]**
 
@@ -119,7 +115,7 @@ Sotto **[!UICONTROL Moderazione utenti]** , specifica come vengono gestite le re
 
 * **[!UICONTROL Elimina recensioni]**
 
-  Se questa opzione è selezionata, il membro che ha pubblicato la revisione potrà eliminarla. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, il membro che ha pubblicato la revisione può eliminarla. L&#39;impostazione predefinita è deselezionata.
 
 * **[!UICONTROL Rifiuta recensioni]**
 
@@ -155,11 +151,11 @@ Per aggiungere una `Reviews Summary (Display)` a una pagina in modalità di auth
 
 * `Communities / Reviews Summary (Display)`
 
-e trascinarlo in una pagina in cui deve essere visualizzato un riepilogo di una revisione attiva o chiusa.
+Trascinarlo in una pagina in cui deve essere visualizzato un riepilogo di una revisione attiva o chiusa.
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando [librerie lato client richieste](reviews-basics.md#essentials-for-client-side) sono inclusi, è così che `Reviews Summary (Display)`verrà visualizzato.
+Quando [librerie lato client richieste](reviews-basics.md#essentials-for-client-side) sono inclusi, è così che `Reviews Summary (Display)`viene visualizzato.
 
 ![review-summary](assets/configure-review5.png)
 
@@ -169,7 +165,7 @@ Quando [librerie lato client richieste](reviews-basics.md#essentials-for-client-
 
 ### Configurazione del riepilogo delle recensioni (visualizzazione) {#configuring-reviews-summary-display}
 
-Seleziona la inserita `Reviews Summary (Display)` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `Reviews Summary (Display)` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
 
 ![configura](assets/configure-new.png)
 
@@ -179,21 +175,21 @@ Sotto **[!UICONTROL Riepilogo recensioni]** scheda
 
 * `Review Path`
 
-  immetti o sfoglia l’istanza inserita del `reviews`componente da riepilogare, ad esempio, se aggiunto alla pagina web del [Geometrixx sito di coinvolgimento,](getting-started.md) il percorso sarà:
+  Inserisci o sfoglia l’istanza inserita del `reviews` componente che consente di riepilogare, ad esempio, se aggiunto alla pagina web del [Geometrixx sito di coinvolgimento,](getting-started.md) il percorso sarà:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-  Se questa opzione è selezionata, includi la visualizzazione di un grafico a barre indicante il numero di stelle di valutazione presenti nelle recensioni da riepilogare. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, includi la visualizzazione di un grafico a barre indicante quante stelle di valutazione sono presenti nelle recensioni riepilogate. L&#39;impostazione predefinita è deselezionata.
 
 ### Passaggio a un tipo di revisione personalizzato {#changing-to-a-custom-review-type}
 
 Il componente Recensioni utilizza il sistema di commenti.
 
-Modificando il tipo di risorsa Commento, il sistema di commenti non genererà più un&#39;istanza di un commento utilizzando l&#39;impostazione predefinita, ma piuttosto una che è stata personalizzata (estesa) dagli sviluppatori.
+Modificando il tipo di risorsa Commento, il sistema dei commenti non genera più un&#39;istanza di un commento utilizzando l&#39;impostazione predefinita, ma una che è stata personalizzata (estesa) dagli sviluppatori.
 
-Una volta noti i tipi di risorse personalizzati, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fare doppio clic sul `Comments` per aprire una finestra di dialogo con una scheda aggiuntiva.
+Quando sono noti i tipi di risorse personalizzati, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fare doppio clic sul `Comments` per aprire una finestra di dialogo con una scheda aggiuntiva.
 
 Sotto **[!UICONTROL Tipi di risorse]** , specificare il resourceType personalizzato per le nuove istanze del `Comments or Voting` componenti:
 
@@ -203,13 +199,13 @@ Sotto **[!UICONTROL Tipi di risorse]** , specificare il resourceType personalizz
 
   Passare al resourceType di un&#39;estensione `comment`componente (commento singolo) in /apps. Esempio: `/apps/social/commons/components/hbs/comments/comment`.
 
-  Questa risorsa identificherà il resourceType del UGC creato quando un visitatore pubblica un commento.
+  Questa risorsa identifica il resourceType del UGC creato quando un visitatore pubblica un commento.
 
 * **[!UICONTROL Tipo di risorsa per votazione]**
 
   Passare al resourceType di un&#39;estensione `voting`componente in /apps. Esempio: `/apps/social/components/hbs/voting`.
 
-  Questa risorsa identificherà il tipo di risorsa dell’UGC creato quando un visitatore pubblica un voto.
+  Questa risorsa identifica il tipo di risorsa dell’UGC creato quando un visitatore pubblica un voto.
 
 * **[!UICONTROL Tipo risorsa sistema commenti]**
 

@@ -1,18 +1,14 @@
 ---
 title: Elementi di base di Calendar
-seo-title: Calendar Essentials
-description: Panoramica della funzione Calendario
-seo-description: Calendar feature overview
-uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
+description: Scopri come utilizzare la funzione Calendario in Experience Manager Communities. Il Calendario supporta l'identificazione dei gruppi di utenti membri con privilegi.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -57,15 +53,15 @@ Questa pagina fornisce informazioni essenziali sull&#39;utilizzo della funzione 
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API calendario](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [API calendario](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [Endpoint calendario](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [Endpoint calendario](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
 ### Funzione Calendario {#calendar-function}
 
-Una struttura del sito della community che include [Funzione calendario](functions.md#calendar-function) avrà configurato `calendar` componente. La funzione Calendar supporta l’identificazione di un’ [gruppo utenti membro privilegiato](users.md#privileged-members-group).
+Una struttura del sito della community che include [Funzione calendario](functions.md#calendar-function) ha un `calendar` componente configurato. La funzione Calendar supporta l’identificazione di un’ [gruppo utenti membro privilegiato](users.md#privileged-members-group).
 
 ### Accesso ai post del calendario (UGC) {#accessing-calendar-posts-ugc}
 

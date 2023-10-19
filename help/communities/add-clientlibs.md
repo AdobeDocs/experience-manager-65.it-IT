@@ -1,15 +1,15 @@
 ---
 title: Aggiungi Clientlibs
-description: Aggiungere una ClientLibraryFolder
+description: Scopri come aggiungere una ClientLibraryFolder (clientlibs) utilizzata per contenere i fogli di stile JavaScript e Cascading utilizzati per eseguire il rendering delle pagine del sito.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '701'
 ht-degree: 2%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 2%
 
 ## Aggiungere una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Creare una ClientLibraryFolder denominata `clientlibs` che conterrà i file JS e CSS utilizzati per il rendering delle pagine del sito.
+Creare una ClientLibraryFolder denominata `clientlibs` che contiene JavaScript (JS) e Cascading Styles Sheets (CSS) utilizzati per eseguire il rendering delle pagine del sito.
 
 Il `categories` il valore della proprietà assegnato a questa libreria client è l’identificatore utilizzato per includere direttamente questa libreria client da una pagina di contenuto o per incorporarla in altre librerie client.
 
-1. Utilizzo di **CRXDE Lite**, espandi `/etc/designs`
+1. Utilizzo di **CRXDE Liti**, espandi `/etc/designs`
 
 1. Clic con il pulsante destro `an-scf-sandbox` e seleziona `Create Node`
 
@@ -83,7 +83,7 @@ In questo caso, includendoli tutti e quindi si preferiscono le clientlibs SCF di
 
 * Nome : **`embed`**
 * Tipo : **`String`**
-* Clic **`Multi`**
+* Fai clic su **`Multi`**
 * Valore: **`cq.social.scf`**
 
    * Apparirà una finestra di dialogo, fai clic su **`+`** dopo ogni voce per aggiungere le seguenti categorie clientlib:
@@ -106,7 +106,7 @@ Ecco come `/etc/designs/an-scf-sandbox/clientlibs` dovrebbe ora essere visualizz
 
 ### Includi clientlibs nel modello PlayPage {#include-clientlibs-in-playpage-template}
 
-Senza includere `apps.an-scf-sandbox` Nella categoria ClientLibraryFolder della pagina, i componenti SCF non sono funzionali né formattati in quanto JavaScript e gli stili necessari non sono disponibili.
+Senza includere `apps.an-scf-sandbox` Categoria ClientLibraryFolder sulla pagina, i componenti SCF non sono funzionali né formattati in quanto gli stili JavaScript e CSS necessari non sono disponibili.
 
 Ad esempio, senza includere clientlibs, il componente SCF comments (commenti SCF) non viene formattato:
 
@@ -120,12 +120,12 @@ L&#39;istruzione &quot;include&quot; appartiene al `head` sezione del `html` scr
 
 **Copia headlibs.jsp e includi clientlibs:**
 
-1. Utilizzo di **CRXDE Lite**, seleziona **`/libs/foundation/components/page/headlibs.jsp`**
+1. Utilizzo di **CRXDE Liti**, seleziona **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Fai clic con il pulsante destro del mouse e seleziona (Copia negli Appunti) **Copia** (oppure seleziona Copia dalla barra degli strumenti).
 1. Seleziona **`/apps/an-scf-sandbox/components/playpage`**
 1. Fai clic con il pulsante destro del mouse e seleziona (Copia negli Appunti) **Incolla** (oppure seleziona Incolla dalla barra degli strumenti).
-1. Doppio clic **`headlibs.jsp`** per aprirlo
+1. Doppio clic **`headlibs.jsp`** in modo da poterlo aprire
 1. Aggiungi la riga seguente alla fine del file
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
@@ -149,13 +149,13 @@ Carica il tuo sito web nel browser e osserva se lo sfondo non è una tonalità d
 
 ### Salvataggio del lavoro {#saving-your-work-so-far}
 
-A questo punto, esiste una sandbox minimalista, e potrebbe essere utile salvarla come pacchetto in modo che, durante la riproduzione, se l’archivio diventa danneggiato e desideri ricominciare, puoi disattivare il server, rinominare o eliminare la cartella crx-quickstart/, attivare il server, caricare e installare questo pacchetto salvato e non dover ripetere questi passaggi più semplici.
+A questo punto, esiste una sandbox minimalista. Potrebbe essere utile salvarlo come pacchetto in modo che, durante la riproduzione, se l’archivio diventa danneggiato e desideri ricominciare, puoi spegnere il server. Quindi rinomina o elimina la cartella crx-quickstart/, accendi il server, carica e installa questo pacchetto salvato e non devi ripetere questi passaggi più semplici.
 
 Questo pacchetto esiste in [Crea una pagina di esempio](/help/communities/create-sample-page.md) tutorial per chi non vede l’ora di entrare e iniziare a giocare!...
 
 Per creare un pacchetto:
 
-* Da CRXDE Lite, fai clic su [Icona pacchetto](https://localhost:4502/crx/packmgr/)
+* Da CRXDE Liti, fai clic su [Icona pacchetto](https://localhost:4502/crx/packmgr/)
 * Clic **Crea pacchetto**
 
    * Nome pacchetto: an-scf-sandbox-minimal-pkg

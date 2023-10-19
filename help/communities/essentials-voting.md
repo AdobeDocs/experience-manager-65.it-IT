@@ -1,19 +1,15 @@
 ---
 title: Elementi di base per la votazione
-seo-title: Voting Essentials
-description: Panoramica del componente Votazione
-seo-description: Voting component overview
-uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
+description: Scopri come utilizzare il componente Votazione, che consente ai membri di assegnare una valutazione a un particolare contenuto selezionando le frecce verso l’alto o verso il basso per indicare la propria opinione.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 1%
+source-wordcount: '301'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +19,7 @@ La componente di voto, una [conteggio](tally.md) sottoclasse, è uno strumento u
 
 È consentito posizionare più istanze di un componente voting sulla stessa pagina; ogni istanza deve essere configurata con un `tally name` proprietà.
 
-La pubblicazione anonima di un voto non è supportata. I visitatori del sito devono registrarsi e accedere per partecipare alle votazioni una sola volta. Il visitatore con accesso (membro) può cambiare il proprio voto in qualsiasi momento.
+La pubblicazione anonima di un voto non è supportata. I visitatori del sito devono registrarsi e accedere per partecipare alle votazioni una sola volta. Il visitatore (membro) che ha effettuato l’accesso può modificare il proprio voto in qualsiasi momento.
 
 ## Nozioni di base per lato client {#essentials-for-client-side}
 
@@ -60,9 +56,9 @@ La pubblicazione anonima di un voto non è supportata. I visitatori del sito dev
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Punti finali conteggio](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Punti finali conteggio](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 

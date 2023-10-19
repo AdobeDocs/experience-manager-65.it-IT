@@ -1,19 +1,15 @@
 ---
 title: Nozioni di base su punteggio e distintivi
-seo-title: Scoring and Badges Essentials
-description: Panoramica della funzione Punteggio e Distintivi
-seo-description: Scoring and Badges feature overview
-uuid: 6e3af071-04e8-4dc1-977a-0da711b72961
+description: Scopri in che modo la funzione di punteggio e badge di Adobe Experience Manager Communities identifica e premia i membri della community.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '946'
 ht-degree: 2%
 
 ---
@@ -34,7 +30,7 @@ Questa pagina contiene ulteriori dettagli tecnici:
 
 >[!CAUTION]
 >
->La struttura di implementazione visibile in CRXDE Lite è soggetta a modifiche.
+>La struttura di implementazione visibile in CRXDE Liti è soggetta a modifiche.
 
 ## Visualizzazione dei badge {#displaying-badges}
 
@@ -68,9 +64,9 @@ Ad esempio, cerca `this.isAssigned` in `/libs/social/forum/components/hbs/topic/
 {{/each}}
 ```
 
-Se true, isAssigned indica che il badge è stato assegnato a un ruolo e deve essere visualizzato come testo.
+Se true, `isAssigned` indica che il badge è stato assegnato per un ruolo e deve essere visualizzato come testo.
 
-Se false, isAssigned indica che il badge è stato assegnato per un punteggio ottenuto e deve essere visualizzato come un’immagine.
+Se false, `isAssigned` indica che il badge è stato assegnato per un punteggio ottenuto e deve essere visualizzato come immagine.
 
 Qualsiasi modifica a questo comportamento deve essere apportata in uno script personalizzato (override o overlay). Consulta [Personalizzazione lato client](/help/communities/client-customize.md).
 
@@ -82,7 +78,7 @@ Per istruzioni dettagliate, visita [Creare un file di registro personalizzato](/
 
 Per configurare rapidamente un file di log di Slinglog:
 
-1. Accedere a **Supporto del registro della console web di Adobe Experience Manager**, ad esempio
+1. Accedere a **Supporto del registro della console Web Adobe Experience Manager**, ad esempio
 
    * https://localhost:4502/system/console/slinglog
 
@@ -93,13 +89,13 @@ Per configurare rapidamente un file di log di Slinglog:
    1. Inserisci un nome per **File di registro**, ad esempio
 
       * logs/scoring-debug.log
+
    1. Inserisci due **Logger** voci (classe) (utilizzando `+` )
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
+
    1. Seleziona **Salva**
-
-
 
 ![debug-scoring-log](assets/debug-scoring-log.png)
 
@@ -123,11 +119,11 @@ Per visualizzare le voci di registro:
 
 È possibile visualizzare il UGC relativo al punteggio e al contrassegno quando l’SRP scelto è JSRP o MSRP, ma non ASRP. (Se non conosci questi termini, consulta [Archiviazione contenuti community](/help/communities/working-with-srp.md) e [Panoramica del provider di risorse di archiviazione](/help/communities/srp.md).)
 
-Le descrizioni per l’accesso ai dati di punteggio e badge utilizzano JSRP, in quanto l’UGC è facilmente accessibile tramite [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Le descrizioni per l’accesso ai dati di punteggio e badge utilizzano JSRP, in quanto l’UGC è facilmente accessibile tramite [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP sull’autore**: la sperimentazione nell’ambiente di authoring genera contenuti generati dall’utente che sono visibili solo dall’ambiente di authoring.
 
-**JSRP in fase di pubblicazione**: analogamente, se si esegue il test nell’ambiente di pubblicazione, è necessario accedere a CRXDE Lite con privilegi amministrativi su un’istanza di pubblicazione. Se l’istanza Publish è in esecuzione in [modalità di produzione](/help/sites-administering/production-ready.md) (nosamplecontent runmode), è necessario [abilita CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP in fase di pubblicazione**: analogamente, se si esegue il test nell’ambiente di pubblicazione, è necessario accedere a CRXDE Liti con privilegi amministrativi su un’istanza di pubblicazione. Se l’istanza Publish è in esecuzione in [modalità di produzione](/help/sites-administering/production-ready.md) (modalità di esecuzione nosamplecontent), è necessario [abilita CRXDE Liti](/help/sites-administering/enabling-crxde-lite.md).
 
 La posizione di base di UGC su JSRP è `/content/usergenerated/asi/jcr/`.
 
@@ -151,7 +147,7 @@ Le schermate dei dati dell&#39;archivio provengono dall&#39;impostazione del pun
    * Utilizzo del sito Guida introduttiva (coinvolgi) creato durante il [tutorial introduttivo](/help/communities/getting-started.md)
    * Individua il nodo della pagina del forum
 
-      `/content/sites/engage/en/forum/jcr:content`
+     `/content/sites/engage/en/forum/jcr:content`
 
    * Aggiungere proprietà di punteggio e badge
 
@@ -167,22 +163,21 @@ Le schermate dei dati dell&#39;archivio provengono dall&#39;impostazione del pun
 
    * Individua il nodo del componente forum
 
-      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+     `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * Per visualizzare i badge, aggiungi la proprietà
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * Un utente effettua l’accesso, crea un argomento del forum e riceve un distintivo bronzo
-
 
 1. Un sito AEM *senza* un id univoco :
 
    * Utilizzo di [Guida ai componenti della community](/help/communities/components-guide.md)
    * Individua il nodo della pagina del forum
 
-      `/content/community-components/en/forum/jcr:content`
+     `/content/community-components/en/forum/jcr:content`
 
    * Aggiungere proprietà di punteggio e badge
 
@@ -198,15 +193,14 @@ Le schermate dei dati dell&#39;archivio provengono dall&#39;impostazione del pun
 
    * Individua il nodo del componente forum
 
-      `/content/community-components/en/forum/jcr:content/content/forum`
+     `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * Per visualizzare i badge, aggiungi la proprietà
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * Un utente effettua l’accesso, crea un argomento del forum e riceve un distintivo bronzo
-
 
 1. A un utente viene assegnato un badge moderatore utilizzando cURL:
 
@@ -230,7 +224,6 @@ Le schermate dei dati dell&#39;archivio provengono dall&#39;impostazione del pun
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
 >
 >* Creazione di immagini distintive univoche per diversi siti AEM
-
 
 ### UGC per punteggio di accesso {#access-scoring-ugc}
 

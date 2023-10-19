@@ -1,16 +1,14 @@
 ---
 title: Sviluppare contenuti sandbox
-description: Sviluppare contenuti
-uuid: ca046cf8-f6cd-41a1-97c8-74a86fbe9cd2
+description: Scopri come esplorare le funzioni della community nella sandbox, insieme alla guida ai componenti della community e Feature Essentials come riferimento.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: b97abfc9-62e6-470c-bb86-086e662c8091
 exl-id: d25c243c-257b-4ba8-b1c5-e306906812ea
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '36'
+source-wordcount: '52'
 ht-degree: 0%
 
 ---

@@ -1,15 +1,15 @@
 ---
 title: Distribuzione delle community
-description: Come distribuire AEM Communities
+description: Scopri come distribuire community e funzioni della community in Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1712'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,7 @@ AEM 6.5 Communities GA include il pacchetto Communities. Per ulteriori informazi
 
 A partire da AEM 6.4, gli aggiornamenti alle community vengono forniti come parte dei Cumulative Fix Pack e Service Pack di AEM.
 
-Per gli ultimi aggiornamenti di AEM 6.5, vedi [Adobe Experience Manager 6.4 Cumulative Fix Pack e Service Pack](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html).
+Per gli ultimi aggiornamenti di AEM 6.5, vedi [Adobe Experience Manager 6.4 Cumulative Fix Pack e Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it).
 
 ### Cronologia delle versioni {#version-history}
 
@@ -132,7 +132,7 @@ Ulteriori informazioni sull’installazione dei bundle sono disponibili sul sito
 
 Affinché la raccolta SRP (MSRP o DSRP) supporti la ricerca multilingue avanzata, sono necessari nuovi plug-in Solr oltre a uno schema personalizzato e alla configurazione Solr. Tutti gli elementi richiesti vengono inseriti in un file zip scaricabile.
 
-Il download MLS avanzato (noto anche come &#39;phasetwo&#39;) è disponibile dall&#39;archivio Adobe:
+Il download MLS avanzato (noto anche come `phasetwo`) è disponibile dall’archivio Adobe :
 
 * AEM-SOLR-MLS-phasetwo
 
@@ -298,13 +298,11 @@ Per copiare il materiale chiave dall&#39;autore a tutte le altre istanze, è nec
 
 #### Replica archivio {#repository-replication}
 
-Come nel caso dell’AEM 6.2 e versioni precedenti, è possibile conservare il materiale principale conservato nel deposito. Specifica la seguente proprietà di sistema al primo avvio di ogni istanza AEM (che crea l’archivio iniziale):
-
-* `-Dcom.adobe.granite.crypto.file.disable=true`
+Come nel caso dell’AEM 6.2 e versioni precedenti, è possibile conservare il materiale principale conservato nel deposito. Specificare la proprietà di sistema `-Dcom.adobe.granite.crypto.file.disable=true` al primo avvio di ogni istanza AEM (che crea l’archivio iniziale).
 
 >[!NOTE]
 >
->È importante verificare che [agente di replica su Autore](#replication-agents-on-author) è configurato correttamente.
+>Verificare che [agente di replica su Autore](#replication-agents-on-author) è configurato correttamente.
 
 Con il materiale della chiave memorizzato nell’archivio, il modo per replicare la chiave crittografica dall’istanza di authoring ad altre istanze è il seguente:
 

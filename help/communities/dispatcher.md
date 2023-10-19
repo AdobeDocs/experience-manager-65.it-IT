@@ -1,14 +1,14 @@
 ---
 title: Configurazione di Dispatcher per le community
-description: Configurare Dispatcher per AEM Communities
+description: Scopri come configurare Dispatcher per AEM Communities per garantire il corretto funzionamento dei siti della community.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '653'
 ht-degree: 12%
 
 ---
@@ -70,7 +70,7 @@ La sezione /filter del `dispatcher.any` il file è documentato in [Configurazion
 
 Questa sezione descrive le voci che potrebbero essere necessarie per il corretto funzionamento delle funzioni di Communities.
 
-I nomi delle proprietà del filtro seguono la convenzione di utilizzare un numero di quattro cifre per indicare l’ordine in cui applicare i pattern di filtro. Quando a una richiesta sono applicati più modelli di filtri, l’ultimo modello applicato è quello valido. Pertanto, il primo pattern di filtro viene spesso utilizzato per negare tutto, in modo che i seguenti pattern servano a ripristinare l’accesso in modo controllato.
+I nomi delle proprietà del filtro seguono la convenzione di utilizzare un numero di quattro cifre per indicare l’ordine in cui applicare i pattern di filtro. Quando a una richiesta sono applicati più modelli di filtro, l’ultimo modello applicato ha effetto. Pertanto, il primo pattern di filtro viene spesso utilizzato per negare tutto, in modo che i seguenti pattern servano a ripristinare l’accesso in modo controllato.
 
 Negli esempi seguenti vengono utilizzati nomi di proprietà che probabilmente devono essere modificati per adattarsi a un particolare `dispatcher.any` file.
 
@@ -89,7 +89,7 @@ Consulta anche:
 >Per ulteriori considerazioni sulla limitazione dell’accesso tramite Dispatcher, vedi [Elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html). Inoltre, leggi [Elenco di controllo della sicurezza AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) per ulteriori dettagli sulla sicurezza relativi all’installazione di AEM.
 >
 
-Le seguenti voci devono essere aggiunte alla fine della sezione /filter, specialmente dopo tutte le voci di rifiuto.
+Le seguenti voci devono essere aggiunte alla fine della sezione /filter, specialmente dopo tutte le voci negate.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->

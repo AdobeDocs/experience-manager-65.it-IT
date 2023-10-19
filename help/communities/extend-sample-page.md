@@ -1,19 +1,15 @@
 ---
 title: Aggiungi commento alla pagina di esempio
-seo-title: Add Comment to Sample Page
-description: Aggiungere commenti personalizzati a una pagina
-seo-description: Add Custom Comments to a page
-uuid: ab258960-6de2-4943-80a7-e72904c0fd8e
+description: Scopri come un’istanza del sistema di commenti di un sito web deve impostare resourceType come sistema di commenti personalizzato e includere tutte le librerie client necessarie.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -36,7 +32,7 @@ Nota le tre librerie client necessarie per il rendering e il funzionamento corre
 
 ### Aggiungere commenti personalizzati a una pagina {#add-custom-comments-to-a-page}
 
-Poiché può esistere un solo sistema di commenti per pagina, è più semplice creare una pagina di esempio come descritto nel breve [Crea una pagina di esempio](/help/communities/create-sample-page.md) esercitazione.
+Poiché può esistere un solo sistema di commenti per pagina, è più semplice creare una pagina di esempio come descritto nella descrizione [creare una pagina di esempio](/help/communities/create-sample-page.md) esercitazione.
 
 Una volta creato, entra in modalità Progettazione e rendi disponibile il gruppo di componenti Personalizzati per consentire al `Alt Comments` da aggiungere alla pagina.
 

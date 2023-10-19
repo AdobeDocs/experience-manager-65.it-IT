@@ -1,21 +1,21 @@
 ---
 title: Commenti essenziali
-description: Panoramica del componente Commenti
+description: Scopri come utilizzare il sistema di commenti (componente Commenti) e gestire i contenuti generati dagli utenti (UGC) nei post dei membri della community.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '351'
 ht-degree: 4%
 
 ---
 
 # Commenti essenziali {#comments-essentials}
 
-Questa pagina fornisce informazioni di base sull’utilizzo del sistema dei commenti (componente commenti) e opzioni per la gestione dei contenuti generati dagli utenti (UGC, User-Generated Content) generati quando i membri pubblicano commenti o risposte.
+Questa pagina fornisce le nozioni di base sull’utilizzo del sistema dei commenti (componente commenti) e le opzioni per la gestione dei contenuti generati dagli utenti (UGC) generati quando i membri pubblicano commenti o risposte.
 
 Il componente commenti stabilisce un sistema di commenti tale che ogni singolo post sia rappresentato da una componente commento (singolare). È il sistema di commenti incluso nella pagina. Il sistema di commenti crea i singoli commenti quando richiamato.
 

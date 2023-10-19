@@ -1,19 +1,15 @@
 ---
 title: Utilizzo della votazione
-seo-title: Using Voting
-description: Aggiunta del componente Votazione a una pagina
-seo-description: Adding the Voting component to a page
-uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
+description: Scopri come aggiungere il componente Votazione a una pagina che consente ai membri della community con accesso effettuato di valutare un particolare contenuto, ad esempio una risposta.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 exl-id: aa90bf1b-6053-4949-b061-232d72b80682
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 5%
+source-wordcount: '253'
+ht-degree: 4%
 
 ---
 
@@ -23,17 +19,17 @@ Il `Voting` Il componente è uno strumento utile che consente ai membri della co
 
 ## Aggiunta di voti a una pagina {#adding-voting-to-a-page}
 
-Per aggiungere una `Voting` a una pagina in modalità di authoring, utilizza il browser Componenti per individuare `Communities / Voting` e trascinarlo in una pagina, ad esempio una posizione relativa alla funzione su cui gli utenti possono votare.
+Per aggiungere una `Voting` a una pagina in modalità Autore, utilizza il browser Componenti. Individua `Communities / Voting` e trascinarlo in una pagina, ad esempio una posizione relativa alla funzione su cui gli utenti possono votare.
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando [librerie lato client richieste](essentials-voting.md#essentials-for-client-side) sono inclusi, è così che `Voting` verrà visualizzato.
+Quando [librerie lato client richieste](essentials-voting.md#essentials-for-client-side) sono inclusi, è così che `Voting` viene visualizzato.
 
 ![componente voto](assets/voting-component.png)
 
 ## Configurazione della votazione {#configuring-voting}
 
-Seleziona la inserita `Voting` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `Voting` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
 
 ![configura](assets/configure-new.png)
 
@@ -43,15 +39,15 @@ Sotto **[!UICONTROL Testi ed etichette]** , specificare le proprietà utilizzate
 
 * **[!UICONTROL Etichetta risposta positiva]**
 
-   (*Obbligatorio*) Nome della proprietà interna per una risposta positiva.
+  (*Obbligatorio*) Nome della proprietà interna per una risposta positiva.
 
 * **[!UICONTROL Etichetta risposta negativa]**
 
-   (*Obbligatorio*) Nome della proprietà interna per una risposta negativa.
+  (*Obbligatorio*) Nome della proprietà interna per una risposta negativa.
 
 * **[!UICONTROL Nome conteggio]**
 
-   (*Obbligatorio*) Nome di proprietà interno e identificabile per questa istanza di un componente voting.
+  (*Obbligatorio*) Nome di proprietà interno e identificabile per questa istanza di un componente voting.
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 

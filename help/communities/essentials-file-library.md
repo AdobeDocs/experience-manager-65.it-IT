@@ -1,25 +1,21 @@
 ---
 title: Nozioni di base sulla libreria dei file
-seo-title: File Library Essentials
-description: Utilizzo della funzione libreria di file
-seo-description: Working with the file library feature
-uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
+description: Scopri le nozioni di base sull’utilizzo della funzione Libreria file in Adobe Experience Manager Communities.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 2%
 
 ---
 
 # Nozioni di base sulla libreria dei file {#file-library-essentials}
 
-Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzione libreria file.
+Questa pagina fornisce le informazioni fondamentali per l&#39;utilizzo della funzione libreria file.
 
 ## Nozioni di base per lato client {#essentials-for-client-side}
 
@@ -56,9 +52,9 @@ Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzi
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API libreria file](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [API libreria file](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Endpoint libreria file](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Endpoint libreria file](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 

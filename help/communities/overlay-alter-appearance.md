@@ -1,17 +1,15 @@
 ---
 title: Modificare l'aspetto
-description: Modificare lo script
-uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
+description: Scopri come modificare lo script comment.hbs che è responsabile della creazione delle HTML generali di ogni commento nelle community Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -20,7 +18,7 @@ ht-degree: 0%
 
 ## Modificare lo script {#modify-the-script}
 
-Lo script comment.hbs è responsabile della creazione del HTML complessivo di ogni commento.
+Il `comment.hbs` Lo script è responsabile della creazione del HTML generale di ogni commento.
 
 Per non mostrare l&#39;avatar accanto a ogni commento pubblicato:
 

@@ -1,18 +1,14 @@
 ---
 title: Nozioni di base sui contenuti in primo piano
-seo-title: Featured Content Essentials
-description: Utilizzo dei contenuti delle funzioni
-seo-description: Working with feature content
-uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
+description: Scopri le nozioni di base sull’utilizzo dei contenuti in primo piano che desideri evidenziare in qualsiasi punto del sito della community.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 exl-id: 70b0ad6a-c891-4588-8515-449aed206805
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '120'
 ht-degree: 5%
 
 ---

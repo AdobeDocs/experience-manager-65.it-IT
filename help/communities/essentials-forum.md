@@ -1,15 +1,15 @@
 ---
 title: Nozioni di base sui forum
-description: Panoramica del forum
+description: Scopri le nozioni di base sull’utilizzo della funzione Forum nelle community Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 2%
+source-wordcount: '259'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +67,7 @@ Una struttura del sito della community che include [Funzione forum](functions.md
 Il contenuto UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
 Consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-A partire da Adobe Experience Manager 6.1 Communities, l’utilizzo di [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da Adobe Experience Manager 6.1 Communities, l’utilizzo di un’ [archivio comune](working-with-srp.md) per UGC include l’accesso programmatico a UGC indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
 

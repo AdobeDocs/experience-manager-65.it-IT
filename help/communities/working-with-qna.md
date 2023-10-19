@@ -1,19 +1,15 @@
 ---
 title: Funzione forum domande e risposte
-seo-title: Q&A Forum Feature
-description: Aggiunta della funzione di forum QnA a una pagina
-seo-description: Adding the QnA forum feature to a page
-uuid: e0d95009-0d04-4fa7-8d05-5948c4e37f08
+description: Scopri come aggiungere la funzione di forum di controllo qualità a una pagina che consente ai membri della community con accesso effettuato di porre e rispondere a domande.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1376'
 ht-degree: 9%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 9%
 
 La funzione del forum di QnA (domande e risposte) offre ai membri della community un’area in cui fare domande e rispondere. Consente ai membri di:
 
-* Crea nuove domande
+* Crea domande
 * Aggiungi immagini in linea (con supporto per il trascinamento della selezione)
 * Visualizza e rispondi alle domande
 * Cerca una domanda
@@ -49,7 +45,7 @@ Quando [librerie lato client richieste](/help/communities/qna-essentials.md#esse
 
 ### Configurazione di QnA {#configuring-qna}
 
-Seleziona la inserita `QnA` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `QnA` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
 
 ![configura](assets/configure-new.png)
 
@@ -61,110 +57,110 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti (domande)
 
 * **Consenti miniatura allegato**
 
-   Se questa opzione è selezionata, viene creata una miniatura dell&#39;immagine allegata.
+  Se questa opzione è selezionata, viene creata una miniatura dell&#39;immagine allegata.
 
 * **Dimensione max miniatura allegato**
 
-   Dimensione massima (in pixel) dell&#39;immagine miniatura dell&#39;allegato. Il valore predefinito è 800 x 800.
+  Dimensione massima (in pixel) dell&#39;immagine miniatura dell&#39;allegato. Il valore predefinito è 800 x 800.
 
 * **Dimensioni minime immagine per miniatura**
 
-   Dimensione minima (in byte) dell&#39;immagine per la generazione della miniatura per le immagini in linea. Il valore predefinito è 100000 byte (100 kb).
+  Dimensione minima (in byte) dell&#39;immagine per la generazione della miniatura per le immagini in linea. Il valore predefinito è 100000 byte (100 kb).
 
 * **Dimensione massima miniatura**
 
-   Dimensione massima (in pixel) dell’immagine miniatura per l’immagine in linea. Il valore predefinito è 800 x 800.
+  Dimensione massima (in pixel) dell’immagine miniatura per l’immagine in linea. Il valore predefinito è 800 x 800.
 
 * **Topic per pagina**
 
-   Definisce il numero di domande/post mostrati per pagina. Il valore predefinito è 10.
+  Definisce il numero di domande/post mostrati per pagina. Il valore predefinito è 10.
 
 * **Moderato**
 
-   Se questa opzione è selezionata, è necessario approvare la pubblicazione di argomenti e commenti prima di visualizzarli in un sito pubblicato. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, è necessario approvare la pubblicazione di argomenti e commenti prima di visualizzarli in un sito pubblicato. Il valore predefinito è deselezionato.
 
 * **Chiuso**
 
-   Se questa opzione è selezionata, il forum non sarà accessibile a nuove domande e commenti. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, il forum non sarà accessibile a nuove domande e commenti. Il valore predefinito è deselezionato.
 
 * **Editor Rich Text**
 
-   Se questa opzione è selezionata, gli argomenti e i commenti possono essere immessi con il markup. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, gli argomenti e i commenti possono essere immessi con il markup. Il valore predefinito è deselezionato.
 
 * **Consenti assegnazione tag**
 
-   Se questa opzione è selezionata, consenti ai membri di aggiungere etichette di tag ai propri post (vedi **Campo tag** ). Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consentire ai membri di aggiungere etichette tag ai propri post (vedere **Campo tag** ). Il valore predefinito è deselezionato.
 
 * **Consenti caricamenti file**
 
-   Se questa opzione è selezionata, consenti l&#39;aggiunta di file allegati alla domanda o al commento. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consenti l&#39;aggiunta di file allegati alla domanda o al commento. Il valore predefinito è deselezionato.
 
 * **Consenti Segui**
 
-   Se questa opzione è selezionata, includere la seguente funzionalità per i post dei forum, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, includere la seguente funzionalità per i post dei forum, che consente ai membri di essere [notificato](/help/communities/notifications.md) di nuovi posti. Il valore predefinito è deselezionato.
 
 * **Consenti blocco**
 
-   Se questa opzione è selezionata, gli argomenti del forum possono essere bloccati nella parte superiore dell&#39;elenco. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, gli argomenti del forum possono essere bloccati nella parte superiore dell&#39;elenco. Il valore predefinito è deselezionato.
 
 * **Consenti iscrizioni e-mail**
 
-   Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede di controllare Consenti seguito e [e-mail configurato](/help/communities/email.md). Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede di controllare Consenti seguito e [e-mail configurato](/help/communities/email.md). Il valore predefinito è deselezionato.
 
 * **Dimensione file massima**
 
-   Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+  Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
 * **Tipi di file consentiti**
 
-   Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è none specificato in modo che** **tutti i tipi di file siano consentiti.
+  Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è nessuno, pertanto **tutto** tipi di file consentiti.
 
 * **Dimensione massima per file immagine allegato**
 
-   Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Il numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 (2 Mb).
+  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Il numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 (2 Mb).
 
 * **Consenti risposte**
 
-   Se questa opzione è selezionata, consenti le risposte ai commenti inviati alla domanda. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consenti le risposte ai commenti inviati alla domanda. Il valore predefinito è deselezionato.
 
 * **Consenti votazione**
 
-   Se questa opzione è selezionata, includere la funzionalità Votazione con una domanda. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, includere la funzionalità Votazione con una domanda. Il valore predefinito è deselezionato.
 
 * **Consenti agli utenti di eliminare commenti e argomenti**
 
-   Se questa opzione è selezionata, consentire ai membri di eliminare i commenti e le domande pubblicati. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consentire ai membri di eliminare i commenti e le domande pubblicati. Il valore predefinito è deselezionato.
 
 * **Consenti membri privilegiati**
 
-   Se questa opzione è selezionata, solo i membri con privilegi possono creare contenuto.
+  Se questa opzione è selezionata, solo i membri con privilegi possono creare contenuto.
 
 * **Blocca i contenuti generati dagli utenti in modalità di modifica Creazione**
 
-   Se questa opzione è abilitata, blocca i contenuti generati dagli utenti durante la modifica in modalità Creazione.
+  Se questa opzione è abilitata, blocca i contenuti generati dagli utenti durante la modifica in modalità Creazione.
 
 * **Porta in alto la risposta selezionata**
 
-   Se questa opzione è selezionata, la prima risposta visualizzata è una risposta selezionata. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, la prima risposta visualizzata è una risposta selezionata. Il valore predefinito è deselezionato.
 * **Visualizza badge**
 
-   Se questa opzione è selezionata, vengono visualizzati i risultati ottenuti e assegnati [badge](/help/communities/implementing-scoring.md) con il post di blog di un membro. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, vengono visualizzati i risultati ottenuti e assegnati [badge](/help/communities/implementing-scoring.md) con il post di blog di un membro. Il valore predefinito è deselezionato.
 
 * **Consenti contenuto in primo piano**
 
-   se selezionata, l’idea può essere identificata come [contenuto in primo piano](/help/communities/featured.md). Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, l’idea è identificabile come [contenuto in primo piano](/help/communities/featured.md). Il valore predefinito è deselezionato.
 
 * **Abilita menzione**
 
-   Se questa opzione è attivata, consente agli utenti registrati della community di identificare altri membri registrati (tramite nome, cognome, nome utente) e di assegnare loro tag utilizzando la sintassi @user-name comune. Gli utenti taggati ricevono notifiche sulle loro menzioni.
+  Se questa opzione è attivata, consente agli utenti registrati della community di identificare altri membri registrati (tramite nome, cognome, nome utente) e di assegnare loro tag utilizzando la sintassi @user-name comune. Gli utenti taggati ricevono notifiche sulle loro menzioni.
 
 * **Max menzioni**
 
-   Limita il numero massimo di menzioni consentite in un post. Il valore predefinito è 10.
+  Limita il numero massimo di menzioni consentite in un post. Il valore predefinito è 10.
 
 * **Pattern menzioni interfaccia**
 
-   Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
+  Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
@@ -172,34 +168,34 @@ Sotto **Moderazione utenti** , specifica come vengono gestiti gli argomenti (dom
 
 * **Rifiuta risposte**
 
-   Se questa opzione è selezionata, i moderatori dei membri di fiducia possono rifiutare le risposte pubblicate e impedire che la risposta venga visualizzata sul forum pubblico di domande e risposte. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, i moderatori dei membri di fiducia possono rifiutare le risposte pubblicate e impedirne la visualizzazione nel forum pubblico di domande e risposte. Il valore predefinito è deselezionato.
 
 * **Chiudi/Riapri argomenti**
 
-   Se questa opzione è selezionata, i moderatori membri attendibili possono chiudere una domanda (argomento) per ulteriori modifiche e risposte e riaprire una domanda. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, i moderatori membri attendibili possono chiudere una domanda (argomento) per ulteriori modifiche e risposte e riaprire una domanda. Il valore predefinito è deselezionato.
 
 * **Sposta argomenti**
 Se questa opzione è selezionata, consenti ai moderatori lato pubblicazione di spostare le domande. Il valore predefinito è deselezionato.
 
 * **Segnala post**
 
-   Se questa opzione è selezionata, consentire ai membri di segnalare le domande o le risposte di altri utenti come inappropriate. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consentire ai membri di segnalare le domande o le risposte di altri utenti come inappropriate. Il valore predefinito è deselezionato.
 
 * **Elenco di motivi per segnalazione**
 
-   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare una domanda o una risposta come non appropriata. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare una domanda o una risposta come non appropriata. Il valore predefinito è deselezionato.
 
 * **Motivo per segnalazione personalizzato**
 
-   Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare una domanda o una risposta come non appropriata. Il valore predefinito è deselezionato.
+  Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare una domanda o una risposta come non appropriata. Il valore predefinito è deselezionato.
 
 * **Soglia moderazione**
 
-   Immetti il numero di volte in cui i membri devono segnalare una domanda o una risposta prima che il moderatore riceva una notifica. Il valore predefinito è 1 (una tantum).
+  Immetti il numero di volte in cui i membri devono segnalare una domanda o una risposta prima che il moderatore riceva una notifica. Il valore predefinito è 1 (una tantum).
 
 * **Limite segnalazione**
 
-   Immettere il numero di volte che una domanda o risposta deve essere contrassegnata prima che venga nascosta alla visualizzazione pubblica. Se è impostato su -1, la domanda o risposta contrassegnata non viene mai nascosta alla visualizzazione pubblica. Altrimenti, questo numero deve essere maggiore o uguale alla soglia di moderazione. Il valore predefinito è 5.
+  Immettere il numero di volte che una domanda o risposta deve essere contrassegnata prima che venga nascosta alla visualizzazione pubblica. Se è impostato su -1, la domanda o risposta contrassegnata non viene mai nascosta alla visualizzazione pubblica. Altrimenti, questo numero deve essere maggiore o uguale alla soglia di moderazione. Il valore predefinito è 5.
 
 #### Scheda Campo tag {#tag-field-tab}
 
@@ -207,11 +203,11 @@ Sotto **Campo tag** , i tag che possono essere applicati, se consentiti nella sc
 
 * **Namespace consentiti**
 
-   Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
+  Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
-   Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore **-**1 indica nessun limite. Il valore predefinito è 0.
+  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore **-**1 indica nessun limite. Il valore predefinito è 0.
 
 #### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
@@ -219,15 +215,15 @@ Sotto **Impostazioni di ordinamento** , specificare l&#39;ordinamento dei commen
 
 * **Ordina per**
 
-   Seleziona tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Il valore predefinito è `Newest, Oldest, Last Updated`.
+  Seleziona tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Il valore predefinito è `Newest, Oldest, Last Updated`.
 
 * **Imposta come predefinito**
 
-   Tirare verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come impostazione predefinita. Il valore predefinito è `Newest`.
+  Tirare verso il basso per selezionare una delle opzioni di ordinamento selezionate da visualizzare come impostazione predefinita. Il valore predefinito è `Newest`.
 
 * **Seleziona le opzioni di tempo per l&#39;ordinamento Analytics**
 
-   Elenca a discesa per selezionare una delle opzioni `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Il valore predefinito è `All`.
+  Elenca a discesa per selezionare una delle opzioni `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Il valore predefinito è `All`.
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 
