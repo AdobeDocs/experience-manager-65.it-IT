@@ -1,20 +1,16 @@
 ---
 title: Componenti community
-seo-title: Communities Components
-description: Aggiunta di funzioni per la community a qualsiasi sito AEM
-seo-description: Adding community features to any AEM site
-uuid: 76824820-81e9-4192-8df3-dff55eaf144e
+description: Scopri quando AEM Communities viene concesso in licenza, puoi aggiungere funzioni delle community a qualsiasi sito AEM utilizzando gli strumenti standard di creazione AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 30%
+source-wordcount: '293'
+ht-degree: 27%
 
 ---
 
@@ -80,8 +76,8 @@ Consulta anche la sezione [Guida ai componenti della community](/help/communitie
 
 ## Documentazione delle community correlate {#related-communities-documentation}
 
-* Visita [Distribuzione delle community](/help/communities/deploy-communities.md) per informazioni sulle distribuzioni consigliate.
+* Visita [Distribuzione delle community](/help/communities/deploy-communities.md) dove puoi scoprire le distribuzioni consigliate.
 
 * Visita [Amministrazione di siti community](/help/communities/administer-landing.md) informazioni sulla creazione di un sito community, sulla configurazione di modelli di sito community, sulla moderazione del contenuto della community, sulla gestione dei membri e sulla configurazione dei messaggi.
 
-* Visita [Comunità in via di sviluppo](/help/communities/communities.md) per scoprire il framework dei componenti social (SCF) e personalizzare i componenti e le funzioni di Communities.
+* Visita [Comunità in via di sviluppo](/help/communities/communities.md) dove puoi scoprire il framework dei componenti social (SCF) e personalizzare i componenti e le funzioni di Communities.

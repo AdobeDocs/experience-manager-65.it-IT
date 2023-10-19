@@ -1,19 +1,15 @@
 ---
 title: Utilizzo di Mi piace
-seo-title: Using Liking
-description: Aggiunta e configurazione del componente Mi piace
-seo-description: Adding and configuring the Liking component
-uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
+description: Scopri come aggiungere e configurare il componente Mi piace in modo che gli utenti possano esprimere un’opinione su un particolare contenuto, ad esempio un commento.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 exl-id: 226fa91c-4a12-4586-b694-1a52fa2ba358
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 5%
+source-wordcount: '247'
+ht-degree: 4%
 
 ---
 
@@ -27,17 +23,17 @@ Per aggiungere una `Liking` a una pagina in modalità di authoring, utilizza il 
 
 * `Communities / Liking`
 
-e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione desiderata dagli utenti.
+Trascinalo in posizione su una pagina, ad esempio una posizione relativa alla funzione desiderata dagli utenti.
 
 Per informazioni necessarie, visitare il sito [Nozioni di base sui componenti community](basics.md).
 
-Quando [librerie lato client richieste](essentials-liking.md#essentials-for-client-side) sono inclusi, è così che `Liking` verrà visualizzato.
+Quando [librerie lato client richieste](essentials-liking.md#essentials-for-client-side) sono inclusi, è così che `Liking` viene visualizzato.
 
 ![componente-gradimento](assets/liking-component.png)
 
 ## Configurazione di Mi piace {#configuring-liking}
 
-Seleziona la inserita `Liking` per accedere e selezionare il `Configure` che apre la finestra di dialogo per modifica.
+Seleziona la inserita `Liking` in modo da poter accedere e selezionare `Configure` che apre la finestra di dialogo per modifica.
 
 ![configure-new](assets/configure-new.png)
 
@@ -47,21 +43,21 @@ Sotto **[!UICONTROL Testi ed etichette]** , specifica le proprietà utilizzate p
 
 * **[!UICONTROL Etichetta risposta positiva]**
 
-   (*Obbligatorio*) Nome della proprietà per una risposta positiva.
+  (*Obbligatorio*) Nome della proprietà per una risposta positiva.
 
 * **[!UICONTROL Etichetta risposta negativa]**
 
-   (*Obbligatorio*) Nome della proprietà per una risposta negativa.
+  (*Obbligatorio*) Nome della proprietà per una risposta negativa.
 
 * **[!UICONTROL Nome conteggio]**
 
-   (*Obbligatorio*) Nome di proprietà interno e identificabile per questa istanza di un componente voting.
+  (*Obbligatorio*) Nome di proprietà interno e identificabile per questa istanza di un componente voting.
 
 ## Esperienza visitatore del sito {#site-visitor-experience}
 
 ### Membri {#members}
 
-I membri possono cambiare il loro tipo in qualsiasi momento.
+I membri possono cambiare il proprio Mi piace in qualsiasi momento.
 
 ### Anonimo {#anonymous}
 

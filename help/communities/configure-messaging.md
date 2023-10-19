@@ -1,19 +1,15 @@
 ---
 title: Funzione di messaggistica
-seo-title: Messaging Feature
-description: Configurazione dei componenti di messaggistica
-seo-description: Configuring Messaging components
-uuid: 8b99ded1-aec2-40c9-82d5-e2e404f614ca
+description: Scopri come configurare la funzione Messaggistica di AEM Communities per consentire ai membri della community di interagire tra loro in modo più privato.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '954'
 ht-degree: 4%
 
 ---
@@ -24,7 +20,7 @@ Oltre alle interazioni pubblicamente visibili che si verificano nei forum e nei 
 
 Questa funzione può essere inclusa quando [sito community](/help/communities/overview.md#communitiessites) viene creato.
 
-La funzione di messaggistica consente di:
+La funzione di messaggistica consente di effettuare le seguenti operazioni:
 
 **A** - inviare un messaggio a uno o più membri della community
 
@@ -77,27 +73,27 @@ Una volta annullata l’ereditarietà, è possibile selezionare l’icona di con
 
 * **Selezione servizio**
 
-   (*Obbligatorio*) Impostate questo valore sul valore della proprietà **`serviceSelector.name`** dal [Servizio operazioni di messaggistica di AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+  (*Obbligatorio*) Impostate questo valore sul valore della proprietà **`serviceSelector.name`** dal [Servizio operazioni di messaggistica di AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 * **Componi pagina**
 
-   (*Obbligatorio*) Pagina da aprire quando un membro fa clic su **`Reply`** pulsante. La pagina di destinazione deve contenere **Componi messaggio** modulo.
+  (*Obbligatorio*) Pagina da aprire quando un membro fa clic su **`Reply`** pulsante. La pagina di destinazione deve contenere **Componi messaggio** modulo.
 
 * **Rispondi/Visualizza come risorsa**
 
-   Se questa opzione è selezionata, l’URL di risposta e l’URL di visualizzazione faranno riferimento a una risorsa; in caso contrario, i dati vengono trasmessi come parametri di query nell’URL.
+  Se questa opzione è selezionata, l’URL di risposta e l’URL di visualizzazione fanno riferimento a una risorsa, altrimenti i dati vengono trasmessi come parametri di query nell’URL.
 
 * **Modulo di visualizzazione profilo**
 
-   Modulo di profilo da utilizzare per visualizzare il profilo mittenti.
+  Modulo di profilo da utilizzare per visualizzare il profilo mittenti.
 
 * **Cartella cestino**
 
-   Se questa opzione è selezionata, in questo componente Elenco messaggi vengono visualizzati solo i messaggi contrassegnati come eliminati (cestino).
+  Se questa opzione è selezionata, in questo componente Elenco messaggi vengono visualizzati solo i messaggi contrassegnati come eliminati (cestino).
 
 * **Percorsi cartelle**
 
-   (*Obbligatorio*) Con riferimento ai valori impostati per **inbox.path.name** e **sentitems.path.name** nel [Servizio operazioni di messaggistica di AEM Communities](/help/communities/messaging.md#messaging-operations-service). Durante la configurazione per un `Inbox`, aggiungi una voce utilizzando il valore di **inbox.path.name**. Durante la configurazione per un `Outbox`, aggiungi una voce utilizzando il valore di **sentitems.path.name**. Durante la configurazione di per `Trash`, aggiungi due voci con entrambi i valori.
+  (*Obbligatorio*) Con riferimento ai valori impostati per **inbox.path.name** e **sentitems.path.name** nel [Servizio operazioni di messaggistica di AEM Communities](/help/communities/messaging.md#messaging-operations-service). Durante la configurazione per un `Inbox`, aggiungi una voce utilizzando il valore di **inbox.path.name**. Durante la configurazione per un `Outbox`, aggiungi una voce utilizzando il valore di **sentitems.path.name**. Durante la configurazione di per `Trash`, aggiungi due voci con entrambi i valori.
 
 #### Scheda Visualizzazione {#display-tab}
 
@@ -105,31 +101,31 @@ Una volta annullata l’ereditarietà, è possibile selezionare l’icona di con
 
 * **Pulsante Segna come già letto**
 
-   Se questa opzione è selezionata, visualizza una `Read`che consente di contrassegnare un messaggio come letto.
+  Se questa opzione è selezionata, visualizza una `Read`che consente di contrassegnare un messaggio come letto.
 
 * **Pulsante Segna come da leggere**
 
-   Se questa opzione è selezionata, visualizza una `Mark Unread` che consente di contrassegnare un messaggio come letto.
+  Se questa opzione è selezionata, visualizza una `Mark Unread` che consente di contrassegnare un messaggio come letto.
 
 * **Pulsante Elimina**
 
-   Se questa opzione è selezionata, visualizza una `Delete` che consente di contrassegnare un messaggio come letto. Duplica la funzionalità di eliminazione se **`Message Options`** è selezionato anche.
+  Se questa opzione è selezionata, visualizza una `Delete` che consente di contrassegnare un messaggio come letto. Duplica la funzionalità di eliminazione se **`Message Options`** è selezionato anche.
 
 * **Opzioni messaggio**
 
-   Se questa opzione è selezionata, visualizza **`Reply`**, **`Reply All`**, **`Forward`** e **`Delete`** pulsanti che consentono di inviare o eliminare nuovamente un messaggio. Duplica la funzionalità di eliminazione se **`Delete Button`** è selezionato anche.
+  Se questa opzione è selezionata, visualizza **`Reply`**, **`Reply All`**, **`Forward`**, e **`Delete`** pulsanti che consentono di inviare o eliminare nuovamente un messaggio. Duplica la funzionalità di eliminazione se **`Delete Button`** è selezionato anche.
 
 * **Messaggi per pagina**
 
-   Il numero specificato è il numero massimo di messaggi visualizzati per pagina in uno schema di impaginazione. Se non viene specificato alcun numero (lasciato vuoto), vengono visualizzati tutti i messaggi e non è presente alcuna impaginazione.
+  Il numero specificato è il numero massimo di messaggi visualizzati per pagina in uno schema di impaginazione. Se non viene specificato alcun numero (lasciato vuoto), vengono visualizzati tutti i messaggi e non è presente alcuna impaginazione.
 
 * **Pattern per marca temporale**
 
-   Fornisci modelli di marca temporale per una o più lingue. Il valore predefinito è en, de, fr, it, es, ja, zh_CN, ko_KR.
+  Fornisci modelli di marca temporale per una o più lingue. Il valore predefinito è en, de, fr, it, es, ja, zh_CN, ko_KR.
 
 * **Visualizza utente**
 
-   Scegli una delle seguenti opzioni **`Sender`** o **`Recipients`** per determinare se visualizzare il mittente o i destinatari.
+  Scegli una delle seguenti opzioni **`Sender`** o **`Recipients`** in modo da poter determinare se visualizzare il mittente o i destinatari.
 
 ### Configura messaggio di composizione {#configure-compose-message}
 
@@ -151,23 +147,23 @@ Una volta annullata l’ereditarietà, è possibile selezionare l’icona di con
 
 * **URL di reindirizzamento**
 
-   Immetti l’URL della pagina visualizzata dopo l’invio del messaggio. Esempio: `../messaging.html`.
+  Immetti l’URL della pagina visualizzata dopo l’invio del messaggio. Esempio: `../messaging.html`.
 
 * **Annulla URL**
 
-   Inserisci l’URL della pagina visualizzata se il mittente annulla il messaggio. Esempio: `../messaging.html`.
+  Inserisci l’URL della pagina visualizzata se il mittente annulla il messaggio. Esempio: `../messaging.html`.
 
 * **Lunghezza massima per l&#39;oggetto del messaggio**
 
-   Numero massimo di caratteri consentito nel campo Oggetto. Ad esempio, 500. Il valore predefinito non è un limite.
+  Numero massimo di caratteri consentito nel campo Oggetto. Ad esempio, 500. Il valore predefinito non è un limite.
 
 * **Lunghezza massima del corpo del messaggio**
 
-   Numero massimo di caratteri consentito nel campo Contenuto. Ad esempio, 10000. Il valore predefinito non è un limite.
+  Numero massimo di caratteri consentito nel campo Contenuto. Ad esempio, 10000. Il valore predefinito non è un limite.
 
 * **Selezione servizio**
 
-   (*Obbligatorio*) Impostate questo valore sul valore della proprietà **`serviceSelector.name`** dal [Servizio operazioni di messaggistica di AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+  (*Obbligatorio*) Impostate questo valore sul valore della proprietà **`serviceSelector.name`** dal [Servizio operazioni di messaggistica di AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 #### Scheda Visualizzazione {#display-tab-1}
 
@@ -175,32 +171,32 @@ Una volta annullata l’ereditarietà, è possibile selezionare l’icona di con
 
 * **Mostra campo oggetto**
 
-   Se questa opzione è selezionata, mostra `Subject` e abilitare l’aggiunta di un oggetto al messaggio. Il valore predefinito non è selezionato.
+  Se questa opzione è selezionata, mostra `Subject` e abilitare l’aggiunta di un oggetto al messaggio. Il valore predefinito non è selezionato.
 
 * **Etichetta oggetto**
 
-   Inserisci il testo da visualizzare accanto al `Subject` campo. Il valore predefinito è `Subject`.
+  Immettere il testo che si desidera visualizzare accanto al `Subject` campo. Il valore predefinito è `Subject`.
 
 * **Mostra campo Allega file**
 
-   Se questa opzione è selezionata, mostra `Attachment` e abilitare l’aggiunta di allegati al messaggio. Il valore predefinito non è selezionato.
+  Se questa opzione è selezionata, mostra `Attachment` e abilitare l’aggiunta di allegati al messaggio. Il valore predefinito non è selezionato.
 
 * **Etichetta Allega file**
 
-   Inserisci il testo da visualizzare accanto al `Attachment` campo. Il valore predefinito è **`Attach File`**.
+  Immettere il testo che si desidera visualizzare accanto al `Attachment` campo. Il valore predefinito è **`Attach File`**.
 
 * **Mostra campo contenuto**
 
-   Se questa opzione è selezionata, mostra `Content` e abilitare l’aggiunta di un corpo del messaggio. Il valore predefinito non è selezionato.
+  Se questa opzione è selezionata, mostra `Content` e abilitare l’aggiunta di un corpo del messaggio. Il valore predefinito non è selezionato.
 
 * **Etichetta contenuto**
 
-   Inserisci il testo da visualizzare accanto al `Content` campo. Il valore predefinito è **`Body`**.
+  Immettere il testo che si desidera visualizzare accanto al `Content` campo. Il valore predefinito è **`Body`**.
 
 * **Con editor Rich Text**
 
-   Se questa opzione è selezionata, indica l&#39;utilizzo di una casella di testo Contenuto personalizzata con il relativo editor Rich Text. Il valore predefinito non è selezionato.
+  Se questa opzione è selezionata, indica l&#39;utilizzo di una casella di testo Contenuto personalizzata con il relativo editor Rich Text. Il valore predefinito non è selezionato.
 
 * **Pattern per marca temporale**
 
-   Fornisci modelli di marca temporale per una o più lingue. Il valore predefinito è en, de, fr, it, es, ja, zh_CN, ko_KR.
+  Fornisci modelli di marca temporale per una o più lingue. Il valore predefinito è en, de, fr, it, es, ja, zh_CN, ko_KR.

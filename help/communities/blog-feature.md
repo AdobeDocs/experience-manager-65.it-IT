@@ -1,17 +1,15 @@
 ---
 title: Funzione blog
-description: Informazioni community in formato di inserimento nel diario
-uuid: 7323063f-81e8-45c3-9035-bf7df6124830
+description: Scopri in che modo la funzione blog supporta la fornitura di informazioni sulla community in un formato di diario. Le voci vengono effettuate nell’ambiente di pubblicazione da utenti autorizzati.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1670'
 ht-degree: 7%
 
 ---
@@ -133,7 +131,7 @@ Sotto **Impostazioni** , specificare le funzioni di base del blog:
 
 * **Consenti assegnazione tag**
 
-  Se questa opzione è selezionata, consenti ai membri di aggiungere etichette di tag ai propri post (vedi **Campo tag** ). L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è selezionata, consentire ai membri di aggiungere etichette tag ai propri post (vedere **Campo tag** ). L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti caricamenti file**
 
@@ -227,7 +225,7 @@ Sotto **Moderazione utenti** , specificare le impostazioni di moderazione:
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Sotto **Campo tag** , specificare quali tag possono essere applicati se **Consenti assegnazione tag** è il controllo della **Impostazioni** scheda :
+Sotto **Campo tag** , specificare quali tag possono essere applicati se **Consenti assegnazione tag** è controllato il **Impostazioni** scheda :
 
 * **Namespace consentiti**
 
