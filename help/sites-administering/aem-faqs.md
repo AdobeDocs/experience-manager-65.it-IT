@@ -1,14 +1,8 @@
 ---
 title: Domande frequenti su AEM
-seo-title: AEM 6.4 frequently asked questions
 description: Utilizza queste domande frequenti per comprendere, configurare e risolvere i problemi relativi ai flussi di lavoro o ai problemi più comuni in AEM.
-seo-description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
-uuid: 17d34923-f1ce-463b-8e9d-a713edcce51b
-contentOwner: jsyal
-discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
-docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 0%
@@ -42,7 +36,7 @@ Visualizza `Initiator` per determinare quale fosse l’iniziatore di una richies
 
 Per creare la funzione di copia in lingua, gli autori dei contenuti devono disporre delle autorizzazioni all’indirizzo `/content/projects` posizione.
 
-Se uno richiede che anche gli autori gestiscano i progetti, la soluzione consiste nell’aggiungere l’autore a `project-administrators` gruppo.
+Se uno richiede che anche gli autori gestiscano i progetti, la soluzione consiste nell’aggiungere l’autore a `projects-administrators` gruppo.
 
 #### Come si modifica il formato durante la creazione della copia in lingua per un progetto? {#how-to-change-the-format-while-creating-language-copy-for-a-project}
 
@@ -84,11 +78,11 @@ Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’int
 
 #### Esiste una buona risorsa che evidenzia le caratteristiche principali per l’aggiornamento a AEM 6.4? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-Fare riferimento a [Perché aggiornare l’AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) che descrive il raggruppamento di alto livello delle funzioni chiave per i clienti che intendono effettuare l’aggiornamento all’ultima versione di Adobe Experience Manager.
+Fare riferimento a [Perché aggiornare l’AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) che descrive il raggruppamento ad alto livello delle funzioni chiave per i clienti che intendono effettuare l’aggiornamento all’ultima versione di Adobe Experience Manager.
 
 ## Risorse {#assets}
 
-### Perché il flusso di lavoro di Assets si ripete durante il caricamento di file MP4 (ad esempio, utilizzando il metodo di trascinamento della selezione)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
+### Perché il flusso di lavoro Assets si ripete durante il caricamento di file MP4 (ad esempio, utilizzando il metodo di trascinamento della selezione)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
 Se l’utente non dispone delle autorizzazioni di eliminazione per il caricamento dei file filmato nel nodo della risorsa, i nodi di eliminazione non riescono e il caricamento viene riavviato.
 
@@ -97,7 +91,7 @@ Se l’utente non dispone delle autorizzazioni di eliminazione per il caricament
 Quando crei una copia per lingua tramite l’interfaccia utente touch (**Riferimenti** -> **Aggiorna copia per lingua**), viene creata una nuova cartella DAM nella nuova lingua e da qui viene fatto riferimento alle risorse.
 
 Impostazione predefinita per le configurazioni OOTB. È possibile impostare **Traduci risorse di pagina** = **Non tradurre** nelle configurazioni di traduzione.
-Per AEM 6.4, **Strumenti** > **Cloud Services** > **Servizi cloud di traduzione**.
+Per AEM 6.4, **Strumenti** > **Cloud Service** > **Servizi cloud di traduzione**.
 
 #### Come disattivare una componente AEM che causa una crescita esponenziale per il SegmentStore AEM (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 

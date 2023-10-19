@@ -1,16 +1,8 @@
 ---
 title: Progetti
-seo-title: Projects
 description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso ne semplifica la gestione.
-seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
-uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: projects
-content-type: reference
-discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
-docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 34%
@@ -223,7 +215,7 @@ Tutti i progetti supportano i seguenti ruoli predefiniti che consentono di ammin
 |---|---|---|---|
 | Osservatore | Un utente con questo ruolo può visualizzare i dettagli del progetto, compreso lo stato. | Autorizzazioni di sola lettura per un progetto | `workflow-users` gruppo |
 | Editor | Un utente con questo ruolo può caricare e modificare il contenuto di un progetto. | Accesso in lettura e scrittura a un progetto, ai metadati associati e alle risorse correlate<br>Privilegi per caricare un elenco di foto, servizi fotografici, rivedere e approvare le risorse<br>Autorizzazioni di scrittura su `/etc/commerce`<br>Autorizzazioni di modifica per un progetto specifico | `workflow-users` gruppo |
-| Proprietario | Un utente con questo ruolo può creare un progetto, avviare il lavoro in un progetto e spostare le risorse approvate nella cartella di produzione. Il proprietario può visualizzare ed eseguire anche tutte le altre attività del progetto. | Autorizzazioni di scrittura su `/etc/commerce` | `dam-users` per poter creare un progetto<br>`project-administrators` per creare un progetto e spostare le risorse |
+| Proprietario | Un utente con questo ruolo può creare un progetto, avviare il lavoro in un progetto e spostare le risorse approvate nella cartella di produzione. Il proprietario può visualizzare ed eseguire anche tutte le altre attività del progetto. | Autorizzazioni di scrittura su `/etc/commerce` | `dam-users` per poter creare un progetto<br>`projects-administrators` per creare un progetto e spostare le risorse |
 
 Per i progetti creativi, vengono forniti anche ruoli aggiuntivi come fotografi. Puoi utilizzare questi ruoli per derivare ruoli personalizzati per un progetto specifico.
 
