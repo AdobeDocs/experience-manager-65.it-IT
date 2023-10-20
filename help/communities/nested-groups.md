@@ -1,15 +1,15 @@
 ---
 title: Authoring di gruppi nidificati
-description: Creare gruppi nidificati
+description: Scopri come creare gruppi nidificati per un sito di Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '600'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ La funzione gruppi viene visualizzata come una cartella in cui vengono create le
 
 ## Crea gruppo principale di arti {#create-main-arts-group}
 
-Questo gruppo può essere creato perché la struttura del sito per il coinvolgimento include una funzione gruppi. La configurazione della funzione nel `Reference Template` consente per impostazione predefinita la selezione di qualsiasi modello di gruppo abilitato. Pertanto, il modello scelto per questo nuovo gruppo è `Reference Group`.
+Questo gruppo può essere creato perché la struttura del sito per il coinvolgimento include la funzione di un gruppo. La configurazione della funzione nel `Reference Template` consente per impostazione predefinita la selezione di qualsiasi modello di gruppo abilitato. Pertanto, il modello scelto per questo nuovo gruppo è `Reference Group`.
 
 Queste console sono simili alla console Siti di Communities.
 
@@ -118,7 +118,7 @@ Il `arts` il gruppo deve contenere anche `groups` ma è vuota e consente di crea
    * Modello: `Reference Group`
    * Appartenenza: seleziona `Restricted Membership`, gruppo segreto, visibile solo ai membri invitati. Ad esempio, invita [utente demo](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
-Aggiorna la pagina in modo da visualizzare tutti e tre i gruppi nidificati (comunità secondarie).
+Aggiorna la pagina in modo da visualizzare tutti e tre i gruppi nidificati (sottocomunità).
 
 Per passare ai gruppi nidificati dalla console Siti community:
 

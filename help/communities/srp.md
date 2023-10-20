@@ -1,14 +1,14 @@
 ---
 title: Panoramica del provider di risorse di archiviazione
-description: Archiviazione comune per community
+description: Scopri come i contenuti community, o contenuti generati dagli utenti (UGC, User-Generated Content), vengono memorizzati in un semplice archivio comune fornito da un provider di risorse di archiviazione (SRP, Storage Resource Provider).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-A partire da Adobe Experience Manager (AEM) Communities 6.1, i contenuti community, comunemente denominati contenuti generati dagli utenti (UGC, User-Generated Content), sono memorizzati in un unico archivio comune fornito da un [provider di risorse di archiviazione](working-with-srp.md) (SRP)
+A partire da Adobe Experience Manager (AEM) Communities 6.1, i contenuti della community, comunemente denominati contenuti generati dagli utenti (UGC, User-Generated Content), sono memorizzati in un unico archivio comune fornito da un [provider di risorse di archiviazione](working-with-srp.md) (SRP)
 
 Esistono diverse opzioni SRP, tutte accessibili da UGC tramite una nuova interfaccia AEM Communities, la [API SocialResourceProvider](srp-and-ugc.md) (API SRP), che include tutte le operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD).
 
@@ -45,7 +45,7 @@ Questo standard definisce un modello dati e un&#39;interfaccia di programmazione
 Un’implementazione del JCR è l’archivio dell’AEM, Oak.
 
 **Apache Jackrabbit Oak**
-[Oak](../../help/sites-deploying/platform.md) è un’implementazione di JCR 2.0, un sistema di storage dei dati progettato per applicazioni incentrate sui contenuti. Si tratta di un tipo di database gerarchico progettato per i dati non strutturati e semistrutturati. L’archivio memorizza non solo il contenuto rivolto all’utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall’applicazione. L’interfaccia utente per l’accesso al contenuto è [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+[Oak](../../help/sites-deploying/platform.md) è un’implementazione di JCR 2.0, un sistema di storage dei dati progettato per applicazioni incentrate sui contenuti. Si tratta di un tipo di database gerarchico progettato per i dati non strutturati e semistrutturati. L’archivio memorizza non solo il contenuto rivolto all’utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall’applicazione. L’interfaccia utente per l’accesso al contenuto è [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md).
 
 Sia JCR che Oak vengono in genere utilizzati per fare riferimento all’archivio AEM.
 
@@ -67,7 +67,7 @@ Quando UGC viene salvato nello storage condiviso, esiste una singola istanza di 
 
 ### ASRP {#asrp}
 
-Se è presente ASRP, UGC non viene memorizzato in JCR, ma in un servizio cloud ospitato e gestito da Adobe. Le UGC memorizzate in ASRP potrebbero non essere visualizzate con CRXDE Lite o non essere accessibili utilizzando l’API JCR.
+Se è presente ASRP, UGC non viene memorizzato in JCR, ma in un servizio cloud ospitato e gestito da Adobe. Le UGC memorizzate in ASRP potrebbero non essere visualizzate con CRXDE Liti o non essere accessibili utilizzando l’API JCR.
 
 Consulta [ASRP - Provider risorsa di archiviazione Adobe](asrp.md).
 
@@ -77,7 +77,7 @@ ASRP utilizza Adobe Cloud per le query.
 
 ### MSRP {#msrp}
 
-Se è presente, MSRP, UGC non è memorizzato in JCR, ma in MongoDB. Le UGC memorizzate in MSRP potrebbero non essere visualizzate con CRXDE Lite o non essere accessibili utilizzando l’API JCR.
+Se è presente, MSRP, UGC non è memorizzato in JCR, ma in MongoDB. Le UGC memorizzate in MSRP potrebbero non essere visualizzate con CRXDE Liti o non essere accessibili utilizzando l’API JCR.
 
 Consulta [MSRP - Provider risorsa di archiviazione MongoDB](msrp.md).
 
@@ -91,9 +91,9 @@ JSRP è il provider predefinito per l’accesso a tutti i contenuti generati dag
 
 Consulta [JSRP - Provider risorsa di archiviazione JCR](jsrp.md).
 
-Se è presente JSRP, mentre UGC è memorizzato in JCR e accessibile tramite l’API CRXDE Lite e JCR, si consiglia di non utilizzare mai l’API JCR per farlo, altrimenti le modifiche future potrebbero influenzare il codice personalizzato.
+Se è presente JSRP mentre UGC è memorizzato in JCR ed è accessibile nelle API CRXDE Liti e JCR, l’Adobe consiglia di non utilizzare mai l’API JCR a tale scopo. In tal caso, le modifiche future potrebbero influire sul codice personalizzato.
 
-Inoltre, l’archivio per gli ambienti di authoring e pubblicazione non è condiviso. Anche se un cluster di istanze di pubblicazione genera un archivio di pubblicazione condiviso, l’UGC immesso al momento della pubblicazione non sarà visibile nell’autore, pertanto non sarà possibile gestire l’UGC dall’autore. L’UGC viene mantenuto solo nell’archivio AEM (JCR) dell’istanza in cui è stato inserito.
+Inoltre, l’archivio per gli ambienti Author e Publish non è condiviso. Anche se un cluster di istanze di pubblicazione genera un archivio di pubblicazione condiviso, l’UGC immesso al momento della pubblicazione non è visibile nell’istanza di authoring, pertanto non è possibile gestirlo dall’istanza di authoring. L’UGC viene mantenuto solo nell’archivio AEM (JCR) dell’istanza in cui è stato inserito.
 
 JSRP utilizza gli indici Oak per le query.
 
@@ -104,7 +104,7 @@ I nodi shadow, che imitano il percorso di UGC, esistono nell’archivio locale p
 1. [Controllo degli accessi (ACL)](#for-access-control-acls)
 1. [Risorse non esistenti (NER)](#for-non-existing-resources-ners)
 
-Indipendentemente dall’implementazione SRP, l’UGC effettivo *non *sarà visibile nella stessa posizione del nodo ombra.
+Indipendentemente dall’implementazione SRP, l’UGC effettivo è *non* visibile nella stessa posizione del nodo ombra.
 
 ### Per il controllo degli accessi (ACL) {#for-access-control-acls}
 

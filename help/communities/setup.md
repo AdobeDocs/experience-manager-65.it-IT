@@ -1,18 +1,14 @@
 ---
 title: Configurazione iniziale
-seo-title: Initial Setup
-description: Impostazione delle community
-seo-description: Setting up Communities
-uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
+description: Scopri come configurare inizialmente le community Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
@@ -21,9 +17,9 @@ ht-degree: 2%
 
 ## Avvia istanze di authoring e pubblicazione {#start-author-and-publish-instances}
 
-A scopo di sviluppo e dimostrazione, sarà necessario eseguire un’istanza Author e una Publish.
+A scopo di sviluppo e dimostrazione, è necessario eseguire un’istanza Author e una Publish.
 
-Per farlo, seguire le istruzioni di base dell’AEM [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) istruzioni, che si tradurranno in:
+Per farlo, segui il Adobe Experience Manager di base (AEM) [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) istruzioni, che comportano quanto segue:
 
 * Ambiente di authoring su [localhost:4502](Http://localhost:4502/)
 * Ambiente di pubblicazione su [localhost:4503](Http://localhost:4503/)
@@ -68,11 +64,11 @@ Consulta [Configurazione dell’e-mail](email.md).
 
 ## Abilita il servizio tunnel {#enable-the-tunnel-service}
 
-Durante la creazione di un sito community nell&#39;ambiente di authoring, il servizio tunnel consente di assegnare ruoli a membri della community trusted registrati nell&#39;ambiente di pubblicazione. Il servizio di tunnel consente anche l&#39;accesso ai membri della comunità dal [Console membri e gruppi](members.md) nell’ambiente di authoring.
+Quando si crea un sito community nell&#39;ambiente di authoring, il servizio tunnel consente di assegnare ruoli a membri community attendibili registrati nell&#39;ambiente di pubblicazione. Il servizio di tunnel consente anche l&#39;accesso ai membri della comunità dal [Console membri e gruppi](members.md) nell’ambiente di authoring.
 
-La convenzione è destinata ai membri e ai gruppi di membri creati nell’ambiente di pubblicazione per *non* nell’ambiente di authoring. Per ulteriori informazioni, consulta [Gestione di utenti e gruppi di utenti](users.md).
+La convenzione prevede che i membri e i gruppi membri creati nell&#39;ambiente di pubblicazione debbano *non* nell’ambiente di authoring. Per ulteriori informazioni, consulta [Gestione di utenti e gruppi di utenti](users.md).
 
-Per istruzioni semplici per abilitare il servizio tunnel su un **autore** istanza, vedi [Servizio tunnel](deploy-communities.md#tunnel-service-on-author).
+Per istruzioni semplici per abilitare il servizio tunnel su un **Autore** istanza, vedi [Servizio tunnel](deploy-communities.md#tunnel-service-on-author).
 
 ## Ruolo di amministratore community {#community-administrator-role}
 
@@ -128,7 +124,7 @@ Consulta [Accesso social network con Facebook e Twitter](social-login.md).
 
 ## Creare tag tutorial {#create-tutorial-tags}
 
-Crea i tag da utilizzare per le esercitazioni coinvolgenti, utilizzando lo spazio dei nomi tag di `Tutorial`.
+Crea i tag in modo da poterli utilizzare per le esercitazioni di coinvolgimento, utilizzando lo spazio dei nomi tag di `Tutorial`.
 
 Utilizza il [Console assegnazione tag](../../help/sites-administering/tags.md#tagging-console) per creare i seguenti tag:
 

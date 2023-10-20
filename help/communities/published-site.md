@@ -1,19 +1,15 @@
 ---
 title: Esperienza del sito pubblicato
-seo-title: Experience the Published Site
-description: Accedere a un sito pubblicato
-seo-description: Browse to a published site
-uuid: 44594e9e-27ad-475d-953d-3611b04f0df8
+description: Scopri come passare all’URL visualizzato durante la creazione di un sito, ma sul server di pubblicazione.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -48,7 +44,7 @@ Un visitatore anonimo del sito visualizza quanto segue nell’interfaccia utente
 * Banner del brand
 * Collegamenti del menu per i componenti inclusi nel modello del sito di riferimento.
 
-Se si selezionano vari collegamenti, questi saranno in modalità di sola lettura.
+Se si selezionano vari collegamenti, si noterà che sono in modalità di sola lettura.
 
 ### Impedisci accesso anonimo su JCR {#prevent-anonymous-access-on-jcr}
 
@@ -86,17 +82,17 @@ Nell’angolo superiore destro, seleziona `Log in`, e firmare con nome utente (a
 Dopo aver effettuato l&#39;accesso come membro della community registrato, notare le seguenti voci di menu per fare clic ed esplorare il sito della community:
 
 * **Profilo** consente di visualizzare e modificare il profilo.
-* [Messaggi](/help/communities/configure-messaging.md) L’opzione ti indirizza alla sezione direct messaging, dove puoi:
+* [Messaggi](/help/communities/configure-messaging.md) L’opzione ti indirizza alla sezione direct messaging, dove puoi effettuare le seguenti operazioni:
 
    1. Visualizza i messaggi diretti ricevuti (Posta in arrivo), inviati (Elementi inviati) ed eliminati (Cestino).
-   1. Creare nuovi messaggi diretti da inviare a singoli utenti e gruppi.
+   1. Comporre nuovi messaggi diretti in modo da poter inviare a singoli utenti e gruppi.
 
 * [Notifiche](/help/communities/notifications.md) L’opzione ti reindirizza alla sezione notifiche, dove puoi visualizzare gli eventi di tuo interesse e modificare le impostazioni delle notifiche.
 * [Amministrazione](/help/communities/published-site.md#moderationlink) reindirizza alla pagina Moderazione di AEM Communities, se si dispone di privilegi di moderazione.
 
 ![adminscreen](assets/adminscreen.png)
 
-Osserva che la pagina Calendario è la home page perché il modello del sito di riferimento selezionato includeva prima la funzione Calendario, seguita dalla funzione Flusso di attività, dalla funzione Forum e così via. Questa struttura è visibile dalla sezione [Modello del sito](/help/communities/sites.md#edit-site-template) o durante la modifica delle proprietà del sito nell’ambiente di authoring:
+Si noti che la pagina Calendario è la home page perché il modello del sito di riferimento selezionato include prima la funzione Calendario, quindi la funzione Flusso attività, la funzione Forum e così via. Questa struttura è visibile dalla sezione [Modello del sito](/help/communities/sites.md#edit-site-template) o durante la modifica delle proprietà del sito nell’ambiente di authoring:
 
 ![sitetemplate](assets/sitetemplate.png)
 
@@ -119,7 +115,7 @@ I visitatori del sito possono visualizzare i post e ordinarli in vari modi.
 
 ### Collegamento Gruppi {#groups-link}
 
-Poiché Aaron è un amministratore di gruppo, selezionando il collegamento Gruppi sarà possibile creare un nuovo gruppo di community selezionando un modello di gruppo, un&#39;immagine, se il gruppo è aperto o segreto e invitando i membri.
+Poiché Aaron è un amministratore di gruppo, selezionando il collegamento Gruppi è possibile creare un gruppo di community selezionando un modello di gruppo, un&#39;immagine, se il gruppo è aperto o segreto e invitando i membri.
 
 Questo è un esempio in cui un gruppo viene creato nell’ambiente di pubblicazione.
 
@@ -186,7 +182,7 @@ Continuando con la pubblicazione, esci come Aaron McDonald e visualizza i gruppi
 * Seleziona `Sports` link
 * Seleziona la sezione Sport&#39; `Groups` link
 
-Solo il gruppo di baseball sarà visibile.
+Solo il gruppo di baseball è visibile.
 
 Accedi come Weston McCall (weston.mccall@dodgit.com / password) e passa alla stessa posizione. Weston è in grado di: `Join` l&#39;apertura `Baseball` gruppo e `enter or Leave` il privato `Gymnastics` gruppo.
 
@@ -196,13 +192,13 @@ Accedi come Weston McCall (weston.mccall@dodgit.com / password) e passa alla ste
 
 Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento Pagina Web. Per aggiungere contenuti a questa pagina nell’ambiente di authoring, è possibile utilizzare gli strumenti AEM standard.
 
-Ad esempio, vai a **autore** istanza, apri la `engage` cartella in [Console Siti community](/help/communities/sites-console.md), seleziona la **Apri sito** per accedere alla modalità di modifica dell’autore. Quindi seleziona la modalità anteprima per selezionare `Web Page` , quindi seleziona la modalità di modifica per aggiungere i componenti Titolo e Testo. Infine, ripubblica solo la pagina o l’intero sito.
+Ad esempio, vai a **autore** istanza, apri la `engage` cartella in [Console Siti community](/help/communities/sites-console.md), seleziona la **Apri sito** per accedere alla modalità di modifica dell’autore. Quindi seleziona la modalità anteprima in modo da poter selezionare `Web Page` , quindi seleziona la modalità di modifica per aggiungere i componenti Titolo e Testo. Infine, ripubblica solo la pagina o l’intero sito.
 
 ![webpagelink](assets/webpagelink.png)
 
 ### Collegamento per moderazione {#moderationlink}
 
-Quando il membro della community dispone dei privilegi di moderazione, il collegamento Moderazione sarà visibile e, selezionandolo, verrà visualizzato il contenuto della community pubblicato e verrà consentito [moderato](/help/communities/moderate-ugc.md) in modo simile al [console di moderazione](/help/communities/moderation.md) nell’ambiente di authoring.
+Quando il membro della community dispone di privilegi di moderazione, è visibile il collegamento Moderazione. Selezionando il collegamento viene visualizzato il contenuto della community pubblicata, che consente di [moderato](/help/communities/moderate-ugc.md) in modo simile al [console di moderazione](/help/communities/moderation.md) nell’ambiente di authoring.
 
 Utilizza il pulsante Indietro del browser per tornare al sito pubblicato. La maggior parte delle console non è accessibile dalla navigazione globale nell’ambiente di pubblicazione.
 
@@ -210,7 +206,7 @@ Utilizza il pulsante Indietro del browser per tornare al sito pubblicato. La mag
 
 ## Registrazione autonoma {#self-registration}
 
-Dopo la disconnessione, è possibile creare una nuova registrazione utente.
+Dopo la disconnessione, è possibile creare una registrazione utente.
 
 * Seleziona `Log In`
 * Seleziona `Sign up for a new account`
@@ -221,9 +217,9 @@ Dopo la disconnessione, è possibile creare una nuova registrazione utente.
 
 Per impostazione predefinita, l’indirizzo e-mail è l’ID di accesso. Se questa opzione è deselezionata, il visitatore può immettere il proprio ID di accesso (nome utente). Il nome utente deve essere univoco nell’ambiente di pubblicazione.
 
-Dopo aver specificato il nome, l’e-mail e la password dell’utente, seleziona `Sign Up` creerà l’utente e gli consentirà di firmare.
+Dopo aver specificato il nome, l’e-mail e la password dell’utente, seleziona `Sign Up` crea l’utente e gli consente di firmare.
 
-Una volta effettuato l’accesso, viene visualizzata la prima pagina `Profile` , che possono personalizzare.
+Dopo l’accesso, la prima pagina presentata è la `Profile` , che possono personalizzare.
 
 ![profilo](assets/profile.png)
 

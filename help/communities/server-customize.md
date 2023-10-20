@@ -1,18 +1,14 @@
 ---
 title: Personalizzazione lato server
-seo-title: Server-side Customization
-description: Personalizzazione lato server in AEM Communities
-seo-description: Customizing server-side in AEM Communities
-uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
+description: Scopri come personalizzare lato server in Adobe Experience Manager Communities.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 exl-id: 190735bc-1909-4b92-ba4f-a221c0cd5be7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -21,9 +17,9 @@ ht-degree: 0%
 
 | **[⇐ funzioni di base](essentials.md)** | **[⇒ di personalizzazione lato client](client-customize.md)** |
 |---|---|
-|  | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |
+|   | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |
 
-## API Java {#java-apis}
+## API Java™ {#java-apis}
 
 >[!NOTE]
 >
@@ -31,7 +27,7 @@ ht-degree: 0%
 
 ### Interfaccia SocialComponent {#socialcomponent-interface}
 
-I SocialComponents sono POJO che rappresentano una risorsa per una funzione di AEM Communities. Idealmente, ogni SocialComponent rappresenta un resourceType specifico con GETters esposti che forniscono dati al client in modo che la risorsa sia rappresentata accuratamente. Tutte le logiche di business e di visualizzazione sono racchiuse in SocialComponent, incluse, se necessario, le informazioni sulla sessione del visitatore del sito.
+I SocialComponents sono POJO che rappresentano una risorsa per una funzione di AEM Communities. Idealmente, ogni SocialComponent rappresenta un resourceType specifico con GETters esposti che forniscono dati al client in modo che la risorsa sia rappresentata accuratamente. Tutta la logica di business e di visualizzazione è incapsulata in SocialComponent, incluse le informazioni sulla sessione del visitatore del sito, se necessario.
 
 L’interfaccia definisce un set di base di GETter necessari per rappresentare una risorsa. È importante sottolineare che l’interfaccia definisce la mappa&lt;string object=&quot;&quot;> metodi getAsMap() e String toJSONString() necessari per eseguire il rendering dei modelli Handlebars ed esporre gli endpoint JSON di GET per le risorse.
 
@@ -53,11 +49,11 @@ SocialComponentFactory è un servizio OSGi e ha accesso ad altri servizi OSGi ch
 
 Tutte le classi SocialComponentFactory devono implementare l&#39;interfaccia `com.adobe.cq.social.scf.SocialComponentFactory`
 
-Un&#39;implementazione del metodo SocialComponentFactory.getPriority() deve restituire il valore più alto affinché la factory venga utilizzata per il resourceType specificato, come restituito da getResourceType().
+Un&#39;implementazione del metodo SocialComponentFactory.getPriority() deve restituire il valore più alto per la factory da utilizzare per il resourceType specificato, come restituito da getResourceType().
 
 ### Interfaccia SocialComponentFactoryManager {#socialcomponentfactorymanager-interface}
 
-SocialComponentFactoryManager (manager) gestisce tutti i SocialComponents registrati con il framework ed è responsabile della selezione di SocialComponentFactory da utilizzare per una determinata risorsa (resourceType). Se non sono registrate fabbriche per un resourceType specifico, il manager restituirà una fabbrica con il super type più vicino per la risorsa specificata.
+SocialComponentFactoryManager (manager) gestisce tutti i SocialComponents registrati con il framework ed è responsabile della selezione di SocialComponentFactory da utilizzare per una determinata risorsa (resourceType). Se non sono registrate fabbriche per un resourceType specifico, il manager restituisce una fabbrica con il super type più vicino per la risorsa specificata.
 
 SocialComponentFactoryManager è un servizio OSGi e ha accesso ad altri servizi OSGi che possono essere passati a SocialComponent tramite un costruttore.
 
@@ -69,7 +65,7 @@ Un handle per il servizio OSGi viene ottenuto richiamando `com.adobe.cq.social.s
 
 Gli endpoint POST API HTTP sono classi PostOperation definite implementando `SlingPostOperation` interfaccia (pacchetto) `org.apache.sling.servlets.post`).
 
-Il `PostOperation` set di implementazione endpoint `sling.post.operation` a un valore al quale risponderà l&#39;operazione. Tutte le richieste POST con il parametro:operation impostato su tale valore verranno delegate a questa classe di implementazione.
+Il `PostOperation` set di implementazione endpoint `sling.post.operation` a un valore al quale risponde l’operazione. Tutte le richieste POST con il parametro:operation impostato su tale valore sono delegate a questa classe di implementazione.
 
 Il `PostOperation` richiama `SocialOperation` che esegue le azioni necessarie per l&#39;operazione.
 
@@ -77,7 +73,7 @@ Il `PostOperation` riceve il risultato dal `SocialOperation` e restituisce la ri
 
 #### Classe SocialOperation {#socialoperation-class}
 
-Ogni `SocialOperation` l&#39;endpoint estende la classe AbstractSocialOperation e sostituisce il metodo `performOperation()`. Questo metodo esegue tutte le azioni necessarie per completare l&#39;operazione e restituire un `SocialOperationResult` oppure genera un `OperationException`, nel qual caso viene restituito uno stato di errore HTTP con un messaggio, se disponibile, al posto della normale risposta JSON o del codice di stato HTTP di successo.
+Ogni `SocialOperation` l&#39;endpoint estende la classe AbstractSocialOperation e sostituisce il metodo `performOperation()`. Questo metodo esegue tutte le azioni necessarie per completare l&#39;operazione e restituire un `SocialOperationResult` oppure genera un `OperationException`. In questo caso, al posto della normale risposta JSON o del codice di stato HTTP di successo viene restituito uno stato di errore HTTP con un messaggio, se disponibile.
 
 Estensione `AbstractSocialOperation` rende possibile il riutilizzo di `SocialComponents` per inviare risposte JSON.
 
@@ -87,7 +83,7 @@ Il `SocialOperationResult` la classe viene restituita come risultato del `Social
 
 Il `SocialComponent` rappresenta la risorsa interessata dall&#39;operazione.
 
-Per un&#39;operazione di creazione, `SocialComponent` incluso nel `SocialOperationResult` rappresenta la risorsa appena creata e, per un&#39;operazione di aggiornamento, rappresenta la risorsa modificata dall&#39;operazione. No `SocialComponent` viene restituito per un&#39;operazione di eliminazione.
+Per un&#39;operazione di creazione, `SocialComponent` incluso nel `SocialOperationResult` rappresenta la risorsa creata e, per un&#39;operazione di aggiornamento, rappresenta la risorsa modificata dall&#39;operazione. No `SocialComponent` viene restituito per un&#39;operazione di eliminazione.
 
 I codici di stato HTTP utilizzati sono:
 
@@ -97,7 +93,7 @@ I codici di stato HTTP utilizzati sono:
 
 #### Classe OperationException {#operationexception-class}
 
-Un `OperationExcepton` può essere generato durante l’esecuzione di un’operazione se la richiesta non è valida o si verifica un altro errore, ad esempio errori interni, valori di parametri errati, autorizzazioni non corrette e così via. Un `OperationException` è composto da un codice di stato HTTP e da un messaggio di errore, che vengono restituiti al client come risposta al `PostOperatoin`.
+Un `OperationExcepton` viene generato quando si esegue un’operazione se la richiesta non è valida o si verifica un altro errore. Ad esempio, errori interni, valori di parametro non validi o autorizzazioni non corrette. Un `OperationException` è composto da un codice di stato HTTP e da un messaggio di errore, che vengono restituiti al client come risposta al `PostOperatoin`.
 
 #### Classe OperationService {#operationservice-class}
 
@@ -107,18 +103,18 @@ Tutti `OperationService` estensione delle classi `AbstractOperationService`, con
 
 * `performBeforeActions()`
 
-   Consente pre-controlli/pre-elaborazione e convalide
+  Consente pre-controlli/pre-elaborazione e convalide
 * `performAfterActions()`
 
-   Consente di modificare ulteriormente le risorse o richiamare eventi personalizzati, flussi di lavoro, ecc.
+  Consente di modificare ulteriormente le risorse o richiamare eventi personalizzati, flussi di lavoro e così via.
 
 #### Classe OperationExtension {#operationextension-class}
 
-`OperationExtension` le classi sono parti di codice personalizzate che possono essere inserite in un&#39;operazione consentendo la personalizzazione delle operazioni per soddisfare le esigenze aziendali. I consumatori del componente possono aggiungere funzionalità al componente in modo dinamico e incrementale. Il pattern di estensione/hook consente agli sviluppatori di concentrarsi esclusivamente sulle estensioni stesse e elimina la necessità di copiare e sovrascrivere intere operazioni e componenti.
+Il `OperationExtension` le classi sono parti di codice personalizzate che possono essere inserite in un&#39;operazione consentendo la personalizzazione delle operazioni per soddisfare le esigenze aziendali. I consumatori del componente possono aggiungere funzionalità al componente in modo dinamico e incrementale. Il pattern di estensione/hook consente agli sviluppatori di concentrarsi esclusivamente sulle estensioni stesse e elimina la necessità di copiare e sovrascrivere intere operazioni e componenti.
 
 ## Codice di esempio {#sample-code}
 
-Il codice di esempio è disponibile nella [GitHub Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) archivio. Cerca i progetti con prefisso `aem-communities` o `aem-scf`.
+Il codice di esempio è disponibile nella [GitHub Adobe Experience Cloud](https://github.com/Adobe-Marketing-Cloud) archivio. Cerca i progetti con prefisso `aem-communities` o `aem-scf`.
 
 ## Best practice {#best-practices}
 
@@ -128,4 +124,4 @@ Vedi anche [Provider risorsa di archiviazione (SRP) per UGC](srp.md) informazion
 
 | **[⇐ funzioni di base](essentials.md)** | **[⇒ di personalizzazione lato client](client-customize.md)** |
 |---|---|
-|  | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |
+|   | **[⇒ Helper Handlebars SCF](handlebars-helpers.md)** |

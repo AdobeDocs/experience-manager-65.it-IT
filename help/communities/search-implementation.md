@@ -1,14 +1,14 @@
 ---
 title: Search Essentials
-description: Cerca nelle community
+description: Scopri la funzione di ricerca, una funzionalità essenziale di AEM Communities. Le community forniscono anche l’API di ricerca per contenuti generati dall’utente.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1189'
 ht-degree: 4%
 
 ---
@@ -68,11 +68,11 @@ Quando si creano proprietà personalizzate ricercabili, è necessario aderire al
 
 ### Ricerche JSRP {#jsrp-searches}
 
-Per [JSRP](jsrp.md), UGC è memorizzato in [Oak](../../help/sites-deploying/platform.md) ed è visibile solo nell’archivio dell’istanza di authoring o pubblicazione AEM in cui è stata immessa.
+Per [JSRP](jsrp.md), UGC è memorizzato in [Oak](../../help/sites-deploying/platform.md) ed è visibile solo nell’archivio dell’istanza AEM Author o Publish in cui è stata immessa.
 
 Poiché UGC viene in genere immesso nell’ambiente di pubblicazione, per i sistemi di produzione con più editori è necessario configurare un [cluster di pubblicazione](topologies.md), non una farm di pubblicazione, in modo che il contenuto immesso sia visibile da tutti gli editori.
 
-Per JSRP, le voci UGC immesse nell’ambiente di pubblicazione non sono mai visibili nell’ambiente di authoring. Pertanto, tutti [moderazione](moderate-ugc.md) Le attività di vengono eseguite nell’ambiente di pubblicazione.
+Per JSRP, le voci UGC immesse nell’ambiente di pubblicazione non sono mai visibili nell’ambiente di authoring. Pertanto, tutti [moderazione](moderate-ugc.md) Le attività si svolgono nell’ambiente di pubblicazione.
 
 Le funzioni di ricerca personalizzate devono utilizzare [API di ricerca UGC](#ugc-search-api).
 

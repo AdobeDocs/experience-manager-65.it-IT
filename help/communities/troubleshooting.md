@@ -1,14 +1,14 @@
 ---
 title: Community risoluzione problemi
-description: Risoluzione dei problemi della community, inclusi i problemi noti
+description: Scopri come risolvere i problemi della community, compresi i problemi noti e le preoccupazioni.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Questa sezione contiene problemi comuni e problemi noti durante la risoluzione d
 
 Quando si utilizza Dispatcher 4.1.5 con una versione più recente di Jetty, un recupero potrebbe causare l’errore &quot;Impossibile ricevere la risposta dal server remoto&quot; dopo l’attesa del timeout della richiesta.
 
-Per risolvere il problema, utilizza Dispatcher 4.1.6 o versione successiva.
+Questo problema è risolto con l’utilizzo di Dispatcher versione 4.1.6 o successive.
 
 ### Impossibile accedere al post del forum dopo l’aggiornamento da CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
@@ -45,7 +45,7 @@ Pertanto, qualsiasi codice che utilizza l’API RelativeTimeFormat() deve cambia
 * Da: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * A: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-L’errore varia in modalità di authoring e pubblicazione. Quando si scrive, l&#39;operazione non riesce e gli argomenti del forum non vengono visualizzati. Al momento della pubblicazione, genera l’errore sulla pagina.
+L’errore varia in Author e Publish. In Autore, non riesce in silenzio e semplicemente non visualizza gli argomenti del forum. Al momento della pubblicazione, genera l’errore sulla pagina.
 
 Consulta la [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API per ulteriori informazioni.
 
@@ -76,7 +76,7 @@ Questi avvisi possono essere tranquillamente ignorati.
 
 ### Errore nei registri: NoClassDefFoundError per IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-L’aggiornamento di AEM 5.6.1 GA alla versione più recente di cq-socialCommunities-pkg-1.4.x o a AEM 6.0 genera errori nel file di registro durante l’avvio e genera una condizione che si risolve da sola, come evidenziato dall’errore non visualizzato al riavvio.
+L’aggiornamento di AEM 5.6.1 alla versione più recente di cq-socialCommunities-pkg-1.4.x o a AEM 6.0 genera errori nel file di registro. Ciò si verifica durante l&#39;avvio per una condizione che si risolve da sola come evidenziato dall&#39;errore non visualizzato al riavvio.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException

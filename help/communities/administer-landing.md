@@ -1,19 +1,15 @@
 ---
 title: Siti community
-seo-title: Communities Sites
-description: Panoramica della documentazione di AEM Communities
-seo-description: Overview of the AEM Communities documentation
-uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
+description: Scopri le nozioni di base delle community Adobe Experience Manager (AEM) per amministratori che hanno già familiarità con le sue funzioni di base.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -38,10 +34,10 @@ Per una panoramica e tutorial introduttivi, visita:
    * [Sites](sites-console.md)
 
       * [Gruppi (sottocomunità)](groups.md)
+
    * [Moderazione](moderation.md)
    * [Gestione di membri e gruppi](members.md)
    * [Rapporti](reports.md)
-
 
 * Community [*strumenti*](tools.md):
 
@@ -70,7 +66,7 @@ Una funzione importante di AEM Communities è la generazione di contenuti genera
 * [Servizio tunnel](deploy-communities.md#tunnel-service-on-author): consente di accedere ai membri lato pubblicazione e ai gruppi di membri dall’ambiente di authoring.
 * [Console membri e gruppi](members.md): consente la creazione e la gestione di membri lato pubblicazione e gruppi di membri dall’ambiente di authoring.
 * [Sincronizzazione utente](sync.md): per sincronizzare membri e gruppi di membri tra più istanze di pubblicazione.
-* [Accesso social network con Facebook e Twitter](social-login.md): possibilità per i visitatori del sito di diventare membri della community utilizzando le credenziali di Facebook o Twitter.
+* [Accesso social network con Facebook e Twitter](social-login.md): possibilità per i visitatori del sito di diventare membri della community utilizzando le credenziali Facebook o di Twitter.
 * [Punteggio e distintivi](implementing-scoring.md): possibilità di assegnare i distintivi per identificare i ruoli di un membro e di assegnare i distintivi ai membri tramite la loro partecipazione alla community.
 * [Notifiche](notifications.md): possibilità per i membri di essere informati delle attività che seguono.
 * [Iscrizioni](subscriptions.md): possibilità per i membri di interagire con la community tramite e-mail esterna.
@@ -88,12 +84,12 @@ La natura dell’utilizzo dei contenuti della community influenza la struttura d
 
 * [Pacchetto di funzioni per community più recenti](deploy-communities.md#latestfeaturepack)
 
-Consulta la pagina della distribuzione per altre informazioni specifiche sulla community, ad esempio per [Aggiornamento](upgrade.md), [Dispatcher](dispatcher.md) e [Replica](deploy-communities.md#replication-agents-on-author).
+Consulta la pagina della distribuzione per altre informazioni specifiche per la community, ad esempio per [Aggiornamento](upgrade.md), [Dispatcher](dispatcher.md), e [Replica](deploy-communities.md#replication-agents-on-author).
 
 ## Documentazione delle community correlate {#related-communities-documentation}
 
-* Visita [Distribuzione delle community](deploy-communities.md) per informazioni sulle distribuzioni consigliate.
+* Visita [Distribuzione delle community](deploy-communities.md) dove puoi scoprire le distribuzioni consigliate.
 
-* Visita [Comunità in via di sviluppo](communities.md) per scoprire il framework dei componenti social (SCF) e personalizzare i componenti e le funzioni di Communities.
+* Visita [Comunità in via di sviluppo](communities.md) dove puoi scoprire il framework dei componenti social (SCF) e personalizzare i componenti e le funzioni di Communities.
 
-* Visita [Authoring dei componenti delle community](author-communities.md) per scoprire come effettuare l’authoring con e configurare i componenti di Communities.
+* Visita [Authoring dei componenti delle community](author-communities.md) dove puoi scoprire come effettuare l’authoring con e configurare i componenti di Communities.

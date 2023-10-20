@@ -1,35 +1,31 @@
 ---
-title: Creare un nuovo sito community
-seo-title: Author a New Community Site
-description: Come creare un nuovo sito AEM Communities
-seo-description: How to author a new AEM Communities site
-uuid: 4f609f5f-ef07-44fc-aeb3-1c616e120d46
+title: Creare un sito community
+description: Scopri come creare un sito di Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1578'
 ht-degree: 2%
 
 ---
 
-# Creare un nuovo sito community{#author-a-new-community-site}
+# Creare un sito community{#author-a-new-community-site}
 
 ## Creare un sito community {#create-a-community-site}
 
-Utilizza l’istanza di authoring per creare un sito community. Nell’istanza di AEM Author:
+Utilizza l’istanza di authoring per creare un sito community. Sull’istanza dell’autore AEM:
 
 1. Accedi con privilegi di amministratore.
 1. Dalla navigazione globale, vai a **[!UICONTROL Community]** > **[!UICONTROL Sites]**.
 
 La console Siti di Communities offre una procedura guidata per illustrare i passaggi necessari per la creazione di un sito di community. È possibile passare alla `Next` passaggio o `Back` al passaggio precedente prima di eseguire il commit del sito nel passaggio finale.
 
-Per iniziare a creare un nuovo sito community:
+Per iniziare a creare un sito community:
 
 * Seleziona la `Create` pulsante.
 
@@ -45,12 +41,12 @@ Il giorno [Passaggio modello sito](/help/communities/sites-console.md#step2013as
 * **Descrizione del sito community**: `A site for engaging with the community.`
 * **Directory principale sito community**: (lascia vuoto per impostare la directory principale predefinita) `/content/sites`)
 * **Configurazioni cloud**: (lascia vuoto se non è specificata alcuna configurazione cloud) specifica il percorso delle configurazioni cloud specificate.
-* **Lingua base del sito community**: (non toccare per una singola lingua: inglese) utilizza l’elenco a discesa per sceglierne uno *o più* lingue di base dalle lingue disponibili: tedesco, italiano, francese, giapponese, spagnolo, portoghese (Brasile), cinese (tradizionale) e cinese (semplificato). Verrà creato un sito community per ogni lingua aggiunta e sarà incluso nella stessa cartella del sito seguendo la best practice descritta in [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md). La pagina principale di ciascun sito conterrà una pagina figlia denominata in base al codice della lingua di una delle lingue selezionate, ad esempio &#39;en&#39; per l&#39;inglese o &#39;fr&#39; per il francese.
+* **Lingua base del sito community**: (non toccare per una singola lingua: inglese) utilizza l’elenco a discesa per sceglierne uno *o più* lingue di base delle lingue disponibili: tedesco, italiano, francese, giapponese, spagnolo, portoghese (Brasile), cinese (tradizionale) e cinese (semplificato). Viene creato un sito community per ogni lingua aggiunta ed esiste nella stessa cartella del sito seguendo la best practice descritta in [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md). La pagina principale di ciascun sito contiene una pagina figlia denominata con il codice della lingua di una delle lingue selezionate, ad esempio &#39;en&#39; per l&#39;inglese o &#39;fr&#39; per il francese.
 
 * **Nome sito community**: interagire
 
    * Ricontrolla il nome poiché non è più facile modificarlo dopo la creazione del sito
-   * L&#39;URL iniziale verrà visualizzato sotto il nome del sito community
+   * L&#39;URL iniziale viene visualizzato sotto il nome del sito community
    * Per un URL valido, aggiungi un codice della lingua di base + &quot;.html&quot;
    * *Ad esempio*, https://localhost:4502/content/sites/ `engage/en.html`
 
@@ -64,7 +60,7 @@ Il passaggio Progettazione è presentato in due sezioni per la selezione del tem
 
 #### TEMA DEL SITO COMMUNITY {#community-site-theme}
 
-Seleziona lo stile desiderato da applicare al modello. Quando è selezionato, il tema viene sovrapposto con un segno di spunta.
+Seleziona lo stile desiderato da applicare al modello. Quando è selezionata, il tema viene sovrapposto con un segno di spunta.
 
 #### MARCHIO PER SITO COMMUNITY {#community-site-branding}
 
@@ -78,7 +74,7 @@ Seleziona **Avanti**.
 
 ### Passaggio 3: Impostazioni {#step-settings}
 
-Nel passaggio Impostazioni, prima di selezionare `Next`, tieni presente che esistono sette sezioni che forniscono accesso a configurazioni relative a gestione degli utenti, assegnazione di tag, moderazione, gestione dei gruppi, analisi e traduzione.
+Nel passaggio Impostazioni, prima di selezionare `Next`, ci sono sette sezioni che forniscono accesso a configurazioni che coinvolgono la gestione degli utenti, l’assegnazione di tag, la moderazione, la gestione dei gruppi, le analisi e la traduzione.
 
 #### User Management {#user-management}
 
@@ -88,17 +84,17 @@ Seleziona tutte le caselle di controllo per [Gestione utente](/help/communities/
 * Per consentire ai visitatori del sito di visualizzare il sito senza effettuare l&#39;accesso
 * Per consentire ai membri di inviare e ricevere messaggi da altri membri della community
 * Per consentire l’accesso con Facebook anziché registrare e creare un profilo
-* Per consentire l’accesso con Twitter anziché registrare e creare un profilo
+* Per consentire l&#39;accesso con il Twitter invece di registrare e creare un profilo
 
 >[!NOTE]
 >
->Per un ambiente di produzione, è necessario creare applicazioni Facebook e Twitter personalizzate. Consulta [Accesso social network con Facebook e Twitter](/help/communities/social-login.md).
+>Per un ambiente di produzione, è necessario creare applicazioni Facebook e di Twitter personalizzate. Consulta [Accesso social network con Facebook e Twitter](/help/communities/social-login.md).
 
 ![impostazioni del sito community](assets/site-settings.png)
 
 #### ASSEGNAZIONE TAG {#tagging}
 
-I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi dei nomi AEM precedentemente definiti tramite [Console per assegnazione tag](/help/sites-administering/tags.md#tagging-console) (ad esempio [Spazio dei nomi dell’esercitazione](/help/communities/setup.md#create-tutorial-tags)).
+I tag applicati al contenuto della community sono controllati selezionando gli spazi dei nomi AEM precedentemente definiti tramite [Console per assegnazione tag](/help/sites-administering/tags.md#tagging-console) (ad esempio [Spazio dei nomi dell’esercitazione](/help/communities/setup.md#create-tutorial-tags)).
 
 Trovare gli spazi dei nomi è facile con la ricerca del tipo-ahead. Ad esempio:
 
@@ -132,7 +128,7 @@ Accetta le impostazioni globali predefinite per [moderazione](/help/communities/
 
 #### ANALISI {#analytics}
 
-Se Adobe Analytics è concesso in licenza e sono stati configurati un servizio cloud Analytics e un framework, è possibile abilitare Analytics e selezionare il framework.
+Se Adobe Analytics è concesso in licenza e sono stati configurati un servizio e un framework di Analytics Cloud, è possibile abilitare Analytics e selezionare il framework.
 
 Consulta [Configurazione di Analytics per le funzioni di Communities](/help/communities/analytics.md).
 
@@ -140,7 +136,7 @@ Consulta [Configurazione di Analytics per le funzioni di Communities](/help/comm
 
 #### TRADUZIONE {#translation}
 
-Il [Impostazioni di traduzione](/help/communities/sites-console.md#translation) specifica la lingua di base per il sito, se è possibile tradurre o meno il linguaggio UGC e in quale lingua.
+Il [Impostazioni di traduzione](/help/communities/sites-console.md#translation) specifica la lingua di base per il sito, se il linguaggio UGC può essere tradotto e in quale lingua.
 
 * Verifica **Consenti traduzione automatica**
 * Lascia le lingue predefinite selezionate per la traduzione dal servizio di traduzione automatica predefinito
@@ -177,24 +173,23 @@ Da sinistra a destra:
 
 * **Apri sito**
 
-   Seleziona l’icona a forma di matita per aprire il sito community in modalità di modifica dell’autore, per aggiungere e/o configurare i componenti di pagina
+  Selezionando l’icona a forma di matita si apre il sito community in modalità di modifica Creazione, dove è possibile aggiungere o configurare i componenti della pagina.
 
 * **Modifica sito**
 
-   Seleziona l&#39;icona delle proprietà per aprire il sito community e modificarne le proprietà, ad esempio il titolo o il tema
+  Selezionando l&#39;icona delle proprietà si apre il sito community per modificare le proprietà, ad esempio il titolo o il tema.
 
 * **Pubblica sito**
 
-   Seleziona l&#39;icona mondo per pubblicare il sito community (ad esempio, se il server di pubblicazione è in esecuzione sul computer locale, su localhost:4503 per impostazione predefinita)
+  Se si seleziona l&#39;icona mondo, il sito community verrà pubblicato (ad esempio, se il server di pubblicazione è in esecuzione sul computer locale, su localhost:4503 per impostazione predefinita).
 
 * **Esporta sito**
 
-   Selezionare l&#39;icona di esportazione per creare un pacchetto del sito community memorizzato in [gestione pacchetti](/help/sites-administering/package-manager.md) e scaricato.
-UGC non è incluso nel pacchetto del sito.
+  Selezionando l&#39;icona di esportazione viene creato un pacchetto del sito community memorizzato in [Gestione pacchetti](/help/sites-administering/package-manager.md) e scaricato. UGC non incluso nel pacchetto del sito.
 
 * **Elimina sito**
 
-   Selezionare l&#39;icona Elimina per eliminare il sito community da **[!UICONTROL Community > Console Sites]**. Questa azione rimuove tutti gli elementi associati al sito, ad esempio UGC, gruppi di utenti, risorse e record di database.
+  Se si seleziona l&#39;icona Elimina, il sito community verrà eliminato da **[!UICONTROL Community > Console Sites]**. Questa azione rimuove tutti gli elementi associati al sito, ad esempio UGC, gruppi di utenti, risorse e record di database.
 
 ![siteactions](assets/siteactions.png)
 
@@ -212,7 +207,6 @@ UGC non è incluso nel pacchetto del sito.
 >1. In URI, modificare il numero di porta, 4503, nel numero di porta desiderato. Ad esempio, per utilizzare la porta 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >1. Seleziona **[!UICONTROL OK]**.
 >1. (Facoltativo) Seleziona **[!UICONTROL Cancella]** o **[!UICONTROL Forza nuovo tentativo]** per reimpostare la coda di replica.
-
 
 ### Seleziona pubblicazione {#select-publish}
 
@@ -235,7 +229,7 @@ Per questo nuovo sito community, dato il nome del sito &quot;coinvolgimento&quot
 * Membri con privilegi di coinvolgimento community
 * Gestione contenuti del sito community Engage
 
-Tieni presente che [Aaron McDonald](/help/communities/tutorials.md#demo-users) è un membro di
+[Aaron McDonald](/help/communities/tutorials.md#demo-users) è un membro di
 
 * Community Engage manager
 * Moderatori del coinvolgimento della community
@@ -249,7 +243,7 @@ Tieni presente che [Aaron McDonald](/help/communities/tutorials.md#demo-users) �
 
 ## Errore di configurazione per l’autenticazione {#configure-for-authentication-error}
 
-Una volta configurato il sito e inviato per la pubblicazione, [configurare la mappatura degli accessi](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) sull&#39;istanza Publish. Il vantaggio è che, quando le credenziali di accesso non vengono immesse correttamente, l&#39;errore di autenticazione visualizzerà nuovamente la pagina di accesso del sito community con un messaggio di errore.
+Una volta configurato il sito e inviato per la pubblicazione, [configurare la mappatura di accesso](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) sull&#39;istanza Publish. Il vantaggio è che quando le credenziali di accesso non vengono immesse correttamente, l&#39;errore di autenticazione visualizza nuovamente la pagina di accesso del sito community con un messaggio di errore.
 
 Aggiungi un `Login Page Mapping` as
 
@@ -283,12 +277,12 @@ Per iniziare:
    * **Nome** sling:match
       * **Tipo** Stringa
       * **Valore** localhost.4503/$ (deve terminare con &#39;$&#39; char)
+
    * Aggiungi proprietà:
 
       * **Nome** sling:internalRedirect
       * **Tipo** Stringa
       * **Valore** /content/sites/engage/en.html
-
 
 1. Seleziona **Salva tutto.**
 1. (Facoltativo) Elimina la cronologia esplorazioni.
@@ -310,7 +304,7 @@ Se non è possibile salvare le modifiche, assicurati che il nome del nodo sia `l
 
 #### Risoluzione dei problemi: impossibile reindirizzare {#troubleshooting-fail-to-redirect}
 
-L&#39;&#39;**$**&#39; alla fine dell&#39;espressione regolare `sling:match`è fondamentale, in modo che solo esattamente `https://localhost:4503/` è mappato, altrimenti il valore di reindirizzamento viene anteposto a qualsiasi percorso che potrebbe esistere dopo server:porta nell’URL. Pertanto, quando l’AEM tenta di reindirizzare alla pagina di accesso, questo non riesce.
+L&#39;&#39;**$**&#39; alla fine dell&#39;espressione regolare `sling:match`è fondamentale, in modo che solo `https://localhost:4503/` è mappato, altrimenti il valore di reindirizzamento viene anteposto a qualsiasi percorso che potrebbe esistere dopo server:porta nell’URL. Pertanto, quando l’AEM tenta di reindirizzare alla pagina di accesso, questo non riesce.
 
 ### Modificare il sito {#modify-the-site}
 
