@@ -1,14 +1,14 @@
 ---
 title: Provare i frammenti di contenuto in We.Retail
-description: Provare i frammenti di contenuto in We.Retail
+description: Scopri come provare i frammenti di contenuto in Adobe Experience Manager utilizzando We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '461'
 ht-degree: 14%
 
 ---

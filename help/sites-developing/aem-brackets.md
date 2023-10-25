@@ -1,7 +1,7 @@
 ---
 title: Estensione parentesi AEM
 seo-title: AEM Brackets Extension
-description: Estensione parentesi AEM
+description: Scopri come utilizzare l’estensione Adobe Experience Manager per Brackets.
 seo-description: null
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '938'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-L’estensione per Brackets AEM fornisce un flusso di lavoro fluido per modificare i componenti AEM e le librerie client e sfrutta la potenza della [Parentesi](https://brackets.io/) editor di codice, che consente l&#39;accesso ai file e ai livelli di Photoshop dall&#39;interno dell&#39;editor di codice. La facile sincronizzazione fornita dall’estensione (non è richiesto alcun Maven o File Vault) aumenta l’efficienza degli sviluppatori e aiuta anche gli sviluppatori front-end con conoscenze AEM limitate a partecipare ai progetti. Questa estensione fornisce anche un po’ di supporto per [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it), che elimina la complessità di JSP per rendere lo sviluppo dei componenti più semplice e sicuro.
+L’estensione per Brackets AEM fornisce un flusso di lavoro fluido per modificare i componenti AEM e le librerie client e sfrutta la potenza della [Parentesi](https://brackets.io/) editor di codice, che consente l&#39;accesso ai file e ai livelli di Photoshop dall&#39;interno dell&#39;editor di codice. La facile sincronizzazione fornita dall’estensione (non è richiesto alcun Maven o File Vault) aumenta l’efficienza degli sviluppatori e aiuta anche gli sviluppatori front-end con conoscenze AEM limitate a partecipare ai progetti. Questa estensione fornisce anche un po’ di supporto per [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it), che elimina la complessità di JSP per rendere lo sviluppo dei componenti più semplice e sicuro.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 

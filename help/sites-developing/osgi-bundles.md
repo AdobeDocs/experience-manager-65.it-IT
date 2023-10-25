@@ -1,14 +1,14 @@
 ---
 title: Bundle OSGi
-description: Suggerimenti per la gestione dei bundle OSGi
+description: Scopri alcuni suggerimenti per la gestione dei bundle OSGi in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Le best practice concordate per la numerazione delle versioni semantiche sono di
 
 ## Non incorporare più classi e file jar di quanto strettamente necessario nei bundle OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Le librerie comuni devono essere suddivise in bundle separati. Questo ne consente il riutilizzo in tutti i bundle. Quando si esegue il wrapping di un *JAR* in un bundle OSGI, assicurati di controllare le origini online per verificare se qualcuno l’ha già fatto in precedenza. Alcuni luoghi comuni in cui trovare i bundle wrapper esistenti sono: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes e SpringSource Enterprise Bundle Repository.
+Le librerie comuni devono essere suddivise in bundle separati. Questo ne consente il riutilizzo in tutti i bundle. Quando si esegue il wrapping di un *JAR* in un bundle OSGi, assicurati di controllare le origini online per verificare se qualcuno l’ha già fatto in precedenza. Alcuni luoghi comuni in cui trovare i bundle wrapper esistenti sono: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes e SpringSource Enterprise Bundle Repository.
 
 ## Dipende dalle versioni più basse necessarie del bundle {#depend-on-the-lowest-needed-bundle-versions}
 

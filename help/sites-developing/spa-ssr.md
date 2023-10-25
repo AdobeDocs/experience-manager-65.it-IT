@@ -1,16 +1,16 @@
 ---
 title: Rendering lato server e SPA
-description: "SPA e rendering lato server"
+description: Scopri SPA e il rendering lato server in Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: a66814fa065b7545ec39fe9109b4c5815fa199da
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 0%
+source-wordcount: '1724'
+ht-degree: 2%
 
 ---
 
@@ -176,7 +176,7 @@ Per un esempio semplicistico, vedi [App We.Retail Journal](https://github.com/Ad
 
 >[!NOTE]
 >
->Qualsiasi progetto AEM deve utilizzare [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta i progetti SPA utilizzando React o Angular e utilizza l’SDK dell’SPA.
+>Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Utilizzo di Node.js {#using-node-js}
 

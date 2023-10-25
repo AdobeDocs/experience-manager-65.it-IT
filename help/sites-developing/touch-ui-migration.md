@@ -1,15 +1,15 @@
 ---
 title: Migrazione all’interfaccia utente touch
-description: Migrazione all’interfaccia utente touch
+description: Scopri la migrazione di Adobe Experience Manager all’interfaccia utente touch e come ti interessa.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '669'
 ht-degree: 5%
 
 ---
@@ -134,7 +134,7 @@ Sebbene non siano direttamente correlate a una migrazione all’interfaccia uten
 
 * [Modelli](/help/sites-developing/templates.md) - [Modelli modificabili](/help/sites-developing/page-templates-editable.md)
 * [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
 
 >[!NOTE]
 >

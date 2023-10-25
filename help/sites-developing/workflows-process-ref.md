@@ -1,14 +1,14 @@
 ---
 title: Guida di riferimento per il processo dei flusso di lavoro
-description: Guida di riferimento per il processo dei flusso di lavoro
+description: Consulta questo riferimento di processo per i flussi di lavoro in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1076'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Il `AbsoluteTimeAutoAdvancer` (Avanzamento automatico tempo assoluto) si comport
 
 ### Avanzamento automatico (Avanzamento automatico) {#autoadvancer-auto-advancer}
 
-Il `AutoAdvancer` Il processo porta automaticamente il flusso di lavoro al passaggio successivo. Se esiste più di un possibile passaggio successivo (ad esempio, se è presente una suddivisione O), questo processo fa avanzare il flusso di lavoro lungo *ciclo di lavorazione predefinito*, se ne è stato specificato uno, altrimenti il flusso di lavoro non verrà avanzato.
+Il `AutoAdvancer` Il processo porta automaticamente il flusso di lavoro al passaggio successivo. Se esiste più di un possibile passaggio successivo (ad esempio, in caso di suddivisione di un operatore OR), questo processo fa avanzare il flusso di lavoro lungo *ciclo di lavorazione predefinito*, se ne è stato specificato uno, altrimenti il flusso di lavoro non verrà avanzato.
 
 * **Java™ Class**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 

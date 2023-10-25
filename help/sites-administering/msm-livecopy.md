@@ -1,11 +1,11 @@
 ---
 title: Creazione e sincronizzazione di Live Copy
-description: Scopri come creare e sincronizzare Live Copy.
+description: Scopri come creare e sincronizzare Live Copy in Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '4229'
+source-wordcount: '4233'
 ht-degree: 47%
 
 ---
@@ -123,7 +123,7 @@ Per creare una Live Copy:
    * Selezionato: crea una Live Copy solo della pagina selezionata (Live Copy shallow)
    * Non selezionato: crea una Live Copy che includa tutti i discendenti della pagina selezionata (Live Copy deep)
 
-1. (Facoltativo) Per specificare una o più configurazioni di rollout da utilizzare per la Live Copy, utilizza **Configurazioni rollout** per selezionarli; le configurazioni selezionate verranno visualizzate sotto il selettore a discesa.
+1. (Facoltativo) Per specificare una o più configurazioni di rollout da utilizzare per la Live Copy, utilizza **Configurazioni rollout** per selezionarli; le configurazioni selezionate vengono visualizzate sotto il selettore a discesa.
 1. Tocca o fai clic su **Crea**. Verrà visualizzato un messaggio di conferma, da qui puoi selezionare una delle seguenti opzioni **Apri** o **Fine**.
 
 ### Creazione di una Live Copy di un sito da una configurazione Blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}

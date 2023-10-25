@@ -1,16 +1,16 @@
 ---
 title: Sviluppo e differenze tra pagine
-description: Sviluppo e differenze tra pagine
+description: Scopri come sviluppare e utilizzare la funzione di differenze tra pagine in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 5%
+source-wordcount: '380'
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 ## Panoramica delle funzioni {#feature-overview}
 
-La creazione dei contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. Visualizzare una versione di pagina e l’altra è inefficiente e soggetto a errori. L’autore vuole poter confrontare la pagina corrente con una versione precedente evidenziando le differenze.
+La creazione dei contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. L’autore vuole poter confrontare la pagina corrente con una versione precedente evidenziando le differenze.
 
 La differenza di pagina consente a un utente di confrontare la pagina corrente con lanci, versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, consulta [Differenza di pagina](/help/sites-authoring/page-diff.md).
 
@@ -26,7 +26,7 @@ La differenza di pagina consente a un utente di confrontare la pagina corrente c
 
 Quando si confrontano le versioni di una pagina, la versione precedente che l’utente desidera confrontare viene ricreata dall’AEM in background per facilitare la differenza. Questo è necessario per poter eseguire il rendering del contenuto [per il confronto affiancato](/help/sites-developing/pagediff.md#operation-details).
 
-Questa operazione di ricreazione viene eseguita internamente dall&#39;AEM, è trasparente per l&#39;utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l’archivio, ad esempio, in CRXDE Lite vedrebbe queste versioni ricreato all’interno della struttura del contenuto.
+Questa operazione di ricreazione viene eseguita internamente dall&#39;AEM, è trasparente per l&#39;utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l’archivio, ad esempio, in CRXDE Liti vedrebbe queste versioni ricreato all’interno della struttura del contenuto.
 
 Quando si confronta il contenuto, l’intera struttura fino alla pagina da confrontare viene ricreata nella seguente posizione:
 

@@ -1,14 +1,14 @@
 ---
 title: Aggiunta del tracciamento di Adobe Analytics ai componenti
-description: Aggiunta del tracciamento di Adobe Analytics ai componenti
+description: Scopri come aggiungere il tracciamento di Adobe Analytics ai componenti in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## Inclusione del modulo Adobe Analytics in un componente Pagina {#including-the-adobe-analytics-module-in-a-page-component}
 
-Componenti del modello di pagina (ad esempio, `head.jsp, body.jsp`) richiede che JSP includa per caricare ContextHub e l’integrazione Adobe Analytics (che fa parte di Cloud Services). Tutto include il caricamento di file JavaScript.
+Componenti del modello di pagina (ad esempio, `head.jsp, body.jsp`) richiede che JSP includa per caricare ContextHub e l’integrazione Adobe Analytics (che fa parte di Cloud Service). Tutto include il caricamento di file JavaScript.
 
-La voce ContextHub deve essere inclusa immediatamente sotto il `<head>` , mentre i Cloud Services devono essere inclusi nel `<head>` e prima del `</body>` sezione; ad esempio:
+La voce ContextHub deve essere inclusa immediatamente sotto il `<head>` , mentre i Cloud Service devono essere inclusi nel `<head>` e prima del `</body>` sezione; ad esempio:
 
 ```xml
 <head>
@@ -36,7 +36,7 @@ La voce ContextHub deve essere inclusa immediatamente sotto il `<head>` , mentre
 
 Il `contexthub` script inserito dopo il `<head>` aggiunge le funzioni ContextHub alla pagina.
 
-Il `cloudservices` script aggiunti in `<head>` e `<body>` le sezioni si applicano alle configurazioni dei servizi cloud aggiunte alla pagina. (Se la pagina utilizza più di una configurazione di Cloud Services, devi includere ContextHub jsp e Cloud Services jsp una sola volta.)
+Il `cloudservices` script aggiunti in `<head>` e `<body>` le sezioni si applicano alle configurazioni dei servizi cloud aggiunte alla pagina. (Se la pagina utilizza più di una configurazione di Cloud Service, devi includere ContextHub jsp e Cloud Service jsp una sola volta.)
 
 Quando si aggiunge un framework Adobe Analytics alla pagina, il `cloudservices` Gli script generano JavaScript relativi ad Adobe Analytics e riferimenti a librerie lato client, in modo simile all’esempio seguente:
 
@@ -133,7 +133,7 @@ I componenti possono interagire con il framework di Adobe Analytics quando il co
 * `cq:trackevents`: identifica gli eventi CQ esposti dal componente. Consulta Eventi personalizzati.
 * `cq:trackvars`: assegna un nome alle variabili CQ mappate con le proprietà Adobe Analytics.
 * `cq:componentName`: nome del componente visualizzato nel Sidekick.
-* `cq:componentGroup`: gruppo nella barra laterale che include il componente.
+* `cq:componentGroup`: il Sidekick che include il componente.
 
 Il codice nel JSP del componente aggiunge il JavaScript alla pagina che attiva il tracciamento e definisce i dati tracciati. Il nome dell’evento e i nomi dei dati utilizzati in JavaScript devono corrispondere ai valori corrispondenti del `analytics` proprietà del nodo.
 
@@ -153,7 +153,7 @@ Per le procedure seguenti è necessario aver già eseguito le attività seguenti
 
 #### Copiare il componente topnav {#copy-the-topnav-component}
 
-Copia il componente topnav nell’applicazione CQ. La procedura richiede che l’applicazione sia configurata in CRXDE Lite.
+Copia il componente topnav nell’applicazione CQ. La procedura richiede che l’applicazione sia configurata in CRXDE Liti.
 
 1. Fare clic con il pulsante destro del mouse `/libs/foundation/components/topnav` e fai clic su Copia.
 1. Fare clic con il pulsante destro del mouse sulla cartella Componenti sotto la cartella dell&#39;applicazione e scegliere Incolla.
@@ -174,13 +174,13 @@ Configura il componente topnav e modifica il file JSP per definire gli eventi e 
    * Tipo: String
    * Valore: topnavClick
 
-1. Aggiungi la seguente proprietà al nodo Analytics in modo da poter denominare le variabili di dati:
+1. Aggiungi la seguente proprietà al nodo di Analytics in modo da poter denominare le variabili di dati:
 
    * Nome: cq:trackvars
    * Tipo: String
    * Valore: topnavTarget,topnavLocation
 
-1. Aggiungi la seguente proprietà al nodo Analytics per denominare il componente per la barra laterale:
+1. Aggiungi la seguente proprietà al nodo Analytics per denominare il componente per il Sidekick:
 
    * Nome: cq:componentName
    * Tipo: String

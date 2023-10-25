@@ -1,15 +1,15 @@
 ---
 title: Personalizzazione del framework Adobe Analytics
-description: Personalizzazione del framework Adobe Analytics
+description: Scopri come personalizzare il framework Adobe Analytics per Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ Pertanto, il codice JavaScript deve essere impostato `s.usePlugins` a `true` in 
 >
 >Non modificare il file /libs/cq/analytics/components/sitecatalyst/config.js.jsp. Alcune attività di aggiornamento o manutenzione AEM possono reinstallare il file originale, rimuovendo le modifiche.
 
-1. In CRXDE Lite, crea la struttura di cartelle /apps/cq/analytics/components:
+1. In CRXDE Liti, crea la struttura di cartelle /apps/cq/analytics/components:
 
    1. Fai clic con il pulsante destro del mouse sulla cartella /apps e scegli Crea > Crea cartella.
    1. Specifica `cq` come nome della cartella e fare clic su OK.
@@ -265,7 +265,7 @@ La cartella della libreria client /libs/cq/analytics/clientlibs/sitecatalyst/plu
 
 Utilizza la procedura seguente per creare la cartella della libreria client per i plug-in. È necessario eseguire questa procedura una sola volta. Per aggiungere un plug-in alla cartella della libreria client, attenersi alla procedura seguente.
 
-1. In un browser web, apri CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. In un browser web, apri CRXDE Liti. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 
 1. Fai clic con il pulsante destro del mouse sulla cartella /apps/my-app/clientlibs e scegli Crea > Crea nodo. Immettere i valori delle proprietà seguenti e quindi fare clic su OK:
 

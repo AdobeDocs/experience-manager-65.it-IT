@@ -1,7 +1,7 @@
 ---
 title: Integrazione con Adobe Target
 seo-title: Integrating with Adobe Target
-description: Scopri come integrare AEM con Adobe Target.
+description: Scopri come integrare Adobe Experience Manager con Adobe Target.
 seo-description: Learn about integrating AEM with Adobe Target.
 uuid: b90346e8-9757-4272-a870-bbe5e647303f
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '601'
 ht-degree: 66%
 
 ---
@@ -51,7 +51,6 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 >* 4.x è configurato con [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
-
 >[!CAUTION]
 >
 >È necessario proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
@@ -81,4 +80,3 @@ L’integrazione dell’AEM con Adobe Target richiede una conoscenza approfondit
 >* 50 metriche
 >* 50 segmenti di reporting
 >
-

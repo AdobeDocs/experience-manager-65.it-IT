@@ -1,14 +1,14 @@
 ---
 title: Rendering modello adattivo
-description: Rendering modello adattivo
+description: Scopri il rendering di modelli adattivi in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Per questo esempio, stai per configurare il gruppo di dispositivi esistente **Sm
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. Con CRXDE Lite, consenti l’utilizzo del gruppo di dispositivi nel modello aggiungendolo alla proprietà della stringa con più valori `cq:deviceGroups` nella struttura del modello.
+1. Con CRXDE Liti, consenti l’utilizzo del gruppo di dispositivi nel modello aggiungendolo alla proprietà della stringa con più valori `cq:deviceGroups` nella struttura del modello.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -60,7 +60,7 @@ Per questo esempio, stai per configurare il gruppo di dispositivi esistente **Sm
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Con CRXDE Lite, consenti l’utilizzo del gruppo di dispositivi sul tuo sito aggiungendolo alla proprietà della stringa con più valori. `cq:deviceGroups` sulla struttura del sito.
+1. Con CRXDE Liti, consenti l’utilizzo del gruppo di dispositivi sul tuo sito aggiungendolo alla proprietà della stringa con più valori. `cq:deviceGroups` sulla struttura del sito.
 
    `/content/<your-site>/jcr:content`
 

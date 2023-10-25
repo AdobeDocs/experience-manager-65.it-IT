@@ -1,7 +1,7 @@
 ---
 title: Configurazione delle notifiche e-mail
 seo-title: Configuring Email Notification
-description: Scopri come configurare le notifiche e-mail in AEM.
+description: Scopri come configurare le notifiche e-mail in Adobe Experience Manager.
 seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2071'
 ht-degree: 12%
 
 ---
@@ -61,9 +61,9 @@ Nella console Web la configurazione si presenta come segue:
 
 Quando ti abboni alle notifiche degli eventi di pagina o forum, l’indirizzo e-mail da è impostato su `no-reply@acme.com` per impostazione predefinita. È possibile modificare questo valore configurando **Canale e-mail di notifica** nella console Web.
 
-Per configurare l’indirizzo e-mail del mittente, aggiungi un `sling:OsgiConfig` all&#39;archivio. Per aggiungere il nodo direttamente utilizzando CRXDE Lite, attenersi alla procedura descritta di seguito.
+Per configurare l’indirizzo e-mail del mittente, aggiungi un `sling:OsgiConfig` all&#39;archivio. Per aggiungere il nodo direttamente utilizzando CRXDE Liti, attenersi alla procedura descritta di seguito.
 
-1. In CRXDE Lite, aggiungi una cartella denominata `config` nella cartella dell’applicazione.
+1. In CRXDE Liti, aggiungi una cartella denominata `config` nella cartella dell’applicazione.
 1. Nella cartella di configurazione, aggiungi un nodo denominato:
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` di tipo `sling:OsgiConfig`

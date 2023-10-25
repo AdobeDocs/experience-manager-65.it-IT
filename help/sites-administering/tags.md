@@ -1,7 +1,7 @@
 ---
 title: Amministrazione dei tag
 seo-title: Administering Tags
-description: Scopri come amministrare i tag in AEM.
+description: Scopri come gestire e amministrare i tag in Adobe Experience Manager.
 seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1764'
 ht-degree: 3%
 
 ---
@@ -85,15 +85,13 @@ Lo spazio dei nomi è di per sé un tag e non deve necessariamente contenere tag
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![create_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
 * **Titolo**
-
-   *(obbligatorio)* Titolo visualizzato per lo spazio dei nomi.
+  *(obbligatorio)* Titolo visualizzato per lo spazio dei nomi.
 
 * **Nome**
-   *(facoltativo)* Nome dello spazio dei nomi. Se non viene specificato, viene creato un nome di nodo valido dal titolo. Consulta [TagID](/help/sites-developing/framework.md#tagid).
+  *(facoltativo)* Nome dello spazio dei nomi. Se non viene specificato, viene creato un nome di nodo valido dal titolo. Consulta [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Descrizione**
-
-   *(facoltativo)* Descrizione dello spazio dei nomi.
+  *(facoltativo)* Descrizione dello spazio dei nomi.
 
 Una volta inserite le informazioni richieste
 
@@ -197,15 +195,13 @@ Quando viene selezionato uno spazio dei nomi o un altro tag, selezionando **`Mov
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Percorso**
-
-   *(sola lettura)* Percorso corrente del tag selezionato.
+  *(sola lettura)* Percorso corrente del tag selezionato.
 
 * **Sposta in**
 Individua il nuovo percorso in cui spostare il tag.
 
 * **Rinomina in**
-Visualizza inizialmente il valore corrente 
-`name`del tag. Una nuova `name`possono essere inserite.
+Visualizza inizialmente il valore corrente `name`del tag. Una nuova `name`possono essere inserite.
 
 * seleziona **Salva**
 
@@ -220,8 +216,7 @@ Quando viene selezionato uno spazio dei nomi o un altro tag, selezionando **Unis
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Percorso**
-
-   *(sola lettura)* Percorso del tag selezionato da unire in un altro tag.
+  *(sola lettura)* Percorso del tag selezionato da unire in un altro tag.
 
 * **Unisci in**
 Sfoglia per selezionare il percorso del tag in cui eseguire l’unione.
@@ -262,14 +257,14 @@ Le autorizzazioni tag sono [&#39;protetto (per impostazione predefinita)&#39;](/
    * accedere a [Console di sicurezza](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * ad esempio, passa a http://localhost:4502/useradmin
+
    * nel riquadro sinistro selezionare il gruppo (o l&#39;utente) per il quale [autorizzazione di lettura](/help/sites-administering/security.md#permissions) deve essere concesso
    * nel riquadro di destra, individua il **Percorso **dello spazio dei nomi dei tag
 
       * ad esempio, `/content/cq:tags/mycommunity`
+
    * seleziona la `checkbox`nel **Letto** colonna
    * seleziona **Salva**
-
-
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
@@ -278,10 +273,10 @@ Le autorizzazioni tag sono [&#39;protetto (per impostazione predefinita)&#39;](/
    * un approccio consiste nel [creare un pacchetto](/help/sites-administering/package-manager.md#package-manager) dello spazio dei nomi sull’autore
 
       * il `Advanced` scheda, per `AC Handling` seleziona `Overwrite`
+
    * replicare il pacchetto
 
       * scegli `Replicate` da gestione pacchetti
-
 
 ## Gestione dei tag in lingue diverse {#managing-tags-in-different-languages}
 
@@ -301,7 +296,7 @@ Una volta inserite tutte le traduzioni, seleziona **Salva** per uscire dalla mod
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-In generale, la lingua scelta per il tag viene presa dalla lingua della pagina, quando disponibile. Quando [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) viene utilizzato in altri casi (ad esempio nei moduli o nelle finestre di dialogo), il linguaggio dei tag dipende dal contesto.
+In generale, la lingua scelta per il tag viene presa dalla lingua della pagina, quando disponibile. Quando [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) viene utilizzato in altri casi (ad esempio nei moduli o nelle finestre di dialogo), il linguaggio dei tag dipende dal contesto.
 
 Invece di usare l’impostazione della lingua della pagina, la console Assegnazione tag utilizza l’impostazione della lingua utente. Nella console Assegnazione tag, per il tag &quot;Animals&quot;, veniva visualizzato &quot;Animaux&quot; per un utente che impostava la lingua sul francese nelle proprietà utente.
 
@@ -315,6 +310,6 @@ Per aggiungere una nuova lingua alla finestra di dialogo, vedi [Aggiunta di una 
 
 * [Assegnazione di tag per sviluppatori](/help/sites-developing/tags.md)
 
-   Informazioni sul framework dei tag nonché sull’estensione e l’inclusione di tag in applicazioni personalizzate.
+  Informazioni sul framework dei tag nonché sull’estensione e l’inclusione di tag in applicazioni personalizzate.
 
 * [Console classica per l’assegnazione di tag dell’interfaccia utente](/help/sites-administering/classic-console.md)
