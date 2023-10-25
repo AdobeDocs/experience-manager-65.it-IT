@@ -1,6 +1,6 @@
 ---
 title: Configurazione di LDAP con AEM 6
-description: Scopri come configurare LDAP con AEM.
+description: Scopri come utilizzare e configurare i servizi LDAP con AEM.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,9 +8,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1628'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Per il provider di identità LDAP sono disponibili le seguenti opzioni di config
   </tr>
   <tr>
    <td><strong>Percorsi DN utente</strong></td>
-   <td>Controlla se il DN deve essere utilizzato per calcolare una parte del percorso intermedio.</td>
+   <td>Controlla se il DN deve essere utilizzato per calcolare una porzione del percorso intermedio.</td>
   </tr>
   <tr>
    <td><strong>DN base gruppo</strong></td>
@@ -136,7 +136,7 @@ Per il provider di identità LDAP sono disponibili le seguenti opzioni di config
   </tr>
   <tr>
    <td><strong>Raggruppa percorsi DN</strong></td>
-   <td>Controlla se il DN deve essere utilizzato per calcolare una parte del percorso intermedio.</td>
+   <td>Controlla se il DN deve essere utilizzato per calcolare una porzione del percorso intermedio.</td>
   </tr>
   <tr>
    <td><strong>Attributo membro gruppo</strong></td>
@@ -222,6 +222,7 @@ Sono disponibili le seguenti opzioni di configurazione:
 | **Nome gestore di sincronizzazione** | Nome del gestore di sincronizzazione. |
 
 >[!NOTE]
+>
 Se si prevede di avere più configurazioni LDAP con l&#39;istanza AEM, è necessario creare provider di identità e gestori di sincronizzazione separati per ogni configurazione.
 
 ## Configurare LDAP su SSL {#configure-ldap-over-ssl}

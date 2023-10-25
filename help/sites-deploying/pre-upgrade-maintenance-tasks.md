@@ -1,7 +1,7 @@
 ---
 title: Attività di manutenzione pre-aggiornamento
 seo-title: Pre-Upgrade Maintenance Tasks
-description: Scopri le attività di pre-aggiornamento in AEM.
+description: Scopri le attività di pre-aggiornamento consigliate per l’AEM.
 seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
@@ -12,9 +12,9 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2031'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Il processo di aggiornamento consente di mantenere e unire i contenuti e le conf
 
 ## Genera il file quickstart.properties {#generate-quickstart-properties}
 
-Quando si avvia AEM dal file jar, viene `quickstart.properties` file generato in `crx-quickstart/conf`. Se AEM è stato avviato solo in passato con lo script di avvio, il file non è presente e l’aggiornamento non riesce. Verifica l’esistenza di questo file e, se non è presente, riavvia AEM dal file jar.
+Quando si avvia AEM dal file jar, un `quickstart.properties` file generato in `crx-quickstart/conf`. Se AEM è stato avviato solo in passato con lo script di avvio, il file non è presente e l’aggiornamento non riesce. Verifica l’esistenza di questo file e, se non è presente, riavvia AEM dal file jar.
 
 ## Configurare il flusso di lavoro e la rimozione del registro di controllo {#configure-wf-audit-purging}
 
@@ -151,7 +151,7 @@ L’elenco delle attività varia a seconda della modalità di esecuzione utilizz
 
 >[!CAUTION]
 >
->Il `DataStoreGarbageCollectionTask` chiama un’operazione di raccolta oggetti inattivi del datastore con la fase di contrassegno e sweep, se utilizzate. Per le distribuzioni che utilizzano un datastore condiviso, assicurati di riconfigurarlo correttamente o di preparare l’istanza per evitare l’eliminazione degli elementi a cui fa riferimento un’altra istanza. Questo processo potrebbe richiedere l’esecuzione manuale della fase di contrassegno su tutte le istanze prima di attivare questa attività di pre-aggiornamento.
+>Il `DataStoreGarbageCollectionTask` chiama un’operazione di raccolta oggetti inattivi del datastore con la fase di contrassegno e sweep, se utilizzate. Per le distribuzioni che utilizzano un archivio dati condiviso, assicurati di riconfigurarlo correttamente o di preparare l’istanza per evitare l’eliminazione degli elementi a cui fa riferimento un’altra istanza. Questo processo potrebbe richiedere l’esecuzione manuale della fase di contrassegno su tutte le istanze prima di attivare questa attività di pre-aggiornamento.
 
 ### Configurazione predefinita dei controlli di integrità pre-aggiornamento {#default-configuration-of-the-pre-upgrade-health-checks}
 
@@ -244,7 +244,6 @@ Di seguito sono elencati tutti i metodi disponibili che `PreUpgradeTasksMBeanImp
 >* Qualsiasi applicazione esterna che si connette a JMX
 >* cURL
 >
-
 
 ## Disabilita moduli di accesso personalizzati {#disable-custom-login-modules}
 
@@ -339,7 +338,6 @@ Per evitare che si verifichi uno scenario di questo tipo, aggiorna lo schema eff
 >* Stai effettuando l’aggiornamento da versioni AEM precedenti alla 6.3 di AEM
 >* Durante l’aggiornamento si verifica uno degli errori indicati di seguito.
 >
-
 
 Ci sono casi eccezionali in cui gli utenti del servizio potrebbero finire con una versione precedente dell’AEM impropriamente taggata come utenti normali.
 

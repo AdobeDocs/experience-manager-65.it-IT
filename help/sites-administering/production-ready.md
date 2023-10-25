@@ -1,14 +1,14 @@
 ---
 title: Esecuzione di AEM in modalità pronta per la produzione
-description: Scopri come eseguire l’AEM in modalità pronta per la produzione.
+description: Scopri come eseguire AEM in modalità pronta per la produzione.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '379'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ La nuova modalità di esecuzione non solo configurerà automaticamente l’istan
 >
 >Poiché, per motivi pratici, la modalità pronta per la produzione dell’AEM coprirà solo la maggior parte delle attività necessarie per proteggere un’istanza, si consiglia vivamente di consultare [Elenco di controllo della sicurezza](/help/sites-administering/security-checklist.md) prima di andare live con il tuo ambiente di produzione.
 >
->Inoltre, tieni presente che l’esecuzione di AEM in modalità pronta per la produzione disabilita in modo efficace l’accesso a CRXDE Lite. Se necessario a scopo di debug, consulta [Abilitazione di CRXDE Lite nell’AEM](/help/sites-administering/enabling-crxde-lite.md).
+>Inoltre, tieni presente che l’esecuzione di AEM in modalità pronta per la produzione disabilita in modo efficace l’accesso a CRXDE Liti. Se necessario a scopo di debug, consulta [Abilitazione di CRXDE Liti nell’AEM](/help/sites-administering/enabling-crxde-lite.md).
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Supporto della crittografia per le proprietà di configurazione
 seo-title: Encryption Support for Configuration Properties
-description: Supporto della crittografia per le proprietà di configurazione
+description: Scopri il supporto della crittografia per le proprietà di configurazione fornito in AEM.
 seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Questi passaggi mostrano come crittografare la password SMTP per il servizio di 
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Il **Supporto per la crittografia della console web di Adobe Experience Manager** viene visualizzata.
+1. Il **Supporto crittografia console Web Adobe Experience Manager** viene visualizzata.
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 

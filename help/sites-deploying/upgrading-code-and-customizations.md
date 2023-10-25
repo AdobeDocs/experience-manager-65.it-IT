@@ -1,7 +1,7 @@
 ---
 title: Aggiornamento del codice e delle personalizzazioni
 seo-title: Upgrading Code and Customizations
-description: Ulteriori informazioni sull’aggiornamento del codice personalizzato in AEM.
+description: Ulteriori informazioni sull’aggiornamento del codice e sulle personalizzazioni in AEM.
 seo-description: Learn more about upgrading custom code in AEM.
 uuid: dec11ef0-bf85-4e4e-80ac-dcb94cc3c256
 contentOwner: sarchiz
@@ -13,9 +13,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
-source-git-commit: a296e459461973fc2dbd0641c6fdda1d89d8d524
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Prima di procedere con un aggiornamento, è necessario disporre di una base di c
 Oltre ad aggiornare facoltativamente la base di codice e le personalizzazioni per lavorare con la nuova versione dell’AEM, la versione 6.5 consente anche di gestire le personalizzazioni in modo più efficiente con la funzione di compatibilità con le versioni precedenti come descritto in [questa pagina](/help/sites-deploying/backward-compatibility.md).
 
 Come indicato sopra e mostrato nel diagramma seguente, eseguendo il comando [Rilevatore pattern](/help/sites-deploying/pattern-detector.md) nel primo passaggio può aiutarti a valutare la complessità complessiva dell’aggiornamento. Può anche aiutarti a decidere se desideri eseguire in modalità di compatibilità o aggiornare le personalizzazioni per utilizzare tutte le nuove funzioni di AEM 6.5. Consulta la [Compatibilità con le versioni precedenti in AEM 6.5](/help/sites-deploying/backward-compatibility.md) per ulteriori dettagli.
-[ ![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Aggiorna base codice {#upgrade-code-base}
 
@@ -115,7 +115,7 @@ Le istanze con distribuzioni di Assets personalizzate devono essere preparate pe
 
 Puoi preparare le personalizzazioni per l’interfaccia utente di Assets effettuando le seguenti operazioni:
 
-1. Nell’istanza che viene aggiornata, apri CRXDE Lite da *https://server:port/crx/de/index.jsp*
+1. Nell’istanza che viene aggiornata, apri CRXDE Liti da *https://server:port/crx/de/index.jsp*
 
 1. Vai al seguente nodo:
 

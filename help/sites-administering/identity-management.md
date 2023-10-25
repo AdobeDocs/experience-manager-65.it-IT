@@ -1,7 +1,7 @@
 ---
 title: Gestione identità
 seo-title: Identity Management
-description: Scopri come gestire le identità in AEM.
+description: Scopri il funzionamento interno della gestione delle identità in AEM.
 seo-description: Learn about identity management in AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ La funzionalità di accesso (e disconnessione) è fornita da un [account con un 
 
 * Autoregistrazione dal sito web
 
-  A [Sito community](/help/communities/sites-console.md) può essere configurato per consentire ai visitatori di registrarsi autonomamente o di accedere con i propri account Facebook o Twitter.
+  A [Sito community](/help/communities/sites-console.md) può essere configurato per consentire ai visitatori di registrarsi autonomamente o di accedere con i propri account Facebook o di Twitter.
 
 * Richiesta di registrazione dal sito web
 
@@ -191,7 +191,7 @@ Il profilo si trova in `/home/users/geometrixx`:
 
 ![Profili come visualizzati in CRXDE](assets/chlimage_1-138.png)
 
-In un’installazione standard (authoring o pubblicazione) tutti hanno accesso in lettura all’intera serie di informazioni di profilo di tutti gli utenti. tutti sono un &quot;*Gruppo incorporato contenente automaticamente tutti gli utenti e i gruppi esistenti. Impossibile modificare l&#39;elenco dei membri*&quot;.
+In un’installazione standard (di authoring o pubblicazione) tutti hanno accesso in lettura all’intero profilo di tutti gli utenti. tutti sono un &quot;*Gruppo incorporato contenente automaticamente tutti gli utenti e i gruppi esistenti. Impossibile modificare l&#39;elenco dei membri*&quot;.
 
 Questi diritti di accesso sono definiti dal seguente ACL con caratteri jolly:
 

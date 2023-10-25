@@ -1,7 +1,7 @@
 ---
 title: Backup e ripristino
 seo-title: Backup and Restore
-description: Scopri come eseguire il backup e il ripristino dei contenuti AEM.
+description: Scopri come eseguire il backup e il ripristino dei contenuti e delle configurazioni dell’AEM.
 seo-description: Learn how to backup and restore your AEM content.
 uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2285'
 ht-degree: 0%
 
 ---
@@ -219,7 +219,7 @@ Il backup online utilizza il seguente algoritmo:
    * Se si esegue il backup in un file zip, viene creata una directory temporanea. Il nome della directory inizia con `backup.` e termina con `.temp`; ad esempio `backup.f4d3.temp`.
    * Se si esegue il backup in una directory, viene utilizzato il nome specificato nel percorso di destinazione. È possibile utilizzare una directory esistente, altrimenti verrà creata una nuova directory.
 
-      Un file vuoto denominato `backupInProgress.txt` viene creato nella directory di destinazione all&#39;avvio del backup. Questo file viene eliminato al termine del backup.
+     Un file vuoto denominato `backupInProgress.txt` viene creato nella directory di destinazione all&#39;avvio del backup. Questo file viene eliminato al termine del backup.
 
 1. I file vengono copiati dalla directory di origine alla directory di destinazione (o alla directory temporanea durante la creazione di un file zip). L’archivio segmenti viene copiato prima dell’archivio dati per evitare il danneggiamento dell’archivio. I dati di indice e cache vengono omessi durante la creazione del backup. Di conseguenza, i dati provenienti da `crx-quickstart/repository/cache` e `crx-quickstart/repository/index` non è incluso nel backup. L’indicatore della barra di avanzamento del processo è compreso tra 0% e 70% quando si crea un file zip, oppure tra 0% e 100% se non viene creato alcun file zip.
 
