@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi degli indici Oak
 seo-title: Troubleshooting Oak Indexes
-description: Come rilevare e correggere la reindicizzazione lenta.
+description: Scopri come identificare se l’indicizzazione è lenta, trovare la causa e risolvere il problema.
 uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -111,19 +111,19 @@ Per identificare e correggere un processo di reindicizzazione bloccato, effettua
 
       * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
       * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+
    * Raccogliere dati da asincrono `IndexStats` MBean:
 
       * Passa a AEM OSGi Web Console>Principale>JMX>IndexStat>asincrono
 
-         o vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+        o vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+
    * Utilizzare [modalità console di oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) per raccogliere i dettagli di ciò che esiste sotto il * `/:async`* nodo.
    * Raccogliere un elenco di punti di controllo dell’archivio utilizzando `CheckpointManager` MBean:
 
       * Console Web OSGi AEM>Principale>JMX>Gestione punti di controllo>listCheckpoints()
 
-         o vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
-
-
+        o vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Dopo aver raccolto tutte le informazioni descritte nel passaggio 1, riavviare l&#39;AEM.
 
@@ -155,11 +155,13 @@ Per interrompere in modo sicuro la reindicizzazione, segui questi passaggi:
    * Durante la reindicizzazione di un **esistente** , impostare la proprietà reindex su false
 
       * `/oak:index/someExistingIndex@reindex=false`
+
    * Oppure, per un **nuovo** indice, ovvero:
 
       * Impostare la proprietà type su disabled
 
          * `/oak:index/someNewIndex@type=disabled`
+
       * o rimuovere completamente la definizione dell’indice
 
    Al termine, esegui il commit delle modifiche nell’archivio.

@@ -1,13 +1,13 @@
 ---
 title: Console web in AEM
-description: Scopri come utilizzare la console web in Adobe Experience Manager.
+description: Scopri come utilizzare la console web in Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '706'
 ht-degree: 2%
 
 ---

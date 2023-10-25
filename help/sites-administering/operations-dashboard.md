@@ -1,7 +1,7 @@
 ---
 title: Dashboard operazioni
 seo-title: Operations Dashboard
-description: Scopri come utilizzare il dashboard operazioni.
+description: Scopri come utilizzare il dashboard operazioni in Adobe Experience Manager.
 seo-description: Learn how to use the Operations Dashboard.
 uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '6053'
+source-wordcount: '6057'
 ht-degree: 2%
 
 ---
@@ -111,6 +111,7 @@ La creazione di un singolo controllo di integrità prevede due passaggi: l’imp
 
       * **Tipo:** `String`
       * **Valore:** `granite/operations/components/mbean`
+
    * **Nome:** `resource`
 
       * **Tipo:** `String`
@@ -153,13 +154,13 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
    * **Nome (hc.name):** Nome del controllo di integrità composito. Si consiglia un nome significativo.
    * **Tag (hc.tags):** I tag per questa verifica stato. Se questo controllo di integrità composito è destinato a far parte di un altro controllo di integrità composito (ad esempio in una gerarchia di controlli di integrità), aggiungere i tag a cui è correlato il composito.
    * **Nome MBean (hc.mbean.name):** Il nome del Mbean assegnato all&#39;MBean JMX di questo controllo di integrità composito.
-   * **Filtra tag (filter.tags):** Proprietà specifica per i controlli di integrità compositi. Questi tag sono aggregati dal composito. Il controllo di integrità composito aggrega nel relativo gruppo tutti i controlli di integrità con qualsiasi tag corrispondente ai tag di filtro del composito. Ad esempio, una verifica di integrità composita con i tag del filtro **test** e **spunta**, aggrega tutti i controlli di integrità individuali e compositi che hanno uno qualsiasi dei **test** e **spunta** tag nella proprietà tag ( `hc.tags`).
+   * **Filtra tag (filter.tags):** Proprietà specifica per i controlli di integrità compositi. Questi tag sono aggregati dal composito. Il controllo di integrità composito aggrega nel relativo gruppo tutti i controlli di integrità con qualsiasi tag corrispondente ai tag di filtro del composito. Ad esempio, una verifica di integrità composita con i tag del filtro **test** e **spunta**, aggrega tutti i controlli di integrità individuali e compositi che hanno uno dei **test** e **spunta** tag nella proprietà tag ( `hc.tags`).
 
    >[!NOTE]
    >
    >Per ogni nuova configurazione di Apache Sling Composite Health Check viene creato un nuovo JMX Mbean.**
 
-1. Infine, la voce del controllo di integrità composito creato deve essere aggiunta nei nodi di configurazione del dashboard operazioni. La procedura è la stessa dei singoli controlli di integrità: un nodo di tipo **nt:unstructured** deve essere creato in `/apps/settings/granite/operations/hc`. La proprietà di risorsa del nodo è definita dal valore di **hc.media.name** nella configurazione OSGI.
+1. Infine, è necessario aggiungere la voce del controllo di integrità composito creato nei nodi di configurazione del dashboard operazioni. La procedura è la stessa dei singoli controlli di integrità: un nodo di tipo **nt:unstructured** deve essere creato in `/apps/settings/granite/operations/hc`. La proprietà di risorsa del nodo è definita dal valore di **hc.media.name** nella configurazione OSGI.
 
    Ad esempio, se hai creato una configurazione e hai impostato **hc.mbean.name** valore per **diskusage**, i nodi di configurazione si presentano come segue:
 
@@ -173,6 +174,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
 
       * **Tipo:** `String`
       * **Valore:** `granite/operations/components/mbean`
+
    * **Nome:** `resource`
 
       * **Tipo:** `String`
@@ -348,7 +350,7 @@ La dashboard di controllo dello stato può integrarsi con Nagios tramite Granite
    1. Premere il tasto **Configura** nel menu principale.
    1. Nel riquadro a sinistra, premere il tasto **Gestione configurazione core** in **Configurazione avanzata**.
    1. Premere il tasto **Host** collegamento sotto **Monitorare** sezione.
-   1. Aggiungi la definizione host:
+   1. Aggiungi la definizione dell’host:
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
 

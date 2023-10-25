@@ -1,15 +1,15 @@
 ---
 title: Analytics con provider esterni
-description: Scopri Analytics con provider esterni.
+description: Scopri come configurare una tua istanza di snippet generici di Analytics per definire una nuova configurazione di servizio.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Tali snippet consentono la raccolta dei dati e la generazione dei rapporti. I da
 Per la configurazione di base:
 
 1. Apri **Strumenti** console.
-1. Dal riquadro sinistro espandere **Configurazioni Cloud Services**.
+1. Dal riquadro sinistro espandere **Configurazioni Cloud Service**.
 1. Doppio clic **Snippet generico di analisi** per aprire la pagina:
 
    ![Snippet generico di analisi](assets/analytics_genericoverview.png)
@@ -84,13 +84,13 @@ Per la configurazione di base:
 Dopo aver creato la configurazione del servizio, è ora necessario configurare le pagine richieste per utilizzarla:
 
 1. Passa alla pagina.
-1. Apri **Proprietà pagina** dalla barra laterale, quindi **Cloud Services** scheda.
+1. Apri **Proprietà pagina** dalla barra laterale, quindi **Cloud Service** scheda.
 1. Clic **Aggiungi servizio**, quindi seleziona il servizio richiesto. Ad esempio, il **Snippet generico di analisi**:
 
    ![Aggiunta di un servizio cloud](assets/analytics_selectservice.png)
 
 1. Clic **OK** per salvare.
-1. Viene visualizzata di nuovo la **Cloud Services** scheda. Il **Snippet generico di analisi** è ora elencato con il messaggio `Configuration reference missing`. Utilizza l’elenco a discesa per selezionare la tua istanza di servizio specifica. Ad esempio, google-analytics:
+1. Viene visualizzata di nuovo la **Cloud Service** scheda. Il **Snippet generico di analisi** è ora elencato con il messaggio `Configuration reference missing`. Utilizza l’elenco a discesa per selezionare la tua istanza di servizio specifica. Ad esempio, google-analytics:
 
    ![Aggiunta della configurazione del servizio cloud](assets/analytics_selectspecificservice.png)
 

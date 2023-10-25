@@ -1,15 +1,15 @@
 ---
 title: Generazione rapporti
-description: Scopri come utilizzare la funzione di reporting in Adobe Experience Manager.
+description: Scopri come utilizzare la funzione di reporting in Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2777'
 ht-degree: 4%
 
 ---
@@ -120,12 +120,12 @@ Per impostare un filtro:
 
 1. Seleziona l’operatore desiderato dall’elenco a discesa.
 1. Immettere il testo su cui applicare il filtro.
-1. Clic **Applica**.
+1. Fai clic su **Applica**.
 
 Per disattivare il filtro:
 
 1. Rimuovi il testo del filtro.
-1. Clic **Applica**.
+1. Fai clic su **Applica**.
 
 #### Aggregati {#aggregates}
 

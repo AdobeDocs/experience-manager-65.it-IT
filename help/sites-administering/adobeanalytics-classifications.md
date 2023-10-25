@@ -1,8 +1,8 @@
 ---
 title: Classificazioni Adobe
 seo-title: Adobe Classifications
-description: Scopri le classificazioni di Adobe.
-seo-description: Learn about Adobe Classifications.
+description: Scopri come utilizzare le classificazioni Adobe per esportare i dati delle classificazioni in Adobe Analytics.
+seo-description: Learn how to use Adobe Classifications to export classifications data to Adobe Analytics.
 uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 7%
+source-wordcount: '609'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Classificazioni esporta i dati delle classificazioni in [Adobe Analytics](
 
 Per configurarlo:
 
-1. Utilizzo di **Navigazione**, seleziona **Strumenti**, **Cloud Services**, quindi **Cloud Services legacy**.
+1. Utilizzo di **Navigazione**, seleziona **Strumenti**, **Cloud Service**, quindi **Cloud Service legacy**.
 1. Scorri fino a **Adobe Analytics** e seleziona **Mostra configurazioni**.
 1. Fai clic su **[+]** accanto alla configurazione di Adobe Analytics.
 
@@ -53,7 +53,7 @@ Per configurarlo:
    | Suite per report | Immetti la suite di rapporti per la quale eseguire il processo di importazione. |
    | Set di dati | Immetti l’ID di relazione del set di dati per cui eseguire il processo di importazione. |
    | Trasformazione | Dal menu a discesa, seleziona un’implementazione di trasformatore. |
-   | Sorgente dati | Passa al percorso del contenitore dati. |
+   | Origine dati | Passa al percorso del contenitore dati. |
    | Esporta pianificazione | Seleziona la pianificazione per l’esportazione. Il valore predefinito è ogni 30 minuti. |
 
 1. Clic **OK** per salvare le impostazioni.
