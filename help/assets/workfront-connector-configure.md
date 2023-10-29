@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1740'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,7 @@ La mappatura dei metadati tra i progetti Workfront e le cartelle AEM è definita
 
 Per configurare le mappature, effettua le seguenti operazioni:
 
+1. Aggiungi `jcr:read` autorizzazioni a `/conf/global/settings/dam/adminui-extension/foldermetadataschema` per `wf-workfront-users` gruppo.
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati cartelle]**.
 1. Seleziona il modulo schema metadati cartelle da modificare e fai clic su Modifica.
 1. Seleziona il campo modulo schema metadati cartelle da modificare e seleziona la scheda Impostazioni nel pannello di destra.
