@@ -1,8 +1,6 @@
 ---
 title: Configurazione delle impostazioni del tipo di file
-seo-title: Configuring file type settings
-description: Scopri come configurare le impostazioni del tipo di file.
-seo-description: Learn how to configure file type settings.
+description: Scopri come configurare le impostazioni del tipo di file. In PDF Generator è possibile impostare le impostazioni dell'applicazione per i tipi di file supportati per configurare le impostazioni dei tipi di file.
 uuid: ab037659-c6ff-4de9-9417-f5a6fc8122cb
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 5f4bbad87768cf6bd73771f9eac6e01ab3bf3309
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '6158'
+source-wordcount: '6177'
 ht-degree: 0%
 
 ---

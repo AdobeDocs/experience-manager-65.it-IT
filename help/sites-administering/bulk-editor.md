@@ -74,7 +74,7 @@ Per utilizzare l&#39;Editor collettivo per modificare più elementi contemporane
   </tr>
   <tr>
    <td>Percorso directory principale</td>
-   <td>Indica il percorso della directory principale cercato dall'editor di massa.<br /> Ad esempio, <code>/content/geometrixx/en</code>. L’editor collettivo esegue la ricerca su tutti i nodi secondari.</td>
+   <td>Indica il percorso della directory principale cercato dall'editor di massa.<br />Esempio: <code>/content/geometrixx/en</code>. L’editor collettivo esegue la ricerca su tutti i nodi secondari.</td>
   </tr>
   <tr>
    <td>Parametri di query</td>

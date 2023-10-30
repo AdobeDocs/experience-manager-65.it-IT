@@ -1,8 +1,6 @@
 ---
 title: Configurazione delle impostazioni di Adobe PDF
-seo-title: Configuring Adobe PDF settings
-description: Scopri come configurare le impostazioni di Adobe PDF.
-seo-description: Learn how to configure Adobe PDF settings.
+description: Scopri come configurare le impostazioni Adobe PDF visibili nella pagina Impostazioni Adobe PDF. Puoi utilizzare una qualsiasi delle impostazioni predefinite di PDF o crearne di personalizzate.
 uuid: 980c9d6a-f75e-4e7d-b050-d2d07a10ef33
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '7265'
+source-wordcount: '7285'
 ht-degree: 0%
 
 ---
@@ -64,7 +62,7 @@ Questi file PDF possono essere aperti in Adobe Acrobat 5 e Adobe Acrobat Reader�
 
 **PDF/X-3 2002:** Verifica la conformità dei processi in ingresso a PDF/X-3 e crea i file PDF solo se conformi. Come PDF/X-1a, PDF/X-3 è uno standard ISO per lo scambio di contenuti grafici. La differenza principale è che PDF/X-3 supporta colori indipendenti dal dispositivo.
 
-**Qualità stampa:** Crea file PDF per la produzione di stampe di alta qualità (ad esempio, su una fotounità o su una piastrina). In questo caso, la dimensione del file non viene presa in considerazione. L&#39;obiettivo è quello di conservare tutte le informazioni contenute in un file PDF necessarie a un servizio di stampa esterno o a un fornitore di servizi di prestampa per stampare correttamente il documento. Questa serie di opzioni:
+**Qualità stampa:** Crea file PDF per la produzione di stampe di alta qualità, ad esempio su fotounità o piastrine. In questo caso, la dimensione del file non viene presa in considerazione. L&#39;obiettivo è quello di conservare tutte le informazioni contenute in un file PDF necessarie a un servizio di stampa esterno o a un fornitore di servizi di prestampa per stampare correttamente il documento. Questa serie di opzioni:
 
 * downsampling di immagini a colori e in scala di grigio a 300 dpi
 * downsampling immagini monocromatiche a 1200 dpi
@@ -87,7 +85,7 @@ I processi di stampa hanno esito negativo se dispongono di tipi di carattere che
 
 Le impostazioni di PDF determinano con precisione il modo in cui i file vengono convertiti e la struttura e le funzionalità PDF risultanti. Definisci una nuova impostazione di PDF o modificane una creata in precedenza. Non è possibile modificare le impostazioni predefinite, ma è possibile creare un&#39;impostazione basata su una esistente modificandola e salvandola con un nuovo nome.
 
-1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Impostazioni Adobe PDF.
+1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > Impostazioni Adobe PDF.
 1. Fare clic su Nuovo o sul nome di un&#39;impostazione esistente.
 1. Nella pagina Nuova/Modifica impostazione Adobe PDF, inserisci le informazioni richieste nelle sezioni seguenti:
 
@@ -111,9 +109,9 @@ Le impostazioni di PDF determinano con precisione il modo in cui i file vengono 
 
 ## Carica impostazioni PDF {#upload-pdf-settings}
 
-Le impostazioni di PDF possono essere disponibili nel server di generazione dei PDF caricandole da un computer locale o da un percorso di rete.
+Le impostazioni di PDF possono essere disponibili nel server PDF Generator caricandole da un computer locale o da un percorso di rete.
 
-1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Impostazioni Adobe PDF, quindi fai clic su Carica.
+1. In Administration Console, fai clic su Servizi > PDF Generator > Impostazioni Adobe PDF, quindi fai clic su Carica.
 1. Nella pagina Carica impostazioni Adobe PDF fare clic su Sfoglia, individuare il file delle impostazioni di PDF e fare clic su Apri.
 1. Fare clic su OK e quindi di nuovo su OK.
 
@@ -121,7 +119,7 @@ Le impostazioni di PDF possono essere disponibili nel server di generazione dei 
 
 Se non sono più necessarie, è possibile eliminare definitivamente le impostazioni di PDF.
 
-1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Impostazioni Adobe PDF.
+1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > Impostazioni Adobe PDF.
 1. Selezionare la casella di controllo accanto all&#39;impostazione da eliminare. È possibile selezionare più impostazioni.
 1. Fare clic su Elimina e quindi di nuovo su Elimina nella pagina Conferma eliminazione.
 
@@ -184,7 +182,7 @@ Utilizza le opzioni generali per specificare la versione di Acrobat da utilizzar
 
 **Disattivato:** Non comprime alcuna informazione strutturale nel documento di PDF. Selezionare questa opzione se si desidera che gli utenti visualizzino, esplorino e interagiscano con segnalibri e altre informazioni strutturali utilizzando Acrobat 5 e versioni successive.
 
-**Solo tag:** Comprime le informazioni strutturali nel documento di PDF. L’utilizzo di questa opzione consente di ottenere un file PDF che può essere aperto e stampato utilizzando Acrobat 5. Gli utenti non possono visualizzare informazioni su accessibilità, struttura o PDF con tag in Acrobat 5 o Acrobat Reader 5.0, ma possono visualizzarle in Acrobat 6 e Adobe Reader 6.0.
+**Solo tag:** Comprime le informazioni strutturali nel documento di PDF. L’utilizzo di questa opzione determina un file PDF che può essere aperto e stampato utilizzando Acrobat 5. Gli utenti non possono visualizzare informazioni su accessibilità, struttura o PDF con tag in Acrobat 5 o Acrobat Reader 5.0, ma possono visualizzarle in Acrobat 6 e Adobe Reader 6.0.
 
 **Ruota automaticamente pagine:** Imposta la rotazione automatica delle pagine in base all&#39;orientamento del testo o dei commenti DSC. Ad esempio, alcune pagine (come quelle contenenti tabelle) possono richiedere all’utente di ruotarle lateralmente per leggerle. Selezionare Singolarmente per ruotare ogni pagina in base alla direzione del testo sulla pagina. Selezionare Collettivo per file per ruotare tutte le pagine del documento in base all&#39;orientamento della maggior parte del testo.
 
@@ -206,7 +204,7 @@ Utilizza le opzioni generali per specificare la versione di Acrobat da utilizzar
 
 ### Dimensioni pagina predefinite {#default-page-size}
 
-Le opzioni Dimensioni pagina predefinite specificano la dimensione della pagina da utilizzare quando non è specificata nel file originale. In genere, i file Adobe PostScript includono queste informazioni, ad eccezione dei file PostScript incapsulati (EPS), che danno una dimensione riquadro ma non una dimensione pagina. La dimensione massima consentita per la pagina è di 31.800.000 cm in entrambe le direzioni. Queste opzioni configurano le dimensioni di pagina predefinite:
+Le opzioni Dimensioni pagina predefinite specificano la dimensione della pagina da utilizzare quando non è specificata nel file originale. In genere, i file di Adobe PostScript includono queste informazioni, ad eccezione dei file PostScript incapsulati (EPS), che danno una dimensione del riquadro ma non una dimensione della pagina. La dimensione massima consentita per la pagina è di 31.800.000 cm in entrambe le direzioni. Queste opzioni configurano le dimensioni di pagina predefinite:
 
 **Larghezza:** Larghezza della pagina
 
@@ -220,7 +218,7 @@ Le opzioni Immagini specificano la compressione e il ricampionamento delle immag
 
 Queste opzioni configurano le immagini a colori, in scala di grigio e monocromatiche:
 
-**Downsampling:** Imposta un valore per ogni tipo di immagine. Per eseguire il downsampling di immagini a colori, in scala di grigio o monocromatiche, PDF Generator combina i pixel in un&#39;area campione per ingrandire un pixel. Fornite la risoluzione del dispositivo di output in punti per pollice (dpi) e immettete una risoluzione in dpi nella casella Per immagini (For Images) sopra. Per le immagini con una risoluzione superiore a questa soglia, il Generatore di PDF combina i pixel necessari per ridurre la risoluzione dell&#39;immagine (pixel per pollice) all&#39;impostazione dpi specificata. Per disattivare il downsampling, selezionare Disattivato. Di seguito sono riportate le opzioni disponibili:
+**Downsampling:** Imposta un valore per ogni tipo di immagine. Per eseguire il downsampling di immagini a colori, in scala di grigio o monocromatiche, PDF Generator combina i pixel in un&#39;area campione per ingrandire un pixel. Fornite la risoluzione del dispositivo di output in punti per pollice (dpi) e immettete una risoluzione in dpi nella casella Per immagini (For Images) sopra. Per le immagini con una risoluzione superiore a questa soglia, PDF Generator combina i pixel necessari per ridurre la risoluzione dell&#39;immagine (pixel per pollice) all&#39;impostazione dpi specificata. Per disattivare il downsampling, selezionare Disattivato. Di seguito sono riportate le opzioni disponibili:
 
 **Downsampling medio per:** Calcola la media dei pixel in un&#39;area campione e sostituisce l&#39;intera area con il colore pixel medio alla risoluzione specificata.
 
@@ -297,13 +295,13 @@ Le opzioni Tipi di carattere specificano i tipi di carattere da incorporare in u
 
 **Sottoinsieme Di Caratteri Incorporati Quando La Percentuale Di Caratteri Utilizzati È Inferiore A:** Se selezionate questa opzione, specificate una percentuale di soglia per incorporare solo un sottoinsieme dei font. Ad esempio, se la soglia è 35 e viene utilizzato meno del 35% dei caratteri, PDF Generator incorpora solo tali caratteri. Sono incorporati solo i font con i bit di autorizzazione appropriati.
 
-**Quando l’incorporamento non riesce:** Specifica la modalità di risposta di PDF Generator se non riesce a trovare un tipo di carattere da incorporare durante l&#39;elaborazione di un file. È possibile fare in modo che PDF Generator ignori la richiesta e sostituisca il tipo di carattere, avvisi e sostituisca il tipo di carattere oppure annulli l&#39;elaborazione del processo corrente.
+**Quando l’incorporamento non riesce:** Specifica la modalità di risposta di PDF Generator se non è in grado di trovare un carattere da incorporare durante l&#39;elaborazione di un file. È possibile fare in modo che PDF Generator ignori la richiesta e sostituisca il tipo di carattere, invii un avviso e sostituisca il tipo di carattere oppure annulli l&#39;elaborazione del processo corrente.
 
 **Origine font:** Posizione dei font utilizzati da PDF Generator.
 
 ### Specificare i font da incorporare {#specify-which-fonts-to-embed}
 
-1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Impostazioni Adobe PDF.
+1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > Impostazioni Adobe PDF.
 1. Fai clic su Nuovo o sul nome di un’impostazione.
 1. Fare clic su Tipi di carattere e deselezionare Incorpora tutti i tipi di carattere.
 1. Nell&#39;elenco Origine font selezionare un&#39;origine font e fare clic su Vai per aggiornare l&#39;elenco dei font nella casella a sinistra.
@@ -413,7 +411,7 @@ Quando si lavora con le opzioni avanzate, è utile avere una conoscenza del ling
 
 **Mantieni semantica copia di livello 2:** Utilizza l&#39;operatore copypage definito in PostScript LanguageLevel 2 anziché in PostScript LanguageLevel 3. Se disponi di un file PostScript e selezioni questa opzione, la pagina viene copiata da un operatore copypage. Se questa opzione non è selezionata, viene eseguito l&#39;equivalente di un&#39;operazione showpage, ma lo stato della grafica non viene reinizializzato.
 
-**Mantieni impostazioni sovrastampa:** Mantiene le impostazioni di sovrastampa nei file convertiti in PDF. I colori sovrastampati sono due o più inchiostri stampati uno sopra l&#39;altro. Ad esempio, quando un inchiostro ciano viene stampato su un inchiostro giallo, la sovrastampa risultante è di colore verde. Senza la sovrastampa, il giallo sottostante non verrebbe stampato, dando luogo a un colore ciano.
+**Mantieni impostazioni sovrastampa:** Mantiene le impostazioni di sovrastampa nei file convertiti in PDF. I colori sovrastampati sono due o più inchiostri stampati uno sopra l&#39;altro. Ad esempio, quando un inchiostro ciano viene stampato su un inchiostro giallo, la sovrastampa risultante è di colore verde. Senza sovrastampa, il giallo sottostante non verrebbe stampato, dando luogo a un colore ciano.
 
 **Sovrastampa Il Valore Predefinito È Diverso Da Zero:** Impedisce agli oggetti sovrastampati con valori CMYK pari a zero di eliminare gli oggetti CMYK sottostanti. Questo effetto viene ottenuto inserendo il parametro dello stato grafico OPM 1 nel file PDF in qualsiasi posizione sia presente l&#39;operatore Setoverprint.
 
@@ -481,7 +479,7 @@ Per istruzioni sull&#39;accesso alle opzioni di reporting e conformità degli St
 
 **Valori Predefiniti Se Non Specificati Nel Documento:** Questa opzione è disponibile quando Standard di conformità nella pagina Report standard e conformità è impostato su un&#39;opzione diversa da Nessuno.
 
-**Nome profilo intento di output:** Indica la condizione di stampa caratterizzata per cui il documento è preparato. Se un documento non specifica un nome OutputIntent, Generator PDF utilizza il valore selezionato da questo menu. È possibile selezionare uno dei nomi specificati oppure immettere un nome nello spazio fornito. Se il flusso di lavoro richiede che il documento specifichi l&#39;intento di output, selezionare Nessuno. Qualsiasi documento che non soddisfa il requisito non supera il controllo di conformità.
+**Nome profilo intento di output:** Indica la condizione di stampa caratterizzata per cui il documento è preparato. Se un documento non specifica un nome OutputIntent, PDF Generator utilizza il valore selezionato da questo menu. È possibile selezionare uno dei nomi specificati oppure immettere un nome nello spazio fornito. Se il flusso di lavoro richiede che il documento specifichi l&#39;intento di output, selezionare Nessuno. Qualsiasi documento che non soddisfa il requisito non supera il controllo di conformità.
 
 **Identificatore condizione di output:** Indica il nome di riferimento specificato dal Registro di sistema del nome del profilo dell&#39;intento di output.
 
@@ -561,14 +559,14 @@ Questi file hanno molti scopi. Ad esempio, i file prolog possono essere modifica
 
 ### Scaricare un file prolog o epilogue {#download-a-prologue-or-epilogue-file}
 
-1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Impostazioni Adobe PDF.
+1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > Impostazioni Adobe PDF.
 1. Fai clic su Nuovo o sul nome di un’impostazione.
 1. Fai clic su Avanzate, quindi, accanto all’opzione Usa Prolog.ps ed Epilog.ps, fai clic su Scarica.
 1. Nella pagina Scarica prologo ed Epilog file, fai clic su Prolog.ps o Epilog.ps e poi su Salva.
 
 ### Caricare un file prolog o epilog {#upload-a-prologue-or-epilogue-file}
 
-1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Impostazioni Adobe PDF.
+1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > Impostazioni Adobe PDF.
 1. Fai clic su Nuovo o sul nome di un’impostazione.
 1. Fai clic su Avanzate, quindi, accanto all’opzione Usa Prolog.ps ed Epilog.ps, fai clic su Carica.
 1. Nella pagina Carica prologo e file di epilogazione fare clic su Sfoglia per selezionare un prologo o un file di epilogo.

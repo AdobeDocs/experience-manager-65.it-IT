@@ -1,14 +1,14 @@
 ---
 title: Specifica delle opzioni di configurazione XCI
-description: Scopri come specificare le opzioni di configurazione XCI.
+description: Scopri come specificare le opzioni di configurazione XCI. Puoi specificare i valori di un file XCI personalizzato per Modulo adattivo, in modo che possa essere utilizzato durante il rendering del modulo.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '149'
 ht-degree: 1%
 
 ---

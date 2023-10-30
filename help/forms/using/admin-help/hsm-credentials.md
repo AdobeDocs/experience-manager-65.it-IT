@@ -1,14 +1,14 @@
 ---
 title: Gestione delle credenziali HSM
-description: Scopri come gestire le credenziali HSM.
+description: Scopri come gestire le credenziali HSM. Puoi gestire HSM dalla pagina Gestione archivio fonti attendibili. Puoi visualizzare, controllare, aggiornare, reimpostare ed eliminare i componenti HSM.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---

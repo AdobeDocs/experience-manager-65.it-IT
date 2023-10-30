@@ -1,8 +1,6 @@
 ---
 title: Configurazione delle impostazioni di protezione
-seo-title: Configuring security settings
-description: Scopri come configurare le impostazioni di sicurezza.
-seo-description: Learn how to configure security settings.
+description: Scopri come configurare le impostazioni di sicurezza. È possibile proteggere i documenti di PDF limitando l’accesso. È possibile crittografare, certificare o proteggere il documento tramite password.
 uuid: 9747f268-3551-4064-8dba-e1de4a577843
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -28,7 +26,7 @@ Nella pagina Impostazioni protezione è possibile eseguire le operazioni seguent
 
 A *impostazione di protezione* controlla la protezione e le autorizzazioni per i file convertiti con tale impostazione di protezione.
 
-1. Nella console di amministrazione, fai clic su Servizi > Generatore di PDF > Impostazioni di sicurezza.
+1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > Impostazioni di sicurezza.
 1. Fare clic su Nuovo o sul nome di un&#39;impostazione di protezione.
 1. Nella pagina Nuova/Modifica impostazione di protezione immettere le informazioni richieste per l&#39;impostazione di protezione. (vedere [Configurazione delle impostazioni del tipo di file](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings).)
 1. Fare clic su Salva e nella finestra di dialogo visualizzata digitare un nome per l&#39;impostazione e quindi fare clic su OK.
@@ -119,6 +117,6 @@ Queste opzioni configurano le autorizzazioni:
 
 Se non è più necessaria, è possibile eliminare un&#39;impostazione di protezione. Non è tuttavia possibile eliminare le impostazioni di protezione preconfigurate.
 
-1. Nella console di amministrazione, fai clic su **[!UICONTROL Servizi > Generatore di PDF > Impostazioni di sicurezza]**.
+1. Nella console di amministrazione, fai clic su **[!UICONTROL Servizi > PDF Generator > Impostazioni di sicurezza]**.
 1. Selezionare la casella di controllo accanto all&#39;impostazione da eliminare. È possibile selezionare più impostazioni.
 1. Clic **[!UICONTROL Elimina]** e il **[!UICONTROL Conferma eliminazione]** pagina, fai clic su **[!UICONTROL Elimina]** di nuovo.

@@ -1,17 +1,15 @@
 ---
 title: Creazione di un’app AEM Forms sicura per iOS
-seo-title: Building a secure AEM Forms app for iOS
-description: Passaggi per creare un’app AEM Forms sicura.
-seo-description: Steps to build a secure AEM Forms app.
+description: Scopri come creare un’app AEM Forms sicura per iOS archiviando il progetto Xcode. In questo modo vengono creati il file di installazione (file con estensione ipa) e l'elenco delle proprietà (file con estensione plist).
 uuid: 6c4b160f-4d0c-4976-9609-9196795b6c8e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---

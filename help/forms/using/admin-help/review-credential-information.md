@@ -1,8 +1,6 @@
 ---
 title: Verifica informazioni sull'utilizzo delle credenziali
-seo-title: Review credential use information
-description: Scopri come rivedere le informazioni sull’utilizzo delle credenziali.
-seo-description: Learn how to review credential use information.
+description: Scopri come rivedere le informazioni sull’utilizzo delle credenziali. Le informazioni sull’utilizzo delle credenziali, che ne descrivono l’utilizzo, sono accessibili tramite l’estensione Acrobat Reader.
 uuid: 02af75f9-c235-470d-a98b-a2102aa31381
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
 exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---

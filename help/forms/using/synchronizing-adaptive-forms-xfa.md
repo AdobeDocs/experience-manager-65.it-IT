@@ -1,8 +1,6 @@
 ---
 title: Sincronizzazione di Forms adattivo con i modelli di modulo XFA
-seo-title: Synchronizing Adaptive Forms with XFA Form Templates
-description: Sincronizzazione dei moduli adattivi con i file XFA/XDP.
-seo-description: Synchronizing Adaptive forms with XFA/XDP files.
+description: Scopri come sincronizzare i moduli con i file XFA/XDP. Riutilizza i campi dei moduli sincronizzati con le modifiche apportate ai campi corrispondenti nei file XFA/XDP.
 uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -10,9 +8,9 @@ discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
 feature: Adaptive Forms
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1231'
 ht-degree: 0%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Puoi creare un modulo adattivo basato su un modello di modulo XFA ( `*.XDP` file). Questo riutilizzo consente di mantenere l’investimento nei moduli XFA esistenti. Per informazioni su come utilizzare un modello di modulo XFA per creare un modulo adattivo, [Creare un modulo adattivo basato su un modello](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+È possibile creare un modulo adattivo basato su un modello di modulo XFA ( `*.XDP` file). Questo riutilizzo consente di mantenere l’investimento nei moduli XFA esistenti. Per informazioni su come utilizzare un modello di modulo XFA per creare un modulo adattivo, [Creare un modulo adattivo basato su un modello](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 Puoi riutilizzare i campi del file XDP nel modulo adattivo. Questi campi sono denominati campi associati. Le proprietà dei campi associati (ad esempio script, etichette e formato di visualizzazione) vengono copiate dal file XDP. Puoi anche scegliere di ignorare il valore di alcune di queste proprietà.
 
