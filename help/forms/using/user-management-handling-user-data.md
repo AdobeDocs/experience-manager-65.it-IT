@@ -1,16 +1,15 @@
 ---
 title: Gestione degli utenti Forms | Gestione dei dati utente
-seo-title: Forms user management | Handling user data
-description: Gestione degli utenti Forms | Gestione dei dati utente
+description: Il componente Gestione utenti di AEM Forms JEE consente la creazione, l’autorizzazione e la gestione degli utenti per l’accesso ad AEM Forms.
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -68,7 +67,7 @@ Gestione utenti memorizza i dati utente nelle tabelle di database seguenti:
    <td>Contiene le voci di tutti gli utenti dai domini locali, aziendali e ibridi. Contiene gli ID e-mail degli utenti.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code> (database Oracle e MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (database Oracle e MS SQL)</p> </td>
    <td>Memorizza la mappatura tra utenti e gruppi.</td>
   </tr>
   <tr>
@@ -80,7 +79,7 @@ Gestione utenti memorizza i dati utente nelle tabelle di database seguenti:
    <td>Memorizza la mappatura tra entità e autorizzazioni per utenti e gruppi.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> (database Oracle e MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (database Oracle e MS SQL)</p> </td>
    <td>Memorizza i valori di attributo vecchi e nuovi corrispondenti a un'entità principale.<br /> </td>
   </tr>
  </tbody>
@@ -122,7 +121,6 @@ Eseguire i seguenti comandi di database per esportare i dati di gestione utente 
 >
 >* Sostituisci `EdcPrincipalGrpCtmntEntity` con `EdcPrincipalGrpCtmntEnti`
 >
-
 
 ```sql
 Select * from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (Select id from EDCPRINCIPALENTITY where id='<principal_id>'));

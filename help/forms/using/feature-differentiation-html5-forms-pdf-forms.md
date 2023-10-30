@@ -1,8 +1,6 @@
 ---
 title: Differenziazione delle funzioni tra moduli di HTML5 e PDF forms
-seo-title: Feature differentiation between HTML5 forms and PDF forms
-description: Funzionalità supportata nei moduli e nei PDF forms di HTML5
-seo-description: Feature supported in HTML5 forms and PDF forms
+description: Scopri le differenze tra moduli HTML5 e PDF forms.
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference
@@ -12,9 +10,9 @@ discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---

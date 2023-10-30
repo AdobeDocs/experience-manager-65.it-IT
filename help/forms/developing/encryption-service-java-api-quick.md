@@ -1,7 +1,6 @@
 ---
 title: Servizio QuickStart (SOAP) per API Java del servizio di crittografia
-seo-title: Encryption Service Java API QuickStart(SOAP)
-description: Servizio QuickStart (SOAP) per API Java del servizio di crittografia
+description: Crittografa, rimuovi la crittografia basata su password/certificato, sblocca e determina il tipo di crittografia per i documenti PDF utilizzando l’API Java in modalità SOAP.
 uuid: 3e29b3e9-340b-4b35-80cc-f0aff4180892
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
 exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---

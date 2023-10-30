@@ -1,7 +1,6 @@
 ---
 title: Informazioni sui processi di AEM Forms
-seo-title: Understanding AEM Forms Processes
-description: Informazioni sui processi di AEM Forms
+description: I processi di AEM Forms includono la creazione di moduli, l’invio, la gestione dei dati, la convalida, l’integrazione, l’automazione dei flussi di lavoro e la gestione degli output.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -33,7 +32,7 @@ Tuttavia, in alcune situazioni un processo non può essere completato in modo si
 * Un processo può estendersi oltre i confini dell’organizzazione.
 * Per completare un processo è necessario un input esterno. Si consideri ad esempio una situazione in cui un modulo viene inviato a un manager fuori sede. In questa situazione, il processo non viene completato fino a quando il manager non restituisce e compila il modulo.
 
-   Questi tipi di processi sono noti come processi di lunga durata. Un processo di lunga durata viene eseguito in modo asincrono, consentendo ai sistemi di interagire quando le risorse lo consentono e consentendo il tracciamento e il monitoraggio dell&#39;operazione. Quando viene richiamato un processo di lunga durata, AEM Forms crea un valore di identificativo di chiamata come parte di un record che tiene traccia dello stato del processo di lunga durata. Il record viene memorizzato nel database di AEM Forms. È possibile eliminare i record di processi di lunga durata quando non sono più necessari.
+  Questi tipi di processi sono noti come processi di lunga durata. Un processo di lunga durata viene eseguito in modo asincrono, consentendo ai sistemi di interagire quando le risorse lo consentono e consentendo il tracciamento e il monitoraggio dell&#39;operazione. Quando viene richiamato un processo di lunga durata, AEM Forms crea un valore di identificativo di chiamata come parte di un record che tiene traccia dello stato del processo di lunga durata. Il record viene memorizzato nel database di AEM Forms. È possibile eliminare i record di processi di lunga durata quando non sono più necessari.
 
 >[!NOTE]
 >

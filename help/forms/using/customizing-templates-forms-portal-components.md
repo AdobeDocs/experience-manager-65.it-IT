@@ -1,8 +1,6 @@
 ---
 title: Personalizzazione dei modelli per i componenti del portale Forms
-seo-title: Customizing templates for forms portal components
-description: Visualizzare metadati personalizzati nell’elenco dei moduli
-seo-description: Display custom metadata in form listing
+description: L’interfaccia utente di AEM Forms consente agli utenti di aggiungere metadati ai moduli. I metadati personalizzati migliorano l’esperienza utente nell’elenco dei moduli e nella ricerca per la tua organizzazione.
 uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +9,9 @@ discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -45,6 +43,7 @@ Per creare un modello personalizzato per vari componenti di Forms Portal, effett
 
       * Sezione bozze: /libs/fd/fp/draftTemplate
       * Sezione invii: /libs/fd/fp/submissionsTemplate
+
    * Componente collegamento: /libs/fd/fp/linkTemplate
 
    Aggiungi un titolo da visualizzare durante la selezione dei modelli di layout.
@@ -91,7 +90,7 @@ Per includere una voce ripetibile, configura il valore dell&#39;attributo **dati
 
 *Nell’esempio discusso, due elementi Div sono presenti nella parte superiore del modello personalizzato. La prima, con classe CSS &quot;__FP_boxes-container&quot;, funziona come elemento contenitore per i moduli elencati. La seconda, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. Il **dati ripetibili**l&#39;attributo presente nell&#39;elemento Div ha il valore **true**.*
 
-Ogni segnaposto dispone di un set di metadati OOTB esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere **${metadata_prop}, proprietà** sul posto.
+Ogni segnaposto dispone di un set di metadati OOTB esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere **${metadata_prop} proprietà** sul posto.
 
 *Nell’esempio, la proprietà dei metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **descrizione**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, e **percorso**nel modo prescritto.*
 

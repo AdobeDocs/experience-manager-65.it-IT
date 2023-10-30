@@ -1,16 +1,15 @@
 ---
 title: Gestione della corrispondenza | Gestione dei dati utente
-seo-title: Correspondence Management | Handling user data
-description: Gestione della corrispondenza | Gestione dei dati utente
+description: Gestione della corrispondenza e Gestione dei dati utente nell’ambiente AEM Forms.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -41,7 +40,7 @@ A seconda della persistenza dell’archivio dati configurata per la distribuzion
   <tr>
    <td><p>Predefiniti</p> </td>
    <td><p>Archivio AEM dell’istanza di pubblicazione e delle istanze di authoring specificate nella configurazione di replica inversa</p> </td>
-   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code> </p> </td>
+   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code><br /> </p> </td>
   </tr>
   <tr>
    <td><p>Remoto</p> </td>

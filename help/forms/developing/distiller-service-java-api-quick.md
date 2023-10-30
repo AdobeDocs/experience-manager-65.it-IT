@@ -1,7 +1,6 @@
 ---
 title: Servizio Distiller QuickStart per API Java (SOAP)
-seo-title: Distiller Service Java API QuickStart(SOAP)
-description: Servizio Distiller QuickStart per API Java (SOAP)
+description: Il servizio Distiller trasforma i file PostScript, EPS e PRN in PDF, comunemente utilizzati per conversioni di documenti in formato cartaceo o elettronico di grandi volumi.
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---

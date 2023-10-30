@@ -1,8 +1,6 @@
 ---
 title: Guida introduttiva all’API di servizio Forms
-seo-title: Forms Service API Quick Starts
-description: Utilizza la Guida introduttiva per l’API del servizio Forms.
-seo-description: Use the Quick Starts for the Forms Service API.
+description: Esegui il rendering interattivo di PDF, HTML Forms e Frammenti tramite API JAVA.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -11,7 +9,7 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 0%

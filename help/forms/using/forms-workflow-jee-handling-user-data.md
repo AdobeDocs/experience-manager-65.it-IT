@@ -1,16 +1,15 @@
 ---
 title: Flussi di lavoro di Forms JEE | Gestione dei dati utente
-seo-title: Forms JEE workflows | Handling user data
-description: Flussi di lavoro di Forms JEE | Gestione dei dati utente
+description: flussi di lavoro AEM Forms JEE per la progettazione, la creazione e la gestione dei processi aziendali.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -165,6 +164,7 @@ Una volta ottenuti gli ID delle attività, eseguire le operazioni seguenti per e
       Nel file system GDS:
 
       1. Cerca file con le seguenti stringhe ID sessione come estensioni:
+
       * `_wfattach<task_id>`
       * `_wftask<fd_id>`
       * `_wftaskformid<fd_id>`
@@ -174,6 +174,7 @@ Una volta ottenuti gli ID delle attività, eseguire le operazioni seguenti per e
       `<file_name_guid>.session<session_id_string>`
 
       1. Elimina tutti i file di marcatore e gli altri file con il nome file esatto `<file_name_guid>` dal file system.
+
    1. **GDS nel database**
 
       Esegui i seguenti comandi per ogni ID sessione:
@@ -183,9 +184,6 @@ Una volta ottenuti gli ID delle attività, eseguire le operazioni seguenti per e
       delete from tb_dm_session_reference where sessionid=<session_id>
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
-
-
-
 
 1. Esegui i seguenti comandi per eliminare i dati per gli ID attività dal database del server AEM Forms:
 

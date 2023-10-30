@@ -1,8 +1,6 @@
 ---
 title: Utilizzo di un modulo adattivo in HTML Workspace
-seo-title: Using an adaptive form in HTML Workspace
-description: Utilizzo di un modulo adattivo in HTML Workspace
-seo-description: Using an adaptive form in HTML Workspace
+description: Scopri come utilizzare un modulo adattivo in HTML Workspace per consentire ai lavoratori sul campo di accedere al modulo sui loro dispositivi.
 uuid: 473d5daf-a3ed-449f-9136-585755b59922
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ topic-tags: forms-workspace
 discoiquuid: 2b6875cd-2ee7-4aa8-90c7-d33583dc2f0e
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---

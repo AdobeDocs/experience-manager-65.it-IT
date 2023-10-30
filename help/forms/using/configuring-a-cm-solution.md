@@ -1,7 +1,6 @@
 ---
 title: Configurazione di una soluzione di gestione della corrispondenza
-seo-title: Configuring a Correspondence Management solution
-description: Configurazione di una soluzione di gestione della corrispondenza
+description: Configurare una soluzione di gestione della corrispondenza nell’ambiente AEM Forms.
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference
@@ -9,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
@@ -48,7 +47,7 @@ Segui questi passaggi quando definisci l’URL dell’istanza Publish per il ges
    * **URL istanza di pubblicazione**: specifica un URL per l’istanza di pubblicazione . Se disponi di una singola istanza di pubblicazione o il server web che precede la farm di pubblicazione non è accessibile dall’ambiente di authoring a causa di eventuali restrizioni. Se l’istanza di pubblicazione specificata non è disponibile, è disponibile un meccanismo di fallback da gestire dal lato dell’autore.
    * **Stringa URL**:
 
-      `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`
+     `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
