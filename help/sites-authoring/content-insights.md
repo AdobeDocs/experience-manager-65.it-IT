@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 245d501d4124d9aaa3f2b12bdb06a5bdd1661e8c
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '530'
 ht-degree: 2%
 
 ---
@@ -43,6 +43,10 @@ Consulta [Apertura di Analytics e Recommendations per una pagina](/help/sites-au
 ## Periodo di segnalazione
 
 I rapporti mostrano i dati per un periodo di tempo controllato. Quando si modifica il periodo di reporting, i rapporti vengono aggiornati automaticamente con i dati relativi a tale periodo. I suggerimenti visivi indicano il momento in cui sono cambiate le versioni delle pagine, in modo da poter confrontare le prestazioni di ogni versione.
+
+>[!NOTE]
+>
+>La timeline per il dashboard Content Insight è in `GMT`.
 
 Puoi anche specificare la granularità dei dati segnalati, ad esempio puoi visualizzare dati giornalieri, settimanali, mensili o annuali.
 
