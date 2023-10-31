@@ -57,11 +57,11 @@ Passare alla directory appropriata e dal prompt dei comandi digitare `./aem65_cf
 
    * Oppure deseleziona il **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Prima dell’esecuzione **Gestione configurazione** utilizzo **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, passa a *`<AEMForms_Install_Dir>\configurationManager\bin`* directory e sostituzione [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) file.
 
-   
-   >[!NOTE]
+   >>
+   [!NOTE]
+   >>
+   Utilizzo di **ConfigurationManager.bat** file consente di evitare di aggiornare manualmente il nome dei file con estensione lax.
    >
-   >Utilizzo di **ConfigurationManager.bat** file consente di evitare di aggiornare manualmente il nome dei file con estensione lax.
-   
 
 1. **[Solo per Unix]:**
 

@@ -2,7 +2,7 @@
 title: Tradurre il contenuto
 description: Utilizza il connettore di traduzione e le regole per tradurre il contenuto headless.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 82%
@@ -11,7 +11,7 @@ ht-degree: 82%
 
 # Tradurre il contenuto {#translate-content}
 
-Utilizza il connettore di traduzione e le regole per tradurre il contenuto headless.
+Utilizza l’integrazione e le regole di traduzione per tradurre i contenuti headless.
 
 ## Percorso affrontato finora {#story-so-far}
 

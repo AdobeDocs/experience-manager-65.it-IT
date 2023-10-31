@@ -2,10 +2,10 @@
 title: Configurare le regole di traduzione
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 92%
+ht-degree: 83%
 
 ---
 
@@ -15,12 +15,12 @@ Scopri come definire le regole di traduzione per identificare i contenuti per la
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione AEM headless, [Configurare il connettore di traduzione](configure-connector.md), hai imparato a installare e configurare il connettore di traduzione e ora dovresti:
+Nel documento precedente del percorso di traduzione headless dell&#39;AEM, [Configurare l’integrazione della traduzione](configure-connector.md) hai imparato a installare e configurare l’integrazione di traduzione e ora dovresti:
 
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.
 
-Ora che il connettore è configurato, questo articolo illustra il passaggio successivo per identificare il contenuto da tradurre.
+Ora che la tua integrazione è impostata, questo articolo illustra il passaggio successivo per identificare il contenuto da tradurre.
 
 ## Obiettivo {#objective}
 
@@ -92,7 +92,7 @@ Ora cha hai completato questa parte del percorso di traduzione headless, dovrest
 * Comprendere come funzionano le regole di traduzione.
 * Essere in grado di definire le tue regole di traduzione.
 
-Sviluppa questa conoscenza e continua il tuo percorso di traduzione AEM headless esaminando successivamente il documento [Tradurre il contenuto](translate-content.md) dove scoprirai come il connettore e le regole collaborano alla traduzione dei contenuti.
+Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM esaminando il documento [Traduci contenuto](translate-content.md) dove scoprirai come l’integrazione e le regole lavorano insieme per tradurre contenuti headless.
 
 ## Risorse aggiuntive {#additional-resources}
 
