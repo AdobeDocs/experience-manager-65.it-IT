@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1248'
 ht-degree: 2%
 
 ---

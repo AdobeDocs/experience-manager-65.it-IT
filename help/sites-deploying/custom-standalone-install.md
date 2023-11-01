@@ -6,9 +6,9 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Esistono varie regole da seguire quando si rinomina il file jar quickstart:
 
 Se esegui Oracle Java 11 (o in genere versioni di Java più recenti di 8), sarà necessario aggiungere opzioni aggiuntive alla riga di comando all’avvio dell’AEM.
 
-* I seguenti elementi: `-add-opens` è necessario aggiungere opzioni per evitare che i messaggi di avviso di accesso ai dati di reflection correlati vengano visualizzati nel `stdout.log`
+* I seguenti elementi: `-add-opens` per evitare che i messaggi di avviso relativi all&#39;accesso ai dati di reflection vengano visualizzati in `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning

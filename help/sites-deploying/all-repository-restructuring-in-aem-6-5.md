@@ -1,18 +1,14 @@
 ---
 title: Ristrutturazione dell’archivio comune in AEM 6.5
-seo-title: Common Repository Restructuring in AEM 6.5
-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura di archivio in AEM 6.5, comune a tutte le aree dell’AEM.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
-uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
+description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.5 che sono comuni a tutte le aree dell’AEM.
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2691'
+source-wordcount: '2689'
 ht-degree: 2%
 
 ---
@@ -32,7 +28,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
 **Prima di un aggiornamento futuro**
 
 * [Configurazioni ContextHub](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#contexthub-configurations)
-* [Progettazioni Cloud Services classiche](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
+* [Progettazioni Cloud Service classiche](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
 * [Progettazioni dashboard classiche](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-dashboards-designs)
 * [Progettazioni report classici](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-reports-designs)
 * [Progettazioni predefinite](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#default-designs)
@@ -48,7 +44,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
 * [Regole di traduzione](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules)
 * [Libreria client widget traduzione](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-widget-client-library)
 * [Console Web di attivazione struttura](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tree-activation-web-console)
-* [Cloud Services di connettori di traduzione fornitore](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
+* [Cloud Service di connettori di traduzione fornitore](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
 * [Modelli e-mail di notifica flusso di lavoro](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 ## Con aggiornamento 6.5 {#with-upgrade}
@@ -240,7 +236,7 @@ Cioè il `sling:resourceType` della configurazione ContextHub deve essere relati
  </tbody>
 </table>
 
-### Progettazioni Cloud Services classiche {#classic-cloud-services-designs}
+### Progettazioni Cloud Service classiche {#classic-cloud-services-designs}
 
 <table style="table-layout:auto">
  <tbody>
@@ -607,33 +603,33 @@ Cioè il `sling:resourceType` della configurazione ContextHub deve essere relati
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Qualsiasi nuovo Cloud Services di traduzione deve essere migrato nella nuova posizione (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>Qualsiasi nuovo Cloud Service di traduzione deve essere migrato nella nuova posizione (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ul>
-       <li>Ricreare manualmente le nuove configurazioni dei Cloud Services di traduzione tramite l’interfaccia utente di creazione dell’AEM all’indirizzo <strong>Strumenti &gt; Cloud Services &gt; Cloud Services di traduzione</strong>.<br /> OPPURE </li>
-       <li>Copia le nuove configurazioni dei Cloud Services di traduzione dalla posizione precedente alla nuova posizione (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</li>
+       <li>Ricreare manualmente le nuove configurazioni dei Cloud Service di traduzione tramite l’interfaccia utente di creazione dell’AEM all’indirizzo <strong>Strumenti &gt; Cloud Service &gt; Cloud Service di traduzione</strong>.<br /> OPPURE </li>
+       <li>Copia le nuove configurazioni dei Cloud Service di traduzione dalla posizione precedente alla nuova posizione (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>Associa le configurazioni AEM applicabili alle gerarchie di contenuti AEM.
       <ol>
        <li>Gerarchie di pagine AEM Sites tramite <strong>AEM Sites &gt; Pagina &gt; Proprietà pagina &gt; Scheda Avanzate &gt; Configurazione cloud</strong>.</li>
-       <li>Gerarchie di frammenti esperienza AEM tramite <strong>Frammenti esperienza AEM &gt; Frammento esperienza &gt; Proprietà &gt; Scheda Cloud Services &gt; Configurazione cloud</strong>.</li>
-       <li>Gerarchie di cartelle di frammenti esperienza AEM tramite <strong>Frammenti esperienza AEM &gt; Cartella &gt; Proprietà &gt; Scheda Cloud Services &gt; Configurazione cloud</strong>.<br /> </li>
-       <li>Gerarchie di cartelle di AEM Assets tramite <strong>AEM Assets &gt; Cartella &gt; Proprietà cartella &gt; Scheda Cloud Services &gt; Configurazione</strong>.</li>
+       <li>Gerarchie di frammenti esperienza AEM tramite <strong>Frammenti esperienza AEM &gt; Frammento esperienza &gt; Proprietà &gt; Scheda Cloud Service &gt; Configurazione cloud</strong>.</li>
+       <li>Gerarchie di cartelle di frammenti esperienza AEM tramite <strong>Frammenti esperienza AEM &gt; Cartella &gt; Proprietà &gt; Scheda Cloud Service &gt; Configurazione cloud</strong>.<br /> </li>
+       <li>Gerarchie di cartelle di AEM Assets tramite <strong>AEM Assets &gt; Cartella &gt; Proprietà cartella &gt; Scheda Cloud Service &gt; Configurazione</strong>.</li>
        <li>Progetti AEM tramite <strong>Progetti AEM &gt; Progetto &gt; Proprietà progetto &gt; Scheda Avanzate &gt; Configurazione cloud</strong>.</li>
       </ol> </li>
-     <li>Dissocia eventuali Cloud Services di traduzione legacy migrati dalle gerarchie di contenuto AEM sopra indicate.</li>
+     <li>Dissocia eventuali Cloud Service di traduzione legacy migrati dalle gerarchie di contenuto AEM sopra indicate.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>La risoluzione dei Cloud Services di traduzione viene eseguita nell'ordine seguente:</p>
+   <td><p>La risoluzione dei Cloud Service di traduzione viene eseguita nell'ordine seguente:</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/apps/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/libs/settings/cloudconfigs/translations/translationcfg</code></li>
-    </ol> <p>I Cloud Services di traduzione migrati devono essere compatibili con AEM 6.4.</p> </td>
+    </ol> <p>I Cloud Service di traduzione migrati devono essere compatibili con AEM 6.4.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -749,7 +745,7 @@ Cioè il `sling:resourceType` della configurazione ContextHub deve essere relati
 
 {style="table-layout:auto"}
 
-### Cloud Services di connettori di traduzione fornitore {#vendor-translation-connector-cloud-services}
+### Cloud Service di connettori di traduzione fornitore {#vendor-translation-connector-cloud-services}
 
 <table style="table-layout:auto">
  <tbody>
@@ -765,27 +761,27 @@ Cioè il `sling:resourceType` della configurazione ContextHub deve essere relati
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Qualsiasi nuovo Cloud Services di connettori di traduzione fornitore deve essere migrato nella nuova posizione (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>Qualsiasi nuovo Cloud Service di connettori di traduzione fornitore deve essere migrato nella nuova posizione (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ul>
-       <li>Creazione manuale di nuove configurazioni dei Cloud Services di connettori di traduzione fornitore tramite <strong>Interfaccia utente di creazione AEM in Strumenti &gt; Cloud Services &gt; Cloud Services di traduzione</strong>.<br /> OPPURE </li>
-       <li>Copia le nuove configurazioni dei Cloud Services del connettore di traduzione fornitore dalla posizione precedente alla nuova posizione (<code>/apps</code>, <code>/conf/global </code>o <code>/conf/&lt;tenant&gt;</code>).</li>
+       <li>Creazione manuale di nuove configurazioni dei Cloud Service di connettori di traduzione fornitore tramite <strong>Interfaccia utente di creazione AEM in Strumenti &gt; Cloud Service &gt; Cloud Service di traduzione</strong>.<br /> OPPURE </li>
+       <li>Copia le nuove configurazioni dei Cloud Service del connettore di traduzione fornitore dalla posizione precedente alla nuova posizione (<code>/apps</code>, <code>/conf/global </code>o <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>Associa le configurazioni AEM applicabili alle gerarchie di contenuti AEM.
       <ol>
        <li>Gerarchie di pagine AEM Sites tramite <strong>AEM Sites &gt; Pagina &gt; Proprietà pagina &gt; Scheda Avanzate &gt; Configurazione cloud</strong>.</li>
-       <li>Gerarchie di frammenti esperienza AEM tramite <strong>Frammenti esperienza AEM &gt; Frammento esperienza &gt; Proprietà &gt; Scheda Cloud Services &gt; Configurazione cloud</strong>.</li>
-       <li>Gerarchie di cartelle di frammenti esperienza AEM tramite <strong>Frammenti esperienza AEM &gt; Cartella &gt; Proprietà &gt; Scheda Cloud Services &gt; Configurazione cloud</strong>.</li>
-       <li>Gerarchie di cartelle di AEM Assets tramite <strong>AEM Assets &gt; Cartella &gt; Proprietà cartella &gt; Scheda Cloud Services &gt; Configurazione</strong>.</li>
+       <li>Gerarchie di frammenti esperienza AEM tramite <strong>Frammenti esperienza AEM &gt; Frammento esperienza &gt; Proprietà &gt; Scheda Cloud Service &gt; Configurazione cloud</strong>.</li>
+       <li>Gerarchie di cartelle di frammenti esperienza AEM tramite <strong>Frammenti esperienza AEM &gt; Cartella &gt; Proprietà &gt; Scheda Cloud Service &gt; Configurazione cloud</strong>.</li>
+       <li>Gerarchie di cartelle di AEM Assets tramite <strong>AEM Assets &gt; Cartella &gt; Proprietà cartella &gt; Scheda Cloud Service &gt; Configurazione</strong>.</li>
        <li>Progetti AEM tramite <strong>Progetti AEM &gt; Progetto &gt; Proprietà progetto &gt; Scheda Avanzate &gt; Configurazione cloud</strong>.</li>
       </ol> </li>
-     <li>Dissocia eventuali Cloud Services di traduzione legacy migrati dalle gerarchie di contenuto AEM sopra indicate.</li>
+     <li>Dissocia eventuali Cloud Service di traduzione legacy migrati dalle gerarchie di contenuto AEM sopra indicate.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>La risoluzione dei Cloud Services di traduzione viene eseguita nell'ordine seguente:</p>
+   <td><p>La risoluzione dei Cloud Service di traduzione viene eseguita nell'ordine seguente:</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>

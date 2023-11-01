@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM Headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 95%
+source-wordcount: '3038'
+ht-degree: 94%
 
 ---
 
@@ -195,7 +195,7 @@ Le cartelle possono anche essere limitate per consentire solo alcuni tipi di con
 * Impedisce agli autori di contenuti di creare contenuti che non appartengono alla cartella.
 * Ottimizza il processo di creazione dei contenuti filtrando i tipi di contenuto consentiti nella cartella durante la creazione per mostrare solo i tipi di contenuto validi.
 
-La creazione di una struttura di contenuto appropriata rende più facile coordinare l’authoring di contenuti headless tra i diversi canali al fine di ottimizzare il riutilizzo dei contenuti. L’utilizzo dei contenuti su più canali migliora notevolmente l’efficienza della produzione dei contenuti e la gestione delle modifiche.
+Creando una struttura di contenuto appropriata, diventa più semplice coordinare l’authoring dei contenuti headless tra i canali per massimizzare il riutilizzo dei contenuti. L’utilizzo dei contenuti su più canali migliora notevolmente l’efficienza della produzione dei contenuti e la gestione delle modifiche.
 
 ##### Stabilire buone convenzioni di denominazione {#naming-conventions}
 

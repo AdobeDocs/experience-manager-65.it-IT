@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Per iscriverti agli eventi, segui questi passaggi:
 1. Struttura delle cartelle collegate: immetti valori separati da virgole. Ogni valore deve essere `DE:<some-project-custom-form-field>`, Portfolio, Programma, Anno, Nome o un &quot;valore stringa letterale&quot; (quest&#39;ultimo con virgolette). Attualmente è impostato su Portfolio,Programma,Anno,DE:Tipo di progetto,Nome.
 1. Se il titolo della cartella in Workfront deve includere tutte le cartelle della struttura, seleziona la casella di controllo Crea titolo della cartella collegata in Workfront utilizzando i nomi della struttura di cartelle. In caso contrario, sarà il titolo dell’ultima cartella.
 1. Sottocartelle con più campi consente di specificare un elenco di cartelle da creare come cartella secondaria della cartella collegata.
-1. Stato progetto: seleziona lo stato a cui deve essere impostato il progetto per creare la cartella collegata.
+1. Stato progetto: seleziona lo stato del progetto per creare la cartella collegata.
 1. Creazione di una cartella collegata in progetti con portfolio: elenco di Portfoli a cui il progetto deve appartenere per creare la cartella collegata. Lascia vuoto questo elenco per creare la cartella collegata per tutto il portfolio di progetti.
 1. Creare una cartella collegata nei progetti con campo modulo personalizzato: campo modulo personalizzato e il valore corrispondente che il progetto deve avere per creare la cartella collegata. Se questa configurazione viene lasciata vuota, verrà ignorata. Seleziona `CUSTOM FORMS: Create DAM Linked Folder` per il campo e l’input `Yes` per il valore.
 1. Fai clic su Abilita creazione automatica di cartelle collegate. Se torni alla scheda Sottoscrizioni evento, vedrai che ora è presente un evento di creazione.

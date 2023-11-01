@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1916'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Per un [farm di pubblicazione](topologies.md), la registrazione e le modifiche e
 
 ### Limiti per contributi {#contribution-limits}
 
-Al fine di proteggere dallo spam, è possibile limitare la frequenza di pubblicazione dei contenuti da parte dei membri. Inoltre, è possibile limitare automaticamente i contributi dei membri appena registrati.
+Per proteggersi dallo spam, è possibile limitare la frequenza di pubblicazione dei contenuti da parte dei membri. Inoltre, è possibile limitare automaticamente i contributi dei membri appena registrati.
 
 Per ulteriori informazioni, consulta [Limiti contributi membri](limits.md).
 
@@ -239,8 +239,8 @@ Quando si parla di gruppi, ci sono due argomenti distinti:
 
 * **[Gruppi community](overview.md#communitygroups)**
 
-   I gruppi community sono le sottocomunità che possono essere create nell’ambiente di pubblicazione di un sito community che supporta la creazione di gruppi community. La creazione di un gruppo community comporta l&#39;aggiunta di più pagine al sito Web e viene gestita in modo simile al sito della community principale. Per ulteriori informazioni, visita [Nozioni di base sul gruppo community](essentials-groups.md) per sviluppatori e [Gruppo community](creating-groups.md) per autori.
+  I gruppi community sono le sottocomunità che possono essere create nell’ambiente di pubblicazione di un sito community che supporta la creazione di gruppi community. La creazione di un gruppo community comporta l&#39;aggiunta di più pagine al sito Web e viene gestita in modo simile al sito della community principale. Per ulteriori informazioni, visita [Nozioni di base sul gruppo community](essentials-groups.md) per sviluppatori e [Gruppo community](creating-groups.md) per autori.
 
 * **[Gruppi di membri](../../help/sites-administering/security.md)**
 
-   I gruppi di membri sono i gruppi a cui possono appartenere i membri e vengono gestiti tramite la console Gruppi. Gran parte della discussione su questa pagina è stata dedicata ai gruppi membri. I gruppi di membri creati automaticamente per un sito community, ai quali viene aggiunto il prefisso *`Community`*, può essere definito gruppo comunitario, pertanto occorre considerare il contesto della discussione.
+  I gruppi di membri sono i gruppi a cui possono appartenere i membri e vengono gestiti tramite la console Gruppi. Gran parte della discussione su questa pagina è stata dedicata ai gruppi membri. I gruppi di membri creati automaticamente per un sito community, ai quali viene aggiunto il prefisso *`Community`*, può essere definito gruppo comunitario, pertanto occorre considerare il contesto della discussione.

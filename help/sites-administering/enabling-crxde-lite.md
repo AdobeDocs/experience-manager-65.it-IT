@@ -1,25 +1,21 @@
 ---
 title: Abilitazione di CRXDE Liti nell’AEM
-seo-title: Enabling CRXDE Lite in AEM
 description: Scopri come abilitare CRXDE Liti in Adobe Experience Manager.
-seo-description: Learn how to enable CRXDE Lite in AEM.
-uuid: d7a3db67-6384-463b-9aa9-f08ecc6c99c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '254'
 ht-degree: 1%
 
 ---
 
 # Abilitazione di CRXDE Liti nell’AEM{#enabling-crxde-lite-in-aem}
 
-Al fine di garantire la massima sicurezza possibile delle installazioni AEM, l’elenco di controllo della sicurezza raccomanda [disattivazione di WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) negli ambienti di produzione.
+Per garantire la massima sicurezza possibile delle installazioni AEM, gli elenchi di controllo per la sicurezza raccomandano [disattivazione di WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) negli ambienti di produzione.
 
 Tuttavia, CRXDE Liti dipende dalla `org.apache.sling.jcr.davex` per funzionare correttamente, in modo che la disattivazione di WebDAV disabiliti efficacemente anche CRXDE Liti.
 
@@ -29,7 +25,7 @@ In questo caso, cerca in `https://serveraddress:4502/crx/de/index.jsp` mostrerà
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-Anche se questo consiglio ha lo scopo di ridurre il più possibile le superfici di attacco, gli amministratori di sistema potrebbero a volte avere bisogno di accedere a CRXDE Liti per sfogliare il contenuto o eseguire il debug dei problemi sulle istanze di produzione.
+Anche se questo consiglio ha lo scopo di ridurre il più possibile le superfici di attacco, gli amministratori di sistema a volte potrebbero aver bisogno dell’accesso a CRXDE Liti per sfogliare il contenuto o eseguire il debug dei problemi sulle istanze di produzione.
 
 È possibile abilitare CRXDE Liti con [Impostazioni OSGi](#enabling-crxde-lite-osgi) o con un [comando cURL](#enabling-crxde-lite-curl).
 

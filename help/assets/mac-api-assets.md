@@ -6,9 +6,9 @@ role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1746'
+source-wordcount: '1744'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 * 404 - NON TROVATO - la cartella non esiste o non è accessibile.
 * 500 - ERRORE INTERNO DEL SERVER - se si verificano altri errori.
 
-**Risposta**: la classe dell’entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;insieme completo di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell’entità, i clienti devono recuperare il contenuto dell’URL a cui fa riferimento il collegamento con un `rel` di `self`.
+**Risposta**: la classe dell’entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;insieme completo di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell’entità, i clienti devono recuperare il contenuto dell’URL a cui punta il collegamento con un `rel` di `self`.
 
 ## Crea una cartella . {#create-a-folder}
 

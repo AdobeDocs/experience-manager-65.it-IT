@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 6%
+source-wordcount: '556'
+ht-degree: 7%
 
 ---
 
@@ -30,7 +30,7 @@ Il codice client identifica l’account cliente Adobe Target quando si chiama il
 
 >[!NOTE]
 >
->Per utilizzare l’integrazione, il team di Target deve abilitare anche il tuo account.
+>Per utilizzare l’integrazione, il team di Target deve anche abilitare il tuo account.
 >
 >In caso contrario, contattare [Assistenza clienti Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
 

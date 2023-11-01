@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '7669'
+source-wordcount: '7667'
 ht-degree: 1%
 
 ---
@@ -710,7 +710,7 @@ Quando si installa Document Services per la prima volta, l’elenco Referenti co
 
 **Gestione dell’elenco dei referenti consentiti**
 
-È possibile gestire l’elenco Referenti consentiti dall’interfaccia di gestione utente di Administration Console. L&#39;interfaccia User Management offre la funzionalità di creazione, modifica o eliminazione dell&#39;elenco. Consulta la sezione * [Prevenzione degli attacchi CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* sezione del *aiuto per l’amministrazione* per ulteriori informazioni sull’utilizzo dell’elenco Referenti consentiti.
+È possibile gestire l’elenco Referenti consentiti dall’interfaccia di gestione utente di Administration Console. L&#39;interfaccia User Management offre la funzionalità di creazione, modifica o eliminazione dell&#39;elenco. Consulta la sezione * [Prevenzione degli attacchi CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* sezione del *aiuto per l&#39;amministrazione* per ulteriori informazioni sull’utilizzo dell’elenco Referenti consentiti.
 
 **Gestione degli elenchi delle eccezioni e degli URI consentiti ai referenti**
 
@@ -955,7 +955,7 @@ Per informazioni sulle porte WebSphere richieste da AEM Forms su JEE, passare al
 
 Con riferimento all’architettura fisica descritta nella sezione [Architettura fisica di AEM Forms su JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), è necessario configurare SSL per tutte le connessioni che si intende utilizzare. In particolare, tutte le connessioni SOAP devono essere eseguite tramite SSL per evitare l&#39;esposizione delle credenziali utente in una rete.
 
-Per istruzioni su come configurare SSL su JBoss, WebLogic e WebSphere, vedi &quot;Configurazione di SSL&quot; in [aiuto per l’amministrazione](https://www.adobe.com/go/learn_aemforms_admin_64).
+Per istruzioni su come configurare SSL su JBoss, WebLogic e WebSphere, vedi &quot;Configurazione di SSL&quot; in [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_64).
 
 Per istruzioni su come importare certificati in JVM (Java Virtual Machine) configurata per un server AEM Forms, vedere la sezione Autenticazione reciproca in [Guida di AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 

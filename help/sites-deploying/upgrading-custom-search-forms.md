@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Salvo diversa indicazione, la maggior parte delle regolazioni che devono essere 
 
 È possibile modificare la proprietà eseguendo le operazioni seguenti:
 
-1. Apri CRXDE Lite da `https://server:port/crx/de/index.jsp`
+1. Apri CRXDE Liti da `https://server:port/crx/de/index.jsp`
 1. Individua la posizione del nodo da regolare, come specificato nell’Elenco di [Forms di ricerca personalizzato](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) di seguito.
 1. Fai clic sul nodo. Nel riquadro destro delle proprietà, fai clic su e modifica il **sling:resourceType** proprietà.
 1. Infine, salvare le modifiche premendo il tasto **Salva tutto** pulsante.

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4609'
 ht-degree: 7%
 
 ---
@@ -111,7 +111,7 @@ Per le statistiche delle query, osserva il codice MBean denominato **Statistiche
 
 Se desideri esplorare gli indici utilizzando uno strumento come [Luke](https://code.google.com/archive/p/luke/), è necessario utilizzare la console Oak per scaricare l’indice dal `NodeStore` in una directory del file system. Per istruzioni su come eseguire questa operazione, leggere il [Documentazione di Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-Puoi anche estrarre gli indici nel sistema in formato JSON. A questo scopo, devi accedere a `https://server:port/oak:index.tidy.-1.json`
+Puoi anche estrarre gli indici nel sistema in formato JSON. A questo scopo, devi accedere `https://server:port/oak:index.tidy.-1.json`
 
 ### Limiti per le query {#query-limits}
 

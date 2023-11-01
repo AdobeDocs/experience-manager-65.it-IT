@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5396'
 ht-degree: 0%
 
 ---
@@ -1004,7 +1004,7 @@ Esiste un’impostazione di User Manager che controlla la durata dell’asserzio
 
 ## Richiamare un processo di breve durata utilizzando l’API di richiamo {#invoking-a-short-lived-process-using-the-invocation-api}
 
-È possibile richiamare un processo di breve durata utilizzando l’API di chiamata Java. Quando si richiama un processo di breve durata utilizzando l&#39;API di chiamata, si trasmettono i valori dei parametri richiesti utilizzando un `java.util.HashMap` oggetto. Per ogni parametro da passare a un servizio, richiama `java.util.HashMap` dell&#39;oggetto `put` e specificare la coppia nome-valore necessaria per eseguire l&#39;operazione specificata. Specificare il nome esatto dei parametri che appartengono al processo di breve durata.
+È possibile richiamare un processo di breve durata utilizzando l’API di chiamata Java. Quando si richiama un processo di breve durata utilizzando l&#39;API di chiamata, si trasmettono i valori dei parametri richiesti utilizzando un `java.util.HashMap` oggetto. Per ogni parametro da passare a un servizio, richiama `java.util.HashMap` dell&#39;oggetto `put` e specificare la coppia nome-valore richiesta dal servizio per eseguire l&#39;operazione specificata. Specificare il nome esatto dei parametri che appartengono al processo di breve durata.
 
 >[!NOTE]
 >

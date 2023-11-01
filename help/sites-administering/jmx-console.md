@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4956'
+source-wordcount: '4950'
 ht-degree: 1%
 
 ---
@@ -898,7 +898,7 @@ CRX consente alle applicazioni esterne di interagire con Managed Beans (MBean) t
 
 ### Utilizzo di JConsole per la connessione a CRX {#using-jconsole-to-connect-to-crx}
 
-Per connettersi a CRX utilizzando JConsole, effettua le seguenti operazioni:
+Per connettersi a CRX utilizzando JConsole, effettuare le seguenti operazioni:
 
 1. Apri una finestra del terminale.
 1. Immetti il comando seguente:
@@ -915,7 +915,7 @@ In JConsole verrà visualizzato un elenco di processi di Java Virtual Machine lo
 
 ### Connessione a un processo CRX remoto {#connecting-to-a-remote-crx-process}
 
-Per connettersi a un processo CRX remoto, è necessario abilitare la JVM che ospita il processo CRX remoto per accettare le connessioni JMX remote.
+Per connettersi a un processo CRX remoto, la JVM che ospita il processo CRX remoto dovrà essere abilitata per accettare le connessioni JMX remote.
 
 Per abilitare le connessioni JMX remote, è necessario impostare la seguente proprietà di sistema all&#39;avvio della JVM:
 
@@ -944,7 +944,7 @@ Dopo la connessione al processo quickstart, JConsole fornisce una serie di strum
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
-Per accedere alle opzioni di monitoraggio e configurazione interne di CRX, passa alla scheda MBean e, dalla struttura gerarchica del contenuto a sinistra, seleziona la sezione Attributi o operazioni a cui sei interessato. Ad esempio, la sezione com.adobe.granite/Repository/Operations.
+Per accedere alle opzioni di monitoraggio e configurazione interne di CRX, vai alla scheda MBean e, dalla struttura gerarchica del contenuto a sinistra, seleziona la sezione Attributi o operazioni a cui sei interessato. Ad esempio, la sezione com.adobe.granite/Repository/Operations.
 
 All’interno di tale sezione, seleziona l’attributo o l’operazione desiderata nel riquadro a sinistra.
 

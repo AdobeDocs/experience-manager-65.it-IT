@@ -4,10 +4,10 @@ description: Questo articolo introduce i concetti di una SPA e spiega come utili
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 70%
+source-wordcount: '1965'
+ht-degree: 71%
 
 ---
 
@@ -50,7 +50,7 @@ La procedura dettagliata si basa sulle funzionalità di AEM standard e sull’ap
 
 ### Cos’è una SPA? {#what-is-a-spa}
 
-Un’applicazione a pagina singola (SPA) differisce da una pagina convenzionale in quanto viene sottoposta a rendering lato client ed è principalmente basata su JavaScript, poiché si basa sulle chiamate Ajax per caricare i dati e aggiornare dinamicamente la pagina. La maggior parte o tutto il contenuto viene recuperato una volta nel caricamento di una singola pagina con risorse aggiuntive caricate in modo asincrono in base alle esigenze, a seconda dell’interazione dell’utente con la pagina.
+Un’applicazione a pagina singola (SPA) è diversa da una pagina convenzionale in quanto viene sottoposta a rendering lato client ed è principalmente basata su Javascript, utilizzando le chiamate Ajax per caricare i dati e aggiornare dinamicamente la pagina. La maggior parte o tutto il contenuto viene recuperato una volta nel caricamento di una singola pagina con risorse aggiuntive caricate in modo asincrono in base alle esigenze, a seconda dell’interazione dell’utente con la pagina.
 
 Questo riduce la necessità di aggiornare le pagine e offre all’utente un’esperienza caratterizzata da fluidità e rapidità, che si rivela più simile all’esperienza assicurata da un’app nativa.
 
@@ -79,7 +79,7 @@ Essendo più veloce, fluida e più simile a un’applicazione nativa, una SPA di
 
 ### Come funziona una SPA? {#how-does-a-spa-work}
 
-L’idea principale alla base di un SPA è che le chiamate e la dipendenza da un server siano ridotte al fine di ridurre al minimo i ritardi causati dalle chiamate al server in modo che l’SPA si avvicini alla reattività di un’applicazione nativa.
+L’idea principale alla base di un SPA è che le chiamate e la dipendenza da un server siano ridotte per ridurre al minimo i ritardi causati dalle chiamate al server, in modo che l’SPA si avvicini alla reattività di un’applicazione nativa.
 
 In una pagina web tradizionale sequenziale, vengono caricati solo i dati necessari per la pagina immediata. Questo significa che quando l&#39;utente si sposta su un’altra pagina, il server viene chiamato per le risorse aggiuntive. Potrebbero essere necessarie chiamate aggiuntive quando il visitatore interagisce con gli elementi sulla pagina. Queste chiamate multiple possono dare una sensazione di attesa o ritardo in quanto la pagina deve soddisfare le richieste dell&#39;utente.
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Per configurare la rimozione del registro di controllo, effettua le seguenti ope
    >Il percorso del contenuto si applica solo agli elementi figlio del `/var/audit/com.day.cq.wcm.core.page` nell&#39;archivio.
 
 1. Salva la regola.
-1. Per poter essere eseguita, la regola appena creata deve essere esposta nel dashboard operazioni. Per farlo, vai **Strumenti - Operazioni - Manutenzione** dalla schermata iniziale dell’AEM.
+1. Per poter essere eseguita, la regola appena creata deve essere esposta nel dashboard operazioni. Per fare questo, vai **Strumenti - Operazioni - Manutenzione** dalla schermata iniziale dell’AEM.
 
 1. Premere il tasto **Finestra di manutenzione settimanale** Card.
 

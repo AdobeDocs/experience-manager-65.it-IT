@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1782'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ La regola di base che deve essere presa in considerazione quando si sceglie tra 
 
 Puoi utilizzare queste matrici di decisione per stabilire quale sia il tipo di distribuzione più adatto alle tue esigenze.
 
-L’Adobe consiglia vivamente di utilizzare TarMK come tecnologia di persistenza predefinita, utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze AEM Author che per quelle Publish, ad eccezione dei casi di utilizzo descritti di seguito.
+L’Adobe consiglia vivamente di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze di creazione AEM che per quelle di pubblicazione, ad eccezione dei casi di utilizzo descritti di seguito.
 
 ### Eccezioni per la scelta di AEM MongoMK rispetto a TarMK nelle istanze di authoring {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
@@ -213,7 +213,7 @@ Di seguito è riportato un set di matrici decisionali che possono aiutarti a sce
 >
 >MongoDB è un software di terze parti e non è incluso nel pacchetto di licenze AEM. Per ulteriori informazioni, consulta [Criteri di licenza MongoDB](https://www.mongodb.org/about/licensing/) pagina.
 >
->Per ottenere il massimo dalla distribuzione AEM, l’Adobe consiglia di concedere in licenza la versione Enterprise di MongoDB per beneficiare di un supporto professionale.
+>Per ottenere il massimo dall’implementazione dell’AEM, l’Adobe consiglia di concedere in licenza la versione Enterprise di MongoDB per beneficiare di un supporto professionale.
 >
 >La licenza include un set di repliche standard, composto da una istanza principale e due istanze secondarie che possono essere utilizzate per le distribuzioni di authoring o pubblicazione.
 >

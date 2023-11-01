@@ -2,9 +2,9 @@
 title: Trasmettere le credenziali utilizzando le intestazioni WS-security
 description: Scopri come trasmettere le credenziali utilizzando le intestazioni di sicurezza WS
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,8 @@ Questo documento tratta i seguenti argomenti:
 
 ## Requisiti {#requirements}
 
-Per sfruttare al massimo questo documento, è necessario avere una solida conoscenza del software AEM Forms su JEE.
+Per trarre il massimo da questo documento, è necessario avere una solida conoscenza del software AEM Forms su JEE.
 
 >[!MORELIKETHIS]
 >
 >* [Passaggio delle credenziali tramite intestazioni WS-Security](assets/passing-credentials-using-ws-security-headers.pdf)
-

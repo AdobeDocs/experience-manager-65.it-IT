@@ -1,30 +1,28 @@
 ---
-title: Ristrutturazione dell’archivio Dynamic Media in Adobe Experience Manager 6.5
-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio nell’Experience Manager 6.5 per Dynamic Media.
-uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
+title: Ristrutturazione dell’archivio Dynamic Medie in Adobe Experience Manager 6.5
+description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio nell’Experience Manager 6.5 per Dynamic Medie.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 4%
 
 ---
 
-# Ristrutturazione dell’archivio Dynamic Media in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
+# Ristrutturazione dell’archivio Dynamic Medie in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Come descritto sull’elemento padre [Ristrutturazione dell’archivio in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , i clienti che eseguono l’aggiornamento all’Experience Manager 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che interessano Dynamic Media. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di Experience Manager 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto sull’elemento padre [Ristrutturazione dell’archivio in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , i clienti che eseguono l’aggiornamento all’Experience Manager 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che interessano Dynamic Medie. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di Experience Manager 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
 **Prima dell’aggiornamento futuro**
 
 * [Configurazioni di codifica video adattiva personalizzate](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
-* [Configurazione cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
-* [Configurazione Cloud Service Dynamic Media (DM ibrido)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
-* [Dynamic Media - Configurazione Cloud Service YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
+* [Configurazione cloud Dynamic Medie (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
+* [Configurazione Cloud Service Dynamic Medie (DM ibrido)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
+* [Dynamic Medie - Configurazione Cloud Service YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Varie](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Prima dell’aggiornamento futuro {#prior-to-upgrade}
@@ -52,7 +50,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in Adobe 
  </tbody>
 </table>
 
-### Configurazione cloud Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
+### Configurazione cloud Dynamic Medie (DMS7) {#dynamic-media-dms-cloud-configuration}
 
 <table>
  <tbody>
@@ -69,7 +67,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in Adobe 
    <td><p>Il cliente può eseguire uno script di migrazione nella posizione seguente:<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
-     <li>Riavvia il bundle OSGi di Dynamic Media.</li>
+     <li>Riavvia il bundle OSGi di Dynamic Medie.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -79,7 +77,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in Adobe 
  </tbody>
 </table>
 
-### Configurazione Cloud Service Dynamic Media (DM ibrido) {#cloudserviceconfiguration}
+### Configurazione Cloud Service Dynamic Medie (DM ibrido) {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -102,7 +100,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in Adobe 
  </tbody>
 </table>
 
-### Dynamic Media - Configurazione del Cloud Service YouTube  {#youtubecloudserviceconfiguration}
+### Dynamic Medie - Configurazione del Cloud Service YouTube  {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>

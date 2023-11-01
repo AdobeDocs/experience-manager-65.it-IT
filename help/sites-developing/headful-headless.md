@@ -2,9 +2,9 @@
 title: Headful e headless in AEM
 description: È possibile implementare i progetti AEM in un modello headful e headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1012'
 ht-degree: 94%
 
 ---
@@ -31,7 +31,7 @@ Le applicazioni a pagina singola (SPA) sono spesso la destinazione del contenuto
 
 ## Esempio di negozio web {#web-shop-example}
 
-Diciamo che hai un negozio web esistente per la tua azienda come una SPA. Contiene tutti i dettagli e le immagini del prodotto. Poi introduci AEM per potenziare le tue attività di marketing come siti promozionali, blog e contenuti delle campagne. Come si integrano i due? AEM consente una serie di opzioni:
+Diciamo che hai un negozio web esistente per la tua azienda come una SPA. Contiene tutti i dettagli e le immagini del prodotto. Introduci quindi AEM per potenziare le tue attività di marketing come siti promozionali, blog e contenuti delle campagne. Come si integrano i due? AEM consente una serie di opzioni:
 
 * **Consenti il funzionamento indipendente dei sistemi.**
 * **Fornisci al negozio web contenuti limitati da AEM tramite GraphQL.** I contenuti possono essere creati dagli autori in AEM, ma solo visualizzati tramite la SPA del negozio web.

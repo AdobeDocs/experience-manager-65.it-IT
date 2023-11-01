@@ -2,9 +2,9 @@
 title: Intestazioni HTTP personalizzate
 description: Scopri come configurare le intestazioni HTTP personalizzate in Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '276'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ Per ottenere un maggiore controllo sul backend, gli autori possono configurare i
 
 ## Configurazione {#configuration}
 
-Per configurare le intestazioni HTTP personalizzate, è necessario prima definirle. Le intestazioni HTTP personalizzate devono prima essere definite aggiungendole al `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` configurazione del servizio tramite una configurazione OSGi.
+Per configurare le intestazioni HTTP personalizzate, devi prima definirle. Le intestazioni HTTP personalizzate devono prima essere definite aggiungendole al `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` configurazione del servizio tramite una configurazione OSGi.
 
 Puoi configurare i valori delle intestazioni HTTP nella pagina Configurazione Cloud Service per il progetto:
 

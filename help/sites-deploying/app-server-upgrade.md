@@ -3,9 +3,9 @@ title: Passaggi per l'aggiornamento delle installazioni di Application Server
 description: Scopri come aggiornare le istanze di AEM distribuite tramite Application Server.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni 
 
 1. Quindi, annulla la distribuzione di AEM 6.4. Questa operazione può essere eseguita da TomCat App Manager (`http://serveraddress:serverport/manager/html`)
 
-1. Ora esegui la migrazione dell’archivio utilizzando lo strumento di migrazione crx2oak. Per farlo, scarica l’ultima versione di crx2oak da [questa posizione](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Ora esegui la migrazione dell’archivio utilizzando lo strumento di migrazione crx2oak. Per farlo, scarica la versione più recente di crx2oak da [questa posizione](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
@@ -78,16 +78,16 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni 
 
    * Aggiungi la riga seguente a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
-      `customBlobStore=true`
+     `customBlobStore=true`
 
    * Quindi aggiungi le seguenti righe a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
-      ```
-      path=./crx-quickstart/repository/datastore
-      minRecordLength=4096
-      ```
+     ```
+     path=./crx-quickstart/repository/datastore
+     minRecordLength=4096
+     ```
 
-1. È ora necessario modificare le modalità di esecuzione nel file .war AEM 6.5. Per farlo, prima di tutto creare una cartella temporanea che ospiterà la guerra AEM 6.5. Il nome della cartella in questo esempio sarà `temp`. Una volta copiato il file .war, estrarre il contenuto dall&#39;interno della cartella temporanea:
+1. È ora necessario modificare le modalità di esecuzione nel file .war AEM 6.5. Per farlo, creare innanzitutto una cartella temporanea che ospiterà la guerra AEM 6.5. Il nome della cartella in questo esempio sarà `temp`. Una volta copiato il file .war, estrarre il contenuto dall&#39;interno della cartella temporanea:
 
    ```
    jar xvf aem-quickstart-6.5.0.war

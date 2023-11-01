@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1559'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Adobe Experience Manager Assets offre la gestione centralizzata delle risorse video, in cui puoi caricare i video direttamente in Assets per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da Assets per l’authoring delle pagine.
 
-L&#39;integrazione video di Dynamic Media Classic estende la portata del video ottimizzato a tutti gli schermi (rilevamento automatico di dispositivi e larghezza di banda).
+L&#39;integrazione video Dynamic Media Classic estende la portata del video ottimizzato a tutti gli schermi (rilevamento automatico di dispositivi e larghezza di banda).
 
 * Il **[!UICONTROL Video Scene7]** il componente esegue automaticamente il rilevamento del dispositivo e della larghezza di banda per riprodurre il formato e la qualità video corretti su desktop, tablet e dispositivi mobili.
 * Risorse: puoi includere set di video adattivi anziché singole risorse video. Un set di video adattivi contiene tutte le rappresentazioni video necessarie per riprodurre il video in modo fluido su più schermi. Un set video adattivo raggruppa le versioni dello stesso video che sono codificate in diversi formati e bit rate, ad esempio 400 kbps, 800 kbps e 1000 kbps. Utilizzi un set video adattivo, insieme al componente video S7, per lo streaming video adattivo su più schermi, tra cui dispositivi mobili desktop, iOS, Android™, BlackBerry® e Windows.
@@ -35,7 +35,7 @@ Il processo di codifica video predefinito si basa sull’utilizzo dell’integra
 * Miniature FFMPEG
 * Codifica FFMPEG
 
-L’abilitazione e la configurazione dell’integrazione di Dynamic Media Classic non rimuovono o disattivano automaticamente questi due passaggi del flusso di lavoro dal flusso di lavoro di acquisizione DAM predefinito. Se utilizzi già la codifica video basata su FFMPEG in Adobe Experience Manager, è probabile che negli ambienti di authoring sia installato FFMPEG. In questo caso, un nuovo video acquisito utilizzando DAM verrebbe codificato due volte: una volta dal codificatore FFMPEG e una volta dall’integrazione Dynamic Media Classic.
+L’abilitazione e la configurazione dell’integrazione di Dynamic Media Classic non rimuovono o disattivano automaticamente questi due passaggi del flusso di lavoro dal flusso di lavoro di acquisizione DAM predefinito. Se in Adobe Experience Manager utilizzi già la codifica video basata su FFMPEG, è probabile che negli ambienti di authoring sia installato FFMPEG. In questo caso, un nuovo video acquisito utilizzando DAM verrebbe codificato due volte: una volta dal codificatore FFMPEG e una volta dall’integrazione Dynamic Media Classic.
 
 Se hai configurato la codifica video basata su FFMPEG in Experience Manager e hai installato FFMPEG, Adobe consiglia di rimuovere i due flussi di lavoro FFMPEG dai flussi di lavoro di acquisizione DAM.
 
@@ -73,7 +73,7 @@ Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per l
 
 ## Configurare l’integrazione con Scene7 Video {#configuring-integration-with-scene-video}
 
-1. In entrata **[!UICONTROL Cloud Services]**, passare al **[!UICONTROL Scene7]** configurazione e selezione **[!UICONTROL Modifica]**.
+1. In entrata **[!UICONTROL Cloud Service]**, passare al **[!UICONTROL Scene7]** configurazione e selezione **[!UICONTROL Modifica]**.
 1. Seleziona la **[!UICONTROL Video]** scheda.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -131,7 +131,7 @@ Anche se l’utilizzo del componente video Scene7 è consigliato per la visualiz
 
 La tabella seguente fornisce un confronto ad alto livello delle funzionalità supportate tra il componente Video di base di Experience Manager e il componente Video di Scene7:
 
-|  | Video di Experience Manager Foundation | Video Scene7 |
+|   | Video di Experience Manager Foundation | Video Scene7 |
 |---|---|---|
 | Approccio | Primo avvicinamento HTML5. Il Flash viene utilizzato solo per il fallback non HTML5. | Flash sulla maggior parte dei desktop. HTML5 viene utilizzato per i dispositivi mobili e i tablet. |
 | Distribuzione | Progressivo | Streaming adattivo |

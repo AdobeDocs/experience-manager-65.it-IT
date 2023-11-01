@@ -3,9 +3,9 @@ title: Creazione di un handler per l’invito di utenti esterni
 description: Scopri come creare un handler per l’invito di utenti esterni. Consente al servizio di Rights Management di invitare utenti esterni a diventare utenti del Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Definizione del file XML del componente per il gestore autorizzazioni {#define-component-xml-authorization-handler}
 
-È necessario definire un file XML del componente per distribuire il componente del gestore per l’invito di utenti esterni. Esiste un file XML per ciascun componente che fornisce i metadati relativi al componente.
+È necessario definire un file XML di componente per distribuire il componente gestore inviti utenti esterni. Esiste un file XML per ciascun componente che fornisce i metadati relativi al componente.
 
 I seguenti elementi `component.xml` Il file viene utilizzato per il gestore di inviti di utenti esterni. Il nome del servizio è `InviteExternalUsersSample` e l’operazione che questo servizio espone è denominata `invitedUser`. Il parametro di input è un `java.util.List` e il valore di output è un array di `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` istanze.
 

@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1678'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Le risorse forniscono una gestione centralizzata delle risorse video in cui puoi caricare i video direttamente in Assets per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da Assets per l’authoring delle pagine.
 
-L&#39;integrazione video di Dynamic Media Classic estende la portata del video ottimizzato a tutti gli schermi (rilevamento automatico di dispositivi e larghezza di banda).
+L&#39;integrazione video Dynamic Media Classic estende la portata del video ottimizzato a tutti gli schermi (rilevamento automatico di dispositivi e larghezza di banda).
 
 * Il componente video Dynamic Media Classic esegue automaticamente il rilevamento del dispositivo e della larghezza di banda per riprodurre il formato e la qualità video corretti su desktop, tablet e dispositivi mobili.
 * Risorse: puoi includere set di video adattivi anziché singole risorse video. Un set video adattivo è un contenitore per tutte le rappresentazioni video necessarie per riprodurre il video in modo fluido su più schermi. Un set video adattivo raggruppa le versioni dello stesso video che sono codificate in diversi formati e bit rate, ad esempio 400 kbps, 800 kbps e 1000 kbps. Utilizzi un set video adattivo, insieme al componente video S7, per lo streaming video adattivo su più schermi, tra cui dispositivi mobili desktop, iOS, Android™, BlackBerry® e Windows. Consulta [Per ulteriori informazioni, consulta la documentazione di Dynamic Media Classic sui set video adattivi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
@@ -68,7 +68,7 @@ Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per l
 
 ### Configurare l’integrazione con Dynamic Media Classic Video {#configuring-integration-with-scene-video}
 
-1. In entrata **[!UICONTROL Cloud Services]**, passare al **[!UICONTROL Dynamic Media Classic]** configurazione e selezione **[!UICONTROL Modifica]**.
+1. In entrata **[!UICONTROL Cloud Service]**, passare al **[!UICONTROL Dynamic Media Classic]** configurazione e selezione **[!UICONTROL Modifica]**.
 1. Seleziona la **[!UICONTROL Video]** scheda.
 
    >[!NOTE]
@@ -117,6 +117,7 @@ La seguente matrice spiega quando utilizzare quale componente:
 >[!NOTE]
 >
 >Il componente video Dynamic Media Classic utilizza come predefinito il profilo video universale. È tuttavia possibile ottenere il lettore video basato su HTML5 per l&#39;utilizzo da parte di Experience Manager. In Dynamic Media Classic, copia il codice da incorporare del lettore video predefinito di HTML5 e inseriscilo nella pagina di Experience Manager.
+>
 
 ## Componente video Experience Manager {#aem-video-component}
 
@@ -126,7 +127,7 @@ Anche se l’utilizzo del componente Video di Dynamic Media Classic è consiglia
 
 La tabella seguente fornisce un confronto ad alto livello delle funzionalità supportate tra il componente Video di base di Experience Manager e il componente Video di Dynamic Media Classic:
 
-|  | Video di Experience Manager Foundation | Video Dynamic Media Classic |
+|   | Video di Experience Manager Foundation | Video Dynamic Media Classic |
 |---|---|---|
 | Approccio | Primo avvicinamento HTML5. Il Flash viene utilizzato solo per il fallback non HTML5. | Flash sulla maggior parte dei desktop. HTML5 viene utilizzato per i dispositivi mobili e i tablet. |
 | Distribuzione | Progressivo | Streaming adattivo |

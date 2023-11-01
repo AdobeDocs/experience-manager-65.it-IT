@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,6 @@ Il [Console web](/help/sites-deploying/configuring-osgi.md) fornisce accesso al 
 >* L’URL del POST del provider di identità o URL IDP.
 >* ID dell&#39;entità del provider di servizi.
 >
-
 
 >[!NOTE]
 >
@@ -92,7 +91,7 @@ Il [Console web](/help/sites-deploying/configuring-osgi.md) fornisce accesso al 
 
 ## Aggiungi il certificato IdP al TrustStore AEM {#add-the-idp-certificate-to-the-aem-truststore}
 
-Le asserzioni SAML sono firmate e possono essere facoltativamente crittografate. Affinché questo funzioni, devi fornire almeno il certificato pubblico dell&#39;IdP nell&#39;archivio. A questo scopo, è necessario:
+Le asserzioni SAML sono firmate e possono essere facoltativamente crittografate. Affinché questo funzioni, devi fornire almeno il certificato pubblico dell&#39;IdP nell&#39;archivio. A questo scopo, devi:
 
 1. Vai a *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Premere il tasto **[!UICONTROL Crea collegamento TrustStore]**

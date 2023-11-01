@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Prima di poter eseguire a livello di programmazione un&#39;operazione API client
 Per migliorare le prestazioni del servizio Forms, è possibile impostare le seguenti opzioni di runtime delle prestazioni:
 
 * **Memorizzazione nella cache dei moduli**: è possibile memorizzare in cache un modulo di cui è stato eseguito il rendering come PDF nella cache del server. Ogni modulo viene memorizzato nella cache dopo essere stato generato per la prima volta. In un rendering successivo, se il modulo memorizzato in cache è più recente della marca temporale del progetto del modulo, il modulo viene recuperato dalla cache. La memorizzazione nella cache dei moduli migliora le prestazioni del servizio Forms in quanto non è necessario recuperare la struttura del modulo da un archivio.
-* Il rendering delle guide dei moduli (obsoleto) potrebbe richiedere più tempo rispetto ad altri tipi di trasformazione. Per migliorare le prestazioni, è consigliabile memorizzare nella cache le guide dei moduli (obsoleto).
+* Il rendering delle guide dei moduli (obsoleto) potrebbe richiedere più tempo rispetto ad altri tipi di trasformazione. È consigliabile memorizzare nella cache le guide dei moduli (obsoleto) per migliorare le prestazioni.
 * **Opzione autonoma**: se non è necessario che il servizio Forms esegua calcoli lato server, è possibile impostare l’opzione Standalone su `true`, che comporta il rendering dei moduli senza informazioni sullo stato. Le informazioni sullo stato sono necessarie se si desidera eseguire il rendering di un modulo interattivo a un utente finale che immette le informazioni nel modulo e lo invia nuovamente al servizio Forms. Il servizio Forms esegue quindi un&#39;operazione di calcolo e restituisce il modulo all&#39;utente con i risultati visualizzati nel modulo. Se un modulo senza informazioni sullo stato viene inviato nuovamente al servizio Forms, saranno disponibili solo i dati XML e non verranno eseguiti calcoli lato server.
 * **Linearized PDF**: file PDF linearizzato organizzato per consentire un accesso incrementale efficiente in un ambiente di rete. Il file PDF è un PDF valido sotto tutti gli aspetti ed è compatibile con tutti i visualizzatori esistenti e con altre applicazioni PDF. In altre parole, un PDF linearizzato può essere visualizzato mentre è ancora in fase di download.
 * Questa opzione non migliora le prestazioni quando viene eseguito il rendering di un modulo PDF sul client.

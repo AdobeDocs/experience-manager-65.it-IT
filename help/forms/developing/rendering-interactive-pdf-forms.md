@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2483'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (Java
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
    * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passare un valore string che rappresenta la radice web dell&#39;applicazione.
    * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo si trovi nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository:///`.
-   * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. Per eseguire i calcoli, è inoltre possibile specificare l&#39;URL a cui viene inviato un modulo.
+   * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
 
 1. Allega file al modulo
 
@@ -249,7 +249,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (serv
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
    * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passare un valore string che rappresenta la radice web dell&#39;applicazione.
    * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo si trovi nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository:///`.
-   * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. Per eseguire i calcoli, è inoltre possibile specificare l&#39;URL a cui viene inviato un modulo.
+   * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
 
 1. Allega file al modulo
 

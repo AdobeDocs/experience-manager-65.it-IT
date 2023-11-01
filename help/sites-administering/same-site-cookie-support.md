@@ -3,10 +3,10 @@ title: Supporto per i cookie dello stesso sito per AEM 6.5
 description: Scopri il Supporto per i cookie SameSite per AEM 6.5.
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 73%
+source-wordcount: '220'
+ht-degree: 74%
 
 ---
 

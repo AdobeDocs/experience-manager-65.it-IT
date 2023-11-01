@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1489'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Dopo aver identificato il modo in cui vengono utilizzati i moduli AEM, determina
 
 >[!NOTE]
 >
->Come per qualsiasi altro aspetto dell&#39;implementazione dei moduli AEM, la strategia di backup e ripristino deve essere sviluppata e testata in un ambiente di sviluppo o di staging prima di essere utilizzata in produzione per garantire che l&#39;intera soluzione funzioni come previsto senza perdita di dati.
+>Come per qualsiasi altro aspetto dell&#39;implementazione dei moduli AEM, prima di essere utilizzata in produzione, la strategia di backup e ripristino deve essere sviluppata e testata in un ambiente di sviluppo o di staging per garantire che l&#39;intera soluzione funzioni come previsto senza perdita di dati.
 
 Adobe Experience Manager (AEM) è parte integrante dei moduli AEM. Pertanto, è necessario eseguire il backup di AEM e sincronizzarlo con il backup di moduli AEM come soluzione e servizi per la gestione della corrispondenza, come Forms Manager, che si basano sui dati archiviati nella parte AEM dei moduli AEM.Per evitare qualsiasi perdita di dati, è necessario eseguire il backup dei dati specifici dei moduli AEM in modo da garantire che GDS e AEM (archivio) siano correlati con i riferimenti al database.Le directory radice di database, GDS, AEM e Content Storage devono essere ripristinate in un computer con lo stesso nome DNS dell&#39;originale.
 

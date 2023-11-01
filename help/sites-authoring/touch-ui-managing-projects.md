@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 7%
+source-wordcount: '985'
+ht-degree: 23%
 
 ---
 
@@ -43,30 +43,30 @@ Segui questi passaggi per creare un nuovo progetto.
 
    ![Creazione guidata progetto](assets/create-project-wizard.png)
 
-1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono.
+1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono,
 
    ![Passaggio proprietà della procedura guidata](assets/create-project-wizard-properties.png)
 
-1. Tocca o fai clic su **Crea**. La conferma chiede se desideri aprire il nuovo progetto o tornare alla console.
+1. Tocca o fai clic su **Crea**. Nella finestra di conferma ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
 
 La procedura per la creazione di un progetto è la stessa per tutti i modelli di progetto. La differenza tra i tipi di progetti si riferisce ai progetti disponibili [ruoli utente](/help/sites-authoring/projects.md) e [flussi di lavoro.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Associazione delle risorse al progetto {#associating-resources-with-your-project}
 
-I progetti consentono di raggruppare le risorse in un&#39;unica entità per gestirle nel loro insieme. Pertanto devi associare le risorse al progetto. Queste risorse sono raggruppate nel progetto come **Riquadri**. I tipi di risorse che è possibile aggiungere sono descritti in [Riquadri progetto](/help/sites-authoring/projects.md#project-tiles).
+I progetti consentono di raggruppare le risorse in un’unica entità per gestirle nel loro insieme. Pertanto devi associare le risorse al progetto. Queste risorse sono raggruppate nel progetto come **Riquadri**. I tipi di risorse che è possibile aggiungere sono descritti nella sezione [Riquadri progetto](/help/sites-authoring/projects.md#project-tiles).
 
-Per associare le risorse al progetto:
+Per associare le risorse a un progetto:
 
-1. Apri il progetto da **Progetti** console.
-1. Tocca o fai clic **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
+1. Apri il progetto dalla console **Progetti**.
+1. Tocca o fai clic su **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
 
    ![Aggiungi riquadro](assets/project-add-tile.png)
 
 1. Tocca o fai clic su **Crea**. La risorsa è ora collegata al progetto e accessibile da questo.
 
-### Aggiunta di elementi a una sezione {#adding-items-to-a-tile}
+### Aggiunta di elementi a un riquadro {#adding-items-to-a-tile}
 
-In alcuni riquadri, potrebbe essere necessario aggiungere più elementi. Ad esempio, puoi avere più di un flusso di lavoro in esecuzione alla volta o più di un’esperienza.
+Per alcuni riquadri, è possibile aggiungere più di un oggetto. Ad esempio, è possibile avere più flussi di lavoro o esperienze in esecuzione allo stesso tempo.
 
 Per aggiungere elementi a un riquadro:
 
@@ -82,11 +82,11 @@ Per aggiungere elementi a un riquadro:
 
 Lo scopo principale dei progetti è quello di raggruppare le informazioni associate in un unico luogo per renderle più accessibili e fruibili. Sono disponibili diversi modi per accedere a queste informazioni.
 
-### Apertura di una sezione {#opening-a-tile}
+### Apertura di un riquadro {#opening-a-tile}
 
-Puoi visualizzare gli elementi inclusi in una sezione corrente oppure modificare o eliminare gli elementi nella sezione.
+È possibile visualizzare gli elementi inclusi nel riquadro selezionato, modificarli o eliminarli.
 
-Per aprire una tessera in modo da poter visualizzare o modificare gli elementi:
+Per aprire un riquadro e visualizzare o modificare gli elementi:
 
 1. Tocca o fai clic sull’icona dei puntini di sospensione in basso a destra della sezione.
 
@@ -96,9 +96,9 @@ Per aprire una tessera in modo da poter visualizzare o modificare gli elementi:
 
    ![Attività progetto](assets/project-tasks.png)
 
-### Visualizzazione della sequenza temporale di un progetto {#viewing-a-project-timeline}
+### Visualizzazione della timeline di un progetto {#viewing-a-project-timeline}
 
-La timeline del progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la sequenza temporale del progetto, segui la procedura riportata di seguito.
+La timeline di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la sequenza temporale del progetto, segui la procedura riportata di seguito.
 
 1. In **Progetti** , tocca o fai clic su **Timeline** nel selettore della barra in alto a sinistra nella console.
    ![Selezione della modalità timeline](assets/projects-timeline-rail.png)

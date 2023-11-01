@@ -11,9 +11,9 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
 exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Prima di AEM 6.4, il codice del cliente veniva distribuito in aree imprevedibili del JCR soggette a modifiche durante gli aggiornamenti. Per questo motivo, nelle versioni formali dell’AEM veniva spesso sovrascritto il codice, la configurazione o il contenuto personalizzati. Inoltre, i cambiamenti dei clienti a volte sovrascrivono il codice o il contenuto del prodotto AEM, interrompendo le funzionalità del prodotto.
+Prima di AEM 6.4, il codice del cliente veniva distribuito in aree imprevedibili del JCR soggette a modifiche durante gli aggiornamenti. Per questo motivo, nelle versioni formali dell’AEM veniva spesso sovrascritto codice, configurazione o contenuto personalizzati. Inoltre, i cambiamenti dei clienti a volte sovrascrivono il codice o il contenuto del prodotto AEM, interrompendo le funzionalità del prodotto.
 
 Delineando chiaramente le gerarchie per codice prodotto AEM e codice cliente, questi conflitti possono essere evitati.
 
@@ -40,12 +40,12 @@ Quando si esegue l’aggiornamento a AEM 6.5, un sottoinsieme di grandi dimensio
 
 ### Orientamenti sulla ristrutturazione {#restructuring-guidance}
 
-Durante la pianificazione di un aggiornamento a AEM 6.5, per valutare lo sforzo di lavoro è necessario fare riferimento alle seguenti pagine per soluzione:
+Durante la pianificazione di un aggiornamento a AEM 6.5, per valutare l’impegno di lavoro è necessario fare riferimento alle seguenti pagine per soluzione:
 
 * [Ristrutturazione dell’archivio comune a tutte le soluzioni AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
 * [Ristrutturazione dell’archivio AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
 * [Ristrutturazione dell’archivio AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
-* [Ristrutturazione dell’archivio AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
+* [Ristrutturazione dell’archivio AEM Assets Dynamic Medie](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
 * [Ristrutturazione dell’archivio AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
 * [Ristrutturazione dell’archivio AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
 * [Ristrutturazione dell’archivio Commerce dell’AEM](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)

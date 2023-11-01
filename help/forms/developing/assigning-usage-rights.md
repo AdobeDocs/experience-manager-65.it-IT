@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3926'
+source-wordcount: '3918'
 ht-degree: 0%
 
 ---
@@ -128,11 +128,13 @@ Applica i diritti di utilizzo a un documento PDF utilizzando l’API delle esten
 
       * Il `UsageRights` oggetto contenente i diritti di utilizzo da applicare al documento.
       * Valore stringa che specifica un messaggio visualizzato da un utente quando il documento di PDF con abilitazione per i diritti viene aperto in Adobe Reader 7.x. Questo messaggio non viene visualizzato in Adobe Reader 8.0.
+
    * Applicare i diritti di utilizzo al documento PDF richiamando `ReaderExtensionsServiceClient` dell&#39;oggetto `applyUsageRights` e fornendo i seguenti valori:
 
       * Il `com.adobe.idp.Document` oggetto che contiene il documento PDF a cui vengono applicati i diritti di utilizzo.
       * Valore stringa che specifica l&#39;alias della credenziale che consente di applicare i diritti di utilizzo.
       * Valore stringa che specifica il valore password corrispondente. (Attualmente questo parametro viene ignorato. È possibile trasmettere `null`.)
+
    * Il `ReaderExtensionsOptionSpec` oggetto contenente opzioni di runtime.
 
    Il `applyUsageRights` il metodo restituisce un `com.adobe.idp.Document` oggetto contenente il documento PDF con abilitazione per i diritti.
@@ -200,6 +202,7 @@ Applica i diritti di utilizzo a un documento PDF utilizzando l’API delle esten
       * Il `BLOB` oggetto che contiene il documento PDF a cui vengono applicati i diritti di utilizzo.
       * Valore stringa che specifica l&#39;alias della credenziale che consente di applicare i diritti di utilizzo.
       * Valore stringa che specifica il valore password corrispondente. (Attualmente questo parametro viene ignorato. È possibile trasmettere `null`.)
+
    * Il `ReaderExtensionsOptionSpec` oggetto contenente opzioni di runtime.
 
    Il `applyUsageRights` il metodo restituisce un `BLOB` oggetto contenente il documento PDF con abilitazione per i diritti.
@@ -241,7 +244,7 @@ Per rimuovere i diritti di utilizzo da un documento di PDF abilitato per i dirit
 
 Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicazione client utilizzando Java, includi i file JAR necessari. Se utilizzi i servizi web, accertati di includere i file proxy.
 
-**Creazione di un oggetto client per estensioni Acrobat Reader DC**
+**Creare un oggetto client per estensioni Acrobat Reader DC**
 
 Prima di poter eseguire un&#39;operazione del servizio Acrobat Reader DC extensions a livello di programmazione, è necessario creare un oggetto client del servizio Acrobat Reader DC extensions. Se utilizzi l’API Java, crea un’ `ReaderExtensionsServiceClient` oggetto. Se utilizzi l’API del servizio web Acrobat Reader DC extensions, puoi creare una `ReaderExtensionsServiceService` oggetto.
 

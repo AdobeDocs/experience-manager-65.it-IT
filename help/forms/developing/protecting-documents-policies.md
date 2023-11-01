@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '15513'
+source-wordcount: '15485'
 ht-degree: 0%
 
 ---
@@ -577,7 +577,7 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 **Recuperare un documento PDF**
 
-Per applicare una policy, è possibile recuperare un documento PDF. Dopo aver applicato una policy al documento PDF, gli utenti vengono limitati quando utilizzano il documento. Se, ad esempio, la policy non consente l&#39;apertura del documento in modalità non in linea, gli utenti devono essere in linea per aprire il documento.
+È possibile recuperare un documento PDF per applicare una policy. Dopo aver applicato una policy al documento PDF, gli utenti vengono limitati quando utilizzano il documento. Se, ad esempio, la policy non consente l&#39;apertura del documento in modalità non in linea, gli utenti devono essere in linea per aprire il documento.
 
 **Applicare una policy esistente al documento PDF**
 
@@ -744,7 +744,7 @@ Per rimuovere una policy, è possibile recuperare un documento PDF protetto tram
 
 **Rimuovi il criterio dal documento PDF**
 
-È possibile rimuovere una policy da un documento PDF protetto tramite policy a condizione che nelle impostazioni di connessione sia specificato un amministratore. In caso contrario, il criterio utilizzato per proteggere un documento deve contenere `SWITCH_POLICY` per rimuovere una policy da un documento PDF. Inoltre, anche l’utente specificato nelle impostazioni di connessione di AEM Forms deve disporre di tale autorizzazione. In caso contrario, viene generata un&#39;eccezione.
+È possibile rimuovere una policy da un documento PDF protetto tramite policy a condizione che nelle impostazioni di connessione sia specificato un amministratore. In caso contrario, il criterio utilizzato per proteggere un documento deve contenere `SWITCH_POLICY` autorizzazione a rimuovere una policy da un documento PDF. Inoltre, anche l’utente specificato nelle impostazioni di connessione di AEM Forms deve disporre di tale autorizzazione. In caso contrario, viene generata un&#39;eccezione.
 
 **Salva il documento PDF non protetto**
 
@@ -880,7 +880,7 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 Per revocare un documento PDF protetto tramite policy è necessario recuperarlo. Non è possibile revocare un documento già revocato o non protetto tramite policy.
 
-Se si conosce il valore dell&#39;identificatore di licenza del documento protetto tramite policy, non è necessario recuperare il documento PDF protetto tramite policy. Tuttavia, nella maggior parte dei casi, per ottenere il valore dell’identificatore della licenza è necessario recuperare il documento PDF.
+Se si conosce il valore dell&#39;identificatore di licenza del documento protetto tramite policy, non è necessario recuperare il documento PDF protetto tramite policy. Tuttavia, nella maggior parte dei casi sarà necessario recuperare il documento PDF per ottenere il valore dell&#39;identificatore della licenza.
 
 **Revoca del documento protetto tramite policy**
 
@@ -2136,7 +2136,7 @@ Per rimuovere una policy, è necessario recuperare un documento Word protetto tr
 
 **Rimuovere la policy dal documento di Word**
 
-È possibile rimuovere una policy da un documento Word protetto tramite policy a condizione che nelle impostazioni di connessione sia specificato un amministratore. In caso contrario, il criterio utilizzato per proteggere un documento deve contenere `SWITCH_POLICY` per rimuovere una policy da un documento di Word. Inoltre, anche l’utente specificato nelle impostazioni di connessione di AEM Forms deve disporre di tale autorizzazione. In caso contrario, viene generata un&#39;eccezione.
+È possibile rimuovere una policy da un documento Word protetto tramite policy a condizione che nelle impostazioni di connessione sia specificato un amministratore. In caso contrario, il criterio utilizzato per proteggere un documento deve contenere `SWITCH_POLICY` autorizzazione per rimuovere una policy da un documento di Word. Inoltre, anche l’utente specificato nelle impostazioni di connessione di AEM Forms deve disporre di tale autorizzazione. In caso contrario, viene generata un&#39;eccezione.
 
 **Salvare il documento Word non protetto**
 

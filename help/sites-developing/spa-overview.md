@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 91%
+source-wordcount: '1653'
+ht-degree: 87%
 
 ---
 
@@ -47,7 +47,7 @@ Il componente pagina per una SPA non fornisce gli elementi HTML dei suoi compone
 
 ### Gestione dei modelli di pagina {#page-model-management}
 
-La risoluzione e la gestione del modello di pagina sono delegate a una libreria `PageModel`. La SPA deve utilizzare la libreria Modello di pagina per essere inizializzata e creata dall’editor di SPA. La libreria Modello di pagina fornita indirettamente al componente Pagina AEM tramite l’npm `aem-react-editable-components`. Il Modello di pagina è un interprete tra AEM e SPA e quindi deve essere sempre presente. Quando si crea la pagina, deve essere aggiunta una libreria addizionale `cq.authoring.pagemodel.messaging` per abilitare la comunicazione con l’editor pagina.
+La risoluzione e la gestione del modello di pagina sono delegate a una libreria `PageModel`. L’SPA deve utilizzare la libreria Modello pagina per essere inizializzata e creata dall’Editor SPA. La libreria Modello di pagina fornita indirettamente al componente Pagina AEM tramite l’npm `aem-react-editable-components`. Il Modello di pagina è un interprete tra AEM e SPA e quindi deve essere sempre presente. Quando viene creata la pagina, viene aggiunta una libreria `cq.authoring.pagemodel.messaging` per abilitare la comunicazione con l’editor pagina.
 
 Se il componente pagina SPA eredita dal componente core della pagina, sono disponibili due opzioni per rendere la categoria libreria client `cq.authoring.pagemodel.messaging` disponibile:
 
@@ -172,7 +172,7 @@ Le versioni precedenti di questi framework possono funzionare con l’SDK dell�
 
 ### Framework aggiuntivi {#additional-frameworks}
 
-Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Vedi il documento [Blueprint SPA](/help/sites-developing/spa-blueprint.md) per i requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi per lavorare con l’editor di SPA di AEM.
+Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Consulta la sezione [Blueprint SPA](/help/sites-developing/spa-blueprint.md) Documento sui requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi per lavorare con l&#39;AEM SPA Editor.
 
 ### Utilizzo di più selettori {#multiple-selectors}
 

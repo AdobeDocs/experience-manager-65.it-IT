@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6854'
+source-wordcount: '6836'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ Poiché questo tipo di requisito di autenticazione dovrebbe essere limitato a de
 
 La configurazione AEM predefinita ora utilizza questa configurazione consentendo di impostare il mixin in modalità di esecuzione dell’autore, ma solo per renderla effettiva al momento della replica nell’istanza di pubblicazione. Consulta [questa pagina](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) per informazioni dettagliate su come Sling applica il requisito di autenticazione.
 
-Aggiunta di `granite:AuthenticationRequired` All’interno dei percorsi supportati configurati, il tipo mixin causerà l’aggiornamento della registrazione OSGi del gestore responsabile contenente una nuova voce aggiuntiva con `sling.auth.requirements` proprietà. Se un determinato requisito di autenticazione specifica il `granite:loginPath` , il valore viene inoltre registrato con l’autenticatore con il prefisso &quot;-&quot; per essere escluso dai requisiti di autenticazione.
+Aggiunta di `granite:AuthenticationRequired` All’interno dei percorsi supportati configurati, il tipo mixin causerà l’aggiornamento della registrazione OSGi del gestore responsabile contenente una nuova voce aggiuntiva con `sling.auth.requirements` proprietà. Se un determinato requisito di autenticazione specifica il `granite:loginPath` , il valore viene inoltre registrato con l’autenticatore con un prefisso &quot;-&quot; da escludere dai requisiti di autenticazione.
 
 #### Valutazione ed ereditarietà del requisito di autenticazione {#evaluation-and-inheritance-of-the-authentication-requirement}
 
@@ -718,7 +718,7 @@ Consulta la [Collegamento CUG](https://jackrabbit.apache.org/oak/docs/security/a
 
 ### Disattiva il requisito di autenticazione {#disable-the-authentication-requirement}
 
-Al fine di disabilitare il supporto per il requisito di autenticazione fornito dalla `granite.auth.authhandler` è sufficiente rimuovere la configurazione associata a **Adobe di requisiti di autenticazione Granite e gestore del percorso di accesso**.
+Per disattivare il supporto per il requisito di autenticazione fornito da `granite.auth.authhandler` è sufficiente rimuovere la configurazione associata a **Adobe di requisiti di autenticazione Granite e gestore del percorso di accesso**.
 
 >[!NOTE]
 >
@@ -728,7 +728,7 @@ Al fine di disabilitare il supporto per il requisito di autenticazione fornito d
 
 ### API Apache Jackrabbit {#apache-jackrabbit-api}
 
-Al fine di riflettere il nuovo tipo di criteri di controllo degli accessi utilizzati dal modello di autorizzazione CUG, è stata estesa l’API definita da Apache Jackrabbit. A partire dalla versione 2.11.0 del `jackrabbit-api` definisce una nuova interfaccia denominata `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy`, che si estende da `javax.jcr.security.AccessControlPolicy`.
+Per riflettere il nuovo tipo di criteri di controllo di accesso utilizzati dal modello di autorizzazione CUG, è stata estesa l’API definita da Apache Jackrabbit. A partire dalla versione 2.11.0 del `jackrabbit-api` definisce una nuova interfaccia denominata `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy`, che si estende da `javax.jcr.security.AccessControlPolicy`.
 
 ### Apache Jackrabbit FileVault {#apache-jackrabbit-filevault}
 
@@ -740,7 +740,7 @@ Vedi quanto sopra [Apache Jackrabbit FileVault](/help/sites-administering/closed
 
 ### Adobe di replica Granite {#adobe-granite-replication}
 
-Il modulo di replica è stato leggermente modificato per poter replicare i criteri CUG tra diverse istanze AEM:
+Il modulo di replica è stato leggermente modificato per essere in grado di replicare i criteri CUG tra diverse istanze AEM:
 
 * `DurboImportConfiguration.isImportAcl()` viene interpretato letteralmente e influirà solo sui criteri di controllo di accesso che implementano `javax.jcr.security.AccessControlList`
 
@@ -794,7 +794,7 @@ Con la nuova implementazione, l’impostazione del controllo di accesso del mode
 
 **Modifica dei criteri dei gruppi utenti chiusi (CUG) nella gestione del controllo di accesso**
 
-Questo passaggio dalle proprietà JCR residue a un criterio di controllo degli accessi dedicato ha un impatto sull’autorizzazione necessaria per creare o modificare la parte di autorizzazione della funzione CUG. Poiché viene considerata una modifica al contenuto di controllo dell’accesso, richiede `jcr:readAccessControl` e `jcr:modifyAccessControl` per essere scritti nell&#39;archivio. Pertanto, solo gli autori di contenuti autorizzati a modificare il contenuto di controllo di accesso di una pagina possono impostare o modificare tale contenuto. Questo è in contrasto con la vecchia implementazione in cui la capacità di scrivere proprietà JCR regolari era sufficiente, con conseguente escalation di privilegi.
+Questo passaggio dalle proprietà JCR residue a un criterio di controllo degli accessi dedicato ha un impatto sull’autorizzazione necessaria per creare o modificare la parte di autorizzazione della funzione CUG. Poiché viene considerata una modifica al contenuto di controllo dell’accesso, richiede `jcr:readAccessControl` e `jcr:modifyAccessControl` privilegi da scrivere nell’archivio. Pertanto, solo gli autori di contenuti autorizzati a modificare il contenuto di controllo di accesso di una pagina possono impostare o modificare tale contenuto. Questo è in contrasto con la vecchia implementazione in cui la capacità di scrivere proprietà JCR regolari era sufficiente, con conseguente escalation di privilegi.
 
 **Nodo Di Destinazione Definito Dal Criterio**
 

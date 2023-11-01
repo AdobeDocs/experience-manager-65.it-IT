@@ -2,10 +2,10 @@
 title: Guida rapida alle linee guida WCAG 2.1
 description: Guida rapida alle linee guida WCAG (Web Content Accessibility Guidelines) versione 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 94%
+source-wordcount: '1777'
+ht-degree: 92%
 
 ---
 
@@ -42,7 +42,7 @@ in altre parole, si tratta di linee guida che possono essere applicate a diversi
 ogni istruzione è redatta in modo da poter essere testata in modo oggettivo affinché un gruppo di esperti di accessibilità possa concordare in linea generale sul fatto che la linea guida sia stata rispettata. Una delle problematiche correlate all’accessibilità, infatti, consiste nel fatto che alcune linee guida possono essere tecnicamente testabili, mentre altre richiedono una valutazione umana per verificare se siano state rispettate o meno.
 
 * Supporto dell’**implementazione contestuale e basata su priorità**:
-alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Viene inoltre introdotto il concetto di *supporto dell’accessibilità*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non prevedere il supporto completo per l’accessibilità oppure che, per beneficiare delle funzioni di accessibilità, potrebbero richiedere l’accesso a particolari browser e/o tecnologie per l’accessibilità.
+alle linee guida WCAG 2.1 vengono assegnate priorità basate sull’impatto probabile del mancato rispetto di una linea guida su un determinato gruppo di utenti con disabilità. Questo consente agli autori di prendere decisioni informate sulle linee guida più importanti per una situazione specifica. Viene inoltre introdotto il concetto di *supporto dell’accessibilità*. Questo consente agli autori di decidere come utilizzare al meglio le tecnologie web che potrebbero non disporre del supporto completo per l’accessibilità o che potrebbero richiedere agli utenti di disporre di tecnologie e/o browser per l’accessibilità specifici per beneficiare delle funzioni di accessibilità.
 
 Tali obiettivi hanno influenzato in modo significativo la struttura delle linee guida WCAG 2.1.
 

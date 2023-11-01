@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: f841e3886771fb00eee6e476d7111d4a335a9d51
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Per utilizzare i token, devi replicare il file binario HMAC in tutte le istanze 
 
 >[!NOTE]
 >
->Assicurati anche di fare il necessario [Modifiche alla configurazione del Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) per utilizzare il quadro di protezione CSRF.
+>Assicurati anche di fare il necessario [Modifiche alla configurazione del Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) per utilizzare il framework di protezione CSRF.
 
 >[!NOTE]
 >

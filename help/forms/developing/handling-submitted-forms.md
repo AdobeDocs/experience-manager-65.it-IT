@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -222,11 +222,9 @@ Gestisci un modulo inviato utilizzando l’API Forms (Java):
       * Un valore stringa che specifica il `HTTP_USER_AGENT` valore dell’intestazione, ad esempio. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Il valore di questo parametro è facoltativo.
       * A `RenderOptionsSpec` oggetto che memorizza le opzioni di runtime.
 
-      Il `processFormSubmission` il metodo restituisce un `FormsResult` oggetto contenente i risultati dell’invio del modulo.
+     Il `processFormSubmission` il metodo restituisce un `FormsResult` oggetto contenente i risultati dell’invio del modulo.
 
    * Determinare se il servizio Forms ha terminato l&#39;elaborazione dei dati del modulo richiamando `FormsResult` dell&#39;oggetto `getAction` metodo. Se questo metodo restituisce il valore `0`, i dati sono pronti per l’elaborazione.
-
-
 
 1. Determinare se l&#39;invio del modulo contiene allegati
 
@@ -247,12 +245,12 @@ Gestisci un modulo inviato utilizzando l’API Forms (Java):
       * Creare un `org.w3c.dom.DocumentBuilder` oggetto richiamando il `org.w3c.dom.DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` metodo.
       * Creare un `org.w3c.dom.Document` oggetto richiamando il `org.w3c.dom.DocumentBuilder` dell&#39;oggetto `parse` e passando il `java.io.InputStream` oggetto.
       * Recuperate il valore di ciascun nodo all&#39;interno del documento XML. Un modo per eseguire questa attività consiste nel creare un metodo personalizzato che accetti due parametri: `org.w3c.dom.Document` e il nome del nodo di cui si desidera recuperare il valore. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. Nell&#39;esempio di codice che segue questo processo, questo metodo personalizzato viene chiamato `getNodeText`. Viene visualizzato il corpo di questo metodo.
+
    * Se il tipo di contenuto dei dati è `application/pdf`, crea una logica di applicazione per salvare i dati PDF inviati come file PDF.
 
       * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
       * Creare un `java.io.File` mediante il costruttore pubblico. Assicurati di specificare PDF come estensione del nome file.
       * Popola il file PDF richiamando `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` e passando il `java.io.File` oggetto.
-
 
 **Consulta anche**
 
@@ -302,10 +300,9 @@ Gestisci un modulo inviato utilizzando l’API Forms (servizio web):
       * Un campo vuoto `MyArrayOf_xsd_anyTypeHolder` oggetto popolato dal metodo. Questo parametro viene utilizzato per memorizzare gli allegati dei file inviati insieme al modulo.
       * Un campo vuoto `FormsResultHolder` oggetto popolato dal metodo con il modulo inviato.
 
-      Il `processFormSubmission` il metodo compila `FormsResultHolder` con i risultati dell&#39;invio del modulo.
+     Il `processFormSubmission` il metodo compila `FormsResultHolder` con i risultati dell&#39;invio del modulo.
 
    * Determinare se il servizio Forms ha terminato l&#39;elaborazione dei dati del modulo richiamando `FormsResult` dell&#39;oggetto `getAction` metodo. Se questo metodo restituisce il valore `0`, i dati del modulo sono pronti per l’elaborazione. Puoi ottenere un `FormsResult` dell&#39;oggetto ottenendo il valore del `FormsResultHolder` dell&#39;oggetto `value` membro dati.
-
 
 1. Determinare se l&#39;invio del modulo contiene allegati
 
@@ -322,6 +319,7 @@ Gestisci un modulo inviato utilizzando l’API Forms (servizio web):
       * Creare un `org.w3c.dom.DocumentBuilder` oggetto richiamando il `org.w3c.dom.DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` metodo.
       * Creare un `org.w3c.dom.Document` oggetto richiamando il `org.w3c.dom.DocumentBuilder` dell&#39;oggetto `parse` e passando il `java.io.InputStream` oggetto.
       * Recuperate il valore di ciascun nodo all&#39;interno del documento XML. Un modo per eseguire questa attività consiste nel creare un metodo personalizzato che accetti due parametri: `org.w3c.dom.Document` e il nome del nodo di cui si desidera recuperare il valore. Questo metodo restituisce un valore stringa che rappresenta il valore del nodo. Nell&#39;esempio di codice che segue questo processo, questo metodo personalizzato viene chiamato `getNodeText`. Viene visualizzato il corpo di questo metodo.
+
    * Se il tipo di contenuto dei dati è `application/pdf`, crea una logica di applicazione per salvare i dati PDF inviati come file PDF.
 
       * Creare un `BLOB` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
@@ -329,7 +327,6 @@ Gestisci un modulo inviato utilizzando l’API Forms (servizio web):
       * Creare un `java.io.File` mediante il costruttore pubblico. Assicurati di specificare PDF come estensione del nome file.
       * Creare un `java.io.FileOutputStream` mediante il costruttore e passando il `java.io.File` oggetto.
       * Popola il file PDF richiamando `java.io.FileOutputStream` dell&#39;oggetto `write` e passando la matrice di byte.
-
 
 **Consulta anche**
 

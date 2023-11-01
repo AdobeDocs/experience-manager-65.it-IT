@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '8189'
+source-wordcount: '8187'
 ht-degree: 0%
 
 ---
@@ -807,7 +807,7 @@ Per eseguire un&#39;operazione del servizio di crittografia a livello di program
 
 **Ottieni il documento PDF crittografato**
 
-È necessario ottenere un documento PDF crittografato per sbloccarlo. Se si tenta di sbloccare un documento PDF non crittografato, viene generata un&#39;eccezione.
+Per sbloccarlo, è necessario ottenere un documento PDF crittografato. Se si tenta di sbloccare un documento PDF non crittografato, viene generata un&#39;eccezione.
 
 **Sblocca il documento**
 

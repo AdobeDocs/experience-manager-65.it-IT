@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Per eseguire il rendering di un modulo basato su frammenti utilizzando l’API d
 1. Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
 1. Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passa un valore stringa che rappresenta la directory principale del web dell’applicazione.
 1. Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo e i frammenti si trovino nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio AEM Forms, specifica `repository://`.
-1. Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. Per eseguire i calcoli, è inoltre possibile specificare l&#39;URL a cui viene inviato un modulo.
+1. Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
 1. Richiama `FormsServiceClient` dell&#39;oggetto `renderPDFForm` e trasmettere i seguenti valori:
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file.
@@ -397,4 +397,4 @@ Dopo aver distribuito l’applicazione web, puoi testarla utilizzando un browser
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
-   Selezionare un pulsante di opzione e fare clic sul pulsante Invia. Un modulo basato su frammenti verrà visualizzato nel browser Web. Se si verificano problemi, vedere il file di registro del server applicazioni J2EE.
+  Selezionare un pulsante di opzione e fare clic sul pulsante Invia. Un modulo basato su frammenti verrà visualizzato nel browser Web. Se si verificano problemi, vedere il file di registro del server applicazioni J2EE.

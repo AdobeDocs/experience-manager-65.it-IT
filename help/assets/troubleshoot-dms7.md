@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1395'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Per confermare la corretta sincronizzazione della risorsa da CRXDE Liti Experien
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Indicatore generale che il nodo è collegato a Dynamic Medie. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** o testo di errore | Stato di caricamento della risorsa in Dynamic Medie. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Deve essere compilato per generare gli URL della risorsa remota di Dynamic Medie. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Deve essere compilata per generare gli URL della risorsa remota di Dynamic Medie. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **success** o **non riuscito:`<error text>`** | Stato di sincronizzazione di set (set 360 gradi, set di immagini e così via), predefiniti immagine, predefiniti visualizzatore, aggiornamenti mappa immagine per una risorsa o immagini modificate. |
 
 ### Registrazione sincronizzazione {#synchronization-logging}

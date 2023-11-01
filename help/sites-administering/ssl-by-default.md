@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -223,7 +223,7 @@ Di seguito sono riportati i parametri che è possibile utilizzare per modificare
 >
 >Il modo più veloce per eseguire cURL per automatizzare la configurazione SSL/TLS è quello di utilizzare la cartella in cui si trovano i file DER e CRT. In alternativa, è possibile specificare il percorso completo nella `privatekeyFile` e certificateFile.
 >
->Per eseguire l’aggiornamento è inoltre necessario essere autenticati, quindi assicurati di aggiungere il comando cURL a `-u user:passeword` parametro.
+>Per eseguire l’aggiornamento, è inoltre necessario essere autenticati, quindi assicurati di aggiungere il comando cURL a `-u user:passeword` parametro.
 >
 >Un comando post cURL corretto dovrebbe essere simile al seguente:
 

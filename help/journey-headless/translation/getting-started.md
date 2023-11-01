@@ -2,10 +2,10 @@
 title: Guida introduttiva alla traduzione headless in AEM
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1495'
-ht-degree: 90%
+source-wordcount: '1493'
+ht-degree: 89%
 
 ---
 
@@ -64,7 +64,7 @@ Il contenuto di AEM, sia esso headless o costituito da pagine web tradizionali, 
 
 ## Come AEM archivia i contenuti headless {#headless-content-in-aem}
 
-Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestisce i contenuti headless. Tuttavia, conoscere i concetti e la terminologia di base sarà utile in seguito all’utilizzo di strumenti di traduzione AEM. È importante comprendere il proprio contenuto e la sua struttura per tradurlo in modo efficace.
+Per lo specialista della traduzione, non è importante comprendere in modo approfondito come AEM gestisce i contenuti headless. Tuttavia, conoscere i concetti e la terminologia di base sarà utile in seguito all’utilizzo di strumenti di traduzione AEM. Ma soprattutto, devi comprendere i contenuti e come sono strutturati per tradurli in modo efficace.
 
 ### Modelli di contenuto {#content-models}
 

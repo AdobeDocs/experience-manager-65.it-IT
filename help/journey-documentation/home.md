@@ -1,17 +1,17 @@
 ---
 title: Percorsi di documentazione AEM
-description: I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l'unione di funzioni complesse e disparate al fine di risolvere un obiettivo di business in modo da costituire una best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
+description: I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l’unione di funzioni complesse e disparate per risolvere un obiettivo di business in modo da favorire le best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
 exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 98%
+source-wordcount: '1228'
+ht-degree: 91%
 
 ---
 
 # Percorsi di documentazione AEM {#aem-documentation-journeys}
 
-I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l&#39;unione di funzioni complesse e disparate al fine di risolvere un obiettivo di business in modo da costituire una best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
+I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l’unione di funzioni complesse e disparate per risolvere un obiettivo di business in modo da favorire le best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
 
 ## Cos’è un Percorso di documentazione? {#what-is}
 
@@ -81,13 +81,13 @@ I Percorsi di documentazione sono intesi come complemento alla documentazione te
 
 ## Che percorsi ci sono? {#journeys}
 
-Sono già disponibili diversi Percorsi di documentazione. Poiché ogni percorso è progettato in modalità narrativa, consigliamo di iniziare con l’introduzione e leggere tutto il percorso per ottenere una piena comprensione dell’argomento nel contesto di AEM.
+Sono già disponibili diversi Percorsi di documentazione. Dato che ogni percorso è progettato come narrazione, si prega di iniziare con l&#39;introduzione e leggere tutto il percorso per ottenere una piena comprensione dell&#39;argomento nel contesto dell&#39;AEM.
 
 | Percorso | Descrizione |
 |---|---|
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Inizia qui per vedere come AEM supporta modelli di sviluppo headless e come iniziare il progetto, partendo dalla pianificazione, fino all’implementazione e al Go Live. |
 | [Percorso per authoring headless](/help/journey-headless/author/overview.md) | Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come modellare i contenuti sul tuo primo progetto headless. |
-| [Percorso per architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e per vedere come modellare i contenuti per il tuo progetto. |
+| [Percorso per architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e come modellare i contenuti per il tuo progetto. |
 | [Percorso di traduzione headless](/help/journey-headless/translation/overview.md) | Inizia qui per scoprire come impostare e gestire i tuoi progetti di traduzione headless in AEM. |
 
 <!--

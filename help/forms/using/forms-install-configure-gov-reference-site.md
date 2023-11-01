@@ -4,9 +4,9 @@ description: Installa, configura e personalizza un pacchetto demo di AEM Forms.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4626'
+source-wordcount: '4622'
 ht-degree: 3%
 
 ---
@@ -342,7 +342,7 @@ Questa sezione contiene dettagli e istruzioni sulla configurazione di Adobe Anal
 
 **Riferimenti:**
 
-* [Integrazione con Adobe Analytics ](../../sites-administering/adobeanalytics.md)
+* [Integrazione con Adobe Analytics](../../sites-administering/adobeanalytics.md)
 
 * [Connessione ad Adobe Analytics e creazione di framework](../../sites-administering/adobeanalytics-connect.md)
 
@@ -436,7 +436,7 @@ I dati di AEM Forms Analytics sono disponibili offline o senza una configurazion
 
 1. Nello stesso menu, selezionare &quot;View Setting&quot; (Impostazioni visualizzazione) e selezionare le colonne da visualizzare dalla sezione &quot;Analytics&quot;.
 
-   ![Configurare le colonne](assets/configure_columns.jpg)
+   ![Colonne configurabili](assets/configure_columns.jpg)
 
 1. Fai clic su &quot;Aggiorna&quot; per rendere disponibili le nuove colonne.
 
@@ -476,7 +476,7 @@ Prima di leggere ulteriori istruzioni, leggere quanto segue:
 
 #### Creazione di una configurazione IMS Parte 1 {#creating-ims-config}
 
-Per configurare il servizio in modo che comunichi correttamente con lo strumento di conversione moduli, gli utenti devono configurare il servizio Identity Management System (IMS) in modo che possa registrarsi in Adobe I/O.
+Per configurare il servizio in modo da comunicare correttamente con lo strumento di conversione moduli, gli utenti devono configurare il servizio Identity Management System (IMS) per la registrazione ad Adobe I/O.
 
 1. Passa a https://&lt;aemserver>:&lt;port> > Fai clic su Adobe Experience Manager in alto a sinistra > Strumenti > Sicurezza > Configurazione Adobe IMS.
 
@@ -496,7 +496,7 @@ Il certificato creato in questa sezione verrà utilizzato per creare il servizio
 
 #### Creazione dell’integrazione in Adobe I/O {#create-integration-adobeio}
 
-Se non contatti l’amministratore di Adobe per farlo, assicurati di avere la possibilità di creare un’integrazione all’interno del dominio di esempio.
+Se non contatti l’amministratore di Adobe, assicurati di poter creare un’integrazione all’interno del dominio di esempio.
 
 1. Accedi a [Console Adobi I/O](https://developer.adobe.com/console/).
 
@@ -548,7 +548,7 @@ Una volta completata la configurazione IMS, puoi procedere con la revisione dell
 
 1. Apri il browser e passa all’URL di sistema https://&lt;domain_name>:&lt;system_port>
 
-1. Fai clic su Adobe Experience Manager nell’angolo in alto a sinistra della schermata > Strumenti > Cloud Services > Configurazione conversazione automatica Forms.
+1. Fai clic su Adobe Experience Manager nell’angolo in alto a sinistra della schermata > Strumenti > Cloud Service > Configurazione conversazione automatica Forms.
 
 1. Seleziona la cartella di configurazione in cui desideri inserire la configurazione.
 
@@ -578,7 +578,7 @@ Una volta completata la configurazione IMS, possiamo procedere alla creazione de
 
 1. Apri il browser e passa all’URL di sistema https://&lt;domain_name>:&lt;system_port>
 
-1. Fai clic su Adobe Experience Manager nell’angolo in alto a sinistra della schermata > Strumenti > Cloud Services > Configurazione conversazione automatica Forms.
+1. Fai clic su Adobe Experience Manager nell’angolo in alto a sinistra della schermata > Strumenti > Cloud Service > Configurazione conversazione automatica Forms.
 
 1. Seleziona la cartella di configurazione in cui desideri inserire la configurazione.
 

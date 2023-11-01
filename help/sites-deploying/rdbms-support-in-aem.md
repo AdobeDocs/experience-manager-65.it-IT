@@ -12,9 +12,9 @@ discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Per ulteriori informazioni sul livello di supporto del database relazionale in A
 
 L’archivio viene creato configurando `DocumentNodeStoreService` Servizio OSGi. È stato esteso per supportare la persistenza del database relazionale oltre a MongoDB.
 
-Affinché funzioni, è necessario configurare un’origine dati con AEM. Questa operazione viene eseguita tramite `org.apache.sling.datasource.DataSourceFactory.config` file. I driver JDBC per il rispettivo database devono essere forniti separatamente come bundle OSGi all’interno della configurazione locale.
+Affinché funzioni, è necessario configurare un’origine dati con l’AEM. Questa operazione viene eseguita tramite `org.apache.sling.datasource.DataSourceFactory.config` file. I driver JDBC per il rispettivo database devono essere forniti separatamente come bundle OSGi all’interno della configurazione locale.
 
 Per i passaggi sulla creazione di bundle OSGi per driver JDBC, consulta questa pagina [documentazione](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) sul sito web Apache Sling.
 
@@ -57,6 +57,7 @@ Una volta che i bundle sono in posizione, segui i passaggi seguenti per configur
 1. Configura l’origine dati e i parametri JDBC creando un altro file di configurazione con il seguente nome in `crx-quickstart\install` cartella:
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
+
    >[!NOTE]
    >
    >Per informazioni dettagliate sulla configurazione dell&#39;origine dati per ciascun database supportato, vedere [Opzioni di configurazione dell’origine dati](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).

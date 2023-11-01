@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3853'
 ht-degree: 0%
 
 ---
@@ -179,8 +179,6 @@ Nella scheda del contenuto, gestisci il contenuto, ad esempio frammenti di docum
 
    * Un campo variabile numerica utilizza per impostazione predefinita *0 (zero)*. Tuttavia, la variabile è considerata non compilata. Questo implica che il conteggio delle variabili include tutti i campi di variabili numeriche con valore *0 (zero)*.
 
-
-
 #### Azioni e informazioni disponibili nella scheda Crea contenuto corrispondenza {#actions-and-info-available-in-the-create-correspondence-content-tab}
 
 **Area di destinazione**
@@ -293,9 +291,9 @@ Tali istanze possono essere salvate solo quando la lettera viene visualizzata ne
 
 Prima di pubblicare lettere o salvare bozze nell’istanza di pubblicazione, effettua le seguenti operazioni sull’istanza di authoring e di pubblicazione per abilitare la funzione Salva come bozza:
 
-Il *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* per impostazione predefinita, le proprietà non vengono trasferite all’istanza Publish. Al fine di riportare *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* per pubblicare l&#39;istanza, disabilita la proprietà [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Per disattivare il componente:
+Il *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* per impostazione predefinita, le proprietà non vengono trasferite all’istanza Publish. Da riportare *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* per pubblicare l&#39;istanza, disabilita la proprietà [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Per disattivare il componente:
 
-1. Nell’istanza di authoring, apri la console Componenti della console web di Adobe Experience Manager. L’URL predefinito è `http://author-server:port/system/console/components`
+1. Nell’istanza di authoring, apri la console Componenti della console Web di Adobe Experience Manager. L’URL predefinito è `http://author-server:port/system/console/components`
 
 1. Cerca **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** componente.
 
@@ -335,7 +333,7 @@ Questa opzione è disponibile per le persone che hanno dubbi sul salvataggio dei
 
 1. In AEM, apri Configurazione console web Adobe Experience Manager per il server utilizzando il seguente URL: `https://<server>:<port>/system/console/configMgr`
 
-   ![Configurazione della console web Adobe Experience Manager](assets/2configmanager.png)
+   ![Configurazione console Web Adobe Experience Manager](assets/2configmanager.png)
 
 1. In questa pagina, individua la configurazione Adobe LiveCycle Client SDK e espandila facendo clic su di essa.
 

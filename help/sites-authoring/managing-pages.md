@@ -2,9 +2,9 @@
 title: Creazione e organizzazione di pagine con AEM
 description: Scopri come creare e gestire le pagine con Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2434'
 ht-degree: 77%
 
 ---
@@ -94,7 +94,7 @@ Durante la creazione di una nuova pagina sono disponibili due campi chiave:
 
 Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma sono correlati:
 
-* Quando crei una pagina, l’unico campo obbligatorio è quello del **Titolo**. Se non viene fornito un **Nome** al momento della creazione della pagina, AEM ne genera uno dai primi 64 caratteri del titolo (rispettando le norme di convalida descritte di seguito). Vengono utilizzati solo i primi 64 caratteri, per rispettare la best practice sui nomi di pagina brevi.
+* Quando crei una pagina, l’unico campo obbligatorio è quello del **Titolo**. Se non viene fornito un **Nome** al momento della creazione della pagina, AEM ne genera uno dai primi 64 caratteri del titolo (rispettando le norme di convalida descritte di seguito). Per rispettare la best practice sui nomi di pagina brevi, vengono utilizzati solo i primi 64 caratteri.
 
 * Se un nome di una pagina è specificato manualmente dall’autore, il limite di 64 caratteri non è applicabile; tuttavia, potrebbero esserci altre limitazioni tecniche sulla lunghezza del nome della pagina.
 
