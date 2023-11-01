@@ -1,10 +1,10 @@
 ---
-title: Passaggi aggiuntivi per ricevere e-mail con allegato
-description: Correggi l’errore quando non riesci a recuperare e-mail con allegati per AEM Forms sulle piattaforme JEE.
+title: Passaggi aggiuntivi per ricevere e-mail con allegati
+description: Scopri come correggere l’errore quando non riesci a recuperare e-mail con allegati per AEM Forms sulle piattaforme JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,7 @@ ht-degree: 0%
 # Impossibile ottenere e-mail con allegati per AEM Forms sulle piattaforme JEE{#unable-to-get-email-with-attachments}
 
 Il problema si applica alla seguente versione:
+
 * Experience Manager 6.5 Forms
 
 ## Problema   {#issue}
@@ -37,7 +38,7 @@ L’utente non è in grado di eseguire operazioni quali Invia PDF tramite e-mail
 
 1. Installa `java.mail-1.5.jar` ottenuto dal passaggio 3. Questo passaggio riavvia le proprietà sling della distribuzione JEE. Attendi i bundle installati su `http://<server name>:<port>/lc/system/console/bundles` per visualizzare lo stato come **Attivo**.
 
-   >Nota: nel caso in cui, lo stato sia ancora **InAttivo**, riavvia   **JBoss®** dal **Console servizi**.
+   >Se lo stato è ancora **InAttivo**, riavvia   **JBoss®** dal **Console servizi**.
 
 
 1. Installa `javax.mail-1.5.6.redhat-1.jar`file scaricato tramite il passaggio 5.

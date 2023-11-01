@@ -1,8 +1,8 @@
 ---
 title: Impossibile ripristinare l’archivio CRX danneggiato applicabile al server cluster JEE
-description: Passaggi per ripristinare l’archivio CRX danneggiato.
+description: Scopri come ripristinare un archivio CRX danneggiato.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 2%
@@ -21,7 +21,6 @@ Esegui il backup dell’archivio CRX prima di eseguire i passaggi indicati di se
 
 ## Soluzione {#solution}
 
-Per risolvere il problema, effettua le seguenti operazioni:
 1. Passa a  `https://[AEM Forms Server]:[port]/system/console/bundles`.
 
 1. Individua il `oak-core` e controlla se è in esecuzione.
@@ -33,6 +32,4 @@ Per risolvere il problema, effettua le seguenti operazioni:
 
 ## Si applica a {#applies-to}
 
-Questa soluzione si applica a:
-
-* AEM Forms su cluster JEE
+Questa soluzione si applica ad AEM Forms su cluster JEE.

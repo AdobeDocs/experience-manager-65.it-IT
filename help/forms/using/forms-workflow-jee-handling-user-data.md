@@ -1,15 +1,13 @@
 ---
 title: Flussi di lavoro di Forms JEE | Gestione dei dati utente
-description: flussi di lavoro AEM Forms JEE per la progettazione, la creazione e la gestione dei processi aziendali.
-uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
+description: Scopri come utilizzare i flussi di lavoro di AEM Forms JEE per progettare, creare e gestire i processi aziendali.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -42,9 +40,9 @@ Tuttavia, non è possibile identificare l&#39;ID istanza processo per un iniziat
 
 ### Identificare gli ID delle istanze di processo quando è noto l&#39;iniziatore o il partecipante del flusso di lavoro {#initiator-participant}
 
-Per identificare gli ID delle istanze di processo per un iniziatore del flusso di lavoro o un partecipante, effettuare le operazioni riportate di seguito.
+Per identificare gli ID delle istanze di processo per un iniziatore del flusso di lavoro o un partecipante, effettuare le seguenti operazioni:
 
-1. Esegui il comando seguente nel database del server AEM Forms per recuperare l’ID principale dell’iniziatore del flusso di lavoro o del partecipante da `edcprincipalentity` tabella di database.
+1. Eseguire il comando seguente nel database di AEM Forms Server per recuperare l&#39;ID entità per l&#39;iniziatore o il partecipante del flusso di lavoro dal `edcprincipalentity` tabella di database.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -75,7 +73,7 @@ Per identificare gli ID delle istanze di processo per un iniziatore del flusso d
 
    Per le attività orfane o le attività in cui `process_instance_id` è 0 (zero), prendi nota degli ID attività corrispondenti e vedi [Operazioni con le attività orfane](#orphan).
 
-1. Segui le istruzioni in [Rimuovi i dati utente dalle istanze del flusso di lavoro in base agli ID delle istanze del processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) per eliminare i dati utente per gli ID delle istanze di processo identificati.
+1. Segui le istruzioni in [Rimuovi i dati utente dalle istanze del flusso di lavoro in base agli ID delle istanze del processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) in modo da poter eliminare i dati utente per gli ID delle istanze di processo identificati.
 
 ### Identificare gli ID delle istanze di processo quando i dati utente vengono memorizzati in variabili primitive {#primitive}
 
@@ -85,7 +83,7 @@ Un flusso di lavoro può essere progettato in modo che i dati utente vengano acq
 * **Numerico**: contiene direttamente l’ID utente.
 * **XML**: contiene l’ID utente come sottostringa all’interno del testo memorizzato come colonne di testo nel database e può essere interrogato come stringhe.
 
-Per determinare se un flusso di lavoro che memorizza dati in variabili di tipo primitivo contiene dati per l’utente, effettua le seguenti operazioni:
+Effettua le seguenti operazioni per determinare se un flusso di lavoro che memorizza i dati in variabili di tipo primitivo contiene dati per l’utente:
 
 1. Eseguire il comando di database seguente:
 
@@ -111,7 +109,7 @@ Per determinare se un flusso di lavoro che memorizza dati in variabili di tipo p
 
    La query restituisce tutti gli ID istanza processo associati al valore specificato `user_ID`.
 
-1. Segui le istruzioni in [Rimuovi i dati utente dalle istanze del flusso di lavoro in base agli ID delle istanze del processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) per eliminare i dati utente per gli ID delle istanze di processo identificati.
+1. Segui le istruzioni in [Rimuovi i dati utente dalle istanze del flusso di lavoro in base agli ID delle istanze del processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) in modo da poter eliminare i dati utente per gli ID delle istanze di processo identificati.
 
 ### Rimuovi i dati utente dalle istanze del flusso di lavoro in base agli ID delle istanze del processo {#purge}
 
@@ -127,7 +125,7 @@ Dopo aver identificato gli ID delle istanze di processo associati a un utente, e
 
 1. Creare un’istanza del pubblico `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager`) utilizzando un `ServiceClientFactory` con le impostazioni di connessione corrette.
 
-   Per ulteriori informazioni, consulta Riferimento API Java per [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Per ulteriori informazioni, consulta Riferimento API Java™ per [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controlla lo stato dell’istanza del flusso di lavoro. Se lo stato è diverso da 2 (COMPLETE) o 4 (TERMINATED), terminare prima l&#39;istanza chiamando il metodo seguente:
 
@@ -137,15 +135,15 @@ Dopo aver identificato gli ID delle istanze di processo associati a un utente, e
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   Il `purgeProcessInstance` Il metodo elimina completamente tutti i dati per l&#39;ID di chiamata specificato dal database del server AEM Forms e da GDS, se configurato.
+   Il `purgeProcessInstance` Il metodo elimina completamente tutti i dati per l&#39;ID di chiamata specificato dal database di AEM Forms Server e da GDS, se configurato.
 
 ### Operazioni con le attività orfane {#orphan}
 
-Le attività orfane sono le attività il cui processo contenitore è stato avviato ma non ancora inviato. in questo caso, il `process_instance_id` è **0** (zero). Pertanto, non è possibile tracciare i dati utente archiviati per le attività orfane utilizzando gli ID delle istanze di processo. Tuttavia, è possibile tracciarla utilizzando l&#39;ID attività per un&#39;attività orfana. È possibile identificare gli ID delle attività dal `tb_task` tabella per un utente come descritto in [Identificare gli ID delle istanze di processo quando è noto l&#39;iniziatore o il partecipante del flusso di lavoro](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Le attività orfane sono le attività il cui processo contenitore è stato avviato ma non ancora inviato. In questo caso, il `process_instance_id` è **0** (zero). Pertanto, non è possibile tracciare i dati utente archiviati per le attività orfane utilizzando gli ID delle istanze di processo. Tuttavia, è possibile tracciarla utilizzando l&#39;ID attività per un&#39;attività orfana. È possibile identificare gli ID delle attività dal `tb_task` tabella per un utente come descritto in [Identificare gli ID delle istanze di processo quando è noto l&#39;iniziatore o il partecipante del flusso di lavoro](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Una volta ottenuti gli ID delle attività, eseguire le operazioni seguenti per eliminare i file e i dati associati a un&#39;attività orfana da GDS e dal database.
 
-1. Esegui il comando seguente sul database del server AEM Forms per recuperare gli ID delle attività identificate.
+1. Esegui il comando seguente sul database di AEM Forms Server per recuperare gli ID delle attività identificate.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -185,7 +183,7 @@ Una volta ottenuti gli ID delle attività, eseguire le operazioni seguenti per e
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
 
-1. Esegui i seguenti comandi per eliminare i dati per gli ID attività dal database del server AEM Forms:
+1. Eseguire i seguenti comandi per eliminare i dati per gli ID attività dal database di AEM Forms Server:
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>

@@ -1,17 +1,15 @@
 ---
 title: Personalizzare l’editor di testo
-description: Scopri come personalizzare l’editor di testo nell’ambiente AEM Forms.
-uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
+description: Scopri come personalizzare l’editor di testo in un ambiente Adobe Experience Manager Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -29,7 +27,7 @@ Puoi personalizzare l’editor di testo nell’interfaccia utente per la gestion
 * Valori predefiniti per la famiglia e la dimensione del carattere, l&#39;altezza, la spaziatura tra lettere e il formato della data
 * Rientri punto elenco
 
-A questo scopo, devi:
+Effettua le seguenti operazioni:
 
 1. [Personalizzare i font modificando il file tbxeditor-config.xml in CRX](#customizefonts)
 1. [Aggiungere caratteri personalizzati al computer client](#addcustomfonts)
@@ -159,7 +157,7 @@ Per personalizzare i tipi di carattere modificando il file tbxeditor-config.xml,
       </editorConfig>
       ```
 
-   1. Apportare le modifiche necessarie nel file per modificare le impostazioni dei caratteri seguenti:
+   1. Apportare le modifiche necessarie nel file in modo da poter modificare quanto segue nelle impostazioni dei caratteri:
 
       * Aggiungi o rimuovi la famiglia e la dimensione del carattere
       * Proprietà quali altezza e spaziatura tra lettere
@@ -183,7 +181,7 @@ Per ulteriori informazioni sull&#39;installazione dei tipi di carattere, vedere:
 
 ## Accedere alle personalizzazioni dei caratteri {#access-font-customizations}
 
-Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e aver installato i font richiesti sul computer client utilizzato per accedere ad AEM Forms, le modifiche vengono visualizzate nell’editor di testo.
+Dopo aver modificato i tipi di carattere in `tbxeditor-config.xml` file in CRX e installati i font richiesti sul computer client utilizzato per accedere ad AEM Forms, le modifiche vengono visualizzate nell’editor di testo.
 
 Ad esempio, il tipo di carattere Sazanami Mincho Medium aggiunto nel [Personalizzare i font modificando il file tbxeditor-config.xml in CRX](#customizefonts) nell’interfaccia utente dell’editor di testo viene visualizzata la seguente procedura:
 

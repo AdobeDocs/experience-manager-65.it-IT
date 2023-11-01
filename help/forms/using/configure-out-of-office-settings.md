@@ -1,11 +1,10 @@
 ---
 title: Configurare le impostazioni Fuori sede
-description: Configura le impostazioni Fuori sede nell’istanza AEM Forms.
-seo-description: Configure Out of Office settings
+description: Scopri come configurare le impostazioni Fuori sede nell’istanza Adobe Experience Manager Forms.
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
@@ -43,7 +42,7 @@ Per abilitare l&#39;impostazione Fuori sede per l&#39;account e delegare gli ele
 1. Tocca il **[!UICONTROL Attiva/Disattiva]** per abilitare l&#39;impostazione Fuori sede.
 1. Specifica la **[!UICONTROL Ora di inizio]**  e **[!UICONTROL Ora di fine]** per l&#39;impostazione. Gli elementi vengono delegati solo durante il periodo specificato. Lascia **[!UICONTROL Ora di fine]** campo vuoto per delegare elementi per un periodo di tempo indefinito.
 1. Seleziona la **[!UICONTROL Inoltra i miei oggetti durante questo periodo]** casella di controllo. Se non selezioni l’opzione e non specifichi un assegnatario, gli elementi non vengono inoltrati ad alcun utente. Anche se sei assente e l’impostazione è abilitata, gli elementi rimangono nella casella in entrata.
-1. Tocca **[!UICONTROL Aggiungi assegnatario]**. Specificare un utente in **[!UICONTROL Assegnatario]** per delegare gli elementi a. Specifica la **[!UICONTROL Modello flusso di lavoro]** per delegare all&#39;utente specificato. È possibile selezionare più modelli di flusso di lavoro.
+1. Tocca **[!UICONTROL Aggiungi assegnatario]**. Specificare un utente in **[!UICONTROL Assegnatario]** in modo da poter delegare gli elementi. Specifica la **[!UICONTROL Modello flusso di lavoro]** in modo da poter delegare all&#39;utente specificato. È possibile selezionare più modelli di flusso di lavoro.
 
    Inoltre, per assegnare tutti gli elementi, indipendentemente dal modello di flusso di lavoro, a un particolare utente, seleziona **[!UICONTROL Tutti i flussi di lavoro]** dall’elenco a discesa Modello del flusso di lavoro. <br>
 
@@ -54,7 +53,7 @@ Per abilitare l&#39;impostazione Fuori sede per l&#39;account e delegare gli ele
 
    >[!NOTE]
    >
-   >L&#39;ordine degli assegnatari è importante. Quando un elemento viene assegnato a un utente che ha abilitato l&#39;impostazione Fuori sede, l&#39;elemento viene valutato in base all&#39;elenco degli assegnatari specificato nell&#39;ordine in cui vengono aggiunti gli assegnatari. Quando un elemento corrisponde ai criteri, viene assegnato all&#39;assegnatario e l&#39;assegnatario successivo non viene selezionato.
+   >L&#39;ordine degli assegnatari è importante. Quando un elemento viene assegnato a un utente che ha abilitato l&#39;impostazione fuori sede, l&#39;elemento viene valutato in base all&#39;elenco degli assegnatari specificato nell&#39;ordine in cui vengono aggiunti gli assegnatari. Quando un elemento corrisponde ai criteri, viene assegnato all&#39;assegnatario e l&#39;assegnatario successivo non è selezionato.
 
 1. Tocca **[!UICONTROL Salva]**. L&#39;impostazione ha effetto alla data e all&#39;ora di inizio specificate. Se si effettua l&#39;accesso mentre si è fuori sede, non si viene considerati in ufficio fino a quando non si modificano le impostazioni.
 
@@ -63,7 +62,7 @@ Ora gli elementi assegnati durante il periodo Fuori sede vengono assegnati autom
 
 >[!NOTE]
 >
->(Solo per elementi del flusso di lavoro incentrati su Forms) Abilita **Consenti all’assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;** opzione del **Assegna attività** nel flusso di lavoro. Solo gli elementi per i quali è attivata l&#39;opzione sopra indicata vengono delegati ad altri utenti.
+>(Solo per elementi del flusso di lavoro incentrati su Forms) Abilita **Consenti all’assegnatario di delegare utilizzando le impostazioni &quot;Fuori sede&quot;** opzione del **Assegna attività** nel flusso di lavoro. Solo gli elementi per i quali è abilitata l’opzione precedentemente indicata vengono delegati ad altri utenti.
 
 ## Limitazioni {#limitations}
 

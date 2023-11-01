@@ -1,32 +1,32 @@
 ---
 title: Forms Portal | Gestione dei dati utente
-description: Gestione dei dati utente, ad esempio accesso, eliminazione e archiviazione dati nel portale AEM Forms.
+description: Scopri come gestire i dati utente, ad esempio l’accesso, l’eliminazione e l’archivio dati su AEM Forms Portal.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
-source-git-commit: bb1e1790b8b9e6d6224c62b1f51d8af50a82e975
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
 
 # Forms Portal | Gestione dei dati utente {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] portale fornisce componenti che è possibile utilizzare per elencare moduli adattivi, moduli HTML5 e altre risorse Forms in [!DNL AEM Sites] pagina. Inoltre, puoi configurarlo per visualizzare le bozze e i moduli adattivi inviati e i moduli HTML5 per un utente connesso. Per ulteriori informazioni su Forms Portal, consulta [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
+[!DNL AEM Forms] Portal fornisce componenti che è possibile utilizzare per elencare i moduli adattivi, i moduli HTML5 e altre risorse Forms sulla [!DNL AEM Sites] pagina. Inoltre, puoi configurarlo per visualizzare le bozze e i moduli adattivi inviati e i moduli HTML5 per un utente connesso. Per ulteriori informazioni su Forms Portal, consulta [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
 
-Quando un utente connesso salva un modulo adattivo come bozza o lo invia, questo viene visualizzato nelle schede Bozze e Invii del portale dei moduli. I dati per le bozze di moduli o i moduli inviati vengono memorizzati nell’archivio dati configurato per la distribuzione AEM. Le bozze e gli invii di utenti anonimi non vengono visualizzati nella pagina del portale dei moduli; tuttavia, i dati vengono memorizzati nell&#39;archivio dati configurato. Consulta [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md).
+Quando un utente connesso salva un modulo adattivo come bozza o lo invia, questo viene visualizzato nelle schede Bozze e Invii del portale Forms. I dati per le bozze di moduli o i moduli inviati vengono memorizzati nell’archivio dati configurato per la distribuzione AEM. Le bozze e gli invii di utenti anonimi non vengono visualizzati nella pagina del portale Forms; tuttavia, i dati vengono memorizzati nell&#39;archivio dati configurato. Consulta [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Dati utente e archivi dati {#user-data-and-data-stores}
 
-Forms Portal archivia i dati per le bozze e i moduli inviati nei seguenti scenari:
+Forms Portal memorizza i dati per le bozze e i moduli inviati nei seguenti scenari:
 
 * L’azione di invio configurata nel modulo adattivo è **Azione di invio Forms Portal**.
-* Per azioni di invio diverse da **Azione di invio Forms Portal**, il **[!UICONTROL Memorizza dati nel portale dei moduli]** è abilitata nella **[!UICONTROL Invio]** proprietà del contenitore di moduli adattivi.
+* Per azioni di invio diverse da **Azione di invio Forms Portal**, il **[!UICONTROL Archivia dati in Forms Portal]** è abilitata nella **[!UICONTROL Invio]** proprietà del contenitore di moduli adattivi.
 
-Per ogni bozza e modulo inviato per utenti connessi e anonimi, il portale dei moduli memorizza i dati seguenti:
+Per ogni bozza e modulo inviato per utenti connessi e anonimi, il portale Forms memorizza i dati seguenti:
 
 * Metadati del modulo come nome del modulo, percorso del modulo, ID bozza o invio, percorso allegati e ID dati utente
 * Allegato modulo come byte di dati
@@ -43,17 +43,17 @@ A seconda della persistenza dell’archivio dati configurato, i dati delle bozze
   </tr>
   <tr>
    <td><p>Predefiniti</p> </td>
-   <td><p>Archivio AEM delle istanze di authoring e pubblicazione</p> </td>
+   <td><p>Archivio AEM delle istanze Author e Publish</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Remoto</p> </td>
-   <td><p>Archivio AEM delle istanze AEM di authoring e remote</p> </td>
+   <td><p>Archivio AEM delle istanze dell’AEM Autore e remote</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Database</p> </td>
-   <td><p>Archivio AEM dell’istanza di authoring e delle tabelle di database</p> </td>
+   <td><p>Archivio AEM dell’istanza Autore e delle tabelle di database</p> </td>
    <td>Tabelle di database <code>data</code>, <code>metadata</code>, e <code>additionalmetadata</code></td>
   </tr>
  </tbody>
@@ -69,7 +69,7 @@ Tutte le bozze e i dati dei moduli inviati nelle istanze AEM (di authoring, pubb
 
 #### Accedere ai dati utente {#access-user-data}
 
-Quando un utente connesso salva una bozza o invia un modulo, viene creato un nodo figlio con il suo ID utente. Ad esempio, bozza e invia dati per Sarah Rose il cui ID utente è `srose` sono archiviati in `/content/forms/fp/srose/` nell’archivio AEM. Nel nodo ID utente, i dati sono organizzati in una struttura gerarchica.
+Quando un utente connesso salva una bozza o invia un modulo, viene creato un nodo figlio con il relativo ID utente. Ad esempio, bozza e invia dati per Sarah Rose il cui ID utente è `srose` sono archiviati in `/content/forms/fp/srose/` nell’archivio AEM. Nel nodo ID utente, i dati sono organizzati in una struttura gerarchica.
 
 Nella tabella seguente viene illustrato il modo in cui i dati di tutte le bozze vengono `srose` è memorizzato nell’archivio AEM.
 
@@ -97,7 +97,7 @@ Le bozze e i dati di invio per tutti gli utenti anonimi sono memorizzati nel com
 
 ### Database {#database}
 
-Quando l&#39;AEM è configurato per memorizzare i dati in un database, i dati relativi alle bozze e agli invii del portale Forms vengono memorizzati nelle tabelle di database seguenti sia per gli utenti connessi che per quelli anonimi:
+Quando l’AEM è configurato per memorizzare i dati in un database, i dati bozza e di invio di Forms Portal vengono memorizzati nelle seguenti tabelle di database sia per gli utenti connessi che per quelli anonimi:
 
 * dati
 * metadati

@@ -1,15 +1,13 @@
 ---
 title: "Tutorial: creare un modello di dati modulo"
-description: Configura MySQL come origine dati, crea un modello dati modulo (FDM), configuralo e testa AEM Forms.
-uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
+description: Scopri come configurare MySQL come origine dati, creare un modello dati del modulo (FDM), configurarlo e testare per AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 1%
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Questo tutorial è un passaggio del [Creare il primo modulo adattivo](../../forms/using/create-your-first-adaptive-form.md) serie. Si consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
+Questo tutorial è un passaggio del [Creare il primo modulo adattivo](../../forms/using/create-your-first-adaptive-form.md) serie. L’Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
 ## Informazioni sull’esercitazione {#about-the-tutorial}
 
@@ -49,7 +47,7 @@ Prima di iniziare, assicurati di disporre dei seguenti elementi:
 
 ## Passaggio 1: configurare il database MySQL come origine dati {#config-database}
 
-È possibile configurare diversi tipi di origini dati per creare un modello dati del modulo. Per questa esercitazione verrà configurato il database MySQL configurato e popolato con dati di esempio. Per informazioni sulle altre origini dati supportate e su come configurarle, consulta [Integrazione dei dati di AEM Forms](../../forms/using/data-integration.md).
+È possibile configurare diversi tipi di origini dati per creare un modello dati del modulo. Per questa esercitazione, configurare il database MySQL configurato e popolato con dati di esempio. Per informazioni sulle altre origini dati supportate e su come configurarle, consulta [Integrazione dei dati di AEM Forms](../../forms/using/data-integration.md).
 
 Per configurare il [!DNL MySQL] database:
 
@@ -60,7 +58,7 @@ Per configurare il [!DNL MySQL] database:
 
    1. Tocca **[!UICONTROL Installa/Aggiorna]**. Un [!UICONTROL Caricare/Installare i bundle] viene visualizzata.
 
-   1. Tocca **[!UICONTROL Scegli file]** per esplorare e selezionare [!DNL MySQL] Pacchetto OSGi del driver JDBC. Seleziona **[!UICONTROL Bundle iniziale]** e **[!UICONTROL Aggiorna pacchetti]**, e tocca **[!UICONTROL Installare o aggiornare]**. Assicurati che [!DNL Oracle Corporation's] Driver JDBC per [!DNL MySQL] è attivo. Il driver è installato.
+   1. Tocca **[!UICONTROL Scegli file]** per esplorare e selezionare [!DNL MySQL] Pacchetto OSGi del driver JDBC. Seleziona **[!UICONTROL Bundle iniziale]** e **[!UICONTROL Aggiorna pacchetti]**, e tocca **[!UICONTROL Installare o aggiornare]**. Assicurati che il [!DNL Oracle Corporation's] driver JDBC per [!DNL MySQL] sia attivo. Il driver è installato.
 
 1. Configurare [!DNL MySQL] il database come origine dati:
 
@@ -70,23 +68,23 @@ Per configurare il [!DNL MySQL] database:
 
       * **Nome origine dati:** È possibile specificare qualsiasi nome. Ad esempio, specifica **WeRetailMySQL**.
       * **Nome proprietà servizio DataSource**: specifica il nome della proprietà del servizio contenente il nome DataSource. Viene specificato durante la registrazione dell’istanza dell’origine dati come servizio OSGi. Ad esempio: **datasource.name**.
-      * **Classe driver JDBC**: specifica il nome della classe Java del driver JDBC. Per [!DNL MySQL] database, specificare **com.mysql.jdbc.Driver**.
-      * **URI** connessione JDBC: specifica il URL di connessione del database. Per [!DNL MySQL] il database in esecuzione su porta 3306 e lo schema weretail, il URL è: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **Classe driver JDBC**: specifica il nome della classe Java™ del driver JDBC. Per [!DNL MySQL] database, specificare **com.mysql.jdbc.Driver**.
+      * **URI** connessione JDBC: specifica il URL di connessione del database. Per [!DNL MySQL] il database in esecuzione su porta 3306 e lo schema `weretail`, il URL è: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
       > Quando il database è protetto da un firewall, il [!DNL MySQL] nome host del database non è un DNS pubblico. L&#39;indirizzo *IP del database deve essere aggiunto nel file /etc/hosts* del computer host AEM.
 
-      * **Nome utente:** Nome utente del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
+      * **Nome utente:** Nome utente del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
       * **Password:** Password del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
 
       >[!NOTE]
       >
-      >AEM Forms non supporta l’autenticazione NT per [!DNL MySQL]. Vai alla console Web all AEM indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e ricerca &quot;Apache Sling Connection Pooled Datasource&quot;. Per la proprietà &quot;JDBC connection URI&quot; imposta il valore di &quot;integratedSecurity&quot; come False e utilizza il nome utente e il password creati per la connessione al [!DNL MySQL] database.
+      >AEM Forms non supporta l’autenticazione NT per [!DNL MySQL]. Vai alla console Web all AEM indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e ricerca &quot;Apache Sling Connection Pooled Datasource&quot;. Per la proprietà &quot;JDBC connection URI&quot;, imposta il valore di &quot;integratedSecurity&quot; su False e utilizza il nome utente e il password creati per la connessione al [!DNL MySQL] database.
 
       * **Test in prestito:** attiva l&#39;opzione **[!UICONTROL Test su prestito]** .
       * **Test on Return:** consente di abilitare l&#39;opzione **[!UICONTROL Test on Return.]**
-      * **Query di convalida:** specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio: **seleziona &#42; da customerdetails**.
+      * **Query di convalida:** Specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio: **seleziona &#42; da customerdetails**.
       * **Isolamento transazione**: imposta il valore su **READ_COMMIT**.
 
         Lascia altre proprietà con impostazione predefinita [valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e tocca **[!UICONTROL Salva]**.
@@ -97,7 +95,7 @@ Per configurare il [!DNL MySQL] database:
 
 ## Passaggio 2: creare il modello dati del modulo {#create-fdm}
 
-AEM [!DNL Forms] offre un’interfaccia utente intuitiva per [creare un modello di dati modulo](data-integration.md) da origini dati configurate. È possibile utilizzare più origini dati in un modello dati del modulo. Per il nostro caso d’uso, utilizzeremo il configurato [!DNL MySQL] origine dati.
+AEM [!DNL Forms] offre un’interfaccia utente intuitiva per [creare un modello di dati modulo](data-integration.md) da origini dati configurate. È possibile utilizzare più origini dati in un modello dati del modulo. Per questo caso d’uso, puoi utilizzare il configurato [!DNL MySQL] origine dati.
 
 Per creare il modello dati del modulo, effettua le seguenti operazioni:
 
@@ -126,7 +124,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Espandere la struttura dell&#39;origine dati WeRailMySQL. Seleziona i seguenti oggetti e servizi del modello dati da **weretail** > **customerdetails** schema per modello dati modulo:
+1. Espandere la struttura dell&#39;origine dati WeRailMySQL. Seleziona i seguenti oggetti e servizi del modello dati da **weretail** > **customerdetails** schema che consente di creare un modello dati:
 
    * **Oggetti modello dati**:
 
@@ -167,17 +165,17 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
    1. Toccare **[!UICONTROL Fine]** per salvare le proprietà dell&#39;oggetto modello dati. Quindi, tocca **[!UICONTROL Salva]** per salvare il modello di dati del modulo.
 
-      I **[!UICONTROL servizi get]** e **[!UICONTROL update]** vengono aggiunti come servizi predefiniti per l&#39;oggetto modello dati.
+      Il **[!UICONTROL ottenere]** e **[!UICONTROL aggiorna]** I servizi vengono aggiunti come servizi predefiniti per l&#39;oggetto modello dati.
 
       ![data-model-object](assets/data-model-object.png)
 
 1. Vai a **[!UICONTROL Servizi]** e configurare **[!UICONTROL ottenere]** e **[!UICONTROL aggiorna]** servizi.
 
-   1. Seleziona il **[!UICONTROL servizio Ottieni]** e tocca **[!UICONTROL Modifica Proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
+   1. Seleziona la **[!UICONTROL ottenere]** servizio e tocco **[!UICONTROL Modifica proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
    1. Nella finestra di dialogo Modifica Proprietà, specifica quanto segue:
 
       * **Titolo**: specifica il titolo del servizio. Ad esempio: Recupera indirizzo di spedizione.
-      * **Descrizione**: specificare una descrizione contenente il funzionamento dettagliato del servizio. Ad esempio:
+      * **Descrizione**: specifica la descrizione contenente i dettagli del funzionamento del servizio. Ad esempio:
 
         Questo servizio recupera l’indirizzo di spedizione e altri dettagli del cliente da [!DNL MySQL] database
 
@@ -207,7 +205,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
       * **Tipo di output**: Seleziona **BOOLEANO**.
 
-      * **Argomenti**: argomento di selezione denominato **ID** e **customerdetails**.
+      * **Argomenti**: seleziona nome argomento **ID** e **customerdetails**.
 
       Tocca **[!UICONTROL Fine]**. Il **[!UICONTROL aggiorna]** servizio per aggiornare i dettagli del cliente in [!DNL MySQL] il database è configurato.
 
@@ -235,6 +233,6 @@ Per eseguire il test, eseguire le operazioni seguenti:
 
    ![test-write-model](assets/test-write-model.png)
 
-   Ora, se verifichi nuovamente il servizio Leggi modello per l’7107215 ID, recupererà e visualizzerà i dettagli del cliente aggiornati come mostrato di seguito.
+   Ora, se verifichi di nuovo la lettura del servizio modello per 7107215 ID, questo recupera e visualizza i dettagli del cliente aggiornati come mostrato di seguito.
 
    ![aggiornato di lettura](assets/read-updated.png)

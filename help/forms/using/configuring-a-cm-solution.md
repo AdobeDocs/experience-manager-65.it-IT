@@ -1,16 +1,14 @@
 ---
 title: Configurazione di una soluzione di gestione della corrispondenza
-description: Configurare una soluzione di gestione della corrispondenza nell’ambiente AEM Forms.
-uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
+description: Scopri come configurare una soluzione di gestione della corrispondenza in un ambiente AEM Forms.
 topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -37,14 +35,14 @@ Per definire l’URL di un’istanza di authoring per il ripristino della versio
 
 ## Definizione dell’URL dell’istanza Publish per ActivationManagerImpl (public instance activation manager) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-Segui questi passaggi quando definisci l’URL dell’istanza Publish per il gestore dell’attivazione dell’istanza pubblica:
+Segui questi passaggi per definire l’URL dell’istanza Publish per la gestione dell’attivazione di un’istanza pubblica:
 
 1. Vai a *https://:&lt;authorhost>:&lt;authorport>/lc/system/console/configMgr*. Accedi con le credenziali utente di OSGi Management Console. Le credenziali predefinite sono amministratore/amministratore.
 1. Trova e fai clic su **[!UICONTROL Modifica]** accanto al simbolo **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]** impostazione.
 1. In **[!UICONTROL URL di pubblicazione di ActivationManager]** , specificare l&#39;URL per accedere all&#39;istanza Publish ActivationManager. Puoi fornire i seguenti URL.
 
    * **URL del load balancer (consigliato)**: specifica l’URL del load balancer, se davanti alla farm di pubblicazione (più istanze di pubblicazione non cluster) hai un server web che funge da load balancer.
-   * **URL istanza di pubblicazione**: specifica un URL per l’istanza di pubblicazione . Se disponi di una singola istanza di pubblicazione o il server web che precede la farm di pubblicazione non è accessibile dall’ambiente di authoring a causa di eventuali restrizioni. Se l’istanza di pubblicazione specificata non è disponibile, è disponibile un meccanismo di fallback da gestire dal lato dell’autore.
+   * **URL istanza di pubblicazione**: specifica un URL per l’istanza di pubblicazione . Se disponi di una singola istanza di pubblicazione o il server web che precede la farm di pubblicazione non è accessibile dall’ambiente di authoring a causa di eventuali restrizioni. Se l’istanza Publish specificata non è disponibile, è disponibile un meccanismo di fallback da gestire dal lato dell’autore.
    * **Stringa URL**:
 
      `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`

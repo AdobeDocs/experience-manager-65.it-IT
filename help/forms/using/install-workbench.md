@@ -1,13 +1,13 @@
 ---
 title: Installare workbench
-description: Installa, disinstalla, configura, amministra o implementa AEM Forms Workbench.
+description: Scopri come installare, disinstallare, configurare, amministrare o distribuire AEM Forms Workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: ad5d98c5519cda29cecde54a880958bae81c4764
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2242'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Si consigliano come minimo i seguenti requisiti: Spazio su disco per l&#39;insta
 
 * Requisiti hardware: processore Intel® Pentium® 4 o AMD® equivalente a 1 GHz.
 * Java™ Runtime Environment (JRE) 7.0 aggiorna la versione 51 o successiva alla versione 7.0.
-* Risoluzione minima del monitor 1024 X 768 pixel o superiore con colore a 16 bit o superiore.
+* Risoluzione minima del monitor di 1024 X 768 pixel o superiore con colore a 16 bit o superiore.
 * Connessione di rete TCP/IPv4 o TCP/IPv6 al server AEM Forms.
 * Installare i pacchetti runtime ridistribuibili di Visual C++ 2012 a 32 bit.
 * Installare i pacchetti runtime ridistribuibili di Visual C++ 2013 a 32 bit.
@@ -119,7 +119,7 @@ Diverse versioni di Designer possono coesistere nello stesso sistema, ad esempio
   </tr>
   <tr>
    <td><p>Designer (autonomo)</p> </td>
-   <td><p>Nessuno. <br />La versione di Designer inclusa in Workbench è di sola inglese. <br />Il programma di installazione di Workbench non reinstallerà una nuova versione di Designer. Verrà invece applicata la patch a una versione aggiornata, inclusa nel pacchetto con il programma di installazione di Workbench. Questo consente anche di utilizzare la versione localizzata di Designer all’interno di Workbench.<br /> </p> </td>
+   <td><p>Nessuno. <br />La versione di Designer inclusa in Workbench è di sola inglese. <br />Il programma di installazione di Workbench non reinstalla una nuova versione di Designer. Viene invece applicata la patch a una versione aggiornata, inclusa nel pacchetto con il programma di installazione di Workbench. Questo consente anche di utilizzare la versione localizzata di Designer all’interno di Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -167,7 +167,7 @@ Prima di installare Workbench, è necessario assicurarsi che l&#39;ambiente incl
    Il percorso della directory di installazione non può contenere i caratteri # (libbra) e $ (dollaro).
 
 1. Rivedere il riepilogo della preinstallazione e fare clic su Installa. Il programma di installazione visualizza lo stato di avanzamento dell&#39;installazione.
-1. Esaminare il riepilogo dell&#39;installazione. Seleziona Avvia AEM Forms Workbench per avviare Workbench e fai clic su Avanti.
+1. Esaminare il riepilogo dell&#39;installazione. Seleziona Avvia AEM Forms Workbench per poter avviare Workbench, quindi fai clic su Avanti.
 1. Consulta le Note sulla versione e fai clic su Fine.
 1. I seguenti elementi sono ora installati nel computer:
    * **Workbench**: per eseguire Workbench dal menu Start, selezionare Tutti i programmi > AEM Forms > Workbench, se si è scelto di memorizzare la cartella dei collegamenti. Per informazioni, vedere <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilizzo di Workbench</a> documentazione.
@@ -184,7 +184,7 @@ Per utilizzare Workbench, è necessario disporre di un&#39;istanza di AEM Forms 
 
 >[!NOTE]
 >
-Se AEM Forms è stato configurato per l&#39;utilizzo del provider di repository EMC Documentum® o IBM® FileNet e si desidera accedere a un repository diverso da quello configurato come predefinito nella console di amministrazione dei moduli AEM, specificare il nome utente come username@Repository.
+Se AEM Forms è stato configurato per l&#39;utilizzo di EMC Documentum® o IBM® FileNet Repository Provider e si desidera accedere a un repository diverso da quello configurato come predefinito nella console di amministrazione di AEM Forms, specificare il nome utente come username@Repository.
 
 ### Configurazione delle impostazioni di timeout {#configuring-timeout-settings}
 
@@ -205,7 +205,7 @@ Assicurati di connetterti a HTTPS utilizzando il nome specificato nel certificat
 
    >[!NOTE]
    >
-   Per esportare il certificato, apri un browser web e accedi alla console di amministrazione, installa il certificato nel browser, quindi esportalo dal browser in un percorso di archiviazione temporaneo (o direttamente nel [Workbench_HOME]/workbench/jre/lib/security).
+   Per esportare il certificato, apri un browser web e accedi alla console di amministrazione. Installa il certificato nel browser, quindi esportalo dal browser in un percorso di archiviazione temporaneo (o direttamente in [Workbench_HOME]/workbench/jre/lib/security).
 
 1. Copia il certificato in [Workbench_HOME]directory /workbench/jre/lib/security.
 
@@ -237,18 +237,21 @@ Quando il generatore o l’output di Forms cerca o aggiorna voci nella cache per
 
 
 Il servizio Forms riceve i modelli in base al nome del file o alla posizione del repository oppure in base al valore come oggetto XML in memoria.
+
 * **Modelli passati per riferimento**: utilizza la directory principale del contenuto e il nome del modulo. Se in ogni richiesta vengono passati modelli univoci con nomi di file diversi utilizzando questo metodo, la cache del disco cresce all&#39;infinito e non viene mai riutilizzata. Per evitare questo problema, è necessario trasmettere modelli univoci con lo stesso nome file per garantire che la stessa cache venga aggiornata per tutte le richieste.
-* **Modelli passati per valore**: utilizza i byte dei modelli passati insieme ai dati utilizzando il parametro inDataDoc. Se vengono passati modelli univoci con UUID diversi utilizzando questo metodo, la cache del disco cresce all&#39;infinito e non verrà mai riutilizzata. Per evitare questo problema, l’attributo UUID deve essere rimosso da tutti i modelli per garantire che non venga creata alcuna cache per il modello. In alternativa, il passaggio dello stesso UUID non nullo consente di creare gli oggetti cache, ma assicura che la stessa cache venga aggiornata con ogni richiesta.
+* **Modelli passati per valore**: utilizza i byte dei modelli passati insieme ai dati utilizzando il parametro inDataDoc. Se con questo metodo vengono passati modelli univoci con UUID diversi, la cache del disco cresce all&#39;infinito e non viene mai riutilizzata. Per evitare questo problema, l’attributo UUID deve essere rimosso da tutti i modelli per garantire che non venga creata alcuna cache per il modello. In alternativa, il passaggio dello stesso UUID non nullo consente di creare gli oggetti cache, ma assicura che la stessa cache venga aggiornata con ogni richiesta.
 
 Per evitare che la cache cresca all’infinito, considera i seguenti fattori per il rendering dei modelli generati in modo dinamico utilizzando le nuove API di AEM Forms, ovvero renderHTMLForm2 e renderPDFForm2.
 
 Quando si utilizzano le nuove API, il modello viene passato come oggetto documento, che viene gestito nel servizio Forms a seconda che sia passivo o meno.
 
 Per i documenti passivi in cui l’UUID e la directory principale del contenuto fungono da chiave della cache, considera i seguenti aspetti:
+
 * La cache non viene creata per i modelli di input passivati senza UUID.
 * Se viene passato più di un modello di input passivo con lo stesso UUID e la stessa directory principale del contenuto, la stessa cache viene sovrascritta.
 
 Per i documenti non passivi in cui il nome file e la radice del contenuto fungono da chiave della cache, considera il seguente aspetto:
+
 * Per i modelli di input non passivi, la memorizzazione nella cache dipende dalla directory principale del contenuto e dal nome del file da cui è stato generato il documento.
 La stessa cache viene utilizzata solo per le richieste con lo stesso nome file radice e modello di contenuto.
 Le seguenti best practice garantiscono che la cache non aumenti all’infinito quando i modelli generati in modo dinamico vengono passati al servizio Forms:
@@ -266,9 +269,11 @@ Utilizzando l&#39;editor XDC, gli amministratori delle stampanti di rete possono
 Prima che l&#39;amministratore della stampante di rete utilizzi l&#39;editor XDC, riposizionare i file XDC di esempio e vedere Creazione di profili di dispositivo con l&#39;editor XDC.
 
 **Per ottenere i file XDC di esempio**:
+
 1. Sul server AEM Forms, individua la cartella XDC in [Directory principale di AEM Forms]\sdk\samples\Output\IVS.
 1. Copia il contenuto di questa cartella in una directory accessibile dal Workbench o dal sistema Eclipse.
 
 **Per ottenere la Guida dell&#39;editor XDC**:
+
 1. Vai al sito web della documentazione di AEM Forms.
 1. Fai clic su **Sviluppa** e passa a Creazione di profili dispositivo tramite l’editor XDC. Scaricare il file xdc_editor_help_web.zip e installare i file della Guida seguendo le istruzioni fornite nel file Leggimi.

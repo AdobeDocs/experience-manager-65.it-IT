@@ -1,22 +1,20 @@
 ---
-title: Personalizzazione dei modelli per i componenti del portale Forms
-description: L’interfaccia utente di AEM Forms consente agli utenti di aggiungere metadati ai moduli. I metadati personalizzati migliorano l’esperienza utente nell’elenco dei moduli e nella ricerca per la tua organizzazione.
-uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
+title: Personalizzazione dei modelli per i componenti di Forms Portal
+description: Scopri in che modo l’interfaccia utente di AEM Forms consente agli utenti di aggiungere metadati ai moduli. I metadati personalizzati migliorano l’esperienza utente nell’elenco dei moduli e nella ricerca.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
 
-# Personalizzazione dei modelli per i componenti del portale Forms{#customizing-templates-for-forms-portal-components}
+# Personalizzazione dei modelli per i componenti di Forms Portal{#customizing-templates-for-forms-portal-components}
 
 ## Prerequisiti {#prerequisites}
 
@@ -30,7 +28,7 @@ L’interfaccia utente di AEM Forms consente di aggiungere metadati a qualsiasi 
 
 Forms Portal consente di utilizzare metadati personalizzati negli elenchi dei moduli. Durante la creazione di modelli personalizzati per le risorse, puoi modificarne il layout e utilizzare metadati personalizzati con il set di stili CSS.
 
-Per creare un modello personalizzato per vari componenti di Forms Portal, effettua le seguenti operazioni.
+Effettua le seguenti operazioni per creare un modello personalizzato per vari componenti di Forms Portal.
 
 ## Creazione di un modello personalizzato {#creating-a-nbsp-custom-template}
 
@@ -55,7 +53,7 @@ Per creare un modello personalizzato per vari componenti di Forms Portal, effett
    L’immagine seguente illustra la configurazione del componente Ricerca ed elenco.
    ![Creazione di una sling:cartella](assets/1.png)
 
-1. Crea un file template.html in questa cartella da utilizzare come modello personalizzato.
+1. Crea un file template.html in questa cartella affinché possa fungere da modello personalizzato.
 1. Scrivi il modello personalizzato e utilizza i metadati personalizzati come descritto di seguito.
 
 ## Esempio di lavoro {#working-example}
@@ -105,7 +103,7 @@ Diversi componenti di Forms Portal forniscono set esclusivi di metadati OOTB che
 * **descrizione**: descrizione del modulo
 * **formUrl**: URL per riprodurre il modulo come HTML
 * **pdfUrl**: URL per riprodurre il modulo come PDF
-* **assetType**: tipo di risorsa. I valori validi includono **Modulo**,**Modulo PDF**, **Stampa modulo**, e **Modulo adattivo**
+* **assetType**: tipo di risorsa. I valori validi includono **Modulo**, **Modulo PDF**, **Stampa modulo**, e **Modulo adattivo**
 
 * **htmlStyle** E **pdfStyle**: stile di visualizzazione rispettivamente delle icone HTML e PDF utilizzate per il rendering. I valori validi sono &quot;**__FP_display_none**&quot; o vuoto.
 
@@ -120,7 +118,7 @@ Supporto per la localizzazione, l&#39;ordinamento e l&#39;utilizzo delle proprie
 1. **Supporto per la localizzazione**: per localizzare qualsiasi testo statico, utilizza l’attributo `${localize-YOUR_TEXT}` e rende disponibile il valore localizzato, se non esiste già.
    *Nell’esempio discusso, gli attributi `${localize-Apply}` e `${localize-Download}` vengono utilizzati per localizzare il testo Applica e Scarica.*
 
-1. **Supporto per l’ordinamento**: fai clic sull’elemento HTML per ordinare i risultati della ricerca. Per implementare l’ordinamento in un layout compresso, aggiungi l’attributo &quot;data-sortKey&quot; nell’intestazione della tabella specifica. Inoltre, aggiungi il relativo valore come metadati per i quali desideri ordinare.
+1. **Supporto per l’ordinamento**: fai clic sull’elemento HTML per ordinare i risultati della ricerca. Per implementare l’ordinamento in un layout di tabella, aggiungi l’attributo &quot;data-sortKey&quot; nell’intestazione della tabella specifica. Inoltre, aggiungi il relativo valore come metadati per i quali desideri ordinare.
 Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazione a griglia, il valore dell’intestazione &quot;data-sortKey&quot; è &quot;title&quot;. Fai clic sull’intestazione per ordinare i valori in una particolare colonna.
 
 1. **Utilizzo delle proprietà di configurazione**: il componente Ricerca ed elenco dispone di diverse configurazioni che è possibile utilizzare nell’interfaccia utente. Ad esempio, per visualizzare il testo della descrizione HTML salvato nella finestra di dialogo per modifica, utilizzare `${config-htmlLinkText}` attributo. **Analogamente, per il testo della descrizione comandi di PDF, utilizzate** `${config-pdfLinkText}` attributo.
@@ -134,7 +132,7 @@ Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazion
 
 ### Componente Bozze e invii {#drafts-amp-submissions-component}
 
-* **Percorso**: percorso del nodo dei metadati bozze/invii. Utilizzala con l’estensione .HTML come URL per aprire una bozza o un invio.
+* **Percorso**: percorso del nodo dei metadati bozze/invii. Utilizzalo con l’estensione .HTML come URL per aprire una bozza o inviare.
 * **contextPath**: percorso contestuale dell’istanza AEM
 * **firstLetter**: prima lettera (maiuscola) del titolo del modulo adattivo, che è stata salvata come bozza o inviata.
 * **formName**: titolo del modulo adattivo salvato come bozza o inviato.
@@ -142,7 +140,7 @@ Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazion
 * **submitID**: ID per l’invio elencato (da utilizzare solo nel modello per la sezione Invio).
 * **stato**: stato del modulo inviato. (Da utilizzare solo nel modello per la sezione Invio ).
 * **descrizione**: descrizione del modulo adattivo associato alla bozza o all’invio.
-* **diffTime**: differenza tra l’ora corrente e l’ultima azione di salvataggio della bozza. In alternativa, differenza tra l&#39;ora corrente e l&#39;ultima azione di invio per la sottomissione.
+* **diffTime**: differenza tra l’ora corrente e l’ultima azione di salvataggio della bozza. In alternativa, la differenza tra l&#39;ora corrente e l&#39;ultima azione inviata per l&#39;invio.
 * **iconClass**: classe CSS utilizzata per visualizzare la prima lettera della bozza/invio. Forms Portal include le seguenti classi, che forniscono sfondi di diversi colori.
 * **proprietario**: utente che ha creato la bozza/l’invio.
 * **Oggi**: data di creazione della bozza o di presentazione in GG:MM:Formato AAAA.
@@ -162,7 +160,7 @@ Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazion
 
 **C.** Attributo dati ripetibili utilizzato per la sezione del modello per ciascun modulo
 
-**D.** Per localizzare la stringa &quot;Apply&quot;
+**D.** Localizzare la stringa &quot;Apply&quot;
 
 **E.** Utilizzo della proprietà di configurazione pdfLinkText
 
@@ -177,11 +175,11 @@ Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazion
 
 ## Articoli correlati
 
-* [Abilitare i componenti del portale Forms](/help/forms/using/enabling-forms-portal-components.md)
-* [Crea pagina portale moduli](/help/forms/using/creating-form-portal-page.md)
+* [Abilitare i componenti di Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* [Pagina Crea portale Forms](/help/forms/using/creating-form-portal-page.md)
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](/help/forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](/help/forms/using/draft-submission-component.md)
-* [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalizzazione dei modelli per i componenti del portale Forms](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Esempio per l’integrazione del componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
+* [Personalizzazione dei modelli per i componenti di Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)

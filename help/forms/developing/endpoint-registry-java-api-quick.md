@@ -1,56 +1,54 @@
 ---
-title: QuickStart (SOAP) API Java del Registro degli endpoint
-description: Aggiungi endpoint come EJB, SOAP, cartella controllata, endpoint e-mail, endpoint remoto e altro ancora. Inoltre, modifica, rimuovi e recupera un endpoint utilizzando l’API Java.
-uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
+title: Java&trade Registro endpoint; API QuickStart(SOAP)
+description: Scopri come aggiungere endpoint come EJB, SOAP, Watched Folder, Email endpoint e Remoting endpoint e come modificare, rimuovere e recuperare endpoint utilizzando Java&trade; API.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: 1917989005a98469776befc967e40ab7b40c31f5
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
 
-# Guida introduttiva API Java del Registro di sistema degli endpoint (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+# Guida introduttiva API Java™ del Registro degli endpoint (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) è disponibile per il registro degli endpoint.
+Java™ API Quick Start(SOAP) è disponibile per il registro degli endpoint.
 
-[QuickStart: aggiunta di un endpoint EJB utilizzando l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart: aggiunta di un endpoint EJB utilizzando Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart: aggiunta di un endpoint SOAP utilizzando l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: aggiunta di un endpoint SOAP utilizzando Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[QuickStart: aggiunta di un endpoint per cartelle controllate utilizzando l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[QuickStart: aggiunta di un endpoint Watched Folder utilizzando Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[QuickStart: aggiunta di un endpoint e-mail tramite API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[QuickStart: aggiunta di un endpoint e-mail utilizzando Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[QuickStart: aggiunta di un endpoint remoto tramite API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[QuickStart: aggiunta di un endpoint remoto tramite Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[QuickStart: aggiunta di un endpoint TaskManager utilizzando l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[QuickStart: aggiunta di un endpoint TaskManager utilizzando Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[QuickStart: modifica di un endpoint tramite API Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[QuickStart: modifica di un endpoint tramite Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[QuickStart: rimozione di un endpoint tramite API Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[QuickStart: rimozione di un endpoint tramite Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[QuickStart: recupero delle informazioni sul connettore dell’endpoint tramite API Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
+[QuickStart: recupero delle informazioni sul connettore dell’endpoint tramite Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Le funzioni di avvio rapido disponibili nei moduli per la programmazione con AEM si basano su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi nella programmazione con moduli AEM si basano su Forms se si utilizza un altro sistema operativo, ad esempio UNIX®, e sostituiscono i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->Non è possibile utilizzare gli endpoint utilizzando un servizio Web.
+Non è possibile utilizzare gli endpoint utilizzando un servizio Web.
 
-## QuickStart: aggiunta di un endpoint EJB utilizzando l’API Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
+## QuickStart: aggiunta di un endpoint EJB utilizzando l’API Java™ {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint EJB a un servizio denominato *MyApplication/EncryptDocument*. (vedere [Aggiunta di endpoint EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
+Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint EJB a un servizio denominato *MyApplication/EncryptDocument*. (vedere [Aggiunta di endpoint EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
 ```java
  /*
@@ -147,9 +145,9 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint EJB a un ser
  
 ```
 
-## QuickStart: aggiunta di un endpoint SOAP utilizzando l’API Java {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## QuickStart: aggiunta di un endpoint SOAP utilizzando l’API Java™ {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint SOAP a un servizio denominato *MyApplication/EncryptDocument*. (vedere [Aggiunta di endpoint SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint SOAP a un servizio denominato *MyApplication/EncryptDocument*. (vedere [Aggiunta di endpoint SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*
@@ -247,13 +245,13 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint SOAP a un se
  
 ```
 
-## QuickStart: aggiunta di un endpoint per cartelle controllate utilizzando l’API Java {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
+## QuickStart: aggiunta di un endpoint per cartelle controllate utilizzando l’API Java™ {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint di cartella controllata a un servizio denominato *MyApplication/EncryptDocument*. (vedere [Aggiunta di endpoint per cartelle controllate](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
+Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint Watched Folder a un servizio denominato *MyApplication/EncryptDocument*. (vedere [Aggiunta di endpoint per cartelle controllate](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
->È necessario includere il file WatchedFolderEndpointConfigConstants.java nel progetto per compilare ed eseguire il seguente avvio rapido. (vedere [File costante dei valori di configurazione della cartella controllata](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+Includi nel progetto il file WatchedFolderEndpointConfigConstants.java in modo da poter compilare ed eseguire la seguente procedura di avvio rapido. (vedere [File costante dei valori di configurazione della cartella controllata](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -382,13 +380,13 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint di cartella 
  
 ```
 
-## QuickStart: aggiunta di un endpoint e-mail tramite API Java {#quickstart-adding-an-email-endpoint-using-the-java-api}
+## QuickStart: aggiunta di un endpoint e-mail utilizzando l’API Java™ {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint e-mail a un servizio denominato *MyApplication/EncryptDocument* t. (cfr. [Aggiunta di endpoint e-mail](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
+Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint e-mail a un servizio denominato *MyApplication/EncryptDocument* t. (cfr. [Aggiunta di endpoint e-mail](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
->Devi includere il file EmailEndpointConfigConstants.java nel progetto per compilare ed eseguire il seguente codice di avvio rapido. (vedere [File costante valori configurazione e-mail](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+Includi nel progetto il file EmailEndpointConfigConstants.java in modo da poter compilare ed eseguire il seguente codice di avvio rapido. (vedere [File costante valori configurazione e-mail](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*
@@ -525,9 +523,9 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint e-mail a un 
  
 ```
 
-## QuickStart: aggiunta di un endpoint remoto tramite API Java {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
+## QuickStart: aggiunta di un endpoint remoto tramite API Java™ {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint remoto a un servizio denominato *MyApplication/EncryptDocument*. (vedere [Aggiunta di endpoint remoti](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
+Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint remoto a un servizio denominato *MyApplication/EncryptDocument*. (vedere [Aggiunta di endpoint remoti](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
 ```java
  /*
@@ -630,9 +628,9 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint remoto a un 
  
 ```
 
-## QuickStart: aggiunta di un endpoint TaskManager utilizzando l’API Java {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
+## QuickStart: aggiunta di un endpoint TaskManager utilizzando l’API Java™ {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint TaskManager a un servizio denominato *MyApplication/EncryptDocument*. Il nome della categoria è *EncryptProcess*. (vedere [Aggiunta di endpoint TaskManager](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
+Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint TaskManager a un servizio denominato *MyApplication/EncryptDocument*. Il nome della categoria è *EncryptProcess*. (vedere [Aggiunta di endpoint TaskManager](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```java
  /*
@@ -739,9 +737,9 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un endpoint TaskManager 
  
 ```
 
-## QuickStart: modifica di un endpoint tramite API Java {#quickstart-modifying-an-endpoint-using-the-java-api}
+## QuickStart: modifica di un endpoint tramite API Java™ {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-Il seguente esempio di codice Java modifica un endpoint di cartella controllata. L’endpoint è per *MyApplication/EncryptDocument* processo. La cartella controllata è stata modificata in `C:\NewWatchedFolder`. (vedere [Modifica degli endpoint](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
+Il seguente esempio di codice Java™ modifica un endpoint di cartella controllata. L’endpoint è per *MyApplication/EncryptDocument* processo. La cartella controllata è stata modificata in `C:\NewWatchedFolder`. (vedere [Modifica degli endpoint](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```java
  /*
@@ -889,9 +887,9 @@ Il seguente esempio di codice Java modifica un endpoint di cartella controllata.
  
 ```
 
-## QuickStart: rimozione di un endpoint tramite API Java {#quickstart-removing-an-endpoint-using-the-java-api}
+## QuickStart: rimozione di un endpoint tramite l’API Java™ {#quickstart-removing-an-endpoint-using-the-java-api}
 
-Il codice Java seguente rimuove un endpoint EJB da un servizio denominato *MyApplication/EncryptDocument*. (vedere [Rimozione degli endpoint](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
+Il codice Java™ seguente rimuove un endpoint EJB da un servizio denominato *MyApplication/EncryptDocument*. (vedere [Rimozione degli endpoint](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
 ```java
  /*
@@ -1008,9 +1006,9 @@ Il codice Java seguente rimuove un endpoint EJB da un servizio denominato *MyApp
  
 ```
 
-## QuickStart: recupero delle informazioni sul connettore dell’endpoint tramite API Java {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
+## QuickStart: recupero delle informazioni sul connettore dell’endpoint tramite API Java™ {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-Il seguente codice Java recupera informazioni su un endpoint di cartella controllata. Vengono recuperate e visualizzate le informazioni su ciascun valore di configurazione. Questo elenco di codici specifica se ogni valore di configurazione è obbligatorio o facoltativo. Inoltre, vengono visualizzati il nome e il valore di ciascun valore di configurazione. (vedere [Recupero informazioni sul connettore endpoint](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
+Il codice Java™ seguente recupera informazioni su un endpoint di cartella controllata. Vengono recuperate e visualizzate le informazioni su ciascun valore di configurazione. Questo elenco di codici specifica se ogni valore di configurazione è obbligatorio o facoltativo. Inoltre, vengono visualizzati il nome e il valore di ciascun valore di configurazione. (vedere [Recupero informazioni sul connettore endpoint](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ```java
  /*

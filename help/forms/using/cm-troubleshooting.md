@@ -1,17 +1,15 @@
 ---
 title: "Gestione della corrispondenza: risoluzione dei problemi"
-description: Gestisci gli errori che possono verificarsi durante il salvataggio di una lettera in un ambiente AEM Forms.
-uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
+description: Scopri come gestire gli errori che si verificano durante il salvataggio di una lettera in un ambiente AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 5%
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 5%
 Durante il salvataggio di una lettera viene visualizzato uno dei seguenti errori:
 
 * Associazione dati non presente per il modulo di testo
-* Fornisci informazioni sulla proprietà necessarie per
+* Fornisci le informazioni sulla proprietà necessarie per:
 
 ### Motivo {#reason}
 
@@ -50,5 +48,5 @@ Reimposta la cache delle lettere sull’istanza di pubblicazione seguendo la pro
 1. Vai a **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e accedi come Amministratore.
 1. Seleziona **Configurazioni gestione corrispondenza**.
 1. In entrata **Configurazioni gestione corrispondenza**, disattiva **Abilita cache lettere** e quindi fare clic su **Salva.**
-1. Abilita **Abilita cache lettere** e quindi fare clic su **Salva**.
+1. Verifica **Abilita cache lettere** e quindi fare clic su **Salva**.
 1. Riprovare a visualizzare la lettera.

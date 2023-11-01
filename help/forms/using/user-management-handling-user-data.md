@@ -1,22 +1,20 @@
 ---
 title: Gestione degli utenti Forms | Gestione dei dati utente
-description: Il componente Gestione utenti di AEM Forms JEE consente la creazione, l’autorizzazione e la gestione degli utenti per l’accesso ad AEM Forms.
-uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
+description: Scopri come il componente Gestione utenti di AEM Forms JEE consente di creare, autorizzare e gestire gli utenti che hanno bisogno di accedere ad AEM Forms.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
 
 # Gestione degli utenti Forms | Gestione dei dati utente {#forms-user-management-handling-user-data}
 
-La gestione degli utenti è un componente di AEM Forms JEE che consente di creare, gestire e autorizzare gli utenti di AEM Forms ad accedere ad AEM Forms. La gestione utente utilizza i domini come directory per ottenere le informazioni utente. Sono supportati i seguenti tipi di dominio:
+La gestione degli utenti è un componente di AEM Forms JEE che consente di creare, gestire e autorizzare gli utenti di AEM Forms ad accedere ad AEM Forms. La gestione degli utenti utilizza i domini come directory per ottenere informazioni sugli utenti. Sono supportati i seguenti tipi di dominio:
 
 **Domini locali**: questo tipo di dominio non è connesso a un sistema di storage di terze parti. Al contrario, gli utenti e i gruppi vengono creati localmente e risiedono nel database User Management. Le password vengono memorizzate localmente e l&#39;autenticazione viene eseguita utilizzando un database locale.
 
@@ -28,7 +26,7 @@ La gestione degli utenti è un componente di AEM Forms JEE che consente di crear
 
 ## Dati utente e archivi dati {#user-data-and-data-stores}
 
-La gestione utente memorizza i dati utente in un database, ad esempio My Sql, Oracle, MS SQL Server e IBM DB2. Inoltre, per tutti gli utenti che hanno effettuato l’accesso almeno una volta nelle applicazioni Forms su AEM Author at `https://'[server]:[port]'lc`, l’utente viene creato nell’archivio AEM. Pertanto, la gestione degli utenti viene memorizzata nei seguenti archivi di dati:
+La gestione utente memorizza i dati utente in un database, ad esempio My Sql, Oracle, MS® SQL Server e IBM® DB2®. Inoltre, per tutti gli utenti che hanno effettuato l’accesso almeno una volta nelle applicazioni Forms su AEM Author at `https://'[server]:[port]'lc`, l’utente viene creato nell’archivio AEM. Pertanto, la gestione degli utenti viene memorizzata nei seguenti archivi di dati:
 
 * Database
 * Archivio AEM
@@ -58,28 +56,28 @@ Gestione utenti memorizza i dati utente nelle tabelle di database seguenti:
   </tr>
   <tr>
    <td><p><code>EdcPrincipalLocalAccountEntity</code></p> <p><code class="code">EdcPrincipalLocalAccount
-       </code>(database Oracle e MS SQL)</p> </td>
+       </code>(database Oracle e MS® SQL)</p> </td>
    <td>Memorizza i dati solo per gli utenti locali.</td>
   </tr>
   <tr>
    <td><p><code>EdcPrincipalEmailAliasEntity</code></p> <p><code class="code">EdcPrincipalEmailAliasEn
-       </code>(database Oracle e MS SQL)</p> </td>
+       </code>(database Oracle e MS® SQL)</p> </td>
    <td>Contiene le voci di tutti gli utenti dai domini locali, aziendali e ibridi. Contiene gli ID e-mail degli utenti.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (database Oracle e MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (database Oracle e MS® SQL)</p> </td>
    <td>Memorizza la mappatura tra utenti e gruppi.</td>
   </tr>
   <tr>
    <td><code>EdcPrincipalRoleEntity</code></td>
-   <td>Memorizza la mappatura tra ruoli e entità principale sia per gli utenti che per i gruppi.</td>
+   <td>Memorizza il mapping tra ruoli e utenti/gruppi/ruoli sia per gli utenti che per i gruppi.</td>
   </tr>
   <tr>
    <td><code>EdcPriResPrmEntity</code></td>
    <td>Memorizza la mappatura tra entità e autorizzazioni per utenti e gruppi.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (database Oracle e MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (database Oracle e MS® SQL)</p> </td>
    <td>Memorizza i valori di attributo vecchi e nuovi corrispondenti a un'entità principale.<br /> </td>
   </tr>
  </tbody>
@@ -111,15 +109,15 @@ Eseguire i seguenti comandi di database per esportare i dati di gestione utente 
 
 >[!NOTE]
 >
->I comandi seguenti utilizzano i nomi delle tabelle di database nei database My SQL e IBM DB2. Quando si eseguono questi comandi su database Oracle e MS SQL, sostituire i seguenti nomi di tabella nei comandi:
+>I comandi seguenti utilizzano i nomi delle tabelle di database nei database My SQL e IBM® DB2®. Quando si eseguono questi comandi su database Oracle e MS® SQL, sostituire i seguenti nomi di tabella nei comandi:
 >
->* Sostituisci `EdcPrincipalLocalAccountEntity` con `EdcPrincipalLocalAccount`
+* Sostituisci `EdcPrincipalLocalAccountEntity` con `EdcPrincipalLocalAccount`
 >
->* Sostituisci `EdcPrincipalEmailAliasEntity` con `EdcPrincipalEmailAliasEn`
+* Sostituisci `EdcPrincipalEmailAliasEntity` con `EdcPrincipalEmailAliasEn`
 >
->* Sostituisci `EdcPrincipalMappingEntity` con `EdcPrincipalMappingEntit`
+* Sostituisci `EdcPrincipalMappingEntity` con `EdcPrincipalMappingEntit`
 >
->* Sostituisci `EdcPrincipalGrpCtmntEntity` con `EdcPrincipalGrpCtmntEnti`
+* Sostituisci `EdcPrincipalGrpCtmntEntity` con `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql
@@ -182,5 +180,5 @@ Per eliminare un utente:
 
 1. Vai a `https://'[server]:[port]'/lc/useradmin` con le credenziali di amministratore AEM.
 1. Cercare un utente e fare doppio clic sul nome utente per aprire le proprietà utente. Copia il `Path` proprietà.
-1. Vai a AEM CRX DELite all’indirizzo `https://'[server]:[port]'/lc/crx/de/index.jsp` e naviga o cerca nel percorso utente.
+1. Vai a AEM CRXDE Liti all’indirizzo `https://'[server]:[port]'/lc/crx/de/index.jsp` e naviga o cerca nel percorso utente.
 1. Elimina il percorso e fai clic su **[!UICONTROL Salva tutto]** per eliminare definitivamente l’utente dall’archivio AEM.

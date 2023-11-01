@@ -1,17 +1,15 @@
 ---
 title: Informazioni sui processi di AEM Forms
-description: I processi di AEM Forms includono la creazione di moduli, l’invio, la gestione dei dati, la convalida, l’integrazione, l’automazione dei flussi di lavoro e la gestione degli output.
-uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
+description: Scopri come i processi di AEM Forms comprendono la creazione di moduli, l’invio, la gestione dei dati, la convalida, l’integrazione, l’automazione dei flussi di lavoro e la gestione degli output.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
-discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -63,7 +61,7 @@ Quando viene richiamato, questo processo di breve durata esegue le azioni seguen
    *Programmazione con i moduli AEM* descrive i seguenti modi in cui è possibile richiamare a livello di programmazione questo processo di breve durata:
 
    * [Richiamare un processo di breve durata passando un documento non sicuro tramite AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Utilizzo di un’applicazione Flex)
-   * [Richiamare un processo di breve durata utilizzando l’API di richiamo](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API Java Invocation)
+   * [Richiamare un processo di breve durata utilizzando l’API di richiamo](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API Java™ Invocation)
    * [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (esempio di servizio web)
    * [Richiamare AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (esempio di servizio web)
    * [Richiamare AEM Forms con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (esempio di servizio web)

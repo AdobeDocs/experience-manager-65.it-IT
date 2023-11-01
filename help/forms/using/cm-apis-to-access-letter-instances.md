@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -134,8 +134,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 L&#39;istanza della lettera può essere di tipo Inviata o Bozza. L’apertura di entrambi i tipi di istanza della lettera mostra comportamenti diversi:
 
-* Nel caso di un’istanza di lettera Inviata, viene aperto un PDF che rappresenta l’istanza di lettera. L’istanza della lettera inviata è persistente sul server e contiene anche dataXML e XDP elaborato, che può essere utilizzato per eseguire e personalizzare ulteriormente un caso d’uso, ad esempio la creazione di un PDF/A.
-* Nel caso di un’istanza Bozza di lettera, l’interfaccia utente per la corrispondenza viene ricaricata esattamente nello stato precedente come era al momento della creazione della bozza
+* Se è presente un’istanza di Inviata lettera, viene aperto un PDF che rappresenta l’istanza di Lettera. L’istanza della lettera inviata è persistente sul server e contiene anche dataXML e XDP elaborato, che può essere utilizzato per eseguire e personalizzare ulteriormente un caso d’uso, ad esempio la creazione di un PDF/A.
+* Se è presente un’istanza Bozza lettera, l’interfaccia utente per la corrispondenza viene ricaricata nello stato precedente esatto, come era al momento della creazione della bozza
 
 ### Apertura dell&#39;istanza della bozza di lettera  {#opening-draft-letter-instance-nbsp}
 

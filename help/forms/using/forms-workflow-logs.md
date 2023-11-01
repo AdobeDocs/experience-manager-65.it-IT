@@ -1,23 +1,21 @@
 ---
 title: Registrazione nei flussi di lavoro di AEM Forms
-description: Debug dei problemi del flusso di lavoro di AEM Forms e abilita la registrazione di debug per i flussi di lavoro di AEM Forms per visualizzare i registri.
-uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
+description: Scopri come eseguire il debug dei problemi del flusso di lavoro di AEM Forms e abilitare la registrazione di debug per i flussi di lavoro di AEM Forms per visualizzare i registri.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '292'
 ht-degree: 5%
 
 ---
 
 # Registrazione nei flussi di lavoro di AEM Forms{#logging-in-aem-forms-workflows}
 
-I passaggi del flusso di lavoro Forms forniscono registri dettagliati per eseguire il debug dei problemi correlati al flusso di lavoro in modo semplice. Abilita la registrazione di debug per i flussi di lavoro di AEM Forms per visualizzare i registri.
+I passaggi di Forms Workflow forniscono registri dettagliati per eseguire il debug dei problemi correlati al flusso di lavoro in modo semplice. Abilita la registrazione di debug per i flussi di lavoro di AEM Forms per visualizzare i registri.
 
 Per impostazione predefinita, tutte le informazioni di registrazione sono disponibili nel **error.log** file in corrispondenza di */crx-repository/logs/* directory.
 
@@ -68,7 +66,7 @@ L’esempio seguente illustra i registri per il passaggio Firma documento:
 
 Utilizza i registri per valutare quanto segue:
 
-* Stai utilizzando una configurazione di Adobe Sign corretta.
+* Stai utilizzando una configurazione Adobe Sign corretta.
 * Il servizio Adobe Sign termina dopo la creazione di un contratto.
 * Il passaggio Firma documento termina con un messaggio di successo.
 
@@ -76,7 +74,7 @@ In caso di eccezione, è possibile visualizzare l&#39;analisi completa dello sta
 
 ## Abilitare la registrazione di debug per i flussi di lavoro di AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
-Per abilitare la registrazione di debug per i flussi di lavoro AEM Forms, effettua le seguenti operazioni:
+Effettua le seguenti operazioni per abilitare la registrazione di debug per i flussi di lavoro AEM Forms:
 
 1. Vai a Gestione configurazione console web AEM all’indirizzo:
 

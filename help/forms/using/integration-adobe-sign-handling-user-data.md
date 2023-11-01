@@ -1,14 +1,14 @@
 ---
 title: Integrazione con Adobe Sign | Gestione dei dati utente
-description: AEM Forms integra Adobe Sign per le firme elettroniche nei moduli adattivi. Supporta più opzioni di firma per vari flussi di lavoro.
+description: Scopri l’integrazione di AEM Forms con Adobe Sign per le firme elettroniche nei moduli adattivi. Supporta più opzioni di firma per vari flussi di lavoro.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---

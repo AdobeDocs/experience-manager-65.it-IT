@@ -1,15 +1,13 @@
 ---
 title: Gestione della corrispondenza | Gestione dei dati utente
-description: Gestione della corrispondenza e Gestione dei dati utente nell’ambiente AEM Forms.
-uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
+description: Scopri come gestire la corrispondenza e i dati utente in un ambiente Adobe Experience Manager Forms.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -73,7 +71,7 @@ Puoi accedere ai dati delle bozze e della corrispondenza inviata negli archivi d
 
 Gestione della corrispondenza fornisce API che è possibile utilizzare per trovare e accedere alle istanze di bozze e lettere inviate. Utilizzando le API, puoi trovare e aprire le istanze di lettere utilizzando l’ID dell’istanza della lettera o l’utente che ha salvato o inviato la corrispondenza. Per ulteriori informazioni, consulta [API per accedere alle istanze delle lettere](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-In alternativa, puoi passare all’istanza della lettera nell’archivio AEM utilizzando CRX DELite. Consulta [Dati utente e archivi dati](/help/forms/using/correspondence-management-handling-user-data.md#data) per informazioni sui dati archiviati e sulla posizione dell&#39;archivio.
+In alternativa, puoi passare all’istanza della lettera nell’archivio AEM utilizzando CRXDE Liti. Consulta [Dati utente e archivi dati](/help/forms/using/correspondence-management-handling-user-data.md#data) per informazioni sui dati archiviati e sulla posizione dell&#39;archivio.
 
 ### Elimina dati utente {#delete-user-data}
 

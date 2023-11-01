@@ -1,14 +1,12 @@
 ---
 title: Utilizzo di un modulo adattivo in HTML Workspace
-description: Scopri come utilizzare un modulo adattivo in HTML Workspace per consentire ai lavoratori sul campo di accedere al modulo sui loro dispositivi.
-uuid: 473d5daf-a3ed-449f-9136-585755b59922
+description: Scopri come utilizzare un modulo adattivo in HTML Workspace che consente ai lavoratori dei campi di accedere al modulo sui loro dispositivi.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2b6875cd-2ee7-4aa8-90c7-d33583dc2f0e
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 0%
@@ -19,7 +17,7 @@ ht-degree: 0%
 
 AEM Forms su JEE consente di utilizzare un modulo adattivo in HTML Workspace.
 
-Poiché è possibile selezionare un XDP durante la progettazione del processo, è stata aggiunta la possibilità di sfogliare da un archivio AEM di un modulo adattivo esistente. Questa funzionalità consente al progettista di processi di configurare un modulo adattivo sia nel punto iniziale che nell’attività.
+Poiché è possibile selezionare un XDP durante la progettazione del processo, è stata aggiunta la possibilità di sfogliare da un archivio AEM di un modulo adattivo esistente. Questa funzionalità consente a Process Designer di configurare un modulo adattivo in Start Point e Task.
 
 ## Esperienza di progettazione del processo {#process-design-experience}
 
@@ -37,7 +35,7 @@ Poiché i moduli adattivi si trovano nell’archivio AEM, l’esportazione dell�
 
 HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre ai controlli disponibili per i moduli mobili. Quando un utente apre un’attività o un punto iniziale, può aggiungere allegati, salvare, firmare, inviare e navigare nei moduli adattivi in HTML Workspace. Di seguito sono riportate le specifiche:
 
-1. Per allegare i file, usate gli allegati delle attività, come in Mobile Forms. Qualsiasi pulsante di tipo File allegato di un modulo adattivo è nascosto.
+1. Per allegare i file, utilizza gli allegati delle attività, come in Mobile Forms. Qualsiasi pulsante di tipo File allegato di un modulo adattivo è nascosto.
 
 1. Per salvare un modulo adattivo, fai clic su **Salva**, come nel caso di Mobile Forms. Qualsiasi pulsante Salva tipo di modulo adattivo è nascosto.
 
@@ -47,7 +45,7 @@ HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre 
 
 1. **Controlli di navigazione di Workspace per Adaptive Forms**: i pulsanti Avanti/Indietro sono disponibili insieme ai pulsanti Salva, Invia e Inoltra azione per un modulo adattivo in HTML Workspace. Fai clic sui pulsanti Successivo/Precedente per passare ai pannelli dei moduli adattivi in HTML Workspace. I pulsanti Successivo/Precedente offrono una navigazione approfondita, simile ai controlli di navigazione nella visualizzazione Mobile dei moduli adattivi.
 
-1. **Componente servizi eSign e riepilogo del modulo adattivo**: il componente Riepilogo non è operativo in HTML Workspace. In altre parole, un modulo adattivo con un componente Riepilogo non è visibile nell’area di lavoro. Invece di eseguire l’invio automatico nel componente Progettazione, l’utente dell’area di lavoro fa clic sull’azione Invia o su un’azione del percorso in HTML Workspace. Dopo la firma, un documento è visibile come documento con firma semplice. Clic **Invia** oppure un&#39;azione di instradamento per chiudere/completare l&#39;attività o il punto iniziale.\
+1. **Componente servizi eSign e riepilogo del modulo adattivo**: il componente Riepilogo non è operativo in HTML Workspace. In altre parole, un modulo adattivo con un componente Riepilogo non è visibile nell’area di lavoro. Invece di eseguire l’invio automatico nel componente E-sign, l’utente dell’area di lavoro fa clic sull’azione Invia o su un’azione del percorso in HTML Workspace. Dopo la firma, un documento è visibile come documento con firma semplice. Clic **Invia** o un&#39;azione di instradamento che consente di chiudere/completare l&#39;attività o il punto iniziale.\
    Il documento firmato viene raccolto dal server eSign Services e il file XML dati viene inoltrato al passaggio successivo del processo.
 
 ## Passaggi per utilizzare i moduli adattivi nella progettazione dei processi {#steps-to-use-adaptive-forms-in-process-design}
@@ -58,13 +56,13 @@ HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre 
 
    ![Crea nuova applicazione](assets/create_new_appl.png)
 
-   Crea nuova applicazione
+   Crea applicazione
 
 1. Creare un processo o utilizzare un processo esistente nell&#39;applicazione.
 
    ![Crea nuovo processo](assets/create_new_process.png)
 
-   Crea nuovo processo
+   Crea processo
 
 1. Creare un punto iniziale o assegnare un&#39;attività e fare doppio clic su di essa.
 1. Sotto **[!UICONTROL Presentazione e dati]** sezione, seleziona **[!UICONTROL utilizzare una risorsa CRX]** e fai clic sui puntini di sospensione davanti alla risorsa.

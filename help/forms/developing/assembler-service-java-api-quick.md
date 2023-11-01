@@ -1,20 +1,20 @@
 ---
-title: Servizio assemblatore API Java QuickStart (SOAP)
-description: Assemblare, disassemblare e creare dinamicamente un documento PDF utilizzando l'API Java QuickStart (SOAP) del servizio Assembler.
+title: Servizio assemblatore Java&trade; API QuickStart(SOAP)
+description: Scopri come assemblare, disassemblare e creare in modo dinamico un documento PDF utilizzando il servizio Assembler Java&trade; API QuickStart (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
 
-# Servizio assemblatore API Java QuickStart (SOAP) {#assembler-service-java-api-quickstart-soap}
+# Servizio assemblatore API Java™ QuickStart (SOAP) {#assembler-service-java-api-quickstart-soap}
 
 È disponibile Java API Quick Start (SOAP) per il servizio Assembler.
 
@@ -44,7 +44,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida introduttiva disponibile in Programmazione con AEM Forms si basa sul server Forms distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Gli avvii rapidi nella programmazione con AEM Forms si basano sul server Forms distribuito su JBoss® Application Server e sul sistema operativo Microsoft® Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX®, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Guida rapida (modalità SOAP): assemblaggio di un documento PDF tramite l’API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -736,7 +736,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene assemblato un
 
 ## Guida introduttiva (modalità SOAP): determinare se un documento è compatibile con PDF/A utilizzando l’API Java {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene determinato se il documento PDF di input è compatibile con PDF/A. Il documento di input PDF passato al servizio Assembler è denominato *Loan.pdf*. Il nome del documento DDX è shell_PDFA.xml. Il documento XML restituito dal servizio Assembler e che specifica se il documento PDF di input è conforme a PDF/A viene salvato come file XML denominato result.xml. Per informazioni su *shell_PDFA.xml* Documento DDX utilizzato in questo esempio di codice, vedi [Determinare Se I Documenti Sono Conformi A PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+Esempio Nell&#39;esempio di codice Java riportato di seguito viene determinato se il documento PDF di input è compatibile con PDF/A. Il documento di input PDF passato al servizio Assembler è denominato *Loan.pdf*. Il nome del documento DDX è shell_PDFA.xml. Il documento XML restituito dal servizio Assembler e che specifica se il documento PDF di input è compatibile con PDF/A viene salvato come file XML denominato result.xml. Per informazioni su *shell_PDFA.xml* Documento DDX utilizzato in questo esempio di codice, vedi [Determinare Se I Documenti Sono Conformi A PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```java
  /*
@@ -1687,7 +1687,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene redatto un documen
 
 >[!NOTE]
 >
->`PDFUtility` è possibile reimpostare solo i PDF contrassegnati per la redazione tramite Acrobat.
+Il `PDFUtility` è possibile reimpostare solo i PDF contrassegnati per la redazione tramite Acrobat.
 
 ```java
 /*

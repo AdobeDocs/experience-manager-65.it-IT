@@ -1,18 +1,16 @@
 ---
 title: Differenziazione delle funzioni tra moduli di HTML5 e PDF forms
-description: Scopri le differenze tra moduli HTML5 e PDF forms.
-uuid: 6ddee197-d108-4897-9976-77d115a06504
+description: Scopri le differenze di funzionalità tra moduli HTML5 e PDF forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '447'
 ht-degree: 2%
 
 ---
@@ -50,7 +48,7 @@ La tabella seguente specifica il supporto delle funzioni fornito per i moduli e 
   </tr>
   <tr>
    <td>Paginazione<br /> </td>
-   <td><p>Un modulo HTML5 è diviso in pannelli e caselle per conferirgli un aspetto simile a quello dei PDF forms. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta e non viene visualizzato uno spazio vuoto tra le pagine al di sopra e al di sotto della pagina vuota.</p> <p>Se l’unione dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Non vengono aggiunte nuove pagine al modulo per includere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> Quando tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre pagine.</p> </td>
+   <td><p>Un modulo HTML5 è diviso in pannelli e caselle per conferirgli un aspetto simile a quello dei PDF forms. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta. Tra le pagine sopra e sotto la pagina vuota non viene visualizzato uno spazio vuoto (spazio vuoto).</p> <p>Se l’unione dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Non vengono aggiunte nuove pagine al modulo per includere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> Quando tutti i contenuti di una pagina in un modulo di HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre pagine.</p> </td>
    <td>L’impaginazione in PDF dipende dal contenuto dei dati uniti o dal contenuto dell’utente e il conteggio delle pagine viene aumentato/ridotto in base a esso.</td>
   </tr>
   <tr>
@@ -65,7 +63,7 @@ La tabella seguente specifica il supporto delle funzioni fornito per i moduli e 
   </tr>
   <tr>
    <td>API script XFA</td>
-   <td>Supporta i costrutti di script XFA più comunemente utilizzati. Per un elenco dettagliato dei costrutti supportati, consulta <a href="/help/forms/using/scripting-support.md">supporto script</a>.</td>
+   <td>Supporta i costrutti di script XFA più comunemente utilizzati. Per un elenco dettagliato dei costrutti supportati consulta <a href="/help/forms/using/scripting-support.md">supporto script</a>.</td>
    <td>Supporta tutti i costrutti di script XFA.</td>
   </tr>
   <tr>
