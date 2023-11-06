@@ -1,20 +1,18 @@
 ---
 title: Come abilitare i componenti core Adaptive Forms su AEM 6.5 Forms?
-seo-title: How to enable Adaptive Forms Core Components on AEM 6.5 Forms?
 description: Guida dettagliata per abilitare i componenti core Adaptive Forms in un ambiente Forms AEM 6.5.
-seo-description: Step-by-Step guide to help you enable Adaptive Forms Core Components on an AEM 6.5 Forms environment.
 keywords: Abilitare i componenti core, i componenti core Forms adattivo, i componenti core su 6.5, i componenti core Forms adattivo su AEM 6.5, i componenti core AF su AEM 6.5, i componenti core AEM 6.5 di Forms
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
+source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 8%
+source-wordcount: '990'
+ht-degree: 7%
 
 ---
-
 
 # Abilitare i componenti core Adaptive Forms sul Forms AEM 6.5 {#enable-adaptive-forms-core-components}
 
@@ -27,10 +25,9 @@ ht-degree: 8%
 
 L’abilitazione dei componenti core adattivi di Forms consente di iniziare a creare, pubblicare e distribuire [Forms adattivo basato su componenti core](create-an-adaptive-form-core-components.md) e [Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it) dall’ambiente Forms AEM 6.5.
 
-Per abilitare i componenti core HAdaptive Forms nell’ambiente Forms AEM 6.5, imposta e implementa un’ [AEM Archetipo 41 o versione successiva](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) progetto basato (con le opzioni Forms abilitate) su tutte le istanze Author e Publish.
+Per abilitare i componenti core Adaptive Forms nell’ambiente Forms AEM 6.5, imposta e implementa [AEM Archetipo 41 o versione successiva](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) progetto basato (con le opzioni Forms abilitate) su tutte le istanze Author e Publish.
 
-Questo articolo fornisce istruzioni dettagliate per configurare e distribuire un progetto basato su Archetipo AEM 41 o versione successiva nell’ambiente Forms AEM 6.5 per abilitare i componenti core di Forms adattivi.
-
+Questo articolo fornisce istruzioni dettagliate per configurare e distribuire un progetto basato su Archetipo AEM 41 o versione successiva nell’ambiente Forms AEM 6.5 per abilitare i componenti core di Forms adattivi. Consulta l’elenco di seguito per **AEM 6.5** versioni compatibili per l’abilitazione dei componenti core di Forms:
 
 ## Prerequisiti {#prerequisites}
 
@@ -107,7 +104,16 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
 1. Aggiorna il progetto per includere la versione più recente dei Componenti core di Forms:
 
    1. Apri [Cartella progetto Archetipo AEM]/pom.xml per la modifica.
-   1. Imposta versione di `core.forms.components.version` e `core.forms.components.af.version` a [Componenti core Forms più recenti](https://github.com/adobe/aem-core-forms-components/tree/release/650) versione.
+   1. Imposta versione di `core.forms.components.version` e `core.forms.components.af.version` a [Componenti core Forms più recenti](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) e accertarsi che entrambi abbiano la stessa versione di **Componenti core Forms** indicato nella tabella e impostare la versione di `core.wcm.components.version` come indicato nella **Componenti core WCM**.
+
+      >[!WARNING]
+      >
+      >* Durante la creazione di un progetto Archetipo con `version 45`, il [Cartella progetto Archetipo AEM]/pom.xml inizialmente imposta la versione dei componenti core forms su `1.1.28`. Prima di creare o distribuire il progetto Archetipo, aggiorna la versione dei Componenti core forms con `1.1.26`.
+
+
+      >[!NOTE]
+      >
+      >* Se imposti un’altra topologia, accertati di aggiungere l’URL di invio, il precaricamento e altri URL al inserisco nell&#39;elenco Consentiti di Dispatcher a livello di Dispatcher.
 
    1. Salva e chiudi il file 
 
