@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1825'
 ht-degree: 18%
 
 ---
@@ -26,7 +26,7 @@ Questa integrazione consente di utilizzare AEM e Adobe Campaign Standard in modo
 
 ## Passaggi dell’integrazione {#integration-steps}
 
-La configurazione dell’integrazione tra AEM e Adobe Campaign Standard richiede una serie di passaggi in entrambe le soluzioni.
+La configurazione dell’integrazione tra AEM e Adobe Campaign Standard richiede diversi passaggi in entrambe le soluzioni.
 
 1. [Configurare ](#aemserver-user)
 1. [Verificare la ](#resource-type-filter)
@@ -63,7 +63,7 @@ Per impostazione predefinita, Adobe Campaign Standard viene fornito con `aemserv
 
 Il tuo `aemserver` L’utente dispone ora dei diritti necessari per consentire all’AEM di utilizzarli per comunicare con Adobe Campaign.
 
-Tuttavia, prima che l’AEM possa usare `aemserver` utente, è necessario impostarne la password. Questo non può essere fatto tramite Adobe Campaign. Deve essere eseguita da un tecnico del supporto Adobe. [Crea un ticket presso l’Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-tab=home&amp;lang=it#support) per richiedere la reimpostazione del `aemserver` password. Una volta ottenuta la password da Adobe Customer Care, conservala in un luogo sicuro.
+Tuttavia, prima che l’AEM possa usare `aemserver` utente, è necessario impostarne la password. Questo non può essere fatto tramite Adobe Campaign. Deve essere eseguita da un tecnico del supporto Adobe. [Invia un ticket con l’Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-tab=home&amp;lang=it#support) per richiedere la reimpostazione del `aemserver` password. Una volta ottenuta la password da Adobe Customer Care, conservala in un luogo sicuro.
 
 ## Verificare AEMResourceTypeFilter in Campaign {#resource-type-filter}
 

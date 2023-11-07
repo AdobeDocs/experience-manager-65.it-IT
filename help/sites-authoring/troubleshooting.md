@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '294'
 ht-degree: 47%
 
 ---
@@ -25,7 +25,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 >[!NOTE]
 >
->Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi AEM (per amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, rivolgiti al tuo amministratore di sistema per informazioni sulla risoluzione dei problemi relativi all’AEM.
+>Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi AEM (per amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, consulta l’amministratore di sistema per la risoluzione dei problemi AEM.
 
 ## La vecchia versione della pagina è ancora nel sito pubblicato {#old-page-version-still-on-published-site}
 
@@ -46,8 +46,8 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
       * `http://localhost:4502/sites.html/content?`
       * In questo modo la pagina viene richiesta direttamente da AEM senza passare dal Dispatcher. Se viene visualizzata la pagina aggiornata, significa che è necessario cancellare la cache del Dispatcher.
-   * In caso di problemi relativi alla coda di replica, rivolgiti all’amministratore di sistema.
 
+   * In caso di problemi relativi alla coda di replica, rivolgiti all’amministratore di sistema.
 
 ## Azioni per componenti non visibili sulla barra degli strumenti {#component-actions-not-visible-on-toolbar}
 

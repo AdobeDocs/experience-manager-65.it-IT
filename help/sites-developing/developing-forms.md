@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 0%
+source-wordcount: '1947'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ Oltre a [sviluppo di nuovi componenti](/help/sites-developing/developing-compone
 
 >[!NOTE]
 >
->Questo documento si concentra sullo sviluppo di moduli utilizzando [Componenti di base](/help/sites-authoring/default-components-foundation.md) nell’interfaccia classica. L’Adobe consiglia di sfruttare il nuovo [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Nascondi condizioni](/help/sites-developing/hide-conditions.md) per lo sviluppo di moduli nell’interfaccia utente touch.
+>Questo documento si concentra sullo sviluppo di moduli utilizzando [Componenti di base](/help/sites-authoring/default-components-foundation.md) nell’interfaccia classica. L’Adobe consiglia di utilizzare il nuovo [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Nascondi condizioni](/help/sites-developing/hide-conditions.md) per lo sviluppo di moduli nell’interfaccia utente touch.
 
 ## Precaricamento dei valori modulo {#preloading-form-values}
 
@@ -68,7 +68,7 @@ Il **Percorso di caricamento elementi** è il percorso delle proprietà del nodo
 
 Il **Percorso di caricamento elementi** può essere utilizzato per accedere a un elenco da una cartella nel repository e precaricarli nel campo:
 
-1. Crea una nuova cartella Sling ( `sling:Folder`) ad esempio, `/etc/designs/<myDesign>/formlistvalues`
+1. Creare una cartella Sling ( `sling:Folder`) ad esempio, `/etc/designs/<myDesign>/formlistvalues`
 
 1. Aggiungi una nuova proprietà (ad esempio, `myList`) di tipo stringa con più valori ( `String[]`) per contenere l&#39;elenco degli elementi a discesa. Il contenuto può essere importato anche utilizzando uno script, ad esempio con uno script JSP o cURL in uno script shell.
 
@@ -78,7 +78,7 @@ Tieni presente che se i valori in `String[]` sono dei formattati come segue:
 
 * `AL=Alabama`
 * `AK=Alaska`
-* ecc.
+* e così via
 
 l’AEM genererà l’elenco come:
 
@@ -208,7 +208,7 @@ I vincoli possono essere imposti a due livelli:
 
    * `sling:resourceType` - impostato su `foundation/components/form/constraint`
 
-   * `constraintMessage` - un messaggio personalizzato che verrà visualizzato se il campo non è valido, in base al vincolo, al momento dell’invio del modulo
+   * `constraintMessage` : messaggio personalizzato visualizzato se il campo non è valido, in base al vincolo, al momento dell’invio del modulo
 
    * Facoltativamente:
 

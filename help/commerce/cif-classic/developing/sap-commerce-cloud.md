@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2287'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il framework eCommerce può essere utilizzato con qualsiasi soluzione di eCommerce. Alcune specifiche ed esempi trattati in questa sede si riferiscono alla [ibrido](https://www.sap.com/products/crm.html) soluzione.
+>Il framework eCommerce può essere utilizzato con qualsiasi soluzione di eCommerce. Alcuni esempi e specifiche trattati in questa sede sono illustrati nella [ibrido](https://www.sap.com/products/crm.html) soluzione.
 
 Il framework di integrazione include un livello di integrazione con un’API. Questo consente di:
 
@@ -405,7 +405,7 @@ public class AxisFilter implements VariantFilter {
 
 * Il carrello è di proprietà di `CommerceSession:`
 
-   * Il `CommerceSession` esegue operazioni di aggiunta/rimozione/ecc.
+   * Il `CommerceSession` esegue operazioni di aggiunta/rimozione/e così via.
    * Il `CommerceSession` esegue anche i vari calcoli sul carrello. &quot;
 
 * Anche se non è direttamente correlato al carrello, il `CommerceSession` deve inoltre fornire informazioni sulla determinazione dei prezzi del catalogo (in quanto è proprietario dei prezzi)

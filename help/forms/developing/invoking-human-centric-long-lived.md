@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3699'
+source-wordcount: '3695'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Il `FirstAppSolution/PreLoanProcess` Il processo viene richiamato quando un rich
  </LoanApp>
 ```
 
-I dati XML passati a un processo devono corrispondere ai campi presenti nel modulo utilizzato nel processo. In caso contrario, i dati non verranno visualizzati all&#39;interno del modulo. Tutte le applicazioni che richiamano `FirstAppSolution/PreLoanProcess` Il processo deve passare questa origine dati XML. Le applicazioni create in *Richiamare processi a lunga durata incentrati sull&#39;uomo* creare dinamicamente l&#39;origine dati XML dai valori immessi da un utente in un client Web.
+I dati XML passati a un processo devono corrispondere ai campi nel modulo utilizzato nel processo. In caso contrario, i dati non verranno visualizzati all&#39;interno del modulo. Tutte le applicazioni che richiamano `FirstAppSolution/PreLoanProcess` Il processo deve passare questa origine dati XML. Le applicazioni create in *Richiamare processi a lunga durata incentrati sull&#39;uomo* creare dinamicamente l&#39;origine dati XML dai valori immessi da un utente in un client Web.
 
 Utilizzando un’applicazione client, puoi inviare *FirstAppSolution/PreLoanProcess* elabora i dati XML richiesti. Un processo di lunga durata restituisce un valore dell&#39;identificatore di chiamata come valore restituito. L’illustrazione seguente mostra le applicazioni client che richiamano il processo di lunga durata*FirstAppSolution/PreLoanProcess. Le applicazioni client inviano dati XML e restituiscono un valore stringa che rappresenta il valore dell&#39;identificatore di chiamata.
 
@@ -159,7 +159,7 @@ Creare una logica dell’applicazione Java che richiami `FirstAppSolution/PreLoa
 
 Normalmente, non inserisci il codice client all’interno di un servlet Java `doGet` o `doPost` metodo. Una migliore pratica di programmazione consiste nel posizionare questo codice all&#39;interno di una classe separata. Crea un&#39;istanza della classe dall&#39;interno di `doPost` metodo (o `doGet` e chiamare i metodi appropriati. Tuttavia, per brevità del codice, gli esempi di codice sono limitati al minimo e vengono inseriti nel `doPost` metodo.
 
-Per richiamare `FirstAppSolution/PreLoanProcess` processo che utilizza l&#39;API di richiamo, eseguire le attività seguenti:
+Per richiamare `FirstAppSolution/PreLoanProcess` processo che utilizza l&#39;API di chiamata, eseguire le attività seguenti:
 
 1. Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java. Per informazioni sulla posizione di questi file, vedere [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Recupera i valori di nome, telefono e importo inviati dalla pagina HTML. Utilizzare questi valori per creare in modo dinamico un&#39;origine dati XML inviata al `FirstAppSolution/PreLoanProcess` processo. È possibile utilizzare `org.w3c.dom` classi per creare l&#39;origine dati XML (questa logica di applicazione è illustrata nell&#39;esempio di codice seguente).
@@ -215,7 +215,7 @@ L’esempio di codice Java seguente rappresenta il servlet Java che richiama `Fi
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -321,7 +321,7 @@ L’esempio di codice Java seguente rappresenta il servlet Java che richiama `Fi
                  DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
                  DocumentBuilder builder = factory.newDocumentBuilder();
  
-                 //Create a new Document object
+                 //Create a Document object
                  document = builder.newDocument();
  
                  //Create MortgageApp - the root element in the XML
@@ -447,7 +447,7 @@ Dopo aver distribuito l’applicazione web, puoi testarla utilizzando un browser
 
 * http://localhost:8080/PreLoanProcess/index.html
 
-   Immettere i valori nei campi del modulo HTML e fare clic sul pulsante Sottometti applicazione. Se si verificano problemi, vedere il file di registro del server applicazioni J2EE.
+  Immettere i valori nei campi del modulo HTML e fare clic sul pulsante Sottometti applicazione. Se si verificano problemi, vedere il file di registro del server applicazioni J2EE.
 
 >[!NOTE]
 >
@@ -518,7 +518,7 @@ Avviso in Riferimenti servizio sono disponibili due elementi. Il primo elemento 
 
 ### Creare una pagina ASP che richiami FirstAppSolution/PreLoanProcess {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}
 
-All’interno del progetto ASP.NET, aggiungi un modulo web (un file ASPX) responsabile della visualizzazione di una pagina HTML al richiedente del prestito. Il modulo web è basato su una classe derivata da `System.Web.UI.Page`. Logica dell&#39;applicazione C# che richiama `FirstAppSolution/PreLoanProcess` si trova in `Button1_Click` metodo (questo pulsante rappresenta il pulsante Invia applicazione ).
+All’interno del progetto ASP.NET, aggiungi un modulo web (un file ASPX) responsabile della visualizzazione di una pagina HTML al richiedente del prestito. Il modulo web è basato su una classe derivata da `System.Web.UI.Page`. Logica dell&#39;applicazione C# che richiama `FirstAppSolution/PreLoanProcess` è in `Button1_Click` metodo (questo pulsante rappresenta il pulsante Invia applicazione ).
 
 La figura seguente mostra l&#39;applicazione ASP.NET
 
@@ -559,7 +559,7 @@ Nella tabella seguente sono elencati i controlli che fanno parte di questa appli
  </tbody>
 </table>
 
-La logica dell&#39;applicazione che fa parte dell&#39;applicazione ASP.NET deve creare in modo dinamico un&#39;origine dati XML da passare al `FirstAppSolution/PreLoanProcess` processo. I valori immessi dal richiedente nella pagina HTML devono essere specificati nell&#39;origine dati XML. Questi valori di dati vengono uniti nel modulo quando questo viene visualizzato in Workspace. Le classi che si trovano in `System.Xml` per creare l&#39;origine dati XML.
+La logica dell&#39;applicazione che fa parte dell&#39;applicazione ASP.NET deve creare in modo dinamico un&#39;origine dati XML da passare al `FirstAppSolution/PreLoanProcess` processo. I valori immessi dal richiedente nella pagina HTML devono essere specificati nell&#39;origine dati XML. Questi valori di dati vengono uniti nel modulo quando questo viene visualizzato in Workspace. Le classi in `System.Xml` per creare l&#39;origine dati XML.
 
 Quando si richiama un processo che richiede dati XML da un&#39;applicazione ASP.NET, è disponibile un tipo di dati XML da utilizzare. In altre parole, non è possibile trasmettere un `System.Xml.XmlDocument` al processo. Il nome completo dell&#39;istanza XML da passare al processo è `InvokePreLoanProcess.PreLoanProcess.XML`. Converti il `System.Xml.XmlDocument` istanza a `InvokePreLoanProcess.PreLoanProcess.XML`. È possibile eseguire questa operazione utilizzando il codice seguente.
 
@@ -815,7 +815,7 @@ Nell&#39;esempio di codice di C# riportato di seguito viene richiamato `FirstApp
 
 >[!NOTE]
 >
->I valori presenti nel metodo definito dall&#39;utente getJobDescription corrispondono ai valori restituiti dal servizio Gestione processo.
+>I valori nel metodo definito dall&#39;utente getJobDescription corrispondono ai valori restituiti dal servizio Gestione processo.
 
 ### Eseguire l&#39;applicazione ASP.NET {#run-the-asp-net-application}
 

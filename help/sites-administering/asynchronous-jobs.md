@@ -2,10 +2,10 @@
 title: Processi asincroni
 description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a consumo intensivo di risorse.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 97%
+source-wordcount: '798'
+ht-degree: 91%
 
 ---
 
@@ -55,7 +55,7 @@ Lo stato delle operazioni asincrone è consultabile in dettaglio alla pagina **[
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Per visualizzare ulteriori dettagli, ad esempio la descrizione e i registri, seleziona l’operazione e fai clic su **[!UICONTROL Apri]** nella barra degli strumenti.
+1. Per visualizzare ulteriori dettagli, ad esempio descrizione e registri, seleziona l’operazione e fai clic su **[!UICONTROL Apri]** dalla barra degli strumenti.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -88,7 +88,7 @@ Puoi modificare la pianificazione per il processo di eliminazione e il periodo p
 
 ## Configurare l’elaborazione asincrona {#configuring-asynchronous-processing}
 
-In AEM è possibile configurare il limite del numero di risorse, pagine o riferimenti per l’elaborazione asincrona di una determinata operazione, nonché attivare o disattivare le notifiche e-mail.
+Puoi configurare il numero limite di risorse, pagine o riferimenti per l’AEM in modo da elaborare una particolare operazione in modo asincrono e attivare/disattivare le notifiche e-mail per indicare quando vengono elaborati i processi.
 
 ### Configurare le operazioni di eliminazione delle risorse asincrone {#configuring-synchronous-delete-operations}
 

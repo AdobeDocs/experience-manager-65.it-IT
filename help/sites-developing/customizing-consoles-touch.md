@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 1%
 
 ---
@@ -158,6 +158,6 @@ Per personalizzare le colonne nella vista a elenco:
 
 ### Filtrare le risorse {#filtering-resources}
 
-Quando si utilizza una console, un caso d’uso comune si verifica quando l’utente deve selezionare tra le risorse (ad esempio pagine, componenti, risorse, ecc.). Può assumere la forma di un elenco, ad esempio, dal quale l’autore deve scegliere un elemento.
+Quando si utilizza una console, un caso d’uso comune si verifica quando l’utente deve selezionare tra le risorse (ad esempio pagine, componenti, risorse e così via). Può assumere la forma di un elenco, ad esempio, dal quale l’autore deve scegliere un elemento.
 
 Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Consulta [questo articolo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) per i dettagli.

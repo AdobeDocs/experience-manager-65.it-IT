@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
@@ -18,7 +18,7 @@ AEM [!DNL Assets] è uno strumento di gestione delle risorse digitali (DAM) che 
 
 ## Che cos’è Digital Asset Management? {#what-is-digital-asset-management}
 
-[!DNL Assets] consente la condivisione e la distribuzione a livello aziendale delle risorse digitali chiave di un’organizzazione. Gli utenti di un’organizzazione possono archiviare, gestire e accedere a risorse digitali quali immagini, elementi grafici, audio, video e documenti tramite un’interfaccia web (o una cartella CIFS o WebDAV).
+[!DNL Assets] consente la condivisione e la distribuzione a livello aziendale delle risorse digitali chiave di un’organizzazione. Gli utenti di un’organizzazione possono archiviare, gestire e accedere a risorse digitali quali immagini, elementi grafici, audio, video e documenti tramite un’interfaccia web (o una cartella CIF o WebDAV).
 
 [!DNL Assets] capacità di [!DNL Experience Manager] consente di effettuare le seguenti operazioni:
 
@@ -26,7 +26,7 @@ AEM [!DNL Assets] è uno strumento di gestione delle risorse digitali (DAM) che 
 * Gestisci le risorse raggruppandole per tag, lightbox o stelle (i tuoi preferiti). Aggiungere annotazioni alle risorse.
 * Per trovare le risorse, cercare i nomi dei file, il testo completo dei documenti, le date, il tipo di documento e i tag.
 * Aggiungere o modificare le informazioni sui metadati per le risorse. Insieme alla risorsa corrispondente viene automaticamente creata una versione dei metadati. Puoi importare o esportare i metadati delle risorse.
-* Eseguire le funzioni di modifica delle immagini, come il ridimensionamento e l&#39;aggiunta di filtri immagine. Importare ed esportare più risorse digitali contemporaneamente utilizzando una cartella WebDAV o CIFS.
+* Eseguire le funzioni di modifica delle immagini, come il ridimensionamento e l&#39;aggiunta di filtri immagine. Importare ed esportare più risorse digitali contemporaneamente utilizzando una cartella WebDAV o CIF.
 * Utilizza i flussi di lavoro e le notifiche per consentire l’elaborazione e il download congiunti di qualsiasi insieme di risorse e gestire i diritti di accesso alle risorse.
 
 ### [!DNL Experience Manager Assets] è integrato con [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
@@ -66,7 +66,7 @@ Utilizzo delle risorse digitali in [!DNL Experience Manager], può essere utile 
 
 * **Assegnazione tag**: [!DNL Assets] può essere taggato e classificato. Consulta [organizzazione delle risorse](/help/assets/organize-assets.md).
 
-* **Rappresentazioni**: una rappresentazione è la rappresentazione binaria di una risorsa. [!DNL Assets] ha sempre una rappresentazione primaria: quella del file caricato. Possono disporre di un numero qualsiasi di rappresentazioni aggiuntive create, ad esempio tramite passaggi di flusso di lavoro personalizzati o quando viene caricata una risorsa. Le rappresentazioni possono avere dimensioni diverse, una risoluzione diversa, una filigrana aggiunta o altre caratteristiche modificate.
+* **Rappresentazioni**: una rappresentazione è la rappresentazione binaria di una risorsa. [!DNL Assets] ha sempre una rappresentazione primaria: quella del file caricato. Possono disporre di un numero qualsiasi di rappresentazioni aggiuntive create, ad esempio, da passaggi di flusso di lavoro personalizzati o quando viene caricata una risorsa. Le rappresentazioni possono avere dimensioni diverse, una risoluzione diversa, una filigrana aggiunta o altre caratteristiche modificate.
 
 * **Versioni**: il controllo delle versioni crea un’istantanea delle risorse digitali in un momento specifico. Puoi ripristinare le risorse nelle versioni precedenti. Consulta [controllo delle versioni in [!DNL Assets]](manage-assets.md#asset-versioning).
 

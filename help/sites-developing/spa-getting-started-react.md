@@ -1,19 +1,15 @@
 ---
 title: Guida introduttiva dell’SPA nell’AEM - React
-seo-title: Getting Started with SPAs in AEM - React
 description: Questo articolo illustra un esempio di applicazione per l’SPA, spiega come viene creata e come iniziare a utilizzare il proprio SPA in modo rapido utilizzando il framework React.
-seo-description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
-uuid: 2beca277-a381-4482-99f6-85005d826d06
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1161'
 ht-degree: 5%
 
 ---
@@ -52,7 +48,7 @@ Questo documento illustra la struttura di un SPA semplificato creato utilizzando
 
 ## Dipendenze, configurazione e generazione {#dependencies-configuration-and-building}
 
-Oltre alla prevista dipendenza da React, l&#39;SPA campione può sfruttare librerie aggiuntive per rendere più efficiente la creazione dell&#39;SPA.
+Oltre alla prevista dipendenza da React, l&#39;SPA di esempio può utilizzare librerie aggiuntive per rendere più efficiente la creazione dell&#39;SPA.
 
 ### Dipendenze {#dependencies}
 
@@ -114,7 +110,7 @@ module.exports = {
 
 ### Creazione di {#building}
 
-Effettivamente la creazione dell’app sfrutta [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
+La creazione dell’app utilizza [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -134,7 +130,7 @@ Un componente immagine semplificato viene utilizzato come esempio, ma tutti i co
 
 ### index.js {#index-js}
 
-Il punto di ingresso nell&#39;SPA è naturalmente il `index.js` file qui mostrato semplificato per evidenziare i contenuti importanti.
+Il punto di ingresso nell&#39;SPA è il `index.js` file qui mostrato semplificato per evidenziare i contenuti importanti.
 
 ```
 import ReactDOM from 'react-dom';
@@ -151,7 +147,7 @@ ReactDOM.render(
 });
 ```
 
-La funzione principale di `index.js` è sfruttare `ReactDOM.render` per determinare la posizione nel DOM in cui inserire l’applicazione.
+La funzione principale di `index.js` è utilizzare il `ReactDOM.render` per determinare la posizione nel DOM in cui inserire l’applicazione.
 
 Si tratta di un utilizzo standard di questa funzione, non specifico di questa app di esempio.
 
@@ -273,7 +269,7 @@ Per ulteriori informazioni, consulta [Documento blueprint SPA](/help/sites-devel
 
 La condivisione delle informazioni è regolarmente necessaria per i componenti di un’applicazione a pagina singola. Esistono diversi modi consigliati per farlo, elencati di seguito in ordine crescente di complessità.
 
-* **Opzione 1:** Centralizzare la logica e trasmettere ai componenti necessari, ad esempio utilizzando React Context.
+* **Opzione 1:** Centralizza la logica e la trasmissione ai componenti necessari, ad esempio, utilizzando React Context.
 * **Opzione 2:** Condividere gli stati dei componenti utilizzando una libreria di stati come Redux.
 * **Opzione 3:** Sfrutta la gerarchia degli oggetti personalizzando ed estendendo il componente contenitore.
 
@@ -285,4 +281,4 @@ Per ulteriori informazioni su come organizzarsi per sviluppare l’SPA per l’A
 
 Per ulteriori dettagli sul modello dinamico di mappatura dei componenti e sul suo funzionamento all’interno dell’SPA nell’AEM, vedi l’articolo [Mappatura di un modello dinamico a un componente per SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Se desideri implementare l’SPA nell’AEM per un framework diverso da React o Angular o semplicemente approfondire il funzionamento dell’SDK SPA per l’AEM, consulta [Blueprint SPA](/help/sites-developing/spa-blueprint.md) articolo.
+Se desideri implementare l’SPA nell’AEM per un framework diverso da React o Angular o semplicemente approfondire il funzionamento dell’SDK dell’SPA per l’AEM, consulta [Blueprint SPA](/help/sites-developing/spa-blueprint.md) articolo.

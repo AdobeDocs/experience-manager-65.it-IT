@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1246'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ In questa sezione puoi definire l’URL del server di aggiornamento dei contenut
 
 **Versione PhoneGap** è la versione in cui desideri compilare l’applicazione con PhoneGap. Si consiglia di mantenere la versione corrente per essere certi di ottenere le funzioni e le correzioni di bug più recenti e avanzate.
 
-**URL server di aggiornamento contenuti** è l&#39;URL che verrà utilizzato dall&#39;applicazione per richiamare gli aggiornamenti di ContentSync. Deve essere impostato sull’URL di Dispatcher o, se non si utilizza un’istanza di Dispatcher, su una delle istanze di pubblicazione che verrà utilizzata per distribuire gli aggiornamenti ContentSync all’applicazione.
+**URL server di aggiornamento contenuti** è l&#39;URL che verrà utilizzato dall&#39;applicazione per richiamare gli aggiornamenti di ContentSync. Deve essere impostato sull’URL di Dispatcher o, se non si utilizza un’istanza di Dispatcher, su una delle istanze di pubblicazione utilizzate per distribuire gli aggiornamenti ContentSync all’applicazione.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -130,7 +130,7 @@ La proprietà URL del server di aggiornamento dei contenuti è l&#39;URL che dev
 
 ### Scheda Plug-in {#the-plugins-tab}
 
-Il **Plug-in** descrive i plug-in associati alla tua app. Queste informazioni verranno utilizzate per recuperare il plug-in appropriato durante una generazione.
+Il **Plug-in** descrive i plug-in associati alla tua app. Queste informazioni vengono utilizzate per recuperare il plug-in appropriato durante una generazione.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 

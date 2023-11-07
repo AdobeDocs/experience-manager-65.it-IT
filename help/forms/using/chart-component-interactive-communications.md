@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2612'
+source-wordcount: '2608'
 ht-degree: 2%
 
 ---
@@ -161,7 +161,7 @@ Configura le seguenti proprietà durante la creazione di grafici per i canali di
    <td><p>Oltre alle configurazioni comuni, sono disponibili le seguenti configurazioni specifiche per i grafici:</p>
     <ul>
      <li><strong>Mostra legenda: </strong>Se selezionata, mostra una legenda per il grafico a torta o ad anello.</li>
-     <li><strong>Posizione legenda: </strong>Specifica la posizione della legenda rispetto al grafico. Le opzioni disponibili sono Right, Left, Top e Bottom. Si consiglia di utilizzare la legenda a destra nel canale di stampa.</li>
+     <li><strong>Posizione legenda: </strong>Specifica la posizione della legenda rispetto al grafico. Le opzioni disponibili sono Right, Left, Top e Bottom. Utilizza la legenda a destra nel canale di stampa.</li>
      <li><strong>Raggio interno</strong>: disponibile per i grafici ad anello per specificare il raggio (in pixel) del cerchio interno del grafico.</li>
      <li><strong>Colore linea</strong>: disponibile per i grafici a linee, a linee, a punti e ad area per specificare il colore della linea nel grafico.</li>
      <li><strong>Colore punto</strong>: disponibile per i grafici Punto e Linea e Punto per specificare il colore dei punti nel grafico.<br /> </li>

@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5385'
 ht-degree: 87%
 
 ---
@@ -93,7 +93,7 @@ Per aggiungere un’attività:
 
    >[!NOTE]
    >
-   >Quando crei una nuova attività e disponi di una configurazione cloud di Adobe Target associata alla pagina o a una delle pagine principali, AEM assume automaticamente Adobe Target come motore.
+   >Quando crei un’attività e disponi di una configurazione cloud di Adobe Target associata alla pagina o a una delle pagine principali, l’AEM assume automaticamente Adobe Target come motore.
 
 1. Nel menu a comparsa del motore di **targeting**, seleziona il motore di targeting.
 
@@ -440,7 +440,7 @@ Puoi modificare le percentuali purché la loro somma raggiunga il 100%. Un pubbl
 
 ## Obiettivi e impostazioni: configurazione dell’attività e impostazione degli obiettivi {#goals-settings-configuring-the-activity-and-setting-goals}
 
-La fase Obiettivi e impostazioni del [processo di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) comporta la configurazione del comportamento dell’attività del marchio. Specifica quando inizia e termina l’attività, nonché la priorità dell’attività. Inoltre, tieni traccia degli obiettivi. In particolare, puoi decidere cosa misurare con le attività.
+La fase Obiettivi e impostazioni del [processo di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) comporta la configurazione del comportamento dell’attività del marchio. Specifica quando inizia e termina l’attività e la priorità dell’attività. Inoltre, tieni traccia degli obiettivi. In particolare, puoi decidere cosa misurare con le attività.
 
 Le metriche obiettivo sono disponibili solo se utilizzi Adobe Target per il motore di targeting. Devi definire almeno una metrica obiettivo. Se hai configurato Adobe Analytics e disponi di una configurazione cloud A4T Analytics, puoi scegliere se desideri che l’origine per la generazione di rapporti sia Adobe Target o Adobe Analytics.
 

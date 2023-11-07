@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 72%
+source-wordcount: '1553'
+ht-degree: 73%
 
 ---
 
@@ -128,7 +128,7 @@ La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata
 Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions):
 
 1. [Passa alla pagina](#finding-your-page) sulla quale desideri intervenire.
-1. Passa il puntatore del mouse sulla scheda che rappresenta la risorsa desiderata; verranno visualizzate le azioni rapide:
+1. Passa il puntatore del mouse sulla scheda che rappresenta la risorsa desiderata; vengono visualizzate le azioni rapide:
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
@@ -195,7 +195,7 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
 
       * Seleziona **Anteprima** dalla barra degli strumenti.
 
-   * Torna alla modalità di modifica (o seleziona un’altra modalità) utilizzando **Modifica** selettore a discesa.
+   * Torna alla modalità modifica (o seleziona un’altra modalità) utilizzando il selettore a discesa **Modifica**.
 
    >[!NOTE]
    >
@@ -215,7 +215,7 @@ Esistono due metodi (principali) di [modifica delle proprietà di una pagina](/h
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
-   1. Verranno visualizzate le proprietà di pagina. È possibile apportare le modifiche desiderate e poi selezionare Salva per applicarle
+   1. Vengono visualizzate le proprietà della pagina. È possibile apportare le modifiche desiderate e poi selezionare Salva per applicarle
 
 * Durante la [modifica della pagina](#editing-your-page-content):
 

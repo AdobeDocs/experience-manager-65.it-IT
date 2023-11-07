@@ -2,9 +2,9 @@
 title: Modifica di un SPA esterno in Adobe Experience Manager
 description: Questo documento descrive i passaggi consigliati per caricare un SPA autonomo in un’istanza Adobe Experience Manager, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2432'
 ht-degree: 1%
 
 ---
@@ -314,9 +314,9 @@ Ad esempio, supponiamo di avere un SPA in cui l’applicazione viene riprodotta 
 
 1. Nel corpo del componente Pagina dell’app AEM, segui questi due passaggi:
 
-   1. Crea un nuovo `body.html` per il componente Pagina.
+   1. Creare un `body.html` per il componente Pagina.
 
-   ![Creare un nuovo file body.html](assets/external-spa-update-body.gif)
+   ![Creare un file body.html](assets/external-spa-update-body.gif)
 
    1. Aggiungi il nuovo elemento principale nel nuovo `body.html` file.
 
@@ -336,9 +336,9 @@ Per abilitare la modifica all’interno dell’AEM per questo esempio di SPA, so
 
    * Per il nostro esempio, consideriamo `wknd-spa-react/us/en` come radice dell&#39;SPA. Ciò significa che tutto ciò che precede quel percorso sono solo pagine/contenuti AEM.
 
-1. Crea una nuova pagina al livello richiesto.
+1. Crea una pagina al livello richiesto.
 
-   * In questo esempio, la pagina da modificare è `mydomain.com/test`. `test` si trova nel percorso principale dell’app. Questo deve essere mantenuto anche durante la creazione della pagina in AEM. Pertanto, è possibile creare una nuova pagina al livello principale definito nel passaggio precedente.
+   * In questo esempio, la pagina da modificare è `mydomain.com/test`. `test` si trova nel percorso principale dell’app. Questo deve essere mantenuto anche durante la creazione della pagina in AEM. Pertanto, puoi creare una pagina al livello principale definito nel passaggio precedente.
    * La nuova pagina creata deve avere lo stesso nome della pagina da modificare. In questo esempio per `mydomain.com/test`, la nuova pagina creata deve essere `/path/to/aem/root/test`.
 
 1. Aggiungere helper all’interno del routing SPA.

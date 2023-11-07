@@ -4,9 +4,9 @@ description: Scopri come le varianti possono rendere ancora più flessibili i co
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2388'
 ht-degree: 61%
 
 ---
@@ -183,7 +183,7 @@ Se il modello per frammenti di contenuto contiene riferimenti frammento, gli aut
 Opzione **Modifica frammento di contenuto** apre il frammento in una nuova scheda della finestra.
 
 <!--
-The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
+The option **Edit Content Fragment** opens that fragment in a new editor tab (within the same browser tab).
 
 Selecting the original tab again (for example, **Little Pony Inc.**), will close this secondary tab (in this case, **Adam Smith**).
 
@@ -481,7 +481,7 @@ Il trasferimento delle modifiche *da una variante all’elemento **Principale***
 
 1. Seleziona una variante specifica, quindi seleziona l’azione di sincronizzazione appropriata da una delle seguenti aree:
 
-   * Selettore a discesa **Azioni**: **Sincronizza elemento corrente con elemento principale**
+   * Selettore a discesa **Azioni**: **sincronizza l’elemento corrente con l’elemento principale**
 
      ![sincronizzazione con elemento principale](assets/cfm-variations-11a.png)
 

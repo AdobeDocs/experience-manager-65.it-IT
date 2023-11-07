@@ -11,7 +11,7 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2845'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Per ulteriori informazioni sull’utilizzo dei componenti video con Experience M
 
 >[!NOTE]
 >
->Se le risorse Dynamic Media Classic non vengono visualizzate correttamente, assicurati che Dynamic Media sia [disabilitato](config-dynamic.md#disabling-dynamic-media) e quindi aggiorna la pagina.
+>Se le risorse Dynamic Media Classic non vengono visualizzate correttamente, assicurati che Dynamic Medie sia [disabilitato](config-dynamic.md#disabling-dynamic-media) e quindi aggiorna la pagina.
 
 ## Pubblicazione manuale in Dynamic Media Classic dalle risorse {#manually-publishing-to-scene-from-assets}
 
@@ -52,7 +52,8 @@ Puoi pubblicare le risorse digitali in Dynamic Media Classic nel modo seguente:
 
 >[!NOTE]
 >
->L’Experience Manager viene pubblicato in Dynamic Media Classic in modo asincrono. Dopo aver selezionato **[!UICONTROL Pubblica]**, la pubblicazione della risorsa in Dynamic Media Classic richiede diversi secondi.
+>Experience Manager pubblica in Dynamic Media Classic in modo asincrono. Dopo aver selezionato **[!UICONTROL Pubblica]**, la pubblicazione della risorsa in Dynamic Media Classic richiede diversi secondi.
+>
 
 ## Componenti Dynamic Media Classic {#scene-components}
 
@@ -111,7 +112,7 @@ Vedi anche [Progettazione reattiva per le pagine web](/help/sites-developing/res
 
 **Per aggiungere un’esperienza di visualizzazione interattiva a un sito reattivo:**
 
-1. Accedi a Experience Manager e assicurati di disporre dei seguenti [Cloud Services Adobe Dynamic Media Classic configurati](/help/sites-administering/scene7.md#configuring-scene-integration) e che i componenti Dynamic Media Classic siano disponibili.
+1. Accedi a Experience Manager e assicurati di disporre dei seguenti [Cloud Service Adobe Dynamic Media Classic configurati](/help/sites-administering/scene7.md#configuring-scene-integration) e che i componenti Dynamic Media Classic siano disponibili.
 
    >[!NOTE]
    >
@@ -267,11 +268,10 @@ Se disponi di più configurazioni, per impostazione predefinita in Experience Ma
 >* Quando [Anteprima protetta abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)Le risorse pubblicate e non pubblicate su Dynamic Media Classic vengono visualizzate nel browser del contenuto di Dynamic Media Classic.
 >* Se non vede **[!UICONTROL Dynamic Media Classic]** o **[!UICONTROL S7]** come opzione nel browser del contenuto, è necessario [configurare Dynamic Media Classic per l’utilizzo con Experience Manager](/help/sites-administering/scene7.md).
 >* Per i video, il browser dei contenuti di Dynamic Media Classic supporta:
-   >
-   >   * Set video adattivi: contenitore di tutte le rappresentazioni video necessarie per una riproduzione fluida su più schermi
-   >   * Video MP4 singolo
-   >   * Singolo video F4V
-
+>
+>   * Set video adattivi: contenitore di tutte le rappresentazioni video necessarie per una riproduzione fluida su più schermi
+>   * Video MP4 singolo
+>   * Singolo video F4V
 
 ### Sfogliare i contenuti nell’interfaccia touch {#browsing-content-in-the-touch-optimized-ui}
 
@@ -286,7 +286,6 @@ Sfogliare le risorse Dynamic Media Classic selezionando **[!UICONTROL Dynamic Me
 >* Il browser del contenuto di Dynamic Media Classic carica circa 100 risorse e le ordina per nome.
 >* Se hai impostato un server di anteprima protetto, il browser lo utilizza per eseguire il rendering di miniature e risorse.
 >
-
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -321,7 +320,7 @@ Per impostazione predefinita, in Experience Manager vengono cercate la cartella 
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-**[!UICONTROL Configurazione]** - Se sono definite più configurazioni Dynamic Media Classic [!UICONTROL Cloud Services], è possibile selezionarlo qui. Di conseguenza, la cartella cambia in base alla configurazione scelta.
+**[!UICONTROL Configurazione]** - Se sono definite più configurazioni Dynamic Media Classic [!UICONTROL Cloud Service], è possibile selezionarlo qui. Di conseguenza, la cartella cambia in base alla configurazione scelta.
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -336,7 +335,6 @@ Per impostazione predefinita, in Experience Manager vengono cercate la cartella 
 >* Durante la ricerca di un video, viene eseguita la ricerca in un&#39;unica rappresentazione. I risultati restituiscono la rappresentazione originale (solo &amp;ast;.mp4) e la rappresentazione codificata.
 >* Durante la ricerca in un set di video adattivi, la ricerca viene eseguita nella cartella e in tutte le sottocartelle, ma solo se alla ricerca è stata aggiunta una parola chiave. Se non è stata aggiunta alcuna parola chiave, la ricerca nelle sottocartelle non verrà eseguita in Experience Manager.
 >
-
 
 **[!UICONTROL Stato pubblicazione]** - Puoi filtrare le risorse in base allo stato di pubblicazione: **[!UICONTROL Non pubblicato]** o **[!UICONTROL Pubblicato]**. Se non si seleziona alcuna **[!UICONTROL Stato pubblicazione]**, Experience Manager per impostazione predefinita cerca tutti gli stati di pubblicazione.
 

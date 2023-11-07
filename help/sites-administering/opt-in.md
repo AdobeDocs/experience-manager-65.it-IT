@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1308'
 ht-degree: 10%
 
 ---
@@ -27,11 +27,11 @@ Sono disponibili le seguenti opzioni per la configurazione dell’integrazione:
 
 * Configura l’integrazione tramite l’attività.
 
-   Questa operazione può essere eseguita immediatamente o in un secondo momento, l’attività rimarrà nella casella in entrata fino a quando non verrà eseguita un’azione. In entrambi i casi la configurazione può essere eseguita direttamente nell’interfaccia utente o con l’utilizzo di un `.properties` file.
+  Questa operazione può essere eseguita immediatamente o in un secondo momento, l’attività rimarrà nella casella in entrata fino a quando non verrà eseguita un’azione. In entrambi i casi la configurazione può essere eseguita direttamente nell’interfaccia utente o con l’utilizzo di un `.properties` file.
 
 * Rinuncia all’integrazione.
 
-   Considera questa opzione se preferisci [configurare manualmente l’integrazione](/help/sites-administering/marketing-cloud.md). Vedi anche [Integrazione dell’AEM con Adobe Target e Adobe Analytics tramite DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+  Considera questa opzione se preferisci [configurare manualmente l’integrazione](/help/sites-administering/marketing-cloud.md). Vedi anche [Integrazione dell’AEM con Adobe Target e Adobe Analytics tramite DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * Configura la configurazione e il provisioning utilizzando uno script.
 
@@ -93,7 +93,7 @@ Non partecipare all’integrazione con Analytics e Target quando:
 * Non desideri effettuare l’integrazione con questi prodotti.
 * Preferisci configurare manualmente le integrazioni.
 
-   Per informazioni sulla configurazione manuale delle integrazioni, consulta [Integrazione con Adobe Analytics](/help/sites-administering/adobeanalytics.md) e [Integrazione con Adobe Target](/help/sites-administering/target.md).
+  Per informazioni sulla configurazione manuale delle integrazioni, consulta [Integrazione con Adobe Analytics](/help/sites-administering/adobeanalytics.md) e [Integrazione con Adobe Target](/help/sites-administering/target.md).
 
 Per rinunciare devi completare l&#39;attività precaricata:
 
@@ -185,13 +185,13 @@ I parametri inviati dipendono dai seguenti elementi:
    * `servicename`= `analytics|target`
    * `path`=percorso di una pagina AEM a cui allegare le configurazioni dei servizi cloud create
 
-   Ad esempio, una richiesta curl che crea configurazioni sia di Analytics che di Target e le allega alla pagina we.retail è:
+  Ad esempio, una richiesta curl che crea configurazioni sia di Analytics che di Target e le allega alla pagina we.retail è:
 
-   ```shell
-   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
-   ```
+  ```shell
+  curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
+  ```
 
-* Se non si desidera utilizzare il **marketingcloud.properties** file, devi inviare le credenziali e i parametri, ad esempio:
+* Se non si desidera utilizzare il **marketingcloud.properties** file, dovrai inviare le credenziali e i parametri, ad esempio:
 
    * automaticProvisioning= `true`
    * servicename= `analytics|target`
@@ -205,8 +205,8 @@ I parametri inviati dipendono dai seguenti elementi:
    * target.email= `me@adobe.com`
    * target.password= `password`
 
-   In questo caso, la richiesta curl che crea configurazioni sia di Analytics che di Target e le allega alla pagina we-retail è:
+  In questo caso, la richiesta curl che crea configurazioni sia di Analytics che di Target e le allega alla pagina we-retail è:
 
-   ```shell
-   curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
-   ```
+  ```shell
+  curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
+  ```

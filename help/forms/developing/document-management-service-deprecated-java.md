@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
-source-git-commit: 5910b0e64a579998bc9cd79cf4e95f5e6f459c5a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -45,11 +45,11 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->Gli avvii rapidi individuati nei moduli per la programmazione con AEM si basano sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi nella programmazione con i moduli AEM si basano sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Guida introduttiva (modalità SOAP): creare spazi di Content Services utilizzando l’API Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java seguente viene creato un nuovo spazio denominato *Directory di prova* si trova in Company Home. Il valore di identificazione del nuovo spazio viene scritto nella console.
+Nell&#39;esempio di codice Java seguente viene creato un nuovo spazio denominato *Directory di prova* nella Home della società. Il valore di identificazione del nuovo spazio viene scritto nella console.
 
 ```java
  /*
@@ -78,16 +78,16 @@ Nell&#39;esempio di codice Java seguente viene creato un nuovo spazio denominato
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -129,7 +129,7 @@ Nell&#39;esempio di codice Java seguente viene creato un nuovo spazio denominato
              String storeName ="SpacesStore";
              String nodeName = "/Company Home/Test Directory" ;
  
-             //Create a new space
+             //Create a space
              String spaceId = docManager.createSpace(storeName,nodeName);
              System.out.println("The identifier value of the new space is " +spaceId);
          }
@@ -174,16 +174,16 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene eliminato uno
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -274,16 +274,16 @@ Nell&#39;esempio di codice Java seguente viene aggiunto un file PDF denominato *
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -397,16 +397,16 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene recuperato un
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -503,16 +503,16 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene spostato un f
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -575,7 +575,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene spostato un f
 
 ## Quick Start (modalità SOAP): elenca i contenuti di Content Services utilizzando l’API Java (obsoleto) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java riportato di seguito viene elencato il contenuto che si trova in /Company Home. Vengono visualizzati il tipo di nodo e il nome del nodo.
+Nell&#39;esempio di codice Java riportato di seguito viene elencato il contenuto presente in /Company Home. Vengono visualizzati il tipo di nodo e il nome del nodo.
 
 ```java
  /*
@@ -604,16 +604,16 @@ Nell&#39;esempio di codice Java riportato di seguito viene elencato il contenuto
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -717,16 +717,16 @@ Il codice Java seguente cerca in /Company Home un documento contenente il testo 
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -780,10 +780,10 @@ Il codice Java seguente cerca in /Company Home un documento contenente il testo 
              ResultSet rs = docManager.searchRepository(storeName, path, true, qImpl, 200);
              long resultSize = rs.getResultSize();
  
-             //Determine if the document is located in Content space
+             //Determine if the document is in Content space
              if (resultSize > 0)
              {
-                 System.out.println("MortgageForm is located in the Repository");
+                 System.out.println("MortgageForm is in the Repository");
              }
          }
      catch(Exception e)
@@ -827,16 +827,16 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene impostata un&
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -880,7 +880,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene impostata un&
              String storeName ="SpacesStore";
              String nodeName = "/Company Home/Test Directory/";
  
-              //Create a new permission
+              //Create a permission
              ContentAccessPermission permission = new ContentAccessPermission();
              permission.setAuthority("tblue/DefaultDom");
              permission.setIsAllowed(false);
@@ -937,16 +937,16 @@ Il codice Java seguente crea un&#39;associazione, un file di dati XML e un modul
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a

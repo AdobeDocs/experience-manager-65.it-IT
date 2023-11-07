@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1712'
 ht-degree: 2%
@@ -156,7 +156,7 @@ Per installare i pacchetti visibili in `adobeaemcloud.com` in un&#39;istanza AEM
 * Seleziona la **Risorse** scheda
 * Seleziona **scarica su disco**
 
-Nell’istanza AEM locale, utilizza Gestione pacchetti (ad esempio [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), per caricare nell’archivio dei pacchetti AEM locale.
+Nell’istanza AEM locale, utilizza Gestione pacchetti (ad esempio, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), per caricare nell’archivio dei pacchetti AEM locale.
 
 In alternativa, è possibile accedere al pacchetto utilizzando Condivisione pacchetti dall’istanza AEM locale (ad esempio, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), il `Download` viene scaricato nell’archivio dei pacchetti dell’istanza AEM locale.
 

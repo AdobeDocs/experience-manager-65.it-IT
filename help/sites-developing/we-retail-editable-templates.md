@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 10%
 
 ---
@@ -45,7 +45,7 @@ Tutte le pagine di We.Retail sono basate su modelli modificabili, che consentono
 
 1. Nella finestra di dialogo per progettazione del contenitore di layout, puoi
 
-   * Seleziona un criterio esistente o creane uno nuovo per il contenitore
+   * Seleziona un criterio esistente o creane uno per il contenitore
    * Seleziona i componenti consentiti nel contenitore
    * Definisci i componenti predefiniti da inserire quando una risorsa viene trascinata nel contenitore
 
@@ -55,7 +55,7 @@ Tutte le pagine di We.Retail sono basate su modelli modificabili, che consentono
 
    Questo consente di:
 
-   * Seleziona un criterio esistente o creane uno nuovo per il contenitore
+   * Seleziona un criterio esistente o creane uno per il contenitore
    * Definisci le funzioni disponibili per l’autore della pagina quando utilizza questo componente, ad esempio
 
       * Incolla origini consentite

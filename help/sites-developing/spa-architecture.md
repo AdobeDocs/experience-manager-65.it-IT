@@ -1,24 +1,24 @@
 ---
-title: Sviluppo dell’SPA per Adobe Experience Manager
-description: Questo articolo presenta domande importanti da considerare quando si coinvolge uno sviluppatore front-end per sviluppare un SPA per Adobe Experience Manager (AEM) e fornisce una panoramica dell’architettura dell’AEM riguardo all’SPA da tenere presente quando si distribuisce un SPA sviluppato sull’AEM.
+title: Sviluppo di SPA per Adobe Experience Manager
+description: Questo articolo presenta domande importanti da considerare quando si coinvolge uno sviluppatore front-end per sviluppare un SPA per Adobe Experience Manager (AEM) e fornisce una panoramica dell’architettura dell’AEM riguardo all’SPA da tenere presente quando si utilizza un SPA sviluppato sull’AEM.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 4%
+source-wordcount: '2055'
+ht-degree: 6%
 
 ---
 
 # Sviluppo di SPA per AEM{#developing-spas-for-aem}
 
-Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti agli utenti di siti web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare facilmente i contenuti in Adobe Experience Manager (AEM) per un sito creato utilizzando tali framework.
+Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti agli utenti di siti web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando framework SPA e gli autori desiderano modificare facilmente i contenuti all’interno di Adobe Experience Manager (AEM) per un sito creato utilizzando tali framework.
 
-Questo articolo presenta questioni importanti da considerare quando si coinvolge uno sviluppatore front-end per sviluppare un SPA per l’AEM e fornisce una panoramica dell’architettura dell’AEM per quanto riguarda la diffusione dell’SPA sull’AEM.
+Questo articolo presenta questioni importanti da considerare quando si impegna uno sviluppatore front-end a sviluppare un SPA per l’AEM e fornisce una panoramica dell’architettura dell’AEM per quanto riguarda la diffusione dell’SPA sull’AEM.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Questo articolo presenta questioni importanti da considerare quando si coinvolge
 Lo sviluppo di applicazioni a pagina singola in AEM presuppone che lo sviluppatore front-end osservi le best practice standard durante la creazione di una SPA. Se, in qualità di sviluppatore front-end, segui queste best practice generali e alcuni principi specifici dell’AEM, il tuo SPA funzionerà con [AEM e le sue funzionalità di authoring dei contenuti](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
 * **[Portabilità](/help/sites-developing/spa-architecture.md#portability) -** Come per qualsiasi componente, i componenti devono essere costruiti in modo da essere il più possibile portatili. La SPA deve essere realizzata con componenti portabili e riutilizzabili.
-* **[Struttura del sito di guida AEM](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - Lo sviluppatore front-end crea i componenti e possiede la propria struttura interna, ma si affida all’AEM per definire la struttura del contenuto del sito.
+* **[AEM definisce la struttura del sito](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**: lo sviluppatore front-end crea componenti e possiede la loro struttura interna, ma si basa su AEM per definire la struttura dei contenuti del sito.
 * **[Rendering dinamico](/help/sites-developing/spa-architecture.md#dynamic-rendering)** - Tutto il rendering deve essere dinamico.
 * **[Routing dinamico](#dynamic-routing) -** L&#39;SPA è responsabile dell&#39;instradamento e l&#39;AEM ascolta e recupera in base ad esso. Anche altri routing devono essere dinamici.
 
@@ -63,7 +63,7 @@ Qualsiasi instradamento statico funziona rispetto al [principio di portabilità]
 
 ## Archetipo progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve utilizzare [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta i progetti SPA utilizzando React o Angular e utilizza l’SDK dell’SPA.
+Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Modelli di progettazione SPA {#spa-design-models}
 
@@ -89,7 +89,7 @@ In alcuni casi, tuttavia, ciò non è del tutto necessario. Nella tabella seguen
    <td><p>Gli autori dei contenuti sono limitati a un set limitato di esperienze di authoring dei contenuti AEM.</p> <p>Il codice rischia di non essere né portatile né riutilizzabile se contiene riferimenti statici o instradamento.</p> <p>Non consente l’utilizzo dell’editor di modelli, pertanto lo sviluppatore front-end deve mantenere i modelli modificabili tramite JCR.</p> </td>
   </tr>
   <tr>
-   <td>Il progetto sfrutta appieno l’SDK dell’editor dell’SPA e i componenti front-end vengono sviluppati come una libreria e la struttura del contenuto dell’app viene delegata all’AEM.</td>
+   <td>Il progetto utilizza appieno l’SDK dell’editor dell’SPA e i componenti front-end vengono sviluppati come una libreria e la struttura del contenuto dell’app viene delegata all’AEM.</td>
    <td><p>L’app è riutilizzabile e portatile.</p> <p>L’autore del contenuto può modificare l’app utilizzando l’esperienza di authoring dei contenuti AEM.<br /> </p> <p>L’SPA è compatibile con l’editor di modelli.</p> </td>
    <td><p>Lo sviluppatore non ha il controllo della struttura dell’app e della parte di contenuto delegata all’AEM.</p> <p>Lo sviluppatore può comunque riservare alcune aree dell’app per i contenuti che non devono essere creati con l’AEM.</p> </td>
   </tr>
@@ -190,7 +190,7 @@ L’architettura generale dell’AEM, compresi gli ambienti di sviluppo, authori
   In questo caso, l&#39;origine dell&#39;applicazione SPA e l&#39;origine dei componenti vengono sottoposte a Check-Out.
 
    * Il generatore clientlib NPM crea una libreria client dal progetto SPA.
-   * Tale libreria viene presa da Maven e implementata dal plug-in Maven Build insieme al componente in AEM Author.
+   * Tale libreria viene presa da Maven e implementata dal plug-in Maven Build insieme al componente nell’istanza di authoring dell’AEM.
 
 * **Autore AEM**
 
@@ -212,7 +212,7 @@ L’architettura generale dell’AEM, compresi gli ambienti di sviluppo, authori
 
   Dispatcher funge da livello di caching dell’AEM per i visitatori del sito.
 
-   * Le richieste vengono elaborate in modo simile a come nell’istanza di authoring di AEM, tuttavia non vi è alcuna richiesta di informazioni sulla pagina, perché questa è necessaria solo per l’editor.
+   * Le richieste vengono elaborate in modo simile a come nell’Autore AEM, tuttavia non vi è alcuna richiesta di informazioni della pagina, perché questo è necessario solo per l’editor.
    * JavaScript, CSS, JSON e HTML sono memorizzati nella cache, ottimizzando la pagina per una consegna rapida.
 
 >[!NOTE]
@@ -227,4 +227,4 @@ Per una guida dettagliata alla creazione di un proprio SPA, vedi [Guida introdut
 
 Per ulteriori dettagli sul modello dinamico di mappatura dei componenti e sul suo funzionamento all’interno dell’SPA nell’AEM, vedi l’articolo [Mappatura di un modello dinamico a un componente per SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Se desideri implementare l’SPA nell’AEM per un framework diverso da React o Angular o semplicemente approfondire il funzionamento dell’SDK SPA per l’AEM, consulta [Blueprint SPA](/help/sites-developing/spa-blueprint.md) articolo.
+Se desideri implementare l’SPA nell’AEM per un framework diverso da React o Angular o semplicemente approfondire il funzionamento dell’SDK dell’SPA per l’AEM, consulta [Blueprint SPA](/help/sites-developing/spa-blueprint.md) articolo.

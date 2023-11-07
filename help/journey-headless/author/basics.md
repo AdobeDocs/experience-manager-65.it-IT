@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 81%
+source-wordcount: '1688'
+ht-degree: 78%
 
 ---
 
@@ -41,7 +41,7 @@ Per ulteriori dettagli, consulta i concetti di authoring.
 
 ### Accesso {#signing-in}
 
-Come per la maggior parte dei sistemi è necessario effettuare l&#39;accesso. In qualità di autore, riceverai:
+Come per la maggior parte dei sistemi, è necessario effettuare l&#39;accesso. In qualità di autore, riceverai:
 
 * Nome utente (account)
 * Password
@@ -102,7 +102,7 @@ Per farlo, crea una serie di cartelle all’interno della sezione **File** della
 
 ![Opzione Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Viene visualizzata una finestra di dialogo in cui puoi inserire i dettagli, quindi confermare con **Crea**:
+Viene visualizzata una finestra di dialogo in cui puoi immettere i dettagli, quindi confermare con **Crea**:
 
 ![Finestra di dialogo Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -201,7 +201,7 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
   Questo è abbastanza ovvio in quanto è una scheda nell&#39;editor.
 
-  I frammenti di contenuto sono disponibili in AEM in diverse versioni. Originariamente erano disponibili per l’uso “tradizionale” durante l’authoring delle pagine....e sono ancora utilizzati in questo contesto. Questo può comportare l’associazione di risorse (ad esempio immagini) che, pur non essendo incorporate nel frammento, devono essere disponibili all’autore durante la creazione di una pagina.
+  I frammenti di contenuto sono disponibili in AEM in diverse versioni. Originariamente erano disponibili per l’uso “tradizionale” durante l’authoring delle pagine....e sono ancora utilizzati in questo contesto. Questo può comportare l’associazione di risorse (ad esempio immagini) che, pur non essendo incorporate nel frammento, devono essere disponibili per l’autore durante l’authoring di una pagina.
 
 * **Anteprima**
 

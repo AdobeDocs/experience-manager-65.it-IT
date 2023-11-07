@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2416'
-ht-degree: 18%
+ht-degree: 17%
 
 ---
 
@@ -113,7 +113,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 1. Fai clic su [!DNL Experience Manager] e quindi passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Dalla sezione **[!UICONTROL Cerca in Forms]** pagina, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]**, quindi fai clic su **[!UICONTROL Modifica]**.
 1. Nella pagina **[!UICONTROL Modifica modulo di ricerca]**, trascina **[!UICONTROL Predicato opzioni]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
-1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l’etichetta, ad esempio **[!UICONTROL Tipo file]**. Specifica la proprietà in base alla quale eseguire la ricerca nel campo apposito, ad esempio `jcr:content/metadata/dc:format.`
+1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l’etichetta, ad esempio: **[!UICONTROL Tipo di file]**. Specifica la proprietà in base alla quale eseguire la ricerca nel campo apposito, ad esempio, `jcr:content/metadata/dc:format.`
 1. Effettua una delle operazioni seguenti:
 
    * In **[!UICONTROL Nome proprietà]** , indica il percorso del file JSON in cui si definiscono i nodi per le opzioni e specifica le coppie chiave-valore corrispondenti.
@@ -135,7 +135,7 @@ Il predicato Proprietà con più valori consente di cercare le risorse per più 
 1. Fai clic su [!DNL Experience Manager] e quindi passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Nella pagina Forms di ricerca, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]**, il clic **[!UICONTROL Modifica]** ![icona modifica](assets/do-not-localize/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca, trascina il predicato **[!UICONTROL Proprietà con più valori]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
-1. In **[!UICONTROL Impostazioni]** , immettere un&#39;etichetta e un testo segnaposto per il predicato. Specifica il nome della proprietà in base alla quale eseguire la ricerca nel campo proprietà, ad esempio `jcr:content/metadata/dc:value`. È inoltre possibile utilizzare la finestra di dialogo di selezione per selezionare un nodo.
+1. In **[!UICONTROL Impostazioni]** , immettere un&#39;etichetta e un testo segnaposto per il predicato. Specifica il nome della proprietà in base alla quale eseguire la ricerca nel campo proprietà, ad esempio: `jcr:content/metadata/dc:value`. È inoltre possibile utilizzare la finestra di dialogo di selezione per selezionare un nodo.
 1. Assicurati di aver selezionato **[!UICONTROL Supporto delimitatore]**. Specifica i delimitatori per separare i singoli valori nel campo **[!UICONTROL Delimitatori di input]**. Per impostazione predefinita, la virgola è indicata come delimitatore. È possibile specificare un delimitatore diverso.
 1. In **Descrizione** , immettere una descrizione facoltativa e quindi fare clic su **[!UICONTROL Fine]**.
 1. Passa al pannello Filtri in [!DNL Assets] dell&#39;utente. Al pannello viene aggiunto il predicato **[!UICONTROL Proprietà con più valori]**.
@@ -148,7 +148,7 @@ Il predicato Tag consente di eseguire ricerche di risorse basate su tag. Per imp
 1. Fai clic su [!DNL Experience Manager] e quindi passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Dalla pagina Forms di ricerca, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]** e quindi fare clic su **[!UICONTROL Modifica]** ![icona modifica](assets/do-not-localize/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca trascinare **[!UICONTROL Predicato tag]** dalla scheda Seleziona predicato al riquadro principale.
-1. Nella scheda Impostazioni, immettere un testo segnaposto per il predicato. Specifica il nome della proprietà in base alla quale eseguire la ricerca nel campo proprietà, ad esempio *jcr:content/metadata/cq:tags*. In alternativa, potete selezionare un nodo in CRXDE dalla finestra di dialogo di selezione.
+1. Nella scheda Impostazioni, immettere un testo segnaposto per il predicato. Specifica il nome della proprietà in base alla quale eseguire la ricerca nel campo proprietà, ad esempio: *jcr:content/metadata/cq:tags*. In alternativa, potete selezionare un nodo in CRXDE dalla finestra di dialogo di selezione.
 1. Configurare la proprietà Percorso tag radice di questo predicato per popolare vari tag nell’elenco Tag.
 1. Seleziona **[!UICONTROL Mostra opzione di corrispondenza con tutti i tag]** per cercare le risorse che includono tutti i tag specificati.
 

@@ -2,10 +2,10 @@
 title: Guida introduttiva alla traduzione headless in AEM
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 89%
+source-wordcount: '1490'
+ht-degree: 87%
 
 ---
 
@@ -32,7 +32,7 @@ Questo documento ti aiuta a capire come iniziare a tradurre il contenuto headles
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
-Ci sono diversi requisiti prima di iniziare a tradurre il contenuto AEM headless.
+Ci sono diversi requisiti prima di iniziare a tradurre il contenuto dell’AEM headless.
 
 ### Conoscenza {#knowledge}
 
@@ -44,7 +44,7 @@ Ci sono diversi requisiti prima di iniziare a tradurre il contenuto AEM headless
 
 >[!TIP]
 >
->Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-authoring/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso, quindi torna a questa pagina una volta che l&#39;avrai letta.
+>Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-authoring/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso, quindi torna a questa pagina una volta completata.
 
 ### Strumenti {#tools}
 

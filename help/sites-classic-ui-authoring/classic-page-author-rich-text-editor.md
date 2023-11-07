@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1835'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Attualmente, la modalità di modifica locale è abilitata per gli elementi di pa
 
 >[!NOTE]
 >
->Il [!UICONTROL Titolo] Il componente è progettato per contenere un testo breve senza interruzioni di riga. Quando si modifica un titolo in modalità di modifica locale, l’immissione di un’interruzione di riga determina l’apertura di un nuovo **Testo** sotto il titolo.
+>Il [!UICONTROL Titolo] Il componente è progettato per contenere un testo breve senza interruzioni di riga. Quando si modifica un titolo in modalità di modifica locale, l’immissione di un’interruzione di riga apre una nuova pagina **Testo** sotto il titolo.
 
 ## Funzioni dell’editor Rich Text {#features-of-the-rich-text-editor}
 
@@ -218,7 +218,7 @@ Le immagini possono essere trascinate da Content Finder per aggiungerle al testo
 
 >[!NOTE]
 >
->L&#39;AEM offre anche componenti specializzati per una configurazione dell&#39;immagine più dettagliata. Ad esempio, **Immagine** e **Immagine testo** I componenti sono disponibili.
+>L&#39;AEM offre anche componenti specializzati per una configurazione dell&#39;immagine più dettagliata. Ad esempio, il **Immagine** e **Immagine testo** I componenti sono disponibili.
 
 ### Controllo ortografia {#spelling-checker}
 
@@ -232,7 +232,7 @@ Eventuali errori ortografici verranno evidenziati:
 
 >[!NOTE]
 >
->Il correttore ortografico funziona nella lingua del sito Web utilizzando la proprietà language della sottostruttura o estraendo la lingua dall&#39;URL. Ad esempio, `en` la filiale sarà verificata per la lingua inglese e per `de` filiale per il tedesco.
+>Il correttore ortografico funziona nella lingua del sito Web utilizzando la proprietà language della sottostruttura o estraendo la lingua dall&#39;URL. Ad esempio, il `en` la filiale sarà verificata per la lingua inglese e per `de` filiale per il tedesco.
 
 ### Tabelle {#tables}
 
@@ -353,7 +353,7 @@ Selezionare una singola cella per dividerla:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-La creazione di una tabella nidificata creerà una nuova tabella indipendente all&#39;interno della cella corrente.
+La creazione di una tabella nidificata crea una tabella indipendente all&#39;interno della cella corrente.
 
 >[!NOTE]
 >

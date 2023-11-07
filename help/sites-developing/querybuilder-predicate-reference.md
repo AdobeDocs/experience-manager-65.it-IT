@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2347'
 ht-degree: 3%
@@ -124,7 +124,7 @@ Filtro non supportato.
 
 * **lowerBound**
 
-  Limite inferiore della data per la verifica della proprietà, ad esempio `2014-10-01`.
+  Limite di data inferiore per la verifica della proprietà, ad esempio, `2014-10-01`.
 
 * **lowerOperation**
 
@@ -132,7 +132,7 @@ Filtro non supportato.
 
 * **upperBound**
 
-  Limite superiore per cui verificare la proprietà, ad esempio `2014-10-01T12:15:00`.
+  Limite superiore per la verifica della proprietà, ad esempio `2014-10-01T12:15:00`.
 
 * **upperOperation**
 
@@ -247,7 +247,7 @@ Supporta l&#39;estrazione dei facet. Fornisce bucket per ogni codice lingua univ
 
 * **lingua**
 
-  Codice della lingua ISO, ad esempio &quot; `de`&quot;
+  Codice della lingua ISO, ad esempio, &quot;`de`&quot;
 
 ### risorsa principale {#mainasset}
 
@@ -313,7 +313,7 @@ Consente di ordinare i risultati. Se è necessario ordinare per più proprietà,
 
 * **orderby**
 
-  Nome della proprietà JCR indicato da una @ iniziale, ad esempio `@jcr:lastModified` o `@jcr:content/jcr:title`, o un altro predicato nella query, ad esempio `2_property`, su cui eseguire l&#39;ordinamento.
+  Nome della proprietà JCR indicato da una @ iniziale, ad esempio `@jcr:lastModified` o `@jcr:content/jcr:title`, o un altro predicato nella query, ad esempio, `2_property`, su cui eseguire l&#39;ordinamento.
 
 * **ordina**
 
@@ -459,7 +459,7 @@ Il nome &quot;root&quot; non viene mai utilizzato in una query, è implicito.
 
 * **p.guessTotal**
 
-  Consigliato: evita di calcolare il totale completo dei risultati che può essere costoso; o un numero che indica il totale massimo da contare fino a (ad esempio 1000, un numero che fornisce agli utenti feedback sufficienti sulle dimensioni approssimative e sui numeri esatti per risultati più piccoli) o &quot; `true`&quot; per contare solo il minimo necessario `p.offset` + `p.limit`.
+  Consigliato: evita di calcolare il totale completo dei risultati, il che può essere costoso; o un numero che indica il totale massimo da contare (ad esempio, 1000, un numero che fornisce agli utenti un feedback sufficiente sulle dimensioni approssimative e sui numeri esatti per risultati più piccoli) o &quot; `true`&quot; per contare solo il minimo necessario `p.offset` + `p.limit`.
 
 * **p.estratto**
 
@@ -521,7 +521,7 @@ Supporta l&#39;estrazione dei facet. Fornisce bucket per ogni tag univoco, utili
 
 * **tag**
 
-  Percorso del titolo del tag da cercare, ad esempio &quot;Proprietà risorsa: orientamento / Orizzontale&quot;.
+  Percorso del titolo del tag da cercare, ad esempio &quot;Proprietà risorsa: orientamento/orizzontale&quot;.
 
 * **N_value**
 
@@ -541,7 +541,7 @@ Supporta l&#39;estrazione dei facet. Fornisce bucket per ogni tag univoco, utili
 
 * **tagid**
 
-  ID tag che consente di cercare, ad esempio &quot; `properties:orientation/landscape`&quot;.
+  Tag ID che consente di cercare, ad esempio, &quot; `properties:orientation/landscape`&quot;.
 
 * **N_value**
 

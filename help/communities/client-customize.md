@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ La sovrapposizione di un componente è un metodo che consente di apportare modif
 
 La sovrapposizione viene eseguita modificando una copia del componente predefinito in /**app** anziché modificare il componente originale in /**libs** directory. Il componente è costruito con un percorso relativo identico, ad eccezione di &#39;libs&#39; che viene sostituito con &#39;apps&#39;.
 
-La directory /apps è la prima posizione in cui viene eseguita la ricerca per risolvere le richieste e, se non viene trovata, viene utilizzata la versione predefinita che si trova nella directory/libs.
+La directory /apps è la prima posizione in cui viene eseguita la ricerca per risolvere le richieste e, se non viene trovata, viene utilizzata la versione predefinita nella directory/libs.
 
 Il componente predefinito nella directory /libs non deve mai essere modificato in quanto le patch e gli aggiornamenti futuri sono liberi di modificare la directory /libs in qualsiasi modo necessario mantenendo le interfacce pubbliche.
 

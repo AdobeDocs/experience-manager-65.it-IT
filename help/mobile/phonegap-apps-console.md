@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2688'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Le applicazioni mobili si basano su una blueprint che definisce la struttura e l
 * **Titolo:** Titolo dell’applicazione.
 * **Percorso di destinazione:** Posizione nell&#39;archivio in cui è memorizzata l&#39;applicazione. Lascia l’impostazione predefinita per creare un percorso basato sul nome dell’app.
 
-* **Nome:** Il valore predefinito è il valore della proprietà Title con spazi rimossi. Il nome viene utilizzato in CQ per fare riferimento all’applicazione, ad esempio per il nodo dell’archivio che rappresenta l’applicazione.
+* **Nome:** Il valore predefinito è il valore della proprietà Title con spazi rimossi. Il nome viene utilizzato in CQ per fare riferimento all’applicazione, ad esempio, per il nodo dell’archivio che rappresenta l’applicazione.
 * **Descrizione:** Descrizione dell&#39;applicazione.
 * **URL server:** L’URL che fornisce aggiornamenti di contenuto OTA (Over-the-Air) all’applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (derivata dal servizio esternalizzatore). Nota: questa deve essere un’istanza del server di pubblicazione anziché un’istanza Autore, che richiede l’autenticazione.
 
@@ -169,16 +169,16 @@ Eseguire la procedura seguente sull&#39;istanza in cui si desidera aggiornare la
 
 ### Utilizzo dei modelli di app {#using-app-templates}
 
-Questa funzione è disponibile con Apps 6.1 Feature Pack 2 e consente di sfruttare facilmente i modelli di app esistenti per creare nuove app per l’AEM.
+Questa funzione è disponibile con Apps 6.1 Feature Pack 2 e consente di utilizzare facilmente i modelli di app esistenti per creare nuove app per l’AEM.
 
 Che cos’è un modello di app? Consideralo come una raccolta di modelli di pagina e componenti che rappresentano una linea di base o le basi di un’app.
-Quando crei una nuova app basata sul modello di un’altra app, otterrai un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.
+Quando crei un’app basata sul modello di un’altra app, otterrai un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.
 
 Per utilizzare questa funzione è necessario disporre di un modello di app mobile esistente (o di un’app con un modello di app installato).
 
 L’ultimo pacchetto di esempi delle app AEM 6.1 include una versione aggiornata dell’app Geometrixx con un modello di app. In alternativa, è possibile installare StarterKit che fornisce anche un modello.
 
-Passaggi per creare una nuova app basata su un modello di app:
+Passaggi per creare un’app basata su un modello di app:
 
 1. Assicurati di aver installato il pacchetto di funzioni e i pacchetti di esempi di riferimento per le app AEM 6.1 più recenti
 1. Fai clic su App nella barra a sinistra.

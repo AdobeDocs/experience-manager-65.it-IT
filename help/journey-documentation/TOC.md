@@ -5,7 +5,7 @@ breadcrumb-title: Percorsi di documentazione AEM
 user-guide-description: I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l’unione di funzioni complesse e disparate per risolvere un obiettivo di business in modo da favorire le best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 48%
@@ -16,7 +16,7 @@ ht-degree: 48%
 # Percorsi di documentazione AEM {#documentation-journeys}
 
 <!--
-Please note that all links to other guides need to be absolute references with leading protocol and domain since SCCM does not allow pages to be referenced with relative links in multiple ToCs.
+All links to other guides need to be absolute references with leading protocol and domain since SCCM does not allow pages to be referenced with relative links in multiple ToCs.
 -->
 
 + Percorsi di documentazione AEM {#overview}

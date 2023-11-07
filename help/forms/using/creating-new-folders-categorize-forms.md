@@ -10,10 +10,10 @@ topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 0%
+source-wordcount: '392'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Puoi creare una cartella in AEM Forms in uno dei seguenti modi:
 
 * Carica un file ZIP contenente le risorse nella struttura di cartelle desiderata (vedi, [Recupero documenti XDP e PDF in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
-* Crea una nuova cartella vuota
+* Crea una cartella vuota
 
 1. Accedi all’interfaccia utente di AEM Forms all’indirizzo `https://<server>:<port>/aem/forms.html`.
 1. Passare alla posizione in cui si desidera creare una cartella.
@@ -44,7 +44,7 @@ Puoi creare una cartella in AEM Forms in uno dei seguenti modi:
    >
    >Per impostazione predefinita, il valore del campo nome viene compilato automaticamente dal titolo. Il nome può contenere solo caratteri alfanumerici o trattini (-) e trattini bassi (_) caratteri speciali. Tutti gli altri caratteri speciali immessi nel titolo vengono automaticamente sostituiti da un trattino e viene richiesto di confermare il nuovo nome. Puoi scegliere di continuare con il nome suggerito o modificarlo ulteriormente.
 
-1. Clic **[!UICONTROL Invia].**
+1. Fai clic su **[!UICONTROL Invia].**
 
    Nell’elenco delle risorse, nella posizione corrente viene visualizzata una nuova cartella con il titolo definito.
 
@@ -55,4 +55,4 @@ Puoi creare una cartella in AEM Forms in uno dei seguenti modi:
 1. Seleziona la cartella di cui desideri modificare il titolo.
 1. Fai clic sul pulsante Modifica ![aem6forms_edit](assets/aem6forms_edit.png) nella barra degli strumenti.
 1. Inserisci il nuovo titolo. Nel campo di testo viene inserito automaticamente il valore corrente del titolo della cartella. È possibile modificarlo in un nuovo valore.
-1. Clic **[!UICONTROL Invia].**
+1. Fai clic su **[!UICONTROL Invia].**

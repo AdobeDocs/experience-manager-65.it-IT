@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
 exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida introduttiva disponibile in Programmazione con moduli AEM si basa sul Documento se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida introduttiva alla programmazione con i moduli AEM si basa sul documento se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start (modalità SOAP): aggiunta di utenti utilizzando l’API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
@@ -72,7 +72,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -81,7 +81,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -190,7 +190,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene eliminato da AEM F
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -199,7 +199,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene eliminato da AEM F
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -286,7 +286,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene trovato un utente 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -295,7 +295,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene trovato un utente 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -410,7 +410,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito il ruolo Utente servizi 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -419,7 +419,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito il ruolo Utente servizi 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -554,7 +554,7 @@ L’esempio di codice Java seguente sincronizza gli utenti utilizzando le API Us
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -563,7 +563,7 @@ L’esempio di codice Java seguente sincronizza gli utenti utilizzando le API Us
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -662,7 +662,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -671,7 +671,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -780,7 +780,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene creato un gruppo d
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -789,7 +789,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene creato un gruppo d
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -866,7 +866,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene creato un gruppo d
          }
  
      /**
-         * Search for a group located in the specified domain
+         * Search for a group in the specified domain
          */
         private static String checkGroupExist(String groupName, String domainName, DirectoryManagerServiceClient directoryManager){
           try {
@@ -929,7 +929,7 @@ I seguenti modelli di codice Java gestiscono i nodi delle preferenze utilizzando
     * 17. xbean.jar (required for SOAP mode)
     * 18. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
@@ -939,7 +939,7 @@ I seguenti modelli di codice Java gestiscono i nodi delle preferenze utilizzando
  * If you want to invoke a remote AEM Forms instance and there is a
  * firewall between the client application and AEM Forms, then it is
  * recommended that you use the SOAP mode. When using the SOAP mode,
- * you have to include additional JAR files located in the following
+ * you have to include additional JAR files in the following
  * path
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
@@ -1016,7 +1016,7 @@ I seguenti modelli di codice Java gestiscono i nodi delle preferenze utilizzando
  * 1. adobe-livecycle-client.jar
  * 2. adobe-usermanager-client.jar
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
@@ -1026,7 +1026,7 @@ I seguenti modelli di codice Java gestiscono i nodi delle preferenze utilizzando
  * If you want to invoke a remote AEM Forms instance and there is a
  * firewall between the client application and AEM FOrms, then it is
  * recommended that you use the SOAP mode. When using the SOAP mode,
- * you have to include additional JAR files located in the following
+ * you have to include additional JAR files in the following
  * path
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *

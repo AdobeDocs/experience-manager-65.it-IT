@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ Per una spiegazione di SAML, vedere [Panoramica tecnica SAML (Security Assertion
 
    * È possibile configurare i moduli AEM per rilasciare un’asserzione SAML per un periodo di validità corrispondente al periodo di validità di un’asserzione di terze parti. Per rispettare il timeout dell’asserzione SAML di terze parti, aggiungi la seguente riga in Proprietà personalizzate:
 
-      `saml.sp.honour.idp.assertion.expiry=true`
+     `saml.sp.honour.idp.assertion.expiry=true`
 
    * Aggiungi la seguente proprietà personalizzata per l’utilizzo di RelayState per determinare l’URL a cui verrà reindirizzato l’utente dopo la corretta autenticazione.
 
-      `saml.sp.use.relaystate=true`
+     `saml.sp.use.relaystate=true`
 
-   * Aggiungi la seguente proprietà personalizzata per configurare l’URL per le JSP (Java Server Pages) personalizzate, che verranno utilizzate per il rendering dell’elenco registrato dei provider di identità. Se non hai distribuito un’applicazione web personalizzata, per eseguire il rendering dell’elenco verrà utilizzata la pagina Gestione utente predefinita.
+   * Aggiungi la seguente proprietà personalizzata per configurare l’URL per le JSP (Java Server Pages) personalizzate, utilizzate per il rendering dell’elenco registrato dei provider di identità. Se non hai distribuito un’applicazione web personalizzata, per eseguire il rendering dell’elenco verrà utilizzata la pagina Gestione utente predefinita.
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 

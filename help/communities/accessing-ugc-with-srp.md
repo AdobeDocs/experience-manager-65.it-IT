@@ -1,19 +1,15 @@
 ---
 title: Accesso a UGC con SRP
-seo-title: Accessing UGC with SRP
 description: Quando un sito è configurato per l’utilizzo di ASRP o MSRP, l’UGC effettivo non viene memorizzato nell’archivio dei nodi AEM (JCR)
-seo-description: When a site is configured to use ASRP or MSRP, the actual UGC is not be stored in AEM's node store (JCR)
-uuid: 30549f93-e370-4b8b-a35a-69e05884227e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 72d4022c-43ba-49e0-b94c-f2beabaef64d
 docset: aem65
 exl-id: 1157366f-2cc5-46e4-8ec6-e66fe5d0a0f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -67,7 +63,7 @@ Metodi da evitare:
 
 ### Utilizzare le raccolte di ricerca {#use-search-collections}
 
-Diversi SRP possono avere lingue di query native diverse. Si consiglia di utilizzare i metodi di [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) per eseguire il linguaggio di query appropriato.
+Diversi SRP possono avere lingue di query native diverse. Utilizzare i metodi di [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) per eseguire il linguaggio di query appropriato.
 
 Per ulteriori informazioni, consulta [Search Essentials](/help/communities/search-implementation.md).
 

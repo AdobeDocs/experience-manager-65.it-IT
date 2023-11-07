@@ -10,10 +10,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 75%
+source-wordcount: '521'
+ht-degree: 77%
 
 ---
 
@@ -76,7 +76,7 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
 
       * Seleziona **Modifica lancio**.
 
-   Verranno visualizzate le pagine sorgente.
+   Vengono mostrate le pagine sorgente.
 
 1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
 
@@ -98,7 +98,7 @@ In qualsiasi momento è possibile modificare le proprietà per un lancio:
 
       * Seleziona **Modifica proprietà**.
 
-   Verranno visualizzati i dettagli.
+   Vengono mostrati i dettagli.
 
 1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
 

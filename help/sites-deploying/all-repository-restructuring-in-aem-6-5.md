@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 2%
@@ -578,13 +578,13 @@ Cioè il `sling:resourceType` della configurazione ContextHub deve essere relati
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>Il riavvio del bundle OSGi di assegnazione tag Day Communique registrerà la nuova posizione come radice del tag solo se la posizione precedente è vuota.</p> <p>I riferimenti alla posizione precedente continueranno a funzionare dopo la migrazione alla nuova posizione per tutte le funzionalità che sfruttano l’API TagManager dell’AEM per la risoluzione dei tag.</p> <p>Qualsiasi codice personalizzato che fa riferimento esplicitamente al percorso <code>/etc/tags</code> deve essere aggiornato a <span class="code">/content/
+   <td><p>Il riavvio del bundle OSGi di assegnazione tag Day Communique registrerà la nuova posizione come radice del tag solo se la posizione precedente è vuota.</p> <p>I riferimenti alla posizione precedente continueranno a funzionare dopo la migrazione alla nuova posizione per tutte le funzionalità che utilizzano l’API TagManager dell’AEM per la risoluzione dei tag.</p> <p>Qualsiasi codice personalizzato che fa riferimento esplicitamente al percorso <code>/etc/tags</code> deve essere aggiornato a <span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>, o preferibilmente riscritto per sfruttare l’API Java di TagManager, insieme a questa migrazione.</p> </td>
+      </code></span>, o preferibilmente riscritto per utilizzare l’API Java TagManager, insieme a questa migrazione.</p> </td>
   </tr>
  </tbody>
 </table>

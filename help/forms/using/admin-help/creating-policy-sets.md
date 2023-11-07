@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Ora puoi aggiungere criteri al set di criteri. (vedere [Creazione e modifica di 
 1. Nella scheda Criteri cercare i criteri da aggiungere al set di criteri e creare nuovi criteri:
 
    * Per cercare un criterio, seleziona ID criterio o Nome criterio, digita il valore corrispondente, seleziona il numero di elementi da visualizzare e fai clic su Trova.
-   * Per informazioni dettagliate sulla creazione di un nuovo criterio, consulta [Creazione e modifica di criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * Per informazioni dettagliate sulla creazione di un criterio, consulta [Creazione e modifica di criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## Eliminare un set di criteri {#delete-a-policy-set}
 

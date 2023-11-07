@@ -1,17 +1,13 @@
 ---
 title: Descrizione oggetto JSON dell’area di lavoro di AEM Forms
-seo-title: AEM Forms workspace JSON object description
 description: Informazioni concettuali sugli oggetti JavaScript JSON utilizzati nell’area di lavoro di LiveCycle AEM Forms per la personalizzazione, l’estensione, la modifica e il riutilizzo.
-seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
-uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2113'
 ht-degree: 2%
 
 ---
@@ -274,7 +270,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>taskFormType<br /> </td>
    <td>T</td>
-   <td>Contiene il tipo di modulo attività. Utilizzando questo campo, l’attività viene riprodotta sul client come pdf per, modulo swf ecc.<br /> </td>
+   <td>Contiene il tipo di modulo attività. Utilizzando questo campo, l’attività viene riprodotta sul client come pdf per, modulo SWF e così via.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -634,7 +630,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
 
 1. Oggetto ACL attività
 
-   L’oggetto ACL dell’attività contiene informazioni su autorizzazioni come inoltro, condivisione, consultazione e così via. di un&#39;attività. Di seguito sono riportate le proprietà dell&#39;ACL dell&#39;attività.
+   L&#39;oggetto ACL dell&#39;attività contiene informazioni su autorizzazioni quali inoltro, condivisione, consultazione e così via di un&#39;attività. Di seguito sono riportate le proprietà dell&#39;ACL dell&#39;attività.
 
 <table>
  <tbody>

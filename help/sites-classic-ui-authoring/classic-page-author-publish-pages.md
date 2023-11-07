@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 6%
+source-wordcount: '1035'
+ht-degree: 9%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 
 >[!NOTE]
 >
->Se non disponi dei privilegi necessari per pubblicare una pagina specifica:
+>Se non disponi dei privilegi necessari per la pubblicazione di una pagina specifica:
 >
 >* Verrà attivato un flusso di lavoro per notificare alla persona appropriata la richiesta di pubblicazione.
 >* Verrà visualizzato un messaggio (per un breve periodo di tempo) per informarti di questo problema.
@@ -78,7 +78,7 @@ Esistono due metodi per attivare una pagina:
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. WCM per AEM attiva il contenuto selezionato. La pagina o le pagine pubblicate vengono visualizzate nel [Console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (contrassegnato in verde) con informazioni su chi ha attivato il contenuto, nonché su data e ora dell’attivazione.
+1. WCM per AEM attiva il contenuto selezionato. La pagina o le pagine pubblicate vengono visualizzate nel [Console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (contrassegnato in verde) con informazioni su chi ha attivato il contenuto e la data e l’ora di attivazione.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 

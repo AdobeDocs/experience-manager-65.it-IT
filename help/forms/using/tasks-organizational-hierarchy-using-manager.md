@@ -1,17 +1,13 @@
 ---
 title: Gestione delle attività in una gerarchia organizzativa tramite la visualizzazione Manager
-seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: Come i responsabili e i responsabili dell’organizzazione possono accedere e lavorare sulle attività dei loro rapporti diretti e indiretti nella scheda Da fare nell’area di lavoro di AEM Forms.
-seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
-uuid: c44c55e6-6cc1-417d-8e89-c8d5c32914c8
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -68,7 +64,7 @@ AEM Forms limita l’accesso degli utenti solo alle attività per le quali l’u
    }
    ```
 
-1. Creare un file component.xml. Verificare che l&#39;identificatore spec-id sia uguale a quello mostrato nello snippet di codice riportato di seguito. Di seguito è riportato un frammento di codice di esempio che puoi riutilizzare.
+1. Creare un file component.xml. Assicurarsi che spec-id corrisponda a quello mostrato nel frammento di codice seguente. Di seguito è riportato un frammento di codice di esempio che è possibile riutilizzare.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">

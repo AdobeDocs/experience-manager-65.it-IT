@@ -2,10 +2,10 @@
 title: Come pubblicare con la tua applicazione headless
 description: In questa sezione del Percorso per sviluppatori headless AEM, scopri come distribuire un’applicazione headless in tempo reale.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1873'
-ht-degree: 51%
+ht-degree: 50%
 
 ---
 
@@ -151,7 +151,7 @@ Dopo aver caricato gli aggiornamenti in Cloud Manager, implementali in AEM utili
 
 <!-- Can't find a parallel link -->
 <!--
-You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
 
 ## Monitoraggio delle prestazioni {#performance-monitoring}
@@ -167,7 +167,7 @@ Per garantire agli utenti la migliore esperienza possibile quando utilizzano l�
       * Verifica il numero di utenti, richieste e caricamento
 * Accedere ai rapporti sulle prestazioni specifici per app e spazio
    * Una volta che il server è attivo, controllare se le metriche generali sono verde/arancione/rosso, quindi identificare problemi specifici dell’app
-   * Aprire gli stessi rapporti sopra filtrati di app o spazio (ad esempio desktop Photoshop, paywall)
+   * Apri gli stessi rapporti sopra filtrati per app o spazio (ad esempio, desktop Photoshop, paywall)
    * Utilizzare le API del registro Splunk per accedere alle prestazioni del servizio e dell’applicazione
    * Contattare l’Assistenza clienti in caso di altri problemi.
 

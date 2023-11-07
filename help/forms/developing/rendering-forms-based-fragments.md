@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2199'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Il servizio Forms può eseguire il rendering di moduli basati su frammenti creati mediante Designer. A *frammento* è una parte riutilizzabile di un modulo e viene salvato come file XDP separato che può essere inserito in più progettazioni di moduli. Ad esempio, un frammento può includere un blocco di indirizzi o un testo legale.
 
-L’utilizzo di frammenti semplifica e velocizza la creazione e la manutenzione di un gran numero di moduli. Durante la creazione di un nuovo modulo, viene inserito un riferimento al frammento richiesto e il frammento viene visualizzato nel modulo. Il riferimento al frammento contiene un sottomodulo che punta al file XDP fisico. Per informazioni sulla creazione di strutture di moduli basate su frammenti, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it)
+L’utilizzo di frammenti semplifica e velocizza la creazione e la manutenzione di un gran numero di moduli. Durante la creazione di un modulo, viene inserito un riferimento al frammento richiesto e il frammento viene visualizzato nel modulo. Il riferimento al frammento contiene un sottomodulo che punta al file XDP fisico. Per informazioni sulla creazione di strutture di moduli basate su frammenti, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it)
 
 Un frammento può includere diverse sottomaschere racchiuse in un set di sottomaschere di scelta. I set di sottomaschere di scelta controllano la visualizzazione delle sottomaschere in base al flusso di dati provenienti da una connessione dati. È possibile utilizzare le istruzioni condizionali per determinare quale sottomaschera all&#39;interno della serie viene visualizzata nella maschera consegnata. Ad esempio, ogni sottomaschera di un set può includere informazioni relative a una particolare posizione geografica e la sottomaschera visualizzata può essere determinata in base alla posizione dell&#39;utente.
 
@@ -77,7 +77,7 @@ Prima di poter eseguire a livello di programmazione un&#39;operazione API client
 
 Per eseguire correttamente il rendering di un modulo basato su frammenti, è necessario assicurarsi che il servizio Forms sia in grado di individuare sia il modulo che i frammenti (i file XDP) a cui fa riferimento il progetto del modulo. Si supponga ad esempio che il modulo sia denominato PO.xdp e che utilizzi due frammenti denominati FooterUS.xdp e FooterCanada.xdp. In questa situazione, il servizio Forms deve essere in grado di individuare tutti e tre i file XDP.
 
-È possibile organizzare un modulo e i relativi frammenti posizionando il modulo in una posizione e i frammenti in un&#39;altra, oppure è possibile posizionare tutti i file XDP nella stessa posizione. Ai fini di questa sezione, supponiamo che tutti i file XDP si trovino nell’archivio AEM Forms. Per informazioni sul posizionamento dei file XDP nell’archivio AEM Forms, consulta [Scrittura delle risorse](/help/forms/developing/aem-forms-repository.md#writing-resources).
+È possibile organizzare un modulo e i relativi frammenti posizionando il modulo in una posizione e i frammenti in un&#39;altra, oppure è possibile posizionare tutti i file XDP nella stessa posizione. Ai fini di questa sezione, supponiamo che tutti i file XDP siano presenti nell’archivio AEM Forms. Per informazioni sul posizionamento dei file XDP nell’archivio AEM Forms, consulta [Scrittura delle risorse](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 Quando si esegue il rendering di un modulo basato su frammenti, è necessario fare riferimento solo al modulo stesso e non ai frammenti. Ad esempio, è necessario fare riferimento a PO.xdp e non a FooterUS.xdp o FooterCanada.xdp. Assicurati di posizionare i frammenti in una posizione in cui il servizio Forms possa individuarli.
 
@@ -122,7 +122,7 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l’API Forms
 
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
    * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passa un valore stringa che rappresenta la directory principale del web dell’applicazione.
-   * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo e i frammenti si trovino nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository://`.
+   * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo e i frammenti siano nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository://`.
    * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
 
 1. Rendering del modulo
@@ -174,7 +174,7 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l’API di Fo
 
    * Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
    * Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passa un valore stringa che rappresenta la directory principale del web dell’applicazione.
-   * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo si trovi nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository://`.
+   * Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo sia nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio, specifica `repository://`.
    * Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
 
 1. Rendering del modulo
@@ -183,7 +183,7 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l’API di Fo
 
    * Valore stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura di modulo che fa parte di un&#39;applicazione Forms, assicurarsi di specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * A `BLOB` oggetto contenente dati da unire con il modulo. Se non si desidera unire i dati, passare `null`.
-   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di runtime. L&#39;opzione PDF con tag non può essere impostata se il documento di input è un documento PDF. Se il file di input è un file XDP, è possibile impostare l&#39;opzione PDF con tag.
+   * A `PDFFormRenderSpec` oggetto che memorizza le opzioni di runtime. Impossibile impostare l&#39;opzione PDF con tag se il documento di input è un documento PDF. Se il file di input è un file XDP, è possibile impostare l&#39;opzione PDF con tag.
    * A `URLSpec` oggetto contenente i valori URI richiesti dal servizio Forms.
    * A `java.util.HashMap` oggetto che memorizza gli allegati. Questo è un parametro facoltativo e puoi specificare `null` se non si desidera allegare file al modulo.
    * Un campo vuoto `com.adobe.idp.services.holders.BLOBHolder` oggetto popolato dal metodo. Questo parametro viene utilizzato per memorizzare il modulo di cui è stato eseguito il rendering.

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ I file di dati XML utilizzati dall&#39;applicazione Web sono stati spostati dall
 
 Per creare un’applicazione basata sul web che esegua il rendering dei moduli basati su frammenti, effettua le seguenti operazioni:
 
-1. Crea un nuovo progetto web.
+1. Crea un progetto web.
 1. Creare la logica dell’applicazione Java che rappresenta il servlet Java.
 1. Crea la pagina web per l’applicazione web.
 1. Creare un pacchetto dell’applicazione web in un file WAR.
@@ -84,7 +84,7 @@ Per creare un’applicazione basata sul web che esegua il rendering dei moduli b
 
 ### Creazione di un progetto web {#creating-a-web-project}
 
-Il primo passaggio per creare un’applicazione web contenente un servlet Java che può richiamare il servizio Forms consiste nel creare un nuovo progetto web. L’IDE Java su cui si basa questo documento è Eclipse 3.3. Utilizzando l’IDE Eclipse, crea un progetto web e aggiungi al progetto i file JAR richiesti. Infine, aggiungi una pagina HTML denominata *index.html* e un servlet Java per il progetto.
+Il primo passaggio per creare un’applicazione web che contiene un servlet Java in grado di richiamare il servizio Forms consiste nella creazione di un progetto web. L’IDE Java su cui si basa questo documento è Eclipse 3.3. Utilizzando l’IDE Eclipse, crea un progetto web e aggiungi al progetto i file JAR richiesti. Infine, aggiungi una pagina HTML denominata *index.html* e un servlet Java per il progetto.
 
 L’elenco seguente specifica i file JAR da aggiungere al progetto web:
 
@@ -145,12 +145,12 @@ Normalmente, non inserisci il codice client all’interno di un servlet Java `do
 Per eseguire il rendering di un modulo basato su frammenti utilizzando l’API di servizio Forms, esegui le seguenti attività:
 
 1. Includi i file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java. Per informazioni sulla posizione di questi file, vedere [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. Recupera il valore del pulsante di opzione inviato dal modulo HTML e specifica se utilizzare i dati americani o canadesi. Se viene inviato American, crea un `com.adobe.idp.Document` che memorizza i dati presenti in *Ordine di acquisto US.xml*. Allo stesso modo, se canadese, crea un `com.adobe.idp.Document` che memorizza i dati presenti in *Ordine di acquisto Canada.xml* file.
+1. Recupera il valore del pulsante di opzione inviato dal modulo HTML e specifica se utilizzare i dati americani o canadesi. Se viene inviato American, crea un `com.adobe.idp.Document` che memorizza i dati in *Ordine di acquisto US.xml*. Allo stesso modo, se canadese, crea un `com.adobe.idp.Document` che memorizza i dati in *Ordine di acquisto Canada.xml* file.
 1. Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione. (vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Creare un `FormsServiceClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
 1. Creare un `URLSpec` oggetto che memorizza i valori URI utilizzando il relativo costruttore.
 1. Richiama `URLSpec` dell&#39;oggetto `setApplicationWebRoot` e passa un valore stringa che rappresenta la directory principale del web dell’applicazione.
-1. Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo e i frammenti si trovino nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio AEM Forms, specifica `repository://`.
+1. Richiama `URLSpec` dell&#39;oggetto `setContentRootURI` e passa un valore stringa che specifica il valore URI della directory principale del contenuto. Assicurati che la progettazione del modulo e i frammenti siano nell’URI della directory principale del contenuto. In caso contrario, il servizio Forms genera un&#39;eccezione. Per fare riferimento all’archivio AEM Forms, specifica `repository://`.
 1. Richiama `URLSpec` dell&#39;oggetto `setTargetURL` e passa un valore stringa che specifica il valore dell&#39;URL di destinazione in cui vengono pubblicati i dati del modulo. Se definisci l’URL di destinazione nella progettazione del modulo, puoi trasmettere una stringa vuota. È inoltre possibile specificare l&#39;URL a cui viene inviato un modulo per eseguire i calcoli.
 1. Richiama `FormsServiceClient` dell&#39;oggetto `renderPDFForm` e trasmettere i seguenti valori:
 
@@ -184,7 +184,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene rappresentato il s
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs
      *
      * For complete details about the location of these JAR files,

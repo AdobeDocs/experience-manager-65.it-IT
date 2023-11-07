@@ -7,7 +7,7 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2203'
 ht-degree: 14%
@@ -166,9 +166,8 @@ Puoi modificare i metadati di più raccolte contemporaneamente. Questa funzional
    >* In [!UICONTROL Proprietà] pagina, puoi rimuovere le raccolte dall’elenco annullando la selezione. Per impostazione predefinita, nell&#39;elenco delle raccolte sono selezionate tutte le raccolte. [!DNL Experience Manager] non aggiorna i metadati delle raccolte rimosse.
    >* Nella parte superiore dell&#39;elenco selezionare la casella di controllo accanto a **[!UICONTROL Titolo]** per passare dalla selezione delle raccolte alla cancellazione dell’elenco.
 
-
 1. Clic **[!UICONTROL Salva e chiudi]** dalla barra degli strumenti, quindi chiudi la finestra di dialogo di conferma.
-1. Per aggiungere i nuovi metadati a quelli esistenti, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Clic **[!UICONTROL Invia]**.
+1. Per aggiungere i nuovi metadati a quelli esistenti, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Fai clic su **[!UICONTROL Invia]**.
 
    >[!NOTE]
    >
@@ -278,4 +277,3 @@ Puoi eseguire un flusso di lavoro per le risorse all’interno di una raccolta. 
 >
 >* [Configurare le notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
 >* [Creare un&#39;attività di revisione per le raccolte](bulk-approval.md)
-

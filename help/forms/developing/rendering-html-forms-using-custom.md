@@ -1,20 +1,16 @@
 ---
 title: Rendering di HTML Forms tramite file CSS personalizzati
-seo-title: Rendering HTML Forms Using Custom CSS Files
 description: Utilizza il servizio Forms per fare riferimento a file CSS personalizzati per eseguire il rendering di moduli HTML in risposta a una richiesta HTTP da un browser web. Puoi eseguire il rendering di un modulo HTML che utilizza un file CSS utilizzando l’API Java e l’API del servizio web.
-seo-description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
-uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1687'
 ht-degree: 0%
 
 ---
@@ -25,7 +21,7 @@ ht-degree: 0%
 
 Il servizio Forms esegue il rendering dei moduli HTML in risposta a una richiesta HTTP da un browser web. Durante il rendering di un modulo HTML, il servizio Forms può fare riferimento a un file CSS personalizzato. Puoi creare un file CSS personalizzato per soddisfare i requisiti aziendali e fare riferimento a tale file CSS quando utilizzi il servizio Forms per il rendering dei moduli HTML.
 
-Il servizio Forms analizza automaticamente il file CSS personalizzato. In altre parole, il servizio Forms non segnala gli errori che possono verificarsi se il file CSS personalizzato non è conforme agli standard CSS. In questa situazione, il servizio Forms ignora lo stile e continua con gli stili rimanenti presenti nel file CSS.
+Il servizio Forms analizza automaticamente il file CSS personalizzato. In altre parole, il servizio Forms non segnala gli errori che possono verificarsi se il file CSS personalizzato non è conforme agli standard CSS. In questa situazione, il servizio Forms ignora lo stile e continua con gli stili rimanenti nel file CSS.
 
 L’elenco seguente specifica gli stili supportati in un file CSS personalizzato:
 
@@ -127,7 +123,7 @@ Esegui il rendering di un modulo HTML che utilizza un file CSS personalizzato ut
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` oggetto &quot;s `getOutputContent` metodo.
+   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
    * Ottieni il tipo di contenuto del `com.adobe.idp.Document` oggetto richiamando il relativo `getContentType` metodo.
    * Imposta il `javax.servlet.http.HttpServletResponse` tipo di contenuto dell&#39;oggetto richiamando il relativo `setContentType` e passando il tipo di contenuto del `com.adobe.idp.Document` oggetto.
    * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser web client richiamando `javax.servlet.h\ttp.HttpServletResponse` dell&#39;oggetto `getOutputStream` metodo.

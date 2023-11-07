@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1589'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,7 @@ Questo script di comandi:
       * Vengono estratti la struttura, il testo ed eventuali file multimediali.
       * Vengono generate le rappresentazioni di PDF e JPG.
       * Vengono generate le rappresentazioni HTML e IDML.
+
    * Pubblica di nuovo i file risultanti in [!DNL Experience Manager Assets].
 
    >[!NOTE]
@@ -52,7 +53,7 @@ Questo script di comandi:
 
    >[!CAUTION]
    >
-   >Se il [!DNL InDesign Server] non è installato o non è configurato, puoi comunque caricare un file INDD in [!DNL Experience Manager]. Tuttavia, le rappresentazioni generate saranno limitate a PNG e JPEG. Non sarà possibile generare rappresentazioni HTML, .idml o della pagina.
+   >Se il [!DNL InDesign Server] non è installato o non è configurato, puoi comunque caricare un file INDD in [!DNL Experience Manager]. Tuttavia, le rappresentazioni generate sono limitate a PNG e JPEG. Non sarà possibile generare rappresentazioni HTML, .idml o della pagina.
 
 1. Dopo la generazione dell’estrazione e della rappresentazione:
 
@@ -140,7 +141,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 
 * **Titolo pagina**: specifica il titolo da assegnare alla pagina risultante.
 
-* **Percorso principale pagina**: percorso della posizione principale della pagina risultante. Se questo campo viene lasciato vuoto, verrà utilizzato il nodo che contiene le rappresentazioni della risorsa.
+* **Percorso principale pagina**: percorso della posizione principale della pagina risultante. Se questo campo viene lasciato vuoto, viene utilizzato il nodo che contiene le rappresentazioni della risorsa.
 
 * **Modello pagina**: modello da utilizzare per generare la pagina risultante.
 
@@ -152,7 +153,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 >
 >Il lavoratore risiede nell&#39;istanza proxy.
 
-1. Nella console Strumenti, espandi **[!UICONTROL Configurazioni Cloud Services]** nel riquadro a sinistra. Quindi espandi **[!UICONTROL Configurazione proxy cloud]**.
+1. Nella console Strumenti, espandi **[!UICONTROL Configurazioni Cloud Service]** nel riquadro a sinistra. Quindi espandi **[!UICONTROL Configurazione proxy cloud]**.
 
 1. Per aprire la configurazione, fai doppio clic su **[!UICONTROL IDS worker]**.
 
@@ -238,4 +239,3 @@ Per [!DNL InDesign Server] versione 10.0 o successiva, effettuare le seguenti op
 >[!MORELIKETHIS]
 >
 >* [Informazioni su Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
-

@@ -1,18 +1,14 @@
 ---
 title: Progettazioni e Designer
-seo-title: Designs and the Designer
-description: Dovrai creare una progettazione per il tuo sito web e in AEM, puoi farlo utilizzando la finestra di progettazione
-seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
-uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
+description: Scopri come creare una progettazione per il tuo sito web e in AEM utilizzando la finestra di progettazione.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
-source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Questo articolo descrive come creare un sito web basato sull’interfaccia classica. L’Adobe consiglia di sfruttare le tecnologie AEM più recenti per i siti web, come descritto in dettaglio nell’articolo [Guida introduttiva allo sviluppo per AEM Sites](/help/sites-developing/getting-started.md).
+>Questo articolo descrive come creare un sito web basato sull’interfaccia classica. L’Adobe consiglia di utilizzare le tecnologie AEM più recenti per i siti web, come descritto in dettaglio nell’articolo [Guida introduttiva allo sviluppo per AEM Sites](/help/sites-developing/getting-started.md).
 
 La finestra di progettazione viene utilizzata per creare una progettazione per il sito Web utilizzando [Interfaccia classica](/help/release-notes/touch-ui-features-status.md) nell&#39;AEM.
 

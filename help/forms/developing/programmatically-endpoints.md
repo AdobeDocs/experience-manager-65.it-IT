@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10801'
+source-wordcount: '10790'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ Dopo aver impostato gli attributi dell&#39;endpoint EJB, è possibile creare un 
 
 **Abilita l’endpoint**
 
-Dopo aver creato un nuovo endpoint, è necessario abilitarlo. Dopo aver abilitato l’endpoint, puoi utilizzarlo per richiamare il servizio. Dopo aver abilitato l’endpoint, puoi visualizzarlo all’interno della console di amministrazione.
+Dopo aver creato un endpoint, devi abilitarlo. Dopo aver abilitato l’endpoint, puoi utilizzarlo per richiamare il servizio. Dopo aver abilitato l’endpoint, puoi visualizzarlo all’interno della console di amministrazione.
 
 **Consulta anche**
 
@@ -213,7 +213,7 @@ Dopo aver impostato gli attributi dell&#39;endpoint SOAP, è possibile creare un
 
 **Abilita l’endpoint**
 
-Dopo aver creato un nuovo endpoint, è necessario abilitarlo. Quando l’endpoint è abilitato, può essere utilizzato per richiamare il servizio. Dopo aver abilitato l’endpoint, puoi visualizzarlo nella console di amministrazione.
+Dopo aver creato un endpoint, devi abilitarlo. Quando l’endpoint è abilitato, può essere utilizzato per richiamare il servizio. Dopo aver abilitato l’endpoint, puoi visualizzarlo nella console di amministrazione.
 
 **Consulta anche**
 
@@ -319,7 +319,7 @@ Per creare un endpoint di cartella controllata per un servizio, specifica i segu
 
 **Specificare i valori di configurazione**
 
-È necessario specificare i valori di configurazione per un endpoint di cartella controllata quando si aggiunge a livello di programmazione un endpoint di cartella controllata a un servizio. Questi valori di configurazione vengono specificati da un amministratore se un endpoint di cartella controllata viene aggiunto utilizzando la console di amministrazione.
+Specifica i valori di configurazione per un endpoint di cartella controllata quando si aggiunge a livello di programmazione un endpoint di cartella controllata a un servizio. Questi valori di configurazione vengono specificati da un amministratore se un endpoint di cartella controllata viene aggiunto utilizzando la console di amministrazione.
 
 L&#39;elenco seguente specifica i valori di configurazione impostati quando si aggiunge a livello di programmazione un endpoint di cartella controllata a un servizio:
 
@@ -552,7 +552,7 @@ Per creare un endpoint e-mail per un servizio, specifica i seguenti valori:
 
 **Specificare i valori di configurazione**
 
-È necessario specificare i valori di configurazione per un endpoint e-mail quando si aggiunge programmaticamente un endpoint e-mail a un servizio. Questi valori di configurazione vengono specificati da un amministratore se viene aggiunto un endpoint e-mail utilizzando la console di amministrazione.
+Specifica i valori di configurazione per un endpoint e-mail quando si aggiunge programmaticamente un endpoint e-mail a un servizio. Questi valori di configurazione vengono specificati da un amministratore se viene aggiunto un endpoint e-mail utilizzando la console di amministrazione.
 
 >[!NOTE]
 >
@@ -811,7 +811,7 @@ Dopo aver impostato gli attributi dell&#39;endpoint remoto, è possibile creare 
 
 **Abilita l’endpoint**
 
-Dopo aver creato un nuovo endpoint, è necessario abilitarlo. Quando un endpoint remoto è abilitato, consente a un client Flex di richiamare il servizio.
+Dopo aver creato un endpoint, devi abilitarlo. Quando un endpoint remoto è abilitato, consente a un client Flex di richiamare il servizio.
 
 **Consulta anche**
 
@@ -899,7 +899,7 @@ Prima di poter aggiungere un endpoint TaskManager a livello di programmazione, �
 
 **Creare una categoria per l’endpoint**
 
-Le categorie vengono utilizzate per organizzare i servizi all’interno di Workspace. In altre parole, un utente di Workspace può richiamare un servizio che ha un endpoint TaskManager selezionando una categoria all’interno di Workspace. Durante la creazione di un endpoint TaskManager, è possibile fare riferimento a una categoria esistente o crearne una nuova a livello di programmazione.
+Le categorie vengono utilizzate per organizzare i servizi all’interno di Workspace. In altre parole, un utente di Workspace può richiamare un servizio che ha un endpoint TaskManager selezionando una categoria all’interno di Workspace. Quando si crea un endpoint TaskManager, è possibile fare riferimento a una categoria esistente o creare una categoria a livello di programmazione.
 
 >[!NOTE]
 >
@@ -922,7 +922,7 @@ Dopo aver impostato gli attributi di un endpoint TaskManager, è possibile crear
 
 **Abilita l’endpoint**
 
-Dopo aver creato un nuovo endpoint, è necessario abilitarlo. Quando l’endpoint è abilitato, può essere utilizzato per richiamare il servizio dall’interno di Workspace. Dopo aver abilitato l’endpoint, puoi visualizzarlo all’interno della console di amministrazione.
+Dopo aver creato un endpoint, devi abilitarlo. Quando l’endpoint è abilitato, può essere utilizzato per richiamare il servizio dall’interno di Workspace. Dopo aver abilitato l’endpoint, puoi visualizzarlo all’interno della console di amministrazione.
 
 **Consulta anche**
 
@@ -1034,7 +1034,7 @@ Quando modifichi un endpoint, specifica i nuovi valori di configurazione. Ad ese
 
 >[!NOTE]
 >
->Impossibile modificare il servizio richiamato dall&#39;endpoint. Se tenti di modificare il servizio, viene generata un’eccezione. Per modificare il servizio associato a un determinato endpoint, rimuovi l’endpoint e creane uno nuovo. (vedere [Rimozione degli endpoint](programmatically-endpoints.md#removing-endpoints).)
+>Impossibile modificare il servizio richiamato dall&#39;endpoint. Se tenti di modificare il servizio, viene generata un’eccezione. Per modificare il servizio associato a un determinato endpoint, rimuovi l’endpoint e creane uno. (vedere [Rimozione degli endpoint](programmatically-endpoints.md#removing-endpoints).)
 
 **Consulta anche**
 
@@ -1128,7 +1128,7 @@ Per recuperare un endpoint, recuperate un elenco di endpoint. È quindi possibil
 
 **Rimuovi l’endpoint**
 
-Dopo aver creato un nuovo endpoint, è necessario abilitarlo. Quando l’endpoint è abilitato, può essere utilizzato per richiamare il servizio. Dopo aver abilitato l’endpoint, puoi visualizzarlo all’interno della console di amministrazione.
+Dopo aver creato un endpoint, devi abilitarlo. Quando l’endpoint è abilitato, può essere utilizzato per richiamare il servizio. Dopo aver abilitato l’endpoint, puoi visualizzarlo all’interno della console di amministrazione.
 
 **Consulta anche**
 

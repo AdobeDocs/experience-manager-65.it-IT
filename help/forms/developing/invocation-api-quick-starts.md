@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1248'
 ht-degree: 3%
 
 ---
@@ -113,7 +113,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con moduli AEM si basano sul server Forms distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>I moduli di avvio rapido per la programmazione con AEM si basano sul server Forms distribuito sul server applicazioni JBoss e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Guida introduttiva: richiamare un processo di breve durata utilizzando l’API di chiamata {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
@@ -135,19 +135,19 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene richiamato un
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -291,7 +291,7 @@ Un documento di PDF non protetto basato su un file di PDF denominato *Loan.pdf* 
                     //Populate a byte array with BLOB data
                     byte[] outByteArray = outDoc.binaryData;
  
-                    //Create a new file named UsageRightsLoan.pdf
+                    //Create a file named UsageRightsLoan.pdf
                     FileStream fs2 = new FileStream(encryptedPDF, FileMode.OpenOrCreate);
  
                     //Create a BinaryWriter object
@@ -808,7 +808,7 @@ Un documento di PDF non protetto basato su un file di PDF denominato *Loan.pdf* 
              URL myURL = new URL(outDoc.getRemoteURL());
              InputStream inputStream = myURL.openStream();
  
-             //Create a new file containing the returned PDF document
+             //Create a file containing the returned PDF document
              File f = new File("C:\\Adobe\EncryptedDocument.pdf");
              OutputStream out = new FileOutputStream(f);
  
@@ -900,7 +900,7 @@ Un documento di PDF non protetto basato su un file di PDF denominato *Loan.pdf* 
                    //Populate the byte array
                    PopulateArray(mySteam, myData);
  
-                   //Create a new file named UsageRightsLoan.pdf
+                   //Create a file named UsageRightsLoan.pdf
                    FileStream fs2 = new FileStream("C:\\Adobe\EncryptedPDF.pdf", FileMode.OpenOrCreate);
  
                    //Create a BinaryWriter object
@@ -1002,7 +1002,7 @@ Un documento di PDF non protetto basato su un file di PDF denominato *loan.pdf* 
                     BLOB outDoc = encryptProcess.invoke(inDoc);
                     byte[] encryptDoc = outDoc.MTOM;
  
-                    //Create a new file containing the encrypted PDF document
+                    //Create a file containing the encrypted PDF document
                     string FILE_NAME = "C:\\Adobe\EncryptedDocument.pdf";
                     FileStream fs2 = new FileStream(FILE_NAME, FileMode.OpenOrCreate);
                     BinaryWriter w = new BinaryWriter(fs2);
@@ -1089,7 +1089,7 @@ Un documento di PDF non protetto basato su un file di PDF denominato *Loan.pdf* 
          //Save the encrypted file as a PDF file
          DataHandler handler = outDoc.getSwaRef();
  
-         //Create a new file containing the returned PDF document
+         //Create a file containing the returned PDF document
          File f = new File("C:\\Adobe\EncryptedDocument.pdf");
          InputStream inputStream = handler.getInputStream();
          OutputStream out = new FileOutputStream(f);

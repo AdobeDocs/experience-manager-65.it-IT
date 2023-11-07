@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1497'
 ht-degree: 6%
 
 ---
@@ -111,7 +111,7 @@ Per l’ID suite di rapporti (RSID) in uso, puoi controllare quali istanze del s
 >
 >Ad esempio, un framework è configurato per utilizzare il *diweretail* suite di rapporti e autore è l’istanza del server selezionata. Quando si pubblicano le pagine insieme al framework, vengono comunque effettuate chiamate ad Adobe Analytics, tuttavia queste chiamate non contengono l’RSID. Solo le chiamate dall&#39;istanza di authoring includono l&#39;RSID.
 
-1. Utilizzo di **Navigazione**, seleziona **Strumenti**, **Cloud Services**, quindi **Cloud Services legacy**.
+1. Utilizzo di **Navigazione**, seleziona **Strumenti**, **Cloud Service**, quindi **Cloud Service legacy**.
 1. Scorri fino a **Adobe Analytics** e seleziona **Mostra configurazioni**.
 1. Fai clic su **[+]** accanto alla configurazione di Adobe Analytics.
 
@@ -175,9 +175,9 @@ I discendenti della pagina ereditano l’associazione con il framework. Ad esemp
 
 1. Dalla sezione **Sites** , seleziona la pagina da impostare con il tracciamento.
 1. Apri **[Proprietà pagina](/help/sites-authoring/editing-page-properties.md)**, direttamente dalla console o dall’editor di pagine.
-1. Apri la scheda** Cloud Services **.
+1. Apri la scheda** Cloud Service **.
 
-1. Utilizza il **Aggiungi configurazione** menu a discesa per selezionare **Adobe Analytics** dalle opzioni disponibili. Se è presente l’ereditarietà, disattivala prima che il selettore diventi disponibile.
+1. Utilizza il **Aggiungi configurazione** a discesa per selezionare **Adobe Analytics** dalle opzioni disponibili. Se è presente l’ereditarietà, disattivala prima che il selettore diventi disponibile.
 
 1. Selettore a discesa per **Adobe Analytics** viene aggiunto alle opzioni disponibili. Seleziona la configurazione del framework richiesta.
 
@@ -206,7 +206,7 @@ Per configurare questo servizio OSGi, puoi utilizzare [Console web](/help/sites-
 
 ## Modifica delle configurazioni e/o dei framework di Adobe Analytics {#editing-adobe-analytics-configurations-and-or-frameworks}
 
-Come per la creazione di una configurazione o di un framework Adobe Analytics, passa a (legacy) **Cloud Services** schermo. Seleziona **Mostra configurazioni**, quindi fai clic sul collegamento alla configurazione specifica da aggiornare.
+Come per la creazione di una configurazione o di un framework Adobe Analytics, passa a (legacy) **Cloud Service** schermo. Seleziona **Mostra configurazioni**, quindi fai clic sul collegamento alla configurazione specifica da aggiornare.
 
 Durante la modifica di una configurazione di Adobe Analytics, premi **Modifica** nella pagina di configurazione stessa per aprire **Modifica componente** .
 

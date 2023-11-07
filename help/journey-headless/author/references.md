@@ -2,10 +2,10 @@
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Imparare a utilizzare i riferimenti in Frammenti di contenuto, per i contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 88%
+source-wordcount: '722'
+ht-degree: 86%
 
 ---
 
@@ -39,11 +39,11 @@ Alcuni riferimenti sono costituiti da tipi di dati dedicati (ad esempio, Riferim
 
 ## Riferimenti al contenuto {#content-references}
 
-I riferimenti ai contenuti fanno proprio questo: ti consentono di fare riferimento a qualsiasi altro contenuto. Verrà aperto un browser che consente di selezionare l’elemento di contenuto.
+I riferimenti ai contenuti fanno proprio questo: ti consentono di fare riferimento a qualsiasi altro contenuto. Viene aperto un browser che consente di selezionare l’elemento di contenuto.
 
 ## Riferimenti a risorse/file multimediali {#assets-media-references}
 
-È possibile fare riferimento alle risorse (ad esempio, immagini o file multimediali) all’interno di un blocco di testo utilizzando l’opzione **Inserisci risorsa**. Verrà aperto un browser che consente di selezionare la risorsa.
+È possibile fare riferimento alle risorse (ad esempio, immagini o file multimediali) all’interno di un blocco di testo utilizzando l’opzione **Inserisci risorsa**. Viene aperto un browser che consente di selezionare la risorsa.
 
 ![Frammenti di contenuto - Inserisci risorsa](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +58,7 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 * Persona
 * Premi
 
-Sembra abbastanza semplice, ma ovviamente un’Azienda ha sia un amministratore delegato che dei dipendenti....e queste sono tutte persone, ognuna definita come Persona.
+Sembra abbastanza semplice, ma un&#39;azienda ha sia un amministratore delegato che dei dipendenti....e queste sono tutte persone, ognuna definita come Persona.
 
 E una Persona può ricevere un Premio (o forse due).
 

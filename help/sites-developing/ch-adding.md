@@ -2,9 +2,9 @@
 title: Aggiunta di ContextHub alle pagine e accesso agli store
 description: Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Utilizza gli archivi ContextHub per rendere persistenti i dati contestuali. Cont
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Tutti i tipi di store sono estensioni del [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) classe. Per informazioni sulla creazione di un nuovo tipo di archivio, vedere [Creazione di store personalizzati](ch-extend.md#creating-custom-store-candidates). Per informazioni sui tipi di archivio di esempio, vedi [Candidati archivio ContextHub di esempio](ch-samplestores.md).
+Tutti i tipi di store sono estensioni del [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) classe. Per informazioni sulla creazione di un tipo di archivio, consulta [Creazione di store personalizzati](ch-extend.md#creating-custom-store-candidates). Per informazioni sui tipi di archivio di esempio, vedi [Candidati archivio ContextHub di esempio](ch-samplestores.md).
 
 ### Modalità di persistenza {#persistence-modes}
 
@@ -139,7 +139,7 @@ Le regole utilizzate per risolvere questi segmenti sono riepilogate come segue:
 
 >[!WARNING]
 >
->I segmenti installati vengono forniti come configurazioni di riferimento per aiutarti a creare una configurazione dedicata per il progetto e come tale non devono essere utilizzati direttamente.
+>I segmenti installati vengono forniti come configurazioni di riferimento per aiutarti a creare la tua configurazione dedicata per il progetto. Non utilizzarle direttamente.
 
 ## Debug di ContextHub {#debugging-contexthub}
 

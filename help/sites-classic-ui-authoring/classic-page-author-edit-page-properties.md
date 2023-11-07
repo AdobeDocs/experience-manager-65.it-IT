@@ -8,18 +8,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 29%
+source-wordcount: '760'
+ht-degree: 27%
 
 ---
 
 # Modifica delle proprietà di una pagina{#editing-page-properties}
 
-Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno rese disponibili a seconda delle necessità.
+Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni sulla Live Copy saranno disponibili nel modo appropriato.
 
-## Proprietà pagina   {#page-properties}
+## Proprietà pagina {#page-properties}
 
 Le proprietà sono distribuite su più schede:
 
@@ -53,7 +53,7 @@ Le proprietà sono distribuite su più schede:
 
 * **Titolo navigazione**
 
-  Puoi specificare un titolo separato da utilizzare nella navigazione (ad esempio, se desideri qualcosa di più conciso). Se vuoto, **Titolo** verrà utilizzato.
+  Puoi specificare un titolo separato da utilizzare nella navigazione (ad esempio, se desideri qualcosa di più conciso). Se vuoto, il **Titolo** è utilizzato.
 
 * **Sottotitolo**
 

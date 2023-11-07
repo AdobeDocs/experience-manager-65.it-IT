@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Durante la convalida di un documento DDX, è necessario impostare opzioni di run
 
 Dopo aver creato il client del servizio Assembler, aver fatto riferimento al documento DDX e aver impostato le opzioni di runtime, è possibile richiamare `invokeDDX` operazione per convalidare il documento DDX. Durante la convalida del documento DDX, è possibile trasmettere `null` come parametro map (questo parametro in genere memorizza i documenti PDF necessari all&#39;Assembler per eseguire le operazioni specificate nel documento DDX).
 
-Se la convalida non riesce, viene generata un&#39;eccezione e il file di registro contiene dettagli che spiegano perché il documento DDX non è valido. `OperationException` dell&#39;istanza. Dopo aver superato l&#39;analisi XML di base e il controllo dello schema, viene eseguita la convalida in base alla specifica DDX. Tutti gli errori che si trovano nel documento DDX vengono specificati nel registro.
+Se la convalida non riesce, viene generata un&#39;eccezione e il file di registro contiene dettagli che spiegano perché il documento DDX non è valido. `OperationException` dell&#39;istanza. Dopo aver superato l&#39;analisi XML di base e il controllo dello schema, viene eseguita la convalida in base alla specifica DDX. Tutti gli errori presenti nel documento DDX vengono specificati nel registro.
 
 **Salvare i risultati della convalida in un file di registro**
 

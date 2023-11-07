@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '707'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ L’AEM 6 può essere configurato per funzionare con lo storage MongoDB seguendo
    * `changesSize`: dimensione in MB della raccolta con limite utilizzata in Mongo per memorizzare in cache l’output di differenze. Il valore predefinito è 256.
    * `customBlobStore`: valore booleano che indica che viene utilizzato un archivio dati personalizzato. Il valore predefinito è false.
 
-1. Crea un file di configurazione con il PID dell’archivio dati che desideri utilizzare e modifica il file per impostare le opzioni di configurazione. Per maggiori informazioni, consulta [Configurazione degli archivi nodi e dei dati](/help/sites-deploying/data-store-config.md).
+1. Crea un file di configurazione con il PID dell’archivio dati che desideri utilizzare e modifica il file per impostare le opzioni di configurazione. Per ulteriori informazioni, consulta [Configurazione degli archivi nodi e dei dati](/help/sites-deploying/data-store-config.md).
 
 1. Avvia il file jar dell’AEM 6 con un back-end di archiviazione MongoDB eseguendo:
 
@@ -122,7 +122,6 @@ Red Hat® Linux® utilizza un algoritmo di gestione della memoria chiamato Trans
 >* Per ulteriori informazioni su Transparent Huge Pages su Red Hat® Linux®, consulta questa pagina [articolo](https://access.redhat.com/solutions/46111).
 * Per suggerimenti per l&#39;ottimizzazione di Linux®, vedere [articolo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
 >
-
 
 ## Gestione dell’archivio {#maintaining-the-repository}
 

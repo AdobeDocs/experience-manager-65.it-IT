@@ -4,10 +4,10 @@ description: Utilizza la funzione Struttura dell’Editor frammenti di contenuto
 feature: Content Fragments
 role: User
 exl-id: 1cf8d3a3-1d9a-42fc-9da0-a20c65f021e4
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '110'
+ht-degree: 88%
 
 ---
 

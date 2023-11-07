@@ -8,9 +8,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '738'
 ht-degree: 2%
 
 ---
@@ -79,7 +79,7 @@ Puoi toccare il **Configura** ![configura](assets/configure.png) per impostare l
    * **Messaggio modello:** Specificare il messaggio da visualizzare durante il caricamento del PDF della firma. I servizi Adobe Sign impiegano un po’ di tempo per preparare e caricare signature PDF.
    * **Servizio di firma:** Seleziona la **Firma a mano** opzione.
 
-   * **Classe CSS**: specifica la classe CSS della libreria client, se presente. Si consiglia di utilizzare [temi](../../forms/using/themes.md) e [stili in linea](../../forms/using/inline-style-adaptive-forms.md) anziché Classe CSS.
+   * **Classe CSS**: specifica la classe CSS della libreria client, se presente. Utilizzare [temi](../../forms/using/themes.md) e [stili in linea](../../forms/using/inline-style-adaptive-forms.md) anziché Classe CSS.
 
    Tocca Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche. La firma è stata configurata correttamente.
 

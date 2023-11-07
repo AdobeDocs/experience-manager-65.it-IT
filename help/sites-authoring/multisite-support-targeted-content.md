@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2869'
-ht-degree: 95%
+source-wordcount: '2855'
+ht-degree: 90%
 
 ---
 
@@ -34,7 +34,7 @@ Questo documento descrive quanto segue:
 
 Per impostare la modalità di condivisione dei contenuti personalizzati da parte dei siti, è necessario effettuare le seguenti operazioni:
 
-1. [Crea una nuova area](#creating-new-areas) o [crea una nuova area come Live Copy](#creating-new-areas). Un’area include tutte le attività disponibili per un’*area* della pagina, ovvero la posizione sulla pagina di destinazione del componente. La creazione di una nuova area crea un’area vuota, mentre la creazione di una nuova area come Live Copy consente di ereditare il contenuto tra le strutture del sito.
+1. [Creare un’area](#creating-new-areas) o [creare un’area come live copy](#creating-new-areas). Un’area include tutte le attività disponibili per un’*area* della pagina, ovvero la posizione sulla pagina di destinazione del componente. La creazione di un’area crea un’area vuota, mentre la creazione di un’area come Live Copy consente di ereditare il contenuto tra le strutture del sito.
 
 1. [Collega il sito o la pagina](#linking-sites-to-an-area) a un’area.
 
@@ -130,11 +130,11 @@ In qualsiasi momento, puoi sospendere l’ereditarietà o scollegarla completame
 >
 >Per informazioni tecniche su questa funzione, consulta [Struttura della gestione di più siti per contenuti mirati](/help/sites-authoring/technical-multisite-targeted.md).
 
-### Creazione di una nuova area e creazione di una nuova area come Live Copy a confronto {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
+### Creazione di un&#39;area anziché creazione di un&#39;area come Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-In AEM, puoi creare una nuova area o creare una nuova area come Live Copy. La creazione di una nuova area raggruppa le attività e tutto ciò che appartiene a tali attività, ad esempio offerte, esperienze e così via. Puoi creare una nuova area se desideri creare un set completamente distinto di contenuti mirati o se desideri condividere un set di contenuti mirati.
+In AEM, puoi creare un’area o crearne una come Live Copy. La creazione di un’area raggruppa le attività e tutto ciò che appartiene a tali attività, ad esempio offerte, esperienze e così via. Puoi creare un’area se desideri creare un set completamente distinto di contenuti di destinazione o se desideri condividere un set di contenuti di destinazione.
 
-Se, tuttavia, l’ereditarietà è impostata tramite MSM tra i due siti, allora potresti voler ereditare le attività. In questo caso, crei una nuova area come Live Copy, dove Y è una Live Copy di X e quindi eredita anche tutte le attività.
+Se, tuttavia, l’ereditarietà è impostata tramite MSM tra i due siti, allora potresti voler ereditare le attività. In questo caso, crei un’area come Live Copy, dove Y è una Live Copy di X e quindi eredita anche tutte le attività.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Le aree possono estendersi su attività e offerte. Dopo aver creato un’area in
 >
 >L’area predefinita denominata Area mastro viene ridotta per impostazione predefinita quando tocchi o fai clic sul nome di un marchio **fino** a creare un’altra area. Quindi, quando selezioni un marchio nella console **Attività** o **Offerte**, viene visualizzata la console **Area**.
 
-Per creare una nuova area:
+Per creare un&#39;area:
 
 1. Passa a **Personalizzazione** > **Attività** o **Offerte** per poi, infine, arrivare al tuo marchio.
 1. Tocca o fai clic su **Crea area**.

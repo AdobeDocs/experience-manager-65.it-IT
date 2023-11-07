@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '410'
 ht-degree: 7%
 
 ---
@@ -35,7 +35,7 @@ Il contenuto del sito web si trova in una struttura ad albero. Per creare o modi
 
 ### Creazione di una nuova pagina {#creating-a-new-page}
 
-Prima di apportare modifiche, è necessario [crea una nuova pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
+Prima di apportare modifiche, è necessario [creare una pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
 ### Apertura di una pagina {#opening-a-page}
 
@@ -43,7 +43,7 @@ Per molte azioni, come la modifica, è necessario: [aprire una pagina](/help/sit
 
 ### Modifica di una pagina {#editing-a-page}
 
-Se la tua istanza dispone già di pagine esistenti o hai appena creato una nuova pagina, puoi [modificare una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) da:
+Puoi specificare se la tua istanza contiene già pagine esistenti o se hai creato personalmente una nuova pagina [modificare una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) da:
 
 * [Inserimento di un componente (paragrafo)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [Modifica di un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)

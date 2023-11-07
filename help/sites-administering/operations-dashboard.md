@@ -12,7 +12,7 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6057'
 ht-degree: 2%
@@ -429,7 +429,7 @@ Esempi:
 * Se prevedi di acquisire tutti i **ERRORE** messaggi: non è richiesta alcuna configurazione. Tutti i messaggi ERROR vengono acquisiti per impostazione predefinita.
 * Se prevedi di acquisire tutti i **ERRORE**, **AVVERTI** e **INFO** messages - il nome del logger deve essere impostato su: &quot;**radice**&quot;, e il livello logger per: **INFO**.
 
-* Se prevedi di acquisire tutti i messaggi provenienti da un determinato pacchetto (ad esempio com.adobe.granite), il nome del logger deve essere impostato su: &quot;com.adobe.granite&quot;. E, il livello logger è impostato su: **DEBUG** (in questo modo acquisisce tutte le **ERRORE**, **AVVERTI**, **INFO**, e **DEBUG** ), come illustrato nell&#39;immagine seguente.
+* Se prevedi di acquisire tutti i messaggi provenienti da un determinato pacchetto (ad esempio, com.adobe.granite), il nome del logger deve essere impostato su: &quot;com.adobe.granite&quot;. E, il livello logger è impostato su: **DEBUG** (in questo modo acquisisce tutte le **ERRORE**, **AVVERTI**, **INFO**, e **DEBUG** ), come illustrato nell&#39;immagine seguente.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 

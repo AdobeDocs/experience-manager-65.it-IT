@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2065'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ DB2 dispone di funzionalità incorporate per eseguire il backup di un database i
 
 Utilizza i backup delle copie istantanee o configura il database Oracle per l’esecuzione in modalità registro archivio. (vedere [Oracle di backup: introduzione](https://www.databasedesign-resource.com/oracle-backup.md).) Per ulteriori informazioni sul backup e il ripristino del database Oracle, visitare i seguenti siti:
 
-[Oracle di backup e ripristino:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Vengono illustrati i concetti di backup e ripristino e le tecniche più comuni per l&#39;utilizzo di Recovery Manager (RMAN) per il backup, il ripristino e il reporting, oltre a fornire ulteriori informazioni su come pianificare una strategia di backup e ripristino.
+[Oracle di backup e ripristino:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Vengono illustrati i concetti di backup e ripristino e le tecniche più comuni per l&#39;utilizzo di Recovery Manager (RMAN) per il backup, il ripristino e il reporting in modo più dettagliato. Vengono inoltre fornite ulteriori informazioni su come pianificare una strategia di backup e ripristino.
 
 [Oracle di Guida dell&#39;utente per il backup e il ripristino del database:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Fornisce informazioni approfondite sull&#39;architettura RMAN, sui concetti e i meccanismi di backup e ripristino, sulle tecniche di ripristino avanzate, quali il ripristino point-in-time e le funzioni di flashback del database, nonché sul tuning delle prestazioni di backup e ripristino. Vengono inoltre trattati i processi di backup e ripristino gestiti dall&#39;utente, utilizzando le funzionalità del sistema operativo host anziché RMAN. Questo volume è essenziale per il backup e il ripristino di implementazioni di database più sofisticate e per scenari di ripristino avanzati.
 
@@ -153,7 +153,7 @@ La directory principale di archiviazione dei contenuti viene creata quando è in
 
 La posizione predefinita per la directory principale di archiviazione dei contenuti è `[aem-forms root]/lccs_data`.
 
-Eseguire il backup delle seguenti directory che si trovano nella directory principale di archiviazione dei contenuti:
+Eseguire il backup delle seguenti directory nella directory principale di archiviazione dei contenuti:
 
 /audit.contentstore
 
@@ -163,7 +163,7 @@ Eseguire il backup delle seguenti directory che si trovano nella directory princ
 
 /backup-lucene-indexes
 
-Se la directory /backup-lucene-indexes non è presente, eseguire il backup della directory /lucene-indexes, anch&#39;essa situata nella directory radice dell&#39;archiviazione dei contenuti. Se la directory /backup-lucene-indexes è presente, non eseguire il backup della directory /lucene-indexes in quanto potrebbe causare errori.
+Se la directory /backup-lucene-indexes non è presente, eseguire il backup della directory /lucene-indexes, anche nella directory radice di archiviazione dei contenuti. Se la directory /backup-lucene-indexes è presente, non eseguire il backup della directory /lucene-indexes in quanto potrebbe causare errori.
 
 ### Percorso directory principale di archiviazione dei contenuti (ambiente in cluster) {#content-storage-root-location-clustered-environment}
 
@@ -173,7 +173,7 @@ Quando si installa Content Services (obsoleto) in un ambiente cluster, la direct
 
 **Directory principale indice:** Directory creata in ogni nodo del cluster, con lo stesso percorso e lo stesso nome di directory
 
-La posizione predefinita per la directory principale di archiviazione dei contenuti è `[GDS root]/lccs_data`, dove `[GDS root]` è la posizione descritta in [Posizione GDS](files-back-recover.md#gds-location). Eseguire il backup delle seguenti directory che si trovano nella directory principale di archiviazione dei contenuti:
+La posizione predefinita per la directory principale di archiviazione dei contenuti è `[GDS root]/lccs_data`, dove `[GDS root]` è la posizione descritta in [Posizione GDS](files-back-recover.md#gds-location). Eseguire il backup delle seguenti directory nella directory principale di archiviazione dei contenuti:
 
 /audit.contentstore
 
@@ -183,7 +183,7 @@ La posizione predefinita per la directory principale di archiviazione dei conten
 
 /backup-lucene-indexes
 
-Se la directory /backup-lucene-indexes non è presente, eseguire il backup della directory /lucene-indexes, anch&#39;essa situata nella directory radice dell&#39;archiviazione dei contenuti. Se la directory /backup-lucene-indexes è presente, non eseguire il backup della directory /lucene-indexes in quanto potrebbe causare errori.
+Se la directory /backup-lucene-indexes non è presente, eseguire il backup della directory /lucene-indexes, anche nella directory radice di archiviazione dei contenuti. Se la directory /backup-lucene-indexes è presente, non eseguire il backup della directory /lucene-indexes in quanto potrebbe causare errori.
 
 La posizione predefinita per la directory radice indice è `[aem-forms root]/lucene-indexes` su ciascun nodo.
 

@@ -3,9 +3,9 @@ title: Configura l’Editor Rich Text per creare contenuti in Adobe Experience M
 description: Scopri come configurare l’Editor Rich Text di Adobe Experience Manager per l’authoring dei contenuti in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2923'
+source-wordcount: '2921'
 ht-degree: 1%
 
 ---
@@ -182,7 +182,7 @@ Per configurazioni dettagliate dei plug-in dell’editor Rich Text, consulta [co
 >
 >Il [Componente testo Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in RTE in un’interfaccia grafica come criteri per i contenuti, eliminando la necessità di configurazioni tecniche. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento.
 >
->Per ulteriori informazioni, vedere [Impostazioni dell’interfaccia utente dell’Editor Rich Text e criteri per contenuto](/help/sites-administering/rich-text-editor.md) del presente documento e [Creazione di modelli di pagina](/help/sites-authoring/templates.md) e [Documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+>Per ulteriori informazioni, vedere [Impostazioni dell’interfaccia utente dell’Editor Rich Text e criteri per contenuto](/help/sites-administering/rich-text-editor.md) sezione del presente documento e [Creazione di modelli di pagina](/help/sites-authoring/templates.md) e [Documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >

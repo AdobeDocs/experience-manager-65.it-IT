@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -216,7 +216,7 @@ Il backup online utilizza il seguente algoritmo:
 
 1. Quando si crea un file zip, il primo passaggio consiste nel creare o individuare la directory di destinazione.
 
-   * Se si esegue il backup in un file zip, viene creata una directory temporanea. Il nome della directory inizia con `backup.` e termina con `.temp`; ad esempio `backup.f4d3.temp`.
+   * Se si esegue il backup in un file zip, viene creata una directory temporanea. Il nome della directory inizia con `backup.` e termina con `.temp`ad esempio, `backup.f4d3.temp`.
    * Se si esegue il backup in una directory, viene utilizzato il nome specificato nel percorso di destinazione. È possibile utilizzare una directory esistente, altrimenti verrà creata una nuova directory.
 
      Un file vuoto denominato `backupInProgress.txt` viene creato nella directory di destinazione all&#39;avvio del backup. Questo file viene eliminato al termine del backup.

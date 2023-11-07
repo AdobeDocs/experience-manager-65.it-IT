@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2793'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ A seconda del tipo di frammento, vengono utilizzati anche i modelli o i modelli:
    * I modelli per frammenti di contenuto definiscono la struttura di un frammento di contenuto al momento della creazione.
    * Un frammento fa riferimento al modello, pertanto le modifiche apportate al modello possono influire o influenzeranno eventuali frammenti dipendenti.
    * I modelli sono costituiti da tipi di dati.
-   * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
+   * Le funzioni per aggiungere nuove varianti e così via devono aggiornare di conseguenza il frammento.
 
   >[!CAUTION]
   >
@@ -62,8 +62,8 @@ A seconda del tipo di frammento, vengono utilizzati anche i modelli o i modelli:
    * Utilizzato per definire frammenti di contenuto semplici.
    * I modelli definiscono la struttura (di base, di solo testo) di un frammento di contenuto al momento della creazione.
    * Il modello viene copiato nel frammento quando viene creato; pertanto, eventuali modifiche al modello non verranno applicate ai frammenti esistenti.
-   * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
-   * [Modelli per frammenti di contenuto](/help/sites-developing/content-fragment-templates.md) operare in modo diverso rispetto ad altri meccanismi di modelli all’interno dell’ecosistema AEM (ad esempio, modelli di pagina, ecc.). Pertanto, essi devono essere considerati separatamente.
+   * Le funzioni per aggiungere nuove varianti e così via devono aggiornare di conseguenza il frammento.
+   * [Modelli per frammenti di contenuto](/help/sites-developing/content-fragment-templates.md) operare in modo diverso rispetto ad altri meccanismi di creazione di modelli all’interno dell’ecosistema AEM (ad esempio, modelli di pagina e così via). Pertanto, essi devono essere considerati separatamente.
    * Se basato su un modello, il tipo MIME del contenuto viene gestito in base al contenuto effettivo; ciò significa che ogni elemento e variante può avere un tipo MIME diverso.
 
 ### Integrazione con Assets {#integration-with-assets}
@@ -138,7 +138,7 @@ Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’elimi
 * Inoltre, è possibile selezionare un intervallo di paragrafi per limitare l’output; ad esempio, può essere utilizzato per l’output a più colonne.
 * Il componente consente [contenuto intermedio](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-   * Qui il componente consente di inserire altre risorse (immagini, ecc.) tra i paragrafi del frammento a cui si fa riferimento.
+   * In questo caso il componente consente di inserire altre risorse (immagini e così via) tra i paragrafi del frammento di riferimento.
    * Per i contenuti intermedi è necessario:
 
       * tieni presente la possibilità di riferimenti instabili; il contenuto intermedio (aggiunto durante l’authoring di una pagina) non ha una relazione fissa con il paragrafo a cui è posizionato, inserendo un nuovo paragrafo (nell’editor frammento di contenuto) prima che la posizione del contenuto intermedio possa perdere la posizione relativa
@@ -182,7 +182,7 @@ Sono ancora presenti alcune linee guida da seguire per garantire che il componen
 
 * Se è supportato l’output di più elementi (utilizzando `elementNames` per specificare più elementi), la modalità di visualizzazione effettiva è definita da una proprietà `displayMode`:
 
-   * Se il valore è `singleText` (e c’è un solo elemento configurato), quindi l’elemento viene riprodotto come testo con contenuto intermedio, supporto del layout, ecc. Questa è l’impostazione predefinita per i frammenti in cui viene eseguito il rendering di un solo elemento.
+   * Se il valore è `singleText` (e c’è un solo elemento configurato), quindi l’elemento viene riprodotto come testo con contenuto intermedio, supporto del layout e così via. Questa è l’impostazione predefinita per i frammenti in cui viene eseguito il rendering di un solo elemento.
    * In caso contrario, viene utilizzato un approccio molto più semplice (che potrebbe essere denominato &quot;visualizzazione modulo&quot;), in cui non è supportato alcun contenuto intermedio e il contenuto del frammento viene renderizzato &quot;così com’è&quot;.
 
 * Se il frammento è sottoposto a rendering per `displayMode` == `singleText` (implicitamente o esplicitamente) entrano in gioco le seguenti proprietà aggiuntive:
@@ -254,7 +254,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
 * **Modello frammento** ([ModelloFrammento](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-  Utilizzare `FragmentTemplate.createFragment()` per creare un nuovo frammento.
+  Utilizzare `FragmentTemplate.createFragment()` per creare un frammento.
 
   ```
   Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -492,9 +492,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### Esempio: creazione di un nuovo frammento di contenuto {#example-creating-a-new-content-fragment}
+### Esempio: creazione di un frammento di contenuto {#example-creating-a-new-content-fragment}
 
-Per creare un nuovo frammento di contenuto a livello di programmazione, è necessario utilizzare:
+Per creare un frammento di contenuto a livello di programmazione, è necessario utilizzare:
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 

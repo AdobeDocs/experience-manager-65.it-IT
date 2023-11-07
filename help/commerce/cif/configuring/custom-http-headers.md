@@ -2,9 +2,9 @@
 title: Intestazioni HTTP personalizzate
 description: Scopri come configurare le intestazioni HTTP personalizzate in Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '273'
 ht-degree: 5%
 
 ---
@@ -26,11 +26,11 @@ Per configurare le intestazioni HTTP personalizzate, devi prima definirle. Le in
 
 Puoi configurare i valori delle intestazioni HTTP nella pagina Configurazione Cloud Service per il progetto:
 
-1. Vai alla pagina di configurazione del Cloud Service in Strumenti -> Cloud Services -> Configurazione CIF
-1. Apri una configurazione esistente o creane una nuova
+1. Vai alla pagina di configurazione del Cloud Service in Strumenti > Cloud Services > Configurazione CIF.
+1. Apri una configurazione esistente o creane una.
 1. Vai alla scheda &quot;Avanzate&quot; e trova il multicampo &quot;Intestazioni HTTP personalizzate&quot;. Puoi selezionare le intestazioni definite in precedenza e assegnarvi dei valori.
 
-I componenti che utilizzano la configurazione del servizio cloud precedente invieranno queste intestazioni HTTP a ogni richiesta di GraphQL.
+I componenti che utilizzano la configurazione del servizio cloud precedente inviano queste intestazioni HTTP a ogni richiesta di GraphQL.
 
 ## Restrizioni {#restrictions}
 

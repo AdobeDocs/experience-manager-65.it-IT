@@ -1,19 +1,15 @@
 ---
 title: Pagine di destinazione
-seo-title: Landing Pages
 description: La funzione delle pagine di destinazione consente di importare in modo rapido e semplice una progettazione e un contenuto direttamente in una pagina AEM. Uno sviluppatore web può preparare il HTML e le risorse aggiuntive che possono essere importate come pagina intera o solo come parte di una pagina.
-seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
-uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3329'
+source-wordcount: '3323'
 ht-degree: 2%
 
 ---
@@ -351,13 +347,13 @@ L’Adobe consiglia di utilizzare l’importazione progettazione in un’istanza
 
 ### Creazione di una pagina di importazione {#creating-an-importer-page}
 
-Prima di poter importare la progettazione di una pagina di destinazione, è necessario creare una pagina di importazione, ad esempio in una campagna. Il modello Pagina importazione consente di importare la pagina di destinazione completa di HTML. La pagina contiene una casella di rilascio in cui è possibile importare il pacchetto di progettazione della pagina di destinazione tramite trascinamento.
+Prima di poter importare la progettazione di una pagina di destinazione, è necessario creare una pagina di importazione, ad esempio, in una campagna. Il modello Pagina importazione consente di importare la pagina di destinazione completa di HTML. La pagina contiene una casella di rilascio in cui è possibile importare il pacchetto di progettazione della pagina di destinazione tramite trascinamento.
 
 >[!NOTE]
 >
 >Per impostazione predefinita, una pagina di importazione può essere creata solo in campagne, ma puoi anche sovrapporre questo modello per creare una pagina di destinazione in `/content/mysite`.
 
-Per creare una nuova pagina di destinazione:
+Per creare una pagina di destinazione:
 
 1. Vai a **Siti Web** console.
 1. Seleziona la campagna nel riquadro a sinistra.
@@ -417,7 +413,7 @@ Quando importate il pacchetto di progettazione, **Cancella progettazione** e **S
 
 ### Download del pacchetto di progettazione importato {#downloading-the-imported-design-package}
 
-Il download del file zip ti consente di registrare quale file ZIP è stato importato con una particolare pagina di destinazione. Tieni presente che le modifiche apportate in una pagina non vengono aggiunte al file zip.
+Il download del file zip ti consente di registrare quale file ZIP è stato importato con una particolare pagina di destinazione. Le modifiche apportate su una pagina non vengono aggiunte al file zip.
 
 Per scaricare il pacchetto di progettazione importato, fare clic su **Scarica ZIP** sulla barra degli strumenti della pagina di destinazione.
 
@@ -439,7 +435,7 @@ Durante la cancellazione della pagina di destinazione, puoi rimuovere le modific
 
 >[!NOTE]
 >
->Se decidi di rimuovere le modifiche al contenuto, tutte le modifiche apportate nella pagina di destinazione importata e tutte le proprietà di pagina andranno perse quando fai clic su **Cancella**.
+>Se decidi di rimuovere le modifiche al contenuto, tutte le modifiche apportate nella pagina di destinazione importata e tutte le proprietà della pagina andranno perse quando fai clic su **Cancella**.
 
 ### Modifica e aggiunta di componenti a una pagina di destinazione {#modifying-and-adding-components-on-a-landing-page}
 

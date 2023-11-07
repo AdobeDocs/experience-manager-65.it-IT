@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5182'
 ht-degree: 0%
@@ -741,7 +741,7 @@ Il `preprocessing` La definizione può essere applicata:
 
   Se necessario, è possibile fornire una definizione distinta per ciascuna aggregazione.
 
-  Per specificare una pre-elaborazione esplicita per i valori aggregati, le definizioni di pre-elaborazione devono trovarsi su un `aggregated` nodo figlio ( `apply/aggregated`, `applyAfter/aggregated`). Se è richiesta una preelaborazione esplicita per aggregati distinti, la definizione di preelaborazione si trova su un nodo figlio con il nome del rispettivo aggregato (ad esempio `apply/aggregated/min/max` o altri aggregati).
+  Per specificare una pre-elaborazione esplicita per i valori aggregati, le definizioni di pre-elaborazione devono trovarsi su un `aggregated` nodo figlio ( `apply/aggregated`, `applyAfter/aggregated`). Se è richiesta una pre-elaborazione esplicita per aggregati distinti, la definizione della pre-elaborazione si trova su un nodo figlio con il nome del rispettivo aggregato (ad esempio, `apply/aggregated/min/max` o altri aggregati).
 
 È possibile specificare una delle seguenti opzioni da utilizzare durante la pre-elaborazione:
 
@@ -1336,7 +1336,7 @@ Per illustrare questi passaggi, l’esempio seguente definisce un rapporto che e
    ```xml
    N:osgireport [cq:Template]
        P:allowedPaths [String[]] = "/etc/reports(/.*)?"
-       P:jcr:description [String] = "Use this report generator to create a new OSGi report."
+       P:jcr:description [String] = "Use this report generator to create an OSGi report."
        P:jcr:title [String] = "OSGi Report Template"
        P:ranking [Long] = 100
        P:shortTitle [String] = "OSGi Report"

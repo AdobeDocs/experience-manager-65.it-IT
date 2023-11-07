@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '953'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 # Operazioni Granite: amministrazione di utenti e gruppi{#granite-operations-user-and-group-administration}
 
-Poiché Granite incorpora l’implementazione dell’archivio CRX della specifica API JCR, ha una propria amministrazione di utenti e gruppi.
+Poiché Granite incorpora l’implementazione dell’archivio CRX della specifica API JCR, dispone di un’amministrazione autonoma di utenti e gruppi.
 
 Questi conti sono alla base della [Conti AEM](/help/sites-administering/security.md) e le eventuali modifiche apportate all’account con l’amministrazione Granite verranno applicate se/quando gli account sono accessibili da [Console Utenti AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (ad esempio, `http://localhost:4502/useradmin`). Dalla console Utenti AEM puoi anche gestire i privilegi e altre specifiche AEM.
 
@@ -29,7 +29,7 @@ Le console di amministrazione di utenti e gruppi Granite sono entrambe disponibi
 
 ![Console Strumenti](assets/chlimage_1-72a.png)
 
-Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console appropriata. In entrambi è possibile intervenire utilizzando la casella di selezione e quindi le azioni dalla barra degli strumenti, oppure aprendo i dettagli dell’account tramite il collegamento in **Nome**.
+Scelta di **Utenti** o **Gruppi** dalla console Strumenti apre la console appropriata. In entrambi è possibile intervenire utilizzando la casella di selezione e quindi le azioni dalla barra degli strumenti, oppure aprendo i dettagli dell’account tramite il collegamento in **Nome**.
 
 * [Amministrazione utente](#user-administration)
 
@@ -59,7 +59,7 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console app
 
    ![Icona Aggiungi utente](do-not-localize/chlimage_1-1.png)
 
-1. Il **Crea utente** Il modulo verrà aperto:
+1. Il **Crea utente** aperture modulo:
 
    ![Modulo dettagli utente](assets/chlimage_1-75a.png)
 
@@ -87,7 +87,7 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti aprirà la console app
    * **Città**
    * **Codice di avviamento postale**
    * **Paese**
-   * **Stadio**
+   * **Stato**
    * **Titolo**
    * **Genere**
    * **Informazioni su**
@@ -135,7 +135,7 @@ Puoi contrassegnare l’account come **attivo** o **inattivo**.
 
    ![Finestra di dialogo Impostazioni account](assets/chlimage_1-76a.png)
 
-1. Il **Cambia password** viene aperta una finestra di dialogo. Immettere e ridigitare la nuova password, insieme alla password. Utilizzare **OK** per confermare le modifiche.
+1. Il **Cambia password** viene visualizzata una finestra di dialogo. Immettere e ridigitare la nuova password, insieme alla password. Utilizzare **OK** per confermare le modifiche.
 
    ![Finestra di dialogo Modifica password](assets/chlimage_1-77a.png)
 
@@ -154,7 +154,7 @@ Puoi contrassegnare l’account come **attivo** o **inattivo**.
 
 1. Nella casella di selezione è possibile selezionare o deselezionare i gruppi a cui deve appartenere l&#39;account utente.
 
-1. Quando hai assegnato, o annullato l’assegnazione, i gruppi in base alle esigenze, utilizzano:
+1. Quando hai assegnato, o non hai assegnato, i gruppi come richiesto, utilizza:
 
    * **Annulla** per interrompere le modifiche
    * **Salva** per confermare le modifiche
@@ -176,7 +176,7 @@ Puoi contrassegnare l’account come **attivo** o **inattivo**.
 
    ![Aggiungi un nuovo gruppo](do-not-localize/chlimage_1-4.png)
 
-1. Il **Crea gruppo** Il modulo verrà aperto:
+1. Il **Crea gruppo** aperture modulo:
 
    ![Modulo Dettagli gruppo](assets/chlimage_1-79a.png)
 
@@ -188,7 +188,7 @@ Puoi contrassegnare l’account come **attivo** o **inattivo**.
 
    * **Nome**
 
-     Un nome per il gruppo, che verrà visualizzato nella console Gruppi.
+     Un nome per il gruppo; viene visualizzato nella console Gruppi.
 
    * **Descrizione**
 

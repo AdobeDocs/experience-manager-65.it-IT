@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1051'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,7 @@ Fai clic sull’icona a forma di ingranaggio nel riquadro Analizza metriche per 
 
 Per creare un Adobe di servizio cloud Mobile Services sono necessari due passaggi: la connessione al servizio e la selezione della suite di rapporti da assegnare alla configurazione.
 
-Per iniziare, fai clic sul pulsante &#39;+&#39; nella sezione Gestisci Cloud Services del dashboard.
+Per iniziare, fai clic sul pulsante &#39;+&#39; nella sezione Gestisci Cloud Service del dashboard.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
@@ -76,7 +76,7 @@ Dopo aver fatto clic su &quot;&quot;**+**&#39;, il pulsante **Aggiungi Cloud Ser
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Seleziona o crea una nuova configurazione di servizio mobile compilando i campi obbligatori come mostrato di seguito. Il tuo amministratore AEM richiede queste informazioni per creare correttamente la connessione ad Adobe Mobile Services.
+Seleziona o crea una configurazione per servizio mobile compilando i campi obbligatori come mostrato di seguito. Il tuo amministratore AEM richiede queste informazioni per creare correttamente la connessione ad Adobe Mobile Services.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
@@ -90,7 +90,7 @@ Ora che hai associato la configurazione del servizio mobile all’app AEM Mobile
 
 ### File di configurazione SDK di Adobe Mobile Services {#adobe-mobile-services-sdk-config-file}
 
-A questo punto, l’app mobile è associata a un servizio cloud, ma non sa ancora come comunicare ad Adobe Analytics le metriche mobile raccolte. Per collegare l’app mobile ad Adobe Analytics, è necessario aggiungere ad Adobe Experience Manager il file di configurazione SDK di Adobe Mobile Services.
+A questo punto, l’app mobile è associata a un servizio cloud, ma non sa ancora come comunicare ad Adobe Analytics le metriche mobile raccolte. Per collegare l’app mobile ad Adobe Analytics, è necessario aggiungere a Adobe Experience Manager il file di configurazione SDK di Adobe Mobile Services.
 
 Dal riquadro Analizza metriche, fai clic sull&#39;icona a forma di freccia per esporre le voci del menu Scarica/Carica configurazione SDK di AMS.
 

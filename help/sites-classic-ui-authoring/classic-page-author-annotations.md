@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '761'
 ht-degree: 8%
 
 ---
@@ -26,7 +26,7 @@ Un’annotazione posiziona un marcatore colorato o una nota adesiva sulla pagina
 
 >[!NOTE]
 >
->Le annotazioni create nell’interfaccia classica vengono visualizzate anche nell’interfaccia touch. Tuttavia, gli schizzi sono specifici dell’interfaccia utente e vengono visualizzati solo nell’interfaccia utente in cui sono stati creati.
+>Le annotazioni create nell’interfaccia utente classica vengono visualizzate nell’interfaccia touch. Tuttavia, gli schizzi sono specifici dell’interfaccia utente e vengono visualizzati solo nell’interfaccia utente in cui sono stati creati.
 
 >[!CAUTION]
 >

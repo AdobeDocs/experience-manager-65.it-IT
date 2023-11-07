@@ -9,9 +9,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >L’aggiornamento richiede tempi di inattività per il livello di authoring, in quanto la maggior parte degli aggiornamenti Adobe Experience Manager (AEM) viene eseguita sul posto. Seguendo queste best practice, è possibile ridurre o eliminare i tempi di inattività del livello di pubblicazione.
 
-Durante l’aggiornamento degli ambienti AEM, è necessario tenere conto delle differenze di approccio tra l’aggiornamento degli ambienti di authoring e di pubblicazione per ridurre al minimo i tempi di inattività sia per gli autori che per gli utenti finali. Questa pagina illustra la procedura di alto livello per l’aggiornamento di una topologia AEM attualmente in esecuzione su una versione di AEM 6.x. Poiché il processo varia tra i livelli di authoring e pubblicazione, nonché tra le distribuzioni basate su Mongo e TarMK, ogni livello e microkernel è stato elencato in una sezione separata. Durante l’esecuzione della distribuzione, Adobe consiglia innanzitutto di aggiornare l’ambiente di authoring, determinare il successo e quindi procedere con gli ambienti di pubblicazione.
+Durante l’aggiornamento degli ambienti AEM, è necessario tenere conto delle differenze di approccio tra l’aggiornamento degli ambienti di authoring e di pubblicazione per ridurre al minimo i tempi di inattività sia per gli autori che per gli utenti finali. Questa pagina illustra la procedura di alto livello per l’aggiornamento di una topologia AEM attualmente in esecuzione su una versione di AEM 6.x. Poiché il processo varia tra i livelli di authoring e pubblicazione e le distribuzioni basate su Mongo e TarMK, ogni livello e microkernel è stato elencato in una sezione separata. Durante l’esecuzione della distribuzione, Adobe consiglia innanzitutto di aggiornare l’ambiente di authoring, determinare il successo e quindi procedere con gli ambienti di pubblicazione.
 
 <!--
 >[!IMPORTANT]
@@ -93,7 +93,7 @@ La topologia ipotizzata per questa sezione è costituita da un cluster di author
 
 1. Interrompere l&#39;authoring dei contenuti.
 1. Clonare l&#39;archivio dati per il backup.
-1. Arresta tutte le istanze di AEM Author tranne una, ossia l’istanza di authoring principale.
+1. Arresta tutte le istanze di AEM Author tranne una, ovvero l’istanza Autore principale.
 1. Rimuovi tutti i nodi MongoDB tranne uno dal set di repliche, l’istanza principale di Mongo.
 1. Aggiornare il `DocumentNodeStoreService.cfg` nell&#39;istanza Autore principale per riflettere il set di repliche a membro singolo.
 1. Riavvia l’Autore primario per assicurarti che venga riavviato correttamente.

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Per ulteriori informazioni sul servizio Forms con codice a barre, consulta [Guid
 
 ## Decodifica dei dati del modulo con codice a barre {#decoding-barcoded-form-data}
 
-Puoi utilizzare l’API del servizio Forms con codice a barre per decodificare dati da un modulo PDF o da un’immagine che contiene un codice a barre. Per decodificare i dati del modulo si intendono i dati che si trovano nel codice a barre. Prima di poter decodificare i dati da un modulo (o un’immagine) di PDF, l’utente deve inserire nel modulo i dati necessari.
+Puoi utilizzare l’API del servizio Forms con codice a barre per decodificare dati da un modulo PDF o da un’immagine che contiene un codice a barre. Per decodificare i dati del modulo si intende l&#39;estrazione dei dati contenuti nel codice a barre. Prima di poter decodificare i dati da un modulo (o un’immagine) di PDF, l’utente deve inserire nel modulo i dati necessari.
 
 >[!NOTE]
 >
@@ -60,9 +60,9 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (richiesto se AEM Forms è implementato su JBoss)
 * jbossall-client.jar (obbligatorio se AEM Forms è distribuito su JBoss)
-* xercesImpl.jar (che si trova in &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar (in &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
-Se AEM Forms viene distribuito su un server applicazioni J2EE supportato che non è JBOSS, sarà necessario sostituire adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazioni J2EE in cui viene distribuito AEM Forms. Per informazioni sulla posizione di tutti i file JAR di AEM Forms, vedi [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Se AEM Forms viene distribuito su un server applicazioni J2EE supportato che non è JBOSS, è necessario sostituire adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazioni J2EE in cui viene distribuito AEM Forms. Per informazioni sulla posizione di tutti i file JAR di AEM Forms, vedi [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Creare un oggetto API client Forms con codice a barre**
 
@@ -183,7 +183,7 @@ Decodificare i dati del modulo utilizzando l’API (servizio web) dei moduli cod
 
 1. Creare un oggetto API client Forms con codice a barre
 
-   Utilizzando l&#39;assembly client Microsoft .NET che utilizza il servizio WSDL dei moduli codificati a barre, creare un `BarcodedFormsServiceService` richiamando il relativo costruttore predefinito.
+   Utilizzando l&#39;assembly client Microsoft .NET che utilizza il WSDL del servizio Forms a codici a barre, creare un `BarcodedFormsServiceService` richiamando il relativo costruttore predefinito.
 
 1. Ottieni un modulo PDF contenente dati con codice a barre
 

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1095'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Inoltre, la Casella in entrata AEM consolida le notifiche e le attività da vari
 
 L&#39;interfaccia utente Casella in entrata fornisce viste elenco e calendario per visualizzare le attività. È inoltre possibile configurare le impostazioni di visualizzazione. Puoi filtrare le attività in base a vari parametri. Per ulteriori informazioni sulla visualizzazione e sui filtri, consulta [Casella in entrata](/help/sites-authoring/inbox.md).
 
-In sintesi, Casella in entrata consente di creare una nuova applicazione e gestire le attività assegnate.
+In sintesi, Casella in entrata consente di creare un&#39;applicazione e gestire le attività assegnate.
 
 >[!NOTE]
 >

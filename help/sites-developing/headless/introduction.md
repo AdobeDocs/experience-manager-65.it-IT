@@ -2,9 +2,9 @@
 title: Sviluppo headless per siti AEM 6.5
 description: Scopri come le potenti funzionalità headless di AEM 6.5, come i modelli di contenuto, i frammenti di contenuto e l’API GraphQL, collaborano per gestire le esperienze a livello centrale e distribuirle tra i canali.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '518'
 ht-degree: 35%
 
 ---

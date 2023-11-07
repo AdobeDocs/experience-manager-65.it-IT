@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3446'
+ht-degree: 1%
 
 ---
 
@@ -206,13 +206,13 @@ Per esempi, consulta:
 
 I widget per l’interfaccia utente touch vengono implementati come componenti dell’interfaccia utente Granite.
 
-Per creare un nuovo widget da utilizzare nella finestra di dialogo di un componente per l’interfaccia utente touch, è necessario: [creare un nuovo componente campo dell’interfaccia utente Granite](/help/sites-developing/granite-ui-component.md).
+Per creare un widget da utilizzare in una finestra di dialogo di un componente per l’interfaccia utente touch, è necessario: [creare un componente campo dell’interfaccia utente Granite](/help/sites-developing/granite-ui-component.md).
 
 >[!NOTE]
 >
->Per informazioni dettagliate sull’interfaccia utente di Granite, consulta la sezione [Documentazione dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Per informazioni complete sull’interfaccia utente di Granite, consulta [Documentazione dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Se consideri la finestra di dialogo come un semplice contenitore per un elemento del modulo, puoi anche visualizzare il contenuto principale della finestra di dialogo come campi del modulo. La creazione di un nuovo campo modulo richiede la creazione di un tipo di risorsa, il che equivale alla creazione di un nuovo componente. Per facilitare questa attività, l’interfaccia utente Granite offre un componente campo generico da cui ereditare (utilizzando `sling:resourceSuperType`):
+Se consideri la finestra di dialogo come un semplice contenitore per un elemento del modulo, puoi anche visualizzare il contenuto principale della finestra di dialogo come campi del modulo. La creazione di un campo modulo richiede la creazione di un tipo di risorsa, il che equivale alla creazione di un componente. Per facilitare questa attività, l’interfaccia utente Granite offre un componente campo generico da cui ereditare (utilizzando `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -228,7 +228,7 @@ Dopo aver creato il tipo di risorsa, puoi creare un’istanza del campo aggiunge
 
 Se desideri definire lo stile e il comportamento del componente, puoi creare una [libreria client](/help/sites-developing/clientlibs.md) che definisce i file CSS/LESS e JS personalizzati.
 
-Per caricare la libreria client solo per la finestra di dialogo del componente, ovvero non per un altro componente, è necessario impostare la proprietà `extraClientlibs` della finestra di dialogo al nome della categoria della libreria client appena creata. Questa opzione è consigliata se la libreria client è molto grande e/o il campo è specifico per tale finestra di dialogo e non sarà necessario in altre finestre di dialogo.
+Per caricare la libreria client solo per la finestra di dialogo del componente, ovvero non per un altro componente, è necessario impostare la proprietà `extraClientlibs` della finestra di dialogo al nome della categoria della libreria client creata. Questa opzione è consigliata se la libreria client è molto grande e/o il campo è specifico per tale finestra di dialogo e non sarà necessario in altre finestre di dialogo.
 
 Per caricare la libreria client per tutte le finestre di dialogo, imposta la proprietà category della libreria client su `cq.authoring.dialog`. Questo è il nome della categoria della libreria client che viene inclusa per impostazione predefinita durante il rendering di tutte le finestre di dialogo. Puoi eseguire questa operazione se la libreria client è piccola e/o il campo è generico e potrebbe essere riutilizzato in altre finestre di dialogo.
 
@@ -346,13 +346,13 @@ Se il nuovo componente fa riferimento al contenuto di altre pagine, puoi valutar
 
 L’AEM preconfigurato controlla solo il componente Reference. Per aggiungere il componente è necessario configurare il bundle OSGi **Configurazione di riferimento per l’authoring dei contenuti WCM**.
 
-Crea una nuova voce nella definizione, specificando il componente, insieme alla proprietà da controllare. Ad esempio:
+Crea una voce nella definizione, specificando il componente, insieme alla proprietà da controllare. Ad esempio:
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
 >[!NOTE]
 >
->Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
+>Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi. Consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le pratiche consigliate.
 
 ## Abilitazione e aggiunta del componente al sistema dei paragrafi {#enabling-and-adding-your-component-to-the-paragraph-system}
 
@@ -373,12 +373,12 @@ L’AEM offre la possibilità di configurare un sistema paragrafo sulla pagina i
 
    * `/etc/designs/<myApp>/page/par`
 
-   Crea un nuovo nodo:
+   Crea un nodo:
 
    * Nome: `cq:authoring`
    * Tipo: `nt:unstructured`
 
-1. Crea un nuovo nodo che contenga tutti i mapping risorsa-componente:
+1. In questo caso, crea un nodo che contenga tutti i mapping risorsa-componente:
 
    * Nome: `assetToComponentMapping`
    * Tipo: `nt:unstructured`
@@ -398,7 +398,7 @@ L’AEM offre la possibilità di configurare un sistema paragrafo sulla pagina i
    * `assetMimetype`:
 
       * Tipo: `String`
-      * Valore: il tipo MIME della relativa risorsa, ad esempio `image/*`
+      * Valore: il tipo MIME della relativa attività; ad esempio, `image/*`
 
    * `droptarget`:
 

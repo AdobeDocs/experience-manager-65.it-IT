@@ -9,7 +9,7 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 2%
@@ -32,7 +32,7 @@ I diversi aspetti dei gruppi comunitari sono:
 * **Controllo**: il gruppo può essere aperto o segreto.
 * **Nidificazione**: il gruppo può contenere zero o più gruppi.
 
-<!-- This is a 404 on helpx. Please update or remove.
+<!-- This is a 404 on helpx. Update or remove.
 >[!NOTE]
 >
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
@@ -150,7 +150,7 @@ Per impostazione predefinita, viene ereditato l&#39;elenco di moderatori del sit
 
 Per impostazione predefinita, l&#39;amministratore del sito della community padre è anche l&#39;amministratore dei gruppi.
 
-Tuttavia, è possibile assegnare amministratori di gruppi indipendenti. Gli amministratori di gruppi possono gestire il proprio gruppo (ad esempio G1) e creare un sottogruppo nidificato in G1. Possono inoltre assegnare amministratori diversi per il sottogruppo.
+Tuttavia, è possibile assegnare amministratori di gruppi indipendenti. Gli amministratori di gruppi possono gestire il proprio gruppo (ad esempio, G1) e creare un sottogruppo nidificato in G1. Possono inoltre assegnare amministratori diversi per il sottogruppo.
 
 Un utente U1 può quindi essere un amministratore in un gruppo G1 e un utente normale nel suo gruppo nidificato G2.
 
@@ -304,4 +304,4 @@ Dopo la pubblicazione del gruppo, viene visualizzato il seguente messaggio:
 
 Per eliminare un gruppo dalla console Gruppi della community, fai clic sull’icona Elimina gruppo, visualizzata quando si passa il puntatore del mouse sul gruppo.
 
-In questo modo vengono rimossi tutti gli elementi associati al gruppo, ad esempio tutto il contenuto del gruppo viene eliminato definitivamente e le appartenenze utente vengono rimosse dal sistema.
+In questo modo vengono rimossi tutti gli elementi associati al gruppo, ad esempio tutto il contenuto del gruppo viene eliminato in modo permanente e le appartenenze utente vengono rimosse dal sistema.

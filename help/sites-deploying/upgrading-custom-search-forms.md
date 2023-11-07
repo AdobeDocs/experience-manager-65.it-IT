@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1681'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ in una nuova posizione in:
 
 Per questo motivo, sono necessarie regolazioni manuali dopo un aggiornamento affinché i moduli continuino a funzionare.
 
-Questo vale sia per il nuovo Search Forms che per il Forms predefinito che sono stati personalizzati.
+Questo vale per il nuovo Search Forms e il Forms predefinito che sono stati personalizzati.
 
 Per ulteriori informazioni, consulta la documentazione su [Facet di ricerca](/help/assets/search-facets.md).
 

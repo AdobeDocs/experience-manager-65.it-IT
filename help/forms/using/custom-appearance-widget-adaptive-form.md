@@ -1,18 +1,14 @@
 ---
 title: Creare aspetti personalizzati per i campi del modulo adattivo
-seo-title: Create custom appearances for adaptive form fields
 description: Personalizza l’aspetto dei componenti pronti all’uso in Adaptive Forms.
-seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
-uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
-source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-I moduli adattivi sfruttano [framework aspetto](/help/forms/using/introduction-widgets.md) per aiutarti a creare aspetti personalizzati per i campi del modulo adattivo e fornire un’esperienza utente diversa. Ad esempio, sostituisci i pulsanti di scelta e le caselle di controllo con pulsanti di attivazione o utilizza plug-in jQuery personalizzati per limitare gli input degli utenti in campi come numeri di telefono o ID e-mail.
+I moduli adattivi utilizzano [framework aspetto](/help/forms/using/introduction-widgets.md) per aiutarti a creare aspetti personalizzati per i campi del modulo adattivo e fornire un’esperienza utente diversa. Ad esempio, sostituisci i pulsanti di scelta e le caselle di controllo con pulsanti di attivazione o utilizza plug-in jQuery personalizzati per limitare gli input degli utenti in campi come numeri di telefono o ID e-mail.
 
 Questo documento spiega come utilizzare un plug-in jQuery per creare queste esperienze alternative per i campi del modulo adattivo. Inoltre, mostra un esempio per creare un aspetto personalizzato affinché il componente campo numerico venga visualizzato come un indicatore numerico o un cursore.
 
@@ -137,11 +133,11 @@ Una volta creato il modello di progetto, effettua le seguenti modifiche, in base
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
-   <td>Restituisce una mappa che fornisce dettagli sull’azione da eseguire in caso di modifica di un’opzione. Le chiavi sono le opzioni fornite al widget e i valori sono funzioni che vengono richiamate ogni volta che viene rilevata una modifica nell’opzione. Il widget fornisce gestori per tutte le opzioni comuni (eccetto <code>value</code> e <code>displayValue</code>).</td>
+   <td>Restituisce una mappa che fornisce dettagli sull’azione da eseguire in seguito alla modifica di un’opzione. Le chiavi sono le opzioni fornite al widget e i valori sono funzioni che vengono richiamate ogni volta che viene rilevata una modifica nell’opzione. Il widget fornisce gestori per tutte le opzioni comuni (eccetto <code>value</code> e <code>displayValue</code>).</td>
   </tr>
   <tr>
    <td><code>getCommitValue</code></td>
-   <td>Il framework del widget jQuery carica la funzione ogni volta che il valore del widget jQuery viene salvato nel modello XFA (ad esempio all’evento di uscita di un campo di testo). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l’opzione.</td>
+   <td>Il framework del widget jQuery carica la funzione ogni volta che il valore del widget jQuery viene salvato nel modello XFA (ad esempio, all’evento di uscita di un campo di testo). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l’opzione.</td>
   </tr>
   <tr>
    <td><code>showValue</code></td>
@@ -320,4 +316,4 @@ Esaminiamo ora un esempio per creare un aspetto personalizzato in modo che un ca
 
    1. Nella scheda Stile, aggiorna il **[!UICONTROL Classe CSS]** proprietà da aggiungere `widget_numericStepper`.
 
-Il nuovo aspetto appena creato è ora disponibile per l&#39;uso.
+Il nuovo aspetto creato è ora disponibile.

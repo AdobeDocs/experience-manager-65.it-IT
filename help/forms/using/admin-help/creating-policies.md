@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4718'
+source-wordcount: '4715'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Gli utenti possono creare o modificare i criteri personali per il proprio utiliz
 
 ### Considerazioni sulla modifica dei criteri {#considerations-for-editing-policies}
 
-Quando si modifica una policy, le modifiche vengono applicate ai documenti protetti dalla policy e a quelli protetti successivamente. Ad esempio, se si rimuovono i destinatari da un criterio attualmente applicato a un documento, i destinatari non potranno più aprire il documento.
+Quando si modifica un criterio, le modifiche hanno effetto sui documenti protetti dal criterio e su quelli protetti successivamente. Ad esempio, se si rimuovono i destinatari da un criterio attualmente applicato a un documento, i destinatari non potranno più aprire il documento.
 
 Lo stato del documento determina quando la modifica ha effetto:
 
@@ -391,7 +391,7 @@ Gli utenti invitati possono eliminare i criteri solo se l’amministratore abili
 
 1. Nella pagina di Document Security, fai clic su Criteri.
 1. Fare clic sulla scheda Criteri utente.
-1. Per eliminare un criterio condiviso, fare clic sulla scheda Set di criteri e quindi sul nome del set di criteri appropriato.
+1. Per eliminare un criterio condiviso, fare clic sulla scheda Set di criteri e selezionare il nome del set di criteri appropriato.
 1. Selezionare la casella di controllo accanto al criterio appropriato e fare clic su Elimina, quindi scegliere OK.
 
 >[!NOTE]

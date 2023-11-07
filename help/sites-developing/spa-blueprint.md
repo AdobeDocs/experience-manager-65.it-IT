@@ -6,7 +6,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 1%
@@ -71,11 +71,11 @@ Il resto del presente documento descrive i requisiti di questo livello specifico
 
 La struttura del contenuto della pagina è memorizzata in AEM. Il modello della pagina viene utilizzato per mappare e creare istanze dei componenti SPA. Gli sviluppatori dell&#39;SPA creano i componenti dell&#39;SPA che mappano ai componenti dell&#39;AEM. A tal fine, utilizzano il tipo di risorsa (o il percorso del componente AEM) come chiave univoca.
 
-I componenti SPA devono essere sincronizzati con il modello della pagina e devono essere aggiornati di conseguenza con qualsiasi modifica al relativo contenuto. Un pattern che sfrutta i componenti dinamici deve essere utilizzato per creare istantaneamente istanze di componenti seguendo la struttura del modello di pagina fornita.
+I componenti SPA devono essere sincronizzati con il modello della pagina e devono essere aggiornati di conseguenza con qualsiasi modifica al relativo contenuto. Un pattern che utilizza componenti dinamici deve essere utilizzato per creare istantaneamente istanze di componenti seguendo la struttura del modello di pagina fornita.
 
 ### Meta campi {#meta-fields}
 
-Il modello di pagina sfrutta JSON Model Exporter, che a sua volta è basato su [Modello Sling](https://sling.apache.org/documentation/bundles/models.html) API. I modelli sling esportabili espongono il seguente elenco di campi per consentire alle librerie sottostanti di interpretare il modello di dati:
+Il modello di pagina utilizza il modulo di esportazione del modello JSON, a sua volta basato sul [Modello Sling](https://sling.apache.org/documentation/bundles/models.html) API. I modelli sling esportabili espongono il seguente elenco di campi per consentire alle librerie sottostanti di interpretare il modello di dati:
 
 * `:type`: tipo della risorsa AEM (predefinito = tipo di risorsa)
 * `:children`: elementi figlio gerarchici della risorsa corrente. Gli elementi figlio non fanno parte del contenuto interno della risorsa corrente (sono disponibili negli elementi che rappresentano una pagina)

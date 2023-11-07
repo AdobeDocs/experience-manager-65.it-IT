@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2505'
 ht-degree: 0%
 
 ---
@@ -321,4 +321,4 @@ L’URL completo per richiamare il processo è https://hiro-xp:8080/rest/service
 
 Se il processo richiede un documento PDF come valore di input, assicurarsi di inviare il modulo come PDF, come illustrato nella figura precedente. Inoltre, per richiamare correttamente un processo, il processo deve restituire un documento PDF. In caso contrario, Acrobat non può gestire il valore restituito e si verifica un errore. Non è necessario specificare il nome della variabile di processo di input. Ad esempio, il *MyApplication/EncryptDocument* il processo ha una variabile di input denominata `inDoc`. Non è necessario specificare inDoc, purché il modulo venga inviato come PDF.
 
-È inoltre possibile inviare i dati del modulo come XML a un processo di Forms. Per inviare i dati XML, assicurarsi che `Submit As` elenco a discesa specifica XML. Poiché il valore restituito dalla procedura deve essere un documento PDF, il documento PDF viene visualizzato in Acrobat.
+È inoltre possibile inviare i dati del modulo come XML a un processo di Forms. Per inviare i dati XML, assicurarsi che `Submit As` a discesa specifica XML. Poiché il valore restituito dalla procedura deve essere un documento PDF, il documento PDF viene visualizzato in Acrobat.

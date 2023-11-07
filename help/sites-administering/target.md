@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '600'
 ht-degree: 66%
 
 ---
@@ -34,7 +34,7 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
 1. Effettua una delle seguenti operazioni:
 
-   1. [Consenso ad Adobe Target](/help/sites-administering/opt-in.md): la procedura guidata di consenso prende le informazioni sull’account Target e crea una configurazione cloud Adobe Target e un framework Target. La procedura guidata associa inoltre i siti al framework di Target. Se la procedura guidata non è in grado di connettersi alla destinazione, consultare [risoluzione dei problemi di connessione](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sezione. Potrai quindi [Modificare le configurazioni cloud predefinite](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): se necessario, modifica la configurazione cloud e il framework creati dalla procedura guidata di consenso. Ad esempio, modifica il framework per inviare dati di contesto aggiuntivi a Target. Se desideri utilizzare Adobe Analytics come origine per la generazione di rapporti per Adobe Target, devi modificare la configurazione cloud in modo che punti alla configurazione A4T.
+   1. [Consenso ad Adobe Target](/help/sites-administering/opt-in.md): la procedura guidata di consenso prende le informazioni sull’account Target e crea una configurazione cloud Adobe Target e un framework Target. La procedura guidata associa inoltre i siti al framework di Target. Se la procedura guidata non è in grado di connettersi alla destinazione, vedere [risoluzione dei problemi di connessione](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sezione. Potrai quindi [Modificare le configurazioni cloud predefinite](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): se necessario, modifica la configurazione cloud e il framework creati dalla procedura guidata di consenso. Ad esempio, modifica il framework per inviare dati di contesto aggiuntivi a Target. Se desideri utilizzare Adobe Analytics come origine per la generazione di rapporti per Adobe Target, devi modificare la configurazione cloud in modo che punti alla configurazione A4T.
    1. [Integrare manualmente con Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
 1. [Configurare le attività](/help/sites-authoring/activitylib.md): associa le attività alla configurazione cloud di Target.

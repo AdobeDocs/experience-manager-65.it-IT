@@ -2,9 +2,9 @@
 title: Configurazione dei componenti predefiniti in modalità Progettazione
 description: Configurazione dei componenti di Adobe Experience Manager in modalità Progettazione.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '914'
 ht-degree: 10%
 
 ---
@@ -46,7 +46,7 @@ Ad esempio, il contenuto di una pagina di prodotto può contenere un sistema par
 >
 >La modifica della progettazione utilizzando la modalità Progettazione come descritto in questo articolo è il metodo consigliato per definire le progettazioni di modelli statici
 >
->Ad esempio, modificare i progetti in CRX DE non è una best practice e l’applicazione di tali progetti può variare rispetto al comportamento previsto. Consulta il documento per sviluppatori [Modelli di pagina - Statici](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) per ulteriori informazioni.
+>La modifica dei progetti in CRX DE, ad esempio, non è una best practice e l’applicazione di tali progetti può variare rispetto al comportamento previsto. Consulta il documento per sviluppatori [Modelli di pagina - Statici](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) per ulteriori informazioni.
 
 ## Abilita/Disabilita componenti {#enable-disable-components}
 
@@ -66,7 +66,7 @@ Per attivare o disattivare un componente:
 
    In questo modo viene selezionato il sistema paragrafo contenente il componente corrente.
 
-1. Il **Configura** nella barra delle azioni dell&#39;elemento padre verrà visualizzata l&#39;icona del sistema paragrafo.
+1. Il **Configura** nella barra delle azioni dell&#39;elemento padre viene visualizzata l&#39;icona del sistema paragrafo.
 
    ![Configura](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -95,7 +95,7 @@ Per attivare o disattivare un componente:
 
    >[!NOTE]
    >
-   >I componenti per moduli adattivi sono progettati per funzionare all’interno del Contenitore di moduli adattivi e sfruttare così l’ecosistema Forms. Pertanto, questi componenti devono essere utilizzati solo nell’editor di moduli adattivi e non funzioneranno nell’editor di pagine Sites.
+   >I componenti dei moduli adattivi sono progettati per funzionare all’interno del Contenitore di moduli adattivi e utilizzare l’ecosistema Forms. Pertanto, questi componenti devono essere utilizzati solo nell’editor di moduli adattivi e non funzioneranno nell’editor di pagine Sites.
 
    **Impostazioni**
 

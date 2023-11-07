@@ -4,10 +4,10 @@ description: Scopri come configurare il Translation Integration Framework in Ado
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 50%
+source-wordcount: '1571'
+ht-degree: 48%
 
 ---
 
@@ -196,7 +196,7 @@ Per configurare la traduzione delle pagine sorgente in altre lingue, associa le 
 * La configurazione cloud che connette AEM al fornitore di traduzione.
 * Il framework di integrazione della traduzione che configura i dettagli della traduzione.
 
-La configurazione cloud del framework di integrazione della traduzione identifica la configurazione cloud da utilizzare per la connessione al fornitore del servizio. Quando si associa una pagina origine a una configurazione cloud del framework, la pagina deve essere associata alla configurazione cloud del fornitore del servizio utilizzato dalla configurazione cloud del framework.
+La configurazione cloud del framework di integrazione della traduzione identifica la configurazione cloud da utilizzare per la connessione al provider di servizi. Quando si associa una pagina origine a una configurazione cloud del framework, la pagina deve essere associata alla configurazione cloud del fornitore del servizio utilizzato dalla configurazione cloud del framework.
 
 Quando si associa una pagina a una configurazione cloud, i discendenti della pagina ereditano tale associazione. Ad esempio, se associ la pagina /content/geometrixx/en/products a un framework di integrazione della traduzione, la pagina Products e tutte le pagine sottostanti vengono tradotte in base al framework.
 

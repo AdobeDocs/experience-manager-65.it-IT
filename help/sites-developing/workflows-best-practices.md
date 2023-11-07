@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1923'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Durante la configurazione dei processi del flusso di lavoro (personalizzati e/o 
 
 Per ottimizzare i carichi di acquisizione elevati puoi definire una [flusso di lavoro come transitorio](/help/sites-developing/workflows.md#transient-workflows).
 
-Quando un flusso di lavoro è transitorio, i dati di runtime relativi ai passaggi di lavoro intermedi non vengono memorizzati nel JCR quando vengono eseguiti (le rappresentazioni di output vengono mantenute, ovviamente).
+Quando un flusso di lavoro è transitorio, i dati di runtime relativi ai passaggi di lavoro intermedi non vengono mantenuti in JCR quando vengono eseguiti (le rappresentazioni di output vengono mantenute).
 
 I vantaggi includono:
 
@@ -255,7 +255,7 @@ Salvataggio di una sessione
 
 >[!CAUTION]
 >
->Se, nonostante i consigli qui riportati, crei una tua sessione JCR, allora sarà necessario salvarla.
+>Se, nonostante i consigli qui riportati, crei una tua sessione JCR, questa deve essere salvata.
 
 ### Riduci al minimo il numero e l&#39;ambito dei moduli di avvio {#minimize-the-number-scope-of-launchers}
 
@@ -285,7 +285,7 @@ I flussi di lavoro possono comportare un sovraccarico significativo, sia in term
 
 Un esempio potrebbe essere un flusso di lavoro che implementa un processo aziendale su un set di contenuti e quindi attiva tali contenuti. È meglio creare un processo di flusso di lavoro personalizzato che attivi ciascuno di questi nodi, piuttosto che avviare un **Attiva contenuto** modello per ciascuno dei nodi di contenuto da pubblicare. Questo approccio richiederà un ulteriore lavoro di sviluppo, ma è più efficiente quando viene eseguito rispetto all’avvio di un’istanza di flusso di lavoro separata per ogni attivazione.
 
-Un altro esempio potrebbe essere un flusso di lavoro che elabora una serie di nodi, crea un pacchetto di flusso di lavoro, quindi attiva tale pacchetto. Invece di creare il pacchetto e quindi avviare un flusso di lavoro separato con il pacchetto come payload, puoi modificare il payload del flusso di lavoro nel passaggio che crea il pacchetto e quindi chiamare il passaggio per attivare il pacchetto all’interno dello stesso modello di flusso di lavoro.
+Un altro esempio potrebbe essere un flusso di lavoro che elabora diversi nodi, crea un pacchetto di flusso di lavoro e quindi lo attiva. Invece di creare il pacchetto e quindi avviare un flusso di lavoro separato con il pacchetto come payload, puoi modificare il payload del flusso di lavoro nel passaggio che crea il pacchetto e quindi chiamare il passaggio per attivare il pacchetto all’interno dello stesso modello di flusso di lavoro.
 
 ### Avanzamento gestore {#handler-advance}
 

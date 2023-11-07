@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2223'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ La configurazione di una nuova campagna include i seguenti passaggi (generici):
 1. [Creare una campagna](#creating-a-new-campaign) per memorizzare le esperienze, ad esempio pagine teaser o newsletter.
 1. Se necessario, è possibile [definire le proprietà per la nuova campagna](#defining-the-properties-for-your-new-campaign).
 
-A seconda del tipo di esperienza che stai creando, dovrai: [creare un’esperienza](#creating-a-new-experience). I dettagli dell’esperienza e le azioni che seguono la sua creazione dipendono dal tipo di esperienza che desideri creare:
+Quindi, a seconda del tipo di esperienze create, devi [creare un’esperienza](#creating-a-new-experience). I dettagli dell’esperienza e le azioni che seguono la sua creazione dipendono dal tipo di esperienza che desideri creare:
 
 * Se crei un teaser:
 
@@ -50,15 +50,13 @@ A seconda del tipo di esperienza che stai creando, dovrai: [creare un’esperien
 
 ## Creazione di un nuovo marchio {#creating-a-new-brand}
 
-Per creare un nuovo brand:
-
 1. Apri **MCM** e seleziona **Campagne** nel riquadro a sinistra.
 
 1. Seleziona **Nuovo...** per inserire **Titolo** e **Nome** e modello da utilizzare per il nuovo brand:
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. Fai clic su **Crea**. Il nuovo brand verrà visualizzato in MCM (con un’icona predefinita).
+1. Fai clic su **Crea**. Il nuovo brand viene visualizzato in MCM (con un’icona predefinita).
 
 ### Definizione delle proprietà per il nuovo marchio {#defining-the-properties-for-your-new-brand}
 
@@ -72,8 +70,6 @@ Per creare un nuovo brand:
 
 ### Creazione di una nuova campagna {#creating-a-new-campaign}
 
-Per creare una nuova campagna:
-
 1. Da **Campagne**, selezionare il nuovo brand nel riquadro di sinistra o fare doppio clic sull&#39;icona nel riquadro di destra.
 
    Viene visualizzata la panoramica (vuota se il brand è nuovo).
@@ -82,7 +78,7 @@ Per creare una nuova campagna:
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. Fai clic su **Crea**. La nuova campagna verrà visualizzata in MCM.
+1. Fai clic su **Crea**. La nuova campagna viene visualizzata in MCM.
 
 ### Definizione delle proprietà per la nuova campagna {#defining-the-properties-for-your-new-campaign}
 
@@ -105,7 +101,7 @@ Configura le proprietà della campagna che controllano il comportamento:
 
 ### Creazione di una nuova esperienza {#creating-a-new-experience}
 
-La procedura per la creazione di una nuova esperienza dipende dal tipo di esperienza:
+La procedura per la creazione di un’esperienza dipende dal tipo di esperienza:
 
 * [Creazione di un teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [Creazione di una newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
@@ -154,7 +150,7 @@ Se disponi di esperienze esistenti, puoi aggiungere un punto di contatto diretta
 >[!NOTE]
 >
 >Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione dei lead).
->Si consiglia di: [sfruttare Adobe Campaign e l’integrazione con l’AEM](/help/sites-administering/campaign.md).
+>Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con l&#39;AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM, puoi organizzare e aggiungere lead immettendoli manualmente o importando un elenco separato da virgole, ad esempio una mailing list. Ulteriori modi per generare i lead sono dalle iscrizioni a newsletter o community (se configurate, possono attivare un flusso di lavoro che popola i lead).
 
@@ -172,7 +168,7 @@ Nel dashboard, puoi accedere a tutti i lead facendo clic su **Lead** dal riquadr
 
 Dopo aver creato nuovi lead, assicurati di [attivali](#activating-or-deactivating-leads) in modo da poter tenere traccia della loro attività sull’istanza Publish e personalizzare la loro esperienza.
 
-Per creare manualmente un nuovo lead:
+Per creare manualmente un lead:
 
 1. In AEM, passa a MCM. Nel dashboard, fai clic su **Lead**.
 1. Clic **Nuovo**. Il **Crea nuovo** viene visualizzata la finestra.
@@ -207,7 +203,7 @@ Per i lead attivi o disattivi:
 
 ### Importazione di nuovi lead {#importing-new-leads}
 
-Quando si importano nuovi lead, è possibile aggiungerli automaticamente a un elenco esistente o crearne uno nuovo per includerli.
+Quando si importano nuovi lead, è possibile aggiungerli automaticamente a un elenco esistente o creare un elenco per includerli.
 
 Per importare i lead da un elenco separato da virgole:
 
@@ -302,7 +298,7 @@ Per eliminare i lead esistenti nel MCM, seleziona la casella di controllo accant
 >[!NOTE]
 >
 >L’Adobe non prevede di migliorare ulteriormente questa funzionalità (gestione degli elenchi).
->Si consiglia di: [sfruttare Adobe Campaign e l’integrazione con l’AEM](/help/sites-administering/campaign.md).
+>Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con l&#39;AEM](/help/sites-administering/campaign.md).
 
 Gli elenchi ti consentono di organizzare i lead in gruppi. Con gli elenchi, puoi indirizzare le tue campagne di marketing a un gruppo selezionato di persone, ad esempio puoi inviare una newsletter mirata a un elenco. Gli elenchi sono visibili in MCM, nel dashboard o facendo clic su **Elenchi**. Entrambi ti forniscono il nome dell’elenco e il numero di membri.
 
@@ -314,8 +310,6 @@ Se si fa clic su **Elenchi**, è inoltre possibile verificare se l&#39;elenco è
 
 ### Creazione di nuovi elenchi {#creating-new-lists}
 
-Per creare un nuovo elenco (gruppo):
-
 1. Nel dashboard MCM, fai clic su **Nuovo elenco...** o in **Elenchi**, fai clic su **Nuovo** ... Viene visualizzata la finestra Crea elenco.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
@@ -325,8 +319,6 @@ Per creare un nuovo elenco (gruppo):
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### Modifica di elenchi esistenti {#modifying-existing-lists}
-
-Per modificare un elenco esistente:
 
 1. In MCM, fai clic su **Elenchi**.
 
@@ -384,7 +376,7 @@ Per unire gli elenchi esistenti:
 
 In qualsiasi momento, è possibile visualizzare i lead che appartengono a un elenco specifico sfogliando o cercando i membri.
 
-Per visualizzare i lead che appartengono a un elenco:
+Per visualizzare i lead negli elenchi:
 
 1. In MCM, fai clic su **Elenchi**.
 

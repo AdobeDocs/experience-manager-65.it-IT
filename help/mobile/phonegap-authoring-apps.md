@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Il pacchetto di contenuti consente all’autore dell’app AEM di gestire il con
 
 Pacchetto di contenuti crea un file ZIP, considerato un pacchetto di rilascio dei contenuti, per ogni aggiornamento. Questi pacchetti contengono risorse HTML e pagine HTML generate durante il rendering dell’app ed è sufficientemente intelligente da includere solo i file che sono stati modificati dopo l’ultimo aggiornamento.
 
-Il riquadro Gestione pacchetto contenuti **Tipo** Nella colonna viene visualizzato &quot;App&quot; per indicare il contenuto della shell dell’applicazione, ad esempio il framework o l’infrastruttura dell’app gestita da uno sviluppatore oppure &quot;Content&quot; (Contenuto), che rappresenta il contenuto della pagina gestito dall’autore del contenuto.
+Il riquadro Gestione pacchetto contenuti **Tipo** Nella colonna viene visualizzato &quot;App&quot; per indicare il contenuto della shell dell’applicazione, ad esempio framework o infrastruttura dell’app gestita da uno sviluppatore, oppure &quot;Content&quot; (Contenuto), che rappresenta il contenuto della pagina gestito dall’autore del contenuto.
 
 Il contenuto può essere rappresentato come lingua o come parte particolare dell’app, dove l’app utilizza più pacchetti di rilascio dei contenuti. La scelta del modo in cui riunire i contenuti è flessibile e completamente adatta alla modalità di gestione dei contenuti per l’applicazione.
 

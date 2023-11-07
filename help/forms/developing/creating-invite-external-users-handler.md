@@ -3,9 +3,9 @@ title: Creazione di un handler per l’invito di utenti esterni
 description: Scopri come creare un handler per l’invito di utenti esterni. Consente al servizio di Rights Management di invitare utenti esterni a diventare utenti del Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Per sviluppare un handler per l’invito di utenti esterni, è necessario attene
 
 ## Configurazione dell’ambiente di sviluppo {#setting-up-development-environment}
 
-Per configurare l’ambiente di sviluppo, devi creare un nuovo progetto Java, ad esempio un progetto Eclipse. La versione di Eclipse supportata è `3.2.1` o più tardi.
+Per configurare l’ambiente di sviluppo, devi creare un progetto Java, ad esempio un progetto Eclipse. La versione di Eclipse supportata è `3.2.1` o più tardi.
 
 La SPI del Rights Management richiede `edc-server-spi.jar` da impostare nel percorso della classe del progetto. Se non fai riferimento a questo file JAR, non puoi utilizzare l’SPI di Rights Management nel tuo progetto Java. Questo file JAR viene installato con l’SDK di AEM Forms nel `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` cartella.
 

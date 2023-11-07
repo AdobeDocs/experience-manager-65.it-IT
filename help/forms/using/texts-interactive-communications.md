@@ -10,9 +10,9 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2477'
+source-wordcount: '2475'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Per modificare un frammento di documento di testo esistente, segui la procedura 
 
 È possibile personalizzare frammenti di documenti di testo inserendo le proprietà del modello di dati del modulo. Inserendo le proprietà del modello dati modulo nel testo, è possibile recuperare e popolare dati specifici del destinatario dall’origine dati associata durante l’anteprima di una comunicazione interattiva. Per ulteriori informazioni sul modello dati del modulo, consulta [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md).
 
-Se è stato specificato un modello dati modulo durante la creazione di un testo, le proprietà nel modello dati modulo vengono visualizzate nel riquadro sinistro dell&#39;editor di testo. Il modello dati del modulo specificato deve essere lo stesso per il frammento del documento di testo e per la comunicazione interattiva che lo include.
+Se è stato specificato un modello dati modulo durante la creazione di un testo, le proprietà nel modello dati modulo vengono visualizzate nel riquadro sinistro dell&#39;editor di testo. Il modello dati del modulo specificato deve essere lo stesso per il frammento del documento di testo e la comunicazione interattiva che lo include.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 

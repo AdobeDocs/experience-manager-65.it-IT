@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3498'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Prima di importare, tieni presente le seguenti limitazioni:
 
 ### Qualsiasi attributo come classe o ID applicato al tag &amp;lt;body> non viene mantenuto {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Ad esempio, se al tag body viene applicato un attributo come id o classe `<body id="container">` dopo l’importazione, non viene conservato. Pertanto, la progettazione in fase di importazione non deve avere alcuna dipendenza dagli attributi applicati al `<body>` tag.
+Ad esempio, se al tag body viene applicato un attributo come id o classe, `<body id="container">` dopo l’importazione, non viene conservato. Pertanto, la progettazione in fase di importazione non deve avere alcuna dipendenza dagli attributi applicati al `<body>` tag.
 
 ### Trascina e rilascia zip {#drag-and-drop-zip}
 
@@ -321,7 +321,7 @@ Un modulo lead è un modulo utilizzato per raccogliere le informazioni sul profi
 
 * Campi lead predefiniti: nome, cognome, indirizzo, dominio, genere, informazioni, ID utente, ID e-mail, pulsante di invio sono disponibili nella barra laterale. È sufficiente trascinare il componente richiesto nel modulo del lead.
 * Con l’aiuto di questi componenti, l’autore può progettare un modulo lead indipendente; questi campi corrispondono ai campi del modulo lead. In un’applicazione zip indipendente o importata, l’utente può aggiungere campi aggiuntivi utilizzando i campi del modulo cq:form o cta lead, il nome e progettarli in base ai requisiti.
-* Mappa i campi del modulo lead utilizzando nomi predefiniti specifici del modulo lead CTA, ad esempio: firstName per nome nel modulo lead e così via.
+* Mappa i campi del modulo lead utilizzando nomi specifici predefiniti del modulo lead CTA, ad esempio - firstName per nome nel modulo lead e così via.
 * I campi non mappati ai componenti modulo lead vengono mappati su cq:form: testo, radio, casella di controllo, menu a discesa, nascosto, password.
 * L’utente può fornire il titolo utilizzando il tag &quot;label&quot; e lo stile utilizzando l’attributo di stile &quot;class&quot; (disponibile solo per i componenti del modulo lead CTA).
 * La pagina di ringraziamento e l’elenco delle iscrizioni possono essere forniti come parametro nascosto del modulo (presente nel file index.htm) oppure possono essere aggiunti/modificati dalla barra di modifica di &quot;Inizio del modulo lead&quot;
@@ -384,7 +384,7 @@ L’inclusione del markup sopra riportato nel HTML comporta le seguenti operazio
 * Inizializza la barra laterale con i componenti predefiniti. È possibile aggiungere nuovi componenti alla pagina di destinazione trascinandoli dalla barra laterale al componente parsys.
 * Anche due componenti titolo fanno parte del parsys.
 
-### Destinazione {#target}
+### Previsto {#target}
 
 Il componente Target mostra il contenuto di un’esperienza sulla pagina. È possibile creare più esperienze in una campagna e il componente Target può mostrare in modo dinamico il contenuto di esperienze diverse ai vari utenti che visitano la pagina.
 
@@ -438,9 +438,9 @@ Se nel HTML importato non è specificata alcuna codifica, la codifica predefinit
 
 ### Sovrapposizione modello {#overlaying-template}
 
-Il modello Pagina di destinazione vuota può essere sovrapposto creando un nuovo modello in: `/apps/<appName>/designimporter/templates/<templateName>`
+Il modello Pagina di destinazione vuota può essere sovrapposto creando un modello in: `/apps/<appName>/designimporter/templates/<templateName>`
 
-Scopri come creare un nuovo modello in AEM [qui](/help/sites-developing/templates.md).
+Scopri come creare un modello in AEM [qui](/help/sites-developing/templates.md).
 
 ### Riferimento a un componente dalla pagina di destinazione {#referring-a-component-from-landing-page}
 

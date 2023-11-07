@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint EJB a un 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -84,7 +84,7 @@ Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint EJB a un 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -174,7 +174,7 @@ Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint SOAP a un
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -183,7 +183,7 @@ Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint SOAP a un
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -278,7 +278,7 @@ Includi nel progetto il file WatchedFolderEndpointConfigConstants.java in modo d
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -287,7 +287,7 @@ Includi nel progetto il file WatchedFolderEndpointConfigConstants.java in modo d
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -413,7 +413,7 @@ Includi nel progetto il file EmailEndpointConfigConstants.java in modo da poter 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -422,7 +422,7 @@ Includi nel progetto il file EmailEndpointConfigConstants.java in modo da poter 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -461,7 +461,7 @@ Includi nel progetto il file EmailEndpointConfigConstants.java in modo da poter 
          //Create an EndpointRegistryClient object
          EndpointRegistryClient endPointClient = new EndpointRegistryClient(myFactory);
  
-         //Create a new Email endpoint for the MyApplication/EncryptDocument process
+         //Create an Email endpoint for the MyApplication/EncryptDocument process
          CreateEndpointInfo e = new CreateEndpointInfo();
          e.setConnectorId("Email");
          e.setDescription("Email endpoint for the MyApplication/EncryptDocument proces");
@@ -552,7 +552,7 @@ Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint remoto a 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -561,7 +561,7 @@ Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint remoto a 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -657,7 +657,7 @@ Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint TaskManag
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -666,7 +666,7 @@ Nell&#39;esempio di codice Java™ seguente viene aggiunto un endpoint TaskManag
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -766,7 +766,7 @@ Il seguente esempio di codice Java™ modifica un endpoint di cartella controlla
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -775,7 +775,7 @@ Il seguente esempio di codice Java™ modifica un endpoint di cartella controlla
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -916,7 +916,7 @@ Il codice Java™ seguente rimuove un endpoint EJB da un servizio denominato *My
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -925,7 +925,7 @@ Il codice Java™ seguente rimuove un endpoint EJB da un servizio denominato *My
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1035,7 +1035,7 @@ Il codice Java™ seguente recupera informazioni su un endpoint di cartella cont
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1044,7 +1044,7 @@ Il codice Java™ seguente recupera informazioni su un endpoint di cartella cont
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *

@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1959'
 ht-degree: 25%
 
 ---
@@ -235,9 +235,9 @@ Frammenti di contenuto:
 
 #### Modelli di contenuto e frammenti di contenuto {#content-models-and-content-fragments}
 
-Attualmente i modelli che definiscono la struttura di un frammento di contenuto non sono esposti tramite un’API HTTP. Pertanto, il *consumer* deve conoscere il modello di un frammento (almeno come minimo), anche se la maggior parte delle informazioni può essere dedotta dal payload; come tipi di dati, ecc. fanno parte della definizione.
+Attualmente i modelli che definiscono la struttura di un frammento di contenuto non sono esposti tramite un’API HTTP. Pertanto, il *consumer* deve conoscere (come minimo) il modello di un frammento, anche se la maggior parte delle informazioni può essere dedotta dal payload, come tipi di dati e così via. fanno parte della definizione.
 
-Per creare un nuovo frammento di contenuto, è necessario fornire il percorso (archivio interno) del modello.
+Per creare un frammento di contenuto, è necessario fornire il percorso (archivio interno) del modello.
 
 #### Contenuto associato {#associated-content}
 
@@ -307,7 +307,7 @@ L’utilizzo avviene tramite:
 
 Esistono alcune limitazioni:
 
-* **I modelli per frammenti di contenuto non sono attualmente supportati**: non possono essere letti o creati. Per poter creare un nuovo frammento di contenuto o aggiornarne uno esistente, gli sviluppatori devono conoscere il percorso corretto del modello per frammenti di contenuto. Attualmente, l’unico metodo per ottenere una panoramica di questi è tramite l’interfaccia utente di amministrazione.
+* **I modelli per frammenti di contenuto non sono attualmente supportati**: non possono essere letti o creati. Per poter creare un frammento di contenuto o aggiornarne uno esistente, gli sviluppatori devono conoscere il percorso corretto del modello per frammenti di contenuto. Attualmente, l’unico metodo per ottenere una panoramica di questi è tramite l’interfaccia utente di amministrazione.
 * **I riferimenti vengono ignorati**. Al momento non sono presenti controlli per verificare se viene fatto riferimento a un frammento di contenuto esistente. Pertanto, ad esempio, l’eliminazione di un frammento di contenuto potrebbe causare problemi in una pagina che contiene un riferimento al frammento di contenuto eliminato.
 * **Tipo di dati JSON** L’output REST API di *Tipo di dati JSON* è attualmente *output basato su stringhe*.
 

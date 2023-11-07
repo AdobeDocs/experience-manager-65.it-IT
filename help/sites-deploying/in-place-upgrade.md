@@ -4,9 +4,9 @@ description: Scopri come eseguire un aggiornamento sul posto per AEM 6.5.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Prima di eseguire l’aggiornamento, è necessario completare diversi passaggi. Consulta [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) e [Attività di manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) per ulteriori informazioni. Inoltre, assicurati che il sistema soddisfi i requisiti per la nuova versione dell’AEM. Scopri in che modo il rilevatore pattern può aiutarti a stimare la complessità dell’aggiornamento e consulta anche la sezione Ambito e requisiti dell’aggiornamento di [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md) per ulteriori informazioni.
 
-<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Prerequisiti per la migrazione {#migration-prerequisites}
 
@@ -127,7 +127,7 @@ Mentre `FileDataStore` è la nuova impostazione predefinita per le installazioni
 
 ## Risoluzione dei problemi di migrazione {#troubleshooting-migration-issues}
 
-Ignorare questa sezione se si esegue l&#39;aggiornamento dalla versione 6.3. Anche se i profili crx2oak forniti devono soddisfare le esigenze della maggior parte dei clienti, ci sono momenti in cui saranno necessari parametri aggiuntivi. Se riscontri un errore durante la migrazione, è possibile che alcuni aspetti dell’ambiente richiedano l’inserimento di opzioni di configurazione aggiuntive. In tal caso, è probabile che si verifichi il seguente errore:
+Ignora questa sezione se stai eseguendo l&#39;aggiornamento da 6.3. Anche se i profili crx2oak forniti devono soddisfare le esigenze della maggior parte dei clienti, ci sono momenti in cui saranno necessari parametri aggiuntivi. Se riscontri un errore durante la migrazione, è possibile che alcuni aspetti dell’ambiente richiedano l’inserimento di opzioni di configurazione aggiuntive. In tal caso, è probabile che si verifichi il seguente errore:
 
 **I punti di controllo non verranno copiati perché non è stato specificato alcun archivio dati esterno. Questo comporterà la reindicizzazione completa dell’archivio al primo avvio. Utilizza —skip-checkpoint per forzare la migrazione oppure consulta https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration per ulteriori informazioni.**
 
@@ -161,13 +161,13 @@ Dove `/path/to/datastore` rappresenta il percorso del file datastore.
 
 ### Determinazione del comando di avvio dell&#39;aggiornamento corretto {#determining-the-correct-upgrade-start-command}
 
-Per eseguire l’aggiornamento, è importante avviare AEM utilizzando il file jar per visualizzare l’istanza. Per l’aggiornamento alla versione 6.5, consulta anche altre opzioni di ristrutturazione e migrazione dei contenuti in [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md) che è possibile scegliere con il comando di aggiornamento.
+Per eseguire l’aggiornamento, è importante avviare AEM utilizzando il file jar per visualizzare l’istanza. Per l’aggiornamento alla versione 6.5, consulta Altre opzioni di ristrutturazione e migrazione dei contenuti in [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md) che è possibile scegliere con il comando di aggiornamento.
 
 >[!IMPORTANT]
 >
->Se esegui Oracle Java 11 (o in genere versioni di Java più recenti di 8), sarà necessario aggiungere opzioni aggiuntive alla riga di comando all’avvio dell’AEM. Per ulteriori informazioni, consulta [Considerazioni su Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Se si esegue Oracle Java 11 (o generalmente versioni di Java più recenti di 8), è necessario aggiungere opzioni aggiuntive alla riga di comando all&#39;avvio dell&#39;AEM. Per ulteriori informazioni, consulta [Considerazioni su Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Tieni presente che l’avvio dell’AEM dallo script di avvio non avvierà l’aggiornamento. La maggior parte dei clienti inizia l’AEM utilizzando lo script di avvio e ha personalizzato questo script di avvio in modo da includere switch per configurazioni di ambiente come impostazioni di memoria, certificati di sicurezza, ecc. Per questo motivo, l’Adobe consiglia di seguire questa procedura per determinare il comando di aggiornamento corretto:
+Tieni presente che l’avvio dell’AEM dallo script di avvio non avvierà l’aggiornamento. La maggior parte dei clienti inizia l’AEM utilizzando lo script di avvio e ha personalizzato questo script di avvio in modo da includere gli switch per le configurazioni dell’ambiente, ad esempio le impostazioni di memoria, i certificati di sicurezza e così via. Per questo motivo, l’Adobe consiglia di seguire questa procedura per determinare il comando di aggiornamento corretto:
 
 1. In un’istanza AEM in esecuzione, esegui quanto segue dalla riga di comando:
 

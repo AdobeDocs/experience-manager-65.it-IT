@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2989'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -62,10 +62,10 @@ Per avviare una richiesta di servizio fotografico, tocca o fai clic su un proget
 
 A **Progetto servizio fotografico per prodotto** include i seguenti flussi di lavoro preconfigurati:
 
-* **Flusso di lavoro per servizio fotografico per prodotto (integrazione Commerce)**: questo flusso di lavoro sfrutta l’integrazione di commerce con il sistema di gestione delle informazioni sui prodotti (PIM) per generare automaticamente un elenco di foto per i prodotti selezionati (gerarchia). Al termine del flusso di lavoro, puoi visualizzare i dati dei prodotti come parte dei metadati della risorsa.
+* **Flusso di lavoro per servizio fotografico per prodotto (integrazione Commerce)**: questo flusso di lavoro utilizza l’integrazione con commerce e il sistema di gestione delle informazioni sui prodotti (PIM) per generare automaticamente un elenco di foto per i prodotti selezionati (gerarchia). Al termine del flusso di lavoro, puoi visualizzare i dati dei prodotti come parte dei metadati della risorsa.
 * **Flusso di lavoro per servizio fotografico per prodotto**: questo flusso di lavoro ti consente di fornire un elenco di foto invece di dipendere dall’integrazione con Commerce. Mappa le immagini caricate su un file CSV nella cartella delle risorse del progetto.
 
-Utilizza il **Servizio fotografico per prodotto (integrazione Commerce)** per mappare le risorse di immagini con i prodotti dell’AEM. Questo flusso di lavoro sfrutta l’integrazione con Commerce per collegare le immagini approvate ai dati di prodotto esistenti nel percorso `/etc/commerce`.
+Utilizza il **Servizio fotografico per prodotto (integrazione Commerce)** per mappare le risorse di immagini con i prodotti dell’AEM. Questo flusso di lavoro utilizza l’integrazione con Commerce per collegare le immagini approvate ai dati di prodotto esistenti nel percorso `/etc/commerce`.
 
 Il **Servizio fotografico per prodotto (integrazione Commerce)** il flusso di lavoro include le seguenti attività:
 
@@ -93,7 +93,7 @@ Entrambi i flussi di lavoro includono passaggi per collegare i prodotti con le r
 * Avvio di un flusso di lavoro per un progetto: illustra come avviare un servizio fotografico per un prodotto
 * Dettagli attività flusso di lavoro: fornisce dettagli sulle attività disponibili nel flusso di lavoro
 
-## Tracciamento dell’avanzamento del progetto {#tracking-project-progress}
+## Tracciamento dello stato di avanzamento del progetto {#tracking-project-progress}
 
 È possibile tenere traccia dell&#39;avanzamento di un progetto monitorando le attività attive/completate all&#39;interno di un progetto.
 
@@ -106,7 +106,7 @@ La scheda delle attività mostra l’avanzamento generale del progetto. Viene vi
 
 La scheda delle attività contiene i dettagli riportati di seguito.
 
-* Percentuale di attività attive
+* Percentuale di attività in corso
 * Percentuale di attività completate
 
 ![Scheda Attività](assets/chlimage_1-136a.png)

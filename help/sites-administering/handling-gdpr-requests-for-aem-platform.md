@@ -3,18 +3,18 @@ title: Gestione delle richieste RGPD per Adobe Experience Manager Foundation
 description: Gestione delle richieste RGPD per Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 43%
+source-wordcount: '438'
+ht-degree: 48%
 
 ---
 
-# Gestione delle richieste RGPD per Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Gestione delle richieste RGPD per la Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD, CCPA, ecc.
+>Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD, CCPA e così via.
 
 ## Supporto per il RGPD di AEM Foundation {#aem-foundation-gdpr-support}
 
@@ -38,7 +38,7 @@ A livello di AEM Foundation, i dati personali memorizzati sono il profilo utente
 
 ### API HTTP {#http-api}
 
-Come accennato, Adobe fornisce API per accedere ai dati utente, per facilitare l’automazione. Esistono diversi tipi di API che puoi utilizzare:
+Come accennato, Adobe fornisce API per l’accesso ai dati utente per facilitare l’automazione. Esistono diversi tipi di API che puoi utilizzare:
 
 **API UserProperties**
 
@@ -72,7 +72,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Disattiva utente {#disable-user}
 
 1. Apri la console User Administration e cerca l’utente in questione, come descritto sopra.
-1. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è selezionato.
+1. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è stato selezionato.
 
 1. Premi il pulsante Disattiva nel menu superiore per disabilitare l’utente:
 
@@ -88,7 +88,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Eliminare informazioni sul profilo utente {#delete-user-profile-information}
 
-1. Accedi a CRXDE Lite, quindi cerca il `[!UICONTROL userId]`:
+1. Accedi a CRXDE Liti, quindi cerca il `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 

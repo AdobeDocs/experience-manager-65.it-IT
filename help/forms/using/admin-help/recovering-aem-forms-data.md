@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -71,15 +71,15 @@ Se un singolo nodo di un cluster multinodo non riesce e i nodi rimanenti del clu
 
    * (JBoss®) Rinomina `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` a:
 
-      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
+     `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
    * (WebLogic) Rinomina `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` a:
 
-      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
+     `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
    * (WebSphere®) Rinomina `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` a:
 
-      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
+     `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. Ripristinare la directory radice di archiviazione dei contenuti eliminando prima il contenuto della directory radice di archiviazione dei contenuti nell’installazione esistente dei moduli AEM e quindi recuperando i contenuti seguendo le attività per gli ambienti autonomi o cluster:
 
@@ -99,13 +99,13 @@ Se un singolo nodo di un cluster multinodo non riesce e i nodi rimanenti del clu
 
    * **Standalone**
 
-      *Ripristinare le istanze di authoring e pubblicazione*: in caso di guasto, è possibile ripristinare l&#39;ultimo stato di backup dell&#39;archivio eseguendo i passaggi descritti in [Backup e ripristino.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *Ripristinare le istanze di authoring e pubblicazione*: in caso di guasto, è possibile ripristinare l&#39;ultimo stato di backup dell&#39;archivio eseguendo i passaggi descritti in [Backup e ripristino.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
-      Il ripristino completo del nodo Author verifica anche il ripristino dei dati di Forms Manager e AEM Forms Workspace.
+     Il ripristino completo del nodo Author verifica anche il ripristino dei dati di Forms Manager e AEM Forms Workspace.
 
    * **Clustered**
 
-      Per il ripristino in un ambiente cluster, vedere [Strategia di backup e ripristino in un ambiente cluster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
+     Per il ripristino in un ambiente cluster, vedere [Strategia di backup e ripristino in un ambiente cluster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Eliminare tutti i file temporanei dei moduli AEM creati nella directory java.io.temp o nella directory temporanea di Adobe.
 1. Avviare i moduli AEM (vedere [Avvio e arresto dei servizi](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
@@ -128,7 +128,7 @@ Se il GDS viene ripristinato in una posizione diversa da quella originale, esegu
 
 ## Ripristino di GDS in un ambiente cluster {#recovering-the-gds-to-a-clustered-environment}
 
-Per modificare la posizione GDS in un ambiente cluster, arrestare l&#39;intero cluster ed eseguire lo script LCSetGDS su un singolo nodo del cluster. (vedere [Modifica della posizione GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Avvia solo quel nodo. Quando il nodo è completamente avviato, è possibile che altri nodi del cluster vengano avviati in modo sicuro e puntino correttamente al nuovo GDS.
+Per modificare la posizione GDS in un ambiente cluster, arrestare l&#39;intero cluster ed eseguire lo script LCSetGDS su un singolo nodo del cluster. (vedere [Modifica della posizione GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Avvia solo quel nodo. Quando il nodo è completamente avviato, gli altri nodi del cluster possono essere avviati in modo sicuro e punteranno correttamente al nuovo GDS.
 
 >[!NOTE]
 >

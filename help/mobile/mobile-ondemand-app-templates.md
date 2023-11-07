@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ AEM Mobile On-Demand fornisce un modello di app, un modello di articolo e compon
 
 L&#39;app We.Unlimited è un modello di esempio che rappresenta la shell di un&#39;applicazione AEM Mobile On-Demand completamente configurabile e gestibile.
 
-La selezione di questo modello di esempio durante la creazione di una nuova app offre una dashboard con funzioni avanzate di AEM Mobile.
+La selezione di questo modello di esempio durante la creazione di un’app offre una dashboard con funzioni avanzate di AEM Mobile.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -36,13 +36,13 @@ La selezione di questo modello di esempio durante la creazione di una nuova app 
 
 ## Creazione di modelli di app {#creating-app-templates}
 
-Un modello di app viene utilizzato per creare una nuova app e funge da raccolta di modelli di pagina e componenti che rappresentano una linea di base o una base di un’app. Il modello timbra alcune proprietà fondamentali per condurre l’app nel modo appropriato. In generale, un cliente non creerebbe troppe app in totale.
+Un modello di app viene utilizzato per creare un’app e funge da raccolta di modelli di pagina e componenti che rappresentano una linea di base o le basi di un’app. Il modello timbra alcune proprietà fondamentali per condurre l’app nel modo appropriato. In generale, un cliente non creerebbe troppe app in totale.
 
-I modelli di app consentono di sfruttare facilmente le progettazioni esistenti create dagli sviluppatori e utilizzate per la creazione di nuove app nell’ambito dell’AEM.
+I modelli di app offrono un modo semplice di utilizzare le progettazioni esistenti create dagli sviluppatori e utilizzate per la creazione di nuove app nell’ambito dell’AEM.
 
-Quando crei una nuova app basata sul modello di un’altra app, otterrai un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.
+Quando crei un’app basata sul modello di un’altra app, otterrai un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.
 
-Passaggi per creare una nuova app basata su un modello di app:
+Passaggi per creare un’app basata su un modello di app:
 
 1. Passa al catalogo delle app AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Seleziona **Crea** —> **App** come mostrato di seguito
@@ -51,7 +51,7 @@ Dopo aver creato un’app utilizzando questo modello, puoi aggiungere all’app 
 
 >[!NOTE]
 >
->In alternativa, puoi anche selezionare un modello di app di esempio, ad esempio **We.Unlimited** , messo a tua disposizione da uno sviluppatore AEM. Se utilizzi questo modello di esempio per la tua app, otterrai alcuni articoli e raccolte di esempio su cui lavorare. Potrai utilizzare i modelli e i componenti di esempio, personalizzare quelli esistenti o crearne di nuovi per la tua app.
+>In alternativa, puoi anche selezionare un modello di app di esempio, ad esempio, **We.Unlimited** , messo a tua disposizione da uno sviluppatore AEM. Se utilizzi questo modello di esempio per la tua app, otterrai alcuni articoli e raccolte di esempio su cui lavorare. Potrai utilizzare i modelli e i componenti di esempio, personalizzare quelli esistenti o crearne di nuovi per la tua app.
 
 >[!CAUTION]
 >
@@ -75,7 +75,7 @@ Ogni tipo di entità dispone di due modelli predefiniti. Secondo questi principi
 
 L’articolo Unlimited è un modello di esempio che rappresenta un layout di articolo AEM Mobile On-Demand tipico.
 
-1. Fai clic su **+** in **Gestisci articoli** per creare un nuovo articolo. Puoi scegliere una delle seguenti opzioni: **Articolo Unlimited** o un **Articolo Rich Text**. L’immagine seguente mostra l’opzione che consente di scegliere uno di questi due modelli di articolo.
+1. In entrata **Gestisci articoli**, seleziona **+**  per creare un articolo. Puoi scegliere una delle seguenti opzioni: **Articolo Unlimited** o un **Articolo Rich Text**. L’immagine seguente mostra l’opzione che consente di scegliere uno di questi due modelli di articolo.
 
 1. Clic **Successivo** per definire i metadati di un articolo, ad esempio nome/titolo dell’articolo, descrizione, autore, riassunto, reparto, immagine miniatura, accesso all’articolo e così via.
 1. Clic **Successivo** per compilare le Proprietà annuncio.
@@ -149,7 +149,7 @@ Una volta che il componente è già stato incluso in una pagina AEM, insieme ad 
 
 >[!NOTE]
 >
->Puoi creare un componente in AEM e personalizzarlo utilizzando [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Dopo aver personalizzato il componente esistente in base alle tue esigenze, puoi aggiungerlo alla pagina utilizzando **Modifica** opzione in **Gestisci articoli** come illustrato nella figura precedente.
+>Puoi creare un componente in AEM e personalizzarlo utilizzando [Sviluppo con CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md). Dopo aver personalizzato il componente esistente in base alle tue esigenze, puoi aggiungerlo alla pagina utilizzando **Modifica** opzione in **Gestisci articoli** come illustrato nella figura precedente.
 
 >[!NOTE]
 >

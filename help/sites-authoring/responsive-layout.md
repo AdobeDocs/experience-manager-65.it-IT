@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 65%
+source-wordcount: '1795'
+ht-degree: 63%
 
 ---
 
@@ -24,7 +24,7 @@ Questo fornisce un sistema paragrafo che consente di posizionare i componenti al
 Il contenitore layout:
 
 * Consente di eseguire l’aggancio orizzontale alla griglia, oltre alla possibilità di posizionare i componenti affiancati nella griglia e di definire quando devono essere compressi o ridisposti.
-* Utilizza punti di interruzione predefiniti (ad esempio per telefoni, tablet ecc.) per consentirti di definire il comportamento richiesto dei contenuti per i dispositivi o gli orientamenti correlati.
+* Utilizza punti di interruzione predefiniti (ad esempio, per telefono, tablet e così via) per consentirti di definire il comportamento richiesto dei contenuti per i dispositivi e l’orientamento correlati.
 
    * Ad esempio, puoi personalizzare la dimensione del componente o specificare se può essere visualizzato su dispositivi specifici.
 
@@ -61,7 +61,7 @@ A seconda del progetto, il Contenitore di layout può essere usato come il siste
 
 >[!NOTE]
 >
->Adobe fornisce la [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) relativa al layout dinamico come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia di AEM fuori da AEM, ad esempio quando si crea uno schema HTML statico per un futuro sito AEM.
+>Adobe fornisce [Documentazione di GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento che può essere dato agli sviluppatori front-end consentendo loro di utilizzare la griglia AEM al di fuori dell’AEM, ad esempio, quando si creano modelli statici di HTML per un futuro sito AEM.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
    ![Emulatore](do-not-localize/screen_shot_2018-03-23at084256.png)
 
-1. Viene aperta la barra degli strumenti dell’emulatore.
+1. Viene visualizzata la barra degli strumenti dell’emulatore.
 
    ![screen_shot_2018-03-23at084551](assets/screen_shot_2018-03-23at084551.png)
 
@@ -182,7 +182,7 @@ Come con altri componenti, puoi selezionare e quindi intervenire (opzioni Copia,
 
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
 
-1. In questo modo viene messa evidenziata l’intera griglia con il relativo contenuto. Viene visualizzata la barra degli strumenti delle azioni, da cui è possibile selezionare un’azione, ad esempio **Elimina**.
+1. In questo modo viene messa evidenziata l’intera griglia con il relativo contenuto. Viene visualizzata la barra degli strumenti delle azioni, da cui è possibile selezionare un’azione, ad esempio **Elimina.**
 
    ![screen_shot_2018-03-23at085724](assets/screen_shot_2018-03-23at085724.png)
 
@@ -208,7 +208,7 @@ La modalità **Layout** può essere avviata in due modi.
 
 In modalità layout è possibile eseguire varie azioni su una griglia:
 
-* Ridimensiona i componenti di contenuto utilizzando i punti blu. Il ridimensionamento viene sempre eseguito con la funzione Aggancia alla griglia. Quando si ridimensiona la griglia di sfondo, viene mostrato come facilitare l’allineamento:
+* Ridimensiona i componenti di contenuto utilizzando i punti blu. Il ridimensionamento viene sempre eseguito con la funzione Aggancia alla griglia. Durante il ridimensionamento, viene visualizzata la griglia di sfondo per facilitare l’allineamento:
 
   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 

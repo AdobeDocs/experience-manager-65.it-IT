@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Developer Tools, Asset Management
 role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 1%
@@ -82,7 +82,7 @@ La schermata iniziale fornisce semplici strumenti di navigazione, ad esempio ico
 
 >[!CAUTION]
 >
->Acquisizione, filtraggio ed eliminazione delle attività utente necessarie per [!DNL Assets] La pagina Home di impone un sovraccarico sulle prestazioni. Pertanto, gli amministratori devono configurare la Home Page in modo efficace per gli utenti di destinazione.
+>Acquisizione, filtraggio ed eliminazione delle attività utente necessarie per [!DNL Assets] La pagina Home di impone un sovraccarico sulle prestazioni. Pertanto, gli amministratori devono configurare la pagina Home in modo efficace per gli utenti target.
 >
 >L’Adobe consiglia agli amministratori e agli utenti che eseguono operazioni in blocco di evitare di utilizzare la funzione Pagina iniziale risorse per impedire un aumento delle attività degli utenti. Inoltre, gli amministratori possono escludere le attività di registrazione per utenti specifici configurando [!UICONTROL Day CQ DAM Event Recorder] da [!UICONTROL Gestione configurazione].
 >

@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Sono disponibili più versioni dei file di installazione di ImageMagic per vari 
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
-1. In **[!UICONTROL Comandi]** immetti il seguente comando:
+1. In **[!UICONTROL Comandi]** immetti il comando seguente:
 
    `convert ./${filename} -flip ./${basename}.flipped.jpg`
 
@@ -60,7 +60,7 @@ Sono disponibili più versioni dei file di installazione di ImageMagic per vari 
 
    >[!NOTE]
    >
-   >Il `convert` potrebbe non essere eseguito con alcune versioni di Windows (ad esempio Windows SE), perché è in conflitto con il `convert` che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo dell&#39;utility ImageMagick. Ad esempio, specifica:
+   >Il `convert` potrebbe non essere eseguito con alcune versioni di Windows (ad esempio, Windows SE), perché è in conflitto con il `convert` che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo dell&#39;utility ImageMagick. Ad esempio, specifica:
    >
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`

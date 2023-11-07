@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Adobe Campaign Prima di tutto, verifica che la connessione tra le istanze di aut
 >Assicurati che le **acMapping** proprietà nel file della pagina **jcr:content** nodo impostato su **mapRecipient** o **profilo** quando si utilizza rispettivamente Adobe Campaign Classic o Adobe Campaign Standard
 >
 
-1. In AEM, in Sites, individua il punto in cui desideri creare una nuova pagina.
+1. In AEM, in Sites, individua il punto in cui desideri creare una pagina.
 1. Crea una pagina e seleziona **Profilo Adobe Campaign Classic** o **Profilo Adobe Campaign Standard** e fai clic su **Successivo**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
@@ -95,7 +95,7 @@ Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulter
    * **Adobe Campaign: abbonati ai servizi**: consente di gestire gli abbonamenti di un destinatario in Adobe Campaign.
    * **Adobe Campaign: Annulla iscrizione a servizi**: consente di annullare gli abbonamenti di un destinatario in Adobe Campaign.
 
-1. Devi avere un **Chiave principale crittografata** in ogni modulo. Questo componente definisce il parametro URL da utilizzare per accettare la chiave primaria crittografata di un profilo Adobe Campaign. In Componenti, seleziona Adobe Campaign in modo che siano visibili solo i componenti.
+1. Devi avere un **Chiave principale crittografata** in ogni modulo. Questo componente definisce quale parametro URL viene utilizzato per accettare la chiave primaria crittografata di un profilo Adobe Campaign. In Componenti, seleziona Adobe Campaign in modo che siano visibili solo i componenti.
 1. Trascina il componente **Chiave principale crittografata** nel modulo (ovunque) e tocca o fai clic sul pulsante **Configurazione** icona. In **Adobe Campaign** , specifica un nome per il parametro URL. Tocca o fai clic sul segno di spunta per salvare le modifiche.
 
    I collegamenti generati a questo modulo devono utilizzare questo parametro URL e assegnargli la chiave primaria crittografata di un profilo Adobe Campaign. La chiave primaria crittografata deve essere correttamente codificata nell&#39;URL (percentuale).

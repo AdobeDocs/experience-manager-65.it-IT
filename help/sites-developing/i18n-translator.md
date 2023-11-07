@@ -1,18 +1,14 @@
 ---
 title: Utilizzo di Translator per gestire i dizionari
-seo-title: Using Translator to Manage Dictionaries
 description: AEM fornisce una console per gestire le varie traduzioni di testi utilizzati nell’interfaccia utente dei componenti
-seo-description: AEM provides a console for managing the various translations of texts used in component UI
-uuid: 4eea3110-e958-473e-8d22-c84fa435edbd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2320'
 ht-degree: 1%
 
 ---
@@ -23,9 +19,9 @@ L’AEM fornisce una console per gestire le varie traduzioni di testi utilizzati
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
-Utilizza lo strumento di traduzione per gestire le stringhe in inglese e le relative traduzioni. I dizionari vengono creati nell’archivio, ad esempio /apps/myproject/i18n.
+Utilizza lo strumento di traduzione per gestire le stringhe in inglese e le relative traduzioni. I dizionari vengono creati nell’archivio, ad esempio, /apps/myproject/i18n.
 
-Lo strumento Traduttore e i dizionari gestiti sono utili per presentare l’interfaccia utente dei componenti in lingue diverse. Se desideri tradurre la pagina o il contenuto generato dall’utente, consulta [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md) e [Traduzione di contenuti generati dagli utenti](/help/communities/translate-ugc.md).
+Lo strumento Traduttore e i dizionari gestiti servono per presentare l’interfaccia utente dei componenti in lingue diverse. Se desideri tradurre la pagina o il contenuto generato dall’utente, consulta [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md) e [Traduzione di contenuti generati dagli utenti](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
@@ -43,7 +39,7 @@ La traduttrice elenca i testi utilizzati in AEM insieme alle varie traduzioni li
 
 Puoi cercare, filtrare e modificare i testi in inglese e tradotto. È inoltre possibile esportare i dizionari in formato XLIFF per la traduzione, quindi importare nuovamente le traduzioni nei dizionari.
 
-Da questa console è inoltre possibile aggiungere i dizionari i18n a un progetto di traduzione. Puoi crearne uno nuovo o aggiungerlo a un progetto esistente.
+Da questa console è inoltre possibile aggiungere i dizionari i18n a un progetto di traduzione. Puoi crearne uno o aggiungerlo a un progetto esistente.
 
 1. Clic **Traduci dizionario**.
 
@@ -283,7 +279,7 @@ Lo strumento Traduttore include le seguenti lingue nella tabella del dizionario:
 
 Per aggiungere o rimuovere lingue, attenersi alla procedura descritta di seguito.
 
-1. Utilizzando CRXDE Liti, crea un nuovo nodo:
+1. Utilizzando CRXDE Liti, crea un nodo:
 
    `/etc/languages`
 
@@ -341,7 +337,7 @@ I paesi predefiniti vengono utilizzati quando vengono visualizzati i flag (ad es
 
 >[!NOTE]
 >
->Per le localizzazioni gestite dal traduttore qui sopra, funziona solo la lingua esatta. Se l’elenco a discesa delle preferenze della lingua utilizza `en_uk`, deve essere presente `en_uk` dizionario nell’archivio.
+>Per le localizzazioni gestite dal traduttore qui sopra, funziona solo la lingua esatta. Se il menu a discesa delle preferenze della lingua utilizza `en_uk`, deve essere presente `en_uk` dizionario nell’archivio.
 
 Per modificare le definizioni predefinite:
 
@@ -382,7 +378,7 @@ Analogamente, il test delle stringhe di dizionario deve essere eseguito come par
 
 >[!NOTE]
 >
->La funzionalità di pubblicazione regolare, o replica, non deve essere utilizzata per i dizionari. Al contrario, i dizionari devono essere trattati allo stesso modo del codice e della configurazione. Ciò include l’utilizzo del controllo del codice sorgente per tenere traccia delle modifiche e l’utilizzo di pacchetti di contenuti per applicare le modifiche all’authoring e alla pubblicazione.
+>Non utilizzare la normale funzionalità di pubblicazione o replica per i dizionari. Al contrario, i dizionari devono essere trattati allo stesso modo del codice e della configurazione. Ciò include l’utilizzo del controllo del codice sorgente per tenere traccia delle modifiche e l’utilizzo di pacchetti di contenuti per applicare le modifiche all’authoring e alla pubblicazione.
 
 >[!NOTE]
 >

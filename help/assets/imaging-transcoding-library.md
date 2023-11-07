@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -56,10 +56,10 @@ Gli argomenti della riga di comando per Imaging Transcoding Library possono incl
 
 Puoi configurare le seguenti opzioni per `-resize` parametro:
 
-* `X`: funziona in modo simile a [!DNL Experience Manager]. Ad esempio -resize 319.
-* `WxH`: le proporzioni non vengono mantenute, ad esempio `-resize 319x319`.
-* `Wx`: corregge la larghezza e calcola l’altezza mantenendo le proporzioni. Esempio `-resize 319x`.
-* `xH`: corregge l’altezza e calcola la larghezza mantenendo le proporzioni. Esempio `-resize x319`.
+* `X`: funziona in modo simile a [!DNL Experience Manager]. Ad esempio, -resize 319.
+* `WxH`: le proporzioni non vengono mantenute. Ad esempio, `-resize 319x319`.
+* `Wx`: corregge la larghezza e calcola l’altezza mantenendo le proporzioni. Esempio: `-resize 319x`.
+* `xH`: corregge l’altezza e calcola la larghezza mantenendo le proporzioni. Esempio: `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)

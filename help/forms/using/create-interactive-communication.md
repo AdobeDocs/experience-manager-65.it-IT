@@ -10,9 +10,9 @@ discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6169'
+source-wordcount: '6168'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ Tocca il frammento del documento e tocca ![configure_icon](assets/configure_icon
 
    Accedi a [Variabili e oggetti modello dati](../../forms/using/create-interactive-communication.md#hiddenvariables) per impostare l’associazione delle variabili nascoste nel frammento di documento.
 
-   È inoltre possibile trascinare elementi dell’origine dati o frammenti di documenti di testo per impostare l’associazione delle variabili.  Per creare un&#39;associazione con uno qualsiasi degli elementi dell&#39;origine dati, selezionare **Origini dati** e trascina l’elemento sul nome della variabile. L&#39;elemento e la variabile dell&#39;origine dati devono essere dello stesso tipo per impostare correttamente l&#39;associazione. Se si trascina un elemento origine dati su una variabile già associata, il nuovo elemento sostituisce il precedente per creare una nuova associazione con la variabile. Allo stesso modo, seleziona la **Risorse** e trascina il frammento di documento di testo sul nome della variabile per impostare l’associazione tra di essi. Il frammento di documento di testo non deve contenere variabili.
+   È inoltre possibile trascinare elementi dell’origine dati o frammenti di documenti di testo per impostare l’associazione delle variabili.  Per creare un&#39;associazione con uno qualsiasi degli elementi dell&#39;origine dati, selezionare **Origini dati** e trascina l’elemento sul nome della variabile. L&#39;elemento e la variabile dell&#39;origine dati devono essere dello stesso tipo per impostare correttamente l&#39;associazione. Se trascini un elemento origine dati su una variabile già associata, il nuovo elemento sostituisce il precedente per creare un&#39;associazione con la variabile. Allo stesso modo, seleziona la **Risorse** e trascina il frammento di documento di testo sul nome della variabile per impostare l’associazione tra di essi. Il frammento di documento di testo non deve contenere variabili.
 
 1. Per aggiungere una tabella, con il canale di stampa selezionato, nel **[!UICONTROL Risorse]** applica il filtro per visualizzare solo i frammenti di layout. Trascina il frammento di layout richiesto nella comunicazione interattiva. Un frammento di layout è basato su un XDP e può essere utilizzato per creare layout grafici o tabelle statiche e dinamiche in Comunicazione interattiva che vengono compilate con dati dinamici.
 

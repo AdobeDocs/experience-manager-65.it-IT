@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2796'
+source-wordcount: '2798'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ I requisiti di dimensionamento dell&#39;hardware per i casi d&#39;uso avanzati d
 
 Lo spazio su disco necessario dipende in larga misura dal volume e dal tipo dell&#39;applicazione Web. I calcoli devono tenere conto dei seguenti elementi:
 
-* la quantità e le dimensioni di pagine, risorse e altre entità memorizzate nell’archivio come flussi di lavoro, profili e così via.
+* la quantità e le dimensioni di pagine, risorse e altre entità memorizzate nell’archivio, ad esempio flussi di lavoro, profili e così via.
 * la frequenza stimata delle modifiche ai contenuti e quindi la creazione di versioni dei contenuti
 * volume delle rappresentazioni delle risorse DAM che verranno generate
 * la crescita complessiva dei contenuti nel tempo

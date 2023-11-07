@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: c7e30587a37b8bf20932b43549ab38c668bd75af
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3693'
 ht-degree: 1%
 
 ---
@@ -462,7 +462,7 @@ Inoltre:
 - PDF Generator non supporta Microsoft® Office 365.
 - Le conversioni PDF Generator per OpenOffice sono supportate solo in Windows e Linux®.
 - Le funzionalità PDF OCR, Optimize PDF e Export PDF sono supportate solo in Windows.
-- Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. È consigliabile accedere alla versione in bundle solo a livello di programmazione con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta Descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+- Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. È consigliabile accedere alla versione in bundle solo a livello di programmazione con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta Descrizione del prodotto AEM Forms in base alla tua implementazione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 - Il servizio PDF Generator non supporta Microsoft® Windows 10.
 -PDF Generator non riesce a convertire i file utilizzando Microsoft® Visio 2019. È possibile continuare a utilizzare Microsoft® Visio 2016 per convertire i file VSD e VSDX.
 - PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019. È possibile continuare a utilizzare Microsoft® Project 2016 per convertire i file MPP.

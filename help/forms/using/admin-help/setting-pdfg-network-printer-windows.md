@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Per configurare una stampante di rete PDFG sono necessari i seguenti passaggi:
 
    * Nome del servizio da richiamare
    * Nome dell&#39;operazione del servizio da richiamare
-   * Nome del parametro di input, come specificato nel file component.xml del servizio o del processo. Il documento PDF verrà utilizzato come valore per il parametro di input.
+   * Nome del parametro di input, come specificato nel file component.xml del servizio o del processo. Il documento PDF viene utilizzato come valore per il parametro di input.
 
 1. Fai clic su Salva.
 
@@ -63,6 +63,6 @@ Gli utenti che hanno il ruolo Amministratore PDFG o Utente PDFG possono installa
 
 1. In Installazione stampante di rete PDFG, fare clic sul collegamento. Quando vengono richieste informazioni sull&#39;account utente, specificare il nome utente e la password utilizzati nel passaggio 1 per l&#39;accesso. Viene visualizzato un messaggio che indica che la stampante è stata installata correttamente.
 
-   ***nota **: se la password dell&#39;utente cambia, gli utenti dovranno reinstallare la stampante di rete PDFG sui propri computer. Non è possibile aggiornare la password dalla console di amministrazione.*
+   ***nota **: se la password dell&#39;utente cambia, gli utenti devono reinstallare la stampante di rete PDFG sui propri computer. Non è possibile aggiornare la password dalla console di amministrazione.*
 
 1. Fai clic su OK.

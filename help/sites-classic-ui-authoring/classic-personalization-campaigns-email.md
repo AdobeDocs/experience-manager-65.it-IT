@@ -1,19 +1,15 @@
 ---
 title: E-mail marketing
-seo-title: E-mail Marketing
 description: Il marketing via e-mail (ad esempio le newsletter) è una parte importante di qualsiasi campagna di marketing, in quanto viene utilizzato per inviare contenuti ai lead. In AEM, puoi creare newsletter da contenuti AEM esistenti e aggiungere nuovi contenuti, specifici alle newsletter.
-seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1764'
 ht-degree: 1%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >L’Adobe non prevede di migliorare ulteriormente il tracciamento dei messaggi e-mail di messaggi aperti/non recapitati (non consegnabili) inviati dal servizio SMTP dell’AEM.
->Si consiglia di: [sfruttare Adobe Campaign e l’integrazione con l’AEM](/help/sites-administering/campaign.md).
+>Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con l&#39;AEM](/help/sites-administering/campaign.md).
 
 Il marketing via e-mail (ad esempio le newsletter) è una parte importante di qualsiasi campagna di marketing, in quanto viene utilizzato per inviare contenuti ai lead. In AEM, puoi creare newsletter da contenuti AEM esistenti e aggiungere nuovi contenuti, specifici alle newsletter.
 
@@ -67,7 +63,7 @@ Questo documento descrive le nozioni di base sulla creazione di newsletter in AE
 
 1. Fai clic su **Crea**.
 
-1. Si aprirà immediatamente una nuova finestra di dialogo. Qui puoi immettere le proprietà per la newsletter.
+1. Viene immediatamente visualizzata una nuova finestra di dialogo. Qui puoi immettere le proprietà per la newsletter.
 
    Il **Elenco destinatari predefiniti** è un campo obbligatorio in quanto costituisce il punto di contatto per la newsletter (consulta [Utilizzo degli elenchi](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) per ulteriori informazioni sugli elenchi).
 
@@ -173,7 +169,7 @@ Per passare da un client all&#39;altro, fare clic sull&#39;icona corrispondente 
 Anche se solo gli utenti autorizzati possono inviare una newsletter, è necessario personalizzare quanto segue:
 
 * L’oggetto, in modo che gli utenti desiderino aprire l’e-mail e anche per garantire che la newsletter non venga contrassegnata come spam.
-* L&#39;indirizzo Da, ad esempio noreply@geometrixx.com, in modo che gli utenti ricevano la posta elettronica da un indirizzo specificato.
+* L&#39;indirizzo del mittente, ad esempio `noreply@geometrixx.com`, in modo che gli utenti ricevano la posta elettronica da un indirizzo specificato.
 
 Per personalizzare le impostazioni delle newsletter:
 
@@ -223,7 +219,7 @@ Per visualizzare i notiziari di prova di volo:
 >[!NOTE]
 >
 >L’Adobe non prevede di migliorare ulteriormente il tracciamento dei messaggi e-mail di messaggi aperti/non recapitati (non consegnabili) inviati dal servizio SMTP dell’AEM.
->Si consiglia di: [sfruttare Adobe Campaign e l’integrazione con l’AEM](/help/sites-administering/campaign.md).
+>Si consiglia di utilizzare [Adobe Campaign e l&#39;integrazione con l&#39;AEM](/help/sites-administering/campaign.md).
 
 Puoi inviare una newsletter dalla newsletter o dall’elenco. Entrambe le procedure sono descritte.
 

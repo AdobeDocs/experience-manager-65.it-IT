@@ -1,15 +1,15 @@
 ---
 title: Firma digitale e certificazione dei documenti
-description: Utilizzare il servizio Firma per aggiungere ed eliminare campi di firma digitale in un documento PDF, recuperare i nomi dei campi di firma presenti in un documento PDF, modificare i campi di firma, firmare digitalmente i documenti PDF, certificare i documenti PDF, convalidare le firme digitali presenti in un documento PDF, convalidare tutte le firme digitali presenti in un documento PDF e rimuovere una firma digitale da un campo di firma.
+description: Utilizzare il servizio Firma per aggiungere ed eliminare campi di firma digitale in un documento PDF, recuperare i nomi dei campi di firma in un documento PDF, modificare i campi di firma, firmare digitalmente i documenti PDF, certificare i documenti PDF, convalidare le firme digitali in un documento PDF, convalidare tutte le firme digitali in un documento PDF e rimuovere una firma digitale da un campo di firma.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '17045'
+source-wordcount: '17029'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,12 @@ Se in un documento PDF sono presenti più campi firma, è consigliabile specific
 È possibile eseguire queste attività utilizzando il servizio di firma:
 
 * Aggiungere ed eliminare campi di firma digitale in un documento PDF. (vedere [Aggiunta di campi firma](digitally-signing-certifying-documents.md#adding-signature-fields).)
-* Recuperare i nomi dei campi firma presenti in un documento PDF. (vedere [Recupero dei nomi dei campi firma](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+* Recuperare i nomi dei campi firma in un documento PDF. (vedere [Recupero dei nomi dei campi firma](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 * Modificare i campi della firma. (vedere [Modifica dei campi della firma](digitally-signing-certifying-documents.md#modifying-signature-fields).)
 * Apporre una firma digitale ai documenti PDF. (vedere [Firma digitale dei documenti di PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 * Certifica i documenti di PDF. (vedere [Certificazione dei documenti di PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* Convalidare le firme digitali che si trovano in un documento PDF. (vedere [Verifica delle firme digitali](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Convalida tutte le firme digitali presenti in un documento PDF. (vedere [Verifica di più firme digitali](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Convalidare le firme digitali in un documento PDF. (vedere [Verifica delle firme digitali](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Convalida tutte le firme digitali in un documento PDF. (vedere [Verifica di più firme digitali](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * Rimuovere una firma digitale da un campo firma. (vedere [Rimozione di firme digitali](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 >[!NOTE]
@@ -213,7 +213,7 @@ Per aggiungere un campo di firma utilizzando l’API di firma (servizio web):
 
 ## Recupero dei nomi dei campi firma {#retrieving-signature-field-names}
 
-È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è sicuri dei nomi dei campi firma che si trovano in un documento PDF o si desidera verificarli, è possibile recuperarli a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma presenti in un documento PDF o si desidera verificarli, è possibile recuperarli a livello di programmazione. Il servizio di firma restituisce il nome completo del campo della firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 >[!NOTE]
 >
@@ -347,7 +347,7 @@ Recupera i nomi dei campi della firma utilizzando Signature API (servizio web):
 
 ## Modifica dei campi della firma {#modifying-signature-fields}
 
-Puoi modificare i campi della firma che si trovano in un documento PDF utilizzando l’API Java e l’API del servizio web. La modifica di un campo di firma comporta la modifica dei valori del dizionario del blocco del campo di firma o dei valori del dizionario dei valori iniziali.
+Puoi modificare i campi della firma presenti in un documento PDF utilizzando l’API Java e l’API del servizio web. La modifica di un campo di firma comporta la modifica dei valori del dizionario del blocco del campo di firma o dei valori del dizionario dei valori iniziali.
 
 A *dizionario blocco campo* specifica un elenco di campi bloccati quando il campo firma è firmato. Un campo bloccato impedisce agli utenti di apportare modifiche al campo. A *dizionario dei valori iniziali* contiene informazioni vincolanti utilizzate al momento dell&#39;applicazione della firma. È ad esempio possibile modificare le autorizzazioni che controllano le azioni che possono essere eseguite senza invalidare una firma.
 
@@ -361,7 +361,7 @@ In questa sezione viene illustrato come modificare un campo di firma modificando
 
 ### Riepilogo dei passaggi {#summary_of_steps-2}
 
-Per modificare i campi di firma presenti in un documento di PDF, eseguire le operazioni seguenti:
+Per modificare i campi di firma in un documento PDF, eseguire le operazioni seguenti:
 
 1. Includi file di progetto.
 1. Creare un client di firma.
@@ -816,7 +816,7 @@ Per firmare digitalmente un documento PDF utilizzando l’API di firma (servizio
 
 È possibile firmare un modulo interattivo creato dal servizio Forms. Ad esempio, considera il seguente flusso di lavoro:
 
-* È possibile unire un modulo PDF basato su XFA creato utilizzando Designer e i dati del modulo presenti in un documento XML utilizzando il servizio Forms. Il server Forms esegue il rendering di un modulo interattivo.
+* È possibile unire un modulo PDF basato su XFA creato utilizzando Designer e i dati del modulo in un documento XML utilizzando il servizio Forms. Il server Forms esegue il rendering di un modulo interattivo.
 * Firmi il modulo interattivo utilizzando l’API del servizio di firma.
 
 Il risultato è un modulo PDF interattivo con firma digitale. Quando firmi un modulo PDF basato su un modulo XFA, accertati di salvare il file PDF come modulo Adobe Static PDF. Se si tenta di firmare un modulo PDF salvato come modulo Adobe Dynamic PDF, si verifica un&#39;eccezione. Poiché stai firmando il modulo restituito dal servizio Forms, accertati che il modulo contenga un campo firma.
@@ -1514,7 +1514,7 @@ Verifica una firma digitale utilizzando l’API del servizio di firma (servizio 
 
 ## Verifica di più firme digitali {#verifying-multiple-digital-signatures}
 
-AEM Forms fornisce i mezzi per verificare tutte le firme digitali che si trovano in un documento PDF. Si supponga che un documento PDF contenga più firme digitali come risultato di un processo aziendale che richiede firme da più firmatari. Ad esempio, si consideri una transazione finanziaria che richiede la firma sia di un addetto al prestito che di un manager. È possibile utilizzare l’API Java di Signature Service o l’API del servizio Web per verificare tutte le firme all’interno del documento PDF. Quando si verificano più firme digitali, è possibile controllare lo stato e le proprietà di ogni firma. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. È consigliabile avere familiarità con la verifica di una singola firma digitale.
+AEM Forms fornisce i mezzi per verificare tutte le firme digitali presenti in un documento PDF. Si supponga che un documento PDF contenga più firme digitali come risultato di un processo aziendale che richiede firme da più firmatari. Ad esempio, si consideri una transazione finanziaria che richiede la firma sia di un addetto al prestito che di un manager. È possibile utilizzare l’API Java di Signature Service o l’API del servizio Web per verificare tutte le firme all’interno del documento PDF. Quando si verificano più firme digitali, è possibile controllare lo stato e le proprietà di ogni firma. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. È consigliabile avere familiarità con la verifica di una singola firma digitale.
 
 >[!NOTE]
 >
@@ -1585,7 +1585,7 @@ La marca temporale è il processo di registrazione dell&#39;ora in cui un docume
 
 **Recupera tutte le firme digitali**
 
-Per verificare tutte le firme digitali presenti in un documento PDF, recuperare le firme digitali dal documento PDF. Tutte le firme vengono restituite in un elenco. Per verificare una firma digitale, controllare lo stato della firma.
+Per verificare tutte le firme digitali in un documento di PDF, recuperare le firme digitali dal documento di PDF. Tutte le firme vengono restituite in un elenco. Per verificare una firma digitale, controllare lo stato della firma.
 
 >[!NOTE]
 >
@@ -1641,7 +1641,7 @@ Verificare più firme digitali utilizzando l&#39;API Signature Service (Java):
    * A `PKIOptions` oggetto contenente le opzioni di runtime della PKI.
    * A `VerifySPIOptions` istanza che contiene informazioni SPI. È possibile specificare `null` per questo parametro.
 
-   Il `verifyPDFDocument` il metodo restituisce un `PDFDocumentVerificationInfo` oggetto contenente informazioni su tutte le firme digitali presenti nel documento PDF.
+   Il `verifyPDFDocument` il metodo restituisce un `PDFDocumentVerificationInfo` oggetto che contiene informazioni su tutte le firme digitali nel documento di PDF.
 
 1. Iterazione di tutte le firme
 
@@ -1707,7 +1707,7 @@ Verificare più firme digitali utilizzando l&#39;API del servizio di firma (serv
    * A `PKIOptions` oggetto contenente le opzioni di runtime della PKI.
    * A `VerifySPIOptions` istanza che contiene informazioni SPI. È possibile specificare null per questo parametro.
 
-   Il `verifyPDFDocument` il metodo restituisce un `PDFDocumentVerificationInfo` oggetto contenente informazioni su tutte le firme digitali presenti nel documento PDF.
+   Il `verifyPDFDocument` il metodo restituisce un `PDFDocumentVerificationInfo` oggetto che contiene informazioni su tutte le firme digitali nel documento di PDF.
 
 1. Iterazione di tutte le firme
 

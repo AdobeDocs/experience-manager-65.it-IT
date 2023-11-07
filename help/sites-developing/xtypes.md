@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6384'
+source-wordcount: '6381'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Questa pagina descrive tutti gli xtype disponibili con Adobe Experience Manager 
 
 Nel linguaggio ExtJS, xtype è un nome simbolico assegnato a una classe. Puoi leggere il paragrafo &quot;Component XTypes&quot; (Tipi di Targeting esperienza componenti) della [Panoramica di ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) per una spiegazione dettagliata su cosa è un xtype e come può essere utilizzato.
 
-Per informazioni complete su tutti i widget disponibili in AEM, fare riferimento al [documentazione API widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+Per informazioni complete su tutti i widget disponibili in AEM, vedere [documentazione API widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 Per individuare i componenti in cui un determinato xtype viene utilizzato in AEM, è possibile utilizzare la seguente query Xpath in CRXDE sostituendo &#39;checkbox&#39; con l&#39;xtype desiderato:
 
@@ -245,7 +245,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.wcm.CreateVersionDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.CreateVersionDialog)
 
-  CreateVersionDialog è una finestra di dialogo che consente di creare una nuova versione di una pagina.
+  CreateVersionDialog è una finestra di dialogo che consente di creare una versione di una pagina.
 
 * customcontentpanel
 
@@ -733,7 +733,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.form.SizeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SizeField)
 
-  La proprietà SizeField consente all&#39;utente di immettere la larghezza e l&#39;altezza, ad esempio per un&#39;immagine.
+  La proprietà SizeField consente di immettere la larghezza e l&#39;altezza (ad esempio, per un&#39;immagine).
 
 * cursore
 

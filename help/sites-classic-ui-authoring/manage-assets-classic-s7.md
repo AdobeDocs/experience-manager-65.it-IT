@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3532'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Per ulteriori informazioni sull’utilizzo dei componenti video con Experience M
 
 >[!NOTE]
 >
->Se le risorse Dynamic Media Classic (Scene7) non vengono visualizzate correttamente, assicurati che Dynamic Media sia [disabilitato](/help/assets/config-dynamic.md#disabling-dynamic-media) e quindi aggiorna la pagina.
+>Se le risorse Dynamic Media Classic (Scene7) non vengono visualizzate correttamente, assicurati che Dynamic Medie sia [disabilitato](/help/assets/config-dynamic.md#disabling-dynamic-media) e quindi aggiorna la pagina.
 
 ## Pubblicazione manuale in Dynamic Media Classic (Scene7) da Assets {#manually-publishing-to-scene-from-assets}
 
@@ -105,7 +105,7 @@ L’Adobe consiglia di pubblicare le risorse in Dynamic Media Classic (Scene7) s
 
 1. Nella barra laterale, seleziona la **[!UICONTROL Pagina]** e seleziona **[!UICONTROL Proprietà pagina]**.
 
-1. Seleziona **[!UICONTROL Cloud Services]**.
+1. Seleziona **[!UICONTROL Cloud Service]**.
 1. Seleziona **[!UICONTROL Aggiungi servizi]**.
 1. Seleziona **[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. In **[!UICONTROL Adobe Dynamic Media Classic (Scene7)]** , selezionare la configurazione desiderata e selezionare **[!UICONTROL OK]**.
@@ -175,7 +175,7 @@ La progettazione reattiva delle risorse comporta l’adattamento delle risorse i
 
 Per aggiungere un’esperienza di visualizzazione interattiva a un sito reattivo nell’interfaccia classica:
 
-1. Accedi a Experience Manager e assicurati di disporre dei seguenti [Cloud Services Adobe Dynamic Media Classic (Scene7) configurati](/help/sites-administering/scene7.md#configuring-scene-integration) e che i componenti Dynamic Media Classic (Scene7) siano disponibili.
+1. Accedi a Experience Manager e assicurati di disporre dei seguenti [Cloud Service Adobe Dynamic Media Classic (Scene7) configurati](/help/sites-administering/scene7.md#configuring-scene-integration) e che i componenti Dynamic Media Classic (Scene7) siano disponibili.
 
    >[!NOTE]
    >
@@ -381,7 +381,7 @@ Per impostazione predefinita, in Experience Manager vengono cercate la cartella 
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configurazione** - Se nei Cloud Services sono definite più configurazioni di Dynamic Media Classic (Scene7), è possibile selezionarle qui. Di conseguenza, la cartella cambia in base alla configurazione scelta.
+**Configurazione** - Se nei Cloud Service sono definite più configurazioni di Dynamic Media Classic (Scene7), è possibile selezionarle qui. Di conseguenza, la cartella cambia in base alla configurazione scelta.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 

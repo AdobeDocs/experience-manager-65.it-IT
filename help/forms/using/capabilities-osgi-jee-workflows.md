@@ -3,10 +3,10 @@ title: Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flus
 description: Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flussi di lavoro OSGi e AEM Forms JEE
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 22%
+source-wordcount: '925'
+ht-degree: 23%
 
 ---
 
@@ -396,7 +396,7 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
 
 ## Differenze tra la casella in entrata dell’AEM e le funzioni dell’app AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono [Casella in entrata AEM](../../forms/using/manage-applications-inbox.md) e l&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata dell’AEM e dell’app AEM Forms sono diverse. La casella in entrata AEM funziona solo con [Flussi di lavoro incentrati su Forms](../../forms/using/aem-forms-workflow.md) l’app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi.
+Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono [Casella in entrata AEM](../../forms/using/manage-applications-inbox.md) e l&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata dell’AEM e dell’app AEM Forms sono diverse. La casella in entrata AEM funziona solo con [Flussi di lavoro incentrati su Forms](../../forms/using/aem-forms-workflow.md) mentre l’app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi.
 
 Nella tabella seguente sono elencate le funzionalità della casella in entrata AEM e dell’app AEM Forms:
 

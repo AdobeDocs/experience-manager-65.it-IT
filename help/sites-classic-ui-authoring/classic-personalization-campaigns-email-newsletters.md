@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Per pubblicare l’e-mail al provider di servizi e-mail, è necessario effettuar
 
 È possibile creare un’e-mail o un notiziario da pubblicare su un servizio di posta elettronica in una campagna utilizzando **Newsletter Geometrixx** modello. È inoltre possibile utilizzare **E-mail Geometrixx Outdoors** modello. Esempio di e-mail/newsletter basato su **E-mail Geometrixx Outdoors** I modelli sono disponibili all&#39;indirizzo `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-Per creare un nuovo messaggio di posta elettronica pubblicato nel servizio di posta elettronica configurato:
+Per creare un messaggio e-mail pubblicato nel servizio e-mail configurato:
 
 1. Vai a **Siti Web** e poi **Campagne**. Seleziona una campagna.
 1. Clic **Nuovo** per aprire **Crea pagina** finestra.

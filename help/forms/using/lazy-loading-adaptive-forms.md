@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1084'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ Le transazioni basate su Forms richiedono elementi dinamici per acquisire dati r
 * **Scrivere regole per controllare la visibilità dei campi**
 Forms include alcuni campi e sezioni che non sono applicabili a tutti gli utenti e in tutte le condizioni. Gli autori e gli sviluppatori di Forms utilizzano le regole di visibilità o di visualizzazione per controllarne la visibilità in base agli input degli utenti. Ad esempio, il campo Indirizzo ufficio non viene visualizzato agli utenti che scelgono Disoccupato nel campo Stato impiego di un modulo. Per ulteriori informazioni sulla scrittura delle regole, consulta [Utilizzo dell’editor di regole](../../forms/using/rule-editor.md).
 
-  Puoi sfruttare le regole di visibilità nei frammenti caricati in modo differito in modo che i campi condizionali vengano visualizzati solo quando sono richiesti. Inoltre, contrassegna il campo condizionale globale in modo che faccia riferimento a esso nell’espressione di visibilità del frammento caricato in modo differito.
+  Puoi utilizzare le regole di visibilità nei frammenti caricati in modo differito in modo che i campi condizionali vengano visualizzati solo quando sono obbligatori. Inoltre, contrassegna il campo condizionale globale in modo che faccia riferimento a esso nell’espressione di visibilità del frammento caricato in modo differito.
 
 ## Configurazione del caricamento lento {#configuring-lazy-loading}
 
@@ -73,7 +73,7 @@ Puoi contrassegnare i valori degli oggetti nel frammento caricato in modo differ
 
 Alcune limitazioni, raccomandazioni e punti importanti da tenere a mente quando si lavora con il caricamento lento sono i seguenti:
 
-* Si consiglia di utilizzare i moduli adattivi basati su schema XSD anziché i moduli adattivi basati su XFA per configurare il caricamento lento su moduli di grandi dimensioni. L’aumento delle prestazioni dovuto all’implementazione con caricamento lento nei moduli adattivi basati su XFA è relativamente inferiore rispetto all’aumento nei moduli adattivi basati su XSD.
+* Utilizza i moduli adattivi basati su schema XSD anziché i moduli adattivi basati su XFA per configurare il caricamento lento su moduli di grandi dimensioni. L’aumento delle prestazioni dovuto all’implementazione con caricamento lento nei moduli adattivi basati su XFA è relativamente inferiore rispetto all’aumento nei moduli adattivi basati su XSD.
 * Non configurare il caricamento lento per i frammenti in un modulo adattivo che utilizzano **[!UICONTROL Reattivo: tutto su una pagina senza navigazione]** layout del pannello principale. Con la configurazione del layout Reattivo, tutti i frammenti vengono caricati contemporaneamente in un modulo adattivo. ma può anche causare un peggioramento delle prestazioni.
 * Si consiglia di non configurare il caricamento lento sul primo frammento in un modulo adattivo.
 * Si consiglia di non configurare il caricamento lento sui frammenti nel primo pannello riprodotto al caricamento del modulo adattivo.
@@ -87,7 +87,7 @@ Alcune limitazioni, raccomandazioni e punti importanti da tenere a mente quando 
 Di seguito sono riportati alcuni punti importanti da tenere presenti durante lo sviluppo di script per pannelli con caricamento lazy:
 
 * Assicurati che gli script di inizializzazione e calcolo utilizzati nei campi di un frammento con caricamento lazy siano idempotenti. Gli script idempotenti sono quelli che hanno lo stesso effetto anche dopo più esecuzioni.
-* Utilizzare la proprietà globally available dei campi per rendere disponibili a tutti gli altri pannelli di un modulo i campi presenti in un pannello di caricamento lazy.
+* Utilizzare la proprietà globally available dei campi per rendere disponibile il valore dei campi in un pannello di caricamento lazy a tutti gli altri pannelli di un modulo.
 * Non inoltrare il valore di riferimento di un campo all’interno di un pannello lento indipendentemente dal fatto che il campo sia contrassegnato globalmente tra frammenti o meno.
 * Utilizza la funzione di ripristino del pannello per ripristinare tutto ciò che è visibile nel pannello utilizzando la seguente espressione di clic.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()

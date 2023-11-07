@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1795'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Il servlet di sicurezza configurato in `/um/login` risponde utilizzando `URLVari
 
 **Processo di accesso**
 
-All’avvio di un’applicazione client, puoi effettuare una richiesta POST al `/um/login` servlet di sicurezza. Ad esempio, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
+All’avvio di un’applicazione client, puoi effettuare una richiesta POST al `/um/login` servlet di sicurezza. Esempio: `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
 
 1. Cerca un cookie denominato `lcAuthToken`. Se l’utente ha già effettuato l’accesso a un’altra applicazione Forms, questo cookie è presente. Se il cookie viene trovato, il suo contenuto viene convalidato.
 1. Se l&#39;SSO basato su intestazione è abilitato, il servlet cerca le intestazioni configurate per determinare l&#39;identità dell&#39;utente.

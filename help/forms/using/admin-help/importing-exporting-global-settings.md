@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -75,12 +75,12 @@ Il file delle impostazioni globali di Workspace include le impostazioni seguenti
 
 Il *specialRoutes* Le impostazioni specificano le proprietà dei percorsi speciali, approva e Nega, in Workspace. In determinate situazioni, i pulsanti per questi percorsi vengono visualizzati nelle schede delle attività in Workspace e l’utente può selezionarli senza aprire il modulo. È possibile modificare le impostazioni specialRoutes nel file delle impostazioni globali per aggiungere nomi personalizzati per l&#39;approvazione e la negazione o per creare percorsi aggiuntivi.
 
-**client_specialRoutes_route_approve_style:** Il nome dello stile che si trova nel tema dell’area di lavoro, che identifica le icone dei pulsanti di approvazione. Lo stile deve includere valori per un&#39;icona attivata e un&#39;icona disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
+**client_specialRoutes_route_approve_style:** Il nome dello stile presente nel tema dell&#39;area di lavoro, che identifica le icone del pulsante di approvazione. Lo stile deve includere valori per un&#39;icona attivata e un&#39;icona disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
 ` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Il file CSS Workspace è incorporato nel file workspace-theme.swf, che si trova nel file adobe-workspace-client.ear > adobe-workspace-client.war. Per modificare l&#39;aspetto di Workspace, è necessario ricompilare il file workspace-theme.swf.
 
 **client_specialRoutes_route_deny_names:** La varietà di stringhe che un utente di Workbench può utilizzare per essere interpretata come &quot;nega&quot;. Le stringhe fanno distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è nega. Se l’utente di Workbench utilizza la parola Rifiuta in un processo, la parola non viene riconosciuta. Affinché il pulsante di instradamento sia personalizzato e sia applicato lo stile, è necessario aggiungere la parola Nega a questa impostazione.
 
-**client_specialRoutes_route_deny_style:** Il nome dello stile che si trova nel file del tema Workspace, che identifica le icone del pulsante Nega. Lo stile deve includere valori per un&#39;icona attivata e un&#39;icona disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
+**client_specialRoutes_route_deny_style:** Il nome dello stile presente nel file del tema dell&#39;area di lavoro, che identifica le icone del pulsante Nega. Lo stile deve includere valori per un&#39;icona attivata e un&#39;icona disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
 `  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_route_approve_names:** La varietà di stringhe che un utente di Workbench può utilizzare per essere interpretato come &quot;approva&quot;. Le stringhe fanno distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è approva. Se l’utente di Workbench utilizza la parola Approve (Approva) in un processo, la parola non viene riconosciuta. Affinché il pulsante di instradamento sia personalizzato e sia applicato lo stile, è necessario aggiungere la parola Approve a questa impostazione.
 
 **client_specialRoutes_names:** Chiavi utilizzate per individuare il valore della stringa personalizzata dai file di risorse. Ogni voce di questa impostazione deve includere i valori per i nomi e lo stile.
@@ -113,13 +113,13 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 ### impostazioni formView {#formview-settings}
 
-**client_formView_openFormInFullScreen:** Per visualizzare tutti i moduli in Workspace in modalità a schermo intero, imposta questa opzione su true. Per impostazione predefinita, questa opzione è impostata su false e i moduli non vengono visualizzati in modalità a schermo intero. Si noti che il servizio User contiene un&#39;opzione per aprire il documento associato a un&#39;attività in modalità a schermo intero. Questo consente di controllare la visualizzazione in base al singolo processo.
+**client_formView_openFormInFullScreen:** Per visualizzare tutti i moduli in Workspace in modalità a schermo intero, imposta questa opzione su true. Per impostazione predefinita, questa opzione è impostata su false e i moduli non vengono visualizzati in modalità a schermo intero. Il servizio User contiene un&#39;opzione che consente di aprire il documento associato a un&#39;attività in modalità a schermo intero. Questo consente di controllare la visualizzazione in base al singolo processo.
 
 **client_route_formViewOnly:** Se è impostato su True, le route non vengono visualizzate nella vista a schede o nella vista a elenco in Workspace. Il valore predefinito è False, il che significa che le route vengono visualizzate nella vista a schede e nella vista a elenco.
 
 ### Altre impostazioni {#other-settings}
 
-**client_mimeTypes_openOutsideBrowser:** Tipo MIME di documenti che verranno aperti al di fuori dell’istanza del browser Workspace. Se i processi dell’organizzazione richiedono un tipo MIME aggiuntivo, specificalo qui. I valori predefiniti sono:
+**client_mimeTypes_openOutsideBrowser:** Il tipo di documenti MIME che viene aperto al di fuori dell’istanza del browser Workspace. Se i processi dell’organizzazione richiedono un tipo MIME aggiuntivo, specificalo qui. I valori predefiniti sono:
 
 * `application/msword`
 * `application/msexcel`

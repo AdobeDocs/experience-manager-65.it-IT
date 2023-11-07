@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2695'
 ht-degree: 37%
 
 ---
@@ -52,7 +52,7 @@ Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che
 
 ### Configurazioni di rollout installate {#installed-rollout-configurations}
 
-Nella tabella seguente sono elencate le configurazioni di rollout installate con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout. Se le azioni di configurazione del rollout installate non soddisfano le tue esigenze, puoi [crea una nuova configurazione di rollout](#creating-a-rollout-configuration).
+Nella tabella seguente sono elencate le configurazioni di rollout installate con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout. Se le azioni di configurazione del rollout installate non soddisfano le tue esigenze, puoi [creare una configurazione di rollout](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -400,7 +400,7 @@ Puoi anche configurare le configurazioni di rollout per una pagina Live Copy qua
 
 Configura una pagina blueprint con le configurazioni di rollout da utilizzare quando la pagina blueprint è soggetta a rollout.
 
-Tieni presente che le pagine secondarie della pagina blueprint ereditano la configurazione. Quando imposti la configurazione di rollout da utilizzare, potresti sovrascrivere la configurazione che la pagina eredita dalla sua pagina principale.
+Le pagine figlie della pagina blueprint ereditano la configurazione. Quando imposti la configurazione di rollout da utilizzare, potresti sovrascrivere la configurazione che la pagina eredita dalla sua pagina principale.
 
 1. Utilizza la console **Sites** per selezionare la pagina principale della blueprint.
 1. Seleziona **Proprietà** nella barra degli strumenti.

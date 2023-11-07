@@ -1,15 +1,15 @@
 ---
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '516'
+ht-degree: 62%
 
 ---
 # Contribuire alla documentazione di Adobe Experience Manager
 
 Grazie per aver scelto di contribuire alla documentazione di Adobe Experience Manager. Adobe accoglie con favore i contributi ai contenuti da parte dell&#39;intera comunità dei lettori e di colleghi Adobi.
 
-Questo file descrive le modalità con cui è possibile apportare il proprio contributo e specifica le linee guida da seguire.
+Questo file descrive come contribuire e indica le linee guida da seguire per apportare i contributi.
 
 ## Codice di condotta per open source Adobe
 
@@ -17,7 +17,7 @@ Questo progetto ha adottato il [Codice di condotta per open source Adobe](code-o
 
 ## Linee guida per contribuire
 
-Pur accogliendo con favore qualsiasi contributo volto a migliorare la documentazione AEM, richiediamo che i partecipanti rispettino, ove possibile, determinati standard e linee guida. Per ulteriori informazioni, consulta le [Linee guida per contribuire alla documentazione di AEM](guidelines.md).
+Pur accogliendo con favore qualsiasi contributo volto a migliorare la documentazione AEM, richiediamo che i partecipanti rispettino, ove possibile, determinati standard e linee guida. Rivedi [Linee guida per contribuire alla documentazione dell’AEM](guidelines.md) per ulteriori informazioni.
 
 ## Come contribuire
 
@@ -54,7 +54,7 @@ Nel video seguente viene brevemente illustrato come segnalare un problema e crea
 
 Se sei un dipendente Adobe e vuoi fornire un contributo, utilizza `AdobeDocs` organizzazione nell’archivio Git aziendale.
 
-Anche se saremo lieti di accogliere ed esaminare qualsiasi contributo presentato tramite l’archivio pubblico, le richieste da parte dei dipendenti Adobe sono più facili da elaborare e possono essere approvate più velocemente nell’archivio aziendale. Assicurati tuttavia che eventuali le informazioni proprietarie vengano affrontate solo nell’archivio aziendale.
+Siamo felici di qualsiasi contributo e rivedremo il tuo contributo se viene effettuato sull’archivio pubblico, tuttavia le richieste pull da parte dei dipendenti Adobe sono più facili da elaborare e possono essere approvate più rapidamente sull’archivio aziendale. Assicurati che eventuali informazioni proprietarie vengano discusse solo sull’archivio aziendale.
 
 ## Ulteriori informazioni
 

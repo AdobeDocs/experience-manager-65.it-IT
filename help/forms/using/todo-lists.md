@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4032'
+source-wordcount: '4031'
 ht-degree: 0%
 
 ---
@@ -374,7 +374,7 @@ Se si dispone dell&#39;accesso all&#39;elenco attività di un altro utente, non 
 
 Se si prevede di uscire dall&#39;ufficio, è possibile specificare l&#39;andamento delle attività assegnate per quel periodo.
 
-È possibile specificare una data e un&#39;ora di inizio e una data e un&#39;ora di fine per rendere effettive le impostazioni di fuori sede. Se ci si trova in un fuso orario diverso da quello del server, il fuso orario utilizzato è quello del server.
+È possibile specificare una data e un&#39;ora di inizio e una data e un&#39;ora di fine per rendere effettive le impostazioni di fuori sede. Se il fuso orario è diverso da quello del server, il fuso orario utilizzato è quello del server.
 
 È possibile impostare una persona predefinita a cui vengono inviate tutte le attività. È inoltre possibile specificare eccezioni per le attività di processi specifici da inviare a un altro utente o da mantenere nell&#39;elenco attività fino a quando non viene restituito. Se anche la persona designata è fuori dall&#39;ufficio, l&#39;operazione viene eseguita dall&#39;utente designato. Se l&#39;attività non può essere assegnata a un utente che non è fuori sede, l&#39;attività rimane nell&#39;elenco attività.
 

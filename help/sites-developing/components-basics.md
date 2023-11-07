@@ -7,14 +7,14 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4907'
 ht-degree: 1%
 
 ---
 
-# Componenti di Adobe Experience Manager (AEM): nozioni di base{#aem-components-the-basics}
+# Componenti Adobe Experience Manager (AEM) - Nozioni di base{#aem-components-the-basics}
 
 Quando inizi a sviluppare nuovi componenti, devi comprendere le nozioni di base della loro struttura e configurazione.
 
@@ -63,13 +63,13 @@ Le nozioni di base su entrambi sono descritte in questa pagina e come riconoscer
 
 L’Adobe consiglia di mantenere il codice responsabile del markup e del rendering separato dal codice che controlla la logica utilizzata per selezionare il contenuto del componente.
 
-Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it): linguaggio per modelli appositamente limitato per garantire che venga utilizzato un linguaggio di programmazione reale per definire la logica di business sottostante. Questa logica (facoltativa) viene richiamata da HTL con un comando specifico. Questo meccanismo evidenzia il codice chiamato per una determinata vista e, se necessario, consente una logica specifica per diverse viste dello stesso componente.
+Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it): linguaggio per modelli appositamente limitato per garantire che venga utilizzato un linguaggio di programmazione reale per definire la logica di business sottostante. Questa logica (facoltativa) viene richiamata da HTL con un comando specifico. Questo meccanismo evidenzia il codice chiamato per una determinata vista e, se necessario, consente una logica specifica per diverse viste dello stesso componente.
 
 ### Confronto tra HTL e JSP {#htl-vs-jsp}
 
 HTL è un linguaggio di modelli HTML introdotto con AEM 6.0.
 
-Discussione sull&#39;utilizzo [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) o JSP (Java™ Server Pages) durante lo sviluppo di componenti personalizzati deve essere semplice, in quanto HTL è ora il linguaggio di script consigliato per l’AEM.
+Discussione sull&#39;utilizzo [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) o JSP (Java™ Server Pages) durante lo sviluppo di componenti personalizzati deve essere semplice, in quanto HTL è ora il linguaggio di script consigliato per l’AEM.
 
 Sia HTL che JSP possono essere utilizzati per lo sviluppo di componenti sia per l’interfaccia utente classica che per quella touch. Sebbene ci possa essere una tendenza a presumere che HTL sia solo per l’interfaccia touch e JSP per l’interfaccia classica, si tratta di un’idea errata e più dovuta ai tempi. L’interfaccia utente touch e HTL sono stati incorporati nell’AEM approssimativamente nello stesso periodo. Poiché HTL è ora la lingua consigliata, viene utilizzato per nuovi componenti, che in genere sono per l’interfaccia utente touch.
 
@@ -114,7 +114,7 @@ Per spostare i componenti nell’istanza Publish, utilizza i seguenti strumenti:
    * Il sistema paragrafo è una parte chiave di un sito web in quanto gestisce un elenco di paragrafi. Viene utilizzato per contenere e strutturare i singoli componenti che contengono il contenuto effettivo.
    * Potete creare, spostare, copiare ed eliminare paragrafi nel sistema paragrafo.
    * Potete anche selezionare i componenti da rendere disponibili per l&#39;uso all&#39;interno di un sistema paragrafo specifico.
-   * All’interno di un’istanza standard sono disponibili vari sistemi paragrafo (ad esempio `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
+   * All’interno di un’istanza standard sono disponibili vari sistemi paragrafo (ad esempio, `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Struttura {#structure}
 
@@ -210,7 +210,7 @@ L’icona o l’abbreviazione del componente viene definita tramite le propriet�
 1. `abbreviation` - Proprietà stringa per personalizzare l&#39;abbreviazione del nome del componente nel browser componenti
    * L’abbreviazione deve essere limitata a due caratteri.
    * Fornendo una stringa vuota, viene creata l’abbreviazione dai primi due caratteri della `jcr:title` proprietà.
-      * Ad esempio &quot;Im&quot; per &quot;Immagine&quot;
+      * Ad esempio, &quot;Im&quot; per &quot;Immagine&quot;
       * Il titolo localizzato viene utilizzato per creare l’abbreviazione.
    * L’abbreviazione viene tradotta solo se il componente ha un `abbreviation_commentI18n` , che viene quindi utilizzata come suggerimento di traduzione.
 1. `cq:icon.png` o `cq:icon.svg` - Icona del componente, visualizzata nel browser componenti
@@ -311,7 +311,7 @@ Un componente è un nodo di tipo `cq:Component` e ha le seguenti proprietà e no
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Se impostata, questa proprietà viene considerata come ID cella. Per ulteriori informazioni, consulta l’articolo della Knowledge Base <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">Come vengono generati gli ID delle celle di progettazione</a>.<br /> </td>
+   <td>Se impostata, questa proprietà viene considerata come ID cella. Per ulteriori informazioni, vedere l'articolo della Knowledge Base <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">Come vengono generati gli ID delle celle di progettazione</a>.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -366,7 +366,7 @@ Un componente è un nodo di tipo `cq:Component` e ha le seguenti proprietà e no
   <tr>
    <td><code>virtual</code></td>
    <td><code>sling:Folder</code></td>
-   <td>Consente la creazione di componenti virtuali. Per visualizzare un esempio, consulta il componente contatto all’indirizzo:<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
+   <td>Consente la creazione di componenti virtuali. Per visualizzare un esempio, osserva il componente contatto in:<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
   </tr>
   <tr>
    <td><code>&lt;breadcrumb.jsp&gt;</code></td>
@@ -592,11 +592,11 @@ Il comportamento di modifica di un componente viene configurato aggiungendo un `
 
 Nell’archivio sono presenti molte configurazioni esistenti. Puoi cercare facilmente proprietà specifiche o nodi secondari:
 
-* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio `cq:actions`, è possibile utilizzare lo strumento Query in **CRXDE Lite** e cerca con la seguente stringa di query XPath:
+* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio `cq:actions`, è possibile utilizzare lo strumento Query in **CRXDE Liti** e cerca con la seguente stringa di query XPath:
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Per cercare un nodo figlio di `cq:editConfig`, ad esempio, è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in** CRXDE Lite** ed eseguire ricerche con la seguente stringa di query XPath:
+* Per cercare un nodo figlio di `cq:editConfig`, ad esempio, è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in** CRXDE Liti** ed eseguire ricerche con la seguente stringa di query XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -1026,7 +1026,7 @@ Il `cq:listeners` nodo (tipo di nodo) `cq:EditListenersConfig`) definisce cosa a
 >  * `aftermove`
 >  * `aftercopy`
 
-Il gestore eventi può essere implementato con un’implementazione personalizzata. Ad esempio (dove `project.customerAction` è un metodo statico):
+Il gestore eventi può essere implementato con un’implementazione personalizzata. Ad esempio, (dove `project.customerAction` è un metodo statico):
 
 `afteredit = "project.customerAction"`
 
@@ -1036,7 +1036,7 @@ L’esempio seguente è equivalente al `REFRESH_INSERTED` configurazione:
 
 >[!NOTE]
 >
->Per l’interfaccia classica, per vedere quali parametri possono essere utilizzati nei gestori, consulta la `before<action>` e `after<action>` sezione degli eventi del [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) e [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) documentazione di widget.
+>Per l’interfaccia classica, per vedere quali parametri possono essere utilizzati nei gestori, vedi `before<action>` e `after<action>` sezione degli eventi del [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) e [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) documentazione di widget.
 
 Con la seguente configurazione, la pagina viene aggiornata dopo che il componente è stato eliminato, modificato, inserito o spostato:
 

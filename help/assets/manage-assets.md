@@ -7,7 +7,7 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '10067'
 ht-degree: 3%
@@ -112,7 +112,7 @@ Per configurare l’attività di pulizia per i processi di caricamento blocchi n
 
 Se carichi una risorsa con lo stesso nome di una risorsa già disponibile nel percorso in cui la stai caricando, viene visualizzata una finestra di avviso.
 
-Puoi scegliere di sostituire una risorsa esistente, creare un’altra versione o mantenere entrambe rinominando la nuova risorsa caricata. Se sostituisci una risorsa esistente, i metadati della risorsa ed eventuali modifiche precedenti (ad esempio annotazione o ritaglio) apportate alla risorsa esistente vengono eliminati. Se scegli di mantenere entrambe le risorse, la nuova risorsa viene rinominata con un numero `1` aggiunta al nome.
+Puoi scegliere di sostituire una risorsa esistente, creare un’altra versione o mantenere entrambe rinominando la nuova risorsa caricata. Se sostituisci una risorsa esistente, i metadati della risorsa ed eventuali modifiche precedenti (ad esempio, Annota o Ritaglia) apportate alla risorsa esistente vengono eliminati. Se scegli di mantenere entrambe le risorse, la nuova risorsa viene rinominata con un numero `1` aggiunta al nome.
 
 ![Finestra di dialogo Conflitto di nomi per risolvere il conflitto di nomi delle risorse](assets/resolve-naming-conflict.png)
 

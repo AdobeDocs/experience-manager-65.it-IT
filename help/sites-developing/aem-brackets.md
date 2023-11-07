@@ -1,18 +1,14 @@
 ---
 title: Estensione parentesi AEM
-seo-title: AEM Brackets Extension
 description: Scopri come utilizzare l’estensione Adobe Experience Manager per Brackets.
-seo-description: null
-uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 2%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-L’estensione per Brackets AEM fornisce un flusso di lavoro fluido per modificare i componenti AEM e le librerie client e sfrutta la potenza della [Parentesi](https://brackets.io/) editor di codice, che consente l&#39;accesso ai file e ai livelli di Photoshop dall&#39;interno dell&#39;editor di codice. La facile sincronizzazione fornita dall’estensione (non è richiesto alcun Maven o File Vault) aumenta l’efficienza degli sviluppatori e aiuta anche gli sviluppatori front-end con conoscenze AEM limitate a partecipare ai progetti. Questa estensione fornisce anche un po’ di supporto per [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it), che elimina la complessità di JSP per rendere lo sviluppo dei componenti più semplice e sicuro.
+L’estensione per parentesi quadre AEM fornisce un flusso di lavoro fluido per modificare i componenti AEM e le librerie client e utilizza la potenza del [Parentesi](https://brackets.io/) editor di codice, che consente l&#39;accesso ai file e ai livelli di Photoshop dall&#39;interno dell&#39;editor di codice. La facile sincronizzazione fornita dall’estensione (non è richiesto alcun Maven o File Vault) aumenta l’efficienza degli sviluppatori e aiuta anche gli sviluppatori front-end con conoscenze AEM limitate a partecipare ai progetti. Questa estensione fornisce anche un po’ di supporto per [HTL (HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it), che elimina la complessità di JSP per rendere lo sviluppo dei componenti più semplice e sicuro.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -71,7 +67,7 @@ Il progetto deve contenere almeno:
 
 1. a `jcr_root` cartella (ad esempio, `myproject/jcr_root`)
 
-1. a `filter.xml` file (ad esempio, `myproject/META-INF/vault/filter.xml`); per ulteriori dettagli sulla struttura del `filter.xml` consultare il file [Definizione filtro area di lavoro](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` file (ad esempio, `myproject/META-INF/vault/filter.xml`); per ulteriori dettagli sulla struttura del `filter.xml` file vedi la [Definizione filtro area di lavoro](https://jackrabbit.apache.org/filevault/filter.html).
 
 Tra parentesi **File** menu, scegliere **Apri cartella...** e scegliere `jcr_root` o la cartella del progetto principale.
 
@@ -127,7 +123,7 @@ L&#39;estensione per parentesi quadre AEM presenta un&#39;icona di notifica nell
 * giallo - alcuni file non sono stati sincronizzati
 * rosso: nessuno dei file è stato sincronizzato
 
-Facendo clic sull&#39;icona di notifica verrà aperta la finestra di dialogo del report Stato di sincronizzazione, in cui sono elencati tutti gli stati di ciascun file sincronizzato.
+Facendo clic sull&#39;icona di notifica viene visualizzata la finestra di dialogo Rapporto stato di sincronizzazione, in cui è riportato l&#39;elenco di tutti gli stati di ciascun file sincronizzato.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 

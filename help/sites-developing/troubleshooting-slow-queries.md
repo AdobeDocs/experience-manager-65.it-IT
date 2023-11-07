@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2268'
 ht-degree: 0%
 
 ---
@@ -321,7 +321,7 @@ L’esempio che segue utilizza Query Builder in quanto è il linguaggio di query
 ## Ottimizzazione indice esistente {#existing-index-tuning}
 
 1. Se la query ottimale viene risolta in un indice delle proprietà, non rimane nulla da fare poiché gli indici delle proprietà sono minimamente ottimizzabili.
-1. In caso contrario, la query deve essere risolta in un indice della proprietà Lucene. Se non è possibile risolvere alcun indice, passare alla Creazione di un nuovo indice.
+1. In caso contrario, la query deve essere risolta in un indice della proprietà Lucene. Se non è possibile risolvere alcun indice, passa a Creazione di un indice.
 1. Se necessario, convertire la query in XPath o JCR-SQL2.
 
    * **Query di Query Builder**

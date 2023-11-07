@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ La manutenzione dei registri di controllo include diverse parti di funzionalità
 
 Viene implementato come attività di manutenzione settimanale configurabile ed è accessibile tramite la console di monitoraggio della dashboard operazioni.
 
-Per ulteriori informazioni, consulta [Documentazione del dashboard operazioni](/help/sites-administering/operations-dashboard.md).
+Per ulteriori informazioni, vedere [Documentazione del dashboard operazioni](/help/sites-administering/operations-dashboard.md).
 
 Esistono tre tipi di opzioni di eliminazione del log di controllo:
 
@@ -58,7 +58,7 @@ Per configurare la rimozione del registro di controllo, effettua le seguenti ope
    >Il percorso del contenuto si applica solo agli elementi figlio del `/var/audit/com.day.cq.wcm.core.page` nell&#39;archivio.
 
 1. Salva la regola.
-1. Per poter essere eseguita, la regola appena creata deve essere esposta nel dashboard operazioni. Per fare questo, vai **Strumenti - Operazioni - Manutenzione** dalla schermata iniziale dell’AEM.
+1. Per poter essere eseguita, la regola creata deve essere esposta nel dashboard operazioni. Per fare questo, vai **Strumenti - Operazioni - Manutenzione** dalla schermata iniziale dell’AEM.
 
 1. Premere il tasto **Finestra di manutenzione settimanale** Card.
 

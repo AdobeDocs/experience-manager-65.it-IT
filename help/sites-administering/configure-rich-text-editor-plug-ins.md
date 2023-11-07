@@ -3,7 +3,7 @@ title: Configurare i plug-in dell’Editor Rich Text
 description: Scopri come configurare i plug-in dell’Editor Rich Text di Adobe Experience Manager per abilitare singole funzionalità.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4395'
 ht-degree: 4%
@@ -95,7 +95,7 @@ Nella barra degli strumenti dell’editor Rich Text è possibile fornire agli au
 
 Per configurare l’editor Rich Text in modo da visualizzare le icone richieste, effettua le seguenti operazioni.
 
-1. Passa al componente, ad esempio `/apps/<myProject>/components/text`.
+1. Passa al componente, ad esempio: `/apps/<myProject>/components/text`.
 1. Passa al nodo `rtePlugins/edit`. Consulta [attivare un plug-in](#activateplugin) se il nodo non esiste.
 1. Creare `features` proprietà sul `edit` e aggiungi una o più funzionalità. Salva tutte le modifiche.
 
@@ -226,7 +226,7 @@ Questa operazione viene eseguita abilitando il plug-in di stile.
 
 Specificare quindi le posizioni dei fogli di stile a cui si desidera fare riferimento:
 
-1. Passa al nodo principale del componente testo, ad esempio `/apps/<myProject>/components/text`.
+1. Passa al nodo principale del componente testo, ad esempio, `/apps/<myProject>/components/text`.
 1. Aggiungi la proprietà `externalStyleSheets` al nodo principale di `<rtePlugins-node>`:
 
    * **Nome** `externalStyleSheets`
@@ -327,7 +327,7 @@ Qualsiasi testo creato nell’editor Rich Text viene inserito all’interno di u
 
 >[!NOTE]
 >
->Se un tag di blocco, ad esempio &lt;hr> , non può essere assegnato a un paragrafo, non è un caso d’uso valido per un plug-in paraformat.
+>Se un tag di blocco, ad esempio, &lt;hr> , non può essere assegnato a un paragrafo, non è un caso d’uso valido per un plug-in paraformat.
 
 Quando il plug-in Formati di paragrafo viene attivato per la prima volta, non sono disponibili formati di paragrafo predefiniti. L&#39;elenco popup è vuoto. Per fornire agli autori formati di paragrafo, effettuare le seguenti operazioni:
 

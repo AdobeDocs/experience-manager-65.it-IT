@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2974'
+source-wordcount: '2973'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ L’elenco seguente mostra un esempio di configurazione per Sincronizzazione con
 
 **events.plist** - Questa voce è un po&#39; speciale. Come accennato nell’introduzione, l’applicazione deve fornire una vista a mappa con i marcatori della posizione degli eventi. Le informazioni necessarie sulla posizione verranno fornite come file separato in formato PLIST. Affinché ciò funzioni, il componente elenco eventi utilizzato nella pagina indice dispone di uno script denominato plist.jsp. Questo script viene eseguito quando la risorsa del componente viene richiesta con `.plist` estensione. Come sempre, il percorso dei componenti è indicato nella proprietà percorso e il tipo è impostato sul contenuto, perché desideri utilizzare [Elaborazione richiesta Sling](/help/sites-developing/the-basics.md#sling-request-processing).
 
-**events.touch.html** - Vengono quindi visualizzate le pagine effettive che verranno visualizzate nell’app. La proprietà path viene impostata sulla pagina principale degli eventi. Verranno incluse anche tutte le pagine evento al di sotto di quella pagina, perché la proprietà deep (deep) è impostata per impostazione predefinita su true. Utilizza le pagine come tipo di configurazione, in modo da includere tutte le immagini o altri file a cui si può fare riferimento da un componente immagine o download in una pagina. Inoltre, l’impostazione del selettore touch fornisce una versione mobile delle pagine. La configurazione nel feature pack contiene più voci di questo tipo, ma qui sono escluse per semplicità.
+**events.touch.html** - Vengono quindi visualizzate le pagine effettive visualizzate nell’app. La proprietà path viene impostata sulla pagina principale degli eventi. Verranno incluse anche tutte le pagine evento al di sotto di quella pagina, perché la proprietà deep (deep) è impostata per impostazione predefinita su true. Utilizza le pagine come tipo di configurazione, in modo da includere tutte le immagini o altri file a cui si può fare riferimento da un componente immagine o download in una pagina. Inoltre, l’impostazione del selettore touch fornisce una versione mobile delle pagine. La configurazione nel feature pack contiene più voci di questo tipo, ma qui sono escluse per semplicità.
 
 **logo** - Il tipo di configurazione del logo non è stato ancora menzionato e non si tratta di un tipo incorporato. Tuttavia, il framework di sincronizzazione dei contenuti è in certa misura estensibile, come illustrato nella sezione successiva.
 

@@ -10,9 +10,9 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2363'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ Conoscenza del CSS e del framework LESS.
 
 ## Cosa può essere personalizzato {#what-can-be-customized}
 
-Nell’articolo sono elencate le classi css di moduli adattivi disponibili al pubblico. Puoi sfruttare queste classi per assegnare uno stile a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizza questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non sei in grado di assegnare stili ai componenti utilizzando [editor temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+Nell’articolo sono elencate le classi css di moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per assegnare stili a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizza questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non sei in grado di assegnare stili ai componenti utilizzando [editor temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalizzazione degli stili nei moduli adattivi {#customizing-styles-in-adaptive-forms}
 
@@ -108,7 +108,7 @@ Un contenitore è il componente di livello principale. Altri pannelli e campi si
 
 I moduli adattivi includono vari tipi di campi. Ogni campo ha un nome di classe univoco, che è il nome del campo. Il campo ha anche un nome di classe comune `guideFieldNode`.
 
-I campi includono etichette, widget, descrizioni della Guida (descrizione lunga e breve) e icone della Guida dei campi (punto interrogativo).
+I campi includono etichette, widget, descrizioni della Guida (descrizione lunga e breve) e icone della Guida in linea (punto interrogativo).
 
 <table>
  <tbody>
@@ -944,7 +944,7 @@ Un pannello include una barra degli strumenti facoltativa e il relativo contenut
  </tbody>
 </table>
 
-Il nodo del pannello è diviso in navigatori e contenuti. Lì `` `` non è un componente di stile separato per il contenuto. Le variabili descritte vengono applicate sia al navigatore che al contenuto.
+Il nodo del pannello è diviso in navigatori e contenuti. Lì `` `` non è un componente di stile separato per il contenuto. Le variabili descritte vengono applicate al navigatore e al contenuto.
 
 Il pannello più in alto (RootPanel) non ha questa classe.
 

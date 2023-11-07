@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2384'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ Per sviluppare nuovi componenti per l’AEM basati su componenti esistenti, è p
    * utilizzo di CRXDE Liti per aggiungere il valore `<path-to-component>` (ad esempio, `/apps/geometrixx/components/myComponent`) ai componenti proprietà del nodo `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * seguendo le istruzioni in [Aggiunta di nuovi componenti ai sistemi paragrafo](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. In WCM per AEM, apri una pagina del sito web e inserisci un paragrafo del tipo appena creato per assicurarti che il componente funzioni correttamente.
+1. In WCM per AEM, apri una pagina del sito web e inserisci un paragrafo del tipo creato per assicurarti che il componente funzioni correttamente.
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ Per sviluppare nuovi componenti per l’AEM basati su componenti esistenti, è p
 
 Una volta sviluppato il componente, questo viene aggiunto al sistema paragrafo, che consente agli autori di selezionare e utilizzare il componente durante la modifica di una pagina.
 
-1. Accedi a una pagina nell’ambiente di authoring che utilizza il sistema paragrafo, ad esempio `<contentPath>/Test.html`.
+1. Accedi a una pagina all’interno dell’ambiente di authoring che utilizza il sistema paragrafo, ad esempio, `<contentPath>/Test.html`.
 1. Passa alla modalità Progettazione in uno dei modi seguenti:
 
    * aggiunta `?wcmmode=design` alla fine dell’URL e accedendo di nuovo, ad esempio:

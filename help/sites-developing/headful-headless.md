@@ -2,10 +2,10 @@
 title: Headful e headless in AEM
 description: È possibile implementare i progetti AEM in un modello headful e headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 94%
+source-wordcount: '1013'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ Ma questa non deve essere una scelta binaria. AEM offre una flessibilità senza 
 
 ![Modelli di implementazione di AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-In un modello headful o full-stack, il contenuto viene gestito nell’archivio AEM e i componenti AEM basati su Java, HTL, ecc. vengono utilizzati per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, la creazione del contenuto, la sua presentazione, distribuzione e attribuzione di stile avvengono in AEM.
+In un modello headful o full stack, il contenuto viene gestito nell’archivio AEM e i componenti AEM basati su Java, HTL e così via vengono utilizzati per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, la creazione del contenuto, la sua presentazione, distribuzione e attribuzione di stile avvengono in AEM.
 
 In un modello headless, il contenuto viene gestito nell’archivio AEM, ma distribuito tramite API come REST e GraphQL a un altro sistema per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, il contenuto viene creato in AEM, ma la sua presentazione, distribuzione e attribuzione di stile avvengono su un’altra piattaforma.
 
@@ -43,7 +43,7 @@ La sezione successiva esplora più dettagliatamente questi livelli di integrazio
 
 >[!NOTE]
 >
->Naturalmente si potrebbe anche implementare nuovamente la SPA del negozio web come una SPA di AEM pienamente funzionante [utilizzando il framework dell’editor SPA AEM.](/help/sites-developing/spa-walkthrough.md) Se hai già AEM e desideri creare un nuovo negozio web o un&#39;altra SPA, questo è il metodo consigliato, ma non rientra nell’ambito di questo documento.
+>Naturalmente si potrebbe anche implementare nuovamente la SPA del negozio web come una SPA di AEM pienamente funzionante [utilizzando il framework dell’editor SPA AEM.](/help/sites-developing/spa-walkthrough.md) Se hai già un AEM e desideri creare un negozio online o un altro SPA, questo è il metodo consigliato, ma non rientra nell’ambito di questo documento.
 
 ## Livelli di integrazione SPA {#integration-levels}
 

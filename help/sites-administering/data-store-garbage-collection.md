@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
 
 # Archivio dati raccolta oggetti inattivi {#data-store-garbage-collection}
 
-Quando viene rimossa una risorsa WCM convenzionale, il riferimento al record dell’archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell’archivio dati stesso rimane. Questo record di archivio dati senza riferimenti diventa quindi un &quot;immondizia&quot; che non deve essere conservata. Nei casi in cui sono presenti numerose risorse inutilizzate, è utile eliminarle per preservare lo spazio e ottimizzare le prestazioni di backup e manutenzione dei file system.
+Quando viene rimossa una risorsa WCM convenzionale, il riferimento al record dell’archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell’archivio dati stesso rimane. Questo record di archivio dati senza riferimenti diventa quindi un &quot;immondizia&quot; che non deve essere conservata. Nei casi in cui sono presenti diverse risorse inutilizzate, è utile eliminarle per preservare lo spazio e ottimizzare le prestazioni di backup e manutenzione dei file system.
 
 Nella maggior parte dei casi, un&#39;applicazione WCM tende a raccogliere informazioni, ma non a eliminarle quasi con la stessa frequenza. Sebbene vengano aggiunte nuove immagini, anche sostituendo le versioni precedenti, il sistema di controllo delle versioni mantiene quella precedente e, se necessario, supporta il ripristino. In questo modo, la maggior parte dei contenuti che consideriamo come aggiunte al sistema vengono effettivamente archiviati in modo permanente. Qual è quindi la fonte tipica di &quot;immondizia&quot; nell&#39;archivio che potremmo voler ripulire?
 
-L’AEM utilizza l’archivio come archivio per una serie di attività interne e di gestione domestica:
+L’AEM utilizza l’archivio come archivio per diverse attività interne e di manutenzione:
 
 * Pacchetti generati e scaricati
 * File temporanei creati per la replica di pubblicazione

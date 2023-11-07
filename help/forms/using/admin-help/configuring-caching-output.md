@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
 exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1439'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Il servizio di output memorizza sempre nella cache le progettazioni dei moduli s
 
 Il servizio di output memorizza nella cache frammenti e immagini utilizzati nelle progettazioni di moduli su disco. Ciò migliora le prestazioni perché i frammenti e le immagini vengono letti dall’archivio solo alla prima richiesta. Quindi, nelle richieste successive, il servizio di output legge i frammenti e le immagini dalla cache del disco. I frammenti e le immagini vengono memorizzati nella cache solo su disco e non in memoria.
 
-È possibile utilizzare le seguenti impostazioni per controllare la memorizzazione nella cache su disco di frammenti e immagini. Queste impostazioni si trovano nella sezione **Impostazioni cache risorse modello** area:
+È possibile utilizzare le seguenti impostazioni per controllare la memorizzazione nella cache su disco di frammenti e immagini. Queste impostazioni sono **Impostazioni cache risorse modello** area:
 
 **Memorizzazione in cache delle risorse** Selezionare una delle opzioni seguenti dall&#39;elenco:
 

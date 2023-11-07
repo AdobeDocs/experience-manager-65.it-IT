@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Il framework dei tag consente inoltre di limitare l’uso di specifici tag prede
 * Quando contiene nodi secondari, il tag viene indicato come [tag contenitore.](#container-tags)
 * Il tag viene memorizzato nell’archivio sotto un percorso di base denominato [nodo principale della tassonomia.](#taxonomy-root-node)
 
-Poiché i tag sono semplicemente nodi JCR, i nomi dei nodi devono naturalmente rispettare la [Convenzione di denominazione JCR.](naming-conventions.md)
+Poiché i tag sono semplicemente nodi JCR, i nomi dei nodi devono rispettare il [Convenzione di denominazione JCR.](naming-conventions.md)
 
 ### ID tag {#tagid}
 
@@ -110,7 +110,7 @@ Nella tabella seguente vengono illustrati alcuni TagID di esempio, i relativi el
 
 Quando il tag include la stringa opzionale del titolo ( `jcr:title`), è possibile localizzare il titolo da visualizzare aggiungendo la proprietà `jcr:title.<locale>`.
 
-Per maggiori dettagli, consulta i seguenti documenti:
+Per ulteriori informazioni, consulta i seguenti documenti:
 
 * [Tag in lingue diverse](/help/sites-developing/building.md#tags-in-different-languages), che descrive l’utilizzo delle API di
 * [Gestione dei tag in lingue diverse](/help/sites-administering/tags.md#managing-tags-in-different-languages), che descrive l’utilizzo della console di assegnazione tag
@@ -221,6 +221,6 @@ Di seguito è riportata una descrizione degli effetti nell&#39;archivio durante 
 
 ## Migrazione tag {#tags-migration}
 
-A partire da Adobe Experience Manager 6.4, i tag sono memorizzati in `/content/cq:tags` mentre le versioni precedenti memorizzavano i tag in `/etc/tags`.
+A partire da Adobe Experience Manager 6.4, i tag vengono memorizzati in `/content/cq:tags` mentre le versioni precedenti memorizzavano i tag in `/etc/tags`.
 
-Ogni volta che si aggiorna un sistema AEM da una versione precedente alla 6.4, è necessario migrare i tag a `/content/cq:tags`. Consulta il documento [Ristrutturazione dell’archivio comune in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) per ulteriori informazioni.
+Ogni volta che si aggiorna un sistema AEM da una versione precedente alla 6.4, è necessario migrare i tag a `/content/cq:tags`. Consulta [Ristrutturazione dell’archivio comune in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) per ulteriori informazioni.

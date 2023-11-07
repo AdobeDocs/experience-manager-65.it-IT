@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 17%
+source-wordcount: '1132'
+ht-degree: 14%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 17%
 
 La segmentazione è un concetto chiave per la creazione di una campagna. Consulta [Glossario della segmentazione](/help/sites-authoring/segmentation-overview.md) per informazioni sul funzionamento della segmentazione e sui termini chiave.
 
-A seconda delle informazioni che hai già raccolto sui visitatori del tuo sito e degli obiettivi che desideri raggiungere, dovrai definire i segmenti e le strategie necessarie per i contenuti di destinazione.
+A seconda delle informazioni già raccolte sui visitatori del sito e degli obiettivi che desideri raggiungere, devi definire i segmenti e le strategie necessarie per i contenuti di destinazione.
 
 Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Questo contenuto viene mantenuto in [Campagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) sezione del sito web. Le pagine teaser definite qui possono essere incluse come paragrafi teaser in qualsiasi pagina e definiscono a quale segmento di visitatore è applicabile il contenuto specializzato.
 
@@ -131,7 +131,7 @@ Per definire il nuovo segmento:
 1. Creare un [nuova pagina](/help/sites-authoring/editing-content.md#creatinganewpage) utilizzando **Segmento** modello.
 1. Apri la nuova pagina per visualizzare l’editor di segmenti:
 
-   ![Il primo passaggio della creazione di un nuovo segmento nell’Editor segmento](assets/screen_shot_2012-02-02at101726am.png)
+   ![Il primo passaggio della creazione di un segmento nell’Editor segmento](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Utilizza la barra laterale o il menu di scelta rapida (in genere con un clic con il pulsante destro del mouse, quindi seleziona **Nuovo...** per aprire la finestra Inserisci nuovo componente) per trovare la caratteristica del segmento necessaria. Quindi trascinalo sul **Editor segmento** verrà visualizzato nel predefinito **E** contenitore.
 1. Fare doppio clic sulla nuova caratteristica per modificare i parametri specifici, ad esempio la posizione del mouse:

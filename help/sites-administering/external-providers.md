@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Tali snippet consentono la raccolta dei dati e la generazione dei rapporti. I da
 >
 >Il sito demo Geometrixx-Outdoors è configurato in modo che gli attributi forniti nelle Proprietà pagina vengano aggiunti al codice sorgente html (appena sopra il `</html>` tag di fine) nel `js` script.
 >
->Se il tuo `/apps` non ereditare dal componente pagina predefinito ( `/libs/foundation/components/page`) tu (o i tuoi sviluppatori) devi assicurarti che il corrispondente `js` gli script sono inclusi, ad esempio includendo `cq/cloudserviceconfigs/components/servicescomponents`o utilizzando un meccanismo simile.
+>Se il tuo `/apps` non ereditare dal componente pagina predefinito ( `/libs/foundation/components/page`) tu (o i tuoi sviluppatori) devi assicurarti che il corrispondente `js` Gli script sono inclusi, ad esempio, includendo `cq/cloudserviceconfigs/components/servicescomponents`o utilizzando un meccanismo simile.
 >
 >In caso contrario, nessuno dei servizi (Generico, Analytics, Target e così via) funzionerà.
 
@@ -69,7 +69,7 @@ Per la configurazione di base:
 
    ![Snippet generico di analisi](assets/analytics_genericoverview.png)
 
-1. Fate clic su + per aggiungere una nuova configurazione utilizzando la finestra di dialogo. Assegna almeno un nome, ad esempio Google Analytics:
+1. Fate clic su + per aggiungere una nuova configurazione utilizzando la finestra di dialogo. Come minimo, assegna un nome, ad esempio Google Analytics:
 
    ![Creare la configurazione](assets/analytics_addconfig.png)
 

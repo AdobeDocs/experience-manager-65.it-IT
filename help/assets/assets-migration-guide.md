@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1795'
 ht-degree: 8%
 
 ---
@@ -55,13 +55,13 @@ Prima di avviare la migrazione, disattiva i moduli di avvio per [!UICONTROL Aggi
 
 ### Acquisire risorse {#ingesting-assets}
 
-Prestazioni e stabilità sono fattori importanti da considerare al momento dell’acquisizione delle risorse nel sistema. Poiché si sta caricando una grande quantità di dati nel sistema, è necessario assicurarsi che il sistema funzioni correttamente per ridurre al minimo il tempo necessario ed evitare di sovraccaricare il sistema, con possibile conseguente arresto anomalo del sistema, soprattutto nei sistemi già in produzione.
+Prestazioni e stabilità sono fattori importanti da considerare al momento dell’acquisizione delle risorse nel sistema. Poiché si sta caricando una grande quantità di dati nel sistema, è importante assicurarsi che il sistema funzioni correttamente e che sia in grado di ridurre al minimo il tempo necessario ed evitare il sovraccarico del sistema, che può causare un arresto anomalo del sistema, soprattutto nei sistemi già in produzione.
 
 Esistono due approcci per caricare le risorse nel sistema: un approccio basato su push utilizzando HTTP o un approccio basato su pull utilizzando le API JCR.
 
 #### Invia tramite HTTP {#pushing-through-http}
 
-Il team Managed Services di Adobe utilizza uno strumento denominato Glutton per caricare i dati negli ambienti del cliente. Glutton è una piccola applicazione Java che carica tutte le risorse da una directory a un’altra su una [!DNL Experience Manager] distribuzione. Al posto di Glutton, puoi anche utilizzare strumenti come script Perl per pubblicare le risorse nell’archivio.
+Il team Managed Services di Adobe utilizza uno strumento denominato Glutton per caricare i dati negli ambienti dei clienti. Glutton è una piccola applicazione Java che carica tutte le risorse da una directory a un’altra su una [!DNL Experience Manager] distribuzione. Al posto di Glutton, puoi anche utilizzare strumenti come script Perl per pubblicare le risorse nell’archivio.
 
 Esistono due principali svantaggi nell’utilizzo dell’approccio push attraverso https:
 

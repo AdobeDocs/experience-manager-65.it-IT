@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9901'
+source-wordcount: '9888'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Nella tabella seguente sono elencate le definizioni del servizio WSDL (supponend
 
 **Definizioni AEM Forms Process WSDL**
 
-Per accedere a un file WSDL che appartiene a un processo creato in Workbench, è necessario specificare il nome dell&#39;applicazione e del processo all&#39;interno della definizione WSDL. Si supponga che il nome dell&#39;applicazione sia `MyApplication` e il nome del processo è `EncryptDocument`. In questa situazione, specificare la seguente definizione WSDL:
+Specificare il nome dell&#39;applicazione e il nome del processo all&#39;interno della definizione WSDL per accedere a un WSDL appartenente a un processo creato in Workbench. Si supponga che il nome dell&#39;applicazione sia `MyApplication` e il nome del processo è `EncryptDocument`. In questa situazione, specificare la seguente definizione WSDL:
 
 ```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl
@@ -208,11 +208,11 @@ Il `MTOM` e `swaRef` I campi sono supportati solo in AEM Forms. Puoi utilizzare 
 
 **Fornitura di oggetti BLOB nelle richieste di servizio**
 
-Se un’operazione del servizio AEM Forms richiede un `BLOB` come valore di input, crea un’istanza del `BLOB` digita nella logica dell’applicazione. (Molti degli avvii rapidi del servizio web si trovano in *Programmazione con i moduli AEM* mostrare come utilizzare un tipo di dati BLOB.)
+Se un’operazione del servizio AEM Forms richiede un `BLOB` come valore di input, crea un’istanza del `BLOB` digita nella logica dell’applicazione. (Molti dei servizi web iniziano rapidamente in *Programmazione con i moduli AEM* mostrare come utilizzare un tipo di dati BLOB.)
 
 Assegna valori ai campi che appartengono al `BLOB` come segue:
 
-* **Base64**: per trasmettere i dati come testo codificato in formato Base64, impostare i dati in `BLOB.binaryData` e impostare il tipo di dati nel formato MIME (ad esempio `application/pdf`) in `BLOB.contentType` campo. (vedere [Richiamare AEM Forms utilizzando la codifica Base64](#invoking-aem-forms-using-base64-encoding).)
+* **Base64**: per trasmettere i dati come testo codificato in formato Base64, impostare i dati in `BLOB.binaryData` e impostare il tipo di dati nel formato MIME (ad esempio, `application/pdf`) in `BLOB.contentType` campo. (vedere [Richiamare AEM Forms utilizzando la codifica Base64](#invoking-aem-forms-using-base64-encoding).)
 * **MTOM**: per trasmettere dati binari in un allegato MTOM, imposta i dati in `BLOB.MTOM` campo. Questa impostazione allega i dati alla richiesta SOAP utilizzando il framework Java JAX-WS o l’API nativa del framework SOAP. (vedere [Richiamare AEM Forms tramite MTOM](#invoking-aem-forms-using-mtom).)
 * **SwaRef**: per trasmettere dati binari in un allegato WS-I SwaRef, impostare i dati in `BLOB.swaRef` campo. Questa impostazione allega i dati alla richiesta SOAP utilizzando il framework Java JAX-WS. (vedere [Richiamare AEM Forms con SwaRef](#invoking-aem-forms-using-swaref).)
 * **Allegato MIME o DIME**: per trasmettere i dati in un allegato MIME o DIME, allega i dati alla richiesta SOAP utilizzando l’API nativa del framework SOAP. Impostare l’identificatore dell’allegato in `BLOB.attachmentID` campo. (vedere [Richiamare AEM Forms utilizzando la codifica Base64](#invoking-aem-forms-using-base64-encoding).)
@@ -357,7 +357,7 @@ Nella tabella seguente sono elencati i tipi di dati Java e viene visualizzato il
 1. Installare JDK 1.6 o versione successiva.
 
    * Aggiungi la directory bin JDK al percorso della classe.
-   * Aggiungi la directory bin di JRE al percorso della classe. Questo raccoglitore si trova nel `[JDK_INSTALL_LOCATION]/jre` directory.
+   * Aggiungi la directory bin di JRE al percorso della classe. Questo contenitore è nel `[JDK_INSTALL_LOCATION]/jre` directory.
    * Imposta il `JAVA_HOME` nella directory in cui è stato installato JDK.
 
    JDK 1.6 include il programma wsimport utilizzato nel file build.xml. JDK 1.5 non include tale programma.
@@ -431,7 +431,7 @@ Nella tabella seguente sono elencati i tipi di dati Java e viene visualizzato il
 
 1. Creare un pacchetto dei file JAVA in un file JAR. Se stai lavorando su Eclipse, segui questi passaggi:
 
-   * Crea un nuovo progetto Java utilizzato per creare un pacchetto dei file proxy JAVA in un file JAR.
+   * Crea un progetto Java utilizzato per creare un pacchetto dei file proxy JAVA in un file JAR.
    * Crea una cartella di origine nel progetto.
    * Creare un `com.adobe.idp.services` nella cartella di origine.
    * Seleziona la `com.adobe.idp.services` e quindi importare i file JAVA dalla cartella adobe/idp/services nel pacchetto.
@@ -440,11 +440,11 @@ Nella tabella seguente sono elencati i tipi di dati Java e viene visualizzato il
    * Impostare il livello di conformità del compilatore Java su 5.0 o versione successiva.
    * Crea il progetto.
    * Esporta il progetto come file JAR.
-   * Importa questo file JAR nel percorso di classe di un progetto client. Inoltre, importa tutti i file JAR presenti in &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
+   * Importa questo file JAR nel percorso di classe di un progetto client. Inoltre, importa tutti i file JAR in &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
 
    >[!NOTE]
    >
-   >Tutti i servizi Web Java Quick Start (tranne il servizio Forms) disponibili in Programmazione con moduli AEM creano file proxy Java utilizzando JAX-WS. Inoltre, tutti i servizi web Java quick start, utilizzare SwaRef. (vedere [Richiamare AEM Forms con SwaRef](#invoking-aem-forms-using-swaref).)
+   >Tutti i servizi Web Java Quick Start (tranne il servizio Forms) in Programmazione con moduli AEM creano file proxy Java utilizzando JAX-WS. Inoltre, tutti i servizi web Java quick start, utilizzare SwaRef. (vedere [Richiamare AEM Forms con SwaRef](#invoking-aem-forms-using-swaref).)
 
 **Consulta anche**
 
@@ -669,7 +669,7 @@ Inserire l&#39;assembly client .NET appena creato nel computer in cui si sta svi
    >Sostituisci `hiro-xp` *con l&#39;indirizzo IP del server applicazioni J2EE che ospita AEM Forms.*
 
 1. Crea un pacchetto delle classi proxy Java create utilizzando JAX-WS in un file JAR.
-1. Includi il file Java proxy JAR e i file JAR nel percorso seguente:
+1. Includi il file JAR del proxy Java e i file JAR nel seguente percorso:
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -864,7 +864,7 @@ Per richiamare `MyApplication/EncryptDocument` Procedere utilizzando i file prox
    >Sostituisci `hiro-xp` *con l&#39;indirizzo IP del server applicazioni J2EE che ospita AEM Forms.*
 
 1. Crea un pacchetto delle classi proxy Java create utilizzando JAX-WS in un file JAR.
-1. Includi il file Java proxy JAR e i file JAR nel percorso seguente:
+1. Includi il file JAR del proxy Java e i file JAR nel seguente percorso:
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -987,7 +987,7 @@ Puoi richiamare un servizio AEM Forms utilizzando le classi proxy Java e i dati 
    >Sostituisci `hiro-xp` *con l&#39;indirizzo IP del server applicazioni J2EE che ospita AEM Forms.*
 
 1. Crea un pacchetto delle classi proxy Java create utilizzando JAX-WS in un file JAR.
-1. Includi il file Java proxy JAR e i file JAR nel percorso seguente:
+1. Includi il file JAR del proxy Java e i file JAR nel seguente percorso:
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -1106,7 +1106,7 @@ Dopo aver creato un riferimento Web, sono disponibili i due tipi di dati proxy s
 1. Richiama `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` e trasmettere il `Microsoft.Web.Services2.Dime.DimeAttachment` oggetto.
 1. Richiama `MyApplication/EncryptDocument` processo richiamando il `EncryptDocumentServiceWse` dell&#39;oggetto `invoke` e passando il `BLOB` oggetto che contiene l&#39;allegato DIME. Questo processo restituisce un documento PDF crittografato all&#39;interno di un `BLOB` oggetto.
 1. Ottieni il valore dell’identificatore dell’allegato ottenendo il valore del restituito `BLOB` dell&#39;oggetto `attachmentID` membro dati.
-1. Scorre gli allegati che si trovano in `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` e utilizza il valore dell’identificatore dell’allegato per ottenere il documento PDF crittografato.
+1. Scorrere gli allegati in `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` e utilizza il valore dell’identificatore dell’allegato per ottenere il documento PDF crittografato.
 1. Ottenere un `System.IO.Stream` dell&#39;oggetto ottenendo il valore del `Attachment` dell&#39;oggetto `Stream` membro dati.
 1. Creare una matrice di byte e passare tale matrice di byte al `System.IO.Stream` dell&#39;oggetto `Read` metodo. Questo metodo popola la matrice di byte con un flusso di dati che rappresenta il documento PDF crittografato.
 1. Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore stringa che rappresenta una posizione del file PDF. Questo oggetto rappresenta il documento PDF crittografato.

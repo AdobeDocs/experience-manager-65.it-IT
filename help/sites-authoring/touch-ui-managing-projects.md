@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 23%
 
 ---
@@ -36,7 +36,7 @@ Il modo più semplice per eseguire questa operazione è quello di **projects-use
 
 ## Creazione di un progetto {#creating-a-project}
 
-Segui questi passaggi per creare un nuovo progetto.
+Segui questi passaggi per creare un progetto.
 
 1. In **Progetti** console, tocca o fai clic su **Crea** per aprire **Crea progetto** procedura guidata.
 1. Seleziona un modello e fai clic su **Avanti**. Ulteriori informazioni sui modelli di progetto standard [qui.](/help/sites-authoring/projects.md#project-templates)
@@ -76,11 +76,11 @@ Per aggiungere elementi a un riquadro:
 
    ![Cursore sezione](assets/project-tile-create-task.png)
 
-1. Aggiungi l’elemento alla sezione come faresti quando crei una nuova sezione. Sono descritte le tessere del progetto [qui.](/help/sites-authoring/projects.md#project-tiles)
+1. Aggiungi l’elemento alla sezione come faresti quando crei una sezione. Sono descritte le tessere del progetto [qui.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Visualizzazione delle informazioni sul progetto {#viewing-project-info}
 
-Lo scopo principale dei progetti è quello di raggruppare le informazioni associate in un unico luogo per renderle più accessibili e fruibili. Sono disponibili diversi modi per accedere a queste informazioni.
+Lo scopo principale dei progetti è quello di raggruppare le informazioni associate in un unico luogo per renderle più accessibili e fruibili. Puoi accedere a queste informazioni in diversi modi.
 
 ### Apertura di un riquadro {#opening-a-tile}
 

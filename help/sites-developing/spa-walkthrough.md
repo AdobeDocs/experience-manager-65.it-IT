@@ -4,10 +4,10 @@ description: Questo articolo introduce i concetti di una SPA e spiega come utili
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 71%
+source-wordcount: '1950'
+ht-degree: 67%
 
 ---
 
@@ -44,9 +44,9 @@ La procedura dettagliata si basa sulle funzionalità di AEM standard e sull’ap
 
 >[!CAUTION]
 >
->Questo documento utilizza [App progetto SPA WKND](https://github.com/adobe/aem-guides-wknd-spa) solo a scopo dimostrativo. L’app non deve essere utilizzata per alcun progetto di lavoro.
+>Questo documento utilizza [App progetto SPA WKND](https://github.com/adobe/aem-guides-wknd-spa) solo a scopo dimostrativo. Non utilizzare per alcun lavoro di progetto.
 >
->Qualsiasi progetto AEM dovrebbe sfruttare [Archetipo progetto AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) che supporta i progetti SPA utilizzando React o Angular e sfrutta l’SDK dell’SPA.
+>Qualsiasi progetto AEM deve utilizzare [Archetipo progetto AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) che supporta i progetti SPA utilizzando React o Angular e utilizza l’SDK dell’SPA.
 
 ### Cos’è una SPA? {#what-is-a-spa}
 
@@ -75,7 +75,7 @@ Essendo più veloce, fluida e più simile a un’applicazione nativa, una SPA di
 **Sviluppatori**
 
 * Gli sviluppatori vogliono una netta separazione delle competenze tra contenuti e presentazioni.
-* Una separazione pulita rende il sistema più estensibile e consente uno sviluppo front-end indipendente.
+* La separazione pulita rende il sistema più estensibile e consente lo sviluppo front-end indipendente.
 
 ### Come funziona una SPA? {#how-does-a-spa-work}
 
@@ -97,7 +97,7 @@ Tramite il rendering sul lato client, l’elemento della pagina reagisce più ra
 
 ## Esperienza di modifica dei contenuti con SPA {#content-editing-experience-with-spa}
 
-Quando un SPA viene creato per sfruttare l’Editor SPA dell’AEM, l’autore di contenuto non nota alcuna differenza durante la modifica e la creazione di contenuti. È disponibile una funzionalità AEM comune e non è necessaria alcuna modifica al flusso di lavoro dell’autore.
+Quando un SPA viene creato per utilizzare l’Editor SPA dell’AEM, l’autore di contenuto non nota alcuna differenza durante la modifica e la creazione di contenuti. È disponibile una funzionalità AEM comune e non è necessaria alcuna modifica al flusso di lavoro dell’autore.
 
 1. Modifica l’app del progetto SPA WKND in AEM.
 
@@ -109,7 +109,7 @@ Quando un SPA viene creato per sfruttare l’Editor SPA dell’AEM, l’autore d
 
    ![Passaggio 2](assets/spa-walkthrough-step-2.png)
 
-1. Modifica il contenuto come normale in AEM e osserva che le modifiche sono persistenti.
+1. Modifica il contenuto come di consueto in AEM. Le modifiche vengono rese permanenti.
 
    ![Passaggio 3](assets/spa-walkthrough-step-3.png)
 
@@ -183,7 +183,7 @@ Nella sezione successiva, [Caricamento di un’applicazione SPA,](#loading-an-sp
 
 1. Passa a **Rete** degli strumenti per sviluppatori e ricarica la pagina.
 
-   Ignorando le richieste di immagini, tieni presente che le risorse primarie caricate per la pagina sono la pagina stessa, il CSS, il JavaScript di React, le relative dipendenze e i dati JSON per la pagina.
+   Ignorando le richieste di immagini, le risorse principali caricate per la pagina sono la pagina stessa, il CSS, il JavaScript React, le relative dipendenze e i dati JSON per la pagina.
 
    ![Passaggio 5](assets/spa-walkthrough-step-1-5.png)
 
@@ -195,7 +195,7 @@ Nella sezione successiva, [Caricamento di un’applicazione SPA,](#loading-an-sp
 
    L’editor SPA AEM sfrutta [AEM Content Services](/help/assets/content-fragments/content-fragments.md) per distribuire l’intero contenuto della pagina come un modello JSON.
 
-   Implementando interfacce specifiche, i modelli Sling forniscono le informazioni necessarie alla SPA. La distribuzione dei dati JSON viene delegata verso il basso per ciascun componente (dalla pagina, al paragrafo, al componente, ecc.).
+   Implementando interfacce specifiche, i modelli Sling forniscono le informazioni necessarie alla SPA. La distribuzione dei dati JSON viene delegata verso il basso a ciascun componente (dalla pagina, al paragrafo, al componente, e così via).
 
    Ogni componente sceglie cosa espone e come viene renderizzato (lato server con HTL o lato client con React). Questo articolo si concentra sul rendering lato client con React.
 
@@ -213,7 +213,7 @@ Nella sezione successiva, [Caricamento di un’applicazione SPA,](#loading-an-sp
 
 ### Interazione con l’editor SPA {#interaction-with-the-spa-editor}
 
-Utilizzando l’applicazione di esempio del progetto SPA WKND, è chiaro come l’app si comporta e viene caricata quando viene pubblicata, utilizzando i servizi di contenuto per la distribuzione di contenuti JSON e il caricamento asincrono delle risorse.
+Utilizzando l’applicazione di esempio WKND SPA Project, è chiaro come si comporta l’app che viene caricata quando viene pubblicata, utilizzando i servizi per contenuti per la distribuzione dei contenuti JSON e il caricamento asincrono delle risorse.
 
 Inoltre, per l’autore dei contenuti, la creazione di contenuti tramite un editor SPA è semplice all’interno di AEM.
 
@@ -225,7 +225,7 @@ Nella sezione seguente esploreremo il contratto che consente all’editor di SPA
 
 1. Utilizzando gli strumenti di sviluppo incorporati nel browser, esaminare il contenuto della pagina. Con lo strumento di selezione, selezionare un componente modificabile nella pagina e visualizzare i dettagli dell’elemento.
 
-   Tieni presente che il componente ha un nuovo attributo dati `data-cq-data-path`.
+   Il componente ha un nuovo attributo dati `data-cq-data-path`.
 
    ![Passaggio 2](assets/spa-walkthrough-step-2-2.png)
 
@@ -235,7 +235,7 @@ Nella sezione seguente esploreremo il contratto che consente all’editor di SPA
 
    Questo percorso consente il recupero e l’associazione dell’oggetto di modifica del contesto di configurazione di ciascun componente.
 
-   Questo è l’unico attributo di markup necessario affinché l’editor riconosca questo come componente modificabile all’interno della SPA. In base a questo attributo, l’editor di SPA determinerà quale configurazione modificabile è associata al componente in modo che il corretto frame, la corretta barra degli strumenti ecc. siano caricati.
+   Questo è l’unico attributo di markup necessario affinché l’editor riconosca questo come componente modificabile all’interno della SPA. In base a questo attributo, l’editor SPA determinerà la configurazione modificabile associata al componente, in modo che vengano caricati il frame, la barra degli strumenti e così via corretti.
 
    Vengono inoltre aggiunti alcuni nomi di classe specifici per contrassegnare i segnaposto e per la funzionalità di trascinamento della risorsa.
 

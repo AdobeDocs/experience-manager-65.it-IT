@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '429'
 ht-degree: 32%
 
 ---
@@ -25,7 +25,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 >[!NOTE]
 >
->Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi AEM (per amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, rivolgiti al tuo amministratore di sistema per informazioni sulla risoluzione dei problemi relativi all’AEM.
+>Gli utenti con privilegi di amministratore e che desiderano risolvere i problemi relativi all&#39;AEM possono utilizzare i metodi di risoluzione dei problemi descritti in [Risoluzione dei problemi AEM (per amministratori)](/help/sites-administering/troubleshoot.md). Se non disponi di privilegi sufficienti, consulta l’amministratore di sistema per la risoluzione dei problemi AEM.
 
 ## La vecchia versione della pagina è ancora nel sito pubblicato {#old-page-version-still-on-published-site}
 
@@ -44,17 +44,17 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
    * Cancella la cache del browser locale e accedi di nuovo alla pagina.
    * Aggiungi `?` alla fine dell’URL della pagina, ad esempio:
 
-      `http://localhost:4502/sites.html/content?`
+     `http://localhost:4502/sites.html/content?`
 
-      In questo modo la pagina viene richiesta direttamente da AEM senza passare dal Dispatcher. Se viene visualizzata la pagina aggiornata, significa che è necessario cancellare la cache del Dispatcher.
+     In questo modo la pagina viene richiesta direttamente da AEM senza passare dal Dispatcher. Se viene visualizzata la pagina aggiornata, significa che è necessario cancellare la cache del Dispatcher.
 
    * In caso di problemi relativi alla coda di replica, rivolgiti all’amministratore di sistema.
 
-## Barra laterale non visibile {#sidekick-not-visible}
+## Sidekick non visibile {#sidekick-not-visible}
 
 * **Problema**:
 
-   * La barra laterale non è visibile quando si modifica una pagina di contenuto nell’ambiente di authoring.
+   * Il Sidekick non è visibile quando si modifica una pagina di contenuto nell’ambiente di authoring.
 
 * **Motivo**:
 
@@ -62,7 +62,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 * **Soluzione**:
 
-   * Esci dalla sessione corrente e accedi di nuovo. La barra laterale tornerà alla posizione predefinita.
+   * Esci dalla sessione corrente e accedi di nuovo. Il Sidekick tornerà alla posizione predefinita.
 
 ## Trova e sostituisci: non tutte le istanze vengono sostituite {#find-replace-not-all-instances-are-replaced}
 
@@ -83,4 +83,4 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
    * Queste definizioni possono essere modificate con la configurazione di **Day CQ WCM Find Replace Servlet** utilizzando **Console web**; ad esempio, in
 
-      `http://localhost:4502/system/console/configMgr`
+     `http://localhost:4502/system/console/configMgr`

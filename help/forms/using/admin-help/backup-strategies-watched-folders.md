@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1089'
 ht-degree: 2%
 
 ---
@@ -155,9 +155,9 @@ Le seguenti strategie possono ridurre al minimo la perdita di dati di output e c
 * Eseguire frequentemente il backup delle cartelle di output e di errore, ad esempio ogni ora, per evitare la perdita di file di risultato e di errore.
 * Eseguire il backup dei file di input in una cartella diversa da quella controllata. Ciò garantisce la disponibilità dei file dopo il ripristino nel caso in cui non sia possibile trovare i file nella cartella di output o nella cartella di errore. Assicurati che lo schema di denominazione dei file sia coerente.
 
-   Ad esempio, se salvi l’output con `%F.`*estensione*, il file di output avrà lo stesso nome del file di input. Questo consente di determinare quali file di input vengono manipolati e quali devono essere inviati nuovamente. Se nella cartella dei risultati è presente solo file1_out e non file2_out, file3_out e file4_out, è necessario inviare nuovamente file2, file3 e file4.
+  Ad esempio, se salvi l’output con `%F.`*estensione*, il file di output avrà lo stesso nome del file di input. Questo consente di determinare quali file di input vengono manipolati e quali devono essere inviati nuovamente. Se nella cartella dei risultati è presente solo file1_out e non file2_out, file3_out e file4_out, è necessario inviare nuovamente file2, file3 e file4.
 
-* Se il backup della cartella controllata disponibile è precedente al tempo necessario per elaborare il processo, è necessario consentire al sistema di creare una nuova cartella controllata e inserire automaticamente i file nella cartella di input.
+* Se il backup della cartella controllata disponibile è precedente al tempo necessario per elaborare il processo, è necessario consentire al sistema di creare una cartella controllata e inserire automaticamente i file nella cartella di input.
 * Se l&#39;ultimo backup disponibile non è abbastanza recente, il tempo di backup è inferiore al tempo necessario per elaborare i file e la cartella controllata viene ripristinata, il file è stato manipolato in una delle seguenti fasi:
 
    * **Fase 1:** Nella cartella di input
@@ -166,11 +166,11 @@ Le seguenti strategie possono ridurre al minimo la perdita di dati di output e c
    * **Fase 4:** Manipolazione in corso
    * **Fase 5:** Risultati restituiti
 
-   I file eventualmente presenti nella fase 1 verranno modificati. Se i file si trovano nella fase 2 o 3, inseriscili nella cartella di input per poterli manipolare nuovamente.
+  I file eventualmente presenti nella fase 1 verranno modificati. Se i file si trovano nella fase 2 o 3, inseriscili nella cartella di input per poterli manipolare nuovamente.
 
-   >[!NOTE]
-   >
-   >Se la manipolazione di un file si verifica più di una volta, la perdita di dati sarà evitata, ma i risultati possono essere duplicati.
+  >[!NOTE]
+  >
+  >Se la manipolazione di un file si verifica più di una volta, la perdita di dati sarà evitata, ma i risultati possono essere duplicati.
 
 ## Conclusione {#conclusion}
 

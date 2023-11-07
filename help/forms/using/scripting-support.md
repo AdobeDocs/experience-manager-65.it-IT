@@ -11,10 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3892'
-ht-degree: 6%
+source-wordcount: '3888'
+ht-degree: 7%
 
 ---
 
@@ -36,7 +36,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td>Specifica il contenuto del campo prima che venga modificato in risposta alle azioni di un utente. Questo valore può essere richiamato, in modo simile a una feature di annullamento.</td>
    <td><p>Non funziona per menu a discesa e caselle di riepilogo. <code>PrevText </code>non funziona correttamente nei seguenti casi:</p>
     <ul>
-     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio $, (,), &amp;, @ e altro) nei campi Numerici di iPad e </li>
+     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $, (,), &amp;, @ e altro) nei campi Numerici di iPad e </li>
      <li>Per il campo Data (quando la data viene immessa nel calendario).<br /> </li>
     </ul> <p>L'impostazione del valore tramite script non è supportata.</p> </td>
   </tr>
@@ -52,7 +52,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
     <ul>
      <li>Selezione-sostituzione di testi</li>
      <li>Per eliminare, copiare e incollare i testi.</li>
-     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio $, (, ), &amp;, @ e altro) nei campi numerici<br /> </li>
+     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $, (, ), &amp;, @ e altro) nei campi numerici<br /> </li>
      <li>Quando si utilizza la combinazione maiusc+alfanumerico. </li>
      <li>Quando si utilizzano i campi data/ora.</li>
     </ul>
@@ -67,7 +67,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
     <ul>
      <li>Selezione-sostituzione di testi</li>
      <li>Per eliminare, copiare e incollare i testi.</li>
-     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio $, (,), &amp;, @ e altro) nei campi numerici<br /> </li>
+     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $, (,), &amp;, @ e altro) nei campi numerici<br /> </li>
      <li>Quando si utilizza la combinazione maiusc+alfanumerico. </li>
      <li>Quando si utilizzano i campi data/ora.</li>
     </ul> <p>L'impostazione del valore tramite script non è supportata.</p> </td>
@@ -1185,7 +1185,7 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
    1. Max()
    1. Min()
    1. Mod()
-   1. Round()
+   1. Arrotonda()
    1. Somma()
 
 1. **Funzioni scientifiche**
@@ -1345,7 +1345,7 @@ Sono supportati i seguenti eventi XFA lato client:
 * Inizializza
 * Convalida
 * Calcola
-* Clic
+* Fai clic su
 * Inserisci
 * Esci
 * Cambia
@@ -1353,4 +1353,4 @@ Sono supportati i seguenti eventi XFA lato client:
 
 >[!NOTE]
 >
->I moduli HTML5 vengono sottoposti a rendering sul lato client (browser). Si consiglia di utilizzare il lato client **convalida** e **calcola** script anziché script lato server.
+>I moduli HTML5 vengono sottoposti a rendering sul lato client (browser). Usa lato client **convalida** e **calcola** script anziché script lato server.

@@ -1,19 +1,15 @@
 ---
 title: Conversione di PDF in file Postscript e Image
-seo-title: Converting PDF to Postscript andImage Files
 description: Utilizza il servizio Convert PDF per convertire i documenti PDF in PostScript e in diversi formati di immagine (JPEG, JPEG 2000, PNG e TIFF) utilizzando l’API Java e l’API del servizio Web.
-seo-description: Use the Convert PDF service to convert PDF documents to PostScript and to a number of image formats (JPEG, JPEG 2000, PNG, and TIFF) using the Java API and Web Service API.
-uuid: 07da0391-7180-4197-aaa6-ae753d753b84
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2801'
 ht-degree: 0%
 
 ---
@@ -240,11 +236,11 @@ Prima di poter eseguire a livello di programmazione un&#39;operazione del serviz
 
 **Recupera il documento PDF da convertire**
 
-Per convertire un&#39;immagine è necessario recuperare il documento PDF. Impossibile convertire un documento PDF interattivo in un&#39;immagine. Se tenti di farlo, viene generata un’eccezione. Per convertire un documento PDF interattivo in un file di immagine, è necessario appiattire il documento PDF prima di convertirlo. (vedere [Appiattimento documenti PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+Recuperate il documento PDF per convertirlo in immagine. Impossibile convertire un documento PDF interattivo in un&#39;immagine. Se tenti di farlo, viene generata un’eccezione. Per convertire un documento PDF interattivo in un file di immagine, è necessario appiattire il documento PDF prima di convertirlo. (vedere [Appiattimento documenti PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 **Impostare le opzioni di runtime**
 
-È necessario impostare le opzioni di runtime, ad esempio il formato dell&#39;immagine e i valori di risoluzione. Per informazioni sui valori di runtime, vedere `ToImageOptionsSpec` riferimento di classe in [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Impostate le opzioni di runtime, ad esempio il formato dell&#39;immagine e i valori di risoluzione. Per informazioni sui valori di runtime, vedere `ToImageOptionsSpec` riferimento di classe in [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Convertire il PDF in un&#39;immagine**
 

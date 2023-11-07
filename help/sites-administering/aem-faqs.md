@@ -2,9 +2,9 @@
 title: Domande frequenti su AEM
 description: Utilizza queste domande frequenti per comprendere, configurare e risolvere i problemi relativi ai flussi di lavoro o ai problemi più comuni in AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Scopri le risposte ad alcuni problemi di configurazione e risoluzione dei proble
 
 ### Come si configura la distribuzione senza binario? {#how-do-i-configure-binary-less-distribution}
 
-La distribuzione senza binario è supportata per le distribuzioni in un archivio dati condiviso e coinvolge agenti che sfruttano la funzione di esportazione pacchetti di distribuzione basata su Vault (PID di fabbrica: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) Generatore di pacchetti.
+La distribuzione senza binario è supportata per le distribuzioni in un archivio dati condiviso e coinvolge agenti che utilizzano l’utilità di esportazione pacchetti di distribuzione basata su Vault (PID di fabbrica: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) Generatore di pacchetti.
 
 Con la modalità senza binari abilitata, i pacchetti di contenuti distribuiti contengono riferimenti ai binari anziché ai binari effettivi.
 
@@ -60,7 +60,7 @@ Adobe Experience Manager (AEM) 6.4 viene fornito con la procedura guidata SSL e 
 
 Per abilitare SSL per impostazione predefinita, consulta [SSL per impostazione predefinita](/help/sites-administering/ssl-by-default.md).
 
-#### Qual è l’architettura consigliata quando si utilizzano i Content Services dell’AEM da un’app mobile, idealmente React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### Qual è l’architettura consigliata quando si utilizza AEM Content Services da un’app mobile, idealmente React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 I servizi di contenuto sono basati sui modelli Sling e gli sviluppatori AEM devono fornire un pojo del modello Sling per ogni componente esportato.
 
@@ -78,7 +78,7 @@ Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’int
 
 #### Esiste una buona risorsa che evidenzia le caratteristiche principali per l’aggiornamento a AEM 6.4? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-Fare riferimento a [Perché aggiornare l’AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) che descrive il raggruppamento ad alto livello delle funzioni chiave per i clienti che intendono effettuare l’aggiornamento all’ultima versione di Adobe Experience Manager.
+Consulta [Perché aggiornare l’AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) che descrive il raggruppamento ad alto livello delle funzioni chiave per i clienti che intendono effettuare l’aggiornamento all’ultima versione di Adobe Experience Manager.
 
 ## Risorse {#assets}
 
@@ -103,11 +103,11 @@ Come soluzione alternativa, puoi anche disabilitare manualmente il componente tr
 
 #### Come personalizzare le console di amministrazione? {#how-to-customize-admin-consoles}
 
-AEM offre diversi meccanismi per personalizzare le console e la funzionalità di authoring delle pagine dell’istanza di authoring. Per informazioni su come creare una console personalizzata e personalizzare una visualizzazione predefinita per una console, consulta [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md).
+AEM offre diversi meccanismi per personalizzare le console e la funzionalità di authoring delle pagine dell’istanza di authoring. Per informazioni su come creare una console personalizzata e personalizzare una vista predefinita per una console, consulta [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Qual è la differenza tra i componenti basati su CoralUI 2 e CoralUI 3? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Un nuovo set di componenti Sling di Granite UI Foundation viene creato per Coral3 e si trova in [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Esiste un set per i componenti basati su CoralUI 2 e uno per i componenti basati su CoralUI 3. Il nuovo set non sarà solo un copia-incolla del vecchio set, ma verrà ripulito (ad esempio semplificando, rimuovendo la funzione obsoleta). Pertanto, si consiglia di utilizzare una pagina solo con set basati su CoralUI 3 o CoralUI 2.
+Un nuovo set di componenti Sling di Granite UI Foundation viene creato per Coral3 e si trova in [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Esiste un set per i componenti basati su CoralUI 2 e uno per i componenti basati su CoralUI 3. Il nuovo set non sarà solo un copia-incolla del vecchio set, ma verrà ripulito (ad esempio, snellimento, rimozione della funzione obsoleta). Pertanto, si consiglia di utilizzare una pagina solo con set basati su CoralUI 3 o CoralUI 2.
 
 Per ulteriori informazioni, consulta [Guida alla migrazione a CoralUI 3-based](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 

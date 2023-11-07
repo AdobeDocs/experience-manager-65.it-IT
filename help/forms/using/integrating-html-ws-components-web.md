@@ -1,16 +1,12 @@
 ---
 title: Integrazione dei componenti dell’area di lavoro di AEM Forms nelle applicazioni web
-seo-title: Integrating AEM Forms workspace components in web applications
-description: Come riutilizzare i componenti dell’area di lavoro di AEM Forms nelle tue applicazioni web per sfruttare le funzionalità e fornire un’integrazione perfetta.
-seo-description: How to reuse AEM Forms workspace components in your own webapps to leverage functionality and provide tight integration.
-uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
+description: Come riutilizzare i componenti dell’area di lavoro di AEM Forms nelle tue applicazioni web per utilizzare le funzionalità e fornire un’integrazione perfetta.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 Puoi utilizzare l’area di lavoro di AEM Forms [componenti](/help/forms/using/description-reusable-components.md) nella tua applicazione web. L’implementazione di esempio seguente utilizza i componenti di un pacchetto di sviluppo per l’area di lavoro di AEM Forms installato in un’istanza CRX™ per creare un’applicazione web. Personalizza la soluzione qui sotto in base alle tue esigenze specifiche. L’implementazione di esempio riutilizza `UserInfo`, `FilterList`, e `TaskList`componenti all’interno di un portale web.
 
-1. Accedi all’ambiente CRXDE Lite all’indirizzo `https://'[server]:[port]'/lc/crx/de/`. Verifica che sia installato un pacchetto di sviluppo per l’area di lavoro di AEM Forms.
+1. Accedi all’ambiente CRXDE Liti all’indirizzo `https://'[server]:[port]'/lc/crx/de/`. Verifica che sia installato un pacchetto di sviluppo per l’area di lavoro di AEM Forms.
 1. Creare un percorso `/apps/sampleApplication/wscomponents`.
 1. Copia css, immagini, js/libs, js/runtime e js/registry.js
 
@@ -63,10 +59,10 @@ Puoi utilizzare l’area di lavoro di AEM Forms [componenti](/help/forms/using/d
 
    ```javascript
    define([
-       ‘jquery’,
-       ‘underscore’,
-       ‘backbone’,
-       ‘runtime/views/userinfo'],
+       'jquery',
+       'underscore',
+       'backbone',
+       'runtime/views/userinfo'],
        function($, _, Backbone, UserInfo){
            var demoUserInfo = UserInfo.extend({
                //override the functions to customize the functionality

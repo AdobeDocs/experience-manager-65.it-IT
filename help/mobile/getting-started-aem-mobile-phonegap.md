@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: fbcdea8a-72e9-431b-9c32-dc02d4cdb9c8
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 AEM si integra con PhoneGap in modo da poter creare facilmente app utilizzando le pagine AEM. PhoneGap permette all’utente di creare app che consentono agli utenti di lavorare con i contenuti. Sincronizzazione contenuti consente di creare archivi con versioni delle pagine da includere nel bundle con le app.
 
-In genere, un’ ***Amministratore AEM*** è responsabile dell’aggiunta di una nuova applicazione al catalogo AEM Mobile, sia tramite la creazione guidata di una nuova app, sia tramite l’importazione di un’applicazione esistente.
+In genere, un’ ***Amministratore AEM*** è responsabile dell’aggiunta di una nuova applicazione al catalogo AEM Mobile, sia tramite la creazione guidata di un’app, sia tramite l’importazione di un’applicazione esistente.
 
 Da qui un ***Autore AEM*** (o *Addetto marketing*) ora può utilizzare i modelli e i componenti predefiniti per aggiungere e modificare pagine, trascinare e rilasciare componenti e aggiungere contenuti multimediali di tutti i tipi da DAM, incluse immagini, video e frammenti di testo (frammenti di contenuto).
 

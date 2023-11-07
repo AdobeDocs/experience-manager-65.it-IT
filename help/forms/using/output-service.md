@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: 51ab91ff-c0c0-4165-ae02-f306e45eea03
 docset: aem65
 exl-id: 1b62e1c1-428d-4c0f-98a8-486f319fa581
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Il servizio di output consente di creare applicazioni che consentono di:
 
 In genere, si creano modelli utilizzando AEM Forms Designer. Il `generatePDFOutput` e `generatePrintedOutput` Le API del servizio di output consentono di convertire direttamente questi modelli in vari formati, tra cui PDF, PostScript, ZPL e PCL.
 
-Il `generatePDFOutput` l&#39;operazione genera PDF, mentre `generatePrintedOutput` L&#39;operazione genera i formati PostScript, ZPL e PCL. Il primo parametro di entrambe le operazioni accetta il nome del file modello (ad esempio `ExpenseClaim.xdp`) o un oggetto Document contenente il modello. Quando si specifica il nome del file modello, specificare anche la directory principale del contenuto come percorso della cartella che contiene il modello. È possibile specificare la directory principale del contenuto utilizzando `PDFOutputOptions` o `PrintedOutputOptions` parametro. Consulta JavaScript per informazioni dettagliate su altre opzioni che puoi specificare utilizzando questi parametri.
+Il `generatePDFOutput` l&#39;operazione genera PDF, mentre `generatePrintedOutput` L&#39;operazione genera i formati PostScript, ZPL e PCL. Il primo parametro di entrambe le operazioni accetta il nome del file modello (ad esempio, `ExpenseClaim.xdp`) o un oggetto Document contenente il modello. Quando si specifica il nome del file modello, specificare anche la directory principale del contenuto come percorso della cartella che contiene il modello. È possibile specificare la directory principale del contenuto utilizzando `PDFOutputOptions` o `PrintedOutputOptions` parametro. Consulta JavaScript per informazioni dettagliate su altre opzioni che puoi specificare utilizzando questi parametri.
 
 Il secondo parametro accetta un documento XML che viene unito al modello durante la generazione del documento di output.
 

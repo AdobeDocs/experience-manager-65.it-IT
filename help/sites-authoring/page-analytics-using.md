@@ -8,9 +8,9 @@ topic-tags: site-features
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '445'
 ht-degree: 11%
 
 ---
@@ -35,10 +35,10 @@ Ogni colonna mostra un valore per il periodo di reporting corrente e indica anch
 >
 >Per modificare il periodo di aggiornamento: [configurare l’intervallo di importazione](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Apri **Sites** console; ad esempio [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. Apri **Sites** console; ad esempio, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. Nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona per selezionare **Vista a elenco** (l’icona visualizzata dipende dal [vista corrente](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Di nuovo, nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona, quindi seleziona **Impostazioni vista**. Il **Configura colonne** viene aperta una finestra di dialogo. Apporta le modifiche necessarie e conferma con **Aggiorna**.
+1. Di nuovo, nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona, quindi seleziona **Impostazioni vista**. Il **Configura colonne** viene visualizzata una finestra di dialogo. Apporta le modifiche necessarie e conferma con **Aggiorna**.
 
    ![spad-02](assets/spad-02.png)
 

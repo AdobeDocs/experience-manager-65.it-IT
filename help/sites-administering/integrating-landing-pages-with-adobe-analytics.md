@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ Nell&#39;AEM, la **Invito all&#39;azione** componenti - **ClickThroughLink** e *
 
 Per mappare i componenti della pagina di destinazione su Adobe Analytics:
 
-1. Dopo aver creato la configurazione di Adobe Analytics e aver creato un nuovo framework, seleziona la suite di rapporti appropriata dal menu a discesa. Questo comporta il recupero delle variabili di Adobe Analytics e la loro visualizzazione nel Content Finder.
+1. Dopo aver creato la configurazione di Adobe Analytics e aver creato un framework, seleziona la suite di rapporti appropriata dal menu a discesa. Questo comporta il recupero delle variabili di Adobe Analytics e la loro visualizzazione nel Content Finder.
 1. Trascina i componenti di invito all’azione (CTA) dalla barra laterale fino all’area di mappatura al centro della pagina, a seconda delle necessità.
 
 <table>
@@ -89,7 +89,7 @@ Per mappare i componenti della pagina di destinazione su Adobe Analytics:
 </table>
 
 1. Mappa questi attributi esposti con qualsiasi variabile di Adobe Analytics da Content Finder. Il framework è ora pronto per l’uso.
-1. Ora puoi creare una nuova pagina di destinazione o aprirne una esistente con i componenti CTA esistenti e fare clic su **Cloud Services** scheda in **Proprietà pagina** dalla barra laterale (nell’interfaccia touch), seleziona **Apri proprietà** e fai clic su **Cloud Services**) e configura il framework da utilizzare con la pagina di destinazione. Selezionare il framework dall&#39;elenco a discesa.
+1. Ora puoi creare una pagina di destinazione o aprirne una esistente con i componenti CTA esistenti e fare clic su **Cloud Service** scheda in **Proprietà pagina** dalla barra laterale (nell’interfaccia touch), seleziona **Apri proprietà** e fai clic su **Cloud Service**) e configura il framework da utilizzare con la pagina di destinazione. Selezionare il framework dall&#39;elenco a discesa.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

@@ -5,10 +5,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3678'
-ht-degree: 65%
+source-wordcount: '3677'
+ht-degree: 67%
 
 ---
 
@@ -49,9 +49,8 @@ Ecco alcuni suggerimenti di carattere generale su come creare URL per l’ottimi
    * Se utilizzi selettori in una pagina, scegli quelli che forniscono valori semantici.
    * Se un utente non riesce a interpretare l’URL, non può farlo nemmeno un motore di ricerca.
    * Ad esempio:
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-è da preferirsi a 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+è da preferirsi a `mybrand.com/products/product-detail.1234.html`
 
 * Se possibile, evita i sottodomini perché i motori di ricerca li considerano come entità diverse, frammentando il valore SEO (Search Engine Optimization) del sito.
 
@@ -189,20 +188,20 @@ Se un autore vuole che una pagina sia accessibile da una seconda posizione a sco
 Può essere necessario visualizzare i nomi delle pagine localizzate agli utenti del contenuto tradotto. Ad esempio:
 
 * L’URL visualizzato da un utente di lingua spagnola non dovrebbe essere:
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * Ma sarebbe meglio che fosse:
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
-Il problema legato alla localizzazione del nome della pagina è che molti degli strumenti di localizzazione disponibili sulla piattaforma AEM dipendono dalla corrispondenza dei nomi delle pagine tra diverse lingue per mantenere sincronizzato il contenuto.
+Il problema correlato alla localizzazione del nome della pagina è che molti degli strumenti di localizzazione disponibili sulla piattaforma AEM dipendono dalla corrispondenza dei nomi delle pagine tra diverse lingue, per garantire la sincronizzazione del contenuto.
 
 Il `sling:alias` La proprietà ti permette di avere torta Adobe e mangiarlo troppo. Puoi aggiungere `sling:alias` come proprietà di qualsiasi risorsa per consentire l’utilizzo di un nome di alias della risorsa. Nell’esempio precedente, si otterrebbe quanto segue:
 
 * Una pagina nel JCR in:
-   `…/es/home`
+  `…/es/home`
 
 * Una proprietà aggiunta a tale pagina:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 Questo flusso consente agli strumenti di traduzione dell’AEM come il gestore multisito di continuare a mantenere una relazione tra:
 
@@ -221,12 +220,11 @@ Allo stesso tempo gli utenti finali potranno interagire con il nome della pagina
 In un’installazione standard di AEM:
 
 * per la configurazione OSGi
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * la proprietà
-   **Mapping Location** (Posizione mappatura) ( `resource.resolver.map.location`)
+  **Mapping Location** (Posizione mappatura) ( `resource.resolver.map.location`)
 
 * viene impostata sul valore predefinito `/etc/map`.
 
@@ -255,8 +253,8 @@ Tuttavia, esiste anche un modo più semplice per gestire questo problema:
    Utilizzando la console web, ad esempio localhost:4502/system/console/configMgr, puoi configurare Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    L’Adobe consiglia di creare le mappature necessarie per ridurre gli URL come espressioni regolari, quindi di definire queste configurazioni in un nodo OsgiConfignode, `config.publish` incluso nella build.
 
    Invece di definire le mappature in `/etc/map`, puoi assegnarle direttamente alla proprietà **URL Mappings** (Mappature URL) ( `resource.resolver.mapping`):
@@ -470,7 +468,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Inoltre, la funzionalità implementata per le sitemap XML può essere utilizzata anche per casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua nell’intestazione di una pagina. Consulta [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) per ulteriori informazioni.
+Inoltre, la funzionalità implementata per le sitemap XML può essere utilizzata per casi d’uso diversi, ad esempio per aggiungere il collegamento canonico o la lingua nell’intestazione di una pagina. Consulta [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) per ulteriori informazioni.
 
 ### Creazione di reindirizzamenti 301 per gli URL legacy {#creating-redirects-for-legacy-urls}
 

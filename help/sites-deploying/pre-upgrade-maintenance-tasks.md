@@ -12,9 +12,9 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Quando si avvia AEM dal file jar, un `quickstart.properties` file generato in `c
 
 Il `WorkflowPurgeTask` e `com.day.cq.audit.impl.AuditLogMaintenanceTask` Le attività richiedono configurazioni OSGi separate e non possono funzionare senza di esse. In caso di errore durante l’esecuzione delle attività di pre-aggiornamento, la causa più probabile è la mancanza di configurazioni. Di conseguenza, se non desideri eseguirle, accertati di aggiungere configurazioni OSGi per queste attività o rimuoverle completamente dall’elenco delle attività di ottimizzazione pre-aggiornamento. La documentazione relativa alla configurazione delle attività di eliminazione del flusso di lavoro è disponibile all’indirizzo [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md) e la configurazione dell’attività di manutenzione del registro di controllo sono disponibili all’indirizzo [Manutenzione del registro di controllo dell’AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Per l’eliminazione del flusso di lavoro e del registro di controllo in CQ 5.6 e l’eliminazione del registro di controllo in AEM 6.0, consulta [Eliminare i nodi del flusso di lavoro e del controllo](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
+Per la rimozione del flusso di lavoro e del registro di controllo in CQ 5.6 e la rimozione del registro di controllo in AEM 6.0, consulta [Eliminare i nodi del flusso di lavoro e del controllo](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
 ## Installare, configurare ed eseguire le attività di pre-aggiornamento {#install-configure-run-pre-upgrade-tasks}
 

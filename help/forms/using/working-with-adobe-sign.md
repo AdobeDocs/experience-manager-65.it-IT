@@ -11,7 +11,7 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 1%
@@ -171,11 +171,11 @@ Per selezionare un servizio cloud e impostare l’ordine di firma, effettua le s
 
 1. Nel browser Contenuti, tocca **[!UICONTROL Contenitore modulo]**, e tocca il **[!UICONTROL Configura]** ![configura](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo.
 1. Nel browser delle proprietà, espandi la sezione **[!UICONTROL Firma elettronica]** Pannello a soffietto e seleziona la **[!UICONTROL Abilita Adobe Sign]** opzione. Abilita [!DNL Adobe Sign] per un modulo adattivo.
-1. Seleziona un servizio cloud dall’elenco già configurato di [!DNL Adobe Sign] Cloud Services.
+1. Seleziona un servizio cloud dall’elenco già configurato di [!DNL Adobe Sign] Cloud Service.
 
    Se il **[!UICONTROL Adobe Sign Cloud Service]** è vuoto, segui la [Configurare Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) articolo per configurare il servizio.
 
-   Il menu a discesa elenca i servizi cloud esistenti nel `global` cartella in Strumenti > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Inoltre, il menu a discesa elenca anche i servizi cloud presenti nella cartella selezionata nel **[!UICONTROL Contenitore configurazione]** quando crei un modulo adattivo.
+   Il menu a discesa elenca i servizi cloud esistenti nel `global` cartella in Strumenti > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Inoltre, il menu a discesa elenca anche i servizi cloud presenti nella cartella selezionata nel **[!UICONTROL Contenitore configurazione]** quando crei un modulo adattivo.
 
 1. Selezionare l&#39;ordine di firma dalla **[!UICONTROL I firmatari possono firmare]** . [!DNL Adobe Sign] i cantanti possono firmare un modulo adattivo **[!UICONTROL In sequenza]** - uno dopo l&#39;altro firmatario, oppure **[!UICONTROL Contemporaneamente]** - in qualsiasi ordine.
 
@@ -201,7 +201,7 @@ Per un modulo adattivo puoi avere un solo firmatario o più firmatari. Quando ag
 
    * **[!UICONTROL Il firmatario e la persona che riempie il modulo corrispondono?]:** Seleziona **Sì**, se il compilatore del modulo e il primo firmatario sono la stessa persona. Se l’opzione è impostata su **No,** quindi non utilizzare il componente del passaggio di firma nel modulo adattivo. Se il modulo contiene un componente Passaggio firma, il campo viene automaticamente impostato su Sì.
 
-   * **[!UICONTROL Indirizzo e-mail del firmatario]:** Specifica l’indirizzo e-mail del firmatario. Il firmatario riceve i documenti/moduli da firmare all&#39;indirizzo e-mail specificato. Puoi scegliere di utilizzare un indirizzo e-mail fornito in un campo del modulo, nel profilo utente AEM dell’utente connesso o immettere manualmente un indirizzo e-mail. È un passaggio obbligatorio. Assicurati che l’indirizzo e-mail del primo firmatario o dell’unico firmatario (in caso di firmatario singolo) non sia identico a [!DNL Adobe Sign] account utilizzato per configurare AEM Cloud Services.
+   * **[!UICONTROL Indirizzo e-mail del firmatario]:** Specifica l’indirizzo e-mail del firmatario. Il firmatario riceve i documenti/moduli da firmare all&#39;indirizzo e-mail specificato. Puoi scegliere di utilizzare un indirizzo e-mail fornito in un campo del modulo, nel profilo utente AEM dell’utente connesso o immettere manualmente un indirizzo e-mail. È un passaggio obbligatorio. Assicurati che l’indirizzo e-mail del primo firmatario o dell’unico firmatario (in caso di firmatario singolo) non sia identico a [!DNL Adobe Sign] account utilizzato per configurare i servizi cloud AEM.
 
    * **[!UICONTROL Metodo di autenticazione del firmatario]:** Specifica il metodo per autenticare un utente prima di aprire un modulo per la firma. Puoi scegliere tra l’autenticazione basata su telefono, knowledge base e social identity. Per Adobe Acrobat Sign Solutions for Government sono disponibili solo opzioni di autenticazione tramite telefono e knowledge-based.
 
@@ -228,7 +228,7 @@ Inoltre, un’ [!DNL Adobe Sign] il modulo adattivo abilitato viene inviato solo
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the adaptive form is stored temporarily on Forms Portal. Use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 L’esperienza di firma del modulo è pronta. Puoi visualizzare in anteprima il modulo per verificare l’esperienza di firma. Nel modulo pubblicato: [!DNL Adobe Sign] I campi di blocco vengono visualizzati quando un firmatario riceve il modulo per la firma tramite un messaggio e-mail. Questa esperienza è anche nota come esperienza di firma out-of-form. Puoi anche configurare un’esperienza di firma interna ai moduli per il primo firmatario. Per i passaggi dettagliati, vedi [Creare un’esperienza di firma interna ai moduli](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
@@ -355,7 +355,7 @@ Quando [!DNL Adobe Sign] è configurato per un modulo adattivo, il servizio non 
 * Assicurati che l’applicazione API su [!DNL Adobe Sign] server utilizzato per configurare [!DNL Adobe Sign] Il servizio cloud dispone delle autorizzazioni necessarie.
 * Se utilizzi più [!DNL Adobe Sign] Servizi cloud, punta il **[!UICONTROL URL OAuth]** di tutti i servizi allo stesso **[!UICONTROL Condivisione Adobe Sign]**.
 
-* Utilizza indirizzi e-mail separati per configurare [!DNL Adobe Sign] e per il primo firmatario e il firmatario singolo. L’indirizzo e-mail del primo firmatario o dell’unico firmatario (nel caso del firmatario singolo) non può essere identico a [!DNL Adobe Sign] account utilizzato per configurare AEM Cloud Services.
+* Utilizza indirizzi e-mail separati per configurare [!DNL Adobe Sign] e per il primo firmatario e il firmatario singolo. L’indirizzo e-mail del primo firmatario o dell’unico firmatario (nel caso del firmatario singolo) non può essere identico a [!DNL Adobe Sign] account utilizzato per configurare i servizi cloud AEM.
 
 ### AEM [!DNL Forms] workflow configurato per un [!DNL Adobe Sign] il modulo adattivo abilitato non si avvia {#adobe-sign-aem-form-workflow-failures}
 

@@ -4,9 +4,9 @@ description: Utilizza utenti e gruppi fittizi per eseguire attività di AEM Form
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2475'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ Sono inclusi anche i seguenti gruppi:
 
 ## Automated forms conversion (Camila) {#automated-forms-conversion}
 
-**Questa sezione**: Camila il lead CX ha un modulo esistente basato su PDF che è stato utilizzato come parte di un processo cartaceo. Come parte di un progetto di modernizzazione, Camila vuole utilizzare questo modulo PDF per creare automaticamente un nuovo Forms adattivo moderno.
+**Questa sezione**: Camila il lead CX ha un modulo esistente basato su PDF che è stato utilizzato come parte di un processo cartaceo. Come parte di un progetto di modernizzazione, Camila vuole utilizzare questo modulo PDF per creare automaticamente un moderno Forms adattivo.
 
 ### Automated forms conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 

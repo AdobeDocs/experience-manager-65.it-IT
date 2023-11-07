@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4734'
+source-wordcount: '4725'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Dopo aver configurato il progetto AEM, definisci la strategia per l’authoring 
    * **Modello di modulo XFA**: è un modello di modulo ideale se disponi di investimenti in moduli HTML5 basati su XFA. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
    * **Modello dati modulo**: si tratta di un modello di modulo preferito se desideri integrare sistemi back-end come database, servizi web e profilo utente AEM per precompilare moduli adattivi e riscrivere i dati dei moduli inviati nei sistemi back-end. L’editor modello dati modulo consente di definire e configurare entità e servizi in un modello dati modulo da utilizzare per creare moduli adattivi. Per ulteriori informazioni, consulta [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md).
 
-È importante scegliere con attenzione il modello dati che non solo soddisfa le tue esigenze, ma estende gli investimenti esistenti in risorse XFA e XSD, se presenti. Si consiglia di utilizzare il modello XSD per creare modelli di modulo, in quanto l&#39;XML generato contiene dati in base all&#39;XPATH definito dallo schema. L’utilizzo del modello XSD come scelta predefinita per il modello dati del modulo è utile anche perché disaccoppia la progettazione del modulo dal sistema back-end che elabora e utilizza i dati e migliora le prestazioni del modulo grazie alla mappatura uno a uno dei campi del modulo. Inoltre, BindRef del campo può essere reso l’XPATH del relativo valore dati in XML.
+È importante scegliere con attenzione il modello dati che non solo soddisfa le tue esigenze, ma estende gli investimenti esistenti in risorse XFA e XSD, se presenti. Utilizzare il modello XSD per creare modelli di modulo, in quanto l&#39;XML generato contiene dati in base all&#39;XPATH definito dallo schema. L’utilizzo del modello XSD come scelta predefinita per il modello dati del modulo è utile anche perché disaccoppia la progettazione del modulo dal sistema back-end che elabora e utilizza i dati e migliora le prestazioni del modulo grazie alla mappatura uno a uno dei campi del modulo. Inoltre, BindRef del campo può essere reso l’XPATH del relativo valore dati in XML.
 
 Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/using/creating-adaptive-form.md).
 
@@ -187,7 +187,7 @@ L’editor di regole fornisce un editor visivo e un editor di codice per la scri
 
 ### Utilizzo dei temi {#working-with-themes}
 
-Adattivo per i temi consente di creare stili riutilizzabili che possono essere applicati tra i moduli per ottenere un aspetto e uno stile coerenti. Si consiglia di utilizzare i temi per definire lo stile dei componenti e dei pannelli dei moduli. Di seguito sono riportate alcune best practice relative ai temi:
+Adattivo per i temi consente di creare stili riutilizzabili che possono essere applicati tra i moduli per ottenere un aspetto e uno stile coerenti. Utilizzate i temi per definire lo stile dei componenti modulo e dei pannelli. Di seguito sono riportate alcune best practice relative ai temi:
 
 * Utilizza la libreria delle risorse per applicare rapidamente stili di testo, sfondo e immagini. Quando uno stile viene aggiunto nella libreria delle risorse, è disponibile per altri temi e nella modalità di stile dell’editor di moduli.
 * Applica impostazioni globali come font e sfondo della pagina utilizzando il selettore a livello di pagina.
@@ -241,7 +241,7 @@ I moduli adattivi richiedono azioni di invio per elaborare i dati specificati da
 * Se le azioni di invio predefinite non soddisfano il caso d’uso, puoi scrivere un’azione di invio personalizzata. Per ulteriori informazioni, consulta [Scrittura dell’azione di invio personalizzata per i moduli adattivi](/help/forms/using/custom-submit-action-form.md).
 * Includi convalide lato server per impedire l’invio di dati non validi.
 
-Puoi sfruttare l’esperienza multi-firma di Adobe Sign nei moduli adattivi. Quando configuri Adobe Sign nei moduli adattivi, tieni presente quanto segue. Per ulteriori informazioni, consulta [Utilizzo di Adobe Sign in un modulo adattivo](/help/forms/using/working-with-adobe-sign.md).
+Puoi utilizzare l’esperienza multi-firma di Adobe Sign nei moduli adattivi. Quando configuri Adobe Sign nei moduli adattivi, tieni presente quanto segue. Per ulteriori informazioni, consulta [Utilizzo di Adobe Sign in un modulo adattivo](/help/forms/using/working-with-adobe-sign.md).
 
 * Il modulo adattivo abilitato per Adobe Sign viene inviato solo dopo che tutti i firmatari hanno firmato il modulo. Forms viene visualizzato nello stato In sospeso fino a quando il modulo non viene firmato da tutti i firmatari.
 * Al momento dell’invio, puoi configurare l’esperienza di firma nei moduli o reindirizzare i firmatari a una pagina di firma.

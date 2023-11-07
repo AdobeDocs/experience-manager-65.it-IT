@@ -1,19 +1,15 @@
 ---
 title: ClientContext
-seo-title: Client Context
 description: Scopri come utilizzare ClientContext per visualizzare informazioni sulla pagina corrente e sul visitatore in Adobe Experience Manager.
-seo-description: Learn how to use the Client Context in AEM.
-uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1979'
 ht-degree: 0%
 
 ---
@@ -42,7 +38,7 @@ Le icone (disponibili solo nell’ambiente di authoring) consentono di configura
 ![Icone Modifica, Carica e Reimposta della finestra ClientContext](do-not-localize/clientcontext_icons.png)
 
 * **Modifica**
-Viene aperta una nuova pagina che consente di: [modificare, aggiungere o rimuovere una proprietà di profilo](#editingprofiledetails).
+Viene visualizzata una nuova pagina [modificare, aggiungere o rimuovere una proprietà di profilo](#editingprofiledetails).
 
 * **Carica**
 È possibile [seleziona da un elenco di profili e carica il profilo](#loading-a-new-user-profile) vuoi testare.
@@ -64,13 +60,13 @@ ClientContext può mostrare le seguenti proprietà ([a seconda di ciò che è st
 * il **mouse X** position
 * il **mouse Y** position
 
-**Flusso attività** Questo fornisce informazioni sull’attività sociale dell’utente su varie piattaforme; ad esempio, i forum AEM, i blog, le valutazioni, ecc.
+**Flusso attività** Questo fornisce informazioni sull’attività sociale dell’utente su varie piattaforme, ad esempio forum, blog, valutazioni dell’AEM e così via.
 
 **Campagna** Consente agli autori di simulare un’esperienza specifica per una campagna. Questo componente sostituisce la risoluzione normale della campagna e la selezione dell’esperienza per abilitare il test di varie permutazioni.
 
 La risoluzione della campagna si basa di solito sulla proprietà di priorità della campagna. L’esperienza viene normalmente selezionata in base alla segmentazione.
 
-**Carrello** Mostra le informazioni del carrello, inclusi gli inserimenti dei prodotti (titolo, quantità, prezzoFormattato, ecc.), le promozioni risolte (titolo, messaggio, ecc.) e voucher (codice, descrizione, ecc.).
+**Carrello** Mostra le informazioni del carrello, inclusi gli articoli (titolo, quantità, prezzoFormattato e così via), le promozioni risolte (titolo, messaggio e così via) e i voucher (codice, descrizione e così via).
 
 L’archivio sessioni del carrello notifica inoltre al server le modifiche di promozione risolte (in base alle modifiche di segmentazione) utilizzando ClientContextCartServlet.
 
@@ -154,7 +150,7 @@ Al termine, potrai [reimpostare il profilo](#resetting-the-profile-to-the-curren
 
    ![Icona Carica profilo di ClientContext](do-not-localize/clientcontext_loadprofile.png)
 
-1. Viene aperta la finestra di dialogo in cui puoi selezionare il profilo da caricare:
+1. Viene visualizzata la finestra di dialogo in cui puoi selezionare il profilo da caricare:
 
    ![La finestra di dialogo Caricatore profilo, che mostra il menu a discesa per selezionare un profilo](assets/clientcontext_profileloader.png)
 
@@ -164,7 +160,7 @@ Al termine, potrai [reimpostare il profilo](#resetting-the-profile-to-the-curren
 
 Puoi anche selezionare un profilo con il cursore di selezione:
 
-1. Fare doppio clic sull&#39;icona che rappresenta l&#39;utente corrente. Il selettore si apre e utilizza le frecce per navigare e visualizzare i profili disponibili:
+1. Fare doppio clic sull&#39;icona che rappresenta l&#39;utente corrente. Viene aperto il selettore, utilizza le frecce per navigare e visualizzare i profili disponibili:
 
    ![Selettore utente](assets/clientcontext_profileselector.png)
 
@@ -178,7 +174,7 @@ Puoi anche selezionare un profilo con il cursore di selezione:
 
 ### Modifica della piattaforma del browser {#changing-the-browser-platform}
 
-1. Fai doppio clic sull’icona che rappresenta la piattaforma del browser. Il selettore si apre e utilizza le frecce per navigare e visualizzare le piattaforme/browser disponibili:
+1. Fai doppio clic sull’icona che rappresenta la piattaforma del browser. Si apre il selettore, utilizza le frecce per navigare e vedi le piattaforme/browser disponibili:
 
    ![Selettore piattaforma browser](assets/clientcontext_browserplatform.png)
 
@@ -186,7 +182,7 @@ Puoi anche selezionare un profilo con il cursore di selezione:
 
 ### Modifica della geolocalizzazione {#changing-the-geolocation}
 
-1. Fai doppio clic sull’icona di geolocalizzazione. Viene aperta una mappa espansa, in cui è possibile trascinare il marcatore in una nuova posizione:
+1. Fai doppio clic sull’icona di geolocalizzazione. Viene visualizzata una mappa espansa, in cui potete trascinare il marcatore in una nuova posizione:
 
    ![Dettagli di geolocalizzazione](assets/clientcontext_geomocationrelocate.png)
 
@@ -194,7 +190,7 @@ Puoi anche selezionare un profilo con il cursore di selezione:
 
 ### Modifica della selezione dei tag {#changing-the-tag-selection}
 
-1. Fai doppio clic sulla sezione Tag Cloud del Client Context. Viene aperta la finestra di dialogo, in cui puoi selezionare i tag:
+1. Fai doppio clic sulla sezione Tag Cloud del Client Context. Viene visualizzata la finestra di dialogo in cui puoi selezionare i tag:
 
    ![Finestra di dialogo Tag cloud](assets/clientcontext_tagselection.png)
 

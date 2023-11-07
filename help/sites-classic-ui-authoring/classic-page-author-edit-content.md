@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 17%
@@ -79,7 +79,7 @@ Per inserire un nuovo componente:
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. Sia nella barra laterale che nella **Inserisci nuovo componente** sulla barra degli strumenti viene visualizzato un elenco dei componenti disponibili (tipi di paragrafo). Questi possono essere suddivisi in varie sezioni (ad esempio, Generale, Colonne, ecc.), che possono essere espanse in base alle esigenze.
+1. Sia nella barra laterale che nella **Inserisci nuovo componente** sulla barra degli strumenti viene visualizzato un elenco dei componenti disponibili (tipi di paragrafo). Possono essere suddivise in varie sezioni (ad esempio Generale, Colonne e così via), che possono essere espanse in base alle esigenze.
 
    A seconda dell’ambiente di produzione, queste scelte possono essere diverse. Per informazioni complete sui componenti, vedi [Componenti predefiniti](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -87,7 +87,7 @@ Per inserire un nuovo componente:
 
 ### Inserimento di un componente tramite Content Finder {#inserting-a-component-using-the-content-finder}
 
-Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa dal menu [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Verrà automaticamente creato un nuovo componente del tipo appropriato contenente la risorsa.
+Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa dal menu [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). In questo modo viene creato automaticamente un componente del tipo appropriato contenente la risorsa.
 
 Questa opzione è valida per i seguenti tipi di risorse (alcune dipenderanno dal sistema pagina/paragrafo):
 

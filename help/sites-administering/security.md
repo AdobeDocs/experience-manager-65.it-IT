@@ -10,7 +10,7 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5401'
 ht-degree: 1%
@@ -169,7 +169,7 @@ Le azioni possono essere eseguite su una pagina (risorsa). Per ogni pagina della
     <ul>
      <li>modifica il contenuto esistente nella pagina e nelle pagine figlie.</li>
      <li>creare paragrafi sulla pagina o su qualsiasi pagina figlia.</li>
-    </ul> <p>A livello JCR, gli utenti possono modificare una risorsa modificandone le proprietà, il blocco, il controllo delle versioni, le non modifiche e dispongono di autorizzazioni di scrittura complete sui nodi che definiscono un nodo figlio jcr:content. Ad esempio, cq:Page, nt:file, cq:Asset.</p> </td>
+    </ul> <p>A livello JCR, gli utenti possono modificare una risorsa modificandone le proprietà, il blocco, il controllo delle versioni, le non modifiche e dispongono di autorizzazioni di scrittura complete sui nodi che definiscono un nodo figlio jcr:content. Cq:Page, nt:file, cq:Asset.</p> </td>
   </tr>
   <tr>
    <td>Creare</td>

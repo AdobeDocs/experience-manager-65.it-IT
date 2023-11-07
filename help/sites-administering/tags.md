@@ -1,18 +1,14 @@
 ---
 title: Amministrazione dei tag
-seo-title: Administering Tags
 description: Scopri come gestire e amministrare i tag in Adobe Experience Manager.
-seo-description: Learn how to administer Tags in AEM.
-uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1761'
 ht-degree: 3%
 
 ---
@@ -78,7 +74,7 @@ Per accedere alla console Assegnazione tag:
 
 ### Creazione di uno spazio dei nomi {#creating-a-namespace}
 
-Per creare un nuovo spazio dei nomi, seleziona la **`Create Namespace`** icona.
+Per creare uno spazio dei nomi, seleziona la **`Create Namespace`** icona.
 
 Lo spazio dei nomi è di per sé un tag e non deve necessariamente contenere tag secondari. Tuttavia, per continuare a creare una tassonomia, [crea tag secondari](#creating-tags), che a sua volta può essere un tag foglia o un tag contenitore.
 
@@ -296,7 +292,7 @@ Una volta inserite tutte le traduzioni, seleziona **Salva** per uscire dalla mod
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-In generale, la lingua scelta per il tag viene presa dalla lingua della pagina, quando disponibile. Quando [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) viene utilizzato in altri casi (ad esempio nei moduli o nelle finestre di dialogo), il linguaggio dei tag dipende dal contesto.
+In generale, la lingua scelta per il tag viene presa dalla lingua della pagina, quando disponibile. Quando [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) viene utilizzato in altri casi, ad esempio nei moduli o nelle finestre di dialogo, il linguaggio dei tag dipende dal contesto.
 
 Invece di usare l’impostazione della lingua della pagina, la console Assegnazione tag utilizza l’impostazione della lingua utente. Nella console Assegnazione tag, per il tag &quot;Animals&quot;, veniva visualizzato &quot;Animaux&quot; per un utente che impostava la lingua sul francese nelle proprietà utente.
 
@@ -310,6 +306,6 @@ Per aggiungere una nuova lingua alla finestra di dialogo, vedi [Aggiunta di una 
 
 * [Assegnazione di tag per sviluppatori](/help/sites-developing/tags.md)
 
-  Informazioni sul framework dei tag nonché sull’estensione e l’inclusione di tag in applicazioni personalizzate.
+  Informazioni sul framework dei tag ed estensione e inclusione dei tag nelle applicazioni personalizzate.
 
 * [Console classica per l’assegnazione di tag dell’interfaccia utente](/help/sites-administering/classic-console.md)

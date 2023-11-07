@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2852'
+source-wordcount: '2851'
 ht-degree: 2%
 
 ---
@@ -385,15 +385,15 @@ cURL -i -X POST -H *intestazione* -u *accesso* -F *operazione* -F *badge* *membe
 
 *intestazione* = intestazione personalizzata &quot;Accept:application/json&quot; da passare al server (obbligatoria)
 
-*accesso* = administrator-id:password, ad esempio : admin:admin
+*accesso* = administrator-id:password, ad esempio, admin:admin
 
 *operazione* = &quot;:operation=social:assignBadge&quot; OPPURE &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=&quot;*badge-image-file*&quot;
 
-*badge-image-file* = la posizione del file di immagine del badge nell’archivio, ad esempio : /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = la posizione del file di immagine del badge nell’archivio, ad esempio /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
-*member-profile-url* = l&#39;endpoint per il profilo del membro al momento della pubblicazione, ad esempio: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url* = endpoint per il profilo del membro al momento della pubblicazione, ad esempio, https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -616,7 +616,7 @@ Avanti, [ripubblicare](/help/communities/sites-console.md#publishing-the-site) i
 Infine,
 
 * Individua il componente nell’istanza di pubblicazione.
-* Accedi come membro della community (ad esempio: weston.mccall@dodgit.com / password).
+* Accedi come membro della community (ad esempio, weston.mccall@dodgit.com / password).
 * Pubblica un nuovo argomento forum.
 * Affinché il badge sia visibile, è necessario aggiornare la pagina.
 

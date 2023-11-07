@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
 exl-id: 7d6fd230-e477-4286-9fb3-18a3474e3e48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Dopo aver creato il client di servizio, aver creato un riferimento a un file DDX
 
 Il servizio Assembler restituisce un `java.util.Map` oggetto, che può essere ottenuto da `AssemblerResult` e che contiene i risultati dell&#39;operazione. Il restituito `java.util.Map` contiene i documenti risultanti ed eventuali eccezioni.
 
-Nella tabella seguente vengono riepilogati alcuni dei valori chiave e dei tipi di oggetto che è possibile individuare nel restituito `java.util.Map` oggetto.
+Nella tabella seguente vengono riepilogati alcuni dei valori chiave e dei tipi di oggetto che possono essere presenti nel `java.util.Map` oggetto.
 
 <table>
  <thead>

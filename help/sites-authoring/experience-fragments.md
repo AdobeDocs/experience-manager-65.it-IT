@@ -2,9 +2,9 @@
 title: Frammenti di esperienza
 description: Frammenti di esperienza nell’authoring di Adobe Experience Manager Sites.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1440'
 ht-degree: 81%
 
 ---
@@ -37,7 +37,7 @@ Puoi utilizzare Frammenti esperienza:
 >
 >    `experience-fragments-editors`
 >
-In caso di problemi, contatta l’amministratore di sistema.
+Se riscontri problemi, contatta l’amministratore di sistema.
 
 ## Quando utilizzare i frammenti esperienza?   {#when-should-you-use-experience-fragments}
 
@@ -55,7 +55,7 @@ I Frammenti di esperienza sono indicati nei seguenti casi:
 * Se usi un’esperienza con diverse varianti o rappresentazioni.
 
    * Varianti per un canale o per un contesto specifico. 
-   * Esperienze che è utile raggruppare (ad esempio una campagna con esperienze diverse per i diversi canali)
+   * Esperienze che è utile raggruppare (ad esempio, una campagna con esperienze diverse per i diversi canali)
 
 * Quando utilizzi Commerce omnichannel.
 
@@ -267,7 +267,7 @@ Puoi selezionare uno o più componenti per creare un blocco predefinito da riuti
 
 ### Creazione di un blocco predefinito {#creating-a-building-block}
 
-Per creare un nuovo blocco predefinito:
+Per creare un blocco predefinito:
 
 1. Nell’editor Frammento di esperienza, seleziona i componenti da riutilizzare:
 

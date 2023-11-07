@@ -1,14 +1,10 @@
 ---
 title: Utilizzare i metadati in una notifica e-mail
-seo-title: Use metadata in an email notification
 description: Utilizzare i metadati per compilare le informazioni in una notifica e-mail del flusso di lavoro dei moduli
-seo-description: Use metadata to populate information in a forms workflow email notification
-uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
-discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -23,7 +19,7 @@ Puoi utilizzare i metadati in un modello e-mail per compilare dinamicamente le i
 
 ![Modello e-mail predefinito](assets/default_email_template_metadata_new.png)
 
-I metadati vengono memorizzati in coppie chiave-valore. Puoi specificare la chiave nel modello e-mail e sostituirla con un valore in fase di esecuzione (quando viene generata una notifica e-mail). Ad esempio, nell’esempio di codice seguente, &quot;$ {workitem_title}&quot; è una chiave. Viene sostituito con il valore &quot;Loan-Request&quot; in fase di runtime.
+I metadati vengono memorizzati in coppie chiave-valore. Puoi specificare la chiave nel modello e-mail e sostituirla con un valore in fase di esecuzione (quando viene generata una notifica e-mail). Ad esempio, nell’esempio di codice seguente, &quot;$ {workitem_title} &quot; è una chiave. Viene sostituito con il valore &quot;Loan-Request&quot; in fase di runtime.
 
 ```html
 subject=Task Assigned - ${workitem_title}
@@ -87,7 +83,7 @@ message=<html><body>\n\
    </tr>\n\
    <tr>\n\
     <td style="border-top: solid 1px #EDEAE7; padding: 16px;">\n\
-     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Please do not reply to this email.</code></p>\n\
+     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Do not reply to this email.</code></p>\n\
     </td>\n\
    </tr>\n\
   </tbody>\n\

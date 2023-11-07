@@ -2,9 +2,9 @@
 title: Note sulla versione 2020 di AEM Content and Commerce
 description: Note sulla versione 2020 di Adobe Experience Manager Content and Commerce.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1353'
 ht-degree: 13%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 13%
 
 * È stato aggiunto un nuovo componente Carosello categoria per consentire agli utenti aziendali di trascinare e rilasciare questo componente sulle pagine di contenuto AEM per arricchire le pagine di contenuto con i dati di e-commerce.
 
-* Componenti core CIF estesi per idratare Adobe Client Data Layer inviando dati di e-commerce. Adobe Client Data Layer è un metodo standardizzato per raccogliere dati e comunicarli a Digital Analytics e ai server di reporting. Per ulteriori informazioni, consulta [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Componenti core CIF estesi per idratare Adobe Client Data Layer inviando dati di e-commerce. Adobe Client Data Layer è un metodo standardizzato per raccogliere dati e comunicarli a Digital Analytics e ai server di reporting. Per ulteriori dettagli, consulta [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Pagine Dettagli prodotto ed Elenco prodotti estese per compilare automaticamente i metadati SEO (come titolo, metadescrizione, parole chiave meta) configurati dall’interfaccia utente di amministrazione di Adobe Commerce
 

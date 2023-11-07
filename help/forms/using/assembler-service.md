@@ -10,9 +10,9 @@ topic-tags: document_services
 discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2115'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ Nella figura seguente vengono illustrati tre documenti di origine uniti in un un
 
 Assemblaggio di un semplice documento PDF da più documenti PDF
 
-L&#39;esempio seguente è un semplice documento DDX utilizzato per assemblare il documento. Specifica i nomi dei documenti di origine utilizzati per produrre il documento risultante, nonché il nome del documento risultante:
+L&#39;esempio seguente è un semplice documento DDX utilizzato per assemblare il documento. Specifica i nomi dei documenti di origine utilizzati per produrre il documento risultante e il nome del documento risultante:
 
 ```xml
 <PDF result="Doc4">
@@ -86,15 +86,15 @@ Se uno o più documenti di input sono crittografati, specificare una password pe
 
 Quando si assembla un documento, è possibile utilizzare la numerazione Bates per applicare un identificatore di pagina univoco a ogni pagina. Quando si utilizza la numerazione Bates, a ogni pagina del documento (o set di documenti) viene assegnato un numero che identifica in modo univoco la pagina. Ad esempio, i documenti di fabbricazione che contengono informazioni sulla distinta base e sono associati alla produzione di un assieme possono contenere un identificatore. Un numero Bates contiene un valore numerico incrementato in sequenza e un prefisso e un suffisso opzionali. Il prefisso + valore numerico + suffisso è chiamato pattern di Bates.
 
-Nella figura seguente viene illustrato un documento PDF contenente un identificatore univoco presente nell&#39;intestazione del documento.
+Nell’illustrazione seguente viene illustrato un documento PDF che contiene un identificatore univoco nell’intestazione del documento.
 
-![Un documento PDF che contiene un identificatore univoco presente nell’intestazione del documento](do-not-localize/as_batesnumber.png)
+![Un documento PDF che contiene un identificatore univoco nell’intestazione del documento](do-not-localize/as_batesnumber.png)
 
-Un documento PDF che contiene un identificatore univoco presente nell’intestazione del documento
+Un documento PDF che contiene un identificatore univoco nell’intestazione del documento
 
 ### Uniformare e assemblare documenti {#flatten-and-assemble-documents}
 
-È possibile utilizzare il servizio Assembler per trasformare un documento interattivo di PDF (ad esempio un modulo) in un documento non interattivo di PDF. Un documento PDF interattivo consente agli utenti di immettere o modificare i dati presenti nei campi del documento PDF. Il processo di trasformazione di un documento interattivo di PDF in un documento non interattivo di PDF è denominato appiattimento. Quando un documento PDF viene appiattito, i campi modulo mantengono il loro aspetto grafico ma non sono più interattivi. Uno dei motivi per appiattire un documento PDF è garantire che i dati non possano essere modificati. Inoltre, gli script associati ai campi non funzionano più.
+È possibile utilizzare il servizio Assembler per trasformare un documento interattivo di PDF (ad esempio un modulo) in un documento non interattivo di PDF. Un documento PDF interattivo consente agli utenti di immettere o modificare dati nei campi del documento PDF. Il processo di trasformazione di un documento interattivo di PDF in un documento non interattivo di PDF è denominato appiattimento. Quando un documento PDF viene appiattito, i campi modulo mantengono il loro aspetto grafico ma non sono più interattivi. Uno dei motivi per appiattire un documento PDF è garantire che i dati non possano essere modificati. Inoltre, gli script associati ai campi non funzionano più.
 
 Quando si crea un documento PDF assemblato da documenti PDF interattivi, il servizio Assembler appiattisce tali moduli prima di assemblarli nel documento risultante.
 
@@ -311,11 +311,11 @@ L&#39;esempio seguente è un documento DDX che utilizza segnalibri per disassemb
    * Frasi in ogni paragrafo di ogni pagina del documento
 
 * Segnalibri, inclusi numero di pagina, titolo, destinazione e aspetto. Puoi esportare questo\
-   dati da un documento PDF e importarli in un documento PDF.
+  dati da un documento PDF e importarli in un documento PDF.
 
 * File allegati, incluse le informazioni sui file. Per gli allegati a livello di pagina, include anche\
-   posizione dell&#39;annotazione dell&#39;allegato. Puoi esportare questi dati da un documento PDF e\
-   importarlo in un documento PDF.
+  posizione dell&#39;annotazione dell&#39;allegato. Puoi esportare questi dati da un documento PDF e\
+  importarlo in un documento PDF.
 
 * File del pacchetto, incluse informazioni sui file, cartelle, pacchetto, schema e dati di campo. Puoi esportare questi dati da un documento PDF e importarli in un documento PDF.
 

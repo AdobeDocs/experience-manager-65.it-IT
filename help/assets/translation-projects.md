@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1869'
 ht-degree: 15%
 
 ---
@@ -30,7 +30,7 @@ Per creare una copia per lingua, attiva uno dei seguenti flussi di lavoro per la
 Puoi utilizzare il flusso di lavoro Crea e traduci per generare per la prima volta copie per una determinata lingua. Il flusso di lavoro fornisce le seguenti opzioni:
 
 * Crea solo struttura.
-* Crea un nuovo progetto di traduzione.
+* Crea un progetto di traduzione.
 * Aggiungi a progetto di traduzione esistente.
 
 ### Crea solo struttura {#create-structure-only}
@@ -55,7 +55,7 @@ Utilizza l’opzione **[!UICONTROL Crea solo struttura]** per creare una gerarch
 
    ![risorse da visualizzare](assets/reveal-in-assets.png)
 
-### Crea un nuovo progetto di traduzione {#create-a-new-translation-project}
+### Crea un progetto di traduzione {#create-a-new-translation-project}
 
 Se utilizzi questa opzione, le risorse da tradurre vengono copiate nella directory principale della lingua in cui desideri tradurre. A seconda delle opzioni scelte, viene creato un progetto di traduzione per le risorse nella console Progetti. A seconda delle impostazioni, il progetto di traduzione può essere avviato manualmente o eseguito automaticamente non appena viene creato.
 
@@ -164,10 +164,10 @@ Se utilizzi questa opzione, il flusso di lavoro di traduzione viene eseguito per
 
 Esegui questo flusso di lavoro per tradurre qualsiasi set aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già le risorse tradotte in precedenza. A seconda della scelta di opzioni, viene creato un progetto di traduzione o viene aggiornato un progetto di traduzione esistente per le nuove risorse. Il flusso di lavoro Aggiorna copie per lingua include le seguenti opzioni:
 
-* Crea un nuovo progetto di traduzione
+* Crea un progetto di traduzione
 * Aggiungi a progetto di traduzione esistente
 
-### Crea un nuovo progetto di traduzione {#create-a-new-translation-project-1}
+### Crea un progetto di traduzione {#create-a-new-translation-project-1}
 
 Se utilizzi questa opzione, viene creato un progetto di traduzione per il set di risorse per il quale desideri aggiornare una copia per lingua.
 

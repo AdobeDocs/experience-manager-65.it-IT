@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3549'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ L’archivio dei nodi dei documenti è la base dell’implementazione AEM MongoM
 
 * `changesSize`: dimensione in MB della raccolta con limite utilizzata in Mongo per memorizzare in cache l’output di differenze. Il valore predefinito è `256`
 
-* `customBlobStore`: valore booleano che indica che verrà utilizzato un archivio dati personalizzato. Il valore predefinito è `false`.
+* `customBlobStore`: valore booleano che indica che viene utilizzato un archivio dati personalizzato. Il valore predefinito è `false`.
 
 Di seguito è riportato un esempio `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` file:
 

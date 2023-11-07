@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -61,8 +61,7 @@ Per tutte le istanze di authoring e pubblicazione di AEM 6.3:
 
          * Seleziona **Salva**
 
-      ![utilità](assets/utilities.png)
-
+     ![utilità](assets/utilities.png)
 
 ### Archiviazione locale {#on-premise-storage}
 
@@ -83,7 +82,7 @@ Vedi anche [Utilizzo di Maven per le community](/help/communities/maven.md).
 
 Il [framework della componente social](/help/communities/scf.md) (SCF) utilizza [HandlebarsJS](https://handlebarsjs.com/) (HBS) al posto delle Java Server Pages (JSP) utilizzate prima di AEM 6.0.
 
-In AEM 6.0, i componenti JSP sono rimasti accanto ai nuovi componenti framework HBS nella stessa posizione, con i componenti HBS che si trovano in genere in sottocartelle denominate &quot;hbs&quot;.
+In AEM 6.0, i componenti JSP sono rimasti accanto ai nuovi componenti framework HBS nella stessa posizione, con i componenti HBS in genere nelle sottocartelle denominate &quot;hbs&quot;.
 
 A partire da AEM 6.1, i componenti JSP sono stati completamente rimossi. Per le community, si consiglia di sostituire tutti gli utilizzi di componenti JSP con componenti SCF.
 

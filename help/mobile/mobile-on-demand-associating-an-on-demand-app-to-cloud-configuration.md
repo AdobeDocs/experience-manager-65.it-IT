@@ -1,7 +1,7 @@
 ---
 title: Configurazione cloud
 seo-title: Cloud Configuration
-description: L’associazione di un’app on-demand a una configurazione cloud consente ad Adobe Experience Manager (AEM) di comunicare direttamente con un progetto ospitato da Mobile On-Demand creando un collegamento bidirezionale. Per ulteriori informazioni, segui questa pagina.
+description: L’associazione di un’app on-demand a una configurazione cloud consente a Adobe Experience Manager (AEM) di comunicare direttamente con un progetto ospitato da Mobile On-Demand creando un collegamento bidirezionale. Per ulteriori informazioni, segui questa pagina.
 seo-description: Associating an On-Demand App to a Cloud Configuration allows Adobe Experience Manager (AEM) to communicate directly with a Mobile On-Demand hosted project by establishing a two way link. Follow this page to learn more.
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '407'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-L’associazione di un’app on-demand a una configurazione cloud consente ad Adobe Experience Manager (AEM) di comunicare direttamente con un progetto ospitato da Mobile On-Demand creando un collegamento bidirezionale. Collegando l’app a un progetto Mobile On-Demand, potrai creare contenuti, ad esempio articoli, banner e raccolte nell’ambito dell’AEM, e distribuirli a Mobile On-Demand.
+L’associazione di un’app on-demand a una configurazione cloud consente a Adobe Experience Manager (AEM) di comunicare direttamente con un progetto ospitato da Mobile On-Demand creando un collegamento bidirezionale. Collegando l’app a un progetto Mobile On-Demand, potrai creare contenuti, ad esempio articoli, banner e raccolte nell’ambito dell’AEM, e distribuirli a Mobile On-Demand.
 
 Da qui, diventa possibile pubblicare, visualizzare in anteprima e gestire i contenuti. Puoi anche importare contenuti Mobile On-Demand esistenti in AEM ed eseguire modifiche al contenuto.
 
@@ -35,7 +35,7 @@ Da qui, diventa possibile pubblicare, visualizzare in anteprima e gestire i cont
 >
 >Per ulteriori informazioni, consulta [Configurazione di AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) nella sezione Amministrazione.
 
-Per configurare i Cloud Services Mobile On-Demand, fai clic sull’ingranaggio in alto a destra della schermata **Gestisci connessione** affiancare dal dashboard dell’app.
+Per configurare i Cloud Service Mobile On-Demand, fai clic sull’ingranaggio in alto a destra della schermata **Gestisci connessione** affiancare dal dashboard dell’app.
 
 Dovresti avere familiarità con il dashboard dell’app e i riquadri disponibili. Consulta [Dashboard dell’applicazione AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) per ulteriori dettagli.
 
@@ -54,13 +54,13 @@ I passaggi seguenti descrivono la configurazione del collegamento alla configura
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Inserisci la configurazione esistente o creane una nuova immettendo il **Titolo configurazione**, **ID dispositivo**, e **Token dispositivo**.
+1. Inserisci la configurazione esistente o creane una immettendo il **Titolo configurazione**, **ID dispositivo**, e **Token dispositivo**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
 1. Una volta **ID dispositivo** e **Token dispositivo** sono verificati, scegli il tuo progetto on-demand dall’elenco.
 
-   Clic **Invia**.
+   Fai clic su **Invia**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 

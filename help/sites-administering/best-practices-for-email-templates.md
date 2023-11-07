@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
-source-git-commit: 3f48e059ec8b0b255caf7d29749930e0534a37f7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Utilizza queste best practice per creare una newsletter personalizzata.
 >
 >Tutto il contenuto della campagna deve essere creato in un `master` pagina di tipo `cq/personalization/components/ambitpage`.
 >
->Ad esempio, se la struttura pianificata della campagna è simile a
+>Ad esempio, se la struttura pianificata per la campagna è simile a
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
@@ -79,7 +79,7 @@ Utilizza queste best practice per creare una newsletter personalizzata.
   </tr>
   <tr>
    <td>CSS in linea è meglio che inserire tutti i CSS all’inizio.</td>
-   <td><p>Per dimostrare meglio la struttura di base dei HTML e facilitare la possibilità di personalizzare la struttura delle newsletter, sono state allineate solo alcune definizioni CSS.</p> <p>Gli stili di base e le varianti di modello sono stati estratti in un blocco di stile nel &lt;head&gt; della pagina. All’invio finale della newsletter, queste definizioni CSS sono allineate nel HTML. È pianificato un meccanismo di allineamento automatico, ma al momento non disponibile.</p> </td>
+   <td><p>Per dimostrare meglio la struttura di base dei HTML e facilitare la possibilità di personalizzare la struttura delle newsletter, sono state allineate solo alcune definizioni CSS.</p> <p>Gli stili di base e le varianti di modello sono stati estratti in un blocco di stile nel &lt;head&gt; della pagina. Al momento dell’invio finale della newsletter, queste definizioni CSS sono allineate nel HTML. È pianificato un meccanismo di allineamento automatico, ma al momento non disponibile.</p> </td>
   </tr>
   <tr>
    <td>Semplifica il tuo CSS. Evita dichiarazioni di stile composte, codice abbreviato, proprietà di layout CSS, selettori complessi e pseudo-elementi.</td>

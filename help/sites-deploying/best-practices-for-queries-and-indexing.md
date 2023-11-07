@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4609'
+source-wordcount: '4602'
 ht-degree: 7%
 
 ---
@@ -85,7 +85,7 @@ Anche se tutte le query vengono convertite in SQL2 prima di essere eseguite, il 
 
 ### Strumento Spiega query {#the-explain-query-tool}
 
-Come per qualsiasi linguaggio di query, il primo passaggio per ottimizzare una query consiste nel comprenderne la modalità di esecuzione. Per abilitare questa attività, puoi utilizzare [Strumento Spiega query](/help/sites-administering/operations-dashboard.md#explain-query) che fa parte del dashboard operazioni. Con questo strumento, è possibile collegare e spiegare una query. Viene visualizzato un avviso se la query causerà problemi con un archivio di grandi dimensioni e con il tempo di esecuzione e gli indici che verranno utilizzati. Lo strumento può anche caricare un elenco di query lente e popolari che possono quindi essere spiegate e ottimizzate.
+Come per qualsiasi linguaggio di query, il primo passaggio per ottimizzare una query consiste nel comprenderne la modalità di esecuzione. Per abilitare questa attività, puoi utilizzare [Strumento Spiega query](/help/sites-administering/operations-dashboard.md#explain-query) che fa parte del dashboard operazioni. Con questo strumento, è possibile collegare e spiegare una query. Viene visualizzato un avviso se la query causa problemi con un archivio di grandi dimensioni e con il runtime e gli indici utilizzati. Lo strumento può anche caricare un elenco di query lente e popolari che possono quindi essere spiegate e ottimizzate.
 
 ### Registrazione DEBUG per query {#debug-logging-for-queries}
 
@@ -109,7 +109,7 @@ Dopo aver effettuato l’accesso alla console JMX, cerca **Statistiche indice Lu
 
 Per le statistiche delle query, osserva il codice MBean denominato **Statistiche query Oak**.
 
-Se desideri esplorare gli indici utilizzando uno strumento come [Luke](https://code.google.com/archive/p/luke/), è necessario utilizzare la console Oak per scaricare l’indice dal `NodeStore` in una directory del file system. Per istruzioni su come eseguire questa operazione, leggere il [Documentazione di Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Se desideri esplorare gli indici utilizzando uno strumento come [Luke](https://code.google.com/archive/p/luke/), è necessario utilizzare la console Oak per scaricare l’indice dal `NodeStore` in una directory del file system. Per istruzioni su come eseguire questa operazione, leggere [Documentazione di Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 Puoi anche estrarre gli indici nel sistema in formato JSON. A questo scopo, devi accedere `https://server:port/oak:index.tidy.-1.json`
 
@@ -166,7 +166,7 @@ In generale, si consiglia di utilizzare gli indici Lucene a meno che non vi sia 
 
 ### Indicizzazione Solr {#solr-indexing}
 
-Per impostazione predefinita, l’AEM supporta anche l’indicizzazione Solr. Questa viene utilizzata per supportare la ricerca full-text, ma può anche essere utilizzata per supportare qualsiasi tipo di query JCR. Solr deve essere preso in considerazione quando le istanze AEM non hanno la capacità della CPU per gestire il numero di query necessarie in implementazioni che richiedono un uso intensivo della ricerca, come i siti web basati sulla ricerca con un numero elevato di utenti simultanei. In alternativa, Solr può essere implementato in un approccio basato su crawler per utilizzare alcune delle funzioni più avanzate della piattaforma.
+Per impostazione predefinita, l’AEM supporta anche l’indicizzazione Solr. Viene utilizzato per supportare la ricerca full-text, ma può anche essere utilizzato per supportare qualsiasi tipo di query JCR. Solr deve essere preso in considerazione quando le istanze AEM non hanno la capacità della CPU per gestire il numero di query necessarie in implementazioni che richiedono un uso intensivo della ricerca, come i siti web basati sulla ricerca con un numero elevato di utenti simultanei. In alternativa, Solr può essere implementato in un approccio basato su crawler per utilizzare alcune delle funzioni più avanzate della piattaforma.
 
 Gli indici Solr possono essere configurati per l’esecuzione incorporata sul server AEM per gli ambienti di sviluppo oppure possono essere scaricati su un’istanza remota per migliorare la scalabilità della ricerca negli ambienti di produzione e di staging. L&#39;offload della ricerca migliora la scalabilità, ma introduce una latenza e per questo motivo non è consigliato a meno che non sia necessario. Per ulteriori informazioni su come configurare l&#39;integrazione Solr e creare indici Solr, vedere [Documentazione su query e indicizzazione Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
@@ -189,7 +189,7 @@ Nella documentazione Oak per gli indici Lucene sono elencate diverse considerazi
 * In un indice delle proprietà, l’utilizzo di un nome di proprietà univoco aiuterebbe a ridurre le dimensioni di un indice, ma per gli indici Lucene l’utilizzo di `nodeTypes` e `mixins` Per ottenere indici coesivi. Query di uno specifico `nodeType` o `mixin` sarà più performante rispetto alla query `nt:base`. Quando si utilizza questo approccio, definire `indexRules` per `nodeTypes` in questione.
 
 * Se le query vengono eseguite solo in determinati percorsi, crea tali indici in tali percorsi. Non è necessario che gli indici risiedano nella directory principale dell’archivio.
-* Si consiglia di utilizzare un singolo indice quando tutte le proprietà in fase di indicizzazione sono correlate in modo da consentire a Lucene di valutare il maggior numero possibile di restrizioni delle proprietà in modo nativo. Inoltre, una query utilizzerà un solo indice, anche quando si esegue un join.
+* Utilizza un singolo indice quando tutte le proprietà in fase di indicizzazione sono correlate per consentire a Lucene di valutare il maggior numero possibile di restrizioni di proprietà in modo nativo. Inoltre, una query utilizzerà un solo indice, anche quando si esegue un join.
 
 ### CopyOnRead {#copyonread}
 
@@ -297,7 +297,7 @@ Di seguito sono riportati i possibili problemi relativi alle risoluzioni:
 
       * Altrimenti, [reindicizzare](#how-to-re-index) l’indice di lucene
 
-         * Nota: lo stato dell’indice dall’ultima reindicizzazione valida (o indicizzazione iniziale) verrà utilizzato fino all’attivazione di una nuova reindicizzazione
+         * Nota: lo stato dell’indice dall’ultima reindicizzazione valida (o indicizzazione iniziale) viene utilizzato fino a quando non viene attivata una nuova reindicizzazione
 
 ### Errori e situazioni eccezionali {#erring-and-exceptional-situations}
 
@@ -426,7 +426,7 @@ La pre-estrazione del testo non può essere utilizzata per i nuovi contenuti agg
 
 Il nuovo contenuto aggiunto all’archivio viene indicizzato naturalmente e in modo incrementale dal processo di indicizzazione full-text asincrono (per impostazione predefinita, ogni 5 secondi).
 
-In caso di normale funzionamento dell’AEM, ad esempio per il caricamento di risorse tramite l’interfaccia web o l’acquisizione programmatica di risorse, l’AEM indicizzerà in modo automatico e incrementale il nuovo contenuto binario. Poiché la quantità di dati è incrementale e relativamente piccola (approssimativamente la quantità di dati che può essere mantenuta nell’archivio in 5 secondi), l’AEM può eseguire l’estrazione full-text dai dati binari durante l’indicizzazione senza influire sulle prestazioni complessive del sistema.
+In condizioni di normale funzionamento dell’AEM, ad esempio in caso di caricamento di risorse tramite l’interfaccia web o di inserimento programmatico di risorse, l’AEM indicizzerà in modo automatico e incrementale il nuovo contenuto binario. Poiché la quantità di dati è incrementale e relativamente piccola (approssimativamente la quantità di dati che può essere mantenuta nell’archivio in 5 secondi), l’AEM può eseguire l’estrazione full-text dai dati binari durante l’indicizzazione senza influire sulle prestazioni complessive del sistema.
 
 #### Prerequisiti per l’utilizzo della pre-estrazione del testo {#prerequisites-to-using-text-pre-extraction}
 

@@ -11,9 +11,9 @@ discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4435'
+source-wordcount: '4428'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ Questo scenario mostra come aggiungere una proprietà personalizzata a tutti i t
 Per aggiungere una proprietà personalizzata a tutti i tipi di risorse e alle lettere, completa i passaggi seguenti:
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
-1. Nella cartella delle app, crea una cartella denominata css con un percorso/struttura simile a quello della cartella css (che si trova nella cartella ccrui), seguendo la procedura riportata di seguito:
+1. Nella cartella delle app, crea una cartella denominata css con un percorso/struttura simile a quello della cartella css (in una cartella ccrui), seguendo la procedura descritta di seguito:
 
    1. Fai clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e seleziona **Sovrapponi nodo**:
 
@@ -105,7 +105,7 @@ Per aggiungere una proprietà personalizzata a tutti i tipi di risorse e alle le
 
    >[!NOTE]
    >
-   >Le proprietà comuni a tutte le risorse aggiunte vengono visualizzate nella scheda base delle proprietà della risorsa. Per impostazione predefinita, le proprietà comuni aggiunte per tutte le risorse vengono visualizzate sia nella pagina delle proprietà che nella pagina di creazione delle risorse. Per nascondere le proprietà comuni, è necessario <!--link to show / hide properties]-->.
+   >Le proprietà comuni a tutte le risorse aggiunte vengono visualizzate nella scheda base delle proprietà della risorsa. Per impostazione predefinita, le proprietà comuni aggiunte per tutte le risorse vengono visualizzate nella pagina delle proprietà e nella pagina di creazione delle risorse. Per nascondere le proprietà comuni, è necessario <!--link to show / hide properties]-->.
 
 ### Scenario: aggiungere menu a discesa e valori personalizzati a una proprietà o a un campo personalizzato {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
@@ -189,7 +189,7 @@ Questo scenario mostra come aggiungere una scheda personalizzata, Destinatari, a
 La procedura seguente consente di aggiungere una scheda con un campo a tutte le risorse:
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
-1. Nella cartella delle app, crea una cartella denominata cmmetadataproperties con percorso/struttura simile alla cartella cmmetadataproperties (che si trova nella cartella dei contenuti), seguendo la procedura riportata di seguito:
+1. Nella cartella delle app, crea una cartella denominata cmmetadataproperties con percorso/struttura simile alla cartella cmmetadataproperties (nella cartella dei contenuti), seguendo la procedura riportata di seguito:
 
    1. Fai clic con il pulsante destro del mouse sulla cartella commetadataproperties nel percorso seguente e seleziona **Sovrapponi nodo**:
 
@@ -846,7 +846,7 @@ La procedura seguente illustra come consentire l’indicizzazione di proprietà 
 ## Modificare la visualizzazione predefinita della pagina di ricerca {#change-default-view-of-the-search-page}
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
-1. Nella cartella delle app, crea una cartella denominata elenco con un percorso/struttura simile a quello della cartella dell’elenco che si trova in /libs/granite/ui/content/shell/omnisearch/searchresults/singlresults/views:
+1. Nella cartella delle app, crea una cartella denominata elenco con un percorso/struttura simile a quello della cartella dell’elenco in /libs/granite/ui/content/shell/omnisearch/searchresults/singlresults/views:
 
    1. Fai clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e seleziona **Sovrapponi nodo**:
 
@@ -933,7 +933,7 @@ La procedura seguente illustra come consentire l’indicizzazione di proprietà 
 
 La procedura seguente illustra come visualizzare o nascondere le proprietà personalizzate:
 
-1. Nel nodo delle proprietà personalizzate, ad esempio Geographic Allocation, crea un nuovo nodo denominato &quot;granite:rendercondition&quot; di tipo &quot;nt:unstructured&quot;.
+1. Nel nodo della proprietà personalizzata, ad esempio Geraphicallocation, crea un nodo denominato &quot;granite:rendercondition&quot; di tipo &quot;nt:unstructured&quot;.
 1. Aggiungi la seguente proprietà al nodo e fai clic su **Salva tutto**:
 
    <table>

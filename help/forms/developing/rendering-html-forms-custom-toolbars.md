@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2340'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Puoi anche specificare le posizioni assolute di questi file JS e CSS, ad esempio
 >
 >Non è consigliabile combinare i modi in cui si fa riferimento a questi file. In altre parole, è necessario fare riferimento a tutti gli URI utilizzando `FSToolBarURI` parola chiave o posizione assoluta.
 
-Per ottenere i file JS e CSS, apri la scheda Adobe-forms-&lt;appserver>file .ear. All’interno di questo file, apri adobe-forms-res.war. Tutti questi file si trovano nel file WAR. Il modulo Adobe-forms-&lt;appserver>Il file .ear si trova nella cartella di installazione di AEM forms (C:\ è la directory di installazione). È possibile aprire la&lt;appserver>.ear utilizzando uno strumento di estrazione file come WinRAR.
+Per ottenere i file JS e CSS, apri la scheda Adobe-forms-&lt;appserver>file .ear. All’interno di questo file, apri adobe-forms-res.war. Tutti questi file sono nel file WAR. Il modulo Adobe-forms-&lt;appserver>Il file .ear si trova nella cartella di installazione di AEM forms (C:\ è la directory di installazione). È possibile aprire la&lt;appserver>.ear utilizzando uno strumento di estrazione file come WinRAR.
 
 La sintassi XML seguente mostra un esempio di file fscmenu.xml.
 

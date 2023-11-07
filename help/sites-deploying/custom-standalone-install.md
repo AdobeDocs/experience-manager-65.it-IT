@@ -1,14 +1,12 @@
 ---
 title: Installazione autonoma personalizzata
-seo-title: Custom Standalone Install
 description: Scopri le opzioni disponibili per l’installazione di un’istanza AEM autonoma.
-seo-description: Learn about the options available when installing a standalone AEM instance.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1618'
 ht-degree: 0%
 
 ---
@@ -45,7 +43,7 @@ Esistono varie regole da seguire quando si rinomina il file jar quickstart:
 
 ### Considerazioni su Java 11 {#java-considerations}
 
-Se esegui Oracle Java 11 (o in genere versioni di Java più recenti di 8), sarà necessario aggiungere opzioni aggiuntive alla riga di comando all’avvio dell’AEM.
+Se si esegue Oracle Java 11 (o generalmente versioni di Java più recenti di 8), è necessario aggiungere opzioni aggiuntive alla riga di comando all&#39;avvio dell&#39;AEM.
 
 * I seguenti elementi: `-add-opens` per evitare che i messaggi di avviso relativi all&#39;accesso ai dati di reflection vengano visualizzati in `stdout.log`
 
@@ -67,7 +65,7 @@ Infine, se esegui un’istanza aggiornata da AEM 6.3, assicurati che la seguente
 
 ## Modalità di esecuzione {#run-modes}
 
-**Modalità di esecuzione** consente di regolare l’istanza AEM per uno scopo specifico; ad esempio, authoring o pubblicazione, test, sviluppo, Intranet e così via. Queste modalità consentono inoltre di controllare l’utilizzo di contenuti campione. Questo contenuto di esempio viene definito prima che venga creato il modulo quickstart e può includere pacchetti, configurazioni e così via. Questo può essere particolarmente utile per le installazioni pronte per la produzione quando si desidera mantenere l&#39;installazione snella e senza contenuti di esempio. Per ulteriori informazioni, consulta:
+**Modalità di esecuzione** consente di regolare l’istanza AEM per uno scopo specifico, ad esempio authoring o pubblicazione, test, sviluppo, Intranet e così via. Queste modalità consentono inoltre di controllare l’utilizzo di contenuti campione. Questo contenuto di esempio viene definito prima della creazione del modulo quickstart e può includere pacchetti, configurazioni e così via. Questo può essere particolarmente utile per le installazioni pronte per la produzione quando si desidera mantenere l&#39;installazione snella e senza contenuti di esempio. Per ulteriori informazioni, consulta:
 
 * [Modalità di esecuzione](/help/sites-deploying/configure-runmodes.md)
 
@@ -143,7 +141,7 @@ Per disinstallare il servizio, fare clic su **Interrompi** nel **Servizi** panne
 
 ## Ridefinizione della posizione della directory di lavoro temporanea {#redefining-the-location-of-the-temporary-work-directory}
 
-Il percorso predefinito della cartella temporanea del computer Java è `/tmp`. AEM utilizza anche questa cartella, ad esempio durante la creazione di pacchetti.
+Il percorso predefinito della cartella temporanea del computer Java è `/tmp`. AEM utilizza anche questa cartella, ad esempio, durante la creazione dei pacchetti.
 
 Se desideri modificare la posizione della cartella temporanea (ad esempio, se hai bisogno di una directory con più spazio libero), definisci un * `<new-tmp-path>`* aggiungendo il parametro JVM:
 

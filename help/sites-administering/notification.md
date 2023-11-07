@@ -1,18 +1,14 @@
 ---
 title: Configurazione delle notifiche e-mail
-seo-title: Configuring Email Notification
 description: Scopri come configurare le notifiche e-mail in Adobe Experience Manager.
-seo-description: Learn how to configure Email Notification in AEM.
-uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2067'
 ht-degree: 12%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 12%
 
 AEM invia notifiche e-mail agli utenti che:
 
-* Ti sei iscritto agli eventi di pagina, ad esempio modifica o replica. Il [Casella in entrata notifica](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) descrive come abbonarsi a tali eventi.
+* Si sono abbonati a eventi di pagina, ad esempio modifiche o repliche. Il [Casella in entrata notifica](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) descrive come abbonarsi a tali eventi.
 
 * Ti sei iscritto agli eventi del forum.
 * Devi eseguire un passaggio in un flusso di lavoro. Il [Passaggio partecipante](/help/sites-developing/workflows-step-ref.md#participant-step) In questa sezione viene descritto come attivare le notifiche e-mail in un flusso di lavoro.
@@ -279,7 +275,7 @@ Puoi configurare OAuth per più provider di posta elettronica, come descritto di
    * `https://mail.google.com/`
    * `https://www.googleapis.com//auth/gmail.send`
 1. Dopo aver aggiunto gli ambiti, torna a **Credenziali** nel menu a sinistra, quindi vai a **Crea credenziali** - **ID client OAuth** - **App desktop**
-1. Verrà aperta una nuova finestra contenente l’ID client e il segreto client.
+1. Viene visualizzata una nuova finestra contenente l’ID client e il segreto client.
 1. Salva queste credenziali.
 
 **Configurazioni lato AEM**
@@ -361,7 +357,7 @@ Infine, conferma la configurazione:
 1. Quindi, vai a **Certificati e segreti**, fai clic su **Nuovo segreto client** e segui i passaggi sullo schermo per creare un segreto. Assicurati di prendere nota di questo segreto per un uso successivo
 1. Premi **Panoramica** nel riquadro a sinistra e copia i valori per **ID applicazione (client)** e **ID directory (tenant)** per un uso successivo
 
-Per ricapitolare, dovrai disporre delle seguenti informazioni per configurare OAuth2 per il servizio Mailer sul lato AEM:
+Per ricapitolare, è necessario disporre delle seguenti informazioni per configurare OAuth2 per il servizio Mailer sul lato AEM:
 
 * L’URL di autenticazione, che verrà costruito con l’ID tenant. Avrà il seguente modulo: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * L’URL del token, che verrà costruito con l’ID tenant. Avrà il seguente modulo: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`

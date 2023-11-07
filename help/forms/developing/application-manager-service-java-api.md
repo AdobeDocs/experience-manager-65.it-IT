@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 role: Developer
 exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida introduttiva dell’API Java (SOAP), disponibile nei moduli per la programmazione con AEM, si basa su Forms se si utilizza un altro sistema operativo, ad esempio Unix, e sostituisce i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida introduttiva alle API Java (SOAP) nella programmazione con moduli AEM si basa su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start (modalità SOAP): distribuzione di applicazioni tramite l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
@@ -67,7 +67,7 @@ Esempio Nell&#39;esempio di codice Java seguente viene importata un&#39;applicaz
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -76,7 +76,7 @@ Esempio Nell&#39;esempio di codice Java seguente viene importata un&#39;applicaz
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -169,7 +169,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene rimossa un&#3
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -178,7 +178,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene rimossa un&#3
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *

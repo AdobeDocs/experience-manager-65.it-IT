@@ -12,9 +12,9 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2220'
 ht-degree: 6%
 
 ---
@@ -55,11 +55,11 @@ Quando una funzione di community viene aggiunta a un modello di sito community o
 
 * **Titolo**
 
-   (*Obbligatorio*) Testo visualizzato nel menu delle funzioni del sito
+  (*Obbligatorio*) Testo visualizzato nel menu delle funzioni del sito
 
 * **URL**
 
-   (*Obbligatorio*) Nome utilizzato per generare l&#39;URI. Il nome deve essere conforme al [convenzioni di denominazione](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+  (*Obbligatorio*) Nome utilizzato per generare l&#39;URI. Il nome deve essere conforme al [convenzioni di denominazione](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
 
 Ad esempio, utilizzando il sito creato da seguendo la [Guida introduttiva](/help/communities/getting-started.md) esercitazione, se
 
@@ -86,15 +86,15 @@ Quando si aggiunge un modello, viene visualizzata la seguente finestra di dialog
 
 * **Mostra vista Le mie attività**
 
-   Se selezionata, la pagina Attività include una scheda che filtra le attività in base a quelle generate all&#39;interno della community dal membro corrente. L&#39;opzione Predefinita è selezionata.
+  Se selezionata, la pagina Attività include una scheda che filtra le attività in base a quelle generate all&#39;interno della community dal membro corrente. L&#39;opzione Predefinita è selezionata.
 
 * **Mostra la vista Tutte le attività**
 
-   Se selezionata, la pagina Attività include una scheda che include tutte le attività generate all&#39;interno della comunità a cui il membro corrente ha accesso. L&#39;opzione Predefinita è selezionata.
+  Se selezionata, la pagina Attività include una scheda che include tutte le attività generate all&#39;interno della comunità a cui il membro corrente ha accesso. L&#39;opzione Predefinita è selezionata.
 
 * **Mostra vista Feed notizie**
 
-   Se selezionata, le pagine Attività includono una scheda che filtra le attività in base a quelle che il membro corrente sta seguendo. L&#39;opzione Predefinita è selezionata.
+  Se selezionata, le pagine Attività includono una scheda che filtra le attività in base a quelle che il membro corrente sta seguendo. L&#39;opzione Predefinita è selezionata.
 
 ### Funzione Blog {#blog-function}
 
@@ -108,19 +108,19 @@ Quando si aggiunge un modello, viene visualizzata la seguente finestra di dialog
 
 * **Consenti membri privilegiati**
 
-   Se viene selezionato, il blog consente ai membri con privilegi di creare articoli solo selezionando una [gruppo di membri privilegiati](/help/communities/users.md#privileged-members-group). Se non viene selezionata, tutti i membri della community possono creare. Il valore predefinito è deselezionato.
+  Se viene selezionato, il blog consente ai membri con privilegi di creare articoli solo selezionando una [gruppo di membri privilegiati](/help/communities/users.md#privileged-members-group). Se non viene selezionata, tutti i membri della community possono creare. Il valore predefinito è deselezionato.
 
 * **Consenti caricamenti file**
 
-   Se viene selezionato, il blog consente ai membri di caricare i file. L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il blog consente ai membri di caricare i file. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti risposte concatenate**
 
-   Se non è selezionato, il blog consente di rispondere (commenti) a un articolo, ma non di rispondere ai commenti. L&#39;opzione Predefinita è selezionata.
+  Se non è selezionato, il blog consente di rispondere (commenti) a un articolo, ma non di rispondere ai commenti. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti contenuto in primo piano**
 
-   Se viene selezionato, il blog viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il blog viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
 
 ### Funzione Calendario {#calendar-function}
 
@@ -134,23 +134,23 @@ Quando si aggiunge un modello, viene visualizzata la seguente finestra di dialog
 
 * **Consenti blocco**
 
-   Se viene selezionato, il forum consente di fissare le risposte all&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il forum consente di fissare le risposte all&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti membri privilegiati**
 
-   Se viene selezionato, il blog consente ai membri con privilegi di creare articoli solo selezionando una [gruppo di membri privilegiati](/help/communities/users.md#privileged-members-group). Se non viene selezionata, tutti i membri della community possono creare. Il valore predefinito è deselezionato.
+  Se viene selezionato, il blog consente ai membri con privilegi di creare articoli solo selezionando una [gruppo di membri privilegiati](/help/communities/users.md#privileged-members-group). Se non viene selezionata, tutti i membri della community possono creare. Il valore predefinito è deselezionato.
 
 * **Consenti caricamenti file**
 
-   Se viene selezionato, il blog consente ai membri di caricare i file. L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il blog consente ai membri di caricare i file. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti risposte concatenate**
 
-   Se non è selezionato, il blog consente di rispondere (commenti) a un articolo, ma non di rispondere ai commenti. L&#39;opzione Predefinita è selezionata.
+  Se non è selezionato, il blog consente di rispondere (commenti) a un articolo, ma non di rispondere ai commenti. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti contenuto in primo piano**
 
-   Se viene selezionato, il contenuto viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il contenuto viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
 
 ### Funzione contenuto in primo piano {#featured-content-function}
 
@@ -180,23 +180,23 @@ Quando si aggiunge un modello, viene visualizzata la seguente finestra di dialog
 
 * **Consenti blocco**
 
-   Se viene selezionato, il forum consente di fissare le risposte all&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il forum consente di fissare le risposte all&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti membri privilegiati**
 
-   Se viene selezionato, il forum consente solo ai membri con privilegi di pubblicare argomenti consentendo la selezione di un [gruppo di membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono pubblicare post. Il valore predefinito è deselezionato.
+  Se viene selezionato, il forum consente solo ai membri con privilegi di pubblicare argomenti consentendo la selezione di un [gruppo di membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono pubblicare post. Il valore predefinito è deselezionato.
 
 * **Consenti caricamenti file**
 
-   Se viene selezionato, il forum consente ai membri di caricare i file. L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il forum consente ai membri di caricare i file. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti risposte concatenate**
 
-   Se non viene selezionato, il forum consente di inserire commenti su un argomento, ma non è consentito rispondere a tali commenti. L&#39;opzione Predefinita è selezionata.
+  Se non viene selezionato, il forum consente di inserire commenti su un argomento, ma non è consentito rispondere a tali commenti. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti contenuto in primo piano**
 
-   Se selezionata, il contenuto del componente viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
+  Se selezionata, il contenuto del componente viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
 
 ### Funzione Gruppi {#groups-function}
 
@@ -222,15 +222,15 @@ Quando si aggiunge un modello, viene visualizzata la seguente finestra di dialog
 
 * **Seleziona modelli per gruppi**
 
-   Un elenco a discesa che consente di selezionare uno o più modelli di gruppo abilitati tra cui può scegliere il futuro creatore di un nuovo gruppo community (nell’ambiente di pubblicazione).
+  Un elenco a discesa che consente di selezionare uno o più modelli di gruppo abilitati tra cui può scegliere il futuro creatore di un nuovo gruppo community (nell’ambiente di pubblicazione).
 
 * **Consenti membri privilegiati**
 
-   Se viene selezionato, il forum consente solo ai membri con privilegi di pubblicare argomenti consentendo la selezione di un [gruppo di sicurezza membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono pubblicare post. Il valore predefinito è deselezionato.
+  Se viene selezionato, il forum consente solo ai membri con privilegi di pubblicare argomenti consentendo la selezione di un [gruppo di sicurezza membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono pubblicare post. Il valore predefinito è deselezionato.
 
 * **Consenti creazione pubblicazione**
 
-   Se questa opzione è selezionata, i membri autorizzati della community possono creare un gruppo nell’ambiente di pubblicazione. Se questa opzione è deselezionata, è possibile creare nuovi gruppi (sottocomunità) nell’ambiente di authoring solo dalla console Gruppi di siti community.
+  Se questa opzione è selezionata, i membri autorizzati della community possono creare un gruppo nell’ambiente di pubblicazione. Se questa opzione è deselezionata, è possibile creare nuovi gruppi (sottocomunità) nell’ambiente di authoring solo dalla console Gruppi di siti community.
 L&#39;opzione Predefinita è selezionata.
 
 ### Funzione ideazione {#ideation-function}
@@ -245,19 +245,19 @@ Quando viene aggiunto a un modello, viene visualizzata la seguente finestra di d
 
 * **Consenti membri privilegiati**
 
-   Se viene selezionato, il forum consente solo ai membri con privilegi di pubblicare argomenti consentendo la selezione di un [gruppo di sicurezza membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono pubblicare post. Il valore predefinito è deselezionato.
+  Se viene selezionato, il forum consente solo ai membri con privilegi di pubblicare argomenti consentendo la selezione di un [gruppo di sicurezza membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono pubblicare post. Il valore predefinito è deselezionato.
 
 * **Consenti caricamenti file**
 
-   Se selezionata, l&#39;idea include la possibilità per i membri di caricare i file. L&#39;opzione Predefinita è selezionata.
+  Se selezionata, l&#39;idea include la possibilità per i membri di caricare i file. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti risposte concatenate**
 
-   Se non viene selezionata, l&#39;idea consente di rispondere (commenti) a un argomento, ma non di rispondere ai commenti. L&#39;opzione Predefinita è selezionata.
+  Se non viene selezionata, l&#39;idea consente di rispondere (commenti) a un argomento, ma non di rispondere ai commenti. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti contenuto in primo piano**
 
-   Se viene selezionato, il contenuto viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il contenuto viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
 
 ### Funzione Classifica {#leaderboard-function}
 
@@ -273,17 +273,17 @@ Quando viene aggiunto a un modello, viene visualizzata la seguente finestra di d
 
 * **Visualizza badge**
 
-   Se questa opzione è selezionata, nella classifica verrà inclusa una colonna per le icone dei badge.
+  Se questa opzione è selezionata, nella classifica verrà inclusa una colonna per le icone dei badge.
 Il valore predefinito è deselezionato.
 
 * **Nome badge visualizzato**
 
-   Se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del badge.
+  Se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del badge.
 Il valore predefinito è deselezionato.
 
 * **Visualizza avatar**
 
-   Se l&#39;opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al suo profilo membro.
+  Se l&#39;opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al suo profilo membro.
 Il valore predefinito è deselezionato.
 
 ### Funzione Pagina {#page-function}
@@ -304,23 +304,23 @@ Quando viene aggiunta a un modello, la configurazione consente di limitare i mem
 
 * **Consenti blocco**
 
-   Se viene selezionato, il forum consente di fissare le risposte all&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il forum consente di fissare le risposte all&#39;argomento all&#39;inizio dell&#39;elenco dei commenti. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti membri privilegiati**
 
-   Se viene selezionato, il forum QnA consente solo ai membri con privilegi di pubblicare domande consentendo la selezione di un [gruppo di membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono pubblicare post. Il valore predefinito è deselezionato.
+  Se viene selezionato, il forum QnA consente solo ai membri con privilegi di pubblicare domande consentendo la selezione di un [gruppo di membri privilegiati](/help/communities/users.md#privileged-members-group). Se non è selezionata, tutti i membri della community possono pubblicare post. Il valore predefinito è deselezionato.
 
 * **Consenti caricamenti file**
 
-   Se viene selezionato, il forum QnA consente ai membri di caricare i file. L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il forum QnA consente ai membri di caricare i file. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti risposte concatenate**
 
-   Se non viene selezionato, il forum di QnA consente di inserire commenti (risposte) a una domanda pubblicata, ma non sono consentite risposte alle risposte. L&#39;opzione Predefinita è selezionata.
+  Se non viene selezionato, il forum di QnA consente di inserire commenti (risposte) a una domanda pubblicata, ma non sono consentite risposte alle risposte. L&#39;opzione Predefinita è selezionata.
 
 * **Consenti contenuto in primo piano**
 
-   Se viene selezionato, il contenuto viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
+  Se viene selezionato, il contenuto viene identificato come [contenuto in primo piano](/help/communities/featured.md). L&#39;opzione Predefinita è selezionata.
 
 ## Crea funzione community {#create-community-function}
 
@@ -336,15 +336,15 @@ Nel pannello Nome funzione community, vengono configurati un nome, una descrizio
 
 * **Nome funzione community**
 
-   Nome della funzione utilizzato per la visualizzazione e l&#39;archiviazione.
+  Nome della funzione utilizzato per la visualizzazione e l&#39;archiviazione.
 
 * **Descrizione della funzione community**
 
-   Descrizione della funzione per la visualizzazione.
+  Descrizione della funzione per la visualizzazione.
 
 * **Disabilitato/abilitato**
 
-   Un interruttore che controlla se la funzione è referenziabile.
+  Un interruttore che controlla se la funzione è referenziabile.
 
 ### Blueprint AEM {#aem-blueprint}
 
@@ -376,7 +376,7 @@ Una funzione community è implementata come Live Copy di un blueprint AEM, i cui
 
 È possibile non solo creare il contenuto della pagina, ma anche configurare i componenti.
 
-Durante la configurazione di un componente in una pagina di un sito community creato, potrebbe essere necessario annullare l&#39;operazione [ereditarietà](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) per configurare il componente. Al termine della configurazione, l’ereditarietà deve essere ristabilita.
+Durante la configurazione di un componente in una pagina di un sito community creato, potrebbe essere necessario annullare [ereditarietà](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) per configurare il componente. Al termine della configurazione, l’ereditarietà deve essere ristabilita.
 
 Per informazioni dettagliate sulla configurazione, visita [Componenti community](/help/communities/author-communities.md) per autori.
 

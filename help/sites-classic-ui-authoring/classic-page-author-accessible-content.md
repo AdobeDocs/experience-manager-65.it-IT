@@ -1,20 +1,16 @@
 ---
 title: Creazione di contenuto accessibile (conformità WCAG 2.0)
-seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
 description: Le linee guida WCAG 2.0 sono costituite da un insieme di criteri di successo e linee guida che non dipendono dalla tecnologia in uso e hanno l’obiettivo di rendere i contenuti web accessibili e utilizzabili da persone con disabilità.
-seo-description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 page-status-flag: de-activated
-uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9152'
-ht-degree: 61%
+source-wordcount: '9151'
+ht-degree: 60%
 
 ---
 
@@ -382,7 +378,7 @@ Questo criterio di successo esiste per garantire che tali informazioni struttura
 
 #### Come soddisfare il criterio - Informazioni e correlazioni (1.3.1)  {#how-to-meet-info-and-relationships}
 
-L’AEM semplifica la creazione di pagine web utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell’editor Rich Text (un componente testo) e utilizza **Formato** per specificare l&#39;elemento strutturale appropriato (ad esempio paragrafo e intestazione).
+L’AEM semplifica la creazione di pagine web utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell’editor Rich Text (un componente testo) e utilizza **Formato** per specificare l&#39;elemento strutturale appropriato, ad esempio paragrafo e intestazione.
 
 Nell&#39;immagine seguente viene illustrato il testo a cui è stato applicato lo stile di testo paragrafo. Nella visualizzazione del codice sorgente viene indicato che il testo presenta l&#39;apertura e la chiusura corrette &lt;p> e &lt;/p> tag.
 
@@ -528,13 +524,13 @@ Allo stesso modo, le informazioni che richiedono di distinguere tra suoni divers
 
 >[!NOTE]
 >
-Per i requisiti relativi alle alternative al colore, consulta [Uso del colore](#use-of-color).
+Per requisiti relativi alle alternative di colore, consulta [Utilizzo del colore](#use-of-color).
 
 #### Come soddisfare il criterio: caratteristiche sensoriali (1.3.3)  {#how-to-meet-sensory-characteristics}
 
 Assicurati che anche tutte le informazioni che si basano sulle caratteristiche visive del contenuto della pagina siano presentate in un formato alternativo.
 
-* Non fare affidamento alla posizione visiva per dare informazioni. Ad esempio, se desideri indirizzare gli utenti a un menu sul lato destro della pagina per accedere a ulteriori informazioni, non fare riferimento al *menu a destra*, ma denomina il menu (ad esempio attraverso un titolo) e fai riferimento al nome nel testo.
+* Non fare affidamento alla posizione visiva per dare informazioni. Ad esempio, se desideri indirizzare gli utenti a un menu sul lato destro della pagina per accedere a ulteriori informazioni, non fare riferimento a *il menu a destra*; invece, assegna un nome al menu (ad esempio, tramite un’intestazione) e fai riferimento a tale nome nel testo.
 * Non fare affidamento sullo stile del testo (ad esempio, testo in grassetto o in corsivo) come unico modo per trasmettere le informazioni.
 
 >[!NOTE]
@@ -965,7 +961,7 @@ Le etichette sono posizionate immediatamente a destra del campo.
 
 Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
 
-In moduli semplici con funzionalità limitata, etichettare in modo appropriato `Submit` può fungere da etichetta per il campo adiacente (ad esempio `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
+In moduli semplici con funzionalità limitata, etichettare in modo appropriato `Submit` può fungere da etichetta per il campo adiacente (ad esempio, `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
 
 #### Ulteriori informazioni - Etichette o istruzioni (3.3.2) {#more-information-labels-or-instructions}
 

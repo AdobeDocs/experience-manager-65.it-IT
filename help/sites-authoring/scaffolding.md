@@ -1,5 +1,5 @@
 ---
-title: Scaffolding nell’authoring di Adobe Experience Manager
+title: Scaffolding nell’authoring Adobe Experience Manager
 description: Con lo scaffolding è possibile creare uno scaffold con campi che riflettono la struttura desiderata per le pagine e quindi utilizzare questo modulo per creare pagine basate su questa struttura.
 uuid: f2542fe2-598f-4631-ae64-a6ee14cd7748
 contentOwner: Chris Bohnert
@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,4 @@ Con lo scaffolding è possibile creare un modulo (uno scaffold) con campi che ri
 
 >[!NOTE]
 >
->Anche se è presente uno scaffolding [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) , la manutenzione e la creazione di scaffold, nonché la creazione di nuove pagine da scaffold, vengono eseguite nell’interfaccia classica. Consulta [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) per ulteriori informazioni, consulta la documentazione sull’authoring dell’interfaccia classica.
+>Anche se è presente uno scaffolding [modalità](/help/sites-authoring/author-environment-tools.md#page-modes) , la manutenzione e la creazione di scaffold e la creazione di nuove pagine da scaffold vengono eseguite nell’interfaccia classica. Consulta [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) per ulteriori informazioni, consulta la documentazione sull’authoring dell’interfaccia classica.

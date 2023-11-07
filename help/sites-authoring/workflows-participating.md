@@ -1,17 +1,15 @@
 ---
 title: Partecipazione al flusso di lavoro
 description: In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’attività su una pagina o una risorsa.
-uuid: 15d56bcc-1e84-4cc0-8b71-7fb906cd7ff7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1519'
 ht-degree: 90%
 
 ---
@@ -41,12 +39,12 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
 
 * Quando utilizzi l’editor pagina, la barra di stato mostra quanto segue:
 
-   * Il nome dei flussi di lavoro applicati alla pagina, ad esempio Richiedi attivazione.
+   * Il nome dei flussi di lavoro applicati alla pagina, ad esempio Richiesta di attivazione.
    * Qualsiasi azione disponibile per l’utente nella fase corrente del flusso di lavoro, per esempio: Completa, Delega, Visualizza dettagli.
    * Il numero di flussi di lavoro a cui è soggetta la pagina. Operazioni disponibili:
 
       * utilizzare la freccia sinistra/destra per navigare tra le informazioni di stato dei vari flussi di lavoro.
-      * tocca o fai clic sul numero effettivo per aprire un elenco a discesa di tutti i flussi di lavoro applicabili, quindi seleziona il flusso di lavoro da visualizzare nella barra di stato.
+      * fare clic/toccare il numero totale per aprire un elenco a discesa di tutti i flussi di lavoro applicabili e quindi selezionare il flusso di lavoro che si desidera visualizzare nella barra di stato.
 
   ![wf-59](assets/wf-59.png)
 
@@ -57,7 +55,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
   >
   >Le azioni vengono visualizzate quando l&#39;utente è direttamente coinvolto nella fase corrente del flusso di lavoro.
 
-* Quando **Timeline** è aperto per la risorsa, verrà visualizzato il passaggio del flusso di lavoro. Quando si fa clic o si tocca il banner di avviso, vengono mostrate anche le azioni disponibili:
+* Quando la **Timeline** è aperta per la risorsa, viene mostrato il passaggio del flusso di lavoro. Quando si fa clic o si tocca il banner di avviso, vengono mostrate anche le azioni disponibili:
 
   ![schermata_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -84,7 +82,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Completa** dalla barra degli strumenti.
-1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento** se richiesto.
+1. Il **Completa elemento di lavoro** viene visualizzata. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento**, se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante: editor pagina {#completing-a-participant-step-page-editor}
@@ -93,7 +91,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Completa** dalla barra di stato in alto.
-1. Si apre la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento** se richiesto.
+1. Il **Completa elemento di lavoro** viene visualizzata. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento**, se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Cancel** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante - Timeline {#completing-a-participant-step-timeline}
@@ -143,7 +141,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Delega** dalla barra degli strumenti.
-1. Viene aperta una finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se necessario. 
+1. Viene visualizzata la finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: editor pagina {#delegating-a-participant-step-page-editor}
@@ -152,7 +150,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Delega** dalla barra di stato in alto.
-1. Viene aperta una finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se necessario. 
+1. Viene visualizzata la finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se richiesto.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: Timeline {#delegating-a-participant-step-timeline}

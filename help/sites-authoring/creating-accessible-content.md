@@ -2,10 +2,10 @@
 title: Creazione di contenuto accessibile per Adobe Experience Manager (conformità WCAG 2.1)
 description: Utilizzare l’AEM per rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '13817'
-ht-degree: 85%
+source-wordcount: '13810'
+ht-degree: 84%
 
 ---
 
@@ -432,13 +432,13 @@ Allo stesso modo, le informazioni che richiedono di distinguere tra suoni divers
 
 >[!NOTE]
 >
->Per i requisiti relativi alle alternative al colore, consulta [Uso del colore](#use-of-color).
+>Per requisiti relativi alle alternative di colore, consulta [Utilizzo del colore](#use-of-color).
 
 #### Come soddisfare il criterio: caratteristiche sensoriali (1.3.3)  {#how-to-meet-sensory-characteristics}
 
 Assicurati che anche tutte le informazioni che si basano sulle caratteristiche visive del contenuto della pagina siano presentate in un formato alternativo.
 
-* Non fare affidamento alla posizione visiva per dare informazioni. Ad esempio, se desideri indirizzare gli utenti a un menu sul lato destro della pagina per accedere a ulteriori informazioni, non fare riferimento al *menu a destra*, ma denomina il menu (ad esempio attraverso un titolo) e fai riferimento al nome nel testo.
+* Non fare affidamento alla posizione visiva per dare informazioni. Ad esempio, se desideri indirizzare gli utenti a un menu sul lato destro della pagina per accedere a ulteriori informazioni, non fare riferimento a *il menu a destra*; invece, assegna un nome al menu (ad esempio, tramite un’intestazione) e fai riferimento a tale nome nel testo.
 * Non fare affidamento sullo stile del testo (ad esempio, testo in grassetto o in corsivo) come unico modo per trasmettere le informazioni.
 
 >[!NOTE]
@@ -840,7 +840,7 @@ Soprattutto, fai in modo che lo scopo di un collegamento sia chiaramente descrit
 
 I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in particolare per le barre di navigazione. Ad esempio, se un collegamento a una pagina specifica è denominato **Pubblicazioni** in una pagina, utilizza lo stesso testo anche nelle altre pagine per garantire la coerenza.
 
-Al momento in cui scriviamo, l’uso degli attributi title per garantire che collegamenti simili presentati in una pagina forniscano informazioni univoche sulla destinazione (ad esempio, “Ulteriori informazioni” spesso fa riferimento a una serie di destinazioni diverse) implica alcuni problemi:
+Al momento in cui scriviamo, l’uso degli attributi title per garantire che collegamenti simili presentati in una pagina forniscano informazioni univoche sulla destinazione implica alcuni problemi (ad esempio, “ulteriori informazioni” spesso fa riferimento a una serie di destinazioni diverse):
 
 * Il testo contenuto all&#39;interno dell&#39;attributo title è disponibile solo per gli utenti del mouse come finestra a comparsa con la descrizione comando e non è accessibile in modo coerente tramite la tastiera o da utenti di dispositivi mobili.
 * Gli assistenti vocali possono leggere gli attributi del titolo, ma questa funzionalità potrebbe non essere abilitata per impostazione predefinita; gli utenti potrebbero ignorare l’esistenza di un attributo title.
@@ -1094,7 +1094,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 3.2.
 
 Lo scopo di questo criterio di successo è incoraggiare l’utilizzo di presentazioni e layout coerenti per gli utenti che interagiscono con contenuti ripetuti all’interno di un insieme di pagine web e che devono individuare informazioni o funzionalità specifiche più di una volta. Le persone ipovedenti che utilizzano l’ingrandimento dello schermo per visualizzare una piccola parte dello schermo alla volta spesso utilizzano riferimenti visivi o i margini della pagina per individuare rapidamente contenuti ripetuti. Presentare contenuti ripetuti nello stesso ordine è importante anche per gli utenti che si basano su elementi visivi e utilizzano la memoria spaziale o indicazioni visive all’interno del layout per individuare contenuti ripetuti.
 
-È importante notare che l’uso dell’espressione “stesso ordine” in questa sezione non implica l’impossibilità di utilizzare i menu o i blocchi di navigazione secondaria, né la struttura della pagina. Questo criterio di successo ha lo scopo di aiutare gli utenti che interagiscono con contenuti ripetuti in più pagine web a prevedere la posizione del contenuto che stanno cercando. E, per trovarlo più rapidamente quando lo incontrano di nuovo.
+L’utilizzo dell’espressione &quot;stesso ordine&quot; in questa sezione non implica l’impossibilità di utilizzare i menu o i blocchi di navigazione secondaria, né la struttura della pagina. Questo criterio di successo ha lo scopo di aiutare gli utenti che interagiscono con contenuti ripetuti in più pagine web a prevedere la posizione del contenuto che stanno cercando. E, per trovarlo più rapidamente quando lo incontrano di nuovo.
 
 Gli utenti possono avviare una modifica dell’ordine utilizzando agenti utente adattivi o impostando le preferenze in modo che le informazioni vengano presentate nel modo più utile per loro.
 
@@ -1206,7 +1206,7 @@ Le etichette sono posizionate immediatamente a destra del campo.
 * Tutti gli altri componenti del modulo (ad esempio caselle di testo, caselle combinate):
 Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
 
-In moduli semplici con funzionalità limitata, etichettare in modo appropriato `Submit` può fungere da etichetta per il campo adiacente (ad esempio `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
+In moduli semplici con funzionalità limitata, etichettare in modo appropriato `Submit` può fungere da etichetta per il campo adiacente (ad esempio, `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
 
 #### Ulteriori informazioni - Etichette o istruzioni (3.3.2) {#more-information-labels-or-instructions}
 

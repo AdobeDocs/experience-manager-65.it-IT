@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8a07dddf-1281-45ac-a55e-4333b860a261
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1606'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Il servizio Forms memorizza sempre nella cache le progettazioni dei moduli su di
 
 Il servizio Forms memorizza nella cache i moduli sottoposti a rendering in modo da non dover risolvere ed eseguire il rendering dello stesso modulo nelle richieste successive. I moduli sottoposti a rendering vengono memorizzati nella cache sia su disco che in memoria.
 
-Queste impostazioni si trovano nella sezione **Nella cache di rendering dei moduli di memoria** area. Se si modifica una di queste impostazioni, riavviare il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere [Avviare o arrestare i servizi associati ai moduli AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per istruzioni.
+Queste impostazioni sono **Nella cache di rendering dei moduli di memoria** area. Se si modifica una di queste impostazioni, riavviare il servizio Forms per rendere effettiva la modifica. Per riavviare il servizio, utilizzare Workbench o vedere [Avviare o arrestare i servizi associati ai moduli AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) per istruzioni.
 
 **Dimensione cache:** Specifica il numero massimo di moduli sottoposti a rendering che possono risiedere nella cache in memoria. Il valore predefinito è 100. Questa impostazione non influisce sulla cache del disco.
 
@@ -123,7 +123,7 @@ Queste impostazioni si trovano nella sezione **Nella cache di rendering dei modu
 
 Il servizio Forms memorizza in cache frammenti e immagini utilizzati nelle progettazioni di moduli su disco. Ciò migliora le prestazioni perché i frammenti e le immagini vengono letti dall’archivio solo alla prima richiesta. Successivamente, nelle richieste successive, il servizio Forms legge i frammenti e le immagini dalla cache del disco. I frammenti e le immagini vengono memorizzati nella cache solo su disco e non in memoria.
 
-È possibile utilizzare le seguenti impostazioni per controllare la memorizzazione nella cache su disco di frammenti e immagini. Queste impostazioni si trovano nella sezione **Impostazioni cache risorse modello** area:
+È possibile utilizzare le seguenti impostazioni per controllare la memorizzazione nella cache su disco di frammenti e immagini. Queste impostazioni sono **Impostazioni cache risorse modello** area:
 
 **Memorizzazione in cache delle risorse** Selezionare una delle opzioni seguenti dall&#39;elenco:
 

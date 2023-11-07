@@ -7,7 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3949'
 ht-degree: 17%
@@ -32,7 +32,7 @@ La funzionalità Risorse collegate supporta i casi d’uso precedenti tramite l�
 
 ## Panoramica della funzione Risorse collegate {#overview-of-connected-assets}
 
-Durante la modifica delle pagine in [!UICONTROL Editor pagina] come destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di un’altra [!DNL Assets] che funge da origine di risorse. Gli amministratori creano un’integrazione una tantum di una distribuzione di [!DNL Experience Manager] con [!DNL Sites] con un&#39;altra implementazione di [!DNL Experience Manager] con [!DNL Assets] funzionalità. Gli autori del sito possono inoltre utilizzare le immagini Dynamic Medie nelle pagine web del sito tramite Risorse collegate e sfruttare le funzionalità di Dynamic Medie, ad esempio il ritaglio avanzato e i predefiniti per immagini.
+Durante la modifica delle pagine in [!UICONTROL Editor pagina] come destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di un’altra [!DNL Assets] che funge da origine di risorse. Gli amministratori creano un’integrazione una tantum di una distribuzione di [!DNL Experience Manager] con [!DNL Sites] con un&#39;altra implementazione di [!DNL Experience Manager] con [!DNL Assets] funzionalità. Gli autori del sito possono inoltre utilizzare le immagini Dynamic Medie nelle pagine web del sito tramite Risorse collegate e utilizzare le funzionalità di Dynamic Medie, ad esempio il ritaglio avanzato e i predefiniti per immagini.
 
 Per [!DNL Sites] autori, le risorse remote sono disponibili come risorse locali di sola lettura. Questa funzionalità supporta la ricerca e l’accesso diretti alle risorse remote nell’Editor sito. Per qualsiasi altro caso d’uso che richieda la disponibilità su Sites dell’intero corpo di risorse, valuta la possibilità di migrare le risorse in blocco invece di utilizzare Risorse collegate. Consulta [Guida alla migrazione di Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
@@ -145,7 +145,7 @@ Puoi controllare la connettività tra [!DNL Sites] implementazioni e [!DNL Asset
 ## Utilizzare le risorse di Dynamic Medie {#dynamic-media-assets}
 
 
-Con Risorse collegate, puoi utilizzare le risorse immagine elaborate da [!DNL Dynamic Media] dall’implementazione remota di DAM nelle pagine Sites e sfrutta le funzionalità di Dynamic Medie, come i predefiniti per ritaglio avanzato e immagini.
+Con Risorse collegate, puoi utilizzare le risorse immagine elaborate da [!DNL Dynamic Media] dalla distribuzione remota di DAM nelle pagine Sites e utilizza le funzionalità di Dynamic Medie, ad esempio i predefiniti per ritaglio avanzato e immagini.
 
 Da utilizzare [!DNL Dynamic Media] con risorse collegate:
 

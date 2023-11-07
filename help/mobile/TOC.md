@@ -7,9 +7,9 @@ breadcrumb-title: Guida di Mobile
 user-guide-description: Crea e gestisci contenuti per le app mobili.
 feature: Mobile
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '330'
 ht-degree: 10%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 10%
    + [Modifica dei metadati dell’app](phonegap-editmetadata.md)
    + [Definizioni delle app](phonegap-app-definitions.md)
    + [Creazione e gestione del contenuto delle app](phonegap-manage-app-content.md)
-   + [Creazione di una nuova app AEM Mobile tramite la procedura guidata](phonegap-create-new-app.md)
+   + [Creazione di un’app AEM Mobile tramite la procedura guidata](phonegap-create-new-app.md)
    + [Authoring di applicazioni mobili](phonegap-authoring-apps.md)
    + [Gestisci sezione app](phonegap-app-details-tile.md)
    + [Personalizzazione dei contenuti AEM Mobile](phonegap-aem-mobile-content-personalization.md)

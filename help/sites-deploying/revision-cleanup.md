@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5814'
+source-wordcount: '5811'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Inoltre, puoi leggere [documentazione Oak ufficiale](https://jackrabbit.apache.o
 
 ## Eseguire la pulizia delle revisioni online {#how-to-run-online-revision-cleanup}
 
-La funzione Pulizia revisioni online è configurata per impostazione predefinita per essere eseguita automaticamente una volta al giorno sia sulle istanze Autore AEM che Publish. È sufficiente definire la finestra di manutenzione durante un periodo con l’attività utente meno intensa. È possibile configurare l&#39;attività Pulizia revisioni in linea come indicato di seguito:
+La funzione di pulizia delle revisioni online è configurata per impostazione predefinita per essere eseguita automaticamente una volta al giorno sia sulle istanze di creazione AEM che su quelle di pubblicazione. È sufficiente definire la finestra di manutenzione durante un periodo con l’attività utente meno intensa. È possibile configurare l&#39;attività Pulizia revisioni in linea come indicato di seguito:
 
 1. Nella finestra principale dell’AEM, vai a **Strumenti - Operazioni - Dashboard - Manutenzione** oppure puntare il browser su: `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
 
@@ -240,7 +240,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
   </tr>
   <tr>
    <td><strong>In genere le finestre di Pulizia revisioni in linea di Author e Publish sono diverse?</strong></td>
-   <td>Questo dipende dalle ore di ufficio e dai modelli di traffico della presenza online del cliente. Le finestre di manutenzione devono essere configurate al di fuori dei tempi di produzione principali per garantire la migliore efficacia della pulizia. Per più istanze di pubblicazione di AEM (farm TarMK), le finestre di manutenzione per la pulizia delle revisioni online devono essere scaglionate.</td>
+   <td>Questo dipende dalle ore di ufficio e dai modelli di traffico della presenza online del cliente. Le finestre di manutenzione devono essere configurate al di fuori dei tempi di produzione principali per garantire la migliore efficacia della pulizia. Per più istanze di pubblicazione AEM (farm TarMK), le finestre di manutenzione per la pulizia delle revisioni online devono essere scaglionate.</td>
    <td> </td>
   </tr>
   <tr>
@@ -351,7 +351,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
    <td>Considerazioni sulle operazioni dei file mappati in memoria?</td>
    <td>
     <ul>
-     <li><strong>In ambienti Windows</strong>, l'accesso regolare ai file viene sempre applicato in modo da non utilizzare l'accesso mappato alla memoria. Come consiglio generale, tutta la RAM disponibile deve essere allocata all’heap e la dimensione segmentCache deve essere aumentata. Aumenta segmentCache aggiungendo l’opzione segmentCache.size a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config (ad esempio, segmentCache.size=20480). Ricordarsi di lasciare fuori un po’ di RAM per il sistema operativo e altri processi.</li>
+     <li><strong>In ambienti Windows</strong>, l'accesso regolare ai file viene sempre applicato in modo da non utilizzare l'accesso mappato alla memoria. Come consiglio generale, tutta la RAM disponibile deve essere allocata all’heap e la dimensione segmentCache deve essere aumentata. Aumenta segmentCache aggiungendo l’opzione segmentCache.size a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config (ad esempio, segmentCache.size=20480). Ricordarsi di lasciare fuori un po' di RAM per il sistema operativo e altri processi.</li>
      <li><strong>In ambienti non Windows</strong>, aumentare le dimensioni della memoria fisica per migliorare la mappatura della memoria dell'archivio.</li>
     </ul> </td>
    <td>
@@ -426,7 +426,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
   </tr>
   <tr>
    <td><strong>Quali informazioni sono esposte nel controllo dello stato di pulizia delle revisioni? Come e quando contribuiscono ai livelli di stato con codice a colori? </strong></td>
-   <td><p>Il controllo dello stato di pulizia della revisione fa parte del <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Dashboard operazioni</a>.<br /> </p> <p>Lo stato è <strong>VERDE</strong> se l'ultima esecuzione dell'attività di manutenzione Pulizia revisioni in linea è stata completata correttamente.</p> <p>È <strong>GIALLO</strong> se l'attività di manutenzione Pulizia revisioni in linea è stata annullata una volta.<br /> </p> <p>È <strong>ROSSO</strong> se l'attività di manutenzione Pulizia revisioni in linea è stata annullata tre volte di seguito. <strong>In questo caso è necessaria l’interazione manuale</strong> o la pulizia delle revisioni online potrebbe non riuscire più. Per ulteriori informazioni, leggere <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Risoluzione dei problemi</a> sezione successiva.<br /> </p> <p>Inoltre, lo stato di Verifica stato verrà reimpostato dopo il riavvio del sistema. Pertanto, un'istanza appena riavviata viene visualizzata in verde sul controllo di integrità della pulizia delle revisioni. Gli strumenti di monitoraggio esterno potrebbero essere utilizzati per mantenere i dati oltre il tempo di attività dell’AEM. Consulta <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">la documentazione AEM per allegare i controlli sanitari a Nagios come esempio per uno strumento di monitoraggio esterno</a>.</p> </td>
+   <td><p>Il controllo dello stato di pulizia della revisione fa parte del <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Dashboard operazioni</a>.<br /> </p> <p>Lo stato è <strong>VERDE</strong> se l'ultima esecuzione dell'attività di manutenzione Pulizia revisioni in linea è stata completata correttamente.</p> <p>È <strong>GIALLO</strong> se l'attività di manutenzione Pulizia revisioni in linea è stata annullata una volta.<br /> </p> <p>È <strong>ROSSO</strong> se l'attività di manutenzione Pulizia revisioni in linea è stata annullata tre volte di seguito. <strong>In questo caso è necessaria l’interazione manuale</strong> o la pulizia delle revisioni online potrebbe non riuscire più. Per ulteriori informazioni, leggere <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Risoluzione dei problemi</a> sezione successiva.<br /> </p> <p>Inoltre, lo stato di Verifica stato viene reimpostato dopo il riavvio del sistema. Pertanto, un'istanza appena riavviata viene visualizzata in verde sul controllo di integrità della pulizia delle revisioni. Gli strumenti di monitoraggio esterno potrebbero essere utilizzati per mantenere i dati oltre il tempo di attività dell’AEM. Consulta <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">la documentazione AEM per allegare i controlli sanitari a Nagios come esempio per uno strumento di monitoraggio esterno</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>

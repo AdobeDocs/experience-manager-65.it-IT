@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1723'
 ht-degree: 1%
 
 ---
@@ -60,11 +60,11 @@ Per iscriverti agli eventi, segui questi passaggi:
 1. Vai alla scheda Cartelle collegate al progetto nei servizi cloud.
 1. Percorso principale della cartella collegata: seleziona una cartella in DAM in cui desideri creare le cartelle collegate. Se lasciato vuoto, per impostazione predefinita viene impostato su /content/dam. Verificare che lo schema metadati Strumenti di Workfront e lo schema metadati cartelle collegate a Workfront siano stati applicati alla cartella selezionata.
 1. Struttura delle cartelle collegate: immetti valori separati da virgole. Ogni valore deve essere `DE:<some-project-custom-form-field>`, Portfolio, Programma, Anno, Nome o un &quot;valore stringa letterale&quot; (quest&#39;ultimo con virgolette). Attualmente è impostato su Portfolio,Programma,Anno,DE:Tipo di progetto,Nome.
-1. Se il titolo della cartella in Workfront deve includere tutte le cartelle della struttura, seleziona la casella di controllo Crea titolo della cartella collegata in Workfront utilizzando i nomi della struttura di cartelle. In caso contrario, sarà il titolo dell’ultima cartella.
+1. Se il titolo della cartella in Workfront deve includere tutte le cartelle della struttura, seleziona la casella di controllo Crea titolo della cartella collegata in Workfront utilizzando i nomi della struttura di cartelle. In caso contrario, si tratta del titolo dell&#39;ultima cartella.
 1. Sottocartelle con più campi consente di specificare un elenco di cartelle da creare come cartella secondaria della cartella collegata.
 1. Stato progetto: seleziona lo stato del progetto per creare la cartella collegata.
 1. Creazione di una cartella collegata in progetti con portfolio: elenco di Portfoli a cui il progetto deve appartenere per creare la cartella collegata. Lascia vuoto questo elenco per creare la cartella collegata per tutto il portfolio di progetti.
-1. Creare una cartella collegata nei progetti con campo modulo personalizzato: campo modulo personalizzato e il valore corrispondente che il progetto deve avere per creare la cartella collegata. Se questa configurazione viene lasciata vuota, verrà ignorata. Seleziona `CUSTOM FORMS: Create DAM Linked Folder` per il campo e l’input `Yes` per il valore.
+1. Creare una cartella collegata nei progetti con campo modulo personalizzato: campo modulo personalizzato e il valore corrispondente che il progetto deve avere per creare la cartella collegata. Questa configurazione viene ignorata se viene lasciata vuota. Seleziona `CUSTOM FORMS: Create DAM Linked Folder` per il campo e l’input `Yes` per il valore.
 1. Fai clic su Abilita creazione automatica di cartelle collegate. Se torni alla scheda Sottoscrizioni evento, vedrai che ora è presente un evento di creazione.
 
 ![configurazione cartella collegata](/help/assets/assets/wf-linked-folder-config.png)
@@ -95,7 +95,7 @@ La mappatura dei metadati tra i documenti di Adobe Workfront e le risorse è def
 Per configurare le mappature, effettua le seguenti operazioni:
 
 1. Accedi a **Strumenti** > **Risorse** > **Schemi metadati**.
-1. Seleziona il modulo schema metadati da modificare e fai clic su **Modifica** oppure crea un nuovo schema di metadati da zero.
+1. Seleziona il modulo schema metadati da modificare e fai clic su **Modifica** oppure crea uno schema di metadati da zero.
 1. Seleziona il campo del modulo schema metadati da modificare e seleziona **Impostazioni** nel pannello di destra.
 1. In entrata [!DNL Workfront] Campo modulo personalizzato seleziona il nome del [!DNL Workfront] che desideri mappare sulla proprietà AEM selezionata. Le opzioni disponibili sono:
 
@@ -173,7 +173,7 @@ Per mantenere la cronologia delle versioni delle risorse in AEM, configura il co
 
 1. Seleziona opzione **[!UICONTROL Memorizza le risorse con lo stesso nome delle versioni della risorsa esistente]**. Se selezionata, questa opzione consente di memorizzare le risorse caricate con lo stesso nome e nella stessa posizione della versione della risorsa esistente. Se questa opzione non è selezionata, verrà creata una nuova risorsa con un nome diverso (ad esempio, `asset-name.pdf` e `asset-name-1.pdf`).
 
-1. Seleziona opzione **[!UICONTROL Aggiornare i metadati della risorsa durante la creazione di una nuova versione]**. Se selezionata, questa opzione aggiorna i metadati della risorsa ogni volta che ne viene creata una nuova versione. Se questa opzione è deselezionata, la risorsa manterrà i metadati che aveva prima di creare la nuova versione.
+1. Seleziona opzione **[!UICONTROL Aggiornare i metadati delle risorse durante la creazione di una versione]**. Se selezionata, questa opzione aggiorna i metadati della risorsa ogni volta che ne viene creata una nuova versione. Se questa opzione è deselezionata, la risorsa manterrà i metadati che aveva prima di creare la nuova versione.
 
 ![configurare il controllo delle versioni delle risorse](/help/assets/assets/wf-config-versioning.png)
 

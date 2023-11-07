@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -150,7 +150,7 @@ Considera uno scenario in cui desideri popolare il **Stato** in base a un valore
 
    ![Creare un nodo a discesa](assets/dropdown-node.png)
 
-1. Crea un pacchetto del nodo del contenuto e incorpora il file .jar in una posizione particolare (ad esempio /apps/myfolder/demo/install/). Distribuire lo stesso file sul server.
+1. Crea un pacchetto del nodo del contenuto e incorpora il file .jar in una posizione particolare (ad esempio, /apps/myfolder/demo/install/). Distribuire lo stesso file sul server.
 1. Crea un modulo adattivo e aggiungi due elenchi a discesa, Paese e Stato. L&#39;elenco Paese può includere i nomi dei paesi. L&#39;elenco Stato consente di popolare dinamicamente i nomi degli stati per il paese selezionato nel primo elenco.
 
    Aggiungere i nomi dei paesi da visualizzare nell&#39;elenco Paese. Nell&#39;elenco Stato aggiungere uno script per compilarlo in base al nome del paese nell&#39;elenco Paese.

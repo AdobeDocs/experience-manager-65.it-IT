@@ -1,20 +1,16 @@
 ---
 title: Supporto RDBMS nell’AEM 6.4
-seo-title: RDBMS Support in AEM 6.4
 description: Scopri il supporto per la persistenza del database relazionale in AEM 6.4 e le opzioni di configurazione disponibili.
-seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
-uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ Il supporto per la persistenza del database relazionale nell&#39;AEM viene imple
 
 È costituito da un’API Java basata sull’API Java Mongo. Viene inoltre fornita un’implementazione di un’API BlobStore. Per impostazione predefinita, i BLOB vengono memorizzati nel database.
 
-Per ulteriori informazioni sui dettagli dell’implementazione, consulta [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) e [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) documentazione.
+Per ulteriori informazioni sui dettagli dell’implementazione, vedi [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) e [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) documentazione.
 
 >[!NOTE]
 >
@@ -35,7 +31,7 @@ Per ulteriori informazioni sui dettagli dell’implementazione, consulta [RDBDoc
 
 ## Database supportati {#supported-databases}
 
-Per ulteriori informazioni sul livello di supporto del database relazionale in AEM, vedere [Pagina Requisiti tecnici](/help/sites-deploying/technical-requirements.md).
+Per ulteriori informazioni sul livello di supporto del database relazionale nell’AEM, vedi [Pagina Requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
 ## Passaggi di configurazione {#configuration-steps}
 
@@ -43,7 +39,7 @@ L’archivio viene creato configurando `DocumentNodeStoreService` Servizio OSGi.
 
 Affinché funzioni, è necessario configurare un’origine dati con l’AEM. Questa operazione viene eseguita tramite `org.apache.sling.datasource.DataSourceFactory.config` file. I driver JDBC per il rispettivo database devono essere forniti separatamente come bundle OSGi all’interno della configurazione locale.
 
-Per i passaggi sulla creazione di bundle OSGi per driver JDBC, consulta questa pagina [documentazione](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) sul sito web Apache Sling.
+Per informazioni sulla creazione di bundle OSGi per driver JDBC, consulta [documentazione](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) sul sito web Apache Sling.
 
 Una volta che i bundle sono in posizione, segui i passaggi seguenti per configurare AEM con persistenza RDB:
 

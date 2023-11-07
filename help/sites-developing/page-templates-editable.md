@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3219'
 ht-degree: 6%
 
 ---
@@ -56,7 +56,7 @@ La creazione di modelli modificabili viene eseguita principalmente con [console 
 
 Per informazioni su come utilizzare modelli modificabili in un progetto AEM vedi [Creazione di un progetto AEM con Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
-Quando viene creato un nuovo modello modificabile:
+Quando crei un modello modificabile:
 
 1. Creare un [cartella per i modelli](#template-folders). Questa cartella non è obbligatoria, ma è una best practice consigliata.
 1. Seleziona un [tipo di modello](#template-type). Questo tipo viene copiato per creare [definizione modello](#template-definitions).
@@ -416,7 +416,7 @@ Il [gruppi di dispositivi](/help/sites-developing/mobile.md#device-groups) utili
 * Sul tipo di modello modificabile
 * Sul modello modificabile
 
-Quando si crea un nuovo modello modificabile, il valore viene copiato dal tipo di modello al singolo modello. Se il valore non è impostato sul tipo, può essere impostato sul modello. Una volta creato un modello, non vi è alcuna ereditarietà dal tipo al modello.
+Quando si crea un modello modificabile, il valore viene copiato dal tipo di modello al singolo modello. Se il valore non è impostato sul tipo, può essere impostato sul modello. Una volta creato un modello, non vi è alcuna ereditarietà dal tipo al modello.
 
 >[!CAUTION]
 >

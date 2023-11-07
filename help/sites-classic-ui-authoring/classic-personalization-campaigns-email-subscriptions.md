@@ -1,18 +1,14 @@
 ---
 title: Gestione delle sottoscrizioni
-seo-title: Managing Subscriptions
 description: Gli utenti possono essere invitati ad iscriversi alle mailing list del fornitore di servizi e-mail con l’aiuto del componente Modulo utilizzato in una pagina web dell’AEM. Per preparare una pagina AEM con un modulo di iscrizione per l'iscrizione alle mailing list del servizio di posta elettronica, è necessario applicare la configurazione del servizio corrispondente alla pagina AEM visitata dal potenziale abbonato.
-seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
-uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione di lead ed elenchi).
->Si consiglia di sfruttare [Adobe Campaign e la sua integrazione con l’AEM](/help/sites-administering/campaign.md).
+>Si consiglia di utilizzare [Adobe Campaign e la sua integrazione con l’AEM](/help/sites-administering/campaign.md).
 
 Agli utenti può essere richiesto di iscriversi a **Email Service Provider&#39;s** mailing list con l&#39;aiuto del **Modulo** componente utilizzato in una pagina web dell’AEM. Per preparare una pagina AEM con un modulo di iscrizione per l&#39;iscrizione alle mailing list del servizio di posta elettronica, è necessario applicare la configurazione del servizio corrispondente alla pagina AEM visitata dal potenziale abbonato.
 
@@ -72,7 +68,7 @@ Per creare un modulo di iscrizione e configurarlo per gli abbonamenti alle maili
 Affinché l’abbonamento e l’annullamento dell’abbonamento al servizio di posta elettronica funzionino tramite il modulo di abbonamento nell’istanza di pubblicazione, è necessario seguire questi passaggi:
 
 1. Nell’istanza di authoring, passa a Gestione pacchetti.
-1. Crea un nuovo pacchetto. Imposta il filtro come `/etc/key`.
+1. Crea un pacchetto. Imposta il filtro come `/etc/key`.
 1. Genera e scarica il pacchetto.
 1. Passa a Gestione pacchetti nell’istanza di pubblicazione e carica questo pacchetto.
 1. Passa alla console OSGI Publish e riavvia il bundle denominato **Supporto Adobe per crittografia Granite**.

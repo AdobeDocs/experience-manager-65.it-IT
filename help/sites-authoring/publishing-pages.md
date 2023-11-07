@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine di contenuto
 description: Scopri come pubblicare le pagine di contenuto in Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 71%
+source-wordcount: '1660'
+ht-degree: 69%
 
 ---
 
@@ -60,13 +60,13 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
    * La pagina verrà pubblicata direttamente, se non sono presenti riferimenti da pubblicare.
    * Se la pagina include riferimenti da pubblicare, questi saranno elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
 
-      * Specifica le risorse, i tag ecc. da pubblicare insieme alla pagina, quindi seleziona **Pubblica** per completare il processo.
+      * Specifica le risorse, i tag e così via da pubblicare insieme alla pagina, quindi utilizza **Pubblica** per completare il processo.
 
       * Seleziona **Annulla** per annullare l’azione.
 
    ![chlimage_1](assets/chlimage_1.png)
 
-1. Se selezioni l’opzione **Pubblica**, la pagina verrà replicata nell’ambiente di pubblicazione. Nell’editor di pagine verrà visualizzato un banner informativo che conferma l’azione di pubblicazione.
+1. Se selezioni l’opzione **Pubblica**, la pagina verrà replicata nell’ambiente di pubblicazione. Nell’editor pagina viene visualizzato un banner informativo che conferma l’azione di pubblicazione.
 
    ![screen_shot_2018-03-21at152840](assets/screen_shot_2018-03-21at152840.png)
 
@@ -111,7 +111,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 #### Gestisci pubblicazione  {#manage-publication}
 
-**Gestisci pubblicazione** offre più opzioni rispetto alla pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili; consente inoltre di pubblicare la pagina in un secondo momento.
+**Gestisci pubblicazione** offre più opzioni rispetto alla Pubblicazione rapida e consente di includere pagine secondarie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili. Consente inoltre di pubblicare la pagina in un secondo momento.
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
@@ -182,7 +182,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    >[!NOTE]
    >
-   >Il passaggio **Flussi di lavoro** verrà visualizzato in base ai diritti di cui dispone l’utente. Consulta la [nota precedente su questa pagina](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) relativo ai privilegi di pubblicazione e [Gestione dell’accesso ai flussi di lavoro](/help/sites-administering/workflows-managing.md) e [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) per i dettagli.
+   >Il passaggio **Flussi di lavoro** verrà visualizzato in base ai diritti di cui dispone o meno l’utente. Consulta la [nota precedente su questa pagina](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) relative ai privilegi di pubblicazione e [Gestione dell’accesso ai flussi di lavoro](/help/sites-administering/workflows-managing.md) e [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) per i dettagli.
 
    Le risorse sono raggruppate in base ai flussi di lavoro attivati e a ciascuna opzione specificata per:
 

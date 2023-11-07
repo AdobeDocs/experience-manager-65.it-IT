@@ -2,10 +2,10 @@
 title: Percorso Architect di contenuti Adobe Experience Manager headless
 description: Introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e come modellare i contenuti per il tuo progetto.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 86%
+ht-degree: 79%
 
 ---
 
@@ -25,7 +25,7 @@ Questo documento ti aiuta a comprendere cos’è la distribuzione headless dei c
 
 ## Distribuzione contenuti full-stack {#full-stack}
 
-Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno sfruttati come punto centrale per gestire messaggi, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
+Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno utilizzati come punto centrale per gestire messaggistica, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
 
 ![CMS full-stack classico](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -50,7 +50,7 @@ Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a con
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-I servizi utilizzati, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA), ecc., prendono i contenuti dal CMS headless e forniscono il loro rendering. Si occupano di fornire le teste per i tuoi contenuti.
+I servizi che fruiscono di tali servizi, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA) e così via, accettano i contenuti dal CMS headless e forniscono il proprio rendering. Si occupano di fornire le teste per i tuoi contenuti.
 
 Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In questo modo si sposta anche la responsabilità di eseguire il rendering dei contenuti ai servizi che ne hanno effettivamente bisogno e che sono spesso più adatti a tale rendering.
 
@@ -66,7 +66,7 @@ Con AEM potrai, in qualità di architetto di contenuti, eseguire la modellazione
 
 Questo è più di un dettaglio di sviluppo, ma potrebbe interessarti anche solo per avere un quadro completo.
 
-Dopo aver creato i modelli di frammento di contenuto e dopo che gli autori li hanno utilizzati per generare il contenuto, le applicazioni headless dovranno accedere a tale contenuto.
+Dopo aver creato i modelli per frammenti di contenuto e averli utilizzati dagli autori per generare il contenuto, le applicazioni headless devono accedere a tale contenuto.
 
 Adobe Experience Manager (AEM) può accedere in modo selettivo ai frammenti di contenuto utilizzando l’API GraphQL dell’AEM, per restituire solo il contenuto necessario. Utilizzando l’API, uno sviluppatore può formulare query per la selezione di contenuti specifici. Questo processo di selezione si basa sui *tuoi* Modelli per frammenti di contenuto.
 

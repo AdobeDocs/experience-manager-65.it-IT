@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '405'
 ht-degree: 6%
 
 ---
@@ -23,10 +23,10 @@ Questa sezione offre una panoramica delle attività principali che verranno util
 Esso comprende:
 
 * [Guida introduttiva](#getting-started)\
-   Descrivi la sequenza di base degli eventi necessari per creare e pubblicare la prima pagina.
+  Descrivi la sequenza di base degli eventi necessari per creare e pubblicare la prima pagina.
 
 * [Ulteriori azioni](#further-actions)\
-   Segui le numerose altre azioni che puoi utilizzare durante l’authoring.
+  Segui le numerose altre azioni che puoi utilizzare durante l’authoring.
 
 ## Guida introduttiva {#getting-started}
 
@@ -38,7 +38,7 @@ Il contenuto del sito web si trova in una struttura ad albero. Per creare o modi
 
 ### Creazione di una nuova pagina {#creating-a-new-page}
 
-Prima di apportare modifiche, è necessario [crea una nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page).
+Prima di apportare modifiche, è necessario [creare una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
 ### Apertura di una pagina {#opening-a-page}
 
@@ -46,7 +46,7 @@ Per molte azioni, come la modifica, è necessario: [aprire una pagina](/help/sit
 
 ### Modifica di una pagina {#editing-a-page}
 
-Se la tua istanza dispone già di pagine esistenti o hai appena creato una nuova pagina, puoi [modificare una pagina](/help/sites-authoring/editing-content.md) da:
+Puoi specificare se la tua istanza contiene già pagine esistenti o se hai creato personalmente una nuova pagina [modificare una pagina](/help/sites-authoring/editing-content.md) da:
 
 * [Inserimento di un componente (paragrafo)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Modifica/Configura/Copia/Taglia/Elimina/Incolla](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente

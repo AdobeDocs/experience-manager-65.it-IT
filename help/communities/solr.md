@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1422'
 ht-degree: 2%
 
 ---
@@ -187,8 +187,8 @@ I file MLS standard sono memorizzati nel repository AEM.
 
       * Per Solr4: copia `solr-install-dir/example/solr/collection1/conf/`
       * Per Solr5: copia `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
-   1. Copia il scaricato **schema.xml** e **solrconfig.xml** a *new-config-dir* per sovrascrivere i file esistenti.
 
+   1. Copia il scaricato **schema.xml** e **solrconfig.xml** a *new-config-dir* per sovrascrivere i file esistenti.
 
 1. [Carica la nuova configurazione](#upload-a-configuration-to-zookeeper) a ZooKeeper.
 1. [Creare una raccolta](#create-a-collection) specifica dei parametri necessari, ad esempio il numero di condivisioni, il numero di repliche e il nome della configurazione.
@@ -244,15 +244,15 @@ Istruzioni di installazione - notare le poche differenze per Solr4 e Solr5:
 
       * Ad esempio `solr-install-dir/myconfig/`
       * Creare sottocartelle `stopwords/` e `lang/`
+
    1. Copia il contenuto della directory di configurazione Solr esistente in *new-config-dir*
 
       * Per Solr4: Copia `solr-install-dir/example/solr/collection1/conf/`
       * Per Solr5: Copia `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
+
    1. Copia il file estratto **schema.xml** e **solrconfig.xml** a *new-config-dir* per sovrascrivere i file esistenti.
    1. Per Solr5: Copia `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` a `new-config-dir/lang/`
    1. Copia il file estratto **stopwords/** cartella a *new-config-dir* che si traduce `new-config-dir/stopwords/*.txt`
-
-
 
 1. [Carica la nuova configurazione](#upload-a-configuration-to-zookeeper) a ZooKeeper
 1. Copia il nuovo **profili/** cartella...
@@ -296,19 +296,19 @@ dove:
 
    * -d solrhome
 
-      Directory di installazione Solr
+     Directory di installazione Solr
 
    * -c percorso raccolta
 
-      Percorso raccolta in solr
+     Percorso raccolta in solr
 
    * --aiuto
 
-      Opzioni della riga di comando Stampa
+     Opzioni della riga di comando Stampa
 
    * -v [4|5]
 
-      Imposta versione per solr
+     Imposta versione per solr
 
 * Esempio per Solr 4.10.4:
 

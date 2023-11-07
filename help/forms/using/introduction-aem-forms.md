@@ -11,7 +11,7 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 11%
@@ -29,7 +29,7 @@ Per informazioni sulle funzioni e sui miglioramenti più recenti di AEM Forms, c
 
 ## Informazioni su AEM Forms {#about-aem-forms}
 
-Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la creazione, la gestione, la pubblicazione e l’aggiornamento di moduli digitali complessi, garantendo al contempo l’integrazione con processi back-end, regole aziendali e dati.
+Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la creazione, la gestione, la pubblicazione e l’aggiornamento di moduli digitali complessi, garantendo al contempo l’integrazione con i processi back-end, le regole aziendali e i dati.
 
 AEM Forms combina le funzionalità di authoring, gestione e pubblicazione dei moduli con le funzionalità di gestione della corrispondenza, la sicurezza dei documenti e l’analisi integrata per creare esperienze end-to-end coinvolgenti. Progettato per funzionare su canali web e mobili, AEM Forms può essere integrato in modo efficiente nei processi aziendali, riducendo i processi cartacei e gli errori e migliorando l&#39;efficienza.
 
@@ -85,9 +85,9 @@ Tutti i tipi di modulo supportano le seguenti funzionalità:
 
 ## Raccolta dati offline {#offline-data-collection}
 
-Dopo l’invio dei dati del modulo, Adobe Experience Manager li collega ai sistemi esistenti, alle regole aziendali e alle persone necessarie.
+Una volta inviati i dati del modulo, Adobe Experience Manager li collega ai sistemi esistenti, alle regole aziendali e alle persone necessarie.
 
-AEM Forms fornisce Forms Workspace, un’app mobile che estende i processi aziendali digitali ai dispositivi mobili. Utilizzando Forms Workspace, puoi raccogliere e registrare dati anche offline. Forms Workspace sfrutta le funzionalità del dispositivo mobile e consente di acquisire foto, video e raccogliere dati quali marche temporali e altre informazioni. Alla successiva connessione a una rete, è possibile sincronizzare i dati raccolti.
+AEM Forms fornisce Forms Workspace, un’app mobile che estende i processi aziendali digitali ai dispositivi mobili. Utilizzando Forms Workspace, puoi raccogliere e registrare dati anche offline. Forms Workspace utilizza le funzionalità del dispositivo mobile e consente di acquisire foto, video e raccogliere dati quali marche temporali e altre informazioni. Alla successiva connessione a una rete, è possibile sincronizzare i dati raccolti.
 
 L&#39;acquisizione dei dati offline e la loro sincronizzazione alla successiva connessione è particolarmente utile per le persone sul campo. Migliora la produttività e riduce gli errori.
 

@@ -2,9 +2,9 @@
 title: Come si utilizza il servizio di esecuzione script in AEM Forms su JEE Workbench per generare dati XML?
 description: Utilizzo del servizio Execute Script in AEM Forms su JEE Workbench per generare dati XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Il risultato di questo script semplice è un nuovo documento XML con un nodo var
 
 **Utilizzo di un ciclo iterativo per aggiungere nodi al codice XML**
 
-I nodi possono essere aggiunti anche a una variabile XML esistente all’interno del processo. La variabile node contiene l&#39;oggetto XML appena creato.
+I nodi possono essere aggiunti anche a una variabile XML esistente all’interno del processo. La variabile, node, contiene l&#39;oggetto XML creato.
 
 ```xml
 Document document = patExecContext.getProcessDataValue("/process_data/node");

@@ -2,22 +2,22 @@
 title: Componenti compositi negli SPA
 description: Scopri come creare componenti compositi personalizzati, composti da altri componenti compatibili con l’editor di applicazioni a pagina singola (SPA) dell’AEM.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
 
 # Componenti compositi negli SPA {#composite-components-in-spas}
 
-I componenti compositi sfruttano la natura modulare dei componenti AEM combinando più componenti di base in un unico componente. Un caso d’uso comune di componente composito è il componente scheda, costituito da una combinazione dei componenti immagine e testo.
+I componenti compositi utilizzano la natura modulare dei componenti dell’AEM combinando più componenti di base in un unico componente. Un caso d’uso comune di componente composito è il componente scheda, costituito da una combinazione dei componenti immagine e testo.
 
 Quando i componenti compositi vengono implementati correttamente nel framework dell’Editor applicazioni a pagina singola (SPA) dell’AEM, gli autori dei contenuti possono trascinare e rilasciare tali componenti come farebbero con qualsiasi altro componente, ma hanno comunque la possibilità di modificare singolarmente ogni componente che costituisce il componente composito.
 
 Questo articolo illustra come aggiungere un componente composito all’applicazione a pagina singola per lavorare direttamente con l’editor SPA dell’AEM.
 
-## Caso d’uso  {#use-case}
+## Caso d’uso {#use-case}
 
 Questo articolo utilizza il componente tipico della scheda come caso d’uso di esempio. Le schede sono un elemento dell’interfaccia utente comune per molte esperienze digitali e sono in genere costituite da un’immagine e dal testo o dalla didascalia associati. L’autore desidera poter trascinare e rilasciare l’intera scheda, ma può modificare singolarmente l’immagine della scheda e personalizzare il testo associato.
 

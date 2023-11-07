@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 88%
+source-wordcount: '1304'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ In questo modo si elimina la necessità di sviluppare un componente personalizza
 
 ## Caso d’uso  {#use-case}
 
-Gli autori di modelli non solo hanno bisogno della possibilità di configurare il funzionamento dei componenti per gli autori di contenuto, ma anche una serie di varianti visive alternative di un componente.
+Gli autori di modelli devono poter configurare non solo il funzionamento dei componenti per gli autori di contenuto, ma anche diverse varianti visive alternative di un componente.
 
 Allo stesso modo, gli autori dei contenuti non solo devono poter strutturare e organizzare i contenuti, ma anche selezionare come presentarli visivamente.
 
@@ -111,7 +111,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 >[!CAUTION]
 >
->Le classi CSS (nonché l’eventuale codice JavaScript) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [Librerie client](/help/sites-developing/clientlibs.md) al lavoro.
+>Le classi CSS (e l’eventuale JavaScript necessario) configurate come proprietà di stile di un criterio di un componente devono essere distribuite come [Librerie client](/help/sites-developing/clientlibs.md) al lavoro.
 
 ## Configurazione {#setup}
 
@@ -160,4 +160,4 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 
 Questa capacità di definire i nomi degli stili è utile per i componenti molto generici, come Contenitore di layout, o il componente Frammento di contenuto, per attribuire loro un significato aggiuntivo.
 
-Ad esempio, consente di attribuire a un Contenitore di layout semantiche come `<main>`, `<aside>`, `<nav>` e così via.
+Ad esempio, consente di attribuire a un Contenitore di layout semantiche come `<main>`, `<aside>`, `<nav>`e così via.

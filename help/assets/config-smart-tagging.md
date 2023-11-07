@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2244'
 ht-degree: 31%
@@ -14,7 +14,7 @@ ht-degree: 31%
 
 # Prepara [!DNL Assets] per assegnazione tag avanzati {#configure-asset-tagging-using-the-smart-content-service}
 
-Prima di poter iniziare a assegnare tag alle risorse tramite Smart Content Services, integra [!DNL Experience Manager Assets] con la console Adobe Developer per sfruttare il servizio intelligente di [!DNL Adobe Sensei]. Una volta configurato, il servizio viene addestrato utilizzando alcune immagini e un tag.
+Prima di poter iniziare a assegnare tag alle risorse tramite Smart Content Services, integra [!DNL Experience Manager Assets] con la console Adobe Developer per utilizzare il servizio intelligente di [!DNL Adobe Sensei]. Una volta configurato, il servizio viene addestrato utilizzando alcune immagini e un tag.
 
 >[!NOTE]
 >

@@ -1,19 +1,15 @@
 ---
 title: Gestione degli utenti
-seo-title: Managing Users
-description: Utilizza l’API User Management per creare applicazioni client in grado di gestire ruoli, autorizzazioni e entità principali (che possono essere utenti o gruppi), nonché autenticare gli utenti.
-seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
-uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
+description: Utilizza l’API User Management per creare applicazioni client in grado di gestire ruoli, autorizzazioni e entità principali (che possono essere utenti o gruppi) e autenticare gli utenti.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6226'
+source-wordcount: '6218'
 ht-degree: 0%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 0%
 
 **Informazioni sulla gestione degli utenti**
 
-È possibile utilizzare l’API User Management per creare applicazioni client in grado di gestire ruoli, autorizzazioni e entità principali (che possono essere utenti o gruppi), nonché autenticare gli utenti. L’API User Management è costituita dalle seguenti API di AEM Forms:
+È possibile utilizzare l’API User Management per creare applicazioni client in grado di gestire ruoli, autorizzazioni e entità principali (utenti o gruppi) e autenticare gli utenti. L’API User Management è costituita dalle seguenti API di AEM Forms:
 
 * API del servizio Directory Manager
 * API del servizio Authentication Manager
@@ -178,9 +174,9 @@ Aggiungere utenti utilizzando l&#39;API del servizio Directory Manager (Java):
    * Impostare il nome del dominio richiamando `UserImpl` dell&#39;oggetto `setDomainName` metodo. Passa un valore stringa che specifica il nome di dominio.
    * Impostare il tipo di entità richiamando `UserImpl` dell&#39;oggetto `setPrincipalType` metodo. Passa un valore stringa che specifica il tipo di utente. Ad esempio, puoi specificare `USER`.
    * Impostare il valore dell&#39;identificatore utente richiamando `UserImpl` dell&#39;oggetto `setUserid` metodo. Passa un valore stringa che specifica il valore dell&#39;identificatore utente. Ad esempio, puoi specificare `wblue`.
-   * Impostare il nome canonico richiamando `UserImpl` dell&#39;oggetto `setCanonicalName` metodo. Passa un valore stringa che specifica il nome canonico dell’utente. Ad esempio, puoi specificare `wblue`.
-   * Imposta il nome specificato richiamando `UserImpl` dell&#39;oggetto `setGivenName` metodo. Passa un valore stringa che specifica il nome dell’utente. Ad esempio, puoi specificare `Wendy`.
-   * Impostare il cognome richiamando `UserImpl` dell&#39;oggetto `setFamilyName` metodo. Passa un valore stringa che specifica il cognome dell’utente. Ad esempio, puoi specificare `Blue`.
+   * Impostare il nome canonico richiamando `UserImpl` dell&#39;oggetto `setCanonicalName` metodo. Passa un valore stringa che specifica il nome canonico dell&#39;utente. Ad esempio, puoi specificare `wblue`.
+   * Imposta il nome specificato richiamando `UserImpl` dell&#39;oggetto `setGivenName` metodo. Passa un valore stringa che specifica il nome dell&#39;utente. Ad esempio, puoi specificare `Wendy`.
+   * Impostare il cognome richiamando `UserImpl` dell&#39;oggetto `setFamilyName` metodo. Passa un valore stringa che specifica il cognome dell&#39;utente. Ad esempio, puoi specificare `Blue`.
 
    >[!NOTE]
    >
@@ -553,9 +549,9 @@ Per gestire in modo programmatico utenti, gruppi e domini utilizzando (Java), es
 
    Utilizzo del risultato `User` o `Group` oggetto (entrambi ereditati dal `Principal` ), recupera le informazioni necessarie nei flussi di lavoro. Ad esempio, la combinazione dei valori del nome di dominio e del nome canonico identifica in modo univoco un’entità principale. Queste vengono recuperate richiamando `Principal` dell&#39;oggetto `getDomainName` e `getCanonicalName` rispettivamente.
 
-   Per eliminare un utente locale, richiamare `DirectoryManagerServiceClient` dell&#39;oggetto `deleteLocalUser` e passa l’identificatore dell’utente.
+   Per eliminare un utente locale, richiamare `DirectoryManagerServiceClient` dell&#39;oggetto `deleteLocalUser` e passa l&#39;identificatore dell&#39;utente.
 
-   Per eliminare un gruppo locale, richiamare `DirectoryManagerServiceClient` dell&#39;oggetto `deleteLocalGroup` e passa l’identificatore del gruppo.
+   Per eliminare un gruppo locale, richiamare `DirectoryManagerServiceClient` dell&#39;oggetto `deleteLocalGroup` e passa l&#39;identificatore del gruppo.
 
 **Consulta anche**
 
@@ -590,9 +586,9 @@ Per gestire in modo programmatico utenti, gruppi e domini tramite l&#39;API del 
 
    Utilizzo del risultato `User` o `Group` oggetto (entrambi ereditati dal `Principal` ), recupera le informazioni necessarie nei flussi di lavoro. Ad esempio, la combinazione dei valori del nome di dominio e del nome canonico identifica in modo univoco un’entità principale. Queste vengono recuperate richiamando `Principal` dell&#39;oggetto `domainName` e `canonicalName` rispettivamente.
 
-   Per eliminare un utente locale, richiamare `DirectoryManagerServiceService` dell&#39;oggetto `deleteLocalUser` e passa l’identificatore dell’utente.
+   Per eliminare un utente locale, richiamare `DirectoryManagerServiceService` dell&#39;oggetto `deleteLocalUser` e passa l&#39;identificatore dell&#39;utente.
 
-   Per eliminare un gruppo locale, richiamare `DirectoryManagerServiceService` dell&#39;oggetto `deleteLocalGroup` e passa l’identificatore del gruppo.
+   Per eliminare un gruppo locale, richiamare `DirectoryManagerServiceService` dell&#39;oggetto `deleteLocalGroup` e passa l&#39;identificatore del gruppo.
 
 **Consulta anche**
 
@@ -729,7 +725,7 @@ Si consideri, ad esempio, uno scenario in cui un utente immette un nome utente e
 
 Se l&#39;autenticazione ha esito positivo, l&#39;applicazione accede a un database aziendale protetto. In caso contrario, viene inviato all’utente un messaggio che indica che l’utente non è un utente autorizzato.
 
-Il diagramma seguente mostra il flusso logico dell’applicazione.
+Il diagramma seguente mostra il flusso logico dell&#39;applicazione.
 
 ![au_au_umauth_process](assets/au_au_umauth_process.png)
 
@@ -813,8 +809,8 @@ Autentica un utente tramite Authentication Manager Service API (Java):
 
    Richiama `AuthenticationManagerServiceClient` dell&#39;oggetto `authenticate` e trasmettere i seguenti valori:
 
-   * A `java.lang.String` oggetto che contiene il nome dell’utente.
-   * Matrice di byte (a `byte[]` oggetto ) contenente la password dell&#39;utente. È possibile ottenere `byte[]` oggetto richiamando il `java.lang.String` dell&#39;oggetto `getBytes` metodo.
+   * A `java.lang.String` oggetto che contiene il nome dell&#39;utente.
+   * Matrice di byte (a `byte[]` object) contenente la password dell&#39;utente. È possibile ottenere `byte[]` oggetto richiamando il `java.lang.String` dell&#39;oggetto `getBytes` metodo.
 
    Il metodo authenticate restituisce un `AuthResult` oggetto, che contiene informazioni sull&#39;utente autenticato.
 
@@ -841,8 +837,8 @@ Autentica un utente tramite l’API del servizio Authentication Manager (servizi
 
    Richiama `AuthenticationManagerServiceClient` dell&#39;oggetto `authenticate` e trasmettere i seguenti valori:
 
-   * A `string` oggetto che contiene il nome dell’utente
-   * Matrice di byte (a `byte[]` oggetto ) contenente la password dell&#39;utente. È possibile ottenere `byte[]` oggetto convertendo un `string` oggetto contenente la password per un `byte[]` utilizzando la logica illustrata nell&#39;esempio seguente.
+   * A `string` oggetto che contiene il nome dell&#39;utente
+   * Matrice di byte (a `byte[]` object) contenente la password dell&#39;utente. È possibile ottenere `byte[]` oggetto convertendo un `string` oggetto contenente la password per un `byte[]` utilizzando la logica illustrata nell&#39;esempio seguente.
    * Il valore restituito sarà un `AuthResult` , che può essere utilizzato per recuperare informazioni sull&#39;utente. Nell’esempio seguente, le informazioni dell’utente vengono recuperate ottenendo prima `AuthResult` dell&#39;oggetto `authenticatedUser` e ottenendo in seguito il risultato `User` dell&#39;oggetto `canonicalName` e `domainName` campi.
 
 **Consulta anche**
@@ -853,7 +849,7 @@ Autentica un utente tramite l’API del servizio Authentication Manager (servizi
 
 ## Sincronizzazione degli utenti a livello di programmazione {#programmatically-synchronizing-users}
 
-Puoi sincronizzare gli utenti a livello di programmazione utilizzando l’API User Management. Quando sincronizzi gli utenti, aggiorni AEM Forms con i dati utente che si trovano nell’archivio utenti. Ad esempio, si supponga di aggiungere nuovi utenti all&#39;archivio utenti. Dopo aver eseguito un&#39;operazione di sincronizzazione, i nuovi utenti diventano utenti di moduli AEM. Inoltre, gli utenti che non si trovano più nel tuo archivio utenti vengono rimossi da AEM Forms.
+Puoi sincronizzare gli utenti a livello di programmazione utilizzando l’API User Management. Quando sincronizzi gli utenti, aggiorni AEM Forms con i dati utente presenti nell’archivio utenti. Ad esempio, si supponga di aggiungere nuovi utenti all&#39;archivio utenti. Dopo aver eseguito un&#39;operazione di sincronizzazione, i nuovi utenti diventano utenti di moduli AEM. Inoltre, gli utenti che non si trovano più nel tuo archivio utenti vengono rimossi da AEM Forms.
 
 Il diagramma seguente mostra la sincronizzazione di AEM Forms con un archivio utenti.
 
@@ -912,7 +908,7 @@ Prima di eseguire un&#39;operazione di sincronizzazione utilizzando l&#39;API Us
 
 **Richiama l’operazione di sincronizzazione**
 
-Dopo aver specificato uno o più domini enterprise, è possibile eseguire l&#39;operazione di sincronizzazione. Il tempo necessario per eseguire questa operazione dipende dal numero di record utente che si trovano nel repository utente.
+Dopo aver specificato uno o più domini enterprise, è possibile eseguire l&#39;operazione di sincronizzazione. Il tempo necessario per eseguire questa operazione dipende dal numero di record utente presenti nel repository utente.
 
 **Determinare se l&#39;operazione di sincronizzazione è stata completata**
 

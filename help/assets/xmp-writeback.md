@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -59,7 +59,7 @@ Per la funzione Writeback di XMP per la propagazione dei metadati alle miniature
    ![step_properties](assets/step_properties.png)
 
 1. Salva le modifiche.
-1. Per rigenerare le rappresentazioni piramidali di TIFF [!DNL Dynamic Media] con i nuovi attributi, aggiungi le **[!UICONTROL Risorse di immagine del processo di Dynamic Media]** passa a [!UICONTROL Writeback di metadati DAM] flusso di lavoro.
+1. Per rigenerare le rappresentazioni piramidali di TIFF [!DNL Dynamic Media] con i nuovi attributi, aggiungi le **[!UICONTROL Risorse di immagine del processo di Dynamic Medie]** passa a [!UICONTROL Writeback di metadati DAM] flusso di lavoro.
 
    Le rappresentazioni PTIFF vengono create e memorizzate solo localmente in un’implementazione Dynamic Media Hybrid.
 
@@ -77,7 +77,7 @@ Le modifiche ai metadati vengono propagate alle rappresentazioni delle miniature
 
 [!DNL Experience Manager Assets] supporta sia il filtro elenco Bloccati che elenco Consentiti di proprietà/nodi per i metadati XMP letti dai file binari delle risorse e memorizzati in JCR al momento dell’acquisizione delle risorse.
 
-L’utilizzo di un elenco Bloccati per filtrare consente di importare tutte le proprietà dei metadati XMP, ad eccezione delle proprietà specificate per l’esclusione. Tuttavia, per i tipi di risorse come i file INDD che hanno grandi quantità di metadati XMP (ad esempio 1000 nodi con 10.000 proprietà), i nomi dei nodi da filtrare non sono sempre noti in anticipo. Se filtrando con un elenco Bloccati si consente di importare un numero elevato di risorse con numerosi metadati XMP, il [!DNL Experience Manager] La distribuzione può incontrare problemi di stabilità, ad esempio code di osservazione intasate.
+L’utilizzo di un elenco Bloccati per filtrare consente di importare tutte le proprietà dei metadati XMP, ad eccezione delle proprietà specificate per l’esclusione. Tuttavia, per i tipi di risorse come i file INDD che presentano grandi quantità di metadati XMP (ad esempio, 1000 nodi con 10.000 proprietà), i nomi dei nodi da filtrare non sono sempre noti in anticipo. Se filtrando con un elenco Bloccati si consente di importare un numero elevato di risorse con numerosi metadati XMP, il [!DNL Experience Manager] La distribuzione può incontrare problemi di stabilità, ad esempio code di osservazione intasate.
 
 Il filtraggio dei metadati XMP tramite elenco Consentiti risolve questo problema consentendo di definire le proprietà XMP da importare. In questo modo, qualsiasi altra o sconosciuta proprietà XMP vengono ignorate. Per compatibilità con le versioni precedenti, puoi aggiungere alcune di queste proprietà al filtro che utilizza un elenco Bloccati.
 

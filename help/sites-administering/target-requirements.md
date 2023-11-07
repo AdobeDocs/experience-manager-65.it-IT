@@ -1,19 +1,15 @@
 ---
 title: Prerequisiti per l’integrazione con Adobe Target
-seo-title: Prerequisites for Integrating with Adobe Target
 description: Scopri i prerequisiti per l’integrazione con Adobe Target.
-seo-description: Find out about the prerequisites for integrating with Adobe Target.
-uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '549'
 ht-degree: 7%
 
 ---
@@ -47,13 +43,13 @@ Test e Target [agente di replica](/help/sites-deploying/replication.md) deve ess
    >
    >Quando configuri l’agente di replica di Test and Target, nel **Trasporto** , l&#39;URI è impostato per impostazione predefinita su **tnt:///**. Non sostituire questo URI con **https://admin.testandtarget.omniture.com**.
    >
-   >Tieni presente che se tenti di verificare la connessione con **tnt:///**, genererà un errore. Questo comportamento è previsto perché questo URI è solo per uso interno e non deve essere utilizzato con **Verifica connessione**.
+   >Se tenti di verificare la connessione con **tnt:///**, genera un errore. Questo comportamento è previsto perché questo URI è solo per uso interno; non utilizzare con **Verifica connessione**.
 
 ## Protezione del nodo Impostazioni attività {#securing-the-activity-settings-node}
 
 È necessario proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 
-Il **cq:ActivitySettings** è disponibile in CRXDE lite sotto `/content/campaigns/*nameofbrand*`* *nel nodo attività jcr:content;* *per esempio `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Questo nodo viene creato solo dopo aver eseguito il targeting di un componente.
+Il **cq:ActivitySettings** è disponibile in CRXDE lite sotto `/content/campaigns/*nameofbrand*`* *nel nodo attività jcr:content;* *ad esempio, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Questo nodo viene creato solo dopo aver eseguito il targeting di un componente.
 
 Il **cq:ActivitySettings** sotto il jcr:content dell’attività è protetto dai seguenti ACL:
 

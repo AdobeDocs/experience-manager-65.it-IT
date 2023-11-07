@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1765'
 ht-degree: 3%
 
 ---
@@ -105,7 +105,7 @@ Le sezioni seguenti descrivono entrambi gli scenari:
 
 È possibile installare AEM sui server dell&#39;ambiente aziendale. Le istanze di installazione tipiche includono: ambienti di sviluppo, test e pubblicazione. Consulta [Guida introduttiva](/help/sites-deploying/deploy.md#getting%20started) per informazioni di base su come ottenere il software AEM per installarlo localmente.
 
-Per ulteriori informazioni sulle tipiche implementazioni on-premise, consulta [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md).
+Per ulteriori informazioni sulle tipiche implementazioni locali, consulta [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md).
 
 ### Managed Services con Cloud Manager {#managed-services-using-cloud-manager}
 
@@ -121,7 +121,7 @@ Con AEM Managed Services i clienti possono realizzare i seguenti vantaggi:
 
 **Massima sicurezza:** Garantisce la sicurezza fisica, di rete e dei dati di livello enterprise, ospitando le applicazioni dei clienti in una struttura ad accesso limitato, dietro i sistemi firewall o all&#39;interno di un cloud privato virtuale. Include macchine virtuali a tenant singolo con crittografia di storage dei dati affidabile, antivirali e isolamento dei dati.
 
-**Cloud Manager**: Cloud Manager fa parte dell’offerta Managed Services di Adobe Experience Manager ed è un portale self-service che consente alle organizzazioni di gestire autonomamente Adobe Experience Manager nel cloud. Include una pipeline CI/CD (Continuous Integration and Continuous Delivery) all’avanguardia che consente ai team IT e ai partner di implementazione di velocizzare la distribuzione di personalizzazioni o aggiornamenti senza compromettere le prestazioni o la sicurezza. Cloud Manager è disponibile solo per gli Adobi di clienti Managed Service.
+**Cloud Manager**: Cloud Manager, parte dell’offerta Adobe Experience Manager Managed Services è un portale self-service che consente alle organizzazioni di gestire autonomamente Adobe Experience Manager nel cloud. Include una pipeline CI/CD (Continuous Integration and Continuous Delivery) all’avanguardia che consente ai team IT e ai partner di implementazione di velocizzare la distribuzione di personalizzazioni o aggiornamenti senza compromettere le prestazioni o la sicurezza. Cloud Manager è disponibile solo per gli Adobi di clienti Managed Service.
 
 Per ulteriori informazioni su Cloud Manager e sulle relative risorse, consulta [**Guida utente di Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it).
 
@@ -137,7 +137,7 @@ Sul lato client, AEM funziona con tutti i browser moderni (**Microsoft® Edge**,
 
 ### Recupero del software {#getting-the-software}
 
-I clienti con un contratto di manutenzione e supporto valido devono aver ricevuto una notifica e-mail con un codice ed essere in grado di scaricare l’AEM dal [**Sito Web Adobe Licensing**](https://licensing.adobe.com/). I partner commerciali possono richiedere l’accesso al download da [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+I clienti con un contratto di manutenzione e supporto valido devono aver ricevuto una notifica e-mail con un codice ed essere in grado di scaricare l’AEM da [**Sito Web Adobe Licensing**](https://licensing.adobe.com/). I partner commerciali possono richiedere l’accesso al download da [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 Il pacchetto software AEM è disponibile in due forme:
 
@@ -155,7 +155,7 @@ Nella sezione seguente vengono descritte le **installazione autonoma**. Per ulte
 
    Percorso di installazione di Windows: **`C:\Program Files\aem`**
 
-   Allo stesso modo, è comune installare istanze di esempio in una cartella direttamente sul desktop. In ogni caso, questa posizione viene genericamente indicata come:
+   Allo stesso modo, è comune installare istanze di esempio in una cartella direttamente sul desktop. In ogni caso, Adobe si riferisce genericamente a questa posizione come:
 
    `<aem-install>`
 

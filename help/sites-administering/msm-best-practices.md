@@ -4,10 +4,10 @@ description: Trova le best practice compilate dai team tecnici e di consulenza A
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 42%
+source-wordcount: '1609'
+ht-degree: 40%
 
 ---
 
@@ -52,11 +52,11 @@ I vantaggi aggiuntivi dell’utilizzo di una configurazione blueprint sono i seg
 
 Nel caso in cui non venga fatto riferimento a una configurazione blueprint, i rollout possono essere avviati solo dalle Live Copy stesse, essenzialmente richiamando il contenuto dal sorgente.
 
-Quando crei un nuovo sito con Live Copy, è vantaggioso creare configurazioni blueprint per garantire la disponibilità dell’intero set di funzioni MSM.
+Quando crei un sito con Live Copy, è vantaggioso creare configurazioni blueprint per garantire la disponibilità dell’intero set di funzioni MSM.
 
 >[!NOTE]
 >
->Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione delle Live Copy.
+>Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione della Live Copy.
 
 ## Sincronizzazione dei componenti e dei contenitori {#components-and-container-synchronization}
 
@@ -87,7 +87,7 @@ Tieni presente che l’AEM ha due approcci principali per la creazione di Live C
 
 Di seguito sono riportate alcune considerazioni da tenere presenti durante la creazione di un sito:
 
-* Per creare un nuovo sito, è necessario una [configurazione blueprint](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* Per creare un sito, è necessario [configurazione blueprint](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Per consentire la selezione dei percorsi linguistici da creare in un nuovo sito, le lingue root corrispondenti devono esistere nella blueprint (sorgente).
 * Una volta al [il nuovo sito è stato creato come live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (utilizzando **Crea**, quindi **Sito**), i primi due livelli di questa live copy sono *superficiale*. Gli elementi figli della pagina non appartengono alla relazione live, ma se viene trovata una relazione live corrispondente al trigger, verrà comunque generato un rollout.
 
@@ -103,14 +103,14 @@ MSM può contribuire alla creazione di siti Web multilingue in due modi:
 
 * Durante la creazione di lingue master.
 
-   * Sebbene MSM stesso **non fornisca la traduzione del contenuto**, può essere integrato con connettori di traduzione di terze parti che lo fanno. Nota che:
+   * Sebbene MSM stesso **non fornisca la traduzione del contenuto**, può essere integrato con connettori di traduzione di terze parti che lo fanno. Tieni presente che:
 
       * MSM consente di annullare l’ereditarietà a livello di pagina e/o di componente. Questo aiuta a evitare la sovrascrittura dei contenuti tradotti (da una Live Copy, con contenuti non ancora tradotti da una blueprint) al prossimo rollout.
       * Alcuni connettori di traduzione di terze parti automatizzano questa gestione delle ereditarietà MSM.
 
-        Per ulteriori informazioni, rivolgiti al provider di servizi di traduzione.
+        Per ulteriori informazioni, rivolgiti al fornitore di servizi di traduzione.
 
-      * Un approccio alternativo per la creazione e la traduzione di lingue master consiste nell’utilizzare copie in lingua insieme all&#39;AEM Translation Integration Framework preconfigurato.
+      * Un approccio alternativo per la creazione e la traduzione di lingue master consiste nell’utilizzare copie in lingua insieme al Translation Integration Framework di AEM preconfigurato.
 
 * Durante il rollout del contenuto dai master lingua.
 

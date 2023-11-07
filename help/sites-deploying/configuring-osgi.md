@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 0%
@@ -233,7 +233,7 @@ Per aggiungere effettivamente la nuova configurazione all’archivio:
    * Tipo: `sling:OsgiConfig`
    * Nome: identità persistente (PID);
 
-     ad esempio per l’utilizzo di Gestione versioni WCM AEM `com.day.cq.wcm.core.impl.VersionManagerImpl`
+     ad esempio, per l’utilizzo di Gestione versioni WCM AEM `com.day.cq.wcm.core.impl.VersionManagerImpl`
 
    >[!NOTE]
    >

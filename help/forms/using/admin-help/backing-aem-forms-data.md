@@ -1,19 +1,19 @@
 ---
 title: Backup dei dati di Adobe Experience Manager Forms
-description: Questo documento descrive i passaggi necessari per completare un backup online o a caldo del database dei moduli di Adobe Experience Manager (AEM), delle directory GDS e Content Storage Root.
+description: Questo documento descrive i passaggi necessari per completare un backup online del database dei moduli di Adobe Experience Manager (AEM), delle directory GDS e della directory principale di archiviazione dei contenuti.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
 
-# Backup dei dati di Adobe Experience Manager (AEM) Forms {#backing-up-the-aem-forms-data}
+# Backup dei dati Adobe Experience Manager (AEM) Forms {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
 
@@ -137,7 +137,7 @@ Puoi utilizzare l’interfaccia della riga di comando per escludere AEM Forms da
 
    >[!NOTE]
    >
-   >È necessario impostare la directory JAVA_HOME come descritto nel capitolo appropriato per il server applicazioni in [Preparazione all’installazione di AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Impostare la directory JAVA_HOME come descritto nel capitolo appropriato per il server applicazioni in [Preparazione all’installazione di AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Esegui il comando seguente su una singola riga:
 

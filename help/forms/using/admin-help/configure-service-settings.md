@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10699'
+source-wordcount: '10694'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Il valore predefinito di questa impostazione è `/LiveCycleES/ConnectorforIBMFil
 
 ## Converti impostazioni servizio PDF {#convert-pdf-service-settings}
 
-Il servizio Convert PDF ( `ConvertPdfService`) converte i documenti PDF in PostScript e in una serie di formati immagine (JPEG, JPEG 2000, PNG e TIFF). La conversione di un documento PDF in PostScript è utile per la stampa automatica basata su server su qualsiasi stampante PostScript. La conversione di un documento PDF in un file TIFF multipagina è pratica quando si archiviano documenti in sistemi di gestione dei contenuti che non supportano i documenti PDF.
+Il servizio Convert PDF ( `ConvertPdfService`) converte i documenti PDF in PostScript e in diversi formati immagine (JPEG, JPEG 2000, PNG e TIFF). La conversione di un documento PDF in PostScript è utile per la stampa automatica basata su server su qualsiasi stampante PostScript. La conversione di un documento PDF in un file TIFF multipagina è pratica quando si archiviano documenti in sistemi di gestione dei contenuti che non supportano i documenti PDF.
 
 Per il servizio Convert PDF sono disponibili le impostazioni seguenti.
 
@@ -243,7 +243,7 @@ Per il servizio FTP sono disponibili le seguenti impostazioni.
 
 ## Genera impostazioni servizio PDF {#generate-pdf-service-settings}
 
-Il servizio Generate PDF ( `GeneratePDFService`) converte i file in vari formati nativi in documenti PDF e converte i documenti PDF in diversi formati.
+Il servizio Generate PDF ( `GeneratePDFService`) converte i file in vari formati nativi in documenti PDF e converte i documenti PDF in diversi formati di file.
 
 Per il servizio Generate PDF sono disponibili le impostazioni seguenti.
 
@@ -326,7 +326,7 @@ I valori predefiniti per il servizio Utilità guida supportano la maggior parte 
 
 ### Utilizzo delle guide in un cluster di server {#using-guides-in-a-server-cluster}
 
-Il rendering di una guida in un cluster di server che non utilizza sessioni permanenti non riesce con un’eccezione NullPointerException. Una richiesta di Guide sfrutta URL sicuri che, per impostazione predefinita, sono univoci per il server su cui vengono generati. In un cluster che utilizza sessioni permanenti, dopo che una richiesta raggiunge un nodo nel cluster, tutte le richieste successive per tale sessione o utente vengono indirizzate esclusivamente a tale server e tutto va bene. In un cluster che non utilizza sessioni permanenti, le richieste successive possono raggiungere qualsiasi server del cluster. Se il server visitato dalle richieste non è il server originale, non viene risolto l’URL protetto.
+Il rendering di una guida in un cluster di server che non utilizza sessioni permanenti non riesce con un’eccezione NullPointerException. Una richiesta di Guide utilizza URL protetti che, per impostazione predefinita, sono univoci per il server su cui vengono generati. In un cluster che utilizza sessioni permanenti, dopo che una richiesta raggiunge un nodo nel cluster, tutte le richieste successive per tale sessione o utente vengono indirizzate esclusivamente a tale server e tutto va bene. In un cluster che non utilizza sessioni permanenti, le richieste successive possono raggiungere qualsiasi server del cluster. Se il server visitato dalle richieste non è il server originale, non viene risolto l’URL protetto.
 
 Se si utilizzano Guide in un cluster di server che non utilizza sessioni permanenti, impostare il valore macKeySeed per il servizio GuidesUtility, quindi arrestare e avviare il cluster.
 
@@ -826,7 +826,7 @@ Vengono installati i profili di sicurezza predefiniti, che possono essere config
    * **SUPERVISOR_PERM:** Per visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
    * **START_STOP_PERM:** Per avviare e arrestare un servizio
    * **ADD_REMOVE_ENDPOINTS_PERM:** Per aggiungere, rimuovere e modificare endpoint per un servizio
-   * **CREATE_VERSION_PERM:** Per creare una nuova versione del servizio
+   * **CREATE_VERSION_PERM:** Per creare una versione del servizio
    * **DELETE_VERSION_PERM:** Per eliminare una versione del servizio
    * **MODIFY_VERSION_PERM:** Per modificare una versione del servizio
    * **READ_PERM:** Per visualizzare il servizio

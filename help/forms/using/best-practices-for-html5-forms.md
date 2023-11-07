@@ -12,9 +12,9 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Anche se le raccomandazioni discusse in questo articolo sono mirate ai moduli HT
 
 ## I nodi sono la valuta dei moduli HTML5, spendili con saggezza {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
-In genere, un modulo XFA ha più elementi. Ad esempio, tabella, campo di testo e immagini. Ogni elemento ha una serie di proprietà per controllarne il comportamento e l&#39;aspetto. Quando si esegue il rendering di un modulo XFA in formato HTML5, tutti gli elementi XFA e le proprietà corrispondenti vengono convertiti in nodi DOM Model o HTML. Questi nodi aumentano le dimensioni e la complessità di un DOM. Rendere il rendering del modulo HTML5 più lento.
+In genere, un modulo XFA ha più elementi. Ad esempio, tabella, campo di testo e immagini. Ogni elemento ha diverse proprietà per controllarne il comportamento e l&#39;aspetto. Quando si esegue il rendering di un modulo XFA in formato HTML5, tutti gli elementi XFA e le proprietà corrispondenti vengono convertiti in nodi DOM Model o HTML. Questi nodi aumentano le dimensioni e la complessità di un DOM. Rendere il rendering del modulo HTML5 più lento.
 
 Per i browser è più semplice eseguire il rendering di un DOM più semplice. Pertanto, puoi eseguire le seguenti ottimizzazioni su un modulo XFA per ridurre il numero di nodi. Pertanto, genera una struttura DOM snella:
 
@@ -83,4 +83,4 @@ I moduli di Adobe Experience Manager (AEM) possono aiutarti a trasformare transa
 ## Scheda di riferimento rapido {#quick-reference-card}
 
 È possibile stampare la seguente scheda (fare clic sulla scheda per scaricare una versione ad alta risoluzione) e tenerla sulla scrivania per un riferimento rapido:
-[ ![Scheda di riferimento rapido sulle best practice Forms di HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![Scheda di riferimento rapido sulle best practice Forms di HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

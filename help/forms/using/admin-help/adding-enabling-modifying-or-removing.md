@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Gli endpoint possono essere aggiunti solo ai servizi. Un endpoint non può esist
 
 ## Attivare o disattivare un endpoint {#enable-or-disable-an-endpoint}
 
-Per impostazione predefinita, i nuovi endpoint vengono attivati automaticamente. Tuttavia, se hai disabilitato un endpoint, dovrai abilitarlo affinché sia operativo.
+Per impostazione predefinita, i nuovi endpoint vengono attivati automaticamente. Tuttavia, se hai disattivato un endpoint, devi attivarlo affinché sia operativo.
 
 Se riscontri problemi con i servizi, disattiva gli endpoint associati per una migliore risoluzione del problema. È inoltre possibile disattivare gli endpoint durante la normale manutenzione del sistema o durante l&#39;aggiornamento di un servizio.
 

@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3511'
+source-wordcount: '3509'
 ht-degree: 3%
 
 ---
@@ -194,7 +194,7 @@ I seguenti tipi di risorse e funzionalità non sono attualmente supportati:
 
   >[!IMPORTANT]
   >
-  >A partire dal 1° maggio 2023, le risorse UGC in Dynamic Medie saranno disponibili per l’uso fino a 60 giorni dalla data di caricamento. Dopo 60 giorni, le risorse verranno rimosse.
+  >A partire dal 1° maggio 2023, le risorse UGC in Dynamic Medie sono disponibili per l’uso fino a 60 giorni dalla data di caricamento. Dopo 60 giorni, le risorse vengono rimosse.
 
   >[!NOTE]
   >

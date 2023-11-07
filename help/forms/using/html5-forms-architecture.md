@@ -12,9 +12,9 @@ discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 feature: Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2010'
 ht-degree: 1%
 
 ---
@@ -143,7 +143,7 @@ Per maggiori dettagli sui widget e i contratti corrispondenti, vedi [Widget pers
 
 #### Attribuzione stile {#styling}
 
-Lo stile associato agli elementi HTML viene aggiunto in linea o in base al blocco CSS incorporato. Alcuni stili comuni che non dipendono dalla forma sono parte della libreria client CQ con il nome di categoria xfaforms.profile.
+Lo stile associato agli elementi HTML viene aggiunto in linea o in base al blocco CSS incorporato. Alcuni stili comuni che non dipendono dalla forma fanno parte della libreria client CQ con il nome di categoria xfaforms.profile.
 
 Oltre alle proprietà di stile predefinite, ogni elemento modulo contiene alcune classi CSS basate su tipo di elemento, nome e altre proprietà. Utilizzando queste classi, è possibile ridefinire gli elementi specificando il proprio CSS.
 
@@ -170,11 +170,11 @@ Il pacchetto Sling contiene contenuti relativi a Profili e Profile Renderer.
 
 #### Profili {#profiles}
 
-I profili sono i nodi Resource in Sling che rappresentano un modulo o una famiglia di Forms. A livello CQ, questi profili sono nodi JCR. I nodi si trovano sotto **/content** nell’archivio JCR e può trovarsi in qualsiasi sottocartella sotto il **/content** cartella.
+I profili sono i nodi Resource in Sling che rappresentano un modulo o una famiglia di Forms. A livello CQ, questi profili sono nodi JCR. I nodi si trovano sotto il **/content** nell’archivio JCR e può trovarsi in qualsiasi sottocartella sotto il **/content** cartella.
 
 #### Rendering profilo {#profile-renderers}
 
-Il nodo Profilo ha una proprietà **sling:resourceSuperType** con valore **xfaforms/profile**. Questa proprietà invia internamente le richieste di inoltro allo script sling per i nodi di profilo che si trovano in **/libs/xfaforms/profile** cartella. Si tratta di pagine JSP, che sono contenitori per la creazione di moduli HTML e di artefatti JS/CSS richiesti. Le pagine includono riferimenti a:
+Il nodo Profilo ha una proprietà **sling:resourceSuperType** con valore **xfaforms/profile**. Questa proprietà invia internamente le richieste di inoltro allo script sling per i nodi di profilo in **/libs/xfaforms/profile** cartella. Si tratta di pagine JSP, che sono contenitori per la creazione di moduli HTML e di artefatti JS/CSS richiesti. Le pagine includono riferimenti a:
 
 * **xfaforms.I18N.&lt;locale>**: questa libreria contiene dati localizzati.
 * **xfaforms.profile**: questa libreria contiene l’implementazione per il motore di script e layout XFA.

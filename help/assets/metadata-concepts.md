@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2718'
 ht-degree: 9%
 
 ---
@@ -160,7 +160,7 @@ I metadati specifici dell’applicazione includono metadati tecnici e descrittiv
 
 ## Riferimento schemi metadati {#metadata-schemata-reference}
 
-Il seguente riferimento include informazioni su un particolare schema di metadati (in ordine alfabetico), nonché un elenco di proprietà e relative definizioni.
+Il seguente riferimento include informazioni su un particolare schema di metadati (in ordine alfabetico) e un elenco di proprietà e relative definizioni.
 
 ### Dublin Core {#dublin-core}
 
@@ -184,7 +184,7 @@ Oltre ai DCMES, esistono altri elementi di metadati creati dall’iniziativa di 
 | relazione | Una risorsa correlata. |
 | diritti | Informazioni su chi dispone dei diritti per questa risorsa. |
 | source | Una risorsa correlata da cui deriva la risorsa. |
-| oggetto | Argomento della risorsa. |
+| soggetto | Argomento della risorsa. |
 | titolo | Nome della risorsa. |
 | tipo | La natura o il genere della risorsa. |
 

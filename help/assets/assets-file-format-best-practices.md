@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 3%
@@ -20,13 +20,13 @@ Per i formati di file supportati, vedi [Formati di risorse supportati](/help/ass
 
 >[!TIP]
 >
->Se sta usando [!DNL Experience Manager] in Adobe Managed Services (AMS), contatta l’Assistenza clienti di Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con il rappresentante dell’Assistenza clienti di Adobe per implementare queste best practice per la tua implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbe non elaborare file PSB ad altissima risoluzione con una risoluzione superiore a 30000x23000 pixel.
+>Se sta usando [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con il rappresentante dell’Assistenza clienti di Adobe per implementare queste best practice per la tua implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbe non elaborare file PSB ad altissima risoluzione con una risoluzione superiore a 30000x23000 pixel.
 
 ## [!DNL Adobe Camera Raw] libreria {#adobe-camera-raw-library}
 
 Per prestazioni ottimali, l’Adobe consiglia di utilizzare [!DNL Adobe Camera Raw] libreria per file RAW e DNG.
 
-[!DNL Adobe Camera Raw] La libreria supporta il profilo colore CMYK come input. Tuttavia, genera l&#39;output in RGB colorspace e supporta l&#39;output solo in formato JPEG. Non mantiene lo spazio colore del file di origine (ad esempio CMYK) nelle miniature.
+[!DNL Adobe Camera Raw] La libreria supporta il profilo colore CMYK come input. Tuttavia, genera l&#39;output in RGB colorspace e supporta l&#39;output solo in formato JPEG. Non mantiene lo spazio colore del file di origine (ad esempio, CMYK) nelle miniature.
 
 Per ulteriori informazioni, consulta [Supporto Camera Raw](/help/assets/camera-raw.md).
 
@@ -46,7 +46,7 @@ L’Adobe consiglia di utilizzare [!DNL Adobe InDesign Server] per estrarre [!DN
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] consente di generare e distribuire in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni. Offre esperienze di visualizzazione interattive e semplifica il processo di gestione delle campagne digitali. Per informazioni dettagliate sull’abilitazione di [!DNL Dynamic Media], vedi [Configurazione di Dynamic Media](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] consente di generare e distribuire in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni. Offre esperienze di visualizzazione interattive e semplifica il processo di gestione delle campagne digitali. Per informazioni dettagliate sull’abilitazione di [!DNL Dynamic Media], vedi [Configurazione di Dynamic Medie](/help/assets/config-dynamic.md).
 
 Attualmente, [!DNL Dynamic Media] può supportare video fino a 15 GB di contenuto per file.
 

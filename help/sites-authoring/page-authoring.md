@@ -2,7 +2,7 @@
 title: Authoring delle pagine di contenuti nell’AEM
 description: Le attività necessarie per creare una pagina di contenuti in Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -38,7 +38,7 @@ I componenti Testo e Immagine possono essere modificati direttamente nella pagin
 Sul lato sinistro di una pagina modificabile è possibile aprire un browser scorrevole; da qui i componenti possono essere trascinati sulla pagina e quindi modificati.
 
 * **[Browser risorse](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
-Sul lato sinistro di una pagina modificabile è possibile aprire un browser scorrevole; da qui le risorse possono essere trascinate sulla pagina; ad esempio per posizionare le risorse o creare collegamenti ad altre pagine.
+Sul lato sinistro di una pagina modificabile è possibile aprire un browser scorrevole; da qui le risorse possono essere trascinate sulla pagina; ad esempio, per posizionare le risorse o creare collegamenti ad altre pagine.
 
 * **Barra degli strumenti del componente**
 Con un singolo clic/tocco o un doppio clic/tocco lento viene visualizzata la barra degli strumenti appropriata (singola per la barra degli strumenti di modifica locale, quindi doppia lenta per la barra degli strumenti completa).

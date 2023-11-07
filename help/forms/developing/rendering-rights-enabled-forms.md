@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1455'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Prima di poter eseguire a livello di programmazione un&#39;operazione API client
 
 **Impostare le opzioni di runtime dei diritti di utilizzo**
 
-È necessario impostare le opzioni di runtime dei diritti di utilizzo per eseguire il rendering di un modulo abilitato ai diritti. È inoltre necessario specificare l&#39;alias delle credenziali utilizzato per applicare i diritti di utilizzo a un modulo. Dopo aver specificato il valore dell&#39;alias, specificare ogni diritto di utilizzo da applicare al modulo.
+Impostare le opzioni di runtime relative ai diritti di utilizzo per eseguire il rendering di un modulo abilitato ai diritti. È inoltre necessario specificare l&#39;alias delle credenziali utilizzato per applicare i diritti di utilizzo a un modulo. Dopo aver specificato il valore dell&#39;alias, specificare ogni diritto di utilizzo da applicare al modulo.
 
 **Eseguire il rendering di un modulo abilitato per i diritti**
 

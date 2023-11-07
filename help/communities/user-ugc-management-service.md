@@ -12,9 +12,9 @@ discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '590'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD, CCPA, ecc.
+>Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD, CCPA e così via.
 
 AEM Communities espone le API pronte all’uso per gestire i profili utente e i contenuti generati dagli utenti (UGC, User Generated Content) in blocco. Una volta abilitata, la funzione **UserUgcManagement** Il servizio consente agli utenti privilegiati (amministratori di community e moderatori) di disabilitare i profili utente e di eliminare in blocco o esportare in blocco contenuti generati dall&#39;utente (UGC, User-Generated Content) per utenti specifici. Queste API consentono inoltre ai titolari del trattamento e ai responsabili del trattamento dei dati dei clienti di conformarsi alle normative generali sulla protezione dei dati (RGPD) dell’Unione Europea e ad altri mandati sulla privacy ispirati al RGPD.
 

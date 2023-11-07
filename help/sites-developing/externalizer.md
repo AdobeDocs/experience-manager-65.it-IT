@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In Adobe Experience Manager (AEM), il **Esternalizzatore** è un servizio OSGI c
 
 Poiché un’istanza non può conoscere il proprio URL visibile esternamente se è in esecuzione dietro un livello web e poiché a volte è necessario creare un collegamento al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
 
-Questa pagina spiega come configurare **Esternalizzatore** e come utilizzarlo. Per ulteriori informazioni, consultare [JavaScript](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+Questa pagina spiega come configurare **Esternalizzatore** e come utilizzarlo. Per ulteriori dettagli, vedi [JavaScript](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 

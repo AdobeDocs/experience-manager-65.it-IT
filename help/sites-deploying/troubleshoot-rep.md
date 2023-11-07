@@ -8,7 +8,7 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 0%
@@ -27,7 +27,7 @@ La replica (replica non inversa) non riesce per qualche motivo.
 
 Esistono diversi motivi per cui la replica non riesce. Questo articolo spiega l’approccio che si potrebbe adottare quando si analizzano questi problemi.
 
-**Le repliche vengono attivate quando si fa clic sul pulsante Attiva? Se NON lo è, effettuare le seguenti operazioni:**
+**Le repliche vengono attivate quando si fa clic sul pulsante Attiva? Se NON lo è, procedere come segue:**
 
 1. Vai a /crx/explorer e accedi come amministratore.
 1. Apri &quot;Esplora contenuti&quot;
@@ -62,7 +62,7 @@ Seleziona questa opzione andando su /etc/replication/agents.author.html, quindi 
 
    * In caso affermativo, controlla Apache Sling Job Event Handler nella scheda Configuration della console Felix. È possibile che la casella di controllo Elaborazione processo abilitata sia deselezionata. Se questa opzione è selezionata e viene comunque visualizzato che &quot;l’elaborazione del processo è disabilitata&quot;, verifica se è presente una sovrapposizione in /apps/system/config che disabilita l’elaborazione del processo. Prova a creare un nodo osgi:config per jobmanager.enabled con un valore booleano impostato su true e verifica di nuovo se l’attivazione è iniziata e non sono presenti altri processi in coda.
 
-1. È inoltre possibile che la configurazione di DefaultJobManager entri in uno stato incoerente. Questo può accadere quando qualcuno modifica manualmente la configurazione di &quot;Apache Sling Job Event Handler&quot; tramite OSGiconsole (ad esempio disabilita e riabilita la proprietà &quot;Job Processing Enabled&quot; e salva la configurazione).
+1. È inoltre possibile che la configurazione di DefaultJobManager entri in uno stato incoerente. Questo può accadere quando qualcuno modifica manualmente la configurazione di &quot;Apache Sling Job Event Handler&quot; tramite OSGiconsole (ad esempio, disabilita e riabilita la proprietà &quot;Job Processing Enabled&quot; e salva la configurazione).
 
    * A questo punto la configurazione DefaultJobManager memorizzata in crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config diventa incoerente. E anche se la proprietà &quot;Apache Sling Job Event Handler&quot; mostra che &quot;Elaborazione del processo abilitata&quot; è in stato selezionato, quando si passa alla scheda Evento Sling, viene visualizzato il messaggio - ELABORAZIONE DEL PROCESSO DISABILITATA e la replica non funziona.
    * Per risolvere questo problema, accedi alla pagina Configurazione della console OSGi ed elimina la configurazione &quot;Apache Sling Job Event Handler&quot;. Riavviare quindi il nodo Master del cluster per riportare la configurazione in uno stato coerente. Questo dovrebbe risolvere il problema e la replica ricomincia a funzionare.

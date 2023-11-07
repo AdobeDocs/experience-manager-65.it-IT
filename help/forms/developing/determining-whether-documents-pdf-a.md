@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2081'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ Dopo aver creato il client del servizio Assembler, aver fatto riferimento al doc
 
 **Salva il documento XML restituito**
 
-Il documento XML restituito dal servizio Assembler specifica se il documento PDF di input è compatibile con PDF/A. Se ad esempio il documento di input PDF non è compatibile con PDF/A, il servizio Assembler restituisce un documento XML contenente l&#39;elemento seguente:
+Il documento XML restituito dal servizio Assembler specifica se il documento PDF di input è compatibile con PDF/A. Se, ad esempio, il documento di input PDF non è compatibile con PDF/A, il servizio Assembler restituisce un documento XML contenente l&#39;elemento seguente:
 
 ```xml
  <PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Detailed" ignoreUnusedResources="true" allowCertificationSignatures="true">
@@ -145,7 +145,7 @@ Determinare se un documento PDF è conforme a PDF/A utilizzando l&#39;API del se
    * Creare un `java.util.Map` oggetto utilizzato per memorizzare il documento di input PDF utilizzando un `HashMap` costruttore.
    * Aggiungi una voce al `java.util.Map` oggetto richiamando il relativo `put` e fornendo i seguenti argomenti:
 
-      * Valore stringa che rappresenta il nome della chiave. Questo valore deve corrispondere al valore dell&#39;elemento di origine specificato nel documento DDX. Ad esempio, il valore dell&#39;elemento di origine presente nel documento DDX introdotto in questa sezione è Loan.pdf.
+      * Valore stringa che rappresenta il nome della chiave. Questo valore deve corrispondere al valore dell&#39;elemento di origine specificato nel documento DDX. Ad esempio, il valore dell&#39;elemento di origine nel documento DDX introdotto in questa sezione è Loan.pdf.
       * A `com.adobe.idp.Document` oggetto che contiene il documento di input PDF.
 
 1. Impostare le opzioni di runtime.

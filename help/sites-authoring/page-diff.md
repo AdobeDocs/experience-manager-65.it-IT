@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 86%
+source-wordcount: '571'
+ht-degree: 91%
 
 ---
 
@@ -102,4 +102,4 @@ In alcune situazioni, il confronto delle differenze della pagina potrebbe non es
 
 >[!NOTE]
 >
->Per ulteriori dettagli sul funzionamento del meccanismo di differenze tra pagine e sui limiti che possono influenzare tale meccanismo, consulta la [documentazione per sviluppatori](/help/sites-developing/pagediff.md) di questa funzione.
+>Per ulteriori dettagli sul funzionamento del meccanismo di differenze tra pagine e sulle limitazioni che possono influenzare tale meccanismo, vedi [documentazione per sviluppatori](/help/sites-developing/pagediff.md) di questa funzione.

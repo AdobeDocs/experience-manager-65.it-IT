@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6177'
+source-wordcount: '6176'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Abilitare queste opzioni per specificare come visualizzare il contenuto, come vi
 
 **Layout pagina:** Selezionare il tipo di layout di pagina per il documento PDF.
 
-**Ingrandimento:** Scegliere l&#39;ingrandimento predefinito per la visualizzazione iniziale del documento PDF oppure selezionare un valore personalizzato. La scelta di un&#39;impostazione predefinita indica che verrà utilizzato l&#39;ingrandimento predefinito di Acrobat.
+**Ingrandimento:** Scegliere l&#39;ingrandimento predefinito per la visualizzazione iniziale del documento PDF oppure selezionare un valore personalizzato. La scelta di un&#39;impostazione predefinita indica che viene utilizzato l&#39;ingrandimento predefinito di Acrobat.
 
 **Apri a numero pagina:** Specifica il numero di pagina a cui il PDF si apre.
 

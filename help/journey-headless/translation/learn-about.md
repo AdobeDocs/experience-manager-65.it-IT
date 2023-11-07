@@ -2,10 +2,10 @@
 title: Scoprire i contenuti headless e come tradurli in AEM
 description: Imparare i concetti headless, come si mappano su AEM e la teoria della traduzione in AEM.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 97%
+source-wordcount: '758'
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ Questo documento ti aiuta a comprendere la distribuzione headless dei contenuti,
 
 ## Distribuzione contenuti full-stack {#full-stack}
 
-Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno sfruttati come punto centrale per gestire messaggi, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
+Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno utilizzati come punto centrale per gestire messaggistica, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
 
 ![CMS full-stack classico](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -47,7 +47,7 @@ Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a con
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-I servizi che consumano, siano essi esperienze AR, un web shop, esperienze mobile, app web progressive (PWA), ecc., prendono i contenuti dal CMS headless e forniscono il loro rendering. Si occupano di fornire le teste per i tuoi contenuti.
+I servizi che consumano, siano essi esperienze AR, un web shop, esperienze mobili, app web progressive (PWA) e così via, accettano contenuti dal CMS headless e forniscono il proprio rendering. Si occupano di fornire le teste per i tuoi contenuti.
 
 Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In questo modo si sposta anche la responsabilità di eseguire il rendering dei contenuti ai servizi che ne hanno effettivamente bisogno e che sono spesso più adatti a tale rendering.
 

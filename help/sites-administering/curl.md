@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ cURL è uno strumento da riga di comando open-source utilizzato per eseguire man
 
 cURL è uno strumento consolidato e ampiamente utilizzato per ottenere o inviare dati utilizzando la sintassi URL ed è stato originariamente rilasciato nel 1997. Il nome cURL originariamente significava &quot;vedi URL&quot;.
 
-A causa della natura RESTful del framework Sling su cui viene generato l’AEM, la maggior parte delle attività può essere ridotta a una chiamata URL, che può essere eseguita con cURL. [Attività di manipolazione dei contenuti](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) , ad esempio l&#39;attivazione delle pagine, l&#39;avvio dei flussi di lavoro e [compiti operativi](/help/sites-administering/curl.md#common-operational-aem-curl-commands) come la gestione dei pacchetti e la gestione degli utenti possono essere automatizzati utilizzando cURL. Inoltre, è possibile: [crea il tuo cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) comandi per la maggior parte delle attività dell&#39;AEM.
+A causa della natura RESTful del framework Sling su cui viene generato l’AEM, la maggior parte delle attività può essere ridotta a una chiamata URL, che può essere eseguita con cURL. [Attività di manipolazione dei contenuti](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) , ad esempio l&#39;attivazione delle pagine e l&#39;avvio di flussi di lavoro e [compiti operativi](/help/sites-administering/curl.md#common-operational-aem-curl-commands) come la gestione dei pacchetti e la gestione degli utenti possono essere automatizzati utilizzando cURL. Inoltre, è possibile: [crea il tuo cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) comandi per la maggior parte delle attività dell&#39;AEM.
 
 >[!NOTE]
 >

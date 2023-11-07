@@ -1,17 +1,13 @@
 ---
 title: Recupero variabili attività nell’URL di riepilogo
-seo-title: Getting Task Variables in Summary URL
 description: Riutilizzare le informazioni su un'attività e generare un URL di riepilogo per riepilogare o descrivere un'attività.
-seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
-uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -63,7 +59,7 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
    1. Creare un processo **crea riepilogo PTO** e utilizzalo come processo secondario prima del **Assegna attività** nell&#39;orchestrazione.
    1. Definisci **employeeName**, **employeeID**, **ptoReason**, **totalDays**, e **nodeName** come variabili di input nel nuovo processo. Queste variabili verranno trasmesse come dati del modulo inviati.
 
-      Definisci anche una variabile di output **ptoNodePath** che verrà utilizzato durante l’impostazione dell’URL di riepilogo.
+      Definisci anche una variabile di output **ptoNodePath** utilizzato durante l’impostazione dell’URL di riepilogo.
 
    1. In **crea riepilogo PTO** processo, utilizza **imposta valore** per impostare i dettagli di input in una **nodeProperty**(**nodeProps**) mappa.
 
@@ -78,8 +74,8 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
       * **Percorso cartella**: percorso in cui viene creato il nuovo nodo CRX. Imposta il percorso come **/content**.
       * **Nome nodo**: assegna la variabile di input nodeName a questo campo. Questa è una stringa con nome di nodo univoco.
       * **Tipo di nodo**: definisci il tipo come **nt:unstructured**. L&#39;output di questo processo è nodePath. Il percorso nodePath è il percorso CRX del nodo appena creato. Il ndoePath è l’output finale del **crea PTO** processo di riepilogo.
-   1. Trasmettere i dati modulo inviati (**employeeName**, **employeeID**, **ptoReason**, e **totalDays**) come input per il nuovo processo **crea riepilogo PTO**. Considera l’output come **ptoSummaryNodePath**.
 
+   1. Trasmettere i dati modulo inviati (**employeeName**, **employeeID**, **ptoReason**, e **totalDays**) come input per il nuovo processo **crea riepilogo PTO**. Considera l’output come **ptoSummaryNodePath**.
 
 1. Definisci l’URL di riepilogo come espressione XPath contenente i dettagli del server e **ptoSummaryNodePath**.
 

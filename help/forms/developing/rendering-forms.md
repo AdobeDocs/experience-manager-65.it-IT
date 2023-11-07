@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Il servizio Forms consente di creare applicazioni client di acquisizione dati in
 
 Quando un utente finale richiede un modulo, un’applicazione client invia la richiesta al servizio Forms, che restituisce il modulo in un formato appropriato. Non appena il servizio Forms riceve una richiesta, unisce i dati con una struttura di modulo e quindi distribuisce il modulo nel formato desiderato. L’output del servizio Modulo è un modulo interattivo, in genere un documento PDF. Un modulo interattivo consente agli utenti di compilare i campi presenti nel modulo.
 
-A seconda del tipo di applicazione client, è possibile scrivere il modulo in un browser Web client o salvarlo come file PDF. Un&#39;applicazione basata sul Web può scrivere il modulo nel browser Web. Un&#39;applicazione desktop può salvare il modulo come file PDF. Per dimostrare come scrivere in un browser Web e in un file PDF, la barra di avvio veloce si trova nel *Rendering di Forms* sono organizzate nel modo seguente:
+A seconda del tipo di applicazione client, è possibile scrivere il modulo in un browser Web client o salvarlo come file PDF. Un&#39;applicazione basata sul Web può scrivere il modulo nel browser Web. Un&#39;applicazione desktop può salvare il modulo come file PDF. Per dimostrare come scrivere in un browser Web e in un file PDF, la procedura rapida inizia in *Rendering di Forms* sono organizzate nel modo seguente:
 
 * Gli esempi di API Java fortemente tipizzati (modalità SOAP) sono un servlet Java.
 * Gli esempi di servizio web (Java Base64) sono un servlet Java.
@@ -41,7 +41,7 @@ A seconda del tipo di applicazione client, è possibile scrivere il modulo in un
 
 È possibile passare una progettazione di modulo (un file XDP) o un documento PDF al servizio Forms utilizzando uno dei due modi seguenti:
 
-* Puoi fare riferimento alla progettazione del modulo utilizzando un valore URL. Questo approccio comporta l’utilizzo di un `URLSpec` oggetto. La directory principale del contenuto viene passata al servizio Forms utilizzando `URLSpec` dell&#39;oggetto `setContentRootURI` metodo. Il nome della struttura del modulo ( `formQuery`) viene passato come parametro separato. I due valori vengono concatenati per ottenere il riferimento assoluto alla progettazione del modulo. (La maggior parte degli avvii rapidi si trova nella sezione *Rendering di Forms* in questa sezione viene utilizzato questo approccio.)
+* Puoi fare riferimento alla progettazione del modulo utilizzando un valore URL. Questo approccio comporta l’utilizzo di un `URLSpec` oggetto. La directory principale del contenuto viene passata al servizio Forms utilizzando `URLSpec` dell&#39;oggetto `setContentRootURI` metodo. Il nome della struttura del modulo ( `formQuery`) viene passato come parametro separato. I due valori vengono concatenati per ottenere il riferimento assoluto alla progettazione del modulo. (La maggior parte delle operazioni rapide inizia in *Rendering di Forms* in questa sezione viene utilizzato questo approccio.)
 * È possibile passare un `com.adobe.idp.Document` che contiene la struttura del modulo per il servizio Forms. Due nuovi metodi: `renderPDFForm2` e `renderHTMLForm2` accetta un `com.adobe.idp.Document` oggetto che contiene una struttura di modulo. (vedere [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
 
 Puoi eseguire queste attività utilizzando il servizio Forms:

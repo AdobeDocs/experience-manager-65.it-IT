@@ -8,9 +8,9 @@ topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1440'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ Per impostazione predefinita, l’azione di invio Forms Portal dei moduli adatti
 
 È possibile configurare il servizio di archiviazione per l&#39;invio al cluster di elaborazione senza salvare nulla localmente sul nodo di pubblicazione. Il cluster di elaborazione risiede in una zona protetta dietro il firewall privato e i dati rimangono sicuri.
 
-Utilizzare le credenziali del server di elaborazione per il servizio delle impostazioni di Servizi di dominio AEM per inviare i dati dal nodo di pubblicazione al server di elaborazione. Si consiglia di utilizzare le credenziali di un utente non amministrativo con restrizioni con accesso in lettura-scrittura all’archivio del server di elaborazione. Per ulteriori informazioni, consulta [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md).
+Utilizzare le credenziali del server di elaborazione per il servizio delle impostazioni di Servizi di dominio AEM per inviare i dati dal nodo di pubblicazione al server di elaborazione. Utilizzare le credenziali di un utente non amministrativo con accesso in lettura/scrittura all&#39;archivio del server di elaborazione. Per ulteriori informazioni, consulta [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Protezione dei dati gestita dal modello dati modulo (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
@@ -176,12 +176,12 @@ Per le istanze di authoring, pubblicazione ed elaborazione è necessario un set 
       * non può creare un modulo adattivo basato su XDP.
       * non dispongono delle autorizzazioni necessarie per scrivere script per i moduli adattivi.
       * impossibile importare XDP o un pacchetto contenente XDP
+
    * Un utente di forms-power-user group crea, compila, pubblica e invia tutti i tipi di moduli, scrive script per i moduli adattivi e importa pacchetti contenenti XDP.
    * Un utente di template-author e template-power-user può visualizzare in anteprima e creare un modello.
    * Un utente di autori di moduli fdm può creare e modificare un modello di dati modulo.
    * Un utente del gruppo cm-user-agent può creare, visualizzare in anteprima e pubblicare lettere di gestione della corrispondenza.
    * Un utente del gruppo di editor dei flussi di lavoro può creare un&#39;applicazione casella in entrata e un modello di flusso di lavoro.
-
 
 **Durante l’elaborazione dell’autore:**
 

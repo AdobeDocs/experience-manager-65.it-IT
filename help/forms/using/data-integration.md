@@ -11,7 +11,7 @@ discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
 feature: Form Data Model
 exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Dopo aver creato un modello di dati modulo, puoi utilizzarlo in vari flussi di l
 
 ## Introduzione all’integrazione dei dati {#get-started-with-data-integration}
 
-Il primo passaggio per implementare l’integrazione dei dati consiste nell’identificare e configurare le origini dati in cui sono memorizzate le informazioni da sfruttare nei moduli adattivi e nei casi di utilizzo delle comunicazioni interattive. Successivamente, verrà creato un modello dati modulo che utilizza oggetti, proprietà e servizi del modello dati da una o più origini dati. Puoi creare moduli adattivi e comunicazioni interattive basate su un modello di dati del modulo in cui i campi del modulo adattivo o i segnaposto nelle comunicazioni interattive sono associati alle rispettive proprietà dell’origine dati.
+Il primo passaggio per implementare l’integrazione dei dati consiste nell’identificare e configurare le origini dati in cui sono memorizzate le informazioni da utilizzare nei moduli adattivi e nei casi di utilizzo delle comunicazioni interattive. Successivamente, verrà creato un modello dati modulo che utilizza oggetti, proprietà e servizi del modello dati da una o più origini dati. Puoi creare moduli adattivi e comunicazioni interattive basate su un modello di dati del modulo in cui i campi del modulo adattivo o i segnaposto nelle comunicazioni interattive sono associati alle rispettive proprietà dell’origine dati.
 
 [!DNL AEM Forms] consente inoltre di creare un modello dati modulo indipendente dalle origini dati e di associare o associare in seguito gli oggetti e le proprietà del modello dati modulo all&#39;origine dati. Elimina tutte le dipendenze dalle origini dati mentre si lavora su un modello dati modulo.
 

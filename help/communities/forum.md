@@ -7,7 +7,7 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 9%
@@ -117,7 +117,7 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti e le risp
 
 * **Tipi di file consentiti**
 
-  Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
+  Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Dimensione massima file immagine allegato**
 Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 (2 Mb).

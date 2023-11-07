@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 8737c989927b1be148d440aa1944cf4cfb216b69
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2226'
 ht-degree: 51%
@@ -236,7 +236,7 @@ Per ulteriori informazioni, selezionate il tipo di riferimento appropriato. In a
 
 * **Collegamenti in ingresso** fornisce un elenco di pagine che fanno riferimento alla pagina, insieme all’accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
 
-   * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente; ad esempio dal componente Elenco.
+   * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente; ad esempio, dal componente Elenco.
 
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 

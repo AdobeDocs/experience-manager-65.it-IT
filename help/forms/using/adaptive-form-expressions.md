@@ -10,7 +10,7 @@ discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2802'
 ht-degree: 0%
@@ -284,7 +284,7 @@ Per creare un pattern personalizzato per un tipo di campo specifico e riutilizza
 1. Apri la scheda Proprietà del nodo creato. Ad esempio, apri la scheda Proprietà di `textboxpatterns`. Aggiungi il `guideComponentType` su questo nodo e impostarne il valore su *fd/af/components/formatter/guideTextBox*.
 
 1. Il valore di questa proprietà varia a seconda del campo per il quale si desidera definire i modelli. Per un campo numerico, il valore della proprietà `guideComponentType` la proprietà è *fd/af/components/formatter/guideNumericBox*. Il valore del campo Datepicker è *fd/af/components/formatter/guideDatepicker*. &quot;
-1. È possibile aggiungere un pattern personalizzato assegnando una proprietà al `textboxpatterns` nodo. Aggiungi una proprietà con un nome (ad esempio `pattern1`) e impostarne il valore sul pattern da aggiungere. Ad esempio, aggiungi una proprietà `pattern1` con valore Fax=text{99-999-9999999}. Il pattern è disponibile per tutte le caselle di testo utilizzate in Adaptive Forms.
+1. È possibile aggiungere un pattern personalizzato assegnando una proprietà al `textboxpatterns` nodo. Aggiungi una proprietà con un nome (ad esempio, `pattern1`) e impostarne il valore sul pattern da aggiungere. Ad esempio, aggiungi una proprietà `pattern1` con valore Fax=text{99-999-9999999}. Il pattern è disponibile per tutte le caselle di testo utilizzate in Adaptive Forms.
 
    ![Creazione di modelli personalizzati per i campi in CrxDe](assets/creating-custom-patterns.png)
 

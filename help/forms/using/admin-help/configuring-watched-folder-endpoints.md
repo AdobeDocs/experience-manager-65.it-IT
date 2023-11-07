@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7181'
+source-wordcount: '7177'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Puoi creare una cartella controllata nei due modi seguenti:
 
 * Creare una cartella nel file system prima di configurare un endpoint di cartella controllata, quindi digitare il percorso completo nella casella Percorso.
 
-In un ambiente cluster, la cartella che verrà utilizzata come cartella controllata deve essere accessibile, scrivibile e condivisa nel file system o in rete. In questo scenario, ogni istanza del server applicazioni del cluster deve avere accesso alla stessa cartella condivisa.
+In un ambiente cluster, la cartella utilizzata come cartella controllata deve essere accessibile, scrivibile e condivisa nel file system o in rete. In questo scenario, ogni istanza del server applicazioni del cluster deve avere accesso alla stessa cartella condivisa.
 
 In Windows, se il server applicazioni è in esecuzione come servizio, deve essere avviato con l&#39;accesso appropriato alla cartella condivisa in uno dei modi seguenti:
 
@@ -386,7 +386,7 @@ Di seguito sono riportati alcuni suggerimenti utili per la configurazione dell�
    * Per `java.lang.String`: l’amministratore ha due opzioni. Innanzitutto, l’amministratore può specificare il tipo di mappatura come `Literal` e inserisci un valore di mappatura come stringa, ad esempio `hello.` La cartella controllata richiamerà il servizio con la stringa `hello`. In secondo luogo, l’amministratore può specificare il tipo di mappatura come `Variable` e inserisci un valore di mappatura con un pattern come `*.txt`. In quest’ultimo caso, i file con estensione .txt verranno letti come un documento forzato come una stringa per richiamare il servizio.
    * Tipo primitivo Java: l’amministratore può specificare il tipo di mappatura come `Literal` e fornisci il valore. La cartella controllata richiamerà il servizio con il valore specificato.
 
-* La cartella controllata è concepita per funzionare con i documenti. Gli output supportati sono `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, nonché un elenco e una mappa di questi tipi. Qualsiasi altro tipo genererà un output di errore nella cartella degli errori.
+* La cartella controllata è concepita per funzionare con i documenti. Gli output supportati sono `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`e un elenco e una mappa di questi tipi. Qualsiasi altro tipo genererà un output di errore nella cartella degli errori.
 * Se i risultati non sono presenti nella cartella dei risultati, verificare la cartella dei risultati errati per verificare se si è verificato un errore.
 * La cartella controllata funziona meglio se utilizzata in modalità asincrona. In questa modalità, la cartella controllata inserisce la richiesta di chiamata nella coda e la richiama. La coda viene quindi elaborata in modo asincrono. Quando l&#39;opzione Asynchronous non è impostata, la cartella controllata richiama il servizio di destinazione in modo sincrono e il motore di elaborazione attende che il servizio venga eseguito insieme alla richiesta e che i risultati vengano prodotti. Se l’elaborazione della richiesta da parte del servizio di destinazione richiede molto tempo, nella cartella controllata potrebbero verificarsi errori di timeout.
 * La creazione di cartelle controllate per le operazioni di importazione ed esportazione non consente l’astrazione dell’estensione del nome file. Quando si richiama il servizio di integrazione dei dati del modulo utilizzando le cartelle controllate, il tipo di estensione del nome file per il file di output potrebbe non corrispondere al formato di output previsto per il tipo di oggetto documento. Ad esempio, se il file di input di una cartella controllata che richiama l’operazione di esportazione è un modulo XFA contenente dati, l’output deve essere un file di dati XDP. Per ottenere un file di output con l&#39;estensione corretta, potete specificarlo nella mappatura dei parametri di output. In questo esempio è possibile utilizzare %F.xdp per la mappatura dei parametri di output.

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Se l&#39;organizzazione contiene diversi gruppi di utenti che hanno giorni non l
 
 >[!NOTE]
 >
->Se non si crea un nuovo calendario aziendale, verrà utilizzato il calendario predefinito.
+>Se non si crea un calendario aziendale, verrà utilizzato il calendario predefinito.
 
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro di Forms > Calendari aziendali.
 1. Per aggiungere un nuovo calendario aziendale, fare clic su ![bus_cal_plus](assets/bus_cal_plus.png). Il testo *Nuovo calendario* nell&#39;elenco a discesa. Selezionare il testo e digitare un altro nome per il calendario.
@@ -90,7 +90,7 @@ Se l&#39;organizzazione contiene diversi gruppi di utenti che hanno giorni non l
 
    >[!NOTE]
    >
-   >Se non si abilita il calendario, verrà utilizzato quello predefinito.
+   >Se non si abilita il calendario, verrà utilizzato il calendario predefinito.
 
 ## Mappatura di utenti e gruppi a un calendario aziendale {#mapping-users-and-groups-to-a-business-calendar}
 
@@ -117,7 +117,7 @@ Per associare un calendario aziendale a un utente è possibile utilizzare due me
 
    >[!NOTE]
    >
-   >In Workbench, se è stato configurato un servizio utente per l&#39;utilizzo dei calendari aziendali e il servizio è assegnato a un gruppo, i moduli AEM utilizzano i mapping dei gruppi qui specificati per risolvere il calendario del gruppo. I moduli AEM utilizzano sempre i mapping dei gruppi per risolvere il calendario dei gruppi, anche quando si utilizzano le chiavi del calendario aziendale per risolvere il calendario degli utenti. Se non viene trovato alcun mapping di gruppo, verrà utilizzato il calendario aziendale predefinito.
+   >In Workbench, se è stato configurato un servizio utente per l&#39;utilizzo dei calendari aziendali e il servizio è assegnato a un gruppo, i moduli AEM utilizzano i mapping dei gruppi qui specificati per risolvere il calendario del gruppo. I moduli AEM utilizzano sempre i mapping dei gruppi per risolvere il calendario dei gruppi, anche quando si utilizzano le chiavi del calendario aziendale per risolvere il calendario degli utenti. Se non viene trovato alcun mapping di gruppo, viene utilizzato il calendario aziendale predefinito.
 
 1. Per ogni elemento nell&#39;elenco Gruppo di servizi directory, selezionare un Calendario.
 1. Fai clic su Salva.
@@ -143,7 +143,7 @@ I moduli AEM consentono di esportare e importare i calendari aziendali come file
 
 ## Eliminare un calendario aziendale {#delete-a-business-calendar}
 
-È possibile rimuovere i calendari aziendali non più necessari per l&#39;organizzazione. Se si elimina un calendario aziendale ancora mappato a utenti e gruppi, verrà utilizzato il calendario predefinito.
+È possibile rimuovere i calendari aziendali non più necessari per l&#39;organizzazione. Se si elimina un calendario aziendale ancora mappato a utenti e gruppi, viene utilizzato il calendario predefinito.
 
 1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro di Forms > Calendari aziendali.
 1. Seleziona il calendario.

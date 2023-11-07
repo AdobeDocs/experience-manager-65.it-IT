@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -30,7 +30,7 @@ In Workbench, quando definisci un’ `AssignTask` specifica un modulo specifico 
 
 ### Nuovo servizio HTML Forms {#new-html-forms-service}
 
-Il nuovo servizio HTML Forms sfrutta la nuova funzione di Forms per supportare il rendering del modulo XDP come HTML. Il nuovo servizio HTML Forms espone i seguenti metodi:
+Il nuovo servizio HTML Forms utilizza la nuova funzione di Forms per supportare il rendering del modulo XDP come HTML. Il nuovo servizio HTML Forms espone i seguenti metodi:
 
 ```java
 /*

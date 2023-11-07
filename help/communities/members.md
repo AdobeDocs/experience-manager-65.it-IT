@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
@@ -145,7 +145,7 @@ Il membro può essere aggiunto a uno o più gruppi di membri. Iniziare immettend
 
 ### Scheda DISTINTIVI {#badges-tab}
 
-Il `BADGES` Il pannello consente di assegnare manualmente i badge e di revocarli. I distintivi possono essere per i ruoli assegnati e i distintivi generalmente ottenuti.
+Il `BADGES` Il pannello consente di assegnare manualmente i badge e revocarli. I distintivi possono essere per i ruoli assegnati e distintivi generalmente ottenuti.
 
 Vedi anche [Punteggio e distintivi](implementing-scoring.md).
 
@@ -174,7 +174,7 @@ Seleziona `Add Group` per creare un gruppo nell’ambiente di pubblicazione.
 
 ![Finestra Crea nuovo gruppo](assets/group-console1.png)
 
-I campi obbligatori per la creazione di un nuovo gruppo di membri lato pubblicazione sono:
+I campi obbligatori per la creazione di un gruppo di membri lato pubblicazione sono:
 
 * **[!UICONTROL ID]**
 

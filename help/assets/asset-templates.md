@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Possibilità di modificare [!DNL Adobe InDesign] I modelli dall’interfaccia we
 Con i modelli di risorse puoi ottenere quanto segue:
 
 * Modifica i campi modello modificabili dall’interfaccia web.
-* Controlla lo stile di base del testo, ad esempio la dimensione del carattere, lo stile e il tipo a livello di tag.
+* Controlla lo stile di base del testo, ad esempio la dimensione, lo stile e il tipo di carattere a livello di tag.
 * Modifica le immagini all’interno del modello utilizzando il Selettore contenuto.
 * Visualizzare in anteprima le modifiche apportate ai modelli.
 * Unisci più file modello per creare un artefatto con più pagine.
@@ -120,13 +120,11 @@ Considera uno scenario in cui desideri creare materiale collaterale digitale sta
    >
    >* Le immagini non sono incorporate nel sottostante [!DNL InDesign] modello.
    >* Le immagini sono collegate dal file system locale.
-
    >
    >Per abilitare [!DNL Experience Manager] per risolvere le immagini, effettuare le seguenti operazioni:
    >
    >* Incorpora immagini durante la creazione [!DNL InDesign] modelli (vedere [Informazioni su collegamenti e immagini incorporate](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Montaggio [!DNL Experience Manager] nel file system locale, quindi mappa le icone mancanti con le risorse esistenti in [!DNL Experience Manager].
-
    >
    >Per ulteriori informazioni sull&#39;utilizzo di [!DNL InDesign] documenti, vedi [best practice per l’utilizzo dei documenti InDesign in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 

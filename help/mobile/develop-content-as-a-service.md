@@ -5,7 +5,7 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Content Services fornisce l&#39;accesso alle risorse gestite dall&#39;AEM a cui 
 
 #### Risorse gestite esistenti {#existing-managed-assets}
 
-Un utente di AEM Sites e Assets utilizza AEM Assets per gestire tutto il proprio materiale digitale per tutti i canali. Stanno sviluppando un’app mobile nativa e devono utilizzare diverse risorse gestite da AEM Assets. Ad esempio loghi, immagini di sfondo e icone dei pulsanti.
+Un utente di AEM Sites e Assets utilizza AEM Assets per gestire tutto il proprio materiale digitale per tutti i canali. Stanno sviluppando un’app mobile nativa e devono utilizzare diverse risorse gestite da AEM Assets. Ad esempio, loghi, immagini di sfondo e icone dei pulsanti.
 
 Attualmente queste sono distribuite nell’archivio delle risorse. I file a cui l’app deve fare riferimento sono i seguenti:
 

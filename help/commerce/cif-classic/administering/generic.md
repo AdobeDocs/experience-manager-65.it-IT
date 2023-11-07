@@ -6,7 +6,7 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2929'
 ht-degree: 2%
@@ -264,7 +264,7 @@ Puoi aggiungere più risorse al componente prodotto, quindi specificare la risor
 Nel componente del prodotto sono ora memorizzate due risorse. Puoi configurare quale viene visualizzato nella pagina del prodotto. Questo funziona con un sistema di categorie. Innanzitutto devi aggiungere una categoria alle singole risorse:
 
 1. Seleziona **Visualizza dati prodotto**.
-1. Digita un **Categoria risorsa** sotto le risorse, ad esempio `cat1` e `cat2`.
+1. Digita un **Categoria risorsa** sotto le attività, ad esempio, `cat1` e `cat2`.
 
    >[!NOTE]
    >
@@ -345,8 +345,8 @@ Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
 <!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration lets you: -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 * use the eCommerce API, independently of the underlying repository structure and commerce platform. -->
-<!-- Search&Promote is end of life as of September 1, 2022 * leverage the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
-<!-- Search&Promote is end of life as of September 1, 2022 * leverage the Remote Control feature of Search&Promote to perform on-demand or scheduled requests of the product feed -->
+<!-- Search&Promote is end of life as of September 1, 2022 * use the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
+<!-- Search&Promote is end of life as of September 1, 2022 * use the Remote Control feature of Search&Promote to perform on-demand or scheduled requests of the product feed -->
 <!-- Search&Promote is end of life as of September 1, 2022 * feed generation for different Search&Promote accounts, configured as cloud services configurations. -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 For more information, read [Product Feed](/help/sites-administering/product-feed.md). -->
@@ -475,7 +475,7 @@ Per generare un catalogo:
 
 1. Selezione del **Fine** ti riporta alla console Sites, dove puoi visualizzare il catalogo.
 
-   Tocco/clic **Apri catalogo** apre il catalogo (ad esempio `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Tocco/clic **Apri catalogo** apre il catalogo (ad esempio, `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Generazione di un catalogo - Interfaccia classica {#generating-a-catalog-classic-ui}
 

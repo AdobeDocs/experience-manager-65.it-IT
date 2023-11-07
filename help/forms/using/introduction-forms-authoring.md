@@ -11,9 +11,9 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3156'
+source-wordcount: '3154'
 ht-degree: 56%
 
 ---
@@ -52,7 +52,7 @@ L’interfaccia utente ottimizzata per l’authoring di moduli adattivi è intui
 * Componenti standard per moduli
 * Archivio integrato per le risorse
 
-Quando crei un nuovo modulo adattivo o lo modifichi, vengono utilizzati i seguenti elementi dell’interfaccia utente:
+Quando crei o modifichi un modulo adattivo esistente, utilizzi i seguenti elementi dell’interfaccia utente:
 
 * [Barra laterale](#sidebar)
 * [Barra degli strumenti della pagina](#page-toolbar)
@@ -154,7 +154,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Allegato file</td>

@@ -3,7 +3,7 @@ title: Requisiti tecnici
 description: Elenco delle piattaforme client e server supportate per Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 0dd6e3fc2fa9539e5c3ce4e99ab367752dfeaad6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3597'
 ht-degree: 1%
@@ -226,7 +226,7 @@ Per un ambiente nativo per il cloud, consulta l’offerta più recente della lin
 
 Adobe offre anche Adobe Managed Services per distribuire l’AEM su Azure o AWS. Adobe Managed Services fornisce agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare l’AEM in questi ambienti di cloud computing. Consulta [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-In tutti gli altri casi di distribuzione di AEM in Azure, AWS o in qualsiasi altro ambiente di cloud computing, il supporto di Adobe è contenuto nell’ambiente di elaborazione virtuale. L’ambiente virtuale deve essere eseguito in conformità alle specifiche tecniche elencate in questa pagina. Qualsiasi problema relativo all’AEM in esecuzione in uno di questi ambienti cloud deve essere riproducibile indipendentemente da qualsiasi servizio cloud specifico per l’ambiente di cloud computing. Questo a meno che il servizio cloud non sia supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio l’archiviazione BLOB di Azure o AWS S3.
+In tutti gli altri casi di distribuzione di AEM in Azure, AWS o in qualsiasi altro ambiente di cloud computing, il supporto di Adobe è contenuto nell’ambiente di elaborazione virtuale. L’ambiente virtuale deve essere eseguito in conformità alle specifiche tecniche elencate in questa pagina. Qualsiasi problema relativo all’AEM in esecuzione in uno di questi ambienti cloud deve essere riproducibile indipendentemente da qualsiasi servizio cloud specifico per l’ambiente di cloud computing. Questo a meno che il servizio cloud non sia supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio archiviazione BLOB di Azure o AWS S3.
 
 Per raccomandazioni su come distribuire l’AEM in Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, collaborando con partner Adobi che supportano l’implementazione dell’AEM nell’ambiente cloud di tua scelta. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura in modo da soddisfare specifici requisiti di prestazioni, carico, scalabilità e sicurezza.
 

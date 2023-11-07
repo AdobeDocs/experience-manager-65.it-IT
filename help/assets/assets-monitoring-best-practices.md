@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1670'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ Il monitoraggio dell’ambiente include il monitoraggio di quanto segue:
 * MBean JMX
 * Siti Web esterni
 
-Per monitorare ogni elemento sono necessari strumenti esterni, come NewRelic(TM) e AppDynamics(TM). Utilizzando questi strumenti, puoi definire avvisi specifici per il tuo sistema, ad esempio un elevato utilizzo del sistema, il backup del flusso di lavoro, gli errori del controllo di integrità o l’accesso non autenticato al tuo sito web. L’Adobe non consiglia strumenti particolari rispetto ad altri. Trova lo strumento che funziona per te e utilizzalo per monitorare gli elementi discussi.
+Per monitorare ogni elemento sono necessari strumenti esterni, come NewRelic(TM) e AppDynamics(TM). Utilizzando questi strumenti, puoi definire avvisi specifici per il tuo sistema, ad esempio un elevato utilizzo del sistema, il backup del flusso di lavoro, gli errori del controllo di integrità o l’accesso non autenticato al tuo sito web. L’Adobe non consiglia strumenti particolari rispetto ad altri. Trova lo strumento adatto e utilizzalo per monitorare gli elementi discussi.
 
 #### Monitoraggio interno delle applicazioni {#internal-application-monitoring}
 
@@ -100,7 +100,7 @@ Memoria
 >
 >Le informazioni fornite da questo bean sono espresse in byte.
 
-Thread
+Threads
 
 * MBean: `java.lang:type=Threading`
 * URL: `/system/console/jmx/java.lang:type=Threading`

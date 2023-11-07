@@ -2,10 +2,10 @@
 title: Guida rapida alla creazione di una cartella di risorse headless
 description: Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 87%
+source-wordcount: '375'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura d
 
 Tuttavia, è necessario innanzitutto creare una cartella di risorse in cui memorizzarli.
 
-Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenuti tradizionali](/help/assets/manage-assets.md), come immagini e video, nonché i frammenti di contenuto.
+Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenuti tradizionali](/help/assets/manage-assets.md) come immagini e video e frammenti di contenuto.
 
 ## Creare una cartella di risorse {#how-to-create-an-assets-folder}
 
@@ -34,17 +34,16 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
       * Se necessario è possibile modificarlo.
 
    ![Crea cartella](assets/assets-folder-create.png)
-1. Seleziona la cartella appena creata, quindi fai clic su **Proprietà** dalla barra degli strumenti (oppure utilizza `p` [scelte rapide da tastiera.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Seleziona la cartella creata, quindi fai clic su **Proprietà** dalla barra degli strumenti (oppure utilizza `p` [scelte rapide da tastiera.](/help/sites-authoring/keyboard-shortcuts.md))
 1. In **Proprietà**, seleziona la scheda **Servizi cloud**.
 1. In **Configurazione cloud** seleziona la [configurazione creata in precedenza.](create-configuration.md)
-
    ![Configurare la cartella delle risorse](assets/assets-folder-configure.png)
 1. Tocca o fai clic su **Salva e chiudi**.
 1. Nella finestra di conferma tocca o fai clic su **OK**.
 
    ![Finestra di conferma](assets/assets-folder-confirmation.png)
 
-Puoi creare ulteriori sottocartelle all’interno della cartella appena creata. Le sottocartelle ereditano la **configurazione cloud** della cartella principale. Tuttavia, questo può essere ignorato se vuoi utilizzare i modelli di un’altra configurazione.
+Puoi creare ulteriori sottocartelle all’interno della cartella creata. Le sottocartelle ereditano la **configurazione cloud** della cartella principale. Tuttavia, questo può essere ignorato se vuoi utilizzare i modelli di un’altra configurazione.
 
 Se utilizzi una struttura del sito localizzata, puoi [creare una directory principale della lingua](/help/assets/multilingual-assets.md) al di sotto della nuova cartella.
 

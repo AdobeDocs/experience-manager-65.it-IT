@@ -1,18 +1,14 @@
 ---
 title: Utilizzo di Adobe Campaign 6.1 e Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: Puoi creare contenuti e-mail in AEM ed elaborarli nelle e-mail di Adobe Campaign.
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails.
-uuid: 439df7fb-590b-45b8-9768-565b022a808b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1163'
 ht-degree: 1%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 Puoi creare contenuti e-mail in AEM ed elaborarli nelle e-mail di Adobe Campaign. Per farlo, devi:
 
-1. Crea una nuova newsletter in AEM da un modello specifico di Adobe Campaign.
+1. Crea una newsletter in AEM da un modello specifico di Adobe Campaign.
 1. Seleziona [un servizio Adobe Campaign](#selectingtheadobecampaigncloudservice) prima di modificare il contenuto per accedere a tutte le funzionalità.
 1. Modifica il contenuto.
 1. Convalida il contenuto.
@@ -56,7 +52,7 @@ Istruzioni dettagliate sono descritte in questo documento.
 
    >[!NOTE]
    >
-   >[Gli esempi di e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scarica i contenuti di esempio di Geometrixx da Condivisione pacchetti.
+   >[Gli esempi di e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scarica il contenuto di esempio di un Geometrixx da Condivisione pacchetti.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -115,7 +111,7 @@ Puoi modificare il contenuto delle e-mail nell’interfaccia utente classica o n
 
 Durante la modifica del contenuto, puoi inserire:
 
-* Campi contestuali di Adobe Campaign. Si tratta di campi che puoi inserire nel testo e che verranno adattati in base ai dati del destinatario (ad esempio nome, cognome o qualsiasi dato della dimensione di destinazione).
+* Campi contestuali di Adobe Campaign. Si tratta di campi che puoi inserire all’interno del testo e che verranno adattati in base ai dati del destinatario (ad esempio, nome, cognome o qualsiasi dato della dimensione di destinazione).
 * Blocchi di personalizzazione di Adobe Campaign. Si tratta di blocchi di contenuto predefinito non correlati ai dati del destinatario, ad esempio il logo di un brand o il collegamento a una pagina speculare.
 
 Consulta [Componenti di Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) per una descrizione completa dei componenti di Campaign.

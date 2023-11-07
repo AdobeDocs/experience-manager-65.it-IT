@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '15485'
+source-wordcount: '15469'
 ht-degree: 0%
 
 ---
@@ -325,7 +325,7 @@ Per esempi di codice con il servizio Document Security, consulta la sezione Quic
 
 Puoi modificare una policy esistente utilizzando l’API Java di Document Security o l’API di servizio web. Per apportare modifiche a un criterio esistente, è necessario recuperarlo, modificarlo e quindi aggiornare il criterio sul server. Si supponga, ad esempio, di recuperare un criterio esistente e di estenderne il periodo di validità. Prima che la modifica entri in vigore, devi aggiornare il criterio.
 
-È possibile modificare un criterio quando cambiano i requisiti aziendali e il criterio non riflette più questi requisiti. Invece di creare un nuovo criterio, è sufficiente aggiornare un criterio esistente.
+È possibile modificare un criterio quando cambiano i requisiti aziendali e il criterio non riflette più questi requisiti. Invece di creare un criterio, puoi semplicemente aggiornare un criterio esistente.
 
 Per modificare gli attributi dei criteri utilizzando un servizio web (ad esempio, utilizzando le classi proxy Java create con JAX-WS), è necessario assicurarsi che i criteri siano registrati nel servizio Document Security. È quindi possibile fare riferimento al criterio esistente utilizzando `PolicySpec.getPolicyXml` e modificare gli attributi dei criteri utilizzando i metodi applicabili. Ad esempio, puoi modificare il periodo di lease offline richiamando il `PolicySpec.setOfflineLeasePeriod` metodo.
 
@@ -353,7 +353,7 @@ Prima di poter eseguire un’operazione Document Security Service a livello di p
 
 **Recuperare un criterio esistente**
 
-È necessario recuperare un criterio esistente per modificarlo. Per recuperare un criterio, specificare il nome del criterio e il set di criteri a cui appartiene il criterio. Se si specifica un `null` per il nome del set di criteri, il criterio viene recuperato dal *I Miei Criteri* set di criteri.
+Recuperare un criterio esistente per modificarlo. Per recuperare un criterio, specificare il nome del criterio e il set di criteri a cui appartiene il criterio. Se si specifica un `null` per il nome del set di criteri, il criterio viene recuperato dal *I Miei Criteri* set di criteri.
 
 **Impostare gli attributi del criterio**
 
@@ -878,9 +878,9 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 **Recuperare un documento PDF protetto tramite policy**
 
-Per revocare un documento PDF protetto tramite policy è necessario recuperarlo. Non è possibile revocare un documento già revocato o non protetto tramite policy.
+Recupera un documento PDF protetto tramite policy per revocarlo. Non è possibile revocare un documento già revocato o non protetto tramite policy.
 
-Se si conosce il valore dell&#39;identificatore di licenza del documento protetto tramite policy, non è necessario recuperare il documento PDF protetto tramite policy. Tuttavia, nella maggior parte dei casi sarà necessario recuperare il documento PDF per ottenere il valore dell&#39;identificatore della licenza.
+Se si conosce il valore dell&#39;identificatore di licenza del documento protetto tramite policy, non è necessario recuperare il documento PDF protetto tramite policy. Tuttavia, nella maggior parte dei casi è necessario recuperare il documento PDF per ottenere il valore dell&#39;identificatore della licenza.
 
 **Revoca del documento protetto tramite policy**
 
@@ -1020,7 +1020,7 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 **Recuperare l&#39;identificatore di licenza del documento di PDF revocato**
 
-Per ripristinare un documento PDF revocato, è necessario recuperare l&#39;identificatore di licenza del documento PDF revocato. Dopo aver ottenuto il valore dell&#39;identificatore di licenza, è possibile ripristinare un documento revocato. Se si tenta di ripristinare un documento non revocato, verrà generata un&#39;eccezione.
+Recuperare l&#39;identificatore di licenza del documento PDF revocato per ripristinare un documento PDF revocato. Dopo aver ottenuto il valore dell&#39;identificatore di licenza, è possibile ripristinare un documento revocato. Se si tenta di ripristinare un documento non revocato, verrà generata un&#39;eccezione.
 
 **Ripristina l&#39;accesso al documento di PDF revocato**
 
@@ -1287,7 +1287,7 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 **Impostare gli attributi delle filigrane**
 
-Per creare una nuova filigrana, è necessario impostare gli attributi della filigrana. L’attributo name deve sempre essere definito. Oltre all&#39;attributo name, è necessario impostare almeno uno dei seguenti attributi:
+Per creare una filigrana, è necessario impostare gli attributi della filigrana. L’attributo name deve sempre essere definito. Oltre all&#39;attributo name, è necessario impostare almeno uno dei seguenti attributi:
 
 * Testo personalizzato
 * DateIncluded
@@ -1622,9 +1622,9 @@ Il servizio di Rights Management tiene traccia di azioni specifiche nel momento 
 
 Gli eventi rientrano in una delle seguenti categorie:
 
-* Gli eventi di amministratore sono azioni correlate a un amministratore, ad esempio la creazione di un nuovo account di amministratore.
+* Gli eventi di amministratore sono azioni correlate a un amministratore, ad esempio la creazione di un account amministratore.
 * Gli eventi documento sono azioni correlate a un documento, ad esempio la chiusura di un documento protetto tramite policy.
-* Gli eventi dei criteri sono azioni correlate a un criterio, ad esempio la creazione di un nuovo criterio.
+* Gli eventi dei criteri sono azioni correlate a un criterio, ad esempio la creazione di un criterio.
 * Gli eventi di servizio sono azioni correlate al servizio di Rights Management, ad esempio la sincronizzazione con la directory utente.
 
 Puoi cercare eventi specifici utilizzando l’API Java di Rights Management o l’API di servizio web. La ricerca di eventi consente di eseguire attività quali la creazione di un file di registro di determinati eventi.
@@ -1652,7 +1652,7 @@ Prima di poter eseguire un&#39;operazione del servizio di Rights Management a li
 
 **Specificare gli eventi da cercare**
 
-È necessario specificare l&#39;evento da cercare. Ad esempio, è possibile cercare l’evento di creazione del criterio, che si verifica quando viene creato un nuovo criterio.
+Specifica l’evento da cercare. Ad esempio, è possibile cercare l’evento di creazione del criterio, che si verifica quando viene creato un nuovo criterio.
 
 **Cerca l’evento**
 
@@ -1977,7 +1977,7 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 **Recuperare un documento di Word**
 
-Per applicare una policy è necessario recuperare un documento di Word. Dopo aver applicato una policy al documento di Word, gli utenti saranno soggetti a restrizioni quando utilizzano il documento. Se, ad esempio, la policy non consente l&#39;apertura del documento in modalità non in linea, gli utenti devono essere in linea per aprire il documento.
+Recuperare un documento di Word per applicare una policy. Dopo aver applicato una policy al documento di Word, gli utenti saranno soggetti a restrizioni quando utilizzano il documento. Se, ad esempio, la policy non consente l&#39;apertura del documento in modalità non in linea, gli utenti devono essere in linea per aprire il documento.
 
 **Applicare una policy esistente al documento di Word**
 
@@ -2132,7 +2132,7 @@ Prima di poter eseguire un’operazione del servizio Document Security a livello
 
 **Recuperare un documento Word protetto tramite policy**
 
-Per rimuovere una policy, è necessario recuperare un documento Word protetto tramite policy. Se si tenta di rimuovere una policy da un documento di Word non protetto da una policy, verrà generata un&#39;eccezione.
+Recuperare un documento Word protetto tramite policy per rimuovere una policy. Se si tenta di rimuovere una policy da un documento di Word non protetto da una policy, verrà generata un&#39;eccezione.
 
 **Rimuovere la policy dal documento di Word**
 

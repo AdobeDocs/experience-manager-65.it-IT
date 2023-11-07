@@ -2,7 +2,7 @@
 title: Note generali sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 note che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4675'
 ht-degree: 5%
@@ -83,7 +83,7 @@ Sono stati apportati diversi miglioramenti all’interfaccia utente per renderla
 
 #### Archivio {#repository}
 
-* Le basi di Adobe Experience Manager 6.5 si basano sulle versioni aggiornate del framework basato su OSGi (Apache Sling e Apache Felix) e del Java™ Content Repository: Apache Jackrabbit Oak 1.10.2.
+* La base di Adobe Experience Manager 6.5 si basa sulle versioni aggiornate del framework basato su OSGi (Apache Sling e Apache Felix) e del Java™ Content Repository: Apache Jackrabbit Oak 1.10.2.
 * Per una panoramica dei problemi risolti, vedi [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) e [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
@@ -147,25 +147,25 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 
    * Operatore &quot;in&quot; per stringhe, array e oggetti:
 
-      ```html
-      ${'a' in 'abc'}
-      ${100 in myArray}
-      ${'a' in myObject}
-      ```
+     ```html
+     ${'a' in 'abc'}
+     ${100 in myArray}
+     ${'a' in myObject}
+     ```
 
    * Dichiarazioni di variabili con data-sly-set :
-      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Elenca e ripeti parametri di controllo: begin, step, end:
-      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identificatori per data-sly-unwrap:
 
-      ```html
-      <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-      </div>
-      ```
+     ```html
+     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+     </div>
+     ```
 
    * Supporto per numeri negativi
 
@@ -241,7 +241,6 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 >
 >* Entrambi `at.js. 1.x` e `at.js 2.x` sono supportate se utilizzi l’esportazione di Frammenti di esperienza in Target e se esegui Attività all’interno della console di Target.
 
-
 * L’integrazione di Adobe Target ora utilizza l’API di Target Standard. Le versioni precedenti di AEM utilizzano l’API HTTP di Target Classic, che ora è obsoleta.
 * Adobe Target `mbox.js` è inclusa la versione 63 di. L’Adobe consiglia vivamente di passare all’implementazione `at.js` v1.x.
 * `at.js` È ora inclusa la versione 1.5.0 di. L’Adobe consiglia di utilizzare [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) per effettuare il provisioning `at.js` v1.x nel sito.
@@ -253,7 +252,7 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 
 #### AEM e Commerce {#aem-commerce}
 
-I miglioramenti apportati a Commerce Integration Framework sono soggetti a un ciclo di rilascio più rapido a partire dalla versione 6.4 dell’AEM. [Fai clic qui per ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
+I miglioramenti apportati alla Commerce integration framework sono soggetti a un ciclo di rilascio più rapido a partire dalla versione 6.4 dell’AEM. [Fai clic qui per ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
 
 #### Componente aggiuntivo per community {#communities-add-on}
 
@@ -309,7 +308,7 @@ Gli amministratori del sito possono creare un gruppo a qualsiasi livello gerarch
 La funzionalità di abilitazione delle community di AEM 6.5 supporta il modello di riferimento per oggetti di contenuto condivisibili [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) motore.
 
 * Supporto della navigazione tramite tastiera nei componenti di attivazione
-* I componenti di attivazione (ad esempio, Riproduzione di cataloghi e corsi, Assegnazioni, Libreria file) in AEM Communities supportano la navigazione da tastiera per migliorare l’accessibilità.
+* I componenti di abilitazione (ad esempio, Riproduzione di cataloghi e corsi, Assegnazioni, Libreria file) in AEM Communities supportano la navigazione da tastiera per migliorare l’accessibilità.
 
 ##### Altri miglioramenti {#other-enhancements}
 
@@ -374,7 +373,7 @@ Nelle grandi aziende è possibile distribuire l&#39;infrastruttura necessaria pe
 
 [!DNL Dynamic Media] offre funzioni avanzate di authoring e distribuzione di contenuti rich media in [!DNL Experience Manager Assets] per promuovere esperienze all’avanguardia, immersive e personalizzate. Caricando una singola risorsa principale di alta qualità e utilizzando il rendering e i visualizzatori cloud avanzati di Adobe, puoi fornire al volo qualsiasi combinazione di rendering per supportare la strategia multimediale della tua organizzazione.
 
-Per maggiori dettagli sulle nuove [!DNL Dynamic Media] funzioni, consulta [Note sulla versione di Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Per maggiori dettagli sulle nuove [!DNL Dynamic Media] funzioni, consulta [Note sulla versione di Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ##### Supporto video 360 {#video-support}
 
@@ -522,20 +521,20 @@ Per [!DNL Adobe Experience Manager] 6,5 [leggi l’elenco delle funzionalità ob
 
 * Viene segnalato un problema che comporta l’eliminazione di CRX-Quickstart e del relativo contenuto.
 
-   Per ciascuna di queste azioni, assicurati che la proprietà `htmllibmanager.fileSystemOutputCacheLocation` non è una stringa vuota:
+  Per ciascuna di queste azioni, assicurati che la proprietà `htmllibmanager.fileSystemOutputCacheLocation` non è una stringa vuota:
 
    1. Chiamata `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. Aggiornamento a AEM 6.5.
    3. Esecuzione della &quot;migrazione lenta dei contenuti&quot; su AEM 6.5.
 
-   A [Knowledge Base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) Questo articolo è disponibile con ulteriori dettagli e soluzioni per questo problema.
+  A [Knowledge Base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) Questo articolo è disponibile con ulteriori dettagli e soluzioni per questo problema.
 
 * Se utilizzi JDK 11 con istanza AEM 6.5, alcune pagine potrebbero risultare vuote dopo la distribuzione di alcuni pacchetti. Nel file di registro viene visualizzato il seguente messaggio di errore:
 
-   ```java
-   *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
-   java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
-   ```
+  ```java
+  *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
+  java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+  ```
 
 Per risolvere l&#39;errore:
 
@@ -571,7 +570,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * In un modulo adattivo da, quando un servizio del modello dati modulo viene richiamato dall’editor di regole per aggiornare dinamicamente i valori del componente di scelta immagine, i valori del componente di scelta immagine non vengono aggiornati. (CQ-4254754)
 * Il programma di installazione di AEM Forms Designer richiede la versione a 32 bit di [Pacchetto runtime ridistribuibile Visual C++ 2012](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) e [Pacchetti runtime ridistribuibili Visual C++ 2013](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1). Prima di avviare l’installazione, assicurati che siano installati i pacchetti runtime ridistribuibili precedentemente menzionati. (CQ-4265668)
 
-* PDF Generator non supporta l&#39;autenticazione basata su smart card. Quando un amministratore abilita Criteri di gruppo `Interactive Logon: Require Smart card` su un server Windows, tutti gli utenti esistenti di PDF Generator vengono invalidati.
+* PDF Generator non supporta l&#39;autenticazione basata su smart card. Quando un amministratore abilita Criteri di gruppo `Interactive Logon: Require Smart card` su un server Windows, tutti gli utenti PDF Generator esistenti vengono invalidati.
 
 * Quando un modulo adattivo è configurato per aggiornare dinamicamente i valori di un componente e l’istanza Publish che ospita il modulo è accessibile tramite Dispatcher, la funzionalità per aggiornare dinamicamente i valori di un campo smette di funzionare. Per risolvere il problema, nell’istanza di pubblicazione, apri CRXDE, passa a `/libs/fd/af/runtime/clientlibs/guideChartReducer`e creare la proprietà elencata in di seguito.
 
@@ -583,7 +582,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    * Multiplo: False
    * Creazione automatica: False
 
-   La proprietà consente alle librerie client nella cartella runtime di accedere ai proxy. (CQ-4268679)
+  La proprietà consente alle librerie client nella cartella runtime di accedere ai proxy. (CQ-4268679)
 
 * All’avvio di AEM Forms, il `SAX Security Manager could not be setup` viene visualizzato un avviso.
 * Quando apri un PDF protetto con AEM Forms Document Security su un Apple iOS o iPadOS in esecuzione nella versione 20.10.00 di Adobe Acrobat Reader

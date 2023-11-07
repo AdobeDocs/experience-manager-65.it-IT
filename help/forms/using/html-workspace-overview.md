@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ La mappatura tra vari tipi di personalizzazioni in entrambe le aree di lavoro è
    <td>
     <ol>
      <li><a href="/help/forms/using/description-reusable-components.md">Utilizzo dei componenti riutilizzabili</a></li>
-     <li><a href="/help/forms/using/creating-new-login-screen.md">Creazione di una nuova schermata di accesso</a></li>
+     <li><a href="/help/forms/using/creating-new-login-screen.md">Creazione di una schermata di accesso</a></li>
      <li>Contenitore di approvazione obsoleto.</li>
     </ol> </td>
   </tr>

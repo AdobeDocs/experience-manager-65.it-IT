@@ -11,7 +11,7 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Un modulo adattivo che fa riferimento a un XFA ha i suoi campi associati a quell
 La rimozione di un modello di modulo danneggia il modulo adattivo o il modello di modulo dipendente. Un modulo adattivo di questo tipo è talvolta indicato informalmente come modulo sporco. Nell’interfaccia utente di AEM Forms, puoi trovare i moduli dirty nei due modi seguenti.
 
 * Nella miniatura del modulo adattivo nell’elenco delle risorse viene visualizzata un’icona di avviso e il seguente messaggio viene visualizzato quando passi il puntatore sull’icona di avviso.\
-  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so go to Authoring mode and rebase it with new version.`
 
 ![Avviso per un modulo adattivo non sincronizzato dopo l’aggiornamento dell’XFA associato](assets/dirtyaf.png)
 

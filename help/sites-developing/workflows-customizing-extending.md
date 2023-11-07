@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 2%
@@ -467,7 +467,7 @@ public class MyProcess implements WorkflowProcess {
 
 ### Utilizzo di ECMAScript {#using-ecmascript}
 
-Gli script ECMA consentono agli sviluppatori di script di implementare i passaggi del processo. Gli script si trovano nell’archivio JCR ed vengono eseguiti da lì.
+Gli script ECMA consentono agli sviluppatori di script di implementare i passaggi del processo. Gli script si trovano nell’archivio JCR e vengono eseguiti da lì.
 
 Nella tabella seguente sono elencate le variabili immediatamente disponibili per gli script di elaborazione, che consentono di accedere agli oggetti dell’API Java del flusso di lavoro.
 
@@ -528,7 +528,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 Per utilizzare lo script:
 
-1. Crea lo script (ad esempio con CRXDE Liti) e salvalo nell’archivio seguente `//apps/workflow/scripts/`
+1. Crea lo script (ad esempio, con CRXDE Liti) e salvalo nell’archivio seguente `//apps/workflow/scripts/`
 1. Per specificare un titolo che identifichi lo script in **Passaggio processo** finestra di dialogo per modifica, aggiungi le seguenti proprietà alla `jcr:content` nodo dello script:
 
    | Nome | Tipo | Valore |
@@ -619,7 +619,7 @@ Per definire un passaggio partecipante come componente del servizio OSGI (classe
 
 È possibile creare uno script ECMA che seleziona l&#39;utente a cui è assegnato l&#39;elemento di lavoro che **Passaggio partecipante** genera. Lo script deve includere una funzione denominata `getParticipant` che non richiede argomenti e restituisce un `String` che contiene l’ID di un utente o gruppo.
 
-Gli script si trovano nell’archivio JCR ed vengono eseguiti da lì.
+Gli script si trovano nell’archivio JCR e vengono eseguiti da lì.
 
 Nella tabella seguente sono elencate le variabili che forniscono accesso immediato agli oggetti Java del flusso di lavoro negli script.
 
@@ -645,7 +645,7 @@ function getParticipant() {
 }
 ```
 
-1. Crea lo script (ad esempio con CRXDE Liti) e salvalo nell’archivio seguente `//apps/workflow/scripts`
+1. Crea lo script (ad esempio, con CRXDE Liti) e salvalo nell’archivio seguente `//apps/workflow/scripts`
 1. Per specificare un titolo che identifichi lo script in **Passaggio processo** finestra di dialogo per modifica, aggiungi le seguenti proprietà alla `jcr:content` nodo dello script:
 
    | Nome | Tipo | Valore |
@@ -803,7 +803,7 @@ Un modo semplice per iniziare a creare un passaggio personalizzato consiste nel 
    >
    >Questo passaggio non si applica all’editor di modelli dell’interfaccia utente classica.
 
-1. Quindi inserisci il passaggio copiato nella cartella /apps, ad esempio:
+1. Quindi inserisci il passaggio copiato nella cartella /apps; ad esempio, come:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -825,7 +825,7 @@ Un modo semplice per iniziare a creare un passaggio personalizzato consiste nel 
 
      Deve ereditare da un passaggio esistente.
 
-     In questo esempio ereditiamo dal passaggio base in `cq/workflow/components/model/step`, ma puoi utilizzare altri super tipi come `participant`, `process`, ecc.
+     In questo esempio ereditiamo dal passaggio base in `cq/workflow/components/model/step`, ma puoi utilizzare altri super tipi come `participant`, `process`e così via.
 
    * `jcr:title`
 
@@ -1042,4 +1042,4 @@ Il `_cq_dialog/.content.xml` esempio utilizzato in questo esempio:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  Non è necessario modificare nulla in `/libs`, è sufficiente utilizzarli come esempi. Se desideri sfruttare uno dei passaggi esistenti, copiali in `/apps` e modificarli qui.
+>  Non è necessario modificare nulla in `/libs`, è sufficiente utilizzarli come esempi. Se desideri utilizzare uno dei passaggi esistenti, copiali in `/apps` e modificarli qui.

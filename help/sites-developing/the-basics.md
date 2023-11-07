@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3310'
+source-wordcount: '3306'
 ht-degree: 1%
 
 ---
@@ -333,7 +333,7 @@ Di seguito sono riportati gli elementi di maggiore interesse per lo sviluppo:
 
 **Elemento** Un elemento è un nodo o una proprietà.
 
-Per informazioni dettagliate sulla manipolazione degli oggetti Item, consultare [Documenti Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) dell’interfaccia javax.jcr.Item
+Per informazioni dettagliate sulla manipolazione degli oggetti Item, vedere [Documenti Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) dell’interfaccia javax.jcr.Item
 
 **Nodo (e relative proprietà)** I nodi e le loro proprietà sono definiti nella specifica JCR API 2.0 (JSR 283). Memorizzano il contenuto, le definizioni degli oggetti, gli script di rendering e altri dati.
 
@@ -349,7 +349,7 @@ Ad esempio, per ottenere le proprietà del nodo corrente, puoi utilizzare il seg
 
 CurrentNode è l&#39;oggetto nodo corrente.
 
-Per ulteriori informazioni sulla manipolazione degli oggetti Node, consultare [Documenti Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Per ulteriori informazioni sulla manipolazione degli oggetti Node, vedere [Documenti Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** In AEM tutti gli input dell&#39;utente sono gestiti da widget. Queste vengono spesso utilizzate per controllare la modifica di un contenuto.
 
@@ -388,7 +388,7 @@ Ad esempio, per ottenere il nome della pagina corrente, è possibile utilizzare 
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage è l&#39;oggetto della pagina corrente. Per ulteriori informazioni sulla manipolazione degli oggetti Page, consultare [Documenti Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+TcurrentPage è l&#39;oggetto della pagina corrente. Per ulteriori informazioni sulla manipolazione degli oggetti Page, vedere [Documenti Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gestione pagine** Il gestore pagine è un&#39;interfaccia che fornisce metodi per le operazioni a livello di pagina.
 
@@ -396,7 +396,7 @@ Ad esempio, per ottenere la pagina contenitore di una risorsa, puoi utilizzare i
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-PageManager è l&#39;oggetto di gestione pagina e myResource un oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore della pagina, consulta [Documenti Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+PageManager è l&#39;oggetto di gestione pagina e myResource un oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore della pagina, vedi [Documenti Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Struttura all’interno del repository {#structure-within-the-repository}
 

@@ -3,9 +3,9 @@ title: Creazione guidata copia lingua
 description: Scopri come utilizzare la Creazione guidata copia in lingua in Adobe Experience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: 2d87022aa2223df261e245fba65df054c041cd69
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '214'
 ht-degree: 33%
 
 ---
@@ -40,7 +40,7 @@ Per accedere a questa procedura guidata:
    >
    >Per impostazione predefinita, è disponibile una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Consulta [Configurazione del framework di integrazione della traduzione](/help/sites-administering/tc-tic.md).
 
-1. Il **Successivo** consente di accedere al **Traduci** passaggio della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere elementi a un progetto di traduzione esistente.
+1. Il **Successivo** consente di accedere al **Traduci** passaggio della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un progetto di traduzione o aggiungere elementi a un progetto di traduzione esistente.
 
    >[!NOTE]
    >

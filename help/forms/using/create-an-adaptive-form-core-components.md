@@ -9,13 +9,13 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1794'
 ht-degree: 23%
 
 ---
-
 
 # Creazione di componenti core basati su Adaptive Forms {#creating-an-adaptive-form-core-components}
 
@@ -33,7 +33,7 @@ I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si ri
 
 Prima di iniziare, scopri i tipi di componenti dei moduli disponibili:
 
-* [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it): si tratta di componenti di acquisizione dati standardizzati. Questi componenti forniscono funzionalità di personalizzazione e riducono i tempi di sviluppo e i costi di manutenzione per le esperienze di registrazione digitale. Uno sviluppatore può facilmente personalizzare e assegnare uno stile a questi componenti. L’Adobe consiglia di sfruttare questi componenti moderni ed estensibili per sviluppare Forms adattivo.
+* [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it): si tratta di componenti di acquisizione dati standardizzati. Questi componenti forniscono funzionalità di personalizzazione e riducono i tempi di sviluppo e i costi di manutenzione per le esperienze di registrazione digitale. Uno sviluppatore può facilmente personalizzare e assegnare uno stile a questi componenti. L’Adobe consiglia di utilizzare questi componenti moderni ed estensibili per sviluppare Forms adattivo.
 
 * [Componenti di base dei moduli adattivi](creating-adaptive-form.md): si tratta dei classici (precedenti) componenti di acquisizione dati. Puoi continuare a utilizzarli per modificare i componenti di base esistenti basati su modulo adattivo. Se stai creando moduli, l’Adobe consiglia di utilizzare  [Componenti core Forms adattivi](/help/forms/using/create-adaptive-form.md) per creare un Forms adattivo.
 

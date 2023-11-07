@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 role: Developer
 exl-id: 76d855cf-ebfa-487a-b1c8-755e7e45dd73
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida introduttiva disponibile in Programmazione con AEM Forms si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida introduttiva alla programmazione con AEM Forms si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Guida rapida (modalità SOAP): creazione di un criterio utilizzando l’API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
@@ -82,7 +82,7 @@ Nell&#39;esempio di codice Java seguente viene creato un nuovo criterio denomina
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -91,7 +91,7 @@ Nell&#39;esempio di codice Java seguente viene creato un nuovo criterio denomina
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -208,13 +208,13 @@ Esempio Nell&#39;esempio di codice Java seguente viene modificato un criterio de
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -312,7 +312,7 @@ Esempio Nell&#39;esempio di codice Java seguente viene eliminato un criterio den
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -321,7 +321,7 @@ Esempio Nell&#39;esempio di codice Java seguente viene eliminato un criterio den
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -401,13 +401,13 @@ Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -510,7 +510,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene rimossa una policy
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -519,7 +519,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene rimossa una policy
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -617,7 +617,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene revocato un d
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -626,7 +626,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene revocato un d
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -731,7 +731,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene esaminato un 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -740,7 +740,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene esaminato un 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -849,7 +849,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene ripristinato 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -858,7 +858,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene ripristinato 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -952,14 +952,14 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene creata una nu
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1085,14 +1085,14 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene creata una nu
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1172,7 +1172,7 @@ public class TextWatermarks {
             element1.setEndPage(1);// The watermark will appear only on first
                                     // page, start page is 1 by default.
 
-            // Create a new element.
+            // Create an element.
             Watermark2Element element2 = InfomodelObjectFactory
                     .createWatermark2Element();
             element2.setName("Second element");
@@ -1234,14 +1234,14 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificata un
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1349,7 +1349,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificata un
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1358,7 +1358,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificata un
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1447,7 +1447,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene eseguita la ricerca d
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1456,7 +1456,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene eseguita la ricerca d
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1560,7 +1560,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1569,7 +1569,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1675,7 +1675,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene rimossa una policy
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1684,7 +1684,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene rimossa una policy
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdkK/client-libs/thirdparty
      *
@@ -1780,14 +1780,14 @@ Nell&#39;esempio di codice Java seguente viene creato un nuovo criterio astratto
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1897,14 +1897,14 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificato un
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -1996,14 +1996,14 @@ Esempio Nell&#39;esempio di codice Java seguente viene eliminato un criterio ast
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -2083,14 +2083,14 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene illustrato il
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a
@@ -2194,14 +2194,14 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene illustrato co
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a

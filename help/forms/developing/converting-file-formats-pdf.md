@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7848'
+source-wordcount: '7847'
 ht-degree: 0%
 
 ---
@@ -619,7 +619,7 @@ In questa tabella sono elencati i tipi di informazioni utilizzati per la stampa 
   <tr>
    <td><p>Script </p></td>
    <td><p>Specifica le interazioni tra il servizio Generate PDF e un'applicazione nativa. Tali interazioni in genere indirizzano l’applicazione a stampare un file sul driver di Adobe PDF. </p><p>Lo script contiene istruzioni che indirizzano l'applicazione nativa ad aprire finestre di dialogo specifiche e che forniscono risposte specifiche ai campi e ai pulsanti presenti in tali finestre di dialogo. </p></td>
-   <td><p>Il servizio Generate PDF include file di script per tutte le applicazioni native supportate. È possibile modificare questi file utilizzando un'applicazione di modifica XML.</p><p>Per aggiungere il supporto per una nuova applicazione nativa, è necessario creare un nuovo file di script. (vedere <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creazione o modifica di un ulteriore file XML di finestra di dialogo per un'applicazione nativa</a>.) </p></td>
+   <td><p>Il servizio Generate PDF include file di script per tutte le applicazioni native supportate. È possibile modificare questi file utilizzando un'applicazione di modifica XML.</p><p>Per aggiungere il supporto per una nuova applicazione nativa, è necessario creare un file script. (vedere <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creazione o modifica di un ulteriore file XML di finestra di dialogo per un'applicazione nativa</a>.) </p></td>
   </tr>
   <tr>
    <td><p>Istruzioni generiche della finestra di dialogo </p></td>

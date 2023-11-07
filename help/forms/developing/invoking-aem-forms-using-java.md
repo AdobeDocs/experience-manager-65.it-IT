@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5396'
+source-wordcount: '5393'
 ht-degree: 0%
 
 ---
@@ -632,7 +632,7 @@ In questo scenario, un’applicazione client viene eseguita nella propria JVM e 
 
 ### Applicazione client che richiama istanze AEM Forms in cluster {#client-application-invoking-clustered-aem-forms-instances}
 
-Il diagramma seguente mostra un’applicazione client in esecuzione nella propria JVM e che richiama istanze AEM Forms situate in un cluster.
+Il diagramma seguente mostra un’applicazione client in esecuzione nella propria JVM e che richiama istanze AEM Forms in un cluster.
 
 Questo scenario è simile a un’applicazione client che richiama un’istanza autonoma di AEM Forms. Tuttavia, l’URL del provider è diverso. Se un&#39;applicazione client desidera connettersi a un server applicazioni J2EE specifico, è necessario modificare l&#39;URL per fare riferimento al server applicazioni J2EE specifico.
 

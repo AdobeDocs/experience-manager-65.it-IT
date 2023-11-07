@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 2%
@@ -475,7 +475,8 @@ Configurare il servizio Day CQ WCM Workflow Package Info Provider in modo che re
 
 >[!NOTE]
 >
->La scheda Flusso di lavoro della barra laterale utilizza il servlet PageInfo per ottenere un elenco di pacchetti del flusso di lavoro. Dall’elenco, puoi selezionare il pacchetto a cui aggiungere la pagina corrente. I filtri creati hanno effetto su questo elenco.
+>La scheda Flusso di lavoro del Sidekick utilizza il servlet PageInfo per ottenere un elenco di pacchetti del flusso di lavoro. Dall’elenco, puoi selezionare il pacchetto a cui aggiungere la pagina corrente. I filtri creati hanno effetto su questo elenco.
+>
 
 L’ID del servizio è `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Per creare un filtro, specifica un valore per `workflowpackageinfoprovider.filter` proprietà.
 
@@ -496,9 +497,9 @@ Il servizio applica il risultato cumulativo di tutti i filtri. Ad esempio, i seg
 >
 >Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi. Consulta [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per informazioni dettagliate.
 
-Ad esempio, per configurare il servizio utilizzando CRXDE Lite:
+Ad esempio, per configurare il servizio utilizzando CRXDE Liti:
 
-1. Apri CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Apri CRXDE Liti ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Nella cartella di configurazione dell’applicazione, crea un nodo:
 
    * Nome: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -516,7 +517,7 @@ Per configurare il servizio nell’origine del progetto:
 
 1. Individua o crea la cartella di configurazione per l’applicazione AEM nell’origine del progetto.
 
-   Ad esempio, se hai utilizzato l’archetipo multimodule del Content Package Maven Plugin per creare il progetto, il percorso della cartella è `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Ad esempio, se hai utilizzato l’archetipo multimodule del Content Package Maven Plugin per creare il progetto, il percorso della cartella è `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Nella cartella di configurazione, crea un file di testo denominato com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
 1. Copia il testo seguente nel file:
 
@@ -601,7 +602,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 }
 ```
 
-Nell&#39;esempio seguente, in CRXDE Lite, viene visualizzato il componente page configurato per l&#39;utilizzo del servizio PageUrlInfoProvider:
+Nell&#39;esempio seguente, in CRXDE Liti, viene visualizzato il componente page configurato per l&#39;utilizzo del servizio PageUrlInfoProvider:
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

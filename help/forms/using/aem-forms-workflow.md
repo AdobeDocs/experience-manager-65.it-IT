@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3681'
 ht-degree: 2%
@@ -95,7 +95,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 
    Per l’esempio di applicazione ipotecaria, configura la fase Assegna attività per utilizzare un modulo adattivo di sola lettura e visualizzare un documento PDF una volta completata l’attività. Inoltre, seleziona un gruppo di utenti autorizzato ad approvare la richiesta di prestito. Il giorno **Azioni** , disabilita la **Invia** opzione. Creare un **actionTaken** variabile del tipo di dati String e specificare la variabile come **Variabile percorso**. Ad esempio, actionTaken. Aggiungere inoltre le route di approvazione e rifiuto. I percorsi vengono visualizzati come azioni separate (pulsanti) nella casella in entrata AEM. Il flusso di lavoro seleziona un ramo in base all’azione (pulsante) toccata da un utente.
 
-   Puoi importare il pacchetto di esempio, disponibile per il download all’inizio della sezione, per il set completo di valori di tutti i campi della fase assegna attività configurata, ad esempio, per l’applicazione ipotecaria.
+   Puoi importare il pacchetto di esempio, disponibile per il download all’inizio della sezione, per il set completo di valori di tutti i campi della fase assegna attività configurata, ad esempio, applicazione ipotecaria.
 
 1. Trascina il componente Divisione OR dal browser dei passaggi al modello di flusso di lavoro. La suddivisione OR crea una suddivisione nel flusso di lavoro, dopo la quale è attivo un solo ramo. Questo passaggio ti consente di introdurre nel flusso di lavoro i percorsi di elaborazione condizionale. Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze.
 
@@ -121,7 +121,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 
    Per l&#39;esempio del mutuo, aggiungere un documento di record generato, due passaggi dell&#39;attività assegnati e un passaggio del documento di firma al ramo 1 del modello, come illustrato nell&#39;immagine seguente. Un passaggio dell’attività di assegnazione consiste nel visualizzare e inviare **documenti di prestito da firmare al richiedente** e un altro componente assegna attività è **per visualizzare i documenti firmati**. Aggiungete inoltre un componente Assegna attività al ramo 2. Viene attivato quando un utente tocca Rifiuta nella casella in entrata AEM.
 
-   Per il set completo di valori di tutti i campi dei passaggi dell’attività Assegna, del passaggio del documento record e del passaggio del documento firma configurati per esempio per l’applicazione del mutuo, importa il pacchetto di esempio, disponibile per il download all’inizio di questa sezione.
+   Per il set completo di valori di tutti i campi dei passaggi dell’attività Assegna, del passaggio del documento record e del passaggio del documento firma configurati, ad esempio, per l’applicazione ipotecaria, importa il pacchetto di esempio, disponibile per il download all’inizio di questa sezione.
 
    Il modello di flusso di lavoro è pronto. Puoi avviare il flusso di lavoro attraverso vari metodi. Per ulteriori informazioni, consulta [Avviare un flusso di lavoro incentrato su Forms su OSGi](#launch).
 
@@ -277,9 +277,9 @@ Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del
 
 ## Parametrizza i dati sensibili per le variabili del flusso di lavoro e memorizzali in archivi di dati esterni {#externalize-wf-variables}
 
-Qualsiasi dato inviato da moduli adattivi a [!DNL Experience Manager] I flussi di lavoro possono contenere dati PII (personalmente identificabili) o SPD (Sensitive Personal Data, dati personali sensibili) degli utenti finali della tua azienda. Tuttavia, non è obbligatorio archiviare i dati in [!DNL Adobe Experience Manager] [Archivio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). È possibile esternalizzare l’archiviazione dei dati degli utenti finali nell’archiviazione dei dati gestita (ad esempio nell’archiviazione BLOB di Azure) parametrizzando le informazioni in [variabili del flusso di lavoro](/help/forms/using/variable-in-aem-workflows.md).
+Qualsiasi dato inviato da moduli adattivi a [!DNL Experience Manager] I flussi di lavoro possono contenere dati PII (personalmente identificabili) o SPD (Sensitive Personal Data, dati personali sensibili) degli utenti finali della tua azienda. Tuttavia, non è obbligatorio archiviare i dati in [!DNL Adobe Experience Manager] [Archivio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). È possibile esternalizzare l’archiviazione dei dati degli utenti finali nell’archiviazione dei dati gestita (ad esempio, l’archiviazione BLOB di Azure) parametrizzando le informazioni in [variabili del flusso di lavoro](/help/forms/using/variable-in-aem-workflows.md).
 
-In un [!DNL Adobe Experience Manager] Flusso di lavoro di Forms, i dati vengono elaborati e trasmessi attraverso una serie di passaggi del flusso di lavoro tramite variabili di flusso di lavoro. Queste variabili sono proprietà denominate o coppie chiave-valore memorizzate nel nodo di metadati delle istanze del flusso di lavoro; ad esempio `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Queste variabili del flusso di lavoro possono essere esternalizzate in un archivio separato diverso da JCR e quindi elaborate da [!DNL Adobe Experience Manager] flussi di lavoro. [!DNL Adobe Experience Manager] fornisce API `[!UICONTROL UserMetaDataPersistenceProvider]` per memorizzare le variabili del flusso di lavoro nell’archiviazione esterna gestita. Per ulteriori informazioni sull’utilizzo delle variabili del flusso di lavoro per gli archivi dati di proprietà del cliente in [!DNL Adobe Experience Manager], vedi [Amministrare le variabili del flusso di lavoro per gli archivi dati esterni](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+In un [!DNL Adobe Experience Manager] Flusso di lavoro di Forms, i dati vengono elaborati e trasmessi attraverso una serie di passaggi del flusso di lavoro tramite variabili di flusso di lavoro. Queste variabili sono proprietà denominate o coppie chiave-valore memorizzate nel nodo di metadati delle istanze del flusso di lavoro; ad esempio, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Queste variabili del flusso di lavoro possono essere esternalizzate in un archivio separato diverso da JCR e quindi elaborate da [!DNL Adobe Experience Manager] flussi di lavoro. [!DNL Adobe Experience Manager] fornisce API `[!UICONTROL UserMetaDataPersistenceProvider]` per memorizzare le variabili del flusso di lavoro nell’archiviazione esterna gestita. Per ulteriori informazioni sull’utilizzo delle variabili del flusso di lavoro per gli archivi dati di proprietà del cliente in [!DNL Adobe Experience Manager], vedi [Amministrare le variabili del flusso di lavoro per gli archivi dati esterni](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] fornisce quanto segue [esempio](https://github.com/adobe/workflow-variable-externalizer) per memorizzare le variabili dalla mappa dei metadati del flusso di lavoro all’archiviazione BLOB di Azure, utilizzando l’API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Su righe simili puoi utilizzare l’esempio come guida da utilizzare [UserMetaDataPersistenceProvider] API per esternalizzare le variabili del flusso di lavoro in qualsiasi altra archiviazione dati esterna a [!DNL Adobe Experience Manager] e gestirli allo stesso modo.
 
 >[!NOTE]
@@ -313,11 +313,11 @@ Di seguito sono riportati gli scopi (ed esempi) di queste proprietà:
 
 * **accountName** è l’account di azure in cui devono essere memorizzati i dati.
 
-* **endpointSuffix**, ad esempio `core.windows.net`.
+* **endpointSuffix** ad esempio: `core.windows.net`.
 
 * **containerName** è il contenitore nell’account in cui devono essere memorizzati i dati. L&#39;esempio presuppone che il contenitore sia esistente.
 
-* **protocollo**, ad esempio `https` o `http`.
+* **protocollo** ad esempio: `https` o `http`.
 
 1. Configurare il modello di flusso di lavoro in [!DNL Adobe Experience Manager]. Per informazioni su come configurare il modello di flusso di lavoro per un archivio esterno, consulta [Configurare il modello di flusso di lavoro](#configure-aem-wf-model).
 

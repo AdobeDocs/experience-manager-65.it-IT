@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2397'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Panoramica del progetto AEM {#aem-project-overview}
 
-L’AEM viene spesso utilizzato in implementazioni ad alto impatto che potrebbero servire milioni di utenti. In genere, nelle istanze vengono distribuite applicazioni personalizzate che aumentano la complessità. Qualsiasi tentativo di aggiornare tale implementazione deve essere gestito in modo metodologico.
+L’AEM viene spesso utilizzato in implementazioni ad alto impatto che potrebbero servire milioni di utenti. In genere, nelle istanze vengono distribuite applicazioni personalizzate che aumentano la complessità. Qualsiasi sforzo per aggiornare tale implementazione deve essere gestito in modo metodologico.
 
 Questa guida aiuta a stabilire chiari obiettivi, fasi e risultati finali durante la pianificazione dell’aggiornamento. Si concentra sull&#39;esecuzione complessiva del progetto e sulle linee guida. Pur fornendo una panoramica dei passaggi effettivi di aggiornamento, fa riferimento alle risorse tecniche disponibili, ove opportuno. Esso dovrebbe essere utilizzato con le risorse tecniche disponibili di cui al documento.
 
@@ -85,7 +85,7 @@ Di seguito è riportato un elenco delle aree interessate da un tipico progetto d
  </tbody>
 </table>
 
-È importante assicurarsi di eseguire un sistema operativo supportato, Java™ Runtime, httpd e la versione di Dispatcher. Per ulteriori informazioni, vedere [Pagina Requisiti tecnici di AEM 6.5](/help/sites-deploying/technical-requirements.md). L’aggiornamento di questi componenti dovrà essere preso in considerazione nel piano del progetto e dovrebbe avvenire prima dell’aggiornamento dell’AEM.
+È importante assicurarsi di eseguire un sistema operativo supportato, Java™ Runtime, httpd e la versione di Dispatcher. Per ulteriori informazioni, vedere [Pagina Requisiti tecnici di AEM 6.5](/help/sites-deploying/technical-requirements.md). L’aggiornamento di questi componenti deve essere considerato nel piano di progetto e deve avvenire prima dell’aggiornamento dell’AEM.
 
 ## Fasi progetto {#project-phases}
 

@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3837'
 ht-degree: 8%
@@ -197,7 +197,7 @@ Gli script seguenti vengono utilizzati dall’integrazione di Dynamic Medie:
 
 Con il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
 
-Il dimensionamento delle miniature viene definito nel seguente formato: **[!UICONTROL larghezza:height:centro]**, ad esempio `80:80:false`. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è falso o true e se impostato su true, indica che l&#39;immagine miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
+Il dimensionamento delle miniature viene definito nel seguente formato: **[!UICONTROL larghezza:height:centro]** ad esempio: `80:80:false`. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è falso o true e se impostato su true, indica che l&#39;immagine miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
 
 >[!NOTE]
 >
@@ -237,7 +237,7 @@ I predefiniti immagine creati sono disponibili come rappresentazioni dinamiche q
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
-1. Nella proprietà limit, imposta il numero desiderato, ad esempio `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Nella proprietà limit, modifica il numero impostando il numero desiderato, ad esempio: `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tocca **[!UICONTROL Salva tutto]**.
 
 ## Creazione di un predefinito immagine Dynamic Medie {#creating-image-presets}

@@ -1,19 +1,15 @@
 ---
 title: Modelli di modulo adattivo
-seo-title: Adaptive Form Templates
 description: Crea modelli di modulo adattivi definendo la struttura di base e il contenuto iniziale del modulo tramite l’Editor modelli.
-seo-description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
-uuid: 317ca3ab-f809-49a7-a063-9d0c17a35fe4
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2040'
 ht-degree: 1%
 
 ---
@@ -39,9 +35,9 @@ Ad esempio, si desidera che tutti gli autori di moduli dispongano di determinate
 
 ## Utilizzo dei modelli {#working-with-templates}
 
-Per accedere all’editor modelli dal menu Strumenti, vai a **Adobe Experience Manager > Strumenti > Modelli**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili. L’AEM fornisce una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una nuova cartella per i modelli. Per ulteriori informazioni su come creare cartelle, consulta [Cartelle modelli](/help/sites-developing/page-templates-editable.md).
+Per accedere all’editor modelli dal menu Strumenti, vai a **Adobe Experience Manager > Strumenti > Modelli**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili. L’AEM fornisce una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, consulta [Cartelle modelli](/help/sites-developing/page-templates-editable.md).
 
-Dopo aver toccato per aprire una cartella, troverai un pulsante Crea che consente di creare un nuovo modello per i moduli adattivi.
+Dopo aver toccato per aprire una cartella, viene visualizzato un pulsante Crea che consente di creare un modello per i moduli adattivi.
 
 ### Creazione di un modello {#create-template}
 

@@ -2,10 +2,10 @@
 title: Percorso della tua prima esperienza con AEM Headless
 description: In questa parte del Percorso per sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 98%
+source-wordcount: '1988'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i can
 
 È invece necessario considerare il modo in cui il contenuto su superfici diverse è correlato in base a principi di organizzazione quali gerarchie di marchi e prodotti, categorie di beni o superfici o passaggi nel percorso del cliente. Ad esempio, se disponi di un insieme di superfici che supportano un marchio specifico di auto prodotte, potresti voler iniziare con un modello di contenuto per informazioni generali che sarebbe vero per l’intera auto e poi avere elementi più specifici come il contenuto necessario da quando l’auto si avvia a quando ci sono problemi di servizio. Un modello di questo tipo applicherà l’ereditarietà del contenuto generale del marchio automobilistico, consentendo al tempo stesso turni in base al contesto specifico necessario. Aiuta anche nella gestione futura degli aggiornamenti di questo contenuto in quanto puoi applicare il controllo in base a ruoli come l’addetto marketing o il responsabile prodotto per l’intero marchio automobilistico rispetto a un autore responsabile dell’esperienza di “avvio automobile”.
 
-Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client su cui deve essere mostrato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate per tutti i client che necessitano di tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i client sfruttino le API più efficienti per le loro esigenze aziendali.
+Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client su cui deve essere mostrato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate per tutti i client che necessitano di tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i clienti utilizzino le API più efficienti per le loro esigenze aziendali.
 
 ## Informazioni sugli ambienti {#understanding-environments}
 
@@ -68,15 +68,15 @@ Durante la fase di sviluppo, si consiglia di lavorare con un ambiente di svilupp
 
 ### Cooperazione tra sviluppatori e autori di contenuti {#cooperation}
 
-Gli sviluppatori devono disporre di un ambiente di sviluppo AEM configurato con i modelli di contenuto popolati. Lo sviluppatore sviluppa il client che utilizzerà i contenuti da AEM headless, in quanto gli autori dei contenuti stanno ancora creando i contenuti. Ecco perché le definizioni API sono molto importanti. Sfruttando l’SDK di AEM, lo sviluppatore può creare un hook di prova in modo da poter creare client test e unit test per assicurarsi che il client sia in grado di eseguire correttamente il rendering del contenuto.
+Gli sviluppatori devono disporre di un ambiente di sviluppo AEM configurato con i modelli di contenuto popolati. Lo sviluppatore sviluppa il client che utilizzerà i contenuti da AEM headless, in quanto gli autori dei contenuti stanno ancora creando i contenuti. Ecco perché le definizioni API sono molto importanti. Utilizzando l’SDK dell’AEM, lo sviluppatore può creare un hook di test in modo da consentire la creazione di test client e unit test per garantire che il client sia in grado di eseguire correttamente il rendering del contenuto.
 
-Gli autori e le autrici dei contenuti creano contenuti in base ai modelli di contenuto definiti nell’ambiente di staging. Utilizzando lo strumento per l’authoring dei frammenti di contenuto, l’autore crea un nuovo frammento di contenuto o ne modifica uno esistente. Prima di pubblicarlo, l’autore o l&#39;autrice può visualizzare un’anteprima dell’aspetto che avrà nel client collaborando con lo sviluppatore per inviare il modello di contenuto allo sviluppo o impostare un ambiente per sviluppatori in modo che gli autori e le autrici possano visualizzare in anteprima l’aspetto che avrà nel client.
+Gli autori e le autrici dei contenuti creano contenuti in base ai modelli di contenuto definiti nell’ambiente di staging. Con lo strumento di creazione dei frammenti di contenuto, l’autore crea un frammento di contenuto o ne modifica uno esistente. Prima di pubblicarlo, l’autore o l&#39;autrice può visualizzare un’anteprima dell’aspetto che avrà nel client collaborando con lo sviluppatore per inviare il modello di contenuto allo sviluppo o impostare un ambiente per sviluppatori in modo che gli autori e le autrici possano visualizzare in anteprima l’aspetto che avrà nel client.
 
 ## Configurazione {#setup}
 
 Prima di iniziare a utilizzare le funzionalità headless in AEM, assicurati che tutte le funzioni richieste siano abilitate. Questa sezione descrive i requisiti necessari. I passi effettivi per eseguire questi passaggi sono descritti più avanti nel [Percorso per sviluppatori headless di AEM.](#overview.md)
 
-Facoltativamente, puoi anche fare riferimento alle [risorse aggiuntive](#additional-resources) per ulteriori informazioni sui singoli argomenti.
+Facoltativamente, puoi anche visualizzare [risorse aggiuntive](#additional-resources) per ulteriori informazioni sui singoli argomenti.
 
 ### Configurazione {#configuration}
 

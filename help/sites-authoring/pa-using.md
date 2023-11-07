@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '633'
 ht-degree: 4%
 
 ---
@@ -33,10 +33,10 @@ Ogni colonna mostra un valore per il periodo di reporting corrente e indica anch
 >
 >Per modificare il periodo di aggiornamento: [configurare l’intervallo di importazione](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Apri **Sites** console; ad esempio [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
+1. Apri **Sites** console; ad esempio, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 1. Nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona per selezionare **Vista a elenco** (l’icona visualizzata dipende dal [vista corrente](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Di nuovo, nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona, quindi seleziona **Impostazioni vista**. Il **Configura colonne** viene aperta una finestra di dialogo. Apporta le modifiche necessarie e conferma con **Aggiorna**.
+1. Di nuovo, nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona, quindi seleziona **Impostazioni vista**. Il **Configura colonne** viene visualizzata una finestra di dialogo. Apporta le modifiche necessarie e conferma con **Aggiorna**.
 
    ![aa-04](assets/aa-04.png)
 
@@ -82,7 +82,7 @@ Apri [Approfondimenti contenuto](/help/sites-authoring/content-insights.md) dall
 
 >[!NOTE]
 >
->Questo verrà visualizzato se [L’Activity Map è stato configurato](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) per il tuo sito web.
+>Questo viene mostrato se [L’Activity Map è stato configurato](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) per il tuo sito web.
 
 >[!NOTE]
 >

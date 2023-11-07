@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3570'
+source-wordcount: '3568'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Gestione pacchetti è suddiviso in quattro aree funzionali principali:
 * **Registro attività** : questo pannello viene ridotto a icona in un primo momento ed espande per descrivere nel dettaglio l’attività di Gestione pacchetti, ad esempio quando un pacchetto viene generato o installato. Nella scheda Registro attività sono disponibili pulsanti aggiuntivi per:
    * **Cancella registro**
    * **Mostra/Nascondi**
-* **Barra degli strumenti** - La barra degli strumenti contiene pulsanti di aggiornamento per il pannello di navigazione sinistro e l&#39;elenco dei pacchetti, nonché pulsanti per la ricerca, la creazione e il caricamento di pacchetti.
+* **Barra degli strumenti** - La barra degli strumenti contiene i pulsanti di aggiornamento per il pannello di navigazione sinistro e l&#39;elenco dei pacchetti, nonché i pulsanti per la ricerca, la creazione e il caricamento dei pacchetti.
 
 ![Interfaccia utente di Gestione pacchetti](assets/package-manager-ui.png)
 
@@ -581,7 +581,7 @@ I pacchetti AEM possono essere utilizzati per creare e condividere contenuti tra
 
 [Distribuzione di software](https://downloads.experiencecloud.adobe.com) è un servizio centralizzato progettato per semplificare la ricerca e il download di pacchetti AEM.
 
-Per ulteriori informazioni, fare riferimento al [Documentazione di Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
+Per ulteriori informazioni, vedere [Documentazione di Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
 
 >[!NOTE]
 >

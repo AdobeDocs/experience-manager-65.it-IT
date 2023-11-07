@@ -2,10 +2,10 @@
 title: Scopri di più sullo sviluppo di CMS headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri la tecnologia headless e perché utilizzarla.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Questo documento è utile per comprendere la distribuzione dei contenuti headles
 
 ## Distribuzione contenuti full-stack {#full-stack}
 
-Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno sfruttati come punto centrale per gestire messaggi, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
+Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno utilizzati come punto centrale per gestire messaggistica, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
 
 ![Il classico CMS full-stack](assets/full-stack.png)
 
@@ -56,13 +56,13 @@ Gli utenti si aspettano un coinvolgimento indipendentemente dalla piattaforma o 
 
 La “testa” di qualsiasi sistema è generalmente il renderer di output di quel sistema, tipicamente un&#39;interfaccia utente grafica o un altro tipo di output grafico.
 
-Un server headless, ad esempio, è probabilmente situato in un rack in una stanza server da qualche parte e non ha monitor collegati. Per accedervi è necessario connettersi in remoto. In questo caso, il monitor è la “testa” perché si occupa del rendering dell’output del server. In qualità di consumatore del servizio, quando ti connetti da remoto, la tua “testa” è il monitor.
+Un server headless, ad esempio, è probabilmente posizionato in un rack in una sala server e non dispone di monitor collegati. Per accedervi è necessario connettersi in remoto. In questo caso, il monitor è la “testa” perché si occupa del rendering dell’output del server. In qualità di consumatore del servizio, quando ti connetti da remoto, la tua “testa” è il monitor.
 
 Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **contenuto** in modo standardizzato, un CMS headless omette il rendering finale dell’output, lasciando la **presentazione** del contenuto al servizio utilizzato.
 
 ![CMS headless](assets/headless-cms.png)
 
-I servizi utilizzati, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA), ecc., prendono i contenuti dal CMS headless e forniscono il loro rendering. Si occupano di fornire le teste per i tuoi contenuti.
+I servizi che fruiscono di tali servizi, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA) e così via, accettano i contenuti dal CMS headless e forniscono il proprio rendering. Si occupano di fornire le teste per i tuoi contenuti.
 
 Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In questo modo si sposta anche la responsabilità di eseguire il rendering dei contenuti ai servizi che ne hanno effettivamente bisogno e che sono spesso più adatti a tale rendering.
 
@@ -84,7 +84,7 @@ C&#39;è ancora bisogno di disporre di API REST affidabili. Tuttavia le richiest
 
 La distribuzione di contenuti headless utilizza spesso le API GraphQL. GraphQL consente un trasferimento senza stato simile, ma consente query più mirate, riducendo il numero totale di query necessarie e migliorando le prestazioni. È comune vedere le soluzioni utilizzare un mix di REST e GraphQL, essenzialmente scegliendo lo strumento migliore per il lavoro in corso.
 
-Qualunque sia l’API scelta, definendo un sistema headless basato su API comuni, puoi sfruttare il browser più recente e altre tecnologie web come le app web progressive (PWA). Le API creano un’interfaccia standard facilmente estensibile e adattabile.
+Qualunque sia l’API scelta, definendo un sistema headless basato su API comuni, puoi sfruttare il browser più aggiornato e altre tecnologie web come le app web progressive (PWA). Le API creano un’interfaccia standard facilmente estensibile e adattabile.
 
 In genere, il rendering del contenuto viene eseguito sul lato client. In genere, significa che qualcuno chiama il contenuto su un dispositivo mobile, che il CMS distribuisce il contenuto e quindi che il dispositivo mobile (il client) è responsabile del rendering del contenuto fornito. Se il dispositivo è vecchio o altrimenti lento, anche l’esperienza digitale è lenta.
 
@@ -96,7 +96,7 @@ Headless rende la distribuzione delle esperienze digitali ancora più flessibile
 
 Avere molti canali diversi può significare che ciascuno di essi dispone di propri sistemi di presentazione. Anche se tutti utilizzano lo stesso contenuto tramite le stesse API, l’esperienza può essere diversa a causa delle diverse presentazioni. Occorre prestare attenzione e preoccupazione per garantire la coerenza dell’esperienza del cliente.
 
-Implementando sistemi di progettazione attenti, condividendo librerie di pattern e sfruttando componenti di progettazione riutilizzabili e framework dal lato client aperti consolidati, è possibile garantire esperienze coerenti, ma questo deve essere pianificato.
+Implementando accurati sistemi di progettazione, condividendo librerie di modelli e utilizzando componenti di progettazione riutilizzabili e framework lato client aperti e consolidati, è possibile garantire esperienze coerenti, ma questo deve essere pianificato.
 
 ## Il futuro è headless e il futuro è adesso {#future}
 
@@ -110,7 +110,7 @@ Continuando a utilizzare questo percorso per sviluppatori, scoprirai come AEM su
 
 In qualità di leader di settore nella gestione dell&#39;esperienza digitale, Adobe si rende conto che la soluzione ideale per le sfide del mondo reale che i creatori di esperienze affrontano raramente è una scelta binaria. Questo è il motivo per cui AEM non solo supporta entrambi i modelli, ma consente anche di creare una combinazione unica perfetta che unisce i vantaggi di uno stack headless e completo, per aiutarti a servire al meglio i consumatori dei contenuti, ovunque si trovino.
 
-Questo percorso si concentra sul modello di distribuzione dei contenuti unicamente headless. Tuttavia, una volta appresi questi concetti fondamentali, è possibile continuare ad esplorare le possibilità di entrambi i modelli.
+Questo percorso si concentra sul modello di distribuzione dei contenuti unicamente headless. Tuttavia, una volta appresi questi concetti fondamentali, è possibile continuare a esplorare le possibilità di entrambi i modelli.
 
 ## Passaggio successivo {#what-is-next}
 

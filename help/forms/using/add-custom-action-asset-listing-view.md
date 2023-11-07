@@ -7,9 +7,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1351'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
 
-1. Nella cartella delle app, crea una cartella denominata items con un percorso/struttura simile a quello della cartella items che si trova nella cartella selection (selezione), seguendo la procedura descritta di seguito:
+1. Nella cartella delle app, crea una cartella denominata items con un percorso/struttura simile a quello della cartella items nella cartella selection (selezione), seguendo la procedura descritta di seguito:
 
    1. Fare clic con il pulsante destro del mouse **elementi** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
 
@@ -136,7 +136,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
         </tbody>
        </table>
 
-1. Nella cartella delle app, crea una cartella denominata js con un percorso/struttura simile a quello della cartella degli elementi che si trova nella cartella di amministrazione, seguendo la procedura riportata di seguito:
+1. Nella cartella apps, crea una cartella denominata js con un percorso/struttura simile a quello della cartella items nella cartella admin, seguendo la procedura riportata di seguito:
 
    1. Fare clic con il pulsante destro del mouse **js** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
 
@@ -226,7 +226,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       Il codice riportato sopra è per la gestione delle azioni specifiche per le lettere del comando creato in questa procedura. Per la gestione delle azioni relative ad altre risorse, modifica il codice JavaScript.
 
-1. Nella cartella delle app, crea una cartella denominata items con un percorso/struttura simile a quello della cartella items che si trova nella cartella actionhandlers, seguendo la procedura riportata di seguito:
+1. Nella cartella delle app, crea una cartella denominata items con un percorso/struttura simile a quello della cartella items nella cartella actionhandlers, seguendo la procedura riportata di seguito:
 
    1. Fare clic con il pulsante destro del mouse **elementi** cartella nel percorso seguente e selezionare **Sovrapponi nodo**:
 

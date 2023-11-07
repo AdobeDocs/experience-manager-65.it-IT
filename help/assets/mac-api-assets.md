@@ -6,9 +6,9 @@ role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1743'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Per accedere all’API:
 1. Apri il documento del servizio API in `https://[hostname]:[port]/api.json`.
 1. Segui le [!DNL Assets] collegamento del servizio che porta a `https://[hostname]:[server]/api/assets.json`.
 
-La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per tutti i tipi MIME. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio per i file PDF. Utilizza il codice di risposta per ulteriori analisi o azioni.
+La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per tutti i tipi MIME. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio, per i file PDF. Utilizza il codice di risposta per ulteriori analisi o azioni.
 
 Dopo il [!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite [!DNL Assets] tramite l’interfaccia web e l’API HTTP. L’API restituisce il messaggio di errore 404 se [!UICONTROL Ora di attivazione] è nel futuro o [!UICONTROL Ora di disattivazione] è nel passato.
 
@@ -211,7 +211,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 
 ## Creare una rappresentazione di una risorsa {#create-an-asset-rendition}
 
-Crea una nuova rappresentazione della risorsa. Se non viene fornito il nome del parametro della richiesta, il nome del file viene utilizzato come nome della rappresentazione.
+Creare una rappresentazione di una risorsa. Se non viene fornito il nome del parametro della richiesta, il nome del file viene utilizzato come nome della rappresentazione.
 
 **Parametri**: i parametri sono `name` per il nome della rappresentazione e `file` come riferimento di file.
 

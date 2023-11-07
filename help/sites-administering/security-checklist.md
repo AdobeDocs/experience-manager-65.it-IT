@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 465d3e956ecdd36eea5fe095e250652eedd4b3c5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3004'
 ht-degree: 1%
 
 ---
@@ -393,7 +393,7 @@ Anche se non consigliato, puoi disattivarlo nel caso sia necessaria la vecchia i
 
 ### Pacchetto di protezione autorizzazioni anonime {#anonymous-permission-hardening-package}
 
-Per impostazione predefinita, l’AEM memorizza i metadati del sistema, ad esempio `jcr:createdBy` o `jcr:lastModifiedBy` come proprietà del nodo, accanto al contenuto normale, nell’archivio. A seconda della configurazione e dell’impostazione del controllo di accesso, in alcuni casi ciò potrebbe causare l’esposizione di informazioni personali (PII, personally identifiable information), ad esempio quando tali nodi vengono visualizzati come JSON o XML non elaborati.
+Per impostazione predefinita, l’AEM memorizza i metadati del sistema, ad esempio `jcr:createdBy` o `jcr:lastModifiedBy` come proprietà del nodo, accanto al contenuto normale, nell’archivio. A seconda della configurazione e dell’impostazione del controllo di accesso, in alcuni casi questo potrebbe causare l’esposizione di informazioni personali (PII, personally identifiable information), ad esempio, quando tali nodi vengono riprodotti come JSON o XML non elaborati.
 
 Come tutti i dati dell’archivio, queste proprietà sono mediate dallo stack di autorizzazione Oak. L&#39;accesso ad esse dovrebbe essere limitato conformemente al principio del minimo privilegio.
 

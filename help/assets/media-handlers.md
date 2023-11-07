@@ -6,16 +6,16 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2156'
 ht-degree: 4%
 
 ---
 
 # Elaborare risorse utilizzando gestori di contenuti multimediali e flussi di lavoro {#processing-assets-using-media-handlers-and-workflows}
 
-[!DNL Adobe Experience Manager Assets] viene fornito con un set di flussi di lavoro e gestori di contenuti multimediali predefiniti per elaborare le risorse. Un flusso di lavoro definisce le attività da eseguire sulle risorse, quindi delega le attività specifiche ai gestori di file multimediali, ad esempio la generazione di miniature o l’estrazione di metadati.
+[!DNL Adobe Experience Manager Assets] viene fornito con un set di flussi di lavoro e gestori di contenuti multimediali predefiniti per elaborare le risorse. Un flusso di lavoro definisce le attività da eseguire sulle risorse, quindi delega le attività specifiche ai gestori di contenuti multimediali, ad esempio la generazione di miniature o l’estrazione di metadati.
 
 Un flusso di lavoro può essere configurato per essere eseguito automaticamente quando viene caricata una risorsa di un particolare tipo MIME. I passaggi di elaborazione sono definiti in termini di una serie di [!DNL Assets] gestori di contenuti multimediali. [!DNL Experience Manager] fornisce alcuni [gestori incorporati,](#default-media-handlers) e altri possono essere [sviluppo personalizzato](#creating-a-new-media-handler) o definito delegando il processo a un [strumento da riga di comando](#command-line-based-media-handler).
 
@@ -23,7 +23,7 @@ I gestori di file multimediali sono servizi in [!DNL Assets] che eseguono azioni
 
 >[!NOTE]
 >
->Consulta la [Formati di risorse supportati](assets-formats.md) per una descrizione di tutti i formati supportati da [!DNL Assets] nonché le funzioni supportate per ciascun formato.
+>Consulta la [Formati di risorse supportati](assets-formats.md) per una descrizione di tutti i formati supportati da [!DNL Assets] e funzioni supportate per ciascun formato.
 
 ## Gestori di file multimediali predefiniti {#default-media-handlers}
 
@@ -57,7 +57,7 @@ Tutti gli handler eseguono le operazioni seguenti:
 Per visualizzare i gestori di file multimediali attivi:
 
 1. Nel browser, passa a `https://localhost:4502/system/console/components`.
-1. Clic `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
+1. Fai clic su `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Viene visualizzato un elenco con tutti i gestori di file multimediali attivi. Ad esempio:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
@@ -83,9 +83,9 @@ Per attivare/disattivare un gestore di supporti:
 1. Aggiorna la pagina: accanto al gestore dei contenuti multimediali viene visualizzata un’icona che indica che è disabilitato.
 1. Per abilitare il gestore di file multimediali, fai clic su **[!UICONTROL Abilita]** accanto al nome del gestore dei contenuti multimediali.
 
-### Crea un nuovo gestore di contenuti multimediali {#creating-a-new-media-handler}
+### Creare un gestore di contenuti multimediali {#creating-a-new-media-handler}
 
-Per supportare un nuovo tipo di file multimediale o per eseguire attività specifiche su una risorsa, è necessario creare un nuovo gestore di file multimediali. Questa sezione descrive come procedere.
+Per supportare un nuovo tipo di file multimediale o per eseguire attività specifiche su una risorsa, è necessario creare un gestore di file multimediali. Questa sezione descrive come procedere.
 
 #### Classi e interfacce importanti {#important-classes-and-interfaces}
 
@@ -151,8 +151,8 @@ Dopo aver eseguito la procedura seguente, quando carichi un file TXT in [!DNL Ex
       * ID artefatto: myBundle.
       * Nome: Il mio [!DNL Experience Manager] pacchetto.
       * Descrizione: Questo è il mio [!DNL Experience Manager] pacchetto.
-   1. Clic **[!UICONTROL Fine]**.
 
+   1. Clic **[!UICONTROL Fine]**.
 
 1. Imposta il [!DNL Java] alla versione 1.5:
 
@@ -162,8 +162,8 @@ Dopo aver eseguito la procedura seguente, quando carichi un file TXT in [!DNL Ex
       * Livello di conformità del compilatore
       * Compatibilità dei file .class generati
       * Compatibilità sorgente
-   1. Fai clic su **[!UICONTROL OK]**. Nella finestra di dialogo, fai clic su **[!UICONTROL Sì]**.
 
+   1. Fai clic su **[!UICONTROL OK]**. Nella finestra di dialogo, fai clic su **[!UICONTROL Sì]**.
 
 1. Sostituisci il codice in `pom.xml` file con il seguente codice:
 
@@ -438,7 +438,7 @@ Dopo aver eseguito la procedura seguente, quando carichi un file TXT in [!DNL Ex
    1. Fare clic con il pulsante destro del mouse `myBundle` progetto, seleziona **[!UICONTROL Esegui come]**, quindi **[!UICONTROL Installazione Maven]**.
    1. Il bundle `myBundle-0.0.1-SNAPSHOT.jar` (contenente la classe compilata) viene creato in `myBundle/target`.
 
-1. In CRX explorer, crea un nuovo nodo in `/apps/myApp`. Nome = `install`, Tipo = `nt:folder`.
+1. In CRX explorer, crea un nodo sotto `/apps/myApp`. Nome = `install`, Tipo = `nt:folder`.
 1. Copiare il bundle `myBundle-0.0.1-SNAPSHOT.jar` e conservarlo in `/apps/myApp/install` ad esempio con WebDAV. Il nuovo gestore di testo è ora attivo in [!DNL Experience Manager].
 1. Nel browser, apri la [!UICONTROL Console di gestione web Apache Felix]. Seleziona la [!UICONTROL Componenti] e disabilita il gestore di testo predefinito `com.day.cq.dam.core.impl.handler.TextHandler`.
 
@@ -507,7 +507,7 @@ Separa i valori della [!UICONTROL Argomenti processo] utilizzando la virgola e n
 |---|---|
 | mime:&lt;mime-type> | Argomento facoltativo. Il processo viene applicato se la risorsa ha lo stesso tipo MIME dell’argomento. <br>È possibile definire diversi tipi MIME. |
 | tn:&lt;width>:&lt;height> | Argomento facoltativo. Il processo crea una miniatura con le dimensioni definite nell&#39;argomento. <br>È possibile definire più miniature. |
-| comando: &lt;command> | Definisce il comando eseguito. La sintassi dipende dallo strumento della riga di comando. È possibile definire un solo comando. <br>Per creare il comando è possibile utilizzare le seguenti variabili:<br>`${filename}`: nome del file di input, ad esempio original.jpg <br> `${file}`: nome del percorso completo del file di input, ad esempio `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directory del file di input, ad esempio `/tmp/cqdam0816.tmp` <br>`${basename}`: nome del file di input senza estensione, ad esempio originale <br>`${extension}`: estensione del file di input, ad esempio JPG. |
+| comando: &lt;command> | Definisce il comando eseguito. La sintassi dipende dallo strumento della riga di comando. È possibile definire un solo comando. <br>Per creare il comando è possibile utilizzare le seguenti variabili:<br>`${filename}`: nome del file di input, ad esempio original.jpg <br> `${file}`: nome del percorso completo del file di input, ad esempio, `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directory del file di input, ad esempio, `/tmp/cqdam0816.tmp` <br>`${basename}`: nome del file di input senza estensione, ad esempio originale <br>`${extension}`: estensione del file di input, ad esempio JPG. |
 
 Ad esempio, se [!DNL ImageMagick] è installato sul disco che ospita [!DNL Experience Manager] e se crei un passaggio del processo utilizzando [!UICONTROL CommandLineProcess] come Implementazione e i seguenti valori come [!UICONTROL Argomenti processo]:
 
@@ -530,4 +530,3 @@ Utilizza quanto segue [!UICONTROL Argomenti processo] per creare la rappresentaz
 >[!MORELIKETHIS]
 >
 >* [Elabora risorse](assets-workflow.md)
-

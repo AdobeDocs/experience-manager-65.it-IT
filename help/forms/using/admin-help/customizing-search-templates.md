@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ Puoi creare tutti i modelli di ricerca necessari.
 
    * Nella parte superiore della scheda Criteri, selezionare un elemento processo o un elemento task.
 
-      **Suggerimento**: *Se in precedenza è stato selezionato l&#39;elemento Nome processo e è stato specificato un processo, saranno disponibili per la selezione anche le variabili di processo definite in tale processo.*
+     **Suggerimento**: *Se in precedenza è stato selezionato l&#39;elemento Nome processo e è stato specificato un processo, saranno disponibili per la selezione anche le variabili di processo definite in tale processo.*
 
-      **Suggerimento**: *Se si seleziona l&#39;elemento Visibile attività, gli utenti potranno rimuovere le attività completate dai risultati della ricerca.*
+     **Suggerimento**: *Se si seleziona l&#39;elemento Visibile attività, gli utenti potranno rimuovere le attività completate dai risultati della ricerca.*
 
-      I campi dei criteri di ricerca per l’elemento selezionato vengono visualizzati nella parte inferiore della scheda Criteri.
+     I campi dei criteri di ricerca per l’elemento selezionato vengono visualizzati nella parte inferiore della scheda Criteri.
 
    * Per ogni elemento processo, elemento attività e variabile processo selezionati, compilare i campi di ricerca corrispondenti nella parte inferiore della scheda Criteri:
 
@@ -58,10 +58,9 @@ Puoi creare tutti i modelli di ricerca necessari.
       * (Facoltativo) Per consentire agli utenti di modificare il valore dell&#39;operando in Workspace, selezionare Consenti all&#39;utente di modificare l&#39;operando.
       * (Facoltativo) Per consentire agli utenti di modificare l&#39;operatore relazionale, selezionare Consenti all&#39;utente di selezionare un altro operatore relazionale. Nell&#39;elenco visualizzato selezionare gli operatori che saranno disponibili per l&#39;utente.
 
-      **Suggerimento**: *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server Forms. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
+     **Suggerimento**: *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server Forms. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
 
-      **Suggerimento**: *Puoi eliminare un elemento dal modello di ricerca facendo clic sull’icona Elimina accanto ai criteri di ricerca dell’elemento.*
-
+     **Suggerimento**: *Puoi eliminare un elemento dal modello di ricerca facendo clic sull’icona Elimina accanto ai criteri di ricerca dell’elemento.*
 
 1. (Facoltativo) Per ogni intestazione di colonna da visualizzare nei risultati della ricerca, fare clic sulla scheda Layout ed eseguire i passaggi seguenti:
 
@@ -80,7 +79,7 @@ Puoi creare tutti i modelli di ricerca necessari.
    * (Facoltativo) Per ordinare una colonna in ordine decrescente, seleziona la casella di controllo accanto al nome dell’elemento. Se la casella di controllo non è selezionata, la colonna viene ordinata in ordine crescente.
 
 1. Fare clic sulla scheda Salva.
-1. (Facoltativo) Se crei un nuovo modello di ricerca, assegnagli un nome univoco. Se non si specifica un nome univoco, è possibile sovrascrivere un modello esistente.
+1. (Facoltativo) Se crei un modello di ricerca, assegnagli un nome univoco. Se non si specifica un nome univoco, è possibile sovrascrivere un modello esistente.
 1. Fare clic sul pulsante Salva.
 
 ## Eliminare un modello di ricerca {#delete-a-search-template}

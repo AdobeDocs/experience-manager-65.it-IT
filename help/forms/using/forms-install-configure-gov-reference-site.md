@@ -4,9 +4,9 @@ description: Installa, configura e personalizza un pacchetto demo di AEM Forms.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4619'
 ht-degree: 3%
 
 ---
@@ -362,7 +362,7 @@ Questo pacchetto è preconfigurato per la connessione ad Adobe Analytics. I pass
 
    ![Configurazione del servizio cloud Analytics](assets/analytics_config.jpg)
 
-1. Fai clic sul pulsante &quot;Modifica&quot; per aggiornare la configurazione di Adobe Analytics (dovrai fornire il segreto condiviso). Fai clic su &quot;Connetti ad Analytics&quot; per connetterti e su &quot;OK&quot; per completare.
+1. Fai clic sul pulsante &quot;Modifica&quot; per aggiornare la configurazione di Adobe Analytics (devi fornire il segreto condiviso). Fai clic su &quot;Connetti ad Analytics&quot; per connetterti e su &quot;OK&quot; per completare.
 
    ![Adobe Analytics We.Gov](assets/wegov_adobe_analytics.jpg)
 
@@ -700,7 +700,7 @@ Le pagine incluse in questo pacchetto supportano anche il sistema di stili:
 
 [Sistema di stili](../../sites-authoring/style-system.md)
 
-Puoi anche fare riferimento a [Sistema di stili di personalizzazione dei modelli](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) per la documentazione sugli stili supportati
+Puoi anche vedere [Sistema di stili di personalizzazione dei modelli](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) per la documentazione sugli stili supportati
 
 ### Personalizzazione dei moduli adattivi {#adaptive-forms-customization}
 
@@ -749,7 +749,7 @@ Questa sezione contiene informazioni sulle funzioni demo e sulle decisioni di pr
 
 ### Abilitazione del test di accessibilità del componente aggiuntivo Chrome {#enable-chrome-add-on}
 
-Per eseguire il test di accessibilità, installa il plug-in Chrome disponibile qui `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+Per eseguire il test di accessibilità, installa il plug-in Chrome disponibile qui `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 Dopo l’installazione, carica la pagina da testare nel browser Chrome (nota: l’apertura di più schede può influire sul punteggio, è preferibile aprirne una sola). Una volta caricata la pagina, **clic con il pulsante destro del mouse** sulla pagina e seleziona **Audit** scheda. In questa sezione gli sviluppatori possono selezionare il tipo di controllo di audit che deve essere eseguito dal plug-in Accessibilità. Dopo aver selezionato tutte le opzioni desiderate, l’utente può fare clic sul pulsante Genera rapporto. Questo genera un documento PDF che mostra la valutazione complessiva dell’accessibilità e cosa può essere utilizzato per aumentarla complessivamente.
 

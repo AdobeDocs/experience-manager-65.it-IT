@@ -3,7 +3,7 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL dell’AEM per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 79fa58e63596301e1669903ce10dd8b2ba7d0a1b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4774'
 ht-degree: 56%
@@ -116,7 +116,7 @@ AEM fornisce funzionalità per convertire le query (di entrambi i tipi) in [Quer
 
 Le query GraphQL con l’utilizzo di POST non sono consigliate in quanto non sono memorizzate nella cache. Quindi, in un’istanza predefinita, Dispatcher è configurato per bloccarle.
 
-Anche se GraphQL supporta le richieste di GET, queste possono raggiungere dei limiti (ad esempio la lunghezza dell’URL) che possono essere evitati utilizzando query persistenti.
+Anche se GraphQL supporta le richieste di GET, queste possono raggiungere dei limiti (ad esempio, la lunghezza dell’URL) che possono essere evitati utilizzando query persistenti.
 
 Consulta [Abilita la memorizzazione nella cache delle query persistenti](#enable-caching-persisted-queries) per ulteriori dettagli.
 

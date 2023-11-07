@@ -1,19 +1,15 @@
 ---
 title: SSL/TLS per impostazione predefinita
-seo-title: SSL/TLS By Default
 description: Scopri come utilizzare SSL come funzione predefinita in AEM 6.5.
-seo-description: Learn how to use SSL by Default in AEM.
-uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -117,7 +113,7 @@ Di seguito sono riportati alcuni esempi sia di risposta corretta che di errore.
 <dt class='foundation-form-response-description'>Description</dt>
 <dd>HTTPS has been configured on port 8443. The private key and
 certificate were stored in the key store of the user ssl-service.
-Please take note of the key store password you provided. You will need
+Take note of the key store password you provided. You need
 it for any subsequent updating of the private key or certificate.</dd>
 </dl>
 <h2>Links</h2>
@@ -163,7 +159,7 @@ Di seguito è riportato un esempio per la creazione di un certificato autofirmat
 
 >[!NOTE]
 >
->L’utilizzo di un certificato autofirmato ha solo scopo esemplificativo e non deve essere utilizzato in produzione.
+>L’utilizzo di un certificato autofirmato ha solo scopo esemplificativo. Non utilizzare in produzione.
 
 1. Innanzitutto, crea la chiave privata:
 

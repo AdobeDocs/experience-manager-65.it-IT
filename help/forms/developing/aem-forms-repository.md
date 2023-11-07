@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9109'
+source-wordcount: '9095'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ Consideriamo ad esempio la seguente applicazione Forms denominata *Applicazioni/
 
 ![ww_ww_formrepository](assets/ww_ww_formrepository.png)
 
-Nella FormsFolder è presente un file denominato Loan.xdp. Per accedere a questa struttura di modulo, specificare il percorso completo (inclusa la versione): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+In FormsFolder è presente un file denominato Loan.xdp. Per accedere a questa struttura di modulo, specificare il percorso completo (inclusa la versione): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
 >Per informazioni sulla creazione di un’applicazione Forms tramite Workbench, consulta [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-Il percorso di una risorsa che si trova nell’archivio AEM Forms è:
+Il percorso di una risorsa nell’archivio AEM Forms è:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -50,7 +50,7 @@ I seguenti valori mostrano alcuni esempi di valori URI:
 >
 >Puoi sfogliare l’archivio di AEM Forms utilizzando un browser web. Per sfogliare l’archivio, immetti il seguente URL in un browser web `https://[server name]:[server port]/repository`. Puoi verificare i risultati della procedura di avvio rapido associati alla sezione Utilizzo dell’archivio di AEM Forms utilizzando un browser web. Ad esempio, se aggiungi contenuto all’archivio di AEM Forms, puoi visualizzarlo in un browser web. (vedere [Quick Start (modalità SOAP): scrittura di una risorsa utilizzando l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
-L’API dell’archivio fornisce una serie di operazioni che è possibile utilizzare per memorizzare e recuperare informazioni dall’archivio. Ad esempio, puoi ottenere un elenco di risorse o recuperare risorse specifiche memorizzate nell’archivio quando una risorsa è necessaria per l’elaborazione di un’applicazione.
+L’API dell’archivio fornisce diverse operazioni che è possibile utilizzare per memorizzare e recuperare informazioni dall’archivio. Ad esempio, puoi ottenere un elenco di risorse o recuperare risorse specifiche memorizzate nell’archivio quando una risorsa è necessaria per l’elaborazione di un’applicazione.
 
 >[!NOTE]
 >
@@ -305,7 +305,7 @@ Scrivere una risorsa utilizzando l’API del servizio Archivio (Java):
 
 1. Scrivi la risorsa nella cartella di destinazione
 
-   Richiama `ResourceRepositoryClient` dell&#39;oggetto `writeResource` e passare nell&#39;URI della cartella, nonché il `Resource` oggetto.
+   Richiama `ResourceRepositoryClient` dell&#39;oggetto `writeResource` e passare nell&#39;URI della cartella e il `Resource` oggetto.
 
 **Consulta anche**
 
@@ -354,7 +354,7 @@ Scrivere una risorsa utilizzando l’API del servizio Archivio (servizio web):
 
 1. Scrivi la risorsa nella cartella di destinazione
 
-   Richiama `RepositoryServiceService` dell&#39;oggetto `writeResource` e passare nell&#39;URI della cartella, nonché il `Resource` oggetto. Superato `null` per gli altri due parametri.
+   Richiama `RepositoryServiceService` dell&#39;oggetto `writeResource` e passare nell&#39;URI della cartella e il `Resource` oggetto. Superato `null` per gli altri due parametri.
 
 **Consulta anche**
 
@@ -542,7 +542,7 @@ Leggi una risorsa utilizzando l’API del servizio Archivio (Java):
 
 1. Specifica l’URI della risorsa da leggere
 
-   Specifica un valore stringa che rappresenta l’URI della risorsa da recuperare. Ad esempio, supponendo che la risorsa sia denominata *testResource* che si trova in una cartella denominata *testFolder*, specifica `/testFolder/testResource`.
+   Specifica un valore stringa che rappresenta l’URI della risorsa da recuperare. Ad esempio, supponendo che la risorsa sia denominata *testResource* in una cartella denominata *testFolder*, specifica `/testFolder/testResource`.
 
 1. Leggi la risorsa
 

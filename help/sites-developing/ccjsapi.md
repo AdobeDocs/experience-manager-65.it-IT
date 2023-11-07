@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3159'
+source-wordcount: '3157'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Ad esempio, un archivio di sessione è basato su un oggetto JSON e viene recuper
 * L’archivio è precompilato con i valori predefiniti (proprietà iniziali), ma la richiesta non riesce (timeout). Esiste una sola inizializzazione con i valori predefiniti.
 * Il negozio è prepopolato.
 
-Quando il ritardo è impostato su `true` Per un numero di millisecondi, il metodo attende prima di chiamare il metodo di callback. Se prima del superamento del ritardo viene attivato un altro evento di inizializzazione, questo attenderà il superamento del tempo di ritardo senza alcun evento di inizializzazione. Questo consente di attendere l’attivazione di un secondo evento di inizializzazione e chiama la funzione di callback nel caso più ottimale.
+Quando il ritardo è impostato su `true` oppure diversi millisecondi prima di richiamare il metodo callback. Se prima del superamento del ritardo viene attivato un altro evento di inizializzazione, questo attenderà il superamento del tempo di ritardo senza alcun evento di inizializzazione. Questo consente di attendere l’attivazione di un secondo evento di inizializzazione e chiama la funzione di callback nel caso più ottimale.
 
 **Parametri**
 

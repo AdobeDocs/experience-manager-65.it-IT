@@ -8,9 +8,9 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
-source-git-commit: 8f0e8b15d2ed8b436594fd2be464b4ace29a8902
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Assegna i passaggi attività e Adobe Sign di [Flussi di lavoro incentrati su For
 
 ECMAScript è un linguaggio di script. Viene utilizzato per applicazioni server e scripting lato client. Per selezionare dinamicamente un utente o un gruppo utilizzando ECMAScript, effettuare le seguenti operazioni:
 
-1. Apri CRXDE Lite. L’URL è `https://'[server]:[port]'/crx/de/index.jsp`
+1. Apri CRXDE Liti. L’URL è `https://'[server]:[port]'/crx/de/index.jsp`
 1. Creare un file con estensione .ecma nel percorso seguente. Se il percorso (struttura del nodo) non esiste, crealo:
 
    * (Percorso per il passaggio Assegna attività) `/apps/fd/dashboard/scripts/participantChooser`

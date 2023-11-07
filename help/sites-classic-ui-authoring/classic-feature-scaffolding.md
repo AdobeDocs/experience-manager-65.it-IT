@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1427'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Il corpo dell&#39;impalcatura è la forma. Quando un utente desidera creare una 
 
 ### Creazione di uno scaffold {#creating-a-scaffold}
 
-Per creare un nuovo scaffold, passare al **Strumenti** console, quindi **Scaffolding pagine predefinito** e creare una pagina. È disponibile un tipo di modello a pagina singola, il *Modello per scaffolding.*
+Per creare uno scaffold, vai al **Strumenti** console, quindi **Scaffolding pagine predefinito** e creare una pagina. È disponibile un tipo di modello a pagina singola, il *Modello per scaffolding.*
 
 Vai a **Proprietà pagina** della nuova pagina e imposta *Testo titolo*, *Descrizione*, *Modello di destinazione*, e *Percorso di destinazione*, come descritto in precedenza.
 
@@ -163,4 +163,4 @@ Dopo aver sbloccato, puoi ripristinare l’ereditarietà facendo clic sul simbol
 
 >[!NOTE]
 >
->Se l’ereditarietà viene annullata a livello di pagina (dalla scheda Live Copy di Proprietà pagina), tutti i componenti saranno modificabili in **Scaffolding** (verranno visualizzate in stato sbloccato).
+>Se l’ereditarietà viene annullata a livello di pagina (dalla scheda Live Copy di Proprietà pagina), tutti i componenti sono modificabili in **Scaffolding** (vengono visualizzate in stato sbloccato).

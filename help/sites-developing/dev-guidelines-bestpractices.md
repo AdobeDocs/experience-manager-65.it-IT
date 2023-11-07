@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 I componenti e i modelli di Adobe Experience Manager (AEM) comprendono un potente toolkit. Possono essere utilizzati dagli sviluppatori per fornire agli utenti aziendali dei siti web, agli editor e agli amministratori la funzionalità di adattare i loro siti web alle mutevoli esigenze aziendali (agilità dei contenuti). Tutto questo mantenendo l&#39;uniformità del layout dei siti (protezione del marchio).
 
-Una sfida tipica per una persona responsabile di un sito web o di un insieme di siti web (ad esempio in una filiale di un&#39;azienda globale) è quella di introdurre un nuovo tipo di presentazione di contenuti sui propri siti web.
+Una sfida tipica per una persona responsabile di un sito Web o di un insieme di siti Web (ad esempio, in una filiale di un&#39;azienda globale) consiste nell&#39;introdurre un nuovo tipo di presentazione dei contenuti sui propri siti Web.
 
 Supponiamo che sia necessario aggiungere ai siti web una pagina di elenco delle novità, in cui sono elencati estratti da altri articoli già pubblicati. La pagina deve avere la stessa progettazione e struttura del resto del sito web.
 
 Il modo consigliato per affrontare tale sfida consiste nel:
 
-* Riutilizzare un modello esistente per creare un nuovo tipo di pagina. Il modello definisce approssimativamente la struttura della pagina (elementi di navigazione, pannelli e così via), che viene ulteriormente perfezionata dal relativo design (CSS, grafica).
+* Riutilizzare un modello esistente per creare un tipo di pagina. Il modello definisce approssimativamente la struttura della pagina (elementi di navigazione, pannelli e così via), che viene ulteriormente perfezionata dal relativo design (CSS, grafica).
 * Utilizza il sistema paragrafo (parsys/iparsys) nelle nuove pagine.
 * Definire il diritto di accesso alla modalità Progettazione dei sistemi paragrafo, in modo che solo le persone autorizzate (in genere l’amministratore) possano modificarli.
 * Definisci i componenti consentiti nel sistema paragrafo specificato in modo che gli editor possano quindi inserire i componenti richiesti nella pagina. In questo caso, potrebbe essere un componente elenco, che può attraversare una sottostruttura di pagine ed estrarre le informazioni in base a regole predefinite.

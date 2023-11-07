@@ -2,10 +2,10 @@
 title: Configurare le regole di traduzione
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 81%
+source-wordcount: '864'
+ht-degree: 76%
 
 ---
 
@@ -59,14 +59,14 @@ Una console **Configurazione della traduzione** è disponibile per la configuraz
 1. Passa a **Strumenti** -> **Generale**.
 1. Tocca o fai clic su **Configurazione della traduzione**.
 
-Nell’interfaccia utente di **Configurazione della traduzione** sono disponibili diverse opzioni per le regole di traduzione. Qui vengono evidenziati i passaggi più necessari e tipici necessari per una configurazione di base della localizzazione headless.
+In **Configurazione traduzione** Nell’interfaccia utente sono disponibili diverse opzioni per le regole di traduzione. Qui vengono evidenziati i passaggi più necessari e tipici necessari per una configurazione di base della localizzazione headless.
 
 1. Tocca o fai clic su **Aggiungi contesto**, che consente di aggiungere un percorso. Questo è il percorso del contenuto interessato dalla regola.
    ![Aggiungi contesto](assets/add-translation-context.png)
 1. Utilizza il browser percorsi per selezionare il percorso desiderato e tocca o fai clic sul pulsante **Conferma** per salvare. Ricorda che i frammenti di contenuto, che contengono contenuto headless, si trovano in genere in `/content/dam/<your-project>`.
    ![Seleziona il percorso](assets/select-context.png)
 1. AEM salva la configurazione.
-1. Seleziona il contesto appena creato, quindi tocca o fai clic su **Modifica**. Viene aperto l’**Editor regole di traduzione** per configurare le proprietà.
+1. Seleziona il contesto creato, quindi tocca o fai clic su **Modifica**. Viene aperto l’**Editor regole di traduzione** per configurare le proprietà.
    ![Editor regole di traduzione](assets/translation-rules-editor.png)
 1. Per impostazione predefinita, tutte le configurazioni vengono ereditate dal percorso padre, in questo caso `/content/dam`. Deseleziona l’opzione **Eredita da`/content/dam`** per aggiungere campi aggiuntivi alla configurazione.
 1. Una volta deselezionato, sotto la sezione **Generale** aggiungi i nomi delle proprietà dei modelli per frammento di contenuto [precedentemente identificati come campi per la traduzione.](getting-started.md#content-models)
@@ -81,7 +81,7 @@ Hai configurato le regole di traduzione.
 
 ## Utilizzo avanzato {#advanced-usage}
 
-È possibile configurare una serie di proprietà aggiuntive come parte delle regole di traduzione. Inoltre, è possibile specificare le regole manualmente come XML, il che consente maggiore specificità e flessibilità.
+Ci sono diverse proprietà aggiuntive che possono essere configurate come parte delle regole di traduzione. Inoltre, è possibile specificare le regole manualmente come XML, il che consente maggiore specificità e flessibilità.
 
 Tali funzioni generalmente non sono necessarie per iniziare a localizzare il contenuto headless ma, se ti interessa, puoi avere maggiori informazioni nella sezione [Risorse aggiuntive](#additional-resources).
 

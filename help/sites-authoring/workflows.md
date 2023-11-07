@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
 exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 32%
+source-wordcount: '178'
+ht-degree: 74%
 
 ---
 
@@ -22,8 +22,8 @@ I flussi di lavoro AEM consentono di automatizzare una serie di passaggi eseguit
 Ad esempio, per la pubblicazione, un editor deve rivedere il contenuto prima che l’amministratore del sito attivi la pagina. Un flusso di lavoro che automatizza questo esempio avvisa ogni partecipante quando è il momento di eseguire il lavoro richiesto:
 
 1. L’autore applica il flusso di lavoro alla pagina.
-1. L’editor riceve un elemento di lavoro che indica che è necessario rivedere il contenuto della pagina. Al termine, indicano che l&#39;elemento di lavoro è stato completato.
-1. L’amministratore del sito riceve quindi una richiesta di lavoro per l’attivazione della pagina. Al termine, indicano che l&#39;elemento di lavoro è stato completato.
+1. L’editor riceve un elemento di lavoro che indica che è necessario rivedere il contenuto della pagina. Al termine, sarà indicato che l’elemento di lavoro è stato completato.
+1. L’amministratore del sito riceve quindi una richiesta di lavoro per l’attivazione della pagina. Al termine, sarà indicato che l’elemento di lavoro è stato completato.
 
 In genere:
 

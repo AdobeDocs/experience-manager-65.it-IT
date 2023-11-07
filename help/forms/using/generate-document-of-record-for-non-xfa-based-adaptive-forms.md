@@ -1,19 +1,15 @@
 ---
 title: Generare un documento di record per i moduli adattivi
-seo-title: Generate Document of Record for adaptive forms
 description: Spiega come generare un modello per un documento di record (DoR) per i moduli adattivi.
-seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3544'
+source-wordcount: '3545'
 ht-degree: 3%
 
 ---
@@ -218,7 +214,7 @@ I componenti della tabella per moduli adattivi come intestazione, piè di pagina
 
 Il modello base fornisce informazioni sullo stile e sull&#39;aspetto del documento di record. Consente di personalizzare l’aspetto predefinito del documento di record generato automaticamente. Ad esempio, si desidera aggiungere il logo della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina del documento record. La pagina master del modello base viene utilizzata come pagina master per il modello del documento record. La pagina master può contenere informazioni quali intestazione di pagina, piè di pagina e numero di pagina che è possibile applicare al documento di record. È possibile applicare tali informazioni al documento record utilizzando il modello base per la generazione automatica del documento record. L&#39;utilizzo del modello di base consente di modificare le proprietà predefinite dei campi.
 
-Segui [Convenzioni modello base](#base-template-conventions) quando si progetta un modello di base.
+Assicurati di seguire [Convenzioni modello base](#base-template-conventions) quando si progetta un modello di base.
 
 ## Convenzioni modello base {#base-template-conventions}
 
@@ -234,7 +230,7 @@ Un modello di base viene utilizzato per definire intestazione, piè di pagina, s
 
 **Convenzioni di stile per i campi**
 
-* Per applicare lo stile ai campi del documento record, il modello di base fornisce i campi che si trovano nel `AF_FIELDSSUBFORM` sottometti sotto `AF_METATEMPLATE` sottomodulo principale.
+* Per applicare lo stile ai campi del documento record, il modello base fornisce i campi nel `AF_FIELDSSUBFORM` sottometti sotto `AF_METATEMPLATE` sottomodulo principale.
 
 * Le proprietà di questi campi vengono applicate ai campi del documento record. Questi campi devono seguire la `AF_<name of field in all caps>_XFO` convenzione di denominazione. Ad esempio, il nome del campo per la casella di controllo deve essere `AF_CHECKBOX_XFO`.
 

@@ -1,6 +1,6 @@
 ---
 title: Utilizzo dei tag
-description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette che possono essere allegate a una pagina, una risorsa o altro contenuto per consentire alle ricerche di trovarlo e contenuto correlato.
+description: I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette da allegare a una pagina, una risorsa o altro contenuto, per consentire la ricerca di contenuti specifici o correlati.
 uuid: 9799131f-4043-4022-a401-af8be93a1bf6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,19 +8,19 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 27%
+source-wordcount: '706'
+ht-degree: 39%
 
 ---
 
 # Utilizzo dei tag{#using-tags}
 
-I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette che possono essere allegate a una pagina, una risorsa o altro contenuto per consentire alle ricerche di trovarlo e contenuto correlato.
+I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette da allegare a una pagina, una risorsa o altro contenuto, per consentire la ricerca di contenuti specifici o correlati.
 
-* Consulta [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag, nonché sui tag di contenuto applicati.
-* Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, vedi [Tagging per sviluppatori](/help/sites-developing/tags.md).
+* Consulta [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
+* Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, consulta [Assegnazione tag per sviluppatori](/help/sites-developing/tags.md).
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
 
@@ -33,9 +33,9 @@ I tag sono un metodo semplice e veloce per classificare i contenuti di un sito w
 1. Abilitazione SEO: i tag applicati come proprietà della pagina vengono visualizzati automaticamente nei metatag della pagina, rendendola visibile ai motori di ricerca.
 1. Funzionalità sofisticate e al contempo semplici: per creare i tag, basta selezionare una parola e fare clic su un pulsante. In seguito, è possibile aggiungere un titolo, una descrizione ed etichette illimitate per fornire ulteriore semantica al tag.
 1. Coerenza di base : il sistema di assegnazione tag è un componente di base dell’AEM ed è utilizzato da tutte le funzionalità dell’AEM per la classificazione dei contenuti. Inoltre, per gli sviluppatori è disponibile l’API di assegnazione tag che consente di creare applicazioni abilitate per l’assegnazione tag con accesso alle stesse tassonomie.
-1. Struttura e flessibilità: l’AEM è ideale per lavorare con informazioni strutturate, grazie alla nidificazione di pagine e percorsi. È ugualmente efficace quando si lavora con informazioni non strutturate, grazie alla ricerca full-text integrata. L’assegnazione tag combina i punti di forza sia della struttura che della flessibilità.
+1. Struttura e flessibilità: l’AEM è ideale per lavorare con informazioni strutturate, grazie alla nidificazione di pagine e percorsi. È molto efficace anche per la gestione delle informazioni non strutturate, grazie alla funzione integrata di ricerca testuale. L’assegnazione tag offre i vantaggi delle struttura e della flessibilità.
 
-Durante la progettazione della struttura del contenuto di un sito e dello schema di metadati per le risorse, considera l’approccio leggero e accessibile fornito dall’assegnazione tag.
+Quando progetti la struttura dei contenuti di un sito e lo schema di metadati per le risorse, considera l’approccio leggero e accessibile fornito dall’assegnazione tag.
 
 ## Applicazione dei tag   {#applying-tags}
 
@@ -53,7 +53,7 @@ Come per le pagine, è possibile eseguire le operazioni seguenti su tag e spazi 
 
 * Consente di attivare singoli tag.
 
-   Come per le pagine, è necessario attivare i nuovi tag creati prima che siano disponibili nell’ambiente di pubblicazione.
+  Come per le pagine, i nuovi tag creati devono essere attivati prima di diventare disponibili nell’ambiente di pubblicazione.
 
 >[!NOTE]
 >

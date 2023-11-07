@@ -4,10 +4,10 @@ description: Scopri come preparare i contenuti per la traduzione in Adobe Experi
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 65%
+source-wordcount: '683'
+ht-degree: 62%
 
 ---
 
@@ -47,11 +47,11 @@ Crea una directory principale della lingua come pagina principale di una copia p
 
 Per creare la directory principale della lingua è necessario creare una pagina e utilizzare un codice della lingua ISO come valore per la proprietà Nome. Il codice della lingua deve essere in uno dei seguenti formati:
 
-* `<language-code>`Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio `en`.
+* `<language-code>`Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio, `en`.
 
-* `<language-code>_<country-code>` o `<language-code>-<country-code>`Il codice del paese supportato è un codice a due lettere minuscole o maiuscole, come definito ad esempio dallo standard ISO 3166 `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` o `<language-code>-<country-code>`Il codice del paese supportato è un codice a due lettere minuscole o maiuscole, come definito ad esempio dallo standard ISO 3166, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale.  La pagina principale della copia in lingua francese del Geometrixx, ad esempio, ha `fr` come proprietà Name. Tieni presente che la proprietà Nome viene utilizzata come nome del nodo della pagina nell’archivio e quindi determina il percorso della pagina. (http://localhost:4502/content/geometrixx/fr.html)
+Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale.  La pagina principale della copia in lingua francese del Geometrixx, ad esempio, ha `fr` come proprietà Name. La proprietà Name viene utilizzata come nome del nodo della pagina nell’archivio e quindi determina il percorso della pagina. (http://localhost:4502/content/geometrixx/fr.html)
 
 La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco per creare una copia in lingua di un sito web. Per istruzioni sull’utilizzo dell’interfaccia classica, consulta [Creazione di una directory principale della lingua tramite l’interfaccia classica](/help/sites-administering/tc-lroot-classic.md).
 
@@ -65,7 +65,7 @@ La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco p
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Seleziona il modello della pagina e tocca o fai clic su Avanti.
-1. Nel campo Nome, digita il codice del paese nel formato di `<language-code>` o `<language-code>_<country-code>`, ad esempio `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
+1. Nel campo Nome, digita il codice del paese nel formato di `<language-code>` o `<language-code>_<country-code>`, ad esempio, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 >`JAR` e `WAR` sono i tipi di file Adobe Experience Manager (AEM) rilasciati in. Questi formati sono sottoposti a un controllo di qualità che tiene conto dei livelli di supporto a cui l’Adobe si è impegnato.
 >
 
-Questa sezione spiega come installare Adobe Experience Manager (AEM) con un server applicazioni. Consulta la [Piattaforme supportate](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) per informazioni sui livelli di supporto specifici forniti per i singoli server applicazioni.
+In questa sezione viene descritto come installare Adobe Experience Manager (AEM) con un server applicazioni. Consulta la [Piattaforme supportate](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) per informazioni sui livelli di supporto specifici forniti per i singoli server applicazioni.
 
 Vengono descritti i passaggi di installazione dei seguenti Application Server:
 
@@ -33,7 +33,7 @@ Per ulteriori informazioni sull&#39;installazione di applicazioni Web, sulle con
 
 >[!NOTE]
 >
->Se utilizzi Dynamic Media in una distribuzione WAR, consulta [Documentazione di Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Se utilizzi Dynamic Medie in una distribuzione WAR, consulta [Documentazione di Dynamic Medie](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Descrizione generale {#general-description}
 
@@ -46,7 +46,7 @@ Se implementato, si verifica quanto segue per impostazione predefinita:
 * la modalità di esecuzione è `author`
 * l’istanza (archivio, ambiente Felix OSGI, bundle e così via) è installata in `${user.dir}/crx-quickstart`dove `${user.dir}` è la directory di lavoro corrente, il percorso di crx-quickstart viene chiamato `sling.home`
 
-* la directory principale del contesto è il nome del file .war, ad esempio: `aem-6`
+* la directory principale del contesto è il nome del file .war, ad esempio  `aem-6`
 
 #### Configurazione {#configuration}
 
@@ -117,7 +117,7 @@ Prima di una distribuzione, leggi [Descrizione generale](#general-description) s
 
 * Distribuisci file .war AEM
 
-   * Scegli una directory principale di contesto (se desideri impostare le modalità di esecuzione sling, seleziona i passaggi dettagliati della procedura guidata di distribuzione, quindi specificala al passaggio 6 della procedura guidata)
+   * Scegli una directory principale di contesto (per impostare le modalità di esecuzione sling, seleziona i passaggi dettagliati della procedura guidata di distribuzione, quindi specificala al passaggio 6 della procedura guidata).
 
 * Avviare l’applicazione web AEM
 

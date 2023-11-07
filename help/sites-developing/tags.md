@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 feature: Tagging
 exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '98'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 L’assegnazione tag consente di categorizzare e organizzare i contenuti. I tag possono essere classificati in base a uno spazio dei nomi e a una tassonomia.
 
-* Consulta [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag, nonché sui tag di contenuto applicati.
+* Consulta [Amministrazione dei tag](/help/sites-administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
 * Consulta [Utilizzo dei tag](/help/sites-authoring/tags.md) per informazioni sull’assegnazione tag al contenuto.
 
 Le seguenti informazioni sono disponibili per gli sviluppatori:

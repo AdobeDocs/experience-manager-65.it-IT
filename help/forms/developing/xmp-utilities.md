@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1404'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Puoi eseguire queste attività utilizzando il servizio Utilità XMP:
 
 ## Importazione di metadati nei documenti di PDF {#importing-metadata-into-pdf-documents}
 
-Puoi utilizzare le API Java e dei servizi web di XMP Utilities per importare in modo programmatico i metadati XMP in un documento PDF. I metadati forniscono informazioni su un documento PDF, ad esempio l&#39;autore del documento e le parole chiave correlate al documento. I metadati possono trovarsi nella finestra di dialogo Proprietà documento del documento, come illustrato nella figura seguente.
+Puoi utilizzare le API Java e dei servizi web di XMP Utilities per importare in modo programmatico i metadati XMP in un documento PDF. I metadati forniscono informazioni su un documento PDF, ad esempio l&#39;autore del documento e le parole chiave correlate al documento. I metadati possono essere visualizzati nella finestra di dialogo Proprietà documento del documento, come illustrato nella figura seguente.
 
 ![ww_ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 
-Per importare i metadati in modo programmatico in un documento PDF, è possibile utilizzare un documento XML esistente che specifichi i valori dei metadati oppure un oggetto di tipo `XMPUtilityMetadata`. (vedere [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
+Per importare in modo programmatico i metadati in un documento PDF, è possibile utilizzare un documento XML esistente che specifichi i valori dei metadati oppure un oggetto di tipo `XMPUtilityMetadata`. (vedere [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 >[!NOTE]
 >

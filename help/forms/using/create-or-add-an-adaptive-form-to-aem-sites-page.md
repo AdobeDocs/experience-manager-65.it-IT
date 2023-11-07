@@ -3,10 +3,10 @@ title: Creare o aggiungere un modulo adattivo alla pagina AEM Sites
 description: Scopri come creare o aggiungere facilmente un modulo adattivo alla pagina AEM Sites. Scopri le tecniche e le best practice passo passo per integrare moduli dinamici e personalizzabili nel tuo sito web, ottimizzando le tue esperienze digitali per il massimo impatto.
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
-exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 6d6e74c61b2ecb13e7cc352d5278c40d2677d44d
+exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2905'
+source-wordcount: '2901'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Con AEM Forms puoi incorporare facilmente i moduli adattivi nelle pagine web. Qu
 
 È possibile utilizzare l’Editor pagina AEM per creare e aggiungere rapidamente più moduli alle pagine AEM Sites. L’editor di pagine AEM consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites, sfruttando la potenza dei componenti per moduli adattivi, tra cui comportamento dinamico, convalide, integrazione dei dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito.
 
-AEM Forms fornisce i componenti Contenitore modulo adattivo e Forms adattivo - Incorpora. È possibile utilizzare il Contenitore di moduli adattivi per creare un nuovo modulo in un frammento di esperienza o in una pagina AEM Sites, mentre il componente Forms adattivo - Incorpora consente di aggiungere un modulo adattivo esistente o crearne uno nuovo utilizzando l’editor di Forms adattivo.
+AEM Forms fornisce i componenti Contenitore modulo adattivo e Forms adattivo - Incorpora. È possibile utilizzare il Contenitore di moduli adattivi per creare un modulo in un frammento di esperienza o in una pagina AEM Sites, mentre il componente Forms adattivo - Incorpora consente di aggiungere un modulo adattivo esistente o di creare un modulo utilizzando l’editor di Forms adattivo.
 
 ![Modulo adattivo nella pagina Sites](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
@@ -33,7 +33,7 @@ AEM Forms fornisce i componenti Contenitore modulo adattivo e Forms adattivo - I
 L’utilizzo di Adaptive Form Container nell’editor di pagine AEM consente di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites utilizzando la potenza dei componenti di Forms adattivi, tra cui comportamento dinamico, convalide, integrazione di dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito, migliorando l’esperienza complessiva di creazione e gestione dei moduli. Esaminiamo alcune di queste funzioni:
 
 * **Controllo delle versioni:** Offerta pagine AEM Sites [solide funzionalità di controllo delle versioni](/help/sites-authoring/working-with-page-versions.md), che consente di tenere traccia e gestire diverse versioni dei moduli. In questo modo è possibile apportare modifiche e miglioramenti ai moduli mantenendo la possibilità di ripristinare le versioni precedenti, se necessario. Il controllo delle versioni garantisce un approccio controllato e organizzato allo sviluppo e all’evoluzione dei moduli.
-* **Targeting (integrazione con Adobe Target):** Con le funzionalità di targeting delle pagine di AEM Sites, puoi anche [personalizzare l’esperienza del modulo per diversi tipi di pubblico](/help/sites-administering/target.md). Sfruttando i segmenti utente e i criteri di targeting, è possibile adattare il contenuto, la progettazione o il comportamento del modulo a specifici gruppi di utenti. Questo ti consente di fornire un’esperienza di modulo personalizzata e rilevante, aumentando i tassi di coinvolgimento e conversione.
+* **Targeting (integrazione con Adobe Target):** Con le funzionalità di targeting delle pagine di AEM Sites, puoi anche [personalizzare l’esperienza del modulo per diversi tipi di pubblico](/help/sites-administering/target.md). Utilizzando i segmenti utente e i criteri di targeting, è possibile adattare il contenuto, la progettazione o il comportamento del modulo a specifici gruppi di utenti. Questo ti consente di fornire un’esperienza di modulo personalizzata e rilevante, aumentando i tassi di coinvolgimento e conversione.
 * **Traduzione:** AEM Sites [integrazione perfetta con i servizi di traduzione](/help/sites-administering/translation.md), che consente di tradurre facilmente i moduli in più lingue. Questa funzione semplifica il processo di localizzazione, garantendo che i moduli siano accessibili a un pubblico globale. Puoi gestire le traduzioni in modo efficiente all’interno dei progetti di traduzione AEM, riducendo il tempo e l’impegno necessari per il supporto di moduli multilingue. Per ulteriori informazioni sulla traduzione, consulta la sezione delle considerazioni.
 * **Gestione multisito e Live Copy:** AEM Sites fornisce una solida [Funzionalità di gestione multisito e Live Copy](/help/sites-administering/msm.md), che consente di creare e gestire più siti web all’interno di un unico ambiente. Questa funzione consente ora di riutilizzare i moduli in siti diversi, garantendo coerenza e riducendo le attività di duplicazione. Grazie al controllo e alla gestione centralizzati, è possibile gestire e aggiornare in modo efficiente i moduli su più siti Web.
 * **Temi:** Le pagine AEM Sites forniscono un framework per progettare e mantenere stili visivi coerenti su più pagine web. Questi definiscono colori, font, fogli di stile e altri elementi visivi che contribuiscono all’aspetto generale del sito web. [Puoi utilizzare i temi progettati per una pagina AEM Sites per un modulo adattivo, risparmiando tempo e fatica](/help/sites-authoring/style-system.md).
@@ -181,8 +181,8 @@ Per convertire un modulo adattivo nella pagina di AEM Sites in un frammento di e
    Viene visualizzata una finestra di dialogo per convertire il contenitore Moduli adattivi in un nuovo frammento di esperienza o aggiungerlo a un frammento di esperienza esistente
 1. Nella finestra di dialogo Converti in variante di frammento di esperienza, imposta i valori per le seguenti opzioni:
 
-   * **Azione:** Seleziona per creare un nuovo frammento di esperienza o Aggiungi a un frammento di esperienza esistente.
-   * **Percorso principale:** Specifica il percorso della cartella in cui ospitare il frammento di esperienza. L’opzione è disponibile solo per la creazione di un nuovo frammento di esperienza.
+   * **Azione:** Seleziona questa opzione per creare un frammento di esperienza o Aggiungi a un frammento di esperienza esistente.
+   * **Percorso principale:** Specifica il percorso della cartella in cui ospitare il frammento di esperienza. L’opzione è disponibile solo per la creazione di un frammento di esperienza.
    * **Modello:** Specifica il percorso del modello Frammento esperienza. Se non disponi di un modello Frammento esperienza, [crearlo](/help/sites-developing/experience-fragments.md). L’opzione è disponibile solo per aggiungere un modulo adattivo a un frammento di esperienza esistente.
    * **Titolo frammento:** Specifica il titolo del frammento di esperienza. Il titolo identifica in modo univoco un frammento esperienza
 

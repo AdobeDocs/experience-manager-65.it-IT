@@ -6,9 +6,9 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1030'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 6%
 >* Hai bisogno di `Edit ACL` autorizzazione per la cartella o la risorsa da condividere come collegamento.
 >* Per inviare e-mail agli utenti, configura i dettagli del server SMTP in [Day CQ Mail Service](#configmailservice).
 
-
 ## Condividere le risorse {#share-assets}
 
 Per generare l’URL per le risorse da condividere con gli utenti, utilizza [!UICONTROL Condivisione collegamenti] .
@@ -37,7 +36,7 @@ Per generare l’URL per le risorse da condividere con gli utenti, utilizza [!UI
 
 1. In [!DNL Assets] interfaccia utente, seleziona la risorsa da condividere come collegamento.
 
-1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]** ![icona condividi risorse](assets/do-not-localize/assets_share.png). Il collegamento che verrà creato dopo aver fatto clic su **[!UICONTROL Condividi]** viene visualizzato in anticipo in [!UICONTROL Condividi collegamento] campo. Il collegamento non viene creato finché non selezioni **[!UICONTROL Invia]**.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]** ![icona condividi risorse](assets/do-not-localize/assets_share.png). Il collegamento creato dopo aver fatto clic su **[!UICONTROL Condividi]** viene visualizzato in anticipo in [!UICONTROL Condividi collegamento] campo. Il collegamento non viene creato finché non selezioni **[!UICONTROL Invia]**.
 
    ![Finestra di dialogo con Condivisione collegamenti](assets/share-assets-as-link.png)
 
@@ -117,4 +116,5 @@ Quando scarichi risorse dal collegamento condiviso utilizzando la funzione Condi
    * `http://[aem_server]:[port]/linkshare.html`
    * `http://[aem_server]:[port]/linksharepreview.html`
    * `http://[aem_server]:[port]/linkexpired.html`
-   In entrata [!DNL Experience Manager] interfaccia, accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**. Apri **[!UICONTROL Day CQ Link Externalizer]** e modificare le seguenti proprietà in **[!UICONTROL Domini]** campo con i valori indicati a fronte `local`, `author`, e `publish`. Per `local` e `author` , forniscono l&#39;URL per le istanze locale e Autore, rispettivamente. Se si esegue un singolo [!DNL Experience Manager] Autore, utilizza lo stesso valore per `local` e `author` proprietà. Per le istanze Publish, fornisci l’URL del [!DNL Experience Manager] Istanza di pubblicazione.
+
+  In entrata [!DNL Experience Manager] interfaccia, accesso **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**. Apri **[!UICONTROL Day CQ Link Externalizer]** e modificare le seguenti proprietà in **[!UICONTROL Domini]** campo con i valori indicati a fronte `local`, `author`, e `publish`. Per `local` e `author` , forniscono l&#39;URL per le istanze locale e Autore, rispettivamente. Se si esegue un singolo [!DNL Experience Manager] Autore, utilizza lo stesso valore per `local` e `author` proprietà. Per le istanze Publish, fornisci l’URL del [!DNL Experience Manager] Istanza di pubblicazione.

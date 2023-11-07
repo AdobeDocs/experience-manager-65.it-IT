@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10239'
+source-wordcount: '10229'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Se si utilizza IPv6, immettere l&#39;URL di base come nome del computer o il nom
 
 >[!NOTE]
 >
->L’URL di base è incorporato in file protetti tramite policy. Le applicazioni client utilizzano l&#39;URL di base per riconnettersi al server. I file protetti continueranno a contenere l’URL di base, anche se viene modificato in seguito. Se modifichi l’URL di base, le informazioni di configurazione dovranno essere aggiornate per tutti i client di connessione.
+>L’URL di base è incorporato in file protetti tramite policy. Le applicazioni client utilizzano l&#39;URL di base per riconnettersi al server. I file protetti continueranno a contenere l’URL di base, anche se viene modificato in seguito. Se modifichi l’URL di base, le informazioni di configurazione devono essere aggiornate per tutti i client di connessione.
 
 **Periodo di lease offline predefinito:** Periodo di tempo predefinito durante il quale un utente può utilizzare un documento protetto offline. Questa impostazione determina il valore iniziale dell&#39;impostazione del periodo di lease per l&#39;attivazione automatica della modalità offline quando si crea un criterio. Consulta Creazione e modifica di criteri. Alla scadenza del periodo di lease, il destinatario deve sincronizzare nuovamente il documento per continuare a utilizzarlo.
 
@@ -573,7 +573,7 @@ Per impostazione predefinita, il processo di registrazione degli utenti invitati
 
 È possibile limitare la registrazione con Document Security per determinati utenti o gruppi di utenti esterni. Questa opzione è utile, ad esempio, per consentire l’accesso a un determinato gruppo di utenti, ma esclude persone specifiche che fanno parte del gruppo.
 
-Le seguenti impostazioni si trovano nell’area Filtro restrizioni e-mail della pagina Registrazione utente invitato.
+Le impostazioni seguenti si trovano nell&#39;area Filtro restrizioni e-mail della pagina Registrazione utente invitato.
 
 **Esclusione:** Digita l’indirizzo e-mail di un utente o di un gruppo da escludere. Per escludere più utenti o gruppi, digita ogni indirizzo e-mail su una nuova riga. Per escludere tutti gli utenti che appartengono a un dominio specifico, immettere un carattere jolly e il nome di dominio. Ad esempio, per escludere tutti gli utenti nel dominio example.com, immettere &amp;ast;.example.com.
 
@@ -625,7 +625,7 @@ Se richiesto dall&#39;host SMTP, digitare le informazioni richieste nelle casell
 
 ### Impostazioni e-mail per invito alla registrazione {#registration-invitation-email-settings}
 
-Document Security invia automaticamente un’e-mail di invito alla registrazione quando crei un nuovo account utente invitato o quando un utente esistente aggiunge un destinatario esterno che non si è precedentemente registrato o invitato a registrarsi a una policy. L’e-mail contiene un collegamento che il destinatario può utilizzare per accedere alla pagina di registrazione e immettere le informazioni sull’account personale, inclusi nome utente e password. La password può essere costituita da qualsiasi combinazione di otto caratteri.
+Document Security invia automaticamente un messaggio e-mail di invito alla registrazione quando crei un account utente invitato o quando un utente esistente aggiunge un destinatario esterno che non si è registrato o che è stato invitato in precedenza a registrarsi a una policy. L’e-mail contiene un collegamento che il destinatario può utilizzare per accedere alla pagina di registrazione e immettere le informazioni sull’account personale, inclusi nome utente e password. La password può essere costituita da qualsiasi combinazione di otto caratteri.
 
 Quando il destinatario attiva l’account, l’utente diventa un utente locale.
 
@@ -706,7 +706,7 @@ Gli utenti e i gruppi selezionati ora dispongono delle autorizzazioni per creare
 
 ### Specificare utenti e gruppi visibili nelle ricerche {#specify-users-and-groups-that-are-visible-in-searches}
 
-Quando gli utenti gestiscono i propri criteri personalizzati, possono cercare utenti e gruppi da aggiungere ai propri criteri. È necessario specificare i domini da cui gli utenti e i gruppi sono visibili in queste ricerche.
+Quando gli utenti gestiscono i propri criteri personalizzati, possono cercare utenti e gruppi da aggiungere ai propri criteri. Specificare i domini dai quali utenti e gruppi sono visibili in queste ricerche.
 
 1. Nella pagina di Document Security, fai clic su Configurazione > I miei criteri.
 1. Nella pagina Criteri personali fare clic sulla scheda Utenti e gruppi visibili.

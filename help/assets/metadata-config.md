@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 | AEM 6.5 | Questo articolo |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -56,7 +56,7 @@ Un profilo di metadati consente di applicare metadati predefiniti alle risorse a
 ### Aggiungere un profilo di metadati {#adding-a-metadata-profile}
 
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili metadati]** e fai clic su **[!UICONTROL Crea]**.
-1. Inserisci un titolo per il profilo, ad esempio `Sample Metadata`e fai clic su **[!UICONTROL Crea]**. Il [!UICONTROL Modifica modulo] per il profilo di metadati.
+1. Immetti un titolo per il profilo, ad esempio: `Sample Metadata`e fai clic su **[!UICONTROL Crea]**. Il [!UICONTROL Modifica modulo] per il profilo di metadati.
 
    ![Modificare un modulo di metadati](assets/metadata-edit-form.png)
 
@@ -281,4 +281,3 @@ Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]*
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
 >* [Best practice per organizzare le risorse digitali per utilizzare i profili di elaborazione](/help/assets/organize-assets.md).
 >* [Write-back XMP](/help/assets/xmp-writeback.md).
-

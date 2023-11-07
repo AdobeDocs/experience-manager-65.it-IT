@@ -6,19 +6,19 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 60%
+source-wordcount: '982'
+ht-degree: 72%
 
 ---
 
-# DevOps aziendale {#enterprise-devops}
+# DevOps aziendale{#enterprise-devops}
 
-DevOps tratta i processi, i metodi e le comunicazioni necessari per:
+La metodologia DevOps tratta i processi, i metodi e la comunicazione necessari per:
 
-* Semplificare l’implementazione del software nei diversi ambienti
-* Semplifica la collaborazione tra i team di sviluppo, test e implementazione.
+* Semplificare l’implementazione del software nei diversi ambienti.
+* Semplificare la collaborazione tra i team di sviluppo, test e implementazione.
 
 DevOps punta a evitare problemi come:
 
@@ -43,7 +43,7 @@ Un’implementazione di Adobe Experience Manager (AEM) in genere è costituita d
 
 ### Sviluppo {#development}
 
-Gli sviluppatori sono responsabili dello sviluppo e della personalizzazione del progetto proposto (che si tratti di sito web, applicazioni mobili, implementazione DAM e così via), con tutte le funzionalità richieste. Si occupano di:
+Gli sviluppatori sono responsabili dello sviluppo e della personalizzazione del progetto proposto (che si tratti di un sito web, applicazioni mobili, implementazione DAM, ecc.) con tutte le funzionalità richieste. Si occupano di:
 
 * sviluppare e personalizzare gli elementi necessari, ad esempio modelli, componenti, flussi di lavoro, applicazioni;
 * realizzare la progettazione;
@@ -62,7 +62,7 @@ Questo ambiente viene utilizzato dal team di controllo qualità per [test](/help
 
 ### Staging {#staging}
 
-L’ambiente di staging deve rispecchiare l’ambiente di produzione: configurazione, codice e contenuto:
+L’ambiente di staging deve riflettere l’ambiente di produzione, cioè la sua configurazione, il suo codice e il suo contenuto:
 
 * Viene utilizzato per testare gli script impiegati per implementare la distribuzione effettiva.
 * Può essere utilizzato per i test finali (progettazione, funzionalità e interfacce) prima dell’implementazione negli ambienti di produzione.
@@ -107,8 +107,8 @@ L’ambiente di pubblicazione genera i contenuti in tempo reale e in modo dinami
 
 Proponi sempre il codice dal basso verso l’alto:
 
-* Il codice viene inizialmente sviluppato negli ambienti di sviluppo locali e poi integrati.
-* seguito da test approfonditi sugli ambienti di controllo qualità
+* il codice viene inizialmente sviluppato negli ambienti di sviluppo locali e poi integrati
+* seguiti da approfonditi test negli ambienti di controllo qualità
 * Quindi viene testato nuovamente negli ambienti di gestione temporanea.
 * Solo a questo punto il codice può essere distribuito agli ambienti di produzione.
 
@@ -117,7 +117,7 @@ Il codice (ad esempio, funzionalità di applicazioni web personalizzate e modell
 I progetti AEM spesso attivano la distribuzione del codice:
 
 * Automaticamente: per il trasferimento negli ambienti di sviluppo e di controllo qualità.
-* Manualmente: le distribuzioni negli ambienti di staging e produzione vengono effettuate in modo più controllato, spesso manuale; anche se l’automazione è possibile, se necessario.
+* Manualmente: le distribuzioni negli ambienti di staging e produzione sono effettuate in modo più controllato, spesso manuale, anche se l’automazione è possibile se necessaria.
 
 ![chlimage_1](assets/chlimage_1.png)
 

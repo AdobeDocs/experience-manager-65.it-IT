@@ -2,7 +2,7 @@
 title: Scadenza dei certificati di estensione del Reader e relativo impatto
 description: Scadenza dei certificati di estensione del Reader e relativo impatto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 6e9a7f3307ed05f887d60c7c7310100cd4596b23
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 I clienti Adobe Experience Manager Forms (AEM Forms) con licenze Adobe Managed Services o On-Premise Enterprise Base possono utilizzare il servizio Acrobat Reader DC Extensions. Il servizio consente a un’organizzazione di condividere facilmente i documenti interattivi di PDF estendendo la funzionalità di Acrobat Reader con diritti di utilizzo aggiuntivi. Il servizio aggiunge diritti di utilizzo a un documento PDF e attiva funzionalità non disponibili quando un documento PDF viene aperto tramite Adobe Acrobat Reader, ad esempio l&#39;aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Gli utenti di terze parti non richiedono software o plug-in aggiuntivi per lavorare con documenti abilitati per i diritti. I documenti PDF a cui sono stati aggiunti diritti di utilizzo sono denominati documenti abilitati per i diritti. L’utente che apre un documento di PDF con abilitazione per i diritti in Acrobat Reader può eseguire le operazioni abilitate per tale documento.
 
-Adobe sfrutta un’infrastruttura a chiave pubblica (PKI) per rilasciare certificati digitali da utilizzare per la concessione di licenze e l’abilitazione delle funzioni. L’Adobe ha rilasciato certificati sotto l’autorità di certificazione **CA radice Adobe**, che scadrà il 7 gennaio 2023. La scadenza del certificato non influisce sui documenti PDF estesi utilizzando certificati di produzione rilasciati dal **CA radice Adobe** certificati basati su (certificati precedenti). Tutti i documenti di PDF, estesi in Reader utilizzando i vecchi certificati prima del 7 gennaio 2023, inclusi quelli scaricati dai clienti, continueranno a funzionare con tutti i diritti di utilizzo applicati e non richiedono aggiornamenti.
+Adobe utilizza un’infrastruttura a chiave pubblica (PKI) per rilasciare certificati digitali da utilizzare per la concessione di licenze e l’abilitazione delle funzioni. L’Adobe ha rilasciato certificati sotto l’autorità di certificazione **CA radice Adobe**, che scadrà il 7 gennaio 2023. La scadenza del certificato non influisce sui documenti PDF estesi utilizzando certificati di produzione rilasciati dal **CA radice Adobe** certificati basati su (certificati precedenti). Tutti i documenti di PDF, estesi in Reader utilizzando i vecchi certificati prima del 7 gennaio 2023, inclusi quelli scaricati dai clienti, continueranno a funzionare con tutti i diritti di utilizzo applicati e non richiedono aggiornamenti.
 
 Una nuova autorità di certificazione, **CA radice Adobe G2** Sono ora disponibili i certificati basati sulla nuova autorità di certificazione. Entro il 7 gennaio 2023, inizia a utilizzare i nuovi certificati, quelli basati su **CA radice Adobe G2** — per estendere di Reader i nuovi documenti PDF.  È possibile [ottenere nuovi certificati dal sito Web Adobe Licensing](https://licensing.adobe.com/) o supporto Adobe.
 
@@ -178,7 +178,7 @@ The following command list the details of the pfx file. Before running the comma
 
 `keytool -v -list -storetype pkcs12 -keystore [name of your .pfx file]`
 
-For example keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
+For example, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
 
 <!-- ### Remove usage rights from existing rights-enabled PDF documents
 

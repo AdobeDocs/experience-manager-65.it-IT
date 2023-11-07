@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2448'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,7 @@ Consulta [Utilizzo del salvataggio automatico nell’app AEM Forms](/help/forms/
 
 ## Differenze tra la casella in entrata dell’AEM e le funzioni dell’app AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono [Casella in entrata AEM](/help/forms/using/manage-applications-inbox.md) e l&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata dell’AEM e dell’app AEM Forms sono diverse. La casella in entrata AEM funziona solo con [Flussi di lavoro incentrati su Forms](/help/forms/using/aem-forms-workflow.md) l’app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi. Per ulteriori informazioni sulle differenze tra la casella in entrata dell’AEM e le funzionalità delle app AEM Forms, consulta [Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flussi di lavoro OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono [Casella in entrata AEM](/help/forms/using/manage-applications-inbox.md) e l&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata dell’AEM e dell’app AEM Forms sono diverse. La casella in entrata AEM funziona solo con [Flussi di lavoro incentrati su Forms](/help/forms/using/aem-forms-workflow.md) mentre l’app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi. Per ulteriori informazioni sulle differenze tra la casella in entrata dell’AEM e le funzionalità delle app AEM Forms, consulta [Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flussi di lavoro OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
 
 ## Moduli supportati {#supported-forms}
 
@@ -218,4 +218,4 @@ Puoi aggiornare l’app direttamente dal play store.
 
 * **Se la versione precedente dell’app viene generata e installata utilizzando il codice sorgente (applicabile per iOS e Android)**:
 
-   Prima di installare la nuova app, sincronizza tutti i dati con il server AEM Forms. Dopo aver sincronizzato i dati, disinstalla la versione precedente dell’app e installa la nuova app.
+  Prima di installare la nuova app, sincronizza tutti i dati con il server AEM Forms. Dopo aver sincronizzato i dati, disinstalla la versione precedente dell’app e installa la nuova app.

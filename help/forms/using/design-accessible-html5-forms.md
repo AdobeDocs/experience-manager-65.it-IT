@@ -11,9 +11,9 @@ discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
 docset: aem65
 feature: Mobile Forms
 exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ I moduli HTML5 utilizzano lo standard di accessibilità ARIA HTML5 per generare 
 
 AEM Forms Designer include diverse opzioni di Testo parlato che possono essere passate agli assistenti vocali. Per ogni oggetto di un modulo, l’utente può specificare una delle diverse impostazioni per il testo dell’assistente vocale:
 
-* Testo personalizzato dell&#39;utilità di lettura dello schermo, che può essere impostato utilizzando la tavolozza Accessibilità. Gli autori possono annotare i nomi dei pulsanti e dei campi, nonché il relativo scopo.
+* Testo personalizzato dell&#39;utilità di lettura dello schermo, che può essere impostato utilizzando la tavolozza Accessibilità. Gli autori possono annotare i nomi di pulsanti e campi e il relativo scopo.
 * Descrizioni comandi che possono essere impostate nella tavolozza Accessibilità.
 * Sottotitoli per i campi del modulo.
 * Nomi di oggetti, come specificato nell&#39;opzione Nome della scheda Associazione.

@@ -2,9 +2,9 @@
 title: Guida introduttiva ai servizi di consegna Edge
 description: Introduzione ai Edge Delivery Services (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '865'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Con i Edge Delivery Services, l&#39;AEM offre esperienze eccezionali che stimolano coinvolgimento e conversioni. L’AEM lo fa offrendo esperienze ad alto impatto veloci da creare e sviluppare. Si tratta di un set componibile di servizi che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente e nuovi siti vengono avviati rapidamente. Con questi Edge Delivery Services è possibile migliorare la conversione, ridurre i costi e velocizzare le attività relative ai contenuti.
 
-Sfruttando la distribuzione Edge, puoi:
+Utilizzando Edge Delivery, puoi:
 
 * Crea siti veloci con un punteggio Lighthouse perfetto e monitora continuamente le prestazioni del sito tramite il monitoraggio degli utenti reali (RUM, Real User Monitoring).
 * Aumentare l’efficienza di authoring disaccoppiando le origini di contenuto. È possibile utilizzare sia l’authoring AEM che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito web.
@@ -29,7 +29,7 @@ Edge Delivery è un insieme componibile di servizi che consente un elevato grado
 
 È ad esempio possibile utilizzare il contenuto direttamente dai documenti di Microsoft Word o Google. Ciò significa che i documenti provenienti da tali origini possono diventare pagine del sito Web. Inoltre, titoli, elenchi, immagini ed elementi font possono essere trasferiti dalla sorgente iniziale al sito web. I nuovi contenuti verranno aggiunti immediatamente senza un processo di ricostruzione.
 
-Edge Delivery sfrutta GitHub per consentire ai clienti di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, puoi scrivere contenuti nei documenti di Google o in Microsoft Word e le funzionalità del sito possono essere sviluppate utilizzando CSS e JavaScript in GitHub. Quando sei pronto, puoi utilizzare l’estensione del browser del Sidekick per visualizzare in anteprima e pubblicare gli aggiornamenti dei contenuti.
+Edge Delivery utilizza GitHub per consentire ai clienti di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, puoi scrivere contenuti nei documenti di Google o in Microsoft Word e le funzionalità del sito possono essere sviluppate utilizzando CSS e JavaScript in GitHub. Quando sei pronto, puoi utilizzare l’estensione del browser del Sidekick per visualizzare in anteprima e pubblicare gli aggiornamenti dei contenuti.
 
 Ulteriori informazioni:
 
@@ -72,7 +72,7 @@ Per ulteriori informazioni, consulta [Utilizzo del bot di Slack](https://www.hlx
 Passaggi per registrare un ticket di supporto tramite l’Admin Console:
 
 1. Aggiungi **Consegna Edge** nel titolo del biglietto.
-2. Nella descrizione, si prega di fornire i seguenti dettagli:
+2. Nella descrizione, fornisci i seguenti dettagli:
 
    * URL del sito web live. Ad esempio: [www.mydomain.com].
    * URL del sito Web di origine (URL con estensione hlx).

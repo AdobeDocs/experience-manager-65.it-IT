@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3914'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Per eseguire a livello di programmazione un&#39;operazione del servizio di esten
 
 **Recuperare un documento PDF**
 
-Per applicare i diritti di utilizzo, è necessario recuperare un documento PDF. I documenti PDF con abilitazione per i diritti contengono un dizionario dei diritti di utilizzo. Quando Adobe Reader apre un documento contenente tale dizionario, abilita i diritti di utilizzo specificati nel dizionario solo per quel documento. Se il documento non contiene un dizionario dei diritti di utilizzo, il servizio Acrobat Reader DC Extension ne crea uno. Se contiene già un dizionario, il servizio Acrobat Reader DC extensions sovrascrive i diritti di utilizzo esistenti con quelli specificati. Il dizionario specifica quali diritti di utilizzo sono abilitati. Quando un utente apre il documento in Adobe Reader, sono consentiti solo i diritti di utilizzo specificati nel dizionario.
+Recupera un documento PDF per applicare i diritti di utilizzo. I documenti PDF con abilitazione per i diritti contengono un dizionario dei diritti di utilizzo. Quando Adobe Reader apre un documento contenente tale dizionario, abilita i diritti di utilizzo specificati nel dizionario solo per quel documento. Se il documento non contiene un dizionario dei diritti di utilizzo, il servizio Acrobat Reader DC Extension ne crea uno. Se contiene già un dizionario, il servizio Acrobat Reader DC extensions sovrascrive i diritti di utilizzo esistenti con quelli specificati. Il dizionario specifica quali diritti di utilizzo sono abilitati. Quando un utente apre il documento in Adobe Reader, sono consentiti solo i diritti di utilizzo specificati nel dizionario.
 
 **Specificare i diritti di utilizzo da applicare**
 
@@ -388,7 +388,7 @@ Prima di poter eseguire un&#39;operazione del servizio Acrobat Reader DC extensi
 
 **Recuperare un documento di PDF abilitato per i diritti**
 
-Per recuperare informazioni sulle credenziali, è necessario recuperare un documento di PDF con abilitazione dei diritti. È inoltre possibile recuperare informazioni su una credenziale specificandone l&#39;alias. Tuttavia, se si desidera recuperare informazioni su una credenziale utilizzata per applicare i diritti di utilizzo a un documento PDF con diritti specifici, è necessario recuperare il documento.
+Recuperare un documento PDF abilitato per i diritti per recuperare informazioni sulle credenziali. È inoltre possibile recuperare informazioni su una credenziale specificandone l&#39;alias. Tuttavia, se si desidera recuperare informazioni su una credenziale utilizzata per applicare i diritti di utilizzo a un documento PDF con diritti specifici, è necessario recuperare il documento.
 
 **Recupera informazioni sulle credenziali**
 

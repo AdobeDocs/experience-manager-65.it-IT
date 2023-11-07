@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 19%
+source-wordcount: '1892'
+ht-degree: 16%
 
 ---
 
@@ -25,7 +25,7 @@ Questa sezione descrive come creare e gestire le pagine con Adobe Experience Man
 
 ## Organizzazione del sito web {#organizing-your-website}
 
-In qualità di autore, dovrai organizzare il tuo sito web all’interno di AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
+In qualità di autore, devi organizzare il tuo sito web all’interno dell’AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
 
 * si trovano facilmente nell’ambiente di authoring
 * i visitatori del sito possono facilmente sfogliarli nell’ambiente di pubblicazione
@@ -72,7 +72,7 @@ Questa struttura può essere visualizzata dalla console Siti web, che puoi utili
 
 ### Convenzioni di denominazione delle pagine {#page-naming-conventions}
 
-Durante la creazione di una nuova pagina sono disponibili due campi chiave:
+Durante la creazione di una pagina sono disponibili due campi chiave:
 
 * **[Titolo](#title)**:
 
@@ -84,7 +84,7 @@ Durante la creazione di una nuova pagina sono disponibili due campi chiave:
    * Viene utilizzato per generare l’URI.
    * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome viene derivato dal titolo.
 
-Quando si crea una nuova pagina, l’AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+Durante la creazione di una pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
 
 L’implementazione e l’elenco dei caratteri consentiti varia leggermente a seconda dell’interfaccia utente (è più esteso per l’interfaccia touch), ma il minimo consentito è:
 
@@ -98,7 +98,7 @@ Utilizza solo questi caratteri per essere sicuro che siano accettati o utilizzat
 
 #### Titolo {#title}
 
-Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM ne deriva il **nome** [da questa stringa e lo convalida in base alle convenzioni imposte da AEM e JCR. ](/help/sites-developing/naming-conventions.md) In entrambe le interfacce **Titolo** il campo contenente caratteri non validi verrà accettato, ma al nome derivato verranno sostituiti i caratteri non validi. Ad esempio:
+Se si specifica solo una pagina **Titolo** quando si crea una pagina, l’AEM la deriva **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR. In entrambe le interfacce **Titolo** il campo contenente caratteri non validi verrà accettato, ma al nome derivato verranno sostituiti i caratteri non validi. Ad esempio:
 
 | Titolo | Nome derivato |
 |---|---|
@@ -107,7 +107,7 @@ Se specifichi solo il **titolo** della pagina quando crei una nuova pagina, AEM 
 
 #### Nome {#name}
 
-Se specifichi il **nome** della pagina quando crei una nuova pagina, AEM lo [convalida in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+Se si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
 
 Nell’interfaccia classica **impossibile immettere caratteri non validi** nel **Nome** campo.
 
@@ -122,7 +122,7 @@ Nell’interfaccia classica **impossibile immettere caratteri non validi** nel *
 
 ### Modelli {#templates}
 
-In AEM, un modello specifica un tipo di pagina particolare. Un modello verrà utilizzato come base per qualsiasi nuova pagina creata.
+In AEM, un modello specifica un tipo di pagina particolare. Un modello viene utilizzato come base per qualsiasi nuova pagina creata.
 
 Il modello definisce la struttura di una pagina, incluse un’immagine di miniatura e altre proprietà. Ad esempio, puoi usare modelli distinti per pagine di prodotti, sitemap e informazioni di contatto. I modelli sono costituiti da [componenti](#components).
 
@@ -155,7 +155,7 @@ Dopo aver creato e aperto una pagina è possibile: [aggiungi contenuto utilizzan
 
 A meno che non siano state create tutte le pagine in anticipo, prima di poter iniziare a creare il contenuto devi creare una pagina:
 
-1. Dalla sezione **Siti Web** , selezionare il livello in cui si desidera creare una nuova pagina.
+1. Dalla sezione **Siti Web** , selezionare il livello in cui si desidera creare una pagina.
 
    Nell&#39;esempio seguente, si sta creando una pagina sotto il livello **Prodotti** : visualizzato nel riquadro di sinistra; il riquadro di destra mostra le pagine già esistenti al livello in **Prodotti**.
 
@@ -170,7 +170,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
    * Fornisci un **Titolo**; questo viene visualizzato all’utente.
    * Fornisci un **Nome**; viene utilizzato per generare l’URI. Se non viene specificato, il nome verrà derivato dal titolo.
 
-      * Se si specifica una pagina **Nome** quando si crea una nuova pagina, l’AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall’AEM e dal JCR.
+      * Se si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposto dall’AEM e dal JCR.
       * Nell’interfaccia classica **impossibile immettere caratteri non validi** nel **Nome** campo.
 
    * Fare clic sul modello da utilizzare per creare la nuova pagina.
@@ -181,7 +181,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
 
-   Le informazioni minime necessarie per creare una nuova pagina sono **Titolo** e il modello richiesto.
+   Le informazioni minime necessarie per creare una pagina sono **Titolo** e il modello richiesto.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -195,7 +195,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
    >[!NOTE]
    >
-   >È inoltre possibile creare una pagina quando si modifica una pagina esistente. Utilizzo di **Crea pagina figlio **da **Pagina** della barra laterale, creerà una nuova pagina direttamente sotto la pagina in fase di modifica.
+   >È inoltre possibile creare una pagina quando si modifica una pagina esistente. Utilizzo di **Crea pagina figlia** dal **Pagina** della barra laterale crea una pagina direttamente sotto la pagina in fase di modifica.
 
 ### Apertura di una pagina per la modifica {#opening-a-page-for-editing}
 
@@ -235,7 +235,7 @@ Durante la copia, puoi copiare:
 
    >[!NOTE]
    >
-   >Puoi anche utilizzare **Copia pagina** dal **Pagina** della barra laterale. Viene aperta una finestra di dialogo in cui puoi specificare la destinazione e così via.
+   >Puoi anche utilizzare **Copia pagina** dal **Pagina** della barra laterale. Viene visualizzata una finestra di dialogo in cui è possibile specificare la destinazione e così via.
 
 ### Spostamento o ridenominazione di una pagina {#moving-or-renaming-page}
 
@@ -331,7 +331,7 @@ Per spostare o rinominare una pagina:
 
 1. Apri **Siti Web** e passare alla posizione desiderata.
 1. In **Nuovo...** menu (fare clic sulla freccia accanto a **Nuovo...**), seleziona **Nuova cartella...**.
-1. Il **Crea cartella** viene aperta una finestra di dialogo. Nella finestra puoi immettere il **Nome** e il **Titolo**:
+1. Il **Crea cartella** viene visualizzata. Nella finestra puoi immettere il **Nome** e il **Titolo**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 04941e17054951bcf6264da957d951a5d1107896
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6622'
+source-wordcount: '6618'
 ht-degree: 7%
 
 ---
@@ -429,7 +429,7 @@ Come parte della configurazione, accertati di avere accesso a una società in Ad
 
 ## Configurare Adobe Analytics per l’integrazione {#configuring-adobe-analytics-for-the-integration}
 
-Dopo aver configurato Adobe Analytics, per l’integrazione verrà impostato quanto segue:
+Dopo aver configurato Adobe Analytics, per l’integrazione viene configurato quanto segue:
 
 * Una suite di rapporti è attiva e selezionata.
 * Le variabili di Analytics sono disponibili per ricevere i dati di tracciamento.
@@ -469,7 +469,7 @@ Vedi anche [Guida all’implementazione di Analytics](https://experienceleague.a
 
    Consulta [Panoramica di prop ed eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
-   Ai fini di questa documentazione, verrà utilizzata solo una variabile Traffico personalizzato (prop) perché diventano disponibili in un rapporto di Analytics entro pochi minuti dopo che si è verificata un’azione su una pagina web.
+   Ai fini di questa documentazione, viene utilizzata solo una variabile Traffico personalizzato (prop) perché diventano disponibili in un rapporto di Analytics entro pochi minuti dopo che si è verificata un’azione su una pagina web.
 
    Per abilitare una nuova variabile di traffico personalizzata, in Adobe Analytics, nella barra degli strumenti, vai a **[!UICONTROL Amministratore]** > **[!UICONTROL Suite di rapporti]**.
 
@@ -496,7 +496,7 @@ Vedi anche [Guida all’implementazione di Analytics](https://experienceleague.a
 
 ## Configurare i tag di Experience Platform per l’integrazione {#configuring-adobe-launch-for-the-integration}
 
-Dopo aver configurato i Tag di Experience Platform, per l’integrazione verrà impostato quanto segue:
+Dopo aver configurato i Tag di Experience Platform, per l’integrazione viene configurato quanto segue:
 
 * La creazione di una nuova Proprietà per mantenere unite tutte le configurazioni.
 * Installazione e configurazione delle estensioni. Il codice lato client di tutte le estensioni installate nella proprietà viene compilato insieme in una libreria. Questa libreria viene utilizzata dalla pagina web in un secondo momento.
@@ -578,7 +578,7 @@ A partire da questa data, il *Visualizzatori Dynamic Medie* L&#39;estensione è 
 
 Consulta [Creare una proprietà in Experienci Platform Tags](#creating-a-property-in-adobe-launch).
 
-Dopo l’installazione e la configurazione delle estensioni, almeno le cinque estensioni seguenti (quattro se non stai tracciando il video) saranno elencate nell’area Estensioni > Installate.
+Dopo l’installazione e la configurazione delle estensioni, almeno le cinque estensioni seguenti (quattro se non stai tracciando il video) sono elencate nell’area Estensioni > Installate.
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
@@ -826,7 +826,7 @@ Ad esempio: `https://ims-na1.adobelogin.com/`
 
    In **[!UICONTROL URI libreria]** (Uniform Resource Identifier), controlla il percorso della versione di staging della libreria di tag di Experience Platform. Experience Manager compila automaticamente questo campo.
 
-   Solo a scopo esemplificativo, questo passaggio utilizza le librerie di tag Experienci Platform distribuite in Adobe CDN.
+   Solo a scopo di esempio, questo passaggio utilizza le librerie di tag Experienci Platform distribuite in Adobe CDN.
 
    >[!NOTE]
    >

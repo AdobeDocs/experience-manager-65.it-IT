@@ -2,10 +2,10 @@
 title: Casella in entrata per gestire le attività
 description: Gestione delle attività con la casella in entrata in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 42%
+source-wordcount: '1144'
+ht-degree: 43%
 
 ---
 
@@ -67,7 +67,7 @@ Per aprire la casella in entrata delle notifiche AEM:
 
 1. Tocca o fai clic sull’indicatore nella barra degli strumenti.
 
-1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
+1. Seleziona **Visualizza tutto**. Il **Casella in entrata AEM** viene aperto. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
    Per entrambe le viste potete anche definire [Impostazioni vista](#inbox-view-settings); le opzioni disponibili dipendono dalla vista corrente.
@@ -161,7 +161,7 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
 >Sebbene sia possibile selezionare più elementi, le azioni possono essere eseguite solo su un elemento alla volta.
 
 
-1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Nella barra degli strumenti verranno visualizzate le icone per le azioni applicabili a tale elemento:
+1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili a tale elemento sono visualizzate nella barra degli strumenti:
 
    ![wf-84](assets/wf-84.png)
 
@@ -223,7 +223,7 @@ Dalla casella in entrata è possibile creare le attività:
 
    * **Avanzate**
 
-      * **Nome**: verrà utilizzato per formare l’URL; se questo campo viene lasciato vuoto, verrà basato sul valore **Titolo**.
+      * **Nome**: viene utilizzato per formare l’URL; se questo campo viene lasciato vuoto, verrà basato sul valore **Titolo**.
 
    ![wf-87](assets/wf-87.png)
 

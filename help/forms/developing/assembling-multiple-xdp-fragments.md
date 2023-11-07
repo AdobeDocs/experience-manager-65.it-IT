@@ -13,9 +13,9 @@ discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
 docset: aem65
 role: Developer
 exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,9 @@ Il documento DDX contiene un XDP `result` che specifica il nome del risultato. I
  }
 ```
 
-Il `XDP source` specifica il file XDP che rappresenta un documento XDP completo che può essere utilizzato come contenitore per l’aggiunta di frammenti XDP o come uno dei numerosi documenti accodati nell’ordine. In questa situazione, il documento XDP viene utilizzato solo come contenitore (la prima illustrazione mostrata in *Assemblaggio di più frammenti XDP*). In altre parole, gli altri file XDP vengono posizionati all’interno del contenitore XDP.
+Il `XDP source` specifica il file XDP che rappresenta un documento XDP completo che può essere utilizzato come contenitore per l’aggiunta di frammenti XDP o come uno dei numerosi documenti accodati in ordine. In questa situazione, il documento XDP viene utilizzato solo come contenitore (la prima illustrazione mostrata in *Assemblaggio di più frammenti XDP*). In altre parole, gli altri file XDP vengono posizionati all’interno del contenitore XDP.
 
-Per ogni modulo secondario è possibile aggiungere un `XDPContent` (elemento facoltativo). Nell’esempio precedente, nota che sono disponibili tre sottomoduli: `subPatientContact`, `subPatientPhysical`, e `subPatientHealth`. Entrambe `subPatientPhysical` sottomaschera e `subPatientHealth` i moduli secondari si trovano nello stesso file XDP, tuc018_patient.xdp. L’elemento frammento specifica il nome del modulo secondario, come definito in Designer.
+Per ogni modulo secondario è possibile aggiungere un `XDPContent` (elemento facoltativo). Nell’esempio precedente, nota che sono disponibili tre sottomoduli: `subPatientContact`, `subPatientPhysical`, e `subPatientHealth`. Entrambe `subPatientPhysical` sottomaschera e `subPatientHealth` i sub-moduli si trovano nello stesso file XDP, tuc018_patient.xdp. L’elemento frammento specifica il nome del modulo secondario, come definito in Designer.
 
 >[!NOTE]
 >

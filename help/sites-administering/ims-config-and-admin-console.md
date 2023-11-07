@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 11%
+source-wordcount: '1668'
+ht-degree: 12%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo per i clienti di Adobe Managed Services.
+>Questa funzione è disponibile solo per i clienti Adobe Managed Services.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Onboarding dell’AEM in [!DNL Admin Console] consentirà ai clienti Managed Ser
 
 ## Elementi di rilievo {#key-highlights}
 
-* Il supporto per l’autenticazione AEM IMS è destinato solo agli autori, agli amministratori o agli sviluppatori di AEM e non agli utenti finali esterni del sito del cliente, come i visitatori del sito
+* Il supporto per l’autenticazione AEM IMS è riservato solo agli autori, agli amministratori o agli sviluppatori AEM e non agli utenti finali esterni del sito del cliente, come i visitatori del sito
 * Il [!DNL Admin Console] rappresenterà i clienti Managed Services dell’AEM come organizzazioni IMS e le loro istanze come contesti di prodotto. Gli amministratori di prodotto e sistema del cliente potranno gestire l’accesso alle istanze
 * AEM Managed Services sincronizzerà le topologie dei clienti con [!DNL Admin Console]. Nell’ sarà presente un’istanza del contesto di prodotto AEM Managed Services per istanza [!DNL Admin Console].
 * Profili di prodotto in [!DNL Admin Console] determina le istanze a cui un utente può accedere
@@ -78,7 +78,7 @@ Una volta che un cliente esiste come organizzazione IMS e AMS ha completato il p
 
 ### Onboarding degli utenti in [!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 
-Sono disponibili tre modi per integrare gli utenti a seconda delle dimensioni del cliente e delle loro preferenze:
+Sono disponibili tre modi per integrare gli utenti a seconda delle dimensioni del cliente e delle sue preferenze:
 
 1. Creare manualmente utenti e gruppi in [!DNL Admin Console]
 1. Carica un file CSV con gli utenti
@@ -86,7 +86,7 @@ Sono disponibili tre modi per integrare gli utenti a seconda delle dimensioni de
 
 #### Aggiunta manuale tramite [!DNL Admin Console] UI {#manual-addition-through-admin-console-ui}
 
-Gli utenti e i gruppi possono essere creati manualmente in [!DNL Admin Console] UI. Questo metodo può essere utilizzato se non hanno molti utenti da gestire. Ad esempio, meno di 50 pazienti con AEM.
+Gli utenti e i gruppi possono essere creati manualmente in [!DNL Admin Console] UI. Questo metodo può essere utilizzato se non hanno molti utenti da gestire. Ad esempio, meno di 50 persone affette da AEM.
 
 Gli utenti possono anche essere creati manualmente se il cliente sta già utilizzando questo metodo per amministrare altri prodotti di Adobe come le applicazioni Adobe Analytics, Adobe Target o Adobe Creative Cloud.
 
@@ -116,7 +116,7 @@ La sincronizzazione degli utenti viene distribuita tramite l’archivio Github d
 
 È disponibile una versione non definitiva 2.4RC1 con supporto per la creazione di gruppi dinamici, disponibile qui: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
-Le funzioni principali di questa versione sono la possibilità di mappare dinamicamente nuovi gruppi LDAP per l’iscrizione degli utenti nel [!DNL Admin Console]nonché la creazione dinamica di gruppi di utenti.
+Le funzioni principali di questa versione sono la possibilità di mappare dinamicamente nuovi gruppi LDAP per l’iscrizione degli utenti nel [!DNL Admin Console]e la creazione dinamica di gruppi di utenti.
 
 Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili qui:
 
@@ -124,19 +124,19 @@ Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili qui:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sullo strumento User Sync, consulta [pagina della documentazione](https://adobe-apiplatform.github.io/user-sync.py/en/).
+>Per ulteriori informazioni sullo strumento User Sync, consultate [pagina della documentazione](https://adobe-apiplatform.github.io/user-sync.py/en/).
 >
 >
 >Lo strumento User Sync deve essere registrato come client UMAPI di Adobe I/O seguendo la procedura descritta [qui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->È possibile trovare la documentazione della console Adobe I/O [qui](https://developer.adobe.com/developer-console/docs/guides/).
+>È possibile trovare la documentazione della console Adobe I/O [qui](https://developer.adobe.com/developer-console/documenti/guide/).
 >
 >
 >Il [!DNL User Management] L&#39;API utilizzata dallo strumento User Sync viene descritta qui [posizione](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >
->La configurazione IMS dell’AEM verrà gestita dal team di Adobe Managed Services. Tuttavia, l’amministratore del cliente può modificarla in base alle proprie esigenze (ad esempio iscrizione automatica al gruppo o mappatura del gruppo). Anche il client IMS verrà registrato dal team Managed Services.
+>La configurazione AEM IMS sarà gestita dal team Adobe Managed Services. Tuttavia, l’amministratore del cliente può modificarla in base alle proprie esigenze (ad esempio, Iscrizione automatica al gruppo o Mappatura del gruppo). Anche il client IMS verrà registrato dal team Managed Services.
 
 ## Guida all’uso {#how-to-use}
 
@@ -146,7 +146,7 @@ Quando l’amministratore del prodotto del cliente accede a [!DNL Admin Console]
 
 ![screen_shot_2018-09-17alle105804pm](assets/screen_shot_2018-09-17at105804pm.png)
 
-In questo esempio, l’organizzazione *AEM-MS-Onboard* dispone di 32 istanze che si estendono su topologie e ambienti diversi come Stage, Prod, ecc.
+In questo esempio, l’organizzazione *AEM-MS-Onboard* dispone di 32 istanze che si estendono su topologie e ambienti diversi, come Stage, Prod e così via.
 
 ![screen_shot_2018-09-17alle105517pm](assets/screen_shot_2018-09-17at105517pm.png)
 

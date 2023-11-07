@@ -8,9 +8,9 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3032'
 ht-degree: 2%
 
 ---
@@ -429,7 +429,7 @@ L&#39;AEM può anche essere configurato per funzionare con un&#39;istanza remota
 
 #### Configurazione consigliata per Solr {#recommended-configuration-for-solr}
 
-Di seguito è riportato un esempio di configurazione di base che può essere utilizzata con tutte e tre le implementazioni Solr descritte in questo articolo. Esso ospita gli indici di proprietà dedicati che sono già presenti nell’AEM e non devono essere utilizzati con altre applicazioni.
+Di seguito è riportato un esempio di configurazione di base che può essere utilizzata con tutte e tre le implementazioni Solr descritte in questo articolo. Consente di gestire gli indici di proprietà dedicati già presenti nell’AEM; non utilizzarli con altre applicazioni.
 
 Per utilizzarlo correttamente, è necessario inserire il contenuto dell&#39;archivio direttamente nella home directory Solr. In caso di distribuzioni con più nodi, questa deve trovarsi direttamente nella cartella principale di ciascun nodo.
 

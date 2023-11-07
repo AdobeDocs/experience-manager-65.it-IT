@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1188'
 ht-degree: 4%
 
 ---
@@ -82,7 +82,7 @@ Anche se gli indici Oak non vengono creati automaticamente per la ricerca sulla 
 
 Se le proprietà personalizzate sono in uso e le ricerche sono lente, è necessario creare indici aggiuntivi per le proprietà personalizzate per renderle più performanti. Per mantenere la portabilità, attieniti alla [requisiti di denominazione](#naming-of-custom-properties) durante la creazione di proprietà personalizzate ricercabili.
 
-Per modificare gli indici esistenti o creare indici personalizzati, fare riferimento a [Query e indicizzazione Oak](../../help/sites-deploying/queries-and-indexing.md).
+Per modificare gli indici esistenti o creare indici personalizzati, vedi [Query e indicizzazione Oak](../../help/sites-deploying/queries-and-indexing.md).
 
 Il [Gestore indice Oak](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) è disponibile da ACS AEM Commons. Esso prevede:
 

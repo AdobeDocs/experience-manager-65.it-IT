@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina di contenuto
 description: Definisci le proprietà richieste per una pagina in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 42%
+source-wordcount: '1871'
+ht-degree: 41%
 
 ---
 
@@ -257,7 +257,7 @@ Puoi definire le proprietà di pagina:
 
 * Dalla console **Sites**:
 
-   * [Crea una nuova pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un sottoinsieme delle proprietà)
+   * [Creazione di una pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un sottoinsieme delle proprietà)
 
    * Tocca o fai clic su **Proprietà**
 
@@ -363,7 +363,7 @@ Dopo aver inserito Modifica in serie, potete effettuare le seguenti operazioni:
    * Puoi aggiornare i valori nei campi disponibili.
 
       * I nuovi valori vengono applicati a tutte le pagine selezionate quando selezioni **Fine**.
-      * Quando il campo è multivalore (ad esempio Tag), è possibile aggiungere un nuovo valore o rimuovere un valore comune.
+      * Quando il campo ha più valori (ad esempio Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.
 
    * I campi in comune ma con valori diversi nelle varie pagine sono contrassegnati da un valore speciale, ad esempio il testo `<Mixed Entries>`.
 

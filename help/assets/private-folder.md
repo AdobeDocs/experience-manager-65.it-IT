@@ -6,10 +6,10 @@ role: User
 feature: Collaboration
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -74,7 +74,7 @@ Per creare e condividere una cartella privata:
 
 >[!NOTE]
 >
->Per creare una cartella privata, è necessario disporre di Leggi e Modifica [autorizzazioni di controllo degli accessi](/help/sites-administering/security.md#permissions-in-aem) nella cartella principale in cui si desidera creare una cartella privata. Se non sei un amministratore, per impostazione predefinita queste autorizzazioni non sono abilitate per te il `/content/dam`. In questo caso, prima di creare cartelle private, è necessario ottenere queste autorizzazioni per l&#39;ID utente o il gruppo.
+>Per creare una cartella privata, è necessario disporre di Leggi e Modifica [autorizzazioni di controllo degli accessi](/help/sites-administering/security.md#permissions-in-aem) nella cartella principale in cui si desidera creare una cartella privata. Se non sei un amministratore, per impostazione predefinita queste autorizzazioni non sono abilitate su `/content/dam`. In questo caso, prima di creare cartelle private, è necessario ottenere queste autorizzazioni per l&#39;ID utente o il gruppo.
 
 ## Eliminazione cartella privata {#delete-private-folder}
 
@@ -84,7 +84,7 @@ Puoi eliminare una cartella selezionandola e selezionando [!UICONTROL Elimina] d
 
 >[!CAUTION]
 >
->Se elimini una cartella privata da CRXDE Lite, i gruppi di utenti ridondanti vengono lasciati nell’archivio.
+>Se elimini una cartella privata da CRXDE Liti, i gruppi di utenti ridondanti vengono lasciati nell’archivio.
 
 >[!NOTE]
 >

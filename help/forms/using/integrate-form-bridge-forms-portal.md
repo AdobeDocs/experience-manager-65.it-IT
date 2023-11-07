@@ -11,9 +11,9 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ FormBridge è un’API bridge di HTML5 forms che consente di interagire con un m
 
 È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi modulo dalla pagina HTML e inviare il modulo. Ad esempio, puoi utilizzare l’API per creare un’esperienza simile a una procedura guidata.
 
-Un’applicazione HTML esistente può sfruttare l’API FormBridge per interagire con un modulo e incorporarlo nella pagina HTML. Puoi utilizzare i seguenti passaggi per impostare il valore di un campo utilizzando l’API Bridge modulo.
+Un’applicazione HTML esistente può utilizzare l’API FormBridge per interagire con un modulo e incorporarlo nella pagina HTML. Puoi utilizzare i seguenti passaggi per impostare il valore di un campo utilizzando l’API Bridge modulo.
 
 ## Integrazione di moduli HTML5 in una pagina web {#integrating-html-forms-to-a-web-page}
 
@@ -34,7 +34,7 @@ Un’applicazione HTML esistente può sfruttare l’API FormBridge per interagir
    1. Accedi con le credenziali di amministratore.
    1. Crea un profilo o scegli un profilo esistente.
 
-      Per informazioni dettagliate su come creare un profilo, consulta [Creazione di un nuovo profilo](/help/forms/using/custom-profile.md).
+      Per informazioni dettagliate su come creare un profilo, consulta [Creazione di un profilo](/help/forms/using/custom-profile.md).
 
 1. **Modificare il profilo di HTML**
 

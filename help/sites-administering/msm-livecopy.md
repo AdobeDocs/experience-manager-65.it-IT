@@ -3,10 +3,10 @@ title: Creazione e sincronizzazione di Live Copy
 description: Scopri come creare e sincronizzare Live Copy in Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4233'
-ht-degree: 47%
+source-wordcount: '4226'
+ht-degree: 46%
 
 ---
 
@@ -124,7 +124,7 @@ Per creare una Live Copy:
    * Non selezionato: crea una Live Copy che includa tutti i discendenti della pagina selezionata (Live Copy deep)
 
 1. (Facoltativo) Per specificare una o più configurazioni di rollout da utilizzare per la Live Copy, utilizza **Configurazioni rollout** per selezionarli; le configurazioni selezionate vengono visualizzate sotto il selettore a discesa.
-1. Tocca o fai clic su **Crea**. Verrà visualizzato un messaggio di conferma, da qui puoi selezionare una delle seguenti opzioni **Apri** o **Fine**.
+1. Tocca o fai clic su **Crea**. Verrà visualizzato un messaggio di conferma. Da qui puoi selezionare una delle seguenti opzioni, **Apri** o **Fine**.
 
 ### Creazione di una Live Copy di un sito da una configurazione Blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -149,7 +149,7 @@ Quando crei il sito, fornisci valori per le seguenti proprietà:
 
 Per creare una Live Copy di un sito da una configurazione blueprint:
 
-1. Nella console **Sites**, seleziona **Crea**, quindi **Sito** dal selettore a discesa.
+1. Nella console **Sites**, seleziona **Crea**, quindi **Sito** dal menu a discesa.
 1. Seleziona la configurazione blueprint da utilizzare come origine della Live Copy e procedi con **Successivo**:
 
    ![Seleziona la configurazione blueprint come origine della Live Copy](assets/blueprint-configuration-select.png)
@@ -325,7 +325,7 @@ Per modificare il contenuto della Live Copy, puoi:
 
 >[!NOTE]
 >
->Se crei manualmente una nuova pagina nella Live Copy, questa sarà locale rispetto alla Live Copy, il che significa che non dispone di una pagina di origine corrispondente a cui collegarsi.
+>Se crei manualmente una pagina nella Live Copy, questa sarà locale rispetto alla Live Copy, il che significa che non dispone di una pagina sorgente corrispondente da allegare.
 >
 >La best practice per creare una pagina locale che fa parte della relazione consiste nel crearla nell’origine e eseguire un rollout (profondo). In questo modo la pagina verrà creata localmente come Live Copy.
 
@@ -412,13 +412,13 @@ Una volta [sospesa](#suspending-inheritance-from-page-properties), l’azione **
 
 ![Riprendi](assets/chlimage_1-229.png)
 
-Quando questa opzione è selezionata, viene visualizzata la finestra di dialogo. Se necessario, puoi selezionare una sincronizzazione e quindi confermare l’azione.
+Se questa opzione è selezionata, viene visualizzata la finestra di dialogo. Se necessario, puoi selezionare una sincronizzazione e quindi confermare l’azione.
 
 #### Riprendere una pagina Live Copy dalla panoramica della Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 Quando viene selezionata una pagina Live Copy, l’azione [Riprendi è disponibile anche nella panoramica della Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview).
 
-1. Apri [Panoramica Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) e seleziona una pagina Live Copy che è stata sospesa; verrà visualizzata come **EREDITARIETÀ ANNULLATA**.
+1. Apri [Panoramica Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) e seleziona una pagina Live Copy che è stata sospesa; viene visualizzata come **EREDITARIETÀ ANNULLATA**.
 1. Seleziona **Riprendi** nella barra degli strumenti.
 1. Indica se desideri sincronizzare la pagina dopo aver ripristinato l’ereditarietà, quindi conferma l’azione **Riprendi** nella finestra di dialogo **Riprendi Live Copy**.
 
@@ -624,7 +624,7 @@ Ci sono implicazioni relative a dove utilizzi **Scollega** all’interno dell’
 
       * Questo perché MSM le considera come pagine create manualmente che causano un conflitto in quanto hanno lo stesso nome delle pagine Live Copy che sta tentando di creare.
 
-   1. Crea una nuova pagina (Live Copy) con il nome originale, contenente le modifiche dal rollout.
+   1. Crea una pagina (Live Copy) con il nome originale, contenente le modifiche dal rollout.
 
   >[!NOTE]
   >
@@ -640,7 +640,7 @@ Per scollegare una Live Copy:
 
    ![Stacca](assets/chlimage_1-236.png)
 
-1. Viene visualizzata una finestra di dialogo di conferma, seleziona **Scollega** per completare l’azione.
+1. Viene visualizzata una finestra di dialogo di conferma, seleziona **Stacca** per completare l&#39;azione.
 
 ### Scollega una pagina Live Copy dalla panoramica Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 

@@ -1,16 +1,12 @@
 ---
 title: Servizio Forms con codice a barre
-seo-title: Using AEM Forms Barcoded Forms Service
 description: Utilizza il servizio AEM Forms Barcoded Forms per estrarre dati da immagini elettroniche di codici a barre.
-seo-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes.
-uuid: b044a788-0e4a-4718-b71a-bd846933d51b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 exl-id: edaf12be-473f-4175-b4e0-549b41159a55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 1%
@@ -175,13 +171,13 @@ Il codice di esempio seguente decodifica un codice a barre in un documento e sal
 
  // Create a Docmanager Document object for 
  // the tiff file containing barcode
- // Please see Docmanager Document javadoc for
+ // See Docmanager Document javadoc for
  // more details
  Document inputDoc = new Document(documentPath);
 
  // Invoke decode operation of barcoded forms service 
  // Second parameter is set to true to decode PDF417 barcode symbology
- // Please see javadoc for details of parameters
+ // See javadoc for details of parameters
 
  org.w3c.dom.Document result = bcfService.decode(inputDoc, // Input Document Object
                                                     true, 

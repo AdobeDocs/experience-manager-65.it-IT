@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '8187'
+source-wordcount: '8184'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Per crittografare il documento con una password, è necessario ottenere un docum
 
 Per crittografare un documento PDF con una password, è necessario specificare quattro valori, inclusi due valori di password. Il primo valore della password viene utilizzato per crittografare il documento PDF e deve essere specificato all&#39;apertura del documento PDF. Il secondo valore della password, denominato password master, viene utilizzato per rimuovere la crittografia dal documento PDF. I valori delle password fanno distinzione tra maiuscole e minuscole e non possono essere uguali.
 
-È necessario specificare le risorse del documento PDF da crittografare. È possibile crittografare l’intero documento PDF, tutto tranne i metadati del documento o solo gli allegati del documento. Se si crittografano solo gli allegati del documento, a un utente viene richiesta una password quando tenta di accedere ai file allegati.
+Specificare le risorse del documento PDF da crittografare. È possibile crittografare l’intero documento PDF, tutto tranne i metadati del documento o solo gli allegati del documento. Se si crittografano solo gli allegati del documento, a un utente viene richiesta una password quando tenta di accedere ai file allegati.
 
 Quando si crittografa un documento PDF, è possibile specificare le autorizzazioni associate al documento protetto. Specificando le autorizzazioni, è possibile controllare le azioni che un utente che apre un documento PDF crittografato con password può eseguire. Ad esempio, per estrarre correttamente i dati del modulo, è necessario impostare le seguenti autorizzazioni:
 
@@ -142,7 +142,7 @@ Crittografa un documento PDF con una password utilizzando l’API di crittografi
    * Creare un `PasswordEncryptionOptionSpec` richiamando il relativo costruttore.
    * Specificare le risorse del documento PDF da crittografare richiamando `PasswordEncryptionOptionSpec` dell&#39;oggetto `setEncryptOption` e il passaggio di un `PasswordEncryptionOption` valore di enumerazione che specifica le risorse del documento da crittografare. Ad esempio, per crittografare l&#39;intero documento PDF, inclusi i metadati e gli allegati, specificare `PasswordEncryptionOption.ALL`.
    * Creare un `java.util.List` oggetto che memorizza le autorizzazioni di crittografia utilizzando `ArrayList` costruttore.
-   * Specificare un&#39;autorizzazione richiamando `java.util.List` oggetto &quot;s `add` e passando un valore di enumerazione che corrisponde all&#39;autorizzazione da impostare. Ad esempio, per impostare l’autorizzazione che consente a un utente di copiare i dati presenti nel documento PDF, specifica `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Ripeti questo passaggio per ogni autorizzazione da impostare).
+   * Specificare un&#39;autorizzazione richiamando `java.util.List` oggetto &quot;s `add` e passando un valore di enumerazione che corrisponde all&#39;autorizzazione da impostare. Ad esempio, per impostare l’autorizzazione che consente a un utente di copiare i dati nel documento PDF, specifica `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Ripeti questo passaggio per ogni autorizzazione da impostare).
    * Specifica l’opzione di compatibilità per Acrobat richiamando `PasswordEncryptionOptionSpec` dell&#39;oggetto `setCompatability` e passando un valore di enumerazione che specifica il livello di compatibilità di Acrobat. Ad esempio, puoi specificare `PasswordEncryptionCompatability.ACRO_7`.
    * Specificare il valore della password che consente a un utente di aprire il documento PDF crittografato richiamando `PasswordEncryptionOptionSpec` dell&#39;oggetto `setDocumentOpenPassword` e passando un valore stringa che rappresenta la password di apertura.
    * Specificare il valore della password master che consente a un utente di rimuovere la crittografia dal documento PDF richiamando `PasswordEncryptionOptionSpec` dell&#39;oggetto `setPermissionPassword` e passando un valore stringa che rappresenta la password principale.

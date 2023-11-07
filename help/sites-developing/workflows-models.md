@@ -1,19 +1,15 @@
 ---
 title: Creazione di modelli di flussi di lavoro
-seo-title: Creating Workflow Models
-description: Puoi creare un modello di flusso di lavoro per definire la serie di passaggi eseguiti quando un utente avvia il flusso di lavoro.
-seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
+description: Puoi creare un modello di flusso di lavoro per definire la serie di passaggi che vengono eseguiti quando un utente avvia il flusso di lavoro.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2451'
 ht-degree: 2%
 
 ---
@@ -30,14 +26,14 @@ Quando un utente avvia un flusso di lavoro, viene avviata un’istanza; si tratt
 
 ## Creazione di un nuovo flusso di lavoro {#creating-a-new-workflow}
 
-La prima volta che crei un nuovo modello di flusso di lavoro contiene:
+La prima volta che crei un modello di flusso di lavoro, contiene:
 
 * I passaggi, **Inizio flusso** e **Fine flusso**.
 Questi rappresentano l’inizio e la fine del flusso di lavoro. Questi passaggi sono necessari e non possono essere modificati/rimossi.
 * Un esempio **Partecipante** passaggio denominato **Passaggio 1**.
 Questo passaggio è configurato per assegnare un elemento di lavoro all&#39;iniziatore del flusso di lavoro. Modifica o elimina questo passaggio e aggiungi i passaggi richiesti.
 
-Per creare un nuovo flusso di lavoro con l’editor:
+Per creare un flusso di lavoro con l’editor:
 
 1. Apri **Modelli flusso di lavoro** console; tramite **Strumenti**, **Flusso di lavoro**, **Modelli** o, ad esempio: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Seleziona **Crea**, quindi **Crea modello**.
@@ -75,7 +71,7 @@ Quando apporti modifiche al flusso di lavoro (o a qualsiasi altro utente) devi u
 
 Quando le modifiche vengono sincronizzate con il modello di runtime (salvato), **Sincronizzato** viene invece visualizzato.
 
-Alcuni passaggi dispongono di campi obbligatori e/o di una convalida incorporata. Quando queste condizioni non vengono soddisfatte, quando tenti di **Sincronizza** il modello. Ad esempio, se non è stato definito alcun partecipante per un **Partecipante** passaggio:
+Alcuni passaggi dispongono di campi obbligatori e/o di una convalida incorporata. Quando queste condizioni non vengono soddisfatte, viene visualizzato un errore quando si tenta di **Sincronizza** il modello. Ad esempio, se non è stato definito alcun partecipante per un **Partecipante** passaggio:
 
 ![wf-21](assets/wf-21.png)
 
@@ -86,8 +82,8 @@ All&#39;apertura di un [Modello predefinito e/o legacy](/help/sites-developing/w
 * Il browser Passaggi non è disponibile (lato sinistro).
 * È presente un **Modifica** nella barra degli strumenti (a destra).
 * Inizialmente il modello e le relative proprietà vengono presentati in modalità di sola lettura come:
-   * I flussi di lavoro predefiniti si trovano in `/libs`
-   * I flussi di lavoro legacy si trovano in `/etc`
+   * I flussi di lavoro predefiniti sono in `/libs`
+   * I flussi di lavoro legacy sono in `/etc`
 Selezione **Modifica** consente di:
 * copia del flusso di lavoro in `/conf`
 * rendere disponibile il browser Passaggi
@@ -101,7 +97,7 @@ Selezione **Modifica** consente di:
 
 ### Aggiunta di un passaggio a un modello {#adding-a-step-to-a-model}
 
-Sarà necessario aggiungere passaggi al modello per rappresentare l’attività da eseguire: ogni passaggio esegue un’attività specifica. Una selezione di componenti step è disponibile in un’istanza AEM standard.
+Devi aggiungere dei passaggi al modello per rappresentare l&#39;attività da eseguire: ogni passaggio esegue un&#39;attività specifica. Una selezione di componenti step è disponibile in un’istanza AEM standard.
 
 Quando modificate un modello, i passi disponibili vengono visualizzati nei vari gruppi della **Browser Passaggi**. Ad esempio:
 
@@ -167,7 +163,7 @@ Per aggiungere passaggi al modello di flusso di lavoro:
 
 ### Creazione di un flusso di lavoro transitorio {#creating-a-transient-workflow}
 
-Puoi creare una [Transitorio](/help/sites-developing/workflows.md#transient-workflows) modello di flusso di lavoro durante la creazione di un nuovo modello o modificandone uno esistente:
+Puoi creare una [Transitorio](/help/sites-developing/workflows.md#transient-workflows) modello di flusso di lavoro durante la creazione di un modello o modificandone uno esistente:
 
 1. Apri il modello di flusso di lavoro per [modifica](#editinganexistingworkflow).
 1. Seleziona **Proprietà modello flusso di lavoro** dalla barra degli strumenti.
@@ -207,7 +203,7 @@ Se un modello di flusso di lavoro è presente nell’interfaccia classica, ma no
 
 ### Configurazione di un flusso di lavoro per il supporto di più risorse {#configuring-a-workflow-for-multi-resource-support}
 
-Puoi configurare un modello di flusso di lavoro per [Supporto di più risorse](/help/sites-developing/workflows.md#multi-resource-support) durante la creazione di un nuovo modello o modificandone uno esistente:
+Puoi configurare un modello di flusso di lavoro per [Supporto di più risorse](/help/sites-developing/workflows.md#multi-resource-support) durante la creazione di un modello o modificandone uno esistente:
 
 1. Apri il modello di flusso di lavoro per [modifica](#editinganexistingworkflow).
 1. Seleziona **Proprietà modello flusso di lavoro** dalla barra degli strumenti.
@@ -264,7 +260,7 @@ Per definire **Fasi** per il workflow:
 
 Per esportare un modello di flusso di lavoro in un pacchetto:
 
-1. Creare un nuovo pacchetto utilizzando [Gestione pacchetti](/help/sites-administering/package-manager.md#package-manager):
+1. Creare un pacchetto utilizzando [Gestione pacchetti](/help/sites-administering/package-manager.md#package-manager):
 
    1. Passa a Gestione pacchetti tramite **Strumenti**, **Distribuzione**, **Pacchetti**.
 
@@ -299,7 +295,7 @@ Per esportare un modello di flusso di lavoro in un pacchetto:
 
 Per configurare il flusso di lavoro da utilizzare con il modulo:
 
-1. Crea una nuova pagina e aprila per la modifica.
+1. Crea una pagina e aprila per la modifica.
 1. Aggiungi un **Modulo** alla pagina.
 1. **Configura** il **Inizio modulo** componente visualizzato nella pagina.
 1. Utilizzare **Avvia flusso di lavoro** per selezionare il flusso di lavoro desiderato tra quelli disponibili:
@@ -328,7 +324,7 @@ Puoi anche configurare l’AEM per la visualizzazione **DEBUG** messaggi nei fil
 
 Per illustrare alcune delle possibilità di creazione di un flusso di lavoro, nell&#39;esempio seguente viene creata una variante di `Publish Example` flusso di lavoro.
 
-1. [Crea un nuovo modello di flusso di lavoro](#creating-a-new-workflow).
+1. [Creare un modello di flusso di lavoro](#creating-a-new-workflow).
 
    Il nuovo flusso di lavoro conterrà:
 
@@ -402,7 +398,7 @@ Per illustrare alcune delle possibilità di creazione di un flusso di lavoro, ne
 
 Per definire una regola OR, procedere come segue:
 
-1. Crea due script e salvali nell’archivio, ad esempio in:
+1. Crea due script e salvali nell’archivio, ad esempio, in:
 
    `/apps/myapp/workflow/scripts`
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 2%
@@ -220,7 +220,7 @@ Puoi trovare il codice di questa pagina su GitHub
 
 ## Aggiungi un&#39;azione Nuova pagina {#add-a-new-page-action}
 
-Per aggiungere una nuova azione di pagina alla barra degli strumenti della pagina, ad esempio **Torna a Sites** (console).
+Per aggiungere una nuova azione di pagina alla barra degli strumenti della pagina, ad esempio, **Torna a Sites** (console).
 
 ### Esempio di codice {#code-sample-3}
 

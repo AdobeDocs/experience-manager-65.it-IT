@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%
@@ -53,7 +53,7 @@ L’integrazione include i seguenti elementi:
    * [!DNL Experience Manager] crea versioni di una risorsa solo al momento degli aggiornamenti se il file ha avuto origine in [!DNL Experience Manager] e viene aggiornato lì.
    * [!DNL Creative Cloud] Assets fornisce risorse proprie [funzione di controllo delle versioni](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) con targeting per gli aggiornamenti Work in Progress (in pratica, memorizza gli aggiornamenti fino a dieci giorni)
 
-* **Limiti di spazio:** Le dimensioni e i volumi dei file scambiati sono limitati dalle [Creative Cloud quota risorse](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) per gli utenti creativi (a seconda del livello di abbonamento) e un limite di 5 GB di dimensione massima del file. Lo spazio è inoltre limitato dalla quota di risorse di cui dispone l’organizzazione nel servizio core Assets di Adobe Experience Cloud.
+* **Limiti di spazio:** Le dimensioni e i volumi dei file scambiati sono limitati dalle [Creative Cloud quota risorse](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) per gli utenti creativi (dipende dal livello di abbonamento) e un limite di 5-GB dimensione massima del file. Lo spazio è inoltre limitato dalla quota di risorse di cui dispone l’organizzazione nel servizio core Assets di Adobe Experience Cloud.
 
 * **Spazio richiesto:** Anche i file nelle cartelle condivise devono essere fisicamente memorizzati in [!DNL Experience Manager] e quindi in [!DNL Creative Cloud] con una copia memorizzata nella cache in [!DNL Experience Cloud Assets] servizio core.
 * **Rete e larghezza di banda:** I file contenuti nelle cartelle condivise e tutti gli aggiornamenti devono essere trasportati in rete tra i sistemi. Assicurati che solo i file e gli aggiornamenti pertinenti siano condivisi.
@@ -66,7 +66,7 @@ Best practice per l’utilizzo di [!DNL Experience Manager] a [!DNL Creative Clo
 * **Considerazioni sul volume:** [!DNL Experience Manager] e [!DNL Creative Cloud] La condivisione cartelle deve essere utilizzata per condividere un numero inferiore di file, ad esempio relativi a una campagna o attività specifica. Per condividere set di risorse più grandi, come tutte le risorse approvate nell’organizzazione, utilizza altri metodi di distribuzione (ad esempio, [!DNL Assets Brand Portal]) o [!DNL Experience Manager] app desktop.
 * **Evita la condivisione di gerarchie profonde:** La condivisione funziona in modo ricorsivo e non consente l’annullamento selettivo della condivisione. In genere, solo le cartelle senza sottocartelle o con una gerarchia superficiale, come un livello di sottocartelle, devono essere considerate per la condivisione.
 * **Cartelle separate per la condivisione unidirezionale:** Per condividere le risorse finali da, utilizza cartelle separate [!DNL Assets] a [!DNL Creative Cloud] e per la condivisione di risorse pronte per la creazione da [!DNL Creative Cloud] file in [!DNL Assets]. Insieme a una buona convenzione di denominazione per queste cartelle, crea un ambiente di lavoro più facile da comprendere per [!DNL Assets] e [!DNL Creative Cloud] utenti.
-* **Evita WIP nella cartella condivisa:** La cartella condivisa non deve essere utilizzata per Work in Progress. Utilizzare una cartella separata in File di Creative Cloud per eseguire operazioni che richiedono modifiche frequenti al file.
+* **Evita WIP nella cartella condivisa:** Non utilizzare una cartella condivisa per Work in Progress. Utilizzare una cartella separata in File di Creative Cloud per eseguire operazioni che richiedono modifiche frequenti al file.
 * **Avvia nuovo lavoro all&#39;esterno della cartella condivisa:** I nuovi progetti (file creativi) devono essere avviati nella cartella WIP separata in File di Creative Cloud e quando sono pronti per essere condivisi con [!DNL Assets] utenti, devono essere spostati o salvati nella cartella condivisa.
 * **Semplificare la struttura di condivisione:** Per una configurazione operativa più gestibile, è consigliabile semplificare la struttura di condivisione. Invece di condividere con tutti gli utenti creativi, [!DNL Assets] le cartelle devono essere condivise solo con i rappresentanti del team, come un direttore creativo o un manager del team. Il manager dal lato creativo riceverà i cespiti finali, deciderà le assegnazioni di lavoro e quindi lascerà che i designer lavorino sui cespiti WIP nel proprio account di Creative Cloud. Possono utilizzare le funzioni di collaborazione Creative Cloud per coordinare il lavoro e infine selezionare e reinserire le risorse pronte per la condivisione [!DNL Assets] nella cartella condivisa pronta per la creazione.
 

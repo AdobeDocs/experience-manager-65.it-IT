@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Con l’API REST sono supportate le seguenti azioni:
 
 >[!NOTE]
 >
->Utilizzando Firebug, un’estensione Firefox per lo sviluppo web, è possibile seguire il traffico HTTP quando viene utilizzata la console. Ad esempio, puoi controllare i parametri e i valori inviati al server AEM con un `POST` richiesta.
+>Utilizzando Firebug, un’estensione Firefox per lo sviluppo web, è possibile seguire il traffico HTTP quando viene utilizzata la console. Ad esempio, puoi controllare i parametri e i valori inviati al server AEM con una `POST` richiesta.
 
 In questa pagina si presume che l’AEM venga eseguito su localhost alla porta `4502` e che il contesto di installazione è &quot; `/`&quot; (root). In caso contrario, è necessario adattare di conseguenza gli URI a cui si applicano le richieste HTTP.
 
@@ -99,7 +99,7 @@ I seguenti metodi di richiesta HTTP si applicano a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Crea una nuova istanza di flusso di lavoro. I parametri sono:<br /> - <code>model</code>: ID (URI) del rispettivo modello di flusso di lavoro<br /> - <code>payloadType</code>: contenente il tipo di payload (ad esempio <code>JCR_PATH</code> o URL).<br /> Il payload viene inviato come parametro <code>payload</code>. A <code>201</code> (<code>CREATED</code>) viene inviata nuovamente con un’intestazione di posizione contenente l’URL della nuova risorsa istanza di flusso di lavoro.</p> </td>
+   <td><p>Crea una nuova istanza di flusso di lavoro. I parametri sono:<br /> - <code>model</code>: ID (URI) del rispettivo modello di flusso di lavoro<br /> - <code>payloadType</code>: contenente il tipo di payload (ad esempio, <code>JCR_PATH</code> o URL).<br /> Il payload viene inviato come parametro <code>payload</code>. A <code>201</code> (<code>CREATED</code>) viene inviata nuovamente con un’intestazione di posizione contenente l’URL della nuova risorsa istanza di flusso di lavoro.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -132,7 +132,7 @@ I seguenti metodi di richiesta HTTP si applicano a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Modifica lo stato dell’istanza. Il nuovo stato viene inviato come parametro <code>state</code> e deve avere uno dei seguenti valori: <code>RUNNING</code>, <code>SUSPENDED</code>, o <code>ABORTED</code>.<br /> Se il nuovo stato non è raggiungibile (ad esempio, quando si sospende un’istanza terminata) un <code>409</code> (<code>CONFLICT</code>) viene inviata nuovamente al client.</td>
+   <td>Modifica lo stato dell’istanza. Il nuovo stato viene inviato come parametro <code>state</code> e deve avere uno dei seguenti valori: <code>RUNNING</code>, <code>SUSPENDED</code>, o <code>ABORTED</code>.<br /> Se il nuovo stato non è raggiungibile (ad esempio, quando si sospende un’istanza terminata), viene <code>409</code> (<code>CONFLICT</code>) viene inviata nuovamente al client.</td>
   </tr>
  </tbody>
 </table>
@@ -488,7 +488,7 @@ Gli esempi utilizzati:
 >
 >L’eliminazione non rimuove il nodo del modello.
 
-Durante la creazione di un nuovo modello:
+Durante la creazione di un modello:
 
 * L’editor modelli di flusso di lavoro richiede che i modelli utilizzino una struttura di nodi specifica sotto `/var/workflow/models`. Il nodo padre del modello deve essere di tipo `cq:Page` con un `jcr:content` con i seguenti valori di proprietà:
 

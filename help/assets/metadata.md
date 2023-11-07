@@ -7,7 +7,7 @@ feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 11%
@@ -22,7 +22,7 @@ ht-degree: 11%
 | AEM 6.5 | Questo articolo |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -41,7 +41,7 @@ Per aggiungere metadati alle risorse digitali è possibile utilizzare i seguenti
 
 * In entrata [!DNL Experience Manager Assets], puoi aggiungere o modificare manualmente i metadati delle risorse nel [!UICONTROL Proprietà] pagina.
 
-* Puoi sfruttare [profili metadati](/help/assets/metadata-config.md#metadata-profiles) funzionalità di [!DNL Experience Manager Assets] per aggiungere automaticamente i metadati quando le risorse vengono caricate in DAM.
+* È possibile utilizzare [profili metadati](/help/assets/metadata-config.md#metadata-profiles) funzionalità di [!DNL Experience Manager Assets] per aggiungere automaticamente i metadati quando le risorse vengono caricate in DAM.
 
 ## Aggiungere o modificare i metadati in [!DNL Experience Manager Assets] {#add-edit-metadata}
 
@@ -88,7 +88,7 @@ Per personalizzare la pagina delle proprietà dei metadati, ad esempio per aggiu
 1. Modifica le proprietà dei metadati per le risorse selezionate nelle varie schede.
 1. Per visualizzare i metadati di una risorsa specifica, annulla la selezione delle risorse rimanenti nell’elenco. Se annulli la selezione di alcune risorse nella [!UICONTROL Proprietà] , i metadati di tali risorse non vengono aggiornati.
 1. Per selezionare uno schema di metadati diverso per le risorse, fai clic su **[!UICONTROL Impostazioni]** dalla barra degli strumenti e seleziona uno schema. Fai clic su **[!UICONTROL Salva e chiudi]**.
-1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Clic **[!UICONTROL Invia]**.
+1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Fai clic su **[!UICONTROL Invia]**.
 
 ![Lo schema metadati viene applicato in blocco a più risorse](assets/metadata-schema-bulk-edit.gif)
 
@@ -242,7 +242,6 @@ Quando rimuovi un profilo di metadati da una cartella, tutte le sottocartelle er
 >* [Modificare le proprietà dei metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
-
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
 ## Where to find metadata of an asset or folder {#find-metadata}
@@ -257,7 +256,7 @@ Describe the journey of an assets' metadata. What all happens to metadata when a
 
 * To begin with, assets come with some metadata. The applications that create digital assets add some metadata to the assets created. Before uploading an asset to Experience Manager, you can edit and modify metadata using either the native application used to create an asset or using some other metadata editing application. When you upload an asset to Experience Manager, the metadata is processed.
 
-* Link to PS, ID, AI, PDF, etc. metadata-related help articles.
+* Link to PS, ID, AI, PDF, and so on, metadata-related help articles.
 
 * Link to XMP writeback.
 
@@ -281,7 +280,7 @@ Link to metadata handling of collections.
 
 * Before ingesting assets: Metadata editors
 
-* After ingesting assets: Properties of an asset, folder, collection, etc.
+* After ingesting assets: Properties of an asset, folder, collection, and so on.
 
 * Any supported programmatic method to bulk edit metadata directly in JCR?
 

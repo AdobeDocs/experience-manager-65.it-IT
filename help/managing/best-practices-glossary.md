@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6948'
+source-wordcount: '6946'
 ht-degree: 0%
 
 ---
@@ -289,7 +289,7 @@ Una bozza iniziale del contratto legale.
 
 ### Struttura e formato del contenuto corrente {#current-content-structure-and-format}
 
-Documentazione dell’architettura e del formato del contenuto correnti. che verrà utilizzata per generare la futura architettura dei contenuti. Verrà utilizzato anche per il concetto di migrazione.
+Documentazione dell’architettura e del formato del contenuto correnti. Viene utilizzato per generare la futura architettura dei contenuti. Verrà utilizzato anche per il concetto di migrazione.
 
 ### Criteri di backup e ripristino del cliente {#customer-backup-and-restore-policy}
 
@@ -666,7 +666,7 @@ I dettagli del sistema legacy devono essere raccolti in modo da sapere cosa può
 
 ### Elenco degli strumenti di sviluppo da utilizzare {#list-of-development-tools-to-be-used}
 
-Una descrizione degli strumenti che verranno utilizzati nell’implementazione; gli strumenti dovrebbero includere:
+Una descrizione sommaria degli strumenti utilizzati nell’implementazione; gli strumenti dovrebbero includere:
 
 * strumenti di documentazione
 * strumenti di gestione dei problemi

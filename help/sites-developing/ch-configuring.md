@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1788'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,7 @@ Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub co
 1. Immetti i valori per le seguenti proprietà:
 
    * Titolo modalità interfaccia utente: titolo che identifica la modalità interfaccia utente
-   * Icona modalità: selettore per [Icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) da utilizzare, ad esempio `coral-Icon--user`
+   * Icona modalità: selettore per [Icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) ad esempio, `coral-Icon--user`
    * Abilitato: seleziona per visualizzare la modalità interfaccia utente nella barra degli strumenti di ContextHub
 
 1. Tocca o fai clic su Salva.
@@ -103,7 +103,7 @@ Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi
 | [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Visualizza informazioni sul browser | surferinfo |
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Visualizza informazioni su data e ora | datetime |
 | [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Visualizza il dispositivo client | emulatori |
-| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Visualizza la latitudine e la longitudine del client, nonché la posizione su una mappa. Consente di modificare la posizione. | geolocalizzazione |
+| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Visualizza la latitudine e la longitudine del client e la posizione su una mappa. Consente di modificare la posizione. | geolocalizzazione |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Visualizza l&#39;orientamento dello schermo del dispositivo (orizzontale o verticale) | emulatori |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Visualizza le statistiche sui tag pagina | tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Visualizza le informazioni di profilo per l&#39;utente corrente, inclusi authorizableID, displayName e familyName. È possibile modificare il valore di displayName e familyName. | profilo |

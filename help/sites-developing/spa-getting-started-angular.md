@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
 docset: aem65
 exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1012'
 ht-degree: 6%
 
 ---
@@ -51,7 +51,7 @@ Questo documento illustra la struttura di un SPA semplificato e il suo funzionam
 
 ## Dipendenze, configurazione e generazione {#dependencies-configuration-and-building}
 
-Oltre alla prevista dipendenza degli Angular, l&#39;SPA di esempio può sfruttare librerie aggiuntive per rendere più efficiente la creazione dell&#39;SPA.
+Oltre alla prevista dipendenza degli Angular, l&#39;SPA di esempio può utilizzare librerie aggiuntive per rendere più efficiente la creazione dell&#39;SPA.
 
 ### Dipendenze {#dependencies}
 
@@ -106,7 +106,7 @@ module.exports = {
 
 ### Creazione di {#building}
 
-Effettivamente la creazione dell’app sfrutta [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
+La creazione dell’app utilizza [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -282,7 +282,7 @@ Infine, l’immagine può essere rappresentata in `image.component.html`.
 
 La condivisione delle informazioni è regolarmente necessaria per i componenti di un’applicazione a pagina singola. Esistono diversi modi consigliati per farlo, elencati di seguito in ordine crescente di complessità.
 
-* **Opzione 1:** Centralizzare la logica e trasmettere ai componenti necessari, ad esempio utilizzando una classe util come soluzione puramente orientata agli oggetti.
+* **Opzione 1:** Centralizzare la logica e trasmettere ai componenti necessari, ad esempio, utilizzando una classe util come soluzione puramente orientata agli oggetti.
 * **Opzione 2:** Condividere gli stati dei componenti utilizzando una libreria di stati come NgRx.
 * **Opzione 3:** Sfrutta la gerarchia degli oggetti personalizzando ed estendendo il componente contenitore.
 
@@ -294,4 +294,4 @@ Per ulteriori informazioni su come organizzarsi per sviluppare l’SPA per l’A
 
 Per ulteriori dettagli sul modello dinamico di mappatura dei componenti e sul suo funzionamento all’interno dell’SPA nell’AEM, vedi l’articolo [Mappatura di un modello dinamico a un componente per SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Se desideri implementare l’SPA nell’AEM per un framework diverso da React o Angular o semplicemente approfondire il funzionamento dell’SDK SPA per l’AEM, consulta [Blueprint SPA](/help/sites-developing/spa-blueprint.md) articolo.
+Se desideri implementare l’SPA nell’AEM per un framework diverso da React o Angular o semplicemente approfondire il funzionamento dell’SDK dell’SPA per l’AEM, consulta [Blueprint SPA](/help/sites-developing/spa-blueprint.md) articolo.

@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1619'
 ht-degree: 0%
 
 ---
@@ -92,9 +92,9 @@ Per aggiungere variabili all’elenco, utilizza la procedura seguente:
 
 1. Nella pagina del framework di Adobe Analytics, espandi il **Impostazioni generali di Analytics** area.
 1. Sotto l’elenco delle variabili, fai clic su Aggiungi elemento per aggiungere una nuova variabile all’elenco.
-1. Nella cella a sinistra, immetti un nome per la variabile, ad esempio `prop10`.
+1. Nella cella a sinistra, immetti un nome per la variabile, ad esempio: `prop10`.
 
-1. Nella colonna di destra, inserisci un valore per la variabile, ad esempio `CONSTANT`.
+1. Nella colonna di destra, inserisci un valore per la variabile, ad esempio: `CONSTANT`.
 
 1. Per rimuovere una variabile, fai clic sul pulsante (-) accanto alla variabile.
 
@@ -199,7 +199,7 @@ Pertanto, il codice JavaScript deve essere impostato `s.usePlugins` a `true` in 
    1. Specifica `cq` come nome della cartella e fare clic su OK.
    1. Analogamente, crea il `analytics` e `components` cartelle.
 
-1. Fare clic con il pulsante destro del mouse `components` cartella appena creata e fai clic su Crea > Crea componente. Specifica i seguenti valori delle proprietà:
+1. Fare clic con il pulsante destro del mouse `components` che hai creato e fai clic su Crea > Crea componente. Specifica i seguenti valori delle proprietà:
 
    * Etichetta: `sitecatalyst`
    * Titolo: `sitecatalyst`

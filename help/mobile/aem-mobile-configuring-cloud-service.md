@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: d370d772-ef4d-4f38-826c-e90d07735822
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Questo documento fa parte del [Guida introduttiva ad Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guida di, punto di partenza consigliato per AEM Mobile.
+>Questo documento fa parte del [Guida introduttiva a Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guida di, punto di partenza consigliato per AEM Mobile.
 
 Ci sono diversi passaggi che devono essere messi insieme prima che gli autori dei contenuti possano iniziare a generare contenuti mirati per le app mobili: è possibile ottenere il set giusto di autorizzazioni per utenti e gruppi, creare servizi cloud, configurare l’applicazione per l’attività e infine generare il contenuto.
 
@@ -39,7 +39,7 @@ Per ottenere contenuti mirati che funzionano per le app mobili, è necessario co
 
 ## Cloud Service Adobe Target {#adobe-target-cloud-service}
 
-Dal dashboard di AEM Mobile, individua il Cloud Services Gestisci e fai clic sul pulsante +.
+Dal dashboard di AEM Mobile, individua il Cloud Service Gestisci e fai clic sul pulsante +.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -69,7 +69,7 @@ Ora che il codice client è stato associato all’app mobile, quando il servizio
 
 ### Servizio mobile Adobe: servizio possibile {#adobe-mobile-service-could-service}
 
-Ora che AMS è stato configurato, è il momento di associare l’app mobile all’Adobe Dashboard mobile. Dal dashboard di AEM Mobile, individua il Cloud Services Gestisci e fai clic sul pulsante +.
+Ora che AMS è stato configurato, è il momento di associare l’app mobile all’Adobe Dashboard mobile. Dal dashboard di AEM Mobile, individua il Cloud Service Gestisci e fai clic sul pulsante +.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -77,9 +77,9 @@ Seleziona la scheda Adobe Mobile Services e fai clic su Avanti.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-Dal passaggio della procedura guidata Crea o seleziona, seleziona il menu a discesa Mobile Service, quindi seleziona la voce Create Configuration (Crea configurazione). Fornisci titolo, società, nome utente, password e seleziona il centro dati appropriato. Se non conosci questi valori, contatta l’amministratore di Adobe Mobile Services per ottenerli. Dopo aver compilato tutti i campi, fai clic su **Verifica**. Il processo di verifica passa a AMS, verifica le credenziali per l’account e, una volta completata la convalida, viene compilato un elenco di applicazioni mobili in cui si seleziona l’applicazione mobile associata dal menu a discesa. Fare clic sul pulsante Invia per completare la procedura guidata. Il processo può richiedere un po’ di tempo per ottenere i dati di configurazione ed eventuali analisi associate all’applicazione. Al termine del processo, fai clic su **Fine** dalla finestra modale per tornare al dashboard di Adobe Mobile.
+Dal passaggio della procedura guidata Crea o seleziona, seleziona il menu a discesa Mobile Service, quindi seleziona la voce Create Configuration (Crea configurazione). Fornisci titolo, società, nome utente, password e seleziona il centro dati appropriato. Se non conosci questi valori, contatta l’amministratore di Adobe Mobile Services per ottenerli. Dopo aver compilato tutti i campi, fai clic su **Verifica**. Il processo di verifica passa a AMS, verifica le credenziali per l’account e, al termine della convalida, viene compilato un elenco di applicazioni mobili in cui si seleziona l’applicazione mobile associata dal menu a discesa. Fare clic sul pulsante Invia per completare la procedura guidata. Il processo può richiedere un po’ di tempo per ottenere i dati di configurazione ed eventuali analisi associate all’applicazione. Al termine del processo, fai clic su **Fine** dalla finestra modale per tornare al dashboard di Adobe Mobile.
 
-Tornando al dashboard di Mobile, la sezione Gestione Cloud Services contiene il servizio cloud AMS. Inoltre, la sezione Analizza metriche è compilata con rapporti sul ciclo di vita.
+Tornando al dashboard di Mobile, la sezione Gestione Cloud Service contiene il servizio cloud AMS. Inoltre, il riquadro Analizza metriche è compilato con i rapporti sul ciclo di vita.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 

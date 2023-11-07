@@ -2,10 +2,10 @@
 title: Percorsi AEM Headless
 description: Raccolta di percorsi di documentazione che descrivono come utilizzare Adobe Experience Manager come CMS headless.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 65%
+source-wordcount: '457'
+ht-degree: 59%
 
 ---
 
@@ -35,7 +35,7 @@ I Percorsi headless sono progettati per utenti tipo diversi, definendo i requisi
 
 Viene definito un percorso individuale per un utente tipo specifico o pubblico, oltre che per altri utenti tipo con cui il lettore interagisce.
 
-Le informazioni nei percorsi possono ovviamente essere utili a più utenti tipo, ma un percorso è mirato a un utente specifico e alcune informazioni possono essere superflue per determinati ruoli.
+Le informazioni nei percorsi possono essere utili a più utenti tipo, ma un percorso è destinato a un utente specifico e alcune informazioni possono essere superflue per determinati ruoli.
 
 ## Percorsi headless {#headless-journeys}
 

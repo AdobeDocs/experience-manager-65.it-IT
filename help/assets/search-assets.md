@@ -7,7 +7,7 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5739'
 ht-degree: 6%
@@ -33,7 +33,7 @@ ht-degree: 6%
 | [Comprendere i risultati e il comportamento della ricerca](#searchbehavior) | [Modificare i facet di ricerca](#searchfacets) | [Aggiornamenti in blocco dei metadati](#metadataupdates) |
 | [Ricerca classificazione e potenziamento](#searchrank) | [Estrazione testo](#extracttextupload) | [Raccolte avanzate](#collections) |
 | [Ricerca avanzata: filtro e ambito della ricerca](#scope) | [Predicati personalizzati](#custompredicates) | [Comprendere e risolvere i problemi relativi a risultati imprevisti](#unexpected-results) |
-| [Cerca da altre soluzioni e app](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[app desktop Experience Manager](#desktop-app)</li><li>[Immagini di Adobe Stock](#adobe-stock)</li><li>[Risorse Dynamic Media](#dynamic-media)</li></ul> | | |
+| [Cerca da altre soluzioni e app](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[app desktop Experience Manager](#desktop-app)</li><li>[Immagini di Adobe Stock](#adobe-stock)</li><li>[Risorse Dynamic Medie](#dynamic-media)</li></ul> | | |
 | [Selettore risorse](#asset-picker) | | |
 | [Limitazioni](#limitations) e [Suggerimenti](#tips) | | |
 | [Esempi illustrati](#samples) | | |
@@ -153,7 +153,7 @@ Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai 
 
 Dall&#39;interno del [!DNL Experience Manager] dell&#39;interfaccia utente, gli utenti possono effettuare ricerche [Risorse Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e concedi in licenza le risorse richieste. Aggiungi `Location: Adobe Stock` nella barra di Omnisearch. Puoi anche utilizzare il pannello Filtri per trovare tutte le risorse con o senza licenza oppure cercare una risorsa specifica utilizzando il numero di file di Adobe Stock.
 
-### Risorse Dynamic Media {#dmassets}
+### Risorse Dynamic Medie {#dmassets}
 
 Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri]** seleziona **[!UICONTROL Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
 
@@ -287,7 +287,7 @@ La funzionalità di ricerca può presentare limiti di prestazioni nei seguenti s
 * Utilizza il predicato Insights per cercare le risorse supportate in base alle statistiche di utilizzo ottenute da varie app Creative. I dati di utilizzo sono raggruppati per categorie Punteggio di utilizzo, Impression, Clic e Canali multimediali in cui le risorse appaiono.
 * Utilizza il **[!UICONTROL Seleziona tutto]** per selezionare le risorse trovate. [!DNL Experience Manager] visualizza inizialmente 100 risorse nella vista a schede e 200 risorse nella vista a elenco. Man mano che scorri i risultati della ricerca, vengono caricate più risorse. Puoi selezionare più risorse delle risorse caricate. Il conteggio delle risorse selezionate viene visualizzato nell’angolo superiore destro della pagina dei risultati di ricerca. Puoi utilizzare la selezione, ad esempio scaricare le risorse selezionate, aggiornare in blocco le proprietà dei metadati per le risorse selezionate o aggiungere le risorse selezionate a una raccolta. Quando sono selezionate più risorse di quante ne vengano visualizzate, viene applicata un’azione su tutte le risorse selezionate oppure viene visualizzata una finestra di dialogo in cui viene visualizzato il numero di risorse a cui vengono applicate. Per applicare un’azione alle risorse che non sono state caricate, accertati che tutte le risorse siano selezionate in modo esplicito.
 * Per cercare le risorse che non contengono i metadati obbligatori, consulta [metadati obbligatori](#mandatorymetadata).
-* La ricerca utilizza tutti i campi di metadati. Una ricerca generica, ad esempio la ricerca di 12, in genere restituisce molti risultati. Per ottenere risultati migliori, utilizza le virgolette doppie (non singole) o accertati che il numero sia contiguo a una parola senza un carattere speciale (ad esempio `shoe12`).
+* La ricerca utilizza tutti i campi di metadati. Una ricerca generica, ad esempio la ricerca di 12, in genere restituisce molti risultati. Per ottenere risultati migliori, utilizza le virgolette doppie (non singole) o assicurati che il numero sia contiguo a una parola senza un carattere speciale (ad esempio, `shoe12`).
 * La ricerca full-text supporta operatori quali `-` e `^`. Per cercare queste lettere come valori letterali stringa, racchiudere l&#39;espressione di ricerca tra virgolette doppie. Ad esempio, utilizza `"Notebook - Beauty"` invece di `Notebook - Beauty`.
 * Se i risultati della ricerca sono troppi, limitare il [ambito della ricerca](#scope) per azzerare le risorse desiderate. Funziona meglio quando hai un’idea su come cercare meglio le risorse desiderate, ad esempio tipo di file specifico, posizione specifica, metadati specifici e così via.
 

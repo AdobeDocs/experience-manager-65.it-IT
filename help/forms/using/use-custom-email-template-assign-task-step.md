@@ -8,9 +8,9 @@ topic-tags: publish
 discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ![Notifica e-mail con modello predefinito](do-not-localize/default_email_template_new.png)
 
-Puoi personalizzare l’aspetto e utilizzare metadati personalizzati in una notifica e-mail. AEM Forms fornisce un modello preconfigurato per le notifiche e-mail. Puoi personalizzare il modello preconfigurato o crearne uno nuovo da zero.
+Puoi personalizzare l’aspetto e utilizzare metadati personalizzati in una notifica e-mail. AEM Forms fornisce un modello preconfigurato per le notifiche e-mail. Puoi personalizzare il modello preconfigurato o crearne uno nuovo.
 
 I modelli di notifica e-mail si basano su [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Queste e-mail si adattano a client e-mail e dimensioni di schermo diversi. Inoltre, lo stile dell’e-mail è definito all’interno del modello.
 
@@ -57,7 +57,7 @@ AEM Forms fornisce automaticamente un modello per le notifiche e-mail. Il modell
 
 1. Aggiungi al file un codice HTML personalizzato.
 
-   Un modello di notifica e-mail è un [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Puoi aggiungere codice HTML personalizzato al file per creare un nuovo modello.
+   Un modello di notifica e-mail è un [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Puoi aggiungere al file un codice HTML personalizzato per creare un modello.
 
 1. Salva il file. Il modello è pronto per essere utilizzato nel passaggio Assegna attività.
 

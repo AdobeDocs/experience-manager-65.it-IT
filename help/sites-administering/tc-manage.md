@@ -2,10 +2,10 @@
 title: Gestione dei progetti di traduzione
 description: Scopri come gestire i progetti di traduzione in Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 57%
+source-wordcount: '3578'
+ht-degree: 53%
 
 ---
 
@@ -123,7 +123,7 @@ Dopo aver creato un progetto di traduzione, puoi utilizzare il riquadro Risorse 
 
 Quando aggiungi delle pagine a un progetto di traduzione, queste vengono incluse in un nuovo processo di traduzione. È inoltre possibile [aggiungere pagine a un processo esistente](#adding-pages-assets-to-a-translation-job).
 
-Come per la creazione di un nuovo progetto, quando si aggiungono pagine, le copie delle pagine vengono aggiunte a un lancio, quando necessario, per evitare la sovrascrittura delle copie per lingua esistenti. Consulta [Creazione di progetti di traduzione per copie per lingua esistenti](#performing-initial-translations-and-updating-existing-translations).
+Come per la creazione di un progetto, quando si aggiungono pagine, se necessario le copie delle pagine vengono aggiunte a un lancio per evitare la sovrascrittura delle copie per lingua esistenti. Consulta [Creazione di progetti di traduzione per copie per lingua esistenti](#performing-initial-translations-and-updating-existing-translations).
 
 1. Usa la console Sites per selezionare la pagina che stai aggiungendo al progetto di traduzione.
 
@@ -234,7 +234,7 @@ Quando un progetto viene creato utilizzando il riquadro Risorse di una pagina, q
 
 ## Monitoraggio dello stato di un processo di traduzione {#monitoring-the-status-of-a-translation-job}
 
-Il riquadro Lavoro di traduzione di un progetto di traduzione fornisce lo stato di un lavoro di traduzione, nonché il numero di pagine e risorse presenti nel lavoro.
+Il riquadro Lavoro di traduzione di un progetto di traduzione fornisce lo stato di un lavoro di traduzione e il numero di pagine e risorse in esso contenute.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -412,7 +412,7 @@ Compila la copia per lingua in modo che contenga il contenuto del master lingua 
 
 ## Spostamento o ridenominazione di una pagina di origine {#move-source}
 
-Se una pagina di origine già tradotta deve essere [rinominata o spostata](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), e viene ritradotta dopo lo spostamento, verrà creato un nuovo testo in lingua in base al nuovo nome/posizione della pagina. Il testo in lingua precedente basato sul nome/posizione precedente sarà ancora presente. Per evitare questo problema, è possibile utilizzare la funzionalità di aggiornamento della copia per lingua dopo lo spostamento:
+Se una pagina sorgente già tradotta deve essere [rinominato o spostato](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), traducendo di nuovo la pagina dopo lo spostamento viene creata una copia per lingua in base al nuovo nome/percorso della pagina. La copia per lingua precedente basata sul nome/posizione precedente è ancora presente. Per evitare questo problema, è possibile utilizzare la funzionalità di aggiornamento della copia per lingua dopo lo spostamento:
 
 1. Sposta una pagina contenente una copia per lingua.
 1. Seleziona la directory principale della copia lingua.
@@ -423,9 +423,9 @@ Se una pagina di origine già tradotta deve essere [rinominata o spostata](/help
 1. Fai clic su **Aggiorna**. A [Launch](/help/sites-authoring/launches-promoting.md) verrà creato.
 1. Passa alla directory principale della lingua desiderata e selezionala.
 1. Utilizzo di **Riferimenti** pannello, seleziona **Lanci**.
-1. Fai clic sul lancio appena creato e fai clic su **Promuovi lancio**.
+1. Fai clic sul lancio creato e fai clic su **Promuovi lancio**.
 
-Ora la pagina sorgente è stata spostata, così come la copia per lingua associata.
+Ora la pagina sorgente è stata spostata e la copia per lingua associata.
 
 ## Creazione di un progetto di traduzione tramite la console Progetti {#creating-a-translation-project-using-the-projects-console}
 
@@ -450,7 +450,7 @@ Quando crei manualmente un progetto di traduzione, devi fornire valori per le se
 
 ## Esportazione di un processo di traduzione {#exporting-a-translation-job}
 
-È possibile scaricare il contenuto di un processo di traduzione, ad esempio per l’invio a un fornitore di traduzione che non è integrato con AEM tramite un connettore o per esaminare il contenuto.
+Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un fornitore di traduzione che non è integrato con l’AEM tramite un connettore o per rivederlo.
 
 1. Dal menu a discesa del riquadro Lavoro di traduzione, tocca o fai clic su Esporta.
 1. Nella finestra di dialogo Esporta, tocca o fai clic su Scarica file esportato e, se necessario, utilizza la finestra di dialogo del browser web per salvare il file.
@@ -458,7 +458,7 @@ Quando crei manualmente un progetto di traduzione, devi fornire valori per le se
 
 ## Importazione di un processo di traduzione {#importing-a-translation-job}
 
-Puoi importare contenuti tradotti in AEM, ad esempio se il fornitore di traduzione li invia a te perché non è integrato con AEM tramite un connettore.
+Puoi importare contenuti tradotti in AEM, ad esempio, quando il provider di traduzione li invia a te perché non è integrato con AEM tramite un connettore.
 
 1. Dal menu a discesa del riquadro Lavoro di traduzione, tocca o fai clic su Importa.
 1. Utilizza la finestra di dialogo del browser web per selezionare il file da importare.

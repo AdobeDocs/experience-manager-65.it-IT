@@ -7,14 +7,14 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3618'
-ht-degree: 8%
+source-wordcount: '3616'
+ht-degree: 9%
 
 ---
 
-# Schemi di metadati {#metadata-schemas}
+# Schemi metadati {#metadata-schemas}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -45,18 +45,18 @@ Per visualizzare un elenco di moduli o modelli, in [!DNL Experience Manager] int
 
 [!DNL Experience Manager] fornisce i seguenti modelli di modulo schema metadati.
 
-| Modelli |  | Descrizione |
+| Modelli | | Descrizione |
 |---|---|---|
-| [!UICONTROL impostazione predefinita] |  | Modulo schema metadati di base per le risorse. |
-|  | I seguenti moduli figlio ereditano le proprietà del [!UICONTROL predefinito] forma: |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Modulo schema per video Dynamic Media. |
-|  | <ul><li>[!UICONTROL immagine]</li></ul> | Modulo schema per immagini con tipo MIME, ad esempio `image/jpeg` e `image/png`. <br> Il [!UICONTROL immagine] il modulo include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: modulo schema per le risorse con sottotipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: modulo schema per le risorse con sottotipo TIFF.</li></ul> |
-|  | <ul><li>[!UICONTROL applicazione]</li></ul> | Modulo schema per risorse di tipo MIME, ad esempio `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: modulo schema per le risorse con sottotipo PDF. |
-|  | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse video di tipo MIME, ad esempio `video/avi` e `video/mp4`. |
-| [!UICONTROL raccolta] |  | Modulo schema per le raccolte. |
-| [!UICONTROL contentfragment] |  | [Modulo schema per frammenti di contenuto](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL moduli] |  | Questo modulo schema si riferisce a [Adobe Experience Manager Forms](/help/forms/home.md). |
-| [!UICONTROL ugc_contentfragment] |  | Modulo schema per contenuti e risorse generati dall’utente integrati in Experience Manager da social media. |
+| [!UICONTROL impostazione predefinita] | | Modulo schema metadati di base per le risorse. |
+| | I seguenti moduli figlio ereditano le proprietà del [!UICONTROL predefinito] forma: | |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Modulo schema per video Dynamic Medie. |
+| | <ul><li>[!UICONTROL immagine]</li></ul> | Modulo schema per immagini con tipo MIME, ad esempio `image/jpeg` e `image/png`. <br> Il [!UICONTROL immagine] il modulo include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: modulo schema per le risorse con sottotipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: modulo schema per le risorse con sottotipo TIFF.</li></ul> |
+| | <ul><li>[!UICONTROL applicazione]</li></ul> | Modulo schema per risorse di tipo MIME, ad esempio `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: modulo schema per le risorse con sottotipo PDF. |
+| | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse video di tipo MIME, ad esempio `video/avi` e `video/mp4`. |
+| [!UICONTROL raccolta] | | Modulo schema per le raccolte. |
+| [!UICONTROL contentfragment] | | [Modulo schema per frammenti di contenuto](/help/sites-developing/customizing-content-fragments.md). |
+| [!UICONTROL moduli] | | Questo modulo schema si riferisce a [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL ugc_contentfragment] | | Modulo schema per contenuti e risorse generati dall’utente integrati in Experience Manager da social media. |
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Il **[!UICONTROL Genera modulo]** scheda elenca gli elementi del modulo utilizza
 | [!UICONTROL Data] | Aggiungi un componente data. |
 | [!UICONTROL A discesa] | Aggiungi un elenco a discesa. |
 | [!UICONTROL Tag standard] | Aggiungi un tag. |
-| [!UICONTROL Tag avanzati] | Aggiungi per migliorare le funzionalità di ricerca aggiungendo automaticamente tag di metadati. |
+| [!UICONTROL Tag avanzati] | Migliora le funzionalità di ricerca aggiungendo automaticamente tag di metadati. |
 | [!UICONTROL Campo nascosto] | Aggiungi un campo nascosto. Viene inviato come parametro POST al salvataggio della risorsa. |
 | [!UICONTROL Risorsa con riferimento da] | Aggiungi questo componente per visualizzare l’elenco delle risorse a cui fa riferimento la risorsa. |
 | [!UICONTROL Risorsa con riferimento a] | Aggiungi per visualizzare un elenco di risorse che fanno riferimento alla risorsa. |
@@ -194,9 +194,9 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
    ![select_form](assets/select_form.png)
 
-1. (Facoltativo) Nell’editor schema metadati, crea un nuovo campo da condizionare. Specifica un nome e un percorso di proprietà nel **[!UICONTROL Impostazioni]** scheda.
+1. (Facoltativo) Nell’editor schema metadati, crea un campo da condizionare. Specifica un nome e un percorso di proprietà nel **[!UICONTROL Impostazioni]** scheda.
 
-   Per creare una nuova scheda, fai clic su `+` per aggiungere una scheda e quindi un campo di metadati.
+   Per creare una scheda, fai clic su `+` per aggiungere una scheda e quindi un campo di metadati.
 
    ![add_tab](assets/add_tab.png)
 
@@ -280,7 +280,6 @@ Per eliminare un modulo, selezionarlo e fare clic su Elimina.
 >* Dopo aver eliminato le modifiche personalizzate a un modulo predefinito, il blocco ![blocco chiuso](assets/do-not-localize/lock_closed_icon.svg) viene nuovamente visualizzato prima del modulo. Indica che il modulo viene ripristinato allo stato predefinito.
 >* Non è possibile eliminare i moduli schema metadati predefiniti in [!DNL Assets].
 
-
 ## Moduli schema per tipi MIME {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] fornisce moduli predefiniti per vari tipi MIME. Tuttavia, puoi aggiungere moduli personalizzati per risorse di vari tipi MIME.
@@ -331,7 +330,7 @@ Solo le risorse caricate nella cartella a cui è applicato questo schema sono co
 L’ereditarietà dei metadati da parte delle risorse si basa sullo schema applicato alla cartella di livello superiore nella gerarchia. Lo stesso schema viene applicato o ereditato dalle sottocartelle. Se a livello di sottocartella viene applicato uno schema diverso, l’ereditarietà si interrompe.
 
 1. In entrata [!DNL Experience Manager] , passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
-1. Selezionare la casella di controllo che precede un modulo, ad esempio il modulo di metadati predefinito, e fare clic su **[!UICONTROL Copia]** e salvarlo come modulo personalizzato. Specifica un nome personalizzato per il modulo, ad esempio `my_default`. In alternativa, è possibile creare un modulo personalizzato.
+1. Selezionare la casella di controllo che precede un modulo, ad esempio il modulo di metadati predefinito, e fare clic su **[!UICONTROL Copia]** e salvarlo come modulo personalizzato. Specifica un nome personalizzato per il modulo, ad esempio: `my_default`. In alternativa, è possibile creare un modulo personalizzato.
 
 1. In **[!UICONTROL Forms schema metadati]** , seleziona la `my_default` e quindi fare clic su **[!UICONTROL Modifica]**.
 
@@ -379,7 +378,7 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 
    >[!CAUTION]
    >
-   >I controlli di convalida dei metadati richiedono molte risorse e possono influire sulle prestazioni del sistema. Pianificare i controlli di conseguenza. Se il server non è in grado di gestire il carico, provare a disabilitare il processo.
+   >I controlli di convalida dei metadati richiedono molte risorse e possono influire sulle prestazioni del sistema. Pianificare i controlli di conseguenza. Se il server non è in grado di gestire il carico, provare a disattivare il processo.
 
 <!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

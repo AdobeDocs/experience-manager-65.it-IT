@@ -2,9 +2,9 @@
 title: Verifica collegamenti
 description: Verifica collegamenti consente di convalidare sia i collegamenti interni che quelli esterni e di riscriverli.
 exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
-source-git-commit: 0b9de3261d8747f3e7107962b6aea1dbdf9d6773
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Il Link Checker viene eseguito automaticamente per aiutare gli autori di contenu
 * Visualizzazione di un elenco di tutti i collegamenti esterni nel contenuto
 * Esecuzione delle trasformazioni dei collegamenti
 
-Il Link Checker include [opzioni di configurazione](#configuring) ad esempio la definizione della convalida interna, che consente di omettere dalla convalida alcuni collegamenti o modelli di collegamento e la riscrittura delle regole di riscrittura dei collegamenti.
+Il Link Checker ha diversi [opzioni di configurazione](#configuring) ad esempio la definizione della convalida interna, che consente di omettere dalla convalida alcuni collegamenti o modelli di collegamento e la riscrittura delle regole di riscrittura dei collegamenti.
 
 Verifica collegamenti convalida entrambi [collegamenti interni](#internal) e [collegamenti esterni.](#external)
 
@@ -88,7 +88,7 @@ Puoi modificare il contenuto della finestra utilizzando i due pulsanti nella par
 
 ### Funzionamento di Verifica collegamenti esterni {#how-it-works}
 
-Sebbene sia facile da usare, Verifica collegamenti esterni si basa su una serie di servizi e comprendere come funzionano consente di comprendere come [configurare Verifica collegamenti](#configuring) per soddisfare le tue esigenze.
+Anche se facile da usare, il Link Checker esterno si basa su diversi servizi e comprendere come funzionano ti aiuta a capire come [configurare Verifica collegamenti](#configuring) per soddisfare le tue esigenze.
 
 1. Ogni volta che un autore di contenuti salva un collegamento a una pagina, viene attivato un gestore eventi.
 1. Il gestore eventi analizza tutto il contenuto in `/content` e verifica la presenza di collegamenti nuovi o aggiornati e li aggiunge a una cache per il Link Checker.

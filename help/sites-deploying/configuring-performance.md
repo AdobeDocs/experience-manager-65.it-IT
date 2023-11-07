@@ -9,7 +9,7 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6503'
 ht-degree: 12%
@@ -42,7 +42,6 @@ Questo ambiente contiene contenuti che rendi disponibili agli utenti. Qui il num
 >
 >* Dopo la configurazione per l&#39;ottimizzazione delle prestazioni, seguire le procedure descritte in [Giornata difficile](/help/sites-developing/tough-day.md) per testare l’ambiente con carichi pesanti.
 >* Vedi anche [Suggerimenti per l&#39;ottimizzazione delle prestazioni.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
-
 
 ## Metodologia di ottimizzazione delle prestazioni {#performance-optimization-methodology}
 
@@ -82,7 +81,7 @@ Simulare la realtà è difficile e quanto impegno si desidera investire per dive
 
 Non va sottovalutata l&#39;importanza di stabilire adeguatamente gli obiettivi prestazionali. Spesso, dopo che le persone si sono concentrate su obiettivi di prestazioni specifici, è difficile modificare tali obiettivi in un secondo momento, anche se si basano su presupposti.
 
-Stabilire buoni e solidi obiettivi di prestazioni è davvero una delle aree più difficili. Spesso è meglio raccogliere registri e benchmark reali da un sito web comparabile (ad esempio il predecessore del nuovo sito web).
+Stabilire buoni e solidi obiettivi di prestazioni è davvero una delle aree più difficili. Spesso è meglio raccogliere registri e benchmark reali da un sito web comparabile (ad esempio, il predecessore del nuovo sito web).
 
 ### Resta rilevante {#stay-relevant}
 
@@ -208,9 +207,9 @@ Alcuni aspetti dell’AEM (e/o dell’archivio sottostante) possono essere confi
 
 ### Indicizzazione di ricerca {#search-indexing}
 
-A partire da AEM 6.0, Adobe Experience Manager utilizza un’architettura dell’archivio basata su Oak.
+A partire da AEM 6.0, Adobe Experience Manager utilizza un’architettura di archivio basata su Oak.
 
-Puoi trovare le informazioni di indicizzazione aggiornate qui:
+Le informazioni aggiornate sull’indicizzazione sono disponibili qui:
 
 * [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
 * [Query e indicizzazione](/help/sites-deploying/queries-and-indexing.md)
@@ -224,7 +223,7 @@ Ad esempio, quando vengono caricate le immagini (o le risorse DAM in generale), 
 Il motore del flusso di lavoro utilizza le code dei processi Apache Sling per la gestione e la pianificazione dell’elaborazione degli elementi di lavoro. I seguenti servizi della coda processi sono stati creati per impostazione predefinita dalla factory del servizio Configurazione coda processi di Apache Sling per l’elaborazione dei processi del flusso di lavoro:
 
 * Coda del flusso di lavoro Granite: la maggior parte dei passaggi del flusso di lavoro, come quelli che elaborano le risorse DAM, utilizza il servizio Coda del flusso di lavoro Granite.
-* Granite Workflow External Process Job Queue: questo servizio viene utilizzato per particolari passaggi del flusso di lavoro esterno che vengono in genere utilizzati per contattare un sistema esterno e per il polling dei risultati. Il passaggio Processo di estrazione file multimediali InDesign, ad esempio, viene implementato come processo esterno. Il motore del flusso di lavoro utilizza la coda esterna per l’elaborazione del polling. (vedere [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Granite Workflow External Process Job Queue (Coda processi esterni flusso di lavoro Granite): questo servizio viene utilizzato per particolari passaggi del flusso di lavoro esterno che in genere vengono utilizzati per contattare un sistema esterno e per il polling dei risultati. Il passaggio Processo di estrazione file multimediali InDesign, ad esempio, viene implementato come processo esterno. Il motore del flusso di lavoro utilizza la coda esterna per l’elaborazione del polling. (vedere [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configura questi servizi per limitare il numero massimo di processi di flusso di lavoro in esecuzione simultanea.
 
@@ -387,9 +386,9 @@ In entrambi i casi, è possibile definire il numero previsto di transazioni al s
 | Componente | Tipo di test | No. di utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Utente singolo homepage | Media | 1 | 1 |  |  |
-|  | Picco | 1 | 3 |  |  |
+|   | Picco | 1 | 3 |  |  |
 | Homepage 100 utenti | Media | 100 | 3 |  |  |
-|  | Picco | 100 | 3 |  |
+|   | Picco | 100 | 3 |  |
 
 #### Test dei componenti combinati {#combined-component-tests}
 
@@ -398,15 +397,15 @@ Il test dei componenti in combinazione offre un riflesso più preciso del compor
 | Scenario | Componente | No. di utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Media mista | Home page | 10 | 1 |  |  |
-|  | Ricerca | 10 | 1 |  |  |
-|  | Notizie | 10 | 2 |  |  |
-|  | Eventi | 10 | 1 |  |  |
-|  | Attivazioni | 10 | 3 |  | Simulazione del comportamento dell’autore. |
+|   | Ricerca | 10 | 1 |  |  |
+|   | Notizie | 10 | 2 |  |  |
+|   | Eventi | 10 | 1 |  |  |
+|   | Attivazioni | 10 | 3 |  | Simulazione del comportamento dell’autore. |
 | Picco misto | Home page | 100 | 5 |  |  |
-|  | Ricerca | 50 | 5 |  |  |
-|  | Notizie | 100 | 10 |  |  |
-|  | Eventi | 100 | 10 |  |  |
-|  | Attivazioni | 20 | 20 |  | Simulazione del comportamento dell’autore. |
+|   | Ricerca | 50 | 5 |  |  |
+|   | Notizie | 100 | 10 |  |  |
+|   | Eventi | 100 | 10 |  |  |
+|   | Attivazioni | 20 | 20 |  | Simulazione del comportamento dell’autore. |
 
 #### Test live {#going-live-tests}
 
@@ -415,10 +414,10 @@ Nei primi giorni dopo la messa a disposizione del sito web, è possibile prevede
 | Scenario | Tipo di test | No. di utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Picco Going Live | Home page | 200 | 20 |  |  |
-|  | Ricerca | 100 | 10 |  |  |
-|  | Notizie | 200 | 20 |  |  |
-|  | Eventi | 200 | 20 |  |  |
-|  | Attivazioni | 20 | 20 |  | Simulazione del comportamento dell’autore. |
+|   | Ricerca | 100 | 10 |  |  |
+|   | Notizie | 200 | 20 |  |  |
+|   | Eventi | 200 | 20 |  |  |
+|   | Attivazioni | 20 | 20 |  | Simulazione del comportamento dell’autore. |
 
 #### Test dello scenario di errore {#error-scenario-tests}
 
@@ -432,9 +431,9 @@ Nel concepire questi test, occorre tenere presente che non tutti gli scenari si 
 | Scenario errore | Tipo di errore | No. di utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Sovraccarico del componente di ricerca | Cerca nel carattere jolly globale (asterisco) | 10 | 1 |  | La ricerca viene eseguita solo in &amp;ast;&amp;ast;&amp;ast;. |
-|  | Interrompi parola | 20 | 2 |  | Ricerca di una parola di arresto in corso. |
-|  | Stringa vuota | 10 | 1 |  | Ricerca di una stringa vuota. |
-|  | Caratteri speciali | 10 | 1 |  | Ricerca di caratteri speciali. |
+|   | Interrompi parola | 20 | 2 |  | Ricerca di una parola di arresto in corso. |
+|   | Stringa vuota | 10 | 1 |  | Ricerca di una stringa vuota. |
+|   | Caratteri speciali | 10 | 1 |  | Ricerca di caratteri speciali. |
 
 #### Test di resistenza {#endurance-tests}
 
@@ -443,10 +442,10 @@ Alcuni problemi si verificano solo dopo che il sistema è stato in esecuzione pe
 | Scenario | Tipo di test | No. di utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
 | Prova di durata (72 ore) | Home page | 10 | 1 |  |  |
-|  | Ricerca | 10 | 1 |  |  |
-|  | Notizie | 20 | 2 |  |  |
-|  | Eventi | 10 | 1 |  |  |
-|  | Attivazioni | 1 | 3 |  | Simulazione del comportamento dell’autore. |
+|   | Ricerca | 10 | 1 |  |  |
+|   | Notizie | 20 | 2 |  |  |
+|   | Eventi | 10 | 1 |  |  |
+|   | Attivazioni | 1 | 3 |  | Simulazione del comportamento dell’autore. |
 
 ### Ottimizzazione {#optimization}
 
@@ -496,6 +495,7 @@ Dispatcher offre diversi meccanismi incorporati che puoi utilizzare per ottimizz
 >In generale, numerose strategie di caching richiedono la selezione di URL validi e non si basano su questi dati aggiuntivi.
 >
 >Con la versione 4.1.11 di Dispatcher puoi anche memorizzare in cache le intestazioni di risposta, vedi [Memorizzazione nella cache delle intestazioni di risposta HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
+>
 
 ### Calcolo del rapporto della cache di Dispatcher {#calculating-the-dispatcher-cache-ratio}
 
@@ -718,7 +718,7 @@ Il parametro relativo al ritardo del backup viene fornito per limitare la possib
 
 Per un confronto, la velocità effettiva ottenuta utilizzando un backup del file system (&quot;tar&quot;) per eseguire il backup degli stessi file dell’archivio. Le prestazioni del tar sono paragonabili, ma leggermente superiori rispetto al backup con ritardo impostato su zero. Se si imposta anche un ritardo ridotto, la velocità effettiva del backup viene notevolmente ridotta e il ritardo predefinito di 10 millisecondi si traduce in una velocità effettiva notevolmente ridotta. In situazioni in cui i backup possono essere pianificati quando l&#39;utilizzo complessivo dell&#39;applicazione è basso o l&#39;applicazione può essere inattiva, ridurre il ritardo al di sotto del valore predefinito per consentire al backup di procedere più rapidamente.
 
-L&#39;impatto effettivo del throughput delle applicazioni di un backup continuo dipende dai dettagli dell&#39;applicazione e dell&#39;infrastruttura. La scelta del valore di ritardo deve essere effettuata mediante l&#39;analisi empirica dell&#39;applicazione, ma deve essere scelta nel modo più piccolo possibile, in modo che i backup possano essere completati il più rapidamente possibile. Poiché esiste solo una debole correlazione tra la scelta del valore del ritardo e l&#39;impatto sulla velocità effettiva dell&#39;applicazione, la scelta del ritardo dovrebbe favorire tempi di backup complessivi più brevi per ridurre al minimo l&#39;impatto complessivo dei backup. Un backup che richiede otto ore, ma influisce sul throughput del -20%, avrà probabilmente un impatto complessivo maggiore di quello di un backup che richiede due ore per essere completato, ma influisce sul throughput del -30%.
+L&#39;impatto effettivo della velocità effettiva delle applicazioni di un backup continuo dipende dai dettagli dell&#39;applicazione e dell&#39;infrastruttura. La scelta del valore di ritardo deve essere effettuata mediante l&#39;analisi empirica dell&#39;applicazione, ma deve essere scelta nel modo più piccolo possibile, in modo che i backup possano essere completati il più rapidamente possibile. Poiché esiste solo una debole correlazione tra la scelta del valore del ritardo e l&#39;impatto sulla velocità effettiva dell&#39;applicazione, la scelta del ritardo dovrebbe favorire tempi di backup complessivi più brevi per ridurre al minimo l&#39;impatto complessivo dei backup. Un backup che richiede otto ore, ma influisce sul throughput del -20%, avrà probabilmente un impatto complessivo maggiore di quello di un backup che richiede due ore per essere completato, ma influisce sul throughput del -30%.
 
 ### Riferimenti {#references}
 

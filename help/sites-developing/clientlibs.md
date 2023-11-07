@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2856'
+source-wordcount: '2853'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ Il client web deve disporre delle autorizzazioni per accedere a `cq:ClientLibrar
 
 ### Sovrascrittura delle librerie in /lib {#overriding-libraries-in-lib}
 
-Cartelle della libreria client che si trovano sotto `/apps` hanno la precedenza sulle cartelle con lo stesso nome che si trovano in modo simile in `/libs`. Ad esempio: `/apps/cq/ui/widgets` ha la precedenza su `/libs/cq/ui/widgets`. Quando queste librerie appartengono alla stessa categoria, la libreria seguente `/apps` viene utilizzato.
+Cartelle della libreria client che si trovano sotto `/apps` hanno la precedenza sulle cartelle con lo stesso nome presenti in `/libs`. Ad esempio: `/apps/cq/ui/widgets` ha la precedenza su `/libs/cq/ui/widgets`. Quando queste librerie appartengono alla stessa categoria, la libreria seguente `/apps` viene utilizzato.
 
 ### Individuazione di una cartella di librerie client e utilizzo del servlet delle librerie client proxy {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -134,7 +134,7 @@ Nelle versioni precedenti, le cartelle delle librerie client si trovavano sotto 
 
 >[!NOTE]
 >
->Per isolare meglio il codice dal contenuto e dalla configurazione, si consiglia di individuare le librerie client in `/apps` e pubblicarli tramite `/etc.clientlibs` sfruttando `allowProxy` proprietà.
+>Per isolare meglio il codice dal contenuto e dalla configurazione, si consiglia di individuare le librerie client in `/apps` e pubblicarli tramite `/etc.clientlibs` utilizzando `allowProxy` proprietà.
 
 Per le librerie client in `/apps` per essere accessibile, viene utilizzato un servlet proxy. Gli ACL vengono ancora applicati nella cartella della libreria client, ma il servlet consente la lettura del contenuto tramite `/etc.clientlibs/` se `allowProxy` proprietà impostata su `true`.
 
@@ -197,7 +197,7 @@ Quindi imposta il `allowProxy` proprietà su `foo` su true.
 
 ### Collegamento alle dipendenze {#linking-to-dependencies}
 
-Quando il codice nella cartella della libreria client fa riferimento ad altre librerie, identifica le altre librerie come dipendenze. Nella JSP, il `ui:includeClientLib` Se si utilizza un tag che fa riferimento alla cartella della libreria client, nel codice HTML verrà incluso un collegamento al file di libreria generato e alle dipendenze.
+Quando il codice nella cartella della libreria client fa riferimento ad altre librerie, identifica le altre librerie come dipendenze. Nella JSP, il `ui:includeClientLib` Se si utilizza un tag che fa riferimento alla cartella della libreria client, il codice HTML includerà un collegamento al file di libreria generato e alle dipendenze.
 
 Le dipendenze devono essere un&#39;altra `cq:ClientLibraryFolder`. Per identificare le dipendenze, aggiungi una proprietà alla `cq:ClientLibraryFolder` con i seguenti attributi:
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4597'
+source-wordcount: '4593'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Quando viene richiamato, il processo esegue le azioni seguenti:
 
 ## Inclusione del file della libreria Flex di AEM Forms {#including-the-aem-forms-flex-library-file}
 
-Per richiamare in modo programmatico i processi di AEM Forms utilizzando la funzione di comunicazione remota, aggiungi il file adobe-remoting-provider.swc al percorso della classe del progetto Flex. Il file SWC si trova nella posizione seguente:
+Per richiamare in modo programmatico i processi di AEM Forms utilizzando la funzione di comunicazione remota, aggiungi il file adobe-remoting-provider.swc al percorso della classe del progetto Flex. Il file SWC si trova nel percorso seguente:
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
@@ -550,7 +550,7 @@ Quando trasmetti un documento protetto, utilizza il Single Sign-On e specifica u
 
 >[!NOTE]
 >
-Quando crei un nuovo ruolo e desideri che i membri di tale ruolo caricino documenti protetti, accertati di specificare l’autorizzazione Caricamento documento.
+Quando crei un ruolo e desideri che i membri di tale ruolo caricino documenti protetti, accertati di specificare l’autorizzazione Caricamento documento.
 
 AEM Forms supporta un’operazione denominata `getFileUploadToken` che restituisce un token passato al servlet di caricamento. Il `DocumentReference.constructRequestForUpload` Il metodo richiede un URL ad AEM Forms insieme al token restituito dal `LC.FileUploadAuthenticator.getFileUploadToken` metodo. Questo metodo restituisce un `URLRequest` oggetto utilizzato nella chiamata al servlet di caricamento. Il codice seguente illustra questa logica dell&#39;applicazione.
 
@@ -889,7 +889,7 @@ se AEM Forms è configurato per consentire solo il caricamento di documenti prot
 
 ## Richiamare servizi di componenti personalizzati tramite la comunicazione remota {#invoking-custom-component-services-using-remoting}
 
-È possibile richiamare i servizi che si trovano in un componente personalizzato utilizzando la funzione di comunicazione remota. Si consideri, ad esempio, il componente Banca che contiene il servizio clienti. È possibile richiamare le operazioni che appartengono al servizio clienti utilizzando un&#39;applicazione client scritta in Flex. Prima di poter eseguire l’avvio rapido associato a questa sezione, è necessario creare il componente personalizzato Banca.
+È possibile richiamare i servizi in un componente personalizzato utilizzando la funzione di comunicazione remota. Si consideri, ad esempio, il componente Banca che contiene il servizio clienti. È possibile richiamare le operazioni che appartengono al servizio clienti utilizzando un&#39;applicazione client scritta in Flex. Prima di poter eseguire l’avvio rapido associato a questa sezione, è necessario creare il componente personalizzato Banca.
 
 Il servizio clienti espone un’operazione denominata `createCustomer`. In questa discussione viene descritto come creare un&#39;applicazione client Flex che richiami il servizio clienti e crei un cliente. Questa operazione richiede un oggetto complesso di tipo `com.adobe.livecycle.sample.customer.Customer` che rappresenta il nuovo cliente. Nell&#39;illustrazione seguente viene illustrata l&#39;applicazione client che richiama l&#39;assistenza clienti e crea un nuovo cliente. Il `createCustomer` L&#39;operazione restituisce un valore di identificativo del cliente. Il valore dell&#39;identificatore viene visualizzato nella casella di testo Identificatore cliente.
 
@@ -969,7 +969,7 @@ La seguente classe ActionScript denominata Cliente mostra come eseguire il mappi
 
 Il tipo di dati completo del tipo complesso AEM Forms viene assegnato al tag alias.
 
-I campi della classe ActionScript corrispondono ai campi che appartengono al tipo complesso AEM Forms. I sei campi presenti nella classe ActionScript del cliente corrispondono ai campi appartenenti a `com.adobe.livecycle.sample.customer.Customer`.
+I campi della classe ActionScript corrispondono ai campi che appartengono al tipo complesso AEM Forms. I sei campi nella classe ActionScript cliente corrispondono ai campi che appartengono a `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 >

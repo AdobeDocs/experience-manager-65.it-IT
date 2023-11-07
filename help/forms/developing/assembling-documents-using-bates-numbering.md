@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 È possibile assemblare documenti PDF che contengono identificatori di pagina univoci utilizzando la numerazione Bates. *Numerazione Bates* è un metodo per applicare identificatori univoci a un batch di documenti correlati. A ogni pagina del documento (o set di documenti) viene assegnato un numero Bates che identifica in modo univoco la pagina. Ad esempio, i documenti di fabbricazione che contengono informazioni sulla distinta base e sono associati alla produzione di un assieme possono contenere un identificatore. Un numero Bates contiene un valore numerico incrementato in sequenza e un prefisso e un suffisso opzionali. Il prefisso + suffisso numerico + viene indicato come *pattern di bates*.
 
-Nella figura seguente viene illustrato un documento PDF contenente un identificatore univoco presente nell&#39;intestazione del documento.
+Nella figura seguente viene illustrato un documento PDF che contiene un identificatore univoco nell&#39;intestazione del documento.
 
 ![au_au_batesnumber](assets/au_au_batesnumber.png)
 

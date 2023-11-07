@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -67,7 +67,7 @@ La personalizzazione può essere utilizzata in molti casi, ad esempio:
 
 ### Gruppi di utenti specifici, limitati e di destinazione - Extranet {#extranets}
 
-* Gli utenti richiedono un accesso per l’autorizzazione; questo verrà collegato a un profilo che fornisce le informazioni necessarie per la personalizzazione; possibili dettagli come la loro posizione, la relazione con il prodotto, la cronologia dell’utilizzo, le responsabilità di budgeting, ecc.
+* Gli utenti richiedono un accesso per l’autorizzazione; questo verrà collegato a un profilo che fornisce le informazioni necessarie per la personalizzazione; possibili dettagli come la loro posizione, la relazione con il prodotto, la cronologia dell’utilizzo, le responsabilità di budgeting e così via.
 * Tali istanze possono variare tra siti diversi, ad esempio:
 * Aziende che forniscono siti web a una parte altamente specializzata del loro mercato, ad esempio, una società farmaceutica che fornisce un sito web specializzato per i medici.
 * Aziende che forniscono siti Web che consentono ai clienti di visualizzare le informazioni relative al conto corrente e alla fatturazione, ad esempio i provider telefonici.

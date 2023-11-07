@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ L’esempio seguente punta allo stesso contenuto (utilizzando l’URI della dire
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI radice Web FS:** URL dell’applicazione web Forms. Se l&#39;applicazione Web Forms e l&#39;applicazione client vengono distribuite nello stesso server applicazioni, è possibile lasciare vuota questa casella. Verrà utilizzato l&#39;URL radice Web dell&#39;API Forms.
+**URI radice Web FS:** URL dell’applicazione web Forms. È possibile lasciare vuota questa casella se l&#39;applicazione Web Forms e l&#39;applicazione client vengono distribuite sullo stesso server applicazioni; viene utilizzato l&#39;URL radice Web API di Forms.
 
 Se l&#39;applicazione Web Forms e l&#39;applicazione client non sono distribuite nello stesso server applicazioni, specificare l&#39;URL per l&#39;applicazione Web Forms in questa casella, come illustrato nell&#39;esempio seguente:
 

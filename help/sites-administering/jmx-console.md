@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4950'
+source-wordcount: '4962'
 ht-degree: 1%
 
 ---
@@ -387,7 +387,7 @@ Informazioni sull’archivio CRX
   </tr>
   <tr>
    <td>node.type.management.value.constraints.supported</td>
-   <td>true indica che il repository supporta vincoli di valore per le proprietà dei nodi.</td>
+   <td>true indica che l'archivio supporta vincoli di valore per le proprietà dei nodi.</td>
   </tr>
   <tr>
    <td>node.type.management.property.types</td>
@@ -416,7 +416,7 @@ Informazioni sull’archivio CRX
   </tr>
   <tr>
    <td>query.xpath.doc.order</td>
-   <td>true indica che il repository supporta il linguaggio di query XPath 1.0.</td>
+   <td>true indica che l'archivio supporta il linguaggio di query XPath 1.0.</td>
   </tr>
   <tr>
    <td>query.jcrpath</td>
@@ -894,7 +894,7 @@ La pagina principale della console JMX include una tabella di servizi. Ogni riga
 
 ## Utilizzo di applicazioni JMX esterne per il monitoraggio {#using-external-jmx-applications-for-monitoring}
 
-CRX consente alle applicazioni esterne di interagire con Managed Beans (MBean) tramite [Estensioni di gestione Java (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Utilizzo di console generiche come [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) o applicazioni di monitoraggio specifiche del dominio, consente di ottenere e impostare configurazioni e proprietà CRX, nonché il monitoraggio delle prestazioni e dell’utilizzo delle risorse.
+CRX consente alle applicazioni esterne di interagire con Managed Beans (MBean) tramite [Estensioni di gestione Java (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Utilizzo di console generiche come [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) o applicazioni di monitoraggio specifiche per il dominio, consente di ottenere e impostare configurazioni e proprietà CRX e il monitoraggio delle prestazioni e dell’utilizzo delle risorse.
 
 ### Utilizzo di JConsole per la connessione a CRX {#using-jconsole-to-connect-to-crx}
 
@@ -915,7 +915,7 @@ In JConsole verrà visualizzato un elenco di processi di Java Virtual Machine lo
 
 ### Connessione a un processo CRX remoto {#connecting-to-a-remote-crx-process}
 
-Per connettersi a un processo CRX remoto, la JVM che ospita il processo CRX remoto dovrà essere abilitata per accettare le connessioni JMX remote.
+Per connettersi a un processo CRX remoto, la JVM che ospita il processo CRX remoto deve essere abilitata per accettare connessioni JMX remote.
 
 Per abilitare le connessioni JMX remote, è necessario impostare la seguente proprietà di sistema all&#39;avvio della JVM:
 

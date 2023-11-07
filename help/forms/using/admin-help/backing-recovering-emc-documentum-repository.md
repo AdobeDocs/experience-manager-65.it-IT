@@ -1,18 +1,14 @@
 ---
 title: Backup e ripristino del repository EMC Documentum
-seo-title: Backing up and recovering the EMC Documentum repository
 description: In questo documento vengono descritte le attività necessarie per eseguire il backup e il ripristino del repository EMC Documentum configurato per l'ambiente dei moduli AEM.
-seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
-uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -67,7 +63,7 @@ Questa sezione descrive l&#39;installazione e la configurazione del software EMC
     #
     # Parameters not shown can be set in this file (as per site customisation) #or from the command-line.
     #
-    # Please refer to the user Guides for details on all parameters, including
+    # See the user Guides for details on all parameters, including
     # those not listed below.
     # Note: DCTM environment for D6 is slightly different from D5, refer to D6
     # Installation Guide to update the values.
@@ -198,29 +194,29 @@ Questa sezione descrive l&#39;installazione e la configurazione del software EMC
 
    * Backup completo del database (nsrnmddbf.bat):
 
-      `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
    * Backup incrementale del database (nsrnmddbi.bat):
 
-      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Backup del log del database (nsrnmddbl.bat):
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
-      Dove:
+     Dove:
 
-      `[NetWorker_database_module_root]` è la directory di installazione del modulo NetWorker Ad esempio, la directory di installazione predefinita per il modulo NetWorker per SQL Server è C:\Program Files\Legato\nsr\bin\nsrsqlsv.
+     `[NetWorker_database_module_root]` è la directory di installazione del modulo NetWorker Ad esempio, la directory di installazione predefinita per il modulo NetWorker per SQL Server è C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 
-      `NetWorker_Server_Name` è il server su cui è installato NetWorker.
+     `NetWorker_Server_Name` è il server su cui è installato NetWorker.
 
-      `username` E `password` sono il nome utente e la password dell&#39;utente amministratore del database.
+     `username` E `password` sono il nome utente e la password dell&#39;utente amministratore del database.
 
-      `database_name` è il nome del database di cui eseguire il backup.
+     `database_name` è il nome del database di cui eseguire il backup.
 
 **Creare un dispositivo di backup**
 
-1. Creare una nuova directory sul server EMC Documentum e condividere la cartella concedendo diritti completi a tutti gli utenti.
+1. Creare una directory sul server EMC Documentum e condividere la cartella concedendo diritti completi a tutti gli utenti.
 1. Avviare EMC NetWorker Administrator e fare clic su Gestione supporti > Dispositivi.
 1. Fare clic con il pulsante destro del mouse su Dispositivi e selezionare Crea.
 1. Immettete i seguenti valori e fate clic su OK:

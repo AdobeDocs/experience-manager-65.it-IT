@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1912'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Per gestire utenti e gruppi di utenti registrati nell’ambiente di authoring, u
 
 | Se membro del gruppo... | Ruolo principale |
 |---|---|
-| amministratori | Il gruppo degli amministratori è composto da amministratori di sistema che dispongono di tutte le competenze di un amministratore della community e della capacità di gestire il gruppo degli amministratori della community. |
+| amministratori | Il gruppo degli amministratori è composto da amministratori di sistema che dispongono di tutte le competenze di un amministratore della comunità e della capacità di gestire il gruppo degli amministratori della comunità. |
 | Amministratori community | Il gruppo Amministratori community diventa automaticamente membro di tutti i siti e i gruppi della community creati sul sito. Un membro iniziale del gruppo Community Administrators è il gruppo Administrators. Nell’ambiente di authoring, gli amministratori della community possono creare siti community, gestire siti, gestire membri (possono bandire membri dalla community) e moderare i contenuti. |
 | Community &lt;*nome del sito*> Sitecontentmanager | Community Site Content Manager consente di eseguire l&#39;authoring AEM tradizionale, la creazione di contenuti e la modifica di pagine per un sito community. |
 | Nessuno | Un visitatore anonimo del sito non può accedere all’ambiente di authoring. |

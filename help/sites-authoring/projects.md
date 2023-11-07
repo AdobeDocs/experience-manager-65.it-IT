@@ -2,9 +2,9 @@
 title: Progetti
 description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso ne semplifica la gestione.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1359'
 ht-degree: 34%
 
 ---
@@ -34,7 +34,7 @@ Dalla console Progetti è possibile accedere e gestire i tuoi progetti in AEM.
 
 ![Console Progetti](assets/screen-shot_2019-03-05at125110.png)
 
-La console Progetti è simile ad altre console in AEM, consente una serie di azioni su singoli progetti e regola la tua visione dei progetti.
+La console Progetti è simile ad altre console dell’AEM e consente di eseguire diverse azioni sui singoli progetti e di regolare la tua visione dei progetti.
 
 ### Attiva/disattiva modalità {#modes}
 
@@ -129,7 +129,7 @@ Il **Collegamenti** sezione consente di associare collegamenti esterni al proget
 
 ![Riquadro Collegamenti](assets/project-tile-links.png)
 
-Puoi denominare il collegamento con un nome facile da riconoscere, nonché modificare la miniatura.
+Puoi denominare il collegamento con un nome facile da riconoscere e modificare la miniatura.
 
 ### Informazioni sul progetto {#project-info}
 

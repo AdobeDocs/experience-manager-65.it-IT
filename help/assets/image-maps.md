@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 1%
@@ -20,9 +20,9 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamenti iper
 
    * Utilizzando Azioni rapide, fai clic su **[!UICONTROL Modifica]** che appare su una risorsa in **[!UICONTROL Scheda]** visualizzazione. Nella vista Elenco, seleziona la risorsa e fai clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
 
-      >[!NOTE]
-      >
-      >Azioni rapide non è disponibile in **[!UICONTROL Elenco]** visualizzazione.
+     >[!NOTE]
+     >
+     >Azioni rapide non è disponibile in **[!UICONTROL Elenco]** visualizzazione.
 
    * In **[!UICONTROL Scheda]** o **[!UICONTROL Elenco]** visualizza, seleziona la risorsa e fai clic su **[!UICONTROL Modifica]** sulla barra degli strumenti.
    * Clic **[!UICONTROL Modifica]** dalla pagina della risorsa.
@@ -44,4 +44,4 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamenti iper
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Se l’opzione Dynamic Media è abilitata, accedi all’editor risorse e fai clic su **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.
+   Se l’opzione Dynamic Medie è abilitata, accedi all’editor risorse e fai clic su **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.

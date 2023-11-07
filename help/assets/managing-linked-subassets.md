@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Questa procedura è simile a [aggiungere risorse digitali come riferimenti in Ad
 
 ### Creare riferimenti alle risorse esportando un file ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Eseguire i passaggi descritti in [Creare modelli di flusso di lavoro](/help/sites-developing/workflows-models.md) per creare un nuovo workflow.
+1. Eseguire i passaggi descritti in [Creare modelli di flusso di lavoro](/help/sites-developing/workflows-models.md) per creare un flusso di lavoro.
 1. Utilizza il [Funzione pacchetto](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) di [!DNL Adobe InDesign] per esportare il documento. [!DNL Adobe InDesign] può esportare un documento e le risorse collegate come pacchetto. In questo caso, la cartella esportata contiene `Links` cartella che contiene risorse secondarie in [!DNL InDesign] file. Il `Links` è presente nella stessa cartella del file INDD.
 1. Creare un file ZIP e caricarlo in [!DNL Experience Manager] archivio.
 1. Avvia il `Unarchiver` flusso di lavoro.

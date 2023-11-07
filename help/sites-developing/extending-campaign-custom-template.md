@@ -1,18 +1,14 @@
 ---
 title: Creazione di un modello di pagina AEM personalizzato con i componenti di Adobe Campaign Form
-seo-title: Creating Custom AEM Page Template with Adobe Campaign Form Components
 description: Creare un modello di pagina personalizzato che utilizza i componenti di Adobe Campaign Form
-seo-description: Build a custom page template that uses Adobe Campaign Form components
-uuid: 8162ace2-b661-4c39-b0fb-288e1c035b9c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '237'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ Questa pagina spiega come creare un modello di pagina personalizzato che utilizz
 
 >[!NOTE]
 >
->[Le e-mail e gli esempi di moduli sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md). Scarica i contenuti di esempio di Geometrixx da Condivisione pacchetti.
+>[Le e-mail e gli esempi di moduli sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md). Scarica il contenuto di esempio di un Geometrixx da Condivisione pacchetti.
 
 Per creare un modello di pagina AEM personalizzato utilizzando i componenti di Adobe Campaign Form, è necessario disporre dei seguenti elementi:
 

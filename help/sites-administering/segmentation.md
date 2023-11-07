@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 77%
+source-wordcount: '1774'
+ht-degree: 75%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 77%
 
 >[!NOTE]
 >
->Questa sezione descrive come configurare la segmentazione quando si utilizza ContextHub. Se utilizzi la funzionalità ClientContext, consulta la relativa documentazione per [configurazione della segmentazione per ClientContext](/help/sites-administering/campaign-segmentation.md).
+>Questa sezione descrive come configurare la segmentazione quando si utilizza ContextHub. Se utilizzi la funzionalità ClientContext, consulta la documentazione pertinente per [configurazione della segmentazione per ClientContext](/help/sites-administering/campaign-segmentation.md).
 >
 
 La segmentazione è un concetto chiave per la creazione di una campagna. Consulta [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md) per informazioni sul funzionamento della segmentazione e sui termini chiave.
 
-A seconda delle informazioni che hai già raccolto sui visitatori del tuo sito e degli obiettivi che desideri raggiungere, dovrai definire i segmenti e le strategie necessarie per i contenuti di destinazione.
+A seconda delle informazioni già raccolte sui visitatori del sito e degli obiettivi che desideri raggiungere, devi definire i segmenti e le strategie necessarie per i contenuti di destinazione.
 
 Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Questo contenuto viene mantenuto in [Personalizzazione](/help/sites-authoring/personalization.md) sezione del sito web. Le [Attività](/help/sites-authoring/activitylib.md) qui definite possono essere incluse in qualsiasi pagina e definiscono a quale segmento visitatore è applicabile il contenuto specifico.
 
@@ -34,7 +34,7 @@ L’AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Co
 
 ## Accesso ai segmenti {#accessing-segments}
 
-Il [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) La console viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub. Per [Segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e dei segmenti di Adobe Target, consulta la relativa documentazione.
+Il [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) La console viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub. Per [Segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e sui segmenti di Adobe Target, consulta la relativa documentazione.
 
 Per accedere ai segmenti devi selezionare la configurazione. Nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**. Verranno visualizzate le configurazioni disponibili:
 
@@ -323,7 +323,7 @@ Oppure, se non è risolto:
 
 Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con contenuti mirati e **Attività** ed **Esperienze** correlate.
 
-Se hai impostato un’attività e un’esperienza utilizzando l’esempio del segmento del gruppo di età principale riportato sopra, puoi testare facilmente il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta la relativa [documentazione sull’authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md).
+Se hai impostato un’attività e un’esperienza utilizzando l’esempio del segmento del gruppo di età principale riportato sopra, puoi testare facilmente il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta la [documentazione sull’authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md).
 
 1. In modalità di modifica di una pagina in cui hai impostato il contenuto di destinazione, è possibile vedere che il contenuto è indirizzato tramite l’icona a forma di freccia su di esso.
 

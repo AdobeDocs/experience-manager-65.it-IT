@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Prima di importare a livello di programmazione una credenziale in AEM Forms, cre
 
 **Fai riferimento alle credenziali**
 
-Fai riferimento a una credenziale da importare in AEM Forms. L&#39;avvio rapido associato a questa sezione fa riferimento a un file P12 che si trova nel file system.
+Fai riferimento a una credenziale da importare in AEM Forms. L&#39;avvio rapido associato a questa sezione fa riferimento a un file P12 nel file system.
 
 **Eseguire l&#39;operazione di importazione**
 

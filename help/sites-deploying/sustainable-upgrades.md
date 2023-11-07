@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Nelle versioni precedenti di Adobe Experience Manager (AEM), molte API sono stat
 
 * Le API pubbliche sono compatibili con le versioni precedenti dell’installazione di un pacchetto di compatibilità.
 * Il pacchetto di compatibilità contiene un file JAR Uber di compatibilità per garantire la compatibilità con le versioni precedenti
-* API Java™ contrassegnate come `Private` sono destinati a essere utilizzati solo da bundle interni AEM e non devono essere utilizzati da bundle personalizzati.
+* API Java™ contrassegnate come `Private` sono destinati a essere utilizzati solo da bundle interni all’AEM, non da bundle personalizzati.
 
 >[!NOTE]
 >
@@ -55,15 +55,15 @@ Per rendere più sicuro e facile per i clienti capire quali aree di **/libs** so
 
 * ***Interno (granite:InternalArea)*** *- *Definisce un nodo interno. I nodi classificati come interni idealmente non devono essere sovrapposti, ereditati o utilizzati direttamente. Questi nodi sono destinati solo alle funzionalità interne dell’AEM
 
-* **Nessuna annotazione** - I nodi ereditano la classificazione in base alla gerarchia ad albero. Per impostazione predefinita, la directory principale / è Public. **Anche i nodi con un elemento padre classificato come Interno o Finale devono essere trattati come Interno.**
+* **Nessuna annotazione** - I nodi ereditano la classificazione in base alla gerarchia ad albero. La directory principale / è per impostazione predefinita Public. **Anche i nodi con un elemento padre classificato come Interno o Finale devono essere trattati come Interno.**
 
 >[!NOTE]
 >
 Questi criteri vengono applicati solo ai meccanismi basati su percorsi di ricerca Sling. Altre aree di **/libs** come una libreria lato client può essere contrassegnata come `Internal`, ma può ancora essere utilizzato con l’inclusione clientlib standard. In questi casi è importante che il cliente continui a rispettare la classificazione interna.
 
-#### Indicatori del tipo di contenuto CRXDE Lite {#crxde-lite-content-type-indicators}
+#### Indicatori del tipo di contenuto CRXDE Liti {#crxde-lite-content-type-indicators}
 
-I mixin applicati in CRXDE Lite mostrano nodi di contenuto e strutture contrassegnati come `INTERNAL` come oscurato (non disponibile). Per `FINAL`, solo l’icona è oscurata. Anche i figli di questi nodi vengono visualizzati in grigio. La funzionalità Sovrapponi nodo è disabilitata in entrambi questi casi.
+I mixin applicati in CRXDE Liti mostrano nodi di contenuto e strutture contrassegnati come `INTERNAL` come oscurato (non disponibile). Per `FINAL`, solo l’icona è oscurata. Anche i figli di questi nodi vengono visualizzati in grigio. La funzionalità Sovrapponi nodo è disabilitata in entrambi questi casi.
 
 **Pubblico**
 

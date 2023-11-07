@@ -3,9 +3,9 @@ title: Concetti
 description: Scopri i concetti generali di e-commerce con Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4480'
+source-wordcount: '4481'
 ht-degree: 2%
 
 ---
@@ -486,7 +486,7 @@ La creazione di un catalogo utilizza dieci nodi per prodotto, in quanto fornisce
 
 Le pagine proxy utilizzano una struttura a due nodi ( `cq:Page` e `jcr:content`) che non contiene nessuno del contenuto effettivo del prodotto. Il contenuto viene generato, al momento della richiesta, facendo riferimento ai dati del prodotto e alla pagina del modello.
 
-Tuttavia, c&#39;è un compromesso. Non sarà possibile personalizzare le informazioni di prodotto all’interno di AEM, verrà utilizzato un modello standard (definito per il sito).
+Tuttavia, c&#39;è un compromesso. Non sarà possibile personalizzare le informazioni di prodotto all’interno di AEM, viene utilizzato un modello standard (definito per il sito).
 
 >[!NOTE]
 >
@@ -574,7 +574,7 @@ Una promozione può essere effettuata in un’esperienza o direttamente nella ca
 
 >[!NOTE]
 >
->[promozioni ibride](https://www.hybris.com/modules/promotion) e [voucher ibridi](https://www.hybris.com/en/modules/voucher) coprire tutto ciò che influenza il carrello e che è correlato ai prezzi. Contenuti di marketing specifici per la promozione (come banner, ecc.) non fa parte della promozione hybris.
+>[promozioni ibride](https://www.hybris.com/modules/promotion) e [voucher ibridi](https://www.hybris.com/en/modules/voucher) coprire tutto ciò che influenza il carrello e che è correlato ai prezzi. Contenuti di marketing specifici per la promozione (come banner e così via). non fa parte della promozione hybris.
 
 ## Personalizzazione {#personalization}
 

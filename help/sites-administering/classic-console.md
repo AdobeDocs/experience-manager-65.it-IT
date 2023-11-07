@@ -1,19 +1,15 @@
 ---
 title: Console classica per l’assegnazione di tag dell’interfaccia utente
-seo-title: Classic UI Tagging Console
 description: Scopri la console di assegnazione tag dell’interfaccia utente classica di Adobe Experience Manager.
-seo-description: Learn about the Classic UI Tagging Console.
-uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '891'
 ht-degree: 1%
 
 ---
@@ -41,7 +37,7 @@ Per accedere alla console di assegnazione tag dell’interfaccia classica:
 
    ![Creazione di una finestra di dialogo dello spazio dei nomi](assets/creating_tags_andnamespaces.png)
 
-   Se selezioni uno spazio dei nomi (ad esempio **Demo**) puoi creare un tag all’interno di tale spazio dei nomi:
+   Se selezioni uno spazio dei nomi (ad esempio, **Demo**) puoi creare un tag all’interno di tale spazio dei nomi:
 
    ![Creazione di una finestra di dialogo di tag](assets/creating_tags_andnamespacesinnewnamespace.png)
 
@@ -176,7 +172,7 @@ Per impostazione predefinita, il tag `titles`nella pagina, le proprietà vengono
 
 Per impostazione predefinita, nella finestra di dialogo Proprietà pagina viene visualizzato il tag `titles`in base alla lingua della pagina.
 
-In generale, la lingua del tag viene presa dalla lingua della pagina se questa è disponibile. Quando [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) viene utilizzato in altri casi (ad esempio nei moduli o nelle finestre di dialogo), il linguaggio dei tag dipende dal contesto.
+In generale, la lingua del tag viene presa dalla lingua della pagina se questa è disponibile. Quando [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) viene utilizzato in altri casi, ad esempio nei moduli o nelle finestre di dialogo, il linguaggio dei tag dipende dal contesto.
 
 >[!NOTE]
 >

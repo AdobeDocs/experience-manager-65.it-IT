@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager (AEM) e le linee guida per l’accessibilità dei contenuti web
-description: Introduzione ad Adobe Experience Manager (AEM) e linee guida per l’accessibilità dei contenuti web
+description: Introduzione a Adobe Experience Manager (AEM) e linee guida per l’accessibilità dei contenuti web
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 69%
+source-wordcount: '412'
+ht-degree: 67%
 
 ---
 
@@ -19,7 +19,7 @@ La creazione di siti web accessibili e di contenuti con impatto sull’AEM:
 
 * Autori che utilizzano queste funzioni per creare siti web con accesso facilitato.
 
-   La creazione di contenuto accessibile avviene tramite un processo. AEM offre funzionalità in linea con i requisiti di accessibilità, ma gli autori dei contenuti devono accertarsi di applicare le tecniche necessarie per creare contenuti accessibili.
+  La creazione di contenuto accessibile avviene tramite un processo. AEM offre funzionalità in linea con i requisiti di accessibilità, ma gli autori dei contenuti devono accertarsi di applicare le tecniche necessarie per creare contenuti accessibili.
 
 * Sviluppatori di modelli; anche le persone con questo ruolo devono essere consapevoli dei fattori di accessibilità quando implementano il progetto del sito web.
 
@@ -51,7 +51,7 @@ Utilizzando Adobe Experience Manager, gli autori di contenuti e/o i proprietari 
 Linee guida su come gli amministratori possono configurare l’AEM per produrre contenuti accessibili.
 
 * [Creazione di un Forms adattivo accessibile](/help/forms/using/creating-accessible-adaptive-forms.md)
-Adobe Experience Manager (AEM) include una serie di funzioni e funzionalità che migliorano l’usabilità dei moduli adattivi per gli utenti con funzionalità diverse. La soluzione aiuta inoltre gli autori dei moduli a creare moduli adattivi accessibili.
+Adobe Experience Manager (AEM) include diverse funzioni e funzionalità che migliorano l’usabilità dei moduli adattivi per gli utenti con funzionalità diverse. La soluzione aiuta inoltre gli autori dei moduli a creare moduli adattivi accessibili.
 
 >[!NOTE]
 >
@@ -59,4 +59,4 @@ Adobe Experience Manager (AEM) include una serie di funzioni e funzionalità che
 
 ## Accessibilità in Adobe {#accessibility-at-adobe}
 
-Per ulteriori informazioni, visita l’[Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+Per ulteriori informazioni, visitare il [Centro risorse per l&#39;accessibilità di Adobe](https://www.adobe.com/accessibility/).

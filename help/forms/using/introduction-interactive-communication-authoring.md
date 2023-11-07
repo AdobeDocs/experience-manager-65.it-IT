@@ -11,9 +11,9 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1310'
 ht-degree: 14%
 
 ---
@@ -25,7 +25,7 @@ Interfaccia utente per l’authoring [Comunicazione interattiva](/help/forms/usi
 * Editor di documenti con trascinamento della selezione WYSIWYG
 * Archivio integrato per le risorse: le risorse caricate e create sul server sono disponibili nel browser Risorse dell’interfaccia di authoring di comunicazioni interattive
 
-Quando [creare una nuova comunicazione interattiva o modificarne una esistente](../../forms/using/create-interactive-communication.md), utilizza i seguenti elementi dell’interfaccia utente:
+Quando [creare o modificare una comunicazione interattiva esistente](../../forms/using/create-interactive-communication.md), utilizza i seguenti elementi dell’interfaccia utente:
 
 * [Barra laterale](#sidebar)
 * [Barra degli strumenti della pagina](#page-toolbar)

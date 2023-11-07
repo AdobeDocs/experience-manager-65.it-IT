@@ -1,20 +1,16 @@
 ---
 title: Creazione di un gruppo utenti chiuso
-seo-title: Creating a Closed User Group
 description: Scopri come creare un gruppo utenti chiuso.
-seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
-uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 2%
+source-wordcount: '747'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +50,7 @@ Per creare un gruppo utenti chiuso:
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Premere il tasto **Crea** nell&#39;angolo in alto a destra per creare un nuovo gruppo.
+1. Premere il tasto **Crea** nell&#39;angolo in alto a destra, per creare un gruppo.
 1. Assegna un nome al nuovo gruppo; ad esempio, `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
@@ -82,7 +78,7 @@ Per applicare il gruppo utenti chiusi a una o più pagine:
    1. Attiva il **Abilita** casella di spunta.
 
    1. Aggiungi il percorso al tuo **Pagina di accesso**.
-Questo è facoltativo; se lasciato vuoto, verrà utilizzata la pagina di accesso standard.
+Questa opzione è facoltativa, se lasciata vuota, viene utilizzata la pagina di accesso standard.
 
    ![CUG aggiunto](assets/cug-authentication-requirement.png)
 
@@ -92,11 +88,11 @@ Questo è facoltativo; se lasciato vuoto, verrà utilizzata la pagina di accesso
 
    >[!NOTE]
    >
-   >Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione delle Live Copy.
+   >Non è possibile eseguire il rollout dei CUG nella scheda Autorizzazioni in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione della Live Copy.
    >
    >Per ulteriori informazioni, consulta [questa pagina](closed-user-groups.md#aem-livecopy).
 
-1. Il **Modifica gruppo utenti chiuso** viene aperta una finestra di dialogo. Qui puoi cercare e selezionare il tuo CUG, quindi confermare la selezione del gruppo con **Salva**.
+1. Il **Modifica gruppo utenti chiuso** viene visualizzata una finestra di dialogo. Qui puoi cercare e selezionare il tuo CUG, quindi confermare la selezione del gruppo con **Salva**.
 
    Il gruppo verrà aggiunto all’elenco; ad esempio, il gruppo **cug_access**.
 

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 78%
+source-wordcount: '507'
+ht-degree: 73%
 
 ---
 
@@ -33,7 +33,7 @@ La funzione Ricerca è disponibile nella barra degli strumenti superiore:
 La barra di ricerca consente di effettuare le seguenti operazioni:
 
 * Cercare una parola chiave, un percorso o un tag specifico.
-* Filtrare in base a criteri specifici per le risorse come date di modifica, stato della pagina, dimensione del file e così via
+* Filtra in base a criteri specifici per le risorse, ad esempio date di modifica, stato della pagina, dimensione del file e così via.
 * Definire e utilizzare una [ricerca salvata](#saved-searches) in base ai criteri impostati.
 
 >[!NOTE]
@@ -53,9 +53,9 @@ Per cercare e filtrare le risorse:
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
 1. Se necessario, puoi rimuovere il filtro posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire la ricerca in tutte le console e i tipi di risorse.
-1. Verranno visualizzati i risultati, raggruppati in base alla console e al tipo di risorsa correlato.
+1. I risultati visualizzati vengono raggruppati in base alla console e al tipo di risorsa corrispondente.
 
-   Puoi selezionare una risorsa specifica (sulla quale eseguire ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:
+   Puoi selezionare una risorsa specifica (per ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio: **Visualizza tutti i siti**:
 
    ![schermata_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 

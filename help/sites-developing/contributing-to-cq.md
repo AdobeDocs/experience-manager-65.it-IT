@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2670'
 ht-degree: 0%
 
 ---
@@ -175,6 +175,6 @@ java -jar <quickstartfilename>.jar -help
 
 **Archiviazione Tar (TarMK)** - TarMK è il sistema di persistenza predefinito nell’AEM. Anche se l’AEM può essere configurato per utilizzare un sistema di persistenza diverso (come MongoDB), TarMK ha alcuni vantaggi in quanto è ottimizzato per le prestazioni per i tipici casi d’uso JCR (quindi è veloce), utilizza un formato dati standard di settore e può essere sottoposto a backup in modo rapido e semplice.
 
-**Modello** - In AEM, un modello specifica un particolare tipo di pagina. Definisce la struttura di una pagina (specificando anche in genere un’immagine di miniatura e varie proprietà). Ad esempio, puoi avere modelli separati per pagine di prodotti, sitemap e informazioni di contatto.
+**Modello** - In AEM, un modello specifica un particolare tipo di pagina. Definisce la struttura di una pagina (specificando anche in genere un’immagine di miniatura e varie proprietà). Ad esempio, puoi usare modelli distinti per pagine di prodotti, sitemap e informazioni di contatto.
 
 **Flusso di lavoro** - Il sistema di flusso di lavoro AEM consente la creazione di processi automatizzati che coinvolgono pagine o risorse.

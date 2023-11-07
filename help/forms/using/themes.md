@@ -1,17 +1,13 @@
 ---
 title: Creazione e utilizzo di temi
-seo-title: Creating and using themes
 description: Puoi utilizzare i temi per applicare uno stile e fornire un’identità visiva a un modulo adattivo o a una comunicazione interattiva. Puoi condividere un tema in qualsiasi numero di moduli adattivi o comunicazioni interattive.
-seo-description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
-uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
-discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6106'
 ht-degree: 1%
@@ -29,7 +25,7 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Puoi creare e applicare temi per formattare un modulo adattivo o una comunicazione interattiva. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando applicate un tema, lo stile specificato viene riflesso sui componenti corrispondenti. I temi sono gestiti in modo indipendente senza fare riferimento a un modulo adattivo o a una comunicazione interattiva.
+Puoi creare e applicare temi per formattare un modulo adattivo o una comunicazione interattiva. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applicate un tema, lo stile specificato viene riflesso sui componenti corrispondenti. I temi sono gestiti in modo indipendente senza fare riferimento a un modulo adattivo o a una comunicazione interattiva.
 
 Operazioni disponibili:
 
@@ -386,11 +382,11 @@ La barra laterale nell’editor temi fornisce opzioni per personalizzare gli sti
 Quando selezioni un componente dall’area di lavoro o dai selettori nella barra laterale, questa mostra tutte le opzioni che consentono di personalizzare gli stili.
 Di seguito sono riportate le opzioni visualizzate nella barra laterale quando si seleziona un componente:
 
-* Stadio
+* Stato
 * Foglio delle proprietà
 * Simula errore/esito positivo
 
-#### Stadio {#state}
+#### Stato {#state}
 
 Uno stato è un indicatore dell’interazione dell’utente con un componente. Ad esempio, quando un utente immette dati errati in una casella di testo, lo stato della casella di testo cambia in errore. L’editor tema consente di specificare lo stile per un particolare stato.
 
@@ -498,8 +494,8 @@ Puoi assegnare uno stile ai componenti di comunicazione interattiva o di modulo 
 
 Per configurare Adobe Fonts nell’AEM, effettua le seguenti operazioni:
 
-1. Nell’istanza di authoring, fai clic su ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Strumenti ![martello](assets/hammer.png) > Implementazione > Cloud Services.
-1. Il giorno **Cloud Services** , passa alla pagina e apri la **Adobe Fonts** opzione. Apri la cartella di configurazione e fai clic su **Crea**.
+1. Nell’istanza di authoring, fai clic su ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Strumenti ![martello](assets/hammer.png) > Implementazione > Cloud Service.
+1. Il giorno **Cloud Service** , passa alla pagina e apri la **Adobe Fonts** opzione. Apri la cartella di configurazione e fai clic su **Crea**.
 1. Il giorno **Crea configurazione** , specifica un titolo per la configurazione e fai clic su **Crea**.
 
    Ti reindirizzano alla pagina di configurazione.
@@ -529,7 +525,7 @@ Puoi utilizzare il servizio di configurazione del tema per aggiungere più font 
 
 È possibile utilizzare il pulsante + per aggiungere un carattere. Quando si aggiunge un carattere, questo viene elencato nella barra laterale.
 
-![Nuovo font elencato nell’editor di temi](assets/theme-font.png)
+![Nuovo font elencato nell’editor temi](assets/theme-font.png)
 
 Oltre all’opzione di configurazione del tema, puoi anche aggiungere il font dall’editor stesso. Digitate il font da usare nel campo famiglia font sotto la barra laterale e premete il tasto Invio sulla tastiera.
 

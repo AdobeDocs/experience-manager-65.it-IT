@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Prima di poter eseguire un&#39;operazione di servizio Distiller a livello di pro
 
 **Recupera il file da convertire**
 
-È necessario recuperare il file da convertire. Ad esempio, per convertire un file PS in un documento PDF, è necessario recuperare il file PS.
+Recuperate il file da convertire. Ad esempio, per convertire un file PS in un documento PDF, è necessario recuperare il file PS.
 
 **Richiama l’operazione di creazione di PDF**
 
@@ -126,7 +126,6 @@ Converti un file PostScript in documento PDF utilizzando l’API di servizio Dis
 
    * Richiama `CreatePDFResult` dell&#39;oggetto `getLogDocument` metodo. Questo restituisce un `com.adobe.idp.Document` oggetto.
    * Richiama `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per estrarre il documento di log.
-
 
 **Consulta anche**
 

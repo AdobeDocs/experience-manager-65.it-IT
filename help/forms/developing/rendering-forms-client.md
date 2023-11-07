@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -53,13 +53,13 @@ Prima di poter eseguire a livello di programmazione un&#39;operazione API client
 
 **Impostare le opzioni di runtime di rendering del client**
 
-È necessario impostare l&#39;opzione di rendering client in fase di esecuzione per eseguire il rendering di un modulo sul client impostando `RenderAtClient` opzione di runtime per `true`. In questo modo il modulo viene consegnato al dispositivo client in cui viene eseguito il rendering. Se `RenderAtClient` è `auto` (valore predefinito), la struttura del modulo determina se il rendering del modulo viene eseguito sul client. La struttura del modulo deve essere una struttura di modulo con un layout scorrevole.
+Impostare l&#39;opzione di rendering client in fase di esecuzione per eseguire il rendering di un modulo sul client impostando `RenderAtClient` opzione di runtime per `true`. In questo modo il modulo viene consegnato al dispositivo client in cui viene eseguito il rendering. Se `RenderAtClient` è `auto` (valore predefinito), la struttura del modulo determina se il rendering del modulo viene eseguito sul client. La struttura del modulo deve essere una struttura di modulo con un layout scorrevole.
 
 È possibile impostare un&#39;opzione di runtime facoltativa per `SeedPDF` opzione. Il `SeedPDF` combina il contenitore PDF (documento di seed PDF) con la struttura del modulo e i dati XML. Sia la struttura del modulo che i dati XML vengono inviati ad Acrobat o Adobe Reader, dove viene eseguito il rendering del modulo. Il `SeedPDF` L&#39;opzione può essere utilizzata quando il computer client non dispone di tipi di carattere utilizzati nel modulo, ad esempio quando un utente finale non dispone della licenza per utilizzare un tipo di carattere che il proprietario del modulo può utilizzare.
 
 È possibile utilizzare Designer per creare un semplice file di PDF dinamico da utilizzare come file di PDF seed. Per eseguire questa attività sono necessari i seguenti passaggi:
 
-1. Determinare se è necessario incorporare i tipi di carattere nel file di PDF seed. Il file di seed PDF deve contenere i font aggiuntivi richiesti dal modulo di cui si esegue il rendering. Quando si incorporano font nel file di PDF seed, assicurarsi di non violare alcun contratto di licenza per i font. In Designer è possibile determinare se è possibile incorporare legalmente i tipi di carattere. Al momento del salvataggio, se sono presenti tipi di carattere che non è possibile incorporare nel modulo, Designer visualizza un messaggio in cui sono elencati i tipi di carattere che non è possibile incorporare. Questo messaggio non viene visualizzato in Designer per i documenti statici di PDF.
+1. Determinare se è necessario incorporare i tipi di carattere nel file di PDF seed. Il file di seed PDF deve contenere i font aggiuntivi richiesti dal modulo sottoposto a rendering. Quando si incorporano font nel file di PDF seed, assicurarsi di non violare alcun contratto di licenza per i font. In Designer è possibile determinare se è possibile incorporare legalmente i tipi di carattere. Al momento del salvataggio, se sono presenti tipi di carattere che non è possibile incorporare nel modulo, Designer visualizza un messaggio in cui sono elencati i tipi di carattere che non è possibile incorporare. Questo messaggio non viene visualizzato in Designer per i documenti statici di PDF.
 1. Se si sta creando il file di PDF seed in Designer, è consigliabile aggiungere almeno un campo di testo contenente un messaggio. Il messaggio deve essere indirizzato agli utenti delle versioni precedenti di Adobe Reader in cui si dichiara che per visualizzare il documento è necessario Acrobat 7.0 o versione successiva oppure Adobe Reader 7.0 o versione successiva.
 1. Salvare il file di seed PDF come file di dynamic PDF con l&#39;estensione PDF.
 

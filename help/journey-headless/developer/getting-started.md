@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM Headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3038'
-ht-degree: 94%
+source-wordcount: '3032'
+ht-degree: 92%
 
 ---
 
@@ -81,7 +81,7 @@ Per modificare il contenuto senza problemi, AEM offre due solide API.
 * L’API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
 * L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
-Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure fai riferimento alla sezione [risorse aggiuntive](#additional-resources) per ulteriore documentazione.
+Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure, consulta la [risorse aggiuntive](#additional-resources) per ulteriore documentazione, vedere la sezione seguente.
 
 ## Livelli di integrazione headless {#integration-levels}
 
@@ -113,13 +113,13 @@ Questo livello di integrazione si basa sul livello 2, consentendo la modifica de
 
 ### Non è possibile un utilizzo esterno del contenuto headless, ad esempio un’applicazione a pagina singola (SPA). {#do-not-have-a-spa}
 
-Se l’obiettivo è quello di creare una nuova SPA che utilizza senza problemi contenuti di AEM, puoi utilizzare funzioni quali Frammenti di contenuto per gestire i contenuti headless e creare una SPA con il framework dell’editor SPA di AEM.
+Se il tuo obiettivo è quello di creare un SPA che utilizzi senza intestazione i contenuti dell’AEM, puoi utilizzare funzioni quali Frammenti di contenuto per gestire i contenuti headless e anche creare un SPA con il framework dell’Editor SPA dell’AEM.
 
 Con l’editor SPA, la SPA non solo utilizza contenuti di AEM, ma è anche completamente modificabile all’interno di AEM dagli autori di contenuti, offrendoti la flessibilità della distribuzione headless e della modifica nel contesto in AEM.
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
-Sono necessari molti requisiti prima di iniziare il progetto AEM headless.
+Ci sono diversi requisiti prima di iniziare il tuo progetto per AEM headless.
 
 ### Conoscenza {#knowledge}
 

@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3786'
 ht-degree: 0%
 
 ---
@@ -320,7 +320,7 @@ Il database WURFL™ troncato installato con AEM è una versione precedente al 3
 
 Per installare un database WURFL™:
 
-1. In CRXDE Lite, crea la seguente cartella: `/apps/wcm/mobile/devicespecs`
+1. In CRXDE Liti, crea la seguente cartella: `/apps/wcm/mobile/devicespecs`
 1. Copiare il file WURFL™ nella cartella.
 1. Rinomina il file come `wurfl.xml`.
 
@@ -334,7 +334,7 @@ AEM analizza automaticamente `wurfl.xml` e aggiorna i nodi sottostanti `/var/mob
 
 Aggiungi user-agent come espressione regolare sotto /apps/wcm/mobile/devicespecs/wurfl/regexp per puntare a un tipo di dispositivo WURFL™ esistente.
 
-1. In entrata **CRXDE Lite**, crea un nodo sotto /apps/wcm/mobile/devicespecs/regexp, ad esempio, `apple_ipad_ver1`.
+1. In entrata **CRXDE Liti**, crea un nodo sotto /apps/wcm/mobile/devicespecs/regexp, ad esempio, `apple_ipad_ver1`.
 1. Aggiungi le seguenti proprietà al nodo:
 
    * **regexp**: espressione regolare che definisce gli user-agents, ad esempio: .&#42;Mozilla.&#42;iPad.&#42;AppleWebKit&#42;Safari.&#42;
@@ -365,7 +365,7 @@ Il `PageVariantsProvider` Il servizio OSGi è in grado di generare collegamenti 
 Il `cq:siteVariant` il nodo deve avere le seguenti proprietà:
 
 * `cq:childNodesMapTo` - determina a quale attributo dell’elemento di collegamento verranno mappati i nodi secondari; si consiglia di organizzare il contenuto del sito web in modo che gli elementi secondari del nodo principale rappresentino la radice per una variante di lingua del sito web globale (ad esempio, `/content/mysite/en`, `/content/mysite/de`), nel qual caso il valore della proprietà `cq:childNodesMapTo` dovrebbe essere `hreflang`;
-* `cq:variantDomain` - indica cosa `Externalizer` Il dominio verrà utilizzato per generare gli URL assoluti delle varianti di pagina. Se questo valore non è impostato, le varianti di pagina verranno generate utilizzando collegamenti relativi.
+* `cq:variantDomain` - indica cosa `Externalizer` Il dominio viene utilizzato per generare gli URL assoluti delle varianti di pagina. Se questo valore non è impostato, le varianti di pagina verranno generate utilizzando collegamenti relativi.
 * `cq:variantFamily` - indica a quale famiglia di siti web appartiene questo sito; più rappresentazioni specifiche per dispositivo dello stesso sito web dovrebbero appartenere alla stessa famiglia;
 * `media` : memorizza i valori dell’attributo media dell’elemento link; si consiglia di utilizzare il nome dell’elemento link `BrowserMap` registrato `DeviceGroups`, affinché il `BrowserMap` libreria può inoltrare automaticamente i client alla variante corretta del sito web.
 
@@ -391,7 +391,7 @@ Per ulteriori dettagli, consulta [Mappa browser personalizzata](#creatingacustom
 
 Se non è stato utilizzato nessuno dei meccanismi precedenti per indicare un sito alternativo per `BrowserMap`, quindi i selettori che utilizzeranno i nomi dei `DeviceGroups` verrà aggiunto al `URL`s, nel qual caso è necessario fornire i propri servlet che gestiranno le richieste.
 
-Ad esempio, la navigazione dei dispositivi `www.example.com/index.html` identificato come `smartphone` by BrowserMap viene inoltrato a `www.example.com/index.smartphone.html.`
+Ad esempio, la navigazione di un dispositivo `www.example.com/index.html` identificato come `smartphone` by BrowserMap viene inoltrato a `www.example.com/index.smartphone.html.`
 
 ### Utilizzo di BrowserMap sulle pagine {#using-browsermap-on-your-pages}
 
@@ -569,7 +569,7 @@ Il **Statistiche** viene creata la prima volta che viene rilevato un dispositivo
 
 Per generare una voce nelle statistiche, procedere come segue:
 
-1. Utilizza un dispositivo mobile o un emulatore (come ad esempio https://chrispederick.com/work/user-agent-switcher/ su Firefox).
+1. Utilizza un dispositivo mobile o un emulatore (come, ad esempio, https://chrispederick.com/work/user-agent-switcher/ su Firefox).
 1. Richiedi una pagina mobile nell’istanza di authoring disabilitando la modalità di authoring, ad esempio:
    `https://localhost:4502/content/geometrixx_mobile/en/products.html?wcmmode=disabled`
 

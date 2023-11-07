@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2519'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ La modalità di backup è uno stato immesso dal server in modo che i file nel GD
 
 >[!NOTE]
 >
->Per ulteriori informazioni su cosa considerare durante l’esecuzione dei backup per AEM Forms, consulta [aiuto per l’amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
+>Per ulteriori informazioni su cosa considerare durante l’esecuzione dei backup per AEM Forms, consulta [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ La modalità di backup è uno stato immesso dal server in modo che i file nel GD
 * Tempo necessario per il completamento della procedura di backup.
 * Un flag per indicare se deve essere in modalità di backup continuo, utile solo se si eseguono backup continui.
 
-Prima di scrivere applicazioni per l&#39;immissione in modalità di backup, è consigliabile comprendere le procedure di backup che verranno utilizzate dopo aver impostato il server Forms in modalità di backup. Per ulteriori informazioni su cosa considerare durante l’esecuzione dei backup per AEM Forms, consulta [aiuto per l’amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
+Prima di scrivere applicazioni per passare alla modalità di backup, è consigliabile comprendere le procedure di backup utilizzate dopo aver impostato il server Forms in modalità di backup. Per ulteriori informazioni su cosa considerare durante l’esecuzione dei backup per AEM Forms, consulta [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Per uscire dalla modalità di backup a livello di programmazione, è necessario 
 
 **Decidere su un&#39;etichetta univoca, determinare il tempo necessario per eseguire il backup e decidere se attivare la modalità di backup continuo**
 
-Prima di attivare la modalità di backup, è necessario scegliere un&#39;etichetta univoca, determinare il tempo da allocare per eseguire il backup e decidere se si desidera che il server Forms rimanga in modalità di backup. Queste considerazioni sono importanti per l&#39;integrazione con le procedure di backup stabilite dall&#39;organizzazione. (vedere [aiuto per l’amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Prima di attivare la modalità di backup, è necessario scegliere un&#39;etichetta univoca, determinare il tempo da allocare per eseguire il backup e decidere se si desidera che il server Forms rimanga in modalità di backup. Queste considerazioni sono importanti per l&#39;integrazione con le procedure di backup stabilite dall&#39;organizzazione. (vedere [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Accedi alla modalità di backup**
 
@@ -135,7 +135,7 @@ Attiva la modalità di backup utilizzando l’API del servizio Backup e ripristi
    * Un `int` valore che specifica il numero di minuti necessari per rimanere in modalità di backup. È possibile specificare un valore da `1` a `10080` (il numero di minuti in una settimana). Questo valore viene ignorato quando si utilizza la modalità di backup continuo.
    * A `Boolean` valore che specifica se attivare la modalità di backup continuo. Un valore di `True` specifica di essere in modalità di backup continuo. In modalità di backup continuo, il valore specificato per il numero di minuti da mantenere in modalità di backup viene ignorato.
 
-      La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente. Un valore di `False` significa che non viene utilizzata la modalità di backup continuo e, dopo aver lasciato la modalità di backup, riprende lo svuotamento dei file dal GDS.
+     La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente. Un valore di `False` significa che non viene utilizzata la modalità di backup continuo e, dopo aver lasciato la modalità di backup, riprende lo svuotamento dei file dal GDS.
 
 1. Recuperare informazioni sulla sessione in modalità di backup sul server
 
@@ -170,7 +170,7 @@ Attiva la modalità di backup utilizzando il servizio Web fornito dall&#39;API d
    * A `Uint32` valore che specifica il numero di minuti necessari per rimanere in modalità di backup. È possibile specificare un valore da `1` a `10080` (numero di minuti in una settimana). Questo valore viene ignorato quando si utilizza la modalità di backup continuo.
    * A `Boolean` valore che specifica se attivare la modalità di backup continuo. Un valore di `True` specifica di essere in modalità di backup continuo. In modalità di backup continuo, il valore specificato per il numero di minuti da mantenere in modalità di backup viene ignorato. La modalità di backup continuo indica che una nuova sessione in modalità di backup viene avviata dopo il completamento di quella corrente.
 
-      Un valore di `False` significa che non viene utilizzata la modalità di backup continuo e, dopo aver lasciato la modalità di backup, riprende lo svuotamento dei file dal GDS.
+     Un valore di `False` significa che non viene utilizzata la modalità di backup continuo e, dopo aver lasciato la modalità di backup, riprende lo svuotamento dei file dal GDS.
 
 1. Recuperare informazioni sulla sessione in modalità di backup sul server
 
@@ -184,7 +184,7 @@ Attiva la modalità di backup utilizzando il servizio Web fornito dall&#39;API d
 
 Uscire dalla modalità di backup in modo che il server Forms riprenda la rimozione dei file dal GDS (Global Document Storage) sul server Forms.
 
-Prima di scrivere le applicazioni per passare alla modalità di congedo, è consigliabile comprendere le procedure di backup utilizzate con AEM Forms. Per ulteriori informazioni su cosa considerare durante l’esecuzione dei backup per AEM Forms, consulta [aiuto per l’amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
+Prima di scrivere le applicazioni per passare alla modalità di congedo, è consigliabile comprendere le procedure di backup utilizzate con AEM Forms. Per ulteriori informazioni su cosa considerare durante l’esecuzione dei backup per AEM Forms, consulta [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
@@ -223,7 +223,7 @@ Uscire dalla modalità di backup utilizzando l’API del servizio Backup e ripri
 
 1. Includi file di progetto
 
-   Includi i file JAR client necessari, ad esempio adobe-backup-restore-client-sdk.jar, nel percorso di classe del progetto Java. Per creare l’applicazione client Java, è necessario aggiungere i seguenti file JAR al percorso di classe del progetto:
+   Includi i file JAR client necessari, ad esempio adobe-backup-restore-client-sdk.jar, nel percorso di classe del progetto Java. Per creare un’applicazione client Java, è necessario aggiungere i seguenti file JAR al percorso di classe del progetto:
 
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar

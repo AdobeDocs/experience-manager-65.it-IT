@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2740'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Experience Manager Assets] guida all&#39;ottimizzazione delle prestazioni {#assets-performance-tuning-guide}
 
-Un [!DNL Experience Manager Assets] La configurazione contiene diversi componenti hardware, software e di rete. A seconda dello scenario di distribuzione, per rimuovere i colli di bottiglia delle prestazioni potrebbe essere necessario apportare modifiche specifiche alla configurazione di hardware, software e componenti di rete.
+Un [!DNL Experience Manager Assets] la configurazione contiene diversi componenti hardware, software e di rete. A seconda dello scenario di distribuzione, per rimuovere i colli di bottiglia delle prestazioni potrebbe essere necessario apportare modifiche specifiche alla configurazione di hardware, software e componenti di rete.
 
 Inoltre, l&#39;identificazione e il rispetto di determinate linee guida per l&#39;ottimizzazione hardware e software consentono di creare una solida base che consente [!DNL Experience Manager Assets] per soddisfare le aspettative in termini di prestazioni, scalabilità e affidabilità.
 
@@ -29,7 +29,7 @@ Di seguito sono elencate alcune aree chiave intorno alle quali individuare e ris
 
 ## Platform {#platform}
 
-Experience Manager è supportato su diverse piattaforme, ma Adobe ha trovato il supporto più esteso per gli strumenti nativi su Linux e Windows, il che contribuisce a migliorare le prestazioni e a semplificare l’implementazione. È consigliabile implementare un sistema operativo a 64 bit per soddisfare i requisiti di memoria elevati di un [!DNL Experience Manager Assets] distribuzione. Come per qualsiasi implementazione di Experience Manager, è necessario implementare TarMK laddove possibile. Anche se TarMK non può essere scalato oltre una singola istanza di authoring, ha prestazioni migliori di MongoMK. Puoi aggiungere istanze di offload TarMK per aumentare la potenza di elaborazione del flusso di lavoro del tuo [!DNL Experience Manager Assets] distribuzione.
+Anche se Experience Manager è supportato su diverse piattaforme, Adobe ha trovato il massimo supporto per strumenti nativi su Linux e Windows, il che contribuisce a prestazioni ottimali e alla facilità di implementazione. È consigliabile implementare un sistema operativo a 64 bit per soddisfare i requisiti di memoria elevati di un [!DNL Experience Manager Assets] distribuzione. Come per qualsiasi implementazione di Experience Manager, è necessario implementare TarMK laddove possibile. Anche se TarMK non può essere scalato oltre una singola istanza di authoring, ha prestazioni migliori di MongoMK. Puoi aggiungere istanze di offload TarMK per aumentare la potenza di elaborazione del flusso di lavoro del tuo [!DNL Experience Manager Assets] distribuzione.
 
 ### Cartella temporanea {#temp-folder}
 
@@ -157,7 +157,7 @@ Per impostazione predefinita, [!DNL Experience Manager] esegue un numero massimo
 
 1. On [!DNL Experience Manager] Autore, accesso `https://[aem_server]:[port]/system/console/slingevent`.
 
-1. Clic **[!UICONTROL Modifica]** su ogni coda di flusso di lavoro rilevante per l’implementazione, ad esempio **[!UICONTROL Coda del flusso di lavoro transitorio Granite]**.
+1. Clic **[!UICONTROL Modifica]** su ogni coda di flusso di lavoro rilevante per la tua implementazione, ad esempio, **[!UICONTROL Coda del flusso di lavoro transitorio Granite]**.
 
 1. Aggiorna il valore di **[!UICONTROL Numero massimo processi paralleli]** e fai clic su **[!UICONTROL Salva]**.
 
@@ -165,7 +165,7 @@ Se si imposta una coda su metà dei processori disponibili, è possibile iniziar
 
 ### Configurazione risorsa di aggiornamento DAM {#dam-update-asset-configuration}
 
-Il [!UICONTROL Aggiorna risorsa DAM] Il flusso di lavoro contiene una suite completa di passaggi configurati per le attività, ad esempio la generazione di file PTIFF di Dynamic Media e [!DNL Adobe InDesign Server] integrazione. Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi. L’Adobe consiglia di creare una copia personalizzata del [!UICONTROL Aggiorna risorsa DAM] modello di flusso di lavoro e rimuovi eventuali passaggi non necessari. In questo caso, aggiorna i moduli di avvio per [!UICONTROL Aggiorna risorsa DAM] per puntare al nuovo modello.
+Il [!UICONTROL Aggiorna risorsa DAM] Il flusso di lavoro contiene una suite completa di passaggi configurati per le attività, ad esempio la generazione di file PTIFF di Dynamic Medie e [!DNL Adobe InDesign Server] integrazione. Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi. L’Adobe consiglia di creare una copia personalizzata del [!UICONTROL Aggiorna risorsa DAM] modello di flusso di lavoro e rimuovi eventuali passaggi non necessari. In questo caso, aggiorna i moduli di avvio per [!UICONTROL Aggiorna risorsa DAM] per puntare al nuovo modello.
 
 Esecuzione di [!UICONTROL Aggiorna risorsa DAM] un flusso di lavoro intensivo può aumentare notevolmente le dimensioni dell’archivio dati dei file. I risultati di un esperimento condotto da Adobe hanno mostrato che la dimensione dell’archivio dati può aumentare di circa 400 GB se vengono eseguiti circa 5500 flussi di lavoro entro 8 ore.
 
@@ -181,7 +181,7 @@ I clienti utilizzano immagini di varie dimensioni e formati sul proprio sito web
 
 Molti clienti Sites implementano un servlet per le immagini che ridimensiona e ritaglia le immagini al momento in cui vengono richieste, imponendo un carico aggiuntivo all’istanza Publish. Tuttavia, se queste immagini possono essere memorizzate nella cache, il problema può essere attenuato.
 
-Un approccio alternativo consiste nell&#39;utilizzare la tecnologia Dynamic Media per gestire completamente la manipolazione delle immagini. Inoltre, puoi implementare Brand Portal che non solo si assume le responsabilità di generazione delle rappresentazioni dal [!DNL Experience Manager] ma anche l&#39;intero livello di pubblicazione.
+Un approccio alternativo consiste nell&#39;utilizzare la tecnologia Dynamic Medie per gestire completamente la manipolazione delle immagini. Inoltre, puoi implementare Brand Portal che non solo si assume le responsabilità di generazione delle rappresentazioni dal [!DNL Experience Manager] ma anche l&#39;intero livello di pubblicazione.
 
 #### ImageMagick {#imagemagick}
 
@@ -212,7 +212,7 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick in `conf
 >
 >ImageMagick `policy.xml` e `configure.xml` I file sono disponibili all&#39;indirizzo `/usr/lib64/ImageMagick-&#42;/config/` invece di `/etc/ImageMagick/`Vedere [Documentazione di ImageMagick](https://www.imagemagick.org/script/resources.php) per il percorso dei file di configurazione.
 
-Se sta usando [!DNL Experience Manager] in Adobe Managed Services (AMS), contatta l’Assistenza clienti di Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con il rappresentante dell’Assistenza clienti di Adobe per implementare queste best practice per la tua implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbe non elaborare file PSB ad altissima risoluzione con una risoluzione superiore a 30000x23000 pixel.
+Se sta usando [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con il rappresentante dell’Assistenza clienti di Adobe per implementare queste best practice per la tua implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbe non elaborare file PSB ad altissima risoluzione con una risoluzione superiore a 30000x23000 pixel.
 
 ### Write-back XMP {#xmp-writeback}
 
@@ -228,7 +228,7 @@ Se si seleziona il flag Esegui flussi di lavoro, l’importazione di una grande 
 
 ## Replica {#replication}
 
-Quando replichi le risorse in un numero elevato di istanze di pubblicazione, ad esempio in un’implementazione Sites, l’Adobe consiglia di utilizzare la replica a catena. In questo caso, l’istanza di authoring viene replicata in una singola istanza di pubblicazione che a sua volta viene replicata nelle altre istanze di pubblicazione, liberando l’istanza di authoring.
+Quando replichi le risorse in un numero elevato di istanze di pubblicazione, ad esempio in un’implementazione di Sites, l’Adobe consiglia di utilizzare la replica a catena. In questo caso, l’istanza di authoring viene replicata in una singola istanza di pubblicazione che a sua volta viene replicata nelle altre istanze di pubblicazione, liberando l’istanza di authoring.
 
 ### Configurare la replica a catena {#configure-chain-replication}
 

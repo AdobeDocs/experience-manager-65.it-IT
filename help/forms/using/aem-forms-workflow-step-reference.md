@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5675d69a5bdf296782339f02162db8068daf29e3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7690'
+source-wordcount: '7689'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 
 ## Passaggio Invia e-mail {#send-email-step}
 
-Utilizza la fase e-mail per inviare un’e-mail, ad esempio un’e-mail con un documento record, un collegamento di un modulo adattivo, un collegamento di una comunicazione interattiva o un documento PDF allegato. Il passaggio Invia e-mail supporta [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello di e-mail HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
+Utilizza la fase e-mail per inviare un’e-mail, ad esempio un messaggio e-mail con un documento record, un collegamento di un modulo adattivo, un collegamento di una comunicazione interattiva o un documento PDF allegato. Il passaggio Invia e-mail supporta [E-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello di e-mail HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
 Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il [servizio e-mail](../../forms/using/aem-forms-workflow.md) è configurato. Il passaggio e-mail presenta le seguenti proprietà:
 
@@ -414,7 +414,7 @@ Invia un documento direttamente a una stampante. Supporta i seguenti meccanismi 
 
 Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL in base a un progetto di modulo e a un file di dati. Il file di dati viene unito alla struttura del modulo e formattato per la stampa. L&#39;output generato da questo passaggio può essere inviato direttamente a una stampante o salvato come file. È consigliabile utilizzare questo passaggio quando si desidera utilizzare le progettazioni dei moduli o i dati di un&#39;applicazione. Se le progettazioni di moduli o moduli si trovano in rete, nel file system locale o in una posizione HTTP, utilizzare l&#39;operazione generatePrintedOutput.
 
-Ad esempio, l&#39;applicazione richiede l&#39;unione di una struttura di modulo con un file di dati. I dati contengono centinaia di record. Inoltre, richiede che l&#39;output venga inviato a una stampante che supporta ZPL. La struttura del modulo e i dati di input si trovano in un&#39;applicazione. Utilizzare l&#39;operazione generatePrintedOutput per unire ogni record con una struttura di modulo e inviare l&#39;output a una stampante che supporta ZPL.
+Ad esempio, l&#39;applicazione richiede l&#39;unione di una struttura di modulo con un file di dati. I dati contengono centinaia di record. Inoltre, richiede che l&#39;output venga inviato a una stampante che supporta ZPL. La struttura del modulo e i dati di input sono inclusi in un&#39;applicazione. Utilizzare l&#39;operazione generatePrintedOutput per unire ogni record con una struttura di modulo e inviare l&#39;output a una stampante che supporta ZPL.
 
 Il passaggio Genera output stampato ha le seguenti proprietà:
 

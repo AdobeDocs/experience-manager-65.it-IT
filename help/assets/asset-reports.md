@@ -6,10 +6,10 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1162'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -113,7 +113,7 @@ Per generare i rapporti, effettuare le seguenti operazioni:
    ![Seleziona o annulla la selezione delle colonne del rapporto](assets/custom_columns.png)
 
 1. Clic **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che la generazione del rapporto è stata avviata.
-1. Il giorno [!UICONTROL Rapporti su risorse] pagina, lo stato di generazione del rapporto si basa sullo stato corrente del processo di rapporto, ad esempio [!UICONTROL Completato], [!UICONTROL Non riuscito], [!UICONTROL In coda], o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del report, fare clic sul collegamento al report. In alternativa, seleziona il rapporto e fai clic su **[!UICONTROL Visualizza]** dalla barra degli strumenti.
+1. Il giorno [!UICONTROL Rapporti su risorse] pagina, lo stato di generazione del rapporto si basa sullo stato corrente del processo di rapporto, ad esempio, [!UICONTROL Completato], [!UICONTROL Non riuscito], [!UICONTROL In coda], o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del report, fare clic sul collegamento al report. In alternativa, seleziona il rapporto e fai clic su **[!UICONTROL Visualizza]** dalla barra degli strumenti.
 
    ![Un rapporto generato](assets/report_page.png)
 

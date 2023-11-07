@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 40%
+source-wordcount: '795'
+ht-degree: 42%
 
 ---
 
@@ -69,7 +69,7 @@ Questo flusso di lavoro consente di richiedere un manoscritto a un utente e quin
 
    ![Flusso di lavoro Richiedi copia](assets/project-request-copy-workflow.png)
 
-1. Clic **Invia**.
+1. Fai clic su **Invia**.
 
 Il flusso di lavoro viene avviato. L&#39;attività viene visualizzata nella **Attività** Card.
 
@@ -87,7 +87,7 @@ In **Approvazione progetto** flusso di lavoro, puoi assegnare il contenuto a un 
 
    ![Flusso di lavoro di approvazione progetto](assets/project-approval-workflow.png)
 
-1. Clic **Invia**.
+1. Fai clic su **Invia**.
 
 Il flusso di lavoro viene avviato. L&#39;attività viene visualizzata nella **Attività** Card.
 
@@ -101,7 +101,7 @@ Questo flusso di lavoro consente di richiedere un lancio.
 
    ![Richiedi flusso di lavoro di lancio](assets/project-request-launch-workflow.png)
 
-1. Clic **Invia**.
+1. Fai clic su **Invia**.
 
 Il flusso di lavoro viene avviato. Il flusso di lavoro viene visualizzato nel **Flussi di lavoro** elenco.
 
@@ -115,7 +115,7 @@ Questo flusso di lavoro ti consente di richiedere una pagina di destinazione.
 
    ![Richiedi flusso di lavoro per pagina di destinazione](assets/project-request-landing-page-workflow.png)
 
-1. Clic **Invia**.
+1. Fai clic su **Invia**.
 
 Il flusso di lavoro viene avviato. L&#39;attività viene visualizzata nella **Attività** Card.
 
@@ -125,11 +125,11 @@ Questo flusso di lavoro ti consente di richiedere un’e-mail. Si tratta dello s
 
 1. In un progetto semplice, tocca o fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
 1. Nella procedura guidata del flusso di lavoro seleziona **Richiedi e-mail** e fai clic su **Successivo**.
-1. Immetti un titolo e-mail, nonché i percorsi della campagna e del modello. Inoltre puoi fornire un nome, una descrizione e una data di attivazione.
+1. Immetti un titolo e-mail e i percorsi della campagna e del modello. Inoltre puoi fornire un nome, una descrizione e una data di attivazione.
 
    ![Richiedi flusso di lavoro e-mail](assets/project-request-email-workflow.png)
 
-1. Clic **Invia**.
+1. Fai clic su **Invia**.
 
 Il flusso di lavoro viene avviato. L&#39;attività viene visualizzata nella **Attività** Card.
 

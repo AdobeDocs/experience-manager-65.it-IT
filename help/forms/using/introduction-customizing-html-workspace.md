@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1760'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ I passaggi più comunemente applicabili sono descritti in [Passaggi generici per
 
 Prima di personalizzare l’area di lavoro, acquisisci familiarità con il foglio di stile predefinito fornito con AEM Forms all’indirizzo /libs/ws/css/style.css.
 
-Per personalizzare l&#39;area di lavoro, è consigliabile familiarizzare con il foglio di stile esistente style.css, che si trova nella cartella /libs/ws/css. Di seguito sono descritti alcuni componenti importanti.
+Per personalizzare l&#39;area di lavoro, è consigliabile familiarizzare con il foglio di stile esistente, style.css, nella cartella /libs/ws/css. Di seguito sono descritti alcuni componenti importanti.
 
 <table>
  <tbody>
@@ -216,8 +216,10 @@ Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pac
             * modelli: contiene tutti i modelli, ovvero i file HTML di tutte le visualizzazioni nell’area di lavoro di AEM Forms.
             * util: contiene tutti i file di utilità (javascript) utilizzati nell’area di lavoro di AEM Forms.
             * visualizzazioni: contiene le visualizzazioni principali di tutti i componenti nell’area di lavoro di AEM Forms.
+
          * main.js
          * router.js
+
       * libs/ws: pdf.html e pluginPing.pdf vengono utilizzati per caricare i PDF forms nell’area di lavoro di AEM Forms e WSNextAdapter.swf viene utilizzato per caricare i moduli e le guide di SWF nell’area di lavoro di AEM Forms.
       * lingue:
 
@@ -226,11 +228,9 @@ Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pac
          * fr-FR - Contiene translation.json per il francese.
          * ja-JP - Contiene translation.json per il giapponese.
          * html.jsp - Contiene il codice per individuare le impostazioni internazionali correnti del browser.
+
       * html.jsp
       * GET.jsp
-
-
-
 
 ### Pacchetto CRX {#crx-package}
 
@@ -261,13 +261,13 @@ Questo pacchetto può essere creato utilizzando i tre profili descritti di segui
 
       * require - Contiene require.js.
       * jqueryui - Contiene jquery.ui.datepicker.ja.js.
+
    * runtime:
 
       * modelli: contiene tutti i modelli, ovvero i file HTML di tutti i componenti nell’area di lavoro di AEM Forms.
+
    * main.js (combinato, minimizzato e semplificato).
    * registry.js
-
-
 
 * libs:
 
@@ -306,13 +306,13 @@ Questo pacchetto può essere creato utilizzando i tre profili descritti di segui
 
       * require - Contiene require.js.
       * jqueryui - Contiene jquery.ui.datepicker.ja.js.
+
    * runtime:
 
       * modelli: contiene tutti i modelli, ovvero i file HTML di tutti i componenti nell’area di lavoro di AEM Forms.
+
    * main.js (combinato).
    * registry.js
-
-
 
 * libs:
 
@@ -358,10 +358,10 @@ mvn clean -P Dev install su pkg client
       * modelli: contiene tutti i modelli, ovvero i file HTML di tutti i componenti nell’area di lavoro di AEM Forms.
       * util: contiene tutti i file di utilità (JavaScript) utilizzati nell’area di lavoro di AEM Forms.
       * visualizzazioni: contiene le visualizzazioni di tutti i componenti nell’area di lavoro di AEM Forms.
+
    * main.js
    * registry.js
    * router.js
-
 
 * libs:
 

@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ In un cluster, se si utilizza il caching TCP anziché UDP, è necessario aggiorn
 
 ### Modifica dei percorsi dei file system dei nodi dei moduli AEM {#changing-the-aem-forms-node-file-system-paths}
 
-Se si modificano i percorsi del file system per un nodo standalone, è necessario aggiornare i riferimenti appropriati nelle preferenze, in altre configurazioni di sistema, nelle applicazioni personalizzate e nelle applicazioni AEM forms distribuite. Per un cluster, invece, tutti i nodi devono utilizzare la stessa configurazione del percorso del file system. È necessario impostare la directory radice Global Document Storage (GDS) e assicurarsi che punti a una copia del GDS ripristinato sincronizzata con il database ripristinato. L&#39;impostazione del percorso GDS è importante perché GDS può contenere dati destinati a persistere durante il riavvio del server applicazioni.
+Se si modificano i percorsi del file system per un nodo standalone, è necessario aggiornare i riferimenti appropriati nelle preferenze, in altre configurazioni di sistema, nelle applicazioni personalizzate e nelle applicazioni AEM forms distribuite. Per un cluster, invece, tutti i nodi devono utilizzare la stessa configurazione del percorso del file system. Impostare la directory radice Global Document Storage (GDS) e assicurarsi che punti a una copia del GDS ripristinato sincronizzata con il database ripristinato. L&#39;impostazione del percorso GDS è importante perché GDS può contenere dati destinati a persistere durante il riavvio del server applicazioni.
 
 In un ambiente cluster, la configurazione del percorso del file system dell&#39;archivio deve essere la stessa per tutti i nodi del cluster prima del backup e dopo il ripristino.
 

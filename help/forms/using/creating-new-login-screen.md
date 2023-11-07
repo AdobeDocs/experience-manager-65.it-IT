@@ -1,23 +1,19 @@
 ---
-title: Creazione di una nuova schermata di accesso
-seo-title: Creating a new login screen
-description: Come modificare la pagina di accesso dei moduli di LiveCycle, ad esempio AEM Forms Workspace o Forms Manager.
-seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
-uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
+title: Creazione di una schermata di accesso
+description: Come modificare la pagina di accesso dei moduli di LiveCycle, ad esempio di AEM Forms Workspace o Forms Manager.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '460'
 ht-degree: 7%
 
 ---
 
-# Creazione di una nuova schermata di accesso{#creating-a-new-login-screen}
+# Creazione di una schermata di accesso{#creating-a-new-login-screen}
 
 Puoi modificare la schermata di accesso di tutti i moduli AEM Forms che utilizzano la schermata di accesso di AEM Forms. Ad esempio, le modifiche influiscono sulla schermata di accesso di, Forms Manager e AEM Forms Workspace.
 
@@ -60,6 +56,7 @@ Puoi modificare la schermata di accesso di tutti i moduli AEM Forms che utilizza
    1. Rinominare la cartella con il nome delle impostazioni internazionali che si desidera supportare. Esempio: `ar`.
 
    1. Modificare la proprietà `jcr:language` valore per `ar`(per `ar` cartella ).
+
    >[!NOTE]
    >
    >Se locale è una combinazione di codice lingua-paese, ad esempio, `ar-DZ`, quindi modifica il nome della cartella e il valore della proprietà in `ar-DZ`.
@@ -212,6 +209,7 @@ String browserLocale = "en";
       * da `/libs/livecycle/core/components/login`
 
       * a `/apps/livecycle/core/components/login`
+
    1. Modifica `/apps/livecycle/core/components/login/login.jsp` per incorporare il testo appena aggiunto.
 
    ![Aggiungi nuova coppia chiave-valore](assets/capture_new.png)
@@ -254,8 +252,8 @@ String browserLocale = "en";
       * da `/libs/livecycle/core/components/login`
 
       * a `/apps/livecycle/core/components/login`
-   1. Modifica `/apps/livecycle/core/components/login/login.jsp` per incorporare i nuovi stili aggiunti.
 
+   1. Modifica `/apps/livecycle/core/components/login/login.jsp` per incorporare i nuovi stili aggiunti.
 
 
 Ad esempio:
@@ -272,15 +270,15 @@ css.newLoginContentArea {
 * Modifica quanto segue in `/apps/livecycle/core/components/login.jsp`.
 
 
-   ```jsp
-   <div class="loginContentArea">
-   ```
+  ```jsp
+  <div class="loginContentArea">
+  ```
 
-   A
+  A
 
-   ```jsp
-   <div class="newLoginContentArea">
-   ```
+  ```jsp
+  <div class="newLoginContentArea">
+  ```
 
 >[!NOTE]
 >

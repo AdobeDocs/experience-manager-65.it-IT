@@ -11,9 +11,9 @@ discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 feature: Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e pers
 
 1. **Scegli un profilo per aggiungere stili personalizzati**
 
-   Accedi all’interfaccia CRX DE all’URL: **https://&lt;server>:&lt;port>/crx/de** e creare un profilo o sceglierne uno esistente. Per informazioni su come creare un profilo, consulta [Creazione di un nuovo profilo](/help/forms/using/custom-profile.md)
+   Accedi all’interfaccia CRX DE all’URL: **https://&lt;server>:&lt;port>/crx/de** e creare un profilo o sceglierne uno esistente. Per informazioni su come creare un profilo, consulta [Creazione di un profilo](/help/forms/using/custom-profile.md)
 
 1. **Creazione di un foglio di stile CSS per la formattazione dei moduli HTML5**
 
@@ -40,7 +40,7 @@ Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e pers
 
    1. Fare clic con il pulsante destro del mouse sulla cartella e selezionare **creare** > **crea file** dal menu
 
-   1. Nella finestra di dialogo Crea file immettere il nome del foglio di stile. Assicurati di utilizzare l’estensione .css (ad esempio stylesheet.css)
+   1. Nella finestra di dialogo Crea file immettere il nome del foglio di stile. Assicurati di utilizzare l’estensione .css (ad esempio, stylesheet.css)
    1. Dal riquadro di navigazione, apri il file CSS creato.
    1. Definisci le classi CSS dei componenti a cui vuoi applicare uno stile e aggiungi gli stili in tali classi.
 

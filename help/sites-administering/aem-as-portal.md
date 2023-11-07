@@ -1,19 +1,15 @@
 ---
 title: Portali e portlet AEM
-seo-title: AEM Portals and Portlets
 description: Scopri come configurare e amministrare l’AEM come portale e come configurare e visualizzare il contenuto dell’AEM in un portlet.
-seo-description: Learn how to configure and administer AEM as a portal and how to configure and display AEM content in a portlet.
-uuid: 7f9e316d-277e-4a1e-b6f3-cd89addc897b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6093'
 ht-degree: 0%
 
 ---
@@ -130,7 +126,7 @@ Il portlet può essere configurato con le seguenti preferenze:
   </tr>
   <tr>
    <td>preferenzaDialogo</td>
-   <td>Percorso della finestra di dialogo delle preferenze in AEM: se viene lasciata vuota, verrà utilizzata la finestra di dialogo delle preferenze incorporata. Il valore predefinito è /libs/portal/content/prefs.html.</td>
+   <td>Percorso della finestra di dialogo delle preferenze in AEM: se lasciato vuoto, viene utilizzata la finestra di dialogo delle preferenze incorporata. Il valore predefinito è /libs/portal/content/prefs.html.</td>
   </tr>
   <tr>
    <td>initialRedirect</td>
@@ -193,7 +189,7 @@ Per configurare un agente di replica per il portale:
 
    ![screen_shot_2012-02-15alle40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
-1. Fai doppio clic sull’agente di replica appena creato. Viene visualizzato come non valido in quanto non è ancora stato configurato.
+1. Fai doppio clic sull’agente di replica creato. Viene visualizzato come non valido in quanto non è ancora stato configurato.
 
    ![screen_shot_2012-02-15alle41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
@@ -343,7 +339,7 @@ Per ogni richiesta ricevuta da AEM WCM, viene innanzitutto tentata l’autentica
 
 #### Abilitazione dell’autenticazione SSO in un portlet AEM {#enabling-sso-authentication-in-a-aem-portlet}
 
-Affinché l’istanza WCM AEM sottostante possa accettare richieste SSO, è necessario passare dalla modalità di autenticazione del portlet **Tecnico** a **SSO**.
+Affinché l&#39;istanza WCM AEM sottostante possa accettare richieste SSO, è necessario passare dalla modalità di autenticazione del portlet **Tecnico** a **SSO**.
 
 Per abilitare l&#39;autenticazione SSO in un portlet AEM:
 
@@ -548,7 +544,7 @@ Il portlet dei contenuti dell’AEM dispone di una funzione di localizzazione in
 Questa operazione viene eseguita in due passaggi:
 
 1. Il rilevatore delle impostazioni locali della directory portale rileva le impostazioni locali dell&#39;utente del portale ottenendo le impostazioni locali dal portale. Questo servizio deve essere configurato con l’elenco delle lingue disponibili nell’AEM.
-1. Il gestore delle impostazioni internazionali di Portal Director gestisce la localizzazione della richiesta corrente. Prende il percorso del contenuto richiesto, ad esempio `/content/geometrixx/en/company.html`e in base alla configurazione, riscrive il **it** con la lingua effettiva dell&#39;utente.
+1. Il gestore delle impostazioni internazionali di Portal Director gestisce la localizzazione della richiesta corrente. Prende il percorso del contenuto richiesto, ad esempio, `/content/geometrixx/en/company.html`e in base alla configurazione, riscrive il **it** con la lingua effettiva dell&#39;utente.
 
 È possibile configurare il gestore delle impostazioni internazionali di Portal Director con i percorsi per verificare la disponibilità di informazioni sulle impostazioni internazionali. In genere sono inclusi tutti gli elementi presenti in `/content` e con la posizione delle informazioni sulle impostazioni locali nel percorso. Per impostazione predefinita, il gestore delle impostazioni internazionali segue la ridiffusione della strutturazione di siti multilingue all&#39;interno dell&#39;AEM.
 
@@ -661,7 +657,7 @@ Il file JAR Quickstart per AEM contiene i file dei componenti portlet. Per otten
 
    Il pacchetto installa cq-portlet-director-sharedlibs-x.x.x.jar nella cartella /libs/portal/director nell’archivio.
 
-1. Copiare cq-portlet-director-sharedlibs-x.x.x.jar nel disco rigido. Utilizzare qualsiasi mezzo per ottenere il file, ad esempio FileVault o un client WebDAV.
+1. Copiare cq-portlet-director-sharedlibs-x.x.x.jar nel disco rigido. Utilizzare qualsiasi metodo per ottenere il file, ad esempio FileVault o un client WebDAV.
 1. Spostare il file cq-portlet-director-sharedlibs.x.x.jar nella cartella della libreria condivisa del server applicazioni in modo che le classi siano disponibili per le applicazioni portlet distribuite.
 
 ### Aggiunta del componente Portlet al Sidekick {#adding-the-portlet-component-to-sidekick}
@@ -702,7 +698,7 @@ Distribuire i portlet nel contenitore Web del server applicazioni in modo che si
 
    **Suggerimento** Il `jar cvf nameofapp.war *` Il comando aggiunge il contenuto della directory corrente al file nameofapp.war.
 
-1. Distribuire l&#39;applicazione portlet nel server applicazioni. Per informazioni, consulta la documentazione del server applicazioni.
+1. Distribuire l&#39;applicazione portlet nel server applicazioni. Per informazioni, vedere la documentazione del server applicazioni.
 
 ### Aggiunta di portlet alla pagina AEM {#adding-portlets-to-your-aem-page}
 
@@ -731,7 +727,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
 
 Per accedere al contenuto fornito da WCM AEM, il server di portale deve essere dotato del portlet Director del portale AEM. A tale scopo, installare, configurare e aggiungere il portlet alla pagina del portale utilizzando i passaggi descritti in questa sezione.
 
-Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Author in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. Prima di utilizzarlo, scarica il file .war dell’applicazione.
+Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Author in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. È necessario scaricare il file .war dell&#39;applicazione prima di utilizzarlo.
 
 ### Download del file .war {#downloading-the-war-file}
 
@@ -799,7 +795,7 @@ Di solito il percorso iniziale punta direttamente al contenuto nell’AEM. Tutta
 Per aggiungere il portlet alla pagina del portale:
 
 1. Accertati di essere nella finestra di amministrazione dell&#39;app server e passa alla posizione in cui gestisci le pagine. (ad esempio, in WebSphere 6.1, fare clic su **Gestisci pagine**).
-1. Selezionare il nome del portlet e quindi selezionare una pagina esistente o crearne una nuova.
+1. Selezionare il nome del portlet e quindi selezionare una pagina esistente o crearne una.
 1. Modifica il layout della pagina.
 1. Selezionare il portlet e aggiungerlo a un contenitore.
 1. Salva le modifiche.

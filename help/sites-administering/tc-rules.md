@@ -4,10 +4,10 @@ description: Scopri come identificare i contenuti da tradurre in Adobe Experienc
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 67%
+source-wordcount: '1152'
+ht-degree: 66%
 
 ---
 
@@ -160,7 +160,7 @@ Da qui puoi **Aggiungi contesto**. Questo consente di aggiungere un percorso.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Poi devi selezionare il contesto e fare clic su **Modifica**. Verrà aperto l’Editor delle regole di traduzione.
+Poi devi selezionare il contesto e fare clic su **Modifica**. Viene aperto l’Editor regole di traduzione.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 

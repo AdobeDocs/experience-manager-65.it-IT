@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2707'
 ht-degree: 1%
 
 ---
 
 # Come utilizzare lo strumento VLT {#how-to-use-the-vlt-tool}
 
-Lo strumento Jackrabbit FileVault (VLT) è uno strumento sviluppato da [Apache Foundation](https://www.apache.org/) che mappa il contenuto di un’istanza Jackrabbit/AEM sul file system. Lo strumento VLT ha funzioni simili a quelle del client del sistema di controllo del codice sorgente (ad esempio un client SVN), che fornisce le normali operazioni di check-in, check-out e gestione, nonché opzioni di configurazione per una rappresentazione flessibile del contenuto del progetto.
+Lo strumento Jackrabbit FileVault (VLT) è uno strumento sviluppato da [Apache Foundation](https://www.apache.org/) che mappa il contenuto di un’istanza Jackrabbit/AEM sul file system. Lo strumento VLT dispone di funzioni simili a quelle del client del sistema di controllo del codice sorgente (ad esempio il client SVN), che fornisce le normali operazioni di check-in, check-out e gestione e le opzioni di configurazione per una rappresentazione flessibile del contenuto del progetto.
 
-Lo strumento VLT viene eseguito dalla riga di comando. Questo documento descrive come utilizzare lo strumento, tra cui come iniziare e ottenere assistenza, nonché un elenco di tutti [comandi](#vlt-commands) e disponibili [opzioni](#vlt-global-options).
+Lo strumento VLT viene eseguito dalla riga di comando. Questo documento descrive come utilizzare lo strumento, tra cui come iniziare e ottenere assistenza, e un elenco di tutti [comandi](#vlt-commands) e disponibili [opzioni](#vlt-global-options).
 
 ## Concetti e architettura {#concepts-and-architecture}
 
@@ -440,7 +440,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf per i collegamenti hotfix (nome,id), ad esempio `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf per i collegamenti hotfix (nome,id), ad esempio, `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | output dettagliato |
 | `-q (--quiet)` | stampa il meno possibile |
 | `<localPaths> [<localPaths> ...]` | percorso locale |

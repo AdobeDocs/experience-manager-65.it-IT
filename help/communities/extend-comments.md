@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 exl-id: e57198cb-8fd9-43e2-b416-e40e462561c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Il percorso del componente è univoco e fa riferimento al componente predefinito
 
 Supponiamo che l’intestazione del componente Commento debba essere visualizzata con un aspetto alternativo in un sito dell’istanza AEM, mentre appare con la visualizzazione predefinita in un altro sito. Invece di sovrapporre il commento predefinito, che modifica il componente Commento per tutte le istanze, una soluzione migliore è garantire che siano disponibili più componenti di commento da utilizzare su vari siti.
 
-Per implementare questa soluzione, crea un nuovo componente che estende (sostituisce) quello esistente e modifica lo script Handlebars. L&#39;area del sito che utilizza i nuovi commenti può utilizzare quello esteso, mentre i siti che utilizzano l&#39;aspetto predefinito rimangono invariati.
+Per implementare questa soluzione, crea un componente che estende (sostituisce) quello esistente e modifica lo script Handlebars. L&#39;area del sito che utilizza i nuovi commenti può utilizzare quello esteso, mentre i siti che utilizzano l&#39;aspetto predefinito rimangono invariati.
 
 Il componente Commento è in realtà uno dei due componenti che compongono il sistema di commenti. Pertanto, esistono due componenti da estendere: *commenti* e *commento*. Lo script da modificare si trova in *commento* del componente `header.hbs` file, mentre l&#39;elemento padre *commenti* componente (il sistema di commenti) è ciò che un autore aggiunge effettivamente alla pagina.
 

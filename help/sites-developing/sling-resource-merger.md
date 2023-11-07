@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: c07fa148054b69b0da7bb402ef96a50d0895abfa
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Gli obiettivi per utilizzare Sling Resource Merger in AEM sono i seguenti:
 * assicurati che non vengano apportate modifiche di personalizzazione in `/libs`.
 * ridurre la struttura da cui viene replicata `/libs`.
 
-   Quando si utilizza Sling Resource Merger, non è consigliabile copiare l’intera struttura da `/libs` in quanto ciò comporterebbe la memorizzazione di troppe informazioni nella personalizzazione (in genere `/apps`). La duplicazione delle informazioni aumenta inutilmente la possibilità di problemi quando il sistema viene aggiornato in qualsiasi modo.
+  Quando si utilizza Sling Resource Merger, non è consigliabile copiare l’intera struttura da `/libs` in quanto ciò comporterebbe la memorizzazione di troppe informazioni nella personalizzazione (in genere `/apps`). La duplicazione delle informazioni aumenta inutilmente la possibilità di problemi quando il sistema viene aggiornato in qualsiasi modo.
 
 >[!NOTE]
 >
@@ -65,9 +65,7 @@ Gli obiettivi per utilizzare Sling Resource Merger in AEM sono i seguenti:
 >1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
 >
 >1. Apporta le modifiche in `/apps`
-
 >
-
 
 ### Proprietà {#properties}
 
@@ -75,23 +73,23 @@ La fusione delle risorse fornisce le seguenti proprietà:
 
 * `sling:hideProperties` ( `String` oppure `String[]`)
 
-   Specifica la proprietà o l&#39;elenco di proprietà da nascondere.
+  Specifica la proprietà o l&#39;elenco di proprietà da nascondere.
 
-   Il carattere jolly `*` nasconde tutto.
+  Il carattere jolly `*` nasconde tutto.
 
 * `sling:hideResource` ( `Boolean`)
 
-   Indica se le risorse devono essere completamente nascoste, inclusi i relativi elementi secondari.
+  Indica se le risorse devono essere completamente nascoste, inclusi i relativi elementi secondari.
 
 * `sling:hideChildren` ( `String` oppure `String[]`)
 
-   Contiene il nodo figlio, o elenco di nodi figlio, da nascondere. Le proprietà del nodo verranno mantenute.
+  Contiene il nodo figlio, o elenco di nodi figlio, da nascondere. Le proprietà del nodo verranno mantenute.
 
-   Il carattere jolly `*` nasconde tutto.
+  Il carattere jolly `*` nasconde tutto.
 
 * `sling:orderBefore` ( `String`)
 
-   Contiene il nome del nodo di pari livello che deve essere posizionato davanti al nodo corrente.
+  Contiene il nome del nodo di pari livello che deve essere posizionato davanti al nodo corrente.
 
 Queste proprietà influiscono sul modo in cui le risorse/proprietà originali/corrispondenti (da `/libs`) vengono utilizzati dalla sovrapposizione/esclusione (spesso in `/apps`).
 
@@ -103,23 +101,23 @@ Per creare una sovrapposizione o una sostituzione è necessario ricreare il nodo
 
    * La definizione della voce di navigazione per la console Sites, come mostrato nella barra, è definita in:
 
-      `/libs/cq/core/content/nav/sites/jcr:title`
+     `/libs/cq/core/content/nav/sites/jcr:title`
 
    * Per sovrapporsi, crea il seguente nodo:
 
-      `/apps/cq/core/content/nav/sites`
+     `/apps/cq/core/content/nav/sites`
 
-      Quindi aggiorna la proprietà `jcr:title` secondo necessità.
+     Quindi aggiorna la proprietà `jcr:title` secondo necessità.
 
 * Sostituisci
 
    * La definizione della finestra di dialogo touch per la console Testi è definita in:
 
-      `/libs/foundation/components/text/cq:dialog`
+     `/libs/foundation/components/text/cq:dialog`
 
    * Per evitare questo problema, crea il seguente nodo, ad esempio:
 
-      `/apps/the-project/components/text/cq:dialog`
+     `/apps/the-project/components/text/cq:dialog`
 
 Per creare uno di questi elementi è sufficiente ricreare la struttura dell&#39;ossatura. Per semplificare la ricreazione della struttura, tutti i nodi intermedi possono essere di tipo `nt:unstructured` (non devono necessariamente riflettere il tipo di nodo originale; ad esempio, in `/libs`).
 
@@ -144,14 +142,14 @@ Queste funzionalità, insieme a quelle standard, consentono di:
 
 * **Aggiungi una proprietà**
 
-   La proprietà non esiste in `/libs` ma è richiesto nella sezione `/apps` sovrapposizione/sostituzione.
+  La proprietà non esiste in `/libs` ma è richiesto nella sezione `/apps` sovrapposizione/sostituzione.
 
    1. Crea il nodo corrispondente in `/apps`
    1. Crea la nuova proprietà su questo nodo &quot;
 
 * **Ridefinire una proprietà (proprietà non create automaticamente)**
 
-   La proprietà è definita in `/libs`, ma è necessario un nuovo valore in `/apps` sovrapposizione/sostituzione.
+  La proprietà è definita in `/libs`, ma è necessario un nuovo valore in `/apps` sovrapposizione/sostituzione.
 
    1. Crea il nodo corrispondente in `/apps`
    1. Crea la proprietà corrispondente su questo nodo (sotto / `apps`)
@@ -159,14 +157,15 @@ Queste funzionalità, insieme a quelle standard, consentono di:
       * La proprietà avrà una priorità in base alla configurazione di Sling Resource Resolver.
       * È supportata la modifica del tipo di proprietà.
 
-         Se utilizzi un tipo di proprietà diverso da quello utilizzato in `/libs`, verrà utilizzato il tipo di proprietà definito.
-   >[!NOTE]
-   >
-   >È supportata la modifica del tipo di proprietà.
+        Se utilizzi un tipo di proprietà diverso da quello utilizzato in `/libs`, viene utilizzato il tipo di proprietà definito.
+
+  >[!NOTE]
+  >
+  >È supportata la modifica del tipo di proprietà.
 
 * **Ridefinire una proprietà creata automaticamente**
 
-   Per impostazione predefinita, le proprietà create automaticamente (come `jcr:primaryType`) non sono soggetti a sovrapposizione/esclusione per garantire che il tipo di nodo attualmente in `/libs` è rispettato. Per imporre una sovrapposizione/esclusione è necessario ricreare il nodo in `/apps`, nasconde esplicitamente la proprietà e la ridefinisce:
+  Per impostazione predefinita, le proprietà create automaticamente (come `jcr:primaryType`) non sono soggetti a sovrapposizione/esclusione per garantire che il tipo di nodo attualmente in `/libs` è rispettato. Per imporre una sovrapposizione/esclusione è necessario ricreare il nodo in `/apps`, nasconde esplicitamente la proprietà e la ridefinisce:
 
    1. Crea il nodo corrispondente in `/apps` con il `jcr:primaryType`
    1. Creare la proprietà `sling:hideProperties` su tale nodo, con il valore impostato su quello della proprietà creata automaticamente; ad esempio, `jcr:primaryType`
@@ -175,7 +174,7 @@ Queste funzionalità, insieme a quelle standard, consentono di:
 
 * **Ridefinire un nodo e i relativi elementi secondari**
 
-   Il nodo e i relativi elementi secondari sono definiti in `/libs`, ma è necessaria una nuova configurazione in `/apps` sovrapposizione/sostituzione.
+  Il nodo e i relativi elementi secondari sono definiti in `/libs`, ma è necessaria una nuova configurazione in `/apps` sovrapposizione/sostituzione.
 
    1. Combina le azioni di:
 
@@ -184,7 +183,7 @@ Queste funzionalità, insieme a quelle standard, consentono di:
 
 * **Nascondere una proprietà**
 
-   La proprietà è definita in `/libs`, ma non richiesto nella `/apps` sovrapposizione/sostituzione.
+  La proprietà è definita in `/libs`, ma non richiesto nella `/apps` sovrapposizione/sostituzione.
 
    1. Crea il nodo corrispondente in `/apps`
    1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Utilizzare questa opzione per specificare le proprietà da nascondere/ignorare. È inoltre possibile utilizzare i caratteri jolly. Ad esempio:
@@ -196,7 +195,7 @@ Queste funzionalità, insieme a quelle standard, consentono di:
 
 * **Nascondere un nodo e i relativi elementi figlio**
 
-   Il nodo e i relativi elementi secondari sono definiti in `/libs`, ma non richiesto nella `/apps` sovrapposizione/sostituzione.
+  Il nodo e i relativi elementi secondari sono definiti in `/libs`, ma non richiesto nella `/apps` sovrapposizione/sostituzione.
 
    1. Crea il nodo corrispondente in /apps
    1. Creare una proprietà `sling:hideResource`
@@ -206,7 +205,7 @@ Queste funzionalità, insieme a quelle standard, consentono di:
 
 * **Nascondi gli elementi secondari di un nodo (mantenendo le proprietà del nodo)**
 
-   Il nodo, le relative proprietà e i relativi elementi secondari sono definiti in `/libs`. Il nodo e le relative proprietà sono necessari nel `/apps` overlay/override, ma alcuni o tutti i nodi secondari non sono necessari nel `/apps` sovrapposizione/sostituzione.
+  Il nodo, le relative proprietà e i relativi elementi secondari sono definiti in `/libs`. Il nodo e le relative proprietà sono necessari nel `/apps` overlay/override, ma alcuni o tutti i nodi secondari non sono necessari nel `/apps` sovrapposizione/sostituzione.
 
    1. Crea il nodo corrispondente in `/apps`
    1. Creare la proprietà `sling:hideChildren`:
@@ -216,10 +215,9 @@ Queste funzionalità, insieme a quelle standard, consentono di:
 
       Il carattere jolly &amp;ast; può essere utilizzato per nascondere/ignorare tutti i nodi figlio.
 
-
 * **Riordina nodi**
 
-   Il nodo e i relativi elementi di pari livello sono definiti in `/libs`. È necessaria una nuova posizione in modo che il nodo venga ricreato in `/apps` overlay/override, in cui la nuova posizione viene definita in riferimento al nodo di pari livello appropriato in `/libs`.
+  Il nodo e i relativi elementi di pari livello sono definiti in `/libs`. È necessaria una nuova posizione in modo che il nodo venga ricreato in `/apps` overlay/override, in cui la nuova posizione viene definita in riferimento al nodo di pari livello appropriato in `/libs`.
 
    * Utilizza il `sling:orderBefore` proprietà:
 

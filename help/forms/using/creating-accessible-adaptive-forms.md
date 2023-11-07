@@ -10,9 +10,9 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2109'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Un modulo accessibile è un modulo utilizzabile da tutti, inclusi gli utenti con esigenze speciali. Forms adattivo include una serie di funzioni e funzionalità che migliorano l’usabilità per gli utenti con funzionalità diverse. Creare l’accessibilità nei moduli adattivi non solo consente al pubblico di contenuti di essere il più ampio possibile, ma è anche un requisito necessario quando si forniscono documenti in aree geografiche in cui è richiesta la conformità agli standard di accessibilità. Aiuta gli sviluppatori di moduli AEM Forms a rispettare gli standard di accessibilità.
+Un modulo accessibile è un modulo utilizzabile da tutti, inclusi gli utenti con esigenze speciali. Forms adattivo include diverse funzioni e funzionalità che migliorano l’usabilità per gli utenti con funzionalità diverse. Creare l’accessibilità nei moduli adattivi non solo consente al pubblico di contenuti di essere il più ampio possibile, ma è anche un requisito necessario quando si forniscono documenti in aree geografiche in cui è richiesta la conformità agli standard di accessibilità. Aiuta gli sviluppatori di moduli AEM Forms a rispettare gli standard di accessibilità.
 
 Durante la creazione di un modulo adattivo, l’autore deve considerare i seguenti punti per creare un modulo adattivo accessibile:
 

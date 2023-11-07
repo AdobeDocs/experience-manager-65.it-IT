@@ -2,9 +2,9 @@
 title: Istruzioni di installazione delle patch AEM Forms per AEM Forms
 description: Istruzioni per l’installazione del service pack di AEM Forms per l’ambiente OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 692193326e0623036ee3834985cfa9dc8d7076d9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1732'
 ht-degree: 9%
 
 ---
@@ -84,7 +84,7 @@ Passare alla directory appropriata e da una shell e digitare `./aem65_cfp_instal
 1. Al termine dell’installazione, fai clic su **[!UICONTROL Avanti]** per applicare gli aggiornamenti della correzione rapida ai file installati.
 1. **[Solo per Windows]:** Effettuare una delle seguenti operazioni:
 
-   * Deseleziona la **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Esegui **Gestione configurazione** utilizzando **ConfigurationManager.bat** file situato in `[aem-forms root]\configurationManager\bin`.
+   * Deseleziona la **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Esegui **Gestione configurazione** utilizzando **ConfigurationManager.bat** file in `[aem-forms root]\configurationManager\bin`.
 
    * Oppure deseleziona il **Avvia Configuration Manager** prima di fare clic su **[!UICONTROL Fine]**. Prima dell’esecuzione **Gestione configurazione** utilizzo **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, passa a *`<AEMForms_Install_Dir>\configurationManager\bin`* directory e sostituzione [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) file.
 

@@ -1,20 +1,16 @@
 ---
 title: Panoramica dell’editor di SPA
-seo-title: SPA Editor Overview
 description: Questo articolo offre una panoramica completa dell’editor di SPA e del suo funzionamento, inclusi flussi di lavoro dettagliati relativi all’interazione dell’editor di SPA in AEM.
-seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
-uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 87%
+source-wordcount: '1651'
+ht-degree: 86%
 
 ---
 
@@ -89,7 +85,7 @@ Tenendo presenti gli elementi chiave dell’editor di SPA, il flusso di lavoro d
 1. SPA viene caricato in un frame separato.
 1. SPA richiede contenuti JSON ed esegue il rendering dei componenti lato client.
 1. L’editor di SPA rileva i componenti renderizzati e genera sovrapposizioni.
-1. L’autore fa clic su sovrapponi e visualizza la barra degli strumenti di modifica del componente.
+1. L’autore fa clic sulla sovrapposizione e viene visualizzata la barra degli strumenti di modifica del componente.
 1. L’Editor SPA mantiene le modifiche con una richiesta POST al server.
 1. L’editor SPA richiede JSON aggiornato all’editor SPA, che viene inviato alla SPA con un evento DOM.
 1. La SPA riesegue il rendering del componente interessato, aggiornandone il DOM.
@@ -159,7 +155,7 @@ Questa è una panoramica più dettagliata incentrata sull’esperienza di author
 
 ## Requisiti e limitazioni {#requirements-limitations}
 
-Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Consulta la sezione [Guida introduttiva dell’SPA nell’AEM](/help/sites-developing/spa-getting-started-react.md) documenti che è necessario conoscere almeno per avviare il tuo sistema.
+Per consentire all’autore di utilizzare l’editor pagina per modificare il contenuto di una SPA, la tua applicazione SPA deve essere implementata per interagire con l’SDK dell’editor SPA di AEM. Consulta [Guida introduttiva dell’SPA nell’AEM](/help/sites-developing/spa-getting-started-react.md) per il minimo che è necessario sapere per far funzionare il tuo.
 
 ### Framework supportati {#supported-frameworks}
 
@@ -172,7 +168,7 @@ Le versioni precedenti di questi framework possono funzionare con l’SDK dell�
 
 ### Framework aggiuntivi {#additional-frameworks}
 
-Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Consulta la sezione [Blueprint SPA](/help/sites-developing/spa-blueprint.md) Documento sui requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi per lavorare con l&#39;AEM SPA Editor.
+Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di SPA di AEM. Consulta la [Blueprint SPA](/help/sites-developing/spa-blueprint.md) per i requisiti che un framework deve soddisfare per creare un livello specifico del framework composto da moduli, componenti e servizi per lavorare con l&#39;AEM SPA Editor.
 
 ### Utilizzo di più selettori {#multiple-selectors}
 
@@ -199,6 +195,6 @@ L’SDK dell’editor SPA dell’AEM è stato introdotto con il service pack 2 p
 * Modifica le configurazioni (ad esempio ascoltatori)
 * Annulla/Ripeti
 * Differenze tra pagine e alterazione ora
-* Funzionalità che eseguono la riscrittura sul lato server di HTML, come Link Checker, servizio di rewriter CDN, accorciamento degli URL, ecc.
+* Funzioni che eseguono la riscrittura HTML lato server, come Verifica collegamenti, servizio di rewriter CDN, abbreviazione URL e così via.
 * Modalità sviluppatore
 * Lanci AEM

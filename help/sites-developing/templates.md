@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 1%
@@ -130,7 +130,7 @@ Il diagramma seguente illustra il processo di valutazione del modello:
 
 #### Limitazione dei modelli utilizzati nelle pagine figlie {#limiting-templates-used-in-child-pages}
 
-Per limitare i modelli utilizzabili per creare pagine figlie in una determinata pagina, utilizza `cq:allowedTemplates` proprietà di `jcr:content` nodo della pagina per specificare l’elenco di modelli consentiti come pagine figlie. Ogni valore nell’elenco deve essere il percorso assoluto di un modello per una pagina figlia consentita, ad esempio `/apps/geometrixx/templates/contentpage`.
+Per limitare i modelli utilizzabili per creare pagine figlie in una determinata pagina, utilizza `cq:allowedTemplates` proprietà di `jcr:content` nodo della pagina per specificare l’elenco di modelli consentiti come pagine figlie. Ogni valore nell’elenco deve essere il percorso assoluto di un modello per una pagina figlia consentita, ad esempio, `/apps/geometrixx/templates/contentpage`.
 
 È possibile utilizzare `cq:allowedTemplates` proprietà del modello  `jcr:content` per applicare questa configurazione a tutte le nuove pagine create che utilizzano questo modello.
 

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1878'
 ht-degree: 1%
 
 ---
@@ -80,13 +80,13 @@ Per illustrare l&#39;utilizzo di uno script di progettazione di un modulo, in qu
 
 **R.** Campo denominato NumericField1 **B.** Campo denominato NumericField2 **C.** Campo denominato NumericField3
 
-La sintassi dello script presente in questa struttura di modulo è la seguente:
+La sintassi dello script in questa struttura di modulo è la seguente:
 
 ```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
-In questa struttura di modulo, il pulsante Calcola è un pulsante di comando e lo script si trova nel pulsante `Click` evento. Quando un utente immette valori nei primi due campi (NumericField1 e NumericField2) e fa clic sul pulsante Calcola, il modulo viene inviato al servizio Forms, dove viene eseguito lo script. Il servizio Forms restituisce il modulo al dispositivo client con i risultati del calcolo visualizzati nel campo NumericField3.
+In questa struttura di modulo, il pulsante Calcola è un pulsante di comando e lo script si trova nel `Click` evento. Quando un utente immette valori nei primi due campi (NumericField1 e NumericField2) e fa clic sul pulsante Calcola, il modulo viene inviato al servizio Forms, dove viene eseguito lo script. Il servizio Forms restituisce il modulo al dispositivo client con i risultati del calcolo visualizzati nel campo NumericField3.
 
 >[!NOTE]
 >
@@ -156,10 +156,9 @@ Calcola i dati del modulo utilizzando l’API Forms (Java):
       * Un valore stringa che specifica il `HTTP_USER_AGENT` valore intestazione; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` oggetto che memorizza le opzioni di runtime.
 
-      Il `processFormSubmission` il metodo restituisce un `FormsResult` oggetto contenente i risultati dell’invio del modulo.
+     Il `processFormSubmission` il metodo restituisce un `FormsResult` oggetto contenente i risultati dell’invio del modulo.
 
    * Verificare che lo stato di elaborazione associato a un modulo inviato sia `1` richiamando il `FormsResult` dell&#39;oggetto `getAction` metodo. Se questo metodo restituisce il valore `1`, il calcolo è stato eseguito e i dati possono essere scritti nuovamente sul browser web client.
-
 
 1. Riscrivere il flusso di dati del modulo nel browser Web client
 
@@ -211,10 +210,9 @@ Calcola i dati del modulo utilizzando l’API di Forms (servizio web):
       * Un campo vuoto `MyArrayOf_xsd_anyTypeHolder` oggetto popolato dal metodo. Questo parametro viene utilizzato per memorizzare gli allegati dei file inviati insieme al modulo.
       * Un campo vuoto `FormsResultHolder` oggetto popolato dal metodo con il modulo inviato.
 
-      Il `processFormSubmission` il metodo compila `FormsResultHolder` con i risultati dell&#39;invio del modulo. Il `processFormSubmission` il metodo restituisce un `FormsResult` oggetto contenente i risultati dell’invio del modulo.
+     Il `processFormSubmission` il metodo compila `FormsResultHolder` con i risultati dell&#39;invio del modulo. Il `processFormSubmission` il metodo restituisce un `FormsResult` oggetto contenente i risultati dell’invio del modulo.
 
    * Verificare che lo stato di elaborazione associato a un modulo inviato sia `1` richiamando il `FormsResult` dell&#39;oggetto `getAction` metodo. Se questo metodo restituisce il valore `1`, il calcolo è stato eseguito e i dati possono essere scritti nuovamente sul browser web client.
-
 
 1. Riscrivere il flusso di dati del modulo nel browser Web client
 

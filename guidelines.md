@@ -1,8 +1,8 @@
 ---
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 66%
+source-wordcount: '743'
+ht-degree: 61%
 
 ---
 # Linee guida per contribuire alla documentazione di Adobe Experience Manager
@@ -37,7 +37,7 @@ Fanne eccezione le note sulla versione, in cui possono essere elencati i problem
 
 È gradita come contributo qualsiasi idea che punti al miglioramento della documentazione di AEM. Tuttavia, commenti, problemi e richieste sono intesi solo come *contributi*. Non hanno l’obiettivo di rispondere a domande su come usare AEM, come implementare un progetto AEM o risolvere problemi tecnici.
 
-Eventuali domande sull’utilizzo di AEM o su errori tecnici possono essere segnalate attraverso il normale processo di assistenza tramite il [portale di assistenza Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=it#support) o discusse nella [community di Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+Eventuali domande sull’utilizzo di AEM o su errori tecnici possono essere segnalate attraverso il normale processo di assistenza tramite il [portale di assistenza Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=it#support) o discusse nella [community di Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=it).
 
 ***I contributi alla documentazione di AEM non sostituiscono l’Assistenza clienti di Adobe***. Pertanto, verranno rifiutati tutti i contributi che richiedono risposte a domande correlate al supporto.
 
@@ -79,7 +79,7 @@ Ricorda che i lettori della documentazione dell’AEM sono di tutto il mondo e n
 
 Le schermate devono essere utilizzate con cautela e solo quando una descrizione testuale è insufficiente.
 
-Nelle schermate non devono essere utilizzati marcatori o altre annotazioni (come riquadri rossi, frecce o testo). In questo modo le schermate possono essere riutilizzate o replicate più facilmente nelle versioni localizzate della documentazione.
+Non utilizzare marcatori o altre annotazioni nelle schermate (come riquadri rossi, frecce o testo). In questo modo le schermate possono essere riutilizzate o replicate più facilmente nelle versioni localizzate della documentazione.
 
 ### Riferimenti a specifiche versioni
 
@@ -89,4 +89,4 @@ Nelle schermate non devono essere utilizzati marcatori o altre annotazioni (come
 
 La prima volta che viene citato in un articolo, il prodotto deve sempre essere indicato con il suo nome completo **Adobe Experience Manager**; successivamente può essere usato **AEM**.
 
-Day, Day Software, CQ e CRX non devono essere utilizzati a meno che non sia inevitabile, ad esempio nei nomi di classi o in riferimenti specifici a versioni storiche di AEM.
+Non utilizzare Day, Day Software, CQ e CRX, salvo se inevitabile ad esempio nei nomi delle classi o se si fa riferimento alla storia dell’AEM.

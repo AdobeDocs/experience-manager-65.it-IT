@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6836'
+source-wordcount: '6818'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ A partire da AEM 6.3, è disponibile una nuova implementazione di Gruppo utenti 
 
 >[!NOTE]
 >
->Per semplicità, in questa documentazione verrà utilizzata l’abbreviazione CUG.
+>Per semplicità, in questa documentazione viene utilizzata l’abbreviazione CUG.
 
 L’obiettivo della nuova implementazione è quello di coprire le funzionalità esistenti quando necessario, affrontando al contempo i problemi e le limitazioni di progettazione delle versioni precedenti. Il risultato è un nuovo design CUG con le seguenti caratteristiche:
 
@@ -207,7 +207,7 @@ Il nuovo tipo di criteri di controllo di accesso per limitare l’accesso in let
 
 #### Imposta un nuovo criterio per gruppi utenti chiusi {#set-a-new-cug-policy}
 
-Codice per applicare un nuovo criterio CUG in un nodo in cui non è stato precedentemente impostato un CUG. Tieni presente che `getApplicablePolicies` restituirà solo i nuovi criteri non impostati in precedenza. Alla fine è necessario riscrivere la politica e mantenere i cambiamenti.
+Codice per applicare un nuovo criterio CUG in un nodo in cui non è stato precedentemente impostato un CUG. Tieni presente che `getApplicablePolicies` restituisce solo i nuovi criteri che non sono stati impostati in precedenza. Alla fine è necessario riscrivere la politica e mantenere i cambiamenti.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -243,7 +243,7 @@ session.save();
 
 #### Modifica un criterio del gruppo utenti chiusi esistente {#edit-an-existing-cug-policy}
 
-Per modificare un criterio CUG esistente sono necessari i seguenti passaggi. Si noti che è necessario riscrivere il criterio modificato e che le modifiche devono essere mantenute utilizzando `javax.jcr.Session.save()`.
+Per modificare un criterio CUG esistente sono necessari i seguenti passaggi. È necessario riscrivere il criterio modificato e le modifiche devono essere mantenute utilizzando `javax.jcr.Session.save()`.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -281,7 +281,7 @@ La gestione del controllo degli accessi JCR definisce un metodo ottimale per rec
 
 >[!NOTE]
 >
->Si noti la differenza tra `getEffectivePolicies` e il seguente esempio di codice che risale la gerarchia per trovare se un determinato percorso fa già parte di un CUG esistente.
+>La differenza tra `getEffectivePolicies` e il seguente esempio di codice che risale la gerarchia per trovare se un determinato percorso fa già parte di un CUG esistente.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -338,7 +338,7 @@ La creazione, la modifica o la rimozione di un nuovo requisito di autenticazione
 
 #### Aggiunta di un nuovo requisito di autenticazione {#adding-a-new-auth-requirement}
 
-Di seguito sono riportati i passaggi per creare un nuovo requisito di autenticazione. Il requisito verrà registrato con Apache Sling Authenticator solo se `RequirementHandler` è stato configurato per la struttura contenente il nodo di destinazione.
+Di seguito sono riportati i passaggi per creare un requisito di autenticazione. Il requisito viene registrato con Apache Sling Authenticator solo se `RequirementHandler` è stato configurato per la struttura contenente il nodo di destinazione.
 
 ```java
 Node targetNode = [...]
@@ -349,7 +349,7 @@ session.save();
 
 #### Aggiungi un nuovo requisito di autenticazione con percorso di accesso {#add-a-new-auth-requirement-with-login-path}
 
-Passaggi per creare un nuovo requisito di autenticazione, incluso un percorso di accesso. Il requisito e l’esclusione per il percorso di accesso verranno registrati con Apache Sling Authenticator solo se `RequirementHandler` è stato configurato per la struttura contenente il nodo di destinazione.
+Passaggi per creare un requisito di autenticazione che include un percorso di accesso. Il requisito e l’esclusione per il percorso di accesso verranno registrati con Apache Sling Authenticator solo se `RequirementHandler` è stato configurato per la struttura contenente il nodo di destinazione.
 
 ```java
 Node targetNode = [...]
@@ -768,7 +768,7 @@ La configurazione dei CUG insieme a Live Copy è rappresentata nell’archivio d
 
 Entrambi questi elementi vengono creati nel `cq:Page`. Con la progettazione corrente, MSM gestisce solo nodi e proprietà che si trovano sotto `cq:PageContent` (`jcr:content`).
 
-Pertanto, non è possibile eseguire il rollout dei gruppi CUG in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione delle Live Copy.
+Pertanto, non è possibile eseguire il rollout dei gruppi CUG in Live Copy da Blueprint. Pianifica tutto questo durante la configurazione della Live Copy.
 
 ## Modifiche con la nuova implementazione CUG {#changes-with-the-new-cug-implementation}
 

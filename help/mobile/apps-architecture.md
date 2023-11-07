@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Il rendering del corpo di una pagina di Angular viene eseguito in modo diverso a
 
 In modalità di authoring, ogni singola pagina viene riprodotta separatamente. Angular non gestisce l’instradamento tra le pagine e non viene utilizzato un ng-view per caricare un modello parziale che contiene i componenti della pagina. Il contenuto del modello della pagina (template.jsp) viene invece incluso sul lato server tramite `cq:include` tag.
 
-Questa strategia consente di abilitare le funzioni di authoring (ad esempio l’aggiunta e la modifica di componenti nel Sidekick paragrafo, nel sistema, nella modalità progettazione e così via) per funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in modalità di creazione AEM.
+Questa strategia consente alle funzioni di authoring (come l’aggiunta e la modifica di componenti nel Sidekick paragrafo, nel sistema, nella modalità progettazione e così via) di funzionare senza modifiche. Le pagine che si basano sul rendering lato client, come quelle per le app, non funzionano bene in modalità di creazione AEM.
 
 L’inclusione template.jsp è racchiusa in un `div` elemento che contiene `ng-controller` direttiva. Questa struttura consente il collegamento dei contenuti DOM al controller. Pertanto, anche se le pagine che si presentano sul lato client hanno esito negativo, i singoli componenti che lo fanno funzionano correttamente (vedi la sezione sui Componenti di seguito).
 
@@ -144,7 +144,7 @@ Lo script controller.js.jsp genera il frammento del controller per ogni pagina. 
 ])
 ```
 
-Tieni presente che `data` alla variabile viene assegnata la promessa restituita dall&#39;Angular `$http.get` metodo. Ogni componente incluso in questa pagina può, se necessario, rendere disponibile del contenuto .json (tramite il relativo script angular.json.jsp) e agire sul contenuto di questa richiesta quando viene risolta. La richiesta è molto veloce sui dispositivi mobili perché accede semplicemente al file system.
+Il `data` alla variabile viene assegnata la promessa restituita dall&#39;Angular `$http.get` metodo. Ogni componente incluso in questa pagina può, se necessario, rendere disponibile del contenuto .json (tramite il relativo script angular.json.jsp) e agire sul contenuto di questa richiesta quando viene risolta. La richiesta è molto veloce sui dispositivi mobili perché accede semplicemente al file system.
 
 Affinché un componente possa far parte del controller in questo modo, è necessario estendere il componente /libs/mobileapps/components/angular/ng-component e includere `frameworkType: angular` proprietà.
 
@@ -367,7 +367,7 @@ La directory www contiene tutti i contenuti web (file HTML, JS e CSS) che implem
 
 #### www/config.xml {#www-config-xml}
 
-Documentazione di PhoneGap (`https://docs.phonegap.com`) fa riferimento a questo file come a un &quot;file di configurazione globale&quot;. Il file config.xml contiene molte proprietà dell’app, come il nome dell’app, le preferenze dell’app (ad esempio se una visualizzazione web di iOS consente o meno l’overscroll) e le dipendenze dei plug-in che sono *solo* utilizzato da PhoneGap Build.
+Documentazione di PhoneGap (`https://docs.phonegap.com`) fa riferimento a questo file come a un &quot;file di configurazione globale&quot;. Il file config.xml contiene molte proprietà dell’app, come il nome dell’app, le preferenze dell’app (ad esempio, se una visualizzazione web di iOS consente o meno l’overscroll) e le dipendenze dei plug-in che sono *solo* utilizzato da PhoneGap Build.
 
 Il file config.xml è un file statico in AEM ed è esportato così com’è tramite Content Sync.
 

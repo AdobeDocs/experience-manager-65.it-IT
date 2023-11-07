@@ -3,7 +3,7 @@ title: Utilizza la modalità Layout per ridimensionare i componenti per la comun
 description: Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 1%
@@ -25,12 +25,12 @@ Puoi utilizzare la modalità Layout per ridimensionare i componenti per tutti i 
 Seleziona **Layout** dall’elenco a discesa visualizzato nella parte superiore dell’interfaccia di authoring di comunicazione interattiva accanto al **Anteprima** opzione. Il modulo viene visualizzato in modalità Layout.
 
 1. Accedi all’istanza di authoring dell’AEM e passa a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
-1. Crea un nuovo elemento o apri un elemento esistente [Comunicazione interattiva](../../forms/using/create-interactive-communication.md).
+1. Creare un [Comunicazione interattiva](../../forms/using/create-interactive-communication.md) o aprirne uno esistente.
 1. Seleziona **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore accanto al **Anteprima** opzione. Il modulo viene visualizzato in modalità Layout.
 
    ![Modalità Layout per le comunicazioni interattive](assets/layout_mode_ic_new.png)
 
-## Ridimensiona i componenti {#resize-components}
+## Ridimensionare i componenti {#resize-components}
 
 1. In modalità Layout, tocca il componente per ridimensionarlo. I punti blu vengono visualizzati all’inizio e alla fine della griglia reattiva.
 1. Trascina i punti blu per definire la posizione del componente nella griglia reattiva.

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1250'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ Il componente di accesso può essere utilizzato per raccogliere le informazioni 
 
 Questo fornisce al visitatore i campi standard di **Nome utente** e **Password**, con un **Login** per attivare la procedura di accesso quando vengono immesse le credenziali.
 
-Ad esempio, gli utenti possono effettuare l’accesso o creare un nuovo account utilizzando **Accedi** sulla barra degli strumenti del Geometrixx, che utilizza la pagina:
+Ad esempio, gli utenti possono effettuare l’accesso o creare un account utilizzando **Accedi** sulla barra degli strumenti del Geometrixx, che utilizza la pagina:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -94,12 +94,12 @@ A seconda del modulo di registrazione, il visitatore potrebbe avere delle inform
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Per visualizzare i dettagli del profilo, fai clic su **Il mio profilo** nell’angolo in alto a destra di qualsiasi pagina, ad esempio con `admin` account:
+Per visualizzare i dettagli del profilo, fai clic su **Il mio profilo** nell’angolo in alto a destra di qualsiasi pagina; ad esempio, con `admin` account:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 È possibile visualizzare un altro profilo utilizzando [contesto client](/help/sites-administering/client-context.md) (nell’ambiente di authoring e con privilegi sufficienti):
 
-1. Apri una pagina; ad esempio la pagina Geometrixx:
+1. Apri una pagina; ad esempio, la pagina Geometrixx:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
@@ -163,7 +163,7 @@ Questa operazione viene eseguita con:
 
   Gestire le azioni relative agli stati.
 
-È possibile definire più stati, ad esempio in Geometrixx:
+È possibile definire più stati; ad esempio, in Geometrixx questi includono:
 
 * iscrizione (o annullamento) a notifiche su newsletter o thread di commenti
 * aggiunta e rimozione di una connessione a un amico

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4143'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Il servizio Forms può eseguire script durante il rendering del modulo. Di conse
 
 Quando si esegue il rendering di moduli HTML che contengono sia funzionalità di spostamento tra pagine che script di moduli (ad esempio, si supponga che uno script recuperi i dati di campo da un database ogni volta che viene eseguito il rendering del modulo), assicurarsi che lo script del modulo si trovi nell&#39;evento form:calculal posto del form:readyevent.
 
-Gli script di modulo che si trovano nell&#39;evento form:ready vengono eseguiti una sola volta durante il rendering iniziale del modulo e non vengono eseguiti per i recuperi di pagina successivi. Al contrario, l’evento form:calculate viene eseguito per ogni navigazione della pagina in cui viene eseguito il rendering del modulo.
+Gli script di modulo presenti nell&#39;evento form:ready vengono eseguiti una sola volta durante il rendering iniziale del modulo e non vengono eseguiti per i recuperi di pagina successivi. Al contrario, l’evento form:calculate viene eseguito per ogni navigazione della pagina in cui viene eseguito il rendering del modulo.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Durante la creazione di progettazioni di moduli da riprodurre come HTML, è nece
 
 Gli script eseguiti sul client o sia sul client che sul server devono essere scritti all&#39;interno del sottoinsieme XFA. Gli script eseguiti sul server possono utilizzare il modello di script XFA completo e anche FormCalc. Per informazioni sull’utilizzo di JavaScript, consulta [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it).
 
-Quando si eseguono gli script sul client, solo il pannello corrente visualizzato può utilizzare gli script; ad esempio, non è possibile eseguire script per i campi che si trovano nel pannello A quando viene visualizzato il pannello B. Durante l’esecuzione di script sul server, è possibile accedere a tutti i pannelli.
+Quando si eseguono gli script sul client, solo il pannello corrente visualizzato può utilizzare gli script; ad esempio, non è possibile eseguire script per i campi presenti nel pannello A quando viene visualizzato il pannello B. Durante l’esecuzione di script sul server, è possibile accedere a tutti i pannelli.
 
 È inoltre necessario prestare attenzione quando si utilizzano espressioni SOM (Scripting Object Model) all&#39;interno di script eseguiti sul client. Solo un sottoinsieme semplificato di espressioni SOM è supportato dagli script eseguiti sul client.
 

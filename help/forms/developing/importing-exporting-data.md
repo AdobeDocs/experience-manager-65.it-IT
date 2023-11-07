@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2771'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Per importare dati in un modulo PDF, è necessario fare riferimento a un modulo 
 
 **Riferimento a un&#39;origine dati XML**
 
-Per importare i dati del modulo, è necessario fare riferimento a un&#39;origine dati valida. Per importare dati in un modulo XML XFA creato in Designer, è necessario utilizzare un&#39;origine dati XML XDP. Se si fa riferimento a un modulo di Acrobat, è necessario utilizzare un&#39;origine dati XFDF. Per ogni campo in cui si desidera importare i dati, è necessario specificare un valore. Se un elemento presente nell&#39;origine dati XML non corrisponde a un campo del modulo, l&#39;elemento verrà ignorato.
+Per importare i dati del modulo, è necessario fare riferimento a un&#39;origine dati valida. Per importare dati in un modulo XML XFA creato in Designer, è necessario utilizzare un&#39;origine dati XML XDP. Se si fa riferimento a un modulo di Acrobat, è necessario utilizzare un&#39;origine dati XFDF. Per ogni campo in cui si desidera importare i dati, è necessario specificare un valore. Se un elemento nell&#39;origine dati XML non corrisponde a un campo nel modulo, l&#39;elemento verrà ignorato.
 
 **Importare dati nel modulo PDF**
 
@@ -177,7 +177,7 @@ Importa i dati del modulo utilizzando l’API di integrazione dei dati del modul
    * Il `com.adobe.idp.Document` oggetto che memorizza il modulo PDF.
    * Il `com.adobe.idp.Document` oggetto che memorizza i dati del modulo.
 
-   Il `importData` il metodo restituisce un `com.adobe.idp.Document` oggetto che memorizza un modulo PDF contenente i dati presenti nell&#39;origine dati XML.
+   Il `importData` il metodo restituisce un `com.adobe.idp.Document` oggetto che memorizza un modulo PDF contenente i dati nell&#39;origine dati XML.
 
 1. Salvare il modulo PDF come file PDF.
 
@@ -242,7 +242,7 @@ Importa i dati del modulo utilizzando l’API di integrazione dei dati del modul
    * Il `BLOB` oggetto che memorizza il modulo PDF.
    * Il `BLOB` oggetto che memorizza i dati del modulo.
 
-   Il `importData` il metodo restituisce un `BLOB` oggetto che memorizza un modulo PDF contenente i dati presenti nell&#39;origine dati XML.
+   Il `importData` il metodo restituisce un `BLOB` oggetto che memorizza un modulo PDF contenente i dati nell&#39;origine dati XML.
 
 1. Salvare il modulo PDF come file PDF.
 

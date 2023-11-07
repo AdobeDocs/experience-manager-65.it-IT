@@ -4,10 +4,10 @@ description: Scopri come utilizzare la console Assets per gestire i frammenti di
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 80%
+source-wordcount: '1714'
+ht-degree: 77%
 
 ---
 
@@ -78,7 +78,7 @@ Il metodo per creare un frammento di contenuto è:
 
       * **Nome**
 
-        Il nome; verrà utilizzato per formare l’URL.
+        Il nome; viene utilizzato per formare l’URL.
 
         Obbligatorio; deriverà automaticamente dal titolo, ma può essere aggiornato.
 
@@ -186,7 +186,7 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
 
 * Sotto il nome del frammento è possibile visualizzare il nome del [Modello per frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md) utilizzato per creare il frammento corrente:
 
-   * Il nome funge anche da collegamento per aprire l’editor modelli.
+   * Il nome è anche un collegamento che apre l’editor modelli.
 
 * Consulta lo stato del frammento; ad esempio, per informazioni su quando è stato creato, modificato o pubblicato.
 
@@ -237,7 +237,7 @@ L’editor dispone di diverse opzioni:
   >
   >Oltre al semplice salvataggio delle modifiche, le azioni aggiornano anche i riferimenti e garantiscono che il Dispatcher venga svuotato come richiesto. L’elaborazione di queste modifiche può richiedere del tempo. Per questo motivo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni, complesso o con un carico elevato.
   >
-  >Tieni presente questo aspetto se utilizzi **Salva e chiudi** per poi riaprire immediatamente l’editor frammento per apportare e salvare ulteriori modifiche.
+  >Tieni presente questo aspetto quando utilizzi **Salva e chiudi** quindi torna rapidamente all’editor frammento per apportare e salvare ulteriori modifiche.
 
 * **Chiudi**
 
@@ -319,7 +319,7 @@ Esempio:
 
 L’azione **Confronta con corrente** è disponibile nella [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) dopo aver selezionato una versione specifica.
 
-Si aprirà:
+Verrà aperto:
 
 * la versione **Corrente** (più recente) (a sinistra)
 

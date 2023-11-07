@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1575'
 ht-degree: 0%
 
 ---
@@ -108,14 +108,14 @@ Se stai configurando l’autenticazione per un dominio enterprise o ibrido e sel
 
 Se si utilizza l&#39;associazione degli artefatti, sono necessarie le seguenti proprietà personalizzate.
 
-* Aggiungi la seguente proprietà personalizzata per specificare un nome utente che rappresenti il provider di servizi AEM forms, che verrà utilizzato per l’autenticazione al servizio IDP Artifact Resolution.
-   `saml.idp.resolve.username=<username>`
+* Aggiungi la seguente proprietà personalizzata per specificare un nome utente che rappresenti il provider di servizi AEM forms, utilizzato per l’autenticazione nel servizio IDP Artifact Resolution.
+  `saml.idp.resolve.username=<username>`
 
 * Aggiungi la seguente proprietà personalizzata per specificare la password per l’utente specificato in `saml.idp.resolve.username`.
-   `saml.idp.resolve.password=<password>`
+  `saml.idp.resolve.password=<password>`
 
 * Aggiungi la seguente proprietà personalizzata per consentire al provider di servizi di ignorare la convalida del certificato durante la creazione della connessione con il servizio di risoluzione degli artefatti tramite SSL.
-   `saml.idp.resolve.ignorecert=true`
+  `saml.idp.resolve.ignorecert=true`
 
 ### Impostazioni personalizzate {#custom-settings}
 

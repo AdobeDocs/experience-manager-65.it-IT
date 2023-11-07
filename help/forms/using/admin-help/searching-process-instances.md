@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Immettere i criteri di base per eseguire una ricerca generale. Se si immettono p
    * Nell&#39;elenco Filtro selezionare un operatore.
    * Nella casella Valore digitare un valore appropriato per l&#39;attributo selezionato.
 
-1. Per aggiungere un’altra riga, seleziona Altri filtri. Vengono visualizzati un altro set di elenchi Attributo, Filtro e Valore e un elenco Condizione.
+1. Per aggiungere un’altra riga, seleziona Altri filtri. Viene visualizzato un altro insieme di elenchi Attributo, Filtro e Valore e un elenco Condizione.
 1. In Condizione, seleziona AND o OR. Ripetere i passaggi da 1 a 3 per limitare ulteriormente la ricerca.
 1. Per aggiungere o rimuovere righe, fare clic su Altri filtri o su Meno filtri. Puoi avere da una a quattro righe.
 1. Fai clic su Cerca. Viene visualizzata la pagina Istanza processo, in cui sono elencate le istanze trovate.

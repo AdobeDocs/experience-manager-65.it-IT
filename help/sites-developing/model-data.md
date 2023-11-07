@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Ulteriori vincoli sui dati, come i vincoli obbligatori o di tipo e valore, devon
 
 #### Esempio {#example-1}
 
-L’esempio precedente di utilizzo di una `lastModified` La proprietà Date sul nodo, ad esempio &quot;post di blog&quot;, in realtà non significa che sia necessario un tipo di nodo speciale. Userei sicuramente `nt:unstructured` almeno inizialmente per i nodi del post di blog. Dato che nella mia applicazione di blog, tutto quello che farò è visualizzare la data ultima modificata comunque (possibilmente &quot;ordina per&quot;) Mi importa a malapena se è una data affatto. Poiché implicitamente mi fido della mia applicazione di scrittura di blog per mettere un &quot;data&quot; lì comunque, non c&#39;è davvero bisogno di dichiarare la presenza di un `lastModified` data sotto forma di un tipo di nodo.
+L’esempio precedente di utilizzo di una `lastModified` La proprietà Date su, ad esempio, nodo &quot;post di blog&quot;, in realtà non significa che sia necessario un tipo di nodo speciale. Userei sicuramente `nt:unstructured` almeno inizialmente per i nodi del post di blog. Dato che nella mia applicazione di blog, tutto quello che farò è visualizzare la data ultima modificata comunque (possibilmente &quot;ordina per&quot;) Mi importa a malapena se è una data affatto. Poiché implicitamente mi fido della mia applicazione di scrittura di blog per mettere un &quot;data&quot; lì comunque, non c&#39;è davvero bisogno di dichiarare la presenza di un `lastModified` data sotto forma di un tipo di nodo.
 
 ### Regola #2: guida la gerarchia dei contenuti; evitare che ciò accada. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 

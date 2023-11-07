@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5375'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Nella tabella seguente sono elencati i file presenti nella cartella secondaria c
   </tr>
   <tr>
    <td>bootstrap.css</td>
-   <td>Stili comuni, definiti da Twitter Bootstrap.</td>
+   <td>Stili comuni, definiti dalla Bootstrap di Twitter.</td>
    <td>N/D</td>
   </tr>
   <tr>
@@ -187,7 +187,7 @@ Includi il seguente codice nella JSP che definisce `head` sezione:
 
 `<cq:include script="/libs/wcm/mobile/components/simulator/simulator.jsp"/>`
 
-Per visualizzare un esempio, apri `/apps/weretail/components/page/head.jsp` file in CRXDE Lite.
+Per visualizzare un esempio, apri `/apps/weretail/components/page/head.jsp` file in CRXDE Liti.
 
 ### Registrazione dei componenti Pagina per la simulazione {#registering-page-components-for-simulation}
 
@@ -352,7 +352,7 @@ Quando il browser carica la pagina, richiede l’immagine utilizzando il valore 
 
 Il `image_0` il nodo ha un `jcr:resourceType` valore di `foundation/components/image`, che ha un `sling:resourceSuperType` valore di `foundation/components/parbase`. Il componente parbase include lo script img.GET.java che corrisponde al selettore e l’estensione del nome file dell’URL della richiesta. CQ utilizza questo script (servlet) per riprodurre l’immagine.
 
-Per visualizzare il codice sorgente dello script, utilizza CRXDE Lite per aprire `/libs/foundation/components/parbase/img.GET.java`
+Per visualizzare il codice sorgente dello script, utilizza CRXDE Liti per aprire `/libs/foundation/components/parbase/img.GET.java`
 file.
 
 ## Ridimensionamento delle immagini per le dimensioni correnti del riquadro di visualizzazione {#scaling-images-for-the-current-viewport-size}
@@ -929,20 +929,20 @@ Il CSS include una serie di query multimediali che utilizzano la seguente strutt
 
 Utilizza il seguente algoritmo come punto di partenza per sviluppare le classi di elementi e gli stili CSS per le pagine.
 
-1. Definisci un nome di classe per l’elemento div che contiene tutte le righe, ad esempio `content.`
+1. Definisci un nome di classe per l’elemento div che contiene tutte le righe, ad esempio: `content.`
 1. Definisci una classe CSS per gli elementi div che rappresentano righe, ad esempio `row-fluid`.
 1. Definisci i nomi delle classi per gli elementi dei blocchi di contenuto. È necessaria una classe per tutte le larghezze possibili, in termini di intervalli di colonne. Ad esempio, utilizza `span3` classe per `div` elementi che si estendono su tre colonne, utilizza `span4` classi per intervalli di quattro colonne. Definisci tutte le classi presenti nella griglia.
 
 1. Per ogni dimensione del riquadro di visualizzazione di destinazione, aggiungi la query multimediale corrispondente al file CSS. Aggiungi i seguenti elementi in ciascuna query multimediale:
 
    * Un selettore per `content` classe, ad esempio `.content{}`.
-   * Selettori per ciascuna classe di estensione, ad esempio `.span3{ }`.
+   * Selettori per ciascuna classe di estensione, ad esempio: `.span3{ }`.
    * Un selettore per `row-fluid` classe, ad esempio `.row-fluid{ }`
-   * Selettori per le classi di estensione che si trovano all’interno di classi riga-fluido, ad esempio `.row-fluid span3 { }`.
+   * I selettori per le classi di estensione che si trovano all’interno di classi riga-fluido, ad esempio `.row-fluid span3 { }`.
 
 1. Aggiungi stili di larghezza per ciascun selettore:
 
-   1. Imposta la larghezza di `content` alle dimensioni assolute della pagina, ad esempio `width:480px`.
+   1. Imposta la larghezza di `content` alle dimensioni assolute della pagina, ad esempio, `width:480px`.
    1. Imposta la larghezza di tutti i selettori di fluidi di riga su 100%.
    1. Imposta la larghezza di tutti i selettori di estensione sulla larghezza assoluta del blocco di contenuto. Una griglia banale utilizza colonne distribuite in modo uniforme della stessa larghezza: `(absolute width of page)/(number of columns)`.
    1. Imposta la larghezza del `.row-fluid .span` selettori come percentuale della larghezza totale. Calcola questa larghezza utilizzando `(absolute span width)/(absolute page width)*100` formula.

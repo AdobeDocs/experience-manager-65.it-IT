@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -69,11 +69,11 @@ Il seguente esempio di codice Java™ crea un’applicazione utilizzando l’API
  * 19. xbean.jar (required for SOAP mode)
  * 20. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -167,11 +167,11 @@ Il seguente esempio di codice Java™ esporta un’applicazione utilizzando l’
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -248,7 +248,7 @@ Il seguente esempio di codice Java™ importa un’applicazione utilizzando l’
 
 >[!NOTE]
 >
-ImportApplication() dell’API Java™ sostituisce le applicazioni esistenti con lo stesso nome con le applicazioni più recenti. Per aggiornare un’applicazione esistente, utilizza API importApplication() invece di API updateApplication().
+ImportApplication() API Java™ sostituisce le applicazioni esistenti con lo stesso nome con applicazioni più recenti. Per aggiornare un’applicazione esistente, utilizza API importApplication() invece di API updateApplication().
 
 ```java
 /*
@@ -274,11 +274,11 @@ ImportApplication() dell’API Java™ sostituisce le applicazioni esistenti con
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -357,11 +357,11 @@ Il seguente esempio di codice Java™ ottiene un’applicazione utilizzando l’
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -466,11 +466,11 @@ Il seguente esempio di codice Java™ ottiene le applicazioni utilizzando l’AP
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -561,11 +561,11 @@ public class GetApplications_SOAP {
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -668,11 +668,11 @@ Il seguente esempio di codice Java™ è per visualizzare in anteprima l’archi
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  */
 package com.adobe.idp.dsc.applicationmanager;
@@ -747,11 +747,11 @@ Il seguente esempio di codice Java™ è per l&#39;eliminazione di un archivio d
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *

@@ -5,7 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -61,7 +61,7 @@ In questo esempio, l’azienda dispone di un uplink a 10 Gb/s. Dovrebbe essere a
 
 Questo è il più piccolo punto di soffocamento orientato al cliente. Tuttavia, è possibile valutare una modifica o configurare un elenco Consentiti con il gruppo di operazioni di rete responsabile di questo firewall.
 
-Dai diagrammi di esempio si può concludere che sei dispositivi condividono un canale concettuale di 10 Mbps. A seconda dell’entità delle attività utilizzate come leva finanziaria, ciò potrebbe non essere adeguato a soddisfare le aspettative degli utenti.
+Dai diagrammi di esempio si può concludere che sei dispositivi condividono un canale concettuale di 10 Mbps. A seconda delle dimensioni delle risorse utilizzate, questo valore potrebbe non essere adeguato a soddisfare le aspettative degli utenti.
 
 ## Topologia del [!DNL Experience Manager] ambiente {#topology-of-the-aem-environment}
 
@@ -69,7 +69,7 @@ Dai diagrammi di esempio si può concludere che sei dispositivi condividono un c
 
 Progettazione della topologia di [!DNL Experience Manager] L&#39;ambiente richiede una conoscenza approfondita della configurazione del sistema e del modo in cui la rete viene connessa all&#39;interno dell&#39;ambiente utente.
 
-Lo scenario di esempio include una farm di pubblicazione con cinque server, un archivio binario S3 e Dynamic Media configurato.
+Lo scenario di esempio include una farm di pubblicazione con cinque server, un archivio binario S3 e Dynamic Medie configurato.
 
 Il dispatcher condivide la propria connessione a 100 Mbps con due entità, il mondo esterno e [!DNL Experience Manager] distribuzione. Per operazioni di caricamento e download simultanee, è necessario dividere questo numero per due. Lo storage esterno collegato utilizza una connessione separata.
 

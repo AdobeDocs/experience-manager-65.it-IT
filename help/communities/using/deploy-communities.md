@@ -3,7 +3,7 @@ title: Distribuzione delle community
 description: Come distribuire AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1761'
 ht-degree: 2%
@@ -150,7 +150,7 @@ Per installare i pacchetti visibili in `adobeaemcloud.com` in un&#39;istanza AEM
 * Seleziona la **Risorse** scheda
 * Seleziona **scarica su disco**
 
-Nell’istanza AEM locale, utilizza un Gestore pacchetti (ad esempio [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), per caricare nell’archivio dei pacchetti AEM locale.
+Nell’istanza AEM locale, utilizza un Gestore pacchetti (ad esempio, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), per caricare nell’archivio dei pacchetti AEM locale.
 
 In alternativa, è possibile accedere al pacchetto utilizzando Condivisione pacchetti dall’istanza AEM locale (ad esempio, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), il `Download` viene scaricato nell’archivio dei pacchetti dell’istanza AEM locale.
 

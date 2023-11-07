@@ -12,7 +12,7 @@ discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 feature: Mobile Forms
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Puoi collegare widget personalizzati a un Forms mobile. È possibile estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetti. Il motore XFA utilizza vari widget, vedi [Framework di aspetto per moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md) per informazioni dettagliate.
 
-![Un esempio di widget predefinito e personalizzato](assets/custom-widgets.jpg)
+![Esempio di widget predefinito e personalizzato](assets/custom-widgets.jpg)
 
-Un esempio di widget predefinito e personalizzato
+Esempio di widget predefinito e personalizzato
 
 ## Integrazione di widget personalizzati con moduli HTML5 {#integrating-custom-widgets-with-html-forms}
 
@@ -57,7 +57,7 @@ I moduli HTML5 forniscono un’implementazione del framework dei widget che può
   </tr>
   <tr>
    <td>getCommitValue</td>
-   <td>Il framework Widget carica la funzione ogni volta che il valore del widget viene salvato nel XFAModel (ad esempio all'evento di uscita di un textField). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l’opzione.</td>
+   <td>Il framework Widget carica la funzione ogni volta che il valore del widget viene salvato nel XFAModel (ad esempio, all'evento di uscita di un textField). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l’opzione.</td>
   </tr>
   <tr>
    <td>showValue</td>

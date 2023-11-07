@@ -8,10 +8,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: 6fe5e617ceac3c97a77de2d574ec370f30887330
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 6%
+source-wordcount: '335'
+ht-degree: 17%
 
 ---
 
@@ -35,8 +35,8 @@ Sono disponibili diverse versioni di Adobe Campaign Classic (ACC). Il supporto p
 | Versione ACC | Integrazione con AEM 6.5 <br>On-Premises | Integrazione con AEM 6.5<br>AMS |
 |---|---|---|
 | [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=it) | Supportato | Supportato |
-| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html) | Supportato | Supportato |
-| Interfaccia utente Web* | Supportato | Supportato |
+| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=it) | Supportato | Supportato |
+| Interfaccia utente web* | Funzione supportata | Funzione supportata |
 
 *L’interfaccia utente web per Adobe Campaign Classic è prevista per la fine del 2023.
 
@@ -51,7 +51,7 @@ La seguente documentazione aggiuntiva descrive come utilizzare l’integrazione.
 
 ## Integrazione con Adobe Campaign Standard {#acs}
 
-Integrazione di [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS) con AEM dipende dal fatto che l’AEM sia installato on-premise su in Adobe Manage Services (AMS).
+Integrazione di [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=it) (ACS) con AEM dipende dal fatto che l’AEM sia installato on-premise su in Adobe Manage Services (AMS).
 
 | Integrazione con AEM 6.5 <br>On-Premises | Integrazione con AEM 6.5<br>AMS |
 |---|---|

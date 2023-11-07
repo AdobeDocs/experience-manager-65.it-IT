@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 1%
@@ -89,11 +89,11 @@ Ciò significa che, quando è necessario specificare un indirizzo IP, è possibi
 
 * un indirizzo IPv6
 
-  ad esempio `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  ad esempio, `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * un indirizzo IPv4
 
-  ad esempio `https://123.1.1.4:4502`
+  ad esempio, `https://123.1.1.4:4502`
 
 * un nome server
 
@@ -287,7 +287,7 @@ Consulta la [Nozioni di base sulla personalizzazione dei rapporti](/help/sites-a
 
 CQ invia notifiche e-mail agli utenti che:
 
-* Ti sei iscritto agli eventi di pagina, ad esempio modifica o replica.
+* Si sono abbonati a eventi di pagina, ad esempio modifiche o repliche.
 * Ti sei iscritto agli eventi del forum.
 * Devi eseguire un passaggio in un flusso di lavoro.
 

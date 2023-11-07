@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1707'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Per ulteriori informazioni sulla directory GDS, vedi [Preparazione all’install
 
 **Posizione della directory System Fonts** Digitare il percorso della directory dei font fornita dal sistema operativo. È possibile aggiungere più directory, separate da un punto e virgola **;**.
 
-**Percorso del file di configurazione dei servizi dati** Specifica la posizione del file services-config.xml. Per impostazione predefinita, questo file è incorporato nel file adobe-core-appserver.ear e non è accessibile all’utente. Una copia del file services-config.xml predefinito si trova in [directory principale di aem-forms]\sdk\misc\DataServices\Server-Configuration. Se il file è stato modificato e spostato, digitare la nuova posizione in questo campo.
+**Percorso del file di configurazione dei servizi dati** Specifica la posizione del file services-config.xml. Per impostazione predefinita, questo file è incorporato nel file adobe-core-appserver.ear e non è accessibile all’utente. Una copia del file services-config.xml predefinito è in [directory principale di aem-forms]\sdk\misc\DataServices\Server-Configuration. Se il file è stato modificato e spostato, digitare la nuova posizione in questo campo.
 
 Il file di configurazione dei servizi dati consente di personalizzare le impostazioni dei servizi dati, ad esempio il tipo di autenticazione e l&#39;output di debug.
 
@@ -111,7 +111,7 @@ Abilita questa opzione negli ambienti di sviluppo, in cui gli sviluppatori utili
 
 **Abilitare l&#39;archiviazione dei documenti nel database** Selezionare questa opzione per memorizzare i documenti di lunga durata nel database dei moduli AEM. L&#39;attivazione di questa opzione non elimina la necessità di una directory GDS. Tuttavia, la scelta di questa opzione semplifica i backup dei moduli AEM. Se si utilizza solo il GDS, un backup comporta l’attivazione della modalità di backup del sistema AEM formsAEM Forms e il completamento dei backup del database e del GDS. Se si seleziona l&#39;opzione del database, il backup comporta il completamento del backup del database per una nuova installazione o il completamento del backup del database e del backup unico del GDS per un aggiornamento. Potrebbe essere necessaria una gestione aggiuntiva del database per eliminare processi e dati rispetto a una configurazione che utilizza solo GDS. Consultate Opzioni di backup quando il database viene utilizzato per l&#39;archiviazione dei documenti.
 
-**Abilita statistiche di chiamata DSC** Quando questa opzione è selezionata, l’AEM forma tiene traccia delle statistiche sulle chiamate, ad esempio il numero di chiamate, il tempo impiegato per richiamare e il numero di errori nelle chiamate. Queste informazioni vengono memorizzate in un bean JMX in modo da poter utilizzare Java™ JConsole o software di terze parti per esaminare le statistiche. Se non desideri visualizzare queste statistiche, deseleziona questa opzione per migliorare le prestazioni dei moduli AEM.
+**Abilita statistiche di chiamata DSC** Quando questa opzione è selezionata, l’AEM forma tiene traccia delle statistiche sulle chiamate, ad esempio il numero di chiamate, il tempo impiegato per richiamare e il numero di errori nelle chiamate. Queste informazioni vengono memorizzate in un bean JMX in modo da poter utilizzare Java™ JConsole o un software di terze parti per esaminare le statistiche. Se non desideri visualizzare queste statistiche, deseleziona questa opzione per migliorare le prestazioni dei moduli AEM.
 
 **Abilita RDS** Selezionando questa opzione viene attivato il servlet Servizi di sviluppo remoto (RDS) nei moduli AEM. Quando questa opzione è abilitata, gli strumenti lato client possono interagire con Data Services per eseguire operazioni quali la distribuzione o l’annullamento della distribuzione di modelli per creare destinazioni ed endpoint o per individuare i modelli distribuiti negli endpoint. Per impostazione predefinita, questa opzione non è selezionata.
 

@@ -8,9 +8,9 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '975'
 ht-degree: 2%
 
 ---
@@ -36,14 +36,14 @@ Quando il frammento di contenuto sorgente viene aggiornato o modificato, il fram
 Il flusso di lavoro Crea e traduci include le seguenti opzioni. Le fasi procedurali associate a ciascuna opzione sono simili a quelle associate all’opzione corrispondente per le risorse.
 
 * Crea solo struttura: per i passaggi della procedura, vedi [Crea struttura solo per le risorse](translation-projects.md#create-structure-only).
-* Creare un nuovo progetto di traduzione: per i passaggi della procedura, consulta [Crea un nuovo progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project).
+* Creare un progetto di traduzione: per i passaggi della procedura, consulta [Creare un progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project).
 * Aggiungi al progetto di traduzione esistente: per i passaggi della procedura, consulta [Aggiungi al progetto di traduzione esistente per le risorse](translation-projects.md#add-to-existing-translation-project).
 
 ## Flusso di lavoro Aggiorna copie per lingua {#update-language-copies-workflow}
 
 Il flusso di lavoro Aggiorna copie per lingua include le seguenti opzioni. Le fasi procedurali associate a ciascuna opzione sono simili a quelle associate all’opzione corrispondente per le risorse.
 
-* Creare un nuovo progetto di traduzione: per i passaggi della procedura, consulta [Crea un nuovo progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project) (aggiorna flusso di lavoro).
+* Creare un progetto di traduzione: per i passaggi della procedura, consulta [Creare un progetto di traduzione per le risorse](translation-projects.md#create-a-new-translation-project) (aggiorna flusso di lavoro).
 * Aggiungi al progetto di traduzione esistente: per i passaggi della procedura, consulta [Aggiungi al progetto di traduzione esistente per le risorse](translation-projects.md#add-to-existing-translation-project) (aggiorna flusso di lavoro).
 
 Puoi anche creare copie temporanee per i frammenti in una lingua diversa, nello stesso modo in cui crei copie temporanee per le risorse. Per ulteriori informazioni, consulta [Creazione di copie in lingua temporanea delle risorse](translation-projects.md#creating-temporary-language-copies).
@@ -159,4 +159,4 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    >[!NOTE]
    >
-   >Le procedure per aggiungere un frammento di contenuto a un progetto esistente o per eseguire flussi di lavoro di aggiornamento sono simili alle procedure corrispondenti per le risorse. Per ulteriori informazioni su queste procedure, fare riferimento alle procedure descritte per le risorse.
+   >Le procedure per aggiungere un frammento di contenuto a un progetto esistente o per eseguire flussi di lavoro di aggiornamento sono simili alle procedure corrispondenti per le risorse. Per informazioni su queste procedure, vedere le procedure descritte per le risorse.

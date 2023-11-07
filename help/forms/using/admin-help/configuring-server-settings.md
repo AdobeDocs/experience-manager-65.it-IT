@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Le pagine Notifiche attività e Notifiche amministratore offrono diverse funzion
 
 ### Editor Rich Text {#rich-text-editor}
 
-L’area Modello notifica è un editor Rich Text che consente di generare HTML per i messaggi di notifica e-mail. Fornisce le opzioni di formattazione del carattere e del paragrafo che si trovano sotto la casella Modello di notifica. Le opzioni disponibili includono tipo di carattere, dimensioni, stile e colore, nonché allineamento dei paragrafi e punti elenco.
+L’area Modello notifica è un editor Rich Text che consente di generare HTML per i messaggi di notifica e-mail. Fornisce le opzioni di formattazione del carattere e del paragrafo che si trovano sotto la casella Modello di notifica. Le opzioni disponibili includono tipo di carattere, dimensioni, stile e colore, allineamento dei paragrafi e punti elenco.
 
 ### Generazione URL {#url-generation}
 
@@ -187,11 +187,11 @@ Solo per le notifiche di attività, il flusso di lavoro di Forms include due con
 
 * OpenTask è disponibile per i tipi di notifica Promemoria e Assegnazione task. Questo URL fornisce un collegamento all’attività in Workspace, consentendo all’utente di accedere rapidamente all’attività dalla notifica e-mail. Quando si trascina l&#39;URL OpenTask nella casella Modello di notifica, l&#39;URL viene visualizzato nel formato seguente:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 * ClaimTask è disponibile per i tipi di notifica Gruppo - Promemoria e Gruppo - Assegnazione attività. Questo URL fornisce un collegamento alla pagina dei dettagli dell’attività in Workspace, in cui l’utente può inviare una richiesta di risarcimento o inoltrarla e aprire l’elemento di lavoro. Quando si trascina l&#39;URL ClaimTask nella casella Modello notifica, l&#39;URL viene visualizzato nel formato seguente:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 >[!NOTE]
 >

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '796'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ Flusso di lavoro generale per eliminare una raccolta:
 1. Seleziona l’articolo da eliminare nel **Gestisci raccolte** affiancare.
 1. Assicurati che sia selezionato nell’elenco, (seleziona gli altri da eliminare in base alle esigenze).
 1. Clic **Elimina** dalla barra delle azioni.
-1. Seleziona se desideri eliminare dall’AEM e da Mobile On-Demand.
+1. Seleziona questa opzione se desideri eliminarla da AEM e Mobile On-Demand.
 1. Fai clic su **Elimina**.
 1. La tua raccolta è stata rimossa dall&#39;elenco.
 

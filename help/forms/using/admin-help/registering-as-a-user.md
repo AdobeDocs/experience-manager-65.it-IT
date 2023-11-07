@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '699'
 ht-degree: 6%
 
 ---
@@ -24,13 +24,13 @@ Puoi utilizzare i documenti protetti tramite policy ricevuti da un utente di Doc
 * Un utente di Document Security che desidera inviarti un documento protetto tramite policy ti aggiunge a una policy.
 * Un amministratore di Document Security crea un account per te.
 
-   Dopo aver registrato e attivato l’account, puoi utilizzare i documenti protetti tramite policy che sei autorizzato a utilizzare tramite una policy. Se l’amministratore di document security abilita queste funzioni per gli utenti invitati, potresti disporre delle autorizzazioni necessarie per eseguire le seguenti attività:
+  Dopo aver registrato e attivato l’account, puoi utilizzare i documenti protetti tramite policy che sei autorizzato a utilizzare tramite una policy. Se l’amministratore di document security abilita queste funzioni per gli utenti invitati, potresti disporre delle autorizzazioni necessarie per eseguire le seguenti attività:
 
 * Protect consente di utilizzare i criteri di protezione dei documenti.
 * Creare criteri utente personalizzati da applicare ai documenti.
 * Invita altri utenti esterni a utilizzare un documento protetto tramite policy aggiungendoli alla policy.
 
-   Inoltre, quando ci si registra, non è necessario registrarsi nuovamente per utilizzare altri documenti protetti tramite policy. L&#39;account rimane attivo finché non viene disabilitato o eliminato dall&#39;amministratore dei criteri.
+  Inoltre, quando ci si registra, non è necessario registrarsi nuovamente per utilizzare altri documenti protetti tramite policy. L&#39;account rimane attivo finché non viene disabilitato o eliminato dall&#39;amministratore dei criteri.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ L&#39;account rimane attivo finché non viene disattivato o eliminato dall&#39;a
 
 ## Reimposta la password {#reset-your-password}
 
-Se la password viene dimenticata, l&#39;amministratore della policy potrà reimpostarla automaticamente. La reimpostazione di una password genera un messaggio e-mail che ti invita ad accedere utilizzando una password temporanea. È quindi possibile creare una nuova password.
+Se la password viene dimenticata, l&#39;amministratore della policy potrà reimpostarla automaticamente. La reimpostazione di una password genera un messaggio e-mail che ti invita ad accedere utilizzando una password temporanea. È quindi possibile creare un&#39;altra password.
 
 Per informazioni su come contattare un amministratore di document security per ottenere una nuova password, controlla l’avviso e-mail di attivazione o altri avvisi dell’organizzazione che ti ha invitato a registrarti.
 

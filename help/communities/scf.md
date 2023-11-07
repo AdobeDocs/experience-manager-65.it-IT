@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Per personalizzare o estendere i componenti, scrivi solo le sovrapposizioni e le
 * Per aggiungere l&#39;elaborazione personalizzata durante le operazioni:
    * Scrivi un [OperationExtension](server-customize.md#operationextension-class).
 * Per aggiungere un&#39;operazione personalizzata:
-   * Crea un nuovo [Operazione di post Sling](server-customize.md#postoperation-class).
+   * Creare un [Operazione di post Sling](server-customize.md#postoperation-class).
    * Usa esistente [OperationServices](server-customize.md#operationservice-class) secondo necessità.
    * Aggiungi il codice JavaScript per richiamare l’operazione dal lato client in base alle esigenze.
 
@@ -153,7 +153,7 @@ Il risultato è un nodo figlio JCR sotto un nodo par, che è indirizzabile Sling
 
 L&#39;inclusione di un componente si riferisce al processo di aggiunta di un riferimento a un [risorsa &quot;non esistente&quot;](srp.md#for-non-existing-resources-ners) (nessun nodo JCR) all’interno del modello, ad esempio utilizzando un linguaggio di script.
 
-A partire da Adobe Experience Manager (AEM) 6.1, quando un componente viene incluso dinamicamente invece che aggiunto, è possibile modificarne le proprietà nell’istanza di authoring *progettazione* modalità.
+A partire da Adobe Experience Manager (AEM) 6.1, quando un componente viene incluso dinamicamente invece che aggiunto, è possibile modificarne le proprietà nell’ambiente di authoring *progettazione* modalità.
 
 Solo alcuni componenti di AEM Communities possono essere inclusi in modo dinamico. Sono:
 

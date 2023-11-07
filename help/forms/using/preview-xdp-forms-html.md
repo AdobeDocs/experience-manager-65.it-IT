@@ -10,9 +10,9 @@ discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ Per consentire a Designer di generare l’anteprima HTML dei moduli XDP, esegui 
 
       * -/content/xfaforms
       * -/etc/clientlibs
+
    * AEM Forms su OSGi
 
       * -/content/xfaforms
@@ -78,6 +79,7 @@ Il [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attiv
       * `/content/xfaforms/profiles/default.html` (AEM Forms su OSGi)
 
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms su JEE)
+
    * **Contesto Forms Manager:** Percorso contestuale in cui viene distribuita l’interfaccia utente di Forms Manager. I valori predefiniti sono:
 
       * `/aem/forms` (AEM Forms su OSGi)
@@ -100,7 +102,8 @@ Il [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attiv
    >
    >    * Se la scheda Anteprima HTML è chiusa, premere F4 per aprire la scheda Anteprima HTML. Per aprire la scheda Anteprima HTML, è inoltre possibile selezionare Anteprima HTML dal menu Visualizza.
    >    * L&#39;anteprima HTML non supporta i documenti PDF, l&#39;anteprima HTML è solo per i documenti XDP.
-
+   >
+   >
 
    >[!CAUTION]
    >
@@ -120,6 +123,6 @@ Il test del modulo tramite un&#39;origine dati di esempio assicura che i dati e 
 
 1. Fai clic su **OK**. Alla successiva anteprima del modulo in **Anteprima HTML** , i valori dei dati del file XML di esempio verranno visualizzati nei rispettivi oggetti.
 
-## Anteprima dei moduli in un repository {#html-preview-of-forms-in-forms-manager}
+## Anteprima dei moduli in un archivio {#html-preview-of-forms-in-forms-manager}
 
-In AEM Forms è possibile visualizzare in anteprima moduli e documenti in un repository. L’anteprima consente di conoscere esattamente l’aspetto e il comportamento dei moduli in quanto verranno utilizzati dagli utenti finali.
+In AEM Forms è possibile visualizzare in anteprima moduli e documenti in un repository. L’anteprima consente di sapere esattamente come si presentano e si comportano i moduli per gli utenti finali.

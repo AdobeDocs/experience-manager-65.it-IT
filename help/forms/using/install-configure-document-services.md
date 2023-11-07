@@ -1,16 +1,12 @@
 ---
 title: Installazione e configurazione dei servizi documentali
-seo-title: Installing and configuring document services
 description: Installa AEM Forms Document Services per creare, assemblare, distribuire, archiviare documenti PDF, aggiungere firme digitali per limitare l’accesso ai documenti e decodificare i Forms in codice a barre.
-seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
-uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
-discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: fbfe38e9d669cd506b687a3fb81ad4ce9e7d65da
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5513'
+source-wordcount: '5512'
 ht-degree: 2%
 
 ---
@@ -519,7 +515,7 @@ Per configurare i certificati, effettua le seguenti operazioni:
 1. Il giorno **[!UICONTROL Modifica impostazioni utente]** , seleziona la **[!UICONTROL KeyStore]** scheda. Espandi **[!UICONTROL Aggiungi chiave privata da file di archivio chiavi]** e fornire un alias. L’alias viene utilizzato per eseguire l’operazione Estensioni di Reader.
 1. Per caricare il file del certificato, fai clic su **[!UICONTROL Seleziona file di archivio chiavi]** e carica un &lt;filename>file PFX.
 
-   Aggiungi il **[!UICONTROL Password archivio chiavi]**, **[!UICONTROL Password chiave privata]**, e **[!UICONTROL Alias chiave privata]** associato al certificato nei rispettivi campi. Clic **[!UICONTROL Invia]**.
+   Aggiungi il **[!UICONTROL Password archivio chiavi]**, **[!UICONTROL Password chiave privata]**, e **[!UICONTROL Alias chiave privata]** associato al certificato nei rispettivi campi. Fai clic su **[!UICONTROL Invia]**.
 
    >[!NOTE]
    >

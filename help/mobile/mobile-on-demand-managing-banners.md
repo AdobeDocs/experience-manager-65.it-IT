@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 1%
 
 ---
@@ -123,7 +123,7 @@ Flusso di lavoro generale per eliminare un banner:
 1. Selezionare il banner da eliminare nel **Gestisci banner** affiancare.
 1. Assicurati che sia selezionato nell’elenco (seleziona gli altri da eliminare in base alle esigenze).
 1. Clic **Elimina** dalla barra delle azioni.
-1. Seleziona se desideri eliminare dall’AEM e da Mobile On-Demand.
+1. Seleziona questa opzione se desideri eliminarla da AEM e Mobile On-Demand.
 1. Fai clic su **Elimina**.
 1. Il banner è stato rimosso dall&#39;elenco.
 

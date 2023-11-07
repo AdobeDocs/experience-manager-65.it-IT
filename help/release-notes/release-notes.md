@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 59d5c2574bf4298469152a3d55e7c1508eb2f1be
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4633'
+source-wordcount: '4632'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
    * MongoDB 4.4
    * Connettore JDBC MySQL 8
 
-Se stai installando o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE. Per esplorare l’elenco completo dei nuovi software aggiunti e obsoleti, consulta la documentazione di AEM Forms su JEE o AEM Forms su OSGi.
+Se stai installando o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE. Per un elenco completo dei nuovi software aggiunti e obsoleti, consulta la documentazione di AEM Forms su JEE o AEM Forms su OSGi.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 

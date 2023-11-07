@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ Le proprietà dell’AEM sono quelle con spazio dei nomi tra &quot;cq&quot;, &qu
 
    * un&#39;altra configurazione ContentSync
    * in un pacchetto di contenuti (utilizzerà la proprietà phonegap-exportTemplate per trovare la relativa configurazione ContentSync)
-   * a una risorsa mobile (i contenuti dell’app si trovano sotto tale risorsa e, se tali pacchetti di contenuto hanno una proprietà page-includeInBuild che è true, phonegap-exportTemplate verrà utilizzato per trovare la relativa configurazione ContentSync)
+   * a una risorsa mobile (i contenuti dell’app si trovano sotto tale risorsa e, se tali pacchetti di contenuto hanno una proprietà page-includeInBuild che è true, phonegap-exportTemplate viene utilizzato per trovare la relativa configurazione ContentSync)
 
 * ***autoCreateFirstUpdateBeforeImport - Booleano*** - se true, crea una **aggiorna** nella configurazione di destinazione prima dell’importazione se una volta non esiste già
 

@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4184'
+source-wordcount: '4181'
 ht-degree: 0%
 
 ---
@@ -317,7 +317,7 @@ Una proprietà calcolata è quella il cui valore viene calcolato in base a una r
 
 Ad esempio, puoi creare una proprietà calcolata **NomeCompleto** il cui valore è il risultato della concatenazione del **FirstName** e **Cognome** proprietà. Per eseguire questa operazione:
 
-1. Crea una nuova proprietà con il nome `FullName` il cui tipo di dati è String.
+1. Creare una proprietà con il nome `FullName` il cui tipo di dati è String.
 1. Abilita **[!UICONTROL Calcolato]** e tocca **[!UICONTROL Fine]** per creare la proprietà.
 
    ![calcolato](assets/computed.png)

@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3776'
+source-wordcount: '3775'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in 
 
 **Host casella in entrata:** Il nome host della casella in entrata o l’indirizzo IP che il provider e-mail deve analizzare.
 
-**Porta casella in entrata:** Numero della porta della casella in entrata da analizzare per il provider e-mail. Se il valore è 0, verrà utilizzata la porta IMAP o POP3 predefinita.
+**Porta casella in entrata:** Numero della porta della casella in entrata da analizzare per il provider e-mail. Se il valore è 0, viene utilizzata la porta IMAP o POP3 predefinita.
 
 **Protocollo casella in entrata:** Il protocollo e-mail per l’endpoint e-mail da utilizzare per la scansione della casella in entrata. Le opzioni disponibili sono IMAP o POP3. Il server di posta host della casella in entrata deve supportare questi protocolli.
 

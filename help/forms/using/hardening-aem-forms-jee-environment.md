@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7667'
+source-wordcount: '7665'
 ht-degree: 1%
 
 ---
@@ -430,7 +430,7 @@ Puoi impostare il numero di tentativi di errore e il successivo tempo di blocco 
 
 ### Controllo e registrazione {#auditing-and-logging}
 
-L&#39;utilizzo corretto e sicuro del controllo e della registrazione delle applicazioni può contribuire a garantire che la sicurezza e altri eventi anomali vengano monitorati e rilevati il più rapidamente possibile. L&#39;utilizzo efficace del controllo e della registrazione all&#39;interno di un&#39;applicazione include elementi quali il tracciamento degli accessi riusciti e non riusciti, nonché eventi chiave dell&#39;applicazione come la creazione o l&#39;eliminazione di record chiave.
+L&#39;utilizzo corretto e sicuro del controllo e della registrazione delle applicazioni può contribuire a garantire che la sicurezza e altri eventi anomali vengano monitorati e rilevati il più rapidamente possibile. L&#39;utilizzo efficace del controllo e della registrazione all&#39;interno di un&#39;applicazione include elementi quali il tracciamento degli accessi riusciti e non riusciti e gli eventi chiave dell&#39;applicazione, ad esempio la creazione o l&#39;eliminazione di record chiave.
 
 Puoi utilizzare il controllo per rilevare molti tipi di attacchi, tra cui:
 
@@ -662,7 +662,7 @@ Alcuni URL sono evidenziati come applicazioni web rivolte all’utente finale. �
 
 Un attacco Cross-Site Request Forgery (CSRF) sfrutta l’affidabilità di un sito web per l’utente, per trasmettere comandi non autorizzati e non voluti dall’utente. L’attacco viene configurato includendo un collegamento o uno script in una pagina web, o un URL in un messaggio e-mail, per accedere a un altro sito a cui l’utente è già stato autenticato.
 
-Ad esempio, potresti aver effettuato l’accesso ad Administration Console mentre navighi simultaneamente in un altro sito web. Una delle pagine web può includere un tag immagine HTML con `src` attributo che esegue il targeting di uno script lato server sul sito web delle vittime. Sfruttando il meccanismo di autenticazione delle sessioni basato su cookie fornito dai browser web, il sito web attaccante può inviare richieste dannose a questo script lato server vittima, mascherandosi come utente legittimo. Per ulteriori esempi, consulta [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+Ad esempio, potresti aver effettuato l’accesso ad Administration Console mentre navighi simultaneamente in un altro sito web. Una delle pagine web può includere un tag immagine HTML con `src` attributo che esegue il targeting di uno script lato server sul sito web delle vittime. Utilizzando il meccanismo di autenticazione delle sessioni basato su cookie fornito dai browser web, il sito web attaccante può inviare richieste dannose a questo script lato server vittima, mascherato come l&#39;utente legittimo. Per ulteriori esempi, consulta [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 Le seguenti caratteristiche sono comuni al CSRF:
 

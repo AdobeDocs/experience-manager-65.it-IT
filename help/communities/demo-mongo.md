@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Segui le istruzioni riportate nella pagina della documentazione principale: [MSR
 
 ## Prova {#test}
 
-Per testare e verificare il Common Store MongoDB, pubblica un commento sull’istanza Publish e visualizzalo sull’istanza Autore, nonché visualizza il UGC in MongoDB e Solr:
+Per testare e verificare il Common Store MongoDB, pubblica un commento sull’istanza Publish e visualizzalo sull’istanza Autore, quindi visualizza il UGC in MongoDB e Solr:
 
 1. Nell’istanza di pubblicazione, passa a [Guida ai componenti della community](http://localhost:4503/content/community-components/en/comments.html) e selezionare il componente Commenti.
 1. Effettua l&#39;accesso per pubblicare un commento:

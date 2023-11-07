@@ -7,7 +7,7 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Molti problemi possono essere risolti ristrutturando il contenuto. Durante la ri
 
 * **Ottimizzare la struttura del contenuto**
 
-   * Spostala in altre posizioni, ad esempio dove il controllo di accesso corrisponde alle sessioni di richiesta disponibili;
+   * Spostalo in altre posizioni, ad esempio, in cui il controllo di accesso corrisponde alle sessioni di richiesta disponibili;
    * Modificare la granularità del contenuto;
 
 * **Effettua il refactoring del codice per renderlo un servizio appropriato**

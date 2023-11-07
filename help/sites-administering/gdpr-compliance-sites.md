@@ -1,16 +1,12 @@
 ---
 title: AEM Sites - Preparazione al RGPD
-seo-title: AEM Sites - GDPR Readiness
 description: Scopri le procedure per gestire le richieste RGPD in AEM Sites e come utilizzarle.
-seo-description: Learn about the details of GDPR Readiness for AEM Sites.
-uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 54%
@@ -21,7 +17,7 @@ ht-degree: 54%
 
 >[!IMPORTANT]
 >
->Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD, CCPA, ecc.
+>Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come RGPD, CCPA e così via.
 
 Il Regolamento generale sulla protezione dei dati dell&#39;Unione Europea sui diritti relativi alla privacy dei dati entra in vigore a maggio 2018.
 
@@ -151,7 +147,7 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     L’archivio ContextHub definisce il livello di persistenza da utilizzare, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
+     L’archivio ContextHub definisce il livello di persistenza utilizzato, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
 
@@ -180,7 +176,7 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     L’archivio ContextHub definisce il livello di persistenza da utilizzare, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
+     L’archivio ContextHub definisce il livello di persistenza utilizzato, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
 

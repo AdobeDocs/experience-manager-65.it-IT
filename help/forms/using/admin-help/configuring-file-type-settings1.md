@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: 5f4bbad87768cf6bd73771f9eac6e01ab3bf3309
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6171'
+source-wordcount: '6170'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ Abilitare queste opzioni per specificare come visualizzare il contenuto, come vi
 
 **Layout pagina:** Selezionare il tipo di layout di pagina per il documento PDF.
 
-**Ingrandimento:** Scegliere l&#39;ingrandimento predefinito per la visualizzazione iniziale del documento PDF oppure selezionare un valore personalizzato. La scelta di un&#39;impostazione predefinita indica che verrà utilizzato l&#39;ingrandimento predefinito di Acrobat.
+**Ingrandimento:** Scegliere l&#39;ingrandimento predefinito per la visualizzazione iniziale del documento PDF oppure selezionare un valore personalizzato. La scelta di un&#39;impostazione predefinita indica che viene utilizzato l&#39;ingrandimento predefinito di Acrobat.
 
 **Apri a numero pagina:** Specifica il numero di pagina a cui il PDF si apre.
 
