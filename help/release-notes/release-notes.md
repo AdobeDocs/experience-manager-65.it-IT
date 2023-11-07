@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
 workflow-type: tm+mt
-source-wordcount: '4632'
+source-wordcount: '4640'
 ht-degree: 2%
 
 ---
@@ -492,7 +492,7 @@ Per risolvere il problema, individuare `<AEM_Forms_Installation_dir>\jboss\bin\s
 
 #### Comunicazioni interattive
 
-* Dopo l&#39;aggiornamento a AEM Service Pack 18, non è possibile modificare le lettere di comunicazione interattive. (FORMS-10578) Per risolvere il problema, effettua le seguenti operazioni:
+* Dopo l’aggiornamento a AEM Service Pack 18, non è possibile aprire la comunicazione interattiva con grandi immagini in linea in modalità Modifica. (FORMS-10578) Per risolvere il problema, effettua le seguenti operazioni:
 
    1. Scarica [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) dal collegamento SD.
    1. Estrai il file di archivio Hotfix per ottenere un pacchetto Experience Manager (.zip) e i file bundle (.jar).
