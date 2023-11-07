@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7661'
 ht-degree: 1%
 
 ---
@@ -269,7 +269,7 @@ Configuration Manager ha utilizzato un servlet distribuito sul server applicazio
 
 Configuration Manager consente di caricare una credenziale di estensioni Acrobat Reader DC nell’archivio fonti attendibili di AEM Forms su JEE. L&#39;accesso al servizio credenziali dell&#39;archivio fonti attendibili tramite protocolli remoti (SOAP ed EJB) è stato abilitato per impostazione predefinita. Questo accesso non è più necessario dopo che hai caricato le credenziali dei diritti tramite Configuration Manager o se decidi di utilizzare la console di amministrazione in un secondo momento per gestire le credenziali.
 
-Per disabilitare l&#39;accesso remoto a tutti i servizi dell&#39;archivio fonti attendibili, eseguire la procedura descritta nella sezione [Disattivazione dell&#39;accesso remoto non essenziale ai servizi](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+Per disabilitare l&#39;accesso remoto a tutti i servizi dell&#39;archivio fonti attendibili, seguire la procedura descritta nella sezione [Disattivazione dell&#39;accesso remoto non essenziale ai servizi](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Disattiva tutti gli accessi anonimi non essenziali**
 

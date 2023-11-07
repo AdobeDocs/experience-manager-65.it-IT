@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '18965'
 ht-degree: 0%
@@ -1638,7 +1638,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API di out
 
 Il servizio di output può creare documenti separati per ogni record all&#39;interno di un&#39;origine dati XML o un singolo file contenente tutti i record (questa funzionalità è quella predefinita). Si supponga, ad esempio, che dieci record si trovino all&#39;interno di un&#39;origine dati XML e che il servizio di output debba creare documenti PDF separati (o altri tipi di output) per ogni record utilizzando l&#39;API Servizio di output. Di conseguenza, il servizio di output genera dieci documenti PDF. Anziché creare documenti, è possibile inviare più flussi di stampa a una stampante.
 
-Nella figura seguente viene inoltre illustrato il servizio di output che elabora un file di dati XML contenente più record. Si supponga, tuttavia, di dare istruzioni al servizio di output per la creazione di un singolo documento PDF contenente tutti i record di dati. In questa situazione, il servizio di output genera un documento contenente tutti i record.
+Nella figura seguente viene inoltre illustrato il servizio di output che elabora un file di dati XML contenente più record. Si supponga tuttavia di indicare al servizio di output di creare un singolo documento PDF contenente tutti i record di dati. In questa situazione, il servizio di output genera un documento contenente tutti i record.
 
 Nella figura seguente viene illustrato il servizio di output che elabora un file di dati XML contenente più record. Si supponga di aver richiesto al servizio di output di creare un documento PDF separato per ogni record di dati. In questa situazione, il servizio di output genera un documento PDF separato per ogni record di dati.
 

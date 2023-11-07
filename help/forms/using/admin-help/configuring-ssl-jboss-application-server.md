@@ -1,18 +1,14 @@
 ---
 title: Configurazione di SSL per il server applicazioni JBoss
-seo-title: Configuring SSL for JBoss Application Server
 description: Scopri come configurare SSL per il server applicazioni JBoss.
-seo-description: Learn how to configure SSL for JBoss Application Server.
-uuid: 7c13cf00-ea89-4894-a4fc-aaeec7ae9f66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -141,10 +137,11 @@ In questa procedura:
    * Per le installazioni chiavi in mano:
 
       * Nel Pannello di controllo Campaign Windows fare clic su Strumenti di amministrazione e quindi su Servizi.
-      * Seleziona JBoss per Adobe Experience Manager Forms.
+      * Selezionare JBoss per Adobe Experience Manager Form.
       * Selezionare Azione > Interrompi.
       * Attendere che lo stato del servizio venga visualizzato come arrestato.
       * Selezionare Azione > Avvia.
+
    * Ad Adobe, installazioni JBoss preconfigurate o configurate manualmente:
 
       * Dal prompt dei comandi passare a *`[appserver root]`*/bin.
@@ -152,13 +149,12 @@ In questa procedura:
 
          * (Windows) `shutdown.bat -S`
          * (Linux) `./shutdown.sh -S`
+
       * Attendi che il processo JBoss sia stato completamente arrestato (quando il processo JBoss restituisce il controllo al terminale in cui è stato avviato).
       * Avviare il server immettendo il comando seguente:
 
          * (Windows) `run.bat -c <profile>`
          * (Linux) `./run.sh -c <profile>`
-
-
 
 1. Per accedere alla console di amministrazione tramite SSL, digitare `https://[host name]:'port'/adminui` in un browser web:
 
@@ -200,6 +196,5 @@ In questa procedura:
    >
    >* Sostituisci `[JAVA_HOME]` con la directory in cui è installato JDK e sostituisci il testo in corsivo con i valori corrispondenti all’ambiente.
    >* Il certificato firmato CA importato sostituirà un certificato pubblico autofirmato, se esistente.
-
 
 1. Completare i passaggi 13-18 di Creare una credenziale SSL.

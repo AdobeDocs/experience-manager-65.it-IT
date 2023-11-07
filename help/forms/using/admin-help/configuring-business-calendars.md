@@ -1,18 +1,14 @@
 ---
 title: Configurazione dei calendari aziendali
-seo-title: Configuring Business Calendars
 description: I calendari aziendali definiscono i giorni lavorativi e non lavorativi per l'organizzazione. Scopri come configurare i calendari aziendali.
-seo-description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
-uuid: 0ba610b8-72a8-480c-8783-70d98cbe890a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -128,7 +124,7 @@ I moduli AEM consentono di esportare e importare i calendari aziendali come file
 
 >[!NOTE]
 >
->Questa funzione esporta e importa tutti i calendari aziendali definiti, incluso il calendario aziendale predefinito fornito dai moduli AEM. Un calendario aziendale importato con lo stesso nome di un calendario esistente sovrascriverà il calendario esistente.
+>Questa funzione esporta e importa tutti i calendari aziendali definiti, incluso il calendario aziendale predefinito fornito dai moduli AEM. Un calendario aziendale importato con lo stesso nome di un calendario esistente sovrascrive il calendario esistente.
 
 ### Esporta calendari commerciali {#export-business-calendars}
 

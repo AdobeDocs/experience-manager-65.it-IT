@@ -1,16 +1,12 @@
 ---
 title: Utilizzo delle attività
-seo-title: Working with tasks
 description: Utilizzare la pagina Ricerca task per cercare i task in base al nome utente o all'ID task. Ulteriori informazioni sull'utilizzo delle attività.
-seo-description: Use the Task Search page to search for tasks by user name or task ID. Learn more about working with tasks.
-uuid: 630372d5-255f-4ea8-974d-d4f923108673
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -93,6 +89,6 @@ Per ogni assegnazione di attività, l&#39;elenco mostra le informazioni seguenti
 
 Nella pagina Assegna utente sono elencati gli utenti che possono essere assegnati a un&#39;attività. Per accedere alla pagina Assegna utente, fare clic su Assegna nuovo utente nella pagina Cronologia attività.
 
-1. Nella casella Cerca della pagina Assegna utente digitare il nome utente o l&#39;indirizzo e-mail richiesto, in tutto o in parte.
+1. Nella casella Cerca della pagina Assegna utente, digita parte o tutto il nome utente o l’indirizzo e-mail richiesto.
 1. In Utilizzo, seleziona Nome o Indirizzo e-mail, quindi fai clic su Trova. Vengono visualizzati gli utenti corrispondenti alla ricerca.
 1. Selezionare l&#39;utente dall&#39;elenco e fare clic su OK. Viene visualizzata la pagina Cronologia attività con la nuova assegnazione utente.

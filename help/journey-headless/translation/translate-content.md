@@ -2,10 +2,10 @@
 title: Tradurre il contenuto
 description: Utilizza il connettore di traduzione e le regole per tradurre il contenuto headless.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 82%
+source-wordcount: '2162'
+ht-degree: 80%
 
 ---
 
@@ -105,7 +105,7 @@ Il progetto è stato creato, ma non contiene alcun contenuto da tradurre. Nella 
 
 ## Utilizzo di un progetto di traduzione {#using-translation-project}
 
-I progetti di traduzione sono progettati per raccogliere tutti i contenuti e le attività relativi a una traduzione in un unico luogo per rendere la traduzione semplice e facile da gestire.
+I progetti di traduzione sono progettati per raccogliere tutti i contenuti e le attività relativi a un lavoro di traduzione in un unico luogo per rendere la traduzione semplice e facile da gestire.
 
 Per visualizzare il progetto di traduzione:
 

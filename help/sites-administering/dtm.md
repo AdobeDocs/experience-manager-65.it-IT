@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2206'
+source-wordcount: '2205'
 ht-degree: 3%
 
 ---
@@ -260,7 +260,7 @@ Per associare una pagina e i discendenti a una configurazione Dynamic Tag Manage
 
 1. Utilizza il menu a discesa Dynamic Tag Management per selezionare la configurazione, quindi fai clic su OK.
 
-Per ignorare l&#39;associazione di configurazione ereditata per una pagina, attenersi alla procedura descritta di seguito. La sostituzione influisce sulla pagina e su tutti i discendenti della pagina.
+Per ignorare l&#39;associazione di configurazione ereditata per una pagina, attenersi alla procedura descritta di seguito. La sostituzione ha effetto sulla pagina e su tutti i suoi discendenti.
 
 1. Apri la pagina nell’interfaccia classica.
 1. Utilizza Sidekick per aprire le proprietà della pagina.

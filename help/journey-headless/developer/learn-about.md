@@ -2,10 +2,10 @@
 title: Scopri di più sullo sviluppo di CMS headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri la tecnologia headless e perché utilizzarla.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 87%
+source-wordcount: '1611'
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da u
 
 ![Il classico CMS full-stack](assets/full-stack.png)
 
-In un CMS completo, tutte le funzionalità per la modifica del contenuto si trovano nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
+In un CMS full stack, tutte le funzionalità per la manipolazione dei contenuti sono disponibili nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
 
 * Hai un sistema da mantenere.
 * I contenuti vengono gestiti a livello centrale.

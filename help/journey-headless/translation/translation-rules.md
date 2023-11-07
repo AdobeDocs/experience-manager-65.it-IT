@@ -2,10 +2,10 @@
 title: Configurare le regole di traduzione
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 76%
+source-wordcount: '861'
+ht-degree: 70%
 
 ---
 
@@ -31,7 +31,7 @@ Questo documento ti aiuta a capire come utilizzare le regole di traduzione di AE
 
 ## Regole di traduzione {#translation-rules}
 
-I frammenti di contenuto, che rappresentano il contenuto headless, possono contenere molte informazioni organizzate in campi strutturati. A seconda delle esigenze del progetto, è probabile che non tutte le informazioni all’interno di un frammento di contenuto debbano essere tradotte.
+I frammenti di contenuto, che rappresentano il contenuto headless, possono contenere molte informazioni organizzate in campi strutturati. A seconda delle esigenze del progetto, è probabile che non tutti i campi all’interno di un frammento di contenuto debbano essere tradotti.
 
 Le regole di traduzione identificano il contenuto incluso o escluso nei progetti di traduzione. Quando il contenuto viene tradotto, AEM estrae o raccoglie il contenuto in base a queste regole. In questo modo solo il contenuto da tradurre viene inviato al servizio di traduzione.
 
@@ -46,7 +46,7 @@ Poiché i modelli per frammenti di contenuto, che definiscono la struttura dei f
 
 >[!TIP]
 >
->Generalmente l’architetto dei contenuti fornisce a chi si occupa della traduzione il **Nome proprietà** di tutti i campi necessari per la traduzione. Questi nomi sono necessari per configurare le regole di traduzione. Se ti occupi della traduzione, puoi [trovare questi **Nomi proprietà** in autonomia](getting-started.md#content-models), come descritto in precedenza in questo percorso.
+>In genere l’architetto dei contenuti fornisce allo specialista della traduzione **Nome proprietà** s di tutti i campi necessari per la traduzione. Questi nomi sono necessari per configurare le regole di traduzione. Se ti occupi della traduzione, puoi [trovare questi **Nomi proprietà** in autonomia](getting-started.md#content-models), come descritto in precedenza in questo percorso.
 
 ## Creazione di regole di traduzione {#creating-rules}
 

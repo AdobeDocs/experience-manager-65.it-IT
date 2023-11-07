@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1946'
 ht-degree: 1%
 
 ---
@@ -253,7 +253,7 @@ Utilizza il **Modifica Regole Mostra/Nascondi** per specificare le condizioni in
 Utilizzare i campi nella parte superiore della finestra di dialogo per specificare le informazioni seguenti:
 
 * Indica se si stanno specificando le condizioni per nascondere o visualizzare il componente.
-* Indica se una o tutte le condizioni devono essere true per mostrare o nascondere il componente.
+* Indica se devono essere soddisfatte alcune o tutte le condizioni per mostrare o nascondere il componente.
 
 Sotto questi campi vengono visualizzate una o più condizioni. Una condizione confronta il valore di un altro componente del modulo (nello stesso modulo) con un valore. Se il valore effettivo nel campo soddisfa la condizione, la condizione restituisce true. Le condizioni includono le seguenti informazioni:
 

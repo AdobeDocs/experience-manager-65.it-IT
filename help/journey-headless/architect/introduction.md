@@ -2,10 +2,10 @@
 title: Percorso Architect di contenuti Adobe Experience Manager headless
 description: Introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e come modellare i contenuti per il tuo progetto.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 79%
+source-wordcount: '730'
+ht-degree: 77%
 
 ---
 
@@ -27,9 +27,9 @@ Questo documento ti aiuta a comprendere cos’è la distribuzione headless dei c
 
 Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da usare e su larga scala, le aziende li hanno utilizzati come punto centrale per gestire messaggistica, branding e comunicazioni. Utilizzando il CMS come punto centrale per l’amministrazione delle esperienze, è possibile migliorare l’efficienza eliminando la necessità di duplicare attività in sistemi diversi.
 
-![CMS full-stack classico](/help/journey-headless/developer/assets/full-stack.png)
+![Il classico CMS full-stack](/help/journey-headless/developer/assets/full-stack.png)
 
-In un CMS full-stack, tutte le funzionalità per la manipolazione dei contenuti si trovano nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
+In un CMS full stack, tutte le funzionalità per la manipolazione dei contenuti sono disponibili nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
 
 * Occorre gestire un solo sistema.
 * I contenuti vengono gestiti a livello centrale.

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -363,7 +363,7 @@ La directory dei plug-in viene compilata da ogni plug-in elencato in `.cordova/h
 
 #### www/ {#www}
 
-La directory www contiene tutti i contenuti web (file HTML, JS e CSS) che implementano l’aspetto e il comportamento dell’app. Ad eccezione delle eccezioni descritte di seguito, questo contenuto proviene dall’AEM e viene esportato nel suo formato statico tramite Content Sync.
+La directory www contiene tutto il contenuto web (file HTML, JS e CSS) che implementa l’aspetto e il comportamento dell’app. Ad eccezione delle eccezioni descritte di seguito, questo contenuto proviene dall’AEM e viene esportato nel suo formato statico tramite Content Sync.
 
 #### www/config.xml {#www-config-xml}
 

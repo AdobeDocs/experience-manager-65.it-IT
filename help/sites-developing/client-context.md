@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3001'
+source-wordcount: '3000'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,7 @@ ID del div in cui deve essere eseguito il rendering dell’archivio.
 
 Quando si modifica ClientContext, i componenti dell’archivio contestuale vengono visualizzati nel Sidekick. Come per tutti i componenti, il `componentGroup` e `jcr:title` le proprietà del componente contesto client determinano il gruppo e il nome del componente.
 
-Tutti i componenti che hanno un `componentGroup` valore proprietà di `Client Context` viene visualizzato in Sidekick per impostazione predefinita. Se utilizzi un valore diverso per `componentGroup` , è necessario aggiungere manualmente il componente alla barra laterale utilizzando la modalità Progettazione.
+Tutti i componenti che hanno un `componentGroup` valore proprietà di `Client Context` viene visualizzato in Sidekick per impostazione predefinita. Se utilizzi un valore diverso per `componentGroup` , è necessario aggiungere manualmente il componente al Sidekick utilizzando la modalità Progettazione.
 
 #### Istanze componente archivio contesto {#context-store-component-instances}
 
@@ -486,7 +486,7 @@ In questo esempio, puoi creare un componente archivio di contesto che recupera i
 
 Crea un’applicazione CQ e aggiungi il componente geoloc.
 
-1. Apri CRXDE Lite nel browser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Apri CRXDE Liti nel browser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Fare clic con il pulsante destro del mouse `/apps` e fai clic su Crea > Crea cartella. Specifica un nome per `myapp` e quindi fare clic su OK.
 1. Analogamente, sotto `myapp`, crea una cartella denominata `contextstores`. &quot;
 1. Fare clic con il pulsante destro del mouse `/apps/myapp/contextstores` e fai clic su Crea > Crea componente. Specifica i seguenti valori delle proprietà e fai clic su Avanti:
@@ -558,7 +558,7 @@ Aggiungi il codice al file JSP del componente geoloc per eseguire il rendering d
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. In CRXDE Lite, apri `/apps/myapp/contextstores/geoloc/geoloc.jsp` file.
+1. In CRXDE Liti, apri `/apps/myapp/contextstores/geoloc/geoloc.jsp` file.
 1. Aggiungi il seguente codice HTML sotto il codice stub:
 
    ```xml

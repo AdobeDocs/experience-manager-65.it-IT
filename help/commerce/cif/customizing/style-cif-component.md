@@ -9,9 +9,9 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: '2531'
 ht-degree: 20%
 
 ---
@@ -280,7 +280,7 @@ Sono disponibili diverse opzioni per includere una libreria lato client. Success
    * `venia.dependencies` : fornisce librerie di fornitori che `venia.site` dipende da.
    * `venia.site` - Categoria per `clientlib-site` che il `ui.frontend` generata dal modulo.
 
-   Altri modelli utilizzano lo stesso criterio, **Pagina contenuto**, **Pagina di destinazione** e così via. Riutilizzando lo stesso criterio, possiamo garantire che le stesse librerie client siano incluse in tutte le pagine.
+   Altri modelli utilizzano lo stesso criterio, **Pagina contenuto**, **Pagina di destinazione** e così via. Riutilizzando lo stesso criterio, possiamo essere certi che le stesse librerie client vengano incluse in tutte le pagine.
 
    Quando si gestisce l’inclusione delle librerie client mediante l’uso di modelli e criteri di pagina, si può modificare il criterio a livello di modello. Ad esempio, supponiamo di dover gestire due marchi diversi nella stessa istanza di AEM. Ogni marchio ha un proprio stile o *tema* ma le librerie e il codice di base saranno gli stessi. Un altro esempio, nel caso di una libreria client più grande che si voglia visualizzare solo su determinate pagine, si può creare un criterio di pagina univoco solo per quel modello.
 

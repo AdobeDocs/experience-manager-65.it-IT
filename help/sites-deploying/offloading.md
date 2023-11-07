@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2362'
+source-wordcount: '2359'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,7 @@ Il servizio Apache Sling Job Consumer Manager fornisce proprietà di elenco cons
 
 **Nota:** Se l&#39;istanza appartiene a una topologia, è inoltre possibile utilizzare Offload Browser in qualsiasi computer della topologia per attivare o disattivare gli argomenti.
 
-La logica che crea l&#39;elenco degli argomenti abilitati consente innanzitutto di visualizzare tutti gli argomenti inclusi nell&#39;elenco consentiti e quindi di rimuovere gli argomenti inclusi nell&#39;elenco Bloccati. Per impostazione predefinita, tutti gli argomenti sono abilitati (il valore di elenco consentiti è `*`) e nessun argomento è disabilitato (l&#39;elenco Bloccati non ha valore).
+La logica che crea l&#39;elenco degli argomenti abilitati consente innanzitutto tutti gli argomenti presenti nell&#39;elenco consentiti e quindi rimuove gli argomenti presenti nell&#39;elenco Bloccati. Per impostazione predefinita, tutti gli argomenti sono abilitati (il valore di elenco consentiti è `*`) e nessun argomento è disabilitato (l&#39;elenco Bloccati non ha valore).
 
 Utilizza la console web o un `sling:OsgiConfig` per configurare le seguenti proprietà. Per `sling:OsgiConfig` PID del servizio Job Consumer Manager: org.apache.sling.event.impl.jobs.JobConsumerManager.
 

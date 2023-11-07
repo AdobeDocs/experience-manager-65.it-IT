@@ -9,9 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3983'
+source-wordcount: '3979'
 ht-degree: 2%
 
 ---
@@ -170,7 +170,7 @@ Analizzare ogni lettera per scoprire i vari pezzi che compongono la lettera. Lo 
 
 **Creazione del dizionario dati** Ci saranno valori di dati come &quot;ID cliente&quot; e &quot;Nome cliente&quot; che sono comuni a molte lettere. Puoi preparare un elenco consolidato di tutti questi valori di dati. In genere viene consultato un membro del team middleware aziendale durante la pianificazione della struttura. Questo costituisce la base per la creazione del dizionario dati.
 
-**Acquisizione dei dati dai sistemi aziendali back-end** Potrai inoltre conoscere tutti i valori di dati necessari e da dove vengono ottenuti i dati del sistema aziendale. Puoi quindi progettare l’implementazione per estrarre i dati dal sistema aziendale e inviarli alla soluzione Letters.
+**Acquisizione dei dati dai sistemi aziendali back-end** Conoscerai inoltre tutti i valori di dati necessari e da dove vengono ottenuti i dati del sistema aziendale. Puoi quindi progettare l’implementazione per estrarre i dati dal sistema aziendale e inviarli alla soluzione Letters.
 
 **Stima della complessità delle lettere** È importante determinare quanto sarà complesso creare una particolare corrispondenza. Questa analisi consente di determinare la quantità di tempo e di competenze necessarie per creare i modelli di lettera. Ciò contribuirà a sua volta a stimare le risorse e i costi di implementazione della soluzione Letters.
 

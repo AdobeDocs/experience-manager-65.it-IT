@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '7177'
+source-wordcount: '7176'
 ht-degree: 0%
 
 ---
@@ -349,7 +349,7 @@ Quando la cartella controllata non è in grado di elaborare i file di origine ne
    * In Applicazioni e servizi, modificare il parametro Include File Pattern per l&#39;endpoint della cartella controllata in modo che non corrisponda a nessuno dei nuovi file di input (ad esempio, immettere `NOMATCH`).
    * Sospendere il processo di creazione dei nuovi file di input.
 
-   Attendere che i moduli AEM vengano ripristinati ed elaborati tutti i file. La maggior parte dei file deve essere recuperata ed eventuali nuovi file di input elaborati correttamente. Il tempo di attesa per il recupero e l&#39;elaborazione dei file da parte della cartella controllata dipende dalla durata dell&#39;operazione da richiamare e dal numero di file da recuperare.
+   Attendere il ripristino e l&#39;elaborazione di tutti i file da parte dei moduli AEM. La maggior parte dei file deve essere recuperata ed eventuali nuovi file di input elaborati correttamente. Il tempo di attesa per il recupero e l&#39;elaborazione dei file da parte della cartella controllata dipende dalla durata dell&#39;operazione da richiamare e dal numero di file da recuperare.
 
 1. Determinare quali file non possono essere elaborati. Se hai atteso un periodo di tempo adeguato e hai completato il passaggio precedente e nella cartella dell’area di visualizzazione sono ancora presenti file non elaborati, passa al passaggio successivo.
 

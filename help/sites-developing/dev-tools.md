@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 Per sviluppare applicazioni JCR, Apache Sling o Adobe Experience Manager (AEM), sono disponibili i seguenti set di strumenti:
 
-* un set costituito da [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. CRXDE Lite è incorporato in CRX/AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Lite puoi creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione e l’integrazione con SVN.
+* un set costituito da [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. CRXDE Liti è incorporato in CRX/AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Liti puoi creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione e l’integrazione con SVN.
 
-  CRXDE Lite è consigliato quando non hai accesso diretto al server CRX/AEM, quando sviluppi un’applicazione estendendo o modificando i componenti predefiniti e i bundle Java™ o quando non hai bisogno di un debugger dedicato, del completamento del codice e dell’evidenziazione della sintassi.
+  CRXDE Liti è consigliato quando non hai accesso diretto al server CRX/AEM, quando sviluppi un’applicazione estendendo o modificando i componenti predefiniti e i bundle Java™ o quando non hai bisogno di un debugger dedicato, del completamento del codice e dell’evidenziazione della sintassi.
 
 * un insieme costituito dai seguenti elementi:
    * Un ambiente di sviluppo integrato. Ad esempio: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md).

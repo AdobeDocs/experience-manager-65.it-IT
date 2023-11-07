@@ -1,16 +1,12 @@
 ---
 title: Configurazione delle impostazioni Fuori sede
-seo-title: Configuring Out of Office Settings
 description: La funzione Fuori sede consente di specificare quando un utente sarà fuori sede e non sarà in grado di completare le attività assegnate dai moduli AEM.
-seo-description: The Out of Office feature enables you to specify when a user will be out of the office and unable to complete tasks assigned by AEM forms.
-uuid: 0d01df0a-aa6a-40e5-bf24-423ed1c932cc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -30,7 +26,7 @@ Durante la creazione di un processo, l’utente di Workbench può specificare se
 
    **Cerca per nome**
 
-   Selezionare l&#39;opzione Cerca per nome. Digitare tutto o parte del nome utente e fare clic su Trova. Se si lascia vuoto il campo, Forms workflow restituisce un elenco di tutti gli utenti
+   Selezionare l&#39;opzione Cerca per nome. Digitare tutto o parte del nome utente e fare clic su Trova. Se si lascia vuoto il campo, Forms workflow restituisce un elenco di tutti gli utenti.
 
    **Cerca per intervallo di date**
 
@@ -38,7 +34,7 @@ Durante la creazione di un processo, l’utente di Workbench può specificare se
 
 1. Fare clic su un nome utente per visualizzare le informazioni Fuori sede dell&#39;utente sotto l&#39;elenco degli utenti.
 
-## Modificare lo stato di Fuori sede di un utente {#change-a-user-s-out-of-office-status}
+## Modificare lo stato fuori sede di un utente {#change-a-user-s-out-of-office-status}
 
 1. Trovare l&#39;utente come descritto in [Visualizzare le informazioni Fuori sede di un utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Fare clic sul nome dell&#39;utente che si desidera modificare.
@@ -59,7 +55,7 @@ Quando un utente è fuori sede, puoi assegnare uno o più utenti per eseguire nu
 
 * Assegna tutte le nuove attività a un utente predefinito designato.
 * Non riassegnare alcuna attività. Le nuove attività rimangono assegnate all&#39;utente fuori sede.
-* Assegna un utente predefinito che riceverà la maggior parte delle attività dell’utente, ma specifica che le attività di alcuni processi vengono riassegnate ad altri utenti o rimangono assegnate all’utente che è fuori sede.
+* Assegna un utente predefinito che riceverà la maggior parte delle attività dell&#39;utente, ma specifica che le attività di alcuni processi vengono riassegnate ad altri utenti o rimangono assegnate all&#39;utente fuori sede.
 * Non assegnare un utente predefinito, ma assegnare determinate attività da determinati processi a utenti specifici.
 
    1. Trovare l&#39;utente come descritto in [Visualizzare le informazioni Fuori sede di un utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).

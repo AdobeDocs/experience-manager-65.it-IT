@@ -1,16 +1,14 @@
 ---
 title: Configurare le impostazioni del servizio
 description: Scopri come configurare le impostazioni del servizio. È possibile utilizzare la pagina Gestione dei servizi per configurare le impostazioni per ciascuno dei servizi che fanno parte dei moduli AEM.
-uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '10694'
+source-wordcount: '10692'
 ht-degree: 0%
 
 ---
@@ -59,7 +57,7 @@ Per il servizio Forms con codice a barre sono disponibili le seguenti impostazio
 
 >[!NOTE]
 >
->Per impostazione predefinita, tutte le opzioni sono selezionate. Deselezionare un&#39;opzione solo se si è certi che i codici a barre non verranno visualizzati in questo modo nei moduli.
+>Per impostazione predefinita, vengono selezionate tutte le opzioni. Deselezionare un&#39;opzione solo se si è certi che i codici a barre non verranno visualizzati in questo modo nei moduli.
 
 **Percorso file di base:** Percorso del file relativo al quale vengono risolti i parametri dei file di input e output batch per le operazioni Esegui job file XML ed Esegui job file flat. Nelle configurazioni cluster, il percorso del file di base deve essere una posizione del file system condiviso alla quale tutti i nodi del cluster hanno accesso in lettura/scrittura.
 
@@ -223,7 +221,7 @@ Per il servizio Crittografia sono disponibili le impostazioni seguenti.
 
 >[!NOTE]
 >
->Utilizza l’autenticazione semplice (nome utente e password) solo quando la connessione è protetta tramite SSL (utilizzando LDAPS).
+Utilizza l’autenticazione semplice (nome utente e password) solo quando la connessione è protetta tramite SSL (utilizzando LDAPS).
 
 **Modalità di compatibilità:**
 
@@ -431,7 +429,7 @@ Per il servizio di configurazione di Microsoft SharePoint sono disponibili le im
 
 >[!NOTE]
 >
->Se il supporto offline è stato abilitato e poi lo disabiliti, i profili di provisioning degli utenti vengono aggiornati immediatamente o non appena sono online. Se un utente lavora in modalità non in linea, tutte le attività in sospeso vengono restituite al relativo elenco Attività e tutti gli elementi nella coda, inclusi i moduli in sospeso, le attività e i moduli contenenti errori di convalida, vengono eliminati dalla coda.
+Se il supporto offline è stato abilitato e poi lo disattivi, i profili di provisioning degli utenti vengono aggiornati immediatamente o non appena sono online. Se un utente lavora in modalità non in linea, tutte le attività in sospeso vengono restituite al relativo elenco Attività e tutti gli elementi nella coda, inclusi i moduli in sospeso, le attività e i moduli contenenti errori di convalida, vengono eliminati dalla coda.
 
 **Android:** Consente ai dispositivi Android di connettersi al server.
 
@@ -733,7 +731,7 @@ Se il percorso non è assoluto ma relativo, la cartella viene creata all’inter
 
 >[!NOTE]
 >
->Minore è la dimensione delle cartelle dei risultati, migliori saranno le prestazioni della cartella controllata. Ad esempio, se il carico stimato per la cartella controllata è di 1000 file all’ora, prova uno schema come `result/%Y%M%D%H` in modo che venga creata una nuova sottocartella ogni ora. Se il caricamento è più piccolo (ad esempio, 1000 file al giorno), puoi utilizzare un pattern come `result/%Y%M%D`.
+Minore è la dimensione delle cartelle dei risultati, migliori saranno le prestazioni della cartella controllata. Ad esempio, se il carico stimato per la cartella controllata è di 1000 file all’ora, prova uno schema come `result/%Y%M%D%H` in modo che venga creata una nuova sottocartella ogni ora. Se il caricamento è più piccolo (ad esempio, 1000 file al giorno), puoi utilizzare un pattern come `result/%Y%M%D`.
 
 **Cartella area di visualizzazione:** Il nome predefinito per la cartella dell’area di visualizzazione all’interno della cartella controllata.
 
@@ -747,7 +745,7 @@ Se il percorso non è assoluto ma relativo, la cartella viene creata all’inter
 
 Servizio Web ( `WebService`) consente ai processi di richiamare le operazioni del servizio web.
 
-Il servizio Web consente ai processi di richiamare le operazioni del servizio Web. Ad esempio, un’organizzazione potrebbe voler integrare un processo per memorizzare e recuperare informazioni quali i dettagli di contatto e dell’account richiamando i servizi web esposti di un fornitore di servizi. Il servizio Web richiama un servizio Web specificato e trasmette i valori per ciascuno dei relativi parametri. Quindi salva i valori restituiti dall’operazione in una variabile designata all’interno di un processo.
+Il servizio Web consente ai processi di richiamare le operazioni del servizio Web. Ad esempio, un’organizzazione potrebbe voler integrare un processo per memorizzare e recuperare informazioni quali i dettagli di contatto e account richiamando i servizi web esposti di un fornitore di servizi. Il servizio Web richiama un servizio Web specificato e trasmette i valori per ciascuno dei relativi parametri. Quindi salva i valori restituiti dall’operazione in una variabile designata all’interno di un processo.
 
 Il servizio Web interagisce con i servizi Web inviando e ricevendo messaggi SOAP. Il servizio supporta inoltre l&#39;invio di allegati MIME, MTOM e SwaRef con messaggi SOAP tramite il protocollo WS-Attachment. Le interazioni del servizio Web sono compatibili con i sistemi SAP e i servizi Web .NET.
 
@@ -815,7 +813,7 @@ Vengono installati i profili di sicurezza predefiniti, che possono essere config
 
    >[!NOTE]
    >
-   >I servizi di rendering e invio utilizzati con xfaForm, Document Form e variabili Form vengono sempre eseguiti utilizzando l’account utente System.
+   I servizi di rendering e invio utilizzati con xfaForm, Document Form e variabili Form vengono sempre eseguiti utilizzando l’account utente System.
 
 1. Fare clic su Aggiungi entità per specificare le autorizzazioni di utenti e gruppi per questo servizio.
 1. Nella schermata Seleziona entità vengono visualizzati gli utenti e i gruppi configurati in Gestione utente. Se l’utente o il gruppo desiderato non è visualizzato, utilizza la funzione di ricerca per trovarlo. Fare clic sul nome di un utente o gruppo.
