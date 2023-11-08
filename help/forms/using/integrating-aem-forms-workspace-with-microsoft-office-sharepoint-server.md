@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 8990b422-f4f6-4080-871a-33cdf7ca6455
 docset: aem65
 exl-id: d080932f-d5fb-482d-9329-62da5df10362
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -58,13 +58,13 @@ Per integrare AEM Forms Workspace in una web part, effettuare le seguenti operaz
 
 1. Nella pagina Visualizzatore pagine eseguire le operazioni seguenti:
 
-   1. Nella casella Collegamento, digita l’URL di AEM Forms Workspace, ad esempio `https://[AEM_forms_Server]:8080/lc/ws` dove `[AEM_forms_Server]` rappresenta l’IP o il nome del server AEM forms.
+   1. Nella casella Collegamento, digita l’URL di AEM Forms Workspace, ad esempio `https://[AEM_forms_Server]:8080/lc/ws` dove `[AEM_forms_Server]` rappresenta l’IP o il nome del server AEM Forms.
    1. Clic **Aspetto** e modificare l’altezza, la larghezza e il titolo in modo da visualizzare l’intera interfaccia utente di Workspace. Ad esempio, è possibile impostare l&#39;altezza e la larghezza rispettivamente su 6 e 11 pollici.
    1. Clic **Test collegamento**. Viene visualizzata una nuova finestra del browser Web contenente l&#39;area di lavoro.
    1. (Facoltativo) Fai clic su **Layout** e modificare il layout di Workspace nella web part.
    1. (Facoltativo) Fai clic su **Avanzate** e modificare altre impostazioni, ad esempio la descrizione e la possibilità di ridurre a icona o chiudere Workspace nella web part.
 
-      Clic **Applica**.
+      Fai clic su **Applica**.
 
 1. Clic **Esci dalla modalità di modifica** e verifica di poter accedere a Workspace.
 

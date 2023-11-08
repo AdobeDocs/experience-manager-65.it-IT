@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '3775'
 ht-degree: 0%
@@ -116,11 +116,11 @@ Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in 
 
 **SSL SMTP abilitato:** Se questa opzione è selezionata, abilita SSL su SMTP.
 
-**Includi Il Corpo Dell’E-Mail Originale Come Allegato:** Per impostazione predefinita, quando si invia un messaggio di posta elettronica al server dei moduli, il testo originale del messaggio viene incluso nel corpo del messaggio. Per includere il testo come allegato, selezionare questa opzione.
+**Includi Il Corpo Dell’E-Mail Originale Come Allegato:** Per impostazione predefinita, quando si invia un messaggio e-mail a Forms Server, il testo originale del messaggio viene incluso nel corpo del messaggio. Per includere il testo come allegato, selezionare questa opzione.
 
 **Utilizza La Riga Oggetto Originale Per Le E-Mail Dei Risultati:** Per impostazione predefinita, il server Forms utilizza i valori specificati nelle impostazioni Oggetto e-mail riuscito e Oggetto e-mail errore come riga dell’oggetto quando si inviano i messaggi e-mail dei risultati. Selezionare questa opzione per utilizzare invece la stessa riga dell&#39;oggetto dell&#39;e-mail originale inviata al server.
 
-**Oggetto e-mail di successo:** Dopo aver inviato un messaggio e-mail a un endpoint e-mail per avviare o continuare un processo, si riceve un messaggio e-mail di ritorno dal server dei moduli AEM. Se l’e-mail ha esito positivo, riceverai un’e-mail di successo. Se l’e-mail non riesce, riceverai un’e-mail di errore con l’indicazione del motivo dell’errore. Questa impostazione consente di specificare l’oggetto dei messaggi e-mail di successo inviati per questo endpoint.
+**Oggetto e-mail di successo:** Dopo aver inviato un messaggio e-mail a un endpoint e-mail per avviare o continuare un processo, riceverai un messaggio e-mail di ritorno dal server AEM Forms. Se l’e-mail ha esito positivo, riceverai un’e-mail di successo. Se l’e-mail non riesce, riceverai un’e-mail di errore con l’indicazione del motivo dell’errore. Questa impostazione consente di specificare l’oggetto dei messaggi e-mail di successo inviati per questo endpoint.
 
 **Corpo e-mail di successo:** Consente di specificare il corpo del testo dei messaggi e-mail di successo inviati per questo endpoint.
 
@@ -130,9 +130,9 @@ Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in 
 
 **Corpo e-mail errore:** Consente di specificare la prima riga nel corpo del testo dei messaggi e-mail di errore inviati per questo endpoint.
 
-**Informazioni di riepilogo e-mail:** Ogni messaggio di operazione riuscita o non riuscita include una sezione contenente il testo dell&#39;e-mail originale inviato al server dei moduli. Questa impostazione specifica il testo visualizzato sopra la sezione.
+**Informazioni di riepilogo e-mail:** Ogni messaggio di esito positivo o negativo include una sezione contenente il testo originale dell&#39;e-mail inviato al server Forms. Questa impostazione specifica il testo visualizzato sopra la sezione.
 
-**Convalida Casella In Entrata Prima Di Creare/Aggiornare Questo Endpoint:** Quando questa opzione è selezionata, il server Forms controlla se le impostazioni SMTP/POP3 sono corrette prima di creare l’endpoint. Quando fai clic su Aggiungi, viene visualizzato un messaggio che indica se l’account della casella in entrata è valido. Se questa opzione non è selezionata, il server AEM forms crea l&#39;endpoint senza convalidare la casella in entrata.
+**Convalida Casella In Entrata Prima Di Creare/Aggiornare Questo Endpoint:** Quando questa opzione è selezionata, Forms Server controlla se le impostazioni SMTP/POP3 sono corrette prima di creare l&#39;endpoint. Quando fai clic su Aggiungi, viene visualizzato un messaggio che indica se l’account della casella in entrata è valido. Se questa opzione non è selezionata, AEM Forms Server crea l’endpoint senza convalidare la casella in entrata.
 
 **Codifica set di caratteri:** Formato di codifica da utilizzare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in un ambiente giapponese possono scegliere ISO2022-JP.
 
@@ -206,11 +206,11 @@ Ad esempio, viene creato un endpoint e-mail per un servizio che accetta un singo
 
 Il valore predefinito è asincrono.
 
-**Includi il corpo dell’e-mail originale come allegato:** Per impostazione predefinita, quando si invia un messaggio di posta elettronica al server dei moduli, il testo originale del messaggio viene incluso nel corpo del messaggio. Per includere il testo come allegato, selezionare questa opzione.
+**Includi il corpo dell’e-mail originale come allegato:** Per impostazione predefinita, quando si invia un messaggio e-mail a Forms Server, il testo originale del messaggio viene incluso nel corpo del messaggio. Per includere il testo come allegato, selezionare questa opzione.
 
 **Utilizza l’oggetto originale per le e-mail dei risultati:** Per impostazione predefinita, il server Forms utilizza i valori specificati nelle impostazioni Oggetto e-mail riuscito e Oggetto e-mail errore come riga dell’oggetto quando si inviano i messaggi e-mail dei risultati. Selezionare questa opzione per utilizzare invece la stessa riga dell&#39;oggetto dell&#39;e-mail originale inviata al server.
 
-**Oggetto e-mail di successo:** Dopo aver inviato un messaggio e-mail a un endpoint e-mail per avviare o continuare un processo, si riceve un messaggio e-mail di ritorno dal server dei moduli AEM. Se l’e-mail ha esito positivo, riceverai un’e-mail di successo. Se l’e-mail non riesce, riceverai un’e-mail di errore con l’indicazione del motivo dell’errore. Questa impostazione consente di specificare l’oggetto dei messaggi e-mail di successo inviati per questo endpoint.
+**Oggetto e-mail di successo:** Dopo aver inviato un messaggio e-mail a un endpoint e-mail per avviare o continuare un processo, riceverai un messaggio e-mail di ritorno dal server AEM Forms. Se l’e-mail ha esito positivo, riceverai un’e-mail di successo. Se l’e-mail non riesce, riceverai un’e-mail di errore con l’indicazione del motivo dell’errore. Questa impostazione consente di specificare l’oggetto dei messaggi e-mail di successo inviati per questo endpoint.
 
 **Corpo e-mail di successo:** Consente di specificare il corpo del testo dei messaggi e-mail di successo inviati per questo endpoint.
 
@@ -220,9 +220,9 @@ Il valore predefinito è asincrono.
 
 **Corpo e-mail errore:** Consente di specificare la prima riga nel corpo del testo dei messaggi e-mail di errore inviati per questo endpoint.
 
-**Informazioni di riepilogo e-mail:** Ogni messaggio di operazione riuscita o non riuscita include una sezione contenente il testo dell&#39;e-mail originale inviato al server dei moduli. Questa impostazione specifica il testo visualizzato sopra la sezione.
+**Informazioni di riepilogo e-mail:** Ogni messaggio di esito positivo o negativo include una sezione contenente il testo originale dell&#39;e-mail inviato al server Forms. Questa impostazione specifica il testo visualizzato sopra la sezione.
 
-**Convalida casella in entrata prima di creare/aggiornare questo endpoint:** Quando questa opzione è selezionata, il server Forms controlla se le impostazioni SMTP/POP3 sono corrette prima di creare l’endpoint. Quando fai clic su Aggiungi, viene visualizzato un messaggio che indica se l’account della casella in entrata è valido. Se questa opzione non è selezionata, il server AEM forms crea l&#39;endpoint senza convalidare la casella in entrata.
+**Convalida casella in entrata prima di creare/aggiornare questo endpoint:** Quando questa opzione è selezionata, Forms Server controlla se le impostazioni SMTP/POP3 sono corrette prima di creare l&#39;endpoint. Quando fai clic su Aggiungi, viene visualizzato un messaggio che indica se l’account della casella in entrata è valido. Se questa opzione non è selezionata, AEM Forms Server crea l’endpoint senza convalidare la casella in entrata.
 
 **Nome operazione:** Questa impostazione è obbligatoria. Elenco di operazioni che possono essere assegnate all’endpoint e-mail. L&#39;operazione selezionata determina i campi da visualizzare nelle sezioni Mapping parametri di input e Mapping parametri di output.
 

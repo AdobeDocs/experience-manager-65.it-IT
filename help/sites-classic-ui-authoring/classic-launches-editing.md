@@ -1,18 +1,16 @@
 ---
 title: Modifica dei lanci
-description: Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificarne il contenuto nella copia di lancio delle pagine.
-uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
+description: Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificare il contenuto nella copia di lancio delle pagine.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 28%
+source-wordcount: '289'
+ht-degree: 10%
 
 ---
 
@@ -20,7 +18,7 @@ ht-degree: 28%
 
 ## Modifica delle pagine di lancio {#editing-launch-pages}
 
-Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificarne il contenuto nella copia di lancio delle pagine.
+Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modificare il contenuto nella copia di lancio delle pagine.
 
 1. Apri la pagina per la modifica.
 1. In Sidekick, seleziona la **Controllo delle versioni** , quindi espandere **Lanci** gruppo. Il titolo del lancio attualmente in fase di modifica utilizza un font in grassetto.

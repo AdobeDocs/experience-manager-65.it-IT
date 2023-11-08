@@ -1,19 +1,15 @@
 ---
 title: Gestione programmatica degli endpoint
-seo-title: Programmatically Managing Endpoints
 description: Utilizza il servizio Registro endpoint per aggiungere endpoint EJB, aggiungere endpoint SOAP, aggiungere endpoint per cartelle controllate, aggiungere endpoint e-mail, aggiungere endpoint per la comunicazione remota, aggiungere endpoint per Gestione attività, modificare endpoint, rimuovere endpoint e recuperare informazioni sul connettore dell’endpoint.
-seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
-uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '10790'
+source-wordcount: '10791'
 ht-degree: 1%
 
 ---
@@ -124,7 +120,7 @@ Aggiungi un endpoint EJB utilizzando l’API Java:
 
 1. Includi file di progetto.
 
-   Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java. (
+   Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java. (
 
 1. Creare un oggetto client EndpointRegistry.
 
@@ -146,7 +142,7 @@ Aggiungi un endpoint EJB utilizzando l’API Java:
 
 1. Abilita l’endpoint.
 
-   Abilita l’endpoint richiamando `EndpointRegistryClient` metodo enable dell&#39;oggetto e passaggio di `Endpoint` oggetto restituito da `createEndpoint` metodo.
+   Abilita l’endpoint richiamando `EndpointRegistryClient` metodo enable dell&#39;oggetto e trasmissione `Endpoint` oggetto restituito da `createEndpoint` metodo.
 
 **Consulta anche**
 
@@ -229,7 +225,7 @@ Aggiungere un endpoint SOAP a un servizio utilizzando l’API Java:
 
 1. Includi file di progetto.
 
-   Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
+   Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
 
 1. Creare un oggetto client EndpointRegistry.
 
@@ -251,7 +247,7 @@ Aggiungere un endpoint SOAP a un servizio utilizzando l’API Java:
 
 1. Abilita l’endpoint.
 
-   Abilita l’endpoint richiamando `EndpointRegistryClient` metodo enable dell&#39;oggetto e passare il `Endpoint` oggetto restituito da `createEndpoint` metodo.
+   Abilita l’endpoint richiamando `EndpointRegistryClient` metodo enable dell&#39;oggetto e passare `Endpoint` oggetto restituito da `createEndpoint` metodo.
 
 **Consulta anche**
 
@@ -271,7 +267,7 @@ Ai fini dell’aggiunta a livello di programmazione di un endpoint di cartella c
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Questa procedura accetta un documento PDF PDF non protetto come valore di input e quindi lo trasmette al servizio di crittografia `EncryptPDFUsingPassword` operazione. Il documento PDF viene crittografato con una password e il documento PDF crittografato con password è il valore di output di questo processo. Il nome del valore di input (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
+Questo processo accetta un documento PDF non protetto come valore di input e quindi passa il documento PDF non protetto al servizio di crittografia `EncryptPDFUsingPassword` operazione. Il documento PDF viene crittografato con una password e il documento PDF crittografato con password è il valore di output di questo processo. Il nome del valore di input (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -339,7 +335,7 @@ L&#39;elenco seguente specifica i valori di configurazione impostati quando si a
 * **resultFolderName**: cartella in cui vengono memorizzati i risultati salvati. Questa posizione può essere un percorso di directory assoluto o relativo. Se i risultati non vengono visualizzati in questa cartella, selezionare la cartella con errori. I file di sola lettura non vengono elaborati e verranno salvati nella cartella degli errori. Il valore predefinito è `result/%Y/%M/%D/`. Questa è la cartella dei risultati all’interno della cartella controllata.
 * **preserveFolderName**: posizione in cui vengono archiviati i file dopo la scansione e il prelievo corretti. Questo percorso può essere assoluto, relativo o nullo. Il valore predefinito è `preserve/%Y/%M/%D/`.
 * **failureFolderName**: cartella in cui vengono salvati i file con errori. Questo percorso è sempre relativo alla cartella controllata. I file di sola lettura non vengono elaborati e verranno salvati nella cartella degli errori. Il valore predefinito è `failure/%Y/%M/%D/`.
-* **preserveOnFailure**: mantiene i file di input in caso di mancata esecuzione dell’operazione su un servizio. Il valore predefinito è true.
+* **preserveOnFailure**: mantiene i file di input in caso di errore durante l’esecuzione dell’operazione su un servizio. Il valore predefinito è true.
 * **overwriteDuplicateFilename**: quando è impostato su true, i file nella cartella dei risultati e nella cartella di mantenimento vengono sovrascritti. Se è impostato su false, vengono utilizzati per il nome i file e le cartelle con un suffisso di indice numerico. Il valore predefinito è false.
 
 **Definire i valori dei parametri di input**
@@ -397,7 +393,7 @@ Aggiungi un endpoint Watched Folder utilizzando l’API Java di AEM Forms:
 
 1. Includi file di progetto.
 
-   Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
+   Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
 
 1. Creare un oggetto client EndpointRegistry.
 
@@ -504,7 +500,7 @@ Ai fini dell’aggiunta programmatica di un endpoint e-mail a un servizio, consi
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Questa procedura accetta un documento PDF PDF non protetto come valore di input e quindi lo trasmette al servizio di crittografia `EncryptPDFUsingPassword` operazione. Questo processo crittografa il documento PDF con una password e restituisce il documento PDF crittografato con password come valore di output. Il nome del valore di input (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
+Questo processo accetta un documento PDF non protetto come valore di input e quindi passa il documento PDF non protetto al servizio di crittografia `EncryptPDFUsingPassword` operazione. Questo processo crittografa il documento PDF con una password e restituisce il documento PDF crittografato con password come valore di output. Il nome del valore di input (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -642,7 +638,7 @@ Aggiungi un endpoint e-mail utilizzando l’API Java:
 
 1. Includi file di progetto.
 
-   Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
+   Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
 
 1. Creare un oggetto client EndpointRegistry.
 
@@ -760,7 +756,7 @@ Ai fini dell&#39;aggiunta programmatica di un endpoint remoto a un servizio, con
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Questa procedura accetta un documento PDF PDF non protetto come valore di input e quindi lo trasmette al servizio di crittografia `EncryptPDFUsingPassword` operazione. Il documento PDF viene crittografato con una password e il documento PDF crittografato con password è il valore di output di questo processo. Il nome del valore di input (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
+Questo processo accetta un documento PDF non protetto come valore di input e quindi passa il documento PDF non protetto al servizio di crittografia `EncryptPDFUsingPassword` operazione. Il documento PDF viene crittografato con una password e il documento PDF crittografato con password è il valore di output di questo processo. Il nome del valore di input (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
 
 Per illustrare come aggiungere un endpoint remoto a un servizio, questa sezione aggiunge un endpoint remoto a un servizio denominato EncryptDocument.
 
@@ -827,7 +823,7 @@ Aggiungi un endpoint remoto utilizzando l’API Java:
 
 1. Includi file di progetto.
 
-   Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
+   Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
 
 1. Creare un oggetto client EndpointRegistry.
 
@@ -938,7 +934,7 @@ Aggiungi un endpoint TaskManager utilizzando l’API Java:
 
 1. Includi file di progetto.
 
-   Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
+   Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
 
 1. Creare un oggetto client EndpointRegistry.
 
@@ -1050,7 +1046,7 @@ Modifica un endpoint utilizzando l’API Java:
 
 1. Includi file di progetto.
 
-   Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
+   Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
 
 1. Creare un oggetto client EndpointRegistry.
 
@@ -1144,7 +1140,7 @@ Rimuovi un endpoint utilizzando l’API Java:
 
 1. Includi file di progetto.
 
-   Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
+   Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
 
 1. Creare un oggetto client EndpointRegistry.
 
@@ -1241,7 +1237,7 @@ Recupera le informazioni sul connettore dell’endpoint utilizzando l’API Java
 
 1. Includi file di progetto. .
 
-   Includi i file JAR dei client, ad esempio adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
+   Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
 
 1. Creare un oggetto Client ConnectorRegistry.
 

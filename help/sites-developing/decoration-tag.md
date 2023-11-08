@@ -2,9 +2,9 @@
 title: Tag di decorazione
 description: Quando viene eseguito il rendering di un componente in una pagina web, è possibile generare un elemento HTML che racchiude all’interno il componente renderizzato. AEM offre agli sviluppatori una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '878'
 ht-degree: 10%
 
 ---
@@ -22,7 +22,7 @@ Quando viene eseguito il rendering di un componente in una pagina web, è possib
 AEM offre agli sviluppatori una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti. Se e come viene eseguito il rendering del tag di decorazione è definito dalla combinazione di due fattori, in cui questa pagina si immergerà:
 
 * Il componente stesso può configurare il proprio tag di decorazione con un set di proprietà.
-* Gli script che includono componenti (HTL, JSP, dispatcher, ecc.) possono definire gli aspetti del tag di decorazione con parametri di inclusione.
+* Gli script che includono componenti (HTL, JSP, dispatcher e così via) possono definire gli aspetti del tag di decorazione con parametri di inclusione.
 
 ## Consigli {#recommendations}
 
@@ -62,7 +62,7 @@ Il comportamento dell&#39;involucro può anche essere completamente controllato.
 
 È possibile controllare completamente il comportamento dei tag wrapper dagli script HTL e dalla relativa logica associata.
 
-Per ulteriori informazioni sullo sviluppo in HTL, vedi [Documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it).
+Per ulteriori informazioni sullo sviluppo in HTL, vedi [Documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it).
 
 #### Albero decisionale {#decision-tree}
 

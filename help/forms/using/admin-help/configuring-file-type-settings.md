@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '6176'
+source-wordcount: '6173'
 ht-degree: 0%
 
 ---
@@ -216,7 +216,7 @@ Abilitare queste opzioni per specificare l&#39;aspetto della finestra:
 
 ## Flash video in impostazioni PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator supporta la possibilità di inviare un video, ad Adobe un Flash (file SWF o FLV) e di creare un file PDF con un video, ad Adobe un Flash incorporato. Questa conversione non richiede l&#39;installazione del Flash Player Adobe nel server Forms. Per istruzioni sull’accesso a questa opzione, consulta [Creare o modificare le impostazioni del tipo di file](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator supporta la possibilità di inviare un video, ad Adobe un Flash (file SWF o FLV) e di creare un file PDF con un video, ad Adobe un Flash incorporato. Questa conversione non richiede l&#39;installazione del Flash Player Adobe sul server Forms. Per istruzioni sull’accesso a questa opzione, consulta [Creare o modificare le impostazioni del tipo di file](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Estensioni nome file:** Elenco separato da virgole delle estensioni dei nomi di file che possono essere convertite.
 
@@ -251,7 +251,7 @@ Per istruzioni sull&#39;accesso a questa impostazione, vedere [Creare o modifica
 
    * Se necessario, selezionare una directory dei font diversa dalla **Origine font** menu a discesa. Questo menu a discesa elenca le directory dei font specificate in **Home > Impostazioni > Sistema core > Configurazioni core**.
    * Selezionare uno o più tipi di carattere dal **Caratteri disponibili** e fai clic su **Aggiungi**. Questi font vengono aggiunti al **Caratteri da annullare l&#39;incorporamento** elenco.
-   * Se si desidera annullare l&#39;incorporamento di alcuni tipi di carattere che non esistono nel server Forms, immettere i nomi di tali tipi di carattere nel **Aggiungi font per annullare l&#39;incorporamento** casella. Clic **Aggiungi**.
+   * Se si desidera annullare l&#39;incorporamento di alcuni tipi di carattere che non esistono in Forms Server, immettere i nomi di tali tipi di carattere in **Aggiungi font per annullare l&#39;incorporamento** casella. Clic **Aggiungi**.
 
    >[!NOTE]
    >
@@ -313,7 +313,7 @@ Mantieni sovrastampa: fonde il colore della grafica trasparente con il colore di
 
 Nella tabella seguente sono illustrati i tipi di stampanti più comuni e la loro risoluzione misurata in dpi, la loro posizione predefinita dello schermo misurata in linee per pollice (lpi) e una risoluzione di ricampionamento per le immagini misurate in pixel per pollice (ppi). Se ad esempio si stampa su una stampante laser a 600 dpi, immettere 170 per la risoluzione con cui ricampionare le immagini.
 
-**Immagini** Selezionate Immagini per specificare le opzioni di compressione e ricampionamento per le immagini a colori, in scala di grigi e monocromatiche. È possibile sperimentare queste opzioni per trovare un giusto equilibrio tra le dimensioni del file e la qualità dell&#39;immagine.L&#39;impostazione della risoluzione per le immagini a colori e in scala di grigio deve essere da 1,5 a 2 volte la risoluzione dello schermo a linee in corrispondenza della quale verrà stampato il file. La risoluzione per le immagini monocromatiche deve essere la stessa del dispositivo di output, ma è bene tenere presente che il salvataggio di un&#39;immagine monocromatica a una risoluzione superiore a 1500 dpi aumenta le dimensioni del file senza migliorare in modo significativo la qualità dell&#39;immagine. Le immagini che verranno ingrandite, ad esempio le mappe, potrebbero richiedere risoluzioni più elevate.
+**Immagini** Selezionate Immagini per specificare le opzioni di compressione e ricampionamento per le immagini a colori, in scala di grigi e monocromatiche. È possibile sperimentare queste opzioni per trovare un giusto equilibrio tra le dimensioni del file e la qualità dell&#39;immagine.L&#39;impostazione della risoluzione per le immagini a colori e in scala di grigio deve essere da 1,5 a 2 volte la risoluzione dello schermo a linee in corrispondenza della quale verrà stampato il file. La risoluzione per le immagini monocromatiche deve essere la stessa del dispositivo di output, ma il salvataggio di un&#39;immagine monocromatica con una risoluzione superiore a 1500 dpi aumenta le dimensioni del file senza migliorare in modo significativo la qualità dell&#39;immagine. Le immagini che verranno ingrandite, ad esempio le mappe, potrebbero richiedere risoluzioni più elevate.
 
 >[!NOTE]
 >

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -41,13 +41,13 @@ Se i moduli AEM non sono in grado di autenticare un utente utilizzando uno di qu
    * **Intestazione HTTP per il dominio:** (Non obbligatorio) Nome dell’intestazione il cui valore contiene il nome di dominio. Usa questa impostazione solo se nessuna singola intestazione HTTP identifica l’utente in modo univoco. Utilizza questa impostazione per i casi in cui esistono più domini e l’identificatore univoco è univoco solo all’interno di un dominio. In questo caso, specificare il nome dell&#39;intestazione in questa casella di testo e specificare il mapping dei domini per i domini multipli nella casella Mapping domini. (vedere [Modifica e conversione di domini esistenti](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
    * **Mappatura dominio:** (Obbligatorio) Specifica la mappatura per più domini nel formato *header value=domain name*.
 
-      Consideriamo ad esempio una situazione in cui l’intestazione HTTP per un dominio è domainName e può avere valori di domain1, domain2 o domain3. In questo caso, utilizza la mappatura del dominio per mappare i valori domainName ai nomi di dominio User Management. Ogni mappatura deve essere su una riga diversa:
+     Consideriamo ad esempio una situazione in cui l’intestazione HTTP per un dominio è domainName e può avere valori di domain1, domain2 o domain3. In questo caso, utilizza la mappatura del dominio per mappare i valori domainName ai nomi di dominio User Management. Ogni mappatura deve essere su una riga diversa:
 
-      domain1=dominioUM1
+     domain1=dominioUM1
 
-      domain2=dominioUM2
+     domain2=dominioUM2
 
-      domain3=dominioUM3
+     domain3=dominioUM3
 
 ### Configurare i referenti consentiti {#configure-allowed-referers}
 
@@ -63,7 +63,7 @@ Puoi anche abilitare il SSO utilizzando le intestazioni HTTP. (vedere [Abilita S
 >
 >AEM Forms su JEE non supporta la configurazione del SSO utilizzando Kerberos/SPNEGO in più ambienti di dominio figlio.
 
-1. Decidi quale dominio utilizzare per abilitare l&#39;SSO. Il server AEM forms e gli utenti devono far parte dello stesso dominio Windows o dominio trusted.
+1. Decidi quale dominio utilizzare per abilitare l&#39;SSO. Il server AEM Forms e gli utenti devono far parte dello stesso dominio Windows o dominio trusted.
 1. In Active Directory, creare un utente che rappresenti il server AEM Forms. (vedere [Creare un account utente](enabling-single-sign-on-aem.md#create-a-user-account).) Se configuri più domini per l&#39;utilizzo di SPNEGO, assicurati che le password di ciascuno di questi utenti siano diverse. Se le password non sono diverse, SPNEGO SSO non funziona.
 1. Mappare il nome dell&#39;entità servizio. (vedere [Mappare un nome principale di servizio (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configurare il controller di dominio. (vedere [Impedisci errori di verifica integrità Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
@@ -150,9 +150,9 @@ Se si accede al server utilizzando il nome del computer, ad esempio https://lcse
 
 1. Vai a Strumenti > Opzioni Internet e fai clic sulla scheda Sicurezza.
 1. Fare clic sull&#39;icona Intranet locale e quindi su Sites.
-1. Fare clic su Avanzate e nella casella Aggiungi il sito Web all&#39;area digitare l&#39;URL del server dei moduli. Ad esempio, digitare `https://lcserver.um.lc.com`
+1. Fare clic su Avanzate e nella casella Aggiungi il sito Web all&#39;area digitare l&#39;URL del server Forms. Ad esempio, digitare `https://lcserver.um.lc.com`
 1. Fare clic su OK fino a quando tutte le finestre di dialogo non vengono chiuse.
-1. Verifica la configurazione accedendo all’URL del server dei moduli AEM. Ad esempio, nella casella URL browser, digita `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Verifica la configurazione accedendo all’URL del server AEM Forms. Ad esempio, nella casella URL browser, digita `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Configurare Mozilla Firefox**
 

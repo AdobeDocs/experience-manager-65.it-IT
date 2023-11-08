@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ Una distribuzione minima con MongoDB implica in genere la seguente topologia:
 
 Inoltre, si consiglia vivamente di configurare l’archivio dati su un file system condiviso o su Amazon S3, in modo che le risorse o i dati binari non vengano memorizzati in MongoDB. In questo modo verranno garantite prestazioni ottimali all&#39;interno dell&#39;implementazione.
 
-Uno dei vantaggi aggiuntivi della distribuzione di un set di repliche MongoDB con un cluster di due o più istanze di authoring è uno scenario di ripristino automatizzato con tempi di inattività minimi in caso di istanze di authoring, replica MongoDB o errore completo del centro dati. Tuttavia, la scelta di MongoMK rispetto a TarMK non dovrebbe essere esclusivamente guidata dai requisiti di ripristino, in quanto TarMK può anche fornire una soluzione di downtime minima con un meccanismo di failover controllato.
+Uno dei vantaggi aggiuntivi della distribuzione di un set di repliche MongoDB con un cluster di due o più istanze di authoring è uno scenario di ripristino automatizzato con tempi di inattività minimi in presenza di istanze di authoring, replica MongoDB o errore completo del centro dati. Tuttavia, la scelta di MongoMK rispetto a TarMK non dovrebbe essere esclusivamente guidata dai requisiti di ripristino, in quanto TarMK può anche fornire una soluzione di downtime minima con un meccanismo di failover controllato.
 
 Se non si prevede che i criteri di cui sopra siano soddisfatti durante i primi diciotto mesi di implementazione, si consiglia prima di implementare l’AEM utilizzando TarMK, quindi di rivalutare la configurazione in un secondo momento, quando i criteri di cui sopra saranno applicabili, e infine di determinare se rimanere su TarMK o migrare a MongoMK.
 

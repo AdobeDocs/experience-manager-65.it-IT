@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4840'
+source-wordcount: '4834'
 ht-degree: 77%
 
 ---
@@ -53,7 +53,7 @@ Prima di iniziare, è importante considerare i seguenti punti:
 
 * La creazione di un modello richiede collaborazione. Per questo motivo per ogni attività è indicato il relativo [Ruolo.](#roles)
 
-* A seconda della configurazione dell’istanza, potrebbe essere utile tenere presente che ora l’AEM fornisce [due tipi di modello di base](/help/sites-authoring/templates.md#editable-and-static-templates). Questo non influisce su come effettivamente [utilizzare un modello per creare una pagina](#using-a-template-to-create-a-page), ma influisce sul tipo di modello che è possibile creare e su come una pagina si relaziona al relativo modello.
+* A seconda di come è configurata l’istanza, AEM ora fornisce [due tipi di modello di base](/help/sites-authoring/templates.md#editable-and-static-templates). Questo non influisce su come effettivamente [utilizzare un modello per creare una pagina](#using-a-template-to-create-a-page), ma influisce sul tipo di modello che è possibile creare e su come una pagina si relaziona al relativo modello.
 
 ### Ruoli {#roles}
 
@@ -314,7 +314,7 @@ Durante la creazione o la modifica di un modello è possibile definire vari aspe
 
   >[!NOTE]
   >
-  >In entrata **Contenuto iniziale** e nelle pagine risultanti, tutti i componenti sbloccati che hanno un elemento padre accessibile (ad esempio i componenti all’interno di un contenitore di layout) possono essere eliminati.
+  >Nella modalità **Contenuto iniziale** e nelle pagine risultanti, tutti i componenti sbloccati che hanno un elemento principale accessibile (ad esempio i componenti all’interno di un contenitore di layout) possono essere eliminati.
 
 * [Layout](#editingatemplatelayout)
 

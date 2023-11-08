@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '15468'
+source-wordcount: '15464'
 ht-degree: 0%
 
 ---
@@ -323,7 +323,7 @@ Per esempi di codice con il servizio Document Security, consulta la sezione Quic
 
 ## Modifica dei criteri {#modifying-policies}
 
-Puoi modificare una policy esistente utilizzando l’API Java di Document Security o l’API di servizio web. Per apportare modifiche a un criterio esistente, è necessario recuperarlo, modificarlo e quindi aggiornare il criterio sul server. Si supponga, ad esempio, di recuperare un criterio esistente e di estenderne il periodo di validità. Prima che la modifica entri in vigore, devi aggiornare il criterio.
+Puoi modificare una policy esistente utilizzando l’API Java di Document Security o l’API di servizio web. Per modificare un criterio esistente, recuperarlo, modificarlo e quindi aggiornare il criterio sul server. Si supponga, ad esempio, di recuperare un criterio esistente e di estenderne il periodo di validità. Prima che la modifica entri in vigore, devi aggiornare il criterio.
 
 È possibile modificare un criterio quando cambiano i requisiti aziendali e il criterio non riflette più questi requisiti. Invece di creare un criterio, puoi semplicemente aggiornare un criterio esistente.
 
@@ -1477,7 +1477,7 @@ Per esempi di codice con il servizio Document Security, consulta la sezione Quic
 
 ## Modifica delle filigrane {#modifying-watermarks}
 
-Puoi modificare una filigrana esistente utilizzando l’API Java di Document Security o l’API di servizio web. Per apportare modifiche a una filigrana esistente, recuperarla, modificarne gli attributi e quindi aggiornarla sul server. Si supponga, ad esempio, di recuperare una filigrana e di modificarne l&#39;attributo di opacità. Prima di applicare la modifica, è necessario aggiornare la filigrana.
+Puoi modificare una filigrana esistente utilizzando l’API Java di Document Security o l’API di servizio web. Per modificare una filigrana esistente, recuperarla, modificarne gli attributi e quindi aggiornarla sul server. Si supponga, ad esempio, di recuperare una filigrana e di modificarne l&#39;attributo di opacità. Prima di applicare la modifica, è necessario aggiornare la filigrana.
 
 Quando si modifica una filigrana, la modifica ha effetto sui documenti futuri a cui è applicata la filigrana. In altre parole, i documenti PDF esistenti che contengono la filigrana non vengono interessati.
 

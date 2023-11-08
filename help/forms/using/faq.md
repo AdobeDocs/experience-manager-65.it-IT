@@ -12,7 +12,7 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 0%
@@ -186,7 +186,7 @@ Risposta: il campo Data accetta il formato ISO AAAA-MM-GG. Se si specifica una d
 
    * Il supporto per lo script xfa.connectionSet è limitato. Per connectionSet è supportata solo la chiamata lato server del servizio Web. Per informazioni dettagliate, consulta [Supporto script](/help/forms/using/scripting-support.md).
    * Negli script lato client non sono supportati $record e $data. Tuttavia, se gli script vengono scritti in un blocco formReady, layoutReady, gli script funzioneranno comunque perché questi eventi vengono eseguiti sul lato server.
-   * Gli script XFA Draw specifici dell’elemento, come la modifica del testo Draw (o del testo della didascalia in caso di campi), non sono supportati.
+   * Gli script XFA Draw specifici dell’elemento, come la modifica del testo Draw (o del testo della didascalia se sono presenti campi), non sono supportati.
 
 1. Esistono limitazioni nell&#39;utilizzo di formCalc?
 

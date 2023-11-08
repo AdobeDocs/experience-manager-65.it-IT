@@ -9,9 +9,9 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Il Quickview predefinito viene utilizzato nelle esperienze di e-commerce, in cui viene visualizzato un pop-up con le informazioni di prodotto per stimolare un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore, questa funzionalità consente agli utenti di selezionare un punto attivo, un&#39;immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
-Quickview è supportato dai seguenti visualizzatori in Dynamic Media:
+Quickview è supportato dai seguenti visualizzatori in Dynamic Medie:
 
 * Immagine interattiva (hotspot cliccabili)
 * Video interattivo (miniature cliccabili durante la riproduzione del video)
@@ -78,7 +78,7 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
     </tbody>
    </table>
 
-1. Il visualizzatore che si sta utilizzando ora deve sapere come utilizzare Quickview.
+1. Il visualizzatore utilizzato deve sapere come utilizzare Quickview.
 
    Il visualizzatore utilizza un gestore denominato `QuickViewActive`.
 
@@ -109,7 +109,7 @@ Supponiamo di utilizzare il seguente codice di incorporamento di esempio nella p
    * Visualizzatore immagini interattivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visualizzatore video interattivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Ora devi configurare il `quickViewActivate` handler.
+1. Devi configurare il `quickViewActivate` handler.
 
    Il `quickViewActivate` Il gestore controlla Quickview nel visualizzatore. Il gestore contiene l&#39;elenco delle variabili e le chiamate di funzione da utilizzare con Quickview. Il codice di incorporamento fornisce la mappatura per la variabile SKU impostata in Quickview e un esempio `loadQuickView` chiamata di funzione.
 
@@ -148,9 +148,10 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    * Mappa eventuali variabili aggiuntive contenute in Quickview.
 
       * Aggiornare il `loadQuickView(sku,*var1*,*var2*)` se stai aggiungendo ulteriori variabili.
+
    * Creare un semplice `loadQuickView` () sulla pagina, all&#39;esterno del visualizzatore.
 
-      Ad esempio, il valore SKU viene scritto nella console del browser come segue:
+     Ad esempio, il valore SKU viene scritto nella console del browser come segue:
 
    ```xml
    function loadQuickView(sku){
@@ -160,9 +161,7 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
 
    * Carica una pagina di test HTML in un server web e apri.
 
-      Con le variabili di Quickview mappate e la chiamata di funzione attiva, la console del browser scrive il valore della variabile nella console del browser utilizzando la funzione di esempio fornita.
-
-
+     Con le variabili di Quickview mappate e la chiamata di funzione attiva, la console del browser scrive il valore della variabile nella console del browser utilizzando la funzione di esempio fornita.
 
 1. È ora possibile utilizzare una funzione per richiamare una semplice finestra a comparsa in Quickview. L’esempio che segue utilizza un `DIV` per un popup.
 1. Personalizzare lo stile della finestra a comparsa `DIV` nel modo seguente. Aggiungi il tuo stile aggiuntivo come desiderato.

@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3446'
+source-wordcount: '3447'
 ht-degree: 1%
 
 ---
@@ -181,7 +181,7 @@ newComponent (cq:Component)
             description
 ```
 
-La personalizzazione di una finestra di dialogo è simile allo sviluppo di un componente, in quanto la finestra di dialogo stessa è un componente (ovvero un markup rappresentato da uno script di componente insieme al comportamento/stile fornito da una libreria client).
+La personalizzazione di una finestra di dialogo è simile allo sviluppo di un componente, in quanto la finestra di dialogo stessa è un componente (ovvero, un markup rappresentato da uno script di componente insieme al comportamento/stile fornito da una libreria client).
 
 Per esempi, consulta:
 
@@ -243,7 +243,7 @@ Ad esempio, consulta:
 A seconda delle tue esigenze, puoi effettuare le seguenti operazioni:
 
 * Estendere un determinato campo dell’interfaccia utente Granite per ereditarietà di componenti ( `sling:resourceSuperType`)
-* Estendere un determinato widget dalla libreria di widget sottostante (nel caso dell’interfaccia utente Granite, Coral UI), seguendo l’API della libreria di widget (ereditarietà JS/CSS)
+* Estendere un determinato widget dalla libreria di widget sottostante (se è presente l’interfaccia utente Granite, è l’interfaccia utente Coral), seguendo l’API della libreria di widget (ereditarietà JS/CSS)
 
 #### Accesso ai campi della finestra di dialogo {#access-to-dialog-fields}
 

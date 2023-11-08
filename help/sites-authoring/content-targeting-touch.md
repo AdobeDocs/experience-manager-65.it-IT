@@ -1,19 +1,15 @@
 ---
 title: Creazione di contenuti di destinazione utilizzando la modalità di targeting
-seo-title: Authoring Targeted Content Using Targeting Mode
 description: La modalità di targeting e il componente Target forniscono gli strumenti per la creazione di contenuti per esperienze
-seo-description: Targeting mode and the Target component provide tools for creating content for experiences
-uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5383'
 ht-degree: 87%
 
 ---
@@ -635,7 +631,7 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
 
    La pagina cambia per mostrare il contenuto di destinazione per il contesto corrente.
 
-1. Per apportare modifiche alle offerte visualizzate, passa alla modalità di targeting. Con l’attività di simulazione selezionata, modifica le offerte per il contesto configurato in modalità Anteprima.
+1. Per modificare le offerte visualizzate, passa alla modalità Targeting. Con l’attività di simulazione selezionata, modifica le offerte per il contesto configurato in modalità Anteprima.
 
 ## Configurazione delle opzioni dei componenti di destinazione {#configuring-target-component-options}
 

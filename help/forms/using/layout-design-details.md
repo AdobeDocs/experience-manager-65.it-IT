@@ -1,19 +1,15 @@
 ---
 title: Progettazione layout
-seo-title: Layout Design
 description: Dettagli progettazione layout spiega come creare layout da utilizzare per lettere o comunicazioni interattive.
-seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
-uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
 content-type: reference
 topic-tags: correspondence-management, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -42,7 +38,7 @@ Segui questi passaggi per creare layout per lettere/canale di stampa di comunica
 1. Un layout può essere progettato come segue:
 
    1. Creare ogni sezione come sottomaschera separata contenente tutti gli elementi della sezione.
-   1. Rende ogni sottomaschera di sezione figlio della stessa sottomaschera padre. Il layout della sottomaschera padre è impostato sul flusso per consentire lo spostamento delle sezioni al di sotto in caso di unione di dati di grandi dimensioni nelle sezioni precedenti.
+   1. Rende ogni sottomaschera di sezione figlio della stessa sottomaschera padre. Il layout della sottomaschera padre è impostato su Flusso per consentire lo spostamento delle sezioni al di sotto se sono presenti dati di grandi dimensioni uniti nelle sezioni precedenti.
    1. La sezione Residenza principale può essere riutilizzata anche in altri layout. Crealo come layout di frammento.
    1. Sezione Ulteriori dettagli di interesse contiene solo due elementi posizionati uno sotto l&#39;altro, può contenere dati di grandi dimensioni ed è progettato come flusso.
    1. Altre sezioni contengono elementi in posizioni specifiche, in modo che vengano progettate come layout posizionato.
@@ -208,7 +204,7 @@ Utilizzare un campo se si desidera acquisire dati modulo o dati elemento diziona
   </tr>
   <tr>
    <td><p>I gruppi di dati ripetuti, facoltativi e condizionali sono associati a sottomaschere per ridurre il rischio di errori di progettazione che potrebbero verificarsi se gli script vengono utilizzati per ottenere gli stessi risultati</p> </td>
-   <td><p>Elementi quali il logo e l’indirizzo dell’organizzazione vengono visualizzati su tutte le pagine di una lettera/comunicazione interattiva. In questo caso, creare campi modulo per tali elementi e inserirli nella pagina master. Se si imposta l'associazione dei campi su "Nessuna associazione dati", i campi non disponibili verranno visualizzati come campi correlati nell'Editor comunicazioni lettera/interattive. Se si desidera correlare un tipo di contenuto a questi campi, è necessario che siano associati.</p> <p>Se l'indirizzo della società contiene più righe di dati, utilizzare il campo di testo con l'opzione "Consenti più righe" per rappresentare l'indirizzo nel layout.</p> <p>Se il tipo di dati di un campo di testo è impostato su testo normale, viene utilizzata la versione in testo normale dell’output del modulo anziché la versione in testo RTF (tutta la formattazione viene scartata). Per mantenere la formattazione, impostare il tipo di dati del campo di testo su RTF.</p> </td>
+   <td><p>Elementi quali il logo e l’indirizzo dell’organizzazione vengono visualizzati su tutte le pagine di una lettera o di una comunicazione interattiva. In questo caso, creare campi modulo per tali elementi e inserirli nella pagina master. Se si imposta l'associazione dei campi su "Nessuna associazione dati", i campi non disponibili verranno visualizzati come campi correlati nell'Editor comunicazioni lettera/interattive. Se si desidera correlare un tipo di contenuto a questi campi, è necessario che siano associati.</p> <p>Se l'indirizzo della società contiene più righe di dati, utilizzare il campo di testo con l'opzione "Consenti più righe" per rappresentare l'indirizzo nel layout.</p> <p>Se il tipo di dati di un campo di testo è impostato su testo normale, viene utilizzata la versione in testo normale dell’output del modulo anziché la versione in testo RTF (tutta la formattazione viene scartata). Per mantenere la formattazione, impostare il tipo di dati del campo di testo su RTF.</p> </td>
   </tr>
   <tr>
    <td><p>Il testo scorre</p> </td>
@@ -227,7 +223,7 @@ Utilizzare un campo se si desidera acquisire dati modulo o dati elemento diziona
 
 ## Impostazione di elementi ripetitivi {#setting-up-repetitive-elements}
 
-Quando elementi quali il logo e l’indirizzo dell’organizzazione vengono visualizzati in tutte le pagine di una lettera o di una comunicazione interattiva, crea dei campi modulo per tali elementi e inseriscili nella pagina master. Utilizzare l&#39;associazione Nome (Nome campo) per questi campi.
+Quando elementi quali il logo e l&#39;indirizzo dell&#39;organizzazione vengono visualizzati in tutte le pagine di una lettera o di una comunicazione interattiva, creare campi modulo per tali elementi e inserirli nella pagina master. Utilizzare l&#39;associazione Nome (Nome campo) per questi campi.
 
 ## Specifica il formato di rendering del server {#specify-the-server-nbsp-render-format}
 

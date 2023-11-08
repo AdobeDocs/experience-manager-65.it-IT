@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2577'
+source-wordcount: '2582'
 ht-degree: 2%
 
 ---
@@ -195,7 +195,7 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
    >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
    >Il metodo consigliato per la configurazione e altre modifiche è:
    >
-   >* Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
+   >* Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
    >* Apporta le modifiche in `/apps`
 
 1. Sotto questo **Crea** un nodo con le seguenti proprietà:
@@ -659,7 +659,7 @@ Ad esempio, se vengono aggiunte due nuove proprietà di pagina:
 
 * Stile visivo chiave:
 
-   * Il requisito del progetto è che questa proprietà venga implementata in quanto è (solitamente) comune a tutti i paesi (o marchi, ecc.).
+   * Il requisito del progetto è che questa proprietà venga implementata in quanto è (di solito) comune a tutti i paesi (o marchi, e così via).
 
 Quindi è necessario assicurarsi che:
 

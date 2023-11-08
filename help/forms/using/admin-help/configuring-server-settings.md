@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2623'
 ht-degree: 0%
@@ -27,7 +27,7 @@ La pagina Impostazioni server consente di accedere a varie impostazioni per il f
 
 ## Configurazione delle impostazioni e-mail {#configuring-email-settings}
 
-È possibile specificare un account di posta elettronica per il server Forms, tramite il quale inviare messaggi di posta elettronica agli utenti e agli amministratori di AEM Forms. Questi messaggi e-mail vengono utilizzati per notificare e ricordare agli utenti le attività che devono completare, notificare all’utente le attività che hanno raggiunto una scadenza e notificare all’amministratore eventuali errori di processo che si verificano.
+È possibile specificare un account di posta elettronica per Forms Server, tramite il quale inviare messaggi di posta elettronica agli utenti e agli amministratori di AEM Forms. Questi messaggi e-mail vengono utilizzati per notificare e ricordare agli utenti le attività che devono completare, notificare all’utente le attività che hanno raggiunto una scadenza e notificare all’amministratore eventuali errori di processo che si verificano.
 
 Per abilitare l’invio di messaggi e-mail tra i moduli AEM e gli utenti, configura le impostazioni e-mail in uscita nella pagina Impostazioni e-mail. L&#39;e-mail in uscita deve utilizzare un server SMTP.
 
@@ -288,7 +288,7 @@ Nella pagina Impostazioni configurazione BAM impostare le connessioni al server 
 1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro di Forms > Impostazioni server > Impostazioni configurazione BAM.
 1. Nella casella Host BAM digitare il nome del server che esegue BAM. L&#39;impostazione predefinita è localhost.
 1. Nella casella Porta BAM digitare la porta da utilizzare per la connessione al server che esegue BAM. La porta BAM predefinita per JBoss è 8080, WebLogic 7001 e WebSphere 9080.
-1. Nella casella Host server digitare il nome o l&#39;indirizzo IP del server dei moduli host. Il valore predefinito è localhost.
+1. Nella casella Host server digitare il nome o l&#39;indirizzo IP dell&#39;host Forms Server. Il valore predefinito è localhost.
 1. Nella casella Porta server digitare il numero di porta utilizzato dal server Forms.
 1. Nelle caselle Nome utente e Password digitare l&#39;ID utente e la password appropriati per accedere al server BAM. Il nome utente predefinito è CognosNowAdmin e la password predefinita è manager.
 1. Fai clic su Salva.

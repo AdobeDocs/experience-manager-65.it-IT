@@ -1,20 +1,18 @@
 ---
 title: Come si creano o personalizzano i temi dei moduli adattivi?
-seo-title: How to create a theme for Adaptive Forms Core Components?
 description: Scopri come creare o personalizzare i temi per i componenti core Adaptive Forms utilizzando le specifiche BEM
-seo-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 keywords: crea tema dei componenti core per moduli adattivi, crea un nuovo tema, personalizza il tema, carica un nuovo tema, utilizza il tema nei moduli, elimina un tema, crea un tema nei moduli AEM 6.5
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1971'
 ht-degree: 6%
 
 ---
-
 
 # Creare o personalizzare un tema per moduli adattivi {#introduction-to-theme}
 
@@ -339,4 +337,3 @@ Per rimuovere i temi inutilizzati o indesiderati:
 * [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-

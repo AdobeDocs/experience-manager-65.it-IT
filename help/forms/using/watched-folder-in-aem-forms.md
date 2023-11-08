@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '7144'
 ht-degree: 0%
@@ -159,7 +159,7 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern
 * **throttleOn (booleano)**: quando questa opzione è selezionata, limita il numero di processi della cartella controllata che AEM Forms elabora in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. Il valore predefinito è true. (vedere [Informazioni sulla limitazione](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (booleano)**: quando è impostato su True, i file nella cartella dei risultati e nella cartella di mantenimento vengono sovrascritti. Se è impostato su False, vengono utilizzati file e cartelle con un suffisso di indice numerico per il nome. Il valore predefinito è False.
-* **preserveOnFailure (booleano)**: mantiene i file di input in caso di mancata esecuzione dell’operazione su un servizio. Il valore predefinito è true.
+* **preserveOnFailure (booleano)**: mantiene i file di input in caso di errore durante l’esecuzione dell’operazione su un servizio. Il valore predefinito è true.
 * **inputFilePattern (stringa)**: specifica il pattern dei file di input per una cartella controllata. Crea un elenco Consentiti di file di.
 * **asincrono (booleano)**: identifica il tipo di chiamata come asincrona o sincrona. Il valore predefinito è true (asincrono). L’elaborazione del file è un’attività che consuma risorse; mantieni il valore del flag asincrono su true per evitare che il thread principale del processo di scansione venga bloccato. In un ambiente cluster, è fondamentale mantenere il flag true per abilitare il bilanciamento del carico per i file elaborati tra i server disponibili. Se il flag è false, il processo di scansione tenta di eseguire l’elaborazione per ogni file/cartella di livello principale in sequenza all’interno del proprio thread. Non impostare il flag su false senza un motivo specifico, ad esempio un’elaborazione basata sul flusso di lavoro in una configurazione a server singolo.
 

@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Per le operazioni AWS, l&#39;implementazione di un&#39;unica posizione centrale 
 
 #### Problemi di prestazioni {#performance-concerns}
 
-Un datastore condiviso richiede che i file binari siano archiviati in un&#39;unità di rete condivisa tra tutte le istanze. L&#39;accesso a questi file binari in rete influisce negativamente sulle prestazioni del sistema. È possibile mitigare parzialmente l&#39;impatto utilizzando una connessione di rete veloce a un array veloce di dischi. Tuttavia, si tratta di una proposta costosa. Nel caso delle operazioni AWS, tutti i dischi sono remoti e richiedono la connettività di rete. I volumi temporanei perdono i dati quando l&#39;istanza viene avviata o arrestata.
+Un datastore condiviso richiede che i file binari siano archiviati in un&#39;unità di rete condivisa tra tutte le istanze. L&#39;accesso a questi file binari in rete influisce negativamente sulle prestazioni del sistema. È possibile mitigare parzialmente l&#39;impatto utilizzando una connessione di rete veloce a un array veloce di dischi. Tuttavia, si tratta di una proposta costosa. In presenza di operazioni AWS, tutti i dischi sono remoti e richiedono la connettività di rete. I volumi temporanei perdono i dati quando l&#39;istanza viene avviata o arrestata.
 
 #### Latenza {#latency}
 

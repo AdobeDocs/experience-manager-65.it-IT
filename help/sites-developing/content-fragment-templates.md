@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '675'
 ht-degree: 4%
 
 ---
@@ -56,12 +56,10 @@ L’ordine di precedenza è (in ordine decrescente) `/conf`, `/apps`, `/libs`.
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
->1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
+>1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
 >
 >1. Apporta le modifiche in `/apps`
-
 >
-
 
 La struttura di base di un modello si trova in:
 
@@ -109,7 +107,7 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
 
 * **Modello**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -151,7 +149,7 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
 
 * **Elementi**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -159,16 +157,16 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
      <th>Valore</th>
     </tr>
     <tr>
-     <td><code>elements</code> </td>
+     <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obbligatorio</p> </td>
-     <td><p>Nodo che contiene la definizione degli elementi del frammento di contenuto. È obbligatorio e deve contenere almeno un nodo figlio per <strong>Principale</strong> , ma può contenere [1..n] nodi secondari.</p> <p>Quando si utilizza il modello, il ramo secondario degli elementi viene copiato nel ramo secondario del modello del frammento.</p> <p>Il primo elemento (visualizzato in CRXDE Lite) viene automaticamente considerato come <i>principale</i> Il nome del nodo è irrilevante e il nodo stesso non ha un significato particolare, a parte il fatto che è rappresentato dalla risorsa principale; gli altri elementi sono gestiti come risorse secondarie.</p> </td>
+     <td><p>Nodo che contiene la definizione degli elementi del frammento di contenuto. È obbligatorio e deve contenere almeno un nodo figlio per <strong>Principale</strong> , ma può contenere [1..n] nodi secondari.</p> <p>Quando si utilizza il modello, il ramo secondario degli elementi viene copiato nel ramo secondario del modello del frammento.</p> <p>Il primo elemento (visualizzato in CRXDE Liti) viene automaticamente considerato come <i>principale</i> Il nome del nodo è irrilevante e il nodo stesso non ha un significato particolare, a parte il fatto che è rappresentato dalla risorsa principale; gli altri elementi sono gestiti come risorse secondarie.</p> </td>
     </tr>
    </tbody>
   </table>
 
 * **Nome elemento**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -210,7 +208,7 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
 
 * **Varianti**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -218,7 +216,7 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
      <th>Valore</th>
     </tr>
     <tr>
-     <td><code>variations</code> </td>
+     <td><code>variations</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>facoltativo</p> </td>
      <td>Questo nodo facoltativo contiene la definizione delle varianti iniziali del frammento di contenuto.</td>
     </tr>
@@ -227,7 +225,7 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
 
 * **Nome variante**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Nome</th>
@@ -235,7 +233,7 @@ Ulteriori dettagli sui nodi e sulle relative proprietà sono:
      <th>Valore</th>
     </tr>
     <tr>
-     <td><code>&lt;<i>variation-name</i>&gt;</code> </td>
+     <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obbligatorio se è presente un nodo di variante</p> </td>
      <td><p>Definisce una variante iniziale.<br /> La variante viene aggiunta a tutti gli elementi del frammento di contenuto per impostazione predefinita.</p> <p>La variante avrà lo stesso contenuto iniziale del rispettivo elemento (vedi <code class="code">defaultContent/
        initialContentType</code>)</p> </td>

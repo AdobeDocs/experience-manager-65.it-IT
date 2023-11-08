@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
-source-git-commit: 2a2f8538b6554540b546f4d345c0b3c0d3e706f3
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Per sincronizzare i domini, puoi scegliere di eseguire una sincronizzazione manu
 
 La sincronizzazione della directory viene utilizzata per richiamare i dettagli dai server delle directory specificati nelle impostazioni della directory nel database di gestione utenti. In seguito, è possibile eseguire una sincronizzazione manuale anche se si verificano modifiche o aggiornamenti sui server delle directory. Ad esempio, puoi eseguire una sincronizzazione manuale se utenti e gruppi vengono aggiunti o se vengono apportate modifiche all’account di un utente.
 
-È inoltre possibile impostare una pianificazione di sincronizzazione giornaliera per sincronizzare automaticamente il database di User Management con le modifiche o gli aggiornamenti ai server delle directory di origine. Tenere tuttavia presente che questo processo utilizza risorse di rete e server. È possibile scegliere periodi di utilizzo ridotti ed evitare di pianificare sincronizzazioni non necessarie che bloccano le risorse di sistema e di rete. Per ridurre al minimo le sincronizzazioni non necessarie, utilizzare invece l&#39;opzione di sincronizzazione immediata.
+È inoltre possibile impostare una pianificazione di sincronizzazione giornaliera per sincronizzare automaticamente il database di User Management con le modifiche o gli aggiornamenti ai server delle directory di origine. Tuttavia, questo processo utilizza risorse di rete e server. È possibile scegliere periodi di utilizzo ridotti ed evitare di pianificare sincronizzazioni non necessarie che bloccano le risorse di sistema e di rete. Per ridurre al minimo le sincronizzazioni non necessarie, utilizzare invece l&#39;opzione di sincronizzazione immediata.
 
 È inoltre possibile specificare se inviare informazioni su utenti e gruppi al LiveCycle Adobe Content Services 9 (obsoleto) durante la sincronizzazione dei domini.
 

@@ -2,10 +2,10 @@
 title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per filtrare, impaginare e ordinare i frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 60%
+source-wordcount: '1964'
+ht-degree: 58%
 
 ---
 
@@ -177,10 +177,10 @@ Consulta:
 
 Il tempo di risposta di query complesse, con set di risultati di grandi dimensioni, può essere migliorato segmentando le risposte in blocchi utilizzando l’impaginazione, uno standard di GraphQL.
 
-GraphQL in AEM supporta due tipi di impaginazione:
+GraphQL nell’AEM supporta due tipi di impaginazione:
 
-* [paginazione basata su limite/offset](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
-Viene utilizzata per le query elenco; queste terminano con `List`; ad esempio, `articleList`.
+* [paginazione basata su limite/scostamento](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+Viene utilizzato per le query elenco; queste terminano con `List`ad esempio, `articleList`.
 Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o dimensioni della pagina).
 
 * [paginazione basata su cursore](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (rappresentato da `first` e `after`)

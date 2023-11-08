@@ -5,10 +5,10 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1959'
-ht-degree: 25%
+source-wordcount: '1961'
+ht-degree: 24%
 
 ---
 
@@ -178,7 +178,7 @@ La risposta conterrà informazioni di paging come parte del `properties` sezione
 
 >[!NOTE]
 >
->Il paging viene in genere applicato alle entità contenitore (ad esempio cartelle o risorse con rappresentazioni), in quanto si riferisce agli elementi figlio dell’entità richiesta.
+>Il paging viene in genere applicato alle entità contenitore (ovvero cartelle o risorse con rappresentazioni), in quanto si riferisce agli elementi figlio dell’entità richiesta.
 
 #### Esempio: paging {#example-paging}
 
@@ -231,7 +231,7 @@ Frammenti di contenuto:
 * Non esporre dati binari.
 * Sono completamente contenuti nell’output JSON (all’interno del `properties` proprietà ).
 
-* Sono anche considerati atomici, ovvero gli elementi e le varianti vengono esposti come parte delle proprietà del frammento e non come collegamenti o entità secondarie. Questo consente un accesso efficiente al payload di un frammento.
+* Sono anche considerati atomici, ovvero gli elementi e le varianti vengono esposti come parte delle proprietà del frammento e come collegamenti o entità secondarie. Questo consente un accesso efficiente al payload di un frammento.
 
 #### Modelli di contenuto e frammenti di contenuto {#content-models-and-content-fragments}
 

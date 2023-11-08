@@ -2,10 +2,10 @@
 title: Casella in entrata per gestire le attività
 description: Gestione delle attività con la casella in entrata in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 43%
+source-wordcount: '1143'
+ht-degree: 41%
 
 ---
 
@@ -44,7 +44,7 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
 
-Da una qualsiasi console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può essere aperto anche per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
+Da una qualsiasi console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può anche essere aperto per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
 
 ![wf-80](assets/wf-80.png)
 

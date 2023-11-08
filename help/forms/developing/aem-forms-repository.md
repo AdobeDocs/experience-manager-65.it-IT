@@ -11,7 +11,7 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '9095'
 ht-degree: 0%
@@ -593,7 +593,7 @@ Quando aggiorni una risorsa, la nuova versione viene creata in base agli attribu
 
 Ad esempio, se aggiorni un file XDP che contiene riferimenti ad altre risorse, anche questi riferimenti aggiuntivi verranno registrati. Si supponga che la versione 1.0 di form.xdp disponga di due riferimenti esterni: un logo e un foglio di stile e che successivamente venga aggiornato form.xdp in modo che ora disponga di tre riferimenti: un logo, un foglio di stile e un file di schema. Durante l’aggiornamento, l’archivio aggiungerà la terza relazione (al file di schema) alla tabella delle relazioni in sospeso. Una volta che il file di schema è presente nell’archivio, la relazione viene formata automaticamente. Tuttavia, se la versione 2.0 di form.xdp non utilizza più il logo, la versione 2.0 di form.xdp non avrà una relazione con il logo.
 
-Tutte le operazioni di aggiornamento sono atomiche e transazionali. Ad esempio, se due utenti leggono la stessa risorsa ed entrambi decidono di aggiornare la versione 1.0 alla versione 2.0, uno di loro avrà esito positivo e uno di loro avrà esito negativo, l’integrità dell’archivio verrà mantenuta ed entrambi riceveranno un messaggio di conferma del completamento o del fallimento. Se la transazione non esegue il commit, verrà eseguito il rollback in caso di errore del database e verrà eseguito il timeout o il rollback a seconda del server applicazioni.
+Tutte le operazioni di aggiornamento sono atomiche e transazionali. Ad esempio, se due utenti leggono la stessa risorsa ed entrambi decidono di aggiornare la versione 1.0 alla versione 2.0, uno di loro avrà esito positivo e uno di loro avrà esito negativo, l’integrità dell’archivio verrà mantenuta ed entrambi riceveranno un messaggio di conferma del completamento o del fallimento. Se la transazione non viene eseguita, verrà eseguito il rollback in caso di errore del database e verrà eseguito il timeout o il rollback a seconda del server applicazioni.
 
 Puoi aggiornare le risorse a livello di programmazione utilizzando l’API Java del servizio Archivio o l’API del servizio web.
 

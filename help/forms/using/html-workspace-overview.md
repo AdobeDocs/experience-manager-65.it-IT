@@ -1,18 +1,14 @@
 ---
 title: Utilizzo dell’area di lavoro AEM Forms
-seo-title: Working with AEM Forms workspace
 description: Inizia a usare l’area di lavoro di AEM Forms con questa breve panoramica sui flussi di lavoro dei processi.
-seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
-uuid: 36381e7b-1533-459c-80de-92e806a49cd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -51,7 +47,7 @@ Puoi utilizzare l’area di lavoro di AEM Forms per eseguire le seguenti attivit
 
 Flex Workspace non è supportato per i clienti AEM Forms. Tutti i clienti che utilizzano Flex Workspace devono passare ad AEM Forms Workspace.
 
-Nell’area di lavoro di AEM Forms, i servizi predefiniti di rendering e invio, nel profilo azione predefinito, associati ai moduli XDP sono stati modificati e sono stati introdotti nuovi servizi. Per ulteriori informazioni, consulta [Nuovo servizio di rendering e invio](/help/forms/using/new-render-submit-service.md). Per eseguire la migrazione dei processi esistenti che funzionano con i moduli XDP e utilizzare questi servizi, puoi seguire [questi passaggi](new-render-submit-service.md).
+Nell’area di lavoro di AEM Forms, i servizi predefiniti di rendering e invio, nel profilo azione predefinito, associati ai moduli XDP sono stati modificati e sono stati introdotti nuovi servizi. Per ulteriori informazioni, consulta [Nuovo servizio di rendering e invio](/help/forms/using/new-render-submit-service.md). Per migrare i processi esistenti che funzionano con i moduli XDP e utilizzare questi servizi, puoi seguire [questi passaggi](new-render-submit-service.md).
 
 **Mappatura delle personalizzazioni di Flex Workspace con AEM Forms Workspace**
 

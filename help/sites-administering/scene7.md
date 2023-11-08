@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5484'
+source-wordcount: '5483'
 ht-degree: 1%
 
 ---
@@ -383,7 +383,7 @@ Quando una risorsa viene aggiunta in Experience Manager Assets, viene caricata e
 
 1. Seleziona l’icona Experience Manager e passa a **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud Service]**.
 1. Sotto l’intestazione Dynamic Medie, in Configurazioni disponibili, seleziona **[!UICONTROL dms7 (Dynamic Medie)]**).
-1. Seleziona la **[!UICONTROL Avanzate]** , seleziona la scheda **[!UICONTROL Abilita caricamento automatico]** , quindi seleziona **[!UICONTROL OK]**. Ora devi configurare il flusso di lavoro Risorsa DAM per includere il caricamento in Dynamic Media Classic.
+1. Seleziona la **[!UICONTROL Avanzate]** , seleziona la scheda **[!UICONTROL Abilita caricamento automatico]** , quindi seleziona **[!UICONTROL OK]**. Devi configurare il flusso di lavoro Risorsa DAM per includere il caricamento in Dynamic Media Classic.
 
    >[!NOTE]
    >

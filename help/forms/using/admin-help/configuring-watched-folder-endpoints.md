@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7176'
+source-wordcount: '7174'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ I file di sola lettura non vengono elaborati e verranno salvati nella cartella d
 
 Il valore predefinito è errore/%Y/%M/%D/.
 
-**Mantieni in caso di errore:** Mantenere i file di input in caso di mancata esecuzione dell&#39;operazione su un servizio. Il valore predefinito è true.
+**Mantieni in caso di errore:** Mantenere i file di input in caso di errore durante l&#39;esecuzione dell&#39;operazione su un servizio. Il valore predefinito è true.
 
 **Sovrascrivi nomi file duplicati:** Se è impostato su True, i file presenti nella cartella dei risultati e nella cartella di conservazione vengono sovrascritti. Se è impostato su False, vengono utilizzati file e cartelle con un suffisso di indice numerico per il nome. Il valore predefinito è False.
 
@@ -225,7 +225,7 @@ Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati
 
 **Valore letterale:** La cartella controllata utilizza il valore immesso nel campo così come viene visualizzata. Sono supportati tutti i tipi Java di base. Ad esempio, se un’API utilizza input come String, long, int e Boolean, la stringa viene convertita nel tipo corretto e il servizio viene richiamato.
 
-**Variabile:** Il valore immesso è un pattern di file utilizzato dalla cartella controllata per scegliere l&#39;input. Nel caso del servizio crittografa password, ad esempio, in cui il documento di input deve essere un file PDF, l&#39;utente può utilizzare &amp;ast;.pdf come modello di file. La cartella controllata raccoglierà tutti i file della cartella controllata che corrispondono a questo modello e richiamerà il servizio per ogni file. Quando si utilizza una variabile, tutti i file di input vengono convertiti in documenti. Sono supportate solo le API che utilizzano Document come tipo di input.
+**Variabile:** Il valore immesso è un pattern di file utilizzato dalla cartella controllata per scegliere l&#39;input. Se, ad esempio, è disponibile il servizio di crittografia password, in cui il documento di input deve essere un file PDF, l&#39;utente può utilizzare &amp;ast;.pdf come modello di file. La cartella controllata raccoglierà tutti i file della cartella controllata che corrispondono a questo modello e richiamerà il servizio per ogni file. Quando si utilizza una variabile, tutti i file di input vengono convertiti in documenti. Sono supportate solo le API che utilizzano Document come tipo di input.
 
 **Mappature parametri di output:** Utilizzato per configurare gli output del servizio e dell’operazione. Le impostazioni disponibili dipendono dal servizio che utilizza l’endpoint della cartella controllata.
 
@@ -284,13 +284,13 @@ La cartella controllata esegue la scansione della cartella di input a ogni inter
 La limitazione impedisce a Cartella controllata di richiamare nuovi processi quando i processi precedenti non sono completati. La cartella controllata rileverà i processi in corso ed elaborerà nuovi processi in base alle dimensioni del batch meno quelli in corso. Ad esempio, nella seconda chiamata, se il numero di processi completati è solo tre e un processo è ancora in corso, la cartella controllata richiama solo altri tre processi.
 
 * La cartella controllata si basa sul numero di file presenti nella cartella dell’area di visualizzazione per individuare quanti processi sono in corso. Se i file rimangono non elaborati nella cartella di staging, la cartella controllata non richiamerà altri processi. Ad esempio, se la dimensione del batch è quattro e tre processi sono in stallo, la cartella controllata richiamerà solo un processo nelle chiamate successive. Esistono più scenari che possono impedire l’elaborazione dei file nella cartella dell’area di visualizzazione. Quando i processi vengono arrestati, l’amministratore può terminare il processo nella pagina di amministrazione del flusso di lavoro dei moduli in modo che Cartella controllata sposti i file fuori dalla cartella dell’area di visualizzazione.
-* Se il server dei moduli si blocca prima che la cartella controllata possa richiamare i processi, l’amministratore può spostare i file fuori dalla cartella di visualizzazione. Per informazioni, consulta [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
-* Se il server Forms è in esecuzione ma la cartella controllata non è in esecuzione quando il servizio Gestione processi richiama, ovvero quando i servizi non si avviano nella sequenza ordinata, l&#39;amministratore può spostare i file dalla cartella di stage. Per informazioni, consulta [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Se il server di Forms si blocca prima che la cartella controllata possa richiamare i processi, l’amministratore può spostare i file fuori dalla cartella di visualizzazione. Per informazioni, consulta [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Se il server Forms è in esecuzione ma la cartella controllata non è in esecuzione quando il servizio Gestione processi richiama, il che si verifica quando i servizi non si avviano nella sequenza ordinata, l&#39;amministratore può spostare i file fuori dalla cartella di stage. Per informazioni, consulta [Punti di errore e ripristino](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Prestazioni e scalabilità {#performance-and-scalability}
 
-La cartella controllata può servire in totale 100 cartelle su un singolo nodo. Le prestazioni di Cartella controllata dipendono dalle prestazioni del server Forms. Per la chiamata asincrona, le prestazioni dipendono maggiormente dal carico del sistema e dai processi presenti nella coda di Gestione processi.
+La cartella controllata può servire in totale 100 cartelle su un singolo nodo. Le prestazioni della cartella controllata dipendono dalle prestazioni del server Forms. Per la chiamata asincrona, le prestazioni dipendono maggiormente dal carico del sistema e dai processi presenti nella coda di Gestione processi.
 
 È possibile migliorare le prestazioni della cartella controllata aggiungendo nodi al cluster. I processi delle cartelle controllate vengono distribuiti tra i nodi del cluster in virtù dell&#39;utilità di pianificazione Quartz e, in caso di richieste asincrone, dal servizio Gestione processi. Tutti i processi vengono mantenuti nel database.
 
@@ -408,7 +408,7 @@ Di seguito sono riportati alcuni suggerimenti utili per la configurazione dell�
 
 ## Raccomandazioni specifiche per i servizi per le cartelle controllate {#service-specific-recommendations-for-watched-folders}
 
-Per tutti i servizi, è necessario regolare la dimensione batch e l&#39;intervallo di ripetizione della cartella controllata in modo che la frequenza con cui la cartella controllata seleziona nuovi file e cartelle da elaborare non superi la frequenza dei processi che possono essere elaborati dal server AEM forms. I parametri effettivi da utilizzare possono variare a seconda del numero di cartelle controllate configurate, dei servizi che utilizzano le cartelle controllate e dell&#39;intensità dei processi nel processore.
+Per tutti i servizi, è necessario regolare la dimensione batch e l&#39;intervallo di ripetizione della cartella controllata in modo che la frequenza con cui la cartella controllata seleziona nuovi file e cartelle da elaborare non superi la frequenza dei processi che possono essere elaborati dal server AEM Forms. I parametri effettivi da utilizzare possono variare a seconda del numero di cartelle controllate configurate, dei servizi che utilizzano le cartelle controllate e dell&#39;intensità dei processi nel processore.
 
 ### Genera consigli per il servizio PDF {#generate-pdf-service-recommendations}
 

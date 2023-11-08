@@ -9,9 +9,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 29%
 
 ---
@@ -28,11 +28,11 @@ I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components)
 
 ## Configurazione {#configuration}
 
-Per configurare `UrlProvider` secondo i requisiti e le esigenze SEO (Search Engine Optimization), un progetto deve fornire una configurazione OSGI per la &quot;configurazione di provider URL CIF&quot;.
+Per configurare `UrlProvider` secondo i requisiti e le esigenze SEO (Search Engine Optimization), un progetto deve fornire una configurazione OSGI per la &quot;configurazione provider URL CIF&quot;.
 
 >[!NOTE]
 >
->A partire dalla versione 2.0.0 dei componenti core CIF dell’AEM, la configurazione del provider URL fornisce solo formati URL predefiniti, invece dei formati configurabili a testo libero noti dalle versioni 1.x. Inoltre, l’utilizzo dei selettori per trasmettere i dati negli URL è stato sostituito dai suffissi.
+>A partire dalla versione 2.0.0 dei Componenti core CIF dell’AEM, la configurazione del provider URL fornisce solo formati URL predefiniti, invece dei formati configurabili a testo libero noti dalle versioni 1.x. Inoltre, l’utilizzo dei selettori per trasmettere i dati negli URL è stato sostituito dai suffissi.
 
 ### Formato URL pagina prodotto {#product}
 
@@ -44,7 +44,7 @@ Questo configura gli URL delle pagine dei prodotti e supporta le seguenti opzion
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-Nel caso di [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
+Se è presente [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` è sostituito da `/content/venia/us/en/products/product-page`
 * `{{sku}}` è sostituito dalla SKU del prodotto, ad esempio `VP09`
@@ -63,7 +63,7 @@ In questo modo vengono configurati gli URL delle pagine delle categorie o degli 
 * `{{page}}.html/{{url_path}}.html` (impostazione predefinita)
 * `{{page}}.html/{{url_key}}.html`
 
-Nel caso di [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
+Se è presente [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` è sostituito da `/content/venia/us/en/products/category-page`
 * `{{url_key}}` è sostituito da quello della categoria `url_key` proprietà
@@ -81,7 +81,7 @@ Con i dati dell’esempio precedente, l’URL di una pagina categoria formattato
 
 Il `UrlProvider` è preconfigurato per generare collegamenti profondi a tali pagine sulle istanze del livello di authoring. Questa funzione è utile per gli editor che navigano in un sito utilizzando la modalità Anteprima, per passare a una pagina di prodotto o categoria specifica e tornare alla modalità Modifica per modificare la pagina.
 
-Nelle istanze del livello di pubblicazione, invece, gli URL delle pagine del catalogo devono essere mantenuti stabili per non perdere i guadagni, ad esempio, nella classificazione dei motori di ricerca. Per questo motivo, per impostazione predefinita, le istanze del livello di pubblicazione non eseguiranno il rendering dei collegamenti profondi a pagine di catalogo specifiche. Per modificare questo comportamento, _Strategia pagina specifica del provider URL CIF_ può essere configurato in modo da generare sempre url di pagina specifici.
+Nelle istanze del livello di pubblicazione, invece, gli URL delle pagine del catalogo devono essere mantenuti stabili per non perdere i guadagni, ad esempio, nella classificazione dei motori di ricerca. Per questo motivo, per impostazione predefinita, le istanze del livello di pubblicazione non eseguiranno il rendering dei collegamenti profondi a pagine di catalogo specifiche. Per modificare questo comportamento, _Strategia pagina specifica per il provider URL CIF_ può essere configurato in modo da generare sempre url di pagina specifici.
 
 ## Formati URL personalizzati {#custom-url-format}
 

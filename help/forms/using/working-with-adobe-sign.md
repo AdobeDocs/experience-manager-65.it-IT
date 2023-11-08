@@ -11,9 +11,9 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3936'
 ht-degree: 1%
 
 ---
@@ -355,7 +355,7 @@ Quando [!DNL Adobe Sign] è configurato per un modulo adattivo, il servizio non 
 * Assicurati che l’applicazione API su [!DNL Adobe Sign] server utilizzato per configurare [!DNL Adobe Sign] Il servizio cloud dispone delle autorizzazioni necessarie.
 * Se utilizzi più [!DNL Adobe Sign] Servizi cloud, punta il **[!UICONTROL URL OAuth]** di tutti i servizi allo stesso **[!UICONTROL Condivisione Adobe Sign]**.
 
-* Utilizza indirizzi e-mail separati per configurare [!DNL Adobe Sign] e per il primo firmatario e il firmatario singolo. L’indirizzo e-mail del primo firmatario o dell’unico firmatario (nel caso del firmatario singolo) non può essere identico a [!DNL Adobe Sign] account utilizzato per configurare i servizi cloud AEM.
+* Utilizza indirizzi e-mail separati per configurare [!DNL Adobe Sign] e per il primo firmatario e il firmatario singolo. L’indirizzo e-mail del primo firmatario o dell’unico firmatario (se presente) non può essere identico a [!DNL Adobe Sign] account utilizzato per configurare i servizi cloud AEM.
 
 ### AEM [!DNL Forms] workflow configurato per un [!DNL Adobe Sign] il modulo adattivo abilitato non si avvia {#adobe-sign-aem-form-workflow-failures}
 

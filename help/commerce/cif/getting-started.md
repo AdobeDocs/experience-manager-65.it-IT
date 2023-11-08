@@ -4,7 +4,7 @@ description: Scopri come distribuire un progetto di contenuti e commerce AEM.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 6%
@@ -57,7 +57,7 @@ Il componente aggiuntivo e [Componenti core CIF](https://github.com/adobe/aem-co
 
 Questa configurazione può essere regolata per il progetto tramite la configurazione del Cloud Service CIF seguendo questi passaggi:
 
-1. In AEM vai a Strumenti -> Cloud Service -> Configurazione CIF.
+1. In AEM vai a Strumenti > Cloud Service > Configurazione CIF.
 
 2. Seleziona la configurazione commerce da modificare
 

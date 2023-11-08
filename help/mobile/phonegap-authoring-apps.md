@@ -1,16 +1,14 @@
 ---
 title: Authoring di applicazioni mobili
 description: La dashboard di AEM Mobile consente di creare, generare e distribuire l’app mobile, nonché di creare, eliminare e modificare i metadati dell’applicazione. Per ulteriori informazioni, segui questa pagina.
-uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -67,7 +65,7 @@ I contenuti possono essere creati, aggiornati ed eliminati in AEM Mobile nello s
 
 Dopo aver aggiunto o modificato il contenuto tramite il riquadro Gestisci contenuto pagina, puoi inviare tali modifiche ai clienti con un aggiornamento sulla versione del contenuto.
 
-Il pacchetto di contenuti consente all’autore dell’app AEM di gestire il contenuto della pagina nell’AEM e di far sì che il team di sviluppo apporti modifiche all’applicazione PhoneGap Shell (ovvero al framework o all’infrastruttura dell’app) e quindi inviarle rapidamente ai clienti senza dover reclutare uno sviluppatore per inviarle nuovamente ai vari store per la distribuzione.
+Il pacchetto di contenuti consente all’autore dell’app AEM di gestire il contenuto della pagina nell’AEM e, chiedere al team di sviluppo di modificare l’applicazione PhoneGap Shell (ovvero il framework o l’infrastruttura dell’app) e quindi di inviare tali modifiche ai clienti in modo rapido e senza la necessità di coinvolgere uno sviluppatore per inviarle nuovamente ai vari store per la distribuzione.
 
 Pacchetto di contenuti crea un file ZIP, considerato un pacchetto di rilascio dei contenuti, per ogni aggiornamento. Questi pacchetti contengono risorse HTML e pagine HTML generate durante il rendering dell’app ed è sufficientemente intelligente da includere solo i file che sono stati modificati dopo l’ultimo aggiornamento.
 

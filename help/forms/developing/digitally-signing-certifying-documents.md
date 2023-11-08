@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '17029'
+source-wordcount: '17027'
 ht-degree: 0%
 
 ---
@@ -351,7 +351,7 @@ Puoi modificare i campi della firma presenti in un documento PDF utilizzando l�
 
 A *dizionario blocco campo* specifica un elenco di campi bloccati quando il campo firma è firmato. Un campo bloccato impedisce agli utenti di apportare modifiche al campo. A *dizionario dei valori iniziali* contiene informazioni vincolanti utilizzate al momento dell&#39;applicazione della firma. È ad esempio possibile modificare le autorizzazioni che controllano le azioni che possono essere eseguite senza invalidare una firma.
 
-Modificando un campo di firma esistente, è possibile apportare modifiche al documento PDF per riflettere i requisiti aziendali in continua evoluzione. Ad esempio, un nuovo requisito aziendale potrebbe richiedere il blocco di tutti i campi del documento dopo la firma del documento.
+Modificando un campo di firma esistente, è possibile modificare il documento PDF in modo che rifletta i requisiti aziendali in continua evoluzione. Ad esempio, un nuovo requisito aziendale potrebbe richiedere il blocco di tutti i campi del documento dopo la firma del documento.
 
 In questa sezione viene illustrato come modificare un campo di firma modificando i valori del dizionario dei blocchi di campi e del dizionario dei valori iniziali. Le modifiche apportate al dizionario di blocco dei campi della firma determinano il blocco di tutti i campi del documento PDF quando viene firmato un campo della firma. Le modifiche apportate al dizionario dei valori iniziali non consentono tipi specifici di modifiche al documento.
 

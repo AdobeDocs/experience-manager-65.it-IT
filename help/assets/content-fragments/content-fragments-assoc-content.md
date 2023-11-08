@@ -4,10 +4,10 @@ description: Scopri in che modo la funzione di contenuto associato all’AEM for
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 57%
+source-wordcount: '244'
+ht-degree: 50%
 
 ---
 
@@ -21,7 +21,7 @@ La funzione di contenuto associato AEM fornisce la connessione in modo che le ri
 >
 >Esistono diversi metodi per aggiungere [risorse visive (ad esempio immagini)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
-Per creare l’associazione, devi prima [aggiungere le risorse multimediali a una raccolta](/help/assets/manage-collections.md). Una volta fatto questo è possibile:
+Per creare l&#39;associazione è necessario innanzitutto [aggiungere le risorse multimediali a una raccolta](/help/assets/manage-collections.md). Una volta fatto questo è possibile:
 
 1. Apri il frammento e seleziona **Contenuto associato** dal pannello laterale.
 

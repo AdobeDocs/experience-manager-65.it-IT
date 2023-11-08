@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3888'
+source-wordcount: '3887'
 ht-degree: 7%
 
 ---
@@ -117,7 +117,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
   <tr>
    <td><code>title</code></td>
    <td>Specifica il titolo del documento. È disponibile solo per le applicazioni client.</td>
-   <td>Restituisce il titolo del documento HTML nel modulo, anziché il titolo dei metadati del modulo come nel caso dei PDF forms.</td>
+   <td>Restituisce il titolo del documento HTML nel modulo, anziché il titolo dei metadati del modulo come se fossero presenti PDF forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>

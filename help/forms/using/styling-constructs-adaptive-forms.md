@@ -1,18 +1,15 @@
 ---
 title: Costrutti di stile per i moduli adattivi
-seo-title: Styling constructs for adaptive forms
 description: Utilizza il framework LESS per personalizzare l’aspetto dei moduli adattivi.
-seo-description: Use LESS framework to customize appearance of adaptive forms.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2363'
+source-wordcount: '2361'
 ht-degree: 4%
 
 ---
@@ -58,7 +55,7 @@ Attualmente, le variabili LESS sono definite solo per queste proprietà dei vari
 
 ## Modifica dello stile del componente {#changing-component-style}
 
-Potete apportare modifiche all&#39;aspetto, al layout, al posizionamento e alla visibilità degli elementi. Per eseguire questa operazione, crea o aggiorna i file .css personalizzati per includere i costrutti di stile elencati in questo articolo.
+Potete modificare l&#39;aspetto, il layout, il posizionamento e la visibilità degli elementi. Per eseguire questa operazione, crea o aggiorna i file .css personalizzati per includere i costrutti di stile elencati in questo articolo.
 
 Per applicare uno stile a un modulo adattivo, apri il modulo adattivo in per la modifica, apri le proprietà del contenitore per moduli adattivi e specifica il percorso del file CSS personalizzato nella scheda di base. Costrutti di stile predefiniti del modulo adattivo e sostituiti con i costrutti elencati nel file .css personalizzato.
 

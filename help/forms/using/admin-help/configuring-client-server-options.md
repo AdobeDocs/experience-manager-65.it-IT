@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '10228'
+source-wordcount: '10221'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Per una discussione sul funzionamento del lease e della sincronizzazione offline
 
 **Consenti autenticazione estesa** Seleziona per abilitare l’autenticazione estesa, quindi immetti l’URL di destinazione dell’autenticazione estesa.
 
-Se si seleziona questa opzione, le applicazioni client potranno utilizzare l&#39;autenticazione estesa. L&#39;autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server AEM Forms. Ad esempio, ora gli utenti possono utilizzare l’autenticazione basata su SAML invece dei moduli AEM nome utente/password di Acrobat e client di Reader. Per impostazione predefinita, l’URL di destinazione contiene *localhost* come nome del server. Sostituisci il nome del server con un nome host completo. Se l’autenticazione estesa non è ancora abilitata, il nome host nell’URL di destinazione viene popolato automaticamente dall’URL di base. Consulta [Aggiungere il provider di autenticazione estesa](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Se si seleziona questa opzione, le applicazioni client potranno utilizzare l&#39;autenticazione estesa. L’autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server AEM Forms. Ad esempio, ora gli utenti possono utilizzare l’autenticazione basata su SAML invece dei moduli AEM nome utente/password di Acrobat e client di Reader. Per impostazione predefinita, l’URL di destinazione contiene *localhost* come nome del server. Sostituisci il nome del server con un nome host completo. Se l’autenticazione estesa non è ancora abilitata, il nome host nell’URL di destinazione viene popolato automaticamente dall’URL di base. Consulta [Aggiungere il provider di autenticazione estesa](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***nota **: l’autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successive.*
 
@@ -99,7 +99,7 @@ I moduli AEM forniscono una configurazione di esempio che puoi personalizzare pe
 >L’autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successive.
 
 1. Ottieni il file WAR di esempio per distribuirlo. Vedere la guida all&#39;installazione appropriata per il server applicazioni.
-1. Verificare che il server Forms disponga di un nome completo e non di indirizzi IP come URL di base e che sia un URL HTTPS. Consulta [Impostazioni di configurazione server](configuring-client-server-options.md#server-configuration-settings).
+1. Verificare che l&#39;URL di base del server Forms sia un URL completo e non un indirizzo IP e che si tratti di un URL HTTPS. Consulta [Impostazioni di configurazione server](configuring-client-server-options.md#server-configuration-settings).
 1. Abilitare l&#39;autenticazione estesa dalla pagina Configurazione server. Consulta [Impostazioni di configurazione server](configuring-client-server-options.md#server-configuration-settings).
 1. Aggiungi gli URL di reindirizzamento SSO richiesti nel file di configurazione di User Management. Consulta [Aggiungere URL di reindirizzamento SSO per l’autenticazione estesa](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -154,7 +154,7 @@ Per aprire un documento protetto tramite policy in modalità non in linea, è ne
 
 Un modo per ridurre la minaccia per i documenti offline consiste nell&#39;evitare di consentire l&#39;accesso offline a documenti particolarmente sensibili. Un altro metodo consiste nel far scorrere periodicamente le chiavi principali. Quando Document Security passa il tasto, tutte le chiavi esistenti non possono più accedere ai documenti protetti tramite policy. Ad esempio, se un autore ottiene una chiave principale da un laptop rubato, tale chiave non può essere utilizzata per accedere ai documenti protetti dopo il rollover. Se si sospetta che una chiave principale specifica sia stata compromessa, è possibile eseguire manualmente il rollover della chiave.
 
-Tuttavia, devi anche sapere che un rollover della chiave influisce su tutte le chiavi principali, non solo su una. Inoltre, riduce la scalabilità del sistema perché i client devono memorizzare più chiavi per l’accesso offline. La frequenza predefinita di rollover della chiave è di 20 giorni. Si consiglia di non impostare questo valore su un valore inferiore a 14 giorni, poiché potrebbe essere impedita la visualizzazione dei documenti offline agli utenti e le prestazioni del sistema potrebbero risentirne.
+Tuttavia, un rollover della chiave influisce su tutte le chiavi principali, non solo su una. Inoltre, riduce la scalabilità del sistema perché i client devono memorizzare più chiavi per l’accesso offline. La frequenza predefinita di rollover della chiave è di 20 giorni. Si consiglia di non impostare questo valore su un valore inferiore a 14 giorni, poiché potrebbe essere impedita la visualizzazione dei documenti offline agli utenti e le prestazioni del sistema potrebbero risentirne.
 
 Nell&#39;esempio seguente, Chiave1 è la prima delle due chiavi principali e Chiave2 è la più recente. Quando si fa clic sul pulsante Rollover chiavi ora la prima volta, la chiave 1 non è più valida e viene generata una nuova chiave principale valida (chiave 3). Gli utenti otterranno Key3 quando eseguono la sincronizzazione con la protezione dei documenti, in genere aprendo un documento protetto online. Tuttavia, gli utenti non sono costretti a sincronizzarsi con la protezione dei documenti fino a quando non raggiungono il periodo di lease offline massimo specificato in una policy. Dopo il primo passaggio chiave, gli utenti che rimangono offline possono comunque aprire i documenti offline, inclusi quelli protetti da Key3, fino a raggiungere il periodo massimo di lease offline. Quando si fa nuovamente clic sul pulsante Rollover tasti ora, la chiave 2 non è più valida e viene creata la chiave 4. Gli utenti che rimangono offline durante i due rollover chiave non possono aprire i documenti protetti con Chiave3 o Chiave4 finché non si sincronizzano con la protezione dei documenti.
 

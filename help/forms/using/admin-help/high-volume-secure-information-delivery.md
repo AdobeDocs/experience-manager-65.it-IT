@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Uno dei vantaggi di questo approccio è che le dimensioni del database di protez
 
 La protezione dei documenti supporta anche Criteri astratti. I criteri astratti sono modelli di criteri che contengono tutti gli attributi dei criteri, ad esempio le impostazioni di protezione dei documenti e i diritti di utilizzo, ma non contengono un elenco di entità principali. Gli amministratori possono creare un numero qualsiasi di criteri dalla policy astratta con entità diverse che devono avere accesso ai documenti. Le modifiche apportate al criterio astratto non influiscono sui criteri effettivi generati dai criteri astratti.
 
-Nel caso della generazione di fatture mensili per una società di telecomunicazioni, si crea una policy astratta, si creano utenti e quindi si generano licenze univoche per ogni utente. Le licenze vengono successivamente applicate ai documenti per ogni utente.
+Se viene generata una fattura mensile per una società di telecomunicazioni, è possibile creare una policy astratta, creare utenti e quindi generare licenze univoche per ogni utente. Le licenze vengono successivamente applicate ai documenti per ogni utente.
 
 La creazione di un criterio astratto è supportata solo tramite l’SDK Java per la sicurezza dei documenti. È tuttavia possibile amministrare i criteri creati dai criteri astratti dalle pagine Web di Document Security. I criteri creati con questo metodo hanno lo stesso comportamento di quelli creati dalle pagine Web di Document Security.
 

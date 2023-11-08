@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2008'
 ht-degree: 0%
@@ -359,7 +359,7 @@ I seguenti metodi di richiesta HTTP si applicano a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Completa l’elemento di lavoro il cui URI viene inviato come parametro <code>item</code> e avanza l’istanza del flusso di lavoro corrispondente ai nodi successivi, definiti dal parametro <code>route</code> o <code>backroute</code> in caso di un passo indietro.<br /> Se il parametro <code>delegatee</code> viene inviato, l’elemento di lavoro identificato dal parametro <code>item</code> è delegato al partecipante specificato.</td>
+   <td>Completa l’elemento di lavoro il cui URI viene inviato come parametro <code>item</code> e avanza l’istanza del flusso di lavoro corrispondente ai nodi successivi, definiti dal parametro <code>route</code> o <code>backroute</code> se si sta facendo un passo indietro.<br /> Se il parametro <code>delegatee</code> viene inviato, l’elemento di lavoro identificato dal parametro <code>item</code> è delegato al partecipante specificato.</td>
   </tr>
  </tbody>
 </table>

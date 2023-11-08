@@ -11,7 +11,7 @@ topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
 exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -196,7 +196,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene eliminato da AEM F
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -292,7 +292,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene trovato un utente 
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -416,7 +416,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito il ruolo Utente servizi 
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -560,7 +560,7 @@ L’esempio di codice Java seguente sincronizza gli utenti utilizzando le API Us
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -668,7 +668,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -786,7 +786,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene creato un gruppo d
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following

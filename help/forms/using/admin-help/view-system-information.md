@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -51,9 +51,9 @@ Nel riquadro sinistro della scheda Sistema vengono visualizzate le seguenti info
 
 **Tempo di compilazione:** Quantità di tempo impiegato per la compilazione.
 
-**Numero di thread attivi:** Il numero totale di thread attualmente presenti nel sistema AEM Forms.
+**Numero di Live Threads:** Il numero totale di thread attualmente presenti nel sistema AEM Forms.
 
-**Picco numero di thread:** Il maggior numero di thread live mai registrati sul sistema.
+**Numero di picchi Threads:** Il maggior numero di thread live mai registrati sul sistema.
 
 **Numero di classi caricate:** Numero di classi caricate nella JVM.
 

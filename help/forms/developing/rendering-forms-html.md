@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4143'
 ht-degree: 0%
@@ -67,13 +67,13 @@ Quando un modulo viene renderizzato come modulo HTML, le dimensioni della pagina
 >
 >Se si desidera personalizzare l&#39;aspetto del pulsante Firma digitale HTML in un modulo HTML, è necessario modificare le seguenti proprietà nel file fscdigsig.css (all&#39;interno del file adobe-forms-ds.ear > adobe-forms-ds.war ):
 
-**.fsc-ds-ssb**: questo foglio di stile è applicabile in caso di campo del segno vuoto.
+**.fsc-ds-ssb**: questo foglio di stile è applicabile se è presente un campo del segno vuoto.
 
-**.fsc-ds-ssv**: questo foglio di stile è applicabile in caso di campo Segno valido.
+**.fsc-ds-ssv**: questo foglio di stile è applicabile se è presente un campo Segno valido.
 
-**.fsc-ds-ssc**: questo foglio di stile è applicabile in caso di campo Segno valido, ma i dati sono stati modificati.
+**.fsc-ds-ssc**: questo foglio di stile è applicabile se è presente un campo Segno valido ma i dati sono stati modificati.
 
-**.fsc-ds-ssi**: questo foglio di stile è applicabile in caso di campo del segno non valido.
+**.fsc-ds-ssi**: questo foglio di stile è applicabile se è presente un campo del segno non valido.
 
 **.fsc-ds-popup-bg**: questa proprietà del foglio di stile non viene utilizzata.
 

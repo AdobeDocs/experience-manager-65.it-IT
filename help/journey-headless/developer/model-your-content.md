@@ -2,10 +2,10 @@
 title: Come modellare il contenuto
 description: In questa parte del Percorso per sviluppatori di AEM headless, scopri come modellare i contenuti per la distribuzione AEM headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1809'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -206,7 +206,7 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 ### Creazione di modelli per frammenti di contenuto {#creating-content-fragment-models}
 
-All’inizio, devi abilitare i modelli per frammenti di contenuto per il sito. Questa abilitazione viene eseguita nel Browser configurazioni; in Strumenti -> Generale -> Browser configurazioni. Puoi scegliere di configurare la voce globale o creare una configurazione. Esempio:
+All’inizio, devi abilitare i modelli per frammenti di contenuto per il sito. Questa abilitazione viene eseguita nel Browser configurazioni; in Strumenti > Generale > Browser configurazioni. Puoi scegliere di configurare la voce globale o creare una configurazione. Esempio:
 
 ![Definire la configurazione](assets/cfm-configuration.png)
 
@@ -228,7 +228,7 @@ I frammenti di contenuto vengono creati in base a un modello per frammenti di co
 
 ### Selezione del modello appropriato {#select-model}
 
-Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Questa operazione viene eseguita utilizzando Crea -> Frammento di contenuto nella cartella richiesta in Risorse -> File. La procedura guidata ti guida attraverso i passaggi.
+Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Questa operazione viene eseguita utilizzando Crea > Frammento di contenuto nella cartella richiesta in Risorse > File. La procedura guidata ti guida attraverso i passaggi.
 
 Un frammento di contenuto si basa su un modello per frammento di contenuto specifico, selezionato come primo passaggio del processo di creazione.
 

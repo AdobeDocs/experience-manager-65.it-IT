@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Puoi creare tutti i modelli di ricerca necessari.
       * (Facoltativo) Per consentire agli utenti di modificare il valore dell&#39;operando in Workspace, selezionare Consenti all&#39;utente di modificare l&#39;operando.
       * (Facoltativo) Per consentire agli utenti di modificare l&#39;operatore relazionale, selezionare Consenti all&#39;utente di selezionare un altro operatore relazionale. Nell&#39;elenco visualizzato selezionare gli operatori che saranno disponibili per l&#39;utente.
 
-     **Suggerimento**: *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server Forms. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
+     **Suggerimento**: *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione su Forms Server. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
 
      **Suggerimento**: *Puoi eliminare un elemento dal modello di ricerca facendo clic sull’icona Elimina accanto ai criteri di ricerca dell’elemento.*
 

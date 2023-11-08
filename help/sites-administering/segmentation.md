@@ -1,19 +1,15 @@
 ---
 title: Configurazione della segmentazione con ContextHub
-seo-title: Configuring Segmentation with ContextHub
 description: Scopri come configurare la segmentazione con Context Hub.
-seo-description: Learn how to configure segmentation with Context Hub.
-uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 75%
+source-wordcount: '1772'
+ht-degree: 73%
 
 ---
 
@@ -52,7 +48,7 @@ Il **Editor segmento** consente di modificare facilmente un segmento. Per modifi
 
 Tramite il browser Componenti puoi aggiungere i contenitori **AND** e **OR** per definire la logica del segmento. In seguito puoi aggiungere altri componenti per confrontare proprietà e valori o script di riferimento e altri segmenti per definire i criteri di selezione (consulta [Creazione di un nuovo segmento](#creating-a-new-segment)) per definire lo scenario esatto per la selezione del segmento.
 
-Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Nel caso in cui siano applicabili più segmenti, viene utilizzato anche il fattore **Incremento**. Consulta [Creazione di un nuovo segmento](#creating-a-new-segment) per ulteriori informazioni su [fattore di incremento.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Se sono presenti più segmenti applicabili, il **Incrementa** viene utilizzato anche il fattore. Consulta [Creazione di un nuovo segmento](#creating-a-new-segment) per ulteriori informazioni su [fattore di incremento.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -106,7 +102,7 @@ Per valutare le proprietà dei segmenti sono disponibili i seguenti confronti di
 
 >[!NOTE]
 >
->Quando si confrontano i valori, se il tipo di dati del confronto non è impostato (cioè è impostato sul rilevamento automatico), il motore di segmentazione di ContextHub si limiterà a confrontare i valori allo stesso modo di javascript. Non effettua l’assegnazione dei valori ai tipi previsti, il che può portare a risultati fuorvianti. Esempio:
+>Quando si confrontano i valori, se il tipo di dati del confronto non è impostato (cioè è impostato sul rilevamento automatico), il motore di segmentazione di ContextHub si limiterà a confrontare i valori allo stesso modo di Javascript. Non effettua l’assegnazione dei valori ai tipi previsti, il che può portare a risultati fuorvianti. Esempio:
 >
 >`null < 30 // will return true`
 >

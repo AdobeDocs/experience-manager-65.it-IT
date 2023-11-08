@@ -4,9 +4,9 @@ description: Scopri come utilizzare la console Assets per gestire i frammenti di
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1715'
 ht-degree: 77%
 
 ---
@@ -272,7 +272,7 @@ Dopo aver creato il contenuto primario, puoi creare e gestire le [Varianti](/hel
 
 ## Associazione di contenuto al frammento {#associating-content-with-your-fragment}
 
-È inoltre possibile [associare il contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) a un frammento. In questo modo si fornisce una connessione in modo che le risorse (ad esempio le immagini) possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
+È inoltre possibile [associare il contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) a un frammento. In questo modo si fornisce una connessione in modo che le risorse (ad esempio le immagini) possano essere utilizzate (facoltativamente) con il frammento quando viene aggiunto a una pagina di contenuto.
 
 ## Visualizzazione e modifica dei metadati (proprietà) del frammento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Ad esempio, per impostazione predefinita [**Crea pagina** procedura guidata](/he
    >
    Il metodo consigliato per la configurazione e altre modifiche è:
    >
-   1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
+   1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
    1. Apporta le modifiche in `/apps`
 
 1. Imposta il `path` proprietà su `basic` per puntare alla sostituzione della scheda di base (vedi anche il passaggio successivo). Ad esempio:

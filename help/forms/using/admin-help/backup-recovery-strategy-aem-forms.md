@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Se è necessario ripristinare i moduli AEM in un ambiente diverso a causa delle 
 * Modifica delle lettere di unità o del percorso della directory
 * Passare a un altro nome, porta o host di database
 
-In genere, tali scenari di ripristino sono causati da un guasto hardware del server che ospita l&#39;application server, il server database o il server forms. Oltre alle configurazioni specifiche dei moduli AEM descritte in questa sezione, se il nome host o l’indirizzo IP di un server AEM cambia, è necessario apportare le modifiche necessarie anche ad altre parti della distribuzione dei moduli AEM, come i load balancer e i firewall.
+In genere, tali scenari di ripristino sono causati da un guasto hardware del server che ospita l&#39;application server, il server di database o il server Forms. Oltre alle configurazioni specifiche per i moduli AEM descritte in questa sezione, se il nome host o l’indirizzo IP di un server AEM Forms cambia, è necessario apportare le modifiche necessarie anche ad altre parti dell’implementazione dei moduli AEM, come i load balancer e i firewall.
 
 ### Cosa non può essere modificato {#what-cannot-be-changed}
 
@@ -73,7 +73,7 @@ Anche se è possibile modificare il server di database e molti altri parametri, 
 
 ### Riavvio dopo un ripristino {#restarting-after-a-recovery}
 
-Prima di riavviare il server Forms dopo un ripristino, eseguire le operazioni seguenti:
+Prima di riavviare Forms Server dopo un ripristino, eseguire le operazioni seguenti:
 
 1. Avviare il sistema in modalità di manutenzione.
 1. Effettua le seguenti operazioni per garantire che Form Manager sia sincronizzato con i moduli AEM in modalità di manutenzione:
@@ -104,4 +104,4 @@ Utilizza il `LCSetGDS`script in `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCo
 >
 >Questa circostanza è l&#39;unica in base alla quale utilizzare questo script per modificare la posizione di GDS. Per modificare la posizione di GDS mentre i moduli AEM sono in esecuzione, utilizzare la console di amministrazione. (vedere [Configurare le impostazioni generali dei moduli AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
-Dopo aver impostato il percorso GDS, avviare il server Forms in modalità di manutenzione e utilizzare la console di amministrazione per aggiornare i percorsi del file system rimanenti per il nuovo nodo. Dopo aver verificato che tutte le configurazioni necessarie siano state aggiornate, riavviare e testare i moduli AEM.
+Dopo aver impostato il percorso GDS, avviare Forms Server in modalità di manutenzione e utilizzare la console di amministrazione per aggiornare i percorsi del file system rimanenti per il nuovo nodo. Dopo aver verificato che tutte le configurazioni necessarie siano state aggiornate, riavviare e testare i moduli AEM.

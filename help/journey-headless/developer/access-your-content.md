@@ -2,7 +2,7 @@
 title: Come accedere al contenuto tramite API di consegna di AEM
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1332'
 ht-degree: 93%
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Prima di iniziare con le query sul contenuto è necessario:
 
 * Abilitare l’endpoint 
-   * Utilizza Strumenti -> Risorse -> GraphQL
+   * Usa Strumenti > Risorse > GraphQL
    * [Abilitazione dell’endpoint GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * Accedere a GraphiQL (se necessario)

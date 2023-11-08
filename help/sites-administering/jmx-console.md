@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4962'
+source-wordcount: '4963'
 ht-degree: 1%
 
 ---
@@ -597,7 +597,7 @@ Sola lettura.
 
 * Valore restituito: nessuno
 
-**transformClusterMaster** Imposta questo nodo del repository come nodo principale del cluster. Se non è già master, questo comando arresta il listener dell&#39;istanza master corrente e avvia un listener master sul nodo corrente. Questo nodo viene quindi impostato come nodo principale e riavviato, causando la connessione a questa istanza di tutti gli altri nodi del cluster (ovvero quelli controllati dal nodo principale).
+**transformClusterMaster** Imposta questo nodo del repository come nodo principale del cluster. Se non è già master, questo comando arresta il listener dell&#39;istanza master corrente e avvia un listener master sul nodo corrente. Questo nodo viene quindi impostato come nodo principale e riavviato, causando la connessione a questa istanza di tutti gli altri nodi del cluster, ovvero quelli controllati dal nodo principale.
 
 * Argomenti: nessuno
 * Valore restituito: nessuno

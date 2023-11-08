@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 Nell’area di lavoro di AEM Forms, i manager ora possono accedere alle attività assegnate a chiunque nella loro gerarchia (rapporti diretti o indiretti) ed eseguire varie azioni su di esse. Le attività sono disponibili nella scheda Da fare nell’area di lavoro di AEM Forms. Le azioni supportate sui compiti delle relazioni dirette sono:
 
-**Inoltra** Inoltra un&#39;attività da un referente diretto a qualsiasi utente.
+**Inoltra** - Inoltra un&#39;attività da referente diretto a qualsiasi utente.
 
-**Richiesta di rimborso** Rivendica un&#39;attività di referente diretto.
+**Richiesta di rimborso** - Rivendicare un compito di referto diretto.
 
-**Richieste di rimborso e aperte** Richiedi un&#39;attività di un referente diretto e aprila automaticamente nell&#39;elenco Da fare del manager.
+**Richieste di rimborso e aperte** - Richiedi un&#39;attività di un referente diretto e aprila automaticamente nell&#39;elenco Da fare del manager.
 
-**Rifiuta** Rifiuta un&#39;attività inoltrata a una segnalazione diretta da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un referente diretto.
+**Rifiuta** - Rifiuta un&#39;attività inoltrata a una segnalazione diretta da un altro utente. Questa opzione è disponibile per le attività inoltrate da altri utenti a un referente diretto.
 
 AEM Forms limita l’accesso degli utenti solo alle attività per le quali l’utente dispone di un controllo di accesso (ACL). Tale controllo garantisce che un utente possa recuperare solo le attività per le quali dispone di autorizzazioni di accesso. Utilizzando servizi web e implementazioni di terze parti per definire la gerarchia, un’organizzazione può personalizzare la definizione di manager e direct report in base alle proprie esigenze.
 

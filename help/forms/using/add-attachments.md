@@ -1,16 +1,12 @@
 ---
 title: Aggiunta di allegati
-seo-title: Adding attachments
 description: Aggiungi fotografie e note a mano come annotazioni per l’attività nell’app AEM Forms
-seo-description: Add photographs and scribble notes as annotations to your task in the AEM Forms app
-uuid: 3d2738b4-fd43-44ec-8eaf-a2ad4b7e5af5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -34,6 +30,7 @@ Le opzioni disponibili sono:
 >[!NOTE]
 >
 >Gli allegati aggiunti da un utente sono visibili agli altri utenti dell’app AEM Forms. Gli altri utenti non possono eliminare gli allegati aggiunti da un utente.
+>
 
 ### Schermata Allegato {#the-attachments-screen}
 
@@ -88,4 +85,4 @@ Gli allegati per i moduli mobili sincronizzati con i server AEM Forms OSGi funzi
 
 Gli allegati a livello di modulo non sono supportati per i moduli adattivi caricati nell’app da un server OSGi di AEM Forms. Per allegare immagini o note di testo, attivare gli allegati a livello di campo nel modulo quando lo si crea. Trascina il componente allegato dal browser Componenti sul campo.
 
-Nel caso dei moduli adattivi, è possibile visualizzare i file allegati nel documento di record (DoR). Vedi, [Genera documento di record per moduli adattivi non XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Se sono presenti moduli adattivi, puoi visualizzare i file allegati nel documento record (DoR). Vedi, [Genera documento di record per moduli adattivi non XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).

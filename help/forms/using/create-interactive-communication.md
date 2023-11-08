@@ -1,18 +1,14 @@
 ---
 title: Creare una comunicazione interattiva
-seo-title: Create an Interactive Communication
 description: Crea una comunicazione interattiva utilizzando l’editor di comunicazione interattiva. Utilizza la funzionalità di trascinamento della selezione per creare la comunicazione interattiva e visualizzare in anteprima gli output di stampa e web su diversi tipi di dispositivi.
-seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
-uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6168'
+source-wordcount: '6163'
 ht-degree: 1%
 
 ---
@@ -141,7 +137,7 @@ L’interfaccia di authoring consente di distinguere tra campi e variabili non a
 
 Inoltre, quando passi il mouse su questi elementi, viene visualizzata una descrizione con il messaggio Campo (non associato) o Variabile (non associato).
 
-Talvolta, una variabile non associata utilizzata in un frammento di documento potrebbe non essere visualizzata nell’interfaccia di creazione. Può verificarsi a causa di una regola di testo in linea all’interno di un frammento di documento o in caso di un frammento di condizione. In questi casi, una descrizione, evidenziata in blu, viene visualizzata come parte del frammento di documento. Nella descrizione viene visualizzato il numero di variabili non associate utilizzate all’interno di un frammento di documento.
+Talvolta, una variabile non associata utilizzata in un frammento di documento potrebbe non essere visualizzata nell’interfaccia di creazione. Può verificarsi a causa di una regola di testo in linea all’interno di un frammento di documento o se è presente un frammento di condizione. In questi casi, una descrizione, evidenziata in blu, viene visualizzata come parte del frammento di documento. Nella descrizione viene visualizzato il numero di variabili non associate utilizzate all’interno di un frammento di documento.
 
 ![Variabile non associata](assets/df_unbound_variable_new.png)
 
@@ -562,7 +558,7 @@ Tocca **[!UICONTROL Sì]**.
 
 ### Sincronizza {#synchronize-1}
 
-Se si utilizza Stampa come master per il canale Web e si apportano modifiche al canale di stampa, è possibile sincronizzare il contenuto per apportare al canale Web le modifiche appena apportate.
+Se si utilizza Stampa come master per il canale Web e si modifica il canale Stampa, è possibile sincronizzare il contenuto per apportare le modifiche appena apportate al canale Web.
 
 1. Per sincronizzare il canale web con il canale di stampa, passa al canale web e tocca l’icona Altre opzioni.
 

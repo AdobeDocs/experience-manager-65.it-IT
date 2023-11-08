@@ -2,29 +2,27 @@
 title: Componenti
 description: AEM include diversi componenti predefiniti che offrono funzionalità complete per gli autori di siti web.
 page-status-flag: de-activated
-uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 8%
+source-wordcount: '218'
+ht-degree: 27%
 
 ---
 
 # Componenti{#components}
 
-Adobe Experience Manager (AEM) viene fornito con una varietà di componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. Sono disponibili quando [modifica di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) e sono raggruppati per area funzionale principale (ovvero gruppo di componenti) per facilitare il filtraggio.
+Adobe Experience Manager (AEM) viene fornito con una varietà di componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. Sono disponibili quando [modifica di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) e sono raggruppati per area funzionale principale (ovvero, gruppo di componenti) per facilitare il filtraggio.
 
 >[!CAUTION]
 >
->In questa sezione vengono descritti solo i componenti disponibili come predefiniti in un’installazione standard per AEM.
+>In questa sezione vengono descritti solo i componenti disponibili forniti in un’installazione standard di AEM.
 >
->A seconda dell’istanza, è possibile che siano stati sviluppati in modo esplicito componenti personalizzati in base alle proprie esigenze. Questi possono anche avere lo stesso nome di alcuni dei componenti discussi qui.
+>A seconda dell’istanza, potrebbero essere stati sviluppati componenti personalizzati specifici per le tue esigenze. Questi potrebbero anche avere lo stesso nome di alcuni dei componenti descritti qui.
 
 ## Componenti - Aree principali {#components-major-areas}
 
@@ -32,11 +30,11 @@ Le pagine seguenti forniscono collegamenti rapidi ad alcune delle principali are
 
 * [Componenti per l’authoring delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   I componenti utilizzati per creare contenuti di pagina standard sono principalmente contenuti nei gruppi **Generale**, **Colonne** e **Forms**.
+  I componenti utilizzati per creare contenuti di pagina standard sono principalmente contenuti nei gruppi **Generale**, **Colonne** e **Forms**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
-   La funzionalità di eCommerce all’interno dell’AEM include anche una serie di componenti, contenuti nel **Commerce** gruppo. L’uso effettivo può dipendere dal motore di e-commerce utilizzato.
+  La funzionalità di eCommerce all’interno dell’AEM include anche una serie di componenti, contenuti nel **Commerce** gruppo. L’uso effettivo può dipendere dal motore di e-commerce utilizzato.
 
 ## Utilizzo della modalità Progettazione per configurare i componenti {#using-design-mode-to-configure-components}
 

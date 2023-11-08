@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2503'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Se il processo viene eliminato correttamente, questo URL restituisce un messaggi
 
 ## Segnalazione di errori {#error-reporting}
 
-Se non è possibile completare una richiesta di chiamata sincrona o asincrona a causa di un&#39;eccezione generata sul server, l&#39;eccezione viene segnalata come parte del messaggio di risposta HTTP. Se l’URL di chiamata (o il `async_result` URL in caso di chiamata asincrona) non ha un suffisso .xml, il provider REST restituisce il codice HTTP `500 Internal Server Error` seguito da un messaggio di eccezione.
+Se non è possibile completare una richiesta di chiamata sincrona o asincrona a causa di un&#39;eccezione generata sul server, l&#39;eccezione viene segnalata come parte del messaggio di risposta HTTP. Se l’URL di chiamata (o il `async_result` URL in caso di chiamata asincrona) non dispone di un suffisso .xml, il provider REST restituisce il codice HTTP `500 Internal Server Error` seguito da un messaggio di eccezione.
 
 Se l’URL di chiamata (o il `async_result` URL in caso di chiamata asincrona) non dispone di un suffisso .xml, il provider REST restituisce il codice HTTP `200 OK`seguito da un documento XML che descrive l&#39;eccezione nel formato seguente.
 

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ I modelli di app offrono un modo semplice di utilizzare le progettazioni esisten
 Che cos’è un modello di app? Consideralo come una raccolta di modelli di pagina e componenti che rappresentano una linea di base o le basi di un’app.
 Quando crei un’app basata sul modello di un’altra app, otterrai un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.
 
-Per utilizzare questa funzione è necessario disporre di un modello di app mobile esistente (o di un’app con un modello di app installato).
+Per utilizzare questa funzione, è necessario disporre di un modello di app mobile esistente (o di un’app con un modello di app installato).
 
 Il pacchetto di esempi più recente delle app AEM include una versione aggiornata dell’app Geometrixx con un modello di app. In alternativa, è possibile installare [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) che fornisce anche un modello.
 

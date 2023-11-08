@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Sling Resource Merger fornisce servizi per accedere e unire le risorse. Fornisce
 
 Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/sostituzione vengono unite alle risorse/proprietà originali:
 
-* Il contenuto della definizione personalizzata ha una priorità più alta rispetto a quella dell’originale (cioè *sovrapposizioni* o *sostituzioni* it).
+* Il contenuto della definizione personalizzata ha una priorità più alta rispetto a quella dell’originale (ovvero *sovrapposizioni* o *sostituzioni* it).
 
 * Se necessario, [proprietà](#properties) definito nella personalizzazione, indica come deve essere utilizzato il contenuto unito dall’originale.
 
@@ -62,7 +62,7 @@ Gli obiettivi per utilizzare Sling Resource Merger in AEM sono i seguenti:
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
->1. Ricrea l’elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
+>1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
 >
 >1. Apporta le modifiche in `/apps`
 >
@@ -134,7 +134,7 @@ Nell’esempio di sovrapposizione precedente, sono necessari i seguenti nodi:
 
 >[!NOTE]
 >
->Quando si utilizza Sling Resource Merger (ad esempio quando si tratta dell’interfaccia utente standard touch), non è consigliabile copiare l’intera struttura da `/libs` in quanto comporterebbe la memorizzazione di troppe informazioni `/apps`. Questo può causare problemi quando il sistema viene aggiornato in qualsiasi modo.
+>Quando si utilizza Sling Resource Merger (cioè quando si tratta dell’interfaccia utente standard touch), non è consigliabile copiare l’intera struttura da `/libs` in quanto comporterebbe la memorizzazione di troppe informazioni `/apps`. Questo può causare problemi quando il sistema viene aggiornato in qualsiasi modo.
 
 ### Casi d’uso {#use-cases}
 

@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: a66814fa065b7545ec39fe9109b4c5815fa199da
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2284'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ Ad esempio, l’interfaccia utente può adattare il seguente approccio:
    * `total=43`, `more=false` - Indica che il numero totale di hit è 43. L’interfaccia utente può visualizzare fino a dieci risultati come parte della prima pagina e fornire l’impaginazione per le tre pagine successive. Puoi inoltre utilizzare questa implementazione per visualizzare un testo descrittivo come **&quot;43 risultati trovati&quot;**.
    * `total=100`, `more=true` - Indica che il numero totale di hit è maggiore di 100 e il conteggio esatto non è noto. L’interfaccia utente può visualizzare fino a dieci pagine come parte della prima pagina e fornire l’impaginazione per le dieci pagine successive. Puoi anche utilizzarlo per visualizzare un testo come **&quot;trovati più di 100 risultati&quot;**. Quando l’utente passa alle pagine successive, le chiamate effettuate al Query Builder aumentano il limite di `guessTotal` e anche del `offset` e `limit` parametri.
 
-`guessTotal` deve essere utilizzato nei casi in cui l’interfaccia utente deve utilizzare uno scorrimento infinito per evitare che Query Builder determini il conteggio esatto degli hit.
+`guessTotal` deve essere utilizzato nei casi in cui l’interfaccia utente deve utilizzare lo scorrimento infinito per evitare che Query Builder determini il conteggio esatto degli hit.
 
 ### Trova i file jar e ordinali, prima i più recenti {#find-jar-files-and-order-them-newest-first}
 

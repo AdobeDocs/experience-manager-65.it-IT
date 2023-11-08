@@ -10,16 +10,16 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '840'
 ht-degree: 2%
 
 ---
 
 # Gestore di autenticazione SAML 2.0{#saml-authentication-handler}
 
-L’AEM viene fornito con un [SAML](https://saml.xml.org/saml-specifications) gestore di autenticazione. Questo gestore fornisce supporto per [SAML](https://saml.xml.org/saml-specifications) 2.0 Authentication Request Protocol (profilo Web-SSO) utilizzando `HTTP POST` binding.
+L’AEM viene fornito con un [SAML](https://saml.xml.org/saml-specifications) gestore di autenticazione. Questo gestore supporta [SAML](https://saml.xml.org/saml-specifications) 2.0 Authentication Request Protocol (profilo Web-SSO) utilizzando `HTTP POST` binding.
 
 Supporta:
 

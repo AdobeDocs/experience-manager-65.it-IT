@@ -1,20 +1,16 @@
 ---
 title: Calcolo dati modulo
-seo-title: Calculating Form Data
 description: Utilizzare il servizio Forms per calcolare i valori immessi da un utente in un modulo e visualizzare i risultati. Il servizio Forms calcola i valori utilizzando l’API Java e l’API del servizio web.
-seo-description: Use the Forms service to calculate values that a user enters into a form and display the results. Forms service calculates the values using the Java API and Web Service API.
-uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -29,13 +25,13 @@ Come parte del processo di progettazione del modulo, è possibile utilizzare cal
 
 L’utente immette i valori nel modulo e fa clic sul pulsante Calcola per visualizzare i risultati. Il processo seguente descrive un esempio di applicazione che consente a un utente di calcolare i dati:
 
-* L’utente accede a una pagina HTML denominata StartLoan.html che funge da pagina iniziale dell’applicazione web. Questa pagina richiama un servlet Java denominato `GetLoanForm`.
+* L&#39;utente accede a una pagina HTML denominata StartLoan.html che funge da pagina iniziale dell&#39;applicazione Web. Questa pagina richiama un servlet Java denominato `GetLoanForm`.
 * Il `GetLoanForm` servlet esegue il rendering di un modulo prestito. Questo modulo contiene uno script, campi interattivi, un pulsante di calcolo e un pulsante di invio.
 * L’utente immette i valori nei campi del modulo e fa clic sul pulsante Calcola. Il modulo viene inviato al `CalculateData` Servlet Java in cui viene eseguito lo script. Il modulo viene inviato nuovamente all’utente con i risultati del calcolo visualizzati nel modulo.
 * L’utente continua a immettere e calcolare i valori fino a quando non viene visualizzato un risultato soddisfacente. Al termine dell’operazione, l’utente fa clic sul pulsante Invia per elaborare il modulo. Il modulo viene inviato a un altro servlet Java denominato `ProcessForm` che è responsabile del recupero dei dati inviati. (vedere [Gestione dei Forms inviati](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 
-Il diagramma seguente mostra il flusso logico dell’applicazione.
+Il diagramma seguente mostra il flusso logico dell&#39;applicazione.
 
 ![cf_cf_finsrv_loancalcapp_v1](assets/cf_cf_finsrv_loancalcapp_v1.png)
 
@@ -163,7 +159,7 @@ Calcola i dati del modulo utilizzando l’API Forms (Java):
 1. Riscrivere il flusso di dati del modulo nel browser Web client
 
    * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per inviare un flusso di dati modulo al browser web client.
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` oggetto &quot;s `getOutputContent` metodo.
+   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
    * Creare un `java.io.InputStream` oggetto richiamando il `com.adobe.idp.Document` dell&#39;oggetto `getInputStream` metodo.
    * Creare una matrice di byte e popolarla con il flusso di dati del modulo richiamando `InputStream` dell&#39;oggetto `read` e passando la matrice di byte come argomento.
    * Richiama `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` metodo per inviare il flusso di dati del modulo al browser web client. Passare la matrice di byte al `write` metodo.

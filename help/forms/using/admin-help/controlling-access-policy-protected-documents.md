@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2168'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Alcune opzioni di ricerca aggiuntive sono disponibili solo per gli amministrator
 
 ## Aggiungi copertina a documenti protetti tramite policy {#add-cover-page-to-policy-protected-documents}
 
-Nel caso della maggior parte dei visualizzatori non Adobe PDF, se apri un documento protetto da Document Security la prima pagina viene visualizzata come pagina vuota o l’applicazione viene interrotta senza aprire il documento.
+Se la maggior parte dei visualizzatori non è Adobe PDF, se apri un documento protetto tramite Document Security la prima pagina viene visualizzata come pagina vuota o l’applicazione viene interrotta senza aprire il documento.
 
 È possibile utilizzare il supporto Page 0 (Wrapper Document) per consentire ai visualizzatori non Adobe PDF di aprire un documento protetto e di visualizzare una pagina di copertina nel documento.
 

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7661'
+source-wordcount: '7662'
 ht-degree: 1%
 
 ---
@@ -169,7 +169,7 @@ Per impostazione predefinita, AEM Forms su JEE installa un servizio utilizzando 
 
 Per eseguire l’application server in cui viene distribuito AEM Forms su JEE, utilizzando un account non amministrativo specifico, segui queste istruzioni:
 
-1. In Microsoft Management Console (MMC), creare un utente locale per il servizio Forms Server per effettuare l&#39;accesso come:
+1. In Microsoft Management Console (MMC), creare un utente locale per il servizio Forms Server per l&#39;accesso come:
 
    * Seleziona **L&#39;utente non può cambiare la password**.
    * Il giorno **Membro di** , assicurati che il **Utenti** è elencato.
@@ -182,7 +182,7 @@ Per eseguire l’application server in cui viene distribuito AEM Forms su JEE, u
 1. Fai doppio clic su JBoss per AEM Forms su JEE e arresta il servizio.
 1. Il giorno **Accedi** , seleziona **Questo account**, individua l&#39;account utente creato e immetti la password per l&#39;account.
 1. In MMC aprire **Impostazioni di protezione locali** e seleziona **Criteri locali** > **Assegnazione diritti utente**.
-1. Assegnare i diritti seguenti all&#39;account utente in cui è in esecuzione il server Forms:
+1. Assegnare i seguenti diritti all&#39;account utente in cui è in esecuzione Forms Server:
 
    * Nega accesso tramite Servizi terminal
    * Nega accesso locale
@@ -273,7 +273,7 @@ Per disabilitare l&#39;accesso remoto a tutti i servizi dell&#39;archivio fonti 
 
 **Disattiva tutti gli accessi anonimi non essenziali**
 
-Alcuni servizi Forms Server dispongono di operazioni che possono essere richiamate da un chiamante anonimo. Se non è necessario l’accesso anonimo a questi servizi, disattivalo seguendo i passaggi descritti in [Disabilitazione dell’accesso anonimo non essenziale ai servizi](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Alcuni servizi di Forms Server dispongono di operazioni che possono essere richiamate da un chiamante anonimo. Se non è necessario l’accesso anonimo a questi servizi, disattivalo seguendo i passaggi descritti in [Disabilitazione dell’accesso anonimo non essenziale ai servizi](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Modificare la password predefinita dell&#39;amministratore {#change-the-default-administrator-password}
 
@@ -401,7 +401,7 @@ In WebSphere è possibile configurare la protezione integrata solo quando si uti
 
 ### Protezione dell&#39;accesso a contenuto riservato nel database {#protecting-access-to-sensitive-content-in-the-database}
 
-Lo schema del database AEM Forms contiene informazioni riservate sulla configurazione del sistema e sui processi aziendali e deve essere nascosto dietro il firewall. Il database deve essere considerato all&#39;interno dello stesso limite di attendibilità del server forms. Per evitare la divulgazione delle informazioni e il furto dei dati aziendali, il database deve essere configurato dall&#39;amministratore del database (DBA) in modo da consentire l&#39;accesso solo agli amministratori autorizzati.
+Lo schema del database AEM Forms contiene informazioni riservate sulla configurazione del sistema e sui processi aziendali e deve essere nascosto dietro il firewall. Il database deve essere considerato all&#39;interno dello stesso limite di attendibilità del server Forms. Per evitare la divulgazione delle informazioni e il furto dei dati aziendali, il database deve essere configurato dall&#39;amministratore del database (DBA) in modo da consentire l&#39;accesso solo agli amministratori autorizzati.
 
 Come ulteriore precauzione, è consigliabile utilizzare strumenti specifici del fornitore del database per crittografare le colonne nelle tabelle che contengono i dati seguenti:
 
@@ -543,7 +543,7 @@ Alcuni URL sono evidenziati come applicazioni web rivolte all’utente finale. �
   </tr> 
   <tr> 
    <td><p>/soap/services/*</p> </td> 
-   <td><p>URL servizio Web per tutti i servizi del server Forms</p> </td> 
+   <td><p>URL servizio Web per tutti i servizi di Forms Server</p> </td> 
    <td><p>No</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
@@ -674,7 +674,7 @@ Le seguenti caratteristiche sono comuni al CSRF:
 AEM Forms su JEE utilizza la funzione Referrer Filter per bloccare gli attacchi CSRF. In questa sezione vengono utilizzati i seguenti termini per descrivere il meccanismo di filtro del referente:
 
 * **Referente consentito:** Un Referrer è l&#39;indirizzo della pagina sorgente che invia una richiesta al server. Per le pagine o i moduli JSP, i Referenti sono in genere la pagina precedente nella cronologia di navigazione. I referrer per le immagini sono in genere le pagine su cui vengono visualizzate le immagini. Puoi identificare il Referrer a cui è consentito l’accesso alle risorse del server aggiungendole all’elenco Referrer consentiti.
-* **Eccezioni referente consentite:** Puoi limitare l’ambito di accesso di un particolare Referrer nell’elenco dei Referrer consentiti. Per applicare questa restrizione, puoi aggiungere singoli percorsi di quel Referrer all’elenco Eccezioni referrer consentite. Alle richieste provenienti da percorsi nell’elenco Eccezioni referente consentite non viene consentito richiamare alcuna risorsa sul server Forms. È possibile definire Eccezioni referente consentite per un&#39;applicazione specifica e utilizzare anche un elenco globale di eccezioni che si applicano a tutte le applicazioni.
+* **Eccezioni referente consentite:** Puoi limitare l’ambito di accesso di un particolare Referrer nell’elenco dei Referrer consentiti. Per applicare questa restrizione, puoi aggiungere singoli percorsi di quel Referrer all’elenco Eccezioni referrer consentite. Le richieste provenienti da percorsi inclusi nell&#39;elenco Eccezioni referente consentite non possono richiamare alcuna risorsa sul server Forms. È possibile definire Eccezioni referente consentite per un&#39;applicazione specifica e utilizzare anche un elenco globale di eccezioni che si applicano a tutte le applicazioni.
 * **URI consentiti:** Questo è un elenco di risorse che devono essere servite senza controllare l’intestazione Referrer. A questo elenco è possibile aggiungere risorse, ad esempio le pagine della guida, che non determinano modifiche dello stato sul server. Le risorse nell’elenco URI consentiti non vengono mai bloccate dal filtro Referrer, indipendentemente da chi sia il Referrer.
 * **Referente nullo:** Una richiesta server che non è associata o non proviene da una pagina web padre viene considerata una richiesta di un referente nullo. Ad esempio, quando apri una nuova finestra del browser, digita un indirizzo e premi Invio, il Referente inviato al server è nullo. Un’applicazione desktop (.NET o SWING) che effettua una richiesta HTTP a un server web invia anche un referente Null al server.
 
@@ -682,12 +682,12 @@ AEM Forms su JEE utilizza la funzione Referrer Filter per bloccare gli attacchi 
 
 Il processo di filtro Referrer può essere descritto come segue:
 
-1. Il server forms controlla il metodo HTTP utilizzato per la chiamata:
+1. Forms Server controlla il metodo HTTP utilizzato per la chiamata:
 
-   1. Se si tratta di POST, il server Forms esegue il controllo dell’intestazione Referrer.
+   1. Se si tratta di POST, Forms Server esegue il controllo dell&#39;intestazione Referrer.
    1. Se è GET, il server Forms ignora il controllo Referrer, a meno che *CSRF_CHECK_GETS* è impostato su true, nel qual caso esegue il controllo dell’intestazione Referrer. *CSRF_CHECK_GETS* è specificato in *web.xml* per la tua applicazione.
 
-1. Il server Forms controlla se l’URI richiesto esiste nel inserisco nell&#39;elenco Consentiti di:
+1. Il server Forms verifica se l&#39;URI richiesto esiste nel inserisco nell&#39;elenco Consentiti di:
 
    1. Se l&#39;URI viene inserito nell&#39;elenco Consentiti, il server accetta la richiesta.
    1. Se l’URI richiesto non viene inserito nell&#39;elenco Consentiti, il server recupera il Referrer della richiesta.
@@ -706,7 +706,7 @@ Il processo di filtro Referrer può essere descritto come segue:
 
 AEM Forms su JEE fornisce un filtro Referrer per specificare il Referrer che può accedere alle risorse del server. Per impostazione predefinita, il filtro Referrer non filtra le richieste che utilizzano un metodo HTTP sicuro, ad esempio GET, a meno che *CSRF_CHECK_GETS* è impostato su true. Se il numero di porta per una voce Referrer consentito è impostato su 0, AEM Forms su JEE consentirà tutte le richieste con Referrer provenienti da tale host indipendentemente dal numero di porta. Se non viene specificato alcun numero di porta, sono consentite solo le richieste dalla porta predefinita 80 (HTTP) o dalla porta 443 (HTTPS). Il filtro Referrer è disattivato se tutte le voci nell&#39;elenco Referrer consentiti vengono eliminate.
 
-Quando si installa Document Services per la prima volta, l’elenco Referenti consentiti viene aggiornato con l’indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referenti consentiti vengono restituiti dal sistema operativo host. Ad esempio, un server con un indirizzo IP di 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per tutti i nomi non qualificati restituiti dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), il inserisco nell&#39;elenco Consentiti di non viene aggiornato. Modifica l’elenco dei Referenti consentiti in base all’ambiente aziendale. Non distribuire il server Forms nell’ambiente di produzione con l’elenco di riferimenti consentiti predefinito. Dopo aver modificato uno dei Referrer consentiti, le Eccezioni referente o gli URI, assicurati di riavviare il server affinché le modifiche diventino effettive.
+Quando si installa Document Services per la prima volta, l’elenco Referenti consentiti viene aggiornato con l’indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referenti consentiti vengono restituiti dal sistema operativo host. Ad esempio, un server con un indirizzo IP di 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per tutti i nomi non qualificati restituiti dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), il inserisco nell&#39;elenco Consentiti di non viene aggiornato. Modifica l’elenco dei Referenti consentiti in base all’ambiente aziendale. Non distribuire Forms Server nell’ambiente di produzione con l’elenco dei Destinatari autorizzati predefiniti. Dopo aver modificato uno dei Referrer consentiti, le Eccezioni referente o gli URI, assicurati di riavviare il server affinché le modifiche diventino effettive.
 
 **Gestione dell’elenco dei referenti consentiti**
 
@@ -727,7 +727,7 @@ AEM Forms su JEE fornisce API per gestire l’elenco Eccezioni referenti consent
 
 Per ulteriori informazioni sulle API, consulta la documentazione di riferimento* per AEM Forms su JEE API.
 
-Utilizza il ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** elenco delle eccezioni Referente consentite a livello globale, ovvero per definire le eccezioni applicabili a tutte le applicazioni. Questo elenco contiene solo URI con un percorso assoluto (ad esempio, `/index.html`) o un percorso relativo (ad esempio, `/sample/`). Puoi anche aggiungere un’espressione regolare alla fine di un URI relativo, ad esempio: `/sample/(.)*`.
+Utilizza il ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** elenco delle eccezioni Referente consentite a livello globale, per definire le eccezioni applicabili a tutte le applicazioni. Questo elenco contiene solo URI con un percorso assoluto (ad esempio, `/index.html`) o un percorso relativo (ad esempio, `/sample/`). Puoi anche aggiungere un’espressione regolare alla fine di un URI relativo, ad esempio: `/sample/(.)*`.
 
 Il ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** l’ID elenco è definito come costante nella `UMConstants` classe del `com.adobe.idp.um.api` spazio dei nomi, trovato in `adobe-usermanager-client.jar`. Puoi utilizzare le API di AEM Forms per creare, modificare o modificare questo elenco. Ad esempio, per creare l’elenco Eccezioni referente consentite globali, utilizza:
 
@@ -739,7 +739,7 @@ Utilizza il ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** elenco di eccezioni specifiche
 
 **Disabilitazione del filtro Referrer**
 
-Nel caso in cui il filtro Referrer blocchi completamente l&#39;accesso al server Forms e non sia possibile modificare l&#39;elenco Referrer consentiti, è possibile aggiornare lo script di avvio del server e disabilitare il filtro Referrer.
+Se il filtro Referrer blocca completamente l&#39;accesso a Forms Server e non è possibile modificare l&#39;elenco Referrer consentiti, è possibile aggiornare lo script di avvio del server e disattivare il filtro Referrer.
 
 Includi `-Dlc.um.csrffilter.disabled=true` Argomento JAVA nello script di avvio e riavviare il server. Assicurati di eliminare l’argomento JAVA dopo aver riconfigurato in modo appropriato l’elenco dei Referenti consentiti.
 
@@ -835,7 +835,7 @@ Quando configuri un’architettura di rete sicura come descritto nella sezione p
     <ul> 
      <li><p>applicazioni client di servizi Web, ad esempio applicazioni .NET</p> </li> 
      <li><p>Adobe Reader® utilizza SOAP per AEM Forms sui servizi web del server JEE</p> </li> 
-     <li><p>Adobe di applicazioni Flash® utilizza SOAP per i servizi Web del server Forms</p> </li> 
+     <li><p>Adobe di applicazioni Flash® che utilizzano SOAP per i servizi Web di Forms Server</p> </li> 
      <li><p>Chiamate SDK di AEM Forms su JEE quando utilizzate in modalità SOAP</p> </li> 
      <li><p>Ambiente di progettazione di Workbench</p> </li> 
     </ul> </td> 
@@ -995,7 +995,7 @@ Per impostazione predefinita, l’installazione chiavi in mano di AEM Forms su J
 
 #### Eseguire il server applicazioni utilizzando un account non amministrativo {#run-the-application-server-using-a-non-administrative-account}
 
-1. In Microsoft Management Console (MMC), creare un utente locale per il servizio Forms Server per effettuare l&#39;accesso come:
+1. In Microsoft Management Console (MMC), creare un utente locale per il servizio Forms Server per l&#39;accesso come:
 
    * Seleziona **L&#39;utente non può cambiare la password**.
    * Il giorno **Membro di** , verificare che sia elencato il gruppo Utenti.
@@ -1003,7 +1003,7 @@ Per impostazione predefinita, l’installazione chiavi in mano di AEM Forms su J
 1. Seleziona **Impostazioni** > **Strumenti di amministrazione** > **Servizi**.
 1. Fare doppio clic sul servizio Application Server e arrestare il servizio.
 1. Il giorno **Accedi** , seleziona **Questo account**, individua l&#39;account utente creato e immetti la password per l&#39;account.
-1. Nella finestra Impostazioni di protezione locali, in Assegnazione diritti utente assegnare i seguenti diritti all&#39;account utente in cui è in esecuzione il server Forms:
+1. Nella finestra Impostazioni di protezione locali, in Assegnazione diritti utente assegnare i seguenti diritti all&#39;account utente in cui è in esecuzione Forms Server:
 
    * Nega accesso tramite Servizi terminal
    * Nega accesso localyxx
@@ -1040,7 +1040,7 @@ AEM Forms su JEE utilizza il file system nei seguenti modi:
 * Memorizza i file nell&#39;archivio di archivio globale utilizzati per supportare i componenti della soluzione installati
 * Nelle cartelle controllate vengono archiviati i file eliminati utilizzati come input in un servizio da una posizione della cartella del file system
 
-Quando si utilizzano le cartelle controllate come metodo per inviare e ricevere documenti con un servizio Forms Server, è necessario adottare ulteriori precauzioni per la protezione del file system. Quando un utente rilascia del contenuto nella cartella controllata, tale contenuto viene esposto attraverso la cartella controllata. In questo caso, il servizio non autentica l’utente finale effettivo. Al contrario, si basa sulla sicurezza ACL e a livello di condivisione da impostare a livello di cartella per determinare chi può effettivamente richiamare il servizio.
+Quando si utilizzano le cartelle controllate come metodo per inviare e ricevere documenti con un servizio Forms Server, adottare ulteriori precauzioni per la protezione del file system. Quando un utente rilascia del contenuto nella cartella controllata, tale contenuto viene esposto attraverso la cartella controllata. In questo caso, il servizio non autentica l’utente finale effettivo. Al contrario, si basa sulla sicurezza ACL e a livello di condivisione da impostare a livello di cartella per determinare chi può effettivamente richiamare il servizio.
 
 ## Raccomandazioni sulla sicurezza specifiche per JBoss {#jboss-specific-security-recommendations}
 

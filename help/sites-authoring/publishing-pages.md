@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine di contenuto
 description: Scopri come pubblicare le pagine di contenuto in Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 69%
+source-wordcount: '1662'
+ht-degree: 70%
 
 ---
 
@@ -107,7 +107,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 >[!NOTE]
 >
->La pubblicazione rapida è una pubblicazione superficiale, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
+>La pubblicazione rapida è una pubblicazione “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine secondarie.
 
 #### Gestisci pubblicazione  {#manage-publication}
 

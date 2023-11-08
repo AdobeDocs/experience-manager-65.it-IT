@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2113'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ A seconda della configurazione specifica, queste modifiche possono essere apport
 
 >[!NOTE]
 >
->La configurazione dell’AEM è semplice. Tuttavia, tieni presente che alcune modifiche possono avere un impatto importante sulle applicazioni. Per questo motivo, assicurati di disporre dell’esperienza e delle conoscenze necessarie prima di iniziare a configurare l’AEM e di apportare solo le modifiche che sai essere necessarie. Eventuali modifiche apportate tramite la console OSGi sono **immediatamente** applicato al sistema in esecuzione (non è richiesto alcun riavvio).
+>La configurazione dell’AEM è semplice. Tuttavia, alcune modifiche possono avere un impatto importante sulle applicazioni. Per questo motivo, assicurati di disporre dell’esperienza e delle conoscenze necessarie prima di iniziare a configurare l’AEM e di apportare solo le modifiche che sai essere necessarie. Eventuali modifiche apportate tramite la console OSGi sono **immediatamente** applicato al sistema in esecuzione (non è richiesto alcun riavvio).
 
 ## Considerazioni sulla configurazione primaria {#primary-configuration-considerations}
 

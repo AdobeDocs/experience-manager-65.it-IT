@@ -1,20 +1,16 @@
 ---
 title: Configurazione della segmentazione
-seo-title: Configuring Segmentation
 description: Scopri come configurare la segmentazione per AEM Campaign.
-seo-description: Learn how to configure segmentation for AEM Campaign.
-uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 14%
+source-wordcount: '1129'
+ht-degree: 13%
 
 ---
 
@@ -110,7 +106,7 @@ Le seguenti caratteristiche del segmento sono disponibili come predefinite e pos
 
 Puoi combinare queste caratteristiche utilizzando gli operatori booleani OR e AND (vedi [Creazione di un nuovo segmento](#creating-a-new-segment)) per definire lo scenario esatto per la selezione di questo segmento.
 
-Quando l’intera istruzione restituisce true, questo segmento è stato risolto. Nel caso in cui siano applicabili più segmenti, viene utilizzato anche il fattore **[Incremento.](/help/sites-administering/campaign-segmentation.md#boost-factor)**
+Quando l’intera istruzione restituisce true, questo segmento è stato risolto. Se sono presenti più segmenti applicabili, il **[Incrementa](/help/sites-administering/campaign-segmentation.md#boost-factor)** viene utilizzato anche il fattore.
 
 >[!CAUTION]
 >

@@ -10,7 +10,7 @@ topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Tutti i moduli e le comunicazioni interattive creati sono disponibili in Assets.
 
 Per incorporare un modulo adattivo o una comunicazione interattiva in una pagina dei siti AEM che utilizza un modello modificabile, accertati che il componente Modulo AEM sia configurato come componente consentito nel modello associato. Per ulteriori informazioni, consulta **Criteri e proprietà (contenitore di layout)** sezione in [Creazione di modelli di pagina](/help/sites-authoring/templates.md).
 
-Nel caso di una pagina Sites che utilizza un modello statico, devi configurarla nel sistema paragrafo della pagina del sito. Consulta [Configurazione dei componenti in modalità progettazione](/help/sites-authoring/default-components-designmode.md) per ulteriori informazioni.
+Se è presente una pagina Sites che utilizza un modello statico, è necessario configurarla nel sistema paragrafo della pagina del sito. Consulta [Configurazione dei componenti in modalità progettazione](/help/sites-authoring/default-components-designmode.md) per ulteriori informazioni.
 
 ## Incorporazione di un modulo adattivo o di una comunicazione interattiva {#af-component}
 

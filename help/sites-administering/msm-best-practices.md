@@ -4,9 +4,9 @@ description: Trova le best practice compilate dai team tecnici e di consulenza A
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1604'
 ht-degree: 40%
 
 ---
@@ -160,7 +160,7 @@ Le modifiche alla struttura del contenuto in una struttura blueprint/sorgente ve
 
 ## Personalizzazione dei rollout {#customizing-rollouts}
 
-Le configurazioni di rollout MSM sono altamente personalizzabili. Tieni presente che automatizzare i rollout può avere conseguenze di vasta portata. Come best practice, pianifica *molto* attentamente prima, ad esempio:
+Le configurazioni di rollout MSM sono altamente personalizzabili. L’automazione dei rollout può avere conseguenze di vasta portata. Come best practice, pianifica *molto* attentamente prima, ad esempio:
 
 * automatizzare i rollout; ad esempio, con [trigger onModify](#onmodify),
 * personalizzazione [tipi di nodo/proprietà](#node-types-properties),

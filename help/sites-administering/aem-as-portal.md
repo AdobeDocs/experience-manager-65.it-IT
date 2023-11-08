@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6092'
+source-wordcount: '6087'
 ht-degree: 0%
 
 ---
@@ -737,7 +737,7 @@ Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in 
 
 >[!NOTE]
 >
->Queste procedure utilizzano il portale WebSphere come esempio, anche se sono il più generiche possibile; tieni presente che le procedure variano per altri portali Web. Anche se i passaggi sono essenzialmente identici per tutti i portali web, è necessario riutilizzare i passaggi per il portale web specifico.
+>Queste procedure utilizzano il portale WebSphere come esempio, anche se sono il più generiche possibile; le procedure variano per altri portali Web. Anche se i passaggi sono essenzialmente identici per tutti i portali web, è necessario riutilizzare i passaggi per il portale web specifico.
 
 #### Installazione del portlet {#installing-the-portlet}
 

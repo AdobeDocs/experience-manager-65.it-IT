@@ -4,9 +4,9 @@ description: Scopri le opzioni disponibili per l’installazione di un’istanza
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,9 @@
 title: Utilizzo dei Edge Delivery Services
 description: Utilizzo dei Edge Delivery Services (EDS)
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '608'
 ht-degree: 1%
 
 ---

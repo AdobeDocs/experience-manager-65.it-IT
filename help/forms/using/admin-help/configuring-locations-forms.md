@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -82,11 +82,11 @@ Il valore predefinito è una stringa vuota.
 **Posizione predefinita:** Questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione dipendente dal server applicazioni in uso:
 
 * **JBoss:** [Home page JBoss]\server\[tipo di installazione]\svcdata\FormServer\Cache
-* **WebLogic:** [Home di WebLogic]\user_projects\domains\[nome dominio aem-forms]\adobe\[nome server forms]\FormServer\Cache
+* **WebLogic:** [Home di WebLogic]\user_projects\domains\[nome dominio aem-forms]\adobe\[nome server Forms]\FormServer\Cache
 * **WebSphere:** [Pagina principale di IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
 **Directory temporanea LC:** La cache viene creata in una sottodirectory della directory temporanea dei moduli AEM, specificata nella console di amministrazione in Impostazioni > Impostazioni sistema core > Configurazioni > Posizione della directory temporanea. La sottodirectory è denominata adobeform_[nomeserver].
 
 >[!NOTE]
 >
->Se utilizzi un’utility di pulizia temporanea, tieni presente che l’eliminazione di queste directory non influisce sulla funzionalità, ma può avere un impatto significativo sulle prestazioni per un breve periodo di tempo, fino alla creazione della nuova cache. Per evitare questo problema, non eliminare queste directory mentre si cancella la directory temporanea dei moduli AEM.
+>Se si utilizza un&#39;utilità di pulizia temporanea, anche se l&#39;eliminazione di queste directory non influisce sulla funzionalità, può avere un impatto significativo sulle prestazioni per un breve periodo di tempo fino alla creazione della nuova cache. Per evitare questo problema, non eliminare queste directory mentre si cancella la directory temporanea dei moduli AEM.

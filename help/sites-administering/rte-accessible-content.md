@@ -3,16 +3,16 @@ title: Configurare Editor Rich Text per creare pagine Web e siti accessibili.
 description: Configurare Editor Rich Text per creare pagine Web e siti accessibili.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '933'
 ht-degree: 1%
 
 ---
 
 # Configurare l’editor Rich Text per creare pagine web e siti accessibili {#configure-rte-for-accessibility}
 
-Adobe Experience Manager supporta le funzioni di accessibilità standard man in conformità con vari standard di accessibilità. Inoltre, gli sviluppatori possono personalizzare o estendere per fornire funzionalità che consentono di creare contenuto accessibile utilizzando componenti di Experience Manager che utilizzano l’editor Rich Text (RTE).
+Adobe Experience Manager supporta molte funzioni di accessibilità standard in conformità con vari standard di accessibilità. Inoltre, gli sviluppatori possono personalizzare o estendere per fornire funzionalità che consentono di creare contenuto accessibile utilizzando componenti di Experience Manager che utilizzano l’editor Rich Text (RTE).
 
 Durante la progettazione di pagine web e l’aggiunta di contenuto alle pagine, gli sviluppatori e gli autori di contenuti possono utilizzare le funzioni dell’editor Rich Text per fornire informazioni relative all’accessibilità. Ad esempio, aggiungi informazioni strutturali tramite intestazioni ed elementi di paragrafo.
 
@@ -39,9 +39,9 @@ Per istruzioni complete sulla configurazione dell’editor Rich Text, consulta [
 * [Attiva un plug-in e configura la proprietà features](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 * [Configurare altre funzionalità dell’editor Rich Text](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 
-Configurando un plug-in all’interno del `rtePlugins` sub-branch in CRXDE Lite, puoi attivare tutte o funzionalità specifiche per quel plug-in.
+Configurando un plug-in all’interno del `rtePlugins` sub-branch in CRXDE Liti, puoi attivare tutte o funzionalità specifiche per quel plug-in.
 
-![CRXDE Lite che mostra un esempio di rtePlugin.](assets/chlimage_1-208.png)
+![CRXDE Liti che mostra un esempio di rtePlugin.](assets/chlimage_1-208.png)
 
 ### Esempio: specificare i formati di paragrafo disponibili nel campo di selezione dell’Editor Rich Text {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -100,7 +100,7 @@ L’editor Rich Text può utilizzare `strong` e `em` tag al posto di `b` e `i`. 
 
 ### Istruzioni dettagliate {#step-by-step-instructions}
 
-1. Avvia CRXDE Lite. Ad esempio: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Avvia CRXDE Liti. Ad esempio: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copia:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

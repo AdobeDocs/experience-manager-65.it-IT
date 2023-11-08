@@ -7,10 +7,10 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 18%
+ht-degree: 14%
 
 ---
 
@@ -36,11 +36,11 @@ Per collegare un sito AEM e i componenti core CIF dell’AEM a una visualizzazio
 
 3. Crea una configurazione figlio della configurazione di Cloud Service CIF:
 
-   * In AEM vai a Strumenti -> Generale -> [Browser configurazioni](/help/sites-administering/configurations.md#using-configuration-browser)
+   * In AEM vai a Strumenti > Generale > [Browser configurazioni](/help/sites-administering/configurations.md#using-configuration-browser)
    * Seleziona la configurazione di base creata
    * Crea una configurazione seguendo i passaggi descritti al precedente punto 2
 
-   Questa nuova configurazione viene creata come configurazione figlio di quella di base. Ora passa a Strumenti > Generale > Browser di configurazione e crea le impostazioni di configurazione.
+   Questa nuova configurazione viene creata come configurazione figlio di quella di base. Ora puoi passare a Strumenti > Generale > Browser configurazioni e creare le impostazioni di configurazione.
 
    >[!TIP]
    >

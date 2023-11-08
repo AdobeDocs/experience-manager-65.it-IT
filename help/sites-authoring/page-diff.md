@@ -1,20 +1,16 @@
 ---
 title: Differenze tra pagine
-seo-title: Page Diff
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
-seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
-uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 91%
+source-wordcount: '570'
+ht-degree: 85%
 
 ---
 
@@ -90,7 +86,7 @@ Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsias
 
 In alcune situazioni, il confronto delle differenze della pagina potrebbe non essere in grado di rilevare una differenza nel modo previsto.
 
-* Quando si confrontano versioni e lanci, la funzione non tiene conto dei componenti dinamici come breadcrumb, menu, elenchi di prodotti o loghi (componenti che si basano sulla struttura del sito per eseguire rendering del contenuto).
+* Quando si distinguono versioni e avvii, la diff non tiene conto dei componenti dinamici come breadcrumb, menu, elenchi di prodotti o loghi (componenti che si basano sulla struttura del sito per il rendering dei contenuti).
 * Per le versioni, non viene ricreato il criterio per il controllo degli accessi e le relazioni Live Copy.
 * Se una pagina viene spostata, non sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Anche se i numeri futuri non possono essere previsti con una precisione del 100%
 
 È responsabilità del Project Manager decidere e avviare azioni in base ai risultati.
 
-**Partecipa** - Anche se è responsabilità del Project Manager assicurarsi che tutte le parti siano pienamente coinvolte in tutte le riunioni (stato, workshop, ecc.), è necessario anche cercare di partecipare il prima possibile al ciclo del progetto, incluse le procedure di raccolta delle informazioni e di analisi dei requisiti.
+**Partecipa** - Anche se è responsabilità del Project Manager assicurarsi che tutte le parti siano pienamente coinvolte in tutte le riunioni (stato, workshop e così via), è necessario anche cercare di essere coinvolti il prima possibile nel ciclo del progetto, inclusi i processi di raccolta delle informazioni e di analisi dei requisiti.
 
 **Coinvolgere il cliente** - Su un tema simile, cerca di coinvolgere il cliente (ove possibile) durante la definizione dei test case e del piano.
 

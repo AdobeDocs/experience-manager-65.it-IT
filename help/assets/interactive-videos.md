@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6036'
+source-wordcount: '6035'
 ht-degree: 3%
 
 ---
@@ -533,7 +533,7 @@ Il codice di incorporamento copiato è impostato per un ambiente reattivo e si a
 >
 A questo punto, se hai aggiunto interattività solo con pagine web con collegamenti ipertestuali, hai chiuso.
 >
-Tuttavia, se avete aggiunto un&#39;interattività per attivare una Quickview, le miniature accanto al video interattivo sono solo a scopo di visualizzazione e non sono ancora integrate con la Quickview esistente. In questo caso, è necessario integrare il video interattivo con Quickview esistente sul sito Web.
+Tuttavia, se avete aggiunto un&#39;interattività per attivare una Quickview, le miniature accanto al video interattivo sono solo a scopo di visualizzazione e non sono ancora integrate con la Quickview esistente. In tal caso, è necessario integrare il video interattivo con Quickview esistente sul sito Web.
 
 **Esempio**
 

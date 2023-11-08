@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Le firme digitali dei moduli AEM possono utilizzare le credenziali memorizzate s
 1. Nell&#39;elenco Tipo slot (Slot Type), selezionate ID slot (Slot Id), Indice slot (Slot Index) o Nome token (Token Name) e specificate un valore nella casella Informazioni slot (Slot Info). I moduli AEM utilizzano queste impostazioni per determinare dove vengono memorizzate le credenziali nell&#39;HSM.
 
    * **Nome token:** Corrisponde al nome di una partizione (ad esempio, HSMPART1).
-   * **ID slot:** L&#39;ID slot è un numero intero che corrisponde allo slot, che a sua volta corrisponde a una partizione. Ad esempio, il client (server Forms) è stato registrato prima con la partizione HSMPART1. Questo mappa lo slot 1 alla partizione HSMPART1 per questo client. Poiché HSMPART1 è la prima partizione registrata, l&#39;ID dello slot è 1 e le informazioni sullo slot vengono impostate su 1.
+   * **ID slot:** L&#39;ID slot è un numero intero che corrisponde allo slot, che a sua volta corrisponde a una partizione. Ad esempio, il client (Forms Server) è stato registrato prima con la partizione HSMPART1. Questo mappa lo slot 1 alla partizione HSMPART1 per questo client. Poiché HSMPART1 è la prima partizione registrata, l&#39;ID dello slot è 1 e le informazioni sullo slot vengono impostate su 1.
 
      L&#39;ID dello slot viene impostato client per client. Se si registra un secondo computer in una partizione diversa (ad esempio, HSMPART2 sullo stesso dispositivo HSM), lo slot 1 verrà associato alla partizione HSMPART2 per tale client.
 
@@ -83,7 +83,7 @@ La colonna Stato riflette lo stato corrente delle credenziali. In caso di errore
 
 ## Reimposta tutte le connessioni HSM {#reset-all-hsm-connections}
 
-Ripristina le connessioni aperte a un dispositivo HSM dopo eventuali interruzioni della sessione di rete tra il server Forms e il dispositivo HSM. Ad esempio, possono verificarsi interruzioni a causa di un’interruzione della rete o della disconnessione del dispositivo HSM per un aggiornamento software. Dopo un’interruzione, le connessioni esistenti non sono aggiornate e le eventuali richieste di firma relative a tali connessioni non riescono. L&#39;utilizzo dell&#39;opzione Reimposta tutte le connessioni HSM consente di cancellare le connessioni precedenti.
+Reimpostare le connessioni aperte a un dispositivo HSM dopo eventuali interruzioni della sessione di rete tra il server Forms e il dispositivo HSM. Ad esempio, possono verificarsi interruzioni a causa di un’interruzione della rete o della disconnessione del dispositivo HSM per un aggiornamento software. Dopo un’interruzione, le connessioni esistenti non sono aggiornate e le eventuali richieste di firma relative a tali connessioni non riescono. L&#39;utilizzo dell&#39;opzione Reimposta tutte le connessioni HSM consente di cancellare le connessioni precedenti.
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali HSM.
 1. Fare clic su Reimposta tutte le connessioni HSM.

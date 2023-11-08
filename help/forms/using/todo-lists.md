@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4031'
 ht-degree: 0%
@@ -194,7 +194,7 @@ Può essere consentito lavorare su un&#39;attività offline e successivamente in
 
    >[!NOTE]
    >
-   >È possibile configurare Workspace in modo da salvare automaticamente periodicamente le informazioni immesse come bozza da un utente. Se il salvataggio automatico è abilitato e un utente sta lavorando a una bozza, la bozza viene salvata periodicamente. In caso di salvataggio automatico, viene utilizzato automaticamente il nome predefinito dell’attività.
+   >È possibile configurare Workspace in modo da salvare automaticamente periodicamente le informazioni immesse come bozza da un utente. Se il salvataggio automatico è abilitato e un utente sta lavorando a una bozza, la bozza viene salvata periodicamente. In caso di salvataggio automatico, viene utilizzato automaticamente il nome predefinito dell&#39;attività.
    >
    >
    >Per ulteriori informazioni, consultate Salvare periodicamente una bozza in [Gestione delle preferenze](/help/forms/using/getting-started-livecycle-html-workspace.md).

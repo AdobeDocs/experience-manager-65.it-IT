@@ -1,19 +1,15 @@
 ---
 title: Invio asincrono di moduli adattivi
-seo-title: Asynchronous submission of adaptive forms
 description: Scopri come configurare l’invio asincrono per i moduli adattivi.
-seo-description: Learn to configure asynchronous submission for adaptive forms.
-uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '795'
 ht-degree: 2%
 
 ---
@@ -27,9 +23,9 @@ ht-degree: 2%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html) |
 | AEM 6.5 | Questo articolo |
 
-In genere, i moduli web sono configurati per l’invio sincrono. Nell’invio sincrono, quando gli utenti inviano un modulo vengono reindirizzati a una pagina di conferma, a una pagina di ringraziamento o, in caso di invio non riuscito, a una pagina di errore. Tuttavia, le moderne esperienze web come le applicazioni a pagina singola stanno guadagnando popolarità, dove la pagina web rimane statica mentre l’interazione client-server avviene in background. Ora puoi fornire questa esperienza con i moduli adattivi configurando l’invio asincrono.
+In genere, i moduli web sono configurati per l’invio sincrono. Nell’invio sincrono, quando gli utenti inviano un modulo, vengono reindirizzati a una pagina di conferma, a una pagina di ringraziamento oppure, se l’invio non riesce, a una pagina di errore. Tuttavia, le moderne esperienze web come le applicazioni a pagina singola stanno guadagnando popolarità, dove la pagina web rimane statica mentre l’interazione client-server avviene in background. Ora puoi fornire questa esperienza con i moduli adattivi configurando l’invio asincrono.
 
-Nell’invio asincrono, quando un utente invia un modulo, lo sviluppatore del modulo inserisce un’esperienza separata, ad esempio il reindirizzamento verso un altro modulo o una sezione separata del sito web. L’autore può anche inserire servizi separati come l’invio di dati a un archivio dati diverso o aggiungere un motore di analisi personalizzato.In caso di invio asincrono, un modulo adattivo si comporta come un’applicazione a pagina singola in quanto il modulo non viene ricaricato o il suo URL non cambia quando i dati del modulo inviato vengono convalidati sul server.
+Nell’invio asincrono, quando un utente invia un modulo, lo sviluppatore del modulo inserisce un’esperienza separata, ad esempio il reindirizzamento verso un altro modulo o una sezione separata del sito web. L’autore può anche inserire servizi separati come l’invio di dati a un altro archivio dati o aggiungere un motore di analisi personalizzato. In caso di invio asincrono, un modulo adattivo si comporta come un’applicazione a pagina singola poiché il modulo non viene ricaricato o il suo URL non cambia quando i dati del modulo inviati vengono convalidati sul server.
 
 Continua a leggere per informazioni dettagliate sull’invio asincrono nei moduli adattivi.
 

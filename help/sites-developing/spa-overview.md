@@ -7,7 +7,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 86%
@@ -178,7 +178,7 @@ Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di 
 
 Se desideri utilizzare l’editor locale di un componente di testo creato in SPA è necessaria una configurazione aggiuntiva.
 
-1. Imposta un attributo (può essere qualsiasi) sull’elemento wrapper del contenitore contenente il testo HTML. Nel caso del contenuto di esempio di WKND Journal, è un `<div>` e il selettore che è stato utilizzato è `data-rte-editelement`.
+1. Imposta un attributo (può essere qualsiasi) sull’elemento wrapper del contenitore contenente il testo HTML. Se è presente il contenuto di esempio di WKND Journal, si tratta di un `<div>` e il selettore che è stato utilizzato è `data-rte-editelement`.
 1. Imposta la configurazione `editElementQuery` sul componente di testo AEM corrispondente `cq:InplaceEditingConfig` che punta a tale selettore, ad esempio, `data-rte-editelement`. Questo consente all’editor di sapere quale elemento HTML si applica al testo di HTML.
 
 Per un esempio di questa procedura, vedere [Contenuto di esempio del diario WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)

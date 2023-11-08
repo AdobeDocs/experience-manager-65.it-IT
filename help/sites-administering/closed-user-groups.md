@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6818'
+source-wordcount: '6816'
 ht-degree: 1%
 
 ---
@@ -594,7 +594,7 @@ Per ulteriori informazioni, consulta la tabella in [Configurazione predefinita d
 
 L’esclusione del gruppo &quot;amministratori&quot; può essere modificata o espansa nella console di sistema nella sezione di configurazione di **Elenco di esclusione CUG Apache Jackrabbit Oak**.
 
-In alternativa, è possibile fornire e distribuire un’implementazione personalizzata dell’interfaccia CugExclude per regolare l’insieme di entità escluse in caso di esigenze speciali. Consulta la documentazione su [Collegamento CUG](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) per dettagli e un esempio di implementazione.
+In alternativa, è possibile fornire e distribuire un’implementazione personalizzata dell’interfaccia CugExclude per regolare il set di entità escluse in caso di esigenze speciali. Consulta la documentazione su [Collegamento CUG](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) per dettagli e un esempio di implementazione.
 
 ### Autenticazione: configurazione {#authentication-setup-and-configuration}
 
@@ -710,7 +710,7 @@ Per impostazione predefinita, le nuove installazioni dell’AEM utilizzeranno le
 
 ## Disabilitazione dei requisiti di autenticazione e autorizzazione per gruppi utenti chiusi (CUG) {#disabling-cug-authorization-and-authentication-requirement}
 
-La nuova implementazione può essere disabilitata completamente nel caso in cui una determinata installazione non faccia uso di CUG o utilizzi mezzi diversi per l’autenticazione e l’autorizzazione.
+La nuova implementazione può essere disabilitata completamente nel caso in cui una determinata installazione non utilizzi CUG o utilizzi mezzi diversi per l’autenticazione e l’autorizzazione.
 
 ### Disattiva autorizzazione CUG {#disable-cug-authorization}
 

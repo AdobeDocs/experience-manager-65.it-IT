@@ -2,9 +2,9 @@
 title: Creazione di contenuto accessibile per Adobe Experience Manager (conformità WCAG 2.1)
 description: Utilizzare l’AEM per rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '13810'
+source-wordcount: '13806'
 ht-degree: 84%
 
 ---
@@ -323,7 +323,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
    * un elemento `<th>` per ogni intestazione di riga e colonna
    * un elemento `<td>` per ogni cella di dati
 
-  Inoltre, le tabelle accessibili utilizzano i seguenti elementi e attributi:
+  Inoltre, le tabelle accessibili utilizzano gli elementi e gli attributi seguenti:
 
    * L’elemento `<caption>` viene utilizzato per fornire una didascalia visibile per la tabella. Per impostazione predefinita, i sottotitoli vengono visualizzati centrati sopra la tabella, ma possono essere posizionati in modo appropriato utilizzando le CSS. La didascalia è associata alla tabella a livello di programmazione, pertanto è un metodo utile per fornire un’introduzione al contenuto.
    * L’elemento `<summary>` aiuta gli utenti non vedenti a comprendere più facilmente le informazioni presentate all’interno di una tabella, fornendo una sintesi di ciò che un utente vedente può vedere. Questo è utile quando si utilizzano layout di tabella complessi o non convenzionali (questo attributo non viene visualizzato nel browser, ma viene letto solo alle tecnologie per l’accessibilità).

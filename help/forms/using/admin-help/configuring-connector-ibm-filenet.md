@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 exl-id: f4045df5-a35b-41d7-910e-971017148597
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 1%
@@ -32,7 +32,7 @@ IBM FileNet P8 Content Engine fornisce servizi software per la gestione dei cont
 1. Nella console di amministrazione, fare clic su Servizi > Connettore per IBM FileNet.
 1. Nella casella URL motore di contenuto immettere l&#39;URL di connessione completo. Ad esempio:
 
-   Se si utilizza FileNet Content Engine 4.x con il trasporto CEWS, immettere:
+   Se si utilizza FileNet Content Engine 4.x con trasporto CEWS, immettere:
 
    `cemp:https://ContentEngineHostNameorIP:port/wsi/FNCEWS40DIME?jaasConfigurationName=FileNetP8WSI`
 
@@ -48,7 +48,7 @@ IBM FileNet P8 Content Engine fornisce servizi software per la gestione dei cont
 1. Nella casella Percorso file di crittografia immettere il percorso del file di crittografia:
 
    * Se si seleziona Cancella come schema di protezione delle credenziali, questa parola chiave e il relativo valore vengono ignorati.
-   * Se si seleziona Simmetrico come schema di protezione delle credenziali, il percorso immesso punta alla posizione di un file di crittografia nel server Forms contenente le chiavi di crittografia da utilizzare.
+   * Se si seleziona Simmetrico come schema di protezione delle credenziali, il percorso immesso punta alla posizione di un file di crittografia sul server Forms contenente le chiavi di crittografia da utilizzare.
 
 1. Nella casella Archivio oggetti predefinito immettere il connettore dell&#39;archivio oggetti a cui i moduli AEM si connettono per impostazione predefinita.
 1. Nella casella Nome utente immettere il nome utente di un utente con diritti di accesso all&#39;archivio oggetti predefinito specificato nel passaggio precedente.
@@ -71,7 +71,7 @@ Il connettore per IBM FileNet contiene il connettore del motore di processo per 
 
 Se si immette un nome utente o una password errati durante la configurazione della connessione al motore di contenuto o alle impostazioni del motore di processo, si otterranno i seguenti risultati, a seconda che i servizi siano attualmente in esecuzione:
 
-* Se il servizio Provider repository per IBM FileNet e il Connettore repository dei contenuti per IBM FileNet vengono arrestati, quando si salvano le informazioni di configurazione del servizio non viene visualizzato alcun errore. Tuttavia, al successivo avvio del servizio, verrà generata un&#39;eccezione e il servizio non verrà avviato.
+* Se entrambi i servizi Provider repository per IBM FileNet e Connettore repository dei contenuti per IBM FileNet vengono arrestati, quando si salvano le informazioni di configurazione del servizio non viene visualizzato alcun errore. Tuttavia, al successivo avvio del servizio, verrà generata un&#39;eccezione e il servizio non verrà avviato.
 * Se viene avviato il servizio Provider repository per IBM FileNet o il connettore repository dei contenuti per IBM FileNet, quando si salvano le informazioni di configurazione del servizio, il servizio tenta di convalidare immediatamente le informazioni sulle credenziali. In questo caso, si verifica un errore e le informazioni di configurazione non vengono salvate.
 
 ## Modificare il provider di servizi dell’archivio {#change-the-repository-service-provider}

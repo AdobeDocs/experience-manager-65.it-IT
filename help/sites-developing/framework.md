@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1641'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Nell’AEM, il percorso di base è `/content/cq:tags` e il nodo principale è di
 
 ### Spazio dei nomi dei tag {#tag-namespace}
 
-Gli spazi dei nomi consentono di raggruppare gli elementi. Il caso d’uso più tipico è uno spazio dei nomi per sito (ad esempio, pubblico, interno e portale) o per applicazione più grande (ad esempio, WCM, Assets, Communities). Tuttavia, gli spazi dei nomi possono essere utilizzati per varie altre esigenze. Nell’interfaccia utente, gli spazi dei nomi vengono utilizzati solo per mostrare il sottoinsieme di tag (ad esempio, tag di un determinato spazio dei nomi) applicabile al contenuto corrente.
+Gli spazi dei nomi consentono di raggruppare gli elementi. Il caso d’uso più tipico è uno spazio dei nomi per sito (ad esempio, pubblico, interno e portale) o per applicazione più grande (ad esempio, WCM, Assets, Communities). Tuttavia, gli spazi dei nomi possono essere utilizzati per varie altre esigenze. Gli spazi dei nomi vengono utilizzati nell’interfaccia utente per mostrare solo il sottoinsieme di tag (ovvero i tag di un determinato spazio dei nomi) applicabile al contenuto corrente.
 
 Lo spazio dei nomi del tag è il primo livello della sottostruttura della tassonomia, che è il nodo immediatamente sotto il [nodo principale tassonomia](#taxonomy-root-node). Uno spazio dei nomi è un nodo di tipo `cq:Tag` il cui elemento padre non è un `cq:Tag` tipo di nodo.
 

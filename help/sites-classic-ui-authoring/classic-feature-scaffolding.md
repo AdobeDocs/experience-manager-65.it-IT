@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ La definizione della finestra di dialogo per uno scaffold funziona in modo simil
 
 * Le definizioni delle finestre di dialogo dei componenti vengono visualizzate come normali finestre di dialogo (come mostrato ad esempio nel riquadro centrale dell’editor delle finestre di dialogo), mentre le definizioni delle finestre di dialogo di scaffold, sebbene vengano visualizzate come normali finestre di dialogo nell’editor delle finestre di dialogo, vengono visualizzate nella pagina di scaffold come un modulo di scaffold (come mostrato nella **Notizie** scaffold superiore).
 * Le finestre di dialogo dei componenti forniscono campi solo per i valori necessari per definire il contenuto di un singolo componente specifico. Una finestra di dialogo di scaffold deve fornire campi per ogni proprietà in ogni paragrafo della pagina da creare.
-* Nel caso delle finestre di dialogo dei componenti, il componente utilizzato per eseguire il rendering del contenuto specificato è implicito e quindi il `sling:resourceType` del paragrafo viene compilata automaticamente al momento della creazione del paragrafo. Con uno scaffold tutte le informazioni che definiscono sia il contenuto che il componente assegnato per un dato paragrafo devono essere fornite dalla finestra di dialogo stessa. Nelle finestre di dialogo dello scaffold queste informazioni devono essere fornite utilizzando *Nascosto* per inviare queste informazioni durante la creazione della pagina.
+* Se sono presenti finestre di dialogo di componenti, il componente utilizzato per riprodurre il contenuto specificato è implicito e quindi il `sling:resourceType` del paragrafo viene compilata automaticamente al momento della creazione del paragrafo. Con uno scaffold tutte le informazioni che definiscono sia il contenuto che il componente assegnato per un dato paragrafo devono essere fornite dalla finestra di dialogo stessa. Nelle finestre di dialogo dello scaffold queste informazioni devono essere fornite utilizzando *Nascosto* per inviare queste informazioni durante la creazione della pagina.
 
 Guarda l’esempio **Notizie** la finestra di dialogo scaffold nell’editor di finestre di dialogo consente di spiegare come funziona. Passa alla modalità progettazione nella pagina scaffold e fai clic sul collegamento dell’editor delle finestre di dialogo.
 

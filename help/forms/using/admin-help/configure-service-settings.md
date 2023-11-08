@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## Impostazioni del servizio Flusso di lavoro di controllo {#audit-workflow-service-settings}
 
-Workbench consente di registrare le istanze del processo durante l’esecuzione e quindi riprodurle per osservare il comportamento del processo. (vedere [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Per risparmiare spazio nel file system del server Forms, è possibile limitare la quantità di dati di registrazione del processo memorizzati. È possibile configurare le seguenti proprietà del servizio Flusso di lavoro di audit ( `AuditWorkflowService`):
+Workbench consente di registrare le istanze del processo durante l’esecuzione e quindi riprodurle per osservare il comportamento del processo. (vedere [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Per risparmiare spazio sul file system di Forms Server, è possibile limitare la quantità di dati di registrazione del processo memorizzati. È possibile configurare le seguenti proprietà del servizio Flusso di lavoro di audit ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** Il numero massimo di registrazioni archiviate. Quando viene memorizzato il numero massimo, la registrazione meno recente viene rimossa dal file system quando viene creata una nuova registrazione. Questa proprietà è utile se si tende a creare molte registrazioni e si desidera rimuovere automaticamente le registrazioni precedenti. Il valore predefinito è 50.
 
@@ -265,7 +265,7 @@ Per il servizio Generate PDF sono disponibili le impostazioni seguenti.
 
 **Dimensioni pool OCR:** Dimensione del pool di PaperCaptureService utilizzato da PDF Generator per OCR. Il valore predefinito di questa impostazione (consigliato per i sistemi a processore singolo) è 3, che può essere aumentato nei sistemi a più processori. Questa impostazione è valida solo nei sistemi Windows.
 
-**Famiglia Di Font Di Fallback Per Conversioni Da HTML A PDF:** Nome della famiglia di caratteri da utilizzare nei documenti PDF quando il carattere utilizzato nel HTML originale non è disponibile per il server AEM forms. Specificare una famiglia di tipi di carattere se si prevede di convertire le pagine HTML che utilizzano tipi di carattere non disponibili. Ad esempio, le pagine create in lingue regionali potrebbero utilizzare font non disponibili.
+**Famiglia Di Font Di Fallback Per Conversioni Da HTML A PDF:** Nome della famiglia di caratteri da utilizzare nei documenti PDF quando il carattere utilizzato nel HTML originale non è disponibile per AEM Forms Server. Specificare una famiglia di tipi di carattere se si prevede di convertire le pagine HTML che utilizzano tipi di carattere non disponibili. Ad esempio, le pagine create in lingue regionali potrebbero utilizzare font non disponibili.
 
 **Logica dei tentativi per le conversioni native** Gestisce i nuovi tentativi di generazione di PDF se il primo tentativo di conversione non è riuscito:
 
@@ -751,11 +751,11 @@ Il servizio Web interagisce con i servizi Web inviando e ricevendo messaggi SOAP
 
 Per il servizio Web sono disponibili le impostazioni seguenti.
 
-**Archivio chiavi:** Percorso completo del file keystore contenente la chiave privata da utilizzare per l&#39;autenticazione. Il server Forms deve essere in grado di accedere al file.
+**Archivio chiavi:** Percorso completo del file keystore contenente la chiave privata da utilizzare per l&#39;autenticazione. Forms Server deve essere in grado di accedere al file.
 
 **Password archivio chiavi:** La password per il file keystore.
 
-**Tipo di archivio chiavi:** Tipo del keystore. Non fornire alcun valore per utilizzare il tipo di keystore predefinito configurato per la JVM che esegue il server forms. In caso contrario, fornisci uno dei seguenti valori:
+**Tipo di archivio chiavi:** Tipo del keystore. Non fornire alcun valore per utilizzare il tipo di keystore predefinito configurato per la JVM che esegue il server Forms. In caso contrario, fornisci uno dei seguenti valori:
 
 * jks
 * pkcs12
@@ -766,7 +766,7 @@ Per il servizio Web sono disponibili le impostazioni seguenti.
 
 **Password archivio fonti attendibili:** Password per il file TrustStore.
 
-**Tipo archivio fonti attendibili:** Tipo del file TrustStore. Non fornire alcun valore per utilizzare il tipo di keystore predefinito configurato per la JVM che esegue il server forms. In caso contrario, fornisci uno dei seguenti valori:
+**Tipo archivio fonti attendibili:** Tipo del file TrustStore. Non fornire alcun valore per utilizzare il tipo di keystore predefinito configurato per la JVM che esegue il server Forms. In caso contrario, fornisci uno dei seguenti valori:
 
 * jks
 * pkcs12
@@ -779,11 +779,11 @@ Servizio trasformazione XSLT ( `XSLTService`) consente ai processi di applicare 
 
 Per il servizio Trasformazione XSLT è disponibile l&#39;impostazione seguente.
 
-**Nome factory:** Nome completo della classe Java da utilizzare per l&#39;esecuzione di trasformazioni XSLT. Se non viene specificato alcun valore, viene utilizzata la factory predefinita configurata nella Java Virtual Machine che esegue il server forms.
+**Nome factory:** Nome completo della classe Java da utilizzare per l&#39;esecuzione di trasformazioni XSLT. Se non viene specificato alcun valore, viene utilizzata la factory predefinita configurata nella Java Virtual Machine che esegue il server Forms.
 
 ## Modifica delle impostazioni di protezione per un servizio {#modifying-security-settings-for-a-service}
 
-il server forms consente di configurare le impostazioni di protezione per ogni servizio, consentendo di configurare un controllo dell&#39;accesso dettagliato a livello di servizio.
+Forms Server consente di configurare le impostazioni di protezione per ogni servizio, consentendo di configurare un controllo dell&#39;accesso dettagliato a livello di servizio.
 
 Vengono installati i profili di sicurezza predefiniti, che possono essere configurati per soddisfare le esigenze del sistema. A ciascun profilo di sicurezza è associato un dominio e viene creato a livello di utente o di gruppo.
 
