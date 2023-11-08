@@ -795,7 +795,7 @@ Crea la finestra di dialogo utilizzata per configurare le proprietà del compone
    | Nome | Tipo | Valore |
    |---|---|---|
    | fieldLabel | Stringa | Percorso della directory principale elenco |
-   | name | Stringa | ./listroot |
+   | nome | Stringa | ./listroot |
    | xtype | Stringa | textfield |
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
@@ -925,7 +925,7 @@ Crea la finestra di dialogo per configurare il componente logo in modalità Prog
    |---|---|---|
    | filemeparametro | Stringa | ./imageName |
    | fileReferenceParameter | Stringa | ./imageReference |
-   | name | Stringa | ./immagine |
+   | nome | Stringa | ./immagine |
    | titolo | Stringa | Immagine |
    | xtype | Stringa | html5smartimage |
 

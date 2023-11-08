@@ -501,7 +501,7 @@ Nel HTML, è possibile utilizzare i segnaposto seguenti, che vengono sostituiti 
 
 | Stringa segnaposto | Descrizione |
 |---|---|
-| {name} | Nome del pulsante, ad esempio ** autore, indietro** aggiorna e così via. |
+| {nome} | Nome del pulsante, ad esempio ** autore, indietro** aggiorna e così via. |
 | {id} | ID CSS del pulsante. |
 | {url} | URL per la destinazione del pulsante. |
 | {text} | Etichetta del pulsante. |

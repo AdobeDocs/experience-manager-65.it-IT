@@ -115,7 +115,7 @@ Strumentando il codice sorgente con le chiamate di questo metodo, puoi raccoglie
 
 *com.adobe.cq.mobile.mobileservices.impl.service.MobileServicesHttpClientImp* l espone le seguenti proprietà per la connessione ad AMS:
 
-| **Etichetta** | **Descrizione** | **Predefiniti** |
+| **Etichetta** | **Descrizione** | **Predefinito** |
 |---|---|---|
 | Endpoint API | URL di base delle API HTTP di Adobe Mobile Services | https://api.omniture.com |
 | Endpoint di configurazione | URL utilizzato per recuperare la configurazione ADB Mobile per l’ID suite di rapporti specificato | /ams/1.0/app/config/ |

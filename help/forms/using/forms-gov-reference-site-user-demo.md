@@ -22,7 +22,7 @@ Configura il sito di riferimento come descritto in [Impostare e configurare il s
 * AEM Forms
 
    * Conversione moduli automatica
-   * Authoring  
+   * Authoring
    * Modelli di dati modulo/Origini dati
 
 * AEM Forms

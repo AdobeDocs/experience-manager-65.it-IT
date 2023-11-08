@@ -89,7 +89,7 @@ Per aggiungere una proprietà personalizzata a tutti i tipi di risorse e alle le
       | **Nome** | **Tipo** | **Valore** |
       |---|---|---|
       | fieldLabel | Stringa | Nome da assegnare al campo o alla proprietà. (Qui: Posizione dei destinatari) |
-      | name | Stringa | `./extendedproperties/GeoLocation` (Mantieni lo stesso valore del nome del campo creato sotto il nodo elementi) |
+      | nome | Stringa | `./extendedproperties/GeoLocation` (Mantieni lo stesso valore del nome del campo creato sotto il nodo elementi) |
       | renderReadOnly | Booleano | vero |
       | sling:resourceType | Stringa | `granite/ui/components/coral/foundation/form/textfield` |
 
@@ -131,7 +131,7 @@ Questo scenario mostra come aggiungere una proprietà personalizzata a tutti i t
       <td>Nome da assegnare al campo o alla proprietà. (Qui: allocazione geografica)</td>
    </tr>
    <tr>
-      <td>name</td>
+      <td>nome</td>
       <td>Stringa</td>
       <td>./extendedproperties/geographhicallocation (Mantieni lo stesso valore del nome del campo creato sotto il nodo items)</td>
    </tr>
@@ -310,7 +310,7 @@ La procedura seguente consente di aggiungere una scheda con un campo a tutte le 
       | **Nome** | **Tipo** | **Valore** |
       |---|---|---|
       | fieldLabel | Stringa | Posizione dei destinatari o nome da assegnare al campo. |
-      | name | Stringa | ./extendedproperties/GeographicalLocation |
+      | nome | Stringa | ./extendedproperties/GeographicalLocation |
       | renderReadOnly | Booleano | vero |
       | sling:resourceType | Stringa | `/libs/granite/ui/components/coral/foundation/form/textfield` |
 
@@ -505,7 +505,7 @@ La procedura seguente illustra come aggiungere una proprietà a un tipo di risor
       | **Nome** | **Tipo** | **Valore** |
       |---|---|---|
       | fieldLabel | Stringa | Posizione dei destinatari o nome da assegnare al campo. |
-      | name | Stringa | `./extendedproperties/GeoLocation` |
+      | nome | Stringa | `./extendedproperties/GeoLocation` |
       | renderReadOnly | Booleano | vero |
       | sling:resourceType | Stringa | granite/ui/components/coral/foundation/form/textfield |
 
@@ -829,7 +829,7 @@ La procedura seguente illustra come consentire l’indicizzazione di proprietà 
       | **Nome** | **Tipo** | **Valore** |
       |---|---|---|
       | analizzato | Stringa | vero |
-      | name | Stringa | extendedProperties/location (o il nome della proprietà che si desidera aggiungere alla ricerca) |
+      | nome | Stringa | extendedProperties/location (o il nome della proprietà che si desidera aggiungere alla ricerca) |
       | propertyIndex | Booleano | vero |
       | useInSuggest | Booleano | vero |
 

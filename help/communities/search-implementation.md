@@ -178,7 +178,7 @@ L&#39;implementazione predefinita del [Componente di ricerca](search.md) utilizz
 
 Gli operatori filtro sono:
 
-| EQ | è uguale a |
+| EQ | equals |
 |---|---|
 | NE | diverso da |
 | LT | minore di |

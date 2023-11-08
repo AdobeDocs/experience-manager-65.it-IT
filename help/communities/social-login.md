@@ -178,7 +178,7 @@ Se è necessario apportare modifiche, in ogni istanza di pubblicazione dell’AE
      Quando i campi sono abilitati, i campi seguenti vengono inclusi nella chiamata all’API di Facebook Graph. I campi devono essere consentiti nell’ambito definito nella configurazione del servizio cloud. Campi aggiuntivi possono richiedere l’approvazione di Facebook. Consulta la sezione Autorizzazioni di accesso di Facebook nella documentazione di Facebook. I campi predefiniti aggiunti come parametri sono:
 
       * id
-      * name
+      * nome
       * nome
       * cognome
       * link

@@ -129,7 +129,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
    * **Oggetti modello dati**:
 
       * id
-      * name
+      * nome
       * shippingAddress
       * città
       * stadio

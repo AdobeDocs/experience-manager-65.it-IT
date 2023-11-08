@@ -460,7 +460,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td>Nessuno</td>
   </tr>
   <tr>
-   <td>name</td>
+   <td>nome</td>
    <td>Identificatore utilizzato per identificare questo elemento nelle espressioni di script.</td>
    <td>Nessuno</td>
   </tr>
@@ -512,7 +512,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
     </ul> </td>
   </tr>
   <tr>
-   <td>name</td>
+   <td>nome</td>
    <td>Specifica il nome del nodo.</td>
    <td>L’impostazione del nome tramite script non è consentita in HTML.</td>
   </tr>
@@ -730,7 +730,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td> </td>
   </tr>
   <tr>
-   <td>name</td>
+   <td>nome</td>
    <td>Specifica un identificatore che può essere utilizzato per specificare questo oggetto o evento nelle espressioni di script.</td>
    <td>L’impostazione del valore in fase di esecuzione non è supportata</td>
   </tr>
@@ -818,7 +818,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td>Nessuno</td>
   </tr>
   <tr>
-   <td>name<br /> </td>
+   <td>nome<br /> </td>
    <td>Identificatore utilizzato per identificare questo elemento nelle espressioni di script.</td>
    <td>Nessuno</td>
   </tr>
@@ -973,7 +973,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td>Per i singoli elementi nell'exclgrp, restituisce sempre aperto. </td>
   </tr>
   <tr>
-   <td>name</td>
+   <td>nome</td>
    <td>Specifica un identificatore che può essere utilizzato per specificare questo oggetto o evento nelle espressioni di script.</td>
    <td>Nessuno</td>
   </tr>

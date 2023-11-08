@@ -283,7 +283,7 @@ L’AEM avvia e reindirizza automaticamente il browser web alla pagina appropria
 
 Una volta effettuato l’accesso, puoi accedere all’AEM. Per ulteriori informazioni, a seconda del ruolo, vedi quanto segue:
 
-* [Authoring  ](/help/sites-authoring/home.md)
+* [Authoring](/help/sites-authoring/home.md)
 * [Amministrazione](/help/sites-administering/home.md)
 * [Sviluppo](/help/sites-developing/home.md)
 * [Gestione](/help/managing/best-practices.md)

@@ -154,7 +154,7 @@ La classe base per gli archivi ContextHub.
 
 A [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) oggetto. Utilizzare questo oggetto per le funzioni di associazione per memorizzare gli eventi. Per informazioni sul valore predefinito e sull&#39;inizializzazione, vedere [init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).
 
-#### name {#name}
+#### nome {#name}
 
 Nome dell’archivio.
 

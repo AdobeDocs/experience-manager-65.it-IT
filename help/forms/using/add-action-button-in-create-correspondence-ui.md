@@ -103,7 +103,7 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia una lettera p
 
    | **Nome** | **Descrizione** |
    |---|---|
-   | name | Nome alfanumerico dell’azione da eseguire. Il valore di questo tag è obbligatorio, deve essere univoco (all’interno del tag modelExtension) e deve iniziare con un alfabeto. |
+   | nome | Nome alfanumerico dell’azione da eseguire. Il valore di questo tag è obbligatorio, deve essere univoco (all’interno del tag modelExtension) e deve iniziare con un alfabeto. |
    | etichetta | Etichetta da visualizzare sul pulsante di azione |
    | descrizione comando | Testo della descrizione del pulsante, visualizzato quando l’utente passa il puntatore sul pulsante. |
    | styleName | Nome dello stile personalizzato applicato al pulsante di azione. |

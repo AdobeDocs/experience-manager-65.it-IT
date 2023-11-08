@@ -149,7 +149,7 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   Ritardo (tempo di attesa in millisecondi) tra due tentativi, in caso di problema.
 
-  Predefiniti: `60000`
+  Predefinito: `60000`
 
 * **ID utente agente**
 
@@ -180,7 +180,7 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
    * `Info`: vengono registrati errori, avvisi e altri messaggi informativi
    * `Debug`: nei messaggi viene utilizzato un livello di dettaglio elevato, principalmente a scopo di debug
 
-  Predefiniti: `Info`
+  Predefinito: `Info`
 
 * **Usa per replica inversa**
 

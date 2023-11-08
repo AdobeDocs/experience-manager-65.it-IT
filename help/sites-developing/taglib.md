@@ -464,7 +464,7 @@ Il `<cq:addParam>` aggiunge al tag che lo racchiude un parametro di richiesta co
 
 Ha i seguenti attributi:
 
-**name**
+**nome**
 
 * nome del parametro da aggiungere
 
@@ -484,7 +484,7 @@ Il `<cq:removeParam>` rimuove un parametro di richiesta con il nome e il valore 
 
 Ha i seguenti attributi:
 
-**name**
+**nome**
 
 * nome del parametro da rimuovere
 
