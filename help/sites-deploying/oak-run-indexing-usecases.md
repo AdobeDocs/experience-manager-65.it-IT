@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: deploying
 noindex: true
 exl-id: d25e3070-080a-4594-8fdb-9f09164135fc
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1385'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Per diagnosticare alcuni dei casi relativi all’Adobe delle prestazioni delle q
 
 1. Dump del contenuto dell’indice per l’analisi offline;
 
-1. Sarà utilizzabile anche se l’AEM non è accessibile
+1. È utilizzabile anche se l’AEM non è accessibile
 
 Le operazioni di cui sopra possono ora essere eseguite mediante i seguenti comandi di indice delle operazioni:
 

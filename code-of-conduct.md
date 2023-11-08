@@ -1,8 +1,8 @@
 ---
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 82%
+source-wordcount: '426'
+ht-degree: 78%
 
 ---
 # Codice di condotta Adobe
@@ -41,7 +41,7 @@ Il presente Codice di Condotta ha validità sia negli spazi in cui si svolge il 
 
 ## Applicazione
 
-Eventuali comportamenti offensivi, vessatori o altrimenti inaccettabili possono essere segnalati contattando il team del progetto all’indirizzo Grp-opensourceoffice@adobe.com. Tutte le segnalazioni saranno prese in considerazione ed esaminate e avranno come esito la produzione di una risposta ritenuta necessaria e appropriata alle circostanze. Il team del progetto è obbligato a mantenere la riservatezza in merito a chi denuncia un incidente. Ulteriori dettagli su specifiche politiche di applicazione possono essere pubblicati separatamente.
+Eventuali comportamenti offensivi, vessatori o altrimenti inaccettabili possono essere segnalati contattando il team del progetto all’indirizzo Grp-opensourceoffice@adobe.com. Tutti i reclami vengono esaminati e analizzati e ottengono una risposta ritenuta necessaria e appropriata alle circostanze. Il team del progetto è obbligato a mantenere la riservatezza in merito a chi denuncia un incidente. Ulteriori dettagli su specifiche politiche di applicazione possono essere pubblicati separatamente.
 
 I gestori dei progetti che non seguono o non applicano in buona fede il Codice di condotta potrebbero essere soggetti a misure temporanee o permanenti determinate dagli altri membri della leadership del progetto.
 
