@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1975'
 ht-degree: 9%
 
 ---
@@ -102,7 +102,7 @@ Consulta [Dynamic Medie - Formati di immagine raster supportati](/help/assets/as
 
 Di seguito sono riportate alcune best practice relative alle immagini dei set 360 gradi. In generale, più immagini si hanno in un set 360 gradi, migliore è l&#39;effetto di rotazione dell&#39;immagine. Tuttavia, l’inclusione di molte immagini nel set aumenta anche il tempo necessario per caricare le immagini. L’Experience Manager consiglia di seguire queste linee guida per la ripresa di immagini da utilizzare nei set 360 gradi:
 
-* Utilizzare almeno 8-12 immagini in un set 360 gradi monodimensionale e 16-24 immagini in un set 360 gradi bidimensionale. Per poter ruotare a 360° sono necessarie almeno 8 immagini. I set 360 gradi unidimensionali sono più comuni in quanto la creazione di set 360 gradi bidimensionali richiede molto lavoro.
+* Utilizzare almeno 8-12 immagini in un set 360 gradi monodimensionale e 16-24 immagini in un set 360 gradi bidimensionale. Per girare a 360 gradi sono necessarie almeno 8 immagini. I set 360 gradi unidimensionali sono più comuni in quanto la creazione di set 360 gradi bidimensionali richiede molto lavoro.
 * Utilizza un formato senza perdita di dati; si consiglia di usare TIFF e PNG.
 * Mascherare tutte le immagini in modo che l&#39;elemento appaia su uno sfondo bianco puro o su un altro sfondo ad alto contrasto. Se necessario, aggiungete delle ombre.
 * Assicurati che i dettagli del prodotto siano ben illuminati e a fuoco.

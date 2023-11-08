@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1519'
-ht-degree: 90%
+ht-degree: 82%
 
 ---
 
@@ -82,7 +82,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Completa** dalla barra degli strumenti.
-1. Il **Completa elemento di lavoro** viene visualizzata. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento**, se richiesto.
+1. Il **Completa elemento di lavoro** viene visualizzata. Seleziona la **Passaggio successivo** dal selettore a discesa e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante: editor pagina {#completing-a-participant-step-page-editor}
@@ -91,7 +91,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Completa** dalla barra di stato in alto.
-1. Il **Completa elemento di lavoro** viene visualizzata. Seleziona il **Passaggio successivo** dal menu a discesa e aggiungi un **Commento**, se richiesto.
+1. Il **Completa elemento di lavoro** viene visualizzata. Seleziona la **Passaggio successivo** dal selettore a discesa e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Cancel** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante - Timeline {#completing-a-participant-step-timeline}
@@ -141,7 +141,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Delega** dalla barra degli strumenti.
-1. Viene visualizzata la finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se richiesto.
+1. Viene visualizzata la finestra di dialogo. Specifica la **Utente** dal selettore a discesa (può anche trattarsi di un gruppo) e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: editor pagina {#delegating-a-participant-step-page-editor}
@@ -150,7 +150,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Delega** dalla barra di stato in alto.
-1. Viene visualizzata la finestra di dialogo. Specifica l’**Utente** dal menu a discesa (può anche essere un gruppo) e aggiungi un **Commento** se richiesto.
+1. Viene visualizzata la finestra di dialogo. Specifica la **Utente** dal selettore a discesa (può anche trattarsi di un gruppo) e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: Timeline {#delegating-a-participant-step-timeline}
@@ -192,7 +192,7 @@ Per tornare indietro, attenersi alla procedura descritta di seguito.
 1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
 1. Seleziona **Passo indietro** per aprire la finestra di dialogo.
 
-1. Specifica il **Passaggio precedente** e aggiungi un **Commento** se necessario.
+1. Specifica la **Passaggio precedente** e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Esecuzione di un passo indietro su un Passaggio Partecipante - Editor pagina {#performing-step-back-on-a-participant-step-page-editor}
@@ -201,7 +201,7 @@ Per tornare indietro, attenersi alla procedura descritta di seguito.
 
 1. Apri la [pagina per la modifica](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Passo indietro** dalla barra di stato in alto.
-1. Specifica il **Passaggio precedente** e aggiungi un **Commento** se necessario.
+1. Specifica la **Passaggio precedente** e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Esecuzione di un passo indietro su un Passo Partecipante - Timeline {#performing-step-back-on-a-participant-step-timeline}

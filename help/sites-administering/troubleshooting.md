@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: 2f3168c9bd39926ee8cf86b48cc0daef9d783a1c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '250'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ Per attivare il livello di registro DEBUG, utilizzare l&#39;Explorer CRX per imp
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
 ```
 
-proprietà di debug. Non lasciare il registro a livello di registro DEBUG più tempo del necessario, in quanto genera molti registri.
+proprietà di debug. Non lasciare il registro a livello di registro DEBUG più tempo del necessario, in quanto genera numerosi registri.
 
 Una riga nel file di debug in genere inizia con DEBUG e quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Ad esempio:
 

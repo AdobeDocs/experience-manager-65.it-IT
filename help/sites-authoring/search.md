@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 69%
+ht-degree: 64%
 
 ---
 
@@ -52,7 +52,7 @@ Per cercare e filtrare le risorse:
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. Se necessario, puoi rimuovere il filtro posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire la ricerca in tutte le console e i tipi di risorse.
+1. Se necessario, puoi rimuovere il filtro di posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire ricerche su tutte le console/i tipi di risorse.
 1. I risultati visualizzati vengono raggruppati in base alla console e al tipo di risorsa corrispondente.
 
    Puoi selezionare una risorsa specifica (per ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio: **Visualizza tutti i siti**:

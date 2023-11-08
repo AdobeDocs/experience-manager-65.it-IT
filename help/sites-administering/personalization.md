@@ -1,18 +1,14 @@
 ---
 title: Personalizzazione
-seo-title: Personalization
 description: Scopri la personalizzazione in Adobe Experience Manager per fornire all’utente un ambiente su misura con contenuti dinamici.
-seo-description: Learn about personalization in AEM.
-uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 2%
 
 ---
@@ -157,7 +153,7 @@ Vari componenti sono forniti con AEM per la personalizzazione. Alcuni consentono
 | Campo di testo Forms | Campo di testo che consente agli utenti di immettere informazioni. |
 | Gadget personali | Consente di includere uno dei gadget disponibili selezionati. |
 | Foto avatar profilo | Consente di inserire una foto avatar. |
-| Nome completo profilo | Inserimento dei dettagli del nome, compresi elementi quali titolo, secondo nome e suffisso, se necessario. |
+| Nome completo profilo | Inserire i dettagli del nome, compresi elementi quali titolo, secondo nome e suffisso, se necessario. |
 | Nome visualizzato profilo | Nome da visualizzare. |
 | E-mail profilo | Inserimento di un indirizzo e-mail. |
 | Genere profilo | Consente di immettere il genere. |

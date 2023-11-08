@@ -1,26 +1,24 @@
 ---
 title: Immagini panoramiche
-description: Scopri come utilizzare le immagini panoramiche in Dynamic Media.
-uuid: ced3e5bd-93c8-4d5f-a397-1380d4d0a5e7
+description: Scopri come utilizzare le immagini panoramiche in Dynamic Medie.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
 
 # Immagini panoramiche{#panoramic-images}
 
-Questa sezione descrive come lavorare con il visualizzatore Immagine panoramica per riprodurre immagini panoramiche sferiche per un&#39;esperienza di visualizzazione a 360° coinvolgente di una stanza, una proprietà, una posizione o un paesaggio.
+Questa sezione descrive come lavorare con il visualizzatore Immagine panoramica per riprodurre immagini panoramiche sferiche per un&#39;esperienza di visualizzazione a 360 gradi immersiva di una stanza, una proprietà, una posizione o un paesaggio.
 
 Vedi anche [Gestisci predefiniti visualizzatore](/help/assets/managing-viewer-presets.md).
 
@@ -31,8 +29,8 @@ Vedi anche [Gestisci predefiniti visualizzatore](/help/assets/managing-viewer-pr
 Affinché una risorsa caricata possa essere considerata un’immagine panoramica sferica da utilizzare con il visualizzatore immagini panoramiche, è necessario che la risorsa presenti uno o entrambi i seguenti elementi:
 
 * Proporzioni pari a 2.
-È possibile ignorare l&#39;impostazione predefinita di proporzioni 2 in CRXDE Lite nelle seguenti situazioni:
-   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
+È possibile ignorare l&#39;impostazione predefinita di proporzioni 2 in CRXDE Liti nelle seguenti situazioni:
+  `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Contrassegnato con le parole chiave `equirectangular`, o `spherical`e `panorama`, o `spherical` e `panoramic`. Consulta [Utilizzo dei tag](/help/sites-authoring/tags.md).
 

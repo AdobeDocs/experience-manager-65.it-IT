@@ -12,9 +12,9 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2003'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Sono presenti alcune domande frequenti sul layout, sul supporto degli script e s
 
 1. Perché i moduli HTML sono più grandi dei PDF forms?
 
-   Risposta: per eseguire il rendering di un XDP in un modulo HTML sono necessari numerosi oggetti e strutture di dati intermedie, ad esempio dom di modulo, dom di dati e dom di layout.
+   Risposta: per eseguire il rendering di un XDP in un modulo HTML sono necessari numerosi oggetti e strutture di dati intermedie, ad esempio dom del modulo, dom dei dati e dom del layout.
 
    Per i PDF forms, Adobe Acrobat dispone di un motore XTG integrato per la creazione di strutture di dati e oggetti intermedi. Acrobat si occupa anche di layout e script.
 

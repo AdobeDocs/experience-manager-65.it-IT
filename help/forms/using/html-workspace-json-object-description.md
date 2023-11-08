@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2115'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
    <td><strong>Commenti</strong></td>
   </tr>
   <tr>
-   <td>name</td>
+   <td>nome</td>
    <td>F</td>
    <td>Nome categoria</td>
   </tr>
@@ -72,7 +72,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
    |---|---|---|
    | categoryId | F | Contiene l’ID della categoria a cui appartiene il punto d’inizio. |
    | descrizione | F | Contiene la descrizione di un punto d&#39;inizio. |
-   | name | F | Contiene il nome del punto d&#39;inizio. |
+   | nome | F | Contiene il nome del punto d&#39;inizio. |
    | serializedImageTicket | F | Contiene un ticket immagine corrispondente al punto iniziale. Questo ticket di immagine viene utilizzato nel campo imageUrl del punto d’inizio per ottenere l’immagine del punto d’inizio dal server. |
    | serviceName | F | Contiene il nome del servizio per il punto d&#39;inizio. |
    | startpointId | F | Contiene l’ID del punto d’inizio. |
@@ -397,7 +397,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
    <td>True se la coda è la coda predefinita dell'utente connesso, in caso contrario false.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>name<br type="_moz" /> </td>
+   <td>nome<br type="_moz" /> </td>
    <td>F</td>
    <td>Nome del proprietario della coda.<br type="_moz" /> </td>
   </tr>
@@ -478,7 +478,7 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td>
    <td>T</td>
-   <td>Contiene l’elenco degli utenti in cui l’utente connesso effettua la ricerca fino alla data stabilita.<br type="_moz" /> </td>
+   <td>Contiene un elenco di utenti in cui un utente connesso esegue la ricerca fino alla data specificata.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>

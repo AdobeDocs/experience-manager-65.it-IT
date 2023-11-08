@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1457'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Se alcuni segmenti ContextHub nuovi o modificati sono destinati a essere modificati nel controllo del codice sorgente anziché in AEM, è necessario migrarli alla nuova posizione:</p>
+   <td><p>Se alcuni segmenti ContextHub nuovi o modificati vengono modificati nel controllo del codice sorgente anziché essere modificati in AEM, è necessario migrarli alla nuova posizione:</p>
     <ol>
      <li>Copia tutti i segmenti ContextHub nuovi o modificati dalla posizione precedente alla nuova posizione appropriata (/<code>apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>)</li>
      <li>Aggiorna i riferimenti ai segmenti ContextHub nella posizione precedente nei segmenti ContextHub migrati nelle nuove posizioni (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>

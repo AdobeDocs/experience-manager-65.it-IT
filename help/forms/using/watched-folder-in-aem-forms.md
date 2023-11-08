@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '7144'
 ht-degree: 0%
@@ -486,7 +486,7 @@ Per un endpoint di tipo Cartella controllata, gli utenti possono avviare le oper
 
 Per gli endpoint della cartella controllata, se un processo richiede un solo file di input, l’utente può copiare tale file nella directory principale della cartella controllata.
 
-Se il processo contiene più di un file di input, l’utente deve creare una cartella al di fuori della gerarchia delle cartelle controllate che contenga tutti i file richiesti. Questa nuova cartella deve includere i file di input (e facoltativamente un file DDX se richiesto dal processo). Una volta creata la cartella dei processi, l’utente la copia nella cartella di input della cartella controllata.
+Se il processo contiene più di un file di input, l’utente deve creare una cartella al di fuori della gerarchia delle cartelle controllate che contenga tutti i file richiesti. Questa nuova cartella deve includere i file di input (e facoltativamente un file DDX se necessario dal processo). Una volta creata la cartella dei processi, l’utente la copia nella cartella di input della cartella controllata.
 
 >[!NOTE]
 >

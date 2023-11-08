@@ -7,7 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2451'
 ht-degree: 2%
@@ -167,7 +167,7 @@ Puoi creare una [Transitorio](/help/sites-developing/workflows.md#transient-work
 
 1. Apri il modello di flusso di lavoro per [modifica](#editinganexistingworkflow).
 1. Seleziona **Proprietà modello flusso di lavoro** dalla barra degli strumenti.
-1. Nella finestra di dialogo attiva **Flusso di lavoro transitorio** (o disattivarla se necessario):
+1. Nella finestra di dialogo attiva **Flusso di lavoro transitorio** (o disattivarla, se necessario):
 
    ![wf-07](assets/wf-07.png)
 
@@ -208,7 +208,7 @@ Puoi configurare un modello di flusso di lavoro per [Supporto di più risorse](/
 1. Apri il modello di flusso di lavoro per [modifica](#editinganexistingworkflow).
 1. Seleziona **Proprietà modello flusso di lavoro** dalla barra degli strumenti.
 
-1. Nella finestra di dialogo attiva **Supporto di più risorse** (o disattivarla se necessario):
+1. Nella finestra di dialogo attiva **Supporto di più risorse** (o disattivarla, se necessario):
 
    ![wf-08](assets/wf-08.png)
 

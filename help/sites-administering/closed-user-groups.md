@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '6816'
+source-wordcount: '6808'
 ht-degree: 1%
 
 ---
@@ -798,7 +798,7 @@ Questo passaggio dalle proprietà JCR residue a un criterio di controllo degli a
 
 **Nodo Di Destinazione Definito Dal Criterio**
 
-È previsto che vengano creati criteri CUG nel nodo JCR che definisce la sottostruttura da assoggettare ad accesso in lettura limitato. È probabile che si tratti di una pagina dell’AEM nel caso in cui il CUG influisca sull’intero albero.
+Crea criteri CUG nel nodo JCR definendo la sottostruttura da assoggettare a restrizioni di accesso in lettura. È probabile che si tratti di una pagina dell’AEM nel caso in cui il CUG influisca sull’intero albero.
 
 Tieni presente che il posizionamento del criterio CUG solo nel nodo jcr:content situato sotto una determinata pagina limiterà l’accesso solo al contenuto s.str di una determinata pagina, ma non avrà effetto su pagine di pari livello o secondarie. Questo può essere un caso d’uso valido ed è possibile ottenerlo con un editor dell’archivio che consente di applicare contenuti ad accesso granulare. Tuttavia, contrasta con l’implementazione precedente in cui il posizionamento di una proprietà cq:cugEnabled sul nodo jcr:content veniva rimappato internamente sul nodo della pagina. Questa mappatura non viene più eseguita.
 
@@ -839,7 +839,7 @@ Per quanto riguarda `granite:loginPath` è interessato lo stesso privilegio è n
 
 #### Nodo Di Destinazione Definito Dal Tipo Mixin {#target-node-defined-by-mixin-type}
 
-I requisiti di autenticazione devono essere creati nel nodo JCR che definisce la sottostruttura da sottoporre all’accesso forzato. È probabile che si tratti di una pagina AEM nel caso in cui si preveda che il CUG influisca sull’intera struttura e l’interfaccia utente per la nuova implementazione aggiungerà di conseguenza il tipo mixin di requisito di autenticazione sul nodo della pagina.
+Crea i requisiti di autenticazione nel nodo JCR che definisce la sottostruttura da sottoporre all’accesso forzato. È probabile che si tratti di una pagina AEM nel caso in cui si preveda che il CUG influisca sull’intera struttura e l’interfaccia utente per la nuova implementazione aggiungerà di conseguenza il tipo mixin di requisito di autenticazione sul nodo della pagina.
 
 Il posizionamento del criterio CUG solo nel nodo jcr:content situato sotto una determinata pagina limiterà solo l’accesso al contenuto, ma non avrà effetto sul nodo della pagina stessa né su alcuna pagina figlia.
 

@@ -7,9 +7,9 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3260'
 ht-degree: 15%
 
 ---
@@ -199,7 +199,7 @@ Adobe Asset Link offre un buon supporto per questo caso d’uso:
 * Inoltre, poiché la risorsa si trova nell’account di Creative Cloud, è disponibile anche su altri dispositivi di cui l’utente potrebbe disporre (ad esempio, può essere aperta o modificata in un’app mobile Creative Cloud dedicata) e può essere condivisa con altri utenti Creative Cloud a scopo di collaborazione.
 * Una volta apportate le modifiche, l&#39;utente creativo può eseguire un&#39;operazione di check-in su tale file nell&#39;applicazione Creative Cloud, con un commento facoltativo. La risorsa corrispondente in [!DNL Experience Manager] vengono sottoposti a controllo delle versioni e aggiornati a con il nuovo file binario. [!DNL Experience Manager] utenti come addetti al marketing o utenti LOB possono accedere a modifiche o milestone di risorse importanti tramite [!DNL Experience Manager] Interfaccia utente timeline risorse.
 
-[!DNL Experience Manager] l&#39;app desktop fornisce una condivisione di rete per le risorse aperte nell&#39;app nativa. Per impostazione predefinita, tutte le modifiche eseguite localmente vengono caricate in [!DNL Experience Manager] automaticamente dopo un breve periodo. Con questa configurazione, i salvataggi frequenti durante la fase di work-in-progress verrebbero tutti caricati in [!DNL Experience Manager] e con gestione delle versioni, creando molto traffico di rete e potenziali problemi di scalabilità, per non parlare delle versioni non necessarie [!DNL Experience Manager].
+[!DNL Experience Manager] l&#39;app desktop fornisce una condivisione di rete per le risorse aperte nell&#39;app nativa. Per impostazione predefinita, tutte le modifiche eseguite localmente vengono caricate in [!DNL Experience Manager] automaticamente dopo un breve periodo. Con questa configurazione, i salvataggi frequenti durante la fase di work-in-progress verrebbero tutti caricati in [!DNL Experience Manager] e con gestione delle versioni, creando un traffico di rete elevato e potenziali problemi di scalabilità, per non parlare delle versioni non necessarie [!DNL Experience Manager].
 
 L’approccio consigliato consiste nell’utilizzare un’opzione in [!DNL Experience Manager] app desktop per disattivare gli aggiornamenti automatizzati e caricare le modifiche apportate alle risorse in [!DNL Experience Manager] manualmente, utilizzando l’azione carica modifiche nell’interfaccia utente di Stato risorsa dell’app.
 

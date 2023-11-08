@@ -1,18 +1,14 @@
 ---
 title: Backup e ripristino
-seo-title: Backup and Restore
 description: Scopri come eseguire il backup e il ripristino dei contenuti e delle configurazioni dell’AEM.
-seo-description: Learn how to backup and restore your AEM content.
-uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -232,7 +228,7 @@ I file vengono copiati nella directory di destinazione in quattro fasi:
    * Fase A: viene copiato tutto tranne l’archivio dati (con ritardo).
    * Fase B: viene copiato solo l’archivio dati (con ritardo).
 
-1. Nella seconda fase di copia (indicatore di avanzamento 63% - 65,8% durante la creazione di un file zip o 90% - 94% se non viene creato alcun file zip) vengono copiati solo i file creati o modificati nella directory di origine dall&#39;avvio della prima fase di copia. A seconda dell’attività dell’archivio, questo può variare da nessun file, fino a un numero significativo di file (perché la prima fase di copia dei file in genere richiede molto tempo). Il processo di copia è simile alla prima fase (fase A e fase B con ritardo).
+1. Nella seconda fase di copia (indicatore di avanzamento 63% - 65,8% durante la creazione di un file zip o 90% - 94% se non viene creato alcun file zip) vengono copiati solo i file creati o modificati nella directory di origine dall&#39;avvio della prima fase di copia. A seconda dell’attività dell’archivio, questo può variare da nessun file, fino a un numero significativo di file (perché la prima fase di copia dei file in genere richiede più tempo). Il processo di copia è simile alla prima fase (fase A e fase B con ritardo).
 1. Nella terza fase di copia (indicatore di avanzamento 65,8% - 68,6% quando si crea un file zip o 94% - 98% se non viene creato alcun file zip) vengono copiati solo i file creati o modificati nella directory di origine dall&#39;avvio della seconda fase di copia. A seconda dell’attività dell’archivio, potrebbero non esserci file da copiare o un numero molto ridotto di file (perché la seconda fase di copia dei file è in genere veloce). Il processo di copia è simile alla seconda fase - Fase A e Fase B ma senza ritardi.
 1. Le fasi da uno a tre della copia dei file vengono tutte eseguite contemporaneamente durante l&#39;esecuzione dell&#39;archivio. Vengono copiati solo i file creati o modificati nella directory di origine dall&#39;avvio della terza fase di copia. A seconda dell’attività dell’archivio, potrebbero non esserci file da copiare o un numero molto, molto ridotto di file (perché la seconda fase di copia dei file è in genere molto veloce). Indicatore di avanzamento 68,6% - 70% quando si crea un file zip o 98% - 100% se non viene creato alcun file zip. Il processo di copia è simile alla terza fase.
 1. A seconda della destinazione:

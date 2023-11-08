@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 1%
@@ -19,9 +19,9 @@ ht-degree: 1%
 La configurazione di una nuova campagna include i seguenti passaggi (generici):
 
 1. [Creare un brand](#creating-a-new-brand) per mantenere le campagne.
-1. Se necessario, è possibile [definire le proprietà per il nuovo brand](#defining-the-properties-for-your-new-brand).
+1. Se necessario, puoi [definire le proprietà per il nuovo brand](#defining-the-properties-for-your-new-brand).
 1. [Creare una campagna](#creating-a-new-campaign) per memorizzare le esperienze, ad esempio pagine teaser o newsletter.
-1. Se necessario, è possibile [definire le proprietà per la nuova campagna](#defining-the-properties-for-your-new-campaign).
+1. Se necessario, puoi [definire le proprietà per la nuova campagna](#defining-the-properties-for-your-new-campaign).
 
 Quindi, a seconda del tipo di esperienze create, devi [creare un’esperienza](#creating-a-new-experience). I dettagli dell’esperienza e le azioni che seguono la sua creazione dipendono dal tipo di esperienza che desideri creare:
 

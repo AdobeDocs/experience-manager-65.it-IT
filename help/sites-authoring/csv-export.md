@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 81%
+ht-degree: 75%
 
 ---
 
@@ -61,7 +61,7 @@ La creazione **Rapporto CSV** è disponibile quando si sfoglia il **Sites** cons
 
 Per creare un’esportazione CSV:
 
-1. Apri la console **Sites** e passa alla posizione desiderata, se necessario.
+1. Apri **Sites** , passa alla posizione desiderata, se necessario.
 1. Dalla barra degli strumenti, seleziona **Crea**, quindi **Rapporto CSV** per aprire la procedura guidata:
 
    ![etc-03](assets/etc-03.png)

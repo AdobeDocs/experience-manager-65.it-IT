@@ -2,16 +2,16 @@
 title: Come si utilizza il servizio di esecuzione script in AEM Forms su JEE Workbench per generare dati XML?
 description: Utilizzo del servizio Execute Script in AEM Forms su JEE Workbench per generare dati XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
 
 # Utilizzo del servizio Execute Script in AEM Forms su JEE Workbench per generare dati XML {#using-execute-script-service-forms-jee-workbench}
 
-I flussi di lavoro di AEM Forms per la gestione dei processi in JEE sono caratterizzati da numerosi XML, ad esempio: le informazioni XML possono essere create in un processo e inviate a un&#39;applicazione Flex in AEM Forms in JEE Workspace, utilizzate per le impostazioni di sistema o per la trasmissione di informazioni da e verso i moduli. Esistono molte istanze in cui uno sviluppatore AEM Forms su JEE deve gestire XML e molte volte questo richiede che l’XML sia gestito tramite un processo AEM Forms su JEE.
+I flussi di lavoro di AEM Forms per la gestione dei processi JEE contengono molti XML, ad esempio: le informazioni XML possono essere create in un processo e inviate a un&#39;applicazione Flex in AEM Forms su JEE Workspace, utilizzate per le impostazioni di sistema o per la trasmissione di informazioni da e verso i moduli. Esistono molte istanze in cui uno sviluppatore AEM Forms su JEE deve gestire XML e molte volte questo richiede che l’XML sia gestito tramite un processo AEM Forms su JEE.
 
 Quando si utilizzano impostazioni XML semplici, è possibile utilizzare `Set Value` , che è un servizio predefinito di AEM Forms su JEE. Questo servizio imposta il valore di uno o più elementi dati nel modello dati del processo. Per semplici scenari condizionali &quot;se questo, allora quello&quot;, questo servizio può soddisfare lo scopo.
 

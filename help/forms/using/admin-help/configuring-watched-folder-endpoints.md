@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '7174'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Per un endpoint di cartella controllata, gli utenti possono richiamare copiando 
 
 Per gli endpoint della cartella controllata, se il processo richiede un solo file di input, l’utente può copiare tale file nella directory principale della cartella controllata.
 
-Se il processo contiene più di un file di input, l&#39;utente deve creare una cartella al di fuori della gerarchia delle cartelle controllate che contenga tutti i file richiesti. Questa nuova cartella deve includere i file di input (e facoltativamente un file DDX se richiesto dal processo). Una volta creata la cartella dei processi, l&#39;utente la copia nella cartella di input della cartella controllata.
+Se il processo contiene più di un file di input, l&#39;utente deve creare una cartella al di fuori della gerarchia delle cartelle controllate che contenga tutti i file richiesti. Questa nuova cartella deve includere i file di input (e facoltativamente un file DDX se necessario dal processo). Una volta creata la cartella dei processi, l&#39;utente la copia nella cartella di input della cartella controllata.
 
 >[!NOTE]
 >

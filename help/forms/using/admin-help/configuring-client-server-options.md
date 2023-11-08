@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10221'
 ht-degree: 0%
@@ -585,7 +585,7 @@ Le impostazioni seguenti si trovano nell&#39;area Impostazioni generali della pa
 
 **Host SMTP:** Il nome host del server SMTP. Il server SMTP gestisce gli avvisi e-mail in uscita per registrare e attivare gli account utente invitati.
 
-Se richiesto dall&#39;host SMTP, digitare le informazioni richieste nelle caselle Nome account server SMTP e Password account server SMTP per connettersi al server SMTP. Alcune organizzazioni non applicano questo requisito. Per ulteriori informazioni, rivolgersi all&#39;amministratore di sistema.
+Se necessario, digitare le informazioni richieste nelle caselle Nome account server SMTP e Password account server SMTP per connettersi al server SMTP. Alcune organizzazioni non applicano questo requisito. Per ulteriori informazioni, rivolgersi all&#39;amministratore di sistema.
 
 **Nome classe socket server SMTP:** Nome della classe socket per il server SMTP. Ad esempio, javax.net.ssl.SSLSocketFactory.
 

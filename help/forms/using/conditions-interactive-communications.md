@@ -10,7 +10,7 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 0%
@@ -201,4 +201,4 @@ Toccare nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola
 1. Per inserire una variabile nella regola, trascina la variabile in un segnaposto per un’opzione nella regola.
 1. Dopo aver costruito una regola valida, tocca **[!UICONTROL Fine]**.
 
-   Procedi con ulteriori modifiche, se necessario, nella condizione e salvala.
+   Procedi ad apportare ulteriori modifiche, se necessario, alla condizione e salvala.

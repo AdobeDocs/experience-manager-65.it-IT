@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 0%
@@ -610,9 +610,9 @@ Per il servizio Firma sono disponibili le impostazioni seguenti.
 
 **URL server TSP:** URL del provider di timestamp predefinito. Utilizzato solo se viene fornito un valore valido. Nessun valore predefinito.
 
-**Nome utente server TSP:** Il nome utente, se richiesto dal provider della marca temporale. Utilizzato solo se viene fornito un valore valido per l’URL. Nessun valore predefinito.
+**Nome utente server TSP:** Il nome utente, se necessario, dal provider della marca temporale. Utilizzato solo se viene fornito un valore valido per l’URL. Nessun valore predefinito.
 
-**Password server TSP:** La password per il nome utente di cui sopra, se richiesta dal provider del timestamp. Utilizzato solo se viene fornito un valore valido per l’URL e il nome utente. Nessun valore predefinito.
+**Password server TSP:** La password per il nome utente di cui sopra, se necessario dal provider del timestamp. Utilizzato solo se viene fornito un valore valido per l’URL e il nome utente. Nessun valore predefinito.
 
 **Algoritmo hash richiesta:** Specifica l’algoritmo hash da utilizzare durante la creazione della richiesta per il provider di marca temporale. Il valore predefinito è SHA1.
 

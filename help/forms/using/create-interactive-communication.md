@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '6163'
 ht-degree: 1%
@@ -552,7 +552,7 @@ Viene visualizzata la finestra di dialogo Ripristina ereditarietà.
 
 ![revertinheritance](assets/revertinheritance.png)
 
-Se necessario, seleziona **[!UICONTROL Sincronizza La Pagina Dopo Aver Ripristinato L’Ereditarietà]**. Selezionare questa opzione per sincronizzare l&#39;intera comunicazione interattiva. Se non selezioni questa opzione, al ripristino dell’ereditarietà viene sincronizzata solo l’area di destinazione pertinente.
+Se necessario, selezionare **[!UICONTROL Sincronizza La Pagina Dopo Aver Ripristinato L’Ereditarietà]**. Selezionare questa opzione per sincronizzare l&#39;intera comunicazione interattiva. Se non selezioni questa opzione, al ripristino dell’ereditarietà viene sincronizzata solo l’area di destinazione pertinente.
 
 Tocca **[!UICONTROL Sì]**.
 

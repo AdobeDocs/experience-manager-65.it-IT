@@ -10,7 +10,7 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '3840'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Utilizza l’Editor del dizionario dati per creare un dizionario dati oppure puo
 
 >[!NOTE]
 >
->Per più lettere che richiedono elementi simili, puoi creare un dizionario dati comune. Un dizionario di big data con un numero elevato di elementi, tuttavia, può causare problemi di prestazioni durante l’utilizzo del dizionario dati e il caricamento degli elementi, ad esempio in lettere e frammenti di documento. In caso di problemi di prestazioni, provare a creare dizionari dati separati per lettere diverse.
+>Per più lettere che richiedono elementi simili, puoi creare un dizionario dati comune. Un dizionario dati di grandi dimensioni con un numero elevato di elementi può tuttavia causare problemi di prestazioni quando si utilizza il dizionario dati e si caricano gli elementi, ad esempio in lettere e frammenti di documento. In caso di problemi di prestazioni, provare a creare dizionari dati separati per lettere diverse.
 
 1. Seleziona **Forms** > **Dizionari dati**.
 1. Tocca **Crea dizionario dati**.

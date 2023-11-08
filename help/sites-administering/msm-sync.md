@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 38%
+ht-degree: 36%
 
 ---
 
@@ -386,7 +386,7 @@ Puoi anche configurare le configurazioni di rollout per una pagina Live Copy qua
 
    ![Configurazione](assets/chlimage_1-1.png)
 
-1. Se necessario, regola il flag **Ereditarietà Live Copy**. Se selezionato, la configurazione della Live Copy ha effetto su tutti gli elementi secondari.
+1. Se necessario, regolare **Ereditarietà Live Copy** flag. Se selezionato, la configurazione della Live Copy ha effetto su tutti gli elementi secondari.
 
 1. Deseleziona la proprietà **Eredita configurazione di rollout dall’elemento principale**, quindi seleziona una o più configurazioni di rollout dall’elenco.
 

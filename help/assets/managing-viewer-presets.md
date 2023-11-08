@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '4519'
+source-wordcount: '4520'
 ht-degree: 9%
 
 ---
@@ -114,7 +114,7 @@ Durante la creazione dei predefiniti visualizzatore, gli amministratori possono 
   </tr>
   <tr>
    <td><strong>Immagine panoramica</strong></td>
-   <td><p>I visualizzatori Immagine panoramica e PanoramicaVR offrono immagini panoramiche sferiche per immergere gli utenti in un’esperienza di visione a 360° di una stanza, una proprietà, una posizione o un paesaggio.</p> <p>Affinché un'immagine caricata possa essere considerata un panorama sferico, deve avere una o entrambe le caratteristiche seguenti:</p>
+   <td><p>I visualizzatori Immagine panoramica e PanoramicaVR offrono immagini panoramiche sferiche per immergere gli utenti in un’esperienza di visione a 360 gradi di una stanza, una proprietà, una posizione o un paesaggio.</p> <p>Affinché un'immagine caricata possa essere considerata un panorama sferico, deve avere una o entrambe le caratteristiche seguenti:</p>
     <ul>
      <li>Rapporto di formato 2:1.</li>
      <li>Contrassegnato con le parole chiave <code>equirectangular</code>, o <code>spherical</code> e <code>panorama</code>, o <code>spherical </code>e <code>panoramic</code>. Consulta <a href="/help/sites-authoring/tags.md">Utilizzo dei tag</a>.</li>

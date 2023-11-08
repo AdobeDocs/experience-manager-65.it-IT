@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 91%
@@ -136,6 +136,6 @@ Viene visualizzata una finestra di dialogo che consente di perfezionare la selez
 
 ## Avvio di un flusso di lavoro dall’editor pagina {#starting-a-workflow-from-the-page-editor}
 
-Quando modifichi una pagina puoi selezionare **Informazioni pagina** dalla barra degli strumenti. Il menu a discesa include l’opzione **Inizia nel flusso di lavoro**. Viene visualizzata una finestra di dialogo in cui è possibile specificare il flusso di lavoro richiesto e, se necessario, un titolo:
+Quando modifichi una pagina puoi selezionare **Informazioni pagina** dalla barra degli strumenti. Il menu a discesa include l’opzione **Inizia nel flusso di lavoro**. Viene visualizzata una finestra di dialogo in cui è possibile specificare il flusso di lavoro richiesto, se necessario con un titolo:
 
 ![wf-54](assets/wf-54.png)

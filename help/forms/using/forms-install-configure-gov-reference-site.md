@@ -4,9 +4,9 @@ description: Installa, configura e personalizza un pacchetto demo di AEM Forms.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '4611'
+source-wordcount: '4603'
 ht-degree: 3%
 
 ---
@@ -34,8 +34,8 @@ Questo pacchetto contiene una configurazione cloud che supporta le seguenti vers
 | Adobe Analytics | API Rest v1.4 | **Funzione supportata** |
 **Considerazioni sull’installazione del pacchetto:**
 
-* Il pacchetto deve essere installato su un server pulito, senza altri pacchetti demo o versioni di pacchetti demo precedenti
-* Il pacchetto deve essere installato su un server OSGI, in esecuzione in modalità Creazione
+* Installa il pacchetto su un server pulito, senza altri pacchetti demo o versioni di pacchetti demo precedenti.
+* Installa il pacchetto su un server OSGI, in esecuzione in modalità Creazione.
 
 ### Cosa include questo pacchetto {#what-does-this-package-include}
 
