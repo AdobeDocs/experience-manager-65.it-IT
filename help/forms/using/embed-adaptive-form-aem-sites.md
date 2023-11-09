@@ -1,18 +1,14 @@
 ---
 title: Incorporare un modulo adattivo o una comunicazione interattiva nella pagina dei siti AEM
-seo-title: Embed an adaptive form or interactive communication in AEM sites page
 description: Puoi incorporare moduli adattivi nelle pagine dei siti AEM. Gli utenti possono compilare e inviare moduli senza uscire dalle pagine del sito.
-seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
-uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
-discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1164'
 ht-degree: 1%
 
 ---
@@ -69,7 +65,7 @@ Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando i
 
       * **Messaggio di ringraziamento**: scrivi un messaggio utilizzando l’editor Rich Text. Questa opzione è disponibile solo quando si sceglie di visualizzare un messaggio di ringraziamento.
       * **Pagina di ringraziamento**: sfoglia e seleziona la pagina da visualizzare all’invio del modulo. Questa opzione è disponibile solo quando si sceglie di visualizzare una pagina di ringraziamento.
-      * **Aggiorna pagina all&#39;invio**: abilita per aggiornare la pagina contenente il modulo adattivo incorporato in modo da visualizzare la pagina di ringraziamento. In caso contrario, la pagina di ringraziamento sostituisce il modulo adattivo nel contenitore AEM Forms, senza aggiornare la pagina. Questa opzione è disponibile solo quando si sceglie di visualizzare una pagina di ringraziamento.
+      * **Aggiorna pagina all&#39;invio**: abilitato per aggiornare la pagina contenente il modulo adattivo incorporato e visualizzare la pagina di ringraziamento. In caso contrario, la pagina di ringraziamento sostituisce il modulo adattivo nel contenitore AEM Forms, senza aggiornare la pagina. Questa opzione è disponibile solo quando si sceglie di visualizzare una pagina di ringraziamento.
 
    * **Tema**: seleziona un tema che definisce lo stile dei componenti del modulo adattivo o della comunicazione interattiva. Lo stile include proprietà di aspetto quali lo stile del carattere, il colore di sfondo, le dimensioni e l&#39;allineamento.
    * **Altezza**: specifica l’altezza del contenitore. Lascia vuoto questo campo per ridimensionare automaticamente il contenitore.

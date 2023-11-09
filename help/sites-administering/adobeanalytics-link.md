@@ -1,18 +1,14 @@
 ---
 title: Configurazione del tracciamento dei collegamenti per Adobe Analytics
-seo-title: Configuring Link Tracking for Adobe Analytics
 description: Scopri come configurare il tracciamento dei collegamenti per il SiteCatalyst.
-seo-description: Learn about configuring link tracking for SiteCatalyst.
-uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1615'
 ht-degree: 1%
 
 ---
@@ -24,7 +20,7 @@ Quando gli utenti fanno clic sui collegamenti nelle pagine del sito web, è poss
 
 ## Configurazione del tracciamento dei collegamenti per un framework Adobe Analytics {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Utilizzo di **Navigazione**, vai tramite **Distribuzione**, **Cloud Services** al **Adobe Analytics** sezione.
+1. Utilizzo di **Navigazione**, vai tramite **Distribuzione**, **Cloud Service** al **Adobe Analytics** sezione.
 
 1. Utilizzo di **Mostra configurazioni**, apri il framework Adobe Analytics richiesto.
 1. Espandi **Configurazione tracciamento collegamenti** e configura come richiesto (questa pagina fornisce ulteriori dettagli):
@@ -93,7 +89,7 @@ Definisce i filtri per la corrispondenza con gli URL dei collegamenti interni. Q
 * **Lascia stringa di query**
 Include i parametri URL durante la valutazione delle corrispondenze con filtri interni ed esterni.
 
-  Abilita questa opzione per includere i parametri URL durante la valutazione degli URL di destinazione del collegamento rispetto ai filtri esterni e interni.
+  Abilita questa opzione se desideri includere i parametri URL durante la valutazione degli URL di destinazione del collegamento rispetto ai filtri esterni e interni.
 
 Le proprietà di tracciamento dei collegamenti esterni sono implementate come codice nel `analytics.sitecatalyst.js` file generato per una pagina. Il seguente codice di esempio viene generato per una pagina associata a un framework che ha abilitato il tracciamento dei collegamenti esterni con la seguente configurazione:
 
@@ -215,7 +211,7 @@ Questo esempio illustra il funzionamento della mappatura nel contesto del tracci
 1. Deseleziona **Lascia stringa di query**.
 1. Utilizza il seguente valore per **Filtri esterni** per identificarlo come URL esterno:
 
-   `‘yahoo.com’`
+   `'yahoo.com'`
 
 1. Aggiungi il seguente valore al **Link Track Events** campo:
 
@@ -345,12 +341,12 @@ Per configurare il tracciamento dei collegamenti per un **Testo** componente:
 1. (Facoltativo) Per tenere traccia dei dati delle variabili con il clic del collegamento, aggiungi le variabili di Adobe Analytics in **Includi variabili Adobe Analytics** campo. Utilizza uno dei seguenti formati:
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
-   * *`<Variable-name>`*: *`‘CONSTANT'`*
+   * *`<Variable-name>`*: *`'CONSTANT'`*
 
    Gli esempi seguenti illustrano ogni formato:
 
    * `eVar10:pagedata.title`
-   * `prop1: ‘Aubergine'`
+   * `prop1: 'Aubergine'`
 
    Separa più valori con una virgola.
 

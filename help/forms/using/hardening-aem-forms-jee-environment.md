@@ -1,16 +1,12 @@
 ---
 title: Rafforzamento dell’ambiente AEM Forms su JEE
-seo-title: Hardening Your AEM Forms on JEE Environment
 description: Scopri diverse impostazioni per rafforzare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
-seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
-uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '7662'
 ht-degree: 1%
@@ -318,8 +314,8 @@ La generazione WSDL (Web Service Definition Language) deve essere abilitata solo
    https://[host name]:[port]/adminui
    ```
 
-1. Clic **Settings (Impostazioni) > Core System Settings (Impostazioni sistema core) > Configurations (Configurazioni)**.
-1. Deseleziona **Abilita WSDL** e fai clic su **OK**.
+1. Seleziona **Settings (Impostazioni) > Core System Settings (Impostazioni sistema core) > Configurations (Configurazioni)**.
+1. Deseleziona **Abilita WSDL**, quindi seleziona **OK**.
 
 ### Protezione del server applicazioni {#application-server-security}
 

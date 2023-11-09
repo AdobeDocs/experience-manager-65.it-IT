@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 1%
@@ -118,7 +118,7 @@ Flusso di lavoro generale per eliminare un articolo:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
 1. Seleziona l’articolo da eliminare nel **Gestisci articoli** affiancare.
-1. Assicurati che sia selezionato nell’elenco, (seleziona gli altri da eliminare in base alle esigenze).
+1. Assicurati che sia selezionato nell’elenco; seleziona gli altri da eliminare in base alle esigenze.
 1. Clic **Elimina** dalla barra delle azioni.
 1. Seleziona questa opzione se desideri eliminarla da AEM e Mobile On-Demand.
 1. Fai clic su **Elimina**.

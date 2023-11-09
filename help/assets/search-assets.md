@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '5739'
+source-wordcount: '5736'
 ht-degree: 6%
 
 ---
@@ -428,7 +428,7 @@ Puoi effettuare le seguenti operazioni con le risorse in cui hai effettuato la r
 
 Ordina i risultati della ricerca per individuare più rapidamente le risorse richieste. È possibile ordinare i risultati della ricerca nella vista a elenco e solo quando si seleziona **[[!UICONTROL File]](#searchui)** dal **[!UICONTROL Filtri]** pannello. [!DNL Assets] utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse all’interno di una cartella o nei risultati di una query di ricerca, indipendentemente dal numero. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
 
-Nella vista a elenco, puoi ordinare i risultati della ricerca così come puoi ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Nome, Titolo, Stato, Dimension, Dimensione, Valutazione, Utilizzo, Data di creazione, Data di modifica, Data di pubblicazione, Flusso di lavoro ed Estrazione.
+Nella vista a elenco, puoi ordinare i risultati della ricerca così come puoi ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Nome, Titolo, Stato, Dimension, Dimensione, Valutazione, Utilizzo, Creato, Modificato, Pubblicato, Flusso di lavoro ed Estratto.
 
 Per limitazioni della funzionalità di ordinamento, consulta [limitazioni](#limitations).
 

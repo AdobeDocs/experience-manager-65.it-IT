@@ -7,7 +7,7 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '2773'
 ht-degree: 1%
@@ -326,8 +326,8 @@ Se è necessario apportare modifiche, in ogni istanza di pubblicazione dell’AE
 
      Posizione nell&#39;archivio in cui vengono memorizzati i dati utente. Per un sito di community, per garantire le autorizzazioni per i membri per visualizzare il profilo di un altro utente, il percorso deve essere quello predefinito `/home/users/community`.
 
-   * **[!UICONTROL Abilita parametri]** non modificare
-   * **[!UICONTROL Parametri URL]** non modificare
+   * **[!UICONTROL Abilita parametri]** - non modificare
+   * **[!UICONTROL Parametri URL]** - non modificare
    * **[!UICONTROL Aggiorna utente]**
 
      Se questa opzione è selezionata, aggiorna i dati utente nell’archivio a ogni accesso per riflettere le modifiche al profilo o i dati aggiuntivi richiesti. Il valore predefinito è deselezionato.

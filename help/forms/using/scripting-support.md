@@ -1,19 +1,15 @@
 ---
 title: Supporto di script per moduli HTML5
-seo-title: Scripting support for HTML5 forms
 description: JavaScript, proprietà FormCalc e altri metodi supportati in HTML Forms.
-seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
-uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '3887'
+source-wordcount: '3896'
 ht-degree: 7%
 
 ---
@@ -36,7 +32,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td>Specifica il contenuto del campo prima che venga modificato in risposta alle azioni di un utente. Questo valore può essere richiamato, in modo simile a una feature di annullamento.</td>
    <td><p>Non funziona per menu a discesa e caselle di riepilogo. <code>PrevText </code>non funziona correttamente nei seguenti casi:</p>
     <ul>
-     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $, (,), &amp;, @ e altro) nei campi Numerici di iPad e </li>
+     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $ o , o &amp; o @ e altro) nei campi Numerici di iPad e </li>
      <li>Per il campo Data (quando la data viene immessa nel calendario).<br /> </li>
     </ul> <p>L'impostazione del valore tramite script non è supportata.</p> </td>
   </tr>
@@ -52,7 +48,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
     <ul>
      <li>Selezione-sostituzione di testi</li>
      <li>Per eliminare, copiare e incollare i testi.</li>
-     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $, (, ), &amp;, @ e altro) nei campi numerici<br /> </li>
+     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $ o , o &amp; o @ e altro) nei campi numerici<br /> </li>
      <li>Quando si utilizza la combinazione maiusc+alfanumerico. </li>
      <li>Quando si utilizzano i campi data/ora.</li>
     </ul>
@@ -67,7 +63,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
     <ul>
      <li>Selezione-sostituzione di testi</li>
      <li>Per eliminare, copiare e incollare i testi.</li>
-     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $, (,), &amp;, @ e altro) nei campi numerici<br /> </li>
+     <li>Quando si digitano alcuni tasti carattere speciali (ad esempio, $ o , o &amp; o @ e altro) nei campi numerici<br /> </li>
      <li>Quando si utilizza la combinazione maiusc+alfanumerico. </li>
      <li>Quando si utilizzano i campi data/ora.</li>
     </ul> <p>L'impostazione del valore tramite script non è supportata.</p> </td>
@@ -994,7 +990,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
   </tr>
   <tr>
    <td>calcola</td>
-   <td>L’oggetto di calcolo controlla il calcolo del valore di un campo.<br /> </td>
+   <td>L'oggetto di calcolo controlla il calcolo del valore di un campo.<br /> </td>
    <td>Nessuno</td>
   </tr>
  </tbody>

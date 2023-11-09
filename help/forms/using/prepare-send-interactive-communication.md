@@ -1,17 +1,13 @@
 ---
 title: Preparare e inviare comunicazioni interattive tramite l’interfaccia utente dell’agente
-seo-title: Prepare and send Interactive Communication using the Agent UI
 description: L’interfaccia utente agente consente agli agenti di preparare e inviare la comunicazione interattiva al processo successivo. L’agente apporta le modifiche necessarie come consentito e invia la comunicazione interattiva a un processo successivo, ad esempio e-mail o stampa.
-seo-description: Prepare and send Interactive Communication using the Agent UI
-uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2021'
 ht-degree: 0%
 
 ---
@@ -69,7 +65,7 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
 
    Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati nel contenuto ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra nell’anteprima, puoi disabilitare o abilitare la funzionalità per passare al frammento di documento quando il testo, il paragrafo o il campo dati rilevante viene toccato/selezionato nell’anteprima.
 
-   I frammenti che possono essere modificati dall’agente durante la creazione della comunicazione interattiva hanno la funzione Modifica contenuto selezionato ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Tocca l’icona Modifica contenuto selezionato per avviare il frammento in modalità di modifica e apportarvi modifiche. Utilizza le seguenti opzioni per la formattazione e la gestione del testo:
+   I frammenti che possono essere modificati dall’agente durante la creazione della comunicazione interattiva hanno la proprietà Modifica contenuto selezionato ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Tocca l’icona Modifica contenuto selezionato per avviare il frammento in modalità di modifica e apportarvi modifiche. Utilizza le seguenti opzioni per la formattazione e la gestione del testo:
 
    * [Opzioni di formattazione](#formattingtext)
 
@@ -169,7 +165,7 @@ L’interfaccia utente dell’agente supporta 210 caratteri speciali. L’ammini
 
 * Inserisci riga vuota: inserisce una nuova riga vuota.
 * Selezione (icona a forma di occhio): include\esclude il frammento di documento dalla comunicazione interattiva.
-* Ignora punti elenco/numeri: consente di saltare i punti elenco/la numerazione nel frammento di documento elenco.
+* Ignora punti elenco/numeri: consente di ignorare i punti elenco/la numerazione nel frammento di documento elenco.
 * Valori non compilati (informazioni): indica il numero di variabili non compilate nel frammento di documento.
 
 ## Salvare le comunicazioni interattive come bozza {#save-as-draft}

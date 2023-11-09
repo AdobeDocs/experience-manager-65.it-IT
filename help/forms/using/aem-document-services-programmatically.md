@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '6419'
 ht-degree: 1%
@@ -4460,7 +4460,7 @@ Il servizio PDF Generator fornisce API per la conversione di formati di file nat
 
 ### GeneraServizioPDF {#generatepdfservice}
 
-GeneratePDFService fornisce API per la conversione di vari formati di file, ad esempio doc, docx, ppt, pptx, xls, xlsx, odp, odt, ods, (obsoleto).swf, jpg, bmp, tif, png, html e molti altri formati di file in PDF. Fornisce inoltre API per esportare PDF in vari formati di file e ottimizzare i PDF. Il servizio supporta le seguenti API:
+GeneratePDFService fornisce API per la conversione di vari formati di file, ad esempio doc, docx, ppt, pptx, xls, xlsx, odp, odt, ods, swf (obsoleto), jpg, bmp, tif, png, html e molti altri formati di file in PDF. Fornisce inoltre API per esportare PDF in vari formati di file e ottimizzare i PDF. Il servizio supporta le seguenti API:
 
 * **createPDF**: converte un tipo di file supportato in un documento PDF. Supporta formati di file come Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Oltre a queste applicazioni, qualsiasi PDF generico di terze parti che generi un tipo di applicazione può anche essere collegato all’API.
 * **exportPDF**: converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato. È possibile esportare un documento di PDF in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 con CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3a(sRGB), formati/A-3b(sRGB). Puoi anche specificare [profili di verifica preliminare personalizzati](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) per le uscite PDF.
