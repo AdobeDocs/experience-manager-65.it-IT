@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
+source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 11%
 
 ---
@@ -36,6 +36,10 @@ AEM Forms combina le funzionalità di authoring, gestione e pubblicazione dei mo
 Nelle grandi aziende, i moduli sono spesso creati una volta sola, per poi essere riutilizzati copiandoli in un sistema di gestione dei contenuti. Mantenere aggiornato un ampio database di moduli e renderli individuabili può essere una sfida considerevole. AEM fornisce un Forms Portal personalizzabile che consente ai clienti di trovare e accedere ai moduli necessari sia sui canali web che mobile.
 
 AEM Forms fornisce strumenti di gestione dei moduli che consentono non solo di gestire i moduli adattivi, ma anche i moduli XFA, i PDF forms e le risorse correlate. Per ulteriori informazioni, consulta [Introduzione alla gestione dei moduli](../../forms/using/introduction-managing-forms.md).
+
+>[!NOTE]
+>
+>La funzione di AEM Forms, ad esempio Forms adattivo, disponibile in [QuickStart per AEM 6.5](/help/sites-deploying/deploy.md), sono esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms.
 
 ![Funzionalità dei moduli AEM](do-not-localize/4th-draft.gif)
 
@@ -124,6 +128,3 @@ Documenti personalizzati come ricevute, kit di benvenuto e rendiconti possono es
 
 Flusso di lavoro di comunicazione personalizzato semplificato
 
->[!NOTE]
->
->La funzione Adaptive Forms, disponibile in QuickStart AEM 6.5, è progettata esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms, in quanto la funzionalità Adaptive Forms richiede una licenza appropriata.
