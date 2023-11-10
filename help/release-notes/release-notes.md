@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
+source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
 workflow-type: tm+mt
-source-wordcount: '3432'
+source-wordcount: '3433'
 ht-degree: 1%
 
 ---
@@ -285,7 +285,8 @@ Per istruzioni sull&#39;installazione del service pack in Experience Manager For
 
 >[!NOTE]
 >
->La funzione di AEM Forms, ad esempio Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), sono esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms.
+>La funzione di AEM Forms, ad esempio Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), sono destinati esclusivamente a scopi di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms.
+
 
 
 ### Installare il pacchetto di indice GraphQL per frammenti di contenuto Experience Manager{#install-aem-graphql-index-add-on-package}

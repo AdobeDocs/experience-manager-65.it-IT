@@ -2,9 +2,9 @@
 title: Istruzioni di installazione delle patch AEM Forms per AEM Forms
 description: Istruzioni per l’installazione del service pack di AEM Forms per l’ambiente OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
+source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1771'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,8 @@ Il service pack di Adobe Experience Manager (AEM) Forms include funzioni nuove e
 >
 > * In Adobe viene rilasciato un programma di installazione completo ogni sei Service Pack. AEM 6.5 Forms Service Pack 18 (6.5.18.0) è l’ultimo programma di installazione completo di JEE. Il programma di installazione completo supporta le nuove piattaforme, mentre il programma di installazione dei Service Pack standard include nuove funzionalità, correzioni di bug e miglioramenti generali. Se stai eseguendo una nuova installazione o pianificando di utilizzare il software più recente per il tuo Forms AEM 6.5 in ambiente JEE, Adobe consiglia di utilizzare il programma di installazione completo di AEM 6.5.18.0 Forms su JEE rilasciato il 31 agosto 2023 invece del programma di installazione di AEM 6.5 Forms rilasciato il 08 aprile 2019 o 6.5.12 AEM Forms Installer rilasciato il 03 marzo 2022. Dopo aver utilizzato il programma di installazione completo, installare il service pack più recente.
 > 
-> * La funzione di AEM Forms, ad esempio Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), sono esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms.
+> * La funzione di AEM Forms, ad esempio Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), sono destinati esclusivamente a scopi di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms.
+
 
 
 
