@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2913'
+source-wordcount: '2914'
 ht-degree: 6%
 
 ---
@@ -57,7 +57,7 @@ Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM
    <td><p>Proprietà</p> </td>
    <td><p>Apache</p> </td>
    <td><p>Bordo</p> </td>
-   <td><p>Destinazione</p> </td>
+   <td><p>Previsto</p> </td>
   </tr>
   <tr>
    <td><p>Risorse</p> </td>
@@ -302,7 +302,7 @@ In AEM, i dati binari possono essere memorizzati indipendentemente dai nodi di c
 
 >[!NOTE]
 >
->L’Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti sia per le istanze AEM Author che per quelle Publish.
+>L’Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti sia per le istanze Autore AEM che per quelle Pubblica.
 
 >[!CAUTION]
 >
@@ -318,19 +318,19 @@ Per ulteriori dettagli sulle opzioni di configurazione disponibili, vedi [Config
 
 >[!NOTE]
 >
->L’Adobe consiglia di scegliere l’opzione di distribuzione dell’AEM in Azure o Amazon Web Services (AWS) tramite Adobe Managed Services. I clienti traggono vantaggio da un team con l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+>Adobe consiglia di scegliere l’opzione di distribuzione dell’AEM in Azure o Amazon Web Services (AWS) utilizzando Adobe Managed Services. I clienti traggono vantaggio da un team con l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 >
->Per raccomandazioni su come distribuire AEM in Azure o AWS, al di fuori di Adobe Managed Services, l’Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, collabora con uno dei partner di Adobe che supportano l’implementazione dell’AEM nell’ambiente cloud desiderato. Il provider cloud o partner selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura supportata per soddisfare requisiti specifici di prestazioni, carico, scalabilità e sicurezza.
->Consulta anche [requisiti tecnici](/help/sites-deploying/technical-requirements.md#supported-platforms) pagina.
+>Per raccomandazioni su come distribuire l’AEM in Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, collabora con uno dei partner di Adobe che supportano l’implementazione dell’AEM nell’ambiente cloud desiderato. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura supportata per soddisfare requisiti specifici di prestazioni, carico, scalabilità e sicurezza.
 >
->
->
+>>Consulta anche [requisiti tecnici](/help/sites-deploying/technical-requirements.md#supported-platforms) pagina.
+
 ### Ricerca {#search-features}
 
 In questa sezione sono elencati i provider di indice personalizzati utilizzati con AEM. Per ulteriori informazioni sull’indicizzazione, consulta [Query e indicizzazione Oak](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
-Per la maggior parte delle distribuzioni, Adobe consiglia di utilizzare l’indice Lucene. Utilizza Solr solo per la scalabilità in implementazioni specializzate e complesse.
+>
+>Per la maggior parte delle distribuzioni, Adobe consiglia di utilizzare l’indice Lucene. Utilizza Solr solo per la scalabilità in implementazioni specializzate e complesse.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
@@ -368,7 +368,8 @@ Per maggiori dettagli sullo sviluppo dell&#39;AEM, vedi [Sviluppo - Nozioni di b
 ### Scenari di benchmark {#benchmark-scenarios}
 
 >[!NOTE]
-Tutti i test di benchmark mostrati in questa pagina sono stati eseguiti in laboratorio.
+>
+>Tutti i test di benchmark mostrati in questa pagina sono stati eseguiti in laboratorio.
 
 Gli scenari di test dettagliati di seguito sono utilizzati per le sezioni di benchmark dei capitoli TarMK, MongoMk e TarMK vs MongoMk. Per vedere quale scenario è stato utilizzato per un particolare test di benchmark, leggere il campo Scenario dalla sezione [Specifiche tecniche](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) tabella.
 
@@ -389,7 +390,7 @@ AEM Sites + Assets:
 
 **Scenario del caso d’uso verticale**
 
-File multimediali:
+Media:
 
 * `Read Article Page (27.4%), Read Page (10.9%), Create Session (2.6%), Activate Content Page (1.7%), Create Content Page (0.4%), Create Paragraph (4.3%), Edit Paragraph (0.9%), Image Component (0.9%), Browse Assets (20%), Read Asset Metadata (8.5%), Download Asset (4.2%), Search Asset (0.2%), Update Asset Metadata (2.4%), Upload Asset (1.2%), Browse Project (4.9%), Read Project (6.6%), Project Add Asset (1.2%), Project Add Site (1.2%), Create Project (0.1%), Author Search (0.4%)`
 * Modalità di esecuzione: utenti simultanei, interazioni miste per utente
@@ -398,14 +399,15 @@ File multimediali:
 
 Questo capitolo fornisce le linee guida generali sulle prestazioni per TarMK specificando i requisiti minimi dell’architettura e la configurazione delle impostazioni. Vengono inoltre fornite prove comparative per ulteriori chiarimenti.
 
-L’Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze AEM Author che per quelle Publish.
+L’Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze di creazione AEM che per quelle di pubblicazione.
 
 Per ulteriori informazioni su TarMK, consulta [Scenari di implementazione](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) e [Archiviazione Tar](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
 ### Linee guida sull’architettura minima di TarMK {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
-Le linee guida dell’architettura minima presentate di seguito si riferiscono agli ambienti di produzione e ai siti con traffico elevato. Queste linee guida sono **non** il [specifiche minime](/help/sites-deploying/technical-requirements.md#prerequisites) per il funzionamento dell&#39;AEM.
+>
+>Le linee guida dell’architettura minima presentate di seguito si riferiscono agli ambienti di produzione e ai siti con traffico elevato. Queste linee guida sono **non** il [specifiche minime](/help/sites-deploying/technical-requirements.md#prerequisites) per il funzionamento dell&#39;AEM.
 
 Per stabilire buone prestazioni quando si utilizza TarMK, è necessario partire dalla seguente architettura:
 
@@ -416,7 +418,8 @@ Per stabilire buone prestazioni quando si utilizza TarMK, è necessario partire 
 Di seguito sono illustrate le linee guida sull’architettura dei siti AEM e AEM Assets.
 
 >[!NOTE]
-È necessario attivare la replica senza binario **ATTIVATO** se l’archivio dati file è condiviso.
+>
+>È necessario attivare la replica senza binario **ATTIVATO** se l’archivio dati file è condiviso.
 
 **Linee guida sull’architettura Tar per AEM Sites**
 
@@ -489,7 +492,7 @@ Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazion
 
 I test di riferimento sono stati eseguiti sulle seguenti specifiche:
 
-|  | **Nodo Author** |
+| | **Nodo Author** |
 |---|---|
 | Server | Hardware Bare Metal (HP) |
 | Sistema operativo | Red Hat® Linux® |
@@ -506,7 +509,8 @@ I test di riferimento sono stati eseguiti sulle seguenti specifiche:
 #### Risultati benchmark prestazioni {#performance-benchmark-results}
 
 >[!NOTE]
-I numeri presentati di seguito sono stati normalizzati a 1 come linea di base e non sono i numeri di throughput effettivi.
+>
+>I numeri presentati di seguito sono stati normalizzati a 1 come linea di base e non sono i numeri di throughput effettivi.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
 
@@ -526,10 +530,12 @@ Per stabilire buone prestazioni quando si utilizza MongoMK, è necessario partir
 * Due dispatcher
 
 >[!NOTE]
-Negli ambienti di produzione, MongoDB viene sempre utilizzato come set di repliche con un database primario e due database secondari. Le letture e le scritture vanno al primario e le letture possono andare ai secondari. Se l&#39;archiviazione non è disponibile, è possibile sostituire uno dei database secondari con un arbitro, ma i set di repliche MongoDB devono essere sempre composti da un numero dispari di istanze.
+>
+>Negli ambienti di produzione, MongoDB viene sempre utilizzato come set di repliche con un database primario e due database secondari. Le letture e le scritture vanno al primario e le letture possono andare ai secondari. Se l&#39;archiviazione non è disponibile, è possibile sostituire uno dei database secondari con un arbitro, ma i set di repliche MongoDB devono essere sempre composti da un numero dispari di istanze.
 
 >[!NOTE]
-È necessario attivare la replica senza binario **ATTIVATO** se l’archivio dati file è condiviso.
+>
+>È necessario attivare la replica senza binario **ATTIVATO** se l’archivio dati file è condiviso.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
@@ -596,7 +602,7 @@ Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazion
 
 I test di riferimento sono stati eseguiti sulle seguenti specifiche:
 
-|  | **Nodo Author** | **Nodo MongoDB** |
+| | **Nodo Author** | **Nodo MongoDB** |
 |---|---|---|
 | Server | Hardware Bare Metal (HP) | Hardware Bare Metal (HP) |
 | Sistema operativo | Red Hat® Linux® | Red Hat® Linux® |
@@ -613,13 +619,14 @@ I test di riferimento sono stati eseguiti sulle seguenti specifiche:
 ### Risultati benchmark prestazioni {#performance-benchmark-results-1}
 
 >[!NOTE]
-I numeri presentati di seguito sono stati normalizzati a 1 come linea di base e non sono i numeri di throughput effettivi.
+>
+>I numeri presentati di seguito sono stati normalizzati a 1 come linea di base e non sono i numeri di throughput effettivi.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
 ## TarMK e MongoMK {#tarmk-vs-mongomk}
 
-La regola di base da tenere in considerazione quando si sceglie tra i due è che TarMK è progettato per le prestazioni, mentre MongoMK è utilizzato per la scalabilità. L’Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze AEM Author che per quelle Publish.
+La regola di base da tenere in considerazione quando si sceglie tra i due è che TarMK è progettato per le prestazioni, mentre MongoMK è utilizzato per la scalabilità. L’Adobe consiglia di utilizzare TarMK come tecnologia di persistenza predefinita utilizzata dai clienti in tutti gli scenari di implementazione, sia per le istanze di creazione AEM che per quelle di pubblicazione.
 
 Il motivo principale per scegliere il back-end di persistenza MongoMK su TarMK è quello di scalare le istanze orizzontalmente. Questa funzionalità significa disporre di due o più istanze di authoring attive sempre in esecuzione e utilizzare MongoDB come sistema di storage di persistenza. La necessità di eseguire più di un’istanza di authoring deriva in genere dal fatto che la capacità di CPU e di memoria di un singolo server, che supporta tutte le attività di authoring simultanee, non è più sostenibile.
 
@@ -646,7 +653,8 @@ Per maggiori dettagli su TarMK vs MongoMK, vedi [Distribuzioni consigliate](/hel
 ### Confronto tra TarMK e i benchmark MongoMK {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
-I numeri riportati di seguito sono stati normalizzati a 1 come linea di base e non sono numeri di throughput effettivi.
+>
+>I numeri riportati di seguito sono stati normalizzati a 1 come linea di base e non sono numeri di throughput effettivi.
 
 ### Scenario 1 - Specifiche tecniche {#scenario-technical-specifications}
 
@@ -734,7 +742,8 @@ I numeri riportati di seguito sono stati normalizzati a 1 come linea di base e n
 ### Scenario 2 - Specifiche tecniche {#scenario-technical-specifications-1}
 
 >[!NOTE]
-Per abilitare lo stesso numero di autori con MongoDB come con un sistema TarMK, è necessario un cluster con due nodi AEM. Un cluster MongoDB a quattro nodi può gestire un numero di autori pari a 1,8 volte quello di un’istanza TarMK. Un cluster MongoDB a otto nodi può gestire un numero di autori 2,3 volte superiore a quello di un’istanza TarMK.
+>
+>Per abilitare lo stesso numero di autori con MongoDB come con un sistema TarMK, è necessario un cluster con due nodi AEM. Un cluster MongoDB a quattro nodi può gestire un numero di autori pari a 1,8 volte quello di un’istanza TarMK. Un cluster MongoDB a otto nodi può gestire un numero di autori 2,3 volte superiore a quello di un’istanza TarMK.
 
 <table>
  <tbody>

@@ -7,9 +7,9 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2204'
 ht-degree: 14%
 
 ---
@@ -222,7 +222,7 @@ Quando si scarica una raccolta, viene scaricata l’intera gerarchia di risorse 
 
 ## Creare raccolte nidificate {#creating-nested-collections}
 
-È possibile aggiungere una raccolta a un&#39;altra raccolta, creando così una raccolta nidificata.
+È possibile aggiungere una raccolta a un&#39;altra raccolta per creare una raccolta nidificata.
 
 1. Dalla console Raccolte, seleziona la raccolta o il gruppo di raccolte desiderato e fai clic su **[!UICONTROL Alla raccolta]** nella barra degli strumenti.
 

@@ -2,9 +2,9 @@
 title: Configurazioni e browser di configurazione
 description: Scopri le configurazioni dell’AEM e come gestiscono le impostazioni dell’area di lavoro nell’AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1483'
 ht-degree: 6%
 
 ---
@@ -157,7 +157,7 @@ Ora diamo un’occhiata al contenuto JCR corrispondente:
 
 In questo esempio, puoi assumere una cartella DAM specifica per WKND qui e una configurazione corrispondente. A partire da quella cartella `/content/dam/wknd`, è possibile vedere che è presente una proprietà stringa denominata `cq:conf` che fa riferimento alla configurazione da applicare per la sottostruttura. La proprietà è impostata su `jcr:content` di una cartella o pagina di risorse. Questi `conf` I collegamenti sono espliciti, quindi è facile seguirli semplicemente guardando il contenuto in CRXDE.
 
-Salto all&#39;interno `/conf`, puoi seguire il riferimento e vedere che è presente un’ `/conf/wknd` nodo. Questa è una configurazione. La ricerca è trasparente per il codice dell’applicazione. Il codice di esempio non ha mai un riferimento dedicato ad esso, è nascosto dietro il `Conf` oggetto. La configurazione applicabile viene controllata tramite il contenuto JCR.
+Salto all&#39;interno `/conf`, puoi seguire il riferimento e vedere che è presente un’ `/conf/wknd` nodo. Questa è una configurazione. La ricerca è trasparente per il codice dell’applicazione. Il codice di esempio non ha mai un riferimento dedicato a esso, è nascosto dietro il `Conf` oggetto. La configurazione applicabile viene controllata tramite il contenuto JCR.
 
 Puoi vedere che la configurazione contiene un `settings` nodo che contiene gli elementi effettivi, incluso `dam/imageserver` che ti serve in questo caso. Tale elemento può essere considerato come un &quot;documento delle impostazioni&quot; ed è rappresentato da un `cq:Page` incluso un `jcr:content` mantenendo il contenuto effettivo.
 

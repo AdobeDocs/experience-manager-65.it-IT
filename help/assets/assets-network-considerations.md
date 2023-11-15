@@ -5,7 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -71,9 +71,9 @@ Progettazione della topologia di [!DNL Experience Manager] L&#39;ambiente richie
 
 Lo scenario di esempio include una farm di pubblicazione con cinque server, un archivio binario S3 e Dynamic Medie configurato.
 
-Il dispatcher condivide la propria connessione a 100 Mbps con due entità, il mondo esterno e [!DNL Experience Manager] distribuzione. Per operazioni di caricamento e download simultanee, è necessario dividere questo numero per due. Lo storage esterno collegato utilizza una connessione separata.
+Il dispatcher condivide la sua connessione a 100 Mbps con due entità, il mondo esterno e [!DNL Experience Manager] distribuzione. Per operazioni di caricamento e download simultanee, è necessario dividere questo numero per due. Lo storage esterno collegato utilizza una connessione separata.
 
-Il [!DNL Experience Manager] L&#39;implementazione condivide la connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, è equivalente alla condivisione di un singolo canale con servizi diversi.
+Il [!DNL Experience Manager] La distribuzione condivide la connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, è equivalente alla condivisione di un singolo canale con servizi diversi.
 
 Esame della rete dal dispositivo client al [!DNL Experience Manager] , il punto di interruzione più piccolo sembra essere la limitazione del firewall aziendale a 10 Mbit. È possibile utilizzare questi valori nel calcolatore del dimensionamento nel [Guida al dimensionamento di Assets](assets-sizing-guide.md) per determinare l’esperienza utente.
 

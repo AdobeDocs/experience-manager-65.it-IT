@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2395'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Rivedi i requisiti tecnici per AEM 6.5 e assicurati che l’hardware e il softwa
 
 #### Considerazioni sulla ristrutturazione dei contenuti {#content-restructuring-considerations}
 
-L’AEM ha introdotto modifiche alla struttura dell’archivio che contribuiranno a rendere gli aggiornamenti più fluidi. Le modifiche comportano lo spostamento di contenuto dalla cartella /etc alle cartelle, tra cui /libs, /apps e /content, a seconda che il contenuto sia di proprietà di un Adobe o di un cliente, limitando così le possibilità di sovrascrittura del contenuto durante le versioni. La ristrutturazione dell’archivio è stata eseguita in modo tale da non richiedere modifiche al codice al momento dell’aggiornamento 6.5, anche se si consiglia di rivedere i dettagli all’indirizzo [Ristrutturazione dell’archivio dell’AEM](/help/sites-deploying/repository-restructuring.md) durante la pianificazione di un aggiornamento.
+L’AEM ha introdotto modifiche alla struttura dell’archivio che contribuiranno a rendere gli aggiornamenti più fluidi. Le modifiche comportano lo spostamento di contenuto dalla cartella /etc alle cartelle, tra cui /libs, /apps e /content, a seconda che il contenuto sia di proprietà di un Adobe o di un cliente, limitando così le possibilità di sovrascrittura del contenuto durante le versioni. La ristrutturazione dell’archivio è stata eseguita in modo tale da non richiedere modifiche al codice al momento dell’aggiornamento 6.5, anche se si consiglia di rivedere i dettagli in [Ristrutturazione dell’archivio dell’AEM](/help/sites-deploying/repository-restructuring.md) durante la pianificazione di un aggiornamento.
 
 ### Valutazione della complessità dell&#39;aggiornamento {#assessing-upgrade-complexity}
 

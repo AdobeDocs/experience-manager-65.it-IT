@@ -1,17 +1,13 @@
 ---
 title: API di bridge per moduli HTML5
-seo-title: Form Bridge APIs for HTML5 forms
 description: Le applicazioni esterne utilizzano l’API FormBridge per connettersi al modulo mobile XFA. L'API invia un evento FormBridgeInitialized nella finestra padre.
-seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
-uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
-discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 È possibile utilizzare le API di Forms Bridge per aprire un canale di comunicazione tra moduli HTML5 basati su XFA e le applicazioni. Le API di Forms Bridge forniscono una **connetti** API per creare la connessione.
 
-Il **connetti** L’API accetta un gestore come argomento. Dopo aver creato una connessione corretta tra il modulo HTML5 basato su XFA e il bridge di moduli, viene richiamato l’handle.
+Il **connetti** L’API accetta un gestore come argomento. Dopo aver creato una connessione tra il modulo HTML5 basato su XFA e il bridge di moduli, viene richiamato l&#39;handle.
 
 Per creare la connessione, puoi utilizzare il seguente codice di esempio.
 

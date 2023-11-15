@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2285'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ orderby=path
 
 Scopo della `p.guessTotal` Il parametro restituisce il numero appropriato di risultati che possono essere visualizzati combinando i valori p.offset e p.limit vitali minimi. L&#39;utilizzo di questo parametro offre il vantaggio di migliorare le prestazioni con set di risultati di grandi dimensioni. In questo modo si evita di calcolare il totale completo (ad esempio, chiamando result.getSize()) e di leggere l’intero set di risultati, ottimizzato fino al motore e all’indice Oak. Questa può essere una differenza significativa quando ci sono 100 migliaia di risultati, sia nel tempo di esecuzione che nell&#39;utilizzo della memoria.
 
-Lo svantaggio del parametro è che gli utenti non vedono il totale esatto. Ma puoi impostare un numero minimo come p.guessTotal=1000 in modo che possa sempre leggere fino a 1000, così da ottenere i totali esatti per set di risultati più piccoli, ma se è più di quello, puoi solo mostrare &quot;e altro&quot;.
+Lo svantaggio del parametro è che gli utenti non vedono il totale esatto. Ma puoi impostare un numero minimo come p.guessTotal=1000 in modo che legga sempre fino a 1000, così da ottenere i totali esatti per set di risultati più piccoli, ma se è più di quello, puoi solo mostrare &quot;e altro&quot;.
 
 Aggiungi `p.guessTotal=true` alla query seguente per vedere come funziona:
 

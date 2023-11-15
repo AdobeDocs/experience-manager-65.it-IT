@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2853'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Il modo standard per includere una libreria lato client (ovvero un file JS o CSS
 
 Anche se questo approccio funziona nell’AEM, può causare problemi quando le pagine e i relativi componenti diventano complessi. In questi casi esiste il pericolo che più copie della stessa libreria JS possano essere incluse nell’output HTML finale. Per evitare questo e consentire l’organizzazione logica delle librerie lato client utilizzate dall’AEM **cartelle di librerie lato client**.
 
-Una cartella di libreria lato client è un nodo di archivio di tipo `cq:ClientLibraryFolder`. È una definizione in [Notazione CND](https://jackrabbit.apache.org/node-type-notation.html) è
+Una cartella di libreria lato client è un nodo di archivio di tipo `cq:ClientLibraryFolder`. La sua definizione in [Notazione CND](https://jackrabbit.apache.org/node-type-notation.html) è
 
 ```shell
 [cq:ClientLibraryFolder] > sling:Folder

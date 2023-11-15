@@ -8,7 +8,7 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '6911'
 ht-degree: 0%
@@ -271,7 +271,7 @@ Per modificare l’ordine delle risorse all’interno dell’elenco, tocca e tie
    * **Selezionato:** Quando questa opzione è selezionata, il contenuto viene preselezionato nell’interfaccia utente Crea corrispondenza.
    * **Salta stile:** Quando questa opzione è selezionata, il contenuto ignora i punti elenco e la numerazione nell’interfaccia utente Crea corrispondenza. Questa opzione non è disponibile per i moduli Immagine. Inoltre, tra Skip Style (Ignora stile), Compound (Composto) e Ignore List Style (Ignora stile elenco), a un modulo è possibile applicare solo una delle opzioni. È possibile utilizzare una di queste opzioni per un modulo selezionando Aggiungi punti elenco per un modulo.)
    * **Rientro:** È possibile modificare il livello di rientro di ogni modulo/contenuto selezionato come parte dell&#39;elenco. Il rientro è specificato in termini di livelli (a partire da zero), in modo che ogni livello di rientro corrisponda a una spaziatura di 36 punti.
-   * **Composto:** Se questa opzione è selezionata, la numerazione composta viene applicata come combinazione dello stile dell&#39;elenco esterno (padre) e del proprio stile. La numerazione composta di questo elenco nidificato si basa sull&#39;ordine in cui l&#39;elenco nidificato viene visualizzato nell&#39;elenco esterno.
+   * **Composto:** Se questa opzione è selezionata, la numerazione composta viene applicata come combinazione dello stile dell&#39;elenco esterno (padre) e del relativo stile. La numerazione composta di questo elenco nidificato si basa sull&#39;ordine in cui l&#39;elenco nidificato viene visualizzato nell&#39;elenco esterno.
    * **Ignora stile elenco:** Se l&#39;opzione Numerazione composta è deselezionata, viene attivata l&#39;opzione Ignora stile elenco. Questa selezione ignora lo stile dell&#39;elenco nidificato e la numerazione continua dall&#39;elenco esterno. Pertanto, i moduli dell’elenco nidificato vengono trattati come parte dell’elenco esterno stesso, indipendentemente dagli stili specificati nell’elenco nidificato. Se l&#39;opzione Ignora stile elenco è deselezionata per un elenco nidificato, i moduli che fanno parte di tale elenco nidificato hanno il proprio stile di numerazione.
    * **Mantieni con successivo:** Imposta l’interruzione di pagina per le risorse contenute in un elenco. Se si imposta la proprietà Mantieni con successivo di una risorsa di un elenco su **On**, la risorsa e quella successiva rimangano sulla stessa pagina. Ciò significa che il contenuto della risorsa selezionata e della risorsa successiva non si suddivide tra le pagine.
 

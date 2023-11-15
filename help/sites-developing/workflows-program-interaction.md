@@ -1,18 +1,14 @@
 ---
 title: Interazione con i flussi di lavoro a livello di programmazione
-seo-title: Interacting with Workflows Programmatically
 description: Scopri come interagire con i flussi di lavoro a livello di programmazione in Adobe Experience Manager.
-seo-description: null
-uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2007'
 ht-degree: 0%
 
 ---
@@ -359,7 +355,7 @@ I seguenti metodi di richiesta HTTP si applicano a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Completa l’elemento di lavoro il cui URI viene inviato come parametro <code>item</code> e avanza l’istanza del flusso di lavoro corrispondente ai nodi successivi, definiti dal parametro <code>route</code> o <code>backroute</code> se si sta facendo un passo indietro.<br /> Se il parametro <code>delegatee</code> viene inviato, l’elemento di lavoro identificato dal parametro <code>item</code> è delegato al partecipante specificato.</td>
+   <td>Completa l’elemento di lavoro il cui URI viene inviato come parametro <code>item</code> e avanza l’istanza del flusso di lavoro corrispondente ai nodi successivi, definita dal parametro <code>route</code> o <code>backroute</code> se si torna indietro di un passo.<br /> Se il parametro <code>delegatee</code> viene inviato, l’elemento di lavoro identificato dal parametro <code>item</code> è delegato al partecipante specificato.</td>
   </tr>
  </tbody>
 </table>

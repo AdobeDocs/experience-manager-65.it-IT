@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '4593'
 ht-degree: 0%
@@ -311,7 +311,7 @@ Per abilitare l’autenticazione personalizzata nella console di amministrazione
 >
 Nella versione precedente di AEM Forms, hai inviato credenziali a una destinazione chiamando il `RemoteObject.setCredentials` metodo. Il `setCredentials` il metodo non ha effettivamente passato le credenziali al server fino al primo tentativo del componente di connettersi al server. Pertanto, se il componente ha generato un evento di errore, non è possibile stabilire con certezza se l&#39;errore è stato causato da un errore di autenticazione o da un altro motivo. Il `ChannelSet.login` Il metodo si connette al server quando viene chiamato in modo da poter gestire immediatamente un problema di autenticazione. Anche se è possibile continuare a utilizzare `setCredentials` si consiglia di utilizzare il metodo `ChannelSet.login` metodo.
 
-Poiché più destinazioni possono utilizzare gli stessi canali e l&#39;oggetto ChannelSet corrispondente, l&#39;accesso a una destinazione comporta l&#39;accesso dell&#39;utente a qualsiasi altra destinazione che utilizza lo stesso canale o canali. Se due componenti applicano credenziali diverse allo stesso oggetto ChannelSet, vengono utilizzate le ultime credenziali applicate. Se più componenti utilizzano lo stesso oggetto ChannelSet autenticato, chiamare `logout` Il metodo disconnette tutti i componenti dalle destinazioni.
+Poiché più destinazioni possono utilizzare gli stessi canali e l&#39;oggetto ChannelSet corrispondente, l&#39;accesso a una destinazione comporta l&#39;accesso dell&#39;utente a qualsiasi altra destinazione che utilizza lo stesso canale o gli stessi canali. Se due componenti applicano credenziali diverse allo stesso oggetto ChannelSet, vengono utilizzate le ultime credenziali applicate. Se più componenti utilizzano lo stesso oggetto ChannelSet autenticato, chiamare `logout` Il metodo disconnette tutti i componenti dalle destinazioni.
 
 Nell&#39;esempio seguente viene utilizzato `ChannelSet.login` e `ChannelSet.logout` metodi con un controllo RemoteObject. Questa applicazione esegue le azioni seguenti:
 

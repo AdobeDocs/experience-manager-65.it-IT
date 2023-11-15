@@ -2,9 +2,9 @@
 title: Note generali sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 note che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '4675'
+source-wordcount: '4676'
 ht-degree: 5%
 
 ---
@@ -187,7 +187,7 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 
 * Il [Riferimento](/help/sites-authoring/author-environment-tools.md#references) La barra laterale presenta una nuova sezione che elenca i collegamenti interni che puntano alla pagina selezionata. Questa funzione è utile quando si prevede di mettere una pagina offline o eliminarla, per vedere quali pagine devono essere regolate prima di metterle offline.
 * Il [vista a elenco](/help/sites-authoring/basic-handling.md#list-view) dispone di una nuova colonna del flusso di lavoro che mostra lo stato quando la pagina si trova all’interno di un flusso di lavoro.
-* In [proprietà pagina](/help/sites-authoring/editing-page-properties.md)Ora è possibile cercare le risorse esistenti quando si assegna una miniatura alla pagina (scheda Miniatura).
+* In [proprietà pagina](/help/sites-authoring/editing-page-properties.md), è ora possibile cercare le risorse esistenti quando si assegna una miniatura alla pagina (scheda Miniatura).
 
 #### Editor pagina {#page-editor}
 

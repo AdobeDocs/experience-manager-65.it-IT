@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Gli amministratori di moduli AEM possono utilizzare Monitoraggio integrità per 
  <tbody>
   <tr>
    <td><code> adobe.work-manager.queue-refill-interval</code></td>
-   <td><p>Specifica l'intervallo di tempo, in millisecondi, utilizzato da Work Manager per il controllo di nuovi elementi nella coda.</p><p>Il valore di questa opzione è un numero intero. Il valore predefinito è <code>1000</code> millisecondi (1 secondo). </p><p>Se il volume delle chiamate asincrone è basso, puoi aumentare questo valore. Ad esempio, è possibile aumentarlo a un valore compreso tra 2000 e 5000 (da 2 a 5 secondi). </p><p>Se il volume delle chiamate asincrone è elevato, il valore predefinito dovrebbe essere sufficiente, ma se necessario è possibile utilizzare un valore inferiore. La riduzione eccessiva di questo valore (ad esempio, al di sotto di 50, che si traduce in una frequenza di polling di 20 volte al secondo) causa un notevole sovraccarico sul sistema.</p></td>
+   <td><p>Specifica l'intervallo di tempo, in millisecondi, utilizzato da Work Manager per il controllo di nuovi elementi nella coda.</p><p>Il valore di questa opzione è un numero intero. Il valore predefinito è <code>1000</code> millisecondi (1 secondo). </p><p>Se il volume delle chiamate asincrone è basso, puoi aumentare questo valore. Ad esempio, è possibile aumentarlo tra 2000 e 5000 (2-5 secondi). </p><p>Se il volume delle chiamate asincrone è elevato, il valore predefinito dovrebbe essere sufficiente, ma se necessario è possibile utilizzare un valore inferiore. La riduzione eccessiva di questo valore (ad esempio, al di sotto di 50, che si traduce in una frequenza di polling di 20 volte al secondo) causa un notevole sovraccarico sul sistema.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>

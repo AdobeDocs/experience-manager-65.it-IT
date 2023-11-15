@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Per utilizzare un sottomodulo in un modello XDP, effettua le seguenti operazioni
    1. Specificare un nome per la sottomaschera nel **Nome** campo.
    1. Seleziona **Nessuna associazione dati** dal **Associazione dati** elenco a discesa.
 
-   Ripeti i passaggi da 2 a 5 per aggiungere altri sottomoduli al modello XDP. Aggiungi [testo, frammenti di documenti, immagini e grafici](create-interactive-communication.md#step2) solo nelle aree di destinazione durante la creazione della comunicazione interattiva.
+   Ripeti i passaggi 2-5 per aggiungere altri sottomoduli al modello XDP. Aggiungi [testo, frammenti di documenti, immagini e grafici](create-interactive-communication.md#step2) solo nelle aree di destinazione durante la creazione della comunicazione interattiva.
 
 1. Seleziona **File** > **Salva con nome** per salvare il file nel file system locale:
 

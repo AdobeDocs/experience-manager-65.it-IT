@@ -1,12 +1,10 @@
 ---
 title: Integrazione dei servizi con la console JMX
-seo-title: Integrating Services with the JMX Console
 description: Esporre gli attributi e le operazioni del servizio per consentire l'esecuzione delle attività di amministrazione mediante la creazione e la distribuzione di MBean per la gestione dei servizi tramite la console JMX
-seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 topic-tags: extending-aem
 content-type: reference
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '1659'
 ht-degree: 0%
@@ -283,6 +281,7 @@ Il servizio WorkflowMBeanManager include il metodo di attivazione del componente
 >[!NOTE]
 >
 >L&#39;implementazione di WorkflowMBeanManager crea servizi MBean solo per le configurazioni di modelli esistenti quando il componente viene attivato. Un’implementazione più solida ascolta gli eventi del repository relativi alle nuove configurazioni del modello e alle modifiche o eliminazioni della configurazione del modello esistente. Quando si verifica una modifica, il manager può creare, modificare o rimuovere il servizio WorkflowMBean corrispondente.
+>
 
 #### Interfaccia WorkflowMBeanManager {#workflowmbeanmanager-interface}
 

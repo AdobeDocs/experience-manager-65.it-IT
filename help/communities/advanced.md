@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Il valore predefinito è impostato sul verbo ADD per i componenti QnA e forum.
   Il valore predefinito è 216000 ore (~24 anni).
 
 * **Tasso di crescita del punteggio**
-Questo specifica il punteggio tra 0 e l’intervallo di punteggio, oltre il quale la crescita rallenta per limitare il numero di esperti.
+Questo specifica il punteggio tra l’intervallo con punteggio 0, oltre il quale la crescita rallenta per limitare il numero di esperti.
 
   Il valore predefinito è 50.
 

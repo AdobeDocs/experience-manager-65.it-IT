@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '5383'
-ht-degree: 87%
+source-wordcount: '5374'
+ht-degree: 85%
 
 ---
 
@@ -38,9 +38,9 @@ Le attività ed esperienze visualizzate in modalità Target riflettono i [Consol
 
 >[!NOTE]
 >
->Quando crei una campagna in Adobe Target, questo assegna una proprietà denominata `thirdPartyId` a ogni campagna. Quando elimini la campagna in Adobe Target, thirdPartyId non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, rinomina ogni campagna con un nome univoco; i nomi delle campagne non possono quindi essere riutilizzati in diversi tipi di campagne.
+>Quando crei una campagna in Adobe Target, questo assegna una proprietà denominata `thirdPartyId` a ogni campagna. Quando elimini la campagna in Adobe Target, thirdPartyId non viene eliminato. Non è possibile riutilizzare `thirdPartyId` per campagne di tipo diverso (AB, XT) e non può essere rimosso manualmente. Per evitare questo problema, assegna a ciascuna campagna un nome univoco; i nomi delle campagne non possono essere riutilizzati in diversi tipi di campagna.
 >
->Se utilizzi lo stesso nome nello stesso tipo di campagna, sovrascriverai la campagna esistente.
+>Se utilizzi lo stesso nome nello stesso tipo di campagna, sovrascrivi la campagna esistente.
 >
 >Se durante la sincronizzazione si verifica l’errore “Richiesta non riuscita. `thirdPartyId` esiste già”, modifica il nome della campagna ed esegui di nuovo la sincronizzazione.
 
@@ -79,7 +79,7 @@ Per aggiungere un’attività:
 
    >[!NOTE]
    >
-   >Si consiglia di [creare marchi tramite la console attività](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe consiglia di: [creare marchi tramite la console attività](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Se crei un marchio in un altro modo, assicurati che il nodo `/campaigns/<brand>/master` esista, per evitare errori quando tenterai di creare un’attività.
@@ -140,7 +140,7 @@ Dopo aver [avviato il processo di targeting](/help/sites-authoring/content-targe
 
 >[!CAUTION]
 >
->Presta attenzione quando disattivi il targeting per un componente che è già assegnato nell’istanza di authoring. La rispettiva attività verrà automaticamente eliminata anche dall’istanza di pubblicazione.
+>Presta attenzione quando disattivi il targeting per un componente che è già assegnato nell’istanza di authoring. La rispettiva attività viene automaticamente eliminata anche dall’istanza di pubblicazione.
 
 >[!NOTE]
 >
@@ -251,7 +251,7 @@ Esegui la seguente procedura dopo [aver avviato il processo di targeting](/help/
 
    ![Destinazione](do-not-localize/chlimage_1.png)
 
-   Il contenuto del componente è l’offerta dell’esperienza predefinita. Quando viene eseguito il targeting di un componente, il suo nodo predefinito sarà replicato per ogni esperienza. Questo è necessario per modificare il nodo del contenuto corretto durante la creazione specifica dell’esperienza. Per tali esperienze non predefinite, [aggiungi un’offerta personalizzata](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) oppure [aggiungi un’offerta dalla libreria](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   Il contenuto del componente è l’offerta dell’esperienza predefinita. Quando viene eseguito il targeting di un componente, il suo nodo predefinito viene replicato per ogni esperienza. Questo è necessario per modificare il nodo del contenuto corretto durante la creazione specifica dell’esperienza. Per tali esperienze non predefinite, [aggiungi un’offerta personalizzata](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) oppure [aggiungi un’offerta dalla libreria](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 #### Creazione di un’offerta aggiungendo un componente Target {#creating-an-offer-by-adding-a-target-component}
 
@@ -402,11 +402,11 @@ Il pubblico viene visualizzato sul lato sinistro del diagramma di mappatura, men
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-Definisci un pubblico utilizzando un segmento. La configurazione cloud per i valori di pagina determina i segmenti disponibili. Quando la pagina non è associata a una configurazione cloud di Adobe Target, sono disponibili segmenti AEM per la definizione dei tipi di pubblico. Quando la pagina è associata a una configurazione cloud di Adobe Target, utilizzi i segmenti target.
+Definisci un pubblico utilizzando un segmento. La configurazione cloud della pagina determina i segmenti disponibili. Quando la pagina non è associata a una configurazione cloud di Adobe Target, sono disponibili segmenti AEM per la definizione dei tipi di pubblico. Quando la pagina è associata a una configurazione cloud di Adobe Target, utilizzi i segmenti target.
 
 Per informazioni sui motori di targeting, consulta [Motore di targeting](/help/sites-authoring/personalization.md#targeting-engine).
 
-Un pubblico non deve essere utilizzato da più di un’esperienza. Accanto a un’esperienza viene visualizzato un simbolo di avviso quando questa è mappata a un pubblico mappato a un’altra esperienza.
+Non utilizzare un pubblico per più di un’esperienza. Accanto a un’esperienza viene visualizzato un simbolo di avviso quando questa è mappata a un pubblico mappato a un’altra esperienza.
 
 ![Simbolo di avviso quando viene mappato a un pubblico mappato a un’altra esperienza](do-not-localize/chlimage_1-6.png)
 
@@ -508,7 +508,7 @@ Utilizza le impostazioni avanzate per determinare cosa accade **dopo** che un ut
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Incrementa il conteggio, rilascia l'utente e consenti reinserimento</strong></td>
+   <td><strong>Incrementa il conteggio, rilascia l'utente e consenti nuovo accesso</strong></td>
    <td>Seleziona l’esperienza che il visitatore vede se accede nuovamente all’attività:
     <ul>
      <li>Stessa esperienza</li>

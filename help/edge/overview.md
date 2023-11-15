@@ -1,10 +1,10 @@
 ---
 title: Guida introduttiva a Edge Delivery Service
-description: Introduzione ai Edge Delivery Services (EDS).
+description: Guida introduttiva ai servizi di consegna Edge (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '866'
 ht-degree: 93%
 
 ---
@@ -45,7 +45,7 @@ Puoi anche utilizzare Edge Delivery Services in combinazione con Adobe Target, A
 
 ## Accedere a Edge Delivery Services {#getting-access}
 
-È facile iniziare a utilizzare Edge Delivery Services. Per iniziare, segui la [Guida introduttiva: tutorial per sviluppatori](https://www.hlx.live/developer/tutorial).
+È facile iniziare a utilizzare i Edge Delivery Services. Per iniziare, segui la [Guida introduttiva: tutorial per sviluppatori](https://www.hlx.live/developer/tutorial).
 
 ## Ottenere assistenza da Adobe {#adobe-gethelp}
 

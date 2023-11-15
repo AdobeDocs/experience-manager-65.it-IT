@@ -2,9 +2,9 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1691'
 ht-degree: 76%
 
 ---
@@ -108,7 +108,7 @@ Viene visualizzata una finestra di dialogo in cui puoi immettere i dettagli, qui
 
 #### Utilizzo di percorsi e tag per limitare i modelli per frammenti di contenuto disponibili nella cartella {#tags-paths-for-models-in-folder}
 
-Questa sezione è leggermente più avanzata. Non ne hai veramente bisogno se stai solo iniziando e provando le cose, ma è più utile quando hai molti frammenti. Quindi è bene sapere su - anche se non lo si utilizza ancora abbastanza.
+Questa sezione è leggermente più avanzata. Non ne hai veramente bisogno se stai solo iniziando e provando le cose, ma è più utile quando hai molti frammenti. Quindi è bene conoscerla, anche se non la stai ancora usando.
 
 L’architect di contenuti avrà creato tutti i modelli di frammento di contenuto necessari per il progetto corrente e forse anche altri progetti. Per semplificare le cose a te stesso e agli altri autori, puoi limitare l’elenco dei modelli disponibili per una cartella specifica.
 
@@ -199,7 +199,7 @@ I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di con
 
 * **Contenuto associato**
 
-  Questo è abbastanza ovvio in quanto è una scheda nell&#39;editor.
+  Questo è abbastanza ovvio in quanto si tratta di una scheda nell’editor.
 
   I frammenti di contenuto sono disponibili in AEM in diverse versioni. Originariamente erano disponibili per l’uso “tradizionale” durante l’authoring delle pagine....e sono ancora utilizzati in questo contesto. Questo può comportare l’associazione di risorse (ad esempio immagini) che, pur non essendo incorporate nel frammento, devono essere disponibili per l’autore durante l’authoring di una pagina.
 

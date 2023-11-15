@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2226'
-ht-degree: 51%
+source-wordcount: '2227'
+ht-degree: 49%
 
 ---
 
@@ -174,7 +174,7 @@ Struttura contenuto è una scheda che si trova nel pannello laterale, insieme ai
 
 ![Struttura contenuto](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Quando apri il pannello laterale, questo si apre (dal lato sinistro). Se necessario, seleziona la scheda **Struttura contenuto**. Una volta aperta è possibile visualizzare una struttura ad albero della pagina o del modello, che permette di capire come il contenuto è strutturato gerarchicamente. Inoltre, in una pagina complessa, consente di spostarsi più facilmente tra i componenti della pagina.
+Quando apri il pannello laterale, questo si apre (dal lato sinistro). Se necessario, seleziona la scheda **Struttura contenuto**. Quando è aperta, è possibile visualizzare una struttura ad albero della pagina o del modello, in modo da comprendere più facilmente come il contenuto è strutturato gerarchicamente. Inoltre, in una pagina complessa, consente di spostarsi più facilmente tra i componenti della pagina.
 
 ![ateat-11](assets/ateat-11.png)
 

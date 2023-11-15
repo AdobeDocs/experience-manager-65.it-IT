@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3493'
+source-wordcount: '3495'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Di seguito sono riportati i passaggi logici per fare in modo che Importazione pr
 
 1. Creare un TagHandler
 
-   * Un gestore di tag è un POJO che gestisce tag HTML di un tipo specifico. Il &quot;tipo&quot; di tag HTML che TagHandler può gestire è definito tramite la proprietà OSGi di TagHandlerFactory &quot;tagpattern.name&quot;. Questa proprietà OSGi è essenzialmente un regex che deve corrispondere al tag HTML di input che desideri gestire. Tutti i tag nidificati vengono inviati al gestore di tag per la gestione. Ad esempio, se ti registri per un div che contiene un &lt;p> , il tag &lt;p> Il tag verrà anche inviato al tuo TagHandler e spetta a te decidere come gestirlo.
+   * Un gestore di tag è un POJO che gestisce tag HTML di un tipo specifico. Il &quot;tipo&quot; di tag HTML che TagHandler può gestire è definito tramite la proprietà OSGi di TagHandlerFactory &quot;tagpattern.name&quot;. Questa proprietà OSGi è essenzialmente un regex che deve corrispondere al tag HTML di input che desideri gestire. Tutti i tag nidificati vengono inviati al gestore di tag per la gestione. Ad esempio, se ti registri per un div che contiene un &lt;p> , il tag &lt;p> Il tag verrà anche inviato al tuo TagHandler e sta a te come prenderti cura di esso.
    * L’interfaccia del gestore di tag è simile a quella del gestore di contenuti SAX. Riceve eventi SAX per ogni tag html. In qualità di provider di gestori di tag, devi implementare alcuni metodi del ciclo di vita che vengono automaticamente chiamati dal framework di importazione progettazione.
 
 1. Creare il TagHandlerFactory corrispondente.

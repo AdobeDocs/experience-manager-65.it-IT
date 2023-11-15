@@ -2,10 +2,10 @@
 title: Percorso della tua prima esperienza con AEM Headless
 description: In questa parte del Percorso per sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1988'
-ht-degree: 93%
+source-wordcount: '1990'
+ht-degree: 92%
 
 ---
 
@@ -104,7 +104,7 @@ Un progetto headless non solo ha successo grazie alla tecnologia implementata, m
 * Se disponi di restrizioni di accesso, prova ad allineare il modello di contenuto ai requisiti di accesso.
 * Quando si dispone dei requisiti di accesso, questi devono guidare la gerarchia dei contenuti. Raggruppare i contenuti che vengono modificati dallo stesso gruppo di persone.
 * Raggruppare contenuti simili in una cartella.
-   * È più probabile che un autore o un’autrice di contenuti copi e incolli contenuti esistenti per creare nuovi contenuti. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
+   * È più probabile che un autore di contenuti copia e incolla il contenuto esistente per crearne uno nuovo. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
    * AEM consente di impostare i modelli per cartella in modo che il pulsante **Crea nuovo** mostrerà solo i modelli supportati in tale posizione.
 * La creazione di nuovi frammenti di contenuto nell’editor frammenti di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Quindi il professionista o la professionista non deve scegliere una posizione, ma deve solo fornire un nome e può iniziare a modificare il nuovo riferimento.
 

@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2607'
 ht-degree: 1%
@@ -87,7 +87,7 @@ Ora che il codice client è stato associato all’app mobile, quando il servizio
 
 ### Cloud Service Adobe Mobile Services {#adobe-mobile-service-cloud-service}
 
-Ora che AMS è stato configurato, è il momento di associare l’app mobile all’Adobe Dashboard mobile. Dal dashboard di AEM Mobile, individua il Cloud Service Gestisci e fai clic sul pulsante +.
+Ora che AMS è configurato, è necessario associare l’applicazione mobile all’Adobe Dashboard di Mobile. Dal dashboard di AEM Mobile, individua il Cloud Service Gestisci e fai clic sul pulsante +.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 

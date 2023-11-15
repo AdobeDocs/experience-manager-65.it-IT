@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Affinché possano essere riconosciute dalla console AEM Mobile, le pagine dell�
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-Per convenzione AEM, la prima pagina dell’app deve essere reindirizzata a uno dei suoi figli, che funge da lingua predefinita dell’app (sia nel caso di Geometrixx che in quello di Starter Kit). La pagina internazionale di primo livello in genere eredita dal componente di base &quot;splash-page&quot; (/libs/mobileapps/components/splash-page) che si occupa dell’inizializzazione necessaria per supportare l’installazione degli aggiornamenti over-the-air di Content Sync (il codice contentInit è disponibile all’indirizzo /etc/clientlibs/mobile/content-sync/js/contentInit.js).
+Per convenzione AEM, la prima pagina dell’app deve essere reindirizzata a uno dei suoi elementi secondari che fungono da lingua predefinita dell’app (&quot;en&quot; in entrambi i casi Geometrixx e Starter Kit). La pagina internazionale di primo livello in genere eredita dal componente di base &quot;splash-page&quot; (/libs/mobileapps/components/splash-page) che si occupa dell’inizializzazione necessaria per supportare l’installazione degli aggiornamenti over-the-air di Content Sync (il codice contentInit è disponibile all’indirizzo /etc/clientlibs/mobile/content-sync/js/contentInit.js).
 
 ## Modelli e componenti {#templates-and-components}
 

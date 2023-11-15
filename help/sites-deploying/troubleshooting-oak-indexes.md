@@ -1,17 +1,14 @@
 ---
 title: Risoluzione dei problemi degli indici Oak
-seo-title: Troubleshooting Oak Indexes
 description: Scopri come identificare se l’indicizzazione è lenta, trovare la causa e risolvere il problema.
-uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1474'
 ht-degree: 2%
 
 ---
@@ -22,7 +19,7 @@ ht-degree: 2%
 
 Il processo di reindicizzazione interno dell’AEM raccoglie i dati dell’archivio e li memorizza negli indici Oak per supportare l’esecuzione di query sui contenuti. In circostanze eccezionali, il processo può diventare lento o addirittura bloccato. Questa pagina funge da guida alla risoluzione dei problemi per identificare se l’indicizzazione è lenta, individuare la causa e risolvere il problema.
 
-È importante distinguere tra la reindicizzazione che richiede una quantità di tempo inappropriatamente lunga e la reindicizzazione che richiede una quantità di tempo molto lunga perché si tratta di indicizzare grandi quantità di contenuto. Ad esempio, il tempo necessario per indicizzare il contenuto corrisponde alla quantità di contenuto, pertanto la reindicizzazione dei grandi archivi di produzione richiede più tempo rispetto alla reindicizzazione dei piccoli archivi di sviluppo.
+È importante distinguere tra la reindicizzazione che richiede una quantità di tempo inappropriatamente lunga e la reindicizzazione che richiede una quantità di tempo molto lunga perché sta indicizzando grandi quantità di contenuto. Ad esempio, il tempo necessario per indicizzare il contenuto corrisponde alla quantità di contenuto, pertanto la reindicizzazione dei grandi archivi di produzione richiede più tempo rispetto alla reindicizzazione dei piccoli archivi di sviluppo.
 
 Consulta la [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md) per ulteriori informazioni su quando e come reindicizzare il contenuto.
 
