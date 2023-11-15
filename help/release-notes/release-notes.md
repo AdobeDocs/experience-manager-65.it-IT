@@ -2,10 +2,10 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
+source-git-commit: 7c5d45788583cce3403b8beca0c122a9ddf1ca49
 workflow-type: tm+mt
-source-wordcount: '3433'
-ht-degree: 1%
+source-wordcount: '3613'
+ht-degree: 2%
 
 ---
 
@@ -41,11 +41,19 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 **Funzioni principali**
 
-* A
+* Risorse, Dynamic Medie - [Supporto di tracce multi-sottotitolo e multi-audio per video in Dynamic Medie](/help/assets/video.md#about-msma)- È ora possibile aggiungere facilmente più sottotitoli e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. Puoi personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
+
+* Risorse: dai risultati della ricerca, ora puoi passare alla posizione della cartella che contiene una risorsa per eseguire varie attività di gestione delle risorse. (ASSETS-23182)
 
 **Miglioramenti principali**
 
-* S
+* Il selettore Polaris di Sites nei frammenti di contenuto ha migliorato le prestazioni. (SITES-14092)
+
+* Abilitazione dell’utente del componente Editor pagina/immagine di Sites per fare riferimento alle risorse dal Cloud Service di risorse remoto. (SITES-13448, SITES-13433)
+
+* Per trovare rapidamente un progetto nella vista a elenco, in cui è possibile che siano presenti molti progetti, Adobe ora supporta l’ordinamento lato server. I nodi del progetto sono ordinati sul backend in base alla colonna selezionata dall’utente prima di eseguirne il rendering nell’interfaccia utente. (NPR-41027)
+
+* L’AEM 6.5.18.0 supporta MongoDB da 5.0 a 6.0.
 
 **Funzione obsoleta**
 
@@ -57,7 +65,6 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 ### [!DNL Sites]{#sites-6519}
 
-* U
 
 #### Accessibilità{#sites-accessibility-6519}
 
@@ -285,7 +292,7 @@ Per istruzioni sull&#39;installazione del service pack in Experience Manager For
 
 >[!NOTE]
 >
->La funzione di AEM Forms, ad esempio Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), sono destinati esclusivamente a scopi di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms.
+>La funzione di AEM Forms, ad esempio Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it), sono destinati esclusivamente a scopi di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms.
 
 
 
