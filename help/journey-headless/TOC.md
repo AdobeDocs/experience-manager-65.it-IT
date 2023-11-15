@@ -2,13 +2,13 @@
 sub-product: AEM Headless Journeys
 user-guide-title: Percorsi AEM Headless
 breadcrumb-title: Percorsi AEM Headless
-user-guide-description: Inizia qui per un percorso guidato attraverso le potenti e flessibili funzionalità headless dell’AEM, le loro caratteristiche e come utilizzarle nel tuo progetto.
+user-guide-description: Inizia qui un percorso guidato per scoprire le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come utilizzarle nei tuoi progetti.
 feature: Developer Tools
 role: Developer, Architect
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
