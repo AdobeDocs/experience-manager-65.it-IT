@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 73%
+source-wordcount: '221'
+ht-degree: 68%
 
 ---
 
@@ -27,11 +27,11 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 | Dove si trova | Scelta rapida | Descrizione |
 |---|---|---|
-| Qualsiasi modalità delle finestre di modifica | `Ctrl-Shift-m` | Consente di passare da **Anteprima** alla [modalità](/help/sites-authoring/author-environment-tools.md#page-modes)</a> attualmente selezionata, ad esempio **Modifica**, **Layout** e così via* |
+| Qualsiasi modalità delle finestre di modifica | `Ctrl-Shift-m` | Passa da **Anteprima** e la selezionata [modalità](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (ad esempio, **Modifica**, **Layout** e così via) |
 | Modalità **Modifica** | `Ctrl-z` | [Annulla l’ultima modifica](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Ripristina l’ultima modifica](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleziona più paragrafi |
-|  | `Ctrl-c` | Copia paragrafi selezionati |
+|  | `Ctrl-c` | Copia i paragrafi selezionati |
 |  | `Ctrl-x` | Taglia i paragrafi selezionati (i paragrafi tagliati scompaiono dall’interfaccia solo dopo essere stati incollati) |
 |  | `Ctrl-v` | Incolla i paragrafi precedentemente tagliati o copiati |
 |  | `Ctrl-Backspace` | Elimina paragrafi selezionati |

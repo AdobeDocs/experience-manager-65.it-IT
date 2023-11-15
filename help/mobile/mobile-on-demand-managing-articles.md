@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -80,11 +80,11 @@ Flusso di lavoro per modificare un articolo:
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
 1. Seleziona un articolo originato da AEM dalla sezione **Gestisci articoli** affiancare.
 1. Fai clic sull’articolo evidenziato dalla vista a elenco per aprirlo nell’editor di contenuti.
-1. Utilizza l’editor dei contenuti per trascinare il contenuto degli articoli (manoscritti, immagini, testo, ecc.).
+1. Utilizza l’editor dei contenuti per trascinare il contenuto degli articoli (manoscritti, immagini, testo e così via).
 
 ### Visualizzazione e modifica dei metadati all’interno di un articolo {#viewing-and-editing-the-metadata-within-an-article}
 
-Contenuti come articoli, banner, ecc. hanno numerose proprietà come titoli, descrizioni, immagini. Questa azione viene utilizzata per visualizzare e modificare tali proprietà. Facoltativamente, queste modifiche possono essere caricate su Mobile On-Demand al momento del salvataggio.
+Contenuti come articoli, banner e così via hanno numerose proprietà come titoli, descrizioni, immagini. Questa azione viene utilizzata per visualizzare e modificare tali proprietà. Facoltativamente, queste modifiche possono essere caricate su Mobile On-Demand al momento del salvataggio.
 
 Il flusso di lavoro generale per visualizzare/modificare un articolo:
 

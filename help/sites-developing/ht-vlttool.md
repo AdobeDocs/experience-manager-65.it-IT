@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2709'
 ht-degree: 1%
 
 ---
@@ -944,4 +944,4 @@ La cartella locale è ora sincronizzata con l’archivio. La sincronizzazione è
 
 >[!NOTE]
 >
->La funzione di sincronizzazione VLT supporta solo file e cartelle semplici, ma rileva i file serializzati con archivio speciale (con estensione content.xml, dialog.xml e così via) e li ignora automaticamente. Pertanto, è possibile utilizzare la sincronizzazione di Vault in un checkout predefinito di Vault.
+>La funzionalità di sincronizzazione VLT supporta solo file e cartelle semplici, ma rileva i file serializzati con archivio speciale (con estensione content.xml, dialog.xml e così via) e li ignora automaticamente. Pertanto, è possibile utilizzare la sincronizzazione di Vault in un checkout predefinito di Vault.

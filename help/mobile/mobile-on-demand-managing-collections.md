@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '798'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Flusso di lavoro per modificare una raccolta:
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
 1. Seleziona un articolo originato da AEM dalla sezione **Gestisci raccolte** affiancare.
 1. Fai clic sulla raccolta evidenziata dalla vista a elenco per aprirla nell’editor di contenuti.
-1. Utilizza l’editor di contenuti per trascinare il contenuto della raccolta (manoscritti, immagini, testo, ecc.).
+1. Utilizza l’editor di contenuti per trascinare il contenuto della raccolta (manoscritti, immagini, testo e così via).
 
 ### Visualizzazione e modifica dei metadati all’interno di una raccolta {#viewing-and-editing-the-metadata-within-a-collection}
 
