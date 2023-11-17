@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL dell’AEM per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
 workflow-type: tm+mt
-source-wordcount: '4774'
-ht-degree: 56%
+source-wordcount: '4848'
+ht-degree: 55%
 
 ---
 
@@ -712,6 +712,27 @@ Per abilitare la memorizzazione nella cache delle query persistenti, definisci l
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
    ```
+
+>[!NOTE]
+>
+>Quando il caching di Dispatcher è abilitato per le query persistenti utilizzando `Define CACHE_GRAPHQL_PERSISTED_QUERIES` un `ETag` L’intestazione viene aggiunta alla risposta dal Dispatcher.
+>
+>Per impostazione predefinita, il `ETag` L’intestazione è configurata con la seguente direttiva:
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>Tuttavia, questa impostazione può causare problemi se utilizzata nelle risposte alle query persistenti, perché non tiene conto di piccole modifiche nella risposta.
+>
+>Per ottenere singoli `ETag` calcoli su *ogni* risposta univoca `FileETag Digest` deve essere utilizzata nella configurazione di dispatcher:
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
 
 >[!NOTE]
 >
