@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 31131af52ecb4f9c4caaf8e75e0a9213874b3a1e
+source-git-commit: c78d5f1d94ffb92a1e034b0ccb6131ac811d708f
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3530'
 ht-degree: 2%
 
 ---
@@ -462,17 +462,13 @@ Per risolvere il problema, individuare `<AEM_Forms_Installation_dir>\jboss\bin\s
 
 * Quando viene pubblicato un modulo adattivo, tutte le sue dipendenze, inclusi i criteri, vengono ripubblicate, anche se non sono state apportate modifiche. (FORMS-10454)
 * Quando un utente seleziona di configurare un campo per la prima volta in un modulo adattivo, l’opzione per salvare una configurazione non viene visualizzata nel Browser proprietà. Per risolvere il problema, fai clic su per configurare un altro campo del modulo adattivo nello stesso editor.
-* Quando un URL di reindirizzamento viene impostato nel contenitore guida di un modulo adattivo, la firma in linea non funziona più. (FORMS-10493)
-* Non è possibile pubblicare tutti i modelli di documento record (DoR). Vengono pubblicati solo i modelli DoR basati sulle impostazioni internazionali inglesi e i relativi modelli DoR basati su Forms associati. (FORMS-10535)
+* Quando un URL di reindirizzamento viene impostato nel contenitore guida di un modulo adattivo, la firma in linea non funziona più. (FORMS-10493) Per risolvere il problema, scaricare e installare [hotfix per 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Non è possibile pubblicare tutti i modelli di documento record (DoR). Vengono pubblicati solo i modelli DoR basati sulle impostazioni internazionali inglesi e i relativi modelli DoR basati su Forms associati. (FORMS-10535) Per risolvere il problema, scaricare e installare [hotfix per 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+
 
 #### Comunicazioni interattive
 
-* Dopo l’aggiornamento a AEM Service Pack 18, non è possibile aprire la comunicazione interattiva con grandi immagini in linea in modalità Modifica. (FORMS-10578) Per risolvere il problema, effettua le seguenti operazioni:
-
-   1. Scarica [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) dal collegamento SD.
-   1. Estrai il file di archivio Hotfix per ottenere un pacchetto Experience Manager (.zip) e i file bundle (.jar).
-   1. Carica e installa il pacchetto (.zip) tramite Gestione pacchetti.
-   1. Apri i bundle di Gestione configurazione `https://server:host/system/console/bundles`, carica e installa il bundle (.jar).
+* Dopo l’aggiornamento a AEM Service Pack 18, non è possibile aprire la comunicazione interattiva con grandi immagini in linea in modalità Modifica. (FORMS-10578) Per risolvere il problema, scaricare e installare [hotfix per 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 

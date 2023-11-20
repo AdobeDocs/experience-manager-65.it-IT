@@ -225,7 +225,7 @@ Quando apri un modulo configurato per l’integrazione con Adobe Campaign, vengo
 * Campo data (Campaign) e Campo data/HTML5 (Campaign)
 * Chiave principale crittografata (Campaign)
 * Visualizzazione errori (Campaign)
-* Chiave riconciliazione nascosta (Campaign)
+* Chiave di riconciliazione nascosta (Campaign)
 * Campo numerico (Campaign)
 * Campo opzione (Campaign)
 * Lista di controllo delle iscrizioni (Campaign)
@@ -360,7 +360,7 @@ L’esempio seguente mostra un componente Visualizzazione errori (Campaign) visu
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
-### Chiave riconciliazione nascosta (Campaign) {#hidden-reconciliation-key-campaign}
+### Chiave di riconciliazione nascosta (Campaign) {#hidden-reconciliation-key-campaign}
 
 Il componente Chiave riconciliazione nascosta (Campaign) consente di aggiungere campi nascosti come parte della chiave di riconciliazione a un modulo.
 
