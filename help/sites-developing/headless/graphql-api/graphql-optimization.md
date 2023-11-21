@@ -2,9 +2,9 @@
 title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per filtrare, impaginare e ordinare i frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1965'
 ht-degree: 58%
 
 ---
@@ -316,7 +316,7 @@ Ci sono molte altre situazioni in cui un’espressione di filtro non può essere
 
 ### Riduci a icona la nidificazione dei frammenti di contenuto {#minimize-content-fragment-nesting}
 
-La nidificazione dei frammenti di contenuto è un ottimo modo per modellare strutture di contenuto personalizzate. Puoi anche avere un frammento con un frammento nidificato, un frammento nidificato, che ha...e così via.
+La nidificazione dei frammenti di contenuto è un ottimo modo per modellare strutture di contenuto personalizzate. Puoi anche avere un frammento con un frammento nidificato con un frammento nidificato, con... e così via.
 
 Tuttavia, la creazione di una struttura con troppi livelli può aumentare i tempi di elaborazione di una query GraphQL, in quanto GraphQL deve attraversare l’intera gerarchia di tutti i frammenti di contenuto nidificati.
 

@@ -1,16 +1,12 @@
 ---
 title: Espressioni modulo adattivo
-seo-title: Adaptive Form Expressions
 description: Utilizza le espressioni per moduli adattivi per aggiungere convalida, calcolo e attivare o disattivare automaticamente la visibilità di una sezione.
-seo-description: Use adaptive forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
-uuid: c274dce5-8b87-472f-bff5-53b246fa6584
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '2802'
 ht-degree: 0%
@@ -197,7 +193,7 @@ I metodi per aggiungere convalide a un campo sono:
 
 ### Obbligatorio {#required}
 
-Per rendere obbligatorio un componente, in **Modifica** del componente, puoi selezionare l’opzione **Titolo e testo > Obbligatorio**. È inoltre possibile aggiungere la **messaggio richiesto** (facoltativo). .
+Per rendere obbligatorio un componente, in **Modifica** del componente, puoi selezionare l’opzione **Titolo e testo > Obbligatorio**. È inoltre possibile aggiungere la **messaggio richiesto** (facoltativo).
 
 ### Modelli di convalida {#validation-patterns}
 

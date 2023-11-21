@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '10791'
 ht-degree: 1%
@@ -1235,7 +1235,7 @@ Dopo aver specificato il tipo di connettore, è possibile recuperare informazion
 
 Recupera le informazioni sul connettore dell’endpoint utilizzando l’API Java:
 
-1. Includi file di progetto. .
+1. Includi file di progetto.
 
    Includi i file JAR client, come adobe-livecycle-client.jar, nel percorso di classe del progetto Java.
 

@@ -4,10 +4,10 @@ description: Scopri come preparare i contenuti per la traduzione in Adobe Experi
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 62%
+source-wordcount: '684'
+ht-degree: 59%
 
 ---
 
@@ -29,7 +29,7 @@ Il Geometrixx di esempio Sito demo include diversi rami di lingua e utilizza la 
              |- zh
 ```
 
-Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/geometrixx/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare una [directory principale della lingua configurata correttamente](/help/sites-administering/tc-prep.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito di origine.
+Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/geometrixx/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare un [directory principale lingua configurata correttamente](/help/sites-administering/tc-prep.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito sorgente.
 
 La copia per lingua per la quale originariamente si è creato il contenuto del sito è la lingua master. Il lingua master è quella di partenza che viene tradotta in altre lingue.
 

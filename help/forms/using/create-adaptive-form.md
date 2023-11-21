@@ -1,17 +1,12 @@
 ---
 title: "Tutorial: creare un modulo adattivo"
-seo-title: Create an adaptive form
 description: Scopri come creare, creare il layout e visualizzare in anteprima un modulo adattivo. Inoltre, scopri come configurare le azioni di invio.
-seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
-page-status-flag: de-activated
-uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
-discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 3%
+source-wordcount: '1384'
+ht-degree: 8%
 
 ---
 
@@ -45,13 +40,13 @@ Avrai un modulo simile al seguente entro la fine dell’articolo:\
 1. Opzione per **[!UICONTROL Aggiungi proprietà]** viene visualizzato. Il **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** I campi sono obbligatori:
 
    * **Titolo:** Specifica `Add new or update shipping address` nel **[!UICONTROL Titolo]** campo. Il campo titolo specifica il nome visualizzato del modulo. Il titolo ti aiuta a identificare il modulo nell’AEM [!DNL Forms] dell&#39;utente.
-   * **Nome:** Specifica `shipping-address-add-update-form` nel **[!UICONTROL Nome]** campo. Il campo Nome specifica il nome del modulo. Nell&#39;archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo del nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo del nome può contenere solo caratteri alfanumerici, trattini e trattini bassi. Tutti gli input non validi vengono sostituiti da un trattino.
+   * **Nome:** Specifica `shipping-address-add-update-form` nel **[!UICONTROL Nome]** campo. Il campo Nome specifica il nome del modulo. Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo nome può contenere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti da un trattino.
 
-1. Tocca **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Tocca **[!UICONTROL Apri]** per aprire il modulo appena creato in una nuova scheda. Il modulo viene aperto per la modifica. Viene inoltre visualizzata la barra laterale per personalizzare il modulo appena creato in base alle esigenze.
+1. Tocca **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Tocca **[!UICONTROL Apri]** per aprire il modulo appena creato in una nuova scheda. Il modulo viene aperto per la modifica. Viene visualizzata inoltre la barra laterale per personalizzare il modulo appena creato in base alle esigenze.
 
    Per informazioni sull’interfaccia di authoring di moduli adattivi e sui componenti disponibili, consulta [Introduzione all’authoring di moduli adattivi](/help/forms/using/creating-adaptive-form.md).
 
-   ![modulo adattivo appena creato](assets/newly-created-adaptive-form.png)
+   ![Un modulo adattivo appena creato.](assets/newly-created-adaptive-form.png)
 
 ## Passaggio 2: aggiungere intestazione e piè di pagina {#step-add-header-and-footer}
 
@@ -89,7 +84,7 @@ I componenti sono elementi costitutivi di un modulo adattivo. AEM [!DNL Forms] f
       <td>Titolo</td> 
       <td>Nome<br /> </td> 
       <td>Indirizzo di spedizione</td> 
-      <td>Stadio</td> 
+      <td>Stato</td> 
      </tr> 
      <tr> 
       <td>Nome elemento</td> 

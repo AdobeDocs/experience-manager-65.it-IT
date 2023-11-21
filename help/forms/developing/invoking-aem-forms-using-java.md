@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '5393'
 ht-degree: 0%
@@ -827,7 +827,7 @@ L’URL fornito a `com.adobe.idp.Document` L&#39;oggetto viene sempre letto sul 
 
 Il file c:/temp/input.pdf deve trovarsi sul computer client (non sul computer server). Il computer client corrisponde al luogo in cui viene letto il URL e in cui è stato creato l&#39;oggetto `com.adobe.idp.Document` .
 
-**Creazione di un documento basato su contenuto accessibile da un URL**
+**Creazione di un documento basato su contenuto accessibile da un&#39;URL**
 
 ```java
  //Create a Document object based on a java.net.URL object
