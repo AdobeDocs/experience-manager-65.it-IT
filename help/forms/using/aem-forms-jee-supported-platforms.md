@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: b886336b5a66f16eb7b076aefc2ae326dedb2f52
+source-git-commit: 7ac81860e127f47aecfd948ddda34241627f457c
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3973'
 ht-degree: 1%
 
 ---
@@ -36,6 +36,22 @@ Questo documento elenca le piattaforme client e server supportate per AEM Forms 
 >
 >- Per un elenco completo delle eccezioni alle piattaforme server supportate, vedere [Eccezioni alle piattaforme server supportate](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms su JEE supporta solo le versioni in inglese, francese, tedesco e giapponese dei sistemi operativi e delle applicazioni supportati.
+
+### Criteri di aggiornamento e supporto
+
+#### Installazione completa
+
+- **Supporto di aggiornamento per programmi di installazione completi**: viene rilasciato un programma di installazione completo con ogni sesta versione del Service Pack per l’AEM. Ad esempio, è stato rilasciato un programma di installazione completo con le versioni 6.5.12.0 e 6.5.18.0 SP. AEM Forms consente aggiornamenti diretti esclusivamente dagli ultimi due programmi di installazione completi. Ad esempio, AEM Forms facilita gli aggiornamenti diretti alla versione 6.5.18.0 solo dagli ultimi due programmi di installazione completi, ovvero 6.5.12.0 e 6.5.6.0. Se è necessario eseguire l&#39;aggiornamento da un aggiornamento precedente, è possibile utilizzare un aggiornamento multi-hop per passare prima a una versione completa del programma di installazione supportata e quindi alla versione più recente.
+
+- **Obsolescenza e rimozione**: il supporto della piattaforma viene aggiornato a ogni versione completa del programma di installazione. Qualsiasi software contrassegnato come obsoleto nella matrice della piattaforma durante una versione con programma di installazione completo ha diritto a essere rimosso dalla matrice della piattaforma supportata in una versione successiva con programma di installazione completo, indicando la fine del supporto del software.
+
+#### Service Pack
+
+- **Copertura Service Pack**: Adobe fornisce supporto tecnico per gli ambienti AEM Forms utilizzando uno dei sei Service Pack più recenti. Se la versione corrente è precedente agli ultimi sei Service Pack, l’Adobe consiglia vivamente di eseguire l’aggiornamento alla versione più recente per garantire prestazioni, sicurezza e supporto continui ottimali.
+
+- **Linee guida per il programma di installazione delle patch**: quando si utilizzano i programmi di installazione delle patch per l’aggiornamento, è fondamentale verificare che la versione completa del programma di installazione sottostante non sia precedente a più di due versioni. Ad esempio, durante l&#39;installazione del service pack 6.5.19.0, verificare che la versione del programma di installazione completo sottostante sia 6.5.18.0 o 6.5.12.0.
+
+- **Supporto per l’aggiornamento delle patch**: puoi continuare a eseguire l’aggiornamento al service pack più recente, fino a quando non effettui l’aggiornamento anche alle piattaforme supportate più recenti. Ad esempio, è possibile effettuare l’aggiornamento dal service pack 6.5.12.0 all’6.5.19.0, purché si passi a una combinazione di piattaforme supportata per 6.5.19.0.
 
 ### Configurazioni consigliate {#recommendedconfigurations}
 
