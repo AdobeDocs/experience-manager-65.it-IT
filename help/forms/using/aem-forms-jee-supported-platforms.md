@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 7ac81860e127f47aecfd948ddda34241627f457c
+source-git-commit: 1630805be43ce9bb52a8fe1bbe50b2b934d4922c
 workflow-type: tm+mt
-source-wordcount: '3973'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -716,105 +716,196 @@ Adobe si riserva il diritto di modificare le piattaforme di riferimento di terze
 
 Per ulteriori informazioni sulle patch di terze parti, visitare il sito di supporto Enterprise Adobe per trovare gli articoli della knowledgebase relativi al prodotto.
 
-## Aggiornamenti della piattaforma {#platform-updates}
+<!--
 
-Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.18.0 di AEM Forms del 31 agosto 2023:
+## Platform updates {#platform-updates}
 
-- Microsoft® Windows Server 2019 (64 bit)
-- Microsoft® Active Directory 2016
+The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release on August 31, 2023:
 
-Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.13.0 di AEM Forms del 2 giugno 2022:
-- Microsoft® SharePoint 2016
+- Microsoft&reg; Windows Server 2019 (64-bit)
+- Microsoft&reg; Active Directory 2016
 
-Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.12.0 di AEM Forms del 3 marzo 2022:
+The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
+- Microsoft&reg; SharePoint 2016
 
-- MongoDB Enterprise 4.0
-- MongoDB Enterprise 4.2
-- IBM® DB2® 11.1
-- Database Oracle 12c versione 2
-- MySQL 5.7.35
-- Driver JDBC Microsoft® SQL Server 6.2.1.0
-- JBoss® Enterprise Application Platform (EAP) 7.1.4
-- IBM® Content Manager Server 8.5 Fix Pack 2
-- Client IBM® Content Manager 8.5
-- Microsoft® SQL Server 2016
+The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-Le seguenti piattaforme sono contrassegnate come obsolete con la versione 6.5.10.0 di AEM Forms del 7 settembre 2021:
-
-- Adobe Acrobat 2017 - [Il supporto di base per Adobe Acrobat 2017 termina il 6 giugno 2022](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
-- Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bit)
-- Microsoft® Windows Server 2016 (64 bit)
-- Microsoft® Office 2016
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
+- Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
+- Microsoft&reg; Windows Server 2016 (64-bit) 
+- Microsoft&reg; Office 2016
 - OpenOffice 4.1.2
+
+-->
+
+
+## Cronologia revisioni {#revision-history}
+
+<!--
+
+- 6.5.18.0 (Aug 31, 2023)
+  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+    - MongoDB Enterprise 4.4
+    - Oracle WebLogic Server 14c
+    - My SQL JDBC connector 8
+    - Active Directory 2022
+    - Microsoft&reg; Windows Server 2022 (64-bit)
+
+  - **Removed support**: [!DNL Adobe Experience Manager Forms] on JEE has removed support for the following platforms:
+    - Windows Server 2016 (64-bit)
+    - MongoDB Enterprise 4.0
+    - Oracle Database 12c Release 2 (12.2.0.1.0)
+    - MySQL 5.7.35
+    - Microsoft&reg; SQL Server 2016
+    - JBoss&reg; EAP 7.1.4
+    - My SQL JDBC connector 5.1.44
+    - Microsoft&reg; SQL Server JDBC driver 6.2.1.0
+    - Microsoft&reg; SQL Server JDBC driver 6.2.2.0
+    - Microsoft&reg; JDBC Driver 8.x for SQL Server
+
+    The release has also removed support for the following platforms for PDF Generator and in-general:
+    - Microsoft&reg; Sharepoint 2016
+    - Microsoft&reg; Office 2016
+    - Microsoft&reg; Office Visio 2016 
+    - Microsoft&reg; Publisher 2016
+    - Microsoft&reg; Project 2016
+    - OpenOffice 4.1.2
+    - Acrobat 2017 (Classic track) Version 17.011.30078 or later
+
+  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
+    - Microsoft&reg; Windows Server 2019 (64-bit)
+    - Microsoft&reg; Active Directory 2016
+    
+- 6.5.13.0 (June 2, 2022)
+
+  The following platforms are deprecated with AEM Forms 6.5.13.0 release on:
+ 
+  - Microsoft&reg; SharePoint 2016
+
+- 6.5.12.0 (March 3, 2022)
+
+    - **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has removed support for the following platforms:
+      - IBM&reg; J9 Virtual Machine (build 2.8, JRE 1.8.0)
+      - Oracle Database 12c Release 1
+      - Oracle Database 18c
+      - Oracle Unified Directory (OUD) 11g Release 2
+      - IBM&reg; Lotus Domino 9.0
+      - IBM&reg; FileNet 5.2
+      - Adobe Flash Player
+
+    - **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
+
+      - MongoDB Enterprise 4.0
+      - MongoDB Enterprise 4.2
+      - IBM&reg; DB2&reg; 11.1
+      - Oracle Database 12c Release 2
+      - MySQL 5.7.35
+      - Microsoft&reg; SQL Server JDBC driver 6.2.1.0
+      - JBoss&reg; Enterprise Application Platform (EAP) 7.1.4
+      - IBM&reg; Content Manager Server 8.5 Fix pack 2
+      - IBM&reg; Content Manager Client 8.5
+      - Microsoft&reg; SQL Server 2016
+
+- 6.5.10.0 (Sep 01, 2022)
+
+  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
+  
+    - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
+  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
+
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
+    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
+    - Microsoft&reg; Windows Server 2016 (64-bit) 
+    - Microsoft&reg; Office 2016
+    - OpenOffice 4.1.2
+
+
+-->
+
+### Versione 6.5.18.0 (31 agosto 2023)
+
+| Supporto aggiunto | Supporto rimosso | Supporto obsoleto |
+| -------------- | --------------- | ------------------- |
+| MongoDB Enterprise 4.4 | Windows Server 2016 (64 bit) | Microsoft® Windows Server 2019 (64 bit) |
+| Oracle server WebLogic 14c | MongoDB Enterprise 4.0 | Microsoft® Active Directory 2016 |
+| Il mio connettore SQL JDBC 8 | Database Oracle 12c versione 2 (12.2.0.1.0) |  |
+| Active Directory 2022 | MySQL 5.7.35 |  |
+| Microsoft® Windows Server 2022 (64 bit) | Microsoft® SQL Server 2016 |  |
+|  | JBoss® EAP 7.1.4 |  |
+|  | Il mio connettore SQL JDBC 5.1.44 |  |
+|  | Driver JDBC Microsoft® SQL Server 6.2.1.0 |  |
+|  | Driver JDBC Microsoft® SQL Server 6.2.2.0 |  |
+|  | Driver Microsoft® JDBC 8.x per SQL Server |  |
+|  |  |  |
+|  | **Supporto rimosso (PDF Generator e In generale):** |  |
+|  | Microsoft® Sharepoint 2016 |  |
+|  | Microsoft® Office 2016 |  |
+|  | Microsoft® Office Visio 2016 |  |
+|  | Microsoft® Publisher 2016 |  |
+|  | Microsoft® Project 2016 |  |
+|  | OpenOffice 4.1.2 |  |
+|  | Acrobat 2017 (Classic track) versione 17.011.30078 o successiva |  |
+
+
+### Versione 6.5.13.0 (2 giugno 2022)
+
+| Supporto aggiunto | Supporto rimosso | Supporto obsoleto |
+| -------------- | --------------- | ------------------- |
+|  |  | Microsoft® SharePoint 2016 |
+
+
+### Versione 6.5.12.0 (3 marzo 2022)
+
+| Supporto aggiunto | Supporto rimosso | Supporto obsoleto |
+| -------------- | --------------- | ------------------- |
+|  | Macchina virtuale IBM® J9 (build 2.8, JRE 1.8.0) | MongoDB Enterprise 4.0 |
+|  | Database Oracle 12c versione 1 | MongoDB Enterprise 4.2 |
+|  | Database Oracle 18c | IBM® DB2® 11.1 |
+|  | Oracle di directory unificata (OUD) 11g versione 2 | Database Oracle 12c versione 2 |
+|  | IBM® Lotus Domino 9.0 | MySQL 5.7.35 |
+|  | IBM® FileNet 5.2 | Driver JDBC Microsoft® SQL Server 6.2.1.0 |
+|  | Flash Player Adobe | JBoss® Enterprise Application Platform (EAP) 7.1.4 |
+|  | | IBM® Content Manager Server 8.5 Fix Pack 2 |
+|  | | Client IBM® Content Manager 8.5 |
+|  | | Microsoft® SQL Server 2016 |
+
+### Versione 6.5.10.0 (01 settembre 20222)
+
+| Supporto aggiunto | Supporto rimosso | Supporto obsoleto |
+| -------------- | --------------- | ------------------- |
+| Oracle Java™ SE 11 (64 bit) SDK per Application Server JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - Il supporto di base per Adobe Acrobat 2017 termina il 6 giugno 2022.](https://helpx.adobe.com/it/support/programs/eol-matrix.html) |
+|  | | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bit) |
+|  | | Microsoft® Windows Server 2016 (64 bit) |
+|  | | Microsoft® Office 2016 |
+|  | | OpenOffice 4.1.2 |
 
 
 >[!NOTE]
 >
-Una piattaforma obsoleta continua a ricevere supporto fino a quando non viene contrassegnata come rimossa o fino al termine del ciclo di vita della piattaforma stessa, a seconda di quale evento si verifichi per primo.
+Una piattaforma obsoleta continua a ricevere supporto fino alla prossima versione dell’installatore completo o, se precedente, fino a quando il supporto di terze parti non raggiunge la fine del ciclo di vita.
 
-## Cronologia revisioni {#revision-history}
+<!-- 
+- Oct 10, 2021
 
-- 6.5.18.0 (31 agosto 2023)
-   - **Aggiornamenti della piattaforma**: [!DNL Adobe Experience Manager Forms] in JEE è stato aggiunto il supporto per le seguenti piattaforme:
-      - MongoDB Enterprise 4.4
-      - Oracle server WebLogic 14c
-      - Il mio connettore SQL JDBC 8
-      - Active Directory 2022
-      - Microsoft® Windows Server 2022 (64 bit)
+  - Changed supported version of iOS for AEM Forms App to iOS 15.1. The previous version was iOS 12.
 
-   - **Aggiornamenti della piattaforma**: [!DNL Adobe Experience Manager Forms] in JEE è stato rimosso il supporto delle seguenti piattaforme:
-      - Windows Server 2016 (64 bit)
-      - MongoDB Enterprise 4.0
-      - Database Oracle 12c versione 2 (12.2.0.1.0)
-      - MySQL 5.7.35
-      - Microsoft® SQL Server 2016
-      - JBoss® EAP 7.1.4
-      - Il mio connettore SQL JDBC 5.1.44
-      - Driver JDBC Microsoft® SQL Server 6.2.1.0
-      - Driver JDBC Microsoft® SQL Server 6.2.2.0
-      - Driver Microsoft® JDBC 8.x per SQL Server
+- Sep 07, 2021
+  - **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+    - [!DNL Adobe Acrobat 2020]
+    - [!DNL Ubuntu 20.04]
+    - [!DNL Open Office 4.1.10]
+    - [!DNL Microsoft&reg;&reg; Office 2016]
+    - [!DNL Microsoft&reg;&reg; Windows Server 2016]
+    - [!DNL RHEL8]
 
-   - **Aggiornamenti della piattaforma per il servizio PDF Generator**: [!DNL Adobe Experience Manager Forms] su JEE è stato rimosso il supporto delle seguenti piattaforme per PDF Generator e in generale:
-      - Microsoft® Sharepoint 2016
-      - Microsoft® Office 2016
-      - Microsoft® Office Visio 2016
-      - Microsoft® Publisher 2016
-      - Microsoft® Project 2016
-      - OpenOffice 4.1.2
-      - Acrobat 2017 (Classic track) versione 17.011.30078 o successiva
+- Dec 03, 2020
+  - Support added with AEM Forms 6.5.7.0 or later for the following platform:
+    - [!DNL Microsoft&reg;&reg; SQL Server 2019]
 
-- 6.5.10.0 (1 settembre 2022)
+- Sep 09, 2020
 
-   - È stato aggiunto il supporto per l’SDK Oracle Java™ SE 11 (64 bit) per il server applicazioni JBoss® EAP 7.4.
+    - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
 
-- 3 marzo 2022
+    -->
 
-   - È stato rimosso il supporto per i seguenti elementi:
-      - Macchina virtuale IBM® J9 (build 2.8, JRE 1.8.0)
-      - Database Oracle 12c versione 1
-      - Database Oracle 18c
-      - Oracle di directory unificata (OUD) 11g versione 2
-      - IBM® Lotus Domino 9.0
-      - IBM® FileNet 5.2
-      - Flash Player Adobe
 
-- 10 ottobre 2021
-
-   - La versione supportata dell’app iOS for AEM Forms è stata modificata in iOS 15.1. La versione precedente era iOS 12.
-
-- 7 settembre 2021
-   - **Aggiornamenti della piattaforma**: [!DNL Adobe Experience Manager Forms] in JEE è stato aggiunto il supporto per le seguenti piattaforme:
-      - [!DNL Adobe Acrobat 2020]
-      - [!DNL Ubuntu 20.04]
-      - [!DNL Open Office 4.1.10]
-      - [!DNL Microsoft®® Office 2016]
-      - [!DNL Microsoft®® Windows Server 2016]
-      - [!DNL RHEL8]
-
-- 3 dicembre 2020
-   - È stato aggiunto il supporto per AEM Forms 6.5.7.0 o versione successiva per la seguente piattaforma:
-      - [!DNL Microsoft®® SQL Server 2019]
-
-- 9 settembre 2020
-
-   - La versione supportata dell’app iOS for AEM Forms è stata modificata in iOS 12. La versione precedente era iOS 11.
