@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6087'
 ht-degree: 0%
@@ -501,7 +501,7 @@ Nel HTML, è possibile utilizzare i segnaposto seguenti, che vengono sostituiti 
 
 | Stringa segnaposto | Descrizione |
 |---|---|
-| {nome} | Nome del pulsante, ad esempio ** autore, indietro** aggiorna e così via. |
+| {nome} | Nome del pulsante, ad esempio **authoring, indietro, aggiornamento** e così via. |
 | {id} | ID CSS del pulsante. |
 | {url} | URL per la destinazione del pulsante. |
 | {text} | Etichetta del pulsante. |
@@ -762,7 +762,7 @@ Per configurare il portlet:
 
    >[!NOTE]
    >
-   >Se il portlet è configurato per connettersi alle istanze di creazione e pubblicazione AEM in esecuzione in un percorso di contesto diverso da** /**, è necessario abilitare la forza **CQUrlInfo** nella configurazione Html Library Manager di queste istanze AEM (ad esempio, tramite Felix Webconsole) o la modifica non funzionerà e la finestra di dialogo delle preferenze non verrà visualizzata.
+   >Se il portlet è configurato per connettersi alle istanze di creazione e pubblicazione AEM in esecuzione in un percorso di contesto diverso da **/**, è necessario attivare la forza **CQUrlInfo** nella configurazione Html Library Manager di queste istanze AEM (ad esempio, tramite Felix Webconsole) o la modifica non funzionerà e la finestra di dialogo delle preferenze non verrà visualizzata.
 
 1. Salva le modifiche di configurazione nel server dell’app.
 

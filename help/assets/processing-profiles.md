@@ -1,17 +1,15 @@
 ---
 title: Profili per l’elaborazione di metadati, immagini e video
 description: Un profilo è un insieme di regole relative alle opzioni da applicare alle risorse caricate in una cartella. Specifica il profilo di metadati e il profilo di codifica video da applicare alle risorse video caricate. Per le risorse di immagini, puoi anche specificare il profilo di imaging da applicare alle risorse di immagini per ritagliarle correttamente.
-uuid: 6ded2a2f-a0d3-4f43-af97-02fbc0902c25
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 0%
@@ -45,7 +43,7 @@ Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appr
 
 >[!NOTE]
 >
->Applicabile a *Dynamic Media - Modalità Scene7* solo nell&#39;Experience Manager 6.4.6.0 o versione successiva.
+>Applicabile a *Dynamic Medie - Modalità Scene7* solo nell&#39;Experience Manager 6.4.6.0 o versione successiva.
 
 È possibile rielaborare le risorse in una cartella che dispone già di un profilo di elaborazione esistente che è stato successivamente modificato.
 
@@ -53,17 +51,17 @@ Si supponga, ad esempio, di aver creato un profilo Immagine e di averlo assegnat
 
 Puoi eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale la prima elaborazione non è riuscita. Di conseguenza, anche se non hai modificato un profilo di elaborazione o applicato un profilo di elaborazione, puoi comunque eseguire il flusso di lavoro di rielaborazione su una cartella di risorse in qualsiasi momento.
 
-Se necessario, puoi modificare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse a un massimo di 1000 risorse. Quando si esegue _Scene7: Rielabora risorse_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa nell’intero set di batch vengono aggiornati in caso di Experience Manager. Se la dimensione del batch è grande, potrebbe verificarsi un ritardo nell’elaborazione. In alternativa, se la dimensione del batch è troppo piccola, potrebbero verificarsi troppi round trip al server Dynamic Media.
+Se necessario, puoi modificare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse a un massimo di 1000 risorse. Quando si esegue _Scene7: Rielabora risorse_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Medie per l’elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa nell’intero set di batch vengono aggiornati in caso di Experience Manager. Se la dimensione del batch è grande, potrebbe verificarsi un ritardo nell’elaborazione. In alternativa, se la dimensione del batch è troppo piccola, potrebbero verificarsi troppi round trip al server Dynamic Medie.
 
 Consulta [Regolare la dimensione batch del flusso di lavoro di rielaborazione](#adjusting-load).
 
 >[!NOTE]
 >
->Se esegui una migrazione in blocco di risorse da Dynamic Media Classic ad Experience Manager, devi abilitare l’agente di replica di migrazione sul server Dynamic Media. Al termine della migrazione, assicurati di disabilitare l’agente.
+>Se esegui una migrazione in blocco di risorse da Dynamic Media Classic ad Experience Manager, devi abilitare l’agente di replica di migrazione sul server Dynamic Medie. Al termine della migrazione, assicurati di disabilitare l’agente.
 >
->L’agente di pubblicazione della migrazione deve essere disabilitato sul server Dynamic Media in modo che il flusso di lavoro Rielabora funzioni come previsto.
+>L’agente di pubblicazione della migrazione deve essere disabilitato sul server Dynamic Medie in modo che il flusso di lavoro Rielabora funzioni come previsto.
 
-<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
+<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
 **Per rielaborare le risorse in una cartella:**
 
@@ -105,7 +103,7 @@ Consulta [Regolare la dimensione batch del flusso di lavoro di rielaborazione](#
 
 1. Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**. Una nuova scheda del browser apre la pagina del modello di flusso di lavoro Scene7: Rielabora risorse.
 1. Nella pagina del flusso di lavoro Scene7: Rielabora risorse, nell’angolo superiore destro, seleziona **[!UICONTROL Modifica]** per sbloccare il flusso di lavoro.
-1. Nel flusso di lavoro, seleziona il componente Caricamento batch Scene7 per aprire la barra degli strumenti, quindi seleziona **[!UICONTROL Configura]** sulla barra degli strumenti.
+1. Nel flusso di lavoro, seleziona il componente Caricamento batch Scene7 per aprire la barra degli strumenti, quindi fai clic su **[!UICONTROL Configura]** sulla barra degli strumenti.
 
    ![Componente Caricamento batch Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -114,7 +112,7 @@ Consulta [Regolare la dimensione batch del flusso di lavoro di rielaborazione](#
    * Seleziona **[!UICONTROL Avanzamento gestore]** se il gestore avanza al passaggio successivo.
    * In **[!UICONTROL Timeout]** , immettere il timeout del processo esterno (secondi).
    * In **[!UICONTROL Periodo]** immettere un intervallo di polling (secondi) per verificare il completamento del processo esterno.
-   * In **[!UICONTROL Campo batch]**, immettere il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione batch del server Dynamic Media.
+   * In **[!UICONTROL Campo batch]**, immettere il numero massimo di risorse (50-1000) da elaborare in un processo di caricamento batch di elaborazione batch del server Dynamic Medie.
    * Seleziona **[!UICONTROL Avanza in caso di timeout]** se desideri avanzare una volta raggiunto il timeout. Annulla la selezione se desideri passare alla casella in entrata una volta raggiunto il timeout.
 
    ![Finestra di dialogo Proprietà](/help/assets/assets-dm/reprocess-assets3.png)

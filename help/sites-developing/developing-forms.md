@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1946'
-ht-degree: 1%
+source-wordcount: '1945'
+ht-degree: 0%
 
 ---
 
@@ -78,9 +78,8 @@ Tieni presente che se i valori in `String[]` sono dei formattati come segue:
 
 * `AL=Alabama`
 * `AK=Alaska`
-* e così via
 
-l’AEM genererà l’elenco come:
+e così via, l&#39;AEM genera l&#39;elenco come:
 
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`

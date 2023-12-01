@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Tracciamento pagina è una parte di codice JavaScript che includi nel codice di siti web di terze parti per consentire ad Adobe Analytics di acquisire i dati di utilizzo [!DNL Adobe Experience Manager Assets] su questi siti web.
 
-Per acquisire eventi specifici delle risorse, come clic e così via, includi anche il codice da incorporare nel codice di siti web di terze parti.
+Per acquisire eventi specifici delle risorse, come i clic, includi anche il codice da incorporare nel codice di siti web di terze parti.
 
 Il codice di esempio seguente mostra l’aspetto di una pagina web contenente sia il codice di tracciamento pagina che il codice di incorporamento:
 

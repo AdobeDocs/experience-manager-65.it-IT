@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine di contenuto
 description: Scopri come pubblicare le pagine di contenuto in Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1662'
-ht-degree: 70%
+source-wordcount: '1660'
+ht-degree: 71%
 
 ---
 
@@ -60,7 +60,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
    * La pagina verrà pubblicata direttamente, se non sono presenti riferimenti da pubblicare.
    * Se la pagina include riferimenti da pubblicare, questi saranno elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
 
-      * Specifica le risorse, i tag e così via da pubblicare insieme alla pagina, quindi utilizza **Pubblica** per completare il processo.
+      * Specifica le risorse o i tag da pubblicare insieme alla pagina, quindi utilizza **Pubblica** per completare il processo.
 
       * Seleziona **Annulla** per annullare l’azione.
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '3226'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Se nelle impostazioni della directory è stata selezionata l&#39;opzione Abilita
 
 >[!NOTE]
 >
->Non includere il DN dell’utente in questa impostazione. Per sincronizzare un utente specifico, utilizzare l&#39;impostazione Filtro di ricerca.
+>Non includere il DN dell&#39;utente in questa impostazione. Per sincronizzare un utente specifico, utilizzare l&#39;impostazione Filtro di ricerca.
 
 Sebbene il DN di base sia un&#39;impostazione obbligatoria nella console di amministrazione, alcuni server delle directory, come IBM Domino Enterprise Server, potrebbero richiedere un DN di base vuoto. Per specificare un DN di base vuoto, esportare il file config.xml, modificare l&#39;impostazione nel file config.xml, quindi reimportarlo. (vedere [Importazione ed esportazione del file di configurazione](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
@@ -132,9 +132,9 @@ Sebbene il DN di base sia un&#39;impostazione obbligatoria nella console di ammi
 
 **Cognome** Attributo schema (obbligatorio) per il cognome dell’utente
 
-**Nome dato:** Attributo schema (obbligatorio) per il nome dell’utente
+**Nome dato:** (Obbligatorio) Attributo schema per il nome dell’utente
 
-**Iniziali:** Attributo schema per le iniziali dell’utente
+**Iniziali:** Attributo schema per le iniziali dell&#39;utente
 
 **Calendario aziendale:** Consente di mappare un calendario aziendale a un utente, in base al valore di questa impostazione (la chiave del calendario aziendale). I calendari aziendali definiscono i giorni lavorativi e non lavorativi. I moduli AEM possono utilizzare i calendari aziendali per calcolare le date e le ore future per eventi quali promemoria, scadenze e inoltri per moderazione. Il modo in cui si assegnano le chiavi del calendario aziendale agli utenti dipende dal fatto che si utilizzi un dominio enterprise, locale o ibrido. Consultate Configurazione dei calendari aziendali.
 
@@ -150,9 +150,9 @@ Lo spazio utilizzato per visualizzare il nome della chiave del calendario aziend
 
 **E-mail secondaria:** Attributo dello schema per l’indirizzo e-mail secondario dell’utente.
 
-**Telefono:** Attributo dello schema per il numero di telefono dell’utente.
+**Telefono:** Attributo dello schema per il numero di telefono dell&#39;utente.
 
-**Indirizzo postale:** Attributo dello schema per l’indirizzo e-mail dell’utente.
+**Indirizzo postale:** Attributo schema per l&#39;indirizzo postale dell&#39;utente.
 
 **Lingua:** Attributo dello schema che contiene le informazioni sulle impostazioni internazionali ISO. Il valore è un codice della lingua a due lettere o un codice della lingua e del paese.
 

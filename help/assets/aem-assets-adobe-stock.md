@@ -1,14 +1,14 @@
 ---
 title: Gestisci [!DNL Adobe Stock] risorse
-description: Ricerca, recupero, licenza e gestione [!DNL Adobe Stock] risorse da [!DNL Adobe Experience Manager]. Utilizza le risorse concesse in licenza come qualsiasi altra risorsa digitale.
+description: Cerca, recupera, concedi licenze e gestisci [!DNL Adobe Stock] risorse da [!DNL Adobe Experience Manager]. Utilizza le risorse concesse in licenza come qualsiasi altra risorsa digitale.
 contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2483'
 ht-degree: 7%
 
 ---
@@ -207,7 +207,7 @@ Per configurare l’account IMS:
 
 Per configurare [!DNL Adobe Stock] servizio cloud:
 
-1. In [!DNL Experience Manager] interfaccia utente, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. In [!DNL Experience Manager] interfaccia utente, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**.
 
 1. In [!DNL Adobe Stock Configurations] pagina, fai clic su **[!UICONTROL Crea]**.
 
@@ -264,7 +264,7 @@ Puoi creare un gruppo di utenti o assegnare le autorizzazioni a un gruppo di ute
 
    ![autorizzazioni utente](assets/aem-stock-user-permissions.png)
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Seleziona la [!DNL Adobe Stock] configurazione cloud e clic su **[!UICONTROL Proprietà]**.
+1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**. Seleziona la [!DNL Adobe Stock] configurazione cloud e clic su **[!UICONTROL Proprietà]**.
 
 1. Aggiungi il gruppo utenti appena creato a [!DNL Adobe Stock] configurazione. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
@@ -313,7 +313,7 @@ La tabella seguente spiega come funzionano le autorizzazioni utente durante l’
 
 | User | Gruppo | Autorizzazioni | Accetta configurazione Stock nelle preferenze utente | Accedere alle risorse | Accedere ad Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
-| admin | N/D | Tutti i bundle  | N/D | Sì | Sì |
+| admin | N/D | Tutti | N/D | Sì | Sì |
 | test-doc1 | Utente DAM | /conf/global /settings/stock/cloud-config | Sì | Sì | Sì |
 | test-doc1 | Utente DAM | /conf/global /settings/stock/cloud-config | No | Errore: impossibile caricare i dati | No |
 | test-doc1 | Utente DAM | **consenti**: /conf/global /settings/stock     **rifiuta**: /cloud-config | La configurazione Stock non è visibile | Sì | No |
@@ -323,7 +323,7 @@ La tabella seguente spiega come funzionano le autorizzazioni utente durante l’
 
 Utilizzando questa funzionalità, le organizzazioni possono consentire agli utenti di lavorare utilizzando [!DNL Adobe Stock] risorse in [!DNL Experience Manager Assets]. Dall&#39;interno del [!DNL Experience Manager] dell&#39;interfaccia utente, gli utenti possono effettuare ricerche [!DNL Adobe Stock] risorse e concedere in licenza le risorse richieste.
 
-Una volta [!DNL Adobe Stock] la risorsa è concessa in licenza in [!DNL Experience Manager], può essere utilizzato e gestito come una risorsa tipica. In entrata [!DNL Experience Manager], gli utenti possono cercare e visualizzare in anteprima le risorse; copiare e pubblicare le risorse; condividerle su [!DNL Brand Portal]; accedere alle risorse e utilizzarle tramite [!DNL Experience Manager] app desktop e così via.
+Una volta [!DNL Adobe Stock] la risorsa è concessa in licenza in [!DNL Experience Manager], può essere utilizzato e gestito come una risorsa tipica. In entrata [!DNL Experience Manager], gli utenti possono cercare e visualizzare in anteprima le risorse; copiare e pubblicare le risorse; condividerle su [!DNL Brand Portal]; accedere alle risorse e utilizzarle mediante: [!DNL Experience Manager] app desktop e così via.
 
 ![Cerca [!DNL Adobe Stock] risorse e filtrare i risultati dal tuo [!DNL Adobe Experience Manager] workspace](assets/adobe-stock-search-results-workspace.png)
 
@@ -390,7 +390,6 @@ Gli utenti possono visualizzare le proprietà sia per le risorse con licenza che
 >* [Tutorial video sull’utilizzo di [!DNL Adobe Stock] risorse con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [[!DNL Adobe Stock] guida del piano aziendale](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] Domande frequenti](https://helpx.adobe.com/stock/faq.html)
-
 
 
 <!--old content

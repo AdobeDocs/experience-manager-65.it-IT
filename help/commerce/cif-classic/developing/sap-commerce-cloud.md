@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2288'
 ht-degree: 0%
 
 ---
@@ -405,7 +405,7 @@ public class AxisFilter implements VariantFilter {
 
 * Il carrello è di proprietà di `CommerceSession:`
 
-   * Il `CommerceSession` esegue operazioni di aggiunta/rimozione/e così via.
+   * Il `CommerceSession` esegue operazioni di aggiunta o rimozione e così via.
    * Il `CommerceSession` esegue anche i vari calcoli sul carrello. &quot;
 
 * Anche se non è direttamente correlato al carrello, il `CommerceSession` deve inoltre fornire informazioni sulla determinazione dei prezzi del catalogo (in quanto è proprietario dei prezzi)

@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '2987'
 ht-degree: 47%
@@ -401,7 +401,7 @@ In tutte le viste, tutti gli elementi possono essere deselezionati con il tasto 
 
 La vista a colonne consente la navigazione visiva di una struttura di contenuti tramite una serie di colonne in cascata. Questa visualizzazione consente di visualizzare e scorrere la struttura ad albero del sito web.
 
-Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengono visualizzate in una colonna a destra. Selezionando una risorsa nella colonna di destra, le risorse figlie vengono visualizzate in un’altra colonna a destra e così via.
+Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengono visualizzate in una colonna a destra. Se si seleziona una risorsa nella colonna di destra, le risorse figlie vengono visualizzate in un&#39;altra colonna a destra e così via.
 
 * Per spostarti verso l’alto o il basso nella struttura, tocca o fai clic sul nome della risorsa o sulla freccia a destra del nome della risorsa.
 

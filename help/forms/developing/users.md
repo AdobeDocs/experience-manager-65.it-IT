@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6218'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Nel codice XML di configurazione esportato da Gestione utente, il nodo principal
 
 Quando si utilizza Active Directory, è importante comprendere che un `objectSID` value non è un attributo univoco per più domini. Questo valore memorizza l&#39;identificatore di protezione di un oggetto. In un ambiente con più domini (ad esempio, una struttura ad albero di domini) il `objectSID` può essere diverso.
 
-Un `objectSID` Il valore cambia se un oggetto viene spostato da un dominio Active Directory a un altro. Alcuni oggetti hanno lo stesso `objectSID` in qualsiasi punto del dominio. Ad esempio, gruppi come BUILTIN\Administrators, BUILTIN\Power Users e così via avrebbero lo stesso `objectSID` indipendentemente dai domini. Questi `objectSID` i valori sono ben noti.
+Un `objectSID` Il valore cambia se un oggetto viene spostato da un dominio Active Directory a un altro. Alcuni oggetti hanno lo stesso `objectSID` in qualsiasi punto del dominio. Ad esempio, gruppi come BUILTIN\Administrators, BUILTIN\Power Users e così via, avrebbero lo stesso `objectSID` indipendentemente dai domini. Questi `objectSID` i valori sono ben noti.
 
 ## Aggiunta di utenti {#adding-users}
 

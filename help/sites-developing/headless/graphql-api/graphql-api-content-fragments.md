@@ -3,9 +3,9 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL dell’AEM per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '4848'
+source-wordcount: '4847'
 ht-degree: 55%
 
 ---
@@ -554,7 +554,7 @@ I criteri di ordinamento:
    * il primo campo dell&#39;elenco definisce l&#39;ordinamento principale
       * il secondo campo viene utilizzato se due valori del criterio di ordinamento primario sono uguali
       * il terzo campo viene utilizzato se i primi due criteri sono uguali e così via.
-   * notazione punteggiata, ovvero campo1.sottocampo.sottocampo e così via...
+   * notazione punteggiata, ovvero `field1.subfield.subfield`e così via.
 * con una direzione d’ordine opzionale
    * ASC (crescente) o DESC (decrescente); con l’applicazione di ASC come predefinito
    * la direzione può essere specificata per campo; questa capacità significa che è possibile ordinare un campo in ordine crescente, un altro in ordine decrescente (nome, nome DESC)

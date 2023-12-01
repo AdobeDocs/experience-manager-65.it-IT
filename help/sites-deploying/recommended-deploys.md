@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1778'
 ht-degree: 0%
 
 ---
@@ -159,7 +159,7 @@ Inoltre, si consiglia vivamente di configurare l’archivio dati su un file syst
 
 Uno dei vantaggi aggiuntivi della distribuzione di un set di repliche MongoDB con un cluster di due o più istanze di authoring è uno scenario di ripristino automatizzato con tempi di inattività minimi in presenza di istanze di authoring, replica MongoDB o errore completo del centro dati. Tuttavia, la scelta di MongoMK rispetto a TarMK non dovrebbe essere esclusivamente guidata dai requisiti di ripristino, in quanto TarMK può anche fornire una soluzione di downtime minima con un meccanismo di failover controllato.
 
-Se non si prevede che i criteri di cui sopra siano soddisfatti durante i primi diciotto mesi di implementazione, si consiglia prima di implementare l’AEM utilizzando TarMK, quindi di rivalutare la configurazione in un secondo momento, quando i criteri di cui sopra saranno applicabili, e infine di determinare se rimanere su TarMK o migrare a MongoMK.
+Se non si prevede che i criteri di cui sopra siano soddisfatti durante i primi 18 mesi di implementazione, per prima cosa si consiglia di implementare l’AEM utilizzando TarMK, quindi di rivalutare la configurazione in un secondo momento, quando i criteri di cui sopra saranno applicabili, e infine di determinare se rimanere su TarMK o migrare a MongoMK.
 
 ### Eccezioni per la scelta di AEM MongoMK rispetto a TarMK nelle istanze di pubblicazione {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
