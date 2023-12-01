@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8d06457241919095fd9802f69df426a1cc6851da
+source-git-commit: f8f82ad5805095f331432471b614225f761e645c
 workflow-type: tm+mt
-source-wordcount: '3675'
+source-wordcount: '3530'
 ht-degree: 3%
 
 ---
@@ -38,23 +38,12 @@ ht-degree: 3%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+**Funzioni principali e miglioramenti**
+
 Alcune delle funzioni e dei miglioramenti principali di questa versione includono:
 
-**Funzioni principali**
-
-* Risorse, Dynamic Medie - [Supporto di tracce multi-sottotitolo e multi-audio per video in Dynamic Medie](/help/assets/video.md#about-msma)- È ora possibile aggiungere facilmente più sottotitoli e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. Puoi personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
-
-* Risorse: dai risultati della ricerca, ora puoi passare alla posizione della cartella che contiene una risorsa per eseguire varie attività di gestione delle risorse. (ASSETS-23182)
-
-**Miglioramenti principali**
-
-* Il selettore Polaris di Sites nei frammenti di contenuto ha migliorato le prestazioni. (SITES-14092)
-
 * Abilitazione dell’utente del componente Editor pagina/immagine di Sites per fare riferimento alle risorse dal Cloud Service di risorse remoto. (SITES-13448, SITES-13433)
-
-* Per trovare rapidamente un progetto nella vista a elenco, in cui è possibile che siano presenti molti progetti, Adobe ora supporta l’ordinamento lato server. I nodi del progetto sono ordinati sul backend in base alla colonna selezionata dall’utente prima di eseguirne il rendering nell’interfaccia utente. (NPR-41027)
-
-* L’AEM 6.5.19.0 supporta MongoDB da 5.0 a 6.0.
+* AEM ora supporta l’ordinamento lato server per una navigazione più rapida dei progetti nella vista a elenco. I nodi del progetto vengono ordinati in base alla colonna selezionata dall’utente prima di essere visualizzati nell’interfaccia.
 
 **Funzione obsoleta**
 
@@ -292,7 +281,7 @@ Per istruzioni sull&#39;installazione del service pack in Experience Manager For
 
 >[!NOTE]
 >
->La funzione Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it), è progettata esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms, in quanto la funzionalità Adaptive Forms richiede una licenza appropriata.
+>La funzione Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it), è progettata esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms, in quanto la funzionalità Adaptive Forms richiede una licenza appropriata.
 
 ### Installare il pacchetto di indice GraphQL per frammenti di contenuto Experience Manager{#install-aem-graphql-index-add-on-package}
 
@@ -484,7 +473,7 @@ Per risolvere il problema, individuare `<AEM_Forms_Installation_dir>\jboss\bin\s
 
 #### Comunicazioni interattive
 
-* Dopo l’aggiornamento a AEM Service Pack 18, non è possibile aprire la comunicazione interattiva con grandi immagini in linea in modalità Modifica. (FORMS-10578) Per risolvere il problema, scaricare e installare [hotfix per 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Dopo l’aggiornamento a AEM Service Pack 18, non è possibile aprire la comunicazione interattiva con grandi immagini in linea in modalità Modifica. (FORMS-10578) Per risolvere il problema, installare [hotfix per 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
