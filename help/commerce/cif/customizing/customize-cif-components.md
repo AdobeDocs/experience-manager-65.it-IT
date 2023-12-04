@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 15%
+source-wordcount: '2306'
+ht-degree: 12%
 
 ---
 
@@ -484,13 +484,13 @@ A questo punto, la logica per la visualizzazione del **Rispettoso dell&#39;ambie
 
    ![Implementazione finale del badge eco-compatibile](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## Congratulazioni {#congratulations}
+## Complimenti {#congratulations}
 
 Hai personalizzato il tuo primo componente AEM CIF. Scarica il file [file di soluzione completati qui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Sfida bonus {#bonus-challenge}
 
-Rivedi la funzionalità di **Nuovo** badge già implementato nel Product Teaser. Prova ad aggiungere una casella di controllo aggiuntiva che consenta agli autori di controllare quando **Rispettoso dell&#39;ambiente** deve essere visualizzato il badge. È necessario aggiornare la finestra di dialogo del componente in `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Rivedi la funzionalità di **Nuovo** badge già implementato nel Product Teaser. Prova ad aggiungere una casella di controllo aggiuntiva che consenta agli autori di controllare quando **Rispettoso dell&#39;ambiente** deve essere visualizzato il badge. Aggiorna la finestra di dialogo del componente in `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![Nuova sfida per l’implementazione del badge](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 

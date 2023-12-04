@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10221'
+source-wordcount: '10266'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ Puoi configurare un periodo di lease offline predefinito. Il periodo di lease pu
 
 1. Nella pagina di document security, fai clic su Configurazione > Configurazione server.
 1. Nella casella Periodo lease non in linea predefinito digitare il numero di giorni per il periodo di lease non in linea.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ### Gestire i rollover chiave {#manage-key-rollovers}
 
@@ -164,7 +164,7 @@ Per motivi di riservatezza, quando si utilizzano documenti offline, la protezion
 
 1. Nella pagina Document Security, fai clic su Configurazione > Key Management (Gestione chiavi).
 1. Nella casella Frequenza rollover chiave digitare il numero di giorni per il periodo di rollover.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 **Ripristina manualmente le chiavi principali**
 
@@ -210,7 +210,7 @@ Quando si abilita il controllo del server, è possibile visualizzare gli eventi 
 
      (vedere [Opzioni di controllo degli eventi](configuring-client-server-options.md#event-auditing-options).)
 
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ Puoi abilitare e disabilitare un messaggio di notifica della privacy. Quando si 
    Se la policy allegata a un documento non consente l’accesso anonimo, l’utente visualizzerà il messaggio di notifica della privacy.
 
 1. Se applicabile, nella casella URL privacy, digita l’URL della pagina dell’informativa sulla privacy. Se la casella URL privacy viene lasciata vuota, viene visualizzata la pagina relativa alla privacy disponibile all’indirizzo adobe.com.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 >[!NOTE]
 >
@@ -241,13 +241,13 @@ Se utilizzi un’applicazione abilitata per la protezione dei documenti che supp
 1. Nella console di amministrazione, fai clic su Servizi > Document Security > Configurazione > Gestione eventi.
 1. Fare clic su Sfoglia per passare al file XML da importare e fare clic su Importa.
 1. L’importazione sovrascrive i tipi di evento di controllo personalizzati esistenti sul server se vengono trovate combinazioni identiche di codice evento e spazio dei nomi.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ### Eliminare un tipo di evento di audit personalizzato {#delete-a-custom-audit-event-type}
 
 1. Nella console di amministrazione, fai clic su Servizi > Document Security > Configurazione > Gestione eventi.
 1. Seleziona la casella di controllo accanto al tipo di evento di controllo personalizzato da eliminare e fai clic su Elimina.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ### Esporta eventi di audit {#export-audit-events}
 
@@ -514,14 +514,14 @@ Alcune applicazioni client potrebbero non supportare le filigrane dinamiche. Con
    Selezionare il punto in cui si desidera visualizzare la filigrana. Per impostazione predefinita, la filigrana viene visualizzata sia in copia temporanea (online) che in copia cartacea (stampa).
 
 1. Clic **Nuovo** in elementi filigrana aggiungere altri elementi filigrana, se necessario.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ### Modificare un modello di filigrana dinamica {#edit-a-dynamic-watermark-template}
 
 1. Nella console di amministrazione, fai clic su Servizi > Document Security > Configurazione > Filigrane.
 1. Fare clic sulla filigrana appropriata nell&#39;elenco.
 1. Nella pagina Modifica filigrane modificare le impostazioni in base alle esigenze.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ### Eliminare un modello di filigrana dinamica {#delete-a-dynamic-watermark-template}
 
@@ -529,7 +529,7 @@ Quando si elimina una filigrana dinamica, questa non è più disponibile per l�
 
 1. Nella console di amministrazione, fai clic su Servizi > Document Security > Configurazione > Filigrane.
 1. Selezionare la casella di controllo accanto alla filigrana appropriata e fare clic su Elimina.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ## Configurazione della registrazione degli utenti invitati {#configuring-invited-user-registration}
 
@@ -567,7 +567,7 @@ Per impostazione predefinita, il processo di registrazione degli utenti invitati
    * [Configurare un messaggio e-mail di reimpostazione della password](configuring-client-server-options.md#configure-a-password-reset-email)
 
 1. (Facoltativo) In Registrazione incorporata, seleziona Sì per abilitare questa opzione. Se non si abilita la registrazione incorporata, è necessario impostare un sistema di registrazione utente personalizzato.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ### Escludere o includere un utente o un gruppo esterno {#exclude-or-include-an-external-user-or-group}
 
@@ -730,20 +730,20 @@ Puoi apportare le seguenti modifiche utilizzando il file di configurazione:
 
 >[!NOTE]
 >
->L&#39;importazione del file di configurazione riconfigura il sistema in base alle informazioni contenute nel file. Le eccezioni sono la configurazione della filigrana dinamica e le informazioni sugli eventi personalizzati, che non vengono salvate con il file di configurazione esportato. Devi configurare queste informazioni manualmente nel nuovo sistema. Solo un amministratore di sistema o un consulente di servizi professionali che ha familiarità con document security e XML può modificare il contenuto di un file di configurazione, ad esempio per riconfigurare un&#39;impostazione danneggiata o per sottoporre a tuning i parametri di un particolare scenario di distribuzione aziendale.
+>L&#39;importazione del file di configurazione riconfigura il sistema in base alle informazioni contenute nel file. Le eccezioni sono la configurazione della filigrana dinamica e le informazioni sugli eventi personalizzati, che non vengono salvate con il file di configurazione esportato. Configura queste informazioni manualmente nel nuovo sistema. Solo un amministratore di sistema o un consulente di servizi professionali che ha familiarità con document security e XML può modificare il contenuto di un file di configurazione, ad esempio per riconfigurare un&#39;impostazione danneggiata o per sottoporre a tuning i parametri di un particolare scenario di distribuzione aziendale.
 
 **Esportare un file di configurazione**
 
 1. Nella console di amministrazione, fai clic su Servizi > Document Security 11 > Configurazione > Configurazione manuale.
 1. Fare clic su Esporta e salvare il file di configurazione in un&#39;altra posizione. Il nome file predefinito è config.xml.
-1. Fai clic su OK.
+1. Fare clic su OK.
 1. Prima di modificare il file di configurazione, esegui una copia di backup nel caso sia necessario ripristinarlo.
 
 **Importare un file di configurazione**
 
 1. Nella console di amministrazione, fai clic su Servizi > Document Security 11 > Configurazione > Configurazione manuale.
 1. Fare clic su Sfoglia per passare al file di configurazione e quindi su Importa. Non è possibile digitare il percorso direttamente nella casella Nome file.
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ### Specificare un periodo di timeout per la sincronizzazione offline {#specify-a-timeout-period-for-offline-synchronization}
 

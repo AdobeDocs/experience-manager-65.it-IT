@@ -2,10 +2,10 @@
 title: Note generali sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 note che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4676'
-ht-degree: 5%
+source-wordcount: '4484'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 | Prodotto | [!DNL Adobe Experience Manager] |
 |---|---|
-| Versione | 6.5 |
+| Versione | 6,5 |
 | Tipo | Versione principale |
 | Data di disponibilità generale | 8 aprile 2019 |
 | Aggiornamenti consigliati | Consulta [Aggiornamenti recenti dell’AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it). |
@@ -325,7 +325,7 @@ AEM 6.5 introduce le seguenti funzionalità e miglioramenti per aumentare la pro
 
 Continua a leggere per scoprire le funzionalità e le integrazioni specifiche di [!DNL Experience Manager] 6.5 che puoi utilizzare per supportare al meglio i casi d’uso relativi alla velocità dei contenuti.
 
-##### Adobe Asset Link {#aal}
+##### Adobe collegamento risorsa {#aal}
 
 [!DNL Adobe Asset Link] rafforza la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. I creativi possono accedere ai contenuti archiviati in [!DNL Experience Manager Assets], senza uscire dalle app che più conoscono. I creativi possono sfogliare, cercare, estrarre e archiviare le risorse senza problemi tramite il pannello in-app in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign] app.
 
@@ -383,7 +383,7 @@ Gestione dei file video 360 direttamente in [!DNL Experience Manager] utilizzo d
 
 Ora puoi personalizzare le miniature delle risorse video utilizzando fotogrammi provenienti dal video stesso o altro contenuto memorizzato in DAM. Per ulteriori istruzioni, consulta [Informazioni sulle miniature video](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
-##### Miglioramenti dell’accessibilità {#accessibility-enhancements}
+##### Miglioramenti all’accessibilità {#accessibility-enhancements}
 
 [!DNL Dynamic Media] I visualizzatori ora supportano funzioni di accessibilità avanzate come Aria-support, screen-reader e Alt-text. Per ulteriori dettagli, vedi [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
@@ -428,7 +428,7 @@ AEM 6.5 Forms introduce diverse nuove funzioni e miglioramenti. Gli elementi di 
 
 Consulta la [Riepilogo delle nuove funzioni e dei miglioramenti introdotti nel Forms di AEM 6.5](/help/forms/using/whats-new.md) per informazioni sulle funzioni nuove e migliorate e sulle risorse della documentazione.
 
-### Utilizzare lo sviluppo incentrato sul cliente {#leverage-customer-focused-development}
+### Utilizzare lo sviluppo incentrato sul cliente {#use-customer-focused-development}
 
 Ad Adobe, utilizza un modello di sviluppo incentrato sul cliente che consente ai clienti di contribuire a tutte le fasi del processo di sviluppo, durante la specifica, lo sviluppo e il test. I nostri ringraziamenti vanno a tutti i clienti e partner che hanno contribuito a questo processo.
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '17027'
+source-wordcount: '16882'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Prima di poter eseguire un&#39;operazione del servizio di firma a livello di pro
 
 **Ottieni un documento PDF a cui viene aggiunto un campo firma**
 
-È necessario ottenere un documento PDF a cui viene aggiunto un campo firma.
+Ottenere un documento PDF a cui viene aggiunto un campo firma.
 
 **Aggiungi un campo firma**
 
@@ -650,7 +650,7 @@ Per impostare le opzioni di aspetto, utilizzate una `PDFSignatureAppearanceOptio
 
 * **NoCheck**: non eseguire il controllo della revoca.
 * **BestEffort**: cerca sempre di verificare la presenza di revoche di tutti i certificati nella catena. Se si verificano problemi durante il controllo, la revoca viene considerata valida. In caso di errori, si supponga che il certificato non venga revocato.
-* **CheckIfAvailable** Verificare la revoca di tutti i certificati della catena se sono disponibili informazioni sulla revoca. Se si verificano problemi durante il controllo, la revoca viene considerata non valida. In caso di errori, si supponga che il certificato sia stato revocato e che non sia valido. (Questo è il valore predefinito.)
+* **CheckIfAvailable** Verificare la revoca di tutti i certificati della catena se sono disponibili informazioni sulla revoca. Se si verificano problemi durante il controllo, la revoca viene considerata non valida. In caso di errori, si supponga che il certificato sia stato revocato e che non sia valido. Questo è il valore predefinito.
 * **AlwaysCheck**: verifica la revoca di tutti i certificati della catena. Se le informazioni sulla revoca non sono presenti in alcun certificato, la revoca verrà considerata non valida.
 
 Per eseguire il controllo di revoca su un certificato, è possibile specificare un URL di un server di elenco di revoche di certificati (CRL) utilizzando un `CRLOptionSpec` oggetto. Tuttavia, se si desidera eseguire il controllo di revoca e non si specifica un URL per un server CRL, il servizio di firma ottiene l&#39;URL dal certificato.

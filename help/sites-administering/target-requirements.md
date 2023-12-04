@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '528'
 ht-degree: 7%
 
 ---
@@ -34,10 +34,10 @@ Il codice client identifica l’account cliente Adobe Target quando si chiama il
 
 Test e Target [agente di replica](/help/sites-deploying/replication.md) deve essere abilitato sull’istanza di authoring. Tieni presente che questo agente di replica non è abilitato per impostazione predefinita se hai utilizzato [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) modalità di esecuzione per l’installazione dell’AEM. Per ulteriori informazioni sulla protezione dell&#39;ambiente di produzione, vedi [Elenco di controllo della sicurezza](/help/sites-administering/security-checklist.md).
 
-1. Nella home page dell’AEM, tocca o fai clic su **Strumenti** > **Distribuzione** > **Replica**.
-1. Tocca o fai clic su **Agenti per creazione**.
-1. Tocca o fai clic sul pulsante **Test e Target (test e target)** agente di replica, quindi tocca o fai clic su **Modifica**.
-1. Seleziona l’opzione Abilitato, quindi tocca o fai clic su **OK**.
+1. Nella home page dell’AEM, fai clic su **Strumenti** > **Distribuzione** > **Replica**.
+1. Clic **Agenti per creazione**.
+1. Fai clic su **Test e Target (test e target)** agente di replica, quindi fare clic su **Modifica**.
+1. Seleziona l’opzione Abilitato, quindi fai clic su **OK**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Test e Target [agente di replica](/help/sites-deploying/replication.md) deve ess
 
 ## Protezione del nodo Impostazioni attività {#securing-the-activity-settings-node}
 
-È necessario proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull’istanza di pubblicazione, in modo che non sia accessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 
 Il **cq:ActivitySettings** è disponibile in CRXDE lite sotto `/content/campaigns/*nameofbrand*`* *nel nodo attività jcr:content;* *ad esempio, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Questo nodo viene creato solo dopo aver eseguito il targeting di un componente.
 

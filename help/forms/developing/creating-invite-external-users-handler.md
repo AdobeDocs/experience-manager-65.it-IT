@@ -3,9 +3,9 @@ title: Creazione di un handler per l’invito di utenti esterni
 description: Scopri come creare un handler per l’invito di utenti esterni. Consente al servizio di Rights Management di invitare utenti esterni a diventare utenti del Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Definizione del file XML del componente per il gestore autorizzazioni {#define-component-xml-authorization-handler}
 
-È necessario definire un file XML di componente per distribuire il componente gestore inviti utenti esterni. Esiste un file XML per ciascun componente che fornisce i metadati relativi al componente.
+Utilizza un file XML di componente per distribuire il componente gestore inviti utenti esterni. Esiste un file XML per ciascun componente che fornisce i metadati relativi al componente.
 
 I seguenti elementi `component.xml` Il file viene utilizzato per il gestore di inviti di utenti esterni. Il nome del servizio è `InviteExternalUsersSample` e l’operazione che questo servizio espone è denominata `invitedUser`. Il parametro di input è un `java.util.List` e il valore di output è un array di `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` istanze.
 
@@ -203,7 +203,7 @@ I seguenti elementi `component.xml` Il file viene utilizzato per il gestore di i
 
 ## Creazione del pacchetto del gestore di inviti di utenti esterni {#packaging-invite-external-users-handler}
 
-Per distribuire il gestore di inviti di utenti esterni in AEM Forms, è necessario creare un pacchetto del progetto Java in un file JAR. È necessario assicurarsi che i file JAR esterni da cui dipende la logica di business del gestore di inviti di utenti esterni, ad esempio `edc-server-spi.jar` e `adobe-rightsmanagement-client.jar` I file sono inclusi anche nel file JAR. Deve essere presente anche il file XML del componente. Il `component.xml` I file JAR e i file JAR esterni devono trovarsi nella directory principale del file JAR.
+Per distribuire il gestore di inviti di utenti esterni in AEM Forms, è necessario creare un pacchetto del progetto Java in un file JAR. Assicurati che i file JAR esterni da cui dipende la logica di business del gestore di inviti per utenti esterni, ad esempio `edc-server-spi.jar` e `adobe-rightsmanagement-client.jar` I file sono inclusi anche nel file JAR. Deve essere presente anche il file XML del componente. Il `component.xml` I file JAR e i file JAR esterni devono trovarsi nella directory principale del file JAR.
 
 >[!NOTE]
 >
@@ -215,7 +215,7 @@ L’illustrazione seguente mostra il contenuto del progetto Java inserito nel fi
 
 A. File JAR esterni richiesti dal file JAVA del componente B.
 
-Devi creare un pacchetto del gestore di inviti di utenti esterni in un file JAR. Nel diagramma precedente, si noti che sono elencati i file .JAVA. Una volta inseriti in un file JAR, è necessario specificare anche i file .CLASS corrispondenti. Senza i file .CLASS, il gestore autorizzazioni non funziona.
+Crea un pacchetto del gestore di inviti di utenti esterni in un file JAR. Nel diagramma precedente, si noti che sono elencati i file .JAVA. Una volta inseriti in un file JAR, è necessario specificare anche i file .CLASS corrispondenti. Senza i file .CLASS, il gestore autorizzazioni non funziona.
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ Per aggiungere utenti esterni da invitare tramite la console di amministrazione:
 1. Dalla home page della console di amministrazione, fai clic su **[!UICONTROL Impostazioni]** > **[!UICONTROL Gestione utente]** > **[!UICONTROL Gestione del dominio]**.
 1. Clic **[!UICONTROL Nuovo dominio locale]**. Nella pagina seguente, crea un dominio con il nome e il valore di identificatore `EDC_EXTERNAL_REGISTERED`. Salva le modifiche.
 1. Dalla home page della console di amministrazione, fai clic su **[!UICONTROL Servizi]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Utenti invitati e locali]**. Il **[!UICONTROL Aggiungi utente invitato]** viene visualizzata.
-1. Immetti gli indirizzi e-mail (poiché il gestore di inviti esterni corrente non invia effettivamente i messaggi e-mail, l’indirizzo e-mail non deve essere valido). Fai clic su **[!UICONTROL OK]**. Gli utenti vengono invitati al sistema.
+1. Immetti gli indirizzi e-mail (poiché il gestore di inviti esterni corrente non invia effettivamente i messaggi e-mail, l’indirizzo e-mail non deve essere valido). Clic **[!UICONTROL OK]**. Gli utenti vengono invitati al sistema.
 1. Dalla home page della console di amministrazione, fai clic su **[!UICONTROL Impostazioni]** > **[!UICONTROL Gestione utente]** > **[!UICONTROL Utenti e gruppi]**.
 1. In **[!UICONTROL Trova]** immetti un indirizzo e-mail specificato. Clic **[!UICONTROL Trova]**. L’utente che hai invitato viene visualizzato come utente nel `EDC_EXTERNAL_REGISTERED` dominio.
 

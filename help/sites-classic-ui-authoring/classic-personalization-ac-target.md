@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Puoi creare la newsletter con contenuti mirati sia nell’interfaccia utente tou
 
 Per creare una newsletter con contenuti mirati:
 
-1. Creare una newsletter con contenuti mirati: di seguito Campagne e-mail in Geometrixx Outdoors, tocca o fai clic su **Crea** > **Pagina** e selezionare uno dei modelli di Adobe Campaign Mail.
+1. Creazione di una newsletter con contenuti mirati: di seguito Campagne e-mail in Geometrixx Outdoors, fai clic su **Crea** > **Pagina** e selezionare uno dei modelli di Adobe Campaign Mail.
 
    >[!NOTE]
    >
@@ -84,7 +84,7 @@ Per creare una newsletter con contenuti mirati:
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, gli esempi e-mail inclusi nell’AEM utilizzano Adobe Campaign come motore di targeting. Per le newsletter personalizzate, potrebbe essere necessario selezionare Adobe Campaign come motore di targeting. Quando esegui il targeting, tocca o fai clic su + nella barra degli strumenti, immetti un titolo per la nuova attività e seleziona **Adobe Campaign** come motore di targeting.
+   >Per impostazione predefinita, gli esempi e-mail inclusi nell’AEM utilizzano Adobe Campaign come motore di targeting. Per le newsletter personalizzate, potrebbe essere necessario selezionare Adobe Campaign come motore di targeting. Durante il targeting, fai clic su + nella barra degli strumenti, immetti un titolo per la nuova attività e seleziona **Adobe Campaign** come motore di targeting.
 
 1. Clic **Predefinito** e poi il componente Testo e personalizzazione aggiunto e vedete il bulletto con una freccia. Fai clic sull’icona per eseguire il targeting di questo componente.
 

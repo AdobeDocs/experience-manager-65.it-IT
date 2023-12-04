@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1961'
 ht-degree: 0%
 
 ---
@@ -208,7 +208,7 @@ La modifica di un contesto client può essere utilizzata per impostare (o reimpo
 
 ### Aggiunta di un componente proprietà {#adding-a-property-component}
 
-Dopo aver aperto il **Pagina progettazione ClientContext**, è inoltre possibile **Aggiungi** una proprietà completamente nuova che utilizza i componenti disponibili (i componenti sono elencati sia nella barra laterale che nella **Inserisci nuovo componente** che viene aperta dopo un doppio clic sul pulsante **Trascina qui i componenti o le risorse** box):
+Dopo aver aperto il **Pagina progettazione ClientContext**, è inoltre possibile **Aggiungi** una proprietà completamente nuova che utilizza i componenti disponibili (i componenti sono elencati sia nella barra laterale che nella **Inserisci nuovo componente** che viene aperta dopo aver fatto doppio clic sul pulsante **Trascina qui i componenti o le risorse** box):
 
 ![Aggiunta di una proprietà alla finestra ClientContext](assets/clientcontext_alisonparker_new.png)
 
@@ -245,7 +245,7 @@ Aggiungi il componente JSONP Store a ClientContext e utilizzalo per recuperare e
 
    ![Le proprietà del servizio JSONP](assets/chlimage_1-40.png)
 
-1. Fai clic su OK.
+1. Fare clic su OK.
 1. Torna alla home page dei Geometrixx Outdoors e aggiorna la pagina. ClientContext ora include le informazioni dal componente JSONP Store.
 
    ![Esempio del componente JSONP popolato con dati](assets/chlimage_1-41.png)

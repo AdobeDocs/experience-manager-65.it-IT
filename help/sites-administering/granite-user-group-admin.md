@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 5%
+source-wordcount: '951'
+ht-degree: 1%
 
 ---
 
@@ -80,12 +80,12 @@ Scelta di **Utenti** o **Gruppi** dalla console Strumenti apre la console approp
 
    * **Nome**
    * **Cognome**
-   * **Numero telefono**
+   * **Numero di telefono**
    * **Qualifica**
    * **Via**
    * **Mobile**
    * **Città**
-   * **Codice di avviamento postale**
+   * **Codice postale**
    * **Paese**
    * **Stato**
    * **Titolo**
@@ -104,7 +104,7 @@ Puoi contrassegnare l’account come **attivo** o **inattivo**.
 
      Dimensione preferita: `240x240px`
 
-   * **Aggiungi utente a gruppi**
+   * **Aggiungi utente ai gruppi**
 
      Utilizza il menu a discesa di selezione per selezionare i gruppi di cui l’utente deve essere membro. Una volta selezionata, utilizza **X** dal nome da deselezionare prima del salvataggio.
 
@@ -222,7 +222,7 @@ Puoi contrassegnare l’account come **attivo** o **inattivo**.
 
 1. Il **Modifica impostazioni gruppo** il modulo verrà aperto.
 
-   L’ID gruppo sarà lo stesso dell’originale, ma con il prefisso `Copy of`. È necessario modificare questa impostazione perché l’ID non può contenere spazi. Tutti gli altri dettagli saranno gli stessi dell&#39;originale.
+   L’ID gruppo sarà lo stesso dell’originale, ma con il prefisso `Copy of`. Modifica questo ID perché non può contenere spazi. Tutti gli altri dettagli sono gli stessi dell&#39;originale.
 
    Ora puoi modificare e salvare i dettagli come in [Aggiunta di un nuovo gruppo](#adding-a-new-group).
 

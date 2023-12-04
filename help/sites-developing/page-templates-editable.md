@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 6%
+source-wordcount: '3186'
+ht-degree: 4%
 
 ---
 
@@ -72,7 +72,7 @@ Quando crei un modello modificabile:
    * La struttura ti consente di definire componenti e contenuti per il modello.
    * I componenti definiti nella struttura del modello non possono essere spostati in una pagina risultante né eliminati dalle pagine risultanti.
 
-      * Se stai creando un modello in una cartella personalizzata al di fuori del `We.Retail` contenuto di esempio, puoi scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it).
+      * Se stai creando un modello in una cartella personalizzata al di fuori del `We.Retail` contenuto di esempio, puoi scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
 
    * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema di paragrafi al modello.
    * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il contenuto iniziale.
@@ -85,7 +85,7 @@ Quando crei un modello modificabile:
 
    * I criteri per contenuto definiscono le proprietà di progettazione di un componente.
 
-      * Ad esempio, i componenti disponibili o le dimensioni minime/massime.
+      * Ad esempio, i componenti disponibili o le dimensioni minima/massima.
 
    * Questi criteri sono applicabili al modello (e alle pagine create con il modello).
 
@@ -104,8 +104,8 @@ Quando crei un modello modificabile:
 
    **Layout**
 
-   * È possibile definire il layout del modello per una serie di dispositivi.
-   * Il Layout reattivo per i modelli funziona come per la creazione delle pagine.
+   * Puoi definire il layout del modello per una serie di dispositivi.
+   * Il layout reattivo per i modelli funziona come per la creazione delle pagine.
 
    Per informazioni dettagliate su come un autore di modelli definisce il layout di un modello, consulta [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
@@ -216,7 +216,7 @@ Per creare una cartella, effettuare le seguenti operazioni:
 
 ### Utilizzo del browser configurazioni {#using-the-configuration-browser}
 
-1. Vai a **Navigazione globale** -> **Strumenti** > **Browser configurazioni**.
+1. Vai a **Navigazione globale** > **Strumenti** > **Browser configurazioni**.
 
    Le cartelle esistenti sono elencate a sinistra, incluso **globale** cartella.
 
@@ -226,7 +226,7 @@ Per creare una cartella, effettuare le seguenti operazioni:
    * **Titolo**: specifica un titolo per la cartella di configurazione
    * **Modelli modificabili**: selezionare questa opzione per consentire i modelli modificabili all’interno della cartella
 
-1. Fai clic su **Crea**
+1. Clic **Crea**
 
 >[!NOTE]
 >

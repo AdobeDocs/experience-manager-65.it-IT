@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2749'
-ht-degree: 1%
+source-wordcount: '2770'
+ht-degree: 2%
 
 ---
 
@@ -102,7 +102,7 @@ Nella newsletter/e-mail in authoring, potresti non essere in grado di selezionar
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Seleziona **Servizi cloud** e fai clic su **+** per aggiungere una configurazione. Seleziona una configurazione visibile (non importa quale). Tocca o fai clic sul pulsante **+** accedi per aggiungere un&#39;altra configurazione, quindi seleziona **Adobe Campaign**.
+1. Seleziona **Servizi cloud** e fai clic su **+** per aggiungere una configurazione. Seleziona una configurazione visibile (non importa quale). Fai clic su **+** accedi per aggiungere un&#39;altra configurazione, quindi seleziona **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -201,7 +201,7 @@ Puoi visualizzare in anteprima come si presenterà la newsletter e la personaliz
 
    ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-1. Puoi visualizzare i dati di seed provenienti da Adobe Campaign e associati all’utente tipo attualmente selezionato. A questo scopo, tocca o fai clic sul modulo Adobe Campaign nella barra di ContextHub. Viene visualizzata una finestra di dialogo in cui vengono visualizzati tutti i dati di inizializzazione del profilo corrente. Anche in questo caso, i dati si adattano quando si passa a un utente tipo diverso.
+1. Puoi visualizzare i dati di seed provenienti da Adobe Campaign e associati all’utente tipo attualmente selezionato. A questo scopo, fai clic sul modulo Adobe Campaign nella barra di ContextHub. Viene visualizzata una finestra di dialogo in cui vengono visualizzati tutti i dati di inizializzazione del profilo corrente. Anche in questo caso, i dati si adattano quando si passa a un utente tipo diverso.
 
    ![chlimage_1-30](assets/chlimage_1-30a.png)
 

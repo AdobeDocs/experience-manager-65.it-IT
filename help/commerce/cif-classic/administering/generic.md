@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2929'
+source-wordcount: '2907'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Prima di creare i prodotti, definisci un [impalcatura](/help/sites-authoring/sca
 
 1. Specifica:
 
-   * **Importazione**
+   * **Importatore**
 
      L&#39;importatore per il [fornitore commerce](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), per impostazione predefinita `Geometrixx`.
 
@@ -117,7 +117,7 @@ Prima di creare i prodotti, definisci un [impalcatura](/help/sites-authoring/sca
 
      L&#39;importazione per [fornitore commerce](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); per impostazione predefinita, Geometrixx.
 
-   * **File origine**
+   * **File di origine**
 
      Posizione nel repository del file che si desidera importare.
 
@@ -194,7 +194,7 @@ Prima di creare i prodotti, definisci un [impalcatura](/help/sites-authoring/sca
 
    ![console prodotti con riferimenti aperti](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Tocca o fai clic sul tipo di riferimento (ad esempio, Pagine prodotto) per espandere l’elenco.
+1. Fai clic sul tipo di riferimento (ad esempio, Pagine prodotto) per espandere l’elenco.
 1. Seleziona un riferimento specifico per visualizzare le opzioni:
 
    * Passa a pagina prodotto
@@ -463,13 +463,13 @@ Per generare un catalogo:
    ![creazione guidata catalogo](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Passa alla blueprint del catalogo richiesta.
-1. Seleziona la **Seleziona** e tocca o fai clic sulla blueprint del catalogo richiesta.
+1. Seleziona la **Seleziona** e fai clic sulla blueprint del catalogo richiesta.
 1. Seleziona **Avanti**.
 
    ![creazione guidata proprietà catalogo](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Digita un **Titolo** e un **Nome**.
-1. Seleziona il pulante **Crea.** Viene creato il catalogo e viene visualizzata una finestra di dialogo.
+1. Seleziona la **Crea** pulsante. Viene creato il catalogo e viene visualizzata una finestra di dialogo.
 
    ![finestra di dialogo per creazione catalogo](/help/sites-administering/assets/chlimage_1-101.png)
 
@@ -524,7 +524,7 @@ Per eseguire il rollout di un catalogo:
 
    ![rollout](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. Nella procedura guidata, imposta il rollout in base alle esigenze, quindi tocca o fai clic su **Modifiche rollout**.
+1. Nella procedura guidata, imposta il rollout in base alle esigenze, quindi fai clic su **Modifiche rollout**.
 1. Viene visualizzata una finestra di dialogo. Seleziona **Fine** al termine del processo.
 
 #### Rollout di un catalogo - Interfaccia classica {#rolling-out-a-catalog-classic-ui}
@@ -549,7 +549,7 @@ Per eseguire il rollout di un catalogo:
 
    ![Icona Importa blueprint](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. Nella procedura guidata, seleziona l’Origine desiderata e tocca o fai clic su **Successivo**.
+1. Nella procedura guidata, seleziona l’Origine desiderata e fai clic su **Successivo**.
 
    ![procedura guidata blueprint](/help/sites-administering/assets/chlimage_1-102.png)
 

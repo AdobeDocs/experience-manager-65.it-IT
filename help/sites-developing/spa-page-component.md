@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 8%
+source-wordcount: '723'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ In un SPA il componente page non fornisce gli elementi HTML dei suoi componenti 
 
 >[!NOTE]
 >
->L’editor SPA è la soluzione consigliata per i progetti che richiedono un rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+>L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
 
 ## Introduzione {#introduction}
 

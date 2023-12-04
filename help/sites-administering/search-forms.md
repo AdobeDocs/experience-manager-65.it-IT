@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 12%
+source-wordcount: '2072'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ A [intervallo di predicato](#predicates-and-their-settings)s sono disponibili co
 
    * **Generale**
 
-      * **Moduli di ricerca**
+      * **Cerca in Forms**
 
 La prima volta che accedi a questa console puoi vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione appropriata è quella predefinita (predefinita) e non può essere eliminata. Dopo aver personalizzato la configurazione, il blocco scompare a meno che [elimina la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default). In tal caso, viene ripristinato il valore predefinito (e l&#39;indicatore del lucchetto).
 
@@ -64,7 +64,7 @@ Le configurazioni predefinite disponibili sono:
 
   Questa configurazione definisce le opzioni disponibili durante la ricerca di risorse Scene7 nel browser Risorse (durante la modifica di una pagina).
 
-* **Barra di ricerca amministrazione sito**:
+* **Barra di ricerca amministrazione siti**:
 
   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando utilizza la barra di ricerca della console Sites.
 
@@ -76,7 +76,7 @@ Le configurazioni predefinite disponibili sono:
 
   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente quando utilizza la console Assets.
 
-* **Barra di ricerca amministrazione progetti:**
+* **Barra di ricerca amministrazione cataloghi:**
 
   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca in un catalogo di e-commerce.
 
@@ -92,7 +92,7 @@ Le configurazioni predefinite disponibili sono:
 
   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca di prodotti commerce.
 
-* **Barra di ricerca amministrazione progetti:**
+* **Barra di ricerca amministrazione progetto:**
 
   Questa configurazione definisce le opzioni di ricerca disponibili per l’utente durante la ricerca nei progetti.
 
@@ -203,7 +203,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
     </ul> </td>
   </tr>
   <tr>
-   <td>Opzioni Proprietà </td>
+   <td>Proprietà Options </td>
    <td>Cerca in una proprietà dell’opzione.</td>
    <td>
     <ul>
@@ -506,7 +506,7 @@ L’esempio seguente (per eseguire ricerche in base al modello utilizzato per cr
 
 1. Apri **Cerca in Forms** e selezionare la configurazione da aggiornare. Ad esempio: **Barra di ricerca amministrazione siti**.
 
-   Quindi tocca o fai clic sul pulsante **Modifica moduli di ricerca** icona.
+   Quindi fai clic su **Modifica moduli di ricerca** icona.
 
 1. A seconda della configurazione, aggiungi un **Opzioni** o **Proprietà Options** alla configurazione.
 1. Aggiornare i campi, in particolare:

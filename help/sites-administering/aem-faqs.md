@@ -2,9 +2,9 @@
 title: Domande frequenti su AEM
 description: Utilizza queste domande frequenti per comprendere, configurare e risolvere i problemi relativi ai flussi di lavoro o ai problemi più comuni in AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Se l’utente non dispone delle autorizzazioni di eliminazione per il caricament
 
 #### Quali sono le impostazioni predefinite per le configurazioni OOTB durante la creazione della copia in lingua? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Quando crei una copia per lingua tramite l’interfaccia utente touch (**Riferimenti** -> **Aggiorna copia per lingua**), viene creata una nuova cartella DAM nella nuova lingua e da qui viene fatto riferimento alle risorse.
+Quando crei una copia per lingua tramite l’interfaccia utente touch (**Riferimenti** > **Aggiorna copia per lingua**), viene creata una nuova cartella DAM nella nuova lingua e da qui viene fatto riferimento alle risorse.
 
 Impostazione predefinita per le configurazioni OOTB. È possibile impostare **Traduci risorse di pagina** = **Non tradurre** nelle configurazioni di traduzione.
 Per AEM 6.4, **Strumenti** > **Cloud Service** > **Servizi cloud di traduzione**.

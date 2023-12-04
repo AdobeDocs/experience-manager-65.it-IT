@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -107,9 +107,9 @@ Verifica i seguenti parametri:
 ### Problema: si è verificato un errore imprevisto {#problem-unexpected-error-encountered}
 
 1. Nell’URL del modulo, aggiungi un parametro di query debugClientLibs e impostane il valore su true (ad esempio: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; xdp=&quot;&quot; file=&quot;&quot;>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
-1. Nel browser desktop come chrome, passa a Strumenti di sviluppo -> Console.
+1. Nel browser desktop come chrome, passa a Strumenti di sviluppo > Console.
 1. Apri i registri per identificare il tipo di errore. Per informazioni dettagliate sui registri, consulta [registri per moduli HTML5](/help/forms/using/enable-logs.md).
-1. Passa a Strumenti per sviluppatori > Console. Utilizza la traccia dello stack per individuare il codice che causa l’errore. Debug dell’errore per risolvere il problema.
+1. Vai a Strumenti di sviluppo > Console. Utilizza la traccia dello stack per individuare il codice che causa l’errore. Debug dell’errore per risolvere il problema.
 
    >[!NOTE]
    >
@@ -124,7 +124,7 @@ Verifica i seguenti parametri:
 
 ## Problema: i messaggi di errore localizzati non vengono visualizzati {#problem-localized-error-messages-do-not-display}
 
-1. Esegui il rendering del modulo con un parametro di query aggiuntivo **debugClientLibs=true** nel browser desktop, quindi vai a Strumenti di sviluppo -> Risorse e controlla il file I18N.css.
+1. Esegui il rendering del modulo con un parametro di query aggiuntivo **debugClientLibs=true** nel browser desktop, quindi vai a Strumenti di sviluppo > Risorse e controlla il file I18N.css.
 1. Se il file non è disponibile, accedi a CRX DE da https://&lt;server>:&lt;port>/crx/de
 1. Nella gerarchia delle cartelle a sinistra, passa a /libs/fd/xfaforms/clientlibs/I18N e accertati che siano presenti i seguenti file e cartelle:
 
@@ -181,6 +181,6 @@ Verifica i seguenti parametri:
  </tbody>
 </table>
 
-1. Nel browser desktop, vai a Strumenti di sviluppo -> Risorse.
+1. Nel browser desktop, vai a Strumenti di sviluppo > Risorse.
 
    Se l&#39;immagine è visualizzata, selezionare la casella di controllo a sinistra in Frame.

@@ -2,10 +2,10 @@
 title: Come modellare il contenuto
 description: In questa parte del Percorso per sviluppatori di AEM headless, scopri come modellare i contenuti per la distribuzione AEM headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 68%
+source-wordcount: '1795'
+ht-degree: 67%
 
 ---
 
@@ -15,7 +15,7 @@ In questa parte del [Percorso per sviluppatori di AEM headless](overview.md), pu
 
 ## Percorso affrontato finora {#story-so-far}
 
-All&#39;inizio, [Scopri lo sviluppo headless di CMS](learn-about.md) la distribuzione di contenuti headless e i motivi per cui dovrebbero essere utilizzati. In seguito la [Guida introduttiva a AEM headless ](getting-started.md) ha descritto AEM headless nel contesto del tuo progetto.
+All&#39;inizio, [Scopri lo sviluppo headless di CMS](learn-about.md) la distribuzione di contenuti headless e i motivi per cui dovrebbero essere utilizzati. Then [Guida introduttiva di AEM Headless](getting-started.md) ha descritto AEM Headless nel contesto del tuo progetto.
 
 Nel documento precedente del percorso di AEM headless, [Percorso della tua prima esperienza con AEM headless](path-to-first-experience.md), hai quindi appreso i passaggi necessari per implementare il primo progetto. Dopo averlo letto, dovresti:
 
@@ -158,7 +158,7 @@ I modelli per frammenti di contenuto forniscono vari meccanismi che consentono d
 Un modello per frammento di contenuto descrive un’entità.
 
 >[!NOTE]
->Per poter creare modelli, è necessario abilitare la funzionalità Frammento di contenuto nel browser configurazioni.
+>Abilita la funzionalità Frammento di contenuto nel browser configurazioni per creare modelli.
 
 >[!TIP]
 >

@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 66%
+source-wordcount: '567'
+ht-degree: 65%
 
 ---
 
@@ -53,11 +53,11 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
 >[!CAUTION]
 >
->È necessario proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+>Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull’istanza di pubblicazione, in modo che non sia accessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 >
 >Consulta [Prerequisiti per l&#39;integrazione con Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) per informazioni dettagliate.
 
-Una volta completata l’integrazione, puoi [contenuto mirato dell&#39;autore](/help/sites-authoring/content-targeting-touch.md) che invia i dati dei visitatori ad Adobe Target. I Componenti Pagina richiedono un codice specifico per abilitare il targeting dei contenuti. (Vedi [Sviluppo per contenuti mirati](/help/sites-developing/target.md).)
+Una volta completata l’integrazione, puoi [contenuto mirato dell&#39;autore](/help/sites-authoring/content-targeting-touch.md) che invia i dati dei visitatori ad Adobe Target. I Componenti Pagina richiedono un codice specifico per abilitare il targeting dei contenuti. (vedere [Sviluppo per contenuti di destinazione](/help/sites-developing/target.md).)
 
 >[!NOTE]
 >

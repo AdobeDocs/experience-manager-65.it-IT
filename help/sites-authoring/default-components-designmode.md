@@ -2,9 +2,9 @@
 title: Configurazione dei componenti predefiniti in modalità Progettazione
 description: Configurazione dei componenti di Adobe Experience Manager in modalità Progettazione.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '905'
 ht-degree: 10%
 
 ---
@@ -56,11 +56,11 @@ Per attivare o disattivare un componente:
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Tocca o fai clic su un componente. Se selezionato, il componente avrà un bordo blu.
+1. Fai clic su un componente. Se selezionato, il componente presenta un bordo blu.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Tocca o fai clic sul pulsante **Elemento padre** icona.
+1. Fai clic su **Elemento padre** icona.
 
    ![Elemento padre](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -109,7 +109,7 @@ Per attivare o disattivare un componente:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Tocca o fai clic su un componente con un bordo blu. In questo esempio viene selezionato un componente immagine protagonista.
+1. Fai clic su un componente con un bordo blu. In questo esempio, viene selezionato un componente immagine protagonista.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -153,4 +153,4 @@ Per attivare o disattivare un componente:
 
    ![Sposta](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Tocca o fai clic sul pulsante **Fine** per salvare e chiudere la finestra.
+1. Fai clic su **Fine** per salvare e chiudere la finestra.

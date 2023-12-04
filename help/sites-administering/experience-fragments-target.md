@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 43%
+source-wordcount: '1513'
+ht-degree: 41%
 
 ---
 
@@ -152,19 +152,19 @@ Per esportare un frammento di esperienza da AEM a Target (dopo aver specificato 
    >
    >Deve essere una variante Web del frammento di esperienza.
 
-1. Tocca o fai clic su **Esporta in Adobe Target**.
+1. Clic **Esporta in Adobe Target**.
 
    >[!NOTE]
    >
    >Se il frammento di esperienza è già stato esportato, seleziona **Aggiorna in Adobe Target**.
 
-1. Tocca o fai clic su **Esporta senza pubblicare** o **Pubblica** se necessario.
+1. Clic **Esporta senza pubblicare** o **Pubblica** secondo necessità.
 
    >[!NOTE]
    >
    >Selezione **Pubblica** pubblica immediatamente il frammento di esperienza e lo invia a Target.
 
-1. Nella finestra di conferma tocca o fai clic su **OK**.
+1. Clic **OK** nella finestra di dialogo di conferma.
 
    Il frammento di esperienza dovrebbe ora essere in Target.
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4963'
-ht-degree: 1%
+source-wordcount: '4830'
+ht-degree: 0%
 
 ---
 
@@ -602,7 +602,7 @@ Sola lettura.
 * Argomenti: nessuno
 * Valore restituito: nessuno
 
-**joinCluster** Aggiunge questo repository a un cluster come nodo controllato dal cluster master. È necessario specificare un nome utente e una password per l&#39;autenticazione. La connessione utilizza l’autenticazione di base. Le credenziali di sicurezza sono codificate in base 64 prima di essere inviate al server.
+**joinCluster** Aggiunge questo repository a un cluster come nodo controllato dal cluster master. Fornisci un nome utente e una password per scopi di autenticazione. La connessione utilizza l’autenticazione di base. Le credenziali di sicurezza sono codificate in base 64 prima di essere inviate al server.
 
 * Argomenti:
 
@@ -708,11 +708,11 @@ Sola lettura.
 **Abilitato** Valore booleano che indica se l’agente è abilitato:
 
 * `true`: abilitato.
-* `false`: disabilitato.
+* `false`: disattivato.
 
 **QueueBlocked** Valore booleano che indica se la coda esiste ed è bloccata:
 
-* `true`: Bloccato. Un nuovo tentativo automatico è in sospeso.
+* `true`: bloccato. Un nuovo tentativo automatico è in sospeso.
 * `false`: non bloccato o inesistente.
 
 Sola lettura.
@@ -777,8 +777,8 @@ Fornisce statistiche sulle richieste HTTP in modo da poter monitorare le prestaz
 
 **installato** Valore booleano che indica se il pacchetto è installato:
 
-* `true`: Installato.
-* `false`: Non installato.
+* `true`: installato.
+* `false`: non installato.
 
 **installBy** ID dell’ultimo utente che ha installato il pacchetto.
 

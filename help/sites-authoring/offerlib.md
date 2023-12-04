@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 93%
+source-wordcount: '834'
+ht-degree: 74%
 
 ---
 
@@ -33,21 +33,21 @@ Crea un marchio a cui sono associate le offerte. Apri un marchio nella console O
 
 Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato anche nella [Console Attività](/help/sites-authoring/activitylib.md) dove puoi aggiungere e amministrare attività per il marchio.
 
-1. Fai clic o tocca **Personalizzazione** > **Offerte** nella console di navigazione.
+1. Nella console Navigazione, fai clic su **Personalizzazione** > **Offerte**.
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Tocca o fai clic su **Crea** e quindi su **Crea** **marchio**.
-1. Seleziona il modello di marchio e tocca o fai clic su **Avanti**.
+1. Clic **Crea** e poi **Crea** **Marchio**.
+1. Seleziona il modello del brand e fai clic su **Successivo**.
 1. Digita un titolo per il marchio in base a come desideri che appaia nelle console Offerte e Attività. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
-1. Tocca o fai clic su **Crea**.
+1. Fai clic su **Crea**.
 
 ## Aggiunta di una cartella a una libreria di offerte {#add-a-folder-to-an-offer-library}
 
 Aggiungi una cartella alla libreria di offerte di un marchio per organizzare e archiviare le offerte. Puoi creare una cartella sotto il marchio o sotto altre cartelle.
 
 1. Nella console Offerte, apri il percorso in cui desideri creare la cartella. Ad esempio, apri il marchio per creare una cartella di livello superiore o apri un’altra cartella nella libreria.
-1. Tocca o fai clic su **Crea** > **Crea cartella o offerta**.
+1. Clic **Crea** > **Crea cartella o offerta**.
 
    ![schermata_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
@@ -56,7 +56,7 @@ Aggiungi una cartella alla libreria di offerte di un marchio per organizzare e a
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-1. Tocca o fai clic su **Crea**.
+1. Fai clic su **Crea**.
 
 ## Aggiungere un’offerta a una libreria di offerte {#add-an-offer-to-an-offer-library}
 
@@ -65,13 +65,13 @@ Aggiungi un’offerta alla libreria di offerte di un marchio in modo che possa e
 Dopo aver creato l’offerta, puoi aprirla per eseguire l’authoring del contenuto.
 
 1. Nella console Offerte, apri la posizione in cui desideri creare l’offerta. Ad esempio, apri il marchio per creare un’offerta di livello superiore o apri una cartella nella libreria.
-1. Tocca o fai clic su **Crea** > **Crea cartella o offerta**.
+1. Clic **Crea** > **Crea cartella o offerta**.
 
    ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Seleziona il modello **Pagina offerte** e tocca o fai clic su **Avanti**.
-1. Digita un titolo per l’offerta e facoltativamente seleziona o digita uno o più tag da associare all’offerta, quindi tocca o fai clic su **Crea**.
-1. Nella finestra di dialogo di conferma, per aprire l&#39;offerta di modifica tocca o fai clic su **Apri pagina**.
+1. Seleziona la **Pagina offerta** e quindi fare clic su **Successivo**.
+1. Digita un titolo per l’offerta e facoltativamente seleziona o digita uno o più tag da associare all’offerta, quindi fai clic su **Crea**.
+1. Nella finestra di dialogo di conferma, per aprire l’offerta da modificare fai clic su **Apri pagina**.
 
 ## Modifica di un’offerta {#editing-an-offer}
 
@@ -79,7 +79,7 @@ Apri un’offerta e modifica il contenuto in base a come desideri che appaia nel
 
 Puoi aprire un’offerta da una cartella in una libreria di offerte o dai risultati della ricerca. Puoi anche aprire un’offerta da un’esperienza che utilizza l’offerta.
 
-1. Nella console Offerte, tocca o fai clic sull’icona accanto all’offerta e tocca o fai clic su **Modifica**.
+1. Nella console Offerte, fai clic sull’icona accanto all’offerta e fai clic su **Modifica**.
 1. Aggiungi componenti all’offerta e modifica normalmente il contenuto dei componenti.
 
 ## Eliminazione di un’offerta {#deleting-an-offer}
@@ -88,15 +88,15 @@ Elimina un’offerta quando non è più necessaria. Quando tenti di eliminare un
 
 Puoi eliminare un’offerta quando visualizzi il contenuto di una cartella in una libreria di offerte o nei risultati della ricerca.
 
-1. Nella console Offerte, tocca o fai clic sull’icona accanto all’offerta e tocca o fai clic su **Elimina**.
+1. Nella console Offerte, fai clic sull’icona accanto all’offerta e fai clic su **Elimina**.
 
-   Seleziona l’offerta e tocca o fai clic su **Elimina**.
+   Seleziona l’offerta e fai clic su **Elimina**.
 
-1. Nella finestra di dialogo visualizzata, tocca o fai clic su **Elimina** per confermare l’eliminazione.
+1. Nella finestra di dialogo visualizzata, fai clic su **Elimina** per confermare l’eliminazione.
 1. Se l’offerta viene utilizzata in una o più esperienze, viene visualizzata una finestra di dialogo per indicare che si fa riferimento all’offerta:
 
-   * Per eliminare l’offerta e rimuoverla dalle esperienze, tocca o fai clic su **Forza eliminazione**.
-   * Per mantenere l’offerta, tocca o fai clic su **Annulla**.
+   * Per eliminare l’offerta e rimuoverla dalle esperienze, fai clic su **Forza eliminazione**.
+   * Per mantenere l’offerta, fai clic su **Annulla**.
 
 ## Ricerca di offerte {#searching-for-offers}
 
@@ -108,5 +108,5 @@ I criteri di ricerca correnti vengono visualizzati accanto ai risultati della ri
 
 Per cercare le offerte:
 
-1. Nella parte superiore della console Offerte, tocca o fai clic sull&#39;icona della lente d&#39;ingrandimento. Per impostazione predefinita, la ricerca è limitata alle offerte.
+1. Nella parte superiore della console Offerte, fai clic sull’icona della lente di ingrandimento. Per impostazione predefinita, la ricerca è limitata alle offerte.
 1. Immetti la parola chiave per cercare le offerte. Seleziona un elemento dai risultati di ricerca.

@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4834'
-ht-degree: 77%
+source-wordcount: '4825'
+ht-degree: 72%
 
 ---
 
@@ -51,7 +51,7 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 
 Prima di iniziare, è importante considerare i seguenti punti:
 
-* La creazione di un modello richiede collaborazione. Per questo motivo per ogni attività è indicato il relativo [Ruolo.](#roles)
+* La creazione di un modello richiede collaborazione. Per questo motivo il [Ruolo](#roles) è indicato per ogni attività.
 
 * A seconda di come è configurata l’istanza, AEM ora fornisce [due tipi di modello di base](/help/sites-authoring/templates.md#editable-and-static-templates). Questo non influisce su come effettivamente [utilizzare un modello per creare una pagina](#using-a-template-to-create-a-page), ma influisce sul tipo di modello che è possibile creare e su come una pagina si relaziona al relativo modello.
 
@@ -151,7 +151,7 @@ Quando crei un modello modificabile:
 
 ### Creazione di un nuovo modello - Autore del modello {#creating-a-new-template-template-author}
 
-1. Apri la **Console modelli** (da **Strumenti ->** **Generale**) e passa alla cartella desiderata.
+1. Apri **Console modelli** (tramite **Strumenti >** **Generale**) quindi passare alla cartella desiderata.
 
    >[!NOTE]
    >
@@ -173,7 +173,7 @@ Quando crei un modello modificabile:
    * **Nome modello**
    * **Descrizione**
 
-1. Seleziona **Crea**. Viene visualizzata una conferma, seleziona **Apri**[](#editingatemplate) per iniziare a modificare il modello o **Fine** per tornare alla console dei modelli.
+1. Seleziona **Crea**. Viene visualizzata una conferma, seleziona **Apri** per iniziare [modifica del modello](#editingatemplate) o **Fine** per tornare alla console dei modelli.
 
    >[!NOTE]
    >
@@ -221,14 +221,14 @@ Per definire la miniatura del modello:
 1. Modifica le proprietà del modello.
 1. Scegli se desideri caricare una miniatura o generarla dal contenuto del modello.
 
-   * Per caricare una miniatura, tocca o fai clic su **Carica immagine**
-   * Per generare una miniatura, tocca o fai clic su **Genera anteprima**
+   * Per caricare una miniatura, fai clic su **Carica immagine**
+   * Se desideri generare una miniatura, fai clic su **Genera anteprima**
 
 1. Per entrambi i metodi viene visualizzata un’anteprima della miniatura.
 
-   Se non ti soddisfa, tocca o fai clic su **Cancella** per caricare un’altra immagine o rigenerare la miniatura.
+   Se non è soddisfacente, fare clic su **Cancella** per caricare un’altra immagine o rigenerare la miniatura.
 
-1. Quando la miniatura è soddisfacente, tocca o fai clic su **Salva e chiudi**.
+1. Quando si è soddisfatti della miniatura, fare clic su **Salva e chiudi**.
 
 ### Abilitazione e autorizzazione di un modello - Autore del modello   {#enabling-and-allowing-a-template-template-author}
 
@@ -397,7 +397,7 @@ In entrata **Struttura** modalità dell’editor modelli:
 
   Può anche dipendere dalle azioni intraprese, ad esempio se un criterio è stato associato al componente, in tal caso l’icona di configurazione del progetto diventa disponibile.
 
-* **Modifica e Configura**
+* **Modifica e configura**
 
   Con queste due azioni è possibile aggiungere contenuti ai componenti.
 
@@ -424,7 +424,7 @@ In entrata **Struttura** modalità dell’editor modelli:
 
   Le proprietà disponibili dipendono dal componente selezionato. Ad esempio, per un componente testo le proprietà definiscono le opzioni di copia e incolla, le opzioni di formattazione e lo stile di paragrafo, insieme ad altre opzioni.
 
-  ***Criterio***
+  ***Policy***
 
   I criteri relativi al contenuto (o alla progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minime/massime. Sono applicabili al modello (e alle pagine create con il modello).
 
@@ -463,13 +463,13 @@ In entrata **Struttura** modalità dell’editor modelli:
 
   Ad esempio, per un componente immagine è possibile definire le larghezze consentite e abilitare il caricamento lento.
 
-  Se per un’impostazione sono consentite più configurazioni, tocca o fai clic sul pulsante **Aggiungi** per aggiungerne un’altra.
+  Se un&#39;impostazione consente più configurazioni, fai clic sul pulsante **Aggiungi** per aggiungere un’altra configurazione.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  Per rimuovere una configurazione, tocca o fai clic sul pulsante **Elimina** situato a destra della configurazione.
+  Per rimuovere una configurazione, fai clic su **Elimina** a destra della configurazione.
 
-  Per rimuovere una configurazione, tocca o fai clic ** pulsante Elimina**.
+  Per rimuovere una configurazione, fai clic sul pulsante** Elimina**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -487,7 +487,7 @@ In entrata **Struttura** modalità dell’editor modelli:
 
   >[!NOTE]
   >
-  >[I criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni di interfaccia utente. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Criteri dei contenuti per i componenti che si avvalgono dell’editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) può essere definito solo per le opzioni rese disponibili dall’editor Rich Text tramite le impostazioni di interfaccia utente. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Criteri e proprietà (contenitore di layout)**
 
@@ -499,7 +499,7 @@ In entrata **Struttura** modalità dell’editor modelli:
 
   La finestra di configurazione è divisa in due parti, come la finestra per uso generale.
 
-  ***Criterio***
+  ***Policy***
 
   I criteri relativi al contenuto (o alla progettazione) definiscono le proprietà di progettazione di un componente. Ad esempio, i componenti disponibili o le dimensioni minime/massime. Sono applicabili al modello (e alle pagine create con il modello).
 
@@ -525,13 +525,13 @@ In entrata **Struttura** modalità dell’editor modelli:
 
   ![chlimage_1-144](assets/chlimage_1-144.png)
 
-  *Componenti standard*
+  *Componenti predefiniti*
 
   Nella scheda **Componenti predefiniti**, è possibile definire quali componenti vengono associati automaticamente a determinati tipi di file multimediali in modo che, quando un autore trascina una risorsa dal browser di risorse, AEM sappia a quale componente associarla. Per questa configurazione sono disponibili solo i componenti con aree di rilascio.
 
-  Tocca o fai clic su **Aggiungi mappatura** per aggiungere un componente completamente nuovo e la mappatura del tipo MIME.
+  Clic **Aggiungi mappatura** per aggiungere un componente completamente nuovo e la mappatura del tipo MIME.
 
-  Seleziona un componente nell’elenco e tocca o fai clic su **Aggiungi tipo** per aggiungere un altro tipo MIME a un componente già mappato. Fai clic sull’icona **Elimina** per rimuovere un tipo di MIME.
+  Seleziona un componente nell’elenco e fai clic su **Aggiungi tipo** per aggiungere un tipo MIME aggiuntivo a un componente già mappato. Fai clic sull’icona **Elimina** per rimuovere un tipo di MIME.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 

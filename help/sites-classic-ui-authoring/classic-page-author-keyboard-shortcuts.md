@@ -1,17 +1,15 @@
 ---
 title: Scelte rapide da tastiera durante la modifica delle pagine
 description: AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono utilizzabili quando si modificano le pagine, altre quando si utilizzano le console.
-uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 21%
+source-wordcount: '307'
+ht-degree: 17%
 
 ---
 
@@ -48,17 +46,17 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr>
    <td> </td>
    <td><code>Ctrl-y</code></td>
-   <td>Ripristina l’ultima modifica.</td>
+   <td>Ripeti l’ultima modifica.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Shift-Click</code></strong></td>
-   <td>Seleziona più paragrafi.</td>
+   <td>Selezionare più paragrafi.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Click</code></strong></td>
-   <td>Seleziona più paragrafi.</td>
+   <td>Selezionare più paragrafi.</td>
   </tr>
   <tr>
    <td> </td>
@@ -162,7 +160,7 @@ Sono disponibili scelte rapide da tastiera aggiuntive per gli sviluppatori deskt
    <th>Descrizione</th>
   </tr>
   <tr>
-   <td>Modalità modifica</td>
+   <td>Modalità di modifica</td>
    <td>Imposta il seguente suffisso nell’URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizza:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Per visualizzare le statistiche di tempo per il caricamento della pagina.</td>
   </tr>

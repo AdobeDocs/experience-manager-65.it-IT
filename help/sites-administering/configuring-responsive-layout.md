@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 3%
+source-wordcount: '1275'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ Con questi meccanismi basati su una griglia dinamica è possibile:
 
 >[!NOTE]
 >
->In un’installazione standard, il layout reattivo è stato configurato per [Sito di riferimento We.Retail](/help/sites-developing/we-retail.md). Devi ancora [attivare il componente Contenitore di layout](#enable-the-layout-container-component-for-page) per altre pagine.
+>In un’installazione standard, il layout reattivo è stato configurato per [Sito di riferimento We.Retail](/help/sites-developing/we-retail.md). [Attivare il componente Contenitore di layout](#enable-the-layout-container-component-for-page) per altre pagine.
 
 ## Configurazione dell’emulatore reattivo {#configuring-the-responsive-emulator}
 

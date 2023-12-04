@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '586'
 ht-degree: 41%
 
 ---
@@ -52,7 +52,7 @@ Fai clic sul pulsante con i puntini di sospensione in basso a destra del riquadr
 
 #### Dettagli attività {#task-details}
 
-Per ulteriori informazioni su una particolare attività, nella casella in entrata, tocca o fai clic sull’attività per selezionarla, quindi tocca o fai clic su **Apri** nella barra degli strumenti.
+Per ulteriori informazioni su una particolare attività, nella casella in entrata, fai clic sull’attività per selezionarla, quindi fai clic su **Apri** nella barra degli strumenti.
 
 ![Dettagli attività](assets/project-task-detail.png)
 
@@ -70,12 +70,12 @@ Puoi aggiungere nuove attività ai progetti. Queste attività vengono quindi vis
 Per aggiungere un’attività:
 
 1. Nel progetto, individua **Attività** affiancare
-1. Tocca o fai clic sulla freccia verso il basso in alto a destra della sezione e seleziona **Crea attività**.
+1. Fai clic sulla freccia verso il basso in alto a destra della sezione e seleziona **Crea attività**.
 1. In **Aggiungi attività** fornire dettagli sul task quali priorità, assegnatario e data di scadenza.
 
    ![Aggiunta di un’attività](assets/project-add-task.png)
 
-1. Tocca o fai clic su **Invia**.
+1. Fai clic su **Invia**.
 
 ## Utilizzo delle attività nella casella in entrata {#working-with-tasks-in-the-inbox}
 

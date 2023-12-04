@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 22%
+source-wordcount: '964'
+ht-degree: 18%
 
 ---
 
@@ -34,16 +34,16 @@ Il modo più semplice per eseguire questa operazione è quello di **projects-use
 
 Segui questi passaggi per creare un progetto.
 
-1. In **Progetti** console, tocca o fai clic su **Crea** per aprire **Crea progetto** procedura guidata.
-1. Seleziona un modello e fai clic su **Avanti**. Ulteriori informazioni sui modelli di progetto standard [qui.](/help/sites-authoring/projects.md#project-templates)
+1. In **Progetti** console, fai clic su **Crea** per aprire **Crea progetto** procedura guidata.
+1. Seleziona un modello e fai clic su **Successivo**. Ulteriori informazioni sui modelli di progetto standard [qui.](/help/sites-authoring/projects.md#project-templates)
 
    ![Creazione guidata progetto](assets/create-project-wizard.png)
 
-1. Definisci il **Titolo** e **Descrizione** e aggiungi **Miniatura** immagine, se necessario. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono,
+1. Definisci il **Titolo** e **Descrizione** e aggiungi **Miniatura** immagine, se necessario. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono.
 
    ![Passaggio proprietà della procedura guidata](assets/create-project-wizard-properties.png)
 
-1. Tocca o fai clic su **Crea**. Nella finestra di conferma ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
+1. Fai clic su **Crea**. Nella finestra di conferma ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
 
 La procedura per la creazione di un progetto è la stessa per tutti i modelli di progetto. La differenza tra i tipi di progetti si riferisce ai progetti disponibili [ruoli utente](/help/sites-authoring/projects.md) e [flussi di lavoro.](/help/sites-authoring/projects-with-workflows.md)
 
@@ -54,11 +54,11 @@ I progetti consentono di raggruppare le risorse in un’unica entità per gestir
 Per associare le risorse a un progetto:
 
 1. Apri il progetto dalla console **Progetti**.
-1. Tocca o fai clic su **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
+1. Clic **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
 
    ![Aggiungi riquadro](assets/project-add-tile.png)
 
-1. Tocca o fai clic su **Crea**. La risorsa è ora collegata al progetto e accessibile da questo.
+1. Fai clic su **Crea**. La risorsa è ora collegata al progetto e accessibile da questo.
 
 ### Aggiunta di elementi a un riquadro {#adding-items-to-a-tile}
 
@@ -84,7 +84,7 @@ Lo scopo principale dei progetti è quello di raggruppare le informazioni associ
 
 Per aprire un riquadro e visualizzare o modificare gli elementi:
 
-1. Tocca o fai clic sull’icona dei puntini di sospensione in basso a destra della sezione.
+1. Fai clic sull’icona dei puntini di sospensione in basso a destra della sezione.
 
    ![Riquadro Attività](assets/project-tile-tasks.png)
 
@@ -96,7 +96,7 @@ Per aprire un riquadro e visualizzare o modificare gli elementi:
 
 La timeline di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la sequenza temporale del progetto, segui la procedura riportata di seguito.
 
-1. In **Progetti** , tocca o fai clic su **Timeline** nel selettore della barra in alto a sinistra nella console.
+1. In **Progetti** console, fai clic su **Timeline** nel selettore della barra in alto a sinistra nella console.
    ![Selezione della modalità timeline](assets/projects-timeline-rail.png)
 2. Nella console seleziona il progetto per il quale desideri visualizzarne la timeline.
    ![Vista timeline del progetto](assets/project-timeline-view.png)
@@ -119,7 +119,7 @@ Sono disponibili diverse opzioni per organizzare i progetti e mantenere **Proget
 
 Puoi creare cartelle in **Progetti** per raggruppare e organizzare progetti simili.
 
-1. In **Progetti** tocca o fai clic sulla console **Crea** e poi **Crea cartella**.
+1. In **Progetti** clic sulla console **Crea** e poi **Crea cartella**.
 
    ![Crea cartella](assets/project-create-folder.png)
 
@@ -141,7 +141,7 @@ Per disattivare un progetto, effettua le seguenti operazioni.
 
    ![Selettore dello stato del progetto nella finestra delle proprietà](assets/project-status.png)
 
-1. Tocca o fai clic su **Salva e chiudi** per salvare le modifiche.
+1. Clic **Salva e chiudi** per salvare le modifiche.
 
 ### Eliminazione di progetti {#deleting-a-project}
 
@@ -149,13 +149,13 @@ Per eliminare un progetto, segui la procedura riportata di seguito.
 
 1. Passa al livello superiore della sezione **Progetti** console.
 1. Seleziona il progetto nella console.
-1. Tocca o fai clic su **Elimina** nella barra degli strumenti.
+1. Clic **Elimina** nella barra degli strumenti.
 1. L’AEM può rimuovere/modificare i dati del progetto associato in seguito all’eliminazione del progetto. Seleziona le opzioni necessarie nella **Elimina progetto** .
    * Rimuovi gruppi e ruoli del progetto
    * Elimina cartella risorse progetto
    * Termina flussi di lavoro per progetto
 
    ![Opzioni di eliminazione progetto](assets/project-delete-options.png)
-1. Tocca o fai clic su **Elimina** per eliminare il progetto con le opzioni selezionate.
+1. Clic **Elimina** per eliminare il progetto con le opzioni selezionate.
 
 Per ulteriori informazioni sui gruppi creati automaticamente dai progetti, consulta [Creazione automatica gruppo](/help/sites-authoring/projects.md#auto-group-creation) per i dettagli.

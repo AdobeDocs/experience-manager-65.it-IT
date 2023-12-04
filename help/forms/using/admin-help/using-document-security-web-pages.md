@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Utilizzare questi collegamenti per accedere alle varie pagine, in cui è possibi
 
 Le applicazioni client devono essere configurate in modo da connettersi alla protezione dei documenti per proteggere i documenti, aprire i documenti protetti tramite policy e connettersi alle pagine web di Document Security. Consulta *Guida di Acrobat* o il *Guida di RightsManagementExtension* per informazioni sulla configurazione della connessione all&#39;interno dell&#39;applicazione client.
 
-Document Security è accessibile tramite Secure Sockets Layer (SSL). È necessario installare il certificato del sito web nell’archivio certificati in modo da poter accedere alla protezione dei documenti tramite le applicazioni client.
+Document Security è accessibile tramite Secure Sockets Layer (SSL). Installa il certificato del sito web nel tuo archivio certificati in modo da poter accedere alla sicurezza dei documenti tramite le applicazioni client.
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 

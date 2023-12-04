@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 36%
+source-wordcount: '2672'
+ht-degree: 26%
 
 ---
 
@@ -52,7 +52,7 @@ Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che
 
 ### Configurazioni di rollout installate {#installed-rollout-configurations}
 
-Nella tabella seguente sono elencate le configurazioni di rollout installate con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout. Se le azioni di configurazione del rollout installate non soddisfano le tue esigenze, puoi [creare una configurazione di rollout](#creating-a-rollout-configuration).
+Nella tabella seguente sono elencate le configurazioni di rollout installate con AEM. La tabella include le azioni di attivazione e sincronizzazione di ogni configurazione di rollout. Se le azioni di configurazione del rollout installate non soddisfano le tue esigenze, puoi [creare una configurazione di rollout](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -64,7 +64,7 @@ Nella tabella seguente sono elencate le configurazioni di rollout installate con
   </tr>
   <tr>
    <td>Configurazione di rollout standard</td>
-   <td>Configurazione di rollout standard che consente di avviare il processo di rollout all’attivazione del rollout ed esegue le seguenti azioni: crea, aggiorna, elimina contenuto e ordina nodi figlio.</td>
+   <td>Configurazione rollout standard che consente di avviare il processo di rollout all'attivazione del rollout ed esegue le seguenti azioni: crea, aggiorna, elimina contenuto e ordina nodi figlio.</td>
    <td>Al momento del rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -118,7 +118,7 @@ Nella tabella seguente sono elencate le configurazioni di rollout installate con
   </tr>
   <tr>
    <td>Configurazione rollout catalogo legacy (5.6.0)</td>
-   <td>Obsoleto. Utilizza Catalog Generator invece di MSM per i rollout di cataloghi.</td>
+   <td>Obsoleto. Utilizza Catalog Generator invece di MSM per i rollout del catalogo.</td>
    <td>Al momento del rollout</td>
    <td>editProperties</td>
   </tr>
@@ -138,17 +138,17 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
   </tr>
   <tr>
    <td>contentCopy</td>
-   <td>Quando i nodi dell’origine non esistono nella Live Copy, copia i nodi nella Live Copy. <a href="#excluding-properties-and-node-types-from-synchronization">Configura il servizio CQ MSM Content Copy Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. <br /> </td>
+   <td>Quando i nodi dell’origine non esistono nella Live Copy, copia i nodi nella Live Copy. <a href="#excluding-properties-and-node-types-from-synchronization">Configurare il servizio CQ MSM Content Copy Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentDelete</td>
-   <td><p>Elimina i nodi della Live Copy che non esistono nell’origine. <a href="#excluding-properties-and-node-types-from-synchronization">Configura il servizio CQ MSM Content Delete Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. </p> </td>
+   <td><p>Elimina i nodi della Live Copy che non esistono nell’origine. <a href="#excluding-properties-and-node-types-from-synchronization">Configurare il servizio CQ MSM Content Delete Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. </p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentUpdate</td>
-   <td>Aggiorna il contenuto della Live Copy con le modifiche apportate dal sorgente. <a href="#excluding-properties-and-node-types-from-synchronization">Configura il servizio CQ MSM Content Update Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. <br /> </td>
+   <td>Aggiorna il contenuto della Live Copy con le modifiche apportate dal sorgente. <a href="#excluding-properties-and-node-types-from-synchronization">Configurare il servizio CQ MSM Content Update Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. <br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -156,7 +156,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
    <td><p>Modifica le proprietà della Live Copy. La proprietà editMap determina quali proprietà vengono modificate e il relativo valore. Il valore della proprietà editMap deve utilizzare il formato seguente:</p> <p><code>[property_name_1]#[current_value]#</code>[nuovo_valore],<br /> <code>[property_name_2]#[current_value]#</code>[nuovo_valore],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[nuovo_valore]</p> <p>Il <code>current_value</code> e <code>new_value</code> Gli elementi sono espressioni regolari. <br /> </p> <p>Ad esempio, considera il seguente valore per editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Questo valore modifica le proprietà dei nodi Live Copy come segue:</p>
     <ul>
      <li>Il <code>sling:resourceType</code> proprietà impostate su <code>contentpage</code> o a <code>homepage</code> sono impostati su <code>mobilecontentpage.</code></li>
-     <li>Le proprietà <code>cq:template</code> impostate su <code>contentpage</code> vengono impostate su <code>mobilecontentpage.</code></li>
+     <li>Il <code>cq:template</code> proprietà impostate su <code>contentpage</code> sono impostati su <code>mobilecontentpage.</code></li>
     </ul> </td>
    <td><p> </p> <p>editMap: (String) identifica la proprietà, il valore corrente e il nuovo valore. Per informazioni, consulta la Descrizione.<br /> </p> </td>
   </tr>
@@ -172,7 +172,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Nella Live Copy, questa azione di sincronizzazione aggiorna i riferimenti, come i collegamenti.<br /> Cerca i percorsi nelle pagine Live Copy che puntano a una risorsa all’interno della blueprint. Una volta trovato, aggiorna il percorso in modo che punti alla risorsa correlata all’interno della Live Copy (anziché alla blueprint). I riferimenti che hanno destinazioni esterne alla blueprint non vengono modificati.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure il servizio CQ MSM References Update Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. </p> </td>
+   <td><p>Nella Live Copy, questa azione di sincronizzazione aggiorna i riferimenti, come i collegamenti.<br /> Cerca i percorsi nelle pagine Live Copy che puntano a una risorsa all’interno della blueprint. Una volta trovato, aggiorna il percorso in modo che punti alla risorsa correlata all’interno della Live Copy (anziché alla blueprint). I riferimenti che hanno destinazioni esterne alla blueprint non vengono modificati.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurare il servizio CQ MSM References Update Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -192,7 +192,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
   </tr>
   <tr>
    <td>flusso di lavoro</td>
-   <td><p>Avvia il flusso di lavoro definito dalla proprietà target (solo per le pagine) e accetta la Live Copy come payload.</p> <p>Il percorso di destinazione è il percorso del nodo modello.</p> </td>
+   <td><p>Avvia il flusso di lavoro definito dalla proprietà target (solo per le pagine) e accetta la Live Copy come payload.</p> <p>Il percorso di destinazione è il percorso del nodo del modello.</p> </td>
    <td>target: (stringa) percorso del modello di flusso di lavoro.<br /> </td>
   </tr>
   <tr>
@@ -202,7 +202,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
      <li>ActionSet.ACTION_NAME_REMOVE</li>
      <li>ActionSet.ACTION_NAME_SET_PROPERTY</li>
      <li>ActionSet.ACTION_NAME_ACL_MODIFY</li>
-    </ul> <p>Usa questa azione solo per le pagine.</p> </td>
+    </ul> <p>Utilizza questa azione solo per le pagine.</p> </td>
    <td>target: (stringa) ID del gruppo per il quale si stanno impostando le autorizzazioni. <br /> </td>
   </tr>
   <tr>
@@ -211,12 +211,12 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
     <ul>
      <li>ActionSet.ACTION_NAME_SET_PROPERTY</li>
      <li>ActionSet.ACTION_NAME_ACL_MODIFY</li>
-    </ul> <p>Usa questa azione solo per le pagine.</p> </td>
+    </ul> <p>Utilizza questa azione solo per le pagine.</p> </td>
    <td>target: (stringa) ID del gruppo per il quale si stanno impostando le autorizzazioni. </td>
   </tr>
   <tr>
    <td>mandatoryStructure</td>
-   <td>Imposta l’autorizzazione dell’ACL ActionSet.ACTION_NAME_REMOVE nella pagina Live Copy in sola lettura per un gruppo di utenti specifico. Usa questa azione solo per le pagine.</td>
+   <td>Imposta l’autorizzazione dell’ACL ActionSet.ACTION_NAME_REMOVE nella pagina Live Copy in sola lettura per un gruppo di utenti specifico. Utilizza questa azione solo per le pagine.</td>
    <td>target: (stringa) ID del gruppo per il quale si stanno impostando le autorizzazioni. </td>
   </tr>
   <tr>
@@ -226,7 +226,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione installate co
   </tr>
   <tr>
    <td>PageMoveAction</td>
-   <td><p>La proprietà PageMoveAction si applica quando una pagina è stata spostata nella blueprint.</p> <p>L’azione copia e non sposta la pagina Live Copy (correlata) dalla posizione prima dello spostamento a quella successiva.</p> <p>PageMoveAction non modifica la pagina LiveCopy nella posizione in cui si trovava prima dello spostamento. Pertanto, per configurazioni di rollout consecutive ha lo stato di LiveRelationship senza blueprint.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configura il servizio Azione di spostamento di pagine di CQ MSM</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. </p> <p>Questa deve essere l’unica azione di sincronizzazione inclusa in una configurazione di rollout.</p> </td>
+   <td><p>La proprietà PageMoveAction si applica quando una pagina è stata spostata nella blueprint.</p> <p>L’azione copia e non sposta la pagina Live Copy (correlata) dalla posizione prima dello spostamento a quella successiva.</p> <p>PageMoveAction non modifica la pagina LiveCopy nella posizione in cui si trovava prima dello spostamento. Pertanto, per configurazioni di rollout consecutive ha lo stato di LiveRelationship senza blueprint.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurare il servizio CQ MSM Page Move Action</a> per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. </p> <p>Questa deve essere l’unica azione di sincronizzazione inclusa in una configurazione di rollout.</p> </td>
    <td><p>prop_referenceUpdate: (booleano) Impostare su true per aggiornare i riferimenti. Il valore predefinito è true.</p> <p> </p> </td>
   </tr>
   <tr>
@@ -291,11 +291,11 @@ La tabella seguente descrive le proprietà che puoi configurare:
   </tr>
   <tr>
    <td><p>Tipi di nodo esclusi</p> <p>cq.wcm.msm.action.excludednodetypes</p> </td>
-   <td>Un’espressione regolare che corrisponde ai tipi di nodo che devono essere esclusi dall’azione di sincronizzazione.</td>
+   <td>Un’espressione regolare che corrisponde ai tipi di nodo da escludere dall’azione di sincronizzazione.</td>
   </tr>
   <tr>
    <td><p>Elementi di paragrafo esclusi</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
-   <td>Un'espressione regolare che corrisponde agli elementi di paragrafo da escludere dall’azione di sincronizzazione.</td>
+   <td>Espressione regolare che corrisponde agli elementi di paragrafo da escludere dall'azione di sincronizzazione.</td>
   </tr>
   <tr>
    <td><p>Proprietà pagina escluse</p> <p>cq.wcm.msm.action.excludedprops</p> </td>
@@ -394,7 +394,7 @@ Puoi anche configurare le configurazioni di rollout per una pagina Live Copy qua
 
    ![Configurazioni di rollout selezionate](assets/chlimage_1-2.png)
 
-1. Tocca o fai clic su **Salva**.
+1. Fai clic su **Salva**.
 
 ### Impostazione della configurazione di rollout per una pagina blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
 

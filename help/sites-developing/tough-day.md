@@ -4,10 +4,10 @@ description: Il test Duro giorno simula il carico giornaliero di circa 1000 auto
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 2%
+source-wordcount: '1824'
+ht-degree: 1%
 
 ---
 
@@ -70,7 +70,7 @@ Nella tabella seguente sono disponibili i parametri della Guida pertinenti.
    <td><strong>Esempio</strong></td>
   </tr>
   <tr>
-   <td>--aiuto</td>
+   <td>—aiuto</td>
    <td>Stampa informazioni globali, ad esempio le azioni disponibili, le suite predefinite, le modalità di esecuzione e i parametri globali.</td>
    <td> </td>
   </tr>
@@ -238,7 +238,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-I test esistenti in una determinata suite possono essere riconfigurati utilizzando `config`* *parametro. È inoltre necessario specificare il nome della suite e il nome effettivo del test (non il nome della classe del test). Puoi trovare il nome del test in `name` della classe Test. Per ulteriori dettagli su come trovare le proprietà del test, leggi [Modifica delle proprietà del test](/help/sites-developing/tough-day.md#changing-the-test-properties) sezione.
+I test esistenti in una determinata suite possono essere riconfigurati utilizzando `config`* *parametro. Specifica anche il nome della suite e il nome effettivo del test (non il nome della classe di test). Puoi trovare il nome del test in `name` della classe Test. Per ulteriori dettagli su come trovare le proprietà del test, leggi [Modifica delle proprietà del test](/help/sites-developing/tough-day.md#changing-the-test-properties) sezione.
 
 Nell’esempio seguente il titolo predefinito della risorsa per `CreatePageTreeTest` (denominato `UploadAsset`) viene modificato in &quot;Nuova risorsa&quot;.
 
@@ -260,7 +260,7 @@ tests:
       title : NewAsset
 ```
 
-Inoltre, puoi anche rimuovere i test da suite o editori predefiniti dalla configurazione predefinita con l’utilizzo di `exclude` parametro. È inoltre necessario specificare il nome della suite e il nome effettivo del test (non il Test C `lass` name). Puoi trovare il nome del test in `name` della classe di test. Nell’esempio seguente, il `CreatePageTreeTest` (denominato `UploadAsset`) è stato rimosso dalla suite di test di giornata.
+Inoltre, puoi anche rimuovere i test da suite o editori predefiniti dalla configurazione predefinita con l’utilizzo di `exclude` parametro. Specifica anche il nome della suite e il nome effettivo del test (non il Test C `lass` name). Puoi trovare il nome del test in `name` della classe di test. Nell’esempio seguente, il `CreatePageTreeTest` (denominato `UploadAsset`) è stato rimosso dalla suite di test di giornata.
 
 Utilizzando i parametri della riga di comando:
 
@@ -353,14 +353,14 @@ Duro Giorno 2 attualmente riporta nove metriche di test che è possibile valutar
 | Timestamp | Timestamp dell’ultima esecuzione di test completata. |
 | Passato | Numero di esecuzioni riuscite. |
 | Non riuscito | Numero di esecuzioni non riuscite. |
-| Min.&#42; | Durata minima dell’esecuzione del test. |
+| Min&#42; | Durata minima dell’esecuzione del test. |
 | Max&#42; | Durata massima dell’esecuzione del test. |
 | Mediana&#42; | Durata mediana calcolata di tutte le esecuzioni di test. |
 | Media&#42; | Durata media calcolata di tutte le esecuzioni di test. |
 | DevStandard&#42; | La deviazione standard. |
-| 90p&#42; | 90 percentile. |
-| 99p&#42; | 99 percentile. |
-| 99.9p&#42; | 99,9 percentile. |
+| 90P&#42; | 90 percentile. |
+| 99P&#42; | 99 percentile. |
+| 99,9p&#42; | 99,9 percentile. |
 | Throughput reale&#42; | Numero di esecuzioni diviso per il tempo di esecuzione trascorso. |
 
 Queste metriche vengono scritte con l’aiuto di editori che possono essere aggiunti con `add` (in modo simile all’aggiunta di test). Attualmente sono disponibili due opzioni:

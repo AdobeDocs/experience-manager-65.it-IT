@@ -7,10 +7,10 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 9%
+source-wordcount: '3595'
+ht-degree: 8%
 
 ---
 
@@ -47,7 +47,7 @@ Per visualizzare un elenco di moduli o modelli, in [!DNL Experience Manager] int
 
 | Modelli | | Descrizione |
 |---|---|---|
-| [!UICONTROL impostazione predefinita] | | Modulo schema metadati di base per le risorse. |
+| [!UICONTROL predefinito] | | Modulo schema metadati di base per le risorse. |
 | | I seguenti moduli figlio ereditano le proprietà del [!UICONTROL predefinito] forma: | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Modulo schema per video Dynamic Medie. |
 | | <ul><li>[!UICONTROL immagine]</li></ul> | Modulo schema per immagini con tipo MIME, ad esempio `image/jpeg` e `image/png`. <br> Il [!UICONTROL immagine] il modulo include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: modulo schema per le risorse con sottotipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: modulo schema per le risorse con sottotipo TIFF.</li></ul> |
@@ -100,9 +100,9 @@ Il **[!UICONTROL Genera modulo]** scheda elenca gli elementi del modulo utilizza
 | [!UICONTROL Tag avanzati] | Migliora le funzionalità di ricerca aggiungendo automaticamente tag di metadati. |
 | [!UICONTROL Campo nascosto] | Aggiungi un campo nascosto. Viene inviato come parametro POST al salvataggio della risorsa. |
 | [!UICONTROL Risorsa con riferimento da] | Aggiungi questo componente per visualizzare l’elenco delle risorse a cui fa riferimento la risorsa. |
-| [!UICONTROL Risorsa con riferimento a] | Aggiungi per visualizzare un elenco di risorse che fanno riferimento alla risorsa. |
+| [!UICONTROL Risorsa con riferimento] | Aggiungi per visualizzare un elenco di risorse che fanno riferimento alla risorsa. |
 | [!UICONTROL Riferimenti prodotti] | Aggiungi per visualizzare l’elenco dei prodotti collegati alla risorsa. |
-| [!UICONTROL Valutazione risorsa] | Aggiungi per visualizzare le opzioni di valutazione della risorsa. |
+| [!UICONTROL Valutazione risorse] | Aggiungi per visualizzare le opzioni di valutazione della risorsa. |
 | [!UICONTROL Metadati contestuali] | Aggiungi per controllare la visualizzazione di altre schede di metadati nella pagina delle proprietà delle risorse. |
 
 #### Modificare il componente metadati {#edit-the-metadata-component}
@@ -220,7 +220,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
    >[!NOTE]
    >
-   >Quando si aggiungono le scelte, se si fa clic sul campo a discesa, l&#39;interfaccia risulta distorta e l&#39;opzione di eliminazione delle scelte non funziona più. Non fare clic sul menu a discesa fino a quando non salvi le modifiche. Se riscontri questo problema, salva lo schema e aprilo nuovamente per continuare a modificare.
+   >Quando si aggiungono le scelte, se si fa clic sul campo a discesa, l&#39;interfaccia risulta distorta e l&#39;opzione di eliminazione delle scelte non funziona più. Fai clic sul menu a discesa solo dopo aver salvato le modifiche. Se riscontri questo problema, salva lo schema e aprilo nuovamente per continuare a modificare.
 
 1. (Facoltativo) Aggiungi gli altri campi obbligatori. Ad esempio, formato, codec e durata per il video del tipo di risorsa.
 
@@ -257,7 +257,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
 1. Allo stesso modo, crea una dipendenza tra il valore Video nel campo Tipo di risorsa e altri campi, come Codec e Durata.
 1. Ripeti i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel [!UICONTROL Tipo risorsa] campi e campi quali [!UICONTROL Conteggio pagine] e [!UICONTROL Autore].
-1. Fai clic su **[!UICONTROL Salva]**. Applica lo schema metadati a una cartella.
+1. Clic **[!UICONTROL Salva]**. Applica lo schema metadati a una cartella.
 
 1. Passa alla cartella a cui hai applicato lo schema metadati e apri la pagina delle proprietà di una risorsa. A seconda della scelta effettuata nel campo Tipo di risorsa, vengono visualizzati i campi di metadati a cascata pertinenti.
 
@@ -340,7 +340,7 @@ L’ereditarietà dei metadati da parte delle risorse si basa sullo schema appli
 
    *Figura: Campo di testo aggiunto all’editor modulo schema metadati.*
 
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina.
+1. Clic **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina.
 1. Clic **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
 1. Seleziona la cartella in cui applicare lo schema modificato, quindi fai clic su **[!UICONTROL Applica]**.
@@ -368,7 +368,7 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 
    *Figura: Campo obbligatorio nell’editor modulo schema metadati.*
 
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina. Seleziona il modulo e fai clic su **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
+1. Clic **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina. Seleziona il modulo e fai clic su **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
 1. Passa alla cartella e carica alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista a schede della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
 

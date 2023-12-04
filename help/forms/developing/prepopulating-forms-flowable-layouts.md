@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3478'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ La precompilazione di un modulo presenta i seguenti vantaggi:
 Un modulo può essere precompilato dalle due origini dati XML seguenti:
 
 * Un’origine dati XDP, XML conforme alla sintassi XFA (o dati XFDF per precompilare un modulo creato utilizzando Acrobat).
-* Origine dati XML arbitraria contenente coppie nome/valore corrispondenti ai nomi dei campi del modulo (gli esempi in questa sezione utilizzano un&#39;origine dati XML arbitraria).
+* Origine dati XML arbitraria contenente coppie nome/valore corrispondenti ai nomi dei campi del modulo. Gli esempi in questa sezione utilizzano un&#39;origine dati XML arbitraria.
 
 È necessario che esista un elemento XML per ogni campo modulo che si desidera precompilare. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Non è necessario che corrispondano all&#39;ordine di visualizzazione degli elementi XML, purché siano specificati tutti gli elementi XML.
 
@@ -176,7 +176,7 @@ Si noti che ogni sottogruppo di dati contiene quattro elementi XML corrispondent
 * Quantità di articoli
 * Prezzo unitario
 
-Il nome dell&#39;elemento XML padre di un sottogruppo di dati deve corrispondere al nome del sottomodulo incluso nella struttura del modulo. Ad esempio, nel diagramma precedente, il nome dell’elemento XML padre del sottogruppo di dati è `detail`. Corrisponde al nome della sottomaschera presente nella struttura della maschera su cui si basa la maschera dell&#39;ordine fornitore. Se il nome dell’elemento XML padre del sottogruppo di dati e il sottomodulo non corrispondono, un modulo lato server non viene precompilato.
+Il nome dell&#39;elemento XML padre di un sottogruppo di dati deve corrispondere al nome del sottomodulo incluso nella struttura del modulo. Ad esempio, nel diagramma precedente, il nome dell&#39;elemento XML padre del sottogruppo di dati è `detail`. Corrisponde al nome della sottomaschera presente nella struttura della maschera su cui si basa la maschera dell&#39;ordine fornitore. Se il nome dell&#39;elemento XML padre del sottogruppo di dati e il sottomodulo non corrispondono, un modulo lato server non viene precompilato.
 
 Ogni sottogruppo di dati deve contenere elementi XML corrispondenti ai nomi dei campi nel sottomodulo. Il `detail` la sottomaschera nella struttura del modulo contiene i campi riportati di seguito.
 
@@ -212,7 +212,7 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un&#39;origine dati XML in memoria**
 
-È possibile utilizzare `org.w3c.dom` classi per creare un&#39;origine dati XML in memoria per precompilare un modulo con un layout scorrevole. È necessario inserire i dati in un&#39;origine dati XML conforme al modulo. Per informazioni sulla relazione tra un modulo con un layout scorrevole e l&#39;origine dati XML, vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).
+È possibile utilizzare `org.w3c.dom` classi per creare un&#39;origine dati XML in memoria per precompilare un modulo con un layout scorrevole. Inserire i dati in un&#39;origine dati XML conforme al modulo. Per informazioni sulla relazione tra un modulo con un layout scorrevole e l&#39;origine dati XML, vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).
 
 **Convertire l&#39;origine dati XML**
 
@@ -248,28 +248,28 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API Forms (J
 
 1. Creare un&#39;origine dati XML in memoria
 
-   * Creare un Java `DocumentBuilderFactory` oggetto chiamando il `DocumentBuilderFactory` classe&quot; `newInstance` metodo.
+   * Creare un Java `DocumentBuilderFactory` oggetto chiamando il `DocumentBuilderFactory` class&#39; `newInstance` metodo.
    * Creare un Java `DocumentBuilder` oggetto chiamando il `DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` metodo.
    * Chiama il `DocumentBuilder` dell&#39;oggetto `newDocument` metodo per creare un&#39;istanza di `org.w3c.dom.Document` oggetto.
    * Creare l&#39;elemento principale dell&#39;origine dati XML richiamando `org.w3c.dom.Document` dell&#39;oggetto `createElement` metodo. Questo crea un `Element` oggetto che rappresenta l&#39;elemento principale. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento principale al documento chiamando il `Document` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento radice come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Creare l’elemento header dell’origine dati XML chiamando `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento header all’elemento root chiamando il `root` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento intestazione come argomento. Gli elementi XML accodati all&#39;elemento header corrispondono alla parte statica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Creare l&#39;elemento header dell&#39;origine dati XML chiamando `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento header all’elemento root chiamando il `root` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento intestazione come argomento. Gli elementi XML accodati all&#39;elemento header corrispondono alla parte statica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Creare un elemento figlio appartenente all’elemento intestazione chiamando il `Document` dell&#39;oggetto `createElement` e passa un valore stringa che rappresenta il nome dell’elemento. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e trasmettere il `Document` dell&#39;oggetto `createTextNode` come argomento. Specifica un valore stringa che viene visualizzato come valore dell’elemento figlio. Infine, aggiungi l’elemento figlio all’elemento intestazione chiamando l’elemento dell’intestazione `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Creare un elemento figlio appartenente all’elemento intestazione chiamando il `Document` dell&#39;oggetto `createElement` e passare un valore stringa che rappresenta il nome dell&#39;elemento. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e trasmettere il `Document` dell&#39;oggetto `createTextNode` come argomento. Specifica un valore stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento intestazione chiamando l’elemento intestazione `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
    * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo visualizzato nella parte statica del modulo (nel diagramma dell&#39;origine dati XML questi campi sono illustrati nella sezione A). [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
-   * Creare l’elemento dettaglio dell’origine dati XML chiamando `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento di dettaglio all’elemento principale chiamando il `root` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento dettaglio come argomento. Gli elementi XML accodati all&#39;elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Creare l&#39;elemento dettaglio dell&#39;origine dati XML chiamando `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento di dettaglio all’elemento principale chiamando il `root` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento dettaglio come argomento. Gli elementi XML accodati all&#39;elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Creare un elemento figlio che appartiene all&#39;elemento dettaglio chiamando `Document` dell&#39;oggetto `createElement` e passa un valore stringa che rappresenta il nome dell’elemento. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e trasmettere il `Document` dell&#39;oggetto `createTextNode` come argomento. Specifica un valore stringa che viene visualizzato come valore dell’elemento figlio. Infine, aggiungi l’elemento figlio all’elemento dettaglio chiamando l’elemento di dettaglio `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Creare un elemento figlio che appartiene all&#39;elemento dettaglio chiamando `Document` dell&#39;oggetto `createElement` e passare un valore stringa che rappresenta il nome dell&#39;elemento. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e trasmettere il `Document` dell&#39;oggetto `createTextNode` come argomento. Specifica un valore stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungere l&#39;elemento figlio all&#39;elemento dettaglio chiamando l&#39;elemento di dettaglio `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -301,7 +301,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API Forms (J
    Il `renderPDFForm` il metodo restituisce un `FormsResult` oggetto contenente un flusso di dati modulo che deve essere scritto nel browser web client.
 
    * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per inviare un flusso di dati modulo al browser web client.
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` oggetto &quot;s `getOutputContent` metodo.
+   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
    * Creare un `java.io.InputStream` oggetto richiamando il `com.adobe.idp.Document` dell&#39;oggetto `getInputStream` metodo.
    * Creare una matrice di byte compilarla con il flusso di dati del modulo richiamando `InputStream` dell&#39;oggetto `read` e passando la matrice di byte come argomento.
    * Richiama `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` metodo per inviare il flusso di dati del modulo al browser web client. Passare la matrice di byte al `write` metodo.
@@ -325,27 +325,27 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API di Forms
 
 1. Creare un&#39;origine dati XML in memoria
 
-   * Creare un Java `DocumentBuilderFactory` oggetto chiamando il `DocumentBuilderFactory` classe&quot; `newInstance` metodo.
+   * Creare un Java `DocumentBuilderFactory` oggetto chiamando il `DocumentBuilderFactory` class&#39; `newInstance` metodo.
    * Creare un Java `DocumentBuilder` oggetto chiamando il `DocumentBuilderFactory` dell&#39;oggetto `newDocumentBuilder` metodo.
    * Chiama il `DocumentBuilder` dell&#39;oggetto `newDocument` metodo per creare un&#39;istanza di `org.w3c.dom.Document` oggetto.
    * Creare l&#39;elemento principale dell&#39;origine dati XML richiamando `org.w3c.dom.Document` dell&#39;oggetto `createElement` metodo. Questo crea un `Element` oggetto che rappresenta l&#39;elemento principale. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento principale al documento chiamando il `Document` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento radice come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Creare l’elemento header dell’origine dati XML chiamando `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento header all’elemento root chiamando il `root` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento intestazione come argomento. Gli elementi XML accodati all&#39;elemento header corrispondono alla parte statica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Creare l&#39;elemento header dell&#39;origine dati XML chiamando `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento header all’elemento root chiamando il `root` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento intestazione come argomento. Gli elementi XML accodati all&#39;elemento header corrispondono alla parte statica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Creare un elemento figlio appartenente all’elemento intestazione chiamando il `Document` dell&#39;oggetto `createElement` e passa un valore stringa che rappresenta il nome dell’elemento. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e trasmettere il `Document` dell&#39;oggetto `createTextNode` come argomento. Specifica un valore stringa che viene visualizzato come valore dell’elemento figlio. Infine, aggiungi l’elemento figlio all’elemento intestazione chiamando l’elemento dell’intestazione `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Creare un elemento figlio appartenente all’elemento intestazione chiamando il `Document` dell&#39;oggetto `createElement` e passare un valore stringa che rappresenta il nome dell&#39;elemento. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e trasmettere il `Document` dell&#39;oggetto `createTextNode` come argomento. Specifica un valore stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungi l’elemento figlio all’elemento intestazione chiamando l’elemento intestazione `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
    * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo visualizzato nella parte statica del modulo (nel diagramma dell&#39;origine dati XML questi campi sono illustrati nella sezione A). [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
-   * Creare l’elemento dettaglio dell’origine dati XML chiamando `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento di dettaglio all’elemento principale chiamando il `root` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento dettaglio come argomento. Gli elementi XML accodati all&#39;elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Creare l&#39;elemento dettaglio dell&#39;origine dati XML chiamando `Document` dell&#39;oggetto `createElement` metodo. Passa un valore stringa che rappresenta il nome dell’elemento al `createElement` metodo. Invia il valore restituito a `Element`. Quindi, aggiungi l’elemento di dettaglio all’elemento principale chiamando il `root` dell&#39;oggetto `appendChild` e passare l&#39;oggetto elemento dettaglio come argomento. Gli elementi XML accodati all&#39;elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Creare un elemento figlio che appartiene all&#39;elemento dettaglio chiamando `Document` dell&#39;oggetto `createElement` e passa un valore stringa che rappresenta il nome dell’elemento. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e trasmettere il `Document` dell&#39;oggetto `createTextNode` come argomento. Specifica un valore stringa che viene visualizzato come valore dell’elemento figlio. Infine, aggiungi l’elemento figlio all’elemento dettaglio chiamando l’elemento di dettaglio `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
+   * Creare un elemento figlio che appartiene all&#39;elemento dettaglio chiamando `Document` dell&#39;oggetto `createElement` e passare un valore stringa che rappresenta il nome dell&#39;elemento. Invia il valore restituito a `Element`. Quindi, imposta un valore per l’elemento figlio chiamando il relativo `appendChild` e trasmettere il `Document` dell&#39;oggetto `createTextNode` come argomento. Specifica un valore stringa che viene visualizzato come valore dell&#39;elemento figlio. Infine, aggiungere l&#39;elemento figlio all&#39;elemento dettaglio chiamando l&#39;elemento di dettaglio `appendChild` e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 

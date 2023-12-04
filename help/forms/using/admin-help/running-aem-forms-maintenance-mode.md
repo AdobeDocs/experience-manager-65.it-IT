@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 exl-id: 6f5ce18b-26b4-4c31-b48a-43ccbb3912f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Evita di richiamare i processi mentre il server è in modalità di manutenzione.
 
    >[!NOTE]
    >
-   >Se si arresta il server mentre è in modalità di manutenzione, al riavvio il server sarà ancora in modalità di manutenzione. È necessario disattivare la modalità di manutenzione al termine delle attività di manutenzione.
+   >Se si arresta il server mentre è in modalità di manutenzione, al riavvio il server è ancora in modalità di manutenzione. Disattivare la modalità di manutenzione al termine delle attività di manutenzione.
 
 **Verifica se i moduli AEM sono in esecuzione in modalità di manutenzione**
 

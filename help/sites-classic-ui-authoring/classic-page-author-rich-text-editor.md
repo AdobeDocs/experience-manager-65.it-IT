@@ -5,9 +5,9 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1764'
 ht-degree: 2%
 
 ---
@@ -182,7 +182,7 @@ Per interrompere il collegamento, posizionare il cursore in un punto qualsiasi a
 
 ![Barra degli strumenti Ancoraggi](do-not-localize/cq55_rte_anchor.png)
 
-È possibile creare un ancoraggio in qualsiasi punto del testo posizionando il cursore o selezionando del testo. Quindi fai clic sul pulsante **Ancoraggio** per aprire la finestra di dialogo.
+È possibile creare un ancoraggio in qualsiasi punto del testo posizionando il cursore o selezionando del testo. Quindi fai clic su **Ancoraggio** per aprire la finestra di dialogo.
 
 Inserisci il nome dell’ancoraggio, quindi fai clic su **OK** per salvare.
 

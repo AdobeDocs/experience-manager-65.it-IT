@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1455'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Prima di poter eseguire a livello di programmazione un&#39;operazione API client
 
 **Impostare le opzioni di runtime dei diritti di utilizzo**
 
-Impostare le opzioni di runtime relative ai diritti di utilizzo per eseguire il rendering di un modulo abilitato ai diritti. È inoltre necessario specificare l&#39;alias delle credenziali utilizzato per applicare i diritti di utilizzo a un modulo. Dopo aver specificato il valore dell&#39;alias, specificare ogni diritto di utilizzo da applicare al modulo.
+Impostare le opzioni di runtime relative ai diritti di utilizzo per eseguire il rendering di un modulo abilitato ai diritti. Specificare l&#39;alias delle credenziali utilizzato per applicare i diritti di utilizzo a un modulo. Dopo aver specificato il valore dell&#39;alias, specificare ogni diritto di utilizzo da applicare al modulo.
 
 **Eseguire il rendering di un modulo abilitato per i diritti**
 
@@ -124,7 +124,7 @@ Eseguire il rendering di un modulo abilitato ai diritti tramite l’API Forms (J
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` oggetto &quot;s `getOutputContent` metodo.
+   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
    * Ottieni il tipo di contenuto del `com.adobe.idp.Document` oggetto richiamando il relativo `getContentType` metodo.
    * Imposta il `javax.servlet.http.HttpServletResponse` tipo di contenuto dell&#39;oggetto richiamando il relativo `setContentType` e passando il tipo di contenuto del `com.adobe.idp.Document` oggetto.
    * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser web client richiamando `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream` metodo.

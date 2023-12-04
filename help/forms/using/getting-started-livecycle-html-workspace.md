@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 exl-id: d2a962b6-16be-4866-a856-5064f81c9610
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Quando si accede all’area di lavoro di AEM Forms utilizzando una tastiera, la 
 * La Guida dell’area di lavoro di AEM Forms si apre in una finestra del browser separata. Dopo aver visualizzato la Guida in linea, viene visualizzata nuovamente la finestra del browser che contiene l&#39;area di lavoro di AEM Forms. Il menu Aiuto rimane attivo quando lo stato attivo viene ripristinato.
 * Quando si apre un modulo per avviare un processo o completare un&#39;attività, lo stato attivo rimane sull&#39;elemento esistente e non viene modificato nel modulo. Utilizzare TAB per spostare lo stato attivo sul modulo e sfogliarlo. L&#39;ordine di tabulazione nel modulo dipende dal tipo e dalla struttura del modulo.
 
-   Per i PDF forms, quando si passa alla fine del modulo o si invia il modulo, lo stato attivo del cursore si sposta sulla barra degli indirizzi del browser. È necessario scorrere di nuovo i menu (ma non l&#39;intero modulo) per passare ai pulsanti delle azioni del modulo, ad esempio Salva come bozza e Completa. Se la maschera è ancora aperta, è anche possibile passare oltre i pulsanti e tornare alla maschera.
+  Per i PDF forms, quando si passa alla fine del modulo o si invia il modulo, lo stato attivo del cursore si sposta sulla barra degli indirizzi del browser. Passare di nuovo ai menu, ma non all&#39;intero modulo, per passare ai pulsanti delle azioni del modulo, ad esempio Salva come bozza e Completa. Se la maschera è ancora aperta, è anche possibile passare oltre i pulsanti e tornare alla maschera.
 
 ## Gestione delle preferenze {#managing-preferences}
 

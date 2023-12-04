@@ -2,10 +2,10 @@
 title: Guida introduttiva alla traduzione headless in AEM
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 87%
+source-wordcount: '1472'
+ht-degree: 85%
 
 ---
 
@@ -78,15 +78,15 @@ L’architetto dei contenuti all’inizio del progetto si occupa della definizio
 
 Poiché i modelli di contenuto definiscono la struttura del contenuto, è necessario sapere quali campi dei modelli devono essere tradotti. In genere si lavora con l’architetto dei contenuti per deciderlo. Per sfogliare i campi dei modelli di contenuto, effettua le seguenti operazioni.
 
-1. Accedi a **Strumenti** -> **Risorse** -> **Modelli per frammenti di contenuto**.
-1. I modelli per frammenti di contenuto sono generalmente memorizzati in una struttura di cartelle. Tocca o fai clic sulla cartella del progetto.
-1. I modelli sono elencati. Tocca o fai clic sul modello per visualizzare i dettagli.
+1. Accedi a **Strumenti** > **Risorse** > **Modelli per frammenti di contenuto**.
+1. I modelli per frammenti di contenuto sono generalmente memorizzati in una struttura di cartelle. Fai clic sulla cartella del progetto.
+1. I modelli sono elencati. Fai clic sul modello per visualizzare i dettagli.
    ![Modelli per frammenti di contenuto](assets/content-fragment-models.png)
 1. L’**Editor modello frammento di contenuto** si apre.
    1. La colonna a sinistra contiene i campi del modello. Questa colonna ci interessa.
    1. La colonna a destra contiene i campi che si possono aggiungere al modello. Si può ignorare questa colonna.
       ![Editor modello per frammenti di contenuto](assets/content-fragment-model-editor.png)
-1. Tocca o fai clic su uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
+1. Fate clic su uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
    ![Dettaglio dell’editor modello dei frammenti di contenuto](assets/content-fragment-model-editor-detail.png)
 
 Prendi nota del campo **Nome proprietà** per tutti i campi da tradurre. Queste informazioni saranno necessarie più avanti nel percorso. Questi **Nome proprietà** s sono tenuti a informare l’AEM su quali campi del contenuto devono essere tradotti.

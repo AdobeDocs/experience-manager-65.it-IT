@@ -4,9 +4,9 @@ description: Un proxy è un [!DNL Experience Manager] istanza che utilizza i lav
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Il diagramma e i passaggi seguenti descrivono in dettaglio come procedere:
 
    Ad esempio, consulta `IDSJob.IDS_EXTENDSCRIPT_JOB` per il processo di lavoro proxy IDS.
 
-1. Il passaggio esterno viene utilizzato per attivare l’evento e quindi attendere che sia completato; ciò viene effettuato tramite il polling dell’ID. Per implementare nuove funzionalità, devi sviluppare un passaggio personalizzato.
+1. Il passaggio esterno viene utilizzato per attivare l’evento e quindi attendere che sia completato; ciò viene effettuato tramite il polling dell’ID. Sviluppa il tuo passaggio per implementare nuove funzionalità.
 
    Implementare un `WorkflowExternalProcess`, quindi utilizza l’API JobService e l’argomento del processo per preparare un evento di processo e inviarlo al JobService (un servizio OSGi).
 

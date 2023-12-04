@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5483'
+source-wordcount: '5425'
 ht-degree: 1%
 
 ---
@@ -377,17 +377,17 @@ Quando una risorsa viene aggiunta in Experience Manager Assets, viene caricata e
 
 >[!NOTE]
 >
->La dimensione massima del file per il caricamento automatico da Experience Manager Assets a Dynamic Media Classic è di 500 MB.
+La dimensione massima del file per il caricamento automatico da Experience Manager Assets a Dynamic Media Classic è di 500 MB.
 
 **Per caricare automaticamente da Experience Manager Assets:**
 
 1. Seleziona l’icona Experience Manager e passa a **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud Service]**.
 1. Sotto l’intestazione Dynamic Medie, in Configurazioni disponibili, seleziona **[!UICONTROL dms7 (Dynamic Medie)]**).
-1. Seleziona la **[!UICONTROL Avanzate]** , seleziona la scheda **[!UICONTROL Abilita caricamento automatico]** , quindi seleziona **[!UICONTROL OK]**. Devi configurare il flusso di lavoro Risorsa DAM per includere il caricamento in Dynamic Media Classic.
+1. Seleziona la **[!UICONTROL Avanzate]** , seleziona la scheda **[!UICONTROL Abilita caricamento automatico]** , quindi seleziona **[!UICONTROL OK]**. Configura il flusso di lavoro Risorsa DAM per includere il caricamento in Dynamic Media Classic.
 
    >[!NOTE]
    >
-   >Consulta [Configurazione dello stato (pubblicato/non pubblicato) delle risorse inviate a Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) per informazioni su come inviare le risorse a Dynamic Media Classic in stato non pubblicato.
+   Consulta [Configurazione dello stato (pubblicato/non pubblicato) delle risorse inviate a Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) per informazioni su come inviare le risorse a Dynamic Media Classic in stato non pubblicato.
 
    ![screen_shot_2018-03-15alle52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +398,8 @@ Quando una risorsa viene aggiunta in Experience Manager Assets, viene caricata e
 
    >[!NOTE]
    >
-   >* Quando si aggiungono risorse dopo l’automazione, se non vengono posizionate nella cartella di destinazione CQ, non vengono caricate in Dynamic Media Classic.
-   >* Experience Manager incorpora tutti i metadati come XMP prima di caricarli in Dynamic Media Classic, in modo che tutte le proprietà sul nodo dei metadati siano disponibili in Dynamic Media Classic come XMP.
+   * Quando si aggiungono risorse dopo l’automazione, se non vengono posizionate nella cartella di destinazione CQ, non vengono caricate in Dynamic Media Classic.
+   * Experience Manager incorpora tutti i metadati come XMP prima di caricarli in Dynamic Media Classic, in modo che tutte le proprietà sul nodo dei metadati siano disponibili in Dynamic Media Classic come XMP.
 
 ### Configurare lo stato (pubblicato/non pubblicato) delle risorse inviate a Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +424,7 @@ Questi passaggi sono gli stessi che segui per creare una configurazione di test 
 
 >[!NOTE]
 >
->Se l&#39;ambiente di installazione è un sistema operativo UNIX® a 64 bit, vedere [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) per quanto riguarda le altre opzioni di configurazione è necessario impostare.
+Se l&#39;ambiente di installazione è un sistema operativo UNIX® a 64 bit, vedere [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) per quanto riguarda le altre opzioni di configurazione è necessario impostare.
 
 #### Limitazioni note per il push delle risorse in stato non pubblicato  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +435,13 @@ Se utilizzate questa funzione, tenete presente le seguenti limitazioni:
 
 >[!NOTE]
 >
->Se desideri pubblicare le risorse immediatamente, è consigliabile mantenere **[!UICONTROL Abilita anteprima protetta]** imposta su **[!UICONTROL Immediatamente]** e utilizza **[!UICONTROL Abilita caricamento automatico]** funzionalità.
+Se desideri pubblicare le risorse immediatamente, è consigliabile mantenere **[!UICONTROL Abilita anteprima protetta]** imposta su **[!UICONTROL Immediatamente]** e utilizza **[!UICONTROL Abilita caricamento automatico]** funzionalità.
 
 ### Impostare lo stato delle risorse inviate a Dynamic Media Classic come non pubblicate {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
->Se un utente pubblica la risorsa in Experience Manager, la risorsa S7 viene attivata automaticamente nella risorsa di produzione/live (la risorsa non si trova più in anteprima protetta/non pubblicata).
+Se un utente pubblica la risorsa in Experience Manager, la risorsa S7 viene attivata automaticamente nella risorsa di produzione/live (la risorsa non si trova più in anteprima protetta/non pubblicata).
 
 **Per impostare lo stato delle risorse inviate a Dynamic Media Classic come non pubblicate:**
 
@@ -513,7 +513,7 @@ Se disponi di più configurazioni di Dynamic Media Classic, puoi specificarne un
 
    >[!NOTE]
    >
-   >Se è presente una sola configurazione, selezionare **[!UICONTROL Configurazione predefinita]** non ha alcun effetto.
+   Se è presente una sola configurazione, selezionare **[!UICONTROL Configurazione predefinita]** non ha alcun effetto.
 
 ### Configurare la cartella ad hoc {#configuring-the-ad-hoc-folder}
 
@@ -564,17 +564,17 @@ In particolare, è possibile configurare il formato di file accettato per tipo M
 1. Sul lato destro della pagina CRXDE Liti, seleziona la **[!UICONTROL Proprietà]** scheda.
 1. Specifica un parametro del processo di caricamento Dynamic Media Classic in **[!UICONTROL jobParam]** campo valore.
 
-   Esempio: `psprocess="rasterize"&psresolution=120`.
+   Ad esempio: `psprocess="rasterize"&psresolution=120` .
 
    Consulta la [API di Adobe Dynamic Media Classic Image Production System](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) per ulteriori parametri del processo di caricamento puoi utilizzare.
 
    >[!NOTE]
    >
-   >Se state caricando file PSD e desiderate elaborarli come modelli con estrazioni di livello, immettete quanto segue in **[!UICONTROL jobParam]** campo valore:
+   Se state caricando file PSD e desiderate elaborarli come modelli con estrazioni di livello, immettete quanto segue in **[!UICONTROL jobParam]** campo valore:
    >
-   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   >Assicurati che il file PSD disponga di &quot;livelli&quot;. Se si tratta solo di un’immagine o di un’immagine con maschera, questa viene elaborata come un’immagine perché non vi sono livelli da elaborare.
+   Assicurati che il file PSD disponga di &quot;livelli&quot;. Se si tratta solo di un’immagine o di un’immagine con maschera, questa viene elaborata come un’immagine perché non vi sono livelli da elaborare.
 
 1. Nell’angolo superiore sinistro della pagina CRXDE Liti, seleziona **[!UICONTROL Salva tutto]**.
 
@@ -616,6 +616,6 @@ In caso di problemi durante l’integrazione di Experience Manager con Dynamic M
 
 >[!CAUTION]
 >
->L’importazione di risorse da un account aziendale Dynamic Media Classic esistente può richiedere molto tempo per la visualizzazione nell’Experience Manager. Assicurati di designare una cartella in Dynamic Media Classic che non abbia troppe risorse. Ad esempio, la cartella principale ha spesso troppe risorse.
+L’importazione di risorse da un account aziendale Dynamic Media Classic esistente può richiedere molto tempo per la visualizzazione nell’Experience Manager. Assicurati di designare una cartella in Dynamic Media Classic che non abbia troppe risorse. Ad esempio, la cartella principale ha spesso troppe risorse.
 >
->Se desideri testare l’integrazione, fai in modo che la cartella principale punti solo a una sottocartella, invece che all’intera azienda.
+Se desideri testare l’integrazione, fai in modo che la cartella principale punti solo a una sottocartella, invece che all’intera azienda.

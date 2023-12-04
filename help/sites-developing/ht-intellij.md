@@ -8,10 +8,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 1%
+source-wordcount: '639'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +58,7 @@ Affinché ciò funzioni, segui le istruzioni su [Come utilizzare le JSP](/help/s
 1. Apri **Importa** dialogo in IntelliJ IDEA di
 
    * selezione **Importa progetto** nella schermata di benvenuto se non hai ancora aperto un progetto
-   * selezione **File -> Importa progetto** dal menu principale
+   * selezione **File > Importa progetto** dal menu principale
 
 1. Nella finestra di dialogo Importa, seleziona il file POM del progetto.
 
@@ -86,7 +86,7 @@ Per il debug di JSP con IntelliJ IDEA sono necessari i passaggi seguenti
 
 IntelliJ IDEA deve capire dove trovare le JSP per il debug. Perché IDEA non può interpretare `content-package-maven-plugin` deve essere configurato manualmente.
 
-1. Vai a **File -> Struttura progetto**
+1. Vai a **File > Struttura progetto**
 1. Seleziona la **Contenuto** modulo
 1. Clic **+** sopra l’elenco dei moduli e seleziona **Web**
 1. Come directory delle risorse Web, selezionare `content/src/main/content/jcr_root subdirectory` come mostrato nella schermata seguente.
@@ -97,14 +97,14 @@ IntelliJ IDEA deve capire dove trovare le JSP per il debug. Perché IDEA non pu�
 
 1. Vai a **Plug-in** nelle impostazioni IntelliJ IDEA
 1. Accedi a **Integrazione JSR45** Collega il plug-in e seleziona la casella di controllo accanto
-1. Fai clic su **Applica**
+1. Clic **Applica**
 1. Riavvia IntelliJ IDEA quando richiesto a
 
 ![chlimage_1-49](assets/chlimage_1-49a.png)
 
 #### Configurare un profilo di debug {#configure-a-debug-profile}
 
-1. Vai a **Esegui -> Modifica configurazioni**
+1. Vai a **Esegui > Modifica configurazioni**
 1. Premi il **+** e seleziona **Controllo remoto JSR45**
 1. Nella finestra di dialogo di configurazione, seleziona **Configura** accanto a **Server applicazioni** e configurare un server generico
 1. Impostare la pagina iniziale su un URL appropriato per aprire un browser all&#39;avvio del debug
@@ -141,7 +141,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 Ora è tutto pronto per il debug delle JSP nell’AEM.
 
-1. Seleziona **Esegui -> Debug -> Profilo di debug**
+1. Seleziona **Esegui > Debug > Profilo di debug**
 1. Impostare i punti di interruzione nel codice del componente
 1. Accedere a una pagina nel browser
 

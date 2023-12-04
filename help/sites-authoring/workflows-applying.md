@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 91%
+source-wordcount: '647'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ I flussi di lavoro possono essere avviati da:
 >
 >Consulta anche:
 >
->* [Come applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md).
+>* [Applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md).
 >* [Utilizzo dei flussi di lavoro per i progetti](/help/sites-authoring/projects-with-workflows.md).
 >
 
@@ -103,7 +103,7 @@ Puoi specificare i dettagli:
 
    >[!NOTE]
    >
-   >L’opzione **Mantieni pacchetto flusso di lavoro** è disponibile quando il flusso di lavoro è stato configurato per Supporto risorse multiple e sono state selezionate più risorse.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
+   >Il **Mantieni pacchetto flusso di lavoro** è disponibile quando il flusso di lavoro è stato configurato per [Supporto di più risorse](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) e sono state selezionate più risorse.
 
    Una volta completato, premere su **Successivo** per continuare.
 
@@ -111,7 +111,7 @@ Puoi specificare i dettagli:
 
 1. Al passaggio **Ambito** puoi selezionare:
 
-   * **Aggiungi contenuto**, per aprire il [browser percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) e selezionare altre risorse; una volta nel browser, tocca o fai clic su **Seleziona** per aggiungere contenuti all’istanza di flusso di lavoro.
+   * **Aggiungi contenuto** per aprire [browser percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) e seleziona le risorse aggiuntive; una volta nel browser, fai clic su **Seleziona** per aggiungere contenuti all’istanza di flusso di lavoro.
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 

@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6087'
+source-wordcount: '6076'
 ht-degree: 0%
 
 ---
@@ -501,7 +501,7 @@ Nel HTML, è possibile utilizzare i segnaposto seguenti, che vengono sostituiti 
 
 | Stringa segnaposto | Descrizione |
 |---|---|
-| {nome} | Nome del pulsante, ad esempio **authoring, indietro, aggiornamento** e così via. |
+| {name} | Nome del pulsante, ad esempio **authoring, indietro, aggiornamento** e così via. |
 | {id} | ID CSS del pulsante. |
 | {url} | URL per la destinazione del pulsante. |
 | {text} | Etichetta del pulsante. |
@@ -719,7 +719,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
    >
    >Se si prevede di utilizzare lo stesso portlet più volte sulla stessa pagina, assegnare a ogni portlet un ID finestra diverso.
 
-1. Fai clic su **OK**. Il portlet viene visualizzato sulla pagina AEM.
+1. Clic **OK**. Il portlet viene visualizzato sulla pagina AEM.
 
    ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -727,7 +727,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
 
 Per accedere al contenuto fornito da WCM AEM, il server di portale deve essere dotato del portlet Director del portale AEM. A tale scopo, installare, configurare e aggiungere il portlet alla pagina del portale utilizzando i passaggi descritti in questa sezione.
 
-Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Author in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. È necessario scaricare il file .war dell&#39;applicazione prima di utilizzarlo.
+Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Author in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. Scarica il file .war dell’applicazione prima di utilizzarlo.
 
 ### Download del file .war {#downloading-the-war-file}
 
@@ -776,7 +776,7 @@ Per configurare il portlet:
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
-1. Fai clic su **Salva**. È ora possibile aggiungere il portlet alle pagine del portale e utilizzare il portale.
+1. Clic **Salva**. È ora possibile aggiungere il portlet alle pagine del portale e utilizzare il portale.
 
 ### URL di contenuto {#content-urls}
 

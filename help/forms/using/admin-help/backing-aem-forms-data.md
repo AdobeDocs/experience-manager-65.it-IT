@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Se il database è in esecuzione in modalità di registrazione, come descritto ne
 
 ## Eseguire il backup del database, del GDS, dell&#39;archivio AEM e delle directory principali di archiviazione dei contenuti {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-È necessario impostare AEM Forms in modalità di backup sicuro (snapshot) o di backup continuo (copertura continua). Prima di impostare AEM Forms per l&#39;immissione di una delle modalità di backup, verificare quanto segue:
+Metti AEM Forms in modalità di backup sicuro (snapshot) o di backup continuo (copertura continua). Prima di impostare AEM Forms per l&#39;immissione di una delle modalità di backup, verificare quanto segue:
 
 * Verificare la versione del sistema e registrare le patch o gli aggiornamenti applicati dall&#39;ultimo backup completo dell&#39;immagine del sistema.
 * Se si utilizzano backup in modalità di scorrimento o snapshot, verificare che il database sia configurato con le impostazioni di registro corrette per consentire backup a caldo del database. (vedere [database AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)

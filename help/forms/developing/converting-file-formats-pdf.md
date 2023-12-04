@@ -1,19 +1,15 @@
 ---
 title: Conversione tra formati di file e PDF
-seo-title: Converting Between File Formats and PDF
 description: Utilizza il servizio Generate PDF per convertire i formati di file nativi in PDF. Il servizio Generate PDF converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
-seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
-uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7847'
+source-wordcount: '7812'
 ht-degree: 0%
 
 ---
@@ -61,7 +57,7 @@ Il servizio Generate PDF converte in PDF i seguenti formati di file basati su st
 Il servizio Generate PDF converte PDF nei seguenti formati di file (solo Windows):
 
 * PostScript incapsulato (EPS)
-* HTML3.2
+* HTML 3.2
 * HTML 4.01 con CSS 1.0
 * DOC (formato Microsoft Word)
 * RTF
@@ -634,7 +630,7 @@ In questa tabella sono elencati i tipi di informazioni utilizzati per la stampa 
   <tr>
    <td><p>Istruzioni aggiuntive della finestra di dialogo specifiche per l'applicazione </p></td>
    <td><p>Specifica le sostituzioni e le aggiunte alle istruzioni della finestra di dialogo specifiche dell'applicazione. La sezione presenta un esempio di tali informazioni. </p><p>Il file che contiene queste informazioni è valido.<i>`[appname]`</i>.aggiunta.<i>`[locale]`</i>.xml. Un esempio è appmon.add.en_US.xml.</p></td>
-   <td><p>È possibile creare e modificare file di questo tipo utilizzando un'applicazione di modifica XML. (vedere <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creazione o modifica di un ulteriore file XML di finestra di dialogo per un'applicazione nativa</a>.) </p><p><strong>Importante</strong>: è necessario creare istruzioni aggiuntive della finestra di dialogo specifiche per l'applicazione per ogni applicazione nativa supportata dal server. </p></td>
+   <td><p>È possibile creare e modificare file di questo tipo utilizzando un'applicazione di modifica XML. (vedere <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creazione o modifica di un ulteriore file XML di finestra di dialogo per un'applicazione nativa</a>.) </p><p><strong>Importante</strong>: consente di creare istruzioni aggiuntive della finestra di dialogo specifiche per l'applicazione per ogni applicazione nativa supportata dal server. </p></td>
   </tr>
  </tbody>
 </table>
@@ -673,7 +669,7 @@ Lo scopo del supporto del servizio Generate PDF per i file XML di script è quel
 
 I passaggi in un file XML di script vengono eseguiti in ordine, senza alcuna opportunità di diramazione. L’unico test condizionale supportato è timeout/nuovo tentativo, che causa la chiusura di uno script se un passaggio non viene completato correttamente entro un periodo di tempo specifico e dopo un numero specifico di tentativi.
 
-Oltre che sequenziali, le istruzioni di un passaggio vengono eseguite in ordine. È necessario assicurarsi che i passaggi e le istruzioni riflettano l’ordine in cui un utente eseguirebbe gli stessi passaggi.
+Oltre che sequenziali, le istruzioni di un passaggio vengono eseguite in ordine. Assicurati che i passaggi e le istruzioni riflettano l’ordine in cui un utente eseguirebbe gli stessi passaggi.
 
 Ogni passaggio in un file XML di script identifica l&#39;elemento della finestra che dovrebbe essere visualizzato se le istruzioni del passaggio vengono eseguite correttamente. Se durante l&#39;esecuzione di un passaggio di script viene visualizzata una finestra di dialogo imprevista, il servizio Generate PDF esegue la ricerca nei file XML della finestra di dialogo come descritto nella sezione successiva.
 
@@ -796,7 +792,7 @@ Utilizza Microsoft Spy++ per ottenere le identità delle proprietà degli elemen
 
 #### Ordinamento degli elementi window e windowList {#ordering-the-window-and-windowlist-elements}
 
-Devi ordinare `window` e `windowList` elementi come segue:
+Ordine `window` e `windowList` elementi come segue:
 
 * Quando più `window` Gli elementi vengono visualizzati come elementi figlio in un `windowList` o `dialog` elemento, ordina quelli `window` elementi in ordine decrescente, con le lunghezze `caption` nomi che indicano la posizione nell’ordine.
 * Quando più `windowList` Gli elementi vengono visualizzati in un `window` elemento, ordina quelli `windowList` elementi in ordine decrescente, con le lunghezze `caption` attributi del primo `indexes/`elemento che indica la posizione nell’ordine.
@@ -864,7 +860,7 @@ Il nome del file XML della finestra di dialogo aggiuntiva deve utilizzare il for
 >
 Nessuna delle applicazioni generiche specificate nel file di configurazione native2pdfconfig.xml dispone di un file XML di dialogo primario. La sezione [Aggiunta o modifica del supporto per un formato di file nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) descrive tali specifiche.
 
-Devi ordinare `windowList` elementi visualizzati come elementi figlio in un `window` elemento. (vedere [Ordinamento degli elementi window e windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
+Ordine `windowList` elementi visualizzati come elementi figlio in un `window` elemento. (vedere [Ordinamento degli elementi window e windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
 ### Modifica del file XML della finestra di dialogo generale {#modifying-the-general-dialog-xml-file}
 
@@ -1062,7 +1058,7 @@ In questo esempio viene specificato il modo in cui il servizio Generate PDF inte
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the Print dialog and click on the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
+    <!-- In this step, we acquire the Print dialog and click the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1080,7 +1076,7 @@ In questo esempio viene specificato il modo in cui il servizio Generate PDF inte
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which  has the caption '"View Adobe PDF results' and we click on the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
+    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which has the caption '"View Adobe PDF results' and we click the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
     <step>
         <acquiredWindow>
             <window caption="Printing Preferences">
@@ -1104,7 +1100,7 @@ In questo esempio viene specificato il modo in cui il servizio Generate PDF inte
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the 'Print' dialog and click on the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
+    <!-- In this step, we acquire the 'Print' dialog and click the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1123,7 +1119,7 @@ In questo esempio viene specificato il modo in cui il servizio Generate PDF inte
             <window caption="Save PDF File As"/>
         </expectedWindow>
     </step>
-    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click on the Save button. The expectation is that the dialog disappears-->
+    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click the Save button. The expectation is that the dialog disappears-->
     <step>
         <acquiredWindow>
             <window caption="Save PDF File As">

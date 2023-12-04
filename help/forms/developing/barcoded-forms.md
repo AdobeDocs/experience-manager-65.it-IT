@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Prima di poter eseguire a livello di programmazione un&#39;operazione del serviz
 
 **Ottieni un modulo PDF contenente dati con codice a barre**
 
-È necessario ottenere un modulo PDF contenente un codice a barre che è stato compilato con i dati utente.
+Ottenere un modulo PDF contenente un codice a barre che è stato compilato con dati utente.
 
 **Decodificare i dati dal modulo PDF**
 

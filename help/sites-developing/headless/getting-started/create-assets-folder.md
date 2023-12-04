@@ -2,10 +2,10 @@
 title: Guida rapida alla creazione di una cartella di risorse headless
 description: Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 81%
+source-wordcount: '369'
+ht-degree: 78%
 
 ---
 
@@ -25,8 +25,8 @@ Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenu
 
 Di solito, un amministratore deve creare cartelle solo occasionalmente, per organizzare i contenuti al momento della creazione. Ai fini di questa guida introduttiva, è sufficiente creare una sola cartella.
 
-1. Accedi all’AEM e dal menu principale seleziona **Navigazione -> Risorse -> File**.
-1. Tocca o fai clic su **Crea -> Cartella**.
+1. Accedi all’AEM e dal menu principale seleziona **Navigazione > Risorse > File**.
+1. Clic **Crea > Cartella**.
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventerà il nome del nodo nell’archivio.
@@ -38,8 +38,8 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
 1. In **Proprietà**, seleziona la scheda **Servizi cloud**.
 1. In **Configurazione cloud** seleziona la [configurazione creata in precedenza.](create-configuration.md)
    ![Configurare la cartella delle risorse](assets/assets-folder-configure.png)
-1. Tocca o fai clic su **Salva e chiudi**.
-1. Nella finestra di conferma tocca o fai clic su **OK**.
+1. Fai clic su **Salva e chiudi**.
+1. Clic **OK** nella finestra di conferma.
 
    ![Finestra di conferma](assets/assets-folder-confirmation.png)
 

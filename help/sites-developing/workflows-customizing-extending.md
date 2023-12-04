@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3589'
-ht-degree: 2%
+source-wordcount: '3499'
+ht-degree: 1%
 
 ---
 
@@ -1042,4 +1042,4 @@ Il `_cq_dialog/.content.xml` esempio utilizzato in questo esempio:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  Non è necessario modificare nulla in `/libs`, è sufficiente utilizzarli come esempi. Se desideri utilizzare uno dei passaggi esistenti, copiali in `/apps` e modificarli qui.
+>  Non modificare nulla in `/libs`, è sufficiente utilizzarli come esempi. Se desideri utilizzare uno dei passaggi esistenti, copiali in `/apps` e modificarli qui.

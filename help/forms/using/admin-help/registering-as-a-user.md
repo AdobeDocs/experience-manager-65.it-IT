@@ -2,7 +2,7 @@
 title: Registrazione come utente
 seo-title: Registering as a User
 description: Scopri come utilizzare i documenti protetti tramite policy ricevuti da un utente di Document Security, anche se sei esterno all’organizzazione dell’utente.
-seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 6%
+source-wordcount: '695'
+ht-degree: 3%
 
 ---
 
@@ -41,18 +41,18 @@ Puoi utilizzare i documenti protetti tramite policy ricevuti da un utente di Doc
 Se sei un utente invitato e ricevi un messaggio di registrazione e-mail da document security, puoi registrarti utilizzando l’URL nel messaggio per aprire la pagina di registrazione online. Dopo la registrazione, riceverai un secondo avviso sull’attivazione dell’account.
 
 1. Apri il messaggio di posta elettronica di registrazione a Document Security. L’URL contenuto nel messaggio è un collegamento alla pagina di registrazione per utenti esterni di Document Security.
-1. Fai clic sull’URL oppure copialo e incollalo nel browser. Viene visualizzata la pagina Registrazione utenti esterni.
+1. Fai clic sull’URL o copialo e incollalo nel browser. Viene visualizzata la pagina Registrazione utenti esterni.
 1. Digitare il proprio nome, numero di telefono, indirizzo, organizzazione e password nelle caselle appropriate, quindi digitare nuovamente la password nella casella Conferma password. La password può essere costituita da una qualsiasi combinazione di otto caratteri.
-1. Fai clic su Salva. Viene visualizzato un messaggio di ringraziamento che ti informa di verificare la presenza di un messaggio e-mail di attivazione. Per completare la procedura di registrazione, è necessario attivare l&#39;account.
+1. Fai clic su Salva. Viene visualizzato un messaggio di ringraziamento che ti informa di verificare la presenza di un messaggio e-mail di attivazione. Ora attiva il tuo account per completare il processo di registrazione.
 
 ## Attiva l’account utente invitato {#activate-your-invited-user-account}
 
-Dopo la registrazione, document security ti invia un’e-mail di attivazione. Devi attivare l’account utilizzando l’URL nel messaggio. Puoi quindi accedere a document security per utilizzare documenti protetti tramite policy a cui hai accesso. A seconda delle funzionalità abilitate dall&#39;amministratore per gli utenti esterni, è possibile disporre dell&#39;autorizzazione per creare criteri, applicare criteri ai documenti e aggiungere altri utenti esterni ai criteri.
+Dopo la registrazione, document security ti invia un’e-mail di attivazione. Attiva l’account utilizzando l’URL nel messaggio. Puoi quindi accedere a document security per utilizzare documenti protetti tramite policy a cui hai accesso. A seconda delle funzionalità abilitate dall&#39;amministratore per gli utenti esterni, è possibile disporre dell&#39;autorizzazione per creare criteri, applicare criteri ai documenti e aggiungere altri utenti esterni ai criteri.
 
 L&#39;account rimane attivo finché non viene disattivato o eliminato dall&#39;amministratore.
 
 1. Apri il messaggio di conferma della registrazione a Document Security.
-1. Fai clic sull’URL che appare nel messaggio. Viene visualizzata la pagina di attivazione di Document Security.
+1. Fai clic sull’URL visualizzato nel messaggio. Viene visualizzata la pagina di attivazione di Document Security.
 1. Fare clic sulla parola Qui per passare alla pagina di accesso.
 1. Nella casella Nome utente digita l’indirizzo e-mail con cui hai effettuato la registrazione a Document Security. Questo indirizzo e-mail è il nome utente predefinito di Document Security.
 1. Nella casella Password digitare la password creata al momento della registrazione e quindi fare clic su Accesso.

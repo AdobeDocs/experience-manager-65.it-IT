@@ -4,10 +4,10 @@ description: Scopri come configurare il Translation Integration Framework in Ado
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 48%
+source-wordcount: '1497'
+ht-degree: 41%
 
 ---
 
@@ -23,7 +23,7 @@ Per una panoramica delle funzioni di traduzione dei contenuti di AEM, vedi [Trad
 
 ## Connessione a un fornitore di servizi di traduzione {#connecting-to-a-translation-service-provider}
 
-Crea una configurazione cloud che connette AEM al provider di servizi di traduzione. AEM include la funzionalità di connessione a Microsoft Translator per impostazione predefinita.
+Crea una configurazione cloud che connette AEM al provider di servizi di traduzione. Per impostazione predefinita, AEM include la funzionalità di connessione a Microsoft Translator.
 I seguenti fornitori di servizi di traduzione forniscono un’implementazione della nuova API per i progetti di traduzione. Collegamenti per ulteriori informazioni sull’integrazione:
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
@@ -60,7 +60,7 @@ Crea una configurazione del Translation Integration Framework per specificare co
 
 * Quale fornitore di servizi di traduzione utilizzare.
 * Se deve essere eseguita la traduzione umana o automatica.
-* Se tradurre altro contenuto associato a una pagina o a una risorsa, ad esempio i tag.
+* Se tradurre altri contenuti associati a una pagina o a una risorsa, ad esempio i tag.
 
 Dopo aver creato una configurazione del framework, associa la configurazione cloud alle pagine che desideri tradurre. Quando il processo di traduzione viene avviato, il flusso di lavoro di traduzione procede in base alla configurazione del framework associato.
 
@@ -88,7 +88,7 @@ Le proprietà Sites controllano come viene eseguita la traduzione del contenuto 
    <td><p>Selezionare il metodo di traduzione eseguito dal framework per il contenuto del sito:</p>
     <ul>
      <li>Traduzione automatica: il provider di traduzione esegue la traduzione utilizzando la traduzione automatica in tempo reale.</li>
-     <li>Traduzione umana: il contenuto viene inviato al team di traduttori del fornitore di traduzione. </li>
+     <li>Traduzione umana: il contenuto viene inviato al provider di traduzione per essere tradotto dai traduttori. </li>
      <li>Non tradurre: il contenuto non viene inviato per la traduzione. Questo consente di saltare alcune parti di contenuto che non sarebbero tradotte, ma che potrebbero essere aggiornate con i contenuti più recenti.</li>
     </ul> </td>
   </tr>
@@ -149,7 +149,7 @@ Le proprietà di Assets controllano la modalità di configurazione delle risorse
    <td><p>Seleziona il tipo di traduzione eseguito dal framework per le risorse:</p>
     <ul>
      <li>Traduzione automatica: il provider di traduzione esegue la traduzione immediatamente utilizzando la traduzione automatica.</li>
-     <li>Traduzione umana: il contenuto viene inviato automaticamente al fornitore di traduzione per essere tradotto manualmente. </li>
+     <li>Traduzione umana: il contenuto viene inviato automaticamente al provider di traduzione per essere tradotto manualmente. </li>
      <li>Non tradurre: le risorse non vengono inviate per la traduzione.</li>
     </ul> </td>
   </tr>
@@ -180,14 +180,14 @@ Le proprietà di Assets controllano la modalità di configurazione delle risorse
  </tbody>
 </table>
 
-1. Nella barra laterale, tocca o fai clic su Strumenti > Operazioni > Cloud > Cloud Service.
+1. Nella barra laterale, fai clic su Strumenti > Operazioni > Cloud > Cloud Service.
 1. Nell’area Integrazione della traduzione, l’eventuale creazione di configurazioni determina quale collegamento viene visualizzato:
 
-   * Se non è stata creata alcuna configurazione, tocca o fai clic su Configura ora.
-   * Se le configurazioni esistono già, tocca o fai clic su Mostra configurazioni, quindi tocca o fai clic sul collegamento + che viene visualizzato accanto a Configurazioni disponibili.
+   * Se non è stata creata alcuna configurazione, fare clic su Configura ora.
+   * Se le configurazioni esistono già, fai clic su Mostra configurazioni, quindi fai clic sul collegamento + che viene visualizzato accanto a Configurazioni disponibili.
 
-1. Digita un nome per la configurazione, quindi tocca o fai clic su Crea.
-1. Configura le proprietà nella scheda Sites, Communities e Assets, quindi tocca o fai clic su OK.
+1. Digita un nome per la configurazione, quindi fai clic su Crea.
+1. Configura le proprietà nella scheda Siti, Community e Risorse, quindi fai clic su OK.
 
 ## Configurazione pagine per la traduzione {#configuring-pages-for-translation}
 
@@ -208,16 +208,16 @@ Inoltre, per tutte le community [Componenti SCF](/help/communities/scf.md) nelle
 
 Associa una pagina al fornitore di traduzione utilizzato per tradurre tale pagina e le relative pagine discendenti.
 
-1. Nella console Sites, seleziona la pagina da configurare e tocca o fai clic su Visualizza proprietà.
-1. Tocca o fai clic su Modifica, quindi tocca o fai clic sulla scheda Cloud Service.
-1. Tocca o fai clic su Aggiungi configurazione > Integrazione della traduzione.
-1. Seleziona il provider di traduzione da utilizzare, quindi tocca o fai clic su Fine.
+1. Nella console Sites, seleziona la pagina da configurare e fai clic su Visualizza proprietà.
+1. Fai clic su Modifica, quindi sulla scheda Cloud Service.
+1. Fai clic su Aggiungi configurazione > Integrazione della traduzione.
+1. Seleziona il provider di traduzione da utilizzare, quindi fai clic su Fine.
 
 ### Associazione di pagine a un framework di integrazione della traduzione {#associating-pages-with-a-translation-integration-framework}
 
 Associa una pagina a un framework di integrazione della traduzione che definisce come eseguire la traduzione della pagina e delle relative pagine discendenti.
 
-1. Nella console Sites, seleziona la pagina da configurare e tocca o fai clic su Visualizza proprietà.
-1. Tocca o fai clic su Modifica, quindi tocca o fai clic sulla scheda Cloud Service.
-1. Tocca o fai clic su Aggiungi configurazione > Integrazione della traduzione.
-1. Seleziona il framework di integrazione della traduzione da utilizzare, quindi tocca o fai clic su Fine.
+1. Nella console Sites, seleziona la pagina da configurare e fai clic su Visualizza proprietà.
+1. Fai clic su Modifica, quindi sulla scheda Cloud Service.
+1. Fai clic su Aggiungi configurazione > Integrazione della traduzione.
+1. Seleziona il framework di integrazione della traduzione da utilizzare, quindi fai clic su Fine.

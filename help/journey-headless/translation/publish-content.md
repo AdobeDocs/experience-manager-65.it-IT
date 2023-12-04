@@ -2,10 +2,10 @@
 title: Pubblicare contenuti tradotti
 description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 86%
+source-wordcount: '1336'
+ht-degree: 77%
 
 ---
 
@@ -63,13 +63,13 @@ Il modo più semplice per pubblicare le traduzioni è passare alla cartella riso
 
 In questo percorso sono presenti sottocartelle per ogni lingua di traduzione e puoi scegliere quale pubblicare.
 
-1. Vai su **Navigazione** -> **Risorse** -> **File** e apri la cartella del progetto.
+1. Vai a **Navigazione** > **Risorse** > **File** e apri la cartella del progetto.
 1. Qui puoi vedere la cartella principale della lingua e tutte le altre cartelle della lingua. Seleziona la lingua o le lingue localizzate da pubblicare.
    ![Seleziona cartella della lingua](assets/select-language-folder.png)
-1. Tocca o fai clic su **Gestisci pubblicazione**.
-1. Nella finestra **Gestisci pubblicazione**, assicurati che **Pubblica** sia selezionato automaticamente in **Azione** e che **Adesso** sia selezionato in **Pianificazione**. Tocca o fai clic su **Avanti**.
+1. Clic **Gestisci pubblicazione**.
+1. Nella finestra **Gestisci pubblicazione**, assicurati che **Pubblica** sia selezionato automaticamente in **Azione** e che **Adesso** sia selezionato in **Pianificazione**. Fai clic su **Avanti**.
    ![Opzioni di Gestisci pubblicazione](assets/manage-publication-options.png)
-1. Nella prossima finestra **Gestisci pubblicazione**, conferma che i percorsi corretti siano selezionati. Tocca o fai clic su **Pubblica**.
+1. Nella prossima finestra **Gestisci pubblicazione**, conferma che i percorsi corretti siano selezionati. Fai clic su **Pubblica**.
    ![Ambito di Gestisci pubblicazione](assets/manage-publication-scope.png)
 1. L’AEM conferma l’azione di pubblicazione con un messaggio a comparsa nella parte superiore dello schermo.
    ![Banner risorse pubblicate](assets/resources-published-message.png)
@@ -92,23 +92,23 @@ Tuttavia, come in precedenza, il processo varia leggermente se si sceglie di cre
 
 ### Aggiornamento di un progetto di traduzione creato automaticamente {#updating-automatic-project}
 
-1. Passa a **Navigazione** -> **Risorse** -> **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
+1. Accedi a **Navigazione** > **Risorse** > **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
 1. Seleziona la directory principale della lingua del progetto. In questo caso, `/content/dam/wknd/en` è selezionato.
-1. Tocca o fai clic sul selettore della barra e mostra il pannello **Riferimenti**.
-1. Tocca o fai clic su **Copie per lingua**.
+1. Fai clic sul selettore della barra e mostra **Riferimenti** pannello.
+1. Clic **Copie per lingua**.
 1. Seleziona la casella di spunta delle **Copie in lingua**.
 1. Espandi la sezione **Aggiorna copie per lingua** nella parte inferiore del pannello dei riferimenti.
 1. Nel menu a discesa **Progetto**, seleziona **Aggiungi a un progetto di traduzione esistente**.
 1. Nel menu a discesa **Progetto di traduzione esistente**, seleziona il progetto creato per la traduzione iniziale.
-1. Tocca o fai clic su **Inizia**.
+1. Clic **Inizio**.
 
 ![Aggiungi elementi al progetto di traduzione esistente](assets/add-to-existing-project.png)
 
 Il contenuto viene aggiunto al progetto di traduzione esistente. Per visualizzare il progetto di traduzione:
 
-1. Passa a **Navigazione** -> **Progetti**.
-1. Tocca o fai clic sul progetto appena aggiornato.
-1. Tocca o fai clic sulla lingua o su una delle lingue aggiornate.
+1. Accedi a **Navigazione** > **Progetti**.
+1. Fai clic sul progetto appena aggiornato.
+1. Fai clic sulla lingua o su una delle lingue aggiornate.
 
 Al progetto vengono aggiunte le nuove schede dei processi, in base alle necessità.
 
@@ -126,22 +126,22 @@ Da questo punto, [inizia e gestisci il tuo processo di traduzione proprio come h
 
 Per aggiornare una traduzione, puoi aggiungere al progetto esistente un nuovo processo responsabile della traduzione del contenuto aggiornato.
 
-1. Passa a **Navigazione** -> **Progetti**.
-1. Tocca o fai clic sul progetto da aggiornare.
-1. Tocca o fai clic sul pulsante **Aggiungi** nella parte superiore della finestra.
-1. Nella finestra **Aggiungi riquadro**, tocca o fai clic su **Processo di traduzione** e poi **Invia**.
+1. Accedi a **Navigazione** > **Progetti**.
+1. Fai clic sul progetto da aggiornare.
+1. Fai clic su **Aggiungi** nella parte superiore della finestra.
+1. In **Aggiungi sezione** finestra, fai clic su **Lavoro di traduzione** e poi **Invia**.
 
    ![Aggiungi riquadro](assets/add-translation-job-tile.png)
 
-1. Sulla scheda del nuovo processo di traduzione, tocca o fai clic sul pulsante con freccia in alto nella scheda e seleziona **Aggiorna destinazione** per definire la lingua di destinazione del nuovo processo.
+1. Sulla scheda del nuovo processo di traduzione, fai clic sul pulsante con freccia in alto nella scheda e seleziona **Aggiorna Target** per definire la lingua di destinazione del nuovo processo.
 
    ![Aggiorna destinazione](assets/update-target.png)
 
-1. Nella finestra di dialogo **Seleziona la lingua di destinazione** utilizza l’elenco a discesa per selezionare la lingua e tocca o fai clic su **Fine**.
+1. In **Seleziona lingua di destinazione** , utilizza il menu a discesa per selezionare la lingua e fai clic su **Fine**.
 
    ![Seleziona lingua di destinazione](assets/select-target-language.png)
 
-1. Una volta impostata la lingua di destinazione del nuovo processo di traduzione, tocca o fai clic sul pulsante con i puntini di sospensione nella parte inferiore della scheda del processo per visualizzarne i dettagli.
+1. Una volta impostata la lingua di destinazione del nuovo processo di traduzione, fai clic sul pulsante con i puntini di sospensione nella parte inferiore della scheda del processo per visualizzarne i dettagli.
 1. Il processo è vuoto al momento della creazione. Aggiungi contenuto al processo toccando o facendo clic sul pulsante **Aggiungi** e utilizzando il browser del percorso [come in precedenza durante la creazione del progetto di traduzione.](translate-content.md#manually-creating)
 
 >[!TIP]

@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 1%
+source-wordcount: '1028'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +57,7 @@ Compilare l&#39;applicazione PhoneGap sul computer utilizzando l&#39;interfaccia
 
 Per generare utilizzando PhoneGap CLI, è necessario installare Node.js e l’utility client PhoneGap. Per eseguire la procedura seguente è necessaria una connessione Internet.
 
-1. Scarica e installa [Node.js](https://nodejs.org/it).
+1. Scarica e installa [Node.js](https://nodejs.org/en).
 1. Apri un terminale o un prompt dei comandi e immetti il seguente comando del nodo per installare l&#39;utility PhoneGap:
 
    ```shell
@@ -101,7 +101,7 @@ Sposta il contenuto dell’app mobile nel file system.
    >
    >La cache contiene gli aggiornamenti del contenuto per le applicazioni installate. La cancellazione della cache annulla tutti gli aggiornamenti memorizzati nella cache.
 
-1. Sulla barra degli strumenti, tocca o fai clic sull’icona Scarica risorse CLI.
+1. Sulla barra degli strumenti, fai clic sull’icona Scarica risorse CLI.
 
    ![Icona Scarica risorse CLI indicata dal simbolo della tavoletta sovrapposta.](do-not-localize/chlimage_1-1.png)
 
@@ -133,7 +133,7 @@ Usa il servizio cloud PhoneGap per creare la tua app. Per eseguire questa proced
 Creare una configurazione di PhoneGap Build in modo da poter utilizzare i servizi PhoneGap Build dall&#39;AEM. Fornisci il nome utente e la password dell’account PhoneGap Build che utilizzerai per creare le tue app mobili.
 
 1. Apri la pagina Strumenti. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
-1. Nell&#39;area Operazioni CQ fare clic su Cloud Services.
+1. Nell&#39;area Operazioni CQ fare clic su Cloud Service.
 1. Fare clic sul collegamento Configura ora per la PhoneGap Build.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 3%
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Di seguito sono riportati i riferimenti API JavaScript disponibili per i moduli 
 
 >[!NOTE]
 >
->L’editor SPA è la soluzione consigliata per i progetti che richiedono un rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+>L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
 
 * [Mappatura dei componenti](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Gestione modelli di pagina](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

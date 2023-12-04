@@ -4,10 +4,10 @@ description: Scopri come le varianti possono rendere ancora più flessibili i co
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2388'
-ht-degree: 61%
+source-wordcount: '2309'
+ht-degree: 59%
 
 ---
 
@@ -75,7 +75,7 @@ Operazioni disponibili:
 
 ### Editor a schermo intero {#full-screen-editor}
 
-Quando modifichi un campo di testo su più righe puoi aprire l’editor a schermo intero; tocca o fai clic all’interno del testo effettivo, quindi seleziona la seguente icona di azione:
+Quando modifichi un campo di testo su più righe puoi aprire l’editor a schermo intero; fai clic all’interno del testo effettivo, quindi seleziona la seguente icona di azione:
 
 ![icona dell’editor a schermo intero](assets/cfm-variations-03.png)
 

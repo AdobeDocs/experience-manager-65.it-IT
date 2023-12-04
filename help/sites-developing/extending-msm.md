@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 2%
+source-wordcount: '2444'
+ht-degree: 0%
 
 ---
 
@@ -181,7 +181,7 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 1. Apri CRXDE Liti; ad esempio:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Accedi a :
+1. Accedi a:
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
@@ -191,7 +191,7 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 
    >[!NOTE]
    >
-   >Non è necessario modificare nulla nel `/libs` percorso.
+   >Non modificare nulla nella `/libs` percorso.
    >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
    >Il metodo consigliato per la configurazione e altre modifiche è:
    >
@@ -575,7 +575,7 @@ Configura la configurazione di rollout creata nella procedura precedente in modo
 
 [Creare una Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) della sezione inglese/prodotti del sito di riferimento We.Retail utilizzando la configurazione di rollout:
 
-* **Origine**: `/content/we-retail/language-masters/en/products`
+* **Sorgente**: `/content/we-retail/language-masters/en/products`
 
 * **Configurazione rollout**: esempio di configurazione di rollout
 

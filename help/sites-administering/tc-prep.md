@@ -4,10 +4,10 @@ description: Scopri come preparare i contenuti per la traduzione in Adobe Experi
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 59%
+source-wordcount: '669'
+ht-degree: 45%
 
 ---
 
@@ -45,9 +45,9 @@ Dopo aver preparato il contenuto per la traduzione, puoi creare automaticamente 
 
 Crea una directory principale della lingua come pagina principale di una copia per lingua che identifica la lingua del contenuto. Dopo aver creato la directory principale lingua, puoi creare progetti di traduzione che includono la copia per lingua.
 
-Per creare la directory principale della lingua è necessario creare una pagina e utilizzare un codice della lingua ISO come valore per la proprietà Nome. Il codice della lingua deve essere in uno dei seguenti formati:
+Per creare la directory principale della lingua è necessario creare una pagina e utilizzare un codice della lingua ISO come valore per la proprietà Name. Il codice della lingua deve essere in uno dei seguenti formati:
 
-* `<language-code>`Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio, `en`.
+* `<language-code>`Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio: `en`.
 
 * `<language-code>_<country-code>` o `<language-code>-<country-code>`Il codice del paese supportato è un codice a due lettere minuscole o maiuscole, come definito ad esempio dallo standard ISO 3166, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
@@ -56,20 +56,20 @@ Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito gl
 La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco per creare una copia in lingua di un sito web. Per istruzioni sull’utilizzo dell’interfaccia classica, consulta [Creazione di una directory principale della lingua tramite l’interfaccia classica](/help/sites-administering/tc-lroot-classic.md).
 
 1. Passa a Sites.
-1. Tocca o fai clic sul sito per il quale vuoi creare una copia per lingua.
+1. Fare clic sul sito per il quale si desidera creare una copia per lingua.
 
-   Ad esempio, per creare una copia per lingua del sito Geometrixx Outdoors, tocca o fai clic su Sito Geometrixx Outdoors.
+   Per creare ad esempio una copia per lingua del sito Geometrixx Outdoors, è necessario fare clic su Sito Geometrixx Outdoors.
 
-1. Tocca o fai clic su Crea, quindi tocca o fai clic su Crea pagina.
+1. Fare clic su Crea e quindi su Crea pagina.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Seleziona il modello della pagina e tocca o fai clic su Avanti.
-1. Nel campo Nome, digita il codice del paese nel formato di `<language-code>` o `<language-code>_<country-code>`, ad esempio, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
+1. Selezionare il modello della pagina e quindi fare clic su Avanti.
+1. Nel campo Nome digitare il codice del paese nel formato `<language-code>` o `<language-code>_<country-code>`ad esempio: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Tocca o fai clic su Crea. Nella finestra di dialogo di conferma, tocca o fai clic su **Fine** per tornare alla console Sites oppure **Apri** per aprire la copia per lingua.
+1. Fai clic su Crea. Nella finestra di dialogo di conferma, fai clic su **Fine** per tornare alla console Sites, oppure **Apri** per aprire la copia per lingua.
 
 ## Visualizzazione dello stato delle directory principali della lingua {#seeing-the-status-of-language-roots}
 
@@ -79,8 +79,8 @@ L’interfaccia utente ottimizzata per il tocco fornisce un pannello Riferimenti
 
 La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco per aprire il pannello Riferimenti di una pagina.
 
-1. Nella console Sites, seleziona una pagina del sito e quindi tocca o fai clic su **Riferimenti**.
+1. Nella console Sites, seleziona una pagina del sito e fai clic su **Riferimenti**.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
-1. Nel pannello dei riferimenti, tocca o fai clic su **Copie per lingua**. Il pannello Copie per lingua mostra le copie per lingua del sito web.
+1. Nel pannello Riferimenti, fate clic su **Copie per lingua**. Il pannello Copie per lingua mostra le copie per lingua del sito web.

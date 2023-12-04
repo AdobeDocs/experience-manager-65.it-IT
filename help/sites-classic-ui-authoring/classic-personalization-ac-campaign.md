@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 1%
+source-wordcount: '1185'
+ht-degree: 2%
 
 ---
 
@@ -81,7 +81,7 @@ Inoltre, potrebbe essere necessario selezionare il modello Adobe Campaign, modif
 
    >[!NOTE]
    >
-   >Tocca o fai clic su **OK** o **Applica** dopo l’aggiunta del servizio cloud. In questo modo è possibile **Adobe Campaign** per funzionare correttamente.
+   >Assicurati di fare clic su **OK** o **Applica** dopo l’aggiunta del servizio cloud. In questo modo è possibile **Adobe Campaign** per funzionare correttamente.
 
 1. Se desideri applicare un modello di consegna e-mail specifico (da Adobe Campaign), diverso da quello predefinito **mail** modello, seleziona **Proprietà pagina** di nuovo. In **Adobe Campaign** , immetti il nome interno del modello di consegna e-mail nell’istanza di Adobe Campaign correlata.
 

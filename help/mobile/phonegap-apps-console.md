@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2675'
 ht-degree: 1%
 
 ---
@@ -107,16 +107,16 @@ Dopo aver creato un’app mobile, puoi modificarne le proprietà.
 
 #### Modifica titolo, descrizione e icona {#change-the-title-description-and-icon}
 
-1. Nella barra, tocca o fai clic su App.
+1. Nella barra, fai clic su App.
 1. Seleziona l’applicazione da configurare e fai clic sull’icona Visualizza proprietà pagina.
 
    ![L’icona Visualizza proprietà pagina indicata dalla lettera I in un cerchio.](do-not-localize/chlimage_1-8.png)
 
-1. Per modificare i valori delle proprietà, tocca o fai clic sull’icona Modifica.
+1. Per modificare i valori delle proprietà, fai clic sull’icona Modifica.
 
    ![L’icona Modifica indicata da una matita.](do-not-localize/chlimage_1-9.png)
 
-1. Configura le proprietà Base e Avanzate, quindi tocca o fai clic sull&#39;icona Fine.
+1. Configurare le proprietà Base e Avanzate, quindi fare clic sull&#39;icona Fine.
 
    ![L&#39;icona Fine è indicata da un segno di spunta.](do-not-localize/chlimage_1-10.png)
 
@@ -127,11 +127,11 @@ Dopo aver creato un’app mobile, puoi modificarne le proprietà.
 
    ![L&#39;icona Visualizza proprietà applicazione indicata dalla lettera I all&#39;interno di un cerchio.](do-not-localize/chlimage_1-11.png)
 
-1. Per modificare i valori delle proprietà, tocca o fai clic sull’icona Modifica.
+1. Per modificare i valori delle proprietà, fai clic sull’icona Modifica.
 
    ![L’icona Modifica indicata da una matita.](do-not-localize/chlimage_1-12.png)
 
-1. Configura le proprietà nelle schede Base, Avanzate, Genera e Analytics, quindi tocca o fai clic sull’icona Fine.
+1. Configura le proprietà nelle schede Base, Avanzate, Genera e Analytics, quindi fai clic sull’icona Fine.
 
    ![L&#39;icona Fine è indicata da un segno di spunta.](do-not-localize/chlimage_1-13.png)
 
@@ -139,8 +139,8 @@ Dopo aver creato un’app mobile, puoi modificarne le proprietà.
 
 Dopo aver creato l’app mobile, aggiungi il contenuto utilizzato come interfaccia utente dell’applicazione.
 
-1. Nella barra, tocca o fai clic su App.
-1. Tocca o fai clic sull’applicazione, quindi tocca o fai clic su Inglese.
+1. Nella barra, fai clic su App.
+1. Fai clic sull’applicazione, quindi fai clic su Inglese.
 1. Modifica la home page o aggiungi pagine figlie come richiesto.
 
 ### Spostamento dei contenuti nelle applicazioni mobili {#moving-content-to-mobile-applications}
@@ -160,8 +160,8 @@ Content Sync tiene inoltre traccia di quando si verificano gli aggiornamenti. Co
 
 Eseguire la procedura seguente sull&#39;istanza in cui si desidera aggiornare la cache. Ad esempio, se l’applicazione richiede aggiornamenti dall’istanza Publish, esegui la procedura sull’istanza Publish.
 
-1. Nella barra, tocca o fai clic su App, quindi tocca o fai clic sull’applicazione.
-1. Seleziona la pagina iniziale e tocca o fai clic sull’icona Aggiorna cache.
+1. Nella barra, fai clic su App, quindi fai clic sull’applicazione.
+1. Selezionare la pagina iniziale, quindi fare clic sull&#39;icona Aggiorna cache.
 
    ![Icona Aggiorna cache indicata da un barile con un simbolo di riciclo.](do-not-localize/chlimage_1-14.png)
 

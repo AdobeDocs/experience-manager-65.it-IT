@@ -3,10 +3,10 @@ title: Configura l’Editor Rich Text per creare contenuti in Adobe Experience M
 description: Scopri come configurare l’Editor Rich Text di Adobe Experience Manager per l’authoring dei contenuti in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 1%
+source-wordcount: '2883'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ Gli autori possono creare e modificare il contenuto testuale in Experience Manag
 
 ### Modifica in linea {#inline-editing}
 
-All’apertura (con un doppio tocco o clic lento) è possibile modificare il contenuto all’interno della pagina. Viene visualizzata una barra degli strumenti compatta con opzioni di base.
+All’apertura (con un doppio clic lento) è possibile modificare il contenuto all’interno della pagina. Viene visualizzata una barra degli strumenti compatta con opzioni di base.
 
 ![Modifica in linea con barra degli strumenti di base nell’interfaccia utente touch](assets/chlimage_1-36.png)
 

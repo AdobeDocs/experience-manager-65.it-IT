@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 2%
+source-wordcount: '2462'
+ht-degree: 3%
 
 ---
 
@@ -97,7 +97,7 @@ Selezione **Modifica** consente di:
 
 ### Aggiunta di un passaggio a un modello {#adding-a-step-to-a-model}
 
-Devi aggiungere dei passaggi al modello per rappresentare l&#39;attività da eseguire: ogni passaggio esegue un&#39;attività specifica. Una selezione di componenti step è disponibile in un’istanza AEM standard.
+Aggiungi i passaggi al modello per rappresentare l’attività da eseguire: ogni passaggio esegue un’attività specifica. Una selezione di componenti step è disponibile in un’istanza AEM standard.
 
 Quando modificate un modello, i passi disponibili vengono visualizzati nei vari gruppi della **Browser Passaggi**. Ad esempio:
 
@@ -144,7 +144,7 @@ Per aggiungere passaggi al modello di flusso di lavoro:
 
 1. Per aprire **Proprietà passaggio** per un passaggio:
 
-   * Tocca o fai clic sul passaggio* *nel modello di flusso di lavoro e seleziona **Configura** dalla barra degli strumenti del componente.
+   * Fai clic sul passaggio* *nel modello di flusso di lavoro e seleziona **Configura** dalla barra degli strumenti del componente.
 
    * Fare doppio clic sul passaggio.
 
@@ -243,14 +243,14 @@ Per definire **Fasi** per il workflow:
 
    È possibile assegnare una fase a più fasi. Ad esempio:
 
-   | **Passaggio** | **Ambiente di staging** |
+   | **Passaggio** | **Fase** |
    |---|---|
    | Passaggio 1 | Creare |
    | Passaggio 2 | Creare |
    | Passaggio 3 | Recensione |
    | Passaggio 4 | Approva |
    | Passaggio 5 | Approva |
-   | Passaggio 6 | Completa |
+   | Passaggio 6 | Completato |
 
 1. Conferma le modifiche con **Sincronizza** (barra degli strumenti dell’editor) per generare il modello runtime.
 
@@ -328,9 +328,9 @@ Per illustrare alcune delle possibilità di creazione di un flusso di lavoro, ne
 
    Il nuovo flusso di lavoro conterrà:
 
-   * **Avvio del flusso**
+   * **Inizio flusso**
    * `Step 1`
-   * **Fine del flusso**
+   * **Fine flusso**
 
 1. Elimina `Step 1` (in quanto si tratta del tipo di passaggio errato per questo esempio):
 

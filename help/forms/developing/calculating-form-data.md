@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 1%
+source-wordcount: '1858'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Il servizio Forms può calcolare i valori immessi da un utente in un modulo e visualizzarne i risultati. Per calcolare i dati del modulo, è necessario eseguire due attività. Innanzitutto, è possibile creare uno script di progettazione del modulo che calcola i dati del modulo. La progettazione di un modulo supporta tre tipi di script. Un tipo di script viene eseguito sul client, un altro sul server e il terzo sul server e sul client. Il tipo di script descritto in questo argomento viene eseguito sul server. I calcoli lato server sono supportati per le trasformazioni HTML, PDF e guida ai moduli (obsolete).
 
-Come parte del processo di progettazione del modulo, è possibile utilizzare calcoli e script per fornire un’esperienza utente più ricca. È possibile aggiungere calcoli e script alla maggior parte dei campi e degli oggetti del modulo. È necessario creare uno script di progettazione del modulo per eseguire operazioni di calcolo sui dati immessi da un utente in un modulo interattivo.
+Come parte del processo di progettazione del modulo, è possibile utilizzare calcoli e script per fornire un’esperienza utente più ricca. È possibile aggiungere calcoli e script alla maggior parte dei campi e degli oggetti del modulo. Creare uno script di progettazione del modulo per eseguire operazioni di calcolo sui dati immessi da un utente in un modulo interattivo.
 
 L’utente immette i valori nel modulo e fa clic sul pulsante Calcola per visualizzare i risultati. Il processo seguente descrive un esempio di applicazione che consente a un utente di calcolare i dati:
 
@@ -86,7 +86,7 @@ In questa struttura di modulo, il pulsante Calcola è un pulsante di comando e l
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di uno script di progettazione del modulo, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it).
+>Per informazioni sulla creazione di uno script di progettazione del modulo, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 >[!NOTE]
 >

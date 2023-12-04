@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4143'
+source-wordcount: '4102'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Quando un modulo viene renderizzato come modulo HTML, le dimensioni della pagina
 
 ## Esecuzione degli script {#running-scripts}
 
-Un autore di moduli specifica se uno script viene eseguito sul server o sul client. Il servizio Forms crea un ambiente di elaborazione degli eventi distribuito per l&#39;esecuzione di informazioni sui moduli che può essere distribuito tra il client e il server utilizzando `runAt` attributo. Per informazioni su questo attributo o sulla creazione di script nelle progettazioni di moduli, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it)
+Un autore di moduli specifica se uno script viene eseguito sul server o sul client. Il servizio Forms crea un ambiente di elaborazione degli eventi distribuito per l&#39;esecuzione di informazioni sui moduli che può essere distribuito tra il client e il server utilizzando `runAt` attributo. Per informazioni su questo attributo o sulla creazione di script nelle progettazioni di moduli, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 Il servizio Forms può eseguire script durante il rendering del modulo. Di conseguenza, è possibile precompilare un modulo con i dati connettendosi a un database o a servizi Web che potrebbero non essere disponibili sul client. È inoltre possibile impostare i `Click` da eseguire sul server in modo che il client esegua il round trip dei dati al server. Questo consente al client di eseguire script che potrebbero richiedere risorse server, ad esempio un database aziendale, mentre un utente interagisce con un modulo. Per i moduli HTML, gli script formcalc possono essere eseguiti solo sul server. Di conseguenza, è necessario contrassegnare questi script per l&#39;esecuzione alle `server` o `both`.
 
@@ -99,7 +99,7 @@ In un modulo multipagina, le modifiche apportate da JavaScript a una pagina non 
 
 È possibile richiamare script personalizzati prima di inviare un modulo. Questa funzione funziona su tutti i browser disponibili. Tuttavia, può essere utilizzato solo quando gli utenti eseguono il rendering del modulo HTML con `Output Type` proprietà impostata su `Form Body`. Non funzionerà quando `Output Type` è `Full HTML`. Per informazioni su come configurare questa funzione, consulta Configurazione dei moduli nella guida per l’amministrazione.
 
-È necessario innanzitutto definire una funzione di callback chiamata prima dell&#39;invio del modulo, in cui il nome della funzione è `_user_onsubmit`. Si presume che la funzione non genererà alcuna eccezione o, in caso contrario, l’eccezione verrà ignorata. Si consiglia di posizionare la funzione JavaScript nella sezione head dell’html; tuttavia, è possibile dichiararla ovunque prima della fine dei tag script che includono `xfasubset.js`.
+Definire innanzitutto una funzione di callback chiamata prima dell&#39;invio del modulo, in cui il nome della funzione è `_user_onsubmit`. Si presume che la funzione non genererà alcuna eccezione o, in caso contrario, l’eccezione verrà ignorata. Si consiglia di posizionare la funzione JavaScript nella sezione head dell’html; tuttavia, è possibile dichiararla ovunque prima della fine dei tag script che includono `xfasubset.js`.
 
 Quando formserver esegue il rendering di un XDP che contiene un elenco a discesa, oltre a creare l’elenco a discesa, crea anche due campi di testo nascosti. Questi campi di testo memorizzano i dati dell’elenco a discesa (uno memorizza il nome visualizzato delle opzioni, l’altro il valore delle opzioni). Pertanto, ogni volta che un utente invia il modulo, vengono inviati tutti i dati dell’elenco a discesa. Supponendo di non voler inviare tutti quei dati ogni volta, puoi scrivere uno script personalizzato per disabilitarlo. Ad esempio: il nome dell’elenco a discesa è `drpOrderedByStateProv` e viene racchiuso nell’intestazione del sottomodulo. Il nome dell’elemento di input HTML sarà `header[0].drpOrderedByStateProv[0]`. Il nome dei campi nascosti che memorizzano e inviano i dati del menu a discesa ha i seguenti nomi: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
@@ -123,11 +123,11 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 Durante la creazione di progettazioni di moduli da riprodurre come HTML, è necessario limitare gli script al sottoinsieme XFA per gli script in linguaggio JavaScript.
 
-Gli script eseguiti sul client o sia sul client che sul server devono essere scritti all&#39;interno del sottoinsieme XFA. Gli script eseguiti sul server possono utilizzare il modello di script XFA completo e anche FormCalc. Per informazioni sull’utilizzo di JavaScript, consulta [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it).
+Gli script eseguiti sul client o sia sul client che sul server devono essere scritti all&#39;interno del sottoinsieme XFA. Gli script eseguiti sul server possono utilizzare il modello di script XFA completo e anche FormCalc. Per informazioni sull’utilizzo di JavaScript, consulta [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Quando si eseguono gli script sul client, solo il pannello corrente visualizzato può utilizzare gli script; ad esempio, non è possibile eseguire script per i campi presenti nel pannello A quando viene visualizzato il pannello B. Durante l’esecuzione di script sul server, è possibile accedere a tutti i pannelli.
 
-È inoltre necessario prestare attenzione quando si utilizzano espressioni SOM (Scripting Object Model) all&#39;interno di script eseguiti sul client. Solo un sottoinsieme semplificato di espressioni SOM è supportato dagli script eseguiti sul client.
+Prestare attenzione quando si utilizzano espressioni SOM (Scripting Object Model) all&#39;interno di script eseguiti sul client. Solo un sottoinsieme semplificato di espressioni SOM è supportato dagli script eseguiti sul client.
 
 ## Tempistica eventi {#event-timing}
 
@@ -140,11 +140,11 @@ I Forms visualizzati in un browser web (al contrario di Adobe Reader o Acrobat) 
 * Se il test null genera un errore e si esce da un campo senza specificare un valore, viene visualizzata una finestra di messaggio e si viene riposizionati nel campo dopo aver fatto clic su OK.
 * Se un test null genera un avviso e si esce da un campo senza specificare un valore, viene richiesto di fare clic su OK o su Annulla per poter procedere senza specificare un valore o tornare al campo per immettere un valore.
 
-Per ulteriori informazioni su un test null, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it).
+Per ulteriori informazioni su un test null, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Pulsanti modulo {#form-buttons}
 
-Facendo clic su un pulsante Invia, i dati del modulo vengono inviati al servizio Forms e rappresentano la fine dell’elaborazione del modulo. Il `preSubmit` può essere impostato per l&#39;esecuzione sul client o sul server. Il `preSubmit` viene eseguito prima dell’invio del modulo se è configurato per essere eseguito sul client. In caso contrario, `preSubmit` viene eseguito sul server durante l’invio del modulo. Per ulteriori informazioni su `preSubmit` evento, vedi [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it).
+Facendo clic su un pulsante Invia, i dati del modulo vengono inviati al servizio Forms e rappresentano la fine dell’elaborazione del modulo. Il `preSubmit` può essere impostato per l&#39;esecuzione sul client o sul server. Il `preSubmit` viene eseguito prima dell’invio del modulo se è configurato per essere eseguito sul client. In caso contrario, `preSubmit` viene eseguito sul server durante l’invio del modulo. Per ulteriori informazioni su `preSubmit` evento, vedi [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Se a un pulsante non è associato alcuno script sul lato client, i dati vengono inviati al server, i calcoli vengono eseguiti sul server e il modulo HTML viene rigenerato. Se un pulsante contiene uno script lato client, i dati non vengono inviati al server e lo script lato client viene eseguito nel browser Web.
 
@@ -236,7 +236,7 @@ Se si esegue il rendering di un modulo HTML, si consiglia di non aggiungere una 
 
 **Rendering di un modulo HTML**
 
-Per eseguire il rendering di un modulo HTML, è necessario specificare una struttura di modulo creata in Designer e salvata come file XDP. È inoltre necessario selezionare un tipo di trasformazione HTML. È ad esempio possibile specificare il tipo di trasformazione HTML che esegue il rendering di un HTML dinamico per Internet Explorer 5.0 o versione successiva.
+Per eseguire il rendering di un modulo di HTML, specificare una struttura di modulo creata in Designer e salvata come file XDP. Selezionare un tipo di trasformazione HTML. È ad esempio possibile specificare il tipo di trasformazione HTML che esegue il rendering di un HTML dinamico per Internet Explorer 5.0 o versione successiva.
 
 Il rendering di un modulo HTML richiede anche valori, ad esempio valori URI necessari per il rendering di altri tipi di modulo.
 

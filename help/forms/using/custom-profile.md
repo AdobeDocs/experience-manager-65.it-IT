@@ -10,9 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Per creare un profilo personalizzato, effettua le seguenti operazioni:
 Dopo aver creato un profilo personalizzato, aggiungi le informazioni di rendering a questo profilo. Quando riceve una richiesta per il nuovo profilo, CRX verifica l’esistenza della cartella /apps per la pagina JSP di cui eseguire il rendering. Crea la pagina JSP nella cartella /apps.
 
 1. Nel riquadro a sinistra, passare alla `/apps` cartella.
-1. Fai clic con il pulsante destro del mouse sulla `/apps` e scegliere di creare una cartella denominata **hardware**.
+1. Fare clic con il pulsante destro del mouse `/apps` e scegliere di creare una cartella denominata **hardware**.
 1. Insider **hardware** cartella creare una cartella denominata **demo**.
 1. Fai clic su **Salva tutto** pulsante.
 1. Accedi a `/libs/xfaforms/profile/html.jsp` e copia il nodo **html.jsp**.

@@ -2,10 +2,10 @@
 title: Utilizzare le versioni delle pagine di contenuto
 description: Creare, confrontare e ripristinare le versioni di una pagina in Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 65%
+source-wordcount: '1510'
+ht-degree: 63%
 
 ---
 
@@ -16,7 +16,7 @@ Il controllo delle versioni crea lo snapshot di una pagina in un determinato mom
 * Creare una versione di una pagina.
 * Ripristina una pagina a una versione precedente, ad esempio:
    * per annullare una modifica apportata alla pagina.
-* Confrontare la versione corrente della pagina con una versione precedente:
+* Confrontare la versione corrente di una pagina con una versione precedente:
    * per evidenziare le differenze nel testo e nelle immagini.
 
 ## Creazione di una nuova versione   {#creating-a-new-version}
@@ -31,7 +31,7 @@ Puoi creare una versione della risorsa da:
 1. Passa alla pagina per la quale desideri creare una versione.
 1. Seleziona la pagina in [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Apri **Timeline** colonna.
-1. Tocca o fai clic sulla freccia accanto al campo del commento per visualizzare le opzioni:
+1. Fai clic sulla freccia accanto al campo del commento per visualizzare le opzioni:
 
    ![Timeline - Salva come versione](assets/screen-shot_2019-03-05at112335.png)
 
@@ -210,7 +210,7 @@ Timewarp è una [modalità](/help/sites-authoring/author-environment-tools.md#pa
 
    ![Seleziona Timewarp nella selezione della modalità](assets/wwpv-01.png)
 
-1. Nella finestra di dialogo, imposta una data e un’ora di destinazione e tocca o fai clic su **Imposta data**. Se non si seleziona un&#39;ora, viene utilizzata come impostazione predefinita l&#39;ora corrente.
+1. Nella finestra di dialogo, imposta una data e un’ora di destinazione e fai clic su **Imposta data**. Se non si seleziona un&#39;ora, viene utilizzata come impostazione predefinita l&#39;ora corrente.
 
    ![Imposta data](assets/wwpv-02.png)
 

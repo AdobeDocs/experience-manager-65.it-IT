@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 13%
+source-wordcount: '1128'
+ht-degree: 7%
 
 ---
 
@@ -49,12 +49,12 @@ I seguenti contenitori logici sono disponibili come predefiniti e ti consentono 
 <table>
  <tbody>
   <tr>
-   <td> Contenitore E<br /> </td>
-   <td> Operatore AND boolean.<br /> </td>
+   <td> Contenitore AND<br /> </td>
+   <td> Operatore AND booleano.<br /> </td>
   </tr>
   <tr>
-   <td> Contenitore O<br /> </td>
-   <td> Operatore OR boolean.</td>
+   <td> Contenitore OR<br /> </td>
+   <td> Operatore OR booleano.</td>
   </tr>
  </tbody>
 </table>
@@ -110,7 +110,7 @@ Quando l’intera istruzione restituisce true, questo segmento è stato risolto.
 
 >[!CAUTION]
 >
->L’editor segmento non verifica la presenza di riferimenti circolari. Ad esempio, il segmento A fa riferimento a un altro segmento B, che a sua volta fa riferimento al segmento A. È necessario assicurarsi che i segmenti non contengano riferimenti circolari.
+>L’editor segmento non verifica la presenza di riferimenti circolari. Ad esempio, il segmento A fa riferimento a un altro segmento B, che a sua volta fa riferimento al segmento A. Assicurati che i segmenti non contengano riferimenti circolari.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Oppure no:
 
 >[!NOTE]
 >
->Tutte le caratteristiche vengono risolte immediatamente, anche se la maggior parte si modifica solamente quando la pagina viene ricaricata. Le modifiche apportate alla posizione del mouse sono immediatamente visibili e risultano quindi utili a scopo di test.
+>Tutte le caratteristiche vengono risolte immediatamente, anche se la maggior parte si modifica solo al ricaricamento della pagina. Le modifiche apportate alla posizione del mouse sono immediatamente visibili e risultano quindi utili a scopo di test.
 
 Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con **Teaser** componenti.
 

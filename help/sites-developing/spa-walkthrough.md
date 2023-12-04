@@ -4,10 +4,10 @@ description: Questo articolo introduce i concetti di una SPA e spiega come utili
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 67%
+source-wordcount: '1945'
+ht-degree: 64%
 
 ---
 
@@ -20,7 +20,7 @@ L’editor di SPA offre una soluzione completa per il supporto di SPA in AEM. Qu
 
 >[!NOTE]
 >
->L’editor SPA è la soluzione consigliata per i progetti che richiedono un rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+>L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
 
 ## Introduzione {#introduction}
 
@@ -62,12 +62,12 @@ Essendo più veloce, fluida e più simile a un’applicazione nativa, una SPA di
 
 ![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
-**Visitatori**
+**Visitor**
 
 * I visitatori desiderano esperienze di tipo nativo quando interagiscono con i contenuti.
 * È dimostrato che più veloce sarà una pagina, più probabile sarà una conversione.
 
-**Persone addette al marketing**
+**Addetti marketing**
 
 * Le persone addette al marketing desiderano offrire esperienze avanzate e di tipo nativo per invitare la clientela a interagire pienamente con i contenuti.
 * La personalizzazione può rendere queste esperienze ancora più coinvolgenti.
@@ -125,7 +125,7 @@ Quando un SPA viene creato per utilizzare l’Editor SPA dell’AEM, l’autore 
 
    ![Passaggio 5](assets/spa-walkthrough-step-5.png)
 
-Sono supportati ulteriori strumenti di authoring, come il trascinamento e il rilascio di componenti aggiuntivi sulla pagina, la ridisposizione dei componenti e la modifica del layout, come in qualsiasi applicazione non SPA.
+Sono supportati strumenti di authoring aggiuntivi, come il trascinamento della selezione di componenti aggiuntivi sulla pagina, la ridisposizione dei componenti e la modifica del layout, come in qualsiasi applicazione non SPA.
 
 >[!NOTE]
 >

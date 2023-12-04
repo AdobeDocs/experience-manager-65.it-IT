@@ -8,10 +8,10 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3574'
-ht-degree: 2%
+source-wordcount: '3565'
+ht-degree: 1%
 
 ---
 
@@ -53,7 +53,7 @@ Per creare, modificare, caricare e installare pacchetti, gli utenti devono dispo
 
 È possibile accedere a Gestione pacchetti in tre modi:
 
-1. Dal menu principale dell’AEM -> **Strumenti** -> **Distribuzione** -> **Pacchetti**
+1. Dal menu principale dell’AEM > **Strumenti** > **Distribuzione** > **Pacchetti**
 1. Da [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md) utilizzo della barra del commutatore superiore
 1. Direttamente accedendo a `http://<host>:<port>/crx/packmgr/`
 
@@ -255,7 +255,7 @@ Un pacchetto viene spesso creato contemporaneamente a [creare il pacchetto](#cre
 
 1. Clic **Genera**. Una finestra di dialogo richiede la conferma che desideri creare il pacchetto poiché tutti i contenuti del pacchetto esistenti verranno sovrascritti.
 
-1. Fai clic su **OK**. L’AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato AEM, viene visualizzata una conferma che il pacchetto è stato creato e, quando si chiude la finestra di dialogo, vengono aggiornate le informazioni sull’elenco dei pacchetti.
+1. Clic **OK**. L’AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato AEM, viene visualizzata una conferma che il pacchetto è stato creato e, quando si chiude la finestra di dialogo, vengono aggiornate le informazioni sull’elenco dei pacchetti.
 
 ### Modifica di un pacchetto {#edit-package}
 
@@ -283,7 +283,7 @@ Una volta creato un pacchetto, è possibile eseguirne il rewrapping. Il ritorno 
 
 1. Clic **Salva** per salvare.
 
-1. Clic **Altro** -> **Ripeti adattamento** e una finestra di dialogo chiederà la conferma.
+1. Clic **Altro** > **Ripeti adattamento** e una finestra di dialogo chiederà la conferma.
 
 ### Visualizzazione di altre versioni del pacchetto {#other-versions}
 
@@ -293,7 +293,7 @@ Poiché ogni versione di un pacchetto viene visualizzata nell&#39;elenco come qu
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
-1. Clic **Altro** -> **Altre versioni** e viene visualizzata una finestra di dialogo con un elenco di altre versioni dello stesso pacchetto con informazioni sullo stato.
+1. Clic **Altro** > **Altre versioni** e viene visualizzata una finestra di dialogo con un elenco di altre versioni dello stesso pacchetto con informazioni sullo stato.
 
 ### Visualizzazione del contenuto del pacchetto e verifica dell’installazione {#viewing-package-contents-and-testing-installation}
 
@@ -303,11 +303,11 @@ Dopo aver generato un pacchetto, puoi visualizzarne il contenuto.
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
-1. Per visualizzare il contenuto, fai clic su **Altro** -> **Sommario**, e Gestione pacchetti elenca l’intero contenuto del pacchetto nel registro attività.
+1. Per visualizzare il contenuto, fai clic su **Altro** > **Sommario**, e Gestione pacchetti elenca l’intero contenuto del pacchetto nel registro attività.
 
    ![Contenuti del pacchetto](assets/package-contents.png)
 
-1. Per eseguire l&#39;esecuzione dell&#39;installazione, fare clic su **Altro** -> **Installazione di prova** e Gestione pacchetti segnalano nel registro attività i risultati come se l’installazione fosse stata eseguita.
+1. Per eseguire l&#39;esecuzione dell&#39;installazione, fare clic su **Altro** > **Installazione di prova** e Gestione pacchetti segnalano nel registro attività i risultati come se l’installazione fosse stata eseguita.
 
    ![Prova installazione](assets/test-install.png)
 
@@ -435,7 +435,7 @@ La convalida deve sempre avvenire dopo il caricamento del pacchetto, ma prima de
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
-1. Per convalidare il pacchetto, fai clic su **Altro** -> **Convalida**,
+1. Per convalidare il pacchetto, fai clic su **Altro** > **Convalida**,
 
 1. Nella finestra di dialogo modale visualizzata, utilizza le caselle di controllo per selezionare il tipo o i tipi di convalida e avviare la convalida facendo clic su **Convalida**.
 
@@ -473,13 +473,13 @@ I pacchetti sono definiti dai relativi filtri. In Gestione pacchetti puoi applic
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
-1. Clic **Altro** -> **Copertura**.
+1. Clic **Altro** > **Copertura**.
 
 1. I dettagli della copertura sono elencati nel registro attività.
 
 ### Installazione dei pacchetti {#installing-packages}
 
-Il caricamento di un pacchetto aggiunge solo il contenuto del pacchetto all’archivio, ma non è accessibile. Per utilizzare il contenuto del pacchetto è necessario installare il pacchetto caricato.
+Il caricamento di un pacchetto aggiunge solo il contenuto del pacchetto all’archivio, ma non è accessibile. Installa il pacchetto caricato per utilizzare il contenuto del pacchetto.
 
 >[!CAUTION]
 >
@@ -543,7 +543,7 @@ La disinstallazione del pacchetto ripristina il contenuto dell’archivio allo s
 
 1. Aprire i dettagli del pacchetto che si desidera disinstallare dall&#39;elenco dei pacchetti facendo clic sul nome del pacchetto.
 
-1. Clic **Altro** -> **Disinstalla**, per rimuovere il contenuto del pacchetto dall&#39;archivio.
+1. Clic **Altro** > **Disinstalla**, per rimuovere il contenuto del pacchetto dall&#39;archivio.
 
 1. Una finestra di dialogo richiede conferma ed elenca tutte le modifiche apportate.
 
@@ -569,7 +569,7 @@ Replica il contenuto di un pacchetto per installarlo nell’istanza Publish.
 
 1. Aprire i dettagli del package che si desidera replicare dall&#39;elenco dei package facendo clic sul nome del package.
 
-1. Clic **Altro** -> **Replica**.
+1. Clic **Altro** > **Replica**.
 
 1. Il pacchetto viene replicato e i dettagli vengono riportati nel registro attività.
 

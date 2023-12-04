@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 88%
+source-wordcount: '1937'
+ht-degree: 76%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 88%
 La console Attività consente di creare, organizzare e gestire le [attività](/help/sites-authoring/personalization.md#activities) di marketing dei brand, o marchi:
 
 * Aggiungi marchi.
-* Per ogni marchio puoi aggiungere e configurare delle attività.
+* Per ogni marchio, aggiungi e configura le attività.
 * Attività di amministrazione.
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Le attività vengono visualizzate con un’etichetta che descrive il tipo di att
 
 >[!CAUTION]
 >
->È necessario proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+>Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull’istanza di pubblicazione, in modo che non sia accessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 >
 >Consulta [Prerequisiti per l&#39;integrazione con Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) per informazioni dettagliate.
 
@@ -64,14 +64,14 @@ Crea un marchio per il quale desideri gestire le attività di marketing.
 
 Quando crei un marchio utilizzando la console Attività, questa viene visualizzata anche nella [console Offerte](/help/sites-authoring/offerlib.md), dove puoi creare offerte per le esperienze delle tue attività.
 
-1. Nella console Navigazione, tocca o fai clic su **Personalizzazione**. Tocca o fai clic su **Crea**.
+1. Nella console Navigazione, fai clic su **Personalizzazione**. Clic **Attività**.
 
    ![screen_shot_2018-03-21at151821](assets/screen_shot_2018-03-21at151821.png)
 
-1. Nella console Attività, tocca o fai clic su **Crea**, quindi su **Crea marchio**.
-1. Seleziona il modello del marchio e tocca o fai clic su **Avanti**.
+1. Nella console Attività, fai clic su **Crea** allora **Crea marchio**.
+1. Seleziona il modello del brand e fai clic su **Successivo**.
 1. Digita il titolo da asegnare al marchio; questo titolo verrà visualizzato nelle console Attività e Offerte. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
-1. Tocca o fai clic su **Crea**. Il marchio viene visualizzato nella console Attività.
+1. Fai clic su **Crea**. Il marchio viene visualizzato nella console Attività.
 
 ## Aggiunta o modifica di un’attività tramite la console Attività {#adding-editing-an-activity-using-the-activities-console}
 
@@ -97,8 +97,8 @@ Aggiungi un’attività o modifica un’attività esistente per concentrare le t
 
 Per aggiungere un’attività:
 
-1. Tocca o fai clic sul marchio per il quale stai creando l’attività, oppure tocca o fai clic su **Crea** e poi **Crea attività**. Se stai modificando, seleziona l’attività e quindi tocca o fai clic su **Modifica**.
-1. Fornisci le seguenti informazioni, quindi tocca o fai clic su **Avanti**:
+1. Fai clic sul marchio per il quale stai creando l’attività, quindi fai clic su **Crea** e poi **Crea attività**. Se stai modificando, seleziona l’attività e fai clic su **Modifica**.
+1. Fornisci le seguenti informazioni, quindi fai clic su **Successivo**:
 
    * Nome dell’attività.
    * Il motore di targeting da utilizzare. ContextHub (AEM) è selezionato per impostazione predefinita. Se devi utilizzare Adobe Target, crea l’attività nell’editor dei contenuti di destinazione.
@@ -106,35 +106,35 @@ Per aggiungere un’attività:
    * (Facoltativo) Obiettivo o descrizione dell’attività.
    * Seleziona il Tipo di attività.
 
-1. Aggiungi una o più esperienze all’attività. Tocca o fai clic su **Aggiungi esperienza**.
+1. Aggiungi una o più esperienze all’attività. Clic **Aggiungi esperienza**.
 1. Se utilizzi il targeting di AEM o il targgeting esperienze di Adobe Target:
 
-   1. Tocca o fai clic su **Seleziona pubblico **e seleziona il segmento al quale viene eseguito il targeting dell&#39;esperienza.
-   1. Tocca o fai clic su **Aggiungi esperienza**, digita un nome e tocca o fai clic su **OK**. 
+   1. Fai clic su **Seleziona pubblico **e seleziona il segmento al quale viene eseguito il targeting dell’esperienza.
+   1. Clic **Aggiungi esperienza**, digitare un nome e fare clic su **OK**.
 
-   1. Tocca o fai clic su **Avanti**.
+   1. Fai clic su **Avanti**.
 
    Se utilizzi Test A/B di Adobe Target:
 
-   1. Tocca o fai clic sulla matita nella casella Tipi di pubblico per selezionare un pubblico.
-   1. Tocca o fai clic su **Aggiungi esperienza**, digita un nome e tocca o fai clic su **OK**. 
+   1. Fai clic sulla matita nella casella Tipi di pubblico per selezionare un pubblico.
+   1. Clic **Aggiungi esperienza**, digitare un nome e fare clic su **OK**.
 
    1. Inserisci la percentuale di traffico per la quale verrà visualizzata ogni esperienza.
-   1. Tocca o fai clic su **Avanti**.
+   1. Fai clic su **Avanti**.
 
 1. Per specificare quando inizia l’attività, utilizza il menu a discesa **Inizio** per selezionare uno dei seguenti valori:
 
    * **Quando viene attivato:** l’attività si avvia quando viene attivata la pagina con il contenuto di destinazione.
-   * **Data e ora specificata:** in un momento specifico. Quando selezioni questa opzione, fai clic o tocca l’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
+   * **Data e ora specificata:** in un momento specifico. Quando selezioni questa opzione, fai clic sull’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
 
 1. Per specificare quando termina l’attività, utilizza il menu a discesa Fine per selezionare uno dei seguenti valori:
 
    * **Quando viene disattivato**: l’attività termina quando viene disattivata la pagina con il contenuto di destinazione.
-   * **Data e ora specificata**: un tempo specifico. Quando selezioni questa opzione, tocca o fai clic sull’icona del calendario, seleziona una data e specifica l’ora in cui avviare l’attività.
+   * **Data e ora specificata**: un tempo specifico. Quando selezioni questa opzione, fai clic sull’icona del calendario, seleziona una data e specifica l’ora in cui terminare l’attività.
 
 1. Per specificare una priorità per l’attività, utilizza il cursore per selezionare **Bassa**, **Normale**, o **Alta**.
 1. Se utilizzi Adobe Target come motore di targeting, seleziona ciò che desideri misurare con questa attività. Consulta [Configurazione dell&#39;attività e definizione degli obiettivi](/help/sites-authoring/content-targeting-touch.md) per ulteriori informazioni sulle metriche di successo disponibili. Seleziona almeno un obiettivo.
-1. Tocca o fai clic su **Salva**.
+1. Fai clic su **Salva**.
 
    >[!NOTE]
    >
@@ -150,12 +150,12 @@ Per aggiungere un’attività:
 
 Per pubblicare o annullare la pubblicazione delle attività:
 
-1. Tocca o fai clic sul marchio e quindi sull’area contenente l’attività da pubblicare o di cui vuoi annullare la pubblicazione.
-1. Tocca o fai clic sull’icona accanto all’attività o alle attività da pubblicare o di cui vuoi annullare la pubblicazione.
+1. Fai clic sul marchio e quindi sull’area contenente l’attività da pubblicare o di cui annullare la pubblicazione.
+1. Fai clic sull’icona accanto all’attività o alle attività da pubblicare o di cui vuoi annullare la pubblicazione.
 
    ![schermata_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
-1. Per pubblicare, tocca o fai clic su **Pubblica**. Per annullare la pubblicazione, tocca o fai clic su **Annulla pubblicazione**. L’attività o le attività vengono pubblicate o ne viene annullata la pubblicazione e il loro stato cambia nella console Attività (potrebbe essere necessario un aggiornamento della schermata).
+1. Per pubblicare, fai clic su **Pubblica**. Per annullare la pubblicazione, fai clic su **Annulla pubblicazione**. L’attività o le attività vengono pubblicate o ne viene annullata la pubblicazione e il loro stato cambia nella console Attività (potrebbe essere necessario un aggiornamento della schermata).
 
 ## Attività sulle istanze di authoring e pubblicazione {#activities-on-author-and-publish-instances}
 
@@ -170,13 +170,13 @@ Puoi vedere le prestazioni di qualsiasi attività di Adobe Target (XT o A/B). Se
 
 Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza vincente:
 
-1. In **Personalizzazione**, tocca o fai clic su **Attività** per accedere alla console **Attività**.
-1. Tocca o fai clic sul marchio di cui desideri visualizzare le attività.
-1. Seleziona l’attività e tocca o fai clic su **Visualizza proprietà**, quindi seleziona la scheda **Rapporti** e scegli l’attività per la quale visualizzare le prestazioni o convertire le esperienze vincenti. Vengono visualizzati i dati sulle prestazioni.
+1. In entrata **Personalizzazione**, fai clic su **Attività** per passare al **Attività** console.
+1. Fai clic sul marchio di cui desideri visualizzare le attività.
+1. Seleziona l’attività e fai clic su **Visualizza proprietà** e fai clic su **Rapporti** e seleziona l’attività per la quale visualizzare le prestazioni o convertire le esperienze vincenti. Vengono visualizzati i dati sulle prestazioni.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Tocca o fai clic sul collegamento **Invia vincitore** per impostare l&#39;esperienza come predefinita.
+1. Fai clic su **Invia vincitore** per impostare l&#39;esperienza come predefinita.
 
    La conversione del vincitore comporta le seguenti operazioni:
 
@@ -187,7 +187,7 @@ Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza
 
    L’esperienza vincente è quella che genera un incremento maggiore nei rapporti, in base al tasso di conversione.
 
-1. Tocca o fai clic su **Sì** per confermare che desideri convertire il vincitore, disabilitando così l’esperienza corrente che viene sostituita dal contenuto dell’esperienza vincente.
+1. Clic **Sì** per confermare che desideri convertire il vincitore, disabilita l&#39;esperienza corrente e sostituiscila con il contenuto dell&#39;esperienza vincente.
 
 ## Sincronizzazione delle attività con Adobe Target {#synchronizing-activities-with-adobe-target}
 

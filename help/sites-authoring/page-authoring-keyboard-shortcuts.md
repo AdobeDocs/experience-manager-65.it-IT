@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 68%
+source-wordcount: '220'
+ht-degree: 57%
 
 ---
 
@@ -41,7 +41,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->&amp;ast Una volta che l&#39;utente inizia a interagire con la pagina in modalità Anteprima, `Ctrl-Shift-m` collegamento non più disponibile. Per renderla nuovamente disponibile, si deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
+>&amp;ast Una volta che l&#39;utente inizia a interagire con la pagina in modalità Anteprima, `Ctrl-Shift-m` collegamento non più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
 
 Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano le [console](/help/sites-authoring/keyboard-shortcuts.md).
 

@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 30%
+source-wordcount: '2122'
+ht-degree: 28%
 
 ---
 
@@ -27,7 +27,7 @@ Il [Procedura guidata Opt-in](/help/sites-administering/opt-in.md) che [integra 
 
 Puoi anche configurare Adobe Target per utilizzare Adobe Target come origine per la generazione di rapporti quando esegui il targeting del contenuto configurando la configurazione di A4T Analytics Cloud.
 
-Per individuare la configurazione cloud e il framework, vai a **Cloud Service** tramite **Strumenti** > **Distribuzione** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Sotto Adobe Target, tocca o fai clic su **Mostra configurazioni**.
+Per individuare la configurazione cloud e il framework, vai a **Cloud Service** tramite **Strumenti** > **Distribuzione** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Sotto Adobe Target, fai clic su **Mostra configurazioni**.
 
 ### Proprietà configurazione destinazione predisposta {#provisioned-target-configuration-properties}
 
@@ -90,7 +90,7 @@ A questo scopo, specifica la configurazione cloud A4T con cui collegare la confi
    >1. Accedi a **Strumenti** > **Generale** > **CRXDE Liti**.
    1. Accedi a [Finestra di dialogo Configurazione di A4T Analytics](#a4t-analytics-config-dialog) (vedi sotto)
    1. Impostare la proprietà **disable** a **false**.
-   1. Tocca o fai clic su **Salva tutto**.
+   1. Clic **Salva tutto**.
 
 #### Finestra di dialogo Configurazione di A4T Analytics {#a4t-analytics-config-dialog}
 
@@ -100,7 +100,7 @@ A questo scopo, specifica la configurazione cloud A4T con cui collegare la confi
 
 ![AdobeTargetSettings](assets/adobe-target-settings.jpg)
 
-Fai clic su **OK**. Quando esegui il targeting dei contenuti con Adobe Target, puoi [seleziona l’origine del rapporto](/help/sites-authoring/content-targeting-touch.md).
+Clic **OK**. Quando esegui il targeting dei contenuti con Adobe Target, puoi [seleziona l’origine del rapporto](/help/sites-authoring/content-targeting-touch.md).
 
 ## Integrazione manuale con Adobe Target {#manually-integrating-with-adobe-target}
 
@@ -108,7 +108,7 @@ Integrazione manuale con Adobe Target invece di utilizzare la procedura guidata 
 
 >[!NOTE]
 >
-Il file della libreria di Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), è una nuova libreria di implementazione di Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
+Il file della libreria di Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), è una nuova libreria di implementazione per Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
 >
 AT.js offre diversi miglioramenti rispetto alla libreria mbox.js:
 >
@@ -153,7 +153,7 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
    1. Accedi a **Strumenti** > **Generale** > **CRXDE Liti**.
    1. Accedi a **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    1. Impostare la proprietà **disable** a **false**.
-   1. Tocca o fai clic su **Salva tutto**.
+   1. Clic **Salva tutto**.
 
 1. Nella finestra di dialogo, specifica i valori per queste proprietà.
 
@@ -180,7 +180,7 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
    >
    Se hai ***già*** creato i componenti di destinazione e modificato questa impostazione, le modifiche non influiscono su tali componenti. Modifica direttamente tali componenti.
 
-1. Fai clic su **Connetti ad Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio **Connessione riuscita**. Fai clic su **OK** sul messaggio e quindi **OK** nella finestra di dialogo.
+1. Clic **Connetti a Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio **Connessione riuscita**. Fai clic su **OK** sul messaggio e quindi **OK** nella finestra di dialogo.
 
    Se non riesci a connetterti a Target, consulta la sezione [risoluzione problemi](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems).
 
@@ -199,7 +199,7 @@ Puoi creare più framework per una singola configurazione di Target. I framework
 
    ![Componenti per framework](assets/chlimage_1-162.png)
 
-1. Trascina il componente ClientContext che rappresenta i dati da utilizzare per la mappatura sulla destinazione di rilascio. In alternativa, trascina il componente **Archivio ContextHub** nel framework.
+1. Trascina il componente ClientContext che rappresenta i dati da utilizzare per la mappatura sulla destinazione di rilascio. In alternativa, trascina **Store ContextHub** componente del framework.
 
    >[!NOTE]
    >
@@ -243,8 +243,8 @@ Quando si associa una pagina al framework, le pagine figlie ereditano l&#39;asso
 1. In **Sites** , passare al sito da configurare.
 1. Utilizzando [azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions) o [modalità di selezione](/help/sites-authoring/basic-handling.md), seleziona **Visualizza proprietà.**
 1. Seleziona la scheda **Servizi cloud**.
-1. Tocca o fai clic su **Modifica**.
-1. Tocca o fai clic **Aggiungi configurazione** in **Configurazioni Cloud Service** e seleziona **Adobe Target**.
+1. Clic **Modifica**.
+1. Clic **Aggiungi configurazione** in **Configurazioni Cloud Service** e seleziona **Adobe Target**.
 
    ![Aggiungi configurazione](assets/chlimage_1-165.png)
 
@@ -254,7 +254,7 @@ Quando si associa una pagina al framework, le pagine figlie ereditano l&#39;asso
    >
    Accertati di selezionare il **framework** che hai creato e non la configurazione cloud di Target in cui è stato creato.
 
-1. Tocca o fai clic **Fine**.
+1. Clic **Fine**.
 1. Attiva la pagina root del sito web in modo da replicarlo sul server di pubblicazione. (vedere [Come Pubblicare Le Pagine](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]

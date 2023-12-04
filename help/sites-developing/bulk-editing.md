@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 2%
+source-wordcount: '407'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 A causa della possibilità di valori diversi, le proprietà della pagina non sono abilitate per la modifica in serie come impostazione predefinita. Devono essere esplicitamente consentiti (abilitati). Quando definisci le proprietà della pagina da rendere disponibili per la modifica in blocco, devi tenere in considerazione alcune implicazioni, ad esempio:
 
-* Alcuni campi sono in genere univoci, ad esempio il titolo di una pagina. È necessario decidere se è utile abilitare questi campi per la modifica in blocco, quando verrà applicato un valore.
+* Alcuni campi sono in genere univoci, ad esempio il titolo di una pagina. Decidi se è utile abilitare questi campi per la modifica in blocco, quando verrà applicato un valore.
 * Alcuni campi possono avere più valori, che devono essere rappresentati in modo significativo durante il rendering.
 
   Ad esempio, la casella di controllo &quot;Pronto per la pubblicazione&quot;. Questo potrebbe avere diversi valori prima della modifica in blocco (ad esempio, pronto, in revisione, in corso).

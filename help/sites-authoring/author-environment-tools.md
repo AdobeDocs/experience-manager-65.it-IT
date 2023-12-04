@@ -1,22 +1,22 @@
 ---
 title: Authoring - l'ambiente e gli strumenti dell'AEM
-description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti.
+description: L’ambiente di authoring dell’AEM offre diversi meccanismi per organizzare e modificare i contenuti.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 49%
+source-wordcount: '2246'
+ht-degree: 46%
 
 ---
 
 # Authoring: ambiente e strumenti{#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti disponibili sono accessibili da varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
 ## Gestione del sito {#managing-your-site}
 
@@ -95,7 +95,7 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
    * Filtrare i componenti per nome
    * Limita la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa.
 
-  Per una descrizione più dettagliata del componente, tocca o fai clic sull’icona delle informazioni posta accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per **Contenitore di layout**:
+  Per una descrizione più dettagliata del componente, fai clic sull’icona delle informazioni accanto al componente nella **Componenti** browser (se disponibile). Ad esempio, per **Contenitore di layout**:
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -243,7 +243,7 @@ Per ulteriori informazioni, selezionate il tipo di riferimento appropriato. In a
 * [Riferimenti alle pagine dei prodotti](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponibile dalla console Commerce-Products)
 * [Lanci](/help/sites-authoring/launches.md) fornisce accesso ai lanci correlati.
 * [Live Copy](/help/sites-administering/msm.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
-* [](/help/sites-administering/msm-best-practices.md)Blueprint fornisce dettagli e varie azioni.
+* [Blueprint](/help/sites-administering/msm-best-practices.md) fornisce dettagli e varie azioni.
 * [Copie per lingua](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) fornisce dettagli e varie azioni.
 
 Ad esempio, potete correggere un riferimento interrotto all&#39;interno di un componente Riferimento (Reference):
@@ -344,7 +344,7 @@ Il browser Percorsi è organizzato come la [vista a colonne](/help/sites-authori
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Una volta selezionata una risorsa, il pulsante **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Tocca o fai clic per confermare la selezione oppure **Annulla** per interrompere.
+* Una volta selezionata una risorsa, il pulsante **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Fai clic su per confermare la selezione o **Annulla** per interrompere.
 * Se il contesto consente la selezione di più risorse, la scelta di una risorsa attiva anche il pulsante **Seleziona**, ma aggiunge anche un conteggio del numero di risorse selezionate nella parte superiore destra della finestra. Clic **X** accanto al numero per deselezionare tutto.
 * Quando ti sposti nella struttura, la posizione si riflette nelle breadcrumb nella parte superiore della finestra di dialogo. Queste breadcrumb possono essere utilizzate anche per passare rapidamente all’interno della gerarchia delle risorse.
 * In qualsiasi momento, puoi utilizzare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic su **X** nel campo di ricerca per cancellare la ricerca.

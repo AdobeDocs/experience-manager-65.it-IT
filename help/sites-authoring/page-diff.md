@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 85%
+source-wordcount: '569'
+ht-degree: 80%
 
 ---
 
@@ -68,7 +68,7 @@ La differenza rileva le modifiche apportate a livello di componente e HTML. Gli 
 
 ### Modalità a schermo intero e Uscita   {#fullscreen-and-exiting}
 
-Per concentrarti su un contenuto particolare, fai clic sull’icona schermo intero di entrambi i “lati” a confronto, per ingrandire il contenuto nella finestra del browser a schermo intero.
+Per concentrarti su un contenuto particolare, puoi fare clic sull’icona a schermo intero di entrambi i &quot;lati&quot; di side-by-side diff (differenze affiancate) per ingrandirla fino alla finestra del browser completa.
 
 ![Icona modalità a tutto schermo](do-not-localize/chlimage_1-18.png)
 

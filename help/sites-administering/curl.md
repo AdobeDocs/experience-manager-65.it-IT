@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 2%
+source-wordcount: '884'
+ht-degree: 3%
 
 ---
 
@@ -58,7 +58,7 @@ I passaggi seguenti descrivono come eseguire questa operazione utilizzando come 
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
 1. Clic **Crea** nel **Crea pagina** per creare effettivamente il flusso di lavoro.
-1. Fai clic con il pulsante destro del mouse sull’azione POST risultante e seleziona **Copia** -> **Copia come cURL**.
+1. Fai clic con il pulsante destro del mouse sull’azione POST risultante e seleziona **Copia** > **Copia come cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 

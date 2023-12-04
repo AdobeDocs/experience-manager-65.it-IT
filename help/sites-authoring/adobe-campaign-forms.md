@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulter
    * **Adobe Campaign: Annulla iscrizione a servizi**: consente di annullare gli abbonamenti di un destinatario in Adobe Campaign.
 
 1. Devi avere un **Chiave principale crittografata** in ogni modulo. Questo componente definisce quale parametro URL viene utilizzato per accettare la chiave primaria crittografata di un profilo Adobe Campaign. In Componenti, seleziona Adobe Campaign in modo che siano visibili solo i componenti.
-1. Trascina il componente **Chiave principale crittografata** nel modulo (ovunque) e tocca o fai clic sul pulsante **Configurazione** icona. In **Adobe Campaign** , specifica un nome per il parametro URL. Tocca o fai clic sul segno di spunta per salvare le modifiche.
+1. Trascina il componente **Chiave principale crittografata** al modulo (ovunque) e fare clic sul pulsante **Configurazione** icona. In **Adobe Campaign** , specifica un nome per il parametro URL. Fai clic sul segno di spunta per salvare le modifiche.
 
    I collegamenti generati a questo modulo devono utilizzare questo parametro URL e assegnargli la chiave primaria crittografata di un profilo Adobe Campaign. La chiave primaria crittografata deve essere correttamente codificata nell&#39;URL (percentuale).
 

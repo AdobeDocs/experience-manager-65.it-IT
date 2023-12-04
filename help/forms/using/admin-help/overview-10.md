@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
 exl-id: da1224e4-566a-402f-9d8b-27fda5f3101b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '124'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Nelle pagine di Workspace della console di amministrazione, puoi eseguire le seg
 
 >[!NOTE]
 >
->È necessario utilizzare i metodi di navigazione all’interno della console di amministrazione. Non utilizzare i pulsanti Indietro, Avanti o Aggiorna nel browser Web. L&#39;utilizzo di questi pulsanti può causare problemi di acquisizione e visualizzazione dei dati.
+>Utilizza i metodi di navigazione nella console di amministrazione. Non utilizzare i pulsanti Indietro, Avanti o Aggiorna nel browser Web. L&#39;utilizzo di questi pulsanti può causare problemi di acquisizione e visualizzazione dei dati.

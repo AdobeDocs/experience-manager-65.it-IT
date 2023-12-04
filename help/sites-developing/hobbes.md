@@ -9,9 +9,9 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '759'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Quando si utilizzano test automatizzati all’interno dell’AEM, è importante 
 
 Apri la console di test per visualizzare le suite di test registrate. Il pannello Test contiene un elenco di suite di test e dei relativi test case.
 
-Passa alla console Strumenti tramite **Navigazione globale -> Strumenti > Operazioni -> Test**.
+Passa alla console Strumenti tramite **Navigazione globale > Strumenti > Operazioni > Test**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -69,7 +69,7 @@ Un’icona &quot;X&quot; indica un test non riuscito:
 
 Per eseguire una suite di test:
 
-1. Nel pannello Test, tocca o fai clic sul nome del Test Case che desideri eseguire per espandere i dettagli delle azioni.
+1. Nel pannello Test, fate clic sul nome del test case che desiderate eseguire per espandere i dettagli delle azioni.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -91,7 +91,7 @@ Le suite di test vengono eseguite in sequenza nell’ordine in cui compaiono nel
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. Nel pannello Test, tocca o fai clic su **Esegui tutti i test** o **Eseguire i test** sotto il titolo della suite di test che desideri eseguire.
+1. Nel pannello Test, fate clic su **Esegui tutti i test** o **Eseguire i test** sotto il titolo della suite di test che desideri eseguire.
 
    ![Immagine del pulsante Esegui tutti i test e del pulsante Esegui test, indicata da un puntatore a destra all&#39;interno di un cerchio.](do-not-localize/chlimage_1-5.png)
 
@@ -105,7 +105,7 @@ La procedura seguente illustra i passaggi della creazione ed esecuzione di una s
 
 Per informazioni dettagliate sulla creazione di suite di test personalizzate, vedi [Documentazione API di Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
 
-1. Apri CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
+1. Apri CRXDE Liti. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Fare clic con il pulsante destro del mouse `/etc/clientlibs` cartella e fai clic su **Crea > Crea cartella**. Tipo `myTests` per il nome e fai clic su **OK**.
 1. Fare clic con il pulsante destro del mouse `/etc/clientlibs/myTests` cartella e fai clic su **Crea > Crea nodo**. Utilizza i seguenti valori delle proprietà, quindi fai clic su **OK**:
 
@@ -116,8 +116,8 @@ Per informazioni dettagliate sulla creazione di suite di test personalizzate, ve
 
    | Nome | Tipo | Valore |
    |---|---|---|
-   | `categories` | String[] | `granite.testing.hobbes.tests` |
-   | `dependencies` | String[] | `granite.testing.hobbes.testrunner` |
+   | `categories` | Stringa[] | `granite.testing.hobbes.tests` |
+   | `dependencies` | Stringa[] | `granite.testing.hobbes.testrunner` |
 
    >[!NOTE]
    >

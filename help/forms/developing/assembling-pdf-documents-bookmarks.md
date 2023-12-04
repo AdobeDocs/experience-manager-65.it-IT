@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2519'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Per assemblare un PDF contenente nuovi segnalibri, è necessario fare riferiment
 
 **Aggiungere il documento PDF e il documento XML segnalibro a un insieme Map**
 
-È necessario aggiungere all&#39;insieme Map sia il documento PDF al quale vengono aggiunti segnalibri che il documento XML segnalibro. Pertanto, l&#39;insieme Map contiene due elementi: un documento PDF e il documento XML segnalibro.
+Aggiungere all&#39;insieme Map sia il documento PDF al quale vengono aggiunti segnalibri che il documento XML segnalibro. Pertanto, l&#39;insieme Map contiene due elementi: un documento PDF e il documento XML segnalibro.
 
 **Impostare le opzioni di runtime**
 

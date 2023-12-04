@@ -2,10 +2,10 @@
 title: Creazione e organizzazione di pagine con AEM
 description: Scopri come creare e gestire le pagine con Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 69%
+source-wordcount: '2417'
+ht-degree: 64%
 
 ---
 
@@ -192,7 +192,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
 1. Nel primo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
 
-   * Seleziona il modello da utilizzare per creare la prima pagina, quindi tocca o fai clic su **Avanti** per proseguire.
+   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi fai clic su **Successivo** per procedere.
 
    * Seleziona **Annulla** per interrompere la procedura.
 
@@ -200,7 +200,7 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
 1. Nell’ultimo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
 
-   * Usa le tre schede per specificare le [proprietà di pagina](/help/sites-authoring/editing-page-properties.md) da assegnare alla nuova pagina, quindi tocca o fai clic su **Crea** per creare la pagina.
+   * Utilizza le tre schede per inserire [proprietà pagina](/help/sites-authoring/editing-page-properties.md) vuoi assegnarlo alla nuova pagina, quindi fai clic su **Crea** per creare effettivamente la pagina.
 
    * Utilizza **Indietro** per tornare alla selezione del modello.
 
@@ -306,8 +306,8 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 La procedura per spostare o rinominare una pagina è sostanzialmente la stessa e viene gestita dalla stessa procedura guidata. Con questa procedura guidata è possibile:
 
 * Rinominare una pagina senza spostarla.
-* Spostare la pagina senza rinominarla.
-* Spostare e rinominare allo stesso tempo.
+* Sposta la pagina senza rinominarla.
+* Spostarsi e rinominare contemporaneamente.
 
 In AEM è disponibile una funzionalità che consente di aggiornare eventuali collegamenti interni che rimandano alla pagina da rinominare/spostare. Questa operazione può essere eseguita a livello di singola pagina, per assicurare la massima flessibilità.
 
@@ -325,7 +325,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
 1. Dal passaggio **Rinomina** della procedura guidata, puoi effettuare le seguenti operazioni:
 
-   * Specifica il nome da assegnare alla pagina spostata, quindi tocca o fai clic su **Avanti**.
+   * Specifica il nome da assegnare alla pagina spostata, quindi fai clic su **Successivo** per procedere.
 
    * Seleziona **Annulla** per interrompere la procedura.
 
@@ -386,7 +386,7 @@ Le azioni di spostamento delle pagine vengono sempre elaborate in modo asincrono
 
   ![Spostamento asincrono delle pagine](assets/asynchronous-page-move.png)
 
-Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato processi asincroni** in](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) **Navigazione globale** -> **Strumenti** -> **Operazioni** -> **Processi**.
+Lo stato dei processi asincroni può essere controllato in [**Stato processi asincroni** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) a **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**
 
 >[!NOTE]
 >
@@ -413,7 +413,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
    * **Elimina** per confermare l’azione:
 
       * Se la pagina non ha riferimenti, verrà eliminata.
-      * Se la pagina include riferimenti, viene visualizzata una finestra con il messaggio **Si fa riferimento a una o più pagine.** È possibile selezionare **Forza eliminazione** o **Annulla**.
+      * Se la pagina contiene riferimenti, viene visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** Puoi selezionare **Forza eliminazione** o **Annulla**.
 
 >[!NOTE]
 >

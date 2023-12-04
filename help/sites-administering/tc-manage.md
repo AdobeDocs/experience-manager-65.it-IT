@@ -2,10 +2,10 @@
 title: Gestione dei progetti di traduzione
 description: Scopri come gestire i progetti di traduzione in Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3578'
-ht-degree: 53%
+source-wordcount: '3504'
+ht-degree: 41%
 
 ---
 
@@ -23,7 +23,7 @@ Quando si aggiungono risorse a un progetto di traduzione, viene creato un proces
 
 I progetti di traduzione sono elementi a esecuzione prolungata, definiti per lingua e metodo/fornitore di traduzione per l’allineamento alla governance organizzativa di globalizzazione. Devono essere avviati una volta, durante la traduzione iniziale o manualmente, e rimangono in funzione per tutte le attività di aggiornamento del contenuto e della traduzione.
 
-I progetti e i processi di traduzione vengono creati con flussi di lavoro di preparazione della traduzione. Questi flussi di lavoro hanno tre opzioni, sia per la traduzione iniziale (Crea e traduci) che per gli aggiornamenti (Aggiorna traduzione):
+I progetti e i processi di traduzione vengono creati con flussi di lavoro di preparazione della traduzione. Questi flussi di lavoro hanno tre opzioni, sia per la traduzione iniziale (Crea&amp;Traduci) che per gli aggiornamenti (Aggiorna traduzione):
 
 1. [Crea nuovo progetto](#creating-translation-projects-using-the-references-panel)
 1. [Aggiungi a progetto esistente](#adding-pages-to-a-translation-project)
@@ -80,12 +80,12 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
 
    Ad esempio, per tradurre le pagine in inglese del sito demo Geometrixx, seleziona Geometrixx sito demo > Inglese.
 
-1. Nella barra degli strumenti, tocca o fai clic su Riferimenti.
+1. Sulla barra degli strumenti fare clic su Riferimenti.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
 1. Seleziona Copie per lingua, quindi seleziona le copie per lingua per le quali stai traducendo le pagine sorgente.
-1. Tocca o fai clic su Crea e traduci quindi configura il processo di traduzione:
+1. Fai clic su Crea e traduci, quindi configura il processo di traduzione:
 
    * Utilizza il menu a discesa Lingue per selezionare una copia per lingua per cui desideri tradurre. Seleziona le lingue aggiuntive come richiesto. Le lingue visualizzate nell’elenco corrispondono alle [directory principali della lingua create](/help/sites-administering/tc-prep.md#creating-a-language-root).
    * Per tradurre la pagina selezionata e tutte le pagine figlie, seleziona Seleziona tutte le sottopagine. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
@@ -94,7 +94,7 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-1. Tocca o fai clic su Crea.
+1. Fai clic su Crea.
 
 ### Creare progetti di traduzione per una copia per lingua esistente {#create-translation-projects-for-an-existing-language-copy}
 
@@ -102,12 +102,12 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
 
    Ad esempio, per tradurre le pagine in inglese del sito demo Geometrixx, seleziona Geometrixx sito demo > Inglese.
 
-1. Nella barra degli strumenti, tocca o fai clic su Riferimenti.
+1. Sulla barra degli strumenti fare clic su Riferimenti.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
 1. Seleziona Copie per lingua, quindi seleziona le copie per lingua per le quali stai traducendo le pagine sorgente.
-1. Tocca o fai clic su Aggiorna copie per lingua quindi configura il processo di traduzione:
+1. Fai clic su Aggiorna copie per lingua quindi configura il processo di traduzione:
 
    * Per tradurre la pagina selezionata e tutte le pagine figlie, seleziona Seleziona tutte le sottopagine. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
    * Per Progetto, seleziona Crea nuovo progetto di traduzione.
@@ -115,7 +115,7 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Tocca o fai clic su Avvia.
+1. Fai clic su Start.
 
 ## Aggiunta di pagine a un progetto di traduzione {#adding-pages-to-a-translation-project}
 
@@ -129,7 +129,7 @@ Come per la creazione di un progetto, quando si aggiungono pagine, se necessario
 
    Ad esempio, per tradurre le pagine in inglese del sito demo Geometrixx, seleziona Geometrixx sito demo > Inglese.
 
-1. Nella barra degli strumenti, tocca o fai clic su Riferimenti.
+1. Sulla barra degli strumenti fare clic su Riferimenti.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -137,7 +137,7 @@ Come per la creazione di un progetto, quando si aggiungono pagine, se necessario
 
    ![chlimage_1-35](assets/chlimage_1-35.jpeg)
 
-1. Tocca o fai clic su Aggiorna copie per lingua quindi configura le proprietà:
+1. Fai clic su Aggiorna copie per lingua quindi configura le proprietà:
 
    * Per tradurre la pagina selezionata e tutte le pagine figlie, seleziona Seleziona tutte le sottopagine. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
    * Per Progetto, seleziona Aggiungi a progetto di traduzione esistente.
@@ -149,21 +149,21 @@ Come per la creazione di un progetto, quando si aggiungono pagine, se necessario
 
    ![chlimage_1-36](assets/chlimage_1-36.jpeg)
 
-1. Tocca o fai clic su Avvia.
+1. Fai clic su Start.
 
 ## Aggiunta di pagine/risorse a un processo di traduzione {#adding-pages-assets-to-a-translation-job}
 
 Puoi aggiungere pagine, risorse, tag o dizionari i18n al processo di traduzione del progetto di traduzione. Per aggiungere pagine o risorse:
 
-1. Nella parte inferiore del riquadro Lavoro di traduzione del progetto di traduzione, tocca o fai clic sui puntini di sospensione.
+1. Nella parte inferiore del riquadro Lavoro di traduzione del progetto di traduzione, fai clic sui puntini di sospensione.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Tocca o fai clic su Aggiungi e Pagine/Risorse.
+1. Fai clic su Aggiungi e Pagine/Risorse.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-1. Seleziona l’elemento più in alto del ramo da aggiungere, quindi tocca o fai clic sull’icona del segno di spunta. Puoi effettuare una selezione multipla.
+1. Seleziona l’elemento più in alto del ramo da aggiungere, quindi fai clic sull’icona del segno di spunta. Puoi effettuare una selezione multipla.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -177,15 +177,15 @@ Le pagine e/o le risorse vengono aggiunte al processo di traduzione.
 
 Puoi aggiungere pagine, risorse, tag o dizionari i18n al processo di traduzione del progetto di traduzione. Per aggiungere un dizionario i18n:
 
-1. Nella parte inferiore del riquadro Lavoro di traduzione del progetto di traduzione, tocca o fai clic sui puntini di sospensione.
+1. Nella parte inferiore del riquadro Lavoro di traduzione del progetto di traduzione, fai clic sui puntini di sospensione.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Tocca o fai clic su Aggiungi e dizionario I18N.
+1. Fare clic su Aggiungi e su I18N-Dictionary.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Seleziona il dizionario da aggiungere, quindi tocca o fai clic sul pulsante Aggiungi.
+1. Selezionare il dizionario che si desidera aggiungere e quindi fare clic su Pulsante Aggiungi.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -201,15 +201,15 @@ Il tuo dizionario è ora nel tuo lavoro di traduzione.
 
 Puoi aggiungere pagine, risorse, tag o dizionari i18n al processo di traduzione del progetto di traduzione. Per aggiungere i tag:
 
-1. Nella parte inferiore del riquadro Lavoro di traduzione del progetto di traduzione, tocca o fai clic sui puntini di sospensione.
+1. Nella parte inferiore del riquadro Lavoro di traduzione del progetto di traduzione, fai clic sui puntini di sospensione.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. Tocca o fai clic su Aggiungi e quindi su Tag.
+1. Fai clic su Aggiungi e quindi su Tag.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Seleziona i tag da aggiungere, quindi tocca o fai clic sull’icona del segno di spunta. Puoi effettuare una selezione multipla.
+1. Selezionare i tag che si desidera aggiungere e quindi fare clic sull&#39;icona del segno di spunta. Puoi effettuare una selezione multipla.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -244,18 +244,18 @@ La tabella seguente descrive ogni stato di un processo o di un elemento del proc
 |---|---|
 | Bozza | Il processo di traduzione non è stato avviato. I processi di traduzione sono in stato BOZZA al momento della creazione. |
 | Inviato | I file nel processo di traduzione sono in questo stato quando risultano inviati correttamente al servizio di traduzione. Questo stato può verificarsi dopo l’esecuzione del comando Richiedi valutazione o Avvia. |
-| Valutazione richiesta | Per il flusso di lavoro Traduzione umana, i file nel processo sono stati inviati al fornitore di traduzione per la valutazione. Questo stato viene visualizzato l’emissione del comando Richiedi valutazione. |
-| Valutazione completata | Il fornitore ha valutato il processo di traduzione. |
+| Conteggio richiesto | Per il flusso di lavoro Traduzione umana, i file nel processo sono stati inviati al fornitore di traduzione per la valutazione. Questo stato viene visualizzato dopo l’esecuzione del comando Richiedi valutazione. |
+| Conteggio completato | Il fornitore ha valutato il processo di traduzione. |
 | Confermato per traduzione | Il proprietario del progetto ha accettato la valutazione. Questo stato indica che il fornitore deve iniziare a tradurre i file nel processo. |
 | Traduzione in corso | Per un processo, la traduzione di uno o più file nel processo non è ancora completa. Per un elemento del processo, l’elemento è in traduzione. |
 | Tradotto | Per un processo, la traduzione di tutti i file nel processo è completa. Per un elemento del processo, l’elemento viene tradotto. |
 | Pronto per la revisione | L’elemento nel processo è stato tradotto e il file importato in AEM. |
-| Completa | Il proprietario del progetto ha indicato che il contratto di traduzione è completo. |
+| Completato | Il proprietario del progetto ha indicato che il contratto di traduzione è completo. |
 | Annulla | Indica che il fornitore deve interrompere il lavoro su un processo di traduzione. |
 | Errore aggiornamento | Errore durante il trasferimento dei file tra AEM e il servizio di traduzione. |
 | Stato sconosciuto | Si è verificato un errore sconosciuto. |
 
-Per visualizzare lo stato di ciascun file nel processo, tocca o fai clic sui puntini di sospensione nella parte inferiore del riquadro.
+Per visualizzare lo stato di ciascun file nel processo, fai clic sui puntini di sospensione nella parte inferiore del riquadro.
 
 ## Impostazione della data di termine dei processi di traduzione {#setting-the-due-date-of-translation-jobs}
 
@@ -268,23 +268,23 @@ L’impostazione della data di termine funziona correttamente solo quando il for
 
 Nella procedura seguente viene impostata la data di scadenza per un progetto.
 
-1. Tocca o fai clic sui puntini di sospensione nella parte inferiore del riquadro Riepilogo di traduzione.
+1. Fai clic sui puntini di sospensione nella parte inferiore del riquadro Riepilogo di traduzione.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
-1. Sulla scheda Base, utilizza il selettore della proprietà Data di termine per la selezione.
+1. Nella scheda Base, utilizza il selettore data della proprietà Data di scadenza per selezionare la data di scadenza.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Tocca o fai clic su Fine.
+1. Fai clic su Fine.
 
 La procedura seguente imposta la data di scadenza di un processo di traduzione.
 
-1. Nel riquadro Lavoro di traduzione, tocca o fai clic sul menu dei comandi, quindi tocca o fai clic su Data di scadenza.
+1. Nel riquadro Lavoro di traduzione, fai clic sul menu dei comandi, quindi su Data di scadenza.
 
    ![chlimage_1-262](assets/chlimage_1-262.png)
 
-1. Nella finestra di dialogo, tocca o fai clic sull’icona del calendario, quindi seleziona la data e l’ora da utilizzare come data di scadenza, quindi fai clic su Salva.
+1. Nella finestra di dialogo, fai clic sull’icona del calendario, quindi seleziona la data e l’ora da utilizzare come data di scadenza, quindi fai clic su Salva.
 
    ![chlimage_1-263](assets/chlimage_1-263.png)
 
@@ -298,16 +298,16 @@ Per ottenere ulteriori informazioni sui risultati della valutazione, contatta il
 >
 >L&#39;ambito è facoltativo. Puoi avviare un processo di traduzione senza valutazione.
 
-Quando esegui la valutazione di un processo di traduzione, lo stato del processo è `Scope Requested`. Quando il fornitore di traduzione restituisce l’ambito, lo stato viene modificato in `Scope Completed`. Al termine della valutazione, puoi utilizzare il comando Mostra valutazione per esaminarne i risultati.
+Quando esegui la valutazione di un processo di traduzione, lo stato del processo è `Scope Requested`. Quando il fornitore di traduzione restituisce l’ambito, lo stato viene modificato in `Scope Completed`. Al termine della valutazione è possibile utilizzare il comando Mostra valutazione per esaminare i risultati della valutazione.
 
 La valutazione funziona correttamente solo quando il fornitore di traduzione utilizzato la supporta.
 
 1. Nella console Progetti, apri il progetto di traduzione.
-1. Nel riquadro Lavoro di traduzione, tocca o fai clic sul menu dei comandi, quindi tocca o fai clic su Richiedi valutazione.
+1. Nel riquadro Lavoro di traduzione, fai clic sul menu dei comandi, quindi fai clic su Richiedi valutazione.
 
    ![chlimage_1-264](assets/chlimage_1-264.png)
 
-1. Quando lo stato del processo cambia in SCOPE_COMPLETED, nella sezione Lavoro di traduzione tocca o fai clic sul menu dei comandi, quindi tocca o fai clic su Mostra ambito.
+1. Quando lo stato del processo cambia in SCOPE_COMPLETED, nella sezione Processo di traduzione fare clic sul menu dei comandi e quindi su Mostra ambito.
 
 ## Avvio di un processo di traduzione {#starting-a-translation-job}
 
@@ -318,23 +318,23 @@ Dopo aver avviato il processo di traduzione, il riquadro Lavoro di traduzione mo
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
 1. Nella console Progetti, apri il progetto di traduzione.
-1. Nel riquadro Lavoro di traduzione, tocca o fai clic sul menu dei comandi, quindi tocca o fai clic su Avvia.
+1. Nel riquadro Lavoro di traduzione, fai clic sul menu dei comandi, quindi fai clic su Avvia.
 
    ![chlimage_1-266](assets/chlimage_1-266.png)
 
-1. Nella finestra di dialogo che conferma l’avvio della traduzione, tocca o fai clic su Chiudi.
+1. Nella finestra di dialogo Azione che conferma l’avvio della traduzione, fai clic su Chiudi.
 
 ## Annullamento di un processo di traduzione {#canceling-a-translation-job}
 
 Annulla un processo di traduzione per interromperlo e impedire al fornitore di traduzione di eseguire ulteriori traduzioni. È possibile annullare un processo quando il processo ha `Committed For Translation` o `Translation In Progress` stato.
 
 1. Nella console Progetti, apri il progetto di traduzione.
-1. Nel riquadro Lavoro di traduzione, tocca o fai clic sul menu dei comandi, quindi tocca o fai clic su Annulla.
-1. Nella finestra di dialogo che conferma l’annullamento della traduzione, tocca o fai clic su OK.
+1. Nel riquadro Lavoro di traduzione, fai clic sul menu dei comandi, quindi su Annulla.
+1. Nella finestra di dialogo Azione che conferma l’annullamento della traduzione, fai clic su OK.
 
 ## Accetta/Rifiuta flusso di lavoro {#accept-reject-workflow}
 
-Quando il contenuto torna dopo la traduzione ed è in stato Pronto per la revisione è possibile accedere al processo di traduzione e accettare/rifiutare il contenuto.
+Quando il contenuto torna dopo la traduzione ed è in stato Pronto per la revisione, puoi accedere al processo di traduzione e accettare/rifiutare il contenuto.
 
 ![chlimage_1-267](assets/chlimage_1-267.png)
 
@@ -350,18 +350,18 @@ Quando il contenuto viene tradotto per una copia per lingua esistente, rivedi le
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-1. Seleziona la pagina nel master lingua, tocca o fai clic su Riferimenti, quindi tocca o fai clic su Copie per lingua.
-1. Tocca o fai clic sulla copia per lingua da rivedere.
+1. Seleziona la pagina nel master lingua, fai clic su Riferimenti, quindi su Copie per lingua.
+1. Fai clic sulla copia per lingua da rivedere.
 
    ![chlimage_1-270](assets/chlimage_1-270.png)
 
-1. Tocca o fai clic su Lancio per visualizzare i comandi relativi al lancio.
+1. Fai clic su Launch per visualizzare i comandi relativi al lancio.
 
    ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Per aprire la copia di lancio della pagina per esaminare e modificare il contenuto, fai clic su Apri pagina.
 1. Dopo aver rivisto il contenuto e apportato le modifiche necessarie, per promuovere la copia di lancio fai clic su Promuovi.
-1. Sulla pagina Promuovi lancio, specifica le pagine da promuovere, quindi tocca o fai clic su Promuovi.
+1. Nella pagina Promuovi lancio, specifica le pagine da promuovere, quindi fai clic su Promuovi.
 
 ## Confronto di copie per lingua {#comparing-language-copies}
 
@@ -386,14 +386,14 @@ Dopo aver completato il job, lo stato del job è Completato.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Archivia un processo di traduzione quando è terminato e non è più necessario visualizzare i dettagli relativi allo stato. Quando archivi il processo, il riquadro Processo di traduzione viene rimosso dal progetto.
+Archivia un processo di traduzione una volta completato e non è più necessario visualizzare i dettagli sullo stato del processo. Quando archivi il processo, il riquadro Processo di traduzione viene rimosso dal progetto.
 
 ## Creazione della struttura di una copia per lingua {#creating-the-structure-of-a-language-copy}
 
 Compila la copia per lingua in modo che contenga il contenuto del master lingua che si sta traducendo. Prima di compilare la copia per lingua, è necessario [creare la directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root) della copia per lingua.
 
 1. Utilizza la console Sites per selezionare la directory principale della lingua del master che utilizzi come origine. Ad esempio, per tradurre le pagine in inglese del sito demo Geometrixx, seleziona Contenuto > Geometrixx sito demo > Inglese.
-1. Nella barra degli strumenti, tocca o fai clic su Riferimenti.
+1. Sulla barra degli strumenti fare clic su Riferimenti.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -401,14 +401,14 @@ Compila la copia per lingua in modo che contenga il contenuto del master lingua 
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
-1. Tocca o fai clic su Aggiorna copie per lingua per visualizzare gli strumenti di traduzione e configurare le proprietà:
+1. Fai clic su Aggiorna copie per lingua per visualizzare gli strumenti di traduzione e configurare le proprietà:
 
    * Selezionare l&#39;opzione Seleziona tutte le sottopagine.
    * Per Progetto, seleziona Crea solo struttura.
 
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
-1. Tocca o fai clic su Avvia.
+1. Fai clic su Start.
 
 ## Spostamento o ridenominazione di una pagina di origine {#move-source}
 
@@ -420,7 +420,7 @@ Se una pagina sorgente già tradotta deve essere [rinominato o spostato](/help/s
 1. Seleziona **Copie per lingua**.
 1. Seleziona le lingue di destinazione da aggiornare.
 1. Seleziona **Aggiorna copie per lingua**.
-1. Fai clic su **Aggiorna**. A [Launch](/help/sites-authoring/launches-promoting.md) verrà creato.
+1. Clic **Aggiorna**. A [Launch](/help/sites-authoring/launches-promoting.md) verrà creato.
 1. Passa alla directory principale della lingua desiderata e selezionala.
 1. Utilizzo di **Riferimenti** pannello, seleziona **Lanci**.
 1. Fai clic sul lancio creato e fai clic su **Promuovi lancio**.
@@ -437,29 +437,29 @@ Puoi creare manualmente un progetto di traduzione se preferisci utilizzare la co
 
 Quando crei manualmente un progetto di traduzione, devi fornire valori per le seguenti proprietà relative alla traduzione, oltre alle [proprietà di base](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
 
-* **Nome:** nome del progetto.
-* **Lingua di origine:** lingua del contenuto sorgente.
+* **Nome:** Nome del progetto.
+* **Lingua di origine:** Lingua del contenuto sorgente.
 * **Lingua di destinazione:** Lingua in cui il contenuto viene tradotto.
-* **Metodo di traduzione:** seleziona Traduzione umana per indicare che la traduzione deve essere eseguita manualmente.
+* **Metodo di traduzione:** Seleziona Traduzione umana per indicare che la traduzione deve essere eseguita manualmente.
 
-1. Sulla barra degli strumenti della console Progetti, tocca o fai clic su Crea.
-1. Seleziona il modello Progetto di traduzione e tocca o fai clic su Avanti.
+1. Sulla barra degli strumenti della console Progetti, fai clic su Crea.
+1. Seleziona il modello Progetto di traduzione e fai clic su Avanti.
 1. Immetti i valori per le proprietà Base.
-1. Tocca o fai clic su Avanzate e fornisci i valori delle proprietà relative alla traduzione.
-1. Tocca o fai clic su Crea. Nella casella di conferma, tocca o fai clic su Fine per tornare alla console Progetti, oppure tocca o fai clic su Apri progetto per aprire e iniziare a gestire il progetto.
+1. Fai clic su Avanzate e fornisci i valori per le proprietà relative alla traduzione.
+1. Fai clic su Crea. Nella casella di conferma, fai clic su Fine per tornare alla console Progetti, oppure fai clic su Apri progetto per aprire e iniziare a gestire il progetto.
 
 ## Esportazione di un processo di traduzione {#exporting-a-translation-job}
 
 Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un fornitore di traduzione che non è integrato con l’AEM tramite un connettore o per rivederlo.
 
-1. Dal menu a discesa del riquadro Lavoro di traduzione, tocca o fai clic su Esporta.
-1. Nella finestra di dialogo Esporta, tocca o fai clic su Scarica file esportato e, se necessario, utilizza la finestra di dialogo del browser web per salvare il file.
-1. Nella finestra di dialogo Esporta, tocca o fai clic su Chiudi.
+1. Dal menu a discesa del riquadro Lavoro di traduzione, fai clic su Esporta.
+1. Nella finestra di dialogo Esporta fare clic su Scarica file esportato e, se necessario, utilizzare la finestra di dialogo del browser Web per salvare il file.
+1. Nella finestra di dialogo Esporta fare clic su Chiudi.
 
 ## Importazione di un processo di traduzione {#importing-a-translation-job}
 
 Puoi importare contenuti tradotti in AEM, ad esempio, quando il provider di traduzione li invia a te perché non è integrato con AEM tramite un connettore.
 
-1. Dal menu a discesa del riquadro Lavoro di traduzione, tocca o fai clic su Importa.
+1. Dal menu a discesa del riquadro Lavoro di traduzione, fai clic su Importa.
 1. Utilizza la finestra di dialogo del browser web per selezionare il file da importare.
-1. Nella finestra di dialogo Importa, tocca o fai clic su Chiudi.
+1. Nella finestra di dialogo Importa fare clic su Chiudi.

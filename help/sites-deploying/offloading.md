@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 2%
+source-wordcount: '2316'
+ht-degree: 1%
 
 ---
 
@@ -153,7 +153,7 @@ Utilizza la console web o un nodo sling:OsgiConfig per configurare le seguenti p
    <td>Nome descrittore archivio</td>
    <td>leaderElectionRepositoryDescriptor</td>
    <td> </td>
-   <td>&lt;nessun valore&gt;</td>
+   <td>&lt;no value&gt;</td>
   </tr>
  </tbody>
 </table>

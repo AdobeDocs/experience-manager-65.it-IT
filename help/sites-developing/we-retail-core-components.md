@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 5%
+source-wordcount: '538'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
 1. Avvia Adobe Experience Manager (AEM) con il contenuto di esempio We.Retail e apri [Console Componenti](/help/sites-authoring/default-components-console.md).
 
-   **Navigazione globale -> Strumenti -> Componenti**
+   **Navigazione globale > Strumenti > Componenti**
 
 1. Aprendo la barra nella console Componenti, puoi filtrare per un particolare gruppo di componenti. I Componenti core sono disponibili in
 
@@ -83,6 +83,6 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni sui Componenti core, consulta il documento di authoring [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per una panoramica delle funzionalità dei componenti core e del documento per sviluppatori [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per una panoramica tecnica.
+Per ulteriori informazioni sui Componenti core, consulta il documento di authoring [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per una panoramica delle funzionalità dei componenti core e del documento per sviluppatori [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) per una panoramica tecnica.
 
 Inoltre, potrebbe essere utile approfondire le indagini [modelli modificabili](/help/sites-developing/we-retail-editable-templates.md). Consulta il documento di authoring [Creazione di modelli di pagina](/help/sites-authoring/templates.md) o la pagina del documento per sviluppatori [Modelli - Modificabili](/help/sites-developing/page-templates-editable.md) per informazioni complete sui modelli modificabili.

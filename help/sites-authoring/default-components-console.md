@@ -2,10 +2,10 @@
 title: Console Componenti
 description: La console Componenti consente di sfogliare tutti i componenti definiti per l’istanza e visualizzare le informazioni chiave di ciascun componente.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 51%
+ht-degree: 43%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 51%
 
 La console Componenti consente di sfogliare tutti i componenti definiti per l’istanza e visualizzare le informazioni chiave di ciascun componente.
 
-È possibile accedervi da **Strumenti ->** **Generale ->** **Componenti**. Nella console sono disponibili le viste a schede e a elenco. Poiché non esiste una struttura ad albero per i componenti, la vista a colonne non è disponibile.
+È accessibile da **Strumenti >** **Generale >** **Componenti**. Nella console sono disponibili le viste a schede e a elenco. Poiché non esiste una struttura ad albero per i componenti, la vista a colonne non è disponibile.
 
 ![schermata_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -29,7 +29,7 @@ L’icona **Solo contenuto** (in alto a sinistra) permette di aprire il pannello
 
 ### Dettagli dei componenti {#component-details}
 
-Per visualizzare i dettagli di un componente specifico, tocca o fai clic sulla risorsa richiesta. Tre schede forniscono:
+Per visualizzare i dettagli di un componente specifico, fai clic sulla risorsa richiesta. Tre schede forniscono:
 
 * **Proprietà**
 
@@ -64,6 +64,6 @@ Per visualizzare i dettagli di un componente specifico, tocca o fai clic sulla r
 
 * **Documentazione**
 
-  Se lo sviluppatore ha fornito [documentazione del componente](/help/sites-developing/developing-components.md#documenting-your-component), apparirà sulla **Documentazione** scheda. Se la documentazione non è disponibile, la scheda **Documentazione** non verrà visualizzata.
+  Se lo sviluppatore ha fornito [documentazione del componente](/help/sites-developing/developing-components.md#documenting-your-component), apparirà sulla **Documentazione** scheda. Se la documentazione non è disponibile, il **Documentazione** non verrà visualizzata.
 
   ![Documentazione](assets/chlimage_1-171.png)

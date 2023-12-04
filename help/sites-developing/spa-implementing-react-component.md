@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 10%
+source-wordcount: '543'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,7 @@ La funzione di authoring dell’SPA offre una soluzione completa per il supporto
 
 >[!NOTE]
 >
->L’editor SPA è la soluzione consigliata per i progetti che richiedono un rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+>L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
 
 ## Introduzione {#introduction}
 

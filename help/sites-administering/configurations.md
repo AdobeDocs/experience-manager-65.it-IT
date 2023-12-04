@@ -2,10 +2,10 @@
 title: Configurazioni e browser di configurazione
 description: Scopri le configurazioni dell’AEM e come gestiscono le impostazioni dell’area di lavoro nell’AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 6%
+source-wordcount: '1472'
+ht-degree: 4%
 
 ---
 
@@ -68,22 +68,22 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 
 È semplice creare una configurazione in AEM utilizzando il Browser configurazioni.
 
-1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Strumenti** -> **Generale** -> **Browser configurazioni**.
-1. Tocca o fai clic su **Crea**.
+1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Strumenti** > **Generale** > **Browser configurazioni**.
+1. Fai clic su **Crea**.
 1. Specifica il **titolo** e il **nome** da assegnare alla configurazione.
 
-   ![Creare la configurazione](assets/configuration-create.png)
+   ![Crea configurazione](assets/configuration-create.png)
 
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/sites-developing/naming-conventions.md)
+      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM.](/help/sites-developing/naming-conventions.md)
       * Se necessario è possibile modificarlo.
 1. Controlla il tipo di configurazioni che desideri consentire.
    * [Configurazioni cloud](/help/sites-administering/configurations.md)
    * [Segmenti Context Hub](/help/sites-administering/segmentation.md)
    * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
    * [Modelli modificabili](/help/sites-authoring/templates.md)
-1. Tocca o fai clic su **Crea**.
+1. Fai clic su **Crea**.
 
 >[!TIP]
 >
@@ -93,8 +93,8 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 
 Se consideri le configurazioni come aree di lavoro, puoi impostare i diritti di accesso su tali configurazioni per imporre a chi può o meno accedere a tali aree di lavoro.
 
-1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Strumenti** -> **Generale** -> **Browser configurazioni**.
-1. Seleziona la configurazione da modificare, quindi tocca o fai clic su **Proprietà** nella barra degli strumenti.
+1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Strumenti** > **Generale** > **Browser configurazioni**.
+1. Seleziona la configurazione da modificare, quindi fai clic su **Proprietà** nella barra degli strumenti.
 1. Selezionate le feature aggiuntive da aggiungere alla configurazione.
 
    >[!NOTE]
@@ -210,7 +210,7 @@ Fornisci semplicemente:
 
 * **Percorso contenuto**
 * **Elemento**
-* **User**
+* **Utente**
 
 Per vedere quali configurazioni vengono risolte e ricevere un codice di esempio che le risolve, seleziona **Risolvi**.
 

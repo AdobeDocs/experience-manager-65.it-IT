@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM Headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 92%
+source-wordcount: '2998'
+ht-degree: 91%
 
 ---
 
@@ -78,7 +78,7 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Per modificare il contenuto senza problemi, AEM offre due solide API.
 
-* L’API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* L’API di GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
 * L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
 Scoprirai di più su queste API e come utilizzarle in una parte successiva del percorso AEM headless. Oppure, consulta la [risorse aggiuntive](#additional-resources) per ulteriore documentazione, vedere la sezione seguente.
@@ -240,7 +240,7 @@ Per una [tipica implementazione headless con l’utilizzo di AEM,](#level-1) lo 
 
 Affinché un progetto abbia successo, prima di creare qualsiasi contenuto devono essere considerate le prestazioni.
 
-Devi comprendere le aspettative degli utenti/visitatori e realizzare il progetto di conseguenza. Impostare gli obiettivi del livello di servizio (SLO) e misurarli per capire se si soddisfano le aspettative degli utenti.
+Assicurati di comprendere le aspettative degli utenti/visitatori e progettare per questi. Impostare gli obiettivi del livello di servizio (SLO) e misurarli per capire se si soddisfano le aspettative degli utenti.
 
 #### Modelli di traffico {#traffic-patterns}
 

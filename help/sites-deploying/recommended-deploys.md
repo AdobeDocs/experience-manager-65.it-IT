@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1759'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Gli svantaggi:
 
 Questo approccio implica che più istanze Oak accedano a un set di repliche MongoDB in più data center, creando in effetti un cluster attivo-attivo per l’ambiente di authoring AEM. Con più data center, la replica MongoDB offre la stessa elevata disponibilità e ridondanza, ma ora include la possibilità di gestire un&#39;interruzione del data center.
 
-![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
+![oakclustermongofailover2datacenter](assets/oakclustermongofailover2datacenters.png)
 
 I vantaggi:
 
@@ -177,7 +177,7 @@ Questo non si applica ad AEM Communities che utilizza cluster MongoMK sul livell
 1. Le competenze di MongoDB devono essere presenti all&#39;interno del partner o del team del cliente per poter mantenere e mantenere un ambiente MongoDB esistente o nuovo;
 1. Puoi scegliere di distribuire la versione commerciale o open source di MongoDB (AEM supporta entrambe le versioni), ma devi acquistare un contratto di manutenzione e supporto MongoDB direttamente da MongoDB Inc;
 1. Nel complesso le architetture e le infrastrutture AEM e MongoDB dovrebbero essere ben definite e convalidate da un architetto Adobe dell&#39;AEM;
-1. È necessario rivedere il modello di supporto per le distribuzioni AEM che includono MongoDB.
+1. Rivedi il modello di supporto per le implementazioni AEM che includono MongoDB.
 
 **Raccomandazioni valide per le implementazioni MongoDB:**
 

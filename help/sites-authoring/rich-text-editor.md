@@ -1,17 +1,17 @@
 ---
 title: Utilizzo dell’Editor Rich Text per l’authoring dei contenuti
-description: Utilizzo dell’Editor Rich Text per l’authoring dei contenuti in Adobe Experience Manager 6.5.
+description: Utilizzo dell’Editor Rich Text per creare contenuti in Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 46%
+source-wordcount: '264'
+ht-degree: 32%
 
 ---
 
 # Utilizzo dell’Editor Rich Text per l’authoring dei contenuti {#use-rich-text-editor-to-author-content}
 
-L’Editor Rich Text è un componente essenziale per l’inserimento di contenuti di testo in AEM. Costituisce l’elemento base di diversi componenti., tra cui:
+L’Editor Rich Text è un componente essenziale per l’inserimento di contenuti di testo in AEM. Costituisce la base di varie componenti, tra cui:
 
 * Testo
 * Testo e immagine
@@ -19,11 +19,11 @@ L’Editor Rich Text è un componente essenziale per l’inserimento di contenut
 
 ## Modifica diretta {#in-place-editing}
 
-Quando si seleziona un componente basato su testo con un solo tocco o clic, viene visualizzata la [barra degli strumenti del componente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste), come per qualsiasi componente.
+Quando si seleziona un componente basato su testo con un solo clic, vengono visualizzati i [barra degli strumenti del componente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) come per qualsiasi componente.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Toccando/facendo nuovamente clic o selezionando inizialmente il componente con un doppio tocco/clic lento, si apre la modifica diretta, che dispone di una propria barra degli strumenti. Qui puoi modificare il contenuto e apportare semplici modifiche di formattazione.
+Toccando/facendo nuovamente clic o selezionando inizialmente il componente con un doppio clic lento, si apre la modifica diretta, che dispone di una propria barra degli strumenti. Qui puoi modificare il contenuto e apportare semplici modifiche di formattazione.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

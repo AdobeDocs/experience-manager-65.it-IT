@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 2%
+source-wordcount: '1530'
+ht-degree: 3%
 
 ---
 
@@ -107,7 +107,7 @@ Per esportare gli utenti AEM come lead di Salesforce:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Selezionare l&#39;utente AEM che si desidera creare come lead come **Payload** per questo flusso di lavoro (home -> utenti). Accertati di selezionare il nodo del profilo dell’utente in quanto contiene informazioni come **givenName**, e  **familyName**, mappati sul lead di Salesforce **FirstName** e **Cognome** campi.
+1. Selezionare l&#39;utente AEM che si desidera creare come lead come **Payload** per questo flusso di lavoro (home > utenti). Accertati di selezionare il nodo del profilo dell’utente in quanto contiene informazioni come **givenName**, e  **familyName**, mappati sul lead di Salesforce **FirstName** e **Cognome** campi.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -115,7 +115,7 @@ Per esportare gli utenti AEM come lead di Salesforce:
    >
    >Prima di avviare questo flusso di lavoro, è necessario disporre di alcuni campi obbligatori per un nodo lead in AEM prima di poter pubblicare il prodotto in Salesforce. Questi sono **givenName**, **familyName**, **azienda**, e **email**. Per un elenco completo delle mappature tra l’utente AEM e il lead Salesforce, consulta [Mappatura della configurazione tra l’utente AEM e il lead Salesforce.](#mapping-configuration-between-aem-user-and-salesforce-lead)
 
-1. Fai clic su **OK**. Le informazioni utente vengono esportate in salesforce.com. Puoi verificarlo all’indirizzo salesforce.com.
+1. Clic **OK**. Le informazioni utente vengono esportate in salesforce.com. Puoi verificarlo all’indirizzo salesforce.com.
 
    >[!NOTE]
    >

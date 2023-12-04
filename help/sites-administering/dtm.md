@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2148'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ Se lo desideri, l’istanza di authoring può utilizzare le librerie di produzio
 
 Quando AEM ospita le librerie Dynamic Tag Management, puoi utilizzare il servizio Dynamic Tag Management Deployment Hook per inviare automaticamente gli aggiornamenti della libreria a AEM. Gli aggiornamenti della libreria vengono inviati quando vengono apportate modifiche alle librerie, ad esempio quando vengono modificate le proprietà della proprietà Web di Dynamic Tag Management.
 
-Per utilizzare l’hook di distribuzione, Dynamic Tag Management deve essere in grado di connettersi all’istanza AEM che ospita le librerie. Devi [consentire l’accesso all’AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) per i server Dynamic Tag Management.
+Per utilizzare l’hook di distribuzione, Dynamic Tag Management deve essere in grado di connettersi all’istanza AEM che ospita le librerie. [Abilitare l’accesso all’AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) per i server Dynamic Tag Management.
 
 In alcune circostanze l&#39;AEM può essere irraggiungibile, ad esempio quando l&#39;AEM si trova dietro un firewall. In questi casi, puoi utilizzare l’opzione Importazione polling AEM per recuperare periodicamente le librerie. Un’espressione di processo cron determina la pianificazione dei download della libreria.
 

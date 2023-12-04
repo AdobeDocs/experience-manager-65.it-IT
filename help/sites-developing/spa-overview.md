@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 86%
+source-wordcount: '1644'
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,7 @@ L’editor di SPA offre una soluzione completa per il supporto di SPA in AEM. Qu
 
 >[!NOTE]
 >
->L’editor SPA è la soluzione consigliata per i progetti che richiedono un rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+>L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
 
 ## Introduzione {#introduction}
 
@@ -51,7 +51,7 @@ Se il componente pagina SPA eredita dal componente core della pagina, sono dispo
 * Oppure aggiungi le categorie utilizzando il `customfooterlibs.html`.
 
 Per ogni risorsa nel modello esportato, la SPA mappa un componente effettivo che esegue il
-rendering. Viene quindi eseguito il rendering del modello, rappresentato come JSON, utilizzando le mappature dei componenti all’interno di un contenitore.
+rendering. Il modello, rappresentato come JSON, viene quindi rappresentato utilizzando le mappature dei componenti all’interno di un contenitore.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
@@ -172,7 +172,7 @@ Puoi implementare altri framework SPA per lavorare con l’SDK dell’editor di 
 
 ### Utilizzo di più selettori {#multiple-selectors}
 
-È possibile definire e utilizzare selettori personalizzati aggiuntivi come parte di una SPA sviluppata per l’SDK di SPA di AEM. Tuttavia, questo supporto richiede che il `model` selettore sia il primo e l’estensione sia `.json`[ come richiesto dall’esportatore JSON.](json-exporter-components.md#multiple-selectors)
+È possibile definire e utilizzare selettori personalizzati aggiuntivi come parte di una SPA sviluppata per l’SDK di SPA di AEM. Tuttavia, questo supporto richiede che `model` selettore essere il primo selettore e l’estensione essere `.json` as [richiesto dal modulo di esportazione JSON.](json-exporter-components.md#multiple-selectors)
 
 ### Requisiti dell’editor di testo {#text-editor-requirements}
 

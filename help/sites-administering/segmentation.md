@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 72%
+source-wordcount: '1745'
+ht-degree: 62%
 
 ---
 
@@ -30,7 +30,7 @@ L’AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Co
 
 ## Accesso ai segmenti {#accessing-segments}
 
-Il [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) La console viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub. Per [Segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e sui segmenti di Adobe Target, consulta la relativa documentazione.
+Il [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) La console viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. Questa documentazione tratta la gestione dei segmenti per ContextHub. Per [Segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e sui segmenti di Adobe Target, consulta la relativa documentazione.
 
 Per accedere ai segmenti devi selezionare la configurazione. Nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**. Verranno visualizzate le configurazioni disponibili:
 
@@ -61,8 +61,8 @@ Sono disponibili i seguenti contenitori predefiniti che consentono di raggruppar
 <table>
  <tbody>
   <tr>
-   <td>Contenitore AND<br /> </td>
-   <td>Operatore AND boolean<br /> </td>
+   <td>Contenitore E<br /> </td>
+   <td>Operatore AND booleano<br /> </td>
   </tr>
   <tr>
    <td>Contenitore OR<br /> </td>
@@ -78,7 +78,7 @@ Per valutare le proprietà dei segmenti sono disponibili i seguenti confronti di
 <table>
  <tbody>
   <tr>
-   <td>Property-Value (Proprietà-Valore)<br /> </td>
+   <td>Property-Value<br /> </td>
    <td>Confronta una proprietà di un archivio con un valore definito<br /> </td>
   </tr>
   <tr>
@@ -95,7 +95,7 @@ Per valutare le proprietà dei segmenti sono disponibili i seguenti confronti di
   </tr>
   <tr>
    <td>Segment Reference-Script Reference (Riferimento segmento-Riferimento script)</td>
-   <td>Confronta un segmento di riferimento ai risultati di uno script<br /> </td>
+   <td>Confronta un segmento di riferimento con i risultati di uno script<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -133,11 +133,11 @@ Per definire il nuovo segmento:
 
 1. Dopo l’[accesso ai segmenti](/help/sites-administering/segmentation.md#accessing-segments), [passa alla cartella](#organizing-segments) in cui desideri creare il segmento.
 
-1. tocca o fai clic sul pulsante Crea e seleziona **Crea segmento ContextHub**.
+1. fai clic sul pulsante Crea e seleziona **Crea segmento ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In **Nuovo segmento ContextHub**, immetti un titolo per il segmento e un valore di incremento, se necessario, quindi tocca o fai clic su **Crea**.
+1. In **Nuovo segmento ContextHub**, immetti un titolo per il segmento e un valore di incremento, se necessario, quindi fai clic su **Crea**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -147,7 +147,7 @@ Per definire il nuovo segmento:
    * Valore massimo: `1000000`
 
 1. Trascina un confronto o un riferimento nell’editor segmento per visualizzarlo nel contenitore AND predefinito.
-1. Tocca o fai doppio clic sull’opzione di configurazione del nuovo riferimento o segmento per modificarne i parametri specifici. In questo esempio, effettuiamo i test per le persone a San Jose.
+1. Fai doppio clic sull’opzione di configurazione del nuovo riferimento o segmento per modificare i parametri specifici. In questo esempio, effettuiamo i test per le persone a San Jose.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
@@ -233,7 +233,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Crea una nuova cartella,  {#create-folder}
 
-1. Dopo aver effettuato [l’accesso ai segmenti](#accessing-segments), tocca o fai clic sul pulsante **Crea** e seleziona **Cartella**.
+1. Dopo [accesso ai segmenti](#accessing-segments), fare clic su **Crea** e seleziona **Cartella**.
 
    ![Aggiungi cartella](assets/contexthub-create-segment.png)
 
@@ -245,24 +245,24 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
    ![Crea cartella](assets/contexthub-create-folder.png)
 
-1. Tocca o fai clic su **Crea**.
+1. Fai clic su **Crea**.
 
    ![Conferma cartella](assets/contexthub-confirm-folder.png)
 
 1. La cartella verrà visualizzata nell’elenco dei segmenti.
    * L’ordinamento delle colonne incide sulla posizione di visualizzazione della nuova cartella nell’elenco.
-   * Per regolare l’ordinamento, tocca o fai clic sulle intestazioni di colonna.
+   * Puoi fare clic sulle intestazioni di colonna per modificare l’ordinamento.
      ![La nuova cartella](assets/contexthub-folder.png)
 
 ### Modificare le cartelle esistenti {#modify-folders}
 
-1. Dopo aver effettuato [l’accesso ai segmenti](#accessing-segments), tocca o fai clic sulla cartella da modificare per selezionarla.
+1. Dopo [accesso ai segmenti](#accessing-segments), fare clic sulla cartella che si desidera modificare per selezionarla.
 
    ![Selezione cartella](assets/contexthub-select-folder.png)
 
-1. Per rinominare la cartella, tocca o fai clic su **Rinomina** nella barra degli strumenti.
+1. Clic **Rinomina** nella barra degli strumenti per rinominare la cartella.
 
-1. Specifica un nuovo **Titolo cartella** e tocca o fai clic su **Salva**.
+1. Fornisci un nuovo **Titolo cartella** e fai clic su **Salva**.
 
    ![Rinomina cartella](assets/contexthub-rename-folder.png)
 
@@ -272,25 +272,25 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Eliminare una cartella
 
-1. Dopo aver effettuato [l’accesso ai segmenti](#accessing-segments), tocca o fai clic sulla cartella da modificare per selezionarla.
+1. Dopo [accesso ai segmenti](#accessing-segments), fare clic sulla cartella che si desidera modificare per selezionarla.
 
    ![Selezione cartella](assets/contexthub-select-folder.png)
 
-1. Per eliminare la cartella, tocca o fai clic su **Elimina** nella barra degli strumenti.
+1. Clic **Elimina** nella barra degli strumenti per eliminare la cartella.
 
 1. Una finestra di dialogo riporta un elenco di cartelle selezionate per l’eliminazione.
 
    ![Conferma eliminazione](assets/contexthub-confirm-segment-delete.png)
 
-   * Tocca o fai clic su **Elimina** per confermare.
-   * Tocca o fai clic su **Annulla** per interrompere.
+   * Clic **Elimina** per confermare.
+   * Clic **Annulla** per interrompere.
 
 1. Se una delle cartelle selezionate contiene sottocartelle o segmenti, devi confermarne l’eliminazione.
 
    ![Conferma l’eliminazione degli elementi figlio](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tocca o fai clic su **Forza eliminazione** per confermare.
-   * Tocca o fai clic su **Annulla** per interrompere.
+   * Clic **Forza eliminazione** per confermare.
+   * Clic **Annulla** per interrompere.
 
 >[!NOTE]
 >

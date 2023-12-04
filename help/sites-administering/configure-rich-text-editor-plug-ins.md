@@ -3,10 +3,10 @@ title: Configurare i plug-in dell’Editor Rich Text
 description: Scopri come configurare i plug-in dell’Editor Rich Text di Adobe Experience Manager per abilitare singole funzionalità.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4395'
-ht-degree: 4%
+source-wordcount: '4391'
+ht-degree: 2%
 
 ---
 
@@ -352,9 +352,9 @@ Innanzitutto, abilita il plug-in paraformat:
 Se il plug-in non viene configurato ulteriormente, vengono attivati i seguenti formati predefiniti:
 >
 * Paragrafo ( `<p>`)
-* Intestazione 1 ( `<h1>`)
-* Intestazione 2 ( `<h2>`)
-* Intestazione 3 ( `<h3>`)
+* Titolo 1 ( `<h1>`)
+* Titolo 2 ( `<h2>`)
+* Titolo 3 ( `<h3>`)
 >
 
 >[!CAUTION]
@@ -587,7 +587,7 @@ Un&#39;installazione standard per AEM include i dizionari per l&#39;inglese amer
 >
 Il controllo ortografico dell’editor Rich Text è disponibile su richiesta. Non viene eseguito automaticamente quando si inizia a digitare il testo. Per eseguire il controllo ortografico, fare clic su [!UICONTROL Controllo ortografia] dalla barra degli strumenti. L’editor Rich Text controlla l’ortografia delle parole ed evidenzia le parole errate.
 >
-Se si incorporano le modifiche suggerite dal correttore ortografico, lo stato del testo cambia e le parole errate non vengono più evidenziate. Per eseguire il controllo ortografico, toccare o fare di nuovo clic sul pulsante Controllo ortografia.
+Se si incorporano le modifiche suggerite dal correttore ortografico, lo stato del testo cambia e le parole errate non vengono più evidenziate. Per eseguire il controllo ortografico, fare nuovamente clic sul pulsante Controllo ortografico.
 
 ## Configurare la dimensione della cronologia per le azioni Annulla e Ripristina {#undohistory}
 

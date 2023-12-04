@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 42%
+source-wordcount: '783'
+ht-degree: 40%
 
 ---
 
@@ -63,7 +63,7 @@ Questa sezione descrive i flussi di lavoro disponibili per Progetti.
 
 Questo flusso di lavoro consente di richiedere un manoscritto a un utente e quindi approvarlo. Per avviare il flusso di lavoro di copia delle richieste:
 
-1. In un progetto multimediale, tocca o fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
+1. In un progetto multimediale, fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
 1. Nella procedura guidata del flusso di lavoro seleziona **Richiedi copia** e fai clic su **Successivo**.
 1. Inserisci un titolo del manoscritto e un breve riepilogo delle richieste. Se applicabile, immettere un conteggio delle parole di destinazione, una priorità dell&#39;attività e una data di scadenza.
 
@@ -81,7 +81,7 @@ Il **Servizio fotografico per prodotto** i flussi di lavoro (sia di commerce che
 
 In **Approvazione progetto** flusso di lavoro, puoi assegnare il contenuto a un utente, rivederlo e quindi approvarlo.
 
-1. In un progetto semplice, tocca o fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
+1. In un progetto semplice, fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
 1. Nella procedura guidata del flusso di lavoro seleziona **Flusso di lavoro di approvazione progetto** e fai clic su **Successivo**.
 1. Inserisci un titolo e seleziona a chi assegnarlo. Se necessario, puoi aggiungere una descrizione e il percorso del contenuto e impostare la priorità e la scadenza.
 
@@ -95,7 +95,7 @@ Il flusso di lavoro viene avviato. L&#39;attività viene visualizzata nella **At
 
 Questo flusso di lavoro consente di richiedere un lancio.
 
-1. In un progetto semplice, tocca o fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
+1. In un progetto semplice, fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
 1. Nella procedura guidata del flusso di lavoro seleziona **Richiedi flusso di lavoro di avvio** e fai clic su **Successivo**.
 1. Inserisci un titolo per il lancio e specifica il percorso di origine del lancio. Se necessario, puoi anche aggiungere una descrizione e una data di pubblicazione. Seleziona Eredita i dati live della pagina sorgente o escludi le sottopagine a seconda di come desideri che si comporti il lancio.
 
@@ -109,7 +109,7 @@ Il flusso di lavoro viene avviato. Il flusso di lavoro viene visualizzato nel **
 
 Questo flusso di lavoro ti consente di richiedere una pagina di destinazione.
 
-1. In un progetto semplice, tocca o fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
+1. In un progetto semplice, fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
 1. Nella procedura guidata del flusso di lavoro seleziona **Richiedi pagina di destinazione** e fai clic su **Successivo**.
 1. Inserisci un titolo per la pagina di destinazione e il percorso principale. Se applicabile, inserisci una data di attivazione o scegli un file per la pagina di destinazione.
 
@@ -123,7 +123,7 @@ Il flusso di lavoro viene avviato. L&#39;attività viene visualizzata nella **At
 
 Questo flusso di lavoro ti consente di richiedere un’e-mail. Si tratta dello stesso flusso di lavoro visualizzato nel **E-mail** affiancare.
 
-1. In un progetto semplice, tocca o fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
+1. In un progetto semplice, fai clic sulla freccia verso il basso in alto a destra del **Flussi di lavoro** affiancare e selezionare **Avvia flusso di lavoro**.
 1. Nella procedura guidata del flusso di lavoro seleziona **Richiedi e-mail** e fai clic su **Successivo**.
 1. Immetti un titolo e-mail e i percorsi della campagna e del modello. Inoltre puoi fornire un nome, una descrizione e una data di attivazione.
 

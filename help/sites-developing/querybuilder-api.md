@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ L’API REST consente di accedere alle stesse funzioni tramite HTTP con risposte
 
 Questi esempi sono forniti nella notazione di stile delle proprietà Java™. Per utilizzarli con l’API Java™, utilizza un Java™ `HashMap` come nell’esempio di API che segue.
 
-Per `QueryBuilder` Servlet JSON, ogni esempio include un collegamento all’installazione locale di CQ (nella posizione predefinita, `http://localhost:4502`). Prima di utilizzare questi collegamenti, devi accedere all’istanza CQ.
+Per `QueryBuilder` Servlet JSON, ogni esempio include un collegamento all’installazione locale di CQ (nella posizione predefinita, `http://localhost:4502`). Accedi all’istanza CQ prima di utilizzare questi collegamenti.
 
 >[!CAUTION]
 >

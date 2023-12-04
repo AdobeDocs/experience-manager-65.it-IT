@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3720'
 ht-degree: 0%
 
 ---
@@ -146,8 +146,7 @@ Il framework mobile dell’AEM consente di sviluppare componenti sensibili al di
 
 * Verifica se il gruppo di dispositivi supporta le immagini
   `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
-...
-OPPURE
+... OPPURE
   `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
 ...
 
@@ -186,9 +185,9 @@ I gruppi di dispositivi mobili forniscono la segmentazione dei dispositivi mobil
 
 I gruppi di dispositivi sono definiti come pagine di contenuto sotto `/etc/mobile/devices` e utilizza **Gruppo dispositivi mobili** modello. Il modello gruppo di dispositivi funge da modello di configurazione per le definizioni dei gruppi di dispositivi sotto forma di pagine di contenuto. Le sue caratteristiche principali sono:
 
-* Dove si trova: `/libs/wcm/mobile/templates/devicegroup`
+* Posizione: `/libs/wcm/mobile/templates/devicegroup`
 * Percorso consentito: `/etc/mobile/groups/*`
-* Componente Pagina: `wcm/mobile/components/devicegroup`
+* Componente pagina: `wcm/mobile/components/devicegroup`
 
 #### Assegnazione di gruppi di dispositivi al sito {#assigning-device-groups-to-your-site}
 
@@ -268,7 +267,7 @@ Il giorno **Generale** scheda:
    * Per aggiungere un filtro, fai clic su Aggiungi elemento, quindi seleziona un filtro dall’elenco a discesa.
    * I filtri vengono valutati nell’ordine in cui vengono visualizzati. Quando un dispositivo non soddisfa i criteri di un filtro, i filtri successivi nell’elenco non vengono valutati.
 
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 La finestra di dialogo per la configurazione del gruppo di dispositivi mobili si presenta così:
 
@@ -577,7 +576,7 @@ Il **Statistiche** è ora disponibile.
 
 ### Supporto del caching delle pagine per i collegamenti &quot;Invia collegamento a un amico&quot; {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Le pagine mobili possono essere memorizzate nella cache in Dispatcher, perché quelle di cui è stato eseguito il rendering per un gruppo di dispositivi sono distinte nell’URL della pagina dal selettore del gruppo di dispositivi, ad esempio `/content/mobilepage.touch.html`. Una richiesta a una pagina mobile senza un selettore non viene mai memorizzata nella cache, come in questo caso, il rilevamento del dispositivo funziona e infine viene reindirizzato al gruppo di dispositivi corrispondente (o &quot;nomatch&quot; per tale questione). Una pagina mobile di cui è stato eseguito il rendering con un selettore di gruppo dispositivo viene elaborata dal rewriter del collegamento, che riscrive tutti i collegamenti all’interno della pagina in modo da contenere anche il selettore di gruppo dispositivo, impedendo di rieseguire il rilevamento del dispositivo per ogni clic su una pagina già qualificata.
+Le pagine mobili possono essere memorizzate nella cache in Dispatcher, perché quelle di cui è stato eseguito il rendering per un gruppo di dispositivi sono distinte nell’URL della pagina dal selettore del gruppo di dispositivi, ad esempio `/content/mobilepage.touch.html`. Una richiesta a una pagina mobile senza un selettore non viene mai memorizzata nella cache, come in questo caso, il rilevamento del dispositivo funziona e infine viene reindirizzato al gruppo di dispositivi corrispondente (o &quot;nomatch&quot; per tale questione). Una pagina mobile di cui è stato eseguito il rendering con un selettore di gruppo dispositivo viene elaborata dal rewriter del collegamento, che riscrive tutti i collegamenti all’interno della pagina in modo da contenere anche il selettore di gruppo dispositivo, impedendo di rieseguire il rilevamento del dispositivo per ogni clic di una pagina già qualificata.
 
 Pertanto, potresti incontrare lo scenario seguente:
 

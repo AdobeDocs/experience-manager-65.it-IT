@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ La posizione del GDS viene determinata durante il processo di installazione dei 
 
 ### Posizione GDS {#gds-location}
 
-Se si lascia vuota l&#39;impostazione relativa al percorso durante l&#39;installazione, per impostazione predefinita viene utilizzata una directory nell&#39;installazione del server applicazioni. È necessario eseguire il backup della seguente directory per il server applicazioni:
+Se si lascia vuota l&#39;impostazione relativa al percorso durante l&#39;installazione, per impostazione predefinita viene utilizzata una directory nell&#39;installazione del server applicazioni. Eseguire il backup della seguente directory per il server applicazioni:
 
 * (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage`
 * (WebLogic) `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage`

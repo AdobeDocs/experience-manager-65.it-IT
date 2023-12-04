@@ -5,10 +5,10 @@ topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 27%
+source-wordcount: '669'
+ht-degree: 26%
 
 ---
 
@@ -20,7 +20,7 @@ Questa pagina presenta miglioramenti e perfezionamenti incrementali delle funzio
 
 Sono state aggiunte opzioni per migliorare la produttività lavorando con progetti di traduzione, come la promozione e l’eliminazione automatica dei lanci di traduzione e la pianificazione dell’esecuzione ricorrente di un progetto di traduzione.
 
-1. Nel progetto di traduzione, tocca o fai clic sui puntini di sospensione nella parte inferiore della sezione **Riepilogo traduzione** affiancare.
+1. Nel progetto di traduzione, fai clic sui puntini di sospensione nella parte inferiore della sezione **Riepilogo traduzione** affiancare.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -40,7 +40,7 @@ Sono state aggiunte opzioni per migliorare la produttività lavorando con proget
 
 È possibile configurare più lingue di destinazione in un progetto di traduzione, per ridurre il numero totale di progetti di traduzione creati.
 
-1. Nel progetto di traduzione, tocca o fai clic sui punti nella parte inferiore della sezione **Riepilogo traduzione** affiancare.
+1. Nel progetto di traduzione, fai clic sui punti nella parte inferiore della sezione **Riepilogo traduzione** affiancare.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -110,11 +110,11 @@ Ora è possibile selezionare una proprietà nella vista a elenco Sites che mostr
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Tocca o fai clic su **Impostazioni vista**.
+1. Clic **Impostazioni vista**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Verifica **Tradotto** casella di controllo in **Traduzione** e tocca o fai clic su **Aggiorna**.
+1. Verifica **Tradotto** casella di controllo in **Traduzione** e fai clic su **Aggiorna**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 

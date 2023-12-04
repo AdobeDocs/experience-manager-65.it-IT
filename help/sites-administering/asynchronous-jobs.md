@@ -2,10 +2,10 @@
 title: Processi asincroni
 description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a consumo intensivo di risorse.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 91%
+source-wordcount: '791'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ Alcune di queste operazioni sono:
 * Recupero di risorse che superano il limite di soglia impostato da una implementazione remota di Experience Manager
 * Rollout di Live Copy
 
-Lo stato dei processi asincroni è visibile dal dashboard **[!UICONTROL Stato processo asincrono]** in **Navigazione globale** -> **Strumenti** -> **Operazioni** -> **Processi**.
+È possibile visualizzare lo stato dei processi asincroni da **[!UICONTROL Stato processo asincrono]** dashboard in **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Lo stato delle operazioni asincrone è consultabile in dettaglio alla pagina **[
    >
    >Non è possibile eliminare un processo se il suo stato è **Attivo** o **In coda**.
 
-## Eliminare i processi completati {#purging-completed-jobs}
+## Rimuovi processi completati {#purging-completed-jobs}
 
 AEM ogni giorno alle 01:00 esegue un processo che elimina i processi asincroni completati da più di un giorno.
 

@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine di contenuto
 description: Scopri come pubblicare le pagine di contenuto in Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 71%
+source-wordcount: '1673'
+ht-degree: 65%
 
 ---
 
@@ -95,7 +95,7 @@ Nella console Sites sono disponibili due opzioni per la pubblicazione:
 
 Per pubblicare una pagina con Pubblicazione rapida:
 
-1. Seleziona le pagine desiderate nella console Sites e fai clic sul pulsante **Pubblicazione rapida**.
+1. Seleziona le pagine desiderate nella console Sites e fai clic su **Pubblicazione rapida** pulsante.
 
    ![pp-02](assets/pp-02.png)
 
@@ -111,11 +111,11 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 #### Gestisci pubblicazione  {#manage-publication}
 
-**Gestisci pubblicazione** offre più opzioni rispetto alla Pubblicazione rapida e consente di includere pagine secondarie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili. Consente inoltre di pubblicare la pagina in un secondo momento.
+**Gestisci pubblicazione** offre più opzioni rispetto alla Pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti, avviare tutti i flussi di lavoro applicabili e pubblicare la pagina in un secondo momento.
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
-1. Seleziona le pagine desiderate nella console Sites e fai clic sul pulsante **Gestisci pubblicazione**.
+1. Seleziona le pagine desiderate nella console Sites e fai clic su **Gestisci pubblicazione** pulsante.
 
    ![pp-02-1](assets/pp-02-1.png)
 
@@ -215,7 +215,7 @@ Durante la modifica di una pagina, se desideri annullarne la pubblicazione selez
 
 Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazione](/help/sites-authoring/publishing-pages.md#manage-publication), ma anche per annullarla.
 
-1. Seleziona le pagine desiderate nella console Sites e fai clic sul pulsante **Gestisci pubblicazione**.
+1. Seleziona le pagine desiderate nella console Sites e fai clic su **Gestisci pubblicazione** pulsante.
 1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Nel primo passaggio, **Opzioni**, seleziona **Annulla pubblicazione** anziché l’opzione predefinita **Pubblica**.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
@@ -240,7 +240,7 @@ Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, 
 
 1. In **Includi elementi figlio** deseleziona le opzioni seguenti:
 
-   * Solo gli elementi secondari di primo livello
+   * Solo gli elementi figli di primo livello
    * Solo pagine già pubblicate
 
    Queste opzioni sono selezionate per impostazione predefinita, pertanto è necessario ricordarsi di deselezionarle. Clic **Aggiungi** per confermare e aggiungere il contenuto alla pubblicazione o all’annullamento della pubblicazione.

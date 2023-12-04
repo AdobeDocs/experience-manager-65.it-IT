@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 82%
+source-wordcount: '1521'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +44,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
    * Il numero di flussi di lavoro a cui è soggetta la pagina. Operazioni disponibili:
 
       * utilizzare la freccia sinistra/destra per navigare tra le informazioni di stato dei vari flussi di lavoro.
-      * fare clic/toccare il numero totale per aprire un elenco a discesa di tutti i flussi di lavoro applicabili e quindi selezionare il flusso di lavoro che si desidera visualizzare nella barra di stato.
+      * fai clic sul numero effettivo per aprire un elenco a discesa di tutti i flussi di lavoro applicabili, quindi seleziona il flusso di lavoro che desideri visualizzare nella barra di stato.
 
   ![wf-59](assets/wf-59.png)
 
@@ -55,7 +55,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
   >
   >Le azioni vengono visualizzate quando l&#39;utente è direttamente coinvolto nella fase corrente del flusso di lavoro.
 
-* Quando la **Timeline** è aperta per la risorsa, viene mostrato il passaggio del flusso di lavoro. Quando si fa clic o si tocca il banner di avviso, vengono mostrate anche le azioni disponibili:
+* Quando la **Timeline** è aperta per la risorsa, viene mostrato il passaggio del flusso di lavoro. Quando fai clic sul banner dell’avviso, vengono visualizzate anche le azioni disponibili:
 
   ![schermata_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -80,7 +80,7 @@ Per questa azione è possibile indicare:
 Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (fai clic sulla miniatura).
 1. Seleziona **Completa** dalla barra degli strumenti.
 1. Il **Completa elemento di lavoro** viene visualizzata. Seleziona la **Passaggio successivo** dal selettore a discesa e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
@@ -102,7 +102,7 @@ Puoi anche utilizzare la timeline per completare un passaggio e avanzare:
 
    ![schermata_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
-1. Tocca o fai clic sul banner di avviso per visualizzare le azioni disponibili. Seleziona **Avanti**:
+1. Fai clic sul banner dell’avviso per visualizzare le azioni disponibili. Seleziona **Avanti**:
 
    ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
@@ -139,7 +139,7 @@ Per questa azione è possibile indicare:
 Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (fai clic sulla miniatura).
 1. Seleziona **Delega** dalla barra degli strumenti.
 1. Viene visualizzata la finestra di dialogo. Specifica la **Utente** dal selettore a discesa (può anche trattarsi di un gruppo) e aggiungi un **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
@@ -158,7 +158,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 Puoi anche utilizzare la timeline per delegare e/o assegnare un passaggio:
 
 1. Seleziona la pagina richiesta e apri la **Timeline** (oppure, apri la **Timeline** e seleziona la pagina).
-1. Tocca o fai clic sul banner di avviso per visualizzare le azioni disponibili. Seleziona **Cambia assegnatario**:
+1. Fai clic sul banner dell’avviso per visualizzare le azioni disponibili. Seleziona **Cambia assegnatario**:
 
    ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
@@ -189,7 +189,7 @@ Per questa azione è possibile indicare:
 Per tornare indietro, attenersi alla procedura descritta di seguito.
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (fai clic sulla miniatura).
 1. Seleziona **Passo indietro** per aprire la finestra di dialogo.
 
 1. Specifica la **Passaggio precedente** e aggiungi **Commento** se necessario.
@@ -209,7 +209,7 @@ Per tornare indietro, attenersi alla procedura descritta di seguito.
 Puoi anche utilizzare la timeline per tornare indietro a un passaggio precedente:
 
 1. Seleziona la pagina richiesta e apri la **Timeline** (oppure, apri la **Timeline** e seleziona la pagina).
-1. Tocca o fai clic sul banner di avviso per visualizzare le azioni disponibili. Seleziona **Ripristina versione precedente**:
+1. Fai clic sul banner dell’avviso per visualizzare le azioni disponibili. Seleziona **Ripristina versione precedente**:
 
    ![schermata_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
 
@@ -251,7 +251,7 @@ I dettagli del flusso di lavoro sono visualizzati in schede e le azioni appropri
 Per aprire un elemento del flusso di lavoro e visualizzare i dettagli:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (fai clic sulla miniatura).
 1. Seleziona **Apri** per aprire le schede informative.
 
 1. Se necessario, seleziona l’azione appropriata, inserisci tutte le informazioni richieste e conferma con **OK** (o **Annulla**).
@@ -274,7 +274,7 @@ Puoi visualizzare i dettagli del payload associato all’istanza del flusso di l
 Per visualizzare il payload e le risorse dell’istanza di flusso di lavoro:
 
 1. Apri la **[Casella in entrata AEM](/help/sites-authoring/inbox.md)**.
-1. Seleziona l’elemento del flusso di lavoro sul cui desideri intervenire (tocca o fai clic sulla miniatura).
+1. Seleziona l’elemento del flusso di lavoro sul quale desideri intervenire (fai clic sulla miniatura).
 1. Seleziona **Visualizza payload** dalla barra degli strumenti per aprire la finestra di dialogo.
 
    Poiché un pacchetto del flusso di lavoro è semplicemente una raccolta di puntatori ai percorsi all’interno dell’archivio, è possibile aggiungere, rimuovere o modificare le voci qui per regolare ciò a cui fa riferimento il pacchetto del flusso di lavoro. Utilizza il componente **Definizione risorsa** per aggiungere nuove voci.

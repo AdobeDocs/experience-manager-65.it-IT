@@ -5,10 +5,10 @@ contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 1%
+source-wordcount: '487'
+ht-degree: 2%
 
 ---
 
@@ -57,4 +57,4 @@ Per avviare il selettore risorse in un determinato contesto, puoi trasmettere i 
 
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
-1. Tocca o fai clic **[!UICONTROL Seleziona]** dalla barra degli strumenti.
+1. Clic **[!UICONTROL Seleziona]** dalla barra degli strumenti.

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1954'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Per aggiornare una configurazione con la console web:
 
 1. Accedere a **Configurazione** della console Web:
 
-   * Apertura della console web dal collegamento **Strumento -> Operazioni** menu. Dopo l’accesso alla console, puoi utilizzare il menu a discesa di:
+   * Apertura della console web dal collegamento **Strumento > Operazioni** menu. Dopo l’accesso alla console, puoi utilizzare il menu a discesa di:
 
      **OSGi >**
 
@@ -176,7 +176,7 @@ Poiché lo stesso parametro di configurazione si trova in più posizioni, il sis
 
 >[!NOTE]
 >
->Leggi anche [come definire una configurazione basata su archivio solo per una specifica istanza](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=it).
+>Leggi anche [come definire una configurazione basata su archivio solo per una specifica istanza](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=en).
 
 ### Aggiunta di una nuova configurazione all’archivio {#adding-a-new-configuration-to-the-repository}
 
@@ -197,7 +197,7 @@ Per aggiungere una configurazione all’archivio, è necessario conoscere quanto
    * `config` - per tutte le modalità di esecuzione
    * `config.author` - per l’ambiente di authoring
    * `config.publish` - per l’ambiente di pubblicazione
-   * `config.<run-mode>` - secondo i casi
+   * `config.<run-mode>` - se del caso
 
 1. È un **Configurazione** o **Configurazione factory** necessario?
 1. I singoli parametri da configurare, comprese le definizioni di parametri esistenti che devono essere ricreati.

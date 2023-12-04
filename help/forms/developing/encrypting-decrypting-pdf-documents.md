@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '8184'
+source-wordcount: '8133'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Per eseguire un&#39;operazione del servizio di crittografia a livello di program
 
 **Ottieni un documento PDF da crittografare**
 
-Per crittografare il documento con una password, è necessario ottenere un documento PDF non crittografato. Se si tenta di proteggere un documento PDF già crittografato, viene generata un&#39;eccezione.
+Ottieni un documento PDF non crittografato per crittografare il documento con una password. Se si tenta di proteggere un documento PDF già crittografato, viene generata un&#39;eccezione.
 
 **Impostare le opzioni di runtime della crittografia**
 
@@ -289,7 +289,7 @@ Per eseguire un&#39;operazione del servizio di crittografia a livello di program
 
 **Ottieni un documento PDF da crittografare**
 
-È necessario ottenere un documento PDF non crittografato da crittografare. Se si tenta di proteggere un documento PDF già crittografato, viene generata un&#39;eccezione.
+Ottieni un documento PDF non crittografato da crittografare. Se si tenta di proteggere un documento PDF già crittografato, viene generata un&#39;eccezione.
 
 **Fai riferimento al certificato**
 
@@ -499,7 +499,7 @@ Per eseguire un&#39;operazione del servizio di crittografia a livello di program
 
 **Ottieni il documento PDF crittografato**
 
-Per rimuovere la crittografia basata su certificati, è necessario ottenere un documento PDF crittografato. Se si tenta di rimuovere la crittografia da un documento PDF non crittografato, viene generata un&#39;eccezione. Analogamente, se si tenta di rimuovere la crittografia basata su certificato da un documento crittografato con password, viene generata un&#39;eccezione.
+Ottieni un documento PDF crittografato per rimuovere la crittografia basata su certificati. Se si tenta di rimuovere la crittografia da un documento PDF non crittografato, viene generata un&#39;eccezione. Analogamente, se si tenta di rimuovere la crittografia basata su certificato da un documento crittografato con password, viene generata un&#39;eccezione.
 
 **Rimuovi crittografia**
 
@@ -660,7 +660,7 @@ Per eseguire un&#39;operazione del servizio di crittografia a livello di program
 
 **Ottieni il documento PDF crittografato**
 
-Per rimuovere la crittografia basata su password, è necessario ottenere un documento PDF crittografato. Se si tenta di rimuovere la crittografia da un documento PDF non crittografato, viene generata un&#39;eccezione.
+Ottieni un documento PDF crittografato per rimuovere la crittografia basata su password. Se si tenta di rimuovere la crittografia da un documento PDF non crittografato, viene generata un&#39;eccezione.
 
 **Rimuovi la password**
 
@@ -807,7 +807,7 @@ Per eseguire un&#39;operazione del servizio di crittografia a livello di program
 
 **Ottieni il documento PDF crittografato**
 
-Per sbloccarlo, è necessario ottenere un documento PDF crittografato. Se si tenta di sbloccare un documento PDF non crittografato, viene generata un&#39;eccezione.
+Ottieni un documento PDF crittografato per sbloccarlo. Se si tenta di sbloccare un documento PDF non crittografato, viene generata un&#39;eccezione.
 
 **Sblocca il documento**
 
@@ -984,7 +984,7 @@ Per eseguire un&#39;operazione del servizio di crittografia a livello di program
 
 **Ottieni il documento PDF crittografato**
 
-È necessario ottenere un documento PDF per determinare il tipo di crittografia che la protegge.
+Ottieni un documento PDF per determinare il tipo di crittografia che lo protegge.
 
 **Determinare il tipo di crittografia**
 

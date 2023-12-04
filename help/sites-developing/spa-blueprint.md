@@ -6,10 +6,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2075'
-ht-degree: 1%
+source-wordcount: '2042'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Per consentire all’autore di utilizzare l’Editor SPA dell’AEM per modifica
 
 >[!NOTE]
 >
->L’editor SPA è la soluzione consigliata per i progetti che richiedono un rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+>L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
 
 ## Introduzione {#introduction}
 
@@ -152,7 +152,7 @@ Il contenitore ottiene dinamicamente i componenti figlio dall’archivio della [
 
 Il `Page` il componente estende `Container` componente. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti figlio, incluse le pagine figlie. A questo scopo, il contenitore scorre la `:itemsOrder`, `:items`, e `:children` proprietà del relativo modello. Il `Page` componente ottiene dinamicamente i componenti figlio dall&#39;archivio del [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) libreria. Il `Page` è responsabile della creazione di un&#39;istanza dei componenti figlio.
 
-### Griglia dinamica {#responsive-grid}
+### Griglia reattiva {#responsive-grid}
 
 Il componente Griglia reattiva è un contenitore. Contiene una variante specifica del provider di modelli che rappresenta le relative colonne. La griglia reattiva e le sue colonne sono responsabili della decorazione dell’elemento HTML esterno del componente del progetto con i nomi di classi specifici contenuti nel modello.
 

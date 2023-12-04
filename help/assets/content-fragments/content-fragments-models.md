@@ -4,10 +4,10 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 67%
+source-wordcount: '2310'
+ht-degree: 66%
 
 ---
 
@@ -17,9 +17,9 @@ I modelli per frammenti di contenuto nell’AEM definiscono la struttura del con
 
 Per utilizzare i modelli per frammenti di contenuto, puoi:
 
-1. [Abilita la funzionalità modello Frammento di contenuto per un’istanza](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. [Crea](#creating-a-content-fragment-model) e [configura](#defining-your-content-fragment-model) i modelli per frammenti di contenuto.
-1. [Abilitare i modelli di frammenti di contenuto](#enabling-disabling-a-content-fragment-model) da utilizzare per la creazione di frammenti di contenuto.
+1. [Abilita la funzionalità Modello per frammenti di contenuto per la tua istanza](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. [Crea](#creating-a-content-fragment-model), e [configura](#defining-your-content-fragment-model), i tuoi modelli per frammenti di contenuto.
+1. [Abilitare i modelli per frammenti di contenuto](#enabling-disabling-a-content-fragment-model) da utilizzare per la creazione di frammenti di contenuto.
 1. [Consenti modelli di frammento di contenuto nelle cartelle Risorse richieste](#allowing-content-fragment-models-assets-folder) configurando i **Criteri**.
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
@@ -86,7 +86,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
 1. **Per rimuovere un campo**
 
-   Seleziona il campo richiesto, quindi tocca o fai clic sull’icona del cestino. Viene richiesto di confermare l’azione.
+   Seleziona il campo richiesto, quindi fai clic sull’icona del cestino. Viene richiesto di confermare l’azione.
 
    ![rimuovere](assets/cfm-models-06.png)
 

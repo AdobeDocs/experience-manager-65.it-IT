@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Tutti i file non dinamici che non cambiano nel tempo possono e devono essere mem
 
 >[!CAUTION]
 >
->È necessario prestare attenzione quando si definisce il periodo di tempo durante il quale un oggetto viene considerato aggiornato. Dato che *nessun controllo fino alla scadenza del periodo di tempo specificato*, il client può finire per presentare contenuti obsoleti dalla cache.
+>Prestare attenzione quando si definisce il periodo di tempo durante il quale un oggetto viene considerato aggiornato. Dato che *nessun controllo fino alla scadenza del periodo di tempo specificato*, il client può finire per presentare contenuti obsoleti dalla cache.
 
 1. **Per un’istanza Autore:**
 

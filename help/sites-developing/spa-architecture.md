@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2051'
-ht-degree: 6%
+source-wordcount: '2037'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ Questo articolo presenta questioni importanti da considerare quando si impegna u
 
 >[!NOTE]
 >
->L’editor SPA è la soluzione consigliata per i progetti che richiedono un rendering lato client basato sul framework SPA (ad esempio, React o Angular).
+>L’editor SPA è la soluzione consigliata per i progetti che richiedono il rendering lato client basato sul framework SPA (ad esempio, React o Angular).
 
 ## Principi di sviluppo dell&#39;SPA per l&#39;AEM {#spa-development-principles-for-aem}
 
@@ -204,7 +204,7 @@ L’architettura generale dell’AEM, compresi gli ambienti di sviluppo, authori
    1. Quando viene eseguita l’applicazione SPA, viene richiesto il JSON, che consente all’app di creare il DOM della pagina, incluso `cq-data` attributi.
    1. Questo `cq-data` attributi consente all’editor di caricare informazioni di pagina aggiuntive in modo da sapere quali configurazioni di modifica sono disponibili per i componenti.
 
-* **AEM Publish**
+* **Pubblicazione AEM**
 
   Qui vengono pubblicati per il consumo pubblico i contenuti creati e le librerie compilate, inclusi gli artefatti delle applicazioni SPA, clientlibs e componenti.
 

@@ -10,10 +10,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5939'
-ht-degree: 1%
+source-wordcount: '5793'
+ht-degree: 0%
 
 ---
 
@@ -178,7 +178,7 @@ Il processo elenca tutti i nodi che sono stati elaborati. Durante il processo, u
 Inoltre, la console fornisce informazioni utili sulle versioni:
 
 * `V 1.0`: numero di versione.
-* `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (base) e non può essere eliminata.
+* `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (di base) e non può essere eliminata.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: la data della versione.
 
@@ -207,7 +207,7 @@ La rotazione del file di registro si riferisce al processo che limita la crescit
 
 * Il `error.log` il file viene rinominato in base al modello {original_filename} `.yyyy-MM-dd`. Ad esempio, l’11 luglio 2010 il file di registro corrente viene rinominato `error.log-2010-07-10`, quindi un nuovo `error.og` viene creato.
 
-* I file di registro precedenti non vengono eliminati, pertanto è responsabilità dell&#39;utente pulire periodicamente i file di registro precedenti per limitare l&#39;utilizzo del disco.
+* Precedente file di registro non vengono eliminati, pertanto è responsabilità dell&#39;utente pulire periodicamente i vecchi file di registro per limitare l&#39;utilizzo del disco.
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
      Ad esempio `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
-   * Tipo: `sling:OsgiConfig`
+   * Digitare: `sling:OsgiConfig`
 
    >[!NOTE]
    >
@@ -330,7 +330,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
       * Nome: `org.apache.sling.commons.log.pattern`
 
-        Tipo: `String`
+        Digitare: `String`
 
         Valore: specifica il pattern del messaggio di registro come richiesto; ad esempio,
 
@@ -433,7 +433,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >per indicare quando viene creato un nuovo file (e il file esistente viene rinominato in base al pattern del nome).
    >
    >* È possibile specificare un limite di dimensione con un numero. Se non viene fornito alcun indicatore di dimensione, viene considerato come il numero di byte oppure è possibile aggiungere uno degli indicatori di dimensione: `KB`, `MB`, o `GB` (il caso viene ignorato).
-   >* È possibile specificare una pianificazione ora/data come `java.util.SimpleDateFormat` pattern. Definisce il periodo di tempo dopo il quale il file viene ruotato. Inoltre, il suffisso aggiunto al file ruotato (per l&#39;identificazione).
+   >* È possibile specificare una pianificazione ora/data come `java.util.SimpleDateFormat` pattern. Definisce il periodo di tempo dopo il quale il file viene ruotato. Inoltre, il suffisso aggiunto al file ruotato (per l’identificazione).
    >
    >Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera dei log).
    >
@@ -483,7 +483,7 @@ Queste voci contengono le stesse informazioni visualizzate durante la modifica d
 
 #### Record di controllo OSGi dalla console Web {#osgi-audit-records-from-the-web-console}
 
-Gli eventi OSGi generano anche record di audit che possono essere visualizzati dalla sezione **Stato configurazione** scheda -> **File di registro** nella console Web AEM:
+Gli eventi OSGi generano anche record di audit che possono essere visualizzati dalla sezione **Stato configurazione** scheda > **File di registro** nella console Web AEM:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -1098,9 +1098,9 @@ Di seguito è riportato un elenco di suggerimenti su cosa controllare se si veri
 >
 Per ulteriori informazioni, consulta anche i seguenti articoli:
 >
-* [Thread dump](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it)
-* [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it)
-* [Analizzare utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=it)
+* [Thread dump](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
+* [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+* [Analizzare utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
 * [Analizzare processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1125,7 +1125,7 @@ In questi casi verificare:
 * Impostazioni JVM utilizzate per [avviare AEM](/help/sites-deploying/deploy.md#getting-started)
 * Knowledge Base:
 
-   * [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it)
+   * [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
 
 ### I/O disco {#disk-i-o}
 
@@ -1135,7 +1135,7 @@ Se il sistema sta esaurendo lo spazio su disco o si notano problemi di accesso a
 
    * [Gestore script Apache Sling JSP](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
    * [Gestore JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configurazione di registrazione Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+   * [Configurazione registrazione Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [Gestione libreria CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [CQ Web Content Management Filtra Debug](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Logger](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
@@ -1143,7 +1143,7 @@ Se il sistema sta esaurendo lo spazio su disco o si notano problemi di accesso a
 * Se e come hai configurato [Versione Eliminazione](/help/sites-deploying/version-purging.md)
 * Knowledge Base:
 
-   * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=it)
+   * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
    * [Il diario consuma troppo spazio su disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradazione delle prestazioni regolare {#regular-performance-degradation}

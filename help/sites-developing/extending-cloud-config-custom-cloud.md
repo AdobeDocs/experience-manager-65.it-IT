@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 15%
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Servic
    * **Nome**: modelli
    * **Tipo**: `sling:Folder`
 
-1. Fare clic con il pulsante destro del mouse su `/apps/acs/analytics/components`. Seleziona **Crea...** seguito da **Crea componente...** La finestra di dialogo visualizzata consente di specificare:
+1. Clic con il pulsante destro `/apps/acs/analytics/components`. Seleziona **Crea...** seguito da **Crea componente...** La finestra di dialogo visualizzata consente di specificare:
 
    * **Etichetta**: `googleanalyticspage`
    * **Titolo**: `Google Analytics Page`
@@ -203,7 +203,7 @@ Il set di Cloud Services predefinito può essere esteso con tipi di Cloud Servic
 
 1. Passare alla pagina Servizio appena creata ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) e fare clic su **+** per creare una configurazione:
 
-   * **Configurazione elemento padre**: `/etc/cloudservices/googleanalytics`
+   * **Configurazione principale**: `/etc/cloudservices/googleanalytics`
    * **Titolo:**  `My First GA Config`
 
    Scegli **Configurazione Google Analytics** e fai clic su **Crea**.

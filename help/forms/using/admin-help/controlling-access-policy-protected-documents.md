@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2167'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Per ogni documento elencato nella pagina Documenti, è possibile visualizzare il
 
 >[!NOTE]
 >
->È necessario utilizzare il collegamento Nome criterio nella pagina Dettagli documento per accedere ai criteri generati automaticamente in Microsoft Outlook per i destinatari di un documento allegato a un messaggio di posta elettronica. Questi criteri non vengono visualizzati nella pagina dei criteri.
+>Utilizzare il collegamento Nome criterio nella pagina Dettagli documento per accedere ai criteri generati automaticamente in Microsoft Outlook per i destinatari di un documento allegato a un messaggio di posta elettronica. Questi criteri non vengono visualizzati nella pagina dei criteri.
 
 **Nome documento:** Nome del documento selezionato.
 
@@ -52,7 +52,7 @@ Per ogni documento elencato nella pagina Documenti, è possibile visualizzare il
 
 **Editore:** Nome dell’utente che ha allegato il criterio al documento.
 
-**Nome criterio:** Nome del criterio utilizzato per proteggere il documento. Puoi fare clic sul nome per aprire il criterio. È necessario utilizzare questo collegamento per accedere ai criteri generati da Acrobat per i destinatari di un documento allegato a un messaggio di posta elettronica in Outlook. Tali criteri non vengono visualizzati nella pagina Criteri.
+**Nome criterio:** Nome del criterio utilizzato per proteggere il documento. Puoi fare clic sul nome per aprire il criterio. Utilizzare questo collegamento per accedere ai criteri generati da Acrobat per i destinatari di un documento allegato a un messaggio di posta elettronica in Outlook. Tali criteri non vengono visualizzati nella pagina Criteri.
 
 **Tipo di criterio:** Tipo di criterio applicato al documento.
 

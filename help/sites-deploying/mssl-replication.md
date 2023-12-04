@@ -11,10 +11,10 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 3%
+source-wordcount: '1319'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ La configurazione di MSSL per la replica prevede l’esecuzione dei seguenti pas
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-È necessario determinare quale account utente esegue la replica. Durante l’installazione del certificato dell’autore attendibile nell’istanza di pubblicazione, il certificato è associato a questo account utente.
+Determinare quale account utente esegue la replica. Durante l’installazione del certificato dell’autore attendibile nell’istanza di pubblicazione, il certificato è associato a questo account utente.
 
 ## Ottenimento o creazione di credenziali per MSSL {#obtaining-or-creating-credentials-for-mssl}
 
@@ -148,7 +148,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 ### Installare la chiave privata di authoring {#install-the-author-private-key}
 
 1. Apri la pagina Gestione utente per l’istanza di authoring. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Per aprire le proprietà dell’account utente, tocca o fai clic sul nome utente.
+1. Per aprire le proprietà dell&#39;account utente, fare clic sul nome utente.
 1. Se nell&#39;area Impostazioni account viene visualizzato il collegamento Crea registro chiavi, fare clic sul collegamento. Configurare una password e fare clic su OK.
 1. Nell&#39;area Impostazioni account fare clic su Gestisci registro chiavi.
 
@@ -167,7 +167,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 ### Installare il certificato di pubblicazione {#install-the-publish-certificate}
 
 1. Apri la pagina Gestione utente per l’istanza di authoring. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Per aprire le proprietà dell’account utente, tocca o fai clic sul nome utente.
+1. Per aprire le proprietà dell&#39;account utente, fare clic sul nome utente.
 1. Se nell&#39;area Impostazioni account viene visualizzato il collegamento Crea TrustStore, fare clic sul collegamento, creare una password per il TrustStore e fare clic su OK.
 1. Nell&#39;area Impostazioni account fare clic su Gestisci TrustStore.
 1. Fare clic su Aggiungi certificato da file CER.
@@ -191,7 +191,7 @@ Per eseguire la procedura seguente, devi aver effettuato l’accesso come ammini
 ### Installare la chiave privata di pubblicazione {#install-the-publish-private-key}
 
 1. Apri la pagina Gestione utente per l’istanza Publish. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Per aprire le proprietà dell’account utente, tocca o fai clic sul nome utente.
+1. Per aprire le proprietà dell&#39;account utente, fare clic sul nome utente.
 1. Se nell&#39;area Impostazioni account viene visualizzato il collegamento Crea registro chiavi, fare clic sul collegamento. Configurare una password e fare clic su OK.
 1. Nell&#39;area Impostazioni account fare clic su Gestisci registro chiavi.
 1. Fai Clic Su Aggiungi Chiave Privata Da File Archivio Chiavi.

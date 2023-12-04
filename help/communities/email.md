@@ -8,10 +8,10 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 3%
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Il servizio di posta predefinito è richiesto sia per le notifiche che per gli a
 
 Si basa sulla documentazione di [Configurazione delle notifiche e-mail](../../help/sites-administering/notification.md), ma con una differenza nel campo `"From" address` è *non* obbligatorio e deve essere lasciato vuoto.
 
-Ad esempio (compilato con valori solo a scopo illustrativo):
+Ad esempio, (compilato con valori solo a scopo illustrativo):
 
 ![email-config](assets/email-config.png)
 
@@ -191,7 +191,7 @@ esplorando la `postEmails`cartella e seleziona **OK**.
 
   *(Facoltativo)* Il server di posta configurato per il servizio di posta predefinito può avere requisiti relativi al valore dell&#39;intervallo di aggiornamento. Ad esempio, Gmail potrebbe richiedere un intervallo di `300`.
 
-* **[!UICONTROL Accesso]**
+* **[!UICONTROL Login]**
 
   *(Facoltativo)*
 

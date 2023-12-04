@@ -2,16 +2,16 @@
 title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 89%
+source-wordcount: '783'
+ht-degree: 86%
 
 ---
 
 # Utilizzo dell’IDE GraphiQL {#graphiql-ide}
 
-Un’implementazione dell’IDE [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) standard è disponibile con l’API GraphQL di Adobe Experience Manager (AEM).
+Un’implementazione dello standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) L’IDE è disponibile con l’API GraphQL di Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Puoi eseguire immediatamente una nuova query oppure caricare ed eseguire una que
 
 In entrambi i casi, la query visualizzata nel pannello dell’editor è quella che verrà eseguita quando:
 
-* tocchi o fai clic sull’icona **Esegui query**;
+* fai clic sul pulsante **Esegui query** icona
 * utilizzi la scelta rapida di tastiera `Control-Enter`
 
 ## Variabili di query {#query-variables}

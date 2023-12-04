@@ -2,10 +2,10 @@
 title: Authoring di esperienze Commerce
 description: Il componente aggiuntivo CIF estende l’authoring Adobe Experience Manager con funzionalità specifiche per l’e-commerce.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -85,7 +85,7 @@ Se Universal Editor riconosce i prodotti 1:n in una pagina, il pannello laterale
 
 La modalità Timewarp nell’editor consente agli autori di visualizzare in anteprima e sfogliare un’esperienza AEM con i dati del catalogo dei prodotti in staging in base alla data Timewarp.
 
-![Timewarp  ](/help/commerce/cif/assets/authoring/timewarp.png)
+![Timewarp](/help/commerce/cif/assets/authoring/timewarp.png)
 
 I componenti visualizzano un indicatore visivo se la data utilizzata è pubblicata nell’area intermedia.
 

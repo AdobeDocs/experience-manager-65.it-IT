@@ -3,10 +3,10 @@ title: Creazione guidata copia lingua
 description: Scopri come utilizzare la Creazione guidata copia in lingua in Adobe Experience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 33%
+source-wordcount: '219'
+ht-degree: 27%
 
 ---
 
@@ -20,7 +20,7 @@ La Creazione guidata copia in lingua è un’esperienza guidata per la creazione
 
 Per accedere a questa procedura guidata:
 
-1. In Sites, seleziona una pagina e tocca o fai clic su Crea.
+1. In Sites, seleziona una pagina e fai clic su Crea.
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
@@ -48,6 +48,6 @@ Per accedere a questa procedura guidata:
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. Il pulsante **Crea** termina la creazione guidata.
+1. Il **Crea** termina la procedura guidata.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)

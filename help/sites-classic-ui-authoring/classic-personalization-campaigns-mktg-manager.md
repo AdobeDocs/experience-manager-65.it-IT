@@ -1,19 +1,15 @@
 ---
 title: Utilizzo del Marketing Campaign Manager
-seo-title: Working with the Marketing Campaign Manager
 description: Marketing Campaign Manager (MCM) è una console che consente di gestire campagne multicanale. Con questo software di automazione marketing puoi gestire tutti i tuoi marchi, campagne ed esperienze insieme ai relativi segmenti, elenchi, lead e rapporti.
-seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
-uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -114,13 +110,10 @@ Per accedere alle campagne esistenti, in MCM fai clic su **Campagne**.
 ![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
 * **Nel riquadro a sinistra**: è disponibile un elenco di tutti i brand e le campagne.
-Un singolo clic su un marchio consente di:
-
-   * espandi l’elenco per mostrare tutte le campagne correlate nel riquadro a sinistra; questo elenco mostra anche il numero di esperienze esistenti per ogni campagna.
-   * apri panoramica del brand nel riquadro a destra.
+Facendo clic su un marchio, l’elenco si espande per mostrare tutte le campagne correlate nel riquadro a sinistra; l’elenco mostra anche il numero di esperienze esistenti per ogni campagna. Apre inoltre la panoramica del brand nel riquadro a destra.
 
 * **Nel riquadro a destra**: vengono visualizzate le icone per ogni marchio (non verranno visualizzate le campagne storiche).
-Puoi fare doppio clic su di essi per aprire la panoramica del brand.
+Puoi fare doppio clic su questi per aprire la panoramica del brand.
 
 #### Panoramica del marchio {#brand-overview}
 

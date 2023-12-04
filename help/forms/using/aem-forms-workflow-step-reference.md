@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7687'
+source-wordcount: '7640'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i fi
 
 **Salva documento di record generato tramite le opzioni di seguito:** Specificare il percorso in cui conservare un file del documento di record. Puoi scegliere di sovrascrivere la cartella del payload, inserire il documento di record in una posizione all’interno della directory del payload o archiviare il documento di record in una variabile di tipo dati Documento.
 
-**Lingua**: specifica la lingua del documento record. Seleziona **Letterale** per selezionare le impostazioni locali da un elenco a discesa o selezionare **Variabile** per recuperare le impostazioni locali dal valore memorizzato in una variabile di tipo stringa. È necessario definire il codice delle impostazioni locali durante la memorizzazione del valore relativo in una variabile. Ad esempio, specifica **en_US** per inglese e **fr_FR** per il francese.
+**Lingua**: specifica la lingua del documento record. Seleziona **Letterale** per selezionare le impostazioni locali da un elenco a discesa o selezionare **Variabile** per recuperare le impostazioni locali dal valore memorizzato in una variabile di tipo stringa. Definisci il codice locale durante la memorizzazione del valore della lingua in una variabile. Ad esempio, specifica **en_US** per inglese e **fr_FR** per il francese.
 
 ## Passaggio del servizio Richiama modello dati modulo {#invoke-form-data-model-service-step}
 
@@ -203,7 +203,7 @@ Per spiegare gli input per i campi del passaggio, vengono utilizzati, ad esempio
    <td>Valore<br /> </td> 
   </tr> 
   <tr> 
-   <td>Nome<br /> </td> 
+   <td>FirstName<br /> </td> 
    <td>Sarah<br /> </td> 
   </tr> 
   <tr> 
@@ -279,7 +279,7 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 
 * **Nome contratto:** Specificare il titolo del contratto. Il nome del contratto diventa parte dell’oggetto e del corpo del testo dell’e-mail inviata ai destinatari. È possibile memorizzare il nome in una variabile di tipo di dati String oppure selezionare **Letterale** per aggiungere manualmente il nome.
 
-* **Lingua:** Specifica la lingua per le opzioni di e-mail e verifica. È possibile archiviare le impostazioni locali in una variabile di tipo String oppure selezionare **Letterale** per scegliere le impostazioni locali dall&#39;elenco delle opzioni disponibili. È necessario definire il codice delle impostazioni locali durante la memorizzazione del valore relativo in una variabile. Ad esempio, specifica **en_US** per inglese e **fr_FR** per il francese.
+* **Lingua:** Specifica la lingua per le opzioni di e-mail e verifica. È possibile archiviare le impostazioni locali in una variabile di tipo String oppure selezionare **Letterale** per scegliere le impostazioni locali dall&#39;elenco delle opzioni disponibili. Definisci il codice locale durante la memorizzazione del valore della lingua in una variabile. Ad esempio, specifica **en_US** per inglese e **fr_FR** per il francese.
 
 * **Configurazione cloud Adobe Sign**: scegli una configurazione cloud di Adobe Sign. Se non hai configurato Adobe Sign per AEM Forms, consulta [Integrare Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 

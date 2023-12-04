@@ -8,10 +8,10 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 2%
+source-wordcount: '984'
+ht-degree: 5%
 
 ---
 
@@ -56,12 +56,12 @@ Se il frammento di contenuto include una raccolta, le risorse all’interno dell
 
 Per tradurre frammenti di contenuto che includono file multimediali diversi, modifica innanzitutto il framework di traduzione predefinito per abilitare la traduzione delle risorse e delle raccolte in linea associate ai frammenti di contenuto.
 
-1. Tocca o fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti > Implementazione > Cloud Service]**.
-1. Individua **[!UICONTROL Integrazione traduzione]** in **[!UICONTROL Adobe Marketing Cloud]**, quindi tocca o fai clic su **[!UICONTROL Mostra configurazioni]**.
+1. Fai clic sul logo dell’AEM e passa a **[!UICONTROL Strumenti > Implementazione > Cloud Service]**.
+1. Individua **[!UICONTROL Integrazione traduzione]** in **[!UICONTROL Adobe Marketing Cloud]** e fai clic su **[!UICONTROL Mostra configurazioni]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. Dall’elenco delle configurazioni disponibili, tocca o fai clic su **[!UICONTROL Configurazione predefinita (configurazione dell’integrazione della traduzione)]** per aprire **[!UICONTROL Configurazione predefinita]** pagina.
+1. Nell’elenco delle configurazioni disponibili, fai clic su **[!UICONTROL Configurazione predefinita (configurazione dell’integrazione della traduzione)]** per aprire **[!UICONTROL Configurazione predefinita]** pagina.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -69,7 +69,7 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Accedi a **[!UICONTROL Risorse]** e scegliere **[!UICONTROL Risorse multimediali in linea e raccolte associate]** dal **[!UICONTROL Traduci risorse frammento di contenuto]** elenco. Tocca o fai clic su **[!UICONTROL OK]** per salvare le modifiche.
+1. Accedi a **[!UICONTROL Risorse]** e scegliere **[!UICONTROL Risorse multimediali in linea e raccolte associate]** dal **[!UICONTROL Traduci risorse frammento di contenuto]** elenco. Clic **[!UICONTROL OK]** per salvare le modifiche.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -77,7 +77,7 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Tocca o fai clic sul pulsante **[!UICONTROL Inserisci risorsa]** icona.
+1. Fai clic su **[!UICONTROL Inserisci risorsa]** icona.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -85,28 +85,28 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    ![inserisci risorsa nel frammento di contenuto](assets/column-view.png)
 
-1. Tocca o fai clic sul pulsante **[!UICONTROL Associa contenuto]** icona.
+1. Fai clic su **[!UICONTROL Associa contenuto]** icona.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Tocca o fai clic su **[!UICONTROL Associa contenuto]**.
+1. Clic **[!UICONTROL Associa contenuto]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. Seleziona una raccolta e includila nel frammento di contenuto. Tocca o fai clic su **[!UICONTROL Salva]**.
+1. Seleziona una raccolta e includila nel frammento di contenuto. Fai clic su **[!UICONTROL Salva]**.
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Seleziona il frammento di contenuto e tocca o fai clic sul pulsante **[!UICONTROL GlobalNav]** icona.
+1. Seleziona il frammento di contenuto e fai clic su **[!UICONTROL GlobalNav]** icona.
 1. Seleziona **[!UICONTROL Riferimenti]** dal menu per visualizzare **[!UICONTROL Riferimenti]** riquadro.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Tocca o fai clic su **[!UICONTROL Copie per lingua]** in **[!UICONTROL Copie]** per visualizzare le copie per lingua.
+1. Clic **[!UICONTROL Copie per lingua]** in **[!UICONTROL Copie]** per visualizzare le copie per lingua.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Tocca o fai clic su **[!UICONTROL Crea e traduci]** dalla parte inferiore del pannello per visualizzare **[!UICONTROL Crea e traduci]** .
+1. Clic **[!UICONTROL Crea e traduci]** dalla parte inferiore del pannello per visualizzare **[!UICONTROL Crea e traduci]** .
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -118,7 +118,7 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. Specifica il titolo del progetto in **[!UICONTROL Titolo progetto]** e quindi tocca o fai clic su **Crea**.
+1. Specifica il titolo del progetto in **[!UICONTROL Titolo progetto]** e quindi fare clic su **Crea**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
@@ -126,7 +126,7 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
-1. Tocca o fai clic sul riquadro del progetto per aprire la pagina dei dettagli del progetto.
+1. Fai clic sul riquadro del progetto per aprire la pagina dei dettagli del progetto.
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
@@ -139,7 +139,7 @@ Per tradurre frammenti di contenuto che includono file multimediali diversi, mod
 
    ![chlimage_1-463](assets/chlimage_1-463.png)
 
-1. Tocca o fai clic sul frammento di contenuto per verificare il percorso delle risorse associate tradotte.
+1. Fai clic sul frammento di contenuto per verificare il percorso delle risorse associate tradotte.
 
    ![chlimage_1-464](assets/chlimage_1-464.png)
 

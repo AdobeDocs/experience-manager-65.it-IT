@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10692'
+source-wordcount: '10702'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Per il servizio Distiller sono disponibili le impostazioni seguenti.
 
 È possibile creare nuove impostazioni tramite l’interfaccia utente di PDF Generator.
 
-**Impostazioni di protezione:** Impostazioni di protezione preconfigurate applicate ai documenti PDF generati. Il valore predefinito è No Security. È necessario creare le impostazioni di protezione utilizzando PDF Generator, quindi immettere le impostazioni qui.
+**Impostazioni di protezione:** Impostazioni di protezione preconfigurate applicate ai documenti PDF generati. Il valore predefinito è No Security. Creare le impostazioni di protezione utilizzando PDF Generator, quindi immettere le impostazioni qui.
 
 **Dimensione pool:** Dimensione iniziale del pool. Quando il servizio Distiller viene distribuito, questo numero viene utilizzato per determinare il numero di istanze di implementazione del servizio create e allocate al pool libero in attesa di richieste di chiamata. Il contenitore del servizio può quindi rispondere immediatamente alle richieste di chiamata senza dover prima inizializzare un&#39;istanza del servizio.
 
@@ -269,7 +269,7 @@ Per il servizio Generate PDF sono disponibili le impostazioni seguenti.
 
 **Logica dei tentativi per le conversioni native** Gestisce i nuovi tentativi di generazione di PDF se il primo tentativo di conversione non è riuscito:
 
-**Nessun tentativo**
+**Nessun nuovo tentativo**
 
 Non ritentare la conversione PDF se il primo tentativo di conversione non è riuscito
 
@@ -332,7 +332,7 @@ Il valore macKeySeed è il valore di inizializzazione del generatore di numeri c
 
 Modifica il valore macKeySeed quando devi aggiornare gli URL protetti. L’aggiornamento degli URL protetti dipende dai criteri di sicurezza in uso ed è simile al criterio di aggiornamento per la modifica della password della directory principale principale del server. macSeedValue è analogo alla password master per gli URL protetti, in quanto viene utilizzato per generare un nuovo numero casuale univoco da utilizzare nella generazione e nel recupero sicuri degli URL.
 
-È necessario riavviare il cluster perché macSeedValue è di sola lettura all&#39;avvio del sistema. Tutti i nodi devono riavviare per leggere il valore, perché lo utilizzano in modo indipendente per inizializzare i numeri casuali interni con il valore di inizializzazione.
+Riavviare il cluster perché macSeedValue è di sola lettura all&#39;avvio del sistema. Tutti i nodi devono riavviare per leggere il valore, perché lo utilizzano in modo indipendente per inizializzare i numeri casuali interni con il valore di inizializzazione.
 
 ## Impostazioni servizio JDBC {#jdbc-service-settings}
 

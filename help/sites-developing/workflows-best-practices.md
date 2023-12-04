@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 1%
 
 ---
@@ -297,7 +297,7 @@ Si consiglia di utilizzare l’avanzamento del gestore, in quanto offre prestazi
 
 Puoi definire [fasi del flusso di lavoro](/help/sites-developing/workflows.md#workflow-stages), quindi assegna attività/passaggi a una fase specifica del flusso di lavoro.
 
-Queste informazioni vengono utilizzate per visualizzare l’avanzamento di un flusso di lavoro quando fai clic sul pulsante [**Informazioni flusso di lavoro** scheda di un elemento di lavoro da **Casella in entrata**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). I modelli di flusso di lavoro esistenti possono essere modificati per aggiungere fasi.
+Queste informazioni vengono utilizzate per visualizzare l&#39;avanzamento di un flusso di lavoro quando si fa clic su [**Informazioni flusso di lavoro** scheda di un elemento di lavoro da **Casella in entrata**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). I modelli di flusso di lavoro esistenti possono essere modificati per aggiungere fasi.
 
 ### Passaggio di attivazione processo pagina {#activate-page-process-step}
 

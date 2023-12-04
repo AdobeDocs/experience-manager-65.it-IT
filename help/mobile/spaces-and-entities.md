@@ -1,18 +1,14 @@
 ---
 title: Spazi ed entità
-seo-title: Developing AEM Mobile Content Services
 description: Questa pagina funge da pagina di destinazione per lo sviluppo di AEM Mobile Content Services.
-seo-description: This page serves a landing page for developing AEM Mobile Content Services.
-uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +52,7 @@ Dopo aver configurato gli spazi nel dashboard, effettua le seguenti operazioni p
 
 ## Gestione di uno spazio {#managing-a-space}
 
-Dopo aver creato uno spazio, fare clic su a sinistra per gestire lo spazio nell&#39;elenco.
+Dopo aver creato uno spazio, fare clic a sinistra per gestirlo nell&#39;elenco.
 
 È possibile visualizzare le proprietà dello spazio, eliminarlo o pubblicarlo e il relativo contenuto in un&#39;istanza di pubblicazione AEM.
 
@@ -111,7 +107,7 @@ Il **Copia lingua** consente agli autori di copiare la copia master in lingua e 
 
 ### Aggiunta della copia per lingua {#adding-language-copy}
 
-1. Una volta creato lo spazio, fai clic su di esso per creare una copia per lingua.
+1. Dopo aver creato lo spazio, fare clic su tale spazio per creare una copia per lingua.
 
    Clic **Crea** e scegli **Copia lingua**.
 

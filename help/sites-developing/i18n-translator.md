@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2320'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Per aggiungere una stringa, attenersi alla procedura descritta di seguito.
    ![chlimage_1-209](assets/chlimage_1-209.png)
 
 1. Nella casella Stringa della finestra di dialogo Aggiungi stringa digitare la stringa inglese. Nella casella Commento digitare un suggerimento di traduzione per il traduttore, se necessario.
-1. Fai clic su OK.
+1. Fare clic su OK.
 1. Fai clic su Salva.
 
    ![chlimage_1-210](assets/chlimage_1-210.png)
@@ -160,7 +160,7 @@ Per modificare una stringa in un dizionario, attenersi alla procedura descritta 
 Per rimuovere una stringa da un dizionario, attenersi alla procedura descritta di seguito.
 
 1. Nel menu a discesa Dizionari, selezionare il dizionario dal quale si desidera rimuovere una stringa.
-1. Fai clic su Rimuovi.
+1. Fare clic su Rimuovi.
 
    ![chlimage_1-213](assets/chlimage_1-213.png)
 
@@ -210,7 +210,7 @@ Dopo aver aggiunto la stringa inglese a un dizionario, è possibile aggiungere l
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-   * Fai doppio clic sul pulsante **Stringa** o **Commento** campi per la stringa richiesta per aprire **Modifica stringa** , modifica le traduzioni come richiesto, quindi fai clic su **OK** per chiudere la finestra di dialogo:
+   * Fai doppio clic su **Stringa** o **Commento** campi per la stringa richiesta per aprire **Modifica stringa** , modifica le traduzioni come richiesto, quindi fai clic su **OK** per chiudere la finestra di dialogo:
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 

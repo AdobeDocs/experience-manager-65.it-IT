@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 43%
+source-wordcount: '632'
+ht-degree: 34%
 
 ---
 
@@ -65,15 +65,15 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
    >[!NOTE]
    >
-   >Per uscire dalla modalità Annotazione, tocca o fai clic sull’icona Annota (simbolo x) a destra della barra degli strumenti superiore.
+   >Per uscire dalla modalità Annotazione, fare clic sull&#39;icona Annota (simbolo x) a destra della barra degli strumenti superiore.
 
-1. Tocca o fai clic sull’icona Aggiungi annotazione (simbolo + a sinistra della barra degli strumenti) per iniziare ad aggiungere annotazioni.
+1. Per iniziare ad aggiungere annotazioni, fai clic sull’icona Aggiungi annotazione (simbolo + a sinistra della barra degli strumenti).
 
    >[!NOTE]
    >
-   >Per interrompere l’aggiunta di annotazioni (e tornare alla visualizzazione) tocca o fai clic sull’icona Annulla (simbolo x in un cerchio bianco) a sinistra della barra degli strumenti superiore.
+   >Per interrompere l’aggiunta delle annotazioni e tornare alla visualizzazione, fai clic sull’icona Annulla (simbolo x in un cerchio bianco) a sinistra della barra degli strumenti superiore.
 
-1. Tocca o fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni sono evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
+1. Fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni saranno evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
@@ -100,17 +100,17 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
 1. Dopo aver modificato un’annotazione, puoi effettuare le seguenti operazioni:
 
-   * Tocca o fai clic sul marcatore di testo per aprire l’annotazione. Una volta aperta l’annotazione, è possibile visualizzare il testo completo, apportare modifiche o eliminare l’annotazione.
+   * Fare clic sull&#39;indicatore di testo per aprire l&#39;annotazione. Una volta aperta, è possibile visualizzare il testo completo, apportare modifiche o eliminare l’annotazione.
 
       * Gli schizzi non possono essere eliminati indipendentemente dall’annotazione.
 
    * Riposiziona il marcatore di testo.
-   * Tocca o fai clic su una linea di uno schizzo per selezionarlo e trascinarlo nella posizione desiderata.
+   * Fate clic su una linea di uno schizzo per selezionarlo e trascinarlo nella posizione desiderata.
    * Sposta o copia un componente.
 
       * Vengono spostate o copiate anche tutte le annotazioni e gli schizzi correlati e la loro posizione rispetto al paragrafo rimane invariata.
 
-1. Per uscire dalla modalità Annotazione e tornare alla modalità precedente, tocca o fai clic sull’icona Annota (simbolo x) a destra della barra degli strumenti superiore.
+1. Per uscire dalla modalità Annotazione e tornare alla modalità utilizzata in precedenza, fare clic sull&#39;icona Annota (simbolo x) a destra della barra degli strumenti superiore.
 
 >[!NOTE]
 >

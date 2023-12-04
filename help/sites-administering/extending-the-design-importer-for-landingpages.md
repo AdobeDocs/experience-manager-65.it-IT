@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3443'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ Scheda di riferimento rapido della pagina di destinazione
 
 Di seguito è riportato un esempio di layout dello zip:
 
-* /index.html -> file HTML della pagina di destinazione
-* /css -> da aggiungere alla libreria client CSS
-* /img -> tutte le immagini e le risorse
-* /js -> da aggiungere alla libreria client JS
+* /index.html > file HTML della pagina di destinazione
+* /css > per aggiungere nella libreria client CSS
+* /img > tutte le immagini e le risorse
+* /js > da aggiungere alla libreria client JS
 
 Il layout si basa sul layout delle best practice per le boilerplate di HTML5. Ulteriori informazioni all&#39;indirizzo [https://html5boilerplate.com/](https://html5boilerplate.com/)
 
@@ -156,8 +156,8 @@ Includendo il markup sopra riportato nel HTML, si verifica quanto segue:
 
 Per aggiungere un testo con un elenco:
 
-* 1st
-* 2nd
+* 1°
+* 2°
 
 che possono essere modificate nell’editor Rich Text:
 

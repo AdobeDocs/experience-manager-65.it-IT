@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 85%
+source-wordcount: '1293'
+ht-degree: 81%
 
 ---
 
@@ -80,7 +80,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
    ![Sistema di stili per l’autore](assets/style-system-author.png)
 
-1. Tocca o fai clic sul pulsante **Stili** nella barra degli strumenti del componente **Elenco** per aprire il menu degli stili e modificare l’aspetto del componente.
+1. Fai clic su **Stili** sulla barra degli strumenti del **Elenco** per aprire il menu degli stili e modificare l&#39;aspetto del componente.
 
    ![Selezione degli stili](assets/style-system-author2.png)
 
@@ -90,7 +90,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 ### Autore di modelli  {#as-a-template-author}
 
-1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello di pagina da **Informazioni pagina > Modifica modello**.
+1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello della pagina tramite **Informazioni pagina > Modifica modello**.
 
    ![Modifica modello](assets/style-system-edit-template.png)
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2303'
 ht-degree: 0%
 
 ---
@@ -421,7 +421,7 @@ public class AxisFilter implements VariantFilter {
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
 
-**Archiviazione**
+**Storage**
 
 * Archiviazione
 
@@ -562,7 +562,7 @@ L’integrazione è assicurata tra l’AEM e vari sistemi di e-commerce. Ciò ri
 
 Un front-end AEM può essere posizionato davanti a un’implementazione ibrida esistente. È inoltre possibile aggiungere un motore ibrido a un impianto AEM esistente. A tal fine, i sistemi devono essere in grado di gestire agevolmente gli utenti esistenti in entrambi i sistemi:
 
-* AEM -> ibrido
+* AEM > ibrido
 
    * Quando si accede a hybris, se l’utente AEM non esiste:
 
@@ -571,7 +571,7 @@ Un front-end AEM può essere posizionato davanti a un’implementazione ibrida e
 
    * Consulta: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
-* ibrido -> AEM
+* hybris > AEM
 
    * Quando si accede all’AEM, se il sistema riconosce l’utente:
 

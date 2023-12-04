@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 2%
+source-wordcount: '1726'
+ht-degree: 1%
 
 ---
 
@@ -28,10 +28,10 @@ There are two options to disable ContextHub:
 
 * Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
-    1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-    1. Click or tap the appropriate **Configuration Container**
-    1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
-    1. Click or tap **Disable ContextHub** and click or tap **Save**
+    1. In the rail click **Tools &gt; Sites &gt; ContextHub**
+    1. Click the appropriate **Configuration Container**
+    1. Select the **ContextHub Configuration** and click **Edit Selected Element**
+    1. Click **Disable ContextHub** and click **Save**
 
 or
 -->
@@ -74,10 +74,10 @@ Le icone sono riferimenti dalla [Libreria icona interfaccia utente Coral](https:
 
 Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub correlati. Quando crei la modalità interfaccia utente, fornisci il titolo e l’icona visualizzati nella barra degli strumenti di ContextHub.
 
-1. Nella barra degli Experienci Manager, tocca o fai clic su Strumenti > Siti > Context Hub.
-1. Tocca o fai clic sul Contenitore di configurazione predefinito.
-1. Tocca o fai clic sulla configurazione Context Hub.
-1. Tocca o fai clic sul pulsante Crea, quindi tocca o fai clic su Modalità interfaccia utente Context Hub.
+1. Nella barra degli Experienci Manager, fai clic su Strumenti > Siti > Context Hub.
+1. Fai clic sul Contenitore di configurazione predefinito.
+1. Fai clic sulla configurazione Context Hub.
+1. Fai clic sul pulsante Crea, quindi fai clic su Modalità interfaccia utente Context Hub.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -87,7 +87,7 @@ Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub co
    * Icona modalità: selettore per [Icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) ad esempio, `coral-Icon--user`
    * Abilitato: seleziona per visualizzare la modalità interfaccia utente nella barra degli strumenti di ContextHub
 
-1. Tocca o fai clic su Salva.
+1. Fai clic su Salva.
 
 ### Aggiunta di un modulo interfaccia utente {#adding-a-ui-module}
 
@@ -108,11 +108,11 @@ Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Visualizza le statistiche sui tag pagina | tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Visualizza le informazioni di profilo per l&#39;utente corrente, inclusi authorizableID, displayName e familyName. È possibile modificare il valore di displayName e familyName. | profilo |
 
-1. Nella barra degli Experienci Manager, tocca o fai clic su Strumenti > Siti > ContextHub.
-1. Tocca o fai clic sul Contenitore di configurazione a cui desideri aggiungere un modulo di interfaccia utente.
+1. Nella barra degli Experienci Manager, fai clic su Strumenti > Siti > ContextHub.
+1. Fai clic sul Contenitore di configurazione a cui desideri aggiungere un modulo di interfaccia utente.
 1. Fai clic o digita la configurazione ContextHub a cui desideri aggiungere il modulo di interfaccia utente.
-1. Tocca o fai clic sulla modalità interfaccia utente a cui stai aggiungendo il modulo interfaccia utente.
-1. Tocca o fai clic sul pulsante Crea, quindi tocca o fai clic su Modulo interfaccia utente ContextHub (generico).
+1. Fai clic sulla modalità dell’interfaccia utente a cui stai aggiungendo il modulo dell’interfaccia utente.
+1. Fai clic sul pulsante Crea, quindi fai clic su Modulo interfaccia utente ContextHub (generico).
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -123,7 +123,7 @@ Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi
    * Abilitato: seleziona per mostrare il modulo interfaccia utente nella barra degli strumenti di ContextHub
 
 1. (Facoltativo) Per ignorare la configurazione predefinita dell’archivio, immetti un oggetto JSON per configurare il modulo interfaccia utente.
-1. Tocca o fai clic su Salva.
+1. Fai clic su Salva.
 
 ## Creazione di un archivio ContextHub {#creating-a-contexthub-store}
 
@@ -151,14 +151,14 @@ L’AEM fornisce i seguenti esempi di store candidati su cui puoi basare un nego
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Memorizza informazioni sul client, ad esempio informazioni sul dispositivo, il tipo di browser e l&#39;orientamento della finestra |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Memorizza i tag di pagina e i conteggi dei tag |
 
-1. Nella barra degli Experienci Manager, tocca o fai clic su Strumenti > Siti > ContextHub.
-1. Tocca o fai clic sul contenitore di configurazione predefinito.
-1. Tocca o fai clic su Configurazione Contexthub
-1. Per aggiungere un archivio, tocca o fai clic sull’icona Crea, quindi tocca o fai clic su Configurazione archivio ContexHub.
+1. Nella barra degli Experienci Manager, fai clic su Strumenti > Siti > ContextHub.
+1. Fai clic sul contenitore di configurazione predefinito.
+1. Fai clic su Configurazione Contexthub
+1. Per aggiungere un archivio, fai clic sull’icona Crea, quindi fai clic su Configurazione archivio ContexHub.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. Immetti i valori per le proprietà di configurazione di base, quindi tocca o fai clic su Avanti:
+1. Immetti i valori per le proprietà di configurazione di base, quindi fai clic su Avanti:
 
    * **Titolo configurazione:** Titolo che identifica l&#39;archivio
    * **Tipo di archivio:** Il valore della proprietà storeType del candidato dello store su cui basare lo store
@@ -166,7 +166,7 @@ L’AEM fornisce i seguenti esempi di store candidati su cui puoi basare un nego
    * **Attivato:** Seleziona per abilitare lo store
 
 1. (Facoltativo) Per ignorare la configurazione predefinita dell’archivio, immetti un oggetto JSON nella casella Configurazione dettaglio (JSON).
-1. Tocca o fai clic su Salva.
+1. Fai clic su Salva.
 
 ## Esempio: utilizzo di un servizio JSONP  {#example-using-a-jsonp-service}
 
@@ -241,16 +241,16 @@ Utilizza la procedura in [Aggiunta di un modulo interfaccia utente](#adding-a-ui
 
 Modifica la configurazione di ContextHub e seleziona l’opzione **Debug**
 
-1. Nella barra, tocca o fai clic su **Strumenti > Sites > ContextHub**
-1. Tocca o fai clic sul pulsante predefinito **Contenitore configurazione**
-1. Seleziona la **Configurazione ContextHub** e tocca o fai clic su **Modifica elemento selezionato**
-1. Tocca o fai clic su **Debug** e tocca o fai clic su **Salva**
+1. Nella barra fai clic su **Strumenti > Sites > ContextHub**
+1. Fai clic sul pulsante predefinito **Contenitore configurazione**
+1. Seleziona la **Configurazione ContextHub** e fai clic su **Modifica elemento selezionato**
+1. Clic **Debug** e fai clic su **Salva**
 
 ### Via CRXDE {#via-crxde}
 
 Utilizzare CRXDE Liti per impostare la proprietà `debug` a **true** in:
 
-* `/conf/global/settings/cloudsettings` oppure
+* `/conf/global/settings/cloudsettings` o
 * `/conf/<tenant>/settings/cloudsettings`
 
 >[!NOTE]
@@ -279,12 +279,12 @@ Le configurazioni ContextHub sono memorizzate in una cartella denominata `contex
 
 Dopo un aggiornamento, il backup viene archiviato in una cartella denominata `contexthub` sotto un nodo denominato:
 
-`/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` oppure
+`/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` o
 `/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
 
 Il `yyyymmdd` parte del nome del nodo è la data in cui è stato eseguito l’aggiornamento.
 
 Per recuperare le configurazioni ContextHub, utilizza CRXDE Liti per copiare i nodi che rappresentano i tuoi store, le modalità dell’interfaccia utente e i moduli dell’interfaccia utente da sotto al `default-pre-upgrade_yyyymmdd_xxxxxx` nodo al di sotto:
 
-* `/conf/global/settings/cloudsettings` oppure
+* `/conf/global/settings/cloudsettings` o
 * `/conf/<tenant>/settings/cloudsettings`

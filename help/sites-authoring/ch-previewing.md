@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 30%
+source-wordcount: '362'
+ht-degree: 24%
 
 ---
 
@@ -23,7 +23,7 @@ Il [ContextHub](/help/sites-developing/contexthub.md) La barra degli strumenti v
 
 La barra degli strumenti è costituita da una serie di modalità di interfaccia utente che contengono uno o più moduli di interfaccia utente.
 
-* Le modalità dell’interfaccia utente sono icone visualizzate sul lato sinistro della barra degli strumenti. Quando tocchi un’icona o fai clic su di essa, la barra degli strumenti mostra i moduli dell’interfaccia utente in essa contenuti.
+* Le modalità dell’interfaccia utente sono icone visualizzate sul lato sinistro della barra degli strumenti. Quando fai clic su un’icona, la barra degli strumenti mostra i moduli dell’interfaccia utente in essa contenuti.
 * I moduli di interfaccia utente visualizzano i dati da uno o più archivi ContextHub. Alcuni moduli di interfaccia utente consentono inoltre di manipolare i dati dell’archivio.
 
 ContextHub installa diverse modalità e moduli di interfaccia utente. L&#39;amministratore potrebbe avere [ContextHub configurato](/help/sites-developing/ch-configuring.md) per visualizzarne di diversi.
@@ -36,11 +36,11 @@ La barra degli strumenti di ContextHub è disponibile in modalità Anteprima. La
 
 ![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
 
-1. Con la pagina aperta per la modifica, fai clic o tocca Anteprima nella barra degli strumenti.
+1. Con la pagina aperta per la modifica, sulla barra degli strumenti fai clic su Anteprima.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Per visualizzare la barra degli strumenti, fai clic o tocca l’icona di ContextHub.
+1. Per visualizzare la barra degli strumenti, fai clic sull’icona di ContextHub.
 
    ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
@@ -66,6 +66,6 @@ La sovrapposizione a comparsa di un modulo può includere elementi modulo che co
 
 ### Modalità schermo intero {#fullscreen-mode}
 
-Le sovrapposizioni a comparsa possono includere un&#39;icona su cui si tocca o si fa clic per espandere il contenuto a comparsa in modo da coprire l&#39;intera finestra o schermata del browser.
+Le sovrapposizioni a comparsa possono includere un&#39;icona su cui si fa clic per espandere il contenuto a comparsa in modo da coprire l&#39;intera finestra o schermata del browser.
 
 ![Schermo intero](do-not-localize/chlimage_1-18.png)

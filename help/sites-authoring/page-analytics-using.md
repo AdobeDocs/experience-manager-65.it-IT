@@ -8,10 +8,10 @@ topic-tags: site-features
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 11%
+source-wordcount: '435'
+ht-degree: 4%
 
 ---
 
@@ -36,9 +36,9 @@ Ogni colonna mostra un valore per il periodo di reporting corrente e indica anch
 >Per modificare il periodo di aggiornamento: [configurare l’intervallo di importazione](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Apri **Sites** console; ad esempio, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
-1. Nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona per selezionare **Vista a elenco** (l’icona visualizzata dipende dal [vista corrente](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Nell’estrema destra della barra degli strumenti (angolo superiore destro), fai clic sull’icona per selezionare **Vista a elenco** (l’icona visualizzata dipende dal [vista corrente](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Di nuovo, nell’estrema destra della barra degli strumenti (angolo superiore destro), tocca o fai clic sull’icona, quindi seleziona **Impostazioni vista**. Il **Configura colonne** viene visualizzata una finestra di dialogo. Apporta le modifiche necessarie e conferma con **Aggiorna**.
+1. Di nuovo, fai clic sull’icona all’estrema destra della barra degli strumenti (angolo superiore destro), quindi seleziona **Impostazioni vista**. Il **Configura colonne** viene visualizzata una finestra di dialogo. Apporta le modifiche necessarie e conferma con **Aggiorna**.
 
    ![spad-02](assets/spad-02.png)
 
@@ -85,6 +85,6 @@ Apri [Approfondimenti contenuto](/help/sites-authoring/content-insights.md) dall
 
 >[!CAUTION]
 >
->In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
+>A causa di modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa nell’AEM.
 >
 >Il [Plug-in ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=it) ora deve essere utilizzato.

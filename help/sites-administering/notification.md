@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 12%
+source-wordcount: '2037'
+ht-degree: 9%
 
 ---
 
@@ -253,7 +253,7 @@ Per aggiungere un modello per una nuova lingua:
 Quando le raccolte in AEM Assets sono condivise o non condivise, gli utenti possono ricevere notifiche e-mail dall’AEM. Per configurare le notifiche e-mail, segui la procedura riportata di seguito.
 
 1. Configura il servizio e-mail come descritto in precedenza [Configurazione del servizio e-mail](/help/sites-administering/notification.md#configuring-the-mail-service).
-1. Accedi ad AEM come amministratore. Clic **Strumenti** >  **Operazioni** >  **Console web** per aprire Configurazione console Web.
+1. Accedi all’AEM come amministratore. Clic **Strumenti** >  **Operazioni** >  **Console web** per aprire Configurazione console Web.
 1. Modifica **Day CQ DAM Resource Collection Servlet**. Seleziona **invia e-mail**. Fai clic su **Salva**.
 
 ## Configurazione di OAuth {#setting-up-oauth}
@@ -289,7 +289,7 @@ Innanzitutto, configura il servizio di posta:
 1. Apri la console web dell’AEM da `http://serveraddress:serverport/system/console/configMgr`
 1. Cerca, quindi fai clic su **Day CQ Mail Service**
 1. Aggiungi le seguenti impostazioni:
-   * Nome host del server SMTP: `smtp.gmail.com`
+   * Nome host server SMTP: `smtp.gmail.com`
    * Porta server SMTP: `25` o `587`, a seconda dei requisiti
    * Seleziona le caselle di spunta per **SMPT usa StarTLS** e **SMTP richiede StarTLS**
    * Verifica **Flusso OAuth** e fai clic su **Salva**.
@@ -336,12 +336,12 @@ Infine, conferma la configurazione:
 ### Microsoft Outlook {#microsoft-outlook}
 
 1. Vai a [https://portal.azure.com/](https://portal.azure.com/) e accedi.
-1. Cerca **Azure Active Directory** nella barra di ricerca e fai clic sul risultato. In alternativa, è possibile navigare direttamente in [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. Cerca **Azure Active Directory** nella barra di ricerca e fai clic sul risultato. In alternativa, è possibile passare direttamente a [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Fai clic su **Registrazione app** - **Nuova registrazione**
 
    ![Il nuovo pulsante di registrazione durante la configurazione di Microsoft Outlook](assets/oauth-outlook1.png)
 
-1. Compila le informazioni in base alle tue esigenze, quindi fai clic su **Registra**
+1. Inserisci le informazioni in base alle tue esigenze, quindi fai clic su **Registrati**
 1. Vai alla nuova app creata e seleziona **Autorizzazioni API**
 1. Vai a **Aggiungi autorizzazione** - **Autorizzazione grafico** - **Autorizzazioni delegate**
 1. Seleziona le seguenti autorizzazioni per la tua app, quindi fai clic su **Aggiungi autorizzazione**:
@@ -372,7 +372,7 @@ Quindi, integra le impostazioni OAuth2 con AEM:
 1. Passa alla console web della tua istanza locale navigando su `http://serveraddress:serverport/system/console/configMgr`
 1. Cerca e fai clic su **Day CQ Mail Service**
 1. Aggiungi le seguenti impostazioni:
-   * Nome host del server SMTP: `smtp.office365.com`
+   * Nome host server SMTP: `smtp.office365.com`
    * Utente SMTP: nome utente in formato e-mail
    * Indirizzo &quot;Da&quot;: indirizzo e-mail da utilizzare nel campo &quot;Da:&quot; dei messaggi inviati dal mailer
    * Porta server SMTP: `25` o `587` a seconda dei requisiti
