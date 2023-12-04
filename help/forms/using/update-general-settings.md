@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -31,8 +31,8 @@ Nella scheda Generale, modifica le impostazioni di download allegati, modalità 
 
 **Passa alla scheda Generale nella schermata Impostazioni.**
 
-1. Per passare alla schermata Setting (Impostazioni), toccare il pulsante Menu nell&#39;angolo superiore sinistro della schermata Home, quindi toccare **Impostazioni**.
-1. Nella schermata Settings, tocca la scheda General (Generale).
+1. Per passare alla schermata Setting (Impostazioni), selezionare il pulsante Menu nell&#39;angolo superiore sinistro della schermata Home, quindi Select (Seleziona) **Impostazioni**.
+1. Nella schermata Settings, selezionare la scheda General.
 
    ![Impostazioni generali nell’app AEM Forms](assets/gen-settings-1.png)
 
@@ -59,7 +59,7 @@ Opzioni disponibili:
 
 * **Frequenza salvataggio automatico**: per impostare la frequenza con cui [l&#39;app mobile salva i dati del modulo](../../forms/using/autosave-data-app.md) localmente.
 * **Frequenza di sincronizzazione**: per impostare la frequenza con cui [l&#39;app mobile è sincronizzata](../../forms/using/sync-app.md) con il server AEM Forms in modalità online.
-   **Cancella dati locali**: cancella il database, incluse le impostazioni e i dati locali per tutti gli utenti e l’archiviazione dei file dal dispositivo.
+  **Cancella dati locali**: cancella il database, incluse le impostazioni e i dati locali per tutti gli utenti e l’archiviazione dei file dal dispositivo.
 
 >[!NOTE]
 >

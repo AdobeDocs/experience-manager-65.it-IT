@@ -10,10 +10,10 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 0%
+source-wordcount: '1494'
+ht-degree: 1%
 
 ---
 
@@ -51,15 +51,15 @@ Le risorse nelle condizioni sottoposte a rendering in base alle regole applicate
    * **[!UICONTROL Descrizione]**: digita una descrizione del frammento di documento.
    * **[!UICONTROL Modello dati modulo]**: se necessario, seleziona il pulsante di opzione Modello dati modulo per creare la condizione in base a un modello dati modulo. Quando selezioni il pulsante di opzione Modello dati modulo, **[!UICONTROL Modello dati modulo]** viene visualizzato. Sfoglia e seleziona un modello di dati del modulo. Durante la creazione della condizione per una comunicazione interattiva, accertati di utilizzare lo stesso modello di dati che intendi utilizzare nella comunicazione interattiva. Per ulteriori informazioni sul modello dati del modulo, consulta [Integrazione dei dati](../../forms/using/data-integration.md).
 
-   * **[!UICONTROL Tag]**: facoltativamente, per creare un tag personalizzato, immetti il valore nel campo di testo e tocca Invio. Quando salvi questa condizione, vengono creati i nuovi tag aggiunti.
+   * **[!UICONTROL Tag]**: facoltativamente, per creare un tag personalizzato, immetti il valore nel campo di testo e seleziona Invio. Quando salvi questa condizione, vengono creati i nuovi tag aggiunti.
 
-1. Tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Avanti]**.
 
    Viene visualizzata la pagina Crea condizione.
 
    ![createcondition](assets/createcondition.png)
 
-1. Tocca **[!UICONTROL Aggiungi risorse]**.
+1. Seleziona **[!UICONTROL Aggiungi risorse]**.
 
    Viene visualizzata la pagina Seleziona risorse con i testi, gli elenchi, le condizioni e le immagini disponibili per l’aggiunta alla condizione.
 
@@ -67,7 +67,7 @@ Le risorse nelle condizioni sottoposte a rendering in base alle regole applicate
    >
    >Nella pagina Seleziona risorse vengono visualizzate solo le risorse basate su Nessuno e le risorse basate su FDM appena create (create utilizzando lo stesso FDM della condizione in fase di creazione).
 
-1. Tocca le risorse appropriate per selezionarle da includere nella condizione, quindi tocca **[!UICONTROL Fine]**.
+1. Seleziona le risorse appropriate da includere nella condizione, quindi seleziona **[!UICONTROL Fine]**.
 
    Viene visualizzata la pagina Crea condizione in cui sono elencate le risorse aggiunte.
 
@@ -77,11 +77,11 @@ Le risorse nelle condizioni sottoposte a rendering in base alle regole applicate
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] Rifiuta modifica.** Tocca questa icona per rifiutare le modifiche che potresti aver apportato alla risorsa e alla regola nella condizione.
-   **[B] Accetta modifica.** Tocca questa icona per accettare le modifiche apportate alla risorsa e alla regola nella condizione.
-   **[C] Risorsa duplicata.** Tocca questa icona per creare una copia della risorsa insieme alla regola applicata, se presente, nella condizione. Quindi puoi procedere alla modifica della regola e della risorsa per la risorsa duplicata. La duplicazione di una risorsa è utile per creare regole simili in modo da visualizzare risorse alternative in base a un particolare contesto.
-   **[D] Mostra anteprima.** Toccare questa icona per visualizzare un&#39;anteprima della risorsa nella pagina Crea\Modifica condizione.
-   **Riordinamento &#39;server&#39;.** Tocca e tieni questa icona per trascinare e rilasciare le risorse per riordinarle all’interno di una condizione.
+   **[A] Rifiuta modifica.** Seleziona questa icona per rifiutare le modifiche eventualmente apportate alla risorsa e alla regola nella condizione.
+   **[B] Accetta modifica.** Seleziona questa icona per accettare le modifiche apportate alla risorsa e alla regola nella condizione.
+   **[C] Risorsa duplicata.** Seleziona questa icona per creare una copia della risorsa insieme all’eventuale regola applicata nella condizione. Quindi puoi procedere alla modifica della regola e della risorsa per la risorsa duplicata. La duplicazione di una risorsa è utile per creare regole simili in modo da visualizzare risorse alternative in base a un particolare contesto.
+   **[D] Mostra anteprima.** Selezionare questa icona per visualizzare un&#39;anteprima della risorsa nella pagina Crea\Modifica condizione.
+   **Riordinamento &#39;server&#39;.** Seleziona e tieni premuto questa icona per trascinare e rilasciare le risorse per riordinarle all’interno di una condizione.
 
    Per specificare il comportamento della condizione in fase di esecuzione, è possibile selezionare le opzioni seguenti:
 
@@ -89,7 +89,7 @@ Le risorse nelle condizioni sottoposte a rendering in base alle regole applicate
 
    * **Interruzione di pagina**: seleziona questa opzione ( ![break](assets/break.png)) per aggiungere un’interruzione di pagina tra le risorse delle condizioni. Se questa opzione non è selezionata ( ![nobreak](assets/nobreak.png)), se una condizione si sta riversando sulla pagina successiva nell’output di stampa, l’intera condizione viene spostata sulla pagina successiva invece di interrompere la pagina tra le risorse della condizione.
 
-1. Tocca **[!UICONTROL Crea regola]** per aggiungere regole per visualizzare o nascondere le risorse, in base alle esigenze. Per utilizzare le variabili nelle regole, consulta [creazione di variabili](#variables). Per ulteriori informazioni, consulta [Aggiunta di regole alla condizione](#ruleeditor).
+1. Seleziona **[!UICONTROL Crea regola]** per aggiungere regole per visualizzare o nascondere le risorse, in base alle esigenze. Per utilizzare le variabili nelle regole, consulta [creazione di variabili](#variables). Per ulteriori informazioni, consulta [Aggiunta di regole alla condizione](#ruleeditor).
 
    Le regole create vengono visualizzate nella colonna REGOLA della schermata Crea condizione.
 
@@ -99,7 +99,7 @@ Le risorse nelle condizioni sottoposte a rendering in base alle regole applicate
    >
    >È possibile inserire nella condizione risorse a cui sono già state applicate regole o ripetizioni.
 
-1. Tocca **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Salva]**.
 
    La condizione viene creata. Ora puoi utilizzare la condizione come blocco predefinito durante la creazione di una comunicazione interattiva.
 
@@ -113,9 +113,9 @@ Per modificare una condizione, segui la procedura riportata di seguito. Puoi anc
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Frammenti di documenti]**.
 1. Passa alla condizione e selezionala.
-1. Tocca **[!UICONTROL Modifica]**.
+1. Seleziona **[!UICONTROL Modifica]**.
 1. Apporta le modifiche necessarie nella condizione. Per ulteriori dettagli sulle informazioni che è possibile modificare in una condizione, vedi [Crea condizione](#createcondition).
-1. Tocca **[!UICONTROL Salva]** e quindi tocca **[!UICONTROL Chiudi]**.
+1. Seleziona **[!UICONTROL Salva]** e quindi seleziona **[!UICONTROL Chiudi]**.
 
 ## Crea regole nella condizione {#ruleeditor}
 
@@ -130,7 +130,7 @@ Utilizzando l’editor di regole in una condizione, puoi creare regole per visua
 
 ### Crea regola nella condizione {#create-rule-in-condition}
 
-1. Durante la creazione o la modifica di una condizione, tocca ![ruleeditor](assets/ruleeditoricon.png) (Editor regole) per la risorsa pertinente.
+1. Durante la creazione o la modifica di una condizione, seleziona ![ruleeditor](assets/ruleeditoricon.png) (Editor regole) per la risorsa pertinente.
 
    Viene visualizzata la finestra di dialogo Crea regola. Oltre a stringa, numero, espressione matematica e data, nell’Editor regole sono disponibili anche le seguenti opzioni per la creazione di istruzioni delle regole:
 
@@ -152,53 +152,53 @@ Utilizzando l’editor di regole in una condizione, puoi creare regole per visua
 
    Regola per mostrare una risorsa quando il tipo di criterio è standard
 
-   * Durante la creazione o la modifica di una regola, puoi anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo espansa a finestra intera consente di creare [Variabili](#variables) per creare le regole. Tocca di nuovo Ridimensiona per tornare alla normale finestra di dialogo Crea regola.
+   * Durante la creazione o la modifica di una regola, puoi anche selezionare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo espansa a finestra intera consente di creare [Variabili](#variables) per creare le regole. Seleziona Ridimensiona di nuovo per tornare alla normale finestra di dialogo Crea regola.
 
    * Puoi anche creare più condizioni in una regola.
 
-1. Tocca **[!UICONTROL Fine]**.
+1. Seleziona **[!UICONTROL Fine]**.
 
    La regola viene applicata alla risorsa.
 
 ## Creazione e utilizzo di variabili in una condizione {#variables}
 
-Durante la creazione o la modifica di una regola in una condizione, puoi toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola\Modifica regola. La finestra di dialogo espansa a finestra intera consente di:
+Durante la creazione o la modifica di una regola in una condizione, puoi selezionare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola\Modifica regola. La finestra di dialogo espansa a finestra intera consente di:
 
 * Creare e utilizzare le variabili nella regola
 * Trascinare le proprietà e le variabili del modello di dati modulo nella regola
 
-Toccare nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola\Modifica regola.
+Selezionare Ridimensiona per tornare alla finestra di dialogo Crea regola\Modifica regola.
 
 ### Creare le variabili {#create-variables}
 
-1. Durante la creazione o la modifica di una regola in una condizione, puoi toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola\Modifica regola.
+1. Durante la creazione o la modifica di una regola in una condizione, puoi selezionare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola\Modifica regola.
 
    Viene visualizzata la finestra di dialogo Espansa, a finestra intera.
 
    ![expandeditruledialog](assets/expandededitruledialog.png)
 
-1. Nel riquadro a sinistra, tocca **[!UICONTROL Variabili]**.
+1. Nel riquadro a sinistra, seleziona **[!UICONTROL Variabili]**.
 
    Viene visualizzato il riquadro Variabili.
 
    ![expandeditrulevariables](assets/expandededitrulevariables.png)
 
-1. Tocca **[!UICONTROL Crea]**.
+1. Seleziona **[!UICONTROL Crea]**.
 
    Viene visualizzato il riquadro Crea variabili.
 
-1. Immetti le seguenti informazioni e tocca **[!UICONTROL Crea]**:
+1. Immetti le seguenti informazioni e seleziona **[!UICONTROL Crea]**:
 
    * **[!UICONTROL Nome]**: nome della variabile.
    * **[!UICONTROL Descrizione]**: facoltativamente, inserisci una descrizione della variabile.
    * **[!UICONTROL Tipo]**: seleziona un tipo di variabile: String, Number, Boolean o Date.
    * **[!UICONTROL Consenti solo valori specifici]**: per le variabili String e Number, puoi fare in modo che l’agente scelga uno specifico set di valori per un segnaposto nell’interfaccia utente dell’agente. Per specificare il set di valori, seleziona questa opzione e quindi specifica i valori separati da virgola consentiti nella **[!UICONTROL Valori]** campo.
 
-1. Tocca **[!UICONTROL Crea]**.
+1. Seleziona **[!UICONTROL Crea]**.
 
    La variabile viene creata ed elencata nel riquadro Variabili.
 
 1. Per inserire una variabile nella regola, trascina la variabile in un segnaposto per un’opzione nella regola.
-1. Dopo aver costruito una regola valida, tocca **[!UICONTROL Fine]**.
+1. Dopo aver creato una regola valida, seleziona **[!UICONTROL Fine]**.
 
    Procedi ad apportare ulteriori modifiche, se necessario, alla condizione e salvala.

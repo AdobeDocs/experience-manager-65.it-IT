@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1819'
-ht-degree: 0%
+source-wordcount: '1790'
+ht-degree: 1%
 
 ---
 
@@ -57,7 +57,7 @@ Questi sottomoduli vengono visualizzati come aree di destinazione nel modello St
 
 Per creare un modello XDP per il canale di stampa, effettuare le seguenti operazioni:
 
-1. Apri Forms Designer, seleziona **File** > **Nuovo** > **Utilizzare un modulo vuoto,** tocco **Successivo**, quindi tocca **Fine** per aprire il modulo per la creazione di modelli.
+1. Apri Forms Designer, seleziona **File** > **Nuovo** > **Utilizzare un modulo vuoto,** seleziona **Successivo** e quindi selezionare **Fine** per aprire il modulo per la creazione di modelli.
 
    Assicurati che **Libreria di oggetti** e **Oggetto** sono selezionate dall&#39;opzione **Finestra** menu.
 
@@ -108,22 +108,22 @@ Per creare un modello XDP per il canale di stampa, effettuare le seguenti operaz
    1. Passa alla posizione in cui è possibile salvare il file e specifica il nome come **create_first_ic_print_template**.
    1. Seleziona **.xdp** dal **Salva come tipo** elenco a discesa.
 
-   1. Tocca **Salva**.
+   1. Seleziona **Salva**.
 
 ### Caricare un modello XDP sul server AEM Forms {#upload-xdp-template-to-the-aem-forms-server}
 
 Dopo aver creato un modello XDP utilizzando Forms Designer, è necessario caricarlo sul server AEM Forms in modo che sia disponibile per l’uso durante la creazione della comunicazione interattiva.
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Tocca **Crea** > **Caricamento file**.
+1. Seleziona **Crea** > **Caricamento file**.
 
-   Naviga e seleziona la **create_first_ic_print_template** modello (XDP) e tocca **Apri** per importare il modello XDP sul server AEM Forms.
+   Naviga e seleziona la **create_first_ic_print_template** modello (XDP) e seleziona **Apri** per importare il modello XDP sul server AEM Forms.
 
 ### Creare un modello XDP per i frammenti di layout {#create-xdp-template-for-layout-fragments}
 
 Per creare un frammento di layout per il canale Stampa della comunicazione interattiva, crea un XDP utilizzando Forms Designer e caricalo sul server AEM Forms.
 
-1. Apri Forms Designer, seleziona **File** > **Nuovo** > **Utilizzare un modulo vuoto,** tocco **Successivo**, quindi tocca **Fine** per aprire il modulo per la creazione di modelli.
+1. Apri Forms Designer, seleziona **File** > **Nuovo** > **Utilizzare un modulo vuoto,** seleziona **Successivo** e quindi selezionare **Fine** per aprire il modulo per la creazione di modelli.
 
    Assicurati che **Libreria di oggetti** e **Oggetto** sono selezionate dall&#39;opzione **Finestra** menu.
 
@@ -135,7 +135,7 @@ Per creare un frammento di layout per il canale Stampa della comunicazione inter
    1. Seleziona la **Includi riga intestazione nella tabella** casella di controllo.
    1. Linguetta **OK**.
 
-1. Tocca **+** nel riquadro a sinistra accanto a **Tabella** 1 e clic con il pulsante destro del mouse **Cella1** e seleziona **Rinomina oggetto** a **Data**.
+1. Seleziona **+** nel riquadro a sinistra accanto a **Tabella** 1 e clic con il pulsante destro del mouse **Cella1** e seleziona **Rinomina oggetto** a **Data**.
 
    Analogamente, rinominare **Cella2**, **Cella3**, **Cella4**, e **Cella5** a **Ora**, **Numero**, **Durata**, e **Spese** rispettivamente.
 
@@ -158,7 +158,7 @@ Per creare un frammento di layout per il canale Stampa della comunicazione inter
    1. Passa alla posizione in cui è possibile salvare il file e specifica il nome come **table_lf**.
    1. Seleziona **.xdp** dal **Salva come tipo** elenco a discesa.
 
-   1. Tocca **Salva**.
+   1. Seleziona **Salva**.
 
    Dopo aver creato un modello XDP per il frammento di layout utilizzando Progettazione Forms, è necessario [caricare](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) sul server AEM Forms, in modo che il modello sia disponibile per l’uso durante la creazione di frammenti di layout.
 
@@ -177,10 +177,10 @@ Per creare un modello di canale Web, definire una cartella in cui salvare i mode
 
 Per creare una cartella per i modelli modificabili, effettuare le seguenti operazioni:
 
-1. Tocca **Strumenti** ![icona a forma di martello](assets/hammer-icon.svg) > **Browser configurazioni**.
+1. Seleziona **Strumenti** ![icona a forma di martello](assets/hammer-icon.svg) > **Browser configurazioni**.
    * Consulta la [Browser configurazioni](/help/sites-administering/configurations.md) per ulteriori informazioni.
-1. Nella pagina Browser configurazioni, tocca **Crea**.
-1. In **Crea configurazione** finestra di dialogo, specifica **Create_First_IC_templates** come titolo della cartella, seleziona **Modelli modificabili**, e tocca **Crea**.
+1. Nella pagina Browser configurazioni, seleziona **Crea**.
+1. In **Crea configurazione** finestra di dialogo, specifica **Create_First_IC_templates** come titolo della cartella, seleziona **Modelli modificabili**, e seleziona **Crea**.
 
    ![Configurare i modelli web](assets/create_first_ic_web_template_new.png)
 
@@ -205,31 +205,31 @@ Durante la creazione della comunicazione interattiva vengono aggiunte tutte le e
 Per creare un modello per il canale Web in **Create_First_IC_templates** cartella, effettuare le seguenti operazioni:
 
 1. Passare alla cartella dei modelli appropriata selezionando **Strumenti** > **Modelli** > **Create_First_IC_templates** cartella.
-1. Tocca **Crea**.
-1. Il giorno **Scegli un tipo di modello** configurazione guidata, seleziona **Comunicazione interattiva - Canale web** e tocca **Successivo**.
-1. Il giorno **Dettagli Modello** configurazione guidata, specificare **Crea_Primo_IC_Modello_Web** come titolo del modello. Specifica una descrizione facoltativa e tocca **Crea**.
+1. Seleziona **Crea**.
+1. Il giorno **Scegli un tipo di modello** configurazione guidata, seleziona **Comunicazione interattiva - Canale web** e seleziona **Successivo**.
+1. Il giorno **Dettagli Modello** configurazione guidata, specificare **Crea_Primo_IC_Modello_Web** come titolo del modello. Specifica una descrizione facoltativa e seleziona **Crea**.
 
    Un messaggio di conferma che **Crea_Primo_IC_Modello_Web** viene visualizzato.
 
-1. Tocca **Apri** per aprire il modello nell’editor modelli.
+1. Seleziona **Apri** per aprire il modello nell’editor modelli.
 1. Seleziona **Contenuto iniziale** dall’elenco a discesa accanto al **Anteprima** opzione.
 
    ![Editor modelli](assets/template_editor_initial_content_new.png)
 
-1. Tocca **Pannello principale** e quindi tocca **+** per visualizzare l’elenco dei componenti che è possibile aggiungere al modello.
+1. Seleziona **Pannello principale** e quindi seleziona **+** per visualizzare l’elenco dei componenti che è possibile aggiungere al modello.
 1. Per aggiungere un pannello sopra **Pannello principale**, seleziona **Pannello** dall&#39;elenco.
 1. Seleziona la **Contenuto** nel riquadro a sinistra. Il nuovo pannello aggiunto al passaggio 8 viene visualizzato sotto **Pannello principale** nella struttura del contenuto.
 
    ![Struttura contenuto](assets/content_tree_root_panel_new.png)
 
-1. Seleziona il pannello e tocca ![configure_icon](assets/configure_icon.png) (Configura).
+1. Seleziona il pannello e seleziona ![configure_icon](assets/configure_icon.png) (Configura).
 1. Nel riquadro Proprietà:
 
    1. Specifica **billdetails** nel campo Nome.
    1. Specifica **Dettagli fattura** nel campo Titolo.
    1. Seleziona **1** dal **Numero di colonne** elenco a discesa.
 
-   1. Per salvare le proprietà, tocca ![Salva](/help/forms/using/assets/done_icon.png).
+   1. Per salvare le proprietà, seleziona ![Salva](/help/forms/using/assets/done_icon.png).
 
    Il nome del pannello viene aggiornato a **Dettagli fattura** nella struttura del contenuto.
 
@@ -254,9 +254,9 @@ Dopo aver creato il modello Web, è necessario abilitarlo per utilizzarlo durant
 
 Per attivare il modello Web, eseguire le operazioni seguenti:
 
-1. Tocca **Strumenti** ![icona a forma di martello](assets/hammer-icon.svg) > **Modelli**.
-1. Accedi a **Crea_Primo_IC_Modello_Web** modello, selezionalo e tocca **Abilita**.
-1. Tocca **Abilita** di nuovo per confermare.
+1. Seleziona **Strumenti** ![icona a forma di martello](assets/hammer-icon.svg) > **Modelli**.
+1. Accedi a **Crea_Primo_IC_Modello_Web** modello, selezionarlo e selezionare **Abilita**.
+1. Seleziona **Abilita** di nuovo per confermare.
 
    Il modello è abilitato e il suo stato viene visualizzato come Abilitato. Puoi utilizzare questo modello durante la creazione di comunicazioni interattive per il canale web.
 
@@ -265,7 +265,7 @@ Per attivare il modello Web, eseguire le operazioni seguenti:
 In base al caso d’uso, devi includere **Paga ora** e **Abbonati** (componenti per moduli adattivi) nella comunicazione interattiva. Per abilitare l&#39;uso di questi pulsanti nella comunicazione interattiva, eseguire le operazioni seguenti:
 
 1. Seleziona **Struttura** dall’elenco a discesa accanto al **Anteprima** opzione.
-1. Seleziona la **Contenitore documento** pannello principale tramite la struttura del contenuto e tocca **Policy** per selezionare i componenti consentiti per la comunicazione interattiva.
+1. Seleziona la **Contenitore documento** pannello principale tramite la struttura del contenuto e seleziona **Policy** per selezionare i componenti consentiti per la comunicazione interattiva.
 
    ![Configura criterio](assets/structure_configure_policy_new.png)
 
@@ -273,4 +273,4 @@ In base al caso d’uso, devi includere **Paga ora** e **Abbonati** (componenti 
 
    ![Componenti consentiti](assets/allowed_components_af_new.png)
 
-1. Per salvare le proprietà, tocca ![salva](assets/done_icon.png).
+1. Per salvare le proprietà, seleziona ![salva](assets/done_icon.png).

@@ -2,10 +2,10 @@
 title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager per ottimizzare le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client utilizzando il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli Dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 88%
+source-wordcount: '1401'
+ht-degree: 85%
 
 ---
 
@@ -262,7 +262,7 @@ Tieni presente che `%3B` è la codifica UTF-8 per `;` e `%3D` è la codifica per
 
 ## Memorizzazione in cache delle query persistenti {#caching-persisted-queries}
 
-Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache a livello di [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
+Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache a livello di [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
 
 Per impostazione predefinita, AEM annullerà la cache basata sulla definizione TTL (Time To Live). Le definizioni TTL possono essere definite dai seguenti parametri. Questi parametri sono accessibili con vari mezzi, con variazioni dei nomi in base al meccanismo utilizzato:
 
@@ -350,7 +350,7 @@ curl -u admin:admin -X POST \
 
 ### Gestione della cache con una configurazione OSGi {#cache-osgi-configration}
 
-Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](/help/sites-deploying/configuring-osgi.md) per la **Configurazione del servizio query persistenti**. In caso contrario, questa configurazione OSGi utilizza [valori predefiniti per le istanze di pubblicazione](#publish-instances).
+Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](/help/sites-deploying/configuring-osgi.md) per **Configurazione servizio query persistenti**. In caso contrario, questa configurazione OSGi utilizza [valori predefiniti per le istanze di pubblicazione](#publish-instances).
 
 >[!NOTE]
 >
@@ -401,8 +401,8 @@ Per creare un pacchetto:
 1. Nella finestra di dialogo Definizione pacchetto, nella sezione **Generale** inserisci un **Nome**, ad esempio “wknd-persistent-queries”.
 1. Immetti un numero di versione, ad esempio a “1.0”.
 1. Nella sezione **Filtri**, aggiungi un nuovo **Filtro**. Utilizza Trova percorso per selezionare la cartella `persistentQueries` sotto la configurazione. Ad esempio, per `wknd` configurazione il percorso completo sarà `/conf/wknd/settings/graphql/persistentQueries`.
-1. Tocca **Salva** per salvare la definizione del nuovo pacchetto e chiudere la finestra di dialogo.
-1. Tocca **Genera** nella definizione del pacchetto appena creata.
+1. Seleziona **Salva** per salvare la definizione del nuovo pacchetto e chiudere la finestra di dialogo.
+1. Seleziona la **Genera** nella definizione del pacchetto appena creata.
 
 Dopo aver generato il pacchetto puoi:
 

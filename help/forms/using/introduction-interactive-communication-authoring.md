@@ -7,10 +7,10 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 14%
+source-wordcount: '1318'
+ht-degree: 10%
 
 ---
 
@@ -53,7 +53,7 @@ Nel browser del contenuto è possibile visualizzare la gerarchia degli oggetti d
 
 * **Browser proprietà**
 
-  Consente di modificare le proprietà di un componente. Le proprietà cambiano in base al componente. Ad esempio, per visualizzare le proprietà del contenitore di documenti: seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **Contenitore documento**, quindi tocca ![cmppr](assets/cmppr.png).
+  Consente di modificare le proprietà di un componente. Le proprietà cambiano in base al componente. Ad esempio, per visualizzare le proprietà del contenitore di documenti: seleziona un componente, quindi seleziona ![a livello di campo](assets/field-level.png) > **Contenitore documento** e quindi selezionare ![cmppr](assets/cmppr.png).
 
 * **Browser risorse**
 Segrega diversi tipi di contenuto, ad esempio frammenti di layout, immagini, documenti, pagine e video. L’autore può trascinare le risorse nella comunicazione interattiva.
@@ -61,7 +61,7 @@ Segrega diversi tipi di contenuto, ad esempio frammenti di layout, immagini, doc
 * **Browser Componenti**
 Include componenti che è possibile utilizzare per creare i canali di stampa e web di un documento. Puoi trascinare i componenti nella comunicazione interattiva per aggiungere elementi e configurare un elemento aggiunto in base ai requisiti. La tabella seguente descrive i componenti elencati nel browser Componenti per i canali di stampa e web:
 
-| **Component** | **Canale di stampa** | **Canale web** | **Funzionalità** |
+| **Component** | **Stampa canale** | **Canale web** | **Funzionalità** |
 |---|---|---|---|
 | Grafico | ✓ | ✓ | Aggiunge un grafico che è possibile utilizzare in una comunicazione interattiva per la rappresentazione visiva di dati bidimensionali recuperati da un elemento di raccolta di modelli di dati modulo. |
 | Frammento di documento | ✓ | ✓ | Consente di aggiungere un componente, testo, elenco o condizione riutilizzabile a una comunicazione interattiva. Il componente riutilizzabile aggiunto a una comunicazione interattiva potrebbe essere basato su un modello di dati modulo o senza un modello di dati modulo. |
@@ -82,14 +82,14 @@ Il browser Origini dati visualizza le origini dati disponibili nel modello dati 
 
 I punti chiave quando si lavora con i componenti di comunicazione interattiva sono i seguenti:
 
-* A ciascun componente sono associate proprietà che ne controllano l’aspetto e la funzionalità. Per configurare le proprietà di un componente, tocca il componente e tocca ![cmppr](assets/cmppr.png) per aprire le proprietà del componente nel browser Proprietà.
-* Un componente è identificato dal relativo nome elemento. Quando tocchi ![cmppr](assets/cmppr.png), è possibile modificare il nome del componente modificando il valore del campo Nome elemento nel browser delle proprietà. Il campo Nome elemento accetta solo lettere, numeri, trattini (-) e trattini bassi (_). Non sono consentiti altri caratteri speciali e il nome dell’elemento deve iniziare con una lettera.
+* A ciascun componente sono associate proprietà che ne controllano l’aspetto e la funzionalità. Per configurare le proprietà di un componente, selezionalo e seleziona ![cmppr](assets/cmppr.png) per aprire le proprietà del componente nel browser Proprietà.
+* Un componente è identificato dal relativo nome elemento. Quando selezioni ![cmppr](assets/cmppr.png), è possibile modificare il nome del componente modificando il valore del campo Nome elemento nel browser delle proprietà. Il campo Nome elemento accetta solo lettere, numeri, trattini (-) e trattini bassi (_). Non sono consentiti altri caratteri speciali e il nome dell’elemento deve iniziare con una lettera.
 * Puoi modificare la proprietà Titolo di un componente Comunicazione interattiva in linea nell’editor senza aprire il browser Proprietà, purché il titolo sia visibile nella Comunicazione interattiva. Per eseguire questa operazione:
 
-   1. Tocca per selezionare un componente con la proprietà Titolo e la cui proprietà Nascondi titolo è disabilitata.
-   1. Tocca ![aem_6_3_edit](assets/aem_6_3_edit.png) per rendere modificabile il titolo.
+   1. Seleziona per selezionare un componente con la proprietà Titolo e la cui proprietà Nascondi titolo è disabilitata.
+   1. Seleziona ![aem_6_3_edit](assets/aem_6_3_edit.png) per rendere modificabile il titolo.
 
-   1. Modifica il titolo e tocca Ritorna o tocca un punto qualsiasi all’esterno del componente per salvare le modifiche. Toccare il tasto Esc per ignorare le modifiche.
+   1. Modifica il titolo e seleziona il tasto Invio o seleziona un punto qualsiasi all’esterno del componente per salvare le modifiche. Selezionare la chiave Esc per ignorare le modifiche.
 
 ## Barra degli strumenti del componente {#component-toolbar}
 
@@ -97,9 +97,9 @@ I punti chiave quando si lavora con i componenti di comunicazione interattiva so
 
 Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di utilizzarlo. Sono disponibili opzioni per tagliare, incollare, spostare e specificare le proprietà dei componenti. Le opzioni disponibili sono:
 
-A.**Configura**: quando tocchi **Configura**, le proprietà dei componenti sono visibili nella barra laterale.
+R.**Configura**: quando selezioni **Configura**, le proprietà del componente sono visibili nella barra laterale.
 
-B.**Modifica regole**: quando tocchi Modifica regole, viene visualizzato l’Editor regole in cui puoi modificare e creare regole per il componente selezionato. Nell’Editor regole è inoltre possibile selezionare altri oggetti modulo (componenti) e modificare/creare regole per tali oggetti modulo.
+B.**Modifica regole**: quando selezioni Modifica regole, viene visualizzato l’Editor regole in cui puoi modificare e creare regole per il componente selezionato. Nell’Editor regole è inoltre possibile selezionare altri oggetti modulo (componenti) e modificare/creare regole per tali oggetti modulo.
 
 C.**Copia**: puoi utilizzare l’opzione Copia per copiare un componente e incollarlo in altre posizioni nella comunicazione interattiva.
 
@@ -113,7 +113,7 @@ G. **Incolla**: consente di incollare il componente tagliato o copiato utilizzan
 
 H. **Gruppo**: consente di selezionare più componenti se si desidera tagliare, copiare o incollare più componenti contemporaneamente.
 
-I. **Elemento principale**: consente di selezionare l’elemento principale di un componente.
+I. **Elemento padre**: consente di selezionare l’elemento padre di un componente.
 
 J. **Visualizza espressione SOM:** Consente di visualizzare [Espressione SOM](../../forms/using/using-som-expressions-adaptive-forms.md) per il componente.
 
@@ -129,14 +129,14 @@ Inoltre, la **Sostituisci** sulla barra degli strumenti consente di sostituire i
 
 La barra degli strumenti Pagina nella parte superiore fornisce opzioni che consentono di visualizzare in anteprima la comunicazione interattiva e modificarne le proprietà. Puoi visualizzare in anteprima la comunicazione interattiva quando la crei e apportare le modifiche necessarie. Nella barra degli strumenti della pagina sono disponibili le seguenti opzioni:
 
-* Attiva/Disattiva pannello laterale![ attiva/disattiva pannello laterale](assets/toggle-side-panel.png): consente di mostrare o nascondere la barra laterale.
+* Attiva/Disattiva pannello laterale ![interruttore-pannello laterale](assets/toggle-side-panel.png): consente di mostrare o nascondere la barra laterale.
 * Informazioni pagina ![pageinformationad](assets/pageinformationad.png): consente di visualizzare le proprietà della pagina.
 * Emulatore ![righello](assets/ruler.png): consente di simulare l’aspetto della comunicazione interattiva per diverse dimensioni di display, ad esempio tablet e telefoni.
-* Modifica: consente di selezionare altre modalità, ad esempio: Modifica, Stile, Sviluppatore e Progettazione.
+* Modifica: consente di selezionare altre modalità, ad esempio Modifica, Stile, Sviluppatore e Progettazione.
 
    * Modifica: consente di modificare le proprietà della comunicazione interattiva e dei relativi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
    * Stile: consente di applicare uno stile all’aspetto dei componenti della comunicazione interattiva. Ad esempio, in modalità stile è possibile selezionare un pannello e specificarne il colore di sfondo.
-   * Sviluppatore: consente a uno sviluppatore di:
+   * Sviluppatore: consente agli sviluppatori di:
 
       * Scopri di cosa è composta la comunicazione interattiva.
       * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.

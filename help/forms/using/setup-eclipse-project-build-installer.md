@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 6%
+source-wordcount: '704'
+ht-degree: 2%
 
 ---
 
@@ -27,12 +27,12 @@ Il pacchetto del codice sorgente dell’app AEM Forms fa riferimento al `adobe-l
 Per scaricare `adobe-aemfd-forms-app-src-pkg-<version>.zip` file, effettuare le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. In **[!UICONTROL Filtri]** sezione:
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
    2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
-1. Tocca il nome del pacchetto applicabile al sistema operativo in uso, quindi seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
+1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, quindi selezionare **[!UICONTROL Accetta termini EULA]**, e seleziona **[!UICONTROL Scarica]**.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 1. Per scaricare l’archivio del codice sorgente, apri **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** nel browser. Il file .zip dell’app Android viene scaricato sul dispositivo.
 1. Estrarre il contenuto del file .zip in una cartella del file system locale. Ad esempio: *C:\&lt;folder structure=&quot;&quot;>\adobe-lc-mobileworkspace-src-2.4.20*

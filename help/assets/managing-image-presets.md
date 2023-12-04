@@ -13,16 +13,16 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3837'
+source-wordcount: '3794'
 ht-degree: 8%
 
 ---
 
 # Gestione dei predefiniti per le immagini Dynamic Medie{#managing-image-presets}
 
-I predefiniti per immagini consentono a Adobe Experience Manager Assets di distribuire dinamicamente immagini di diverse dimensioni, in diversi formati o con altre proprietà generate dinamicamente. Ogni predefinito immagine rappresenta una raccolta predefinita di comandi di ridimensionamento e formattazione per la visualizzazione delle immagini. Quando crei un predefinito immagine, scegli una dimensione per la consegna delle immagini. È inoltre possibile scegliere i comandi di formattazione in modo che l&#39;aspetto dell&#39;immagine venga ottimizzato quando l&#39;immagine viene distribuita per la visualizzazione.
+I predefiniti per immagini consentono ad Adobe Experience Manager Assets di distribuire dinamicamente immagini di diverse dimensioni, in diversi formati o con altre proprietà dell’immagine generate dinamicamente. Ogni predefinito immagine rappresenta una raccolta predefinita di comandi di ridimensionamento e formattazione per la visualizzazione delle immagini. Quando crei un predefinito immagine, scegli una dimensione per la consegna delle immagini. È inoltre possibile scegliere i comandi di formattazione in modo che l&#39;aspetto dell&#39;immagine venga ottimizzato quando l&#39;immagine viene distribuita per la visualizzazione.
 
 Gli amministratori possono creare predefiniti per esportare le risorse. Gli utenti possono scegliere un predefinito al momento dell&#39;esportazione delle immagini, che consente anche di riformattarle in base alle specifiche specificate dall&#39;amministratore.
 
@@ -81,11 +81,11 @@ Il formato di file di Adobe Illustrator è una variante di PDF. Le principali di
 * I documenti Adobe Illustrator sono costituiti da una singola pagina con più livelli. Ogni livello viene estratto come risorsa secondaria PNG sotto la risorsa Illustrator principale.
 * I documenti PDF sono costituiti da una o più pagine. Ogni pagina viene estratta come risorsa PDF di una singola pagina sotto il documento PDF principale con più pagine.
 
-Le risorse secondarie vengono create da `Create Sub Asset process` componente all&#39;interno del `DAM Update Asset` flusso di lavoro. Per visualizzare questo componente del processo nel flusso di lavoro, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Aggiorna risorsa DAM]** > **[!UICONTROL Modifica]**.
+Le risorse secondarie vengono create da `Create Sub Asset process` componente all&#39;interno del `DAM Update Asset` flusso di lavoro. Per visualizzare questo componente di processo nel flusso di lavoro, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Aggiorna risorsa DAM]** > **[!UICONTROL Modifica]**.
 
 Vedi anche [Visualizzazione di pagine di un file con più pagine](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-Quando apri la risorsa, puoi visualizzarne le risorse secondarie o le pagine, toccare il menu Contenuto e selezionare **[!UICONTROL Risorse secondarie]** o **[!UICONTROL Pagine]**. Le risorse secondarie sono risorse reali. In altre parole, le pagine PDF vengono estratte da `Create Sub Asset` componente del flusso di lavoro. Vengono quindi archiviati come `page1.pdf`, `page2.pdf`e così via, sotto la risorsa principale. Una volta archiviati, i `DAM Update Asset` vengono elaborati dal flusso di lavoro.
+Puoi visualizzare le risorse secondarie o le pagine quando apri la risorsa, seleziona il menu Contenuto e seleziona **[!UICONTROL Risorse secondarie]** o **[!UICONTROL Pagine]**. Le risorse secondarie sono risorse reali. In altre parole, le pagine PDF vengono estratte da `Create Sub Asset` componente del flusso di lavoro. Vengono quindi archiviati come `page1.pdf`, `page2.pdf`e così via, sotto la risorsa principale. Una volta archiviati, i `DAM Update Asset` vengono elaborati dal flusso di lavoro.
 
 Per utilizzare Dynamic Medie per visualizzare in anteprima e generare rappresentazioni dinamiche di file AI, EPS o PDF, sono necessari i seguenti passaggi di elaborazione:
 
@@ -106,7 +106,7 @@ Per utilizzare Dynamic Medie per visualizzare in anteprima e generare rappresent
 
 Accedi a `Rasterize PDF/AI Image Preview Rendition` elabora opzioni dei componenti tramite `DAM Update Asset` flusso di lavoro.
 
-Tocca Adobe Experience Manager in alto a sinistra, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**. Nella pagina Modelli di flusso di lavoro, seleziona **[!UICONTROL Aggiorna risorsa DAM]**, quindi sulla barra degli strumenti tocca **[!UICONTROL Modifica]**. Il giorno [!UICONTROL Aggiorna risorsa DAM] , toccare due volte la pagina del flusso di lavoro `Rasterize PDF/AI Image Preview Rendition` per aprire la relativa finestra di dialogo Proprietà passaggio.
+Nell’angolo in alto a sinistra, seleziona Adobe Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**. Nella pagina Modelli di flusso di lavoro, seleziona **[!UICONTROL Aggiorna risorsa DAM]**, quindi sulla barra degli strumenti seleziona **[!UICONTROL Modifica]**. Il giorno [!UICONTROL Aggiorna risorsa DAM] flusso di lavoro, fai doppio clic su `Rasterize PDF/AI Image Preview Rendition` per aprire la relativa finestra di dialogo Proprietà passaggio.
 
 #### Rasterizza opzioni di rendering anteprima immagine PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -208,18 +208,18 @@ Il dimensionamento delle miniature viene definito nel seguente formato: **[!UICO
 
 **Per configurare le dimensioni delle miniature delle immagini:**
 
-1. Tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Aggiorna risorsa DAM]** > **[!UICONTROL Modifica]**.
-1. Tocca il **[!UICONTROL Risorse di immagine del processo di Dynamic Medie]** tocca o fai clic sul pulsante **[!UICONTROL Miniature]** scheda. Modifica le dimensioni delle miniature in base alle esigenze, quindi tocca **[!UICONTROL OK]**.
+1. Seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Aggiorna risorsa DAM]** > **[!UICONTROL Modifica]**.
+1. Seleziona la **[!UICONTROL Risorse di immagine del processo di Dynamic Medie]** e fai clic sul pulsante **[!UICONTROL Miniature]** scheda. Modifica le dimensioni delle miniature in base alle esigenze, quindi seleziona **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tocca il passaggio **[!UICONTROL Elabora miniature]**, quindi tocca la scheda **[!UICONTROL Miniature]**. Modifica le dimensioni delle miniature in base alle esigenze, quindi tocca **[!UICONTROL OK]**.
+1. Seleziona la **[!UICONTROL Elabora miniature]** , quindi selezionare **[!UICONTROL Miniature]** scheda. Modifica le dimensioni delle miniature in base alle esigenze, quindi seleziona **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
    >I valori nell’argomento miniature del passaggio **[!UICONTROL Elabora miniature]** devono corrispondere all’argomento miniature nel passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**.
 
-1. Tocca **[!UICONTROL Salva]** per salvare le modifiche apportate al flusso di lavoro.
+1. Seleziona **[!UICONTROL Salva]** per salvare le modifiche apportate al flusso di lavoro.
 
 ### Aumento o riduzione del numero di predefiniti immagine Dynamic Medie da visualizzare {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -238,7 +238,7 @@ I predefiniti immagine creati sono disponibili come rappresentazioni dinamiche q
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. Nella proprietà limit, modifica il numero impostando il numero desiderato, ad esempio: `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tocca **[!UICONTROL Salva tutto]**.
+1. Seleziona **[!UICONTROL Salva tutto]**.
 
 ## Creazione di un predefinito immagine Dynamic Medie {#creating-image-presets}
 
@@ -260,7 +260,7 @@ Consulta [Formato file InDesign (INDD)](#indesign-indd-file-format).
 
 **Per creare un predefinito immagine Dynamic Medie:**
 
-1. Ad Experience Manager, tocca il logo dell’Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagine]**.
+1. In Experience Manager, seleziona il logo dell’Experience Manager per accedere alla console di navigazione globale, quindi fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagine]**.
 1. Fai clic su **[!UICONTROL Crea]**. Il **[!UICONTROL Modifica predefinito immagine]** viene visualizzata la finestra.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -297,7 +297,7 @@ Experience Manager Se non specificate alcun valore, questo predefinito immagine 
 
 Quando crei o modifichi i predefiniti immagine, disponi delle opzioni descritte in questa sezione. Inoltre, Adobe consiglia di avviare le seguenti opzioni di &quot;best practice&quot;:
 
-* **[!UICONTROL Formato]** scheda (**[!UICONTROL Base]**) - Seleziona **[!UICONTROL JPEG]** o un altro formato che rispetta i tuoi requisiti. Tutti i browser web supportano il formato immagine JPEG, in quanto offre un buon compromesso tra dimensioni ridotte dei file e qualità delle immagini. Tuttavia, le immagini in formato JPEG usano uno schema di compressione che causa la perdita di dati, con possibile introduzione di artefatti di immagine indesiderati, qualora l’impostazione di compressione sia troppo bassa. Per questo motivo, Adobe consiglia di impostare la qualità di compressione su 75. Questa impostazione offre un buon compromesso tra la qualità delle immagini e le dimensioni ridotte dei file.
+* **[!UICONTROL Formato]** (**[!UICONTROL Base]** scheda) - Seleziona **[!UICONTROL JPEG]** o un altro formato che soddisfi le tue esigenze. Tutti i browser web supportano il formato immagine JPEG, in quanto offre un buon compromesso tra dimensioni ridotte dei file e qualità delle immagini. Tuttavia, le immagini in formato JPEG usano uno schema di compressione che causa la perdita di dati, con possibile introduzione di artefatti di immagine indesiderati, qualora l’impostazione di compressione sia troppo bassa. Per questo motivo, Adobe consiglia di impostare la qualità di compressione su 75. Questa impostazione offre un buon compromesso tra la qualità delle immagini e le dimensioni ridotte dei file.
 
 * **[!UICONTROL Attiva nitidezza semplice]**: non selezionare **[!UICONTROL Attiva nitidezza semplice]** (il filtro di nitidezza offre un controllo inferiore rispetto alle impostazioni Maschera definizione dettagli).
 
@@ -492,7 +492,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
 ## Modifica dei predefiniti immagine {#modifying-image-presets}
 
-1. Ad Experience Manager, tocca il logo dell’Experience Manager per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagine]**.
+1. In Experience Manager, seleziona il logo dell’Experience Manager per accedere alla console di navigazione globale, quindi fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagine]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -507,14 +507,14 @@ Se esegui Dynamic Medie in modalità ibrida, devi pubblicare manualmente i prede
 
 **Per pubblicare predefiniti immagine in Dynamic Medie - Modalità ibrida:**
 
-1. In Experience Manager, tocca o fai clic sul logo di Experience Manager per accedere alla console di navigazione globale, quindi tocca o fai clic sull’icona Strumenti e passa a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagine]**.
-1. Seleziona il predefinito immagine o più predefiniti immagine dall’elenco e tocca o fai clic su **[!UICONTROL Pubblica]**.
+1. In Experience Manager, fai clic sul logo dell’Experience Manager per accedere alla console di navigazione globale, quindi fai clic sull’icona Strumenti e vai a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagine]**.
+1. Selezionate il predefinito immagine o più predefiniti immagine dall&#39;elenco e fate clic su **[!UICONTROL Pubblica]**.
 1. Dopo la pubblicazione del predefinito immagine, lo stato cambia da Non pubblicato a Pubblicato.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ## Eliminazione dei predefiniti immagine Dynamic Medie {#deleting-image-presets}
 
-1. In Experience Manager, tocca o fai clic sul logo dell’Experience Manager per accedere alla console di navigazione globale.
-1. Tocca il **[!UICONTROL Strumenti]** , quindi passa a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagine]**.
-1. Seleziona un predefinito e fai clic su **[!UICONTROL Elimina]**. Dynamic Medie conferma che desideri eliminarlo. Tocca **[!UICONTROL Elimina]** per eliminare o toccare **[!UICONTROL Annulla]** per interrompere.
+1. In Experience Manager, fai clic sul logo dell’Experience Manager per accedere alla console di navigazione globale.
+1. Seleziona la **[!UICONTROL Strumenti]** , quindi passa a **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti immagine]**.
+1. Seleziona un predefinito e fai clic su **[!UICONTROL Elimina]**. Dynamic Medie conferma che desideri eliminarlo. Seleziona **[!UICONTROL Elimina]** per eliminare o selezionare **[!UICONTROL Annulla]** per interrompere.

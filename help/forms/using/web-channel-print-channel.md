@@ -10,7 +10,7 @@ discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
 docset: aem65
 feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 0%
@@ -35,9 +35,9 @@ Per caricare il modello, devi essere membro del gruppo utenti di forms. Per cari
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
-1. Tocca **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**.
+1. Seleziona **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**.
 
-   Individua e seleziona il modello di canale di stampa (XDP) appropriato, quindi tocca **[!UICONTROL Apri]**.
+   Individua e seleziona il modello di canale di stampa appropriato (XDP) e seleziona **[!UICONTROL Apri]**.
 
 ## Canale web {#web-channel}
 
@@ -51,23 +51,23 @@ La procedura seguente illustra come creare un modello di canale web:
 
 1. Crea una cartella di modelli per mantenere i modelli web di comunicazione interattiva, se non ne hai già uno. Per ulteriori informazioni, consulta Cartelle modelli in [Modelli di pagina - Modificabili](/help/sites-developing/page-templates-editable.md).
 
-   1. Tocca **[!UICONTROL Strumenti]** ![strumenti](assets/tools.png) > **[!UICONTROL Browser configurazioni]**.
+   1. Seleziona **[!UICONTROL Strumenti]** ![strumenti](assets/tools.png) > **[!UICONTROL Browser configurazioni]**.
       * Consulta la [Browser configurazioni](/help/sites-administering/configurations.md) per ulteriori informazioni.
-   1. Nella pagina Browser configurazioni, tocca **[!UICONTROL Crea]**.
-   1. Nella finestra di dialogo Crea configurazione, specifica un titolo per la cartella, seleziona **[!UICONTROL Modelli modificabili]**, e tocca **[!UICONTROL Crea]**.
+   1. Nella pagina Browser configurazioni, seleziona **[!UICONTROL Crea]**.
+   1. Nella finestra di dialogo Crea configurazione, specifica un titolo per la cartella, seleziona **[!UICONTROL Modelli modificabili]**, e seleziona **[!UICONTROL Crea]**.
 
       La cartella viene creata ed elencata nella pagina Browser configurazioni.
 
 1. Passa alla cartella dei modelli appropriata e crea un modello web.
 
    1. Passare alla cartella dei modelli appropriata selezionando **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]** > **`[Folder]`**.
-   1. Tocca **[!UICONTROL Crea]**.
-   1. Seleziona **[!UICONTROL Comunicazione interattiva - Canale web]** e tocca **[!UICONTROL Successivo]**.
-   1. Inserisci un titolo e una descrizione per il modello, quindi tocca **[!UICONTROL Crea]**.
+   1. Seleziona **[!UICONTROL Crea]**.
+   1. Seleziona **[!UICONTROL Comunicazione interattiva - Canale web]** e seleziona **[!UICONTROL Successivo]**.
+   1. Inserisci un titolo e una descrizione per il modello, quindi seleziona **[!UICONTROL Crea]**.
 
       Il modello viene creato e viene visualizzata una finestra di dialogo.
 
-   1. Tocca **[!UICONTROL Apri]** per aprire il modello creato nell’editor di modelli.
+   1. Seleziona **[!UICONTROL Apri]** per aprire il modello creato nell’editor di modelli.
 
       Viene visualizzato l&#39;Editor modelli.
 
@@ -77,8 +77,8 @@ La procedura seguente illustra come creare un modello di canale web:
 
 1. Per consentire l’utilizzo di questo modello per la creazione di comunicazioni interattive, abilita il modello.
 
-   1. Tocca **[!UICONTROL Strumenti]** ![strumenti](assets/tools.png) > **[!UICONTROL Modelli]**.
-   1. Passa al modello appropriato, selezionalo e tocca **[!UICONTROL Abilita]** e nel messaggio di avviso, tocca **[!UICONTROL Abilita]**.
+   1. Seleziona **[!UICONTROL Strumenti]** ![strumenti](assets/tools.png) > **[!UICONTROL Modelli]**.
+   1. Passa al modello appropriato, selezionalo e seleziona **[!UICONTROL Abilita]** e nel messaggio di avviso, seleziona **[!UICONTROL Abilita]**.
 
       Il modello è abilitato e il suo stato viene visualizzato come Abilitato. Ora puoi procedere alla creazione di una comunicazione interattiva in cui puoi utilizzare il modello di canale web appena creato.
 

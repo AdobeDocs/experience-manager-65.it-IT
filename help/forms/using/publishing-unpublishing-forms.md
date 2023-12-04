@@ -11,9 +11,9 @@ content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -69,20 +69,19 @@ Una risorsa può avere i seguenti stati:
 1. Accedi al server AEM Forms.
 1. Per selezionare e pubblicare una risorsa, effettua una delle seguenti operazioni.
 
-   1. Sposta il puntatore su una risorsa e tocca **[!UICONTROL Pubblica]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. Effettua una delle seguenti operazioni, quindi tocca Pubblica:
+   1. Sposta il puntatore su una risorsa e seleziona **[!UICONTROL Pubblica]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. Effettua una delle seguenti operazioni, quindi seleziona Pubblica:
 
-      * Se ti trovi nella vista a schede, tocca **[!UICONTROL Inserisci selezione]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), quindi tocca la risorsa. La risorsa è selezionata.
+      * Nella vista a schede, seleziona **[!UICONTROL Inserisci selezione]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)e seleziona la risorsa. La risorsa è selezionata.
       * Nella vista a elenco, seleziona la casella di controllo di una risorsa. La risorsa è selezionata.
-      * Tocca una risorsa per visualizzarne i dettagli.
+      * Seleziona una risorsa per visualizzarne i dettagli.
       * Visualizzare le proprietà di una risorsa toccando Visualizza proprietà ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
       >Non selezionare più risorse. La pubblicazione di più risorse contemporaneamente non è supportata.
 
-
-1. All’avvio del processo di pubblicazione, viene visualizzata una finestra di dialogo di conferma in cui sono elencate tutte le risorse e le risorse correlate. Nella finestra di dialogo che contiene le risorse correlate, tocca **[!UICONTROL Pubblica]**. La risorsa viene pubblicata e viene visualizzata la finestra di dialogo Pubblica esito positivo delle risorse.
+1. All’avvio del processo di pubblicazione, viene visualizzata una finestra di dialogo di conferma in cui sono elencate tutte le risorse e le risorse correlate. Nella finestra di dialogo che contiene le risorse correlate, seleziona **[!UICONTROL Pubblica]**. La risorsa viene pubblicata e viene visualizzata la finestra di dialogo Pubblica esito positivo delle risorse.
 
    >[!NOTE]
    >
@@ -107,9 +106,9 @@ AEM Forms consente di pubblicare tutte le risorse di Gestione della corrisponden
 Per pubblicare tutte le risorse di Gestione della corrispondenza su un server, completa i passaggi seguenti:
 
 1. Accedi al server AEM Forms.
-1. Tocca **Adobe Experience Manager** nella barra di navigazione globale.
-1. Tocca ![strumenti](assets/tools.png), quindi tocca **Forms**.
-1. Tocca **Pubblica risorse di gestione della corrispondenza**.
+1. Seleziona **Adobe Experience Manager** nella barra di navigazione globale.
+1. Seleziona ![strumenti](assets/tools.png)e quindi selezionare **Forms**.
+1. Seleziona **Pubblica risorse di gestione della corrispondenza**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -117,7 +116,7 @@ Per pubblicare tutte le risorse di Gestione della corrispondenza su un server, c
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. Tocca **Pubblica** nel messaggio di conferma, tocca **OK**.
+1. Seleziona **Pubblica** e nel messaggio di conferma seleziona **OK**.
 
    Al termine di un processo batch, è possibile visualizzare i dettagli dell&#39;ultima esecuzione. Ciò include informazioni quali l’accesso dell’amministratore e se l’esecuzione del batch è riuscita o meno.
 
@@ -131,27 +130,27 @@ AEM Forms consente di pianificare la pubblicazione e l’annullamento della pubb
 
 Per pianificare la data e l’ora di pubblicazione e di annullamento della pubblicazione delle risorse di Forms e Documents, segui la procedura riportata di seguito:
 
-1. Seleziona una risorsa e tocca **[!UICONTROL Visualizza proprietà]**. Viene visualizzata la pagina Proprietà metadati.
-1. Nella pagina Proprietà metadati, tocca **[!UICONTROL Avanzate]**, quindi tocca **[!UICONTROL Modifica]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Seleziona una risorsa e fai clic **[!UICONTROL Visualizza proprietà]**. Viene visualizzata la pagina Proprietà metadati.
+1. Nella pagina Proprietà metadati, seleziona **[!UICONTROL Avanzate]** e quindi selezionare **[!UICONTROL Modifica]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. In **[!UICONTROL Ora di pubblicazione]** e **[!UICONTROL Ora di disattivazione pubblicazione]** , selezionare la data e l&#39;ora.\
-   Tocca **[!UICONTROL Fine]** ![aem6forms_check](assets/aem6forms_check.png).
+   Seleziona **[!UICONTROL Fine]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Annullare la pubblicazione di una risorsa {#unpublish-an-asset}
 
-1. Seleziona una risorsa pubblicata e tocca **[!UICONTROL Annulla pubblicazione]** ![annulla pubblicazione](assets/unpublish.png).
+1. Seleziona una risorsa pubblicata e fai clic su **[!UICONTROL Annulla pubblicazione]** ![annulla pubblicazione](assets/unpublish.png).
 1. Per selezionare e annullare la pubblicazione di una risorsa, utilizza una delle seguenti opzioni.
 
-   1. Sposta il puntatore su una risorsa e tocca **[!UICONTROL Annulla pubblicazione]** ![annulla pubblicazione](assets/unpublish.png).
-   1. Effettua una delle seguenti operazioni, quindi tocca Annulla pubblicazione:
+   1. Sposta il puntatore su una risorsa e seleziona **[!UICONTROL Annulla pubblicazione]** ![annulla pubblicazione](assets/unpublish.png).
+   1. Effettua una delle seguenti operazioni, quindi seleziona Annulla pubblicazione:
 
-      * Se ti trovi nella vista a schede, tocca **[!UICONTROL Inserisci selezione]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), quindi tocca la risorsa. La risorsa è selezionata.
+      * Nella vista a schede, seleziona **[!UICONTROL Inserisci selezione]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)e seleziona la risorsa. La risorsa è selezionata.
 
-      * Nella vista a elenco, passa il puntatore su una risorsa e tocca ![selectassetcheckmark](assets/selectassetcheckmark.png) . La risorsa è selezionata.
+      * Nella vista a elenco, passa il puntatore del mouse su una risorsa e seleziona ![selectassetcheckmark](assets/selectassetcheckmark.png) . La risorsa è selezionata.
 
-      * Tocca una risorsa per visualizzarne i dettagli.
+      * Seleziona una risorsa per visualizzarne i dettagli.
       * Visualizzare le proprietà di una risorsa toccando Visualizza proprietà ![viewproperties](assets/viewproperties.png).
 
-1. All’avvio del processo di annullamento della pubblicazione, viene visualizzata una finestra di dialogo di conferma. Tocca **[!UICONTROL Annulla pubblicazione]**.
+1. All’avvio del processo di annullamento della pubblicazione, viene visualizzata una finestra di dialogo di conferma. Seleziona **[!UICONTROL Annulla pubblicazione]**.
 
    >[!NOTE]
    >
@@ -165,8 +164,8 @@ Ogni volta che si pubblica una risorsa o una lettera dopo averla modificata, vie
 >
 >Non ripristinare lo stato dell&#39;ultima lettera pubblicata se una risorsa dipendente utilizzata in tale lettera viene eliminata dal sistema.
 
-1. Seleziona una risorsa e tocca **[!UICONTROL Ripristina la versione precedentemente pubblicata]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. Prima di ripristinare la risorsa, viene visualizzata una finestra di dialogo di conferma. Tocca **[!UICONTROL Ripristina]**.
+1. Seleziona una risorsa e fai clic **[!UICONTROL Ripristina la versione precedentemente pubblicata]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Prima di ripristinare la risorsa, viene visualizzata una finestra di dialogo di conferma. Seleziona **[!UICONTROL Ripristina]**.
 
    Viene eseguito il rollback della risorsa o della lettera alla versione precedentemente pubblicata.
 
@@ -176,17 +175,17 @@ Ogni volta che si pubblica una risorsa o una lettera dopo averla modificata, vie
 >
 >Quando si elimina una risorsa, questa viene rimossa dall’istanza di pubblicazione. Quando si elimina una risorsa, viene rimossa anche la cronologia delle versioni, ad eccezione della versione di base.
 
-1. Seleziona una risorsa e tocca **[!UICONTROL Elimina]** ![eliminare](assets/delete.png).
+1. Seleziona una risorsa e fai clic **[!UICONTROL Elimina]** ![eliminare](assets/delete.png).
 
    >[!NOTE]
    >
    >L’opzione Elimina è disponibile anche quando si toccano i dettagli di una risorsa oppure si visualizzano le proprietà di una risorsa toccando Visualizza proprietà ![viewproperties](assets/viewproperties.png).
 
-1. Prima di eliminare la risorsa, viene visualizzata una finestra di dialogo di conferma. Tocca **[!UICONTROL Elimina]**.
+1. Prima di eliminare la risorsa, viene visualizzata una finestra di dialogo di conferma. Seleziona **[!UICONTROL Elimina]**.
 
    >[!NOTE]
    >
-   >Solo la risorsa selezionata viene eliminata e le risorse dipendenti e non vengono eliminate. Per verificare i riferimenti di una risorsa, tocca ![riferimenti](assets/references.png) quindi seleziona una risorsa.
+   >Solo la risorsa selezionata viene eliminata e le risorse dipendenti e non vengono eliminate. Per verificare i riferimenti di una risorsa, seleziona ![riferimenti](assets/references.png) quindi seleziona una risorsa.
    >
    >
    >Se la risorsa che stai tentando di eliminare è una risorsa figlia di un’altra risorsa, non viene eliminata. Per eliminare una risorsa di questo tipo, rimuovi i relativi riferimenti da altre risorse, quindi riprova.
@@ -200,6 +199,6 @@ Per abilitare l&#39;autenticazione per i moduli:
 1. Nel browser, apri configMgr nell’istanza Publish.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. Nella configurazione della console web di Adobe Experience Manager, fai clic su **Servizio di autenticazione Apache Sling** per configurarlo.
+1. Nella console Web Adobe Experience Manager, fai clic su **Servizio di autenticazione Apache Sling** per configurarlo.
 1. Nella finestra di dialogo Apache Sling Authentication Service che viene visualizzata, utilizza **+** per aggiungere percorsi.\
    Quando si aggiunge un percorso, il servizio di autenticazione viene abilitato per i moduli in tale percorso.

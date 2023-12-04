@@ -11,10 +11,10 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2608'
-ht-degree: 2%
+source-wordcount: '2621'
+ht-degree: 1%
 
 ---
 
@@ -28,13 +28,13 @@ Durante la creazione di una comunicazione interattiva, è possibile aggiungere g
 
 Per aggiungere e configurare un grafico in una comunicazione interattiva, effettua le seguenti operazioni:
 
-1. Tocca **Componenti** dalla barra laterale della comunicazione interattiva.
+1. Seleziona **Componenti** dalla barra laterale della comunicazione interattiva.
 1. Trascina la **Grafico** a uno dei seguenti componenti:
 
    * Canale di stampa: area di destinazione o campo Immagine
    * Canale web: pannello o area di destinazione
 
-1. Tocca il componente Grafico nell’editor di comunicazione interattiva e seleziona **[!UICONTROL Configura (]** ![configure_icon](assets/configure_icon.png)) dalla barra degli strumenti Componente.
+1. Seleziona il componente grafico nell’editor di comunicazione interattiva e seleziona **[!UICONTROL Configura (]** ![configure_icon](assets/configure_icon.png)) dalla barra degli strumenti Componente.
 
    Le proprietà del grafico vengono visualizzate nel riquadro sinistro.
 
@@ -47,13 +47,13 @@ Per aggiungere e configurare un grafico in una comunicazione interattiva, effett
    Proprietà di base di un grafico a linee nel canale web
 
 1. Configurare [proprietà grafico](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) in base al tipo di canale.
-1. (Solo canale di stampa) In **[!UICONTROL Impostazioni agente]**, specifica se l&#39;agente deve obbligatoriamente utilizzare questo grafico. Se i **[!UICONTROL È Obbligatorio Per L’Agente Utilizzare Questo Grafico]** non è selezionata, l’agente può toccare l’icona dell’occhio per il grafico nella **[!UICONTROL Contenuto]** nell’interfaccia utente dell’agente per mostrare o nascondere il grafico.
+1. (Solo canale di stampa) In **[!UICONTROL Impostazioni agente]**, specifica se l&#39;agente deve obbligatoriamente utilizzare questo grafico. Se i **[!UICONTROL È Obbligatorio Per L’Agente Utilizzare Questo Grafico]** non è selezionata, l&#39;agente può selezionare l&#39;icona dell&#39;occhio per il grafico nel **[!UICONTROL Contenuto]** nell’interfaccia utente dell’agente per mostrare o nascondere il grafico.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Tocca ![done_icon](assets/done_icon.png) per salvare le proprietà del grafico.
+1. Seleziona ![done_icon](assets/done_icon.png) per salvare le proprietà del grafico.
 
-   Tocca **[!UICONTROL Anteprima]** per visualizzare l&#39;aspetto e i dati associati al grafico. Tocca **[!UICONTROL Modifica]** per riconfigurare le proprietà del grafico.
+   Seleziona **[!UICONTROL Anteprima]** per visualizzare l&#39;aspetto e i dati associati al grafico. Seleziona **[!UICONTROL Modifica]** per riconfigurare le proprietà del grafico.
 
 ## Configurare le proprietà del grafico {#configure-chart-properties}
 
@@ -64,7 +64,7 @@ Configura le seguenti proprietà durante la creazione di grafici per i canali di
   <tr>
    <td>Campo</td>
    <td>Descrizione</td>
-   <td>Tipo canale</td>
+   <td>Tipo di canale</td>
   </tr>
   <tr>
    <td>Nome</td>
@@ -169,7 +169,7 @@ Configura le seguenti proprietà durante la creazione di grafici per i canali di
      <li><strong>Punto di riferimento &gt; Tipo di associazione: </strong>Disponibile per grafici a quadrante per<strong> </strong>specificare il tipo di associazione per il punto di riferimento. Utilizzare la proprietà dell'oggetto modello dati o testo statico per definire il valore per il punto di riferimento.</li>
      <li><strong>Punto di riferimento &gt; Asse X: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di associazione per specificare il valore dell'asse X per il punto di riferimento.</li>
      <li><strong>Punto di riferimento &gt; Asse Y: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di associazione per specificare il valore dell'asse Y per il punto di riferimento.</li>
-     <li><strong>Punto di riferimento &gt; Oggetto modello dati per serie: </strong>Disponibile per grafici a quadrante a serie multiple se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Definisci le proprietà oggetto modello dati del modulo per identificare la serie per il punto di riferimento. </li>
+     <li><strong>Punto di riferimento &gt; Oggetto modello dati per serie: </strong>Disponibile per grafici a quadrante a serie multiple se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Definisci la proprietà dell’oggetto modello dati del modulo per identificare la serie per il punto di riferimento. </li>
      <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per serie: </strong>Disponibile per grafici a quadrante a serie multiple se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Utilizzare la proprietà object del modello dati del modulo per la serie e il valore definito in questo campo per identificare la serie per il punto di riferimento.</li>
      <li><strong>Punto di riferimento &gt; Oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Definisci una proprietà dell’oggetto modello dati del modulo di pari livello rispetto alle proprietà tracciate sull’asse X e sull’asse Y. Inoltre, per le serie multiple, definire una proprietà oggetto modello dati che sia un'entità figlio della proprietà oggetto modello dati definita per la serie.</li>
      <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici a quadrante se si seleziona <span class="uicontrol">Oggetto modello dati</code> dall'elenco a discesa Tipo di associazione. Utilizzare la proprietà dell'oggetto modello dati del modulo per il punto di riferimento e il valore definito in questo campo per identificare il punto di riferimento per il grafico.<br /> <strong>Etichette quadrante &gt; In alto a sinistra:</strong> Disponibile per i grafici a quadrante per specificare il nome del quadrante superiore sinistro.</li>

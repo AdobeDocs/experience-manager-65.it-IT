@@ -4,7 +4,7 @@ description: Installa AEM Forms Document Services per creare, assemblare, distri
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2ad9cea10bcd152f4d2d874553bdbd3133dbe847
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '5499'
 ht-degree: 1%
@@ -365,11 +365,11 @@ Copiare il tipo di carattere Unicode in una delle seguenti directory, a seconda 
 Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata nell’AEM. Il pacchetto contiene AEM Forms Document Services e altre funzionalità di AEM Forms. Per installare il pacchetto, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. In **[!UICONTROL Filtri]** sezione:
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
    2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
-1. Tocca il nome del pacchetto applicabile al sistema operativo in uso, quindi seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
+1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, quindi selezionare **[!UICONTROL Accetta termini EULA]**, e seleziona **[!UICONTROL Scarica]**.
 1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
@@ -491,7 +491,7 @@ Tramite la gestione dell&#39;archivio fonti attendibili è possibile importare, 
 
 1. Accedi all’istanza di AEM Forms come amministratore.
 1. Vai a  **[!UICONTROL Strumenti]** >  **[!UICONTROL Sicurezza]** >  **[!UICONTROL Archivio fonti attendibili]**.
-1. Clic  **[!UICONTROL Crea TrustStore]**. Imposta la password e tocca **[!UICONTROL Salva]**.
+1. Clic  **[!UICONTROL Crea TrustStore]**. Imposta la password e seleziona **[!UICONTROL Salva]**.
 
 ### Configurazione dei certificati per il servizio di crittografia e l&#39;estensione del Reader {#set-up-certificates-for-reader-extension-and-encryption-service}
 

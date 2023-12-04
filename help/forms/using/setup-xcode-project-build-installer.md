@@ -10,10 +10,10 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 5%
+source-wordcount: '773'
+ht-degree: 2%
 
 ---
 
@@ -24,12 +24,12 @@ AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L’origine
 Per ottenere l’origine dell’app AEM Forms, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. In **[!UICONTROL Filtri]** sezione:
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
    2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
-1. Tocca il nome del pacchetto applicabile al sistema operativo in uso, quindi seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
+1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, quindi selezionare **[!UICONTROL Accetta termini EULA]**, e seleziona **[!UICONTROL Scarica]**.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
 1. Per scaricare l’archivio del codice sorgente, apri `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` nel browser.

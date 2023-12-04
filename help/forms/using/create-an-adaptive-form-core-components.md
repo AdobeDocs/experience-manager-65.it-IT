@@ -10,10 +10,10 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 23%
+source-wordcount: '1743'
+ht-degree: 20%
 
 ---
 
@@ -64,24 +64,24 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 1. Accedi al tuo account locale [Istanza di authoring AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
-1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra tocca **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
-1. Tocca **[!UICONTROL Crea]**  > **[!UICONTROL Creare un Forms adattivo]**.
+1. Seleziona **[!UICONTROL Crea]**  > **[!UICONTROL Creare un Forms adattivo]**.
 
 1. Seleziona un modello di Componenti core Forms adattivi e fai clic su **[!UICONTROL Successivo]**.
 
 1. Il **[!UICONTROL Aggiungi proprietà]** viene visualizzato. Specificare i valori per i seguenti campi proprietà. I campi Titolo e Nome sono obbligatori:
 
    * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nell’interfaccia utente di [!DNL Experience Manager Forms].
-   * **[!UICONTROL Nome:]** specifica il nome del modulo. Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo nome può contenere solo caratteri alfanumerici, trattini e caratteri di sottolineatura.
+   * **[!UICONTROL Nome:]** specifica il nome del modulo. Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo del nome può contenere solo caratteri alfanumerici, trattini e trattini bassi.
    * **[!UICONTROL Descrizione:]** Specifica le informazioni dettagliate sul modulo.
    * **[!UICONTROL Libreria client tema]:** Specifica il tema per un modulo adattivo. Per impostazione predefinita, il `adaptiveform.theme.canvas3` Il tema è selezionato. Puoi anche scegliere un tema diverso dal **[!UICONTROL Libreria client tema]** menu a discesa.
    * **[!UICONTROL Contenitore configurazione:]**  Definisce un percorso in cui vengono memorizzati i file di configurazione per Adaptive Forms. Questi file di configurazione contengono impostazioni e proprietà relative al comportamento e all’aspetto di Adaptive Forms.
    * **[!UICONTROL Tag:]** Specifica i tag per identificare in modo univoco il modulo adattivo. Aiuto sui tag nella ricerca nel modulo. Per creare i tag, digita i nuovi nomi dei tag nel **[!UICONTROL Tag]** casella.
-1. Tocca **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica.
+1. Seleziona **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica.
 
 
-1. Tocca **[!UICONTROL Modifica]** per aprire il modulo appena creato in una nuova scheda. Il modulo si apre per la modifica e visualizza il contenuto disponibile nel modello. Viene inoltre visualizzata la barra laterale per personalizzare il modulo appena creato.
+1. Seleziona **[!UICONTROL Modifica]** per aprire il modulo appena creato in una nuova scheda. Il modulo si apre per la modifica e visualizza il contenuto disponibile nel modello. Viene inoltre visualizzata la barra laterale per personalizzare il modulo appena creato.
 
 
 ## Utilizzare i componenti core di Forms adattivi per creare il modulo
@@ -170,11 +170,11 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
+1. Select the Adaptive Form and select ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
 1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
-1. Tap **[!UICONTROL Save]** to save the properties.
+1. Select **[!UICONTROL Save]** to save the properties.
 -->
 
 ## Passaggio successivo

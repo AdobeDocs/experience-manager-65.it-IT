@@ -5,9 +5,9 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -56,14 +56,14 @@ Per configurare il [!DNL MySQL] database:
    1. Scarica [!DNL MySQL] JDBC Driver OSGi Bundle da `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
    1. Accedere a AEM [!DNL Forms] Crea istanza come amministratore e vai ai bundle della console web AEM. L’URL predefinito è [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
-   1. Tocca **[!UICONTROL Installa/Aggiorna]**. Un [!UICONTROL Caricare/Installare i bundle] viene visualizzata.
+   1. Seleziona **[!UICONTROL Installa/Aggiorna]**. Un [!UICONTROL Caricare/Installare i bundle] viene visualizzata.
 
-   1. Tocca **[!UICONTROL Scegli file]** per esplorare e selezionare [!DNL MySQL] Pacchetto OSGi del driver JDBC. Seleziona **[!UICONTROL Bundle iniziale]** e **[!UICONTROL Aggiorna pacchetti]**, e tocca **[!UICONTROL Installare o aggiornare]**. Assicurati che il [!DNL Oracle Corporation's] driver JDBC per [!DNL MySQL] sia attivo. Il driver è installato.
+   1. Seleziona **[!UICONTROL Scegli file]** per esplorare e selezionare [!DNL MySQL] Pacchetto OSGi del driver JDBC. Seleziona **[!UICONTROL Bundle iniziale]** e **[!UICONTROL Aggiorna pacchetti]**, e seleziona **[!UICONTROL Installare o aggiornare]**. Assicurati che il [!DNL Oracle Corporation's] driver JDBC per [!DNL MySQL] sia attivo. Il driver è installato.
 
 1. Configurare [!DNL MySQL] il database come origine dati:
 
    1. Vai a AEM console Web all&#39;indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Individua **la configurazione Apache Sling Connection Pooled DataSource** . Toccare per aprire la configurazione in modalità di modifica.
+   1. Individua **la configurazione Apache Sling Connection Pooled DataSource** . Selezionare questa opzione per aprire la configurazione in modalità di modifica.
    1. Nella finestra di dialogo di configurazione, specifica i dettagli seguenti:
 
       * **Nome origine dati:** È possibile specificare qualsiasi nome. Ad esempio, specifica **WeRetailMySQL**.
@@ -87,7 +87,7 @@ Per configurare il [!DNL MySQL] database:
       * **Query di convalida:** Specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio: **seleziona &#42; da customerdetails**.
       * **Isolamento transazione**: imposta il valore su **READ_COMMIT**.
 
-        Lascia altre proprietà con impostazione predefinita [valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e tocca **[!UICONTROL Salva]**.
+        Lascia altre proprietà con impostazione predefinita [valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e seleziona **[!UICONTROL Salva]**.
 
         Viene creata una configurazione simile alla seguente.
 
@@ -100,9 +100,9 @@ AEM [!DNL Forms] offre un’interfaccia utente intuitiva per [creare un modello 
 Per creare il modello dati del modulo, effettua le seguenti operazioni:
 
 1. Nell’istanza di authoring dell’AEM, passa a **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni di dati]**.
-1. Tocca **[!UICONTROL Crea]** > **[!UICONTROL Modello dati modulo]**.
-1. Nella finestra di dialogo Crea modello dati modulo, specifica un **nome** per il modello dati del modulo. Ad esempio: **customer-shipping-billing-details**. Tocca **[!UICONTROL Successivo]**.
-1. Nella schermata Seleziona origine dati sono elencate tutte le origini dati configurate. Seleziona **WeRetailMySQL** origine dati e tocco **[!UICONTROL Crea]**.
+1. Seleziona **[!UICONTROL Crea]** > **[!UICONTROL Modello dati modulo]**.
+1. Nella finestra di dialogo Crea modello dati modulo, specifica un **nome** per il modello dati del modulo. Ad esempio: **customer-shipping-billing-details**. Seleziona **[!UICONTROL Avanti]**.
+1. Nella schermata Seleziona origine dati sono elencate tutte le origini dati configurate. Seleziona **WeRetailMySQL** origine dati e selezionare **[!UICONTROL Crea]**.
 
    ![data-source-selection](assets/data-source-selection.png)
 
@@ -140,7 +140,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
       * ottenere
       * aggiorna
 
-   Tocca **Aggiungi selezionati** per aggiungere al modello dati del modulo oggetti e servizi modello dati selezionati.
+   Seleziona **Aggiungi selezionati** per aggiungere al modello dati del modulo oggetti e servizi modello dati selezionati.
 
    ![Schema WeRetail](assets/weretail_schema_new.png)
 
@@ -150,8 +150,8 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
 1. Configurare i servizi di lettura e scrittura per l&#39;oggetto modello dati.
 
-   1. Seleziona la **customerdetails** oggetto modello dati e tocca **[!UICONTROL Modifica proprietà]**.
-   1. Seleziona **[!UICONTROL ottenere]** dal menu a discesa Servizio di lettura. Il **id** , che rappresenta la chiave primaria nell&#39;oggetto modello dati customerdetails, viene aggiunto automaticamente. Tocca ![aem_6_3_edit](assets/aem_6_3_edit.png) e configura l’argomento come segue.
+   1. Seleziona la **customerdetails** oggetto modello dati e seleziona **[!UICONTROL Modifica proprietà]**.
+   1. Seleziona **[!UICONTROL ottenere]** dal menu a discesa Servizio di lettura. Il **id** , che rappresenta la chiave primaria nell&#39;oggetto modello dati customerdetails, viene aggiunto automaticamente. Seleziona ![aem_6_3_edit](assets/aem_6_3_edit.png) e configura l’argomento come segue.
 
       ![read-default](assets/read-default.png)
 
@@ -163,7 +163,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
       ![id-arg](assets/id-arg.png)
 
-   1. Toccare **[!UICONTROL Fine]** per salvare le proprietà dell&#39;oggetto modello dati. Quindi, tocca **[!UICONTROL Salva]** per salvare il modello di dati del modulo.
+   1. Selezionare **[!UICONTROL Fine]** per salvare le proprietà dell&#39;oggetto modello dati. **[!UICONTROL Selezionare quindi Salva]** per salvare il modello dati modulo.
 
       Il **[!UICONTROL ottenere]** e **[!UICONTROL aggiorna]** I servizi vengono aggiunti come servizi predefiniti per l&#39;oggetto modello dati.
 
@@ -171,7 +171,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
 1. Vai a **[!UICONTROL Servizi]** e configurare **[!UICONTROL ottenere]** e **[!UICONTROL aggiorna]** servizi.
 
-   1. Seleziona la **[!UICONTROL ottenere]** servizio e tocco **[!UICONTROL Modifica proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
+   1. Seleziona la **[!UICONTROL ottenere]** servizio e selezione **[!UICONTROL Modifica proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
    1. Nella finestra di dialogo Modifica Proprietà, specifica quanto segue:
 
       * **Titolo**: specifica il titolo del servizio. Ad esempio: Recupera indirizzo di spedizione.
@@ -186,11 +186,11 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
       * **Array di ritorno**: disabilita il **Array di ritorno** opzione.
       * **Argomenti**: argomento di selezione denominato **ID**.
 
-      Tocca **[!UICONTROL Fine]**. Il servizio per il recupero dei dettagli del cliente dal database MySQL è configurato.
+      Seleziona **[!UICONTROL Fine]**. Il servizio per il recupero dei dettagli del cliente dal database MySQL è configurato.
 
       ![Shiiping-address-recupero](assets/shiiping-address-retrieval.png)
 
-   1. Seleziona la **[!UICONTROL aggiorna]** servizio e tocco **[!UICONTROL Modifica proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
+   1. Seleziona la **[!UICONTROL aggiorna]** servizio e selezione **[!UICONTROL Modifica proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà.
 
    1. Specifica quanto segue in [!UICONTROL Modifica proprietà] finestra di dialogo:
 
@@ -207,7 +207,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
 
       * **Argomenti**: seleziona nome argomento **ID** e **customerdetails**.
 
-      Tocca **[!UICONTROL Fine]**. Il **[!UICONTROL aggiorna]** servizio per aggiornare i dettagli del cliente in [!DNL MySQL] il database è configurato.
+      Seleziona **[!UICONTROL Fine]**. Il **[!UICONTROL aggiorna]** servizio per aggiornare i dettagli del cliente in [!DNL MySQL] il database è configurato.
 
       ![indirizzo-spedizione-aggiornamento](assets/shiiping-address-update.png)
 
@@ -219,9 +219,9 @@ L’oggetto modello dati e i servizi nel modello dati del modulo sono configurat
 
 Per eseguire il test, eseguire le operazioni seguenti:
 
-1. Vai a **[!UICONTROL Modello]** , seleziona la scheda **customerdetails** oggetto modello dati e tocca **[!UICONTROL Oggetto modello di test]**.
+1. Vai a **[!UICONTROL Modello]** , seleziona la scheda **customerdetails** oggetto modello dati e selezionare **[!UICONTROL Oggetto modello di test]**.
 1. In [!UICONTROL Modello/servizio di prova] finestra, seleziona **[!UICONTROL Leggi oggetto modello]** dal **[!UICONTROL Seleziona modello/servizio]** a discesa.
-1. In **customerdetails** , specificare un valore per la sezione **id** argomento esistente nella configurazione [!DNL MySQL] database e tocco **[!UICONTROL Test]**.
+1. In **customerdetails** , specificare un valore per la sezione **id** argomento esistente nella configurazione [!DNL MySQL] database e selezionare **[!UICONTROL Test]**.
 
    I dettagli del cliente associati all&#39;ID specificato vengono recuperati e visualizzati nel **[!UICONTROL Output]** come illustrato di seguito.
 

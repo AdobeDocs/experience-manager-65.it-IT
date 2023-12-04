@@ -10,9 +10,9 @@ discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando i
 1. Apri la pagina dei siti AEM, in modalità di modifica, in cui desideri incorporare un modulo adattivo o una comunicazione interattiva.
 1. Inserisci il **Modulo AEM per SPA** sulla pagina utilizzando una delle seguenti opzioni:
 
-   * Tocca il contenitore di layout nella pagina Sites, quindi tocca **+** e seleziona la **Modulo AEM per SPA** componente.
+   * Seleziona il contenitore di layout nella pagina Sites e fai clic su **+** e seleziona la **Modulo AEM per SPA** componente.
 
    * Dal pannello del browser Componenti, trascina **Modulo AEM per SPA** sulla pagina.
    * Cerca un modulo adattivo o una comunicazione interattiva nel browser Risorse e trascinalo sulla pagina Sites. Incorpora il modulo in un contenitore di componenti AEM Forms for SPA.
@@ -68,7 +68,7 @@ Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando i
    >
    >Il rendering di più componenti AEM Forms SPA Container in una pagina non è supportato. Puoi avere più Contenitori SPA di AEM Forms su una pagina, ma viene eseguito il rendering di un solo componente alla volta. Assicurati che in una pagina sia visibile un solo componente per evitare discrepanze.
 
-1. Tocca il componente Contenitore SPA di AEM Forms incorporato nella pagina Sites, quindi tocca ![icona_impostazioni](assets/settings_icon.png) sulla barra delle azioni. Il **Modifica contenitore SPA di AEM Forms** viene visualizzata una finestra di dialogo.
+1. Seleziona il componente Contenitore SPA di AEM Forms incorporato nella pagina Sites, quindi seleziona ![icona_impostazioni](assets/settings_icon.png) sulla barra delle azioni. Il **Modifica contenitore SPA di AEM Forms** viene visualizzata una finestra di dialogo.
 1. In **Modifica contenitore AEM Forms** , specificare quanto segue:
 
    * **Tipo risorsa:** Seleziona il tipo di risorsa da incorporare. Le opzioni sono **Modulo adattivo** e **Comunicazione interattiva**
@@ -78,7 +78,7 @@ Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando i
 
    * **Tema**: seleziona un tema che definisce lo stile dei componenti del modulo adattivo o della comunicazione interattiva. Lo stile include proprietà di aspetto quali lo stile del carattere, il colore di sfondo, le dimensioni e l&#39;allineamento.
 
-1. Tocca ![done_icon](assets/done_icon.png) per salvare le impostazioni. Il modulo adattivo o la comunicazione interattiva è ora incorporato nella pagina.
+1. Seleziona ![done_icon](assets/done_icon.png) per salvare le impostazioni. Il modulo adattivo o la comunicazione interattiva è ora incorporato nella pagina.
 
 ## Pubblicare moduli adattivi incorporati e comunicazione interattiva {#publish-embedded-adaptive-form-and-interactive-communication}
 
@@ -95,7 +95,7 @@ La pagina dei siti AEM mantiene un riferimento al modulo adattivo e alla comunic
 Per modificare la configurazione o la proprietà del modulo adattivo incorporato e della comunicazione interattiva, effettua una delle seguenti operazioni.
 
 * Apri il modulo originale nei moduli adattivi o nella comunicazione interattiva nei rispettivi editor e modificali.
-* In modalità di modifica, tocca il modulo adattivo o la comunicazione interattiva dalla pagina Sites, quindi tocca **Modifica in una nuova finestra**. Il modulo originale si apre in modalità di modifica.
+* Seleziona il modulo adattivo o la comunicazione interattiva dalla pagina Sites in modalità di modifica, quindi seleziona **Modifica in una nuova finestra**. Il modulo originale si apre in modalità di modifica.
 
 ## Considerazioni e best practice {#considerations-and-best-practices}
 

@@ -10,9 +10,9 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2099'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Il tema Ultramarine-Accessible è un tema di riferimento. Illustra come corregge
 
 1. Scarica il pacchetto del tema.
 1. Accedi a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigazione]** ![Navigazione](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** sull’istanza AEM.
-1. Tocca **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**. Seleziona e carica il file x Ultramarine-Accessible-Theme.zip. Carica il tema nell’istanza AEM.
+1. Seleziona **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**. Seleziona e carica il file x Ultramarine-Accessible-Theme.zip. Carica il tema nell’istanza AEM.
 
 ## Rendere accessibile un modulo adattivo
 
@@ -65,8 +65,8 @@ Per rendere accessibile un modulo adattivo, è necessario concentrarsi su quattr
 Applica al modulo adattivo esistente il tema Accessibile in modalità ultramarina. Per applicare il tema:
 
 1. Apri il modulo adattivo per la modifica.
-1. Seleziona un componente e tocca l’icona principale. Nel menu di scelta rapida, tocca **[!UICONTROL Contenitore modulo adattivo]** quindi tocca l’icona configura.
-1. Seleziona il tema Ultramarine-Accessible nel browser delle proprietà e tocca **[!UICONTROL Salva]** icona.
+1. Seleziona un componente e fai clic sull’icona principale. Nel menu di scelta rapida, selezionare **[!UICONTROL Contenitore modulo adattivo]** quindi seleziona l’icona configura.
+1. Seleziona il tema Ultramarine-Accessible nel browser delle proprietà e seleziona **[!UICONTROL Salva]** icona.
 1. Aggiorna la finestra del browser. Il tema viene applicato al modulo adattivo.
 
 Dopo aver applicato un tema accessibile, esegui le correzioni aggiuntive elencate di seguito. Le correzioni si aggiungono alle correzioni di accessibilità trattate nel tema accessibile:
@@ -107,7 +107,7 @@ L’etichetta percepita dagli assistenti vocali non deve necessariamente essere 
 
 Per utilizzare l&#39;opzione Accessibilità, effettuare le seguenti operazioni:
 
-1. Seleziona un componente e tocca ![cmppr](assets/cmppr.png).
+1. Seleziona un componente e seleziona ![cmppr](assets/cmppr.png).
 1. Clic **[!UICONTROL Accessibilità]** nella barra laterale per scegliere l’opzione di accessibilità desiderata.
 
 ### Opzioni di accessibilità nei componenti del modulo {#accessibility-options-in-form-components}
@@ -135,7 +135,7 @@ Le immagini possono aiutare alcuni utenti a comprendere meglio la situazione. Tu
 
 Verificare che il testo descriva l&#39;oggetto e il relativo scopo nel modulo. Un assistente vocale legge questo testo alternativo quando incontra un’immagine. Per un&#39;immagine deve essere sempre specificato un testo alternativo.
 
-Seleziona un componente immagine e tocca ![cmppr](assets/cmppr.png). Nella barra laterale, in Proprietà, specifica il testo alternativo per un’immagine.
+Seleziona un componente immagine e seleziona ![cmppr](assets/cmppr.png). Nella barra laterale, in Proprietà, specifica il testo alternativo per un’immagine.
 
 ![Testo alternativo per un&#39;immagine](assets/image-properties.png)
 
@@ -157,14 +157,14 @@ In AEM Forms sono disponibili le seguenti scelte rapide da tastiera.
 
 | Azione | Scelta rapida da tastiera |
 |---|---|
-| Spostare il cursore in avanti in un modulo | Tabulazione |
+| Spostare il cursore in avanti in un modulo | Linguetta |
 | Spostare il cursore all&#39;indietro in un modulo | Maiusc+Tab |
 | Passa al pannello successivo | Alt+Freccia destra |
 | Passa al pannello precedente | Alt+Freccia sinistra |
 | Reimpostare i dati compilati in un modulo | ALT+R |
 | Inviare un modulo | ALT+S |
 
-Sono inoltre disponibili vari tasti di scelta rapida per **[!UICONTROL Selettore data]** in Adaptive Forms. Per attivare i tasti di scelta rapida, toccare **[!UICONTROL Selettore data]** componente e tocca ![Configura](assets/configure-icon.svg) per aprire le proprietà. In **[!UICONTROL Pattern]** , selezionare un motivo di visualizzazione utilizzando la **[!UICONTROL Tipo]** e **[!UICONTROL Pattern]** elenchi a discesa. Salva le proprietà per abilitare l&#39;utilizzo dei tasti di scelta rapida per **[!UICONTROL Selettore data]** componente.
+Sono inoltre disponibili vari tasti di scelta rapida per **[!UICONTROL Selettore data]** in Adaptive Forms. Per attivare i tasti di scelta rapida, selezionare **[!UICONTROL Selettore data]** componente e seleziona ![Configura](assets/configure-icon.svg) per aprire le proprietà. In **[!UICONTROL Pattern]** , selezionare un motivo di visualizzazione utilizzando la **[!UICONTROL Tipo]** e **[!UICONTROL Pattern]** elenchi a discesa. Salva le proprietà per abilitare l&#39;utilizzo dei tasti di scelta rapida per **[!UICONTROL Selettore data]** componente.
 
 Per il componente Selezione data in Adaptive Forms sono disponibili i seguenti tasti di scelta rapida da tastiera:
 
@@ -172,7 +172,7 @@ Per il componente Selezione data in Adaptive Forms sono disponibili i seguenti t
 |---|---|
 | <ul><li>Visualizzare le opzioni del componente Selezione data quando lo stato attivo della scheda evidenzia l’icona del calendario</li><li>Esegui l’evento clic quando lo stato attivo della scheda evidenzia un’opzione</li> | Spazio o Invio |
 | Nascondi le opzioni del componente Selettore data | Esc |
-| <ul><li>Sposta il cursore in avanti tra le opzioni disponibili nel componente Selettore data.</li><li>Imposta lo stato attivo della scheda sull’icona del calendario quando il campo di immissione data è attivo</li> | Tabulazione |
+| <ul><li>Sposta il cursore in avanti tra le opzioni disponibili nel componente Selettore data.</li><li>Imposta lo stato attivo della scheda sull’icona del calendario quando il campo di immissione data è attivo</li> | Linguetta |
 | Sposta il cursore all’indietro tra le opzioni disponibili nel componente Selettore data | Maiusc+Tab |
 | <ul><li>Visualizzare le opzioni del componente Selezione data quando lo stato attivo della scheda evidenzia il campo di immissione della data</li><li>Sposta il cursore verso il basso nel calendario disponibile nel componente Selettore data</li> | Freccia giù |
 | Sposta il cursore verso l’alto nel calendario disponibile nel componente Selettore data | Freccia Su |

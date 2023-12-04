@@ -10,10 +10,10 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 1%
+source-wordcount: '886'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +42,7 @@ Quando il modulo adattivo viene pubblicato come pagina AEM, l’intera pagina we
 
 1. Accedere a AEM [!DNL Forms] istanza di authoring e individuare il modulo adattivo shipping-address-add-update-form nell’AEM [!DNL Forms] UI.
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
-1. Seleziona il modulo adattivo shipping-address-add-update-form e tocca **[!UICONTROL Pubblica]**. Viene visualizzata una finestra di dialogo contenente le risorse correlate al modulo adattivo. Tocca **[!UICONTROL Pubblica]**. Il modulo adattivo viene pubblicato e viene visualizzata una finestra di dialogo di successo.
+1. Seleziona il modulo adattivo shipping-address-add-update-form e seleziona **[!UICONTROL Pubblica]**. Viene visualizzata una finestra di dialogo contenente le risorse correlate al modulo adattivo. Seleziona **[!UICONTROL Pubblica]**. Il modulo adattivo viene pubblicato e viene visualizzata una finestra di dialogo di successo.
 1. Apri il modulo sull’istanza Publish. Il modulo può essere compilato e inviato dall’utente finale.
    `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
@@ -58,11 +58,11 @@ AEM [!DNL Forms] fornire una componente, AEM [!DNL Forms] Contenitore per incorp
 
    Il sito We.Retail è fornito con AEM. Se non hai installato il sito We.Retail, vedi per [Implementazione di riferimento We.Retail](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) installare il sito.
 
-1. Tocca ![proprietà](assets/properties.png) informazioni sulla pagina e selezionare **[!UICONTROL Modifica modello]** nella pagina del sito We.Retail appena creata. Il modello della pagina si apre in una nuova scheda del browser.
-1. Tocca all’interno di **[!UICONTROL contenitore layout]** box e tocca ![gestione dei feed](assets/feedmanagement.png). In **[!UICONTROL Componenti consentiti]** , espandere la scheda **[!UICONTROL Generale]** Pannello a soffietto, seleziona la **[!UICONTROL Modulo AEM]** e tocca ![save_icon](assets/save_icon.svg). L&#39;AEM [!DNL Forms] Il componente Contenitore è abilitato per la pagina.
+1. Seleziona ![proprietà](assets/properties.png) informazioni sulla pagina e selezionare **[!UICONTROL Modifica modello]** nella pagina del sito We.Retail appena creata. Il modello della pagina si apre in una nuova scheda del browser.
+1. Seleziona all&#39;interno del **[!UICONTROL contenitore layout]** e seleziona ![gestione dei feed](assets/feedmanagement.png). In **[!UICONTROL Componenti consentiti]** , espandere la scheda **[!UICONTROL Generale]** Pannello a soffietto, seleziona la **[!UICONTROL Modulo AEM]** e seleziona ![save_icon](assets/save_icon.svg). L&#39;AEM [!DNL Forms] Il componente Contenitore è abilitato per la pagina.
 
-1. Apri la scheda del browser contenente AEM [!DNL Sites] pagina aperta al passaggio 1. Tocca il **[!UICONTROL Trascina qui i componenti]** box e tocca **+.** In **[!UICONTROL Inserisci nuovo componente]** box, tocca **[!UICONTROL Modulo AEM]**. Il **[!UICONTROL Contenitore AEM Forms]** viene aggiunto alla pagina.
-1. Tocca il **[!UICONTROL Contenitore AEM Forms]** componente e tocca ![icona di configurazione](assets/configure-icon.svg). Una finestra di dialogo con le proprietà dell&#39;AEM [!DNL Forms] Viene visualizzato Contenitore. In **[!UICONTROL Percorso risorsa]** sfoglia e seleziona il modulo adattivo shipping-address-add-update-form. Tocca ![save_icon](assets/save_icon.svg). Il modulo adattivo è incorporato nella pagina.
+1. Apri la scheda del browser contenente AEM [!DNL Sites] pagina aperta al passaggio 1. Seleziona la **[!UICONTROL Trascina qui i componenti]** e seleziona **+.** In **[!UICONTROL Inserisci nuovo componente]** , seleziona **[!UICONTROL Modulo AEM]**. Il **[!UICONTROL Contenitore AEM Forms]** viene aggiunto alla pagina.
+1. Seleziona la **[!UICONTROL Contenitore AEM Forms]** componente e seleziona ![icona di configurazione](assets/configure-icon.svg). Una finestra di dialogo con le proprietà dell&#39;AEM [!DNL Forms] Viene visualizzato Contenitore. In **[!UICONTROL Percorso risorsa]** sfoglia e seleziona il modulo adattivo shipping-address-add-update-form. Seleziona ![save_icon](assets/save_icon.svg). Il modulo adattivo è incorporato nella pagina.
 1. Pubblicare sia il modulo adattivo che [!DNL Sites] pagina. Di seguito sono riportati alcuni punti da considerare:
 
    * Se pubblichi l’AEM [!DNL Sites] per la prima volta e include un modulo incorporato, pubblica il [!DNL Sites] e il modulo incorporato.

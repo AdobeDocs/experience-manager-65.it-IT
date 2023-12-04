@@ -8,10 +8,10 @@ topic-tags: forms-app
 discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
 docset: aem65
 exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -22,12 +22,12 @@ AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L’origine
 Per ottenere l’origine dell’app AEM Forms, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. In **[!UICONTROL Filtri]** sezione:
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
    2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
-1. Tocca il nome del pacchetto applicabile al sistema operativo in uso, quindi seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
+1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, quindi selezionare **[!UICONTROL Accetta termini EULA]**, e seleziona **[!UICONTROL Scarica]**.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
 1. Per scaricare l’archivio del codice sorgente, apri `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` nel browser.\
@@ -107,8 +107,6 @@ Per generare e distribuire l’app AEM Forms, effettua le seguenti operazioni.
    1. Cartella dipendenze
    1. File di PowerShell (estensione ps1)
 
-
-
 ## Distribuzione di un&#39;app tramite Windows PowerShell {#deploying-an-app-using-windows-powershell}
 
 Esistono due modi per installare l&#39;applicazione su un dispositivo Windows.
@@ -138,7 +136,7 @@ Per distribuire l’app:
 
 1. Nel dispositivo, esegui `gpedit.msc`.
 1. Accedi a **Configurazione computer > Modelli amministrativi > Componente Windows > Distribuzione pacchetto app**.
-1. Fare clic con il pulsante destro del mouse su **Consenti l&#39;installazione di tutte le app attendibili**.
+1. Clic con il pulsante destro **Consenti l&#39;installazione di tutte le app attendibili**.
 1. Clic **Modifica** e seleziona **Abilitato**.
 
 1. Fai clic su **OK**.

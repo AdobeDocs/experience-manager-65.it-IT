@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 feature: Adaptive Forms
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Per creare pannelli ripetibili, potete utilizzare uno dei seguenti metodi:
 
 ## Utilizzo di Instance Manager tramite script  {#using-instance-manager-via-scripts-nbsp}
 
-1. In modalità di modifica, seleziona un pannello, quindi tocca ![cmppr](assets/cmppr.png). Nella barra laterale, in Proprietà, abilita **Rendi il pannello ripetibile**. Specifica i valori per **[!UICONTROL Massimo]** e **[!UICONTROL Minimo]** campi.
+1. In modalità di modifica, seleziona un pannello, quindi seleziona ![cmppr](assets/cmppr.png). Nella barra laterale, in Proprietà, abilita **Rendi il pannello ripetibile**. Specifica i valori per **[!UICONTROL Massimo]** e **[!UICONTROL Minimo]** campi.
 
    Il campo Massimo specifica il numero massimo di volte in cui un pannello può essere visualizzato sulla pagina. Puoi specificare -1 nel campo Conteggio massimo per consentire la visualizzazione del pannello per un numero infinito di volte.
 
@@ -40,7 +40,7 @@ Per creare pannelli ripetibili, potete utilizzare uno dei seguenti metodi:
 
 1. L’elemento principale del pannello, che deve essere ripetuto, deve contenere pulsanti di aggiunta ed eliminazione per gestire le istanze dei pannelli ripetibili. Per inserire pulsanti nell&#39;elemento padre e attivare gli script sui pulsanti, effettuare le seguenti operazioni:
 
-   1. Dalla barra laterale, trascina un componente pulsante nell’elemento principale del pannello. Seleziona il componente e tocca ![edit-rules](assets/edit-rules.png). Le regole del pulsante si aprono nell’editor di regole.
+   1. Dalla barra laterale, trascina un componente pulsante nell’elemento principale del pannello. Seleziona il componente e seleziona ![edit-rules](assets/edit-rules.png). Le regole del pulsante si aprono nell’editor di regole.
    1. Nella finestra Editor regole, fai clic su **Crea**.
 
       Seleziona **Editor visivo** nella riga Oggetti e funzioni modulo.
@@ -100,8 +100,8 @@ Per creare pannelli ripetibili, potete utilizzare uno dei seguenti metodi:
 
 Un pannello dispone di varie opzioni di layout. L’opzione Layout per pannello a soffietto supporta i pannelli ripetibili come funzionalità integrata. Effettua le seguenti operazioni per creare un pannello ripetibile con l’opzione Layout per la progettazione del pannello a soffietto:
 
-1. Nell’elemento padre del pannello da ripetere, tocca ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà nella barra laterale. In **Layout** a discesa, seleziona **Accordion**.
-1. In un pannello da ripetere, tocca ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà del pannello nella barra laterale. Abilita **Rendi il pannello ripetibile** e specifica il valore per la scheda **Massimo** e **Minimo** campi.
+1. Sulla parte superiore del pannello da ripetere, seleziona ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà nella barra laterale. In **Layout** a discesa, seleziona **Accordion**.
+1. In un pannello da ripetere, seleziona ![cmppr](assets/cmppr.png). Puoi visualizzare le proprietà del pannello nella barra laterale. Abilita **Rendi il pannello ripetibile** e specifica il valore per la scheda **Massimo** e **Minimo** campi.
 
    Ora è possibile utilizzare il segno più (+) ed eliminare ( ![delete-panel](assets/delete-panel.png)) per aggiungere e rimuovere i pannelli.
 

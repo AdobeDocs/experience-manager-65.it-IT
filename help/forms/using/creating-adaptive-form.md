@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: 654dcb7c9bbb73420df7494b21fddb8cb4fdd39a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 1%
+source-wordcount: '1923'
+ht-degree: 6%
 
 ---
 
@@ -27,20 +27,20 @@ Per creare un modulo adattivo, segui la procedura riportata di seguito.
 
 1. Accesso [!DNL Experience Manager Forms] Istanza di authoring in `https://'[server]:[port]'/<custom-context-if-any>.`
 
-1. Immetti le credenziali nella pagina di accesso di Experience Manager.
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager.
 
-   Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra tocca **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+   Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
    >[!NOTE]
    >
    >Per un’installazione predefinita, l’accesso è `admin` e la password è `admin`.
 
-1. Tocca **[!UICONTROL Crea]** e seleziona **[!UICONTROL Modulo adattivo]**.
-1. Viene visualizzata un&#39;opzione per selezionare un modello. Per ulteriori informazioni sui modelli, consulta [Modelli di modulo adattivo](creating-adaptive-form.md#p-adaptive-form-templates-p). Tocca un modello per selezionarlo, quindi tocca Avanti.
+1. Seleziona **[!UICONTROL Crea]** e seleziona **[!UICONTROL Modulo adattivo]**.
+1. Viene visualizzata un&#39;opzione per selezionare un modello. Per ulteriori informazioni sui modelli, consulta [Modelli di modulo adattivo](creating-adaptive-form.md#p-adaptive-form-templates-p). Seleziona un modello per selezionarlo, quindi fai clic su Avanti.
 1. Viene visualizzata un&#39;opzione per &quot;Aggiungi proprietà&quot;. Specificare i valori per i seguenti campi proprietà. I campi Titolo e Nome sono obbligatori:
 
-   * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nel [!DNL Experience Manager Forms] dell&#39;utente.
-   * **[!UICONTROL Nome:]** Specifica il nome del modulo. Nell&#39;archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo del nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo del nome può contenere solo caratteri alfanumerici, trattini e trattini bassi. Tutti gli input non validi vengono sostituiti da un trattino.
+   * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nell’interfaccia utente di [!DNL Experience Manager Forms].
+   * **[!UICONTROL Nome:]** specifica il nome del modulo. Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo nome può contenere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti da un trattino.
    * **[!UICONTROL Descrizione:]** Specifica le informazioni dettagliate sul modulo.
    * **[!UICONTROL Tag:]** Specifica i tag per identificare in modo univoco il modulo adattivo. Aiuto sui tag nella ricerca nel modulo. Per creare i tag, digita i nuovi nomi dei tag nel **[!UICONTROL Tag]** casella.
 
@@ -53,13 +53,13 @@ Per creare un modulo adattivo, segui la procedura riportata di seguito.
 
    Puoi configurarli dalla sezione **[!UICONTROL Modello modulo]** scheda della **[!UICONTROL Aggiungi proprietà]** pagina. Per impostazione predefinita, il modello di modulo selezionato è **[!UICONTROL Nessuno]**.
 
-1. Tocca **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica.
+1. Seleziona **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica.
 
    Dopo aver specificato tutte le proprietà, fare clic su **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica.
 
    Dopo aver specificato tutte le proprietà, fare clic su **[!UICONTROL Crea]**. Viene creato un modulo adattivo e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica.
 
-1. Tocca **[!UICONTROL Apri]** per aprire il modulo appena creato in una nuova scheda. Il modulo si apre per la modifica e visualizza il contenuto disponibile nel modello. Viene inoltre visualizzata la barra laterale per personalizzare il modulo appena creato in base alle esigenze.
+1. Seleziona **[!UICONTROL Apri]** per aprire il modulo appena creato in una nuova scheda. Il modulo si apre per la modifica e visualizza il contenuto disponibile nel modello. Viene visualizzata inoltre la barra laterale per personalizzare il modulo appena creato in base alle esigenze.
 
    In base al tipo di modulo adattivo, gli elementi del modulo presenti nel modello di modulo XFA, nello schema XML o nello schema JSON associato vengono visualizzati nel **[!UICONTROL Oggetti modello dati]** scheda di **[!UICONTROL Browser contenuti]** nella barra laterale. Puoi anche trascinare questi elementi per creare il modulo adattivo.
 
@@ -79,7 +79,7 @@ Per utilizzare un modello di dati modulo per creare un modulo adattivo:
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Tocca per espandere **[!UICONTROL Seleziona modello dati modulo]**. Sono elencati tutti i modelli di dati dei moduli disponibili.
+1. Seleziona per espandere **[!UICONTROL Seleziona modello dati modulo]**. Sono elencati tutti i modelli di dati dei moduli disponibili.
 
    Seleziona un dal modello dati.
 
@@ -120,12 +120,12 @@ Consulta i seguenti documenti per comprendere come progettare schemi XML o JSON 
 
 Per utilizzare uno schema XML o JSON come modello di modulo per un modulo adattivo, effettua le seguenti operazioni:
 
-1. Il giorno **[!UICONTROL Aggiungi proprietà]** passaggio della pagina di creazione di moduli adattivi, tocca il **[!UICONTROL Modello modulo]** scheda.
+1. Il giorno **[!UICONTROL Aggiungi proprietà]** passaggio della pagina di creazione di moduli adattivi, seleziona nella **[!UICONTROL Modello modulo]** scheda.
 1. Nella scheda Modello modulo, seleziona **[!UICONTROL Schema]** dal **[!UICONTROL Seleziona da]** campo a discesa.
 
-1. Tocca **[!UICONTROL Seleziona schema]** ed effettuare una delle seguenti operazioni:
+1. Seleziona **[!UICONTROL Seleziona schema]** ed effettuare una delle seguenti operazioni:
 
-   * **[!UICONTROL Carica da disco]** - Seleziona questa opzione e tocca Carica definizione schema per sfogliare e caricare uno schema XML o JSON dal file system. Il file dello schema caricato risiede con il modulo e non è accessibile ad altri moduli adattivi.
+   * **[!UICONTROL Carica da disco]** : seleziona questa opzione e seleziona Carica definizione schema per sfogliare e caricare uno schema XML o JSON dal file system. Il file dello schema caricato risiede con il modulo e non è accessibile ad altri moduli adattivi.
    * **[!UICONTROL Cerca nel repository]** - Selezionare questa opzione per effettuare una selezione dall&#39;elenco dei file di definizione dello schema disponibili nel repository. Seleziona il file di schema XML o JSON come modello del modulo. Lo schema selezionato è associato al modulo per riferimento ed è accessibile per l’utilizzo in altri moduli adattivi.
 
    >[!CAUTION]
@@ -158,13 +158,13 @@ Inoltre, puoi utilizzare l’editor modelli per creare modelli personalizzati. P
 
 I moduli adattivi vengono creati senza un modello di modulo (utilizzando l’opzione Nessuno per il modello di modulo) o utilizzando un modello di modulo come un modello di modulo, uno schema XML o uno schema JSON o un modello di dati del modulo. È possibile modificare il modello di modulo per un modulo adattivo da Nessuno a un altro modello di modulo. Per i moduli adattivi basati su un modello di modulo, è possibile scegliere un altro modello di modulo, uno schema XML, uno schema JSON o un altro modello di dati del modulo per lo stesso modello di modulo. Non è tuttavia possibile passare da un modello di modulo a un altro.
 
-1. Seleziona il modulo adattivo e tocca il **Proprietà** icona.
-1. Apri **[!UICONTROL Modello modulo]** ed effettuare una delle seguenti operazioni.
+1. Seleziona il modulo adattivo e fai clic su **Proprietà** icona.
+1. Apri la scheda **[!UICONTROL Modello modulo]** ed effettua una delle seguenti operazioni.
 
    * Se il modulo adattivo non dispone di un modello di modulo, puoi scegliere un altro modello di modulo e di conseguenza selezionare un modello di modulo, uno schema XML o JSON o un modello di dati del modulo.
    * Se il modulo adattivo è basato su un modello di modulo, è possibile scegliere un altro modello di modulo, uno schema XML o JSON o un modello di dati del modulo per lo stesso modello di modulo.
 
-1. Tocca **[!UICONTROL Salva]** per salvare le proprietà.
+1. Seleziona **[!UICONTROL Salva]** per salvare le proprietà.
 
 ## Salvataggio automatico di un modulo adattivo {#auto-save-an-adaptive-form}
 
@@ -179,7 +179,7 @@ Per impostazione predefinita, il contenuto di un modulo adattivo viene salvato d
 
 Per impostazione predefinita, l’opzione di salvataggio automatico non è abilitata. Puoi abilitare l’opzione salvataggio automatico dalla scheda Salvataggio automatico di un modulo adattivo. La scheda Salvataggio automatico fornisce anche diverse altre opzioni di configurazione. Per abilitare e configurare l’opzione di salvataggio automatico per un modulo adattivo, effettua le seguenti operazioni:
 
-1. Per accedere alla sezione di salvataggio automatico nelle proprietà, seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]**, quindi tocca ![cmppr](assets/cmppr.png).
+1. Per accedere alla sezione di salvataggio automatico nelle proprietà, seleziona un componente, quindi fai clic su ![a livello di campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]** e quindi selezionare ![cmppr](assets/cmppr.png).
 1. In **[!UICONTROL Salvataggio automatico]** sezione, **[!UICONTROL Abilita]** opzione di salvataggio automatico.
 1. In **[!UICONTROL Evento modulo adattivo]** , specificare 1 o TRUE per iniziare automaticamente a salvare il modulo al caricamento nel browser. È inoltre possibile specificare un&#39;espressione condizionale per un evento che, quando viene attivato e restituisce true, inizia a salvare il contenuto del modulo.
 1. Specifica il trigger. Il salvataggio automatico viene attivato in base alla configurazione. Le opzioni disponibili sono:
@@ -208,4 +208,4 @@ Per impostazione predefinita, l’opzione di salvataggio automatico non è abili
    >
    >Affinché l&#39;opzione di salvataggio automatico funzioni per gli utenti anonimi, accertati di configurare il servizio Configurazione comune di Forms per consentire a tutti gli utenti di visualizzare in anteprima, verificare e firmare i moduli.
    >
-   >Per configurare il servizio, vai alla pagina di configurazione della console web di Adobe Experience Manager all’indirizzo `https://'[server]:[port]'system/console/configMgr` e modificare il **[!UICONTROL Servizio di configurazione comune di Forms]** per scegliere **[!UICONTROL Tutti gli utenti]** opzione in **[!UICONTROL Consenti]** e salva la configurazione.
+   >Per configurare il servizio, vai alla pagina di configurazione della console web Adobe Experience Manager all’indirizzo `https://'[server]:[port]'system/console/configMgr` e modificare il **[!UICONTROL Servizio di configurazione comune di Forms]** per scegliere **[!UICONTROL Tutti gli utenti]** opzione in **[!UICONTROL Consenti]** e salva la configurazione.

@@ -8,9 +8,9 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ A ogni cliente viene assegnato un numero ID cliente univoco, che consente di ide
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. Tocca il **[!UICONTROL ID cliente]** e tocca il **[!UICONTROL Modifica regole]** icona. Viene visualizzata la finestra Editor regole.
-1. Tocca il **[!UICONTROL + Crea]** per aggiungere una regola. Viene aperto l&#39;Editor visivo.
+1. Seleziona la **[!UICONTROL ID cliente]** e selezionare il **[!UICONTROL Modifica regole]** icona. Viene visualizzata la finestra Editor regole.
+1. Seleziona la **[!UICONTROL + Crea]** per aggiungere una regola. Viene aperto l&#39;Editor visivo.
 
    Nell&#39;editor visivo, il **[!UICONTROL QUANDO]** è selezionata per impostazione predefinita. Inoltre, l&#39;oggetto modulo (in questo caso, **[!UICONTROL ID cliente]**) da dove hai avviato l&#39;editor di regole è specificato in **[!UICONTROL QUANDO]** dichiarazione.
 
-1. Tocca il **[!UICONTROL Seleziona stato]** a discesa e selezionare **[!UICONTROL è stato modificato]**.
+1. Seleziona la **[!UICONTROL Seleziona stato]** a discesa e selezionare **[!UICONTROL è stato modificato]**.
 
    ![quando customeridischanged](assets/whencustomeridischanged.png)
 
@@ -64,7 +64,7 @@ A ogni cliente viene assegnato un numero ID cliente univoco, che consente di ide
 
    ![dropobjectstooutputfield-recuperedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Tocca **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell’editor delle regole, tocca **[!UICONTROL Chiudi]**.
+   Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell’editor delle regole, seleziona **[!UICONTROL Chiudi]**.
 
 1. Visualizza l’anteprima del modulo adattivo. Immetti un ID in **[!UICONTROL ID cliente]** campo. Il modulo ora può recuperare i dettagli del cliente dal database.
 
@@ -74,8 +74,8 @@ A ogni cliente viene assegnato un numero ID cliente univoco, che consente di ide
 
 Dopo aver recuperato i dettagli del cliente dal database, puoi aggiornare l’indirizzo di spedizione, lo stato e il codice postale. La procedura seguente richiama un servizio del modello dati modulo per aggiornare le informazioni sul cliente nel database:
 
-1. Seleziona la **[!UICONTROL Invia]** e tocca il **[!UICONTROL Modifica regole]** icona. Viene visualizzata la finestra Editor regole.
-1. Seleziona la **[!UICONTROL Submit - Click]** e tocca il **[!UICONTROL Modifica]** icona. Vengono visualizzate le opzioni per modificare la regola di invio.
+1. Seleziona la **[!UICONTROL Invia]** e selezionare il **[!UICONTROL Modifica regole]** icona. Viene visualizzata la finestra Editor regole.
+1. Seleziona la **[!UICONTROL Submit - Click]** e seleziona la **[!UICONTROL Modifica]** icona. Vengono visualizzate le opzioni per modificare la regola di invio.
 
    ![submit-rule](assets/submit-rule.png)
 
@@ -83,7 +83,7 @@ Dopo aver recuperato i dettagli del cliente dal database, puoi aggiornare l’in
 
    ![invio su cui si fa clic](assets/submit-is-clicked.png)
 
-1. In **[!UICONTROL THEN]** , toccare il **[!UICONTROL + Aggiungi istruzione]** opzione. Seleziona **[!UICONTROL Richiama servizio]** dal **[!UICONTROL Seleziona azione]** a discesa.
+1. In **[!UICONTROL THEN]** , seleziona l&#39;opzione **[!UICONTROL + Aggiungi istruzione]** opzione. Seleziona **[!UICONTROL Richiama servizio]** dal **[!UICONTROL Seleziona azione]** a discesa.
 1. Seleziona la **[!UICONTROL Aggiorna indirizzo di spedizione]** servizio da **[!UICONTROL Seleziona]** a discesa.
 
    ![update-shipping-address](assets/update-shipping-address.png)
@@ -97,7 +97,7 @@ Dopo aver recuperato i dettagli del cliente dal database, puoi aggiornare l’in
    >Non trascinare **[!UICONTROL Nome]** e **[!UICONTROL ID cliente]** campi corrispondenti a tablename.property (ad esempio, customerdetails.name). Consente di evitare di aggiornare il nome e l’ID del cliente per errore.
 
 1. Trascina la selezione **[!UICONTROL ID cliente]** campo da [!UICONTROL Oggetti modulo] scheda al campo id nella sezione **[!UICONTROL INPUT]** casella. I campi senza un nome di tabella preceduto (ad esempio, customerdetails in questo caso d’uso) fungono da parametro di ricerca per il servizio di aggiornamento. Il **[!UICONTROL id]** in questo caso d’uso identifica in modo univoco un record nel  **customerdetails**  tabella.
-1. Tocca **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell’editor delle regole, tocca **[!UICONTROL Chiudi]**.
+1. Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell’editor delle regole, seleziona **[!UICONTROL Chiudi]**.
 1. Visualizza l’anteprima del modulo adattivo. Recupera i dettagli di un cliente, aggiorna l’indirizzo di spedizione e invia il modulo. Quando recuperi nuovamente i dettagli dello stesso cliente, viene visualizzato l’indirizzo di spedizione aggiornato.
 
 ## Passaggio 3: (sezione Bonus) Utilizza l’editor di codice per eseguire convalide e visualizzare messaggi di errore {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -108,12 +108,12 @@ I moduli adattivi forniscono diversi componenti con convalide incorporate, ad es
 
 Nella procedura seguente viene illustrato come creare una regola per visualizzare un messaggio di errore se l&#39;ID cliente immesso nel modulo non esiste nel database. La regola porta anche lo stato attivo su e ripristina il **[!UICONTROL ID cliente]** campo. La regola utilizza [API dataIntegrationUtils del servizio modello dati modulo](/help/forms/using/invoke-form-data-model-services.md) per verificare se l’ID cliente esiste nel database.
 
-1. Tocca il **[!UICONTROL ID cliente]** e tocca il `Edit Rules` icona. Il [!UICONTROL Editor regole] viene visualizzata la finestra.
-1. Tocca il **[!UICONTROL + Crea]** per aggiungere una regola. Viene aperto l&#39;Editor visivo.
+1. Seleziona la **[!UICONTROL ID cliente]** e selezionare il `Edit Rules` icona. Il [!UICONTROL Editor regole] viene visualizzata la finestra.
+1. Seleziona la **[!UICONTROL + Crea]** per aggiungere una regola. Viene aperto l&#39;Editor visivo.
 
    Nell&#39;editor visivo, il **[!UICONTROL QUANDO]** è selezionata per impostazione predefinita. Inoltre, l&#39;oggetto modulo (in questo caso, **[!UICONTROL ID cliente]**) da dove hai avviato l&#39;editor di regole è specificato in **[!UICONTROL QUANDO]** dichiarazione.
 
-1. Tocca il **[!UICONTROL Seleziona stato]** a discesa e selezionare **[!UICONTROL è stato modificato]**.
+1. Seleziona la **[!UICONTROL Seleziona stato]** a discesa e selezionare **[!UICONTROL è stato modificato]**.
 
    ![quando customeridischanged](assets/whencustomeridischanged.png)
 

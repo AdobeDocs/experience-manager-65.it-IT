@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Prima di configurare una cartella controllata, verifica quanto segue:
 
 Per creare una cartella controllata, effettua le seguenti operazioni:
 
-1. Tocca **Adobe Experience Manager** nell&#39;angolo superiore sinistro dello schermo.
-1. Tocca **Strumenti** > **Forms** > **Configura cartella controllata.** Viene visualizzato un elenco delle cartelle controllate già configurate.
-1. Tocca **Nuovo**. Viene visualizzato un elenco dei campi necessari per creare la cartella controllata:
+1. Seleziona **Adobe Experience Manager** nell&#39;angolo superiore sinistro dello schermo.
+1. Seleziona **Strumenti** > **Forms** > **Configura cartella controllata.** Viene visualizzato un elenco delle cartelle controllate già configurate.
+1. Seleziona **Nuovo**. Viene visualizzato un elenco dei campi necessari per creare la cartella controllata:
 
    * **Nome**: identifica la cartella controllata. Utilizza solo caratteri alfanumerici per il nome.
    * **Percorso**: specifica il percorso della cartella controllata. In un ambiente cluster, questa impostazione deve puntare a una cartella di rete condivisa accessibile a tutti gli utenti che eseguono AEM su nodi diversi di un cluster.
@@ -59,7 +59,7 @@ Per creare una cartella controllata, effettua le seguenti operazioni:
 
    * **Pattern file di output**: specifica un elenco delimitato da punti e virgola (;) di pattern utilizzati da una cartella controllata per determinare il nome e la posizione dei file e delle cartelle di output. Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui pattern dei file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-1. Tocca **Avanzate**. La scheda avanzata contiene altri campi. La maggior parte di questi campi contiene un valore predefinito.
+1. Seleziona **Avanzate**. La scheda avanzata contiene altri campi. La maggior parte di questi campi contiene un valore predefinito.
 
    * **Filtro mappatore payload:** Quando si crea una cartella controllata, viene creata una struttura di cartelle all&#39;interno della cartella controllata. La struttura di cartelle include cartelle di staging, risultato, conservazione, input e errore. La struttura di cartelle può fungere da payload di input per il flusso di lavoro e accettare l’output da un flusso di lavoro. Può anche elencare eventuali punti di errore. La struttura di un payload è diversa da quella di una cartella controllata. Puoi scrivere script personalizzati per mappare la struttura di una cartella controllata al payload. Tale script è denominato filtro di mappatura payload. Sono disponibili due implementazioni predefinite per la mappatura del payload. Se non ha [un’implementazione personalizzata](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilizza un’implementazione preconfigurata:
 
@@ -113,7 +113,7 @@ Per creare una cartella controllata, effettua le seguenti operazioni:
 
 Oltre a modificare il nome della cartella controllata, è possibile modificare tutte le proprietà di una cartella controllata esistente. Per modificare le proprietà di una cartella controllata esistente, effettua le seguenti operazioni:
 
-1. Tocca il **Adobe Experience Manager** nell’angolo in alto a sinistra dello schermo.
-1. Tocca **Strumenti** > **Forms** > **Configura cartella controllata.** Viene visualizzato un elenco delle cartelle controllate già configurate.
-1. Sul lato sinistro della schermata Cartella controllata, seleziona la cartella di controllo e tocca **Modifica.** Viene visualizzato un elenco dei campi necessari per creare la cartella controllata. I campi elencati nella **Base** La tabulazione è obbligatoria. La scheda avanzata contiene altri campi. La maggior parte di questi campi contiene un valore predefinito. Puoi modificare queste proprietà in base alle tue esigenze.
-1. Dopo aver modificato le proprietà, tocca **Aggiorna**. Le proprietà modificate vengono salvate.
+1. Seleziona la **Adobe Experience Manager** nell’angolo in alto a sinistra dello schermo.
+1. Seleziona **Strumenti** > **Forms** > **Configura cartella controllata.** Viene visualizzato un elenco delle cartelle controllate già configurate.
+1. Nella parte sinistra della schermata Cartella controllata, seleziona la cartella di controllo e fai clic su **Modifica.** Viene visualizzato un elenco dei campi necessari per creare la cartella controllata. I campi elencati nella **Base** La tabulazione è obbligatoria. La scheda avanzata contiene altri campi. La maggior parte di questi campi contiene un valore predefinito. Puoi modificare queste proprietà in base alle tue esigenze.
+1. Dopo aver modificato le proprietà, seleziona **Aggiorna**. Le proprietà modificate vengono salvate.

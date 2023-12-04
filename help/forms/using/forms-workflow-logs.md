@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 5%
@@ -81,12 +81,12 @@ Effettua le seguenti operazioni per abilitare la registrazione di debug per i fl
    https://&#39;[server]:[porta]&#39;/system/console/configMgr
 
 1. Seleziona **[!UICONTROL Sling]** > **[!UICONTROL Supporto registro]**.
-1. Tocca **[!UICONTROL Aggiungi nuovo logger.]**
+1. Seleziona **[!UICONTROL Aggiungi nuovo logger.]**
 1. Seleziona **[!UICONTROL Debug]** come **[!UICONTROL Livello registro]**.
 1. Specificare il percorso del file di registro. Il percorso predefinito del file di registro è: *logs\error.log*
 1. Specifica il nome del pacchetto come **com.adobe.granite.workflow.core** nel **[!UICONTROL Logger]** colonna.
 
-   L’esecuzione di questi passaggi abilita l’archiviazione dei registri di debug per **com.adobe.granite.workflow.core** pacchetto. Tocca **[!UICONTROL +]** e aggiungi i seguenti nomi di pacchetto all’elenco:
+   L’esecuzione di questi passaggi abilita l’archiviazione dei registri di debug per **com.adobe.granite.workflow.core** pacchetto. Seleziona **[!UICONTROL +]** e aggiungi i seguenti nomi di pacchetto all’elenco:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

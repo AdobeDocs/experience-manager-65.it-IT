@@ -6,9 +6,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3849'
+source-wordcount: '3832'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Dopo un [il modello di lettera viene creato in Gestione corrispondenza](../../fo
 
 Selezionare la lettera da visualizzare in anteprima seguendo la procedura descritta di seguito.
 
-1. Nella pagina Lettere, tocca **Seleziona**.
+1. Nella pagina Lettere, seleziona **Seleziona**.
 1. Seleziona la lettera appropriata toccandola.
 
    ![Seleziona lettera](assets/1_selectletter.png)
 
    Seleziona lettera
 
-1. Per una lettera basata sul dizionario dati, seleziona **Anteprima** > **Anteprima**. In alternativa, per una lettera non basata su dizionario dati, selezionare **Anteprima**. Puoi anche passare il cursore su una lettera (senza selezionarla) e toccare l’icona Anteprima lettera per visualizzarla in anteprima.
+1. Per una lettera basata sul dizionario dati, seleziona **Anteprima** > **Anteprima**. In alternativa, per una lettera non basata su dizionario dati, selezionare **Anteprima**. Puoi anche passare il cursore su una lettera (senza selezionarla) e selezionare l’icona Anteprima lettera per visualizzarne l’anteprima.
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Nella scheda Dati, compila i campi di layout e i segnaposto disponibili.
 
 1. Immetti i dati e le variabili di contenuto nei campi, in base alle esigenze. Compila tutti i campi obbligatori contrassegnati da un asterisco (&#42;) per attivare **Invia** pulsante.
 
-   Tocca un valore di campo dati nell’anteprima della lettera HTML per evidenziare il campo dati corrispondente nella scheda Dati.
+   Selezionare un valore di campo dati nell&#39;anteprima lettera HTML per evidenziare il campo dati corrispondente nella scheda Dati.
 
    ![Immetti i dati nella lettera](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
@@ -75,7 +75,7 @@ Nella scheda del contenuto, gestisci il contenuto, ad esempio frammenti di docum
 
    ![Scheda Contenuto - Evidenzia il modulo nel contenuto](assets/3_content.png)
 
-1. Modifica i moduli di contenuto, come richiesto, nella scheda Contenuto. Per spostare lo stato attivo sul modulo del contenuto rilevante nella gerarchia del contenuto, tocca la riga o il paragrafo pertinente nell’anteprima della lettera oppure tocca il modulo del contenuto direttamente nella gerarchia del contenuto.
+1. Modifica i moduli di contenuto, come richiesto, nella scheda Contenuto. Per spostare lo stato attivo sul modulo del contenuto rilevante nella gerarchia del contenuto, puoi selezionare la riga o il paragrafo pertinente nell’anteprima della lettera oppure selezionare il modulo del contenuto direttamente nella gerarchia del contenuto.
 
    Ad esempio, la riga &quot;Abbiamo rivisto...&quot; è selezionata nell’immagine seguente e il relativo modulo di contenuto è selezionato nella scheda Contenuto.
 
@@ -86,8 +86,8 @@ Nella scheda del contenuto, gestisci il contenuto, ad esempio frammenti di docum
    Per ulteriori informazioni sulle azioni disponibili per i vari moduli nell’interfaccia utente Crea corrispondenza, consulta [Azioni e informazioni disponibili nell’interfaccia utente per la creazione di corrispondenza](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
 1. Per individuare i moduli di contenuto, utilizzare il campo Trova. Inserisci il nome o il titolo completo o parziale del modulo di contenuto per cercarlo nella corrispondenza.
-1. Tocca l’icona Schermo ( ![visualizzare](assets/display.png)) davanti a un elenco, testo, condizione o area di destinazione per mostrarlo o nasconderlo nella lettera.
-1. Per modificare un modulo di testo in linea o modificabile, tocca il relativo **Modifica** icona ( ![edittextmodule](assets/edittextmodule.png)) o fare doppio clic sul modulo di testo corrispondente nell&#39;anteprima della lettera.
+1. Seleziona l’icona Schermo ( ![visualizzare](assets/display.png)) davanti a un elenco, testo, condizione o area di destinazione per mostrarlo o nasconderlo nella lettera.
+1. Per modificare un modulo di testo in linea o modificabile, seleziona il relativo **Modifica** icona ( ![edittextmodule](assets/edittextmodule.png)) o fare doppio clic sul modulo di testo corrispondente nell&#39;anteprima della lettera.
 
    Il sistema visualizza un editor di testo per modificare e formattare il testo.
 
@@ -131,22 +131,22 @@ Nella scheda del contenuto, gestisci il contenuto, ad esempio frammenti di docum
 
    Gestione della corrispondenza supporta 210 caratteri speciali. L’amministratore può [aggiungi supporto per caratteri speciali aggiuntivi/personalizzati tramite personalizzazione](../../forms/using/custom-special-characters.md).
 
-1. Per evidenziare/enfatizzare parti di testo in un modulo inline modificabile, selezionate il testo e toccate Colore evidenziazione.
+1. Per evidenziare/enfatizzare parti di testo in un modulo inline modificabile, selezionate il testo e selezionate Colore evidenziazione.
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   È possibile toccare direttamente un colore di base `**[A]**` presente nella palette Colori di base o toccare **Seleziona** dopo aver utilizzato il dispositivo di scorrimento `**[B]**` per scegliere la tonalità appropriata del colore.
+   È possibile selezionare direttamente un colore di base `**[A]**` presente nella palette Colori di base o selezionare **Seleziona** dopo aver utilizzato il dispositivo di scorrimento `**[B]**` per scegliere la tonalità appropriata del colore.
 
-   Se necessario, è anche possibile passare alla scheda Avanzate per selezionare la tonalità, la luminosità e la saturazione appropriate `**[C]**` per creare il colore preciso, quindi tocca Seleziona `**[D]**` per applicare il colore per evidenziare il testo.
+   Se necessario, è anche possibile passare alla scheda Avanzate per selezionare la tonalità, la luminosità e la saturazione appropriate `**[C]**` per creare il colore preciso e selezionare Seleziona `**[D]**` per applicare il colore per evidenziare il testo.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
-1. Apporta le modifiche appropriate al contenuto e al formato e tocca **Salva**. Tocca ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) per spostarsi tra moduli di testo modificabili, oppure tocca **Salva e Successivo** per salvare le modifiche e passare al successivo modulo di testo modificabile.
-1. Il sistema visualizza anche le variabili non compilate per ciascuno dei rami. Quando non ci sono variabili vuote, le variabili vuote vengono visualizzate come 0. Se è presente una variabile non riempita, puoi toccare un ramo per espanderlo e individuare la variabile non riempita. Utilizza la barra degli strumenti del contenuto per eliminare il contenuto, aumentare/ridurre il rientro del contenuto e inserire interruzioni di pagina prima/dopo il contenuto.
+1. Apporta le modifiche appropriate al contenuto e al formato e seleziona **Salva**. Seleziona ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) per spostarsi tra moduli di testo modificabili, oppure selezionare **Salva e Successivo** per salvare le modifiche e passare al successivo modulo di testo modificabile.
+1. Il sistema visualizza anche le variabili non compilate per ciascuno dei rami. Quando non ci sono variabili vuote, le variabili vuote vengono visualizzate come 0. Se è presente una variabile non compilata, puoi selezionare un ramo per espanderla e individuare la variabile non compilata. Utilizza la barra degli strumenti del contenuto per eliminare il contenuto, aumentare/ridurre il rientro del contenuto e inserire interruzioni di pagina prima/dopo il contenuto.
 
    È possibile inserire interruzioni di pagina al di sopra e al di sotto dei moduli dati anche quando fanno parte di elenchi e condizioni.
 
-1. Tocca Apri/chiudi variabile contenuto ( ![opencontentvariables](assets/opencontentvariables.png)) per aprire le variabili di contenuto e compilarle in modo appropriato.
+1. Seleziona Apri/chiudi variabile contenuto ( ![opencontentvariables](assets/opencontentvariables.png)) per aprire le variabili di contenuto e compilarle in modo appropriato.
 1. Una volta compilata correttamente la variabile non compilata, il conteggio della variabile non compilata viene impostato su 0.
 
    Nell’interfaccia utente per la creazione di corrispondenza, il conteggio delle variabili non compilate viene visualizzato a ogni livello della gerarchia di qualsiasi modulo che contiene almeno una variabile. Se un modulo contiene variabili non compilate, il conteggio viene visualizzato a livello di variabile, modulo, area di destinazione e modello di lettera.
@@ -204,8 +204,8 @@ Nella scheda del contenuto, gestisci il contenuto, ad esempio frammenti di docum
 ### Gestisci allegati {#manage-attachments}
 
 1. Seleziona **Allegati**. Gestione corrispondenza visualizza gli allegati disponibili, in base alle impostazioni configurate durante la creazione del modello di lettera.
-1. Per scegliere di non inviare un allegato insieme alla lettera, toccare l’icona di visualizzazione e toccare la croce nell’allegato per eliminarlo dalla lettera. Per gli allegati specificati, durante la creazione di un modello di lettera, come Obbligatorio, le icone Visualizza ed Elimina sono disattivate.
-1. Tocca Accesso alla libreria ( ![accesso alla libreria](assets/libraryaccess.png)) per accedere alla Libreria dei contenuti e inserire risorse DAM come allegati.
+1. È possibile scegliere di non inviare un allegato insieme alla lettera toccando l&#39;icona di visualizzazione e selezionare la croce nell&#39;allegato per eliminarlo dalla lettera. Per gli allegati specificati, durante la creazione di un modello di lettera, come Obbligatorio, le icone Visualizza ed Elimina sono disattivate.
+1. Seleziona l&#39;accesso alla libreria ( ![accesso alla libreria](assets/libraryaccess.png)) per accedere alla Libreria dei contenuti e inserire risorse DAM come allegati.
 
    >[!NOTE]
    >
@@ -219,13 +219,13 @@ Nella scheda del contenuto, gestisci il contenuto, ad esempio frammenti di docum
 
 Puoi apportare modifiche al layout e al contenuto per garantire che la lettera abbia l’aspetto desiderato e inviarla ai vari processi di post.
 
-1. Per evidenziare tutto il contenuto modificabile nella lettera, tocca **Evidenzia sezioni modificabili**.
+1. Per evidenziare tutto il contenuto modificabile nella lettera, seleziona **Evidenzia sezioni modificabili**.
 
    Il contenuto modificabile della lettera viene evidenziato con sfondo grigio.
 
    ![Evidenzia contenuto modificabile](assets/4_highlightmoduleincontent-1.png)
 
-1. Modifica i moduli di contenuto, come richiesto, nella scheda Contenuto. Per spostare lo stato attivo sul modulo del contenuto rilevante nella gerarchia del contenuto, tocca la riga o il paragrafo pertinente nell’anteprima della lettera oppure tocca il modulo del contenuto direttamente nella gerarchia del contenuto.
+1. Modifica i moduli di contenuto, come richiesto, nella scheda Contenuto. Per spostare lo stato attivo sul modulo del contenuto rilevante nella gerarchia del contenuto, puoi selezionare la riga o il paragrafo pertinente nell’anteprima della lettera oppure selezionare il modulo del contenuto direttamente nella gerarchia del contenuto.
 
    Ad esempio, la riga &quot;Per consentirci di accedere a...&quot; è selezionata nell&#39;immagine seguente e il modulo di contenuto corrispondente è selezionato nella scheda Contenuto.
 
@@ -233,7 +233,7 @@ Puoi apportare modifiche al layout e al contenuto per garantire che la lettera a
 
    Per ulteriori informazioni sulle azioni disponibili per i vari moduli nell’interfaccia utente Crea corrispondenza, consulta [Azioni e informazioni disponibili nell’interfaccia utente per la creazione di corrispondenza](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Per aggiungere un’interruzione di pagina alla lettera, tocca il punto in cui desideri inserire un’interruzione di pagina e seleziona Interruzione di pagina prima o Interruzione di pagina dopo ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
+1. Per aggiungere un&#39;interruzione di pagina alla lettera, selezionare il punto in cui si desidera inserire un&#39;interruzione di pagina e selezionare Interruzione di pagina prima o Interruzione di pagina dopo ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
    Nella lettera viene inserito un segnaposto di interruzione di pagina esplicito. Per visualizzare il modo in cui un’interruzione di pagina esplicita influisce sulla lettera, consulta l’anteprima PDF semplificata.
 
@@ -243,13 +243,13 @@ Puoi apportare modifiche al layout e al contenuto per garantire che la lettera a
 
    ![Interruzione di pagina esplicita](assets/8_pagebreak.png)
 
-1. Per salvare la lettera come bozza, su cui puoi continuare a lavorare in un secondo momento, tocca Salva come bozza. Per utilizzare questa opzione, la lettera deve essere [pubblicato](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Per ulteriori informazioni, consulta Bozza di istanza in [Salvataggio delle bozze e invio delle istanze di lettere](#savingdrafts).
+1. Per salvare la lettera come bozza e continuare a utilizzarla in seguito, selezionare Salva come bozza. Per utilizzare questa opzione, la lettera deve essere [pubblicato](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Per ulteriori informazioni, consulta Bozza di istanza in [Salvataggio delle bozze e invio delle istanze di lettere](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   Viene visualizzata la finestra di dialogo Nome bozza lettera con l&#39;ID istanza della lettera. Facoltativamente, puoi modificare questo ID. Prendi nota dell’ID della lettera, quindi tocca **Fine**. Puoi usare questo ID in seguito per [ricarica la bozza della lettera](submit-letter-topostprocess.md#reloaddraft).
+   Viene visualizzata la finestra di dialogo Nome bozza lettera con l&#39;ID istanza della lettera. Facoltativamente, puoi modificare questo ID. Prendi nota dell’ID della lettera, quindi seleziona **Fine**. Puoi usare questo ID in seguito per [ricarica la bozza della lettera](submit-letter-topostprocess.md#reloaddraft).
 
-1. Per visualizzare in anteprima la lettera come PDF appiattito con l’esatto layout e le interruzioni di pagina man mano che viene inviata, tocca ( ![anteprima](assets/preview.png)) Anteprima.
+1. Per visualizzare in anteprima la lettera come PDF appiattito con il layout esatto e le interruzioni di pagina man mano che verrà inviata, seleziona ( ![anteprima](assets/preview.png)) Anteprima.
 
    La lettera viene visualizzata come PDF appiattito. Il PDF appiattito è l&#39;esatta rappresentazione della lettera, in quanto verrà inviata con i font, le interruzioni e il layout corretti della lettera.
 
@@ -257,13 +257,13 @@ Puoi apportare modifiche al layout e al contenuto per garantire che la lettera a
    >
    >Se utilizzi Mozilla Firefox e il tipo di rappresentazione HTML, per visualizzare in anteprima la lettera come PDF appiattito, assicurati di utilizzare il plug-in nativo del browser e non il plug-in Acrobat. Per selezionare il plug-in del browser nativo, vai alle impostazioni di Mozilla Firefox e per il tipo di contenuto PDF, seleziona Anteprima in Firefox.
 
-1. Se l’anteprima di PDF appiattita è soddisfacente, tocca **Invia** per inviare la lettera. Oppure, per modificare la lettera, tocca **Esci da anteprima** per tornare all’anteprima dell’interfaccia utente per la creazione di corrispondenza della lettera e apportare modifiche. Quando tocchi Invia, se la configurazione Gestisci istanza lettera è abilitata nell’istanza Pubblica, viene generata l’istanza della lettera di invio.
+1. Se l&#39;anteprima di PDF appiattita è soddisfacente, selezionare **Invia** per inviare la lettera. In alternativa, per modificare la lettera, selezionare **Esci da anteprima** per tornare all’anteprima dell’interfaccia utente per la creazione di corrispondenza della lettera e apportare modifiche. Quando selezioni Invia, se la configurazione Gestisci istanza lettera è abilitata nell’istanza Pubblica, viene generata l’istanza della lettera di invio.
 
    Per ulteriori informazioni, vedere Istanza bozza in Salvataggio delle bozze e invio delle istanze di lettere.
 
    È inoltre possibile salvare la lettera come bozza per modificarla in un secondo momento.
 
-   Dopo aver apportato le modifiche necessarie, puoi inviare la lettera dall’anteprima di HTML5 oppure toccare nuovamente Anteprima per rivedere l’output di Flattened PDF.
+   Dopo aver apportato le modifiche necessarie, è possibile inviare la lettera dall&#39;anteprima di HTML5 oppure selezionare nuovamente Anteprima per rivedere l&#39;output di PDF appiattito.
 
    Per informazioni sulle differenze tra moduli HTML5 e PDF forms, consulta [Differenziazione delle funzioni tra moduli di HTML5 e PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
@@ -307,7 +307,7 @@ Per abilitare la funzione Salva come bozza, sostituisci l’URL esistente in [!U
 
 1. Fai clic su Salva.
 
-![Istanza di pubblicazione](/help/forms/using/assets/correspondencemanagement.png)
+![Pubblica istanza](/help/forms/using/assets/correspondencemanagement.png)
 
 Quando è attivato il salvataggio delle istanze di lettere, è possibile selezionare la posizione in cui salvare le istanze di lettere. Sono disponibili due opzioni per il salvataggio delle istanze di lettere: Salvataggio locale o Salvataggio remoto.
 
@@ -354,10 +354,10 @@ Di seguito sono riportati i vantaggi e le funzionalità disponibili nell’antep
 
 **Vantaggi dell’anteprima di moduli/HTML per dispositivi mobili**
 
-* **Tocca un valore di campo dati per evidenziare il campo dati corrispondente**: nell’interfaccia utente per la creazione di corrispondenza, puoi toccare un valore di campo dati nella lettera per evidenziare il campo dati corrispondente nella scheda Dati. Per ulteriori informazioni, consulta [Immetti i dati](#enterdata).
+* **Seleziona un valore di campo dati per evidenziare il campo dati corrispondente**: nell’interfaccia utente per la creazione di corrispondenza, puoi selezionare un valore per il campo dati nella lettera per evidenziare il campo dati corrispondente nella scheda Dati. Per ulteriori informazioni, consulta [Immetti i dati](#enterdata).
 
 * **Supporto browser**: i browser rimuovono gradualmente il supporto per NPAPI, il che influisce sull’anteprima PDF della lettera. Questo non influisce sull’anteprima HTML/mobile forms della lettera.
-* **Evidenzia contenuto modificabile in una lettera**: nell’interfaccia utente per la creazione di corrispondenza, tocca Evidenzia contenuto modificabile per evidenziare in grigio tutto il contenuto modificabile nella lettera. Per ulteriori informazioni, consulta [Gestire i contenuti](#managecontent).
+* **Evidenzia contenuto modificabile in una lettera**: nell’interfaccia utente per la creazione di corrispondenza, puoi selezionare Evidenzia contenuto modificabile per evidenziare in grigio tutto il contenuto modificabile nella lettera. Per ulteriori informazioni, consulta [Gestire i contenuti](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Vantaggi dell’anteprima PDF**

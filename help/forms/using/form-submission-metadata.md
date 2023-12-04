@@ -10,10 +10,10 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 1%
+source-wordcount: '740'
+ht-degree: 0%
 
 ---
 
@@ -34,8 +34,8 @@ Prendi in considerazione un altro esempio di modulo che acquisisce l’ID e-mail
 Per aggiungere un elemento nei metadati, effettua le seguenti operazioni:
 
 1. Apri il modulo adattivo in modalità di modifica.\
-   Per aprire il modulo in modalità di modifica, in Gestione moduli seleziona il modulo e tocca **Apri**.
-1. In modalità di modifica, seleziona un componente e tocca ![a livello di campo](assets/field-level.png) > **Contenitore modulo adattivo**, quindi tocca ![cmppr](assets/cmppr.png).
+   Per aprire il modulo in modalità di modifica, in Gestione moduli selezionare il modulo e selezionare **Apri**.
+1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/field-level.png) > **Contenitore modulo adattivo** e quindi selezionare ![cmppr](assets/cmppr.png).
 1. Nella barra laterale, fai clic su **Metadati**.
 1. Nella sezione Metadati, fai clic su **Aggiungi**.
 1. Utilizzare il campo Valore della scheda Metadati per aggiungere script. Gli script aggiunti raccolgono i dati dagli elementi del modulo e calcolano i valori che vengono trasmessi ai metadati.

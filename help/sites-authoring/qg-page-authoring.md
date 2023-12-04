@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 73%
+source-wordcount: '1540'
+ht-degree: 60%
 
 ---
 
@@ -71,7 +71,7 @@ Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseg
 
 1. Apri **Sites** console (utilizzando il **Sites** opzione in [Navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation)) - viene attivato (a discesa) quando si seleziona il collegamento Adobe Experience Manager (in alto a sinistra).
 
-1. Spostati verso il basso all’interno della struttura toccando/facendo clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla vista che stai utilizzando, [A schede, Elenco o Colonna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
+1. Per spostarti verso il basso nella struttura, tocca o fai clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla vista in uso: [Scheda, elenco o colonna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -102,17 +102,17 @@ La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata
 
 1. Vista a colonne:
 
-   * Tocca/fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
+   * Fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
 
 1. Vista a elenco:
 
-   * Tocca/fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
+   * Fai clic sulla miniatura della risorsa richiesta; sulla miniatura compare un segno di spunta per indicare che è stata selezionata.
 
 1. Vista a schede:
 
    * Entra nella modalità di selezione per [selezione della risorsa richiesta](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) con:
 
-      * Dispositivo mobile: toccare e tenere premuto
+      * Dispositivo mobile: seleziona e mantieni
       * Desktop: il [azione rapida](/help/sites-authoring/basic-handling.md#quick-actions) - icona di spunta:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
@@ -158,24 +158,24 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
 
    * [Modificare il contenuto di un componente esistente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) sulla pagina:
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza l’icona **Modifica** (matita) per aprire la finestra di dialogo.
-      * Apri l’editor locale per il componente toccando e tenendo premuto o facendo un doppio clic lento. Vengono visualizzate le azioni disponibili (per alcuni componenti è una selezione limitata).
+      * Apri la barra degli strumenti del componente facendo clic su. Utilizza l’icona **Modifica** (matita) per aprire la finestra di dialogo.
+      * Apri l’editor locale per il componente con la funzione di selezione e mantenimento o con un doppio clic lento. Vengono visualizzate le azioni disponibili (per alcuni componenti è una selezione limitata).
       * Per visualizzare tutte le azioni disponibili, entra in modalità a schermo intero utilizzando:
 
      ![Modalità a tutto schermo](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurare le proprietà di un componente esistente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza l’icona **Configura** (chiave inglese) per aprire la finestra di dialogo.
+      * Apri la barra degli strumenti del componente facendo clic su. Utilizza l’icona **Configura** (chiave inglese) per aprire la finestra di dialogo.
 
    * [Sposta un componente](/help/sites-authoring/editing-content.md#moving-a-component) con una delle seguenti operazioni:
 
       * Trascina il componente richiesto nella nuova posizione.
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza le icone **Taglia** e quindi **Incolla** dove richiesto.
+      * Apri la barra degli strumenti del componente facendo clic su. Utilizza il **Taglia** allora **Incolla** icone, se necessario.
 
    * [Copiare (e incollare)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic. Utilizza le icone **Taglia** e quindi **Incolla** come richiesto.
+      * Apri la barra degli strumenti del componente facendo clic su. Utilizza il **Copia** allora **Incolla** icone, a seconda delle necessità.
 
    >[!NOTE]
    >
@@ -183,11 +183,11 @@ Sono disponibili delle [Azioni rapide](/help/sites-authoring/basic-handling.md#q
 
    * [Eliminare](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Apri la barra degli strumenti del componente toccando o facendo clic, quindi utilizza l’icona **Elimina**.
+      * Apri la barra degli strumenti del componente facendo clic su, quindi utilizza **Elimina** icona.
 
    * [Aggiungere annotazioni](/help/sites-authoring/annotations.md#annotations) alla pagina:
 
-      * Seleziona la modalità **Annota** (icona a forma di fumetto). Aggiungi le annotazioni utilizzando l’icona **Aggiungi annotazione** (segno più). Esci dalla modalità di annotazione utilizzando la X in alto a destra.
+      * Seleziona la **Annota** modalità (icona a forma di fumetto). Aggiungere annotazioni utilizzando **Aggiungi annotazione** (più). Esci dalla modalità di annotazione utilizzando la X in alto a destra.
 
      ![Annotazioni](do-not-localize/screen_shot_2018-03-21at160813.png)
 
@@ -305,7 +305,7 @@ Ad esempio, l’icona Blocca ha l’aspetto di un lucchetto chiuso:
 
    ![schermata_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. Tocca o fai clic sul tipo di riferimento richiesto per visualizzare ulteriori dettagli e, se necessario, per intraprendere ulteriori azioni.
+1. Fare clic sul tipo di riferimento richiesto per visualizzare ulteriori dettagli e, se necessario, eseguire ulteriori azioni.
 
 ### Creazione di una versione della pagina   {#creating-a-version-of-your-page}
 
@@ -315,7 +315,7 @@ Per creare una [versione](/help/sites-authoring/working-with-page-versions.md) d
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Tocca o fai clic sulla freccia su in basso a destra della colonna Timeline per visualizzare pulsanti aggiuntivi, tra cui **Salva come versione**.
+1. Fate clic sulla freccia rivolta verso l&#39;alto nella parte inferiore destra della colonna Timeline per visualizzare pulsanti aggiuntivi, tra cui **Salva come versione**.
 
    ![schermata_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -331,7 +331,7 @@ Lo stesso meccanismo di base viene utilizzato per il ripristino e/o il confronto
 
    Se una versione della pagina è già stata salvata, viene elencata nella Timeline.
 
-1. Tocca o fai clic sulla versione da ripristinare, verranno visualizzati pulsanti di azione aggiuntivi:
+1. Fare clic sulla versione che si desidera ripristinare. Verranno visualizzati pulsanti di azione aggiuntivi:
 
    * **Ripristina questa versione**
 

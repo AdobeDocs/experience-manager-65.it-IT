@@ -10,10 +10,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 0738f53564cb2e2607d739d97bdd1bb2fc64ac6e
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '11310'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -109,7 +109,7 @@ Ulteriori informazioni su [Best practice per organizzare le risorse digitali per
    * Se utilizzi un sistema di gestione dei contenuti web di terze parti, puoi collegare o incorporare video nelle pagine web.
 
       * Integra video tramite URL:
-        [Collegamento degli URL all’applicazione Web](linking-urls-to-yourwebapplication.md).
+        [Collegare gli URL all’applicazione web](linking-urls-to-yourwebapplication.md).
 
       * Integra video utilizzando il codice di incorporamento in una pagina web:
         [Incorporare il visualizzatore video in una pagina web](embed-code.md).
@@ -329,10 +329,10 @@ Nella tabella seguente viene descritto come i risultati della formula si traduco
 
 | Risultato formula | Proporzioni |
 |--- |--- |
-| 1.33 | 4:3 |
-| 0.75 | 3:4 |
-| 1.78 | 16:9 |
-| 0.56 | 9:16 |
+| 1,33 | 4:3 |
+| 0,75 | 3:4 |
+| 1,78 | 16:9 |
+| 0,56 | 09:16 |
 
 Ad esempio, un video con larghezza 1440 x altezza 1080 ha proporzioni 1440/1080 o 1,33. In questo caso, scegliete un predefinito di codifica video con proporzioni 4:3 per codificare il file video.
 
@@ -374,8 +374,8 @@ La risoluzione e la velocità dei dati sono due fattori strettamente collegati c
 
 | Risoluzione | Pixel per frame |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 x 240 | 76.800 |
+| 640 x 480 | 307.200 |
 
 Il file 640 x 480 ha un numero di pixel per frame quattro volte superiore. Per ottenere la stessa velocità dati per queste due risoluzioni di esempio, applicate una compressione quattro volte superiore al file 640 x 480, riducendo in tal modo la qualità del video. Di conseguenza, una velocità di dati video di 250 Kbps produce una visualizzazione di alta qualità con una risoluzione di 320 x 240, ma non con una risoluzione di 640 x 480.
 
@@ -390,12 +390,12 @@ Quando scegli (o crei) un predefinito di codifica video per il file video sorgen
 
 | Risoluzione | Altezza (pixel) | Dimensioni dello schermo |
 |--- |--- |--- |
-| 240p | 240 | Schermo piccolo |
-| 300p | 300 | Schermo piccolo in genere per dispositivi mobili |
-| 360p | 360 | Schermo piccolo |
-| 480p | 480 | Schermo medio |
-| 720p | 720 | Schermo grande |
-| 1080p | 1080 | Schermo ad alta definizione di grandi dimensioni |
+| 240P | 240 | Schermo piccolo |
+| 300P | 300 | Schermo piccolo in genere per dispositivi mobili |
+| 360P | 360 | Schermo piccolo |
+| 480P | 480 | Schermo medio |
+| 720P | 720 | Schermo grande |
+| 1080P | 1080 | Schermo ad alta definizione di grandi dimensioni |
 
 ### Fps (frame al secondo) {#fps-frames-per-second}
 
@@ -415,7 +415,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
 
 | Tipo di video | Larghezza x altezza | Rapporto larghezza | Rapporto altezza |
 |--- |--- |--- |--- |
-| Sorgente | 1920x1080 | 1 | 1 |
+| Sorgente | 1920 x 1080 | 1 | 1 |
 | Codificato | 960 x 540 | 2 | 2 |
 | Codificato | 640 x 360 | 3 | 3 |
 | Codificato | 480 x 270 | 4 | 4 |
@@ -496,7 +496,7 @@ I rapporti video visualizzano diverse metriche aggregate in un determinato perio
 
 Una tabella di tutti *pubblicato* Sono elencati anche i video, in modo da poter tenere traccia dei video più visualizzati sul sito web in base al totale degli avvii dei video.
 
-Quando tocchi un nome video nell’elenco, questo mostra il rapporto sulla fidelizzazione del pubblico del video (a discesa) sotto forma di un grafico a linee. Il grafico mostra il numero di visualizzazioni per un dato momento della riproduzione video. Quando si riproduce il video, la barra verticale viene sincronizzata con l&#39;indicatore di tempo nel lettore. Le cadute nei dati del grafico a linee indicano dove il pubblico abbandona il disinteresse.
+Quando selezioni un nome video nell’elenco, viene visualizzato il rapporto di conservazione del pubblico (a discesa) del video sotto forma di un grafico a linee. Il grafico mostra il numero di visualizzazioni per un dato momento della riproduzione video. Quando si riproduce il video, la barra verticale viene sincronizzata con l&#39;indicatore di tempo nel lettore. Le cadute nei dati del grafico a linee indicano dove il pubblico abbandona il disinteresse.
 
 Se il video è stato codificato al di fuori di Adobe Experience Manager Dynamic Medie, il grafico di conservazione del pubblico (a discesa) e i dati della percentuale di riproduzione nella tabella non sono disponibili.
 
@@ -508,22 +508,22 @@ Vedi anche [Configurare Cloud Service Dynamic Medie](/help/assets/config-dynamic
 
 Per impostazione predefinita, la prima volta che si immettono i rapporti video, il rapporto visualizza i dati video a partire dal primo del mese corrente e termina con la data del mese corrente. Tuttavia, puoi sovrascrivere l’intervallo di date predefinito specificando un intervallo di date personalizzato. Alla successiva immissione di Report video, viene utilizzato l&#39;intervallo di date specificato.
 
-Affinché i rapporti video funzionino correttamente, viene creato automaticamente un ID suite di rapporti quando vengono configurati i Cloud Service Dynamic Medie. Allo stesso tempo, l’ID suite di rapporti viene inviato al server di pubblicazione, in modo che sia disponibile per la funzione Copia URL quando visualizzi l’anteprima delle risorse. Tuttavia, questa funzionalità richiede che il server di pubblicazione sia già configurato. Se il server di pubblicazione non è configurato, puoi comunque eseguire la pubblicazione per visualizzare il rapporto video. Tuttavia, devi tornare alla configurazione cloud di Dynamic Medie e toccare **[!UICONTROL OK]**.
+Affinché i rapporti video funzionino correttamente, viene creato automaticamente un ID suite di rapporti quando vengono configurati i Cloud Service Dynamic Medie. Allo stesso tempo, l’ID suite di rapporti viene inviato al server di pubblicazione, in modo che sia disponibile per la funzione Copia URL quando visualizzi l’anteprima delle risorse. Tuttavia, questa funzionalità richiede che il server di pubblicazione sia già configurato. Se il server di pubblicazione non è configurato, puoi comunque eseguire la pubblicazione per visualizzare il rapporto video. Tuttavia, devi tornare alla configurazione cloud di Dynamic Medie e selezionare **[!UICONTROL OK]**.
 
 **Per visualizzare i rapporti video:**
 
-1. Nell’angolo in alto a sinistra dell’Experience Manager, tocca il logo dell’Experience Manager, quindi nella barra a sinistra tocca **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti video]**.
+1. Nell’angolo in alto a sinistra dell’Experience Manager, seleziona il logo dell’Experience Manager, quindi nella barra a sinistra seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti video]**.
 1. Nella pagina Rapporti video eseguire una delle operazioni seguenti:
 
-   * Nell’angolo in alto a destra, tocca il **Aggiorna rapporto video** icona.
+   * Nell&#39;angolo superiore destro, selezionare **Aggiorna rapporto video** icona.
 Utilizzare Aggiorna solo se la data di fine del rapporto è il giorno corrente. In questo modo potrai vedere il tracciamento video che si è verificato dall’ultima volta che hai eseguito il rapporto.
 
-   * Nell’angolo in alto a destra, tocca il **Selettore data** icona.
-Specifica l’intervallo di date di inizio e fine per il quale desideri visualizzare i dati video, quindi tocca **[!UICONTROL Esegui rapporto]**.
+   * Nell&#39;angolo superiore destro, selezionare **Selettore data** icona.
+Specifica l’intervallo di date iniziale e finale per il quale desideri visualizzare i dati video, quindi seleziona **[!UICONTROL Esegui rapporto]**.
 
    La casella di gruppo Metriche principali identifica varie misurazioni aggregate per tutti *pubblicato* video nel sito.
 
-1. Nella tabella in cui sono elencati i video più pubblicati, tocca il nome di un video per riprodurlo e visualizzane il rapporto sulla fidelizzazione del pubblico (drop-off).
+1. Nella tabella in cui sono elencati i video più pubblicati, seleziona un nome per riprodurre il video e consulta il rapporto sulla fidelizzazione del pubblico (drop-off) del video.
 
 ### Visualizzare rapporti video basati su un visualizzatore video creato con l’SDK del visualizzatore di Dynamic Medie HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
@@ -542,7 +542,7 @@ Utilizza il [Guida di riferimento per i visualizzatori Dynamic Medie di Adobe](h
 
    Il `config2` Il parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per l’azienda che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe Analytics specifiche per il cliente.
 
-   Il valore corretto per il parametro config2 si trova sia nella funzione **[!UICONTROL Incorpora codice]** che in copia **[!UICONTROL URL]**. Nell’URL dal comando di copia **[!UICONTROL URL]**, il parametro da cercare è `&config2=<value>`. Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
+   Il valore corretto per il parametro config2 si trova in entrambi **[!UICONTROL Codice di incorporamento]** e nella copia **[!UICONTROL URL]** funzione. Nell’URL dalla copia **[!UICONTROL URL]** , il parametro da cercare è `&config2=<value>` . Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
 
 1. Nel codice del visualizzatore video personalizzato, aggiungi AppMeasurementBridge .jsp alla pagina del visualizzatore eseguendo le seguenti operazioni:
 
@@ -669,7 +669,7 @@ I sottotitoli e i sottotitoli aggiunti sono supportati nei formati WebVTT e VTT 
      | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile usare lo stesso nome di file per file di traccia audio o sottotitoli aggiuntivi. |
      | Lingua | Selezionate la lingua della traccia audio. |
      | Tipo | Selezionate il tipo di traccia audio in uso.<br>**Originale** - La traccia audio originariamente allegata al video e rappresentata come `[Original]` nell’etichetta con `English` lingua selezionata per impostazione predefinita. Mentre **[!UICONTROL Etichetta]** e **[!UICONTROL Lingua]** può essere modificato in **[!UICONTROL Modifica traccia audio]** , vengono utilizzati i valori originali se il video principale viene rielaborato.<br>**Standard** - Traccia audio aggiuntiva per una lingua diversa dall&#39;originale.<br>**Descrizione audio** - Traccia audio che include anche una narrazione descrittiva delle azioni non verbali e dei gesti nel video, rendendo il contenuto più accessibile agli utenti ipovedenti. |
-     | Etichetta | Testo visualizzato come nome della traccia audio nel **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Esempio: `English [Original]`. L&#39;etichetta dell&#39;audio collegata a un video è impostata su `[Original|` per impostazione predefinita. |
+     | Etichetta | Testo visualizzato come nome della traccia audio nel **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio: `English [Original]`. L&#39;etichetta dell&#39;audio collegata a un video è impostata su `[Original|` per impostazione predefinita. |
 
      Se necessario, potete modificare i metadati della traccia audio in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
@@ -901,13 +901,13 @@ Consulta [Distribuisci contenuti statici (non immagine)](https://experienceleagu
 
 1. Effettua una delle operazioni seguenti:
 
-   * Per visualizzare un video popup, tocca **[!UICONTROL URL]**. Nella finestra di dialogo URL, seleziona e copia l’URL negli Appunti, quindi trascina l’URL in un semplice editor di testo. Aggiungi all’URL copiato del video la seguente sintassi:
+   * Per visualizzare un video a comparsa, seleziona **[!UICONTROL URL]**. Nella finestra di dialogo URL, seleziona e copia l’URL negli Appunti, quindi trascina l’URL in un semplice editor di testo. Aggiungi all’URL copiato del video la seguente sintassi:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
      Osserva `,1` alla fine del percorso della didascalia. Immediatamente dopo il `.vtt` estensione del nome file nel percorso, puoi facoltativamente abilitare (attivare) o disabilitare (disattivare) il pulsante sottotitoli codificati sulla barra del lettore video impostando su `,1` o `,0`, rispettivamente.
 
-   * Per un’esperienza di visualizzazione video incorporata, tocca **[!UICONTROL Codice di incorporamento]**. Nella finestra di dialogo Incorpora codice, seleziona e copia il codice da incorporare negli Appunti, quindi incolla il codice in un semplice editor di testo. Aggiungi il codice da incorporare copiato con la seguente sintassi:
+   * Per un’esperienza di visualizzazione video incorporata, seleziona **[!UICONTROL Codice di incorporamento]**. Nella finestra di dialogo Incorpora codice, seleziona e copia il codice da incorporare negli Appunti, quindi incolla il codice in un semplice editor di testo. Aggiungi il codice da incorporare copiato con la seguente sintassi:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -971,8 +971,8 @@ Consulta [WebVTT: formato per tracce di testo video Web](https://w3c.github.io/w
        <td>
        <ol>
        <li>Accedi a <i>pubblicato </i>risorsa video da associare al file del capitolo caricato. Gli URL sono disponibili per la copia solo <i>dopo</i> la prima <i>pubblicazione</i> delle risorse. Consulta <a href="/help/assets/publishing-dynamicmedia-assets.md">Pubblicazione delle risorse.</a></li>
-       <li>Dal menu a discesa, quindi tocca o fai clic su <strong>Visualizzatori</strong>.</li>
-       <li>Nella barra a sinistra, tocca o fai clic sul nome del predefinito per visualizzatori video. Un’anteprima del video viene aperta in una pagina separata.</li>
+       <li>Dal menu a discesa, quindi fai clic su <strong>Visualizzatori</strong>.</li>
+       <li>Nella barra a sinistra, fai clic sul nome del predefinito per visualizzatori video. Un’anteprima del video viene aperta in una pagina separata.</li>
        <li>Nella barra a sinistra, in basso, fai clic su <strong>URL</strong>.</li>
        <li>Nella finestra di dialogo URL, seleziona e copia l’URL negli Appunti, quindi trascina l’URL in un semplice editor di testo.</li>
        <li>Aggiungi l’URL copiato del video con la seguente sintassi per associarlo all’URL copiato nel file del capitolo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
@@ -983,8 +983,8 @@ Consulta [WebVTT: formato per tracce di testo video Web](https://w3c.github.io/w
        <td>
        <ol>
        <li>Accedi a <i>pubblicato </i>risorsa video da associare al file del capitolo caricato. Gli URL sono disponibili per la copia solo <i>dopo</i> la prima <i>pubblicazione</i> delle risorse. Consulta <a href="/help/assets/publishing-dynamicmedia-assets.md">Pubblicazione delle risorse.</a></li>
-       <li>Dal menu a discesa, quindi tocca o fai clic su <strong>Visualizzatori</strong>.</li>
-       <li>Nella barra a sinistra, tocca o fai clic sul nome del predefinito per visualizzatori video. Un’anteprima del video viene aperta in una pagina separata.</li>
+       <li>Dal menu a discesa, quindi fai clic su <strong>Visualizzatori</strong>.</li>
+       <li>Nella barra a sinistra, fai clic sul nome del predefinito per visualizzatori video. Un’anteprima del video viene aperta in una pagina separata.</li>
        <li>Nella barra a sinistra, in basso, fai clic su <strong>Incorpora</strong>.</li>
        <li>Nella finestra di dialogo Incorpora codice, seleziona e copia l’intero codice negli Appunti, quindi incollalo in un semplice editor di testo.</li>
        <li>Aggiungi il codice di incorporamento del video con la seguente sintassi per associarlo all’URL copiato nel file del capitolo:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
@@ -1021,25 +1021,25 @@ Questi passaggi si applicano solo a Dynamic Medie in esecuzione in modalità &qu
    * [Ha caricato i tuoi video nella cartella](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Passa a una risorsa video caricata di cui desideri modificare l’immagine in miniatura.
-1. Nella modalità di selezione delle risorse da **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**, tocca la risorsa video.
-1. Nella barra degli strumenti, tocca **[!UICONTROL Proprietà]** (un cerchio contenente una &quot;i&quot;).
-1. Nella pagina Proprietà del video, tocca **[!UICONTROL Cambia miniatura]**.
+1. Nella modalità di selezione delle risorse da **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**, seleziona la risorsa video.
+1. Sulla barra degli strumenti, seleziona **[!UICONTROL Proprietà]** (un cerchio contenente una &quot;i&quot;).
+1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Cambia miniatura]**.
 1. Nella pagina Modifica miniatura eseguire una delle operazioni seguenti:
 
    * Per utilizzare un fotogramma del video come nuova miniatura:
 
-      * Sulla barra degli strumenti, tocca **[!UICONTROL Seleziona fotogramma da video]**.
-      * Toccare il pulsante Riproduci, quindi toccare il pulsante Pausa sul fotogramma che si desidera catturare come nuova miniatura del video.
+      * Sulla barra degli strumenti, seleziona **[!UICONTROL Seleziona fotogramma da video]**.
+      * Selezionare il pulsante Riproduci, quindi selezionare il pulsante Pausa sul fotogramma che si desidera catturare come nuova miniatura del video.
 
    * Per utilizzare una risorsa immagine come nuova miniatura:
 
-      * Sulla barra degli strumenti, tocca **[!UICONTROL Seleziona miniatura da risorse]**.
-      * Tocca **[!UICONTROL Seleziona miniatura]**.
+      * Sulla barra degli strumenti, seleziona **[!UICONTROL Seleziona miniatura da risorse]**.
+      * Seleziona **[!UICONTROL Seleziona miniatura]**.
       * Passa a una risorsa immagine caricata e pubblicata in precedenza che desideri utilizzare. La risorsa viene ridimensionata automaticamente in modo da fungere da immagine miniatura per il video.
-      * Seleziona la risorsa immagine, quindi tocca **[!UICONTROL Seleziona]**.
+      * Seleziona la risorsa immagine, quindi seleziona **[!UICONTROL Seleziona]**.
 
-1. Nella pagina Modifica miniatura, tocca **[!UICONTROL Salva modifica]**.
-1. Nella pagina Proprietà del video, nell’angolo superiore destro, tocca **[!UICONTROL Salva e chiudi]**.
+1. Nella pagina Modifica miniatura, seleziona **[!UICONTROL Salva modifica]**.
+1. Nella pagina Proprietà del video, nell’angolo superiore destro, seleziona **[!UICONTROL Salva e chiudi]**.
 
 ## Informazioni sulle miniature video in Dynamic Medie - Modalità ibrida {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
@@ -1060,15 +1060,15 @@ Questi passaggi si applicano solo a Dynamic Medie in esecuzione in modalità ibr
 **Per aggiungere una miniatura video:**
 
 1. Passa a una risorsa video caricata a cui desideri aggiungere una miniatura video.
-1. Nella modalità di selezione delle risorse dalla Vista a elenco o dalla Vista a schede, tocca la risorsa video.
-1. Nella barra degli strumenti, tocca **[!UICONTROL Visualizza proprietà]** (un cerchio contenente una &quot;i&quot;).
-1. Nella pagina Proprietà del video, tocca **[!UICONTROL Cambia miniatura]**.
-1. Nella pagina Modifica miniatura, sulla barra degli strumenti, tocca **[!UICONTROL Seleziona frame]**.
+1. Nella modalità di selezione delle risorse, seleziona la risorsa video dalla Vista a elenco o dalla Vista a schede.
+1. Sulla barra degli strumenti, seleziona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente una &quot;i&quot;).
+1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Cambia miniatura]**.
+1. Nella pagina Modifica miniatura, sulla barra degli strumenti, seleziona **[!UICONTROL Seleziona frame]**.
 
    Dynamic Medie genera una serie di miniature dal video, in base all&#39;intervallo di tempo predefinito o personalizzato.
 
 1. Visualizza l&#39;anteprima delle immagini in miniatura generate, quindi seleziona quella che desideri aggiungere al video.
-1. Tocca **[!UICONTROL Salva modifica]**.
+1. Seleziona **[!UICONTROL Salva modifica]**.
 
    L&#39;immagine miniatura del video viene aggiornata in modo da utilizzare la miniatura selezionata. Se successivamente decidi di modificare l’immagine miniatura, puoi tornare al **[!UICONTROL Cambia miniatura]** e selezionarne una nuova.
 
@@ -1084,21 +1084,21 @@ Consulta [Aggiungi una miniatura video](#adding-a-video-thumbnail).
 
 **Per configurare l&#39;intervallo di tempo predefinito per la generazione delle miniature video:**
 
-1. Ad Experience Manager, tocca **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
+1. Ad Experience Manager, seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
 
 1. Nella pagina CRXDE Liti, nel pannello directory a sinistra, passa a `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   se il pannello directory non è visibile, tocca l’icona >> a sinistra della scheda Home.
+   se il pannello directory non è visibile, seleziona l’icona >> a sinistra della scheda Home.
 
-1. Nel pannello in basso a destra, nella scheda Proprietà, tocca due volte `thumbnailtime`.
+1. Nel pannello in basso a destra, nella scheda Proprietà, fai doppio clic su `thumbnailtime`.
 1. In **[!UICONTROL Modifica miniatura]** , utilizzare i campi di testo per immettere valori di intervallo come percentuali.
 
-   * Toccare l&#39;icona del segno più (+) se si desidera aggiungere uno o più campi del valore di intervallo. Se necessario, scorrere fino alla parte inferiore della finestra di dialogo per visualizzare l&#39;icona.
-   * Toccare l&#39;icona del segno meno (-) a destra di un campo del valore di intervallo per eliminarlo dall&#39;elenco.
-   * Toccare l&#39;icona freccia su e l&#39;icona freccia giù se si desidera riordinare i valori di intervallo.
+   * Selezionare l&#39;icona del segno più (+) se si desidera aggiungere uno o più campi del valore di intervallo. Se necessario, scorrere fino alla parte inferiore della finestra di dialogo per visualizzare l&#39;icona.
+   * Selezionare l&#39;icona del segno meno (-) a destra di un campo del valore di intervallo per eliminarlo dall&#39;elenco.
+   * Se si desidera riordinare i valori dell&#39;intervallo, selezionare l&#39;icona freccia su e l&#39;icona freccia giù.
 
-1. Tocca **[!UICONTROL OK]** e tornare alla scheda Proprietà.
-1. Nell’angolo in alto a sinistra della pagina CRXDE Liti, tocca **[!UICONTROL Salva tutto]**, quindi tocca l’icona Indietro Home nell’angolo in alto a sinistra per tornare a Experience Manager.
+1. Seleziona **[!UICONTROL OK]** e tornare alla scheda Proprietà.
+1. Nell&#39;angolo superiore sinistro della pagina CRXDE Liti, seleziona **[!UICONTROL Salva tutto]**, quindi seleziona l’icona Indietro Home nell’angolo in alto a sinistra per tornare a Experience Manager.
 
    Consulta [Aggiungi una miniatura video](#adding-a-video-thumbnail).
 
@@ -1109,12 +1109,12 @@ Questi passaggi si applicano solo a Dynamic Medie in esecuzione in modalità ibr
 **Per aggiungere una miniatura video personalizzata:**
 
 1. Passa a una risorsa video caricata per aggiungere una miniatura video personalizzata.
-1. Nella modalità di selezione delle risorse dalla Vista a elenco o dalla Vista a schede, tocca la risorsa video.
-1. Nella barra degli strumenti, tocca **[!UICONTROL Visualizza proprietà]** (un cerchio contenente una &quot;i&quot;).
-1. Nella pagina Proprietà del video, tocca **[!UICONTROL Cambia miniatura]**.
-1. Nella pagina Modifica miniatura, sulla barra degli strumenti, tocca **[!UICONTROL Carica nuova miniatura]**.
-1. Passa alla miniatura da utilizzare, selezionala e tocca **[!UICONTROL Apri]** per iniziare a caricare l’immagine in Experience Manager. Dopo il caricamento, assicurati di pubblicare l’immagine.
-1. Dopo aver caricato e pubblicato correttamente l’immagine, nella pagina Modifica miniatura tocca **[!UICONTROL Salva modifiche]**.
+1. Nella modalità di selezione delle risorse, seleziona la risorsa video dalla Vista a elenco o dalla Vista a schede.
+1. Sulla barra degli strumenti, seleziona **[!UICONTROL Visualizza proprietà]** (un cerchio contenente una &quot;i&quot;).
+1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Cambia miniatura]**.
+1. Nella pagina Modifica miniatura, sulla barra degli strumenti, seleziona **[!UICONTROL Carica nuova miniatura]**.
+1. Passa alla miniatura da utilizzare, selezionala e fai clic su **[!UICONTROL Apri]** per iniziare a caricare l’immagine in Experience Manager. Dopo il caricamento, assicurati di pubblicare l’immagine.
+1. Dopo aver caricato e pubblicato correttamente l’immagine, nella pagina Modifica miniatura seleziona **[!UICONTROL Salva modifiche]**.
 
    La miniatura personalizzata viene aggiunta al video.
 
@@ -1432,7 +1432,7 @@ Il servlet viene richiamato eseguendo una `GET` operazione in `/dmSample/dynamic
 
 | Parametro query | Descrizione |
 | --- | --- |
-| `assetPath` | Obbligatorio. Percorso del video per il quale `manifestUrl` viene generato. |
+| `assetPath` | Obbligatorio Percorso del video per il quale `manifestUrl` viene generato. |
 | `manifestType` | Facoltativo. Il parametro può essere DASH o HLS. Se non viene passato, per impostazione predefinita viene usato il DASH. |
 | `onlyIfPublished` | Facoltativo. Se superato, il `manifestUrl` viene restituito solo se il video è pubblicato. |
 

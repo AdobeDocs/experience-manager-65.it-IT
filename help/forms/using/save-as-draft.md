@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -25,7 +25,7 @@ L’opzione Salva come bozza consente di salvare un’istantanea di un’attivit
 Per abilitare la funzione Salva come bozza per i moduli salvati nel portale dei moduli, vedere [Salvataggio di un modulo HTML5 come bozza](/help/forms/using/saving-html5-form-draft.md).
 Per configurare l’invio di moduli adattivi, consulta [Componente Bozze e invii](/help/forms/using/draft-submission-component.md). (Non valido per i moduli sincronizzati con il server AEM Forms JEE).
 
-Per creare una bozza, apri la maschera e tocca **Salva come bozza** ![salva come bozza](assets/save-as-draft.png). Immetti il nome della bozza e tocca **Salva**. La bozza viene salvata nella cartella Bozze e sincronizzata con il server. Se l’app non è in linea, viene salvata nella cartella Posta in uscita.
+Per creare una bozza, aprite la maschera e selezionate **Salva come bozza** ![salva come bozza](assets/save-as-draft.png). Immettete il nome della bozza e selezionate **Salva**. La bozza viene salvata nella cartella Bozze e sincronizzata con il server. Se l’app non è in linea, viene salvata nella cartella Posta in uscita.
 
 Se successivamente aggiorni il modulo corrispondente, le modifiche vengono applicate immediatamente. Quando l’app AEM Forms viene sincronizzata con il server AEM Forms, la bozza viene caricata sul server AEM Forms. Inoltre, la bozza viene spostata dalla cartella Posta in uscita alla cartella Attività o Bozze. Accanto a esso viene visualizzata un&#39;icona di modifica.
 
@@ -43,5 +43,5 @@ Per eliminare una bozza, effettuate le seguenti operazioni:
 
 1. Nell’app AEM Forms, passa a **Forms.**
 1. Seleziona **Bozze** dal menu a discesa accanto a Cerca.
-1. Un modulo con l’icona di modifica ![edit-draft-app](assets/edit-draft-app.png) indica una bozza. Toccate i puntini di sospensione orizzontali accanto allo sformo.
-1. Nelle opzioni visualizzate quando tocchi i puntini di sospensione orizzontali, tocca **Elimina bozza**.
+1. Un modulo con l’icona di modifica ![edit-draft-app](assets/edit-draft-app.png) indica una bozza. Selezionate i puntini di sospensione orizzontali accanto allo sformo.
+1. Nelle opzioni visualizzate quando selezioni i puntini di sospensione orizzontali, seleziona **Elimina bozza**.

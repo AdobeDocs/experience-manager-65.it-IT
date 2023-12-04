@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4181'
+source-wordcount: '4159'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Per aggiungere oggetti e servizi del modello dati:
 
 1. Accedi all’istanza di authoring dell’AEM e passa a **[!UICONTROL Forms > Integrazioni dati]** e aprire il modello dati del modulo in cui si desidera aggiungere oggetti modello dati.
 1. Nel riquadro Origini dati espandere Origini dati per visualizzare i servizi e gli oggetti modello dati disponibili.
-1. Seleziona gli oggetti e i servizi del modello dati che desideri aggiungere al modello dati del modulo e tocca **[!UICONTROL Aggiungi selezionati]**.
+1. Seleziona gli oggetti e i servizi del modello dati che desideri aggiungere al modello dati del modulo e seleziona **[!UICONTROL Aggiungi selezionati]**.
 
    ![selected-objects](assets/selected-objects.png)
 
@@ -80,7 +80,7 @@ Per aggiungere oggetti e servizi del modello dati:
    >
    >Oltre agli oggetti modello dati e ai servizi, il documento metadati servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti modello dati. Per ulteriori informazioni, consulta [Utilizzo delle proprietà di navigazione dei servizi OData](#work-with-navigation-properties-of-odata-services).
 
-1. Tocca **[!UICONTROL Salva]** per salvare l&#39;oggetto modello modulo.
+1. Seleziona **[!UICONTROL Salva]** per salvare l&#39;oggetto modello modulo.
 
    >[!NOTE]
    >
@@ -95,8 +95,8 @@ Sebbene sia possibile aggiungere oggetti modello dati da origini dati configurat
 Per creare un oggetto modello dati senza origini dati:
 
 1. Accedi all’istanza di authoring dell’AEM e passa a **[!UICONTROL Forms > Integrazioni dati]** e aprire il modello dati del modulo in cui si desidera creare un oggetto o un&#39;entità modello dati.
-1. Tocca **[!UICONTROL Crea entità]**.
-1. Nella finestra di dialogo Crea modello dati, specifica un nome per l’oggetto modello dati e tocca **[!UICONTROL Aggiungi]**. Un oggetto modello dati viene aggiunto al modello dati del modulo. L’oggetto modello dati appena aggiunto non è associato a un’origine dati e non dispone di proprietà come mostrato nell’immagine seguente.
+1. Seleziona **[!UICONTROL Crea entità]**.
+1. Nella finestra di dialogo Crea modello dati, specifica un nome per l’oggetto modello dati e seleziona **[!UICONTROL Aggiungi]**. Un oggetto modello dati viene aggiunto al modello dati del modulo. L’oggetto modello dati appena aggiunto non è associato a un’origine dati e non dispone di proprietà come mostrato nell’immagine seguente.
 
    ![new-entity](assets/new-entity.png)
 
@@ -108,14 +108,14 @@ L’editor del modello dati modulo consente di creare proprietà secondarie in u
 
 Per creare una proprietà figlio:
 
-1. In un modello dati modulo, seleziona un oggetto modello dati e tocca **[!UICONTROL Crea proprietà figlio]**.
+1. In un modello dati modulo, seleziona un oggetto modello dati e fai clic su **[!UICONTROL Crea proprietà figlio]**.
 1. In **[!UICONTROL Crea proprietà figlio]** , specifica un nome e un tipo di dati per la proprietà nella finestra di dialogo **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** rispettivamente. Facoltativamente, puoi specificare un titolo e una descrizione per la proprietà.
 1. Abilita Calcolato se la proprietà è una proprietà calcolata. Il valore di una proprietà calcolata viene valutato in base a una regola o a un&#39;espressione. Per ulteriori informazioni, consulta [Modifica proprietà](#edit-properties).
 1. Se l’oggetto modello dati è associato a un’origine dati, la proprietà figlio aggiunta viene automaticamente associata alla proprietà dell’oggetto modello dati padre con lo stesso nome e tipo di dati.
 
-   Per associare manualmente una proprietà figlio a una proprietà dell’oggetto modello dati, tocca l’icona Sfoglia accanto a **[!UICONTROL Riferimento binding]** campo. Il **[!UICONTROL Seleziona oggetto]** nella finestra di dialogo sono elencate tutte le proprietà dell’oggetto modello dati principale. Seleziona una proprietà per l’associazione e tocca l’icona di spunta. È possibile selezionare solo una proprietà dello stesso tipo di dati della proprietà figlio.
+   Per associare manualmente una proprietà figlio a una proprietà dell’oggetto modello dati, seleziona l’icona Sfoglia accanto a **[!UICONTROL Riferimento binding]** campo. Il **[!UICONTROL Seleziona oggetto]** nella finestra di dialogo sono elencate tutte le proprietà dell’oggetto modello dati principale. Seleziona una proprietà a cui associarti e fai clic sull’icona di spunta. È possibile selezionare solo una proprietà dello stesso tipo di dati della proprietà figlio.
 
-1. Tocca **[!UICONTROL Fine]** per salvare la proprietà figlio e toccare **[!UICONTROL Salva]** per salvare il modello dati del modulo. La proprietà figlio viene ora aggiunta all’oggetto modello dati.
+1. Seleziona **[!UICONTROL Fine]** per salvare la proprietà figlio e selezionare **[!UICONTROL Salva]** per salvare il modello dati del modulo. La proprietà figlio viene ora aggiunta all’oggetto modello dati.
 
 Dopo aver creato oggetti e proprietà del modello dati, puoi continuare a creare moduli adattivi e comunicazioni interattive basate sul modello dati del modulo. Successivamente, quando saranno disponibili e configurate le origini dati, sarà possibile associare il modello dati del modulo alle origini dati. Il binding verrà aggiornato automaticamente nei moduli adattivi associati e nelle comunicazioni interattive. Per ulteriori informazioni sulla creazione di moduli adattivi e comunicazioni interattive utilizzando il modello dati del modulo, consulta [Usa modello dati modulo](/help/forms/using/using-form-data-model.md).
 
@@ -124,13 +124,13 @@ Dopo aver creato oggetti e proprietà del modello dati, puoi continuare a creare
 Quando le origini dati che si desidera integrare con il modello dati del modulo sono disponibili, è possibile aggiungerle al modello dati del modulo come descritto in [Aggiornare le origini dati](/help/forms/using/create-form-data-models.md#update). Quindi, per associare gli oggetti e le proprietà del modello di dati non associati, effettua le seguenti operazioni:
 
 1. Nel modello dati del modulo selezionare l&#39;origine dati non associata che si desidera associare a un&#39;origine dati.
-1. Tocca **[!UICONTROL Modifica proprietà]**.
-1. In **[!UICONTROL Modifica proprietà]** tocca l’icona Sfoglia accanto al riquadro **[!UICONTROL Binding]** campo. Apre il **[!UICONTROL Seleziona oggetto]** finestra di dialogo che elenca le origini dati aggiunte nel modello dati del modulo.
+1. Seleziona **[!UICONTROL Modifica proprietà]**.
+1. In **[!UICONTROL Modifica proprietà]** , selezionare l&#39;icona Sfoglia accanto al **[!UICONTROL Binding]** campo. Apre il **[!UICONTROL Seleziona oggetto]** finestra di dialogo che elenca le origini dati aggiunte nel modello dati del modulo.
 
    ![select-object](assets/select-object.png)
 
-1. Espandi la struttura delle origini dati e seleziona un oggetto modello dati da associare, quindi tocca l’icona di spunta.
-1. Tocca **[!UICONTROL Fine]** per salvare le proprietà, tocca **[!UICONTROL Salva]** per salvare il modello dati del modulo. L’oggetto modello dati è ora associato a un’origine dati. L’oggetto modello dati non è più contrassegnato come Non associato.
+1. Espandi la struttura delle origini dati e seleziona un oggetto modello dati da associare, quindi fai clic sull’icona di spunta.
+1. Seleziona **[!UICONTROL Fine]** per salvare le proprietà e quindi selezionare **[!UICONTROL Salva]** per salvare il modello dati del modulo. L’oggetto modello dati è ora associato a un’origine dati. L’oggetto modello dati non è più contrassegnato come Non associato.
 
    ![bound-model-object](assets/bound-model-object.png)
 
@@ -138,7 +138,7 @@ Quando le origini dati che si desidera integrare con il modello dati del modulo 
 
 Per leggere e scrivere dati per un oggetto modello dati, eseguire le operazioni seguenti per configurare i servizi di lettura e scrittura:
 
-1. Seleziona la casella di controllo nella parte superiore di un oggetto modello dati per selezionarlo e tocca **[!UICONTROL Modifica proprietà]**.
+1. Seleziona la casella di controllo nella parte superiore di un oggetto modello dati per selezionarlo e quindi **[!UICONTROL Modifica proprietà]**.
 
    ![edit-properties](assets/edit-properties.png)
 
@@ -167,8 +167,8 @@ Per leggere e scrivere dati per un oggetto modello dati, eseguire le operazioni 
 
    Servizi di lettura e scrittura configurati per l&#39;origine dati dipendente
 
-1. Tocca ![aem_6_3_edit](assets/aem_6_3_edit.png) per l&#39;argomento servizio di lettura a [associare l’argomento a un attributo del profilo utente, un attributo di richiesta o un valore letterale](#bindargument) e specifica il valore di binding.
-1. Tocca **[!UICONTROL Fine]** per salvare l&#39;argomento, **[!UICONTROL Fine]** per salvare le proprietà, quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Seleziona ![aem_6_3_edit](assets/aem_6_3_edit.png) per l&#39;argomento servizio di lettura a [associare l’argomento a un attributo del profilo utente, un attributo di richiesta o un valore letterale](#bindargument) e specifica il valore di binding.
+1. Seleziona **[!UICONTROL Fine]** per salvare l&#39;argomento, **[!UICONTROL Fine]** per salvare le proprietà, quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 
 ### Associa argomenti servizio di lettura {#bindargument}
 
@@ -242,11 +242,11 @@ Quando si aggiungono oggetti modello dati associati in un&#39;origine dati a un 
 
 >[!NOTE]
 >
->Le associazioni predefinite in un&#39;origine dati JDBC non vengono mantenute nel modello dati del modulo. Devi crearli manualmente.
+>Le associazioni predefinite in un&#39;origine dati JDBC non vengono mantenute nel modello dati del modulo. Creale manualmente.
 
 Per aggiungere un&#39;associazione:
 
-1. Seleziona la casella di controllo nella parte superiore di un oggetto modello dati per selezionarlo e tocca **[!UICONTROL Aggiungi associazione]**. Viene visualizzata la finestra di dialogo Aggiungi associazione.
+1. Seleziona la casella di controllo nella parte superiore di un oggetto modello dati per selezionarlo e quindi **[!UICONTROL Aggiungi associazione]**. Viene visualizzata la finestra di dialogo Aggiungi associazione.
 
    ![associazione di componenti aggiuntivi](assets/add-association.png)
 
@@ -279,27 +279,27 @@ Per aggiungere un&#39;associazione:
 
    Argomento e associazione aggiornati
 
-   Tocca **[!UICONTROL Fine]** per salvare l&#39;argomento.
+   Seleziona **[!UICONTROL Fine]** per salvare l&#39;argomento.
 
-1. Tocca **[!UICONTROL Fine]** per salvare l&#39;associazione e quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Seleziona **[!UICONTROL Fine]** per salvare l&#39;associazione e quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 1. Ripeti i passaggi per creare altre associazioni, in base alle esigenze.
 
 >[!NOTE]
 >
 >L’associazione aggiunta viene visualizzata nella casella dell’oggetto modello dati con il titolo specificato e una linea che collega gli oggetti modello dati associati.
 >
->Per modificare un’associazione, seleziona la relativa casella di controllo e tocca **[!UICONTROL Modifica associazione]**.
+>È possibile modificare un’associazione selezionando la relativa casella di controllo e selezionando **[!UICONTROL Modifica associazione]**.
 
 ![add-association](assets/added-association.png)
 
-## Modifica delle proprietà {#properties}
+## Modifica proprietà {#properties}
 
 È possibile modificare le proprietà degli oggetti modello dati, le relative proprietà e i servizi aggiunti nel modello dati del modulo.
 
 Per modificare le proprietà:
 
 1. Selezionare la casella di controllo accanto a un oggetto modello dati, a una proprietà o a un servizio nel modello dati del modulo.
-1. Tocca **[!UICONTROL Modifica proprietà]**. Il **[!UICONTROL Modifica proprietà]** viene aperto un riquadro per l&#39;oggetto modello, la proprietà o il servizio selezionato.
+1. Seleziona **[!UICONTROL Modifica proprietà]**. Il **[!UICONTROL Modifica proprietà]** viene aperto un riquadro per l&#39;oggetto modello, la proprietà o il servizio selezionato.
 
    * **Oggetto modello dati**: specifica i servizi di lettura e scrittura e modifica gli argomenti.
    * **Proprietà**: specifica il tipo, il sottotipo e il formato per la proprietà. È inoltre possibile specificare se la proprietà selezionata è la chiave primaria per l&#39;oggetto modello dati.
@@ -309,7 +309,7 @@ Per modificare le proprietà:
 
    Finestra di dialogo Modifica proprietà per un servizio di recupero
 
-1. Tocca **[!UICONTROL Fine]** per salvare le proprietà e quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Seleziona **[!UICONTROL Fine]** per salvare le proprietà e quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 
 ### Creare proprietà calcolate {#computed}
 
@@ -318,7 +318,7 @@ Una proprietà calcolata è quella il cui valore viene calcolato in base a una r
 Ad esempio, puoi creare una proprietà calcolata **NomeCompleto** il cui valore è il risultato della concatenazione del **FirstName** e **Cognome** proprietà. Per eseguire questa operazione:
 
 1. Creare una proprietà con il nome `FullName` il cui tipo di dati è String.
-1. Abilita **[!UICONTROL Calcolato]** e tocca **[!UICONTROL Fine]** per creare la proprietà.
+1. Abilita **[!UICONTROL Calcolato]** e seleziona **[!UICONTROL Fine]** per creare la proprietà.
 
    ![calcolato](assets/computed.png)
 
@@ -326,18 +326,18 @@ Ad esempio, puoi creare una proprietà calcolata **NomeCompleto** il cui valore 
 
    ![computed-prop](assets/computed-prop.png)
 
-1. Seleziona la proprietà FullName e tocca **[!UICONTROL Modifica regola]**. Viene visualizzata una finestra dell’editor di regole.
-1. Nella finestra dell’editor delle regole, tocca **[!UICONTROL Crea]**. A **[!UICONTROL Imposta valore]** viene visualizzata la finestra regola.
+1. Selezionare la proprietà FullName e selezionare **[!UICONTROL Modifica regola]**. Viene visualizzata una finestra dell’editor di regole.
+1. Nella finestra dell’editor delle regole, seleziona **[!UICONTROL Crea]**. A **[!UICONTROL Imposta valore]** viene visualizzata la finestra regola.
 
    Dall’elenco a discesa Seleziona opzione, seleziona **[!UICONTROL Espressione matematica]**. Altre opzioni disponibili sono **[!UICONTROL Oggetto modello dati modulo]** e **[!UICONTROL Stringa]**.
 
 1. Nell&#39;espressione matematica, selezionare **[!UICONTROL FirstName]** e **[!UICONTROL Cognome]** rispettivamente nel primo e nel secondo oggetto. Seleziona **[!UICONTROL più]** come operatore.
 
-   Tocca **[!UICONTROL Fine]** e quindi tocca **[!UICONTROL Chiudi]** per chiudere la finestra dell&#39;editor di regole. La regola è simile alla seguente.
+   Seleziona **[!UICONTROL Fine]** e quindi seleziona **[!UICONTROL Chiudi]** per chiudere la finestra dell&#39;editor di regole. La regola è simile alla seguente.
 
    ![regola](assets/rule.png)
 
-1. Nel modello dati del modulo, tocca **[!UICONTROL Salva]**. Proprietà calcolata configurata.
+1. Nel modello dati del modulo, seleziona **[!UICONTROL Salva]**. Proprietà calcolata configurata.
 
 ## Utilizzare le proprietà di navigazione dei servizi OData {#work-with-navigation-properties-of-odata-services}
 
@@ -399,11 +399,11 @@ L’editor del modello dati modulo consente di generare dati di esempio per tutt
 
 Per generare e modificare i dati di esempio, effettuare le seguenti operazioni:
 
-1. Apri un modello di dati del modulo e tocca **[!UICONTROL Modifica dati di esempio]**. Genera e visualizza i dati di esempio nella finestra Modifica dati di esempio.
+1. Apri un modello di dati del modulo e seleziona **[!UICONTROL Modifica dati di esempio]**. Genera e visualizza i dati di esempio nella finestra Modifica dati di esempio.
 
    ![Genera dati di esempio](assets/form_data_model_generate_sample_data_new.png)
 
-1. In entrata **[!UICONTROL Modifica dati di esempio]** finestra, modifica i dati secondo necessità e tocca **[!UICONTROL Salva]**.
+1. In entrata **[!UICONTROL Modifica dati di esempio]** finestra, modifica i dati in base alle esigenze e seleziona **[!UICONTROL Salva]**.
 
 Successivamente, puoi utilizzare i dati di esempio per precompilare e testare le comunicazioni interattive in base al modello di dati del modulo. Per ulteriori informazioni, consulta [Usa modello dati modulo](/help/forms/using/using-form-data-model.md).
 
@@ -411,7 +411,7 @@ Successivamente, puoi utilizzare i dati di esempio per precompilare e testare le
 
 Il modello dati del modulo è configurato, ma prima di metterlo in uso, è possibile verificare se gli oggetti modello dati e i servizi configurati funzionano come previsto. Per testare gli oggetti e i servizi del modello dati:
 
-1. Seleziona un oggetto modello dati o un servizio nel modello dati del modulo e tocca **[!UICONTROL Oggetto modello di test]** o **[!UICONTROL Servizio di prova]**, rispettivamente.
+1. Seleziona un oggetto modello dati o un servizio nel modello dati del modulo, quindi fai clic su **[!UICONTROL Oggetto modello di test]** o **[!UICONTROL Servizio di prova]**, rispettivamente.
 
    Viene visualizzata la finestra Test modello dati modulo.
 
@@ -419,9 +419,9 @@ Il modello dati del modulo è configurato, ma prima di metterlo in uso, è possi
 
 1. Nella finestra Test modello dati modulo, selezionare l&#39;oggetto o il servizio modello dati da verificare nel riquadro di input.
 
-1. Specifica un valore di argomento nel codice del test e tocca **[!UICONTROL Test]**. In caso di esito positivo, il test restituisce l’output nel riquadro Output.
+1. Specifica un valore di argomento nel codice del test e seleziona **[!UICONTROL Test]**. In caso di esito positivo, il test restituisce l’output nel riquadro Output.
 
-   ![Risultati della prova](assets/test_results_form_data_model_new.png)
+   ![Risultati del test](assets/test_results_form_data_model_new.png)
 
 Analogamente, è possibile eseguire il test di altri servizi e oggetti del modello dati nel modello dati del modulo.
 
@@ -433,7 +433,7 @@ Il flag può essere impostato su uno qualsiasi dei seguenti valori:
 
 * **COMPLETO**: FDM esegue la convalida in base a tutti i vincoli
 * **DISATTIVATO**: nessuna convalida
-* **BASE**: FDM esegue la convalida sulla base dei vincoli &quot;obbligatorio&quot; e &quot;nullable&quot;
+* **BASE**: FDM esegue la convalida in base ai vincoli &quot;required&quot; e &quot;nullable&quot;
 
 Se non viene impostato alcun valore per `ValidationOptions`bandiera, **BASE** la convalida viene eseguita sui dati di input.
 

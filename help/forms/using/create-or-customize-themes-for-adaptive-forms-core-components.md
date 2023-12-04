@@ -7,10 +7,10 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 6%
+source-wordcount: '1933'
+ht-degree: 5%
 
 ---
 
@@ -73,7 +73,7 @@ La personalizzazione di un tema si riferisce al processo di modifica e personali
 
 * Installa la versione più recente di [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven è uno strumento di automazione della build comunemente utilizzato per i progetti Java™. L’installazione della versione più recente garantisce che tu disponga delle dipendenze necessarie per la personalizzazione del tema.
 
-* Scopri come creare un [libreria client in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it). AEM fornisce librerie client che consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client.
+* Scopri come creare un [libreria client in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM fornisce librerie client che consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client.
 
 * Installa un editor di testo normale. Microsoft® Visual Studio Code. L&#39;utilizzo di un editor di testo normale come Microsoft® Visual Studio Code fornisce un ambiente semplice per la modifica e la modifica dei file dei temi.
 
@@ -150,7 +150,7 @@ Il `variable.scss` contiene le variabili globali del tema. Aggiornando queste va
 
    ![Esempio: colore di errore impostato su blu](/help/forms/using/assets/theme-level-changes.png)
 
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 
 
 Allo stesso modo, è possibile utilizzare `variable.scss` file per impostare la famiglia e il tipo di carattere, i colori del tema e del font, la dimensione del font, la spaziatura del tema, l’icona di errore, gli stili dei bordi del tema e altre variabili che influiscono su più componenti del modulo adattivo.
@@ -170,7 +170,7 @@ Allo stesso modo, è possibile utilizzare `variable.scss` file per impostare la 
    ```
 
 
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 
 <!--
 
@@ -233,7 +233,7 @@ To apply and test the customized theme with an Adaptive Form:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
@@ -247,7 +247,7 @@ An Adaptive Form with the selected theme is created.
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Select an Adaptive Form and click Properties. 
 
@@ -271,7 +271,7 @@ Dopo aver testato correttamente il tema nell’ambiente di sviluppo locale, puoi
 
 Dopo l’installazione del pacchetto, il tema è disponibile per la selezione.
 
-![Libreria client di temi](/help/forms/using/assets/themeclientlibrary.png)
+![Libreria client tema](/help/forms/using/assets/themeclientlibrary.png)
 
 >[!NOTE]
 >
@@ -283,7 +283,7 @@ Dopo l’installazione del pacchetto, il tema è disponibile per la selezione.
 I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
 1. Accedi all’istanza di authoring AEM locale.
-1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Tocca **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Seleziona **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
 1. Clic **Crea** > **Forms adattivo**.
 1. Seleziona un modello di Componenti core Forms adattivi e fai clic su **Successivo**. Il **Aggiungi proprietà** viene visualizzato
 1. Specifica la **Nome** modulo adattivo.
@@ -302,7 +302,7 @@ I temi per moduli adattivi vengono utilizzati come parte di un modello di modulo
 
 Per rimuovere i temi inutilizzati o indesiderati:
 
-1. Accedi all’istanza di authoring .
+1. Accedi all’istanza di authoring.
 1. Apri `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
 1. Accedi a `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
 1. Elimina la cartella dei temi e salva le modifiche.

@@ -11,9 +11,9 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Dopo aver incluso il frammento di testo in una comunicazione interattiva e aver 
 >
 >Se le risorse esistenti includono espressioni di condizione/ripetizione precedenti alla 6.2 SP1 CFP 4, queste presentano la vecchia sintassi di condizione e ripetizione. Tuttavia, la condizione precedente/ripetizione funziona. Le espressioni di condizione/ripetizione nuova e vecchia sono compatibili tra loro per creare una combinazione nidificata di espressioni di condizione/ripetizione vecchie e nuove.
 
-1. Nel modulo di testo pertinente, seleziona la parte di testo da condizionalizzare e tocca **Condizione**.
+1. Nel modulo di testo pertinente, seleziona la parte di testo da condizionare e fai clic su **Condizione**.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -60,9 +60,9 @@ Dopo aver incluso il frammento di testo in una comunicazione interattiva e aver 
    >
    >Impossibile salvare un&#39;espressione condizionale vuota o non valida. Deve essere presente un’espressione condizionale valida all’interno di `${}` per salvare l&#39;espressione.
 
-1. Effettua le seguenti operazioni per creare una condizione per valutare se il testo selezionato/condizionato viene visualizzato nella lettera, quindi tocca il segno di spunta per salvare l’espressione:
+1. Effettua le seguenti operazioni per creare una condizione per valutare se il testo selezionato/condizionato viene visualizzato nella lettera, quindi seleziona il segno di spunta per salvare l’espressione:
 
-   Tocca due volte un elemento DD per inserirlo nella condizione. Inserisci l’operatore appropriato e crea la seguente condizione nella finestra di dialogo.
+   Selezionare un elemento DD per inserirlo nella condizione. Inserisci l’operatore appropriato e crea la seguente condizione nella finestra di dialogo.
 
    ```javascript
    ${DD_creditcard_Gender=="Male"}
@@ -70,7 +70,7 @@ Dopo aver incluso il frammento di testo in una comunicazione interattiva e aver 
 
    Per ulteriori informazioni sulla creazione dell&#39;espressione, vedere **Creazione di espressioni e funzioni remote con il generatore di espressioni** in [Generatore di espressioni](../../forms/using/expression-builder.md). Il valore specificato nell’espressione deve essere supportato per l’elemento nel dizionario dati. Per ulteriori informazioni, consulta [Dizionario dati](../../forms/using/data-dictionary.md).
 
-   Una volta inserita la condizione, puoi passare il cursore sul quadratino di ridimensionamento a sinistra della condizione per visualizzarla. Tocca la maniglia per visualizzare il menu a comparsa della condizione, che consente di modificare o rimuovere la condizione.
+   Una volta inserita la condizione, puoi passare il cursore sul quadratino di ridimensionamento a sinistra della condizione per visualizzarla. È possibile selezionare la maniglia per visualizzare il menu a comparsa della condizione, che consente di modificare o rimuovere la condizione.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
@@ -111,13 +111,13 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di re
 
    ![2_selezione](assets/2_selection.png)
 
-1. Tocca Ripeti.
+1. Seleziona Ripeti.
 
    Viene visualizzata la finestra di dialogo Ripeti.
 
    ![3_repeatDialog](assets/3_repeatdialog.png)
 
-1. Seleziona Interruzione di riga come separatore e, se necessario, tocca Aggiungi condizione per creare una regola. È inoltre possibile utilizzare il testo come separatore e specificare i caratteri di testo da utilizzare come separatore.
+1. Seleziona Interruzione di riga come separatore e, se necessario, seleziona Aggiungi condizione per creare una regola. È inoltre possibile utilizzare il testo come separatore e specificare i caratteri di testo da utilizzare come separatore.
 
    Viene visualizzata la finestra di dialogo Crea regola.
 
@@ -172,7 +172,7 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di ri
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Tocca **Ripeti**. Viene visualizzata la finestra di dialogo Ripeti con una condizione in linea vuota.
+1. Seleziona **Ripeti**. Viene visualizzata la finestra di dialogo Ripeti con una condizione in linea vuota.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
@@ -184,7 +184,7 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di ri
 
    In caso contrario, se non è necessario eseguire il rendering selettivo delle informazioni (in questo caso, le transazioni), lascia vuota la condizione eliminando quanto segue nella finestra di dialogo: `${}`. Il salvataggio di un&#39;espressione ripetuta viene attivato quando la finestra dell&#39;espressione ripetuta è vuota (senza ${} quando non è necessaria alcuna ripetizione) o quando contiene una condizione valida per la ripetizione.
 
-1. Seleziona un separatore per la formattazione del testo dinamico e tocca il segno di spunta per salvare:
+1. Seleziona un separatore per la formattazione del testo dinamico e seleziona il segno di spunta da salvare:
 
    * **Interruzione di riga**: inserisce un&#39;interruzione di riga dopo ogni voce di transazione nella lettera di output.
    * **Testo**: inserisce il carattere di testo specificato dopo ogni voce di transazione nella lettera di output.
@@ -193,7 +193,7 @@ Nell&#39;esempio seguente vengono illustrati i passaggi per l&#39;utilizzo di ri
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   È possibile toccare la maniglia per visualizzare il menu a comparsa della ripetizione, che consente di modificare o rimuovere la costruzione della ripetizione.
+   Potete selezionare la maniglia per visualizzare il menu a comparsa della ripetizione, che consente di modificare o rimuovere il costrutto di ripetizione.
 
    ![5_Repeeditremove](assets/5_repeateditremove.png)
 

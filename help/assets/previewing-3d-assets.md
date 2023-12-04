@@ -7,14 +7,14 @@ feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 8%
+source-wordcount: '568'
+ht-degree: 9%
 
 ---
 
-# Visualizzare in anteprima le risorse 3D in Adobe Experience Manager {#previewing-3d-assets-aem}
+# Anteprima di risorse 3D in Adobe Experience Manager {#previewing-3d-assets-aem}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -81,8 +81,8 @@ Consulta [Formati supportati per l’anteprima 3D](#supported-3d-previewing-asse
    | **Girare la fotocamera** | Ruota la vista attorno agli oggetti e alla scena 3D. | Fai clic con il pulsante sinistro del mouse e trascina. | Premete un solo dito e trascinate. |
    | **Sposta la fotocamera** | Spostare la vista verso sinistra, destra, l&#39;alto o il basso. | Fare clic con il pulsante destro del mouse e trascinare. | Premete due dita + trascinate. |
    | **Zoom fotocamera** | Spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D. | Rotellina di scorrimento. | Pizzico a due dita. |
-   | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic su. | Tocca due volte. |
-   | **Ripristina** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |   |   |
+   | **Ricentro fotocamera** | Centra di nuovo la fotocamera in un punto di un oggetto nella scena 3D. | Fare doppio clic su. | Doppia selezione. |
+   | **Reimposta** | Nell’angolo in basso a destra della pagina, seleziona l’icona Ripristina per ripristinare il punto di destinazione di visualizzazione al centro della risorsa 3D. L&#39;opzione Reimposta consente inoltre alla telecamera di essere più vicina o più lontana per mostrare l&#39;intera risorsa e una dimensione di visualizzazione ragionevole. |   |   |
    | **Modalità a tutto schermo** | Per accedere alla modalità a tutto schermo, seleziona l’icona a schermo intero nell’angolo inferiore destro della pagina. |   |   |
 
 1. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Chiudi]**.

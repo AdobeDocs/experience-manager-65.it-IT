@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 feature: Adaptive Forms
 exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 1%
+source-wordcount: '736'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Puoi configurare un modulo adattivo in modo che inizi automaticamente a salvare 
 
 Per un modulo adattivo, l’opzione di salvataggio automatico non è attivata come opzione predefinita. È possibile abilitare l’opzione di salvataggio automatico da **Salvataggio automatico** nelle proprietà di un modulo adattivo. Il **Salvataggio automatico** fornisce anche diverse altre opzioni di configurazione. Per abilitare e configurare l’opzione di salvataggio automatico per un modulo adattivo, effettua le seguenti operazioni:
 
-1. Per accedere alla sezione di salvataggio automatico nelle proprietà, seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]**, quindi tocca ![cmppr](assets/cmppr.png).
+1. Per accedere alla sezione di salvataggio automatico nelle proprietà, seleziona un componente, quindi fai clic su ![a livello di campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]** e quindi selezionare ![cmppr](assets/cmppr.png).
 1. In **[!UICONTROL Salvataggio automatico]** sezione, **[!UICONTROL Abilita]** opzione di salvataggio automatico.
 1. In **[!UICONTROL Evento modulo adattivo]** , specificare 1 o TRUE per iniziare automaticamente a salvare il modulo al caricamento nel browser. È inoltre possibile specificare un&#39;espressione condizionale per un evento che, quando viene attivato e restituisce true, inizia a salvare il contenuto del modulo.
 1. Specifica il trigger. Il salvataggio automatico viene attivato in base alla configurazione. Le opzioni disponibili sono:
@@ -87,6 +87,6 @@ Puoi implementare un evento personalizzato per attivare la funzionalità di salv
 
 1. Apri il modulo adattivo in modalità di authoring.
 
-1. In modalità di modifica, seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]**, quindi tocca ![cmppr](assets/cmppr.png).
+1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]** e quindi selezionare ![cmppr](assets/cmppr.png).
 1. Nelle proprietà, apri la **[!UICONTROL Base]** sezione. In **[!UICONTROL Categoria libreria client]** immettere il valore della proprietà categoria definita durante la creazione delle cartelle della libreria client.
 1. Apri la sezione Salvataggio automatico. In **[!UICONTROL Salva automaticamente dopo questo evento]** , specifica un evento personalizzato già definito nella libreria client. Fai clic su **[!UICONTROL OK]**.

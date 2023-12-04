@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4520'
-ht-degree: 9%
+source-wordcount: '4422'
+ht-degree: 8%
 
 ---
 
@@ -354,7 +354,7 @@ La tabella seguente identifica i movimenti del visualizzatore mobile supportati 
    <td><p>Mostra o nasconde l'interfaccia utente</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Doppio tocco</strong></p> </td>
+   <td><p><strong>Doppia selezione</strong></p> </td>
    <td><p>Non applicabile</p> </td>
    <td><p>Ingrandisce o ripristina</p> </td>
    <td><p>Ingrandisce o ripristina</p> </td>
@@ -534,7 +534,7 @@ Supponiamo di avere un segmento video di 30 secondi. In totale, sono presenti no
 |---|---|---|
 | 1 | 0-10 | 1, 2, 3, 4 |
 | 2 | 10-20 | 4, 5, 6, 7 |
-| 3 | 20-30 | 6, 7, 8, 9 |
+| 3 | 20 — 30 | 6, 7, 8, 9 |
 
 Il sottosegmento video 3 non si estende oltre le miniature ad esso assegnate. Inoltre, le miniature 4, 6 e 7 sono visibili nel pannello con una lunghezza doppia rispetto alle altre miniature.
 
@@ -555,7 +555,7 @@ Durante la creazione dei predefiniti visualizzatore di banner carosello, è poss
 
 | | **Descrizione** | **Azioni** |
 |---|---|---|
-| **[!UICONTROL Icona punto attivo]** | Modifica l&#39;icona utilizzata per il punto attivo | Per modificare l&#39;immagine dell&#39;icona punto attivo, nella **[!UICONTROL Aspetto]** scheda, in **[!UICONTROL Componente selezionato]**, seleziona **[!UICONTROL ImageMapEffect]**. Seleziona **[!UICONTROL Sfondo]** alla voce **[!UICONTROL Icona]** e, nel campo **[!UICONTROL Immagine]**, individua l’immagine di sfondo desiderata. |
+| **[!UICONTROL Icona punto attivo]** | Modifica l&#39;icona utilizzata per il punto attivo | Per modificare l&#39;immagine dell&#39;icona punto attivo, nella **[!UICONTROL Aspetto]** scheda, in **[!UICONTROL Componente selezionato]**, seleziona **[!UICONTROL ImageMapEffect]**. Sotto **[!UICONTROL Icona]**, seleziona **[!UICONTROL Sfondo]** e nella **[!UICONTROL Immagine]** campo passare all&#39;immagine di sfondo desiderata. |
 
 ## Attivare o disattivare i predefiniti visualizzatore {#activating-or-deactivating-viewer-presets}
 

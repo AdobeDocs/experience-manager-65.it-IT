@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4031'
+source-wordcount: '4024'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ Può essere consentito lavorare su un&#39;attività offline e successivamente in
 
 ### Salvare i dati senza completare l&#39;attività {#save-your-work-without-completing-the-task}
 
-1. In qualsiasi scheda, tocca **Salva**.
+1. In qualsiasi scheda, seleziona **Salva**.
 
    Viene visualizzata la finestra di dialogo Salva come bozza. Il nome predefinito della bozza corrisponde al nome dell&#39;attività del modello di attività.
 
@@ -199,7 +199,7 @@ Può essere consentito lavorare su un&#39;attività offline e successivamente in
    >
    >Per ulteriori informazioni, consultate Salvare periodicamente una bozza in [Gestione delle preferenze](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. Nella finestra di dialogo Salva come bozza, specifica un nome univoco per l’attività e tocca **OK**.
+1. Nella finestra di dialogo Salva come bozza, specifica un nome univoco per l’attività e seleziona **OK**.
 
    ![saveasdraft_dialog_name](assets/saveasdraftdialog_name.png)
 

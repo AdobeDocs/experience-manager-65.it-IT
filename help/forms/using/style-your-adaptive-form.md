@@ -4,10 +4,10 @@ description: Scopri come creare un tema personalizzato, assegnare uno stile ai s
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 10%
+source-wordcount: '1982'
+ht-degree: 8%
 
 ---
 
@@ -53,7 +53,7 @@ L’editor di moduli adattivi fornisce più temi predefiniti. Se prevedi di non 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Apri proprietà di **[!UICONTROL Contenitore di moduli adattivi]**. Nel browser delle proprietà, passa a **[!UICONTROL Base]** > **[!UICONTROL Tema modulo adattivo]**. Il **[!UICONTROL Tema modulo adattivo]** elenca tutti i temi predefiniti e personalizzati. Per impostazione predefinita, viene applicato il tema Area di lavoro.
-1. Seleziona un tema da **[!UICONTROL Tema modulo adattivo]** campo. Ad esempio: **Tema del sondaggio**. Tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) quindi puoi applicare il tema selezionato.
+1. Seleziona un tema da **[!UICONTROL Tema modulo adattivo]** campo. Ad esempio: **Tema del sondaggio**. Seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) quindi puoi applicare il tema selezionato.
 
    ![Modulo adattivo con tema predefinito](assets/default-adaptive-form.png)
 
@@ -75,17 +75,17 @@ La progettazione mostrata sopra richiede modifiche nel testo segnaposto e nel lo
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Tocca l’immagine del logo in [!UICONTROL intestazione] componente e tocca ![cmppr](assets/cmppr.png) **[!UICONTROL proprietà]**. In [!UICONTROL immagine] , toccare X per rimuovere l&#39;immagine del logo esistente.
-   1. Tocca **[!UICONTROL caricare]**, seleziona logo.png e tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche. L&#39;immagine è stata scaricata in [Prima di iniziare](/help/forms/using/style-your-adaptive-form.md#before-you-start) sezione.
-   1. Toccare il testo dell’intestazione, `We.Retail`, e tocca ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL modifica]**. Cambia il testo dell&#39;intestazione in `we retail`. Applica il formato grassetto solo a `we`in `we retail`.
+   1. Selezionare l&#39;immagine del logo nella [!UICONTROL intestazione] componente e seleziona ![cmppr](assets/cmppr.png) **[!UICONTROL proprietà]**. In [!UICONTROL immagine] , selezionare X per rimuovere l&#39;immagine del logo esistente.
+   1. Seleziona **[!UICONTROL caricare]**, selezionare logo.png e quindi fare clic su ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche. L&#39;immagine è stata scaricata in [Prima di iniziare](/help/forms/using/style-your-adaptive-form.md#before-you-start) sezione.
+   1. Seleziona il testo dell’intestazione, `We.Retail`, e seleziona ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL modifica]**. Cambia il testo dell&#39;intestazione in `we retail`. Applica il formato grassetto solo a `we`in `we retail`.
 
       ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Rimuovi titolo e aggiungi testo segnaposto:
 
-   1. Tocca il campo ID cliente e tocca ![cmppr](assets/cmppr.png) proprietà.
+   1. Seleziona il campo ID cliente e seleziona ![cmppr](assets/cmppr.png) proprietà.
    1. Copia il contenuto del **[!UICONTROL Titolo]** campo al **[!UICONTROL Testo segnaposto]** campo.
-   1. Elimina il contenuto del **[!UICONTROL Titolo]** campo e tocco ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Elimina il contenuto del **[!UICONTROL Titolo]** e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Ripetere i tre passaggi precedenti per tutte le caselle di testo, la casella numerica e il campo e-mail del modulo.
 
       ![update-adaptive-form](assets/updated-adaptive-form.png)
@@ -101,16 +101,16 @@ In questo tutorial potrai applicare stili a intestazione e piè di pagina, compo
 ### Creare un tema {#create-a-theme}
 
 1. Accedi all’istanza di authoring dell’AEM e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temi]**. L’URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
-1. Tocca **[!UICONTROL Crea]** e seleziona **[!UICONTROL Tema]**. Il [!UICONTROL Crea tema] viene visualizzata una pagina con i campi necessari per creare un tema. Il **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** I campi sono obbligatori:
+1. Seleziona **[!UICONTROL Crea]** e seleziona **[!UICONTROL Tema]**. Il [!UICONTROL Crea tema] viene visualizzata una pagina con i campi necessari per creare un tema. Il **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** I campi sono obbligatori:
 
    * **Titolo:** Specifica un titolo per il tema. Ad esempio: **Tema globale.** Il titolo consente di identificare il tema dall’elenco dei temi.
-   * **Nome:** Specifica il nome del tema. Ad esempio: **Tema globale.** Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo del nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo nome può contenere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti da un trattino.
+   * **Nome:** Specifica il nome del tema. Ad esempio: **Tema globale.** Nell&#39;archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo del nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo nome può contenere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti da un trattino.
 
-1. Tocca **[!UICONTROL Crea]**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Tocca **[!UICONTROL Apri]** per aprire il tema appena creato in una nuova scheda. Il tema viene aperto nell’editor temi. Per lo stile, l’editor temi utilizza un modulo adattivo fornito con l’AEM [!DNL Forms].
+1. Seleziona **[!UICONTROL Crea]**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Seleziona **[!UICONTROL Apri]** per aprire il tema appena creato in una nuova scheda. Il tema viene aperto nell’editor temi. Per lo stile, l’editor temi utilizza un modulo adattivo fornito con l’AEM [!DNL Forms].
 
    Per informazioni sull’utilizzo dell’interfaccia utente dell’editor temi, consulta [Informazioni sull’editor temi](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Tocca **[!UICONTROL Opzioni tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configura]**. In **[!UICONTROL Anteprima modulo]** , selezionare il campo **shipping-address-add-update-form** modulo adattivo, tocco ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), tocca **[!UICONTROL Salva]**. Ora l’editor temi è configurato per utilizzare un modulo adattivo personalizzato invece del modulo adattivo predefinito. Tocca **[!UICONTROL Annulla]** per tornare all’editor temi.
+1. Seleziona **[!UICONTROL Opzioni tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configura]**. In **[!UICONTROL Anteprima modulo]** , selezionare il campo **shipping-address-add-update-form** modulo adattivo, seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), seleziona **[!UICONTROL Salva]**. Ora l’editor temi è configurato per utilizzare un modulo adattivo personalizzato invece del modulo adattivo predefinito. Seleziona **[!UICONTROL Annulla]** per tornare all’editor temi.
 
    ![custom-theme](assets/custom-theme.png)
 
@@ -124,9 +124,9 @@ In questo tutorial potrai applicare stili a intestazione e piè di pagina, compo
 
 Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un modulo adattivo. In genere, l’intestazione contiene il logo e il nome dell’organizzazione, il piè di pagina contiene informazioni sul copyright, che rimangono identiche in più forme di un’organizzazione. Per assegnare uno stile all’intestazione e al piè di pagina del modulo adattivo shipping-address-add-update-form:
 
-1. Navigare nel **[!UICONTROL Intestazione]** > **[!UICONTROL Testo]** selettori. Il pannello Selettori si trova a sinistra dell’editor temi. Se il pannello non è visibile, tocca ![interruttore-pannello laterale](assets/toggle-side-panel.png) Attiva/Disattiva pannello laterale.
+1. Navigare nel **[!UICONTROL Intestazione]** > **[!UICONTROL Testo]** selettori. Il pannello Selettori si trova a sinistra dell’editor temi. Se il pannello non è visibile, seleziona ![interruttore-pannello laterale](assets/toggle-side-panel.png) Attiva/Disattiva pannello laterale.
 
-1. Imposta le seguenti proprietà in **[!UICONTROL Testo]** Pannello a soffietto e tocco ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Imposta le seguenti proprietà in **[!UICONTROL Testo]** Pannello a soffietto e selezione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Proprietà | Valore |
    |---|---|
@@ -134,10 +134,10 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
    | Colore font | FFFFFF |
    | Dimensione font | 54 px |
 
-1. Tocca il [!UICONTROL intestazione] widget e tocco **[!UICONTROL Intestazione]**. Le opzioni per assegnare uno stile al widget Intestazione vengono visualizzate a sinistra. Espandi **[!UICONTROL Dimension e posizione]** Pannello a soffietto, imposta **[!UICONTROL Altezza]** a `120px`, e tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleziona la [!UICONTROL intestazione] widget e seleziona **[!UICONTROL Intestazione]**. Le opzioni per assegnare uno stile al widget Intestazione vengono visualizzate a sinistra. Espandi **[!UICONTROL Dimension e posizione]** Pannello a soffietto, imposta **[!UICONTROL Altezza]** a `120px`, e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Espandi **[!UICONTROL Sfondo]** pannello a soffietto del widget intestazione, imposta **[!UICONTROL Colore di sfondo]** a `F6921E.`
 
-   Passa il cursore sopra **[!UICONTROL Immagine e sfumatura]** > **[!UICONTROL + Aggiungi]**, tocca **[!UICONTROL Immagine]**. Imposta le seguenti proprietà e tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Passa il cursore sopra **[!UICONTROL Immagine e sfumatura]** > **[!UICONTROL + Aggiungi]**, seleziona **[!UICONTROL Immagine]**. Imposta le seguenti proprietà e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Proprietà | Valore |
    |---|---|
@@ -145,7 +145,7 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
    | Posizione | A destra in basso |
    | Divisione in porzioni | Nessuna ripetizione |
 
-1. Nell’editor temi, tocca il logo nell’intestazione e tocca **[!UICONTROL Logo intestazione]**. Espandi il pannello a soffietto Dimension e posizione, imposta le seguenti proprietà e tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Nell’editor del tema, seleziona il logo nell’intestazione e fai clic su **[!UICONTROL Logo intestazione]**. Espandi il pannello a soffietto Dimension e posizione, imposta le seguenti proprietà e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -160,22 +160,22 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
         <li>Superiore: 1,5 rem</li> 
         <li>Inferiore: -35 px</li> 
         <li>Sinistra: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Suggerimento</strong> Tocca il <img src="assets/link.png"> icona di collegamento per fornire un valore diverso a ciascun campo.<br /> </p> </td> 
+       </ul> <p><strong>Suggerimento</strong> Seleziona la <img src="assets/link.png"> icona di collegamento per fornire un valore diverso a ciascun campo.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Altezza</td> 
-      <td>4.75rem</td> 
+      <td>4,75 rem</td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Tocca il widget piè di pagina e tocca **[!UICONTROL Piè di pagina]**. Espandi **[!UICONTROL Sfondo]** Pannello a soffietto, imposta **[!UICONTROL Colore di sfondo]** a `F6921E`, e tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Selezionate il widget piè di pagina e selezionate **[!UICONTROL Piè di pagina]**. Espandi **[!UICONTROL Sfondo]** Pannello a soffietto, imposta **[!UICONTROL Colore di sfondo]** a `F6921E`, e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### Personalizzare lo stile del componente di acquisizione dati e applicare uno sfondo al modulo adattivo {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 Per acquisire i dati, in un modulo adattivo puoi utilizzare più componenti. Casella di testo e casella numerica. Puoi fornire uno stile identico a tutti i componenti di acquisizione dati o uno stile separato per ciascun componente. In questa esercitazione, viene applicato uno stile identico alle caselle numeriche (ID cliente, CAP) e alle caselle di testo (ID cliente, Nome, Indirizzo di spedizione, Stato, E-mail). Per assegnare uno stile ai componenti di acquisizione dati:
 
-1. Tocca il **[!UICONTROL ID cliente]** e tocca il **[!UICONTROL Widget campo]** opzione. Imposta le seguenti proprietà e tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleziona la **[!UICONTROL ID cliente]** e selezionare il **[!UICONTROL Widget campo]** opzione. Imposta le seguenti proprietà e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -231,7 +231,7 @@ Per acquisire i dati, in un modulo adattivo puoi utilizzare più componenti. Cas
     </tbody> 
     </table>
 
-1. Tocca l’area vuota sopra il **[!UICONTROL ID cliente]** campo e tocco **[!UICONTROL Contenitore pannello responsivo]**. Imposta il **[!UICONTROL Sfondo]** > **[!UICONTROL Colore di sfondo]** F1F2F2. Tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleziona l’area vuota sopra il **[!UICONTROL ID cliente]** e seleziona **[!UICONTROL Contenitore pannello responsivo]**. Imposta il **[!UICONTROL Sfondo]** > **[!UICONTROL Colore di sfondo]** F1F2F2. Seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Contenitore di pannelli reattivi](do-not-localize/responsive-panel-container.png)
 
@@ -239,7 +239,7 @@ Per acquisire i dati, in un modulo adattivo puoi utilizzare più componenti. Cas
 
 È possibile utilizzare un tema personalizzato per applicare uno stile identico a tutti i pulsanti del modulo adattivo e [stile in linea](/help/forms/using/inline-style-adaptive-forms.md) per applicare uno stile a un pulsante specifico. Per assegnare uno stile ai pulsanti:
 
-1. Tocca il **[!UICONTROL Invia]** e tocca il **[!UICONTROL Pulsante]** opzione. Imposta le seguenti proprietà e tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleziona la **[!UICONTROL Invia]** e selezionare il pulsante **[!UICONTROL Pulsante]** opzione. Imposta le seguenti proprietà e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -300,14 +300,14 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
 
    ![style-option](assets/style-option.png)
 
-1. Tocca il **[!UICONTROL Allega]** e tocca il ![aem_6_3_edit](assets/aem_6_3_edit.png)icona. Imposta le seguenti proprietà in **[!UICONTROL Dimension e posizione]** Pannello a soffietto:
+1. Seleziona la **[!UICONTROL Allega]** e selezionare il pulsante ![aem_6_3_edit](assets/aem_6_3_edit.png)icona. Imposta le seguenti proprietà in **[!UICONTROL Dimension e posizione]** Pannello a soffietto:
 
    | Proprietà | Valore |
    |---|---|
    | Mobile | A sinistra |
    | Larghezza | 10% |
 
-1. Tocca il **[!UICONTROL Bozza indirizzo approvato dal governo]** e tocca il pulsante ![aem_6_3_edit](assets/aem_6_3_edit.png)icona. Imposta le seguenti proprietà:
+1. Seleziona la **[!UICONTROL Bozza indirizzo approvato dal governo]** e selezionare il ![aem_6_3_edit](assets/aem_6_3_edit.png)icona. Imposta le seguenti proprietà:
 
    <table> 
     <tbody> 
@@ -340,7 +340,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
       <td>40 px</td> 
      </tr> 
      <tr> 
-      <td>Dimensioni e posizione<br /> </td> 
+      <td>Dimension e posizione<br /> </td> 
       <td>Margine</td> 
       <td><br /> 
        <ul> 
@@ -397,7 +397,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
     </tbody> 
    </table>
 
-1. Tocca il **[!UICONTROL Invia]** e tocca il ![aem_6_3_edit](assets/aem_6_3_edit.png) icona. Imposta le seguenti proprietà:
+1. Seleziona la **[!UICONTROL Invia]** e selezionare il pulsante ![aem_6_3_edit](assets/aem_6_3_edit.png) icona. Imposta le seguenti proprietà:
 
    <table> 
     <tbody> 

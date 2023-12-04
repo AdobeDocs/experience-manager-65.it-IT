@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 2%
+source-wordcount: '1558'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ Se stai configurando una destinazione per la prima volta, fai clic su **Configur
 1. Specifica i dettagli dell’account Target, ad esempio codice client, e-mail e password.
 1. Seleziona **Rest** dall’elenco a discesa Tipo API.
 
-1. Clic **Connettersi ad Adobe Target** in modo da poter inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio Connessione riuscita. Fai clic su **OK** sul messaggio e quindi **OK** nella finestra di dialogo. L’account Target è configurato.
+1. Clic **Connettersi ad Adobe Target** in modo da poter inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio Connessione riuscita. Clic **OK** sul messaggio e quindi **OK** nella finestra di dialogo. L’account Target è configurato.
 
 1. Creare un framework Target come descritto in [Aggiungere un framework](/help/sites-administering/target.md).
 
@@ -84,9 +84,9 @@ Oltre al server JBoss®, è possibile aggiungere l&#39;argomento -Dabtesting.ena
 
 AEM consente di creare un pubblico e di utilizzarlo per un test A/B. Il pubblico creato all’interno dell’AEM è disponibile in AEM Forms. Per creare un pubblico in AEM, effettua le seguenti operazioni:
 
-1. Nell’istanza di authoring, tocca **Adobe Experience Manager** > **Personalizzazione** > **Tipi di pubblico**.
+1. Nell’istanza di authoring, seleziona **Adobe Experience Manager** > **Personalizzazione** > **Tipi di pubblico**.
 
-1. Nella pagina Tipi di pubblico, tocca **Crea pubblico > Crea pubblico Target**.
+1. Nella pagina Tipi di pubblico, seleziona **Crea pubblico > Crea pubblico Target**.
 1. Nella finestra di dialogo Configurazione di Adobe Target, seleziona una configurazione di Target e fai clic su **Ok**.
 1. Nella pagina Crea nuovo pubblico, crea le regole. Le regole ti consentono di categorizzare il pubblico. Ad esempio, puoi categorizzare i tipi di pubblico in base al sistema operativo. Il pubblico A proviene da Windows, mentre il pubblico B proviene da Linux®.
 

@@ -10,9 +10,9 @@ discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
 feature: Adaptive Forms
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '802'
 ht-degree: 14%
 
 ---
@@ -29,7 +29,7 @@ Questo articolo spiega il processo per utilizzare il flusso di lavoro di traduzi
 
 Il servizio di traduzione automatica traduce immediatamente il contenuto in formato adattivo e documento di record. AEM Forms è preconfigurato per utilizzare una versione di prova di Microsoft Translator per la traduzione automatica. Per abilitare la traduzione automatica per i moduli adattivi e il documento di record, effettua le seguenti operazioni:
 
-1. Nell’interfaccia utente di AEM Forms, seleziona un modulo e tocca il **Aggiungi dizionario** opzione.
+1. Nell’interfaccia utente di AEM Forms, seleziona un modulo e fai clic su **Aggiungi dizionario** opzione.
 1. In entrata **Aggiungi dizionario a progetto di traduzione** , seleziona la **Crea un nuovo progetto di traduzione** o **Aggiungi a un progetto di traduzione esistente** opzione.
 1. In **Titolo progetto** , specificare il titolo. Ad esempio `Government Reference Site - German locale.`
 1. In **Lingue di destinazione** , specificare una lingua (ad esempio, `German(de)`) e fai clic su **Fine**. È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate in **Lingue di destinazione** campo.
@@ -53,7 +53,7 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in form
 [Impostazioni del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Personalizzare le informazioni di branding del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e assicurati che le impostazioni locali del browser siano impostate sulla stessa lingua in cui hai localizzato il modulo adattivo utilizzando la lingua del computer. Le impostazioni locali del browser consentono di localizzare le informazioni di branding nel documento di record.
-1. Per visualizzare il documento localizzato del record, tocca Genera anteprima. Il documento di record PDF viene generato e aperto in una nuova scheda nel browser.
+1. Per visualizzare il documento di record localizzato, selezionare Genera anteprima. Il documento di record PDF viene generato e aperto in una nuova scheda nel browser.
 
 ## Localizzazione di un modulo adattivo e del relativo documento di record tramite Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

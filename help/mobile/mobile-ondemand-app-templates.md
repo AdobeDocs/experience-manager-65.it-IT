@@ -1,18 +1,14 @@
 ---
 title: Creazione e aggiunta di modelli e componenti
-seo-title: Creating and Adding Templates and Components
 description: Segui questa pagina per scoprire come creare e aggiungere modelli e componenti all’app. La pagina utilizza l’app Geometrixx Unlimited come app che contiene un modello di app e modelli di pagina di esempio.
-seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
-uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 0%
+source-wordcount: '1151'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +41,7 @@ Quando crei un’app basata sul modello di un’altra app, otterrai un’app con
 Passaggi per creare un’app basata su un modello di app:
 
 1. Passa al catalogo delle app AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Seleziona **Crea** —> **App** come mostrato di seguito
+1. Seleziona **Crea** -> **App** come mostrato di seguito
 
 Dopo aver creato un’app utilizzando questo modello, puoi aggiungere all’app articoli, banner e raccolte. Per rivedere, creare articoli, banner e raccolte, consulta [Azioni gestione contenuti](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
@@ -90,7 +86,7 @@ L’articolo Unlimited è un modello di esempio che rappresenta un layout di art
 
 Una volta creato, un autore può modificare il contenuto di un articolo aggiungendo componenti come testo e immagini. Gli articoli sono un’estensione dei modelli di pagina dell’AEM.
 
-Seleziona un articolo da modificare e fai clic su **Modifica** per aggiungere componenti all’articolo.
+Seleziona un articolo da modificare, quindi fai clic su **Modifica** per aggiungere componenti all’articolo.
 
 ![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -145,7 +141,7 @@ Una volta che il componente è già stato incluso in una pagina AEM, insieme ad 
 **Per modificare un componente esistente:**
 
 1. Scegli quella pagina e assicurati di essere in **Modifica** e seleziona il componente
-1. Tocca l’icona chiave inglese per configurare il componente
+1. Seleziona l’icona chiave inglese per configurare il componente
 
 >[!NOTE]
 >

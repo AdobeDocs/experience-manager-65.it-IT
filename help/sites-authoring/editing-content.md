@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 48%
+source-wordcount: '3015'
+ht-degree: 46%
 
 ---
 
@@ -191,7 +191,7 @@ Questa opzione è valida per i seguenti tipi di risorse (alcuni dipendono dal si
   </tr>
   <tr>
    <td>Frammenti di contenuto</td>
-   <td>Frammenti di contenuto<br /> </td>
+   <td>Frammento di contenuto<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -342,7 +342,7 @@ Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti
 
 Per tipi di componenti specifici puoi trascinare e rilasciare le risorse dal browser Risorse direttamente nel componente per aggiornare il contenuto:
 
-| **Tipo risorsa** | **Tipo componente** |
+| **Tipo risorsa** | **Tipo di componente** |
 |---|---|
 | Immagine | Immagine |
 | Documento | Scarica |
@@ -368,7 +368,7 @@ Per esempio, il componente **Testo**:
 
 Per spostare un componente paragrafo:
 
-1. Tocca o fai clic e tieni premuto per selezionare il paragrafo da spostare.
+1. Selezionare il paragrafo da spostare con la selezione o il clic e la conservazione.
 1. Trascina il paragrafo nella nuova posizione. In AEM viene indicato dove è possibile rilasciare il paragrafo. Rilascialo nella posizione desiderata.
 
    ![spostamento del componente paragrafo](assets/screen_shot_2018-03-22at121821.png)
@@ -387,7 +387,7 @@ Invece di passare più volte dall&#39;editing al [modalità di layout](/help/sit
 
    ![Modalità di modifica nel modulo](assets/screen_shot_2018-03-22at133756.png)
 
-   Tocca o fai clic sul pulsante **Layout** per regolare il layout del componente.
+   Fai clic su **Layout** per regolare il layout del componente.
 
    ![Barra degli strumenti del componente](do-not-localize/chlimage_1-21.png)
 
@@ -425,7 +425,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
   La barra degli strumenti del componente, se il componente si trova su una pagina che fa parte di una Live Copy o di un lancio (basato su una Live Copy). Ad esempio:
 
-  ![Live Copy ](assets/screen_shot_2018-03-22at134339.png)
+  ![Live Copy](assets/screen_shot_2018-03-22at134339.png)
 
   L’opzione Annulla ereditarietà è disponibile:
 
@@ -443,7 +443,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
   Finestra di dialogo di configurazione. Ad esempio, come con il sistema paragrafo ereditato:
 
-  ![Sistema paragrafo ereditato](assets/chlimage_1-124.png)
+  ![Sistema paragrafi ereditato](assets/chlimage_1-124.png)
 
 ## Modificare il modello di pagina {#editing-the-page-template}
 

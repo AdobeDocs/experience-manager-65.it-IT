@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -30,8 +30,8 @@ Per applicare un layout personalizzato a un campo, eseguire le operazioni seguen
 
 ### Personalizzare il layout di un singolo campo {#customize-layout-of-a-single-field}
 
-1. Apri il modulo in **Stile** modalità. Per aprire il modulo in modalità stile, nella barra degli strumenti della pagina tocca ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) > **Stile**.
-1. Nella barra laterale, sotto **Oggetti modulo**, seleziona il campo e tocca il pulsante Modifica ![edit-button](assets/edit-button.png).
+1. Apri il modulo in **Stile** modalità. Per aprire il modulo in modalità stile, nella barra degli strumenti della pagina seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) > **Stile**.
+1. Nella barra laterale, sotto **Oggetti modulo**, seleziona il campo e fai clic sul pulsante Modifica ![edit-button](assets/edit-button.png).
 1. Seleziona lo stato del campo da personalizzare e specifica lo stile per tale stato.
 
    ![Specifica dello stile in linea di un campo](assets/edit-error-state.png)
@@ -43,7 +43,7 @@ Con AEM Forms, ora puoi creare un tema e applicarlo al modulo. L’editor tema c
 Creare un tema utilizzando Editor tema per personalizzare il layout di tutti i campi del modulo. Dopo aver creato un tema, effettuare le seguenti operazioni per applicarlo a un modulo:
 
 1. Apri il modulo in modalità di modifica.
-1. In modalità di modifica, seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **Contenitore modulo adattivo**, quindi tocca ![cmppr](assets/cmppr.png).
+1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/field-level.png) > **Contenitore modulo adattivo** e quindi selezionare ![cmppr](assets/cmppr.png).
 1. Nella barra laterale, in Tema modulo adattivo, seleziona il tema creato utilizzando l’Editor tema.
 
 ## Creare un layout di campo personalizzato {#create-a-custom-field-layout}

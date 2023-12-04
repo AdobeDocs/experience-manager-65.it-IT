@@ -5,10 +5,10 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3679'
-ht-degree: 2%
+source-wordcount: '3667'
+ht-degree: 1%
 
 ---
 
@@ -65,8 +65,8 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 
 1. Apri la console Modelli di flusso di lavoro. L’URL predefinito è `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleziona **Crea**, quindi **Crea modello**. Viene visualizzata la finestra di dialogo Aggiungi modello flusso di lavoro.
-1. Inserisci il **Titolo** e **Nome** (facoltativo). Ad esempio, una richiesta di ipoteca. Tocca **Fine**.
-1. Seleziona il modello di flusso di lavoro appena creato e tocca **Modifica**. Ora è possibile aggiungere passaggi del flusso di lavoro per creare una logica di business. La prima volta che crei un modello di flusso di lavoro, contiene:
+1. Inserisci il **Titolo** e **Nome** (facoltativo). Ad esempio, una richiesta di ipoteca. Seleziona **Fine**.
+1. Seleziona il modello di flusso di lavoro appena creato e seleziona **Modifica**. Ora è possibile aggiungere passaggi del flusso di lavoro per creare una logica di business. La prima volta che crei un modello di flusso di lavoro, contiene:
 
    * I passaggi: Inizio flusso e Fine flusso. Questi passaggi rappresentano l’inizio e la fine del flusso di lavoro. Questi passaggi sono necessari e non possono essere modificati o rimossi.
    * Un esempio di passaggio Partecipante denominato Passaggio 1. Questo passaggio è configurato per assegnare un elemento di lavoro all’utente amministratore. Rimuovi questo passaggio.
@@ -79,7 +79,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 
 1. Creare fasi del flusso di lavoro. Un flusso di lavoro può avere più fasi. Queste fasi vengono visualizzate nella casella in entrata AEM e segnalano l’avanzamento del flusso di lavoro.
 
-   Per definire una fase, tocca il ![info-circle](assets/info-circle.png) per aprire le proprietà del modello di flusso di lavoro, aprire **Fasi** , aggiungi fasi per il modello di flusso di lavoro e tocca **Salva e chiudi**. Nell&#39;esempio di richiesta di mutuo, creare fasi: richiesta di prestito, stato della richiesta di prestito, documenti da firmare e documento di prestito firmato.
+   Per definire uno stadio, selezionare ![info-circle](assets/info-circle.png) per aprire le proprietà del modello di flusso di lavoro, aprire **Fasi** , aggiungere fasi per il modello di flusso di lavoro e selezionare **Salva e chiudi**. Nell&#39;esempio di richiesta di mutuo, creare fasi: richiesta di prestito, stato della richiesta di prestito, documenti da firmare e documento di prestito firmato.
 
 1. Trascina la selezione **Assegna attività** passa al modello di flusso di lavoro. Rendete il primo passo del modello.
 
@@ -214,7 +214,7 @@ Puoi configurare un modulo adattivo per sincronizzare, inviare e attivare un flu
 Un amministratore (membro del gruppo fd-administrators) può configurare una cartella di rete per eseguire un flusso di lavoro preconfigurato quando un utente inserisce un file (ad esempio un file PDF) nella cartella. Al termine del flusso di lavoro, è possibile salvare il file dei risultati in una cartella di output specificata. Tale cartella è nota come [Cartella controllata](../../forms/using/watched-folder-in-aem-forms.md). Per configurare una cartella controllata per avviare un flusso di lavoro, effettua le seguenti operazioni:
 
 1. Nell’istanza di authoring dell’AEM, vai a ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Viene visualizzato un elenco delle cartelle controllate già configurate.
-1. Tocca **[!UICONTROL Nuovo]**. Viene visualizzato un elenco di campi. Specifica un valore per i campi seguenti per configurare una cartella controllata per un flusso di lavoro:
+1. Seleziona **[!UICONTROL Nuovo]**. Viene visualizzato un elenco di campi. Specifica un valore per i campi seguenti per configurare una cartella controllata per un flusso di lavoro:
 
 <table>
  <tbody>
@@ -245,7 +245,7 @@ Un amministratore (membro del gruppo fd-administrators) può configurare una car
  </tbody>
 </table>
 
-1. Tocca **Avanzate**. Specifica un valore per il campo seguente e tocca **Crea**. La cartella controllata è configurata per avviare un flusso di lavoro. Ora, ogni volta che un file viene inserito nella directory di input della cartella controllata, viene attivato il flusso di lavoro specificato.
+1. Seleziona **Avanzate**. Specifica un valore per il campo seguente e tocca **Crea**. La cartella controllata è configurata per avviare un flusso di lavoro. Ora, ogni volta che un file viene inserito nella directory di input della cartella controllata, viene attivato il flusso di lavoro specificato.
 
    | Campo | Descrizione |
    |---|---|
@@ -269,7 +269,7 @@ Puoi utilizzare i passaggi Assegna attività e Invia e-mail dei Flussi di lavoro
 
 ### Rimuovi istanze flusso di lavoro {#purge-workflow-instances}
 
-Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, consulta [Rimozione regolare delle istanze del flusso di lavoro](/help/sites-administering/workflows-administering.md#regular) rimozione delle istanze del flusso di lavoro.
+La riduzione al minimo del numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, consulta [Rimozione regolare delle istanze del flusso di lavoro](/help/sites-administering/workflows-administering.md#regular) rimozione delle istanze del flusso di lavoro.
 
 ## Parametrizza i dati sensibili per le variabili del flusso di lavoro e memorizzali in archivi di dati esterni {#externalize-wf-variables}
 

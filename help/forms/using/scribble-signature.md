@@ -12,9 +12,9 @@ discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,7 @@ Dopo aver aggiunto al modulo e aver eseguito il rendering di un campo a mano lib
 Facendo clic sull’icona di geolocalizzazione durante la creazione dello scarabocchio, le informazioni relative a posizione geografica e ora vengono incorporate nel campo.
 
 >[!NOTE]
+>
 In iPad, per impostazione predefinita, è obbligatorio incorporare le informazioni di geolocalizzazione.
 
 In iPad, l’icona di geolocalizzazione non viene visualizzata per impostazione predefinita e le informazioni di geolocalizzazione vengono incorporate automaticamente quando fai clic su **OK**.
@@ -96,11 +97,11 @@ Toccando o facendo clic sul campo Scarabocchio si apre la finestra di dialogo in
 
 ### Selezione delle dimensioni della penna {#selecting-pen-size}
 
-Fai clic su **Pennelli** per visualizzare un elenco delle dimensioni di penna disponibili. Tocca o fai clic su una dimensione della penna per usare la penna corrispondente.
+Fai clic su **Pennelli** per visualizzare un elenco delle dimensioni di penna disponibili. Fare clic su una penna per utilizzare la penna corrispondente.
 
 ### Elimina firme dal modulo {#delete-signatures-from-the-form}
 
 Per eliminare le firme dal modulo:
 
-* (Dispositivi mobili) Premi a lungo il campo della firma e, nella finestra di dialogo di conferma, tocca **Sì**.
+* (Dispositivi mobili) Premi a lungo il campo della firma e, nella finestra di dialogo di conferma, seleziona **Sì**.
 * (Desktop) Passa il puntatore del mouse sul campo firma, fai clic sul pulsante **Annulla** e nella finestra di dialogo di conferma, fai clic su **Sì**.

@@ -9,10 +9,10 @@ discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 7%
+source-wordcount: '1349'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Il modulo AEM ha la capacità di centralizzare la creazione, l’assemblaggio, l
 
 È possibile utilizzare la funzionalità di comunicazione interattiva per produrre comunicazioni in più formati. Ad esempio, web e PDF. È possibile integrare la comunicazione interattiva con il flusso di lavoro AEM per elaborare e distribuire la comunicazione assemblata ai clienti sul canale desiderato. Ad esempio, inviando una comunicazione all’utente finale tramite e-mail.
 
-Se stai effettuando l’aggiornamento da una versione precedente e hai già investito nella gestione della corrispondenza, puoi installare [pacchetto di compatibilità](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) per continuare a utilizzare la gestione della corrispondenza. Per informazioni sulle differenze tra comunicazione interattiva e gestione della corrispondenza, vedere [Cenni preliminari](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management) sulla comunicazione interattiva.
+Se stai effettuando l’aggiornamento da una versione precedente e hai già investito nella gestione della corrispondenza, puoi installare [pacchetto di compatibilità](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) per continuare a utilizzare la gestione della corrispondenza. Per informazioni sulle differenze tra comunicazione interattiva e gestione della corrispondenza, consulta [Panoramica della comunicazione interattiva](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
 AEM Forms è una potente piattaforma di classe enterprise. La comunicazione interattiva è solo una delle funzionalità di AEM Forms. Per l’elenco completo delle funzionalità, consulta [Introduzione ad AEM Forms](../../forms/using/introduction-aem-forms.md).
 
@@ -50,7 +50,7 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
 
    * **Pubblica**: istanza dell’AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
 
-* I requisiti di memoria sono soddisfatti. Il pacchetto del componente aggiuntivo AEM Forms richiede:
+* I requisiti di memoria sono soddisfatti. AEM Forms pacchetto aggiuntivo richiede:
 
    * 15 GB di spazio temporaneo per le installazioni basate su Microsoft® Windows.
    * 6 GB di spazio temporaneo per installazioni basate su UNIX.
@@ -69,10 +69,10 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
    <td>libSM</td>
    <td>Zlib</td>
    <td>libICE</td>
-   <td>libuuid</td>
+   <td>libuuide</td>
   </tr>
   <tr>
-   <td>Glibc</td>
+   <td>glibc</td>
    <td>libXext</td>
    <td><p>nss-softokn-freebl</p> </td>
    <td>fontconfig</td>
@@ -91,15 +91,15 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
 Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata nell’AEM. Il pacchetto contiene la comunicazione interattiva di AEM Forms, la gestione della corrispondenza e altre funzionalità. Per installare il pacchetto aggiuntivo, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibili nel menu dell&#39;intestazione.
 1. **[!UICONTROL Nella sezione Filtri]**:
    1. Seleziona **[!UICONTROL Forms]** dall&#39;elenco a **[!UICONTROL discesa Soluzione]** .
    2. Seleziona la versione e il tipo per il pacchetto. È inoltre possibile utilizzare l&#39;opzione **[!UICONTROL Search Download]** per filtrare i risultati.
-1. Toccare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini]** EULA, quindi toccare **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
+1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, quindi selezionare **[!UICONTROL Accetta termini EULA]**, e seleziona **[!UICONTROL Scarica]**.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto per caricare il pacchetto]** .
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
-   Puoi anche scaricare il pacchetto tramite la collegare diretta elencata nell&#39;articolo sulle [versioni](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) AEM Forms.
+   Puoi anche scaricare il pacchetto tramite la collegare diretta elencata nell&#39;articolo sulle [versioni](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) AEM Forms.
 
 1. Dopo aver installato il pacchetto, viene chiesto di riavviare il AEM istanza. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i [messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED smettano di apparire nel file AEM-Installation-Directory]/crx-quickstart/logs/error.log e che il registro sia stabile.
 1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
@@ -112,7 +112,7 @@ AEM Forms dispone di alcune configurazioni obbligatorie e opzionali. Le configur
 
 #### Configurare le librerie RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Esegui i seguenti passaggi su tutte le istanze Autore e Publish per avviare il delegato del librerie:
+Per avviare le librerie, esegui i seguenti passaggi su tutte le istanze Author e Publish:
 
 1. Arresta l’istanza AEM sottostante.
 1. Apri [Directory di installazione AEM]File \crx-quickstart\conf\sling.properties per la modifica.
@@ -145,14 +145,14 @@ La comunicazione interattiva è l’approccio predefinito e consigliato per la c
 
 Il pacchetto di compatibilità per AEMFD consente di utilizzare le seguenti risorse di AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms su AEM 6.5 Forms:
 
-* Frammenti di documenti
+* Frammenti di documento
 * Lettere
 * Dizionari dati
 * Moduli adattivi: modelli e pagine obsoleti
 
 #### Configurare Dispatcher {#configure-dispatcher}
 
-Il Dispatcher è uno strumento di caching e/o bilanciamento del carico di Adobe Experience Manager che può essere utilizzato insieme a un server web di classe enterprise. Se usa [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it), quindi esegui le seguenti configurazioni per AEM Forms:
+Dispatcher è uno strumento di caching e bilanciamento del carico di Adobe Experience Manager utilizzato con un server web di classe enterprise. Se usa [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it), quindi esegui le seguenti configurazioni per AEM Forms:
 
 1. Configurare l’accesso per AEM Forms:
 

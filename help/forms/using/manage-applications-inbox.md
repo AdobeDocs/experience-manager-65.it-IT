@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 3%
+source-wordcount: '1067'
+ht-degree: 2%
 
 ---
 
@@ -34,8 +34,8 @@ In sintesi, Casella in entrata consente di creare un&#39;applicazione e gestire 
 ## Crea applicazione {#create-application}
 
 1. Vai alla casella in entrata AEM all’indirizzo https://&#39;[server]:[porta]&#39;/aem/inbox.
-1. Nell’interfaccia utente della casella in entrata, tocca **[!UICONTROL Crea > Applicazione]**. Viene visualizzata la pagina Seleziona applicazione.
-1. Seleziona un’applicazione e fai clic su **[!UICONTROL Crea]**. Viene aperto il modulo adattivo associato all’applicazione. Inserisci le informazioni nel modulo adattivo e tocca **[!UICONTROL Invia]**. Avvia il flusso di lavoro associato e crea un&#39;attività nella Posta in arrivo dell&#39;assegnatario.
+1. Nell’interfaccia utente della casella in entrata, seleziona **[!UICONTROL Crea > Applicazione]**. Viene visualizzata la pagina Seleziona applicazione.
+1. Seleziona un’applicazione e fai clic su **[!UICONTROL Crea]**. Viene aperto il modulo adattivo associato all’applicazione. Inserisci le informazioni nel modulo adattivo e seleziona **[!UICONTROL Invia]**. Avvia il flusso di lavoro associato e crea un&#39;attività nella Posta in arrivo dell&#39;assegnatario.
 
 ## Gestione attività {#manage-tasks}
 
@@ -45,17 +45,17 @@ Quando viene attivato un flusso di lavoro di Forms e l&#39;utente è un assegnat
 
 Le attività assegnate a un gruppo vengono visualizzate nella cartella Posta in arrivo di tutti i membri del gruppo. Qualsiasi membro del gruppo può rivendicare tale attività o delegarla a un altro membro del gruppo. Per eseguire questa operazione:
 
-1. Tocca per selezionare la miniatura dell’attività. Le opzioni per aprire o delegare l&#39;attività vengono visualizzate nella parte superiore.
+1. Selezionare per selezionare la miniatura dell&#39;attività. Le opzioni per aprire o delegare l&#39;attività vengono visualizzate nella parte superiore.
 
    ![select-task](assets/select-task.png)
 
 1. Effettua una delle operazioni seguenti:
 
-   * Per delegare l’attività, tocca **[!UICONTROL Delega]**. Viene visualizzata la finestra di dialogo Delega elemento. Seleziona un utente, facoltativamente aggiungi un commento e tocca **[!UICONTROL OK]**.
+   * Per delegare l’attività, seleziona **[!UICONTROL Delega]**. Viene visualizzata la finestra di dialogo Delega elemento. Seleziona un utente, facoltativamente aggiungi un commento e seleziona **[!UICONTROL OK]**.
 
    ![delegare](assets/delegate.png)
 
-   * Per richiedere l’attività, tocca **[!UICONTROL Apri]**. Viene visualizzata la finestra di dialogo Assegna a sé. Tocca **[!UICONTROL Procedi]** per richiedere l&#39;attività. L&#39;attività richiesta viene visualizzata come assegnatario nella cartella Posta in arrivo.
+   * Per richiedere l&#39;attività, selezionare **[!UICONTROL Apri]**. Viene visualizzata la finestra di dialogo Assegna a sé. Seleziona **[!UICONTROL Procedi]** per richiedere l&#39;attività. L&#39;attività richiesta viene visualizzata come assegnatario nella cartella Posta in arrivo.
 
    ![reclamo](assets/claim.png)
 
@@ -63,8 +63,8 @@ Le attività assegnate a un gruppo vengono visualizzate nella cartella Posta in 
 
 Quando si apre un&#39;attività, è possibile visualizzarne i dettagli ed eseguire le azioni disponibili. Le azioni disponibili per un&#39;attività sono definite nel passaggio Assegna attività del flusso di lavoro Forms associato.
 
-1. Tocca per selezionare la miniatura dell’attività. Le opzioni per aprire o delegare l&#39;attività selezionata vengono visualizzate nella parte superiore.
-1. Tocca **Apri** per visualizzare i dettagli dell&#39;attività. Viene visualizzata la vista dettagliata dell&#39;operazione. In questa visualizzazione è possibile visualizzare i dettagli dell&#39;attività e lavorare sull&#39;attività.
+1. Selezionare per selezionare la miniatura dell&#39;attività. Le opzioni per aprire o delegare l&#39;attività selezionata vengono visualizzate nella parte superiore.
+1. Seleziona **Apri** per visualizzare i dettagli dell&#39;attività. Viene visualizzata la vista dettagliata dell&#39;operazione. In questa visualizzazione è possibile visualizzare i dettagli dell&#39;attività e lavorare sull&#39;attività.
 
    >[!NOTE]
    >
@@ -91,7 +91,7 @@ La scheda Modulo nell’area del contenuto principale visualizza il modulo invia
 
 La scheda Dettagli flusso di lavoro nella parte superiore mostra l’avanzamento dell’attività attraverso le varie fasi del flusso di lavoro. Vengono visualizzate le fasi completata, corrente e in sospeso per l&#39;attività. Le fasi di un flusso di lavoro sono definite nel [Assegna passaggio attività](/help/sites-developing/workflows-step-ref.md) del workflow associato.
 
-Inoltre, nella scheda viene visualizzata la cronologia delle attività per ogni fase completata del flusso di lavoro. Puoi toccare **[!UICONTROL Visualizza dettagli]** per una fase completata per conoscere i dettagli su tale fase. Vengono visualizzati i commenti, gli allegati del modulo e dell&#39;attività, lo stato, le date di inizio e di fine e così via relativi all&#39;attività.
+Inoltre, nella scheda viene visualizzata la cronologia delle attività per ogni fase completata del flusso di lavoro. Puoi selezionare **[!UICONTROL Visualizza dettagli]** per una fase completata per conoscere i dettagli su tale fase. Vengono visualizzati i commenti, gli allegati del modulo e dell&#39;attività, lo stato, le date di inizio e di fine e così via relativi all&#39;attività.
 
 ![workflow-details](assets/workflow-details.png)
 
@@ -105,12 +105,12 @@ Mentre si lavora sull&#39;attività, questa procede ulteriormente nel flusso di 
 
 Nella casella in entrata AEM vengono visualizzate solo le attività attive. Le attività completate non vengono visualizzate nell&#39;elenco. È tuttavia possibile utilizzare i filtri Posta in arrivo per filtrare le attività in base a diversi parametri, ad esempio il tipo di attività, lo stato e le date di inizio e fine. Per visualizzare le attività completate:
 
-1. Nella casella in entrata AEM, tocca ![interruttore-side-panel1](assets/toggle-side-panel1.png) per aprire il selettore dei filtri.
-1. Tocca **[!UICONTROL Stato attività]** Pannello a soffietto e selezione **[!UICONTROL Completa]**. Vengono visualizzate tutte le attività completate.
+1. Nella casella in entrata AEM selezionare ![interruttore-side-panel1](assets/toggle-side-panel1.png) per aprire il selettore dei filtri.
+1. Seleziona **[!UICONTROL Stato attività]** Pannello a soffietto e selezione **[!UICONTROL Completa]**. Vengono visualizzate tutte le attività completate.
 
    ![filter](assets/filter.png)
 
-1. Tocca per selezionare un’attività e fai clic su **[!UICONTROL Apri]**.
+1. Seleziona per selezionare un’attività e fai clic su **[!UICONTROL Apri]**.
 
 L’attività si apre per visualizzare il documento o il modulo adattivo associato all’attività. Per il modulo adattivo, l’attività visualizza il modulo adattivo di sola lettura o il relativo documento di record PDF come configurato nella scheda Modulo/Documento del [Passaggio del flusso di lavoro Assegna attività](/help/sites-developing/workflows-step-ref.md).
 
@@ -118,7 +118,7 @@ Nella sezione dei dettagli dell&#39;attività vengono visualizzate informazioni 
 
 ![attività completata](assets/completed-task.png)
 
-Il **[!UICONTROL Dettagli flusso di lavoro]** mostra ogni passaggio del flusso di lavoro. Tocca **[!UICONTROL Visualizza dettagli]** per informazioni dettagliate.
+Il **[!UICONTROL Dettagli flusso di lavoro]** mostra ogni passaggio del flusso di lavoro. Seleziona **[!UICONTROL Visualizza dettagli]** per informazioni dettagliate.
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 

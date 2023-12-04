@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 3%
+source-wordcount: '3533'
+ht-degree: 2%
 
 ---
 
@@ -266,7 +266,7 @@ Per configurare un documento di record per i moduli adattivi, effettua le seguen
 
 1. Nell’istanza di creazione dell’AEM, fai clic su **Forms > Forms e documenti.**
 1. Seleziona un modulo e fai clic su **Visualizza proprietà**.
-1. Nella finestra Proprietà, tocca **Modello modulo**.
+1. Nella finestra Proprietà, seleziona **Modello modulo**.
 È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
 
    >[!NOTE]
@@ -302,8 +302,8 @@ Durante la generazione di un documento record, è possibile modificare le inform
 
 Per localizzare le informazioni di branding immesse nella scheda Documento record, è necessario assicurarsi che le impostazioni internazionali del browser siano impostate in modo appropriato. La procedura seguente illustra come personalizzare le informazioni di branding del documento record:
 
-1. Seleziona un pannello (pannello principale) nel documento di record, quindi tocca ![configura](assets/configure.png).
-1. Tocca ![dortab](/help/forms/using/assets/dortab.png). Viene visualizzata la scheda Documento record.
+1. Seleziona un pannello (pannello principale) nel documento di record, quindi seleziona ![configura](assets/configure.png).
+1. Seleziona ![dortab](/help/forms/using/assets/dortab.png). Viene visualizzata la scheda Documento record.
 1. Selezionare il modello predefinito o un modello personalizzato per il rendering del documento record. Se selezioni il modello predefinito, sotto il menu a discesa Modello viene visualizzata un’anteprima in miniatura del documento di record.
 
    ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
@@ -315,9 +315,9 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
    * **Immagine logo**: puoi scegliere di utilizzare l’immagine del logo dal modulo adattivo, sceglierne una da DAM o caricarne una dal computer.
    * **Titolo modulo**
    * **Testo intestazione**
-   * **Etichetta di dichiarazione di non responsabilità**
-   * **Liberatoria**
-   * **Testo della liberatoria**
+   * **Etichetta liberatoria**
+   * **Esclusione di responsabilità**
+   * **Testo liberatoria**
    * **Colore accento**: colore con cui vengono riprodotti il testo dell’intestazione e le righe del separatore nel PDF del documento o del record
    * **Famiglia font**: famiglia di caratteri del testo nel documento record PDF
    * **Per i componenti Casella di controllo e Pulsante di opzione, mostra solo i valori selezionati**
@@ -348,7 +348,7 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
    </proto>
    ```
 
-1. Per salvare le modifiche di branding, tocca Fine.
+1. Per salvare le modifiche di branding, selezionate Fatto (Done).
 
 ## Layout di tabella e colonna per i pannelli nel documento record {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -409,12 +409,12 @@ Per informazioni su come applicare interruzioni di pagina e più pagine master i
 
 Per applicare un&#39;interruzione di pagina a un documento di record:
 
-1. Tocca il pannello e seleziona ![Configura](/help/forms/using/assets/configure.png)
+1. Seleziona il pannello e seleziona ![Configura](/help/forms/using/assets/configure.png)
 1. Espandi **[!UICONTROL Documento record]** per visualizzare le proprietà.
 
-1. In **[!UICONTROL Paginazione]** sezione, tocca ![Cartella](/help/forms/using/assets/folder-icon.png) nel **[!UICONTROL Luogo]** campo.
-1. Tocca **[!UICONTROL Inizio pagina successiva]** e tocca **[!UICONTROL Seleziona]**. Puoi anche toccare **[!UICONTROL Inizio pagina]**, seleziona la pagina master e tocca **[!UICONTROL Seleziona]** per applicare l’interruzione di pagina.
-1. Tocca ![Salva](/help/forms/using/assets/save_icon.png) per salvare le proprietà.
+1. In **[!UICONTROL Paginazione]** sezione, seleziona ![Cartella](/help/forms/using/assets/folder-icon.png) nel **[!UICONTROL Luogo]** campo.
+1. Seleziona **[!UICONTROL Inizio pagina successiva]** e seleziona **[!UICONTROL Seleziona]**. Puoi anche selezionare **[!UICONTROL Inizio pagina]**, selezionare la pagina master e selezionare **[!UICONTROL Seleziona]** per applicare l’interruzione di pagina.
+1. Seleziona ![Salva](/help/forms/using/assets/save_icon.png) per salvare le proprietà.
 
 Il pannello selezionato passa alla pagina successiva.
 
@@ -428,13 +428,13 @@ Di seguito è riportato un esempio di applicazione di più pagine master a un do
 
 Per applicare le proprietà della seconda pagina master a un pannello e della terza pagina master ai pannelli che seguono, eseguire la procedura seguente:
 
-1. Tocca il pannello per applicare la seconda pagina master e seleziona ![Configura](assets/cmppr.png).
-1. In **[!UICONTROL Paginazione]** sezione, tocca ![Cartella](/help/forms/using/assets/folder-icon.png) nel **[!UICONTROL Luogo]** campo.
-1. Tocca **[!UICONTROL A pagina]**, seleziona la seconda pagina master e tocca **[!UICONTROL Seleziona]**.
+1. Selezionare il pannello per applicare la seconda pagina master e selezionare ![Configura](assets/cmppr.png).
+1. In **[!UICONTROL Paginazione]** sezione, seleziona ![Cartella](/help/forms/using/assets/folder-icon.png) nel **[!UICONTROL Luogo]** campo.
+1. Seleziona **[!UICONTROL A pagina]**, selezionare la seconda pagina master e selezionare **[!UICONTROL Seleziona]**.
 AEM Forms applica la seconda pagina master al pannello e a tutti i pannelli successivi nel modulo adattivo.
-1. In **[!UICONTROL Paginazione]** sezione, tocca ![Cartella](/help/forms/using/assets/folder-icon.png) nel **[!UICONTROL Dopo]** campo.
-1. Tocca **[!UICONTROL Vai a pagina]**, seleziona la terza pagina master e tocca **[!UICONTROL Seleziona]**.
-1. Tocca ![Salva](/help/forms/using/assets/save_icon.png) per salvare le proprietà.
+1. In **[!UICONTROL Paginazione]** sezione, seleziona ![Cartella](/help/forms/using/assets/folder-icon.png) nel **[!UICONTROL Dopo]** campo.
+1. Seleziona **[!UICONTROL Vai a pagina]**, selezionare la terza pagina master e selezionare **[!UICONTROL Seleziona]**.
+1. Seleziona ![Salva](/help/forms/using/assets/save_icon.png) per salvare le proprietà.
 AEM Forms applica la terza pagina master al pannello e a tutti i pannelli successivi nel modulo adattivo.
 
 

@@ -9,9 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3979'
+source-wordcount: '3982'
 ht-degree: 2%
 
 ---
@@ -195,7 +195,7 @@ In questa tabella vengono fornite alcune linee guida che è possibile utilizzare
   </tr> 
   <tr> 
    <td><p>Bassa complessità</p> </td> 
-   <td><p>Bassa. Il layout contiene pochi campi modulo (&lt;15).</p> <p>In genere, una pagina<span class="acrolinxCursorMarker"></span>.</p> </td> 
+   <td><p>Basso. Il layout contiene pochi campi modulo (&lt;15).</p> <p>In genere, una pagina<span class="acrolinxCursorMarker"></span>.</p> </td> 
    <td><p>8</p> </td> 
    <td><p>1</p> </td> 
    <td><p>Competenze di designer medio.</p> </td> 
@@ -245,11 +245,11 @@ Per creare una corrispondenza è necessario disporre quanto segue:
 
    ![create-letter](assets/create-letter.png)
 
-1. Seleziona un layout toccandolo e toccandolo **Successivo**.
+1. Seleziona un layout toccandolo e selezionandolo **Successivo**.
 
    ![Seleziona il layout per creare una lettera](assets/selectlayout.png)
 
-1. Immetti le proprietà per la corrispondenza e tocca **Salva:**
+1. Immetti le proprietà per la corrispondenza e seleziona **Salva:**
 
    * **Titolo (facoltativo):** Immettere il titolo della lettera. Il titolo non deve necessariamente essere univoco e può contenere caratteri speciali e non inglesi.
    * **Nome:** Nome univoco della lettera. Non possono esistere due lettere con lo stesso nome in nessuno stato. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini in lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti da trattini nel campo Nome. Anche se il valore nel campo Titolo viene copiato automaticamente nel Nome, è possibile modificarlo.
@@ -260,21 +260,21 @@ Per creare una corrispondenza è necessario disporre quanto segue:
 
    ![Proprietà di corrispondenza](assets/createcorrespondenceproperties.png)
 
-1. Il sistema visualizza un messaggio: &quot;Lettera creata correttamente&quot;. (nel messaggio di avviso) Tocca **Apri** per configurare i moduli di dati e i frammenti di layout al loro interno. Oppure tocca **Fine** per tornare alla pagina precedente.
+1. Il sistema visualizza un messaggio: &quot;Lettera creata correttamente&quot;. (nel messaggio di avviso) Seleziona **Apri** per configurare i moduli di dati e i frammenti di layout al loro interno. Oppure seleziona **Fine** per tornare alla pagina precedente.
 
    ![Messaggio di avviso: lettera creata correttamente](assets/createcorrespondencecreated.png)
 
-   **Successivo**: quando tocchi **Apri**, Gestione corrispondenza visualizza una rappresentazione del layout con tutti i componenti nel layout (XDP) elencati. Procedere con l&#39;inserimento del [Moduli di dati e frammenti di layout e relativa configurazione](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Successivo**: quando selezioni **Apri**, Gestione corrispondenza visualizza una rappresentazione del layout con tutti i componenti nel layout (XDP) elencati. Procedere con l&#39;inserimento del [Moduli di dati e frammenti di layout e relativa configurazione](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Inserire moduli di dati e frammenti di layout in una lettera e configurarli {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-Quando, dopo aver creato una corrispondenza, tocca Apri, Gestione corrispondenza visualizza una rappresentazione del layout con tutte le sottomaschere/aree di destinazione nel layout (XDP) elencato. In ciascuna area di destinazione è possibile scegliere di inserire un modulo dati o un frammento di layout (e quindi i moduli dati nel frammento di layout).
+Quando, dopo aver creato una corrispondenza, selezioni Apri, Gestione corrispondenza visualizza una rappresentazione del layout con tutte le sottomaschere/aree di destinazione elencate nel layout (XDP). In ciascuna area di destinazione è possibile scegliere di inserire un modulo dati o un frammento di layout (e quindi i moduli dati nel frammento di layout).
 
 >[!NOTE]
 >
->Puoi anche scegliere di toccare l’icona Modifica per una lettera nella pagina Lettere per inserire in una lettera moduli di dati e frammenti di layout e configurarli.
+>Puoi anche scegliere di selezionare l’icona Modifica per una lettera nella pagina Lettere per inserire in una lettera moduli di dati e frammenti di layout e configurarli.
 
-1. Tocca **Inserisci** per ciascuna sottomaschera e selezionare Moduli dati o un frammento di layout da inserire in ciascuna sottomaschera.
+1. Seleziona **Inserisci** per ciascuna sottomaschera e selezionare Moduli dati o un frammento di layout da inserire in ciascuna sottomaschera.
 
    ![Inserire moduli di dati e frammenti di layout](assets/insertdmandlf.png)
 
@@ -283,7 +283,7 @@ Quando, dopo aver creato una corrispondenza, tocca Apri, Gestione corrispondenza
    ![nestedlf](assets/nestedlf.png)
 
 1. Se si inserisce un frammento di layout, il nome del frammento viene visualizzato nel sottomodulo. In base al frammento selezionato, nella sottomaschera vengono visualizzate le sottomaschere nidificate.
-1. Dopo aver inserito i Moduli dati selezionati nel layout, tocca la modalità di configurazione e imposta quanto segue dopo aver toccato l’icona Modifica per ciascuno dei moduli:
+1. Dopo aver inserito i Moduli dati selezionati nel layout, puoi selezionare la modalità di configurazione e impostare quanto segue dopo aver toccato l’icona Modifica per ciascuno dei moduli:
 
    1. **Modificabile**: quando questa opzione è selezionata, il contenuto può essere modificato nell’interfaccia utente Crea corrispondenza. Contrassegna il contenuto come modificabile solo se richiede la modifica da parte dell&#39;utente aziendale, ad esempio un perito per la liquidazione dei sinistri.
    1. **Obbligatorio**: quando questa opzione è selezionata, il contenuto è obbligatorio nell’interfaccia utente Crea corrispondenza.
@@ -294,20 +294,20 @@ Quando, dopo aver creato una corrispondenza, tocca Apri, Gestione corrispondenza
 
    ![Moduli di dati e frammenti di layout inseriti](assets/insertdmandlf2.png)
 
-1. Per modificare un modulo, tocca l’icona Modifica accanto a esso. Dopo aver modificato i moduli, tocca **Salva**.
+1. Per modificare un modulo, seleziona l’icona Modifica accanto a esso. Dopo aver modificato i moduli, seleziona **Salva**.
 
    In questa pagina è inoltre possibile eseguire le operazioni seguenti per le sottomaschere:
 
-   1. **Consenti testo libero**: se è abilitata l’opzione Consenti testo libero, l’utente può aggiungere testo in linea nella lettera nella vista CCR. Nella vista CCR è abilitata un’azione &quot;T&quot; per le aree di destinazione in cui è abilitato Consenti testo libero e quando l’utente lo tocca chiede il nome e la descrizione del testo e quindi tocca ok apre il testo in modalità di modifica, dove l’utente può aggiungere testo. Funziona come gli altri moduli di testo
+   1. **Consenti testo libero**: se è abilitata l’opzione Consenti testo libero, l’utente può aggiungere testo in linea nella lettera nella vista CCR. Nella vista CCR è abilitata un’azione &quot;T&quot; per le aree di destinazione in cui è abilitato Consenti testo libero e quando l’utente lo seleziona chiede il nome e la descrizione del testo, quindi tocca ok apre il testo in modalità di modifica, dove l’utente può aggiungere del testo. Funziona come gli altri moduli di testo
    1. **Blocca ordine**: blocca l’ordine delle sottomaschere nella lettera. L’autore non può riordinare le sottomaschere o i componenti durante la creazione della lettera.
 
    In questa pagina è inoltre possibile eseguire le operazioni seguenti per ciascuna delle risorse nelle sottomaschere:
 
    1. **Modificare l’ordine delle risorse**: trascina e rilascia una risorsa contenente l’icona Riordina per una risorsa ( ![trascinamento](assets/dragndrop.png)).
-   1. **Eliminare risorse**: tocca l’icona Elimina accanto a una risorsa per eliminarla.
-   1. **Visualizzare in anteprima le risorse**: tocca l’icona mostra anteprima ( ![showpreview](assets/showpreview.png)) accanto a una risorsa.
+   1. **Eliminare risorse**: seleziona l’icona Elimina accanto a una risorsa per eliminarla.
+   1. **Visualizzare in anteprima le risorse**: seleziona l’icona mostra anteprima ( ![showpreview](assets/showpreview.png)) accanto a una risorsa.
 
-1. Tocca **Successivo**.
+1. Seleziona **Avanti**.
 1. La pagina Dati descrive in dettaglio come vengono utilizzati i campi dati e le variabili nel modello. I dati possono essere collegati a origini dati quali un dizionario dati o un input utente. Ogni campo definisce le proprietà da cui il dizionario dati mappa i dati o quale didascalia viene visualizzata per i campi di input dell’utente.
 
    Collegamento:
@@ -337,19 +337,19 @@ Quando, dopo aver creato una corrispondenza, tocca Apri, Gestione corrispondenza
 
    ![collegamenti](assets/linkages.png)
 
-1. Dopo aver specificato il collegamento, tocca **Successivo**. Gestione corrispondenza visualizza la schermata Allegati.
+1. Dopo aver specificato il collegamento, seleziona **Successivo**. Gestione corrispondenza visualizza la schermata Allegati.
 
 ### Impostare gli allegati {#set-up-the-attachments}
 
 1. Seleziona **Aggiungi risorsa**.
-1. Nella schermata Seleziona risorsa, tocca le risorse da allegare alla lettera e tocca **Fine**. Devi prima caricare le risorse in Assets. È consigliabile allegare solo documenti di PDF e Microsoft Office, ma è anche possibile allegare immagini. Per ulteriori informazioni sul caricamento di risorse in DAM, consulta [Caricamento risorse](/help/assets/manage-assets.md).
-1. Per bloccare l&#39;ordine dei cespiti nell&#39;elenco in modo che l&#39;Aggiustatore risarcimenti non possa modificarlo, toccare **Blocca ordine**. Se non si seleziona questa opzione, l&#39;Aggiustatore richieste di rimborso può modificare l&#39;ordine delle voci di elenco.
+1. Nella schermata Seleziona risorsa, seleziona le risorse da allegare alla lettera e fai clic su **Fine**. Devi prima caricare le risorse in Assets. È consigliabile allegare solo documenti di PDF e Microsoft Office, ma è anche possibile allegare immagini. Per ulteriori informazioni sul caricamento di risorse in DAM, consulta [Caricamento risorse](/help/assets/manage-assets.md).
+1. Per bloccare l&#39;ordine dei cespiti nell&#39;elenco in modo che Adeguamento risarcimenti non possa modificarlo, selezionare **Blocca ordine**. Se non si seleziona questa opzione, l&#39;Aggiustatore richieste di rimborso può modificare l&#39;ordine delle voci di elenco.
 1. Per modificare l’ordine delle risorse, trascina e rilascia una risorsa contenente l’icona Riordina per una risorsa ( ![trascinamento](assets/dragndrop.png)).
-1. Tocca **Modifica** davanti a un allegato e specificare un allegato come Obbligatorio se non si desidera che l&#39;autore possa eliminarlo. Specificate un allegato come Selezionato se desiderate che sia preselezionato nell&#39;interfaccia CCR.
+1. Seleziona **Modifica** davanti a un allegato e specificare un allegato come Obbligatorio se non si desidera che l&#39;autore possa eliminarlo. Specificate un allegato come Selezionato se desiderate che sia preselezionato nell&#39;interfaccia CCR.
 1. Seleziona **Accesso libreria** per consentire l’accesso alla libreria. Se l&#39;accesso alla libreria è abilitato, l&#39;Aggiustatore attestazioni può accedere alla libreria dei contenuti durante la creazione di una lettera e l&#39;inserimento di allegati.
 1. Seleziona **Configurazione allegati** e specificare il numero massimo di allegati.
 
-1. Tocca **Salva**. La corrispondenza viene creata ed elencata nella pagina Lettere.
+1. Seleziona **Salva**. La corrispondenza viene creata ed elencata nella pagina Lettere.
 
 Dopo aver creato un modello di lettera in Gestione corrispondenza, l’utente finale, l’agente o l’addetto alle richieste di rimborso può aprire la lettera nell’interfaccia utente di CCR e creare una corrispondenza immettendo i dati, configurando il contenuto e gestendo gli allegati. Per ulteriori informazioni, consulta [Crea corrispondenza](/help/forms/using/create-correspondence.md).
 
@@ -386,7 +386,7 @@ I seguenti valori nella tabella
    <td>N/D</td> 
   </tr> 
   <tr> 
-   <td><strong>time</strong></td> 
+   <td><strong>tempo</strong></td> 
    <td>Sì</td> 
    <td>No</td> 
    <td>Sì</td> 
@@ -473,7 +473,7 @@ I seguenti valori nella tabella
 È possibile utilizzare un modello di lettera esistente per creare rapidamente un modello di lettera con proprietà, contenuto e risorse ereditate simili, ad esempio frammenti di documento e dizionario dati. A questo scopo, copia e incolla una lettera.
 
 1. Nella pagina Lettere selezionare una o più lettere. Nell’interfaccia utente viene visualizzata l’icona Copia.
-1. Tocca Copia. Nell’interfaccia viene visualizzata l’icona Incolla. Puoi anche scegliere di entrare in una cartella prima di incollarla. Cartelle diverse possono contenere risorse con gli stessi nomi. Per ulteriori informazioni sulle cartelle, consulta [Cartelle e organizzazione delle risorse](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Tocca Incolla. Viene visualizzata la finestra di dialogo Incolla. Se si copiano e si incollano le lettere nello stesso punto, il sistema assegna automaticamente nomi e titoli alle nuove copie di lettere, ma è possibile modificare i titoli e i nomi delle lettere.
+1. Seleziona Copia. Nell’interfaccia viene visualizzata l’icona Incolla. Puoi anche scegliere di entrare in una cartella prima di incollarla. Cartelle diverse possono contenere risorse con gli stessi nomi. Per ulteriori informazioni sulle cartelle, consulta [Cartelle e organizzazione delle risorse](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Seleziona Incolla. Viene visualizzata la finestra di dialogo Incolla. Se si copiano e si incollano le lettere nello stesso punto, il sistema assegna automaticamente nomi e titoli alle nuove copie di lettere, ma è possibile modificare i titoli e i nomi delle lettere.
 1. Se necessario, modificare il Titolo e il Nome con cui si desidera salvare la copia della lettera.
-1. Tocca Incolla. Viene creata la copia della lettera. Ora puoi apportare le modifiche richieste nella nuova lettera creata.
+1. Seleziona Incolla. Viene creata la copia della lettera. Ora puoi apportare le modifiche richieste nella nuova lettera creata.

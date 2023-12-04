@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2080'
 ht-degree: 1%
 
 ---
@@ -56,8 +56,8 @@ Hai bisogno di [Pacchetto del componente aggiuntivo AEM Forms](https://helpx.ado
 Per creare una variabile, effettua le seguenti operazioni:
 
 1. In un’istanza AEM, passa a Strumenti ![Strumenti](/help/forms/using/assets/hammer.png) > Workflow > Modelli.
-1. Tocca **[!UICONTROL Crea]** e specifica il titolo e un nome facoltativo per il modello di flusso di lavoro. Seleziona il modello e tocca **[!UICONTROL Modifica]**.
-1. Tocca l’icona delle variabili disponibile nella barra laterale del modello di flusso di lavoro, quindi tocca **[!UICONTROL Aggiungi variabile]**.
+1. Seleziona **[!UICONTROL Crea]** e specifica il titolo e un nome facoltativo per il modello di flusso di lavoro. Seleziona il modello e seleziona **[!UICONTROL Modifica]**.
+1. Seleziona l’icona delle variabili disponibile nella barra laterale del modello di flusso di lavoro e seleziona **[!UICONTROL Aggiungi variabile]**.
 
    ![Aggiungi variabile](assets/variables_add_variable_new.png)
 
@@ -69,7 +69,7 @@ Per creare una variabile, effettua le seguenti operazioni:
    * Modello dati modulo: specifica un percorso per il modello dati modulo.
    * ArrayList - Specificare un sottotipo per la raccolta.
 
-1. Specifica una descrizione facoltativa per la variabile e tocca ![done_icon](assets/done_icon.png) per salvare le modifiche. La variabile viene visualizzata nell’elenco disponibile nel riquadro a sinistra.
+1. Specifica una descrizione facoltativa per la variabile e seleziona ![done_icon](assets/done_icon.png) per salvare le modifiche. La variabile viene visualizzata nell’elenco disponibile nel riquadro a sinistra.
 
 Quando crei delle variabili, prendi in considerazione le seguenti procedure:
 
@@ -102,11 +102,11 @@ A seconda del tipo di dati della variabile, puoi utilizzare le seguenti opzioni 
 
 Per aggiungere la mappatura tra le variabili, effettua le seguenti operazioni:
 
-1. Nella pagina di modifica del flusso di lavoro, tocca l’icona Passaggi disponibile nella barra laterale del modello di flusso di lavoro.
-1. Trascina la selezione **Imposta variabile** nell’editor del flusso di lavoro, tocca il passaggio e seleziona ![configure_icon](assets/configure_icon.png) (Configura).
+1. Nella pagina di modifica del flusso di lavoro, seleziona l’icona Passaggi disponibile nella barra laterale del modello di flusso di lavoro.
+1. Trascina la selezione **Imposta variabile** passa all’editor del flusso di lavoro, seleziona il passaggio e fai clic su ![configure_icon](assets/configure_icon.png) (Configura).
 1. Nella finestra di dialogo Imposta variabile, seleziona **[!UICONTROL Mappatura]** > **[!UICONTROL Aggiungi mappatura]**.
 1. In **Mappa variabile** , selezionare la variabile per la memorizzazione dei dati, selezionare la modalità di mappatura e specificare un valore da memorizzare nella variabile. Le modalità di mappatura variano in base al tipo di variabile.
-1. Mappa più variabili per creare un’espressione significativa. Tocca ![done_icon](assets/done_icon.png) per salvare le modifiche.
+1. Mappa più variabili per creare un’espressione significativa. Seleziona ![done_icon](assets/done_icon.png) per salvare le modifiche.
 
 ### Esempio 1: eseguire una query su una variabile XML per impostare il valore per una variabile stringa {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -175,7 +175,7 @@ In questo esempio, prima di definire l&#39;espressione di instradamento, utilizz
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-Analogamente, selezionate un percorso di script esterno o specificate lo script ECMA per instradare le espressioni per valutare il ramo attivo. Tocca **[!UICONTROL Rinomina ramo]** per specificare un nome alternativo per la filiale.
+Analogamente, selezionate un percorso di script esterno o specificate lo script ECMA per instradare le espressioni per valutare il ramo attivo. Seleziona **[!UICONTROL Rinomina ramo]** per specificare un nome alternativo per la filiale.
 
 Per ulteriori esempi, consulta [Creare un modello di flusso di lavoro](../../forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
@@ -287,9 +287,9 @@ I dati trattati con il Forms Workflow possono contenere dati utente sensibili, c
 
 ## Modificare una variabile {#edit-a-variable}
 
-1. Nella pagina Modifica flusso di lavoro, tocca l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
-1. Tocca il ![modifica](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
-1. Modifica le informazioni sulla variabile e tocca ![done_icon](assets/done_icon.png) per salvare le modifiche. Impossibile modificare il **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** campi per una variabile.
+1. Nella pagina Modifica flusso di lavoro, seleziona l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
+1. Seleziona la ![modifica](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
+1. Modifica le informazioni sulla variabile e seleziona ![done_icon](assets/done_icon.png) per salvare le modifiche. Impossibile modificare il **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** campi per una variabile.
 
 ## Eliminare una variabile {#delete-a-variable}
 
@@ -297,9 +297,9 @@ Prima di eliminare la variabile, rimuovi tutti i riferimenti della variabile dal
 
 Per eliminare una variabile, effettua le seguenti operazioni:
 
-1. Nella pagina Modifica flusso di lavoro, tocca l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
-1. Tocca l’icona Elimina accanto al nome della variabile da eliminare.
-1. Tocca ![done_icon](assets/done_icon.png) per confermare ed eliminare la variabile.
+1. Nella pagina Modifica flusso di lavoro, seleziona l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
+1. Seleziona l’icona Elimina accanto al nome della variabile da eliminare.
+1. Seleziona ![done_icon](assets/done_icon.png) per confermare ed eliminare la variabile.
 
 ## Riferimenti {#references}
 

@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 47%
+source-wordcount: '2963'
+ht-degree: 41%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 47%
 >* Questa pagina offre una panoramica delle operazioni di base nell’ambiente di authoring di Adobe Experience Manager (AEM). Usa la console **Sites** come base.
 >
 >* Alcune funzionalità non sono disponibili in tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. Informazioni specifiche sulle singole console e sulle relative funzionalità sono descritte più dettagliatamente in altre pagine.
->* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e [modifica di pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Guida introduttiva {#getting-started}
 
 ### Interfaccia touch {#a-touch-enabled-ui}
 
-L’interfaccia utente AEM è stata abilitata per il tocco. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali toccare, tenere premuto e scorrere. Questo è in contrasto con il funzionamento di un&#39;interfaccia desktop tradizionale con azioni del mouse come clic, doppio clic, clic con il pulsante destro del mouse e passaggio del mouse.
+L’interfaccia utente AEM è stata abilitata per il tocco. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali la selezione, il tocco e lo scorrimento. Questo è in contrasto con il funzionamento di un&#39;interfaccia desktop tradizionale con azioni del mouse come clic, doppio clic, clic con il pulsante destro del mouse e passaggio del mouse.
 
 Poiché l’interfaccia utente dell’AEM è dotata di funzionalità touch, puoi utilizzare i gesti touch sui dispositivi touch (ad esempio, dispositivi mobili o tablet) e le azioni del mouse su un dispositivo desktop tradizionale.
 
@@ -40,23 +40,23 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 >[!NOTE]
 >
->Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites.**
+>Per comprendere l’utilizzo di base dell’AEM, il presente documento si basa sulla **Sites** console.
 >
->Per iniziare, tocca o fai clic su **Sites**.
+>Per iniziare, fai clic su **Sites**.
 
 ### Navigazione nel prodotto  {#product-navigation}
 
-Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Tocca o fai clic su per ottenere una buona panoramica delle operazioni di base dell’AEM.
+Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Fai clic qui per una buona panoramica delle operazioni di base dell’AEM.
 
-![Navigazione nel prodotto ](assets/bh-02.png)
+![Navigazione prodotti](assets/bh-02.png)
 
-Tocca o fai clic su **Avanti** per passare alla pagina successiva della panoramica. Tocca o fai clic su **Chiudi** oppure tocca o fai clic all’esterno della finestra di dialogo della panoramica per chiuderla.
+Clic **Successivo** per passare alla pagina successiva della panoramica. Clic **Chiudi** oppure fate clic all&#39;esterno della finestra di dialogo panoramica (overview) per chiudere.
 
 La panoramica viene riavviata al successivo accesso a una console, a meno che non vengano visualizzate tutte le diapositive o non venga selezionata l’opzione **Non mostrare più**.
 
 ## Navigazione globale {#global-navigation}
 
-Puoi spostarti tra le diverse console utilizzando il pannello di navigazione globale. Questo è attivato come elenco a discesa a schermo intero quando tocchi o fai clic sul collegamento Adobe Experience Manager in alto a sinistra dello schermo.
+Puoi spostarti tra le diverse console utilizzando il pannello di navigazione globale. Viene attivato come elenco a discesa a schermo intero quando fai clic sul collegamento Adobe Experience Manager in alto a sinistra dello schermo.
 
 Per chiudere il pannello di navigazione globale e tornare alla posizione precedente, tocca o fai clic su **Chiudi**.
 
@@ -90,7 +90,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
    <td><strong>Scopo</strong></td>
   </tr>
   <tr>
-   <td>Assets<br /> </td>
+   <td>Risorse<br /> </td>
    <td>Queste console consentono di importare e <a href="/help/assets/home.md">gestire le risorse digitali</a> ad esempio immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM. </td>
   </tr>
   <tr>
@@ -279,7 +279,7 @@ La modalità di [selezione di una risorsa](/help/sites-authoring/basic-handling.
 
 A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso, vengono visualizzate altre opzioni. Tocca o fai clic sui puntini di sospensione (i tre punti o **...**) apre un selettore a discesa contenente tutte le azioni rimanenti. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
 
-![Barra delle azioni ](assets/bh-12.png)
+![Barra degli strumenti Azioni](assets/bh-12.png)
 
 >[!NOTE]
 >
@@ -324,12 +324,12 @@ La selezione di una risorsa specifica dipende dalla combinazione della vista e d
    <td>
     <ul>
      <li>Desktop:<br /> Fai clic sulla miniatura</li>
-     <li>Dispositivi mobili:<br /> Tocca la miniatura</li>
+     <li>Dispositivi mobili:<br /> Seleziona la miniatura</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Fai clic sulla miniatura</li>
-     <li>Dispositivi mobili:<br /> Tocca la miniatura</li>
+     <li>Dispositivi mobili:<br /> Seleziona la miniatura</li>
     </ul> </td>
   </tr>
   <tr>
@@ -337,12 +337,12 @@ La selezione di una risorsa specifica dipende dalla combinazione della vista e d
    <td>
     <ul>
      <li>Desktop:<br /> Passa il puntatore del mouse, quindi utilizza l’azione rapida con segno di spunta</li>
-     <li>Dispositivi mobili:<br /> Tocca e tieni premuto sulla scheda</li>
+     <li>Dispositivi mobili:<br /> Seleziona e tieni premuto sulla scheda</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Fai clic sulla scheda</li>
-     <li>Dispositivi mobili:<br /> Tocca la scheda</li>
+     <li>Dispositivi mobili:<br /> Seleziona la scheda</li>
     </ul> </td>
   </tr>
   <tr>
@@ -350,12 +350,12 @@ La selezione di una risorsa specifica dipende dalla combinazione della vista e d
    <td>
     <ul>
      <li>Desktop:<br /> Fai clic sulla miniatura</li>
-     <li>Dispositivi mobili:<br /> Tocca la miniatura</li>
+     <li>Dispositivi mobili:<br /> Seleziona la miniatura</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Fai clic sulla miniatura</li>
-     <li>Dispositivi mobili:<br /> Tocca la miniatura</li>
+     <li>Dispositivi mobili:<br /> Seleziona la miniatura</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -410,7 +410,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
      ![Vista a colonne](assets/bh-17.png)
 
    * Gli elementi secondari della risorsa che hai toccato o su cui hai fatto clic vengono visualizzati nella colonna a destra di tale risorsa.
-   * Se tocchi o fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
+   * Se fai clic su un nome di risorsa senza elementi secondari, i relativi dettagli vengono visualizzati nella colonna finale.
 
 * Toccando o facendo clic sulla miniatura viene selezionata la risorsa.
 
@@ -436,7 +436,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 * La vista a schede mostra le schede informative per ogni elemento al livello corrente, che forniscono informazioni quali:
 
    * Una rappresentazione visiva del contenuto della pagina.
-   * Il titolo della pagina.
+   * Titolo della pagina.
    * Date importanti (ad esempio ultima modifica, ultima pubblicazione).
    * La pagina è bloccata, nascosta o fa parte di una Live Copy.
    * Se appropriato, quando devi eseguire un’azione nell’ambito di un flusso di lavoro.
@@ -462,12 +462,12 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
    * Quando tutti gli elementi dell’elenco sono selezionati, viene selezionata la casella di controllo.
 
-      * Per deselezionare tutto, tocca o fai clic sulla casella di controllo.
+      * Per deselezionare tutti gli elementi, fare clic sulla casella di controllo.
 
    * Se sono selezionati solo alcuni elementi, viene visualizzato un segno meno.
 
-      * Per selezionare tutto, tocca o fai clic sulla casella di controllo.
-      * Per deselezionare tutto, tocca o fai clic di nuovo sulla casella di controllo.
+      * Per selezionare tutto, fare clic sulla casella di controllo.
+      * Per deselezionare tutti gli elementi, fare di nuovo clic sulla casella di controllo.
 
 * Selezionare le colonne da visualizzare utilizzando **Impostazioni vista** sotto il pulsante Viste. È possibile visualizzare le colonne seguenti:
 
@@ -493,7 +493,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
   ![Cambia ordine](assets/bh-22.png)
 
-  Tocca o fai clic sulla barra di selezione verticale e trascina l’elemento in una nuova posizione nell’elenco.
+  Fare clic sulla barra di selezione verticale e trascinare l&#39;elemento in una nuova posizione nell&#39;elenco.
 
   ![Ordine di modifica - Trascina](assets/bh-23.png)
 
@@ -537,7 +537,7 @@ Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezion
 
 La colonna della timeline consente di:
 
-* [Visualizzare vari eventi relativi all’elemento selezionato.](#timelineviewevents)
+* [Visualizzare vari eventi](#timelineviewevents) relativo a un elemento selezionato.
 
    * I tipi di evento possono essere selezionati dall’elenco a discesa:
 
@@ -552,7 +552,7 @@ La colonna della timeline consente di:
 
       * e Mostra tutto
 
-* [Aggiungere o visualizzare commenti sulla voce selezionata. ](#timelineaddingandviewingcomments) La casella **Commento** è visualizzata in fondo all’elenco degli eventi. Se digiti un commento e premi Invio, il commento verrà registrato. Per visualizzarlo, basta selezionare **Commenti** o **Mostra tutti**.
+* [Aggiungi/visualizza commenti](#timelineaddingandviewingcomments) informazioni sull&#39;elemento selezionato. La casella **Commento** è visualizzata in fondo all’elenco degli eventi. Se digiti un commento e premi Invio, il commento verrà registrato. Per visualizzarlo, basta selezionare **Commenti** o **Mostra tutti**.
 
 * Alcune console offrono funzionalità aggiuntive. Ad esempio, nella console Sites puoi effettuare le seguenti operazioni:
 

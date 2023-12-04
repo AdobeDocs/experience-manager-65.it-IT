@@ -8,9 +8,9 @@ discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2684'
 ht-degree: 0%
 
 ---
@@ -120,14 +120,14 @@ Per configurare il database MySQL, eseguire le operazioni seguenti:
 1. Installa il driver JDBC per il database MySQL come bundle OSGi:
 
    1. Accedi all’istanza di authoring di AEM Forms come amministratore e passa ai bundle della console web AEM. L’URL predefinito è [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
-   1. Tocca **Installa/Aggiorna**. Un **Caricare/Installare i bundle** viene visualizzata.
+   1. Seleziona **Installa/Aggiorna**. Un **Caricare/Installare i bundle** viene visualizzata.
 
-   1. Tocca **Scegli file** per esplorare e selezionare il bundle OSGi del driver JDBC MySQL. Seleziona **Bundle iniziale** e **Aggiorna pacchetti**, e tocca **Installa** o **Aggiorna**. Verificare che il driver JDBC di Oracle Corporation per MySQL sia attivo. Il driver è installato.
+   1. Seleziona **Scegli file** per esplorare e selezionare il bundle OSGi del driver JDBC MySQL. Seleziona **Bundle iniziale** e **Aggiorna pacchetti**, e seleziona **Installa** o **Aggiorna**. Verificare che il driver JDBC di Oracle Corporation per MySQL sia attivo. Il driver è installato.
 
 1. Configurare il database MySQL come origine dati:
 
    1. Vai alla console web dell’AEM all’indirizzo [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Individua **Origine dati in pool di connessione Apache Sling** configurazione. Tocca per aprire la configurazione in modalità di modifica.
+   1. Individua **Origine dati in pool di connessione Apache Sling** configurazione. Seleziona per aprire la configurazione in modalità di modifica.
    1. Nella finestra di dialogo di configurazione, specifica i dettagli seguenti:
 
       * **Nome origine dati:** È possibile specificare qualsiasi nome. Ad esempio, specifica **MySQL**.
@@ -147,7 +147,7 @@ Per configurare il database MySQL, eseguire le operazioni seguenti:
 
       * **Isolamento transazione**: imposta il valore su **READ_COMMIT**.
 
-   Lascia altre proprietà con impostazione predefinita [valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e tocca **Salva**.
+   Lascia altre proprietà con impostazione predefinita [valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e seleziona **Salva**.
 
    Viene creata una configurazione simile alla seguente.
 
@@ -160,9 +160,9 @@ AEM Forms fornisce un’interfaccia utente intuitiva per [creare una modalità d
 Per creare il modello dati del modulo, effettua le seguenti operazioni:
 
 1. Nell’istanza di authoring dell’AEM, passa a **Forms** > **Integrazioni di dati**.
-1. Tocca **Crea** > **Modello dati modulo**.
-1. Nella procedura guidata Crea modello dati modulo, specifica un **nome** per il modello dati del modulo. Ad esempio: **FDM_Create_First_IC**. Tocca **Successivo**.
-1. Nella schermata Seleziona origine dati sono elencate tutte le origini dati configurate. Seleziona **MySQL** origine dati e tocco **Crea**.
+1. Seleziona **Crea** > **Modello dati modulo**.
+1. Nella procedura guidata Crea modello dati modulo, specifica un **nome** per il modello dati del modulo. Ad esempio: **FDM_Create_First_IC**. Seleziona **Avanti**.
+1. Nella schermata Seleziona origine dati sono elencate tutte le origini dati configurate. Seleziona **MySQL** origine dati e selezionare **Crea**.
 
    ![Origine dati MYSQL](assets/fdm_mysql_data_source_new.png)
 
@@ -181,7 +181,7 @@ La configurazione del modello dati del modulo include:
 ### Aggiungere oggetti e servizi del modello dati {#add-data-model-objects-and-services}
 
 1. Nell’istanza di authoring dell’AEM, passa a **Forms** > **Integrazioni di dati**. L’URL predefinito è [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
-1. Il **FDM_Create_First_IC** il modello dati del modulo creato in precedenza è elencato qui. Selezionala e tocca **Modifica**.
+1. Il **FDM_Create_First_IC** il modello dati del modulo creato in precedenza è elencato qui. Seleziona e fai clic su **Modifica**.
 
    Origine dati selezionata **MySQL** viene visualizzato in **Origini dati** riquadro.
 
@@ -200,7 +200,7 @@ La configurazione del modello dati del modulo include:
       * ottenere
       * aggiorna
 
-   Tocca **Aggiungi selezionati** per aggiungere al modello dati del modulo oggetti e servizi modello dati selezionati.
+   Seleziona **Aggiungi selezionati** per aggiungere al modello dati del modulo oggetti e servizi modello dati selezionati.
 
    ![Seleziona servizi oggetto modello dati](assets/select_data_model_object_services_new.png)
 
@@ -218,29 +218,29 @@ In base al caso d’uso, crea il **spese d&#39;uso** proprietà calcolata figlio
 
 Per creare proprietà figlio calcolate per l&#39;oggetto modello dati distinte, eseguire la procedura seguente:
 
-1. Seleziona la casella di controllo nella parte superiore della sezione **effetti** oggetto modello dati per selezionarlo e toccarlo **Crea proprietà figlio**.
+1. Seleziona la casella di controllo nella parte superiore della sezione **effetti** oggetto modello dati per selezionarlo e selezionarlo **Crea proprietà figlio**.
 1. In **Crea proprietà figlio** riquadro:
 
    1. Invio **spese d&#39;uso** come nome della proprietà figlio.
    1. Abilita **Calcolato**.
-   1. Seleziona **Mobile** come tipo e tocca **Fine** per aggiungere la proprietà figlio al **effetti** oggetto modello dati.
+   1. Seleziona **Mobile** come tipo e seleziona **Fine** per aggiungere la proprietà figlio al **effetti** oggetto modello dati.
 
    ![Crea proprietà figlio](assets/create_child_property_new.png)
 
-1. Tocca **Modifica regola** per aprire l&#39;editor di regole.
-1. Tocca **Crea**. Il **Imposta valore** viene visualizzata la finestra regola.
+1. Seleziona **Modifica regola** per aprire l&#39;editor di regole.
+1. Seleziona **Crea**. Il **Imposta valore** viene visualizzata la finestra regola.
 1. Dall’elenco a discesa Seleziona opzione, seleziona **Espressione matematica**.
 
    ![Editor regole spese di utilizzo](assets/usage_charges_rule_editor_new.png)
 
-1. Nell&#39;espressione matematica, selezionare **callcharge** e **confcallcharge** come primo e secondo oggetto, rispettivamente. Seleziona **più** come operatore. Tocca all’interno dell’espressione matematica e tocca **Estendi estensione** da aggiungere **schemi**, **tariffe Internet**, **roamingnational**, **roaming**, e **area di lavoro** all&#39;espressione.
+1. Nell&#39;espressione matematica, selezionare **callcharge** e **confcallcharge** come primo e secondo oggetto, rispettivamente. Seleziona **più** come operatore. Selezionare all&#39;interno dell&#39;espressione matematica e selezionare **Estendi estensione** da aggiungere **schemi**, **tariffe Internet**, **roamingnational**, **roaming**, e **area di lavoro** all&#39;espressione.
 
    L’immagine seguente illustra l’espressione matematica nell’editor di regole:
 
    ![Regola spese di utilizzo](assets/usage_charges_rule_all_new.png)
 
-1. Tocca **Fine**. La regola viene creata nell’Editor di regole.
-1. Tocca **Chiudi** per chiudere la finestra Editor regole.
+1. Seleziona **Fine**. La regola viene creata nell’Editor di regole.
+1. Seleziona **Chiudi** per chiudere la finestra Editor regole.
 
 ### Aggiungere associazioni tra oggetti modello dati {#add-associations-between-data-model-objects}
 
@@ -257,7 +257,7 @@ In base al caso d’uso, crea le seguenti associazioni tra gli oggetti del model
 
 Per creare associazioni tra oggetti modello dati, effettuare le operazioni riportate di seguito.
 
-1. Seleziona la casella di controllo nella parte superiore della sezione **cliente** oggetto modello dati per selezionarlo e toccarlo **Aggiungi associazione**. Il **Aggiungi associazione** viene aperto il riquadro delle proprietà.
+1. Seleziona la casella di controllo nella parte superiore della sezione **cliente** oggetto modello dati per selezionarlo e selezionarlo **Aggiungi associazione**. Il **Aggiungi associazione** viene aperto il riquadro delle proprietà.
 1. In **Aggiungi associazione** riquadro:
 
    * Specificare un titolo per l&#39;associazione. È un campo facoltativo.
@@ -267,7 +267,7 @@ Per creare associazioni tra oggetti modello dati, effettuare le operazioni ripor
 
    * Seleziona **ottenere** dal **Servizio** elenco a discesa.
 
-   * Tocca **Aggiungi** per collegare **cliente** oggetto modello dati a **chiamate** oggetto modello dati utilizzando una proprietà. In base al caso d’uso, l’oggetto modello dati chiamate deve essere collegato alla proprietà mobile number nell’oggetto modello dati cliente. Il **Aggiungi argomento** viene visualizzata.
+   * Seleziona **Aggiungi** per collegare **cliente** oggetto modello dati a **chiamate** oggetto modello dati utilizzando una proprietà. In base al caso d’uso, l’oggetto modello dati chiamate deve essere collegato alla proprietà mobile number nell’oggetto modello dati cliente. Il **Aggiungi argomento** viene visualizzata.
 
    ![Aggiungi associazione](assets/add_association_new.png)
 
@@ -281,7 +281,7 @@ Per ogni numero di cellulare disponibile nell’oggetto modello dati del cliente
 
    * Seleziona **mobilenum** dal **Valore di binding** elenco a discesa.
 
-   * Tocca **Aggiungi**.
+   * Seleziona **Aggiungi**.
 
    ![Aggiungi associazione per un argomento](assets/add_association_argument_new.png)
 
@@ -289,11 +289,11 @@ Per ogni numero di cellulare disponibile nell’oggetto modello dati del cliente
 
    ![Aggiungi associazione argomento](assets/add_argument_association_new.png)
 
-1. Tocca **Fine** per creare un’associazione 1:n tra il cliente e richiama gli oggetti del modello dati.
+1. Seleziona **Fine** per creare un’associazione 1:n tra il cliente e richiama gli oggetti del modello dati.
 
    Dopo aver creato un&#39;associazione tra il cliente e gli oggetti modello dati di chiamata, creare un&#39;associazione 1:1 tra gli oggetti modello dati cliente e fatturazione.
 
-1. Seleziona la casella di controllo nella parte superiore della sezione **cliente** oggetto modello dati per selezionarlo e toccarlo **Aggiungi associazione**. Il **Aggiungi associazione** viene aperto il riquadro delle proprietà.
+1. Seleziona la casella di controllo nella parte superiore della sezione **cliente** oggetto modello dati per selezionarlo e selezionarlo **Aggiungi associazione**. Il **Aggiungi associazione** viene aperto il riquadro delle proprietà.
 1. In **Aggiungi associazione** riquadro:
 
    * Specificare un titolo per l&#39;associazione. È un campo facoltativo.
@@ -308,7 +308,7 @@ Gli oggetti modello dati fatture e cliente vengono collegati utilizzando rispett
 
    * Seleziona **customerplan** dal **Valore di binding** elenco a discesa.
 
-   * Tocca **Fine** per creare un&#39;associazione tra le proprietà billplan e customerplan.
+   * Seleziona **Fine** per creare un&#39;associazione tra le proprietà billplan e customerplan.
 
    ![Aggiungi associazione per fattura cliente](assets/add_association_customer_bills_new.png)
 
@@ -320,7 +320,7 @@ Gli oggetti modello dati fatture e cliente vengono collegati utilizzando rispett
 
 Dopo aver creato le associazioni tra il cliente e altri oggetti modello dati, modifica le proprietà del cliente per definire la proprietà in base alla quale i dati vengono recuperati dall’oggetto modello dati. In base al caso d’uso, il numero di cellulare viene utilizzato come proprietà per recuperare i dati dall’oggetto modello dati del cliente.
 
-1. Seleziona la casella di controllo nella parte superiore della sezione **cliente** oggetto modello dati per selezionarlo e toccarlo **Modifica proprietà**. Il **Modifica proprietà** viene visualizzato il riquadro.
+1. Seleziona la casella di controllo nella parte superiore della sezione **cliente** oggetto modello dati per selezionarlo e selezionarlo **Modifica proprietà**. Il **Modifica proprietà** viene visualizzato il riquadro.
 1. Specifica **cliente** come **Oggetto modello di primo livello**.
 1. Seleziona **ottenere** dal **Servizio di lettura** elenco a discesa.
 1. In **Argomenti** sezione:
@@ -336,37 +336,37 @@ Dopo aver creato le associazioni tra il cliente e altri oggetti modello dati, mo
 
    * Seleziona **mobilenum** dal **Valore di binding** elenco a discesa.
 
-1. Tocca **Fine** per salvare le proprietà.
+1. Seleziona **Fine** per salvare le proprietà.
 
    ![Configurare i servizi](assets/configure_services_customer_new.png)
 
-1. Seleziona la casella di controllo nella parte superiore della sezione **chiamate** oggetto modello dati per selezionarlo e toccarlo **Modifica proprietà**. Il **Modifica proprietà** viene visualizzato il riquadro.
+1. Seleziona la casella di controllo nella parte superiore della sezione **chiamate** oggetto modello dati per selezionarlo e selezionarlo **Modifica proprietà**. Il **Modifica proprietà** viene visualizzato il riquadro.
 1. Disattiva il **Oggetto modello di primo livello** per **chiamate** oggetto modello dati.
-1. Tocca **Fine**.
+1. Seleziona **Fine**.
 
    Ripeti i passaggi da 8 a 10 per configurare le proprietà per **effetti** oggetto modello dati.
 
 ### Configurare i servizi {#configure-services}
 
 1. Vai a **Servizi** scheda.
-1. Seleziona la **ottenere** servizio e tocco **Modifica proprietà**. Il **Modifica proprietà** viene visualizzato il riquadro.
+1. Seleziona la **ottenere** servizio e selezione **Modifica proprietà**. Il **Modifica proprietà** viene visualizzato il riquadro.
 1. In **Modifica proprietà** riquadro:
 
    * Immettere un titolo e una descrizione facoltativi.
    * Seleziona **cliente** dal **Oggetto modello di output** elenco a discesa.
 
-   * Tocca **Fine** per salvare le proprietà.
+   * Seleziona **Fine** per salvare le proprietà.
 
    ![Modifica delle proprietà](assets/edit_properties_get_details_new.png)
 
-1. Seleziona la **aggiorna** servizio e tocco **Modifica proprietà**. Il **Modifica proprietà** viene visualizzato il riquadro.
+1. Seleziona la **aggiorna** servizio e selezione **Modifica proprietà**. Il **Modifica proprietà** viene visualizzato il riquadro.
 1. In **Modifica proprietà** riquadro:
 
    * Immettere un titolo e una descrizione facoltativi.
    * Seleziona **cliente** dal **Oggetto modello di input** elenco a discesa.
 
-   * Tocca **Fine**.
-   * Tocca **Salva** per salvare il modello dati del modulo.
+   * Seleziona **Fine**.
+   * Seleziona **Salva** per salvare il modello dati del modulo.
 
    ![Aggiorna proprietà del servizio](assets/update_service_properties_new.png)
 
@@ -376,17 +376,17 @@ Dopo aver creato le associazioni tra il cliente e altri oggetti modello dati, mo
 
 Per eseguire il test, eseguire le operazioni seguenti:
 
-1. Vai a **Modello** , seleziona la scheda **cliente** oggetto modello dati e tocca **Oggetto modello di test**.
+1. Vai a **Modello** , seleziona la scheda **cliente** oggetto modello dati e selezionare **Oggetto modello di test**.
 1. In **Modello dati modulo di prova** finestra, seleziona **Leggi oggetto modello** dal **Seleziona modello/servizio** elenco a discesa.
-1. In **Input** , specificare un valore per la sezione **mobilenum** proprietà esistente nel database MySQL configurato e toccare **Test**.
+1. In **Input** , specificare un valore per la sezione **mobilenum** proprietà esistente nel database MySQL configurato e selezionare **Test**.
 
    I dettagli del cliente associati alla proprietà mobilenum specificata vengono recuperati e visualizzati nella sezione Output come mostrato di seguito. Chiudete la finestra di dialogo.
 
    ![Modello dati di prova](assets/test_data_model_new.png)
 
 1. Vai a **Servizi** scheda.
-1. Seleziona la **ottenere** servizio e tocco **Servizio di test.**
-1. In **Input** , specificare un valore per la sezione **mobilenum** proprietà esistente nel database MySQL configurato e toccare **Test**.
+1. Seleziona la **ottenere** servizio e selezione **Servizio di test.**
+1. In **Input** , specificare un valore per la sezione **mobilenum** proprietà esistente nel database MySQL configurato e selezionare **Test**.
 
    I dettagli del cliente associati alla proprietà mobilenum specificata vengono recuperati e visualizzati nella sezione Output come mostrato di seguito. Chiudete la finestra di dialogo.
 
@@ -398,8 +398,8 @@ L’editor del modello dati modulo consente di generare dati di esempio per tutt
 
 Per generare, modificare e salvare dati di esempio, effettuare le seguenti operazioni:
 
-1. Nella pagina del modello di dati del modulo, tocca **Modifica dati di esempio**. Genera e visualizza i dati di esempio nella finestra Modifica dati di esempio.
+1. Nella pagina del modello dati del modulo, seleziona **Modifica dati di esempio**. Genera e visualizza i dati di esempio nella finestra Modifica dati di esempio.
 
    ![Modifica dati di esempio](assets/edit_sample_data_new.png)
 
-1. In entrata **Modifica dati di esempio** finestra, modifica i dati secondo necessità e tocca **Salva**. Chiudete la finestra.
+1. In entrata **Modifica dati di esempio** finestra, modifica i dati in base alle esigenze e seleziona **Salva**. Chiudete la finestra.

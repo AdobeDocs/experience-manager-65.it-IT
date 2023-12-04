@@ -2,9 +2,9 @@
 title: Configurare le impostazioni Fuori sede
 description: Scopri come configurare le impostazioni Fuori sede nell’istanza Adobe Experience Manager Forms.
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -36,17 +36,17 @@ Puoi segregare la delega di elementi in base ai modelli di flusso di lavoro. Ad 
 
 Per abilitare l&#39;impostazione Fuori sede per l&#39;account e delegare gli elementi della casella in entrata a un altro utente, effettuare le operazioni riportate di seguito.
 
-1. Accedi all’istanza AEM. Tocca il ![Casella in entrata](assets/bell.svg) icona e tocca **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
-1. Tocca il ![Selettore vista](assets/viewlist.svg) o ![Selettore vista](assets/calendar.svg) accanto al simbolo **[!UICONTROL Crea]** pulsante e tocco **[!UICONTROL Impostazioni]**. Viene visualizzata la finestra di dialogo delle impostazioni.
+1. Accedi all’istanza AEM. Seleziona la ![Casella in entrata](assets/bell.svg) e seleziona **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
+1. Seleziona la ![Selettore vista](assets/viewlist.svg) o ![Selettore vista](assets/calendar.svg) accanto al simbolo **[!UICONTROL Crea]** e seleziona **[!UICONTROL Impostazioni]**. Viene visualizzata la finestra di dialogo delle impostazioni.
 1. Apri **[!UICONTROL Fuori sede]** nella finestra di dialogo delle impostazioni.
-1. Tocca il **[!UICONTROL Attiva/Disattiva]** per abilitare l&#39;impostazione Fuori sede.
+1. Seleziona la **[!UICONTROL Attiva/Disattiva]** per abilitare l&#39;impostazione Fuori sede.
 1. Specifica la **[!UICONTROL Ora di inizio]**  e **[!UICONTROL Ora di fine]** per l&#39;impostazione. Gli elementi vengono delegati solo durante il periodo specificato. Lascia **[!UICONTROL Ora di fine]** campo vuoto per delegare elementi per un periodo di tempo indefinito.
 1. Seleziona la **[!UICONTROL Inoltra i miei oggetti durante questo periodo]** casella di controllo. Se non selezioni l’opzione e non specifichi un assegnatario, gli elementi non vengono inoltrati ad alcun utente. Anche se sei assente e l’impostazione è abilitata, gli elementi rimangono nella casella in entrata.
-1. Tocca **[!UICONTROL Aggiungi assegnatario]**. Specificare un utente in **[!UICONTROL Assegnatario]** in modo da poter delegare gli elementi. Specifica la **[!UICONTROL Modello flusso di lavoro]** in modo da poter delegare all&#39;utente specificato. È possibile selezionare più modelli di flusso di lavoro.
+1. Seleziona **[!UICONTROL Aggiungi assegnatario]**. Specificare un utente in **[!UICONTROL Assegnatario]** in modo da poter delegare gli elementi. Specifica la **[!UICONTROL Modello flusso di lavoro]** in modo da poter delegare all&#39;utente specificato. È possibile selezionare più modelli di flusso di lavoro.
 
    Inoltre, per assegnare tutti gli elementi, indipendentemente dal modello di flusso di lavoro, a un particolare utente, seleziona **[!UICONTROL Tutti i flussi di lavoro]** dall’elenco a discesa Modello del flusso di lavoro. <br>
 
-   Per assegnare elementi a un utente specifico per tutti i modelli di flusso di lavoro eccetto alcuni, seleziona **[!UICONTROL Tutti i flussi di lavoro]** dall’elenco a discesa Modello del flusso di lavoro, tocca **[!UICONTROL + Aggiungi eccezioni]**e specificare i modelli di flusso di lavoro da escludere.
+   Per assegnare elementi a un utente specifico per tutti i modelli di flusso di lavoro eccetto alcuni, seleziona **[!UICONTROL Tutti i flussi di lavoro]** dall’elenco a discesa Modello flusso di lavoro, seleziona **[!UICONTROL + Aggiungi eccezioni]**e specificare i modelli di flusso di lavoro da escludere.
    <br>
 
    Ripeti il passaggio per aggiungere altri assegnatari. <br>
@@ -55,7 +55,7 @@ Per abilitare l&#39;impostazione Fuori sede per l&#39;account e delegare gli ele
    >
    >L&#39;ordine degli assegnatari è importante. Quando un elemento viene assegnato a un utente che ha abilitato l&#39;impostazione fuori sede, l&#39;elemento viene valutato in base all&#39;elenco degli assegnatari specificato nell&#39;ordine in cui vengono aggiunti gli assegnatari. Quando un elemento corrisponde ai criteri, viene assegnato all&#39;assegnatario e l&#39;assegnatario successivo non è selezionato.
 
-1. Tocca **[!UICONTROL Salva]**. L&#39;impostazione ha effetto alla data e all&#39;ora di inizio specificate. Se si effettua l&#39;accesso mentre si è fuori sede, non si viene considerati in ufficio fino a quando non si modificano le impostazioni.
+1. Seleziona **[!UICONTROL Salva]**. L&#39;impostazione ha effetto alla data e all&#39;ora di inizio specificate. Se si effettua l&#39;accesso mentre si è fuori sede, non si viene considerati in ufficio fino a quando non si modificano le impostazioni.
 
 Ora gli elementi assegnati durante il periodo Fuori sede vengono assegnati automaticamente all&#39;assegnatario specificato.
 ![Fuori sede](assets/out-of-office.png)

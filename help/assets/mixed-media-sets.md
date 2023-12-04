@@ -1,6 +1,6 @@
 ---
 title: Set di file multimediali diversi
-description: Scopri come utilizzare i set di file multimediali diversi in Dynamic Media
+description: Scopri come utilizzare i set di file multimediali diversi in Dynamic Medie
 uuid: cecad772-ed05-46f6-ba44-107195866b0d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,10 +11,10 @@ docset: aem65
 feature: Mixed Media Sets,Asset Management
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 17%
+source-wordcount: '1500'
+ht-degree: 15%
 
 ---
 
@@ -38,7 +38,7 @@ Per iniziare a utilizzare rapidamente i set di file multimediali diversi, effett
 
    Per iniziare, carica le immagini e i video per i set di file multimediali diversi. Se necessario, crea i [Set di immagini](/help/assets/image-sets.md) e i [Set 360 gradi](/help/assets/spin-sets.md). Poiché gli utenti possono ingrandire le immagini nel Visualizzatore set di file multimediali diversi, scegli attentamente le immagini. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel.
 
-   Consulta [Dynamic Media - Formati di immagine raster supportati](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) per un elenco di formati supportati dai set di file multimediali diversi.
+   Consulta [Dynamic Medie - Formati di immagine raster supportati](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) per un elenco di formati supportati dai set di file multimediali diversi.
 
 1. [Creare set di file multimediali diversi](#creating-mixed-media-sets).
 
@@ -74,7 +74,7 @@ Se necessario, puoi modificare [Set di file multimediali diversi](#editing-mixed
 
 >[!NOTE]
 >
->In caso di problemi durante la creazione dei set, consulta [Risoluzione dei problemi di Dynamic Media - Modalità Scene7](/help/assets/troubleshoot-dms7.md).
+>In caso di problemi durante la creazione dei set, consulta [Risoluzione dei problemi di Dynamic Medie - Modalità Scene7](/help/assets/troubleshoot-dms7.md).
 
 ## Carica risorse {#uploading-assets}
 
@@ -82,7 +82,7 @@ Per iniziare, carica le immagini e i video per i set di file multimediali divers
 
 Inoltre, se desiderate aggiungere set 360 gradi o set di immagini al set di file multimediali diversi, create anche questi set.
 
-Consulta [Dynamic Media - Formati di immagine raster supportati](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) per un elenco di formati supportati dai set di file multimediali diversi.
+Consulta [Dynamic Medie - Formati di immagine raster supportati](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) per un elenco di formati supportati dai set di file multimediali diversi.
 
 ## Creare un set di file multimediali diversi {#creating-mixed-media-sets}
 
@@ -154,21 +154,19 @@ Puoi eseguire varie attività di modifica delle risorse in Set di file multimedi
 
    * Per ordinare le risorse in base al nome in ordine crescente o decrescente, nel pannello a sinistra seleziona **[!UICONTROL Risorse]** (icona immagine). A destra del **[!UICONTROL Risorse]** , seleziona le icone del cursore su o giù.
 
-      >[!NOTE]
-      >
-      >* Per eliminare un intero set di file multimediali diversi, da qualsiasi modalità di visualizzazione (ad esempio **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a colonne]** a) passa al set di file multimediali diversi. Passa il puntatore del mouse sulla risorsa e seleziona l’icona del segno di spunta, in modo da selezionarla. Premi **[!UICONTROL Backspace]** sulla tastiera, oppure selezionare **[!UICONTROL Altro]** (tre punti) sulla barra degli strumenti, quindi seleziona **[!UICONTROL Elimina]**.
-      >
-      >* Per modificare le risorse di un set di file multimediali diversi, accedi al set e fai clic su **[!UICONTROL Membri set]** nella barra a sinistra. Seleziona la **[!UICONTROL Matita]** su una singola risorsa per aprirla nella finestra di modifica.
-
+     >[!NOTE]
+     >
+     >* Per eliminare un intero set di file multimediali diversi, da qualsiasi modalità di visualizzazione (ad esempio **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a colonne]** a) passa al set di file multimediali diversi. Passa il puntatore del mouse sulla risorsa e seleziona l’icona del segno di spunta, in modo da selezionarla. Premi **[!UICONTROL Backspace]** sulla tastiera, oppure selezionare **[!UICONTROL Altro]** (tre punti) sulla barra degli strumenti, quindi seleziona **[!UICONTROL Elimina]**.
+     >
+     >* Per modificare le risorse di un set di file multimediali diversi, accedi al set e fai clic su **[!UICONTROL Membri set]** nella barra a sinistra. Seleziona la **[!UICONTROL Matita]** su una singola risorsa per aprirla nella finestra di modifica.
 
 1. Seleziona **[!UICONTROL Salva]** al termine della modifica.
 
    >[!NOTE]
    >
-   >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Tocca (non selezionare) il set per aprirlo nella pagina Anteprima set di Experienci Manager. Nella barra a sinistra, seleziona il cursore verso il basso per aprire l’elenco a discesa, quindi seleziona **[!UICONTROL Membri set]**. Nella pagina Membri set, passa il puntatore del mouse su una risorsa, quindi seleziona **[!UICONTROL Modifica]** (icona a forma di matita) per aprire la pagina di modifica.
+   >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Selezionate (non selezionate) il set in modo che venga aperto nella pagina Anteprima set di Experienci Manager. Nella barra a sinistra, seleziona il cursore verso il basso per aprire l’elenco a discesa, quindi seleziona **[!UICONTROL Membri set]**. Nella pagina Membri set, passa il puntatore del mouse su una risorsa, quindi seleziona **[!UICONTROL Modifica]** (icona a forma di matita) per aprire la pagina di modifica.
    >
    >* Per eliminare un intero set di file multimediali diversi: da qualsiasi modalità di visualizzazione (come Vista a schede o Vista a colonne), vai al set di file multimediali diversi. Passa il puntatore del mouse sul set, quindi seleziona **Seleziona** (icona di spunta). Premi **[!UICONTROL Backspace]** sulla tastiera o selezionare **[!UICONTROL Altro]** (riga di tre punti), quindi seleziona **[!UICONTROL Elimina]**.
-
 
 ## Anteprima di un set di file multimediali diversi {#previewing-mixed-media-sets}
 

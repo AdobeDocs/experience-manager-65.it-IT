@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 63%
+source-wordcount: '1798'
+ht-degree: 59%
 
 ---
 
@@ -115,12 +115,12 @@ Ad esempio, quando si seleziona il dispositivo **iPhone 6 Plus** (definito con u
 
    * **Seleziona il dispositivo**: consente di definire un dispositivo specifico da emulare da un elenco (ved. il passaggio successivo).
 
-     ![Seleziona il dispositivo](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![Seleziona dispositivo](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Per selezionare un dispositivo specifico da emulare è possibile effettuare le seguenti operazioni:
 
    * Utilizza l’icona Seleziona dispositivo e scegli da un selettore a discesa.
-   * Tocca o fai clic sull’indicatore del dispositivo nella barra degli strumenti dell’emulatore.
+   * Fai clic sull’indicatore del dispositivo nella barra degli strumenti dell’emulatore.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -164,7 +164,7 @@ Come con altri componenti, puoi selezionare e quindi intervenire (opzioni Copia,
 >
 >Poiché un contenitore di layout è un sistema paragrafo, l’eliminazione del componente comporta l’eliminazione sia della griglia di layout che di tutti i componenti (e del relativo contenuto) presenti all’interno del contenitore.
 
-1. Se passi il puntatore del mouse o tocchi il segnaposto della griglia, viene visualizzato il menu Azioni.
+1. Se si passa il puntatore del mouse o si seleziona il segnaposto della griglia, viene visualizzato il menu Azioni.
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
@@ -201,7 +201,7 @@ La modalità **Layout** può essere avviata in due modi.
    * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Impostazione destinazione**.
    * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
 
-* Durante la[modifica di un singolo componente.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* Quando [modifica di un singolo componente.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
    * Utilizzando l’opzione **Layout** nel menu azione rapida del componente, puoi passare alla modalità **Layout**.
    * La modalità **Layout** persiste quando si modifica il componente e torna alla modalità **Modifica** quando è attivo un altro componente.
@@ -216,7 +216,7 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
   >
   >Proporzioni e rapporti relativi saranno mantenuti al ridimensionamento di componenti come le **immagini**.
 
-* Tocca o fai clic su un componente di contenuto; la barra degli strumenti ti consente di:
+* Facendo clic su un componente di contenuto, la barra degli strumenti consente di:
 
    * **Elemento padre**
 
@@ -232,7 +232,7 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* In modalità **Layout** tocca o fai clic su **Trascina qui i componenti** per selezionare l’intero componente. Verrà visualizzata la barra degli strumenti per questa modalità.
+* In entrata **Layout** modalità di accesso è possibile fare clic su **Trascina qui i componenti** per selezionare l&#39;intero componente. Verrà visualizzata la barra degli strumenti per questa modalità.
 
   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente layout e dei componenti ad esso appartenenti. Esempio:
 
@@ -244,7 +244,7 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
 
      ![Mostra componenti nascosti](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Ripristina layout punto di interruzione**: consente di tornare al layout predefinito e non verrà quindi applicato alcun layout personalizzato.
+   * **Ripristina layout punto di interruzione**: ripristina il layout predefinito. Ciò significa che non verrà imposto alcun layout personalizzato.
 
      ![Layout punto di interruzione server](do-not-localize/screen_shot_2018-03-23at091013.png)
 

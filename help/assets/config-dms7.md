@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6489'
+source-wordcount: '6508'
 ht-degree: 3%
 
 ---
@@ -142,7 +142,7 @@ Adobe A meno che non si disponga di una disposizione speciale per utilizzare il 
 
    * **[!UICONTROL Sincronizza tutto il contenuto]** - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Selezionata per impostazione predefinita. Deseleziona questa opzione se desideri includere o escludere selettivamente le risorse dalla sincronizzazione con Dynamic Medie. Deselezionando questa opzione è possibile scegliere tra le due seguenti modalità di sincronizzazione di Dynamic Medie:
 
-   * **[!UICONTROL Modalità di sincronizzazione elementi Dynamic Media]**
+   * **[!UICONTROL Modalità di sincronizzazione Dynamic Medie]**
       * **[!UICONTROL Attivato per impostazione predefinita]** : la configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non contrassegni una cartella specificamente per l’esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabilitata per impostazione predefinita]** - La configurazione non viene applicata ad alcuna cartella finché non contrassegni esplicitamente una cartella selezionata per la sincronizzazione con Dynamic Medie.
 Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Medie, seleziona una cartella di risorse, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**. Il giorno **[!UICONTROL Dettagli]** , nella scheda **[!UICONTROL Modalità di sincronizzazione Dynamic Medie]** scegliere tra le tre opzioni seguenti. Al termine, seleziona **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se hai selezionato **[!UICONTROL Sincronizza tutto il contenuto]**prima.* Vedi anche [Utilizzare la pubblicazione selettiva a livello di cartella in Dynamic Medie](/help/assets/selective-publishing.md).
@@ -224,11 +224,11 @@ Quando si esegue la modalità Dynamic Medie - Scene7 su AEM, al momento la funzi
 
 1. Da Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![14/13/16/2019](assets/2019-08-02_16-13-14.png)
 
 1. Viene visualizzata una nuova scheda del browser **[!UICONTROL Configurazione console Web Adobe Experience Manager]** pagina.
 
-   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+   ![29/08/2019](assets/2019-08-02_16-17-29.png)
 
 1. Nella pagina, scorri fino al nome *Adobe CQ Scene7 Platform Server*.
 
@@ -276,7 +276,7 @@ Se intendi utilizzare questa funzione, tieni presenti i seguenti prerequisiti e 
 
    * Copia e incolla il percorso precedente nel campo Percorso CRXDE Liti sotto la barra degli strumenti, quindi premi `Enter`.
 
-1. Nella barra a sinistra, fai clic con il pulsante destro del mouse su `fileupload`, quindi dal menu a comparsa, selezionare **[!UICONTROL Sovrapponi nodo]**.
+1. Nella barra a sinistra, fai clic con il pulsante destro del mouse `fileupload`, quindi dal menu a comparsa, selezionare **[!UICONTROL Sovrapponi nodo]**.
 
    ![Opzione Sovrapponi nodo](/help/assets/assets-dm/uploadassets15gb_a.png)
 
@@ -388,7 +388,7 @@ Consulta [Caricamento risorse](/help/assets/manage-assets.md#uploading-assets).
 
    * Fai doppio clic su **[!UICONTROL abilitato]** campo. Per impostazione predefinita, tutti i tipi di risorsa mime sono abilitati (impostati su **[!UICONTROL true]**), il che significa che le risorse vengono sincronizzate con Dynamic Medie per l’elaborazione. Se desideri escludere questo tipo di risorsa mime dall’elaborazione, modifica questa impostazione in **[!UICONTROL false]**.
 
-   * Doppio tocco **[!UICONTROL jobParam]** per aprire il campo di testo associato. Consulta [Tipi MIME supportati](/help/assets/assets-formats.md#supported-mime-types) per un elenco dei valori dei parametri di elaborazione consentiti che è possibile utilizzare per un dato tipo mime.
+   * Doppia selezione **[!UICONTROL jobParam]** per aprire il campo di testo associato. Consulta [Tipi MIME supportati](/help/assets/assets-formats.md#supported-mime-types) per un elenco dei valori dei parametri di elaborazione consentiti che è possibile utilizzare per un dato tipo mime.
 
 1. Effettua una delle operazioni seguenti:
 
@@ -405,25 +405,25 @@ In Experience Manager Assets è possibile aggiungere tipi MIME personalizzati pe
 
 1. Da Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![14/13/16/2019](assets/2019-08-02_16-13-14.png)
 
 1. Viene visualizzata una nuova scheda del browser **[!UICONTROL Configurazione console Web Adobe Experience Manager]** pagina.
 
-   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+   ![29/08/2019](assets/2019-08-02_16-17-29.png)
 
 1. Nella pagina, scorri verso il basso fino al nome *Adobe CQ Scene7 Asset MIME type Service*, come illustrato nella schermata successiva. A destra del nome, selezionare **[!UICONTROL Modificare i valori di configurazione]** (icona della matita).
 
-   ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
+   ![08/08/2019_16-44-56](assets/2019-08-02_16-44-56.png)
 
 1. Il giorno **Servizio di tipo MIME risorse Scene7 di Adobe CQ** , selezionare un&#39;icona del segno più &lt;+>. La posizione nella tabella in cui selezioni il segno più per aggiungere il nuovo tipo mime è insignificante.
 
-   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
+   ![27/08/2019](assets/2019-08-02_16-27-27.png)
 
 1. Tipo `DWG=image/vnd.dwg` nel campo di testo vuoto appena aggiunto.
 
    L’esempio `DWG=image/vnd.dwg` è solo a scopo dimostrativo. Il tipo MIME aggiunto qui può essere qualsiasi altro formato non supportato.
 
-   ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
+   ![36/08/2019](assets/2019-08-02_16-36-36.png)
 
 1. Nell’angolo inferiore destro della pagina, seleziona **[!UICONTROL Salva]**.
 
@@ -432,7 +432,7 @@ In Experience Manager Assets è possibile aggiungere tipi MIME personalizzati pe
 1. Torna alla scheda del browser che presenta la console di Experience Manager aperta.
 1. Da Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
 
-   ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
+   ![08/02/2019-16-55-41](assets/2019-08-02_16-55-41.png)
 
 1. Nella barra a sinistra, accedi a:
 
@@ -442,10 +442,10 @@ In Experience Manager Assets è possibile aggiungere tipi MIME personalizzati pe
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. Con il tipo mime `image_vnd.dwg` ancora selezionato, da **[!UICONTROL Proprietà]** , nella scheda **[!UICONTROL abilitato]** riga, sotto **[!UICONTROL Valore]** , toccare due volte il valore per aprire la **[!UICONTROL Valore]** elenco a discesa.
+1. Con il tipo mime `image_vnd.dwg` ancora selezionato, da **[!UICONTROL Proprietà]** , nella scheda **[!UICONTROL abilitato]** riga, sotto **[!UICONTROL Valore]** nell&#39;intestazione di colonna, selezionare il valore per aprire **[!UICONTROL Valore]** elenco a discesa.
 1. Tipo `false` nel campo (o seleziona **[!UICONTROL false]** dall’elenco a discesa).
 
-   ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
+   ![30-08-16-60-2019](assets/2019-08-02_16-60-30.png)
 
 1. Nell&#39;angolo superiore sinistro della pagina CRXDE Liti, seleziona **[!UICONTROL Salva tutto]**.
 

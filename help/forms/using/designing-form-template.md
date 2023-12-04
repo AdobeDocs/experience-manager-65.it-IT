@@ -7,16 +7,16 @@ topic-tags: hTML5_forms
 docset: aem65
 feature: Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 1%
+source-wordcount: '480'
+ht-degree: 0%
 
 ---
 
 # Progettazione di modelli di modulo per moduli HTML5{#designing-form-templates-for-html-forms}
 
-Il componente HTML5 Forms nell’AEM può eseguire il rendering del modello di modulo XFA nel formato HTML5. I progettisti di moduli possono progettare modelli di modulo utilizzando [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it) e utilizza la funzionalità di rendering di HTML5. Questi modelli di modulo, insieme alle relative risorse, possono risiedere nell’archivio AEM, nel file system o essere esposti tramite http. Tuttavia, se prevedi di gestire i moduli con Forms Manager, i modelli e le risorse devono trovarsi nell’archivio AEM.
+Il componente HTML5 Forms nell’AEM può eseguire il rendering del modello di modulo XFA nel formato HTML5. I progettisti di moduli possono progettare modelli di modulo utilizzando [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) e utilizza la funzionalità di rendering di HTML5. Questi modelli di modulo, insieme alle relative risorse, possono risiedere nell’archivio AEM, nel file system o essere esposti tramite http. Tuttavia, se prevedi di gestire i moduli con Forms Manager, i modelli e le risorse devono trovarsi nell’archivio AEM.
 
 Anche se i moduli HTML5 corrispondono in larga misura al comportamento dei PDF forms, esistono alcune funzioni in entrambi i formati che non sono applicabili all’altro formato. Ad esempio, il modo in cui i codici a barre vengono applicati a un modulo PDF in Adobe Reader varia da un modulo Mobile, oppure il modo in cui un modulo è firmato digitalmente varia anche tra i formati. Per ulteriori informazioni su tali varianti, consulta [Differenziazione delle funzioni tra moduli di HTML5 e PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
@@ -40,4 +40,4 @@ Il target principale per i moduli HTML5 sono i dispositivi touch. Pertanto, in A
 
 #### Formato RTF {#rich-text-format}
 
-È possibile convertire un campo di testo in un campo RTF. Aggiunge un elenco di opzioni di formattazione al campo di testo. Per convertire, apri Forms Designer, tocca il campo di testo in **[!UICONTROL Visualizzazione Progettazione]**. In **[!UICONTROL Campo]** , seleziona **[!UICONTROL Rich Text]** dal **[!UICONTROL Formato campo]** elenco a discesa. Ora, quando il modulo XFA viene renderizzato come modulo HTML5, il campo viene renderizzato come campo in formato Rich Text. Tocca ![Ingrandisci](assets/maximize_icon.svg) per visualizzare ulteriori opzioni di formattazione.
+È possibile convertire un campo di testo in un campo RTF. Aggiunge un elenco di opzioni di formattazione al campo di testo. Per convertire, apri Forms Designer, seleziona il campo di testo in **[!UICONTROL Visualizzazione Progettazione]**. In **[!UICONTROL Campo]** , seleziona **[!UICONTROL Rich Text]** dal **[!UICONTROL Formato campo]** elenco a discesa. Ora, quando il modulo XFA viene renderizzato come modulo HTML5, il campo viene renderizzato come campo in formato Rich Text. Seleziona ![Ingrandisci](assets/maximize_icon.svg) per visualizzare ulteriori opzioni di formattazione.

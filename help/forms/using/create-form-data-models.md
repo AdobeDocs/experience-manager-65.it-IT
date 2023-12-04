@@ -10,9 +10,9 @@ discoiquuid: 7c392909-ff84-4411-b44f-16f99dffac54
 docset: aem65
 feature: Form Data Model
 exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '952'
 ht-degree: 1%
 
 ---
@@ -42,17 +42,17 @@ L’integrazione dei dati in AEM Forms fornisce un’interfaccia utente intuitiv
 Verifica di aver configurato le origini dati che intendi utilizzare nel modello dati del modulo come descritto in [Configurare le origini dati](../../forms/using/configure-data-sources.md). Per creare un modello dati modulo basato su origini dati configurate, eseguire le operazioni seguenti:
 
 1. Nell’istanza di authoring dell’AEM, passa a **[!UICONTROL Forms > Integrazioni dati]**.
-1. Tocca **[!UICONTROL Crea > Modello dati modulo]**.
+1. Seleziona **[!UICONTROL Crea > Modello dati modulo]**.
 1. Nella finestra di dialogo Crea modello dati modulo:
 
    * Specifica un nome per il modello dati del modulo.
    * (**Facoltativo**) Specifica titolo, descrizione e tag per il modello di dati del modulo.
-   * (**Facoltativo e applicabile solo se le origini dati sono configurate** a) Toccare l&#39;icona di spunta accanto al **[!UICONTROL Configurazione origine dati]** e seleziona il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che desideri utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, per impostazione predefinita vengono elencati tutti i database JDBC e le origini dati del profilo utente AEM. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati di tutti i nodi di configurazione.
+   * (**Facoltativo e applicabile solo se le origini dati sono configurate** a) Selezionare l&#39;icona di spunta accanto al simbolo **[!UICONTROL Configurazione origine dati]** e seleziona il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che desideri utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, per impostazione predefinita vengono elencati tutti i database JDBC e le origini dati del profilo utente AEM. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati di tutti i nodi di configurazione.
 
-   Tocca **[!UICONTROL Successivo]**.
+   Seleziona **[!UICONTROL Avanti]**.
 
 1. (**Applicabile solo se le origini dati sono configurate**) La **[!UICONTROL Seleziona origine dati]** nella schermata sono elencate le origini dati disponibili, se presenti. Selezionare le origini dati da utilizzare nel modello dati del modulo.
-1. Tocca **[!UICONTROL Crea]** e nella finestra di dialogo di conferma tocca **[!UICONTROL Apri]** per aprire l&#39;editor modello dati modulo.
+1. Seleziona **[!UICONTROL Crea]** e nella finestra di dialogo di conferma, seleziona **[!UICONTROL Apri]** per aprire l&#39;editor modello dati modulo.
 
 Esaminiamo i diversi componenti dell’interfaccia utente dell’editor dei modelli di dati dei moduli.
 
@@ -76,21 +76,21 @@ Per ulteriori informazioni sull’editor del modello dati modulo e su come utili
 
 Per aggiungere o aggiornare origini dati a un modello dati modulo esistente, eseguire le operazioni seguenti.
 
-1. Vai a **[!UICONTROL Forms > Integrazioni dati]**, seleziona il modello di dati del modulo in cui desideri aggiungere o aggiornare le origini dati e tocca **[!UICONTROL Proprietà]**.
+1. Vai a **[!UICONTROL Forms > Integrazioni dati]**, selezionare il modello dati del modulo in cui si desidera aggiungere o aggiornare le origini dati e quindi selezionare **[!UICONTROL Proprietà]**.
 1. Nelle proprietà del modello dati del modulo, vai al **[!UICONTROL Aggiorna origine]** scheda.
 
    Nella scheda Aggiorna origine:
 
-   * Tocca l’icona Sfoglia in **[!UICONTROL Configurazione in base al contesto]** e selezionare un nodo di configurazione in cui risiede la configurazione cloud per l&#39;origine dati che si desidera aggiungere. Se non selezioni un nodo, le configurazioni cloud che risiedono solo nel `global` Il nodo viene elencato quando tocchi **[!UICONTROL Aggiungi origini]**.
+   * Seleziona l’icona Sfoglia in **[!UICONTROL Configurazione in base al contesto]** e selezionare un nodo di configurazione in cui risiede la configurazione cloud per l&#39;origine dati che si desidera aggiungere. Se non selezioni un nodo, le configurazioni cloud che risiedono solo nel `global` vengono elencati quando si seleziona **[!UICONTROL Aggiungi origini]**.
 
-   * Per aggiungere una nuova origine dati, tocca **[!UICONTROL Aggiungi origini]** e seleziona le origini dati da aggiungere al modello dati del modulo. Tutte le origini dati configurate in `global` e viene visualizzato il nodo di configurazione selezionato, se presente.
+   * Per aggiungere una nuova origine dati, selezionare **[!UICONTROL Aggiungi origini]** e seleziona le origini dati da aggiungere al modello dati del modulo. Tutte le origini dati configurate in `global` e viene visualizzato il nodo di configurazione selezionato, se presente.
 
-   * Per sostituire un’origine dati esistente con un’altra origine dati dello stesso tipo, tocca il **[!UICONTROL Modifica]** per l&#39;origine dati e selezionarla dall&#39;elenco delle origini dati disponibili.
-   * Per eliminare un’origine dati esistente, tocca il **[!UICONTROL Elimina]** per l&#39;origine dati. L’icona Elimina è disabilitata se nel modello dati del modulo viene aggiunto un oggetto modello dati nell’origine dati.
+   * Per sostituire un&#39;origine dati esistente con un&#39;altra origine dati dello stesso tipo, selezionare **[!UICONTROL Modifica]** per l&#39;origine dati e selezionarla dall&#39;elenco delle origini dati disponibili.
+   * Per eliminare un&#39;origine dati esistente, selezionare **[!UICONTROL Elimina]** per l&#39;origine dati. L’icona Elimina è disabilitata se nel modello dati del modulo viene aggiunto un oggetto modello dati nell’origine dati.
 
    ![fdm-properties](assets/fdm-properties.png)
 
-1. Tocca **[!UICONTROL Salva e chiudi]** per salvare gli aggiornamenti.
+1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare gli aggiornamenti.
 
 >[!NOTE]
 >

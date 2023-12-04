@@ -9,10 +9,10 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 2%
+source-wordcount: '1736'
+ht-degree: 1%
 
 ---
 
@@ -35,13 +35,13 @@ L&#39;utility di migrazione converte [Risorse Forms adattive](../../forms/using/
 
 **In caso di aggiornamento sul posto**
 
-Se hai eseguito un aggiornamento sul posto, l’istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, è necessario installare [Pacchetto di compatibilità per AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) (include il pacchetto di compatibilità per la gestione della corrispondenza)
+Se hai eseguito un aggiornamento sul posto, l’istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, è necessario installare [Pacchetto di compatibilità per AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (include il pacchetto di compatibilità per la gestione della corrispondenza)
 
 Quindi devi aggiornare risorse e documenti in base a [esecuzione dell&#39;utilità di migrazione](#runningmigrationutility).
 
 **In caso di installazione fuori sede**
 
-Se si tratta di un’installazione fuori sede (nuova), prima di poter utilizzare le risorse e i documenti è necessario installare [Pacchetto di compatibilità per AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) (include il pacchetto di compatibilità per la gestione della corrispondenza).
+Se si tratta di un’installazione fuori sede (nuova), prima di poter utilizzare le risorse e i documenti è necessario installare [Pacchetto di compatibilità per AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (include il pacchetto di compatibilità per la gestione della corrispondenza).
 
 Quindi devi importare il pacchetto di risorse (zip o cmp) nella nuova configurazione e aggiornare risorse e documenti in base a [esecuzione dell&#39;utilità di migrazione](#runningmigrationutility). L’Adobe consiglia di creare le risorse nella nuova configurazione solo dopo aver eseguito l’utility di migrazione.
 
@@ -91,7 +91,7 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
 
 1. Per eseguire la migrazione, effettuare le seguenti operazioni:
 
-   * Per eseguire la migrazione **risorse**, tocca Migrazione risorse AEM Forms e nella schermata successiva tocca **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
+   * Per eseguire la migrazione **risorse**, seleziona Migrazione risorse AEM Forms e, nella schermata successiva, seleziona **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
 
       * Moduli adattivi
       * Frammenti di documenti
@@ -103,18 +103,18 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
    >
    >Durante la migrazione delle risorse, potresti trovare messaggi di avviso come &quot;Conflitto trovato per...&quot;. Questi messaggi indicano che non è stato possibile migrare le regole per alcuni dei componenti nei moduli adattivi. Ad esempio, se il componente aveva un evento con sia regole che script, se le regole si verificano dopo uno script, nessuna delle regole per il componente viene migrata. È possibile [migrazione di tali regole aprendo l’editor di regole](#migrate-rules) nell’authoring di moduli adattivi.
 
-   * Per migrare i componenti personalizzati del modulo adattivo, tocca **Migrazione dei componenti personalizzati di Forms adattivi** e nella pagina Migrazione componenti personalizzati, tocca **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
+   * Per migrare i componenti personalizzati del modulo adattivo, seleziona **Migrazione dei componenti personalizzati di Forms adattivi** e nella pagina Migrazione componenti personalizzati, seleziona **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
 
       * Componenti personalizzati scritti per Adaptive Forms
       * Eventuali sovrapposizioni dei componenti.
 
-   * Per migrare i modelli di modulo adattivo, tocca **Migrazione modello Forms adattivo** e nella pagina Migrazione componenti personalizzati, tocca **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
+   * Per migrare i modelli di moduli adattivi, seleziona **Migrazione modello Forms adattivo** e nella pagina Migrazione componenti personalizzati, seleziona **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
 
       * Modelli di modulo adattivo creati in `/apps` o `/conf` utilizzo dell’Editor modelli per AEM.
 
    * Migra i servizi di configurazione cloud di AEM Forms per utilizzare il nuovo paradigma del servizio cloud in base al contesto, che include l’interfaccia utente touch (sotto `/conf`). Quando esegui la migrazione dei servizi di configurazione cloud di AEM Forms, i servizi cloud in `/etc` vengono spostati in `/conf`. Se non disponi di personalizzazioni dei servizi cloud che dipendono dai percorsi legacy (`/etc`), l’Adobe consiglia di eseguire l’utility di migrazione dopo l’aggiornamento alla versione 6.5; per ulteriori informazioni, utilizza l’interfaccia utente touch della configurazione cloud. Se disponi di personalizzazioni di Cloud Services esistenti, continua a utilizzare l’interfaccia classica nelle impostazioni aggiornate fino a quando le personalizzazioni non vengono aggiornate in modo da allinearsi ai percorsi migrati (`/conf`) ed eseguire l&#39;utility di migrazione.
 
-   Per eseguire la migrazione **Servizi cloud AEM Forms**, che includono quanto segue, tocca Migrazione configurazione cloud di AEM Forms (la migrazione della configurazione cloud è indipendente dal pacchetto di compatibilità di AEMFD). Tocca Migrazione configurazioni AEM Forms Cloud, quindi nella pagina Migrazione configurazione tocca **Avvia migrazione**:
+   Per eseguire la migrazione **Servizi cloud AEM Forms**, che includono quanto segue, seleziona Migrazione configurazione cloud di AEM Forms (la migrazione della configurazione cloud è indipendente dal pacchetto di compatibilità AEMFD). Seleziona Migrazione configurazioni AEM Forms Cloud, quindi nella pagina Migrazione configurazione seleziona **Avvia migrazione**:
 
    * Servizi cloud del modello dati modulo
 
@@ -152,13 +152,13 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
 
 Questi componenti possono essere migrati aprendoli nell’editor di regole nell’editor di Forms adattivo.
 
-* Per migrare regole e script (non necessari se si aggiorna dalla versione 6.3) nei componenti personalizzati, tocca Migrazione componenti personalizzati Forms adattivi e nella schermata successiva tocca Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
+* Per migrare regole e script (non necessari se si esegue l’aggiornamento da 6.3) nei componenti personalizzati, seleziona Migrazione componenti personalizzati di Forms adattivi e nella schermata successiva seleziona Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
 
    * Regole e script creati utilizzando l’editor di regole (6.1 FP1 e versioni successive)
 
    * Script creati utilizzando la scheda Script nell’interfaccia utente di 6.1 e versioni precedenti
 
-* Per migrare i modelli (non necessario per l’aggiornamento da 6.3 e 6.4), tocca Migrazione modelli Forms adattivi e nella schermata successiva tocca Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
+* Per eseguire la migrazione dei modelli (non richiesto per l’aggiornamento da 6.3 e 6.4), seleziona Migrazione modello Forms adattivo e nella schermata successiva seleziona Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
 
    * Modelli precedenti: i modelli di moduli adattivi creati in /apps utilizzando AEM 6.1 Forms o versioni precedenti. Sono inclusi gli script definiti nei componenti del modello.
 

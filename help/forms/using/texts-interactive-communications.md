@@ -10,9 +10,9 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Il frammento di documento di testo nella comunicazione interattiva supporta il s
 
    * **[!UICONTROL Tag]**: facoltativamente, per creare un tag personalizzato, immetti il valore nel campo di testo e premi Invio. Quando salvi questo testo, vengono creati i nuovi tag aggiunti.
 
-1. Tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Avanti]**.
 
    Viene visualizzata la pagina Crea testo. Se si è scelto di creare un testo basato su modello di dati modulo, le proprietà del modello di dati modulo vengono visualizzate nel riquadro sinistro.
 
@@ -68,7 +68,7 @@ Il frammento di documento di testo nella comunicazione interattiva supporta il s
    >
    >Puoi aggiungere elementi del modello dati modulo, elementi del dizionario dati e variabili utilizzando il simbolo @ nell’editor di testo. Quando immetti una stringa preceduta da @ nell’editor di testo, vengono cercati tutti gli elementi del modello dati, gli elementi e le variabili del dizionario dati e vengono visualizzati gli elementi o le variabili contenenti la stringa cercata. Puoi spostarti tra i risultati della ricerca e selezionare un elemento o una variabile. Se non viene restituito alcun risultato corrispondente, la *Nessun risultato corrispondente trovato* viene visualizzato il messaggio.
 
-1. Tocca **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Salva]**.
 
    Il testo viene creato. Ora puoi utilizzare il testo come blocco predefinito durante la creazione di una comunicazione interattiva.
 
@@ -78,9 +78,9 @@ Per modificare un frammento di documento di testo esistente, segui la procedura 
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Frammenti di documenti]**.
 1. Passa a un frammento di documento di testo e selezionalo.
-1. Tocca **[!UICONTROL Modifica]**.
+1. Seleziona **[!UICONTROL Modifica]**.
 1. Apporta le modifiche necessarie. Per ulteriori informazioni sulle opzioni di testo, consulta [Crea testo](#createtext).
-1. Tocca **[!UICONTROL Salva]** e quindi tocca **[!UICONTROL Chiudi]**.
+1. Seleziona **[!UICONTROL Salva]** e quindi seleziona **[!UICONTROL Chiudi]**.
 
 ## Personalizzazione di un frammento di documento di testo utilizzando le proprietà del modello di dati del modulo {#formdatamodel}
 
@@ -90,11 +90,11 @@ Se è stato specificato un modello dati modulo durante la creazione di un testo,
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Per inserire nel testo una proprietà del modello dati di un modulo, posiziona il cursore nel punto in cui desideri inserire la proprietà, quindi seleziona la **[A]** nel riquadro a sinistra toccandolo e toccando **[!UICONTROL [B] Aggiungi selezionati]**. Puoi anche toccare due volte la proprietà per inserirla nella **[C]** posizione del cursore. Le proprietà del modello dati modulo vengono evidenziate con un colore di sfondo bruno.
+* Per inserire nel testo una proprietà del modello dati di un modulo, posiziona il cursore nel punto in cui desideri inserire la proprietà, quindi seleziona la **[A]** nel riquadro a sinistra toccandolo e selezionando **[!UICONTROL [B] Aggiungi selezionati]**. Puoi anche selezionare due volte la proprietà per inserirla nella **[C]** posizione del cursore. Le proprietà del modello dati modulo vengono evidenziate con un colore di sfondo bruno.
 
 In alternativa, è possibile cercare e aggiungere la proprietà del modello dati del modulo utilizzando il simbolo @ nell’editor di testo. Posizionare il cursore nel punto in cui si desidera inserire la proprietà. Digita @ seguito dalla stringa di ricerca. L’operazione di ricerca viene eseguita su tutte le proprietà e le variabili del modello dati del modulo disponibili nel frammento di documento. Le proprietà o le variabili contenenti la stringa di ricerca vengono recuperate e visualizzate come elenco a discesa. Spostarsi tra i risultati della ricerca e fare clic sulla proprietà che si desidera inserire nella posizione del cursore. Premere ESC per nascondere i risultati della ricerca.
 
-* Per consentire agli agenti di modificare il valore della proprietà del modello dati di un modulo nell’interfaccia utente dell’agente durante [Prepara e invia comunicazione interattiva](/help/forms/using/prepare-send-interactive-communication.md) utilizzando l’interfaccia utente dell’agente, tocca **[D]** blocca l’icona per quella proprietà e assicurati che sia in stato sbloccato. Lo stato predefinito della proprietà è bloccato e un agente non può modificare la proprietà nell’interfaccia utente agente.
+* Per consentire agli agenti di modificare il valore della proprietà del modello dati di un modulo nell’interfaccia utente dell’agente durante [Prepara e invia comunicazione interattiva](/help/forms/using/prepare-send-interactive-communication.md) utilizzando l’interfaccia utente dell’agente, seleziona **[D]** blocca l’icona per quella proprietà e assicurati che sia in stato sbloccato. Lo stato predefinito della proprietà è bloccato e un agente non può modificare la proprietà nell’interfaccia utente agente.
 
 È inoltre possibile utilizzare le proprietà del modello dati modulo per creare regole per visualizzare o nascondere parti del contenuto. Per ulteriori informazioni, consulta [Creare regole nel testo](#rules).
 
@@ -112,28 +112,28 @@ Durante la creazione o la modifica di un frammento di documento di testo, è pos
 
 ### Creare le variabili {#createvariables}
 
-1. Nel riquadro a sinistra, tocca **[!UICONTROL Variabili]**.
+1. Nel riquadro a sinistra, seleziona **[!UICONTROL Variabili]**.
 
    Viene visualizzato il riquadro Variabili.
 
    ![variablespane](assets/variablespane.png)
 
-1. Tocca **[!UICONTROL Crea]**.
+1. Seleziona **[!UICONTROL Crea]**.
 
    Viene visualizzato il riquadro Crea variabili.
 
-1. Immetti le seguenti informazioni e tocca **[!UICONTROL Crea]**:
+1. Immetti le seguenti informazioni e seleziona **[!UICONTROL Crea]**:
 
    * **[!UICONTROL Nome]** : nome della variabile.
    * **[!UICONTROL Descrizione]** : facoltativamente, inserisci una descrizione della variabile.
    * **[!UICONTROL Tipo]** : seleziona un tipo di variabile: String, Number, Boolean o Date.
    * **[!UICONTROL Consenti solo valori specifici]** : per le variabili String e Number, puoi fare in modo che l’agente scelga uno specifico set di valori per un segnaposto nell’interfaccia utente dell’agente. Per specificare il set di valori, seleziona questa opzione e quindi specifica i valori separati da virgola consentiti nella **[!UICONTROL Valori]** campo.
 
-1. Tocca **[!UICONTROL Crea]**.
+1. Seleziona **[!UICONTROL Crea]**.
 
    La variabile viene creata ed elencata nel riquadro Variabili.
 
-1. Per inserire una variabile nel testo, posiziona il cursore nella posizione appropriata, seleziona la variabile e tocca **[!UICONTROL Aggiungi selezionati]**.
+1. Per inserire una variabile nel testo, posiziona il cursore nella posizione appropriata, seleziona la variabile e seleziona **[!UICONTROL Aggiungi selezionati]**.
 
    ![variableinserted](assets/variableinserted.png)
 
@@ -141,7 +141,7 @@ Durante la creazione o la modifica di un frammento di documento di testo, è pos
 
    In alternativa, è possibile cercare e aggiungere variabili utilizzando il simbolo @ nell’editor di testo. Posizionare il cursore nel punto in cui si desidera inserire la variabile. Digita @ seguito dalla stringa di ricerca. L’operazione di ricerca viene eseguita su tutte le proprietà e le variabili del modello dati del modulo disponibili nel frammento di documento. Le proprietà e le variabili contenenti la stringa di ricerca vengono recuperate e visualizzate come elenco a discesa. Spostarsi tra i risultati della ricerca e fare clic sulla variabile che si desidera inserire nella posizione del cursore. Premere ESC per nascondere i risultati della ricerca.
 
-1. Tocca **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Salva]**.
 
 ## Creare regole nel testo {#rules}
 
@@ -160,7 +160,7 @@ Utilizzando l’editor di regole in un testo, puoi creare regole per visualizzar
 
    ![selectcontentapplyrule](assets/selectcontentapplyrule.png)
 
-1. Tocca **[!UICONTROL Crea regola]**.
+1. Seleziona **[!UICONTROL Crea regola]**.
 
    Viene visualizzata la finestra di dialogo Crea regola. Oltre a stringa, numero, espressione matematica e data, nell’Editor regole sono disponibili anche le seguenti opzioni per la creazione di istruzioni delle regole:
 
@@ -185,11 +185,11 @@ Utilizzando l’editor di regole in un testo, puoi creare regole per visualizzar
 
    Regola per visualizzare il testo selezionato se la posizione del destinatario è US in base ai dati di origine di FDM
 
-   * Durante la creazione o la modifica di una regola, puoi anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo espansa a finestra intera consente di trascinare e rilasciare le proprietà e le variabili del modello di dati del modulo per creare regole. Tocca di nuovo Ridimensiona per tornare alla finestra di dialogo Crea regola.
+   * Durante la creazione o la modifica di una regola, puoi anche selezionare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo espansa a finestra intera consente di trascinare e rilasciare le proprietà e le variabili del modello di dati del modulo per creare regole. Seleziona Ridimensiona di nuovo per tornare alla finestra di dialogo Crea regola.
    * Puoi anche creare più condizioni in una regola.
    * Puoi anche creare regole di sovrapposizione, in cui una regola viene applicata a una parte di un contenuto a cui è già stata applicata una regola.
 
-1. Tocca **[!UICONTROL Fine]**.
+1. Seleziona **[!UICONTROL Fine]**.
 
    La regola viene applicata. Il testo o il contenuto a cui viene applicata la regola viene evidenziato in verde. Quando passi il cursore del mouse sulla maniglia sinistra dell’evidenziazione, viene visualizzata la regola applicata.
 
@@ -219,13 +219,13 @@ Barra degli strumenti Elenco
 
 ### Evidenzia/evidenzia parti di testo {#highlight}
 
-Per evidenziare/enfatizzare parti di testo in un frammento di documento modificabile, seleziona il testo e tocca Colore evidenziazione.
+Per evidenziare/enfatizzare parti di testo in un frammento di documento modificabile, selezionate il testo e selezionate Colore evidenziazione.
 
 ![textbackgroundcolorapply-1](assets/textbackgroundcolorapplied-1.png)
 
-È possibile toccare direttamente un colore di base `**[A]**` presente nella palette Colori di base o toccare **Seleziona** dopo aver utilizzato il dispositivo di scorrimento `**[B]**` per scegliere la tonalità appropriata del colore.
+È possibile selezionare direttamente un colore di base `**[A]**` presente nella palette Colori di base o selezionare **Seleziona** dopo aver utilizzato il dispositivo di scorrimento `**[B]**` per scegliere la tonalità appropriata del colore.
 
-Se necessario, è anche possibile passare alla scheda Avanzate per selezionare la tonalità, la luminosità e la saturazione appropriate `**[C]**` per creare il colore preciso, quindi tocca Seleziona `**[D]**` per applicare il colore per evidenziare il testo.
+Se necessario, è anche possibile passare alla scheda Avanzate per selezionare la tonalità, la luminosità e la saturazione appropriate `**[C]**` per creare il colore preciso e selezionare Seleziona `**[D]**` per applicare il colore per evidenziare il testo.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -264,15 +264,15 @@ Quando si utilizzano frammenti di documenti di testo contenenti una grande quant
 La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi stringa di testo in un frammento di documento di testo. La funzione include anche una potente ricerca di espressioni regolari.
 
 1. Apri un frammento di documento di testo per [modifica](#edittext).
-1. Tocca **[!UICONTROL Trova e sostituisci]**.
+1. Seleziona **[!UICONTROL Trova e sostituisci]**.
 
-1. Immettere il testo da cercare in **[!UICONTROL Trova]** e il nuovo testo (testo sostitutivo) nella **[!UICONTROL Sostituisci]** casella di testo e tocca **[!UICONTROL Sostituisci]**.
+1. Immettere il testo da cercare in **[!UICONTROL Trova]** e il nuovo testo (testo sostitutivo) nella **[!UICONTROL Sostituisci]** e selezionare **[!UICONTROL Sostituisci]**.
 
 1. Se viene trovato il testo cercato, il testo viene sostituito dal testo sostitutivo.
 
-   * Se viene trovata un’altra istanza del testo di ricerca, tale istanza viene evidenziata nel frammento del documento di testo. Se tocchi **[!UICONTROL Sostituisci]** di nuovo, l&#39;istanza evidenziata viene sostituita e il cursore si sposta in avanti, se viene trovata una terza istanza.
+   * Se viene trovata un’altra istanza del testo di ricerca, tale istanza viene evidenziata nel frammento del documento di testo. Se si seleziona **[!UICONTROL Sostituisci]** di nuovo, l&#39;istanza evidenziata viene sostituita e il cursore si sposta in avanti, se viene trovata una terza istanza.
    * Se non viene trovata un’altra istanza, nella finestra di dialogo Trova e sostituisci viene visualizzato il messaggio Fine del modulo.
 
-   Tocca anche Sostituisci tutto per sostituire tutte le corrispondenze in un’unica operazione.
+   Puoi anche selezionare Sostituisci tutto per sostituire tutte le corrispondenze in una sola volta.
 
-   La funzione Trova e sostituisci include anche una ricerca avanzata delle espressioni regolari. Per usare regex nella ricerca, seleziona **[!UICONTROL Reg eseg]** e quindi tocca **[!UICONTROL Trova]** o **[!UICONTROL Sostituisci]**.
+   La funzione Trova e sostituisci include anche una ricerca avanzata delle espressioni regolari. Per usare regex nella ricerca, seleziona **[!UICONTROL Reg eseg]** e quindi seleziona **[!UICONTROL Trova]** o **[!UICONTROL Sostituisci]**.

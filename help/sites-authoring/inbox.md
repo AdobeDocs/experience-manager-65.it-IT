@@ -2,10 +2,10 @@
 title: Casella in entrata per gestire le attività
 description: Gestione delle attività con la casella in entrata in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 41%
+source-wordcount: '1155'
+ht-degree: 39%
 
 ---
 
@@ -65,7 +65,7 @@ L’AEM preconfigurato è precaricato con quattro attività assegnate al gruppo 
 
 Per aprire la casella in entrata delle notifiche AEM:
 
-1. Tocca o fai clic sull’indicatore nella barra degli strumenti.
+1. Fai clic sull’indicatore nella barra degli strumenti.
 
 1. Seleziona **Visualizza tutto**. Il **Casella in entrata AEM** viene aperto. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
@@ -138,13 +138,13 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
 
 * **Personalizzazione colonna**: personalizza una casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
    * **Aggiungi colonna**: seleziona una colonna da aggiungere nella casella in entrata AEM.
-   * **Modifica colonna**: passa il mouse sul titolo della colonna e tocca ![modifica](assets/edit.svg) per immettere il nome visualizzato di una colonna.
-   * **Elimina colonna**: tocca il ![eliminare](assets/delete_updated.svg) per eliminare la colonna dalla casella in entrata AEM.
+   * **Modifica colonna**: passa il mouse sul titolo della colonna e seleziona ![modifica](assets/edit.svg) per immettere il nome visualizzato di una colonna.
+   * **Elimina colonna**: seleziona la ![eliminare](assets/delete_updated.svg) per eliminare la colonna dalla casella in entrata AEM.
    * **Sposta colonna**: trascina ![sposta](assets/move_updated.svg) per spostare una colonna in una nuova posizione nella casella in entrata AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
-* **Personalizzazione branding**
+* **Personalizzazione del branding**
 
    * **Personalizza testo intestazione:** Specifica il testo da visualizzare nell’intestazione per sostituire il testo predefinito **Adobe Experience Manager** testo.
 
@@ -152,7 +152,7 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
 
 * **Navigazione utente**
    * **Nascondi opzioni di navigazione:** Seleziona questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili toccando il logo o il testo di Adobe Experience Manager.
-* **Salva:** Tocca o fai clic su questa opzione per salvare le impostazioni.
+* **Salva:** Fare clic su questa opzione per salvare le impostazioni.
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
 
@@ -167,7 +167,7 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
 
    Le azioni dipendono dall’elemento selezionato e includono:
 
-   * **Completa** l’azione, ad esempio un&#39;attività o un elemento del flusso di lavoro.
+   * **Completa** ad esempio un&#39;attività o un elemento del flusso di lavoro.
    * **Riassegna**/**Delega** un elemento.
    * **Apri** un elemento; a seconda del tipo di elemento, questa azione può:
 
@@ -175,9 +175,9 @@ L&#39;opzione Admin Control è visibile solo ai membri del gruppo `administrator
       * apri un dashboard o una procedura guidata appropriati per ulteriori azioni
       * apri documentazione correlata
 
-   * **Indietro** per tornare a un passaggio precedente.
-   * Visualizzazione del payload di un flusso di lavoro.
-   * Creazione di un progetto dall’elemento.
+   * **Indietro** a un passaggio precedente.
+   * Visualizzare il payload di un flusso di lavoro.
+   * Crea un progetto dall’elemento.
 
    >[!NOTE]
    >

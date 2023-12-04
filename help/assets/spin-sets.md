@@ -11,10 +11,10 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 9%
+source-wordcount: '2004'
+ht-degree: 8%
 
 ---
 
@@ -149,9 +149,9 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/limitations.md).
 
    * Nell’angolo in alto a sinistra della pagina Editor set 360 gradi, seleziona **[!UICONTROL Aggiungi risorsa]**.
 
-   * Nella parte centrale della pagina Editor set 360 gradi, seleziona **[!UICONTROL Toccate per aprire il selettore risorse]**.
+   * Nella parte centrale della pagina Editor set 360 gradi, seleziona **[!UICONTROL Seleziona per aprire il selettore risorse]**.
 
-   Tocca per selezionare le risorse da includere nel set 360 gradi. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Seleziona]**.
+   Seleziona per selezionare le risorse da includere nel set 360 gradi. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Seleziona]**.
 
    Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e quindi fai clic su **[!UICONTROL Filtro]** sulla barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco]**.
 

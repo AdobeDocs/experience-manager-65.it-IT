@@ -7,10 +7,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 2%
+source-wordcount: '781'
+ht-degree: 1%
 
 ---
 
@@ -33,14 +33,14 @@ Continua a leggere per informazioni dettagliate sull’invio asincrono nei modul
 
 Per configurare l’invio asincrono per un modulo adattivo:
 
-1. In modalità di authoring di moduli adattivi, seleziona l’oggetto Contenitore modulo e tocca ![cmppr1](assets/cmppr1.png) per aprirne le proprietà.
+1. In modalità di authoring di moduli adattivi, seleziona l’oggetto Contenitore modulo e fai clic su ![cmppr1](assets/cmppr1.png) per aprirne le proprietà.
 1. In **[!UICONTROL Invio]** proprietà, abilita **[!UICONTROL Utilizzare l’invio asincrono]**.
 1. In **[!UICONTROL All’invio]** , selezionare una delle opzioni seguenti da eseguire in caso di invio corretto del modulo.
 
    * **[!UICONTROL Reindirizza a URL]**: reindirizza all’URL o alla pagina specificata al momento dell’invio del modulo. Puoi specificare un URL o sfogliare per scegliere il percorso di una pagina in **[!UICONTROL URL/percorso di reindirizzamento]** campo.
    * **[!UICONTROL Mostra messaggio]**: visualizza un messaggio all’invio del modulo. Puoi scrivere un messaggio nel campo di testo sotto l’opzione Mostra messaggio. Il campo di testo supporta la formattazione RTF.
 
-1. Tocca ![check-button1](assets/check-button1.png) per salvare le proprietà.
+1. Seleziona ![check-button1](assets/check-button1.png) per salvare le proprietà.
 
 ## Funzionamento dell’invio asincrono {#how-asynchronous-submission-works}
 
@@ -102,9 +102,9 @@ Gli sviluppatori e gli autori di moduli possono scrivere regole, a livello di mo
 
 Per scrivere regole nell’editor di codice per gestire gli eventi di successo e di errore, effettua le seguenti operazioni.
 
-1. Apri il modulo adattivo in modalità di authoring, seleziona un oggetto modulo qualsiasi e tocca ![edit-rules1](assets/edit-rules1.png) per aprire l’editor di regole.
-1. Seleziona **[!UICONTROL Modulo]** nella struttura Oggetti modulo e tocca **[!UICONTROL Crea]**.
+1. Apri il modulo adattivo in modalità di authoring, seleziona un oggetto modulo e fai clic su ![edit-rules1](assets/edit-rules1.png) per aprire l’editor di regole.
+1. Seleziona **[!UICONTROL Modulo]** nella struttura Oggetti modulo e selezionare **[!UICONTROL Crea]**.
 1. Seleziona **[!UICONTROL Editor di codice]** dal menu a discesa di selezione della modalità.
-1. Nell’editor di codice, tocca **[!UICONTROL Modifica codice]**. Tocca **[!UICONTROL Modifica]** nella finestra di conferma.
+1. Nell’editor di codice, seleziona **[!UICONTROL Modifica codice]**. Seleziona **[!UICONTROL Modifica]** nella finestra di conferma.
 1. Scegli **[!UICONTROL Invio corretto]** o **[!UICONTROL Errore nell’invio]** dal **[!UICONTROL Evento]** a discesa.
-1. Scrivi una regola per l’evento selezionato e tocca **[!UICONTROL Fine]** per salvare la regola.
+1. Scrivi una regola per l’evento selezionato e seleziona **[!UICONTROL Fine]** per salvare la regola.

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -26,9 +26,9 @@ Per sincronizzare il modulo nell’app AEM Forms:
 
 1. Nell’istanza di authoring, seleziona un modulo e fai clic su **Visualizza proprietà**.
 1. Nella pagina delle proprietà, fai clic su **Avanzato.**
-1. In Avanzate, abilita opzione: **Sincronizza con l’app AEM Forms**, e tocca **Salva**.
+1. In Avanzate, abilita opzione: **Sincronizza con l’app AEM Forms**, e seleziona **Salva**.
 
-Per sincronizzare più moduli, nell’istanza di authoring seleziona più moduli in Forms Manager e tocca **Sincronizza con l’app AEM Forms**. Quando il modulo viene pubblicato, l’app AEM Forms può connettersi al server di pubblicazione e recuperare i moduli.
+Per sincronizzare più moduli, nell’istanza di authoring seleziona più moduli in Forms Manager e seleziona **Sincronizza con l’app AEM Forms**. Quando il modulo viene pubblicato, l’app AEM Forms può connettersi al server di pubblicazione e recuperare i moduli.
 
 Se la sincronizzazione dell’app Android AFA (AEM Form Application) non riesce, effettua le seguenti operazioni per risolvere il problema di sincronizzazione:
 
@@ -51,5 +51,5 @@ Se la sincronizzazione dell’app Android AFA (AEM Form Application) non riesce,
 
 **Per aprire e aggiornare un modulo**
 
-1. Per aprire un modulo, tocca il **[!UICONTROL Modulo]** nella schermata iniziale.
+1. Per aprire una maschera, selezionare **[!UICONTROL Modulo]** nella schermata iniziale.
 1. È possibile aggiornare i campi del modulo, aggiungere allegati, salvare come bozza e inviarlo.

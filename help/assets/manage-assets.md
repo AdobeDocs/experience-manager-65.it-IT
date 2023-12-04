@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '10067'
+source-wordcount: '10038'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,7 @@ Per configurare l’attività di pulizia per i processi di caricamento blocchi n
 
 >[!CAUTION]
 >
->Il caricamento dei blocchi viene attivato quando il valore predefinito è 500 MB e la dimensione dei blocchi è 50 MB. Se si modifica [Configurazione token Apache Jackrabbit Oak](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=it) e imposta `timeout configuration` se il caricamento di una risorsa richiede meno tempo, si verifica una situazione di timeout della sessione mentre è in corso il caricamento della risorsa. Pertanto, modifica il `chunkUploadMinFileSize` e `chunksize` in modo che ogni richiesta di blocco aggiorni la sessione.
+>Il caricamento dei blocchi viene attivato quando il valore predefinito è 500 MB e la dimensione dei blocchi è 50 MB. Se si modifica [Configurazione token Apache Jackrabbit Oak](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) e imposta `timeout configuration` se il caricamento di una risorsa richiede meno tempo, si verifica una situazione di timeout della sessione mentre è in corso il caricamento della risorsa. Pertanto, modifica il `chunkUploadMinFileSize` e `chunksize` in modo che ogni richiesta di blocco aggiorni la sessione.
 >
 >Dato il timeout di scadenza delle credenziali, la latenza, la larghezza di banda e i caricamenti simultanei previsti, il valore più alto che consente di garantire che venga scelto quanto segue:
 >
@@ -655,7 +655,7 @@ Per ricerche semplici, avanzate e personalizzate per individuare e utilizzare le
 
 Le icone di azione rapida sono disponibili per una singola risorsa alla volta. A seconda del dispositivo in uso, eseguire le azioni seguenti per visualizzare le icone delle azioni rapide:
 
-* Dispositivi touch: toccare e tenere premuto. Ad esempio, su un’iPad, puoi toccare e tenere premuto un tasto di una risorsa in modo che vengano visualizzate le azioni rapide.
+* Dispositivi touch: toccare e tenere premuto. In un’iPad, ad esempio, puoi selezionare e mantenere una risorsa in modo che vengano visualizzate le azioni rapide.
 * Dispositivi non touch: puntatore del mouse. Ad esempio, su un dispositivo desktop, se passi il puntatore del mouse sulla miniatura della risorsa, viene visualizzata la barra di azione rapida.
 
 ### Navigare e selezionare le risorse {#navigating-and-selecting-assets}

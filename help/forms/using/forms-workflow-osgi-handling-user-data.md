@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 0%
+source-wordcount: '986'
+ht-degree: 1%
 
 ---
 
@@ -139,7 +139,7 @@ Per eliminare i dati utente dalle istanze del flusso di lavoro, è necessario es
 
    1. Vai a `https://'[server]:[port]'/aem/start.html` e accedi con le credenziali di amministratore.
    1. Accedi a **[!UICONTROL Strumenti > Flusso di lavoro > Istanze]**.
-   1. Seleziona le istanze di flusso di lavoro rilevanti per l’utente e tocca **[!UICONTROL Termina]** per terminare le istanze in esecuzione.
+   1. Seleziona le istanze di flusso di lavoro pertinenti per l’utente e seleziona **[!UICONTROL Termina]** per terminare le istanze in esecuzione.
 
       Per ulteriori informazioni sull’utilizzo delle istanze del flusso di lavoro, consulta [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md).
 

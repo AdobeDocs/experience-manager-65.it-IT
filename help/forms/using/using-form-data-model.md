@@ -10,9 +10,9 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1268'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Puoi creare [moduli adattivi](../../forms/using/creating-adaptive-form.md) e [fr
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Tocca per espandere **[!UICONTROL Seleziona modello dati modulo]**. Sono elencati tutti i modelli di dati dei moduli disponibili.
+1. Seleziona per espandere **[!UICONTROL Seleziona modello dati modulo]**. Sono elencati tutti i modelli di dati dei moduli disponibili.
 
    Seleziona un dal modello dati.
 
@@ -93,19 +93,19 @@ Per ulteriori informazioni, consulta:
 
 ## Anteprima con dati di esempio {#preview-ic}
 
-L’editor del modello dati modulo consente di generare e modificare dati di esempio per gli oggetti del modello dati nel modello dati modulo. Puoi utilizzare questi dati per visualizzare in anteprima e testare le comunicazioni interattive e i moduli adattivi. Prima di visualizzare l&#39;anteprima dovete generare i dati di esempio come descritto in [Utilizzare il modello dati del modulo](../../forms/using/work-with-form-data-model.md#sample).
+L’editor del modello dati modulo consente di generare e modificare dati di esempio per gli oggetti del modello dati nel modello dati modulo. Puoi utilizzare questi dati per visualizzare in anteprima e testare le comunicazioni interattive e i moduli adattivi. Genera i dati di esempio prima di visualizzarli in anteprima come descritto in [Utilizzare il modello dati del modulo](../../forms/using/work-with-form-data-model.md#sample).
 
 Per visualizzare in anteprima una comunicazione interattiva con dati modello dati modulo di esempio:
 
 1. Nell’istanza di authoring dell’AEM, passa a **[!UICONTROL Forms > Forms e documenti]**.
-1. Seleziona una comunicazione interattiva e tocca **[!UICONTROL Anteprima]** nella barra degli strumenti per selezionare **[!UICONTROL Canale web]**, **[!UICONTROL Stampa canale]**, o **[!UICONTROL Entrambi i canali]** per visualizzare in anteprima la comunicazione interattiva.
-1. Nell’anteprima [*channel*] , assicurati che **[!UICONTROL Dati di prova del modello dati modulo]** è selezionato e tocca **[!UICONTROL Anteprima]**.
+1. Seleziona una comunicazione interattiva e seleziona **[!UICONTROL Anteprima]** nella barra degli strumenti per selezionare **[!UICONTROL Canale web]**, **[!UICONTROL Stampa canale]**, o **[!UICONTROL Entrambi i canali]** per visualizzare in anteprima la comunicazione interattiva.
+1. Nell’anteprima [*channel*] , assicurati che **[!UICONTROL Dati di prova del modello dati modulo]** è selezionato e seleziona **[!UICONTROL Anteprima]**.
 
 La comunicazione interattiva si apre con dati di esempio precompilati.
 
 ![anteprima web](assets/web-preview.png)
 
-Allo stesso modo, per visualizzare in anteprima un modulo adattivo con dati di esempio, apri il modulo adattivo in modalità di creazione e tocca **[!UICONTROL Anteprima]**.
+Allo stesso modo, per visualizzare in anteprima un modulo adattivo con dati di esempio, apri il modulo adattivo in modalità di creazione e seleziona **[!UICONTROL Anteprima]**.
 
 ## Precompilare utilizzando il servizio del modello di dati del modulo {#prefill}
 
@@ -135,10 +135,10 @@ All’invio del modulo, i dati per l’oggetto modello dati configurato vengono 
 
 1. Aggiungi al modello dati del modulo un oggetto modello dati che include una proprietà binaria.
 1. Nel modulo adattivo, trascina **[!UICONTROL File allegato]** dal browser Componenti al modulo adattivo.
-1. Tocca per selezionare il componente aggiunto e tocca ![icona_impostazioni](assets/settings_icon.png) per aprire il browser Proprietà del componente.
-1. Nel campo Associa riferimento, tocca ![foldersearch_18](assets/foldersearch_18.png) e passa alla selezione della proprietà binaria aggiunta nel modello dati del modulo. Configura altre proprietà, a seconda delle necessità.
+1. Seleziona per selezionare il componente aggiunto e selezionare ![icona_impostazioni](assets/settings_icon.png) per aprire il browser Proprietà del componente.
+1. Nel campo Associa riferimento, seleziona ![foldersearch_18](assets/foldersearch_18.png) e passa alla selezione della proprietà binaria aggiunta nel modello dati del modulo. Configura altre proprietà, a seconda delle necessità.
 
-   Tocca ![pulsante di controllo](assets/check-button.png) per salvare le proprietà. Il campo allegato è ora associato alla proprietà binaria del modello dati del modulo.
+   Seleziona ![pulsante di controllo](assets/check-button.png) per salvare le proprietà. Il campo allegato è ora associato alla proprietà binaria del modello dati del modulo.
 
 1. Nella sezione Invio delle proprietà Contenitore modulo adattivo, abilita **[!UICONTROL Invia allegati modulo]**. Invia l’allegato nel campo della proprietà binaria all’origine dati al momento dell’invio del modulo.
 

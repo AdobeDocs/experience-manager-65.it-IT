@@ -11,9 +11,9 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '1666'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
 I componenti del portale Forms forniscono ai Web Developers i componenti necessari per creare e personalizzare un portale dei moduli nei siti Web creati con Adobe Experience Manager (AEM). Per una rapida panoramica del portale Forms, vedi [Introduzione alla pubblicazione di moduli su un portale](../../forms/using/introduction-publishing-forms.md).
@@ -58,18 +58,18 @@ Componente Ricerca ed elenco in una pagina con layout griglia
 
 Il riquadro Elenco è un&#39;area in cui sono elencati i moduli. Il componente Ricerca ed elenco fornisce varie opzioni di configurazione che è possibile utilizzare per controllare la visualizzazione dei moduli nel riquadro Elenco.
 
-Per configurare il riquadro Elenco, tocca il componente Ricerca ed Elenco e quindi tocca ![icona_impostazioni](assets/settings_icon.png). Il **[!UICONTROL Modifica componente]** viene visualizzata una finestra di dialogo.
+Per configurare il riquadro Elenco, selezionare il componente Cerca ed Elenco, quindi selezionare ![icona_impostazioni](assets/settings_icon.png). Il **[!UICONTROL Modifica componente]** viene visualizzata una finestra di dialogo.
 
 ![Riquadro elenco in modalità di modifica](assets/edit-list.png)
 
 Riquadro elenco in modalità di modifica
 
-Il **Modifica** La finestra di dialogo include diverse schede che forniscono le opzioni di configurazione descritte nella tabella seguente. Tocca **OK** al termine, per salvare la configurazione.
+Il **Modifica** La finestra di dialogo include diverse schede che forniscono le opzioni di configurazione descritte nella tabella seguente. Seleziona **OK** al termine, per salvare la configurazione.
 
 <table>
  <tbody>
   <tr>
-   <th>Tabulazione</th>
+   <th>Linguetta</th>
    <th>Configurazione</th>
    <th>Descrizione</th>
   </tr>
@@ -177,7 +177,7 @@ Il componente Predicato data, se aggiunto, consente la ricerca nei moduli elenca
 
 Per configurare il componente Predicato data:
 
-1. Tocca il componente, quindi tocca ![icona_impostazioni](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
+1. Seleziona il componente, quindi fai clic su ![icona_impostazioni](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
 1. Specifica quanto segue:
 
    * **Tipo:** L’unica opzione disponibile è **Data ultima modifica**
@@ -188,7 +188,7 @@ Per configurare il componente Predicato data:
    * **Etichetta data di fine:** Etichetta o didascalia per il campo data di fine
    * **Nascondi:** Per applicare un filtro date predefinito per elencare i moduli
 
-1. Tocca **OK**
+1. Seleziona **OK**
 
 #### Predicato full-text {#full-text-predicate}
 
@@ -196,9 +196,9 @@ Il componente Predicato full-text implementa la ricerca full-text nei dati del m
 
 Per configurare il componente Predicato full-text:
 
-1. Tocca il componente, quindi tocca ![icona_impostazioni](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
+1. Seleziona il componente, quindi fai clic su ![icona_impostazioni](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
 1. Specifica il titolo nella **Titolo principale** campo.
-1. Tocca **Ok**
+1. Seleziona **Ok**
 
 #### Predicato proprietà {#properties-predicate}
 
@@ -206,15 +206,15 @@ Il componente Predicato proprietà implementa la ricerca di moduli in base alle 
 
 Per configurare il componente Predicato proprietà:
 
-1. Tocca il componente, quindi tocca ![icona_impostazioni](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
+1. Seleziona il componente, quindi fai clic su ![icona_impostazioni](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
 1. Nella scheda Generale, specifica l’etichetta di ricerca. Il valore predefinito è **Proprietà**
 
-1. Nella scheda Opzioni, tocca **Aggiungi elemento.**
+1. Nella scheda Opzioni, seleziona **Aggiungi elemento.**
 1. Seleziona una proprietà dall’elenco a discesa e specifica un’etichetta di ricerca nel campo sotto l’elenco a discesa.
 1. Ripeti il passaggio 4 per aggiungere altre proprietà. È inoltre possibile specificare un valore di filtro predefinito per elencare i moduli in base ai criteri specificati e nascondere la proprietà per la ricerca da parte degli utenti finali. Seleziona la casella di controllo Nascondi per una proprietà e specifica il valore di filtro predefinito.
 Ad esempio, se si desidera visualizzare i moduli che contengono &quot;Viaggio&quot; nei titoli, selezionare Nascondi accanto alla proprietà Titolo. Specificare inoltre la casella di testo Viaggio nel valore di filtro predefinito.
 
-1. Tocca **OK**
+1. Seleziona **OK**
 
 #### Predicato tag {#tags-predicate}
 
@@ -222,10 +222,10 @@ Il componente Predicato tag implementa la ricerca di moduli basati sui tag defin
 
 Per configurare il componente Predicato tag:
 
-1. Tocca il componente, quindi tocca ![icona_impostazioni](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
-1. Tocca il pulsante freccia giù accanto al campo Tag.
+1. Seleziona il componente, quindi fai clic su ![icona_impostazioni](assets/settings_icon.png). Viene visualizzata la finestra di dialogo Modifica.
+1. Seleziona il pulsante freccia giù accanto al campo Tag.
 1. Seleziona i tag appropriati
-1. Tocca **OK**
+1. Seleziona **OK**
 
 I tag selezionati vengono visualizzati nel riquadro di ricerca insieme alle caselle di controllo per la selezione. Gli utenti possono ora restringere la ricerca in base ai tag.
 

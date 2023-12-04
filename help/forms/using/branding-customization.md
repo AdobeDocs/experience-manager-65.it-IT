@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
+source-wordcount: '890'
+ht-degree: 1%
 
 ---
 
@@ -181,7 +181,7 @@ Verifica di disporre delle seguenti immagini:
 
 ## Personalizzazione del logo nel menu dell’app {#customizing_images_on_the_login_page-1}
 
-Dopo aver effettuato l’accesso all’app AEM Forms e aver toccato il pulsante del menu, puoi visualizzare il logo sopra il menu. Per personalizzare il logo predefinito, effettua le seguenti operazioni:
+Dopo aver effettuato l’accesso all’app AEM Forms e aver selezionato il pulsante del menu, puoi visualizzare il logo sopra il menu. Per personalizzare il logo predefinito, effettua le seguenti operazioni:
 
 **Prima di iniziare**
 

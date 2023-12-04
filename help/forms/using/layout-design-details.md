@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Dopo aver analizzato il layout necessario per la creazione della comunicazione i
 
 Per utilizzare un sottomodulo in un modello XDP, effettua le seguenti operazioni:
 
-1. Apri Forms Designer, seleziona **File** > **Nuovo** > **Utilizza un modulo vuoto**, tocca **Successivo**, quindi tocca **Fine** per aprire il modulo per la creazione di modelli.
+1. Apri Forms Designer, seleziona **File** > **Nuovo** > **Utilizza un modulo vuoto**, seleziona **Successivo** e quindi selezionare **Fine** per aprire il modulo per la creazione di modelli.
 
    Assicurati che **Libreria di oggetti** e **Oggetto** sono selezionate dall&#39;opzione **Finestra** menu.
 
@@ -90,7 +90,7 @@ Per utilizzare un sottomodulo in un modello XDP, effettua le seguenti operazioni
    1. Passa alla posizione in cui salvare il file e specifica un nome per il modello XDP.
    1. Seleziona **.xdp** dal **Salva come tipo** elenco a discesa.
 
-   1. Tocca **Salva**.
+   1. Seleziona **Salva**.
 
 ### Utilizzare il componente Campo immagine in un modello XDP {#use-image-field-component-in-an-xdp-template}
 
@@ -124,9 +124,9 @@ Per utilizzare il componente Table nel modello XDP, eseguire la procedura seguen
 
    1. Specifica il numero di righe e colonne per la tabella.
    1. Seleziona la **Includi riga intestazione nella tabella** per includere una riga per l&#39;intestazione della tabella.
-   1. Tocca **OK**.
+   1. Seleziona **OK**.
 
-1. Tocca **+** nel riquadro sinistro accanto al nome della tabella fare clic con il pulsante destro del mouse sui nomi di cella inclusi nell&#39;intestazione e in altre righe e selezionare **Rinomina oggetto** per rinominare le celle della tabella.
+1. Seleziona **+** nel riquadro sinistro accanto al nome della tabella fare clic con il pulsante destro del mouse sui nomi di cella inclusi nell&#39;intestazione e in altre righe e selezionare **Rinomina oggetto** per rinominare le celle della tabella.
 1. Fare clic sui campi di testo dell&#39;intestazione della tabella nel **Visualizzazione Progettazione** e rinominale.
 1. Trascina la selezione **Campo di testo** componente da **Libreria di oggetti** in ogni cella della tabella **Visualizzazione Progettazione**. Esegui questo passaggio per poter associare le celle di una tabella agli oggetti modello dati del modulo durante la creazione della comunicazione interattiva.
 
@@ -141,15 +141,15 @@ Per utilizzare il componente Table nel modello XDP, eseguire la procedura seguen
    1. Passa alla posizione in cui salvare il file e specifica il nome per il modello XDP.
    1. Seleziona **.xdp** dal **Salva come tipo** elenco a discesa.
 
-   1. Tocca **Salva**.
+   1. Seleziona **Salva**.
 
 ### Carica modello XDP sul server AEM Forms {#uploadxdptemplate}
 
 Dopo aver creato un modello XDP utilizzando Forms Designer, è necessario caricarlo sul server AEM Forms in modo che sia disponibile per l’uso durante la creazione della comunicazione interattiva.
 
 1. Seleziona **Forms** > **Forms e documenti**.
-1. Tocca **Crea** > **Caricamento file**.
-1. Passa alla posizione del modello XDP nel file system locale e tocca **Apri** per importare il modello XDP nel server AEM Forms.
+1. Seleziona **Crea** > **Caricamento file**.
+1. Passa alla posizione del modello XDP nel file system locale e seleziona **Apri** per importare il modello XDP nel server AEM Forms.
 
 ## Utilizzo dello schema {#using-schema}
 

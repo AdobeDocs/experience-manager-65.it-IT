@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1070'
 ht-degree: 3%
 
 ---
@@ -52,8 +52,8 @@ Forms include alcuni campi e sezioni che non sono applicabili a tutti gli utenti
 Per abilitare il caricamento lento in un frammento di modulo adattivo, effettua le seguenti operazioni:
 
 1. Apri il modulo adattivo in modalità di authoring contenente il frammento che desideri abilitare per il caricamento lento.
-1. Seleziona il frammento del modulo adattivo e tocca ![cmppr](assets/cmppr.png).
-1. Nella barra laterale, abilita **[!UICONTROL Carica frammento in modo differito]** e tocca **Fine**.
+1. Seleziona il frammento del modulo adattivo e fai clic su ![cmppr](assets/cmppr.png).
+1. Nella barra laterale, abilita **[!UICONTROL Carica frammento in modo differito]** e seleziona **Fine**.
 
    ![Abilita il caricamento lento per il frammento di modulo adattivo](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Per abilitare il caricamento lento in un frammento di modulo adattivo, effettua 
 Puoi contrassegnare i valori degli oggetti nel frammento caricato in modo differito come globali, in modo che siano disponibili per l’utilizzo negli script quando il frammento che li contiene non viene caricato. Effettua le seguenti operazioni:
 
 1. Apri il frammento di modulo adattivo in modalità di authoring.
-1. Tocca il campo di cui desideri contrassegnare il valore come globale, quindi tocca ![cmppr](assets/cmppr.png).
+1. Selezionare il campo di cui si desidera contrassegnare il valore come globale, quindi selezionare ![cmppr](assets/cmppr.png).
 1. Nella barra laterale, abilita **Usa valore durante il caricamento lento**.
 
    ![Campo di caricamento lazy nella barra laterale](assets/enable-lazy-loading.png)

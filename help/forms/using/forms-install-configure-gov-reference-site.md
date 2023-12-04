@@ -4,10 +4,10 @@ description: Installa, configura e personalizza un pacchetto demo di AEM Forms.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4603'
-ht-degree: 3%
+source-wordcount: '4501'
+ht-degree: 1%
 
 ---
 
@@ -21,17 +21,17 @@ Questo pacchetto è stato creato per **AEM Forms 6.4 OSGI Author**, è stato tes
 
 | VERSIONE AEM | VERSIONE PACCHETTO AEM FORMS | STATO |
 |---|---|---|
-| 6.4 | 5.0.86 | **Funzione supportata** |
-| 6.5 | 6.0.80 | **Funzione supportata** |
-| 6.5.3 | 6.0.122 | **Funzione supportata** |
+| 6.4 | 5.0.86 | **Supportato** |
+| 6,5 | 6.0.80 | **Supportato** |
+| 6.5.3. | 6.0.122. | **Supportato** |
 
 Questo pacchetto contiene una configurazione cloud che supporta le seguenti versioni della piattaforma:
 
 | PROVIDER CLOUD | VERSIONE SERVIZIO | STATO |
 |---|---|---|
-| Adobe Sign | API v5 | **Funzione supportata** |
-| Microsoft® Dynamics 365 | 1710 (9.1.0.3020) | **Funzione supportata** |
-| Adobe Analytics | API Rest v1.4 | **Funzione supportata** |
+| Adobe Sign | API v5 | **Supportato** |
+| Microsoft® Dynamics 365 | 1710 (9,1.0.3020) | **Supportato** |
+| Adobe Analytics | API Rest v1.4 | **Supportato** |
 **Considerazioni sull’installazione del pacchetto:**
 
 * Installa il pacchetto su un server pulito, senza altri pacchetti demo o versioni di pacchetti demo precedenti.
@@ -79,12 +79,12 @@ Questa sezione contiene informazioni sull’installazione del pacchetto demo.
 ### Da Software Distribution {#from-software-distribution}
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. In **[!UICONTROL Filtri]** sezione:
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
    2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
-1. Tocca il **we-gov-forms.pkg.all-&lt;version>.zip** nome del pacchetto, seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
+1. Seleziona la **we-gov-forms.pkg.all-&lt;version>.zip** nome del pacchetto, seleziona **[!UICONTROL Accetta termini EULA]**, e seleziona **[!UICONTROL Scarica]**.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
    ![pacchetto moduli gov](assets/wegov_forms_package.jpg)
@@ -330,7 +330,7 @@ Una volta completata la configurazione cloud, potrebbe essere utile testare il m
 
    ![Proprietà di Dynamics CRM FDM](assets/aftia-update-data-source.jpg)
 
-1. Fai clic su **Salva e chiudi**.
+1. Clic **Salva e chiudi**.
 
 1. [Test dei servizi](work-with-form-data-model.md#test-data-model-objects-and-services) per verificare che si connettano correttamente all’origine dati configurata
 
@@ -379,7 +379,7 @@ Per individuare le credenziali utente per un account Adobe Analytics, l’ammini
 1. Passa alla scheda Amministratore e seleziona l’elemento Gestione utente (legacy).
    ![Rapporti](assets/aftia-reports.jpg)
 1. Seleziona la **Utenti** scheda.
-   ![User Management](assets/aftia-user-management.jpg)
+   ![Gestione utente](assets/aftia-user-management.jpg)
 1. Seleziona l’utente desiderato dall’elenco degli utenti.
 1. Scorri fino alla parte inferiore della pagina e le informazioni di autenticazione degli utenti verranno visualizzate nella parte inferiore della pagina.
    ![Gestisci accesso](assets/aftia-admin-user-access.jpg)
@@ -407,7 +407,7 @@ Gli amministratori possono fornire agli utenti le autorizzazioni per l’analisi
 
 1. Assicurati che tutte le autorizzazioni siano mappate sul profilo.
 
-   ![Autorizzazioni di modifica](assets/aftia-admin-access-edit.jpg)
+   ![Modifica autorizzazioni](assets/aftia-admin-access-edit.jpg)
 
 1. Una volta mappate le autorizzazioni, la possibilità per un utente di effettuare l’accesso potrebbe richiedere alcune ore.
 
@@ -622,7 +622,7 @@ Una volta configurata la configurazione, gli utenti possono testarla caricando u
 
    * Assicurati che gli utenti selezionino *Produzione AFC We.Gov* configurazione
 
-   ![Impostazioni conversione](assets/aftia-conversion-settings.jpg)
+   ![Impostazioni di conversione](assets/aftia-conversion-settings.jpg)
 
    ![Impostazioni di conversione avanzate](assets/aftia-conversion-settings-2.jpg)
 
@@ -630,7 +630,7 @@ Una volta configurata la configurazione, gli utenti possono testarla caricando u
 
 1. All’inizio del processo di conversione, gli utenti dovrebbero visualizzare la seguente schermata:
 
-   ![Impostazioni conversione](assets/aftia-conversion-in-progress.jpg)
+   ![Impostazioni di conversione](assets/aftia-conversion-in-progress.jpg)
 
 1. Al termine della conversione, gli utenti visualizzeranno la seguente schermata:
 

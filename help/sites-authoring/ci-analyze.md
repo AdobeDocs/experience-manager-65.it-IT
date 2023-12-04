@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '661'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Apri [Approfondimenti contenuto](/help/sites-authoring/content-insights.md) per 
 Per visualizzare Analytics e Recommendations per una pagina, utilizza la procedura seguente:
 
 1. Passare alla pagina che si desidera analizzare.
-1. Nella barra degli strumenti, tocca o fai clic su **Analytics e Recommendations**.
+1. Nella barra degli strumenti, fai clic su **Analytics e Recommendations**.
 
    >[!NOTE]
    >
@@ -52,9 +52,9 @@ Modifica il periodo di reporting della pagina di approfondimento dei contenuti p
 
 Per modificare il periodo di reporting di una pagina di approfondimento dei contenuti:
 
-1. Se l’intervallo temporale non viene visualizzato nella parte superiore della pagina, tocca o fai clic sull’icona Attiva/Disattiva intervallo temporale.
+1. Se l’intervallo temporale non viene visualizzato nella parte superiore della pagina, fai clic sull’icona Attiva/Disattiva intervallo temporale.
 
-   ![Attiva/disattiva tempistica](do-not-localize/chlimage_1-22.png)
+   ![Attiva/Disattiva intervallo temporale](do-not-localize/chlimage_1-22.png)
 
 1. Per modificare la data di inizio del periodo di reporting, trascinare il cerchio visualizzato sul lato sinistro dell&#39;area ombreggiata sulla data di inizio desiderata.
 
@@ -70,11 +70,11 @@ Modifica la quantità di tempo trascorsa da ogni punto dati in un rapporto. Ad e
 
 La granularità influisce sui rapporti che tracciano i dati in base al tempo, ad esempio i rapporti Visualizzazioni e Media dei minuti coinvolti nella pagina. La granularità influisce anche sulla scala dell’arco temporale.
 
-1. Se il controllo di granularità non viene visualizzato, tocca o fai clic sull’icona Attiva/Disattiva granularità.
+1. Se il controllo di granularità non viene visualizzato, fai clic sull’icona Attiva/Disattiva granularità.
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
-1. Tocca o fai clic sulla granularità desiderata. Una volta selezionato, il rapporto viene aggiornato automaticamente per riflettere la granularità.
+1. Fai clic sulla granularità desiderata. Una volta selezionato, il rapporto viene aggiornato automaticamente per riflettere la granularità.
 
 ### Assegnazione di attività per SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
@@ -90,7 +90,7 @@ Una volta creata, l’attività viene visualizzata nell’elenco Attività dell�
 
 Per creare un&#39;attività per un consiglio SEO, attenersi alla procedura descritta di seguito.
 
-1. Tocca o fai clic sull’icona delle informazioni per il consiglio SEO (Search Engine Optimization).
+1. Fai clic sull’icona delle informazioni per il consiglio SEO (Search Engine Optimization).
 
    ![Icona informazioni](do-not-localize/chlimage_1-23.png)
 
@@ -98,7 +98,7 @@ Per creare un&#39;attività per un consiglio SEO, attenersi alla procedura descr
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. Compila i campi modulo visualizzati e tocca Crea:
+1. Compila i campi modulo visualizzati, quindi seleziona Crea:
 
    * Progetto: selezionare il progetto in cui creare l&#39;attività.
    * Nome: il nome che identifica l&#39;attività. Il nome predefinito è il titolo del consiglio SEO (Search Engine Optimization).
@@ -109,4 +109,4 @@ Per creare un&#39;attività per un consiglio SEO, attenersi alla procedura descr
 
    **Nota:** L’attività creata include anche il percorso della pagina a cui si applica il consiglio SEO (Search Engine Optimization).
 
-1. Tocca o fai clic su Fine per chiudere il messaggio Attività creata.
+1. Fai clic su Fine per chiudere il messaggio Attività creata.

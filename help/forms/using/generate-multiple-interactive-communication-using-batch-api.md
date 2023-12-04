@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2206'
+source-wordcount: '2136'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
 
 1. Creare un [Cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configuralo per utilizzare l’API Batch:
    1. Accedi all’istanza Autore AEM Forms.
-   1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Tocca **[!UICONTROL Nuovo]**.
+   1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Seleziona **[!UICONTROL Nuovo]**.
    1. Specifica la **[!UICONTROL Nome]** e fisica **[!UICONTROL Percorso]** della cartella. Esempio: `c:\batchprocessing`.
    1. Seleziona la **[!UICONTROL Servizio]** opzione in **[!UICONTROL Elabora file tramite]** campo.
    1. Seleziona la **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** servizio in **[!UICONTROL Nome servizio]** campo.
@@ -97,7 +97,7 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
       | batchType | Stringa | Impostate il valore su PRINT, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
       | lingua | Stringa | Specifica le impostazioni locali della comunicazione interattiva di output. Il servizio preconfigurato non utilizza l’opzione internazionale, ma puoi creare un servizio personalizzato per generare comunicazioni interattive localizzate. Il valore predefinito è en_US |
 
-   1. Tocca **[!UICONTROL Crea]** Viene creata la cartella controllata.
+   1. Seleziona **[!UICONTROL Crea]** Viene creata la cartella controllata.
 1. Utilizza la cartella controllata per generare la comunicazione interattiva:
    1. Apri la cartella controllata. Passare alla cartella di input.
    1. Crea una cartella nella cartella di input e inserisci il file JSON nella cartella appena creata.
@@ -113,9 +113,9 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
 
 1. Configura il modello dati modulo del modello:
    1. Apri il modello dati modulo associato al modello di comunicazione interattiva.
-   1. Seleziona l’OGGETTO MODELLO DI LIVELLO SUPERIORE e tocca Modifica proprietà.
+   1. Selezionate l&#39;OGGETTO MODELLO DI LIVELLO SUPERIORE (TOP LEVEL MODEL OBJECT), quindi Modifica proprietà (Edit Properties).
    1. Seleziona Recupera o ottieni servizio dal campo Servizio di lettura nel riquadro Modifica proprietà.
-   1. Tocca l’icona a forma di matita per l’argomento del servizio di lettura per associare l’argomento a un attributo di richiesta e specificare il valore di associazione. L&#39;argomento del servizio viene associato all&#39;attributo di associazione o al valore letterale specificato, che viene passato al servizio come argomento per recuperare i dettagli associati al valore specificato dall&#39;origine dati.
+   1. Seleziona l’icona a forma di matita per l’argomento del servizio di lettura per associare l’argomento a un attributo di richiesta e specifica il valore di associazione. L&#39;argomento del servizio viene associato all&#39;attributo di associazione o al valore letterale specificato, che viene passato al servizio come argomento per recuperare i dettagli associati al valore specificato dall&#39;origine dati.
 
       <br>
         In questo esempio, l'argomento id prende il valore dell'attributo id del profilo utente e lo trasmette come argomento al servizio di lettura. Lettura e restituzione dei valori delle proprietà associate dall'oggetto modello dati dipendente per l'ID specificato. Pertanto, se si specifica 00250 nel campo ID del modulo, il servizio di lettura leggerà i dettagli del dipendente con 00250 ID dipendente.
@@ -139,11 +139,11 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
           ]
       ```
 
-   1. Salva e chiudi il file 
+   1. Salva e chiudi il file.
 
 1. Creare un [Cartella controllata](/help/forms/using/creating-configure-watched-folder.md) e configuralo per utilizzare il servizio API Batch:
    1. Accedi all’istanza Autore AEM Forms.
-   1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Tocca **[!UICONTROL Nuovo]**.
+   1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella controllata]**. Seleziona **[!UICONTROL Nuovo]**.
    1. Specifica la **[!UICONTROL Nome]** e fisica **[!UICONTROL Percorso]** della cartella. Esempio: `c:\batchprocessing`.
    1. Seleziona la **[!UICONTROL Servizio]** opzione in **[!UICONTROL Elabora file tramite]** campo.
    1. Seleziona la **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** servizio in **[!UICONTROL Nome servizio]** campo.
@@ -159,7 +159,7 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
       | batchType | Stringa | Impostate il valore su PRINT, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
       | lingua | Stringa | Specifica le impostazioni locali della comunicazione interattiva di output. Il servizio preconfigurato non utilizza l’opzione internazionale, ma puoi creare un servizio personalizzato per generare comunicazioni interattive localizzate. Il valore di default è en_US. |
 
-   1. Tocca **[!UICONTROL Crea]** Viene creata la cartella controllata.
+   1. Seleziona **[!UICONTROL Crea]** Viene creata la cartella controllata.
 1. Utilizza la cartella controllata per generare la comunicazione interattiva:
    1. Apri la cartella controllata. Passare alla cartella di input.
    1. Crea una cartella nella cartella di input. Posiziona il file JSON creato al passaggio 2 nella cartella appena creata.

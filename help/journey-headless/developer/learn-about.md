@@ -2,10 +2,10 @@
 title: Scopri di più sullo sviluppo di CMS headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri la tecnologia headless e perché utilizzarla.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 86%
+source-wordcount: '1601'
+ht-degree: 82%
 
 ---
 
@@ -68,7 +68,7 @@ Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In que
 
 ## Separazione {#decoupling}
 
-La distribuzione headless è possibile esponendo un set di interfacce di programmazione applicazioni (API) affidabili e flessibili in cui è possibile sfruttare tutte le esperienze. L’API funge da linguaggio comune tra i servizi e li associa a livello di contenuto tramite la distribuzione standardizzata dei contenuti, ma offre la flessibilità necessaria per implementare le proprie soluzioni.
+La distribuzione headless è possibile esponendo un set di interfacce API (Application Programming Interface) solide e flessibili selezionabili da tutte le esperienze. L’API funge da linguaggio comune tra i servizi e li associa a livello di contenuto tramite la distribuzione standardizzata dei contenuti, ma offre la flessibilità necessaria per implementare le proprie soluzioni.
 
 Headless è un esempio di separazione del contenuto dalla presentazione. O in senso più generico, separando il front end dal back end dello stack di servizi. In una configurazione headless, il sistema di presentazione (la “testa”) viene separato dalla gestione dei contenuti (la coda). I due interagiscono solo tramite chiamate API.
 
@@ -120,7 +120,7 @@ Grazie per la tua partecipazione al percorso headless di AEM Dopo aver letto que
 * Capire perché e quando è richiesto l&#39;headless.
 * Sapere bene come vengono utilizzati i concetti headless e come si relazionano.
 
-Sviluppa questa conoscenza e continua il tuo percorso AEM headless rivedendo il documento successivo [Guida introduttiva a AEM Headless ](getting-started.md) dove verrà illustrato come impostare gli strumenti necessari e come iniziare a pensare a come AEM affronta la distribuzione di contenuti headless e i relativi prerequisiti.
+Approfondisci l&#39;argomento e continua il tuo percorso headless AEM esaminando il documento [Guida introduttiva di AEM Headless](getting-started.md) dove scoprirai come impostare gli strumenti necessari e iniziare a pensare a come l’AEM approccia la distribuzione di contenuti headless e i relativi prerequisiti.
 
 ## Risorse aggiuntive {#additional-resources}
 

@@ -1,14 +1,14 @@
 ---
 title: Configurate il progetto Android&trade; studio e create l'app Android&trade;
-description: Passaggi per configurare il progetto Android&trade; Studio e creare il programma di installazione per l’app Forms di Adobe Experience Manager (AEM)
+description: Passaggi per configurare il progetto Android&trade; Studio e creare il programma di installazione per l’app Forms Adobe Experience Manager (AEM)
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 7%
+source-wordcount: '584'
+ht-degree: 2%
 
 ---
 
@@ -21,12 +21,12 @@ AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L’origine
 Per ottenere l’origine dell’app AEM Forms, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. In **[!UICONTROL Filtri]** sezione:
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
    2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
-1. Tocca il nome del pacchetto applicabile al sistema operativo in uso, quindi seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
+1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, quindi selezionare **[!UICONTROL Accetta termini EULA]**, e seleziona **[!UICONTROL Scarica]**.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
 Nell&#39;immagine seguente viene visualizzato il contenuto estratto del `adobe-lc-mobileworkspace-src-<version>.zip`.

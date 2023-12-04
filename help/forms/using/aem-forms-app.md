@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 2%
+source-wordcount: '2410'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Il codice sorgente dell’app AEM Forms è disponibile per i clienti tramite Sof
 
 L&#39;app AEM Forms è supportata su dispositivi iOS, Android e Windows. Puoi installare l’app AEM Forms per Android da Google Play, iOS da App Store e Windows da Windows Store.
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
     [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
@@ -58,9 +58,9 @@ Per sincronizzare il modulo nell’app AEM Forms:
 1. Nell’istanza di authoring, seleziona un modulo e fai clic su **[!UICONTROL Visualizza proprietà]**.
 
 1. Nella pagina delle proprietà, fai clic su **[!UICONTROL Avanzate]**.
-1. In Avanzate, abilita opzione: **[!UICONTROL Sincronizza con l’app AEM Forms]** e tocca **[!UICONTROL Salva]**.
+1. In Avanzate, abilita opzione: **[!UICONTROL Sincronizza con l’app AEM Forms]** e seleziona **[!UICONTROL Salva]**.
 
-Quando il modulo viene pubblicato, l’app si sincronizza con il server e recupera il modulo. Per sincronizzare più moduli, nell’istanza di authoring seleziona più moduli in Forms Manager e tocca **[!UICONTROL Sincronizza con l’app AEM Forms]**.
+Quando il modulo viene pubblicato, l’app si sincronizza con il server e recupera il modulo. Per sincronizzare più moduli, nell’istanza di authoring seleziona più moduli in Forms Manager e seleziona **[!UICONTROL Sincronizza con l’app AEM Forms]**.
 
 ## Supporto per dispositivi mobili {#mobile-device-support}
 
@@ -159,7 +159,7 @@ L’app AEM Forms è un’applicazione basata su PhoneGap 5.0 in cui il modello 
 
 L’app AEM Forms è facile da personalizzare in base alle esigenze specifiche dell’organizzazione. Il codice sorgente dell’applicazione viene fornito insieme ad AEM Forms. Puoi modificare il codice sorgente e creare una soluzione personalizzata per la forza lavoro mobile. Puoi anche firmare l’app con la tua chiave Enterprise.
 
-### Personalizzazione {#customize}
+### Personalizza {#customize}
 
 Puoi personalizzare l’app per:
 
@@ -183,12 +183,12 @@ Il codice sorgente dell’app AEM Forms può essere estratto dal file `adobe-lc-
 Per ottenere l’origine dell’app AEM Forms, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Tocca **[!UICONTROL Adobe Experience Manager]** che si trova nel menu di intestazione.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu di intestazione.
 1. In **[!UICONTROL Filtri]** sezione:
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
    2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
-1. Tocca il nome del pacchetto applicabile al sistema operativo in uso, quindi seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
+1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, quindi selezionare **[!UICONTROL Accetta termini EULA]**, e seleziona **[!UICONTROL Scarica]**.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
 **Per iOS**:

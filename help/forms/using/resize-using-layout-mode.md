@@ -3,10 +3,10 @@ title: Utilizza la modalità Layout per ridimensionare i componenti per i moduli
 description: Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 3%
+source-wordcount: '1122'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Seleziona **Layout** dall’elenco a discesa visualizzato nella parte superiore 
 
 ## Ridimensionare i componenti {#resize-components}
 
-1. In modalità Layout, tocca il componente per ridimensionarlo. I punti blu vengono visualizzati all’inizio e alla fine della griglia reattiva.
+1. In modalità Layout, seleziona il componente da ridimensionare. I punti blu vengono visualizzati all’inizio e alla fine della griglia reattiva.
 1. Trascina i punti blu per definire la posizione del componente nella griglia reattiva.
 
    ![Ridimensionamento utilizzando la modalità Layout](assets/layout_mode_resize_new_updated1.png)
@@ -58,7 +58,7 @@ Seleziona **Layout** dall’elenco a discesa visualizzato nella parte superiore 
 **Obiettivo:** Desideri inserire un componente tabella e un componente immagine e posizionarli paralleli tra loro in un modulo adattivo.
 
 1. Inserisci i componenti tabella e immagine utilizzando la modalità Modifica nel modulo adattivo. Il componente immagine viene visualizzato dopo il componente tabella.
-1. Passa alla modalità Layout e tocca il componente Tabella. I punti blu per ridimensionare il componente vengono visualizzati nelle colonne 1 e 12.
+1. Passa alla modalità Layout e seleziona il componente Tabella. I punti blu per ridimensionare il componente vengono visualizzati nelle colonne 1 e 12.
 1. Trascina il punto blu nella colonna 12 alla colonna 6 della griglia reattiva.
 
    ![Definire il punto finale della tabella](assets/layout_mode_end_point_table_new.png)
@@ -67,13 +67,13 @@ Seleziona **Layout** dall’elenco a discesa visualizzato nella parte superiore 
 
    ![Tabella e immagine in parallelo in modalità Layout](assets/table_image_parallel_new.png)
 
-   Puoi selezionare il componente Immagine e toccare **Mobile in nuova riga** nella barra degli strumenti per spostare il componente Immagine alla riga successiva.
+   Puoi selezionare il componente Immagine e quindi **Mobile in nuova riga** nella barra degli strumenti per spostare il componente Immagine alla riga successiva.
 
 ## Ridimensiona pannelli {#resize-panels-layout-mode}
 
 Per ridimensionare l’intero pannello al posto dei singoli componenti, effettua le seguenti operazioni:
 
-1. Tocca uno dei componenti del pannello che desideri ridimensionare, quindi seleziona ![Seleziona elemento padre](assets/select_parent_icon.svg)e seleziona la prima opzione nell’elenco a discesa, se il pannello è l’elemento padre immediato del componente.
+1. Seleziona uno dei componenti del pannello da ridimensionare, quindi fai clic su ![Seleziona elemento padre](assets/select_parent_icon.svg)e seleziona la prima opzione nell’elenco a discesa, se il pannello è l’elemento padre immediato del componente.
 
    I punti blu vengono visualizzati all’inizio e alla fine della griglia reattiva.
 
@@ -84,13 +84,13 @@ Per ridimensionare l’intero pannello al posto dei singoli componenti, effettua
 
 Per definire il numero di colonne di un pannello, esegui i seguenti passaggi:
 
-1. In entrata **[!UICONTROL Modifica]** , tocca il pannello, seleziona ![Configura](assets/configure_icon.png), e seleziona **[!UICONTROL Reattivo: tutto ciò che si trova sulla pagina senza navigazione]** opzione dalla **[!UICONTROL Layout pannello]** elenco a discesa.
+1. In entrata **[!UICONTROL Modifica]** , seleziona il pannello, seleziona ![Configura](assets/configure_icon.png), e seleziona **[!UICONTROL Reattivo: tutto ciò che si trova sulla pagina senza navigazione]** opzione dalla **[!UICONTROL Layout pannello]** elenco a discesa.
 
-1. Tocca ![Salva](assets/save_icon.svg) per salvare le proprietà.
+1. Seleziona ![Salva](assets/save_icon.svg) per salvare le proprietà.
 
-1. In **[!UICONTROL Layout]** , tocca uno dei componenti nel pannello, seleziona ![Seleziona elemento padre](assets/select_parent_icon.svg)e seleziona il pannello.
+1. In **[!UICONTROL Layout]** , seleziona uno dei componenti nel pannello, seleziona ![Seleziona elemento padre](assets/select_parent_icon.svg)e seleziona il pannello.
 
-1. Tocca ![a più colonne](assets/multi-column.svg) e seleziona il numero di colonne dall’elenco a discesa. Il numero di colonne può essere compreso tra 1 e 12. Il pannello viene diviso in un layout a più colonne.
+1. Seleziona ![a più colonne](assets/multi-column.svg) e seleziona il numero di colonne dall’elenco a discesa. Il numero di colonne può essere compreso tra 1 e 12. Il pannello viene diviso in un layout a più colonne.
 
 ![più colonne in modalità layout](assets/multi-column-layout.png)
 
@@ -105,7 +105,7 @@ Abilita la nuova griglia reattiva per i moduli creati con AEM Forms 6.4 o versio
 Per abilitare la nuova griglia reattiva, effettua le seguenti operazioni:
 
 1. Seleziona **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore accanto al **Anteprima** opzione. Viene visualizzata una conferma per abilitare la modalità Layout.
-1. Tocca **Sì** per attivare **Layout** per il modulo.
+1. Seleziona **Sì** per attivare **Layout** per il modulo.
 
 ### Incorporare un vecchio frammento in un modulo adattivo con un nuovo layout reattivo {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -115,7 +115,7 @@ Il nuovo layout reattivo per i moduli adattivi consente di aggiungere al modulo 
 
 Se incorpori un frammento con il nuovo layout reattivo in un modulo adattivo con un vecchio layout reattivo, il sistema richiede di abilitare la modalità Layout per il modulo e di reincorporare il frammento.
 
-Per attivare la modalità Layout, seleziona **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore accanto al **Anteprima** opzione e tocca **Sì** per confermare. Seleziona **Modifica** per reincorporare il frammento.
+Per attivare la modalità Layout, seleziona **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore accanto al **Anteprima** e seleziona **Sì** per confermare. Seleziona **Modifica** per reincorporare il frammento.
 
 ## Disattiva la modalità Layout per i moduli con layout reattivo precedente {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -124,9 +124,9 @@ Per attivare la modalità Layout, seleziona **Layout** dall&#39;elenco a discesa
 Per disattivare la modalità Layout, effettua le seguenti operazioni:
 
 1. Seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]** e aprire il modello utilizzato nel modulo in **[!UICONTROL Modifica]** modalità.
-1. Seleziona il Contenitore documenti nel riquadro a sinistra e tocca **[!UICONTROL Politica.]**
+1. Selezionare il Contenitore documenti nel riquadro a sinistra e selezionare **[!UICONTROL Politica.]**
 
    ![Disattiva modalità Layout](assets/policy_disable_layout_mode.png)
 
-1. Tocca il **[!UICONTROL Impostazioni di layout]** e seleziona **[!UICONTROL Disattiva modalità layout]**.
-1. Tocca ![Salva modifiche](assets/save_icon.png) per salvare le proprietà del modello.
+1. Seleziona la **[!UICONTROL Impostazioni di layout]** e seleziona **[!UICONTROL Disattiva modalità layout]**.
+1. Seleziona ![Salva modifiche](assets/save_icon.png) per salvare le proprietà del modello.

@@ -7,9 +7,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2029'
 ht-degree: 1%
 
 ---
@@ -37,19 +37,19 @@ Ad esempio, si desidera che tutti gli autori di moduli dispongano di determinate
 
 Per accedere all’editor modelli dal menu Strumenti, vai a **Adobe Experience Manager > Strumenti > Modelli**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili. L’AEM fornisce una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, consulta [Cartelle modelli](/help/sites-developing/page-templates-editable.md).
 
-Dopo aver toccato per aprire una cartella, viene visualizzato un pulsante Crea che consente di creare un modello per i moduli adattivi.
+Dopo aver selezionato di aprire una cartella, viene visualizzato un pulsante Crea che consente di creare un modello per i moduli adattivi.
 
 ### Creazione di un modello {#create-template}
 
 Dopo aver creato una cartella, aprila ed esegui i seguenti passaggi per creare un modello:
 
-1. Nella console Modello, tocca **Crea** all’interno della cartella creata.
-1. Nella sezione Scegli un tipo di modello, selezionare **Modello modulo adattivo** e tocca **Successivo**.
+1. Nella console Modello, seleziona **Crea** all’interno della cartella creata.
+1. Nella sezione Scegli un tipo di modello, selezionare **Modello modulo adattivo** e seleziona **Successivo**.
 
-1. Nella sezione Dettagli modello, specifica un Titolo modello e tocca **Crea**.
+1. Nella sezione Dettagli modello, specifica un Titolo modello e seleziona **Crea**.
 È possibile fornire una descrizione e una miniatura che sia possibile visualizzare quando si seleziona il modello creato durante la creazione del modulo.
 
-1. Tocca **Fine** per tornare alla console, oppure tocca **Apri** per aprire il modello nell’editor.
+1. Seleziona **Fine** per tornare alla console, oppure seleziona **Apri** per aprire il modello nell’editor.
 
 ### Interfaccia utente dell’editor modelli {#template-editor-ui}
 
@@ -113,7 +113,7 @@ Ad esempio, puoi aggiungere il componente intestazione nel modello. Quando selez
 
 Quando l’opzione Contenuto iniziale è selezionata, il Contenitore di moduli adattivi del modello si apre come un modulo adattivo da modificare. Analogamente all’authoring di un modulo adattivo, puoi specificare le impostazioni iniziali, ad esempio selezionare un tema e inviare azioni.
 
-Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di visualizzare l’anteprima nella barra degli strumenti della pagina tocca ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) **> Contenuto iniziale**.
+Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di Anteprima nella barra degli strumenti della pagina, seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) **> Contenuto iniziale**.
 ![Livello Contenuto iniziale nell’Editor modelli](assets/initial-content-layer.png)
 
 Livello Contenuto iniziale nell’Editor modelli che mostra il Contenitore di moduli adattivi selezionato per la specifica delle proprietà.
@@ -144,7 +144,7 @@ Modificare il livello da Struttura a Contenuto iniziale e iniziare ad aggiungere
 * Puoi trascinare il componente Pannello dal browser Componenti nella barra laterale.
 * È possibile aggiungere un pannello figlio di `guideRootPanel` dalla barra degli strumenti del componente.
 
-Per creare le schede Informazioni generali e Informazioni professionali, aggiungi due pannelli nel pannello secondario di `guideRootPanel`. Seleziona i pannelli e tocca ![cmppr](assets/cmppr.png) per aprire le proprietà nella barra laterale. Modifica i nomi degli elementi come `general-info` e `professional-info`e titoli rispettivamente come Informazioni generali e Informazioni professionali. Nella barra laterale, tocca contenuto per aprire il browser contenuti. Nella scheda Oggetti modulo, seleziona `guideRootPanel`. Nell’editor, viene selezionato guideRootPanel. Tocca ![cmppr](assets/cmppr.png) nella barra degli strumenti del componente per aprirne le proprietà. Nel campo Layout pannello, seleziona **Schede in alto** e tocca **Fine**. Viene applicata la struttura a schede del modello.
+Per creare le schede Informazioni generali e Informazioni professionali, aggiungi due pannelli nel pannello secondario di `guideRootPanel`. Seleziona i pannelli e seleziona ![cmppr](assets/cmppr.png) per aprire le proprietà nella barra laterale. Modifica i nomi degli elementi come `general-info` e `professional-info`e titoli rispettivamente come Informazioni generali e Informazioni professionali. Nella barra laterale, seleziona il contenuto per aprire il browser del contenuto. Nella scheda Oggetti modulo, seleziona `guideRootPanel`. Nell’editor, viene selezionato guideRootPanel. Seleziona ![cmppr](assets/cmppr.png) nella barra degli strumenti del componente per aprirne le proprietà. Nel campo Layout pannello, seleziona **Schede in alto** e seleziona **Fine**. Viene applicata la struttura a schede del modello.
 
 #### Aggiunta di contenuto nelle schede {#adding-content-in-tabs}
 
@@ -165,7 +165,7 @@ Quando create un modello, questo viene aggiunto come bozza. Abilita il modello p
 1. Accedi a **Adobe Experience Manager > Strumenti > Modelli** e aprire la cartella in cui è stato creato il modello.
 
 1. Il modello creato è contrassegnato come Bozza.
-1. Seleziona il modello e tocca **Abilita** nella barra degli strumenti.
+1. Seleziona il modello e seleziona **Abilita** nella barra degli strumenti.
 Quando crei un modulo adattivo, puoi visualizzare il modello elencato quando ti viene richiesto di scegliere un modello.
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
@@ -193,7 +193,7 @@ Per mostrare e nascondere i modelli, effettua le seguenti operazioni:
    * Per mostrare o nascondere il modello di moduli adattivi preconfigurato, seleziona o deseleziona la casella **Includi modelli AF e AD pronti all’uso** opzione.
    * Per mostrare o nascondere dalla casella i modelli di moduli adattivi aggiunti nelle versioni di Forms AEM 6.0 o AEM 6.1 Forms ma ora obsoleti, seleziona o deseleziona la **Includi modelli AF AEM 6.0** opzione. Se questa opzione è selezionata, per diventare effettiva è necessario **Includi modelli AF e AD pronti all’uso** da attivare.
 
-1. Fai clic su **Salva**. Le opzioni di visualizzazione per i modelli predefiniti vengono modificate.
+1. Clic **Salva**. Le opzioni di visualizzazione per i modelli predefiniti vengono modificate.
 
 ## Consigli {#recommendations}
 

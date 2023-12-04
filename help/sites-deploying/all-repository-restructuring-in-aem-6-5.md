@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2694'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ Cioè il `sling:resourceType` della configurazione ContextHub deve essere relati
         </ul> </li>
       </ol> </li>
      <li>Abilita la modalità Modifica nell’Editor modello flusso di lavoro, che copierà la definizione del modello flusso di lavoro in /conf/global/workflow/models.</li>
-     <li>Tocca il pulsante Sync per sincronizzare le modifiche apportate al modello di flusso di lavoro di runtime in /var/workflow/models.</li>
+     <li>Seleziona il pulsante Sync per sincronizzare le modifiche apportate al modello di flusso di lavoro di runtime in /var/workflow/models.</li>
      <li>Esporta entrambi i modelli di flusso di lavoro (/conf/global/workflow/models/&lt;workflow-model&gt;) e modello di flusso di lavoro di runtime (/var/workflow/models/&lt;workflow-model&gt;) e integrarla nel progetto AEM.
       <ol>
        <li>Ad esempio, esportare:

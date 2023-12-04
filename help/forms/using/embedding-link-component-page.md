@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Il componente Collegamento consente agli autori del portale dei moduli di creare
 
 Per aggiungere un componente Collegamento alla pagina, effettua le seguenti operazioni:
 
-1. Trascina **Collegamento** sulla pagina. Seleziona il componente e tocca ![cmppr](assets/cmppr.png). Viene visualizzata la finestra di dialogo Modifica componente collegamento.
+1. Trascina **Collegamento** sulla pagina. Seleziona il componente e seleziona ![cmppr](assets/cmppr.png). Viene visualizzata la finestra di dialogo Modifica componente collegamento.
 
    ![edit-link-component](assets/edit-link-component.png)
 
@@ -48,9 +48,9 @@ Per aggiungere un componente Collegamento alla pagina, effettua le seguenti oper
    * **Profilo HTML**: profilo per il rendering del modulo come HTML.
    * **Profilo PDF**: profilo per il rendering del modulo come documento PDF.
 
-1. Apri la scheda **Avanzate.** Potete specificare i parametri aggiuntivi nel formato coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono trasmessi insieme al modulo.
+1. Apri **Avanzate** scheda. Potete specificare i parametri aggiuntivi nel formato coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono trasmessi insieme al modulo.
 
-   Tocca **Fine** per salvare la configurazione.
+   Seleziona **Fine** per salvare la configurazione.
 
 ## Best practice per l’utilizzo del componente Collegamento {#best-practices-for-using-link-component-br}
 

@@ -7,9 +7,9 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6106'
+source-wordcount: '6084'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Puoi esportare i temi come file zip e utilizzarli in altri progetti o istanze AE
 
 1. Nella pagina Temi, **Seleziona** un tema e fai clic su **Scarica**. Viene visualizzata una finestra di dialogo con i dettagli del tema.
 
-1. Fai clic su **Scarica**. Il tema viene scaricato come file zip.
+1. Clic **Scarica**. Il tema viene scaricato come file zip.
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
    <td>Etichetta associata al tema per l’identificazione utilizzata per migliorare la ricerca.</td>
   </tr>
   <tr>
-   <td>11.</td>
+   <td>11</td>
    <td>Riferimenti</td>
    <td>Collegamenti</td>
    <td>
@@ -170,7 +170,7 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
     </ul> </td>
   </tr>
   <tr>
-   <td>12.</td>
+   <td>12</td>
    <td>Posizione Clientlib</td>
    <td>Sì</td>
    <td>
@@ -182,7 +182,7 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
     </ul> </td>
   </tr>
   <tr>
-   <td>13.</td>
+   <td>13</td>
    <td>Nome categoria Clientlib</td>
    <td>Sì</td>
    <td>
@@ -365,7 +365,7 @@ Quando selezioni un componente nell’area di lavoro, sopra di esso viene visual
 * **Widget casella numerica**: consente di selezionare il componente per personalizzarne l’aspetto nella barra laterale.
 * **Widget campo**: consente di selezionare il componente generico per lo stile. In questo esempio, tutti i componenti di input testo (casella di testo/casella numerica/stepper numerico/input data) sono selezionati per lo stile.
 
-* ![a livello di campo](assets/field-level.png): consente di passare al componente generico per lo stile. Se selezioni una casella numerica e tocchi questa icona, viene selezionato il componente Campo. Se selezioni il componente Campo e tocchi questa icona, viene selezionato il pannello. Se continuate a toccare questa icona per selezionarla, finirete per selezionare il layout per lo stile.
+* ![a livello di campo](assets/field-level.png): consente di passare al componente generico per lo stile. Se selezioni la casella numerica e fai clic su questa icona, viene selezionato il componente Campo. Se selezioni il componente Campo e fai clic su questa icona, viene selezionato il pannello. Se continuate a toccare questa icona per selezionarla, finirete per selezionare il layout per lo stile.
 
 >[!NOTE]
 >
@@ -590,7 +590,7 @@ Per copiare un tema, effettuare le seguenti operazioni:
 
 1. Nell’istanza di authoring, passa a **Adobe Experience Manager > Forms > Temi**.
 1. Aprire la cartella Libreria temi.
-1. Nella cartella Libreria temi, passa il puntatore sul tema predefinito corrispondente e tocca **Copia**.
+1. Nella cartella Libreria temi, passa il puntatore sul tema predefinito corrispondente e seleziona **Copia**.
 1. Incollare il tema copiato all&#39;esterno della cartella Libreria temi.
 1. Personalizza il tema copiato.
 

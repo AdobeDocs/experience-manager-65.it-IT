@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2989'
+source-wordcount: '2887'
 ht-degree: 2%
 
 ---
@@ -39,11 +39,11 @@ Creative Project fornisce vari modelli di progetto per soddisfare i diversi requ
 
 ## Crea un progetto servizio fotografico per prodotto {#create-a-product-photo-shoot-project}
 
-1. In **Progetti** console, tocca o fai clic su **Crea** e quindi scegliere **Crea progetto** dall&#39;elenco.
+1. In **Progetti** console, fai clic su **Crea** e quindi scegliere **Crea progetto** dall&#39;elenco.
 
    ![Pulsante Crea progetto](assets/chlimage_1-132a.png)
 
-1. In **Crea progetto** , seleziona la **Progetto servizio fotografico per prodotto** modello e tocca o fai clic su **Successivo**.
+1. In **Crea progetto** , seleziona la **Progetto servizio fotografico per prodotto** e fai clic su **Successivo**.
 
    ![Creazione guidata progetto](assets/chlimage_1-133a.png)
 
@@ -51,12 +51,12 @@ Creative Project fornisce vari modelli di progetto per soddisfare i diversi requ
 
    ![Dettagli progetto](assets/chlimage_1-134a.png)
 
-1. Tocca o fai clic su **Crea**. Un messaggio di conferma informa che il progetto è stato creato.
-1. Tocca o fai clic su **Fine** per tornare al **Progetti** console. In alternativa, tocca o fai clic **Apri** per visualizzare le risorse del progetto.
+1. Fai clic su **Crea**. Un messaggio di conferma informa che il progetto è stato creato.
+1. Clic **Fine** per tornare al **Progetti** console. In alternativa, fare clic su **Apri** per visualizzare le risorse del progetto.
 
 ## Avvio del lavoro in un progetto servizio fotografico per prodotto {#starting-work-in-a-product-photo-shoot-project}
 
-Per avviare una richiesta di servizio fotografico, tocca o fai clic su un progetto, quindi tocca o fai clic su **Aggiungi lavoro** nella pagina dei dettagli del progetto per avviare un flusso di lavoro.
+Per avviare una richiesta di servizio fotografico, fai clic su un progetto e quindi su **Aggiungi lavoro** nella pagina dei dettagli del progetto per avviare un flusso di lavoro.
 
 ![Aggiungi lavoro](assets/chlimage_1-135a.png)
 
@@ -100,7 +100,7 @@ Entrambi i flussi di lavoro includono passaggi per collegare i prodotti con le r
 Utilizza quanto segue per monitorare l’avanzamento di un progetto:
 
 * Scheda Attività
-* Elenco delle attività
+* Elenco attività
 
 La scheda delle attività mostra l’avanzamento generale del progetto. Viene visualizzato nella pagina dei dettagli del progetto solo se il progetto ha attività correlate. Nella scheda delle attività viene visualizzato lo stato di completamento corrente del progetto in base al numero di attività completate. Non include le attività future.
 
@@ -111,7 +111,7 @@ La scheda delle attività contiene i dettagli riportati di seguito.
 
 ![Scheda Attività](assets/chlimage_1-136a.png)
 
-L&#39;elenco delle attività fornisce informazioni dettagliate sull&#39;attività del flusso di lavoro attualmente attiva per il progetto. Per visualizzare l’elenco, tocca o fai clic sulla scheda delle attività. Nell&#39;elenco delle attività vengono inoltre visualizzati metadati quali la data di inizio, la data di scadenza, l&#39;assegnatario, la priorità e lo stato dell&#39;attività.
+L&#39;elenco delle attività fornisce informazioni dettagliate sull&#39;attività del flusso di lavoro attualmente attiva per il progetto. Per visualizzare l’elenco, fai clic sulla scheda delle attività. Nell&#39;elenco delle attività vengono inoltre visualizzati metadati quali la data di inizio, la data di scadenza, l&#39;assegnatario, la priorità e lo stato dell&#39;attività.
 
 ![Elenco delle attività](assets/chlimage_1-137a.png)
 
@@ -121,8 +121,8 @@ Questa attività comporta l’assegnazione di passaggi del flusso di lavoro agli
 
 Per configurare **Servizio fotografico per prodotto** workflow:
 
-1. Accedi a **Strumenti** > **Flussi di lavoro**, quindi tocca il **Modelli** riquadro per aprire **Modelli flusso di lavoro** pagina.
-1. Seleziona la **Servizio fotografico per prodotto** e tocca il pulsante **Modifica** dalla barra degli strumenti per aprirla in modalità di modifica.
+1. Accedi a **Strumenti** > **Flussi di lavoro**, quindi selezionare **Modelli** riquadro per aprire **Modelli flusso di lavoro** pagina.
+1. Seleziona la **Servizio fotografico per prodotto** e seleziona la **Modifica** dalla barra degli strumenti per aprirla in modalità di modifica.
 
    ![Modello servizio fotografico per prodotto](assets/chlimage_1-138a.png)
 
@@ -130,7 +130,7 @@ Per configurare **Servizio fotografico per prodotto** workflow:
 
    ![Modifica modello](assets/project-photo-shoot-workflow-model.png)
 
-1. Tocca o fai clic su **Attività** per configurare quanto segue:
+1. Fai clic su **Attività** per configurare quanto segue:
 
    * Nome dell’attività
    * Utente predefinito (ruolo) che riceve l&#39;attività
@@ -148,17 +148,17 @@ Eseguire gli stessi passaggi per configurare le attività in **Flusso di lavoro 
 
 Questa sezione descrive come integrare la gestione delle informazioni sui prodotti con il progetto creativo.
 
-1. Passa a un progetto di servizio fotografico per prodotto, quindi tocca o fai clic su **Aggiungi lavoro** icona sul **Flussi di lavoro** Card.
+1. Passa a un progetto servizio fotografico per prodotto e fai clic su **Aggiungi lavoro** icona sul **Flussi di lavoro** Card.
 1. Seleziona la **Servizio fotografico per prodotto (integrazione Commerce)** scheda del flusso di lavoro per avviare **Servizio fotografico per prodotto (integrazione Commerce)** flusso di lavoro. Se le informazioni sul prodotto non sono disponibili in `/etc/commerce`, seleziona la **Servizio fotografico per prodotto** flusso di lavoro e avvia **Servizio fotografico per prodotto** flusso di lavoro.
 
    ![Procedura guidata flusso di lavoro](assets/chlimage_1-140a.png)
 
-1. Tocca o fai clic su **Successivo** per avviare il workflow nel progetto.
+1. Clic **Successivo** per avviare il workflow nel progetto.
 1. Immetti i dettagli del flusso di lavoro nella pagina successiva.
 
-   ![Dettagli flusso di lavoro](assets/chlimage_1-141a.png)
+   ![Dettagli del flusso di lavoro](assets/chlimage_1-141a.png)
 
-1. Tocca o fai clic su **Invia** per avviare il flusso di lavoro per servizio fotografico. Viene visualizzata la pagina dei dettagli del progetto del servizio fotografico.
+1. Clic **Invia** per avviare il flusso di lavoro per servizio fotografico. Viene visualizzata la pagina dei dettagli del progetto del servizio fotografico.
 
    ![Pagina progetto con nuovo flusso di lavoro](assets/chlimage_1-142a.png)
 
@@ -170,15 +170,15 @@ Il flusso di lavoro del servizio fotografico include diverse attività. Ogni att
 
 Il **Crea elenco di foto** consente al proprietario del progetto di selezionare i prodotti per i quali sono richieste immagini. In base all’opzione selezionata dall’utente, viene generato un file CSV contenente le informazioni di base sul prodotto.
 
-1. Nella cartella del progetto, tocca o fai clic sul pulsante con i puntini di sospensione in basso a destra del [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
+1. Nella cartella del progetto, fai clic sul pulsante con i puntini di sospensione in basso a destra del file [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
 
    ![Scheda Attività](assets/chlimage_1-143a.png)
 
-1. Seleziona la **Crea elenco di foto** , quindi tocca o fai clic sul pulsante **Apri** dalla barra degli strumenti.
+1. Seleziona la **Crea elenco di foto** e quindi fare clic sul pulsante **Apri** dalla barra degli strumenti.
 
    ![Apertura attività elenco di foto](assets/chlimage_1-144a.png)
 
-1. Rivedi i dettagli dell’attività, quindi tocca o fai clic sul pulsante **Crea elenco di foto** pulsante.
+1. Rivedi i dettagli dell’attività e fai clic su **Crea elenco di foto** pulsante.
 
    ![Dettagli attività elenco di foto](assets/chlimage_1-145a.png)
 
@@ -186,23 +186,23 @@ Il **Crea elenco di foto** consente al proprietario del progetto di selezionare 
 
    ![Selezione dei prodotti](assets/chlimage_1-146a.png)
 
-1. Tocca o fai clic su **Aggiungi all&#39;elenco di foto** per creare un file CSV contenente un elenco di tutti questi prodotti. Un messaggio conferma la creazione dell&#39;elenco di foto per i prodotti selezionati. Clic **Chiudi** per completare il workflow.
+1. Fai clic su **Aggiungi all&#39;elenco di foto** per creare un file CSV contenente un elenco di tutti questi prodotti. Un messaggio conferma la creazione dell&#39;elenco di foto per i prodotti selezionati. Clic **Chiudi** per completare il workflow.
 
-1. Dopo aver creato un elenco di foto, **Visualizza elenco di foto** viene visualizzato. Per aggiungere altri prodotti all&#39;elenco di foto, tocca o fai clic su **Aggiungi a elenco di foto**. In questo caso, i dati vengono aggiunti all&#39;elenco di foto creato inizialmente.
+1. Dopo aver creato un elenco di foto, **Visualizza elenco di foto** viene visualizzato. Per aggiungere altri prodotti all&#39;elenco di foto, fare clic su **Aggiungi a elenco di foto**. In questo caso, i dati vengono aggiunti all&#39;elenco di foto creato inizialmente.
 
    ![Aggiungi all&#39;elenco di foto](assets/chlimage_1-147a.png)
 
-1. Tocca o fai clic su **Visualizza elenco di foto** per visualizzare il nuovo elenco di foto.
+1. Clic **Visualizza elenco di foto** per visualizzare il nuovo elenco di foto.
 
    ![Visualizza elenco di foto](assets/chlimage_1-148a.png)
 
-   Per modificare i dati esistenti o aggiungere nuovi dati, tocca o fai clic su **Modifica** dalla barra degli strumenti. Solo il **Product **e **Descrizione** I campi sono modificabili.
+   Per modificare i dati esistenti o aggiungere nuovi dati, fare clic su **Modifica** dalla barra degli strumenti. Solo il **Product **e **Descrizione** I campi sono modificabili.
 
    ![Modifica elenco di foto](assets/chlimage_1-149a.png)
 
-   Dopo aver aggiornato il file, tocca o fai clic su **Salva** sulla barra degli strumenti per salvare il file.
+   Dopo aver aggiornato il file, fai clic su **Salva** sulla barra degli strumenti per salvare il file.
 
-1. Dopo aver aggiunto i prodotti, tocca o fai clic su **Completa** icona sul **Crea elenco di foto** pagina dettagli attività per contrassegnare l&#39;attività come completata. È possibile aggiungere un commento facoltativo.
+1. Dopo aver aggiunto i prodotti, fai clic su **Completa** icona sul **Crea elenco di foto** pagina dettagli attività per contrassegnare l&#39;attività come completata. È possibile aggiungere un commento facoltativo.
 
 Il completamento dell’attività introduce le seguenti modifiche all’interno del progetto:
 
@@ -220,23 +220,23 @@ L’elenco dei prodotti o il file CSV può contenere campi come **Categoria, Pro
 
 Un prodotto può appartenere a una particolare categoria. La categoria di prodotto può essere elencata nel file CSV sotto **Categoria** colonna. Il **Prodotto** contiene il nome del prodotto. In **Descrizione** immettere la descrizione o le istruzioni del prodotto per il fotografo.
 
-1. Nella cartella del progetto, tocca o fai clic sul pulsante con i puntini di sospensione in basso a destra del [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elenco delle attività nel flusso di lavoro.
-1. Seleziona la **Carica elenco di foto** , quindi tocca o fai clic sul pulsante **Apri** dalla barra degli strumenti.
+1. Nella cartella del progetto, fai clic sul pulsante con i puntini di sospensione in basso a destra del file [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elenco delle attività nel flusso di lavoro.
+1. Seleziona la **Carica elenco di foto** e quindi fare clic sul pulsante **Apri** dalla barra degli strumenti.
 
    ![Carica elenco di foto](assets/chlimage_1-150a.png)
 
-1. Rivedi i dettagli dell’attività, quindi tocca o fai clic su **Carica elenco di foto** pulsante.
+1. Rivedi i dettagli dell’attività e fai clic su **Carica elenco di foto** pulsante.
 
    ![Caricamento elenco di foto](assets/chlimage_1-151a.png)
 
-1. Tocca o fai clic su **Carica elenco di foto** per caricare il file CSV. Il flusso di lavoro riconosce questo file come origine da utilizzare per estrarre i dati del prodotto per l&#39;attività successiva.
+1. Fai clic su **Carica elenco di foto** per caricare il file CSV. Il flusso di lavoro riconosce questo file come origine da utilizzare per estrarre i dati del prodotto per l&#39;attività successiva.
 1. Carica un file CSV contenente informazioni di prodotto nel formato appropriato. Il **Visualizza risorse caricate** appare sotto la scheda dopo il caricamento del file CSV.
 
    ![Carica informazioni prodotto](assets/chlimage_1-152a.png)
 
    Fai clic su **Completa** per completare l&#39;attività.
 
-1. Tocca o fai clic sul pulsante **Completa** per completare l&#39;attività.
+1. Fai clic su **Completa** per completare l&#39;attività.
 
 ### Carica attività servizio fotografico {#upload-photo-shoot-task}
 
@@ -246,24 +246,24 @@ Il nome delle immagini da caricare deve iniziare con `<ProductId_>` dove `Produc
 
 Puoi caricare direttamente le immagini o caricare un file ZIP contenente le immagini. In base al nome, le immagini vengono inserite nelle rispettive cartelle di prodotto all’interno della cartella del servizio fotografico.
 
-1. Nella cartella del progetto, tocca o fai clic sul pulsante con i puntini di sospensione in basso a destra del file [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
-1. Seleziona la **Carica servizio fotografico** , quindi tocca o fai clic sul pulsante **Apri** dalla barra degli strumenti.
+1. Nella cartella del progetto, fai clic sul pulsante con i puntini di sospensione in basso a destra della sezione [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
+1. Seleziona la **Carica servizio fotografico** e quindi fare clic sul pulsante **Apri** dalla barra degli strumenti.
 
    ![Carica servizio fotografico](assets/chlimage_1-153a.png)
 
-1. Tocca o fai clic su **Carica servizio fotografico** e carica le immagini del servizio fotografico.
-1. Tocca o fai clic su **Completa** dalla barra degli strumenti per completare l’attività.
+1. Clic **Carica servizio fotografico** e carica le immagini del servizio fotografico.
+1. Fai clic su **Completa** dalla barra degli strumenti per completare l’attività.
 
 ### Ritocca l&#39;attività del servizio fotografico {#retouch-photo-shoot-task}
 
 Se si dispone dei diritti di modifica, eseguire la **Ritocca servizio fotografico** per modificare le immagini caricate nella cartella del servizio fotografico.
 
-1. Nella cartella del progetto, tocca o fai clic sul pulsante con i puntini di sospensione in basso a destra nella sezione [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
-1. Seleziona la **Ritocca servizio fotografico** , quindi tocca o fai clic sul pulsante **Apri** dalla barra degli strumenti.
+1. Nella cartella del progetto, fai clic sul pulsante con i puntini di sospensione in basso a destra nella [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
+1. Seleziona la **Ritocca servizio fotografico** e quindi fare clic sul pulsante **Apri** dalla barra degli strumenti.
 
    ![Ritocca servizio fotografico](assets/chlimage_1-154a.png)
 
-1. Tocca o fai clic su **Visualizza risorse caricate** collegamento in **Ritocca servizio fotografico** per sfogliare le immagini caricate.
+1. Fai clic su **Visualizza risorse caricate** collegamento in **Ritocca servizio fotografico** per sfogliare le immagini caricate.
 
    ![Visualizzare le risorse caricate](assets/chlimage_1-155a.png)
 
@@ -271,32 +271,32 @@ Se si dispone dei diritti di modifica, eseguire la **Ritocca servizio fotografic
 
    ![Modifica risorsa](assets/chlimage_1-156a.png)
 
-1. Tocca o fai clic su **Completa** dalla barra degli strumenti per completare l’attività.
+1. Fai clic su **Completa** dalla barra degli strumenti per completare l’attività.
 
 ### Rivedi e approva l&#39;attività {#review-and-approve-task}
 
 In questa attività, rivedi le immagini del servizio fotografico caricate da un fotografo e contrassegna le immagini come approvate per l’uso.
 
-1. Nella cartella del progetto, tocca o fai clic sul pulsante con i puntini di sospensione in basso a destra del file [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
-1. Seleziona la **Rivedi e approva** , quindi tocca o fai clic sul pulsante **Apri** dalla barra degli strumenti.
+1. Nella cartella del progetto, fai clic sul pulsante con i puntini di sospensione in basso a destra della sezione [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
+1. Seleziona la **Rivedi e approva** e quindi fare clic sul pulsante **Apri** dalla barra degli strumenti.
 
    ![Rivedi e approva](assets/chlimage_1-157a.png)
 
-1. In **Rivedi e approva** , assegna l’attività di revisione a un ruolo, quindi tocca o fai clic su **Revisione** per iniziare a rivedere le immagini del prodotto caricate.
+1. In **Rivedi e approva** , assegnare l&#39;attività di revisione a un ruolo e quindi fare clic su **Revisione** per iniziare a rivedere le immagini del prodotto caricate.
 
    ![Inizia a rivedere le risorse](assets/chlimage_1-158a.png)
 
-1. Seleziona un’immagine di prodotto, quindi tocca o fai clic sul pulsante **Approva** dalla barra degli strumenti per contrassegnarlo come approvato. Dopo aver approvato un’immagine, viene visualizzato un banner approvato.
+1. Seleziona un’immagine del prodotto e fai clic su **Approva** dalla barra degli strumenti per contrassegnarlo come approvato. Dopo aver approvato un’immagine, viene visualizzato un banner approvato.
 
    ![Approvazione di un’immagine](assets/chlimage_1-159a.png)
 
-1. Tocca o fai clic su **Completa**. Le immagini approvate sono collegate alle risorse vuote create.
+1. Clic **Completa**. Le immagini approvate sono collegate alle risorse vuote create.
 
 È possibile tralasciare alcuni prodotti senza alcuna immagine. In seguito, sarà possibile rivedere l&#39;attività e contrassegnarla come completata.
 
 Puoi passare alle risorse del progetto utilizzando l’interfaccia utente Assets e verificare le immagini approvate.
 
-Tocca o fai clic sul livello successivo per visualizzare i prodotti in base alla gerarchia dei dati del prodotto.
+Fai clic sul livello successivo per visualizzare i prodotti in base alla gerarchia di dati del prodotto.
 
 In Creative Project le risorse approvate vengono associate al prodotto di riferimento. I metadati della risorsa vengono aggiornati con il riferimento al prodotto e le informazioni di base nella **Dati prodotto** sotto le proprietà della risorsa vengono visualizzate nella sezione Metadati risorsa AEM.
 
@@ -308,8 +308,8 @@ In Creative Project le risorse approvate vengono associate al prodotto di riferi
 
 Questa attività sposta le risorse approvate nella cartella pronta per la produzione per renderle disponibili per l’uso.
 
-1. Nella cartella del progetto, tocca o fai clic sul pulsante con i puntini di sospensione in basso a destra del file [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
-1. Seleziona la **Sposta in produzione** , quindi tocca o fai clic sul pulsante **Apri** dalla barra degli strumenti.
+1. Nella cartella del progetto, fai clic sul pulsante con i puntini di sospensione in basso a destra della sezione [Scheda Attività](#tracking-project-progress) per visualizzare l&#39;elemento attività nel flusso di lavoro.
+1. Seleziona la **Sposta in produzione** e quindi fare clic sul pulsante **Apri** dalla barra degli strumenti.
 
    ![Sposta in produzione](assets/chlimage_1-160a.png)
 
@@ -321,22 +321,22 @@ Questa attività sposta le risorse approvate nella cartella pronta per la produz
 
    ![Sposta nel percorso](assets/chlimage_1-162a.png)
 
-1. Tocca o fai clic su **Sposta in produzione**. Chiudi il messaggio di conferma. Le risorse vengono spostate nel percorso indicato e viene creato automaticamente un set 360 gradi per le risorse approvate per ciascun prodotto in base alla gerarchia delle cartelle.
+1. Clic **Sposta in produzione**. Chiudi il messaggio di conferma. Le risorse vengono spostate nel percorso indicato e viene creato automaticamente un set 360 gradi per le risorse approvate per ciascun prodotto in base alla gerarchia delle cartelle.
 
-1. Tocca o fai clic sul pulsante **Completa** dalla barra degli strumenti. Il flusso di lavoro viene completato quando l’ultimo passaggio viene contrassegnato come completato.
+1. Fai clic su **Completa** dalla barra degli strumenti. Il flusso di lavoro viene completato quando l’ultimo passaggio viene contrassegnato come completato.
 
 ## Visualizzazione dei metadati di una risorsa DAM {#viewing-dam-asset-metadata}
 
-Dopo l’approvazione, le risorse vengono collegate ai prodotti corrispondenti. Il [Pagina delle proprietà](/help/assets/manage-assets.md#editing-properties) delle risorse approvate ora include un **Dati prodotto** (informazioni sul prodotto collegate). In questa scheda vengono visualizzati i dettagli del prodotto, il numero SKU e altri dettagli relativi al prodotto che collegano la risorsa. Tocca o fai clic su **Modifica** per aggiornare una proprietà della risorsa. Le informazioni relative al prodotto rimangono di sola lettura.
+Dopo l’approvazione, le risorse vengono collegate ai prodotti corrispondenti. Il [Pagina delle proprietà](/help/assets/manage-assets.md#editing-properties) delle risorse approvate ora include un **Dati prodotto** (informazioni sul prodotto collegate). In questa scheda vengono visualizzati i dettagli del prodotto, il numero SKU e altri dettagli relativi al prodotto che collegano la risorsa. Fai clic su **Modifica** per aggiornare una proprietà della risorsa. Le informazioni relative al prodotto rimangono di sola lettura.
 
-Tocca o fai clic sul collegamento che appare per passare alla rispettiva pagina dei dettagli del prodotto nella console del prodotto a cui è associata la risorsa.
+Fai clic sul collegamento che appare per passare alla rispettiva pagina dei dettagli del prodotto nella console del prodotto a cui è associata la risorsa.
 
 ## Personalizzazione dei flussi di lavoro per servizio fotografico per il progetto {#customizing-the-project-photo-shoot-workflows}
 
 È possibile personalizzare **Servizio fotografico per progetto** in base alle tue esigenze. Si tratta di un&#39;attività facoltativa basata su ruoli eseguita per impostare il valore di una variabile all&#39;interno del progetto. Successivamente, puoi utilizzare il valore configurato per arrivare a una decisione.
 
-1. Tocca o fai clic sul logo AEM, quindi passa a **Strumenti** > **Flusso di lavoro** > **Modelli** per aprire **Modelli flusso di lavoro** pagina.
-1. Seleziona la **Servizio fotografico per prodotto (integrazione Commerce)** flusso di lavoro o **Servizio fotografico per prodotto** flusso di lavoro e tocca o fai clic **Modifica** dalla barra degli strumenti per aprire il flusso di lavoro in modalità di modifica.
+1. Fai clic sul logo dell’AEM, quindi accedi a **Strumenti** > **Flusso di lavoro** > **Modelli** per aprire **Modelli flusso di lavoro** pagina.
+1. Seleziona la **Servizio fotografico per prodotto (integrazione Commerce)** flusso di lavoro o **Servizio fotografico per prodotto** workflow e clic **Modifica** dalla barra degli strumenti per aprire il flusso di lavoro in modalità di modifica.
 1. Apri il pannello laterale e individua **Crea attività progetto basata sul ruolo** e trascinarlo nel flusso di lavoro.
 
    ![Crea attività progetto basata su ruolo](assets/project-model-role-based.png)
@@ -346,17 +346,17 @@ Tocca o fai clic sul collegamento che appare per passare alla rispettiva pagina 
 
    ![Configurare il passaggio del flusso di lavoro](assets/project-task-step.png)
 
-1. Il giorno **Indirizzamento** , specificare le azioni per l&#39;attività. Per aggiungere più azioni, tocca o fai clic sul pulsante **Aggiungi elemento** collegamento.
+1. Il giorno **Indirizzamento** , specificare le azioni per l&#39;attività. Per aggiungere più azioni, fai clic su **Aggiungi elemento** collegamento.
 
    ![Scheda Indirizzamento](assets/project-task-step-routing.png)
 
 1. Dopo aver aggiunto le opzioni, fai clic su **OK** per aggiungere le modifiche al passaggio.
 
-1. Torna in **Modello flusso di lavoro** tocco o clic sulla finestra **Sincronizza** per salvare le modifiche dell&#39;intero workflow. Toccare o fare clic **OK** per il passaggio non salva le modifiche nel flusso di lavoro. Per salvare le modifiche nel flusso di lavoro, tocca o fai clic su **Sincronizza**.
+1. Torna in **Modello flusso di lavoro** clic finestra **Sincronizza** per salvare le modifiche dell&#39;intero workflow. Toccare o fare clic **OK** per il passaggio non salva le modifiche nel flusso di lavoro. Per salvare le modifiche nel flusso di lavoro, fai clic su **Sincronizza**.
 
 1. Apri il pannello laterale e individua **Vai al passaggio** e trascinarlo nel workflow.
 
-1. Apri **Vai a** e tocca o fai clic sul pulsante **Processo** scheda.
+1. Apri **Vai a** e fare clic sul pulsante **Processo** scheda.
 
 1. Seleziona la **Passaggio di destinazione** per passare a e specificare che **Espressione di indirizzamento** è lo script ECMA. Quindi inserisci il seguente codice nel **Script** campo:
 
@@ -386,9 +386,9 @@ Tocca o fai clic sul collegamento che appare per passare alla rispettiva pagina 
 
    ![Vai a script](assets/project-workflow-goto.png)
 
-1. Tocca o fai clic su **OK**.
+1. Fai clic su **OK**.
 
-1. Tocca o fai clic su **Sincronizza** per salvare il workflow.
+1. Clic **Sincronizza** per salvare il workflow.
 
 Ora viene visualizzata una nuova attività dopo il [Sposta all&#39;attività di produzione](#move-to-production-task) viene completato e assegnato al proprietario.
 

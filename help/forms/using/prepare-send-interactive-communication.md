@@ -5,9 +5,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Durante la preparazione della comunicazione interattiva tramite l’interfaccia 
 ## Preparare la comunicazione interattiva tramite l’interfaccia utente dell’agente {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Seleziona la comunicazione interattiva appropriata e tocca **[!UICONTROL Apri interfaccia utente agente]**.
+1. Seleziona la comunicazione interattiva appropriata e seleziona **[!UICONTROL Apri interfaccia utente agente]**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Durante la preparazione della comunicazione interattiva tramite l’interfaccia 
 
 1. Nella scheda Dati, immettere i dati per le variabili, le proprietà del modello di dati del modulo e i campi del modello di stampa (XDP), come richiesto. Compila tutti i campi obbligatori contrassegnati da un asterisco (&amp;ast;) per abilitare **Invia** pulsante.
 
-   Tocca un valore di campo dati nell’anteprima della comunicazione interattiva per evidenziare il campo dati corrispondente nella scheda Dati o viceversa.
+   Seleziona un valore per un campo dati nell’anteprima della comunicazione interattiva per evidenziare il campo dati corrispondente nella scheda Dati o viceversa.
 
 ### Gestione contenuto {#manage-content}
 
@@ -57,7 +57,7 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
-1. Se necessario, modifica i frammenti di documento nella scheda Contenuto. Per spostare lo stato attivo sul frammento rilevante nella gerarchia dei contenuti, tocca la riga o il paragrafo pertinente nell’anteprima della comunicazione interattiva oppure tocca il frammento direttamente nella gerarchia dei contenuti.
+1. Se necessario, modifica i frammenti di documento nella scheda Contenuto. Per spostare lo stato attivo sul frammento rilevante nella gerarchia del contenuto, puoi selezionare la riga o il paragrafo pertinente nell’anteprima della comunicazione interattiva oppure selezionare il frammento direttamente nella gerarchia del contenuto.
 
    Ad esempio, il frammento di documento con la riga &quot;Esegui un pagamento online ora ...&quot; è selezionato nell’anteprima dell’immagine seguente e lo stesso frammento di documento è stato selezionato nella scheda Contenuto.
 
@@ -65,7 +65,7 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
 
    Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati nel contenuto ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra nell’anteprima, puoi disabilitare o abilitare la funzionalità per passare al frammento di documento quando il testo, il paragrafo o il campo dati rilevante viene toccato/selezionato nell’anteprima.
 
-   I frammenti che possono essere modificati dall’agente durante la creazione della comunicazione interattiva hanno la proprietà Modifica contenuto selezionato ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Tocca l’icona Modifica contenuto selezionato per avviare il frammento in modalità di modifica e apportarvi modifiche. Utilizza le seguenti opzioni per la formattazione e la gestione del testo:
+   I frammenti che possono essere modificati dall’agente durante la creazione della comunicazione interattiva hanno la proprietà Modifica contenuto selezionato ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Seleziona l’icona Modifica contenuto selezionato per avviare il frammento in modalità di modifica e apportarvi modifiche. Utilizza le seguenti opzioni per la formattazione e la gestione del testo:
 
    * [Opzioni di formattazione](#formattingtext)
 
@@ -89,11 +89,11 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
 
 1. Seleziona **[!UICONTROL Allegato]**. Nell’interfaccia utente dell’agente vengono visualizzati gli allegati disponibili configurati durante la creazione della comunicazione interattiva.
 
-   Per scegliere di non inviare un allegato insieme alla comunicazione interattiva, tocca l’icona della vista e, se l’agente può eliminare o nascondere l’allegato, tocca la croce nell’allegato. Per gli allegati specificati come obbligatori durante la creazione della comunicazione interattiva, le icone Visualizza ed Elimina sono disattivate.
+   Per scegliere di non inviare un allegato insieme alla comunicazione interattiva, tocca l’icona di visualizzazione e puoi selezionare la croce nell’allegato per eliminarlo (se all’agente è consentito eliminare o nascondere l’allegato) dalla comunicazione interattiva. Per gli allegati specificati come obbligatori durante la creazione della comunicazione interattiva, le icone Visualizza ed Elimina sono disattivate.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Tocca Accesso alla libreria ( ![accesso alla libreria](assets/libraryaccess.png)) per accedere alla Libreria dei contenuti e inserire risorse DAM come allegati.
+1. Seleziona l&#39;accesso alla libreria ( ![accesso alla libreria](assets/libraryaccess.png)) per accedere alla Libreria dei contenuti e inserire risorse DAM come allegati.
 
    >[!NOTE]
    >
@@ -102,7 +102,7 @@ Nella scheda Contenuto, gestisci il contenuto, ad esempio frammenti di documento
 1. Se l&#39;ordine degli allegati non è stato bloccato durante la creazione della comunicazione interattiva, è possibile riordinarli selezionando un allegato e toccando le frecce giù e su.
 1. Utilizza Anteprima web e Anteprima di stampa per verificare se i due output corrispondono alle tue esigenze.
 
-   Se le anteprime sono soddisfacenti, tocca **[!UICONTROL Invia]** per inviare/inviare la comunicazione interattiva a un processo post. Oppure, per apportare modifiche, esci dall’anteprima per tornare all’esecuzione delle modifiche.
+   Se le anteprime risultano soddisfacenti, selezionare **[!UICONTROL Invia]** per inviare/inviare la comunicazione interattiva a un processo post. Oppure, per apportare modifiche, esci dall’anteprima per tornare all’esecuzione delle modifiche.
 
 ## Formattazione del testo {#formattingtext}
 
@@ -122,7 +122,7 @@ Barra degli strumenti Elenco
 
 ### Evidenzia/evidenzia parti di testo {#highlightemphasize}
 
-Per evidenziare/enfatizzare parti di testo in un frammento modificabile, seleziona il testo e tocca Colore evidenziazione.
+Per evidenziare/enfatizzare parti di testo in un frammento modificabile, selezionate il testo e selezionate Colore evidenziazione.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
@@ -183,22 +183,22 @@ Per impostazione predefinita, la funzione Salva come bozza non è attivata. Per 
    La SPI consente di salvare nel database la versione bozza della comunicazione interattiva con un ID bozza come identificatore univoco. Queste istruzioni presuppongono una conoscenza preventiva di come creare un bundle OSGi utilizzando un progetto Maven.
 
    Per un esempio di implementazione SPI, vedi [Esempio di implementazione SPI ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
-1. Apri `http://<hostname>:<port>/ system/console/bundles` e tocca **[!UICONTROL Installa/Aggiorna]** per caricare il bundle OSGi. Verifica che lo stato del pacchetto caricato sia visualizzato come **Attivo**. Riavvia il server se lo stato del pacchetto non viene visualizzato come **Attivo**.
+1. Apri `http://<hostname>:<port>/ system/console/bundles` e seleziona **[!UICONTROL Installa/Aggiorna]** per caricare il bundle OSGi. Verifica che lo stato del pacchetto caricato sia visualizzato come **Attivo**. Riavvia il server se lo stato del pacchetto non viene visualizzato come **Attivo**.
 1. Passa a `https://'[server]:[port]'/system/console/configMgr`.
-1. Tocca **[!UICONTROL Crea configurazione corrispondenza]**.
-1. Seleziona **[!UICONTROL Abilita salvataggio tramite CCRDocumentInstanceService]** e tocca **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Crea configurazione corrispondenza]**.
+1. Seleziona **[!UICONTROL Abilita salvataggio tramite CCRDocumentInstanceService]** e seleziona **[!UICONTROL Salva]**.
 
 ### Salvare una comunicazione interattiva come bozza {#save-as-draft-agent-ui}
 
 Per salvare una comunicazione interattiva come bozza, effettua le seguenti operazioni:
 
-1. Seleziona una comunicazione interattiva in Forms Manager e tocca **[!UICONTROL Apri interfaccia utente agente]**.
+1. Seleziona una comunicazione interattiva in Forms Manager e seleziona **[!UICONTROL Apri interfaccia utente agente]**.
 
-1. Apporta le modifiche appropriate nell’interfaccia utente dell’agente e tocca **[!UICONTROL Salva come bozza]**.
+1. Apporta le modifiche appropriate nell’interfaccia utente dell’agente e seleziona **[!UICONTROL Salva come bozza]**.
 
-1. Specificate il nome della bozza in **[!UICONTROL Nome]** campo e tocco **[!UICONTROL Fine]**.
+1. Specificate il nome della bozza in **[!UICONTROL Nome]** e seleziona **[!UICONTROL Fine]**.
 
-Dopo aver salvato la comunicazione interattiva come bozza, tocca **[!UICONTROL Salva modifiche]** per salvare eventuali ulteriori modifiche alla bozza.
+Dopo aver salvato la comunicazione interattiva come bozza, seleziona **[!UICONTROL Salva modifiche]** per salvare eventuali ulteriori modifiche alla bozza.
 
 ### Recuperare la bozza di una comunicazione interattiva {#retrieve-draft}
 

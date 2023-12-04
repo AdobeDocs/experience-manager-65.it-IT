@@ -11,10 +11,10 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3936'
-ht-degree: 1%
+source-wordcount: '3875'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +80,7 @@ Configurare le proprietà dei moduli adattivi per [!DNL Adobe Sign] per un modul
 Per creare un modulo adattivo con firma, effettua le seguenti operazioni:
 
 1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Tocca **[!UICONTROL Crea]** e seleziona **[!UICONTROL Modulo adattivo]**. Viene visualizzato un elenco di modelli. Seleziona il modello e tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** e seleziona **[!UICONTROL Modulo adattivo]**. Viene visualizzato un elenco di modelli. Seleziona il modello e seleziona **[!UICONTROL Successivo]**.
 1. In **[!UICONTROL Base]** scheda:
 
    1. Specifica la **[!UICONTROL Nome]** e **[!UICONTROL Titolo]** per il modulo adattivo.
@@ -97,14 +97,14 @@ Per creare un modulo adattivo con firma, effettua le seguenti operazioni:
 
    * Seleziona la **[!UICONTROL Genera documento di record]** opzione. Se utilizzi un modulo adattivo abilitato per l’opzione Documento di record, il documento inviato per la firma visualizza tutti i campi del modulo adattivo.
 
-1. Tocca **[!UICONTROL Crea.]** Viene creato un modulo adattivo abilitato alla firma che può essere utilizzato per aggiungere [!DNL Adobe Sign] campi.
+1. Seleziona **[!UICONTROL Crea.]** Viene creato un modulo adattivo abilitato alla firma che può essere utilizzato per aggiungere [!DNL Adobe Sign] campi.
 
 #### Modificare un modulo adattivo per [!DNL Adobe Sign] {#editafsign}
 
 Effettua le seguenti operazioni per utilizzare [!DNL Adobe Sign] in un modulo adattivo esistente:
 
 1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Seleziona il modulo adattivo e tocca **[!UICONTROL Proprietà]**.
+1. Seleziona il modulo adattivo e seleziona **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Base]** , seleziona la scheda [Contenitore configurazione](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante la configurazione [!DNL Adobe Sign] con AEM [!DNL Forms].
 1. In **[!UICONTROL Modello modulo]** , selezionare una delle opzioni seguenti:
 
@@ -112,7 +112,7 @@ Effettua le seguenti operazioni per utilizzare [!DNL Adobe Sign] in un modulo ad
 
    * Seleziona la **[!UICONTROL Genera documento di record]** opzione. Se utilizzi un modulo adattivo abilitato per l’opzione Documento di record, il documento inviato per la firma visualizza tutti i campi del modulo adattivo.
 
-1. Tocca **[!UICONTROL Salva e chiudi]**. Il modulo adattivo è abilitato per [!DNL Adobe Sign].
+1. Seleziona **[!UICONTROL Salva e chiudi]**. Il modulo adattivo è abilitato per [!DNL Adobe Sign].
 
 ### Aggiungere campi Adobe Sign a un modulo adattivo {#addadobesignfieldstoanadaptiveform}
 
@@ -133,15 +133,15 @@ Per aggiungere campi a un modulo adattivo e personalizzare varie opzioni relativ
    >
    >
 
-1. Seleziona la **[!UICONTROL Blocco Adobe Sign]** e tocca il pulsante **Modifica** ![aem_6_3_edit](assets/aem_6_3_edit.png) icona. Vengono visualizzate le opzioni per aggiungere campi e formattare l&#39;aspetto di un campo.
+1. Seleziona la **[!UICONTROL Blocco Adobe Sign]** e selezionare il **Modifica** ![aem_6_3_edit](assets/aem_6_3_edit.png) icona. Vengono visualizzate le opzioni per aggiungere campi e formattare l&#39;aspetto di un campo.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **R.** Seleziona e aggiungi [!DNL Adobe Sign] campi. **B.** Espandi [!DNL Adobe Sign] blocco alla visualizzazione a schermo intero
 
-1. Tocca il **[!UICONTROL Adobe Sign] Campo** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icona. Vengono visualizzate le opzioni per selezionare e aggiungere [!DNL Adobe Sign] campi.
+1. Seleziona la **[!UICONTROL Adobe Sign] Campo** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icona. Vengono visualizzate le opzioni per selezionare e aggiungere [!DNL Adobe Sign] campi.
 
-   Espandi **[!UICONTROL Tipo]** campo a discesa per selezionare un [!DNL Adobe Sign] e tocca il pulsante Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icona per aggiungere il campo selezionato a [!DNL Adobe Sign] blocco. Il **[!UICONTROL Tipo]** Il campo a discesa include i tipi di campo Firma, Informazioni firmatario e Dati. [!DNL Adobe Sign] Integrazione con l’AEM [!DNL Forms] campi di supporto elencati nella [!UICONTROL Tipo] solo casella a discesa. Per informazioni dettagliate su [!DNL Adobe Sign] campi, vedi [Documentazione di Adobe Sign](https://helpx.adobe.com/sign/help/field-types.html).
+   Espandi **[!UICONTROL Tipo]** campo a discesa per selezionare un [!DNL Adobe Sign] e selezionare il campo Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icona per aggiungere il campo selezionato a [!DNL Adobe Sign] blocco. Il **[!UICONTROL Tipo]** Il campo a discesa include i tipi di campo Firma, Informazioni firmatario e Dati. [!DNL Adobe Sign] Integrazione con l’AEM [!DNL Forms] campi di supporto elencati nella [!UICONTROL Tipo] solo casella a discesa. Per informazioni dettagliate su [!DNL Adobe Sign] campi, vedi [Documentazione di Adobe Sign](https://helpx.adobe.com/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -156,7 +156,7 @@ Per aggiungere campi a un modulo adattivo e personalizzare varie opzioni relativ
 
 Pronti all’uso, [!DNL Adobe Sign] non è abilitato per un modulo adattivo. Per abilitarlo, effettua le seguenti operazioni:
 
-1. Nel browser Contenuti, tocca **[!UICONTROL Contenitore modulo]**, e tocca il **[!UICONTROL Configura]** ![configura](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo.
+1. Nel browser Contenuto, seleziona **[!UICONTROL Contenitore modulo]**, e seleziona la **[!UICONTROL Configura]** ![configura](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo.
 1. Nel browser delle proprietà, espandi la sezione **[!UICONTROL Firma elettronica]** Pannello a soffietto e seleziona la **[!UICONTROL Abilita Adobe Sign]** opzione. Abilita [!DNL Adobe Sign] per un modulo adattivo.
 
 ### Seleziona [!DNL Adobe Sign] Cloud Service e ordine di firma {#selectadobesigncloudserviceforanadaptiveform}
@@ -169,7 +169,7 @@ Per selezionare un servizio cloud e impostare l’ordine di firma, effettua le s
 
 ![servizio cloud](assets/cloud-service.png)
 
-1. Nel browser Contenuti, tocca **[!UICONTROL Contenitore modulo]**, e tocca il **[!UICONTROL Configura]** ![configura](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo.
+1. Nel browser Contenuto, seleziona **[!UICONTROL Contenitore modulo]**, e seleziona la **[!UICONTROL Configura]** ![configura](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo.
 1. Nel browser delle proprietà, espandi la sezione **[!UICONTROL Firma elettronica]** Pannello a soffietto e seleziona la **[!UICONTROL Abilita Adobe Sign]** opzione. Abilita [!DNL Adobe Sign] per un modulo adattivo.
 1. Seleziona un servizio cloud dall’elenco già configurato di [!DNL Adobe Sign] Cloud Service.
 
@@ -183,23 +183,23 @@ Per selezionare un servizio cloud e impostare l’ordine di firma, effettua le s
 
    In ordine simultaneo, più firmatari possono firmare un modulo alla volta.
 
-1. [Aggiungere firmatari a un modulo adattivo](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) e tocca Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche.
+1. [Aggiungere firmatari a un modulo adattivo](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) e selezionate Fatto (Done) ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche.
 
 
 ### Aggiungere firmatari a un modulo adattivo {#addsignerstoanadaptiveform}
 
 Per un modulo adattivo puoi avere un solo firmatario o più firmatari. Quando aggiungi un firmatario, puoi anche configurare i dettagli di autenticazione per il firmatario. Puoi anche selezionare se la persona che compila il modulo e il cantante sono la stessa. Per aggiungere e fornire vari dettagli su un firmatario, effettua le seguenti operazioni:
 
-1. Nel browser Contenuti, tocca **[!UICONTROL Contenitore modulo]**, e tocca il **[!UICONTROL Configura]** ![configura](assets/configure.png) icona. Apre il browser delle proprietà con le proprietà del contenitore Modulo adattivo.
+1. Nel browser Contenuto, seleziona **[!UICONTROL Contenitore modulo]**, e seleziona la **[!UICONTROL Configura]** ![configura](assets/configure.png) icona. Apre il browser delle proprietà con le proprietà del contenitore Modulo adattivo.
 1. Nel browser delle proprietà, espandi la sezione **[!UICONTROL Firma elettronica]** Pannello a soffietto e seleziona la **[!UICONTROL Abilita Adobe Sign]** opzione. Abilita [!DNL Adobe Sign] per un modulo adattivo.
-1. Tocca **[!UICONTROL Aggiungi firmatario]** in **[!UICONTROL Configurazione firmatario]**. Aggiunge un firmatario al modulo adattivo. È possibile aggiungere più [!DNL Adobe Sign] da firmatari a un modulo adattivo.
+1. Seleziona **[!UICONTROL Aggiungi firmatario]** in **[!UICONTROL Configurazione firmatario]**. Aggiunge un firmatario al modulo adattivo. È possibile aggiungere più [!DNL Adobe Sign] da firmatari a un modulo adattivo.
    ![phone-details](assets/phone-details.png)
 
 1. Fai clic su **Modifica** ![aem_6_3_edit](assets/aem_6_3_edit.png) per specificare le seguenti informazioni sul firmatario:
 
    * **[!UICONTROL Titolo]:** Specifica un titolo per identificare in modo univoco un firmatario.
 
-   * **[!UICONTROL Il firmatario e la persona che riempie il modulo corrispondono?]:** Seleziona **Sì**, se il compilatore del modulo e il primo firmatario sono la stessa persona. Se l’opzione è impostata su **No,** quindi non utilizzare il componente del passaggio di firma nel modulo adattivo. Se il modulo contiene un componente Passaggio firma, il campo viene automaticamente impostato su Sì.
+   * **[!UICONTROL Il firmatario e la persona che compila il modulo corrispondono?]:** Seleziona **Sì**, se il compilatore del modulo e il primo firmatario sono la stessa persona. Se l’opzione è impostata su **No,** quindi non utilizzare il componente del passaggio di firma nel modulo adattivo. Se il modulo contiene un componente Passaggio firma, il campo viene automaticamente impostato su Sì.
 
    * **[!UICONTROL Indirizzo e-mail del firmatario]:** Specifica l’indirizzo e-mail del firmatario. Il firmatario riceve i documenti/moduli da firmare all&#39;indirizzo e-mail specificato. Puoi scegliere di utilizzare un indirizzo e-mail fornito in un campo del modulo, nel profilo utente AEM dell’utente connesso o immettere manualmente un indirizzo e-mail. È un passaggio obbligatorio. Assicurati che l’indirizzo e-mail del primo firmatario o dell’unico firmatario (in caso di firmatario singolo) non sia identico a [!DNL Adobe Sign] account utilizzato per configurare i servizi cloud AEM.
 
@@ -217,7 +217,7 @@ Per un modulo adattivo puoi avere un solo firmatario o più firmatari. Quando ag
 
    L’immagine precedente presenta due esempi [!DNL Adobe Sign] Blocchi: Informazioni personali e dettagli dell’ufficio
 
-   Tocca Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icona. Il firmatario viene aggiunto e configurato.
+   Seleziona Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icona. Il firmatario viene aggiunto e configurato.
 
 ### Seleziona Azione di invio per un modulo adattivo {#selectsubmitactionforanadaptiveform}
 
@@ -243,15 +243,15 @@ Dopo [modifica delle proprietà di un modulo adattivo per il segno di Adobe](../
 
    ![Blocco di firma](assets/sign-block-new.png)
 
-1. Seleziona la **[!UICONTROL Blocco Adobe Sign]** e tocca il pulsante **Modifica** ![aem_6_3_edit](assets/aem_6_3_edit.png) icona. Vengono visualizzate le opzioni per aggiungere campi e formattare l&#39;aspetto di un campo.
+1. Seleziona la **[!UICONTROL Blocco Adobe Sign]** e selezionare il **Modifica** ![aem_6_3_edit](assets/aem_6_3_edit.png) icona. Vengono visualizzate le opzioni per aggiungere campi e formattare l&#39;aspetto di un campo.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **R.** Seleziona e aggiungi [!DNL Adobe Sign] campi. **B.** Espandi [!DNL Adobe Sign] blocco alla visualizzazione a schermo intero
 
-1. Tocca il **[!UICONTROL Campo Adobe Sign]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icona. Vengono visualizzate le opzioni per selezionare e aggiungere [!DNL Adobe Sign] campi.
+1. Seleziona la **[!UICONTROL Campo Adobe Sign]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icona. Vengono visualizzate le opzioni per selezionare e aggiungere [!DNL Adobe Sign] campi.
 
-   Espandi **[!UICONTROL Tipo]** campo a discesa da selezionare **[!UICONTROL Firma digitale]** e tocca il **Fine** icona per aggiungere il campo selezionato a [!DNL Adobe Sign] blocco.
+   Espandi **[!UICONTROL Tipo]** campo a discesa da selezionare **[!UICONTROL Firma digitale]** e seleziona la **Fine** icona per aggiungere il campo selezionato a [!DNL Adobe Sign] blocco.
 
    ![Firme digitali](assets/digital_signatures_new.png)
 
@@ -286,7 +286,7 @@ Utilizza il componente Passaggio di firma per fornire un’area in cui firmare e
 Per configurare il componente Passaggio firma, effettua le seguenti operazioni:
 
 1. Trascina la selezione **[!UICONTROL Passaggio di firma]** dal browser Componenti al modulo.
-1. Seleziona il componente del passaggio Firma appena aggiunto e tocca il **Configura** ![configura](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del passaggio Firma. Configura le seguenti proprietà:
+1. Seleziona il componente del passaggio Firma appena aggiunto e fai clic sul pulsante **Configura** ![configura](assets/configure.png) icona. Apre il browser delle proprietà e visualizza le proprietà del passaggio Firma. Configura le seguenti proprietà:
 
    * **[!UICONTROL Nome]**: specifica il nome del componente.
 
@@ -300,7 +300,7 @@ Per configurare il componente Passaggio firma, effettua le seguenti operazioni:
 
    * **[!UICONTROL Classe CSS]**: specifica la classe CSS per il componente.
 
-   Tocca Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche.
+   Seleziona Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche.
 
    ![Passaggio di firma](assets/signature_step_new.png)
 

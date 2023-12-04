@@ -11,9 +11,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1381'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <li><p><strong>Ruota fotocamera 3D</strong> - Ruota la vista attorno alla scena 3D e agli oggetti.</p> Mouse: clic sinistro + trascinamento </p> Touch-screen: Premere e trascinare</p></li>
       <li><p><strong>Sposta la fotocamera</strong> - Sposta la vista verso sinistra, destra, l'alto o il basso.</p> Mouse: clic con il pulsante destro del mouse e trascinamento </p> Touch-screen: pressione di due dita + trascinamento</p></li>
       <li><p><strong>Zoom fotocamera</strong> - Ingrandire la fotocamera in modo da poterla spostare all'interno o all'esterno delle aree della scena 3D.</p> Mouse: rotellina </p> Touch-screen: pizzico di dito</p></li>
-      <li><p><strong>Ricentro fotocamera</strong> - Ruota la vista attorno alla scena 3D e agli oggetti.</p> Mouse: doppio clic </p> Touch-screen: doppio tocco</li></ul></td>
+      <li><p><strong>Ricentro fotocamera</strong> - Ruota la vista attorno alla scena 3D e agli oggetti.</p> Mouse: doppio clic </p> Touch-screen: selezione doppia</li></ul></td>
       </tr>
       <tr>
       <td><p>Immagine</p> </td>
@@ -79,7 +79,7 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall’elenco, seleziona il visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se ti trovi su un touch-screen, tocca due volte l’immagine per ingrandirla di seguito. Quando si raggiunge lo zoom massimo, toccare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>File multimediali</td>
@@ -100,7 +100,7 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall’elenco, seleziona il visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> in modo da aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se ti trovi su un touch-screen, tocca due volte l’immagine per ingrandirla di seguito. Quando si raggiunge lo zoom massimo, toccare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> in modo da aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>Set 360 gradi</td>
@@ -109,7 +109,7 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall’elenco, seleziona il visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se ti trovi su un touch-screen, tocca due volte l’immagine per ingrandirla di seguito. Quando si raggiunge lo zoom massimo, toccare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>Set di file multimediali diversi</td>
@@ -118,7 +118,7 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Fai clic sull’icona nell’angolo superiore sinistro della pagina per visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong> dall’elenco, seleziona il visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se ti trovi su un touch-screen, tocca due volte l’immagine per ingrandirla di seguito. Quando si raggiunge lo zoom massimo, toccare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
       <tr>
       <td>Set carosello</td>
@@ -139,7 +139,7 @@ Per abilitare o disabilitare i predefiniti visualizzatore nell&#39;interfaccia u
       </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
       <ul>
       <li>Nell’angolo in alto a sinistra della pagina, seleziona l’icona in modo da visualizzare l’elenco a discesa. Seleziona <strong>Visualizzatori</strong>, quindi seleziona un visualizzatore da applicare alla risorsa.</li>
-      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se ti trovi su un touch-screen, tocca due volte l’immagine per ingrandirla di seguito. Quando si raggiunge lo zoom massimo, toccare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
+      </ul> <p>Utilizza il <strong>+</strong> e <strong>-</strong> icone per aumentare o diminuire rispettivamente lo zoom dell'immagine selezionata. Seleziona <strong>Reimposta</strong> se si desidera ripristinare lo zoom originale.<br /> Se vi trovate su un touch-screen, selezionate due volte l'immagine da ingrandire a intervalli regolari. Quando si raggiunge lo zoom massimo, selezionare nuovamente l'immagine per ripristinare lo stato di zoom. Trascinare sull'immagine per spostarla.</p> </td>
       </tr>
     </tbody>
     </table>

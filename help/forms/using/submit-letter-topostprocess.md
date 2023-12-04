@@ -11,7 +11,7 @@ discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -52,13 +52,13 @@ Per associare i processi di post a lettere o comunicazioni interattive, è innan
 
    ![Schermata Crea lettera con post-processi elencati](assets/0configmanager.png)
 
-1. Per autenticare un processo/servizio, copia il nome di un processo, torna alla pagina Configurazioni della console web di Adobe Experience Manager > Configurazione dell’SDK client di AEM Forms e aggiungi il processo come nuovo servizio.
+1. Per autenticare un processo/servizio, copia il nome di un processo, torna alla pagina Configurazioni console web Adobe Experience Manager > Configurazione SDK client AEM Forms e aggiungi il processo come nuovo servizio.
 
    Se, ad esempio, nell&#39;elenco a discesa della pagina Proprietà della lettera viene visualizzato il nome del processo come Forms Workflow -> ValidCCPostProcess/SaveXML, aggiungere un nome di servizio come `ValidCCPostProcess/SaveXML`.
 
 1. Per utilizzare AEM Forms sui flussi di lavoro JEE per la post-elaborazione, imposta i parametri e gli output necessari. I valori predefiniti dei parametri sono indicati di seguito.
 
-   Vai alla pagina Configurazioni della console web Adobe Experience Manager > **[!UICONTROL Configurazioni gestione corrispondenza]** e imposta i seguenti parametri:
+   Vai alla pagina Configurazioni console Web Adobe Experience Manager > **[!UICONTROL Configurazioni gestione corrispondenza]** e imposta i seguenti parametri:
 
    1. **inPDFDoc (parametro documento PDF):** Un documento PDF come input. Questo input contiene la lettera sottoposta a rendering come input. I nomi dei parametri indicati sono configurabili. Possono essere configurate dalle configurazioni di Gestione della corrispondenza dalla configurazione.
    1. **inXMLDoc (parametro dati XML):** Un documento XML come input. Questo input contiene i dati immessi dall&#39;utente sotto forma di XML.
@@ -116,10 +116,10 @@ Le istanze di lettere salvate possono essere ulteriormente manipolate, ad esempi
 
 Nell&#39;interfaccia utente di CCR, completare i passaggi seguenti per associare un processo post a una lettera:
 
-1. Passa il puntatore del mouse sopra una lettera e tocca **Visualizza proprietà**.
+1. Passa il puntatore del mouse su una lettera e seleziona **Visualizza proprietà**.
 1. Seleziona **Modifica**.
 1. Nel menu a discesa Proprietà di base, selezionare il processo di post da associare alla lettera. Sia i processi post relativi all’AEM che quelli relativi al Forms sono elencati nel menu a discesa.
-1. Tocca **Salva**.
+1. Seleziona **Salva**.
 1. Dopo aver configurato la lettera con l’elaborazione post, pubblicarla e, facoltativamente, nell’istanza di pubblicazione, specificare l’URL di elaborazione nel servizio Impostazioni DS AEM. In questo modo il processo di post viene eseguito sull’istanza di elaborazione.
 
 ## Ricarica un&#39;istanza bozza di lettera  {#reloaddraft}

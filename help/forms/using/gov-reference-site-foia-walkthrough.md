@@ -4,9 +4,9 @@ description: Consulta la procedura dettagliata sul sito di riferimento We.Gov pe
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Ai sensi del Freedom of Information Act, Sarah richiede una copia dei registri d
 
 ### Vedi tu stesso {#see-it-yourself}
 
-Nel browser, aprire `https://<hostname>:<PublishPort>/wegov`. Nel sito We.Gov, tocca Applicazioni > Tutte le applicazioni. Nella pagina Tutte le applicazioni, toccare Applica in Applicazione per richiesta FOIA.
+Nel browser, aprire `https://<hostname>:<PublishPort>/wegov`. Nel sito We.Gov, selezionare Applicazioni > Tutte le applicazioni. Nella pagina Tutte le applicazioni, selezionare Applica in Applicazione per richiesta FOIA.
 
 ## Sarah inizia la sua richiesta di informazioni sotto FOIA {#sarah-starts-her-application-for-information-under-foia}
 
@@ -54,7 +54,7 @@ Sarah fa clic su **Applica** e nella pagina del modulo di richiesta del Freedom 
 
 Richiesta di copia dei registri dei casi relativi all’amministrazione per bambini e famiglie per gli anni fiscali dal 2013 al 2016
 
-In qualsiasi momento, Sarah può toccare **Salva** per salvare una bozza del modulo e tornare in seguito per compilare il modulo e inviarlo. Sarah invia il modulo.
+In qualsiasi momento, Sarah può selezionare **Salva** per salvare una bozza del modulo e tornare in seguito per compilare il modulo e inviarlo. Sarah invia il modulo.
 
 >[!NOTE]
 >

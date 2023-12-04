@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1150'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando i
    >
    >Non sono supportati più componenti Contenitore di AEM Forms in una pagina.
 
-1. Tocca il componente Contenitore AEM Forms incorporato nella pagina Sites, quindi tocca ![icona_impostazioni](assets/settings_icon.png) sulla barra delle azioni. Il **[!UICONTROL Modifica contenitore AEM Forms]** viene visualizzata una finestra di dialogo.
+1. Seleziona il componente Contenitore AEM Forms incorporato nella pagina Sites, quindi seleziona ![icona_impostazioni](assets/settings_icon.png) sulla barra delle azioni. Il **[!UICONTROL Modifica contenitore AEM Forms]** viene visualizzata una finestra di dialogo.
 1. Nella finestra di dialogo Modifica contenitore AEM Forms, specifica quanto segue.
 
    * **Tipo risorsa:** Seleziona il tipo di risorsa da incorporare. Le opzioni sono modulo adattivo e comunicazione interattiva
@@ -88,7 +88,7 @@ La pagina dei siti AEM mantiene un riferimento al modulo adattivo e alla comunic
 Per modificare la configurazione o la proprietà del modulo adattivo incorporato e della comunicazione interattiva, effettua una delle seguenti operazioni.
 
 * Apri il modulo originale nei moduli adattivi o nella comunicazione interattiva nei rispettivi editor e modificali.
-* In modalità di modifica, tocca il modulo adattivo o la comunicazione interattiva dalla pagina del sito, quindi tocca **[!UICONTROL Modifica in una nuova finestra]**. Il modulo originale viene aperto in modalità di modifica modificabile.
+* Seleziona il modulo adattivo o la comunicazione interattiva dalla pagina del sito in modalità di modifica, quindi seleziona **[!UICONTROL Modifica in una nuova finestra]**. Il modulo originale viene aperto in modalità di modifica modificabile.
 
 >[!NOTE]
 >

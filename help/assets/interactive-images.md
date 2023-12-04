@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4275'
+source-wordcount: '4130'
 ht-degree: 1%
 
 ---
@@ -265,7 +265,7 @@ Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immag
 
    * Selezionare l&#39;immagine in modo da poterla aprire nella pagina Visualizzazione dettagli. Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
 
-1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Aggiungi punto attivo]** (icona a forma di dito che tocca) per aprire la pagina Gestione punti attivi.
+1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Aggiungi punto attivo]** (icona di selezione del dito) per aprire la pagina Gestione punti attivi.
 1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Punto attivo]**.
 
    1. Nell&#39;angolo superiore sinistro della pagina Gestione punti attivi, seleziona **[!UICONTROL Punto attivo]**.

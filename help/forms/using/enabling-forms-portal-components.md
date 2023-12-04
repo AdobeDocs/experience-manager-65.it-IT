@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 2%
+source-wordcount: '332'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
 I componenti del portale dei moduli non sono pronti all’uso. Per visualizzare i componenti nell’elenco dei componenti disponibili nella barra laterale AEM, effettua le seguenti operazioni:
@@ -30,15 +30,15 @@ I componenti del portale dei moduli non sono pronti all’uso. Per visualizzare 
 
 1. Per le pagine che utilizzano un modello statico, effettua le seguenti operazioni:
 
-   1. Nell’intestazione della pagina, tocca ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) > **Progettazione** per aprire la pagina in modalità Progettazione.
-   1. Tocca un componente (con un bordo blu), quindi tocca ![a livello di campo](assets/field-level.png) per selezionare il sistema paragrafo contenente il componente corrente.
-   1. Nel sistema paragrafo, tocca ![icona_impostazioni](assets/settings_icon.png) per aprire la finestra di dialogo Modifica per il sistema paragrafo.
-   1. Dall’elenco di **[!UICONTROL Componenti consentiti]**, abilita le caselle di controllo per **[!UICONTROL Document Services]** e **[!UICONTROL Predicati Document Services]** componenti. Tocca **[!UICONTROL OK]**.
+   1. Nell’intestazione della pagina, seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) > **Progettazione** per aprire la pagina in modalità Progettazione.
+   1. Seleziona un componente (con bordo blu), quindi fai clic su ![a livello di campo](assets/field-level.png) per selezionare il sistema paragrafo contenente il componente corrente.
+   1. Nel sistema paragrafo, selezionate ![icona_impostazioni](assets/settings_icon.png) per aprire la finestra di dialogo Modifica per il sistema paragrafo.
+   1. Dall’elenco di **[!UICONTROL Componenti consentiti]**, abilita le caselle di controllo per **[!UICONTROL Document Services]** e **[!UICONTROL Predicati Document Services]** componenti. Seleziona **[!UICONTROL OK]**.
 
 1. Per le pagine che utilizzano un modello dinamico, effettua le seguenti operazioni:
 
-   1. Nell’intestazione della pagina, tocca ![proprietà](assets/properties.png) > **Modifica modello** per aprire il modello della pagina.
-   1. Tocca **Contenitore di layout** e tocca ![Gestione feed](/help/forms/using/assets/feedmanagement.png). In **Componenti consentiti** , abilita **Servizi documentali e predicati servizi documentali** opzioni e tocca ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Nell’intestazione della pagina, seleziona ![proprietà](assets/properties.png) > **Modifica modello** per aprire il modello della pagina.
+   1. Seleziona **Contenitore di layout** e seleziona ![Gestione feed](/help/forms/using/assets/feedmanagement.png). In **Componenti consentiti** , abilita **Servizi documentali e predicati servizi documentali** e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

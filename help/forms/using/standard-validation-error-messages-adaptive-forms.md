@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 2%
+source-wordcount: '2357'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 | AEM 6.5 | Questo articolo |
 
 
-AEM Forms fornisce gestori predefiniti di successo e di errori per l’invio di moduli. Fornisce inoltre funzionalità per personalizzare le funzioni del gestore degli errori. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un servizio esterno viene richiamato utilizzando le API, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull’evento di successo o errore per l’invio. Le informazioni vengono passate come parametri al gestore pertinente per eseguire la funzione. Un gestore degli errori consente di gestire e visualizzare gli errori o i problemi di convalida rilevati.
+AEM Forms fornisce gestori predefiniti di successo e di errori per l’invio di moduli. Fornisce inoltre funzionalità per personalizzare le funzioni del gestore degli errori. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel backend per codici di errore specifici o informare il cliente che il servizio non è disponibile. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un servizio esterno viene richiamato utilizzando le API, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull’evento di successo o errore per l’invio. Le informazioni vengono passate come parametri al gestore pertinente per eseguire la funzione. Un gestore degli errori consente di gestire e visualizzare gli errori o i problemi di convalida rilevati.
 
 ![flusso di lavoro del gestore degli errori per informazioni su come aggiungere un gestore degli errori personalizzato nei moduli](/help/forms/using/assets/error-handler-workflow.png)
 
@@ -206,8 +206,8 @@ Utilizzando l’editor di regole, puoi:
 È supportato un gestore degli errori predefinito per visualizzare i messaggi di errore sui campi se la risposta di errore si trova nello schema standard o in un errore di convalida lato server.
 Per informazioni su come utilizzare un gestore degli errori predefinito utilizzando [Servizio di richiamo dell’editor di regole](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) , ad esempio un semplice modulo adattivo con due campi, **ID animale domestico** e **Nome animale domestico** e utilizza un gestore degli errori predefinito in corrispondenza di **ID animale domestico** per verificare la presenza di vari errori restituiti dall’endpoint REST configurato per richiamare un servizio esterno, ad esempio, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Per aggiungere un gestore degli errori predefinito tramite l’azione Richiama servizio dell’editor di regole, esegui i passaggi seguenti:
 
-1. Apri un modulo adattivo in modalità di authoring, seleziona un componente modulo e tocca **[!UICONTROL Editor regole]** per aprire l’editor di regole.
-1. Tocca **[!UICONTROL Crea]**.
+1. Apri un modulo adattivo in modalità di authoring, seleziona un componente modulo e fai clic su **[!UICONTROL Editor regole]** per aprire l’editor di regole.
+1. Seleziona **[!UICONTROL Crea]**.
 1. Creare una condizione in **Quando** sezione della regola. Ad esempio: **Quando[Nome del campo ID animale domestico]** è stato modificato. Seleziona viene modificato dal **Seleziona stato** elenco a discesa.
 1. In **Then** sezione, seleziona **[!UICONTROL Richiama servizio]** dal **Seleziona azione** elenco a discesa.
 1. Seleziona un **Servizio post** e le associazioni di dati corrispondenti dalla **Input** sezione. Ad esempio, per convalidare **ID animale domestico**, seleziona un **Servizio post** as **GET /pet/{petId}** e seleziona **ID animale domestico** nel **Input** sezione.
@@ -310,8 +310,8 @@ In questo caso, il nome della libreria client viene fornito come `customfunction
 
 Per utilizzare un gestore degli errori personalizzato utilizzando **[!UICONTROL Servizio di richiamo dell’editor di regole]** azione:
 
-1. Apri un modulo adattivo in modalità di authoring, seleziona un componente modulo e tocca **[!UICONTROL Editor regole]** per aprire l’editor di regole.
-1. Tocca **[!UICONTROL Crea]**.
+1. Apri un modulo adattivo in modalità di authoring, seleziona un componente modulo e fai clic su **[!UICONTROL Editor regole]** per aprire l’editor di regole.
+1. Seleziona **[!UICONTROL Crea]**.
 1. Creare una condizione in **Quando** sezione della regola. Ad esempio, Quando **[Nome del campo ID animale domestico]** è stato modificato, seleziona **è stato modificato** dal **Seleziona stato** elenco a discesa.
 1. In **Then** sezione, seleziona **[!UICONTROL Richiama servizio]** dal **Seleziona azione** elenco a discesa.
 1. Seleziona un **Servizio post** e le associazioni di dati corrispondenti dalla **Input** sezione. Ad esempio, per convalidare **ID animale domestico**, seleziona un **Servizio post** as **GET /pet/{petId}** e seleziona **ID animale domestico** nel **Input** sezione.
@@ -339,7 +339,7 @@ If the server validation error message does not display in the standard format, 
 
 Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
+1. In adaptive form authoring mode, select the Form Container object and select ![adaptive form properties](assets/configure_icon.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
@@ -349,7 +349,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
 
-1. Tap ![Save](assets/save_icon.png) to save the properties.
+1. Select ![Save](assets/save_icon.png) to save the properties.
 
 ### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
 
@@ -357,10 +357,10 @@ AEM Forms provides out-of-the-box success and error handlers for form submission
 
 Execute the following steps to add custom error handler on Adaptive Form submission:
 
-1. Open an Adaptive Form in authoring mode, select any form object, and tap  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
+1. Open an Adaptive Form in authoring mode, select any form object, and select  to open the rule editor.
+1. Select **[!UICONTROL Form]** in the Form Objects tree and select **[!UICONTROL Create]**.
 1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
+1. Write a rule to convert custom error structure to the standard error structure and select **[!UICONTROL Done]** to save the rule.
 
 The following is a sample code to convert a custom error structure to the standard error structure:
 

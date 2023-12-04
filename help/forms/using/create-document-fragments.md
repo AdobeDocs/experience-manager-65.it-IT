@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 2%
+source-wordcount: '1653'
+ht-degree: 3%
 
 ---
 
@@ -50,7 +50,7 @@ Utilizzare **FDM_Create_First_IC**, come descritto nella [Crea modello dati modu
 
 Il frammento del documento Dettagli distinta include i campi riportati di seguito.
 
-| Campo | Sorgente dati |
+| Campo | Origine dati |
 |---|---|
 | N. fattura | Interfaccia utente agente |
 | Periodo di fatturazione | Interfaccia utente agente |
@@ -68,16 +68,16 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
    1. Seleziona **Modello dati modulo** dal **Modello dati** sezione.
 
-   1. Seleziona **FDM_Create_First_IC** come modello di dati del modulo e tocca **Seleziona**.
+   1. Seleziona **FDM_Create_First_IC** come modello di dati del modulo e seleziona **Seleziona**.
 
-   1. Tocca **Successivo**.
+   1. Seleziona **Avanti**.
 
-1. Seleziona la **Variabili** nel riquadro a sinistra e tocca **Crea**.
+1. Seleziona la **Variabili** nel riquadro a sinistra e seleziona **Crea**.
 1. In **Crea variabile** sezione:
 
    1. Invio **Invoicenum** come nome della variabile.
    1. Seleziona **Stringa** come tipo.
-   1. Tocca **Crea**.
+   1. Seleziona **Crea**.
 
    ![Crea variabile di tipo stringa](assets/variable_create_string_new.png)
 
@@ -111,7 +111,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
 Il frammento del documento Dettagli cliente include i campi seguenti:
 
-| Campo | Sorgente dati |
+| Campo | Origine dati |
 |---|---|
 | Nome cliente | Modello dati modulo |
 | Indirizzo | Modello dati modulo |
@@ -132,16 +132,16 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
    1. Seleziona **Modello dati modulo** dal **Modello dati** sezione.
 
-   1. Seleziona **FDM_Create_First_IC** come modello di dati del modulo e tocca **Seleziona**.
+   1. Seleziona **FDM_Create_First_IC** come modello di dati del modulo e seleziona **Seleziona**.
 
-   1. Tocca **Successivo**.
+   1. Seleziona **Avanti**.
 
-1. Seleziona la **Variabili** nel riquadro a sinistra e tocca **Crea**.
+1. Seleziona la **Variabili** nel riquadro a sinistra e seleziona **Crea**.
 1. In **Crea variabile** sezione:
 
    1. Invio **Placesupply** come nome della variabile.
    1. Seleziona **Stringa** come tipo.
-   1. Tocca **Crea**.
+   1. Seleziona **Crea**.
 
    Ripeti i passaggi 4 e 5 per creare le seguenti variabili:
 
@@ -176,7 +176,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
 Il frammento del documento Sintetico distinta include i campi riportati di seguito.
 
-| Campo | Sorgente dati |
+| Campo | Origine dati |
 |---|---|
 | Saldo precedente | Interfaccia utente agente |
 | Pagamenti | Interfaccia utente agente |
@@ -195,16 +195,16 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
    1. Seleziona **Modello dati modulo** dal **Modello dati** sezione.
 
-   1. Seleziona **FDM_Create_First_IC** come modello di dati del modulo e tocca **Seleziona**.
+   1. Seleziona **FDM_Create_First_IC** come modello di dati del modulo e seleziona **Seleziona**.
 
-   1. Tocca **Successivo**.
+   1. Seleziona **Avanti**.
 
-1. Seleziona la **Variabili** nel riquadro a sinistra e tocca **Crea**.
+1. Seleziona la **Variabili** nel riquadro a sinistra e seleziona **Crea**.
 1. In **Crea variabile** sezione:
 
    1. Invio **Saldo precedente** come nome della variabile.
    1. Seleziona **Numero** come tipo.
-   1. Tocca **Crea**.
+   1. Seleziona **Crea**.
 
    Ripeti i passaggi 4 e 5 per creare le seguenti variabili:
 
@@ -240,7 +240,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
 Il frammento del documento Riepilogo spese include i campi riportati di seguito.
 
-| Campo | Sorgente dati |
+| Campo | Origine dati |
 |---|---|
 | Spese di chiamata | Modello dati modulo |
 | Spese di conferenza telefonica | Modello dati modulo |
@@ -262,9 +262,9 @@ Per creare testo statico e utilizzare gli elementi del modello dati modulo nel f
 
    1. Seleziona **Modello dati modulo** dal **Modello dati** sezione.
 
-   1. Seleziona **FDM_Create_First_IC** come modello di dati del modulo e tocca **Seleziona**.
+   1. Seleziona **FDM_Create_First_IC** come modello di dati del modulo e seleziona **Seleziona**.
 
-   1. Tocca **Successivo**.
+   1. Seleziona **Avanti**.
 
 1. Crea testo statico per i campi seguenti utilizzando il riquadro di destra:
 
@@ -293,7 +293,7 @@ Per creare testo statico e utilizzare gli elementi del modello dati modulo nel f
 
    ![Riepilogo addebiti](assets/summary_charges_static_fdm_new.png)
 
-1. Seleziona il testo nella **Spese per servizi a valore aggiunto** riga e tocca **Crea regola** per creare una condizione in base alla quale visualizzare la riga nella comunicazione interattiva:
+1. Seleziona il testo nella **Spese per servizi a valore aggiunto** riga e seleziona **Crea regola** per creare una condizione in base alla quale visualizzare la riga nella comunicazione interattiva:
 1. Il giorno **Crea regola** finestra popup:
 
    1. Seleziona **Modelli di dati e variabili** e poi **effetti** > **callcharge**.

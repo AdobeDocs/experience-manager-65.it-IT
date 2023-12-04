@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -32,16 +32,16 @@ La funzionalità delle bozze è attivata come funzionalità integrata. Quando un
 Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti operazioni:
 
 1. Trascina la selezione **Bozze e invii** nella categoria Servizi basati su documenti, nel browser Componenti di sulla pagina.
-1. Tocca il componente, quindi tocca ![icona_impostazioni](assets/settings_icon.png) per aprire la finestra di dialogo Modifica del componente.
+1. Seleziona il componente, quindi fai clic su ![icona_impostazioni](assets/settings_icon.png) per aprire la finestra di dialogo Modifica del componente.
 
    ![Componente Bozze e invio](assets/drafts-submissions-edit.png)
 
-1. Nella finestra di dialogo Modifica, specifica i seguenti dettagli e tocca **Fine** per salvare le impostazioni.
+1. Nella finestra di dialogo Modifica, specifica i dettagli seguenti e seleziona **Fine** per salvare le impostazioni.
 
 <table>
  <tbody>
   <tr>
-   <th>Tabulazione</th>
+   <th>Linguetta</th>
    <th>Configurazione</th>
    <th>Descrizione</th>
   </tr>
