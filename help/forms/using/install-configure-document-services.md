@@ -4,10 +4,10 @@ description: Installa AEM Forms Document Services per creare, assemblare, distri
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
 workflow-type: tm+mt
-source-wordcount: '5512'
-ht-degree: 2%
+source-wordcount: '5521'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ AEM Forms fornisce un set di servizi OSGi per eseguire diverse operazioni a live
 
 * **Servizio di output:** Consente di creare documenti in diversi formati, tra cui PDF, stampanti laser e stampanti di etichette. I formati delle stampanti laser sono PostScript e Printer Control Language (PCL). Per ulteriori informazioni, consulta [Servizio di output](/help/forms/using/output-service.md).
 
-* **Servizio PDF Generator:** Il servizio PDF Generator fornisce API per la conversione di formati di file nativi in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF. Per ulteriori informazioni, consulta [Servizio PDF Generator](aem-document-services-programmatically.md#pdfgeneratorservice).
+* **Servizio PDF Generator:** Il servizio PDF Generator fornisce API per convertire i formati di file nativi in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF. Per ulteriori informazioni, consulta [Servizio PDF Generator](aem-document-services-programmatically.md#pdfgeneratorservice).
 
 * **Servizio Estensione Reader:** Consente all’organizzazione di condividere facilmente i documenti interattivi di PDF estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio attiva funzioni non disponibili quando un documento PDF viene aperto mediante Adobe Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Per ulteriori informazioni, consulta [Servizio di estensione Reader](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
 
@@ -370,7 +370,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
    1. Seleziona **[!UICONTROL Forms]** dal **[!UICONTROL Soluzione]** elenco a discesa.
    2. Seleziona la versione e digita per il pacchetto. È inoltre possibile utilizzare **[!UICONTROL Cerca download]** per filtrare i risultati.
 1. Tocca il nome del pacchetto applicabile al sistema operativo in uso, quindi seleziona **[!UICONTROL Accetta termini EULA]**, e tocca **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
    Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nella [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) articolo.
@@ -397,7 +397,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
 
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 
 ### Configurazione del servizio Gestione tipi di carattere  {#configuring-the-font-manager-service}
 
@@ -669,6 +669,10 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 +++
 
++++Microsoft Office 2019 non è in esecuzione su Microsoft Windows Server 2019
+
+* Verificare di non disporre di alcuna connessione remota attiva con il server AEM.
+
 +++Problemi di conversione da HTML a PDF
 
 * Assicurati che le directory dei font vengano aggiunte nell’interfaccia utente di configurazione di PDF Generator.
@@ -787,8 +791,23 @@ Quando l&#39;utente cerca di convertire i file Word o Excel in PDF in Microsoft 
 
 *Messaggio di errore del convertitore primario: ALC-PDG-015-003-Il sistema non può aprire il file di input. Invia di nuovo il file o contatta l’amministratore di sistema.*
 
-Per risolvere il problema, vedi [Impossibile convertire file Word o Excel in PDF su Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Per risolvere i problemi, vedi [Impossibile convertire file Word o Excel in PDF su Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
++++ Impossibile convertire i file Excel in PDF in Windows Server 2019
+
+Quando si converte Microsoft Excel 2019 in PDF in Microsoft Windows Server 2019, è necessario verificare quanto segue:
+
+* Durante l&#39;utilizzo del servizio PDF Generator, il computer Windows non deve disporre di alcuna connessione remota attiva con il server AEM (sessione Windows RDP).
+* La stampante predefinita deve essere impostata su Adobe PDF.
+
+>[!NOTE]
+* Per Apple macOS e Ubuntu OS, non è necessario configurare le impostazioni di cui sopra.
+
++++ Impossibile convertire i file XPS in PDF
+
+Per risolvere il problema: [creare una chiave del Registro di sistema specifica della funzionalità in Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+
++++
 
 ## Passaggi successivi {#next-steps}
 
