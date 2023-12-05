@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8c0c2d89fca7a5ba1a834108ae54fed524b3cbab
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 12%
+source-wordcount: '1604'
+ht-degree: 6%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 12%
 >[!NOTE]
 >
 >Questa funzione è disponibile solo per i clienti Adobe Managed Services.
-
->[!NOTE]
->
->Adobe Experience Manager (AEM) al momento non supporta l’assegnazione di gruppi ai profili. Gli utenti devono essere aggiunti singolarmente.
 
 ## Introduzione {#introduction}
 
@@ -106,7 +102,7 @@ Quando viene eseguito, User Sync recupera un elenco di utenti dall’istanza di 
 
 Lo strumento consente all’amministratore di sistema di mappare i gruppi di utenti nella directory del cliente con la configurazione del prodotto e i gruppi di utenti nella [!DNL Admin Console], la nuova versione di User Sync consente anche la creazione dinamica di gruppi di utenti in [!DNL Admin Console].
 
-Per configurare User Sync, l’organizzazione deve creare un set di credenziali in modo analogo a come userebbe l’[[!DNL User Management] API ](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
+Per impostare User Sync, l’organizzazione deve creare un set di credenziali in modo analogo a come userebbe la [[!DNL User Management] API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 
@@ -129,7 +125,7 @@ Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili qui:
 >
 >Lo strumento User Sync deve essere registrato come client UMAPI di Adobe I/O seguendo la procedura descritta [qui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->È possibile trovare la documentazione della console Adobe I/O [qui](https://developer.adobe.com/developer-console/documenti/guide/).
+>È possibile trovare la documentazione della console Adobe I/O [qui](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
 >Il [!DNL User Management] L&#39;API utilizzata dallo strumento User Sync viene descritta qui [posizione](https://adobe-apiplatform.github.io/umapi-documentation/en/).
