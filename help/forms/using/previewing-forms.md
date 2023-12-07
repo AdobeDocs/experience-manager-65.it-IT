@@ -1,18 +1,14 @@
 ---
 title: Anteprima di un modulo
-seo-title: Previewing a form
 description: Puoi visualizzare in anteprima i moduli prima di pubblicarli o attivarli per assicurarti che soddisfino le aspettative. Le opzioni di anteprima possono variare tra i tipi di modulo supportati.
-seo-description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
-uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 feature: Adaptive Forms
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 4%
+source-wordcount: '406'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +27,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
 <table>
  <tbody>
   <tr>
-   <td><strong>Tipo risorsa</strong><br /> </td>
+   <td><strong>Tipo di risorsa</strong><br /> </td>
    <td><strong>Opzioni di anteprima disponibili</strong><br /> </td>
   </tr>
   <tr>

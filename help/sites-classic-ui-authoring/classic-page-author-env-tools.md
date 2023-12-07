@@ -1,24 +1,22 @@
 ---
 title: 'Authoring: ambiente e strumenti'
 description: La console Siti Web consente di gestire e navigare nel sito Web. Utilizzando due riquadri, puoi espandere la struttura del sito web e intraprendere azioni sugli elementi richiesti.
-uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 7%
+source-wordcount: '892'
+ht-degree: 8%
 
 ---
 
 # Authoring: ambiente e strumenti {#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti disponibili sono accessibili da varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
 ## Amministrazione sito {#site-administration}
 
@@ -188,7 +186,7 @@ Anche la console del sito web [fornisce informazioni sullo stato corrente della 
 
 Durante la modifica di una pagina con l’interfaccia utente classica, è possibile accedere a diverse modalità utilizzando le icone nella parte inferiore della barra laterale:
 
-![Modalità pagina  ](do-not-localize/chlimage_1-12.png)
+![Modalità pagina](do-not-localize/chlimage_1-12.png)
 
 La riga di icone nella parte inferiore del Sidekick consente di cambiare modalità per l&#39;utilizzo delle pagine:
 

@@ -1,18 +1,14 @@
 ---
 title: Parole chiave per moduli adattivi
-seo-title: Adaptive forms keywords
 description: Non è possibile utilizzare queste parole riservate come identificatori nei moduli adattivi.
-seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
-uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
 exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 6%
+source-wordcount: '253'
+ht-degree: 4%
 
 ---
 
@@ -102,7 +98,7 @@ Le parole chiave per i moduli adattivi sono identificatori predefiniti e riserva
   <tr>
    <td><p>editPictureClause</p> </td>
    <td><p>xsdRef</p> </td>
-   <td><p>name</p> </td>
+   <td><p>nome</p> </td>
   </tr>
   <tr>
    <td><p>obbligatorio</p> </td>

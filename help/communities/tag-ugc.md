@@ -1,17 +1,13 @@
 ---
 title: Assegnazione di tag ai contenuti generati dagli utenti
-seo-title: Tagging User Generated Content
 description: L'assegnazione di tag a contenuti generati dagli utenti (UGC, User Generated Content) è il modo in cui i membri della community possono aiutare gli altri membri a cercare contenuti
-seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
-uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 3%

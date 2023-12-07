@@ -1,16 +1,14 @@
 ---
 title: Risoluzione dei problemi di installazione con AEM
 description: Questo articolo descrive alcuni dei problemi di installazione che potrebbero verificarsi con AEM.
-uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -57,7 +55,7 @@ Per risolvere i problemi, effettuare le seguenti operazioni:
 * Provare un menu di scelta rapida (in genere facendo clic con il pulsante destro del mouse) su Quickstart di WCM AEM e selezionare &quot;Apri con....&quot;
 * Verificare se Java™ o Sun Java™ è presente nell&#39;elenco e provare a eseguire con esso AEM WCM. Se hai installato più versioni di Java™, seleziona quella supportata.
 
-   Se si esegue questo passaggio e il sistema operativo in uso offre l&#39;opzione di utilizzare sempre il programma selezionato per eseguire i file .jar, selezionarlo. D’ora in poi il doppio clic dovrebbe funzionare.
+  Se si esegue questo passaggio e il sistema operativo in uso offre l&#39;opzione di utilizzare sempre il programma selezionato per eseguire i file .jar, selezionarlo. D’ora in poi il doppio clic dovrebbe funzionare.
 
 * A volte la reinstallazione della versione Java™ supportata aiuta a ripristinare l’associazione corretta.
 * È sempre possibile eseguire CRX utilizzando la riga di comando o gli script di avvio/arresto come descritto in precedenza in questo documento.
@@ -66,7 +64,7 @@ Per risolvere i problemi, effettuare le seguenti operazioni:
 
 >[!NOTE]
 >
->Vedi anche [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it).
+>Vedi anche [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
 
 
 La stessa CRX ha un ingombro di memoria ridotto. Se l’applicazione in esecuzione all’interno di CRX ha requisiti di memoria più elevati o richiede operazioni con un utilizzo eccessivo della memoria (ad esempio, transazioni di grandi dimensioni), l’istanza JVM in cui viene eseguito CRX deve essere avviata con le impostazioni di memoria appropriate.

@@ -1,18 +1,14 @@
 ---
 title: Creazione di un modello di modulo adattivo personalizzato
-seo-title: Creating a custom adaptive form template
 description: Questo articolo descrive come creare modelli di moduli adattivi personalizzati.
-seo-description: This article describes how to create custom adaptive form templates.
-uuid: 11b5f8cd-c56a-4525-97d5-1938ef5f183d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: affba49e-9712-4d29-858b-2f8ec4f2b1f1
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
@@ -93,7 +89,7 @@ Puoi creare questi componenti utilizzando il componente pagina base per il tuo s
 
 Per creare un modello personalizzato, ad esempio simpleEnrollmentTemplate, effettuare le seguenti operazioni.
 
-1. Passa a CRXDE Lite nell’istanza di authoring.
+1. Passa a CRXDE Liti nell’istanza di authoring.
 
 1. Nella directory /apps, crea la struttura di cartelle per l’applicazione. Ad esempio, se il nome dell’applicazione è società, crea una cartella con questo nome. In genere, la cartella dell&#39;applicazione contiene componenti, configurazione, modelli, src e directory di installazione. Per questo esempio, crea le cartelle dei componenti, della configurazione e dei modelli.
 

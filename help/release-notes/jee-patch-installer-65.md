@@ -1,14 +1,12 @@
 ---
 title: Programma di installazione patch per AEM Forms JEE
 description: Scopri come utilizzare AEM Forms JEE Patch Installer per risolvere i problemi dei componenti di Forms AEM 6.5.
-uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
-discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: f0b59ff25f49f5ca12bc6966882f68b5231a9511
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 20%
+source-wordcount: '509'
+ht-degree: 19%
 
 ---
 

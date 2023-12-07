@@ -1,18 +1,14 @@
 ---
 title: "Tutorial: creare il primo modulo adattivo"
-seo-title: "Tutorial: Create your first adaptive form"
 description: Scopri come creare moduli di classe aziendale, interattivi e reattivi.
-seo-description: Learn to create business class, interactive, and responsive forms.
-uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
 topic-tags: introduction
-discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 11%
+source-wordcount: '905'
+ht-degree: 6%
 
 ---
 
@@ -43,7 +39,7 @@ Il percorso inizia con l’apprendimento del caso d’uso:
 
 Un sito web offre una gamma di prodotti per diversi clienti. I clienti navigano nel portale, selezionano e ordinano i prodotti. Ogni cliente crea un account e fornisce gli indirizzi di spedizione e fatturazione. Un cliente esistente, Sara Rose, sta cercando di aggiungere il suo indirizzo di spedizione al sito web. Il sito Web fornisce un modulo online per aggiungere e aggiornare gli indirizzi di spedizione.
 
-Il sito web viene eseguito su Adobe Experience Manager (AEM) e utilizza l’AEM [!DNL Forms] per l’acquisizione e l’elaborazione dei dati. Il modulo di aggiunta e aggiornamento degli indirizzi è un modulo adattivo. Il sito web memorizza i dettagli dei clienti in un database. Utilizzano il modulo di aggiunta e aggiornamento degli indirizzi per recuperare e visualizzare gli indirizzi disponibili. Inoltre, utilizzano il modulo adattivo per accettare indirizzi nuovi e aggiornati.
+Il sito web viene eseguito su Adobe Experience Manager (AEM) e utilizza l&#39;AEM [!DNL Forms] per l’acquisizione e l’elaborazione dei dati. Il modulo di aggiunta e aggiornamento degli indirizzi è un modulo adattivo. Il sito web memorizza i dettagli dei clienti in un database. Utilizzano il modulo di aggiunta e aggiornamento degli indirizzi per recuperare e visualizzare gli indirizzi disponibili. Inoltre, utilizzano il modulo adattivo per accettare indirizzi nuovi e aggiornati.
 
 ### Prerequisito {#prerequisite}
 
@@ -103,7 +99,7 @@ Obiettivi:
 
 ![adapative-form-styling](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
-I moduli adattivi forniscono temi e un [editor](../../forms/using/themes.md) creare temi per i moduli adattivi. Un tema contiene dettagli sullo stile di componenti e pannelli ed è possibile riutilizzarlo in diversi formati. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l&#39;allineamento e le dimensioni. Quando si applica il tema al modulo, lo stile specificato viene applicato ai componenti corrispondenti del modulo. I moduli adattivi supportano anche lo stile in linea per gli stili specifici di un modulo.
+I moduli adattivi forniscono temi e un [editor](../../forms/using/themes.md) creare temi per i moduli adattivi. Un tema contiene dettagli sullo stile di componenti e pannelli ed è possibile riutilizzarlo in diversi formati. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando si applica il tema al modulo, lo stile specificato viene applicato ai componenti corrispondenti del modulo. I moduli adattivi supportano anche lo stile in linea per gli stili specifici di un modulo.
 
 Obiettivi:
 

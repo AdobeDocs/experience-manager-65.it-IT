@@ -1,18 +1,14 @@
 ---
 title: Risoluzione dei problemi relativi a query lente
-seo-title: Troubleshooting Slow Queries
 description: Scopri come risolvere i problemi relativi alle query lente in Adobe Experience Manager.
-seo-description: null
-uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2230'
 ht-degree: 0%
 
 ---
@@ -440,7 +436,7 @@ Assicurati pertanto che gli indici soddisfino le query, a meno che la combinazio
 
    * Una dashboard delle operazioni dell’AEM che elenca le recenti query lente e popolari eseguite sull’AEM.
 
-* **[Gestione indice](/help/sites-administering/operations-dashboard.md#the-index-manager)**
+* **[Gestore indice](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
    * Un’interfaccia web per le operazioni dell’AEM che visualizza gli indici nell’istanza dell’AEM; facilita la comprensione degli indici esistenti; può essere mirata o incrementata.
 

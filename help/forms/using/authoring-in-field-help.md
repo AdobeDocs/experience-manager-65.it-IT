@@ -1,19 +1,15 @@
 ---
 title: Creazione della Guida contestuale per i campi modulo
-seo-title: Authoring in-context help for form fields
 description: AEM Forms consente di aggiungere assistenza contestuale ai campi e ai pannelli dei moduli adattivi, come testo o contenuti multimediali avanzati, inclusi i video.
-seo-description: AEM Forms lets you add in-context help to adaptive form fields and panels, as text or rich media, including videos.
-uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +27,7 @@ Questo articolo illustra come gli autori di moduli possono aggiungere aiuto cont
 
 Puoi specificare la guida contestuale utilizzando le seguenti opzioni nella sezione Contenuto della guida della scheda Proprietà nella barra laterale.
 
-* [Breve descrizione](../../forms/using/authoring-in-field-help.md#p-short-description-p)
+* [Descrizione breve](../../forms/using/authoring-in-field-help.md#p-short-description-p)
 * [Descrizione lunga](../../forms/using/authoring-in-field-help.md#p-long-description-p)
 
 ![Guida contestuale per i campi modulo](assets/descriptions.png)
@@ -40,7 +36,7 @@ Puoi specificare la guida contestuale utilizzando le seguenti opzioni nella sezi
 >
 >La descrizione lunga sostituisce la descrizione breve. Se sono stati specificati entrambi, verrà visualizzata solo la descrizione Long.
 
-### Breve descrizione {#short-description}
+### Descrizione breve {#short-description}
 
 Il campo Descrizione breve fornisce suggerimenti rapidi e brevi sulla compilazione di un campo modulo. Il testo specificato nel campo Descrizione breve viene visualizzato come descrizione comando quando si passa il puntatore del mouse sul campo.
 

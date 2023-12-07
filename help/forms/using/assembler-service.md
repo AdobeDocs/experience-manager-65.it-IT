@@ -1,18 +1,14 @@
 ---
 title: Utilizzo del servizio Assembler
-seo-title: Using Assembler Service
 description: Il servizio Assembler consente di combinare, ridisporre e integrare documenti PDF e XDP e di ottenere informazioni sui documenti PDF.
-seo-description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
-uuid: 1efce50b-2d98-408e-aa43-ac4999de41a8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2118'
 ht-degree: 6%
 
 ---
@@ -346,4 +342,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-L&#39;utilizzo di DDX e del servizio Assembler per richiamare altri servizi ciclici LiveC può semplificare il diagramma dei processi. Può anche ridurre il carico di lavoro dedicato alla personalizzazione dei flussi di lavoro. (Consulta anche
+L&#39;utilizzo di DDX e del servizio Assembler per richiamare altri servizi ciclici LiveC può semplificare il diagramma dei processi. Può anche ridurre il carico di lavoro dedicato alla personalizzazione dei flussi di lavoro. (Vedere anche

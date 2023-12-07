@@ -1,15 +1,11 @@
 ---
 title: "Tutorial: pianificare la comunicazione interattiva"
-seo-title: Plan your Interactive Communication
 description: Pianificare l'anatomia per la comunicazione interattiva
-seo-description: Plan the anatomy for your Interactive Communication
-uuid: 1c2b5c5b-c655-4559-8748-3e0b343779c2
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 2%
@@ -94,7 +90,7 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
      <li>Codice stato</li>
      <li>Numero di connessioni</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Riepilogo fatture</td>
@@ -108,7 +104,7 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
      <li>Importo dovuto</li>
      <li>Data di scadenza</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Riepilogo delle spese</td>
@@ -126,7 +122,7 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
      <li>TOTALE DA PAGARE (campo calcolato spese d’uso)</li>
     </ul> <p>Tabella - fatture</p> </td>
    <td>Nessun campo</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Chiamate dettagliate - In uscita</td>
@@ -140,20 +136,20 @@ La tabella seguente illustra l’origine dei dati per ciascun campo nell’anato
     </ul> </td>
    <td><p>Tutti i valori</p> <p>Tabella - chiamate</p> </td>
    <td>Nessun campo</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Paga ora</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>Servizi a valore aggiunto</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>

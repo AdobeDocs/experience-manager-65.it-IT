@@ -1,19 +1,15 @@
 ---
 title: Classificazioni Adobe
-seo-title: Adobe Classifications
 description: Scopri come utilizzare le classificazioni Adobe per esportare i dati delle classificazioni in Adobe Analytics.
-seo-description: Learn how to use Adobe Classifications to export classifications data to Adobe Analytics.
-uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 6%
+source-wordcount: '612'
+ht-degree: 5%
 
 ---
 
@@ -98,7 +94,7 @@ Nell&#39;implementazione predefinita di SAINTDefaultTransformer, le risorse figl
 
 | **Chiave** | **Prodotto** | **Prezzo** | **Dimensione** | **Colore** | **Colore^Codice** |
 |---|---|---|---|---|---|
-| 1 | Nome prodotto | 120.90 | M | black | 101 |
+| 1 | Nome prodotto | 120,90 | M | black | 101 |
 
 Le proprietà includono:
 

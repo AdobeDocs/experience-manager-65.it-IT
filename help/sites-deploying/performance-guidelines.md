@@ -1,20 +1,16 @@
 ---
 title: Linee guida sulle prestazioni
-seo-title: Performance Guidelines
 description: Questo articolo fornisce linee guida generali su come ottimizzare le prestazioni della distribuzione AEM.
-seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
-uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2914'
-ht-degree: 6%
+source-wordcount: '2935'
+ht-degree: 5%
 
 ---
 
@@ -242,7 +238,7 @@ Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>App desktop</p> </td>
+   <td><p>app desktop</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -390,7 +386,7 @@ AEM Sites + Assets:
 
 **Scenario del caso d’uso verticale**
 
-Media:
+Contenuti multimediali:
 
 * `Read Article Page (27.4%), Read Page (10.9%), Create Session (2.6%), Activate Content Page (1.7%), Create Content Page (0.4%), Create Paragraph (4.3%), Edit Paragraph (0.9%), Image Component (0.9%), Browse Assets (20%), Read Asset Metadata (8.5%), Download Asset (4.2%), Search Asset (0.2%), Update Asset Metadata (2.4%), Upload Asset (1.2%), Browse Project (4.9%), Read Project (6.6%), Project Add Asset (1.2%), Project Add Site (1.2%), Create Project (0.1%), Author Search (0.4%)`
 * Modalità di esecuzione: utenti simultanei, interazioni miste per utente
@@ -431,7 +427,7 @@ Di seguito sono illustrate le linee guida sull’architettura dei siti AEM e AEM
 
 ### Linee guida per le impostazioni TarMK {#tarmk-settings-guideline}
 
-Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, [vedi questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
+Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, [vedi questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 <table>
  <tbody>
@@ -475,7 +471,7 @@ Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazion
    <td>Flusso di lavoro Aggiorna risorsa DAM</td>
    <td><code>Transient Workflow</code></td>
    <td>spuntato</td>
-   <td>Questo flusso di lavoro gestisce l'aggiornamento delle risorse.</td>
+   <td>Questo flusso di lavoro gestisce l’aggiornamento delle risorse.</td>
   </tr>
   <tr>
    <td>Writeback di metadati DAM</td>
@@ -541,7 +537,7 @@ Per stabilire buone prestazioni quando si utilizza MongoMK, è necessario partir
 
 ### Linee guida per le impostazioni MongoMK {#mongomk-settings-guidelines}
 
-Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, [vedi questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
+Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, [vedi questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 <table>
  <tbody>

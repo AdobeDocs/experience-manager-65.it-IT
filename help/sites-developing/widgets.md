@@ -1,17 +1,15 @@
 ---
 title: Utilizzo ed estensione dei widget (interfaccia classica)
 description: L'interfaccia Web di Adobe Experience Manager utilizza l'AJAX e altre tecnologie di browser moderne per consentire agli autori di modificare e formattare i contenuti WYSIWYG direttamente sulla pagina Web
-uuid: eb3da415-cbef-4766-a28e-837e238a4156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '4925'
+source-wordcount: '4896'
 ht-degree: 0%
 
 ---
@@ -587,7 +585,7 @@ Il componente viene visualizzato come segue:
 Nella sua versione predefinita, il **componente Panoramica** griglia visualizza una finestra con dati statici in formato tabulare. In questo esempio, la logica è incorporata nel componente jsp in due modi:
 
 * La logica generica è definita tra &lt;script> i tag
-* La logica specifica è disponibile in un file .js separato ed è collegata al JSP. Questa configurazione consente di passare da una logica all’altra (statica/dinamica) commentando la &lt;script> tag.
+* la logica specifica è disponibile in un file .js separato ed è collegata a nel jsp. Questa configurazione consente di passare da una logica all’altra (statica/dinamica) commentando la &lt;script> tag.
 
 Il componente Panoramica griglia:
 

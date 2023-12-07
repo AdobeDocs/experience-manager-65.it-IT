@@ -1,24 +1,20 @@
 ---
 title: Temi di riferimento
-seo-title: Reference Themes
 description: AEM Forms fornisce temi per moduli adattivi che è possibile ottenere da Distribuzione di software e utilizzare per assegnare uno stile a un modulo.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
-uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 1%
+source-wordcount: '525'
+ht-degree: 0%
 
 ---
 
 # Temi di riferimento{#reference-themes}
 
-[Temi](../../forms/using/themes.md) consente di applicare uno stile ai moduli senza una profonda conoscenza dei CSS. Oltre al tema predefinito, puoi ottenere i seguenti temi installando il [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it):
+[Temi](../../forms/using/themes.md) consente di applicare uno stile ai moduli senza una profonda conoscenza dei CSS. Oltre al tema predefinito, puoi ottenere i seguenti temi installando il [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * Beryl
 * Eseg

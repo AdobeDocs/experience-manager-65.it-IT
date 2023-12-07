@@ -1,18 +1,16 @@
 ---
 title: Creazione e gestione delle revisioni nei moduli
-seo-title: Creating and managing reviews in forms
 description: Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti a un modulo.
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 2%
 
 ---
 

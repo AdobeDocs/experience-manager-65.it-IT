@@ -1,17 +1,13 @@
 ---
 title: Framework di aspetto per moduli adattivi e HTML5
-seo-title: Appearance framework for adaptive and HTML5 forms
 description: Mobile Forms esegue il rendering dei modelli di modulo come moduli HTML5. Questi moduli utilizzano i file jQuery, Backbone.js e Underscore.js per l'aspetto e per abilitare gli script.
-seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
-uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -39,7 +35,7 @@ Di seguito sono riportate le opzioni globali impostate. Queste opzioni sono disp
    <th>Descrizione</th>
   </tr>
   <tr>
-   <td>name</td>
+   <td>nome</td>
    <td>Identificatore utilizzato per specificare questo oggetto o evento nelle espressioni di script. Ad esempio, questa proprietà specifica il nome dell'applicazione host.</td>
   </tr>
   <tr>
@@ -247,7 +243,7 @@ Tutti i widget personalizzati devono essere conformi alle specifiche precedenti.
    <th>Descrizione</th>
   </tr>
   <tr>
-   <td>values</td>
+   <td>valori</td>
    <td><p>Array di valori (on/off/neutral).</p> <p>È una matrice di valori per i diversi stati del controllo CheckButton. values[0] è il valore quando lo stato è ON, values[1] è il valore quando lo stato è OFF,<br /> values[2] è il valore quando lo stato è NEUTRAL. La lunghezza della matrice dei valori è uguale al valore dell'opzione di stato.<br /> </p> </td>
   </tr>
   <tr>

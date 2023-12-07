@@ -1,19 +1,15 @@
 ---
 title: Creare un modulo adattivo utilizzando un set di moduli adattivi
-seo-title: Create an adaptive form using a set of adaptive forms
 description: Con AEM Forms, riunisci i moduli adattivi per creare un singolo modulo adattivo di grandi dimensioni e comprenderne le funzioni.
-seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
-uuid: e52e4f90-8821-49ec-89ff-fbf07db69bd2
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 1%
+source-wordcount: '620'
+ht-degree: 0%
 
 ---
 

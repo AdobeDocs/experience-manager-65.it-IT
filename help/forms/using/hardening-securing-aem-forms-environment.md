@@ -1,16 +1,12 @@
 ---
 title: Protezione e protezione dei moduli AEM nell’ambiente OSGi
-seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Scopri consigli e best practice per proteggere AEM Forms sul server OSGi.
-seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
-uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
-discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1434'
 ht-degree: 0%
 
 ---
@@ -77,7 +73,7 @@ Puoi configurare un firewall esterno per consentire a un determinato URL di AEM 
     </ul> </td> 
   </tr>
   <tr>
-   <td>Portale Forms </td> 
+   <td>Forms Portal </td> 
    <td>
     <ul> 
      <li>/content/forms/portal/</li> 

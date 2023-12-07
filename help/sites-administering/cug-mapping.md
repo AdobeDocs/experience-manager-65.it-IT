@@ -1,20 +1,16 @@
 ---
 title: Mappatura personalizzata dei gruppi di utenti in AEM 6.5
-seo-title: Custom User Group Mapping in AEM 6.5
 description: Scopri come funziona la mappatura dei gruppi di utenti personalizzati in Adobe Experience Manager.
-seo-description: Lear how Custom User Group Mapping works in AEM.
-uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -32,7 +28,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><p>Proprietà: cq:cugEnabled</p> <p>Dichiarazione tipo di nodo: N/D, proprietà residua</p> </td>
-   <td><p>Autorizzazione:</p> <p>Nodo: rep:cugPolicy del tipo di nodo rep:CugPolicy</p> <p>Dichiarazione tipo di nodo: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticazione:</p> <p>Tipo mixin: granite:AuthenticationRequired</p> </td>
+   <td><p>Autorizzazione</p> <p>Nodo: rep:cugPolicy del tipo di nodo rep:CugPolicy</p> <p>Dichiarazione tipo di nodo: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticazione</p> <p>Tipo mixin: granite:AuthenticationRequired</p> </td>
    <td><p>Per limitare l’accesso in lettura, al nodo di destinazione viene applicato un criterio CUG dedicato.</p> <p>NOTA: i criteri possono essere applicati solo ai percorsi supportati configurati.</p> <p>I nodi con nome rep:cugPolicy e tipo rep:CugPolicy sono protetti e non possono essere scritti utilizzando chiamate API JCR regolari; utilizza invece la gestione del controllo di accesso JCR.</p> <p>Consulta <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">questa pagina</a> per ulteriori informazioni.</p> <p>Per applicare il requisito di autenticazione a un nodo, è sufficiente aggiungere il tipo mixin granite:AuthenticationRequired.</p> <p>NOTA: rispettato solo sotto i percorsi supportati configurati.</p> </td>
   </tr>
   <tr>

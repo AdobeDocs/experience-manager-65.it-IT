@@ -1,17 +1,13 @@
 ---
 title: Iscrizioni alle community
-seo-title: Communities Subscriptions
 description: I membri della community interagiscono con altri membri tramite e-mail
-seo-description: Community members interact with other members through email
-uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -68,4 +64,4 @@ Se rispondono all&#39;e-mail, il contenuto immesso nella risposta verrà visuali
 
 Il tempo necessario per la pubblicazione di una risposta è controllato dal [intervallo di aggiornamento dell&#39;importazione polling](email.md#configure-polling-importer).
 
-![Controllo qualità](assets/qa.png)
+![QA](assets/qa.png)

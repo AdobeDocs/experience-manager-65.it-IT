@@ -1,19 +1,15 @@
 ---
 title: Struttura della gestione multisito per contenuti di destinazione
-seo-title: How Multisite Management for Targeted Content is Structured
 description: Un diagramma mostra come è strutturato il supporto multisito per contenuti mirati
-seo-description: A diagram shows how multisite support for targeted content is structured
-uuid: 2d30cdf0-ab77-490d-aac0-db3a0d417a58
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
 exl-id: d8ba91ff-ad6e-4540-baff-a2c0c764a299
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 37%
+source-wordcount: '179'
+ht-degree: 38%
 
 ---
 

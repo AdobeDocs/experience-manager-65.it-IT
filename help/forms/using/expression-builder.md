@@ -1,19 +1,15 @@
 ---
 title: Funzioni remote in Expression Builder
-seo-title: Expression Builder
 description: Il Generatore di espressioni in Gestione della corrispondenza consente di creare espressioni e funzioni remote.
-seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
-uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
 exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '783'
 ht-degree: 1%
 
 ---
@@ -26,7 +22,7 @@ Utilizzando il Generatore di espressioni, puoi creare espressioni o condizioni c
 
 Il Generatore di espressioni utilizza internamente le librerie JSP EL, in modo che l’espressione sia conforme alla sintassi JSPEL. Per ulteriori informazioni, consulta [Espressioni di esempio](#exampleexpressions).
 
-![Generatore di espressione](assets/expressionbuilder.png)
+![Generatore di espressioni](assets/expressionbuilder.png)
 
 ### Operatori {#operators}
 
@@ -77,7 +73,7 @@ Le funzioni remote consentono di utilizzare una logica personalizzata nelle espr
 
 Puoi creare un bundle personalizzato per esportare le funzioni remote da utilizzare all’interno delle espressioni. Per creare un bundle personalizzato per esportare le funzioni remote, effettuare le seguenti operazioni. Viene illustrato come scrivere una funzione personalizzata che maiuscole la relativa stringa di input.
 
-1. Definisci un’interfaccia per il servizio OSGi contenente i metodi esportati per l’utilizzo da parte di Gestione espressioni.
+1. Definisci un’interfaccia per il servizio OSGi contenente i metodi che vengono esportati per l’utilizzo da parte di Gestione espressioni.
 1. Dichiara i metodi sull’interfaccia A e aggiungi loro annotazioni con l’annotazione @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignora eventuali metodi non annotati. È inoltre possibile specificare i seguenti attributi facoltativi per l&#39;annotazione ServiceMethod:
 
    1. **Abilitato**: determina se questo metodo è abilitato. Expression Manager ignora i metodi disabilitati.
@@ -118,7 +114,6 @@ Puoi creare un bundle personalizzato per esportare le funzioni remote da utilizz
    * java.util.Calendar
    * java.util.Date
    * java.util.List
-
 
 1. Definisci l’implementazione dell’interfaccia, configurala come servizio OSGI e definisci le seguenti proprietà del servizio:
 

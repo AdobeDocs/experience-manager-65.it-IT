@@ -1,25 +1,21 @@
 ---
 title: Prova di modelli modificabili in We.Retail
-seo-title: Trying out Editable Templates in We.Retail
 description: Scopri come provare i modelli modificabili in Adobe Experience Manager utilizzando We.Retail.
-seo-description: null
-uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 10%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
 # Prova di modelli modificabili in We.Retail{#trying-out-editable-templates-in-we-retail}
 
-Con i modelli modificabili, la creazione e la manutenzione dei modelli non è più un&#39;attività che riguarda solo gli sviluppatori. Un tipo di utente avanzato, detto autore di modelli, può ora creare modelli. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’autore del modello avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
+Con i modelli modificabili, la creazione e la manutenzione dei modelli non è più un&#39;attività che riguarda solo gli sviluppatori. Un tipo di utente avanzato, detto autore di modelli, può ora creare modelli. Gli sviluppatori devono comunque configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che queste nozioni di base sono implementate, l’autore del modello avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
 
 Tutte le pagine di We.Retail sono basate su modelli modificabili, che consentono a chi non è uno sviluppatore di adattare e personalizzare i modelli.
 

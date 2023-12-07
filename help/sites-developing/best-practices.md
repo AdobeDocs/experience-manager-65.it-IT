@@ -1,17 +1,15 @@
 ---
 title: Best practice per gli sviluppatori AEM
-description: I team tecnici e di consulenza di Adobe hanno sviluppato un set completo di best practice per sviluppatori AEM.
-uuid: f962c31f-8140-482f-b189-16376e23bfed
+description: I team di progettazione e consulenza Adobe hanno sviluppato un set completo di best practice per gli sviluppatori AEM.
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 13%
+source-wordcount: '445'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +17,7 @@ ht-degree: 13%
 
 ## Procedure consigliate per gli sviluppatori - Guida introduttiva {#best-practices-for-developers-getting-started}
 
-I team tecnici e di consulenza di Adobe hanno sviluppato un set completo di best practice per sviluppatori AEM. Gli sviluppatori Adobe aderiscono a queste best practice durante lo sviluppo di aggiornamenti di base dei prodotti AEM e del codice cliente per le implementazioni dei clienti.
+I team di progettazione e consulenza Adobe hanno sviluppato un set completo di best practice per gli sviluppatori AEM. Gli sviluppatori Adobe aderiscono a queste best practice durante lo sviluppo di aggiornamenti di base dei prodotti AEM e del codice cliente per le implementazioni dei clienti.
 
 Prima di iniziare il progetto di sviluppo dell’AEM, esamina le seguenti best practice:
 
@@ -94,10 +92,10 @@ HTL (HTML Template Language) è un nuovo sistema di modelli di HTML introdotto c
 
 |  |  |  |
 |---|---|---|
-| Panoramica di HTL | [Panoramica e sintassi di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) | Questo documento descrive cosa è HTL, come passare ad HTL, un progetto di esempio, la sintassi, le espressioni e le istruzioni |
+| Panoramica di HTL | [Panoramica e sintassi di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) | Questo documento descrive cosa è HTL, come passare ad HTL, un progetto di esempio, la sintassi, le espressioni e le istruzioni |
 | Utilizzo dell’API in Java | [API di utilizzo Java HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | Java Use-API per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata. |
 
 >[!NOTE]
 >
 >Il seguente tutorial in più parti potrebbe essere utile per la best practice per impostare un nuovo progetto AEM, con informazioni dettagliate sui Componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti:
->[Guida introduttiva ai AEM Sites: esercitazione WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Guida introduttiva ad AEM Sites: esercitazione WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)

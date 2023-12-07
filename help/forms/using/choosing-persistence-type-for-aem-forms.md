@@ -1,17 +1,13 @@
 ---
 title: Scelta di un tipo di persistenza per un’installazione di AEM Forms
-seo-title: Choosing a persistence type for an AEM Forms installation
 description: Scegli con saggezza un tipo di persistenza. Consente di creare un ambiente AEM Forms efficiente e scalabile.
-seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
-uuid: 1c692502-5039-4757-9358-1772772b3904
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -40,7 +36,7 @@ La tabella seguente elenca tutti i tipi di persistenza supportati e i vari param
   </tr>
   <tr>
    <th><strong>Configurazione autonoma</strong></th>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>

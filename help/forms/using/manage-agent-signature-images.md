@@ -1,20 +1,16 @@
 ---
 title: Gestisci immagini firma agente
-seo-title: Manage agent signature images
 description: Dopo aver creato un modello di lettera, puoi utilizzarlo per creare corrispondenza in AEM Forms gestendo dati, contenuto e allegati.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48b2697e-6065-4e23-9aa8-333e7b11ede1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -36,7 +32,7 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
 1. Verificare che l&#39;immagine della firma dell&#39;agente abbia lo stesso nome del nome utente AEM dell&#39;utente. L&#39;estensione non è necessaria per il nome file dell&#39;immagine.
 1. In CRX, crea una cartella denominata `cmUserRoot` nella cartella dei contenuti.
 
-   1. Passa a `https://'[server]:[port]'/crx/de`. Se necessario, accedi come amministratore.
+   1. Vai a `https://'[server]:[port]'/crx/de`. Se necessario, accedi come amministratore.
 
    1. Fare clic con il pulsante destro del mouse **contenuto** cartella e seleziona **Crea** > **Crea cartella**.
 
@@ -50,7 +46,7 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
 
 1. In Esplora contenuto, passa alla cartella cmUserRoot e aggiungi l’immagine della firma dell’agente.
 
-   1. Passa a `https://'[server]:[port]'/crx/explorer/index.jsp`. Se necessario, accedi come amministratore.
+   1. Vai a `https://'[server]:[port]'/crx/explorer/index.jsp`. Se necessario, accedi come amministratore.
    1. Clic **Esplora contenuti**. Esplora contenuto si apre in una nuova finestra.
    1. In Esplora contenuto passare alla cartella cmUserRoot e selezionarla. Fare clic con il pulsante destro del mouse **cmUserRoot** cartella e seleziona **Nuovo nodo**.
 
@@ -75,6 +71,7 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
       Tra le sottoproprietà di jcr:content vi è jcr:data, che è inattivo. Fare doppio clic su jcr:data. La proprietà diventa modificabile e nella voce viene visualizzato il pulsante Scegli file. Clic **Scegli file** e selezionare il file di immagine da utilizzare come logo. Il file di immagine non deve avere un&#39;estensione.
 
       ![Dati JCR](assets/5_jcrdata.png)
+
    Clic **Salva tutto**.
 
 1. Verificare che l&#39;XDP\layout utilizzato nella lettera disponga di un campo immagine in basso a sinistra (o in un altro punto appropriato del layout in cui si desidera eseguire il rendering della firma) per eseguire il rendering dell&#39;immagine della firma.

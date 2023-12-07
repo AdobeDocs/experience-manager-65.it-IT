@@ -1,20 +1,16 @@
 ---
 title: Supporto delle clausole di immagine per i moduli HTML5
-seo-title: Picture clause support for HTML5 forms
 description: HTML5 Forms supporta la clausola immagine XFA per il valore di visualizzazione e il valore formattato per i simboli di data, testo e numerici.
-seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
-uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 1%
+source-wordcount: '633'
+ht-degree: 0%
 
 ---
 
@@ -138,7 +134,7 @@ Espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono:
    <td>Cifra singola o nulla</td>
   </tr>
   <tr>
-   <td>E</td>
+   <td>Err.</td>
    <td><strong>Formattazione di output</strong>: la parte esponente di un numero a virgola mobile costituito dal simbolo esponenziale (E). Seguito da un segno più o meno facoltativo. Seguito dal valore esponente.<br /> </td>
    <td>Come per la formattazione di output</td>
   </tr>

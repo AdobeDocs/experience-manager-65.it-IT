@@ -1,21 +1,17 @@
 ---
 title: Notifiche community
-seo-title: Communities Notifications
 description: AEM Communities dispone di notifiche che mostrano eventi di interesse per il membro della community connesso
-seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
-uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -94,17 +90,17 @@ Selezionando il collegamento Impostazioni notifica dalla pagina Notifiche, ogni 
 
 Il canale web è sempre abilitato.
 
-![notifications14](assets/notifications1.png)
+![notifiche14](assets/notifications1.png)
 
 Il canale e-mail, che si basa su [configurazione dell’e-mail](/help/communities/email.md), fornisce le stesse impostazioni del canale web.
 
 Per impostazione predefinita, il canale e-mail è disattivato.
 
-![notifications2](assets/notifications2.png)
+![notifiche2](assets/notifications2.png)
 
 Può essere attivata da un membro, ma dipende comunque dalla configurazione dell’e-mail.
 
-![notifications3](assets/notifications3.png)
+![notifiche3](assets/notifications3.png)
 
 ## Visualizzazione delle notifiche {#viewing-notifications}
 
@@ -114,13 +110,13 @@ A [creazione guidata sito community](/help/communities/sites-console.md) ora inc
 
 Quando accedi al sito pubblicato, seleziona `Notifications` Il collegamento visualizzerà tutte le notifiche per il membro.
 
-![notifications4](assets/notifications4.png)
+![notifiche4](assets/notifications4.png)
 
 ### Notifiche e-mail {#email-notifications}
 
 Quando il canale e-mail è abilitato, il membro riceve un messaggio e-mail contenente un collegamento al contenuto sul web.
 
-![notifications5](assets/notifications5.png)
+![notifiche5](assets/notifications5.png)
 
 ## Personalizzare le notifiche e-mail {#customize-email-notifications}
 

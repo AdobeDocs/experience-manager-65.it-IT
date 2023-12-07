@@ -1,18 +1,14 @@
 ---
 title: Mitigazione dei problemi di serializzazione nell’AEM
-seo-title: Mitigating serialization issues in AEM
 description: Scopri come attenuare i problemi di serializzazione nell’AEM.
-seo-description: Learn how to mitigate serialization issues in AEM.
-uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
-source-git-commit: 614c4c88f3f09feb5a400ade9f45f634ac4fbcd5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -76,9 +72,10 @@ La configurazione del firewall è dinamica e può essere modificata in qualsiasi
 1. Ricerca e clic **Configurazione firewall deserializzazione.**
 
    >[!NOTE]
+   >
    Puoi anche raggiungere direttamente la pagina di configurazione accedendo all’URL all’indirizzo:
+   >
    * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-
 
 Questa configurazione contiene la registrazione del inserisco nell&#39;elenco Consentiti di, del inserisco nell&#39;elenco Bloccati di e della deserializzazione.
 
@@ -109,6 +106,7 @@ Dopo aver effettuato l’accesso all’URL, viene visualizzato un elenco di cont
 Per ulteriori informazioni sulla risoluzione dei problemi relativi all&#39;agente, vedere [Gestione Degli Errori Con Il Caricamento Di Dynamic Agent](#handling-errors-with-dynamic-agent-loading) di seguito.
 
 >[!NOTE]
+>
 Se aggiungi `org.apache.commons.collections.functors` al inserisco nell&#39;elenco Consentiti di controllo dello stato di salute dell’, il controllo dello stato di salute ha sempre esito negativo.
 
 ## Gestione degli errori con il caricamento degli agenti dinamici {#handling-errors-with-dynamic-agent-loading}
@@ -124,9 +122,11 @@ Per caricare l&#39;agente manualmente, eseguire le operazioni seguenti:
    ```
 
    >[!NOTE]
+   >
    Richiede che si utilizzi anche l&#39;opzione -nofork CQ/AEM, insieme alle impostazioni di memoria JVM appropriate, in quanto l&#39;agente non è abilitato su una JVM fork.
 
    >[!NOTE]
+   >
    La distribuzione Adobe del file jar dell’agente NotSoSerial si trova nel file `crx-quickstart/opt/notsoserial/` cartella dell’installazione dell’AEM.
 
 1. Arrestare e riavviare la JVM;

@@ -1,19 +1,15 @@
 ---
 title: Introduzione alla personalizzazione dell’area di lavoro dei moduli AEM
-seo-title: Introduction to Customizing AEM form workspace
 description: Introduzione rapida, con informazioni concettuali e tecniche, per personalizzare lo spazio di lavoro LiveCycle AEM Forms per la gestione dei processi.
-seo-description: A quick introduction, with conceptual and technical information, to customize LiveCycle AEM Forms workspace for process management.
-uuid: 38759071-e6b8-4976-8b06-909ad7a786cd
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1752'
 ht-degree: 0%
 
 ---
@@ -53,7 +49,7 @@ Per personalizzare l&#39;area di lavoro, è consigliabile familiarizzare con il 
    <th><p>Componente dell’interfaccia utente modificato</p> </th>
   </tr>
   <tr>
-   <td><p>#intestazione</p> </td>
+   <td><p>#header</p> </td>
    <td><p>Intestazione dell’area di lavoro di AEM Forms</p> </td>
   </tr>
   <tr>

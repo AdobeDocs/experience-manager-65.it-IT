@@ -1,24 +1,22 @@
 ---
 title: Adobe Experience Manager con MongoDB
 description: Scopri le attività e le considerazioni necessarie per una corretta implementazione di Adobe Experience Manager con MongoDB.
-uuid: 8028832d-10de-4811-a769-fab699c162ec
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6408'
+source-wordcount: '6184'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager con MongoDB{#aem-with-mongodb}
 
-Questo articolo ha lo scopo di migliorare la conoscenza sulle attività e sulle considerazioni necessarie per implementare correttamente l’AEM (Adobe Experience Manager) con MongoDB.
+Questo articolo ha lo scopo di migliorare le conoscenze sui compiti e sulle considerazioni necessarie per implementare correttamente l’AEM (Adobe Experience Manager) con MongoDB.
 
 Per ulteriori informazioni relative alla distribuzione, consulta [Distribuzione e manutenzione](/help/sites-deploying/deploy.md) sezione della documentazione.
 
@@ -124,7 +122,7 @@ MongoDB Ops Manager è lo stesso software di MongoDB Cloud Manager. Una volta re
 
 Per eseguire un cluster AEM MongoDB è necessario il monitoraggio a livello di sistema operativo.
 
-Ganglia è un buon esempio di un sistema di questo tipo e fornisce un&#39;immagine sulla gamma e sui dettagli delle informazioni richieste che vanno oltre le metriche di base sullo stato di salute come CPU, media del carico e spazio libero su disco. Per diagnosticare i problemi, sono necessarie informazioni di livello inferiore come i livelli del pool di entropia, l’attesa I/O della CPU e i socket nello stato FIN_WAIT2.
+Ganglia è un buon esempio di tale sistema e fornisce un&#39;immagine sulla gamma e sui dettagli delle informazioni richieste che vanno oltre le metriche di base sullo stato di salute come CPU, media di carico e spazio libero su disco. Per diagnosticare i problemi, sono necessarie informazioni di livello inferiore come i livelli del pool di entropia, l’attesa I/O della CPU e i socket nello stato FIN_WAIT2.
 
 ### Aggregazione registro {#log-aggregation}
 
@@ -207,7 +205,7 @@ cacheSizeInMB=128
 Dove:
 
 * `minRecordLength`
-Dimensioni in byte. I file binari di dimensioni inferiori o uguali a queste vengono memorizzati nell&#39;archivio nodi documento. Invece di memorizzare l’ID del BLOB, viene memorizzato il contenuto del binario. Se i file binari sono maggiori di queste dimensioni, l&#39;ID del file binario viene memorizzato come proprietà del documento nell&#39;insieme dei nodi. Il corpo del file binario viene memorizzato nel file `FileDataStore` su disco. 4096 byte è una dimensione tipica del blocco del file system.
+Dimensione in byte. I file binari di dimensioni inferiori o uguali a queste vengono memorizzati nell&#39;archivio nodi documento. Invece di memorizzare l’ID del BLOB, viene memorizzato il contenuto del binario. Se i file binari sono maggiori di queste dimensioni, l&#39;ID del file binario viene memorizzato come proprietà del documento nell&#39;insieme dei nodi. Il corpo del file binario viene memorizzato nel file `FileDataStore` su disco. 4096 byte è una dimensione tipica del blocco del file system.
 
 * `path`
 Percorso della directory principale dell’archivio dati. Per una distribuzione MongoMK, questo percorso deve essere un file system condiviso disponibile per tutte le istanze AEM. In genere viene utilizzato un server NAS (Network Attached Storage). Per implementazioni cloud come Amazon Web Services, il `S3DataFileStore` è disponibile anche.
@@ -355,7 +353,7 @@ Per regolare le dimensioni della cache interna di WiredTiger, vedere [storage.wi
 
 ### NUMA {#numa}
 
-NUMA (Non-Uniform Memory Access) consente a un kernel di gestire il modo in cui la memoria viene mappata ai core del processore. Anche se questo processo tenta di rendere più veloce l&#39;accesso alla memoria per i core, garantendo che siano in grado di accedere ai dati richiesti, NUMA interferisce con l&#39;introduzione di una latenza aggiuntiva, in quanto non è possibile prevedere la lettura. Di conseguenza, NUMA deve essere disabilitato per `mongod` su tutti i sistemi operativi compatibili.
+NUMA (Non-Uniform Memory Access) consente a un kernel di gestire il modo in cui la memoria viene mappata ai core del processore. Anche se questo processo tenta di rendere più veloce l&#39;accesso alla memoria per i core, garantendo che siano in grado di accedere ai dati richiesti, NUMA interferisce con MMAP introducendo una latenza aggiuntiva, in quanto non è possibile prevedere le letture. Di conseguenza, NUMA deve essere disabilitato per `mongod` su tutti i sistemi operativi compatibili.
 
 In sostanza, in un&#39;architettura NUMA la memoria è connessa alle CPU e le CPU sono collegate a un bus. In un SMP o in un&#39;architettura UMA, la memoria è connessa al bus e condivisa dalle CPU. Quando un thread alloca memoria su una CPU NUMA, viene allocato in base a un criterio. L&#39;impostazione predefinita consiste nell&#39;allocare memoria collegata alla CPU locale del thread a meno che non vi sia spazio libero, nel qual caso utilizza memoria da una CPU libera a un costo maggiore. Una volta allocata, la memoria non si sposta tra le CPU. L’allocazione viene eseguita da un criterio ereditato dal thread padre, che in ultima analisi è il thread che ha avviato il processo.
 
@@ -594,7 +592,7 @@ Poiché Dispatcher è senza stato, può scalare orizzontalmente con facilità. I
 
 L’esecuzione dell’AEM senza Dispatcher richiede la terminazione SSL e il bilanciamento del carico da parte di un’altra applicazione. È necessario perché le sessioni devono avere affinità con l’istanza AEM sulla quale vengono create, un concetto noto come connessioni permanenti. Il motivo è garantire che gli aggiornamenti al contenuto mostrino una latenza minima.
 
-Controlla la [Documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) per ulteriori informazioni su come configurarlo.
+Controlla la [Documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) per ulteriori informazioni su come configurarlo.
 
 ### Configurazione aggiuntiva {#additional-configuration}
 
@@ -626,7 +624,7 @@ Header unset Pragma "expr=(%{REQUEST_STATUS} -eq 200) && (%{REQUEST_URI} =~ /.*l
 
 Se il contenuto viene inviato senza alcun tipo di contenuto, molti browser tentano di indovinare il tipo di contenuto leggendo i primi byte. Questo metodo è chiamato &quot;sniffing&quot;. Lo sniffing apre una vulnerabilità di sicurezza in quanto gli utenti in grado di scrivere nell’archivio potrebbero caricare contenuti dannosi senza alcun tipo di contenuto.
 
-Per questo motivo, è consigliabile aggiungere una `no-sniff` nelle risorse gestite da Dispatcher. Tuttavia, Dispatcher non memorizza nella cache le intestazioni. Di conseguenza, significa che qualsiasi contenuto fornito dal file system locale ha il suo tipo di contenuto determinato dalla sua estensione, piuttosto che utilizzare l’intestazione content-type originale dal suo server AEM di origine.
+Per questo motivo, è consigliabile aggiungere una `no-sniff` nelle risorse gestite da Dispatcher. Tuttavia, Dispatcher non memorizza in cache le intestazioni. Di conseguenza, significa che qualsiasi contenuto fornito dal file system locale ha il suo tipo di contenuto determinato dalla sua estensione, piuttosto che utilizzare l’intestazione content-type originale dal suo server AEM di origine.
 
 Nessun sniff può essere abilitato in modo sicuro se è noto che l’applicazione web non distribuisce mai le risorse memorizzate in cache senza un tipo di file.
 

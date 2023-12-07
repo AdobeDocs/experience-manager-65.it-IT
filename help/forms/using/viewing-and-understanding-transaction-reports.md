@@ -1,17 +1,13 @@
 ---
 title: Visualizzazione e comprensione dei rapporti sulle transazioni
-seo-title: Viewing and Understanding Transaction Reports
 description: Utilizzare i report sulle transazioni per prendere una decisione informata sull'utilizzo del prodotto e sul ribilanciamento degli investimenti in hardware e software.
-seo-description: Use transaction reports to make an informed decision about the product usage and rebalancing investments in hardware and software.
-uuid: 56d9f01d-4778-47c9-bbb2-6650a73a3f59
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -66,7 +62,7 @@ La replica inversa copia i dati della transazione nella casella in uscita predef
 
 1. Accedi alle istanze di authoring come amministratore. Vai a **Strumenti** > **Operazioni** > **Console web**.
 1. Individuare e aprire **Provider archiviazione archivio transazioni Forms** servizio.
-1. Specifica il nome della casella in uscita personalizzata **Caselle in uscita** campo. Fai clic su **Salva**. Viene creata una casella in uscita con il nome specificato in tutte le istanze di authoring.
+1. Specifica il nome della casella in uscita personalizzata **Caselle in uscita** campo. Clic **Salva**. Viene creata una casella in uscita con il nome specificato in tutte le istanze di authoring.
 
 ## Visualizzazione del report delle transazioni {#viewing-the-transaction-report}
 

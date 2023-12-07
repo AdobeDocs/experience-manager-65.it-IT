@@ -1,15 +1,11 @@
 ---
 title: Personalizzazione della pagina dei dettagli dell’attività
-seo-title: Customizing the task details page
 description: Come personalizzare la pagina dei dettagli di un’attività nell’area di lavoro di AEM Forms per modificare le informazioni predefinite visualizzate su un’attività.
-seo-description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
-uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 exl-id: 48c24442-22d2-4d1a-9462-0aba78340281
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -28,9 +24,9 @@ La pagina dei dettagli di un&#39;attività contiene informazioni su un&#39;attiv
 Per personalizzare la pagina dei dettagli dell&#39;operazione:
 
 1. Segui [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Per visualizzare ulteriori informazioni, aggiungi le coppie chiave-valore corrispondenti alla `translation.json` file in `todo`blocco > `details`blocco > `app`blocco > [ `required`blocco].
+1. Per visualizzare ulteriori informazioni, aggiungi le coppie chiave-valore corrispondenti alla `translation.json` file in `todo`blocco > `details`blocco > `app`blocco > [`required`blocco].
 
-   Il [ `required`blocco] fa riferimento ai blocchi disponibili, ad esempio il blocco task per le informazioni sul task, il blocco processo per le informazioni sul processo e il blocco task corrente per le informazioni sui task in sospeso.
+   Il [`required`blocco] fa riferimento ai blocchi disponibili, ad esempio il blocco task per le informazioni sul task, il blocco processo per le informazioni sul processo e il blocco task corrente per le informazioni sui task in sospeso.
 
    Ad esempio, per aggiungere informazioni sulla selezione route obbligatoria nella pagina dei dettagli dell&#39;attività, è possibile aggiungere la seguente coppia chiave-valore nel blocco dell&#39;attività:
 

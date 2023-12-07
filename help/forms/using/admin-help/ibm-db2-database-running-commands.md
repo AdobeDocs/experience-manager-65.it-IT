@@ -1,18 +1,14 @@
 ---
 title: "Database IBM DB2: esecuzione di comandi per manutenzione regolare"
-seo-title: "IBM DB2 database: Running commands for regular maintenance"
 description: In questo documento sono elencati i comandi di IBM DB2 consigliati per la manutenzione regolare del database dei moduli AEM.
-seo-description: This document lists IBM DB2 commands that are recommended for regular maintenance of your AEM forms database.
-uuid: 235d59df-b9b9-4770-8b7d-00713701c3c2
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -25,7 +21,7 @@ I seguenti comandi di IBM DB2 sono consigliati per la manutenzione regolare del 
 * **db2rbind:** Questo comando esegue il rebinding di tutti i pacchetti nel database. Usa questo comando dopo l&#39;esecuzione di `runstats` per riconvalidare tutti i pacchetti nel database.
 * **riorganizzare la tabella o l&#39;indice:** Questo comando controlla se è necessaria la riorganizzazione di alcune tabelle e indici.
 
-   Con la crescita e la modifica dei database, il ricalcolo delle statistiche delle tabelle è fondamentale per migliorare le prestazioni del database e deve essere eseguito regolarmente. Questi comandi possono essere eseguiti manualmente utilizzando script o un processo cron.
+  Con la crescita e la modifica dei database, il ricalcolo delle statistiche delle tabelle è fondamentale per migliorare le prestazioni del database e deve essere eseguito regolarmente. Questi comandi possono essere eseguiti manualmente utilizzando script o un processo cron.
 
 >[!NOTE]
 >

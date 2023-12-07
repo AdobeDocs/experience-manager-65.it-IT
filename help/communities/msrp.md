@@ -1,20 +1,16 @@
 ---
 title: MSRP - Provider risorsa di archiviazione MongoDB
-seo-title: MSRP - MongoDB Storage Resource Provider
 description: Impostare AEM Communities per l'utilizzo di un database relazionale come archivio comune
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 1%
+source-wordcount: '1142'
+ht-degree: 0%
 
 ---
 
@@ -62,15 +58,15 @@ Per accedere alla console Configurazione archiviazione, dall’autore:
 * Seleziona **[!UICONTROL Provider risorsa di archiviazione MongoDB (MSRP)]**
 * **[!UICONTROL Configurazione mongoDB]**
 
-   * **[!UICONTROL URI di mongoDB]**
+   * **[!UICONTROL URI mongoDB]**
 
      *predefinito*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
-   * **[!UICONTROL Database di mongoDB]**
+   * **[!UICONTROL Database mongoDB]**
 
      *predefinito*: community
 
-   * **[!UICONTROL Raccolta UGC di mongoDB]**
+   * **[!UICONTROL Raccolta UGC mongoDB]**
 
      *predefinito*: contenuto
 
@@ -80,7 +76,7 @@ Per accedere alla console Configurazione archiviazione, dall’autore:
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper Host**
+   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
      Quando viene eseguito in [Modalità SolrCloud](solr.md#solrcloud-mode) con uno ZooKeeper esterno, impostare questo valore su `HOST:PORT` per ZooKeeper, ad esempio *my.server.com:2181*
 
@@ -195,7 +191,7 @@ cURL -u *accesso* d *dati* *reindex-url*
 
 *percorso* = la posizione radice della struttura ad albero dell&#39;UGC da reindicizzare
 
-* Per reindicizzare tutti i contenuti generati dagli utenti, specifica il valore `asipath`proprietà di
+* Per reindicizzare tutti i contenuti UGC, specifica il valore del `asipath`proprietà di
   `/etc/socialconfig/srpc/defaultconfiguration`
 * Per limitare l’indice ad alcuni UGC, specifica una sottostruttura di `asipath`
 

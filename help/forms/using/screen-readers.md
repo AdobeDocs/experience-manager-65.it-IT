@@ -1,18 +1,14 @@
 ---
 title: Lettori di schermi per moduli HTML5
-seo-title: Screen readers for HTML5 forms
 description: Elenca gli assistenti vocali supportati con i moduli HTML5.
-seo-description: Lists the screen readers supported with HTML5 forms.
-uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: 07d20c2f-7d13-48ac-8d58-b367eb194558
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -34,7 +30,7 @@ I moduli HTML5 sono conformi alla sezione 508 per l’accessibilità, con eccezi
 
 ### MASCELLE {#jaws}
 
-Tutte le sequenze di tasti e le scelte rapide predefinite funzionano per i moduli HTML5. Per ulteriori informazioni sull’utilizzo di JAWS, visita [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
+Tutte le sequenze di tasti e le scelte rapide predefinite funzionano per i moduli di HTML5. Per ulteriori informazioni sull&#39;utilizzo di JAWS, visitare il sito Web all&#39;indirizzo [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
 
 ### VoiceOver {#voiceover}
 

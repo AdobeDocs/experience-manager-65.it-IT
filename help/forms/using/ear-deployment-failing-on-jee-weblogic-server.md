@@ -1,15 +1,13 @@
 ---
 title: Distribuzione EAR non riuscita sul server WebLogic JEE
-seo-title: EAR Deployment failing on JEE Weblogic Server
 description: Passaggi per risolvere un errore di distribuzione EAR nel server JEE WebLogic
-seo-description: Steps to resolve EAR Deployment failing on JEE Weblogic Server
-source-git-commit: 45bb54a2666c2c196a8fb52795a7f428aa751e4d
+exl-id: b87a9eee-ee56-4dca-b4a3-a42c91db0b4f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 6%
+source-wordcount: '97'
+ht-degree: 7%
 
 ---
-
 
 # Distribuzione EAR non riuscita sul server WebLogic JEE {#ear-deployment-failing-on-jee-weblogic-server}
 
@@ -36,5 +34,3 @@ Per risolvere il problema, effettua le seguenti operazioni:
        set `JAVA_OPTIONS=%JAVA_OPTIONS% -DANTLR_USE_DIRECT_CLASS_LOADING=true`
    
 1. Salva le modifiche.
-
-

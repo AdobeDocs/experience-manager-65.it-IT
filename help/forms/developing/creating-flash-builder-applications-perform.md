@@ -1,19 +1,15 @@
 ---
 title: Creazione di applicazioni di Flash Builder che eseguono l'autenticazione SSO tramite token HTTP
-seo-title: Creating Flash Builder applicationsthat perform SSO authentication using HTTP tokens
 description: Creazione di un'applicazione client tramite un Flash Builder che esegue l'autenticazione Single Sign-On (SSO) tramite token HTTP. Autentica un utente per un’operazione una sola volta e utilizza tale autenticazione per eseguire più operazioni AEM Forms.
-seo-description: Create a client application using Flash Builder that performs single-sign on (SSO) authentication using HTTP tokens. Authenticate a user for an operation once and use that authentication to perform multiple AEM Forms operations.
-uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1783'
 ht-degree: 0%
 
 ---
@@ -71,7 +67,7 @@ Il servlet di sicurezza configurato in `/um/login` risponde utilizzando `URLVari
 
 **Processo di accesso**
 
-All’avvio di un’applicazione client, puoi effettuare una richiesta POST al `/um/login` servlet di sicurezza. Esempio: `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
+All’avvio di un’applicazione client, puoi effettuare una richiesta POST al `/um/login` servlet di sicurezza. Ad esempio: `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
 
 1. Cerca un cookie denominato `lcAuthToken`. Se l’utente ha già effettuato l’accesso a un’altra applicazione Forms, questo cookie è presente. Se il cookie viene trovato, il suo contenuto viene convalidato.
 1. Se l&#39;SSO basato su intestazione è abilitato, il servlet cerca le intestazioni configurate per determinare l&#39;identità dell&#39;utente.

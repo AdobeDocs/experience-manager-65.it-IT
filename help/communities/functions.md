@@ -1,21 +1,17 @@
 ---
 title: Funzioni community
-seo-title: Community Functions
 description: Scopri come accedere alla console Funzioni community
-seo-description: Learn how to access the Community Functions console
-uuid: d3d70134-f318-4709-a673-b01a3467d980
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 6%
+source-wordcount: '2215'
+ht-degree: 2%
 
 ---
 
@@ -84,15 +80,15 @@ Quando si aggiunge un modello, viene visualizzata la seguente finestra di dialog
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
-* **Mostra vista Le mie attività**
+* **Mostra la vista Le mie attività**
 
   Se selezionata, la pagina Attività include una scheda che filtra le attività in base a quelle generate all&#39;interno della community dal membro corrente. L&#39;opzione Predefinita è selezionata.
 
-* **Mostra la vista Tutte le attività**
+* **Mostra vista Tutte le attività**
 
   Se selezionata, la pagina Attività include una scheda che include tutte le attività generate all&#39;interno della comunità a cui il membro corrente ha accesso. L&#39;opzione Predefinita è selezionata.
 
-* **Mostra vista Feed notizie**
+* **Mostra visualizzazione Feed notizie**
 
   Se selezionata, le pagine Attività includono una scheda che filtra le attività in base a quelle che il membro corrente sta seguendo. L&#39;opzione Predefinita è selezionata.
 
@@ -220,7 +216,7 @@ Quando si aggiunge un modello, viene visualizzata la seguente finestra di dialog
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
-* **Seleziona modelli per gruppi**
+* **Seleziona modelli di gruppo**
 
   Un elenco a discesa che consente di selezionare uno o più modelli di gruppo abilitati tra cui può scegliere il futuro creatore di un nuovo gruppo community (nell’ambiente di pubblicazione).
 
@@ -276,7 +272,7 @@ Quando viene aggiunto a un modello, viene visualizzata la seguente finestra di d
   Se questa opzione è selezionata, nella classifica verrà inclusa una colonna per le icone dei badge.
 Il valore predefinito è deselezionato.
 
-* **Nome badge visualizzato**
+* **Visualizza nome badge**
 
   Se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del badge.
 Il valore predefinito è deselezionato.
@@ -338,7 +334,7 @@ Nel pannello Nome funzione community, vengono configurati un nome, una descrizio
 
   Nome della funzione utilizzato per la visualizzazione e l&#39;archiviazione.
 
-* **Descrizione della funzione community**
+* **Descrizione funzione community**
 
   Descrizione della funzione per la visualizzazione.
 

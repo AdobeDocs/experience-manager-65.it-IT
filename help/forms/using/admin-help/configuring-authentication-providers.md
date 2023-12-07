@@ -1,18 +1,14 @@
 ---
 title: Configurazione dei provider di autenticazione
-seo-title: Configuring authentication providers
 description: Aggiungere, modificare o eliminare provider di autenticazione, modificare le impostazioni di autenticazione e leggere informazioni sul provisioning just-in-time degli utenti.
-seo-description: Add, edit, or delete authentication providers, change authentication settings, and read about just-in-time provisioning of users.
-uuid: 90e7690b-1ce0-4604-b58f-6dca4f2372cf
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1578'
 ht-degree: 0%
 
 ---
@@ -37,7 +33,7 @@ Se si abilita SSO utilizzando SPNEGO, aggiungere un provider di autenticazione K
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fare clic sul dominio appropriato nell&#39;elenco.
 1. Nella pagina visualizzata, seleziona il provider di autenticazione appropriato dall’elenco e apporta le modifiche necessarie. (vedere [Impostazioni di autenticazione](configuring-authentication-providers.md#authentication-settings).)
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ## Eliminare un provider di autenticazione {#delete-an-authentication-provider}
 

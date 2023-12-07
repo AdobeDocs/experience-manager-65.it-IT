@@ -1,18 +1,14 @@
 ---
 title: Configurazione delle directory
-seo-title: Configuring directories
 description: Scopri come aggiungere, modificare ed eliminare directory e configurare la gestione degli utenti per l’utilizzo della visualizzazione a elenco virtuale.
-seo-description: Learn how to add, edit and delete directories and configure user management to use virtual list view.
-uuid: 0bf1a8a7-c917-4248-9937-d24e31c5ba17
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3226'
+source-wordcount: '3229'
 ht-degree: 0%
 
 ---
@@ -59,7 +55,7 @@ Puoi modificare i dettagli di una directory configurata in precedenza.
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fare clic sul dominio appropriato nell&#39;elenco e nella pagina visualizzata selezionare la directory appropriata dall&#39;elenco.
 1. Configurare le impostazioni di directory, utente e gruppo in base alle esigenze. (vedere [Impostazioni directory](configuring-directories.md#directory-settings).)
-1. Fai clic su OK.
+1. Fare clic su OK.
 
 ## Eliminare una directory {#delete-a-directory}
 

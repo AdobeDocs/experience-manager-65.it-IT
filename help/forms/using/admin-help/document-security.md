@@ -1,20 +1,16 @@
 ---
 title: Che cos’è la protezione dei documenti?
-seo-title: About document security
 description: Scopri come creare, archiviare e applicare impostazioni di riservatezza predefinite e distribuire le informazioni in modo sicuro utilizzando la protezione dei documenti.
-seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
-uuid: e4fba2a4-f3c1-4b20-8e05-8e241b40ebd0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3219'
 ht-degree: 0%
 
 ---
@@ -67,15 +63,15 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire attiv
 
 * L’amministratore di sistema o la persona che si occupa di altri sistemi informativi installa e configura la protezione dei documenti. Questa persona può anche essere responsabile della configurazione delle impostazioni globali per il server, le pagine web, le policy e i documenti.
 
-   Queste impostazioni possono includere, ad esempio, un URL di sicurezza del documento di base, notifiche di controllo e privacy, avvisi di registrazione per gli utenti invitati e periodi di lease offline predefiniti.
+  Queste impostazioni possono includere, ad esempio, un URL di sicurezza del documento di base, notifiche di controllo e privacy, avvisi di registrazione per gli utenti invitati e periodi di lease offline predefiniti.
 
 * Gli amministratori della sicurezza dei documenti creano policy e set di policy e gestiscono i documenti protetti tramite policy per gli utenti in base alle esigenze. Inoltre, creano gli account utente invitati e monitorano il sistema, il documento, l’utente, i criteri, il set di criteri e gli eventi personalizzati. Possono anche essere responsabili della configurazione del server globale e delle impostazioni della pagina web e dei criteri con un amministratore di sistema.
 
-   Gli amministratori possono assegnare agli utenti i seguenti ruoli nell’area User Management della console di amministrazione. Gli utenti a cui sono assegnati questi ruoli eseguono le proprie attività nell’area dell’interfaccia utente di document security della console di amministrazione.
+  Gli amministratori possono assegnare agli utenti i seguenti ruoli nell’area User Management della console di amministrazione. Gli utenti a cui sono assegnati questi ruoli eseguono le proprie attività nell’area dell’interfaccia utente di document security della console di amministrazione.
 
-   **Amministratore privilegiato di Document Security**
+  **Amministratore privilegiato di Document Security**
 
-   Gli utenti con questo ruolo possono accedere a tutte le impostazioni di protezione dei documenti nella console di amministrazione. Queste autorizzazioni sono associate al ruolo:
+  Gli utenti con questo ruolo possono accedere a tutte le impostazioni di protezione dei documenti nella console di amministrazione. Queste autorizzazioni sono associate al ruolo:
 
    * Gestisci configurazione
    * Gestire i criteri
@@ -87,17 +83,17 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire attiv
    * Delega
    * Invita utenti esterni
 
-   **Amministratore di Document Security**
+  **Amministratore di Document Security**
 
-   Gli utenti con questo ruolo possono configurare il server di Document Security utilizzando la pagina Configurazione nella sezione Document Security della console di amministrazione. Questa autorizzazione è associata al ruolo Gestisci configurazione.
+  Gli utenti con questo ruolo possono configurare il server di Document Security utilizzando la pagina Configurazione nella sezione Document Security della console di amministrazione. Questa autorizzazione è associata al ruolo Gestisci configurazione.
 
-   >[!NOTE]
-   >
-   >Gli utenti con questo ruolo devono inoltre disporre del ruolo User della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.
+  >[!NOTE]
+  >
+  >Gli utenti con questo ruolo devono inoltre disporre del ruolo User della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.
 
-   **Amministratore set di criteri di sicurezza dei documenti**
+  **Amministratore set di criteri di sicurezza dei documenti**
 
-   Gli utenti con questo ruolo possono utilizzare la sezione document security della console di amministrazione per modificare le policy di altri utenti e per creare, modificare ed eliminare set di policy. Quando un amministratore crea un set di criteri, può assegnargli un coordinatore. Queste autorizzazioni sono associate al ruolo:
+  Gli utenti con questo ruolo possono utilizzare la sezione document security della console di amministrazione per modificare le policy di altri utenti e per creare, modificare ed eliminare set di policy. Quando un amministratore crea un set di criteri, può assegnargli un coordinatore. Queste autorizzazioni sono associate al ruolo:
 
    * Gestire i criteri
    * Gestire i set di criteri
@@ -106,32 +102,32 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire attiv
    * Visualizza eventi
    * Delega
 
-   >[!NOTE]
-   >
-   >Gli utenti con questo ruolo devono inoltre disporre del ruolo User della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.
+  >[!NOTE]
+  >
+  >Gli utenti con questo ruolo devono inoltre disporre del ruolo User della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.
 
-   **Document Security gestisce gli utenti invitati e locali**
+  **Document Security gestisce gli utenti invitati e locali**
 
-   Gli utenti con questo ruolo possono eseguire le attività necessarie per gestire tutti gli utenti invitati e locali sulle pagine web di Document Security pertinenti. Queste autorizzazioni sono associate al ruolo:
+  Gli utenti con questo ruolo possono eseguire le attività necessarie per gestire tutti gli utenti invitati e locali sulle pagine web di Document Security pertinenti. Queste autorizzazioni sono associate al ruolo:
 
    * Gestire gli utenti invitati e locali
    * Invita utenti esterni
    * Accedere alle pagine web degli utenti finali
 
-   >[!NOTE]
-   >
-   >Gli utenti con questo ruolo devono inoltre disporre del ruolo User della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.
+  >[!NOTE]
+  >
+  >Gli utenti con questo ruolo devono inoltre disporre del ruolo User della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.
 
-   **Utente invito Document Security**
+  **Utente invito Document Security**
 
-   Gli utenti con questo ruolo possono invitare gli utenti. Queste autorizzazioni sono associate al ruolo:
+  Gli utenti con questo ruolo possono invitare gli utenti. Queste autorizzazioni sono associate al ruolo:
 
    * Invita utenti esterni
    * Accedere alle pagine web degli utenti finali
 
-   **Utente finale di Document Security**
+  **Utente finale di Document Security**
 
-   Gli utenti con questo ruolo possono accedere alle pagine web degli utenti finali di Document Security. Questo ruolo può anche essere assegnato agli amministratori per consentire loro di creare criteri utilizzando le pagine degli utenti finali. Questa autorizzazione è associata al ruolo Accedere alle pagine Web degli utenti finali.
+  Gli utenti con questo ruolo possono accedere alle pagine web degli utenti finali di Document Security. Questo ruolo può anche essere assegnato agli amministratori per consentire loro di creare criteri utilizzando le pagine degli utenti finali. Questa autorizzazione è associata al ruolo Accedere alle pagine Web degli utenti finali.
 
 * Gli utenti dell’organizzazione che dispongono di account di Document Security validi creano policy proprie, utilizzano policy per proteggere i documenti, tenere traccia e gestire i documenti protetti tramite policy e monitorare gli eventi correlati ai propri documenti.
 * I coordinatori di set di policy gestiscono documenti, visualizzano eventi e gestiscono altri coordinatori di set di policy (in base alle loro autorizzazioni). Gli amministratori designano gli utenti come coordinatori di set di criteri per set di criteri specifici.
@@ -251,7 +247,7 @@ Aggiungere gruppi di utenti ai criteri anziché singoli utenti. Semplifica la ge
 
 * **Creare set di criteri personalizzati:** Un set di criteri combina più criteri in un’entità gestibile. Creare set di criteri personalizzati per l&#39;organizzazione o il reparto, utilizzarli per raggruppare i criteri correlati e renderli disponibili per un sottoinsieme di utenti nel sistema.
 
-   L&#39;utilizzo dei set di criteri semplifica l&#39;assegnazione e la gestione dei criteri correlati a utenti specifici di un&#39;organizzazione o di un reparto. Ad esempio, set di politiche separati per il reparto finanze e risorse umane possono facilitare la gestione e l&#39;applicazione delle politiche correlate ai documenti designati per i reparti corrispondenti.
+  L&#39;utilizzo dei set di criteri semplifica l&#39;assegnazione e la gestione dei criteri correlati a utenti specifici di un&#39;organizzazione o di un reparto. Ad esempio, set di politiche separati per il reparto finanze e risorse umane possono facilitare la gestione e l&#39;applicazione delle politiche correlate ai documenti designati per i reparti corrispondenti.
 
 * **Utilizza un autorizzatore esterno per applicare le autorizzazioni in modo dinamico:** È possibile utilizzare [autorizzatore esterno](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) per valutare e applicare in modo dinamico le autorizzazioni in base alla condizione esterna. Quando le autorizzazioni vengono valutate dinamicamente, in base alla condizione esterna, è possibile:
 
@@ -260,20 +256,21 @@ Aggiungere gruppi di utenti ai criteri anziché singoli utenti. Semplifica la ge
    * Controllare l’accesso ai documenti protetti tramite policy determinando in modo dinamico se un utente può accedere a un documento protetto tramite policy. Ad esempio, decide in modo dinamico se un utente può stampare un documento protetto tramite policy.
 
    * Oltre al processo standard di valutazione dei criteri, utilizza un meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti. Ad esempio, quando il servizio determina se un utente può stampare un documento protetto tramite policy, può utilizzare il processo standard di valutazione della policy. Può inoltre utilizzare il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti.
-   Sebbene sia possibile sostituire completamente il processo di valutazione dei criteri di Document Security con un gestore di autorizzazioni esterno, si consiglia di utilizzare un gestore di autorizzazioni esterno con il processo di valutazione dei criteri. Di conseguenza, l&#39;accesso ai documenti può essere controllato mediante lo stesso meccanismo di controllo utilizzato dal sistema di gestione dei contenuti. Ad esempio, quando il servizio Document Security determina se un utente può stampare un documento protetto tramite policy, utilizza il processo standard di valutazione delle policy. Utilizza anche il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti. Per ulteriori informazioni, consulta [Creazione di gestori di autorizzazioni esterni](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+
+  Sebbene sia possibile sostituire completamente il processo di valutazione dei criteri di Document Security con un gestore di autorizzazioni esterno, si consiglia di utilizzare un gestore di autorizzazioni esterno con il processo di valutazione dei criteri. Di conseguenza, l&#39;accesso ai documenti può essere controllato mediante lo stesso meccanismo di controllo utilizzato dal sistema di gestione dei contenuti. Ad esempio, quando il servizio Document Security determina se un utente può stampare un documento protetto tramite policy, utilizza il processo standard di valutazione delle policy. Utilizza anche il meccanismo di controllo degli accessi utilizzato dal sistema di gestione dei contenuti. Per ulteriori informazioni, consulta [Creazione di gestori di autorizzazioni esterni](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantieni i set di criteri a un numero limitato:** Diversi fattori determinano una crescita costante delle politiche e delle serie di politiche. Alcuni fattori comuni sono:
 
    * Incremento di ruoli utente, reparti e documenti all&#39;interno di un&#39;organizzazione in un periodo.
    * I dipartimenti di un&#39;organizzazione lavorano in isolamento e mantengono uno stretto controllo sulle politiche specifiche del dipartimento. Questo porta a politiche identiche all’interno di un’organizzazione.
 
-   L&#39;Adobe raccomanda di mantenere al minimo il numero di politiche e set di politiche. Consente di gestire facilmente le regole e i set di regole e di fornire prestazioni migliori. Per ridurre al minimo il numero:
+  L&#39;Adobe raccomanda di mantenere al minimo il numero di politiche e set di politiche. Consente di gestire facilmente le regole e i set di regole e di fornire prestazioni migliori. Per ridurre al minimo il numero:
 
    * Creare criteri riutilizzabili. Questi criteri possono essere condivisi tra più reparti.
    * Prendere in considerazione la creazione di set di criteri a livello di organizzazione, se alcuni criteri vengono applicati a più reparti anziché a un singolo set di criteri per ogni reparto.
    * Criteri correlati al gruppo in un set di criteri. Non creare un set di criteri separato per ciascun criterio.
    * Utilizza un autorizzatore esterno per controllare dinamicamente le autorizzazioni utente.
 
-   >[!NOTE]
-   >
-   >È possibile utilizzare [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali l’invocatore API dispone dell’autorizzazione di pubblicazione del documento, quindi crea e restituisce all’utente un elenco di nomi univoci di set di criteri associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e i criteri recuperati sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.
+  >[!NOTE]
+  >
+  >È possibile utilizzare [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali l’invocatore API dispone dell’autorizzazione di pubblicazione del documento, quindi crea e restituisce all’utente un elenco di nomi univoci di set di criteri associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e i criteri recuperati sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.

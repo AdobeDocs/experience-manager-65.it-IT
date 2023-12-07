@@ -1,18 +1,14 @@
 ---
 title: Introduzione alla gestione dei moduli
-seo-title: Introduction to managing forms
 description: AEM Forms fornisce strumenti per gestire Forms adattivo e le risorse correlate. Questo articolo illustra le funzionalità chiave di gestione dei moduli e gli elementi dell’interfaccia utente.
-seo-description: AEM Forms provides tools to manage Adaptive Forms and related assets. This article introduces you to the key forms management capabilities and user interface elements.
-uuid: 2275a0b6-b31e-4d8e-8154-ccdfff3705aa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager, introduction
-discoiquuid: c0e4c9bb-e12a-4f9a-a8fa-1a8ad41d3995
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1566'
 ht-degree: 1%
 
 ---
@@ -38,7 +34,7 @@ Oltre alle opzioni per la creazione di moduli, documenti e risorse correlate, l&
 * Frammenti del documento
 * Dizionari dati
 
-   ![Console AEM Forms](assets/aem_forms_console_new.png)
+  ![Console AEM Forms](assets/aem_forms_console_new.png)
 
 ### Moduli e documenti  {#forms-documents}
 
@@ -59,9 +55,9 @@ Il pulsante Crea è il punto iniziale del processo di creazione o caricamento de
    * **Cartella generale:** Queste cartelle vengono utilizzate per le risorse create in AEM [!DNL Forms] dell&#39;utente. Queste cartelle non hanno una struttura di cartelle rigida. In queste cartelle è possibile rinominare, creare sottocartelle e archiviare moduli adattivi, comunicazioni interattive, frammenti di moduli adattivi, modelli di modulo (XDP), PDF forms, documenti e risorse correlate.
    * **Cartella Forms Workflow:** Le cartelle del flusso di lavoro di Forms vengono create quando i processi di Workbench (archivi di LiveCycle) vengono migrati e sincronizzati con l’AEM [!DNL Forms] dell&#39;utente. Non è consentito rinominare, creare una sottocartella, creare una comunicazione interattiva, un frammento di modulo adattivo o una comunicazione interattiva. Inoltre, non è consentito eliminare una cartella delle versioni o creare e caricare un modulo adattivo, un frammento di modulo adattivo o una comunicazione interattiva in parallelo alla cartella delle versioni.
 
-   ![cartelle](assets/folders.png)
+  ![cartelle](assets/folders.png)
 
-   **R.** Cartella generale **B.** Cartella Forms Workflow
+  **R.** Cartella generale **B.** Cartella Forms Workflow
 
 Il pannello Forms e documento fornisce inoltre le opzioni per:
 
@@ -97,9 +93,9 @@ Il pannello strumenti dell’AEM contiene strumenti per vari componenti. Per acc
 * **Configura cartella controllata:** Un amministratore può configurare una cartella di rete, nota come cartella controllata, in modo che, quando un utente inserisce un file (ad esempio un file PDF) nella cartella controllata, venga avviata un’operazione preconfigurata e il file venga manipolato. Per informazioni dettagliate, consulta [Creare e configurare una cartella controllata](/help/forms/using/creating-configure-watched-folder.md).
 * **Configura servizio offline app Forms:** L&#39;AEM [!DNL Forms] il servizio app offline memorizza nella cache i percorsi o gli URL delle risorse utilizzate in un modulo. La memorizzazione nella cache di percorsi o URL delle risorse utilizzate in un modulo migliora le prestazioni lato server. Per configurare il componente offline lato server dell&#39;app AEM Forms, vedi [Utilizzo della modalità offline](/help/forms/using/work-offline-mode.md).
 
-   ![Strumenti di AEM Forms](assets/aem_forms_tools_new.png)
+  ![Strumenti di AEM Forms](assets/aem_forms_tools_new.png)
 
-* **Configura PDF Generator:** Un amministratore può configurare l’AEM [!DNL Forms] PDF Generator, aggiungere account utente e importare o esportare la configurazione in PDF Generator.
+* **Configura PDF Generator:** Un amministratore può configurare l’AEM [!DNL Forms] impostazioni di PDF Generator, aggiunta di account utente e importazione o esportazione della configurazione in PDF Generator.
 * **Pubblica risorse di gestione della corrispondenza:** AEM [!DNL Forms] consente di pubblicare contemporaneamente tutte le lettere, i frammenti di documento e i dizionari di dati e le dipendenze correlate di un’istanza Autore. Le risorse pubblicate includono tutte le risorse di Gestione della corrispondenza e le relative dipendenze. Per informazioni dettagliate, consulta [Pubblicazione e annullamento della pubblicazione di moduli e documenti](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Esporta risorse di gestione della corrispondenza:** Puoi scaricare tutte le risorse di Gestione della corrispondenza e le relative dipendenze come pacchetto da un AEM [!DNL Forms] dell&#39;istanza. Per i passaggi dettagliati, consulta [Importazione ed esportazione di risorse in AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
@@ -122,6 +118,6 @@ Il pannello strumenti dell’AEM contiene strumenti per vari componenti. Per acc
 
 * **Barra delle azioni**: quando selezioni una risorsa, la barra delle azioni viene visualizzata sopra l’elenco delle risorse. Contiene tutti gli strumenti di gestione per la risorsa selezionata. Passa il puntatore del mouse su un&#39;icona dello strumento per visualizzarne la descrizione della funzionalità
 
-   ![Barra delle azioni per un modulo adattivo](assets/action_toolbar_new.png)
+  ![Barra delle azioni per un modulo adattivo](assets/action_toolbar_new.png)
 
-   Barra delle azioni per un modulo adattivo
+  Barra delle azioni per un modulo adattivo

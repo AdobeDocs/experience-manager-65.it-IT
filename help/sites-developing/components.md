@@ -1,19 +1,15 @@
 ---
 title: Panoramica dei componenti
-seo-title: Components
 description: I componenti sono unità modulari che realizzano funzionalità specifiche per presentare i contenuti sul sito web
-seo-description: Components are modular units which realize specific functionality to present your content on your website
-uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 52%
+source-wordcount: '570'
+ht-degree: 44%
 
 ---
 
@@ -31,7 +27,7 @@ Questa pagina fornisce una panoramica dei componenti di Adobe Experience Manager
 * Può essere eseguito ovunque all&#39;interno di qualsiasi sistema AEM. Possono anche essere limitate per l’esecuzione con componenti specifici.
 * Hanno un’interfaccia utente standard.
 * Hanno un comportamento di modifica configurabile.
-* Utilizzano le finestre di dialogo create utilizzando elementi secondari basati sui componenti dell’interfaccia utente Granite
+* Utilizzare finestre di dialogo create utilizzando sottoelementi basati su componenti dell’interfaccia utente Granite
 * Sono sviluppati utilizzando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) (consigliato) o JSP.
 * Possono essere sviluppati per creare componenti personalizzati che estendono la funzionalità predefinita.
 
@@ -40,7 +36,7 @@ Poiché i componenti sono modulari, puoi:
 * Sviluppare un nuovo componente nell’istanza locale.
 * Distribuirlo nell’ambiente di test.
 * Distribuirlo nel tuo ambiente di authoring live, dove gli autori e/o gli amministratori possono aggiungere e configurare contenuti.
-* Distribuirlo negli ambienti di pubblicazione live, dove viene utilizzata per il rendering dei contenuti per i visitatori del sito web. Alcuni componenti, ad esempio per Communities, accettano l’input anche dagli utenti.
+* Distribuiscilo negli ambienti di pubblicazione live, dove viene utilizzato per eseguire il rendering dei contenuti per i visitatori del tuo sito web. Alcuni componenti, ad esempio per Communities, accettano l’input anche dagli utenti.
 
 Ogni componente AEM:
 
@@ -52,7 +48,7 @@ Ogni componente AEM:
 
 L&#39;AEM viene fornito con una varietà di [componenti pronti all’uso](/help/sites-authoring/default-components.md) che offrono funzionalità complete, tra cui:
 
-* Sistema paragrafo ( `parsys`)
+* Sistema paragrafi ( `parsys`)
 * Pagina ( `responsivegrid` - solo interfaccia touch)
 * Testo
 * Immagine, con testo associato

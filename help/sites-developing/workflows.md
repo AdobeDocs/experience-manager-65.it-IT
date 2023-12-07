@@ -1,19 +1,15 @@
 ---
 title: Sviluppo ed estensione dei flussi di lavoro
-seo-title: Developing and Extending Workflows
 description: L’AEM fornisce diversi strumenti e risorse per creare modelli di flusso di lavoro, sviluppare passaggi del flusso di lavoro e interagire in modo programmatico con i flussi di lavoro
-seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
-uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 4%
+source-wordcount: '1460'
+ht-degree: 3%
 
 ---
 
@@ -41,11 +37,10 @@ Gli aspetti principali sono trattati di seguito, mentre le pagine che seguono fo
 >
 >* Partecipare ai flussi di lavoro, vedi [Utilizzo dei flussi di lavoro](/help/sites-authoring/workflows.md).
 >* Per l’amministrazione dei flussi di lavoro e delle istanze dei flussi di lavoro, consulta [Amministrazione dei flussi di lavoro](/help/sites-administering/workflows.md).
->* Per un articolo della community end-to-end, vedi [Modifica delle risorse digitali con i flussi di lavoro di Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=it)
+>* Per un articolo della community end-to-end, vedi [Modifica delle risorse digitali tramite flussi di lavoro Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=it)
 >* Consulta la [Webinar Ask the AEM Experts sui flussi di lavoro](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Modifiche alle posizioni delle informazioni consulta [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md) e [Best practice per i flussi di lavoro - Sedi](/help/sites-developing/workflows-best-practices.md#locations).
 >
-
 
 ## Modello {#model}
 
@@ -124,17 +119,17 @@ Esistono vari tipi di flusso di lavoro, come indicato nella console Modelli di f
 
 ![wf-upgrade-03](assets/wf-upgraded-03.png)
 
-* **Predefiniti**
+* **Predefinito**
 
-   Questi tipi sono i flussi di lavoro predefiniti inclusi in un’istanza AEM standard.
+  Questi tipi sono i flussi di lavoro predefiniti inclusi in un’istanza AEM standard.
 
 * Flussi di lavoro personalizzati (nessun indicatore nella console)
 
-   Questi flussi di lavoro sono stati creati come nuovi o da flussi di lavoro predefiniti che sono stati sovrapposti con le personalizzazioni.
+  Questi flussi di lavoro sono stati creati come nuovi o da flussi di lavoro predefiniti che sono stati sovrapposti con le personalizzazioni.
 
 * **Legacy**
 
-   Flussi di lavoro creati in una versione precedente dell’AEM. Questi flussi di lavoro possono essere mantenuti durante un aggiornamento, oppure esportati come pacchetto di flusso di lavoro dalla versione precedente, quindi importati nella nuova versione.
+  Flussi di lavoro creati in una versione precedente dell’AEM. Questi flussi di lavoro possono essere mantenuti durante un aggiornamento, oppure esportati come pacchetto di flusso di lavoro dalla versione precedente, quindi importati nella nuova versione.
 
 ### Flussi di lavoro transitori {#transient-workflows}
 
@@ -159,7 +154,6 @@ Sono stati introdotti flussi di lavoro transitori per il caricamento di molte ri
 >* Il flusso di lavoro immette un **Divisione AND**. In questi casi, per la conferma dello stato è necessaria la cronologia di runtime.
 >* Quando il flusso di lavoro transitorio entra in un passaggio partecipante, in fase di esecuzione passa alla modalità non transitorio. Poiché l’attività viene passata a una persona, la cronologia deve essere persistente.
 >
-
 
 >[!CAUTION]
 >
@@ -202,8 +196,8 @@ Ad esempio, per un flusso di lavoro con sei passaggi e quattro fasi:
    | Passaggio 2 | Creare |
    | Passaggio 3 | Recensione |
    | Passaggio 4 | Approva |
-   | Passaggio 5 | Completa |
-   | Passaggio 6 | Completa |
+   | Passaggio 5 | Completato |
+   | Passaggio 6 | Completato |
 
 1. Quando il flusso di lavoro viene eseguito, l’utente può visualizzare l’avanzamento in base ai nomi degli stadi (anziché ai nomi dei passaggi). L’avanzamento del flusso di lavoro viene visualizzato in [Scheda INFORMAZIONI SUL FLUSSO DI LAVORO della finestra dei dettagli dell’attività dell’elemento del flusso di lavoro](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) elencati in [Casella in entrata](/help/sites-authoring/inbox.md).
 

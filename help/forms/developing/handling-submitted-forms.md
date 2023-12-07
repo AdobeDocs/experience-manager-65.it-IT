@@ -1,20 +1,16 @@
 ---
 title: Gestione dei Forms inviati
-seo-title: Handling Submitted Forms
 description: Utilizza il servizio Forms per recuperare i dati inviati immessi in un modulo interattivo. L’utente può inviare i dati del modulo nei formati XML, PDF e URL UTF-16.
-seo-description: Use the Forms service to retrieve the submitted data entered in an interactive form. The user can submit the form data in XML, PDF, and URL UTF-16 formats.
-uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2894'
 ht-degree: 0%
 
 ---
@@ -70,7 +66,7 @@ I campi nel modulo del prestito. Questi valori possono essere recuperati utilizz
 
 >[!NOTE]
 >
->La struttura del modulo deve essere configurata correttamente in Designer affinché i dati vengano inviati come dati XML. Per configurare correttamente la struttura del modulo per l&#39;invio di dati XML, verificare che il pulsante Invia disponibile nella struttura del modulo sia impostato per l&#39;invio di dati XML. Per informazioni sull&#39;impostazione del pulsante Invia per inviare dati XML, vedere [AEM Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it).
+>La struttura del modulo deve essere configurata correttamente in Designer affinché i dati vengano inviati come dati XML. Per configurare correttamente la struttura del modulo per l&#39;invio di dati XML, verificare che il pulsante Invia disponibile nella struttura del modulo sia impostato per l&#39;invio di dati XML. Per informazioni sull&#39;impostazione del pulsante Invia per inviare dati XML, vedere [AEM Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Gestione dei dati PDF inviati {#handling-submitted-pdf-data}
 

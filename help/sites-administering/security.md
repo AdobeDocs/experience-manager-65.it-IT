@@ -1,18 +1,16 @@
 ---
 title: Amministrazione utenti e sicurezza
 description: Scopri come amministrare e proteggere gli utenti in AEM.
-uuid: 4512c0bf-71bf-4f64-99f6-f4fa5a61d572
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5398'
 ht-degree: 1%
 
 ---
@@ -221,7 +219,7 @@ Gli elenchi di controllo di accesso sono costituiti dalle singole autorizzazioni
 >L’applicazione personalizzata può impostare l’accesso per altre relazioni, ad esempio:
 >
 >* `*/social/relationships/friend/*`
->* oppure `*/social/relationships/pending-following/*`.
+>* o `*/social/relationships/pending-following/*`.
 >
 >Quando si creano ACL specifici per le comunità, ai membri che si uniscono a tali comunità possono essere concesse autorizzazioni aggiuntive. Ad esempio, quando gli utenti si uniscono alle community in: `/content/we-retail/us/en/community`
 
@@ -372,7 +370,7 @@ Di seguito sono descritte le best practice per l’utilizzo di autorizzazioni e 
 | *Usa gruppi* | Evita di assegnare i diritti di accesso utente per utente. Questo consiglio ha diverse ragioni:<ul><li>Poiché il numero di utenti è superiore a quello dei gruppi, la struttura dei gruppi risulta semplificata.</li><li>I gruppi forniscono una panoramica su tutti gli account.</li> <li>L’ereditarietà è più semplice con i gruppi.</li><li>Gli utenti vanno e vengono. I gruppi sono a lungo termine.</li></ul> |
 | *Sii Positivo* | Utilizzare sempre le istruzioni Allow per specificare i diritti del gruppo, se possibile. Evita di utilizzare un’istruzione Deny. I gruppi vengono valutati in ordine e l’ordine può essere definito in modo diverso per utente. In altre parole: potresti avere poco controllo sull’ordine in cui le istruzioni vengono implementate e valutate. Se utilizzi solo le istruzioni Allow, l’ordine non ha importanza. |
 | *Semplifica* | Vale la pena investire tempo e riflessioni nella configurazione di una nuova installazione. L&#39;applicazione di una struttura chiara semplifica la manutenzione e l&#39;amministrazione in corso, garantendo che sia i colleghi attuali che quelli futuri possano facilmente comprendere ciò che viene implementato. |
-| *Prova* | Utilizza un’installazione di test per esercitarti e assicurarti di comprendere le relazioni tra i vari utenti e gruppi. |
+| *Test* | Utilizza un’installazione di test per esercitarti e assicurarti di comprendere le relazioni tra i vari utenti e gruppi. |
 | *Utenti/gruppi predefiniti* | Aggiorna sempre Utenti e gruppi predefiniti subito dopo l&#39;installazione per evitare problemi di sicurezza. |
 
 ## Gestione di utenti e gruppi {#managing-users-and-groups}
@@ -407,7 +405,7 @@ Le schede consentono di accedere a varie configurazioni:
 
 <!-- ??? in table below. -->
 
-| Tabulazione | Descrizione |
+| Linguetta | Descrizione |
 |--- |--- |
 | Casella filtro | Un meccanismo per filtrare gli utenti, i gruppi o entrambi elencati. Consulta [Filtraggio di utenti e gruppi](#filtering-users-and-groups). |
 | Nascondi utenti | Un interruttore che nasconde tutti gli utenti elencati, lasciando solo i gruppi. Consulta [Nascondere utenti e gruppi](#hiding-users-and-groups). |

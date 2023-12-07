@@ -1,25 +1,21 @@
 ---
 title: Configurazione di analisi e rapporti
-seo-title: Configuring analytics and reports
 description: Scopri come configurare Adobe Analytics per individuare i pattern di interazione e i problemi che gli utenti devono affrontare durante l’utilizzo di moduli adattivi, documenti adattivi e moduli HTML5.
-seo-description: Learn how to configure Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, adaptive documents, and HTML5 forms.
-uuid: ac5d1300-f303-40e8-a33e-4859a54ac10d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
-discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1532'
-ht-degree: 3%
+source-wordcount: '1531'
+ht-degree: 1%
 
 ---
 
 # Analytics tramite Cloud Service Framework {#analyticsusingcloudframework}
 
-AEM Forms si integra con Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili.
+AEM Forms si integra con Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate in base ai dati sulle modifiche necessarie per rendere i moduli o i documenti più utilizzabili.
 
 >[!NOTE]
 >
@@ -97,7 +93,7 @@ Per creare una suite di rapporti, effettua le seguenti operazioni.
    | fieldVisit | Contatore |
    | salva | Contatore |
    | errore | Contatore |
-   | Aiuto di  | Contatore |
+   | aiuto | Contatore |
    | invia | Contatore |
    | timeSpent | Numerico |
 

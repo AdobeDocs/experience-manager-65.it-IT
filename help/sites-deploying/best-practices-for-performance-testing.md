@@ -1,17 +1,15 @@
 ---
 title: Best practice per i test delle prestazioni
 description: Scopri le strategie e le metodologie generali utilizzate per i test delle prestazioni e alcuni degli strumenti disponibili per facilitare il processo.
-uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 18f843ed3ffb719d168b67826baaffd926ffd2dd
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 1%
+source-wordcount: '1790'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +66,7 @@ Sul mercato sono disponibili molti strumenti di test delle prestazioni. Quando s
 
 #### Strumenti di ottimizzazione {#optimization-tools}
 
-**Monitoraggio**
+**Monitorare**
 
 Il [Monitoraggio delle prestazioni](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) La documentazione di è una buona risorsa per gli strumenti e i metodi che possono essere utilizzati per diagnosticare i problemi e individuare le aree da sottoporre a tuning.
 
@@ -119,7 +117,7 @@ Il **ObservationQueueMaxLength** Questa sezione mostra il numero di eventi nella
 1. Inseriscilo nella cartella /crx--quickstart/install.
 
 >[!NOTE]
->Consulta [AEM 6.x | Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
+>Consulta [AEM 6.x | Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
 
 L’impostazione predefinita è 10.000, ma la maggior parte delle distribuzioni deve portarla a 20.000 o 50.000.
 
@@ -147,7 +145,7 @@ Dopo aver eseguito i test delle prestazioni sull’istanza di authoring, è nece
 * Controllare il registro degli errori per individuare eventuali errori o avvisi. Per ulteriori informazioni, consulta [Registrazione](/help/sites-deploying/configure-logging.md).
 * Monitorare le risorse hardware di sistema come l&#39;utilizzo della memoria e della CPU, l&#39;I/O del disco o l&#39;I/O di rete. Queste risorse sono spesso la causa dei colli di bottiglia delle prestazioni.
 * Ottimizza l’architettura delle pagine e il modo in cui vengono indirizzate per ridurre al minimo l’utilizzo dei parametri URL per consentire il maggior numero possibile di operazioni di caching.
-* Segui le [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md) e [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it) documentazione.
+* Segui le [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md) e [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en) documentazione.
 
 * In caso di problemi durante la modifica di determinate pagine o componenti nelle istanze di authoring, utilizza la modalità sviluppatore dell’interfaccia utente touch per esaminare la pagina in questione. Questa operazione fornisce un raggruppamento di ogni area di contenuto sulla pagina e il relativo tempo di caricamento.
 * Minimizza tutti i file JS e CSS sul sito. Vedi questo [post di blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

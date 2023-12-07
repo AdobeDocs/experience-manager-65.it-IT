@@ -1,19 +1,15 @@
 ---
 title: API JavaScript ClientContext
-seo-title: Client Context JavaScript API
 description: Scopri l’API JavaScript per ClientContext in Adobe Experience Manager.
-seo-description: The JavaScript API for Client Context
-uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3106'
 ht-degree: 2%
 
 ---
@@ -204,7 +200,7 @@ Nome dell’archivio. Utilizza il `getInstance` per recuperare questo valore.
 
 Vedi anche CQ_Analytics.SessionStore per i metodi ereditati.
 
-#### cancella() {#clear}
+#### clear() {#clear}
 
 Rimuove i dati dell&#39;archivio di sessione e tutte le proprietà di inizializzazione.
 
@@ -613,7 +609,7 @@ Utilizzare loadInitProperties per popolare i dati dell&#39;archivio sessione con
 
 Nessun valore restituito.
 
-#### cancella() {#clear-1}
+#### clear() {#clear-1}
 
 Rimuove tutte le proprietà dei dati dall&#39;archivio.
 
@@ -747,7 +743,7 @@ Rimuove una proprietà dall&#39;archivio della sessione. Attiva il `update` al c
 
 Nessun valore restituito.
 
-#### ripristina() {#reset}
+#### reset() {#reset}
 
 Ripristina i valori iniziali dell&#39;archivio dati. L’implementazione predefinita rimuove semplicemente tutti i dati. Attiva il `update` al completamento.
 
@@ -778,7 +774,7 @@ Imposta il valore di una proprietà. Attiva il `update` al completamento. Chiama
 **Parametri**
 
 * name: String. Nome della proprietà.
-* value: String. Valore proprietà.
+* value: String. Valore della proprietà.
 
 **Restituisce**
 

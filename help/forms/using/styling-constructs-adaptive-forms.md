@@ -3,14 +3,13 @@ title: Costrutti di stile per i moduli adattivi
 description: Utilizza il framework LESS per personalizzare l’aspetto dei moduli adattivi.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2361'
-ht-degree: 4%
+source-wordcount: '2348'
+ht-degree: 3%
 
 ---
 
@@ -328,7 +327,7 @@ Un autore può specificare il contenuto della Guida nei campi utilizzando i comp
  </tbody>
 </table>
 
-## Condizioni d’uso {#terms-and-conditions}
+## Termini e condizioni {#terms-and-conditions}
 
 I Termini e Condizioni (TnC `` ``) consente di specificare termini e condizioni. È possibile personalizzare il widget utilizzando le variabili descritte nella tabella seguente.
 

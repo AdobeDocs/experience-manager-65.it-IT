@@ -1,20 +1,16 @@
 ---
 title: Aggiungere proprietà personalizzate alle risorse di Gestione della corrispondenza
-seo-title: Add custom properties to Correspondence Management assets
 description: Scopri come aggiungere proprietà personalizzate alle risorse di Gestione della corrispondenza.
-seo-description: Learn how to add custom properties to Correspondence Management assets.
-uuid: 4716e181-d3ea-424b-9544-376cc649bce7
 content-type: reference
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '4428'
-ht-degree: 4%
+source-wordcount: '4431'
+ht-degree: 3%
 
 ---
 
@@ -65,7 +61,7 @@ Per aggiungere una proprietà personalizzata a tutti i tipi di risorse e alle le
 
       ![Sovrapponi nodo](assets/cmmetapropertiesoverlaynode.png)
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Clic **Salva tutto**.
 
@@ -205,7 +201,7 @@ La procedura seguente consente di aggiungere una scheda con un campo a tutte le 
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       ![Struttura di cartelle di sovrapposizione creata in CRX](assets/cmmetadatapropertiesappsfolder.png)
 
@@ -334,7 +330,7 @@ La procedura seguente consente di aggiungere una scheda con un campo a tutte le 
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. La cartella viene creata. Clic **Salva tutto**.
+   1. Clic **OK**. La cartella viene creata. Clic **Salva tutto**.
 
 1. Nella cartella degli elementi appena creata, aggiungi un nodo per la scheda personalizzata nella risorsa (in questo caso mytab - questo nome non viene visualizzato nell’interfaccia utente) seguendo la procedura riportata di seguito:
 
@@ -420,7 +416,7 @@ La procedura seguente illustra come aggiungere una proprietà a un tipo di risor
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       Clic **Salva tutto**.
 
@@ -543,7 +539,7 @@ Per impostazione predefinita, le proprietà personalizzate aggiunte alle nuove s
    | Frammento | /libs/fd/cm/ma/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/items/items/tabs2/items/tab1/items |
    | Lettera | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/items/letterproperties/items |
 
-1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
 1. Nel nodo degli elementi di sovrapposizione creato, crea un nodo denominato col4 (o qualsiasi altro nome) e fai clic su **Salva tutto**.
 
@@ -606,7 +602,7 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       Clic **Salva tutto**.
 
@@ -664,7 +660,7 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       Clic **Salva tutto**.
 
@@ -860,7 +856,7 @@ La procedura seguente illustra come consentire l’indicizzazione di proprietà 
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Clic **Salva tutto**.
 
@@ -906,7 +902,7 @@ La procedura seguente illustra come consentire l’indicizzazione di proprietà 
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Clic **Salva tutto**.
 
@@ -963,7 +959,7 @@ La procedura seguente illustra come visualizzare o nascondere le proprietà pers
    <tr>
       <td>hideOnCreate<br /> </td>
       <td>Booleano</td>
-      <td>vero<br /> </td>
+      <td>true<br /> </td>
    </tr>
    </tbody>
    </table>
@@ -980,7 +976,7 @@ La procedura seguente illustra come visualizzare o nascondere le proprietà pers
    <tr>
       <td>hideOnEdit<br /> </td>
       <td>Booleano</td>
-      <td>vero<br /> </td>
+      <td>true<br /> </td>
    </tr>
    </tbody>
    </table>

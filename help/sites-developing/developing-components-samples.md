@@ -1,20 +1,16 @@
 ---
 title: Sviluppo di componenti AEM - Esempi di codice
-seo-title: Developing AEM Components - Code Samples
 description: In questa sezione vengono forniti alcuni esempi su come creare componenti personalizzati per l’AEM.
-seo-description: This section provides some examples on how to create your own components for AEM.
-uuid: 764b5dad-d3bb-48c6-9e93-9dc4e3f623db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 4%
+source-wordcount: '203'
+ht-degree: 2%
 
 ---
 
@@ -33,10 +29,9 @@ Per informazioni sull’interfaccia classica, consulta [Componenti AEM per l’i
 >
 >Per facilitare l’analisi, il test e il debug dei componenti, AEM fornisce:
 >
->* [Modalità Sviluppatore](/help/sites-developing/developer-mode.md)
+>* [Modalità sviluppatore](/help/sites-developing/developer-mode.md)
 >* a [framework per automatizzare i test, basato sulla libreria Hobbes.js](/help/sites-developing/hobbes.md)
 >
-
 
 ## Esempio di codice: come personalizzare i campi della finestra di dialogo {#code-sample-how-to-customize-dialog-fields}
 

@@ -1,26 +1,24 @@
 ---
 title: Strumenti AEM Modernization Tools
-seo-title: AEM Modernization Tools
 description: Gli strumenti di modernizzazione dell’AEM consentono di convertire le funzioni legacy dell’AEM alla tecnologia più recente
-seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 83%
+source-wordcount: '78'
+ht-degree: 46%
 
 ---
 
 # Strumenti AEM Modernization Tools {#modernization-tools}
 
-[Gli strumenti di modernizzazione AEM consentono di convertire facilmente:](https://opensource.adobe.com/aem-modernize-tools/)
+[Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/) consente di convertire facilmente:
 
-* [](page-templates-static.md)Modelli statici in modelli modificabili[](page-templates-editable.md)
-* [](page-templates-static.md)Configurazioni di progettazione in criteri[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)Componenti di base in Componenti core[](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [](website.md)Interfaccia utente classica in interfaccia utente touch[](touch-ui-concepts.md)
+* [Modelli statici](page-templates-static.md) a [modelli modificabili](page-templates-editable.md)
+* [Configurazioni di progettazione](page-templates-static.md) a [criteri](page-templates-editable.md)
+* [Componenti di base](/help/sites-authoring/default-components-foundation.md) a [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Interfaccia classica](website.md) a [Interfaccia touch](touch-ui-concepts.md)
 
 Per ulteriori informazioni sull’utilizzo di questi strumenti, [vedi la relativa documentazione](https://opensource.adobe.com/aem-modernize-tools/).
 

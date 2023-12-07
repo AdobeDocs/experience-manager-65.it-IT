@@ -1,21 +1,17 @@
 ---
 title: Abilita registrazione per moduli HTML5
-seo-title: Enable logging for HTML5 forms
 description: L'utilità logger consente di registrare un modulo e di eseguire il debug dei problemi correlati ai moduli.
-seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
-uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 6%
+source-wordcount: '629'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +23,7 @@ ht-degree: 6%
 
 Per configurare i registri lato server, effettua le seguenti operazioni:
 
-1. Passa a `https://'[server]:[port]'/system/console/configMgr`. Individuare e aprire *Configurazione del logger di registrazione di accesso Sling* opzione. Viene visualizzata una finestra di dialogo:
+1. Vai a `https://'[server]:[port]'/system/console/configMgr`. Individuare e aprire *Configurazione del logger di registrazione di accesso Sling* opzione. Viene visualizzata una finestra di dialogo:
 
    ![ Finestra di dialogo dell’opzione di configurazione del logger di registrazione di accesso Sling](assets/logconfig.png)
 
@@ -103,7 +99,7 @@ La configurazione del registro è costituita dal livello del registro e dalla ca
   </tr>
   <tr>
    <td>3</td>
-   <td>AVVISO<br type="_moz" /> </td>
+   <td>AVVERTI<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>4</td>
@@ -183,7 +179,7 @@ Se utilizzi Configuration Manager per abilitare la registrazione, i registri ven
 1. Cerca e fai clic su **Configurazioni Forms per dispositivi mobili**.
 1. Nella casella di testo Opzioni di debug, immettere le configurazioni del registro come descritto nella sezione precedente, ad esempio: **2-a4-b5-c6**
 
-   ![Configurazione dei moduli](assets/forms_configuration.png)
+   ![Configurazione Forms](assets/forms_configuration.png)
 
    Configurazione dei moduli
 

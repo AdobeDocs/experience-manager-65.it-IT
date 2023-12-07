@@ -1,17 +1,13 @@
 ---
 title: Utilizzo dell’API sendToPrinter
-seo-title: Using the sendToPrinter API
 description: Utilizzo del servizio sendToPrinter per inviare un documento alla stampante.
-seo-description: Using the sendToPrinter service to send a document to printer.
-uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 5fb38afd-7517-494e-b084-1fdd4aef3ca4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '364'
 ht-degree: 14%
 
 ---
@@ -26,13 +22,13 @@ In AEM Forms è possibile utilizzare il servizio SendToPrinter per inviare un do
 
 * **Stampante accessibile indirettamente** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
 
-   Quando si invia un documento a una stampante, specificare uno dei seguenti protocolli di stampa:
+  Quando si invia un documento a una stampante, specificare uno dei seguenti protocolli di stampa:
 
    * **TAZZE** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
    * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
    * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**: il servizio di output supporta il protocollo di stampa CIFS (Common Internet File System).
+   * **CIF**: il servizio di output supporta il protocollo di stampa CIF (Common Internet File System).
 
 ## Utilizzo del servizio SendToPrinter {#using-sendtoprinter-service}
 
@@ -58,12 +54,12 @@ La tabella seguente elenca:
 | DirectIP | Non valido | Qualsiasi | eccezione che indica che la stampante non è stata trovata. |
 | DirectIP | Valido | Qualsiasi | Processo di stampa riuscito. |
 | CIFS | Valido | Vuoto | Processo di stampa riuscito. |
-| CIFS | Non valido | Qualsiasi | errore sconosciuto durante la stampa con CIFS. |
+| CIFS | Non valido | Qualsiasi | errore sconosciuto durante la stampa con CIF. |
 | CIFS | Vuoto | Qualsiasi | eccezione che indica che l&#39;argomento obbligatorio sPrintServerUri non può essere vuoto. |
 
 ## Supporto per l’autenticazione {#authentication-support}
 
-L&#39;autenticazione è supportata solo per la stampa CIFS. Per eseguire l&#39;autenticazione, specificare il nome utente/password/dominio in PrinterSpec. È possibile crittografare una password utilizzando il servizio di supporto Cipro di AEM Granite eseguendo i seguenti passaggi:
+L&#39;autenticazione è supportata solo per la stampa CIF. Per eseguire l&#39;autenticazione, specificare il nome utente/password/dominio in PrinterSpec. È possibile crittografare una password utilizzando il servizio di supporto Cipro di AEM Granite eseguendo i seguenti passaggi:
 
 1. Vai a https://&lt;server>:&lt;port>/system/console.
 

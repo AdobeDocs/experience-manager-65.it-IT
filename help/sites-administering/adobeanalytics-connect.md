@@ -1,20 +1,16 @@
 ---
 title: Connessione ad Adobe Analytics e creazione di framework
-seo-title: Connecting to Adobe Analytics and Creating Frameworks
 description: Scopri come collegare l’AEM al SiteCatalyst e creare framework.
-seo-description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
-uuid: 3820dd24-4193-42ea-aef2-4669ebfeaa9d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 7%
+source-wordcount: '1484'
+ht-degree: 1%
 
 ---
 
@@ -85,7 +81,7 @@ Utilizza il [Console web per configurare il bundle OSGi](/help/sites-deploying/c
 
 >[!CAUTION]
 >
->In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
+>A causa di modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa nell’AEM.
 >
 >Il [Plug-in ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=it) ora deve essere utilizzato.
 
@@ -93,7 +89,7 @@ Utilizza il [Console web per configurare il bundle OSGi](/help/sites-deploying/c
 
 >[!CAUTION]
 >
->In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
+>A causa di modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa nell’AEM.
 >
 >Il [Plug-in ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=it) ora deve essere utilizzato.
 
@@ -149,7 +145,7 @@ Per iniziare, apri il pannello. Premi la freccia verso il basso accanto a **Serv
 
 ![server_001](assets/server_001.png)
 
-* **Server per tracking**
+* **Server di tracciamento**
 
    * contiene l’URL utilizzato per inviare chiamate Adobe Analytics
 
@@ -162,7 +158,7 @@ Per iniziare, apri il pannello. Premi la freccia verso il basso accanto a **Serv
    * Ha gli stessi segmenti del server di tracciamento
    * Utilizzato per inviare dati da pagine protette (`https://`)
 
-* **Namespace visitatore**
+* **Spazio dei nomi del visitatore**
 
    * Lo spazio dei nomi determina la prima parte dell’URL di tracciamento.
    * Ad esempio, modificando lo spazio dei nomi in **CNAME** determina l’aspetto delle chiamate effettuate ad Adobe Analytics **CNAME.d1.omtrdc.net** invece del valore predefinito.

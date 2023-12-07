@@ -1,13 +1,11 @@
 ---
 title: Guida di Adobe Experience Manager 6.5 Forms
-seo-title: AEM 6.5 Forms Guide
 description: Utilizza questa guida AEM 6.5 per creare, gestire, pubblicare e aggiornare moduli digitali. Trova informazioni sull’installazione, l’aggiornamento e la configurazione dei moduli adattivi e sull’authoring di moduli adattivi.
-seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 30%
+source-wordcount: '318'
+ht-degree: 22%
 
 ---
 
@@ -43,7 +41,7 @@ Utilizza questa guida AEM 6.5 per creare, gestire, pubblicare e aggiornare modul
 | [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base dell’AEM. |
 | [Guida utente sullo sviluppo](/help/sites-developing/home.md) | Scopri come creare l’istanza AEM. |
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
-| [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework sull’AEM. |
+| [Guida utente di Commerce](/help/commerce/home.md) | Scopri la Commerce integration framework sull’AEM. |
 | [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
 
 ## Risorse chiave per l’AEM

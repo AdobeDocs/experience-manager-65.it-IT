@@ -1,16 +1,12 @@
 ---
 title: Creazione di un'azione personalizzata sulla barra degli strumenti
-seo-title: Creating a custom toolbar action
 description: Gli sviluppatori di moduli possono creare azioni della barra degli strumenti personalizzate per i moduli adattivi in AEM Forms. L’utilizzo di azioni personalizzate da parte degli autori di moduli può fornire più flussi di lavoro e opzioni ai loro utenti finali.
-seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
-uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
 exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Prerequisiti {#prerequisite}
 
-Prima di creare un’azione personalizzata nella barra degli strumenti, acquisisci familiarità con [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md) e [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Prima di creare un’azione personalizzata nella barra degli strumenti, acquisisci familiarità con [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md) e [Sviluppo con CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Che cos’è un’azione {#what-is-an-action-br}
 

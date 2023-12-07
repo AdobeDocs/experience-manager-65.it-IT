@@ -1,20 +1,16 @@
 ---
 title: Impostazioni configurazione OSGi
-seo-title: OSGi Configuration Settings
 description: Questo articolo descrive le impostazioni di configurazione OSGi (elencate in base al bundle) rilevanti per l’implementazione del progetto. L'elenco funge da orientamento e non è esaustivo.
-seo-description: This article details the OSGi configuration settings (listed according to bundle) that are relevant to project implementation. The list acts as a guideline and it is not exhaustive.
-uuid: 192d3287-ec99-403b-bab0-45721e4e3abd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3360'
 ht-degree: 0%
 
 ---
@@ -39,7 +35,7 @@ Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) son
 
 >[!NOTE]
 >
->Lo strumento di configurazione Diff. OSGi, parte del [Strumenti AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=it), può essere utilizzato per elencare le configurazioni OSGi predefinite.
+>Lo strumento di configurazione Diff. OSGi, parte del [Strumenti AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=en), può essere utilizzato per elencare le configurazioni OSGi predefinite.
 
 >[!NOTE]
 >
@@ -275,7 +271,7 @@ Durante la creazione di una configurazione, non modificare la configurazione di 
 
 >[!CAUTION]
 >
->Quando si modifica l&#39;impostazione di **Minimizza** o **Gzip**, elimina il contenuto della cache clientlibs. Consulta [Articolo della Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=it) per i dettagli.
+>Quando si modifica l&#39;impostazione di **Minimizza** o **Gzip**, elimina il contenuto della cache clientlibs. Consulta [Articolo della Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en) per i dettagli.
 
 >[!NOTE]
 >
@@ -356,7 +352,7 @@ Nomi dei parametri di richiesta che potrebbero fornire l’ID utente.
 Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell’oggetto credenziali. La mappatura è definita qui. Se il nome utente `admin` viene visualizzato su entrambi i lati della mappa, la mappatura viene ignorata. Il carattere &quot;=&quot; deve essere preceduta da &quot;\&quot;.
 
 * **Formato**
-Indica il formato in cui viene fornito l’ID utente. Utilizzare:
+Indica il formato in cui viene fornito l’ID utente. Usa:
 
    * `Basic` se l’ID utente è codificato nel formato di autenticazione HTTP Basic
    * `AsIs` se l’ID utente è fornito in testo normale o qualsiasi valore di espressione regolare applicato deve essere utilizzato così com’è o qualsiasi espressione regolare

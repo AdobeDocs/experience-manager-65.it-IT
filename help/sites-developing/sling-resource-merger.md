@@ -1,19 +1,15 @@
 ---
 title: Utilizzo di Sling Resource Merger in AEM
-seo-title: Using the Sling Resource Merger in AEM
 description: Sling Resource Merger fornisce servizi per accedere e unire le risorse
-seo-description: The Sling Resource Merger provides services to access and merge resources
-uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 1%
+source-wordcount: '1247'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +67,7 @@ Gli obiettivi per utilizzare Sling Resource Merger in AEM sono i seguenti:
 
 La fusione delle risorse fornisce le seguenti proprietà:
 
-* `sling:hideProperties` ( `String` oppure `String[]`)
+* `sling:hideProperties` ( `String` o `String[]`)
 
   Specifica la proprietà o l&#39;elenco di proprietà da nascondere.
 
@@ -81,7 +77,7 @@ La fusione delle risorse fornisce le seguenti proprietà:
 
   Indica se le risorse devono essere completamente nascoste, inclusi i relativi elementi secondari.
 
-* `sling:hideChildren` ( `String` oppure `String[]`)
+* `sling:hideChildren` ( `String` o `String[]`)
 
   Contiene il nodo figlio, o elenco di nodi figlio, da nascondere. Le proprietà del nodo verranno mantenute.
 

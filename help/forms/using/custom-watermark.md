@@ -1,19 +1,15 @@
 ---
 title: Filigrana personalizzata nell’anteprima di Letter PDF
-seo-title: Custom watermark in letter PDF preview
 description: Scopri come creare una filigrana personalizzata nell’anteprima di Letter PDF.
-seo-description: Learn how to create custom watermark in letter PDF preview.
-uuid: 5adfede3-9b38-4a12-bf14-6d80cfb0a05a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -58,7 +54,8 @@ Per personalizzare il testo e l&#39;aspetto della filigrana, attenersi alla proc
       >    * Eseguire l’aggiornamento all’istanza
       >    * Applicare un hotfix
       >    * Installare un feature pack
-
+      >    
+      >
 
    1. Clic **OK** e quindi fare clic su **Salva tutto**. Il **[!UICONTROL filigrana anteprima]** viene creata nel percorso specificato.
 

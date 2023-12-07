@@ -1,18 +1,16 @@
 ---
 title: La tua app ibrida è pronta per AEM Mobile?
 description: Scopri le app ibride. Un’app in Experience Manager è comunemente divisa in due parti. La "shell" e il "contenuto" e questa pagina forniscono ulteriori informazioni su questi argomenti.
-uuid: cbcce3fa-9100-46ea-9f24-931b42666709
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: b7fd7954-f2a5-402d-b259-e18b5a618be9
 pagetitle: Is your hybrid app ready for AEM Mobile?
 exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 0%
+source-wordcount: '718'
+ht-degree: 1%
 
 ---
 

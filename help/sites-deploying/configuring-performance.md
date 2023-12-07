@@ -1,18 +1,16 @@
 ---
 title: Ottimizzazione delle prestazioni
 description: Scopri come configurare alcuni aspetti dell’AEM per ottimizzare le prestazioni.
-uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6503'
-ht-degree: 12%
+source-wordcount: '6469'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 12%
 >
 >Per ulteriori informazioni sulla risoluzione dei problemi e sulla risoluzione dei problemi relativi alle prestazioni, vedere anche [Struttura delle prestazioni](/help/sites-deploying/performance-tree.md).
 >
->Inoltre, puoi rivedere un articolo della Knowledge Base su [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
+>Inoltre, puoi rivedere un articolo della Knowledge Base su [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 Un problema chiave è il tempo impiegato dal sito web per rispondere alle richieste dei visitatori. Anche se questo valore varia per ogni richiesta, è possibile definire un valore target medio. Una volta dimostrato che questo valore è sia realizzabile che gestibile, può essere utilizzato per monitorare le prestazioni del sito web e indicare lo sviluppo di potenziali problemi.
 
@@ -41,7 +39,7 @@ Questo ambiente contiene contenuti che rendi disponibili agli utenti. Qui il num
 >[!NOTE]
 >
 >* Dopo la configurazione per l&#39;ottimizzazione delle prestazioni, seguire le procedure descritte in [Giornata difficile](/help/sites-developing/tough-day.md) per testare l’ambiente con carichi pesanti.
->* Vedi anche [Suggerimenti per l&#39;ottimizzazione delle prestazioni.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
+>* Vedi anche [Suggerimenti per l&#39;ottimizzazione delle prestazioni.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
 
 ## Metodologia di ottimizzazione delle prestazioni {#performance-optimization-methodology}
 
@@ -126,7 +124,7 @@ La struttura di un archivio di contenuti può influire anche sulle prestazioni. 
 
 I tuoi migliori amici durante un normale esercizio di ottimizzazione delle prestazioni sono:
 
-* Le azioni `request.log`
+* Il `request.log`
 * Tempistica basata su componenti
 * Un profiler Java™.
 
@@ -203,7 +201,7 @@ Alcuni aspetti dell’AEM (e/o dell’archivio sottostante) possono essere confi
 
 >[!NOTE]
 >
->Consulta [Ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
+>Consulta [Ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 ### Indicizzazione di ricerca {#search-indexing}
 
@@ -478,7 +476,7 @@ Al termine di tutte le prove, indicare quanto segue:
 
 ## Ottimizzazione delle prestazioni con Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-Il [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è lo strumento di caching e/o bilanciamento del carico di Adobe. Quando utilizzi Dispatcher, prendi in considerazione l’ottimizzazione delle prestazioni della cache del sito web.
+Il [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) è lo strumento di caching e/o bilanciamento del carico di Adobe. Quando utilizzi Dispatcher, prendi in considerazione l’ottimizzazione delle prestazioni della cache del sito web.
 
 >[!NOTE]
 >
@@ -544,7 +542,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->Questo URL richiama la stessa pagina e lo stesso modello del file `gallery.html`. Nella definizione del modello, è possibile specificare quale script esegue il rendering della pagina oppure utilizzare lo stesso script per tutte le pagine.
+>Questo URL richiama la stessa pagina e lo stesso modello di `gallery.html`. Nella definizione del modello, è possibile specificare quale script esegue il rendering della pagina oppure utilizzare lo stesso script per tutte le pagine.
 
 #### Personalizza in base all&#39;URL {#customize-by-url}
 
@@ -639,7 +637,7 @@ Con la versione 4.1.11 di Dispatcher, puoi memorizzare nella cache le intestazio
 Per avere la certezza i file siano memorizzati in cache correttamente, attieniti alle seguenti linee guida:
 
 * Verifica che i file abbiano sempre l’estensione corretta.
-* Evita gli script di server di file generici che hanno URL del tipo `download.jsp?file=2214`. Per utilizzare gli URL contenenti la specifica del file, riscrivere lo script. Nell’esempio precedente, questa riscrittura è `download.2214.pdf`.
+* Evita gli script di server di file generici che hanno URL come `download.jsp?file=2214`. Per utilizzare gli URL contenenti la specifica del file, riscrivere lo script. Nell’esempio precedente, questa riscrittura è `download.2214.pdf`.
 
 ## Prestazioni di backup {#backup-performance}
 
@@ -668,7 +666,7 @@ La tabella seguente illustra le dimensioni dei volumi di dati utilizzati nei ben
 
 | Contenuto | Nodi | Pagine | Immagini | Tag |
 |---|---|---|---|---|
-| Installazione di base | 69 610 | 562 | 256 | 237 |
+| Installazione di base | 69.610 | 562 | 256 | 237 |
 | Contenuto ridotto per il backup incrementale |  | +100 | +2 | +2 |
 | Contenuti di grandi dimensioni per il backup completo |  | +10 000 | +100 | +100 |
 

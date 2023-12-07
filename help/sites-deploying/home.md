@@ -1,12 +1,11 @@
 ---
 title: Guida utente alla distribuzione di AEM 6.5
-seo-title: AEM 6.5 Deploying User Guide
-description: Scopri come installare e distribuire Adobe Experience Manager 6.5 e la relativa architettura, inclusa la distribuzione cloud di Adobe Managed Services.
+description: Scopri come installare e distribuire Adobe Experience Manager 6.5 e la relativa architettura, incluso l’Adobe di distribuzione cloud Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 25%
+source-wordcount: '297'
+ht-degree: 15%
 
 ---
 
@@ -36,14 +35,14 @@ Questa guida descrive tutte le attività di implementazione dell’AEM, come l�
 | [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base dell’AEM. |
 | [Guida utente sullo sviluppo](/help/sites-developing/home.md) | Scopri come creare l’istanza AEM. |
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
-| [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework sull’AEM. |
+| [Guida utente di Commerce](/help/commerce/home.md) | Scopri la Commerce integration framework sull’AEM. |
 | [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
 
 ## Risorse chiave per l’AEM
 
 * [Tutorial su AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guida utente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
-* [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
+* [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
 * [Guida utente dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
 * [Preparazione al RGPD](/help/managing/data-protection-and-privacy.md)

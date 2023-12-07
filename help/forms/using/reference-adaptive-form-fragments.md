@@ -1,18 +1,14 @@
 ---
 title: Fai riferimento a frammenti di moduli adattivi
-seo-title: Reference adaptive form fragments
 description: AEM Forms fornisce frammenti di moduli adattivi che è possibile utilizzare come risorse per creare rapidamente un modulo.
-seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
-uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 3%
+source-wordcount: '381'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 3%
 
 [Frammento di modulo adattivo](../../forms/using/adaptive-form-fragments.md) è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare durante la creazione di un modulo. Consente di creare un modulo in modo semplice e rapido. Puoi trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell’editor moduli.
 
-Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it). Include i seguenti frammenti:
+Per gli autori di moduli adattivi, i frammenti di riferimento sono forniti nel [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Include i seguenti frammenti:
 
 * Indirizzo
 * Informazioni di contatto
@@ -60,7 +56,7 @@ Include campi per acquisire numero di telefono e indirizzo e-mail.
 ## Informazioni carta di credito {#credit-card-information}
 
 Include campi per acquisire informazioni sulla carta di credito che possono essere utilizzate per elaborare i pagamenti.
-[ ![Frammento informazioni carta di credito](assets/cc-info.png)](assets/cc-info-1.png)
+[![Frammento informazioni carta di credito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Occupazione corrente {#current-employment}
 

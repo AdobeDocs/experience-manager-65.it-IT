@@ -1,17 +1,15 @@
 ---
 title: Conversione di file con PDF Generator
 description: Il servizio PDF Generator converte i formati di file nativi in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
-uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -110,7 +108,7 @@ Se il file ZIP contiene più di un file HTML al livello inferiore della gerarchi
 1. Nell&#39;elenco File di Export PDF da selezionare il formato in cui esportare il file PDF.
 1. Nella casella Specificare un timeout immettere il tempo di attesa prima del timeout dell&#39;applicazione. Il valore predefinito è 270 secondi.
 
-   Il tempo di conversione visualizzato quando il file viene convertito potrebbe essere maggiore del valore specificato in questo campo. Il Tempo di conversione include il tempo trascorso in attesa del thread o del processo, il tempo impiegato per convertire il file e il tempo impiegato dal convertitore di fallback (se applicabile). time. Il valore di Specifica timeout corrisponde al tempo necessario per convertire il file.
+   Il tempo di conversione visualizzato quando il file viene convertito potrebbe essere maggiore del valore specificato in questo campo. Il Tempo di conversione include il tempo trascorso in attesa del thread o del processo, il tempo impiegato per convertire il file e il tempo impiegato dal convertitore di fallback (se applicabile). tempo. Il valore di Specifica timeout corrisponde al tempo necessario per convertire il file.
 
 1. (Facoltativo) In **Specificare un profilo di verifica preliminare personalizzato** , fare clic su Sfoglia e selezionare un [profilo verifica preliminare personalizzato](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). I profili di verifica preliminare vengono utilizzati solo durante la conversione di documenti in formato archivio PDF (PDF/A).
 1. Fai clic su Esporta. Al termine della conversione, viene visualizzato un collegamento al file esportato.

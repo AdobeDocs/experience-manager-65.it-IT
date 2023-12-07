@@ -1,13 +1,12 @@
 ---
 title: Adobe Experience Manager Mobili - Preparazione al RGPD
 description: Scopri come Adobe Experience Manager è pronta ad aiutarti con gli obblighi di conformità ai requisiti RGPD.
-uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 1%
+source-wordcount: '683'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +36,7 @@ Contatta l’Assistenza clienti Adobe per avviare una richiesta RGPD per il Digi
 
 Per individuare i dati dei clienti sono necessari i seguenti ID. Qualsiasi sottoinsieme ricevuto implica che gli altri ID non erano applicabili a questo utente.
 
-Obbligatorio:
+Obbligatorio
 
 * ID contratto del cliente: *dpsc-contractId*
 

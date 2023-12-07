@@ -1,17 +1,13 @@
 ---
 title: Esempio per integrare il componente Bozze e invii con il database
-seo-title: Sample for integrating drafts & submissions component with database
 description: Implementazione di riferimento di servizi personalizzati per dati e metadati al fine di integrare il componente Bozze e richieste con un database.
-seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
-uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1472'
 ht-degree: 1%
 
 ---
@@ -29,7 +25,6 @@ L’esempio, discusso in questo documento, è un’implementazione di riferiment
 >* Gli esempi e le configurazioni illustrate in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
 >* Verifica di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per un elenco dei pacchetti disponibili, vedere [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) articolo.
 >* Il pacchetto di esempio funziona solo con azioni di invio Adaptive Forms.
-
 
 ## Impostare e configurare l’esempio {#set-up-and-configure-the-sample}
 
@@ -81,6 +76,7 @@ pagina in https://[*host*]:[*porta*]/system/console/configMgr.
    Per specificare un nome diverso per la tabella dati:
 
    * Nella configurazione della console Web, trovare e fare clic su Implementazione di esempio del servizio dati di Forms Portal. È possibile modificare i valori dell&#39;origine dati e del nome della tabella dati.
+
    >[!NOTE]
    >
    >Se si modificano i nomi delle tabelle, specificarli nella configurazione del portale moduli.
@@ -163,7 +159,6 @@ pagina in https://[*host*]:[*porta*]/system/console/configMgr.
 >
 >* Il driver JDBC per MySQL non viene fornito con l&#39;esempio. Verificare di aver eseguito il provisioning e fornire le informazioni necessarie per configurare il connection pool JDBC.
 >* Indirizza le istanze di authoring e pubblicazione per utilizzare lo stesso database. Il valore del campo URI connessione JDBC deve essere lo stesso per tutte le istanze di authoring e pubblicazione.
-
 
 1. Lascia invariate le altre configurazioni e fai clic su **[!UICONTROL Salva]**.
 

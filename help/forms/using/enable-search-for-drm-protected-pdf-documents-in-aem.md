@@ -1,20 +1,16 @@
 ---
 title: Consenti a AEM di effettuare ricerche nei documenti di PDF protetti da Document Security
-seo-title: Enable AEM to search document security protected PDF documents
 description: Scopri come abilitare la ricerca AEM nativa per eseguire ricerche full-text sui documenti di PDF protetti da DRM.
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
-uuid: ec6e5d53-a74c-4958-a389-7937d073c083
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -64,7 +60,7 @@ Per stabilire la connessione sicura, è possibile utilizzare uno dei metodi segu
    * **Nome utente:** Specifica il nome utente dell’account AEM Forms su JEE da utilizzare per avviare chiamate dal server AEM. L’account specificato deve disporre delle autorizzazioni necessarie per avviare i servizi documentali sul server AEM Forms su JEE.
    * **Password**: specifica la password dell’account AEM Forms su JEE indicato nel campo Nome utente.
 
-   Fai clic su **Salva**. AEM è abilitato per la ricerca di documenti PDF protetti da Document Security.
+   Clic **Salva**. AEM è abilitato per la ricerca di documenti PDF protetti da Document Security.
 
 #### Configurare il bundle Adobe LiveCycle Client SDK utilizzando l’autenticazione reciproca {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
@@ -80,7 +76,7 @@ Per stabilire la connessione sicura, è possibile utilizzare uno dei metodi segu
    * **TrustStorePassword**: specifica la password per il file truststore.
    * **Nome servizio**: aggiungere RightsManagementService all&#39;elenco dei servizi specificati.
 
-   Fai clic su **Salva**. L’AEM è abilitato alla ricerca di documenti PDF protetti da Document Security
+   Clic **Salva**. L’AEM è abilitato alla ricerca di documenti PDF protetti da Document Security
 
 ### Indicizzare un esempio di documento PDF protetto tramite policy {#index-a-sample-policy-protected-pdf-document}
 

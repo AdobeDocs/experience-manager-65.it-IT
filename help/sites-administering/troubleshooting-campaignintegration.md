@@ -1,16 +1,14 @@
 ---
 title: Risoluzione dei problemi relativi all’integrazione di Adobe Campaign Classic
 description: Scopri come risolvere i problemi relativi all’integrazione con Adobe Campaign Classic.
-uuid: 835ac2c3-ef2f-4963-9047-aeda3647b114
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -102,7 +100,7 @@ Questo errore si verifica se nell’istanza dell’AEM sono presenti informazion
 
 1. Rimuovi tutte le configurazioni di integrazione di Adobe Campaign Classic che si trovano nell’AEM.
 1. Rigenera l’integrazione.
-1. Creare un modello.
+1. Crea un modello.
 
 ## Se una connessione a SSL visualizza un errore durante la configurazione del Cloud Service {#if-a-connection-to-ssl-displays-an-error-when-setting-up-the-cloud-service}
 
@@ -122,7 +120,7 @@ at sun.security.ssl.AppOutputStream.write(Unknown Source)
 
 Quando tenti di sincronizzare il contenuto nella consegna Adobe Campaign Classic, l’AEM restituisce un elenco di newsletter. Tuttavia, gli URL delle newsletter nell’elenco possono essere indirizzi HTTP invece di HTTPS. Quando si seleziona uno degli elementi dell’elenco, si verifica un errore. Questo errore può verificarsi con la seguente configurazione.
 
-* Adobe Campaign in hosting utilizzando https per la comunicazione con AEM Author
+* Adobe Campaign in hosting utilizzando https per la comunicazione con l’Autore dell’AEM
 * Proxy inverso con terminazione SSL
 * Istanza di authoring AEM on-premise
 

@@ -1,18 +1,14 @@
 ---
 title: Ottimizzazione dei moduli di HTML5
-seo-title: Optimizing HTML5 forms
 description: È possibile ottimizzare le dimensioni di output dei moduli HTML5.
-seo-description: You can optimize the output size of the HTML5 forms.
-uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -63,7 +59,6 @@ Apache può comunicare con JBoss utilizzando HTTP o il protocollo AJP.
    >* Accesso: *https://&lt;server>:&lt;port>/system/console/configMgr*
    * Modifica la configurazione per il filtro Referrer Apache Sling
    * In Consenti host, aggiungi la voce per il server proxy
-
 
 1. Abilita Compressione.
 

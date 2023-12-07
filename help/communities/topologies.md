@@ -1,18 +1,14 @@
 ---
 title: Topologie consigliate per le community
-seo-title: Recommended Topologies for Communities
 description: Come affrontare la gestione dei contenuti generati dagli utenti (UGC, User-Generated Content)
-seo-description: How to approach the handling of user-generated content (UGC)
-uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 exl-id: b6658330-d862-44e3-aac0-824fb91cd087
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
@@ -40,6 +36,7 @@ La richiesta di un archivio comune determina le seguenti topologie consigliate.
 >Per AEM Communities, [UGC non viene mai replicato](working-with-srp.md#ugc-never-replicated).
 >
 >Quando la distribuzione non include un [archivio comune](working-with-srp.md), UGC sarà visibile solo nell’istanza di pubblicazione o authoring dell’AEM in cui è stato inserito.
+>
 
 >[!NOTE]
 >
@@ -94,20 +91,20 @@ Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzio
 
 * [Sincronizzazione utente](sync.md)
 
-   Descrive la sincronizzazione dei dati utente tra le istanze della farm di pubblicazione.
+  Descrive la sincronizzazione dei dati utente tra le istanze della farm di pubblicazione.
 
 * [Gestione di utenti e gruppi di utenti](users.md)
 
-   Descrive i ruoli degli utenti e dei gruppi di utenti negli ambienti di authoring e pubblicazione.
+  Descrive i ruoli degli utenti e dei gruppi di utenti negli ambienti di authoring e pubblicazione.
 
 * UGC [archivio comune](working-with-srp.md)
 
-   Descrive l&#39;archiviazione del contenuto della community separata dal contenuto del sito.
+  Descrive l&#39;archiviazione del contenuto della community separata dal contenuto del sito.
 
 * [Archivi nodi e archivi dati](../../help/sites-deploying/data-store-config.md)
 
-   In pratica, il contenuto del sito viene memorizzato in un archivio nodi. Per Assets, è possibile configurare un archivio dati per l’archiviazione di dati binari. Per le community, è necessario configurare un archivio comune per selezionare l&#39;SRP.
+  In pratica, il contenuto del sito viene memorizzato in un archivio nodi. Per Assets, è possibile configurare un archivio dati per l’archiviazione di dati binari. Per le community, è necessario configurare un archivio comune per selezionare l&#39;SRP.
 
 * [Elementi di archiviazione](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   Descrive le implementazioni di archiviazione a due nodi: Tar e MongoDB.
+  Descrive le implementazioni di archiviazione a due nodi: Tar e MongoDB.

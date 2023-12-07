@@ -1,19 +1,15 @@
 ---
 title: API per lavorare con i moduli inviati sul portale dei moduli
-seo-title: APIs to work with submitted forms on forms portal
 description: AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
-seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
-uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
-discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 7%
+source-wordcount: '538'
+ht-degree: 4%
 
 ---
 
@@ -78,11 +74,11 @@ Specifica i seguenti parametri nell’URL della richiesta:
    <td>Specifica il percorso del repository CRX in cui risiede il modulo. Se non si specifica il percorso del modulo, verrà restituita una risposta vuota.<br /> </td>
   </tr>
   <tr>
-   <td><code>offset</code> (facoltativo)</td>
+   <td><code>offset</code><br /> (facoltativo)</td>
    <td>Specifica il punto iniziale nell'indice del set di risultati. Il valore predefinito è <strong>0</strong>.</td>
   </tr>
   <tr>
-   <td><code>limit</code> (facoltativo)</td>
+   <td><code>limit</code><br /> (facoltativo)</td>
    <td>Limita il numero di risultati. Il valore predefinito è <strong>30</strong>.</td>
   </tr>
   <tr>

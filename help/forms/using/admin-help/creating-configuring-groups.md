@@ -1,18 +1,14 @@
 ---
 title: Creazione e configurazione di gruppi
-seo-title: Creating and configuring groups
 description: Scopri come creare gruppi manualmente o dinamicamente, modificarli, visualizzarne i dettagli o eliminarli.
-seo-description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
-uuid: 8532d72b-270a-4fcf-b7a5-56fca979a5fe
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
@@ -34,7 +30,7 @@ Se si utilizza Content Services (obsoleto), è possibile selezionare l&#39;opzio
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Utenti e gruppi, quindi fai clic su Nuovo gruppo.
 1. Completare la sezione Impostazioni generali e fare clic su Avanti. Nome canonico e Nome gruppo sono attributi obbligatori.
 
-   Il nome canonico è un identificatore univoco del gruppo. Ogni gruppo e utente in un dominio deve avere un nome canonico univoco. Selezionare la casella di controllo Generato dal sistema per consentire a Gestione utenti di assegnare un valore univoco oppure deselezionare la casella di controllo e specificare un valore personalizzato per il Nome canonico.
+   Il Nome canonico è un identificatore univoco del gruppo. Ogni gruppo e utente in un dominio deve avere un nome canonico univoco. Selezionare la casella di controllo Generato dal sistema per consentire a Gestione utenti di assegnare un valore univoco oppure deselezionare la casella di controllo e specificare un valore personalizzato per il Nome canonico.
 
    Evita di usare i caratteri di sottolineatura (_) nei nomi canonici, ad esempio, `sample_group`. Quando si cercano gruppi in base al nome canonico, quelli contenenti caratteri di sottolineatura non vengono restituiti.
 
@@ -77,7 +73,7 @@ Un gruppo dinamico contiene solo utenti. Non può contenere altri gruppi. Tuttav
    * Per abilitare la sincronizzazione automatica su base giornaliera, digitare l&#39;ora nel formato di 24 ore nella casella Si verifica il giorno alle. Quando salvi le impostazioni, questo valore viene convertito in un’espressione cron, che viene visualizzata nella casella sottostante.
    * Per pianificare la sincronizzazione in un giorno specifico della settimana o del mese oppure in un mese specifico, selezionare la casella corrispondente all&#39;espressione cron desiderata. Il valore predefinito è `0 00 4 ? * *`(il che significa controllare alle 4 del mattino ogni giorno).
 
-      L’utilizzo delle espressioni cron si basa sul sistema di pianificazione dei processi open source Quartz, versione 1.4.0.
+     L’utilizzo delle espressioni cron si basa sul sistema di pianificazione dei processi open source Quartz, versione 1.4.0.
 
 1. Fai clic su Salva.
 

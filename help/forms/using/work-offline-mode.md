@@ -1,15 +1,11 @@
 ---
 title: Utilizzo della modalità offline
-seo-title: Working in the offline mode
 description: Disconnetti il tuo dispositivo mobile al di fuori dell’intervallo della rete AEM Forms o in modalità completamente offline e lavora sull’app AEM Forms
-seo-description: Take your mobile device offline outside your AEM Forms network range or in a completely offline mode and work on the AEM Forms app
-uuid: b900a0f8-90ce-486a-bde6-6cdf11bd2801
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 0%

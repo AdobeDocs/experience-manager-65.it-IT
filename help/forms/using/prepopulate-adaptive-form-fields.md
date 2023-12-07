@@ -1,18 +1,14 @@
 ---
 title: Precompilare i campi del modulo adattivo
-seo-title: Prefill adaptive form fields
 description: Utilizza i dati esistenti per precompilare i campi di un modulo adattivo.
-seo-description: With adaptive forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-uuid: 574de83a-7b5b-4a1f-ad37-b9717e5c14f1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2203'
 ht-degree: 0%
 
 ---
@@ -241,7 +237,7 @@ Per abilitare il servizio di precompilazione, specifica Configurazione predefini
 >
 >La Configurazione del servizio di precompilazione è applicabile ai moduli adattivi, ai moduli HTML5 e ai set di moduli HTML5.
 
-1. Apri **[!UICONTROL Configurazione della console web Adobe Experience Manager]** utilizzando l’URL:\
+1. Apri **[!UICONTROL Configurazione console Web Adobe Experience Manager]** utilizzando l’URL:\
    https://&lt;server>:&lt;port>/system/console/configMgr
 1. Cerca e apri **[!UICONTROL Configurazione predefinita servizio preriempimento]**.
 

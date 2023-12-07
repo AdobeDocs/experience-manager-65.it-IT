@@ -1,17 +1,15 @@
 ---
 title: Partecipazione ai flussi di lavoro
 description: In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’attività su una pagina o una risorsa. Il flusso di lavoro seleziona un utente o un gruppo per eseguire l’attività e assegna un elemento di lavoro a tale persona o gruppo.
-uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 51%
+source-wordcount: '541'
+ht-degree: 39%
 
 ---
 
@@ -57,7 +55,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
 
 ### Completamento di un passaggio partecipante {#completing-a-participant-step}
 
-Dopo aver eseguito l’azione indicata, puoi completare l’elemento di lavoro, consentendo in tal modo la continuazione del flusso di lavoro. Utilizza la seguente procedura per completare l’elemento di lavoro.
+Dopo aver eseguito l’azione indicata, puoi completare l’elemento di lavoro, consentendo in tal modo la continuazione del flusso di lavoro. Per completare l&#39;elemento di lavoro, attenersi alla procedura descritta di seguito.
 
 1. Seleziona il passaggio del flusso di lavoro e fai clic su **Completa** nella barra di navigazione superiore.
 1. Nella finestra di dialogo risultante, seleziona **Passaggio successivo** ovvero il passaggio da eseguire successivamente. Un elenco a discesa mostra tutte le destinazioni appropriate. A **Commento** può essere inserito.
@@ -70,7 +68,7 @@ Dopo aver eseguito l’azione indicata, puoi completare l’elemento di lavoro, 
 
 ### Delega di un passaggio partecipante {#delegating-a-participant-step}
 
-Segui la procedura seguente per delegare un elemento di lavoro.
+Per delegare un elemento di lavoro, attenersi alla procedura descritta di seguito.
 
 1. Fai clic su **Delega** nella barra di navigazione superiore.
 1. Nella finestra di dialogo, utilizza l’elenco a discesa per selezionare **Utente** per delegare l&#39;elemento di lavoro a. Puoi anche aggiungere una **Commento**.

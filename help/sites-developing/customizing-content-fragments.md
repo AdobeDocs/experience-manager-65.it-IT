@@ -1,16 +1,14 @@
 ---
 title: Personalizzazione ed estensione dei frammenti di contenuto
-seo-title: Customizing and Extending Content Fragments
 description: Un frammento di contenuto estende una risorsa standard. Scopri come personalizzarli.
-seo-description: A content fragment extends a standard asset. Learn how you can customize them.
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2794'
-ht-degree: 2%
+source-wordcount: '2728'
+ht-degree: 1%
 
 ---
 
@@ -128,7 +126,7 @@ Per maggiori dettagli vedi [Frammento di contenuto - Considerazioni sull’elimi
 
 >[!CAUTION]
 >
->Il [Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) è ora consigliato. Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per ulteriori dettagli.
+>Il [Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) è ora consigliato. Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) per ulteriori dettagli.
 
 È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. L&#39;AEM fornisce [**Frammento di contenuto** componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) - a [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere, questo **Frammento di contenuto** Componente core.
 
@@ -227,7 +225,7 @@ I frammenti di contenuto possono essere integrati con:
   >
   >* I modelli vengono copiati per creare il frammento, in modo che questo sia implicito.
 
-* **Schemi metadati**
+* **Schemi di metadati**
 
    * I frammenti di contenuto (ri)utilizzano [schemi di metadati](/help/assets/metadata-schemas.md), che può essere definito con le risorse standard.
    * CFM fornisce uno schema specifico:

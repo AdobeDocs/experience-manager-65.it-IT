@@ -1,17 +1,13 @@
 ---
 title: Utilizzo del salvataggio automatico nell’app AEM Forms
-seo-title: Using autosave in AEM Forms app
 description: Scopri come utilizzare la funzione di salvataggio automatico nell’app AEM Forms per evitare la perdita di dati.
-seo-description: Learn how to use autosave feature in AEM Forms app that lets you avoid data loss.
-uuid: 00fe6a10-1a72-443d-a840-0415dc769199
 contentOwner: sashanka
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 2c71cc28-b7c8-4785-9fc2-b47fa80cbd70
 docset: aem65
 exl-id: 1603eef1-d7c8-47d3-8cfa-55ec3eaadd64
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -38,9 +34,9 @@ Per utilizzare la funzione di salvataggio automatico nell’app AEM Forms, effet
 
 1. Accedi all’app e passa a **Impostazioni > Generale**.
 1. Nella schermata Generale, utilizza **Frequenza salvataggio automatico** per selezionare gli intervalli in corrispondenza dei quali l’app deve salvare i dati immessi.
-   [ ![Impostazione della frequenza di salvataggio automatico](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
+   [![Impostazione della frequenza di salvataggio automatico](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
 1. Quando riavvii l’app e accedi con lo stesso utente, ti viene richiesto di ripristinare l’attività tramite la finestra di dialogo Recupera attività non salvata. Clic **OK** nella finestra di dialogo Recupera attività non salvata per riprendere a lavorare con l’attività salvata. Puoi fare clic su **Annulla** per eliminare i dati salvati corrispondenti all’ultimo salvataggio automatico attivato e iniziare a lavorare con una nuova attività.
 
    Quando fai clic su **OK**, l’attività viene ripristinata con i dati corrispondenti all’ultimo salvataggio automatico attivato prima dell’arresto anomalo dell’app. Include i dati del modulo e tutti gli allegati associati all&#39;attività.
-   [ ![Recupero di un’attività&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**R.** Modulo work-in-progress **B.** App chiusa con forza **C.** App riavviata con la finestra di dialogo Recupera attività non salvata **D.** Modulo ripristinato con i dati originali
+   [![Recupero di un’attività&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**R.** Modulo work-in-progress **B.** App chiusa con forza **C.** App riavviata con la finestra di dialogo Recupera attività non salvata **D.** Modulo ripristinato con i dati originali

@@ -1,18 +1,14 @@
 ---
 title: Modelli di lettere di riferimento
-seo-title: Reference letter templates
 description: AEM Forms fornisce modelli di layout lettere per Gestione corrispondenza che è possibile utilizzare per creare lettere in modo rapido.
-seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
-uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
-discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 2%
 
 In Gestione corrispondenza, un modello di lettera contiene campi modulo tipici, funzioni di layout come intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto.
 
-Gestione della corrispondenza fornisce modelli di lettera nella [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it). È possibile personalizzare i modelli in Designer in base alle proprie esigenze di branding e aziendali. Il pacchetto include i seguenti modelli:
+Gestione della corrispondenza fornisce modelli di lettera nella [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). È possibile personalizzare i modelli in Designer in base alle proprie esigenze di branding e aziendali. Il pacchetto include i seguenti modelli:
 
 * Classico
 * Classic Semplice

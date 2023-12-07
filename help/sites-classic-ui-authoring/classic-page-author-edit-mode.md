@@ -1,20 +1,16 @@
 ---
 title: Componenti per l’authoring delle pagine
-seo-title: Components for Page Authoring
 description: I componenti sono disponibili quando si modifica una pagina dalla scheda Componenti della barra laterale e dal selettore Inserisci nuovo componente (quando si fa doppio clic nell’area Trascina qui i componenti o le risorse).
-seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
-uuid: c353073d-d4d1-4529-b8bd-d0ca302cc9a0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6026'
-ht-degree: 8%
+source-wordcount: '5991'
+ht-degree: 3%
 
 ---
 
@@ -68,7 +64,7 @@ Con il componente Immagine adattiva è possibile utilizzare i file immagine con 
 * .jpg
 * .jpeg
 * .png
-* .gif &#42;&#42;
+* gif &#42;&#42;
 
 >[!CAUTION]
 >
@@ -159,7 +155,7 @@ Esistono diversi modi per creare un elenco di pagine: pagine figlie, elenco fiss
 Indipendentemente dal metodo scelto, le pagine incluse nell’elenco devono già avere un’immagine associata alla pagina. Questa immagine viene visualizzata nel carosello. Se non è presente alcuna immagine per una pagina nelle Proprietà pagina di tale pagina, è necessario associare un’immagine alla pagina prima di iniziare. In caso contrario, nel carosello viene visualizzata una pagina vuota. Consulta [Modifica delle proprietà di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
 
-      * **Opzioni per le pagine secondarie**
+      * **Opzioni per le pagine figlie**
 
          * **Pagina padre**
 Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
@@ -169,7 +165,7 @@ Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per u
          * **Pagine**
 Seleziona un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
 
-      * **Opzioni per la ricerca**
+      * **Opzioni di ricerca**
 
          * **Inizia in**
 Immetti un percorso iniziale, manualmente o utilizzando il selettore.
@@ -177,7 +173,7 @@ Immetti un percorso iniziale, manualmente o utilizzando il selettore.
          * **Query di ricerca**
 È possibile immettere una query di ricerca in testo normale.
 
-      * **Opzioni di ricerca avanzata**
+      * **Opzioni per la ricerca avanzata**
 
          * **Notazione predicato Querybuilder**
 È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
@@ -266,7 +262,7 @@ Componente di integrazione dell&#39;applicazione esterna (**Esterno**) consente 
      https://en.wikipedia.org/wiki/Main_Page
      ```
 
-   * **Passa parametri**
+   * **Trasmettere i parametri**
 
      Seleziona la casella per i parametri da trasmettere all&#39;applicazione quando necessario.
 
@@ -288,7 +284,7 @@ Il componente Flash consente di caricare un filmato del Flash. Puoi trascinare u
 
 * **Flash**
 
-   * **Filmato Flash**
+   * **Flash filmato**
 
      Il file del filmato flash. Trascina una risorsa da Content Finder oppure fai clic su per aprire una finestra.
 
@@ -310,7 +306,7 @@ Il componente Flash consente di caricare un filmato del Flash. Puoi trascinare u
 
      Modalità di visualizzazione della finestra, ad esempio opaca, trasparente o come finestra distinta (solida).
 
-   * **Colore sfondo**
+   * **Colore di sfondo**
 
      Colore di sfondo selezionato dalla tabella colori fornita.
 
@@ -346,11 +342,11 @@ Quando viene caricata un’immagine, puoi configurare quanto segue:
 
   Per mappare un&#39;immagine, selezionare Mappa. È possibile specificare la modalità di creazione della mappa immagine (rettangolo, poligono e così via) e il punto a cui deve puntare l&#39;area.
 
-* **Ritaglia**
+* **Ritaglio**
 
   Selezionare Ritaglia per ritagliare una parte di un&#39;immagine. Utilizzare il mouse per ritagliare l&#39;immagine.
 
-* **Rotazione**
+* **Ruota**
 
   Per ruotare un&#39;immagine, selezionare Ruota. Usare ripetutamente fino a quando l&#39;immagine non viene ruotata nel modo desiderato.
 
@@ -366,7 +362,7 @@ Quando viene caricata un’immagine, puoi configurare quanto segue:
 
   Titolo dell&#39;immagine.
 
-* **Testo Alt**
+* **Testo alternativo**
 
   Testo alternativo da utilizzare per la creazione di contenuto accessibile.
 
@@ -404,7 +400,7 @@ Il componente Elenco consente di configurare i criteri di ricerca per la visuali
 
    * A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
 
-      * **Opzioni per le pagine secondarie**
+      * **Opzioni per le pagine figlie**
 
          * **Elementi figlio di** (Pagina padre) Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
 
@@ -414,7 +410,7 @@ Il componente Elenco consente di configurare i criteri di ricerca per la visuali
 
            Seleziona un elenco di pagine. Utilizza + per aggiungere altre voci e i pulsanti Su/Giù per regolare l’ordine.
 
-      * **Opzioni per la ricerca**
+      * **Opzioni di ricerca**
 
          * **Inizia in**
 
@@ -424,7 +420,7 @@ Il componente Elenco consente di configurare i criteri di ricerca per la visuali
 
            È possibile immettere una query di ricerca in testo normale.
 
-      * **Opzioni di ricerca avanzata**
+      * **Opzioni per la ricerca avanzata**
 
          * **Notazione predicato Querybuilder**
 
@@ -556,11 +552,11 @@ Puoi configurare:
 
      Se la ricerca deve essere limitata a un tipo di nodo specifico, elencali qui; ad esempio, `cq:Page`.
 
-   * **Percorso di ricerca**
+   * **Percorso di ricerca in**
 
      Specifica la pagina principale del ramo in cui desideri eseguire la ricerca.
 
-   * **Testo pulsante Cerca**
+   * **Testo pulsante di ricerca**
 
      Il nome visualizzato sul pulsante di ricerca effettivo.
 
@@ -572,7 +568,7 @@ Puoi configurare:
 
      Se non sono presenti risultati, viene visualizzato il testo immesso.
 
-   * **Controllo ortografia del testo**
+   * **Testo controllo ortografia**
 
      Se qualcuno immette un termine simile, questo testo viene visualizzato prima del termine.
 Ad esempio, se si digita `Geometrixxe`, il sistema visualizza la scritta &quot;Si intendeva? Geometrixx&quot;.
@@ -699,7 +695,7 @@ Il componente Testo consente di inserire un blocco di testo utilizzando un edito
 All&#39;apertura di **Stili** scheda di **Modifica** puoi anche impostare quanto segue:
 
 * **Spaziatore**
-* **Stile di testo**
+* **Stile testo**
 
 Il testo formattato viene quindi visualizzato sulla pagina. La progettazione effettiva dipende dal CSS del sito:
 
@@ -735,7 +731,7 @@ Puoi configurare:
 
      Titolo del blocco. Viene mostrato con il mouse sopra.
 
-   * **Testo Alt**
+   * **Testo alternativo**
 
      Testo alternativo da visualizzare se l’immagine non può essere visualizzata. Se lasciato vuoto, viene utilizzato il titolo.
 
@@ -829,7 +825,7 @@ Il componente Controllo colonna consente agli utenti di selezionare la modalità
 
 * **Controllo colonna**
 
-   * **Layout colonna**
+   * **Layout colonne**
 
      Selezionare il numero di colonne di cui si desidera eseguire il rendering. Una volta creata, ogni colonna ha il proprio collegamento per trascinare componenti o risorse quando si aggiunge contenuto.
 
@@ -881,7 +877,7 @@ Durante la configurazione di uno dei componenti del modulo, nella finestra di di
 
   Qui è possibile specificare se un campo è obbligatorio e inserire vincoli in tale campo, ad esempio numerici.
 
-* **Attribuzione stile**
+* **Stile**
 
   Indica le dimensioni e lo stile dei campi.
 
@@ -937,7 +933,7 @@ Questo campo è obbligatorio e deve contenere solo i seguenti caratteri:
 
      Un messaggio per informare gli utenti di ciò che è necessario.
 
-* **Attribuzione stile**
+* **Stile**
 
    * **Dimensione**
 
@@ -984,15 +980,15 @@ Questo componente necessario definisce l’inizio di un nuovo modulo su una pagi
       * **Crea lead**
       * **Crea e aggiorna account**
       * **Servizio e-mail: crea utente con sottoscrizione e aggiungi all&#39;elenco**
-      * **Servizio e-mail: invia messaggio di risposta automatica**
-      * **Servizio e-mail: annulla sottoscrizione a mailing list**
+      * **Servizio e-mail: invia e-mail con risposta automatica**
+      * **Servizio e-mail: annulla iscrizione utente all&#39;elenco**
       * **Modifica community**
       * **Modifica risorse**
       * **Modifica risorse controllate da flusso di lavoro**
       * **Mail**
       * **Dettagli ordine inoltrato**
       * **Aggiornamento profilo**
-      * **Ripristina password**
+      * **Reimposta password**
       * **Imposta password**
       * **Contenuto store**
 
@@ -1000,7 +996,7 @@ Questo componente necessario definisce l’inizio di un nuovo modulo su una pagi
 
       * **Contenuto store con caricamenti**
       * **Invia ordine**
-      * **Annulla sottoscrizione utente**
+      * **Annulla sottoscrizione sottoscrittore**
       * **Aggiorna ordine**
 
    * **Identificatore modulo**
@@ -1017,7 +1013,7 @@ Utilizzo di **Percorso di caricamento** è possibile precaricare il modulo con i
 
      Indica se per questo modulo è necessaria la convalida client (convalida server) *sempre* ). La convalida viene eseguita con **Forms Captcha** componente.
 
-   * **Tipo risorsa validazione**
+   * **Tipo risorsa convalida**
 
      Definisce il tipo di risorsa di convalida del modulo se si desidera convalidare l&#39;intero modulo (anziché i singoli campi). Se si convalida il modulo completo, includere anche uno dei seguenti elementi:
 
@@ -1055,7 +1051,7 @@ Pagina utilizzata per la creazione di un account.
 
            Seleziona l’opzione desiderata dall’elenco.
 
-         * **Tipo risorsa**
+         * **Tipo di risorsa**
 
            Se questa opzione è impostata, viene aggiunta a ciascun commento come `sling:resourceType`
 
@@ -1072,7 +1068,7 @@ Specifica l’elenco di lead richiesto.
 
            Gruppo a cui assegnare il nuovo utente.
 
-         * **Pagina principale**
+         * **Home**
 
            Pagina da visualizzare dopo l’accesso riuscito.
 
@@ -1106,7 +1102,7 @@ Specifica l’elenco di lead richiesto.
 
            Immetti un oggetto per l’e-mail.
 
-      * **Ripristina password**
+      * **Reimposta password**
 
          * **Pagina modifica password**
 
@@ -1127,7 +1123,7 @@ Specifica l’elenco di lead richiesto.
 
         Ha le stesse opzioni di **Contenuto store**.
 
-      * **Annulla sottoscrizione utente**
+      * **Annulla sottoscrizione sottoscrittore**
 
          * **Il lead verrà eliminato da questo elenco**
 
@@ -1143,7 +1139,7 @@ Contrassegna la fine del modulo. Puoi configurare quanto segue:
 
      Indica se deve essere visualizzato o meno un pulsante Invia.
 
-   * **Nome invio**
+   * **Invia nome**
 
      Un identificatore se in un modulo si utilizzano più pulsanti di invio.
 
@@ -1155,7 +1151,7 @@ Contrassegna la fine del modulo. Puoi configurare quanto segue:
 
      Selezionando la casella di controllo, il pulsante Reimposta diventa visibile.
 
-   * **Titolo ripristino**
+   * **Reimposta titolo**
 
      Il nome visualizzato sul pulsante Reimposta.
 
@@ -1219,7 +1215,7 @@ Consente di specificare i campi necessari per l&#39;immissione dei dettagli dell
 >
 >Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Caricamento di file {#file-upload}
+### Caricamento file {#file-upload}
 
 Il componente Caricamento file offre all’utente un meccanismo per selezionare e caricare un file.
 

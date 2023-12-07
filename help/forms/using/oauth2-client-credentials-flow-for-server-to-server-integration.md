@@ -1,13 +1,11 @@
 ---
 title: Integrazione di Salesforce con AEM Forms tramite il flusso delle credenziali client OAuth 2.0
-seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: Passaggi per integrare l’integrazione di Salesforce con AEM Forms utilizzando il flusso delle credenziali del client OAuth 2.0
-seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
-source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
+exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 5%
+source-wordcount: '402'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +13,7 @@ ht-degree: 5%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
 Puoi utilizzare le credenziali client OAuth 2.0 per integrare AEM Forms con l’applicazione Salesforce. Le credenziali client OAuth 2.0 sono un metodo standard e sicuro per la comunicazione diretta senza il coinvolgimento dell’utente.
@@ -44,7 +42,7 @@ Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambien
 
 ## Passaggi per configurare Salesforce con il flusso delle credenziali del client {#steps-to-create-aem-datasource-configuration}
 
-1. Accedi all’istanza di authoring .
+1. Accedi all’istanza di authoring.
 1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Origini dati]**.
 1. Seleziona la cartella di configurazione.
 1. Clic **[!UICONTROL Crea]** e **[!UICONTROL Crea configurazione origine dati]** viene visualizzato.

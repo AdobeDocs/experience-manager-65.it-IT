@@ -1,20 +1,16 @@
 ---
 title: Consentire all'AEM di effettuare ricerche nei documenti PDF e Microsoft Office protetti da Document Security
-seo-title: Enable AEM to search document security protected PDF and Microsoft Office documents
 description: Scopri come abilitare la ricerca AEM nativa per eseguire ricerche full-text sui documenti di PDF protetti da DRM.
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
-uuid: dba882f8-bad4-4122-a0df-03cf087afb23
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 1%
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +43,7 @@ Una connessione sicura consente un flusso ininterrotto di informazioni tra AEM F
    * **Nome utente:** Specifica il nome utente dell’account AEM Forms su JEE da utilizzare per avviare chiamate da AEM Forms sul server JEE. L’account specificato deve disporre delle autorizzazioni per richiamare Document Services sul server AEM Forms su JEE.
    * **Password**: specifica la password dell’account AEM Forms su JEE indicato nel campo Nome utente.
 
-   Fai clic su **Salva**. L’AEM è abilitato per la ricerca di documenti protetti da PDF e Microsoft Office.
+   Clic **Salva**. L’AEM è abilitato per la ricerca di documenti protetti da PDF e Microsoft Office.
 
 ### Configurare il bundle AEM Forms Client SDK utilizzando l’autenticazione reciproca {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
@@ -63,7 +59,7 @@ Una connessione sicura consente un flusso ininterrotto di informazioni tra AEM F
    * **TrustStorePassword**: specifica la password per il file truststore.
    * **Nome servizio**: aggiungere RightsManagementService all&#39;elenco dei servizi specificati.
 
-   Fai clic su **Salva**. L’AEM è abilitato per la ricerca di documenti protetti da PDF e Microsoft Office
+   Clic **Salva**. L’AEM è abilitato per la ricerca di documenti protetti da PDF e Microsoft Office
 
 ## Indicizzare un esempio di documento PDF o Microsoft Office protetto tramite policy {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

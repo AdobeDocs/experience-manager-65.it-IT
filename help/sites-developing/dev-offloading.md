@@ -1,18 +1,14 @@
 ---
 title: Creazione e utilizzo di processi per l'offload
-seo-title: Creating and Consuming Jobs for Offloading
 description: La funzione di individuazione Sling di Apache fornisce un’API Java che consente di creare processi JobManager e servizi JobConsumer che li utilizzano
-seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
-uuid: d6a5beb0-0618-4b61-9b52-570862eac920
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -176,7 +172,7 @@ La classe MyJobConsumer genera i seguenti messaggi di registro per un payload di
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-La proprietà Consumed può essere osservata utilizzando CRXDE Lite:
+La proprietà Consumed può essere osservata utilizzando CRXDE Liti:
 
 ![chlimage_1-25](assets/chlimage_1-25a.png)
 

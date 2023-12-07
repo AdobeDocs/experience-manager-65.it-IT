@@ -1,17 +1,13 @@
 ---
 title: Riutilizzo dei moduli adattivi
-seo-title: Reusing adaptive forms
 description: Puoi riutilizzare un modulo adattivo esistente per creare nuovi moduli adattivi.
-seo-description: You can reuse an existing adaptive form to create new adaptive forms.
-uuid: f1d0fb70-e255-4dd9-8e6d-fd65eaf2e81a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 feature: Adaptive Forms
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '593'
 ht-degree: 2%
 
 ---

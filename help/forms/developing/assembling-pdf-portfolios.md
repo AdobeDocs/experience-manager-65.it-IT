@@ -1,20 +1,16 @@
 ---
 title: Assemblaggio di Portfoli PDF
-seo-title: Assembling PDF Portfolios
 description: Assemblate un portfolio PDF per combinare diversi documenti di vari tipi, tra cui file Word, file immagine e documenti PDF. Puoi assemblare un portfolio PDF utilizzando un’API Java e un’API di servizio web.
-seo-description: Assemble a PDF portfolio to combine several documents of various types, including word file, image files, and PDF documents. You can assemble a PDF portfolio using a Java API and a Web Service API.
-uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 role: Developer
 exl-id: d2bd7c3e-4f75-4234-a7aa-ee8524430493
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1815'
 ht-degree: 0%
 
 ---
@@ -115,7 +111,7 @@ Copia il file NAV dalla directory di installazione di Acrobat 9 (o successiva). 
 
 **Assemblare il portfolio**
 
-Per assemblare un Portfolio di PDF, chiamare `invokeDDX` operazione. Il servizio Assembler restituisce il Portfolio PDF all&#39;interno di un oggetto insieme.
+Per assemblare un Portfolio PDF, chiamare `invokeDDX` operazione. Il servizio Assembler restituisce il Portfolio PDF all&#39;interno di un oggetto insieme.
 
 **Salvare il portfolio assemblato**
 

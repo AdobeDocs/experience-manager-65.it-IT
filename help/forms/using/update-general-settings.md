@@ -1,16 +1,12 @@
 ---
 title: Aggiornamento delle impostazioni generali
-seo-title: Updating general settings
 description: Aggiorna le impostazioni dell’app AEM Forms, ad esempio la schermata iniziale, e recupera le opzioni punti iniziali e allegati
-seo-description: Update AEM Forms app settings such as the Home screen and fetch Startpoints and attachments options
-uuid: 650d677e-2b3c-498e-9e46-fa659af934ca
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%

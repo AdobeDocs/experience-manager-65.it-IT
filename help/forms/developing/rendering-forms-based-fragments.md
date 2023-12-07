@@ -1,20 +1,16 @@
 ---
 title: Rendering di Forms basato su frammenti
-seo-title: Rendering Forms Based on Fragments
 description: Utilizzare il servizio Forms per eseguire il rendering di moduli basati su frammenti creati mediante Designer.
-seo-description: Use the Forms service to render forms that are based on fragments created using Designer.
-uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2189'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ ht-degree: 0%
 
 Il servizio Forms può eseguire il rendering di moduli basati su frammenti creati mediante Designer. A *frammento* è una parte riutilizzabile di un modulo e viene salvato come file XDP separato che può essere inserito in più progettazioni di moduli. Ad esempio, un frammento può includere un blocco di indirizzi o un testo legale.
 
-L’utilizzo di frammenti semplifica e velocizza la creazione e la manutenzione di un gran numero di moduli. Durante la creazione di un modulo, viene inserito un riferimento al frammento richiesto e il frammento viene visualizzato nel modulo. Il riferimento al frammento contiene un sottomodulo che punta al file XDP fisico. Per informazioni sulla creazione di strutture di moduli basate su frammenti, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it)
+L’utilizzo di frammenti semplifica e velocizza la creazione e la manutenzione di un gran numero di moduli. Durante la creazione di un modulo, viene inserito un riferimento al frammento richiesto e il frammento viene visualizzato nel modulo. Il riferimento al frammento contiene un sottomodulo che punta al file XDP fisico. Per informazioni sulla creazione di strutture di moduli basate su frammenti, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 Un frammento può includere diverse sottomaschere racchiuse in un set di sottomaschere di scelta. I set di sottomaschere di scelta controllano la visualizzazione delle sottomaschere in base al flusso di dati provenienti da una connessione dati. È possibile utilizzare le istruzioni condizionali per determinare quale sottomaschera all&#39;interno della serie viene visualizzata nella maschera consegnata. Ad esempio, ogni sottomaschera di un set può includere informazioni relative a una particolare posizione geografica e la sottomaschera visualizzata può essere determinata in base alla posizione dell&#39;utente.
 

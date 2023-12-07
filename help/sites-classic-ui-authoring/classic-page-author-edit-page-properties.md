@@ -1,17 +1,15 @@
 ---
 title: Modifica delle proprietà di pagina
 description: Le proprietà di una pagina possono variare a seconda della natura della pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni sulla Live Copy saranno disponibili nel modo appropriato.
-uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 27%
+ht-degree: 20%
 
 ---
 
@@ -21,7 +19,7 @@ Puoi impostare le proprietà richieste per una pagina. Queste possono variare a 
 
 ## Proprietà pagina {#page-properties}
 
-Le proprietà sono distribuite su più schede:
+Le proprietà sono distribuite in diverse schede:
 
 ### Base {#basic}
 
@@ -33,7 +31,7 @@ Le proprietà sono distribuite su più schede:
 
 * **Tag**
 
-  Qui puoi aggiungere o rimuovere i tag nella pagina modificando l’elenco nella casella di selezione:
+  Qui puoi aggiungere o rimuovere i tag dalla pagina aggiornando l’elenco nella casella di selezione:
 
    * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
    * Per aggiungere un tag completamente nuovo, digitane il nome in una casella di selezione vuota.
@@ -88,7 +86,7 @@ Le proprietà sono distribuite su più schede:
   >* deve essere univoco, quindi accertati che il valore non sia già utilizzato da un’altra pagina.
   >* non supportano i pattern regex.
 
-* **Reindirizza URL personalizzato**
+* **Reindirizza Vanity URL**
 
   Indica se desideri che la pagina utilizzi il Vanity URL.
 
@@ -122,11 +120,11 @@ Le proprietà sono distribuite su più schede:
 
   Gruppi idonei per l’accesso al CUG.
 
-* **Realm**
+* **Area di autenticazione**
 
   Nome area di autenticazione per il gruppo utenti chiusi.
 
-* **Configurazione esportazione**
+* **Esporta configurazione**
 
   Specifica una configurazione di esportazione.
 

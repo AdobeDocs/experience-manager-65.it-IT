@@ -1,16 +1,12 @@
 ---
 title: Matrice di compatibilità per AEM Screens Player
-seo-title: Compatibility Matrix for AEM Screens Player
 description: In questa pagina sono elencati i lettori AEM Screens con la rispettiva versione di AEM Screens.
-seo-description: This page lists the AEM Screens Players with their respective AEM Screens version.
 page-status-flag: never-activated
-uuid: d5bf1eee-d22a-4962-8289-fd56a54d85ae
 contentOwner: jsyal
-discoiquuid: dbc16a51-74c4-43bb-9501-081de1eb2f7d
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 9%
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 9%
 >
 >Le seguenti informazioni sono aggiornate al 14 maggio 2018.
 
-Nella sezione seguente sono elencati i lettori di schermi di Adobe Experience Manager (AEM) con la rispettiva versione di AEM Screens.
+Nella sezione seguente sono elencati i lettori di Adobe Experience Manager (AEM) Screens con la rispettiva versione di AEM Screens.
 
 ## Lettore iOS {#ios-player}
 
@@ -37,11 +33,11 @@ Nella sezione seguente sono elencati i lettori di schermi di Adobe Experience Ma
   </tr>
   <tr>
    <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
-   <td><p><strong>3.3.0</strong> </p> <p> </p> </td> 
+   <td><p><strong>3,3,0</strong> </p> <p> </p> </td> 
   </tr>
   <tr>
    <td><strong>AEM 6.4</strong></td> 
-   <td><strong>3.3.0</strong> </td> 
+   <td><strong>3,3,0</strong> </td> 
   </tr>
  </tbody>
 </table>
@@ -90,8 +86,8 @@ aem-screens-player-windows-1.0.48-signed.exe.zip
 | **Versione server AEM** | **Lettore Android** |
 |---|---|
 | **AEM 6.3+SP1+Screens FP1(1.0.64_B002)** | **3.2.68 -** (Disponibile sul sito Macromedia) e Google Play Store |
-| **AEM 6.3+SP1+Screens FP2(1.0.298)** | **3.3.0** |
-| **AEM 6.4** | **3.3.0** |
+| **AEM 6.3+SP1+Screens FP2(1.0.298)** | **3,3,0** |
+| **AEM 6.4** | **3,3,0** |
 
 ### Collegamento di download {#download-link-2}
 

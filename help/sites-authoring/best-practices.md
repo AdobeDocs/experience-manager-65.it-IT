@@ -1,14 +1,12 @@
 ---
 title: Best practice per l’utilizzo dell’authoring AEM
 description: Come usare AEM nel modo più efficiente ed efficace possibile.
-uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 4%
@@ -35,7 +33,7 @@ I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 
 ## Risorse {#assets}
 
-Le best practice relative ad Assets, incluse le funzionalità di Dynamic Media e l’integrazione con Dynamic Media Classic, sono descritte nei seguenti argomenti:
+Le best practice relative ad Assets, incluse le funzionalità di Dynamic Medie e l’integrazione con Dynamic Media Classic, sono descritte nei seguenti argomenti:
 
 <table>
  <tbody>
@@ -52,7 +50,7 @@ Le best practice relative ad Assets, incluse le funzionalità di Dynamic Media e
   <tr>
    <td>Dynamic Imaging</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best practice di Dynamic Imaging</a></td>
-   <td><p>Descrive come aumentare la nitidezza di un’immagine per ottenere risultati migliori e come ottimizzare la qualità delle immagini se utilizzi la funzionalità Dynamic Media o ti stai integrando con Dynamic Media Classic. </p> </td>
+   <td><p>Descrive come aumentare la nitidezza di un’immagine per ottenere risultati migliori e come ottimizzare la qualità delle immagini se utilizzi la funzionalità Dynamic Medie o ti stai integrando con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Risorse multilingue</td>

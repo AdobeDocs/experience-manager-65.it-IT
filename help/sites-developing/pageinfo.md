@@ -1,19 +1,15 @@
 ---
 title: Ottenimento delle informazioni di pagina in formato JSON
-seo-title: Obtaining Page Information in JSON Format
 description: Per ottenere le informazioni della pagina, invia una richiesta al servlet PageInfo per ottenere i metadati della pagina in formato JSON
-seo-description: To obtain the page information, send a request to the PageInfo servlet to obtain the page metadata in JSON format
-uuid: fb4f56b9-55e2-4622-a0d1-a86d6f2cce86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '931'
+ht-degree: 1%
 
 ---
 
@@ -539,7 +535,7 @@ Per configurare il servizio nell’origine del progetto:
 
 Creare un servizio personalizzato Page Information Provider per aggiungere metadati di pagina facilmente ottenibili dall&#39;applicazione.
 
-1. Implementa l’interfaccia `com.day.cq.wcm.api.PageInfoProvider`. 
+1. Implementare `com.day.cq.wcm.api.PageInfoProvider` di rete.
 1. Crea il bundle e distribuisci la classe come servizio OSGi.
 1. Crea un componente pagina nell’applicazione. Utilizzare `foundation/components/page` come valore del `sling:resourceSuperType` proprietà.
 

@@ -1,18 +1,14 @@
 ---
 title: Avvio dei processi
-seo-title: Starting processes
 description: 'Come utilizzare LiveCycle AEM Forms Workspace: selezionare i processi, aggiungere note e allegati, salvare le bozze e aggiungerle ai preferiti.'
-seo-description: How to use LiveCycle AEM Forms workspace--select processes, add notes and attachments, save draft copies, and add to favorites.
-uuid: a61da785-25b4-4482-bd72-02e250d35dc7
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 exl-id: b2a6ba3a-0f4c-44b1-8f9a-c15c6fb8c305
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -82,7 +78,7 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 1. Apri un’attività e fai clic su **Note** , se il processo lo consente.
 1. Digita un titolo per la nota nella **Titolo** e digitare il testo della nota nella casella **Nota** casella.
 1. Seleziona la **Autorizzazioni** livello della nota per gli altri utenti che partecipano al processo.
-1. Fai clic su **OK**. Al modulo viene allegato un file di testo contenente la nota. È possibile aggiornare una nota facendo clic su di essa e modificando direttamente il testo. È possibile eliminare una nota facendo clic sul pulsante **Elimina** pulsante ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
+1. Clic **OK**. Al modulo viene allegato un file di testo contenente la nota. È possibile aggiornare una nota facendo clic su di essa e modificando direttamente il testo. È possibile eliminare una nota facendo clic sul pulsante **Elimina** pulsante ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
 
 ### Aggiungi un allegato {#add-an-attachment}
 
@@ -97,7 +93,7 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 1. Fai clic su **Allegati** e seleziona **Allegato**.
 1. Clic **Sfoglia** per selezionare il file da allegare.
 1. Seleziona la **Autorizzazioni** livello dell&#39;allegato per altri utenti che partecipano al processo. Se si seleziona **Letto**, altri utenti possono salvare il file localmente. Se selezioni una delle autorizzazioni di modifica, anche altri utenti possono caricare un nuovo file per sostituire l’allegato.
-1. Fai clic su **OK**. Il file viene allegato al modulo. È possibile eliminare un file facendo clic sul pulsante **Elimina** pulsante ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
+1. Clic **OK**. Il file viene allegato al modulo. È possibile eliminare un file facendo clic sul pulsante **Elimina** pulsante ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
 
 ## Salvataggio delle bozze dei moduli {#saving-draft-copies-of-forms}
 

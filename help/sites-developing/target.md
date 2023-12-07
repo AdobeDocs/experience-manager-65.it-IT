@@ -1,20 +1,16 @@
 ---
 title: Sviluppo per contenuti di destinazione
-seo-title: Developing for Targeted Content
 description: Argomenti sullo sviluppo di componenti da utilizzare con il targeting dei contenuti
-seo-description: Topics about developing components for use with content targeting
-uuid: 2449347e-7e1c-427b-a5b0-561055186934
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
 exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 3%
+source-wordcount: '1223'
+ht-degree: 4%
 
 ---
 
@@ -205,7 +201,7 @@ Ad esempio, se desideri utilizzare il [Servizio ID Marketing Cloud](https://expe
 >
 >Se una mbox personalizzata è definita in una configurazione Target, tutti devono avere accesso in lettura a **/etc/cloudservices** sui server di pubblicazione. Senza questo accesso, il caricamento dei file mbox.js sul sito web di pubblicazione restituisce un errore 404.
 
-1. Vai a CQ **Strumenti** pagina e seleziona **Cloud Services**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Vai a CQ **Strumenti** pagina e seleziona **Cloud Service**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. Nella struttura, seleziona Adobe Target e nell’elenco delle configurazioni, fai doppio clic sulla configurazione di Target.
 1. Nella pagina di configurazione, fai clic su Modifica.
 1. Per la proprietà Custom mbox.js, fai clic su Sfoglia e seleziona il file.

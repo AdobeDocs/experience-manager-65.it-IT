@@ -1,18 +1,14 @@
 ---
 title: Generare l’anteprima HTML5 di un modulo XDP
-seo-title: Generate HTML5 preview of an XDP form
 description: È possibile utilizzare la scheda HTML anteprima in Progettazione LiveCycli per visualizzare in anteprima i moduli così come vengono visualizzati in un browser.
-seo-description: Preview HTML tab in LiveCycle Designer can be used to preview forms as they appear in a browser.
-uuid: cbee956f-bf2d-40c5-8e03-58fce0fa215b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -121,7 +117,7 @@ Il test del modulo tramite un&#39;origine dati di esempio assicura che i dati e 
 
 1. Fai clic su **Anteprima** e nella casella File di dati digitare il percorso completo del file di dati di prova. È inoltre possibile utilizzare il pulsante Sfoglia per passare al file.
 
-1. Fai clic su **OK**. Alla successiva anteprima del modulo in **Anteprima HTML** , i valori dei dati del file XML di esempio verranno visualizzati nei rispettivi oggetti.
+1. Clic **OK**. Alla successiva anteprima del modulo in **Anteprima HTML** , i valori dei dati del file XML di esempio verranno visualizzati nei rispettivi oggetti.
 
 ## Anteprima dei moduli in un archivio {#html-preview-of-forms-in-forms-manager}
 

@@ -1,17 +1,13 @@
 ---
 title: Utilizzare modelli e-mail personalizzati in un passaggio Assegna attività
-seo-title: Use custom email templates in an Assign Task step
 description: Modelli e-mail personalizzati per le notifiche e-mail del flusso di lavoro dei moduli
-seo-description: Custom email templates for forms workflow email notifications
-uuid: ba453d54-813f-4a4f-a82e-1a6a28b6939c
 topic-tags: publish
-discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 1%
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -71,6 +67,6 @@ Il passaggio Assegna attività è configurato per l’utilizzo del modello prede
 
 1. Seleziona il modello e-mail di HTML appena creato.
 
-1. Fai clic su OK. Il modello viene modificato.
+1. Fare clic su OK. Il modello viene modificato.
 
 Una notifica e-mail utilizza anche [metadati](../../forms/using/use-metadata-in-email-notifications.md). Ad esempio, data di scadenza, priorità, nome del flusso di lavoro e altro ancora. Puoi anche configurare il modello da utilizzare [metadati personalizzati](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).

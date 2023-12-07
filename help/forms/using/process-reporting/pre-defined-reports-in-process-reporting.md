@@ -1,18 +1,14 @@
 ---
 title: Rapporti predefiniti nella generazione di rapporti sui processi
-seo-title: Pre-defined reports in Process Reporting
 description: Eseguire una query per AEM Forms sui dati del processo JEE per creare rapporti su processi con tempi di esecuzione lunghi, durata del processo e volume del flusso di lavoro
-seo-description: Query for AEM Forms on JEE process data to create reports on long running processes, Process duration, and Workflow volume
-uuid: 704a8886-90ea-4793-a3fc-f998f878c928
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 exl-id: 34e55676-6332-4616-aecc-bcc8cc1e8a29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -54,7 +50,7 @@ Nel rapporto Processi a esecuzione prolungata vengono visualizzati i processi di
 
    ![long_running_PROCESSES](assets/long_running_processes.png)
 
-   Utilizza le opzioni nell’angolo superiore destro della sezione **Report** per eseguire le operazioni seguenti sul rapporto.
+   Utilizza le opzioni nell’angolo superiore destro della sezione **Report** per eseguire le seguenti operazioni sul rapporto.
 
    * **Aggiorna**: aggiorna il rapporto con i dati più recenti presenti nell’archiviazione
    * **Cambia colore legenda**: seleziona e modifica il colore della legenda del rapporto

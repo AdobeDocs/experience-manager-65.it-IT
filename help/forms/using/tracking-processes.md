@@ -1,16 +1,12 @@
 ---
 title: Tracciamento dei processi
-seo-title: Tracking processes
 description: Come tenere traccia dei processi effettuandone la ricerca e visualizzandone i dettagli.
-seo-description: How to track your processes by searching for them and viewing their details.
-uuid: 7bda9b61-0a40-4349-9aee-dc6636e5e692
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 exl-id: 381a46c6-c73c-476a-a1a0-20d921069c37
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -45,7 +41,7 @@ Nella pagina Tracciamento è possibile cercare i processi attivi o completati a 
 
 Nella pagina Tracciamento è possibile selezionare un processo e visualizzarne i dettagli. Puoi cercare i processi in base a vari parametri per visualizzare i dettagli dell’attività. È inoltre possibile visualizzare la scheda Stato per i processi in cui più utenti ricevono attività in parallelo, dove sono attivati gli strumenti per la revisione dei documenti.
 
-**Stato:** Lo stato delle attività di un processo viene visualizzato nella colonna Azione selezionata quando si fa clic su un&#39;attività. Tuttavia, lo stato del processo non è disponibile.
+**Stato:** Lo stato delle attività in un processo viene visualizzato nella colonna &quot;Azione selezionata&quot; quando si fa clic su un&#39;attività. Tuttavia, lo stato del processo non è disponibile.
 
 1. Selezionare l&#39;istanza di processo dall&#39;elenco dei risultati della ricerca per visualizzare i dettagli delle attività che fanno parte dell&#39;istanza di processo.
 1. Per visualizzare ulteriori informazioni su un&#39;attività, eseguire una o più delle azioni seguenti:
