@@ -1,19 +1,17 @@
 ---
 title: Aggiungere risorse Dynamic Medie alle pagine
 description: Come aggiungere componenti Dynamic Medie a una pagina in Adobe Experience Manager.
-uuid: b5e982f5-fa1c-478a-bcb3-a1ef980df201
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3219'
 ht-degree: 5%
 
 ---
@@ -71,7 +69,7 @@ Se non è disponibile alcun componente Dynamic Medie da aggiungere a una pagina,
 
 1. Dal lato destro della barra degli strumenti nella parte superiore della pagina, seleziona dall’elenco a discesa **[!UICONTROL Struttura]**.
 
-   ![Criterio](/help/assets/assets-dm/structure-mode.png)
+   ![Policy](/help/assets/assets-dm/structure-mode.png)
 
 1. Nella parte inferiore della pagina, seleziona **[!UICONTROL Contenitore di layout]** per aprire la relativa barra degli strumenti, seleziona l’icona Criterio.
 1. Il giorno **[!UICONTROL Contenitore di layout]** pagina, sotto **[!UICONTROL Proprietà]** , assicurati che il **[!UICONTROL Componenti consentiti]** è selezionata.

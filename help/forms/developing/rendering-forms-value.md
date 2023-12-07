@@ -1,20 +1,16 @@
 ---
 title: Rendering di Forms per valore
-seo-title: Rendering Forms By Value
 description: Utilizza Forms API (Java) per eseguire il rendering di un modulo per valore utilizzando Java API e Web Service API.
-seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
-uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -75,7 +71,7 @@ Quando si esegue il rendering di un modulo in base al valore, è necessario crea
 
 **Eseguire il rendering di un modulo in base al valore**
 
-Per eseguire il rendering di un modulo in base al valore, trasmettere un `com.adobe.idp.Document` istanza che contiene la struttura del modulo per il metodo di rendering `inDataDoc` (può essere uno qualsiasi dei `FormsServiceClient` metodi di rendering dell’oggetto, come `renderPDFForm`, `(Deprecated) renderHTMLForm`e così via). Questo valore di parametro è in genere riservato ai dati che vengono uniti al modulo. Allo stesso modo, passa un valore stringa vuoto al `formQuery` parametro. Normalmente questo parametro richiede un valore stringa che specifica il nome della struttura del modulo.
+Per eseguire il rendering di un modulo in base al valore, trasmettere un `com.adobe.idp.Document` istanza che contiene la struttura del modulo per il metodo di rendering `inDataDoc` (può essere uno qualsiasi dei `FormsServiceClient` i metodi di rendering dell&#39;oggetto, come `renderPDFForm`, `(Deprecated) renderHTMLForm`e così via). Questo valore di parametro è in genere riservato ai dati che vengono uniti al modulo. Allo stesso modo, passa un valore stringa vuoto al `formQuery` parametro. Normalmente questo parametro richiede un valore stringa che specifica il nome della struttura del modulo.
 
 >[!NOTE]
 >
@@ -133,7 +129,7 @@ Eseguire il rendering di un modulo per valore utilizzando l’API Forms (Java):
 
 1. Scrivere il flusso di dati del modulo nel browser Web client
 
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` oggetto &quot;s `getOutputContent` metodo.
+   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` dell&#39;oggetto `getOutputContent` metodo.
    * Ottieni il tipo di contenuto del `com.adobe.idp.Document` oggetto richiamando il relativo `getContentType` metodo.
    * Imposta il `javax.servlet.http.HttpServletResponse` tipo di contenuto dell&#39;oggetto richiamando il relativo `setContentType` e passando il tipo di contenuto del `com.adobe.idp.Document` oggetto.
    * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per scrivere il flusso di dati del modulo nel browser web client richiamando `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getOutputStream` metodo.
@@ -169,7 +165,7 @@ Eseguire il rendering di un modulo in base al valore utilizzando l’API di Form
 
    * Creare un `java.io.FileInputStream` mediante il costruttore. Passa un valore stringa che specifica la posizione del file XDP.
    * Creare un `BLOB` mediante il costruttore. Il `BLOB` L&#39;oggetto viene utilizzato per memorizzare un documento PDF crittografato con una password.
-   * Creare una matrice di byte che memorizza il contenuto della `java.io.FileInputStream` oggetto. È possibile determinare le dimensioni della matrice di byte ottenendo `java.io.FileInputStream` dimensione dell’oggetto utilizzando il relativo `available` metodo.
+   * Creare una matrice di byte che memorizza il contenuto della `java.io.FileInputStream` oggetto. È possibile determinare le dimensioni della matrice di byte ottenendo `java.io.FileInputStream` dimensione dell&#39;oggetto utilizzando il relativo `available` metodo.
    * Compilare la matrice di byte con i dati di flusso richiamando `java.io.FileInputStream` dell&#39;oggetto `read` e passando la matrice di byte.
    * Popolare il `BLOB` oggetto richiamando il relativo `setBinaryData` e passando la matrice di byte.
 

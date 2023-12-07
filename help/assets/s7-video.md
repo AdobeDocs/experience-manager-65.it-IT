@@ -1,19 +1,17 @@
 ---
 title: Video
-description: Scopri le risorse Adobe Experience Manager per la gestione centralizzata delle risorse video, dove puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da Experience Manager Assets. L'integrazione video di Dynamic Media Classic estende la portata del video ottimizzato a tutti gli schermi.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: Scopri l’Adobe Experience Manager Assets per la gestione centralizzata delle risorse video, in cui puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video di Dynamic Media Classic direttamente da Experience Manager Assets. L'integrazione video di Dynamic Media Classic estende la portata del video ottimizzato a tutti gli schermi.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1551'
 ht-degree: 2%
 
 ---

@@ -1,14 +1,12 @@
 ---
 title: Applicare firme elettroniche a un modulo utilizzando le firme scarabocchio
-description: Scopri come firmare AEM Adaptive Forms utilizzando la firma a mano. È possibile utilizzare la firma scarabocchio e il passaggio della firma per disegnare la firma su un modulo.
-uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
+description: Scopri come firmare AEM Adaptive Forms utilizzando la firma a mano. È possibile utilizzare la firma a mano e il passaggio della firma per disegnare la firma in un modulo.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%

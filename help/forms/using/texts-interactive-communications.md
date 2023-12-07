@@ -10,7 +10,7 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Se è stato specificato un modello dati modulo durante la creazione di un testo,
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Per inserire nel testo una proprietà del modello dati di un modulo, posiziona il cursore nel punto in cui desideri inserire la proprietà, quindi seleziona la **[A]** nel riquadro a sinistra toccandolo e selezionando **[!UICONTROL [B] Aggiungi selezionati]**. Puoi anche selezionare due volte la proprietà per inserirla nella **[C]** posizione del cursore. Le proprietà del modello dati modulo vengono evidenziate con un colore di sfondo bruno.
+* Per inserire una proprietà del modello dati del modulo nel testo, posiziona il cursore nel punto in cui desideri inserire la proprietà, quindi seleziona la **[A]** nel riquadro a sinistra toccandolo e selezionando **[!UICONTROL [B] Aggiungi selezionati]**. Puoi anche selezionare due volte la proprietà per inserirla nella **[C]** posizione del cursore. Le proprietà del modello dati modulo vengono evidenziate con un colore di sfondo bruno.
 
 In alternativa, è possibile cercare e aggiungere la proprietà del modello dati del modulo utilizzando il simbolo @ nell’editor di testo. Posizionare il cursore nel punto in cui si desidera inserire la proprietà. Digita @ seguito dalla stringa di ricerca. L’operazione di ricerca viene eseguita su tutte le proprietà e le variabili del modello dati del modulo disponibili nel frammento di documento. Le proprietà o le variabili contenenti la stringa di ricerca vengono recuperate e visualizzate come elenco a discesa. Spostarsi tra i risultati della ricerca e fare clic sulla proprietà che si desidera inserire nella posizione del cursore. Premere ESC per nascondere i risultati della ricerca.
 

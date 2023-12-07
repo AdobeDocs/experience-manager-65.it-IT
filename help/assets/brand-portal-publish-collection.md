@@ -1,26 +1,22 @@
 ---
-title: Pubblicare raccolte su Brand Portal
-seo-title: Publish collections to Brand Portal
+title: Pubblicare raccolte in Brand Portal
 description: Scopri come pubblicare e annullare la pubblicazione delle raccolte in Brand Portal.
-seo-description: Learn how to publish and unpublish collections to Brand Portal.
-uuid: 7de58548-4cfa-4a94-bac7-9e914dee9042
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 36%
+source-wordcount: '321'
+ht-degree: 30%
 
 ---
 
-# Pubblicare raccolte su Brand Portal {#publish-collections-to-brand-portal}
+# Pubblicare raccolte in Brand Portal {#publish-collections-to-brand-portal}
 
 In qualità di amministratore di Adobe Experience Manager (AEM) Assets, puoi pubblicare le raccolte nell’istanza di AEM Assets Brand Portal per la tua organizzazione. Tuttavia, devi prima integrare AEM Assets con Brand Portal. Per ulteriori dettagli, consulta [Configurare AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
@@ -35,7 +31,7 @@ Se apporti successive modifiche alla raccolta originale in AEM Assets, tali modi
 ## Pubblicare una raccolta in Brand Portal {#publish-a-collection-to-brand-portal}
 
 1. Nell’interfaccia utente di AEM Assets, fai clic sul logo AEM.
-1. Dalla pagina **Navigazione**, passa a **Risorse > Raccolte**.
+1. Da **Navigazione** pagina, vai a **Risorse > Raccolte**.
 1. Dalla console Raccolte, seleziona la raccolta da pubblicare su Brand Portal.
 
    ![select_collection](assets/select_collection.png)

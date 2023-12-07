@@ -1,23 +1,21 @@
 ---
-title: Applicazione dei predefiniti visualizzatore Dynamic Media
-description: Scopri come applicare i predefiniti visualizzatore in Dynamic Media
-uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
+title: Applicazione dei predefiniti visualizzatore Dynamic Medie
+description: Scopri come applicare i predefiniti visualizzatore in Dynamic Medie
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: Viewer Presets
 role: User, Admin
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 16%
 
 ---
 
-# Applicare i predefiniti visualizzatore Dynamic Media {#applying-viewer-presets}
+# Applicare i predefiniti visualizzatore Dynamic Medie {#applying-viewer-presets}
 
 Un predefinito visualizzatore è una raccolta di impostazioni che determinano il modo in cui gli utenti visualizzano le risorse rich media sugli schermi dei loro computer e sui loro dispositivi mobili. Puoi applicare a una risorsa qualsiasi predefinito visualizzatore creato dall’amministratore.
 
@@ -26,9 +24,9 @@ Se sei un amministratore e devi gestire, creare, ordinare ed eliminare i predefi
 Vedi anche [Pubblica predefiniti visualizzatore](managing-viewer-presets.md#publishing-viewer-presets).
 
 Non è necessario pubblicare i predefiniti visualizzatore a seconda della modalità di pubblicazione in uso.
-In caso di problemi con i predefiniti visualizzatore, consulta [Risoluzione dei problemi di Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
+In caso di problemi con i predefiniti visualizzatore, consulta [Risoluzione dei problemi di Dynamic Medie - Scene7](troubleshoot-dms7.md#viewers).
 
-## Applicare un predefinito visualizzatore Dynamic Media a una risorsa {#applying-a-viewer-preset-to-an-asset}
+## Applicare un predefinito visualizzatore Dynamic Medie a una risorsa {#applying-a-viewer-preset-to-an-asset}
 
 1. Apri la risorsa e seleziona nella barra a sinistra **[!UICONTROL Visualizzatori]**.
 

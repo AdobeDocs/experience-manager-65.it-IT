@@ -1,21 +1,19 @@
 ---
 title: Profili video
 description: Dynamic Medie è già dotato di un profilo di codifica video adattivo predefinito. Le impostazioni in questo profilo preconfigurato sono ottimizzate per fornire ai clienti la migliore esperienza di visualizzazione possibile. Puoi anche aggiungere il ritaglio avanzato ai video.
-uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3732'
-ht-degree: 9%
+source-wordcount: '3770'
+ht-degree: 8%
 
 ---
 
@@ -59,7 +57,7 @@ La tabella seguente identifica i profili di codifica delle best practice per lo 
    <td><strong>Codec formato video</strong></td>
    <td><strong>Dimensioni video - Larghezza (px)</strong></td>
    <td><strong>Dimensioni video - Altezza (px)</strong></td>
-   <td><strong>Mantieni proporzioni?</strong></td>
+   <td><strong>Mantenere le proporzioni?</strong></td>
    <td><strong>Bitrate video (Kbps)</strong></td>
    <td><strong>Frame Rate Video (Fps)</strong></td>
    <td><strong>Codec audio</strong></td>

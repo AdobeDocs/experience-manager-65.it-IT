@@ -1,32 +1,30 @@
 ---
-title: Best practice per ottimizzare la qualità delle immagini in Dynamic Media
-description: Scopri le best practice per ottimizzare la qualità delle immagini in Dynamic Media
-uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
+title: Best practice per ottimizzare la qualità delle immagini in Dynamic Medie
+description: Scopri le best practice per ottimizzare la qualità delle immagini in Dynamic Medie
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
 
-# Best practice per ottimizzare la qualità delle immagini in Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
+# Best practice per ottimizzare la qualità delle immagini in Dynamic Medie {#best-practices-for-optimizing-the-quality-of-your-images}
 
 L&#39;ottimizzazione della qualità delle immagini può richiedere molto tempo, poiché molti fattori contribuiscono al rendering di risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità dell&#39;immagine in modo diverso. La sperimentazione strutturata è fondamentale.
 
-Adobe Experience Manager include più di 100 comandi Dynamic Media per la consegna delle immagini, utili per ottimizzare e ottimizzare le immagini e i risultati del rendering. Le seguenti linee guida possono essere utili per semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi essenziali e best practice.
+Adobe Experience Manager include più di 100 comandi Dynamic Medie per la consegna delle immagini che consentono di ottimizzare e ottimizzare le immagini e i risultati del rendering. Le seguenti linee guida possono essere utili per semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi essenziali e best practice.
 
 ## Procedure consigliate per il formato immagine (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG o PNG sono la scelta migliore per fornire immagini di buona qualità e con dimensioni e peso gestibili.
-* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita Dynamic Media Image Delivery utilizza JPG.
+* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita Dynamic Medie Image Delivery utilizza JPG.
 * JPG comprime con un rapporto di 10:1 e in genere produce file di immagine di dimensioni inferiori. Il PNG viene compresso con un rapporto di circa 2:1, tranne che a volte, ad esempio quando le immagini contengono uno sfondo bianco. In genere, tuttavia, le dimensioni dei file PNG sono maggiori di quelle dei file JPG.
 * JPG utilizza la compressione con perdita di dati, il che significa che gli elementi dell&#39;immagine (pixel) vengono rilasciati durante la compressione. Il PNG utilizza invece una compressione senza perdita di dati.
 * JPG comprime spesso le immagini fotografiche con una maggiore fedeltà rispetto alle immagini sintetiche con bordi nitidi e contrasto.
@@ -64,20 +62,19 @@ Esistono due metodi per la nitidezza delle immagini:
       * **[!UICONTROL *quantità&#x200B;*]**(0-5, intensità dell&#39;effetto).
       * **[!UICONTROL *raggio *]**(0-250, larghezza delle &quot;linee di nitidezza&quot; disegnate attorno all&#39;oggetto nitidezza, misurata in pixel).
 
-      Tenete presente che il raggio e la quantità dei parametri funzionano l&#39;uno contro l&#39;altro. La riduzione del raggio può essere compensata aumentando la quantità. Raggio consente un controllo più preciso, poiché un valore inferiore agisce solo sui pixel del bordo, mentre un valore più elevato agisce su una banda di pixel più ampia.
+     Tenete presente che il raggio e la quantità dei parametri funzionano l&#39;uno contro l&#39;altro. La riduzione del raggio può essere compensata aumentando la quantità. Raggio consente un controllo più preciso, poiché un valore inferiore agisce solo sui pixel del bordo, mentre un valore più elevato agisce su una banda di pixel più ampia.
 
       * **[!UICONTROL *soglia *]**(0-255, sensibilità dell&#39;effetto).
 
-             Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e che il filtro li renda più nitidi. Il parametro **[!UICONTROL soglia]** consente di evitare l’eccessiva nitidezza delle aree con colori simili, ad esempio i toni della pelle. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere “disturbo”, mentre viene aumentato il contrasto lungo i bordi delle aree dove è più presente, ad esempio tra ciglia e pelle.
-         
-         Per ulteriori informazioni sull’impostazione di questi tre parametri, comprese le best practice da utilizzare con il filtro, consulta le risorse seguenti:
+            Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e che il filtro li renda più nitidi. Il parametro **[!UICONTROL soglia]** consente di evitare l’eccessiva nitidezza delle aree con colori simili, ad esempio i toni della pelle. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere “disturbo”, mentre viene aumentato il contrasto lungo i bordi delle aree dove è più presente, ad esempio tra ciglia e pelle.
+        
+        Per ulteriori informazioni sull’impostazione di questi tre parametri, comprese le best practice da utilizzare con il filtro, consulta le risorse seguenti:
 
-         Experience Manager Argomento della Guida relativo alla nitidezza di un’immagine.
+        Experience Manager Argomento della Guida relativo alla nitidezza di un’immagine.
 
-         White paper sulle best practice [Immagini più nitide in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+        White paper sulle best practice [Immagini più nitide in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
       * Experience Manager consente inoltre di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ogni componente di colore utilizzando il valore 0 oppure alla luminosità/intensità dell&#39;immagine utilizzando il valore 1.
-
 
 Come best practice, inizia con il parametro del raggio della maschera di contrasto. Le impostazioni del raggio che potete iniziare sono le seguenti:
 
@@ -118,7 +115,7 @@ Come best practice, per ottenere una qualità immagine elevata e dimensioni file
 
 `fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0`
 
-Questa combinazione di impostazioni prodotti risultati eccellenti nella maggior parte delle circostanze.
+Questa combinazione di impostazioni prodotti ottimi risultati nella maggior parte delle circostanze.
 
 Se l&#39;immagine richiede un&#39;ulteriore ottimizzazione, regolare gradualmente i parametri di nitidezza (maschera di contrasto) iniziando con un raggio impostato su 0.2 o 0.3. Quindi, aumentare gradualmente l&#39;importo da 1,75 a un massimo di 4 (equivalente al 400% in Photoshop). Verificare che sia stato raggiunto il risultato desiderato.
 
@@ -127,5 +124,5 @@ Se i risultati della nitidezza non sono ancora soddisfacenti, aumentare il raggi
 Durante la sperimentazione, i seguenti suggerimenti generali possono essere utili per ottimizzare ulteriormente il flusso di lavoro:
 
 * Prova e testa diversi parametri in tempo reale, direttamente su un URL.
-* Come best practice, ricorda che puoi raggruppare i comandi di Dynamic Media Image Server in un predefinito per immagini. Un predefinito immagine è fondamentalmente una macro di comando URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL chiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
+* Come best practice, ricorda che puoi raggruppare i comandi di Dynamic Medie Image Server in un predefinito per immagini. Un predefinito immagine è fondamentalmente una macro di comando URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL chiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
 * Experience Manager offre inoltre metodi più avanzati per regolare la qualità delle immagini, ad esempio l’applicazione di immagini più nitide al momento dell’acquisizione. Per i casi d’uso avanzati in cui sono disponibili opzioni per ottimizzare i risultati del rendering, [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) può aiutarti con informazioni approfondite e best practice personalizzate.

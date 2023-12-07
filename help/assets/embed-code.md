@@ -1,23 +1,21 @@
 ---
-title: Incorpora il visualizzatore Dynamic Media Video, Immagine o Dimensionale in una pagina web
-description: Scopri come incorporare video, immagini o immagini 3D di Dynamic Media in una pagina web
-uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
+title: Incorpora il visualizzatore Dynamic Medie Video, Immagine o Dimensionale in una pagina web
+description: Scopri come incorporare video, immagini o immagini 3D di Dynamic Medie in una pagina web
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 21%
+source-wordcount: '383'
+ht-degree: 20%
 
 ---
 
-# Incorpora il visualizzatore Dynamic Media Video, Immagine o Dimensionale in una pagina web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incorpora il visualizzatore Dynamic Medie Video, Immagine o Dimensionale in una pagina web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilizza la funzione **[!UICONTROL Incorpora codice]** per riprodurre il video o visualizzare una risorsa incorporata in una pagina web. Puoi copiare il codice da incorporare negli Appunti, per poi incollarlo nelle pagine web. La modifica del codice non è consentita nella finestra di dialogo **[!UICONTROL Incorpora codice]**.
 
@@ -37,7 +35,7 @@ Consulta [Distribuire immagini ottimizzate per un sito reattivo](responsive-site
 >
 >Consulta [Pubblica predefiniti immagine](managing-image-presets.md#publishing-image-presets).
 
-**Per incorporare il visualizzatore Dynamic Media Video, Immagine o Dimensionale in una pagina Web:**
+**Per incorporare il visualizzatore Dynamic Medie Video, Immagine o Dimensionale in una pagina Web:**
 
 1. Accedi a *pubblicato* risorsa video o immagine di cui desideri copiare il codice da incorporare.
 
@@ -55,8 +53,8 @@ Consulta [Distribuire immagini ottimizzate per un sito reattivo](responsive-site
 1. In **[!UICONTROL Codice di incorporamento]** , copiare l&#39;intero codice negli Appunti e quindi selezionare **[!UICONTROL Chiudi]**.
 1. Incolla il codice da incorporare nelle pagine web.
 
-## Utilizzo di HTTP/2 per distribuire le risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilizzo di HTTP/2 per distribuire le risorse Dynamic Medie {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui browser e server comunicano. Consente di trasferire più rapidamente le informazioni e di ridurre la potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media ora può avvenire tramite HTTP/2, il che fornisce tempi di risposta e di caricamento migliori.
+HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui browser e server comunicano. Consente di trasferire più rapidamente le informazioni e di ridurre la potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Medie ora può avvenire tramite HTTP/2, il che fornisce tempi di risposta e di caricamento migliori.
 
-Consulta [Distribuzione HTTP2 dei contenuti](http2.md) per informazioni complete su come iniziare a utilizzare HTTP/2 con il tuo account Dynamic Media.
+Consulta [Distribuzione HTTP2 dei contenuti](http2.md) per informazioni complete su come iniziare a utilizzare HTTP/2 con il tuo account Dynamic Medie.

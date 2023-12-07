@@ -1,19 +1,17 @@
 ---
 title: Utilizzo dei selettori
 description: Selezione delle risorse per immagini interattive, video interattivi e banner a carosello
-uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: User, Admin
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: Selectors
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 4%
+source-wordcount: '741'
+ht-degree: 6%
 
 ---
 
@@ -89,7 +87,7 @@ Utilizzare il selettore del sito per scegliere una pagina Web quando si desidera
 
 1. In **[!UICONTROL Anteprima]** modalità se si seleziona il punto attivo o la mappa immagine, si passa alla pagina del sito di Experience Manager specificata.
 
-## Usa selettore risorse {#selecting-assets}
+## Utilizza il Selettore risorse {#selecting-assets}
 
 Utilizza questo selettore per scegliere le immagini da utilizzare in un banner carosello, un video interattivo, set di immagini, set di file multimediali diversi e set 360 gradi. Nel video interattivo, il selettore delle risorse è disponibile quando selezioni **[!UICONTROL Seleziona risorse]** nel **[!UICONTROL Contenuto]** scheda. In Set carosello, il selettore risorse è disponibile quando crei una diapositiva. Nei set di immagini, nei set di file multimediali diversi e nei set 360 gradi, il selettore delle risorse è disponibile rispettivamente quando crei un set di immagini, un set di file multimediali diversi o un set 360 gradi.
 

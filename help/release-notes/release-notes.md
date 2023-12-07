@@ -3,10 +3,10 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: f8f82ad5805095f331432471b614225f761e645c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3530'
-ht-degree: 3%
+source-wordcount: '3552'
+ht-degree: 2%
 
 ---
 
@@ -493,4 +493,4 @@ Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bis
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
->* [Abbonati ad Adobe priority product update](https://www.adobe.com/subscription/priority-product-update.html)
+>* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)

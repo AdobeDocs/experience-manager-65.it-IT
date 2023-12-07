@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 17%
+source-wordcount: '2411'
+ht-degree: 15%
 
 ---
 
@@ -113,7 +113,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 1. Fai clic su [!DNL Experience Manager] e quindi passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Dalla sezione **[!UICONTROL Cerca in Forms]** pagina, seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]**, quindi fai clic su **[!UICONTROL Modifica]**.
 1. Nella pagina **[!UICONTROL Modifica modulo di ricerca]**, trascina **[!UICONTROL Predicato opzioni]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
-1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l’etichetta, ad esempio: **[!UICONTROL Tipo di file]**. Specifica la proprietà in base alla quale eseguire la ricerca nel campo apposito, ad esempio, `jcr:content/metadata/dc:format.`
+1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l’etichetta, ad esempio: **[!UICONTROL Tipo di file]**. Specifica la proprietà in base alla quale eseguire la ricerca nel campo proprietà, ad esempio: `jcr:content/metadata/dc:format.`
 1. Effettua una delle operazioni seguenti:
 
    * In **[!UICONTROL Nome proprietà]** , indica il percorso del file JSON in cui si definiscono i nodi per le opzioni e specifica le coppie chiave-valore corrispondenti.
@@ -164,7 +164,7 @@ Analogamente al modo in cui si aggiunge un predicato Proprietà o Opzioni, è po
 
 | Nome predicato | Descrizione | Proprietà |
 |---|---|---|
-| [!UICONTROL Testo completo] | Predicato di ricerca per eseguire ricerche full-text su un intero nodo di risorsa. È mappato con l’operatore jcr:contains. Puoi specificare un percorso relativo se desideri eseguire una ricerca full-text su una parte specifica del nodo della risorsa. | <ul><li>Etichetta</li><li>Segnaposto</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
+| [!UICONTROL Testo intero] | Predicato di ricerca per eseguire ricerche full-text su un intero nodo di risorsa. È mappato con l’operatore jcr:contains. Puoi specificare un percorso relativo se desideri eseguire una ricerca full-text su una parte specifica del nodo della risorsa. | <ul><li>Etichetta</li><li>Segnaposto</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Browser Percorsi] | Predicato di ricerca per cercare le risorse in cartelle e sottocartelle in un percorso principale preconfigurato | <ul><li>Segnaposto</li><li>Percorso directory principale</li><li>Descrizione</li></ul> |
 | [!UICONTROL Percorso] | Utilizzala per filtrare i risultati in base alla posizione. È possibile specificare percorsi diversi come opzioni. | <ul><li>Etichetta</li><li>Percorso</li><li>Descrizione</li></ul> |
 | [!UICONTROL Stato pubblicazione] | Cerca predicato per cercare le risorse in base al loro stato di pubblicazione | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |

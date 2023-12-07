@@ -2,21 +2,19 @@
 title: Configurare Dynamic Medie - Modalità ibrida
 description: Scopri come configurare Dynamic Medie in modalità ibrida.
 mini-toc-levels: 3
-uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '7791'
-ht-degree: 2%
+source-wordcount: '7684'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +78,7 @@ Le attività di configurazione seguenti fanno riferimento ai seguenti termini:
   </tr>
   <tr>
    <td>Distribuisci SOLO immagini in produzione</td>
-   <td>Le immagini vengono distribuite tramite server nei data center Adobe di tutto il mondo e quindi memorizzate nella cache da una rete CDN per ottenere prestazioni scalabili e portata globale.</td>
+   <td>Le immagini vengono distribuite tramite server nei data center di Adobe in tutto il mondo e quindi memorizzate nella cache da una rete CDN per ottenere prestazioni scalabili e portata globale.</td>
    <td>
     <ol>
      <li>Sull’Experience Manager <strong>autore</strong> nodo, <a href="#enabling-dynamic-media">abilita Dynamic Medie</a>.</li>
@@ -121,7 +119,7 @@ Le attività di configurazione seguenti fanno riferimento ai seguenti termini:
   </tr>
   <tr>
    <td>Distribuisci sia immagini che video in produzione</td>
-   <td><p>I video vengono consegnati e memorizzati nella cache da una rete CDN per garantire prestazioni scalabili e una portata globale. Le immagini e le immagini dei poster video vengono distribuite tramite server nei data center Adobe di tutto il mondo e quindi memorizzate nella cache da una rete CDN per ottenere prestazioni scalabili e una portata globale.</p> <p>Consulta le sezioni precedenti per configurare l’immagine o il video in pre-produzione. </p> </td>
+   <td><p>I video vengono consegnati e memorizzati nella cache da una rete CDN per garantire prestazioni scalabili e una portata globale. Le immagini e le immagini dei poster video vengono distribuite tramite server nei centri dati di Adobe in tutto il mondo e quindi memorizzate nella cache da una rete CDN per garantire prestazioni scalabili e copertura globale.</p> <p>Consulta le sezioni precedenti per configurare l’immagine o il video in pre-produzione. </p> </td>
    <td>
     <ol>
      <li>Sull’Experience Manager <strong>autore</strong> nodo, <a href="#enabling-dynamic-media">abilita Dynamic Medie</a>.</li>
@@ -301,7 +299,7 @@ Imposta l’autenticazione di replica sull’istanza di authoring per replicare 
    * Seleziona **[!UICONTROL File registro chiavi]**. Passa al file KeyStore fornito da Adobe, selezionalo, quindi seleziona **[!UICONTROL Apri]**.
    * In **[!UICONTROL Password file registro chiavi]** , immettere la password del file registro chiavi. La password è **non** La password del registro chiavi creata nel passaggio 5, ma che è l&#39;Adobe di password del file registro chiavi, è riportata nell&#39;e-mail di benvenuto inviata durante il provisioning. Contatta l’Assistenza clienti di Adobe se non hai ricevuto una password per il file KeyStore.
    * In **[!UICONTROL Password chiave privata]** immettere la password della chiave privata (può essere la stessa password della chiave privata fornita nel passaggio precedente). L’Adobe fornisce la password della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto una password di chiave privata, contatta l’Assistenza clienti Adobe.
-   * In **[!UICONTROL Alias chiave privata]** , immettere l&#39;alias della chiave privata. Esempio: `*companyname*-alias`. L’Adobe fornisce l’alias della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto un alias chiave privata, contatta l’Assistenza clienti Adobe.
+   * In **[!UICONTROL Alias chiave privata]** , immettere l&#39;alias della chiave privata. Ad esempio: `*companyname*-alias`. L’Adobe fornisce l’alias della chiave privata nell’e-mail di benvenuto inviata durante il provisioning. Se non hai ricevuto un alias chiave privata, contatta l’Assistenza clienti Adobe.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -668,7 +666,7 @@ Tuttavia, nelle implementazioni di Dynamic Medie, poiché le risorse vengono dis
 Oltre a replicare le risorse, vengono replicate anche le seguenti non risorse:
 
 * Configurazione di Dynamic Medie Delivery: `/conf/global/settings/dam/dm/imageserver/jcr:content`
-* Predefiniti immagini: `/conf/global/settings/dam/dm/presets/macros`
+* Predefiniti immagine: `/conf/global/settings/dam/dm/presets/macros`
 * Predefiniti visualizzatore: `/conf/global/settings/dam/dm/presets/viewer`
 
 I filtri consentono di: *escludi* le risorse vengano replicate nel nodo di pubblicazione Experience Manager.
@@ -883,8 +881,8 @@ Impostazioni del manifesto e relativi valori predefiniti:
 | Proprietà | Valore predefinito | Descrizione |
 | --- | --- | --- |
 | `bkgcolor` | `FFFFFF` | Colore di sfondo predefinito. Valore RGB utilizzato per riempire qualsiasi area di un’immagine di risposta che non contiene dati immagine effettivi. Vedi anche [ColoreBkg](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) nell’API Image Server. |
-| `defaultpix` | `300,300` | Dimensioni vista predefinite. Se nella richiesta non sono specificate esplicitamente le dimensioni di visualizzazione mediante wid=, hei= o scl=, il server vincola le dimensioni delle immagini di risposta ai valori di larghezza e altezza specificati.<br>Specificati come due numeri interi, 0 o maggiori, separati da una virgola. Larghezza e altezza in pixel. Uno o entrambi i valori possono essere impostati su 0 per mantenerli liberi. Non si applica alle richieste nidificate/incorporate.<br>Vedi anche [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) nell’API Image Server.<br>Tuttavia, in genere si utilizza un predefinito visualizzatore o un predefinito immagine per distribuire la risorsa. L’impostazione predefinita è applicabile solo a una risorsa che non utilizza un predefinito visualizzatore o un predefinito immagine. |
-| `defaultthumbpix` | `100,100` | Dimensioni miniatura predefinite. Utilizzato al posto dell&#39;attributo::DefaultPix per le richieste di miniature (`req=tmb`).<br>Il server vincola le dimensioni delle immagini di risposta ai valori di larghezza e altezza specificati. Questa azione è true se una richiesta di miniature (`req=tmb`) non specifica la dimensione in modo esplicito e non specifica la dimensione di visualizzazione in modo esplicito utilizzando `wid=`, `hei=`, o `scl=`.<br>Specificati come due numeri interi, 0 o maggiori, separati da una virgola. Larghezza e altezza in pixel. Uno o entrambi i valori possono essere impostati su 0 per mantenerli liberi.<br>Non si applica alle richieste nidificate/incorporate.<br>Vedi anche [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) nell’API Image Server. |
+| `defaultpix` | `300,300` | Dimensioni predefinite della visualizzazione. Se nella richiesta non sono specificate esplicitamente le dimensioni di visualizzazione mediante wid=, hei= o scl=, il server vincola le dimensioni delle immagini di risposta ai valori di larghezza e altezza specificati.<br>Specificati come due numeri interi, 0 o maggiori, separati da una virgola. Larghezza e altezza in pixel. Uno o entrambi i valori possono essere impostati su 0 per mantenerli liberi. Non si applica alle richieste nidificate/incorporate.<br>Vedi anche [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) nell’API Image Server.<br>Tuttavia, in genere si utilizza un predefinito visualizzatore o un predefinito immagine per distribuire la risorsa. L’impostazione predefinita è applicabile solo a una risorsa che non utilizza un predefinito visualizzatore o un predefinito immagine. |
+| `defaultthumbpix` | `100,100` | Dimensioni miniature predefinite. Utilizzato al posto dell&#39;attributo::DefaultPix per le richieste di miniature (`req=tmb`).<br>Il server vincola le dimensioni delle immagini di risposta ai valori di larghezza e altezza specificati. Questa azione è true se una richiesta di miniature (`req=tmb`) non specifica la dimensione in modo esplicito e non specifica la dimensione di visualizzazione in modo esplicito utilizzando `wid=`, `hei=`, o `scl=`.<br>Specificati come due numeri interi, 0 o maggiori, separati da una virgola. Larghezza e altezza in pixel. Uno o entrambi i valori possono essere impostati su 0 per mantenerli liberi.<br>Non si applica alle richieste nidificate/incorporate.<br>Vedi anche [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) nell’API Image Server. |
 | `expiration` | `36000000` | Durata predefinita cache client. Specifica un intervallo di scadenza predefinito nel caso in cui un record catalogo non contenga un valore catalog::Expiration valido.<br>Numero reale, 0 o superiore. Numero di millisecondi mancanti alla scadenza dalla generazione dei dati di risposta. Impostate questo valore su 0 per far scadere immediatamente l&#39;immagine di risposta, disattivando di fatto la memorizzazione in cache del client. Per impostazione predefinita, questo valore è impostato su 10 ore, il che significa che se viene pubblicata una nuova immagine, sono necessarie 10 ore affinché la vecchia immagine lasci la cache dell’utente. Se la cache deve essere cancellata prima, contatta l’Assistenza clienti.<br>Vedi anche [Scade](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) nell’API Image Server. |
 | `jpegquality` | `80` | Attributi di codifica predefiniti di JPEG. Specifica gli attributi predefiniti per le immagini di risposta di JPEG.<br>Numero intero e flag, separati da una virgola. Il primo valore è compreso nell&#39;intervallo 1..100 e definisce la qualità. Il secondo valore può essere 0 per il comportamento normale o 1 per disattivare il downsampling della cromaticità RGB utilizzato dai codificatori JPEG.<br>Vedi anche [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) nell’API Image Server. |
 | `maxpix` | `2000,2000` | Limite dimensioni immagine di risposta. Larghezza e altezza massime per l’immagine di risposta restituite al client.<br>Il server restituisce un errore se una richiesta causa un&#39;immagine di risposta con larghezza o altezza maggiore dell&#39;attributo::MaxPix.<br>Vedi anche [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) nell’API Image Server. |
@@ -1041,12 +1039,12 @@ Sono installati i seguenti profili colore:
    <td>CIE RGB</td>
   </tr>
   <tr>
-   <td>CoatedFogra27</td>
+   <td>Fogra27 rivestito</td>
    <td>CMYK</td>
    <td>FOGRA27 rivestito (ISO 12647-2:2004)</td>
   </tr>
   <tr>
-   <td>CoatedFogra39</td>
+   <td>Fogra39 rivestito</td>
    <td>CMYK</td>
    <td>FOGRA39 rivestita (ISO 12647-2:2004)</td>
   </tr>
@@ -1151,7 +1149,7 @@ Sono installati i seguenti profili colore:
    <td>sRGB IEC61966-2.1</td>
   </tr>
   <tr>
-   <td>UncoatedFogra29</td>
+   <td>Fogra non rivestito29</td>
    <td>CMYK</td>
    <td>FOGRA29 non rivestito (ISO 12647-2:2004)</td>
   </tr>

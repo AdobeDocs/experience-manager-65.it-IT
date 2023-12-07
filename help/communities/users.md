@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1910'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Quando si crea un nuovo sito community, vengono creati dinamicamente nuovi grupp
 
 I nomi dei gruppi vengono generati dal nome assegnato al sito durante [creazione di siti community](sites-console.md#step13asitetemplate). Gli ID univoci evitano conflitti di denominazione per siti e gruppi community con nomi simili sullo stesso server.
 
-Ad esempio, se il nome del sito è &quot;*coinvolgere*&quot; per un sito denominato &quot;We.Retail Engage&quot;, uno dei gruppi di utenti creati sarebbe:
+Ad esempio, se il nome del sito è &quot;*coinvolgere*&quot; per un sito denominato &quot;Coinvolgi&quot;, uno dei gruppi di utenti creati sarà:
 
 * Community *Coinvolgi* Membri
 

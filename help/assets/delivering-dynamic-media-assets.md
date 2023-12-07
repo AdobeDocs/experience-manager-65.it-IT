@@ -1,20 +1,18 @@
 ---
 title: Distribuire elementi multimediali dinamici
 description: Scopri come distribuire risorse Dynamic Medie, come video e immagini, alle pagine web.
-uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 13%
+source-wordcount: '323'
+ht-degree: 9%
 
 ---
 
@@ -28,7 +26,7 @@ Dynamic Medie offre diverse opzioni:
 * Se il tuo sito web non è sull’Experience Manager, puoi scegliere:
 
    * Incorporare il video o l’immagine sul sito web.
-   * Collegamento degli URL all’applicazione Web. Utilizza i collegamenti quando desideri distribuire un lettore video come finestra popup o modale.
+   * Collega gli URL all’applicazione web. Utilizza i collegamenti quando desideri distribuire un lettore video come finestra popup o modale.
    * Se il sito è dinamico, puoi [fornire immagini ottimizzate](/help/assets/responsive-site.md).
 
 >[!NOTE]
@@ -42,7 +40,7 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 * [Attivazione della protezione hotlinking in Dynamic Media](/help/assets/hotlink-protection.md)
 * [Collegamento degli URL all’applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Distribuzione di immagini ottimizzate per un sito reattivo](/help/assets/responsive-site.md)
-* [Distribuzione di contenuti HTTP2](/help/assets/http2.md)
+* [Distribuzione HTTP2 dei contenuti](/help/assets/http2.md)
 * [Invalidare la cache CDN tramite Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Utilizzo di set di regole per la trasformazione degli URL](/help/assets/using-rulesets-to-transform-urls.md)
 
