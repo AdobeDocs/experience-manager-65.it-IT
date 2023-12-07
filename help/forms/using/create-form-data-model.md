@@ -5,9 +5,9 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1533'
 ht-degree: 1%
 
 ---
@@ -236,3 +236,8 @@ Per eseguire il test, eseguire le operazioni seguenti:
    Ora, se verifichi di nuovo la lettura del servizio modello per 7107215 ID, questo recupera e visualizza i dettagli del cliente aggiornati come mostrato di seguito.
 
    ![aggiornato di lettura](assets/read-updated.png)
+
+
+>[!NOTE]
+>
+> Puoi creare e utilizzare la configurazione Elenco SharePoint utilizzando Modello dati modulo in un modulo adattivo, per salvare dati o documenti di record generati in un elenco SharePoint. Fai riferimento a [Collegare un modulo adattivo all’elenco di Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration), per i passaggi dettagliati.
