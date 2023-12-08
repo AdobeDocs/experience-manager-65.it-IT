@@ -9,10 +9,10 @@ breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
 feature: Forms Service
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
 workflow-type: tm+mt
-source-wordcount: '3911'
-ht-degree: 4%
+source-wordcount: '3752'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 4%
    + [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it)
    + [Riepilogo delle nuove funzionalità](using/whats-new.md)
    + [Domande frequenti](/help/forms/using/frequently-asked-questions-faq.md)
-   + [Funzioni obsolete](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html?lang=it)
+   + [Funzioni obsolete](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Guida introduttiva {#getting-started}
    + [Introduzione ad AEM Forms](using/introduction-aem-forms.md)
    + [Introduzione all’authoring di moduli adattivi](using/introduction-forms-authoring.md)
@@ -78,7 +78,7 @@ ht-degree: 4%
       + [Configurazione di Adobe Experience Manager Forms su JEE nel cluster JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
       + [Configurazione di Adobe Experience Manager Forms su JEE in un cluster WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
       + [Configurazione di Adobe Experience Manager Forms su JEE in un cluster WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
-   + Configura Moduli AEM {#configure-aem-forms}
+   + Configurare AEM Forms {#configure-aem-forms}
       + [Ottimizzazione delle prestazioni del server AEM Forms](using/performance-tuning-aem-forms.md)
       + [Configurare la cache dei moduli adattivi](using/configure-adaptive-forms-cache.md)
       + [Configurazione delle impostazioni di AEM DS](using/configuring-the-processing-server-url-.md)
@@ -115,7 +115,7 @@ ht-degree: 4%
       + [Flussi di lavoro incentrati su Forms su OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Gestione degli utenti Forms](using/user-management-handling-user-data.md)
       + [Flussi di lavoro di Forms JEE](using/forms-workflow-jee-handling-user-data.md)
-      + [Portale Forms](using/forms-portal-handling-user-data.md)
+      + [Forms Portal](using/forms-portal-handling-user-data.md)
       + [Gestione della corrispondenza](using/correspondence-management-handling-user-data.md)
       + [Integrazione con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Document Security](/help/forms/using/document-security-handling-user-data.md)
@@ -358,7 +358,7 @@ ht-degree: 4%
    + [Creare o configurare una cartella controllata](using/creating-configure-watched-folder.md)
    + [Utilizzare modelli e-mail personalizzati in un passaggio Assegna attività](using/use-custom-email-template-assign-task-step.md)
    + [Utilizzare i metadati in una notifica e-mail](using/use-metadata-in-email-notifications.md)
-+ Portale Forms {#use-forms-portal}
++ Forms Portal {#use-forms-portal}
    + [Personalizzazione dei modelli per i componenti del portale Forms](using/customizing-templates-forms-portal-components.md)
    + [Abilitazione dei componenti del portale Forms](using/enabling-forms-portal-components.md)
    + [Creazione di una pagina del portale dei moduli](using/creating-form-portal-page.md)
@@ -579,7 +579,7 @@ ht-degree: 4%
    + Servizio informazioni di sistema {#system-information-service}
       + [Configurare il servizio informazioni di sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [API di System Information Service](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Reporting processi {#process-reporting}
++ Reporting sui processi {#process-reporting}
    + [Introduzione alla generazione di rapporti sui processi](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Guida introduttiva ai report sui processi](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Funzionamento di Report processi](/help/forms/using/process-reporting/process-reporting-architecture.md)
@@ -589,7 +589,7 @@ ht-degree: 4%
    + [Risoluzione dei problemi dei report dei processi](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Riferimenti per sviluppatori {#developer-reference}
    + [Nozioni di base per gli sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-   + [HTML Template Language ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
+   + [Lingua modello HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
    + [Plug-in AEM per il debug dei moduli adattivi](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Riferimento API Java di AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [Riferimento API Java di AEM Forms su JEE](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
@@ -705,4 +705,5 @@ ht-degree: 4%
    + [Configurazione e risoluzione dei problemi di un cluster di server AEM Forms su JEE](developing/configure-server-cluster.md)
    + [Generazione e utilizzo degli hash nei PDF forms dinamici](developing/hashing-forms.md)
    + [Passaggio delle credenziali tramite intestazioni WS-Security](developing/passing-credentials.md)
+   + [Impossibile utilizzare il servizio di output, il servizio Forms o il servizio Document of Record (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 
