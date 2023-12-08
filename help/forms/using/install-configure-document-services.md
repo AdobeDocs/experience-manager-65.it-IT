@@ -4,9 +4,9 @@ description: Installa AEM Forms Document Services per creare, assemblare, distri
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '5499'
+source-wordcount: '5599'
 ht-degree: 1%
 
 ---
@@ -556,6 +556,16 @@ Il servizio Assembler dipende dal servizio Estensioni di Reader, dal servizio Si
   </tr>
  </tbody>
 </table>
+
+### (Solo Windows) Configura voce del Registro di sistema per Microsoft® Project {#configure-registry-entry-for-microsoft-project}
+
+Dopo aver installato il componente aggiuntivo AEM Forms e Microsoft® Project sul computer, registrare una voce per Microsoft® Project nel percorso a 64 bit. Facilita l’esecuzione dei test di conversione da Project a PDFG. Di seguito sono riportati i passaggi che descrivono la procedura per la voce del Registro di sistema:
+
+1. Aprire l&#39;editor del Registro di sistema di Microsoft® Windows (regedit). Per aprire l&#39;editor del Registro di sistema, scegliere Start > Esegui, digitare regedit e fare clic su OK.
+1. Accedi a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`e crea un nuovo **Valore binario** e rinominarlo in **Progetto**.
+1. Modificare il valore dei dati del Registro di sistema binario creato su 01 e fare clic su OK.
+1. Chiudere la voce del Registro di sistema.
+
 
 ## Problemi noti e risoluzione dei problemi {#known-issues-and-troubleshooting}
 

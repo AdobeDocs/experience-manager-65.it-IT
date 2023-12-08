@@ -3,10 +3,10 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3552'
-ht-degree: 2%
+source-wordcount: '4233'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 | -------- | ---------------------------- |
 | Versione | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Tipo | Versione Service Pack |
-| Data | Giovedì 30 novembre 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Data | Giovedì 07 dicembre 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL di download | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## Cosa è incluso in [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
@@ -38,12 +38,30 @@ ht-degree: 2%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-**Funzioni principali e miglioramenti**
+## Funzioni principali e miglioramenti
 
 Alcune delle funzioni e dei miglioramenti principali di questa versione includono:
 
 * Abilitazione dell’utente del componente Editor pagina/immagine di Sites per fare riferimento alle risorse dal Cloud Service di risorse remoto. (SITES-13448, SITES-13433)
 * AEM ora supporta l’ordinamento lato server per una navigazione più rapida dei progetti nella vista a elenco. I nodi del progetto vengono ordinati in base alla colonna selezionata dall’utente prima di essere visualizzati nell’interfaccia.
+
+### [!DNL Forms]
+
+* **Nuovi componenti core modulo adattivo**: per migliorare la scalabilità dei moduli, vengono aggiunte schede verticali, Termini e Condizioni e Casella di controllo.
+   * **[Componente casella di controllo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: il Forms adattivo basato sui Componenti core ora può includere un componente casella di controllo. Consente agli utenti di effettuare scelte binarie, selezionando o deselezionando una particolare opzione. In genere viene visualizzata come una piccola casella su cui è possibile fare clic o toccare per alternare due stati: selezionato e deselezionato. La casella di controllo è un elemento modulo comune utilizzato per presentare una scelta sì/no o vero/falso.
+
+   * **[Componente termini e condizioni](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adattivo basato su componenti core ora può includere un componente Termini e condizioni. Consente agli autori dei moduli di introdurre una sezione specifica all’interno del modulo in cui vengono presentati agli utenti i termini, le condizioni o gli accordi legali associati all’utilizzo di un servizio, un prodotto o una piattaforma. Questo componente è progettato per informare gli utenti sulle regole, le normative e gli obblighi che si impegnano a rispettare inviando il modulo.
+
+     ![Schede verticali, termini e condizioni e componenti casella di controllo](/help/forms/using/assets/forms-components.png)
+
+   * **[Componente Schede verticali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adattivo basato su Componenti core ora può organizzare il contenuto del modulo in un elenco verticale di schede, fornendo un layout strutturato e navigabile. L’utilizzo di schede verticali in un modulo può migliorare l’esperienza utente complessiva semplificando la navigazione e migliorando l’organizzazione del contenuto del modulo, soprattutto nelle situazioni in cui un modulo contiene più sezioni o informazioni complesse.
+
+* **[Versione a 64 bit di AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: la versione a 64 bit di AEM Forms Designer offre prestazioni, scalabilità e gestione della memoria migliorate per migliorare l’esperienza di creazione dei moduli. Grazie all&#39;architettura a 64 bit, è possibile gestire con facilità progetti ancora più grandi e complessi, garantendo flussi di lavoro di progettazione ottimizzati ed efficienza. Migliora le funzionalità di progettazione dei moduli e abbraccia il futuro di AEM Forms Designer con questa versione all’avanguardia.
+
+* **[Collegare un Forms adattivo all’elenco di Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms fornisce un’integrazione OOTB per inviare i dati dei moduli direttamente a SharePoint List, consentendoti di utilizzare le funzionalità degli elenchi di SharePoint. È possibile configurare Microsoft SharePoint List come origine dati per un modello dati modulo e utilizzare l’azione Invia tramite modello dati modulo per collegare un modulo adattivo a SharePoint List.
+
+* **[Supporto per la configurazione delle proprietà del documento record per i frammenti di moduli adattivi](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: ora puoi personalizzare facilmente i frammenti di modulo adattivo e i relativi campi nell’editor di modulo adattivo.
+
 
 **Funzione obsoleta**
 
@@ -149,9 +167,11 @@ a
 
 ### [!DNL Forms]{#forms-6519}
 
-Correzioni in [!DNL Experience Manager] Forms vengono forniti tramite un pacchetto aggiuntivo separato una settimana dopo il [!DNL Experience Manager] Data di rilascio del Service Pack. In questo caso, il rilascio del pacchetto aggiuntivo Forms AEM 6.5.19.0 è pianificato per giovedì 30 novembre 2023. Un elenco di correzioni e miglioramenti per Forms verrà aggiunto a questa sezione dopo la versione di.
+#### [!DNL Adaptive Forms]
 
-* Aggiunta dell’elenco di controllo di accesso per `fd-cloudservice` per poter leggere o aggiornare le configurazioni di Microsoft® in `cloudconfigs/microsoftoffice`. (FORMS-11142)
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.-->
+
+<!--* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft&reg; configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) -->
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -166,6 +186,32 @@ Correzioni in [!DNL Experience Manager] Forms vengono forniti tramite un pacchet
 <!--### Commerce{#commerce-6519}
 
 * A -->
+
+* Quando un utente aggiunge una barra degli strumenti a un modulo adattivo, l’Etichetta contenitore modulo mostra un comportamento irregolare perché non cambia alla lingua preferita selezionata dall’autore per Forms. (FORMS-11371)
+* In AEM Forms Workspace, il campo a discesa seleziona la prima opzione per impostazione predefinita nell’interfaccia utente. (FORMS-11346)
+* La configurazione della lingua in AEM non mostra alcun effetto se si utilizzano le lingue con cinque caratteri e il separatore decimale non viene visualizzato correttamente nella lettera. (FORMS-11344)
+* Quando un utente genera l’output XML utilizzando il processo del workbench, questo non riesce per alcuni dei file. (FORMS-11314)
+* Quando un utente genera l’anteprima per il documento di record (DOR) in lingue diverse dall’inglese, non funziona. (FORMS-11106)
+* Quando un utente converte alcuni file immagine con PDFG su un’istanza OSGI basata su Linux con JDK11, non viene convertito. (FORMS-11105)
+* Quando l’utente installa il componente aggiuntivo AEM Forms, questo interrompe il pannello della struttura del contenuto in AEM Sites. (FORMS-10912)
+* Quando un utente copia le date utilizzando l’utilità di lettura dello schermo NVDA dal componente Selezione data, non legge correttamente. (FORMS-10805) 
+* Nell’editor di regole di Forms, l’utente non è in grado di impostare il valore del pulsante di opzione o della casella di controllo quando il tipo di valore dei dati è booleano. (FORMS-10713)
+* Quando un utente aggiunge elementi in un modulo adattivo, questo viene aggiunto in ordine inverso a un elenco a discesa. (FORMS-10456)
+* Quando un elenco a discesa viene cancellato utilizzando l’editor di regole, il primo valore fornito viene comunque visualizzato anche se il valore è stato cancellato. (FORMS-9963) 
+* Gli utenti non possono accedere al Titolo modulo utilizzando utilità per la lettura dello schermo come NVDA. (FORMS-8815) 
+* Gli utenti non possono accedere al sottotitolo di un modulo utilizzando utilità per la lettura dello schermo come NVDA. (FORMS-8814) 
+* Nell’origine pagina del modulo HTML, l’attributo chiave di accesso è vuoto e non funziona. (FORMS-5753) 
+* Nella finestra di dialogo Informazioni su Workspace, il testo &quot;Adobe Experience Manager - Forms&quot; viene presentato come testo. (FORMS-5748)
+
+#### [!DNL Forms Designer]{#forms-designer-6519}
+
+* Quando un utente tenta di leggere PDF forms non interattivi tramite utilità per la lettura dello schermo, alcune voci di elenco non vengono lette o saltate. (LC-3921645) 
+* Quando un utente scorre con il tasto TAB i campi modificabili, non passa a tutti i campi del modulo PDF in modo coerente. (LC-3921631) 
+* L’ordinamento dei tag viene modificato in modo casuale in PDF, anche l’assegnazione tag in Forms Designer è corretta. (LC-3921313) 
+* Un elenco non viene visualizzato correttamente nei tag di Adobe Acrobat Reader o Adobe Acrobat DC. (LC-3921306)
+* I livelli di intestazione assegnati correttamente in Forms Designer vengono modificati in modo casuale in `<P>` in Adobe Acrobat. (LC-3921305) 
+* In una tabella non è possibile modificare l&#39;ID di un oggetto assegnato. (LC-3921134) 
+* Se nella tabella sono presenti celle unite, non è disponibile alcuna interfaccia grafica per l&#39;impostazione dell&#39;estensione (riga e colonna) e dell&#39;ambito in una tabella complessa in AEM Forms Designer. (LC-3919532) 
 
 ### Foundation{#foundation-6519}
 
@@ -418,8 +464,6 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
 #### Piattaforme supportate
 
-* Le versioni JDK superiori a 1.8.0_281 non sono supportate per il server WebLogic JEE. (FORMS-8498, CQDOC-20383)
-* As [!DNL Microsoft® Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] non supporta le installazioni chiavi in mano per [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20 non è supportato per installare AEM Forms sul programma di installazione JEE. Per installare AEM Forms sul programma di installazione di JEE sono supportate solo JDK 11.0.19 o versioni precedenti. (FORMS-10659)
 
 #### Installazione
@@ -467,13 +511,10 @@ Per risolvere il problema, individuare `<AEM_Forms_Installation_dir>\jboss\bin\s
 
 * Quando viene pubblicato un modulo adattivo, tutte le sue dipendenze, inclusi i criteri, vengono ripubblicate, anche se non sono state apportate modifiche. (FORMS-10454)
 * Quando un utente seleziona di configurare un campo per la prima volta in un modulo adattivo, l’opzione per salvare una configurazione non viene visualizzata nel Browser proprietà. Per risolvere il problema, fai clic su per configurare un altro campo del modulo adattivo nello stesso editor.
-* Quando un URL di reindirizzamento viene impostato nel contenitore guida di un modulo adattivo, la firma in linea non funziona più. (FORMS-10493) Per risolvere il problema, scaricare e installare [hotfix per 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
-* Non è possibile pubblicare tutti i modelli di documento record (DoR). Vengono pubblicati solo i modelli DoR basati sulle impostazioni internazionali inglesi e i relativi modelli DoR basati su Forms associati. (FORMS-10535) Per risolvere il problema, scaricare e installare [hotfix per 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Quando gli utenti eseguono l’azione di invio, l’invio non riesce e viene visualizzato un errore:
+  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Per risolvere il problema: [ricompilare gli script Sling come JSP, Java e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
-
-#### Comunicazioni interattive
-
-* Dopo l’aggiornamento a AEM Service Pack 18, non è possibile aprire la comunicazione interattiva con grandi immagini in linea in modalità Modifica. (FORMS-10578) Per risolvere il problema, installare [hotfix per 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 

@@ -1,6 +1,7 @@
 ---
 title: Installazione e configurazione di Designer
 description: Designer è disponibile come programma di installazione autonomo ed è fornito in bundle con Workbench. Scopri come installare Designer autonomo.
+uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
@@ -8,9 +9,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -19,22 +20,41 @@ ht-degree: 0%
 
 ## Prerequisiti {#pre-requisites}
 
-* Installare la versione a 32 bit di  [Visual C++ 2019 ridistribuibile (x86)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Prima di avviare l’installazione, assicurati che siano installati i pacchetti runtime ridistribuibili precedentemente menzionati.
++++ Per AEM Forms Designer a 64 bit (scelta consigliata)
+
+* Installare la versione a 64 bit di  [Visual C++ 2019 ridistribuibile (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Prima di avviare l’installazione, assicurati che siano installati i pacchetti runtime ridistribuibili precedentemente menzionati.
 * Utente con diritti di amministratore per installare o disinstallare AEM Forms Designer.
+
++++
+
++++ Per AEM Forms Designer a 32 bit
+
+* Installare la versione a 32 bit di  [Visual C++ 2019 ridistribuibile (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Prima di avviare l’installazione, assicurati che siano installati i pacchetti runtime ridistribuibili precedentemente menzionati.
+* Utente con diritti di amministratore per installare o disinstallare AEM Forms Designer.
+
++++
+
 
 ## Installare AEM Forms Designer {#install-designer}
 
 Designer è disponibile come programma di installazione autonomo ed è anche fornito in bundle con WorkBench. Se si utilizza un programma di installazione autonomo per AEM Forms Designer, effettuare le seguenti operazioni:
 
 1. Disinstalla la versione precedente di AEM Forms Designer, se è già installata.
-1. Scarica Designer da [Sito Web Adobe Licensing](https://licensing.adobe.com/).
+1. Scarica AEM Forms Designer a 64 bit (consigliato) o AEM Forms Designer a 32 bit in base alle tue esigenze.
 
    >[!NOTE]
-   >
-   > * Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) e versioni successive di Forms Designer includono anche la versione Service Pack. Ad esempio, per Service Pack 15 il numero di versione è 6.5.15.20221112.1.0. In questo esempio, 6.5.15 è la versione del service pack.
+   > 
+   >* La versione di Forms Designer a 32 bit diventerà obsoleta con AEM 6.5 Forms Service Pack 20 (6.5.20.0). L&#39;Adobe consiglia di eseguire l&#39;aggiornamento a Forms Designer a 64 bit.
+   >* Forms Designer a 64 bit è disponibile solo per AEM 6.5 Forms Service Pack 19 (6.5.19.0) o versioni successive.
+   >* Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) e versioni successive di Forms Designer includono anche la versione Service Pack. Ad esempio, per Service Pack 15 il numero di versione è 6.5.15.20221112.1.0. In questo esempio, 6.5.15 è la versione del service pack.
 
 1. Avviare il programma di installazione di AEM Forms Designer facendo doppio clic su setup.exe.
 1. Procedi e fornisci i tuoi dettagli e il numero di serie nella schermata Personalizzazione.
+
+   >[!NOTE]
+   >
+   >* Ottenere il codice di licenza di Forms Designer da [Sito Web Adobe Licensing](https://licensing.adobe.com/).
+
 1. Se si accetta il contratto di licenza, fare clic su Avanti per continuare.
 1. (Facoltativo) Se si desidera installare Designer in un percorso scelto, modificare il percorso di installazione predefinito. Fai clic su Avanti.
 1. Fare clic su Indietro per modificare le preferenze. Per installare Designer, fai clic su Installa.

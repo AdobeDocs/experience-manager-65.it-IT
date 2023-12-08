@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3583'
 ht-degree: 2%
 
 ---
 
-# Generare un documento di record per i moduli adattivi{#generate-document-of-record-for-adaptive-forms}
+# Genera documento di record per moduli adattivi o frammenti di moduli adattivi {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 Dopo aver inviato un modulo, i clienti in genere desiderano conservare una registrazione, in formato cartaceo o documentale, delle informazioni che hanno compilato nel modulo per riferimento futuro. Tale documento è denominato documento di record.
 
-Questo articolo spiega come generare un documento di record per i moduli adattivi.
+Questo articolo spiega come generare un documento di record per un frammento di Forms adattivo o di modulo adattivo.
 
 >[!NOTE]
 >
@@ -68,6 +68,8 @@ Il documento di record generato automaticamente presenta i seguenti vantaggi:
 Per generare un documento di record per i moduli adattivi, sono necessari i seguenti componenti:
 
 **Modulo adattivo** Modulo adattivo per il quale si desidera generare un documento di record.
+
+**Frammento di modulo adattivo** Frammento di modulo adattivo per il quale desideri generare un documento di record.
 
 **Modello di base (consigliato)** Modello XFA (file XDP) creato in Progettazione AEM. Il modello base viene utilizzato per specificare lo stile e le informazioni di branding per il modello del documento record.
 
@@ -273,7 +275,7 @@ Per configurare un documento di record per i moduli adattivi, effettua le seguen
    >
    >Nella scheda Modello modulo, accertati di selezionare **Schema** o **Nessuno** dal **Seleziona da** a discesa. **[!UICONTROL Il documento record non è supportato per i moduli basati su XFA o adattivi con modello modulo come modello modulo.]**
 
-1. Nella sezione Configurazione modello documento record della scheda Modello modulo selezionare una delle opzioni seguenti.
+1. Nella sezione Configurazione modello documento record della scheda Modello modulo selezionare una delle opzioni seguenti:
 
    **Nessuno** Selezionare questa opzione se non si desidera configurare il documento di record per il modulo.
 
@@ -396,6 +398,10 @@ Le impostazioni del documento record di un componente sono disponibili nelle rel
    * **[!UICONTROL Overflow]** > **[!UICONTROL Vai a area contenuti]** > Nome dell’area di contenuto: inizia a riempire l’area di contenuto specificata.
    * **[!UICONTROL Overflow]** > **[!UICONTROL Vai a pagina]** > Nome della pagina: inizia a riempire la pagina specificata.
 
+  >[!NOTE]
+  >
+  > La proprietà Paginazione non è disponibile per i frammenti di modulo adattivi.
+
 Per informazioni su come applicare interruzioni di pagina e più pagine master in un documento di record, consulta [Applicare un’interruzione di pagina a un documento record](#apply-page-breaks-in-dor) e [Applicare più pagine master a un documento record](#apply-multiple-master-pages-dor).
 
 **Impostazioni livello modulo**
@@ -437,6 +443,9 @@ AEM Forms applica la seconda pagina master al pannello e a tutti i pannelli succ
 1. Seleziona ![Salva](/help/forms/using/assets/save_icon.png) per salvare le proprietà.
 AEM Forms applica la terza pagina master al pannello e a tutti i pannelli successivi nel modulo adattivo.
 
+>[!NOTE]
+>
+> Non è possibile applicare più pagine master a un documento di record per un frammento di modulo adattivo.
 
 ## Considerazioni chiave durante l’utilizzo del documento record {#key-considerations-when-working-with-document-of-record}
 

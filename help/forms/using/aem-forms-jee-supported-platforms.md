@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 1630805be43ce9bb52a8fe1bbe50b2b934d4922c
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3984'
 ht-degree: 0%
 
 ---
@@ -242,12 +242,12 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
    <td><p><strong>Definizioni di patch supportate</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle Server WebLogic 12.2.1 (12c R2) (obsoleto)</td>
+   <td>Oracle Server WebLogic 12.2.1 (12c R2) (obsoleto) <sup>[9]</sup></td>
    <td>R: Supportato</td>
    <td>Service Pack e aggiornamenti critici</td>
   </tr>
   <tr>
-   <td>Oracle server WebLogic 14c </td>
+   <td>Oracle server WebLogic 14c <sup>[9]</sup></td>
    <td>R: Supportato</td>
    <td>Service Pack e aggiornamenti critici</td>
   </tr>
@@ -355,6 +355,9 @@ Quando scegli una piattaforma per configurare il server AEM Forms su JEE, consid
 1. AEM Forms su JEE non supporta il server applicazioni WebSphere® su CentOS.
 1. AEM Forms su JEE non supporta JBoss® RBAC (role-based access control).
 1. AEM Forms Oracle su JEE supporta l’SDK Java™ SE 11 (64 bit) per JBoss per application server® solo EAP 7.4.
+1. Le versioni JDK superiori a 1.8.0_281 non sono supportate per il server WebLogic. (FORMS-8498)
+1. [!DNL Microsoft® Windows Server 2019] non supporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] non supporta le installazioni chiavi in mano per [!DNL Experience Manager Forms 6.5.10.0 and later]. (CQDOC-18312)
+
 
 Inoltre, nella scelta del software, considera i seguenti aspetti, ad Adobe le implementazioni di AEM Forms su JEE:
 
@@ -407,11 +410,11 @@ Inoltre, nella scelta del software, considera i seguenti aspetti, ad Adobe le im
   </tr>
   <tr>
    <td>EMC Documentum®</td>
-   <td>7.3</td>
+   <td>7,3</td>
   </tr>
   <tr>
    <td>IBM® FileNet</td>
-   <td>5.5.2</td>
+   <td>5.5.2.</td>
   </tr>
   <tr>
    <td>IBM® Content Manager Server (obsoleto) </td>
@@ -419,7 +422,7 @@ Inoltre, nella scelta del software, considera i seguenti aspetti, ad Adobe le im
   </tr>
   <tr>
    <td> Client IBM® Content Manager (obsoleto)</td>
-   <td>8.5 </td>
+   <td>8,5 </td>
   </tr>
    <td>Microsoft® Sharepoint </td>
    <td>2019<br /> </td>
@@ -686,7 +689,7 @@ Di seguito sono riportate alcune eccezioni relative al browser per i desktop:
 
 L’app AEM Forms è disponibile sulle seguenti piattaforme:
 
-| **Platform** | **Dispositivi supportati** |
+| **Piattaforma** | **Dispositivi supportati** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Apple iOS | Apple iPhone, iPad, iPad Air e iPad mini con iOS 15.1 e versioni successive. |
 | Google Android™ | Android™ 5.1 e versioni successive. L&#39;app AEM Forms è certificata su tablet Samsung Galaxy da 7 pollici e 10 pollici e smartphone popolari. |
