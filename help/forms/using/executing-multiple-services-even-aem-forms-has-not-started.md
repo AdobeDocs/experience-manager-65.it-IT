@@ -1,9 +1,10 @@
 ---
 title: L’esecuzione di più servizi nonostante AEM Forms non è stata avviata.
 description: Anche se AEM Forms non è stato avviato completamente, elabora più servizi.
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+exl-id: 4ec40412-15b1-434b-a919-2cf23f48077c
+source-git-commit: faa628ac4a4631564141f68f3efc9d69a67e5c40
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '96'
 ht-degree: 4%
 
 ---
@@ -21,9 +22,4 @@ La soluzione si applica ad AEM Forms sul server JEE e AEM Forms sul server OSGi.
 
 ## Soluzione {#solution}
 
-Per risolvere il problema, gli utenti aggiungono un argomento `Dcom.adobe.livecycle.dsc.deferServiceStart=true` a [file batch](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) durante l&#39;avvio del server.
-
-
-
-
-
+Per risolvere il problema, aggiungi un argomento `Dcom.adobe.livecycle.dsc.deferServiceStart=true` a [file batch](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) durante l&#39;avvio del server.
