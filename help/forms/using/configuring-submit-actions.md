@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 302a76fb9470e2ef177f60aea10312d6091becb9
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2581'
 ht-degree: 1%
 
 ---
@@ -203,7 +203,7 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
 È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare una configurazione di archiviazione Elenco SharePoint in un modulo adattivo, effettua le seguenti operazioni:
 
-1. [Creare un modello dati modulo utilizzando la configurazione Elenco Microsoft® SharePoint](/help/forms/using/create-form-data-model.md)
+1. [Creare un modello di dati modulo con Microsoft](/help/forms/using/create-form-data-model.md)
 1. [Configurare il modello dati modulo per recuperare e inviare dati](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Creare un modulo adattivo](/help/forms/using/create-adaptive-form.md).
 1. [Configurare l’azione di invio utilizzando un modello dati modulo](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
