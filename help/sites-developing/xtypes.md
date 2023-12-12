@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 25c444e2093d118259925034e0d630ab0effc473
 workflow-type: tm+mt
-source-wordcount: '6381'
+source-wordcount: '3865'
 ht-degree: 0%
 
 ---
@@ -251,7 +251,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-  Il CustomContentPanel è un tipo speciale di pannello da utilizzare in [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): il suo contenuto viene recuperato da e inviato a un URL diverso rispetto agli altri campi nella finestra di dialogo.
+  CustomContentPanel è un pannello speciale da utilizzare in [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): il suo contenuto viene recuperato da e inviato a un URL diverso rispetto agli altri campi nella finestra di dialogo.
 
 * ciclo
 
@@ -293,7 +293,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
-  La finestra di dialogo è un tipo speciale di finestra con una maschera nel corpo e un gruppo di pulsanti nel piè di pagina. In genere viene utilizzato per modificare il contenuto, ma può anche visualizzare solo le informazioni.
+  La finestra di dialogo è una finestra speciale con una maschera nel corpo e un gruppo di pulsanti nel piè di pagina. In genere viene utilizzato per modificare il contenuto, ma può anche visualizzare solo le informazioni.
 
 * dialogfieldset
 
@@ -345,7 +345,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   La funzione FeedImporter consente all&#39;utente di importare feed RSS o Atom e di creare pagine per ogni voce di feed.
 
-* o in un altro campo
+* campo
 
   [CQ.Ext.form.Field](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Field)
 
@@ -413,7 +413,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  Fornisce un componente leggero dell’editor di HTML. Alcune funzioni della barra degli strumenti non sono supportate da Safari e, se necessario, verranno nascoste automaticamente. Queste sono riportate nelle opzioni di configurazione, se necessario.
+  Fornisce un componente leggero dell’editor di HTML. Alcune funzioni della barra degli strumenti non sono supportate da Safari e vengono automaticamente nascoste quando necessario. Queste sono riportate nelle opzioni di configurazione, se necessario.
 
   I pulsanti della barra degli strumenti dell’editor presentano descrizioni comandi definite nel [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor) proprietà.
 
@@ -463,7 +463,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-  CQ.Ext.list.ListView è un&#39;implementazione rapida e leggera di un [Griglia](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) come la vista.
+  CQ.Ext.list.ListView è un&#39;implementazione rapida e leggera di un [Simile a griglia](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) visualizzazione.
 
 * livecopyproperties
 
@@ -793,7 +793,7 @@ Di seguito sono elencati gli xtype disponibili in Adobe Experience Manager:
 
   [CQ.wcm.Statistics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-  Le statistiche visualizzano le impression della pagina sotto forma di grafico. Il widget consente di selezionare un periodo, le statistiche devono essere visualizzate per.
+  Le statistiche visualizzano le impression della pagina sotto forma di grafico. Il widget consente di selezionare un periodo per il quale visualizzare le statistiche.
 
 * archiviare
 
