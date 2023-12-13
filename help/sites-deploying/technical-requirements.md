@@ -3,9 +3,9 @@ title: Requisiti tecnici
 description: Elenco delle piattaforme client e server supportate per Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3624'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,9 @@ Adobe consiglia queste configurazioni e fornisce supporto completo come parte de
 
 ## Piattaforme supportate {#supported-platforms}
 
-### Macchine virtuali Java™ {#java-virtual-machines}
+### Java™ Virtual Machine {#java-virtual-machines}
 
-Il applicazione richiede l&#39;esecuzione di una macchina virtuale Java, fornita dalla distribuzione Java™™ Development Kit (JDK).
+L’applicazione richiede una macchina virtuale Java™ da eseguire, fornita dalla distribuzione Java™ Development Kit (JDK).
 
 Adobe Experience Manager funziona con le seguenti versioni di Java™ Virtual Machines:
 
@@ -112,10 +112,10 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 | **Piattaforma** | **Descrizione** | **Livello di supporto** |
 |---|---|---|
 | **File system con file TAR** `[1]` | Archivio | R: Supportato |
-| **File system con archivio dati** `[1]` | Binari | R: Supportato |
-| Memorizza i file binari nei file TAR sul file system `[1]` | File binari | Z: Non supportato per la produzione |
+| **File system con archivio dati** `[1]` | File binari | R: Supportato |
+| Memorizza i file binari nei file TAR sul file system `[1]` | Binari | Z: non supportato per la produzione |
 | Amazon S3 | Binari | R: Supportato |
-| Archiviazione BLOB di Microsoft® Azure | Binari | R: Supportato |
+| Archiviazione BLOB di Microsoft® Azure | File binari | R: Supportato |
 | MongoDB Enterprise 4.4 | Archivio | R: Supportato `[2, 3, 4]` |
 | MongoDB Enterprise 4.2 | Archivio | R: Supportato `[2, 3, 4]` |
 | MongoDB Enterprise 4.0 | Archivio | Z: non supportato |
@@ -158,23 +158,23 @@ Per ulteriori informazioni, vedere [Pagina MongoDB per Adobe Experience Manager]
 >
 I database relazionali supportati elencati sopra sono software di terze parti e non sono inclusi nel pacchetto di licenze AEM.
 >
-Per eseguire AEM 6.5 con un database relazionale supportato, è necessario un contratto di supporto separato con un fornitore di database. L’Assistenza clienti Adobe assiste i problemi qualificati relativi all’utilizzo di database relazionali con AEM 6.5.
+Per eseguire AEM 6.5 con un database relazionale supportato, è necessario un contratto di supporto separato con un fornitore di database. Adobe Systems Customer Care assiste i problemi qualificanti relativi all&#39;utilizzo dei database relazionali con AEM 6.5.
 >
-**La maggior parte dei database relazionali sono attualmente supportati al livello R su AEM 6.5, che viene fornito con criteri di supporto e un programma di supporto come indicato nella descrizione del livello R precedente.**
+**La maggior parte dei database relazionali sono attualmente supportati all&#39;interno di Level-R su AEM 6.5, che viene fornito con criteri di supporto e un programma di supporto come indicato nella descrizione di Level-R sopra.**
 
 ### Motori servlet/Application server {#servlet-engines-application-servers}
 
-Adobe Experience Manager può essere eseguito come server autonomo (il file JAR quickstart) o come applicazione web all&#39;interno di un server applicazione di terze parti (il file WAR).
+Adobe Experience Manager può essere eseguito come server autonomo (il file JAR quickstart) o come applicazione web all&#39;interno di un server applicazioni di terze parti (il file WAR).
 
 La versione minima dell’API Servlet richiesta è Servlet 3.1
 
 | Platform | Livello di supporto |
 |---|---|
 | **Motore servlet integrato Quickstart (Jetty 9.4)** | R: Supportato |
-| Oracle Server WebLogic 12.2 (12cR2) | Z: non supportato |
+| Oracle WebLogic Server 12.2 (12cR2) | Z: non supportato |
 | IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) con Web Profile 7.0 e IBM® JRE 1.8 | R: Supporto limitato per i nuovi contratti `[2]` |
 | IBM® WebSphere® Application Server 9.0 e IBM® JRE 1.8 | R: Supporto limitato per i nuovi contratti `[1]` `[2]` |
-| Apache Tomcat 8.5.x | R: Sostegno limitato per i nuovi contratti `[2]` |
+| Apache Tomcat 8.5.x | R: Supporto limitato per i nuovi contratti `[2]` |
 | JBoss® EAP 7.2.x con JBoss® Application Server | Z: non supportato |
 | JBoss® EAP 7.1.4 con JBoss® Application Server | R: Supporto limitato per i nuovi contratti `[1]` `[2]` |
 | JBoss® EAP 7.0.x con JBoss® Application Server | Z: non supportato |
@@ -203,21 +203,22 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 1. AEM Forms è supportato su Ubuntu 20.04 LTS.
 1. Distribuzione Linux® supportata da Adobe Managed Services.
 
-   >[NOTA!]
-Per i server basati su Linux (stack OSGI e JEE), il componente aggiuntivo AEM Forms richiede dipendenze di runtime come:
+   >[!NOTE]
+   >
+   Per i server basati su Linux (stack OSGI e JEE), il componente aggiuntivo AEM Forms richiede dipendenze di runtime come:
    * glibc.x86_64 (2,17-196)
    * libX11.x86_64 (1.6.7-4)
    * zlib.x86-64 (1.2.7-17)
    * libxcb.x86_64 (1,13-1,el7)
    * libXau.x86_64 (1.0.8-2.1.el7)
 
-1. Le distribuzioni di produzione di Microsoft® Windows sono supportate per i clienti che eseguono l’aggiornamento a 6.5 e per l’utilizzo non di produzione. Le nuove implementazioni sono su richiesta per AEM Sites e Assets.
-1. AEM Forms è supportato su Microsoft® Window Server senza le restrizioni R di livello di supporto.
+1. Le distribuzioni di produzione di Microsoft® Windows sono supportate per i clienti che eseguono l&#39;aggiornamento alla versione 6.5 e per l&#39;utilizzo non di produzione. Nuovo distribuzioni sono on-richiesta per AEM Sites e Assets.
+1. AEM Forms è supportato in Microsoft® Windows Server senza le restrizioni del livello di supporto R.
 1. AEM Forms rimosso il supporto per Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
-Se si installa AEM Forms 6.5, assicurarsi di aver installato il seguente ridistribuibile a 32 bit di Microsoft® Visual c ++.
+Se stai installando AEM Forms 6.5, assicurati di aver installato il seguente Microsoft® Visual C++ a 32 bit ridistribuibile.
 >
 * Microsoft® Visual C++ 2008 ridistribuibile
 * Microsoft® Visual C++ 2010 ridistribuibile
@@ -226,7 +227,7 @@ Se si installa AEM Forms 6.5, assicurarsi di aver installato il seguente ridistr
 * Microsoft® Visual C++ 2019 (VC14.28 o versione successiva) ridistribuibile
 
 
-### Ambienti di elaborazione virtuali e cloud {#virtual-cloud-computing-environments}
+### Ambienti virtuali e cloud computing {#virtual-cloud-computing-environments}
 
 Adobe Experience Manager è supportato in esecuzione in una macchina virtuale in ambienti di cloud computing. Questi ambienti includono as Microsoft® Azure e Amazon Web Services (AWS), in esecuzione in conformità ai requisiti tecnici elencati in questa pagina e in base ai termini di supporto standard di Adobe.
 
@@ -234,9 +235,9 @@ Per un ambiente nativo per il cloud, consulta l’offerta più recente della lin
 
 Adobe offre anche Adobe Managed Services per distribuire l’AEM su Azure o AWS. Adobe Managed Services fornisce agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare l’AEM in questi ambienti di cloud computing. Consulta [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-In tutti gli altri casi di distribuzione di AEM in Azure o AWS o in qualsiasi altro ambiente cloud computing, il supporto da Adobe Systems è contenuto nell&#39;ambiente di calcolo virtuale. Tale ambiente virtuale deve essere eseguito in conformità con le specifiche tecniche elencate in questa pagina. Qualsiasi problema segnalato relativo all AEM esecuzione in uno di questi ambienti cloud deve essere riproducibile indipendentemente da qualsiasi servizio cloud specifico dell&#39;ambiente cloud computing. A meno che il servizio cloud non sia supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio Archiviazione BLOB di Azure o AWS S3.
+In tutti gli altri casi di distribuzione di AEM in Azure, AWS o in qualsiasi altro ambiente di cloud computing, il supporto di Adobe è contenuto nell’ambiente di elaborazione virtuale. L’ambiente virtuale deve essere eseguito in conformità alle specifiche tecniche elencate in questa pagina. Qualsiasi problema relativo all’AEM in esecuzione in uno di questi ambienti cloud deve essere riproducibile indipendentemente da qualsiasi servizio cloud specifico per l’ambiente di cloud computing. Questo a meno che il servizio cloud non sia supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio archiviazione BLOB di Azure o AWS S3.
 
-Per consigli su come distribuire AEM in Azure o AWS, al di fuori di Adobe Systems Managed Services, Adobe Systems consiglia di collaborare direttamente con il provider di cloud. Oppure, collaborando con partner Adobi che supportano l’implementazione dell’AEM nell’ambiente cloud di tua scelta. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura in modo da soddisfare specifici requisiti di prestazioni, carico, scalabilità e sicurezza.
+Per raccomandazioni su come distribuire l’AEM in Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, collaborando con partner Adobi che supportano l’implementazione dell’AEM nell’ambiente cloud di tua scelta. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura in modo da soddisfare specifici requisiti di prestazioni, carico, scalabilità e sicurezza.
 
 ### Piattaforme di Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
@@ -250,10 +251,10 @@ I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4
 | Microsoft® IIS 10 (Internet Information Server) | R: Supportato |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: Non supportato |
 
-1. I server Web costruiti sulla base del codice sorgente httpd di Apache hanno lo stesso supporto della versione di httpd su cui è basato. In caso di dubbi, chiedere all&#39;Adobe di confermare il livello di supporto relativo al rispettivo prodotto server. I seguenti casi:
+1. I server Web costruiti sulla base del codice sorgente httpd di Apache hanno lo stesso supporto della versione di httpd su cui è basato. In caso di dubbio, chiedere Adobe Systems conferma del livello di supporto relativo al rispettivo prodotto server. I seguenti casi:
 
-   1. Il server HTTP è stato costruito utilizzando solo distribuzioni ufficiali di origine Apache, oppure
-   1. Il server HTTP è stato recapitato come parte del sistema operativo su cui è in esecuzione. Esempi: IBM® HTTP Server, Oracle HTTP Server
+   1. Il server HTTP è stato creato utilizzando solo le distribuzioni di origine ufficiali di Apache oppure
+   1. Il server HTTP è stato distribuito come parte del sistema operativo in cui è in esecuzione. Esempi: IBM® HTTP Server, Oracle HTTP Server
 
 1. Dispatcher non è disponibile per Apache 2.4.x per sistemi operativi Windows.
 
@@ -299,7 +300,7 @@ Mozilla Firefox, Google Chrome e Microsoft® Edge vengono rilasciati aggiornamen
    <td>R: Supportato</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox ultimo ESR [1]</td>
+   <td>Mozilla Firefox ultima ESR [1]</td>
    <td>R: Supportato</td>
    <td>R: Supportato</td>
   </tr>
@@ -367,7 +368,7 @@ Quando è necessario specificare un indirizzo IP, è possibile selezionare (a se
 
 ### Requisiti per AEM Dynamic Media componente aggiuntivo {#requirements-for-aem-dynamic-media-add-on}
 
-Il Dynamic Medie AEM è disattivato per impostazione predefinita. Consulta qui per [abilita Dynamic Medie](/help/assets/config-dynamic.md#enabling-dynamic-media).
+AEM Dynamic Media è disattivato per impostazione predefinita. Consulta qui per [abilita Dynamic Medie](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 Con Dynamic Medie abilitato, si applicano i seguenti requisiti tecnici aggiuntivi.
 
@@ -407,9 +408,9 @@ Se la lingua è impostata in modo che LC_CTYPE non sia uguale a `en_US.UTF-8`, i
 >
 **Architettura NUMA:** I sistemi con processori basati su AMD64 e Intel® EM64T sono generalmente configurati come piattaforme NUMA (Non-Uniform Memory Architecture). In altre parole, il kernel costruisce più nodi di memoria in fase di avvio anziché costruire un singolo nodo di memoria.
 >
-Il costrutto a più nodi può causare esaurimento della memoria su uno o più nodi prima che gli altri nodi si esauriscano. Quando si verifica esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server immagini o il server di Platform) anche se è disponibile memoria.
+Il costrutto a nodi multipli può causare l&#39;esaurimento della memoria su uno o più nodi prima che altri si esauriscano. Quando si verifica l&#39;esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server Immagine o il server Platform) lineare se c&#39;è memoria disponibile.
 >
-Pertanto, Adobe consiglia di disattivare NUMA utilizzando il **numa=off** opzione di avvio per evitare che il kernel uccida questi processi.
+Pertanto, Adobe Systems consiglia che se si esegue un sistema di questo tipo si disattivi NUMA utilizzando l&#39;opzione di **avvio numa=off** per evitare che il kernel uccida questi processi.
 
 >[!NOTE]
 >

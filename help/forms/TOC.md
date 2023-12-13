@@ -9,9 +9,9 @@ breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
 feature: Forms Service
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3762'
+source-wordcount: '3765'
 ht-degree: 3%
 
 ---
@@ -699,7 +699,7 @@ ht-degree: 3%
    + [Impossibile ripristinare l’archivio CRX](/help/forms/using/restore-crx-repository.md)
    + [Errori di servizio non disponibile dopo l’installazione del service pack AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Problema di installazione del service pack AEM Forms JEE 6.5.15.0 nell’ambiente JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [Esecuzione di più servizi anche se AEM Forms non è stato avviato completamente](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+   + [Elaborazione di documenti anche se il server AEM Forms non è completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
    + [Impossibile utilizzare il servizio di output, il servizio Forms o il servizio Document of Record (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Documentazione legacy {#legacy-documentation}
    + [Utilizzo del servizio Execute Script in AEM Forms su JEE Workbench per generare dati XML](developing/building-xml.md)
