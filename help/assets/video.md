@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: c30630f0cd561256414a2883d29c9ee4be470ce1
 workflow-type: tm+mt
-source-wordcount: '11310'
+source-wordcount: '11187'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ Per la gestione di set video singoli e adattivi, sono supportati i seguenti elem
 
 Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta [Guida di riferimento per i visualizzatori di Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
-Dynamic Medie supporta la riproduzione di video per dispositivi mobili per video MP4 H.264. È possibile trovare i dispositivi BlackBerry® che supportano questo formato video al seguente indirizzo: [Formati video supportati su BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Medie supporta la riproduzione di video per dispositivi mobili per video MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
 I dispositivi Windows che supportano questo formato video sono disponibili nei seguenti percorsi: [Codec multimediali supportati per Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
 
@@ -876,15 +876,15 @@ Consulta [Distribuisci contenuti statici (non immagine)](https://experienceleagu
 
    Consulta [WebVTT: formato per tracce di testo video Web](https://w3c.github.io/webvtt/).
 
-   Esistono strumenti e servizi gratuiti e premium che puoi utilizzare per creare file di sottotitoli/sottotitoli al di fuori di Dynamic Medie. Ad esempio, per creare un file di sottotitoli video semplice senza stile, potete utilizzare il seguente strumento di creazione e modifica di sottotitoli online gratuito:
+   Esistono molti siti Web che offrono sia strumenti e servizi gratuiti che premium che è possibile utilizzare per creare file di sottotitoli/sottotitoli WebVTT al di fuori di Dynamic Medie. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
-   [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   Per ottenere risultati ottimali, utilizza lo strumento in Internet Explorer 9 o versioni successive, Google Chrome o Safari.
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   Nello strumento, nella sezione **[!UICONTROL Inserisci l’URL del file video]** , incollare l&#39;URL copiato del file video e quindi fare clic su **[!UICONTROL Carica]**. Consulta [Ottenere un URL per una risorsa](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) per ottenere l’URL del file video stesso che puoi incollare nel file **[!UICONTROL Immetti l’URL del campo del file video]**. A quel punto, Internet Explorer, Chrome o Safari possono riprodurre il video in modalità nativa.
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
-   Ora segui le istruzioni visualizzate sul sito per creare e salvare il file WebVTT. Al termine, copiare il contenuto del file di didascalia e incollarlo in un editor di testo normale e salvarlo con un `.vtt` estensione del nome file.
+   Seguire le istruzioni visualizzate da un sito per creare e salvare il file WebVTT. Al termine, copiare il contenuto del file di didascalia e incollarlo in un editor di testo normale e salvarlo con un `.vtt` estensione del nome file.
 
    >[!NOTE]
    >
