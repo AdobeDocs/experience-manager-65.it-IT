@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
+source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4270'
 ht-degree: 1%
 
 ---
@@ -211,8 +211,9 @@ a
 * L’ordinamento dei tag viene modificato in modo casuale in PDF, anche l’assegnazione tag in Forms Designer è corretta. (LC-3921313) 
 * Un elenco non viene visualizzato correttamente nei tag di Adobe Acrobat Reader o Adobe Acrobat DC. (LC-3921306)
 * I livelli di intestazione assegnati correttamente in Forms Designer vengono modificati in modo casuale in `<P>` in Adobe Acrobat. (LC-3921305) 
-* In una tabella, l&#39;ID di un oggetto non può essere modificato dopo l&#39;assegnazione. (LC-3921134) 
-* Se nella tabella sono presenti celle unite, non è disponibile alcuna interfaccia grafica per l&#39;impostazione dell&#39;estensione (riga e colonna) e dell&#39;ambito in una tabella complessa in AEM Forms Designer. (LC-3919532) 
+* In una tabella non è possibile modificare l&#39;ID di un oggetto assegnato. (LC-3921134) 
+* Se nella tabella sono presenti celle unite, non è disponibile alcuna interfaccia grafica per l&#39;impostazione dell&#39;estensione (riga e colonna) e dell&#39;ambito in una tabella complessa in AEM Forms Designer. (LC-3919532)
+  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
 
 ### Foundation{#foundation-6519}
 
@@ -517,8 +518,9 @@ Per risolvere il problema, individuare `<AEM_Forms_Installation_dir>\jboss\bin\s
 * Quando viene pubblicato un modulo adattivo, tutte le sue dipendenze, inclusi i criteri, vengono ripubblicate, anche se non sono state apportate modifiche. (FORMS-10454)
 * Quando un utente seleziona di configurare un campo per la prima volta in un modulo adattivo, l’opzione per salvare una configurazione non viene visualizzata nel Browser proprietà. Per risolvere il problema, fai clic su per configurare un altro campo del modulo adattivo nello stesso editor.
 * Quando gli utenti eseguono l’azione di invio, l’invio non riesce e viene visualizzato un errore:
-  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Per risolvere il problema: [ricompilare gli script Sling come JSP™ Java e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+  `javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Per risolvere il problema: [ricompilare gli script Sling come JSP, Java e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* Quando un utente cerca di selezionare un font per i propri documenti PDF in Adminui nel percorso Home > Servizi > PDF Generator > Impostazioni Adobe PDF, l’elenco dei font risulta vuoto. L’utente non è in grado di aggiungere font agli elenchi &quot;Always embed&quot; (Sempre incorpora) e &quot;Never embed&quot; (Mai incorporare). (FORMS-12095)
 
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
