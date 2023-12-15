@@ -2,10 +2,10 @@
 title: Istruzioni di installazione delle patch AEM Forms per AEM Forms
 description: Istruzioni di installazione del service pack di AEM Forms per l’ambiente OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
+source-git-commit: b9c204955a9858a70a8c3286dcc3e58c3666f88f
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 5%
+source-wordcount: '1714'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 | Prodotto | Forms Adobe Experience Manager 6.5 |
 |---|---|
-| Versione | 6.5.19.0 (OSGi) 6.5.19.0 (JEE) |
+| Versione | 6.5.19.0 (OSGi) 6.5.19.1 (JEE) |
 | Tipo | Versione Service Pack |
 | Data | 8 dicembre 2023 |
 | URL di download | [Ultime versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
@@ -65,9 +65,6 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2 Scaricare il software richiesto
 
 * [AEM Forms su JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-
-Sono state segnalate vulnerabilità di sicurezza critiche per Struts 2 RCE, un framework di applicazioni web popolare e open-source per lo sviluppo di applicazioni web Java EE. Adobe ha rilasciato AEM 6.5 Service Pack 19.1 (6.5.19.1) per risolvere la vulnerabilità in AEM Forms su JEE.
-
 * [Service Pack AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it)
 * [Pacchetto del componente aggiuntivo Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [Servlet frammento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
