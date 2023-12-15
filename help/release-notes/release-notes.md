@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
+source-git-commit: b5ecac71b07bfceb2708f20fe50965dec25e2194
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4259'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ a
 * La selezione di più tipi di file di documento nel filtro del tipo di risorsa non funziona nella console della pagina. Nessun risultato viene trovato anche se sono disponibili i risultati di un particolare tipo di file. Di conseguenza, gli autori non sono in grado di filtrare più documenti. Devono utilizzare più tipi di documenti e devono filtrarli uno alla volta. (SITES-14047)
 * Dopo aver aggiornato un’istanza da AEM 6.5.17 e AEM 6.5.18, dall’interno dell’Editor pagina, se hai selezionato **[!UICONTROL Pubblica pagina]**, viene reindirizzato a un URL che non esiste. L’utente deve essere reindirizzato alla procedura guidata di pubblicazione. (SITES-15856)
 * Copia ridondante dagli Appunti AEM durante un&#39;operazione Incolla dagli Appunti del sistema operativo. (SITES-15704)
-* In Assets, selezione **[!UICONTROL Documenti]**, quindi sotto **[!UICONTROL Filtertype]**, selezione **[!UICONTROL Microsoft® Word]** o **[!UICONTROL Microsoft® Excel]** non mostra alcun risultato anche se esistono file di entrambi i tipi. (SITES-14837)
+* In Assets, selezione **[!UICONTROL Documenti]**, quindi sotto **[!UICONTROL Filtertype]**, selezione **[!UICONTROL Microsoft®® Word]** o **[!UICONTROL Microsoft®® Excel]** non mostra alcun risultato anche se esistono file di entrambi i tipi. (SITES-14837)
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -519,9 +519,9 @@ Per risolvere il problema, individuare `<AEM_Forms_Installation_dir>\jboss\bin\s
 * Quando un utente seleziona di configurare un campo per la prima volta in un modulo adattivo, l’opzione per salvare una configurazione non viene visualizzata nel Browser proprietà. Per risolvere il problema, fai clic su per configurare un altro campo del modulo adattivo nello stesso editor.
 * Quando gli utenti eseguono l’azione di invio, l’invio non riesce e viene visualizzato un errore:
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Per risolvere il problema: [ricompilare gli script Sling come JSP, Java e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
-* Quando un utente cerca di selezionare un font per i propri documenti PDF in Adminui nel percorso Home > Servizi > PDF Generator > Impostazioni Adobe PDF, l’elenco dei font risulta vuoto. L’utente non è in grado di aggiungere font agli elenchi &quot;Always embed&quot; (Sempre incorpora) e &quot;Never embed&quot; (Mai incorporare). (FORMS-12095)
-
+Per risolvere il problema: [ricompilare gli script Sling come JSP™ Java e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* Dopo aver installato AEM Service Pack 6.5.14.0 e versioni successive, gli utenti non sono in grado di selezionare un font dall’interfaccia utente di amministrazione di JEE per i documenti PDF quando passano a `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, poiché l&#39;elenco dei caratteri appare vuoto. (FORMS-12095)
+  <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
