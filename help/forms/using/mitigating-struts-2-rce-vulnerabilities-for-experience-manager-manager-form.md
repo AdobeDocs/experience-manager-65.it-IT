@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 5f5fcc10927d62cdfaeb0770c34052ceda02b2e8
+source-git-commit: e42d01f1e5e44b12b755c20f826331ddbad8ab58
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '524'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Problema  
 
-Sono state segnalate vulnerabilità di sicurezza critiche per Struts 2 RCE, un framework di applicazioni web popolare e open-source per lo sviluppo di applicazioni web Java EE. Sono state analizzate le seguenti vulnerabilità:
+Sono state segnalate vulnerabilità di sicurezza critiche per Struts 2, un framework di applicazioni web popolare e open-source per lo sviluppo di applicazioni web Java EE. Sono state analizzate le seguenti vulnerabilità:
 
 | Vulnerabilità | Che cosa è interessato? | Cosa non è interessato? |
 |---|---|---|
@@ -48,7 +48,8 @@ La tabella seguente elenca la risoluzione per tutte le versioni interessate:
 1. Apri la finestra del terminale e passa alla cartella contenente i file estratti.
 1. Usate lo strumento patch manuale per cercare, elencare e sostituire tutti i file jar struts2. Lo strumento richiede la connettività Internet in quanto scarica le dipendenze in fase di esecuzione. Quindi, prima di eseguire lo strumento, assicurarsi di essere connessi a Internet.
 
-Per cercare e sostituire il file jar struts2-core-2.5.30 e struts2-core.jar:
+Per cercare e sostituire `struts2-core-2.5.30.jar` e `struts2-core.jar` file:
+
 
 
 >[!BEGINTABS]
@@ -57,19 +58,26 @@ Per cercare e sostituire il file jar struts2-core-2.5.30 e struts2-core.jar:
 
 1. Esegui il comando seguente per elencare tutti i file jar struts2. Prima di eseguire il comando, sostituisci il percorso nel comando con il percorso del server AEM Forms:
 
+
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando. Sostituisci il percorso nel comando con il percorso del server AEM Forms e il `struts2-core-2.5.33.jar` file.
+1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando, sostituisci il percorso nel comando con il percorso del server AEM Forms e `struts2-core-2.5.33.jar` file.
+
 
 
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
    
    
-   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
+   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar        
    ```
+
+   I passaggi precedenti consentono di applicare la patch ai file EAR contenenti `struts2-core-2.5.30.jar` e `struts2-core.jar` file.
+
+1. Annullare la distribuzione dell&#39;EAR precedente e distribuire il file EAR con patch sul server applicazioni.
+
 
 1. Avvia il server AEM Forms.
 
@@ -78,18 +86,24 @@ Per cercare e sostituire il file jar struts2-core-2.5.30 e struts2-core.jar:
 
 1. Esegui il comando seguente per elencare tutti i file jar struts2. Prima di eseguire il comando, sostituisci il percorso nel comando con il percorso del server AEM Forms:
 
+
    ```
-   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   patch-archive.sh -root=/Users/labuser/Adobe.Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
 1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando, sostituisci il percorso nel comando con il percorso del server AEM Forms e `struts2-core-2.5.33.jar` file.
 
+
    ```
-   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
+   patch-archive.sh -root=/Users/labuser/Adobe/Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$ -action=replace /temp/struts2-core-2.5.33.jar
    
    
-   patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.jar -action=replace \Users\labuser\Desktop\struts2-core.jar
+   patch-archive.sh -root=/Users/labuser/Desktop/check -pattern=.*struts2-core.jar$ -action=replace /Users/labuser/Desktop/struts2-core.jar
    ```
+
+   I passaggi precedenti consentono di applicare la patch ai file EAR contenenti `struts2-core-2.5.30.jar` e `struts2-core.jar` file.
+
+1. Annullare la distribuzione dell&#39;EAR precedente e distribuire il file EAR con patch sul server applicazioni.
 
 1. Avvia il server AEM Forms.
 
