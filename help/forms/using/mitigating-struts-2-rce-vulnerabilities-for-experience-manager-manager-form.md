@@ -1,20 +1,20 @@
 ---
-title: Mitigazione delle vulnerabilità RCE Struts 2 per Experience Manager Forms su JEE
-description: Mitigazione delle vulnerabilità RCE Struts 2 per Experience Manager Forms su JEE
+title: Mitigazione delle vulnerabilità di Struts 2 per Experience Manager Forms su JEE
+description: Mitigazione delle vulnerabilità di Struts 2 per Experience Manager Forms su JEE
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
+source-git-commit: 5f5fcc10927d62cdfaeb0770c34052ceda02b2e8
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
 
 
-# Mitigazione delle vulnerabilità RCE Struts 2 per Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
+# Mitigazione delle vulnerabilità Struts 2 per Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## Problema  
 
@@ -46,20 +46,22 @@ La tabella seguente elenca la risoluzione per tutte le versioni interessate:
    * patch-archive.bat
    * patch-archive.sh
 1. Apri la finestra del terminale e passa alla cartella contenente i file estratti.
-1. Usate lo strumento patch manuale per cercare, elencare e sostituire tutti i file jar struts2. Per cercare e sostituire il file jar struts2-core-2.5.30 e struts2-core.jar:
+1. Usate lo strumento patch manuale per cercare, elencare e sostituire tutti i file jar struts2. Lo strumento richiede la connettività Internet in quanto scarica le dipendenze in fase di esecuzione. Quindi, prima di eseguire lo strumento, assicurarsi di essere connessi a Internet.
+
+Per cercare e sostituire il file jar struts2-core-2.5.30 e struts2-core.jar:
 
 
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. Esegui il comando seguente per elencare tutti i file jar struts2. Prima di eseguire il comando, sostituisci il percorso nel comando precedente con il percorso del server AEM Form:
+1. Esegui il comando seguente per elencare tutti i file jar struts2. Prima di eseguire il comando, sostituisci il percorso nel comando con il percorso del server AEM Forms:
 
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando. Sostituisci il percorso nel comando precedente con il percorso del server del modulo AEM e il `struts2-core-2.5.33.jar` file.
+1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando. Sostituisci il percorso nel comando con il percorso del server AEM Forms e il `struts2-core-2.5.33.jar` file.
 
 
    ```
@@ -74,13 +76,13 @@ La tabella seguente elenca la risoluzione per tutte le versioni interessate:
 
 >[!TAB Linux]
 
-1. Esegui il comando seguente per elencare tutti i file jar struts2. Prima di eseguire il comando, sostituisci il percorso nel comando precedente con il percorso del server AEM Form:
+1. Esegui il comando seguente per elencare tutti i file jar struts2. Prima di eseguire il comando, sostituisci il percorso nel comando con il percorso del server AEM Forms:
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando Sostituisci il percorso nel comando precedente con il percorso del server AEM Form e il `struts2-core-2.5.33.jar` file.
+1. Eseguire i seguenti comandi nell&#39;ordine elencato per la sostituzione diretta ricorsiva. Prima di eseguire il comando, sostituisci il percorso nel comando con il percorso del server AEM Forms e `struts2-core-2.5.33.jar` file.
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
