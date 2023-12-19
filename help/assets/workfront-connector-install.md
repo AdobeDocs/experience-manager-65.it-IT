@@ -5,10 +5,10 @@ role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
+source-git-commit: 80cb3f696fb9050bb2135d2cd0c8f0be47272fa7
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 4%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Un utente con accesso amministratore in [!DNL Adobe Experience Manager] installa
 >
 >* Adobe può rilasciare aggiornamenti a [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] che rendono questo connettore ridondante; in tal caso, i clienti potrebbero dover passare dall’utilizzo di questo connettore.
 >
->* Adobe supporta le versioni migliorate del connettore 1.7.4 e successive. Le versioni precedenti prerelease e personalizzate non sono supportate. Per verificare la versione del connettore avanzato, passare alla `digital.hoodoo` gruppo disponibile nel riquadro a sinistra in [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it).
+>* Adobe supporta le versioni migliorate del connettore 1.7.4 e successive. Le versioni precedenti prerelease e personalizzate non sono supportate. Per verificare la versione del connettore avanzato, passare alla `digital.hoodoo` gruppo disponibile nel riquadro a sinistra in [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
 >
 >* Consulta [Connettore avanzato per la certificazione dei partner per Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Per informazioni sull&#39;esame, vedere [Guida all’esame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -46,6 +46,10 @@ Per installare il connettore, effettua le seguenti operazioni:
 
 1. Installare il pacchetto utilizzando [!UICONTROL Gestione pacchetti]. Per informazioni su come installare i pacchetti, consulta [Documentazione di Gestione pacchetti](/help/sites-administering/package-manager.md).
 1. Crea `wf-workfront-users` in [!DNL Experience Manager] Gruppo di utenti e assegnazione dell’autorizzazione `jcr:all` a `/content/dam`.
+1. Aggiungi una proprietà personalizzata alla definizione predefinita dell’indice per **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. Esegui i seguenti passaggi:
+   * Aggiungi un **`nt:unstructured`** proprietà denominata **`wfReferenceNumber`** a:
+     `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
+   * Reindicizza `index /oak:index/ntFolderDamLucene` capovolgendo il flag di reindicizzazione su `true`.
 
 Un utente di sistema `workfront-tools` viene creato automaticamente e le autorizzazioni richieste vengono gestite automaticamente. Tutti gli utenti da [!DNL Workfront] che utilizzano il connettore vengono aggiunti automaticamente come parte di questo gruppo.
 
@@ -53,7 +57,7 @@ Un utente di sistema `workfront-tools` viene creato automaticamente e le autoriz
 
 Per creare una connessione con Workfront, effettua le seguenti operazioni:
 
-1. In entrata [!DNL Experience Manager], seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]**.
+1. In entrata [!DNL Experience Manager], seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione strumenti Workfront]**.
 
 1. Seleziona `workfront-tools` nel pannello a sinistra e seleziona **[!UICONTROL Crea]** in alto a destra.
 
