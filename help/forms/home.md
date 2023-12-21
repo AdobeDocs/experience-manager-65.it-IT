@@ -2,10 +2,10 @@
 title: Guida di Adobe Experience Manager 6.5 Forms
 description: Utilizza questa guida AEM 6.5 per creare, gestire, pubblicare e aggiornare moduli digitali. Trova informazioni sull’installazione, l’aggiornamento e la configurazione dei moduli adattivi e sull’authoring di moduli adattivi.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 22%
+source-wordcount: '286'
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,6 @@ Utilizza questa guida AEM 6.5 per creare, gestire, pubblicare e aggiornare modul
 | [Note sulla versione](/help/release-notes/home.md) | Fornisce informazioni importanti sull’ultima versione dell’AEM, tra cui le novità, le piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti |
 | [Guida utente di Assets](/help/assets/home.md) | Scopri come creare, gestire, distribuire e ottimizzare le risorse digitali. |
 | [Guida utente di Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
-| [Guida utente di Communities](/help/communities/home.md) | Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. |
 | [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare l’AEM |
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida spiega i concetti relativi all’authoring in AEM. |
 | [Guida all’authoring dell’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida spiega i concetti relativi all’authoring in AEM nell’interfaccia utente classica. |
@@ -42,7 +41,6 @@ Utilizza questa guida AEM 6.5 per creare, gestire, pubblicare e aggiornare modul
 | [Guida utente sullo sviluppo](/help/sites-developing/home.md) | Scopri come creare l’istanza AEM. |
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
 | [Guida utente di Commerce](/help/commerce/home.md) | Scopri la Commerce integration framework sull’AEM. |
-| [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
 
 ## Risorse chiave per l’AEM
 

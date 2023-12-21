@@ -2,10 +2,10 @@
 title: Guida utente all’amministrazione di AEM 6.5
 description: Scopri come somministrare AEM 6.5. Queste guide descrivono le funzioni del sito, le operazioni di distribuzione, le funzioni di sicurezza, la personalizzazione, l’integrazione e altro ancora.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 30%
+source-wordcount: '251'
+ht-degree: 16%
 
 ---
 
@@ -27,7 +27,6 @@ Scopri come somministrare AEM 6.5. Queste guide descrivono le funzioni del sito,
 | [Note sulla versione](/help/release-notes/home.md) | Fornisce informazioni importanti sull’ultima versione dell’AEM, tra cui le novità, le piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti. |
 | [Guida utente di Assets](/help/assets/home.md) | Scopri come creare, gestire, distribuire e ottimizzare le risorse digitali. |
 | [Guida utente di Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
-| [Guida utente di Communities](/help/communities/home.md) | Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. |
 | [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare l’AEM |
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida spiega i concetti relativi all’authoring in AEM. |
 | [Guida all’authoring dell’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida spiega i concetti relativi all’authoring in AEM nell’interfaccia utente classica. |
@@ -35,14 +34,13 @@ Scopri come somministrare AEM 6.5. Queste guide descrivono le funzioni del sito,
 | [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base dell’AEM. |
 | [Guida utente sullo sviluppo](/help/sites-developing/home.md) | Scopri come creare l’istanza AEM. |
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
-| [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework sull’AEM. |
-| [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
+| [Guida utente di Commerce](/help/commerce/home.md) | Scopri la Commerce integration framework sull’AEM. |
 
 ## Risorse chiave per l’AEM
 
 * [Tutorial su AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guida utente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
-* [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
+* [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it)
 * [Guida utente dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
 * [Preparazione al RGPD](/help/managing/data-protection-and-privacy.md)

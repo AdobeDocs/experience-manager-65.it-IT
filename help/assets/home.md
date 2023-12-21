@@ -5,10 +5,10 @@ user-guide-title: Guida di Assets
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 24%
+source-wordcount: '250'
+ht-degree: 11%
 
 ---
 
@@ -28,17 +28,14 @@ Creazione, gestione, elaborazione e distribuzione di risorse digitali in Experie
 |--- |---|
 | [Note sulla versione](/help/release-notes/home.md) | Fornisce informazioni importanti sulla versione più recente, tra cui le novità, le piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti |
 | [Guida utente di Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
-| [Guida utente di Communities](/help/communities/home.md) | Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. |
-| [Guida all’amministrazione](/help/sites-administering/home.md) | Scopri come amministrare Adobe Experience Manager. |
+| [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare Adobe Experience Manager. |
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida spiega i concetti di authoring in Experience Manager. |
 | [Guida all’authoring dell’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida descrive i concetti relativi all’authoring descritti in Experience Manager nell’interfaccia utente classica. |
 | [Guida utente di Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
 | [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di Experience Manager. |
 | [Guida utente sullo sviluppo](/help/sites-developing/home.md) | Scopri come creare la tua implementazione Experience Manager. |
 | [Guida utente alla gestione](/help/managing/home.md) | Questa guida descrive come gestire correttamente un progetto Experience Manager. |
-| [Guida utente di Commerce](/help/commerce/home.md) | Scopri Commerce Integration Framework su Experience Manager. |
-| [Guida utente di Mobile](/help/mobile/home.md) | Questa guida descrive come creare e gestire i contenuti per le applicazioni mobili. |
-
+| [Guida utente di Commerce](/help/commerce/home.md) | Scopri di più sulla Commerce integration framework su Experience Manager. |
 
 ## Chiave [!DNL Experience Manager] risorse
 
