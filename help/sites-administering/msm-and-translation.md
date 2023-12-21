@@ -1,19 +1,19 @@
 ---
-title: Amministrazione sito Web
-description: Scopri come gestire siti web multilingue utilizzando Adobe Experience Manager.
+title: Gestione multisito e traduzione
+description: Scopri come riutilizzare i contenuti all’interno del progetto e gestire siti web multilingue in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 32%
+source-wordcount: '365'
+ht-degree: 33%
 
 ---
 
-# Amministrazione sito Web{#website-administration}
+# Gestione multisito e traduzione {#msm-and-translation}
 
 Sono disponibili i seguenti strumenti di amministrazione per la gestione di siti web e pagine:
 
