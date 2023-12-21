@@ -4,12 +4,12 @@ description: Questo articolo elenca le scelte rapide da tastiera che possono ess
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 3%
+source-wordcount: '1192'
+ht-degree: 1%
 
 ---
 
@@ -28,8 +28,8 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 | Salva le modifiche nel browser Proprietà per il componente modulo adattivo selezionato | Ctrl+S | Comando+S |
 | Modifica regola per il componente modulo adattivo selezionato | CTRL+ALT+INVIO | Comando+Alt+Invio |
 | Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&amp;ast; |
-| Annulla l’ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
-| Ripristina l’ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
+| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
 | Selezione di più componenti | Maiusc+clic | Maiusc+clic |
 | Copia componente selezionato | Ctrl-C | Ctrl&amp;ast; |
 | Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&amp;ast; |
@@ -58,8 +58,8 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 |---|---|---|
 | Apri il browser Proprietà per il componente selezionato in un tema | ALT+INVIO | ALT+INVIO |
 | Chiude il browser Proprietà per il componente selezionato in un tema | Ctrl+Alt+W | Comando+Alt+W |
-| Annulla l’ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
-| Ripristina l’ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
+| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
 | Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&amp;ast; |
 
 >[!NOTE]
@@ -269,12 +269,12 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
    <th><strong>Collegamento a macOS</strong></th> 
   </tr>
   <tr>
-   <td><p>Aumenta la dimensione font </p> </td> 
+   <td><p>Aumentare la dimensione del carattere </p> </td> 
    <td><p>Ctrl+Maiusc+&gt;</p> </td> 
    <td>Ctrl+Maiusc+&gt;</td> 
   </tr>
   <tr>
-   <td><p>Riduce la dimensione font </p> </td> 
+   <td><p>Diminuire la dimensione del carattere </p> </td> 
    <td><p>Ctrl+Maiusc+&lt;</p> </td> 
    <td>Ctrl+Maiusc+&lt;</td> 
   </tr>

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -53,7 +53,7 @@ La tabella seguente specifica il supporto delle funzioni fornito per i moduli e 
   </tr>
   <tr>
    <td>Intestazioni/Piè di pagina </td>
-   <td>Funzione supportata. <br /> <br /> Poiché i moduli HTML5 per dispositivi mobili non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati una sola volta. È tuttavia possibile impostarli nel layout in modo che vengano visualizzati in più punti nell'anteprima dei moduli mobili.<br /> </td>
+   <td>Supportato. <br /> <br /> Poiché i moduli HTML5 per dispositivi mobili non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati una sola volta. È tuttavia possibile impostarli nel layout in modo che vengano visualizzati in più punti nell'anteprima dei moduli mobili.<br /> </td>
    <td>Supportato.</td>
   </tr>
   <tr>

@@ -6,11 +6,12 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 7%
+source-wordcount: '965'
+ht-degree: 3%
 
 ---
 
@@ -99,7 +100,7 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
 
       ![Aggiungere il codice sopra indicato alla riga 21](/help/forms/using/assets/code-to-enable-themes.png)
 
-   1. Salva e chiudi il file 
+   1. Salva e chiudi il file.
 
 1. Aggiorna il progetto per includere la versione più recente dei Componenti core di Forms:
 
@@ -115,7 +116,7 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
       >
       >* Se imposti un’altra topologia, accertati di aggiungere l’URL di invio, il precaricamento e altri URL al inserisco nell&#39;elenco Consentiti di Dispatcher a livello di Dispatcher.
 
-   1. Salva e chiudi il file 
+   1. Salva e chiudi il file.
 
 
 1. Dopo aver creato correttamente il progetto dell’Archetipo AEM, crea il pacchetto di distribuzione per il tuo ambiente. Per generare il pacchetto:
@@ -133,7 +134,7 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
 
    Una volta creato correttamente il progetto dell’Archetipo AEM, viene generato un pacchetto AEM. Puoi trovare il pacchetto all’indirizzo [Cartella progetto Archetipo AEM]\all\target\[appid].all-[version].zip
 
-1. Utilizza il [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) per implementare [Cartella progetto Archetipo AEM]\all\target\[appid].all-[version].zip su tutte le istanze Author e Publish.
+1. Utilizza il [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) per implementare [Cartella progetto Archetipo AEM]\all\target\[appid].all-[version].zip su tutte le istanze Author e Publish.
 
 >[!NOTE]
 >

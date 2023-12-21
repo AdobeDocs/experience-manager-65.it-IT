@@ -2,11 +2,11 @@
 title: Creare o aggiungere un modulo adattivo alla pagina AEM Sites
 description: Scopri come creare o aggiungere facilmente un modulo adattivo alla pagina AEM Sites. Scopri le tecniche e le best practice passo passo per integrare moduli dinamici e personalizzabili nel tuo sito web, ottimizzando le tue esperienze digitali per il massimo impatto.
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '2901'
+source-wordcount: '2881'
 ht-degree: 2%
 
 ---
@@ -200,12 +200,12 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 
 ## Configurare uno schema o un modello dati modulo per un modulo {#configure-schema-or-data-model-for-form}
 
-È possibile utilizzare il modello dati modulo per collegare un modulo a un&#39;origine dati per inviare e ricevere dati in base alle azioni degli utenti. Puoi anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito.
+È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. Puoi anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito.
 
 Prima di collegare un modulo a uno schema o a un modello di dati del modulo
 
-* [Creare uno schema JSON e caricarlo nell’ambiente](adaptive-form-json-schema-form-model.md)
-* [Creare un modello di dati modulo](create-form-data-models.md)
+* [Crea uno schema JSON e caricalo nell’ambiente](adaptive-form-json-schema-form-model.md)
+* [Creare un modello dati modulo](create-form-data-models.md)
 
 Per configurare uno schema JSON o un modello dati modulo per il modulo:
 

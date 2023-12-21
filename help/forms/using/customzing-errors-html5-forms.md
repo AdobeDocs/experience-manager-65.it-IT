@@ -3,12 +3,12 @@ title: Personalizzazione dei messaggi di errore per i moduli HTML5
 description: Scopri come personalizzare la visualizzazione dei messaggi di errore per i moduli HTML5, incluso come modificarne la posizione e l’aspetto.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 2%
+source-wordcount: '497'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +72,7 @@ Per personalizzare la posizione del messaggio di errore, aggiungere una &lt;div>
            },
    ```
 
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 1. Accedi a `CustomErrorManager-1.0-SNAPSHOT` e creare un archivio di cartelle jcr_root e META-INF. Rinomina l’archivio in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilizza Gestione pacchetti per caricare e installare il pacchetto.
 
@@ -110,7 +110,7 @@ Utilizza il pacchetto allegato per visualizzare simultaneamente i messaggi di er
    Save the changes.
    ```
 
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 1. Passare alla cartella CustomErrorManager-1.0-SNAPSHOT e creare un archivio di cartelle jcr_root e META-INF. Rinomina l’archivio in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilizza Gestione pacchetti per caricare e installare il pacchetto.
 

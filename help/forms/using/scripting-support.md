@@ -5,12 +5,12 @@ contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
-source-wordcount: '3896'
-ht-degree: 7%
+source-wordcount: '3916'
+ht-degree: 6%
 
 ---
 
@@ -163,7 +163,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
  </tbody>
 </table>
 
-### o in un altro campo {#field}
+### campo {#field}
 
 <table>
  <tbody>
@@ -323,7 +323,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td>Nessuno</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>didascalia</td>
    <td>L'oggetto caption descrive un'etichetta descrittiva associata a un oggetto di progettazione del modulo.<br /> </td>
    <td>Nessuno</td>
   </tr>
@@ -513,7 +513,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td>L’impostazione del nome tramite script non è consentita in HTML.</td>
   </tr>
   <tr>
-   <td>parent</td>
+   <td>madre/padre</td>
    <td>Ottiene l'elemento padre per questo nodo.</td>
    <td>Nessuno</td>
   </tr>
@@ -546,7 +546,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
 |---|---|---|
 | instanceManager | L&#39;oggetto instanceManager gestisce la creazione, la rimozione e lo spostamento di istanze di oggetti modello modulo. | Nessuno |
 
-## content {#content}
+## contenuto {#content}
 
 | **Proprietà** | **Descrizione** | **Eccezione** |
 |---|---|---|
@@ -621,7 +621,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
  </tbody>
 </table>
 
-## riga {#line}
+## linea {#line}
 
 <table>
  <tbody>
@@ -716,7 +716,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>didascalia</td>
    <td>L'oggetto caption descrive un'etichetta descrittiva associata a un oggetto di progettazione del modulo.</td>
    <td> </td>
   </tr>
@@ -944,7 +944,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td>Nessuno</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>didascalia</td>
    <td>L'oggetto caption descrive un'etichetta descrittiva associata a un oggetto di progettazione del modulo.<br /> </td>
    <td>Nessuno</td>
   </tr>
@@ -1176,13 +1176,13 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
    1. Abs()
    1. Avg()
    1. Ceil()
-   1. Conteggio()
+   1. Count()
    1. Floor()
    1. Max()
    1. Min()
    1. Mod()
-   1. Arrotonda()
-   1. Somma()
+   1. Round()
+   1. Sum()
 
 1. **Funzioni scientifiche**
 
@@ -1192,9 +1192,9 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
    1. Atan2()
    1. Cos()
    1. Sin()
-   1. Cannella()
+   1. Tan()
    1. Exp()
-   1. Registro()
+   1. Log()
    1. Poa()
    1. Sqrt()
    1. Deg2Rad()
@@ -1212,27 +1212,27 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. Termine()
+   1. Term()
 
 1. **Funzioni logiche**
 
    1. Scegli()
    1. If()
    1. Oneof()
-   1. In()
+   1. Within()
 
 1. **Funzioni stringa**
 
-   1. In/il()
+   1. At()
    1. Concat()
-   1. A sinistra()
+   1. Left()
    1. Len()
    1. Lower()
    1. Ltrim()
-   1. Sostituisci()
-   1. A destra()
+   1. Replace()
+   1. Right()
    1. Rtrim()
-   1. Spazio()
+   1. Space()
    1. Stuff()
    1. Substr()
    1. Upper()
@@ -1240,7 +1240,7 @@ FormCalc è un linguaggio specifico di XFA per la creazione di logiche e radici 
 
 1. **Data e ora**
 
-   1. Data()
+   1. Date()
    1. num2date()
    1. DateFmt()
 
@@ -1341,8 +1341,8 @@ Sono supportati i seguenti eventi XFA lato client:
 * Inizializza
 * Convalida
 * Calcola
-* Fai clic su
-* Inserisci
+* Clic
+* Invio
 * Esci
 * Cambia
 * ValidationState

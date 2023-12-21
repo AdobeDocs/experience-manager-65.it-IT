@@ -2,8 +2,9 @@
 title: Come si collegano e inviano i dati del modulo adattivo a Microsoft&reg; Power Automate?
 description: Guida dettagliata alla connessione e all'invio di dati di moduli adattivi a Microsoft&reg; Power Automate.
 keywords: Adaptive Forms Microsoft Power Automate, invia dati Adaptive Forms a Microsoft Power Automate
+feature: Adaptive Forms, Foundation Components
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 2%

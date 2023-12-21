@@ -5,12 +5,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 30%
+source-wordcount: '575'
+ht-degree: 26%
 
 ---
 
@@ -47,7 +47,7 @@ Prendiamo un caso d’uso in cui devi creare una sequenza per i passaggi di comp
       * Servizi di firma elettronica di Adobe Document Cloud
       * Firma scarabocchio
 
-   * **Conferma**: contiene il componente **Riepilogo** che visualizza un messaggio di conferma dell’invio del modulo dopo che un utente firma il modulo e raggiunge il passaggio Conferma (riepilogo) nella sequenza. Gli autori possono configurare il testo del componente Riepilogo con un messaggio di ringraziamento, un collegamento al PDF generato e così via.
+   * **Conferma**: contiene il componente **Riepilogo** che visualizza un messaggio di conferma dell’invio del modulo dopo che un utente firma il modulo e raggiunge il passaggio Conferma (riepilogo) nella sequenza. Gli autori possono configurare il testo del componente Riepilogo, mostrare un messaggio di ringraziamento, mostrare un collegamento al PDF generato e così via.
 
 1. Seleziona il layout del pannello principale come **[!UICONTROL Procedura guidata]**.
 1. Completare i passaggi rimanenti per creare il modello di modulo. Consulta [Creazione di un modello di modulo adattivo personalizzato](../../forms/using/custom-adaptive-forms-templates.md).

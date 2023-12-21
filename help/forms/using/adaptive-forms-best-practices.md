@@ -3,11 +3,11 @@ title: Best practice per l’utilizzo dei moduli adattivi
 description: Spiega le best practice per la configurazione di un progetto AEM Forms, lo sviluppo di moduli adattivi e l’ottimizzazione delle prestazioni del sistema AEM Forms.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
-source-wordcount: '4725'
+source-wordcount: '4666'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
 
 Puoi creare un modulo adattivo utilizzando i modelli di modulo abilitati in **Browser configurazioni**. Per attivare i modelli di modulo, vedere [Creazione di un modello di modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
 
-I modelli di modulo possono essere caricati anche da pacchetti di moduli adattivi creati in un altro computer di authoring. I modelli di modulo sono resi disponibili mediante l&#39;installazione di [pacchetti aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it). Alcune delle best practice consigliate sono:
+I modelli di modulo possono essere caricati anche da pacchetti di moduli adattivi creati in un altro computer di authoring. I modelli di modulo sono resi disponibili mediante l&#39;installazione di [pacchetti aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Alcune delle best practice consigliate sono:
 
 * Il **nosamplecontent** La modalità di esecuzione è consigliata solo per i nodi di authoring e non di pubblicazione.
 * L’authoring di risorse come moduli adattivi, temi, modelli o configurazioni cloud viene eseguito solo sui nodi di authoring, che possono essere pubblicati sui nodi di pubblicazione configurati.

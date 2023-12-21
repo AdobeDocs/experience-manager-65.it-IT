@@ -5,7 +5,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: ea11ecff5be51a19ab901a588200519a70cf9efc
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 1%
@@ -58,7 +58,7 @@ L&#39;iterazione a 64 bit di XMLFM offre prestazioni, scalabilità e gestione de
 
 ## Correzioni di bug
 
-La versione include anche correzioni per oltre 20 problemi segnalati dai clienti. Per un elenco dettagliato delle correzioni incluse nel service pack, consulta [note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519)
+La versione include anche correzioni per oltre 20 problemi segnalati dai clienti. Per un elenco dettagliato delle correzioni incluse nel service pack, consulta [note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it#forms-6519)
 
 
 ## Installazione del service pack
