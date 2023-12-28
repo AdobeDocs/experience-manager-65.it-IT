@@ -5,9 +5,10 @@ contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-source-git-commit: 4a4a75018e960733908f40c631a24203290be55c
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -95,7 +96,7 @@ L’alias contiene tutti i parametri richiesti da un HSM o etoken. Eseguire le i
 1. Apri **Servizio configurazione credenziali HSM** e specifica i valori per i campi seguenti:
 
    * **Alias credenziali**: specifica una stringa utilizzata per identificare l’alias. Questo valore viene utilizzato come proprietà per alcune operazioni di firma digitale, ad esempio l&#39;operazione Firma campo.
-   * **Percorso DLL**: specifica il percorso della libreria client HSM o etoken sul server. Esempio: `C:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster è necessario assicurarsi che tutti i server del cluster utilizzino un percorso identico.
+   * **Percorso DLL**: specifica il percorso della libreria client HSM o etoken sul server. Ad esempio: `C:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster è necessario assicurarsi che tutti i server del cluster utilizzino un percorso identico.
    * **Pin HSM**: specifica la password necessaria per accedere alla chiave del dispositivo.
    * **ID slot HSM**: specifica un identificatore di slot di tipo integer. L&#39;ID dello slot viene impostato client per client. Viene utilizzato per identificare lo slot su HSM che contiene la chiave privata per il segno/certificazione.
 
@@ -106,7 +107,7 @@ L’alias contiene tutti i parametri richiesti da un HSM o etoken. Eseguire le i
    * **Certificato SHA1**: specifica il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali in uso. Verificare che nel valore SHA1 non siano presenti spazi.
    * **Tipo di dispositivo HSM**: seleziona il produttore del dispositivo HSM (Luna o altro) o eToken.
 
-   Fai clic su **Salva**. Il modulo di sicurezza hardware è configurato per AEM Forms. Ora puoi utilizzare il modulo di sicurezza hardware con AEM Forms per firmare o certificare i documenti.
+   Clic **Salva**. Il modulo di sicurezza hardware è configurato per AEM Forms. Ora puoi utilizzare il modulo di sicurezza hardware con AEM Forms per firmare o certificare i documenti.
 
 ## Utilizza le API del servizio DocAssurance per firmare o certificare un documento con chiavi digitali memorizzate sul dispositivo  {#programatically}
 

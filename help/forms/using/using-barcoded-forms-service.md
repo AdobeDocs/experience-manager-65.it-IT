@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-exl-id: edaf12be-473f-4175-b4e0-549b41159a55
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 1%
+source-wordcount: '1003'
+ht-degree: 0%
 
 ---
 
@@ -21,14 +21,14 @@ Il servizio Barcoded Forms estrae i dati dalle immagini elettroniche dei codici 
 
 Il servizio Barcoded Forms supporta quanto segue **bidimensionale (2D)** simbologie fornite come documenti TIFF o PDF scansionati:
 
-* PDF417
+* PDF 417
 * Matrice di dati
 * Codice QR
 
 Il servizio supporta inoltre quanto segue **unidimensionale** simbologie fornite come documenti TIFF o PDF scansionati:
 
 * Codabar
-* Code128
+* Codice128
 * Codice 3 di 9
 * EAN13
 * EAN8
@@ -91,7 +91,7 @@ Il servizio Barcoded Forms restituisce il seguente documento XML dopo la decodif
 
 ### Flussi di lavoro che utilizzano moduli con codice a barre {#workflows-that-use-barcoded-forms}
 
-Gli autori di moduli creano moduli interattivi con codice a barre utilizzando Designer. (vedere [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it).) Quando un utente compila un modulo con codice a barre utilizzando Adobe Reader o Acrobat, il codice a barre viene aggiornato automaticamente per codificare i dati del modulo.
+Gli autori di moduli creano moduli interattivi con codice a barre utilizzando Designer. (vedere [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).) Quando un utente compila un modulo con codice a barre utilizzando Adobe Reader o Acrobat, il codice a barre viene aggiornato automaticamente per codificare i dati del modulo.
 
 Il servizio Barcoded Forms è utile per convertire i dati esistenti su carta in formato elettronico. Ad esempio, quando un modulo codificato a barre viene compilato e stampato, la copia stampata può essere scansionata e utilizzata come input per il servizio Forms codificato a barre.
 
@@ -124,7 +124,7 @@ Inoltre, considera le seguenti limitazioni quando utilizzi il servizio Barcoded 
 * Il servizio supporta completamente AcroForms e i moduli statici contenenti codici a barre 2D salvati con Adobe Reader o Acrobat. Tuttavia, per i codici a barre 1D, appiattire il modulo o fornirlo come documento PDF o TIFF digitalizzato.
 * I moduli XFA dinamici non sono completamente supportati. Per decodificare correttamente i codici a barre 1D e 2D in un modulo dinamico, appiattire il modulo o fornirlo come documento PDF o TIFF digitalizzato.
 
-Inoltre, il servizio può decodificare qualsiasi codice a barre che utilizza la simbologia supportata se si osservano le limitazioni di cui sopra. Per ulteriori informazioni su come creare moduli interattivi con codice a barre, consulta [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63_it).
+Inoltre, il servizio può decodificare qualsiasi codice a barre che utilizza la simbologia supportata se si osservano le limitazioni di cui sopra. Per ulteriori informazioni su come creare moduli interattivi con codice a barre, consulta [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Configurare le proprietà del servizio   {#configureproperties}
 
