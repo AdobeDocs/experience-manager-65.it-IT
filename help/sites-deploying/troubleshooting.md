@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3adf2b03ac4e227af2b33099c24ec177b8ea7e1b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,26 @@ Utilizza le opzioni del comando Java™ per definire le impostazioni di memoria 
 
 Specificare l&#39;opzione di impostazione della memoria durante l&#39;avvio di AEM WCM dalla riga di comando. È inoltre possibile modificare gli script di avvio/arresto di WCM AEM o gli script personalizzati per la gestione dell&#39;avvio di WCM AEM per definire le impostazioni di memoria richieste.
 
-Se hai già definito l’heapsize su 512 MB, puoi analizzare ulteriormente il problema della memoria creando un’immagine heap:
+Se hai già definito l’heapsize su 512 MB, puoi analizzare ulteriormente il problema della memoria creando un’immagine heap.
 
 Per creare automaticamente un’immagine heap quando la memoria è esaurita, utilizza il comando seguente:
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Questo metodo genera un file dell’immagine heap (**java_hprof**) ogni volta che il processo esaurisce la memoria. Il processo può continuare a essere eseguito dopo la generazione dell’immagine heap. Di solito, un file dell’immagine heap è sufficiente per analizzare il problema.
+Questo metodo genera un file dell’immagine heap (**java_hprof**) ogni volta che il processo esaurisce la memoria. Il processo può continuare a essere eseguito dopo la generazione dell’immagine heap.
+
+Spesso per analizzare il problema sono necessari tre file dell’immagine heap, raccolti in un periodo di tempo:
+
+* Prima che si verifichi un errore
+* Durante l&#39;errore 1
+* Durante l&#39;errore 2
+* *Idealmente, sarebbe utile raccogliere informazioni anche dopo la risoluzione dell’evento*
+
+Questi possono essere confrontati per vedere le modifiche e come gli oggetti usano la memoria.
+
+>[!NOTE]
+>
+>Se raccogli regolarmente tali informazioni o hai esperienza nella lettura delle immagini heap, un file dell’immagine heap può essere sufficiente per analizzare il problema.
 
 ### La schermata iniziale dell’AEM non viene visualizzata nel browser dopo aver fatto doppio clic su AEM Quickstart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
