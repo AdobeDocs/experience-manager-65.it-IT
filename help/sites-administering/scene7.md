@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '5425'
 ht-degree: 1%
@@ -418,7 +418,7 @@ Tuttavia, se non desideri che le risorse inviate a Dynamic Media Classic vengano
 Prima di poter inviare risorse a Dynamic Media Classic senza pubblicarle, è necessario impostare quanto segue:
 
 1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Nel tuo caso di supporto, richiedi l’abilitazione dell’anteprima protetta per il tuo account Dynamic Media Classic.
-1. [Configurare l’anteprima protetta per il tuo account Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en).
+1. [Configurare l’anteprima protetta per il tuo account Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 Questi passaggi sono gli stessi che segui per creare una configurazione di test protetta in Dynamic Media Classic.
 

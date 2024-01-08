@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '5793'
 ht-degree: 0%
@@ -1096,9 +1096,9 @@ Di seguito è riportato un elenco di suggerimenti su cosa controllare se si veri
 >
 Per ulteriori informazioni, consulta anche i seguenti articoli:
 >
-* [Thread dump](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
-* [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
-* [Analizzare utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
+* [Thread dump](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+* [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+* [Analizzare utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 * [Analizzare processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1123,7 +1123,7 @@ In questi casi verificare:
 * Impostazioni JVM utilizzate per [avviare AEM](/help/sites-deploying/deploy.md#getting-started)
 * Knowledge Base:
 
-   * [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+   * [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### I/O disco {#disk-i-o}
 
@@ -1141,7 +1141,7 @@ Se il sistema sta esaurendo lo spazio su disco o si notano problemi di accesso a
 * Se e come hai configurato [Versione Eliminazione](/help/sites-deploying/version-purging.md)
 * Knowledge Base:
 
-   * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
+   * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
    * [Il diario consuma troppo spazio su disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradazione delle prestazioni regolare {#regular-performance-degradation}

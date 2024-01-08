@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 5%
@@ -427,7 +427,7 @@ Di seguito sono illustrate le linee guida sull’architettura dei siti AEM e AEM
 
 ### Linee guida per le impostazioni TarMK {#tarmk-settings-guideline}
 
-Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, [vedi questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, [vedi questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
 
 <table>
  <tbody>
@@ -537,7 +537,7 @@ Per stabilire buone prestazioni quando si utilizza MongoMK, è necessario partir
 
 ### Linee guida per le impostazioni MongoMK {#mongomk-settings-guidelines}
 
-Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, [vedi questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazioni riportate di seguito. Per istruzioni su come modificare le impostazioni, [vedi questa pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
 
 <table>
  <tbody>

@@ -8,10 +8,10 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3389'
-ht-degree: 4%
+source-wordcount: '3363'
+ht-degree: 1%
 
 ---
 
@@ -69,7 +69,7 @@ Per seguire questo esempio e utilizzare gli agenti di replica predefiniti: [inst
 
 >[!NOTE]
 >
->Opzione attivata per impostazione predefinita :
+>Attivato per impostazione predefinita:
 >
 >* Agenti per creazione: agente predefinito (pubblicazione)
 >
@@ -105,7 +105,7 @@ I seguenti agenti sono disponibili in un&#39;installazione standard per AEM:
 * [Agente predefinito](#replication-author-to-publish)
 Utilizzato per replicare da Author a Publish.
 
-* Svuotamento del Dispatcher Viene utilizzato per gestire la cache di Dispatcher. Consulta [Invalidazione della cache di Dispatcher dall’ambiente di authoring](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment) e [Annullamento della validità della cache di Dispatcher da un’istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance) per ulteriori informazioni.
+* Svuotamento del Dispatcher Viene utilizzato per gestire la cache di Dispatcher. Consulta [Invalidazione della cache di Dispatcher dall’ambiente di authoring](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Annullamento della validità della cache di Dispatcher da un’istanza Publish](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) per ulteriori informazioni.
 
 * [Replica inversa](#reverse-replication-publish-to-author)
 Utilizzato per replicare da Publish a Author. La replica inversa non viene utilizzata per le funzioni di Communities, ad esempio forum, blog e commenti. Viene effettivamente disattivata in quanto la casella in uscita non è abilitata. L’utilizzo della replica inversa richiederebbe una configurazione personalizzata.
@@ -128,7 +128,7 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   Una descrizione dello scopo fornito da questo agente di replica.
 
-* **abilitato**
+* **Abilitato**
 
   Indica se l’agente di replica è abilitato.
 
@@ -203,9 +203,9 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   Il protocollo qui specificato (HTTP o HTTPS) determina il metodo di trasporto.
 
-  Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Questo campo viene utilizzato per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare l’URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
+  Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Questo campo viene utilizzato per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare un URL di `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
 
-* **User**
+* **Utente**
 
   Il nome utente dell’account da utilizzare per accedere alla destinazione.
 
@@ -221,7 +221,7 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   Host per autenticazione NTML.
 
-* **Abilita SSL relaxed**
+* **Abilita SSL permissivo**
 
   Abilita questa opzione se desideri che i certificati SSL autocertificati vengano accettati.
 
@@ -330,7 +330,7 @@ Queste impostazioni vengono utilizzate per definire i trigger per la replica aut
 
   Questa funzione attiva la replica automatica (per attivare o disattivare una pagina in base alle esigenze) quando si verificano i tempi di attivazione o disattivazione definiti per una pagina. Viene utilizzato principalmente per gli agenti di Dispatcher Flush.
 
-* **Al ricevimento**
+* **Alla ricezione**
 
   Se questa opzione è selezionata, le catene di agenti vengono replicate ogni volta che ricevono eventi di replica.
 
@@ -352,7 +352,7 @@ Dalla scheda Strumenti dell’ambiente di authoring, è possibile configurare gl
 
 >[!NOTE]
 >
->Quando un Dispatcher gestisce le richieste HTTP per le istanze Author o Publish, la richiesta HTTP dell’agente di replica deve includere l’intestazione PATH. Oltre alla procedura seguente, devi aggiungere l’intestazione PATH all’elenco delle intestazioni client di Dispatcher. Consulta [/clientheaders (intestazioni client)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders).
+>Quando un Dispatcher gestisce le richieste HTTP per le istanze Author o Publish, la richiesta HTTP dell’agente di replica deve includere l’intestazione PATH. Oltre alla procedura seguente, devi aggiungere l’intestazione PATH all’elenco delle intestazioni client di Dispatcher. Consulta [/clientheaders (intestazioni client)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Accedere a **Strumenti** nell’AEM.
@@ -477,7 +477,7 @@ Gli agenti predefiniti sono inclusi nell&#39;installazione. Tuttavia, è ancora 
       * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
       * Se necessario, puoi configurare altri parametri.
 
-   Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Questo campo viene utilizzato per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare l’URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
+   Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Questo campo viene utilizzato per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare un URL di `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
 
    >[!NOTE]
    >
@@ -563,7 +563,7 @@ Il server di pubblicazione decomprime tutti gli elementi, li salva e riporta all
 
 ### Configurazione della replica in batch {#configuring-batch-replication}
 
-1. Passa a `http://serveraddress:serverport/siteadmin`
+1. Vai a `http://serveraddress:serverport/siteadmin`
 1. Premere il tasto **[!UICONTROL Strumenti]** nella parte superiore dello schermo
 1. Dalla barra di navigazione a sinistra, vai a **[!UICONTROL Replica - Agenti per creazione]** e doppio clic **[!UICONTROL Agente predefinito]**.
    * Puoi anche raggiungere l’agente di replica di pubblicazione predefinito andando direttamente in `http://serveraddress:serverport/etc/replication/agents.author/publish.html`

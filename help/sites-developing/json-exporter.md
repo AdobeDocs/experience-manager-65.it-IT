@@ -1,15 +1,15 @@
 ---
 title: Esportatore JSON per Content Services
-description: AEM Content Services è progettato per generalizzare la descrizione e la consegna dei contenuti in/da AEM, non limitandosi alle pagine web. Fornisce contenuti a canali diversi dalle tradizionali pagine web di AEM, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente.
+description: I Content Services dell’AEM sono progettati per generalizzare la descrizione e la distribuzione dei contenuti all’interno e dall’AEM, non limitandosi alle pagine web. Forniscono contenuti a canali che non sono pagine web AEM tradizionali, utilizzando metodi standardizzati che possono essere utilizzati da qualsiasi cliente.
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 36%
+source-wordcount: '411'
+ht-degree: 24%
 
 ---
 
@@ -99,4 +99,4 @@ Per maggiori dettagli, cfr.:
 * [Authoring con frammenti di contenuto](/help/sites-authoring/content-fragments.md)
 * [Abilitazione dell’esportazione JSON per un componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)

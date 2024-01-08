@@ -3,7 +3,7 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4333'
 ht-degree: 1%
@@ -520,7 +520,7 @@ Per risolvere il problema, individuare `<AEM_Forms_Installation_dir>\jboss\bin\s
 * Quando un utente seleziona di configurare un campo per la prima volta in un modulo adattivo, l’opzione per salvare una configurazione non viene visualizzata nel Browser proprietà. Per risolvere il problema, fai clic su per configurare un altro campo del modulo adattivo nello stesso editor.
 * Quando gli utenti eseguono l’azione di invio, l’invio non riesce e viene visualizzato un errore:
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Per risolvere il problema: [ricompilare gli script Sling come JSP™ Java e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+Per risolvere il problema: [ricompilare gli script Sling come JSP™ Java e Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * Dopo aver installato AEM Service Pack 6.5.14.0 e versioni successive, gli utenti non sono in grado di selezionare un font dall’interfaccia utente di amministrazione di JEE per i documenti PDF quando passano a `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, poiché l&#39;elenco dei caratteri appare vuoto. (FORMS-12095)
 
 #### AEM Forms su JEE

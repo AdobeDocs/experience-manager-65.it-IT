@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 9%
+source-wordcount: '471'
+ht-degree: 6%
 
 ---
 
@@ -32,7 +32,7 @@ Innanzitutto, è necessario definire un modello Sling per il componente.
 
 >[!NOTE]
 >
->Per un esempio di utilizzo dei modelli Sling, vedi [Sviluppo di esportatori di modelli Sling nell’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en).
+>Per un esempio di utilizzo dei modelli Sling, vedi [Sviluppo di esportatori di modelli Sling nell’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=it).
 
 La classe di implementazione del modello Sling deve essere annotata con le seguenti annotazioni:
 

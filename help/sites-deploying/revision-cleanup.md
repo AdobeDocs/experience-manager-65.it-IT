@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '5811'
+source-wordcount: '5752'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Ogni aggiornamento del repository crea una revisione del contenuto. Di conseguen
 
 Con AEM 6.3 e versioni successive, è stata introdotta una versione online di questa funzionalità chiamata Online Revision Cleanup (Pulizia delle revisioni online). Rispetto alla funzione di pulizia delle revisioni offline, in cui l&#39;istanza AEM deve essere chiusa, la funzione di pulizia delle revisioni online può essere eseguita mentre l&#39;istanza AEM è online. La funzione Pulizia revisioni online è attivata per impostazione predefinita ed è la modalità consigliata per eseguire la pulizia delle revisioni.
 
-**Nota**: [Guarda il video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) per un’introduzione e come utilizzare la funzione di pulizia delle revisioni online.
+**Nota**: [Guarda il video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) per un’introduzione e come utilizzare la funzione di pulizia delle revisioni online.
 
 Il processo di pulizia delle revisioni è suddiviso in tre fasi: **stima**, **compattazione**, e **pulizia**. La stima determina se eseguire la fase successiva (compattazione) o meno in base alla quantità di rifiuti raccolti. Durante la fase di compattazione, i segmenti e i file tar vengono riscritti lasciando fuori il contenuto inutilizzato. La fase di pulizia rimuove quindi i vecchi segmenti, inclusi eventuali rifiuti in essi contenuti. La modalità offline può in genere recuperare più spazio, perché la modalità online deve tenere conto del working set AEM che impedisce la raccolta di segmenti aggiuntivi.
 

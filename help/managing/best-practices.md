@@ -7,10 +7,10 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3238'
-ht-degree: 1%
+source-wordcount: '3214'
+ht-degree: 0%
 
 ---
 
@@ -185,7 +185,7 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
 
    * Processi per ogni ambiente; ad esempio, requisiti di installazione e manutenzione
    * Attività di manutenzione (Datastore GC, ottimizzazione TarPM e così via)
-   * [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)Memorizzazione in cache di Dispatcher
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) caching
    * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * Prestazioni lato client (minimizzazione JS, concat, sprite css, numero totale di richieste http e altre)
 
@@ -441,11 +441,11 @@ Desideri che il tuo lancio sia il più semplice possibile. Anche in questo caso,
 
   Conferma la sicurezza della soluzione per gli utenti interni ed esterni e per i relativi contenuti.
 
-* **Regresso**
+* **Fallback**
 
   Assicurati che tutti i sistemi, le procedure e i meccanismi necessari per il fallback siano operativi prima della pubblicazione.
 
-* **Assistenza**
+* **Supporto**
 
   Assicurati che i servizi di supporto siano pronti e pronti.
 

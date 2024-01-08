@@ -2,10 +2,10 @@
 title: Plug-in Maven pacchetto di contenuti Adobe
 description: Utilizza il plug-in Maven Content Package per distribuire le applicazioni AEM
 exl-id: 002c00ba-eda1-4481-bc35-1f4d972e4073
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 9%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ La distribuzione dei pacchetti costruiti all’AEM viene eseguita dal plug-in Ma
 >
 >Per maggiori dettagli, cfr.:
 >
->* Il [Plug-in Maven pacchetto di contenuti Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) articolo nella documentazione as a Cloud Service dell’AEM su come distribuire le applicazioni AEM.
+>* Il [Plug-in Maven pacchetto di contenuti Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) articolo nella documentazione as a Cloud Service dell’AEM su come distribuire le applicazioni AEM.
 >* Il [Struttura dei progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) articolo nella documentazione as a Cloud Service dell’AEM su come strutturare i progetti moderni per l’AEM.
 >* Il [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) documentazione su come avviare un nuovo progetto AEM utilizzando l’archetipo.
 >

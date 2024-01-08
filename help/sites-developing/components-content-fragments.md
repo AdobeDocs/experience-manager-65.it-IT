@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 5%
+source-wordcount: '932'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Consulta la [API di gestione dei frammenti di contenuto - Lato client](/help/sit
 
 >[!CAUTION]
 >
->Il [Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en) è ora consigliato. Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per ulteriori dettagli.
+>Il [Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è ora consigliato. Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) per ulteriori dettagli.
 >
 >Questa sezione descrive il componente originale distribuito per essere utilizzato con i frammenti di contenuto (**Frammento di contenuto** nel **Generale** gruppo).
 
@@ -37,7 +37,7 @@ Consulta la [API di gestione dei frammenti di contenuto - Lato client](/help/sit
 >
 >Vedi anche [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/sites-developing/content-fragments-config-components-rendering.md) per ulteriori informazioni.
 
-I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche utilizzare una risorsa per frammenti di contenuto esistente tramite [trascinarlo dal browser risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, ad esempio l’immagine del componente di base). Il componente per frammenti di contenuto predefinito ne visualizza solo uno [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto di riferimento. Utilizzando la finestra di dialogo del componente è possibile definire [elemento, variante e intervallo di paragrafi di frammenti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) che desideri visualizzare sulla pagina.
+I frammenti di contenuto di Adobe Experience Manager (AEM) sono [create e gestite come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, e le relative varianti, durante l’authoring delle pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche utilizzare una risorsa per frammenti di contenuto esistente tramite [trascinarlo dal browser risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, ad esempio l’immagine del componente di base). Il componente per frammenti di contenuto predefinito ne visualizza solo uno [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto di riferimento. Utilizzando la finestra di dialogo del componente è possibile definire [elemento, variante e intervallo di paragrafi di frammenti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) che desideri visualizzare sulla pagina.
 
 >[!NOTE]
 >

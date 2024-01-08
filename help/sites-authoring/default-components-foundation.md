@@ -2,10 +2,10 @@
 title: Componenti di base
 description: Scopri i componenti di base in Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '7204'
-ht-degree: 9%
+source-wordcount: '6872'
+ht-degree: 4%
 
 ---
 
@@ -82,7 +82,7 @@ Con il componente Immagine adattiva è possibile utilizzare i file immagine con 
 * .jpg
 * .jpeg
 * .png
-* .gif &#42;&#42;
+* gif &#42;&#42;
 
 >[!CAUTION]
 >
@@ -178,7 +178,7 @@ Esistono diversi modi per creare un elenco di pagine: pagine figlie, elenco fiss
 Indipendentemente dal metodo scelto, le pagine incluse nell’elenco devono già avere un’immagine associata alla pagina. Questa immagine viene visualizzata nel carosello. Se non è presente alcuna immagine per una determinata pagina nelle Proprietà pagina di tale pagina, è necessario associare un’immagine alla pagina prima di iniziare. In caso contrario, nel carosello viene visualizzata una pagina vuota. Consulta [Modifica delle proprietà di una pagina](/help/sites-authoring/editing-page-properties.md).
 A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
 
-      * **Opzioni per le pagine secondarie**
+      * **Opzioni per le pagine figlie**
 
          * **Pagina padre**
 Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
@@ -188,7 +188,7 @@ Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per u
          * **Pagine**
 Seleziona un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
 
-      * **Opzioni per la ricerca**
+      * **Opzioni di ricerca**
 
          * **Inizia in**
 Immetti un percorso iniziale, manualmente o utilizzando il selettore.
@@ -196,7 +196,7 @@ Immetti un percorso iniziale, manualmente o utilizzando il selettore.
          * **Query di ricerca**
 È possibile immettere una query di ricerca in testo normale.
 
-      * **Opzioni di ricerca avanzata**
+      * **Opzioni per la ricerca avanzata**
 
          * **Notazione predicato Querybuilder**
 È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
@@ -210,7 +210,7 @@ Facoltativo. Il numero massimo di elementi da utilizzare nel carosello.
 
 >[!NOTE]
 >
->Puoi creare un componente carosello personalizzato per Adobe Experience Manager che visualizzi le risorse digitali nel DAM AEM. Consulta [Creazione di componenti Carosello personalizzati per Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>Puoi creare un componente carosello personalizzato per Adobe Experience Manager che visualizzi le risorse digitali nel DAM AEM. Consulta [Creazione di componenti Carosello personalizzati per Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it).
 
 ### Grafico {#chart}
 
@@ -245,7 +245,7 @@ Di seguito è riportato un esempio di dati del grafico seguito dal grafico a bar
 
 >[!NOTE]
 >
->Puoi creare un controllo grafico dell’AEM personalizzato che visualizzi i dati nel JCR dell’AEM. Per informazioni, consulta [Visualizzazione dei dati Adobe Experience Manager in un grafico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>Puoi creare un controllo grafico dell’AEM personalizzato che visualizzi i dati nel JCR dell’AEM. Per informazioni, consulta [Visualizzazione dei dati Adobe Experience Manager in un grafico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it).
 
 ### Frammenti di contenuto {#content-fragment}
 
@@ -327,7 +327,7 @@ Il componente Flash consente di caricare un filmato del Flash. Puoi trascinare u
 
 * **Flash**
 
-   * **Filmato Flash**
+   * **Flash filmato**
 
      Il file del filmato flash. Trascina una risorsa da Content Finder oppure fai clic su per aprire una finestra.
 
@@ -349,7 +349,7 @@ Il componente Flash consente di caricare un filmato del Flash. Puoi trascinare u
 
      Modalità di visualizzazione della finestra, ad esempio opaca, trasparente o come finestra distinta (solida).
 
-   * **Colore sfondo**
+   * **Colore di sfondo**
 
      Colore di sfondo selezionato dalla tabella colori fornita.
 
@@ -403,11 +403,11 @@ Quando viene caricata un’immagine, puoi configurare quanto segue:
 
   Per mappare un&#39;immagine, selezionare Mappa. È possibile specificare la modalità di creazione della mappa immagine (rettangolo, poligono e così via) e il punto a cui deve puntare l&#39;area.
 
-* **Ritaglia**
+* **Ritaglio**
 
   Per ritagliare una parte di un&#39;immagine, selezionate Ritaglia. Utilizzare il mouse per ritagliare l&#39;immagine.
 
-* **Rotazione**
+* **Ruota**
 
   Per ruotare un&#39;immagine, selezionare Ruota. Usare ripetutamente fino a quando l&#39;immagine non viene ruotata nel modo desiderato.
 
@@ -419,7 +419,7 @@ Quando viene caricata un’immagine, puoi configurare quanto segue:
 
   Titolo dell&#39;immagine.
 
-* **Testo Alt**
+* **Testo alternativo**
 
   Testo alternativo da utilizzare per la creazione di contenuto accessibile.
 
@@ -469,7 +469,7 @@ Il componente Elenco consente di configurare i criteri di ricerca per la visuali
 
    * A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
 
-      * **Opzioni per le pagine secondarie**
+      * **Opzioni per le pagine figlie**
 
          * **Elementi figlio di** (Pagina padre)
 
@@ -481,7 +481,7 @@ Il componente Elenco consente di configurare i criteri di ricerca per la visuali
 
            Seleziona un elenco di pagine. Utilizza + per aggiungere altre voci e i pulsanti Su/Giù per regolare l’ordine.
 
-      * **Opzioni per la ricerca**
+      * **Opzioni di ricerca**
 
          * Inizia in
 
@@ -491,7 +491,7 @@ Il componente Elenco consente di configurare i criteri di ricerca per la visuali
 
            È possibile immettere una query di ricerca in testo normale.
 
-      * **Opzioni di ricerca avanzata**
+      * **Opzioni per la ricerca avanzata**
 
          * **Notazione predicato Querybuilder**
 
@@ -643,11 +643,11 @@ Puoi configurare:
 
      Se la ricerca deve essere limitata a un tipo di nodo specifico, elencali qui; ad esempio, `cq:Page`.
 
-   * **Percorso di ricerca**
+   * **Percorso di ricerca in**
 
      Specifica la pagina principale del ramo in cui desideri eseguire la ricerca.
 
-   * **Testo pulsante Cerca**
+   * **Testo pulsante di ricerca**
 
      Il nome visualizzato sul pulsante di ricerca effettivo.
 
@@ -659,7 +659,7 @@ Puoi configurare:
 
      Se non sono presenti risultati, viene visualizzato il testo immesso.
 
-   * **Controllo ortografia del testo**
+   * **Testo controllo ortografia**
 
      Se qualcuno immette un termine simile, questo testo viene visualizzato prima del termine.
 Ad esempio, se si digita `Geometrixxe`, il sistema visualizza la scritta &quot;Si intendeva? Geometrixx&quot;.
@@ -814,7 +814,7 @@ Il componente Testo consente di inserire un blocco di testo utilizzando un edito
 All&#39;apertura di **Configura** , puoi anche impostare:
 
 * **Spaziatore**
-* **Stile di testo**
+* **Stile testo**
 
 Il testo formattato viene visualizzato nella pagina. La progettazione effettiva dipende dal CSS del sito:
 
@@ -854,7 +854,7 @@ Puoi configurare:
 
      Titolo del blocco, visualizzato a comparsa.
 
-   * **Testo Alt**
+   * **Testo alternativo**
 
      Testo alternativo da visualizzare se l’immagine non può essere visualizzata. Se lasciato vuoto, viene utilizzato il titolo.
 
@@ -878,7 +878,7 @@ L’esempio seguente mostra un componente Immagine di testo che mostra l’immag
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. L’Adobe consiglia di utilizzare [Componente core Titolo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) invece.
+>Questo componente di base è obsoleto. L’Adobe consiglia di utilizzare [Componente core Titolo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) invece.
 
 Il componente Titolo può effettuare le seguenti operazioni:
 
@@ -959,7 +959,7 @@ Il componente Controllo colonna consente agli utenti di selezionare la modalità
 
 * **Controllo colonna**
 
-   * **Layout colonna**
+   * **Layout colonne**
 
      Selezionare il numero di colonne di cui si desidera eseguire il rendering. Una volta creata, ogni colonna ha il proprio collegamento per trascinare componenti o risorse quando si aggiunge contenuto.
 
@@ -1015,7 +1015,7 @@ Durante la configurazione di uno dei componenti del modulo, nella finestra di di
 
   Qui puoi specificare se un campo è obbligatorio e inserire vincoli su quel campo (ad esempio, deve essere numerico).
 
-* **Attribuzione stile**
+* **Stile**
 
   Indica le dimensioni e lo stile dei campi.
 
@@ -1071,7 +1071,7 @@ Questo campo è obbligatorio e deve contenere solo i seguenti caratteri:
 
      Un messaggio per informare gli utenti di ciò che è necessario.
 
-* **Attribuzione stile**
+* **Stile**
 
    * **Dimensione**
 
@@ -1125,15 +1125,15 @@ Una selezione di tipi di azione è inclusa in un impianto AEM standard:
       * **Crea lead**
       * **Crea e aggiorna account**
       * **Servizio e-mail: crea utente con sottoscrizione e aggiungi all&#39;elenco**
-      * **Servizio e-mail: invia messaggio di risposta automatica**
-      * **Servizio e-mail: annulla sottoscrizione a mailing list**
+      * **Servizio e-mail: invia e-mail con risposta automatica**
+      * **Servizio e-mail: annulla iscrizione utente all&#39;elenco**
       * **Modifica community**
       * **Modifica risorse**
       * **Modifica risorse controllate da flusso di lavoro**
       * **Mail**
       * **Dettagli ordine inoltrato**
       * **Aggiornamento profilo**
-      * **Ripristina password**
+      * **Reimposta password**
       * **Imposta password**
       * **Contenuto store**
 
@@ -1141,7 +1141,7 @@ Una selezione di tipi di azione è inclusa in un impianto AEM standard:
 
       * **Contenuto store con caricamenti**
       * **Invia ordine**
-      * **Annulla sottoscrizione utente**
+      * **Annulla sottoscrizione sottoscrittore**
       * **Aggiorna ordine**
 
    * **Identificatore modulo**
@@ -1160,7 +1160,7 @@ Una selezione di tipi di azione è inclusa in un impianto AEM standard:
 
      Indica se per questo modulo è necessaria la convalida client (convalida server) *sempre* ). La convalida del client può essere eseguita con **Forms Captcha** componente.
 
-   * **Tipo risorsa validazione**
+   * **Tipo risorsa convalida**
 
      Definisce il tipo di risorsa di convalida del modulo se si desidera convalidare l&#39;intero modulo (anziché i singoli campi). Se si convalida il modulo completo, includere anche uno dei seguenti elementi:
 
@@ -1178,7 +1178,7 @@ Una selezione di tipi di azione è inclusa in un impianto AEM standard:
 
       * **Richiesta account**
 
-         * **Pagina di creazione account**
+         * **Pagina Crea account**
 
            Pagina utilizzata per la creazione di un account.
 
@@ -1202,7 +1202,7 @@ Una selezione di tipi di azione è inclusa in un impianto AEM standard:
 
            Seleziona l’opzione desiderata dall’elenco.
 
-         * **Tipo risorsa**
+         * **Tipo di risorsa**
 
            Se questa opzione è impostata, viene aggiunta a ciascun commento come `sling:resourceType`
 
@@ -1220,7 +1220,7 @@ Una selezione di tipi di azione è inclusa in un impianto AEM standard:
 
            Gruppo a cui assegnare il nuovo utente.
 
-         * **Pagina principale**
+         * **Home**
 
            Pagina da visualizzare dopo l’accesso riuscito.
 
@@ -1254,7 +1254,7 @@ Una selezione di tipi di azione è inclusa in un impianto AEM standard:
 
            Immetti un oggetto per l’e-mail.
 
-      * **Ripristina password**
+      * **Reimposta password**
 
          * **Pagina modifica password**
 
@@ -1275,7 +1275,7 @@ Una selezione di tipi di azione è inclusa in un impianto AEM standard:
 
         Ha le stesse opzioni di **Contenuto store**.
 
-      * **Annulla sottoscrizione utente**
+      * **Annulla sottoscrizione sottoscrittore**
 
          * **Il lead viene eliminato da questo elenco**
 
@@ -1291,7 +1291,7 @@ Contrassegna la fine del modulo. Puoi configurare quanto segue:
 
      Indica se deve essere visualizzato o meno un pulsante Invia.
 
-   * **Nome invio**
+   * **Invia nome**
 
      Un identificatore se in un modulo si utilizzano più pulsanti di invio.
 
@@ -1303,7 +1303,7 @@ Contrassegna la fine del modulo. Puoi configurare quanto segue:
 
      Selezionando la casella di controllo, il pulsante Reimposta diventa visibile.
 
-   * **Titolo ripristino**
+   * **Reimposta titolo**
 
      Il nome visualizzato sul pulsante Reimposta.
 
@@ -1395,7 +1395,7 @@ Consente di specificare i campi necessari per l&#39;immissione dei dettagli dell
 >
 >Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Caricamento di file {#file-upload}
+### Caricamento file {#file-upload}
 
 >[!CAUTION]
 >

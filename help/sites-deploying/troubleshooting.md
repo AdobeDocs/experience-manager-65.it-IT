@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Per risolvere i problemi, effettuare le seguenti operazioni:
 
 >[!NOTE]
 >
->Vedi anche [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
+>Vedi anche [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
 La stessa CRX ha un ingombro di memoria ridotto. Se l’applicazione in esecuzione all’interno di CRX ha requisiti di memoria più elevati o richiede operazioni con un utilizzo eccessivo della memoria (ad esempio, transazioni di grandi dimensioni), l’istanza JVM in cui viene eseguito CRX deve essere avviata con le impostazioni di memoria appropriate.

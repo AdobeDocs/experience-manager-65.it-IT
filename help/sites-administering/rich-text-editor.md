@@ -3,7 +3,7 @@ title: Configura l’Editor Rich Text per creare contenuti in Adobe Experience M
 description: Scopri come configurare l’Editor Rich Text di Adobe Experience Manager per l’authoring dei contenuti in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2883'
 ht-degree: 0%
@@ -180,7 +180,7 @@ Per configurazioni dettagliate dei plug-in dell’editor Rich Text, consulta [co
 
 >[!NOTE]
 >
->Il [Componente testo Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in RTE in un’interfaccia grafica come criteri per i contenuti, eliminando la necessità di configurazioni tecniche. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento.
+>Il [Componente testo Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in RTE in un’interfaccia grafica come criteri per i contenuti, eliminando la necessità di configurazioni tecniche. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento.
 >
 >Per ulteriori informazioni, vedere [Impostazioni dell’interfaccia utente dell’Editor Rich Text e criteri per contenuto](/help/sites-administering/rich-text-editor.md) sezione del presente documento e [Creazione di modelli di pagina](/help/sites-authoring/templates.md) e [Documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
@@ -258,7 +258,7 @@ Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configuraz
 * Se la configurazione dell&#39;interfaccia utente dell&#39;editor Rich Text è stata rimossa o non è stata abilitata per un elemento, il criterio del contenuto non è in grado di configurarlo.
 * Un autore ha accesso solo alle funzionalità rese disponibili dalle configurazioni dell’interfaccia utente e dai criteri dei contenuti.
 
-Ad esempio, è possibile visualizzare [Documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
+Ad esempio, è possibile visualizzare [Documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizzare la mappatura tra icone e comandi della barra degli strumenti {#iconstoolbar}
 

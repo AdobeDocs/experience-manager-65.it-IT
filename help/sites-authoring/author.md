@@ -2,14 +2,14 @@
 title: Authoring
 description: Concetti di authoring e pubblicazione in Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 35%
+source-wordcount: '547'
+ht-degree: 28%
 
 ---
 
-# Authoring  {#authoring}
+# Authoring{#authoring}
 
 ## Concetto di authoring (e pubblicazione) {#concept-of-authoring-and-publishing}
 
@@ -31,7 +31,7 @@ Nell’ambiente di authoring, le funzionalità dell’AEM sono rese disponibili 
 
 ### Ambiente di authoring {#author-environment}
 
-L’autore utilizza il cosiddetto **ambiente di authoring**, che fornisce un’interfaccia, grafica o normale, di facile utilizzo per la creazione dei contenuti. Si trova dietro un firewall aziendale che fornisce protezione completa e richiede all’autore di accedere, utilizzando un account a cui sono stati assegnati i diritti di accesso appropriati.
+L’autore lavora in ciò che è noto come **ambiente di authoring**. Questo fornisce un’interfaccia di facile utilizzo (interfaccia grafica utente (GUI o UI)) per la creazione dei contenuti. Si trova dietro un firewall aziendale che fornisce protezione completa e richiede all’autore di accedere, utilizzando un account a cui sono stati assegnati i diritti di accesso appropriati.
 
 >[!NOTE]
 >
@@ -81,4 +81,4 @@ Quando il sito AEM è [sito community](/help/communities/overview.md), o include
 
 #### Dispatcher {#dispatcher}
 
-Per ottimizzare le prestazioni dal punto di vista dei visitatori del sito web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) implementa funzioni di bilanciamento del carico e memorizzazione in cache.**
+Per ottimizzare le prestazioni per i visitatori del sito Web, il **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)** implementa il bilanciamento del carico e il caching.

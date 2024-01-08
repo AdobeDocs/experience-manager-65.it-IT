@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ In alternativa, è possibile scaricare l&#39;origine del dispositivo per la gene
 >
 >Consulta [Configurare il Cloud Service Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md) per i dettagli.
 
-AEM Mobile si integra con Adobe Analytics tramite [SDK di Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS)
+AEM Mobile si integra con Adobe Analytics tramite [SDK di Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile.html) (AMS)
 
 Centro di controllo **Sezione metriche** visualizza l’analisi di riepilogo estratta da AMS per la tua applicazione. Per approfondire il dashboard di Analytics, fai clic su &quot;...&quot; in basso a destra.
 

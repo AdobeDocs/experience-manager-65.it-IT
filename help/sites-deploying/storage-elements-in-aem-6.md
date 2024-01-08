@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Red Hat® Linux® utilizza un algoritmo di gestione della memoria chiamato Trans
 >Consulta le seguenti risorse:
 >
 >* Per ulteriori informazioni su Transparent Huge Pages su Red Hat® Linux®, consulta questa pagina [articolo](https://access.redhat.com/solutions/46111).
-* Per suggerimenti per l&#39;ottimizzazione di Linux®, vedere [articolo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+* Per suggerimenti per l&#39;ottimizzazione di Linux®, vedere [articolo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
 >
 
 ## Gestione dell’archivio {#maintaining-the-repository}

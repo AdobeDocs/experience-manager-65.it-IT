@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 1%
+source-wordcount: '2092'
+ht-degree: 0%
 
 ---
 
@@ -89,19 +89,19 @@ Ciò significa che, quando è necessario specificare un indirizzo IP, è possibi
 
 * un indirizzo IPv6
 
-  ad esempio, `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  ad esempio: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * un indirizzo IPv4
 
-  ad esempio, `https://123.1.1.4:4502`
+  ad esempio: `https://123.1.1.4:4502`
 
 * un nome server
 
-  ad esempio, `https://www.yourserver.com:4502`
+  ad esempio: `https://www.yourserver.com:4502`
 
 * il caso predefinito di `localhost` verrà interpretato per le installazioni di rete IPv4 e IPv6
 
-  ad esempio, `http://localhost:4502`
+  ad esempio: `http://localhost:4502`
 
 ### Rimozione versione {#version-purging}
 
@@ -178,7 +178,7 @@ Per la gestione degli utenti all’interno dell’AEM (inclusa l’assegnazione 
 
 Dispatcher è lo strumento di Adobe Experience Manager per la memorizzazione in cache, il bilanciamento del carico o entrambi. Può essere utilizzato con un server web di classe enterprise.
 
-Consulta [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) per maggiori dettagli, in particolare [Configurazione del Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it) per ulteriori dettagli sulla configurazione.
+Consulta [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) per maggiori dettagli, in particolare [Configurazione del Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) per ulteriori dettagli sulla configurazione.
 
 ### Configurazione del connettore di LiveCycle AEM {#configuring-aem-livecycle-connector}
 

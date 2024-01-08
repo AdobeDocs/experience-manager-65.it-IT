@@ -2,7 +2,7 @@
 title: Note generali sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 note che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 2%
@@ -115,7 +115,7 @@ Viene fornito per la prima volta come parte di AEM 6.4 SP2, con AEM 6.5 il suppo
 
 #### Gestione dei contenuti headless {#headless-content-management}
 
-L’AEM può distribuire i contenuti in vari formati e livelli della pila. Alcuni sono in circolazione dal 2008 con il [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) e [Servlet POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([Esportatore modello Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en)) è stato introdotto in AEM 6.3 ed è il metodo utilizzato dall’SDK SJ dell’AEM per idratare le app a pagina singola. Il [API HTTP per Assets](/help/assets/mac-api-assets.md) è un’API CRUD, che è stata estesa per AEM 6.5.
+L’AEM può distribuire i contenuti in vari formati e livelli della pila. Alcuni sono in circolazione dal 2008 con il [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) e [Servlet POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([Esportatore modello Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=it)) è stato introdotto in AEM 6.3 ed è il metodo utilizzato dall’SDK SJ dell’AEM per idratare le app a pagina singola. Il [API HTTP per Assets](/help/assets/mac-api-assets.md) è un’API CRUD, che è stata estesa per AEM 6.5.
 
 Nuove funzionalità API HTTP:
 
@@ -596,4 +596,4 @@ I seguenti siti sono disponibili solo per i clienti. Se sei un cliente e hai bis
 
 * Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive su [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
 
-* [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza nell’Assistenza clienti di Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en).
+* [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza nell’Assistenza clienti di Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

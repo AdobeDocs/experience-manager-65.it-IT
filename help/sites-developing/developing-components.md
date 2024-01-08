@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3246'
 ht-degree: 0%
@@ -91,11 +91,11 @@ Il meccanismo per separare la logica dall&#39;aspetto aiuta a chiarire ciò che 
 
 ### Utilizzo di Java {#using-java}
 
-[Java Use-API per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
+[Java Use-API per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
 
 ### Utilizzo di JavaScript {#using-javascript}
 
-[JavaScript Use-API per HTL consente a un file HTL di accedere a codice helper scritto in JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Questo consente di utilizzare il codice JavaScript per implementare la logica per selezionare e configurare il contenuto del componente.
+[JavaScript Use-API per HTL consente a un file HTL di accedere a codice helper scritto in JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Questo consente di utilizzare il codice JavaScript per implementare la logica per selezionare e configurare il contenuto del componente.
 
 ### Utilizzo delle librerie HTML lato client {#using-client-side-html-libraries}
 
@@ -194,7 +194,7 @@ Per esempi, consulta:
 >
 >Consulta:
 >
->* la sessione AEM Gems del [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+>* la sessione AEM Gems del [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* il relativo codice di esempio di cui [Esempio di codice: come personalizzare i campi della finestra di dialogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -460,9 +460,9 @@ Quando si migra un componente progettato per essere utilizzato con l’interfacc
    * Crea una finestra di dialogo da utilizzare nell’interfaccia touch. Tuttavia, a scopo di compatibilità, l’interfaccia touch può utilizzare la definizione di finestra di dialogo dell’interfaccia classica, se non è stata definita alcuna finestra di dialogo per tale interfaccia.
    * Il [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) vengono fornite per facilitare l’estensione dei componenti esistenti.
    * [Mappatura di ExtJS ai componenti dell’interfaccia utente Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fornisce una pratica panoramica degli xtype e dei tipi di nodo ExtJS con i corrispondenti tipi di risorse dell’interfaccia utente Granite.
-   * Personalizzazione dei campi; per ulteriori informazioni consulta la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * Personalizzazione dei campi; per ulteriori informazioni consulta la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
    * Migra da tipi a [Convalida dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Utilizzando i listener JS, per ulteriori informazioni consulta [Gestione degli eventi dei campi](#handling-field-events) e la sessione Gems dell’AEM [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * Utilizzando i listener JS, per ulteriori informazioni consulta [Gestione degli eventi dei campi](#handling-field-events) e la sessione Gems dell’AEM [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ### Migrazione di cq:codice listener {#migrating-cq-listener-code}
 

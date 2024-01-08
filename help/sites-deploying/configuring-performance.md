@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '6469'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 11%
 >
 >Per ulteriori informazioni sulla risoluzione dei problemi e sulla risoluzione dei problemi relativi alle prestazioni, vedere anche [Struttura delle prestazioni](/help/sites-deploying/performance-tree.md).
 >
->Inoltre, puoi rivedere un articolo della Knowledge Base su [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Inoltre, puoi rivedere un articolo della Knowledge Base su [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
 
 Un problema chiave è il tempo impiegato dal sito web per rispondere alle richieste dei visitatori. Anche se questo valore varia per ogni richiesta, è possibile definire un valore target medio. Una volta dimostrato che questo valore è sia realizzabile che gestibile, può essere utilizzato per monitorare le prestazioni del sito web e indicare lo sviluppo di potenziali problemi.
 
@@ -39,7 +39,7 @@ Questo ambiente contiene contenuti che rendi disponibili agli utenti. Qui il num
 >[!NOTE]
 >
 >* Dopo la configurazione per l&#39;ottimizzazione delle prestazioni, seguire le procedure descritte in [Giornata difficile](/help/sites-developing/tough-day.md) per testare l’ambiente con carichi pesanti.
->* Vedi anche [Suggerimenti per l&#39;ottimizzazione delle prestazioni.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>* Vedi anche [Suggerimenti per l&#39;ottimizzazione delle prestazioni.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it)
 
 ## Metodologia di ottimizzazione delle prestazioni {#performance-optimization-methodology}
 
@@ -201,7 +201,7 @@ Alcuni aspetti dell’AEM (e/o dell’archivio sottostante) possono essere confi
 
 >[!NOTE]
 >
->Consulta [Ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Consulta [Ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=it).
 
 ### Indicizzazione di ricerca {#search-indexing}
 
@@ -476,7 +476,7 @@ Al termine di tutte le prove, indicare quanto segue:
 
 ## Ottimizzazione delle prestazioni con Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-Il [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) è lo strumento di caching e/o bilanciamento del carico di Adobe. Quando utilizzi Dispatcher, prendi in considerazione l’ottimizzazione delle prestazioni della cache del sito web.
+Il [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è lo strumento di caching e/o bilanciamento del carico di Adobe. Quando utilizzi Dispatcher, prendi in considerazione l’ottimizzazione delle prestazioni della cache del sito web.
 
 >[!NOTE]
 >
@@ -492,7 +492,7 @@ Dispatcher offre diversi meccanismi incorporati che puoi utilizzare per ottimizz
 >
 >In generale, numerose strategie di caching richiedono la selezione di URL validi e non si basano su questi dati aggiuntivi.
 >
->Con la versione 4.1.11 di Dispatcher puoi anche memorizzare in cache le intestazioni di risposta, vedi [Memorizzazione nella cache delle intestazioni di risposta HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
+>Con la versione 4.1.11 di Dispatcher puoi anche memorizzare in cache le intestazioni di risposta, vedi [Memorizzazione nella cache delle intestazioni di risposta HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 >
 
 ### Calcolo del rapporto della cache di Dispatcher {#calculating-the-dispatcher-cache-ratio}
@@ -528,7 +528,7 @@ Con la versione 4.1.11 di Dispatcher, puoi memorizzare nella cache le intestazio
 
 #### Evita i parametri URL {#avoid-url-parameters}
 
-Se possibile, evita i parametri URL per le pagine che vuoi memorizzare in cache. Ad esempio, se hai una galleria di immagini, il seguente URL non viene mai memorizzato in cache (a meno che Dispatcher non sia [configurato per farlo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)):
+Se possibile, evita i parametri URL per le pagine che vuoi memorizzare in cache. Ad esempio, se hai una galleria di immagini, il seguente URL non viene mai memorizzato in cache (a meno che Dispatcher non sia [configurato per farlo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -616,7 +616,7 @@ Per quanto riguarda la combinazione di contenuti limitati e pubblici in una pagi
 
 #### Connessioni permanenti {#sticky-connections}
 
-[Le connessioni permanenti](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#the-benefits-of-load-balancing) garantiscono che di un utente siano composti tutti sullo stesso server. Se un utente esce da questa cartella e successivamente vi rientra, la connessione è ancora attiva. Per conservare tutti i documenti che richiedono connessioni permanenti per il sito Web, definisci una cartella. Cerca di non avere altri documenti in quella cartella. Questo scenario influisce sul bilanciamento del carico se utilizzi pagine e dati di sessione personalizzati.
+[Le connessioni permanenti](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) garantiscono che di un utente siano composti tutti sullo stesso server. Se un utente esce da questa cartella e successivamente vi rientra, la connessione è ancora attiva. Per conservare tutti i documenti che richiedono connessioni permanenti per il sito Web, definisci una cartella. Cerca di non avere altri documenti in quella cartella. Questo scenario influisce sul bilanciamento del carico se utilizzi pagine e dati di sessione personalizzati.
 
 #### Tipi MIME {#mime-types}
 

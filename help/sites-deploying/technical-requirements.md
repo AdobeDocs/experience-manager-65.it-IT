@@ -3,7 +3,7 @@ title: Requisiti tecnici
 description: Elenco delle piattaforme client e server supportate per Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3624'
 ht-degree: 0%
@@ -231,7 +231,7 @@ Se stai installando AEM Forms 6.5, assicurati di aver installato il seguente Mic
 
 Adobe Experience Manager è supportato in esecuzione in una macchina virtuale in ambienti di cloud computing. Questi ambienti includono as Microsoft® Azure e Amazon Web Services (AWS), in esecuzione in conformità ai requisiti tecnici elencati in questa pagina e in base ai termini di supporto standard di Adobe.
 
-Per un ambiente nativo per il cloud, consulta l’offerta più recente della linea di prodotti AEM: Adobe Experience Manager as a Cloud Service. Consulta [Documentazione di Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) per i dettagli.
+Per un ambiente nativo per il cloud, consulta l’offerta più recente della linea di prodotti AEM: Adobe Experience Manager as a Cloud Service. Consulta [Documentazione di Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it) per i dettagli.
 
 Adobe offre anche Adobe Managed Services per distribuire l’AEM su Azure o AWS. Adobe Managed Services fornisce agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare l’AEM in questi ambienti di cloud computing. Consulta [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -241,7 +241,7 @@ Per raccomandazioni su come distribuire l’AEM in Azure o AWS, al di fuori di A
 
 ### Piattaforme di Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). L’Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
+Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). L’Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
 I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4.3.2:
 

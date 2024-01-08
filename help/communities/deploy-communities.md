@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 2%
+source-wordcount: '1659'
+ht-degree: 0%
 
 ---
 
@@ -359,7 +359,7 @@ In particolare, fai attenzione a usare il nome del server corretto, non `localho
 Se utilizzi un Dispatcher, consulta:
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) documentazione
-* [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [Configurazione di Dispatcher per le community](/help/communities/dispatcher.md)
 * [Problemi noti](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

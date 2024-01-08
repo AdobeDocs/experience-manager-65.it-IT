@@ -3,10 +3,10 @@ title: Distribuzione delle community
 description: Come distribuire AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 2%
+source-wordcount: '1705'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ I passaggi necessari sono i seguenti:
 
    * La versione deve essere >= 5.1.38
 
-1. Estrai `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
+1. Extract `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
 1. Utilizza la console web per installare e avviare il bundle:
 
    * Ad esempio, https://localhost:4502/system/console/bundles
@@ -357,7 +357,7 @@ In particolare, fai attenzione a usare il nome del server corretto, non `localho
 Se utilizzi un’istanza di Dispatcher, consulta:
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) documentazione
-* [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [Configurazione di Dispatcher per le community](/help/communities/dispatcher.md)
 * [Problemi noti](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

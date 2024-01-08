@@ -2,9 +2,9 @@
 title: Estensione [!DNL Adobe Experience Manager] 6.5 utilizzando Adobe Developer App Builder.
 description: Estensione [!DNL Adobe Experience Manager] 6.5 utilizzando Adobe Developer App Builder.
 exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ App Builder è disponibile per i clienti e i partner aziendali tramite Adobe Dev
 
 >[!NOTE]
 >
->Per i clienti di AEM as a Cloud Service che desiderano usare App Builder, consulta [Estensione di Adobe Experience Manager as a Cloud Service tramite Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=en).
+>Per i clienti di AEM as a Cloud Service che desiderano usare App Builder, consulta [Estensione di Adobe Experience Manager as a Cloud Service tramite Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Architettura {#architecture}
 

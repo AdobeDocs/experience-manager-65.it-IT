@@ -4,7 +4,7 @@ description: Elenco delle funzioni delle esperienze fluide
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 4%
@@ -49,7 +49,7 @@ Le tabelle seguenti definiscono le funzioni delle esperienze AEM Fluid e conteng
 |---|
 | [API HTTP](/help/assets/mac-api-assets.md) |
 | [Modelli di contenuto strutturato](/help/assets/content-fragments/content-fragments.md) |
-| [Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en) |
+| [Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) |
 | [Frammenti di esperienza](/help/sites-authoring/experience-fragments.md) |
 | API HTTP per contenuti strutturati (lettura) |
 | API HTTP per contenuti strutturati (CRUD) |
@@ -82,7 +82,7 @@ Le tabelle seguenti definiscono le funzioni delle esperienze AEM Fluid e conteng
 
 ## Ulteriori informazioni {#learn-more}
 
-* [Esperienze fluide per casi d’uso headless](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
-* [Servizio di contenuti AEM: cosa, perché e come?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
-* [Domande frequenti per l’accesso di terze parti](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
+* [Esperienze fluide per casi d’uso headless](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [Servizio di contenuti AEM: cosa, perché e come?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [Domande frequenti per l’accesso di terze parti](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
 * [Utilizzo delle API Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

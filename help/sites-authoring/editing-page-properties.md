@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina di contenuto
 description: Definisci le proprietà richieste per una pagina in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 41%
+source-wordcount: '1855'
+ht-degree: 40%
 
 ---
 
@@ -97,7 +97,7 @@ Le proprietà sono distribuite su più schede.
 
   Configura Dispatcher per abilitare l’accesso agli URL personalizzati. Consulta [Abilitazione dell’accesso agli URL personalizzati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) per ulteriori dettagli.
 
-* **Reindirizza URL personalizzato**
+* **Reindirizza Vanity URL**
 
   Indica se desideri che la pagina utilizzi il Vanity URL.
 
@@ -159,7 +159,7 @@ Le proprietà sono distribuite su più schede.
 
   Pagina da utilizzare per l’accesso.
 
-* **Configurazione esportazione**
+* **Esporta configurazione**
 
   Specifica una configurazione di esportazione.
 
@@ -179,7 +179,7 @@ Mostra l&#39;immagine di anteprima della pagina. Operazioni disponibili:
 
   Seleziona una risorsa esistente da usare come miniatura.
 
-* **Versione precedente**
+* **Ripristina**
 
   Questa opzione diventa disponibile dopo aver modificato la miniatura. Se non desideri mantenere la modifica, puoi annullarla prima di salvare.
 
@@ -187,7 +187,7 @@ Mostra l&#39;immagine di anteprima della pagina. Operazioni disponibili:
 
 * **Condivisione social media**
 
-  Definisce le opzioni di condivisione disponibili sulla pagina. Espone le opzioni disponibili per [Condivisione del componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=en).
+  Definisce le opzioni di condivisione disponibili sulla pagina. Espone le opzioni disponibili per [Condivisione del componente core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
 
    * **Abilita condivisione utenti per Facebook**
    * **Abilita condivisione utenti per Pinterest**
@@ -304,7 +304,7 @@ Quando modifichi una pagina, puoi utilizzare **Informazioni pagina** per definir
 
 ### Dalla console Sites - Pagine multiple {#from-the-sites-console-multiple-pages}
 
-Dalla sezione **Sites** , è possibile selezionare più pagine e quindi utilizzare **Visualizza proprietà** per visualizzare e/o modificare le proprietà della pagina. Questa operazione è definita modifica in serie delle proprietà della pagina.
+Dalla sezione **Sites** , è possibile selezionare più pagine e quindi utilizzare **Visualizza proprietà** per visualizzare e/o modificare le proprietà della pagina. Questa operazione viene definita bulk edit delle proprietà della pagina.
 
 >[!NOTE]
 >

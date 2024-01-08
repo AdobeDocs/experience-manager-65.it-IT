@@ -7,10 +7,10 @@ topic-tags: components
 content-type: reference
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 3%
 
 ---
 
@@ -54,7 +54,7 @@ Questi aiutano uno sviluppatore a:
 >Consulta:
 >
 >* Articolo della Knowledge Base, [Risoluzione dei problemi relativi all’interfaccia touch dell’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), per ulteriori suggerimenti e strumenti.
->* Sessione AEM Gems su [Modalità sviluppatore AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
+>* Sessione AEM Gems su [Modalità sviluppatore AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Apertura modalità sviluppatore {#opening-developer-mode}
@@ -80,7 +80,7 @@ Viene mostrata una struttura ad albero componente che:
 * Consente di espandere la struttura e selezionare componenti specifici all&#39;interno della struttura. La selezione consente di accedere ai dettagli dei componenti, ad esempio:
 
    * Percorso archivio
-   * Collegamenti agli script (a cui si accede in CRXDE Lite)
+   * Collegamenti agli script (a cui si accede in CRXDE Liti)
 
 * I componenti selezionati (nel flusso di contenuto, indicati da un bordo blu) saranno evidenziati nella struttura del contenuto (e viceversa).
 
@@ -103,7 +103,7 @@ Ogni voce di componente può mostrare (ad esempio):
 
 * **Modifica script**: un collegamento che:
 
-   * apre lo script del componente in CRXDE Lite.
+   * apre lo script del componente in CRXDE Liti.
 
 * L’espansione di una voce di componente (punta freccia) può anche mostrare:
 
@@ -122,7 +122,7 @@ Ogni voce di componente può mostrare (ad esempio):
 
 Si spera che **Errori** La scheda sarà sempre vuota (come sopra), ma quando si verificano problemi vengono visualizzati i seguenti dettagli per ciascun componente:
 
-* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato all’interno di CRXDE Lite.
+* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato all’interno di CRXDE Liti.
 * Un avviso se il componente apre una sessione di amministrazione.
 
 Ad esempio, in una situazione in cui viene chiamato un metodo non definito, l’errore risultante viene visualizzato in **Errori** scheda:

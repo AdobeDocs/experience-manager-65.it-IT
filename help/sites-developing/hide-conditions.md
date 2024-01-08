@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '582'
 ht-degree: 2%
 
 ---
 
 # Utilizzo di Nascondi condizioni {#using-hide-conditions}
 
-È possibile utilizzare le condizioni Nascondi per determinare se una risorsa componente è sottoposta o meno a rendering. Un esempio potrebbe essere quando un autore di modelli configura il Componente core [componente elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) nel [editor modelli](/help/sites-authoring/templates.md) e decide di disabilitare le opzioni per creare l’elenco in base alle pagine figlie. La disattivazione di questa opzione nella finestra di dialogo per progettazione imposta una proprietà in modo che, quando viene eseguito il rendering del componente elenco, venga valutata la condizione Nascondi e non venga visualizzata l’opzione per visualizzare le pagine figlie.
+È possibile utilizzare le condizioni Nascondi per determinare se una risorsa componente è sottoposta o meno a rendering. Un esempio potrebbe essere quando un autore di modelli configura il Componente core [componente elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) nel [editor modelli](/help/sites-authoring/templates.md) e decide di disabilitare le opzioni per creare l’elenco in base alle pagine figlie. La disattivazione di questa opzione nella finestra di dialogo per progettazione imposta una proprietà in modo che, quando viene eseguito il rendering del componente elenco, venga valutata la condizione Nascondi e non venga visualizzata l’opzione per visualizzare le pagine figlie.
 
 ## Panoramica {#overview}
 
@@ -29,7 +29,7 @@ Utilizzando le condizioni di nascondi, gli amministratori, gli sviluppatori e gl
 
 ## Dettagli sull’implementazione e sull’utilizzo {#implementation-and-usage-details}
 
-`com.adobe.granite.ui.components.FilteringResourceWrapper` è responsabile del filtraggio delle risorse in base all’esistenza e al valore del `granite:hide` , situata nel campo da filtrare. L&#39;implementazione di `/libs/cq/gui/components/authoring/dialog/dialog.jsp` include un&#39;istanza di `FilteringResourceWrapper.`
+`com.adobe.granite.ui.components.FilteringResourceWrapper` è responsabile del filtraggio delle risorse in base all’esistenza e al valore del `granite:hide` , situata nel campo da filtrare. L&#39;attuazione di `/libs/cq/gui/components/authoring/dialog/dialog.jsp` include un&#39;istanza di `FilteringResourceWrapper.`
 
 L’implementazione utilizza il Granite [API Risolutore ELR](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) e aggiunge `cqDesign` tramite ExpressionCustomizer.
 
@@ -53,7 +53,7 @@ Quando definisci l’espressione Nascondi, tieni presente quanto segue:
 
 ## Esempio {#example}
 
-Esempi di malattie delle pelli si possono trovare in tutta l’AEM e nella [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) in particolare. Ad esempio, considera [componente core elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en).
+Esempi di malattie delle pelli si possono trovare in tutta l’AEM e nella [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) in particolare. Ad esempio, considera [componente core elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 [Utilizzo dell’editor modelli](/help/sites-authoring/templates.md), l’autore del modello può definire nella finestra di dialogo per progettazione le opzioni del componente Elenco disponibili per l’autore della pagina. È possibile abilitare o disabilitare opzioni quali l’abilitazione o meno dell’elenco come elenco statico, elenco di pagine figlie, elenco di pagine con tag e così via.
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->La funzione Condivisione cartella da AEM a Creative Cloud è obsoleta. Consigliamo ai clienti di utilizzare funzionalità più recenti, come [Adobe collegamento risorsa](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [App desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en). Ulteriori informazioni in [Best practice per l’integrazione di AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La funzione Condivisione cartella da AEM a Creative Cloud è obsoleta. Consigliamo ai clienti di utilizzare funzionalità più recenti, come [Adobe collegamento risorsa](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o [App desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Ulteriori informazioni in [Best practice per l’integrazione di AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

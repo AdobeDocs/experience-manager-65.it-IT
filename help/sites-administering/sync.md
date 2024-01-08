@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2502'
-ht-degree: 5%
+source-wordcount: '2434'
+ht-degree: 1%
 
 ---
 
@@ -86,7 +86,7 @@ Una volta abilitata la sincronizzazione degli utenti, vengono sincronizzati solo
    * accedi con privilegi di amministratore
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
-      * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * ad esempio: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * individuare `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -112,7 +112,7 @@ L’utente autorizzato viene utilizzato nel passaggio 3 per configurare la distr
 
    * creare un utente
 
-      * ad esempio, `usersync-admin`
+      * ad esempio: `usersync-admin`
 
    * aggiungi questo utente a **`administrators`** gruppo utenti
    * [aggiungi ACL per questo utente a /home](#howtoaddacl)
@@ -163,14 +163,14 @@ Una volta che un utente autorizzato è membro di **`administrators`** gruppo di 
    * accedi con privilegi di amministratore
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
-      * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * ad esempio: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * individuare `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * per aprire per la modifica, seleziona la configurazione esistente (icona a forma di matita) Verifica `property name`: **`socialpubsync-publishUser`**
 
    * imposta il nome utente e la password su [utente autorizzato](#createauthuser) creato al momento della pubblicazione nel passaggio 2
 
-      * ad esempio, `usersync-admin`
+      * ad esempio: `usersync-admin`
 
 ![Provider segreto di trasporto per password crittografata](assets/chlimage_1-22.png)
 
@@ -183,7 +183,7 @@ Una volta che un utente autorizzato è membro di **`administrators`** gruppo di 
    * accedi con privilegi di amministratore
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
-      * ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+      * ad esempio: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
    * individuare `Apache Sling Distribution Agent - Queue Agents Factory`
 
@@ -205,7 +205,7 @@ Una volta che un utente autorizzato è membro di **`administrators`** gruppo di 
    * accedi con privilegi di amministratore
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
-      * ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+      * ad esempio: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
    * individuare **`Adobe Social Sync - Diff Observer Factory`**
 
@@ -229,7 +229,7 @@ Per impostazione predefinita, l’autore esegue il polling delle modifiche ogni 
    * accedi con privilegi di amministratore
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
-      * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * ad esempio: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * individuare `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
@@ -255,7 +255,7 @@ La configurazione predefinita è per una singola istanza Publish. Poiché il mot
    * accedi con privilegi di amministratore
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
-      * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * ad esempio: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * individuare `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -288,7 +288,7 @@ Se sono presenti dati personalizzati da sincronizzare tra più istanze Publish:
    * accedi con privilegi di amministratore
    * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
-      * ad esempio, `https://localhost:4503/system/console/configMgr`
+      * ad esempio: `https://localhost:4503/system/console/configMgr`
 
    * individuare `AEM Communities User Sync Listener`
    * per aprire per la modifica, seleziona la configurazione esistente (icona a forma di matita) Verifica `Name`: `socialpubsync-scheduled-trigger`
@@ -314,7 +314,7 @@ Percorsi secondari ignorati durante la sincronizzazione. In questi percorsi seco
 Nodi predefiniti da ignorare:
 
    * .token
-   * system
+   * sistema
 
 * **Cartelle distribuite**
 La maggior parte di sling:Folders viene ignorata perché la sincronizzazione non è necessaria. Le poche eccezioni sono elencate qui.
@@ -367,7 +367,7 @@ Per sincronizzare correttamente gli aggiornamenti, è necessario modificare il g
 * su ogni istanza di pubblicazione AEM
 * accedere a [Console web](/help/sites-deploying/configuring-osgi.md)
 
-   * ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+   * ad esempio: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * individuare `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 
@@ -506,9 +506,9 @@ L’utente autorizzato deve disporre esplicitamente dei seguenti privilegi e res
 
 | **percorso** | **jcr:all** | **rep:glob** |
 |---|---|---|
-| /home | X | &#42;/attività/&#42; |
-| /home/users | X | &#42;/attività/&#42; |
-| /home/groups | X | &#42;/attività/&#42; |
+| /home | X | &#42;/activities/&#42; |
+| /home/users | X | &#42;/activities/&#42; |
+| /home/groups | X | &#42;/activities/&#42; |
 
 In qualità di membro del `administrators` L’utente autorizzato deve disporre dei seguenti privilegi su tutte le istanze Publish:
 

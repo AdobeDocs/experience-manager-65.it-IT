@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3186'
 ht-degree: 4%
@@ -46,7 +46,7 @@ In questo documento si presuppone che tu abbia già familiarità con la creazion
 >[!NOTE]
 >
 >Il seguente tutorial potrebbe essere utile anche per impostare un modello di pagina modificabile in un nuovo progetto:
->[Guida introduttiva ad AEM Sites Parte 2 - Creazione di una pagina base e di un modello](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=en)
+>[Guida introduttiva ad AEM Sites Parte 2 - Creazione di una pagina base e di un modello](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## Creazione di un nuovo modello {#creating-a-new-template}
 
@@ -70,7 +70,7 @@ Quando crei un modello modificabile:
    * La struttura ti consente di definire componenti e contenuti per il modello.
    * I componenti definiti nella struttura del modello non possono essere spostati in una pagina risultante né eliminati dalle pagine risultanti.
 
-      * Se stai creando un modello in una cartella personalizzata al di fuori del `We.Retail` contenuto di esempio, puoi scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+      * Se stai creando un modello in una cartella personalizzata al di fuori del `We.Retail` contenuto di esempio, puoi scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
    * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema di paragrafi al modello.
    * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il contenuto iniziale.

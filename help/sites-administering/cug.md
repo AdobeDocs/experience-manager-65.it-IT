@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -114,13 +114,13 @@ Per evitare questo problema, è consigliabile creare pagine di reindirizzamento 
 
 Se utilizzi Dispatcher, devi definire una farm di Dispatcher con le seguenti proprietà:
 
-* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#identifying-virtual-hosts-virtualhosts): corrisponde al percorso delle pagine a cui si applica il CUG.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): corrisponde al percorso delle pagine a cui si applica il CUG.
 * \sessionmanagement: vedi di seguito.
-* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache): directory della cache dedicata ai file a cui si applica il gruppo utenti chiusi (CUG).
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): directory della cache dedicata ai file a cui si applica il gruppo utenti chiusi (CUG).
 
 ### Configurazione della gestione delle sessioni del Dispatcher per i gruppi utenti chiusi (CUG) {#configuring-dispatcher-session-management-for-cugs}
 
-Configura [gestione delle sessioni nel file dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) per il CUG. Il gestore di autenticazione utilizzato quando viene richiesto l&#39;accesso per le pagine CUG determina la modalità di configurazione della gestione delle sessioni.
+Configura [gestione delle sessioni nel file dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) per il CUG. Il gestore di autenticazione utilizzato quando viene richiesto l&#39;accesso per le pagine CUG determina la modalità di configurazione della gestione delle sessioni.
 
 ```xml
 /sessionmanagement
@@ -134,7 +134,7 @@ Configura [gestione delle sessioni nel file dispatcher.any](https://experiencele
 >Quando la gestione delle sessioni è abilitata in una farm di Dispatcher, tutte le pagine gestite dalla farm non vengono memorizzate in cache. Per memorizzare in cache le pagine che si trovano al di fuori del gruppo utenti chiusi (CUG), crea una seconda farm in dispatcher.any
 >che gestisce le pagine non appartenenti a gruppi utenti chiusi (CUG).
 
-1. Configura [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) definendo `/directory`; ad esempio:
+1. Configura [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) definendo `/directory`; ad esempio:
 
    ```xml
    /sessionmanagement
@@ -144,4 +144,4 @@ Configura [gestione delle sessioni nel file dispatcher.any](https://experiencele
      }
    ```
 
-1. Imposta [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-when-authentication-is-used) a `0`.
+1. Imposta [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) a `0`.

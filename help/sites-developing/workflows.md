@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 3%
@@ -203,7 +203,7 @@ Ad esempio, per un flusso di lavoro con sei passaggi e quattro fasi:
 
 ### Flussi di lavoro e Forms {#workflows-and-forms}
 
-In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con [componenti core modulo componenti](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=en) disponibile in un&#39;istanza AEM standard o con [Soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
+In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con [componenti core modulo componenti](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponibile in un&#39;istanza AEM standard o con [Soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Durante la creazione di un modulo, l’invio del modulo può essere facilmente associato a un modello di flusso di lavoro. Ad esempio, per archiviare il contenuto in una posizione specifica del repository o per notificare a un utente l&#39;invio del modulo e il relativo contenuto.
 

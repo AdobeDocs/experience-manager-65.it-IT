@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 10%
+source-wordcount: '439'
+ht-degree: 3%
 
 ---
 
@@ -95,8 +95,8 @@ Le best practice sulle prestazioni sono elencate qui:
   </tr>
   <tr>
    <td>Utilizzo di Dispatcher con una rete CDN</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn">Utilizzo di Dispatcher con una rete CDN</a></td>
-   <td>Una rete CDN (Content Delivery Network), come Akamai Edge Delivery o Amazon Cloud Front, consente di distribuire contenuto da una località vicina all’utente finale.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Utilizzo di Dispatcher con una rete CDN</a></td>
+   <td>Una rete CDN (Content Delivery Network), come Akamai Edge Delivery o Amazon Cloud Front, consente di distribuire contenuto da una posizione vicina all’utente finale.</td>
   </tr>
   <tr>
    <td>Ottimizzazione delle prestazioni</td>
