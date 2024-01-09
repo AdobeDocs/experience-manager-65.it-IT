@@ -8,9 +8,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1921'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 5%
 | AEM 6.5 | Questo articolo |
 
 
-**Si applica a:** ❎ dei componenti core del modulo adattivo ✅ [Componenti di base per moduli adattivi](/help/forms/using/themes.md).
+<!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
 In AEM Forms 6.5, un tema è una libreria client AEM che puoi utilizzare per definire gli stili (look and feel) di un modulo adattivo. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Un tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo e può essere riutilizzato in più Forms adattivi.
 

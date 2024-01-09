@@ -9,9 +9,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1731'
 ht-degree: 24%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 24%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
-**Si applica a:** ❎ dei componenti core del modulo adattivo ✅ [Componenti di base per moduli adattivi](/help/forms/using/create-adaptive-form.md).
+<!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
 I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si rivelano, inoltre, dinamici e adattivi. AEM Forms fornisce un’interfaccia utente intuitiva per la creazione rapida di Adaptive Forms. L’interfaccia utente offre una navigazione rapida a schede per selezionare facilmente modelli, stili, campi e opzioni di invio preconfigurati e creare un modulo adattivo.
 
