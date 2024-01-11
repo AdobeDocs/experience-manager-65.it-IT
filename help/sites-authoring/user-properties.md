@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 64%
+source-wordcount: '521'
+ht-degree: 63%
 
 ---
 
@@ -105,7 +105,7 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
 * **Usa esperienza di authoring classica**
 
-  Questa opzione abilita [interfaccia classica](/help/sites-classic-ui-authoring/home.md)authoring delle pagine basato su. Per impostazione predefinita viene utilizzata l’interfaccia utente standard.
+  Questa opzione abilita [interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)authoring delle pagine basato su. Per impostazione predefinita viene utilizzata l’interfaccia utente standard.
 
 * **Abilita pagina iniziale di Assets**
 

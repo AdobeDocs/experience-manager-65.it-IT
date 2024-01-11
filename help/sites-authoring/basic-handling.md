@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2963'
 ht-degree: 41%
@@ -91,7 +91,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Risorse<br /> </td>
-   <td>Queste console consentono di importare e <a href="/help/assets/home.md">gestire le risorse digitali</a> ad esempio immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM. </td>
+   <td>Queste console consentono di importare e <a href="/help/assets/assets.md">gestire le risorse digitali</a> ad esempio immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM. </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -107,7 +107,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
   </tr>
   <tr>
    <td>Forms</td>
-   <td>Questa console consente di creare, gestire ed elaborare le <a href="/help/forms/home.md">moduli e documenti</a>.</td>
+   <td>Questa console consente di creare, gestire ed elaborare le <a href="/help/forms/using/introduction-aem-forms.md">moduli e documenti</a>.</td>
   </tr>
   <tr>
    <td>Personalizzazione</td>

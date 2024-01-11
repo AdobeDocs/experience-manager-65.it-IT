@@ -1,15 +1,15 @@
 ---
 title: Introduzione ad AEM Forms
-description: Con Adobe Experience Manager Forms, gli utenti aziendali possono integrare moduli coinvolgenti, reattivi e adattivi in siti web e mobili, semplificando il processo di registrazione digitale e aumentando i tassi di conversione dei clienti.
+description: Utilizza questa guida AEM 6.5 per creare, gestire, pubblicare e aggiornare moduli digitali. Trova informazioni sull’installazione, l’aggiornamento e la configurazione dei moduli adattivi e sull’authoring di moduli adattivi.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '950'
 ht-degree: 12%
 
 ---

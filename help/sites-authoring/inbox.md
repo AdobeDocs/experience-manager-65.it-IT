@@ -2,7 +2,7 @@
 title: Casella in entrata per gestire le attività
 description: Gestione delle attività con la casella in entrata in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 39%
@@ -39,7 +39,7 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 >* [Progetti](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md)
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/home.md)
+>* [Forms](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}

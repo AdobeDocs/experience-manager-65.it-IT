@@ -2,7 +2,7 @@
 title: Authoring delle pagine di contenuti nell’AEM
 description: Le attività necessarie per creare una pagina di contenuti in Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Di seguito sono riportati due tipi di panoramica sull’authoring con AEM:
 
 >[!NOTE]
 >
->Questa sezione descrive le attività necessarie per creare una pagina di contenuto. Esistono molte funzioni aggiuntive strettamente correlate all’authoring delle pagine, descritte in altre sezioni della [Guida all’authoring](/help/sites-authoring/home.md).
+>Questa sezione descrive le attività necessarie per creare una pagina di contenuto. Esistono molte funzioni aggiuntive strettamente correlate all’authoring delle pagine, descritte in altre sezioni della [Guida all’authoring](/help/sites-authoring/first-steps.md).
 
 ## Panoramica rapida delle funzioni utilizzate per l’authoring delle pagine {#quick-overview-of-features-used-for-authoring-pages}
 

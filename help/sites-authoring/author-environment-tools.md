@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 46%
@@ -103,7 +103,7 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 ## Browser Risorse {#assets-browser}
 
-Il browser Risorse mostra tutte le [risorse](/help/assets/home.md) disponibili per la pagina corrente.
+Il browser Risorse mostra tutte le [risorse](/help/assets/assets.md) disponibili per la pagina corrente.
 
 Il browser risorse è una scheda all’interno del pannello laterale, insieme al [navigazione componenti](/help/sites-authoring/author-environment-tools.md#components-browser)r e [struttura contenuto](/help/sites-authoring/author-environment-tools.md#content-tree). Per aprire o chiudere il pannello laterale, utilizza l’icona in alto a sinistra della barra degli strumenti:
 

@@ -7,10 +7,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 34%
+source-wordcount: '797'
+ht-degree: 24%
 
 ---
 
@@ -18,14 +18,14 @@ ht-degree: 34%
 
 Lo sviluppo di progetti commerciali dell’AEM basati sulla Commerce integration framework (CIF) per l’AEM segue le stesse regole e migliori pratiche di altri progetti dell’AEM. Rivedi prima questi:
 
-- [Guida utente allo sviluppo in AEM 6.5](/help/sites-developing/home.md)
+- [Guida utente allo sviluppo in AEM 6.5](/help/sites-developing/getting-started.md)
 - [Concetti di base dell’AEM](/help/sites-developing/the-basics.md)
 - [Sviluppo AEM - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [Come creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## Sviluppo locale per il commercio AEM {#local}
 
-Si consiglia di utilizzare un ambiente di sviluppo locale con progetti CIF.
+Si raccomanda l’utilizzo di un ambiente di sviluppo locale per i progetti CIF.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Per iniziare a usare Venia Reference Store, è sufficiente clonare il file [Arch
 
 >[!NOTE]
 >
->Il progetto Venia Reference Store contiene due profili di generazione per AEM as a Cloud Service e AEM 6.5. Controlla il [progetto readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) per vedere come vengono utilizzati. Per l’AEM 6.5 utilizzare il `classic` profilo.
+>Il progetto Venia Reference Store contiene due profili di build per AEM as a Cloud Service e AEM 6.5. Controlla la [file readme.md del progetto](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) per vedere come vengono utilizzati. Per l’AEM 6.5 utilizzare il `classic` profilo.
 
 ### Collegare l’AEM al sistema Commerce
 

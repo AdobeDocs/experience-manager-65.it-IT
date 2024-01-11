@@ -1,11 +1,11 @@
 ---
 title: Utilizzo di Edge Delivery Services
-description: Utilizzo di Edge Delivery Services (EDS)
+description: Utilizzo di Edge Delivery Services
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 93%
+source-wordcount: '586'
+ht-degree: 92%
 
 ---
 
@@ -57,4 +57,4 @@ Per ulteriori dettagli, consulta le pagine seguenti:
 * Per informazioni dettagliate su come iniziare a utilizzare Edge Delivery, consulta la sezione [Creare](https://www.hlx.live/docs/#build) della documentazione di Edge Delivery.
 * Per informazioni su come creare e pubblicare contenuti utilizzando Edge Delivery, consulta la sezione [Pubblicare](https://www.hlx.live/docs/authoring).
 * Per informazioni su come utilizzare l’estensione Sidekick, consulta la pagina [Utilizzo di Sidekick](https://www.hlx.live/docs/sidekick).
-* Per l’authoring di AEM, consulta la [pagina sui Concetti di authoring](/help/sites-authoring/author.md))
+* Per la creazione di AEM, vedi [Pagina Concetti di authoring](/help/sites-authoring/author.md))

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1792'
 ht-degree: 3%
 
 ---
@@ -73,9 +73,9 @@ Su questa base, l’AEM offre anche diverse funzionalità a livello di applicazi
 * **Siti Web**
 * **Applicazioni mobili**
 * **Pubblicazioni digitali**
-* **Moduli e documenti**
+* **Forms e documenti**
 * **Risorse digitali**
-* **Communities**
+* **Community**
 * **Commercio online**
 
 Infine, i clienti possono utilizzare questi elementi di base a livello di infrastruttura e applicazione per creare soluzioni personalizzate creando applicazioni proprie.
@@ -287,9 +287,9 @@ L’AEM avvia e reindirizza automaticamente il browser web alla pagina appropria
 
 Dopo aver effettuato l’accesso, puoi accedere all’AEM. Per ulteriori informazioni, a seconda del ruolo, consulta:
 
-* [Authoring](/help/sites-authoring/home.md)
+* [Authoring](/help/sites-authoring/first-steps.md)
 * [Amministrazione](/help/sites-administering/home.md)
-* [Sviluppo](/help/sites-developing/home.md)
+* [Sviluppo](/help/sites-developing/getting-started.md)
 * [Gestione](/help/managing/best-practices.md)
 
 ## Implementazione avanzata {#advanced-deployment}

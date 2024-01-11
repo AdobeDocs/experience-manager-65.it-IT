@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 8%
+source-wordcount: '727'
+ht-degree: 7%
 
 ---
 
@@ -27,12 +27,12 @@ Anche se illustra un settore verticale, la configurazione del sito può essere a
 
 Come implementazione di riferimento dello standard AEM, We.Retail presenta alcune delle caratteristiche più potenti dell&#39;AEM.
 
-| **Funzione obsoleta** | **Descrizione** | **Interessato?** |
+| **Funzionalità** | **Descrizione** | **Interessato?** |
 |---|---|---|
 | [Struttura globale del sito](/help/sites-administering/tc-bp.md) | We.Retail include master di lingua che vengono copiati live nei siti specifici del paese. | [Provalo!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Layout reattivo](/help/sites-authoring/responsive-layout.md) | Tutte le pagine dispongono di un layout dinamico per adattarsi dinamicamente alle dimensioni dello schermo e del dispositivo. | [Provalo!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Modelli modificabili](/help/sites-developing/page-templates-editable.md) | Tutte le pagine sono basate su modelli modificabili, che consentono agli utenti non sviluppatori di adattare e personalizzare i modelli. | [Provalo!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML Template Language ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) | Tutti i componenti sono basati su HTL |  |
+| [Lingua modello HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) | Tutti i componenti sono basati su HTL |  |
 | [Funzionalità di eCommerce](/help/commerce/cif-classic/developing/ecommerce.md) | Caratteristiche di un catalogo di prodotti |  |
 | [Siti community](/help/communities/overview.md) | Consentire ai visitatori di partecipare a discussioni della community, leggere blog e molto altro |  |
 | [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) | Tutti i componenti sono basati sui nuovi componenti core e sono più utilizzabili e configurabili dall’utente, pronti all’uso | [Provalo!](/help/sites-developing/we-retail-core-components.md) |
@@ -49,7 +49,7 @@ We.Retail viene fornito come contenuto di esempio dell&#39;AEM. Per utilizzare, 
 
 >[!CAUTION]
 >
->We.Retail si basa sulla tecnologia AEM più recente e pertanto non supporta [authoring con interfaccia classica](/help/sites-classic-ui-authoring/home.md).
+>We.Retail si basa sulla tecnologia AEM più recente e pertanto non supporta [authoring con interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Ultima versione {#latest-version}
 
@@ -75,7 +75,7 @@ La tabella seguente offre una panoramica delle principali funzioni disponibili i
 * **Disponibile** significa che nel contenuto di esempio sono presenti esempi della funzione.
 * **Non disponibile** significa che alcuni esempi della funzione non sono disponibili nel contenuto di esempio, ma non significa che la funzione stessa non lo sia.
 
-| **Funzione obsoleta** | **We.Retail** | **Geometrixx** |
+| **Funzionalità** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | Struttura globale del sito | I master di lingua vengono copiati in tempo reale nei siti specifici del paese | Non disponibile |
 | Frammenti di contenuto | Disponibile | Non disponibile |
