@@ -1,18 +1,18 @@
 ---
 title: Guida utente all’amministrazione di AEM 6.5
-description: Scopri come somministrare AEM 6.5. Queste guide descrivono le funzioni del sito, le operazioni di distribuzione, le funzioni di sicurezza, la personalizzazione, l’integrazione e altro ancora.
+description: Scopri come gestire AEM 6.5. Queste guide descrivono le funzioni del sito, le operazioni di implementazione, le funzioni di sicurezza, la personalizzazione, l’integrazione e altro ancora.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
 source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 34%
+ht-degree: 92%
 
 ---
 
 
 # Guida utente all’amministrazione di AEM 6.5
 
-Scopri come somministrare AEM 6.5. Queste guide descrivono le funzioni del sito, le operazioni di distribuzione, le funzioni di sicurezza, la personalizzazione, l’integrazione e altro ancora.
+Scopri come gestire AEM 6.5. Queste guide descrivono le funzioni del sito, le operazioni di implementazione, le funzioni di sicurezza, la personalizzazione, l’integrazione e altro ancora.
 
 ## Articoli principali sull’amministrazione
 

@@ -1,6 +1,6 @@
 ---
 title: Introduzione a [!DNL Adobe Experience Manager Assets]
-description: Creazione, gestione, elaborazione e distribuzione di risorse digitali in Experience Manager. Queste guide descrivono le best practice, le funzioni di accessibilità e l’utilizzo delle risorse di AEM 6.5.
+description: Crea, gestisci, elabora e distribuisci le risorse digitali in Experience Manager. Queste guide descrivono le best practice, le funzioni di accessibilità e l’utilizzo delle risorse di AEM 6.5.
 contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
@@ -8,7 +8,7 @@ exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 

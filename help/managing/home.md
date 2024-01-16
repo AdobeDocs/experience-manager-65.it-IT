@@ -1,11 +1,11 @@
 ---
 title: Guida utente alla gestione di AEM 6.5
-description: Scopri come gestire con successo un progetto AEM con il supporto di risorse chiave e una raccolta completa di guide utente AEM 6.5.
+description: Scopri come gestire correttamente un progetto AEM con il supporto di risorse chiave e una raccolta completa di guide utente per AEM 6.5.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 source-git-commit: 02dd950111a45908f0a65deb9e5c28b4b119269f
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 11%
+ht-degree: 35%
 
 ---
 
