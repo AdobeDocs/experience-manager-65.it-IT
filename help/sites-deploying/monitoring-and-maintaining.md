@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
 workflow-type: tm+mt
-source-wordcount: '5793'
+source-wordcount: '5792'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ WCM AEM registra registri dettagliati. Dopo aver decompresso e avviato Quickstar
 
 La rotazione del file di registro si riferisce al processo che limita la crescita del file creando periodicamente un file. In AEM, un file di registro denominato `error.log` viene ruotato una volta al giorno in base alle regole specificate:
 
-* Il `error.log` il file viene rinominato in base al modello {original_filename} `.yyyy-MM-dd`. Ad esempio, l’11 luglio 2010 il file di registro corrente viene rinominato `error.log-2010-07-10`, quindi un nuovo `error.og` viene creato.
+* Il `error.log` il file viene rinominato in base al modello `{original_filename}.yyyy-MM-dd`. Ad esempio, l’11 luglio 2010 il file di registro corrente viene rinominato `error.log-2010-07-10`, quindi un nuovo `error.log` viene creato.
 
 * Precedente file di registro non vengono eliminati, pertanto è responsabilità dell&#39;utente pulire periodicamente i vecchi file di registro per limitare l&#39;utilizzo del disco.
 

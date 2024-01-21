@@ -4,9 +4,9 @@ description: Il test Duro giorno simula il carico giornaliero di circa 1000 auto
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1826'
 ht-degree: 1%
 
 ---
@@ -400,7 +400,7 @@ Il giorno 2 crea una cartella dei registri nella stessa directory in cui è stat
 * **toughday.log**: contiene messaggi relativi allo stato dell’applicazione, alle informazioni di debug e ai messaggi globali.
 * **duraturo_&lt;testname>.log**: messaggi relativi al test specificato.
 
-I registri non vengono sovrascritti, le esecuzioni successive aggiungono i messaggi ai registri esistenti. I registri hanno diversi livelli. Per ulteriori informazioni, consulta ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+I registri non vengono sovrascritti, le esecuzioni successive aggiungono i messaggi ai registri esistenti. I registri hanno diversi livelli. Per ulteriori informazioni, consulta [parametro loglevel.](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}
