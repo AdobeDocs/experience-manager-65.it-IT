@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 75139b4a951269aeacc689baec1da6bf72ce65bc
+source-git-commit: 667125e9f7f9f5c9fa438e1d55c0a059ceae64c3
 workflow-type: tm+mt
-source-wordcount: '4002'
+source-wordcount: '3984'
 ht-degree: 0%
 
 ---
@@ -483,7 +483,6 @@ PDF Generator supporta solo le versioni in inglese, francese, tedesco e giappone
 >
 Inoltre:
 >
-- PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) per eseguire la conversione.
 - PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e altri software necessari per la conversione.
 - PDF Generator non supporta Microsoft® Office 365.
 - Le conversioni PDF Generator per OpenOffice sono supportate solo in Windows e Linux®.
