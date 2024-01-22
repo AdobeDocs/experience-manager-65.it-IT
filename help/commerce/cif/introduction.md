@@ -1,12 +1,12 @@
 ---
 title: Introduzione e panoramica
-description: Scopri come utilizzare e amministrare i contenuti e il commercio dell’AEM, con articoli utili sulle integrazioni e come iniziare a utilizzare AEM Storefront.
+description: Scopri come utilizzare e amministrare AEM Content and Commerce con i nostri articoli utili sulle integrazioni e come iniziare a utilizzare AEM Storefront.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
