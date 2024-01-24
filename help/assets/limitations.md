@@ -8,7 +8,7 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 3fa8680480e0da1c58c99e8ce127ce228ab87803
+source-git-commit: cc219931430ba571745e6ef254a034a689acd1cf
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 2%
@@ -57,7 +57,7 @@ Dynamic Medie non supporta le seguenti combinazioni di browser web e sistemi ope
 <!-- CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-A decorrere dal 30 aprile 2024, Adobe Dynamic Medie cesserà il supporto per i seguenti elementi:
+A decorrere dal 30 aprile 2024, Adobe Dynamic Medie terminerà il supporto per i seguenti elementi:
 
 * SSL (Secure Socket Layer) 2.0
 * SSL 3.0
