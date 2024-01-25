@@ -8,9 +8,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '969'
 ht-degree: 3%
 
 ---
@@ -105,12 +105,11 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
 1. Aggiorna il progetto per includere la versione più recente dei Componenti core di Forms:
 
    1. Apri [Cartella progetto Archetipo AEM]/pom.xml per la modifica.
-   1. Imposta versione di `core.forms.components.version` e `core.forms.components.af.version` a [Componenti core Forms più recenti](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) e accertarsi che entrambi abbiano la stessa versione di **Componenti core Forms** indicato nella tabella e impostare la versione di `core.wcm.components.version` come indicato nella **Componenti core WCM**.
+   1. Imposta versione di `core.forms.components.version` e `core.forms.components.af.version` al [Componenti core Forms più recenti](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) e accertarsi che entrambi abbiano la stessa versione di **Componenti core Forms** indicato nella tabella e impostare la versione di `core.wcm.components.version` come indicato nella [Componenti core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* Durante la creazione di un progetto Archetipo con `version 45`, il [Cartella progetto Archetipo AEM]/pom.xml inizialmente imposta la versione dei componenti core forms su `1.1.28`. Prima di creare o distribuire il progetto Archetipo, aggiorna la versione dei Componenti core forms con `1.1.26`.
-
+      >* Quando si crea un progetto Archetipo con versione 45, il `[AEM Archetype Project Folder]/pom.xml` inizialmente imposta la versione dei componenti core forms su 1.1.28. Prima di creare o distribuire il progetto Archetipo, aggiorna la versione dei componenti core forms al 1.1.26. La versione più recente è disponibile nel [Cronologia delle versioni di Forms di AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >
