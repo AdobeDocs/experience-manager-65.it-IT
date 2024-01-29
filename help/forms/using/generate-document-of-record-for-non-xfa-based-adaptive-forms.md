@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3608'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,11 @@ ht-degree: 2%
 Dopo aver inviato un modulo, i clienti in genere desiderano conservare una registrazione, in formato cartaceo o documentale, delle informazioni che hanno compilato nel modulo per riferimento futuro. Tale documento è denominato documento di record.
 
 Questo articolo spiega come generare un documento di record per un frammento di Forms adattivo o di modulo adattivo.
+
+>[!NOTE]
+>
+> Il supporto per personalizzare i frammenti di moduli adattivi e i relativi campi nell’editor di moduli adattivi è stato introdotto con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+
 
 >[!NOTE]
 >

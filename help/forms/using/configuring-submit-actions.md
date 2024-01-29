@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2597'
 ht-degree: 1%
 
 ---
@@ -168,6 +168,10 @@ L’editor di Forms adattivo fornisce **Richiama un flusso Microsoft® Power Aut
 Dopo una configurazione corretta, utilizza [Richiama un flusso Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) azione di invio per inviare dati a un flusso Power Automate.
 
 ## Invia a Microsoft® SharePoint List{#submit-to-sharedrive}
+
+>[!NOTE]
+>
+La funzione Submit to Microsoft® SharePoint List è stata introdotta con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 Il **[!UICONTROL Invia a SharePoint]** l’azione di invio collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso.
 
