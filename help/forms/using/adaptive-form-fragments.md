@@ -7,7 +7,7 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: 0924ae98f03f09d5e8784bbd5e7af131b1edd544
+source-git-commit: ea90b8a180426461b9c4a77d4eb91cf86081e9bc
 workflow-type: tm+mt
 source-wordcount: '2380'
 ht-degree: 1%
@@ -29,7 +29,7 @@ I moduli adattivi offrono un pratico meccanismo per creare segmenti di modulo li
 
 >[!NOTE]
 >
-> È possibile personalizzare facilmente l&#39;esperienza del frammento per gli utenti mediante la finestra di dialogo Configura e la [finestra di dialogo Progettazione del componente](https://experienceleague.corp.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html) Frammento di modulo.
+> È possibile personalizzare facilmente l&#39;esperienza del frammento per gli utenti mediante la finestra di dialogo Configura e la [finestra di dialogo Progettazione del componente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html) Frammento di modulo.
 
 ## Crea un frammento {#create-a-fragment}
 
