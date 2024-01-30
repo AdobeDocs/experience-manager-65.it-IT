@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
+source-git-commit: 07d44d8dea5bf27b831abd02bd42e53dd860133a
 workflow-type: tm+mt
-source-wordcount: '7312'
+source-wordcount: '7322'
 ht-degree: 20%
 
 ---
@@ -614,6 +614,7 @@ ht-degree: 20%
    + Forms adattivo - Componenti core {#adaptive-forms-core-components}
       + [Abilitare i componenti core per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md)
       + [Creare componenti core basati sul modulo adattivo](/help/forms/using/create-an-adaptive-form-core-components.md)
+      + [Creare e utilizzare frammenti di Forms adattivi in un modulo adattivo](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Creazione di temi per Forms adattivo basato su Componenti core](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
       + [Creazione e utilizzo di un gestore di errori personalizzato per i Componenti core basati su Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
    + Forms adattivo - Authoring di base {#adaptive-forms-basic-authoring}
