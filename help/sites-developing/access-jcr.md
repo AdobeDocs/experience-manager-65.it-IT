@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: 152b6078d6a19f8220564188d4d5d5a7bdee4146
+source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Utilizza un `Session` istanza per creare un `javax.jcr.Node` dell&#39;istanza. A
 Node root = session.getRootNode();
 ```
 
-Dopo aver creato un’ `Node`è possibile eseguire attività quali la creazione di un altro nodo e l&#39;aggiunta di un valore. Ad esempio, il codice seguente crea due nodi e aggiunge un valore al secondo nodo.
+Dopo aver creato un’ `Node` è possibile eseguire attività quali la creazione di un altro nodo e l&#39;aggiunta di un valore. Ad esempio, il codice seguente crea due nodi e aggiunge un valore al secondo nodo.
 
 ```java
 // Store content
