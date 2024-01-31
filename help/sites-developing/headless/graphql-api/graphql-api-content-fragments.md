@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL dell’AEM per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
 workflow-type: tm+mt
-source-wordcount: '4847'
-ht-degree: 55%
+source-wordcount: '4697'
+ht-degree: 54%
 
 ---
 
@@ -140,7 +140,7 @@ Ad esempio:
 
 * `http://localhost:4502/content/graphiql.html`
 
-Offre funzioni quali evidenziazione della sintassi, completamento automatico, suggerimenti automatici, nonché una cronologia e una documentazione online:
+Fornisce funzioni quali evidenziazione della sintassi, completamento automatico, suggerimento automatico, nonché una cronologia e una documentazione online:
 
 ![Interfaccia di GraphiQL](assets/cfm-graphiql-interface.png "Interfaccia di GraphiQL")
 
@@ -259,7 +259,7 @@ GraphQL per AEM supporta un elenco di tipi. Vengono rappresentati tutti i tipi d
 | Enumerazione |  `String` |  Utilizzato per visualizzare un’opzione da un elenco di opzioni definito durante la creazione del modello |
 |  Tag |  `[String]` |  Utilizzato per visualizzare un elenco di stringhe che rappresentano tag utilizzati in AEM |
 | Riferimento contenuto |  `String` |  Utilizzato per visualizzare il percorso per un’altra risorsa in AEM |
-| Riferimento frammento |  *Un tipo di modello* <br><br>Campo singolo: `Model` - Tipo di modello, a cui si fa riferimento direttamente <br><br>Multicampo, con un tipo di riferimento: `[Model]` - Array di tipo `Model`, a cui si fa riferimento direttamente dall&#39;array <br><br>Multicampo, con più tipi di riferimento: `[AllFragmentModels]` - Array di tutti i tipi di modello, a cui si fa riferimento da array con tipo di unione |  Utilizzato per fare riferimento a uno o più frammenti di contenuto di alcuni tipi di modelli, definiti al momento della creazione del modello |
+| Riferimento frammento |  *Un tipo di modello* <br><br>Campo singolo: `Model` - Tipo di modello, con riferimento diretto <br><br>Multifield, con un tipo di riferimento: `[Model]` - Array di tipo `Model`, a cui si fa riferimento direttamente dall’array <br><br>Multifield, con più tipi di riferimento: `[AllFragmentModels]` - Array di tutti i tipi di modello, con riferimento da array con tipo di unione |  Utilizzato per fare riferimento a uno o più frammenti di contenuto di alcuni tipi di modelli, definiti al momento della creazione del modello |
 
 {style="table-layout:auto"}
 
@@ -461,12 +461,12 @@ Per confrontare i campi con un determinato valore è possibile utilizzare i segu
 
 | Operatore | Tipi | L’espressione ha esito positivo se ... |
 |--- |--- |--- |
-| `EQUALS` | `String`, `ID`, `Boolean` | ... il valore   è uguale al contenuto del campo |
+| `EQUALS` | `String`, `ID`, `Boolean` | ... il valore è uguale al contenuto del campo |
 | `EQUALS_NOT` | `String`, `ID` | ... il valore *not* è uguale al contenuto del campo |
 | `CONTAINS` | `String` | ... il contenuto del campo contiene il valore (`{ value: "mas", _op: CONTAINS }` corrisponde a `Christmas`, `Xmas`, `master`, ...) |
 | `CONTAINS_NOT` | `String` | ... il contenuto del campo *non* contiene il valore |
 | `STARTS_WITH` | `ID` | ... l’ID inizia con un determinato valore (`{ value: "/content/dam/", _op: STARTS_WITH` corrisponde a `/content/dam/path/to/fragment`, ma non `/namespace/content/dam/something` |
-| `EQUAL` | `Int`, `Float` | ... il valore   è uguale al contenuto del campo |
+| `EQUAL` | `Int`, `Float` | ... il valore è uguale al contenuto del campo |
 | `UNEQUAL` | `Int`, `Float` | ... il valore *non* è uguale al contenuto del campo |
 | `GREATER` | `Int`, `Float` | ... il contenuto del campo è maggiore del valore |
 | `GREATER_EQUAL` | `Int`, `Float` | ... il contenuto del campo è maggiore o uguale al valore |
@@ -689,7 +689,7 @@ query {
 >
 >* A causa di vincoli tecnici interni, le prestazioni peggiorano se l’ordinamento e il filtro vengono applicati ai campi nidificati. Pertanto, utilizza i campi di filtro/ordinamento memorizzati a livello principale. Questa tecnica è inoltre consigliata se si desidera eseguire query su set di risultati impaginati di grandi dimensioni.
 
-## Query persistenti GraphQL: abilitazione della memorizzazione nella cache in Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
+## Query persistenti GraphQL: abilitazione della memorizzazione in cache in Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
 >[!CAUTION]
 >
@@ -705,40 +705,28 @@ La memorizzazione nella cache delle query persistenti non è abilitata per impos
 
 ### Abilita la memorizzazione nella cache delle query persistenti {#enable-caching-persisted-queries}
 
-Per abilitare la memorizzazione nella cache delle query persistenti, definisci la variabile di Dispatcher `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+Per abilitare la memorizzazione nella cache delle query persistenti, sono necessari i seguenti aggiornamenti ai file di configurazione di Dispatcher:
 
-1. Aggiungi la variabile al file di Dispatcher `global.vars`:
+* `<conf.d/rewrites/base_rewrite.rules>`
 
-   ```xml
-   Define CACHE_GRAPHQL_PERSISTED_QUERIES
-   ```
+  ```xml
+  # Allow the dispatcher to be able to cache persisted queries - they need an extension for the cache file
+  RewriteCond %{REQUEST_URI} ^/graphql/execute.json
+  RewriteRule ^/(.*)$ /$1;.json [PT] 
+  ```
 
->[!NOTE]
->
->Quando il caching di Dispatcher è abilitato per le query persistenti utilizzando `Define CACHE_GRAPHQL_PERSISTED_QUERIES` un `ETag` L’intestazione viene aggiunta alla risposta dal Dispatcher.
->
->Per impostazione predefinita, il `ETag` L’intestazione è configurata con la seguente direttiva:
->
->```
->FileETag MTime Size 
->```
->
->Tuttavia, questa impostazione può causare problemi se utilizzata nelle risposte alle query persistenti, perché non tiene conto di piccole modifiche nella risposta.
->
->Per ottenere singoli `ETag` calcoli su *ogni* risposta univoca `FileETag Digest` deve essere utilizzata nella configurazione di dispatcher:
->
->```xml
-><Directory />    
->   ...    
->   FileETag Digest
-></Directory> 
->```
+  >[!NOTE]
+  >
+  >Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
+  >
+  >In questo modo, la query sarà conforme ai requisiti di Dispatcher per i documenti che possono essere memorizzati in cache.
 
->[!NOTE]
->
->Per adeguarsi al [Requisiti di Dispatcher per i documenti che possono essere memorizzati in cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
->
->Questo suffisso viene aggiunto da una regola di riscrittura, una volta abilitata la memorizzazione in cache delle query persistenti.
+* `<conf.dispatcher.d/filters/ams_publish_filters.any>`
+
+  ```xml
+  # Allow GraphQL Persisted Queries & preflight requests
+  /0110 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
+  ```
 
 ### Configurazione CORS in Dispatcher {#cors-configuration-in-dispatcher}
 
@@ -927,7 +915,7 @@ Per accedere all’endpoint GraphQL, configura un criterio CORS nell’archivio 
 
 Questa configurazione deve specificare un&#39;origine del sito Web attendibile `alloworigin` o `alloworiginregexp` per i quali deve essere concesso l’accesso.
 
-Ad esempio, per consentire l’accesso all’endpoint GraphQL  e all’endpoint con query persistenti per `https://my.domain` puoi utilizzare:
+Ad esempio, per concedere l’accesso all’endpoint GraphQL e all’endpoint con query persistenti per `https://my.domain` puoi utilizzare:
 
 ```xml
 {
