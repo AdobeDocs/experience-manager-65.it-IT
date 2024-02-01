@@ -1,14 +1,14 @@
 ---
-title: Impossibile eseguire il backup del database precedente su AEM Forms 6.5.12.0.
+title: Errore nel backup del database durante l'aggiornamento a 6.5.12.0 per MySQL.
 description: Quando un utente esegue l’aggiornamento alla versione 6.5.12.0 dell’Experience Manager e fa clic su "Upgrade MySQL" (Aggiorna MySQL), il gestore della configurazione non riesce a eseguire il backup del database Experience Manager Forms precedente.
-source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
+source-git-commit: bf974331157e21b28c0daa5b878ac927ce5a2304
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
-# Problema (#issue)
+# Errore durante il backup del database durante l&#39;aggiornamento a 6.5.12.0 per MySQL (#issue)
 
 Quando un utente esegue l’aggiornamento alla versione 6.5.12.0 dell’Experience Manager e fa clic su &quot;Upgrade MySQL&quot; (Aggiorna MySQL), il gestore della configurazione non riesce a eseguire il backup del database Experience Manager Forms precedente e viene visualizzato il messaggio di errore:
 
