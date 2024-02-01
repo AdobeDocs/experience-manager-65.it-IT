@@ -1,14 +1,14 @@
 ---
 title: Errore nel backup del database durante l'aggiornamento a 6.5.12.0 per MySQL.
 description: Quando un utente esegue l’aggiornamento alla versione 6.5.12.0 dell’Experience Manager e fa clic su "Upgrade MySQL" (Aggiorna MySQL), il gestore della configurazione non riesce a eseguire il backup del database Experience Manager Forms precedente.
-source-git-commit: bf974331157e21b28c0daa5b878ac927ce5a2304
+source-git-commit: a6b1e97fd694f0fa1396697c42d84daaa9a6ac68
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '105'
 ht-degree: 0%
 
 ---
 
-# Errore durante il backup del database durante l&#39;aggiornamento a 6.5.12.0 per MySQL (#issue)
+# Errore durante il backup del database durante l&#39;aggiornamento a 6.5.12.0 per MySQL {#issue}
 
 Quando un utente esegue l’aggiornamento alla versione 6.5.12.0 dell’Experience Manager e fa clic su &quot;Upgrade MySQL&quot; (Aggiorna MySQL), il gestore della configurazione non riesce a eseguire il backup del database Experience Manager Forms precedente e viene visualizzato il messaggio di errore:
 
