@@ -7,10 +7,11 @@ feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sit
 version: 6.5
 type: Documentation
 index: y
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
+recommendations: noDisplay
+source-git-commit: fc76dd7af48aa67380b0635589acf9322bff86fb
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 92%
+source-wordcount: '131'
+ht-degree: 80%
 
 ---
 
@@ -24,7 +25,7 @@ Il file metadata.md include metadati a livello di archivio che vengono trasmessi
 | solution-title | Utilizzato nell’intestazione dell’articolo come collegamento. |
 | solution-hub-url | Apre la pagina hub Informazioni e supporto. |
 | solution-icon | Visualizza l’icona della soluzione accanto al titolo della soluzione. Non ancora implementato. |
-| getting-started-url | Collega alla pagina iniziale . |
+| getting-started-url | Collegamento alla pagina Introduzione. |
 | tutorials-url | Collegamento alle esercitazioni video. |
 | mini-toc-levels | Determina quanti livelli di intestazione vengono visualizzati nella barra a destra. Il valore predefinito è 2. |
 | git-repo | Specifica la posizione dell’archivio principale per uso interno. |
