@@ -4,9 +4,9 @@ description: Utilizza i grafici in un modulo adattivo per rendere il modulo più
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 5c117d25a381b2cb85c2bf0715866dd5ad93572c
+source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ![Immagine_protagonista](assets/charts_hero_image.jpg)
 
-Un grafico o un grafico è una rappresentazione visiva dei dati. Consente di condensare grandi quantità di informazioni in un formato visivo e di facile comprensione, consentendo di visualizzare, interpretare e analizzare in modo migliore dati complessi.
-Il pacchetto di componenti aggiuntivi per AEM Forms fornisce un componente grafico pronto all’uso. Puoi utilizzare nei moduli e nei documenti adattivi per la rappresentazione visiva di dati bidimensionali in pannelli e tabelle ripetibili. Il componente Grafico consente di aggiungere e configurare i seguenti tipi di grafici:
+Un grafico o un grafico è una rappresentazione visiva dei dati. Consente di condensare grandi quantità di informazioni in un formato visivo di facile comprensione, consentendo di visualizzare, interpretare e analizzare in modo migliore dati complessi.
+Il pacchetto di componenti aggiuntivi per AEM Forms fornisce un componente grafico pronto all’uso. Puoi utilizzare nei moduli adattivi e nei documenti per la rappresentazione visiva di dati bidimensionali in **pannelli ripetibili** e **tabelle**. Il componente Grafico consente di aggiungere e configurare i seguenti tipi di grafici:
 
 1. Torta
 1. Colonna
@@ -41,7 +41,7 @@ Per impostazione predefinita, il componente Grafico è disponibile nella barra l
 > 
 > Prima di configurare il grafico, accertati che il pannello o la riga di tabella per cui stai configurando il grafico sia impostato su ripetibile. Nella scheda Impostazioni ripetizione della finestra di dialogo Modifica componente è possibile specificare il conteggio minimo e massimo per la riga ripetibile del pannello o della tabella.
 
-Per configurare il grafico, fare clic con il pulsante destro del mouse sul componente Grafico e scegliere Modifica per aprire la finestra di dialogo Modifica grafico. La finestra di dialogo include le schede Titolo e testo, Configurazione, Opzioni avanzate e Stile, che consentono di configurare il grafico.
+Per configurare il grafico, fai clic sul componente Grafico e fai clic su ![Impostazioni](cmppr1.png) per aprire la finestra di dialogo Modifica grafico. La finestra di dialogo include le schede Titolo e testo, Configurazione, Opzioni avanzate e Stile, che consentono di configurare il grafico.
 
 ### Base {#basic}
 
@@ -51,7 +51,7 @@ Nella scheda Base, puoi configurare le seguenti proprietà:
 
 * **Nome elemento**: identificatore dell’elemento grafico nella struttura del contenuto JCR. Non è visibile nel grafico, ma è utile quando si fa riferimento all’elemento da altri componenti, script ed espressioni SOM.
 * **Tipo di grafico**: specifica il tipo di grafico che si desidera generare. Le opzioni disponibili sono Torta, Anello, Barra, Colonna, Linea, Linea e Punto, Punto e Area. Nell&#39;esempio, il tipo di grafico è Colonna.
-* **Nome Riga Ripetuto Per Origine Dati**: specifica il nome dell’elemento della riga della tabella o del pannello ripetibile da cui verranno originati i dati. Nell&#39;esempio, statementDetails è il nome dell&#39;elemento della riga ripetibile nella tabella Statement Details.
+* **Nome riga o nome pannello ripetuto per l&#39;origine dati**: specifica il nome dell’elemento della riga della tabella o del pannello ripetibile da cui verranno originati i dati. Nell&#39;esempio, statementDetails è il nome dell&#39;elemento della riga ripetibile nella tabella Statement Details.
 * **Asse X > Titolo**: specifica il titolo dell&#39;asse X. Nell&#39;esempio, il titolo dell&#39;asse X è Categoria.
 * **Asse X > Campo**: specifica il nome dell&#39;elemento del campo (o di una cella in una tabella) da tracciare sull&#39;asse X. Nell’esempio, le categorie sono configurate sull’asse X. Il nome dell&#39;elemento per la cella della tabella nella colonna Categoria della tabella di esempio è categoria.
 * **Asse X > Usa funzione**: specifica la funzione statistica da utilizzare per calcolare i valori sull’asse X. Nell’esempio, l’opzione selezionata è Nessuno. Per ulteriori informazioni sulle funzioni, vedere Utilizzare le funzioni nel grafico.
@@ -78,7 +78,7 @@ A questo scopo, è necessario tracciare le categorie sull&#39;asse X e, sull&#39
 
 ![Dettagli rendiconto](assets/statement-details.png)
 
-L’estratto conto della carta di credito utilizzato in questo esempio è un documento adattivo e la sezione dei dettagli dell’estratto conto è una tabella che si presenta come segue nella modalità di creazione.
+L’estratto conto della carta di credito utilizzato in questo esempio è un documento modulo adattivo e la sezione dei dettagli dell’estratto conto è una tabella che si presenta come segue nella modalità di creazione.
 
 ![Authoring dei dettagli dell’istruzione](assets/statement-details-authoring.png)
 
@@ -87,7 +87,7 @@ Consideriamo i seguenti requisiti e condizioni per la generazione del grafico:
 * Nel grafico viene visualizzata la spesa totale in ciascuna categoria della tabella Dettagli rendiconto.
 * Il tipo di grafico è Colonna, anche se è possibile scegliere qualsiasi altro tipo di grafico, a seconda delle necessità.
 * La riga Tabella nella tabella Dettagli istruzione è ripetibile. Puoi configurarlo nel campo Impostazioni ripetizione delle proprietà della riga della tabella.
-* Il nome dell&#39;elemento per la riga è statementDetails. Puoi configurarlo nelle proprietà della riga di tabella.
+* Il nome elemento per la riga è Dettagli istruzione. Puoi configurarlo nelle proprietà della riga di tabella.
 * Il nome dell&#39;elemento per la cella della tabella nella colonna Categoria è categoria. Puoi specificarlo in linea. Seleziona la cella e tocca il pulsante Modifica.
 * Il nome dell&#39;elemento per la cella della tabella nella colonna Importo è importo. Inoltre, la cella della tabella nella colonna Importo è una casella numerica.
 * Con la configurazione specificata, l&#39;istogramma nell&#39;esempio verrà visualizzato come segue. Ogni colore rappresenta una categoria e nel grafico vengono sommati i singoli elementi o importi di una categoria.
@@ -108,7 +108,7 @@ Per passare alla modalità stile, nella barra degli strumenti della pagina: **to
 
 ## Utilizzare le funzioni nel grafico {#use-functions}
 
-È possibile configurare un grafico in modo da utilizzare le funzioni statistiche per calcolare i valori dai dati di origine per il plottaggio sul grafico. Il componente Grafico include alcune funzioni incorporate, ma puoi scriverle e renderle disponibili per l’utilizzo nella configurazione del grafico.
+È possibile configurare un grafico in modo da utilizzare le funzioni statistiche per calcolare i valori dai dati di origine per il plottaggio sul grafico. Anche se il componente Grafico dispone di alcune funzioni incorporate, è possibile scriverle e renderle disponibili per l&#39;utilizzo nella configurazione del grafico.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ Per impostazione predefinita, con il componente Grafico sono disponibili le segu
 
 ### Funzioni personalizzate {#custom-functions}
 
-Oltre a utilizzare le funzioni predefinite nei grafici, è possibile scrivere funzioni personalizzate in JavaScript e renderle disponibili nell’elenco delle funzioni nel componente Grafico.
+Oltre a utilizzare le funzioni predefinite nei grafici, è possibile scrivere [funzioni personalizzate](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) in JavaScript e renderle disponibili nell’elenco delle funzioni nel componente Grafico.
 
 Una funzione accetta una matrice o più valori e un nome di categoria come input e restituisce un valore. Ad esempio:
 
