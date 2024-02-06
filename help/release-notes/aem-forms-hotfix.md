@@ -2,9 +2,9 @@
 title: Hotfix per AEM Forms
 description: Informazioni su come scaricare e installare un hotfix per AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
+source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '322'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      </td>
     <td>
     <ul>
-    <li>In AEM Forms sul server JEE, il Forms HTML5 che utilizza il percorso di contesto non riesce a eseguire il rendering. (FORMS-12485)</li>
+    <li>In AEM Forms sul server JEE, il Forms HTML5 che utilizza il percorso di contesto non riesce a eseguire il rendering. (FORMS-12485, FORMS-12691).</li>
     </ul>
     </td>    
   </tr>
