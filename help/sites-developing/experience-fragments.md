@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 1%
+source-wordcount: '1781'
+ht-degree: 0%
 
 ---
 
@@ -127,7 +127,7 @@ Questo consente agli utenti di creare frammenti di esperienza in /content/experi
 
 L’unica configurazione aggiuntiva consiste nel garantire che i componenti siano [consentita sul modello, questa operazione viene eseguita con l’Informativa sui contenuti](/help/sites-developing/page-templates-editable.md#content-policies).
 
-## Experience Fragment Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## Provider rewriter collegamento frammento esperienza - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 In AEM hai la possibilità di creare Frammenti esperienza. Un frammento di esperienza:
 
@@ -182,7 +182,7 @@ Per questi casi d’uso, AEM fornisce l’interfaccia Link Rewriter Provider.
 
 >[!NOTE]
 >
->Questa interfaccia è stata introdotta in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
+>Questa interfaccia è stata introdotta in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6-5-1.md).
 
 Per i casi più complicati, non coperti dal [predefinito](#default-link-rewriting), AEM offre l’interfaccia Link Rewriter Provider. Questo è un `ConsumerType` che puoi implementare nei bundle come servizio. Ignora le modifiche che AEM esegue sui collegamenti interni di un’offerta HTML riprodotta da un frammento di esperienza. Questa interfaccia consente di personalizzare la procedura di riscrittura dei collegamenti interni di HTML in base alle esigenze aziendali.
 
@@ -216,7 +216,7 @@ Per utilizzare l’interfaccia, devi innanzitutto creare un bundle contenente un
 
 Questo servizio viene utilizzato per collegarsi alla riscrittura del file Esportazione frammento di esperienza in Target per accedere ai vari collegamenti.
 
-Ad esempio, `ComponentService`:
+Ad esempio: `ComponentService`:
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;
