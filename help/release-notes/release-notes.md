@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
+source-git-commit: 6a5ff6df3939c6d1576327943b428f374e987bcb
 workflow-type: tm+mt
-source-wordcount: '4417'
+source-wordcount: '4451'
 ht-degree: 1%
 
 ---
@@ -554,6 +554,7 @@ Per risolvere il problema: [ricompilare gli script Sling come JSP™ Java e Sigh
 * Dopo aver installato AEM Service Pack 6.5.14.0 e versioni successive, gli utenti non sono in grado di selezionare un font dall’interfaccia utente di amministrazione di JEE per i documenti PDF quando passano a `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, poiché l&#39;elenco dei caratteri appare vuoto. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
 * In AEM Forms su JEE, il Forms HTML5 che utilizza il percorso di contesto non riesce a eseguire il rendering. (FORMS-12485, FORMS-12691). Per questo problema è disponibile un hotfix. Per scaricare e installare l’hotfix, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md).
+* La funzione personalizzata supporta le funzionalità di ECMAScript versione 5. Se la funzione personalizzata utilizza funzioni supportate da ECMAScript versione 6 o successiva, ad esempio le funzioni let, const o arrow, l&#39;editor di regole non riesce ad aprirsi.
 
 #### AEM Forms su JEE
 
