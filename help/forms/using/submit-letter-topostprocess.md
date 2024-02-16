@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Per associare i processi di post a lettere o comunicazioni interattive, è innan
 
 1. accedi a `https://localhost:publishport/aem/forms`.
 1. Accedi a **[!UICONTROL Lettere]** per visualizzare la lettera pubblicata disponibile nell’istanza Publish.
-1. Configurare le impostazioni di AEM DS. Consulta [Configurazione delle impostazioni di AEM DS](../../forms/using/configuring-the-processing-server-url-.md).
+1. Configurare le impostazioni di AEM DS. Consulta [Configurazione delle impostazioni di AEM DS](../../forms/using/configuring-the-processing-server-url.md).
 
 >[!NOTE]
 >

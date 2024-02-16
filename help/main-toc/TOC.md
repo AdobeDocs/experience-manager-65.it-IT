@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: f41cb88406db23c2af8988f7ee584db95184c6c4
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '7335'
 ht-degree: 20%
@@ -560,7 +560,7 @@ ht-degree: 20%
       + Configurare AEM Forms {#configure-aem-forms}
          + [Ottimizzazione delle prestazioni del server AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
          + [Configurare la cache dei moduli adattivi](/help/forms/using/configure-adaptive-forms-cache.md)
-         + [Configurazione delle impostazioni di AEM DS](/help/forms/using/configuring-the-processing-server-url-.md)
+         + [Configurazione delle impostazioni di AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
          + [Configurazione dell&#39;utilità di pianificazione della sincronizzazione](/help/forms/using/configure-synchronization-scheduler.md)
          + [Configurazione del connettore per Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
          + [Collegamento di AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
@@ -636,7 +636,7 @@ ht-degree: 20%
       + [Stile in linea dei componenti di moduli adattivi](/help/forms/using/inline-style-adaptive-forms.md)
       + [Introduzione alla sequenza di moduli a più passaggi](/help/forms/using/introduction-form-sequence.md)
       + [Funzionalità di layout dei moduli adattivi](/help/forms/using/layout-capabilities-adaptive-forms.md)
-      + [Testo segnaposto in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms-.md)
+      + [Testo segnaposto in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms.md)
       + [Anteprima di un modulo](/help/forms/using/previewing-forms.md)
       + [Riutilizzo dei moduli adattivi](/help/forms/using/reusing-adaptive-forms.md)
       + [Componente separatore nei moduli adattivi](/help/forms/using/separator-component-in-adaptive-forms.md)
@@ -889,7 +889,7 @@ ht-degree: 20%
    + Rapporti sulle transazioni {#transaction-reports}
       + [Panoramica dei rapporti sulle transazioni](/help/forms/using/transaction-reports-overview.md)
       + [Visualizzazione e comprensione dei rapporti sulle transazioni](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-      + [Report transazioni API fatturabili](/help/forms/using/transaction-reports-billable-apis.md)
+      + [API fatturabili per rapporti sulle transazioni](/help/forms/using/transaction-reports-billable-apis.md)
       + [Registrare una transazione per le implementazioni personalizzate](/help/forms/using/record-transaction-custom-implementation.md)
    + Guida per gli amministratori di AEM Forms su JEE {#administrator-help}
       + Introduzione {#get-started}

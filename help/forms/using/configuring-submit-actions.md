@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '2597'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -140,7 +140,7 @@ Per ulteriori informazioni sul portale Forms e sull’azione di invio, consulta 
 
 Il **[!UICONTROL Richiama un flusso di lavoro AEM]** Azione di invio associa un modulo adattivo a un [Flusso di lavoro AEM](/help/sites-developing/workflows-models.md). Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente nell’istanza Autore. Puoi salvare il file di dati, gli allegati e il documento di record nella cartella relativa o sotto il payload del flusso di lavoro o in una variabile. Se il flusso di lavoro è contrassegnato per l’archiviazione dati esterna, l’opzione della variabile è disponibile e non l’opzione payload. Puoi effettuare una selezione dall’elenco di variabili disponibili per il modello di flusso di lavoro. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni in una fase successiva e non al momento della creazione del flusso di lavoro, assicurati che siano presenti le configurazioni di variabili richieste.
 
-Prima di utilizzare **Richiama un flusso di lavoro AEM** invia azione, [configurare le impostazioni di Experience Manager DS](../../forms/using/configuring-the-processing-server-url-.md). Per informazioni sulla creazione di un flusso di lavoro AEM, consulta [Flussi di lavoro incentrati sul modulo su OSGi](../../forms/using/aem-forms-workflow.md).
+Prima di utilizzare **Richiama un flusso di lavoro AEM** invia azione, [configurare le impostazioni di Experience Manager DS](../../forms/using/configuring-the-processing-server-url.md). Per informazioni sulla creazione di un flusso di lavoro AEM, consulta [Flussi di lavoro incentrati sul modulo su OSGi](../../forms/using/aem-forms-workflow.md).
 
 L’azione Invia inserisce quanto segue nella posizione del payload del flusso di lavoro. Tuttavia, se il modello di flusso di lavoro è contrassegnato per l’archiviazione dei dati esterni e non per l’opzione payload, viene visualizzata solo l’opzione Variabile.
 
@@ -263,7 +263,7 @@ Talvolta, in presenza di regole di convalida complesse, lo script di convalida e
 
 Supporto di funzioni personalizzate nelle espressioni di convalida
 
-L’autore può configurare una libreria JavaScript personalizzata per modulo adattivo. Nella libreria, mantieni solo le funzioni riutilizzabili, che hanno dipendenza da librerie di terze parti jquery e underscore.js.
+L’autore può configurare una libreria JavaScript personalizzata per modulo adattivo. Si consiglia di mantenere solo le funzioni riutilizzabili nella libreria, che dipendono dalle librerie di terze parti jquery e underscore.js.
 
 ## Gestione degli errori durante l’azione di invio {#error-handling-on-submit-action}
 
