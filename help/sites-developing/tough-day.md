@@ -4,9 +4,9 @@ description: Il test Duro giorno simula il carico giornaliero di circa 1000 auto
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1825'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
-Il Giorno 2 duro non ha un passaggio di pulizia. Di conseguenza, si consiglia di eseguire il Giorno 2 completo su un’istanza di staging clonata e non sull’istanza di produzione principale. L’istanza di staging deve essere rilasciata dopo i test.
+>Il Giorno 2 duro non ha un passaggio di pulizia. Di conseguenza, si consiglia di eseguire il Giorno 2 completo su un’istanza di staging clonata e non sull’istanza di produzione principale. L’istanza di staging deve essere rilasciata dopo i test.
 >
 
 ### Ottenimento della Guida {#getting-help}
@@ -330,7 +330,7 @@ oppure
 
 >[!NOTE]
 >
-A causa di esecuzioni parallele, il numero effettivo di esecuzioni dei test non corrisponderà esattamente alla quantità configurata nel `count` parametro. È prevista una deviazione proporzionale al numero di thread in esecuzione (controllati dal `concurrency parameter`).
+>A causa di esecuzioni parallele, il numero effettivo di esecuzioni dei test non corrisponderà esattamente alla quantità configurata nel `count` parametro. È prevista una deviazione proporzionale al numero di thread in esecuzione (controllati dal `concurrency parameter`).
 
 ### Prova {#dry-run}
 
@@ -350,8 +350,8 @@ Duro Giorno 2 attualmente riporta nove metriche di test che è possibile valutar
 
 | **Nome** | **Descrizione** |
 |---|---|
-| Timestamp | Timestamp dell’ultima esecuzione di test completata. |
-| Passato | Numero di esecuzioni riuscite. |
+| Marca temporale | Timestamp dell’ultima esecuzione di test completata. |
+| Superata | Numero di esecuzioni riuscite. |
 | Non riuscito | Numero di esecuzioni non riuscite. |
 | Min&#42; | Durata minima dell’esecuzione del test. |
 | Max&#42; | Durata massima dell’esecuzione del test. |

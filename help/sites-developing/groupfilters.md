@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Progetta i filtri in modo da poterne utilizzare le combinazioni per definire i g
 
 Dopo aver creato un filtro, puoi utilizzarlo in [configurazione del gruppo.](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## Classe Java Filter {#the-filter-java-class}
+## Classe Java™ Filter {#the-filter-java-class}
 
-Un filtro per gruppo di dispositivi è un componente OSGi che implementa [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) di rete. Quando distribuita, la classe di implementazione fornisce un servizio di filtro disponibile per le configurazioni dei gruppi di dispositivi.
+Un filtro per gruppo di dispositivi è un componente OSGi che implementa [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) di rete. Quando distribuita, la classe di implementazione fornisce un servizio di filtro disponibile per le configurazioni dei gruppi di dispositivi.
 
-La soluzione descritta in questo articolo utilizza il plug-in Apache Felix Maven SCR per facilitare lo sviluppo del componente e del servizio. Pertanto, la classe Java di esempio utilizza `@Component`e `@Service` annotazioni. La classe ha la seguente struttura:
+La soluzione descritta in questo articolo utilizza il plug-in Apache Felix Maven SCR per facilitare lo sviluppo del componente e del servizio. Pertanto, la classe Java™ di esempio utilizza `@Component`e `@Service` annotazioni. La classe ha la seguente struttura:
 
 ```java
 package com.adobe.example.myapp;
@@ -63,7 +63,7 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 }
 ```
 
-Devi fornire il codice per i seguenti metodi:
+Fornisci il codice per i seguenti metodi:
 
 * `getDescription`: restituisce la descrizione del filtro. La descrizione viene visualizzata nella finestra di dialogo di configurazione del gruppo di dispositivi.
 * `getTitle`: restituisce il nome del filtro. Il nome viene visualizzato quando si selezionano i filtri per il gruppo di dispositivi.
@@ -93,7 +93,7 @@ Il `matches` restituisce funzione `true` se le funzionalità del dispositivo sod
 * Nome dell’agente utente
 * Oggetto Map contenente le funzionalità del dispositivo. Le chiavi della mappa sono i nomi delle funzionalità WURFL™ e i valori sono i valori corrispondenti del database WURFL™.
 
-Il [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) L&#39;interfaccia contiene un sottoinsieme dei nomi delle funzionalità WURFL™ nei campi statici. Utilizza queste costanti di campo come chiavi per recuperare i valori dalla mappa delle funzionalità del dispositivo.
+Il [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) L&#39;interfaccia contiene un sottoinsieme dei nomi delle funzionalità WURFL™ nei campi statici. Utilizza queste costanti di campo come chiavi per recuperare i valori dalla mappa delle funzionalità del dispositivo.
 
 Ad esempio, il seguente esempio di codice determina se il dispositivo supporta i fogli di stile CSS:
 
@@ -175,7 +175,7 @@ Il seguente codice POM è utile se utilizzi Maven per creare le applicazioni. Il
 
 **Plugin:**
 
-* Plug-in del compilatore Apache Maven: compila le classi Java dal codice sorgente.
+* Plug-in del compilatore Apache Maven: compila le classi Java™ dal codice sorgente.
 * Plug-in Apache Felix Maven Bundle: crea il bundle e il manifesto
 * Plug-in Apache Felix Maven SCR: crea il file del descrittore del componente e configura l’intestazione del manifesto del servizio-componente.
 
@@ -189,7 +189,7 @@ Le interfacce DeviceGroup e DeviceGroupFilter sono incluse nel bundle Day Commun
 
 Al momento dell’authoring, 5.5.2 è la versione del bundle WCM Mobile API che si trova nell’ultima versione dell’AEM. Utilizza la console web di Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) per assicurarti che questa sia la versione del bundle implementata nell’ambiente.
 
-**POM:** Il POM utilizzerà un groupId e una versione diversi.
+**POM:** Il POM utilizza un groupId e una versione diversi.
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"

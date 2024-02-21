@@ -2,10 +2,10 @@
 title: Come modellare il contenuto
 description: In questa parte del Percorso per sviluppatori di AEM headless, scopri come modellare i contenuti per la distribuzione AEM headless utilizzando la modellazione dei contenuti con modelli di frammenti di contenuto e frammenti di contenuto.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
 source-wordcount: '1795'
-ht-degree: 67%
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ Questo articolo si basa su questi fondamentali in modo da capire come preparare 
 
 >[!NOTE]
 >
->Modellazione dati è un campo di grandi dimensioni, in quanto viene utilizzato per lo sviluppo di database relazionali. Ci sono molti libri e fonti di informazione online che sono disponibili.
+>La modellazione dei dati è un campo molto vasto, poiché viene utilizzata per lo sviluppo di database relazionali. Ci sono molti libri e fonti di informazione online che sono disponibili.
 >
 >Gli aspetti che sono di interesse per la modellazione dei dati da utilizzare con AEM Headless sono presi in considerazione solo.
 
@@ -45,7 +45,7 @@ Questo articolo si basa su questi fondamentali in modo da capire come preparare 
 
 *Il mondo là fuori è grande e brutto*.
 
-Forse, forse no, ma è certamente un grande ***complicato*** mondo là fuori. La modellazione dei dati viene utilizzata per definire una rappresentazione semplificata di una sottosezione molto piccola, utilizzando le informazioni specifiche necessarie per un determinato scopo.
+Forse sì, forse no. È certamente un grande ***complicato*** mondo là fuori. La modellazione dei dati viene utilizzata per definire una rappresentazione semplificata di una sottosezione molto piccola, utilizzando le informazioni specifiche necessarie per un determinato scopo.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Ci sono molte scuole, ma tutte hanno varie cose in comune:
 * Molte attività extra curriculari
 * e così via....
 
-Anche in un esempio così piccolo, la lista può sembrare infinita. Tuttavia, se si desidera semplicemente che l&#39;applicazione esegua un&#39;operazione semplice, è possibile limitare le informazioni alle attività essenziali.
+L’elenco può sembrare infinito anche per un esempio così piccolo. Tuttavia, se si desidera semplicemente che l&#39;applicazione esegua un&#39;operazione semplice, è possibile limitare le informazioni alle attività essenziali.
 
 Ad esempio, pubblicità di eventi speciali per tutte le scuole della zona:
 
@@ -83,7 +83,7 @@ Ad esempio, pubblicità di eventi speciali per tutte le scuole della zona:
 
 I termini che si desidera descrivere sono **Entità** - praticamente le &quot;cose&quot; di cui vuoi archiviare le informazioni.
 
-Le informazioni che si desidera memorizzare su di essi sono le **Attributi** (proprietà), come Nome e Qualifiche per gli insegnanti.
+Le informazioni su tali entità che vuoi memorizzare sono gli **Attributi** (proprietà), ad esempio il nome e le qualifiche per gli insegnanti.
 
 Poi ci sono varie **Relazioni** tra le entità. Per esempio, di solito una scuola ha un solo preside e molti insegnanti (e di solito il preside è anche un insegnante).
 
@@ -93,7 +93,7 @@ Il processo di analisi e definizione di queste informazioni, insieme alle relazi
 
 Spesso è possibile iniziare con la creazione di un **Schema concettuale** che descrive le entità e le loro relazioni. Di solito questo schema è di alto livello (concettuale).
 
-Dopo aver fissato lo schema concettuale è possibile tradurre i modelli in uno **Schema logico** che descrive le entità, gli attributi e le relazioni. A questo livello, esamina attentamente le definizioni per eliminare le duplicazioni e ottimizzare la progettazione.
+Dopo aver fissato lo schema concettuale è possibile tradurre i modelli in uno **Schema logico** che descrive le entità, gli attributi e le relazioni. A questo livello, esamina attentamente le definizioni per eliminare la duplicazione e ottimizzare la progettazione.
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ La Modellazione dati è un insieme di tecniche consolidate, spesso utilizzate qu
 
 Per garantire che l’applicazione possa richiedere e ricevere in modo coerente ed efficiente il contenuto richiesto da AEM, questo contenuto deve essere strutturato.
 
-Ciò significa che l’applicazione conosce in anticipo la forma della risposta e quindi come elaborarla. Questo è più semplice della ricezione di contenuto in formato libero, che deve essere analizzato per determinare cosa contiene e quindi come può essere utilizzato.
+Ciò significa che l’applicazione conosce in anticipo la forma della risposta e quindi come elaborarla. Questo è molto più semplice della ricezione di contenuti in formato libero, che devono essere analizzati per determinare cosa contengono e come possono essere utilizzati.
 
 ### Introduzione a Come? {#how}
 
@@ -147,7 +147,7 @@ La struttura del modello di contenuto è:
 >
 >I modelli per frammenti di contenuto vengono utilizzati anche come base degli schemi GraphQL AEM, utilizzati per recuperare i contenuti. Ulteriori informazioni su questo argomento in una sessione successiva.
 
-Le richieste di contenuti vengono effettuate utilizzando l’API GraphQL di AEM, un’implementazione personalizzata dell’API GraphQL standard. L’API GraphQL dell’AEM consente di eseguire query (complesse) sui frammenti di contenuto, in cui ogni query è basata su un tipo di modello specifico.
+Le richieste di contenuti vengono effettuate utilizzando l’API GraphQL di AEM, un’implementazione personalizzata dell’API GraphQL standard. L’API GraphQL di AEM consente di eseguire query (complesse) sui frammenti di contenuto; con ciascuna query basata su un tipo di modello specifico.
 
 Il contenuto restituito può quindi essere utilizzato dalle applicazioni.
 
@@ -169,7 +169,7 @@ All’interno di un modello:
 1. **Tipi di dati** consente di definire i singoli attributi.
 Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo** e i relativi anni di servizio come **Numero**.
 1. Tipi di dati **Riferimento contenuto** e **Riferimento frammento** consente di creare relazioni con altri contenuti all’interno dell’AEM.
-1. Il **Riferimento frammento** Il tipo di dati consente di realizzare più livelli di struttura nidificando i Frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
+1. Il tipo di dati **Riferimento frammento** consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
 Ad esempio:
 ![Modellazione dei contenuti con frammenti di contenuto](assets/headless-modeling-01.png "Modellazione dei contenuti con frammenti di contenuto")
@@ -206,7 +206,7 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 ### Creazione di modelli per frammenti di contenuto {#creating-content-fragment-models}
 
-All’inizio, devi abilitare i modelli per frammenti di contenuto per il sito. Questa abilitazione viene eseguita nel Browser configurazioni; in Strumenti > Generale > Browser configurazioni. Puoi scegliere di configurare la voce globale o creare una configurazione. Esempio:
+All’inizio, devi abilitare i modelli per frammenti di contenuto per il sito. Questa abilitazione viene eseguita nel Browser configurazioni; in Strumenti > Generale > Browser configurazioni. Puoi scegliere di configurare la voce globale oppure creare una nuova configurazione. Esempio:
 
 ![Definire la configurazione](assets/cfm-configuration.png)
 
@@ -228,7 +228,7 @@ I frammenti di contenuto vengono creati in base a un modello per frammenti di co
 
 ### Selezione del modello appropriato {#select-model}
 
-Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Questa operazione viene eseguita utilizzando Crea > Frammento di contenuto nella cartella richiesta in Risorse > File. La procedura guidata ti guida attraverso i passaggi.
+Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Questa operazione viene eseguita utilizzando Crea > Frammento di contenuto, nella cartella desiderata in Risorse > File. La procedura guidata ti conduce attraverso i diversi passaggi.
 
 Un frammento di contenuto si basa su un modello per frammento di contenuto specifico, selezionato come primo passaggio del processo di creazione.
 
@@ -236,9 +236,9 @@ Un frammento di contenuto si basa su un modello per frammento di contenuto speci
 
 Una volta creato il frammento, puoi aprirlo nell’Editor frammento di contenuto. Qui puoi effettuare le seguenti operazioni:
 
-* Modifica i contenuti in modalità normale o a schermo intero.
-* Formatta il contenuto come Testo completo, Testo normale o Markdown.
-* Crea e gestisci le varianti dei contenuti.
+* Modificare il contenuto in modalità normale o a schermo intero.
+* Formattare il contenuto come Testo completo, Testo normale o Markdown.
+* Creare e gestire le varianti dei contenuti.
 * Associare contenuto.
 * Modificare i metadati.
 * Mostrare la struttura ad albero.

@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '6922'
+source-wordcount: '6926'
 ht-degree: 0%
 
 ---
@@ -1018,7 +1018,7 @@ Esse mirano a indicare l&#39;efficienza della soluzione in termini economici def
 
 Precisazione dettagliata dei concetti relativi ai ruoli e ai diritti di accesso richiesti per la nuova domanda, compresa una descrizione di alto livello di:
 
-* ruoli
+* mansioni
 * gruppi
 * utenti
 * autorizzazioni
@@ -1131,7 +1131,7 @@ Personale interno che necessita di formazione per gestire la soluzione.
 
 ### Personale selezionato per la formazione di autore e utente finale {#staff-selected-for-author-and-end-user-training}
 
-Personale interno che necessita di formazione per l’authoring della soluzione.
+Personale interno che necessita di formazione per lavorare sulla soluzione.
 
 ### Parti interessate {#stakeholders}
 
@@ -1377,7 +1377,7 @@ Un caso d’uso è l’elenco delle azioni o dei passaggi dell’evento necessar
 
 Gli scenari di test si basano sui casi d’uso tecnici e aziendali. Vengono utilizzati per verificare che il comportamento della soluzione sia quello previsto.
 
-### Guide utente {#user-guides}
+### Guide per l’utente {#user-guides}
 
 Le Guide utente forniscono informazioni e assistenza agli utenti della soluzione:
 
@@ -1400,7 +1400,7 @@ In base al concetto di flussi di lavoro, queste specifiche definiscono in dettag
 Le specifiche di ciascun flusso di lavoro devono includere (come minimo):
 
 * caso d’uso
-* ruoli
+* mansioni
 * passaggi
 * risultati
 * gestione degli errori

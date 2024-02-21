@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '2846'
+source-wordcount: '2835'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Il throughput massimo per questo scenario di operazioni mix è risultato pari a 
 >
 >La velocità effettiva non distingue tra i tipi di transazione all’interno di un profilo di carico. L&#39;approccio utilizzato per misurare il throughput garantisce che una proporzione fissa di ciascun tipo di transazione sia inclusa nel carico di lavoro.
 
-Le due prove di cui sopra evidenziano chiaramente che il throughput varia a seconda del tipo di operazione. Utilizza le attività del tuo ambiente come base per ridimensionare il sistema. La velocità effettiva sarà migliore con azioni meno intensive, come la modifica (anch’essa più comune).
+Le due prove di cui sopra evidenziano chiaramente che il throughput varia a seconda del tipo di operazione. Utilizza le attività del tuo ambiente come base per ridimensionare il sistema. Il throughput è migliore con azioni meno intensive, come la modifica (anche più comune).
 
 ### Memorizzazione in cache {#caching}
 
@@ -147,13 +147,13 @@ Nell’ambiente di authoring l’efficienza della memorizzazione in cache è in 
 
 Nell’ambiente di authoring i principali fattori di limitazione sono il numero di autori che lavorano in parallelo e il carico delle loro interazioni aggiunto al sistema. Pertanto, Adobe consiglia di ridimensionare il sistema in base alla velocità effettiva condivisa dei dati.
 
-Per tali scenari, ad Adobe, esegui test di benchmark su un cluster di istanze di authoring condiviso su due nodi.
+Per tali scenari, Adobe ha eseguito test di benchmark su un cluster a due nodi condiviso-niente di istanze di authoring.
 
 * **Test comparativo 1a**
 Con un cluster active-active shared-Nothing di 2 istanze di authoring, calcola la velocità effettiva massima con un profilo di caricamento in cui gli utenti eseguono un semplice esercizio di creazione pagina sopra un carico di base di 300 pagine esistenti, tutte di natura simile.
 
    * **Risultato**
-Il throughput massimo per un semplice esercizio di creazione di pagine, come quello di cui sopra (considerato come una transazione) è pari a 2016 transazioni/ora. Si tratta di un aumento di circa il 16% rispetto a un’istanza Autore indipendente per lo stesso test di benchmark.
+Il throughput massimo per un semplice esercizio di creazione di pagine, ad esempio considerato come una singola transazione, è pari a 2016 transazioni/ora. Si tratta di un aumento di circa il 16% rispetto a un’istanza Autore indipendente per lo stesso test di benchmark.
 
 * **Prova comparativa 2b**
 Con un cluster active-active shared-Nothing di 2 istanze di authoring, calcola la velocità effettiva massima quando il profilo di caricamento presenta un mix di creazione di pagine nuove (10%), modifica di pagine esistenti (80%) e creazione e modifica di una pagina in successione (10%). La complessità della pagina rimane la stessa del profilo del test benchmark 1. La modifica di base della pagina viene eseguita aggiungendo un’immagine e modificando il contenuto del testo. Anche in questo caso, l’esercizio è stato eseguito in aggiunta a un carico di base di 300 pagine di complessità, come definito nel test di riferimento 1.
@@ -179,7 +179,7 @@ Vedi anche [Parallelizzazione](/help/managing/hardware-sizing-guidelines.md#para
 
 ### Recommendations hardware {#hardware-recommendations}
 
-In genere, per l’ambiente di authoring è possibile utilizzare lo stesso hardware consigliato per l’ambiente di pubblicazione. In genere, il traffico del sito web è molto più basso nei sistemi di authoring, ma anche l’efficienza della cache è inferiore. Tuttavia, il fattore fondamentale in questo caso è il numero di autori che lavorano in parallelo, insieme al tipo di azioni che vengono effettuate al sistema. In generale, il clustering dell’AEM (dell’ambiente di authoring) è più efficace per ridimensionare le operazioni di lettura; in altre parole, un cluster AEM si adatta bene agli autori che eseguono operazioni di modifica di base.
+In genere, per l’ambiente di authoring è possibile utilizzare lo stesso hardware consigliato per l’ambiente di pubblicazione. In genere, il traffico del sito web è inferiore nei sistemi di authoring, ma anche l’efficienza della cache è inferiore. Tuttavia, il fattore fondamentale in questo caso è il numero di autori che lavorano in parallelo, insieme al tipo di azioni che vengono effettuate al sistema. In generale, il clustering dell’AEM (dell’ambiente di authoring) è più efficace per ridimensionare le operazioni di lettura; in altre parole, un cluster AEM si adatta bene agli autori che eseguono operazioni di modifica di base.
 
 I test di benchmark Adobe sono stati eseguiti utilizzando il sistema operativo Red Hat® 5.5, eseguito su una piattaforma hardware Hewlett-Packard ProLiant DL380 G5 con la seguente configurazione:
 
@@ -215,7 +215,7 @@ Il rapporto cache è la percentuale di pagine che Dispatcher può restituire sen
 
 ### Complessità di modelli e applicazioni {#complexity-of-templates-and-applications}
 
-Se utilizzi modelli complessi, AEM avrà bisogno di più tempo per eseguire il rendering di una pagina. Le pagine prese dalla cache non sono interessate da questo problema, ma la dimensione della pagina è ancora rilevante quando si considera il tempo di risposta complessivo. Il rendering di una pagina complessa può facilmente richiedere dieci volte più tempo rispetto al rendering di una pagina semplice.
+Se utilizzi modelli complessi, AEM ha bisogno di più tempo per eseguire il rendering di una pagina. Le pagine prese dalla cache non sono interessate da questo problema, ma la dimensione della pagina è ancora rilevante quando si considera il tempo di risposta complessivo. Il rendering di una pagina complessa può facilmente richiedere dieci volte più tempo rispetto al rendering di una pagina semplice.
 
 ### Formula {#formula}
 
@@ -281,7 +281,7 @@ Se si dispone di un sito Web più complesso, è inoltre necessario disporre di s
 
 ## Calcoli aggiuntivi specifici per casi d’uso {#additional-use-case-specific-calculations}
 
-Oltre al calcolo per un’applicazione web predefinita, potrebbe essere necessario considerare fattori specifici per i seguenti casi d’uso. I valori calcolati devono essere aggiunti al calcolo predefinito.
+Oltre al calcolo per un’applicazione web predefinita, considera fattori specifici per i seguenti casi d’uso. I valori calcolati devono essere aggiunti al calcolo predefinito.
 
 ### Considerazioni specifiche sulle risorse {#assets-specific-considerations}
 
@@ -291,13 +291,13 @@ Assegna almeno 16 GB di heap e configura l&#39;elemento [!UICONTROL Aggiorna ris
 
 >[!NOTE]
 >
->Un throughput più elevato delle immagini significa che le risorse informatiche devono essere in grado di tenere il passo con l&#39;I/O del sistema e viceversa. Ad esempio, se i flussi di lavoro vengono avviati mediante l’importazione di immagini, il caricamento di molte immagini tramite WebDAV potrebbe causare un backlog di flussi di lavoro.
+Un throughput più elevato delle immagini significa che le risorse informatiche devono essere in grado di tenere il passo con l&#39;I/O del sistema e viceversa. Ad esempio, se i flussi di lavoro vengono avviati mediante l’importazione di immagini, il caricamento di molte immagini tramite WebDAV potrebbe causare un backlog di flussi di lavoro.
 >
->L&#39;utilizzo di dischi separati per TarPM, data store e indice di ricerca può aiutare a ottimizzare il comportamento di I/O del sistema (tuttavia, in genere ha senso mantenere localmente l&#39;indice di ricerca).
+L&#39;utilizzo di dischi separati per TarPM, data store e indice di ricerca può aiutare a ottimizzare il comportamento di I/O del sistema (tuttavia, in genere ha senso mantenere localmente l&#39;indice di ricerca).
 
 >[!NOTE]
 >
->Consulta anche [Guida alle prestazioni di Assets](/help/sites-deploying/assets-performance-sizing.md).
+Consulta anche [Guida alle prestazioni di Assets](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Gestione multisito {#multi-site-manager}
 

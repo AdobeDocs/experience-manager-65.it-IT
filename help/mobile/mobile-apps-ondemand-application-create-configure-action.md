@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Creazione di un&#39;applicazione su richiesta {#creating-an-on-demand-application}
 
-La creazione di un’app è spesso il primo passo verso la creazione e la gestione di contenuti AEM Mobile On-Demand e viene spesso eseguita a livello di amministratore AEM. Rappresenta una shell dei contenuti, visualizzabile su dispositivi mobili, pronta per visualizzare i contenuti creati dall’autore come articoli, immagini, raccolte e così via.
+La creazione di un’app è spesso il primo passo verso la creazione e la gestione di contenuti AEM Mobile On-Demand e viene spesso eseguita a livello di amministratore AEM. Rappresenta una shell dei contenuti, visualizzabile su dispositivi mobili, pronta per visualizzare contenuti creati dall’autore come articoli, immagini e raccolte.
 
 I dettagli dell&#39;app possono essere visualizzati nel dashboard o nel Centro di controllo AEM Mobile.
 
@@ -50,7 +50,7 @@ I dettagli dell&#39;app possono essere visualizzati nel dashboard o nel Centro d
 
 ## Utilizzo dei modelli di app {#using-app-templates}
 
-I modelli di app offrono un modo semplice di utilizzare le progettazioni esistenti create dagli sviluppatori e utilizzate per la creazione di nuove app nell’ambito dell’AEM.
+I modelli di app consentono di utilizzare facilmente le progettazioni esistenti create dagli sviluppatori e utilizzate per la creazione di nuove app in ambito AEM.
 
 Che cos’è un modello di app? Consideralo come una raccolta di modelli di pagina e componenti che rappresentano una linea di base o le basi di un’app.
 Quando crei un’app basata sul modello di un’altra app, ottieni un’app con un punto di partenza rappresentativo dell’app da cui è stata creata.

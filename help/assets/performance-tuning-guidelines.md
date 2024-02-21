@@ -1,14 +1,14 @@
 ---
-title: Miglioramento delle prestazioni [!DNL Assets].
+title: Ottimizzazione delle prestazioni [!DNL Assets].
 description: Suggerimenti e indicazioni su [!DNL Experience Manager] modifiche a componenti hardware, software e di rete per eliminare i colli di bottiglia e ottimizzare le prestazioni di [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2728'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Imposta i seguenti parametri JVM:
 * `-Doak.queryLimitInMemory`=500000
 * `-Doak.queryLimitReads`=100000
 * `-Dupdate.limit`=250000
-* `-Doak.fastQuerySize`=vero
+* `-Doak.fastQuerySize`=true
 
 ## Archivio dati e configurazione della memoria {#data-store-and-memory-configuration}
 
@@ -212,7 +212,7 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick in `conf
 >
 >ImageMagick `policy.xml` e `configure.xml` I file sono disponibili all&#39;indirizzo `/usr/lib64/ImageMagick-&#42;/config/` invece di `/etc/ImageMagick/`Vedere [Documentazione di ImageMagick](https://www.imagemagick.org/script/resources.php) per il percorso dei file di configurazione.
 
-Se sta usando [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con il rappresentante dell’Assistenza clienti di Adobe per implementare queste best practice per la tua implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbe non elaborare file PSB ad altissima risoluzione con una risoluzione superiore a 30000x23000 pixel.
+Se sta usando [!DNL Experience Manager] su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Collabora con il rappresentante dell’Assistenza clienti di Adobe per implementare queste best practice per la tua implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbe non elaborare file PSB ad alta risoluzione con una risoluzione superiore a 30000 x 23000 pixel.
 
 ### Write-back XMP {#xmp-writeback}
 
