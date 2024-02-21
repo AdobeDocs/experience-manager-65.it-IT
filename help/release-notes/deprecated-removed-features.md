@@ -2,9 +2,9 @@
 title: Funzioni obsolete e rimosse in Adobe Experience Manager versione 6.5.
 description: Note sulla versione specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3443d331815ffb462890282a49e658693f157af0
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1715'
 ht-degree: 10%
 
 ---
@@ -31,8 +31,10 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 
 | Area | Funzione obsoleta | Sostituzione | Versione (SP) |
 |---|---|---|---|
+|   |   |   |   |
 | Sites | Il **Adobe Configurazione polling gestito AEM** servizio: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | Il **Adobe Importazione Sling del rapporto di AEM Analytics** servizio. Consulta Collegamento ad Adobe Analytics e creazione di framework - [Configurazione dell&#39;intervallo di importazione](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| [!DNL Sites] | Proprietà di Frammenti di esperienza per **Stato social media**. |   | 6.5.11.0 |
+| Screens | ActiveMQ in Adobe Experience Manager (AEM). ActiveMQ è stato utilizzato per la comunicazione tra due istanze di pubblicazione AEM. | L’Adobe consiglia ai clienti di utilizzare ora un load balancer. | 6.5.18.0 |
+| Proprietà di Frammenti di esperienza per **Stato social media**. |   | 6.5.11.0 |
 | [!DNL Sites] | Modelli per frammenti di contenuto, per creare frammenti di contenuto semplici. | [Frammenti di contenuto strutturati basati su modelli](/help/assets/content-fragments/content-fragments-models.md) ora. | 6.5.11.0 |
 | Integrazione Creative Cloud | L’AEM per la condivisione delle cartelle di Creative Cloud è stato introdotto nell’AEM 6.2. Consente agli utenti creativi di accedere alle risorse dell’AEM in modo da poterle aprire in [!DNL Creative Cloud] e caricare nuovi file o salvare le modifiche apportate all&#39;AEM. Una nuova funzionalità rilasciata nell’applicazione Creative Cloud, Adobe Asset Link, offre una migliore esperienza utente e un accesso più efficace alle risorse dall’AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione di Condivisione Creative Cloud cartelle con l’AEM. Sebbene la funzione sia inclusa nell’AEM, si consiglia ai clienti di utilizzare soluzioni sostitutive. | Si consiglia ai clienti di passare alle nuove funzionalità di integrazione Creative Cloud, incluso Adobe Asset Link o l’app desktop AEM. |  |
 | Risorse | `AssetDownloadServlet` è disattivato per impostazione predefinita per le istanze di pubblicazione. Per ulteriori dettagli, consulta [Lista di controllo per la sicurezza AEM](/help/sites-administering/security-checklist.md). | Configurazione descritta in [Lista di controllo per la sicurezza dell’AEM](/help/sites-administering/security-checklist.md). |  |
@@ -53,7 +55,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 | Sviluppatori | `Granite.Sling.js` libreria client. Adobe non prevede di migliorare ulteriormente la libreria client Granite.Sling.js fornita come parte della distribuzione (Quickstart). | L’Adobe consiglia ai clienti che si affidano alla capacità della libreria di eseguire il refactoring del codice per non utilizzarlo più. |  |
 | Sviluppatori | Utilizzo di YUI per comprimere/minimizzare le librerie client JavaScript. L’Adobe non prevede di aggiornare ulteriormente la libreria YUI. Fino a AEM 6.4, per impostazione predefinita YUI minimizzava JavaScript con l’opzione di passare a Google Closure Compiler (GCC). A partire da AEM 6.5, GCC è il valore predefinito. | L’Adobe consiglia ai clienti che eseguono l’aggiornamento a AEM 6.5 di passare a GCC per l’implementazione |  |
 | Sviluppatori | Editor di finestre di dialogo dell’interfaccia classica in CRXDE Liti. L’Adobe non prevede di migliorare ulteriormente l’Editor di finestre di dialogo dell’interfaccia classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |  |
-| Forms | L’integrazione di AEM Forms con AEM Mobile è stata rimossa. | Nessuna sostituzione disponibile. |  | Sviluppatori | Editor di finestre di dialogo dell’interfaccia classica in CRXDE Liti. L’Adobe non prevede di migliorare ulteriormente l’Editor di finestre di dialogo dell’interfaccia classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |  |
+| Moduli | L’integrazione di AEM Forms con AEM Mobile è stata rimossa. | Nessuna sostituzione disponibile. |  | Sviluppatori | Editor di finestre di dialogo dell’interfaccia classica in CRXDE Liti. L’Adobe non prevede di migliorare ulteriormente l’Editor di finestre di dialogo dell’interfaccia classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |  |
 | Sviluppatori | Libreria client lodash/underscore. Adobe non prevede di mantenere e aggiornare ulteriormente la libreria client Lodash/underscore fornita come parte della distribuzione (Quickstart). | L’Adobe consiglia ai clienti che richiedono ancora Lodash/underscore per il codice di aggiungerlo alla base di codice del progetto. |  |
 
 ## Funzioni rimosse {#removed-features}
@@ -66,11 +68,11 @@ In questa sezione sono elencate le funzioni e le funzionalità rimosse da AEM 6.
 | Activity Map di Analytics | Versione dell’Activity Map inclusa nell’AEM. | In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. Utilizza il [Plug-in ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=it). |  |
 | Integrazioni | L’integrazione ExactTarget è stata rimossa dalla distribuzione predefinita (Quickstart) e non è più disponibile. | Nessun sostituto. |  |
 | Integrazioni | L’integrazione API di Salesforce Force è stata rimossa dalla distribuzione predefinita (Quickstart) ed è ora un pacchetto aggiuntivo da installare da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). | La funzione è ancora disponibile. |
-| Forms | Il supporto per il servizio Central Migration Bridge di Adobe è stato rimosso in quanto Adobe Central non è più supportato. | Nessun sostituto. |  |
-| Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nessun sostituto. |  |
-| Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nessuna sostituzione |  |
-| Forms | L’aggiornamento single-hop da LiveCycle ES4 SP1 a AEM 6.5 Forms su JEE non è disponibile | Consulta [percorsi di aggiornamento disponibili](../forms/using/upgrade.md) nella documentazione sull’aggiornamento di AEM Forms. |  |
-| Forms | Supporto del clustering basato su UPD rimosso da AEM Forms su JEE | In AEM Forms su JEE è possibile utilizzare solo il clustering basato su TCP. Se si aggiorna un server multicast UDP da una versione precedente a Forms AEM 5.5 su JEE, eseguire le configurazioni manuali per passare al cluster gemfire basato su TCP. Per istruzioni dettagliate, consulta [Aggiornamento a moduli AEM 6.5 su JEE](../forms/using/upgrade-forms-jee.md) |  |
+| Moduli | Il supporto per il servizio Central Migration Bridge di Adobe è stato rimosso in quanto Adobe Central non è più supportato. | Nessun sostituto. |  |
+| Moduli | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nessun sostituto. |  |
+| Moduli | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nessuna sostituzione |  |
+| Moduli | L’aggiornamento single-hop da LiveCycle ES4 SP1 a AEM 6.5 Forms su JEE non è disponibile | Consulta [percorsi di aggiornamento disponibili](../forms/using/upgrade.md) nella documentazione sull’aggiornamento di AEM Forms. |  |
+| Moduli | Supporto del clustering basato su UPD rimosso da AEM Forms su JEE | In AEM Forms su JEE è possibile utilizzare solo il clustering basato su TCP. Se si aggiorna un server multicast UDP da una versione precedente a Forms AEM 5.5 su JEE, eseguire le configurazioni manuali per passare al cluster gemfire basato su TCP. Per istruzioni dettagliate, consulta [Aggiornamento a moduli AEM 6.5 su JEE](../forms/using/upgrade-forms-jee.md) |  |
 | Sviluppatori | Firebug Lite è stato rimosso dalla distribuzione predefinita (Quickstart) | Utilizzare le console per sviluppatori integrate nel browser |
 | Sviluppatori | Rimuovi `customJavaScriptPath` supporto in HTML Client Library Manager. | Nessuna sostituzione |  |
 | [!DNL Assets] | La funzione di offload delle risorse viene rimossa in [!DNL Adobe Experience Manager] 6.5 | Nessuna sostituzione disponibile. |  |
