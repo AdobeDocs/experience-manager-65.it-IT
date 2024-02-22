@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL dell’AEM per la distribuzione di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
+source-git-commit: 452813cf50110b515c181dba1ecbde4527808cfb
 workflow-type: tm+mt
-source-wordcount: '4708'
-ht-degree: 53%
+source-wordcount: '4796'
+ht-degree: 52%
 
 ---
 
@@ -523,6 +523,53 @@ L’esempio seguente illustra una query completa che filtra tutte le persone con
     items {
       lastName
       firstName
+    }
+  }
+}
+```
+
+Quando si esegue una query GraphQL utilizzando variabili facoltative, se un valore specifico è **non** fornito per la variabile opzionale, la variabile verrà ignorata nella valutazione del filtro. Ciò significa che i risultati della query conterranno tutti i valori, entrambi `null` e non `null`, per la proprietà correlata alla variabile di filtro.
+
+>[!NOTE]
+>
+>Se un `null` il valore è *esplicitamente* specificato per tale variabile, il filtro corrisponderà solo `null` valori per la proprietà corrispondente.
+
+Ad esempio, nella query seguente, dove non è specificato alcun valore per la proprietà `lastName`:
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+Verranno restituiti tutti gli autori:
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
     }
   }
 }

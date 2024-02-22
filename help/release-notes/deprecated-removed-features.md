@@ -2,7 +2,7 @@
 title: Funzioni obsolete e rimosse in Adobe Experience Manager versione 6.5.
 description: Note sulla versione specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3443d331815ffb462890282a49e658693f157af0
+source-git-commit: a9b8980a5e6f0488f10c408cd18b83f3ff225058
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 10%
@@ -55,7 +55,8 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 | Sviluppatori | `Granite.Sling.js` libreria client. Adobe non prevede di migliorare ulteriormente la libreria client Granite.Sling.js fornita come parte della distribuzione (Quickstart). | L’Adobe consiglia ai clienti che si affidano alla capacità della libreria di eseguire il refactoring del codice per non utilizzarlo più. |  |
 | Sviluppatori | Utilizzo di YUI per comprimere/minimizzare le librerie client JavaScript. L’Adobe non prevede di aggiornare ulteriormente la libreria YUI. Fino a AEM 6.4, per impostazione predefinita YUI minimizzava JavaScript con l’opzione di passare a Google Closure Compiler (GCC). A partire da AEM 6.5, GCC è il valore predefinito. | L’Adobe consiglia ai clienti che eseguono l’aggiornamento a AEM 6.5 di passare a GCC per l’implementazione |  |
 | Sviluppatori | Editor di finestre di dialogo dell’interfaccia classica in CRXDE Liti. L’Adobe non prevede di migliorare ulteriormente l’Editor di finestre di dialogo dell’interfaccia classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |  |
-| Moduli | L’integrazione di AEM Forms con AEM Mobile è stata rimossa. | Nessuna sostituzione disponibile. |  | Sviluppatori | Editor di finestre di dialogo dell’interfaccia classica in CRXDE Liti. L’Adobe non prevede di migliorare ulteriormente l’Editor di finestre di dialogo dell’interfaccia classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |  |
+| Moduli | L’integrazione di AEM Forms con AEM Mobile è stata rimossa. | Nessuna sostituzione disponibile. |
+| Sviluppatori | Editor di finestre di dialogo dell’interfaccia classica in CRXDE Liti. L’Adobe non prevede di migliorare ulteriormente l’Editor di finestre di dialogo dell’interfaccia classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |  |
 | Sviluppatori | Libreria client lodash/underscore. Adobe non prevede di mantenere e aggiornare ulteriormente la libreria client Lodash/underscore fornita come parte della distribuzione (Quickstart). | L’Adobe consiglia ai clienti che richiedono ancora Lodash/underscore per il codice di aggiungerlo alla base di codice del progetto. |  |
 
 ## Funzioni rimosse {#removed-features}

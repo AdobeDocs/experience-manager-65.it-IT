@@ -1,21 +1,21 @@
 ---
-title: "Riutilizzo del contenuto: Multi-Site Manager e Live Copy"
+title: "Riutilizzo del contenuto: Multi Site Manager e Live Copy"
 description: Scopri come riutilizzare i contenuti con Live Copy e il gestore multisito.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: fd30e16274b6d5f971120f4e360fc9d65ae21bec
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 23%
+source-wordcount: '2665'
+ht-degree: 19%
 
 ---
 
 # Riutilizzo del contenuto: Multi-Site Manager e Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
-Multi Site Manager (MSM) consente di utilizzare lo stesso contenuto del sito in più posizioni. Per ottenere questo risultato, MSM utilizza la funzionalità Live Copy:
+Multi Site Manager (MSM) consente di utilizzare lo stesso contenuto del sito in più posizioni. MSM utilizza la funzionalità Live Copy per ottenere questo risultato:
 
 * Con MSM è possibile:
 
@@ -117,7 +117,7 @@ Esistono molti casi d’uso per MSM e Live Copy, alcuni scenari includono:
 
 ## MSM dall’interfaccia utente {#msm-from-the-ui}
 
-MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse opzioni dalla console appropriata. Per fornire un’introduzione, di seguito sono elencate le posizioni principali:
+MSM è direttamente accessibile nell’interfaccia utente utilizzando varie opzioni dalla console appropriata. Per fornire un’introduzione, di seguito sono elencate le posizioni principali:
 
 * **Crea sito** (**Sites**)
 
@@ -151,6 +151,10 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 >[!NOTE]
 >
+>MSM può essere utilizzato con entrambe le pagine e [Frammenti esperienza](/help/sites-authoring/experience-fragments.md) poiché questi frammenti fanno parte di un’esperienza (pagina).
+
+>[!NOTE]
+>
 >Aspetti della funzionalità MSM sono utilizzati in diverse altre funzioni di Adobe Experience Manager (AEM) (ad esempio, Lanci, Catalogo); in questi casi la Live Copy è gestita da tale funzione.
 
 ### Termini utilizzati {#terms-used}
@@ -171,7 +175,7 @@ Come introduzione, la tabella seguente fornisce una panoramica dei termini princ
   </tr>
   <tr>
    <td><strong>Live Copy </strong></td>
-   <td>La copia (della sorgente), gestita dalle azioni di sincronizzazione definite dalle configurazioni di rollout. </td>
+   <td>La copia (dell’origine), gestita dalle azioni di sincronizzazione definite dalle configurazioni di rollout. </td>
    <td> </td>
   </tr>
   <tr>
@@ -180,7 +184,7 @@ Come introduzione, la tabella seguente fornisce una panoramica dei termini princ
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Relazione Live</strong><br /> </td>
+   <td><strong>Relazione live</strong><br /> </td>
    <td>Definizione effettiva dell’ereditarietà per una determinata risorsa; le connessioni tra l’origine e le Live Copy.<br /> </td>
    <td>Assicura che le modifiche all’origine possano essere sincronizzate con la Live Copy.</td>
   </tr>
@@ -191,7 +195,7 @@ Come introduzione, la tabella seguente fornisce una panoramica dei termini princ
   </tr>
   <tr>
    <td><strong>Configurazione Blueprint</strong></td>
-   <td>Configurazione predefinita che specifica un percorso origine.</td>
+   <td>Configurazione predefinita che specifica un percorso di origine.</td>
    <td>Quando in una configurazione blueprint viene fatto riferimento a una pagina blueprint, diventa disponibile il comando Rollout.</td>
   </tr>
   <tr>
@@ -233,7 +237,7 @@ Come introduzione, la tabella seguente fornisce una panoramica dei termini princ
    <td><strong>Ripristina</strong></td>
    <td><p>Reimposta una pagina Live Copy in:</p>
     <ul>
-     <li>Rimuovere tutte le ereditarietà annullate e<br /> </li>
+     <li>Rimuovi tutte le cancellazioni di ereditarietà e<br /> </li>
      <li>Restituire alla pagina lo stesso stato della pagina sorgente.</li>
     </ul> <p>La reimpostazione influisce sulle modifiche apportate alle proprietà della pagina, al sistema paragrafo e ai componenti.</p> </td>
    <td> </td>
@@ -281,7 +285,7 @@ Nell&#39;esempio precedente, `/content/we-retail/language-masters/en` è il sito
 
 >[!NOTE]
 >
-I diagrammi e le descrizioni contenuti in questa sezione rappresentano istantanee di potenziali Live Copy. Non sono complete, ma forniscono una panoramica per evidenziare caratteristiche specifiche.
+>I diagrammi e le descrizioni contenuti in questa sezione rappresentano istantanee di potenziali Live Copy. Non sono complete, ma forniscono una panoramica per evidenziare caratteristiche specifiche.
 
 Quando crei inizialmente una Live Copy, le pagine sorgente selezionate vengono riportate in rapporto 1:1 nella Live Copy. In seguito, è possibile creare nuove risorse (pagine e/o paragrafi) direttamente all’interno della Live Copy, quindi è utile essere a conoscenza di queste varianti e del loro impatto sulla sincronizzazione. Le possibili composizioni includono:
 
@@ -323,7 +327,7 @@ Quando si crea un [pagina all’interno di una live copy esistente](#live-copy-w
 
 >[!NOTE]
 >
-Se sposti o rinomini una pagina all’interno del ramo Live Copy, questa viene trattata (internamente) come una Live Copy nidificata per consentire all’AEM di tracciare le relazioni.
+>Se sposti o rinomini una pagina all’interno del ramo Live Copy, questa viene trattata (internamente) come una Live Copy nidificata per consentire all’AEM di tracciare le relazioni.
 
 #### Live Copy sovrapposte {#stacked-live-copies}
 
@@ -360,7 +364,7 @@ Un rollout è l’azione MSM centrale che sincronizza le Live Copy con la loro s
 * Una [configurazione di rollout](#rollout-configurations) può essere definita in modo che [eventi](/help/sites-administering/msm-sync.md#rollout-triggers) specifici possano causare un rollout automatico.
 * Quando crei una pagina blueprint, puoi utilizzare [Rollout](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) per inviare le modifiche alla live copy.
 
-  **Il comando Rollout** è disponibile in una pagina blueprint a cui fa riferimento una configurazione blueprint.
+  **Rollout** è disponibile in una pagina blueprint a cui fa riferimento una configurazione blueprint.
 
   ![Rollout](assets/chlimage_1-370.png)
 
@@ -374,7 +378,7 @@ Un rollout è l’azione MSM centrale che sincronizza le Live Copy con la loro s
 
 Una configurazione di rollout definisce quando e come una Live Copy viene sincronizzata con il contenuto sorgente. Una configurazione di rollout è costituita da un trigger e da una o più azioni di sincronizzazione:
 
-* **Attivatore**
+* **Trigger**
 
   Un trigger è un evento che causa la sincronizzazione di un’azione live, ad esempio l’attivazione di una pagina sorgente. MSM definisce i trigger utilizzabili.
 
@@ -384,7 +388,7 @@ Una configurazione di rollout definisce quando e come una Live Copy viene sincro
 
   >[!NOTE]
   >
-  Puoi creare azioni personalizzate per la tua istanza utilizzando l’API Java™.
+  >Puoi creare azioni personalizzate per la tua istanza utilizzando l’API Java™.
 
 Le configurazioni di rollout possono essere riutilizzate, in modo che più Live Copy possano utilizzare la stessa configurazione di rollout. In un&#39;installazione standard sono incluse diverse [configurazioni di rollout](/help/sites-administering/msm-sync.md#installed-rollout-configurations).
 
@@ -406,13 +410,13 @@ Quando modificano una singola pagina, gli autori possono **Annullare l&#39;eredi
 
 >[!CAUTION]
 >
-L&#39;azione Scollega è permanente e non reversibile.
+>L&#39;azione Scollega è permanente e non reversibile.
 
 Stacca rimuove definitivamente la relazione live tra una Live Copy e la relativa pagina blueprint. Tutte le proprietà relative a MSM vengono rimosse dalla Live Copy e le pagine Live Copy diventano una copia autonoma.
 
 >[!NOTE]
 >
-Consulta [Scollegamento di una Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) per informazioni complete, compreso l’impatto correlato sulla pagina secondaria e genitore.
+>Consulta [Scollegamento di una Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) per informazioni complete, compreso l’impatto correlato sulla pagina secondaria e genitore.
 
 ## Passaggi standard per l&#39;utilizzo di MSM {#standard-steps-for-using-msm}
 
