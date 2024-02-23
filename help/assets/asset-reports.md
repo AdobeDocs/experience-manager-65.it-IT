@@ -6,10 +6,10 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 93d0a38d13223a8580f54786bc4ffe149efe99f1
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 10%
+source-wordcount: '1155'
+ht-degree: 8%
 
 ---
 
@@ -43,12 +43,12 @@ Per generare i rapporti, effettuare le seguenti operazioni:
 
 [!DNL Experience Manager Assets] genera automaticamente i seguenti rapporti standard:
 
-* Caricare
+* Carica
 * Scarica
 * Scadenza
 * Modifiche
 * Pubblicazione
-* [!DNL Brand Portal] pubblicazione
+* [!DNL Brand Portal] pubblicare
 * Utilizzo disco
 * File
 * Condivisione collegamenti
@@ -96,7 +96,7 @@ Per generare i rapporti, effettuare le seguenti operazioni:
 
    ![Pagina Dettagli del rapporto File](assets/files_report.png)
 
-   Il rapporto **[!UICONTROL Condivisione collegamenti]** visualizza gli URL delle risorse condivise con utenti esterni da [!DNL Assets]. Include gli ID e-mail dell’utente che ha condiviso le risorse, gli ID e-mail degli utenti con cui le risorse sono condivise, la data di condivisione e la data di scadenza del collegamento. Le colonne non sono personalizzabili.
+   Il **[!UICONTROL Condivisione collegamenti]** Il rapporto mostra gli URL delle risorse condivise con utenti esterni da [!DNL Assets]. Include gli ID e-mail dell’utente che ha condiviso le risorse, gli ID e-mail degli utenti con cui le risorse sono condivise, la data di condivisione e la data di scadenza del collegamento. Le colonne non sono personalizzabili.
 
    Il **[!UICONTROL Condivisione collegamenti]** , non include opzioni per sottocartelle e rappresentazioni, in quanto pubblica semplicemente gli URL condivisi visualizzati in `/var/dam/share`.
 
@@ -115,7 +115,8 @@ Per generare i rapporti, effettuare le seguenti operazioni:
 1. Clic **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che la generazione del rapporto è stata avviata.
 1. Il giorno [!UICONTROL Rapporti su risorse] pagina, lo stato di generazione del rapporto si basa sullo stato corrente del processo di rapporto, ad esempio, [!UICONTROL Completato], [!UICONTROL Non riuscito], [!UICONTROL In coda], o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del report, fare clic sul collegamento al report. In alternativa, seleziona il rapporto e fai clic su **[!UICONTROL Visualizza]** dalla barra degli strumenti.
 
-   ![Un rapporto generato](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   [Stato del rapporto](assets/report-status.JPG)
 
    Clic **[!UICONTROL Scarica]** dalla barra degli strumenti per scaricare il rapporto in formato CSV.
 
@@ -123,12 +124,12 @@ Per generare i rapporti, effettuare le seguenti operazioni:
 
 Puoi aggiungere colonne personalizzate ai seguenti rapporti per visualizzare più dati in base ai tuoi requisiti personalizzati:
 
-* Caricare
+* Carica
 * Scarica
 * Scadenza
 * Modifiche
 * Pubblicazione
-* [!DNL Brand Portal] pubblicazione
+* [!DNL Brand Portal] pubblicare
 * File
 
 Per aggiungere colonne personalizzate a questi rapporti, effettua le seguenti operazioni:
