@@ -3,9 +3,9 @@ title: Requisiti tecnici
 description: Elenco delle piattaforme client e server supportate per Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: fbf056b6b7dcbfcaa27744672c45a87316c5f761
+source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
 workflow-type: tm+mt
-source-wordcount: '3642'
+source-wordcount: '3644'
 ht-degree: 1%
 
 ---
@@ -141,29 +141,29 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 
 >[!NOTE]
 >
-Consulta [Distribuzione delle community](/help/communities/deploy-communities.md) per ulteriori informazioni sulla funzionalità AEM Communities.
+>Consulta [Distribuzione delle community](/help/communities/deploy-communities.md) per ulteriori informazioni sulla funzionalità AEM Communities.
 
 >[!NOTE]
 >
-MongoDB è un programma software di terze parti e non è incluso nel pacchetto di licenze AEM. Per ulteriori informazioni, vedere [Criteri di licenza MongoDB](https://www.mongodb.com/licensing/server-side-public-license/faq) pagina.
+>MongoDB è un programma software di terze parti e non è incluso nel pacchetto di licenze AEM. Per ulteriori informazioni, vedere [Criteri di licenza MongoDB](https://www.mongodb.com/licensing/server-side-public-license/faq) pagina.
 >
-Per ottenere il massimo dall’implementazione AEM con MongoDB, l’Adobe consiglia di concedere in licenza la versione Enterprise di MongoDB per usufruire di un supporto professionale. Consulta [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) per ulteriori informazioni.
+>Per ottenere il massimo dall’implementazione AEM con MongoDB, l’Adobe consiglia di concedere in licenza la versione Enterprise di MongoDB per usufruire di un supporto professionale. Consulta [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) per ulteriori informazioni.
 >
-La licenza include un set di repliche standard, composto da una istanza principale e due istanze secondarie che possono essere utilizzate per le distribuzioni di authoring o pubblicazione.
+>La licenza include un set di repliche standard, composto da una istanza principale e due istanze secondarie che possono essere utilizzate per le distribuzioni di authoring o pubblicazione.
 >
-Se desideri eseguire sia l’authoring che la pubblicazione su MongoDB, è necessario acquistare due licenze separate.
+>Se desideri eseguire sia l’authoring che la pubblicazione su MongoDB, è necessario acquistare due licenze separate.
 >
-L’Assistenza clienti Adobe assiste i problemi di qualificazione relativi all’utilizzo di MongoDB con AEM.
+>L’Assistenza clienti Adobe assiste i problemi di qualificazione relativi all’utilizzo di MongoDB con AEM.
 >
-Per ulteriori informazioni, vedere la [pagina](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) MongoDB per Adobe Experience Manager.
+>Per ulteriori informazioni, vedere la [pagina](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) MongoDB per Adobe Experience Manager.
 
 >[!NOTE]
 >
-I database relazionali supportati come sopra elencati sono software di terze parti e non sono inclusi nel pacchetto di licenze AEM.
+>I database relazionali supportati come sopra elencati sono software di terze parti e non sono inclusi nel pacchetto di licenze AEM.
 >
-Per eseguire AEM 6.5 con un database relazionale supportato, è necessario un contratto di supporto separato con un fornitore di database. L’Assistenza clienti Adobe assiste i problemi qualificati relativi all’utilizzo di database relazionali con AEM 6.5.
+>Per eseguire AEM 6.5 con un database relazionale supportato, è necessario un contratto di supporto separato con un fornitore di database. L’Assistenza clienti Adobe assiste i problemi qualificati relativi all’utilizzo di database relazionali con AEM 6.5.
 >
-**La maggior parte dei database relazionali sono attualmente supportati al livello R su AEM 6.5, che viene fornito con criteri di supporto e un programma di supporto come indicato nella descrizione del livello R precedente.**
+>**La maggior parte dei database relazionali sono attualmente supportati al livello R su AEM 6.5, che viene fornito con criteri di supporto e un programma di supporto come indicato nella descrizione del livello R precedente.**
 
 ### Servlet Engine/Application Server {#servlet-engines-application-servers}
 
@@ -208,12 +208,12 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 
    >[!NOTE]
    >
-   Per i server basati su Linux (stack OSGI e JEE), il componente aggiuntivo AEM Forms richiede dipendenze di runtime come:
-   * glibc.x86_64 (2,17-196)
-   * libX11.x86_64 (1.6.7-4)
-   * zlib.x86-64 (1.2.7-17)
-   * libxcb.x86_64 (1.13-1.el7)
-   * libXau.x86_64 (1.0.8-2.1.el7)
+   >Per i server basati su Linux (stack OSGI e JEE), il componente aggiuntivo AEM Forms richiede dipendenze di runtime come:
+   >* glibc.x86_64 (2,17-196)
+   >* libX11.x86_64 (1.6.7-4)
+   >* zlib.x86-64 (1.2.7-17)
+   >* libxcb.x86_64 (1.13-1.el7)
+   >* libXau.x86_64 (1.0.8-2.1.el7)
 
 1. Le distribuzioni di produzione di Microsoft® Windows sono supportate per i clienti che eseguono l’aggiornamento a 6.5 e per l’utilizzo non di produzione. Le nuove implementazioni sono su richiesta per AEM Sites e Assets.
 1. AEM Forms è supportato su Microsoft® Window Server senza le restrizioni R di livello di supporto.
@@ -221,13 +221,13 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 
 >[!NOTE]
 >
-Se stai installando AEM Forms 6.5, assicurati di aver installato il seguente Microsoft® Visual C++ a 32 bit ridistribuibile.
+>Se stai installando AEM Forms 6.5, assicurati di aver installato il seguente Microsoft® Visual C++ a 32 bit ridistribuibile.
 >
-* Microsoft® Visual C++ 2008 ridistribuibile
-* Microsoft® Visual C++ 2010 ridistribuibile
-* Microsoft® Visual C++ 2012 ridistribuibile
-* Microsoft® Visual C++ 2013 ridistribuibile
-* Microsoft® Visual C++ 2019 (VC14.28 o versione successiva) ridistribuibile
+>* Microsoft® Visual C++ 2008 ridistribuibile
+>* Microsoft® Visual C++ 2010 ridistribuibile
+>* Microsoft® Visual C++ 2012 ridistribuibile
+>* Microsoft® Visual C++ 2013 ridistribuibile
+>* Microsoft® Visual C++ 2019 (VC14.28 o versione successiva) ridistribuibile
 
 
 ### Ambienti di elaborazione virtuali e cloud {#virtual-cloud-computing-environments}
@@ -271,9 +271,9 @@ L’interfaccia utente AEM è ottimizzata per schermi più grandi (in genere not
 
 >[!NOTE]
 >
-**Supporto per browser con cicli di rilascio rapidi:**
+>**Supporto per browser con cicli di rilascio rapidi:**
 >
-Mozilla Firefox, Google Chrome e Microsoft® Edge vengono rilasciati aggiornamenti ogni pochi mesi. Adobe si impegna a fornire aggiornamenti affinché Adobe Experience Manager mantenga il livello di supporto indicato di seguito con le prossime versioni di questi browser.
+>Mozilla Firefox, Google Chrome e Microsoft® Edge vengono rilasciati aggiornamenti ogni pochi mesi. Adobe si impegna a fornire aggiornamenti affinché Adobe Experience Manager mantenga il livello di supporto indicato di seguito con le prossime versioni di questi browser.
 
 <table>
  <tbody>
@@ -377,9 +377,9 @@ Con Dynamic Medie abilitato, si applicano i seguenti requisiti tecnici aggiuntiv
 
 >[!NOTE]
 >
-Questi requisiti di sistema **solo** applicabile se si utilizza Dynamic Medie - Modalità ibrida; Dynamic Medie - Modalità ibrida dispone di un server immagini incorporato, certificato solo su alcuni sistemi operativi.
+>Questi requisiti di sistema **solo** applicabile se si utilizza Dynamic Medie - Modalità ibrida; Dynamic Medie - Modalità ibrida dispone di un server immagini incorporato, certificato solo su alcuni sistemi operativi.
 >
-Per i clienti Dynamic Medie che eseguono Dynamic Medie in modalità Scene7 (ovvero **dynamicmedia_scene7** modalità di funzionamento), non vi sono requisiti di sistema aggiuntivi, ma solo gli stessi requisiti di sistema dell&#39;AEM. L’architettura della modalità Dynamic Medie - Scene7 utilizza il servizio per immagini basato su cloud e non il servizio incorporato nell’AEM.
+>Per i clienti Dynamic Medie che eseguono Dynamic Medie in modalità Scene7 (ovvero **dynamicmedia_scene7** modalità di funzionamento), non vi sono requisiti di sistema aggiuntivi, ma solo gli stessi requisiti di sistema dell&#39;AEM. L’architettura della modalità Dynamic Medie - Scene7 utilizza il servizio per immagini basato su cloud e non il servizio incorporato nell’AEM.
 
 #### Hardware {#hardware}
 
@@ -399,27 +399,27 @@ Se utilizzi Dynamic Medie su Linux®, è necessario soddisfare i seguenti prereq
 
 >[!NOTE]
 >
-Se la lingua è impostata in modo che LC_CTYPE non sia uguale a `en_US.UTF-8`, impedisce il funzionamento di Dynamic Medie. Per visualizzare il valore, digitare &quot;locale&quot; al prompt dei comandi. Se non è impostata correttamente, impostare la variabile di ambiente LC_CTYPE sulla stringa vuota digitando &quot;export LC_CTYPE=&quot; prima di eseguire AEM.
+>Se la lingua è impostata in modo che LC_CTYPE non sia uguale a `en_US.UTF-8`, impedisce il funzionamento di Dynamic Medie. Per visualizzare il valore, digitare &quot;locale&quot; al prompt dei comandi. Se non è impostata correttamente, impostare la variabile di ambiente LC_CTYPE sulla stringa vuota digitando &quot;export LC_CTYPE=&quot; prima di eseguire AEM.
 
 >[!NOTE]
 >
-**Disattivazione di SELinux:** Image Server non funziona con SELinux attivato. Questa opzione è attivata per impostazione predefinita. Per risolvere questo problema, modifica il **/etc/selinux/config** e modificare il valore SELinux da:
+>**Disattivazione di SELinux:** Image Server non funziona con SELinux attivato. Questa opzione è attivata per impostazione predefinita. Per risolvere questo problema, modifica il **/etc/selinux/config** e modificare il valore SELinux da:
 >
-`SELINUX=enforcing` **a** `SELINUX=disabled`
+>`SELINUX=enforcing` **a** `SELINUX=disabled`
 
 >[!NOTE]
 >
-**Architettura NUMA:** i sistemi con processori con AMD64 e Intel® EM64T sono in genere configurati come piattaforme NUMA (Non-Uniform Memory Architecture). Cioè, il kernel costruisce più nodi di memoria al momento dell&#39;avvio piuttosto che costruire un singolo nodo di memoria.
+>**Architettura NUMA:** i sistemi con processori con AMD64 e Intel® EM64T sono in genere configurati come piattaforme NUMA (Non-Uniform Memory Architecture). Cioè, il kernel costruisce più nodi di memoria al momento dell&#39;avvio piuttosto che costruire un singolo nodo di memoria.
 >
-Il costrutto a nodi multipli può causare l&#39;esaurimento della memoria su uno o più nodi prima che altri si esauriscano. Quando si verifica esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server immagini o il server di Platform) anche se è disponibile memoria.
+>Il costrutto a nodi multipli può causare l&#39;esaurimento della memoria su uno o più nodi prima che altri si esauriscano. Quando si verifica esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server immagini o il server di Platform) anche se è disponibile memoria.
 >
-Pertanto, Adobe consiglia di disattivare NUMA utilizzando il **numa=off** opzione di avvio per evitare che il kernel uccida questi processi.
+>Pertanto, Adobe consiglia di disattivare NUMA utilizzando il **numa=off** opzione di avvio per evitare che il kernel uccida questi processi.
 
 >[!NOTE]
 >
-**Il nome host del server deve risolvere:** Assicurarsi che il nome host del server sia risolvibile in un indirizzo IP. Se ciò non è possibile, aggiungere il nome host completo e l&#39;indirizzo IP a **/etc/hosts**:
+>**Il nome host del server deve risolvere:** Assicurarsi che il nome host del server sia risolvibile in un indirizzo IP. Se ciò non è possibile, aggiungere il nome host completo e l&#39;indirizzo IP a **/etc/hosts**:
 >
-`<ip address> <fully qualified hostname>`
+>`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
@@ -504,25 +504,25 @@ Per Windows x86:
 
 >[!NOTE]
 >
-PDF Generator supporta solo le versioni in inglese, francese, tedesco e giapponese dei sistemi operativi e delle applicazioni supportati.
+>PDF Generator supporta solo le versioni in inglese, francese, tedesco e giapponese dei sistemi operativi e delle applicazioni supportati.
 >
-Inoltre,
+>Inoltre,
 >
-* PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078 per eseguire la conversione.
-* Le conversioni PDF Generator per OpenOffice sono supportate solo in Windows e Linux®.
-* PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e altri software necessari per la conversione nel sistema operativo Windows.
-* PDF Generator supporta le versioni a 32 bit e a 64 bit di OpenOffice sul sistema operativo Linux®.
-* PDF Generator non supporta Microsoft® Office 365.
-* Le funzionalità PDF OCR, Optimize PDF e Export PDF sono supportate solo in Windows.
-* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. Accedi in modo programmatico alla versione in bundle solo con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta Descrizione del prodotto AEM Forms in base alla tua implementazione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
-* Il servizio PDF Generator non supporta Microsoft® Windows 10.
-* PDF Generator non riesce a convertire i file in Microsoft® Visio 2019. È possibile continuare a utilizzare Microsoft® Visio 2016 per la conversione `.VSD` e `.VSDX` file.
-* PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019. È possibile continuare a utilizzare Microsoft® Project 2016 per la conversione `.VSD` e `.VSDX` file.
+>* PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078 per eseguire la conversione.
+>* Le conversioni PDF Generator per OpenOffice sono supportate solo in Windows e Linux®.
+>* PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e altri software necessari per la conversione nel sistema operativo Windows.
+>* PDF Generator supporta le versioni a 32 bit e a 64 bit di OpenOffice sul sistema operativo Linux®.
+>* PDF Generator non supporta Microsoft® Office 365.
+>* Le funzionalità PDF OCR, Optimize PDF e Export PDF sono supportate solo in Windows.
+>* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare la funzionalità PDF Generator. Accedi in modo programmatico alla versione in bundle solo con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta Descrizione del prodotto AEM Forms in base alla tua implementazione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Il servizio PDF Generator non supporta Microsoft® Windows 10.
+>* PDF Generator non riesce a convertire i file in Microsoft® Visio 2019. È possibile continuare a utilizzare Microsoft® Visio 2016 per la conversione `.VSD` e `.VSDX` file.
+>* PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019. È possibile continuare a utilizzare Microsoft® Project 2016 per la conversione `.VSD` e `.VSDX` file.
 >
 
 ### Requisiti di AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft Windows 2016 Server, Microsoft Windows 2019 Server o Microsoft®®® Windows®®® 10
+* Microsoft Windows 2016 Server, Microsoft Windows 2019 Server, Microsoft®®® Windows 10 o Windows®®®® 11
 * Processore da 1 GHz o superiore con supporto per PAE, NX e SSE2.
 * 1 GB di RAM per 32 bit o 2 GB di RAM per sistema operativo a 64 bit
 * 16 GB di spazio su disco per 32 bit o 20 GB di spazio su disco per sistema operativo a 64 bit
