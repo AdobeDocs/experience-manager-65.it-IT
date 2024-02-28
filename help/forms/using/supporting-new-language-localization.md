@@ -8,9 +8,9 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '830'
 ht-degree: 2%
 
 ---
@@ -124,6 +124,10 @@ Il `<locale>` apparirà in `https://'[server]:[port]'/libs/cq/i18n/translator.ht
 ### Riavvia il server {#restart-the-server}
 
 Riavviare il server AEM per rendere effettive le impostazioni locali aggiunte.
+
+>[!NOTE]
+>
+> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 ## Librerie di esempio per l’aggiunta del supporto per lo spagnolo {#sample-libraries-for-adding-support-for-spanish}
 

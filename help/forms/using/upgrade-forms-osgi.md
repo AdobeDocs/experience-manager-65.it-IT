@@ -7,9 +7,9 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -57,6 +57,10 @@ Per effettuare l’aggiornamento da Forms AEM 6.3 o Forms AEM 6.4 a Forms AEM 6.
       >Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza AEM. **Non arrestare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel &lt;crx-repository>/error.log e il registro è stabile. Inoltre, alcuni pacchetti possono rimanere nello stato di installazione. Puoi ignorare lo stato di questi pacchetti.
 
 1. Riavvia l’istanza AEM.
+
+   >[!NOTE]
+   >
+   Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 1. Eseguire attività successive all&#39;installazione.
 

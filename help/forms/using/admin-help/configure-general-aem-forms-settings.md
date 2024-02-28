@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 # Impostazioni AEM Forms generali {#general-aem-forms-settings}
 
 La pagina Configurazioni core della console di amministrazione fornisce le impostazioni che possono contribuire a migliorare le prestazioni del sistema. Dopo aver configurato o aggiornato queste impostazioni, riavviare il server applicazioni.
+
+>[!NOTE]
+>
+> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 Per informazioni sull&#39;attivazione della modalità di backup sicuro, vedere [Attivazione e disattivazione della modalità di backup sicuro](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 

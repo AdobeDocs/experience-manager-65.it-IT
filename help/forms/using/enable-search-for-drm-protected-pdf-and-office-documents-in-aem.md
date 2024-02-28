@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Una connessione sicura consente un flusso ininterrotto di informazioni tra AEM F
    * **Nome utente:** Specifica il nome utente dell’account AEM Forms su JEE da utilizzare per avviare chiamate da AEM Forms sul server JEE. L’account specificato deve disporre delle autorizzazioni per richiamare Document Services sul server AEM Forms su JEE.
    * **Password**: specifica la password dell’account AEM Forms su JEE indicato nel campo Nome utente.
 
-   Clic **Salva**. L’AEM è abilitato per la ricerca di documenti protetti da PDF e Microsoft Office.
+   Fai clic su **Salva**. L’AEM è abilitato per la ricerca di documenti protetti da PDF e Microsoft Office.
 
 ### Configurare il bundle AEM Forms Client SDK utilizzando l’autenticazione reciproca {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
@@ -59,7 +59,11 @@ Una connessione sicura consente un flusso ininterrotto di informazioni tra AEM F
    * **TrustStorePassword**: specifica la password per il file truststore.
    * **Nome servizio**: aggiungere RightsManagementService all&#39;elenco dei servizi specificati.
 
-   Clic **Salva**. L’AEM è abilitato per la ricerca di documenti protetti da PDF e Microsoft Office
+   Fai clic su **Salva**. L’AEM è abilitato per la ricerca di documenti protetti da PDF e Microsoft Office
+
+   >[!NOTE]
+   >
+   > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 ## Indicizzare un esempio di documento PDF o Microsoft Office protetto tramite policy {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

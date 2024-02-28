@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -309,6 +309,10 @@ Per installare il file mysql-connector-java-5.1.39-bin.jar, effettua le seguenti
 1. Clic **[!UICONTROL Scegli file]** e seleziona il file mysql-connector-java-5.1.39-bin.jar. Inoltre, seleziona **[!UICONTROL Bundle iniziale]** e **[!UICONTROL Aggiorna pacchetti]** caselle di controllo.
 1. Clic **[!UICONTROL Installare o aggiornare]**. Al termine, riavviare il server.
 1. (*Solo Windows* a) Disattivare il firewall del sistema operativo.
+
+>[!NOTE]
+>
+> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 ## Codice di esempio per il servizio metadati e i dati del portale Forms {#sample-code-for-forms-portal-data-and-metadata-service}
 

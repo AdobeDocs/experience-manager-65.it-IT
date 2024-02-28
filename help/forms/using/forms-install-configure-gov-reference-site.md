@@ -4,9 +4,9 @@ description: Installa, configura e personalizza un pacchetto demo di AEM Forms.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4501'
+source-wordcount: '4535'
 ht-degree: 1%
 
 ---
@@ -289,7 +289,7 @@ I passaggi descritti in questa sezione sono inclusi per individuare l’ID clien
 
 Una volta completata la configurazione cloud, potrebbe essere utile testare il modello dati del modulo.
 
-1. Accedi a
+1. Passa a
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
@@ -313,6 +313,10 @@ Una volta completata la configurazione cloud, potrebbe essere utile testare il m
    >[!NOTE]
    >
    È stato segnalato che era necessario riavviare il server AEM affinché l’origine dati potesse essere associata correttamente a FDM.
+
+   >[!NOTE]
+   >
+   Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 #### Test del modello dati di Forms (Derby) {#test-fdm-derby}
 
@@ -448,7 +452,7 @@ I dati di AEM Forms Analytics sono disponibili offline o senza una configurazion
 >
 I dati di AEM Forms Analytics sono disponibili offline o senza una configurazione Adobe Analytics Cloud se `we-gov-forms.ui.analytics-<version>.zip` il pacchetto è installato, ma i dati di AEM Sites richiedono una configurazione cloud attiva.
 
-1. Accedi a
+1. Passa a
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 

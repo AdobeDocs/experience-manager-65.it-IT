@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Esistono due tipi di servizi che fanno parte delle forme AEM:
 ## Avviare o arrestare i servizi associati ai moduli AEM Forms {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
 I moduli di moduli AEM (ad esempio, Forms, Rights Management, Output) funzionano come servizi. A volte, potrebbe essere necessario interrompere o avviare i servizi per questi moduli AEM Forms. Ad esempio, è necessario arrestare e quindi riavviare un servizio AEM forms dopo aver modificato un&#39;impostazione per il servizio.
+
+>[!NOTE]
+>
+> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 1. Nella console di amministrazione, fai clic su **Servizi** > **Applicazioni e servizi** > **Gestione dei servizi**.
 1. Nella pagina Gestione servizio selezionare la casella di controllo accanto al servizio da arrestare o avviare e fare clic su Arresta o Avvia.

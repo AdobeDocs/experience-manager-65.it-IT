@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4593'
+source-wordcount: '4604'
 ht-degree: 0%
 
 ---
@@ -619,7 +619,9 @@ AEM Forms supporta un’operazione denominata `getFileUploadToken` che restituis
 
 >[!NOTE]
 >
-Per configurare AEM Forms per l’accettazione di documenti non protetti, seleziona l’opzione Consenti caricamento di documenti non protetti dalle applicazioni Flex. Riavviare quindi un&#39;applicazione o un servizio per assicurarsi che l&#39;impostazione abbia effetto.
+* Per configurare AEM Forms per l’accettazione di documenti non protetti, seleziona l’opzione Consenti caricamento di documenti non protetti dalle applicazioni Flex. Riavviare quindi un&#39;applicazione o un servizio per assicurarsi che l&#39;impostazione abbia effetto.
+* Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+
 
 ### Guida introduttiva: richiamare un processo di breve durata passando un documento protetto tramite la funzionalità di comunicazione remota {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

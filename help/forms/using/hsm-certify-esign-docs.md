@@ -6,9 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 feature: Document Services
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: 62adca19-8ed0-48b3-b7eb-9dbc3d8f96c6
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -50,6 +51,10 @@ Per impostazione predefinita, il servizio DocAssurance non è abilitato. Per abi
 
 1. Salva e chiudi il file sling.properties.
 1. Riavvia l’istanza AEM.
+
+>[!NOTE]
+>
+> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 <!--
 
@@ -107,7 +112,7 @@ L’alias contiene tutti i parametri richiesti da un HSM o etoken. Eseguire le i
    * **Certificato SHA1**: specifica il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali in uso. Verificare che nel valore SHA1 non siano presenti spazi.
    * **Tipo di dispositivo HSM**: seleziona il produttore del dispositivo HSM (Luna o altro) o eToken.
 
-   Clic **Salva**. Il modulo di sicurezza hardware è configurato per AEM Forms. Ora puoi utilizzare il modulo di sicurezza hardware con AEM Forms per firmare o certificare i documenti.
+   Fai clic su **Salva**. Il modulo di sicurezza hardware è configurato per AEM Forms. Ora puoi utilizzare il modulo di sicurezza hardware con AEM Forms per firmare o certificare i documenti.
 
 ## Utilizza le API del servizio DocAssurance per firmare o certificare un documento con chiavi digitali memorizzate sul dispositivo  {#programatically}
 

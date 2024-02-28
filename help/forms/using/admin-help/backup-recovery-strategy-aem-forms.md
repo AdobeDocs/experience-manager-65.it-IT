@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,10 @@ Prima di riavviare Forms Server dopo un ripristino, eseguire le operazioni segue
 1. Accertarsi che non vengano avviati processi da origini interne o esterne, ad esempio gli iniziatori di processi Web, SOAP o EJB, fino alla convalida del normale funzionamento del sistema.
 
 Se il database principale dei moduli AEM viene spostato o modificato, esaminare le guide all&#39;installazione relative al server applicazioni per informazioni sull&#39;aggiornamento delle informazioni di connessione al database per le origini dati dei moduli AEM IDP_DS ed EDC_DS.
+
+>[!NOTE]
+> 
+> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 ### Modifica del nome host o dell’indirizzo IP dei moduli AEM {#changing-the-aem-forms-hostname-or-ip-address}
 

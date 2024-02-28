@@ -2,9 +2,9 @@
 title: Passaggi aggiuntivi per ricevere e-mail con allegati
 description: Scopri come correggere l’errore quando non riesci a recuperare e-mail con allegati per AEM Forms sulle piattaforme JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 553aef43342a709dd8e645279999a71b9e0185f0
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ L’utente non è in grado di eseguire operazioni quali Invia PDF tramite e-mail
    * `sling.bootdelegation.activation=javax.activation.*`
 
 1. Riavvia **JBoss®**.
+
+>[!NOTE]
+>
+> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.

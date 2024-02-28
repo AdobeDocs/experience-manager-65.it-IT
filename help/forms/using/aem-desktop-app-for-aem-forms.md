@@ -7,9 +7,9 @@ topic-tags: manage
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,9 @@ L&#39;app desktop AEM utilizza il protocollo WebDAV su Microsoft® Windows e SMB
 1. Nella finestra di dialogo Configurazione componente aggiuntivo FormsManager, deselezionare **[!UICONTROL Sincronizza risorse in modo asincrono]** e fare clic su **[!UICONTROL Salva]**.
 1. Riavvia il server AEM Forms. Dopo il riavvio, il server AEM Forms è abilitato per accettare e condividere contenuti con l’app desktop AEM.
 1. Apri l’app e connettiti al server AEM Forms.
+
+   >[!NOTE]
+   >
+   > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
    Una volta stabilita la connessione, l’app popola `content/dam` e `content/dam/formsanddocuments` cartelle. Oltre a spostare i file dalle cartelle di cui sopra alle cartelle locali e viceversa, puoi utilizzare l’app per spostare i contenuti tra cartelle con popolamento automatico.

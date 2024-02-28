@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '16882'
+source-wordcount: '16917'
 ht-degree: 0%
 
 ---
@@ -594,6 +594,10 @@ Quando si utilizza una credenziale HSM nShield di crittografia per firmare o cer
 ```
 
 Dopo aver aggiunto questo valore di configurazione al file cknfastrc, è possibile utilizzare le nuove credenziali senza riavviare il server applicazioni J2EE.
+
+    >[!NOTA]
+    >
+    > Si consiglia di usare il comando &#39;Ctrl + C&#39; per riavviare l&#39;SDK. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 **Firma non attendibile**
 

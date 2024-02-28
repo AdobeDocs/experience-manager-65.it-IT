@@ -6,9 +6,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7662'
+source-wordcount: '7608'
 ht-degree: 1%
 
 ---
@@ -464,6 +464,10 @@ Questa tabella descrive le tecniche di controllo e registrazione che è possibil
 1. Imposta il valore della variabile su TRUE.
 
 1. Riavvia l’istanza di AEM Forms.
+
+>[!NOTE]
+>
+> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 ## Configurazione di AEM Forms su JEE per l’accesso oltre i confini dell’azienda {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 

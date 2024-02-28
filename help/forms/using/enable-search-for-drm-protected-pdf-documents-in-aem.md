@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Per stabilire la connessione sicura, è possibile utilizzare uno dei metodi segu
    * **Nome utente:** Specifica il nome utente dell’account AEM Forms su JEE da utilizzare per avviare chiamate dal server AEM. L’account specificato deve disporre delle autorizzazioni necessarie per avviare i servizi documentali sul server AEM Forms su JEE.
    * **Password**: specifica la password dell’account AEM Forms su JEE indicato nel campo Nome utente.
 
-   Clic **Salva**. AEM è abilitato per la ricerca di documenti PDF protetti da Document Security.
+   Fai clic su **Salva**. AEM è abilitato per la ricerca di documenti PDF protetti da Document Security.
 
 #### Configurare il bundle Adobe LiveCycle Client SDK utilizzando l’autenticazione reciproca {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
@@ -76,7 +76,7 @@ Per stabilire la connessione sicura, è possibile utilizzare uno dei metodi segu
    * **TrustStorePassword**: specifica la password per il file truststore.
    * **Nome servizio**: aggiungere RightsManagementService all&#39;elenco dei servizi specificati.
 
-   Clic **Salva**. L’AEM è abilitato alla ricerca di documenti PDF protetti da Document Security
+   Fai clic su **Salva**. L’AEM è abilitato alla ricerca di documenti PDF protetti da Document Security
 
 ### Indicizzare un esempio di documento PDF protetto tramite policy {#index-a-sample-policy-protected-pdf-document}
 
@@ -84,3 +84,7 @@ Per stabilire la connessione sicura, è possibile utilizzare uno dei metodi segu
 1. Crea una cartella in AEM Digital Asset Manager e carica i documenti di PDF protetti tramite policy nella cartella appena creata.
 
    Ora è possibile eseguire ricerche nei documenti protetti tramite policy utilizzando la funzione di ricerca AEM.
+
+   >[!NOTE]
+   >
+   > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.

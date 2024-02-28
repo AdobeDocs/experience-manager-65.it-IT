@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1882'
 ht-degree: 1%
 
 ---
@@ -118,6 +118,11 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 
    Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nella [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) articolo.
 1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e il registro è stabile.
+
+   >[!NOTE]
+   >
+   > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+
 1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
 
 ### (Solo Windows) Installazione automatica dei ridistribuibili di Visual Studio {#automatic-installation-visual-studio-redistributables}

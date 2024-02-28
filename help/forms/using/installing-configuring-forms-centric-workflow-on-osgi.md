@@ -5,9 +5,9 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1624'
 ht-degree: 2%
 
 ---
@@ -109,16 +109,21 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 
    Puoi anche scaricare il pacchetto tramite la collegare diretta elencata nell&#39;articolo sulle [versioni](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 
-1. Dopo aver installato il pacchetto, viene chiesto di riavviare il AEM istanza. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i [messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED smettano di apparire nel file AEM-Installation-Directory]/crx-quickstart/logs/error.log e che il registro sia stabile.
-1. Ripetere i passaggi da 1 a 7 in tutte le istanze Autore e Publish.
+1. Dopo aver installato il pacchetto, viene chiesto di riavviare il AEM istanza. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED smettano di apparire nel [file AEM-Installation-Directory]/crx-quickstart/logs/error.log e il registro sia stabile.
 
-## Post configurazioni di installazione {#post-installation-configurations}
+   >[!NOTE]
+   >
+   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare l&#39;SDK. Il riavvio dell&#39;SDK AEM utilizzando metodi alternativi, ad esempio l&#39;arresto dei processi Java, potrebbe lead a incoerenze nell&#39;ambiente di sviluppo AEM.
+
+1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
+
+## Configurazioni post-installazione {#post-installation-configurations}
 
 AEM Forms dispone di alcune configurazioni obbligatorie e opzionali. Le configurazioni obbligatorie includono la configurazione delle librerie BouncyCastle e dell’agente di serializzazione. Le configurazioni opzionali includono la configurazione di Dispatcher e Adobe Target.
 
 ### Configurazioni post-installazione obbligatorie {#mandatory-post-installation-configurations}
 
-#### Configurare le librerie RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
+#### Configurare RSA e BouncyCastle librerie  {#configure-rsa-and-bouncycastle-libraries}
 
 Per avviare le librerie, esegui i seguenti passaggi su tutte le istanze Author e Publish:
 

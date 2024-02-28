@@ -5,9 +5,9 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1383'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
   </tr>
   <tr>
    <td>libSM</td>
-   <td>Zlib</td>
+   <td>zlib</td>
    <td>libICE</td>
    <td>libuuide</td>
   </tr>
@@ -98,6 +98,11 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
    Puoi anche scaricare il pacchetto tramite la collegare diretta elencata nell&#39;articolo sulle [versioni](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) AEM Forms.
 
 1. Dopo aver installato il pacchetto, viene chiesto di riavviare il AEM istanza. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i [messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED smettano di apparire nel file AEM-Installation-Directory]/crx-quickstart/logs/error.log e che il registro sia stabile.
+
+   >[!NOTE]
+   >
+   > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+
 1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
 
 ## Configurazioni post-installazione {#post-installation-configurations}
@@ -139,7 +144,7 @@ Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di creazione
 
 La comunicazione interattiva è l’approccio predefinito e consigliato per la creazione di comunicazioni con i clienti in Forms AEM 6.5. Se hai effettuato l’aggiornamento o la migrazione da una versione precedente e prevedi di continuare a utilizzare le lettere (Gestione corrispondenza), installa [Pacchetto di compatibilità per AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-Il pacchetto di compatibilità per AEMFD consente di utilizzare le seguenti risorse di AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms su AEM 6.5 Forms:
+Il pacchetto Compatibilità AEMFD consente di utilizzare le seguenti risorse da AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms su AEM 6.5 Forms:
 
 * Frammenti di documento
 * Lettere
@@ -176,7 +181,7 @@ Puoi abilitare la comunicazione SSL per il modello dati modulo. Per abilitare la
 
 ## Passaggi successivi {#next-steps}
 
-Hai configurato un ambiente per l’utilizzo delle funzionalità di comunicazione interattiva e di gestione della corrispondenza. Ora, i passaggi per utilizzare la funzionalità sono i seguenti:
+È stato configurato un ambiente per l&#39;utilizzo delle funzionalità di comunicazione interattiva e gestione della corrispondenza. Ora, i passaggi per l&#39;utilizzo di questa funzionalità sono:
 
 * [Panoramica sulla gestione della corrispondenza](/help/forms/using/interactive-communications-overview.md)
 

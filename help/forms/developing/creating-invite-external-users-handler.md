@@ -3,9 +3,9 @@ title: Creazione di un handler per l’invito di utenti esterni
 description: Scopri come creare un handler per l’invito di utenti esterni. Consente al servizio di Rights Management di invitare utenti esterni a diventare utenti del Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -233,6 +233,11 @@ Per aggiungere utenti esterni da invitare tramite la console di amministrazione:
 
 1. Distribuisci il file JAR del gestore inviti utenti esterni tramite Workbench.
 1. Riavviare il server applicazioni.
+
+   >[!NOTE]
+   >
+   > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+
 1. Accedere alla console di amministrazione.
 1. Clic **[!UICONTROL Servizi]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configurazione]** > Invitato **[!UICONTROL Registrazione utente]**.
 1. Abilita la registrazione degli utenti invitati controllando **[!UICONTROL Abilita registrazione utenti invitati]** casella. Sotto **[!UICONTROL Usa sistema di registrazione integrato]**, fai clic su **[!UICONTROL No]**. Salva le impostazioni.
