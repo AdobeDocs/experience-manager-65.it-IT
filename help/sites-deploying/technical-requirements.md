@@ -3,9 +3,9 @@ title: Requisiti tecnici
 description: Elenco delle piattaforme client e server supportate per Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
+source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3650'
 ht-degree: 1%
 
 ---
@@ -529,13 +529,15 @@ Per Windows x86:
 * Memoria grafica - 128 MB di GPU (consigliati 256 MB)
 * 2,35 GB di spazio disponibile su disco rigido
 * Risoluzione di 1024 X 768 pixel o superiore
-* Accelerazione hardware video (opzionale)
+* Video accelerazione hardware (opzionale)
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 * Privilegi amministrativi per installare Designer
 * Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 32 bit per AEM Forms Designer a 32 bit
 * Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 64 bit per AEM Forms Designer a 64 bit (per stack OSGI e JEE)
 
-### Requisiti per il write-back dei metadati dell’XMP di AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
+[Installare e configurare AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
+
+### Requisiti per AEM Assets XMP metadati write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP write-back è supportato e abilitato per le piattaforme e i formati di file seguenti:
 
@@ -548,6 +550,6 @@ XMP write-back è supportato e abilitato per le piattaforme e i formati di file 
 
 * **Formati di file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 
-### Requisiti per AEM Assets per l’elaborazione di risorse contenenti metadati su Linux® {#assetsonlinux}
+### Requisiti per AEM Assets per elaborare metadati risorse pesanti su Linux® {#assetsonlinux}
 
-Il processo XMPFilesProcessor richiede il funzionamento di libreria GLIBC_2.14. Utilizzare un kernel Linux che contiene GLIBC_2.14, ad esempio il kernel Linux®® versione 3.1.x. Migliora le prestazioni per l&#39;elaborazione di risorse che contengono una grande quantità di file metadati like PSD. L&#39;utilizzo di una versione precedente di GLIBC porta a errori nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Il processo XMPFilesProcessor richiede il funzionamento di libreria GLIBC_2.14. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio Linux® versione 3.1.x. Migliora le prestazioni per l’elaborazione delle risorse che contengono una grande quantità di metadati, come i file PSD. L’utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
