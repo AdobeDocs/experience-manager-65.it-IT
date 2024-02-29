@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: c36ef1c1bd261864930039c4d60a930ead12482e
+source-git-commit: 21f39dc697a5aa3944834786a627e990e7f3ca7f
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3385'
 ht-degree: 2%
 
 ---
@@ -46,12 +46,12 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 ### [!DNL Forms]
 
 * **Generazione di rapporti sulle transazioni in AEM Forms su JEE**: è stata introdotta la funzionalità di reporting delle transazioni per AEM Forms su JEE, che consente la registrazione completa delle transazioni relative ai documenti, come conversioni, rappresentazioni e invii. Questo miglioramento aumenta l’efficienza e facilita una migliore conservazione dei documenti. La funzione è disabilitata per impostazione predefinita. Puoi abilitarlo dall’interfaccia utente di amministrazione.
-* **Sicurezza avanzata con supporto ECDSA**: AEM Forms ora offre un supporto affidabile per l’algoritmo ECDSA (Elliptic Curve Digital Signature Algorithm) tra gli stack JEE e OSGi. Gli utenti possono ora firmare, certificare e verificare i documenti di PDF con maggiore sicurezza. Gli algoritmi di curva EC supportati includono:
+* **Sicurezza avanzata con supporto ECDSA**: AEM Forms ora offre un solido supporto per l’algoritmo ECDSA (Elliptic Curve Digital Signature Algorithm) su entrambi gli stack JEE e OSGi. Gli utenti possono ora firmare, certificare e verificare i documenti di PDF con maggiore sicurezza. Gli algoritmi di curva EC supportati includono:
    * Curva ellittica ECDSA P256 con algoritmo di digest SHA256
    * Curva ellittica ECDSA P384 con algoritmo di digest SHA384
    * Curva ellittica ECDSA P512 con algoritmo di digest SHA512
 * **Compatibilità perfetta con Windows 11 per Forms Designer**: AEM Forms Designer ora supporta Windows 11, garantendo un’installazione e un funzionamento senza problemi. Gli utenti possono effettuare l’aggiornamento a Windows 11 senza dover reinstallare Forms Designer o preoccuparsi di problemi di compatibilità, garantendo la continuità del flusso di lavoro.
-* **Migliore accessibilità con ruolo &quot;Caption&quot; personalizzato in AEM Forms Designer**: AEM Forms Designer ora include un ruolo di accessibilità personalizzato denominato &quot;Didascalia&quot;, che consente agli utenti di creare XDP con elementi di didascalia personalizzati. Questa funzione migliora l&#39;accessibilità consentendo agli utenti di integrare sottotitoli personalizzati nelle progettazioni dei documenti, migliorando in tal modo l&#39;inclusività e l&#39;esperienza utente.
+* **Migliore accessibilità con ruolo &quot;Caption&quot; personalizzato in AEM Forms Designer**: AEM Forms Designer ora include un ruolo di accessibilità personalizzato denominato &quot;Didascalia&quot;, che consente agli utenti di creare XDP con elementi di didascalia personalizzati. Questa funzione migliora l’accessibilità consentendo agli utenti di integrare didascalie personalizzate nelle progettazioni dei documenti in modo da migliorare l’inclusività e l’esperienza utente.
 
 <!-- ### [!DNL Forms]
 
@@ -152,32 +152,32 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 #### [!DNL Adaptive Forms]
 
-* Quando un utente tenta di integrare AEM Forms in una piattaforma di posta con un URL pubblicato dell’AEM, i moduli AEM non aggiungono &quot;method=post&quot; durante il rendering della pagina, anche se POST è impostato nell’azione di invio con l’URL. In questo modo la piattaforma di posta non lo riconosce come forma. (FORMS-12614)
-* Quando un utente seleziona il campo data con un modello di visualizzazione in AEM Form Service Pack 6.5.18.0., non può selezionare la data corrente utilizzando la tastiera. (FORMS-12736)
+* Quando un utente tenta di integrare AEM Forms in una piattaforma di posta con un URL pubblicato dell’AEM, AEM Forms non aggiunge `method=post` durante il rendering della pagina. Questo problema si verifica anche se `POST` è impostato nell’azione di invio con l’URL. In questo modo la piattaforma di posta non lo riconosce come forma. (FORMS-12614)
+* Quando un utente seleziona il campo data con un modello di visualizzazione in AEM Form Service Pack 6.5.18.0, non può selezionare la data corrente utilizzando la tastiera. (FORMS-12736)
 * In AEM Forms Service Pack 6.5.17.0 e Service Pack 6.5.18.0, quando un utente passa da un mese all’altro nel widget del calendario, il componente Selezione data mostra una riga in più. (FORMS-11869)
 * Quando un utente fa clic su un’immagine utilizzando &quot;Scatta una foto&quot; nel componente Allegato su un dispositivo iOS, tutte le immagini vengono aggiunte alla cartella con lo stesso nome. (FORMS-12224)
 * Quando un utente aggiorna un’opzione esistente in un gruppo di pulsanti di scelta, vengono pubblicati valori di traduzione errati. (FORMS-12575)
-* Quando un utente aggiunge caratteri a un modulo adattivo su un dispositivo Android, può digitare più del numero massimo definito di caratteri nel campo Testo su focus out, su dispositivi Android. Tuttavia, funziona quando un utente seleziona il tipo di input HTML5. (FORMS-12748)
-* A causa delle etichette corrispondenti Arial etichettate da e Arial, gli assistenti vocali non sono in grado di distinguere tra queste due. Per risolvere il problema: l’etichetta &quot;aria-labelledby&quot; è sostituita da &quot;aria-descripedby&quot; per i campi modulo. (FORMS-12436)
-* Quando un autore utilizza il componente &quot;Forms adattivo - Incorpora (v2)&quot; per incorporare un modulo adattivo nella propria pagina Sites e il modulo incorporato contiene un componente CAPTCHA (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), la pagina del sito non viene riprodotta quando l’utente tenta di visualizzare la pagina del sito utilizzando &quot;Visualizza come pubblicato&quot; nell’istanza dell’autore e l’errore viene visualizzato come (FORMS-11859):
+* Quando un utente aggiunge caratteri a un modulo adattivo su un dispositivo Android™, può digitare più del numero massimo definito di caratteri nel campo Testo su focus out, su dispositivi Android™. Tuttavia, funziona quando un utente seleziona il tipo di input HTML5. (FORMS-12748)
+* A causa delle etichette corrispondenti Arial® etichettate da e Arial®, gli assistenti vocali non sono in grado di distinguere tra queste due. Per risolvere il problema: l’etichetta &quot;aria-labelledby&quot; è sostituita da &quot;aria-descripedby&quot; per i campi modulo. (FORMS-12436)
+* Quando un autore utilizza il componente &quot;Forms adattivo - Incorpora (v2)&quot; per incorporare un modulo adattivo nella propria pagina Sites e il modulo incorporato contiene un componente CAPTCHA (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), la pagina del sito non viene riprodotta quando l’utente tenta di visualizzare la pagina del sito utilizzando &quot;Visualizza come pubblicato&quot; nell’istanza di authoring. Il seguente errore viene visualizzato come (FORMS-11859):
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * Quando un utente tenta di selezionare la data utilizzando il componente del selettore data, il valore non viene aggiornato e viene visualizzato NULL. (FORMS-12742, FORMS-12736)
 
-* Quando un utente esegue l’aggiornamento a AEM Form Service Pack 6.5.19.0, dopo aver aggiornato una nuova lingua nel dizionario esistente non viene unito alle righe &quot;guideContainer&quot; per aggiungere una nuova lingua a un modulo. (FORMS-12947)
+* Quando un utente esegue l’aggiornamento a AEM Form Service Pack 6.5.19.0, dopo aver aggiornato una nuova lingua nel dizionario esistente non viene unito alle righe &quot;guideContainer&quot; per aggiungere una lingua a un modulo. (FORMS-12947)
 
-* In AEM Forms Service Pack 6.5.19.0, l’operazione invoke webservice su Java 11 non riesce e viene visualizzato l’errore (FORMS-12329):
+* In AEM Forms Service Pack 6.5.19.0, l’operazione del servizio web richiamata su Java™ 11 non riesce e viene visualizzato l’errore (FORMS-12329):
   `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
 
-* Quando un utente richiama l’operazione &quot;receive&quot; per &quot;EmailService&quot; su AEM Forms Service Pack 6.5.18.0, viene generata un’eccezione (FORMS-12050):
+* Quando un utente richiama l’operazione di &quot;ricezione&quot; per &quot;EmailService&quot; su AEM Forms Service Pack 6.5.18.0, viene generata un’eccezione (FORMS-12050):
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
-* Quando la modalità FIPS è abilitata in AEM Forms Service Pack 6.5.18.0, la creazione di un nuovo utente nel DOM predefinito non riesce e viene visualizzato l’errore (FORMS-11857):
+* Quando la modalità FIPS è abilitata in AEM Forms Service Pack 6.5.18.0, la creazione di un utente in DOM predefinito non riesce e viene visualizzato l’errore (FORMS-11857):
   `com.adobe.idp.cx.a: error seeding random number generator`
 
-* Quando un utente seleziona i font nell’interfaccia ADMINUI sotto il percorso `Home>Services>PDF Generator>Adobe PDF Settings`, non viene selezionato. Inoltre, in un profilo standard o personalizzato, la casella di riepilogo dei font disponibili è vuota, pertanto non è possibile personalizzare l’elenco secondario di **Incorpora sempre** o **Non incorporare mai**, l’utente non è in grado di configurare il font dei propri PDF con PDF Generator. I registri non mostrano alcun messaggio di errore rilevante. (FORMS-12095)
+* Quando un utente seleziona i font nell’interfaccia ADMINUI sotto il percorso `Home>Services>PDF Generator>Adobe PDF Settings`, non viene selezionato. Inoltre, in un profilo standard o personalizzato, la casella di riepilogo di Tipi di carattere disponibili è vuota. Di conseguenza, non è possibile personalizzare il sottoelenco di **Incorpora sempre** o **Non incorporare mai**. L’utente non è in grado di configurare il font dei propri PDF con PDF Generator. I registri non mostrano alcun messaggio di errore rilevante. (FORMS-12095)
 
-* In AEM Forms Service Pack 6.5.18.0, l’utente non è in grado di creare nuove impostazioni di sicurezza, non visualizza alcun errore o registro del server, ma sullo schermo viene visualizzato un messaggio di errore popup. (FORMS-12212)
+* In AEM Forms Service Pack 6.5.18.0, l’utente non è in grado di creare le impostazioni di sicurezza, non visualizza alcun errore o registro del server, ma sullo schermo viene visualizzato un messaggio di errore popup. (FORMS-12212)
 
 * Quando un utente su AEM Forms Service Pack 6.5.18.0 invia un modulo adattivo sul flusso di lavoro JEE, l’allegato nel modulo adattivo non viene inviato al processo JEE, causando un errore dell’applicazione. (FORMS-12232, FORMS-12228)
 
@@ -198,14 +198,14 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 * In AEM Forms 6.5.18.0, quando viene pubblicato un modulo adattivo, tutte le sue dipendenze, inclusi i criteri, vengono ripubblicate, anche se non sono state apportate modifiche. (FORMS-10454)
 
-* Quando un utente seleziona &quot;Microsoft SharePoint&quot; durante l’esecuzione del gestore della configurazione in AEM Forms 6.5.19.1 con la configurazione JBoss Turnkey, l’installazione di Livecycle Jboss EAR non riesce e viene visualizzato il seguente errore: (FORMS-12463)
+* Quando un utente seleziona &quot;Microsoft SharePoint&quot; durante l’esecuzione del gestore della configurazione in AEM Forms 6.5.19.1 con la configurazione JBoss® Turnkey, l’installazione del LiveCycle JBoss® EAR non riesce e viene visualizzato il seguente errore: (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
 
-* Quando un utente esegue l’aggiornamento ad AEM Forms Service Pack 6.5.18.0, a causa di una gestione delle eccezioni mancante, gli XDP passati attraverso il servizio di output con l’opzione PDF con tag abilitata non riescono. (LC-3921757)
+* Quando un utente effettua l’aggiornamento ad AEM Forms Service Pack 6.5.18.0 a causa di una gestione delle eccezioni mancante, gli XDP passati attraverso il servizio di output con l’opzione PDF con tag abilitata hanno esito negativo. (LC-3921757)
 
 * Quando un utente genera un PDF utilizzando AEM Forms Designer, i livelli di intestazione vengono taggati nella struttura di accessibilità insieme all’elemento grafico, ad esempio una casella di rettangolo. (LC-3921687)
 
