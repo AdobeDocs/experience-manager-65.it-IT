@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2236'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Più restrizioni alle query riducono i set di risultati idonei e ottimizzano ult
 
 Analogamente, senza una regola di indice aggiuntiva per `cq:tags` , anche una query full-text con una restrizione su `cq:tags` avrebbe prestazioni insoddisfacenti in quanto i risultati dell’indice restituirebbero tutte le corrispondenze full-text. La restrizione su cq:tags verrebbe filtrata dopo di essa.
 
-Un’altra causa del filtraggio post-indice è rappresentata dagli elenchi di controllo di accesso, che spesso vengono saltati durante lo sviluppo. Verificare che la query non restituisca percorsi che potrebbero essere inaccessibili all&#39;utente. A tal fine, è possibile migliorare la struttura del contenuto e fornire restrizioni rilevanti al percorso della query.
+Un’altra causa del filtraggio post-indice è rappresentata dagli elenchi di controllo di accesso, che spesso vengono saltati durante lo sviluppo. Verificare che la query non restituisca percorsi che potrebbero essere inaccessibili all&#39;utente. Ciò può essere fatto migliorando la struttura del contenuto e fornendo restrizioni rilevanti sul percorso della query.
 
 Un modo utile per identificare se l’indice Lucene restituisce molti risultati per restituire un piccolo sottoinsieme come risultato della query è quello di abilitare i registri DEBUG per `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. In questo modo è possibile visualizzare il numero di documenti caricati dall&#39;indice. Il numero di risultati finali rispetto al numero di documenti caricati non dovrebbe essere sproporzionato. Per ulteriori informazioni, consulta [Registrazione](/help/sites-deploying/configure-logging.md).
 
@@ -176,7 +176,7 @@ L’AEM supporta i seguenti linguaggi di query:
 * JCR-SQL2
 * XPath
 
-L’esempio che segue utilizza Query Builder come linguaggio di query più comune utilizzato dagli sviluppatori AEM, tuttavia gli stessi principi sono applicabili a JCR-SQL2 e XPath.
+L’esempio seguente utilizza Query Builder perché è il linguaggio di query più comune utilizzato dagli sviluppatori AEM, tuttavia gli stessi principi sono applicabili a JCR-SQL2 e XPath.
 
 1. Aggiungi una restrizione di tipo nodo in modo che la query venga risolta in un indice delle proprietà Lucene esistente.
 
@@ -466,7 +466,7 @@ Assicurati pertanto che gli indici soddisfino le query, a meno che la combinazio
 
    * Genera l’indice ottimale della proprietà Lucence dalle istruzioni di query XPath o JCR-SQL2.
 
-* **[Plug-in AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
+* **_Plug-in AEM Chrome_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
-   * Estensione del browser web Google Chrome che espone i dati di registro per richiesta, incluse le query eseguite e i relativi piani di query, nella console degli strumenti di sviluppo del browser.
-   * Richiede [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) da installare e attivare su AEM.
+   * Il _Plug-in AEM Chrome_ è un’estensione del browser web Google Chrome che espone i dati di registro per richiesta, incluse le query di esecuzione e i relativi piani di query, nella console degli strumenti di sviluppo del browser.
+   * Richiede di installare e abilitare [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) sull&#39;AEM.

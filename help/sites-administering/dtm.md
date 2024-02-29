@@ -6,24 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2146'
 ht-degree: 3%
 
 ---
 
 # Integrazione con Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-Integrare [Adobe Dynamic Tag Management](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) con AEM in modo da poter utilizzare le proprietà web di Dynamic Tag Management per monitorare i siti AEM. Dynamic Tag Management consente agli addetti al marketing di gestire i tag per la raccolta dei dati e distribuirli tra i sistemi di marketing digitale. Ad esempio, utilizza Dynamic Tag Management per raccogliere i dati di utilizzo per il tuo sito web AEM e distribuirli per l’analisi in Adobe Analytics o Adobe Target.
+Integrare [Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) con AEM in modo da poter utilizzare le proprietà web di Dynamic Tag Management per monitorare i siti AEM. Dynamic Tag Management consente agli addetti al marketing di gestire i tag per la raccolta dei dati e distribuirli tra i sistemi di marketing digitale. Ad esempio, utilizza Dynamic Tag Management per raccogliere i dati di utilizzo per il tuo sito web AEM e distribuirli per l’analisi in Adobe Analytics o Adobe Target.
 
-Prima di eseguire l’integrazione, è necessario creare il Dynamic Tag Management [proprietà web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) che tiene traccia del dominio del sito AEM. Il [opzioni di hosting](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) della proprietà web deve essere configurata in modo da poter configurare l’AEM per accedere alle librerie Dynamic Tag Management.
+Prima di procedere all’integrazione, crea Dynamic Tag Management [proprietà web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) che tiene traccia del dominio del sito AEM. Il [opzioni di hosting](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) della proprietà web deve essere configurata in modo da poter configurare l’AEM per accedere alle librerie Dynamic Tag Management.
 
 Dopo aver configurato l’integrazione, le modifiche agli strumenti e alle regole di distribuzione di Dynamic Tag Management non richiedono la modifica della configurazione di Dynamic Tag Management nell’AEM. Le modifiche sono automaticamente disponibili per AEM.
 
 >[!NOTE]
 >
->Se utilizzi DTM con una configurazione proxy personalizzata, devi configurare entrambe le configurazioni proxy del client HTTP, in quanto alcune funzionalità dell’AEM utilizzano le API 3.x e altre le API 4.x:
+>Se utilizzi DTM con una configurazione proxy personalizzata, configura entrambe le configurazioni proxy del client HTTP, in quanto alcune funzionalità dell’AEM utilizzano le API 3.x e altre le API 4.x:
 >
 >* 3.x è configurato con [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x è configurato con [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
@@ -38,7 +38,7 @@ Le seguenti opzioni di distribuzione influiscono sulla configurazione dell’int
 L’AEM supporta la Dynamic Tag Management ospitata nel cloud o su AEM.
 
 * Ospitato dal cloud: le librerie JavaScript di Dynamic Tag Management sono memorizzate nel cloud e le pagine AEM vi fanno riferimento direttamente.
-* Con hosting AEM: Dynamic Tag Management genera librerie JavaScript. AEM utilizza un modello di flusso di lavoro per ottenere e installare le librerie.
+* Ospitato da AEM: Dynamic Tag Management genera librerie JavaScript. AEM utilizza un modello di flusso di lavoro per ottenere e installare le librerie.
 
 Il tipo di hosting utilizzato dalla tua implementazione determina alcune delle attività di configurazione e implementazione che esegui. Per informazioni sulle opzioni di hosting, vedi [Hosting - Scheda Incorpora](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) nella Guida di Dynamic Tag Management.
 
@@ -83,7 +83,7 @@ Crea una configurazione cloud in modo che l’istanza AEM possa autenticarsi con
 
 >[!NOTE]
 >
->Evita di includere due codici di tracciamento Adobe Analytics nelle pagine quando la proprietà web DTM include lo strumento Adobe Analytics e utilizzi anche [Approfondimenti contenuto](/help/sites-authoring/content-insights.md). Nel tuo [Configurazione cloud Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), seleziona l’opzione Do Not Include Tracking Code (Non includere codice di tracciamento).
+>Evita di includere due codici di tracciamento Adobe Analytics nelle pagine quando la proprietà web DTM include lo strumento Adobe Analytics e utilizzi anche [Approfondimenti contenuto](/help/sites-authoring/content-insights.md). Nel tuo [Configurazione Adobe Analytics Cloud](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), seleziona l’opzione Do Not Include Tracking Code (Non includere codice di tracciamento).
 
 ### Impostazioni generali {#general-settings}
 
@@ -107,7 +107,7 @@ Crea una configurazione cloud in modo che l’istanza AEM possa autenticarsi con
   </tr>
   <tr>
    <td>Includi codice di produzione per Autore</td>
-   <td><p>Seleziona questa opzione per fare in modo che le istanze di authoring e pubblicazione dell’AEM utilizzino la versione di produzione delle librerie Dynamic Tag Management. </p> <p>Se questa opzione non è selezionata, le impostazioni di staging vengono applicate all’istanza di authoring e le impostazioni di produzione all’istanza di pubblicazione.</p> </td>
+   <td><p>Seleziona questa opzione affinché le istanze di authoring e pubblicazione dell’AEM utilizzino la versione di produzione delle librerie Dynamic Tag Management. </p> <p>Se questa opzione non è selezionata, le impostazioni di staging vengono applicate all’istanza di authoring e le impostazioni di produzione all’istanza di pubblicazione.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -144,15 +144,15 @@ Quando si ospitano le librerie Dynamic Tag Management su AEM, AEM configura auto
   </tr>
   <tr>
    <td>Suggerimento dominio</td>
-   <td><p>(Facoltativo) Il dominio del server AEM che ospita la libreria Dynamic Tag Management. Specifica un valore per ignorare il dominio predefinito configurato per <a href="/help/sites-developing/externalizer.md">Servizio Day CQ Link Externalizer</a>.</p> <p>Quando è connesso a Dynamic Tag Management, AEM utilizza questo valore per configurare il percorso HTTP di staging o il percorso HTTP di produzione delle proprietà Library Download per la proprietà web Dynamic Tag Management.</p> </td>
+   <td><p>(Facoltativo) Il dominio del server AEM che ospita la libreria Dynamic Tag Management. Specifica un valore che ti consenta di ignorare il dominio predefinito configurato per <a href="/help/sites-developing/externalizer.md">Servizio Day CQ Link Externalizer</a>.</p> <p>Quando è connesso a Dynamic Tag Management, AEM utilizza questo valore per configurare il percorso HTTP di staging o il percorso HTTP di produzione delle proprietà Library Download per la proprietà web Dynamic Tag Management.</p> </td>
   </tr>
   <tr>
    <td>Suggerimento dominio sicuro</td>
-   <td><p>(Facoltativo) Il dominio del server AEM che ospita la libreria Dynamic Tag Management tramite HTTPS. Specifica un valore per ignorare il dominio predefinito configurato per <a href="/help/sites-developing/externalizer.md">Servizio Day CQ Link Externalizer</a>.</p> <p>Quando è connesso a Dynamic Tag Management, l’AEM utilizza questo valore per configurare il percorso HTTPS di staging o il percorso HTTPS di produzione delle proprietà Library Download per la proprietà web Dynamic Tag Management.</p> </td>
+   <td><p>(Facoltativo) Il dominio del server AEM che ospita la libreria Dynamic Tag Management tramite HTTPS. Specifica un valore che ti consenta di ignorare il dominio predefinito configurato per <a href="/help/sites-developing/externalizer.md">Servizio Day CQ Link Externalizer</a>.</p> <p>Quando è connesso a Dynamic Tag Management, l’AEM utilizza questo valore per configurare il percorso HTTPS di staging o il percorso HTTPS di produzione delle proprietà Library Download per la proprietà web Dynamic Tag Management.</p> </td>
   </tr>
   <tr>
    <td>Segreto condiviso</td>
-   <td><p>(Facoltativo) Segreto condiviso da utilizzare per decrittografare il download. Ottieni questo valore dal campo Segreto condiviso della pagina Download libreria di Dynamic Tag Management.</p> <p><strong>Nota:</strong> È necessario disporre di <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> librerie installate nel computer in cui è installato AEM in modo che AEM possa decrittografare le librerie scaricate.</p> </td>
+   <td><p>(Facoltativo) Segreto condiviso da utilizzare per decrittografare il download. Ottieni questo valore dal campo Segreto condiviso della pagina Download libreria di Dynamic Tag Management.</p> <p><strong>Nota:</strong> È necessario che nel computer in cui è installato AEM siano installate le librerie OpenSSL in modo che l’AEM possa decrittografare le librerie scaricate.</p> </td>
   </tr>
   <tr>
    <td>Abilita importazione polling</td>
