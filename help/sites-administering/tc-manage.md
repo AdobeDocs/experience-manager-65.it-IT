@@ -2,9 +2,9 @@
 title: Gestione dei progetti di traduzione
 description: Scopri come gestire i progetti di traduzione in Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 219338b497dae6356a68429e9e8ab02c9cfcc3b4
 workflow-type: tm+mt
-source-wordcount: '3504'
+source-wordcount: '3506'
 ht-degree: 41%
 
 ---
@@ -420,9 +420,15 @@ Se una pagina sorgente già tradotta deve essere [rinominato o spostato](/help/s
 1. Seleziona **Copie per lingua**.
 1. Seleziona le lingue di destinazione da aggiornare.
 1. Seleziona **Aggiorna copie per lingua**.
+
+   ![update-language-copy](assets/translation-move-to.png)
+
 1. Clic **Aggiorna**. A [Launch](/help/sites-authoring/launches-promoting.md) verrà creato.
 1. Passa alla directory principale della lingua desiderata e selezionala.
 1. Utilizzo di **Riferimenti** pannello, seleziona **Lanci**.
+
+   ![promote-launch-translation](assets/promote-launch-translation.png)
+
 1. Fai clic sul lancio creato e fai clic su **Promuovi lancio**.
 
 Ora la pagina sorgente è stata spostata e la copia per lingua associata.
