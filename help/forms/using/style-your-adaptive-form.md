@@ -4,10 +4,10 @@ description: Scopri come creare un tema personalizzato, assegnare uno stile ai s
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: a361c194c238f0f2c999abfd77ca85e7697cb7bf
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 8%
+source-wordcount: '2038'
+ht-degree: 7%
 
 ---
 
@@ -130,8 +130,8 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
 
    | Proprietà | Valore |
    |---|---|
-   | Famiglia font | Arial® |
-   | Colore font | FFFFFF |
+   | Famiglia di caratteri | Arial® |
+   | Colore carattere | FFFFFF |
    | Dimensione font | 54 px |
 
 1. Seleziona la [!UICONTROL intestazione] widget e seleziona **[!UICONTROL Intestazione]**. Le opzioni per assegnare uno stile al widget Intestazione vengono visualizzate a sinistra. Espandi **[!UICONTROL Dimension e posizione]** Pannello a soffietto, imposta **[!UICONTROL Altezza]** a `120px`, e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -202,12 +202,12 @@ Per acquisire i dati, in un modulo adattivo puoi utilizzare più componenti. Cas
      </tr> 
      <tr> 
       <td>Testo</td> 
-      <td>Famiglia font</td> 
+      <td>Famiglia di caratteri</td> 
       <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Testo</td> 
-      <td>Colore font</td> 
+      <td>Colore carattere</td> 
       <td>939598<br /> </td> 
      </tr> 
      <tr> 
@@ -250,7 +250,7 @@ Per acquisire i dati, in un modulo adattivo puoi utilizzare più componenti. Cas
      </tr> 
      <tr> 
       <td>Informazioni di base</td> 
-      <td>Colore sfondo</td> 
+      <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
      <tr> 
@@ -271,12 +271,12 @@ Per acquisire i dati, in un modulo adattivo puoi utilizzare più componenti. Cas
      </tr> 
      <tr> 
       <td>Testo<br /> </td> 
-      <td>Famiglia font</td> 
+      <td>Famiglia di caratteri</td> 
       <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Testo</td> 
-      <td>Colore font</td> 
+      <td>Colore carattere</td> 
       <td>FFFFFF</td> 
      </tr> 
      <tr> 
@@ -304,7 +304,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
 
    | Proprietà | Valore |
    |---|---|
-   | Mobile | A sinistra |
+   | Mobile | Sinistra |
    | Larghezza | 10% |
 
 1. Seleziona la **[!UICONTROL Bozza indirizzo approvato dal governo]** e selezionare il ![aem_6_3_edit](assets/aem_6_3_edit.png)icona. Imposta le seguenti proprietà:
@@ -319,7 +319,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
      <tr> 
       <td>Dimensioni e posizione</td> 
       <td>Mobile</td> 
-      <td>A sinistra</td> 
+      <td>Sinistra</td> 
      </tr> 
      <tr> 
       <td>Dimensioni e posizione</td> 
@@ -350,7 +350,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
      </tr> 
      <tr> 
       <td>Informazioni di base</td> 
-      <td>Colore sfondo</td> 
+      <td>Colore di sfondo</td> 
       <td>FFFFFF</td> 
      </tr> 
      <tr> 
@@ -375,12 +375,12 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
      </tr> 
      <tr> 
       <td>Testo</td> 
-      <td>Famiglia font</td> 
+      <td>Famiglia di caratteri</td> 
       <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Testo</td> 
-      <td>Colore font</td> 
+      <td>Colore carattere</td> 
       <td>BCBEC0</td> 
      </tr> 
      <tr> 
@@ -409,7 +409,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
      <tr> 
       <td>Dimension e posizione</td> 
       <td>Mobile</td> 
-      <td>A destra</td> 
+      <td>Destra</td> 
      </tr> 
      <tr> 
       <td>Dimension e posizione</td> 
@@ -424,7 +424,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
      </tr> 
      <tr> 
       <td>Informazioni di base</td> 
-      <td>Colore sfondo</td> 
+      <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
      <tr> 
@@ -442,16 +442,77 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
 Puoi utilizzare vari font per progettare un modulo adattivo. È possibile che in tutti i dispositivi su cui viene visualizzato il modulo adattivo non siano presenti i font utilizzati per progettarlo. È possibile utilizzare un servizio di caratteri Web per fornire i caratteri richiesti al dispositivo di destinazione.
 
 [!DNL Adobe Fonts] è un servizio di Web Fonts. Puoi configurare e utilizzare il servizio con i moduli adattivi. Da utilizzare [!DNL Adobe Fonts] in un modulo adattivo:
+1. Sfoglia [libreria di font di Adobe](https://fonts.adobe.com/) e scegliere il tipo di carattere con cui applicare lo stile al modulo.
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
 
 >[!NOTE]
 >
->![typekit-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] ora si chiama Adobe Fonts ed è incluso in Creative Cloud e altri abbonamenti. [Ulteriori informazioni](https://fonts.adobe.com/).
+> È possibile aggiungere tag o filtri per perfezionare l&#39;elenco dei caratteri.
 
-1. Creare un [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) creare un kit, aggiungere il carattere Myriad Pro al kit, pubblicare il kit e ottenere l&#39;ID del kit. È necessario utilizzare [!DNL Adobe Fonts] (Web Fonts) in un modulo adattivo.
-1. Nell&#39;AEM [!DNL Forms] Server, passa a ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Ora, apri una cartella di configurazione. Se una configurazione è già disponibile, fai clic su **[!UICONTROL Crea]** per creare un’istanza.
+1. Fai clic sul pulsante &lt;/> per aggiungere la famiglia a un progetto web, nel caso in cui trovi un font che ti piace.
 
-   Nella finestra di dialogo Crea configurazione, specifica un **Titolo** per la configurazione, quindi fai clic su **[!UICONTROL Crea]**. Ti reindirizzano alla pagina di configurazione. In [!UICONTROL Modifica componente] che viene visualizzata, fornisci **ID kit** e fai clic su **[!UICONTROL OK]**.
+   ![select-font-from-font-libary](assets/select-font-from-font-library.png)
 
-1. Configurare il tema per l’utilizzo di [!DNL Adobe Fonts] configurazione. Nell’istanza di authoring, apri **[!UICONTROL Tema globale]** nell’editor temi. Nell’editor temi, passa a **[!UICONTROL Opzioni tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configura]**. In **[!UICONTROL Configurazione Adobe Fonts]** , selezionare il kit e fare clic su **[!UICONTROL Salva]**.
+   Viene visualizzata la finestra di dialogo Aggiungi font a un progetto web.
 
-   I font aggiunti al **[!UICONTROL Adobe Fonts]** sono disponibili per la selezione in **[!UICONTROL Testo]** Pannello a soffietto di tutti i componenti.
+   >[!NOTE]
+   >
+   > È possibile aggiungere caratteri al progetto Web solo se il pulsante &lt;/> è disponibile.
+
+2. Assegna un nome al progetto web.
+3. Selezionare le caselle di controllo per selezionare i pesi e gli stili dei caratteri che si desidera includere.
+
+   ![aggiungere una libreria di tipi di carattere](assets/add-a-font-window.png)
+
+4. Seleziona **Clic** per creare il progetto.
+5. Copia il codice da incorporare e l’URL dalla schermata.
+   ![codice di incorporamento e URL](assets/font-add-url.png)
+
+6. Clic **Fine** per chiudere la finestra del progetto web.
+7. Accedi all’istanza AEM e vai all’URL `http://server:port/crx/de/index.jsp#`
+8. Creare una struttura di cartelle in CRXDE, ad esempio `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+9. Passa alla nuova `clientlibs` cartella e aggiungi `allowProxy` e `categories` proprietà.
+10. Accedi a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e crea una cartella css.
+11. Vai alla cartella CSS creata e crea un file. Ad esempio, crea un file come `fonts.css` e incolla il codice da incorporare insieme all’URL.
+   ![Struttura delle cartelle](/help/forms/using/assets/fonts-add-in-crxde.png)
+12. Salva le modifiche.
+
+>[!NOTE]
+>
+> Per utilizzare i font personalizzati aggiunti in un modulo adattivo, accertati che il nome della libreria client nel **[!UICONTROL Categoria libreria client]** viene allineato con il nome specificato nell’opzione categorie della cartella clientlib.
+
+I font inclusi sono ora accessibili al modulo adattivo tramite la seguente libreria client font personalizzata.
+
+
+<!--
+Create Adobe Fonts Configuration
+
+1. To create a API Token, go to **login** > **API Token** > **Make me a new API token**.
+
+   ![API token](/help/forms/using/assets/fonts-api-token.png)
+
+2. Once, you click **Make me a new API token**, a new token is generated. 
+3. Copy the generated token for future use.
+4. Now login to your AEM  author instance. On the author instance, go to **[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**> **[!UICONTROL Adobe Fonts]**.
+5. Select the configuration container and click **Create**. **[UICONTROL Create Adobe Fonts Configuration]** screen appears.
+    ![API token](/help/forms/using/adobe-font-configuration-screen.png)
+
+6. Spceify the name and paste the API token in the **[!UICONTROL Kit ID]** textbox.
+7. Click **Create**.
+
+
+
+The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
+1. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. 
+2. In the **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
+
+
+1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
+1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
+
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+
+
