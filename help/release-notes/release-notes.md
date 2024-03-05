@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 53bfd33a8bbb10d0ed82968a115ed316f63efecb
+source-git-commit: 5f95281130f0f2cac6d115b59b828946c2f70d33
 workflow-type: tm+mt
-source-wordcount: '3466'
+source-wordcount: '3462'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
    * Curva ellittica ECDSA P384 con algoritmo di digest SHA384
    * Curva ellittica ECDSA P512 con algoritmo di digest SHA512
 * **Compatibilità perfetta con Windows 11 per Forms Designer**: AEM Forms Designer ora supporta Windows 11, garantendo un’installazione e un funzionamento senza problemi. Gli utenti possono effettuare l’aggiornamento a Windows 11 senza dover reinstallare Forms Designer o preoccuparsi di problemi di compatibilità, garantendo la continuità del flusso di lavoro.
-* **Migliore accessibilità con ruolo &quot;Caption&quot; personalizzato in AEM Forms Designer**: AEM Forms Designer ora include un ruolo di accessibilità personalizzato denominato &quot;Didascalia&quot;, che consente agli utenti di creare XDP con elementi di didascalia personalizzati. Questa funzione migliora l’accessibilità consentendo agli utenti di integrare didascalie personalizzate nelle progettazioni dei documenti in modo da migliorare l’inclusività e l’esperienza utente.
+* **Migliore accessibilità con ruolo &quot;Caption&quot; personalizzato in AEM Forms Designer**: AEM Forms Designer ora include un ruolo di accessibilità personalizzato denominato &quot;Didascalia&quot; per creare XDP con elementi di didascalia personalizzati. Questa funzione migliora l’accessibilità consentendo agli utenti di integrare didascalie personalizzate nelle progettazioni dei documenti per migliorarne l’inclusività e l’esperienza di utilizzo.
 
 <!-- ### [!DNL Forms]
 
