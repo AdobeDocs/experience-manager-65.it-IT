@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
+source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3486'
 ht-degree: 2%
 
 ---
@@ -470,11 +470,11 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
    1. Scarica l’hotfix per il sistema operativo in uso:
 
-   * [Hotfix per Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
-   * [Hotfix per Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-   * [Hotfix per Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+      * [Hotfix per Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+      * [Hotfix per Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+      * [Hotfix per Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
-   1. Carica e installa il pacchetto (.zip) tramite Gestione pacchetti.
+   1. Carica e installa il pacchetto (.zip) tramite [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
 
 * Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. (CQDOC-21355)
 
