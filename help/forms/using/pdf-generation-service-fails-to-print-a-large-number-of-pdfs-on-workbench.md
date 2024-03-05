@@ -1,7 +1,7 @@
 ---
 title: La generazione di PDF non riesce a stampare un numero elevato di PDF con WorkBench
 description: Quando un cliente genera un numero elevato di PDF tramite servizi implementati tramite WorkBench, il servizio di stampa non riesce.
-source-git-commit: 9cdf22918f08fe505c3efd0ce43235e3442165d5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Altri fattori da considerare durante la progettazione del modello di modulo per 
 
 Poiché la memoria massima del processo è limitata e la memoria utilizzata dal processo non dipende solo dalle dimensioni del file di dati. È strettamente collegata alla struttura del modulo e, in una certa misura, alla quantità effettiva di dati incorporati nel modulo.
 
-Se il modulo ha molti nodi di piccole dimensioni con dati di piccole dimensioni, il processo consumerà più memoria (e quindi si esaurisce più rapidamente di memoria), rispetto a un modulo che non ha nodi (anche) con grandi dati.
+Se il modulo ha molti nodi di piccole dimensioni con dati di piccole dimensioni, il processo consuma più memoria (e quindi esaurisce la memoria più rapidamente) rispetto a un modulo che ha un numero inferiore di nodi (anche) con dati di grandi dimensioni.
 
 Leggi le [Appendice sotto](#appendix) per ulteriori informazioni, dove i risultati dei test si basano su Stampa modulo (PDF non taggato). L&#39;utilizzo di PDF con tag aumenta i requisiti di memoria del processo. Dipende anche dal numero di campi nel modulo: il requisito di memoria del processo è leggermente superiore a 1,5 volte rispetto a quello di PDF non taggato.
 

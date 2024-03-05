@@ -4,10 +4,10 @@ description: Forms adattivo fornisce un meccanismo per creare un segmento di mod
 topic-tags: author
 keywords: Aggiungere frammenti di modulo adattivo, frammenti di moduli adattivi, Crea frammento di modulo, aggiungere un frammento a un modulo adattivo, gestire frammenti
 feature: Adaptive Forms, Core Components
-source-git-commit: 304b1bf2e19942fb728944330512a83a9006cb2a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 3%
+source-wordcount: '1840'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 3%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | Questo articolo |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=it) |
 
 Anche se ogni modulo è progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni, ad esempio per fornire dati personali come nome e indirizzo, dettagli sulla famiglia e dettagli sul reddito. Gli sviluppatori di moduli devono creare questi segmenti comuni ogni volta che viene creato un nuovo modulo.
 
@@ -61,7 +61,7 @@ Puoi creare un frammento di modulo adattivo da zero o salvare un pannello in un 
 
 
 
-1. Fare clic su Crea **e quindi su****Apri** per aprire il frammento, con un modello predefinito, in modalità di modifica. In modalità di modifica, è possibile aggiungere qualsiasi componente modulo adattivo al frammento.
+1. Fare clic su **Crea** e quindi su **Apri** per aprire il frammento, con un modello predefinito, in modalità di modifica. In modalità di modifica, è possibile aggiungere qualsiasi componente modulo adattivo al frammento.
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Inoltre, se è stato selezionato uno schema XML o un modello di modulo XDP come modello di modulo per il frammento, nel contenuto Finder verrà visualizzata una nuova scheda che visualizza la gerarchia del modello di modulo. Consente di trascinare gli elementi del modello di modulo sul frammento. Gli elementi del modello modulo aggiunti vengono convertiti in componenti modulo mantenendo le proprietà originali dell’XDP o XSD associato.
 
@@ -180,7 +180,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando l�
 ## Punti chiave da ricordare quando si lavora con i frammenti {#key-points-to-remember-when-working-with-fragments}
 
 * Assicurati che il nome del frammento sia univoco. Il frammento non viene creato se è presente un frammento con lo stesso nome.
-* In un modulo adattivo basato su XDP, se salvi un pannello come frammento che include un altro frammento XDP, il frammento risultante verrà associato automaticamente al frammento XDP secondario. Nel caso di un modulo adattivo basato su XSD, il frammento risultante sarà associato alla directory principale dello schema.
+* In un modulo adattivo basato su XDP, se salvi un pannello come frammento che include un altro frammento XDP, il frammento risultante viene associato automaticamente al frammento XDP secondario. Se utilizzi un modulo adattivo basato su XSD, il frammento risultante sarà associato alla directory principale dello schema.
 * Quando si crea un frammento di modulo adattivo, in CRXDE Liti viene creato un nodo di frammento simile al nodo guideContainer di un modulo adattivo.
 * Un frammento in un modulo adattivo che utilizza un modello di dati del modulo diverso non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
 * I frammenti di moduli adattivi sono disponibili per l’utilizzo tramite la scheda Frammenti di moduli adattivi nel Finder di contenuti AEM.

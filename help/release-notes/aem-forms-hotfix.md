@@ -2,7 +2,7 @@
 title: Hotfix per AEM Forms
 description: Informazioni su come scaricare e installare un hotfix per AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 1%
@@ -50,7 +50,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      </td>
     <td>
     <ul>
-    <li> Il componente Firma a mano scarabocchio incluso non viene riprodotto correttamente per un’anteprima in un modulo adattivo. (FORMS-12073)</li>
+    <li> Il componente preconfigurato Firma a mano non riesce a eseguire il rendering per un’anteprima in un modulo adattivo. (FORMS-12073)</li>
     </ul>
     </td>    
    </tr>
