@@ -2,9 +2,9 @@
 title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 70f52515fc877ad5f20e14c2a26a934d3dcdfe01
+source-git-commit: f00d2c88ba6727f8f8597fefeb467b612b23dea3
 workflow-type: tm+mt
-source-wordcount: '3486'
+source-wordcount: '3524'
 ht-degree: 2%
 
 ---
@@ -474,6 +474,8 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
       * [Hotfix per Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
    1. Carica e installa il pacchetto (.zip) tramite [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
+
+   1. Riavvia il server AEM e verifica lo stato di attivazione di tutti i bundle al termine del processo di riavvio. Puoi monitorare lo stato dei bundle accedendo a: `https://server:host/system/console/bundles`. Assicurati che tutti i bundle siano attivi prima di procedere con altre attività.
 
 * Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. (CQDOC-21355)
 
