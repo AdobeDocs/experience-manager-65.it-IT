@@ -1,10 +1,10 @@
 ---
 title: Credenziali JWT nella console Adobe Developer obsolete
 description: Informazioni sull’impatto della rimozione delle credenziali JWT in Adobe Developer Console su AEM
-source-git-commit: 18bee77ab6fcb2d635d389f929c1dd8e2bc25de5
+source-git-commit: 72974d27fecbd9c242f66e203b02463c22b93108
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 81%
+source-wordcount: '456'
+ht-degree: 80%
 
 ---
 
@@ -21,11 +21,6 @@ Questo articolo fornisce alcuni contesti aggiuntivi su come i clienti di AEM 6.5
 In questo momento, l’aspetto principale è che le funzionalità AEM non supportano ancora le nuove credenziali da server a server OAuth. Il supporto sarà presto disponibile: entro la metà di aprile 2024 attraverso uno speciale pacchetto di compatibilità da installare per AEM 6.5, se si sta eseguendo il Service Pack 20 più recente o inferiore (Service Pack 21 e versioni successive lo includeranno automaticamente). È possibile che sia stata ricevuta un’e-mail con le istruzioni per la migrazione delle credenziali JWT, ma occorre tenere presente che è possibile e si dovrebbe rimandare la migrazione delle credenziali fino a quando AEM non supporterà il nuovo tipo di credenziali da server a server OAuth.
 
 Le sezioni seguenti elencano gli scenari in cui si deve (o in alcuni casi non si deve) sostituire le credenziali dell’account di servizio (JWT) con le credenziali da server a server OAuth, quando AEM fornirà il supporto a metà aprile. [Scopri come](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) sostituire le credenziali in futuro.
-
->[!NOTE]
->
->[**AEM** Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#crxde-lite-and-developer-console) (notare che la sigla **AEM** nella denominazione, che la distingue da **Adobe** Developer Console) fornisce un’utilità per generare [token JWT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) utilizzati per le API da server a server. Queste credenziali non sono obsolete e possono continuare a essere utilizzate.
-
 
 ## Integrazione di AEM con altre soluzioni Adobe {#integrating-aem-with-other-adobe-solutions}
 
