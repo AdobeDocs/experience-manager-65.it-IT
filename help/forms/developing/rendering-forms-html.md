@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4104'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ In un modulo multipagina, le modifiche apportate da JavaScript a una pagina non 
 
 Definire innanzitutto una funzione di callback chiamata prima dell&#39;invio del modulo, in cui il nome della funzione è `_user_onsubmit`. Si presume che la funzione non genererà alcuna eccezione o, in caso contrario, l’eccezione verrà ignorata. Si consiglia di posizionare la funzione JavaScript nella sezione head dell’html; tuttavia, è possibile dichiararla ovunque prima della fine dei tag script che includono `xfasubset.js`.
 
-Quando formserver esegue il rendering di un XDP che contiene un elenco a discesa, oltre a creare l’elenco a discesa, crea anche due campi di testo nascosti. Questi campi di testo memorizzano i dati dell’elenco a discesa (uno memorizza il nome visualizzato delle opzioni, l’altro il valore delle opzioni). Pertanto, ogni volta che un utente invia il modulo, vengono inviati tutti i dati dell’elenco a discesa. Supponendo di non voler inviare tutti quei dati ogni volta, puoi scrivere uno script personalizzato per disabilitarlo. Ad esempio: il nome dell’elenco a discesa è `drpOrderedByStateProv` e viene racchiuso nell’intestazione del sottomodulo. Il nome dell’elemento di input HTML sarà `header[0].drpOrderedByStateProv[0]`. Il nome dei campi nascosti che memorizzano e inviano i dati del menu a discesa ha i seguenti nomi: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+Quando formserver esegue il rendering di un XDP che contiene un elenco a discesa, oltre a creare l’elenco a discesa, crea anche due campi di testo nascosti. Questi campi di testo memorizzano i dati dell’elenco a discesa (uno memorizza il nome visualizzato delle opzioni, l’altro il valore delle opzioni). Pertanto, ogni volta che un utente invia il modulo, vengono inviati tutti i dati dell’elenco a discesa. Supponendo di non voler inviare ogni volta una quantità di dati così elevata, puoi scrivere uno script personalizzato per disabilitarla. Ad esempio: il nome dell’elenco a discesa è `drpOrderedByStateProv` e viene racchiuso nell’intestazione del sottomodulo. Il nome dell’elemento di input HTML sarà `header[0].drpOrderedByStateProv[0]`. Il nome dei campi nascosti che memorizzano e inviano i dati del menu a discesa ha i seguenti nomi: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
 Se non desideri pubblicare i dati, puoi disattivare questi elementi di input nel modo seguente. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 

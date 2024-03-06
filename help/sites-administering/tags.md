@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 3%
+source-wordcount: '1769'
+ht-degree: 4%
 
 ---
 
@@ -76,7 +76,7 @@ Per accedere alla console Assegnazione tag:
 
 Per creare uno spazio dei nomi, seleziona la **`Create Namespace`** icona.
 
-Lo spazio dei nomi è di per sé un tag e non deve necessariamente contenere tag secondari. Tuttavia, per continuare a creare una tassonomia, [crea tag secondari](#creating-tags), che a sua volta può essere un tag foglia o un tag contenitore.
+Lo spazio dei nomi è di per sé un tag e non deve contenere tag secondari. Tuttavia, per continuare a creare una tassonomia, [crea tag secondari](#creating-tags), che a sua volta può essere un tag foglia o un tag contenitore.
 
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![create_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
@@ -257,7 +257,7 @@ Le autorizzazioni tag sono [&#39;protetto (per impostazione predefinita)&#39;](/
    * nel riquadro sinistro selezionare il gruppo (o l&#39;utente) per il quale [autorizzazione di lettura](/help/sites-administering/security.md#permissions) deve essere concesso
    * nel riquadro di destra, individua il **Percorso **dello spazio dei nomi dei tag
 
-      * ad esempio, `/content/cq:tags/mycommunity`
+      * ad esempio: `/content/cq:tags/mycommunity`
 
    * seleziona la `checkbox`nel **Letto** colonna
    * seleziona **Salva**

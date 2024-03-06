@@ -7,7 +7,7 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '3595'
 ht-degree: 8%
@@ -257,7 +257,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
 1. Allo stesso modo, crea una dipendenza tra il valore Video nel campo Tipo di risorsa e altri campi, come Codec e Durata.
 1. Ripeti i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel [!UICONTROL Tipo risorsa] campi e campi quali [!UICONTROL Conteggio pagine] e [!UICONTROL Autore].
-1. Clic **[!UICONTROL Salva]**. Applica lo schema metadati a una cartella.
+1. Fai clic su **[!UICONTROL Salva]**. Applica lo schema metadati a una cartella.
 
 1. Passa alla cartella a cui hai applicato lo schema metadati e apri la pagina delle proprietà di una risorsa. A seconda della scelta effettuata nel campo Tipo di risorsa, vengono visualizzati i campi di metadati a cascata pertinenti.
 
@@ -340,7 +340,7 @@ L’ereditarietà dei metadati da parte delle risorse si basa sullo schema appli
 
    *Figura: Campo di testo aggiunto all’editor modulo schema metadati.*
 
-1. Clic **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina.
 1. Clic **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
 1. Seleziona la cartella in cui applicare lo schema modificato, quindi fai clic su **[!UICONTROL Applica]**.
@@ -368,7 +368,7 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 
    *Figura: Campo obbligatorio nell’editor modulo schema metadati.*
 
-1. Clic **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina. Seleziona il modulo e fai clic su **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina. Seleziona il modulo e fai clic su **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
 1. Passa alla cartella e carica alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista a schede della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
 

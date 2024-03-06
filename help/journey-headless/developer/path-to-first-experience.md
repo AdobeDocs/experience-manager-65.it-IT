@@ -2,10 +2,10 @@
 title: Percorso della tua prima esperienza con AEM Headless
 description: In questa parte del Percorso per sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1990'
-ht-degree: 92%
+source-wordcount: '1951'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ In questa parte del [Percorso per sviluppatori headless AEM,](overview.md) compr
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di AEM Headless, [Guida introduttiva a AEM Headless ](getting-started.md) hai imparato la teoria di base su cosa sia un CMS headless e ora dovresti:
+Nel documento precedente del percorso AEM headless, [Guida introduttiva di AEM Headless](getting-started.md) hai imparato la teoria di base di cosa sia un CMS headless e ora dovresti:
 
 * Comprendere le nozioni di base delle funzioni headless di AEM.
 * Conoscere i prerequisiti per l’utilizzo delle funzionalità headless di AEM.
@@ -35,7 +35,7 @@ Questo documento illustra i passaggi necessari per implementare il primo progett
 
 ## Requisiti {#requirements}
 
-Prima di continuare con questo documento, accertati di aver rivisto il documento precedente nel Percorso per sviluppatori headless AEM, [Guida introduttiva a AEM Headless ](getting-started.md) assicurandoti di:
+Prima di continuare con questo documento, assicurati di aver rivisto il documento precedente nel Percorso per sviluppatori headless AEM, [Guida introduttiva di AEM Headless](getting-started.md) assicurati di:
 
 * Soddisfare i requisiti elencati.
 * Aver preso in considerazione la definizione del tuo progetto, compresi ambito, ruoli e prestazioni.
@@ -44,7 +44,7 @@ Prima di continuare con questo documento, accertati di aver rivisto il documento
 
 Per avviare il tuo primo progetto AEM headless devi disporre di un modello di contenuto che supporti la personalizzazione e gli aggiornamenti che desideri eseguire su tutti i tuoi canali.
 
-Separato da AEM, assicurati anche di disporre di una configurazione dell’ambiente di sviluppo appropriata se stai creando un’applicazione lato client in modo da poter testare il client rispetto alle chiamate API a AEM.
+Oltre all’AEM, se stai creando un’applicazione lato client, vuoi anche assicurarti di disporre di un ambiente di sviluppo appropriato, in modo da poter testare il client in base alle chiamate API all’AEM.
 
 ### Definizione di modelli di contenuto e API {#defining-models}
 
@@ -52,7 +52,7 @@ Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i can
 
 È invece necessario considerare il modo in cui il contenuto su superfici diverse è correlato in base a principi di organizzazione quali gerarchie di marchi e prodotti, categorie di beni o superfici o passaggi nel percorso del cliente. Ad esempio, se disponi di un insieme di superfici che supportano un marchio specifico di auto prodotte, potresti voler iniziare con un modello di contenuto per informazioni generali che sarebbe vero per l’intera auto e poi avere elementi più specifici come il contenuto necessario da quando l’auto si avvia a quando ci sono problemi di servizio. Un modello di questo tipo applicherà l’ereditarietà del contenuto generale del marchio automobilistico, consentendo al tempo stesso turni in base al contesto specifico necessario. Aiuta anche nella gestione futura degli aggiornamenti di questo contenuto in quanto puoi applicare il controllo in base a ruoli come l’addetto marketing o il responsabile prodotto per l’intero marchio automobilistico rispetto a un autore responsabile dell’esperienza di “avvio automobile”.
 
-Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client su cui deve essere mostrato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate per tutti i client che necessitano di tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i clienti utilizzino le API più efficienti per le loro esigenze aziendali.
+Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client su cui deve essere mostrato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate per tutti i client che necessitano di tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i client sfruttino le API più efficienti per le esigenze aziendali.
 
 ## Informazioni sugli ambienti {#understanding-environments}
 
@@ -68,9 +68,9 @@ Durante la fase di sviluppo, si consiglia di lavorare con un ambiente di svilupp
 
 ### Cooperazione tra sviluppatori e autori di contenuti {#cooperation}
 
-Gli sviluppatori devono disporre di un ambiente di sviluppo AEM configurato con i modelli di contenuto popolati. Lo sviluppatore sviluppa il client che utilizzerà i contenuti da AEM headless, in quanto gli autori dei contenuti stanno ancora creando i contenuti. Ecco perché le definizioni API sono molto importanti. Utilizzando l’SDK dell’AEM, lo sviluppatore può creare un hook di test in modo da consentire la creazione di test client e unit test per garantire che il client sia in grado di eseguire correttamente il rendering del contenuto.
+Gli sviluppatori devono disporre di un ambiente di sviluppo AEM configurato con i modelli di contenuto popolati. Lo sviluppatore sviluppa il client che utilizzerà i contenuti da AEM headless, in quanto gli autori dei contenuti stanno ancora creando i contenuti. Ecco perché le definizioni API sono molto importanti. Sfruttando l’SDK di AEM, lo sviluppatore può creare un hook di prova in modo per poter creare test client e dell’unità per assicurarsi che il client sia in grado di eseguire correttamente il rendering del contenuto.
 
-Gli autori e le autrici dei contenuti creano contenuti in base ai modelli di contenuto definiti nell’ambiente di staging. Con lo strumento di creazione dei frammenti di contenuto, l’autore crea un frammento di contenuto o ne modifica uno esistente. Prima di pubblicarlo, l’autore o l&#39;autrice può visualizzare un’anteprima dell’aspetto che avrà nel client collaborando con lo sviluppatore per inviare il modello di contenuto allo sviluppo o impostare un ambiente per sviluppatori in modo che gli autori e le autrici possano visualizzare in anteprima l’aspetto che avrà nel client.
+Gli autori e le autrici creano contenuti in base ai modelli di contenuto definiti nell’ambiente di staging. Utilizzando lo strumento di authoring per frammenti di contenuto, l’autore crea un nuovo frammento di contenuto o ne modifica uno esistente. Prima di pubblicarlo, l’autore o l&#39;autrice può visualizzare un’anteprima dell’aspetto che avrà nel client collaborando con lo sviluppatore per inviare il modello di contenuto allo sviluppo o impostare un ambiente per sviluppatori in modo che gli autori e le autrici possano visualizzare in anteprima l’aspetto che avrà nel client.
 
 ## Configurazione {#setup}
 
@@ -94,7 +94,7 @@ Questa è una panoramica di ciò che è necessario per implementare la prima app
 
 ## Best practice   {#best-practices}
 
-Un progetto headless non solo ha successo grazie alla tecnologia implementata, ma anche grazie alla buona pianificazione e alla governance dei progetti. Di seguito sono riportate alcune best practice che gli autori e gli sviluppatori di contenuti devono tenere a mente durante la pianificazione del progetto.
+Un progetto headless non solo ha successo grazie alla tecnologia implementata, ma anche grazie alla buona pianificazione e alla governance dei progetti. Di seguito sono riportate alcune best practice che sviluppatori e autori di contenuti devono tenere a mente durante la pianificazione del progetto.
 
 ### Organizzazione dei contenuti {#organizing-content}
 
@@ -143,7 +143,7 @@ Indipendentemente dal tuo stile di apprendimento, Adobe vuole che tu abbia succe
 Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless consultando il documento [Come modellare i contenuti come Modelli di contenuto AEM](model-your-content.md) le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono indispensabili per continuare il percorso headless.
 
 * [Percorso di traduzione AEM headless](/help/journey-headless/translation/overview.md): questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, dell’utilizzo di AEM dei contenuti headless e di come tradurli.
-* [Sviluppo headless per AEM Sites ](/help/sites-developing/headless/introduction.md): una rapida introduzione per orientare lo sviluppatore AEM Headless nell’utilizzo delle funzioni necessarie
+* [Sviluppo headless per AEM Sites](/help/sites-developing/headless/introduction.md) - Una rapida introduzione per orientare lo sviluppatore headless AEM con le funzioni necessarie
 * [Esercitazioni di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui queste esercitazioni pratiche per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
 * [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [Guida AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che mettono in evidenza le API GraphQL di AEM.

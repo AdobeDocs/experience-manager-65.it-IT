@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0f898fd81d2952b01eac7e6b8aa9970868009b15
 workflow-type: tm+mt
-source-wordcount: '5182'
+source-wordcount: '5177'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Per le relazioni standard trasmesse con l’AEM:
 >  `P:<name> = <value>` : descrive una proprietà `<name>` che deve essere impostato sul valore di `<value>`.
 >
 >* Il rientro mostra le dipendenze gerarchiche tra i nodi.
->* Elementi separati da | indica un elenco di elementi possibili; ad esempio tipi o nomi; ad esempio, `String|String[]` indica che la proprietà può essere String o String[].
+>* Elementi separati da | indica un elenco di possibili elementi, ad esempio tipi o nomi, ad esempio `String|String[]` indica che la proprietà può essere String o String[].
 >
 >* `[]` rappresenta un array, ad esempio Stringa[] o un array di nodi come in [Definizione query](#query-definition).
 >
@@ -122,7 +122,7 @@ La query:
 
 **Il punto chiave in questo caso è che ogni singolo nodo restituito nel set di risultati della query viene utilizzato per generare una singola riga sul report (quindi una relazione 1:1).**
 
-Lo sviluppatore deve assicurarsi che la query definita per un report restituisca un set di nodi appropriato per quel report. Tuttavia, il nodo stesso non deve necessariamente contenere tutte le informazioni richieste, che possono anche essere derivate dai nodi padre e/o figlio. Ad esempio, la query utilizzata per [Report utente](/help/sites-administering/reporting.md#user-report) seleziona i nodi in base al tipo di nodo (in questo caso `rep:user`). Tuttavia, la maggior parte delle colonne in questo report non prende i propri dati direttamente da questi nodi, ma dai nodi figlio `profile`.
+Lo sviluppatore deve assicurarsi che la query definita per un report restituisca un set di nodi appropriato per quel report. Tuttavia, il nodo stesso non deve contenere tutte le informazioni richieste, che possono anche essere derivate dai nodi padre e/o figlio. Ad esempio, la query utilizzata per [Report utente](/help/sites-administering/reporting.md#user-report) seleziona i nodi in base al tipo di nodo (in questo caso `rep:user`). Tuttavia, la maggior parte delle colonne in questo report non prende i propri dati direttamente da questi nodi, ma dai nodi figlio `profile`.
 
 ### Coda di elaborazione {#processing-queue}
 

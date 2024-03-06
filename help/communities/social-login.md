@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2773'
-ht-degree: 1%
+source-wordcount: '2672'
+ht-degree: 0%
 
 ---
 
@@ -122,10 +122,10 @@ Il [Applicazione e provider OAuth Adobe Granite](#adobe-granite-oauth-applicatio
 
    >[!NOTE]
    >
-   >È possibile aggiungere o rimuovere gruppi in qualsiasi momento. Tuttavia, le appartenenze degli utenti esistenti non saranno influenzate. L’iscrizione automatica si applica solo ai nuovi utenti creati dopo l’aggiornamento di questo campo. Per i siti in cui gli utenti anonimi sono disabilitati, scegliere di aggiungere gli utenti al gruppo di membri della community corrispondente destinato a quel sito chiuso.
+   >È possibile aggiungere o rimuovere gruppi in qualsiasi momento. Tuttavia, le appartenenze degli utenti esistenti non vengono influenzate. L’iscrizione automatica si applica solo ai nuovi utenti creati dopo l’aggiornamento di questo campo. Per i siti in cui gli utenti anonimi sono disabilitati, scegliere di aggiungere gli utenti al gruppo di membri della community corrispondente destinato a quel sito chiuso.
 
    * Seleziona **[!UICONTROL SALVA]**.
-   * **[!UICONTROL Pubblicazione]**.
+   * **[!UICONTROL Pubblica]**.
 
 Il risultato è un [Applicazione e provider OAuth Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) che non richiede ulteriori modifiche a meno che non venga aggiunto ulteriore ambito (autorizzazioni). L&#39;ambito predefinito è quello standard per l&#39;accesso a Facebook. Se desideri un ambito aggiuntivo, devi modificare direttamente la configurazione OSGI. Se sono state apportate modifiche direttamente tramite il sistema o la console, evita di modificare le configurazioni del servizio cloud dall’interfaccia utente touch per evitare la sovrascrittura.
 
@@ -181,7 +181,7 @@ Se è necessario apportare modifiche, in ogni istanza di pubblicazione dell’AE
       * nome
       * nome
       * cognome
-      * link
+      * collegamento
       * lingua
       * immagine
       * fuso orario
@@ -277,17 +277,17 @@ Il [Applicazione e provider OAuth Adobe Granite](#adobe-granite-oauth-applicatio
 
      Se questa opzione è selezionata, l&#39;accesso con un account di Twitter creerà una voce utente AEM e la aggiungerà come membro ai gruppi di utenti selezionati. Il valore predefinito è selezionato (scelta consigliata).
 
-   * **[!UICONTROL Maschera ID utenti]**
+   * **[!UICONTROL Maschera ID utente]**
 
      Lascia deselezionata.
 
-   * **[!UICONTROL Aggiungi a gruppo di utenti]**
+   * **[!UICONTROL Aggiungi a gruppi di utenti]**
 
      Seleziona Aggiungi gruppo di utenti per scegliere uno o più [gruppi di membri](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) per il sito community a cui verranno aggiunti gli utenti.
 
    >[!NOTE]
    >
-   >È possibile aggiungere o rimuovere gruppi in qualsiasi momento. Tuttavia, le appartenenze degli utenti esistenti non saranno influenzate. L’iscrizione automatica si applica solo ai nuovi utenti creati dopo l’aggiornamento di questo campo. Per i siti in cui gli utenti anonimi sono disabilitati, aggiungere gli utenti al gruppo di membri della community corrispondente destinato a quel sito chiuso.
+   >È possibile aggiungere o rimuovere gruppi in qualsiasi momento. Tuttavia, le appartenenze degli utenti esistenti non vengono influenzate. L’iscrizione automatica si applica solo ai nuovi utenti creati dopo l’aggiornamento di questo campo. Per i siti in cui gli utenti anonimi sono disabilitati, aggiungere gli utenti al gruppo di membri della community corrispondente destinato a quel sito chiuso.
    >
 
 1. Seleziona **[!UICONTROL SALVA]** e **[!UICONTROL Pubblica]**.
@@ -491,6 +491,6 @@ In un&#39;istanza Autore, ha effettuato l&#39;accesso con privilegi amministrati
 
 Per ulteriori informazioni e strumenti, consulta [Query e indicizzazione Oak](../../help/sites-deploying/queries-and-indexing.md).
 
-## Configurazione del Dispatcher {#dispatcher-configuration}
+## Configurazione Dispatcher {#dispatcher-configuration}
 
 Consulta [Configurazione di Dispatcher per le community](dispatcher.md).

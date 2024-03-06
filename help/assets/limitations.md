@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: cc219931430ba571745e6ef254a034a689acd1cf
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '347'
 ht-degree: 2%
 
 ---
@@ -31,11 +31,12 @@ Quando crei un set 360 gradi o un set di immagini o carichi PDF per l’estrazio
 | Risorsa - Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
 | **Immagine** - Numero di ritagli avanzati per immagine | 5 | 100 |
-| **Tutti i set** - Numero di risorse duplicate per set | Nessun duplicato | 20 |
+| **Tutti i set** - Numero di risorse duplicate per set | Nessun duplicato | 20‡ |
 | **Tutti i set** - Numero massimo di risorse per set | 5-10 immagini per set | 1000 |
 | **Set 360 gradi** - Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
 | **PDF** - Numero massimo di pagine per un PDF da considerare per l’estrazione |  | 100 (per tutti i PDF) |
 
+‡ best practice prevede di non avere risorse duplicate in un set. Il limite è di 20 duplicati per una singola risorsa. Se aggiungi un altro duplicato per quella risorsa, all’interno di quel set, la richiesta restituisce un errore o ignora il duplicato.
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Combinazioni di browser Web e sistemi operativi non supportate per Dynamic Medie {#unsupported-browser-os}

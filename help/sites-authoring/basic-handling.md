@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2963'
+source-wordcount: '2964'
 ht-degree: 41%
 
 ---
@@ -106,7 +106,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">Frammento esperienza</a> è un’esperienza autonoma che può essere riutilizzata su tutti i canali, con varianti e senza dover copiare e incollare ripetutamente le esperienze o parti di esse.</td>
   </tr>
   <tr>
-   <td>Forms</td>
+   <td>Moduli</td>
    <td>Questa console consente di creare, gestire ed elaborare le <a href="/help/forms/using/introduction-aem-forms.md">moduli e documenti</a>.</td>
   </tr>
   <tr>

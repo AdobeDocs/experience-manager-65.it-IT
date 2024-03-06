@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3360'
 ht-degree: 2%
 
 ---
@@ -451,7 +451,7 @@ Per aggiungere componenti nella pagina di destinazione, trascina i componenti fi
 
 L’eliminazione di una pagina di destinazione è simile all’eliminazione di una normale pagina AEM.
 
-L’unica eccezione è che quando elimini una pagina di destinazione desktop, viene eliminata anche la pagina di destinazione mobile corrispondente (se presente) ma non viceversa.
+L’unica eccezione è che quando elimini una pagina di destinazione desktop, viene eliminata anche la pagina di destinazione mobile corrispondente (se presente), ma non viceversa.
 
 ### Pubblicazione di una pagina di destinazione {#publishing-a-landing-page}
 

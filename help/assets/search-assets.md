@@ -7,10 +7,10 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '5736'
-ht-degree: 6%
+source-wordcount: '5650'
+ht-degree: 5%
 
 ---
 
@@ -121,7 +121,7 @@ Puoi migliorare la pertinenza delle parole chiave per determinate risorse in mod
 
 1. Dalla sezione [!DNL Assets] interfaccia utente, apri la pagina delle proprietà della risorsa. Clic **[!UICONTROL Avanzate]** e fai clic su **[!UICONTROL Aggiungi]** in **[!UICONTROL Privilegi elevati per parole chiave di ricerca]**.
 1. In **[!UICONTROL Promozione ricerca]** , specificare una parola chiave per la quale si desidera aumentare la ricerca dell&#39;immagine e quindi fare clic su **[!UICONTROL Aggiungi]**. È possibile specificare più parole chiave nello stesso modo.
-1. Fai clic su **[!UICONTROL Salva e chiudi]**. La risorsa promossa per questa parola chiave viene visualizzata tra i risultati di ricerca principali.
+1. Clic **[!UICONTROL Salva e chiudi]**. La risorsa promossa per questa parola chiave viene visualizzata tra i risultati di ricerca principali.
 
 Puoi utilizzarlo a tuo vantaggio, incrementando la classificazione di alcune risorse nei risultati di ricerca per la parola chiave di destinazione. Guarda l’esempio di video seguente. Per informazioni dettagliate, consulta [cerca in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
@@ -143,7 +143,7 @@ Puoi utilizzarlo a tuo vantaggio, incrementando la classificazione di alcune ris
 
 ### Trova immagini simili {#visualsearch}
 
-Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai clic su **[!UICONTROL Trova simili]** nella vista a schede di un’immagine o nella barra degli strumenti. [!DNL Experience Manager]Dall’archivio DAM,  visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. Scopri [come configurare la ricerca per similarità](#configvisualsearch).
+Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai clic su **[!UICONTROL Trova simili]** nella vista a schede di un’immagine o nella barra degli strumenti. [!DNL Experience Manager] visualizza dall’archivio DAM le immagini con tag avanzati simili a quelle selezionate dall’utente. Scopri [come configurare la ricerca per similarità](#configvisualsearch).
 
 ![Trova immagini simili utilizzando l’opzione nella vista a schede](assets/search_find_similar.png)
 
@@ -167,7 +167,7 @@ Puoi cercare le risorse digitali in base ai valori esatti dei campi di metadati,
 | Creatore | creatore:John |
 | Dove si trova | posizione:NA |
 | Descrizione | description:&quot;Immagine di esempio&quot; |
-| Strumento di creazione | creatortool:&quot;Adobe Photoshop&quot; |
+| Strumento creazione | creatortool:&quot;Adobe Photoshop&quot; |
 | Proprietario copyright | copyright:&quot;Adobe Systems&quot; |
 | Collaboratore | collaboratore:John |
 | Condizioni d&#39;uso | usageterms:&quot;CopyRights Reserved&quot; |
@@ -426,7 +426,7 @@ Puoi effettuare le seguenti operazioni con le risorse in cui hai effettuato la r
 
 ### Ordinare i risultati della ricerca {#sort}
 
-Ordina i risultati della ricerca per individuare più rapidamente le risorse richieste. È possibile ordinare i risultati della ricerca nella vista a elenco e solo quando si seleziona **[[!UICONTROL File]](#searchui)** dal **[!UICONTROL Filtri]** pannello. [!DNL Assets] utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse all’interno di una cartella o nei risultati di una query di ricerca, indipendentemente dal numero. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
+Ordina i risultati della ricerca per individuare più rapidamente le risorse richieste. È possibile ordinare i risultati della ricerca nella vista a elenco e solo quando si seleziona **[[!UICONTROL File]](#searchui)** dal **[!UICONTROL Filtri]** pannello. [!DNL Assets] utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse (indipendentemente dal numero) all’interno di una cartella o nei risultati di una query di ricerca. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
 
 Nella vista a elenco, puoi ordinare i risultati della ricerca così come puoi ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Nome, Titolo, Stato, Dimension, Dimensione, Valutazione, Utilizzo, Creato, Modificato, Pubblicato, Flusso di lavoro ed Estratto.
 
@@ -483,7 +483,7 @@ Collega e rimuovi le risorse visualizzate nei risultati di ricerca. Seleziona le
 | Troppi risultati di ricerca. | Parametro di ricerca ampio. | Valuta di limitare il [ambito della ricerca](#scope). L’utilizzo di tag avanzati potrebbe fornire più risultati di quanto previsto. Consulta [comportamento di ricerca con tag avanzati](#withsmarttags). |
 | Risultati di ricerca non correlati o parzialmente correlati. | Il comportamento di ricerca cambia con l’assegnazione di tag avanzati. | Comprendere [modifica della ricerca dopo l’assegnazione di tag avanzati](#withsmarttags). |
 | Nessun suggerimento per il completamento automatico delle risorse. | Le nuove risorse caricate non sono ancora indicizzate. I metadati non sono immediatamente disponibili come suggerimenti quando inizi a digitare una parola chiave di ricerca nella barra di Omnisearch. | [!DNL Experience Manager] attende la scadenza di un periodo di timeout (un’ora per impostazione predefinita) prima di eseguire un processo in background per indicizzare i metadati per tutte le risorse appena caricate o aggiornate, quindi aggiunge i metadati all’elenco dei suggerimenti. |
-| Nessun risultato di ricerca. | <ul><li>Le risorse che corrispondono alla query non esistono. </li><li> Spazio vuoto aggiunto prima della query di ricerca. </li><li> Il campo dei metadati non supportato contiene la parola chiave cercata.</li><li> Ricerca effettuata durante la disattivazione di una risorsa. </li></ul> | <ul><li>Cerca utilizzando una parola chiave diversa. In alternativa, utilizza l’assegnazione di tag avanzati o la ricerca per similarità per migliorare i risultati della ricerca. </li><li>[Limitazione nota](#limitations).</li><li>Tutti i campi di metadati non vengono considerati per le ricerche. Consulta [ambito](#scope).</li><li>Cerca in un secondo momento o modifica l’orario di attivazione e l’orario di disattivazione delle risorse richieste.</li></ul> |
+| Nessun risultato. | <ul><li>Le risorse che corrispondono alla query non esistono. </li><li> Spazio vuoto aggiunto prima della query di ricerca. </li><li> Il campo dei metadati non supportato contiene la parola chiave cercata.</li><li> Ricerca effettuata durante la disattivazione di una risorsa. </li></ul> | <ul><li>Cerca utilizzando una parola chiave diversa. In alternativa, utilizza l’assegnazione di tag avanzati o la ricerca per similarità per migliorare i risultati della ricerca. </li><li>[Limitazione nota](#limitations).</li><li>Tutti i campi di metadati non vengono considerati per le ricerche. Consulta [ambito](#scope).</li><li>Cerca in un secondo momento o modifica l’orario di attivazione e l’orario di disattivazione delle risorse richieste.</li></ul> |
 | Filtro di ricerca o predicato non disponibile. | <ul><li>Il filtro di ricerca non è configurato.</li><li>Non è disponibile per l’accesso.</li><li>(È meno probabile) Le opzioni di ricerca non vengono personalizzate nella distribuzione in uso.</li></ul> | <ul><li>Contatta l’amministratore per verificare se le personalizzazioni della ricerca sono disponibili o meno.</li><li>Contatta l’amministratore per verificare se il tuo account dispone dei privilegi o delle autorizzazioni per utilizzare la personalizzazione.</li><li>Contatta l’amministratore e controlla le personalizzazioni disponibili per [!DNL Assets] distribuzione in uso.</li></ul> |
 | Quando si cercano immagini visivamente simili, manca un’immagine prevista. | <ul><li>Immagine non disponibile in [!DNL Experience Manager].</li><li>Immagine non indicizzata. In genere, se è stato caricato di recente.</li><li>L’immagine non dispone di tag avanzati.</li></ul> | <ul><li>Aggiungi l&#39;immagine a [!DNL Assets].</li><li>Contatta l’amministratore per reindicizzare l’archivio. Inoltre, assicurati di utilizzare l’indice appropriato.</li><li>Contatta l’amministratore per assegnare tag avanzati alle risorse rilevanti.</li></ul> |
 | Quando si ricercano immagini visivamente simili, viene visualizzata un’immagine irrilevante. | Comportamento di ricerca visiva. | [!DNL Experience Manager] visualizza il maggior numero possibile di risorse potenzialmente rilevanti. Ai risultati vengono aggiunte immagini meno rilevanti, se presenti, ma con una classificazione di ricerca inferiore. La qualità delle corrispondenze e la rilevanza delle risorse trovate diminuiscono con lo scorrimento verso il basso dei risultati di ricerca. |

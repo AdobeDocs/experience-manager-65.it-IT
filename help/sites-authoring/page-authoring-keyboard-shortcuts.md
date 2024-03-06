@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 57%
@@ -30,7 +30,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 |  | `Ctrl-y` | [Ripristina l’ultima modifica](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleziona più paragrafi |
 |  | `Ctrl-c` | Copia i paragrafi selezionati |
-|  | `Ctrl-x` | Taglia i paragrafi selezionati (i paragrafi tagliati scompaiono dall’interfaccia solo dopo essere stati incollati) |
+|  | `Ctrl-x` | Taglia i paragrafi selezionati (i paragrafi tagliati non scompaiono nell’interfaccia utente finché non vengono incollati) |
 |  | `Ctrl-v` | Incolla i paragrafi precedentemente tagliati o copiati |
 |  | `Ctrl-Backspace` | Elimina paragrafi selezionati |
 | Modalità **Modifica** - Editor Rich Text | `Ctrl-b` | Grassetto |
@@ -45,7 +45,7 @@ Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop ch
 
 >[!NOTE]
 >
->Le scelte rapide da tastiera dell’editor sono sempre attive, anche se le [scelte rapide della console sono state disattivate](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+Le scelte rapide da tastiera dell’editor sono sempre attive, anche se le [scelte rapide della console sono state disattivate](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Tasti modificatori specifici del sistema operativo {#os-specific-modifier-keys}
 

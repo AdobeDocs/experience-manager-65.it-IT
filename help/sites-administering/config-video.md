@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '479'
+ht-degree: 0%
 
 ---
 
 # Configurare il componente Video {#configure-the-video-component}
 
-Il [Componente video](/help/sites-authoring/default-components-foundation.md#video) consente di inserire nella pagina una risorsa video predefinita e pronta all’uso.
+Il [Componente video](/help/sites-authoring/default-components-foundation.md#video) consente di inserire nella pagina una risorsa video predefinita.
 
 Affinché la trascodifica venga eseguita correttamente, l&#39;amministratore installa FFmpeg separatamente. Consulta [Installare FFmpeg e configurare AEM](#install-ffmpeg). Anche gli amministratori [Configurare i profili video](#configure-video-profiles) da utilizzare con elementi HTML5.
 
@@ -81,4 +81,4 @@ A **configurare AEM**, effettua le seguenti operazioni:
 
 >[!NOTE]
 >
->Le modifiche ai modelli di flusso di lavoro predefiniti non vengono mantenute quando si aggiorna l’istanza AEM. L’Adobe consiglia di copiare i modelli di flusso di lavoro modificati prima di modificarli. Ad esempio, copia la [!UICONTROL Aggiorna risorsa DAM] prima di modificare il passaggio Transcodifica FFmpeg in [!UICONTROL Aggiorna risorsa DAM] modello per scegliere i nomi dei profili video esistenti prima dell&#39;aggiornamento. Quindi, puoi sovrapporre `/apps` per consentire all&#39;AEM di recuperare le modifiche personalizzate al modello OOTB.
+>Le modifiche ai modelli di flusso di lavoro predefiniti non vengono mantenute quando si aggiorna l’istanza AEM. L’Adobe consiglia di copiare i modelli di flusso di lavoro modificati prima di modificarli. Ad esempio, copia la [!UICONTROL Aggiorna risorsa DAM] prima di modificare il passaggio Transcodifica FFmpeg in [!UICONTROL Aggiorna risorsa DAM] modello per scegliere i nomi dei profili video esistenti prima dell&#39;aggiornamento. Quindi, puoi sovrapporre `/apps` per consentire all’AEM di recuperare le modifiche personalizzate al modello preconfigurato.

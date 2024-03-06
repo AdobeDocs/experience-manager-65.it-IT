@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6469'
+source-wordcount: '6470'
 ht-degree: 12%
 
 ---
@@ -394,12 +394,12 @@ Il test dei componenti in combinazione offre un riflesso più preciso del compor
 
 | Scenario | Componente | No. di utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Media mista | Home page | 10 | 1 |  |  |
+| Media mista | Pagina Home | 10 | 1 |  |  |
 |   | Ricerca | 10 | 1 |  |  |
 |   | Notizie | 10 | 2 |  |  |
 |   | Eventi | 10 | 1 |  |  |
 |   | Attivazioni | 10 | 3 |  | Simulazione del comportamento dell’autore. |
-| Picco misto | Home page | 100 | 5 |  |  |
+| Picco misto | Pagina Home | 100 | 5 |  |  |
 |   | Ricerca | 50 | 5 |  |  |
 |   | Notizie | 100 | 10 |  |  |
 |   | Eventi | 100 | 10 |  |  |
@@ -411,7 +411,7 @@ Nei primi giorni dopo la messa a disposizione del sito web, è possibile prevede
 
 | Scenario | Tipo di test | No. di utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Picco Going Live | Home page | 200 | 20 |  |  |
+| Picco Going Live | Pagina Home | 200 | 20 |  |  |
 |   | Ricerca | 100 | 10 |  |  |
 |   | Notizie | 200 | 20 |  |  |
 |   | Eventi | 200 | 20 |  |  |
@@ -439,7 +439,7 @@ Alcuni problemi si verificano solo dopo che il sistema è stato in esecuzione pe
 
 | Scenario | Tipo di test | No. di utenti | Tx/sec (previsto) | Tx/sec (testato) | Descrizione |
 |---|---|---|---|---|---|
-| Prova di durata (72 ore) | Home page | 10 | 1 |  |  |
+| Prova di durata (72 ore) | Pagina Home | 10 | 1 |  |  |
 |   | Ricerca | 10 | 1 |  |  |
 |   | Notizie | 20 | 2 |  |  |
 |   | Eventi | 10 | 1 |  |  |

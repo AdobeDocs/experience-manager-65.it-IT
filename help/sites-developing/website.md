@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4941'
+source-wordcount: '4920'
 ht-degree: 3%
 
 ---
@@ -831,7 +831,7 @@ Per vedere il funzionamento completo di questo componente, puoi visualizzare la 
 
 1. ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. Come Percorso della directory principale dell’elenco, immetti: `/content/mywebsite/en`. Fai clic su OK. Il componente Listchildren sulla pagina ora si presenta come segue:
+1. Come Percorso della directory principale dell’elenco, immetti: `/content/mywebsite/en`. Fare clic su OK. Il componente Listchildren sulla pagina ora si presenta come segue:
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -925,7 +925,7 @@ Crea la finestra di dialogo per configurare il componente logo in modalità Prog
    |---|---|---|
    | filemeparametro | Stringa | ./imageName |
    | fileReferenceParameter | Stringa | ./imageReference |
-   | nome | Stringa | ./immagine |
+   | nome | Stringa | ./image |
    | titolo | Stringa | Immagine |
    | xtype | Stringa | html5smartimage |
 
@@ -968,7 +968,7 @@ public class img_GET extends AbstractImageServlet {
 
     protected Layer createLayer(ImageContext c)
             throws RepositoryException, IOException {
-        /* don't create the layer yet. handle everything later */
+        /* do not create the layer yet. handle everything later */
         return null;
     }
 
@@ -1286,7 +1286,7 @@ Al termine della ricerca, la casella di input della ricerca deve essere visualiz
 1. Copia i seguenti nodi e incollali nel nodo apps/mywebsite/components/search:
 
    * `/libs/foundation/components/search/dialog`
-   * `` `/libs/foundation/components/search/i18n`
+   * &quot; `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

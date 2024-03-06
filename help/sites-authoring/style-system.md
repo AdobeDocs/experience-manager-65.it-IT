@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 81%
+source-wordcount: '1297'
+ht-degree: 83%
 
 ---
 
@@ -29,7 +29,7 @@ Il sistema di stili offre una soluzione unificata alle esigenze degli autori di 
 * Gli autori dei modelli possono definire le classi di stile nel criterio del contenuto dei componenti.
 * Gli autori dei contenuti possono quindi selezionare queste classi da un elenco a discesa quando modificano il componente in una pagina per applicare gli stili corrispondenti.
 
-La classe di stile viene quindi inserita nell’elemento wrapper di decorazione del componente, in modo che lo sviluppatore del componente non debba preoccuparsi di gestire gli stili oltre a fornire le relative regole CSS.
+La classe di stile viene quindi inserita nell’elemento wrapper decorativo del componente, in modo che lo sviluppatore di componenti non debba preoccuparsi della gestione degli stili una volta fornite le regole CSS.
 
 ## Panoramica {#overview}
 
@@ -122,13 +122,13 @@ Affinché un componente possa funzionare con il sistema di stili di AEM e visual
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-Con il componente configurato, gli stili configurati dagli autori della pagina verranno automaticamente inseriti dall’AEM sull’elemento decorativo che l’AEM racchiude automaticamente in ogni componente modificabile. Il componente in sé non deve fare altro affinché questo accada.
+Con il componente configurato, gli stili configurati dagli autori della pagina verranno automaticamente inseriti dall’AEM sull’elemento decorativo che l’AEM racchiude automaticamente in ogni componente modificabile. Il componente stesso non deve fare altro per far sì che ciò accada.
 
 ### Abilitare la scheda Stili nella finestra di dialogo Modifica {#enable-styles-tab-edit}
 
-A partire dalla versione 6.5.3.0 dell’AEM è ora disponibile una scheda Stili opzionale nella finestra di dialogo Modifica. A differenza della scheda della finestra di progettazione, la scheda presente nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stili, ma offre all’autore di contenuti un’interfaccia alternativa opzionale per l’impostazione degli stili.
+A partire dalla versione 6.5.3.0 dell’AEM è ora disponibile una scheda Stili opzionale nella finestra di dialogo Modifica. A differenza della scheda della finestra di dialogo Progettazione, la scheda presente nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stili, ma offre all’autore di contenuti un’interfaccia alternativa opzionale per l’impostazione degli stili.
 
-La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo a quella della finestra di dialogo di progettazione:
+La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo a quella della finestra di dialogo Progettazione:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`

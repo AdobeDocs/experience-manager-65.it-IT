@@ -2,9 +2,9 @@
 title: Errori di servizio CRX/bundle e Start page non disponibili dopo l’installazione del service pack 6.5.15.0 più recente
 description: Errori di servizio CRX/bundle e Start page non disponibili dopo l’installazione del service pack 6.5.15.0 più recente
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
-source-git-commit: e961f0c7107b4eacb0d5e50565cb64f5fa30e265
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '276'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Dopo l’installazione [Service Pack di AEM 6.5.15.0](https://experience.adobe.c
    >
    >Se il valore `bundle.info` in `bundle52` non contiene `org.apache.felix.http.bridge` il numero del bundle tra parentesi quadre accanto al simbolo `org.apache.felix.http.bridge`. Quindi vai a [directory principale di aem-forms]\crx-repository\launchpad\felix\bundle[x] ed eseguire i passaggi successivi in questa posizione.
 
-1. Accedi all’URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
+1. Passa a URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Cerca `bundle.jar` e rinominare `bundle.jar` a `bundle.jar.bak`.
 1. Copia il `Bundle for AEM 6.5 Forms on JEE Service Pack 15` in questa posizione da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. Avvia il server applicazioni, attendi che i registri si stabilizzino e verifichi lo stato del bundle.

@@ -2,10 +2,10 @@
 title: Creazione di contenuto accessibile per Adobe Experience Manager (conformità WCAG 2.1)
 description: Utilizzare l’AEM per rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '13806'
-ht-degree: 84%
+source-wordcount: '13636'
+ht-degree: 82%
 
 ---
 
@@ -96,7 +96,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 
 * Foto illustrative: si tratta di immagini di persone, oggetti o luoghi. È importante considerare il ruolo della foto nella pagina e descrivere il contenuto dell’immagine, in quanto la tecnologia per l’accessibilità annuncia il tipo di elemento (ad esempio, `graphic` o `image`); può aumentare la chiarezza di utilizzo `screenshot` o `illustration` nelle descrizioni di testo alternative, ma questo dipende dal contesto. La coerenza è un fattore essenziale ed è quindi importante che la decisione presa valga per tutto un team di authoring e sia applicata uniformemente in tutta l’esperienza utente.
 * Icone: si tratta di piccoli pittogrammi (immagini) che veicolano informazioni specifiche. Devono essere utilizzati in modo coerente all’interno di una pagina e del sito. Tutte le istanze dell’icona in una pagina o in un sito devono avere lo stesso testo alternativo, breve e sintetico, a meno che questo determini inutili duplicazioni di testo adiacente.
-* Grafici e diagrammi: solitamente rappresentano dati numerici. Di conseguenza, un possibile testo alternativo potrebbe consistere in una breve sintesi delle principali tendenze indicate nel grafico o diagramma. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando il campo **Descrizione** nella scheda **Avanzate** delle proprietà dell’immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
+* Grafici e diagrammi: in genere rappresentano dati numerici. Pertanto, un&#39;opzione per fornire un testo alternativo potrebbe essere quella di includere un breve riepilogo delle principali tendenze mostrate nel grafico o grafico. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando **Descrizione** campo in **Avanzate** scheda proprietà immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
 * Mappe, diagrammi, diagrammi di flusso: per gli elementi grafici che forniscono dati spaziali (ad esempio, per la descrizione di relazioni tra oggetti o un processo), assicurati che il messaggio principale venga comunicato in formato testuale e che tali informazioni testuali vengano posizionate in prossimità di ciascun punto di dati associato. Per le mappe, potrebbe non risultare pratico fornire un equivalente di testo completo. Se la mappa ha lo scopo di aiutare le persone a individuare una posizione particolare, il testo alternativo dell’immagine della mappa può indicare brevemente *Mappa di X*, fornendo poi le indicazioni per tale posizione in un altro testo della pagina o attraverso il campo **Descrizione**, disponibile nella scheda **Avanzate** del componente **Immagine**.
 * CAPTCHA: un CAPTCHA è un *Test di Turing completamente automatizzato per distinguere computer e persone*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani dal software dannoso, ma che può causare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano, per poter superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce alcuni suggerimenti, ad esempio:
    * Rompicapi logici
@@ -147,7 +147,7 @@ Fornire queste informazioni in un formato diverso, ad esempio testo (o audio per
 #### Come soddisfare il criterio - Solo audio e solo video (preregistrati) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
 * Se il contenuto è una traccia audio preregistrata senza video (come un podcast):
-   * Fornisci un collegamento immediatamente prima o dopo il contenuto a una trascrizione testuale del contenuto audio. La trascrizione deve essere una pagina HTML con un equivalente testuale di tutti i contenuti parlati e non parlati importanti, oltre a un’indicazione di chi sta parlando, una descrizione dell’ambientazione, espressioni vocali e una descrizione di qualsiasi altro audio significativo.
+   * Fornisci un collegamento immediatamente prima o dopo il contenuto a una trascrizione testuale del contenuto audio. La trascrizione dovrà essere una pagina HTML e contenere un equivalente testuale di tutti i contenuti verbali e non verbali importanti, oltre a un’indicazione su chi sta parlando, una descrizione dell’ambientazione, espressioni vocali e una descrizione di qualsiasi altro audio significativo.
 * Se il contenuto è un’animazione o un video preregistrato senza audio:
    * Fornisci un collegamento ad una descrizione testuale equivalente alle informazioni fornite dal video ed immediatamente prima o dopo il contenuto
    * oppure una descrizione audio equivalente in un formato audio comunemente utilizzato come MP3.
@@ -331,7 +331,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
 
   >[!NOTE]
   >
-  >Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >Per impostazione predefinita, questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella **Proprietà tabella** (vedere [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
   Per aprire la **Tabella** in cui è possibile selezionare la scheda **Proprietà tabella**:
 
@@ -699,7 +699,7 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.2.
 Elementi da sottolineare:
 
 1. Per i requisiti relativi a contenuti che sfarfallano o lampeggiano, consulta Non progettare contenuti con modalità che possano causare attacchi epilettici (2.3).
-1. Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (utilizzato per soddisfare altri criteri di successo o meno) deve rispondere a questo criterio. Consulta [Requisito di conformità 5: Non interferenza](https://www.w3.org/TR/WCAG20/#cc5).
+1. Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (utilizzato per soddisfare altri criteri di successo o meno) deve soddisfare questo criterio. Consulta [Requisito di conformità 5: non interferenza](https://www.w3.org/TR/WCAG20/#cc5).
 1. I contenuti aggiornati periodicamente dal software o trasmessi in streaming all’agente utente non sono tenuti a conservare o presentare le informazioni generate o ricevute tra l’inizio della pausa e la ripresa della presentazione, in quanto ciò potrebbe non essere tecnicamente possibile e in molte situazioni potrebbe risultare fuorviante.
 1. Un&#39;animazione che si verifica come parte di una fase di precaricamento o situazione simile può essere considerata essenziale se non si possono verificare interazioni durante quella fase per tutti gli utenti e, se non viene indicato l&#39;avanzamento, potrebbe confondere l’utente o indurre a pensare che il contenuto sia bloccato o interrotto.
 
@@ -838,7 +838,7 @@ Soprattutto, fai in modo che lo scopo di un collegamento sia chiaramente descrit
    * Testo: I nostri corsi serali per l’autunno 2010 - Dettagli.
    * Motivo: modificando leggermente il testo e la posizione dell’elemento di collegamento è possibile migliorare il testo di collegamento:
 
-I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in particolare per le barre di navigazione. Ad esempio, se un collegamento a una pagina specifica è denominato **Pubblicazioni** in una pagina, utilizza lo stesso testo anche nelle altre pagine per garantire la coerenza.
+I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in particolare per le barre di navigazione. Ad esempio, se si chiama un collegamento a una pagina specifica **Pubblicazione** su una pagina, utilizza il testo anche su altre pagine per garantire la coerenza.
 
 Al momento in cui scriviamo, l’uso degli attributi title per garantire che collegamenti simili presentati in una pagina forniscano informazioni univoche sulla destinazione implica alcuni problemi (ad esempio, “ulteriori informazioni” spesso fa riferimento a una serie di destinazioni diverse):
 
@@ -848,7 +848,7 @@ Al momento in cui scriviamo, l’uso degli attributi title per garantire che col
 
 Pertanto, anche se l’attributo title può essere utilizzato per fornire contesto aggiuntivo a un collegamento, è importante essere consapevoli dei suoi limiti e non utilizzarlo come alternativa al testo di collegamento appropriato.
 
-Se il collegamento è costituito da un’immagine, accertati che il testo alternativo per l’immagine descriva la destinazione del collegamento. Ad esempio, se come collegamento alle pubblicazioni di un autore è impostata l’immagine di una libreria, il testo alternativo dovrebbe riportare **Pubblicazioni di John Smith** e non **Libreria**.
+Se il collegamento è costituito da un’immagine, accertati che il testo alternativo per l’immagine descriva la destinazione del collegamento. Ad esempio, se l&#39;immagine di una libreria è impostata come collegamento alle pubblicazioni di un utente, il testo alternativo dovrebbe essere **Pubblicazioni di John Smith** e non **Libreria**.
 
 In alternativa, se l’ancoraggio del collegamento contiene testo che descrive lo scopo del collegamento in aggiunta all’elemento immagine (e quindi il testo viene visualizzato accanto all’immagine), utilizza un attributo alt vuoto per l’immagine:
 
@@ -985,7 +985,7 @@ In AEM, la lingua predefinita della pagina viene impostata durante la creazione,
 
 * [Comprendere il criterio di successo 3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 * [Come soddisfare il criterio di successo 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
-* I codici sono basati su ISO 639-1. Un elenco più completo dei codici per ogni lingua è reperibile sul [sito W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
+* I codici sono basati sulla norma ISO 639-1. Un elenco più completo dei codici per ciascuna lingua è disponibile sul sito [Sito W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Parti in lingua (3.1.2)    {#language-of-parts}
 
@@ -1255,7 +1255,7 @@ L’obiettivo di questo criterio di successo è aiutare gli utenti con disabilit
 
 Per gli utenti con disabilità, la probabilità di commettere degli errori è maggiore. Le persone con disabilità di lettura potrebbero scambiare numeri e lettere, le persone con disabilità motorie potrebbero premere un tasto accidentalmente. La possibilità di annullare le azioni consente agli utenti di correggere un errore che potrebbe causare gravi conseguenze. La possibilità di rivedere e correggere le informazioni offre all’utente l’opportunità di rilevare un errore prima di intraprendere un’azione che comporta gravi conseguenze.
 
-I dati controllabili dall’utente sono dati visualizzabili dall’utente che possono essere modificati e/o eliminati mediante un’azione intenzionale dell’utente stesso. Esempi di operazioni che interessano tali dati sono l’aggiornamento del numero di telefono e dell’indirizzo dell’account dell’utente o l’eliminazione di un record di fatture precedenti in un sito web. Non si fa riferimento a elementi quali log di Internet o dati di monitoraggio dei motori di ricerca che l’utente non può visualizzare o con cui non può interagire direttamente.
+I dati controllabili dall’utente sono dati visualizzabili dall’utente che possono essere modificati e/o eliminati mediante un’azione intenzionale dell’utente stesso. Esempi di operazioni che interessano tali dati sono l’aggiornamento del numero di telefono e dell’indirizzo dell’account dell’utente o l’eliminazione di un record di fatture precedenti in un sito web. Non fa riferimento a elementi quali registri Internet e dati di monitoraggio dei motori di ricerca che l’utente non può visualizzare o con cui non può interagire direttamente.
 
 #### Come soddisfare il criterio - Prevenzione degli errori (legale, finanziario, dati) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 

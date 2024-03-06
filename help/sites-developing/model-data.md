@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Utilizzando il modello di contenuto di cui sopra posso consentire facilmente all
 
 #### Spiegazione {#explanation-3}
 
-Se non usi `clone()`, `merge()` o `update()` metodi nell&#39;applicazione un&#39;unica area di lavoro è probabilmente la soluzione ideale.
+Se non usa `clone()`, `merge()` o `update()` metodi nell&#39;applicazione un&#39;unica area di lavoro è probabilmente la soluzione ideale.
 
 &quot;Nodi corrispondenti&quot; è un concetto definito nelle specifiche JCR. In sostanza, si riduce ai nodi che rappresentano lo stesso contenuto, in diverse cosiddette aree di lavoro.
 
@@ -164,7 +164,7 @@ Supponiamo che io permetta &quot;riferimenti&quot; da un documento (a) a un altr
 
 Quindi modellerei quei riferimenti come &quot;riferimenti deboli&quot; (in JCR v1.0 questo si riduce essenzialmente alle proprietà stringa che contengono l’UUID del nodo di destinazione) o semplicemente utilizzerei un percorso. A volte il percorso è più significativo per iniziare.
 
-Penso che ci siano casi d&#39;uso in cui un sistema non può davvero funzionare se un riferimento è penzolante, ma semplicemente non riesco a trovare un buon esempio &quot;reale&quot; ma semplice dalla mia esperienza diretta.
+Penso che ci siano casi d&#39;uso in cui un sistema non può funzionare se un riferimento è in penzoloni, ma semplicemente non riesco a trovare un buon esempio &quot;reale&quot; ma semplice dalla mia esperienza diretta.
 
 ### Regola #6: i file sono file. {#rule-files-are-files}
 
@@ -214,7 +214,7 @@ Quindi, solo perché desideri poter fare riferimento potenziale a un nodo di tip
 
 #### Esempio {#example-7}
 
-Utilizzare:
+Usa:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg

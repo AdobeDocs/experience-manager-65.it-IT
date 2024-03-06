@@ -6,9 +6,9 @@ role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '555'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Per utilizzare la funzionalità Media Library, è possibile utilizzare il [!DNL 
 * Crea ed esegui attività di revisione sulle risorse.
 * Annotare le risorse.
 * Aggiungere risorse a [!DNL Sites] pagine tramite Content Finder.
-* Utilizzo [!DNL Content Fragments].
+* Utilizzare [!DNL Content Fragments].
 * Utilizzare API REST e GraphQL HTTP per [!DNL Content Fragments] e risorse multimediali di riferimento, con licenza Sites.
 * Integrazione del Marketing Cloud.
 * Personalizzare ed estendere l’interfaccia utente per la gestione delle risorse.
@@ -80,7 +80,7 @@ Per utilizzare la funzionalità Media Library, è possibile utilizzare il [!DNL 
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
+As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
@@ -96,4 +96,3 @@ Non è possibile utilizzare smart tag, [!DNL Asset] collegamento, [!DNL Asset] s
 >* [Funzioni DAM in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html)
 >* [[!DNL Experience Manager] 6.5 Descrizione del prodotto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* [[!DNL Experience Manager] 6.5 descrizione del prodotto on-premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
-

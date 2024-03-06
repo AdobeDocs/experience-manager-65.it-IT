@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '640'
 ht-degree: 2%
 
 ---
@@ -106,7 +106,7 @@ IntelliJ IDEA deve capire dove trovare le JSP per il debug. Perché IDEA non pu�
 1. Premi il **+** e seleziona **Controllo remoto JSR45**
 1. Nella finestra di dialogo di configurazione, seleziona **Configura** accanto a **Server applicazioni** e configurare un server generico
 1. Impostare la pagina iniziale su un URL appropriato per aprire un browser all&#39;avvio del debug
-1. Rimuovi tutto **Prima del lancio** se utilizzi la sincronizzazione automatica vlt, o se non la configuri, configura le attività Maven appropriate
+1. Rimuovi tutto **Prima del lancio** se utilizzi la sincronizzazione automatica vlt o se non configuri le attività Maven appropriate
 1. Il giorno **Avvio/Connessione** , regolare la porta, se necessario
 1. Copiare gli argomenti della riga di comando proposti da IntelliJ IDEA
 

@@ -6,10 +6,10 @@ role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 7%
+source-wordcount: '1425'
+ht-degree: 8%
 
 ---
 
@@ -91,7 +91,7 @@ Per attivare [!DNL Assets] per visualizzare le risorse composte di riferimento i
 Il [!DNL Assets] la console può visualizzare vari stati delle risorse. A seconda dello stato corrente di una particolare risorsa, la relativa vista a schede mostra un’etichetta che ne descrive lo stato, ad esempio Scaduto, Pubblicato, Approvato, Rifiutato e così via.
 
 1. In [!DNL Assets] interfaccia utente, seleziona una risorsa.
-1. Clic **[!UICONTROL Pubblica]** dalla barra degli strumenti. Se non vedi **Pubblica** sulla barra degli strumenti, fai clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuare **[!UICONTROL Pubblica]** ![opzione di pubblicazione](assets/do-not-localize/publish-globe.png) opzione.
+1. Clic **[!UICONTROL Pubblica]** dalla barra degli strumenti. Se non vede **Pubblica** sulla barra degli strumenti, fai clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuare **[!UICONTROL Pubblica]** ![opzione di pubblicazione](assets/do-not-localize/publish-globe.png) opzione.
 1. Scegli **[!UICONTROL Pubblica]** dal menu, quindi chiudere la finestra di dialogo di conferma.
 1. Esci dalla modalità di selezione. Lo stato di pubblicazione della risorsa viene visualizzato nella parte inferiore della miniatura nella vista a schede. Nella vista a elenco, la colonna Pubblicato mostra l’ora in cui la risorsa è stata pubblicata.
 

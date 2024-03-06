@@ -5,10 +5,10 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 6%
+source-wordcount: '1174'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
-[!DNL Adobe Workfront] è un’applicazione per la gestione dell’intero ciclo di vita del lavoro, tutto in un’unica posizione. L’integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di velocizzare le attività relative ai contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto della gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini richiesti.
+[!DNL Adobe Workfront] è un&#39;applicazione per la gestione dell&#39;intero ciclo di vita del lavoro in un&#39;unica posizione. L’integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di velocizzare le attività relative ai contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto della gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini richiesti.
 
 Il [!DNL Workfront for Experience Manager enhanced connector] consente processi aziendali avanzati con flussi di lavoro end-to-end e offre esperienze client end-to-end personalizzate e storage centrale. Adobe offre un connettore standard e un connettore avanzato per integrare le due soluzioni. Vedi le funzioni supportate di seguito per un confronto e vedi [novità in [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
@@ -39,7 +39,7 @@ Consulta Supporto della piattaforma e [prerequisiti per il connettore avanzato](
 >
 >* Adobe può rilasciare aggiornamenti a [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] che rendono questo connettore ridondante; in tal caso, i clienti potrebbero dover passare dall’utilizzo di questo connettore.
 >
->* Adobe supporta le versioni migliorate del connettore 1.7.4 e successive. Le versioni precedenti prerelease e personalizzate non sono supportate. Per verificare la versione del connettore avanzato, passare alla `digital.hoodoo` gruppo disponibile nel riquadro a sinistra in [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it).
+>* Adobe supporta le versioni migliorate del connettore 1.7.4 e successive. Le versioni precedenti prerelease e personalizzate non sono supportate. Per verificare la versione del connettore avanzato, passare alla `digital.hoodoo` gruppo disponibile nel riquadro a sinistra in [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
 >
 >* Consulta [Connettore avanzato per la certificazione dei partner per Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Per informazioni sull&#39;esame, vedere [Guida all’esame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -47,9 +47,9 @@ Consulta Supporto della piattaforma e [prerequisiti per il connettore avanzato](
 
 Di seguito sono riportati i dettagli delle funzionalità disponibili tramite vari tipi di integrazioni tra [!DNL Assets] e [!DNL Workfront].
 
-| Funzione obsoleta | Descrizione | [!DNL Workfront] e [!DNL Assets Essentials] *Nessun connettore (OTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Richiede il connettore* | WORKFRONT e [!DNL Experience Manager as a Cloud Service] *Nessun connettore (OTB)* |
+| Funzione obsoleta | Descrizione | [!DNL Workfront] e [!DNL Assets Essentials] *Nessun connettore (preconfigurato)* | [!DNL Workfront for Experience Manager enhanced connector] *Richiede il connettore* | WORKFRONT e [!DNL Experience Manager as a Cloud Service] *Nessun connettore (preconfigurato)* |
 |----|----|----|-----|-----|
-| Metodi di implementazione | Appropriato per cui [!DNL Assets] offerta. | Assets Essentials | Adobe Managed Services, on-premise | Servizio cloud |
+| Metodi di implementazione | Appropriato per cui [!DNL Assets] offerta. | Assets Essentials | Adobe Managed Services, on-premise | Cloud Service |
 | **Generale** |
 | Invia file digitali da [!DNL Workfront] a [!DNL Assets] | È possibile caricare in AEM Assets l’ultima versione di un documento WF collegata come nuova versione del documento. | ✓ | ✓ | ✓ |
 | Collegare manualmente le cartelle AEM agli oggetti Workfront | Le cartelle AEM esistenti possono essere collegate come una cartella Workfront e le relative risorse secondarie vengono collegate come nuovi documenti Workfront. | ✓ | ✓ | ✓ |
@@ -79,6 +79,6 @@ Di seguito sono riportati i dettagli delle funzionalità disponibili tramite var
 | Aggiornamenti dei metadati AEM con nuove versioni | È possibile effettuare una configurazione in AEM per determinare se anche una risorsa con nuove versioni in Workfront deve essere sottoposta a push a seguito di eventuali modifiche apportate ai relativi metadati. | No | ✓ | No |
 | Aggiornamento automatico dei metadati AEM in caso di modifiche al Forms personalizzato in Workfront | AEM consente di abbonarsi agli aggiornamenti ai moduli dei documenti in Workfront. Di conseguenza, qualsiasi aggiornamento dei metadati del modulo personalizzato del documento Workfront modifica i valori dei campi di metadati AEM mappati. | No | ✓ | No |
 | **Flussi di lavoro (pronti all’uso)** |
-| Creare una nuova versione di bozza su risorse collegate | Quando si collega una risorsa in Workfront, è possibile generare automaticamente una bozza. | No | Personalizzati | No |
+| Creare una nuova versione di bozza su risorse collegate | Quando si collega una risorsa in Workfront, è possibile generare automaticamente una bozza. | No | Personalizzato | No |
 | Imposta stato su oggetti Workfront | Impostare gli stati degli oggetti di Workfront in base a condizioni configurabili tramite flussi di lavoro AEM | No | ✓ | Prossimo |
 | Pubblicare risorse in AEM Publish Environment o Brand Portal | Offri agli utenti di Workfront la possibilità di pubblicare automaticamente le risorse collegate in un ambiente di pubblicazione AEM o in un Brand Portal. | No | ✓ | Prossimo |

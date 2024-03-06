@@ -2,9 +2,9 @@
 title: Come configurare e risolvere i problemi di un cluster di server AEM Forms su JEE
 description: Scopri come configurare e risolvere i problemi di un Forms Adobe Experience Manager (AEM) nel cluster di server JEE.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3959'
+source-wordcount: '3945'
 ht-degree: 0%
 
 ---
@@ -209,7 +209,7 @@ Nei sistemi UNIX®, le configurazioni NFS spesso si basano su impostazioni prede
 Affinché un cluster funzioni correttamente, è necessario che lo stesso database sia condiviso da tutti i membri del cluster. Le possibilità per sbagliare sono più o meno le seguenti:
 
 * impostare accidentalmente IDP_DS, EDC_DS, AdobeDefaultSA_DS o altre origini dati richieste in modo diverso su nodi cluster separati, in modo che i nodi puntino a database diversi.
-* se si impostano accidentalmente più nodi separati per condividere un database quando non dovrebbero.
+* se si impostano accidentalmente più nodi separati per condividere un database quando non è necessario.
 
 A seconda del server applicazioni in uso, può essere naturale che la connessione JDBC sia definita in un ambito cluster, in modo che definizioni diverse non siano possibili su nodi diversi. In JBoss®, tuttavia, è completamente possibile impostare elementi in modo che un&#39;origine dati, come IDP_DS, punti a un database sul nodo 1, ma punti a qualcos&#39;altro sul nodo 2.
 
@@ -244,7 +244,7 @@ and ones like:
 
 ### Modulo di pianificazione al quarzo {#quartz-scheduler}
 
-In generale, l’utilizzo da parte di AEM Forms su JEE del modulo di pianificazione Quartz interno in un cluster ha lo scopo di seguire automaticamente la configurazione cluster globale di AEM Forms su JEE in generale. Tuttavia, esiste un bug, #2794033, che causa il mancato funzionamento della configurazione automatica del cluster di Quartz se i localizzatori TCP vengono utilizzati per Gemfire invece del multicast autodiscovery. In questo caso, Quartz viene eseguito erroneamente in modalità non cluster. Questo crea deadlock e danneggiamento dei dati nelle tabelle Quartz. Gli effetti collaterali sono peggiori nella versione 8.2.x rispetto alla versione 9.0, in quanto il quarzo non è usato così tanto, ma è ancora presente.
+In generale, l’utilizzo da parte di AEM Forms su JEE del modulo di pianificazione Quartz interno in un cluster ha lo scopo di seguire automaticamente la configurazione cluster globale di AEM Forms su JEE in generale. Tuttavia, esiste un bug, #2794033, che causa il mancato funzionamento della configurazione automatica del cluster di Quartz se i localizzatori TCP vengono utilizzati per Gemfire invece del multicast autodiscovery. In questo caso, Quartz viene eseguito erroneamente in modalità non cluster. Questo crea deadlock e danneggiamento dei dati nelle tabelle Quartz. Gli effetti indesiderati sono peggiori nella versione 8.2.x rispetto alla 9.0, in quanto Quartz non viene utilizzato in quantità altrettanto elevata, ma è ancora presente.
 
 Per questo problema sono disponibili le seguenti correzioni: 8.2.1.2 QF2.143 e 9.0.0.2 QF2.44.
 
@@ -273,7 +273,7 @@ Se Quartz è configurato per l’esecuzione come singolo nodo, ma è in esecuzio
 
 ```xml
 [1/20/11 10:40:57:584 EST] 00000035 ErrorLogger   E org.quartz.core.ErrorLogger schedulerError An error occured while marking executed job complete. job= 'Asynchronous.TaskFormDataSaved:12955380518320.5650479324757354'
- org.quartz.JobPersistenceException: Couldn't remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
+ org.quartz.JobPersistenceException: Could not remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.removeTrigger(JobStoreSupport.java:1405)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:2888)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport$38.execute(JobStoreSupport.java:2872)

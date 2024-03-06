@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4907'
+source-wordcount: '4843'
 ht-degree: 1%
 
 ---
@@ -159,7 +159,7 @@ La definizione di un componente può essere suddivisa come segue:
 
      Un elenco di proprietà jcr; queste sono variabili e alcune possono essere facoltative anche se la struttura di base di un nodo componente, le sue proprietà e i sottonodi sono definiti da `cq:Component` definizione
 
-   * Riferimenti:
+   * Risorse:
 
      Questi definiscono gli elementi statici utilizzati dal componente.
 
@@ -602,9 +602,9 @@ Nell’archivio sono presenti molte configurazioni esistenti. Puoi cercare facil
 
 ### Segnaposto Componente {#component-placeholders}
 
-I componenti devono sempre eseguire il rendering di alcuni HTML visibili all’autore, anche quando il componente non ha contenuto. In caso contrario, potrebbe scomparire visivamente dall’interfaccia dell’editor, rendendolo tecnicamente presente ma invisibile nella pagina e nell’editor. In questo caso, gli autori non potranno selezionare e interagire con il componente vuoto.
+I componenti devono sempre eseguire il rendering di alcuni HTML visibili all’autore, anche quando il componente non ha contenuto. In caso contrario, potrebbe scomparire visivamente dall’interfaccia dell’editor, rendendolo tecnicamente presente ma invisibile nella pagina e nell’editor. In questo caso, gli autori non possono selezionare e interagire con il componente vuoto.
 
-Per questo motivo, i componenti devono eseguire il rendering di un segnaposto, a condizione che non eseguano il rendering di alcun output visibile quando la pagina viene riprodotta nell’editor di pagine (quando la modalità WCM è `edit` o `preview`).
+Per questo motivo, i componenti devono eseguire il rendering di un segnaposto, a condizione che non eseguano il rendering di alcun output visibile quando si esegue il rendering della pagina nell’editor di pagine (quando la modalità WCM è `edit` o `preview`).
 Il markup HTML tipico per un segnaposto è il seguente:
 
 ```HTML

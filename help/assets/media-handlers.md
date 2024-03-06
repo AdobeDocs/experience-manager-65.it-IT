@@ -6,10 +6,10 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 4%
+source-wordcount: '2136'
+ht-degree: 3%
 
 ---
 
@@ -29,7 +29,7 @@ I gestori di file multimediali sono servizi in [!DNL Assets] che eseguono azioni
 
 I seguenti gestori di file multimediali sono disponibili in [!DNL Assets] e gestisce i tipi MIME più comuni:
 
-<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Nome gestore | Nome servizio (nella console del sistema) | Tipi MIME supportati |
@@ -79,7 +79,7 @@ I gestori di file multimediali possono essere disabilitati o abilitati tramite l
 Per attivare/disattivare un gestore di supporti:
 
 1. Nel browser, passa a `https://<host>:<port>/system/console/components`.
-1. Clic **[!UICONTROL Disattiva]** accanto al nome del gestore dei contenuti multimediali. Esempio: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
+1. Clic **[!UICONTROL Disattiva]** accanto al nome del gestore dei contenuti multimediali. Ad esempio: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. Aggiorna la pagina: accanto al gestore dei contenuti multimediali viene visualizzata un’icona che indica che è disabilitato.
 1. Per abilitare il gestore di file multimediali, fai clic su **[!UICONTROL Abilita]** accanto al nome del gestore dei contenuti multimediali.
 
@@ -163,7 +163,7 @@ Dopo aver eseguito la procedura seguente, quando carichi un file TXT in [!DNL Ex
       * Compatibilità dei file .class generati
       * Compatibilità sorgente
 
-   1. Fai clic su **[!UICONTROL OK]**. Nella finestra di dialogo, fai clic su **[!UICONTROL Sì]**.
+   1. Clic **[!UICONTROL OK]**. Nella finestra di dialogo, fai clic su **[!UICONTROL Sì]**.
 
 1. Sostituisci il codice in `pom.xml` file con il seguente codice:
 
@@ -412,7 +412,7 @@ Dopo aver eseguito la procedura seguente, quando carichi un file TXT in [!DNL Ex
      * * @return the number of words in the string
      * */
     private long wordCount(String text) {
-     // We need to keep track of the last character, if we have two whitespaces in a row we don't want to double count.
+     // We need to keep track of the last character, if we have two whitespaces in a row we do not want to double count.
      // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true;
      boolean currentWhiteSpace = true;
@@ -485,7 +485,7 @@ Installa [!DNL ImageMagick] sul disco che ospita il [!DNL Experience Manager] se
    >
    >In alcune versioni di Windows, l&#39;esecuzione del comando convert potrebbe non riuscire perché è in conflitto con l&#39;utilità di conversione nativa che fa parte di [!DNL Windows] installazione. In questo caso, indicare il percorso completo per [!DNL ImageMagick] software utilizzato per convertire i file immagine in miniature. Esempio: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. Per verificare se lo strumento viene eseguito correttamente, aggiungete un&#39;immagine JPG alla directory di lavoro ed eseguite il comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` sulla riga di comando. Un&#39;immagine capovolta viene aggiunta alla directory. Quindi, aggiungi il passaggio della riga di comando al flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM.]**
+1. Per verificare se lo strumento viene eseguito correttamente, aggiungete un&#39;immagine JPG alla directory di lavoro ed eseguite il comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` sulla riga di comando. Un&#39;immagine capovolta viene aggiunta alla directory. Quindi, aggiungi il passaggio della riga di comando al **[!UICONTROL Aggiorna risorsa DAM]** flusso di lavoro.
 1. Vai a **[!UICONTROL Flusso di lavoro]** console.
 1. In **[!UICONTROL Modelli]** , modificare il **[!UICONTROL Aggiorna risorsa DAM]** modello.
 1. Modificare il [!UICONTROL Argomenti] del **[!UICONTROL Rappresentazione abilitata per il Web]** passa a: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.

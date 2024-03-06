@@ -7,9 +7,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2030'
 ht-degree: 1%
 
 ---
@@ -193,7 +193,7 @@ Per mostrare e nascondere i modelli, effettua le seguenti operazioni:
    * Per mostrare o nascondere il modello di moduli adattivi preconfigurato, seleziona o deseleziona la casella **Includi modelli AF e AD pronti all’uso** opzione.
    * Per mostrare o nascondere dalla casella i modelli di moduli adattivi aggiunti nelle versioni di Forms AEM 6.0 o AEM 6.1 Forms ma ora obsoleti, seleziona o deseleziona la **Includi modelli AF AEM 6.0** opzione. Se questa opzione è selezionata, per diventare effettiva è necessario **Includi modelli AF e AD pronti all’uso** da attivare.
 
-1. Clic **Salva**. Le opzioni di visualizzazione per i modelli predefiniti vengono modificate.
+1. Fai clic su **Salva**. Le opzioni di visualizzazione per i modelli predefiniti vengono modificate.
 
 ## Consigli {#recommendations}
 

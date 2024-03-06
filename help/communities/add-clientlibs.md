@@ -7,10 +7,10 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 2%
+source-wordcount: '690'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Il `categories` il valore della proprietà assegnato a questa libreria client è
    * Nome : `clientlibs`
    * Tipo : `cq:ClientLibraryFolder`
 
-1. Fai clic su **OK**
+1. Clic **OK**
 
 ![add-client-library](assets/add-client-library.png)
 
@@ -83,7 +83,7 @@ In questo caso, includendoli tutti e quindi si preferiscono le clientlibs SCF di
 
 * Nome : **`embed`**
 * Tipo : **`String`**
-* Fai clic su **`Multi`**
+* Clic **`Multi`**
 * Valore: **`cq.social.scf`**
 
    * Apparirà una finestra di dialogo, fai clic su **`+`** dopo ogni voce per aggiungere le seguenti categorie clientlib:
@@ -94,7 +94,7 @@ In questo caso, includendoli tutti e quindi si preferiscono le clientlibs SCF di
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * Fai clic su **OK**
+      * Clic **OK**
 
 * Clic **Salva tutto**
 
@@ -151,7 +151,7 @@ Carica il tuo sito web nel browser e osserva se lo sfondo non è una tonalità d
 
 A questo punto, esiste una sandbox minimalista. Potrebbe essere utile salvarlo come pacchetto in modo che, durante la riproduzione, se l’archivio diventa danneggiato e desideri ricominciare, puoi spegnere il server. Quindi rinomina o elimina la cartella crx-quickstart/, accendi il server, carica e installa questo pacchetto salvato e non devi ripetere questi passaggi più semplici.
 
-Questo pacchetto esiste in [Crea una pagina di esempio](/help/communities/create-sample-page.md) tutorial per chi non vede l’ora di entrare e iniziare a giocare!...
+Questo pacchetto esiste in [Crea una pagina di esempio](/help/communities/create-sample-page.md) tutorial per coloro che non vedono l’ora di entrare e iniziare a giocare.
 
 Per creare un pacchetto:
 
@@ -161,7 +161,7 @@ Per creare un pacchetto:
    * Nome pacchetto: an-scf-sandbox-minimal-pkg
    * Versione: 0.1
    * Gruppo: `leave as default`
-   * Fai clic su **OK**
+   * Clic **OK**
 
 * Clic **Modifica**
 
@@ -177,7 +177,7 @@ Per creare un pacchetto:
       * Percorso principale: vai a `/content/an-scf-sandbox**`
       * Clic **Fine**
 
-   * Fai clic su **Salva**
+   * Clic **Salva**
 
 * Clic **Genera**
 

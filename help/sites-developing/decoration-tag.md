@@ -2,10 +2,10 @@
 title: Tag di decorazione
 description: Quando viene eseguito il rendering di un componente in una pagina web, è possibile generare un elemento HTML che racchiude all’interno il componente renderizzato. AEM offre agli sviluppatori una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 10%
+source-wordcount: '879'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ Quando viene eseguito il rendering di un componente in una pagina web, è possib
    * informazioni di layout
    * informazioni sullo stile
 
-AEM offre agli sviluppatori una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti. Se e come viene eseguito il rendering del tag di decorazione è definito dalla combinazione di due fattori, in cui questa pagina si immergerà:
+Per gli sviluppatori, AEM offre una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti. Se e come viene eseguito il rendering del tag di decorazione è definito dalla combinazione di due fattori, in cui questa pagina si immergerà:
 
 * Il componente stesso può configurare il proprio tag di decorazione con un set di proprietà.
 * Gli script che includono componenti (HTL, JSP, dispatcher e così via) possono definire gli aspetti del tag di decorazione con parametri di inclusione.

@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -60,7 +60,7 @@ Nella tabella seguente sono elencate le configurazioni di rollout installate con
   </tr>
   <tr>
    <td>Configurazione di rollout standard</td>
-   <td>Configurazione rollout standard che consente di avviare il processo di rollout all'attivazione del rollout ed esegue le seguenti azioni: crea, aggiorna, elimina contenuto e ordina nodi figlio.</td>
+   <td>Configurazione di rollout standard che consente di avviare il processo di rollout all’attivazione del rollout ed esegue le seguenti azioni: crea, aggiorna, elimina contenuto e ordina nodi figlio.</td>
    <td>Al momento del rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -108,7 +108,7 @@ Nella tabella seguente sono elencate le configurazioni di rollout installate con
   </tr>
   <tr>
    <td>Configurazione rollout pubblicazioni DPS</td>
-   <td>Configurazione rollout della pubblicazione DPS che consente di avviare il processo di rollout all’attivazione del rollout, escludendo le proprietà di associazione FolioProducer al momento del rollout iniziale</td>
+   <td>Configurazione rollout della pubblicazione DPS che consente di avviare il processo di rollout all’attivazione del rollout ed escludere le proprietà di associazione FolioProducer al rollout iniziale</td>
    <td>Al momento del rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>

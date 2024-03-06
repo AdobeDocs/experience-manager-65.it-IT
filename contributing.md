@@ -1,8 +1,8 @@
 ---
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 52%
+source-wordcount: '506'
+ht-degree: 47%
 
 ---
 # Contribuire alla documentazione di Adobe Experience Manager
@@ -34,7 +34,7 @@ Il metodo scelto dipende dal grado di familiarità con le procedure di modifica 
 
 ### Segnalare un problema {#create-an-issue}
 
-Desideri proporre un suggerimento o un’osservazione sulla documentazione corrente o segnalare un potenziale errore nella descrizione di una funzione? Quindi crea un problema. Questa modalità è appropriata anche se intendi proporre un tuo contributo ma non hai familiarità con le procedure per modificare la documentazione o creare una richiesta.
+Desideri proporre un suggerimento o un’osservazione sulla documentazione corrente o segnalare un potenziale errore nella descrizione di una funzione? Quindi crea un problema. I problemi sono eccellenti anche se hai qualcosa da contribuire, ma non ti senti a tuo agio a modificare la documentazione o a fare una richiesta.
 
 La segnalazione di un problema consente di descrivere facilmente la tua proposta per migliorare la documentazione, che verrà esaminata da un membro del team addetto alla documentazione dei documenti dell’AEM. Fai clic sul pulsante **Segnala un problema** nella parte superiore del pannello di navigazione a destra di qualsiasi pagina per creare un problema.
 

@@ -9,9 +9,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2274'
 ht-degree: 5%
 
 ---
@@ -38,8 +38,10 @@ Quando crei un set di immagini, Adobe consiglia le seguenti best practice e appl
 
 | Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
-| Numero di risorse duplicate per set | Nessun duplicato | 20 |
+| Numero di risorse duplicate per set | Nessun duplicato | 20‡ |
 | Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+
+‡ best practice prevede di non avere risorse duplicate in un set. Il limite è di 20 duplicati per una singola risorsa. Se aggiungi un altro duplicato per quella risorsa, all’interno di quel set, la richiesta restituisce un errore o ignora il duplicato.
 
 Vedi anche [Limitazioni di Dynamic Medie](/help/assets/limitations.md).
 
@@ -141,8 +143,10 @@ Quando crei un set di immagini, Adobe consiglia le seguenti best practice e appl
 
 | Tipo di limite | Best practice | Limite imposto |
 | --- | --- | --- |
-| Numero di risorse duplicate per set | Nessun duplicato | 20 |
+| Numero di risorse duplicate per set | Nessun duplicato | 20‡ |
 | Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
+
+‡ best practice prevede di non avere risorse duplicate in un set. Il limite è di 20 duplicati per una singola risorsa. Se aggiungi un altro duplicato per quella risorsa, all’interno di quel set, la richiesta restituisce un errore o ignora il duplicato.
 
 Vedi anche [Limitazioni di Dynamic Medie](/help/assets/limitations.md).
 

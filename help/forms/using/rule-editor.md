@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '6940'
+source-wordcount: '6944'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,7 @@ Quando (facoltativo):
 
 
 
-Nell&#39;esempio seguente il valore nel campo viene preso come `dependentid` input e il valore del campo viene impostato sull&#39;output dell&#39;argomento `Relation` del `Relation` servizio modello dati `getDependent` modulo.
+Nell&#39;esempio seguente il valore nel campo viene preso come `dependentid` input e il valore del `Relation` campo viene impostato sull&#39;output dell&#39;argomento `Relation` del servizio modello dati `getDependent` modulo.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -320,7 +320,7 @@ Una regola di convalida tipica è strutturata come segue:
 
 >[!NOTE]
 >
->Se il valore specificato non è conforme alla regola di convalida, è possibile visualizzare un messaggio di convalida. Puoi specificare il messaggio nel **[!UICONTROL Messaggio di convalida script]** nelle proprietà del componente nella barra laterale.
+>Se il valore specificato non è conforme alla regola di convalida, è possibile visualizzare un messaggio di convalida per l&#39;utente. Puoi specificare il messaggio nel **[!UICONTROL Messaggio di convalida script]** nelle proprietà del componente nella barra laterale.
 
 ![convalida dello script](assets/script-validation.png)
 
@@ -739,7 +739,7 @@ Puoi eseguire le seguenti azioni sulle regole:
 
 * **Espandi/Comprimi**: la colonna Contenuto nell’elenco delle regole visualizza il contenuto della regola. Se l&#39;intero contenuto della regola non è visibile nella vista predefinita, seleziona ![expand-rule-content](assets/expand-rule-content.png) per espanderlo.
 
-* **Riordina**: tutte le nuove regole create vengono impilate nella parte inferiore dell’elenco di regole. Le regole vengono eseguite dall&#39;alto verso il basso. La regola in alto viene eseguita per prima, seguita da altre regole dello stesso tipo. Ad esempio, se disponi di regole When, Show, Enable e When rispettivamente in prima, seconda, terza e quarta posizione dall&#39;alto, la regola When nella parte superiore viene eseguita per prima seguita dalla regola When nella quarta posizione. Quindi, vengono eseguite le regole Mostra e Abilita.
+* **Riordina**: tutte le nuove regole create vengono impilate nella parte inferiore dell’elenco di regole. Le regole vengono eseguite dall&#39;alto verso il basso. La regola nella parte superiore viene eseguita per prima seguita da altre regole dello stesso tipo. Ad esempio, se le regole When, Show, Enable e When si trovano rispettivamente nella prima, seconda, terza e quarta posizione dall&#39;alto, la regola When nella parte superiore viene eseguita per prima seguita dalla regola When nella quarta posizione. Quindi, vengono eseguite le regole Mostra e Abilita.
 Per modificare l’ordine di una regola, tocca ![sort-rules](assets/sort-rules.png) o trascinarlo nell&#39;ordine desiderato nell&#39;elenco.
 
 * **Modifica**: per modificare una regola, seleziona la casella di controllo accanto al titolo della regola. Vengono visualizzate ulteriori opzioni per modificare ed eliminare la regola. Seleziona **Modifica** per aprire la regola selezionata nell’editor di regole in modalità visiva o editor di codice, a seconda della modalità utilizzata per creare la regola.
@@ -838,9 +838,9 @@ Richiama il servizio del modello dati modulo utilizzando la regola del modulo ad
 
 In un modulo di richiesta di prestito, si desidera stabilire se il richiedente è un cliente esistente o meno. In base alle informazioni fornite dall&#39;utente, il campo ID cliente deve essere visualizzato o nascosto. Inoltre, se l’utente è un cliente esistente, imposta il campo ID cliente come elemento attivo. Il modulo di richiesta di prestito presenta le seguenti componenti:
 
-* Un pulsante radiofonico, **sei un cliente Geometrixx esistente?**, che fornisce le opzioni Sì e No. Il valore di Sì è 0 e No è **** 1 **.**
+* Un pulsante radiofonico, **sei un cliente Geometrixx esistente?**, che fornisce le opzioni Sì e No. Il valore di Sì è **0** e No è **1**.
 
-* Un campo di testo, Geometrixx ID **cliente,** per specificare l&#39;ID cliente.
+* Un campo di testo, **Geometrixx ID** cliente, per specificare l&#39;ID cliente.
 
 Quando si scrive un Quando regola sulla radio pulsante per implementare questo comportamento, il regola viene visualizzato come segue nella regola editor visiva.  ![Esempio regola quando](assets/when-rule-example.png)
 

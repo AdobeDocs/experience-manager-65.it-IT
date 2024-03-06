@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3722'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Il **Sito di dimostrazione mobile We.Retail** utilizza i seguenti componenti mob
 
 #### Creazione di un componente mobile {#creating-a-mobile-component}
 
-Il framework mobile dell’AEM consente di sviluppare componenti sensibili al dispositivo che emette la richiesta. Gli esempi di codice seguenti mostrano come utilizzare l’API mobile dell’AEM in un componente jsp e in particolare come:
+Il framework per dispositivi mobili AEM consente di sviluppare componenti sensibili al dispositivo che emette la richiesta. Gli esempi di codice seguenti mostrano come utilizzare l’API mobile dell’AEM in un componente jsp e in particolare come:
 
 * Ottieni il dispositivo dalla richiesta:
   `Device device = slingRequest.adaptTo(Device.class);`
@@ -171,7 +171,7 @@ Per creare un emulatore, vedi [Creazione di un emulatore mobile personalizzato](
 * Un gruppo di dispositivi è composto da uno o più emulatori: la pagina di configurazione del gruppo di dispositivi, ad esempio /etc/mobile/groups/touch, contiene il tag `emulators` proprietà sotto `jcr:content` nodo.
 Nota: anche se è possibile che lo stesso emulatore appartenga a diversi gruppi di dispositivi, non ha molto senso.
 
-* Tramite la finestra di dialogo di configurazione del gruppo di dispositivi, `emulators` viene impostata con il percorso degli emulatori desiderati. Esempio: `/libs/wcm/mobile/components/emulators/iPhone4`.
+* Tramite la finestra di dialogo di configurazione del gruppo di dispositivi, `emulators` viene impostata con il percorso degli emulatori desiderati. Ad esempio: `/libs/wcm/mobile/components/emulators/iPhone4`.
 
 * I componenti dell’emulatore (ad esempio, `/libs/wcm/mobile/components/emulators/iPhone4`) estendere il componente emulatore mobile di base ( `/libs/wcm/mobile/components/emulators/base`).
 
@@ -355,7 +355,7 @@ AEM supporta il rilevamento lato client del dispositivo basato su `BrowserMap`. 
 
 >[!NOTE]
 >
-Per ulteriori informazioni sull’integrazione della libreria client, consulta [Utilizzo delle librerie HTML lato client](/help/sites-developing/clientlibs.md).
+>Per ulteriori informazioni sull’integrazione della libreria client, consulta [Utilizzo delle librerie HTML lato client](/help/sites-developing/clientlibs.md).
 
 ### Fornitura di collegamenti alternativi {#providing-alternate-links}
 
@@ -374,7 +374,7 @@ Quando il valore di `cq:variantDomain` proprietà di un `cq:siteVariant` nodo no
 
 >[!NOTE]
 >
-Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le pratiche consigliate.
+>Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione per tali servizi; vedi [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md) per ulteriori dettagli e le pratiche consigliate.
 
 ### Definizione di un URL specifico per un gruppo di dispositivi {#defining-a-device-group-specific-url}
 
@@ -384,7 +384,7 @@ BrowserMap è progettato in modo tale che le definizioni dei gruppi di dispositi
 
 >[!NOTE]
 >
-Per ulteriori dettagli, consulta [Mappa browser personalizzata](#creatingacustomisedbrowsermap).
+>Per ulteriori dettagli, consulta [Mappa browser personalizzata](#creatingacustomisedbrowsermap).
 
 ### Definizione degli URL basati su selettori {#defining-selector-based-urls}
 
@@ -410,7 +410,7 @@ Inoltre, devi chiamare manualmente il `BrowserMap.forwardRequest()` metodo nel t
 
 >[!NOTE]
 >
-Per ulteriori informazioni sull’integrazione della libreria client, consulta [Utilizzo delle librerie HTML lato client](/help/sites-developing/clientlibs.md).
+>Per ulteriori informazioni sull’integrazione della libreria client, consulta [Utilizzo delle librerie HTML lato client](/help/sites-developing/clientlibs.md).
 
 Dopo aver creato il personalizzato `BrowserMap` libreria client, l’Adobe suggerisce il seguente approccio:
 
@@ -520,7 +520,7 @@ Puoi forzare il dispositivo di qualsiasi richiesta a testare una versione specif
 
 >[!NOTE]
 >
-Il `wcmmode` il parametro è impostato su `disabled` per simulare il comportamento di un&#39;istanza Publish.
+>Il `wcmmode` il parametro è impostato su `disabled` per simulare il comportamento di un&#39;istanza Publish.
 
 Il valore del dispositivo di esclusione è memorizzato in un cookie che ti consente di navigare nel sito web senza aggiungere il `device` parametro per ogni `URL`.
 
@@ -528,7 +528,7 @@ Di conseguenza, è necessario chiamare lo stesso `URL` con `device` imposta su `
 
 >[!NOTE]
 >
-BrowserMap memorizza il valore del dispositivo di override in un cookie denominato `BMAP_device`. L’eliminazione di questo cookie assicura che CQ distribuisca la versione appropriata del sito web in base al dispositivo corrente (ad esempio desktop o mobile).
+>BrowserMap memorizza il valore del dispositivo di override in un cookie denominato `BMAP_device`. L’eliminazione di questo cookie assicura che CQ distribuisca la versione appropriata del sito web in base al dispositivo corrente (ad esempio desktop o mobile).
 
 ## Elaborazione di richieste mobili {#mobile-request-processing}
 
@@ -564,7 +564,7 @@ Il **Statistiche** La pagina si presenta come segue:
 
 >[!NOTE]
 >
-Il **Statistiche** viene creata la prima volta che viene rilevato un dispositivo mobile che accede all’AEM. Prima di allora, non era disponibile.
+>Il **Statistiche** viene creata la prima volta che viene rilevato un dispositivo mobile che accede all’AEM. Prima di allora, non era disponibile.
 
 Per generare una voce nelle statistiche, procedere come segue:
 

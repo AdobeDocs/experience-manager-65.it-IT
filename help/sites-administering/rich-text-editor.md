@@ -3,9 +3,9 @@ title: Configura l’Editor Rich Text per creare contenuti in Adobe Experience M
 description: Scopri come configurare l’Editor Rich Text di Adobe Experience Manager per l’authoring dei contenuti in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2883'
+source-wordcount: '2887'
 ht-degree: 0%
 
 ---
@@ -255,7 +255,7 @@ Gli amministratori possono controllare le opzioni dell’editor Rich Text utiliz
 Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configurazioni dell’interfaccia utente ai criteri dei contenuti.
 
 * Le impostazioni di configurazione dell’interfaccia utente definiscono le opzioni disponibili per i criteri dei contenuti.
-* Se la configurazione dell&#39;interfaccia utente dell&#39;editor Rich Text è stata rimossa o non è stata abilitata per un elemento, il criterio del contenuto non è in grado di configurarlo.
+* Se la configurazione dell&#39;interfaccia utente dell&#39;editor Rich Text è stata rimossa o non consente un elemento, il criterio del contenuto non è in grado di configurarlo.
 * Un autore ha accesso solo alle funzionalità rese disponibili dalle configurazioni dell’interfaccia utente e dai criteri dei contenuti.
 
 Ad esempio, è possibile visualizzare [Documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).

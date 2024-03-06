@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Idealmente, i nomi dovrebbero rivelare la loro intenzione. Un test di codice com
  </tbody>
 </table>
 
-### Non ripetere  {#don-t-repeat-yourself}
+### Non ripeta  {#don-t-repeat-yourself}
 
 DRY afferma che lo stesso set di codice non deve mai essere duplicato. Questo vale anche per elementi come i valori letterali stringa. La duplicazione dei codici consente di individuare eventuali difetti in qualsiasi momento, che devono essere individuati ed eliminati.
 

@@ -5,9 +5,9 @@ topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 6%
 
 Stai cercando un mobile-friendly **esperienza Forms** che semplifica l&#39;iscrizione, aumenta il coinvolgimento e riduce i tempi di risposta, **moduli adattivi** è una misura perfetta per te. I moduli adattivi offrono un’esperienza di moduli per dispositivi mobili, automazione e analisi. Puoi creare facilmente moduli reattivi e interattivi, utilizzare processi automatizzati per ridurre le attività amministrative e ripetitive e utilizzare l’analisi dei dati per migliorare e personalizzare l’esperienza dei clienti con i tuoi moduli.
 
-Questa esercitazione fornisce un framework end-to-end per creare un modulo adattivo. Il tutorial è organizzato in un caso d’uso e più guide. Ogni guida ti aiuta ad apprendere e aggiungere nuove funzioni al modulo adattivo creato in questa esercitazione. Puoi utilizzare un modulo adattivo dopo ogni guida. È disponibile la guida per creare un modulo adattivo. Le guide successive saranno presto disponibili. Al termine di questa esercitazione, sarai in grado di:
+Questa esercitazione fornisce un framework end-to-end per creare un modulo adattivo. Il tutorial è organizzato in un caso d’uso e più guide. Ogni guida ti aiuta ad apprendere e aggiungere nuove funzioni al modulo adattivo creato in questa esercitazione. Puoi utilizzare un modulo adattivo dopo ogni guida. È disponibile la guida per creare un modulo adattivo. Le guide successive saranno presto disponibili. Al termine di questa esercitazione, dovresti essere in grado di effettuare le seguenti operazioni:
 
 * Crea un modulo adattivo e un modello dati per modulo.
 * Personalizza lo stile del modulo adattivo.
@@ -43,11 +43,11 @@ Il sito web viene eseguito su Adobe Experience Manager (AEM) e utilizza l&#39;AE
 
 ### Prerequisito {#prerequisite}
 
-* Imposta un [Istanza di authoring AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
+* Configurare un [Istanza di authoring AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installa [Componente aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) nell’istanza di authoring.
 * Ottenere il driver del database JDBC (file JAR) dal provider del database. Esempi nell’esercitazione sono basati su [!DNL MySQL] database e utilizzo [!DNL Oracle's] [Driver di database MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-* Imposta un database contenente i dati dei clienti con i campi visualizzati di seguito. Un database non è essenziale per creare un modulo adattivo. Questo tutorial utilizza un database per visualizzare il modello di dati dei moduli e le funzionalità di persistenza dell’AEM [!DNL Forms].
+* Configura un database contenente i dati dei clienti con i campi visualizzati di seguito. Un database non è essenziale per creare un modulo adattivo. Questo tutorial utilizza un database per visualizzare il modello di dati dei moduli e le funzionalità di persistenza dell’AEM [!DNL Forms].
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
@@ -59,10 +59,10 @@ I moduli adattivi sono di nuova generazione, coinvolgenti, reattivi, dinamici e 
 
 Obiettivi:
 
-* Creare un modulo adattivo che consenta a un cliente di aggiungere un indirizzo di spedizione
-* Layout dei campi di un modulo adattivo per visualizzare e accettare le informazioni di un cliente
-* Crea un’azione di invio per inviare un’e-mail contenente il contenuto del modulo
-* Anteprima e invio di un modulo adattivo
+* Crea un modulo adattivo che consenta a un cliente di aggiungere un indirizzo di spedizione.
+* Layout dei campi di un modulo adattivo per visualizzare e accettare informazioni da un cliente.
+* Crea un’azione di invio per inviare un’e-mail contenente il contenuto del modulo.
+* Visualizzare in anteprima e inviare un modulo adattivo.
 
 [![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
@@ -70,15 +70,15 @@ Obiettivi:
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Un modello per dati modulo consente di collegare un modulo adattivo a origini dati diverse. Ad esempio, profilo utente AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con un modulo adattivo per recuperare, aggiornare, eliminare e aggiungere dati alle origini dati connesse.
+Un modello dati modulo consente di collegare un modulo adattivo a origini dati diverse. Ad esempio, profilo utente AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con un modulo adattivo per recuperare, aggiornare, eliminare e aggiungere dati alle origini dati connesse.
 
 Obiettivi:
 
-* Configurare l&#39;istanza di database del sito Web ([!DNL MySQL] database) come origini dati
-* Crea il modello dati del modulo utilizzando [!DNL MySQL] database come origine dati
-* Aggiungi oggetti modello dati al modello dati modulo
-* Configurare i servizi di lettura e scrittura per il modello dati del modulo
-* Test del modello di dati del modulo e servizi configurati con i dati di test
+* Configurare l&#39;istanza di database del sito Web ([!DNL MySQL] database) come origine di dati.
+* Crea il modello dati del modulo utilizzando [!DNL MySQL] come origine dati.
+* Aggiungi oggetti modello dati in modo da poter formare il modello dati.
+* Configurare i servizi di lettura e scrittura per il modello dati del modulo.
+* Verificare il modello dati del modulo e i servizi configurati con i dati di test.
 
 [![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
@@ -86,12 +86,12 @@ Obiettivi:
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-I moduli adattivi forniscono un editor per scrivere regole sugli oggetti modulo adattivi. Queste regole definiscono le azioni da attivare sugli oggetti modulo in base a condizioni preimpostate, input dell&#39;utente e azioni dell&#39;utente sul modulo. Consente di garantire precisione e velocizza l’esperienza di compilazione dei moduli.
+I moduli adattivi forniscono un editor per scrivere regole sugli oggetti modulo adattivi. Queste regole definiscono le azioni da attivare sugli oggetti modulo in base a condizioni preimpostate, input dell&#39;utente e azioni dell&#39;utente sul modulo. Consente di garantire la precisione e velocizza l’esperienza di compilazione dei moduli.
 
 Obiettivi:
 
-* Creare e applicare regole ai campi del modulo adattivo
-* Utilizzare le regole per attivare i servizi modello dati modulo per aggiornare i dati nel database
+* Crea e applica regole ai campi del modulo adattivo.
+* Utilizzare le regole per attivare i servizi modello dati modulo per aggiornare i dati nel database.
 
 [![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
@@ -103,9 +103,9 @@ I moduli adattivi forniscono temi e un [editor](../../forms/using/themes.md) cre
 
 Obiettivi:
 
-* Applicare un tema preconfigurato a un modulo adattivo
-* Creare un tema per il modulo adattivo tramite l’editor tema
-* Utilizzare i font per web in un tema personalizzato
+* Applicare un tema preconfigurato a un modulo adattivo.
+* Crea un tema per il modulo adattivo utilizzando l’editor del tema.
+* Utilizzare i Web Fonts in un tema personalizzato.
 
 [![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
@@ -117,8 +117,8 @@ Obiettivi:
 
 Obiettivi:
 
-* Pubblicare il modulo adattivo come pagina AEM
-* Incorporare il modulo adattivo in un AEM [!DNL Sites] Pagina
-* Incorporare il modulo adattivo in una pagina web esterna (una pagina web non AEM ospitata al di fuori dell’AEM)
+* Pubblica il modulo adattivo come pagina AEM.
+* Incorporare il modulo adattivo in un AEM [!DNL Sites] Pagina.
+* Incorpora il modulo adattivo in una pagina web esterna (una pagina web non AEM ospitata al di fuori dell’AEM).
 
 [![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

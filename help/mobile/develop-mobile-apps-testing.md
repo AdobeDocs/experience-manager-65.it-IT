@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 2c0e3052e32e32f794faa69177d5fdad95bec72f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Quando si sviluppa un’app mobile, vi sono molti nuovi problemi specifici per i
 
 * Funzionale: l’app soddisfa tutti i requisiti?
 * Usabilità - L’app è facile da usare e da comprendere per il cliente?
-* Prestazioni: cosa accade durante un picco nell’utilizzo? Gli elementi dell’app, come campioni e caroselli, sono rapidi e non distolgono l’esperienza?
+* Prestazioni: cosa accade durante un picco nell’utilizzo? Gli elementi dell’app, come swipes e caroselli, sono rapidi e non distolgono l’esperienza?
 * Errore o interruzioni: cosa succede quando si verifica una chiamata o una notifica in arrivo mentre l’app è in esecuzione? Cosa succede in caso di interruzione o spegnimento della rete?
 * Installazione e aggiornamenti: qual è l’esperienza di installazione? Come vengono inviati gli aggiornamenti?
 * Tecnico: l’app consuma troppo energia da un dispositivo?

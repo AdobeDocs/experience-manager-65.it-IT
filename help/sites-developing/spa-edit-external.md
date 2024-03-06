@@ -2,10 +2,10 @@
 title: Modifica di un SPA esterno in Adobe Experience Manager
 description: Questo documento descrive i passaggi consigliati per caricare un SPA autonomo in un’istanza Adobe Experience Manager, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 1%
+source-wordcount: '2391'
+ht-degree: 0%
 
 ---
 
@@ -368,7 +368,7 @@ I seguenti materiali di riferimento possono essere utili per comprendere l&#39;S
 
 * [L’archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 * [Il progetto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it)
-* [Guida introduttiva alle SPA in AEM usando React](spa-getting-started-react.md)
+* [Guida introduttiva dell’SPA nell’AEM con React](spa-getting-started-react.md)
 * [Materiali di riferimento SPA (riferimenti API)](spa-reference-materials.md)
 * [Blueprint SPA e PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [Routing modello SPA](spa-routing.md)

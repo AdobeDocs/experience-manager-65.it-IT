@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 0%
@@ -175,7 +175,7 @@ Questo utilizza un layout server semplice con un solo server amministratore.
    * rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario (vedi Descrizione generale)
    * Ripristina file web.xml
 
-* Distribuire il file .war dell&#39;AEM come applicazione (per le altre impostazioni utilizzare le impostazioni predefinite)
+* Distribuire il file .war AEM come applicazione (per le altre impostazioni, utilizzare le impostazioni predefinite)
 * L&#39;installazione può richiedere tempo...
 * Verifica che l’installazione sia stata completata come indicato in precedenza nella Descrizione generale (ad esempio, coda del file error.log).
 * È possibile modificare la directory principale del contesto nella scheda Configurazione dell’applicazione web in WebLogic `/console`

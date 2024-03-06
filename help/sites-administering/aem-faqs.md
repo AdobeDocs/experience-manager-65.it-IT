@@ -2,7 +2,7 @@
 title: Domande frequenti su AEM
 description: Utilizza queste domande frequenti per comprendere, configurare e risolvere i problemi relativi ai flussi di lavoro o ai problemi più comuni in AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%
@@ -80,11 +80,11 @@ Consulta [Perché aggiornare l’AEM](https://helpx.adobe.com/experience-manager
 
 Se l’utente non dispone delle autorizzazioni di eliminazione per il caricamento dei file filmato nel nodo della risorsa, i nodi di eliminazione non riescono e il caricamento viene riavviato.
 
-#### Quali sono le impostazioni predefinite per le configurazioni OOTB durante la creazione della copia in lingua? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### Quali sono le impostazioni predefinite per le configurazioni predefinite durante la creazione della copia in lingua? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 Quando crei una copia per lingua tramite l’interfaccia utente touch (**Riferimenti** > **Aggiorna copia per lingua**), viene creata una nuova cartella DAM nella nuova lingua e da qui viene fatto riferimento alle risorse.
 
-Impostazione predefinita per le configurazioni OOTB. È possibile impostare **Traduci risorse di pagina** = **Non tradurre** nelle configurazioni di traduzione.
+Questa è l’impostazione predefinita per le configurazioni pronte all’uso. È possibile impostare **Traduci risorse di pagina** = **Non tradurre** nelle configurazioni di traduzione.
 Per AEM 6.4, **Strumenti** > **Cloud Service** > **Servizi cloud di traduzione**.
 
 #### Come disattivare una componente AEM che causa una crescita esponenziale per il SegmentStore AEM (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

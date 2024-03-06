@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '727'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ Per consentire l’authoring della pagina, una libreria client denominata `cq.au
 * Se il modello è modificabile, aggiungi la categoria della libreria client al criterio della pagina.
 * Aggiungere la categoria di librerie client utilizzando `customfooterlibs.html` del componente Pagina.
 
-Non dimenticare di limitare l&#39;inclusione di `cq.authoring.pagemodel.messaging` al contesto dell’editor pagina.
+Non dimenticare di limitare l’inclusione di `cq.authoring.pagemodel.messaging` al contesto dell’editor pagina.
 
 ## Tipo di dati di comunicazione {#communication-data-type}
 

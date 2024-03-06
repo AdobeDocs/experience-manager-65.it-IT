@@ -6,9 +6,9 @@ role: Admin
 feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -103,9 +103,9 @@ Per utilizzare il flusso di lavoro Experience Manager per generare la rappresent
 
 1. Aggiungi un valore significativo **[!UICONTROL Titolo]** e **[!UICONTROL Nome]**.
 
-1. Selezionate il modello e fate clic su **[!UICONTROL Modifica]**. Clic **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Apri proprietà]**, quindi selezionare **[!UICONTROL Flusso di lavoro transitorio]**. Ciò migliora scalabilità e prestazioni.
+1. Selezionate il modello e fate clic su **[!UICONTROL Modifica]**. Clic **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Apri proprietà]** e quindi selezionare **[!UICONTROL Flusso di lavoro transitorio]**. Ciò migliora scalabilità e prestazioni.
 
-1. Fai clic su ******[!UICONTROL Salva e chiudi]**.
+1. Clic **[!UICONTROL Salva]** e **[!UICONTROL Chiudi]**.
 
 1. Clic **[!UICONTROL Attiva/Disattiva pannello laterale]** nell&#39;angolo in alto a sinistra e cerca il passaggio Elabora miniatura.
 

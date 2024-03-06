@@ -7,9 +7,9 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -82,19 +82,19 @@ Di seguito è riportato un esempio di implementazione di un modello personalizza
 
 Un modello personalizzato per qualsiasi componente di Forms Portal include voci ripetibili e non ripetibili. Le voci ripetibili sono entità di base per l&#39;inserimento nell&#39;elenco. Esempi di voci ripetibili sono Search &amp; Lister (Ricerca e elenco), Bozze e invii e Componenti link.
 
-Forms Portal fornisce una sintassi per i segnaposto per visualizzare metadati personalizzati/OOTB. I segnaposto vengono compilati dopo la visualizzazione dei risultati di maschere, bozze o invii.
+Forms Portal fornisce una sintassi per i segnaposto per visualizzare metadati personalizzati/preconfigurati. I segnaposto vengono compilati dopo la visualizzazione dei risultati di maschere, bozze o invii.
 
 Per includere una voce ripetibile, configura il valore dell&#39;attributo **dati ripetibili** a **true**.
 
 *Nell’esempio discusso, due elementi Div sono presenti nella parte superiore del modello personalizzato. La prima, con classe CSS &quot;__FP_boxes-container&quot;, funziona come elemento contenitore per i moduli elencati. La seconda, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. Il **dati ripetibili**l&#39;attributo presente nell&#39;elemento Div ha il valore **true**.*
 
-Ogni segnaposto dispone di un set di metadati OOTB esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere **${metadata_prop} proprietà** sul posto.
+Ogni segnaposto dispone di un set di metadati predefinito esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere **${metadata_prop} proprietà** sul posto.
 
 *Nell’esempio, la proprietà dei metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **descrizione**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, e **percorso**nel modo prescritto.*
 
 ## Metadati pronti all’uso {#out-of-the-box-metadata}
 
-Diversi componenti di Forms Portal forniscono set esclusivi di metadati OOTB che è possibile utilizzare per l’elenco.
+Diversi componenti di Forms Portal forniscono set esclusivi di metadati predefiniti che è possibile utilizzare per l’elenco.
 
 ### Componente Ricerca ed elenco {#search-amp-lister-component}
 
@@ -169,7 +169,7 @@ Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazion
 ## Suggerimenti, trucchi e problemi noti {#tips-tricks-and-known-issues}
 
 1. Non utilizzare virgolette singole (&#39;) in alcun modello personalizzato.
-1. Per i metadati personalizzati, memorizza questa proprietà in **jcr:content/metadata** solo nodo. Se si archivia in qualsiasi altro luogo, Forms Portal non può visualizzare i metadati.
+1. Per i metadati personalizzati, memorizza questa proprietà in **jcr:content/metadata** solo nodo. Se viene archiviato in un&#39;altra posizione, Forms Portal non può visualizzare i metadati.
 1. Assicurati che il nome di eventuali metadati personalizzati o esistenti non includa i due punti ( : ). In tal caso, non è possibile visualizzarlo nell’interfaccia utente.
 1. **dati ripetibili** non ha alcun significato per un **Collegamento** componente. L’Adobe consiglia di evitare di utilizzare questa proprietà nel modello per un componente Collegamento.
 

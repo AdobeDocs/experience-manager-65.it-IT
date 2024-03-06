@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 9%
+source-wordcount: '2665'
+ht-degree: 7%
 
 ---
 
@@ -134,7 +134,7 @@ I metadati specifici dell’applicazione includono metadati tecnici e descrittiv
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PIÙ - [Sistema universale di licenze per immagini](https://www.useplus.com).
-* PRISMA - [Requisiti di pubblicazione per i metadati standard di settore](https://www.idealliance.org/prism-metadata).
+* PRISMA - [Requisiti di pubblicazione per i metadati standard di settore](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * PRL - PriSM Rights Language.
 * PUR - Diritti di utilizzo PRISM.
 * `xmpPlus` - Integrazione di PLUS con XMP.
@@ -149,7 +149,7 @@ I metadati specifici dell’applicazione includono metadati tecnici e descrittiv
 ### Metadati specifici per la stampa {#print-specific-metadata}
 
 * PDF e PDF/X: applicazioni Adobe PDF e di terze parti.
-* PRISMA - [Requisiti di pubblicazione per i metadati standard di settore](https://www.idealliance.org/prism-metadata).
+* PRISMA - [Requisiti di pubblicazione per i metadati standard di settore](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - Metadati XMP per testo impaginato.
 
@@ -183,7 +183,7 @@ Oltre ai DCMES, esistono altri elementi di metadati creati dall’iniziativa di 
 | editore | La persona o l’azienda responsabile della messa a disposizione del bene. |
 | relazione | Una risorsa correlata. |
 | diritti | Informazioni su chi dispone dei diritti per questa risorsa. |
-| source | Una risorsa correlata da cui deriva la risorsa. |
+| sorgente | Una risorsa correlata da cui deriva la risorsa. |
 | soggetto | Argomento della risorsa. |
 | titolo | Nome della risorsa. |
 | tipo | La natura o il genere della risorsa. |

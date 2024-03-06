@@ -2,10 +2,10 @@
 title: Intestazioni HTTP personalizzate
 description: Scopri come configurare le intestazioni HTTP personalizzate in Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 5%
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ I componenti che utilizzano la configurazione del servizio cloud precedente invi
 
 ## Restrizioni {#restrictions}
 
-Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non saranno disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. È possibile trovare un elenco di nomi di intestazione con restrizioni [qui](https://developer.mozilla.org/it-IT/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
+Anche se il servizio consente di definire qualsiasi nome di intestazione, inclusi quelli standard, non sono disponibili per la configurazione. In altre parole, non puoi sovrascrivere le intestazioni HTTP standard con questa funzione. È possibile trovare un elenco di nomi di intestazione con restrizioni [qui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Oltre a queste, ci sono altre due intestazioni che non possono essere utilizzate:
 
 * &quot;Store&quot;: utilizzato dall’CIF per identificare il negozio Adobe Commerce
 * &quot;Preview-Version&quot;: utilizzato dall&#39;CIF per recuperare i prodotti in staging

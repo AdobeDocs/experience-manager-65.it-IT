@@ -2,9 +2,9 @@
 title: Componenti di base
 description: Scopri i componenti di base in Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6872'
+source-wordcount: '6873'
 ht-degree: 4%
 
 ---
@@ -1395,7 +1395,7 @@ Consente di specificare i campi necessari per l&#39;immissione dei dettagli dell
 >
 >Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Caricamento file {#file-upload}
+### Caricamento del file {#file-upload}
 
 >[!CAUTION]
 >

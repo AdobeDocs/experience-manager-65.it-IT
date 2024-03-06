@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 1%
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
    * Inserisci il corpo del testo
 
-     Non ho avuto molto successo quando appendo una mangiatoia di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
+     Non ho avuto molto successo quando appendo un mangiatore di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
 
    * Seleziona post
    * Seleziona disconnessione

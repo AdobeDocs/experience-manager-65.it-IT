@@ -3,9 +3,9 @@ title: "Tutorial: creare un modulo adattivo"
 description: Scopri come creare, creare il layout e visualizzare in anteprima un modulo adattivo. Inoltre, scopri come configurare le azioni di invio.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1314'
 ht-degree: 8%
 
 ---
@@ -57,7 +57,7 @@ AEM [!DNL Forms] fornisce molti componenti per visualizzare informazioni su un m
 
 1. Seleziona Immagine. Viene visualizzata la barra degli strumenti. Seleziona ![cmppr](assets/cmppr.png). Il browser delle proprietà si apre a sinistra dello schermo. **[!UICONTROL Sfoglia]** e carica l&#39;immagine del logo. Seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). L&#39;immagine viene visualizzata nell&#39;intestazione.
 
-   Se non disponi di un logo, puoi selezionare Ottieni file per scaricare quello utilizzato in questo articolo.
+   Se non ne hai uno, seleziona Ottieni file per scaricare il logo utilizzato in questo articolo.
 
 [Ottieni file](assets/logo.png)
 
@@ -94,14 +94,14 @@ I componenti sono elementi costitutivi di un modulo adattivo. AEM [!DNL Forms] f
      </tr> 
      <tr> 
       <td>Campo obbligatorio</td> 
-      <td>Abilitato</td> 
-      <td>Abilitato</td> 
-      <td>Abilitato</td> 
+      <td>Attivato</td> 
+      <td>Attivato</td> 
+      <td>Attivato</td> 
      </tr> 
      <tr> 
       <td>Consenti più righe<br /> </td> 
       <td>Disattivato</td> 
-      <td>Abilitato</td> 
+      <td>Attivato</td> 
       <td>Disattivato</td> 
      </tr> 
     </tbody> 
@@ -114,7 +114,7 @@ I componenti sono elementi costitutivi di un modulo adattivo. AEM [!DNL Forms] f
    | Titolo | Codice postale |
    | Nome elemento | customer_ZIPCode |
    | Numero massimo di cifre | 6 |
-   | Campo obbligatorio | Abilitato |
+   | Campo obbligatorio | Attivato |
    | Tipo di pattern di visualizzazione | Nessun pattern |
 
 1. Trascina una **[!UICONTROL E-mail]** prima del componente piè di pagina. Apri le proprietà del componente, imposta i valori elencati nella tabella seguente e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -123,7 +123,7 @@ I componenti sono elementi costitutivi di un modulo adattivo. AEM [!DNL Forms] f
    |---|---|
    | Titolo | E-mail |
    | Nome elemento | customer_Email |
-   | Campo obbligatorio | Abilitato |
+   | Campo obbligatorio | Attivato |
 
 1. Trascina una **[!UICONTROL File allegato]** prima del componente piè di pagina. Apri le proprietà del componente, imposta i valori elencati nella tabella seguente e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -143,7 +143,7 @@ I componenti sono elementi costitutivi di un modulo adattivo. AEM [!DNL Forms] f
      </tr> 
      <tr> 
       <td>Campo obbligatorio</td> 
-      <td>Abilitato</td> 
+      <td>Attivato</td> 
      </tr> 
     </tbody> 
    </table>
@@ -170,7 +170,7 @@ La procedura seguente consente di configurare l’azione di invio e-mail e l’a
    | A | `${customer_Email}` |
    | Oggetto | Conferma: hai aggiunto l&#39;indirizzo di spedizione sul sito Web We.Retail. |
    | Modello e-mail | Ciao `${customer_Name}`, Il seguente indirizzo viene aggiunto come indirizzo di spedizione per il tuo account: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Saluti, We.Retail |
-   | Includi allegati | Abilitato |
+   | Includi allegati | Attivato |
 
    Modulo pronto. Ora è possibile visualizzare in anteprima il modulo e verificarne la funzionalità. Se hai usato il nome indicato nell’esercitazione e accedi al modulo sul computer che esegue AEM [!DNL Forms] , il modulo è disponibile all&#39;indirizzo [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
 

@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3089'
-ht-degree: 4%
+source-wordcount: '3084'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +75,7 @@ Il processo di creazione consiste in una serie di passaggi presentati come panne
 
 Nel pannello Modello di sito vengono specificati il titolo, la descrizione, la directory principale del sito, la lingua di base, il nome e il modello di sito:
 
-* **Titolo del sito community**
+* **Titolo sito community**
 
   Titolo da visualizzare per il sito.
 
@@ -198,7 +198,7 @@ L&#39;impostazione predefinita è deselezionata.
 Se non è selezionata, non viene visualizzato alcun accesso a Facebook.
 Lascia deselezionata l’opzione *privato* sito della community. L&#39;impostazione predefinita è deselezionata.
 
-* **Consenti accesso social network: Twitter**
+* **Consenti accessi social network: Twitter**
 
   Se questa opzione è selezionata, consentire ai visitatori del sito di accedere con le credenziali dell&#39;account di Twitter. Il valore selezionato [Configurazione cloud twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) deve essere configurato in modo da aggiungere utenti al gruppo membri del sito community dopo la creazione del sito community.
 Se questa opzione è deselezionata, non viene visualizzato alcun accesso di Twitter.
@@ -262,14 +262,14 @@ L&#39;impostazione globale per la moderazione dei contenuti generati dagli utent
 
 ![site-analytics](assets/site-analytics.png)
 
-* **Abilita Analytics**
+* **Abilita analisi**
 
   Disponibile solo se Adobe Analytics è stato [configurato](/help/communities/analytics.md) per le funzioni di Communities.
 L&#39;impostazione predefinita è deselezionata. Se questa opzione è selezionata, viene visualizzato un menu di selezione aggiuntivo:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
-* **Riferimento framework configurazione Cloud**
+* **Riferimento framework configurazione cloud**
 
   Dal menu a discesa, seleziona il framework di servizi Analytics Cloud configurato per questo sito community.
   `Communities` è l’esempio di framework da [Configurazione di Analytics per le funzioni di Communities](/help/communities/analytics.md#aem-analytics-framework-configuration) documentazione.
@@ -284,7 +284,7 @@ L&#39;impostazione predefinita è deselezionata. Se questa opzione è selezionat
 
 ![allow-machine-translation](assets/allow-machine-translation.png)
 
-* **Attiva traduzione automatica per le lingue selezionate**
+* **Abilita traduzione automatica per le lingue selezionate**
 
   Le lingue abilitate per la traduzione automatica vengono impostate per default sull&#39;impostazione di sistema specificata da [configurazione dell’integrazione della traduzione](/help/communities/translate-ugc.md#translation-integration-configuration). Queste impostazioni predefinite possono essere ignorate per questo sito eliminando le impostazioni predefinite e/o selezionando altre lingue dal menu a discesa.
 
@@ -302,18 +302,18 @@ L&#39;impostazione predefinita è deselezionata. Se questa opzione è selezionat
 
 * **Seleziona le opzioni di traduzione per il sito community**
 
-   * **Traduci tutta la pagina**
+   * **Traduci intera pagina**
 
      Se questa opzione è selezionata, tutti i contenuti UGC di una pagina vengono tradotti nella lingua di base della pagina.
 
      Il valore predefinito è *non selezionato*.
 
-   * **Traduci solo la selezione**
+   * **Traduci solo selezione**
 
      Se selezionata, accanto a ciascun post viene visualizzata un&#39;opzione di traduzione che consente la traduzione dei singoli post nella lingua di base della pagina.
 Il valore predefinito è *selezionato*.
 
-* **Seleziona le opzioni di persistenza**
+* **Seleziona opzioni di persistenza**
 
    * **Traduci contributi su richiesta dell’utente e in seguito mantieni le traduzioni**
 Se selezionato, il contenuto non viene tradotto fino a quando non viene effettuata una richiesta. Una volta tradotta, la traduzione viene memorizzata nell’archivio.

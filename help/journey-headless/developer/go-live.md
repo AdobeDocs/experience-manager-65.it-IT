@@ -2,10 +2,10 @@
 title: Come pubblicare con la tua applicazione headless
 description: In questa sezione del Percorso per sviluppatori headless AEM, scopri come distribuire un’applicazione headless in tempo reale.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1803'
-ht-degree: 51%
+ht-degree: 53%
 
 ---
 
@@ -149,7 +149,7 @@ Se sei un cliente AMS che utilizza Cloud Manager, dopo aver verificato che tutto
 
 Dopo aver caricato gli aggiornamenti in Cloud Manager, implementali in AEM utilizzando [Pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
-<!-- Can't find a parallel link -->
+<!-- Cannot find a parallel link -->
 <!--
 You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
@@ -167,7 +167,7 @@ Per garantire agli utenti la migliore esperienza possibile quando utilizzano l�
       * Verifica il numero di utenti, richieste e caricamento
 * Accedere ai rapporti sulle prestazioni specifici per app e spazio
    * Una volta che il server è attivo, controllare se le metriche generali sono verde/arancione/rosso, quindi identificare problemi specifici dell’app
-   * Apri gli stessi rapporti sopra filtrati per app o spazio (ad esempio, desktop Photoshop, paywall)
+   * Aprire i rapporti di cui sopra, filtrati per app o spazio (ad esempio Photoshop per desktop, paywall)
    * Utilizzare le API del registro Splunk per accedere alle prestazioni del servizio e dell’applicazione
    * Contattare l’Assistenza clienti in caso di altri problemi.
 
@@ -226,6 +226,6 @@ Se questo tipo di flessibilità è necessario per il progetto, continua con la p
 
    * Configurazione di [Rewriter CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*cerca rewriter CDN*)
 
-* [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

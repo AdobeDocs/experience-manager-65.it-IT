@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 34%
+source-wordcount: '633'
+ht-degree: 32%
 
 ---
 
@@ -41,7 +41,7 @@ Per la creazione e la visualizzazione delle annotazioni viene utilizzata una [mo
 
 >[!NOTE]
 >
->Sono disponibili anche i [commenti](/help/sites-authoring/basic-handling.md#timeline) per fornire feedback in una pagina.
+>Non dimentichi che [commenti](/help/sites-authoring/basic-handling.md#timeline) sono inoltre disponibili per fornire feedback su una pagina.
 
 >[!NOTE]
 >

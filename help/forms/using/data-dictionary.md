@@ -6,7 +6,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 0%
@@ -557,7 +557,7 @@ Nell&#39;esempio seguente viene illustrato lo schema di una nota.
    <td>empty(null)<br /> </td>
   </tr>
   <tr>
-   <td>a</td>
+   <td>in</td>
    <td>/note/to</td>
   </tr>
   <tr>
@@ -644,7 +644,7 @@ Il Token.xsd associato a questo esempio è:
 
 | **Elemento dizionario dati** | **Associazione XML predefinita** |
 |---|---|
-| Directory principale | empty(null) |
+| Principale | empty(null) |
 | Token | /Root/Tokens |
 | Composito | empty(null) |
 | TokenID | TokenID |

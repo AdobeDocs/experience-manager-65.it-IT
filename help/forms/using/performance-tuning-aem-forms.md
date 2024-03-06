@@ -7,9 +7,9 @@ topic-tags: Configuration
 docset: aem65
 role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di con
    <Location /content/xfaforms>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don't compress
+           #Do not compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -123,7 +123,7 @@ Aggiungi la seguente configurazione in `APACHE_HOME/conf/httpd.conf` file di con
    <Location /content/forms/af>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don't compress
+           #Do not compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -167,7 +167,7 @@ Per migliorare le prestazioni, è possibile indirizzare il software antivirus pe
 
 >[!NOTE]
 >
-* Se utilizzi una posizione diversa per GDS e la directory temporanea, apri AdminUI in `https://'[server]:[port]'/adminui`, passa a **Home > Impostazioni > Impostazioni sistema core > Configurazioni core** per confermare la posizione in uso.
+>* Se utilizzi una posizione diversa per GDS e la directory temporanea, apri AdminUI in `https://'[server]:[port]'/adminui`, passa a **Home > Impostazioni > Impostazioni sistema core > Configurazioni core** per confermare la posizione in uso.
 >
 * Se il server AEM Forms funziona lentamente anche dopo l’esclusione delle directory suggerite, escludi anche il file eseguibile Java™ (java.exe).
 >

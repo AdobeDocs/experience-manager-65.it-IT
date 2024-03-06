@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '913'
 ht-degree: 2%
 
 ---
@@ -83,7 +83,7 @@ Per sincronizzare i contenuti con e da un’istanza di sviluppo AEM, devi defini
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-Le Impostazioni progetto consentono di definire:
+Le Impostazioni progetto consentono di definire quanto segue:
 
 1. L’URL del server (ad esempio, `http://localhost:4502`)
 1. Tollerare i server che non dispongono di un certificato HTTPS valido (mantieni deselezionato, a meno che non sia necessario)
@@ -110,7 +110,7 @@ In Esplora progetti, apri il menu contestuale facendo clic con il pulsante destr
 
 ### Sincronizzazione completa dei pacchetti di contenuti {#full-content-package-synchronization}
 
-In **AEM** menu, il **Esporta pacchetto contenuti** o **Importa pacchetto contenuti** Le opzioni consentono di sincronizzare l&#39;intero progetto con il server.
+In **AEM** menu, il **Esporta pacchetto contenuti** o **Importa pacchetto contenuti** consente di sincronizzare l&#39;intero progetto con il server.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

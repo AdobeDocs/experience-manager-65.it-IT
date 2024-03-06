@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -210,7 +210,7 @@ Con l&#39;output:
 
 ## Ambito di rilevamento {#scope}
 
-Attualmente Pattern Detector consente di controllare:
+Al momento il rilevatore pattern consente di controllare quanto segue:
 
 * Bundle OSGi con esportazioni e importazioni non corrispondenti
 * Sovrautilizzi di tipi di risorse e super tipi Sling (con sovrapposizioni di contenuto del percorso di ricerca)

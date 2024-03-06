@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3227'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Le seguenti proprietà sono disponibili per molti componenti del passaggio del f
 
 * **Notifica all&#39;utente via e-mail**
 
-   * Puoi inviare una notifica ai partecipanti inviando loro un’e-mail quando il flusso di lavoro raggiunge il passaggio.
+   * Avvisa i partecipanti inviando loro un’e-mail quando il flusso di lavoro raggiunge il passaggio.
    * Se abilitata, viene inviata un’e-mail all’utente definito dalla proprietà **Utente/Gruppo** o a ciascun membro del gruppo, se è definito un gruppo.
 
 * **Utente/Gruppo**

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1924'
-ht-degree: 2%
+source-wordcount: '1898'
+ht-degree: 0%
 
 ---
 
@@ -70,9 +70,9 @@ Molti elementi dell’interfaccia utente che possono essere cliccati o utilizzat
 
 <!-- TBD items:
 
-* The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
-* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’. What about setting preferences and impersonating a user?
-* Using the [!DNL Experience Manager] tag browser and operating the options like delete tag? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
+* The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
+* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
+* Using the [!DNL Experience Manager] tag browser and operating the options like delete tag? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
 
@@ -131,7 +131,7 @@ In [!DNL Experience Manager] header section, when navigating in browse mode, scr
   * The Searching Help status message that is displayed when user enters a search string in Search for Help field under Help option
   * The error message if incorrect value is entered in Impersonate as field under User option and focus correctly moves to the text field (NPR-33804).
 
-Review CQ-4282133 before adding - Close option in a coral-dialog wasn't accessible through keyboard, due to which user cannot trigger close option through keyboard press in version preview dialog. After fix, user can close dialog through close option using keyboard.
+Review CQ-4282133 before adding - Close option in a coral-dialog was not accessible through keyboard, due to which user cannot trigger close option through keyboard press in version preview dialog. After fix, user can close dialog through close option using keyboard.
 
 * CQ-4273122 - Assets of video/audio type will have aria-label in format "Multimedia player: <Title>" so users relying on screen-reader will get to know that they are video/audio assets.
 -->
@@ -159,7 +159,7 @@ Durante la navigazione nell’archivio delle risorse, le seguenti funzionalità 
 * Some enhancements to metadata properties UI?
 -->
 
-## Consente di gestire i contenuti digitali {#manage-assets}
+## Gestire le risorse digitali {#manage-assets}
 
 Molte attività di gestione delle risorse, come le operazioni CRUD, il download di una risorsa e l’aggiunta di metadati, sono accessibili a vari livelli. [!DNL Assets] consente di eseguire le attività utilizzando varie tecnologie di assistenza, ad esempio un assistente vocale e una tastiera.
 
@@ -215,7 +215,7 @@ Quando si condividono le risorse, le seguenti funzionalità migliorano l’acces
 * La navigazione da tastiera è possibile.
 * I rapporti di contrasto aiutano a evidenziare alcune parti del sito web della documentazione.
 
-## Fornisci feedback {#a11y-feedback}
+## Fornire feedback {#a11y-feedback}
 
 Per fornire un feedback, porre domande e richiedere miglioramenti al prodotto relativi all’accessibilità, utilizza i metodi seguenti:
 

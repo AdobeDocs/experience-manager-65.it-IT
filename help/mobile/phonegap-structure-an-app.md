@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ I componenti di pagina modificabili che desiderano utilizzare AngularJS hanno un
 
 Nelle librerie client, sono disponibili alcune opzioni per lo sviluppatore di dove inserirle nell’archivio. Il seguente modello è offerto a titolo indicativo, ma non è un requisito difficile.
 
-Se il codice lato client può essere mantenuto e non è correlato a un componente specifico dell&#39;applicazione, ovvero può essere riutilizzato in altre applicazioni, l&#39;Adobe consiglia di memorizzarlo in /etc/clientlibs/&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. D’altra parte, se la libreria client è specifica per una singola app, puoi nidificarla come elemento secondario del nodo di progettazione dell’app; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. Non utilizzare la categoria di clientlib con altre librerie, ma incorpora altre librerie in base alle esigenze. Seguendo questo modello, lo sviluppatore evita di dover aggiungere nuove configurazioni di sincronizzazione dei contenuti ogni volta che una libreria client viene aggiunta all’app, semplicemente aggiornando la proprietà &quot;embeds&quot; della libreria client di progettazione dell’app. Ad esempio, osserva il nodo di configurazione Geometrixx clientlibs-all Content Sync in /content/phonegap/geometrixx-outdoors/en/jcr:content/pge-app/app-config/clientlibs-all.
+Se il codice lato client può essere mantenuto da solo e non è correlato a un componente specifico dell&#39;applicazione, ovvero può essere riutilizzato in altre applicazioni, l&#39;Adobe consiglia di memorizzarlo in /etc/clientlibs/&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. D’altra parte, se la libreria client è specifica per una singola app, puoi nidificarla come elemento secondario del nodo di progettazione dell’app; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. Non utilizzare la categoria di clientlib con altre librerie, ma incorpora altre librerie in base alle esigenze. Seguendo questo modello, lo sviluppatore evita di dover aggiungere nuove configurazioni di sincronizzazione dei contenuti ogni volta che una libreria client viene aggiunta all’app, semplicemente aggiornando la proprietà &quot;embeds&quot; della libreria client di progettazione dell’app. Ad esempio, osserva il nodo di configurazione Geometrixx clientlibs-all Content Sync in /content/phonegap/geometrixx-outdoors/en/jcr:content/pge-app/app-config/clientlibs-all.
 
 Se il codice lato client è strettamente associato a un componente specifico, inseriscilo in una libreria client nidificata sotto la posizione del componente in /apps/ e incorporane la categoria nella libreria client &quot;progettazione&quot; dell’app.
 

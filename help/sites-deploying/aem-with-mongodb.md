@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6184'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -543,7 +543,7 @@ L&#39;output del secondo test deve essere considerevolmente superiore al primo, 
 
 >[!NOTE]
 >
-Durante l&#39;esecuzione dei test, controllare le statistiche sull&#39;utilizzo di I/O per le macchine virtuali in questione nel sistema di monitoraggio del sistema operativo. Se indicano valori inferiori al 100% per le letture I/O, potrebbe verificarsi un problema con la macchina virtuale.
+>Durante l&#39;esecuzione dei test, controllare le statistiche sull&#39;utilizzo di I/O per le macchine virtuali in questione nel sistema di monitoraggio del sistema operativo. Se indicano valori inferiori al 100% per le letture I/O, potrebbe verificarsi un problema con la macchina virtuale.
 
 **Verificare le prestazioni di scrittura dell’istanza MongoDB primaria**
 
@@ -584,7 +584,7 @@ Per gestire correttamente l’implementazione di MongoDB, il sistema operativo c
 
 Inoltre, assicurati che tutte le librerie utilizzate nella build siano aggiornate per ridurre al minimo le implicazioni di sicurezza.
 
-### Configurazione del Dispatcher {#dispatcher-configuration}
+### Configurazione Dispatcher {#dispatcher-configuration}
 
 Una tipica configurazione di Dispatcher fornisce da dieci a 20 volte di più il throughput delle richieste di una singola istanza AEM.
 
@@ -654,7 +654,7 @@ I CSP consentono di perfezionare i criteri. Tuttavia, in un’applicazione compl
 
 >[!NOTE]
 >
-Per ulteriori informazioni su come funziona, consulta [Pagina OWASP sull&#39;informativa sulla sicurezza dei contenuti](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Per ulteriori informazioni su come funziona, consulta [Pagina OWASP sull&#39;informativa sulla sicurezza dei contenuti](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Ridimensionamento {#sizing}
 
@@ -678,4 +678,4 @@ Se l’AEM è in esecuzione in un’implementazione di MongoMK persistence manag
 
 >[!NOTE]
 >
-Consulta la [Documentazione di MongoDB](https://docs.mongodb.com/manual/reference/limits/) così potrai acquisire familiarità con le limitazioni e le soglie note di MongoDB.
+>Consulta la [Documentazione di MongoDB](https://docs.mongodb.com/manual/reference/limits/) così potrai acquisire familiarità con le limitazioni e le soglie note di MongoDB.

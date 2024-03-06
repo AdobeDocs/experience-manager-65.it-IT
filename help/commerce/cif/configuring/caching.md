@@ -2,10 +2,10 @@
 title: Memorizzazione in cache e prestazioni
 description: Scopri le diverse configurazioni disponibili per abilitare GraphQL e il caching dei contenuti per ottimizzare le prestazioni dell’implementazione di e-commerce.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 60%
+source-wordcount: '821'
+ht-degree: 54%
 
 ---
 
@@ -19,7 +19,7 @@ Per i componenti core CIF di AEM, la memorizzazione in cache è configurata in b
 
 ### Configurazione
 
-Una volta configurata per un determinato componente, la cache inizia a memorizzare le query e le risposte GraphQL in base a quanto definito da ciascuna voce per la configurazione della cache. La dimensione della cache e la durata della memorizzazione nella cache di ciascuna voce devono essere definite in base al progetto, a seconda, ad esempio, della frequenza con cui i dati del catalogo possono cambiare, di quanto sia importante che un componente visualizzi sempre i dati più recenti e così via. Non è prevista alcuna invalidazione della cache, quindi occorre prestare attenzione quando si impostano le durate della cache.
+Una volta configurata per un determinato componente, la cache inizia a memorizzare le query e le risposte GraphQL in base a quanto definito da ciascuna voce per la configurazione della cache. La dimensione della cache e la durata della memorizzazione nella cache di ciascuna voce devono essere definite in base al progetto, a seconda, ad esempio, della frequenza con cui i dati del catalogo possono cambiare, di quanto sia importante che un componente visualizzi sempre i dati più recenti e così via. Tieni presente che non vi è alcuna invalidazione della cache, quindi fai attenzione quando imposti le durate della cache.
 
 Quando si configura la memorizzazione in cache per i componenti, il nome della cache deve corrispondere al nome dei componenti **proxy** definiti nel progetto.
 
@@ -43,7 +43,7 @@ venia/components/structure/navigation:true:10:600
 
 Quando si considera [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) viene utilizzato. Si noti l’uso del nome proxy del componente `venia/components/structure/navigation` e **non** del nome del componente di navigazione CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
-La memorizzazione nella cache per altri componenti deve essere definita in base al progetto, in genere in coordinamento con la memorizzazione nella cache configurata a livello di Dispatcher. Non è prevista l’invalidazione attiva di queste cache, pertanto la durata di memorizzazione nella cache deve essere impostata con attenzione. Non esiste un valore universale che vada bene per tutti i possibili progetti e casi di utilizzo. Occorre definire una strategia di caching a livello di progetto che corrisponda meglio ai requisiti del progetto.
+La memorizzazione nella cache per altri componenti deve essere definita in base al progetto, in genere in coordinamento con la memorizzazione nella cache configurata a livello di Dispatcher. Non è prevista l’invalidazione attiva di queste cache, pertanto la durata della memorizzazione nella cache deve essere impostata con attenzione. Non esiste un valore universale che corrisponda a tutti i possibili progetti e casi d’uso. Occorre definire una strategia di caching a livello di progetto che corrisponda meglio ai requisiti del progetto.
 
 ## Memorizzazione in cache di Dispatcher {#dispatcher}
 

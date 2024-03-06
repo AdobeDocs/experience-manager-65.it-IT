@@ -7,9 +7,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '798'
 ht-degree: 24%
 
 ---
@@ -158,7 +158,7 @@ Sostituisci il valore di `url` in `com.adobe.cq.commerce.graphql.client.impl.Gra
 
 Il componente aggiuntivo AEM Commerce e i componenti core CIF si connettono all’endpoint commerce GraphQL tramite il server AEM e direttamente tramite il browser. Per impostazione predefinita, i componenti core CIF lato client e gli strumenti di creazione di componenti aggiuntivi CIF si connettono a `/api/graphql`. Se necessario, questo può essere regolato tramite la configurazione del Cloud Service CIF (vedi sotto).
 
-Il componente aggiuntivo CIF fornisce un servlet proxy di GraphQL all&#39;indirizzo `/api/graphql`. Se non prevedi di utilizzare un Dispatcher AEM locale, si consiglia di configurare anche il servlet proxy di GraphQL.
+Il componente aggiuntivo CIF fornisce un servlet proxy di GraphQL all&#39;indirizzo `/api/graphql`. Se non prevedi di utilizzare un’istanza di Dispatcher AEM locale, si consiglia di configurare anche il servlet proxy di GraphQL.
 
 Passa a http://localhost:4502/system/console/configMgr e crea una configurazione OSGI per `Adobe CIF GraphQL Proxy Configuration` servizio. Utilizza lo stesso endpoint GraphQL del sistema commerce utilizzato per il client GraphQL di cui sopra.
 

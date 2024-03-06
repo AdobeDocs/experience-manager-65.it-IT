@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ I vantaggi:
 
 ### Cluster Oak con failover MongoMK per un&#39;elevata disponibilità in un singolo centro dati {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-Questo approccio implica che più istanze Oak accedano a un set di repliche MongoDB all’interno di un singolo data center, creando in effetti un cluster attivo-attivo per l’ambiente di authoring dell’AEM. I set di replica in MongoDB vengono utilizzati per fornire elevata disponibilità e ridondanza in caso di guasto dell&#39;hardware o della rete.
+Questo approccio implica che più istanze Oak accedano a un set di repliche MongoDB all’interno di un singolo data center, creando in effetti un cluster attivo-attivo per l’ambiente di authoring dell’AEM. I set di replica in MongoDB vengono utilizzati per fornire elevata disponibilità e ridondanza in caso di errore hardware o di rete.
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 

@@ -4,9 +4,9 @@ description: Scopri come eseguire un aggiornamento sul posto per AEM 6.5.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ Mentre `FileDataStore` è la nuova impostazione predefinita per le installazioni
 
 Ignora questa sezione se stai eseguendo l&#39;aggiornamento da 6.3. Anche se i profili crx2oak forniti devono soddisfare le esigenze della maggior parte dei clienti, ci sono momenti in cui saranno necessari parametri aggiuntivi. Se riscontri un errore durante la migrazione, è possibile che alcuni aspetti dell’ambiente richiedano l’inserimento di opzioni di configurazione aggiuntive. In tal caso, è probabile che si verifichi il seguente errore:
 
-**I punti di controllo non verranno copiati perché non è stato specificato alcun archivio dati esterno. Questo comporterà la reindicizzazione completa dell’archivio al primo avvio. Utilizza —skip-checkpoint per forzare la migrazione oppure consulta https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration per ulteriori informazioni.**
+**I punti di controllo non vengono copiati perché non è stato specificato alcun archivio dati esterno. Questo comporterà la reindicizzazione completa dell’archivio al primo avvio. Utilizza —skip-checkpoint per forzare la migrazione oppure consulta https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration per ulteriori informazioni.**
 
 Per qualche motivo, il processo di migrazione necessita dell’accesso ai dati binari nell’archivio dati e non è in grado di trovarli. Per specificare la configurazione dell’archivio dati, includi i seguenti flag nella `<<ADDITIONAL_FLAGS>>` parte del comando di migrazione:
 

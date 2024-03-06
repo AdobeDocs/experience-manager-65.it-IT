@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '6076'
+source-wordcount: '6074'
 ht-degree: 0%
 
 ---
@@ -612,7 +612,7 @@ Quando implementi tale servizio, assicurati di impostare il **service.ranking** 
 | **Nome** | **Descrizione** | **Comportamento predefinito** |
 |---|---|---|
 | Autenticatore | Fornisce le informazioni di autenticazione all&#39;AEM | Utilizza un utente tecnico configurabile per l’authoring e la pubblicazione. O SSO. |
-| Editor HTML | Riscrive collegamenti, immagini e così via | Riscrive i collegamenti AEM ai collegamenti portale e può essere esteso da un UrlMapper e un TextMapper |
+| Editor HTML | Riscrive collegamenti e immagini | Riscrive i collegamenti AEM ai collegamenti portale e può essere esteso da un UrlMapper e un TextMapper |
 | HttpClientService | Gestisce tutte le connessioni http | Implementazione standard |
 | LocaleHandler | Gestisce le informazioni sulle impostazioni locali | Riscrive un collegamento al contenuto rispetto alla lingua. |
 | LocaleDetector | Rileva le impostazioni locali dell&#39;utente. | Utilizza le impostazioni locali fornite dal portale. |
@@ -776,7 +776,7 @@ Per configurare il portlet:
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
-1. Clic **Salva**. È ora possibile aggiungere il portlet alle pagine del portale e utilizzare il portale.
+1. Fai clic su **Salva**. È ora possibile aggiungere il portlet alle pagine del portale e utilizzare il portale.
 
 ### URL di contenuto {#content-urls}
 

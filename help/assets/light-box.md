@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Se sei un [!DNL Adobe Experience Manager Assets] utente, Lightbox viene creato a
 
    >[!NOTE]
    >
-   >Sebbene Lightbox assomigli a una raccolta, non è possibile eseguire tutte le azioni normalmente eseguite sulle raccolte. Ad esempio, non è possibile eliminare, condividere o visualizzare le impostazioni di un Lightbox. Inoltre, non è possibile aggiungerlo ad altre raccolte. Tuttavia, puoi modificare le risorse all’interno di una Lightbox.
+   >Sebbene Lightbox sia simile a una raccolta, non è possibile eseguire tutte le azioni normalmente eseguite sulle raccolte. Ad esempio, non è possibile eliminare, condividere o visualizzare le impostazioni di un Lightbox. Inoltre, non è possibile aggiungerlo ad altre raccolte. Tuttavia, puoi modificare le risorse all’interno di una Lightbox.
 
 ## Rimuovere risorse da Lightbox {#removing-assets-from-lightbox}
 

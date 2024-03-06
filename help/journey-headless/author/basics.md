@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 76%
+source-wordcount: '1694'
+ht-degree: 75%
 
 ---
 
@@ -47,7 +47,7 @@ Come per la maggior parte dei sistemi, è necessario effettuare l&#39;accesso. I
 * Password
 * Collegamento per accedere alla schermata di accesso
 
-Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso di problemi, l’Adobe consiglia di contattare il team interno di supporto al progetto.
+Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso di problemi, Adobe consiglia di contattare il team di supporto interno per il progetto.
 
 ### Navigazione {#navigation}
 
@@ -76,7 +76,7 @@ Le Azioni rapide sono disponibili per una singola risorsa, vedi **Basilea** nell
 
 La barra degli strumenti Azioni consente di accedere a tutte le azioni applicabili allo scenario corrente. Le azioni disponibili possono variare, ad esempio a seconda della posizione o se sono state selezionate più risorse:
 
-![Barra degli strumenti delle azioni](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+![Barra delle azioni](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
 Puoi selezionare il formato di visualizzazione delle risorse con il Selettore di visualizzazione:
 
@@ -98,11 +98,11 @@ A meno che non siano disponibili pochissimi frammenti di contenuto, è consiglia
 
 #### Creazione di una cartella {#creating-folder}
 
-Per farlo, crea una serie di cartelle all’interno della sezione **File** della console Risorse. Seleziona l’opzione **Crea** (in alto a destra), seguita da **Cartella**:
+Per farlo, crea una serie di cartelle in **File** della console Assets. Seleziona l’opzione **Crea** (in alto a destra), seguita da **Cartella**:
 
 ![Opzione Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Viene visualizzata una finestra di dialogo in cui puoi immettere i dettagli, quindi confermare con **Crea**:
+Viene visualizzata una finestra di dialogo in cui puoi inserire i dettagli, quindi confermare con **Crea**:
 
 ![Finestra di dialogo Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -126,7 +126,7 @@ Puoi quindi navigare tra queste cartelle per creare e modificare i frammenti di 
 
 In caso...
 
-Probabilmente ti verrà offerta una cartella iniziale in cui puoi creare le tue cartelle. Come alcuni dettagli di configurazione devono essere applicati alla cartella principale (in genere da uno sviluppatore o da un amministratore di sistema). Questo probabilmente non ti interesserà, ma se necessario è possibile controllare la **Configurazione** nel **Cloud Services** della cartella **Proprietà**:
+Probabilmente ti verrà offerta una cartella iniziale in cui puoi creare le tue cartelle. Come alcuni dettagli di configurazione devono essere applicati alla cartella principale (in genere da uno sviluppatore o da un amministratore di sistema). Probabilmente non ti interessa, ma se necessario puoi controllare il **Configurazione** nel **Cloud Service** della cartella **Proprietà**:
 
 ![Crea proprietà cartella - Configurazione](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 

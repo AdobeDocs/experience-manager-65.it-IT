@@ -5,9 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '574'
 ht-degree: 6%
 
 ---
@@ -74,56 +74,56 @@ La tabella seguente mostra le proprietà delle configurazioni di esportazione:
   </tr>
   <tr>
    <td>includeComponents</td>
-   <td>Stringa[]</td>
+   <td>String[]</td>
    <td>includi tutto</td>
    <td>sling:resourceType</td>
    <td>escludi i dettagli per i nodi con sling:resourceType specificato dall’esportazione JSON</td>
   </tr>
   <tr>
    <td>excludeComponents</td>
-   <td>Stringa[]</td>
+   <td>String[]</td>
    <td>non escludere nulla</td>
    <td>sling:resourceType</td>
    <td>includi dettagli solo per i nodi con sling:resourceType specificato dall’esportazione JSON</td>
   </tr>
   <tr>
    <td>excludePropertyPrefixes</td>
-   <td>Stringa[]</td>
+   <td>String[]</td>
    <td>non escludere nulla</td>
    <td>Prefissi di proprietà</td>
    <td>escludi dall’esportazione JSON le proprietà che iniziano con i prefissi specificati</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
-   <td>Stringa[]</td>
+   <td>String[]</td>
    <td>non escludere nulla</td>
    <td>Nomi di proprietà</td>
    <td>escludi proprietà specificate dall’esportazione JSON</td>
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>Stringa[]</td>
+   <td>String[]</td>
    <td>includi tutto</td>
    <td>Nomi di proprietà</td>
    <td><p>se excludePropertyPrefixes è impostato<br /> sono incluse le proprietà specificate nonostante la corrispondenza del prefisso venga esclusa,</p> <p>else (escludi proprietà ignorate) include solo queste proprietà</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
-   <td>Stringa[]</td>
+   <td>String[]</td>
    <td>includi tutto</td>
    <td>nomi figlio</td>
    <td>escludi elementi figlio specificati dall’esportazione JSON</td>
   </tr>
   <tr>
    <td>excludeChildren</td>
-   <td>String[]<br /> <br /> </td>
+   <td>Stringa[]<br /> <br /> </td>
    <td>non escludere nulla</td>
    <td>nomi figlio</td>
    <td>includi solo gli elementi figlio specificati dall’esportazione JSON, escludi altro</td>
   </tr>
   <tr>
    <td>renameProperties</td>
-   <td>String[]<br /> <br /> </td>
+   <td>Stringa[]<br /> <br /> </td>
    <td>non rinominare nulla</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>rinominare le proprietà utilizzando le sostituzioni</td>
@@ -135,7 +135,7 @@ La tabella seguente mostra le proprietà delle configurazioni di esportazione:
 
 Crea un nodo di configurazione in */apps/mobileapps/caas/exportConfigs.*
 
-| name | resourceTypeOverrides |
+| nome | resourceTypeOverrides |
 |---|---|
 | jcr:primaryType | nt:unstructured |
 
@@ -152,7 +152,7 @@ La tabella seguente mostra le proprietà:
   </tr>
   <tr>
    <td>&lt;SELECTOR_TO_INC&gt;</td>
-   <td>Stringa[] </td>
+   <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
    <td>Per i seguenti tipi di risorse sling, non restituire l’esportazione JSON CaaS predefinita.<br /> Restituire un’esportazione json del cliente eseguendo il rendering della risorsa come;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>

@@ -4,7 +4,7 @@ description: Installa AEM Forms Document Services per creare, assemblare, distri
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '5633'
 ht-degree: 1%
@@ -813,7 +813,7 @@ Quando si converte Microsoft Excel 2019 in PDF in Microsoft Windows Server 2019,
 * La stampante predefinita deve essere impostata su Adobe PDF.
 
   >[!NOTE]
-  >* Per Apple macOS e Ubuntu OS, non è necessario configurare le impostazioni di cui sopra.
+  >* Per Apple macOS e Ubuntu OS non è necessario configurare le impostazioni sopra indicate.
 
 +++
 

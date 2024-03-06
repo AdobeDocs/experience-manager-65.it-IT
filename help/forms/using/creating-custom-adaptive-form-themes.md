@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
 
    **Meno file variabili**: questi sono i file in cui definisci o sostituisci le variabili utilizzate nella definizione degli stili CSS.
 
-   I moduli adattivi forniscono variabili OOTB definite nei seguenti elementi `.less` file:
+   I moduli adattivi forniscono variabili pronte all’uso definite nei seguenti `.less` file:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -107,7 +107,7 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
 
    **Meno file mixin:** È possibile definire le funzioni che accettano le variabili come argomenti. L’output di queste funzioni è rappresentato dagli stili risultanti. Utilizza questi mixin in stili diversi, per evitare di ripetere gli stili CSS.
 
-   I moduli adattivi forniscono mixin OOTB definiti in:
+   I moduli adattivi forniscono mixin predefiniti definiti in:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

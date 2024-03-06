@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '4598'
-ht-degree: 7%
+source-wordcount: '4518'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ Inoltre, durante la progettazione di una tassonomia, è importante considerare l
 
 ### Query nei componenti {#queries-in-components}
 
-Poiché le query possono essere una delle operazioni più gravose su un sistema AEM, è consigliabile evitarle nei componenti. Spesso, l’esecuzione di più query ogni volta che viene eseguito il rendering di una pagina può compromettere le prestazioni del sistema. Esistono due strategie che possono essere utilizzate per evitare l’esecuzione di query durante il rendering dei componenti: **navigazione dei nodi** e **preacquisizione dei risultati**.
+Poiché le query possono essere una delle operazioni più gravose su un sistema AEM, è consigliabile evitarle nei componenti. Spesso, l’esecuzione di più query ogni volta che viene eseguito il rendering di una pagina può compromettere le prestazioni del sistema. Esistono due strategie che possono essere utilizzate per evitare l’esecuzione di query durante il rendering dei componenti: **attraversamento dei nodi** e **preacquisizione dei risultati**.
 
 #### Navigazione dei nodi {#traversing-nodes}
 
@@ -140,7 +140,7 @@ I valori consigliati sono:
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3, i due parametri precedenti sono OOTB preconfigurati e possono essere mantenuti tramite OSGi QueryEngineSettings.
+In AEM 6.3, i due parametri precedenti sono preconfigurati e possono essere mantenuti tramite OSGi QueryEngineSettings.
 
 Ulteriori informazioni sono disponibili su: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -211,7 +211,7 @@ Quando si rimuove un indice in un’istanza MongoDB, il costo dell’eliminazion
 
 ### Scheda di riferimento rapido per le query JCR {#jcrquerycheatsheet}
 
-Per supportare la creazione di query JCR e le definizioni degli indici efficienti, la [Scheda di riferimento rapido per le query JCR](assets/JCR_query_cheatsheet-v1.1.pdf) è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo. Contiene query di esempio per QueryBuilder, XPath e SQL-2 comprendendo scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto di questa Scheda di riferimento rapido si applica a AEM 6.5 e AEM as a Cloud Service.
+Per supportare la creazione di query JCR e le definizioni degli indici efficienti, [Scheda di riferimento rapido per le query JCR](assets/JCR_query_cheatsheet-v1.1.pdf) è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo. Contiene query di esempio per QueryBuilder, XPath e SQL-2 comprendendo scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto di questa Scheda di riferimento rapido si applica a AEM 6.5 e AEM as a Cloud Service.
 
 ## Reindicizzazione {#re-indexing}
 
@@ -386,7 +386,7 @@ Di seguito sono riportati i possibili problemi relativi alle risoluzioni:
 
 * Reindicizzare l’indice delle proprietà in modo asincrono utilizzando la console web tramite **PropertyIndexAsyncReindex** MBean;
 
-  ad esempio,
+  ad esempio:
 
   [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
@@ -453,9 +453,9 @@ In condizioni di normale funzionamento dell’AEM, ad esempio in caso di caricam
 
 *Eseguire il passaggio 1(a-b) durante un intervallo di manutenzione/periodo di utilizzo ridotto durante lo spostamento dell&#39;archivio nodi durante questa operazione, che può causare un carico significativo sul sistema.*
 
-1a. Esegui `oak-run.jar --generate` per creare un elenco di nodi in cui verrà preestratto il testo.
+1 bis. Esegui `oak-run.jar --generate` per creare un elenco di nodi in cui verrà preestratto il testo.
 
-1b. L&#39;elenco dei nodi (1a) viene archiviato nel file system come file CSV
+1 ter. L&#39;elenco dei nodi (1a) viene archiviato nel file system come file CSV
 
 L’intero archivio nodi viene attraversato ogni volta (come specificato dai percorsi nel comando oak-run ) `--generate` viene eseguito, e **nuovo** Viene creato il file CSV. Il file CSV è **non** riutilizzato tra esecuzioni discrete del processo di pre-estrazione del testo (passaggi 1-2).
 
@@ -463,9 +463,9 @@ L’intero archivio nodi viene attraversato ogni volta (come specificato dai per
 
 *La fase 2(a-c) può essere eseguita durante il normale funzionamento dell’AEM se interagisce solo con l’archivio dati.*
 
-2a. Esegui `oak-run.jar --tika` per preestrarre il testo per i nodi binari enumerati nel file CSV generato in (1b)
+2 bis. Esegui `oak-run.jar --tika` per preestrarre il testo per i nodi binari enumerati nel file CSV generato in (1b)
 
-2b. Il processo avviato in (2a) accede direttamente ai nodi binari definiti nel file CSV in Data Store ed estrae il testo.
+2 ter. Il processo avviato in (2a) accede direttamente ai nodi binari definiti nel file CSV in Data Store ed estrae il testo.
 
 2 quater. Il testo estratto viene memorizzato nel file system in un formato che può essere acquisito dal processo di reindicizzazione Oak (3a)
 
@@ -477,6 +477,6 @@ Il testo pre-estratto può essere aggiunto in modo incrementale a nel tempo. La 
 
 *Eseguire la reindicizzazione (passaggi 3a-b) durante un periodo di manutenzione/basso utilizzo mentre l’archivio nodi viene attraversato durante questa operazione, che può comportare un carico significativo sul sistema.*
 
-3a. [Reindicizza](#how-to-re-index) degli indici Lucene viene richiamato nell’AEM.
+3 bis. [Reindicizza](#how-to-re-index) degli indici Lucene viene richiamato nell’AEM.
 
-3b. La configurazione OSGi di Apache Jackrabbit Oak DataStore PreExtractedTextProvider (configurata per puntare al testo estratto tramite un percorso del file system) indica a Oak il testo full-text di origine dai file estratti ed evita di colpire ed elaborare direttamente i dati memorizzati nell’archivio.
+3 ter. La configurazione OSGi di Apache Jackrabbit Oak DataStore PreExtractedTextProvider (configurata per puntare al testo estratto tramite un percorso del file system) indica a Oak il testo full-text di origine dai file estratti ed evita di colpire ed elaborare direttamente i dati memorizzati nell’archivio.

@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: d91a00d1-12fa-4c84-a426-49413f61c126
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 1%
+source-wordcount: '647'
+ht-degree: 2%
 
 ---
 
@@ -35,15 +35,15 @@ Se al momento non disponi di un account, passa a `https://build.phonegap.com` e 
 
 Dopo aver verificato che l’account PhoneGap Build è attivo, accedi alla console di gestione AEM Cloud, in particolare [Cloud Service di PhoneGap Build](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html)
 
-Utilizza il **Gestisci Cloud Services** riquadro per configurare una nuova configurazione di cloud service.
+Utilizza il **Gestisci Cloud Service** riquadro per configurare una nuova configurazione di cloud service.
 
-### Utilizzo del riquadro Gestisci Cloud Services {#using-manage-cloud-services-tile}
+### Utilizzo del riquadro Gestisci Cloud Service {#using-manage-cloud-services-tile}
 
-Prima di iniziare a creare l’app utilizzando **PhoneGap Build** , è necessario configurare i servizi cloud utilizzando il **Gestisci Cloud Services** riquadro dal dashboard di AEM Mobile.
+Prima di iniziare a creare l’app utilizzando **PhoneGap Build** , è necessario configurare i servizi cloud utilizzando il **Gestisci Cloud Service** riquadro dal dashboard di AEM Mobile.
 
 Per configurare i servizi cloud per l’app, effettua le seguenti operazioni:
 
-1. Fai clic sull’angolo in alto a destra del **Gestisci Cloud Services** affiancare.
+1. Fai clic sull’angolo in alto a destra del **Gestisci Cloud Service** affiancare.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -55,7 +55,7 @@ Per configurare i servizi cloud per l’app, effettua le seguenti operazioni:
 
 1. Immetti le credenziali per creare una configurazione cloud.
 
-   Una volta verificata, fai clic su **Invia**. Questa configurazione cloud configurata ora viene visualizzata in **Gestisci Cloud Services** affiancare.
+   Una volta verificata, fai clic su **Invia**. Questa configurazione cloud configurata ora viene visualizzata in **Gestisci Cloud Service** affiancare.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 

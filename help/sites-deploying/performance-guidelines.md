@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2939'
 ht-degree: 5%
 
 ---
@@ -84,7 +84,7 @@ Di seguito sono illustrate le opzioni di implementazione disponibili per l’AEM
    <td><p>Campaign</p> </td>
   </tr>
   <tr>
-   <td><p>Forms</p> </td>
+   <td><p>Moduli</p> </td>
    <td><p>Author-Offload</p> </td>
    <td><p>HP-UX</p> </td>
    <td><p>Tomcat</p> </td>
@@ -348,9 +348,9 @@ Sviluppare per l’AEM con l’obiettivo di **prestazioni e scalabilità**. Di s
 **NON**
 
 * Non utilizzare direttamente le API JCR, se possibile
-* Non modificare /libs, ma utilizza le sovrapposizioni
+* Non modificare /libs, ma utilizzare le sovrapposizioni
 * Non utilizzare le query dove possibile
-* Non utilizzare le associazioni Sling per ottenere i servizi OSGi nel codice Java™, ma utilizza piuttosto:
+* Non utilizzare le associazioni Sling per ottenere i servizi OSGi nel codice Java™, ma utilizza:
 
    * @Reference in un componente DS
    * @Inject in un modello Sling
@@ -452,13 +452,13 @@ Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazion
   <tr>
    <td>Parametri JVM</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td>
-   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>Vero</p> </td>
+   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> </td>
    <td>Per evitare che query estese sovraccarichi i sistemi, aggiungi questi parametri JVM nello script iniziale dell’AEM.</td>
   </tr>
   <tr>
    <td>Configurazione dell’indice Lucene</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
-   <td><p>Abilitato</p> <p>Abilitato</p> <p>Abilitato</p> </td>
+   <td><p>Attivato</p> <p>Attivato</p> <p>Attivato</p> </td>
    <td>Per maggiori dettagli sui parametri disponibili, vedi <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">questa pagina</a>.</td>
   </tr>
   <tr>
@@ -470,13 +470,13 @@ Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazion
   <tr>
    <td>Flusso di lavoro Aggiorna risorsa DAM</td>
    <td><code>Transient Workflow</code></td>
-   <td>spuntato</td>
+   <td>selezionato</td>
    <td>Questo flusso di lavoro gestisce l’aggiornamento delle risorse.</td>
   </tr>
   <tr>
    <td>Writeback di metadati DAM</td>
    <td><code>Transient Workflow</code></td>
-   <td>spuntato</td>
+   <td>selezionato</td>
    <td>Questo flusso di lavoro gestisce il write-back dell’XMP nel file binario originale e imposta la data dell’ultima modifica in JCR.</td>
   </tr>
  </tbody>
@@ -562,13 +562,13 @@ Per ottenere prestazioni ottimali, attieniti alle linee guida per le impostazion
   <tr>
    <td>Parametri JVM</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td>
-   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>Vero</p> <p>60000</p> </td>
+   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> <p>60000</p> </td>
    <td>Per evitare che query estese sovraccarichi i sistemi, aggiungi questi parametri JVM nello script iniziale dell’AEM.</td>
   </tr>
   <tr>
    <td>Configurazione dell’indice Lucene</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
-   <td><p>Abilitato</p> <p>Abilitato</p> <p>Abilitato</p> </td>
+   <td><p>Attivato</p> <p>Attivato</p> <p>Attivato</p> </td>
    <td>Per ulteriori dettagli sui parametri disponibili, vedi <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">questa pagina</a>.</td>
   </tr>
   <tr>

@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2471'
-ht-degree: 2%
+source-wordcount: '2403'
+ht-degree: 0%
 
 ---
 
@@ -267,7 +267,7 @@ Su ogni istanza di pubblicazione AEM:
 
    `system`
 
-   `rep:cache` poiché utilizziamo sessioni permanenti, non è necessario sincronizzare questo nodo con altri editori.
+   `rep:cache` (poiché vengono utilizzate sessioni permanenti, non è necessario sincronizzare questo nodo con publisher diversi).
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
@@ -275,7 +275,7 @@ Su ogni istanza di pubblicazione AEM:
 
 L’istanza di authoring dell’AEM utilizza l’ID Sling per identificare da dove provengono i dati e a quali editori deve (o non deve) inviare nuovamente il pacchetto a.
 
-Assicurati che tutti gli editori in una farm di pubblicazione abbiano un ID Sling univoco. Se l’ID Sling è lo stesso per più istanze di pubblicazione in una farm di pubblicazione, la sincronizzazione degli utenti non riesce. Poiché l’autore non saprà da dove recuperare il pacchetto e dove installarlo.
+Assicurati che tutti gli editori in una farm di pubblicazione abbiano un ID Sling univoco. Se l’ID Sling è lo stesso per più istanze di pubblicazione in una farm di pubblicazione, la sincronizzazione degli utenti non riesce. Poiché l’autore non sa da dove recuperare il pacchetto e dove installarlo.
 
 Per garantire un ID Sling univoco degli editori nella farm di pubblicazione, in ogni istanza di pubblicazione:
 

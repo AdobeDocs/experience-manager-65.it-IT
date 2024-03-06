@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Il linguaggio SAML (Security Assertion Markup Language) è una delle opzioni che è possibile selezionare durante la configurazione dell&#39;autorizzazione per un dominio enterprise o ibrido. SAML viene utilizzato principalmente per supportare SSO tra più domini. Quando SAML è configurato come provider di autenticazione, gli utenti accedono e si autenticano nei moduli AEM tramite un provider di identità (IDP) di terze parti specificato.
 
-Per una spiegazione di SAML, vedere [Panoramica tecnica SAML (Security Assertion Markup Language) V2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
+Per una spiegazione di SAML, vedere [Panoramica tecnica SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Impostazioni provider di servizi SAML.
 1. Nella casella ID entità fornitore di servizi digitare un ID univoco da utilizzare come identificatore per l&#39;implementazione del provider di servizi AEM forms. Puoi anche specificare questo ID univoco durante la configurazione dell’IDP (ad esempio, `um.lc.com`.) Puoi anche utilizzare l’URL utilizzato per accedere ai moduli AEM (ad esempio, `https://AEMformsserver`).

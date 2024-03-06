@@ -7,9 +7,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 In Gestione corrispondenza puoi utilizzare un’immagine per eseguire il rendering della firma dell’agente in lettere. Dopo aver impostato l&#39;immagine della firma dell&#39;agente durante la creazione di una lettera, è possibile eseguire il rendering dell&#39;immagine della firma dell&#39;agente nella lettera come firma dell&#39;agente mittente.
 
-Il DDE agentSignatureImage è un DDE calcolato che rappresenta l’immagine della firma dell’agente. L’espressione per questo DDE calcolato utilizza una nuova funzione personalizzata esposta dal blocco predefinito di Expression Manager. Questa funzione personalizzata considera agentID e agentFolder come parametri di input e recupera il contenuto dell’immagine in base a tali parametri. Il dizionario dati di sistema SystemContext consente alle lettere di Gestione corrispondenza di accedere alle informazioni nel contesto di sistema corrente. Il contesto di sistema include informazioni sui parametri di configurazione attivi e utente attualmente connessi.
+Il DDE agentSignatureImage è un DDE calcolato che rappresenta l&#39;immagine della firma dell&#39;agente. L’espressione per questo DDE calcolato utilizza una nuova funzione personalizzata esposta dal blocco predefinito di Expression Manager. Questa funzione personalizzata considera agentID e agentFolder come parametri di input e recupera il contenuto dell’immagine in base a tali parametri. Il dizionario dati di sistema SystemContext consente alle lettere di Gestione corrispondenza di accedere alle informazioni nel contesto di sistema corrente. Il contesto di sistema include informazioni sui parametri di configurazione attivi e utente attualmente connessi.
 
 È possibile aggiungere immagini nella cartella cmuserroot. In entrata [Proprietà di configurazione di Gestione corrispondenza](/help/forms/using/cm-configuration-properties.md), utilizzando la proprietà User Root di CM è possibile modificare la cartella da cui viene prelevata l&#39;immagine della firma dell&#39;agente.
 

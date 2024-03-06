@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2971'
 ht-degree: 0%
 
 ---
@@ -281,7 +281,7 @@ Tieni presente che *fabbrica* La definizione contiene l’interfaccia comune e i
 
 ### Implementazione di un gestore di aggiornamento personalizzato {#implementing-a-custom-update-handler}
 
-Ogni pagina di We.Retail Mobile contiene un logo nell&#39;angolo superiore sinistro che deve essere incluso nel file zip. Tuttavia, per l’ottimizzazione della cache, AEM non fa riferimento alla posizione reale del file di immagine nell’archivio, il che ci impedisce di utilizzare semplicemente **copia** tipo di configurazione. Dovete invece fornire i nostri **logo** tipo di configurazione che rende l’immagine disponibile nella posizione richiesta dall’AEM. Il seguente elenco di codici mostra la completa implementazione del gestore di aggiornamento del logo:
+Ogni pagina di We.Retail Mobile contiene un logo nell&#39;angolo superiore sinistro che deve essere incluso nel file zip. Tuttavia, per l&#39;ottimizzazione della cache, AEM non fa riferimento alla posizione reale del file di immagine nell&#39;archivio, il che ci impedisce di utilizzare semplicemente **copia** tipo di configurazione. Dovete invece fornire i nostri **logo** tipo di configurazione che rende l’immagine disponibile nella posizione richiesta dall’AEM. Il seguente elenco di codici mostra la completa implementazione del gestore di aggiornamento del logo:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

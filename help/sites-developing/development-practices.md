@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
@@ -64,4 +64,4 @@ Gli Scout di ragazzi hanno una regola: &quot;Lascialo meglio di come l&#39;hai t
 
 ### Evita di implementare le funzioni YAGNI {#avoid-implementing-yagni-features}
 
-Le funzionalità YAGNI (You Aren Gonna Need It) sono implementate quando ci aspettiamo che avremo bisogno di qualcosa in futuro, anche se non ne abbiamo bisogno ora. Idealmente, dovremmo implementare la cosa più semplice che funzionerà oggi e utilizzare il refactoring continuo per garantire che l&#39;architettura del sistema evolva con i requisiti nel tempo. Questo ci permette di concentrarci su ciò che conta e prevenire l’eccesso di codice e il creep delle funzioni.
+Le funzionalità YAGNI (You Are Not Gonna Need It) sono implementate quando ci aspettiamo che avremo bisogno di qualcosa in futuro, anche se non ne abbiamo bisogno ora. Idealmente, dovremmo implementare la cosa più semplice che funzionerà oggi e utilizzare il refactoring continuo per garantire che l&#39;architettura del sistema evolva con i requisiti nel tempo. Questo ci permette di concentrarci su ciò che conta e prevenire l’eccesso di codice e il creep delle funzioni.

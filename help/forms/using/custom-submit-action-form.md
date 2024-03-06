@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
 | AEM 6.5 | Questo articolo |
 
-I moduli adattivi richiedono azioni di invio per elaborare i dati specificati dall’utente. Un’azione Invia determina il task eseguito sui dati inviati tramite un modulo adattivo. Adobe Experience Manager (AEM) include [Azioni di invio OOTB](../../forms/using/configuring-submit-actions.md) che mostrano le attività personalizzate eseguibili utilizzando i dati inviati dall&#39;utente. Ad esempio, puoi eseguire attività quali l’invio di e-mail o la memorizzazione dei dati.
+I moduli adattivi richiedono azioni di invio per elaborare i dati specificati dall’utente. Un’azione Invia determina il task eseguito sui dati inviati tramite un modulo adattivo. Adobe Experience Manager (AEM) include [azioni di invio pronte all’uso](../../forms/using/configuring-submit-actions.md) che mostrano le attività personalizzate eseguibili utilizzando i dati inviati dall&#39;utente. Ad esempio, puoi eseguire attività quali l’invio di e-mail o la memorizzazione dei dati.
 
 ## Flusso di lavoro per un&#39;azione di invio {#workflow-for-a-submit-action}
 
@@ -84,7 +84,7 @@ Se l’azione non fornisce un percorso di inoltro, il servlet di invio reindiriz
 
 >[!NOTE]
 >
->Un autore fornisce l’URL di reindirizzamento (utilizzando la configurazione della pagina di ringraziamento). [Azioni di invio OOTB](../../forms/using/configuring-submit-actions.md) utilizza l’URL di reindirizzamento per reindirizzare il browser dalla risorsa a cui fa riferimento il percorso di inoltro.
+>Un autore fornisce l’URL di reindirizzamento (utilizzando la configurazione della pagina di ringraziamento). [Azioni di invio pronte all’uso](../../forms/using/configuring-submit-actions.md) utilizza l’URL di reindirizzamento per reindirizzare il browser dalla risorsa a cui fa riferimento il percorso di inoltro.
 >
 >Puoi scrivere un’azione di invio personalizzata che inoltra una richiesta a una risorsa o a un servlet. L’Adobe consiglia che lo script che gestisce le risorse per il percorso di inoltro reindirizzi la richiesta all’URL di reindirizzamento al termine dell’elaborazione.
 
@@ -99,11 +99,11 @@ Un’azione Invia è una sling:Folder che include quanto segue:
    * **guideComponentType** di tipo Stringa e valore **fd/af/components/guidesubmittype**
    * **guideDataModel** di tipo String che specifica il tipo di modulo adattivo per il quale è applicabile l’azione Invia. **xfa** è supportato per moduli adattivi basati su XFA mentre **xsd** è supportato per moduli adattivi basati su XSD. **base** è supportato per i moduli adattivi che non utilizzano XDP o XSD. Per visualizzare l’azione su più tipi di moduli adattivi, aggiungi le stringhe corrispondenti. Separa ogni stringa con una virgola. Ad esempio, per rendere visibile un’azione nei moduli adattivi basati su XFA e XSD, specifica i valori **xfa** e **xsd** rispettivamente.
 
-   * **jcr:descrizione** di tipo String. Il valore di questa proprietà viene visualizzato nell’elenco delle azioni Invia nella scheda Invia azioni della finestra di dialogo Modifica modulo adattivo. Le azioni OOTB sono presenti nell’archivio CRX nel percorso **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:descrizione** di tipo String. Il valore di questa proprietà viene visualizzato nell&#39;elenco Azione invio della scheda Invia azioni della finestra di dialogo Modifica modulo adattivo. Le azioni predefinite sono presenti nell’archivio CRX nel percorso **/libs/fd/af/components/guidesubmittype**.
 
 ## Creazione di un’azione di invio personalizzata {#creating-a-custom-submit-action}
 
-Per creare un’azione di invio personalizzata che salvi i dati nell’archivio CRX e invii un’e-mail, effettua le seguenti operazioni. Il modulo adattivo contiene l’azione di invio OOTB Store Content (obsoleto) che salva i dati nell’archivio CRX. Inoltre, CQ offre [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) API che può essere utilizzata per inviare e-mail. Prima di utilizzare l’API Mail, [configura](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) il servizio Day CQ Mail tramite la console di sistema. Puoi riutilizzare l’azione Archivia contenuto (obsoleta) per memorizzare i dati nell’archivio. L’azione Archivia contenuto (obsoleta) è disponibile nella posizione /libs/fd/af/components/guidesubmittype/store nell’archivio CRX.
+Per creare un’azione di invio personalizzata che salvi i dati nell’archivio CRX e invii un’e-mail, effettua le seguenti operazioni. Il modulo adattivo contiene l’azione di invio predefinita Store Content (obsoleto) che salva i dati nell’archivio CRX. Inoltre, CQ offre [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) API che può essere utilizzata per inviare e-mail. Prima di utilizzare l’API Mail, [configura](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) il servizio Day CQ Mail tramite la console di sistema. Puoi riutilizzare l’azione Archivia contenuto (obsoleta) per memorizzare i dati nell’archivio. L’azione Archivia contenuto (obsoleta) è disponibile nella posizione /libs/fd/af/components/guidesubmittype/store nell’archivio CRX.
 
 1. Accedi a CRXDE Liti all’URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crea un nodo con la proprietà sling:Folder e name store_and_mail nella cartella /apps/custom_submit_action. Creare la cartella custom_submit_action se non esiste già.
 
@@ -139,7 +139,7 @@ Per creare un’azione di invio personalizzata che salvi i dati nell’archivio 
 
    Aggiungi lo script post.POST.jsp all’azione. (/apps/custom_submit_action/store_and_mail/).
 
-   Esegui l’azione Archivio OOTB (script post.POST.jsp). Utilizza il [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API fornite da CQ nel codice per eseguire l’azione Store. Aggiungi il seguente codice nel file JSP:
+   Esegui l’azione predefinita Store (script post.POST.jsp). Utilizza il [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API fornite da CQ nel codice per eseguire l’azione Store. Aggiungi il seguente codice nel file JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

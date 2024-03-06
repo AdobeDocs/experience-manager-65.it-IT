@@ -1,6 +1,6 @@
 ---
 title: Creare pop-up personalizzati utilizzando Quickview
-description: Il Quickview predefinito viene utilizzato nelle esperienze di e-commerce, in cui viene visualizzato un pop-up con le informazioni di prodotto per stimolare un acquisto. Puoi attivare il contenuto personalizzato da visualizzare nei popup.
+description: Il Quickview predefinito viene utilizzato nelle esperienze di e-commerce, mediante le quali viene visualizzato un pop-up con le informazioni di prodotto per stimolare un acquisto. Puoi attivare il contenuto personalizzato da visualizzare nei popup.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -8,16 +8,16 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
 
 # Creare pop-up personalizzati utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-Il Quickview predefinito viene utilizzato nelle esperienze di e-commerce, in cui viene visualizzato un pop-up con le informazioni di prodotto per stimolare un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore, questa funzionalità consente agli utenti di selezionare un punto attivo, un&#39;immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
+Il Quickview predefinito viene utilizzato nelle esperienze di e-commerce, mediante le quali viene visualizzato un pop-up con le informazioni di prodotto per stimolare un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore, questa funzionalità consente agli utenti di selezionare un punto attivo, un&#39;immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
 Quickview è supportato dai seguenti visualizzatori in Dynamic Medie:
 
@@ -163,7 +163,7 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
      Con le variabili di Quickview mappate e la chiamata di funzione attiva, la console del browser scrive il valore della variabile nella console del browser utilizzando la funzione di esempio fornita.
 
 1. È ora possibile utilizzare una funzione per richiamare una semplice finestra a comparsa in Quickview. L’esempio che segue utilizza un `DIV` per un popup.
-1. Personalizzare lo stile della finestra a comparsa `DIV` nel modo seguente. Aggiungi il tuo stile aggiuntivo come desiderato.
+1. Personalizzare lo stile della finestra a comparsa `DIV` nel modo seguente. Se necessario, aggiungete altri stili.
 
    ```xml
    <style type="text/css">

@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1646'
 ht-degree: 84%
 
 ---
@@ -39,7 +39,7 @@ Per ulteriori dettagli su SPA in AEM, consulta i seguenti documenti:
 
 ## Design {#design}
 
-Il componente pagina per una SPA non fornisce gli elementi HTML dei suoi componenti figlio tramite il file JSP o HTL. Questa operazione è delegata al framework SPA. La rappresentazione dei componenti o del modello figlio viene recuperata come struttura dati JSON dal JCR. I componenti SPA vengono quindi aggiunti alla pagina in base a tale struttura. Questo comportamento differenzia la composizione iniziale del corpo del componente della pagina dalle controparti non SPA.
+Il componente pagina per una SPA non fornisce gli elementi HTML dei suoi componenti secondari tramite il file JSP o HTL. Questa operazione è delegata al framework SPA. La rappresentazione dei componenti o del modello figlio viene recuperata come struttura dati JSON dal JCR. I componenti SPA vengono quindi aggiunti alla pagina in base a tale struttura. Questo comportamento differenzia la composizione iniziale del corpo del componente della pagina dalle controparti non SPA.
 
 ### Gestione dei modelli di pagina {#page-model-management}
 
@@ -71,7 +71,7 @@ Quando viene aggiunta la categoria `cq.authoring.pagemodel.messaging` alla pagin
 * La comunicazione tra l’editor di pagine e la SPA viene effettuata utilizzando JSON invece di HTML.
 * L’editor di pagina fornisce alla SPA la versione più recente del modello di pagina tramite l’API iframe e messagistica.
 * Il gestore dei modelli di pagina notifica all’editor che è pronto per essere modificato e trasmette il modello di pagina come struttura JSON.
-* L’editor non modifica né accede nemmeno alla struttura DOM della pagina in fase di creazione, ma fornisce l’ultimo modello di pagina.
+* L’editor non modifica né accede alla struttura DOM della pagina in fase di creazione, ma fornisce l’ultimo modello di pagina.
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 

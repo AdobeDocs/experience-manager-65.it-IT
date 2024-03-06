@@ -8,9 +8,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '968'
 ht-degree: 3%
 
 ---
@@ -139,7 +139,7 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
 >
 >
 >
-> * Nel caso in cui si verifichino difficoltà di accesso alla finestra di dialogo di accesso in un’istanza di pubblicazione, per installare il pacchetto tramite Gestione pacchetti, prova a utilizzare l’URL: `http://[Publish Server URL]:[PORT]/system/console` per accedere. Ciò ti consente di accedere alla pagina di accesso di un’istanza Publish, per procedere con il processo di installazione.
+> * Nel caso in cui si verifichino difficoltà di accesso alla finestra di dialogo di accesso in un’istanza di pubblicazione, per installare il pacchetto tramite Gestione pacchetti, prova a utilizzare l’URL: `http://[Publish Server URL]:[PORT]/system/console` per accedere. Questo consente di accedere alla pagina di accesso di un’istanza Publish, per procedere con il processo di installazione.
 > * Non eliminare o eliminare il progetto Archetipo dopo averlo distribuito nell’ambiente. Il progetto Archetipo è necessario per aggiungere all’ambiente temi personalizzati e nuovi Componenti core Forms adattivi.
 
 I Componenti core sono abilitati per il tuo ambiente. Nell’ambiente vengono distribuiti un modello modulo adattivo basato su Componenti core vuoto e un tema Canvas 3.0, che consente di: [creazione di componenti core basati su Adaptive Forms](create-an-adaptive-form-core-components.md).

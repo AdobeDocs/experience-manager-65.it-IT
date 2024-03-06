@@ -6,10 +6,10 @@ feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 3%
+source-wordcount: '1559'
+ht-degree: 2%
 
 ---
 
@@ -80,7 +80,7 @@ Il servizio applica tag avanzati alle rappresentazioni delle risorse dei seguent
 
 ## Onboarding {#onboarding}
 
-Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager]. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento ad [!DNL Adobe I/O].
+Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager]. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento a [!DNL Adobe I/O].
 
 L’amministratore può seguire il collegamento per integrare Smart Content Service con [!DNL Experience Manager]. Per integrare il servizio con [!DNL Experience Manager Assets], vedi [Configurare tag avanzati](config-smart-tagging.md).
 
@@ -99,7 +99,6 @@ Aggiungi le risorse a una cartella e applica i tag a ciascuna risorsa dalla pagi
 >1. La formazione è un processo irrevocabile. L’Adobe consiglia di rivedere i tag nel set curato di risorse ben prima di addestrare il Servizio di contenuti avanzati sui tag.
 >1. Prima dell’addestramento per un tag, consulta [Linee guida per la formazione sul Servizio di contenuti avanzati](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. Quando si addestra il Servizio di contenuti avanzati per la prima volta, l’Adobe consiglia di addestrarlo su almeno due tag distinti.
-
 
 ## Comprendere [!DNL Experience Manager] risultati di ricerca con tag avanzati {#understandsearch}
 
@@ -183,7 +182,7 @@ Puoi anche assegnare una classificazione più alta a un tag per aumentarne la ri
 1. Nella casella di ricerca, cerca le risorse in base a un tag come parola chiave.
 1. Per identificare un&#39;immagine che non è rilevante per la ricerca, esaminare i risultati della ricerca.
 1. Seleziona l’immagine e fai clic su **[!UICONTROL Gestisci tag]** dalla barra degli strumenti.
-1. Dalla sezione **[!UICONTROL Gestisci tag]** , rivedere i tag. Se non desideri che l’immagine venga cercata in base a un tag specifico, seleziona il tag e fai clic su **[!UICONTROL Elimina]** dalla barra degli strumenti. In alternativa, fare clic su `x` simbolo visualizzato accanto a un tag.
+1. Dalla sezione **[!UICONTROL Gestisci tag]** , rivedere i tag. Se non si desidera cercare l&#39;immagine in base a un tag specifico, selezionare il tag e fare clic su **[!UICONTROL Elimina]** dalla barra degli strumenti. In alternativa, fare clic su `x` simbolo visualizzato accanto a un tag.
 1. Se necessario, per assegnare una classificazione più alta a un tag, selezionalo e fai clic su **[!UICONTROL Promuovi]** dalla barra degli strumenti. Il tag che promuovi viene spostato nel **[!UICONTROL Tag]** sezione.
 1. Clic **[!UICONTROL Salva]** e quindi fare clic su **[!UICONTROL OK]**
 1. Accedi a **[!UICONTROL Proprietà]** pagina per l&#39;immagine. Osserva che al tag promosso è stata assegnata maggiore rilevanza e viene visualizzato prima nei risultati di ricerca.

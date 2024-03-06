@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 Il modello di David è stato scritto da David Nuescheler anni fa, ma le idee sono vere oggi. I principi principali del modello di David sono i seguenti:
 
 * I dati vengono prima, struttura dopo. Forse.
-* Guidare la gerarchia dei contenuti, senza lasciare che accada.
+* Guidare la gerarchia dei contenuti, evitare che ciò accada.
 * Le aree di lavoro sono per `clone()`, `merge()`, e `update()`.
 * Attenzione agli stessi fratelli e sorelle.
 * I riferimenti sono considerati dannosi.

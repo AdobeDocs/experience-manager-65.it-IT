@@ -2,9 +2,9 @@
 title: Come aggiornare il contenuto utilizzando le API di AEM Assets.
 description: In questa parte del Percorso per sviluppatori Headless di AEM, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1029'
 ht-degree: 87%
 
 ---
@@ -43,7 +43,7 @@ Allora perché è necessaria un&#39;altra API?
 
 L’API HTTP di Assets consente di: **Letto** contenuti, ma consente anche di: **Crea**, **Aggiorna** e **Elimina** content: azioni che non sono possibili con l’API di GraphQL.
 
-L’API REST di Assets è disponibile per ogni installazione predefinita di una versione di Adobe Experience Manager recente.
+L’API REST di Assets è disponibile su ogni installazione predefinita di una versione recente di Adobe Experience Manager.
 
 ## API HTTP di Assets {#assets-http-api}
 
@@ -250,7 +250,7 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 
 >[!CAUTION]
 >
->La configurazione del dispatcher su istanze AEM potrebbe bloccare l’accesso a `/api`.
+>La configurazione del dispatcher sulle istanze AEM potrebbe bloccare l’accesso a `/api`.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ Ora che hai completato questa parte del percorso per sviluppatori headless di AE
 * Have experience with sample code and know how the API works in practice.
 -->
 
-<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+<!-- The "How to put it all together" page is not going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
@@ -329,6 +329,6 @@ Dovresti continuare il tuo percorso headless AEM rivedendo il documento successi
 * [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Spiegazione di CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=it)
 * [Video: sviluppo per CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=it)
-* Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

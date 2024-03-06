@@ -7,10 +7,10 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3260'
-ht-degree: 15%
+source-wordcount: '3173'
+ht-degree: 11%
 
 ---
 
@@ -86,9 +86,9 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 * **Work-in-progress o creative work-in-progress (WIP):** una fase del ciclo di vita delle risorse in cui una risorsa subisce più modifiche e, in genere, non è ancora pronta per essere condivisa con team più grandi.
 * **Risorse pronte per i creativi:** [!DNL Assets] pronti per essere condivisi con un team più ampio oppure selezionati o approvati dal team creativo per la condivisione con i team di marketing o LOB.
 * **Asset approvals (Approvazioni risorse):** il processo di approvazione che viene eseguito per le risorse già caricate in DAM, che, in genere, include approvazioni del marchio, approvazioni legali e così via.
-* **Final asset (Risorsa finale):** una risorsa che ha superato tutte le approvazioni/assegnazione tag dei metadati ed è pronta per essere utilizzata dal team più ampio. Tale risorsa viene memorizzata in DAM, per poi essere resa disponibile a tutti gli utenti (o a tutti gli interessati). Può essere utilizzata nei canali di marketing o dai team creativi per la creazione di design.
-* **Minor asset update/change (Aggiornamento/modifica risorsa secondaria):** una modifica rapida e piccola a una risorsa digitale. Spesso viene effettuata in risposta a una richiesta di ritocco o di modifica minore, a una revisione delle risorse o all’approvazione (ad esempio: riposizionamento, modifica dimensioni del testo, regolazione di saturazione/luminosità, colore e così via).
-* **Major asset update/change (Aggiornamento/modifica risorsa principale):** un passaggio a una risorsa digitale che richiede un lavoro considerevole e che a volte deve essere effettuato in un periodo di tempo più lungo. Generalmente include più modifiche. La risorsa deve essere salvata più volte durante l’aggiornamento. In genere, gli aggiornamenti principali delle risorse fanno sì che la risorsa entri in una fase WIP.
+* **Risorsa finale:** Una risorsa che ha superato tutte le approvazioni/assegnazione tag dei metadati ed è pronta per essere utilizzata dal team più ampio. Tale risorsa viene memorizzata in DAM, per poi essere resa disponibile a tutti gli utenti (o a tutti gli interessati). Può essere utilizzata nei canali di marketing o dai team creativi per la creazione di design.
+* **Aggiornamento/modifica risorsa secondaria:** Una modifica rapida e piccola a una risorsa digitale. Spesso viene effettuata in risposta a una richiesta di ritocco o di modifica minore, a una revisione delle risorse o all’approvazione (ad esempio: riposizionamento, modifica dimensioni del testo, regolazione di saturazione/luminosità, colore e così via).
+* **Aggiornamento/modifica risorsa principale :** Un passaggio a una risorsa digitale che richiede un lavoro considerevole e che a volte deve essere effettuato in un periodo di tempo più lungo. Generalmente include più modifiche. La risorsa deve essere salvata più volte durante l’aggiornamento. In genere, gli aggiornamenti principali delle risorse fanno sì che la risorsa entri in una fase WIP.
 * **DAM:** gestione delle risorse digitali. In questo documento, è sinonimo di [!DNL Experience Manager Assets], salvo indicazione contraria.
 * **Creative user (Utente creativo):** un professionista che crea risorse digitali utilizzando le app e i servizi Creative Cloud. In alcuni casi, è possibile che un utente creativo sia membro di un team creativo che utilizza Creative Cloud, ma che non crea risorse digitali, ad esempio un direttore creativo o un manager del team creativo.
 * **DAM user (Utente DAM)**: utente tipico di un sistema DAM. A seconda dell’organizzazione, un utente DAM può essere di marketing o non, ad esempio un utente Line-of-Business (LOB), un bibliotecario, un venditore e così via.
@@ -97,16 +97,16 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 
 * Consulta [best practice per le app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Consulta [Integrazione con Adobe Stock](aem-assets-adobe-stock.md)
-* Consulta [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
+* Consulta [Adobe collegamento risorsa](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
 
 Questo è un breve riepilogo delle best practice per [!DNL Experience Manager] e [!DNL Creative Cloud] integrazione. Leggi il resto del documento per informazioni dettagliate su questi.
 
-* **For creative users, working in Photoshop, InDesign, or Illustrator (Per gli utenti creativi che lavorano in Photoshop, InDesign o Illustrator)**: Adobe Asset Link offre la migliore esperienza utente possibile, inclusa la gestione del Work-in-progress sulle risorse estratte da [!DNL Experience Manager].
+* **Per gli utenti creativi che lavorano in Photoshop, InDesign o Illustrator:** Adobe Asset Link offre la migliore esperienza utente possibile, inclusa la gestione del Work-in-progress sulle risorse estratte da [!DNL Experience Manager].
 * **Per semplificare l’accesso alle risorse dal desktop per qualsiasi formato di file o applicazione generica:** utilizzare [!DNL Experience Manager] app desktop.
-* **Understand why and when to store assets in DAM (Scopri perché e quando archiviare le risorse in DAM)**: aggiornamenti da rendere disponibili al team più ampio della tua organizzazione.
+* **Scopri perché e quando archiviare le risorse in DAM:** Aggiornamenti da rendere disponibili al team più ampio della tua organizzazione.
 * **Mind the volume of assets shared (Considera il volume di risorse condivise):** se il caso d’uso è la distribuzione delle risorse, la governance e la sicurezza potrebbero diventare gli aspetti più importanti. Valuta l’utilizzo di strumenti creati per il lavoro in scala, come Brand Portal.
 * **Understand asset lifecycle (Informazioni sul ciclo di vita delle risorse):** scopri come le risorse vengono gestite dai diversi team all’interno dell’organizzazione
-* **Handle frequent saves to assets with care (Gestisci con attenzione i salvataggi frequenti nelle risorse):** Adobe Asset Link si occupa di questo aspetto con PS, AI, ID. Per altre applicazioni, non eseguire le attività WIP in cartelle condivise o mappate, a meno che non ti servano tutte le modifiche all’interno di DAM
+* **Handle frequent saves to assets with care (Gestisci con attenzione i salvataggi frequenti nelle risorse):** Adobe Asset Link si occupa di questo aspetto con PS, AI, ID. Per altre applicazioni, non eseguire le attività WIP in una cartella condivisa/mappata a meno che non siano necessarie tutte le modifiche in DAM
 
 ### Accesso a [!DNL Adobe Stock] risorse da [!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 
@@ -117,7 +117,7 @@ Alcuni punti importanti su questa integrazione:
 * Quando le risorse da scorte in Adobe vengono salvate in [!DNL Experience Manager], diventano regolari [!DNL Assets], con file binario salvato in [!DNL Experience Manager] archivio. Alcuni metadati relativi a [!DNL Adobe Stock] sono salvati per la risorsa in [!DNL Experience Manager], altrimenti il processo di acquisizione avrà lo stesso aspetto di qualsiasi altro file. Ad esempio, se sono attivi i tag avanzati, questi vengono aggiunti a queste risorse al momento del salvataggio.
 * Risorsa salvata in [!DNL Experience Manager] è una copia, non un collegamento di nuovo in [!DNL Adobe Stock].
 
-**Utilizzo delle risorse salvate da [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]**. Questa integrazione è indipendente da [!DNL Adobe Asset Link], ma [!DNL Adobe Asset Link] riconosce le risorse salvate da [!DNL Stock] in questo modo e visualizza metadati aggiuntivi e un [!DNL Adobe Stock] su queste risorse in [!DNL Adobe Asset Link] Interfaccia utente dell’estensione in [!DNL Photoshop], [!DNL Illustrator], o [!DNL InDesign]. I file sono disponibili per la navigazione, l’apertura e così via, perché sono risorse normali quando vengono salvati in [!DNL Experience Manager].
+**Utilizzo delle risorse salvate da [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]**. Questa integrazione è indipendente da [!DNL Adobe Asset Link], ma [!DNL Adobe Asset Link] riconosce le risorse salvate da [!DNL Stock] in questo modo e visualizza metadati aggiuntivi e un [!DNL Adobe Stock] su queste risorse in [!DNL Adobe Asset Link] Interfaccia utente dell’estensione in [!DNL Photoshop], [!DNL Illustrator], o [!DNL InDesign]. I file sono disponibili per la navigazione, l’apertura e così via, in quanto si tratta di risorse normali quando vengono salvati in [!DNL Experience Manager].
 Utenti creativi che lavorano in [!DNL Creative Cloud] app con [!DNL Adobe Asset Link] presente, oltre ad avere accesso alle risorse già concesse in licenza da [!DNL Adobe Stock] in [!DNL Experience Manager], può anche utilizzare [!DNL Creative Cloud] Pannello Librerie per cercare, visualizzare in anteprima e concedere licenze [!DNL Adobe Stock] risorse.
 [!DNL Assets] da [!DNL Adobe Stock] concesso in licenza e salvato in [!DNL Experience Manager] diventano disponibili per i team più ampi che accedono [!DNL Experience Manager Assets] , mentre i creativi concedono licenze a risorse provenienti [!DNL Adobe Stock] tramite [!DNL Creative Cloud] Il pannello Librerie li rende disponibili a se stessi solo per impostazione predefinita nei [!DNL Creative Cloud] account.
 

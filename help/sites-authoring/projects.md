@@ -1,11 +1,11 @@
 ---
 title: Progetti
-description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso ne semplifica la gestione.
+description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso semplifica la gestione dei progetti.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 34%
+source-wordcount: '1360'
+ht-degree: 26%
 
 ---
 
@@ -78,7 +78,7 @@ Clic **Crea** per aggiungere un nuovo progetto.
 
 I progetti sono costituiti da diversi tipi di informazioni che si desidera gestire insieme. Queste informazioni sono rappresentate da diversi **Riquadri**.
 
-È possibile associare i seguenti riquadri al progetto.
+Al progetto possono essere associate le seguenti tessere.
 
 * [Risorse](#assets)
 * [Raccolte di risorse](#asset-collections)
@@ -177,7 +177,7 @@ Puoi avviare i flussi di lavoro per il progetto. Se sono in esecuzione flussi di
 
 A seconda del progetto creato, sono disponibili diversi flussi di lavoro.
 
-Questi sono descritti in [Utilizzo dei flussi di lavoro del progetto.](/help/sites-authoring/projects-with-workflows.md)
+Questi sono descritti in [Utilizzo dei flussi di lavoro per i progetti.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lanci {#launches}
 
@@ -209,7 +209,7 @@ I diversi ruoli utente sono definiti nel modello di progetto e vengono utilizzat
 1. Autorizzazioni: i ruoli utente rientrano in una delle tre categorie elencate: osservatore, editor, proprietario. Ad esempio, un fotografo o un copywriter avrà gli stessi privilegi di un editor. Le autorizzazioni determinano cosa può fare un utente in relazione al contenuto di un progetto.
 1. Flussi di lavoro: i flussi di lavoro determinano chi sono le attività assegnate in un progetto. Le attività possono essere associate a un ruolo del progetto. Ad esempio, è possibile assegnare un&#39;attività ai fotografi in modo che tutti i membri del gruppo che hanno il ruolo di fotografo ottengano l&#39;attività.
 
-Tutti i progetti supportano i seguenti ruoli predefiniti che consentono di amministrare le autorizzazioni di protezione e controllo.
+Tutti i progetti supportano i seguenti ruoli predefiniti per consentire l’amministrazione delle autorizzazioni di sicurezza e controllo.
 
 | Ruolo | Descrizione | Autorizzazioni | Iscrizione al gruppo |
 |---|---|---|---|
@@ -223,7 +223,7 @@ Per i progetti creativi, vengono forniti anche ruoli aggiuntivi come fotografi. 
 
 Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate.
 
-Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**.
+Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi **Proprietari mioprogetto**, **Editor Mioprogetto**, **Osservatori mioprogetto**.
 
 Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [durante l’eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
 
