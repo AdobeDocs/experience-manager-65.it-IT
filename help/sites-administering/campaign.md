@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: dac156251ae48e9d83e84ba6a4685689def9e396
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 15%
+source-wordcount: '386'
+ht-degree: 8%
 
 ---
 
@@ -33,10 +33,8 @@ Sono disponibili diverse versioni di Adobe Campaign Classic (ACC). Il supporto p
 | Versione ACC | Integrazione con AEM 6.5 <br>On-Premises | Integrazione con AEM 6.5<br>AMS |
 |---|---|---|
 | [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=it) | Supportato | Supportato |
-| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=it) | Supportato | Supportato |
-| Interfaccia utente web* | Funzione supportata | Funzione supportata |
-
-*L’interfaccia utente web per Adobe Campaign Classic è prevista per la fine del 2023.
+| [Console client v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=it) | Supportato | Supportato |
+| [Interfaccia utente Web v8](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html) | Supportato | Supportato |
 
 La seguente documentazione descrive come integrare l’AEM con Adobe Campaign Classic.
 
@@ -46,6 +44,13 @@ La seguente documentazione aggiuntiva descrive come utilizzare l’integrazione.
 
 * [Componenti core E-mail](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html) - Scopri i componenti e-mail standard che puoi utilizzare per creare contenuti di Campaign in AEM.
 * [Risoluzione dei problemi relativi all’integrazione di Adobe Campaign Classic](/help/sites-administering/troubleshooting-campaignintegration.md) - Scopri come risolvere i problemi più comuni con l’integrazione AEM-ACC.
+
+
+La documentazione seguente descrive come integrare AEM as a Cloud Service con l’interfaccia utente web di Adobe Campaign v8.
+
+* [Gestire i modelli con Adobe Experience Manager as a Cloud Service nell’interfaccia utente di Adobe Campaign v8 Web](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html) - Scopri i dettagli passo passo sulla configurazione e l’utilizzo dell’integrazione con i modelli AEM.
+* [Gestire le risorse con Adobe Experience Manager as a Cloud Service nell’interfaccia utente di Adobe Campaign v8 Web](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) : scopri i dettagli passo passo sulla configurazione e l’utilizzo dell’integrazione con AEM Assets.
+
 
 ## Integrazione con Adobe Campaign Standard {#acs}
 
