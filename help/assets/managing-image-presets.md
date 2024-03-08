@@ -11,9 +11,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '3794'
+source-wordcount: '3792'
 ht-degree: 8%
 
 ---
@@ -125,12 +125,12 @@ Argomenti per rasterizzare il flusso di lavoro di PDF o AI
    <td>Elenco di tipi MIME di documenti considerati documenti PDF o Illustrator.<br /> </td>
   </tr>
   <tr>
-   <td>Larghezza massima</td>
+   <td>Larghezza max</td>
    <td>2048</td>
    <td>Larghezza massima in pixel del rendering di anteprima generato.<br /> </td>
   </tr>
   <tr>
-   <td>Altezza massima</td>
+   <td>Altezza max</td>
    <td>2048</td>
    <td>Altezza massima in pixel del rendering di anteprima generato.<br /> </td>
   </tr>
@@ -195,7 +195,7 @@ Gli script seguenti vengono utilizzati dall’integrazione di Dynamic Medie:
 
 Con il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
 
-Il dimensionamento delle miniature viene definito nel seguente formato: **[!UICONTROL larghezza:height:centro]** ad esempio: `80:80:false`. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è falso o true e se impostato su true, indica che l&#39;immagine miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
+Il dimensionamento delle miniature viene definito nel seguente formato: **`width:height:center`** ad esempio: `80:80:false`. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è falso o true e se impostato su true, indica che l&#39;immagine miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
 
 >[!NOTE]
 >

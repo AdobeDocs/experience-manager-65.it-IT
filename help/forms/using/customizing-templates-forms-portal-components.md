@@ -7,9 +7,9 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -143,8 +143,8 @@ Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazion
 * **diffTime**: differenza tra l’ora corrente e l’ultima azione di salvataggio della bozza. In alternativa, la differenza tra l&#39;ora corrente e l&#39;ultima azione inviata per l&#39;invio.
 * **iconClass**: classe CSS utilizzata per visualizzare la prima lettera della bozza/invio. Forms Portal include le seguenti classi, che forniscono sfondi di diversi colori.
 * **proprietario**: utente che ha creato la bozza/l’invio.
-* **Oggi**: data di creazione della bozza o di presentazione in GG:MM:Formato AAAA.
-* **TimeNow**: momento della creazione della bozza o della presentazione in HH:MM:Formato SS 24 ore
+* **Oggi**: data di creazione della bozza o di presentazione in `DD:MM:YYYY` formato.
+* **TimeNow**: momento della creazione della bozza o dell’invio in `HH:MM:SS` Formato 24 ore
 
 *Nota:*
 

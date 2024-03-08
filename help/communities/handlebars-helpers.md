@@ -4,9 +4,9 @@ description: Handlebars Helper metodi per facilitare il lavoro con SCF
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 787e5a87f13498006e2ce897e85ee12704b58f09
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1445'
 ht-degree: 2%
 
 ---
@@ -135,7 +135,7 @@ Un helper per restituire una stringa di data formattata.
 
 * **formato**: Stringa
 
-  (Facoltativo) Il formato della data da applicare. Il valore predefinito è &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; e il risultato appare come &quot;2015-03-18T18:17:13-07:00&quot;
+  (Facoltativo) Il formato della data da applicare. Il valore predefinito è &quot;`YYYY-MM-DDTHH:mm:ss.sssZ`&quot; e il risultato viene visualizzato come &quot;`2015-03-18T18:17:13-07:00`&quot;
 
 ### Esempi {#examples-1}
 

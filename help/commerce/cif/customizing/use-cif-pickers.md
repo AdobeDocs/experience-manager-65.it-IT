@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ L’authoring di contenuti e commercio AEM fornisce una serie di strumenti di au
 
 ## Selettore prodotti {#product-picker}
 
-Per utilizzare il selettore prodotti in un componente del progetto, uno sviluppatore deve aggiungere `commerce/gui/components/common/cifproductfield` nella finestra di dialogo di un componente. Ad esempio, utilizza quanto segue per cq:dialog:
+Per utilizzare il selettore prodotti in un componente del progetto, uno sviluppatore deve aggiungere `commerce/gui/components/common/cifproductfield` nella finestra di dialogo di un componente. Ad esempio, utilizza quanto segue per `cq:dialog`:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"

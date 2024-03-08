@@ -8,10 +8,10 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 2%
+source-wordcount: '3034'
+ht-degree: 1%
 
 ---
 
@@ -140,7 +140,7 @@ La documentazione di questa sezione si applica, ad esempio, agli indici Apache L
 
 Il punto di partenza sono i dati che devono essere indicizzati. Prendi ad esempio i seguenti documenti:
 
-| <b>ID documento</b> | <b>Percorso</b> | <b>Testo completo</b> |
+| <b>ID documento</b> | <b>Percorso</b> | <b>Testo intero</b> |
 | --- | --- | --- |
 | 100 | /content/rubik | &quot;Rubik è un marchio finlandese.&quot; |
 | 200 | /content/rubiksCube | &quot;Il cubo di Rubik è stato inventato nel 1974.&quot; |
@@ -163,12 +163,12 @@ Caratteri speciali come *&quot;-&quot;* non sono indicizzati.
 | dimensione | 300 |
 | fine | ..., 100,... |
 | inventare | 200 |
-| oggetto | ..., 300,... |
+| oggetto | ..., 300... |
 | rubik | ..., 100, 200,... |
 
 L&#39;elenco dei documenti è ordinato. Questo è utile quando si esegue una query.
 
-<b>Ricerca in corso</b>
+<b>Ricerca</b>
 
 Di seguito è riportato un esempio di query. Notare che tutti i caratteri speciali (come *&#39;*) sono stati sostituiti da uno spazio:
 
@@ -222,7 +222,7 @@ Prendi il seguente esempio di query:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Per definire un indice delle proprietà Lucene per la query precedente, puoi aggiungere la seguente definizione creando un nodo in **quercia:index:**
+Per definire un indice delle proprietà Lucene per la query precedente, puoi aggiungere la seguente definizione creando un nodo in **`oak:index`:**
 
 * **Nome:** `LucenePropertyIndex`
 * **Tipo:** `oak:QueryIndexDefinition`

@@ -7,7 +7,7 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
 source-wordcount: '6084'
 ht-degree: 1%
@@ -178,7 +178,7 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
      <li>Percorso dell’archivio definito dall’utente all’interno di "/etc" in cui sono memorizzate le clientlibs corrispondenti a questo tema.</li>
      <li>Valore predefinito - "/etc/clientlibs/fd/theme" + percorso relativo della risorsa tema.</li>
      <li>Se la posizione non esiste, la gerarchia di cartelle viene generata automaticamente.</li>
-     <li>Quando questo valore viene modificato, la struttura del nodo clientlib viene spostata nella nuova posizione immessa.<br /> <em><strong>Nota:</strong> Se modifichi la posizione predefinita della libreria client, nell’archivio CRXDE assegna <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>a <code>forms-users</code> e <code>crx:replicate</code>, <code>jcr:read </code>a <code>fd-service</code> nella nuova posizione. Allega un altro ACL aggiungendo <code>deny jcr:addChildNodes</code> per <code>forms-user</code></em></li>
+     <li>Quando questo valore viene modificato, la struttura del nodo clientlib viene spostata nella nuova posizione immessa.<br /> <em><strong>Nota:</strong> Se modifichi la posizione predefinita della libreria client, nell’archivio CRXDE assegna <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> a <code>forms-users</code> e <code>crx:replicate</code>, <code>jcr:read</code> a <code>fd-service</code> nella nuova posizione. Allega un altro ACL aggiungendo <code>deny jcr:addChildNodes</code> per <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -254,7 +254,7 @@ I pannelli predefiniti includono:
 * Schede a sinistra
 * Schede superiori
 * Pannello a soffietto
-* Reattivo
+* Responsivo
 * Procedura guidata
 * Layout mobile
 

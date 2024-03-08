@@ -7,10 +7,10 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 1%
+source-wordcount: '1160'
+ht-degree: 0%
 
 ---
 
@@ -74,7 +74,7 @@ Per utilizzare l&#39;Editor collettivo per modificare più elementi contemporane
   </tr>
   <tr>
    <td>Percorso directory principale</td>
-   <td>Indica il percorso della directory principale cercato dall'editor di massa.<br />Esempio: <code>/content/geometrixx/en</code>. L’editor collettivo esegue la ricerca su tutti i nodi secondari.</td>
+   <td>Indica il percorso della directory principale cercato dall'editor di massa.<br /> Ad esempio: <code>/content/geometrixx/en</code>. L’editor collettivo esegue la ricerca su tutti i nodi secondari.</td>
   </tr>
   <tr>
    <td>Parametri di query</td>
@@ -89,7 +89,7 @@ Per utilizzare l&#39;Editor collettivo per modificare più elementi contemporane
    <td>Selezionare le caselle di controllo relative alle proprietà che si desidera vengano restituite dall'Editor collettivo. Le proprietà selezionate sono le intestazioni di colonna nel riquadro dei risultati. Per impostazione predefinita, il percorso del nodo viene visualizzato nei risultati.</td>
   </tr>
   <tr>
-   <td>Proprietà personalizzate/Colonne</td>
+   <td>Proprietà/Colonne personalizzate</td>
    <td>Inserisci altre proprietà non elencate in <strong>Proprietà/Colonne</strong> campo. Queste proprietà personalizzate vengono visualizzate nel riquadro dei risultati. Puoi aggiungere più proprietà utilizzando una virgola per separare le proprietà. <i>Nota:</i> Se aggiungi una proprietà personalizzata che non esiste ancora, WCM per AEM visualizza una cella vuota. Quando modifichi la cella vuota e la salvi, la proprietà viene aggiunta al nodo. La proprietà appena creata deve rispettare i vincoli del tipo di nodo e gli spazi dei nomi delle proprietà.</td>
   </tr>
  </tbody>
@@ -119,7 +119,8 @@ Nell’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca v
 * **percorso:** cerca solo nodi sotto questo percorso. Se specificate più di un termine con un prefisso di percorso, viene considerato solo l&#39;ultimo.
 * **tipo:** restituisce solo nodi del tipo di nodo specificato. Sono inclusi i tipi principali e mixin. È possibile specificare più tipi di nodo separati da virgole. GQL restituisce nodi di uno qualsiasi dei tipi specificati.
 * **ordine:** ordina il risultato in base alle proprietà specificate. È possibile specificare più nomi di proprietà separati da virgole. Per ordinare il risultato in ordine decrescente, aggiungi al nome della proprietà il prefisso meno. Ad esempio, order:-name. L&#39;utilizzo di un segno più restituisce il risultato in ordine crescente, che è anche l&#39;impostazione predefinita.
-* **limite:** limita il numero di risultati utilizzando un intervallo. Ad esempio, limit:10..20 L&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un intervallo di apertura:limit:10. o limite:..20 Se i punti vengono omessi e viene specificato un solo valore, GQL restituisce al massimo questo numero di risultati. Ad esempio, limit:10 (restituisce i primi dieci risultati).
+* **limite:** limita il numero di risultati utilizzando un intervallo. Ad esempio, limit:10..20 L&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un valore `interval:limit:10..` o `limit:..20`
+Se i punti vengono omessi e viene specificato un solo valore, GQL restituisce al massimo questo numero di risultati. Ad esempio: `limit:10` restituisce i primi dieci risultati.
 
 ### Esportazione del contenuto {#exporting-content}
 

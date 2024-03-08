@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ Sono disponibili le seguenti opzioni di configurazione:
 
 >[!NOTE]
 >
-Se si prevede di avere più configurazioni LDAP con l&#39;istanza AEM, è necessario creare provider di identità e gestori di sincronizzazione separati per ogni configurazione.
+>Se si prevede di avere più configurazioni LDAP con l&#39;istanza AEM, è necessario creare provider di identità e gestori di sincronizzazione separati per ogni configurazione.
 
 ## Configurare LDAP su SSL {#configure-ldap-over-ssl}
 
@@ -277,12 +277,12 @@ Per abilitare la registrazione di debug, è necessario effettuare le seguenti op
 
 * Livello registro: debug
 * File di registro logs/ldap.log
-* Pattern messaggio: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Pattern messaggio: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Livello registro: debug
 * File di registro: logs/external.log
-* Pattern messaggio: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Pattern messaggio: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Una parola sull&#39;affiliazione di gruppo {#a-word-on-group-affiliation}
