@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: bd3c3c2f833e4d7e763e7726c5c75597523605d7
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ Finestra di manutenzione settimanale integrata, disponibile tramite [Dashboard o
 >
 >Il motivo per cui non deve essere eseguito contemporaneamente è che viene eseguito anche il backup dei file di archivio dati vecchi (e inutilizzati), in modo che se è necessario eseguire il rollback a una revisione precedente, i file binari siano ancora presenti nel backup.
 
-Se non desideri eseguire la raccolta di oggetti inattivi dell’archivio dati con la finestra Manutenzione settimanale nel dashboard Operazioni, puoi anche automatizzarla utilizzando i client HTTP wget o curl. Di seguito è riportato un esempio di come automatizzare il backup utilizzando CURL:
+Se non desideri eseguire la raccolta di oggetti inattivi dell’archivio dati con la finestra Manutenzione settimanale nel dashboard Operazioni, puoi anche automatizzarla utilizzando i client HTTP wget o curl. Di seguito è riportato un esempio di come automatizzare la raccolta di oggetti inattivi utilizzando curl:
 
 >[!CAUTION]
 >
