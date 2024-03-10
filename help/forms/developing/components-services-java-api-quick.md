@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
-Se si dispone di un componente personalizzato e si utilizzano protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate smettono di funzionare dopo un aggiornamento, utilizzare la strategia di chiamata in-VM. Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando i protocolli SOAP o EJB.
+>Se si dispone di un componente personalizzato e si utilizzano protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate smettono di funzionare dopo un aggiornamento, utilizzare la strategia di chiamata in-VM. Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando i protocolli SOAP o EJB.
 
 ## Quick Start (modalità SOAP): distribuzione di un componente tramite l’API Java™ {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

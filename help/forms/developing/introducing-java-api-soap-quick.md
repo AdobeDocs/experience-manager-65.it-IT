@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe La Guida introduttiva alle API di AEM Forms può aiutarti ad accelerare gl
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-La Guida introduttiva dell’API fortemente tipizzata Java™ fornisce un elenco dei file JAR necessari per eseguire l’applicazione Java™. La maggior parte dei Java™ Quick Starts sono applicazioni console eseguite in `main`. Tuttavia, Quick Start per API Java™ fortemente tipizzata di Forms è implementato come servlet Java™ che viene eseguito all’interno di un’applicazione web.
+La Guida introduttiva dell’API fortemente tipizzata Java™ fornisce un elenco dei file JAR necessari per eseguire l’applicazione Java™. La maggior parte dei Java™ Quick Starts sono applicazioni console eseguite in `main`. Tuttavia, Forms Java™ Quick Start per API fortemente tipizzate è implementato come servlet Java™ che viene eseguito all’interno di un’applicazione web.
 
 L’elenco dei file JAR si trova in una sezione di commenti all’inizio della Guida introduttiva. Ad esempio, il seguente commento si trova in un Quick Start di output ed è un tipico elenco di file JAR presente in ogni Quick Start Java™.
 
@@ -85,4 +85,4 @@ Guida introduttiva più rapida in *Programmazione con AEM Forms su JEE* richiama
 
 >[!NOTE]
 >
-La maggior parte dei servizi Web Quick Starts sono scritti in C# e utilizzano .NET Framework. Tuttavia, è possibile creare una logica dell’applicazione client in grado di richiamare i servizi AEM Forms in qualsiasi ambiente di sviluppo che supporti gli standard SOAP. (vedere [Richiamare AEM Forms tramite servizi Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+>La maggior parte dei servizi Web Quick Starts sono scritti in C# e utilizzano .NET Framework. Tuttavia, è possibile creare una logica dell’applicazione client in grado di richiamare i servizi AEM Forms in qualsiasi ambiente di sviluppo che supporti gli standard SOAP. (vedere [Richiamare AEM Forms tramite servizi Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)

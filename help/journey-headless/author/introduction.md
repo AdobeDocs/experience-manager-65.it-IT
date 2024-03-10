@@ -2,10 +2,10 @@
 title: Authoring per headless con Adobe Experience Manager
 description: Introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e come creare contenuti per il progetto.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 88%
+source-wordcount: '649'
+ht-degree: 87%
 
 ---
 
@@ -30,7 +30,7 @@ Headless è un termine utilizzato per descrivere i sistemi in cui i contenuti so
 
 Tradizionalmente, il contenuto era gestito con un CMS, e lo stesso CMS determinava il rendering di tale contenuto sulle pagine web.
 
-Ora, headless significa che il set di contenuti può essere gestito nel CMS e, quindi, utilizzato da una o più applicazioni (indipendenti).
+Ora, headless significa che il set di contenuti può essere gestito nel CMS e quindi accessibile da una o più applicazioni (indipendenti).
 
 Per questa ragione i contenuti possono essere inviati a qualsiasi dispositivo, in una vasta gamma di formati. Questo rende l’intero processo molto più flessibile, e implica inoltre che non è necessario preoccuparsi del layout e della formattazione.
 
@@ -82,8 +82,8 @@ Ora che hai imparato i concetti e la terminologia, il passo successivo è [Scopr
 
 * [Percorso di traduzione dei contenuti AEM headless](/help/journey-headless/translation/overview.md)
 
-* [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 
 * [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
 
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

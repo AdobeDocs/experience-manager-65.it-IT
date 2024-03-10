@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Se si sta configurando l&#39;autenticazione per un dominio enterprise o ibrido e
 
 ## Provisioning degli utenti &quot;just-in-time&quot; {#just-in-time-provisioning-of-users}
 
-Il provisioning just-in-time crea automaticamente un utente nel database User Management dopo che l’utente è stato autenticato tramite un provider di autenticazione. Anche i ruoli e i gruppi rilevanti vengono assegnati in modo dinamico al nuovo utente. È possibile abilitare il provisioning just-in-time per i domini aziendali e ibridi.
+Il provisioning just-in-time crea automaticamente un utente nel database di User Management dopo che l’utente è stato autenticato correttamente tramite un provider di autenticazione. Anche i ruoli e i gruppi rilevanti vengono assegnati in modo dinamico al nuovo utente. È possibile abilitare il provisioning just-in-time per i domini aziendali e ibridi.
 
 Questa procedura descrive il funzionamento dell’autenticazione tradizionale nelle forme AEM:
 

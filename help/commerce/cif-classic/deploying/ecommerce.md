@@ -3,10 +3,10 @@ title: Panoramica di eCommerce
 description: L’eCommerce generico AEM è disponibile come parte dell’installazione standard e offre tutte le funzionalità del framework eCommerce.
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 3%
+source-wordcount: '268'
+ht-degree: 2%
 
 ---
 
@@ -19,13 +19,13 @@ L&#39;Adobe fornisce due versioni della Commerce integration framework:
 |                         | CIF on-premise | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versioni di AEM supportate | AEM on-prem o AMS 6.x | AEM AMS 6.4 e 6.5 |
-| Back-end | - AEM, Java <br> - Integrazione monolitica, mappatura pre-build (modello)<br> - Archivio JCR | - ADOBE COMMERCE <br>- Java e JavaScript <br>- Nessun dato Commerce memorizzato nell’archivio JCR |
+| Back-end | - AEM, Java™ <br> - Integrazione monolitica, mappatura pre-build (modello)<br> - Archivio JCR | - ADOBE COMMERCE <br>- Java e JavaScript <br>- Nessun dato Commerce memorizzato nell’archivio JCR |
 | Front-end | Pagine sottoposte a rendering lato server dell’AEM | Applicazione a pagina mista (rendering ibrido) |
 | Catalogo prodotti | - Importazione prodotti, editor, caching in AEM <br>- Cataloghi regolari con pagine AEM o proxy | - Nessuna importazione di prodotti <br>- Modelli generici <br>- Dati on-demand tramite connettore |
 | Scalabilità | - Può supportare fino a pochi milioni di prodotti (a seconda del caso d’uso) <br> - Memorizzazione in cache in Dispatcher | - Nessun limite di volume <br>- Memorizzazione in cache su Dispatcher o CDN |
 | Modello dati standardizzato | No | Sì, schema Adobe Commerce GraphQL |
 | Disponibilità | Sì:<br> - Commerce Cloud SAP (estensione aggiornata per supportare AEM 6.4 e Hybris 5 (impostazione predefinita) e mantenere la compatibilità con Hybris 4 <br>- Commerce Cloud Salesforce (connettore open source per supportare AEM 6.4) | Sì tramite open source tramite GitHub. <br> Adobe Commerce (supporta 2.3.2 (impostazione predefinita) e compatibile con 2.3.1). |
-| Quando utilizzare | Casi d’uso limitati: per scenari in cui potrebbe essere necessario importare cataloghi statici di piccole dimensioni | Soluzione preferita nella maggior parte dei casi d’uso |
+| Quando utilizzare | Casi d’uso limitati: per scenari in cui piccoli cataloghi statici vengono importati in base alle esigenze | Soluzione preferita nella maggior parte dei casi d’uso |
 
 
 ## Distribuzione di altre implementazioni {#deploying-other-implementations}

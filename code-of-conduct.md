@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 78%
+source-wordcount: '424'
+ht-degree: 69%
 
 ---
 # Codice di condotta Adobe
@@ -37,7 +37,7 @@ I gestori dei progetti hanno il diritto e la responsabilità di rimuovere, modif
 
 ## Ambito
 
-Il presente Codice di Condotta ha validità sia negli spazi in cui si svolge il progetto sia negli spazi pubblici in cui un individuo rappresenta il progetto o la relativa comunità. Per “rappresentare un progetto o una comunità” si intende, ad esempio, utilizzare un indirizzo e-mail ufficiale del progetto, pubblicare tramite un account social media ufficiale o intervenire come rappresentante designato nel corso di un evento online o offline. La rappresentazione di un progetto può essere ulteriormente definita e illustrata dai project manager.
+Il presente Codice di Condotta ha validità sia negli spazi in cui si svolge il progetto sia negli spazi pubblici in cui un individuo rappresenta il progetto o la relativa comunità. Esempi di rappresentazione di un progetto o di una community includono l’utilizzo di un indirizzo e-mail ufficiale del progetto, la pubblicazione tramite un account di social media ufficiale o la funzione di rappresentante designato a un evento online o offline. La rappresentazione di un progetto può essere ulteriormente definita e illustrata dai project manager.
 
 ## Applicazione
 

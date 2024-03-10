@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -1378,7 +1378,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene gestito un modulo 
 
 >[!NOTE]
 >
-Quando si utilizza una `com.adobe.idp.Document` oggetto e un `org.w3c.dom.Document` nella stessa domanda, sono pienamente idonei `org.w3c.dom.Document`.
+>Quando si utilizza una `com.adobe.idp.Document` oggetto e un `org.w3c.dom.Document` nella stessa domanda, sono pienamente idonei `org.w3c.dom.Document`.
 
 ## Quick Start (modalità SOAP): gestione dei PDF forms inviati come PDF tramite l’API Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 

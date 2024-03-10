@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -248,7 +248,7 @@ Il seguente esempio di codice Java™ importa un’applicazione utilizzando l’
 
 >[!NOTE]
 >
-ImportApplication() API Java™ sostituisce le applicazioni esistenti con lo stesso nome con applicazioni più recenti. Per aggiornare un’applicazione esistente, utilizza API importApplication() invece di API updateApplication().
+>ImportApplication() API Java™ sostituisce le applicazioni esistenti con lo stesso nome con applicazioni più recenti. Per aggiornare un’applicazione esistente, utilizza API importApplication() invece di API updateApplication().
 
 ```java
 /*

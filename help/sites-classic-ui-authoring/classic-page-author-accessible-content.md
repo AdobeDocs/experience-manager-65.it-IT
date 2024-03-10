@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9148'
-ht-degree: 60%
+source-wordcount: '9070'
+ht-degree: 59%
 
 ---
 
@@ -33,7 +33,7 @@ Le linee guida WCAG 2.0 sono costituite da un insieme di criteri di successo e l
 >Consulta anche:
 >
 >* [Guida rapida alle linee guida WCAG 2.0](/help/managing/qg-wcag.md)
->* [Configurazione dell’editor Rich Text per generare contenuto accessibile](/help/sites-administering/rte-accessible-content.md)
+>* [Configurazione dell’editor Rich Text per la produzione di contenuto accessibile](/help/sites-administering/rte-accessible-content.md)
 >
 
 Queste linee guida sono classificate in base a tre livelli di conformità: livello A (il più basso), livello AA e livello AAA (il più alto). Brevemente, i livelli sono definiti come segue:
@@ -94,11 +94,11 @@ AEM aggiunge un **Testo alternativo** alle immagini per impostazione predefinita
 
 * File:
 
-Un&#39;immagine viene caricata dal disco rigido dell&#39;utente. Se aggiungi un componente immagine a una pagina e quindi scegli un’immagine dal disco rigido o da un’altra origine, il valore predefinito per **Testo alternativo** è `file`. Questo valore deve essere modificato nella **Avanzate** scheda proprietà immagine. Anche in questo caso, questo valore non viene visualizzato nel **Testo alternativo** ma quando il valore viene modificato, il nuovo valore viene visualizzato nel campo.
+  Un&#39;immagine viene caricata dal disco rigido dell&#39;utente. Se aggiungi un componente immagine a una pagina e quindi scegli un’immagine dal disco rigido o da un’altra origine, il valore predefinito per **Testo alternativo** è `file`. Questo valore deve essere modificato nella **Avanzate** scheda proprietà immagine. Anche in questo caso, questo valore non viene visualizzato nel **Testo alternativo** ma quando il valore viene modificato, il nuovo valore viene visualizzato nel campo.
 
 * Risorsa:
 
-Un’immagine viene aggiunta dall’archivio delle risorse digitali. Se trascini un’immagine dall’archivio delle risorse digitali a una pagina web, il **Titolo** e **Testo alternativo** I valori per quell’immagine vengono ricavati dai metadati per quell’immagine.
+  Un’immagine viene aggiunta dall’archivio delle risorse digitali. Se trascini un’immagine dall’archivio delle risorse digitali a una pagina web, il **Titolo** e **Testo alternativo** I valori per quell’immagine vengono ricavati dai metadati per quell’immagine.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Un’immagine viene aggiunta dall’archivio delle risorse digitali. Se trascini
 Esistono varie forme di contenuti non testuali, di conseguenza il valore del testo alternativo dipende dal ruolo dell’elemento grafico all’interno della pagina Web. Alcune regole generali includono:
 
 * Le alternative testuali dovrebbero essere concise ma acquisire chiaramente le informazioni essenziali fornite dal contenuto non testuale.
-* È necessario evitare descrizioni eccessivamente lunghe (oltre 100 caratteri). Se un testo alternativo richiede ulteriori dettagli:
+* Le descrizioni lunghe (più di 100 caratteri) devono essere evitate. Se un testo alternativo richiede ulteriori dettagli:
 
    * fornisci una breve descrizione nel testo alternativo
    * e fornisci una descrizione testuale più lunga sulla stessa pagina o in una pagina web a parte. Collega questa descrizione separata creando un collegamento nell’immagine o inserendo un collegamento di testo accanto all’immagine.
@@ -129,55 +129,55 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 
 * Foto illustrative:
 
-Queste sono immagini di persone, oggetti o luoghi. Pensa al ruolo della foto nella pagina; un equivalente testuale appropriato sarà probabilmente *Foto di [oggetto]*, ma può dipendere dal testo circostante.
+  Queste sono immagini di persone, oggetti o luoghi. Pensa al ruolo della foto nella pagina; un equivalente testuale appropriato sarà probabilmente *Foto di [oggetto]*, ma può dipendere dal testo circostante.
 
 * Icone:
 
-Piccoli pittogrammi (grafici) che veicolano informazioni specifiche. Devono essere utilizzati in modo coerente all’interno di una pagina e di un sito. Tutte le istanze dell’icona in una pagina o in un sito devono avere lo stesso testo alternativo breve e sintetico, a meno che questo non determini una duplicazione inutile del testo adiacente.
+  Piccoli pittogrammi (grafici) che veicolano informazioni specifiche. Devono essere utilizzati in modo coerente all’interno di una pagina e di un sito. Tutte le istanze dell’icona in una pagina o in un sito devono avere lo stesso testo alternativo breve e sintetico, a meno che questo non determini una duplicazione inutile del testo adiacente.
 
 * Grafici:
 
-In genere rappresentano dati numerici. Pertanto, un&#39;opzione per fornire un testo alternativo potrebbe essere quella di includere un breve riepilogo delle principali tendenze mostrate nel grafico o grafico. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando **Descrizione** campo in **Avanzate** scheda proprietà immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
+  In genere rappresentano dati numerici. Pertanto, un&#39;opzione per fornire un testo alternativo potrebbe essere quella di includere un breve riepilogo delle principali tendenze mostrate nel grafico o grafico. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando **Descrizione** campo in **Avanzate** scheda proprietà immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
 
-![Esempio di un grafico. Di seguito è riportato l’approccio migliore per fornire un’alternativa.](assets/chlimage_1-2a.jpeg)
+  ![Esempio di un grafico. Di seguito è riportato l’approccio migliore per fornire un’alternativa.](assets/chlimage_1-2a.jpeg)
 
-Per fornire un’alternativa per questo grafico di esempio, aggiungi un `alt` invia testo all’immagine stessa e quindi segui l’immagine con un’alternativa di testo completo.
+  Per fornire un’alternativa per questo grafico di esempio, aggiungi un `alt` invia testo all’immagine stessa e quindi segui l’immagine con un’alternativa di testo completo.
 
-```xml
-<p><img src="figure1.gif" alt="Figure 1" ></p>
-<p> Figure 1. Distribution of Articles by Journal Category.
-Pie chart: Language=68%, Education=14% and Science=18%.</p>
-```
+  ```xml
+  <p><img src="figure1.gif" alt="Figure 1" ></p>
+  <p> Figure 1. Distribution of Articles by Journal Category.
+  Pie chart: Language=68%, Education=14% and Science=18%.</p>
+  ```
 
->[!NOTE]
->
->Lo snippet di cui sopra viene utilizzato solo per illustrare l’ordine. Utilizza il **Immagine** anziché il `img src` riferimento utilizzato sopra.
+  >[!NOTE]
+  >
+  >Lo snippet di cui sopra viene utilizzato solo per illustrare l’ordine. Utilizza il **Immagine** anziché il `img src` riferimento utilizzato sopra.
 
-Nell’AEM, è possibile utilizzare una combinazione di **Testo alternativo** e **Descrizione** campi nella finestra di dialogo di configurazione dell’immagine, come in [Come soddisfare il criterio - Contenuto non testuale (1.1.1)](#how-to-meet-non-text-content).
+  Nell’AEM, è possibile utilizzare una combinazione di **Testo alternativo** e **Descrizione** campi nella finestra di dialogo di configurazione dell’immagine, come in [Come soddisfare il criterio - Contenuto non testuale (1.1.1)](#how-to-meet-non-text-content).
 
 * Mappe, diagrammi, diagrammi di flusso:
 
-Per gli elementi grafici che forniscono dati spaziali (ad esempio. per descrivere le relazioni tra gli oggetti o un processo), assicurati che il messaggio chiave sia fornito in formato testo.  Per le mappe, potrebbe non risultare pratico fornire un equivalente di testo completo. Se la mappa ha lo scopo di aiutare le persone a individuare una posizione particolare, il testo alternativo dell’immagine della mappa può indicare brevemente *Mappa di X*, fornendo poi le indicazioni per tale posizione in un altro testo della pagina o attraverso il campo **Descrizione**, disponibile nella scheda **Avanzate** del componente **Immagine**.
+  Per gli elementi grafici che forniscono dati spaziali (ad esempio. per descrivere le relazioni tra gli oggetti o un processo), assicurati che il messaggio chiave sia fornito in formato testo.  Per le mappe, potrebbe non risultare pratico fornire un equivalente di testo completo. Se la mappa ha lo scopo di aiutare le persone a individuare una posizione particolare, il testo alternativo dell’immagine della mappa può indicare brevemente *Mappa di X*, fornendo poi le indicazioni per tale posizione in un altro testo della pagina o attraverso il campo **Descrizione**, disponibile nella scheda **Avanzate** del componente **Immagine**.
 
 * CAPTCHA:
 
-Un CAPTCHA è un *Test di Turing completamente automatizzato per distinguere computer e persone*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannosi, ma che può creare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano, per poter superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche.
+  Un CAPTCHA è un *Test di Turing completamente automatizzato per distinguere computer e persone*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannosi, ma che può creare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano, per poter superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche.
 
-Il W3C fornisce diversi suggerimenti, ad esempio i seguenti. Ognuno di questi approcci presenta pro e contro.
+  Il W3C fornisce diversi suggerimenti, ad esempio i seguenti. Ognuno di questi approcci presenta pro e contro.
 
-    * Puzzle logici
-    * L&#39;uso dell&#39;uscita audio al posto delle immagini
-    * Account a uso limitato e filtri anti-spam.
+   * Rompicapi logici
+   * L&#39;uso dell&#39;output sonoro invece delle immagini
+   * Account a utilizzo limitato e filtri anti-spam.
 
 * Immagini di sfondo:
 
-Queste immagini vengono ottenute utilizzando Cascading Style Sheets (CSS) anziché in HTML. Non è possibile specificare un valore di testo alternativo. Pertanto, le immagini di sfondo non devono fornire informazioni testuali importanti; in tal caso, tali informazioni devono essere incluse anche nel testo della pagina.
+  Queste immagini vengono ottenute utilizzando Cascading Style Sheets (CSS) anziché in HTML. Non è possibile specificare un valore di testo alternativo. Pertanto, le immagini di sfondo non devono fornire informazioni testuali importanti; in tal caso, tali informazioni devono essere incluse anche nel testo della pagina.
 
-Tuttavia, è importante che, quando l’immagine non può essere visualizzata, venga visualizzato uno sfondo alternativo.
+  Tuttavia, è importante che, quando l’immagine non può essere visualizzata, venga visualizzato uno sfondo alternativo.
 
->[!NOTE]
->
->Dovrebbe essere previsto un livello adeguato di contrasto tra lo sfondo e il testo in primo piano. Questo contrasto viene discusso più dettagliatamente in [Contrasto (minimo) (1.4.3)](#contrast-minimum).
+  >[!NOTE]
+  >
+  >Dovrebbe essere previsto un livello adeguato di contrasto tra lo sfondo e il testo in primo piano. Questo contrasto viene discusso più dettagliatamente in [Contrasto (minimo) (1.4.3)](#contrast-minimum).
 
 #### Ulteriori informazioni - Contenuto non testuale (1.1.1) {#more-information-non-text-content}
 
@@ -219,7 +219,7 @@ Fornire queste informazioni in un formato diverso, ad esempio testo (o audio per
 
    * Fornisci un collegamento immediatamente prima o dopo il contenuto a una trascrizione testuale del contenuto audio.
 
-  La trascrizione deve essere una pagina HTML con un equivalente testuale di tutti i contenuti parlati e importanti non parlati. Dovrebbe anche indicare chi sta parlando, una descrizione dell&#39;ambientazione, espressioni vocali e una descrizione di qualsiasi altro audio significativo.
+     La trascrizione deve essere una pagina HTML con un equivalente testuale di tutti i contenuti parlati e importanti non parlati. Dovrebbe anche indicare chi sta parlando, una descrizione dell&#39;ambientazione, espressioni vocali e una descrizione di qualsiasi altro audio significativo.
 
 * Se il contenuto è un’animazione o un video preregistrato senza audio:
 
@@ -388,122 +388,122 @@ Assicurati che alle pagine web sia associata la struttura appropriata:
 
 * **Utilizzando i titoli:**  
 
-Se le funzioni di accessibilità dell’editor Rich Text sono abilitate (consulta [AEM e accessibilità](/help/sites-administering/rte-accessible-content.md)), l’AEM offre tre livelli di intestazione di pagina. Puoi utilizzarli per identificare sezioni e sottosezioni di contenuto. Titolo 1 rappresenta il livello di intestazione più alto, Titolo 3 quello più basso. L’amministratore di sistema può configurare il sistema per consentire l’utilizzo di più livelli di intestazione.
+  Se le funzioni di accessibilità dell’editor Rich Text sono abilitate (consulta [AEM e accessibilità](/help/sites-administering/rte-accessible-content.md)), l’AEM offre tre livelli di intestazione di pagina. Puoi utilizzarli per identificare sezioni e sottosezioni di contenuto. Titolo 1 rappresenta il livello di intestazione più alto, Titolo 3 quello più basso. L’amministratore di sistema può configurare il sistema per consentire l’utilizzo di più livelli di intestazione.
 
-Nell&#39;immagine seguente viene illustrato un esempio dei diversi tipi di intestazione.
+  Nell&#39;immagine seguente viene illustrato un esempio dei diversi tipi di intestazione.
 
-![Titoli da H1 a H3 visualizzati nel selettore a discesa (interfaccia classica).](assets/chlimage_1-19a.png)
+  ![Titoli da H1 a H3 visualizzati nel selettore a discesa (interfaccia classica).](assets/chlimage_1-19a.png)
 
 * **Testo evidenziato**:
 
-Utilizza l’elemento o per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
+  Utilizza l’elemento o per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
 
-    * Evidenziare il testo che si desidera evidenziare;
-    * Fare clic sull&#39;icona **B** (per &amp;lt;strong&amp;gt;) o sull&#39;icona **I** (per &amp;lt;em&amp;gt;) visualizzata nel pannello **Proprietà** (assicurarsi che sia selezionato HTML).
+   * Evidenzia il testo che desideri mettere in evidenza.
+   * Fai clic sul pulsante **B** icona (per &lt;strong>) o **I** icona (per &lt;em>) visualizzato all&#39;interno del **Proprietà** (assicurati che sia selezionato HTML).
 
->[!NOTE]
->
->L’editor Rich Text in un’installazione standard di AEM è configurato per utilizzare:
->
->* &lt;b> per &lt;strong>
-* &lt;i> per &lt;em>
->
-L’efficacia è la stessa, ma e sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il team di sviluppo può configurare l’editor Rich Text in modo che utilizzi e  (anziché e ) durante lo sviluppo dell’istanza di progetto.
+  >[!NOTE]
+  >
+  >L’editor Rich Text in un’installazione standard di AEM è configurato per utilizzare:
+  >
+  >* &lt;b> per &lt;strong>
+  * &lt;i> per &lt;em>
+  >
+  L’efficacia è la stessa, ma e sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il team di sviluppo può configurare l’editor Rich Text in modo che utilizzi e  (anziché e ) durante lo sviluppo dell’istanza di progetto.
 
 * **Utilizzare gli elenchi**: è possibile utilizzare l’HTML per specificare tre diversi tipi di elenchi:
 
-   * Il `<ul>` l&#39;elemento viene utilizzato per *non ordinato* elenchi (puntati). Le singole voci dell’elenco sono identificate dall’elemento `<li>`. 
+   * Il `<ul>` l&#39;elemento viene utilizzato per *non ordinato* elenchi (puntati). Le singole voci dell&#39;elenco sono identificate mediante `<li>` elemento.
 
-  nell’editor Rich Text, utilizza **Elenco puntato** icona.
+     nell’editor Rich Text, utilizza **Elenco puntato** icona.
 
-   * L’elemento `<ol>`viene utilizzato per gli elenchi *numerati*. Le singole voci dell’elenco sono identificate dall’elemento `<li>`. 
+   * L’elemento `<ol>`viene utilizzato per gli elenchi *numerati*. Le singole voci dell&#39;elenco sono identificate mediante `<li>` elemento.
 
-  Nell’editor Rich Text, utilizza l’icona **Elenco numerato**.
+     Nell’editor Rich Text, utilizza l’icona **Elenco numerato**.
 
-Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco pertinente. Come nell&#39;esempio precedente che mostra come viene immesso il testo di paragrafo, gli elementi di elenco appropriati vengono aggiunti automaticamente al HTML, ma è possibile visualizzarli nella visualizzazione di modifica dell&#39;origine.
+  Per modificare il contenuto esistente in un tipo di elenco specifico, evidenzia il testo appropriato e seleziona il tipo di elenco pertinente. Come nell&#39;esempio precedente che mostra come viene immesso il testo di paragrafo, gli elementi di elenco appropriati vengono aggiunti automaticamente al HTML, ma è possibile visualizzarli nella visualizzazione di modifica dell&#39;origine.
 
->[!NOTE]
->
-Il `<dl>` non è supportato dall&#39;editor Rich Text.
+  >[!NOTE]
+  >
+  Il `<dl>` non è supportato dall&#39;editor Rich Text.
 
 * **Utilizzare le tabelle**:
 
-Le tabelle di dati devono essere identificate utilizzando gli elementi di tabella HTML:
+  Le tabelle di dati devono essere identificate utilizzando gli elementi di tabella HTML:
 
-    * uno `&lt;table>elemento `
-    * a `&lt;tr>elemento ` per ogni riga della tabella
-    * a `&lt;th>elemento ` per ogni intestazione di riga e colonna
-    * a `&lt;td>elemento ` per ogni cella di dati
+   * un elemento `<table>`
+   * un elemento `<tr>` per ogni riga della tabella
+   * un elemento `<th>` per ogni intestazione di riga e colonna
+   * un elemento `<td>` per ogni cella di dati
 
->[!NOTE]
->
-Le tabelle devono essere realizzate con **Tabella** componente. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
+  >[!NOTE]
+  >
+  Le tabelle devono essere realizzate con **Tabella** componente. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
 
-Inoltre, le tabelle accessibili utilizzano gli elementi e gli attributi seguenti:
+  Inoltre, le tabelle accessibili utilizzano gli elementi e gli attributi seguenti:
 
-    * Il carattere &quot;&lt;caption>L’elemento ` viene utilizzato per fornire una didascalia visibile per la tabella. Per impostazione predefinita, le didascalie vengono visualizzate centrate sopra la tabella, ma possono essere posizionate in modo appropriato utilizzando gli stili CSS. La didascalia è associata alla tabella a livello di programmazione, pertanto è un metodo utile per fornire un’introduzione al contenuto.
-    * Il carattere &quot;&lt;h3 class=&quot;summary&quot;>L’elemento ` aiuta gli utenti non vedenti a comprendere più facilmente le informazioni presentate all’interno di una tabella, fornendo una sintesi di ciò che un utente vedente può vedere. Risulta particolarmente utile quando si utilizzano layout di tabella complessi o non convenzionali (l’attributo non viene visualizzato nel browser, ma viene letto solo alle tecnologie per l’accessibilità).
-    * L’attributo &quot;scope&quot; del `&lt;th>L&#39;elemento ` viene utilizzato per indicare se una cella rappresenta un&#39;intestazione per una riga specifica o per una colonna specifica. Un approccio simile consiste nell’utilizzare gli attributi header e id in tabelle complesse, dove le celle di dati possono essere associate a una o più intestazioni.
+   * L’elemento `<caption>` viene utilizzato per fornire una didascalia visibile per la tabella. Per impostazione predefinita, le didascalie vengono visualizzate centrate sopra la tabella, ma possono essere posizionate in modo appropriato utilizzando gli stili CSS. La didascalia è associata alla tabella a livello di programmazione, pertanto è un metodo utile per fornire un’introduzione al contenuto.
+   * L’elemento `<h3 class="summary">` aiuta gli utenti non vedenti a comprendere più facilmente le informazioni presentate all’interno di una tabella, fornendo una sintesi di ciò che un utente vedente può vedere. Risulta particolarmente utile quando si utilizzano layout di tabella complessi o non convenzionali (l’attributo non viene visualizzato nel browser, ma viene letto solo alle tecnologie per l’accessibilità).
+   * L’attributo `scope` dell’elemento `<th>` viene utilizzato per indicare se una cella rappresenta un’intestazione per una particolare riga o colonna. Un approccio simile consiste nell’utilizzare gli attributi header e id in tabelle complesse, dove le celle di dati possono essere associate a una o più intestazioni.
 
->[!NOTE]
->
-Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >[!NOTE]
+  >
+  Per impostazione predefinita questi elementi e attributi non sono direttamente disponibili, anche se l’amministratore di sistema può aggiungere supporto per questi valori nella finestra di dialogo **Proprietà tabella** (consulta [Aggiunta di supporto per elementi e attributi HTML aggiuntivi](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
-Quando si aggiunge una **Tabella**, puoi configurare **Proprietà tabella** mediante la finestra di dialogo.
+  Quando si aggiunge una **Tabella**, puoi configurare **Proprietà tabella** mediante la finestra di dialogo.
 
-    * appropriato **Didascalia**.
-    * È consigliabile rimuovere eventuali valori predefiniti per **Larghezza**, **Altezza**, **Bordo**, **Spaziatura celle**, **Spaziatura celle**. dato che queste proprietà possono essere impostate in un foglio di stile globale.
+   * un appropriato **Didascalia**.
+   * È consigliabile rimuovere eventuali valori predefiniti per **Larghezza**, **Altezza**, **Bordo**, **Margine celle**, **Spaziatura celle**. dato che queste proprietà possono essere impostate in un foglio di stile globale.
 
-![Finestra di dialogo Proprietà tabella.](assets/chlimage_1-20a.png)
+  ![Finestra di dialogo Proprietà tabella.](assets/chlimage_1-20a.png)
 
-È quindi possibile utilizzare **Proprietà cella** per scegliere se si tratta di una cella di dati o di intestazione e, se si tratta di una cella di intestazione, se si tratta di una riga o di una colonna o di entrambe:
+  È quindi possibile utilizzare **Proprietà cella** per scegliere se si tratta di una cella di dati o di intestazione e, se si tratta di una cella di intestazione, se si tratta di una riga o di una colonna o di entrambe:
 
-![Finestra di dialogo delle proprietà della chiamata; impostazione di una riga (in genere la prima) come riga di intestazione.](assets/chlimage_1-21a.png)
+  ![Finestra di dialogo delle proprietà della chiamata; impostazione di una riga (in genere la prima) come riga di intestazione.](assets/chlimage_1-21a.png)
 
 * **Tabelle dati complesse:**
 
-Talvolta, in presenza di tabelle complesse con due o più livelli di intestazioni, le proprietà della tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate utilizzando **intestazione** e **id** attributi. Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
+  Talvolta, in presenza di tabelle complesse con due o più livelli di intestazioni, le proprietà della tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate utilizzando **intestazione** e **id** attributi. Ad esempio, nella tabella seguente le intestazioni e gli ID vengono abbinati per creare un’associazione programmatica per gli utenti di tecnologie per l’accessibilità.
 
->[!NOTE]
->
-L’attributo id non è disponibile in un’installazione standard. Può essere attivato configurando regole HTML e il serializzatore nell’editor Rich Text.
+  >[!NOTE]
+  >
+  L’attributo id non è disponibile in un’installazione standard. Può essere attivato configurando regole HTML e il serializzatore nell’editor Rich Text.
 
->[!NOTE]
->
-Le tabelle devono essere realizzate con **Tabella** componente. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
+  >[!NOTE]
+  >
+  Le tabelle devono essere realizzate con **Tabella** componente. È possibile creare tabelle nel componente Testo, ma questa operazione non è consigliata.
 
-```xml
-<table>
-   <tr>
-     <th rowspan="2" id="h">Homework</th>
-     <th colspan="3" id="e">Exams</th>
-     <th colspan="3" id="p">Projects</th>
-   </tr>
-   <tr>
-     <th id="e1" headers="e">1</th>
-     <th id="e2" headers="e">2</th>
-     <th id="ef" headers="e">Final</th>
-     <th id="p1" headers="p">1</th>
-     <th id="p2" headers="p">2</th>
-     <th id="pf" headers="p">Final</th>
-   </tr>
-   <tr>
-    <td headers="h">15%</td>
-    <td headers="e e1">15%</td>
-    <td headers="e e2">15%</td>
-    <td headers="e ef">20%</td>
-    <td headers="p p1">10%</td>
-    <td headers="p p2">10%</td>
-    <td headers="p pf">15%</td>
-   </tr>
-  </table>
-```
+  ```xml
+  <table>
+     <tr>
+       <th rowspan="2" id="h">Homework</th>
+       <th colspan="3" id="e">Exams</th>
+       <th colspan="3" id="p">Projects</th>
+     </tr>
+     <tr>
+       <th id="e1" headers="e">1</th>
+       <th id="e2" headers="e">2</th>
+       <th id="ef" headers="e">Final</th>
+       <th id="p1" headers="p">1</th>
+       <th id="p2" headers="p">2</th>
+       <th id="pf" headers="p">Final</th>
+     </tr>
+     <tr>
+      <td headers="h">15%</td>
+      <td headers="e e1">15%</td>
+      <td headers="e e2">15%</td>
+      <td headers="e ef">20%</td>
+      <td headers="p p1">10%</td>
+      <td headers="p p2">10%</td>
+      <td headers="p pf">15%</td>
+     </tr>
+    </table>
+  ```
 
-Per ottenere questo risultato in AEM, devi aggiungere il markup direttamente utilizzando la modalità di modifica sorgente.
+  Per ottenere questo risultato in AEM, devi aggiungere il markup direttamente utilizzando la modalità di modifica sorgente.
 
->[!NOTE]
->
-Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor Rich Text, delle regole HTML e del serializzatore.
+  >[!NOTE]
+  >
+  Questa funzionalità non è immediatamente disponibile in un’installazione standard. Richiede la configurazione dell’editor Rich Text, delle regole HTML e del serializzatore.
 
 #### Ulteriori informazioni - Informazioni e correlazioni (1.3.1)  {#more-information-info-and-relationships}
 
@@ -568,7 +568,7 @@ Inoltre, il colore non può essere percepito da persone che utilizzano browser d
 
 Qualunque colore sia utilizzato per trasmettere le informazioni, accertati che queste siano disponibili senza che sia necessario vedere il colore stesso.
 
-Ad esempio, accertati che le informazioni fornite dal colore siano presenti in modo esplicito anche nel testo. L’illustrazione seguente mostra come il colore e il testo indicano entrambi la disponibilità di posti a sedere per una prestazione:
+Ad esempio, assicurati che le informazioni fornite dal colore siano presenti esplicitamente anche nel testo. L’illustrazione seguente mostra come il colore e il testo indicano entrambi la disponibilità di posti a sedere per una prestazione:
 
 <table>
  <tbody>
@@ -591,7 +591,7 @@ Ad esempio, accertati che le informazioni fornite dal colore siano presenti in m
  </tbody>
 </table>
 
-Se il colore viene utilizzato come spunto per fornire informazioni, è necessario fornire un ulteriore segnale visivo, come la modifica dello stile (ad esempio grassetto o corsivo) o del font. Questo aiuta le persone con problemi di vista o daltonismo a identificare le informazioni. Tuttavia, non si può fare completo affidamento a questa soluzione, in quanto non aiuterà le persone che non possono vedere affatto la pagina.
+Se il colore viene utilizzato come spunto per fornire informazioni, è necessario fornire un ulteriore segnale visivo, come la modifica dello stile (ad esempio grassetto o corsivo) o del font. Questo aiuta le persone con problemi di vista o daltonismo a identificare le informazioni. Tuttavia, non ci si può basare interamente su di esso, in quanto non aiuta le persone che non possono vedere affatto la pagina.
 
 #### Ulteriori informazioni - Uso del colore (1.4.1) {#more-information-use-of-color}
 
@@ -675,13 +675,18 @@ Se è necessario utilizzare le immagini di testo, utilizza CSS per sostituirle c
 * Livello A
 * Pausa, stop, nascondi: per le informazioni in movimento, lampeggianti, scorrevoli o con aggiornamento automatico, vale quanto segue:
 
-   * In movimento, lampeggiante, in scorrimento: per qualsiasi informazione in movimento, lampeggiante o in scorrimento che (a) parta automaticamente, (b) duri più di cinque secondi, e (c) sia rappresentata in parallelo con altro contenuto, esiste un meccanismo che consente all’utente di mettere in pausa, interrompere o nascondere l’effetto, a meno che esso sia parte di un’attività per la quale sia essenziale;
-   * Aggiornamento automatico: per qualsiasi informazione con aggiornamento automatico che (a) inizia automaticamente e (b) viene presentata in parallelo ad altri contenuti, esiste un meccanismo che consente all’utente di metterlo in pausa, interromperlo o nasconderlo o di controllare la frequenza dell’aggiornamento, a meno che l’aggiornamento automatico non faccia parte di un’attività in cui è essenziale.
+   * Spostamento, lampeggiamento, scorrimento: per qualsiasi informazione in movimento, lampeggiante o scorrevole che
+      * a) si avvia automaticamente;
+      * b) dura più di cinque secondi; e
+      * (c) è presentato in parallelo con altri contenuti, esiste un meccanismo che consente all’utente di metterlo in pausa, fermarlo o nasconderlo a meno che il movimento, il lampeggiamento o lo scorrimento non facciano parte di un’attività in cui sia essenziale;
+   * Auto-update (Aggiornamento automatico): per qualsiasi informazione che viene aggiornata automaticamente
+      * a) si avvii automaticamente; e
+      * (b) è presentato in parallelo ad altri contenuti, esiste un meccanismo che consente all’utente di metterlo in pausa, interromperlo o nasconderlo o di controllare la frequenza dell’aggiornamento a meno che l’aggiornamento automatico non faccia parte di un’attività in cui è essenziale.
 
 Elementi da sottolineare:
 
 1. Per i requisiti relativi a contenuti che sfarfallano o lampeggiano, consulta [Non progettare contenuti con modalità che possano causare attacchi epilettici (2.3)](#seizures).
-1. Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (utilizzato per soddisfare altri criteri di successo o meno) deve rispondere a questo criterio. Consulta [Requisito di conformità 5: Non interferenza](https://www.w3.org/TR/WCAG20/#cc5).
+1. Dal momento che qualsiasi contenuto che non soddisfi questo criterio di successo può interferire con la capacità di un utente di utilizzare l’intera pagina, tutto il contenuto della pagina web (utilizzato per soddisfare altri criteri di successo o meno) deve soddisfare questo criterio. Consulta [Requisito di conformità 5: non interferenza](https://www.w3.org/TR/WCAG20/#cc5).
 1. I contenuti aggiornati periodicamente dal software o trasmessi in streaming all’agente utente non sono tenuti a conservare o presentare le informazioni generate o ricevute tra l’inizio della pausa e la ripresa della presentazione, in quanto ciò potrebbe non essere tecnicamente possibile e in molte situazioni potrebbe risultare fuorviante.
 1. Un&#39;animazione che si verifica come parte di una fase di precaricamento o situazione simile può essere considerata essenziale se non si possono verificare interazioni durante quella fase per tutti gli utenti e, se non viene indicato l&#39;avanzamento, potrebbe confondere l’utente o indurre a pensare che il contenuto sia bloccato o interrotto.
 
@@ -779,7 +784,7 @@ Soprattutto, fai in modo che lo scopo di un collegamento sia chiaramente descrit
    * Testo: I nostri corsi serali per l’autunno 2010 - Dettagli.
    * Motivo: modificando leggermente il testo e la posizione dell’elemento di collegamento è possibile migliorare il testo di collegamento:
 
-I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in particolare per le barre di navigazione. Ad esempio, se un collegamento a una pagina specifica è denominato **Pubblicazioni** in una pagina, utilizza lo stesso testo anche nelle altre pagine per garantire la coerenza.
+I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in particolare per le barre di navigazione. Ad esempio, se si chiama un collegamento a una pagina specifica **Pubblicazione** su una pagina, utilizza il testo anche su altre pagine per garantire la coerenza.
 
 Tuttavia, al momento della stesura di questo articolo, l&#39;uso dei titoli solleva alcuni problemi:
 
@@ -789,7 +794,7 @@ Tuttavia, al momento della stesura di questo articolo, l&#39;uso dei titoli soll
 
 Pertanto, anche se l’attributo title può essere utilizzato per fornire contesto aggiuntivo a un collegamento, è importante essere consapevoli dei suoi limiti e non utilizzarlo come alternativa al testo di collegamento appropriato.
 
-Se il collegamento è costituito da un’immagine, accertati che il testo alternativo per l’immagine descriva la destinazione del collegamento. Ad esempio, se come collegamento alle pubblicazioni di un autore è impostata l’immagine di una libreria, il testo alternativo dovrebbe riportare **Pubblicazioni di John Smith** e non **Libreria**.
+Se il collegamento è costituito da un’immagine, accertati che il testo alternativo per l’immagine descriva la destinazione del collegamento. Ad esempio, se l&#39;immagine di una libreria è impostata come collegamento alle pubblicazioni di un utente, il testo alternativo dovrebbe essere **Pubblicazioni di John Smith** e non **Libreria**.
 
 In alternativa, se l’ancoraggio del collegamento contiene testo che descrive lo scopo del collegamento in aggiunta all’elemento immagine (e quindi il testo viene visualizzato accanto all’immagine), utilizza un attributo alt vuoto per l’immagine:
 
@@ -846,11 +851,11 @@ Per soddisfare questo criterio di successo, la lingua predefinita di una pagina 
 
 * Se una pagina è scritta in inglese britannico, l’elemento `<html>` dovrebbe riportare:
 
-`<html lang = "en-gb">`
+  `<html lang = "en-gb">`
 
 * Una pagina che deve essere resa in inglese americano dovrebbe invece adottare il seguente standard:
 
-`<html lang = "en-us">`
+  `<html lang = "en-us">`
 
 In AEM, la lingua predefinita della pagina è impostata durante la creazione, ma può anche essere modificata quando apporti cambiamenti alla pagina. Questa funzione è accessibile dal percorso **barra laterale** > scheda **Pagina** > **Proprietà pagina** > scheda **Avanzate**.
 
@@ -858,7 +863,7 @@ In AEM, la lingua predefinita della pagina è impostata durante la creazione, ma
 
 * [Comprendere il criterio di successo 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
 * [Come soddisfare il criterio di successo 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
-* I codici sono basati su ISO 639-1. Un elenco più completo dei codici per ogni lingua è reperibile sul [sito W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
+* I codici sono basati sulla norma ISO 639-1. Un elenco più completo dei codici per ciascuna lingua è disponibile sul sito [Sito W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Parti in lingua (3.1.2)    {#language-of-parts}
 
@@ -955,11 +960,11 @@ Il posizionamento delle etichette è importante anche in quanto aiuta a individu
 
 * Caselle di controllo o pulsanti di scelta:
 
-Le etichette sono posizionate immediatamente a destra del campo.
+  Le etichette sono posizionate immediatamente a destra del campo.
 
 * Tutti gli altri componenti del modulo (ad esempio caselle di testo, caselle combinate):
 
-Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
+  Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
 
 In moduli semplici con funzionalità limitata, etichettare in modo appropriato `Submit` può fungere da etichetta per il campo adiacente (ad esempio, `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
 

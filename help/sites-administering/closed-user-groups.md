@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '6650'
 ht-degree: 0%
@@ -322,7 +322,7 @@ while (isSupportedPath(path)) {
 
 #### Gestione dei criteri CUG per entità {#managing-cug-policies-by-pincipal}
 
-Le estensioni definite da `JackrabbitAccessControlManager` che consentono di modificare i criteri di controllo di accesso per entità non vengono implementati con la gestione del controllo di accesso dei gruppi utenti chiusi, in quanto per definizione un criterio dei gruppi utenti chiusi influisce sempre su tutte le entità: quelle elencate con `PrincipalSetPolicy` viene concesso l&#39;accesso in lettura mentre a tutte le altre entità verrà impedito di leggere il contenuto nella struttura definita dal nodo di destinazione.
+Le estensioni definite da `JackrabbitAccessControlManager` che consentono di modificare i criteri di controllo di accesso per entità non sono implementati con la gestione del controllo di accesso dei gruppi utenti chiusi, in quanto per definizione un criterio dei gruppi utenti chiusi influisce sempre su tutte le entità: quelle elencate con `PrincipalSetPolicy` viene concesso l&#39;accesso in lettura mentre a tutte le altre entità verrà impedito di leggere il contenuto nella struttura definita dal nodo di destinazione.
 
 I metodi corrispondenti restituiscono sempre un array di criteri vuoto, ma non generano eccezioni.
 

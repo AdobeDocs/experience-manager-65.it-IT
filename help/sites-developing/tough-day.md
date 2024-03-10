@@ -4,7 +4,7 @@ description: Il test Duro giorno simula il carico giornaliero di circa 1000 auto
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 1%
@@ -130,7 +130,7 @@ Puoi trovare i parametri rilevanti nell’elenco seguente:
 | `--port=<Val>` | La porta dell’host. | 4502 |  |
 | `--user=<Val>` | Il nome utente dell’istanza. | admin |  |
 | `--password=<Val>` | Password per l’utente specificato. | admin |  |
-| `--duration=<Val>` | La durata dei test. Può essere espresso in (**s**)secondi, (**m**)minuti, (**h**)ore e (**d**)giorni. | 1d |  |
+| `--duration=<Val>` | La durata dei test. Può essere espresso in **s** secondi, **m** minuti, **h** ore, e **d** giorni. | 1d |  |
 | `--timeout=<Val>` | Per quanto tempo un test verrà eseguito prima di essere interrotto e contrassegnato come non riuscito. Espresso in secondi. | 180 |  |
 | `--suite=<Val>` | Il valore può essere uno o un elenco (separato da virgole) di suite di test predefinite. | giornata difficile |  |
 | `--configfile=<Val>` | Il file di configurazione yaml di destinazione. |  |  |

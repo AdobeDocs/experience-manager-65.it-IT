@@ -6,9 +6,9 @@ topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1069'
 ht-degree: 2%
 
 ---
@@ -137,7 +137,7 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implementare gli indici tramite un pacchetto AEM. È possibile utilizzare un’ [Archetipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto dell’archetipo AEM:
+   * Distribuire gli indici tramite un pacchetto AEM. È possibile utilizzare un’ [Archetipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto dell’archetipo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

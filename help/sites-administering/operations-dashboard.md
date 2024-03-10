@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '5868'
 ht-degree: 2%
 
 ---
@@ -199,7 +199,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
    <td><p>La lunghezza della coda di osservazione viene iterata su tutti i listener di eventi e gli osservatori in background e ne confronta le <code>queueSize </code>alla loro <code>maxQueueSize</code> e:</p>
     <ul>
      <li>restituisce lo stato Critico se <code>queueSize</code> il valore supera il <code>maxQueueSize</code> valore (quando gli eventi verrebbero eliminati)</li>
-     <li>restituisce Avvisa se <code>queueSize</code> il valore è superiore al <code>maxQueueSize * WARN_THRESHOLD</code> (il valore predefinito è 0,75) </li>
+     <li>restituisce un avviso se il <code>queueSize</code> il valore è superiore al <code>maxQueueSize * WARN_THRESHOLD</code> (il valore predefinito è 0,75) </li>
     </ul> <p>La lunghezza massima di ciascuna coda proviene da configurazioni separate (Oak e AEM) e non è configurabile da questa verifica di integrità. MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=OsservazioneCodaLunghezzaVerificaStato,type=VerificaStato</a>.</p> </td>
   </tr>
   <tr>
@@ -223,11 +223,11 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
    <td>Indici asincroni</td>
    <td><p>La verifica degli indici asincroni:</p>
     <ul>
-     <li>restituisce lo stato Critico se almeno una corsia di indicizzazione non riesce</li>
+     <li>restituisce uno stato Critico se almeno una corsia di indicizzazione non riesce</li>
      <li>verifica la <code>lastIndexedTime</code> per tutte le corsie di indicizzazione e:
       <ul>
-       <li>restituisce lo stato Critico se è più di 2 ore fa </li>
-       <li>restituisce lo stato di avvertenza se è compreso tra 2 ore e 45 minuti fa </li>
+       <li>restituisce uno stato Critico se è più di 2 ore fa </li>
+       <li>restituisce uno stato di avvertenza se è compreso tra 2 ore e 45 minuti fa </li>
        <li>restituisce lo stato OK se è meno di 45 minuti fa </li>
       </ul> </li>
      <li>se nessuna di queste condizioni è soddisfatta, viene restituito lo stato OK</li>
@@ -264,17 +264,17 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
      <code>maxNumQueueJobs</code> soglia e:
     </div>
     <ul>
-     <li>restituisce Critico se più del valore <code>maxNumQueueJobs</code> sono in coda</li>
-     <li>restituisce Critico se sono presenti processi attivi con tempi di esecuzione lunghi più vecchi di 1 ora</li>
-     <li>restituisce Critico se sono presenti processi in coda e l'ultima ora del processo finito è precedente a 1 ora</li>
+     <li>restituisce un valore Critico se più del valore <code>maxNumQueueJobs</code> sono in coda</li>
+     <li>restituisce un valore Critico se sono presenti processi attivi con tempi di esecuzione lunghi più vecchi di 1 ora</li>
+     <li>restituisce un valore Critico se sono presenti processi in coda e l'ultima ora del processo finito è precedente a 1 ora</li>
     </ul> <p>È possibile configurare solo il parametro relativo al numero massimo di processi in coda e il valore predefinito è 1000.</p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Prestazioni delle richieste</td>
    <td><p>Questo controllo esamina <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Metrica Sling </a>e:</p>
     <ul>
-     <li>restituisce Critico se il valore del 75° percentile supera la soglia critica (il valore predefinito è 500 millisecondi)</li>
-     <li>restituisce Avvisa se il valore del 75° percentile supera la soglia di avvertenza (il valore predefinito è 200 millisecondi)</li>
+     <li>restituisce un valore Critico se il valore del 75° percentile supera la soglia critica (il valore predefinito è 500 millisecondi)</li>
+     <li>restituisce un valore Warn se il valore del 75° percentile supera la soglia di avvertenza (il valore predefinito è 200 millisecondi)</li>
     </ul> <p>MBean per questa verifica stato è<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -285,8 +285,8 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
    <td>Spazio su disco</td>
    <td><p>Il controllo dello spazio su disco esamina <code>FileStoreStats</code> MBean, recupera le dimensioni dell'archivio nodi e la quantità di spazio su disco utilizzabile nella partizione dell'archivio nodi e:</p>
     <ul>
-     <li>restituisce Avvisa se il rapporto tra lo spazio su disco utilizzabile e le dimensioni dell'archivio è inferiore alla soglia di avviso (il valore predefinito è 10)</li>
-     <li>restituisce Critico se il rapporto tra lo spazio su disco utilizzabile e le dimensioni dell’archivio è inferiore alla soglia critica (il valore predefinito è 2)</li>
+     <li>restituisce un avviso se il rapporto tra lo spazio su disco utilizzabile e le dimensioni dell’archivio è inferiore alla soglia di avviso (il valore predefinito è 10)</li>
+     <li>restituisce un valore Critico se il rapporto tra lo spazio su disco utilizzabile e le dimensioni dell’archivio è inferiore alla soglia critica (il valore predefinito è 2)</li>
     </ul> <p>Entrambe le soglie sono configurabili. Il controllo funziona solo sulle istanze con un archivio segmenti.</p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -309,15 +309,15 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
    <td>Controllo cache codice</td>
    <td><p>Verifica stato che verifichi diverse condizioni JVM che possono attivare un bug CodeCache presente in Java™ 7:</p>
     <ul>
-     <li>restituisce Warn se l’istanza è in esecuzione su Java™ 7, con lo svuotamento della cache del codice abilitato</li>
-     <li>restituisce Avvisa se l'istanza è in esecuzione su Java™ 7 e la dimensione della cache codice riservato è inferiore a una soglia minima (il valore predefinito è 90 MB)</li>
+     <li>restituisce un avviso se l’istanza è in esecuzione su Java™ 7, con lo svuotamento della cache del codice abilitato</li>
+     <li>restituisce un avviso se l’istanza è in esecuzione su Java™ 7 e la dimensione della cache codice riservato è inferiore a una soglia minima (il valore predefinito è 90 MB)</li>
     </ul> <p>Il <code>minimum.code.cache.size</code> soglia configurabile. Per ulteriori informazioni sul bug, vedi <a href="https://bugs.java.com/bugdatabase/"> e quindi cerca in 8012547 ID bug</a>.</p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Errori nel percorso di ricerca delle risorse</td>
    <td><p>Controlla se nel percorso sono presenti risorse <code>/apps/foundation/components/primary</code> e:</p>
     <ul>
-     <li>restituisce Avvisa se sono presenti nodi figlio in <code>/apps/foundation/components/primary</code></li>
+     <li>restituisce un avviso se sono presenti nodi figlio in <code>/apps/foundation/components/primary</code></li>
     </ul> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>
@@ -581,7 +581,7 @@ Anche se l’attività di manutenzione è stata sviluppata per ridurre i rifiuti
 
 Puoi accedere all’attività Pulizia binary di Lucene da: **AEM > Strumenti > Operazioni > Manutenzione > Finestra Manutenzione giornaliera > Pulizia dati binari Lucene**.
 
-### Archivio dati raccolta oggetti inattivi {#data-store-garbage-collection}
+### Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
 
 Per informazioni dettagliate sulla raccolta di oggetti inattivi dell’archivio dati, consulta la sezione dedicata [pagina della documentazione](/help/sites-administering/data-store-garbage-collection.md).
 
@@ -899,7 +899,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
   </tr>
   <tr>
    <td>Indicizzazione</td>
-   <td><p>Display:</p>
+   <td><p>Visualizza:</p>
     <ul>
      <li>"Indicizzazione in corso"</li>
      <li>"Query in corso"</li>

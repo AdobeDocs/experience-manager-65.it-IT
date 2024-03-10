@@ -2,7 +2,7 @@
 title: Creazione di contenuto accessibile per Adobe Experience Manager (conformità WCAG 2.1)
 description: Utilizzare l’AEM per rendere i contenuti web accessibili e utilizzabili dalle persone con disabilità
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '13636'
 ht-degree: 82%
@@ -693,8 +693,13 @@ Seguire le linee guida illustrate in [Come soddisfare i criteri di successo 2.2.
 * Criterio di successo 2.2.2
 * Livello A
 * Pausa, stop, nascondi: per le informazioni in movimento, lampeggianti, scorrevoli o con aggiornamento automatico, vale quanto segue:
-   * In movimento, lampeggiante, in scorrimento: per qualsiasi informazione in movimento, lampeggiante o in scorrimento che (a) parta automaticamente, (b) duri più di cinque secondi, e (c) sia rappresentata in parallelo con altro contenuto, esiste un meccanismo che consente all’utente di mettere in pausa, interrompere o nascondere l’effetto, a meno che esso sia parte di un’attività per la quale sia essenziale;
-   * Aggiornamento automatico: per qualsiasi informazione con aggiornamento automatico che (a) inizia automaticamente e (b) viene presentata in parallelo ad altri contenuti, esiste un meccanismo che consente all’utente di metterlo in pausa, interromperlo o nasconderlo o di controllare la frequenza dell’aggiornamento, a meno che l’aggiornamento automatico non faccia parte di un’attività in cui è essenziale.
+   * Spostamento, lampeggiamento, scorrimento: per qualsiasi informazione in movimento, lampeggiante o scorrevole che
+      * a) si avvia automaticamente;
+      * b) dura più di cinque secondi; e
+      * (C) è presentato in parallelo con altri contenuti, esiste un meccanismo che consente all’utente di metterlo in pausa, fermarlo o nasconderlo a meno che il movimento, il lampeggiamento o lo scorrimento non facciano parte di un’attività in cui sia essenziale;
+   * Auto-update (Aggiornamento automatico): per qualsiasi informazione che viene aggiornata automaticamente
+      * a) si avvii automaticamente; e
+      * (b) viene presentato in parallelo ad altri contenuti è presente un meccanismo che consente all’utente di metterlo in pausa, interromperlo o nasconderlo o di controllare la frequenza dell’aggiornamento, a meno che l’aggiornamento automatico non faccia parte di un’attività in cui è essenziale.
 
 Elementi da sottolineare:
 

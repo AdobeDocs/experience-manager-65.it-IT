@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2092'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Con il rilascio dei servizi di documentazione AEM e della sicurezza dei document
 
 [Offload](/help/sites-deploying/offloading.md) distribuisce le attività di elaborazione tra le istanze Experienci Manager in una topologia. L&#39;offload consente di utilizzare istanze di Experience Manager specifiche per l&#39;esecuzione di tipi specifici di elaborazione. L&#39;elaborazione specializzata consente di ottimizzare l&#39;utilizzo delle risorse server disponibili.
 
-Le topologie sono cluster Experienci Manager liberamente accoppiati che partecipano all&#39;offload. Un cluster è costituito da una o più istanze del server di Experience Manager (una singola istanza viene considerata un cluster).
+Le topologie sono cluster di Experienci Manager liberamente accoppiati che partecipano all&#39;offload. Un cluster è costituito da una o più istanze del server di Experience Manager (una singola istanza viene considerata un cluster).
 
 Per ulteriori informazioni su come visualizzare o modificare l&#39;appartenenza alla topologia, consultare [Amministrazione delle topologie](/help/sites-deploying/offloading.md#administering-topologies) sezione.
 

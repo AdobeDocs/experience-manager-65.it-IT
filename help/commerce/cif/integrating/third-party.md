@@ -1,18 +1,18 @@
 ---
-title: Integrazione di AEM e Commerce di terze parti tramite Commerce Integration Framework
-description: Le aziende possono richiedere soluzioni commerce di terze parti aggiuntive per potenziare la propria vetrina. Commerce Integration Framework (CIF) può essere utilizzato in tali scenari di integrazione per collegare una soluzione commerce di terze parti ad Adobe Experience Manager utilizzando I/O Runtime.
+title: Integrazione di AEM e Commerce di terze parti tramite Commerce integration framework
+description: Le aziende possono richiedere soluzioni commerce di terze parti aggiuntive per potenziare la propria vetrina. La Commerce integration framework (CIF) può essere utilizzata in tali scenari di integrazione per collegare una soluzione di e-commerce di terze parti a Adobe Experience Manager utilizzando I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 2%
+source-wordcount: '489'
+ht-degree: 1%
 
 ---
 
-# Integrazione AEM e Commerce di terze parti tramite Commerce Integration Framework {#aem-third-party}
+# Integrazione di AEM e Commerce di terze parti tramite Commerce integration framework {#aem-third-party}
 
-L’integrazione di una soluzione non Adobe Commerce è uno scenario comune per CIF. Le soluzioni di terze parti con API e schemi diversi vengono connesse tramite un livello di integrazione.
+L’integrazione di una soluzione non Adobe Commerce è uno scenario comune per l’CIF. Le soluzioni di terze parti con API e schemi diversi vengono connesse tramite un livello di integrazione.
 
 ## Architettura {#architecture}
 
@@ -34,19 +34,19 @@ Non è necessario implementare lo schema GraphQL completo, ma solo gli oggetti d
 
 ## Casi d’uso back-end
 
-CIF estende l’Experience Manager con strumenti di gestione dell’esperienza di prodotto e accesso al catalogo dei prodotti in tempo reale. Questa integrazione diretta consente agli autori di accedere ai dati di e-commerce utilizzando interfacce utente incorporate quando necessario senza uscire dal contesto dei contenuti.
+L’CIF amplia questo Experience Manager con strumenti di gestione dell’esperienza di prodotto e accesso al catalogo dei prodotti in tempo reale. Questa integrazione diretta consente agli autori di accedere ai dati di e-commerce utilizzando interfacce utente incorporate quando necessario senza uscire dal contesto dei contenuti.
 
 Per sbloccare questi casi d’uso è necessaria l’integrazione delle API del catalogo dei prodotti.
 
 ## Casi d’uso front-end
 
-[Componenti core CIF dell’AEM](https://github.com/adobe/aem-core-cif-components) recupera e scambia dati tramite le API Adobe Commerce supportate da CIF. Per riutilizzare i componenti, è necessario implementare le rispettive API.
+[Componenti core dell’CIF dell’AEM](https://github.com/adobe/aem-core-cif-components) recuperare e scambiare dati tramite le API Adobe Commerce supportate dall’CIF. Per riutilizzare i componenti, è necessario implementare le rispettive API.
 
 Per i componenti lato client critici in termini di prestazioni, si consiglia di comunicare direttamente con la soluzione di terze parti per evitare la latenza.
 
 ## Sviluppo di un’integrazione {#develop-integration}
 
-L’Adobe consiglia di utilizzare [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html) per il livello di integrazione. È incluso nel componente aggiuntivo CIF per terzi. Poiché funziona con un approccio simile a quello dei microservizi, è adatto per integrare facilmente più soluzioni.
+L’Adobe consiglia di utilizzare [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html) per il livello di integrazione. È incluso nel componente aggiuntivo CIF per terze parti. Poiché funziona con un approccio simile a quello dei microservizi, è adatto per integrare facilmente più soluzioni.
 
 Il [implementazione di riferimento](https://github.com/adobe/commerce-cif-graphql-integration-reference) è un ottimo punto di partenza per creare l’integrazione con la soluzione commerce. Sebbene supporti GraphQL, può anche essere integrato con qualsiasi altro tipo di API, come REST.
 

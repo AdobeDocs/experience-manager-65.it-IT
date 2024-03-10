@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '4518'
+source-wordcount: '4520'
 ht-degree: 5%
 
 ---
@@ -403,7 +403,7 @@ Di seguito sono riportati i possibili problemi relativi alle risoluzioni:
 
 ### Pre-estrazione del testo dei dati binari {#text-pre-extraction-of-binaries}
 
-La pre-estrazione del testo è il processo di estrazione ed elaborazione del testo dai dati binari, direttamente dall’archivio dati tramite un processo isolato ed esponendo direttamente il testo estratto a successive re/indicizzazioni degli indici Oak.
+La pre-estrazione del testo è il processo di estrazione ed elaborazione del testo dai binari, direttamente dall’archivio dati tramite un processo isolato, ed esposizione diretta del testo estratto a successive re/indicizzazioni degli indici Oak.
 
 * La pre-estrazione del testo Oak è consigliata per la re/indicizzazione degli indici Lucene in archivi con grandi volumi di file (binari) contenenti testo estraibile (ad esempio, PDF, documenti Word, PPT, TXT e così via) idonei per la ricerca full-text tramite indici Oak distribuiti; ad esempio, `/oak:index/damAssetLucene`.
 * La pre-estrazione del testo offre vantaggi solo per la re/indicizzazione degli indici Lucene e NOT Oak, in quanto gli indici di proprietà non estraggono il testo dai binari.

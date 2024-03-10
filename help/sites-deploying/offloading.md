@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2317'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Al momento della creazione di un processo, il payload si trova solo sull’istan
 
 ## Amministrazione delle topologie {#administering-topologies}
 
-Le topologie sono cluster Experienci Manager liberamente accoppiati che partecipano all&#39;offload. Un cluster è costituito da una o più istanze del server di Experience Manager (una singola istanza viene considerata un cluster).
+Le topologie sono cluster di Experienci Manager liberamente accoppiati che partecipano all&#39;offload. Un cluster è costituito da una o più istanze del server di Experience Manager (una singola istanza viene considerata un cluster).
 
 Ogni istanza di Experience Manager esegue i seguenti servizi relativi all&#39;offload:
 
@@ -283,7 +283,7 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Trasporto >Utente trasporto | Utente di replica sull’istanza di destinazione |
    | Trasporto >Password trasporto | Password utente di replica nell’istanza di destinazione |
    | Esteso > Metodo HTTP | POST |
-   | Triggers > Ignora predefinito | Vero |
+   | Triggers > Ignora predefinito | True |
 
 ### Creazione dell’agente inverso {#creating-the-reverse-agent}
 
@@ -307,7 +307,7 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Impostazioni > Tipo di serializzazione | Predefiniti |
    | Trasporto >URI trasporto | repo://var/replication/outbox |
-   | Trigger > Ignora predefinito | Vero |
+   | Trigger > Ignora predefinito | True |
 
 ### Ricerca dell’ID Sling {#finding-the-sling-id}
 

@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 4%
+source-wordcount: '857'
+ht-degree: 2%
 
 ---
 

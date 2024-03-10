@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Projects
 exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,9 @@ La copia per lingua per la quale originariamente hai aggiunto le risorse è la l
 
 Per preparare le risorse per la traduzione, effettua le seguenti operazioni:
 
-1. Crea la directory principale della lingua principale. Ad esempio, la directory principale della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Creare una directory principale della lingua](preparing-assets-for-translation.md#creating-a-language-root).
+1. Crea la directory principale della lingua primaria. Ad esempio, la directory principale della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Creare una directory principale della lingua](preparing-assets-for-translation.md#creating-a-language-root).
 
-1. Aggiungi risorse alla lingua principale.
+1. Aggiungere risorse alla lingua principale.
 1. Crea la directory principale della lingua di ogni lingua di destinazione per la quale hai bisogno di una copia per lingua.
 
 ## Creare una directory principale lingua {#creating-a-language-root}

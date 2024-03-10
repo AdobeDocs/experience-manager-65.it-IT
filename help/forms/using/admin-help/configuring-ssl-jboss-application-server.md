@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ In questa procedura:
    `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Tipo `changeit` come password. Questa password è la password predefinita per un&#39;installazione Java e potrebbe essere stata modificata dall&#39;amministratore di sistema.
-1. Quando richiesto `Trust this certificate? [no]`:, tipo `yes`. Viene visualizzata la conferma &quot;Certificato aggiunto al keystore&quot;.
+1. Quando richiesto `Trust this certificate? [no]`, tipo `yes`. Viene visualizzata la conferma &quot;Certificato aggiunto al keystore&quot;.
 1. Se ti connetti tramite SSL da Workbench, installa il certificato sul computer Workbench.
 1. In un editor di testo, apri i seguenti file per la modifica:
 

@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Quando si revocano o si ripristinano i privilegi di accesso ai documenti, la mod
 
 * Se il documento è online e chiuso, la modifica ha effetto alla successiva sincronizzazione del destinatario con la protezione dei documenti tramite l’apertura di un documento protetto tramite policy.
 * Se il documento è online e aperto, la modifica ha effetto quando il destinatario chiude il documento.
-* Se il documento è offline (in uso senza una connessione Internet, ad esempio su un laptop), la modifica ha effetto alla successiva sincronizzazione del destinatario con la protezione dei documenti.
+* Se il documento è offline, ovvero utilizzato senza una connessione Internet, ad esempio su un laptop, la modifica ha effetto alla successiva sincronizzazione del destinatario con la protezione dei documenti.
 
 **Revoca dell’accesso a un documento protetto tramite policy**
 

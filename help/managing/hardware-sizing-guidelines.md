@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2833'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ A scopo di benchmarking, Adobe ha sviluppato alcuni test di benchmark per le ist
 Calcola la velocità effettiva massima di un profilo di caricamento in cui gli utenti eseguono un semplice esercizio di creazione pagina sopra un carico di base di 300 pagine esistenti tutte di natura simile. I passaggi necessari consistevano nell’accedere al sito, creare una pagina con un SWF e un’immagine o un testo, aggiungere un tag cloud e attivare la pagina.
 
    * **Risultato**
-La velocità effettiva massima per un semplice esercizio di creazione di pagine come quello precedente (considerato come una transazione) è risultata pari a 1730 transazioni/ora.
+La velocità effettiva massima per un semplice esercizio di creazione delle pagine come quello precedente, considerato come una transazione, è di 1730 transazioni/ora.
 
 * **Prova di riferimento 2**
 Calcola la velocità effettiva massima quando il profilo di caricamento presenta un mix di creazione di nuove pagine (10%), modifica di una pagina esistente (80%) e creazione, quindi modifica di una pagina in successione (10%). La complessità delle pagine rimane la stessa del profilo del test di riferimento 1. La modifica di base della pagina viene eseguita aggiungendo un’immagine e modificando il contenuto del testo. Anche in questo caso, l’esercizio è stato eseguito in aggiunta a un carico di base di 300 pagine della stessa complessità definita nel test di riferimento 1.
@@ -153,7 +153,7 @@ Per tali scenari, Adobe ha eseguito test di benchmark su un cluster a due nodi c
 Con un cluster active-active shared-Nothing di 2 istanze di authoring, calcola la velocità effettiva massima con un profilo di caricamento in cui gli utenti eseguono un semplice esercizio di creazione pagina sopra un carico di base di 300 pagine esistenti, tutte di natura simile.
 
    * **Risultato**
-Il throughput massimo per un semplice esercizio di creazione di pagine, ad esempio considerato come una singola transazione, è pari a 2016 transazioni/ora. Si tratta di un aumento di circa il 16% rispetto a un’istanza Autore indipendente per lo stesso test di benchmark.
+La velocità effettiva massima per un semplice esercizio di creazione delle pagine, come quello di cui sopra, considerato come una transazione, è pari a 2016 transazioni/ora. Si tratta di un aumento di circa il 16% rispetto a un’istanza Autore indipendente per lo stesso test di benchmark.
 
 * **Prova comparativa 2b**
 Con un cluster active-active shared-Nothing di 2 istanze di authoring, calcola la velocità effettiva massima quando il profilo di caricamento presenta un mix di creazione di pagine nuove (10%), modifica di pagine esistenti (80%) e creazione e modifica di una pagina in successione (10%). La complessità della pagina rimane la stessa del profilo del test benchmark 1. La modifica di base della pagina viene eseguita aggiungendo un’immagine e modificando il contenuto del testo. Anche in questo caso, l’esercizio è stato eseguito in aggiunta a un carico di base di 300 pagine di complessità, come definito nel test di riferimento 1.

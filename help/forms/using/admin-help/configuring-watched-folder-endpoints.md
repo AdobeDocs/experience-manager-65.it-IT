@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '7173'
+source-wordcount: '7192'
 ht-degree: 0%
 
 ---
@@ -239,8 +239,8 @@ L&#39;output della cartella controllata può essere un singolo documento, un ele
 
 Gli amministratori possono specificare il tipo di file che può richiamare un servizio. È possibile stabilire più pattern di file per ogni cartella controllata. Un modello di file può essere rappresentato da una delle seguenti proprietà:
 
-* File con estensioni di file specifiche, ad esempio &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf,;
-* File con nomi specifici, ad esempio dati.&amp;ast;
+* File con estensioni specifiche. Ad esempio, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* File con nomi specifici. Ad esempio, i dati.&amp;ast;
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
    * Dati[0-9][0-9][0-9].[dD][aA]&#39;porta&#39;

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '383'
 ht-degree: 47%
 
 ---
@@ -79,7 +79,7 @@ Inoltre, le scelte rapide da tastiera sono le stesse per tutte le lingue e i lay
 
 ## Disattivazione delle scelte rapide da tastiera {#deactivating-keyboard-shortcuts}
 
-AEM fornisce scelte rapide da tastiera per alcune delle funzioni comunemente utilizzate (modifica, proprietà, copia/incolla, visualizzazione di vari menu della barra laterale e così via).
+AEM fornisce scelte rapide da tastiera per alcune delle funzioni comunemente utilizzate (modifica, proprietà, copia/incolla, visualizzazione dei menu delle barre laterali e così via).
 
 Per gli utenti che non utilizzano scelte rapide da tastiera o che hanno determinati requisiti di accessibilità, tutte le scelte rapide da tastiera possono essere disattivate.
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6904'
+source-wordcount: '6905'
 ht-degree: 0%
 
 ---
@@ -207,7 +207,7 @@ La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi str
 
 ## Elenco {#list}
 
-Un elenco è un gruppo di frammenti di documenti, inclusi testo, (altri) elenchi, condizioni e immagini. L’ordine degli elementi dell’elenco può essere fisso o modificabile. Durante la creazione di una lettera, potete utilizzare alcuni o tutti gli elementi dell&#39;elenco per replicare un pattern di elementi riutilizzabile. Gli elenchi si comportano fondamentalmente come destinazioni che possono essere nidificate all’interno di altre destinazioni.
+Un elenco è un gruppo di frammenti di documenti, inclusi testo o altri elenchi, condizioni e immagini. L’ordine degli elementi dell’elenco può essere fisso o modificabile. Durante la creazione di una lettera, potete utilizzare alcuni o tutti gli elementi dell&#39;elenco per replicare un pattern di elementi riutilizzabile. Gli elenchi si comportano fondamentalmente come destinazioni che possono essere nidificate all’interno di altre destinazioni.
 
 ### Implementazione degli elenchi {#implementing-lists}
 

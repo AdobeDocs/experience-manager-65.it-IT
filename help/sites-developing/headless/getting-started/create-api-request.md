@@ -2,10 +2,10 @@
 title: Guida rapida all’accesso e alla distribuzione di frammenti di contenuto headless
 description: Scopri come utilizzare l’API REST di AEM Assets per gestire i frammenti di contenuto e l’API GraphQL per la distribuzione headless dei contenuti di frammenti di contenuto.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 45%
+ht-degree: 40%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri come utilizzare l’API REST di AEM Assets per gestire i frammenti di con
 
 [Dopo aver creato alcuni frammenti di contenuto,](create-content-fragment.md) puoi utilizzare le API AEM per distribuirle senza problemi.
 
-* L’[API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* [API di GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto.
    * Per utilizzare questo, [gli endpoint devono essere definiti e abilitati in AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)e, se necessario, [Interfaccia GraphiQL installata](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [API REST di Assets](/help/assets/assets-api-content-fragments.md) consente di creare e modificare frammenti di contenuto (e altre risorse).
 
@@ -25,10 +25,10 @@ Il resto di questa guida è incentrato sull’accesso a GraphQL e sulla distribu
 
 ## Come distribuire un frammento di contenuto con GraphQL {#how-to-deliver-a-content-fragment}
 
-Gli architetti di informazioni devono progettare query per gli endpoint di canale per distribuire i contenuti. Queste query devono essere considerate solo una volta per endpoint per modello. Ai fini di questa guida introduttiva, è sufficiente crearne una.
+Gli architetti di informazioni devono progettare query per gli endpoint di canale per distribuire i contenuti. Queste query devono essere considerate solo una volta per endpoint per modello. Ai fini di questa guida introduttiva, è necessario crearne una sola.
 
 1. Accedi all’AEM e accedi a [Interfaccia GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
-   * Esempio: `http://<host>:<port>/aem/graphiql.html`.
+   * Ad esempio: `http://<host>:<port>/aem/graphiql.html`.
 
 1. GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto e distribuirli senza problemi come JSON.
    * Il pannello a sinistra consente di creare la query.

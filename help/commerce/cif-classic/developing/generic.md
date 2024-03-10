@@ -3,9 +3,9 @@ title: Sviluppo (generico)
 description: Il framework di integrazione include un livello di integrazione con un’API che consente di creare componenti AEM per le funzionalità di eCommerce.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1856'
 ht-degree: 0%
 
 ---
@@ -320,7 +320,7 @@ public class AxisFilter implements VariantFilter {
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
 
-**Archiviazione**
+**Storage**
 
 * Archiviazione
 
@@ -471,7 +471,7 @@ Il punto di ingresso per l’API di ricerca è `CommerceService#search` che rest
 
    * Il ClientContext `SegmentMgr` risolve segmenti e ClientContext `CartMgr` risolve le promozioni. Ogni promozione soggetta ad almeno un segmento risolto viene attivata.
 
-      * Le promozioni attivate vengono rimandate al server tramite una chiamata AJAX per ricalcolare il carrello.
+      * Le Promozioni Attivate vengono rimandate al server tramite una chiamata AJAX per ricalcolare il carrello.
       * Nel pannello ClientContext vengono visualizzate anche le promozioni attivate (e i voucher aggiunti).
 
 L&#39;aggiunta/rimozione di un voucher da un carrello viene eseguita tramite `CommerceSession` API:
