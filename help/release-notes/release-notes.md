@@ -3,10 +3,10 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: a0ad6c5d61a971c5210f7d6dd7ef85e5effab44a
+source-git-commit: 4889c3c36ec86b1c9527cd2bc5eb77984e278342
 workflow-type: tm+mt
-source-wordcount: '3765'
-ht-degree: 2%
+source-wordcount: '3694'
+ht-degree: 1%
 
 ---
 
@@ -462,26 +462,12 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
 ### Problemi noti per AEM Forms {#known-issues-aem-forms-6520}
 
-* Dopo l’aggiornamento da AEM 6.5 Forms Service Pack 18 (6.5.18.0) o AEM 6.5 Forms Service Pack 19 (6.5.19.0) a AEM 6.5 Forms Service Pack 20 (6.5.20.0), gli utenti riscontrano un errore di compilazione JSP. Non possono aprire o creare moduli adattivi e si verificano errori con altre interfacce AEM come l’editor di pagine, l’interfaccia utente di AEM Forms e l’editor di flussi di lavoro AEM. Viene visualizzato un messaggio di errore simile al seguente:
-
-  `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
-
-  Per risolvere il problema:
-
-   1. Scarica l’hotfix per il sistema operativo in uso:
-      * [Hotfix per Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
-      * [Hotfix per Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-      * [Hotfix per Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
-
-   1. Carica e installa il pacchetto (.zip) tramite [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
-   1. Riavvia il server AEM e verifica lo stato di attivazione di tutti i bundle al termine del processo di riavvio. Puoi monitorare lo stato dei bundle accedendo a: `https://server:host/system/console/bundles`. Assicurati che tutti i bundle siano attivi prima di procedere con altre attività.
-
 * Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. (CQDOC-21355)
 * Forms adattivo consente di utilizzare funzioni personalizzate con ECMAScript versione 5 o precedente. Quando una funzione personalizzata utilizza ECMAScript versione 6 o successiva, ad esempio le funzioni &#39;let&#39;, &#39;const&#39; o freccia, è possibile che l&#39;editor di regole non si apra correttamente.
-* Gli utenti non possono creare una lettera di Gestione della corrispondenza. Quando un utente crea una lettera, viene visualizzato un errore con la descrizione &quot;Oggetto oggetto&quot; e la lettera non viene creata. Non è possibile caricare le miniature per i layout nemmeno nella schermata di creazione della lettera. (FORMS-13496)
-* Il servizio di comunicazione interattiva crea il documento PDF, ma i dati dell&#39;utente non vengono inseriti automaticamente nei campi del modulo. Il servizio di preriempimento non funziona come previsto. (FORMS-13413, FORMS-13493)
-* Impossibile caricare l&#39;editor di revisione e correzione (RnC) del servizio di automated forms conversion. (FORMS-13491)
-* Dopo l’aggiornamento da AEM 6.5 Forms Service Pack 18 (6.5.18.0) o AEM 6.5 Forms Service Pack 19 (6.5.19.0) a AEM 6.5 Forms Service Pack 20 (6.5.20.0), gli utenti riscontrano un errore di compilazione JSP. Non possono aprire o creare moduli adattivi e si verificano errori con altre interfacce AEM come l’editor di pagine, l’interfaccia utente di AEM Forms e l’editor di flussi di lavoro AEM. (FORMS-13492)
+* Gli utenti non possono creare una lettera di Gestione della corrispondenza. Quando un utente crea una lettera, viene visualizzato un errore con la descrizione &quot;Oggetto oggetto&quot; e la lettera non viene creata. Non è possibile caricare le miniature per i layout nemmeno nella schermata di creazione della lettera. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13496)
+* Il servizio di comunicazione interattiva crea il documento PDF, ma i dati dell&#39;utente non vengono inseriti automaticamente nei campi del modulo. Il servizio di preriempimento non funziona come previsto. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13413, FORMS-13493)
+* Impossibile caricare l&#39;editor di revisione e correzione (RnC) del servizio di automated forms conversion. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13491)
+* Dopo l’aggiornamento da AEM 6.5 Forms Service Pack 18 (6.5.18.0) o AEM 6.5 Forms Service Pack 19 (6.5.19.0) a AEM 6.5 Forms Service Pack 20 (6.5.20.0), gli utenti riscontrano un errore di compilazione JSP. Non possono aprire o creare moduli adattivi e si verificano errori con altre interfacce AEM come l’editor di pagine, l’interfaccia utente di AEM Forms e l’editor di flussi di lavoro AEM. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13492)
 
 Per risolvere i problemi sopra descritti, è possibile installare la versione più recente di Forms Service Pack per AEM 6.5.  Di seguito sono riportati i collegamenti diretti per i sistemi operativi supportati:
 * [AEM 6.5 Forms Service Pack 20 per Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
