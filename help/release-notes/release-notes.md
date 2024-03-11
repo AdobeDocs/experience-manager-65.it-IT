@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4889c3c36ec86b1c9527cd2bc5eb77984e278342
+source-git-commit: 31ad82fca920efcb1c5f4b56673928754a2d1763
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3640'
 ht-degree: 1%
 
 ---
@@ -469,10 +469,11 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 * Impossibile caricare l&#39;editor di revisione e correzione (RnC) del servizio di automated forms conversion. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13491)
 * Dopo l’aggiornamento da AEM 6.5 Forms Service Pack 18 (6.5.18.0) o AEM 6.5 Forms Service Pack 19 (6.5.19.0) a AEM 6.5 Forms Service Pack 20 (6.5.20.0), gli utenti riscontrano un errore di compilazione JSP. Non possono aprire o creare moduli adattivi e si verificano errori con altre interfacce AEM come l’editor di pagine, l’interfaccia utente di AEM Forms e l’editor di flussi di lavoro AEM. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13492)
 
-Per risolvere i problemi sopra descritti, è possibile installare la versione più recente di Forms Service Pack per AEM 6.5.  Di seguito sono riportati i collegamenti diretti per i sistemi operativi supportati:
-* [AEM 6.5 Forms Service Pack 20 per Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
-* [AEM 6.5 Forms Service Pack 20 per Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
-* [AEM 6.5 Forms Service Pack 20 per Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
+<!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
+* [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 for Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 for Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
+-->
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 
