@@ -1,18 +1,19 @@
 ---
-title: Report transazioni API fatturabili
+title: API fatturabili per rapporti sulle transazioni
 description: Elenco di tutte le API contabilizzate come transazioni
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1739'
 ht-degree: 7%
 
 ---
 
-# Report transazioni API fatturabili{#transaction-reports-billable-apis}
+# Rapporti sulle transazioni API fatturabili per AEM Forms su OSGi {#transaction-reports-billable-apis}
 
 AEM Forms fornisce diverse API per inviare moduli, elaborare documenti ed eseguire il rendering di documenti. Alcune API sono contabilizzate come transazioni e altre sono libere di utilizzare. Questo documento fornisce un elenco di tutte le API contabilizzate come transazioni in un report sulle transazioni. Di seguito sono riportati alcuni scenari comuni in cui viene utilizzata un’API fatturabile:
 
@@ -500,6 +501,6 @@ Azioni come l’invio di un modulo PDF, l’utilizzo dell’interfaccia utente d
 
 ## Articoli correlati {#related-articles}
 
-* [Panoramica dei rapporti sulle transazioni](../../forms/using/transaction-reports-overview.md)
-* [Visualizzazione e comprensione dei rapporti sulle transazioni](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Registrare una transazione per le implementazioni personalizzate](/help/forms/using/record-transaction-custom-implementation.md)
+* [Panoramica dei rapporti sulle transazioni per AEM Forms su OSGi](../../forms/using/transaction-reports-overview.md)
+* [Visualizzazione e comprensione dei rapporti sulle transazioni per AEM Forms su OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [Registrare una transazione per le implementazioni personalizzate per AEM Forms su OSGi](/help/forms/using/record-transaction-custom-implementation.md)

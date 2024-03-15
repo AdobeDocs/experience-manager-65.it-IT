@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
 
-# Visualizzazione e comprensione dei rapporti sulle transazioni{#viewing-and-understanding-transaction-reports}
+# Visualizzazione e informazioni sui rapporti sulle transazioni per AEM Forms su OSGi{#viewing-and-understanding-transaction-reports}
 
 I rapporti sulle transazioni consentono di acquisire e registrare il numero di moduli inviati, documenti elaborati e documenti sottoposti a rendering. L&#39;obiettivo del tracciamento di queste transazioni è prendere una decisione informata sull&#39;utilizzo del prodotto e riequilibrare gli investimenti in hardware e software. Per ulteriori informazioni, consulta [Panoramica dei rapporti sulle transazioni di AEM Forms](../../forms/using/transaction-reports-overview.md).
 
@@ -63,7 +63,7 @@ La replica inversa copia i dati della transazione nella casella in uscita predef
 
 1. Accedi alle istanze di authoring come amministratore. Vai a **Strumenti** > **Operazioni** > **Console web**.
 1. Individuare e aprire **Provider archiviazione archivio transazioni Forms** servizio.
-1. Specifica il nome della casella in uscita personalizzata **Caselle in uscita** campo. Clic **Salva**. Viene creata una casella in uscita con il nome specificato in tutte le istanze di authoring.
+1. Specifica il nome della casella in uscita personalizzata **Caselle in uscita** campo. Fai clic su **Salva**. Viene creata una casella in uscita con il nome specificato in tutte le istanze di authoring.
 
 ## Visualizzazione del report delle transazioni {#viewing-the-transaction-report}
 
@@ -88,6 +88,6 @@ Nella generazione rapporti sulle transazioni vengono inserite tutte le informazi
 
 ## Articoli correlati {#related-articles}
 
-* [Panoramica dei rapporti sulle transazioni](../../forms/using/transaction-reports-overview.md)
-* [Report transazioni API fatturabili](../../forms/using/transaction-reports-billable-apis.md)
-* [Registrare una transazione per le implementazioni personalizzate](/help/forms/using/record-transaction-custom-implementation.md)
+* [Panoramica dei rapporti sulle transazioni per AEM Forms su OSGi](../../forms/using/transaction-reports-overview.md)
+* [Rapporti sulle transazioni API fatturabili per AEM Forms su OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Registrare una transazione per le implementazioni personalizzate per AEM Forms su OSGi](/help/forms/using/record-transaction-custom-implementation.md)
