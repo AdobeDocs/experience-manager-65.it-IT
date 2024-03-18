@@ -3,9 +3,9 @@ title: Requisiti tecnici
 description: Elenco delle piattaforme client e server supportate per Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
+source-git-commit: b9a5b6f8f990a9dd0fcf77ea3972ad0c6f401831
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3652'
 ht-degree: 1%
 
 ---
@@ -202,7 +202,7 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | Oracle Solaris™ 11 | Z: non supportato |
 | IBM® AIX® 7.2 | Z: non supportato |
 
-1. Kernel Linux® 2.6, 3. x, 4. x e 5. x include derivati dalla distribuzione Red Hat®, tra cui Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®. Le funzioni del componente aggiuntivo AEM Forms sono supportate solo su CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
+1. Kernel Linux® 2.6, 3. x, 4. x, 5. x e 6. x include derivati dalla distribuzione Red Hat®, tra cui Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®. Le funzioni del componente aggiuntivo AEM Forms sono supportate solo su CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
 1. AEM Forms è supportato su Ubuntu 20.04 LTS.
 1. Distribuzione Linux® supportata da Adobe Managed Services.
 
@@ -244,9 +244,9 @@ Per raccomandazioni su come distribuire l’AEM in Azure o AWS, al di fuori di A
 
 ### Piattaforme di Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). L’Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
+Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
-I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4.3.2:
+I seguenti server Web sono supportati per l&#39;utilizzo con Dispatcher versione 4.3.2:
 
 | Platform | Livello di supporto |
 |---|---|
@@ -254,7 +254,7 @@ I seguenti server web sono supportati per l’utilizzo con Dispatcher versione 4
 | Microsoft® IIS 10 (Internet Information Server) | R: Supportato |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: Non supportato |
 
-1. I server Web costruiti sulla base del codice sorgente httpd di Apache hanno lo stesso supporto della versione di httpd su cui è basato. In caso di dubbi, chiedere all&#39;Adobe di confermare il livello di supporto relativo al rispettivo prodotto server. I seguenti casi:
+1. I server web generati in base al codice sorgente httpd di Apache supportano sia la versione di httpd su cui si basa. In caso di dubbi, chiedere all&#39;Adobe di confermare il livello di supporto relativo al rispettivo prodotto server. I seguenti casi:
 
    1. Il server HTTP è stato creato utilizzando solo le distribuzioni di origine ufficiali di Apache oppure
    1. Il server HTTP è stato distribuito come parte del sistema operativo in cui è in esecuzione. Esempi: IBM® HTTP Server, Oracle HTTP Server
@@ -303,7 +303,7 @@ L’interfaccia utente AEM è ottimizzata per schermi più grandi (in genere not
    <td>R: Supportato</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox ultima ESR [1]</td>
+   <td>Mozilla Firefox ultimo ESR [1]</td>
    <td>R: Supportato</td>
    <td>R: Supportato</td>
   </tr>
@@ -330,7 +330,7 @@ L’interfaccia utente AEM è ottimizzata per schermi più grandi (in genere not
  </tbody>
 </table>
 
-1. Supporto esteso per Firefox [Ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Versione di supporto estesa di Firefox [Scopri ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. supporto per Apple iPad
 
 ### Browser supportati per i siti Web {#supported-browsers-for-websites}
@@ -409,11 +409,11 @@ Se utilizzi Dynamic Medie su Linux®, è necessario soddisfare i seguenti prereq
 
 >[!NOTE]
 >
->**Architettura NUMA:** i sistemi con processori con AMD64 e Intel® EM64T sono in genere configurati come piattaforme NUMA (Non-Uniform Memory Architecture). Cioè, il kernel costruisce più nodi di memoria al momento dell&#39;avvio piuttosto che costruire un singolo nodo di memoria.
+>**Architettura NUMA:** i sistemi con processori con AMD64 e Intel® EM64T sono in genere configurati come piattaforme NUMA (Non-Uniform Memory Architecture). In altre parole, il kernel costruisce più nodi di memoria in fase di avvio anziché costruire un singolo nodo di memoria.
 >
->Il costrutto a nodi multipli può causare l&#39;esaurimento della memoria su uno o più nodi prima che altri si esauriscano. Quando si verifica esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server immagini o il server di Platform) anche se è disponibile memoria.
+>Il costrutto a più nodi può causare esaurimento della memoria su uno o più nodi prima che gli altri nodi si esauriscano. Quando si verifica esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server immagini o il server di Platform) anche se è disponibile memoria.
 >
->Pertanto, Adobe consiglia di disattivare NUMA utilizzando il **numa=off** opzione di avvio per evitare che il kernel uccida questi processi.
+>Pertanto, Adobe Systems consiglia che se si esegue un sistema di questo tipo si disattivi NUMA utilizzando l&#39;opzione di **avvio numa=off** per evitare che il kernel uccida questi processi.
 
 >[!NOTE]
 >
@@ -438,7 +438,7 @@ Per Windows x86:
 
 * Ottieni Microsoft® Visual Studio 2010 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Ottieni Microsoft® Visual Studio 2013 ridistribuibile in [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* Ottieni Microsoft® Visual Studio 2015 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* Ottieni Microsoft® Visual Studio 2015 Redistributable su [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### macOS {#macos}
 
@@ -522,13 +522,13 @@ Per Windows x86:
 
 ### Requisiti di AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft Windows 2016 Server, Microsoft Windows 2019 Server, Microsoft®®® Windows 10 o Windows®®®® 11
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
 * Processore da 1 GHz o superiore con supporto per PAE, NX e SSE2.
 * 1 GB di RAM per 32 bit o 2 GB di RAM per sistema operativo a 64 bit
 * 16 GB di spazio su disco per 32 bit o 20 GB di spazio su disco per sistema operativo a 64 bit
 * Memoria grafica - 128 MB di GPU (consigliati 256 MB)
 * 2,35 GB di spazio disponibile su disco rigido
-* Risoluzione di 1024 X 768 pixel o superiore
+* Risoluzione dello schermo pari o superiore a 1024 x 768 pixel
 * Video accelerazione hardware (opzionale)
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 * Privilegi amministrativi per installare Designer
@@ -537,7 +537,7 @@ Per Windows x86:
 
 [Installare e configurare AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
-### Requisiti per AEM Assets XMP metadati write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
+### Requisiti per il write-back dei metadati dell’XMP di AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP write-back è supportato e abilitato per le piattaforme e i formati di file seguenti:
 
@@ -548,8 +548,8 @@ XMP write-back è supportato e abilitato per le piattaforme e i formati di file 
    * Windows Server
    * macOS X (64 bit)
 
-* **Formati di file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
+* **File formati**: JPEG, PNG, TIFF, PDF, INDD, AI ed EPS.
 
 ### Requisiti per AEM Assets per elaborare metadati risorse pesanti su Linux® {#assetsonlinux}
 
-Il processo XMPFilesProcessor richiede il funzionamento di libreria GLIBC_2.14. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio Linux® versione 3.1.x. Migliora le prestazioni per l’elaborazione delle risorse che contengono una grande quantità di metadati, come i file PSD. L’utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Il processo XMPFilesProcessor richiede il funzionamento della libreria GLIBC_2.14. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio Linux® versione 3.1.x. Migliora le prestazioni per l’elaborazione delle risorse che contengono una grande quantità di metadati, come i file PSD. L’utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
