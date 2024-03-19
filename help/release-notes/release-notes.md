@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 31ad82fca920efcb1c5f4b56673928754a2d1763
+source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
 workflow-type: tm+mt
-source-wordcount: '3640'
+source-wordcount: '3688'
 ht-degree: 1%
 
 ---
@@ -202,6 +202,9 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 * Quando un utente seleziona &quot;Microsoft SharePoint&quot; durante l’esecuzione del gestore della configurazione in AEM Forms 6.5.19.1 con la configurazione JBoss® Turnkey, l’installazione del LiveCycle JBoss® EAR non riesce e viene visualizzato il seguente errore: (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
+
+* Quando un utente crea un frammento di documento utilizzando il modello dati del modulo in AEM Forms Service Pack 6.5.19.0, i nomi delle variabili appaiono non definiti nel pannello laterale, ma vengono visualizzati quando vengono rilasciati nel pannello del modulo o quando si fa clic su di essi. (FORMS-13238)
+
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
