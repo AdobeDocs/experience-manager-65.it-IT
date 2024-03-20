@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '917'
 ht-degree: 1%
 
 ---
@@ -54,7 +55,7 @@ Per creare un modulo di iscrizione e configurarlo per gli abbonamenti alle maili
    >
    >La finestra di dialogo può variare a seconda del provider di servizi di posta elettronica.
 
-1. In **Modulo** , selezionare la pagina di ringraziamento alla quale si desidera che gli utenti accedano dopo aver inviato il modulo. Se il campo viene lasciato vuoto, il modulo verrà nuovamente visualizzato dopo l&#39;invio. Fai clic su **OK**. Un **ID e-mail** Il componente viene visualizzato nel modulo, che consente di creare un modulo in cui gli utenti possono inviare i propri indirizzi e-mail per iscriversi o annullare l’iscrizione a una mailing list.
+1. In **Modulo** , selezionare la pagina di ringraziamento alla quale si desidera che gli utenti accedano dopo aver inviato il modulo. Se il campo viene lasciato vuoto, il modulo verrà nuovamente visualizzato dopo l&#39;invio. Clic **OK**. Un **ID e-mail** Il componente viene visualizzato nel modulo, che consente di creare un modulo in cui gli utenti possono inviare i propri indirizzi e-mail per iscriversi o annullare l’iscrizione a una mailing list.
 1. Aggiungi il **Invia** componente pulsante da **Modulo** sezione nella barra laterale.
 
    Modulo pronto. Pubblica la pagina configurata nei passaggi precedenti insieme alla **grazie** all’istanza Publish. Tutti i potenziali abbonati che visitano la pagina possono compilare il modulo e iscriversi all’elenco fornito nella configurazione.

@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 2%
@@ -251,7 +252,7 @@ Tutti i widget personalizzati devono essere conformi alle specifiche precedenti.
    <td><p>Numero di stati consentiti. </p> <p>Due per i moduli adattivi (On, Off) e tre per i moduli HTML5 (On, Off, Neutral).</p> </td>
   </tr>
   <tr>
-   <td>stadio</td>
+   <td>stato</td>
    <td><p>Stato corrente dell'elemento.</p> <p>Due per i moduli adattivi (On, Off) e tre per i moduli HTML5 (On, Off, Neutral).</p> </td>
   </tr>
  </tbody>

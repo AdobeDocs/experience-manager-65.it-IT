@@ -1,15 +1,16 @@
 ---
 title: Segmentazione durante la creazione di una campagna
-description: La segmentazione è un concetto chiave per la creazione di una campagna.
+description: La segmentazione è un fattore chiave per la creazione di una campagna.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 56%
+source-wordcount: '546'
+ht-degree: 46%
 
 ---
 
@@ -45,10 +46,10 @@ Quando si parla di segmentazione, viene spesso utilizzata la seguente terminolog
 
 **Caratteristiche comportamentali**: le caratteristiche comportamentali fanno riferimento al comportamento di un visitatore sul sito web. Comprendono:
 
-* Interesse nel sito web, inclusi pagine visitate e prodotti acquistati.
+* Interesse nel tuo sito web, incluse le pagine visitate e i prodotti acquistati.
 * Interesse nel sito web di provenienza, inclusi termini di ricerca utilizzati o annunci pubblicitari su cui è stato fatto clic.
-* Interesse in altri siti; questo viene determinato tramite strumenti quali Spyjax.
-* Fedeltà del visitatore; durata e frequenza delle visite.
+* Interesse su altri siti; determinato utilizzando strumenti come Spyjax.
+* Fedeltà del visitatore; durata della visita, frequenza delle visite.
 
 **Caratteristiche demografiche**: caratteristiche specifiche della popolazione selezionata, tra cui:
 

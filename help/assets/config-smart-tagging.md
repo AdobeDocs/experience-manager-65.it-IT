@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2244'
-ht-degree: 31%
+source-wordcount: '2227'
+ht-degree: 27%
 
 ---
 
@@ -24,12 +25,12 @@ Prima di poter iniziare a assegnare tag alle risorse tramite Smart Content Servi
 
 Prima di utilizzare il Servizio di contenuti avanzati, verifica quanto segue:
 
-* [Integrare con Adobe Developer Console](#integrate-adobe-io).
+* [Integrare con la console Adobe Developer](#integrate-adobe-io).
 * [Formazione del Servizio di contenuti avanzati](#training-the-smart-content-service).
 
 * Installa la versione più recente [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it).
 
-## Integrare con Adobe Developer Console {#integrate-adobe-io}
+## Integrare con la console Adobe Developer {#integrate-adobe-io}
 
 Quando si integra con la console Adobe Developer, il [!DNL Experience Manager] Il server di autentica le credenziali del servizio con il gateway della console Adobe Developer prima di inoltrare la richiesta al Servizio di contenuti avanzati. Per l’integrazione, è necessario un account Adobe ID con privilegi di amministratore per l’organizzazione e una licenza del Servizio di contenuti avanzati acquistata e abilitata per la tua organizzazione.
 
@@ -59,7 +60,7 @@ Un certificato pubblico consente di autenticare il profilo sulla console Adobe D
 
    **[!UICONTROL URL servizio]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Esempio: `https://smartcontent.adobe.io/apac`. È possibile specificare `na`, `emea`, o, `apac` come aree geografiche in cui è ospitata l’istanza Autore Experience Manager.
+   Ad esempio: `https://smartcontent.adobe.io/apac`. È possibile specificare `na`, `emea`, o, `apac` come aree geografiche in cui è ospitata l’istanza Autore Experience Manager.
 
    >[!NOTE]
    >
@@ -88,7 +89,7 @@ Un certificato pubblico consente di autenticare il profilo sulla console Adobe D
 
 #### Riconfigura alla scadenza di un certificato {#certrenew}
 
-Dopo la scadenza, il certificato non è più attendibile. Non è possibile rinnovare un certificato scaduto. Per aggiungere un certificato, segui la procedura riportata di seguito.
+Dopo la scadenza, il certificato non è più attendibile. Impossibile rinnovare un certificato scaduto. Per aggiungere un certificato, segui la procedura riportata di seguito.
 
 1. Accedi alla tua implementazione di [!DNL Experience Manager] come amministratore. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Utenti]**.
 
@@ -123,7 +124,7 @@ Per utilizzare le API del Servizio di contenuti avanzati, crea un’integrazione
 
 1. Fai clic su **[!UICONTROL Avanti]**.
 
-1. Nella pagina per la **[!UICONTROL selezione dei profili di prodotto]**, seleziona **[!UICONTROL Servizi di contenuti avanzati]**. Fai clic su **[!UICONTROL Salva API configurata]**.
+1. Nella pagina per la **[!UICONTROL selezione dei profili di prodotto]**, seleziona **[!UICONTROL Servizi di contenuti avanzati]**. Clic **[!UICONTROL Salva API configurata]**.
 
    In una pagina vengono visualizzate ulteriori informazioni sulla configurazione. Tieni aperta questa pagina per copiare e aggiungere questi valori in [!UICONTROL Impostazioni servizio assegnazione tag avanzati risorse] della configurazione cloud in [!DNL Experience Manager] per configurare i tag avanzati.
 
@@ -144,9 +145,9 @@ Per configurare l’integrazione, utilizza i valori di [!UICONTROL ID ACCOUNT TE
 
 1. Per i campi [!UICONTROL Chiave Api], [!UICONTROL ID account tecnico], [!UICONTROL ID organizzazione], e [!UICONTROL Segreto client], copia e utilizza i seguenti valori generati in [Integrazione con la console Adobe Developer](#create-adobe-i-o-integration).
 
-   | [!UICONTROL Impostazioni servizio tag avanzati di Assets] | [!DNL Adobe Developer Console] campi di integrazione |
+   | [!UICONTROL Impostazioni servizio assegnazione tag avanzati risorse] | [!DNL Adobe Developer Console] campi di integrazione |
    |--- |--- |
-   | [!UICONTROL Chiave API] | [!UICONTROL ID CLIENT] |
+   | [!UICONTROL Chiave Api] | [!UICONTROL ID CLIENT] |
    | [!UICONTROL ID account tecnico] | [!UICONTROL ID ACCOUNT TECNICO] |
    | [!UICONTROL ID organizzazione] | [!UICONTROL ID ORGANIZZAZIONE] |
    | [!UICONTROL Segreto client] | [!UICONTROL SEGRETO CLIENT] |
@@ -177,7 +178,7 @@ I risultati della convalida vengono visualizzati nella stessa finestra di dialog
 
    ![Aggiungi il passaggio Risorsa di tag avanzati dopo il passaggio Elabora miniature nel flusso di lavoro Aggiorna risorsa DAM](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *Figura: Aggiungi il passaggio Risorsa di tag avanzati dopo il passaggio Elabora miniature nel flusso di lavoro Aggiorna risorsa DAM.*
+   *Figura: Aggiungere il passaggio Risorsa di tag avanzati dopo il passaggio Elabora miniature in [!UICONTROL Aggiorna risorsa DAM] flusso di lavoro.*
 
 1. Apri il passaggio in modalità di modifica. In **[!UICONTROL Impostazioni avanzate]**, accertati che sia selezionata l’opzione **[!UICONTROL Avanzamento gestore]**.
 
@@ -200,7 +201,7 @@ I risultati della convalida vengono visualizzati nella stessa finestra di dialog
 
    *Figura: Configurare il flusso di lavoro Risorsa di aggiornamento DAM per aggiungere il passaggio di tag avanzati e selezionare Ignora flag di tag avanzati.*
 
-1. Fai clic su **[!UICONTROL OK]** per chiudere il passaggio del processo, quindi salva il flusso di lavoro.
+1. Clic **[!UICONTROL OK]** per chiudere il passaggio del processo, quindi salvare il flusso di lavoro.
 
 ## Formazione del Servizio di contenuti avanzati {#training-the-smart-content-service}
 
@@ -238,7 +239,7 @@ Ad esempio, per il tag *casual-shoe*, la seconda immagine non è un buon candida
 
 ![Immagini illustrative che illustrano le linee guida per la formazione](/help/assets/assets/do-not-localize/distraction.png)
 
-**Completeness (Completezza):** se un’immagine è idonea per più tag, aggiungi tutti i tag applicabili prima di includere l’immagine nella formazione. Ad esempio, per tag quali `raincoat` e `model-side-view`, aggiungi entrambi i tag alla risorsa idonea prima di includerla nella formazione.
+**Completeness (Completezza):** se un’immagine è idonea per più tag, aggiungi tutti i tag applicabili prima di includere l’immagine nella formazione. Ad esempio, per i tag, come `raincoat` e `model-side-view`, aggiungi entrambi i tag alla risorsa idonea prima di includerla nella formazione.
 
 ![Immagini illustrative che illustrano le linee guida per la formazione](/help/assets/assets/do-not-localize/completeness.png)
 

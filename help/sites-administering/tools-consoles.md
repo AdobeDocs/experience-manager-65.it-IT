@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 30%
+ht-degree: 26%
 
 ---
 
@@ -283,7 +284,7 @@ Il **Strumenti** Le console consentono di accedere a diversi strumenti specifici
   </tr>
   <tr>
    <td> </td>
-   <td>Configurazione Dynamic Media<br /> </td>
+   <td>Configurazione Dynamic Medie<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -303,7 +304,7 @@ Il **Strumenti** Le console consentono di accedere a diversi strumenti specifici
   </tr>
   <tr>
    <td> </td>
-   <td>Configurazione accesso social network tramite Facebook<br /> </td>
+   <td>Configurazione accesso social network tramite facebook<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -311,7 +312,7 @@ Il **Strumenti** Le console consentono di accedere a diversi strumenti specifici
   </tr>
   <tr>
    <td> </td>
-   <td>Configurazione accesso social network tramite Pinterest<br /> </td>
+   <td>Configurazione accesso social network tramite pinterest<br /> </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -319,7 +320,7 @@ Il **Strumenti** Le console consentono di accedere a diversi strumenti specifici
   </tr>
   <tr>
    <td> </td>
-   <td>Configurazione archiviazione</td>
+   <td>Configurazione di archiviazione</td>
   </tr>
   <tr>
    <td> </td>
@@ -335,7 +336,7 @@ Il **Strumenti** Le console consentono di accedere a diversi strumenti specifici
   </tr>
   <tr>
    <td> </td>
-   <td>Modelli per siti<br /> </td>
+   <td>Modelli del sito<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -373,7 +374,7 @@ Il **Strumenti** Le console consentono di accedere a diversi strumenti specifici
    <td>ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Le configurazioni predefinite e di Experience Cloud sono disponibili qui.<br /> </td>
   </tr>
   <tr>
-   <td>Configurazioni servizi cloud<br /> </td>
+   <td>Configurazioni Cloud Service<br /> </td>
    <td>Contiene le configurazioni relative all’integrazione con Adobe Experience Cloud.</td>
   </tr>
   <tr>
@@ -401,7 +402,7 @@ Il **Strumenti** Le console consentono di accedere a diversi strumenti specifici
    <td>Nessuna funzionalità attiva correlata a questa voce.</td>
   </tr>
   <tr>
-   <td>Invio modulo</td>
+   <td>Invii modulo</td>
    <td>L’elenco dei moduli inviati.</td>
   </tr>
   <tr>

@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3547'
 ht-degree: 0%
@@ -144,7 +145,7 @@ Quando un’immagine viene richiesta da un utente, Smart Imaging controlla le ca
 * Converti automaticamente in WebP se la conversione AVIF non è stata utile o se il browser non supporta AVIF
 * Converti automaticamente in JPEG2000 se Safari non supporta WebP
 * Converti automaticamente in JPEGXR per IE 9+ o se Edge non supporta WebP\
-  | Formato immagine | Browser supportati | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEG | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  | Formato immagine | Browser supportati | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGX | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 * Per i browser che non supportano questi formati, viene fornito il formato immagine richiesto originariamente.
 
 Se la dimensione dell&#39;immagine originale è inferiore a quella prodotta da Smart Imaging, viene distribuita l&#39;immagine originale.
@@ -210,7 +211,7 @@ Se si dispone già di Smart Imaging abilitato con WebP, ma si desiderano altre n
 
 **Per creare un caso di supporto per abilitare Smart Imaging sul tuo account:**
 
-1. [Utilizza l’Admin Console per avviare la creazione di un nuovo caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+1. [Utilizza l’Admin Console per avviare la creazione di un nuovo caso di supporto](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html?lang=it).
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
    * Nome del contatto principale, e-mail, telefono.

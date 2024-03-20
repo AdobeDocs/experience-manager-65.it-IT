@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Puoi organizzare meglio le risorse utilizzando le cartelle. Poiché AEM Forms su
 
 AEM Forms consente di modificare il titolo di una cartella. Il titolo non corrisponde al nome del nodo in cui è memorizzata la cartella nell&#39;archivio. Il titolo viene invece mantenuto come metadati per la cartella. Se modifichi il titolo di una cartella, il percorso di qualsiasi risorsa presente all’interno della cartella non viene modificato.
 
-## Creare una cartella {#create-a-folder}
+## Crea una cartella {#create-a-folder}
 
 Puoi creare una cartella in AEM Forms in uno dei seguenti modi:
 

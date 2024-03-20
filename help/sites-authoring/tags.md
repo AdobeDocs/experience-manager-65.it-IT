@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: 27e5c7fea4e90873bf80f976e179b5af0088f550
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 82%
+ht-degree: 76%
 
 ---
 
@@ -41,7 +42,7 @@ Quando progetti la struttura dei contenuti di un sito e lo schema di metadati pe
 
 Nell’ambiente di authoring gli autori possono applicare i tag accedendo alle proprietà della pagina e immettendo uno o più tag nel campo **Tag/Parole chiave**.
 
-Da applicare [tag predefiniti](/help/sites-administering/tags.md), nella **Proprietà pagina** finestra utilizza **Tag** e **Seleziona tag** finestra. La scheda **Tag standard** è il namespace predefinito, il che significa che non esiste una `namespace-string:` aggiunta come prefisso alla tassonomia.
+Da applicare [tag predefiniti](/help/sites-administering/tags.md), nella **Proprietà pagina** finestra utilizza **Tag** e **Seleziona tag** finestra. Il **Tag standard** è lo spazio dei nomi predefinito, ovvero non `namespace-string:` anteposto alla tassonomia.
 
 ![Finestra Seleziona tag; utilizza il pulsante X per deselezionare i tag attualmente selezionati](assets/chlimage_1-41.png)
 

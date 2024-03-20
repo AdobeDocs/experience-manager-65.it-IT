@@ -6,10 +6,11 @@ feature: Collaboration, Collections
 role: User
 exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 5%
+source-wordcount: '791'
+ht-degree: 6%
 
 ---
 
@@ -35,7 +36,7 @@ Al termine della revisione (approvazione o rifiuto delle risorse), il revisore r
 1. Dalla sezione [!DNL Assets] nell&#39;interfaccia utente, selezionare la cartella per la quale si desidera creare un&#39;attività di revisione.
 1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Crea attività di revisione]** ![crea attività di revisione](assets/do-not-localize/create-review-task.png) per aprire **[!UICONTROL Attività di revisione]** pagina. Se l’opzione non è visibile nella barra degli strumenti, fai clic su **[!UICONTROL Altro]** quindi seleziona l’opzione.
 
-1. (Facoltativo) Da **[!UICONTROL Progetto]** selezionare il progetto a cui si desidera associare l&#39;attività di revisione. Per impostazione predefinita, il **[!UICONTROL Nessuno]** è selezionata. Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
+1. (Facoltativo) Dal menu **[!UICONTROL Progetto]** selezionare il progetto a cui si desidera associare l&#39;attività di revisione. Per impostazione predefinita, il **[!UICONTROL Nessuno]** è selezionata. Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
 
    >[!NOTE]
    >
@@ -81,7 +82,7 @@ Al termine della revisione (approvazione o rifiuto delle risorse), il revisore r
 1. Nella pagina Raccolte selezionare la raccolta per la quale si desidera creare un task di revisione.
 1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Crea attività di revisione]** ![crea attività di revisione](assets/do-not-localize/create-review-task.png) per aprire **[!UICONTROL Attività di revisione]** pagina. Se l’opzione non è visibile nella barra degli strumenti, fai clic su **[!UICONTROL Altro]** quindi seleziona l’opzione.
 
-1. (Facoltativo) Da **[!UICONTROL Progetto]** selezionare il progetto a cui si desidera associare l&#39;attività di revisione. Per impostazione predefinita, il **[!UICONTROL Nessuno]** è selezionata. Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
+1. (Facoltativo) Dal menu **[!UICONTROL Progetto]** selezionare il progetto a cui si desidera associare l&#39;attività di revisione. Per impostazione predefinita, il **[!UICONTROL Nessuno]** è selezionata. Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
 
    >[!NOTE]
    >

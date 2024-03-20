@@ -7,10 +7,11 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 2%
+source-wordcount: '2118'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +39,7 @@ CRXDE Liti è consigliato quando non si dispone di accesso diretto al server AEM
 Per iniziare a utilizzare CRXDE Liti, procedere come segue:
 
 1. Installare AEM.
-1. Nel browser, immetti `https://<host>:<port>/crx/de`. Per impostazione predefinita, è `https://localhost:4502/crx/de`.
+1. Nel browser, immetti `https://<host>:<port>/crx/de`. Per impostazione predefinita è `https://localhost:4502/crx/de`.
 1. Immetti il **nome utente** e **password**. Per impostazione predefinita è `admin` e `admin`.
 
 1. Fai clic su **OK**.
@@ -85,7 +86,7 @@ CRXDE Liti offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Scheda Console<br /> </td>
-   <td><p><strong>Registri del server</strong>:</p> <p>Visualizza i messaggi dei registri. Puoi configurare il livello di registro, cancellare la console, fissare la posizione di scorrimento selezionata e abilitare o disabilitare la visualizzazione dei messaggi.<br /> </p> <p><strong>Controllo della versione</strong>:</p> <p>Visualizza i messaggi di controllo della versione.<br /> </p> </td>
+   <td><p><strong>Registri server</strong>:</p> <p>Visualizza i messaggi dei registri. Puoi configurare il livello di registro, cancellare la console, fissare la posizione di scorrimento selezionata e abilitare o disabilitare la visualizzazione dei messaggi.<br /> </p> <p><strong>Controllo versione</strong>:</p> <p>Visualizza i messaggi di controllo della versione.<br /> </p> </td>
   </tr>
   <tr>
    <td>Scheda Informazioni sulla build<br /> </td>
@@ -97,14 +98,14 @@ CRXDE Liti offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Salva tutto</td>
-   <td><p><strong>Salva tutto</strong>:<br /> </p> <p>Salva tutte le modifiche apportate. Fino a quando non fai clic su Salva, le modifiche sono temporanee e vengono perse quando esci dalla console.</p> <p><strong>Versione precedente</strong>:</p> <p>Elimina tutte le modifiche apportate al nodo selezionato dall'ultima azione di salvataggio, quindi ricarica lo stato dell'archivio per il nodo selezionato.</p> <p><strong>Ripristina tutto</strong>:</p> <p>Elimina tutte le modifiche apportate in tutto l'archivio dall'ultima azione di salvataggio, quindi ricarica lo stato dell'archivio.</p> </td>
+   <td><p><strong>Salva tutto</strong>:<br /> </p> <p>Salva tutte le modifiche apportate. Fino a quando non fai clic su Salva, le modifiche sono temporanee e vengono perse quando esci dalla console.</p> <p><strong>Ripristina</strong>:</p> <p>Elimina tutte le modifiche apportate al nodo selezionato dall'ultima azione di salvataggio, quindi ricarica lo stato dell'archivio per il nodo selezionato.</p> <p><strong>Ripristina tutto</strong>:</p> <p>Elimina tutte le modifiche apportate in tutto l'archivio dall'ultima azione di salvataggio, quindi ricarica lo stato dell'archivio.</p> </td>
   </tr>
   <tr>
-   <td>Creare ...<br /> </td>
+   <td>Crea...<br /> </td>
    <td><p>Menu a discesa per creare quanto segue sotto il nodo selezionato:<br /> </p> <p>- <strong>Nodo</strong>: nodo con tipo di nodo arbitrario<br /> </p> <p>- <strong>File</strong>: nodo nt:file e relativo sottonodo nt:resource</p> <p>- <strong>Cartella</strong>: nt:folder node</p> <p>- <strong>Modello</strong>: modello AEM</p> <p>- <strong>Componente</strong>: componente AEM</p> <p>- <strong>Finestra di dialogo</strong>: finestra di dialogo AEM</p> </td>
   </tr>
   <tr>
-   <td>Eliminare<br /> </td>
+   <td>Elimina<br /> </td>
    <td>Elimina il nodo selezionato.<br /> </td>
   </tr>
   <tr>
@@ -116,11 +117,11 @@ CRXDE Liti offre le seguenti funzionalità:
    <td>Incolla il nodo copiato sotto il nodo selezionato.<br /> </td>
   </tr>
   <tr>
-   <td>Sposta ...<br /> </td>
+   <td>Sposta...<br /> </td>
    <td>Sposta il nodo selezionato sul nodo impostato tramite la finestra di dialogo.</td>
   </tr>
   <tr>
-   <td>Rinomina ...<br /> </td>
+   <td>Rinomina...<br /> </td>
    <td>Rinomina il nodo selezionato.<br /> </td>
   </tr>
   <tr>
@@ -158,7 +159,7 @@ Per creare un modello con CRXDE Liti:
 
 1. Inserisci il **Etichetta**, **Titolo**, **Descrizione**, **Tipo di risorsa**, e **Classificazione** del modello. Fai clic su **Avanti**.
 
-1. Questo passaggio è facoltativo: imposta **Percorsi consentiti**. Fai clic su **Avanti**
+1. Questo passaggio è facoltativo: imposta **Percorsi consentiti**. Clic **Successivo**
 
 1. Questo passaggio è facoltativo: imposta **Elementi padre consentiti**. Fai clic su **Avanti**.
 

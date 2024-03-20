@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5792'
 ht-degree: 0%
@@ -21,7 +22,7 @@ Dopo aver implementato le istanze AEM, è necessario monitorarne e mantenerne il
 
 Un fattore chiave in questo caso è che per riconoscere potenziali problemi è necessario conoscere l&#39;aspetto e il funzionamento del sistema in condizioni normali. Questa capacità è resa possibile al meglio monitorando il sistema e raccogliendo informazioni nel tempo.
 
-| Seleziona | Considerazioni | Commento/Azioni |
+| Verifica | Considerazioni | Commento/Azioni |
 |---|---|---|
 | Piano di backup. |  | Scopri come [Eseguire il backup dell’istanza](/help/sites-deploying/monitoring-and-maintaining.md#backups). |
 | Piano di disaster recovery. | Linee guida aziendali per il disaster recovery. |  |
@@ -1094,12 +1095,12 @@ Di seguito è riportato un elenco di suggerimenti su cosa controllare se si veri
 
 >[!NOTE]
 >
-Per ulteriori informazioni, consulta anche i seguenti articoli:
+>Per ulteriori informazioni, consulta anche i seguenti articoli:
 >
-* [Thread dump](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
-* [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
-* [Analizzare utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
-* [Analizzare processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>* [Thread dump](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analizzare utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Analizzare processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU al 100% {#cpu-at}
@@ -1192,6 +1193,6 @@ Oppure JConsole:
 
 >[!NOTE]
 >
-Ad Oracle, nella VM sono disponibili informazioni su:
+>Ad Oracle, nella VM sono disponibili informazioni su:
 >
-[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

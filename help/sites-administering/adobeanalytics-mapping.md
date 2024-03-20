@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 1%
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
@@ -197,9 +198,9 @@ Prendendo l’immagine precedente come esempio, il **Vista AEM** ha le seguenti 
 >
 >Ad esempio, accanto a `prop3` puoi aggiungere:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-per inviare *titolo* di una pagina concatenata con i relativi *sitesection* utilizzo *:* (due punti) e preceduto da *Adobe* as `prop3`
+>per inviare *titolo* di una pagina concatenata con i relativi *sitesection* utilizzo *:* (due punti) e preceduto da *Adobe* as `prop3`
 >
 
 >[!CAUTION]
 >
-È possibile mappare una sola variabile CQ a una variabile Adobe Analytics in un dato momento.
+>È possibile mappare una sola variabile CQ a una variabile Adobe Analytics in un dato momento.

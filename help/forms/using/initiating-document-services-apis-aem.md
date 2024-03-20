@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1167'
 ht-degree: 0%
@@ -98,7 +99,7 @@ La scheda Documenti di output consente di specificare la destinazione dei docume
 * *Documento PDFA*: specifica il percorso in cui viene salvato il documento PDF/A convertito. Può sovrascrivere il documento di payload o salvarlo nella cartella di payload.
 * *Registro delle conversioni*: specifica il percorso in cui vengono salvati i registri di conversione. Può sovrascrivere il documento di payload o essere salvato nella cartella di payload.
 
-## Forms {#forms}
+## Moduli {#forms}
 
 Il flusso di lavoro Modulo di Rendering PDF è un wrapper `renderPDFForm` API di servizio Forms per creare un modulo PDF utilizzando un modello XDP e un XML dati.
 

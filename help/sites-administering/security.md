@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5398'
 ht-degree: 1%
@@ -158,7 +159,7 @@ Le azioni possono essere eseguite su una pagina (risorsa). Per ogni pagina della
    <td><strong>Descrizione </strong></td>
   </tr>
   <tr>
-   <td>Leggi</td>
+   <td>Lettura</td>
    <td>L’utente è autorizzato a leggere la pagina e tutte le sue pagine figlie.</td>
   </tr>
   <tr>
@@ -414,7 +415,7 @@ Le schede consentono di accedere a varie configurazioni:
 | Proprietà | Elenca informazioni sull&#39;utente o sul gruppo che possono includere informazioni e-mail, una descrizione e informazioni sul nome. Consente inoltre di modificare la password di un utente. Consulta [Creazione di utenti e gruppi](#creating-users-and-groups), [Modifica delle proprietà di utenti e gruppi](#modifying-user-and-group-properties) e [Modifica della password utente](#changing-a-user-password). |
 | Gruppi | Elenca tutti i gruppi a cui appartiene l&#39;utente o il gruppo selezionato. È possibile assegnare l&#39;utente o i gruppi selezionati a gruppi aggiuntivi o rimuoverli dai gruppi. Consulta [Gruppi](#adding-users-or-groups-to-a-group). |
 | Membri | Disponibile solo per i gruppi. Elenca i membri di un determinato gruppo. Consulta [Membri](#members-adding-users-or-groups-to-a-group). |
-| Autorizzazioni | Puoi allocare le autorizzazioni a un utente o a un gruppo. Consente di controllare quanto segue:<ul><li>Autorizzazioni relative a pagine/nodi specifici. Consulta [Impostazione delle autorizzazioni](#setting-permissions). </li><li>Autorizzazioni relative alla creazione e all’eliminazione di pagine e alla modifica della gerarchia. ??? consente di [allocare privilegi](#settingprivileges), ad esempio la modifica della gerarchia, che consente di creare ed eliminare pagine,</li><li>Autorizzazioni relative a [privilegi di replica](#setting-replication-privileges) (in genere dall’autore alla pubblicazione) in base a un percorso.</li></ul> |
+| Autorizzazioni | Puoi allocare le autorizzazioni a un utente o a un gruppo. Consente di controllare quanto segue:<ul><li>Autorizzazioni relative a pagine/nodi specifici. Consulta [Impostazione delle autorizzazioni](#setting-permissions). </li><li>Autorizzazioni relative alla creazione e all&#39;eliminazione di pagine e alla modifica della gerarchia. ??? consente di: [allocare privilegi](#settingprivileges), ad esempio la modifica della gerarchia, che consente di creare ed eliminare pagine,</li><li>Autorizzazioni relative a [privilegi di replica](#setting-replication-privileges) (in genere dall’autore alla pubblicazione) in base a un percorso.</li></ul> |
 | Impersonatori | Consente a un altro utente di rappresentare l’account. Utile quando hai bisogno che un utente agisca per conto di un altro utente. Consulta [Rappresentazione degli utenti](#impersonating-another-user). |
 | Preferenze | Set [preferenze per il gruppo o l&#39;utente](#setting-user-and-group-preferences). Ad esempio, le preferenze di lingua. |
 

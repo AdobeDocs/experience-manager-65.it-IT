@@ -2,7 +2,8 @@
 title: Integrazione di Salesforce con AEM Forms tramite il flusso delle credenziali client OAuth 2.0
 description: Passaggi per integrare l’integrazione di Salesforce con AEM Forms utilizzando il flusso delle credenziali del client OAuth 2.0
 exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 4%

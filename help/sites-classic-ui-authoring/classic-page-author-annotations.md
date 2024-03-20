@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '763'
 ht-degree: 8%
 
 ---
@@ -80,7 +81,7 @@ Gli schizzi sono una caratteristica delle annotazioni che consente di creare sem
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* Il cursore si trasforma in un reticolo incrociato quando siete in modalità sketch. Puoi disegnare più linee distinte.
+* Il cursore si trasforma in un reticolo incrociato quando siete in modalità sketch. È possibile disegnare più linee distinte.
 * La linea dello schizzo riflette il colore dell’annotazione e può essere:
 
    * mano libera

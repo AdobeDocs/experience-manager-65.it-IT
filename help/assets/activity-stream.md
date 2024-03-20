@@ -5,10 +5,11 @@ contentOwner: AG
 feature: Asset Management
 role: User, Admin
 exl-id: 28dc0aa5-f2be-4e27-b7d8-415569b7ecd4
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 21%
+source-wordcount: '204'
+ht-degree: 12%
 
 ---
 
@@ -27,7 +28,7 @@ Nel flusso di attività vengono registrate le seguenti operazioni:
 * Rifiuta
 * Spostare
 
-I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro. Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse o quando le risorse esistenti vengono modificate e archiviate [!DNL Experience Manager] tramite [Adobe collegamento risorsa](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o [app desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` in CRX, dove vengono memorizzati i file di registro. Inoltre, l’attività timeline viene registrata al caricamento di nuove risorse o quando le risorse esistenti vengono modificate e archiviate [!DNL Experience Manager] tramite [Adobe collegamento risorsa](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o [app desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >

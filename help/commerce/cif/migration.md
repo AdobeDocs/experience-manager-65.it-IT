@@ -2,10 +2,11 @@
 title: Migrazione al componente aggiuntivo Commerce integration framework AEM (CIF)
 description: Come migrare al componente aggiuntivo AEM Commerce integration framework (CIF) da una versione precedente.
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 4%
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +20,7 @@ Il componente aggiuntivo CIF è disponibile per AEM 6.5 tramite il [Portale di d
 
 Consulta [Guida introduttiva a AEM Content and Commerce](getting-started.md).
 
-Per supportare i progetti che utilizzano l’CIF, Adobe fornisce [Componenti core CIF dell’AEM](https://github.com/adobe/aem-core-cif-components).
+Per supportare i progetti che utilizzano l’CIF, Adobe fornisce [Componenti core dell’CIF dell’AEM](https://github.com/adobe/aem-core-cif-components).
 
 ## Catalogo prodotti
 

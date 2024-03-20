@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 1%
+source-wordcount: '1099'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +82,7 @@ Per creare la struttura di cartelle richiesta in, attenersi alla procedura descr
       >    
       >
 
-   1. Fai clic su **OK**. La cartella css viene creata nel percorso specificato.
+   1. Clic **OK**. La cartella css viene creata nel percorso specificato.
 
 1. Nella cartella delle app, crea una cartella denominata `imgs` con percorso/struttura simile al `imgs` cartella (nella cartella ccrui).
 
@@ -112,7 +113,7 @@ Carica il file del logo personalizzato su CRX. Il rendering del logo è discipli
 
 Per caricare il file del logo personalizzato in CRX, effettua le seguenti operazioni:
 
-1. Passa a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, accedi come amministratore.
+1. Vai a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, accedi come amministratore.
 1. In CRXDE, fai clic con il pulsante destro del mouse su **img** cartella nel percorso seguente e selezionare **Crea > Crea file**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -155,7 +156,7 @@ L&#39;immagine logo personalizzata richiede il caricamento di un foglio di stile
 
 Utilizza i seguenti passaggi per creare il foglio di stile per il rendering del logo con l’interfaccia utente:
 
-1. Passa a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, accedi come amministratore.
+1. Vai a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, accedi come amministratore.
 1. Crea un file denominato customcss.css (non è possibile utilizzare un nome file diverso) nel percorso seguente:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`

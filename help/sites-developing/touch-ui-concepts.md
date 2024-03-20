@@ -1,5 +1,5 @@
 ---
-title: Concetti dell’interfaccia utente di Adobe Experience Manager abilitata per il tocco
+title: Concetti dell’interfaccia utente di Adobe Experience Manager con funzionalità touch
 description: Con Adobe Experience Manager 5.6, Adobe ha introdotto una nuova interfaccia utente ottimizzata per il tocco con un design reattivo per l’ambiente di authoring
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,15 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2147'
 ht-degree: 1%
 
 ---
 
-# Concetti dell’interfaccia utente di Adobe Experience Manager abilitata per il tocco{#concepts-of-the-aem-touch-enabled-ui}
+# Concetti dell’interfaccia utente di Adobe Experience Manager con funzionalità touch{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager (AEM) dispone di un’interfaccia touch con [design responsive](/help/sites-authoring/responsive-layout.md) per l’ambiente di authoring progettato per funzionare sia su dispositivi touch che desktop.
 
@@ -29,7 +30,7 @@ L’interfaccia touch include:
    * Fornisce un collegamento alla navigazione globale
    * Fornisce un collegamento ad altre azioni generiche, ad esempio Ricerca, Guida, Soluzioni di Experience Cloud, Notifiche e Impostazioni utente.
 * La barra a sinistra (visualizzata quando necessario e nascosta), che può mostrare:
-   * Timeline 
+   * Timeline
    * Riferimenti
    * Filtri
 * L’intestazione di navigazione, che è nuovamente sensibile al contesto e può mostrare:
@@ -209,7 +210,7 @@ I componenti di base si trovano in:
 
 Questa libreria contiene un componente dell’interfaccia utente Granite per ogni elemento Coral. Un componente è basato sui contenuti, con la relativa configurazione che risiede nell’archivio. In questo modo è possibile comporre un’applicazione dell’interfaccia utente Granite senza scrivere manualmente il markup HTML.
 
-Scopo:
+Finalità:
 
 * Modello di componente per elementi HTML
 * Composizione componente
@@ -260,7 +261,7 @@ Il [Componenti di amministrazione dell’interfaccia utente Granite](https://dev
 * Barra (ossatura)
 * Pannello di ricerca
 
-Scopo:
+Finalità:
 
 * Aspetto unificato per le applicazioni di amministrazione
 * RAD per applicazioni di amministrazione
@@ -313,7 +314,7 @@ Al livello più elementare, un elemento HTML è un tag HTML con un nome di class
 
 Il CSS viene utilizzato per fornire l’aspetto effettivo. Per consentire di personalizzare facilmente il look-and-feel (ad esempio, nel caso del branding), i valori di stile effettivi sono dichiarati come variabili espanse dalla [MENO](https://lesscss.org/) pre-processore durante il runtime.
 
-Scopo:
+Finalità:
 
 * Fornire elementi di base dell’interfaccia utente con un aspetto comune
 * Fornire il sistema di griglia predefinito
@@ -380,7 +381,7 @@ Lo stesso concetto viene utilizzato per implementare la convalida del modulo. Pe
 >
 >La convalida del modulo nativo per HTML5 deve essere utilizzata quando possibile e/o estesa.
 
-Scopo:
+Finalità:
 
 * Fornire un comportamento dinamico per gli elementi HTML
 * Fornire layout personalizzati non possibili con file CSS puri
@@ -434,7 +435,7 @@ Un widget combina uno o più elementi di base con un plug-in JavaScript per form
 
 Un widget può sia attivare che ascoltare eventi personalizzati per cooperare con altri widget sulla pagina. Alcuni widget sono widget jQuery nativi che utilizzano gli elementi di Coral HTML.
 
-Scopo:
+Finalità:
 
 * Implementare elementi dell’interfaccia utente di livello superiore che mostrano un comportamento complesso
 * Attivazione e gestione degli eventi
@@ -488,7 +489,7 @@ Questi includono la gestione XSS e il bus di eventi.
 
 Anche se i plug-in e i widget dell&#39;elemento HTML possono basarsi sulle funzionalità fornite dalla libreria di utilità, la libreria di utilità non può avere alcuna dipendenza dagli elementi o dai widget stessi.
 
-Scopo:
+Finalità:
 
 * Fornire funzionalità comuni
 * Implementazione bus di evento

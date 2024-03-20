@@ -3,7 +3,8 @@ title: Best practice per la traduzione
 description: Trova le best practice compilate dai team tecnici e di consulenza Adobi per aiutarti a iniziare a lavorare su progetti di traduzione.
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 93%

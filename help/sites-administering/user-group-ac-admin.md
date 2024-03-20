@@ -7,10 +7,11 @@ content-type: reference
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3101'
-ht-degree: 1%
+source-wordcount: '3073'
+ht-degree: 0%
 
 ---
 
@@ -194,7 +195,7 @@ La tabella seguente elenca alcuni consigli e best practice:
    <td><p>Investire un po 'di tempo e di pensiero durante la configurazione di una nuova installazione è ben ripagato.</p> <p>L'applicazione di una struttura chiara semplifica la manutenzione e l'amministrazione in corso, garantendo che sia i colleghi attuali che i futuri successori possano comprendere facilmente ciò che viene implementato.</p> </td>
   </tr>
   <tr>
-   <td><i>Prova</i></td>
+   <td><i>Test</i></td>
    <td>Utilizza un’installazione di test per esercitarti e assicurarti di comprendere le relazioni tra i vari utenti e gruppi.</td>
   </tr>
   <tr>
@@ -235,7 +236,7 @@ Devi aver effettuato l’accesso all’area di lavoro appropriata, quindi puoi a
 
 * Puoi aggiungere nuove proprietà definendo un nome, un tipo e un valore. Fai clic su Salva (simbolo di graduazione verde) per ogni nuova proprietà.
 
-**Iscrizione al gruppo**
+**Appartenenza al gruppo**
 
 In questo modo vengono visualizzati tutti i gruppi a cui appartiene l’account. La colonna Ereditato indica l&#39;appartenenza ereditata a seguito dell&#39;appartenenza a un altro gruppo.
 
@@ -355,7 +356,7 @@ Devi aver effettuato l’accesso all’area di lavoro appropriata, quindi puoi a
 
   È possibile aggiungere utenti o altri gruppi come membri di questo gruppo.
 
-**Iscrizione al gruppo**
+**Appartenenza al gruppo**
 
 In questo modo vengono visualizzati tutti i gruppi a cui appartiene il conto di gruppo corrente. La colonna Ereditato indica l&#39;appartenenza ereditata a seguito dell&#39;appartenenza a un altro gruppo.
 
@@ -449,7 +450,7 @@ I criteri sono suddivisi in categorie in base a:
 
   Criteri disponibili per la creazione di un criterio locale. Quando selezioni e aggiungi un criterio applicabile, questo diventa un criterio locale.
 
-* **Criteri di controllo dell&#39;accesso locali**
+* **Criteri di controllo dell&#39;accesso locale**
 
   Si tratta dei criteri di controllo di accesso applicati. Puoi quindi aggiornarli, ordinarli o rimuoverli.
 
@@ -471,7 +472,7 @@ I criteri possono essere selezionati per:
 
   Seleziona il controllo dell&#39;accesso a livello di repository. Ad esempio, quando si imposta `jcr:namespaceManagement` privilegio, che è pertinente solo per l’archivio, non per un nodo.
 
-* **Principale**
+* **Entità**
 
   Entità registrata nell&#39;archivio.
 

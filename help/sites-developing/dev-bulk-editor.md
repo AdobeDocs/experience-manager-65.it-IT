@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 2%
+source-wordcount: '1833'
+ht-degree: 1%
 
 ---
 
@@ -62,12 +63,12 @@ Di seguito è riportato un elenco dei parametri di query dell’editor di massa:
   </tr>
   <tr>
    <td> colsValue/cv<br /> </td>
-   <td> Stringa[]</td>
+   <td> String[]</td>
    <td> proprietà ricercate (valori selezionati da colonneCaselle di controllo visualizzate in Selection)</td>
   </tr>
   <tr>
    <td> extraCols/ec<br /> </td>
-   <td> Stringa[]</td>
+   <td> String[]</td>
    <td> proprietà ricercate aggiuntive (visualizzate in un campo di testo separato da virgole)</td>
   </tr>
   <tr>
@@ -77,7 +78,7 @@ Di seguito è riportato un elenco dei parametri di query dell’editor di massa:
   </tr>
   <tr>
    <td> colsSelection/cs<br /> </td>
-   <td> Stringa[]</td>
+   <td> String[]</td>
    <td> selezione delle proprietà cercate (visualizzate come caselle di controllo)</td>
   </tr>
   <tr>
@@ -506,7 +507,7 @@ Il seguente esempio si trova nel componente productlist (/apps/geometrixx/compon
             </colsMetadata>
 ```
 
-**Casella di selezione**
+**Casella di controllo**
 
 Se la proprietà di configurazione della casella di controllo è impostata su true, tutte le celle della colonna vengono visualizzate come caselle di controllo. Una casella selezionata invia **true** al server Salva servlet, **false** altrimenti. Nel menu dell’intestazione puoi anche **seleziona tutto** o **seleziona nessuno**. Queste opzioni sono attivate se l&#39;intestazione selezionata è l&#39;intestazione di una colonna di una casella di controllo.
 

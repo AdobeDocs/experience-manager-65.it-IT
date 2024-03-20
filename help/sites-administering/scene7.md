@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5425'
 ht-degree: 1%
@@ -99,58 +100,58 @@ Per utilizzare contemporaneamente Dynamic Medie e Dynamic Media Classic:
     <tr>
     <td>Novità di Sites e Dynamic Medie</td>
     <td>Carica le risorse in Experience Manager e utilizza il componente Experience Manager Dynamic Medie per creare risorse sulle pagine Sites</td>
-    <td><p>On</p> <p>(vedere passaggio 3)</p> </td>
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">On</a></td>
-    <td>Off</td>
-    <td>Off</td>
+    <td><p>Il/La</p> <p>(vedere passaggio 3)</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">Il/La</a></td>
+    <td>Disattivato</td>
+    <td>Disattivato</td>
     </tr>
     <tr>
     <td>Nel settore retail e per Sites e Dynamic Medie</td>
     <td>Carica risorse non di prodotto in Experience Manager per la gestione e la consegna. Carica le risorse di prodotto in Dynamic Media Classic e utilizza il browser dei contenuti di Dynamic Media Classic in Experience Manager e Componente per creare pagine di dettagli prodotto in Sites.</td>
-    <td><p>On</p> <p>(vedere passaggio 3)</p> </td>
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">On</a></td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td>
-    <td>Off</td>
+    <td><p>Il/La</p> <p>(vedere passaggio 3)</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">Il/La</a></td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">Il/La</a></td>
+    <td>Disattivato</td>
     </tr>
     <tr>
     <td>Novità di Assets e Dynamic Medie</td>
     <td>Carica le risorse in Experience Manager Assets e utilizza l’URL pubblicato/il codice di incorporamento pubblicato da Dynamic Medie</td>
-    <td><p>On</p> <p>(vedere passaggio 3)</p> </td>
-    <td>Off</td>
-    <td>Off</td>
-    <td>Off</td>
+    <td><p>Il/La</p> <p>(vedere passaggio 3)</p> </td>
+    <td>Disattivato</td>
+    <td>Disattivato</td>
+    <td>Disattivato</td>
     </tr>
     <tr>
     <td>Utilizzo di Dynamic Medie e modelli per la prima volta</td>
     <td>Utilizza Dynamic Medie per immagini e video. Crea modelli immagine in Dynamic Media Classic e utilizza Dynamic Media Classic Content Finder per includere modelli nelle pagine Sites.</td>
-    <td><p>On</p> <p>(vedere passaggio 3)</p> </td>
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">On</a></td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td>
-    <td>Off</td>
+    <td><p>Il/La</p> <p>(vedere passaggio 3)</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">Il/La</a></td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">Il/La</a></td>
+    <td>Disattivato</td>
     </tr>
     <tr>
     <td>Un cliente Dynamic Media Classic esistente e sono nuovi per Sites</td>
     <td>Carica le risorse in Dynamic Media Classic e utilizza il browser dei contenuti Experience Manager Dynamic Media Classic per cercare e creare risorse nelle pagine Sites</td>
-    <td>Off</td>
-    <td>Off</td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td>
-    <td>Off</td>
+    <td>Disattivato</td>
+    <td>Disattivato</td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">Il/La</a></td>
+    <td>Disattivato</td>
     </tr>
     <tr>
     <td>Un cliente Dynamic Media Classic esistente e sono nuovi per Sites e Assets</td>
     <td>Carica le risorse in DAM e pubblicale automaticamente in Dynamic Media Classic per la consegna. Utilizza il browser di contenuti Experience Manager Dynamic Media Classic per cercare e creare risorse nelle pagine Sites.</td>
-    <td>Off</td>
-    <td>Off</td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td>
-    <td><p><a href="#configuringautouploadingfromaemassets">On</a></p> <p>(Vedere punto 4)</p> </td>
+    <td>Disattivato</td>
+    <td>Disattivato</td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">Il/La</a></td>
+    <td><p><a href="#configuringautouploadingfromaemassets">Il/La</a></p> <p>(Vedere punto 4)</p> </td>
     </tr>
     <tr>
     <td>Cliente Dynamic Media Classic esistente e nuovo in Assets</td>
     <td><p>Carica le risorse in Experience Manager e utilizza Dynamic Medie per generare rappresentazioni da scaricare/condividere. Pubblica automaticamente le risorse di Experience Manager in Dynamic Media Classic per la consegna.</p> <p><strong>Importante:</strong> Genera elaborazioni duplicate e le rappresentazioni generate in Experience Manager non sono sincronizzate con Dynamic Media Classic</p> </td>
-    <td><p>On</p> <p>(vedere passaggio 3)</p> </td>
-    <td>Off</td>
-    <td>Off</td>
-    <td><p><a href="#configuringautouploadingfromaemassets">On</a></p> <p>(Vedere punto 4)</p> </td>
+    <td><p>Il/La</p> <p>(vedere passaggio 3)</p> </td>
+    <td>Disattivato</td>
+    <td>Disattivato</td>
+    <td><p><a href="#configuringautouploadingfromaemassets">Il/La</a></p> <p>(Vedere punto 4)</p> </td>
     </tr>
     </tbody>
     </table>
@@ -377,7 +378,7 @@ Quando una risorsa viene aggiunta in Experience Manager Assets, viene caricata e
 
 >[!NOTE]
 >
-La dimensione massima del file per il caricamento automatico da Experience Manager Assets a Dynamic Media Classic è di 500 MB.
+>La dimensione massima del file per il caricamento automatico da Experience Manager Assets a Dynamic Media Classic è di 500 MB.
 
 **Per caricare automaticamente da Experience Manager Assets:**
 
@@ -387,7 +388,7 @@ La dimensione massima del file per il caricamento automatico da Experience Manag
 
    >[!NOTE]
    >
-   Consulta [Configurazione dello stato (pubblicato/non pubblicato) delle risorse inviate a Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) per informazioni su come inviare le risorse a Dynamic Media Classic in stato non pubblicato.
+   >Consulta [Configurazione dello stato (pubblicato/non pubblicato) delle risorse inviate a Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) per informazioni su come inviare le risorse a Dynamic Media Classic in stato non pubblicato.
 
    ![screen_shot_2018-03-15alle52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +399,8 @@ La dimensione massima del file per il caricamento automatico da Experience Manag
 
    >[!NOTE]
    >
-   * Quando si aggiungono risorse dopo l’automazione, se non vengono posizionate nella cartella di destinazione CQ, non vengono caricate in Dynamic Media Classic.
-   * Experience Manager incorpora tutti i metadati come XMP prima di caricarli in Dynamic Media Classic, in modo che tutte le proprietà sul nodo dei metadati siano disponibili in Dynamic Media Classic come XMP.
+   >* Quando si aggiungono risorse dopo l’automazione, se non vengono posizionate nella cartella di destinazione CQ, non vengono caricate in Dynamic Media Classic.
+   >* Experience Manager incorpora tutti i metadati come XMP prima di caricarli in Dynamic Media Classic, in modo che tutte le proprietà sul nodo dei metadati siano disponibili in Dynamic Media Classic come XMP.
 
 ### Configurare lo stato (pubblicato/non pubblicato) delle risorse inviate a Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +425,7 @@ Questi passaggi sono gli stessi che segui per creare una configurazione di test 
 
 >[!NOTE]
 >
-Se l&#39;ambiente di installazione è un sistema operativo UNIX® a 64 bit, vedere [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) per quanto riguarda le altre opzioni di configurazione è necessario impostare.
+>Se l&#39;ambiente di installazione è un sistema operativo UNIX® a 64 bit, vedere [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) per quanto riguarda le altre opzioni di configurazione è necessario impostare.
 
 #### Limitazioni note per il push delle risorse in stato non pubblicato  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +436,13 @@ Se utilizzate questa funzione, tenete presente le seguenti limitazioni:
 
 >[!NOTE]
 >
-Se desideri pubblicare le risorse immediatamente, è consigliabile mantenere **[!UICONTROL Abilita anteprima protetta]** imposta su **[!UICONTROL Immediatamente]** e utilizza **[!UICONTROL Abilita caricamento automatico]** funzionalità.
+>Se desideri pubblicare le risorse immediatamente, è consigliabile mantenere **[!UICONTROL Abilita anteprima protetta]** imposta su **[!UICONTROL Immediatamente]** e utilizza **[!UICONTROL Abilita caricamento automatico]** funzionalità.
 
 ### Impostare lo stato delle risorse inviate a Dynamic Media Classic come non pubblicate {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
-Se un utente pubblica la risorsa in Experience Manager, la risorsa S7 viene attivata automaticamente nella risorsa di produzione/live (la risorsa non si trova più in anteprima protetta/non pubblicata).
+>Se un utente pubblica la risorsa in Experience Manager, la risorsa S7 viene attivata automaticamente nella risorsa di produzione/live (la risorsa non si trova più in anteprima protetta/non pubblicata).
 
 **Per impostare lo stato delle risorse inviate a Dynamic Media Classic come non pubblicate:**
 
@@ -513,7 +514,7 @@ Se disponi di più configurazioni di Dynamic Media Classic, puoi specificarne un
 
    >[!NOTE]
    >
-   Se è presente una sola configurazione, selezionare **[!UICONTROL Configurazione predefinita]** non ha alcun effetto.
+   >Se è presente una sola configurazione, selezionare **[!UICONTROL Configurazione predefinita]** non ha alcun effetto.
 
 ### Configurare la cartella ad hoc {#configuring-the-ad-hoc-folder}
 
@@ -570,11 +571,11 @@ In particolare, è possibile configurare il formato di file accettato per tipo M
 
    >[!NOTE]
    >
-   Se state caricando file PSD e desiderate elaborarli come modelli con estrazioni di livello, immettete quanto segue in **[!UICONTROL jobParam]** campo valore:
+   >Se state caricando file PSD e desiderate elaborarli come modelli con estrazioni di livello, immettete quanto segue in **[!UICONTROL jobParam]** campo valore:
    >
-   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   Assicurati che il file PSD disponga di &quot;livelli&quot;. Se si tratta solo di un’immagine o di un’immagine con maschera, questa viene elaborata come un’immagine perché non vi sono livelli da elaborare.
+   >Assicurati che il file PSD disponga di &quot;livelli&quot;. Se si tratta solo di un’immagine o di un’immagine con maschera, questa viene elaborata come un’immagine perché non vi sono livelli da elaborare.
 
 1. Nell’angolo superiore sinistro della pagina CRXDE Liti, seleziona **[!UICONTROL Salva tutto]**.
 
@@ -616,6 +617,6 @@ In caso di problemi durante l’integrazione di Experience Manager con Dynamic M
 
 >[!CAUTION]
 >
-L’importazione di risorse da un account aziendale Dynamic Media Classic esistente può richiedere molto tempo per la visualizzazione nell’Experience Manager. Assicurati di designare una cartella in Dynamic Media Classic che non abbia troppe risorse. Ad esempio, la cartella principale ha spesso troppe risorse.
+>L’importazione di risorse da un account aziendale Dynamic Media Classic esistente può richiedere molto tempo per la visualizzazione nell’Experience Manager. Assicurati di designare una cartella in Dynamic Media Classic che non abbia troppe risorse. Ad esempio, la cartella principale ha spesso troppe risorse.
 >
-Se desideri testare l’integrazione, fai in modo che la cartella principale punti solo a una sottocartella, invece che all’intera azienda.
+>Se desideri testare l’integrazione, fai in modo che la cartella principale punti solo a una sottocartella, invece che all’intera azienda.

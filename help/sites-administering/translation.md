@@ -4,10 +4,11 @@ description: Scopri come tradurre i contenuti per siti multilingue.
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 6ccfe612-8cfd-4ca2-ad01-8e4af36d44fa
-source-git-commit: 3f5173c0c2b17e8cf560753088451f78c6529f5c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 83%
+ht-degree: 74%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 83%
 
 Automatizza la traduzione di contenuti di pagina, risorse e contenuti generati dall&#39;utente per creare e gestire siti web multilingue. Per automatizzare i flussi di lavoro di traduzione, puoi integrare fornitori di servizi di traduzione con AEM e creare progetti per la traduzione dei contenuti in più lingue. AEM supporta flussi di lavoro di traduzione umana e automatica.
 
-* Traduzione umana: il contenuto viene inviato al tuo provider di traduzioni e tradotto da professionisti. Una volta completato, il contenuto tradotto viene rinviato e importato in AEM. Quando il provider di traduzione è integrato con AEM, il contenuto viene inviato automaticamente tra AEM e il provider di traduzione.
+* Traduzione umana: il contenuto viene inviato al tuo provider di traduzioni e tradotto da traduttori professionisti. Una volta completato, il contenuto tradotto viene rinviato e importato in AEM. Quando il provider di traduzione è integrato con AEM, il contenuto viene inviato automaticamente tra AEM e il provider di traduzione.
 * Traduzione automatica: il servizio di traduzione automatica traduce immediatamente il contenuto.
 
 La traduzione del contenuto prevede i seguenti passaggi:

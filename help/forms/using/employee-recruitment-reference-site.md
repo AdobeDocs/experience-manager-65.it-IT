@@ -4,9 +4,10 @@ description: Il sito di riferimento AEM Forms mostra come le organizzazioni poss
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -178,11 +179,11 @@ Sarah Rose riceve un&#39;e-mail di notifica che sono necessarie ulteriori inform
 
 Sarah fa clic sul collegamento Fornisci dettagli nell’e-mail. Viene visualizzato un modulo. Sarah compila i dettagli richiesti su formazione e impiego, come richiesto da John Doe, e fa clic su Submit.
 
-![additionalinformation1](assets/additionalinformation1.png)
+![informazioni aggiuntive1](assets/additionalinformation1.png)
 
 Sarah apre il modulo di informazioni aggiuntive facendo clic sul collegamento nell’e-mail
 
-![additionalinformation2](assets/additionalinformation2.png)
+![informazioni aggiuntive2](assets/additionalinformation2.png)
 
 Sarah compila le informazioni aggiuntive richieste da John Doe e fa clic su Invia.
 

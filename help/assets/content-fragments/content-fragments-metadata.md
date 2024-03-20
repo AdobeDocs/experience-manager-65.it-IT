@@ -4,10 +4,11 @@ description: Scopri come visualizzare e modificare le proprietà dei metadati pe
 feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
-source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 59%
+ht-degree: 81%
 
 ---
 
@@ -24,6 +25,7 @@ Puoi visualizzare e modificare i metadati (proprietà) dei frammenti di contenut
 
    * Seleziona [**Visualizza proprietà** per aprire le finestre di dialogo](/help/assets/manage-assets.md#editing-properties). Una volta aperte e visualizzate le proprietà, puoi anche modificarle.
    * Apri il frammento di contenuto per la modifica, quindi seleziona **Metadati** dal pannello laterale.
+
    ![metadati](assets/cfm-metadata-01.png)
 
 3. La scheda **Base** fornisce alcune opzioni che è possibile visualizzare o modificare:
@@ -34,11 +36,13 @@ Puoi visualizzare e modificare i metadati (proprietà) dei frammenti di contenut
    * **Descrizione**
    * **Tag**
       * I [tag](/help/sites-authoring/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
-Ad esempio, puoi assegnare ai frammenti rilevanti il tag &quot;Lancio di Natale&quot; per consentire la navigazione solo come sottoinsieme oppure per copiarli e utilizzarli per un altro lancio futuro in una nuova cartella.
-      >[!NOTE]
-      >
-      >**Tag** può essere aggiunto anche quando [authoring dei contenuti della variante](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [creazione di varianti](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter visualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
+
+     >[!NOTE]
+     >
+     >**Tag** possono essere aggiunti anche durante l’[authoring dei contenuti della variante](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) e quando [vengono create varianti](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
 
    * **Creato** (solo visualizzazione)
+
    Ad esempio:
    ![metadati](assets/cfm-metadata-02.png)

@@ -4,7 +4,9 @@ description: Scopri come utilizzare Adobe Experience Manager Assets per generare
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+feature: Video
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 1%
@@ -41,4 +43,4 @@ Dopo aver configurato il server proxy e creato i profili video, puoi includere q
 >
 >La riproduzione audio non funziona per i file OGG e WAV su Microsoft® Internet Explorer 11. Un errore `Invalid Source` viene visualizzata nella pagina dei dettagli della risorsa per le risorse con estensione OGG o WAV.
 >
-In MS® Edge e iPad, i file OGG non vengono riprodotti e viene generato un errore di formato non supportato.
+>In MS® Edge e iPad, i file OGG non vengono riprodotti e viene generato un errore di formato non supportato.

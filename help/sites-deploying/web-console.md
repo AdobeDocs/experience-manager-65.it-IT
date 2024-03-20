@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 2%
+source-wordcount: '706'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +84,7 @@ Puoi quindi aggiornare i parametri come richiesto e:
 
   Per una configurazione di fabbrica, viene creata un&#39;istanza con un&#39;identità persistente. La nuova istanza viene quindi elencata in Configurazioni.
 
-* **Ripristina**
+* **Reimposta**
 
   Ripristina i parametri mostrati sullo schermo agli ultimi salvati.
 
@@ -135,7 +136,7 @@ Utilizzando questa scheda è possibile:
 
   Avvia un bundle in base al livello iniziale specificato.
 
-* **Arresta**
+* **Interrompi**
 
   Arresta il bundle.
 

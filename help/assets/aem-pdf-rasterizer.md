@@ -5,9 +5,10 @@ contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools,Renditions
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
-source-git-commit: e6e0ad29bc5b3a644f74427d8d60233c9e26aa03
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -63,7 +64,7 @@ Le miniature e le anteprime generate con PDF Rasterizer offrono una qualità mig
 
    * `-i`: percorso di input PDF. È un parametro obbligatorio.
 
-   * `-h`: Aiuto
+   * `-h`: Guida
 
 1. Per eliminare le rappresentazioni intermedie, selezionare **[!UICONTROL Elimina rappresentazione generata]**.
 1. Per consentire a PDF Rasterizer di generare rappresentazioni Web, selezionare **[!UICONTROL Genera rappresentazione web]**.
@@ -93,7 +94,7 @@ Le miniature e le anteprime generate con PDF Rasterizer offrono una qualità mig
 
    * `-i`: percorso di input PDF. È un parametro obbligatorio.
 
-   * `-h`: Aiuto
+   * `-h`: Guida
 
 1. Per eliminare le rappresentazioni intermedie, selezionare **[!UICONTROL Elimina rappresentazione generata]**.
 1. Per consentire a PDF Rasterizer di generare rappresentazioni Web, selezionare **[!UICONTROL Genera rappresentazione web]**.

@@ -1,5 +1,5 @@
 ---
-title: Profili immagine di Dynamic Media
+title: Profili immagine Dynamic Medie
 description: Crea profili immagine contenenti le impostazioni per maschera di contrasto, ritaglio avanzato, campione avanzato o entrambi, quindi applica il profilo a una cartella di risorse immagine.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,14 +8,15 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3033'
-ht-degree: 6%
+source-wordcount: '3048'
+ht-degree: 5%
 
 ---
 
-# Profili immagine di Dynamic Media {#image-profiles}
+# Profili immagine Dynamic Medie {#image-profiles}
 
 Durante il caricamento delle immagini, puoi ritagliarle automaticamente al momento del caricamento applicando un profilo immagine alla cartella.
 
@@ -77,7 +78,7 @@ In entrata **[!UICONTROL Maschera definizione dettagli]**, sono disponibili le s
 | Opzione | Descrizione |
 | --- | --- |
 | Quantità | Controlla il contrasto applicato ai pixel del bordo. Il valore predefinito è 1,75. Per le immagini ad alta risoluzione, è possibile aumentarlo fino a 5. Considera Importo come una misura dell’intensità del filtro. L&#39;intervallo è 0-5. |
-| Raggio | Determina quanti pixel attorno al bordo vengono interessati dalla nitidezza. Per le immagini ad alta risoluzione, inserite un valore da 1 a 2. Un valore basso agisce solo sui pixel del bordo; un valore più elevato agisce su una fascia più ampia di pixel. Il valore adatto dipende dalle dimensioni dell&#39;immagine. Il valore predefinito è 0,2. L&#39;intervallo è 0-250. |
+| Raggio | Determina il numero di pixel circostanti il bordo che influiscono sulla nitidezza. Per le immagini ad alta risoluzione, immettere da 1 a 2. Un valore basso agisce solo sui pixel del bordo; un valore alto agisce su una banda più ampia di pixel. Il valore corretto dipende dalle dimensioni dell&#39;immagine. Il valore predefinito è 0,2. L&#39;intervallo è 0-250. |
 | Soglia | Determina l&#39;intervallo di contrasto da ignorare quando si applica il filtro Maschera di contrasto. In altre parole, questa opzione determina quanto devono differire i pixel resi più nitidi dall’area circostante prima che vengano considerati pixel del bordo e resi più nitidi. Per evitare di introdurre disturbi, prova con valori compresi tra 0 e 255. |
 
 La nitidezza è descritta in [Nitidezza delle immagini](/help/assets/assets/sharpening_images.pdf).

@@ -2,7 +2,8 @@
 title: Guida rapida alla creazione di una configurazione headless
 description: Crea una configurazione come primo passo per iniziare a utilizzare headless in AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 65%

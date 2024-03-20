@@ -4,7 +4,8 @@ description: Scopri come creare un tema personalizzato, assegnare uno stile ai s
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: a361c194c238f0f2c999abfd77ca85e7697cb7bf
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 7%

@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5991'
 ht-degree: 3%
@@ -187,7 +188,7 @@ Facoltativo. Il numero massimo di elementi da utilizzare nel carosello.
 
 >[!NOTE]
 >
->Puoi creare un componente carosello personalizzato per Adobe Experience Manager che visualizzi le risorse digitali nel DAM AEM.
+Puoi creare un componente carosello personalizzato per Adobe Experience Manager che visualizzi le risorse digitali nel DAM AEM.
 
 ### Grafico {#chart}
 
@@ -222,9 +223,9 @@ Di seguito è riportato un esempio di dati del grafico seguito dal grafico a bar
 
 >[!CAUTION]
 >
->La funzionalità completa di Gestione dei frammenti di contenuto è disponibile solo con l’interfaccia touch.
+La funzionalità completa di Gestione dei frammenti di contenuto è disponibile solo con l’interfaccia touch.
 >
->Il componente Frammento di contenuto può essere visualizzato nella barra laterale dell’interfaccia classica, ma non sono disponibili altre funzioni.
+Il componente Frammento di contenuto può essere visualizzato nella barra laterale dell’interfaccia classica, ma non sono disponibili altre funzioni.
 
 [Frammenti di contenuto](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) vengono create e gestite come risorse indipendenti dalla pagina. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
@@ -276,7 +277,7 @@ L’applicazione esterna è integrata nel sistema paragrafo della pagina AEM; ad
 
 >[!NOTE]
 >
->A seconda del caso d’uso, sono disponibili altre opzioni per l’integrazione di applicazioni esterne, ad esempio [Integrazione dei portlet](/help/sites-administering/aem-as-portal.md).
+A seconda del caso d’uso, sono disponibili altre opzioni per l’integrazione di applicazioni esterne, ad esempio [Integrazione dei portlet](/help/sites-administering/aem-as-portal.md).
 
 ### Flash {#flash}
 
@@ -330,11 +331,11 @@ Puoi caricare un’immagine, quindi modificarla e manipolarla (ad esempio ritagl
 
 >[!NOTE]
 >
->Impossibile monitorare l’avanzamento del caricamento con Internet Explorer.
+Impossibile monitorare l’avanzamento del caricamento con Internet Explorer.
 >
->Gli utenti di Internet Explorer devono caricare l&#39;immagine e fare clic su **Ok**, quindi riapri l’immagine per visualizzare il file caricato nell’anteprima e per poter eseguire le modifiche (ovvero, il ritaglio).
+Gli utenti di Internet Explorer devono caricare l&#39;immagine e fare clic su **Ok**, quindi riapri l’immagine per visualizzare il file caricato nell’anteprima e per poter eseguire le modifiche (ovvero, il ritaglio).
 >
->Consulta la [Piattaforme certificate](/help/release-notes/release-notes.md#certifiedplatforms) per ulteriori informazioni sulle funzioni HTML5 utilizzate dall’AEM.
+Consulta la [Piattaforme certificate](/help/release-notes/release-notes.md#certifiedplatforms) per ulteriori informazioni sulle funzioni HTML5 utilizzate dall’AEM.
 
 Quando viene caricata un’immagine, puoi configurare quanto segue:
 
@@ -386,7 +387,7 @@ Immagine finale (con **Titolo** e **Descrizione**) può essere visualizzato come
 
 >[!CAUTION]
 >
->Anche se il componente Contenitore di layout è disponibile nell’interfaccia classica, la sua funzionalità completa è disponibile solo nell’interfaccia touch. Per maggiori dettagli, consulta [Layout reattivo](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
+Anche se il componente Contenitore di layout è disponibile nell’interfaccia classica, la sua funzionalità completa è disponibile solo nell’interfaccia touch. Per maggiori dettagli, consulta [Layout reattivo](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### Elenco {#list}
 
@@ -649,9 +650,9 @@ Il componente Presentazione visualizza quindi ogni diapositiva in sequenza, per 
 
 >[!NOTE]
 >
->Il **Tabella** il componente è basato su [Editor Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), così come lo è il **[Testo](#text)** componente.
+Il **Tabella** il componente è basato su [Editor Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), così come lo è il **[Testo](#text)** componente.
 >
->L’Adobe consiglia di utilizzare il **Tabella** componente per tabelle, anche se possono essere costruiti con **Testo** componente.
+L’Adobe consiglia di utilizzare il **Tabella** componente per tabelle, anche se possono essere costruiti con **Testo** componente.
 
 Il **Tabella** Il componente è preconfigurato per consentire la costruzione, il riempimento e la formattazione di una tabella. La finestra di dialogo consente di configurare la tabella e crearne il contenuto da zero oppure copiando e incollando un foglio di calcolo o una tabella da un editor esterno, ad esempio Excel, OpenOffice o Blocco note.
 
@@ -684,9 +685,9 @@ Per ulteriori informazioni sull’applicazione dei tag, visita [Utilizzo dei tag
 
 >[!NOTE]
 >
->Il **Testo** il componente è basato su [Editor Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), così come lo è il **[Tabella](#table)** componente.
+Il **Testo** il componente è basato su [Editor Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), così come lo è il **[Tabella](#table)** componente.
 >
->L’Adobe consiglia di utilizzare il **Tabella** componente per tabelle, anche se possono essere costruiti con **Testo** componente.
+L’Adobe consiglia di utilizzare il **Tabella** componente per tabelle, anche se possono essere costruiti con **Testo** componente.
 
 Il componente Testo consente di inserire un blocco di testo utilizzando un editor WYSIWYG, con la funzionalità fornita da [Editor Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). Una selezione di icone consente di formattare il testo, incluse le caratteristiche dei caratteri, l&#39;allineamento, i collegamenti, gli elenchi e i rientri.
 
@@ -796,11 +797,11 @@ Dopo aver inserito un’istanza del componente nella pagina, puoi configurare qu
 
 >[!NOTE]
 >
->I formati supportati includono:
+I formati supportati includono:
 >
->* `.mp4`
->* `Ogg`
->* `FLV` (video Flash)
+* `.mp4`
+* `Ogg`
+* `FLV` (video Flash)
 >
 
 ## Colonne {#columns}
@@ -835,7 +836,7 @@ I componenti modulo vengono utilizzati per creare moduli con cui i visitatori po
 
 >[!NOTE]
 >
->Consulta [Guida di AEM Forms](/help/forms/using/introduction-aem-forms.md) per informazioni su AEM Forms.
+Consulta [Guida di AEM Forms](/help/forms/using/introduction-aem-forms.md) per informazioni su AEM Forms.
 
 Forms è costituito da diversi componenti:
 
@@ -857,7 +858,7 @@ Di seguito è riportato un modulo di esempio. È composto da **Modulo** componen
 
 >[!NOTE]
 >
->Le informazioni sullo sviluppo e la personalizzazione dei moduli sono disponibili sul sito [Pagina Sviluppo Forms](/help/sites-developing/developing-forms.md). La personalizzazione di questo modulo include, tra l’altro, l’aggiunta di azioni, vincoli, campi di precaricamento e l’utilizzo di script per richiamare un servizio all’azione.
+Le informazioni sullo sviluppo e la personalizzazione dei moduli sono disponibili sul sito [Pagina Sviluppo Forms](/help/sites-developing/developing-forms.md). La personalizzazione di questo modulo include, tra l’altro, l’aggiunta di azioni, vincoli, campi di precaricamento e l’utilizzo di script per richiamare un servizio all’azione.
 
 ### Impostazioni comuni a (molti) componenti modulo {#settings-common-to-many-form-components}
 
@@ -883,7 +884,7 @@ Durante la configurazione di uno dei componenti del modulo, nella finestra di di
 
 >[!NOTE]
 >
->I campi visualizzati variano in modo significativo a seconda del singolo componente.
+I campi visualizzati variano in modo significativo a seconda del singolo componente.
 
 Queste schede forniscono i parametri necessari. Le schede dipendono dal singolo tipo di componente, ma possono includere quanto segue:
 
@@ -1191,9 +1192,9 @@ Puoi specificare vari parametri, tra cui titolo, descrizione e nome dell’eleme
 
 >[!NOTE]
 >
->Utilizzo di **Percorso di caricamento elementi** è possibile precaricare l&#39;elenco dei gruppi di caselle di controllo con i valori.
+Utilizzo di **Percorso di caricamento elementi** è possibile precaricare l&#39;elenco dei gruppi di caselle di controllo con i valori.
 >
->Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Dati carta di credito {#credit-card-details}
 
@@ -1211,11 +1212,11 @@ Consente di specificare i campi necessari per l&#39;immissione dei dettagli dell
 
 >[!NOTE]
 >
->Utilizzo di **Percorso di caricamento elementi** puoi precaricare l’elenco a discesa con i valori.
+Utilizzo di **Percorso di caricamento elementi** puoi precaricare l’elenco a discesa con i valori.
 >
->Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Caricamento file {#file-upload}
+### Caricamento del file {#file-upload}
 
 Il componente Caricamento file offre all’utente un meccanismo per selezionare e caricare un file.
 
@@ -1231,9 +1232,9 @@ Questo componente consente di creare un campo nascosto. Questi campi nascosti po
 
 >[!NOTE]
 >
->È inoltre possibile personalizzare il modulo per mostrare o nascondere componenti specifici del modulo in base al valore di altri campi del modulo. La modifica della visibilità di un campo modulo è utile quando il campo è necessario solo in determinate condizioni.
+È inoltre possibile personalizzare il modulo per mostrare o nascondere componenti specifici del modulo in base al valore di altri campi del modulo. La modifica della visibilità di un campo modulo è utile quando il campo è necessario solo in determinate condizioni.
 >
->Consulta [Mostrare e nascondere i componenti del modulo](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+Consulta [Mostrare e nascondere i componenti del modulo](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Pulsante immagine {#image-button}
 
@@ -1282,9 +1283,9 @@ Puoi specificare il nome dell’elemento con un titolo e una descrizione. Utiliz
 
 >[!NOTE]
 >
->Utilizzo di **Percorso di caricamento elementi** è possibile precaricare il gruppo radio con i valori.
+Utilizzo di **Percorso di caricamento elementi** è possibile precaricare il gruppo radio con i valori.
 >
->Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Pulsante Invia {#submit-button}
 

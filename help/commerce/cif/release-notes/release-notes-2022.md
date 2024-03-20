@@ -2,10 +2,11 @@
 title: Note sulla versione 2022 di AEM Content and Commerce
 description: Note sulla versione 2022 di Adobe Experience Manager Content and Commerce.
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 35%
+source-wordcount: '648'
+ht-degree: 40%
 
 ---
 
@@ -26,7 +27,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
 | Componente aggiuntivo CIF | 2022.09.20.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.09.20.00.zip) |
-| Componenti core CIF | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
+| Componenti core CIF | 2.11.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
 | Sito di riferimento CIF Venia | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
 
 ### Novità {#what-is-new-september}
@@ -96,8 +97,8 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
 | Componente aggiuntivo CIF | 2022.04.28.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.04.28.00.zip) |
-| Componenti core CIF | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
-| Sito di riferimento CIF Venia | 2022.04.28 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
+| Componenti core CIF | 2,8,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
+| Sito di riferimento CIF Venia | 28.4.2022 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
 
 ### Novità {#what-is-new-april}
 
@@ -115,7 +116,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 |:-------|:-----:|---------------------:|
 | Componente aggiuntivo CIF | 2022.02.24.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.02.24.00.zip) |
 | Componenti core CIF | 2.6.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) |
-| Sito di riferimento CIF Venia | 2022.02.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.02.24) |
+| Sito di riferimento CIF Venia | 24.02.2022 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.02.24) |
 
 ### Novità {#what-is-new-march}
 
@@ -131,7 +132,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 |:-------|:-----:|---------------------:|
 | Componente aggiuntivo CIF | 2022.01.20.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.01.20.00.zip) |
 | Componenti core CIF | 2.5.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.5.0) |
-| Sito di riferimento CIF Venia | 2022.01.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.01.27) |
+| Sito di riferimento CIF Venia | 27.1.2022 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.01.27) |
 
 ### Novità {#what-is-new-january}
 

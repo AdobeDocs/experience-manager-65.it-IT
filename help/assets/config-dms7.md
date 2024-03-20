@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6508'
 ht-degree: 3%
@@ -121,7 +122,7 @@ Consulta [Installare il 18912 del feature pack per la migrazione in blocco delle
    * **[!UICONTROL Azienda]** : nome dell’account Dynamic Medie.
      >[!IMPORTANT]
      >
-     In un&#39;istanza di Experience Manager è supportata una sola configurazione Dynamic Medie nei Cloud Service. Non aggiungere più di una configurazione. Più configurazioni Dynamic Medie in un’istanza Experience Manager sono _non_ supportati o consigliati dall’Adobe.
+     >In un&#39;istanza di Experience Manager è supportata una sola configurazione Dynamic Medie nei Cloud Service. Non aggiungere più di una configurazione. Più configurazioni Dynamic Medie in un’istanza Experience Manager sono _non_ supportati o consigliati dall’Adobe.
 
      <!-- CQDOC-19579 and CQDOC-19612 -->
 
@@ -152,9 +153,9 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic 
 
    >[!NOTE]
    >
-   Il controllo delle versioni non è supportato in modalità Dynamic Medie - Scene7. Inoltre, l’attivazione ritardata si applica solo se l’opzione **[!UICONTROL Pubblica risorse]** della pagina Modifica configurazione Dynamic Media è impostata su **[!UICONTROL All’attivazione]** e soltanto fino alla prima attivazione della risorsa.
+   >Il controllo delle versioni non è supportato in modalità Dynamic Medie - Scene7. Inoltre, l’attivazione ritardata si applica solo se l’opzione **[!UICONTROL Pubblica risorse]** della pagina Modifica configurazione Dynamic Media è impostata su **[!UICONTROL All’attivazione]** e soltanto fino alla prima attivazione della risorsa.
    >
-   Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in tempo reale in S7 Delivery.
+   >Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in tempo reale in S7 Delivery.
 
 1. Seleziona **[!UICONTROL Salva]**.
 1. Per visualizzare in anteprima in modo sicuro il contenuto Dynamic Medie prima che venga pubblicato, Experience Manager Author utilizza la convalida basata su token e quindi per impostazione predefinita Experience Manager Author visualizza in anteprima il contenuto Dynamic Medie. Tuttavia, puoi &quot;inserire nell&#39;elenco Consentiti&quot; più IP per consentire agli utenti di accedere in modo sicuro all’anteprima del contenuto. Per impostare questa azione in Experience Manager, vedi [Configurazione di Dynamic Medie Publish Setup per il server immagini: scheda Sicurezza](/help/assets/dm-publish-settings.md#security-tab).
@@ -255,7 +256,7 @@ Se intendi utilizzare questa funzione, tieni presenti i seguenti prerequisiti e 
 
   >[!NOTE]
   >
-  Configura l’archiviazione BLOB di Azure con una chiave di accesso e una chiave segreta perché questa funzione di caricamento di grandi dimensioni non è supportata con AzureSas nella configurazione dell’archiviazione BLOB.
+  >Configura l’archiviazione BLOB di Azure con una chiave di accesso e una chiave segreta perché questa funzione di caricamento di grandi dimensioni non è supportata con AzureSas nella configurazione dell’archiviazione BLOB.
 
 * di Oak [Download dell&#39;accesso binario diretto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) è abilitato (di Oak *Caricamento accesso binario diretto* non è obbligatorio).
 
@@ -361,7 +362,7 @@ Consulta [Configura predefiniti immagine](/help/assets/managing-image-presets.md
 
 >[!NOTE]
 >
-Per impostazione predefinita, il sistema visualizza 15 rappresentazioni quando si seleziona **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando selezioni **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. Consulta [Aumenta il numero di predefiniti immagine da visualizzare](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumenta il numero di predefiniti visualizzatore visualizzati](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Per impostazione predefinita, il sistema visualizza 15 rappresentazioni quando si seleziona **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando selezioni **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. Consulta [Aumenta il numero di predefiniti immagine da visualizzare](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumenta il numero di predefiniti visualizzatore visualizzati](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Modifica tipi MIME per i formati supportati {#editing-mime-types-for-supported-formats}
 
@@ -480,7 +481,7 @@ Sono disponibili due elementi per la definizione, Corrispondenza (Match) e Nome 
 
    >[!NOTE]
    >
-   I campi modulo disattivati non eseguono alcuna verifica della correttezza delle espressioni regolari. Vengono visualizzati i risultati dell&#39;espressione regolare che si sta creando per ogni elemento dopo la riga Risultato. L’espressione regolare completa è visibile nella parte inferiore della pagina.
+   >I campi modulo disattivati non eseguono alcuna verifica della correttezza delle espressioni regolari. Vengono visualizzati i risultati dell&#39;espressione regolare che si sta creando per ogni elemento dopo la riga Risultato. L’espressione regolare completa è visibile nella parte inferiore della pagina.
 
 1. Espandi ogni elemento in base alle esigenze e immetti le convenzioni di denominazione che desideri utilizzare.
 1. Se necessario, effettuare una delle seguenti operazioni:
@@ -602,7 +603,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
    >[!NOTE]
    >
-   Se la combinazione di espressioni regolari di riga e colonna non è in grado di determinare la posizione della risorsa all’interno della matrice multidimensionale del set 360 gradi, la risorsa non viene aggiunta al set. Viene inoltre registrato un errore.
+   >Se la combinazione di espressioni regolari di riga e colonna non è in grado di determinare la posizione della risorsa all’interno della matrice multidimensionale del set 360 gradi, la risorsa non viene aggiunta al set. Viene inoltre registrato un errore.
 
 1. Per Imposta convenzione di denominazione e creazione, specificate il suffisso o il prefisso del nome di base definito nella convenzione di denominazione delle risorse.
 
@@ -658,7 +659,7 @@ La coda del flusso di lavoro di Granite Transit viene utilizzata per **[!UICONTR
 
    >[!NOTE]
    >
-   È necessaria una ricerca di testo invece di un URL diretto, perché il PID OSGi viene generato in modo dinamico.
+   >È necessaria una ricerca di testo invece di un URL diretto, perché il PID OSGi viene generato in modo dinamico.
 
 1. In **[!UICONTROL Numero massimo processi paralleli]** , modificare il numero nel valore desiderato.
 
@@ -682,7 +683,7 @@ La coda del flusso di lavoro Granite viene utilizzata per flussi di lavoro non t
 
    >[!NOTE]
    >
-   È necessaria una ricerca di testo invece di un URL diretto, perché il PID OSGi viene generato in modo dinamico.
+   >È necessaria una ricerca di testo invece di un URL diretto, perché il PID OSGi viene generato in modo dinamico.
 
 1. In **[!UICONTROL Numero massimo processi paralleli]** , modificare il numero nel valore desiderato.
 
@@ -730,7 +731,7 @@ Se utilizzi Dynamic Medie per l’imaging, il video o entrambi, puoi utilizzare 
 
 >[!NOTE]
 >
-I filtri si applicano ai tipi MIME e non possono essere specifici del percorso.
+>I filtri si applicano ai tipi MIME e non possono essere specifici del percorso.
 
 #### Personalizzare i filtri delle risorse per la replica {#customizing-asset-filters-for-replication}
 

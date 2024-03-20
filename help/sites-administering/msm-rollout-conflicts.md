@@ -7,10 +7,11 @@ topic-tags: site-features
 content-type: reference
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 22%
+ht-degree: 18%
 
 ---
 
@@ -82,7 +83,7 @@ Questa operazione viene eseguita utilizzando [Configurazione OSGi](/help/sites-d
 
   Impostato su true se il gestore di rollout deve gestire i conflitti da una pagina creata nella Live Copy con un nome esistente nella blueprint.
 
-AEM segue un [comportamento predefinito quando la gestione dei conflitti è stata disattivata](#behavior-when-conflict-handling-deactivated).
+L’AEM ha [comportamento predefinito quando la gestione dei conflitti è stata disattivata](#behavior-when-conflict-handling-deactivated).
 
 ## Gestori dei conflitti {#conflict-handlers}
 
@@ -94,7 +95,7 @@ AEM fornisce:
 
    * `ResourceNameRolloutConflictHandler`
 
-* Possibilità di implementare un [gestore personalizzato](#customized-handlers).
+* La possibilità di attuare una [gestore personalizzato](#customized-handlers).
 * Meccanismo di classificazione del servizio che consente di impostare la priorità di ogni singolo gestore. Viene utilizzato il servizio con la classificazione più alta.
 
 ### Gestore dei conflitti predefinito {#default-conflict-handler}

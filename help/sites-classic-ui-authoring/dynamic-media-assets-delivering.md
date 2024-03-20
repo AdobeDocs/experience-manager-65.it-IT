@@ -1,12 +1,13 @@
 ---
-title: Distribuire risorse Dynamic Media nell’authoring di Sites Classic
-description: Con Dynamic Media, hai a disposizione diverse opzioni per distribuire le risorse Dynamic Media, sia video che immagini, al tuo sito web.
+title: Distribuire risorse Dynamic Medie nell’authoring di Sites Classic
+description: Con Dynamic Medie, hai a disposizione diverse opzioni per distribuire le risorse Dynamic Medie, sia video che immagini, al tuo sito web.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: 40f41bb0-b3cb-4c16-b5db-ac8ea1a86aa3
-source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 8%
@@ -15,12 +16,12 @@ ht-degree: 8%
 
 # Distribuire elementi multimediali dinamici{#delivering-dynamic-media-assets}
 
-Il modo in cui distribuisci le risorse Dynamic Media, sia video che immagini, dipende da come viene implementato il sito web.
+Il modo in cui distribuisci le risorse Dynamic Medie, sia video che immagini, dipende da come viene implementato il sito web.
 
-Dynamic Media offre diverse opzioni:
+Dynamic Medie offre diverse opzioni:
 
-* Se il tuo sito web è ospitato su Adobe Experience Manager, allora desideri aggiungere le risorse Dynamic Media direttamente alla tua pagina.
-* Se il tuo sito web non è su Experience Manager, vedi [Distribuire risorse Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) nell’interfaccia touch.
+* Se il tuo sito web è ospitato su Adobe Experience Manager, vuoi aggiungere le risorse Dynamic Medie direttamente alla pagina.
+* Se il tuo sito web non è su Experience Manager, vedi [Distribuire risorse Dynamic Medie](/help/assets/delivering-dynamic-media-assets.md) nell’interfaccia touch.
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 

@@ -4,10 +4,11 @@ description: Scopri come identificare i contenuti da tradurre in Adobe Experienc
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 66%
+source-wordcount: '1158'
+ht-degree: 62%
 
 ---
 
@@ -101,8 +102,8 @@ Utilizza la sintassi della regola seguente per includere le risorse incorporate 
 
 Ogni elemento `assetNode` presenta le seguenti caratteristiche:
 
-* Un attributo `resourceType` è uguale al percorso che viene risolto nel componente.
-* Un attributo `assetReferenceAttribute` che è uguale al nome della proprietà che memorizza il binario della risorsa (per le risorse incorporate) o il percorso della risorsa di riferimento.
+* Uno `resourceType` è uguale al percorso che viene risolto nel componente.
+* Uno `assetReferenceAttribute` attributo che è uguale al nome della proprietà che memorizza il binario della risorsa (per le risorse incorporate) o il percorso della risorsa di riferimento.
 
 L’esempio seguente estrae le immagini dal componente Immagine di base:
 

@@ -6,10 +6,11 @@ topic-tags: integration
 content-type: reference
 description: Produttore catalogo
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -43,7 +44,7 @@ Catalog Producer utilizza i dati PIM (Product Information Management) per mappar
 
    ![create_catalog](assets/create_catalog.png)
 
-1. Clic **Salva**. Una finestra di dialogo di conferma notifica che il catalogo è stato creato. Clic **Fine** per chiudere la finestra di dialogo
+1. Fai clic su **Salva**. Una finestra di dialogo di conferma notifica che il catalogo è stato creato. Clic **Fine** per chiudere la finestra di dialogo
 1. Per aprire il catalogo creato, fare clic su di esso dal **Cataloghi** pagina.
 
    >[!NOTE]

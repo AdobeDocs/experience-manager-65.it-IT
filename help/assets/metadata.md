@@ -7,10 +7,11 @@ feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 11%
+source-wordcount: '2332'
+ht-degree: 10%
 
 ---
 
@@ -114,8 +115,8 @@ L’importazione dei metadati è asincrona e non impedisce le prestazioni del si
    | Parametri di importazione dei metadati | Descrizione |
    |:---|:---|
    | [!UICONTROL Dimensione batch] | Numero di risorse in un batch per le quali devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
-   | [!UICONTROL Separatore di campi] | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
-   | [!UICONTROL Delimitatore valori multipli] | Separatore per i valori dei metadati. Il valore predefinito è `|`. |
+   | [!UICONTROL Separatore campi] | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
+   | [!UICONTROL Delimitatore multivalore] | Separatore per i valori dei metadati. Il valore predefinito è `|`. |
    | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Se impostato su `true` e le impostazioni predefinite sono attive per [!UICONTROL WriteBack metadati DAM] flusso di lavoro (che scrive i metadati nei dati binari XMP). L’abilitazione dei flussi di lavoro rallenta il sistema. |
    | [!UICONTROL Nome colonna percorso risorsa] | Definisce il nome della colonna per il file CSV con le risorse. |
 

@@ -4,10 +4,11 @@ description: Scopri come utilizzare la console Assets per gestire i frammenti di
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 77%
+source-wordcount: '1712'
+ht-degree: 75%
 
 ---
 
@@ -68,7 +69,7 @@ Il metodo per creare un frammento di contenuto è:
 
         Titolo del frammento.
 
-        Obbligatorio.
+        Obbligatorio
 
       * **Descrizione**
 
@@ -299,16 +300,16 @@ Oltre alle opzioni standard, [Timeline](/help/assets/manage-assets.md#timeline) 
 
 >[!NOTE]
 >
-I commenti sono:
+>I commenti sono:
 >
-* Funzionalità standard per tutte le risorse
-* Effettuati nella timeline
-* Correlati alla risorsa frammento
+>* Funzionalità standard per tutte le risorse
+>* Effettuati nella timeline
+>* Correlati alla risorsa frammento
 >
-Le annotazioni (per i frammenti di contenuto) sono:
+>Le annotazioni (per i frammenti di contenuto) sono:
 >
-* Inserite nell’editor frammenti
-* Specifiche per un segmento di testo selezionato all’interno del frammento
+>* Inserite nell’editor frammenti
+>* Specifiche per un segmento di testo selezionato all’interno del frammento
 >
 
 Esempio:
@@ -339,7 +340,7 @@ Le versioni vengono visualizzate affiancate e:
 
 >[!NOTE]
 >
-Non è possibile modificare il contenuto del frammento nella modalità di confronto.
+>Non è possibile modificare il contenuto del frammento nella modalità di confronto.
 
 ![confronto](assets/cfm-managing-06.png)
 
@@ -357,19 +358,19 @@ Non è possibile modificare il contenuto del frammento nella modalità di confro
 
 >[!CAUTION]
 >
-Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
+>Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Possono essere pubblicati:
 
 * Dopo la creazione; utilizzo [azioni disponibili nella console Assets](#actions-for-a-content-fragment-assets-console).
-* Dall’[editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor).
+* Dalla sezione [Editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor).
 * Quando [pubblicare una pagina che utilizza il frammento](/help/sites-authoring/content-fragments.md#publishing); il frammento verrà elencato nei riferimenti di pagina.
 
 >[!CAUTION]
 >
-Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
+>Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
@@ -380,11 +381,11 @@ Per eliminare un frammento:
 
    >[!NOTE]
    >
-   L’azione **Elimina** non è disponibile come azione rapida.
+   >L’azione **Elimina** non è disponibile come azione rapida.
 
 3. Seleziona **Elimina** dalla barra degli strumenti.
 4. Conferma l’azione **Elimina**.
 
    >[!CAUTION]
    >
-   Se in una pagina è già presente un riferimento al frammento, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.
+   >Se in una pagina è già presente un riferimento al frammento, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con **Forza eliminazione**. Il frammento, insieme al relativo componente di frammento di contenuto, verrà eliminato da tutte le pagine di contenuto.

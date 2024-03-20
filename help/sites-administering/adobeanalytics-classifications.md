@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 5%
@@ -41,7 +42,7 @@ Per configurarlo:
 
    | **Campo** | **Descrizione** |
    |---|---|
-   | Abilitato | Seleziona **Sì** per abilitare le impostazioni Adobe Classificazioni. |
+   | Attivato | Seleziona **Sì** per abilitare le impostazioni Adobe Classificazioni. |
    | Sovrascrivi in caso di conflitto | Seleziona **Sì** per sovrascrivere eventuali conflitti di dati. Per impostazione predefinita, è impostato su **No**. |
    | Elimina elementi elaborati | Se impostato su **Sì**, elimina i nodi elaborati dopo l&#39;esportazione. Il valore predefinito è **Falso**. |
    | Descrizione processo esportazione | Immettere una descrizione per il job Classificazioni di Adobe. |
@@ -94,7 +95,7 @@ Nell&#39;implementazione predefinita di SAINTDefaultTransformer, le risorse figl
 
 | **Chiave** | **Prodotto** | **Prezzo** | **Dimensione** | **Colore** | **Colore^Codice** |
 |---|---|---|---|---|---|
-| 1 | Nome prodotto | 120,90 | M | black | 101 |
+| 1 | Nome prodotto | 120,90 | L | black | 101 |
 
 Le proprietà includono:
 

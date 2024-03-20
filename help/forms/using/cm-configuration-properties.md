@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '846'
 ht-degree: 3%
 
 ---
@@ -30,19 +31,19 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
   <tr>
    <td><p>Rientro</p> </td>
    <td>Rientro nei moduli<p> </p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Qualsiasi numero</p> </td>
   </tr>
   <tr>
    <td>Larghezza minima numero</td>
    <td>Larghezza minima da applicare al campo punto elenco/numero quando si utilizzano elenchi numerati diversi dai numeri romani</td>
-   <td>8.0mm</td>
+   <td>8 mm</td>
    <td>Qualsiasi numero</td>
   </tr>
   <tr>
    <td><p>Larghezza minima numeri romani</p> </td>
    <td><p>Larghezza minima da applicare al campo punto elenco/numero quando si utilizzano numeri romani</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Qualsiasi numero</p> </td>
   </tr>
   <tr>
@@ -72,7 +73,7 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
   <tr>
    <td><p>Tipo evidenziazione contenuto</p> </td>
    <td><p>Tipo di evidenziazione contenuto nell’applicazione Create Correspondence</p> </td>
-   <td><p>Compila</p> </td>
+   <td><p>Riempimento</p> </td>
    <td><p>bordo/riempimento/nessuno</p> </td>
   </tr>
   <tr>
@@ -157,7 +158,7 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
    <td><p>Formato di modifica dati</p> </td>
    <td><p>Modifica il formato dei dati. Utilizzato per scrivere dati come stringa o analizzare dati da stringa</p> </td>
    <td><p>locale=en_US; dateFormat=gg-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>Gestisci istanze lettere al momento della pubblicazione</p> </td>
@@ -240,7 +241,7 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
   <tr>
    <td><p>Directory principale utente CM</p> </td>
    <td><p>URL della cartella contenente tutte le risorse utente di Gestione della corrispondenza</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>Percorso cartella valido</p> </td>
   </tr>
   <tr>

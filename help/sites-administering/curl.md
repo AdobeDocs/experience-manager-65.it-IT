@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 3%
@@ -299,7 +300,7 @@ Consulta [MSRP - Provider risorsa di archiviazione MongoDB](/help/communities/ms
 
 Consulta [Abilitazione di CRXDE Liti nell’AEM](/help/sites-administering/enabling-crxde-lite.md) per i dettagli.
 
-### Archivio dati raccolta oggetti inattivi {#data-store-garbage-collection}
+### Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
 
 Consulta [Raccolta oggetti inattivi dell’archivio dati](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) per i dettagli.
 

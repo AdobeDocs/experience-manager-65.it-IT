@@ -2,9 +2,10 @@
 title: Livello di integrazione eCommerce con un’API
 description: Il framework di integrazione ti consente di inserire i dati dei prodotti nell’AEM e di creare componenti AEM per le funzionalità di e-commerce.
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '144'
 ht-degree: 3%
 
 ---

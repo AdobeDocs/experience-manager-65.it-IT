@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 12%
@@ -63,7 +64,7 @@ Per impostazione predefinita, Adobe Campaign Standard viene fornito con `aemserv
 
 Il tuo `aemserver` L’utente dispone ora dei diritti necessari per consentire all’AEM di utilizzarli per comunicare con Adobe Campaign.
 
-Tuttavia, prima che l’AEM possa usare `aemserver` utente, è necessario impostarne la password. Questo non può essere fatto tramite Adobe Campaign. Deve essere eseguita da un tecnico del supporto Adobe. [Invia un ticket con l’Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-tab=home&amp;lang=it#support) per richiedere la reimpostazione del `aemserver` password. Una volta ottenuta la password da Adobe Customer Care, conservala in un luogo sicuro.
+Tuttavia, prima che l’AEM possa usare `aemserver` utente, è necessario impostarne la password. Questo non può essere fatto tramite Adobe Campaign. Deve essere eseguita da un tecnico del supporto Adobe. [Invia un ticket con l’Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-tab=home?lang=it#support) per richiedere la reimpostazione del `aemserver` password. Una volta ottenuta la password da Adobe Customer Care, conservala in un luogo sicuro.
 
 ## Verificare AEMResourceTypeFilter in Campaign {#resource-type-filter}
 

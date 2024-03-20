@@ -5,7 +5,8 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
@@ -111,13 +112,13 @@ Eseguire i seguenti comandi di database per esportare i dati di gestione utente 
 >
 >I comandi seguenti utilizzano i nomi delle tabelle di database nei database My SQL e IBM® DB2®. Quando si eseguono questi comandi su database Oracle e MS® SQL, sostituire i seguenti nomi di tabella nei comandi:
 >
-* Sostituisci `EdcPrincipalLocalAccountEntity` con `EdcPrincipalLocalAccount`
+>* Sostituisci `EdcPrincipalLocalAccountEntity` con `EdcPrincipalLocalAccount`
 >
-* Sostituisci `EdcPrincipalEmailAliasEntity` con `EdcPrincipalEmailAliasEn`
+>* Sostituisci `EdcPrincipalEmailAliasEntity` con `EdcPrincipalEmailAliasEn`
 >
-* Sostituisci `EdcPrincipalMappingEntity` con `EdcPrincipalMappingEntit`
+>* Sostituisci `EdcPrincipalMappingEntity` con `EdcPrincipalMappingEntit`
 >
-* Sostituisci `EdcPrincipalGrpCtmntEntity` con `EdcPrincipalGrpCtmntEnti`
+>* Sostituisci `EdcPrincipalGrpCtmntEntity` con `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql

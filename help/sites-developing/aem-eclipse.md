@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '746'
 ht-degree: 4%
 
 ---
@@ -127,7 +128,7 @@ Per risolvere le dipendenze non valide e la definizione del progetto procedere c
 1. Seleziona tutti i progetti creati.
 1. Fare clic con il pulsante destro del mouse. Nel menu **Maven**, seleziona **Aggiorna Progetti**.
 1. Verifica **Forza aggiornamenti di snapshot/release**.
-1. Fai clic su **OK**. Eclipse tenta di scaricare le dipendenze richieste.
+1. Clic **OK**. Eclipse tenta di scaricare le dipendenze richieste.
 
 ### Abilitazione del completamento automatico della libreria di tag nei file JSP {#enabling-tag-library-autocompletion-in-jsp-files}
 

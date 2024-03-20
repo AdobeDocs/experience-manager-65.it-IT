@@ -7,10 +7,11 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3288'
-ht-degree: 10%
+source-wordcount: '3284'
+ht-degree: 9%
 
 ---
 
@@ -282,7 +283,7 @@ Se in una cartella Live Copy sono presenti più risorse, l’avvio di azioni su 
 
 1. Selezionare una cartella di origine. Clic **[!UICONTROL Proprietà]** dalla barra degli strumenti. In alternativa, utilizza la scelta rapida da tastiera `p`.
 1. Fai clic su **[!UICONTROL Origine Live Copy]**. Per aprire la console, fai clic su **[!UICONTROL Panoramica Live Copy]**.
-1. In questo dashboard, seleziona una risorsa Live Copy da una cartella Live Copy. Nella barra degli strumenti, scegli le azioni desiderate. Le azioni disponibili sono: **[!UICONTROL Sincronizza]**, **[!UICONTROL Reimposta]**, **[!UICONTROL Sospendi]** e **[!UICONTROL Stacca]**. Puoi avviare rapidamente queste azioni su qualsiasi risorsa in un numero qualsiasi di cartelle Live Copy che si trovano in una relazione live con la cartella di origine selezionata.
+1. In questo dashboard, seleziona una risorsa Live Copy da una cartella Live Copy. Nella barra degli strumenti, scegli le azioni desiderate. Le azioni disponibili sono **[!UICONTROL Sincronizza]**, **[!UICONTROL Reimposta]**, **[!UICONTROL Sospendi]**, e **[!UICONTROL Stacca]**. Puoi avviare rapidamente queste azioni su qualsiasi risorsa in un numero qualsiasi di cartelle Live Copy che si trovano in una relazione live con la cartella di origine selezionata.
 
    ![Aggiornare facilmente molte risorse nelle cartelle Live Copy dalla console Panoramica Live Copy](assets/livecopyconsole_update_many_assets.png)
 

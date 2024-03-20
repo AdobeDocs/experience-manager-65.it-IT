@@ -3,10 +3,12 @@ title: Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query
 description: Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+solution: Experience Manager, Experience Manager Sites
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 71%
+source-wordcount: '1588'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +23,6 @@ Scopri come utilizzare GraphQL con AEM per distribuire contenuti headless esplor
 >* [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 >* [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 >* [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
-
 
 Per iniziare a utilizzare le query GraphQL e a come funzionano con i frammenti di contenuto AEM, è utile visualizzare alcuni esempi pratici.
 
@@ -38,7 +39,7 @@ Approfondisci queste query di esempio per le illustrazioni di creazione query, i
 
 >[!NOTE]
 >
->A seconda dell’istanza, puoi accedere direttamente al [Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) per l’invio e la verifica delle query.
+>A seconda dell’istanza, è possibile accedere direttamente all’[Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) per l’invio e la verifica delle query.
 >
 >Esempio: `http://localhost:4502/content/graphiql.html`
 
@@ -152,7 +153,7 @@ Per recuperare tutte le informazioni su tutte le città, puoi utilizzare la quer
 }
 ```
 
-Quando viene eseguita, il sistema espande automaticamente la query per includere tutti i campi:
+Una volta eseguita, il sistema la espande automaticamente per includere tutti i campi:
 
 ```graphql
 {
@@ -356,14 +357,14 @@ Se crei una variante denominata &quot;Berlino centro&quot; (`berlin_centre`), pe
 }
 ```
 
-### Query di esempio: nomi di tutte le città Taggato come City Breaks {#sample-names-all-cities-tagged-city-breaks}
+### Query di esempio: nomi di tutte le città con tag City Breaks {#sample-names-all-cities-tagged-city-breaks}
 
 Se:
 
-* crea vari tag, denominati `Tourism` : `Business`, `City Break`, `Holiday`
+* crei vari tag, denominati `Tourism` : `Business`, `City Break` e `Holiday`
 * e assegnano questi tag alla variante principale di vari `City` istanze
 
-Quindi puoi utilizzare una query per restituire i dettagli del `name` e `tags`di tutte le voci contrassegnate come interruzioni di città nel `city`schema.
+allora puoi utilizzare una query per restituire i dettagli di `name` e `tags` di tutte le voci classificate come Soggiorni in città nello schema `city`.
 
 **Query di esempio**
 
@@ -704,7 +705,7 @@ query {
 
 ### Query di esempio: tutte le città in Germania o Svizzera con una popolazione da 400000 a 999999 {#sample-all-cities-d-ch-population}
 
-In questo caso, viene filtrata una combinazione di campi. Viene utilizzato un `AND` (implicito) per selezionare l’intervallo di `population`, mentre un `OR` (esplicito) viene utilizzato per selezionare le città richieste.
+In questo caso il filtro è impostato su una combinazione di campi. Viene utilizzato un `AND` (implicito) per selezionare l’intervallo di `population`, mentre un `OR` (esplicito) viene utilizzato per selezionare le città richieste.
 
 **Query di esempio**
 
@@ -1146,13 +1147,13 @@ query {
 
 ## Query di esempio con il progetto WKND {#sample-queries-using-wknd-project}
 
-Queste query di esempio si basano sul progetto WKND. Presenta le seguenti caratteristiche:
+Queste query di esempio si basano sul progetto WKND. Presenta le seguenti:
 
 * Modelli di Frammento di contenuto disponibili in:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Frammenti di contenuto (e altro contenuto) disponibili in:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1293,7 +1294,7 @@ Questa query di esempio rappresenta un’interrogazione per ottenere:
 }
 ```
 
-### Query di esempio per un frammento di contenuto nidificato: tipo di modello singolo {#sample-wknd-nested-fragment-single-model}
+### Query di esempio per un frammento di contenuto nidificato: tipo di modello singolo{#sample-wknd-nested-fragment-single-model}
 
 Questa query rappresenta un’interrogazione per ottenere:
 
@@ -1321,18 +1322,18 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-### Query di esempio per un frammento di contenuto nidificato: più tipi di modello {#sample-wknd-nested-fragment-multiple-model}
+### Query di esempio per un frammento di contenuto nidificato: più tipi di modello{#sample-wknd-nested-fragment-multiple-model}
 
-#### Tipo di modello a riferimento singolo
+#### Tipo di modello di riferimento singolo
 
 Questa query rappresenta un’interrogazione per ottenere:
 
 * più frammenti di contenuto di tipo `bookmark`
-   * con riferimenti ai frammenti per altri frammenti del tipo di modello specifico `Article`
+   * con riferimenti ai frammenti ad altri frammenti del tipo di modello specifico `Article`
 
 >[!NOTE]
 >
->Il campo `fragments` ha il tipo di dati `fragment-reference`, con il modello `Article` selezionato. Consegne di query `fragments` come array di `[Article]`.
+>Il campo `fragments` include il tipo di dati `fragment-reference`, con il modello `Article` selezionato. La query fornisce `fragments` come array di `[Article]`.
 
 ```graphql
 {
@@ -1347,7 +1348,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-#### Più tipi di modello a cui si fa riferimento
+#### Più tipi di modello di riferimento
 
 Questa query rappresenta un’interrogazione per ottenere:
 
@@ -1356,7 +1357,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 
 >[!NOTE]
 >
->Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati. Consegne di query `fragments` come array di `[AllFragmentModels]`, a cui viene fatto riferimento con il tipo di unione.
+>Il campo `fragments` include il tipo di dati `fragment-reference`, con i modelli `Article`, `Adventure` selezionati. La query fornisce `fragments` come array di `[AllFragmentModels]`, che viene dereferenziato con il tipo di unione.
 
 ```graphql
 {
@@ -1377,7 +1378,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-### Query di esempio per un frammento di contenuto di un modello specifico con riferimenti ai contenuti {#sample-wknd-fragment-specific-model-content-reference}
+### Query di esempio per un frammento di contenuto di un modello specifico con riferimenti ai contenuti{#sample-wknd-fragment-specific-model-content-reference}
 
 Sono disponibili due tipi di questa query:
 
@@ -1427,7 +1428,7 @@ La query seguente restituisce tutti i riferimenti di contenuto utilizzando `_ref
 
 #### Query di esempio per più frammenti di contenuto con allegati {#sample-wknd-multiple-fragments-attachments}
 
-La query seguente restituisce tutti `attachments` - un campo specifico (sottogruppo) di tipo `content-reference`:
+La query seguente restituisce tutti gli `attachments`: un campo specifico (gruppo secondario) di tipo `content-reference`:
 
 >[!NOTE]
 >
@@ -1561,11 +1562,11 @@ Questa query rappresenta un’interrogazione per ottenere:
 }
 ```
 
-### Query di esempio per più frammenti di contenuto e relative varianti di un determinato modello {#sample-wknd-multiple-fragment-variations-given-model}
+### Query di esempio per più frammenti di contenuto, e relative varianti, di un determinato modello {#sample-wknd-multiple-fragment-variations-given-model}
 
 Questa query rappresenta un’interrogazione:
 
-* frammenti di contenuto di tipo `article` e tutte le varianti
+* per frammenti di contenuto di tipo `article` e tutte le varianti
 
 **Query di esempio**
 
@@ -1592,7 +1593,7 @@ query {
 
 Questa query rappresenta un’interrogazione:
 
-* frammenti di contenuto di tipo `article` con una o più varianti contrassegnate dal tag `WKND : Activity / Hiking`
+* per frammenti di contenuto di tipo `article` con una o più varianti a cui è stato assegnato il tag `WKND : Activity / Hiking`
 
 **Query di esempio**
 
@@ -1666,7 +1667,7 @@ I campi di base che definiscono l’azienda sono:
 
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
-| Nome dell’azienda | Testo su riga singola |  |
+| Nome dell’azienda | Testo su riga singola | |
 | CEO | Riferimento frammento (singolo) | [Persona](#model-person) |
 | Dipendenti | Riferimento frammento (con più campi) | [Persona](#model-person) |
 
@@ -1676,8 +1677,8 @@ I campi che definiscono un’utente, che può anche essere un dipendente:
 
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
-| Nome | Testo su riga singola |  |
-| Nome | Testo su riga singola |  |
+| Nome | Testo su riga singola | |
+| Nome | Testo su riga singola | |
 | Premi | Riferimento frammento (con più campi) | [Riconoscimento](#model-award) |
 
 #### Riconoscimento {#model-award}
@@ -1686,8 +1687,8 @@ I campi che definiscono un riconoscimento sono:
 
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
-| Scelta rapida/ID | Testo su riga singola |  |
-| Titolo | Testo su riga singola |  |
+| Scelta rapida/ID | Testo su riga singola | |
+| Titolo | Testo su riga singola | |
 
 #### Città {#model-city}
 
@@ -1695,10 +1696,10 @@ I campi per la definizione di una città sono:
 
 | Nome campo | Tipo di dati | Riferimento |
 |--- |--- |--- |
-| Nome | Testo su riga singola |  |
-| Paese | Testo su riga singola |  |
-| Popolazione | Numero |  |
-| Categorie | Tag |  |
+| Nome | Testo su riga singola | |
+| Paese | Testo su riga singola | |
+| Popolazione | Numero | |
+| Categorie | Tag | |
 
 ### Frammenti di contenuto di esempio {#sample-content-fragments}
 
@@ -1716,7 +1717,7 @@ I frammenti seguenti vengono utilizzati per il modello appropriato.
 
 | Nome | Nome | Premi |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
+| Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Cutter |  Gameblitz<br>Gamestar |
 | Marsh |  Duke |   |   |

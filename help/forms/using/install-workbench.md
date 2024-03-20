@@ -5,9 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -158,13 +159,13 @@ Prima di installare Workbench, è necessario assicurarsi che l&#39;ambiente incl
 
    >[!NOTE]
    >
-   Per continuare a utilizzare Designer installato con Acrobat 10, lascia deselezionata questa opzione.
+   >Per continuare a utilizzare Designer installato con Acrobat 10, lascia deselezionata questa opzione.
 
 1. Accettare la directory predefinita come elencato oppure fare clic su Scegli e passare alla directory in cui si desidera installare Workbench e quindi fare clic su Avanti.
 
    >[!NOTE]
    >
-   Il percorso della directory di installazione non può contenere i caratteri # (libbra) e $ (dollaro).
+   >Il percorso della directory di installazione non può contenere i caratteri # (libbra) e $ (dollaro).
 
 1. Rivedere il riepilogo della preinstallazione e fare clic su Installa. Il programma di installazione visualizza lo stato di avanzamento dell&#39;installazione.
 1. Esaminare il riepilogo dell&#39;installazione. Seleziona Avvia AEM Forms Workbench per poter avviare Workbench, quindi fai clic su Avanti.
@@ -184,7 +185,7 @@ Per utilizzare Workbench, è necessario disporre di un&#39;istanza di AEM Forms 
 
 >[!NOTE]
 >
-Se AEM Forms è stato configurato per l&#39;utilizzo di EMC Documentum® o IBM® FileNet Repository Provider e si desidera accedere a un repository diverso da quello configurato come predefinito nella console di amministrazione di AEM Forms, specificare il nome utente come username@Repository.
+>Se AEM Forms è stato configurato per l&#39;utilizzo di EMC Documentum® o IBM® FileNet Repository Provider e si desidera accedere a un repository diverso da quello configurato come predefinito nella console di amministrazione di AEM Forms, specificare il nome utente come username@Repository.
 
 ### Configurazione delle impostazioni di timeout {#configuring-timeout-settings}
 
@@ -196,7 +197,7 @@ Per connettere Workbench a un server AEM Forms tramite HTTPS, è necessario assi
 
 >[!NOTE]
 >
-[Workbench_HOME] rappresenta la directory in cui è stato installato Workbench. Il percorso predefinito è C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
+>[Workbench_HOME] rappresenta la directory in cui è stato installato Workbench. Il percorso predefinito è C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
 
 Assicurati di connetterti a HTTPS utilizzando il nome specificato nel certificato. Questo nome è in genere il nome host completo.
 
@@ -205,7 +206,7 @@ Assicurati di connetterti a HTTPS utilizzando il nome specificato nel certificat
 
    >[!NOTE]
    >
-   Per esportare il certificato, apri un browser web e accedi alla console di amministrazione. Installa il certificato nel browser, quindi esportalo dal browser in un percorso di archiviazione temporaneo (o direttamente in [Workbench_HOME]/workbench/jre/lib/security).
+   >Per esportare il certificato, apri un browser web e accedi alla console di amministrazione. Installa il certificato nel browser, quindi esportalo dal browser in un percorso di archiviazione temporaneo (o direttamente in [Workbench_HOME]/workbench/jre/lib/security).
 
 1. Copia il certificato in [Workbench_HOME]directory /workbench/jre/lib/security.
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 6%
+source-wordcount: '790'
+ht-degree: 2%
 
 ---
 
@@ -31,9 +32,9 @@ Durante l’amministrazione dei flussi di lavoro puoi avviarli utilizzando vari 
 >Altri metodi sono disponibili anche per gli autori; per informazioni complete vedi:
 >
 >* [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md)
->* [Come applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md)
+>* [Applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
->* [Progetti traduzione](/help/sites-administering/tc-manage.md)
+>* [Progetti di traduzione](/help/sites-administering/tc-manage.md)
 >
 
 ## Modelli flusso di lavoro {#workflow-models}
@@ -102,7 +103,7 @@ Un pacchetto di flusso di lavoro:
 
      Titolo facoltativo per identificare questa istanza.
 
-   * **Commenti**
+   * **Commento**
 
      Un commento facoltativo per indicare i dettagli di questa istanza.
 
@@ -115,7 +116,7 @@ Un pacchetto di flusso di lavoro:
 
    ![wf-105](assets/wf-105.png)
 
-   * **Tipo evento**
+   * **Tipo di evento**
 
      Tipo di evento che avvia il flusso di lavoro:
 
@@ -123,7 +124,7 @@ Un pacchetto di flusso di lavoro:
       * Modificato
       * Rimosso
 
-   * **Tipo di nodo**
+   * **Nodetype**
 
      Tipo di nodo a cui si applica il modulo di avvio del flusso di lavoro.
 
@@ -145,7 +146,7 @@ Un pacchetto di flusso di lavoro:
 
      Elenco di funzionalità da attivare. Seleziona le funzioni richieste utilizzando il selettore a discesa.
 
-   * **Funzioni disabilitate**
+   * **Funzioni disattivate**
 
    Elenco di funzionalità da disattivare. Seleziona le funzioni richieste utilizzando il selettore a discesa.
 

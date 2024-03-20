@@ -5,9 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1889'
 ht-degree: 15%
 
 ---
@@ -31,7 +32,7 @@ Puoi utilizzare il flusso di lavoro Crea e traduci per generare per la prima vol
 
 * Crea solo struttura.
 * Crea un progetto di traduzione.
-* Aggiungi a progetto di traduzione esistente.
+* Aggiungi al progetto di traduzione esistente.
 
 ### Crea solo struttura {#create-structure-only}
 
@@ -108,7 +109,7 @@ Se utilizzi questa opzione, le risorse da tradurre vengono copiate nella directo
    >
    >Questa funzione è disponibile sia per le risorse che per le cartelle. Quando viene selezionata una risorsa invece di una cartella, l’intera gerarchia di cartelle fino alla directory principale della lingua viene copiata per creare una copia per lingua della risorsa.
 
-### Aggiungi a progetto di traduzione esistente {#add-to-existing-translation-project}
+### Aggiungi al progetto di conversione corrente {#add-to-existing-translation-project}
 
 Se utilizzi questa opzione, il flusso di lavoro di traduzione viene eseguito per le risorse aggiunte alla cartella di origine dopo l’esecuzione di un flusso di lavoro di traduzione precedente. Solo le risorse appena aggiunte vengono copiate nella cartella di destinazione che contiene le risorse tradotte in precedenza. In questo caso non viene creato alcun nuovo progetto di traduzione.
 
@@ -165,7 +166,7 @@ Se utilizzi questa opzione, il flusso di lavoro di traduzione viene eseguito per
 Esegui questo flusso di lavoro per tradurre qualsiasi set aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già le risorse tradotte in precedenza. A seconda della scelta di opzioni, viene creato un progetto di traduzione o viene aggiornato un progetto di traduzione esistente per le nuove risorse. Il flusso di lavoro Aggiorna copie per lingua include le seguenti opzioni:
 
 * Crea un progetto di traduzione
-* Aggiungi a progetto di traduzione esistente
+* Aggiungi al progetto di conversione corrente
 
 ### Crea un progetto di traduzione {#create-a-new-translation-project-1}
 
@@ -210,7 +211,7 @@ Se utilizzi questa opzione, viene creato un progetto di traduzione per il set di
 
 1. Accedi a [!DNL Assets] e aprire la pagina Proprietà di ciascuna delle risorse tradotte per visualizzare i metadati tradotti.
 
-### Aggiungi a progetto di traduzione esistente {#add-to-existing-translation-project-1}
+### Aggiungi al progetto di conversione corrente {#add-to-existing-translation-project-1}
 
 Se si utilizza questa opzione, il set di risorse viene aggiunto a un progetto di traduzione esistente per aggiornare la copia per lingua scelta.
 

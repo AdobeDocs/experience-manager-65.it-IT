@@ -7,10 +7,11 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 6%
+source-wordcount: '1202'
+ht-degree: 3%
 
 ---
 
@@ -101,7 +102,7 @@ Utilizziamo inoltre le seguenti definizioni di teaser:
    <td>C1 </td>
    <td>T6</td>
    <td>S6</td>
-   <td>Economia<br /> </td>
+   <td>Aziende<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -199,7 +200,7 @@ Questi valori vengono utilizzati per determinare i teaser che il visitatore vedr
    <td>Commenti</td>
   </tr>
   <tr>
-   <td>Primo</td>
+   <td>Primo/a</td>
    <td>T5</td>
    <td>Solo T5 e T6 sono considerati come i loro segmenti si risolvono tutti <i>e</i> hanno il fattore di spinta più alto. L'elenco restituito è nell'ordine T5, T6; quindi T5 viene selezionato e mostrato.</td>
   </tr>

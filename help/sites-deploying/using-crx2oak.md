@@ -7,10 +7,11 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: ee1134be6ad81cc6638ee9004f7dad475a6cc67d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 1%
+source-wordcount: '1175'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +70,7 @@ export SLING_HOME="/path/to/crx-quickstart"
 SET "SLING_HOME=/path/to/crx-quickstart"
 ```
 
-#### Supporto per la ripresa in seguito a interruzioni {#resume-support}
+#### Riprendi supporto {#resume-support}
 
 La migrazione può essere interrotta in qualsiasi momento, con la possibilità di riprenderla in seguito.
 

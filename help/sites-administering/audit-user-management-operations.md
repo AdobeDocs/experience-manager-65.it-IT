@@ -8,14 +8,15 @@ content-type: reference
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 2%
+source-wordcount: '295'
+ht-degree: 1%
 
 ---
 
-# Controllare le operazioni di gestione degli utenti in Adobe Experience Manager (AEM) {#how-to-audit-user-management-operations-in-aem}
+# Come controllare le operazioni di gestione degli utenti in Adobe Experience Manager (AEM) {#how-to-audit-user-management-operations-in-aem}
 
 ## Introduzione {#introduction}
 
@@ -44,7 +45,7 @@ Per reindirizzare l&#39;output di registrazione a un file di registro separato, 
 
    Per immettere entrambi i logger nel **Logger** , è necessario immettere il nome del primo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
 
-## Esempio di output {#example-output}
+## Output di esempio {#example-output}
 
 Se configurato correttamente, l’output dovrebbe essere simile al seguente:
 

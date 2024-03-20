@@ -4,10 +4,11 @@ description: Esamina queste considerazioni importanti prima di definire i criter
 feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 82%
+source-wordcount: '510'
+ht-degree: 79%
 
 ---
 
@@ -24,7 +25,7 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 1. **Il frammento di contenuto come singola entità.**
 
    * **Caso d’uso**: utente che deve modificare o aggiornare un frammento di contenuto **ed eliminare un intero frammento**.
-   * **Autorizzazioni**[](/help/sites-administering/security.md#actions)[: l’autorizzazione Elimina può essere assegnata tramite la gestione degli utenti e/o dei gruppi](/help/sites-administering/security.md#managing-permissions).
+   * **Autorizzazioni**: Il [Elimina](/help/sites-administering/security.md#actions) l&#39;autorizzazione può essere [assegnati tramite la gestione degli utenti e/o dei gruppi](/help/sites-administering/security.md#managing-permissions).
 
 2. **Le numerose sottoentità che compongono un frammento di contenuto, come varianti e sotto-nodi.**
 
@@ -81,9 +82,9 @@ I prerequisiti di autorizzazione per consentire a un utente e/o gruppo specifico
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
 
-Questi `remove` i privilegi devono essere [amministrato tramite gli elenchi di controllo di accesso, in CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Questi `remove` i privilegi devono essere [amministrato tramite gli elenchi di controllo di accesso, in CRXDE Liti](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Il `add` e `modify` I privilegi possono essere amministrati anche in CRXDE Lite o utilizzando la console Gestione utente.
+Il `add` e `modify` I privilegi possono essere amministrati anche in CRXDE Liti o utilizzando la console Gestione utente.
 
 Ad esempio, la definizione di `remove` privilegi per un gruppo `content-authors-no-delete`:
 

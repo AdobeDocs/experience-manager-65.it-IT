@@ -7,7 +7,8 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 4%
@@ -108,7 +109,7 @@ module.exports = {
 };
 ```
 
-### Generazione {#building}
+### Generazione in corso {#building}
 
 La creazione dell’app utilizza [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
 

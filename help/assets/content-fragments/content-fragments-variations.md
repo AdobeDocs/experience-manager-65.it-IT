@@ -4,7 +4,8 @@ description: Scopri come le varianti possono rendere ancora più flessibili i co
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 59%
@@ -234,14 +235,14 @@ La funzione di riepilogo del testo è progettata per aiutare gli utenti a ridurr
 
 >[!CAUTION]
 >
-L’inglese è disponibile in modo predefinito.
+>L’inglese è disponibile in modo predefinito.
 >
-Altre lingue sono disponibili come pacchetti modello di lingua da Condivisione pacchetti:
+>Altre lingue sono disponibili come pacchetti modello di lingua da Condivisione pacchetti:
 >
-* [Francese (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Tedesco (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spagnolo (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francese (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Tedesco (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spagnolo (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. Seleziona **Principale** o la variante richiesta.
@@ -310,7 +311,7 @@ Caratteristiche delle annotazioni:
 
   >[!NOTE]
   >
-  Se a un testo sono state applicate più annotazioni, viene fornito un selettore a discesa.
+  >Se a un testo sono state applicate più annotazioni, viene fornito un selettore a discesa.
 
 * Quando si elimina l’intero testo a cui è stata applicata l’annotazione, viene eliminata anche l’annotazione.
 
@@ -328,13 +329,13 @@ Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; l
 
 >[!CAUTION]
 >
-Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
+>Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
 >
-La formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-authoring/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
+>La formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-authoring/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
 
 >[!NOTE]
 >
-Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+>Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
 1. Posizionare il cursore nel punto in cui si desidera aggiungere l&#39;immagine.
 1. Per aprire la finestra di dialogo di ricerca, utilizza l’icona **Inserisci risorsa**.
@@ -352,10 +353,10 @@ Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments
 
    >[!CAUTION]
    >
-   Se modifichi il formato dopo aver aggiunto come risorsa a:
+   >Se modifichi il formato dopo aver aggiunto come risorsa a:
    >
-   * **Testo normale**: la risorsa viene persa dal frammento.
-   * **Markdown**: la risorsa non è visibile, ma rimane qui quando torni a **Rich Text**.
+   >* **Testo normale**: la risorsa viene persa dal frammento.
+   >* **Markdown**: la risorsa non è visibile, ma rimane qui quando torni a **Rich Text**.
 
 ### Inserimento di un frammento di contenuto nel frammento {#inserting-content-fragment-into-your-fragment}
 
@@ -365,17 +366,17 @@ Sono aggiunti come riferimento, nella posizione corrente all’interno del framm
 
 >[!NOTE]
 >
-Questa opzione è disponibile quando **Testo su più righe** è configurato con **Consenti riferimento frammento**.
+>Questa opzione è disponibile quando **Testo su più righe** è configurato con **Consenti riferimento frammento**.
 
 >[!CAUTION]
 >
-Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
+>Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
 >
-La formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-authoring/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
+>La formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-authoring/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
 
 >[!NOTE]
 >
-Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+>Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
 1. Posiziona il cursore nel punto in cui desideri aggiungere il frammento.
 1. Per aprire la finestra di dialogo di ricerca, utilizza l’icona **Inserisci frammento di contenuto**.
@@ -393,10 +394,10 @@ Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments
 
    >[!CAUTION]
    >
-   Se modifichi il formato, dopo aver aggiunto un riferimento a un altro frammento, in:
+   >Se modifichi il formato, dopo aver aggiunto un riferimento a un altro frammento, in:
    >
-   * **Testo normale**: il riferimento viene perso dal frammento.
-   * **Markdown**: il riferimento rimane.
+   >* **Testo normale**: il riferimento viene perso dal frammento.
+   >* **Markdown**: il riferimento rimane.
 
 ## Gestione delle varianti {#managing-variations}
 
@@ -414,11 +415,11 @@ Per creare una variante:
 
    >[!NOTE]
    >
-   Quando crei una variante, è sempre il **Principale** viene copiata, non la variante aperta.
+   >Quando crei una variante, è sempre il **Principale** viene copiata, non la variante aperta.
 
    >[!NOTE]
    >
-   Quando crei una variante, tutti **Tag** attualmente assegnato al **Principale** La variante viene copiata nella nuova variante.
+   >Quando crei una variante, tutti **Tag** attualmente assegnato al **Principale** La variante viene copiata nella nuova variante.
 
 ### Modifica di una variante {#editing-a-variation}
 
@@ -443,7 +444,7 @@ Per modificare il nome di una variante esistente:
 
 >[!NOTE]
 >
-Questo influisce solo sul **Titolo** della variante.
+>Questo influisce solo sul **Titolo** della variante.
 
 ### Eliminazione di una variante {#deleting-a-variation}
 
@@ -457,7 +458,7 @@ Per eliminare una variante esistente:
 
 >[!NOTE]
 >
-Non è possibile eliminare l’elemento **Principale**.
+>Non è possibile eliminare l’elemento **Principale**.
 
 ### Sincronizzazione con l’elemento Principale {#synchronizing-with-master}
 
@@ -467,13 +468,13 @@ Quando modifichi una variante, hai accesso all’azione per sincronizzare l’el
 
 >[!CAUTION]
 >
-La sincronizzazione è disponibile solo per copiare le modifiche *dall’elemento **Principale** alla variante*.
+>La sincronizzazione è disponibile solo per copiare le modifiche *dall’elemento **Principale** alla variante*.
 >
-Viene sincronizzato solo l’elemento corrente della variante.
+>Viene sincronizzato solo l’elemento corrente della variante.
 >
-La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
+>La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
 >
-Il trasferimento delle modifiche *da una variante all’elemento **Principale*** non è disponibile come opzione.
+>Il trasferimento delle modifiche *da una variante all’elemento **Principale*** non è disponibile come opzione.
 
 <!-- needs new screenshot for synchronize effect -->
 

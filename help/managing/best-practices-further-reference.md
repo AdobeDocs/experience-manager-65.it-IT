@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 1%
@@ -34,7 +35,7 @@ Considera le funzioni dell’AEM in uso e l’impatto sulla progettazione, ad es
 * [Risorse](/help/assets/assets.md)
 * [Tag](/help/sites-administering/tags.md)
 * [Gestione multisito e traduzione](/help/sites-administering/msm-and-translation.md)
-* [Forms](/help/forms/using/introduction-aem-forms.md)
+* [Moduli](/help/forms/using/introduction-aem-forms.md)
 * [Communities](/help/communities/deploy-communities.md)
 
 Inoltre, controlla [Note sulla versione](/help/release-notes/release-notes.md), per le varie versioni dell’AEM, per vedere quando sono state aggiunte nuove funzioni.
@@ -574,7 +575,7 @@ Sono inoltre di particolare interesse le seguenti sezioni:
 
 Adobe fornisce ulteriori best practice per tutte le fasi e i tipi di pubblico:
 
-* [Distribuzione](/help/sites-deploying/best-practices.md)
+* [Implementazione in corso](/help/sites-deploying/best-practices.md)
 * [Authoring](/help/sites-authoring/best-practices.md)
 * [Amministrazione](/help/sites-administering/administer-best-practices.md)
 * [Sviluppo](/help/sites-developing/best-practices.md)

@@ -1,17 +1,18 @@
 ---
-title: Guida introduttiva a AEM Content and Commerce
+title: Guida introduttiva ai contenuti di AEM e Commerce
 description: Scopri come distribuire un progetto di contenuti e commerce AEM.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 6%
+source-wordcount: '685'
+ht-degree: 4%
 
 ---
 
-# Guida introduttiva a AEM Content and Commerce {#start}
+# Guida introduttiva ai contenuti di AEM e Commerce {#start}
 
 Per iniziare a utilizzare i contenuti e il commercio dell’AEM, è necessario installare il componente aggiuntivo Contenuto e commercio dell’AEM per AEM 6.5.
 

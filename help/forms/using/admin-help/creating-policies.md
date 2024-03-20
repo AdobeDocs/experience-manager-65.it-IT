@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4713'
 ht-degree: 0%
@@ -106,7 +107,7 @@ Quando si modificano i criteri, si applicano le seguenti restrizioni:
 
    >[!NOTE]
    >
-   È possibile creare un nome di criterio che contenga caratteri estesi; tuttavia, quando si effettua un confronto tra due stringhe, i caratteri accentati e non accentati come &quot;e&quot; ed &quot;é&quot; vengono considerati uguali. Quando un utente crea un criterio, viene eseguito un confronto per verificare se esiste un criterio con lo stesso nome. Il confronto non è in grado di distinguere tra nomi uguali, ad eccezione dei caratteri accentati. Si presume che il criterio sia già stato aggiunto al database e che il nuovo criterio non sia stato aggiunto.
+   >È possibile creare un nome di criterio che contenga caratteri estesi; tuttavia, quando si effettua un confronto tra due stringhe, i caratteri accentati e non accentati come &quot;e&quot; ed &quot;é&quot; vengono considerati uguali. Quando un utente crea un criterio, viene eseguito un confronto per verificare se esiste un criterio con lo stesso nome. Il confronto non è in grado di distinguere tra nomi uguali, ad eccezione dei caratteri accentati. Si presume che il criterio sia già stato aggiunto al database e che il nuovo criterio non sia stato aggiunto.
 
 1. Aggiungere utenti e gruppi al criterio e impostare le autorizzazioni appropriate. (vedere [Utenti e gruppi](creating-policies.md#users-and-groups).)
 1. In Impostazioni generali, selezionare le opzioni appropriate. (vedere [Impostazioni generali](creating-policies.md#general-settings).)
@@ -126,7 +127,7 @@ Nell’area Utenti e gruppi specificare gli utenti che hanno accesso ai document
 
 >[!NOTE]
 >
-L’autore del documento è l’utente che protegge il documento con la policy. Questo utente viene sempre incluso per impostazione predefinita in una policy, con diritti di accesso completi, incluse le funzionalità di revoca e cambio di policy. Tuttavia, gli amministratori possono modificare i diritti di accesso dell&#39;autore del documento per i criteri condivisi. Ad esempio, l’amministratore può impedire all’autore del documento di revocare l’accesso al documento o di cambiare il criterio.
+>L’autore del documento è l’utente che protegge il documento con la policy. Questo utente viene sempre incluso per impostazione predefinita in una policy, con diritti di accesso completi, incluse le funzionalità di revoca e cambio di policy. Tuttavia, gli amministratori possono modificare i diritti di accesso dell&#39;autore del documento per i criteri condivisi. Ad esempio, l’amministratore può impedire all’autore del documento di revocare l’accesso al documento o di cambiare il criterio.
 
 **Aggiungi utente o gruppo:** Per aggiungere un utente o un gruppo di utenti, fare clic su Aggiungi utente o gruppo e quindi su Ricerca avanzata per trovare utenti o gruppi. Gli utenti includono gli utenti interni all’organizzazione e gli utenti invitati che si sono registrati con document security. Quando si seleziona questa opzione, viene visualizzata la pagina Aggiungi utente o gruppo:
 
@@ -138,7 +139,7 @@ L’autore del documento è l’utente che protegge il documento con la policy. 
 
 >[!NOTE]
 >
-Se immetti un nome utente o un indirizzo e-mail invitato corretto e non viene restituito alcun risultato, è possibile che l’utente non si sia ancora registrato o che l’account venga eliminato. Puoi provare ad aggiungere l’utente come tipo di utente invitato o contattare l’amministratore.
+>Se immetti un nome utente o un indirizzo e-mail invitato corretto e non viene restituito alcun risultato, è possibile che l’utente non si sia ancora registrato o che l’account venga eliminato. Puoi provare ad aggiungere l’utente come tipo di utente invitato o contattare l’amministratore.
 
 **Invita nuovo utente:** Per aggiungere un utente invitato, fai clic su Invita nuovo utente, digita l’indirizzo e-mail dell’utente nella casella visualizzata e fai clic su Invita. Questa opzione è disponibile solo se è stata abilitata dall&#39;amministratore. Quando aggiungi nuovi utenti invitati a una policy, document security invia un’e-mail di invito alla registrazione se gli utenti non sono già invitati a registrarsi. Gli utenti devono utilizzare il collegamento nell’e-mail per creare un account, quindi devono attivare l’account.
 
@@ -148,7 +149,7 @@ Dopo la registrazione, gli utenti invitati possono utilizzare i documenti protet
 
 >[!NOTE]
 >
-Per consentire l’accesso anonimo a un documento protetto tramite policy che al momento non lo dispone, rimuovi la policy esistente e quindi applica una policy che consenta l’accesso anonimo. Se si cambia o si modifica il criterio esistente, gli utenti devono comunque effettuare l&#39;accesso per accedere al documento.
+>Per consentire l’accesso anonimo a un documento protetto tramite policy che al momento non lo dispone, rimuovi la policy esistente e quindi applica una policy che consenta l’accesso anonimo. Se si cambia o si modifica il criterio esistente, gli utenti devono comunque effettuare l&#39;accesso per accedere al documento.
 
 #### Specificare le autorizzazioni del documento per utenti e gruppi {#specify-the-document-permissions-for-users-and-groups}
 
@@ -212,13 +213,13 @@ L&#39;area Impostazioni generali contiene le impostazioni seguenti:
 
 >[!NOTE]
 >
-Le date di validità dipendono dal fuso orario del sistema di protezione dei documenti e non dal fuso orario del computer locale.
+>Le date di validità dipendono dal fuso orario del sistema di protezione dei documenti e non dal fuso orario del computer locale.
 
 **Controllo:** Abilita o disabilita il controllo degli eventi associati a un documento protetto tramite policy. Document Security, ad esempio, può registrare eventi quali i tentativi di aprire un documento. Gli eventi controllati vengono visualizzati nell’elenco della pagina Eventi. Se non selezioni questa opzione, document security non registra gli eventi per i documenti associati alla policy.
 
 >[!NOTE]
 >
-Affinché la funzione di controllo funzioni, l’amministratore deve inoltre abilitare il controllo del server nella pagina di configurazione delle impostazioni di controllo e privacy.
+>Affinché la funzione di controllo funzioni, l’amministratore deve inoltre abilitare il controllo del server nella pagina di configurazione delle impostazioni di controllo e privacy.
 
 **Tracciamento dell’utilizzo esteso:** Abilita o disabilita il tracciamento dell&#39;utilizzo esteso. Document Security supporta il tracciamento degli eventi utente associati a varie operazioni eseguite su un file PDF. È possibile accedere all’oggetto Document Security utilizzando uno script Java. Un clic sul pulsante, un file multimediale in fase di riproduzione o il salvataggio di un file sono alcuni esempi di eventi generati da un PDF protetto tramite policy. L’oggetto Document Security consente inoltre di recuperare informazioni sull’utente. Il tracciamento degli eventi può essere abilitato dal server di Document Security a livello globale o a livello di policy.
 
@@ -244,7 +245,7 @@ Se si ignorano le impostazioni di autenticazione globale, è possibile scegliere
 
 >[!NOTE]
 >
-L’autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successive.
+>L’autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successive.
 
 ### Impostazioni avanzate {#advanced-settings}
 
@@ -258,7 +259,7 @@ Se si sta modificando un criterio e l&#39;amministratore ha eliminato una filigr
 
 >[!NOTE]
 >
-Per i criteri che forniscono accesso anonimo, il nome utente e l&#39;identificatore di un utente anonimo non vengono visualizzati come filigrana anche se si seleziona questo tipo di filigrana.
+>Per i criteri che forniscono accesso anonimo, il nome utente e l&#39;identificatore di un utente anonimo non vengono visualizzati come filigrana anche se si seleziona questo tipo di filigrana.
 
 **Usa solo plug-in certificati di Acrobat per PDF:** Se selezionata per una policy, questa opzione specifica che Acrobat 8.0 e versioni successive devono essere eseguite in modalità certificata all’apertura dei documenti protetti con la policy. Quando Acrobat viene eseguito in modalità certificata, non carica plug-in di terze parti.
 
@@ -296,7 +297,7 @@ Accanto a un criterio disabilitato viene visualizzata una X rossa.
 
 >[!NOTE]
 >
-Gli amministratori non possono disattivare i criteri personali e gli utenti non possono abilitare e disabilitare i propri criteri.
+>Gli amministratori non possono disattivare i criteri personali e gli utenti non possono abilitare e disabilitare i propri criteri.
 
 1. Nella pagina relativa alla protezione dei documenti fare clic su Criteri e quindi sulla scheda Set di criteri.
 1. Fare clic sul nome del set di criteri appropriato e quindi sulla scheda Criteri.
@@ -322,7 +323,7 @@ Puoi visualizzare informazioni più dettagliate su un criterio visualizzato nell
 
 >[!NOTE]
 >
-I criteri generati automaticamente da Acrobat per i destinatari dei documenti allegati ai messaggi di posta elettronica in Microsoft Outlook non vengono visualizzati nell&#39;elenco dei criteri. È possibile visualizzare questi criteri solo aprendo la pagina Dettagli documento relativa al documento associato.
+>I criteri generati automaticamente da Acrobat per i destinatari dei documenti allegati ai messaggi di posta elettronica in Microsoft Outlook non vengono visualizzati nell&#39;elenco dei criteri. È possibile visualizzare questi criteri solo aprendo la pagina Dettagli documento relativa al documento associato.
 
 1. Nella pagina Document Security, fai clic su Criteri, quindi fai clic sulla scheda Criteri.
 1. Completa le informazioni di ricerca per poter cercare i criteri personali.
@@ -375,7 +376,7 @@ Gli utenti esterni possono copiare i criteri solo se l’amministratore abilita 
 
    >[!NOTE]
    >
-   È possibile creare un nome di criterio che contenga caratteri estesi; tuttavia, quando si effettua un confronto tra due stringhe, i caratteri accentati e non accentati come &quot;e&quot; ed &quot;é&quot; vengono considerati uguali. Quando un utente crea un criterio, viene eseguito un confronto per verificare se esiste un criterio con lo stesso nome. Il confronto non è in grado di distinguere tra nomi uguali, ad eccezione dei caratteri accentati. Si presume che il criterio sia già stato aggiunto al database e che il nuovo criterio non sia stato aggiunto.
+   >È possibile creare un nome di criterio che contenga caratteri estesi; tuttavia, quando si effettua un confronto tra due stringhe, i caratteri accentati e non accentati come &quot;e&quot; ed &quot;é&quot; vengono considerati uguali. Quando un utente crea un criterio, viene eseguito un confronto per verificare se esiste un criterio con lo stesso nome. Il confronto non è in grado di distinguere tra nomi uguali, ad eccezione dei caratteri accentati. Si presume che il criterio sia già stato aggiunto al database e che il nuovo criterio non sia stato aggiunto.
 
 1. Fare clic su OK.
 
@@ -392,7 +393,7 @@ Gli utenti invitati possono eliminare i criteri solo se l’amministratore abili
 
 >[!NOTE]
 >
-Utilizzare l&#39;applicazione client per rimuovere i criteri dai documenti. Consulta la Guida di Acrobat o la Guida delle estensioni di Acrobat Reader DC appropriate.
+>Utilizzare l&#39;applicazione client per rimuovere i criteri dai documenti. Consulta la Guida di Acrobat o la Guida delle estensioni di Acrobat Reader DC appropriate.
 
 ## Ordinare l’elenco dei criteri {#sort-the-policy-list}
 

@@ -7,7 +7,8 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3545'
 ht-degree: 1%
@@ -392,7 +393,7 @@ Per impostazione predefinita, in Experience Manager vengono cercate la cartella 
 >* Nell’interfaccia classica, puoi anche cercare **Flash** e **FXG**. Il filtro per questi due termini nell’interfaccia touch non è supportato.
 >
 >* Durante la ricerca di un video, viene eseguita la ricerca in un&#39;unica rappresentazione. I risultati restituiscono la rappresentazione originale (solo &#42;.mp4) e la rappresentazione codificata.
->* Durante la ricerca in un set di video adattivi, esegui una ricerca nella cartella e in tutte le sottocartelle, ma solo se hai aggiunto una parola chiave alla ricerca. Se non è stata aggiunta alcuna parola chiave, la ricerca nelle sottocartelle non verrà eseguita in Experience Manager.
+* Durante la ricerca in un set di video adattivi, esegui una ricerca nella cartella e in tutte le sottocartelle, ma solo se hai aggiunto una parola chiave alla ricerca. Se non è stata aggiunta alcuna parola chiave, la ricerca nelle sottocartelle non verrà eseguita in Experience Manager.
 >
 
 **Stato pubblicazione** - Puoi filtrare le risorse in base allo stato di pubblicazione: Non pubblicato o Pubblicato. Se non selezioni alcuno stato di pubblicazione, per impostazione predefinita Experience Manager esegue la ricerca in tutti gli stati di pubblicazione.

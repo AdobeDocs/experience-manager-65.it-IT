@@ -7,9 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1854'
 ht-degree: 1%
 
 ---
@@ -166,7 +167,7 @@ Dopo aver apportato ogni modifica lato server, riavvia il bundle Adobe Asset Com
 >
 >Potrebbe essere necessario cancellare la cache del browser.
 
-1. Passa a `https://[host]:'port'/system/console/bundles`. Se necessario, accedi come amministratore.
+1. Vai a `https://[host]:'port'/system/console/bundles`. Se necessario, accedi come amministratore.
 
 1. Individua il bundle Adobe Asset Composer Building Block. Riavvia il bundle: fai clic su Interrompi, quindi fai clic su Avvia.
 
@@ -188,7 +189,7 @@ La gestione dell’azione/pulsante al momento del clic sull’azione/pulsante in
 * Abilitazione/disabilitazione dell’azione appena aggiunta: operazione eseguita escludendo la funzione actionEnabled().
 * Gestione effettiva dell’azione quando l’utente fa clic sul pulsante: eseguita escludendo l’implementazione della funzione handleAction().
 
-1. Passa a `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessario, accedi come amministratore.
+1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessario, accedi come amministratore.
 
 1. Nella cartella delle app, crea una cartella denominata `js` nel ramo /apps di CRX con una struttura simile alla seguente cartella:
 

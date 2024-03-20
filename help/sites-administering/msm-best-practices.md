@@ -4,10 +4,11 @@ description: Trova le best practice compilate dai team tecnici e di consulenza A
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 40%
+source-wordcount: '1599'
+ht-degree: 34%
 
 ---
 
@@ -67,7 +68,7 @@ In generale, la regola di rollout in MSM per quanto riguarda la sincronizzazione
 
 Ciò significa che i componenti sono trattati come un aggregato e in un rollout il componente stesso e tutti i suoi figli vengono sostituiti con quelli nei progetti. Ciò significa che se una risorsa viene aggiunta localmente a tale componente, andrà persa per il contenuto della blueprint al momento del rollout.
 
-Per supportare la nidificazione dei componenti in modo che i componenti aggiunti localmente siano mantenuti in un rollout, il componente deve essere dichiarato come contenitore. Ad esempio, il parsys predefinito è dichiarato come contenitore in modo da poter supportare contenuti aggiunti localmente.
+Per supportare la nidificazione dei componenti in modo che i componenti aggiunti localmente vengano mantenuti in un rollout, il componente deve essere dichiarato come contenitore. Ad esempio, il parsys predefinito è dichiarato come contenitore in modo da poter supportare contenuti aggiunti localmente.
 
 >[!NOTE]
 >
@@ -171,7 +172,7 @@ Le configurazioni di rollout MSM sono altamente personalizzabili. L’automazion
 
 Quando utilizzi il [trigger di rollout](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` tieni presente che:
 
-* L&#39;automazione dei rollout con i trigger `onModify` può avere un impatto negativo sulle prestazioni dell&#39;authoring, in quanto attiva i rollout dopo ogni modifica della pagina.**
+* Automatizzare i rollout con `onModify` i trigger possono avere un impatto negativo sulle prestazioni di authoring in quanto attivano i rollout dopo *ogni* modifica delle pagine.
 
 * Il risultato del rollout può differire da quello previsto, ad esempio:
 

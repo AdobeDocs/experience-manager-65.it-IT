@@ -5,10 +5,11 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 2%
+source-wordcount: '704'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +84,7 @@ Puoi quindi aggiornare i parametri come richiesto e:
 
   Per una configurazione di fabbrica, viene creata un&#39;istanza con un&#39;identità persistente. La nuova istanza è elencata in Configurazioni.
 
-* **Ripristina**
+* **Reimposta**
 
   Ripristina i parametri mostrati sullo schermo agli ultimi salvati.
 
@@ -135,7 +136,7 @@ Utilizzando questa scheda è possibile:
 
   Avvia un bundle in base al livello iniziale specificato.
 
-* **Arresta**
+* **Interrompi**
 
   Arresta il bundle.
 

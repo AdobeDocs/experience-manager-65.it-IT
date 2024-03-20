@@ -1,15 +1,16 @@
 ---
 title: Operazioni di base
-description: Panoramica delle operazioni di base nell’ambiente di authoring di Adobe Experience Manager. Usa la console Sites come base.
+description: Panoramica delle operazioni di base nell’ambiente di authoring di Adobe Experience Manager. Utilizza la console Sites come base.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 7%
+source-wordcount: '1161'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 7%
 >* Questa pagina offre una panoramica delle operazioni di base nell’ambiente di authoring Adobe Experience Manager (AEM). Usa la console **Sites** come base.
 >
 >* Alcune funzionalità non sono disponibili in tutte le console, mentre altre sono disponibili in alcune console. Informazioni specifiche sulle singole console e sulle relative funzionalità sono descritte più dettagliatamente in altre pagine.
->* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [utilizzo delle console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [modifica di pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## Schermata di benvenuto {#the-welcome-screen}
@@ -42,7 +43,7 @@ Le console principali sono:
    <td><strong>Scopo</strong></td>
   </tr>
   <tr>
-   <td><strong>Benvenuto</strong></td>
+   <td><strong>Benvenuti</strong></td>
    <td>Offre una panoramica e un accesso diretto (tramite collegamenti) alle funzionalità principali dell’AEM.</td>
   </tr>
   <tr>
@@ -216,9 +217,9 @@ I colori accanto alle pagine nel **Pubblicato** e **Modificato** le colonne indi
 | Pubblicato | Verde | Pubblicazione completata. Il contenuto viene pubblicato. |
 | Pubblicato | Giallo | Pubblicazione in sospeso. Il sistema non ha ancora ricevuto la conferma della pubblicazione. |
 | Pubblicato | Rosso | Pubblicazione non riuscita. Non esiste alcuna connessione con l’istanza Publish. Questo può anche significare che il contenuto è stato disattivato. |
-| Pubblicato | *blank* | Questa pagina non è mai stata pubblicata. |
+| Pubblicato | *vuoto* | Questa pagina non è mai stata pubblicata. |
 | Modificato | Blu | La pagina è stata modificata dall&#39;ultima pubblicazione. |
-| Modificato | *blank* | La pagina non è mai stata modificata o non è stata modificata dall&#39;ultima pubblicazione. |
+| Modificato | *vuoto* | La pagina non è mai stata modificata o non è stata modificata dall&#39;ultima pubblicazione. |
 
 ## Menu di scelta rapida {#context-menus}
 

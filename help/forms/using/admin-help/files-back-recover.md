@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 0%
@@ -96,7 +97,7 @@ Configurare il database DB2 per l&#39;esecuzione in modalità log archivio.
 
 >[!NOTE]
 >
-Se l&#39;ambiente dei moduli AEM è stato aggiornato da una versione precedente di moduli AEM e utilizza DB2, il backup online non è supportato. In questo caso, è necessario chiudere i moduli AEM ed eseguire un backup offline. Le versioni future dei moduli AEM supporteranno il backup online per i clienti che eseguono l&#39;aggiornamento.
+>Se l&#39;ambiente dei moduli AEM è stato aggiornato da una versione precedente di moduli AEM e utilizza DB2, il backup online non è supportato. In questo caso, è necessario chiudere i moduli AEM ed eseguire un backup offline. Le versioni future dei moduli AEM supporteranno il backup online per i clienti che eseguono l&#39;aggiornamento.
 
 IBM dispone di una suite di strumenti e sistemi di assistenza che consentono agli amministratori di database di gestire le attività di backup e ripristino:
 
@@ -132,7 +133,7 @@ Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il data
 
 >[!NOTE]
 >
-La modalità di registrazione binaria predefinita per MySQL è &quot;Statement&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). Se si utilizza la registrazione binaria in questa modalità predefinita, Content Services (obsoleto) non riesce. Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;Mista&quot;. Per abilitare la registrazione &quot;Mista&quot;, aggiungi il seguente argomento al file my.ini: `binlog_format=mixed log-bin=logname`
+>La modalità di registrazione binaria predefinita per MySQL è &quot;Statement&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). Se si utilizza la registrazione binaria in questa modalità predefinita, Content Services (obsoleto) non riesce. Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;Mista&quot;. Per abilitare la registrazione &quot;Mista&quot;, aggiungi il seguente argomento al file my.ini: `binlog_format=mixed log-bin=logname`
 
 È possibile utilizzare l&#39;utilità mysqldump per ottenere il backup completo del database. I backup completi sono necessari, ma non sempre sono comodi. Producono file di backup di grandi dimensioni e richiedono tempo per la generazione. Per eseguire un backup incrementale, accertati di avviare il server con - `log-bin` come descritto nella sezione precedente. Ogni volta che il server MySQL viene riavviato, smette di scrivere nel registro binario corrente, ne crea uno nuovo e, da quel momento in poi, quello nuovo diventa quello corrente. È possibile forzare un passaggio manualmente con `FLUSH LOGS SQL` comando. Dopo il primo backup completo, i successivi backup incrementali vengono eseguiti utilizzando l&#39;utilità mysqladmin con `flush-logs` , che crea il file di registro successivo.
 
@@ -193,6 +194,6 @@ Se nell&#39;ambiente dei moduli AEM sono stati installati altri tipi di caratter
 
 >[!NOTE]
 >
-Per impostazione predefinita, i font di Adobe installati con i moduli AEM si trovano nel `[aem-forms root]/fonts` directory.
+>Per impostazione predefinita, i font di Adobe installati con i moduli AEM si trovano nel `[aem-forms root]/fonts` directory.
 
 Se si sta reinizializzando il sistema operativo sul computer host e si desidera utilizzare i caratteri del sistema operativo precedente, è necessario eseguire anche il backup del contenuto della directory dei caratteri del sistema. Per istruzioni specifiche, consultare la documentazione del sistema operativo in uso.

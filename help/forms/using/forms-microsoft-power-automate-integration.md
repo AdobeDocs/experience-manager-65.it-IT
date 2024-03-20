@@ -3,13 +3,14 @@ title: Come si collegano e inviano i dati del modulo adattivo a Microsoft&reg; P
 description: Guida dettagliata alla connessione e all'invio di dati di moduli adattivi a Microsoft&reg; Power Automate.
 keywords: Adaptive Forms Microsoft Power Automate, invia dati Adaptive Forms a Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
+exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 2%
 
 ---
-
 
 # Collegare e inviare i dati del modulo adattivo a Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
@@ -192,4 +193,3 @@ Dopo di te [Collegare l’istanza di AEM Forms Author con Microsoft® Power Auto
 * [Creare un modulo adattivo](create-an-adaptive-form-core-components.md)
 * [Configurare un’azione di invio](configuring-submit-actions.md)
 * [Connettore Adobe Experience Manager per Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-

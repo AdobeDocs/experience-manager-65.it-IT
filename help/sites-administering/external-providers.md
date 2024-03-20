@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -71,7 +72,7 @@ Per la configurazione di base:
 
 1. Fate clic su + per aggiungere una nuova configurazione utilizzando la finestra di dialogo. Come minimo, assegna un nome, ad esempio Google Analytics:
 
-   ![Creare la configurazione](assets/analytics_addconfig.png)
+   ![Crea configurazione](assets/analytics_addconfig.png)
 
 1. Clic **Crea**, la finestra di dialogo snippet si apre immediatamente - incolla lo snippet JavaScript appropriato nel campo:
 

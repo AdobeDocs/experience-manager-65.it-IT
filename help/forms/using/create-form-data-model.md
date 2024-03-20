@@ -5,7 +5,8 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 1%
@@ -73,7 +74,7 @@ Per configurare il [!DNL MySQL] database:
 
       >[!NOTE]
       >
-      > Quando il database è protetto da un firewall, il [!DNL MySQL] nome host del database non è un DNS pubblico. L&#39;indirizzo *IP del database deve essere aggiunto nel file /etc/hosts* del computer host AEM.
+      > Quando il [!DNL MySQL] database è protetto da un firewall, il nome host del database non è un DNS pubblico. L&#39;indirizzo *IP del database deve essere aggiunto nel file /etc/hosts* del computer host AEM.
 
       * **Nome utente:** Nome utente del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
       * **Password:** Password del database. È necessario per abilitare il driver JDBC per stabilire una connessione con il database.
@@ -132,7 +133,7 @@ Per configurare il modello dati del modulo, eseguire le operazioni seguenti:
       * nome
       * shippingAddress
       * città
-      * stadio
+      * stato
       * zipcode
 
    * **Servizi:**

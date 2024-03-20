@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 6%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
@@ -24,9 +25,9 @@ Utilizza questa funzione per assicurarti che le pagine siano conformi al consens
 
 ## Configurazione dei cookie consentiti {#configuring-allowed-cookies}
 
-Configura il servizio di rinuncia di Adobe Granite per specificare come vengono utilizzati i cookie sulle pagine web. La tabella seguente descrive le proprietà che puoi configurare.
+Configura il servizio di rinuncia di Adobe Granite per specificare come vengono utilizzati i cookie sulle pagine web. Nella tabella seguente sono descritte le proprietà che è possibile configurare.
 
-Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il PID del servizio è `com.adobe.granite.optout`.
+Per configurare il servizio, puoi utilizzare [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente vengono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il PID del servizio è `com.adobe.granite.optout`.
 
 | Nome proprietà (console Web) | Nome proprietà OSGi | Descrizione |
 |---|---|---|

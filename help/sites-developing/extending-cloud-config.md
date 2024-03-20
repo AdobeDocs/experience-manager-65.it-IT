@@ -1,19 +1,20 @@
 ---
-title: Configurazioni Cloud Service
+title: Configurazioni servizi cloud
 description: Puoi estendere le istanze esistenti per creare configurazioni personalizzate
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '552'
 ht-degree: 3%
 
 ---
 
-# Configurazioni Cloud Service{#cloud-service-configurations}
+# Configurazioni servizi cloud{#cloud-service-configurations}
 
 Le configurazioni sono progettate per fornire la logica e la struttura per l’archiviazione delle configurazioni del servizio.
 
@@ -137,7 +138,7 @@ Per la documentazione di riferimento sull’API, consulta [com.day.cq.wcm.webser
 
 ### Integrazione AEM {#aem-integration}
 
-I servizi disponibili sono elencati nella **Cloud Services** scheda di **Proprietà pagina** (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
+I servizi disponibili sono elencati nella **Cloud Service** scheda di **Proprietà pagina** (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
 
 La scheda fornisce anche:
 

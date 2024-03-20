@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 1%
+source-wordcount: '1220'
+ht-degree: 0%
 
 ---
 
@@ -37,11 +38,11 @@ Per abilitare SSL, WebSphere deve accedere a un account utente nel registro uten
 
    >[!NOTE]
    >
-   >(Linux e Solaris) Affinché il Registro di sistema del sistema operativo locale dell&#39;Application Server WebSphere funzioni correttamente, è necessario che esista un file di password shadow. Il file shadow password è solitamente denominato **/etc/shadow** ed è basato sul file /etc/passwd. Se il file shadow password non esiste, si verifica un errore dopo l&#39;abilitazione della protezione globale e la configurazione del registro di utente come sistema operativo locale.
+   >(Linux e Solaris) Affinché il registro di sicurezza del sistema operativo locale di WebSphere Application Server funzioni, è necessario che esista un file shadow password. Il file shadow password è solitamente denominato **/etc/shadow** ed è basato sul file /etc/passwd. Se il file shadow password non esiste, si verifica un errore dopo l&#39;abilitazione della protezione globale e la configurazione del registro di utente come sistema operativo locale.
 
 1. Aprire il file di gruppo dalla directory /etc in un editor di testo.
 1. Aggiungi al `root` gruppo il utente creato nel passaggio 2.
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 1. (UNIX con SSL abilitato) Avviare e arrestare WebSphere come utente root.
 
 ### Creare un utente Windows per WebSphere {#create-a-windows-user-for-websphere}
@@ -177,4 +178,4 @@ Per impostare la porta come dinamica e risolvere il problema, effettuare le segu
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
-1. Salva il file e riavvia il server.
+1. Salvare il file e riavviare il server.

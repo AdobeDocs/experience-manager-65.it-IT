@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 3%
+source-wordcount: '1333'
+ht-degree: 2%
 
 ---
 
@@ -68,7 +69,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       ![Sovrapponi nodo](assets/2_createnodedownloadflatpdf.png)
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       Clic **Salva tutto**.
 
@@ -150,7 +151,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app. Clic **Salva tutto**.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app. Clic **Salva tutto**.
 
 1. Nella cartella js, crea un file denominato formaction.js con il codice per la gestione delle azioni del pulsante, seguendo la procedura riportata di seguito:
 
@@ -240,7 +241,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Clic **Salva tutto**.
 

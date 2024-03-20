@@ -4,9 +4,10 @@ description: Scopri come distribuire un progetto di contenuti e commerce headles
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -61,7 +62,7 @@ Per collegare PWA Studi all’endpoint GraphQL dell’AEM, puoi utilizzare [Este
 
    Per ulteriori dettagli sulla personalizzazione del componente Navigazione, consulta [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) e nella [Framework di estensibilità](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) PWA Studio.
 
-1. Il client Apollo prevede che l’endpoint AEM GraphQL sia `<https://pwa-studio/endpoint.js>`. Per mappare l’endpoint a questa posizione, personalizza la configurazione UPWARD dell’applicazione PWA Studi: a. A `pwa-root/.env`, aggiungi la variabile AEM_CFM_GRAPHQL e adattala in modo che punti all’endpoint GraphQL dei frammenti di contenuto AEM.
+1. Il client Apollo prevede che l’endpoint AEM GraphQL sia `<https://pwa-studio/endpoint.js>`. Per mappare l’endpoint a questa posizione, personalizza la configurazione UPWARD dell’applicazione PWA Studi: a. Per `pwa-root/.env`, aggiungi la variabile AEM_CFM_GRAPHQL e adattala in modo che punti all’endpoint GraphQL dei frammenti di contenuto AEM.
 
    Esempio: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 

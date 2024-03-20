@@ -7,7 +7,8 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -80,19 +81,20 @@ Per configurare SSO per un&#39;istanza AEM, è necessario configurare [Gestore a
 >
 >Se utilizzi anche il [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) con Microsoft® Internet Information Server (IIS), è necessaria una configurazione aggiuntiva in:
 >
-* `disp_iis.ini`
-* IIS
+>* `disp_iis.ini`
+>* IIS
 >
-In entrata `disp_iis.ini` set: (vedere [installazione di Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) per maggiori informazioni)
+>In entrata `disp_iis.ini` imposta:
+>(vedere [installazione di Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) per maggiori informazioni)
 >
-* `servervariables=1` inoltra le variabili del server IIS come intestazioni di richiesta all’istanza remota
-* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Authorization&quot; diversa da &quot;Basic&quot; con il suo equivalente &quot;Basic&quot;)
+>* `servervariables=1` inoltra le variabili del server IIS come intestazioni di richiesta all’istanza remota
+>* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Authorization&quot; diversa da &quot;Basic&quot; con il suo equivalente &quot;Basic&quot;)
 >
-In IIS:
+>In IIS:
 >
-* disable **Accesso anonimo**
+>* disable **Accesso anonimo**
 >
-* abilita **Autenticazione integrata di Windows**
+>* abilita **Autenticazione integrata di Windows**
 >
 
 Puoi vedere quale gestore di autenticazione viene applicato a qualsiasi sezione della struttura del contenuto utilizzando **Autenticatore** della console Felix; ad esempio:
@@ -151,7 +153,7 @@ Oppure puoi utilizzare il seguente comando curl per inviare il `TestHeader` inte
 
 >[!NOTE]
 >
-Quando utilizzi il parametro di richiesta in un browser, vengono visualizzati solo alcuni dei HTML, senza CSS. Questo perché tutte le richieste del HTML vengono effettuate senza il parametro di richiesta.
+>Quando utilizzi il parametro di richiesta in un browser, vengono visualizzati solo alcuni dei HTML, senza CSS. Questo perché tutte le richieste del HTML vengono effettuate senza il parametro di richiesta.
 
 ## Rimozione dei collegamenti di disconnessione AEM {#removing-aem-sign-out-links}
 

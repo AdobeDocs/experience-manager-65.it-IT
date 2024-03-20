@@ -3,10 +3,11 @@ title: Concetti
 description: Scopri i concetti generali di e-commerce con Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '4481'
-ht-degree: 2%
+source-wordcount: '4439'
+ht-degree: 1%
 
 ---
 
@@ -174,7 +175,7 @@ Il sistema integrato gestisce i seguenti ruoli per mantenere i dati:
 * Autore/Marketing Manager che gestisce:
 
    * Contenuti di marketing per tutti i canali.
-   * Promozioni.
+   * Promozioni
    * Voucher.
    * Campagne.
 
@@ -254,7 +255,7 @@ I singoli attributi mantenuti per ciascun prodotto possono dipendere dal motore 
 
   Tag utilizzati per raggruppare i prodotti correlati.
 
-* **Categoria risorse predefinita**
+* **Categoria risorsa predefinita**
 
   Categoria predefinita per le risorse.
 
@@ -767,7 +768,7 @@ Vengono memorizzate diverse informazioni, tra cui:
 
   Il costo totale degli articoli ordinati.
 
-* **Imposte**
+* **Imposta**
 
   L’importo di eventuali imposte dovute sull’ordine.
 
@@ -787,7 +788,7 @@ Vengono memorizzate diverse informazioni, tra cui:
 
   Il metodo di pagamento.
 
-* **Stato dei pagamenti**
+* **Stato del pagamento**
 
   Stato del pagamento.
 
@@ -803,7 +804,7 @@ Vengono memorizzate diverse informazioni, tra cui:
 
   Qualsiasi numero di registrazione utilizzato dalla società di spedizione.
 
-* **Collegamento per tracciamento**
+* **Collegamento di tracciamento**
 
   Collegamento utilizzato per tenere traccia dell&#39;ordine durante la spedizione.
 
@@ -835,7 +836,7 @@ L’evasione e il tracciamento degli ordini sono gestiti dal motore di eCommerce
 
 ![chlimage_1-17](/help/sites-administering/assets/chlimage_1-17.png)
 
-## Pagamento {#checkout}
+## Ritira {#checkout}
 
 Il checkout è implementato con i moduli standard per l’AEM. Questo consente al responsabile marketing di personalizzare l’esperienza con i contenuti di marketing.
 

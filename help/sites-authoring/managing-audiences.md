@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 63%
@@ -79,7 +80,7 @@ Per creare un pubblico di Adobe Target:
 1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore boolean AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
 1. Fai clic su **Avanti**.
 1. Immetti un nome per il pubblico e fai clic su **Salva**.
-1. Clic **Salva**. Il pubblico è elencato nell’elenco Pubblico.
+1. Fai clic su **Salva**. Il pubblico è elencato nell’elenco Pubblico.
 
 ### Attributi e relative opzioni {#attributes-and-their-options}
 

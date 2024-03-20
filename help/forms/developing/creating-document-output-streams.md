@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '18956'
+source-wordcount: '18860'
 ht-degree: 0%
 
 ---
@@ -383,7 +384,7 @@ Crea un documento PDF utilizzando l’API di output (servizio web):
 
 È possibile utilizzare il servizio di output per creare un documento PDF/A. Poiché PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, tutti i font vengono incorporati e il file non viene compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuti audio e video. Analogamente ad altre attività del servizio di output, è possibile fornire sia una struttura di modulo che dati da unire a una struttura di modulo per creare un documento PDF/A.
 
-La specifica PDF/A-1 è costituita da due livelli di conformità, ovvero a e b. La differenza principale tra i due è relativa al supporto della struttura logica (accessibilità), che non è richiesto per il livello di conformità b. Indipendentemente dal livello di conformità, PDF/A-1 impone che tutti i font siano incorporati nel documento PDF/A generato.
+La specifica PDF/A-1 è costituita da due livelli di conformità, ovvero a e b. La differenza principale tra i due è relativa al supporto della struttura logica (accessibilità), che non è richiesto per il livello di conformità b. Indipendentemente dal livello di conformità, PDF/A-1 stabilisce che tutti i font sono incorporati nel documento PDF/A generato.
 
 Sebbene PDF/A sia lo standard per l&#39;archiviazione dei documenti PDF PDF, non è obbligatorio utilizzarlo per l&#39;archiviazione se un documento PDF standard soddisfa le esigenze della società. Lo scopo dello standard PDF/A è quello di stabilire un file PDF che possa essere memorizzato per un lungo periodo di tempo e che soddisfi i requisiti di conservazione dei documenti. Ad esempio, non è possibile incorporare un URL in un PDF/A perché nel tempo l’URL potrebbe diventare non valido.
 
@@ -903,7 +904,7 @@ Passa un documento recuperato dal repository utilizzando il servizio di output e
 
 1. Recupera la progettazione del modulo dall’archivio di AEM Forms.
 
-   Richiama `ResourceRepositoryClient` dell&#39;oggetto `readResourceContent` e passa un valore stringa che specifica la posizione URI nel file XDP. Esempio: `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Questo valore è obbligatorio. Questo metodo restituisce un `com.adobe.idp.Document` che rappresenta il file XDP.
+   Richiama `ResourceRepositoryClient` dell&#39;oggetto `readResourceContent` e passa un valore stringa che specifica la posizione URI nel file XDP. Ad esempio: `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Questo valore è obbligatorio. Questo metodo restituisce un `com.adobe.idp.Document` che rappresenta il file XDP.
 
 1. Esegui il rendering del modulo di PDF non interattivo.
 
@@ -1433,15 +1434,15 @@ Per recuperare un documento da stampare, utilizzare `generatePrintedOutput` meto
    <td><p>Crea un flusso di output xdc dpl203.xdc predefinito o personalizzato.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 300 DPI </p></td>
+   <td><p>DPL300DPI </p></td>
    <td><p>Crea un flusso di output DPL 300 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 406 DPI </p></td>
+   <td><p>DPL406DPI </p></td>
    <td><p>Crea un flusso di output DPL 400 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 600 DPI </p></td>
+   <td><p>DPL600DPI </p></td>
    <td><p>Crea un flusso di output DPL 600 DPI.</p></td>
   </tr>
   <tr>
@@ -1457,11 +1458,11 @@ Per recuperare un documento da stampare, utilizzare `generatePrintedOutput` meto
    <td><p>Crea un flusso di output IPL personalizzato.</p></td>
   </tr>
   <tr>
-   <td><p>IPL 300 DPI </p></td>
+   <td><p>IPL300DPI </p></td>
    <td><p>Crea un flusso di output IPL 300 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>IPL 400 DPI </p></td>
+   <td><p>IPL400DPI </p></td>
    <td><p>Crea un flusso di output IPL 400 DPI.</p></td>
   </tr>
   <tr>
@@ -1477,11 +1478,11 @@ Per recuperare un documento da stampare, utilizzare `generatePrintedOutput` meto
    <td><p>Crea un flusso di output TPCL personalizzato.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 305 DPI </p></td>
+   <td><p>TPCL305DPI </p></td>
    <td><p>Crea un flusso di output TPCL 305 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 600 DPI </p></td>
+   <td><p>TPCL600DPI </p></td>
    <td><p>Crea un flusso di output TPCL 600 DPI.</p></td>
   </tr>
   <tr>
@@ -1489,7 +1490,7 @@ Per recuperare un documento da stampare, utilizzare `generatePrintedOutput` meto
    <td><p>Crea un flusso di output ZPL 203 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>ZPL 300 DPI </p></td>
+   <td><p>ZPL300DPI </p></td>
    <td><p>Crea un flusso di output ZPL 300 DPI.</p></td>
   </tr>
  </tbody>

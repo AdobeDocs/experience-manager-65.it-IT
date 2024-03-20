@@ -8,7 +8,8 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
-source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
@@ -56,7 +57,7 @@ Espressione supportata per la clausola Date Picture:
    <td>Giorno del mese a due cifre (01-31) senza riempimento.<br /> </td>
   </tr>
   <tr>
-   <td>M</td>
+   <td>L</td>
    <td>1 o 2 cifre (1-12) del mese dell’anno.<br /> </td>
   </tr>
   <tr>

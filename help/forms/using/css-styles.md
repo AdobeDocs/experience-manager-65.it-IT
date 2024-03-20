@@ -8,7 +8,8 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: HTML5 Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
-source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 2%
@@ -108,7 +109,7 @@ Oltre alla classe type e name, il componente field contiene anche una classe CSS
    <td>Nome definito dall'utente</td>
   </tr>
   <tr>
-   <td>Didascalia</td>
+   <td>Sottotitoli descrittivi</td>
    <td>didascalia</td>
    <td>ND</td>
   </tr>
@@ -231,7 +232,7 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
 | Testo | text |
 | Immagine | immagine |
 | Rettangolo | rettangolo |
-| Line | linea |
+| Linea | linea |
 
 ## Applicazione di stili ad altre parti del modulo {#styling-other-parts-of-the-form}
 

@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 4%
@@ -21,7 +22,7 @@ Nelle seguenti aree è disponibile la documentazione sulle best practice:
 
 * [Risorse](#assets)
 * [Sites](#sites)
-* [Forms](#forms)
+* [Moduli](#forms)
 
 Per le best practice sull’amministrazione, la distribuzione, la manutenzione o lo sviluppo, consulta una delle seguenti sezioni:
 
@@ -69,7 +70,7 @@ Per la gestione e l’authoring dei contenuti del sito web, vengono descritte al
 | Strumenti di authoring | [Ambiente e strumenti di authoring](/help/sites-authoring/author-environment-tools.md) | Offre una panoramica degli strumenti utilizzati per l’authoring delle pagine. |
 | Organizzazione delle pagine | [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md) | Fornisce una panoramica su come organizzare al meglio le pagine, incluse le convenzioni di denominazione. |
 
-## Forms {#forms}
+## Moduli {#forms}
 
 |  |  |  |
 |---|---|---|

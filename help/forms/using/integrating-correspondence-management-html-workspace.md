@@ -5,9 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -56,7 +57,7 @@ Utilizza i seguenti passaggi per creare un’attività per riprodurre e inviare 
 
 1. Fai clic su Gestisci profili azione. Viene visualizzata la finestra di dialogo Gestisci profilo azione. Verificare che il processo di rendering e il processo di invio siano selezionati in modo appropriato.
 1. Per aprire la lettera con un file XML dati, sfogliare e selezionare il file di dati appropriato nel processo di preparazione dei dati.
-1. Fai clic su OK.
+1. Fare clic su OK.
 1. Definire le variabili per Output punto iniziale e Allegati attività. Le variabili definite contengono i dati Output punto iniziale e Allegati attività.
 1. (Facoltativo) Per aggiungere un altro utente al flusso di lavoro, trascina un selettore di attività, configuralo e assegnalo a un utente. Scrivere un wrapper personalizzato (esempio fornito di seguito) o scaricare e installare il DSC (fornito di seguito) per il modello di lettera esatta, l&#39;output del punto iniziale e l&#39;allegato dell&#39;operazione.
 

@@ -8,9 +8,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2666'
 ht-degree: 0%
 
 ---
@@ -400,7 +401,7 @@ Potrebbe essere necessario più tempo del solito perché l’istanza in standby 
 
 In alternativa, l’archivio primario può essere copiato manualmente in standby dopo l’esecuzione della compattazione sul principale, essenzialmente ricostruendo lo standby ogni volta che viene eseguita la compattazione.
 
-### Archivio dati raccolta oggetti inattivi {#data-store-garbage-collection}
+### Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
 
 È importante eseguire di tanto in tanto la Garbage Collection sulle istanze dell’archivio dati dei file. In caso contrario, i file binari eliminati rimangono nel file system e finiscono per riempire l’unità. Per eseguire la raccolta di oggetti inattivi, attieniti alla procedura seguente:
 

@@ -1,11 +1,13 @@
 ---
 title: Utilizzo di Smart Imaging con proporzioni pixel del dispositivo lato client
-description: Scopri come utilizzare le proporzioni pixel del dispositivo lato client con Smart Imaging in Adobe Experience Manager as a Cloud Service con Dynamic Media.
+description: Scopri come utilizzare le proporzioni pixel del dispositivo lato client con Smart Imaging in Adobe Experience Manager as a Cloud Service con Dynamic Medie.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
-source-git-commit: c8682118f15132063073df5cdc2b576b6e62a0c8
+solution: Experience Manager, Experience Manager Assets
+feature: Smart Imaging
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -70,4 +72,3 @@ I seguenti file JavaScript nel download sono forniti solo come riferimento di es
 >[!MORELIKETHIS]
 >
 >* [Imaging avanzato](/help/assets/imaging-faq.md)
-

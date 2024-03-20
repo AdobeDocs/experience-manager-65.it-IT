@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 4%
+source-wordcount: '1555'
+ht-degree: 2%
 
 ---
 
@@ -134,7 +135,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **Gestore estrazione pagina**: dall’elenco a comparsa, seleziona il gestore da utilizzare. Un gestore estrazione opera su un rendering specifico, scelto da un `RenditionPicker` correlato (consulta l’API `ExtractionHandler`). In uno standard [!DNL Experience Manager] installazione è disponibile quanto segue:
+* **Gestore estrazione pagina**: dall’elenco a comparsa, seleziona il gestore da utilizzare. Un gestore estrazione opera su un rendering specifico, scelto da un `RenditionPicker` (vedere `ExtractionHandler` API). In uno standard [!DNL Experience Manager] installazione è disponibile quanto segue:
    * IDML Export Extraction Handle (Handle di estrazione esportazione IDML): funziona sul `IDML` rendering generato nel passaggio MediaExtract.
 
 * **Nome pagina**: specifica il nome da assegnare alla pagina risultante. Se lasciato vuoto, il nome sarà &quot;page&quot; (o una derivata se &quot;page&quot; esiste già).

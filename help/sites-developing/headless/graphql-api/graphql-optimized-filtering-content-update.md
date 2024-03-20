@@ -1,13 +1,14 @@
 ---
 title: Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato
-description: Scopri come aggiornare i frammenti di contenuto per il filtro GraphQL ottimizzato in Adobe Experience Manager per la distribuzione di contenuti headless.
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+description: Scopri come aggiornare i frammenti di contenuto per il filtro ottimizzato per GraphQL in Adobe Experience Manager per la distribuzione di contenuti headless.
+exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 42%
+source-wordcount: '255'
+ht-degree: 37%
 
 ---
-
 
 # Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato {#updating-content-fragments-for-optimized-graphql-filtering}
 
@@ -47,8 +48,8 @@ Per eseguire la procedura, attenersi alla procedura descritta di seguito.
 
 ## Limitazioni {#limitations}
 
-Presta attenzione alle seguenti limitazioni:
+Tieni presente le seguenti limitazioni:
 
-* L’ottimizzazione delle prestazioni dei filtri di GraphQL sarà possibile solo dopo un aggiornamento completo di tutti i frammenti di contenuto (indicato dalla presenza della proprietà `cfGlobalVersion` per il nodo JCR `/content/dam`)
+* L’ottimizzazione delle prestazioni dei filtri di GraphQL sarà possibile solo dopo un aggiornamento completo di tutti i frammenti di contenuto (indicato dalla presenza della proprietà `cfGlobalVersion` per il nodo JCR `/content/dam`).
 
 * Se i frammenti di contenuto vengono importati da un pacchetto di contenuti (utilizzando `crx/de`) dopo l’esecuzione della procedura di aggiornamento, tali frammenti di contenuto non vengono considerati nei risultati della query GraphQL, fino a quando la procedura di aggiornamento non viene eseguita nuovamente.

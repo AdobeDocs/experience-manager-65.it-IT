@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2777'
-ht-degree: 4%
+source-wordcount: '2782'
+ht-degree: 3%
 
 ---
 
@@ -164,7 +165,7 @@ Quando inizia la raccolta dei dati, puoi selezionare:
 
   È possibile selezionare le date di inizio e di fine per la visualizzazione dei dati del rapporto.
 
-* **Intervallo**
+* **Interval**
 
   Mese, Settimana, Giorno, Ora possono essere selezionati per la scala e l’aggregazione del rapporto.
 
@@ -247,11 +248,11 @@ Questa è una posizione in cui il periodo per la raccolta degli snapshot per [Da
 
 * **Elaborazione rapporto**
 
-   * **aggiorna i dati automaticamente**
+   * **aggiorna automaticamente i dati**
 
      I dati del rapporto vengono aggiornati ogni volta che si aggiorna la definizione del rapporto.
 
-   * **aggiorna i dati manualmente**
+   * **aggiorna dati manualmente**
 
      Questa opzione può essere utilizzata per evitare ritardi causati da operazioni di aggiornamento automatico quando il volume di dati è elevato.
 
@@ -343,13 +344,13 @@ Per generare il rapporto, puoi specificare quanto segue:
 
   Il numero di ore (passate) da analizzare.
 
-  Predefiniti: `24`
+  Predefinito: `24`
 
-* **max. Risultati**
+* **max Risultati**
 
   Numero massimo di righe di output.
 
-  Predefiniti: `50`
+  Predefinito: `50`
 
 * **max Richieste**
 
@@ -363,7 +364,7 @@ Per generare il rapporto, puoi specificare quanto segue:
 
   Facoltativo; predefinito: vuoto
 
-* **Esegui ogni giorno alle (hh: mm)**
+* **Esegui ogni giorno alle (hh:mm)**
 
   Specificare un orario per l&#39;esecuzione automatica giornaliera del report.
 
@@ -546,11 +547,11 @@ In un’installazione standard dell’AEM sono preimpostate le seguenti autorizz
 
   `user administrators` - lettura e scrittura
 
-* **Report attività pagina**
+* **Rapporto attività pagina**
 
   `contributors` - lettura e scrittura
 
-* **Report componente**
+* **Rapporto sui componenti**
 
   `contributors` - lettura e scrittura
 
@@ -558,7 +559,7 @@ In un’installazione standard dell’AEM sono preimpostate le seguenti autorizz
 
   `contributors` - lettura e scrittura
 
-* **Report di istanze flusso di lavoro**
+* **Rapporto istanza flusso di lavoro**
 
   `workflow-users` - lettura e scrittura
 

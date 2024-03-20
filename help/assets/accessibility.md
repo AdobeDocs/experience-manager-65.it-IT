@@ -5,7 +5,8 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 0%
@@ -215,7 +216,7 @@ Quando si condividono le risorse, le seguenti funzionalità migliorano l’acces
 * La navigazione da tastiera è possibile.
 * I rapporti di contrasto aiutano a evidenziare alcune parti del sito web della documentazione.
 
-## Fornire feedback {#a11y-feedback}
+## Invia feedback {#a11y-feedback}
 
 Per fornire un feedback, porre domande e richiedere miglioramenti al prodotto relativi all’accessibilità, utilizza i metodi seguenti:
 

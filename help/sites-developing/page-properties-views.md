@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -68,14 +69,14 @@ Ad esempio, per impostazione predefinita [**Crea pagina** procedura guidata](/he
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   Tuttavia, ***deve*** non modificare nulla in `/libs` percorso.
+   >Tuttavia, ***deve*** non modificare nulla in `/libs` percorso.
    >
-   Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
+   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe benissimo essere sovrascritto quando applichi un hotfix o un feature pack).
    >
-   Il metodo consigliato per la configurazione e altre modifiche è:
+   >Il metodo consigliato per la configurazione e altre modifiche è:
    >
-   1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
-   1. Apporta le modifiche in `/apps`
+   >1. Ricrea l&#39;elemento richiesto, ovvero come esiste in `/libs`) in `/apps`
+   >1. Apporta le modifiche in `/apps`
 
 1. Imposta il `path` proprietà su `basic` per puntare alla sostituzione della scheda di base (vedi anche il passaggio successivo). Ad esempio:
 
@@ -99,7 +100,7 @@ Ad esempio, per impostazione predefinita [**Crea pagina** procedura guidata](/he
 
 >[!NOTE]
 >
-Quando configuri le proprietà della pagina da utilizzare con le Live Copy, consulta [Configurazione dei blocchi MSM nelle proprietà della pagina](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) per ulteriori dettagli.
+>Quando configuri le proprietà della pagina da utilizzare con le Live Copy, consulta [Configurazione dei blocchi MSM nelle proprietà della pagina](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) per ulteriori dettagli.
 
 ## Configurazione di esempio delle proprietà di pagina {#sample-configuration-of-page-properties}
 

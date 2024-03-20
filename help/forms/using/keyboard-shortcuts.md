@@ -6,7 +6,8 @@ content-type: reference
 topic-tags: author, correspondence-management
 feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 1%
@@ -46,10 +47,10 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 
 >[!NOTE]
 >
->Selezione multipla su un dispositivo desktop:
+Selezione multipla su un dispositivo desktop:
 >
->* Windows: Ctrl+clic sui componenti richiesti.
->* macOS: Comando+clic sui componenti richiesti.
+* Windows: Ctrl+clic sui componenti richiesti.
+* macOS: Comando+clic sui componenti richiesti.
 >
 
 ## Editor temi  {#themeeditor}
@@ -64,7 +65,7 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
+I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
 
 ## Browser contenuti  {#contentbrowser}
 
@@ -173,12 +174,12 @@ In questa sezione sono elencate varie tastiere e scelte rapide per l&#39;accessi
   </tr>
   <tr>
    <td><p>Sposta il cursore alla fine della pagina</p> </td> 
-   <td><p>Pagina giù</p> </td> 
+   <td><p>Pagina successiva</p> </td> 
    <td>Fn+Freccia giù</td> 
   </tr>
   <tr>
    <td><p>Sposta il cursore all'inizio della pagina</p> </td> 
-   <td><p>Pagina su</p> </td> 
+   <td><p>Pagina precedente</p> </td> 
    <td>Fn+Freccia Su</td> 
   </tr>
   <tr>

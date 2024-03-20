@@ -2,10 +2,11 @@
 title: Note sulla versione 2021 di Adobe Experience Manager Content and Commerce
 description: Note sulla versione 2021 di Adobe Experience Manager Content and Commerce.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 13%
+source-wordcount: '1088'
+ht-degree: 12%
 
 ---
 
@@ -26,8 +27,8 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
 | Componente aggiuntivo CIF | 2021.11.18.00 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
-| Componenti core CIF | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
-| Sito di riferimento CIF Venia | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
+| Componenti core CIF | 2.4.2. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
+| Sito di riferimento CIF Venia | 2021.12.2001 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
 
 ### Novità {#what-is-new-november}
 
@@ -45,7 +46,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 |:-------|:-----:|---------------------:|
 | Componente aggiuntivo CIF | 2021.10.20.02 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
 | Componenti core CIF | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
-| Sito di riferimento CIF Venia | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
+| Sito di riferimento CIF Venia | 2021.11.2001 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
 
 ### Novità {#what-is-new-october}
 
@@ -63,9 +64,9 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 2021.09.27 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
-| Componenti core CIF | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
-| Sito di riferimento CIF Venia | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
+| Componente aggiuntivo CIF | 27.9.2021 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| Componenti core CIF | 2.2.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
+| Sito di riferimento CIF Venia | 23.9.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
 
 ### Novità {#what-is-new-september}
 
@@ -92,8 +93,8 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
 | Componente aggiuntivo CIF | 2021.09.02 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
-| Componenti core CIF | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
-| Sito di riferimento CIF Venia | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
+| Componenti core CIF | 2.1.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
+| Sito di riferimento CIF Venia | 27.8.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
 ### Novità {#what-is-new-august}
 
@@ -117,9 +118,9 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 2021.07.21 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
-| Componenti core CIF | 2.0.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
-| Sito di riferimento CIF Venia | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
+| Componente aggiuntivo CIF | 21.7.2021 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| Componenti core CIF | 2,0,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
+| Sito di riferimento CIF Venia | 22.7.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
 ### Novità {#what-is-new-july}
 
@@ -136,7 +137,7 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 |:-------|:-----:|---------------------:|
 | Componente aggiuntivo CIF | 2021.06.18 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
 | Componenti core CIF | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
-| Sito di riferimento CIF Venia | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
+| Sito di riferimento CIF Venia | 2021.06.12. | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
 
 ### Novità {#what-is-new-june}
 
@@ -151,9 +152,9 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 2021.05.26 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| Componente aggiuntivo CIF | 26.5.2021 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
 | Componenti core CIF | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
-| Sito di riferimento CIF Venia | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
+| Sito di riferimento CIF Venia | 24.5.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
 
 ### Novità {#what-is-new-may}
 
@@ -169,9 +170,9 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | Componente | Versione | Dettagli |
 |:-------|:-----:|---------------------:|
-| Componente aggiuntivo CIF | 2021.04.22 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| Componente aggiuntivo CIF | 22.04.2021 | [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | Componenti core CIF | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
-| Sito di riferimento CIF Venia | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Sito di riferimento CIF Venia | 22.04.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novità {#what-is-new-april}
 
@@ -189,9 +190,9 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
-| Connettore CIF | 1.9.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componenti core CIF | 1.9.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| Sito di riferimento CIF Venia | 2021.03.25 | [Note sulla versione](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Connettore CIF | 1,9,0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componenti core CIF | 1,9,0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
+| Sito di riferimento CIF Venia | 25.3.2021 | [Note sulla versione](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novità
 
@@ -209,9 +210,9 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
-| Connettore CIF | 1.8.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componenti core CIF | 1.8.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
-| Sito di riferimento CIF Venia | 2021.02.24 | [Note sulla versione](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Connettore CIF | 1,8,0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componenti core CIF | 1,8,0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
+| Sito di riferimento CIF Venia | 24.02.2021 | [Note sulla versione](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novità {#what-is-new-february}
 
@@ -229,8 +230,8 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 
 | GitHub | Versione | Note dettagliate sulla versione |
 |:-------|:-----:|---------------------:|
-| Connettore CIF | 1.7.0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componenti core CIF | 1.7.0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
+| Connettore CIF | 1,7,0 | [Note sulla versione](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componenti core CIF | 1,7,0 | [Note sulla versione](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sito di riferimento CIF Venia | 2021.02.02 | [Note sulla versione](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novità {#what-is-new-january}

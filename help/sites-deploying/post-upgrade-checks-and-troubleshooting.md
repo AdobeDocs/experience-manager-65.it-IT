@@ -8,9 +8,10 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1793'
 ht-degree: 0%
 
 ---
@@ -79,11 +80,11 @@ In seguito all’aggiornamento, dovresti notare che la versione Oak è stata agg
 
 ### Cartella PreUpgradeBackup di Inspect {#inspect-preupgradebackup-folder}
 
-Durante l’aggiornamento, AEM tenta di eseguire il backup delle personalizzazioni e di memorizzarle sotto `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Per visualizzare questa cartella in CRXDE Lite, potrebbe essere necessario [abilita temporaneamente CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+Durante l’aggiornamento, AEM tenta di eseguire il backup delle personalizzazioni e di memorizzarle sotto `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Per visualizzare questa cartella in CRXDE Liti, potrebbe essere necessario [abilita temporaneamente CRXDE Liti](/help/sites-administering/enabling-crxde-lite.md).
 
 La cartella con il timestamp deve avere una proprietà denominata `mergeStatus` con un valore di `COMPLETED`. Il **to-process** la cartella deve essere vuota e la **sovrascritto** node indica quali nodi sono stati sovrascritti durante l’aggiornamento. Il contenuto sotto il nodo degli avanzi indica il contenuto che non è stato possibile unire in modo sicuro durante l’aggiornamento. Se l’implementazione dipende da uno qualsiasi dei nodi secondari (e non già installati dal pacchetto di codice aggiornato), deve essere unita manualmente.
 
-Disattiva CRXDE Lite seguendo questo esercizio se si trova in un ambiente di stage o produzione.
+Disattiva CRXDE Liti seguendo questo esercizio se si trova in un ambiente di stage o produzione.
 
 ### Convalida iniziale delle pagine {#initial-validation-of-pages}
 
@@ -171,7 +172,7 @@ Infine, verifica la presenza di errori di configurazione che JavaScript potrebbe
 
 In genere, le cause principali di questi problemi sono le stesse dei bundle non avviati o dei pacchetti non installati, con l’unica differenza che i problemi iniziano a verificarsi quando si utilizzano i componenti per la prima volta.
 
-Il modo per trattare il codice personalizzato errato è quello di eseguire prima i test di fumo per identificare la causa. Una volta trovato, guarda i consigli in questo [link] sezione dell&#39;articolo per i modi di fissarli.
+Il modo per trattare il codice personalizzato errato è quello di eseguire prima i test di fumo per identificare la causa. Una volta trovato, consulta i consigli in questo [link] sezione dell&#39;articolo per i modi di fissarli.
 
 ### Personalizzazioni mancanti in /etc {#missing-customizations-under-etc}
 

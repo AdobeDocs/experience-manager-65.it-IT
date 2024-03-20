@@ -7,10 +7,11 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 1%
+source-wordcount: '1601'
+ht-degree: 2%
 
 ---
 
@@ -45,17 +46,17 @@ Un modello è un nodo di tipo cq:Template e presenta le seguenti proprietà e no
   </tr>
   <tr>
    <td> allowedChildren </td>
-   <td> Stringa[]</td>
-   <td>Percorso di un modello che può essere figlio di questo modello.<br /> </td>
+   <td> String[]</td>
+   <td>Percorso di un modello che può essere un elemento figlio di questo modello.<br /> </td>
   </tr>
   <tr>
    <td> allowedParents</td>
-   <td> Stringa[]</td>
+   <td> String[]</td>
    <td>Percorso di un modello che può essere padre di questo modello.<br /> </td>
   </tr>
   <tr>
    <td> allowedPaths</td>
-   <td> Stringa[]</td>
+   <td> String[]</td>
    <td>Percorso di una pagina che può essere basata su questo modello.<br /> </td>
   </tr>
   <tr>
@@ -142,16 +143,16 @@ AEM viene fornito con vari modelli predefiniti disponibili. A volte può essere 
 
 Ad esempio, l’AEM viene fornito con diversi modelli, tra cui una pagina di contenuto e una pagina Home.
 
-| **Titolo** | **Component** | **Dove si trova** | **Scopo** |
+| **Titolo** | **Component** | **Dove si trova** | **Finalità** |
 |---|---|---|---|
-| Home page | homepage | geometrix | Il modello della home page del Geometrixx. |
+| Pagina home | homepage | geometrix | Il modello della home page del Geometrixx. |
 | Pagina contenuto | contentpage | geometrix | Il modello della pagina di contenuto del Geometrixx. |
 
 #### Visualizzazione dei modelli predefiniti {#displaying-default-templates}
 
 Per visualizzare un elenco di tutti i modelli nel repository, procedere come segue:
 
-1. In CRXDE Lite, apri **Strumenti** e fai clic su **Query**.
+1. In CRXDE Liti, apri **Strumenti** e fai clic su **Query**.
 
 1. Nella scheda Query
 1. As **Tipo**, seleziona **XPath**.
@@ -172,7 +173,7 @@ Quando gli stili vengono definiti nell’interfaccia utente tramite [Modalità P
 >
 >L’Adobe consiglia di applicare le progettazioni solo tramite [Modalità Progettazione](/help/sites-authoring/default-components-designmode.md).
 >
->La modifica dei progetti in CRXDE Lite, ad esempio, non è una best practice e l’applicazione di tali progetti può variare rispetto al comportamento previsto.
+>La modifica dei progetti in CRXDE Liti, ad esempio, non è una best practice e l’applicazione di tali progetti può variare rispetto al comportamento previsto.
 
 Se le progettazioni vengono applicate solo utilizzando la modalità Progettazione, le sezioni seguenti [Risoluzione percorso progettazione](/help/sites-developing/page-templates-static.md#design-path-resolution), [Albero decisionale](/help/sites-developing/page-templates-static.md#decision-tree)e [Esempio](/help/sites-developing/page-templates-static.md#example) non sono applicabili.
 
@@ -315,7 +316,7 @@ Consulta [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs
 
 Questo esempio illustra come consentire l’utilizzo di un modello per determinati percorsi di contenuto. I modelli disponibili per l’autore della pagina durante la creazione di pagine sono determinati dalla logica definita in [Disponibilità dei modelli](/help/sites-developing/templates.md#template-availability).
 
-1. In CRXDE Lite, individua il modello da utilizzare per la pagina, ad esempio il modello Newsletter.
+1. In CRXDE Liti, individua il modello da utilizzare per la pagina, ad esempio il modello Newsletter.
 1. Modificare il `allowedPaths` proprietà e altre proprietà utilizzate per [disponibilità dei modelli](/help/sites-developing/templates.md#template-availability). Ad esempio: `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` significa che questo modello è consentito in qualsiasi percorso in `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)

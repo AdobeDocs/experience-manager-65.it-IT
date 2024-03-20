@@ -5,10 +5,11 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '712'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +46,7 @@ L’estensione hybris di eCommerce Integration Framework è stata aggiornata per
 >
 >* Supporta le versioni 18.11 e successive.
 >* È necessario Java™ 7 per eseguire [server hybris 5.](https://www.sap.com/products/crm.html)
-* Il componente aggiuntivo hybris, il [Acceleratore Telco](https://www.sap.com/products/crm.html), non è supportato dall’estensione AEM.
+>* Il componente aggiuntivo hybris, il [Acceleratore Telco](https://www.sap.com/products/crm.html), non è supportato dall’estensione AEM.
 >
 
 ### Pacchetti necessari per l’e-commerce con ibridi {#packages-needed-for-ecommerce-with-hybris}
@@ -91,11 +92,11 @@ Per installare una configurazione completa (utilizzando il catalogo dimostrativo
 
 >[!CAUTION]
 >
-L’utilizzo del server ibrido richiede una licenza ibrida separata.
+>L’utilizzo del server ibrido richiede una licenza ibrida separata.
 
 >[!NOTE]
 >
-Per sviluppatori, [Documentazione API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) è disponibile anche per il download.
+>Per sviluppatori, [Documentazione API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) è disponibile anche per il download.
 
 ### Scarica e crea il server ibrido {#download-and-build-your-hybris-server}
 
@@ -103,17 +104,17 @@ I passaggi descritti in questa procedura consentono di scaricare e generare il s
 
 >[!CAUTION]
 >
-Le versioni Hybris precedenti alla 5.5.1 non sono supportate.
+>Le versioni Hybris precedenti alla 5.5.1 non sono supportate.
 
 >[!NOTE]
 >
-Per completare l&#39;operazione, è necessario [Scanalatura](https://groovy-lang.org/) installato nel sistema.
+>Per completare l&#39;operazione, è necessario [Scanalatura](https://groovy-lang.org/) installato nel sistema.
 
 1. Scarica il file **hybris Commerce Suite** distribuzione dal sito di download hybris.
 
    >[!CAUTION]
    >
-   Per accedervi è necessario un account (da hybris).
+   >Per accedervi è necessario un account (da hybris).
 
 1. Decomprimi il file di distribuzione nella posizione desiderata (nota come &lt;hybris-root-directory>).
 1. Dalla riga di comando, eseguire le operazioni seguenti:
@@ -127,11 +128,11 @@ Per completare l&#39;operazione, è necessario [Scanalatura](https://groovy-lang
 
    >[!NOTE]
    >
-   Durante l&#39;esecuzione:
+   >Durante l&#39;esecuzione:
    >
-   `ant clean all`
+   >`ant clean all`
    >
-   Premi `Return` quando richiesto.
+   >Premi `Return` quando richiesto.
 
 1. Scarica i seguenti file nella cartella principale della distribuzione ibrida estratta,
 
@@ -144,7 +145,7 @@ Per completare l&#39;operazione, è necessario [Scanalatura](https://groovy-lang
 
    >[!NOTE]
    >
-   Per hybris 5.6.0 e versioni successive, utilizzare il seguente file setup.groovy.
+   >Per hybris 5.6.0 e versioni successive, utilizzare il seguente file setup.groovy.
 
    5.6.0 e versioni successive
 
@@ -165,11 +166,11 @@ Per completare l&#39;operazione, è necessario [Scanalatura](https://groovy-lang
 
    >[!NOTE]
    >
-   A seconda del sistema in uso, il completamento di alcuni di questi passaggi potrebbe richiedere alcuni minuti.
+   >A seconda del sistema in uso, il completamento di alcuni di questi passaggi potrebbe richiedere alcuni minuti.
 
 1. Nel browser, accedi al **console di amministrazione di hybris** a:
 
-   [Http://localhost:9002](Http://localhost:9002)
+   [http://localhost:9002](http://localhost:9002)
 
 1. Clic **Inizializza** e quindi confermare l&#39;azione di inizializzazione (in quanto elimina i dati esistenti).
 
@@ -177,7 +178,7 @@ Per completare l&#39;operazione, è necessario [Scanalatura](https://groovy-lang
 
    >[!NOTE]
    >
-   A seconda del sistema, il completamento dell&#39;operazione potrebbe richiedere alcuni minuti.
+   >A seconda del sistema, il completamento dell&#39;operazione potrebbe richiedere alcuni minuti.
 
 ### Configurare l’archivio Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
 

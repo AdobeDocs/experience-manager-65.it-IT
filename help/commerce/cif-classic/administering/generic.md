@@ -6,7 +6,8 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '2907'
 ht-degree: 2%
@@ -304,7 +305,7 @@ Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
 1. Passa al catalogo.
 1. Seleziona **Visualizza proprietà**.
 1. Seleziona **Modifica**.
-1. Seleziona la **Risorse** scheda.
+1. Seleziona la scheda **Risorse**.
 1. Digita il valore richiesto **Categoria risorse di prodotto**.
 1. Seleziona **Fine**.
 1. [Rollout](#rolling-out-a-catalog) le tue modifiche.

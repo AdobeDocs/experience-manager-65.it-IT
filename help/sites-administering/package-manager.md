@@ -8,7 +8,8 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3565'
 ht-degree: 1%
@@ -79,7 +80,7 @@ Se si fa clic sul nome di un pacchetto, la voce nell&#39;elenco dei pacchetti vi
 È possibile eseguire diverse azioni su un pacchetto tramite i pulsanti della barra degli strumenti disponibili quando i dettagli del pacchetto vengono espansi.
 
 * [Modifica](#edit-package)
-* [Genera](#building-a-package)
+* [Build](#building-a-package)
 * [Reinstalla](#reinstalling-packages)
 * [Scarica](#downloading-packages-to-your-file-system)
 * [Condividi](#share)

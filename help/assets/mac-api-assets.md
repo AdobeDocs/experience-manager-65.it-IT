@@ -3,13 +3,14 @@ title: "[!DNL Assets] API HTTP."
 description: Creare, leggere, aggiornare, eliminare e gestire le risorse digitali tramite API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
-feature: APIs,Assets HTTP API,Developer Tools
+feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1743'
-ht-degree: 2%
+source-wordcount: '1775'
+ht-degree: 1%
 
 ---
 
@@ -124,7 +125,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 
 **Risposta**: la classe dell’entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;insieme completo di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell’entità, i clienti devono recuperare il contenuto dell’URL a cui punta il collegamento con un `rel` di `self`.
 
-## Crea una cartella . {#create-a-folder}
+## Crea una cartella {#create-a-folder}
 
 Crea un nuovo `sling`: `OrderedFolder` nel percorso specificato. Se un `*` viene fornito al posto del nome di un nodo, il servlet utilizza il nome del parametro come nome di nodo. Accettati come dati della richiesta è una rappresentazione Siren della nuova cartella o un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`, utile per creare una cartella direttamente da un modulo HTML. Inoltre, è possibile specificare le proprietà della cartella come parametri di query URL.
 

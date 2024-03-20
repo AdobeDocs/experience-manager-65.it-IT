@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 3%
+source-wordcount: '291'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 3%
 
 ## Introduzione {#introduction}
 
-Puoi contribuire a migliorare Adobe Experience Cloud inviando statistiche Adobi su come interagisci con Adobe Experience Manager (AEM). Queste informazioni non contengono dati sui visitatori del sito della tua azienda e vengono utilizzate solo per aiutare Adobe a fornire, supportare e migliorare l’esperienza utente.
+Puoi contribuire a migliorare Adobe Experience Cloud inviando Adobi statistici su come interagisci con Adobe Experience Manager (AEM). Queste informazioni non contengono dati sui visitatori del sito della tua azienda e vengono utilizzate solo per aiutare Adobe a fornire, supportare e migliorare l’esperienza utente.
 
 Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’interfaccia utente touch o la console web.
 
@@ -67,7 +68,7 @@ Puoi acconsentire (o rinunciare) utilizzando la console web come segue:
 
    ![usage_statisticscollectionedit](assets/usage_statisticscollectionedit.png)
 
-1. Seleziona la casella di controllo **Abilitato.** In alternativa, è possibile deselezionare la casella di controllo se si desidera rinunciare alla raccolta delle statistiche di utilizzo.
+1. Seleziona la **Abilitato** casella di controllo. In alternativa, è possibile deselezionare la casella di controllo se si desidera rinunciare alla raccolta delle statistiche di utilizzo.
 
    ![usage_statisticsselect](assets/usage_statisticsselect.png)
 

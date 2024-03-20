@@ -5,7 +5,8 @@ role: User, Developer
 level: Beginner, Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 4%
@@ -394,7 +395,7 @@ Devi essere membro del [forms-power-user group](forms-groups-privileges-tasks.md
    <td>Calcola</td>
    <td>Visibilità</td>
    <td>Convalida</td>
-   <td>Abilitato</td>
+   <td>Attivato</td>
    <td>Conferma valore</td>
    <td>Clic </td>
    <td>Opzioni</td>

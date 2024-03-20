@@ -9,10 +9,11 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '6035'
-ht-degree: 3%
+source-wordcount: '5926'
+ht-degree: 2%
 
 ---
 
@@ -104,7 +105,7 @@ Se utilizzi una soluzione WCM (Web Content Manager) di terze parti, devi integra
 >* Per aggiungere interattività al video, attiva Quickview.
 >* L’implementazione di Experience Manager non *non* utilizza un framework di integrazione eCommerce per richiamare i dati dei prodotti in Experience Manager da qualsiasi soluzione eCommerce come IBM® WebSphere® Commerce, Elastic Path, Hybris o Intershop. Consulta [Concetti di eCommerce in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 >
-Se l’implementazione di Experience Manager utilizza l’eCommerce, puoi saltare questa attività e passare all’attività successiva.
+>Se l’implementazione di Experience Manager utilizza l’eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
 Per iniziare, identifica le variabili dinamiche utilizzate dall’implementazione Quickview esistente in modo da poter mappare le miniature dei prodotti su Quickview corrispondente durante il processo di creazione video interattiva.
 
@@ -245,7 +246,7 @@ Se hai già caricato le risorse video e delle miniature, procedi a [Aggiungi int
 
 >[!NOTE]
 >
-Il formato video MXF non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Medie.
+>Il formato video MXF non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Medie.
 
 Se hai caricato video o immagini errati o desideri eliminare i video o le immagini caricati di cui non hai più bisogno, consulta [Eliminare risorse](/help/assets/manage-assets.md#deleting-assets).
 
@@ -268,11 +269,11 @@ Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
-Gli strumenti per la condivisione di social media nei video interattivi non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. Per risolvere questo problema, puoi utilizzare o creare predefiniti visualizzatore che non dispongono di strumenti per la condivisione sui social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
+>Gli strumenti per la condivisione di social media nei video interattivi non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. Per risolvere questo problema, puoi utilizzare o creare predefiniti visualizzatore che non dispongono di strumenti per la condivisione sui social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
 
 >[!NOTE]
 >
-Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
+>Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
 
 Le opzioni Annulla e Ripristina, posizionate nell&#39;angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
 
@@ -495,7 +496,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
 
    >[!NOTE]
    >
-   Quando salvi il video interattivo, con esso viene salvato automaticamente un file associato `.vtt`. Il `.vtt` il file viene salvato in `_VTT` cartella principale di **[!UICONTROL Risorse]**. Il file e la cartella sono necessari affinché il video interattivo possa essere riprodotto correttamente sul sito web. Non spostare, modificare o eliminare la cartella `_VTT` o il relativo contenuto.
+   >Quando salvi il video interattivo, con esso viene salvato automaticamente un file associato `.vtt`. Il `.vtt` il file viene salvato in `_VTT` cartella principale di **[!UICONTROL Risorse]**. Il file e la cartella sono necessari affinché il video interattivo possa essere riprodotto correttamente sul sito web. Non spostare, modificare o eliminare la cartella `_VTT` o il relativo contenuto.
 
 1. Pubblica il video interattivo. La pubblicazione crea il codice o l’URL da incorporare che alla fine copierai e incollerai nelle esperienze del sito web.
 
@@ -505,7 +506,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
 
    >[!NOTE]
    >
-   Per pubblicare un video acquistabile con Quickview, assicurati anche di pubblicare separatamente ciascuna delle risorse immagine correlate del video dalla tua area di e-commerce.
+   >Per pubblicare un video acquistabile con Quickview, assicurati anche di pubblicare separatamente ciascuna delle risorse immagine correlate del video dalla tua area di e-commerce.
 
    Dopo aver aggiunto i segmenti della timeline e pubblicato il video interattivo, puoi aggiungerlo alla pagina di destinazione del sito web esistente. Consulta [Integrare un video interattivo con il sito Web](#integrating-an-interactive-video-with-your-website).
 
@@ -531,9 +532,9 @@ Il codice di incorporamento copiato è impostato per un ambiente reattivo e si a
 
 >[!NOTE]
 >
-A questo punto, se hai aggiunto interattività solo con pagine web con collegamenti ipertestuali, hai chiuso.
+>A questo punto, se hai aggiunto interattività solo con pagine web con collegamenti ipertestuali, hai chiuso.
 >
-Tuttavia, se avete aggiunto un&#39;interattività per attivare una Quickview, le miniature accanto al video interattivo sono solo a scopo di visualizzazione e non sono ancora integrate con la Quickview esistente. In tal caso, è necessario integrare il video interattivo con Quickview esistente sul sito Web.
+>Tuttavia, se avete aggiunto un&#39;interattività per attivare una Quickview, le miniature accanto al video interattivo sono solo a scopo di visualizzazione e non sono ancora integrate con la Quickview esistente. In tal caso, è necessario integrare il video interattivo con Quickview esistente sul sito Web.
 
 **Esempio**
 
@@ -576,7 +577,7 @@ L’integrazione è semplice come rimuovere il codice di incorporamento video e 
 
 >[!NOTE]
 >
-Questa attività si applica solo se sei un cliente Experience Manager Assets autonomo.
+>Questa attività si applica solo se sei un cliente Experience Manager Assets autonomo.
 
 L’ultimo passaggio di questo processo consiste nell’integrare il video interattivo con un’implementazione Quickview esistente utilizzata sul sito web. Non esiste una soluzione all’integrazione che funzioni per tutti i casi. Ogni implementazione Quickview è univoca. Di conseguenza, è necessario un approccio specifico che coinvolga l’assistenza di una persona IT front-end.
 

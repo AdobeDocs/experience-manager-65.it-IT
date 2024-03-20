@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -41,4 +42,4 @@ Per utilizzare i token, devi replicare il file binario HMAC in tutte le istanze 
 >
 >Se utilizzi la cache del manifesto con l’applicazione web, assicurati di aggiungere &quot;**&amp;ast;**&quot; al manifesto per assicurarti che il token non metta offline la chiamata di generazione del token CSRF. Per ulteriori informazioni, consulta [link](https://www.w3.org/TR/offline-webapps/).
 >
->Per ulteriori informazioni sugli attacchi CSRF e sui modi per mitigarli, consulta la [Pagina OWASP per false richieste intersito](https://owasp.org/www-community/attacks/csrf).
+Per ulteriori informazioni sugli attacchi CSRF e sui modi per mitigarli, consulta la [Pagina OWASP per false richieste intersito](https://owasp.org/www-community/attacks/csrf).

@@ -3,9 +3,10 @@ title: Passaggi per l'aggiornamento delle installazioni di Application Server
 description: Scopri come aggiornare le istanze di AEM distribuite tramite Application Server.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---

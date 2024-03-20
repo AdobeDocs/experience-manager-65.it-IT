@@ -3,10 +3,11 @@ title: Configurare l’editor Rich Text per più editor locali.
 description: Crea più editor locali in Adobe Experience Manager configurando l’Editor Rich Text.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 2%
+source-wordcount: '437'
+ht-degree: 0%
 
 ---
 
@@ -119,4 +120,3 @@ Per informazioni generali sull’aggiunta di un editor locale, consulta il docum
 >[!MORELIKETHIS]
 >
 >* [Configurare l’editor Rich Text in Experience Manager](/help/sites-administering/rich-text-editor.md).
-

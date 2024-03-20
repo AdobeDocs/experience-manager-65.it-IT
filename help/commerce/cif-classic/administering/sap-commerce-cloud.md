@@ -5,9 +5,10 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1574'
 ht-degree: 2%
 
 ---
@@ -38,7 +39,7 @@ Dopo l’installazione è possibile configurare l’istanza:
 1. **Apri editor** per **Esempio di configurazione Solr per clothescatalog**.
 
 1. Sotto **Versioni del catalogo** utilizzare **Aggiungi versione catalogo** da aggiungere `outdoors-Staged` e `outdoors-Online` all&#39;elenco.
-1. **Salva la configurazione.**
+1. **Salva** la configurazione.
 1. Apri **Tipi di articoli SOLR** da aggiungere **Ordinamenti SOLR** a `ClothesVariantProduct`:
 
    * rilevanza (&quot;Rilevanza&quot;, punteggio)
@@ -83,7 +84,7 @@ Dopo l’installazione è possibile configurare l’istanza:
 
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
-1. **Salva le modifiche.**
+1. **Salva** le modifiche.
 1. Di nuovo da **Tipi di articoli SOLR**, regola `price` facet in base alle schermate seguenti. Come con `category`, doppio clic `price` per aprire **Proprietà indicizzata** scheda:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
@@ -92,7 +93,7 @@ Dopo l’installazione è possibile configurare l’istanza:
 
    ![chlimage_1-41](/help/sites-administering/assets/chlimage_1-41a.png)
 
-1. **Salva le modifiche.**
+1. **Salva** le modifiche.
 1. Apri **Sistema**, **Ricerca facet**, quindi **Procedura guidata dell&#39;indicizzatore**. Avvia un processo cronico:
 
    * **Operazione indicizzatore**: `full`

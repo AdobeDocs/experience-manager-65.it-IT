@@ -2,7 +2,8 @@
 title: Cockpit prodotto
 description: Utilizzo del pannello di comando prodotto, che fornisce una panoramica unificata dei cataloghi di prodotti collegati e dei contenuti associati.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%

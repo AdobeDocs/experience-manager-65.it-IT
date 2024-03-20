@@ -6,10 +6,11 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 3%
+source-wordcount: '1003'
+ht-degree: 1%
 
 ---
 
@@ -239,7 +240,7 @@ Come descritto sull’elemento padre [Ristrutturazione dell’archivio in AEM 6.
     <ol>
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ol>
-       <li>Pinterest Ricreare manualmente le nuove configurazioni di accesso social network tramite l’interfaccia utente di creazione AEM all’indirizzo <strong>Strumenti &gt; Cloud Service &gt; Configurazione accesso social network tramite Pinterest</strong>.<br /> oppure</li>
+       <li>Pinterest Ricreare manualmente le nuove configurazioni di accesso social network tramite l’interfaccia utente di creazione AEM all’indirizzo <strong>Strumenti &gt; Cloud Service &gt; Configurazione accesso social network tramite Pinterest</strong>.<br /> o</li>
        <li>Copia le nuove configurazioni cloud di Pinterest dalla posizione precedente alla nuova posizione appropriata in <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Aggiorna qualsiasi directory principale del sito AEM Communities per fare riferimento alla nuova configurazione di accesso social network di Pinterest impostando il <code>[cq:Page]/jcr:content@cq:conf</code> al percorso assoluto nella nuova posizione.</li>

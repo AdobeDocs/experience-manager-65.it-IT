@@ -9,10 +9,11 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 20%
+source-wordcount: '2338'
+ht-degree: 16%
 
 ---
 
@@ -176,9 +177,9 @@ Quindi, apporta una piccola modifica allo stile Teaser per vedere come `ui.front
 
    Queste librerie client non sono gestite da `ui.frontend` modulo. Queste librerie client includono invece le dipendenze CSS e JavaScript fornite da Adobe. La definizione di queste librerie client si trova in `.content.xml` sotto ogni cartella.
 
-   **clientlib-base**: si tratta di una libreria client vuota che incorpora semplicemente le dipendenze necessarie dai [componenti core di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it). La categoria è `venia.base`.
+   **clientlib-base** : si tratta di una libreria client vuota che incorpora semplicemente le dipendenze necessarie da [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it). La categoria è `venia.base`.
 
-   **clientlib-cif** : si tratta anche di una libreria client vuota che incorpora semplicemente le dipendenze necessarie da [Componenti core CIF dell’AEM](https://github.com/adobe/aem-core-cif-components). La categoria è `venia.cif`.
+   **clientlib-cif** : si tratta anche di una libreria client vuota che incorpora semplicemente le dipendenze necessarie da [Componenti core dell’CIF dell’AEM](https://github.com/adobe/aem-core-cif-components). La categoria è `venia.cif`.
 
    **clientlib-grid** - Questo include il CSS necessario per abilitare la funzione Griglia reattiva AEM. L&#39;utilizzo della griglia AEM consente [Modalità Layout](/help/sites-authoring/responsive-layout.md) nell’editor dell’AEM e consente agli autori di contenuti di ridimensionare i componenti. La categoria è `venia.grid` ed è incorporato nella `venia.base` libreria.
 
@@ -282,7 +283,7 @@ Sono disponibili diverse opzioni per includere una libreria lato client. Success
 
    Altri modelli utilizzano lo stesso criterio, **Pagina contenuto**, **Pagina di destinazione** e così via. Riutilizzando lo stesso criterio, possiamo essere certi che le stesse librerie client vengano incluse in tutte le pagine.
 
-   Quando si gestisce l’inclusione delle librerie client mediante l’uso di modelli e criteri di pagina, si può modificare il criterio a livello di modello. Ad esempio, supponiamo di dover gestire due marchi diversi nella stessa istanza di AEM. Ogni marchio ha un proprio stile o *tema* ma le librerie e il codice di base saranno gli stessi. Un altro esempio, nel caso di una libreria client più grande che si voglia visualizzare solo su determinate pagine, si può creare un criterio di pagina univoco solo per quel modello.
+   Quando si gestisce l’inclusione delle librerie client mediante l’uso di modelli e criteri di pagina, si può modificare il criterio a livello di modello. Ad esempio, supponiamo di dover gestire due marchi diversi nella stessa istanza di AEM. Ogni marchio ha un proprio stile o *tema* ma le librerie e il codice di base saranno gli stessi. Un altro esempio, se disponi di una libreria client più grande che desideri visualizzare solo su determinate pagine, puoi creare un criterio di pagina univoco solo per quel modello.
 
 ## Sviluppo Webpack locale {#local-webpack-development}
 
@@ -324,13 +325,13 @@ Il webpack-dev-server proxy le immagini e alcuni file CSS/JavaScript dell’ista
    $ npm start
    ```
 
-   Verrà avviato Webpack-dev-server su [http://localhost:8080/](Http://localhost:8080/)
+   Verrà avviato Webpack-dev-server su [http://localhost:8080/](http://localhost:8080/)
 
    >[!CAUTION]
    >
    >Se si verifica un errore relativo a Sass, arrestare il server ed eseguire il comando `npm rebuild node-sass` e ripetere i passaggi precedenti. Ciò può verificarsi se disponi di una versione diversa di `npm` e `node` quindi specificato nel progetto `aem-cif-guides-venia/pom.xml`.
 
-1. Accedi a [http://localhost:8080/](Http://localhost:8080/) in una nuova scheda con lo stesso browser di un’istanza di AEM registrata. Dovresti vedere la home page di Venia tramite il webpack-dev-server:
+1. Accedi a [http://localhost:8080/](http://localhost:8080/) in una nuova scheda con lo stesso browser di un’istanza di AEM registrata. Dovresti vedere la home page di Venia tramite il webpack-dev-server:
 
    ![Server di sviluppo Webpack sulla porta 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
@@ -433,7 +434,7 @@ Torna all’IDE e al progetto generato.
 
    ![Modifiche al teaser del server di sviluppo Webpack](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   Tuttavia, le modifiche non sono ancora state implementate nell&#39;AEM. Puoi scaricare il [file della soluzione qui](../assets/style-cif-component/_productteaser.scss).
+   Tuttavia, le modifiche non sono ancora state implementate nell&#39;AEM. È possibile scaricare [file di soluzione qui](../assets/style-cif-component/_productteaser.scss).
 
 1. Distribuisci gli aggiornamenti a AEM utilizzando le tue competenze Maven, da un terminale della riga di comando:
 
@@ -465,7 +466,7 @@ Durante la distribuzione di nuovi file CSS e/o JavaScript, è importante anche a
 
 AEM inoltre tenta di memorizzare nella cache le librerie client per migliorare le prestazioni. A volte, dopo la distribuzione del codice, vengono distribuiti i file meno recenti. Puoi annullare manualmente la validità della cache della libreria client di AEM utilizzando lo strumento [Rigenera librerie client](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Se si sospetta che AEM abbia memorizzato nella cache una versione precedente di una libreria client, è meglio annullare la validità della cache. La rigenerazione delle librerie è infatti inefficiente e richiede molto tempo.*
 
-## Congratulazioni {#congratulations}
+## Complimenti {#congratulations}
 
 Hai creato il tuo primo componente core CIF AEM e hai utilizzato un server di sviluppo Webpack.
 

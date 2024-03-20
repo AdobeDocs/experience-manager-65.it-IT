@@ -2,7 +2,8 @@
 title: Configurazione dei componenti predefiniti in modalità Progettazione
 description: Configurazione dei componenti di Adobe Experience Manager in modalità Progettazione.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%

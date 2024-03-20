@@ -7,7 +7,8 @@ topic-tags: components
 content-type: reference
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4896'
 ht-degree: 0%
@@ -194,7 +195,7 @@ Il **Pannello multiplo** la finestra di dialogo ha la stessa visualizzazione del
 
 * È definito da un nodo (tipo di nodo = `cq:Dialog`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`).
 * Visualizza tre schede (tipo di nodo = `cq:Panel`).
-* Ogni scheda ha due campi di testo (node type = , xtype = `cq:Widget`` [textfield](/help/sites-developing/xtypes.md#textfield)`).
+* Ogni scheda ha due campi di testo (node type = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
 * È definito dal nodo:
   `/apps/extjstraining/components/dialogbasics/multipanel`
 * Viene eseguito in formato json richiedendo:
@@ -319,7 +320,7 @@ La logica viene implementata tramite i listener di eventi e il codice JavaScript
 
 Per utilizzare **Arbitrario** finestra di dialogo:
 
-1. Sostituisci la finestra di dialogo del componente Finestra di dialogo dinamica con la **finestra di** dialogo **Arbitraria**:
+1. Sostituisci la finestra di dialogo del componente Finestra di dialogo **dinamica con la** finestra di **dialogo Arbitraria**:
 seguire i passaggi descritti nell&#39;Esempio [2: Finestra di dialogo a pannello singolo](#example-single-panel-dialog)
 1. Modifica il componente: La finestra di dialogo viene visualizzata come segue:
 
@@ -331,9 +332,9 @@ Il **Attiva/Disattiva campi** viene visualizzata una finestra con una scheda. La
 
 Le sue caratteristiche principali sono:
 
-* È definito da un nodo (node type = , xtype = `cq:Dialog`` [dialog](/help/sites-developing/xtypes.md#dialog)`).
-* Visualizza un widget (node type = , xtype = ) con un `tabpanel` pannello (node type = ` [tabpanel](/help/sites-developing/xtypes.md#textpanel)``cq:Widget``cq:Panel`).
-* Il pannello ha un widget selezione/casella di controllo (node type = , xtype = , type = ) e un widget dialogfieldset comprimibile (node type = , xtype = ) che è nascosto per impostazione predefinita, con due widget campo di testo (node type = , xtype = `cq:Widget`` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)`` [selection](/help/sites-developing/xtypes.md#selection)`` [textfield](/help/sites-developing/xtypes.md#textfield)`` [checkbox](/help/sites-developing/xtypes.md#checkbox)``cq:Widget``cq:Widget`).
+* È definito da un nodo (node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
+* Visualizza un `tabpanel` widget (node type = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#textpanel)`) con un pannello (node type = `cq:Panel`).
+* Il pannello ha un widget selezione/casella di controllo (node type = `cq:Widget`, xtype = ` [selection](/help/sites-developing/xtypes.md#selection)`, type = ` [checkbox](/help/sites-developing/xtypes.md#checkbox)`) e un widget dialogfieldset comprimibile (node type = `cq:Widget`, xtype = ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)`) che è nascosto per impostazione predefinita, con due widget campo di testo (node type = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
 * È definito da `togglefields` nodo in:
   `/apps/extjstraining/components/dynamicdialogs/togglefields`
 * Viene eseguito in formato json richiedendo:
@@ -404,7 +405,7 @@ La personalizzazione `multifield` widget (xtype = `ejstcustom`):
 * Sostituzioni `CQ.Ext.Component#initComponent` per aggiungere i tre campi:
    * `allowField` è un [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) oggetto di tipo &#39;select&#39;. optionsProvider è una configurazione dell&#39;oggetto Selection di cui viene creata un&#39;istanza con la configurazione optionsProvider dell&#39;oggetto CustomWidget definito nella finestra di dialogo
    * `otherField` è un [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) oggetto
-* Sostituisce i metodi `setValue`, , `getValue`e di CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) per impostare e `getRawValue` recuperare il valore di [CustomWidget con il formato:
+* Sostituisce i metodi `setValue`, `getValue`, e `getRawValue` di [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) per impostare e recuperare il valore di CustomWidget con il formato:
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`.
 * Si registra come &quot; `ejstcustom`xtype:
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
@@ -415,11 +416,11 @@ Il **Multifield personalizzato** la finestra di dialogo basata su widget viene v
 
 #### Esempio 2: Widget personalizzato `Treebrowse` {#example-custom-treebrowse-widget}
 
-La finestra di dialogo basata su widget personalizzato visualizza una finestra con una scheda contenente un widget di navigazione del percorso personalizzato **`Treebrowse`** . Quando si seleziona la freccia, viene visualizzata una finestra in cui è possibile esplorare una gerarchia e selezionare un elemento. Il percorso dell&#39;elemento viene quindi aggiunto al campo percorso e viene mantenuto quando la finestra di dialogo viene chiusa.
+La finestra di dialogo basata su widget personalizzato **`Treebrowse`** visualizza una finestra con una scheda contenente un widget di navigazione del percorso personalizzato. Quando si seleziona la freccia, viene visualizzata una finestra in cui è possibile esplorare una gerarchia e selezionare un elemento. Il percorso dell&#39;elemento viene quindi aggiunto al campo percorso e viene mantenuto quando la finestra di dialogo viene chiusa.
 
 La finestra di dialogo personalizzata `treebrowse` :
 
-* È definito da un nodo (node type = , xtype = `cq:Dialog`` [dialog](/help/sites-developing/xtypes.md#dialog)`).
+* È definito da un nodo (node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
 * Visualizza un elemento `tabpanel` widget (tipo nodo = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) contenente un pannello (tipo di nodo = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
 * Il pannello ha un widget personalizzato (tipo di nodo = `cq:Widget`, xtype = `ejstbrowse`)
 * È definito da `treebrowse` nodo in:
@@ -495,7 +496,7 @@ La finestra di dialogo basata su plug-in **dell&#39;Editor** Rich Text viene vis
 
 >[!NOTE]
 >
->Questo esempio mostra solo come implementare la parte lato client della logica: i segnaposto (testo ]*) devono quindi essere analizzati esplicitamente sul lato server (*[ ad esempio, nel componente JSP).
+>Questo esempio mostra solo come implementare la parte lato client della logica: i segnaposto (*[testo]*) devono quindi essere analizzati esplicitamente sul lato server (ad esempio, nel componente JSP).
 
 ### Panoramica struttura {#tree-overview}
 

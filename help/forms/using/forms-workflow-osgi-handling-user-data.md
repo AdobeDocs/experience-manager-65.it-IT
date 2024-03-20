@@ -5,7 +5,8 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 1%
@@ -59,7 +60,7 @@ I percorsi predefiniti dell’archivio in cui risiedono il payload, le bozze e l
    <td>/etc/fd/dashboard/instances/[id_server]/<br /> [data]/[workflow-instance]/bozza/[workitem]/</td>
   </tr>
   <tr>
-   <td><strong>Storia</strong></td>
+   <td><strong>Cronologia</strong></td>
    <td>/var/fd/dashboard/instances/[id_server]/<br /> [data]/[workflow_instance]/history/</td>
    <td>/etc/fd/dashboard/instances/[id_server]/<br /> [data]/[workflow_instance]/history/</td>
   </tr>

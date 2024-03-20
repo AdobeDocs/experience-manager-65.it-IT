@@ -9,7 +9,8 @@ docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 3%
@@ -232,7 +233,7 @@ In alternativa, è possibile utilizzare queste caselle di controllo con **[!UICO
 
    | Pianificazione selezionata | Cosa succede |
    | --- | --- |
-   | Ora | L&#39;azione selezionata viene eseguita immediatamente. |
+   | Adesso | L&#39;azione selezionata viene eseguita immediatamente. |
    | Più tardi | L&#39;azione selezionata viene eseguita nella data e ora specifiche selezionate. |
 
 1. Nell&#39;angolo superiore destro del **[!UICONTROL Gestisci pubblicazione - Opzioni]** pagina, seleziona **[!UICONTROL Successivo]**.

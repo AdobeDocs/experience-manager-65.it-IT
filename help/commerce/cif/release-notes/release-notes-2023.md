@@ -1,7 +1,9 @@
 ---
 title: Note sulla versione 2023 di AEM Content and Commerce
 description: Note sulla versione 2023 di Adobe Experience Manager Content and Commerce.
-source-git-commit: 2c940c9245cebfa091ea9117a027a1d539f27283
+exl-id: 00349400-6860-4e3c-ba56-fa12afc5db1d
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 15%

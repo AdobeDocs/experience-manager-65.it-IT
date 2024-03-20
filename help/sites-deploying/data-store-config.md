@@ -6,10 +6,11 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3549'
-ht-degree: 2%
+source-wordcount: '3476'
+ht-degree: 1%
 
 ---
 
@@ -174,7 +175,7 @@ Una volta scaricato, puoi installare e configurare il connettore S3 come segue:
 
    * `jcr_root/libs/system/config`
 
-   a
+   in
 
    * `<aem-install>/crx-quickstart/install`
 
@@ -236,7 +237,7 @@ Puoi utilizzare il file di configurazione con le opzioni descritte di seguito.
 | --- | --- | --- | --- |
 | accessKey | ID chiave di accesso per l’utente IAM con accesso al bucket. | | Sì, quando non si utilizzano i ruoli IAM. |
 | secretKey | Chiave di accesso segreta per l’utente IAM con accesso al bucket. | | Sì, quando non si utilizzano i ruoli IAM. |
-| cacheSize | Dimensione (in byte) della cache locale. | 64GB | No. |
+| cacheSize | Dimensione (in byte) della cache locale. | 64 GB | No. |
 | connectionTimeout | Imposta il tempo di attesa (in millisecondi) prima del timeout durante la creazione iniziale di una connessione. | 10000 | No. |
 | maxCachedBinarySize | I file binari con dimensione minore o uguale a questo valore (in byte) vengono memorizzati nella cache della memoria. | 17408 (17 KB) | No. |
 | maxConnections | Imposta il numero massimo di connessioni HTTP aperte consentite. | 50 | No. |

@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -151,7 +152,7 @@ I seguenti metodi di richiesta HTTP si applicano a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Crea un nuovo modello flusso di lavoro. Se il parametro <code>title</code> viene inviato, viene creato un nuovo modello con il titolo specificato. Associazione di una definizione di modello JSON come parametro <code>model</code> crea un nuovo modello di flusso di lavoro in base alla definizione fornita.<br /> A <code>201</code> risposta (<code>CREATED</code>) viene rinviato con un’intestazione di posizione contenente l’URL della nuova risorsa del modello di flusso di lavoro.<br /> Lo stesso accade quando una definizione di modello viene allegata come parametro di file denominato <code>modelfile</code>.<br /> In entrambi i casi <code>model</code> e <code>modelfile</code> parametri, un parametro aggiuntivo denominato <code>type</code> è richiesto per definire il formato di serializzazione. È possibile integrare nuovi formati di serializzazione utilizzando l’API OSGI. Con il motore del flusso di lavoro viene fornito un serializzatore JSON standard. Il tipo è JSON. Di seguito è riportato un esempio del formato.</td>
+   <td>Crea un nuovo modello di workflow. Se il parametro <code>title</code> viene inviato, viene creato un nuovo modello con il titolo specificato. Associazione di una definizione di modello JSON come parametro <code>model</code> crea un nuovo modello di flusso di lavoro in base alla definizione fornita.<br /> A <code>201</code> risposta (<code>CREATED</code>) viene rinviato con un’intestazione di posizione contenente l’URL della nuova risorsa del modello di flusso di lavoro.<br /> Lo stesso accade quando una definizione di modello viene allegata come parametro di file denominato <code>modelfile</code>.<br /> In entrambi i casi <code>model</code> e <code>modelfile</code> parametri, un parametro aggiuntivo denominato <code>type</code> è richiesto per definire il formato di serializzazione. È possibile integrare nuovi formati di serializzazione utilizzando l’API OSGI. Con il motore del flusso di lavoro viene fornito un serializzatore JSON standard. Il tipo è JSON. Di seguito è riportato un esempio del formato.</td>
   </tr>
  </tbody>
 </table>

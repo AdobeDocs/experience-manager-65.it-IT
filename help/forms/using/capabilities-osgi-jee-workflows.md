@@ -3,10 +3,11 @@ title: Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flus
 description: Azioni e funzionalità dei flussi di lavoro AEM basati su moduli sui flussi di lavoro OSGi e AEM Forms JEE
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 23%
+source-wordcount: '933'
+ht-degree: 20%
 
 ---
 
@@ -25,33 +26,33 @@ Puoi utilizzare la Casella in entrata AEM per eseguire e monitorare i flussi di 
   </tr>
   <tr>
    <td>Avvio di un processo, un'attività o un'applicazione modulo<br /> </td>
-   <td>Funzione supportata<br /> </td>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
+   <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Invio di attività</td>
-   <td>Funzione supportata<br /> </td>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
+   <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Assegnazione di un'attività a un gruppo</td>
-   <td>Funzione supportata<br /> </td>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
+   <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Invio a più route</td>
-   <td>Funzione supportata<br /> </td>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
+   <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Tracciamento cronologia e riepilogo attività</td>
-   <td>Funzione supportata<br /> </td>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
+   <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Notifiche e-mail</td>
-   <td>Funzione supportata<br /> </td>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
+   <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Riassegnazione delle attività</td>
@@ -109,7 +110,7 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
   </tr>
   <tr>
    <td>Moduli adattivi</td>
-   <td>Supportato</td>
+   <td>Funzione supportata</td>
    <td>Supportato<br /> </td>
   </tr>
   <tr>
@@ -119,12 +120,12 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
   </tr>
   <tr>
    <td>Firma a mano</td>
-   <td>Supportato</td>
+   <td>Funzione supportata</td>
    <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Modelli e-mail personalizzati</td>
-   <td>Supportato</td>
+   <td>Funzione supportata</td>
    <td>Supportato<br /> </td>
   </tr>
   <tr>
@@ -169,8 +170,8 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
   </tr>
   <tr>
    <td>Rendering dell’attività completata come modulo adattivo o documento PDF</td>
-   <td>Supportato</td>
-   <td>Supportato [4]</td>
+   <td>Funzione supportata</td>
+   <td>Supportati [4]</td>
   </tr>
   <tr>
    <td>Integrazione con Gestione della corrispondenza</td>
@@ -209,8 +210,8 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
   </tr>
   <tr>
    <td>Firma digitale</td>
-   <td>Funzione supportata<br /> </td>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
+   <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Pulsante Ripristina</td>
@@ -325,12 +326,12 @@ I flussi di lavoro AEM basati su moduli su OSGi e i flussi di lavoro AEM Forms J
   <tr>
    <td>Vista Manager</td>
    <td>Non supportato</td>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Cerca modelli</td>
    <td>Non supportato</td>
-   <td>Funzione supportata<br /> </td>
+   <td>Supportato<br /> </td>
   </tr>
   <tr>
    <td>Integrazione con applicazioni di terze parti</td>

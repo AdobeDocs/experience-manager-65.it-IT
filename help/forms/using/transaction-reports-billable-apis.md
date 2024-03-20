@@ -1,12 +1,13 @@
 ---
-title: API fatturabili per rapporti sulle transazioni
+title: API rapporti di transazioni fatturabili
 description: Elenco di tutte le API contabilizzate come transazioni
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 7%

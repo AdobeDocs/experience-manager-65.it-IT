@@ -2,10 +2,12 @@
 title: Guida introduttiva a Edge Delivery Service
 description: Guida introduttiva a Edge Delivery Service
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Assets
+feature: Edge Delivery Services
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '834'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -29,7 +31,7 @@ Edge Delivery è un set di sevizi componibili che consente un elevato grado di f
 
 Ad esempio, è possibile utilizzare il contenuto direttamente da Microsoft Word o Documenti Google. Ciò significa che i documenti provenienti da tali origini possono diventare pagine del sito Web. Inoltre, le intestazioni, gli elenchi, le immagini e gli elementi dei font possono essere trasferiti dalla sorgente iniziale al sito Web. Il nuovo contenuto verrà aggiunto immediatamente senza che sia necessario ricrearlo.
 
-Edge Delivery utilizza GitHub per consentire ai clienti di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, puoi scrivere contenuti nei documenti di Google o in Microsoft Word e le funzionalità del sito possono essere sviluppate utilizzando CSS e JavaScript in GitHub. Quando è tutto pronto, puoi utilizzare l’estensione del browser Sidekick per visualizzare in anteprima e pubblicare gli aggiornamenti dei contenuti.
+Edge Delivery utilizza GitHub per consentire ai clienti di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, puoi scrivere contenuti in Documenti Google o in Microsoft Word e le funzionalità del sito possono essere sviluppate utilizzando CSS e JavaScript in GitHub. Quando è tutto pronto, puoi utilizzare l’estensione del browser Sidekick per visualizzare in anteprima e pubblicare gli aggiornamenti dei contenuti.
 
 Ulteriori informazioni:
 
@@ -45,7 +47,7 @@ Puoi anche utilizzare Edge Delivery Services in combinazione con Adobe Target, A
 
 ## Accedere a Edge Delivery Services {#getting-access}
 
-È facile iniziare a utilizzare i Edge Delivery Services. Per iniziare, segui la [Guida introduttiva: tutorial per sviluppatori](https://www.hlx.live/developer/tutorial).
+È facile iniziare a utilizzare Edge Delivery Services. Per iniziare, segui la [Guida introduttiva: tutorial per sviluppatori](https://www.hlx.live/developer/tutorial).
 
 ## Ottenere assistenza da Adobe {#adobe-gethelp}
 
@@ -72,7 +74,7 @@ Per ulteriori informazioni, consulta [Utilizzo del bot di Slack](https://www.hlx
 Passaggi per registrare un ticket di assistenza tramite Admin Console:
 
 1. Aggiungi **Edge Delivery** nel titolo del ticket.
-2. Nella descrizione, fornisci i seguenti dettagli:
+2. Nella descrizione, includi i seguenti dettagli:
 
    * URL del sito web live. Ad esempio: [www.mydomain.com].
    * URL del sito web di origine (URL .hlx).

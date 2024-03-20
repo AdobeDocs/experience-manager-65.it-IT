@@ -10,10 +10,11 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c30630f0cd561256414a2883d29c9ee4be470ce1
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '11187'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -465,7 +466,7 @@ Contemporaneamente alla creazione di un caso di supporto Adobe per abilitare DAS
 
 1. Seleziona **[!UICONTROL Salva]**.
 
-1. Ora [utilizza l’Admin Console per avviare la creazione di un nuovo caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+1. Ora [utilizza l’Admin Console per avviare la creazione di un nuovo caso di supporto](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html?lang=it).
 1. Per creare un caso di supporto, attieniti alle istruzioni e accertati di fornire le seguenti informazioni:
 
    * Nome del contatto principale, e-mail, telefono.
@@ -594,7 +595,7 @@ Utilizza il [Guida di riferimento per i visualizzatori Dynamic Medie di Adobe](h
 
 ## Informazioni sul supporto di tracce multi-sottotitolo e multi-audio per video in Dynamic Medie{#about-msma}
 
-Con la funzionalità multi-sottotitoli e tracce audio multiple in Dynamic Medie, è possibile aggiungere facilmente più sottotitoli e tracce audio a un video primario. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. Puoi personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
+Con la funzionalità multi-sottotitoli e tracce audio multiple in Dynamic Medie, è possibile aggiungere facilmente più sottotitoli e tracce audio a un video primario. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
 
 ![Scheda Sottotitoli e tracce audio in Dynamic Medie insieme a una tabella che mostra i file di sottotitoli .VTT caricati e i file di tracce audio .MP3 caricati per un video.](assets-dm/msma-subtitle-audiotracks-tab.png)
 
@@ -744,7 +745,7 @@ Tuttavia, tutti i file di traccia audio caricati possono essere impostati come a
 >La riproduzione dell’audio predefinito può anche dipendere da quanto impostato nei seguenti browser:
 >
 >* Chrome - Viene riprodotto l&#39;audio predefinito impostato nel video.
-* Safari - Se la lingua predefinita è impostata in Safari, l&#39;audio viene riprodotto con la lingua predefinita impostata, se disponibile con il manifesto del video. In caso contrario, viene riprodotto l&#39;audio predefinito impostato come parte delle proprietà di un video.
+>* Safari - Se la lingua predefinita è impostata in Safari, l&#39;audio viene riprodotto con la lingua predefinita impostata, se disponibile con il manifesto del video. In caso contrario, viene riprodotto l&#39;audio predefinito impostato come parte delle proprietà di un video.
 
 **Per impostare l&#39;audio predefinito per un video con più tracce audio:**
 
@@ -773,7 +774,7 @@ Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/adding-dyna
 
 >[!NOTE]
 >
-La scheda di anteprima Experience Manager predefinita non mostra più sottotitoli e tracce audio. Il motivo è che questi brani sono associati a Dynamic Medie e possono essere visualizzati solo utilizzando l&#39;anteprima di Dynamic Medie Viewer.
+>La scheda di anteprima Experience Manager predefinita non mostra più sottotitoli e tracce audio. Il motivo è che questi brani sono associati a Dynamic Medie e possono essere visualizzati solo utilizzando l&#39;anteprima di Dynamic Medie Viewer.
 
 **Per visualizzare in anteprima un video con più sottotitoli e tracce audio:**
 
@@ -852,7 +853,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
 
 >[!IMPORTANT]
 >
-Adobe consiglia di: [abilitare la capacità di traccia multi-sottotitolo e multi-audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, sottotitoli e tracce audio ai video.
+>Adobe consiglia di: [abilitare la capacità di traccia multi-sottotitolo e multi-audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, sottotitoli e tracce audio ai video.
 
 Puoi estendere la portata dei tuoi video ai mercati globali aggiungendo sottotitoli ai singoli video o ai set di video adattivi. Aggiungendo i sottotitoli, si evita di duplicare l&#39;audio o di utilizzare madrelingua per registrare nuovamente l&#39;audio per ogni lingua. Il video viene riprodotto nella lingua in cui è stato registrato. I sottotitoli delle lingue straniere vengono visualizzati in modo che persone di lingue diverse possano ancora comprendere la porzione audio.
 
@@ -860,7 +861,7 @@ I sottotitoli codificati consentono inoltre una maggiore accessibilità alle per
 
 >[!NOTE]
 >
-Il lettore video utilizzato deve supportare la visualizzazione dei sottotitoli.
+>Il lettore video utilizzato deve supportare la visualizzazione dei sottotitoli.
 
 Vedi anche [Accessibilità in Dynamic Medie](/help/assets/accessibility-dm.md).
 
@@ -888,7 +889,7 @@ Consulta [Distribuisci contenuti statici (non immagine)](https://experienceleagu
 
    >[!NOTE]
    >
-   Per il supporto globale dei sottotitoli video in più lingue, lo standard WebVTT richiede la creazione di file .vtt e chiamate separati per ogni lingua che si desidera supportare.
+   >Per il supporto globale dei sottotitoli video in più lingue, lo standard WebVTT richiede la creazione di file .vtt e chiamate separati per ogni lingua che si desidera supportare.
 
    In genere, si desidera assegnare al file VTT della didascalia lo stesso nome del file video e aggiungerlo alla lingua locale, ad esempio -EN, -FR o -DE. In questo modo, è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
 
@@ -919,7 +920,7 @@ Per semplificare la visualizzazione e la navigazione dei video lunghi, aggiungi 
 
 >[!NOTE]
 >
-Il lettore video utilizzato deve supportare l’uso dei marcatori capitolo. I lettori video Dynamic Medie supportano i contrassegni dei capitoli, ma non i lettori video di terze parti.
+>Il lettore video utilizzato deve supportare l’uso dei marcatori capitolo. I lettori video Dynamic Medie supportano i contrassegni dei capitoli, ma non i lettori video di terze parti.
 
 Se lo desideri, puoi creare un visualizzatore video personalizzato con i capitoli e aggiungerlo al tuo marchio, invece di utilizzare un predefinito visualizzatore video. Per istruzioni sulla creazione di un visualizzatore HTML5 personalizzato con navigazione dei capitoli, nell’API SDK del visualizzatore AdobeHTML 5, fai riferimento all’intestazione &quot;Personalizzazione del comportamento con i modificatori&quot; sotto le classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulta la [API SDK di HTML5 Viewer](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentazione.
 

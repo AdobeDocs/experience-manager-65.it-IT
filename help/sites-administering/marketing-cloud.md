@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 5%
+source-wordcount: '825'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +50,7 @@ Per informazioni sull’integrazione dell’AEM con Analytics, consulta [Integra
 
 ## Integrazione con Adobe Target {#integrating-with-adobe-target}
 
-[Adobe Target viene utilizzato dagli esperti di marketing per progettare ed eseguire test online, creare all’istante segmenti di pubblico (in base al comportamento) e automatizzare il targeting di contenuti ed esperienze online.](https://business.adobe.com/it/products/target/adobe-target.html)
+[Adobe Target](https://business.adobe.com/it/products/target/adobe-target.html) viene utilizzato dagli esperti di marketing per progettare ed eseguire test online, creare all’istante segmenti di pubblico (in base al comportamento) e automatizzare il targeting di contenuti ed esperienze online.
 
 I consumatori online oggi hanno esigenze in continua evoluzione e si aspettano contenuti pertinenti, anche personalizzati, dall’ampia varietà di siti e fonti di contenuto tra cui possono scegliere. Per coinvolgere un pubblico online, è fondamentale che gli esperti di marketing online identifichino rapidamente quali offerte e contenuti sono rilevanti e interessanti per il proprio pubblico. Sulla base di questa conoscenza, gli esperti di marketing devono essere in grado di trasformare continuamente i loro siti e di indirizzare i contenuti appropriati a tipi di pubblico diversi.
 

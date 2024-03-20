@@ -5,10 +5,11 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 13%
+source-wordcount: '653'
+ht-degree: 12%
 
 ---
 
@@ -196,7 +197,7 @@ Questo esempio descrive come creare un componente che mostra e visualizza i meta
    </div>
    ```
 
-1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE Liti aggiungi un nodo `cq:editConfig` di tipo primario `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` che presenta un singolo valore `DELETE`.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE Liti aggiungi un nodo `cq:editConfig` di tipo primario `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` con un singolo valore di `DELETE`.
 
 1. Passa al browser e nella pagina di esempio (ad esempio, `asseteditor.html`) passa alla modalità progettazione e attiva il nuovo componente per il sistema paragrafo.
 

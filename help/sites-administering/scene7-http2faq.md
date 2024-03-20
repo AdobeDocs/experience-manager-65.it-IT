@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -50,7 +51,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 ## Qual è il processo per abilitare HTTP/2 per il mio account Dynamic Medie? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) e richiesta di passare a HTTP/2; non viene eseguito automaticamente.
+1. [Utilizza l’Admin Console per creare un caso di supporto](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html?lang=it) e richiesta di passare a HTTP/2; non viene eseguito automaticamente.
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
    * Nome del contatto principale, e-mail e numero di telefono.

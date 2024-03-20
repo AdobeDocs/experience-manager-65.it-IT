@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 0%
@@ -221,7 +222,7 @@ Per il servizio Crittografia sono disponibili le impostazioni seguenti.
 
 >[!NOTE]
 >
-Utilizza l’autenticazione semplice (nome utente e password) solo quando la connessione è protetta tramite SSL (utilizzando LDAPS).
+>Utilizza l’autenticazione semplice (nome utente e password) solo quando la connessione è protetta tramite SSL (utilizzando LDAPS).
 
 **Modalità di compatibilità:**
 
@@ -429,7 +430,7 @@ Per il servizio di configurazione di Microsoft SharePoint sono disponibili le im
 
 >[!NOTE]
 >
-Se il supporto offline è stato abilitato e poi lo disattivi, i profili di provisioning degli utenti vengono aggiornati immediatamente o non appena sono online. Se un utente lavora in modalità non in linea, tutte le attività in sospeso vengono restituite al relativo elenco Attività e tutti gli elementi nella coda, inclusi i moduli in sospeso, le attività e i moduli contenenti errori di convalida, vengono eliminati dalla coda.
+>Se il supporto offline è stato abilitato e poi lo disattivi, i profili di provisioning degli utenti vengono aggiornati immediatamente o non appena sono online. Se un utente lavora in modalità non in linea, tutte le attività in sospeso vengono restituite al relativo elenco Attività e tutti gli elementi nella coda, inclusi i moduli in sospeso, le attività e i moduli contenenti errori di convalida, vengono eliminati dalla coda.
 
 **Android:** Consente ai dispositivi Android di connettersi al server.
 
@@ -731,7 +732,7 @@ Se il percorso non è assoluto ma relativo, la cartella viene creata all’inter
 
 >[!NOTE]
 >
-Minore è la dimensione delle cartelle dei risultati, migliori saranno le prestazioni della cartella controllata. Ad esempio, se il carico stimato per la cartella controllata è di 1000 file all’ora, prova uno schema come `result/%Y%M%D%H` in modo che venga creata una nuova sottocartella ogni ora. Se il caricamento è più piccolo (ad esempio, 1000 file al giorno), puoi utilizzare un pattern come `result/%Y%M%D`.
+>Minore è la dimensione delle cartelle dei risultati, migliori saranno le prestazioni della cartella controllata. Ad esempio, se il carico stimato per la cartella controllata è di 1000 file all’ora, prova uno schema come `result/%Y%M%D%H` in modo che venga creata una nuova sottocartella ogni ora. Se il caricamento è più piccolo (ad esempio, 1000 file al giorno), puoi utilizzare un pattern come `result/%Y%M%D`.
 
 **Cartella area di visualizzazione:** Il nome predefinito per la cartella dell’area di visualizzazione all’interno della cartella controllata.
 
@@ -813,7 +814,7 @@ Vengono installati i profili di sicurezza predefiniti, che possono essere config
 
    >[!NOTE]
    >
-   I servizi di rendering e invio utilizzati con xfaForm, Document Form e variabili Form vengono sempre eseguiti utilizzando l’account utente System.
+   >I servizi di rendering e invio utilizzati con xfaForm, Document Form e variabili Form vengono sempre eseguiti utilizzando l’account utente System.
 
 1. Fare clic su Aggiungi entità per specificare le autorizzazioni di utenti e gruppi per questo servizio.
 1. Nella schermata Seleziona entità vengono visualizzati gli utenti e i gruppi configurati in Gestione utente. Se l’utente o il gruppo desiderato non è visualizzato, utilizza la funzione di ricerca per trovarlo. Fare clic sul nome di un utente o gruppo.

@@ -3,10 +3,11 @@ title: Integrazione di AEM e Adobe Commerce tramite Commerce integration framewo
 description: AEM e Adobe Commerce sono perfettamente integrati tramite la Commerce integration framework (CIF). L’CIF consente all’AEM di accedere a un’istanza di Adobe Commerce e comunicare con Adobe Commerce tramite GraphQL. Consente inoltre agli autori dell’AEM di utilizzare i selettori di prodotti e categorie e la console Prodotti per sfogliare i dati di prodotti e categorie recuperati on-demand da Adobe Commerce. Inoltre, CIF fornisce una vetrina pronta all’uso che può accelerare i progetti di commerce.
 thumbnail: aem-magento-architecture.jpg
 exl-id: f843784c-5ff7-41d1-97c5-13facb8459b2
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 29%
+source-wordcount: '343'
+ht-degree: 23%
 
 ---
 
@@ -29,11 +30,11 @@ Le chiamate API lato server vengono implementate utilizzando il [client GraphQL]
 
 Per i componenti lato client, creati con [React](https://reactjs.org/), viene utilizzato il [client Apollo](https://www.apollographql.com/docs/react/).
 
-## Architettura dei componenti core CIF di AEM {#cif-core-components}
+## Architettura dei componenti core CIF dell’AEM {#cif-core-components}
 
 ![Architettura dei componenti core CIF di AEM](../assets/cif-component-architecture.jpg)
 
-[Componenti core CIF dell’AEM](https://github.com/adobe/aem-core-cif-components) seguire modelli di progettazione e best practice molto simili a quelli [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components).
+[Componenti core dell’CIF dell’AEM](https://github.com/adobe/aem-core-cif-components) seguire modelli di progettazione e best practice molto simili a quelli [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components).
 
 La logica di business e la comunicazione back-end con Adobe Commerce per i componenti core CIF dell’AEM sono implementate in modelli Sling. Nel caso sia necessario personalizzare questa logica per soddisfare i requisiti specifici del progetto, è possibile utilizzare il Pattern di delega per modelli Sling.
 

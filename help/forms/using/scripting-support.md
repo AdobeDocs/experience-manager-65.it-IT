@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3916'
 ht-degree: 6%
@@ -568,7 +569,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td><strong>Eccezione</strong></td>
   </tr>
   <tr>
-   <td>colore</td>
+   <td>color</td>
    <td>La proprietà color descrive un colore univoco per l'oggetto pattern.</td>
    <td>
     <ul>
@@ -589,7 +590,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td><strong>Eccezione</strong></td>
   </tr>
   <tr>
-   <td>colore</td>
+   <td>color</td>
    <td>Le proprietà colore definiscono un colore di riempimento univoco.</td>
    <td>
     <ul>
@@ -610,7 +611,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td><strong>Eccezione</strong></td>
   </tr>
   <tr>
-   <td>colore</td>
+   <td>color</td>
    <td>La proprietà color descrive un colore univoco per un riempimento a gradiente lineare in un modulo.</td>
    <td>
     <ul>
@@ -648,7 +649,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td><strong>Eccezione</strong></td>
   </tr>
   <tr>
-   <td>colore</td>
+   <td>color</td>
    <td>La proprietà color descrive un colore univoco per l'oggetto pattern. </td>
    <td>
     <ul>
@@ -669,7 +670,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td><strong>Eccezione</strong></td>
   </tr>
   <tr>
-   <td>colore</td>
+   <td>color</td>
    <td>La proprietà color descrive un colore univoco per l'oggetto radiale</td>
    <td>
     <ul>
@@ -690,7 +691,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td><strong>Eccezione</strong></td>
   </tr>
   <tr>
-   <td>colore</td>
+   <td>color</td>
    <td>La proprietà color descrive un colore univoco per l'oggetto stipple.</td>
    <td>
     <ul>
@@ -748,7 +749,7 @@ Di seguito sono elencati i metodi e le proprietà JavaScript, FormCalc supportat
    <td><strong>Eccezione</strong></td>
   </tr>
   <tr>
-   <td>colore</td>
+   <td>color</td>
    <td>La proprietà color descrive un colore univoco per l'oggetto corner.</td>
    <td>
     <ul>
@@ -1342,7 +1343,7 @@ Sono supportati i seguenti eventi XFA lato client:
 * Convalida
 * Calcola
 * Clic
-* Invio
+* Inserisci
 * Esci
 * Cambia
 * ValidationState

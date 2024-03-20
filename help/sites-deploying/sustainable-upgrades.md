@@ -8,9 +8,10 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -59,7 +60,7 @@ Per rendere più sicuro e facile per i clienti capire quali aree di **/libs** so
 
 >[!NOTE]
 >
-Questi criteri vengono applicati solo ai meccanismi basati su percorsi di ricerca Sling. Altre aree di **/libs** come una libreria lato client può essere contrassegnata come `Internal`, ma può ancora essere utilizzato con l’inclusione clientlib standard. In questi casi è importante che il cliente continui a rispettare la classificazione interna.
+>Questi criteri vengono applicati solo ai meccanismi basati su percorsi di ricerca Sling. Altre aree di **/libs** come una libreria lato client può essere contrassegnata come `Internal`, ma può ancora essere utilizzato con l’inclusione clientlib standard. In questi casi è importante che il cliente continui a rispettare la classificazione interna.
 
 #### Indicatori del tipo di contenuto CRXDE Liti {#crxde-lite-content-type-indicators}
 
@@ -81,9 +82,9 @@ I mixin applicati in CRXDE Liti mostrano nodi di contenuto e strutture contrasse
 
 >[!NOTE]
 >
-A partire da AEM 6.5, Adobe consiglia di utilizzare il rilevatore pattern per rilevare le violazioni dell’accesso ai contenuti. I rapporti del rilevatore pattern sono più dettagliati, rilevano più problemi e riducono la probabilità di falsi positivi.
+>A partire da AEM 6.5, Adobe consiglia di utilizzare il rilevatore pattern per rilevare le violazioni dell’accesso ai contenuti. I rapporti del rilevatore pattern sono più dettagliati, rilevano più problemi e riducono la probabilità di falsi positivi.
 >
-Per ulteriori informazioni, consulta [Valutazione della complessità dell’aggiornamento con il rilevatore pattern](/help/sites-deploying/pattern-detector.md).
+>Per ulteriori informazioni, consulta [Valutazione della complessità dell’aggiornamento con il rilevatore pattern](/help/sites-deploying/pattern-detector.md).
 
 L’AEM 6.5 viene fornito con un controllo di integrità per avvisare i clienti se il contenuto sovrapposto o di riferimento viene utilizzato in modo incoerente con la classificazione del contenuto.
 
