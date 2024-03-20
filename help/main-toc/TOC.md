@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
 workflow-type: tm+mt
-source-wordcount: '7397'
+source-wordcount: '7406'
 ht-degree: 20%
 
 ---
@@ -619,6 +619,7 @@ ht-degree: 20%
       + [Creare componenti core basati sul modulo adattivo](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Creare e utilizzare frammenti di Forms adattivi in un modulo adattivo](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Creazione di temi per Forms adattivo basato su Componenti core](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+      + [Creare e utilizzare funzioni personalizzate in un modulo adattivo](/help/forms/using/create-and-use-custom-functions.md)
       + [Creazione e utilizzo di un gestore di errori personalizzato per i Componenti core basati su Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
    + Forms adattivo - Authoring di base {#adaptive-forms-basic-authoring}
       + [Best practice per l’utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md)
@@ -889,7 +890,7 @@ ht-degree: 20%
       + [Creazione del layout personalizzato della barra degli strumenti](/help/forms/using/creating-custom-toolbar-layout.md)
       + [Visualizzazione dei componenti in base al modello utilizzato](/help/forms/using/displaying-components-based-on-template.md)
       + [Creazione di temi di moduli adattivi personalizzati](/help/forms/using/creating-custom-adaptive-form-themes.md)
-   + Rapporti sulle transazioni {#transaction-reports}
+   + Rapporti di transazioni {#transaction-reports}
       + [Panoramica sulla generazione di rapporti sulle transazioni](/help/forms/using/transaction-reports-overview-jee-osgi.md)
       + Rapporti sulle transazioni per AEM Forms su OSGi {#transaction-reports-osgi}
          + [Rapporti sulle transazioni](/help/forms/using/transaction-reports-overview.md)
