@@ -3,12 +3,12 @@ title: Best practice per l’utilizzo dei moduli adattivi
 description: Spiega le best practice per la configurazione di un progetto AEM Forms, lo sviluppo di moduli adattivi e l’ottimizzazione delle prestazioni del sistema AEM Forms.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 474a14a247afecdd8415f75997279d1ecd394cda
 workflow-type: tm+mt
-source-wordcount: '4668'
+source-wordcount: '5504'
 ht-degree: 0%
 
 ---
@@ -355,5 +355,66 @@ Una delle sfide principali per le organizzazioni è la gestione dei dati persona
 
 * Utilizza un archivio esterno sicuro come il database per memorizzare i dati delle bozze e dei moduli inviati. Consulta [Configurazione dell’archiviazione esterna per le bozze e i dati dei moduli inviati](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Utilizza il componente modulo Termini e condizioni per ottenere il consenso esplicito dell’utente prima di abilitare il salvataggio automatico. In questo caso, abilita il salvataggio automatico solo quando l’utente accetta le condizioni nel componente Termini e condizioni.
+
+## Scegli l’editor di regole, l’editor di codice o le librerie client personalizzate per il modulo adattivo {#RuleEditor-CodeEditor-ClientLibs}
+
+### Editor regole {#rule-editor}
+
+<!--The AEM Forms Rule Editor offers predefined functions for defining rules in adaptive forms without extensive programming. It facilitates the implementation of conditional logic, data validation, and integration with external sources. This visual interface is especially valuable for business users and form designers, enabling them to create dynamic and complex rules with ease, here we discusss few use cases where rule editor allows you to:-->
+
+L’editor di regole di AEM Forms fornisce un’interfaccia visiva per la creazione e la gestione delle regole, riducendo la necessità di ricorrere a estese funzioni di codifica. Può essere particolarmente utile per gli utenti aziendali o i progettisti di moduli che non dispongono di competenze avanzate di programmazione ma devono definire e mantenere regole di business all’interno dei moduli. A questo proposito vengono descritti alcuni casi d’uso in cui l’editor di regole consente di:
+
+* <!-- Allows you --> Definire le regole aziendali per i moduli senza la necessità di una programmazione estesa.
+* <!-- Use the Rule Editor when you need --> Per implementare la logica condizionale nei moduli. Ciò include la visualizzazione o l&#39;eliminazione di elementi modulo, la modifica dei valori dei campi in base a determinate condizioni o la modifica dinamica del comportamento dei moduli.
+* <!--When you want --> Per applicare le regole di convalida dei dati all’invio di moduli, è possibile utilizzare l’Editor di regole per definire le condizioni di convalida.
+* <!-- When you need --> Per integrare i moduli con origini dati o servizi esterni, l&#39;editor di regole consente di definire regole per il recupero, la visualizzazione o la modifica dei dati durante le interazioni dei moduli.
+* <!-- If you want -->Per creare moduli dinamici e interattivi che rispondano alle azioni dell’utente, l’Editor regole consente di definire regole che disciplinano il comportamento degli elementi del modulo in tempo reale.
+
+L’editor di regole è disponibile sia per i componenti di AEM Forms Foundation che per i componenti core.
+
+### Editor di codice {#code-editor}
+
+L’editor di codice è uno strumento all’interno di Adobe Experience Manager (AEM) Forms che consente di scrivere script personalizzati e codice per funzionalità più complesse e avanzate nei moduli. Di seguito vengono illustrati alcuni casi d’uso:
+
+* Quando devi implementare una logica o un comportamento lato client personalizzato che vada oltre le funzionalità dell’Editor regole di AEM Forms. L’editor di codice consente di scrivere codice JavaScript per gestire interazioni, calcoli o convalide complesse.
+* Se il modulo richiede l&#39;elaborazione lato server o l&#39;integrazione con sistemi esterni, è possibile utilizzare l&#39;editor di codice per scrivere script personalizzati lato server. Puoi accedere all’API guideBridge nell’editor di codice per implementare qualsiasi logica complessa su eventi e oggetti di modulo.
+* Quando hai bisogno di interfacce utente altamente personalizzate che vanno oltre le funzionalità standard dei componenti di AEM Forms, l’editor di codice ti consente di implementare stili e comportamenti personalizzati o anche di creare componenti di moduli personalizzati.
+* Se il modulo include operazioni asincrone, ad esempio il caricamento di dati asincroni, è possibile utilizzare l&#39;editor di codice per gestire tali operazioni tramite codice JavaScript asincrono personalizzato.
+
+È importante notare che l’utilizzo dell’editor di codice richiede una buona conoscenza dell’architettura JavaScript e AEM Forms. Inoltre, durante l’implementazione del codice personalizzato, assicurati di seguire le best practice, di rispettare le linee guida sulla sicurezza e di testare accuratamente il codice per evitare potenziali problemi negli ambienti di produzione. Puoi implementare un callback per FDM utilizzando l’editor di codice.
+
+L’editor di codice è disponibile solo per il componente AEM Forms Foundation. Per i componenti core modulo adattivo, puoi utilizzare funzioni personalizzate per creare regole di modulo personalizzate, descritte nella sezione successiva.
+
+### Funzioni personalizzate {#custom-client-libs}
+
+L’utilizzo di librerie client personalizzate in AEM Forms (Adobe Experience Manager Forms) può essere utile in vari scenari per migliorare la funzionalità, lo stile o il comportamento dei moduli. Di seguito sono riportate alcune situazioni in cui l’utilizzo di librerie client personalizzate potrebbe essere appropriato:
+
+* Se devi implementare una progettazione o un branding univoco per i moduli che vada oltre le funzionalità delle opzioni di stile predefinite fornite da AEM Forms, puoi scegliere di creare librerie client personalizzate per controllare l’aspetto.
+* Quando hai bisogno di una logica personalizzata lato client, riutilizzabilità dei metodi in più moduli o comportamenti che non possono essere raggiunti tramite le funzioni standard di AEM Forms. Ad esempio interazioni di moduli dinamici, convalida personalizzata o integrazione con librerie di terze parti.
+* Migliorare le prestazioni dei moduli ottimizzando e riducendo al minimo le risorse lato client. Le librerie client personalizzate possono essere utilizzate per raggruppare e comprimere file JavaScript e CSS, riducendo il tempo di caricamento complessivo della pagina.
+* Quando devi integrare librerie JavaScript o framework aggiuntivi non inclusi nella configurazione predefinita di AEM Forms. Questo potrebbe essere necessario per funzioni come selettori data, grafici o altri componenti interattivi migliorati.
+
+Prima di decidere di utilizzare librerie client personalizzate, è importante considerare il sovraccarico di manutenzione, i potenziali conflitti con aggiornamenti futuri e il rispetto delle best practice. Assicurati che le personalizzazioni siano ben documentate e testate per evitare problemi durante gli aggiornamenti o quando collabora con altri sviluppatori.
+
+>[!NOTE]
+> La funzione personalizzata è disponibile sia per i componenti di AEM Forms Foundation che per i componenti core.
+
+**Vantaggi delle funzioni personalizzate:**
+
+**Funzioni personalizzate** offrono un notevole vantaggio rispetto al **Editor di codice** perché offre una netta separazione tra contenuto e codice, migliorando la collaborazione e semplificando i flussi di lavoro. Si consiglia di utilizzare funzioni personalizzate per i seguenti vantaggi:
+
+* **Utilizza facilmente il controllo delle versioni come Git:**
+   * L’isolamento del codice dai contenuti riduce in modo significativo i conflitti Git durante la gestione dei contenuti e promuove un archivio ben organizzato.
+   * Le funzioni personalizzate sono utili per progetti con più collaboratori che lavorano simultaneamente.
+
+* **Vantaggi tecnici:**
+   * Le funzioni personalizzate offrono modularità e incapsulamento.
+   * I moduli possono essere sviluppati, testati e manutenuti in modo indipendente.
+   * Migliora la riutilizzabilità e la manutenzione del codice.
+
+* **Processo di sviluppo efficiente:**
+   * La modularità consente agli sviluppatori di concentrarsi su funzionalità specifiche.
+   * Riduce il carico di lavoro degli sviluppatori riducendo la complessità dell&#39;intera base di codice per un processo di sviluppo più efficiente.
+
 
 
