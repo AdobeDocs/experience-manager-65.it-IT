@@ -7,7 +7,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20fb57a51e47562a290e3608a2fe080a39774998
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 I moduli adattivi offrono un’esperienza di compilazione dei moduli ottimizzata e semplificata per gli utenti finali con funzionalità di scripting dinamico. Consente di scrivere espressioni per aggiungere vari comportamenti, ad esempio mostrare/nascondere campi e pannelli dinamici. Consente inoltre di aggiungere campi calcolati, rendere i campi di sola lettura, aggiungere logica di convalida e molto altro. Il comportamento dinamico si basa sull’input dell’utente o sui dati precompilati.
 
-JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l’elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l’elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consulta [Riferimento API della libreria JavaScript per i moduli adattivi.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 ## Best practice per la scrittura di espressioni {#best-practices-for-writing-expressions}
 
@@ -35,7 +35,7 @@ I pannelli ripetuti sono istanze di un pannello che vengono aggiunte o rimosse d
 * Per creare un pannello ripetuto, nella finestra di dialogo del pannello, apri le impostazioni e imposta il valore del campo conteggio massimo su più di 1.
 * Il valore di conteggio minimo delle impostazioni di ripetizione del pannello può essere uno o più ma non può essere superiore al valore di conteggio massimo.
 * Quando un’espressione fa riferimento a un campo di un pannello ripetuto, i nomi dei campi nell’espressione vengono risolti nell’elemento ripetuto più vicino.
-* I moduli adattivi forniscono alcune funzioni speciali per semplificare il calcolo per i pannelli ripetibili come somma, conteggio, min, max, filtro e molte altre. Per l’elenco completo delle funzioni, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
+* I moduli adattivi forniscono alcune funzioni speciali per semplificare il calcolo per i pannelli ripetibili come somma, conteggio, min, max, filtro e molte altre. Per l’elenco completo delle funzioni, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 * Le API per la manipolazione delle istanze del pannello ripetuto sono:
 
    * Per aggiungere un’istanza del pannello: `panel1.instanceManager.addInstance()`
@@ -81,7 +81,7 @@ L’espressione di calcolo viene utilizzata per calcolare automaticamente il val
 
 ### Espressione clic {#click-expression}
 
-L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un pulsante. GuideBridge fornisce le API per eseguire varie funzioni, ad esempio l&#39;invio e la convalida, utilizzate insieme all&#39;espressione di clic. Per un elenco completo delle API, consulta [API di GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un pulsante. GuideBridge fornisce le API per eseguire varie funzioni, ad esempio l&#39;invio e la convalida, utilizzate insieme all&#39;espressione di clic. Per un elenco completo delle API, consulta [API di GuideBridge.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 **Applicabile a**: campi pulsante
 
@@ -212,7 +212,7 @@ Formato di visualizzazione può essere utilizzato per visualizzare i dati in for
 
 ### GuideBridge - API ed eventi {#guidebridge-apis-and-events}
 
-GuideBridge è una raccolta di API che possono essere utilizzate per interagire con i moduli adattivi nel modello di memoria in un browser. Per un&#39;introduzione dettagliata all&#39;API di Guide Bridge, ai metodi di classe e agli eventi esposti, vedere [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+GuideBridge è una raccolta di API che possono essere utilizzate per interagire con i moduli adattivi nel modello di memoria in un browser. Per un&#39;introduzione dettagliata all&#39;API di Guide Bridge, ai metodi di classe e agli eventi esposti, vedere [Riferimento API della libreria JavaScript per i moduli adattivi.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ Per utilizzare GuideBridge dopo l&#39;inizializzazione del modulo (il `bridgeIni
 
 #### Eventi GuideBridge {#guidebridge-events}
 
-GuideBridge fornisce inoltre alcuni eventi per gli script esterni nella pagina di hosting. Gli script esterni possono ascoltare questi eventi ed eseguire varie operazioni. Ad esempio, ogni volta che il nome utente di un modulo cambia, cambia anche il nome visualizzato nell’intestazione della pagina. Per maggiori dettagli su tali eventi, vedi [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge fornisce inoltre alcuni eventi per gli script esterni nella pagina di hosting. Gli script esterni possono ascoltare questi eventi ed eseguire varie operazioni. Ad esempio, ogni volta che il nome utente di un modulo cambia, cambia anche il nome visualizzato nell’intestazione della pagina. Per maggiori dettagli su tali eventi, vedi [Riferimento API della libreria JavaScript per i moduli adattivi.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 Utilizza il seguente codice per registrare i gestori:
 
