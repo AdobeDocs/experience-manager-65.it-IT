@@ -3,10 +3,10 @@ title: Frammenti di esperienza
 description: Frammenti di esperienza nell’authoring di Adobe Experience Manager Sites.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 5d37e4ec23bbbd838f4787622648aad7e1c1905b
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 75%
+source-wordcount: '1489'
+ht-degree: 74%
 
 ---
 
@@ -225,6 +225,10 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 
    * **Variazione**
    * **Variante come [live copy](/help/sites-administering/msm.md#live-copies)**.
+
+     >[!NOTE]
+     >
+     >La creazione di una variante iniziale come Live Copy erediterà il titolo utilizzando la sorgente Live Copy come variante principale.
 
 1. Definisci le proprietà richieste:
 
