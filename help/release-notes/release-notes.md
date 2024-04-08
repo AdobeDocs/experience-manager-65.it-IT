@@ -3,9 +3,9 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '3688'
+source-wordcount: '3735'
 ht-degree: 1%
 
 ---
@@ -462,6 +462,7 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
 * A partire da AEM 6.5.15, il motore JavaScript Rhino fornito da ```org.apache.servicemix.bundles.rhino``` Il bundle ha un nuovo comportamento di posizionamento. Script che utilizzano la modalità rigorosa (```use strict;```) devono dichiarare correttamente le loro variabili, altrimenti non vengono eseguite, generando invece un errore di runtime.
 
+* L’installazione di contenuti predefiniti relativi ai tag tramite un pacchetto di aggiornamento ufficiale (inclusi Service Pack, Security Service Pack, Extended Feature Pack, Cumulative Feature Pack, patch e simili) reimposta la proprietà Languages (lingue) di `/content/cq:tags` per impostazione predefinita. Pertanto, è necessario aggiungerlo dalle proprietà prima dell’installazione.
 
 ### Problemi noti per AEM Forms {#known-issues-aem-forms-6520}
 

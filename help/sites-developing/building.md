@@ -8,9 +8,9 @@ content-type: reference
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -199,4 +199,4 @@ La nuova lingua (finlandese) è ora disponibile nella finestra di dialogo dei ta
 
 >[!CAUTION]
 >
->L’installazione di un service pack reimposta la proprietà Languages del nodo /content/cq:tags sui valori predefiniti. Pertanto, è necessario aggiungerlo dalle proprietà prima dell’installazione.
+>L’installazione di contenuti predefiniti relativi ai tag tramite un pacchetto di aggiornamento ufficiale (inclusi Service Pack, Security Service Pack, Extended Feature Pack, Cumulative Feature Pack, patch e simili) reimposta la proprietà Languages (lingue) di `/content/cq:tags` per impostazione predefinita. Pertanto, è necessario aggiungerlo dalle proprietà prima dell’installazione.
