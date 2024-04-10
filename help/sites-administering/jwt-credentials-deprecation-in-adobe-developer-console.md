@@ -3,10 +3,12 @@ title: Credenziali JWT nella console Adobe Developer obsolete
 description: Informazioni sull’impatto della rimozione delle credenziali JWT in Adobe Developer Console su AEM
 exl-id: f19a92de-ba6a-4f6d-9e12-60ad1bad2e74
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: dec88af3b2345d142d0cc3bc27cfbc27804ab57e
+feature: Security
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -15,7 +17,7 @@ ht-degree: 53%
 >[!NOTE]
 > AEM as a Cloud Service deve fare riferimento a [questo articolo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) per ulteriori informazioni.
 
-[Adobe Developer Console](https://developer.adobe.com/console) viene utilizzato per generare credenziali che consentano l’accesso a varie API. È possibile scegliere tra vari tipi di credenziali, da server a server OAuth ad applicazione a pagina singola. Uno di questi tipi di credenziali, le credenziali dell’account di servizio (JWT), è stato dichiarato obsoleto a favore delle credenziali da server a server OAuth. Non è possibile creare nuove credenziali dell’account di servizio (JWT) a partire dal 3 giugno 2024 e le credenziali JWT esistenti non funzioneranno il 27 gennaio 2025 o dopo tale data. È possibile [consultare le informazioni sull’’obsolescenza](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+[Adobe Developer Console](https://developer.adobe.com/console) viene utilizzato per generare credenziali che consentano l’accesso a varie API. È possibile scegliere tra vari tipi di credenziali, da server a server OAuth ad applicazione a pagina singola. Uno di questi tipi di credenziali, le credenziali dell’account di servizio (JWT), è stato dichiarato obsoleto a favore delle credenziali da server a server OAuth. A partire dal 3 giugno 2024, non sarà possibile creare nuove credenziali dell’account di servizio (JWT) e, a partire dal 27 gennaio 2025, le credenziali JWT esistenti non funzioneranno. È possibile [consultare le informazioni sull’obsolescenza](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
 Questo articolo fornisce alcuni contesti aggiuntivi su come i clienti di AEM 6.5 devono gestire la rimozione.
 
