@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 46%
@@ -241,7 +243,7 @@ Per ulteriori informazioni, selezionate il tipo di riferimento appropriato. In a
 
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 
-* [Riferimenti alle pagine dei prodotti](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponibile dalla console Commerce-Products)
+* [Riferimenti alle pagine dei prodotti](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponibile dalla console Prodotti Commerce)
 * [Lanci](/help/sites-authoring/launches.md) fornisce accesso ai lanci correlati.
 * [Live Copy](/help/sites-administering/msm.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
 * [Blueprint](/help/sites-administering/msm-best-practices.md) fornisce dettagli e varie azioni.

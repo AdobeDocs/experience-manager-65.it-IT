@@ -2,10 +2,13 @@
 title: Scoprire i contenuti headless e come tradurli in AEM
 description: Imparare i concetti headless, come si mappano su AEM e la teoria della traduzione in AEM.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 91%
+source-wordcount: '747'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +50,7 @@ Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a con
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-I servizi che consumano, siano essi esperienze AR, un web shop, esperienze mobili, app web progressive (PWA) e così via, accettano contenuti dal CMS headless e forniscono il proprio rendering. Si occupano di fornire le teste per i tuoi contenuti.
+I servizi utilizzati, siano essi esperienze AR, un web shop, esperienze mobile, app web progressive (PWA), ecc., prendono i contenuti dal CMS headless e forniscono il loro rendering. Si occupano di fornire le teste per i tuoi contenuti.
 
 Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In questo modo si sposta anche la responsabilità di eseguire il rendering dei contenuti ai servizi che ne hanno effettivamente bisogno e che sono spesso più adatti a tale rendering.
 
@@ -78,6 +81,6 @@ Acquisite queste conoscenze, continua il tuo percorso di traduzione headless in 
 Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless consultando il documento [Introduzione alla traduzione headless in AEM,](getting-started.md) di seguito troverai alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [MSM e traduzione](/help/sites-administering/msm-and-translation.md): dettagli del gestore multisito di AEM e come funzionano i suoi strumenti di traduzione
-* Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

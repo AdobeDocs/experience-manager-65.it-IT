@@ -1,17 +1,19 @@
 ---
-title: AEM Commerce - Preparazione al RGPD
+title: AEM Commerce - Preparazione all’RGPD
 description: Scopri le procedure per gestire le richieste RGPD in AEM Commerce e come utilizzarle.
 contentOwner: carlino
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Compliance
+role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# AEM Commerce - Preparazione al RGPD{#aem-commerce-gdpr-readiness}
+# AEM Commerce - Preparazione all’RGPD{#aem-commerce-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -25,7 +27,7 @@ Il Regolamento generale sulla protezione dei dati dell&#39;Unione Europea sui di
 
 ![screen_shot_2018-03-22at111606](assets/screen_shot_2018-03-22at111606.jpg)
 
-Con le integrazioni Commerce predefinite di Adobe, l’AEM è il livello di esperienza, che utilizza servizi e invia dati alla piattaforma di customer commerce che viene eseguita in modalità headless.
+Con le integrazioni Commerce pronte all’uso di Adobe, l’AEM è il livello di esperienza, che utilizza servizi e invia dati alla piattaforma di e-commerce del cliente che viene eseguita in modalità headless.
 
 Per alcune piattaforme commerce, in Adobe vengono memorizzate le informazioni sul profilo ( `/home/users`) e i token commerciali (per accedere alla piattaforma commerce) nell’AEM. Per questi casi d’uso, leggi [Gestione delle richieste RGPD per la piattaforma AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
@@ -35,7 +37,7 @@ Per alcune piattaforme commerce, in Adobe vengono memorizzate le informazioni su
 
 Per l’integrazione con Salesforce Commerce Cloud, AEM Commerce non memorizza alcuna informazione rilevante ai fini del RGPD. Inoltra la richiesta a [Salesforce Cloud](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp).
 
-Per le integrazioni Hybris e HCL WebSphere® Commerce, sono disponibili alcuni dati in AEM. Utilizza il [Istruzioni RGPD per la piattaforma AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) e considera queste domande:
+Per le integrazioni Hybris e HCL WebSphere® Commerce, sono disponibili alcuni dati nell&#39;AEM. Utilizza il [Istruzioni RGPD per la piattaforma AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) e considera queste domande:
 
 1. **Dove vengono memorizzati/utilizzati i miei dati?** Sono state memorizzate nella cache informazioni sul profilo utente quali nome, identificatore utente commerce, token, password e dati dell’indirizzo, come mostrato dall’AEM.
 1. **Con chi condivido i dati coperti dal RGPD?** Qualsiasi aggiornamento dei dati relativi al RGPD nel Commerce dell’AEM non viene memorizzato (eccetto le informazioni del profilo rilevanti, come indicato sopra) ma viene inviato nuovamente alla piattaforma Commerce.

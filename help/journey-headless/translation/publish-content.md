@@ -2,10 +2,13 @@
 title: Pubblicare contenuti tradotti
 description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1336'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -63,7 +66,7 @@ Il modo più semplice per pubblicare le traduzioni è passare alla cartella riso
 
 In questo percorso sono presenti sottocartelle per ogni lingua di traduzione e puoi scegliere quale pubblicare.
 
-1. Vai a **Navigazione** > **Risorse** > **File** e apri la cartella del progetto.
+1. Vai su **Navigazione** > **Risorse** > **File** e apri la cartella del progetto.
 1. Qui puoi vedere la cartella principale della lingua e tutte le altre cartelle della lingua. Seleziona la lingua o le lingue localizzate da pubblicare.
    ![Seleziona cartella della lingua](assets/select-language-folder.png)
 1. Clic **Gestisci pubblicazione**.
@@ -92,7 +95,7 @@ Tuttavia, come in precedenza, il processo varia leggermente se si sceglie di cre
 
 ### Aggiornamento di un progetto di traduzione creato automaticamente {#updating-automatic-project}
 
-1. Accedi a **Navigazione** > **Risorse** > **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
+1. Passa a **Navigazione** > **Risorse** > **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
 1. Seleziona la directory principale della lingua del progetto. In questo caso, `/content/dam/wknd/en` è selezionato.
 1. Fai clic sul selettore della barra e mostra **Riferimenti** pannello.
 1. Clic **Copie per lingua**.
@@ -106,7 +109,7 @@ Tuttavia, come in precedenza, il processo varia leggermente se si sceglie di cre
 
 Il contenuto viene aggiunto al progetto di traduzione esistente. Per visualizzare il progetto di traduzione:
 
-1. Accedi a **Navigazione** > **Progetti**.
+1. Passa a **Navigazione** > **Progetti**.
 1. Fai clic sul progetto appena aggiornato.
 1. Fai clic sulla lingua o su una delle lingue aggiornate.
 
@@ -118,7 +121,7 @@ You see that a new job card was added to the project. In this example, another S
 ![Additional translation job added](assets/additional-translation-job.png)
 -->
 
-Noterai che le statistiche elencate nella nuova scheda (numero di risorse e frammenti di contenuto) sono diverse. Questo perché l’AEM riconosce ciò che è cambiato dall’ultima traduzione e include solo il contenuto che deve essere tradotto. Ciò include la ritraduzione dei contenuti aggiornati e la prima traduzione dei nuovi contenuti.
+Noterai che le statistiche elencate nella nuova scheda (numero di risorse e frammenti di contenuto) sono diverse. Questo perché AEM riconosce ciò che è cambiato dopo l’ultima traduzione e include solo il contenuto che deve essere tradotto. Ciò include la ritraduzione dei contenuti aggiornati e la prima traduzione dei nuovi contenuti.
 
 Da questo punto, [inizia e gestisci il tuo processo di traduzione proprio come hai fatto con l’originale.](translate-content.md#using-translation-project)
 
@@ -126,7 +129,7 @@ Da questo punto, [inizia e gestisci il tuo processo di traduzione proprio come h
 
 Per aggiornare una traduzione, puoi aggiungere al progetto esistente un nuovo processo responsabile della traduzione del contenuto aggiornato.
 
-1. Accedi a **Navigazione** > **Progetti**.
+1. Passa a **Navigazione** > **Progetti**.
 1. Fai clic sul progetto da aggiornare.
 1. Fai clic su **Aggiungi** nella parte superiore della finestra.
 1. In **Aggiungi sezione** finestra, fai clic su **Lavoro di traduzione** e poi **Invia**.

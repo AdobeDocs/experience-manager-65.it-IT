@@ -2,10 +2,13 @@
 title: Guida introduttiva alla traduzione headless in AEM
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1472'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -32,7 +35,7 @@ Questo documento ti aiuta a capire come iniziare a tradurre il contenuto headles
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
-Ci sono diversi requisiti prima di iniziare a tradurre il contenuto dell’AEM headless.
+Ci sono diversi requisiti prima di iniziare a tradurre il contenuto AEM headless.
 
 ### Conoscenza {#knowledge}
 
@@ -190,6 +193,6 @@ Mentre si consiglia di procedere alla parte successiva del percorso di traduzion
 * [Identificazione del contenuto da tradurre](/help/sites-administering/tc-rules.md): scopri come le regole di traduzione identificano i contenuti da tradurre.
 * [Configurazione del Translation Integration Framework](/help/sites-administering/tc-tic.md): scopri come configurare il Translation Integration Framework per l’integrazione con i servizi di traduzione di terze parti.
 * [Gestione dei progetti di traduzione](/help/sites-administering/tc-manage.md): scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
-* Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

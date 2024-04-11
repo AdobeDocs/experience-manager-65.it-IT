@@ -2,10 +2,13 @@
 title: Configurare l’integrazione della traduzione
 description: Scopri come connettere AEM a un servizio di traduzione.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -25,7 +28,7 @@ Questo articolo si basa su queste nozioni di base per permetterti di compiere il
 
 ## Obiettivo {#objective}
 
-Questo documento ti aiuta a capire come impostare un’integrazione AEM per il servizio di traduzione scelto. Dopo la lettura dovresti:
+Questo documento spiega come impostare un’integrazione AEM per il servizio di traduzione selezionato. Dopo la lettura dovresti:
 
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.
@@ -114,7 +117,7 @@ A questo scopo, accedi alla directory principale della lingua del contenuto. Per
 /content/dam/<your-project>/en
 ```
 
-1. Vai alla navigazione globale e vai a **Navigazione** > **Risorse** > **File**.
+1. Vai alla navigazione globale e passa a **Navigazione** > **Risorse** > **File**.
 1. Nella console delle risorse, seleziona la directory principale della lingua da configurare e fai clic su **Proprietà**.
 1. Fai clic su **Cloud Service** scheda.
 1. Sotto **Configurazioni Cloud Service**, nel menu a discesa a discesa **Aggiungi configurazione**, seleziona il connettore. Dovrebbe apparire nel menu a discesa dopo aver installato il pacchetto come [descritto in precedenza.](#connect-translation-provider)

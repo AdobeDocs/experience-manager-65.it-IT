@@ -2,10 +2,13 @@
 title: Configurare le regole di traduzione
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 68%
+ht-degree: 81%
 
 ---
 
@@ -15,12 +18,12 @@ Scopri come definire le regole di traduzione per identificare i contenuti per la
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione headless dell&#39;AEM, [Configurare l’integrazione della traduzione](configure-connector.md) hai imparato a installare e configurare l’integrazione di traduzione e ora dovresti:
+Nel documento precedente del percorso di traduzione AEM headless, [Configurare l’integrazione della traduzione](configure-connector.md), hai imparato a installare e configurare l’integrazione della traduzione e ora dovresti:
 
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.
 
-Ora che la tua integrazione è impostata, questo articolo illustra il passaggio successivo per identificare il contenuto da tradurre.
+Ora che l’integrazione è configurata, questo articolo illustra il passaggio successivo per identificare il contenuto da tradurre.
 
 ## Obiettivo {#objective}
 
@@ -31,7 +34,7 @@ Questo documento ti aiuta a capire come utilizzare le regole di traduzione di AE
 
 ## Regole di traduzione {#translation-rules}
 
-I frammenti di contenuto, che rappresentano il contenuto headless, possono contenere molte informazioni organizzate in campi strutturati. A seconda delle esigenze del progetto, è probabile che non tutti i campi all’interno di un frammento di contenuto debbano essere tradotti.
+I frammenti di contenuto, che rappresentano il contenuto headless, possono contenere molte informazioni organizzate in campi strutturati. A seconda delle esigenze del progetto, è probabile che non tutte le informazioni all’interno di un Frammento di contenuto debbano essere tradotte.
 
 Le regole di traduzione identificano il contenuto incluso o escluso nei progetti di traduzione. Quando il contenuto viene tradotto, AEM estrae o raccoglie il contenuto in base a queste regole. In questo modo solo il contenuto da tradurre viene inviato al servizio di traduzione.
 
@@ -56,10 +59,10 @@ Le regole di traduzione sono progettate per gestire tali scenari. Tuttavia, in q
 
 Una console **Configurazione della traduzione** è disponibile per la configurazione delle regole di traduzione. Per accedervi:
 
-1. Accedi a **Strumenti** > **Generale**.
+1. Passa a **Strumenti** > **Generale**.
 1. Clic **Configurazione traduzione**.
 
-In **Configurazione traduzione** Nell’interfaccia utente sono disponibili diverse opzioni per le regole di traduzione. Qui vengono evidenziati i passaggi più necessari e tipici necessari per una configurazione di base della localizzazione headless.
+Nell’interfaccia utente di **Configurazione della traduzione** sono disponibili diverse opzioni per le regole di traduzione. Qui vengono evidenziati i passaggi più necessari e tipici necessari per una configurazione di base della localizzazione headless.
 
 1. Clic **Aggiungi contesto**, che consente di aggiungere un percorso. Questo è il percorso del contenuto interessato dalla regola.
    ![Aggiungi contesto](assets/add-translation-context.png)
@@ -81,7 +84,7 @@ Hai configurato le regole di traduzione.
 
 ## Utilizzo avanzato {#advanced-usage}
 
-Ci sono diverse proprietà aggiuntive che possono essere configurate come parte delle regole di traduzione. Inoltre, è possibile specificare le regole manualmente come XML, il che consente maggiore specificità e flessibilità.
+È possibile configurare una serie di proprietà aggiuntive come parte delle regole di traduzione. Inoltre, è possibile specificare le regole manualmente come XML, consentendo una maggiore specificità e flessibilità.
 
 Tali funzioni generalmente non sono necessarie per iniziare a localizzare il contenuto headless ma, se ti interessa, puoi avere maggiori informazioni nella sezione [Risorse aggiuntive](#additional-resources).
 

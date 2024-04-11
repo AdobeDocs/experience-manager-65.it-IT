@@ -2,10 +2,13 @@
 title: Scopri di più sullo sviluppo di CMS headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri la tecnologia headless e perché utilizzarla.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1601'
-ht-degree: 82%
+ht-degree: 90%
 
 ---
 
@@ -56,19 +59,19 @@ Gli utenti si aspettano un coinvolgimento indipendentemente dalla piattaforma o 
 
 La “testa” di qualsiasi sistema è generalmente il renderer di output di quel sistema, tipicamente un&#39;interfaccia utente grafica o un altro tipo di output grafico.
 
-Un server headless, ad esempio, è probabilmente posizionato in un rack in una sala server e non dispone di monitor collegati. Per accedervi è necessario connettersi in remoto. In questo caso, il monitor è la “testa” perché si occupa del rendering dell’output del server. In qualità di consumatore del servizio, quando ti connetti da remoto, la tua “testa” è il monitor.
+Un server headless, ad esempio, è probabilmente situato in un rack in una stanza server da qualche parte e non ha monitor collegati. Per accedervi è necessario connettersi in remoto. In questo caso, il monitor è la “testa” perché si occupa del rendering dell’output del server. In qualità di consumatore del servizio, quando ti connetti da remoto, la tua “testa” è il monitor.
 
 Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **contenuto** in modo standardizzato, un CMS headless omette il rendering finale dell’output, lasciando la **presentazione** del contenuto al servizio utilizzato.
 
 ![CMS headless](assets/headless-cms.png)
 
-I servizi che fruiscono di tali servizi, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA) e così via, accettano i contenuti dal CMS headless e forniscono il proprio rendering. Si occupano di fornire le teste per i tuoi contenuti.
+I servizi utilizzati, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA), ecc., prendono i contenuti dal CMS headless e forniscono il loro rendering. Si occupano di fornire le teste per i tuoi contenuti.
 
 Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In questo modo si sposta anche la responsabilità di eseguire il rendering dei contenuti ai servizi che ne hanno effettivamente bisogno e che sono spesso più adatti a tale rendering.
 
 ## Separazione {#decoupling}
 
-La distribuzione headless è possibile esponendo un set di interfacce API (Application Programming Interface) solide e flessibili selezionabili da tutte le esperienze. L’API funge da linguaggio comune tra i servizi e li associa a livello di contenuto tramite la distribuzione standardizzata dei contenuti, ma offre la flessibilità necessaria per implementare le proprie soluzioni.
+La distribuzione headless è possibile esponendo un set di interfacce di programmazione delle applicazioni (API) affidabili e flessibili in cui è possibile selezionare tutte le esperienze. L’API funge da linguaggio comune tra i servizi e li associa a livello di contenuto tramite la distribuzione standardizzata dei contenuti, ma offre la flessibilità necessaria per implementare le proprie soluzioni.
 
 Headless è un esempio di separazione del contenuto dalla presentazione. O in senso più generico, separando il front end dal back end dello stack di servizi. In una configurazione headless, il sistema di presentazione (la “testa”) viene separato dalla gestione dei contenuti (la coda). I due interagiscono solo tramite chiamate API.
 
@@ -76,7 +79,7 @@ Questa separazione consente a ogni servizio utilizzato (front-end) di creare la 
 
 ## Sostegni tecnologici {#technology}
 
-Un approccio headless consente di creare uno stack tecnologico in grado di adattarsi in modo semplice e rapido alle future esigenze di esperienza digitale.
+Un approccio headless consente di creare uno stack tecnologico in grado di adattarsi rapidamente e facilmente alle esigenze future di esperienza digitale.
 
 In passato, le API per CMS erano solitamente basate su REST. Il trasferimento di stato rappresentativo (REST) fornisce risorse come testo in modo senza stato. Questo consente di leggere e modificare le risorse con un set di operazioni predefinito. REST ha consentito una grande interoperabilità tra i servizi sul web garantendo una rappresentazione senza stato del contenuto.
 
@@ -96,7 +99,7 @@ Headless rende la distribuzione delle esperienze digitali ancora più flessibile
 
 Avere molti canali diversi può significare che ciascuno di essi dispone di propri sistemi di presentazione. Anche se tutti utilizzano lo stesso contenuto tramite le stesse API, l’esperienza può essere diversa a causa delle diverse presentazioni. Occorre prestare attenzione e preoccupazione per garantire la coerenza dell’esperienza del cliente.
 
-Implementando accurati sistemi di progettazione, condividendo librerie di modelli e utilizzando componenti di progettazione riutilizzabili e framework lato client aperti e consolidati, è possibile garantire esperienze coerenti, ma questo deve essere pianificato.
+Implementando sistemi di progettazione accurati, condividendo librerie di pattern e utilizzando componenti di progettazione riutilizzabili e framework lato client aperti consolidati, è possibile garantire esperienze coerenti, ma questo deve essere pianificato.
 
 ## Il futuro è headless e il futuro è adesso {#future}
 
@@ -126,6 +129,6 @@ Approfondisci l&#39;argomento e continua il tuo percorso headless AEM esaminando
 
 Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva di AEM Headless](getting-started.md), di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma che non è necessario che continuino sul percorso headless.
 
-* Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Esercitazioni di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui queste esercitazioni pratiche per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
+* [Tutorial di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): segui questi pratici tutorial per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.

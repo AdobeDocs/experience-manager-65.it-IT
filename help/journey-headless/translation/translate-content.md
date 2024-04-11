@@ -2,16 +2,19 @@
 title: Tradurre il contenuto
 description: Utilizza il connettore di traduzione e le regole per tradurre il contenuto headless.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2115'
-ht-degree: 66%
+ht-degree: 71%
 
 ---
 
 # Tradurre il contenuto {#translate-content}
 
-Utilizza l’integrazione e le regole di traduzione per tradurre i contenuti headless.
+Utilizzare l’integrazione della traduzione e le regole per tradurre il contenuto headless.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -52,7 +55,7 @@ Entrambi gli approcci sono esaminati nelle sezioni seguenti.
 
 Per i proprietari di contenuti che sono anche responsabili della traduzione, spesso è più facile che AEM crei automaticamente il progetto. Per fare in modo che AEM crei automaticamente un progetto di traduzione basato sul percorso del contenuto:
 
-1. Accedi a **Navigazione** > **Risorse** > **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
+1. Passa a **Navigazione** -> **Risorse** -> **File**. Tieni presente che il contenuto headless in AEM viene memorizzato come risorse note come Frammenti di contenuto.
 1. Seleziona la directory principale della lingua del progetto. In questo caso, `/content/dam/wknd/en` è selezionato.
 1. Fai clic sul selettore della barra e mostra **Riferimenti** pannello.
 1. Clic **Copie per lingua**.
@@ -76,7 +79,7 @@ Viene visualizzato un messaggio che informa che il progetto è stato creato.
 
 Per i translation project manager, spesso è necessario selezionare manualmente contenuti specifici da includere in un progetto di traduzione. Per creare un progetto di traduzione manuale di questo tipo, devi iniziare creando un progetto vuoto e quindi selezionare il contenuto da aggiungere.
 
-1. Accedi a **Navigazione** > **Progetti**.
+1. Passa a **Navigazione** > **Progetti**.
 1. Clic **Crea** > **Cartella** per creare una cartella per i progetti.
    * Questo è facoltativo, ma utile per organizzare le attività di traduzione.
 1. In **Crea cartella** finestra, aggiungi un **Titolo** per la cartella, quindi fare clic su **Crea**.
@@ -95,7 +98,7 @@ Per i translation project manager, spesso è necessario selezionare manualmente 
 
 1. Il giorno **Avanzate** , utilizza la scheda **Lingua di destinazione** per selezionare le lingue in cui tradurre il contenuto. Fai clic su **Crea**.
 
-   ![Scheda avanzate del progetto](assets/project-advanced-tab.png)
+   ![Scheda Avanzate del progetto](assets/project-advanced-tab.png)
 
 1. Clic **Apri** nella finestra di dialogo di conferma.
 
@@ -105,11 +108,11 @@ Il progetto è stato creato, ma non contiene alcun contenuto da tradurre. Nella 
 
 ## Utilizzo di un progetto di traduzione {#using-translation-project}
 
-I progetti di traduzione sono progettati per raccogliere tutti i contenuti e le attività relativi a un lavoro di traduzione in un unico luogo per rendere la traduzione semplice e facile da gestire.
+I progetti di traduzione sono progettati per raccogliere tutti i contenuti e le attività relativi a una traduzione in un unico luogo per agevolare la gestione della traduzione.
 
 Per visualizzare il progetto di traduzione:
 
-1. Accedi a **Navigazione** > **Progetti**.
+1. Passa a **Navigazione** > **Progetti**.
 1. Fai clic sul progetto creato nella sezione precedente.
 
 ![Progetto di traduzione](assets/translation-project.png)
@@ -155,13 +158,13 @@ Quando crei manualmente un progetto di traduzione, AEM crea i processi necessari
 Per aggiungere contenuto a un lavoro di traduzione:
 
 1. Fai clic sul pulsante con i puntini di sospensione nella parte inferiore di uno dei **Lavoro di traduzione** schede.
-1. Vedi che il lavoro non presenta contenuto. Fai clic su **Aggiungi** nella parte superiore della finestra e quindi **Risorse/Pagine** dal menu a discesa.
+1. Vedi che il processo non presenta contenunto. Fai clic su **Aggiungi** nella parte superiore della finestra e quindi **Risorse/Pagine** dal menu a discesa.
 
    ![Lavoro di traduzione vuoto](assets/empty-translation-job.png)
 
 1. Viene visualizzato un browser del percorso che consente di selezionare in modo specifico quale contenuto aggiungere. Individua il contenuto e fai clic per selezionarlo.
 
-   ![Browser del percorso](assets/path-browser.png)
+   ![Browser percorsi](assets/path-browser.png)
 
 1. Clic **Seleziona** per aggiungere il contenuto selezionato al processo.
 1. Nella finestra di dialogo **Traduci**, specifica **Crea copia in lingua**.
@@ -181,11 +184,11 @@ Per aggiungere contenuto a un lavoro di traduzione:
 >
 >Il browser del percorso è un potente strumento che consente di cercare, filtrare e navigare nel contenuto. Fai clic su **Solo contenuto/Filtri** per attivare/disattivare il pannello laterale e visualizzare filtri avanzati, ad esempio **Data di modifica** o **Stato traduzione**.
 >
->Scopri di più sul browser del percorso nella [sezione Risorse aggiuntive.](#additional-resources)
+>Per ulteriori informazioni sul browser percorsi, consulta la [sezione risorse aggiuntive.](#additional-resources)
 
-Puoi utilizzare i passaggi precedenti per aggiungere il contenuto necessario in tutte le lingue (processi) per il progetto. Dopo aver selezionato tutto il contenuto, puoi avviare la traduzione.
+Puoi utilizzare i passaggi precedenti per aggiungere il contenuto necessario a tutte le lingue (processi) per il progetto. Dopo aver selezionato tutto il contenuto, puoi avviare la traduzione.
 
-In genere il contenuto del lavoro di traduzione inizia nello stato **Bozza** come indicato dalla colonna **Stato** nella finestra **Lavoro di traduzione**.
+In genere il contenuto del processo di traduzione inizia nello stato **Bozza** come indicato dalla colonna **Stato** nella finestra **Lavoro di traduzione**.
 
 Per avviare il lavoro di traduzione, torna alla panoramica del progetto di traduzione e fai clic sul pulsante con la freccia nella parte superiore della **Lavoro di traduzione** e seleziona **Inizio**.
 
@@ -199,7 +202,7 @@ Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. 
 
 ## Revisione dei contenuti tradotti {#reviewing}
 
-[Come visto in precedenza,](#using-translation-project) i contenuti tradotti automaticamente tornano nell’AEM con lo stato **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia, è ancora possibile rivedere il contenuto tradotto.
+[Come visto in precedenza,](#using-translation-project) i contenuti tradotti automaticamente tornano nell’AEM con lo stato **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
 
 Basta andare al lavoro di traduzione completato e selezionare una riga toccando o facendo clic sulla casella di spunta. L’icona **Mostra in Frammenti di contenuto** si trova nella barra degli strumenti.
 
@@ -239,7 +242,7 @@ Ora che hai completato questa parte del percorso di traduzione headless, dovrest
 * Crea progetti di traduzione.
 * Utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM esaminando il documento [Pubblicare contenuti tradotti](publish-content.md) dove scopri come pubblicare i contenuti tradotti e come aggiornare tali traduzioni man mano che il contenuto della lingua root cambia.
+Approfondisci questo argomento e continua il tuo percorso di traduzione in AEM headless consultando il documento successivo [Pubblicare contenuti tradotti](publish-content.md) dove verrà illustrato come pubblicare i contenuti tradotti e come aggiornare tali traduzioni man mano che il contenuto della lingua principale cambia.
 
 ## Risorse aggiuntive {#additional-resources}
 

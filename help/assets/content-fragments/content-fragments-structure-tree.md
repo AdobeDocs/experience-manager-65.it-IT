@@ -2,10 +2,10 @@
 title: Struttura dei frammenti di contenuto
 description: Utilizza la funzione Struttura dell’Editor frammenti di contenuto in AEM per comprendere meglio i contenuti headless.
 feature: Content Fragments
-role: User
+role: User,Developer
 exl-id: 1cf8d3a3-1d9a-42fc-9da0-a20c65f021e4
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 88%

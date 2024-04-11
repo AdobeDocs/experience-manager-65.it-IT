@@ -2,10 +2,13 @@
 title: Percorso di traduzione headless di AEM
 description: Inizia qui per un percorso guidato alla traduzione di contenuti headless utilizzando i potenti strumenti di traduzione di AEM.
 exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
-source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -34,7 +37,7 @@ Se conosci già AEM, i contenuti headless e la traduzione, potresti avere già l
 
 [Un percorso di documentazione](/help/journey-documentation/home.md) unisce molti argomenti e caratteristiche diversi e forse complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
+I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti della clientela.
 
 Se desideri sapere come Adobe consiglia di risolvere dei casi di business headless con AEM, inizia con i [Percorsi AEM Headless](/help/journey-headless/overview.md).
 
@@ -51,15 +54,15 @@ Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
 | Specialista di traduzione | Definisce il contenuto da tradurre e gestisce i flussi di lavoro relativi | Pubblico di questo percorso |
 | Autore del contenuto | Crea e gestisce i contenuti consegnati come headless | Gli autori dei contenuti creano i contenuti che devono essere tradotti dallo specialista della traduzione. |
 | Amministratore | Gestisce l’impostazione e la configurazione di base di AEM | Lo specialista di traduzione collabora con l’amministratore per apportare le modifiche di configurazione necessarie per la traduzione, ad esempio per l’installazione di un connettore di traduzione. |
-| Architetto dei contenuti | Analizza i requisiti dei dati che devono essere distribuiti in modo headless e definisce la struttura per questi dati | Gli esperti di traduzione collaborano con l&#39;architetto dei contenuti per definirne l&#39;organizzazione in modo che possano essere facilmente tradotti. |
+| Architetto dei contenuti | Analizza i requisiti dei dati che devono essere distribuiti in modo headless e definisce la struttura per questi dati | Gli esperti di traduzione collaborano con l’architetto dei contenuti per definirne l’organizzazione in modo che possano essere facilmente tradotti. |
 
-Le informazioni in questo percorso possono essere utili a tutti gli utenti tipo, ma alcune possono essere superflue per determinati ruoli. Rimani sintonizzato per [i prossimi percorsi che includeranno ruoli aggiuntivi.](/help/journey-documentation/home.md#journeys)
+Le informazioni in questo percorso possono essere utili a tutti gli utenti, ma alcune possono essere superflue per determinati ruoli. Rimani sintonizzato per [i prossimi percorsi che includeranno ruoli aggiuntivi.](/help/journey-documentation/home.md#journeys)
 
 ## Percorso di traduzione headless {#the-journey}
 
 In questo percorso esplorerai molti argomenti. I seguenti articoli forniscono informazioni fondamentali sulla traduzione dei contenuti headless in AEM e si collegano alla documentazione tecnica dettagliata.
 
-Sebbene tu possa accedere direttamente a una sezione specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se sei nuovo alla traduzione headless in AEM, Adobe consiglia di iniziare dall’inizio e procedere in sequenza.
+Sebbene tu possa accedere direttamente a una sezione specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se non possiedi nessuna conoscenza della traduzione in AEM, Adobe ti consiglia di di cominciare dalla parte iniziale e di avanzare progressivamente.
 
 | # | Articolo | Descrizione |
 |---|---|---|
@@ -68,7 +71,7 @@ Sebbene tu possa accedere direttamente a una sezione specifica del percorso, mol
 | 2 | [Guida introduttiva alla traduzione headless in AEM](getting-started.md) | Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM. |
 | 3 | [Configurare l’integrazione della traduzione](configure-connector.md) | Scopri come connettere AEM a un servizio di traduzione. |
 | 4 | [Configurare le regole di traduzione](translation-rules.md) | Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione. |
-| 5 | [Tradurre il contenuto](translate-content.md) | Utilizza l’integrazione e le regole di traduzione per tradurre i contenuti headless. |
+| 5 | [Tradurre il contenuto](translate-content.md) | Utilizzare l’integrazione della traduzione e le regole per tradurre il contenuto headless. |
 | 6 | [Pubblicare contenuti tradotti](publish-content.md) | Scopri come pubblicare il contenuto tradotto e aggiornare la traduzione quando il contenuto sottostante viene aggiornato. |
 
 ## Novità {#what-is-next}
@@ -85,6 +88,6 @@ I percorsi sono progettati per resistere da soli. Tuttavia, diverse di esse poss
 * [Percorso Architect headless](/help/journey-headless/architect/overview.md) - Inizia qui per un’introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e per vedere come modellare i contenuti per il tuo progetto.
 * [Percorso per sviluppatori AEM headless](/help/journey-headless/developer/overview.md): inizia qui un percorso guidato per scoprire le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come sfruttarle nel tuo primo progetto.
 * [Documentazione tecnica AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) - Se hai già una solida conoscenza delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
-   * Un [Introduzione all’AEM come CMS headless](/help/sites-developing/headless/introduction.md)
-* [Tutorial AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): se preferisci imparare facendo e hai capacità tecniche, segui i nostri tutorial pratici organizzati per API e framework, che esplorano la creazione e l’utilizzo di applicazioni create su AEM Headless.
+   * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
+* [Tutorial AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): se preferisci imparare con la pratica e hai capacità tecniche, segui i nostri tutorial pratici organizzati per API e framework, che esplorano la creazione e l’utilizzo di applicazioni basate su AEM Headless.
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

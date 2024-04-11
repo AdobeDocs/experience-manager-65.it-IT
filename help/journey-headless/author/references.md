@@ -2,10 +2,13 @@
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Imparare a utilizzare i riferimenti in Frammenti di contenuto, per i contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -58,7 +61,7 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 * Persona
 * Premi
 
-Sembra abbastanza semplice, ma un&#39;azienda ha sia un amministratore delegato che dei dipendenti....e queste sono tutte persone, ognuna definita come Persona.
+Sembra abbastanza semplice, ma un’Azienda ha sia un amministratore delegato che dei dipendenti...e queste sono tutte persone, ognuna definita come Persona.
 
 E una Persona può ricevere un Premio (o forse due).
 
@@ -75,7 +78,7 @@ In qualità di autore, non sei responsabile della definizione di queste relazion
 
 ### Come creare i frammenti nidificati {#author-nested-fragment}
 
-L’authoring dei riferimenti ai frammenti è abbastanza semplice (anche se in genere il campo non sarà etichettato come **Riferimento a frammento**). Puoi digitare direttamente nel riferimento oppure (molto probabilmente) selezionare l’icona della cartella per aprire un browser che ti consenta di navigare e selezionare il frammento necessario.
+L’authoring dei riferimenti ai frammenti è abbastanza semplice (anche se in genere il campo non sarà etichettato come **Riferimento a frammento**). È possibile digitare direttamente il riferimento oppure (più probabilmente) selezionare l’icona della cartella per aprire un browser che consente di sfogliare e selezionare il frammento desiderato.
 
 ![Frammenti di contenuto - Riferimenti](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

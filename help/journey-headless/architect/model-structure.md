@@ -2,7 +2,10 @@
 title: Scopri come creare modelli per frammenti di contenuto in AEM
 description: Scopri i concetti e la meccanica della modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 92%
