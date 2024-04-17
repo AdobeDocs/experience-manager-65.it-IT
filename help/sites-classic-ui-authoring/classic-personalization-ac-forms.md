@@ -7,7 +7,9 @@ topic-tags: personalization
 content-type: reference
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization
+role: User
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 0%
@@ -23,7 +25,7 @@ Puoi gestire le sottoscrizioni di nuovi contatti, il loro annullamento e i dati 
 Per utilizzare Adobe Campaign Forms nell’AEM, è necessario seguire questi passaggi, descritti in questo documento:
 
 1. Rendi disponibile un modello.
-1. Creare un modulo.
+1. Crea un modulo.
 1. Modifica il contenuto del modulo.
 
 Per impostazione predefinita, sono disponibili tre tipi di moduli specifici di Adobe Campaign:
