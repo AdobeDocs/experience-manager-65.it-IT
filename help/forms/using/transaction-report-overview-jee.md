@@ -1,15 +1,16 @@
 ---
 title: Panoramica dei rapporti sulle transazioni per AEM Forms su JEE
-description: Mantieni un conteggio di tutti i moduli inviati, sottoposti a rendering, documenti convertiti in un formato e altro ancora
+description: Mantieni un conteggio di tutti i moduli inviati, sottoposti a rendering, documenti convertiti in un formato in un altro e altro ancora.
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Abilitazione e visualizzazione del rapporto sulle transazioni per AEM Forms su JEE {#transaction-reports-overview}
+# Abilitazione e visualizzazione dei rapporti sulle transazioni per AEM Forms su JEE {#transaction-reports-overview}
 
 <!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -74,7 +75,7 @@ For Jboss Cluster:
 ```
 
 Esempio di un record di transazione di esempio:
-`[2024-02-28 06:11:27] [INFO] TransactionRecord{service=‘GeneratePDFService’, operation=‘HtmlFileToPDF’, internalService=‘GeneratePDFService’, internalOperation=‘HtmlFileToPDF’, transactionOperationType=‘CONVERT’, transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
+`[2024-02-28 06:11:27] [INFO] TransactionRecord{service='GeneratePDFService', operation='HtmlFileToPDF', internalService='GeneratePDFService', internalOperation='HtmlFileToPDF', transactionOperationType='CONVERT', transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
 
 #### Record transazione {#transaction-record-structure-jee}
 
@@ -96,8 +97,8 @@ TransactionRecord
 
 * **servizio**: nome del servizio.
 * **operazione**: nome operazione.
-* **internalService**: nome del destinatario in caso di chiamata interna, altrimenti uguale al nome del servizio.
-* **internalOperation**: nome del destinatario in caso di chiamata interna, altrimenti uguale al nome dell’operazione.
+* **internalService**: nome del destinatario della chiamata se è presente una chiamata interna, altrimenti uguale al nome del servizio.
+* **internalOperation**: nome del destinatario in presenza di una chiamata interna, altrimenti uguale al nome dell’operazione.
 * **transactionOperationType**: tipo di transazione (Invia, Rendering, Converti).
 * **transactionCount**: conteggio totale della transazione.
 * **elapsedTime**: tempo tra l’avvio della chiamata e la risposta ricevuta.
@@ -125,7 +126,7 @@ TransactionRecord
 
 La frequenza di registrazione delle transazioni è determinata dalle operazioni di aggiornamento sul server per ogni modulo inviato, sottoposto a rendering o convertito correttamente.
 
-* In entrata **dashboard** il conteggio delle transazioni viene aggiornato periodicamente. il valore predefinito è 1 minuto. È possibile aggiornare la frequenza impostando la proprietà di sistema su `"com.adobe.idp.dsc.transaction.recordFrequency"`. Ad esempio, in AEM Forms for JEE on JBoss®, aggiungi `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` per impostare la frequenza di aggiornamento su 5 minuti.
+* In entrata **dashboard**, il conteggio delle transazioni viene aggiornato periodicamente, il valore predefinito è 1 minuto. È possibile aggiornare la frequenza impostando la proprietà di sistema su `"com.adobe.idp.dsc.transaction.recordFrequency"`. Ad esempio, in AEM Forms for JEE on JBoss®, aggiungi `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` per impostare la frequenza di aggiornamento su 5 minuti.
 
 * In entrata **log delle transazioni**, l’aggiornamento di ogni transazione si verifica immediatamente quando un modulo viene inviato, renderizzato o convertito correttamente.
 

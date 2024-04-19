@@ -1,14 +1,14 @@
 ---
 title: Gestisci sezione app
-description: Segui questa pagina per scoprire Gestisci sezione app nel dashboard dell’app, che consente di modificare i dettagli dell’applicazione.
+description: Ulteriori informazioni sul riquadro "Gestisci app" nel dashboard dell’app che fornisce consente di modificare i dettagli dell’applicazione.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1218'
 ht-degree: 2%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 2%
 >
 >L’Adobe consiglia di utilizzare l’Editor SPA per i progetti che richiedono il rendering lato client basato su framework di applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Il **Gestisci app** Il riquadro nel dashboard delle app consente di modificare i dettagli dell’applicazione. Per aprire la pagina Dettagli, fai clic sul collegamento dei dettagli del riquadro Gestione app. Dalla pagina Gestisci app puoi modificare le impostazioni di configurazione dell&#39;applicazione PhoneGap (config.xml) e preparare l&#39;applicazione per l&#39;invio ai vari archivi dell&#39;applicazione.
+Il **`Manage App`** sezione nel dashboard dell’app consente di modificare i dettagli dell’applicazione. Per aprire la pagina Dettagli, fare clic su **`Manage App`** collegamento dei dettagli del riquadro. Dall&#39;interno del **`Manage App`** , è possibile modificare le impostazioni di configurazione dell&#39;applicazione PhoneGap (config.xml) e preparare l&#39;applicazione per l&#39;invio ai vari archivi applicazioni.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## Informazioni sulla sezione Gestione app {#understanding-the-manage-app-tile}
+## Comprensione di `Manage App` affiancare {#understanding-the-manage-app-tile}
 
-Puoi eseguire il drill-through in ogni sezione della **Gestisci app** per visualizzare o modificare i dettagli, fai clic su &quot;...&quot; in basso a destra.
+Puoi eseguire il drill-through in ogni sezione della **`Manage App`** per visualizzare o modificare i dettagli, fai clic su &quot;...&quot; in basso a destra.
 
 ### Scheda Base {#the-basic-tab}
 
@@ -50,7 +50,7 @@ Ogni negozio di applicazioni del fornitore, ad esempio Apple App Store o Google 
 
 >[!NOTE]
 >
->L’app AEM Verify consente di inviare screenshot direttamente ai dettagli dell’app nell’AEM.
+>L’app AEM Verify ti consente di inviare screenshot direttamente ai dettagli dell’app in AEM.
 >
 >Consulta [Mobile Quickstart per la verifica dell’AEM](/help/mobile/phonegap-mobile-quickstart.md) per ulteriori dettagli.
 
@@ -60,7 +60,7 @@ Ogni negozio di applicazioni del fornitore, ad esempio Apple App Store o Google 
 
 >[!NOTE]
 >
->Una volta acquisita familiarità con **Gestisci app** sezione, vedi [Modifica dei metadati dell’app](/help/mobile/phonegap-editmetadata.md) per visualizzare e modificare i metadati.
+>Una volta acquisita familiarità con **`Manage App`** sezione, vedi [Modifica dei metadati dell’app](/help/mobile/phonegap-editmetadata.md) per visualizzare e modificare i metadati.
 
 #### Metadati comuni {#common-metadata}
 
@@ -70,11 +70,11 @@ Tutte le piattaforme dispongono di una configurazione e di metadati comuni.
 
 In questa sezione puoi definire l’URL del server di aggiornamento dei contenuti, la pagina di destinazione dell’app mobile, la versione di PhoneGap da compilare, la versione dell’applicazione, il nome, la descrizione e altro ancora.
 
-**Versione app** è la versione funzionante dell’applicazione. Si consiglia di utilizzare una notazione a 3 decimali e iniziare al di sotto di 1.0.0 prima della prima versione.
+**Versione app** è la versione funzionante dell’applicazione. Si consiglia di utilizzare una notazione a 3 decimali e iniziare da sotto la versione 1.0.0 prima della prima versione.
 
 **Versione PhoneGap** è la versione in cui desideri compilare l’applicazione con PhoneGap. Si consiglia di mantenere la versione corrente per essere certi di ottenere le funzioni e le correzioni di bug più recenti e avanzate.
 
-**URL server di aggiornamento contenuti** è l&#39;URL che verrà utilizzato dall&#39;applicazione per richiamare gli aggiornamenti di ContentSync. Deve essere impostato sull’URL di Dispatcher o, se non si utilizza un’istanza di Dispatcher, su una delle istanze di pubblicazione utilizzate per distribuire gli aggiornamenti ContentSync all’applicazione.
+**URL server di aggiornamento contenuti** è l&#39;URL utilizzato dall&#39;applicazione per richiamare gli aggiornamenti ContentSync. Deve essere impostato sull’URL di Dispatcher o, se non si utilizza un’istanza di Dispatcher, su una delle istanze di pubblicazione utilizzate per distribuire gli aggiornamenti ContentSync all’applicazione.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -82,25 +82,25 @@ In questa sezione puoi definire l’URL del server di aggiornamento dei contenut
 >
 >Questa sezione può apparire vuota a meno che non siano presenti dati che popolano i campi.
 >
->Nella parte superiore della visualizzazione dei dettagli, sono visibili la versione dell’applicazione, la versione di PhoneGap e l’URL di aggiornamento; ciascuno di questi valori può essere impostato nella sezione Metadati comuni. Tuttavia, non è possibile modificare l’ID applicazione.
+>Nella parte superiore della visualizzazione dei dettagli, sono presenti Application Version (Versione applicazione), PhoneGap Version (Versione PhoneGap) e Update URL (Aggiorna URL); ciascuno di questi valori può essere impostato nella sezione Common Metadata (Metadati comuni). Tuttavia, non è possibile modificare l’ID applicazione.
 
 #### Metadati piattaforma {#platform-metadata}
 
 Ogni piattaforma definita nel file config.xml di PhoneGap può contenere proprietà di piattaforma personalizzate. Uno sviluppatore AEM deve contribuire con la struttura del contenuto per acquisire queste proprietà. Un esempio fornito di proprietà specifiche per la piattaforma è disponibile per iOS.
 
-Ora i metadati per tutte le piattaforme configurate vengono visualizzati contemporaneamente nella scheda Avanzate del riquadro Gestione app.
+Ora i metadati per tutte le piattaforme configurate vengono visualizzati contemporaneamente nella scheda Avanzate della `Manage App` affiancare.
 
 >[!NOTE]
 >
->Le sezioni dei metadati della piattaforma non vengono utilizzate da PhoneGap durante una build CLI o Remote PhoneGap, ma l’AEM tenta di acquisire i metadati per le piattaforme in modo che possano essere utilizzati in un secondo momento durante l’invio all’archivio applicazioni del fornitore di destinazione.
+>Le sezioni dei metadati della piattaforma non vengono utilizzate da PhoneGap durante una CLI o una build di Remote PhoneGap. Al contrario, l’AEM tenta di acquisire metadati per le piattaforme in modo che possano essere utilizzati in un secondo momento durante l’invio all’archivio applicazioni del fornitore interessato.
 
-Per le piattaforme che non sono comprese dall’AEM, uno sviluppatore AEM può comunque estendere l’interfaccia utente per acquisire questi metadati, che in seguito possono essere esportati e utilizzati durante il processo di invio delle applicazioni.
+Per le piattaforme non comprese dall’AEM, uno sviluppatore AEM può comunque estendere l’interfaccia utente per acquisire questi metadati, che in seguito possono essere esportati e utilizzati durante il processo di invio delle applicazioni.
 
 #### Metadati iOS {#ios-metadata}
 
-Per inviare l&#39;applicazione per la distribuzione, Apple AppStore richiede metadati aggiuntivi. La sezione metadati di iOS tenta di raccogliere le informazioni richieste che possono essere utilizzate dallo strumento iTMSTransporter di Apple per pubblicare i metadati sull’account dello sviluppatore Apple associato.
+L’app store di Apple richiede metadati aggiuntivi per inviare l’applicazione per la distribuzione. La sezione metadati di iOS tenta di raccogliere le informazioni richieste che possono essere utilizzate dallo strumento iTMSTransporter di Apple per pubblicare i metadati sull’account dello sviluppatore Apple associato.
 
-Per ottenere i metadati specifici di Apple, devi prima creare l’applicazione su [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Al momento della creazione dell’applicazione, Apple genera i metadati richiesti dalla sezione dei metadati di iOS se desideri utilizzare lo strumento Apple iTMSTransporter per convalidare e caricare i metadati in itunesconnect.apple.com. Se desideri solo ottenere i metadati da raccogliere, non devi necessariamente compilare i metadati specifici di iOS. Puoi comunque esportare i metadati che uniranno iOS e i metadati comuni e raccogliere tutte le schermate in un file zip scaricabile in qualsiasi momento.
+Per ottenere i metadati specifici di Apple, crea l’applicazione su [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Al momento della creazione dell’applicazione, Apple genera i metadati richiesti dalla sezione dei metadati di iOS se desideri utilizzare lo strumento Apple iTMSTransporter per convalidare e caricare i metadati in itunesconnect.apple.com. Se desideri ottenere i metadati da raccogliere, non devi compilare i metadati specifici di iOS. Puoi comunque esportare i metadati che uniscono iOS e i metadati comuni e raccogliere tutte le schermate in un file zip scaricabile in qualsiasi momento.
 
 Il file zip scaricato contiene un file itmsp che può essere esaminato per il file metadata.xml. Il file itmsp contiene i metadati esportati (all’interno del file metadata.xml), insieme a tutte le schermate associate.
 
@@ -118,7 +118,7 @@ La funzionalità di esportazione consente di raccogliere in modo semplice le sch
 
 ### URL server per aggiornamento contenuti {#content-update-server-url}
 
-Una delle caratteristiche principali delle app AEM è la capacità di un’app mobile di richiedere nuovi contenuti tramite ContentSync, dove il contenuto può essere costituito da risorse html, pagine, video, immagini, testo e altro ancora. Una volta che un autore di contenuti ha aggiornato il contenuto e lo pubblica, il server ne rende disponibile l’aggiornamento per il download dell’app mobile.
+Una delle caratteristiche principali delle app AEM è la capacità di un’app mobile di richiedere nuovi contenuti tramite ContentSync, dove il contenuto può essere costituito da risorse HTML, pagine, video, immagini, testo e altro ancora. Dopo che un autore di contenuti ha aggiornato il contenuto e lo pubblica, il server rende disponibile l’aggiornamento del contenuto per il download dell’app mobile.
 
 La proprietà URL del server di aggiornamento dei contenuti è l&#39;URL che deve puntare a un&#39;istanza di pubblicazione, direttamente o tramite Dispatcher o CDN. Il formato dell’URL è semplicemente:
 
@@ -126,7 +126,7 @@ La proprietà URL del server di aggiornamento dei contenuti è l&#39;URL che dev
 
 >[!NOTE]
 >
->Se l’istanza del server di authoring si replica su più istanze del server di pubblicazione (architettura comune per AEM), ogni server di pubblicazione avrà lo stesso contenuto di aggiornamento perché l’aggiornamento è basato sull’autore e replicato in tutte le istanze di pubblicazione. In pratica, il bilanciamento del carico e il failover sono completamente supportati.
+>Se l’istanza del server di authoring si replica su più istanze del server di pubblicazione (architettura comune per AEM), ogni server di pubblicazione ha lo stesso contenuto di aggiornamento. Il motivo è che l’aggiornamento è basato sull’autore e replicato in tutte le istanze di pubblicazione. In pratica, il bilanciamento del carico e il failover sono completamente supportati.
 
 ### Scheda Plug-in {#the-plugins-tab}
 
@@ -160,7 +160,7 @@ Dopo aver appreso come gestire il riquadro app nel dashboard dell’applicazione
 * [Importa un&#39;app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
-### Risorse aggiuntive {#additional-resources}
+### Altre risorse {#additional-resources}
 
 Per informazioni sui ruoli e sulle responsabilità di un amministratore e di uno sviluppatore, consulta le risorse seguenti:
 

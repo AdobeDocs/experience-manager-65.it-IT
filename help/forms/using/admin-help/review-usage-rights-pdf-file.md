@@ -7,18 +7,18 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 603edbd2-c012-4d25-99bf-c4f3dc147308
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
 # Verificare i diritti di utilizzo di un file PDF {#review-the-usage-rights-of-a-pdf-file}
 
-Quando carichi un file PDF nell&#39;applicazione Web Acrobat Reader DC extensions, puoi visualizzare queste informazioni:per verificare se è stato esteso al Reader, eventuali diritti di utilizzo applicati e le rispettive date di scadenza.
+Quando carichi un file PDF nell’applicazione web Acrobat Reader DC Extensions, puoi visualizzare queste informazioni per verificare se si tratta di un file esteso per il Reader, eventuali diritti di utilizzo applicati e le relative date di scadenza.
 
-1. Accedi all’applicazione web Acrobat Reader DC extensions all’indirizzo `http://[localhost]:[port]/ReaderExtensions` (dove *[porta]* è il numero di porta del server applicazioni).
+1. Accedi all’applicazione web Acrobat Reader DC Extensions all’indirizzo `http://[localhost]:[port]/ReaderExtensions` (dove *[porta]* è il numero di porta del server applicazioni).
 1. Fare clic su Sfoglia per caricare il file PDF, quindi su Info. Le informazioni vengono visualizzate sotto il nome del file.
 
-   Consulta la Guida delle estensioni di Acrobat Reader DC per informazioni dettagliate sulla modifica dei diritti di utilizzo del file.
+   Per informazioni dettagliate sulla modifica dei diritti di utilizzo del file, consulta la Guida delle estensioni di Acrobat Reader DC.
