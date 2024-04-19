@@ -5,16 +5,16 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
+source-git-commit: b90b62418edfa9cef36d99de554a340fad07d978
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 73%
+source-wordcount: '1509'
+ht-degree: 72%
 
 ---
 
 # Frammenti di esperienza{#experience-fragments}
 
-Un frammento di esperienza è un gruppo di uno o più componenti, inclusi il contenuto e il layout, a cui è possibile fare riferimento all’interno delle pagine. Possono contenere qualsiasi componente.
+In Adobe Experience Manager (AEM) un frammento di esperienza è un gruppo di uno o più componenti, inclusi il contenuto e il layout, a cui è possibile fare riferimento all’interno delle pagine. Possono contenere qualsiasi componente.
 
 Un frammento di esperienza:
 
