@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1658'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
    * Se JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-      * Non è un archivio condiviso UGC (User Generated Content):
+      * Non è un archivio condiviso UGC (User-Generated Content):
 
          * UGC non viene mai replicato
          * UGC è visibile solo nell’istanza o nel cluster AEM in cui è stato immesso
@@ -84,7 +84,7 @@ AEM 6.5 Communities GA include il pacchetto Communities. Per ulteriori informazi
 
 A partire da AEM 6.4, gli aggiornamenti alle community vengono forniti come parte dei Cumulative Fix Pack e Service Pack di AEM.
 
-Per gli ultimi aggiornamenti di AEM 6.5, vedi [Adobe Experience Manager 6.4 Cumulative Fix Pack e Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it).
+Per gli ultimi aggiornamenti di AEM 6.5, vedi [Adobe Experience Manager 6.4 Cumulative Fix Pack e Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ### Cronologia delle versioni {#version-history}
 
@@ -208,7 +208,7 @@ Per tutte le altre istanze di pubblicazione (secondarie) in una farm di pubblica
 
 La replica viene utilizzata per il contenuto del sito creato nell&#39;ambiente di pubblicazione, ad esempio i gruppi della community, e per la gestione di membri e gruppi di membri dall&#39;ambiente di authoring utilizzando [servizio tunnel](#tunnel-service-on-author).
 
-Per l’editore principale, assicurati che [Configurazione agente di replica](/help/sites-deploying/replication.md) identifica correttamente il server di pubblicazione e l’utente autorizzato. Utente autorizzato predefinito, `admin,` dispone già delle autorizzazioni appropriate (è membro di `Communities Administrators`).
+Per l’editore principale, assicurati che [Configurazione agente di replica](/help/sites-deploying/replication.md) identifica correttamente il server di pubblicazione e l&#39;utente autorizzato. Utente autorizzato predefinito, `admin,` dispone già delle autorizzazioni appropriate (è membro di `Communities Administrators`).
 
 Affinché qualche altro utente disponga delle autorizzazioni appropriate, deve essere aggiunto come membro al `administrators` gruppo di utenti (anche membro di `Communities Administrators`).
 
@@ -358,8 +358,8 @@ In particolare, fai attenzione a usare il nome del server corretto, non `localho
 
 Se utilizzi un Dispatcher, consulta:
 
-* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) documentazione
-* [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* AEM [Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) documentazione
+* [Installazione di Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configurazione di Dispatcher per le community](/help/communities/dispatcher.md)
 * [Problemi noti](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

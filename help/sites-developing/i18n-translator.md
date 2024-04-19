@@ -9,9 +9,9 @@ exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2318'
 ht-degree: 1%
 
 ---
@@ -195,7 +195,7 @@ La barra di ricerca nella parte inferiore dello strumento Translator fornisce le
 
 ### Modifica delle stringhe tradotte {#editing-translated-strings}
 
-Dopo aver aggiunto la stringa inglese a un dizionario, è possibile aggiungere le traduzioni della stringa. È inoltre possibile [esportare il dizionario](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) per farla tradurre da un terzo.
+Dopo aver aggiunto la stringa inglese a un dizionario, è possibile aggiungere le traduzioni della stringa. È inoltre possibile [esportare il dizionario](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) per farla tradurre da una terza parte.
 
 1. Seleziona [dizionario specifico del progetto](#creating-a-dictionary) in quanto specifica il percorso nell’archivio in cui si trovano le traduzioni. Ad esempio, seleziona **Dizionari** come:
 

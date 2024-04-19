@@ -1,6 +1,6 @@
 ---
 title: Rendering di Forms come HTML
-description: Utilizza il servizio Forms per eseguire il rendering dei moduli come HTML in risposta a una richiesta HTTP da un browser web. Puoi utilizzare l’API Java e l’API Web Service per eseguire il rendering dei moduli come HTML.
+description: Utilizza il servizio Forms per eseguire il rendering dei moduli come HTML in risposta a una richiesta HTTP da un browser web. Puoi utilizzare l’API Java&trade; e l’API di servizio web per eseguire il rendering dei moduli come HTML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,9 +9,9 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4104'
+source-wordcount: '4099'
 ht-degree: 0%
 
 ---
@@ -64,17 +64,17 @@ Quando un modulo viene renderizzato come modulo HTML, le dimensioni della pagina
 >
 >Se si desidera personalizzare l&#39;aspetto del pulsante Firma digitale HTML in un modulo HTML, è necessario modificare le seguenti proprietà nel file fscdigsig.css (all&#39;interno del file adobe-forms-ds.ear > adobe-forms-ds.war ):
 
-**.fsc-ds-ssb**: questo foglio di stile è applicabile se è presente un campo del segno vuoto.
+**`.fsc-ds-ssb`**: questo foglio di stile è applicabile se è presente un campo del segno vuoto.
 
-**.fsc-ds-ssv**: questo foglio di stile è applicabile se è presente un campo Segno valido.
+**`.fsc-ds-ssv`**: questo foglio di stile è applicabile se è presente un campo Segno valido.
 
-**.fsc-ds-ssc**: questo foglio di stile è applicabile se è presente un campo Segno valido ma i dati sono stati modificati.
+**`.fsc-ds-ssc`**: questo foglio di stile è applicabile se è presente un campo Segno valido ma i dati sono stati modificati.
 
-**.fsc-ds-ssi**: questo foglio di stile è applicabile se è presente un campo del segno non valido.
+**`.fsc-ds-ssi`**: questo foglio di stile è applicabile se è presente un campo del segno non valido.
 
-**.fsc-ds-popup-bg**: questa proprietà del foglio di stile non viene utilizzata.
+**`.fsc-ds-popup-bg`**: questa proprietà del foglio di stile non viene utilizzata.
 
-**.fsc-ds-popup-btn**: questa proprietà del foglio di stile non viene utilizzata.
+**.`fsc-ds-popup-btn`**: questa proprietà del foglio di stile non viene utilizzata.
 
 ## Esecuzione degli script {#running-scripts}
 

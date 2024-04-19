@@ -7,9 +7,9 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Il pacchetto contiene le seguenti risorse:
 
 1. `sample-form.xdp`: modello di modulo XFA utilizzato come esempio
 
-1. `sample-xfa-af`: modulo adattivo basato sul file sample-form.xdp. Questo modulo adattivo, tuttavia, non include alcun campo. Nel passaggio successivo, aggiungeremo contenuto a questo modulo adattivo.
+1. `sample-xfa-af`: modulo adattivo basato sul file sample-form.xdp. Questo modulo adattivo, tuttavia, non include alcun campo. Nel passaggio successivo aggiungi contenuto a questo modulo adattivo.
 
 ### Aggiungere contenuto al modulo adattivo {#add-content-to-adaptive-form-br}
 
@@ -63,7 +63,7 @@ Il pacchetto contiene le seguenti risorse:
 
 >[!NOTE]
 >
->Nei passaggi precedenti, abbiamo sovrascritto una proprietà di un campo nel file XDP. Pertanto, questa proprietà non verrà sincronizzata se la proprietà corrispondente nel file XDP viene modificata in un secondo momento.
+>Nei passaggi precedenti, hai sovrascritto una proprietà di un campo nel file XDP. Questa proprietà non viene quindi sincronizzata se la proprietà corrispondente nel file XDP viene modificata in un secondo momento.
 
 ## Rilevamento delle modifiche nel file XDP {#detecting-changes-in-xdp-file}
 

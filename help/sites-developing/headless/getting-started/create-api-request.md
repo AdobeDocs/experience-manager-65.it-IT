@@ -5,16 +5,16 @@ exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 40%
+source-wordcount: '548'
+ht-degree: 41%
 
 ---
 
 # Guida rapida all’accesso e alla distribuzione di frammenti di contenuto headless {#accessing-delivering-content-fragments}
 
-Scopri come utilizzare l’API REST di AEM Assets per gestire i frammenti di contenuto e l’API GraphQL per la distribuzione headless dei contenuti di frammenti di contenuto.
+Scopri come utilizzare l’API REST di AEM Assets per gestire i frammenti di contenuto e l’API di GraphQL per la distribuzione headless dei contenuti dei frammenti di contenuto.
 
 ## Cosa sono le API REST di GraphQL e Assets? {#what-are-the-apis}
 
@@ -28,7 +28,7 @@ Il resto di questa guida è incentrato sull’accesso a GraphQL e sulla distribu
 
 ## Come distribuire un frammento di contenuto con GraphQL {#how-to-deliver-a-content-fragment}
 
-Gli architetti di informazioni devono progettare query per gli endpoint di canale per distribuire i contenuti. Queste query devono essere considerate solo una volta per endpoint per modello. Ai fini di questa guida introduttiva, è necessario crearne una sola.
+Gli architetti di informazioni devono progettare query per gli endpoint di canale per distribuire i contenuti. Considera queste query solo una volta per endpoint, per modello. Per questa guida introduttiva, creane una sola.
 
 1. Accedi all’AEM e accedi a [Interfaccia GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Ad esempio: `http://<host>:<port>/aem/graphiql.html`.

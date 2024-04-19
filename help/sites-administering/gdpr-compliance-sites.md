@@ -9,9 +9,9 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '823'
 ht-degree: 54%
 
 ---
@@ -40,7 +40,7 @@ Gli account utente e i contenuti UGC sul server di authoring sono trattati in [D
 
 Gli account utente utilizzati per autenticare i visitatori sul sito e i contenuti UGC sul server di pubblicazione sono trattati in [Documentazione di Platform RGPD](/help/managing/data-protection-and-privacy.md).
 
-Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terze parti o ad Adobe Campaign per un’ulteriore elaborazione.
+Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terzi o ad Adobe Campaign per un’ulteriore elaborazione.
 
 ## Consenso/rinuncia {#opt-in-opt-out}
 

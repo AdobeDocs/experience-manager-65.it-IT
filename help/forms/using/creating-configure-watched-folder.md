@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Puoi utilizzare l’interfaccia utente della cartella controllata per:
 Prima di configurare una cartella controllata, verifica quanto segue:
 
 * Le cartelle controllate sono una funzione avanzata dei moduli AEM. Per funzionare è necessario il pacchetto aggiuntivo AEM forms. Verifica che sia installato e configurato il pacchetto del componente aggiuntivo AEM Forms appropriato.
-* Puoi creare la cartella controllata in un archivio condiviso o locale. Verificare che l&#39;utente di moduli AEM configurato per eseguire la cartella controllata disponga di autorizzazioni di lettura e scrittura per la cartella controllata.
+* Puoi creare la cartella controllata in un archivio condiviso o in un archivio locale. Verificare che l&#39;utente di moduli AEM configurato per eseguire la cartella controllata disponga di autorizzazioni di lettura e scrittura per la cartella controllata.
 * Puoi utilizzare un servizio, un flusso di lavoro o uno script per automatizzare un’operazione con una cartella controllata. Assicurati che il servizio, il flusso di lavoro o uno script corrispondente sia stato creato e sia pronto per l’esecuzione. Per informazioni sulla creazione di un servizio, un flusso di lavoro e uno script, consulta [Vari metodi di elaborazione dei file](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * Una cartella controllata ha varie proprietà, vedi [Proprietà cartella controllata](watched-folder-in-aem-forms.md#watchedfolderproperties).
 

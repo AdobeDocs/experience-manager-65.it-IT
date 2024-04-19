@@ -10,9 +10,9 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4130'
+source-wordcount: '4132'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ Durante questo processo, è importante visitare diverse aree del sito web, con d
 
 Nel caso più semplice, l’unica parte variabile nell’URL di Quickview è lo SKU del prodotto. In questo caso, il valore SKU è l&#39;unico dato necessario per aggiungere punti attivi all&#39;immagine del banner.
 
-Tuttavia, in casi complessi, oltre allo SKU, l&#39;URL Quickview presenta diversi elementi variabili, ad esempio l&#39;ID categoria, il codice colore e il codice dimensione. In questi casi, ogni elemento è una variabile separata nella definizione dei dati dei punti attivi nella funzione per immagini interattive acquistabili di Experience Manager Assets.
+Tuttavia, in casi complessi, l’URL Quickview contiene elementi diversi che differiscono oltre allo SKU, come l’ID categoria, il codice colore e il codice dimensione. In questi casi, ogni elemento è una variabile separata nella definizione dei dati dei punti attivi nella funzione per immagini interattive acquistabili di Experience Manager Assets.
 
 Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotspot risultanti:
 
@@ -375,9 +375,9 @@ L’integrazione è semplice come rimuovere `IMG` e sostituirlo con il codice da
 
 Per applicare un ritaglio a un’immagine interattiva acquistabile per un ambiente reattivo, puoi includere l’attributo di configurazione Immagine interattiva `ZoomView.iscommand` al percorso. Il componente `ZoomView` si chiama e `iscommand` è il comando di image serving &quot;crop&quot; applicato;
 
-Consulta [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) attributo di configurazione.
+Consulta [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) attributo di configurazione.
 
-Consulta [ritagliare](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) comando image serving.
+Consulta [ritagliare](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) comando image serving.
 
 Ora puoi integrare l’immagine interattiva con un Quickview esistente sul tuo sito web.
 

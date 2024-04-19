@@ -9,9 +9,9 @@ exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2838'
 ht-degree: 84%
 
 ---
@@ -210,7 +210,7 @@ Per creare un’area come Live Copy:
 
 ## Collegamento di siti a un’area {#linking-sites-to-an-area}
 
-È possibile collegare aree a pagine o siti. Le aree vengono ereditate da tutte le pagine secondarie a meno che queste non siano sovrapposte da una mappatura su una pagina secondaria. In genere, tuttavia, crei collegamenti a livello del sito.
+È possibile collegare aree a pagine o siti. Le aree vengono ereditate da tutte le pagine secondarie, a meno che queste non siano sovrapposte da una mappatura su una pagina secondaria. In genere, tuttavia, crei collegamenti a livello del sito.
 
 Quando esegui un collegamento, sono disponibili solo le attività, le esperienze e le offerte dell’area selezionata. In questo modo si evita il mixup accidentale di contenuti gestiti in modo indipendente. Se non è configurata nessuna altra area, viene utilizzata l’Area master di ciascun marchio.
 

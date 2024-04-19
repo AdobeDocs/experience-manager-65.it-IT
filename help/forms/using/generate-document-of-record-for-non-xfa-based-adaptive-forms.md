@@ -8,9 +8,9 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4257'
+source-wordcount: '4256'
 ht-degree: 1%
 
 ---
@@ -464,7 +464,7 @@ Quando lavori su un documento record per moduli adattivi, tieni presenti le cons
 
 ## Usa un file XCI personalizzato
 
-Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms as a Cloud Service has a master XCI file.--> Puoi utilizzare un file XCI personalizzato per ignorare una o più proprietà predefinite specificate nel file XCI esistente. È ad esempio possibile scegliere di incorporare un tipo di carattere in un documento o di attivare la proprietà con tag per tutti i documenti. La tabella seguente specifica le opzioni XCI:
+Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms as a Cloud Service has a master XCI file.--> È possibile utilizzare un file XCI personalizzato per ignorare una o più proprietà predefinite specificate nel file XCI esistente. È ad esempio possibile scegliere di incorporare un tipo di carattere in un documento o di attivare la proprietà con tag per tutti i documenti. La tabella seguente specifica le opzioni XCI:
 
 | Opzione XCI | Descrizione |
 |--- |--- |

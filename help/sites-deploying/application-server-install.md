@@ -9,9 +9,9 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -236,17 +236,17 @@ Prima di una distribuzione, leggi [Descrizione generale](#general-description) s
 
 * **Distribuire l’applicazione web AEM**
 
-   * Scarica file .war AEM
-   * Configurare le configurazioni in web.xml se necessario (vedi sopra nella Descrizione generale)
+   * Scarica il file .war dell&#39;AEM.
+   * Se necessario, effettua le configurazioni in web.xml (vedi sopra nella Descrizione generale).
 
-      * Decomprimi file WEB-INF/web.xml
-      * cambiare il parametro sling.run.modes in publish
-      * rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario
-      * Ripristina file web.xml
+      * Decomprimi il file WEB-INF/web.xml.
+      * Modifica il parametro sling.run.modes in publish.
+      * Rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario.
+      * Ripristina il file web.xml.
 
-   * Rinomina il file .war dell’AEM in ROOT.war se desideri distribuirlo come web app principale, rinominalo ad esempio in aemauthor.war se desideri avere aemauthor come directory principale del contesto
-   * copiarlo nella cartella webapps di tomcat
-   * attendi l’installazione di AEM
+   * Rinomina il file .war dell’AEM in ROOT.war se desideri distribuirlo come web app principale. Rinominalo in aemauthor.war se vuoi avere aemauthor come directory principale del contesto.
+   * Copiatelo nella cartella Webapps di Tomcat.
+   * Attendere l&#39;installazione dell&#39;AEM.
 
 ## Risoluzione dei problemi {#troubleshooting}
 

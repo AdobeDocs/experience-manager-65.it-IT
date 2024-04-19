@@ -10,9 +10,9 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '5926'
+source-wordcount: '5927'
 ht-degree: 2%
 
 ---
@@ -140,7 +140,7 @@ Durante questo processo, è importante visitare diverse aree del sito web, con d
 
 Nel caso più semplice, l’unica parte variabile nell’URL di Quickview è lo SKU del prodotto. In questo caso, il valore SKU del prodotto è l’unico dato necessario per aggiungere le miniature a un segmento di tempo nel video interattivo di Experience Manager.
 
-Tuttavia, in casi complessi, oltre allo SKU del prodotto, l’URL di Quickview presenta diversi elementi variabili, come ID categoria, codice colore e codice di dimensione. In questi casi, ogni elemento di questo tipo diventa una variabile separata nella definizione dei dati delle miniature di Experience Manager.
+Tuttavia, in casi complessi, oltre allo SKU del prodotto, l’URL di Quickview presenta diversi elementi quali ID categoria, codice colore e codice di dimensione. In questi casi, ogni elemento di questo tipo diventa una variabile separata nella definizione dei dati delle miniature di Experience Manager.
 
 Prendi in considerazione i seguenti esempi di URL Quickview e le variabili di miniatura risultanti:
 
@@ -252,7 +252,7 @@ Se hai caricato video o immagini errati o desideri eliminare i video o le immagi
 
 Per caricare un video e le risorse miniatura associate:
 
-1. Carica il video e le miniature associate nella cartella o nelle cartelle desiderate.
+1. Carica il video e le risorse miniature associate nella cartella o nelle cartelle desiderate.
 
    Consulta [Caricare le risorse](/help/assets/manage-assets.md).
 Consulta [Caricare le risorse utilizzando la pianificazione dei processi FTP](/help/assets/manage-assets.md).
@@ -335,7 +335,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
       </tbody>
     </table>
 
-   La timeline del video utilizza tanto spazio sullo schermo quanto ciò che viene reso disponibile. Di conseguenza, quando ridimensionate il browser, i segmenti aggiunti mantengono la larghezza corretta.
+   La timeline del video utilizza tanto spazio sullo schermo quanto ciò che viene reso disponibile. Di conseguenza, i segmenti aggiunti mantengono la larghezza corretta quando il browser viene ridimensionato.
 
    Ad esempio, le tre schermate seguenti utilizzano lo stesso video. La larghezza di ciascun segmento varia a seconda dell&#39;impostazione Scala timeline.
 
@@ -375,7 +375,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
 
    * Per eliminare un segmento
 
-     Seleziona l’ultimo segmento presente sulla timeline, quindi sulla barra degli strumenti seleziona **[!UICONTROL Elimina segmento]**. Se sono selezionati due o più segmenti, la funzione Elimina segmento è disabilitata.
+     Seleziona l’ultimo segmento presente sulla timeline, quindi sulla barra degli strumenti seleziona **[!UICONTROL Elimina segmento]**. Se sono selezionati due o più segmenti, **[!UICONTROL Elimina segmento]** è disabilitato.
 
      Puoi eliminare solo l’ultimo segmento. Ad esempio, per eliminare tutti i segmenti sulla timeline, seleziona sempre l’ultimo e seleziona **[!UICONTROL Elimina segmento]**.
 
@@ -476,7 +476,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
 
    Unione di due segmenti selezionati di cinque secondi in un segmento di dieci secondi.
 
-   * **[!UICONTROL Dividi segmento]** - È possibile dividere un singolo segmento in due segmenti con la stessa tempistica. Se al segmento sono già state assegnate delle miniature di prodotto, queste vengono combinate nel segmento sinistro.
+   * **[!UICONTROL Dividi segmento]** - È possibile dividere un singolo segmento in due segmenti di tempo uguali. Se al segmento sono già state assegnate delle miniature di prodotto, queste vengono combinate nel segmento sinistro.
 
      Sulla timeline, seleziona un segmento da dividere in due, quindi fai clic su **[!UICONTROL Dividi segmento]** sulla barra degli strumenti.
 
@@ -534,7 +534,7 @@ Il codice di incorporamento copiato è impostato per un ambiente reattivo e si a
 >
 >A questo punto, se hai aggiunto interattività solo con pagine web con collegamenti ipertestuali, hai chiuso.
 >
->Tuttavia, se avete aggiunto un&#39;interattività per attivare una Quickview, le miniature accanto al video interattivo sono solo a scopo di visualizzazione e non sono ancora integrate con la Quickview esistente. In tal caso, è necessario integrare il video interattivo con Quickview esistente sul sito Web.
+>Tuttavia, se avete aggiunto un&#39;interattività per attivare una Quickview, le miniature accanto al video interattivo sono solo a scopo di visualizzazione e non sono ancora integrate con la Quickview esistente. In questi casi, è necessario integrare il video interattivo con Quickview esistente sul sito Web.
 
 **Esempio**
 
@@ -569,7 +569,7 @@ Il codice di incorporamento è standard:
 </script>
 ```
 
-L’integrazione è semplice come rimuovere il codice di incorporamento video e sostituirlo con il codice di incorporamento video interattivo dall’Experience Manager. Puoi visualizzare il risultato al seguente URL. Anche se mostra un video interattivo presente nella pagina, non è ancora integrato con la Quickview esistente:
+L’integrazione è semplice come rimuovere il codice di incorporamento video e sostituirlo con il codice di incorporamento video interattivo dall’Experience Manager. I risultati sono disponibili al seguente URL. Anche se mostra un video interattivo presente nella pagina, non è ancora integrato con la Quickview esistente:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
@@ -707,7 +707,7 @@ Il sito web demo attiva la finestra di dialogo Quickview utilizzando un `loadQui
 loadQuickView(quickViewUrl);
 ```
 
-Infine, assicurarsi che la finestra di dialogo Quickview sia collegata all&#39;elemento contenitore del visualizzatore. Il codice di incorporamento predefinito fornisce passaggi di esempio per ottenere questa funzionalità. Per ottenere un riferimento all’elemento contenitore del visualizzatore, puoi utilizzare le seguenti righe di codice:
+Infine, assicurarsi che la finestra di dialogo Quickview sia collegata all&#39;elemento contenitore del visualizzatore. Il codice incorporato fornisce passaggi di esempio per ottenere questa funzionalità. Per ottenere un riferimento all’elemento contenitore del visualizzatore, puoi utilizzare le seguenti righe di codice:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component

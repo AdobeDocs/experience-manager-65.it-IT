@@ -5,10 +5,10 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: b90b62418edfa9cef36d99de554a340fad07d978
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 72%
+source-wordcount: '1505'
+ht-degree: 73%
 
 ---
 
@@ -32,7 +32,7 @@ Un frammento di esperienza:
 Puoi utilizzare Frammenti esperienza:
 
 * Se un autore desidera riutilizzare parti (un frammento di un’esperienza) di una pagina, deve copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
-* Per supportare il caso d’uso del CMS headless. Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. Un sistema o punto di contatto di terze parti potrebbe prendere in carico questa particolare esperienza e in seguito trasmetterla all’utente finale.
+* Per supportare il caso d’uso del CMS headless. Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. È possibile che un sistema o punto di contatto di terzi prenda in carico questa particolare esperienza e in seguito la trasmetta all’utente finale.
 * Con [Gestione multisito (MSM)](/help/sites-administering/msm.md); come frammento di esperienza fa parte di una pagina. Questo vale sia per i singoli frammenti che per le cartelle in cui risiedono.
 
 >[!NOTE]
@@ -372,6 +372,6 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
-Per impostazione predefinita, i frammenti di esperienza vengono forniti nel formato HTML. Può essere utilizzato sia dall’AEM che da canali di terze parti.
+Per impostazione predefinita, i frammenti di esperienza vengono forniti nel formato HTML. che può essere utilizzato sia da AEM che da canali di terze parti.
 
 Per l’esportazione in Adobe Target, è possibile utilizzare anche JSON. Consulta [Integrazione di Target con frammenti esperienza](/help/sites-administering/experience-fragments-target.md) per informazioni complete.

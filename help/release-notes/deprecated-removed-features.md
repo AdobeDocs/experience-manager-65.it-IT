@@ -2,9 +2,9 @@
 title: Funzioni obsolete e rimosse in Adobe Experience Manager versione 6.5.
 description: Note sulla versione specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1715'
 ht-degree: 10%
 
 ---
@@ -65,7 +65,7 @@ In questa sezione sono elencate le funzioni e le funzionalità rimosse da AEM 6.
 
 | Area | Funzione obsoleta | Sostituzione | Versione (SP) |
 |--- |--- |--- |--- |
-| Integrazione con [!DNL Experience Cloud] | Puoi sincronizzare le risorse con [!DNL Experience Cloud] utilizzo di una configurazione tramite [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] precedentemente denominato [!DNL Adobe Experience Cloud]. | In caso di domande, [contatta l’Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support). |  |
+| Integrazione con [!DNL Experience Cloud] | Puoi sincronizzare le risorse con [!DNL Experience Cloud] utilizzo di una configurazione tramite [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] precedentemente denominato [!DNL Adobe Experience Cloud]. | In caso di domande, [contatta l’Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=General#support). |  |
 | Activity Map di Analytics | Versione dell’Activity Map inclusa nell’AEM. | In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. Utilizza il [Plug-in ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=it). |  |
 | Integrazioni | L’integrazione ExactTarget è stata rimossa dalla distribuzione predefinita (Quickstart) e non è più disponibile. | Nessun sostituto. |  |
 | Integrazioni | L’integrazione API di Salesforce Force è stata rimossa dalla distribuzione predefinita (Quickstart) ed è ora un pacchetto aggiuntivo da installare da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). | La funzione è ancora disponibile. |

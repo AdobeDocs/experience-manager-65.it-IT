@@ -9,7 +9,7 @@ exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 0%
@@ -282,7 +282,7 @@ Configura il framework Adobe Analytics per abilitare il tracciamento dei collega
 
 >[!NOTE]
 >
->La configurazione dell’antisamia XSS è ora in SLING nel percorso **/libs/sling/xss.config.xml** e affinché il collegamento ad hoc funzioni, è necessario aggiungere le seguenti regole:
+>La configurazione dell’antisamia XSS è ora in SLING nel percorso **/libs/sling/xss.config.xml** e le seguenti regole devono essere aggiunte ad hoc in modo che il collegamento funzioni:
 
 #### Estensione regola tag di ancoraggio {#anchor-tag-rule-extension}
 

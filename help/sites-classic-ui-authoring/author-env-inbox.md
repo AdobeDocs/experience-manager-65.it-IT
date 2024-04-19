@@ -10,7 +10,7 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 1%
@@ -106,8 +106,8 @@ Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso,
 
 Se si è scelto di ricevere notifiche nella cartella Posta in arrivo AEM, la cartella Posta in arrivo viene riempita con le notifiche. È possibile [visualizzare le notifiche](#viewing-your-notifications), quindi seleziona le notifiche richieste per:
 
-* Approva facendo clic su **Approva**: il valore in **Letto** è impostata su **true**.
+* Accettarlo facendo clic su **Approva**: il valore in **Letto** è impostata su **true**.
 
-* Per eliminarlo, fai clic su **Elimina**.
+* Eliminarla facendo clic su **Elimina**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

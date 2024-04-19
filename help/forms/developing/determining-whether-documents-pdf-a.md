@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 2%
@@ -243,7 +243,7 @@ Determina se un documento PDF è conforme a PDF/A utilizzando l’API del serviz
 
    * Accedere a `AssemblerResult` dell&#39;oggetto `documents` campo, che è un `Map` oggetto contenente i dati XML che specifica se il documento PDF di input è un documento PDF/A.
    * Effettua iterazione attraverso `Map` per ottenere ogni documento risultante. Quindi, esegui il cast del valore del membro dell’array su un `BLOB`.
-   * Estrarre i dati binari che rappresentano i dati XML accedendo ai relativi `BLOB` dell&#39;oggetto `MTOM` campo. Questo campo memorizza un array di byte che è possibile scrivere come file XML.
+   * Estrarre i dati binari che rappresentano i dati XML accedendo ai relativi `BLOB` dell&#39;oggetto `MTOM` campo. In questo campo viene memorizzata una matrice di byte che è possibile scrivere come file XML.
 
 **Consulta anche**
 

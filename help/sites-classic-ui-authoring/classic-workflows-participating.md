@@ -9,7 +9,7 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 39%
@@ -40,7 +40,7 @@ Per elaborare un elemento di lavoro è possibile eseguire le azioni seguenti:
 
 * **Indietro**
 
-  Se scopri che un passaggio, o una serie di passaggi, deve essere ripetuto, puoi fare un passo indietro. Questo consente di selezionare un passaggio, precedente nel flusso di lavoro, per la rielaborazione. Il flusso di lavoro ritorna al passaggio specificato, quindi procede da lì.
+  Se scopri che un passaggio, o una serie di passaggi, deve essere ripetuto, puoi fare un passo indietro. Questo consente di selezionare un passaggio precedente nel flusso di lavoro, per la rielaborazione. Il flusso di lavoro ritorna al passaggio specificato, quindi procede da lì.
 
 ## Partecipazione a un flusso di lavoro {#participating-in-a-workflow}
 

@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -368,11 +368,11 @@ Tag HTML per includere il componente collegamento grafico nello zip importato. Q
 
 ### Parsys {#parsys}
 
-Il componente parsys dell’AEM è un componente contenitore che può contenere altri componenti dell’AEM. È possibile aggiungere un componente parsys nel HTML importato. Questo consente all’utente di aggiungere/eliminare componenti AEM modificabili nella pagina di destinazione anche dopo l’importazione.
+Il componente AEM Parsys è un componente contenitore che può contenere altri componenti AEM. È possibile aggiungere un componente Parsys nel HTML importato. Questo consente all’utente di aggiungere/eliminare componenti AEM modificabili nella pagina di destinazione anche dopo l’importazione.
 
 Il sistema paragrafo consente agli utenti di aggiungere componenti utilizzando la barra laterale.
 
-Markup HTML per inserire un componente parsys ( `foundation/components/parsys`) nel pacchetto di progettazione HTML:
+Markup HTML per inserire un componente Parsys ( `foundation/components/parsys`) nel pacchetto di progettazione HTML:
 
 ```xml
 <div data-cq-component="parsys">
@@ -383,9 +383,9 @@ Markup HTML per inserire un componente parsys ( `foundation/components/parsys`) 
 
 L’inclusione del markup sopra riportato nel HTML comporta le seguenti operazioni:
 
-* Inserisce un componente parsys AEM (foundation/components/parsys) nella pagina di destinazione creata dopo l’importazione del pacchetto di progettazione.
-* Inizializza la barra laterale con i componenti predefiniti. È possibile aggiungere nuovi componenti alla pagina di destinazione trascinandoli dalla barra laterale al componente parsys.
-* Anche due componenti titolo fanno parte del parsys.
+* Inserisce un componente AEM Parsys (foundation/components/parsys) nella pagina di destinazione creata dopo l’importazione del pacchetto di progettazione.
+* Inizializza la barra laterale con i componenti predefiniti. È possibile aggiungere nuovi componenti alla pagina di destinazione trascinandoli dalla barra laterale al componente Parsys.
+* Anche due componenti titolo fanno parte di Parsys.
 
 ### Destinazione {#target}
 
@@ -441,7 +441,7 @@ Se nel HTML importato non è specificata alcuna codifica, la codifica predefinit
 
 ### Sovrapposizione modello {#overlaying-template}
 
-Il modello Pagina di destinazione vuota può essere sovrapposto creando un modello in: `/apps/<appName>/designimporter/templates/<templateName>`
+Il modello Pagina di destinazione vuota può essere sovrapposto creando un layout in: `/apps/<appName>/designimporter/templates/<templateName>`
 
 Scopri come creare un modello in AEM [qui](/help/sites-developing/templates.md).
 
@@ -543,7 +543,7 @@ Durante l&#39;importazione del pacchetto di progettazione, è possibile che si v
 
 ### Inizializzazione della barra laterale con i componenti rilevanti per la pagina di destinazione {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-Se il pacchetto di progettazione contiene un markup di componente parsys, dopo l’importazione la barra laterale inizia a mostrare i componenti rilevanti per la pagina di destinazione. Puoi trascinare i nuovi componenti sul componente parsys all’interno della pagina di destinazione. Potete anche passare alla modalità progettazione e aggiungere nuovi componenti alla barra laterale.
+Se il pacchetto di progettazione contiene un markup di componente Parsys, dopo l’importazione la barra laterale inizia a mostrare i componenti rilevanti per la pagina di destinazione. Puoi trascinare i nuovi componenti sul componente Parsys all’interno della pagina di destinazione. Potete anche passare alla modalità progettazione e aggiungere nuovi componenti alla barra laterale.
 
 ### Messaggi di errore visualizzati durante l’importazione {#error-messages-displayed-during-import}
 

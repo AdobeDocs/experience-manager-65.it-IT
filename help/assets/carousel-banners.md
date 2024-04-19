@@ -10,9 +10,9 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4680'
+source-wordcount: '4677'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 I banner carosello consentono agli addetti al marketing di promuovere la conversione dei contenuti creando facilmente contenuti promozionali a rotazione interattivi e distribuendoli a qualsiasi schermo.
 
-La creazione e la modifica dei contenuti visualizzati nei banner promozionali può richiedere tempo, limitando la possibilità di pubblicare rapidamente nuovi contenuti o renderli più mirati. I banner a carosello consentono di creare o modificare rapidamente i banner rotanti. È possibile aggiungere interattività, come il collegamento di hotspot ai dettagli del prodotto o a risorse correlate, e distribuirli su qualsiasi schermo, consentendo di introdurre più rapidamente sul mercato nuovi contenuti promozionali.
+La creazione e la modifica dei contenuti visualizzati nei banner promozionali può richiedere tempo, limitando la possibilità di pubblicare rapidamente nuovi contenuti o renderli più mirati. I banner a carosello consentono di creare o modificare rapidamente i banner rotanti. È possibile aggiungere interattività, come il collegamento di hotspot ai dettagli dei prodotti o alle risorse correlate, e distribuirli su qualsiasi schermo, consentendo di immettere nuovi contenuti promozionali sul mercato più rapidamente.
 
 I banner a carosello sono indicati da un banner con la parola **[!UICONTROL SET CAROSELLO]**
 
@@ -43,7 +43,7 @@ Riproduci una procedura dettagliata su [come vengono creati i banner a carosello
 
 >[!NOTE]
 >
->Gli utenti non amministratori devono essere aggiunti al **[!UICONTROL dam-users]** per creare o modificare i banner a carosello. In caso di problemi durante la creazione o la modifica, rivolgiti al tuo amministratore di sistema che potrà aggiungerti al **[!UICONTROL dam-users]** gruppo.
+>Gli utenti non amministratori devono essere aggiunti al **[!UICONTROL `dam-users`]** per creare o modificare i banner a carosello. In caso di problemi durante la creazione o la modifica, rivolgiti al tuo amministratore di sistema che potrà aggiungerti al **[!UICONTROL `dam-users`]** gruppo.
 
 ## Guida introduttiva: Banner a carosello {#quick-start-carousel-banners}
 
@@ -72,7 +72,7 @@ Per iniziare subito a usare i banner a carosello:
 
    In Set caroselli di immagini, gli utenti possono navigare tra le immagini dei banner e selezionare punti attivi o mappe immagine per accedere al contenuto pertinente.
 
-   Per creare un set carosello in Assets, seleziona **[!UICONTROL Crea]**, quindi seleziona **[!UICONTROL Set carosello]**. Aggiungi risorse alle diapositive e seleziona **[!UICONTROL Salva]**. Inoltre, puoi modificare l’aspetto e il comportamento del carosello direttamente nell’editor.
+   Per creare un set carosello in Assets, seleziona **[!UICONTROL Crea]**, quindi seleziona **[!UICONTROL Set carosello]**. Aggiungi risorse a ciascuna diapositiva e seleziona **[!UICONTROL Salva]**. Inoltre, puoi modificare l’aspetto e il comportamento del carosello direttamente nell’editor.
 
 1. [Aggiunta di punti attivi o mappe immagine a un banner immagine](#adding-hotspots-or-image-maps-to-an-image-banner).
 
@@ -134,7 +134,7 @@ Durante questo processo, è importante visitare diverse aree del sito web, con d
 
 Nel caso più semplice, l’unica parte variabile nell’URL di Quickview è lo SKU del prodotto. In questo caso, il valore SKU è l&#39;unico dato necessario per aggiungere punti attivi o mappe immagine all&#39;immagine del banner.
 
-Tuttavia, in casi complessi, oltre allo SKU l&#39;URL Quickview presenta diversi elementi variabili, ad esempio ID categoria, codice colore e codice di dimensione. In questi casi, ogni elemento è una variabile separata nella definizione del punto attivo o della mappa immagine nella funzione del banner del carosello.
+Tuttavia, in casi complessi, l’URL Quickview contiene elementi diversi che differiscono oltre allo SKU, come l’ID categoria, il codice colore e il codice dimensione. In questi casi, ogni elemento è una variabile separata nella definizione del punto attivo o della mappa immagine nella funzione del banner del carosello.
 
 Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotspot o mappa immagine risultanti:
 
@@ -186,7 +186,7 @@ Per caricare i banner immagine, consulta [Caricare le risorse](/help/assets/mana
 
 >[!NOTE]
 >
->Gli utenti non amministratori devono essere aggiunti al **[!UICONTROL dam-users]** per creare o modificare i banner a carosello. In caso di problemi durante la creazione o la modifica, rivolgiti al tuo amministratore di sistema che potrà aggiungerti al **[!UICONTROL dam-users]** gruppo.
+>Gli utenti non amministratori devono essere aggiunti al **[!UICONTROL `dam-users`]** per creare o modificare i banner a carosello. In caso di problemi durante la creazione o la modifica, rivolgiti al tuo amministratore di sistema che potrà aggiungerti al **[!UICONTROL `dam-users`]** gruppo.
 
 **Per creare set carosello:**
 
@@ -277,7 +277,7 @@ Vedi anche [Aggiungere mappe immagine](/help/assets/image-maps.md).
    * Per punti attivi: sull&#39;immagine, seleziona la posizione in cui desideri visualizzare il punto attivo.
    * Per le mappe immagine: Sull’immagine, seleziona, quindi trascina dall’alto a sinistra verso il basso a destra per creare l’area della mappa immagine. È possibile regolare le dimensioni della mappa immagine trascinando gli angoli.
 
-   Se necessario, trascina il punto attivo o la mappa immagine in una nuova posizione. Se necessario, aggiungi altri punti attivi o mappe immagine.
+   Se necessario, trascina il punto attivo o la mappa immagine in una nuova posizione. Aggiungi altri punti attivi o mappe immagine in base alle esigenze.
 
    Per eliminare un punto attivo o una mappa immagine, selezionare **[!UICONTROL Azioni]** scheda. Seleziona il nome del punto attivo o della mappa immagine da rimuovere dall’intestazione **[!UICONTROL Mappe e punti attivi]** del menu a discesa **[!UICONTROL Tipo selezionato]**. Seleziona la **[!UICONTROL Cestino]** accanto al menu, quindi seleziona **[!UICONTROL Elimina]**.
 
@@ -336,7 +336,7 @@ Consulta [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
->Gli utenti non amministratori devono essere aggiunti al **[!UICONTROL dam-users]** per creare o modificare i banner a carosello. In caso di problemi durante la creazione o la modifica, rivolgiti al tuo amministratore di sistema che potrà aggiungerti al **[!UICONTROL dam-users]** gruppo.
+>Gli utenti non amministratori devono essere aggiunti al **[!UICONTROL `dam-users`]** per creare o modificare i banner a carosello. In caso di problemi durante la creazione o la modifica, rivolgiti al tuo amministratore di sistema che potrà aggiungerti al **[!UICONTROL dam-users]** gruppo.
 
 Puoi eseguire varie attività di modifica sui set carosello, come le seguenti:
 

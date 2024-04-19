@@ -6,7 +6,7 @@ topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Crea un’ **modello adattivo** e applica il tema al modello. Puoi quindi utiliz
 
    * `css`cartella: contiene i file .css in cui si definiscono gli stili statici da utilizzare nel tema.
 
-   **Meno file variabili**: questi sono i file in cui definisci o sostituisci le variabili utilizzate nella definizione degli stili CSS.
+   **Meno file di variabili**: questi sono i file in cui definisci o sostituisci le variabili utilizzate nella definizione degli stili CSS.
 
    I moduli adattivi forniscono variabili pronte all’uso definite nei seguenti `.less` file:
 

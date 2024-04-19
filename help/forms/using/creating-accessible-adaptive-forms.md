@@ -7,16 +7,16 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2099'
 ht-degree: 0%
 
 ---
 
 # Creazione di moduli adattivi accessibili{#creating-accessible-adaptive-forms}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) per [creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Introduzione {#introduction}
 
@@ -36,14 +36,14 @@ Durante la creazione di un modulo adattivo, l’autore deve considerare i seguen
 
 ### Scarica e installa lo strumento di test di accessibilità
 
-Lo strumento ANDI (Accessible Name and Description Inspector) consente di identificare e risolvere i problemi correlati alla conformità per l’accessibilità nel contenuto Web. È lo strumento consigliato nelle linee guida Trusted Tester v5 del Department of Homeland Security. È stato sviluppato dal Dipartimento della Social Security Administration&#x200B; degli Stati Uniti per verificare la conformità alla Sezione 508 dei contenuti web. Lo strumento:
+Lo strumento ANDI (Accessible Name and Description Inspector) consente di identificare e risolvere i problemi relativi alla conformità per l’accessibilità nei contenuti web. È lo strumento consigliato nelle linee guida Trusted Tester v5 del Department of Homeland Security. È stato sviluppato dal Dipartimento della Social Security Administration&#x200B; degli Stati Uniti per verificare la conformità alla Sezione 508 dei contenuti web. Lo strumento:
 
 * Consente di rilevare i problemi di accessibilità&#x200B; in una pagina web
 * Fornisce suggerimenti per migliorare l’accessibilità&#x200B;
 * Rileva problemi di accessibilità della tastiera e di contrasto dei colori
 * Identifica chiaramente i contenuti degli assistenti vocali in conformità agli standard
 
-ANDI funziona con tutti i principali browser Internet. Vedi, [Documentazione di ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) per istruzioni dettagliate su come configurare e utilizzare lo strumento.
+ANDI funziona con tutti i principali browser Internet. Consulta [Documentazione di ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) per istruzioni dettagliate su come configurare e utilizzare lo strumento.
 
 ### Scarica e installa il tema Ultramarine-Accessible
 
@@ -62,7 +62,7 @@ Per rendere accessibile un modulo adattivo, è necessario concentrarsi su quattr
 Applica al modulo adattivo esistente il tema Accessibile in modalità ultramarina. Per applicare il tema:
 
 1. Apri il modulo adattivo per la modifica.
-1. Seleziona un componente e fai clic sull’icona principale. Nel menu di scelta rapida, selezionare **[!UICONTROL Contenitore modulo adattivo]** quindi seleziona l’icona configura.
+1. Seleziona un componente e fai clic sull’icona principale. Nel menu di scelta rapida, selezionare **[!UICONTROL Contenitore modulo adattivo]** quindi seleziona l’icona Configura.
 1. Seleziona il tema Ultramarine-Accessible nel browser delle proprietà e seleziona **[!UICONTROL Salva]** icona.
 1. Aggiorna la finestra del browser. Il tema viene applicato al modulo adattivo.
 
@@ -70,11 +70,11 @@ Dopo aver applicato un tema accessibile, esegui le correzioni aggiuntive elencat
 
 1. Aggiungi un testo alternativo significativo per l’immagine del logo nel modulo adattivo.
 
-   Fornisci un testo alternativo significativo per le immagini nei componenti intestazione e piè di pagina del modello di modulo adattivo. Quando si corregge il modello e lo si utilizza per creare un modulo adattivo, i moduli adattivi ereditano tutte le correzioni relative all’accessibilità applicate all’intestazione e al piè di pagina del modello.  Per un modulo adattivo esistente, apporta modifiche a livello di modulo adattivo. Le modifiche apportate a un modello di modulo adattivo non passano automaticamente a un modulo adattivo esistente.
+   Fornisci un testo alternativo significativo per le immagini nei componenti intestazione e piè di pagina del modello di modulo adattivo. Quando si corregge il modello e lo si utilizza per creare un modulo adattivo, i moduli adattivi ereditano tutte le correzioni relative all’accessibilità applicate all’intestazione e al piè di pagina del modello.  Per un modulo adattivo esistente, apporta le modifiche necessarie a livello di modulo adattivo. Le modifiche apportate a un modello di modulo adattivo non passano automaticamente a un modulo adattivo esistente.
 
 1. Aggiungi al modulo adattivo un componente intestazione contenente il nome del modulo. Se la struttura del modulo specifica il nome di una società, aggiungere anche un componente intestazione separato per il nome della società.
 
-   La maggior parte degli strumenti di accessibilità informa gli utenti sulla gerarchia dei contenuti per aiutarli a comprendere la struttura della pagina web. Per fornire una struttura gerarchica al testo, imposta diversi livelli di intestazione per il nome dell’organizzazione e il testo del nome del modulo nel modulo adattivo. Inoltre, utilizza un componente Testo prima di ogni pannello e sezione con un livello di intestazione appropriato per creare una gerarchia.
+   La maggior parte degli strumenti di accessibilità informa gli utenti sulla gerarchia dei contenuti per aiutarli a comprendere la struttura della pagina web. Per fornire una struttura gerarchica a questi testi, imposta diversi livelli di intestazione per il nome dell’organizzazione e il testo del nome del modulo nel modulo adattivo. Inoltre, utilizza un componente Testo prima di ogni pannello e sezione con un livello di intestazione appropriato per creare una gerarchia.
 
    ![Come applicare uno stile di intestazione](assets/apply-style.gif)
 
@@ -90,7 +90,7 @@ Dopo aver applicato un tema accessibile, esegui le correzioni aggiuntive elencat
 
 1. Imposta il testo di accessibilità personalizzato per il componente Selezione data. Ad esempio, immetti la data di nascita. Gli assistenti vocali leggono questi testi personalizzati di accessibilità.
 
-1. Utilizza una descrizione breve invece di una descrizione lunga per i componenti del modulo adattivo. Una descrizione lunga aggiunge un pulsante della guida. Assicurati che l’area adattiva non includa alcun pulsante Aiuto.
+1. Utilizza una descrizione breve invece di una descrizione lunga per i componenti del modulo adattivo. Una descrizione lunga aggiunge un pulsante della guida. Assicurati che l’adattatore non disponga di alcun pulsante Aiuto.
 
 1. Aggiungere testo personalizzato per l&#39;accesso facilitato a tutte le celle di sola lettura delle tabelle. Disattivare inoltre tutte le celle di sola lettura delle tabelle.
 
@@ -181,7 +181,7 @@ Per il componente Selezione data in Adaptive Forms sono disponibili i seguenti t
 
 ## Utilizzare lo strumento di accessibilità per individuare i problemi di accessibilità rimanenti
 
-La funzione ANDI (Accessible Name and Description Inspector) consente di identificare e risolvere i problemi correlati alla conformità in materia di accessibilità in un modulo adattivo. Per utilizzare lo strumento ANDI per individuare i problemi di accessibilità in un modulo adattivo:
+La funzione ANDI (Accessible Name and Description Inspector) consente di identificare e risolvere i problemi relativi alla conformità per l’accessibilità in un modulo adattivo. Per utilizzare lo strumento ANDI per individuare i problemi di accessibilità in un modulo adattivo:
 
 1. Apri il modulo adattivo in modalità anteprima.
 1. Fai clic sull’icona dello strumento ANDI con segnalibro. Lo strumento ANDI analizza il modulo adattivo e visualizza i problemi di accessibilità. Per informazioni dettagliate su come utilizzare lo strumento, consulta [Documentazione di ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
