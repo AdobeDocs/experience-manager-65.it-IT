@@ -5,10 +5,10 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 74%
+source-wordcount: '1504'
+ht-degree: 73%
 
 ---
 
@@ -19,7 +19,7 @@ Un frammento di esperienza è un gruppo di uno o più componenti, inclusi il con
 Un frammento di esperienza:
 
 * è parte di un’esperienza (pagina).
-* Può essere utilizzato su più pagine.
+* Può essere utilizzato su più pagine (basate su modelli modificabili).
 * Si basa su un modello (solo modificabile) che ne definisce struttura e componenti.
 * Questo modello viene utilizzato per creare la *pagina root* del frammento di esperienza.
 * È costituito da uno o più componenti, con layout, in un sistema paragrafo.
@@ -251,6 +251,10 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 Ora puoi utilizzare il frammento di esperienza durante l’authoring delle pagine:
 
 1. Apri la pagina da modificare.
+
+   >[!NOTE]
+   >
+   >La pagina deve essere basata su un modello modificabile.
 
    Ad esempio: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 

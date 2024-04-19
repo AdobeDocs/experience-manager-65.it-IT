@@ -10,9 +10,9 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1795'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,8 @@ I componenti che non utilizzano questa convenzione non vengono presi in consider
 >[!CAUTION]
 >
 >***Solo*** [modelli modificabili](/help/sites-developing/page-templates-editable.md) sono supportate per i frammenti di esperienza.
+>
+>I frammenti di esperienza possono essere utilizzati solo su pagine basate su modelli modificabili.
 
 Quando sviluppi un nuovo modello per Frammenti esperienza, puoi seguire le procedure standard per un’applicazione [modello modificabile](/help/sites-developing/page-templates-editable.md).
 
