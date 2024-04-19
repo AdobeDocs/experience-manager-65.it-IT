@@ -9,9 +9,9 @@ discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 9e1c93a0d55d88c08b67392a9f16bfce2ac62445
+source-git-commit: 6990a68e92885fcf9b94a511e8bf5c729195849f
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Espressione supportata per la clausola Date Picture:
 
 >[!NOTE]
 >
-> In base alla progettazione, il campo Data in HTML5 Forms non supporta `MM-YYYY` in formato di modifica. Tuttavia, questo formato è supportato nel formato di visualizzazione.
+> In base alla progettazione, il campo Data in HTML5 Forms non supporta `MM-YYYY` pattern in formato di modifica. Tuttavia, il modello è supportato nel formato di visualizzazione.
 
 ## Clausola immagine numerica {#numeric-picture-clause}
 

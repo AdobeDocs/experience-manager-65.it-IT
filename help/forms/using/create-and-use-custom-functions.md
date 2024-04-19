@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
-source-git-commit: 91ab786cd7e0dd75b9ad15058a125605245ec5bb
+source-git-commit: a5b48f1f4072f3e10273ec90d6f505815fe584a3
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 1%
@@ -27,7 +27,6 @@ In AEM Forms 6.5 è stata introdotta la possibilità di definire funzioni JavaSc
 
 Le funzioni personalizzate estendono le funzionalità dei moduli facilitando la manipolazione e l’elaborazione dei dati immessi per soddisfare requisiti specifici. Consentono inoltre di modificare dinamicamente il comportamento delle forme in base a criteri predefiniti.
 In Adaptive Forms, puoi utilizzare funzioni personalizzate all’interno del [editor di regole di un modulo adattivo](/help/forms/using/rule-editor.md) per creare regole di convalida specifiche per i campi modulo.
-
 Comprendiamo l’utilizzo della funzione personalizzata, in cui gli utenti immettono l’indirizzo e-mail e desideri che l’indirizzo e-mail inserito segua un formato specifico (contiene il simbolo &quot;@&quot; e un nome di dominio). Crea una funzione personalizzata come &quot;ValidateEmail&quot; che accetta l’indirizzo e-mail come input e restituisce true se è valido, altrimenti restituisce false.
 
 ```javascript
