@@ -1,16 +1,18 @@
 ---
-title: Authoring di esperienze Commerce
+title: Creazione di esperienze Commerce
 description: Il componente aggiuntivo CIF estende l’authoring Adobe Experience Manager con funzionalità specifiche per l’e-commerce.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
 
 ---
 
-# Authoring di esperienze Commerce {#authoring-commerce-experiences}
+# Creazione di esperienze Commerce {#authoring-commerce-experiences}
 
 ## Panoramica {#overview}
 
@@ -66,7 +68,7 @@ Analogamente alle risorse, i prodotti possono essere aggiunti a una pagina (crea
 
 ### Aggiunta di collegamenti nei campi di testo mediante l’editor Rich Text {#rte}
 
-Le pagine del catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering immediato. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine AEM. L’CIF aggiunge una nuova azione &quot;Collegamenti commerce&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
+Le pagine del catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering immediato. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine AEM. L’CIF aggiunge una nuova azione &quot;Collegamenti Commerce&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 

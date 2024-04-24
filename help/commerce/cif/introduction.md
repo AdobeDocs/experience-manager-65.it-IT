@@ -4,7 +4,9 @@ description: Scopri come utilizzare e amministrare AEM Content and Commerce con 
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 88%
@@ -18,7 +20,7 @@ Con i contenuti e il commerce di Adobe Experience Manager, i marchi possono scal
 
 ## Come Content and Commerce aiuta la clientela ad avere successo
 
-Con le aspettative sempre crescenti della clientela per le esperienze di commerce online, i marchi sono costretti a fornire esperienze differenziate e più contenuti più rapidamente. Tuttavia, l’implementazione di una piattaforma di gestione dei contenuti richiede spesso un forte investimento in termini di tempo e budget per lo sviluppo di elementi fondamentali, come componenti personalizzati e strumenti di authoring, e matura i costi di manutenzione e aggiornamento. Experience Manager Sites offre Content and Commerce come modulo aggiuntivo per Experience Manager che fornisce componenti di base per l’e-commerce pronti all’uso, strumenti di authoring e una vetrina per accelerare il lancio, consentire una collaborazione fluida tra i team e favorire la conversione.
+Con le aspettative sempre crescenti della clientela per le esperienze di commerce online, i marchi sono costretti a fornire esperienze differenziate e più contenuti più rapidamente. Tuttavia, l’implementazione di una piattaforma di gestione dei contenuti richiede spesso un forte investimento in termini di tempo e budget per lo sviluppo di elementi fondamentali, come componenti personalizzati e strumenti di authoring, e matura i costi di manutenzione e aggiornamento. Experience Manager Sites offre Content e Commerce come modulo aggiuntivo per Experience Manager che fornisce componenti di base per l’e-commerce pronti all’uso, strumenti di authoring e una vetrina per accelerare la pubblicazione, consentire una collaborazione fluida tra i team e favorire la conversione.
 
 I brand possono integrare Experience Manager con Adobe Commerce, parte di Adobe Experience Cloud, nonché qualsiasi motore di commerce scelto. Con Experience Manager Content and Commerce, i marchi possono:
 
@@ -60,7 +62,7 @@ I potenti strumenti CIF in AEM consentono ai creatori di contenuti di realizzare
 
 ### Time-To-Value (TTV)
 
-Accelera lo sviluppo dei progetti con [Componenti core AEM](https://www.aemcomponents.dev/), [Vetrina di riferimento di AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), e modelli di integrazione per PWA (Headless Content and Commerce).
+Accelera lo sviluppo dei progetti con [Componenti core AEM](https://www.aemcomponents.dev/), [Vetrina di riferimento di AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), e modelli di integrazione per PWA (contenuti headless e Commerce).
 
 CIF è progettato per l’innovazione continua con un componente aggiuntivo sempre aggiornato, che consente ai clienti di accedere a funzioni nuove e migliorate.
 

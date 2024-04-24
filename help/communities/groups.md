@@ -9,10 +9,12 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 2%
+source-wordcount: '1698'
+ht-degree: 1%
 
 ---
 
@@ -146,7 +148,7 @@ Per impostazione predefinita, viene ereditato l&#39;elenco di moderatori del sit
 
 È possibile aggiungere moderatori specifici al gruppo. Cerca membri (dall’ambiente di pubblicazione) per aggiungerli come moderatori
 
-**Amministratori gruppo**
+**Amministratori di gruppi**
 
 Per impostazione predefinita, l&#39;amministratore del sito della community padre è anche l&#39;amministratore dei gruppi.
 
@@ -160,11 +162,11 @@ L&#39;impostazione di appartenenza consente di selezionare uno dei tre modi per 
 
 ![appartenenza a un gruppo community](assets/community-group-membership.png)
 
-* **Iscrizione opzionale**
+* **Iscrizione facoltativa**
 
   Se viene selezionato, il gruppo community è un gruppo pubblico. I membri del sito possono partecipare al gruppo e pubblicare i post senza partecipare esplicitamente al gruppo. L&#39;opzione Predefinita è selezionata.
 
-* **Iscrizione obbligatoria**
+* **Iscrizione richiesta**
 
   Se viene selezionato, il gruppo community è un gruppo aperto. I membri del sito della community possono visualizzare il contenuto del gruppo, ma devono unirsi al gruppo per pubblicare il contenuto. I membri si uniscono selezionando il `Join` nell’ambiente di pubblicazione. Impostazione predefinita non selezionata.
 

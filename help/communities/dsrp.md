@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +73,7 @@ Per accedere alla console Configurazione archiviazione, dall’autore
   ![dsrp-config](assets/dsrp-config.png)
 
 * Seleziona **[!UICONTROL Provider risorsa di archiviazione database (DSRP)]**
-* **Configurazione database**
+* **Configurazione del database**
 
    * **[!UICONTROL Nome origine dati JDBC]**
 
@@ -87,17 +89,17 @@ Per accedere alla console Configurazione archiviazione, dall’autore
 
 * **SolrConfiguration**
 
-   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Zookeeper Host**
+   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
      Lascia vuoto questo valore se esegui Solr utilizzando lo ZooKeeper interno. Altrimenti, durante l’esecuzione in [Modalità SolrCloud](solr.md#solrcloud-mode) con uno ZooKeeper esterno, impostare questo valore sull&#39;URI dello ZooKeeper, ad esempio *my.server.com:80*
 
      *predefinito*: *&lt;blank>*
 
-   * **[!UICONTROL URL di Solr]**
+   * **[!UICONTROL URL Solr]**
 
      *predefinito*: https://127.0.0.1:8983/solr/
 
-   * **[!UICONTROL Collezione Solr]**
+   * **[!UICONTROL Raccolta Solr]**
 
      *predefinito*: collection1
 

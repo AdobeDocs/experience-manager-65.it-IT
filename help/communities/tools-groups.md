@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +35,7 @@ Quando si esegue un&#39;azione per creare un gruppo community, viene selezionato
 
 Per raggiungere la console dei modelli di gruppo nell’ambiente di authoring AEM:
 
-* Seleziona **Strumenti | Comunità | Modelli per gruppi,** dalla navigazione globale.
+* Seleziona **Strumenti | Community | Modelli per gruppi,** dalla navigazione globale.
 
 In questa console vengono visualizzati i modelli da cui [sito community](/help/communities/sites-console.md) può essere creato e consente di creare nuovi modelli di gruppo.
 
@@ -51,7 +53,7 @@ Viene visualizzato il pannello Editor sito, che contiene tre pannelli secondari:
 
 Nel pannello Informazioni di base, vengono configurati un nome, una descrizione e se il modello è abilitato o disabilitato:
 
-* **Nome nuovo modello per gruppo**
+* **Nome nuovo modello gruppo**
 
   ID del nome del modello.
 
@@ -91,7 +93,7 @@ Continuare a trascinare tutte le altre funzioni community desiderate per un sito
 
 Una volta rilasciate e configurate tutte le funzioni desiderate nell’area di creazione del modello, seleziona **Salva** nell’angolo superiore destro.
 
-##  Modifica modello gruppo {#edit-group-template}
+## Modifica modello gruppo {#edit-group-template}
 
 Quando si visualizzano i gruppi della community nel [Console Modelli per gruppi](#group-templates-console), è possibile selezionare un modello di gruppo esistente da modificare.
 

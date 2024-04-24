@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 7%
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +82,7 @@ Sotto **Impostazioni** , specificare se consentire l&#39;applicazione di tag all
 
   Se questa opzione è selezionata, consentire ai membri di seguire gli eventi pubblicati nel calendario. Il valore predefinito è selezionato.
 
-* **Dimensione file massima**
+* **Dimensione massima file**
 
   Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
@@ -87,7 +90,7 @@ Sotto **Impostazioni** , specificare se consentire l&#39;applicazione di tag all
 
   Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
-* **Dimensione massima per file immagine allegato**
+* **Dimensione massima file immagine allegato**
 
   Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152** **(2 Mb).
 
@@ -109,7 +112,7 @@ Sotto **Impostazioni** , specificare se consentire l&#39;applicazione di tag all
 
 * **Mostra breadcrumb**
 
-  Mostra breadcrumb su pagina eventi. Il valore predefinito è selezionato.
+  Mostra breadcrumb sulla pagina dell’evento. Il valore predefinito è selezionato.
 
 * **Filtro intervallo di date**
 
@@ -131,15 +134,15 @@ Sotto **Moderazione utenti** , specificare la modalità di gestione degli argome
 
   Se questa opzione è selezionata, i moderatori membri attendibili possono chiudere un evento per ulteriori modifiche e commenti e riaprire un evento. Il valore predefinito è selezionato.
 
-* **Segnala post**
+* **Contrassegna post**
 
   Se questa opzione è selezionata, consentire ai membri di contrassegnare eventi o commenti di altri utenti come non appropriati. Il valore predefinito è selezionato.
 
-* **Elenco di motivi per segnalazione**
+* **Elenco motivi contrassegno**
 
   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un evento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
-* **Motivo per segnalazione personalizzato**
+* **Motivo contrassegno personalizzato**
 
   Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare un evento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
@@ -159,7 +162,7 @@ Sotto **Campo tag** , i tag che possono essere applicati, se consentito dalla sc
 
   Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
 
-* **Limite di suggerimenti**
+* **Limite suggerimenti**
 
   Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore predefinito è **-**1 (nessun limite).
 

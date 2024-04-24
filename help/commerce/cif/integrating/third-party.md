@@ -4,7 +4,9 @@ description: Le aziende possono richiedere soluzioni commerce di terze parti agg
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 1%
@@ -57,7 +59,7 @@ Questo livello di integrazione non è necessario se è disponibile un livello di
 
 I connettori rappresentano un buon punto di partenza per i progetti. Sono forniti con una connessione specifica per la soluzione Commerce e una mappatura API predefinita. Questi connettori sono costruiti da terze parti e non sono gestiti da Adobe. Contattare il rispettivo partner per informazioni.
 
-* [Commerce SAP](https://github.com/diconium/commerce-cif-graphql-integration-hybris), realizzata da Diconium
+* [COMMERCE SAP](https://github.com/diconium/commerce-cif-graphql-integration-hybris), realizzata da Diconium
 * [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), realizzata da Diconium
 
 >[!TIP]

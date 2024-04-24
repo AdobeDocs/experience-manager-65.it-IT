@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '390'
 ht-degree: 5%
 
 ---
@@ -17,7 +20,7 @@ ht-degree: 5%
 
 ## Panoramica {#overview}
 
-Le community Adobe Experience Manager (AEM) semplificano la creazione e la personalizzazione di funzioni quali forum, gruppi di utenti, blog, domande e risposte, calendari, commenti, recensioni, voti, valutazioni e assegnazioni. Queste funzioni consentono di immettere nell’ambiente di pubblicazione i contenuti generati dagli utenti (UGC, User-Generated Content).
+Le community Adobe Experience Manager (AEM) semplificano la creazione e la personalizzazione di funzioni quali forum, gruppi di utenti, blog, domande e risposte, calendari, commenti, recensioni, votazioni, valutazioni e assegnazioni. Queste funzioni consentono di immettere nell’ambiente di pubblicazione i contenuti generati dagli utenti (UGC, User-Generated Content).
 
 La base di un [sito community](overview.md#communitiessites) è il [framework della componente social](scf.md) (SCF). La creazione di un sito community inizia con la selezione di un [modello per sito community](sites-console.md) composto da [funzioni community](functions.md).
 
@@ -75,7 +78,7 @@ I componenti, le funzioni e le funzioni di AEM Communities forniscono i blocchi 
 * [Nozioni di base su SRP e UGC](srp-and-ugc.md) - Metodi ed esempi di utilità API SRP
 * [Nozioni di base sui tag](tag.md) - possibilità per i membri della community di assegnare tag alle risorse di abilitazione UGC e/o catalogate
 
-## Esercitazioni {#tutorials}
+## Tutorial {#tutorials}
 
 * [Tutorial lato client](tutorials.md#client-side-customization)
 * [Tutorial lato server](tutorials.md#server-side-customization)

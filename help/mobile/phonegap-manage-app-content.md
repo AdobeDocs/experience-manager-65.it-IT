@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '706'
 ht-degree: 2%
 
 ---
@@ -39,7 +42,7 @@ Infine, gli amministratori pubblicano in modo strategico il contenuto aggiornato
 
 Qui, il contenuto può essere creato, modificato ed eliminato in AEM Mobile nello stesso modo in cui si creerebbe all’interno di AEM Sites.
 
-Il **Gestisci sezione Contenuto pagina** visualizza il numero di pagine di contenuto gestito e l’ultima modifica apportata a un determinato payload. È possibile eseguire il drill-in del contenuto per creare, copiare, spostare, eliminare e aggiornare le pagine facendo clic su ogni record nella sezione.
+Il **Gestisci sezione Contenuto pagina** visualizza il numero di pagine del contenuto gestito e dell’ultima modifica apportata per un determinato payload. È possibile eseguire il drill-in del contenuto per creare, copiare, spostare, eliminare e aggiornare le pagine facendo clic su ogni record nella sezione.
 
 Una volta aggiornato il contenuto, gli amministratori possono pubblicare ai clienti un payload di aggiornamento del contenuto Over-the-Air (OTA) tramite **Riquadro Gestione pacchetti di contenuti.**
 

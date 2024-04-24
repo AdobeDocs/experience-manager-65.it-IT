@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '270'
 ht-degree: 4%
 
 ---

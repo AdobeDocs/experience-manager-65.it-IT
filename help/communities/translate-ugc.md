@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 1%
+source-wordcount: '1111'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +73,7 @@ Ad esempio, se un forum è stato creato sul sito base, sono state create copie p
 Per creare un’integrazione di traduzione, che integra un connettore del servizio di traduzione con il sito web nell’istanza di authoring:
 
 * Accedi come amministratore
-* Dalla sezione [menu principale](Http://localhost:4502/)
+* Dalla sezione [menu principale](http://localhost:4502/)
 * Seleziona **[!UICONTROL Strumenti]**
 * Seleziona **[!UICONTROL Operazioni]**
 * Seleziona **[!UICONTROL Cloud]**
@@ -90,7 +92,7 @@ Per creare un’integrazione di traduzione, che integra un connettore del serviz
 
 ![create-configuration](assets/translation-integration2.png)
 
-* **[!UICONTROL Configurazione elemento padre]**
+* **[!UICONTROL Configurazione principale]**
 
   (Obbligatorio) In genere lascia come impostazione predefinita. Il valore predefinito è `/etc/cloudservices/translation`.
 

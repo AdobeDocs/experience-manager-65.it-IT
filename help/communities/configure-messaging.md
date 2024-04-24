@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 4%
+source-wordcount: '952'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +74,7 @@ Una volta annullata l’ereditarietà, è possibile selezionare l’icona di con
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
-* **Selezione servizio**
+* **Selettore servizio**
 
   (*Obbligatorio*) Impostate questo valore sul valore della proprietà **`serviceSelector.name`** dal [Servizio operazioni di messaggistica di AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
@@ -153,7 +156,7 @@ Una volta annullata l’ereditarietà, è possibile selezionare l’icona di con
 
   Inserisci l’URL della pagina visualizzata se il mittente annulla il messaggio. Esempio: `../messaging.html`.
 
-* **Lunghezza massima per l&#39;oggetto del messaggio**
+* **Lunghezza massima oggetto del messaggio**
 
   Numero massimo di caratteri consentito nel campo Oggetto. Ad esempio, 500. Il valore predefinito non è un limite.
 
@@ -161,7 +164,7 @@ Una volta annullata l’ereditarietà, è possibile selezionare l’icona di con
 
   Numero massimo di caratteri consentito nel campo Contenuto. Ad esempio, 10000. Il valore predefinito non è un limite.
 
-* **Selezione servizio**
+* **Selettore servizio**
 
   (*Obbligatorio*) Impostate questo valore sul valore della proprietà **`serviceSelector.name`** dal [Servizio operazioni di messaggistica di AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 

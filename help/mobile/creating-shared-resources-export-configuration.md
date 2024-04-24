@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 576b4567-c7b6-4196-84e7-47e980637540
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '291'
 ht-degree: 1%
 
 ---
@@ -46,7 +49,7 @@ La configurazione di Sincronizzazione contenuti trovata in **&lt;dps-exporttempl
 
 Per visualizzare un esempio di risorsa condivisa, consulta i passaggi seguenti:
 
-1. Apri CRXDE Lite sul server AEM.
+1. Apri CRXDE Liti sul server AEM.
 1. Passa a questo percorso *[/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*, per visualizzare le risorse condivise di esempio.
 
    Puoi visualizzare tutte le proprietà necessarie per creare le risorse condivise, come illustrato nella figura seguente:

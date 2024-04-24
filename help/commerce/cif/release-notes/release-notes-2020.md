@@ -1,9 +1,11 @@
 ---
-title: Note sulla versione 2020 di AEM Content and Commerce
+title: Contenuto dell’AEM e note sulla versione 2020 di Commerce
 description: Note sulla versione 2020 di Adobe Experience Manager Content and Commerce.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 8%
@@ -90,7 +92,7 @@ ht-degree: 8%
 
 * È stato aggiunto il componente Breadcrumb per supportare le pagine di contenuto e commerce.
 
-* È stata aggiunta una scheda Commerce nelle proprietà della pagina per esporre le proprietà CIF per la pagina di destinazione e i frammenti esperienza.
+* È stata aggiunta la scheda Commerce nelle proprietà della pagina per esporre le proprietà CIF per la pagina di destinazione e i frammenti esperienza.
 
 * Il componente Barra di ricerca è stato migliorato per supportare l’opzione di visualizzazione del testo segnaposto
 

@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 4%
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -85,7 +88,7 @@ Sotto **[!UICONTROL Recensioni]** , specificare la modalità di gestione delle r
 
   Se questa opzione è selezionata, consenti il caricamento degli allegati per la revisione. L&#39;impostazione predefinita è deselezionata.
 
-* **Dimensione file massima**
+* **Dimensione massima file**
 
   Rilevante solo se **[!UICONTROL Consenti caricamenti file]** è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 10 MB.
 
@@ -109,7 +112,7 @@ Sotto **[!UICONTROL Moderazione utenti]** , specifica come vengono gestite le re
 
 ![moderazione utente](assets/configure-review4.png)
 
-* **[!UICONTROL Premoderazione]**
+* **[!UICONTROL Pre-moderazione]**
 
   Se questa opzione è selezionata, le recensioni devono essere approvate prima di essere visualizzate su un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
 
@@ -129,11 +132,11 @@ Sotto **[!UICONTROL Moderazione utenti]** , specifica come vengono gestite le re
 
   Se questa opzione è selezionata, consenti ai membri di segnalare le revisioni non appropriate. L&#39;impostazione predefinita è deselezionata.
 
-* **[!UICONTROL Elenco di motivi per segnalazione]**
+* **[!UICONTROL Elenco motivi contrassegno]**
 
   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare una revisione come inappropriata. L&#39;impostazione predefinita è deselezionata.
 
-* **[!UICONTROL Motivo per segnalazione personalizzato]**
+* **[!UICONTROL Motivo contrassegno personalizzato]**
 
   Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare una revisione come inappropriata. L&#39;impostazione predefinita è deselezionata.
 

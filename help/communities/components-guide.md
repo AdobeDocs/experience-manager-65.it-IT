@@ -6,16 +6,19 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 2%
+source-wordcount: '1153'
+ht-degree: 0%
 
 ---
 
 # Guida ai componenti della community  {#community-components-guide}
 
-La guida ai componenti community è uno strumento di sviluppo interattivo per [framework della componente social network (SCF)](scf.md). Fornisce un elenco dei componenti di Adobe Experience Manager (AEM) Communities disponibili o delle funzioni più complesse create da più componenti.
+La guida ai componenti community è uno strumento di sviluppo interattivo per [framework della componente social network (SCF)](scf.md). Fornisce un elenco dei componenti disponibili di Adobe Experience Manager (AEM) Communities o delle funzioni più complesse create da più componenti.
 
 Oltre alle informazioni di base per ciascun componente, la guida consente di sperimentare il funzionamento dei componenti e delle funzioni SCF e come configurarli o personalizzarli.
 
@@ -38,7 +41,7 @@ Le interazioni con i componenti Community variano a seconda di:
 
 Per accedere alla modalità di modifica, inserisci `editor.html` o `cf#` come primo segmento di percorso dopo il nome del server:
 
-* Interfaccia standard:
+* Interfaccia utente standard:
 
   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
@@ -58,7 +61,7 @@ Per accedere alla modalità di modifica, inserisci `editor.html` o `cf#` come pr
 >
 >Se non conosci l’AEM, consulta la documentazione su [operazioni di base](../../help/sites-authoring/basic-handling.md).
 
-### Home page {#home-page}
+### Pagina home {#home-page}
 
 La guida fornisce un elenco dei componenti SCF disponibili per l’anteprima e la prototipazione lungo il lato sinistro della pagina.
 
@@ -94,13 +97,13 @@ Quando utilizzi la guida su un’istanza dell’autore, puoi provare a configura
 
 Nella guida Componenti community, alcune impostazioni della finestra di dialogo dei componenti sono sovrapposte al [Inclusi](scf.md#add-or-include-a-communities-component) attivare/disattivare lo stato. Per passare dall’utilizzo della risorsa esistente all’utilizzo di una risorsa inclusa dinamicamente, in modalità di modifica seleziona sia il componente che il testo da includere e fai doppio clic per aprire la finestra di dialogo di modifica:
 
-![community-component3](assets/community-component3.png)
+![componente community3](assets/community-component3.png)
 
 Sotto **Modelli** scheda:
 
 ![community-component4](assets/community-component4.png)
 
-* **Includi componente secondario con sling:include**
+* **Includere il componente figlio con sling:include**
 
   Se questa opzione è deselezionata, la Guida dei componenti utilizza la risorsa esistente nell’archivio (un nodo jcr che è figlio di un nodo par).
 
@@ -146,7 +149,7 @@ Per sperimentare rapidamente le personalizzazioni, `scg:showIde`deve essere aggi
 
 Utilizzando il componente commenti come esempio, nell’istanza di authoring o di pubblicazione è stato effettuato l’accesso con privilegi di amministratore:
 
-1. Sfoglia per [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Sfoglia per [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md)
 
    Ad esempio: [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
@@ -167,9 +170,9 @@ Utilizzando il componente commenti come esempio, nell’istanza di authoring o d
 
 1. Da notare che ora sono disponibili tre schede per Modelli, CSS e Dati.
 
-![community-component5](assets/community-component5.png)
+![componente community5](assets/community-component5.png)
 
-![community-component6](assets/community-component6.png)
+![componente community6](assets/community-component6.png)
 
 ### Scheda Modelli {#templates-tab}
 

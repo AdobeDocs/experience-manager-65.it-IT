@@ -1,11 +1,12 @@
 ---
 title: Guida introduttiva ai contenuti di AEM e Commerce
-description: Scopri come distribuire un progetto di contenuti e commerce AEM.
+description: Scopri come distribuire un progetto Commerce e contenuti AEM.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 4%
@@ -14,7 +15,7 @@ ht-degree: 4%
 
 # Guida introduttiva ai contenuti di AEM e Commerce {#start}
 
-Per iniziare a utilizzare i contenuti e il commercio dell’AEM, è necessario installare il componente aggiuntivo Contenuto e commercio dell’AEM per AEM 6.5.
+Per iniziare a utilizzare Contenuto AEM e Commerce, è necessario installare il componente aggiuntivo AEM e Commerce per AEM 6.5.
 
 ## Requisiti minimi del software
 
@@ -22,7 +23,7 @@ Per iniziare a utilizzare i contenuti e il commercio dell’AEM, è necessario i
 
 ## Onboarding {#onboarding}
 
-L’onboarding per i contenuti e il commercio dell’AEM è un processo in due fasi:
+L’onboarding per contenuti AEM e Commerce è un processo in due fasi:
 
 1. Installare il componente aggiuntivo AEM Content and Commerce per AEM 6.5
 
@@ -30,7 +31,7 @@ L’onboarding per i contenuti e il commercio dell’AEM è un processo in due f
 
 ### Installare il componente aggiuntivo AEM Content and Commerce per AEM 6.5 {#install-add-on}
 
-Scarica e installa il componente aggiuntivo AEM Commerce per AEM 6.5 da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) portale.
+AEM Scarica e installa il componente aggiuntivo Commerce per AEM 6.5 da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) portale.
 
 Avviare e installare il Service Pack di AEM 6.5 richiesto. È consigliabile installare l&#39;ultimo service pack disponibile.
 
@@ -38,7 +39,7 @@ Avviare e installare il Service Pack di AEM 6.5 richiesto. È consigliabile inst
 >
 >Ciò sarà effettuato dal CSE per i clienti di servizi gestiti AEM.
 
-### Collegare AEM al sistema Commerce {#connect}
+### Collegare l’AEM al sistema Commerce {#connect}
 
 L&#39;AEM può essere connesso a qualsiasi sistema commerciale che abbia un endpoint GraphQL accessibile per l&#39;AEM. Questi endpoint sono solitamente disponibili pubblicamente o possono essere collegati tramite VPN private o connessioni locali a seconda della configurazione del singolo progetto.
 
@@ -48,7 +49,7 @@ Progetti generati da [Archetipo progetto AEM](https://github.com/adobe/aem-proje
 
 Sostituisci il valore di `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` con l’endpoint GraphQL del sistema commerce. Questa configurazione può essere eseguita tramite la console OSGI o distribuendo la configurazione OSGI tramite il progetto. Sono supportate diverse configurazioni per i sistemi di staging e produzione utilizzando diverse modalità di esecuzione dell’AEM.
 
-Il componente aggiuntivo AEM Content and Commerce e i componenti core CIF utilizzano connessioni lato server e client AEM. Per impostazione predefinita, i componenti core CIF lato client e gli strumenti di creazione di componenti aggiuntivi CIF si connettono a `/api/graphql`. Se necessario, questo può essere regolato tramite la configurazione del Cloud Service CIF (vedi sotto).
+I componenti core Contenuto AEM e Componente aggiuntivo Commerce e CIF utilizzano connessioni lato server e client AEM. Per impostazione predefinita, i componenti core CIF lato client e gli strumenti di creazione di componenti aggiuntivi CIF si connettono a `/api/graphql`. Se necessario, questo può essere regolato tramite la configurazione del Cloud Service CIF (vedi sotto).
 
 Il componente aggiuntivo CIF fornisce un servlet proxy di GraphQL all&#39;indirizzo `/api/graphql` che possono essere facoltativamente utilizzati per [sviluppo locale](develop.md). Per le distribuzioni in produzione, si consiglia vivamente di impostare un proxy inverso all’endpoint commerce GraphQL tramite il Dispatcher dell’AEM o ad altri livelli di rete (come CDN).
 
@@ -90,10 +91,10 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
 
 La configurazione mostrata sopra è a scopo di riferimento. I progetti devono fornire le proprie configurazioni.
 
-Per configurazioni più complesse che utilizzano più strutture di siti AEM combinate con diversi cataloghi di e-commerce, vedi [Configurazione di più store di Commerce](configuring/multi-store-setup.md) esercitazione.
+Per configurazioni più complesse che utilizzano più strutture di siti AEM combinate con diversi cataloghi di e-commerce, vedi [Configurazione di Commerce Multi-Store](configuring/multi-store-setup.md) esercitazione.
 
 ## Risorse aggiuntive {#additional-resources}
 
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Configurazione di più store di Commerce](configuring/multi-store-setup.md)
+- [Configurazione di Commerce Multi-Store](configuring/multi-store-setup.md)

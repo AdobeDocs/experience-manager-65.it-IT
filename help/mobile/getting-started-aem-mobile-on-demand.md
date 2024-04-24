@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '761'
 ht-degree: 1%
 
 ---
@@ -37,7 +40,7 @@ L’app Verifica preliminare AEM può essere considerata un ambiente di test per
 
 >[!NOTE]
 >
->Nel diagramma precedente, l’istanza AEM Publish non è necessaria per uno scenario di distribuzione tipico in AEM Mobile On-demand Services.
+>Nel diagramma precedente, l’istanza Pubblicazione AEM non è necessaria per uno scenario di distribuzione tipico in AEM Mobile On-demand Services.
 
 ## Avvio di una nuova app mobile {#starting-a-new-mobile-app}
 
@@ -103,4 +106,4 @@ Per iniziare a utilizzare i ruoli e le responsabilità di un autore, consulta [C
 
 >[!NOTE]
 >
->Un autore AEM è anche responsabile della configurazione dell’adesione, della creazione di schede e layout e dell’invio di notifiche push. Inoltre, per ulteriori informazioni sui metodi di creazione dei contenuti, gestione di articoli e raccolte, creazione di banner, schede e layout in AEM Mobile, consulta [Portale AEM Mobile On-Demand](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>Un autore AEM è anche responsabile della configurazione dei diritti, della creazione di schede e layout e dell’invio di notifiche push. Inoltre, per ulteriori informazioni sui metodi di creazione dei contenuti, gestione di articoli e raccolte, creazione di banner, schede e layout in AEM Mobile, consulta [Portale AEM Mobile On-Demand](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).

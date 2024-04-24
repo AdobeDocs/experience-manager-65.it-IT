@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 content-type: reference
 topic-tags: administering-on-demand-services-app
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '291'
 ht-degree: 2%
 
 ---

@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -51,7 +54,7 @@ Queste console sono simili alla console Siti di Communities.
    * **[!UICONTROL Lingue aggiuntive gruppo community disponibili]**: utilizza il menu a discesa per selezionare le lingue disponibili per i gruppi community. Il menu visualizza tutte le lingue in cui viene creato il sito community principale. Gli utenti possono scegliere tra queste lingue per creare gruppi in più lingue in questo singolo passaggio. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti community.
    * **[!UICONTROL Nome gruppo community]**: arti
    * **[!UICONTROL Modello]**: elenco a discesa per selezionare `Reference Group`
-   * Seleziona **[!UICONTROL Avanti]**
+   * Seleziona **[!UICONTROL Successivo]**
 
 ![Gruppi community nidificati](assets/parent-to-nestedgroup.png)
 
@@ -75,7 +78,7 @@ Continua a scorrere gli altri pannelli con queste impostazioni:
       * **[!UICONTROL Miniatura]**
          * `optional.*`
 
-      * **[!UICONTROL Seleziona Avanti]**.
+      * **[!UICONTROL Seleziona successivo]**.
 
 * Seleziona **[!UICONTROL Crea]**.
 
@@ -111,7 +114,7 @@ Il `arts` il gruppo deve contenere anche `groups` ma è vuota e consente di crea
    * Modello: `Reference Group`
    * Appartenenza: seleziona `Required Membership`, un gruppo aperto, disponibile per l&#39;aggiunta dei membri.
 
-1. **[!UICONTROL Storia]**
+1. **[!UICONTROL Cronologia]**
 
    * Titolo: `Art History`
    * Nome: `history`

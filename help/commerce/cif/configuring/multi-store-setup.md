@@ -1,5 +1,5 @@
 ---
-title: Configurazione di più store di Commerce
+title: Configurazione di Commerce Multi-Store
 description: Scopri come mappare più visualizzazioni dello store da Adobe Commerce a AEM. Questo consente ai progetti di supportare casi d’uso multi-tenant e multilingue.
 sub-product: Commerce
 doc-type: technical-video
@@ -8,14 +8,15 @@ audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 15%
 
 ---
 
-# Configurazione di più store di Commerce {#multi-store}
+# Configurazione di Commerce Multi-Store {#multi-store}
 
 I componenti core CIF dell’AEM possono essere utilizzati su più strutture di siti AEM e l’implementazione client GraphQL sottostante può connettersi a diversi store o viste store di Adobe Commerce. Ciò consente ai progetti di implementare complesse impostazioni per più store o siti.
 

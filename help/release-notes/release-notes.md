@@ -3,10 +3,13 @@ title: Note sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: Trova informazioni sulla versione, novità, procedure guidate di installazione e un elenco dettagliato delle modifiche per [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '3735'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -159,7 +162,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 * Quando un utente fa clic su un’immagine utilizzando &quot;Scatta una foto&quot; nel componente Allegato su un dispositivo iOS, tutte le immagini vengono aggiunte alla cartella con lo stesso nome. (FORMS-12224)
 * Quando un utente aggiorna un’opzione esistente in un gruppo di pulsanti di scelta, vengono pubblicati valori di traduzione errati. (FORMS-12575)
 * Quando un utente aggiunge caratteri a un modulo adattivo su un dispositivo Android™, può digitare più del numero massimo definito di caratteri nel campo Testo su focus out, su dispositivi Android™. Tuttavia, funziona quando un utente seleziona il tipo di input HTML5. (FORMS-12748)
-* A causa delle etichette corrispondenti Arial® etichettate da e Arial®, gli assistenti vocali non sono in grado di distinguere tra queste due. Per risolvere il problema: l’etichetta &quot;aria-labelledby&quot; è sostituita da &quot;aria-descripedby&quot; per i campi modulo. (FORMS-12436)
+* A causa delle etichette corrispondenti Arial® etichettate da e Arial®, gli assistenti vocali non sono in grado di distinguere tra queste due. Per risolvere il problema: l’etichetta “aria-labelledby” è sostituita da “aria-descripedby” per i campi modulo. (FORMS-12436)
 * Quando un autore utilizza il componente &quot;Forms adattivo - Incorpora (v2)&quot; per incorporare un modulo adattivo nella propria pagina Sites e il modulo incorporato contiene un componente CAPTCHA (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), la pagina del sito non viene riprodotta quando l’utente tenta di visualizzare la pagina del sito utilizzando &quot;Visualizza come pubblicato&quot; nell’istanza di authoring. Il seguente errore viene visualizzato come (FORMS-11859):
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 

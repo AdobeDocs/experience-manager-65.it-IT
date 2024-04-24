@@ -2,10 +2,13 @@
 title: Note generali sulla versione per [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 note che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4484'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -250,7 +253,7 @@ Per ulteriori dettagli sulle modifiche apportate ad AEM Screens, consulta le Not
 * `s_code.js` H.27.5 incluso. L’Adobe consiglia di passare all’implementazione `AppMeasurement.js`
 * `AppMeasurement.js` È inclusa la versione 1.8.0 di. L’Adobe consiglia di utilizzare [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) per effettuare il provisioning di AppMeasurement.js nel sito.
 
-#### AEM e Commerce {#aem-commerce}
+#### AEM e COMMERCE {#aem-commerce}
 
 I miglioramenti apportati alla Commerce integration framework sono soggetti a un ciclo di rilascio più rapido a partire dalla versione 6.4 dell’AEM. [Fai clic qui per ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
 
@@ -558,7 +561,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * **Schema metadati cartelle**: dopo l’aggiunta di un pulsante di scelta, i campi ID e Valore non vengono riprodotti come previsto e la funzionalità di eliminazione non funziona. (CQ-4261144)
 * Quando si rinomina una risorsa, non è possibile usare uno spazio vuoto nel nome della risorsa. (CQ-4266403)
 
-### Forms {#forms}
+### Moduli {#forms}
 
 * Quando AEM Forms è installato su un sistema operativo Linux®, il modulo di protezione Firma digitale con hardware non funziona. (CQ-4266721)
 * (Solo AEM Forms su WebSphere®) Il **Forms Workflow** > **Ricerca attività** non restituisce alcun risultato se si cerca un **Amministratore** con **Nome utente** come criterio di ricerca. (CQ-4266457)
@@ -586,7 +589,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * All’avvio di AEM Forms, il `SAX Security Manager could not be setup` viene visualizzato un avviso.
 * Quando apri un PDF protetto con AEM Forms Document Security su un Apple iOS o iPadOS in esecuzione nella versione 20.10.00 di Adobe Acrobat Reader
-* Quando invii un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file da 0 byte all’altra estremità. Apple iOS 15.1 fornisce una correzione per il problema.
+* Quando invii un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file da 0 byte. Apple iOS 15.1 fornisce una correzione per il problema.
 
 ## Download e supporto dei prodotti (siti con restrizioni) {#product-download-and-support-restricted-sites}
 

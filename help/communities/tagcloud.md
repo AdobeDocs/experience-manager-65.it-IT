@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +66,7 @@ Identifica i tag UGC da visualizzare. Le opzioni di pull-down sono:
 
   Se questa opzione è selezionata, i tag vengono visualizzati nell’area dei tag come testo normale. Se questa opzione è deselezionata, i tag vengono visualizzati come collegamenti attivi che eseguono ricerche su tutto il contenuto a cui è applicato il tag. L&#39;impostazione predefinita è deselezionata e richiede **[!UICONTROL Percorso risultati di ricerca]** da impostare.
 
-* **[!UICONTROL Percorso risultati ricerca]**
+* **[!UICONTROL Percorso risultati di ricerca]**
 
   Percorso di una pagina in cui è presente un `Search Result` il componente è stato inserito, configurato per fare riferimento a UGC che include il percorso UGC specificato da **Pagina** impostazione.
 

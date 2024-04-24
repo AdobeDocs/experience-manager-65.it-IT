@@ -1,19 +1,22 @@
 ---
-title: Esercitazioni
+title: Tutorial
 description: Esempi per aiutare ad apprendere e lavorare con il framework per la componente sociale delle community Adobe Experience Manager (AEM)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '244'
 ht-degree: 1%
 
 ---
 
-# Esercitazioni {#tutorials}
+# Tutorial {#tutorials}
 
 Questi sono esempi per aiutare ad apprendere e lavorare con le community di Adobe Experience Manager (AEM) 6.1 [framework della componente social network (SCF)](scf.md).
 

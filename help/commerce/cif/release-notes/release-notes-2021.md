@@ -3,7 +3,9 @@ title: Note sulla versione 2021 di Adobe Experience Manager Content and Commerce
 description: Note sulla versione 2021 di Adobe Experience Manager Content and Commerce.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 12%
@@ -142,9 +144,9 @@ Esaminare i requisiti minimi di sistema riportati nella tabella seguente per la 
 ### Novità {#what-is-new-june}
 
 * Nuovi tipi di dati di riferimento per prodotti e categorie CIF per Frammenti di contenuto (incl. supporto dell’interfaccia utente per il selettore di prodotti/categorie)
-* Nuovo componente core Frammento di contenuto Commerce
+* Nuovo componente core Frammento di contenuto di Commerce
 * Ricerca e-commerce full-text supportata nel back-end AEM
-* I componenti core Commerce supportano la raccolta dati di Adobe Commerce Sensei Recs
+* I componenti core Commerce supportano la raccolta dati Adobe Commerce Sensei Recs
 * Sono stati migliorati gli URL SEO-friendly per le pagine delle categorie
 * Supporto per intestazioni HTTP personalizzate per sito/configurazione
 

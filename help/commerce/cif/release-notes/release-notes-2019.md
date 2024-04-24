@@ -1,9 +1,11 @@
 ---
-title: Note sulla versione 2019 di AEM Content and Commerce
+title: Contenuto AEM e note sulla versione 2019 di Commerce
 description: Note sulla versione 2019 di Adobe Experience Manager Content and Commerce.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 6%
@@ -102,7 +104,7 @@ ht-degree: 6%
 
 * La vista di descrizione del prodotto è abilitata nella console Prodotti AEM.
 
-* Commerce Teaser estende il componente WCM Teaser per consentire agli autori di aggiungere campi CTA anche a una pagina di dettagli del prodotto o a una pagina di elenco dei prodotti.
+* Commerce Teaser estende il componente WCM Teaser per consentire agli autori di aggiungere campi CTA anche a una pagina di dettagli del prodotto o a una pagina dell’elenco dei prodotti.
 
 * Pulsante che consente agli autori di inserire in una pagina AEM e di collegarsi a una pagina AEM, a una pagina dei dettagli del prodotto, a una pagina dell’elenco dei prodotti o a un collegamento esterno.
 

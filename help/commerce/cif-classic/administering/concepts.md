@@ -4,7 +4,9 @@ description: Scopri i concetti generali di e-commerce con Adobe Experience Manag
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4439'
 ht-degree: 1%
@@ -128,7 +130,7 @@ L’eCommerce dell’AEM è implementato con un motore di eCommerce:
 >
 >  L&#39;installazione standard AEM contiene le nozioni di base [implementazione eCommerce generica](/help/commerce/cif-classic/administering/generic.md).
 
-### Provider commerce {#commerce-providers}
+### Provider Commerce {#commerce-providers}
 
 Quando si importano dati da un motore di e-commerce nel sito eCommerce dell’AEM, viene utilizzato un provider di e-commerce per fornire i dati agli importatori. Un unico fornitore di servizi commerce può supportare più importatori.
 
@@ -148,7 +150,7 @@ Anche se in genere un progetto deve sviluppare un proprio provider di e-commerce
 >
 >Gli importatori di Geometrixx utilizzano file CSV; esiste una descrizione dello schema accettato (con le proprietà personalizzate consentite) nei commenti sopra la loro implementazione.
 
-Il [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene (tramite [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) un elenco delle implementazioni di [Importazione prodotti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [ImportazioneBlueprintCatalogo](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfacce. Questi sono elencati nella **Importatore/Fornitore commerce** campo a discesa della procedura guidata di importazione (utilizzando `commerceProvider` come nome).
+Il [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene (tramite [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) un elenco delle implementazioni di [Importazione prodotti](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e [ImportazioneBlueprintCatalogo](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfacce. Questi sono elencati nella **Importatore/Provider Commerce** campo a discesa della procedura guidata di importazione (utilizzando `commerceProvider` come nome).
 
 Quando uno specifico provider di importazione/commercio è disponibile dal menu a discesa, tutti i dati supplementari necessari devono essere definiti (a seconda del tipo di importatore) in:
 

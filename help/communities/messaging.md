@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 1%
+source-wordcount: '840'
+ht-degree: 0%
 
 ---
 
@@ -115,7 +117,7 @@ Per aggiungere una configurazione, seleziona il segno più &quot;**+** Icona &#3
 
   **(*Azione richiesta*)** Una inserisce nell&#39;elenco Consentiti di estensione di nome file di, opposta a quella del inserisco nell&#39;elenco Bloccati. Inserire nell&#39;elenco Bloccati Per consentire tutte le estensioni del nome file, ad eccezione di quelle, utilizzare il tasto &#39;**-**&#39; per rimuovere la singola voce vuota.
 
-* **Selezione servizio**
+* **Selettore servizio**
 
   (*Obbligatorio*) Percorso assoluto (endpoint) attraverso il quale viene chiamato il servizio (risorsa virtuale). La directory principale del percorso scelto deve essere inclusa in *Percorsi di esecuzione* configurazione della configurazione OSGi [`Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), ad esempio `/bin/`, `/apps/`, e `/services/`. Per selezionare questa configurazione per la funzione di messaggistica di un sito, questo endpoint viene fornito come **`Service selector`** valore per `Message List and Compose Message components` (vedere [Funzione Messaggio](/help/communities/configure-messaging.md)).
 

@@ -7,10 +7,13 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 2%
+source-wordcount: '362'
+ht-degree: 1%
 
 ---
 
@@ -126,7 +129,7 @@ Per provare lo script di esempio lato server, è necessario un ambiente di svilu
    * Nome simbolico: `com.engage.media.social.messaging.MessagingNotification`
    * Nome: Avvio Notifica del messaggio del tutorial
    * Descrizione: servizio di esempio per l’invio di una notifica e-mail agli utenti quando ricevono un messaggio
-   * Pacchetto: `com.engage.media.social.messaging.notification`
+   * Pacchetto `com.engage.media.social.messaging.notification`
 
 1. Accedi a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`e quindi:
 

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 9%
+source-wordcount: '411'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +29,7 @@ In generale, le varie relazioni sono le seguenti:
 
   Fornisce un grafico delle visualizzazioni del contenuto da parte dei membri della community e dei visitatori del sito per qualsiasi sito della community.
 
-* [Rapporto sui post](#posts-report)
+* [Rapporto Post](#posts-report)
 
   Fornisce un grafico di vari tipi di post dei membri della community su qualsiasi sito della community.
 
@@ -45,7 +47,7 @@ I report tabulari possono essere esportati in formato .csv per l’elaborazione 
 
       * Genera un report per il sito community, l&#39;utente o il gruppo e l&#39;assegnazione selezionati.
 
-   * **[!UICONTROL Rapporto sui post]**
+   * **[!UICONTROL Rapporto Post]**
 
       * Genera un report per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
 

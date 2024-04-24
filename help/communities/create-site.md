@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 2%
+source-wordcount: '1556'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Per iniziare a creare un sito community:
 
 Il giorno [Passaggio modello sito](/help/communities/sites-console.md#step2013asitetemplate), immettere un titolo, una descrizione, il nome dell&#39;URL e selezionare un modello di sito community, ad esempio:
 
-* **Titolo del sito community**: `Getting Started Tutorial`
+* **Titolo sito community**: `Getting Started Tutorial`
 * **Descrizione del sito community**: `A site for engaging with the community.`
 * **Directory principale sito community**: (lascia vuoto per impostare la directory principale predefinita) `/content/sites`)
 * **Configurazioni cloud**: (lascia vuoto se non è specificata alcuna configurazione cloud) specifica il percorso delle configurazioni cloud specificate.

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 9%
+source-wordcount: '741'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +54,7 @@ Seleziona la inserita `File Library` in modo da poter accedere e selezionare `Co
 
 Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i file caricati:
 
-* **Consenti commenti sui file**
+* **Consenti commenti su file**
 
   Se questa opzione è selezionata, consenti commenti sui file caricati. L&#39;impostazione predefinita è deselezionata.
 
@@ -59,7 +62,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
   Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Il valore predefinito è **10**.
 
-* **Dimensione file massima**
+* **Dimensione massima file**
 
   Questo valore limita la dimensione del file caricato. Il limite predefinito è 104857600 (10 MB).
 
@@ -87,7 +90,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
   Se è selezionata l’opzione Consenti assegnazione tag, i tag disponibili sono limitati agli spazi dei nomi selezionati. Se non è selezionato alcuno spazio dei nomi, sono consentiti tutti. Il valore predefinito è tutti gli spazi dei nomi.
 
-* **Limite di suggerimenti**
+* **Limite suggerimenti**
 
   Se è selezionata l’opzione Consenti assegnazione tag, questa impostazione limita il numero di tag suggeriti da visualizzare. Se è impostato su -1, non esiste alcun limite. Il valore predefinito è -1.
 
@@ -107,7 +110,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
   Limita il numero massimo di menzioni consentite in un post. Il valore predefinito è 10.
 
-* **Pattern menzioni interfaccia**
+* **Pattern menzioni interfaccia utente**
 
   Specifica la stringa di pattern consentita in modo da assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
 
@@ -119,7 +122,7 @@ Sotto **Commenti** , specifica se e come vengono visualizzati i commenti per i f
 
 Sotto **Moderazione utenti** , configura la moderazione dei commenti, se i commenti sono consentiti:
 
-* **Premoderazione**
+* **Pre-moderazione**
 
   Se questa opzione è selezionata, i commenti devono essere approvati prima di essere visualizzati in un sito pubblicato. L&#39;impostazione predefinita è deselezionata.
 
@@ -135,15 +138,15 @@ Sotto **Moderazione utenti** , configura la moderazione dei commenti, se i comme
 
   Se questa opzione è selezionata, consentire ai moderatori membri attendibili di chiudere e riaprire i commenti. L&#39;impostazione predefinita è deselezionata.
 
-* **Segnala commenti**
+* **Contrassegna commenti**
 
   Se questa opzione è selezionata, consenti ai visitatori di segnalare i commenti non appropriati. L&#39;impostazione predefinita è deselezionata.
 
-* **Elenco di motivi per segnalazione**
+* **Elenco motivi contrassegno**
 
   Se questa opzione è selezionata, consenti ai visitatori di scegliere, da un elenco a discesa, il motivo per cui segnalare un commento come inappropriato. L&#39;impostazione predefinita è deselezionata.
 
-* **Motivo per segnalazione personalizzato**
+* **Motivo contrassegno personalizzato**
 
   Se questa opzione è selezionata, consenti ai visitatori di inserire il proprio motivo per segnalare un commento non appropriato. L&#39;impostazione predefinita è deselezionata.
 

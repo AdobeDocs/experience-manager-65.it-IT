@@ -9,9 +9,11 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2856'
 ht-degree: 2%
 
 ---
@@ -208,7 +210,7 @@ I sottoruoli sono nodi di tipo `cq:Page` con le proprietà sul relativo `jcr:con
   <tr>
    <th>Proprietà</th>
    <th>Tipo</th>
-   <th> Valore Descrizione</th>
+   <th> Descrizione valore</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -331,7 +333,7 @@ Il `scoringRules` su una regola di badge limita semplicemente le regole di punte
   <tr>
    <th>Proprietà</th>
    <th>Tipo</th>
-   <th>Valore Descrizione</th>
+   <th>Descrizione valore</th>
   </tr>
   <tr>
    <td>soglie</td>
@@ -576,9 +578,9 @@ Se la funzione non funziona come previsto, assicurati che i dati siano stati imm
    * **Tipo**: `String`
    * Seleziona **Più**
    * Seleziona **Aggiungi**
-   * Inserisci `/libs/settings/community/badging/rules/forums-badging`
+   * Invio `/libs/settings/community/badging/rules/forums-badging`
    * Seleziona **+**
-   * Inserisci `/libs/settings/community/badging/rules/comments-badging`
+   * Invio `/libs/settings/community/badging/rules/comments-badging`
    * Seleziona **OK**
 
 * Aggiungere la proprietà scoringRules:
@@ -587,9 +589,9 @@ Se la funzione non funziona come previsto, assicurati che i dati siano stati imm
    * **Tipo**: `String`
    * Seleziona **Più**
    * Seleziona **Aggiungi**
-   * Inserisci `/libs/settings/community/scoring/rules/forums-scoring`
+   * Invio `/libs/settings/community/scoring/rules/forums-scoring`
    * Seleziona **+**
-   * Inserisci `/libs/settings/community/scoring/rules/comments-scoring`
+   * Invio `/libs/settings/community/scoring/rules/comments-scoring`
    * Seleziona **OK**
 
 * Seleziona **Salva tutto**.

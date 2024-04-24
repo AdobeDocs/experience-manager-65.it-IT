@@ -7,7 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 4%
@@ -44,7 +46,7 @@ Per una panoramica e tutorial introduttivi, visita:
    * [Modelli per siti](sites.md)
    * [Modelli per gruppi](tools-groups.md)
    * [Funzioni community](functions.md)
-   * [Configurazione archiviazione](srp-config.md)
+   * [Configurazione di archiviazione](srp-config.md)
    * [Guida dei componenti](components-guide.md)
    * [Badge](badges.md)
 

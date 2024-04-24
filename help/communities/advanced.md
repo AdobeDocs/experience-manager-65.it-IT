@@ -8,9 +8,11 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1056'
 ht-degree: 1%
 
 ---
@@ -126,11 +128,11 @@ Invece di associare i punti a un’immagine del badge, è sufficiente identifica
   <tr>
    <th>Proprietà</th>
    <th>Tipo</th>
-   <th>Valore Descrizione</th>
+   <th>Descrizione valore</th>
   </tr>
   <tr>
    <td>badgingPath</td>
-   <td>Stringa[]</td>
+   <td>String[]</td>
    <td><em>(Obbligatorio)</em> Una stringa con più valori di immagini di badge fino al numero di badgeLevels. I percorsi delle immagini del badge devono essere ordinati in modo che il primo venga assegnato al massimo esperto. Se il numero di badge è inferiore a quello indicato da badgingLevels, l’ultimo badge nell’array occuperà il resto dell’array. Esempio di voce:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
@@ -145,7 +147,7 @@ Invece di associare i punti a un’immagine del badge, è sufficiente identifica
   </tr>
   <tr>
    <td>scoringRules</td>
-   <td>Stringa[]</td>
+   <td>String[]</td>
    <td><em>(Facoltativo)</em> Una stringa con più valori per limitare la regola di assegnazione dei punteggi agli eventi di punteggio identificati da una o più regole di punteggio elencate.<br /> Esempio di voce:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Il valore predefinito non prevede alcuna restrizione.</td>
   </tr>
  </tbody>

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 6%
+source-wordcount: '983'
+ht-degree: 1%
 
 ---
 
@@ -71,7 +74,7 @@ Sotto **Commenti** , specificare la modalità di immissione dei commenti da part
 
   Se questa opzione è selezionata, l&#39;opzione per caricare un file viene visualizzata con la casella di immissione testo. Il valore predefinito è deselezionato.
 
-* **Dimensione file massima**
+* **Dimensione massima file**
 
   Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Questo valore limita la dimensione del file caricato. Il limite predefinito è 10 MB.
 
@@ -103,7 +106,7 @@ Sotto **Commenti** , specificare la modalità di immissione dei commenti da part
 
 Sotto **Moderazione utenti** , specificare la modalità di gestione dei commenti pubblicati. Per ulteriori informazioni, consulta [Moderazione dei contenuti generati dagli utenti](/help/communities/moderate-ugc.md).
 
-* **Premoderazione**
+* **Pre-moderazione**
 
   Se questa opzione è selezionata, i commenti devono essere approvati prima di essere visualizzati in un sito pubblicato. Il valore predefinito è deselezionato.
 
@@ -119,15 +122,15 @@ Sotto **Moderazione utenti** , specificare la modalità di gestione dei commenti
 
   Se questa opzione è selezionata, consenti ai moderatori di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
 
-* **Segnala commenti**
+* **Contrassegna commenti**
 
   Se questa opzione è selezionata, consenti ai membri di segnalare i commenti non appropriati. Il valore predefinito è deselezionato.
 
-* **Elenco di motivi per segnalazione**
+* **Elenco motivi contrassegno**
 
   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
 
-* **Motivo per segnalazione personalizzato**
+* **Motivo contrassegno personalizzato**
 
   Se questa opzione è selezionata, consentire ai membri di immettere il proprio motivo per contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
 

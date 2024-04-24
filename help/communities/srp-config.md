@@ -1,5 +1,5 @@
 ---
-title: Configurazione archiviazione
+title: Configurazione di archiviazione
 description: Scopri la console Configurazione di archiviazione come mezzo per identificare lo storage scelto per il contenuto della community, noto anche come contenuto generato dall’utente.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -7,14 +7,16 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 4%
 
 ---
 
-# Configurazione archiviazione {#storage-configuration}
+# Configurazione di archiviazione {#storage-configuration}
 
 La configurazione dello storage è il mezzo per identificare lo storage scelto per il contenuto della community, noto anche come UGC (User-generated Content).
 

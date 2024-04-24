@@ -5,9 +5,12 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '313'
 ht-degree: 2%
 
 ---

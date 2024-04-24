@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 9%
+source-wordcount: '1233'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +65,7 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti e le risp
 
   Se questa opzione è selezionata, viene creata una miniatura dell&#39;immagine allegata.
 
-* **Dimensione max miniatura allegato**
+* **Dimensione massima miniatura allegato**
 
   Dimensione massima (in pixel) dell&#39;immagine miniatura dell&#39;allegato. Il valore predefinito è 800 x 800.
 
@@ -71,7 +74,7 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti e le risp
 
   Dimensione massima (in pixel) dell’immagine miniatura per l’immagine in linea. Il valore predefinito è 800 x 800.
 
-* **Topic per pagina**
+* **Argomenti per pagina**
 
   Definisce il numero di topic/post mostrati per pagina. Impostazione predefinita: 10.
 
@@ -111,7 +114,7 @@ Sotto **Impostazioni** , specificare le impostazioni per gli argomenti e le risp
 
   Se questa opzione è selezionata, consenti ai membri di ricevere notifiche sui nuovi post tramite e-mail ([abbonamento](/help/communities/subscriptions.md)). Richiede `Allow Following` da controllare e [e-mail configurato](/help/communities/email.md). L&#39;impostazione predefinita è deselezionata.
 
-* **Dimensione file massima**
+* **Dimensione massima file**
 
   Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
@@ -162,7 +165,7 @@ Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero m
 
   Limita il numero massimo di menzioni consentite in un post. Il valore predefinito è 10.
 
-* **Pattern menzioni interfaccia**
+* **Pattern menzioni interfaccia utente**
 
   Specifica la stringa di pattern consentita per assegnare tag (@mention) all’utente registrato in un post. Esempio: `~{{familyName}}{{givenName}}`.
 
@@ -186,15 +189,15 @@ Sotto **Moderazione utenti** , specificare la modalità di gestione degli argome
 
   Se questa opzione è selezionata, consenti ai moderatori sul lato pubblicazione di spostare gli argomenti. Il valore predefinito è selezionato.
 
-* **Segnala post**
+* **Contrassegna post**
 
   Se questa opzione è selezionata, consentire ai membri di contrassegnare gli argomenti o i commenti di altri utenti come non appropriati. L&#39;impostazione predefinita è deselezionata.
 
-* **Elenco di motivi per segnalazione**
+* **Elenco motivi contrassegno**
 
   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
-* **Motivo per segnalazione personalizzato**
+* **Motivo contrassegno personalizzato**
 
   Se questa opzione è selezionata, consentire ai membri di immettere un motivo specifico per contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
@@ -214,7 +217,7 @@ Sotto **Campo tag** , i tag che possono essere applicati, se consentito dalla sc
 
   Pertinente se `Allow Tagging` è controllato nella sezione **Impostazioni** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
 
-* **Limite di suggerimenti**
+* **Limite suggerimenti**
 
   Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore predefinito è **-**1 (nessun limite).
 

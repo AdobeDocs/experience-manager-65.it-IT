@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 4%
+source-wordcount: '2028'
+ht-degree: 2%
 
 ---
 
@@ -154,10 +156,10 @@ Il sito limita il contenuto UGC di riferimento visualizzato ai post per i siti c
 
 Il tipo di contenuto limita il contenuto UGC di riferimento visualizzato ai post del tipo di risorsa selezionato. È possibile selezionare uno o più dei seguenti tipi. Se non è selezionata alcuna opzione, vengono visualizzati tutti i tipi.
 
-* **Commenti**
-* **Topic forum**
+* **Commento**
+* **Argomento forum**
 * **Risposta forum**
-* **Domanda d/r**
+* **Domanda D/R**
 * **Risposta D/R**
 * **Articolo di blog**
 * **Commento blog**
@@ -252,7 +254,7 @@ Per esporre i filtri personalizzati sui siti community esistenti:
 
    * Aggiungi nuova categoria `cq.social.hbs.moderation.v2.`
 
-1. Passa a `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
+1. Vai a `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
    * Imposta su nuovo componente `sling:resourceType = social/moderation/v2/filters.`
 
@@ -317,7 +319,7 @@ Quando si lavora con un singolo post, viene visualizzata un’icona Rispondi se 
 
 #### Consenti {#allow}
 
-![consenti](assets/allow.png)
+![allow](assets/allow.png)
 
 Quando si lavora con un singolo post, l’icona Consenti viene visualizzata se il post è stato contrassegnato o negato. Se contrassegnato, selezionando Consenti tutti i contrassegni vengono cancellati.
 
@@ -335,7 +337,7 @@ Il contenuto che lascia lo stato in sospeso non può mai tornare a uno stato in 
 
 #### Eliminare {#delete}
 
-![elimina](assets/delete.png)
+![eliminare](assets/delete.png)
 
 In modalità di selezione singola o in modalità collettiva, è possibile selezionare gli elementi ed eliminarli. L’azione Elimina genera una finestra di dialogo di conferma. Una volta eliminati, gli elementi scompaiono immediatamente dall’area del contenuto. **Una volta eliminato, l’UGC viene rimosso definitivamente dall’archivio e non può essere recuperato in un secondo momento**.
 

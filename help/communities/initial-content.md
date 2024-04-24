@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 3%
+source-wordcount: '487'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +53,7 @@ Ora che c’è un [modello pagina](initial-app.md#createthepagetemplate), puoi s
    * Titolo: `SCF Sandbox Site`
    * Nome: `an-scf-sandbox`
    * Seleziona **[!UICONTROL Un modello di riproduzione sandbox SCF]**
-   * Fai clic su **[!UICONTROL Crea]**
+   * Clic **[!UICONTROL Crea]**
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
@@ -59,14 +62,14 @@ Ora che c’è un [modello pagina](initial-app.md#createthepagetemplate), puoi s
    * Titolo: `SCF Sandbox`
    * Nome: `en`
    * Seleziona **[!UICONTROL Un modello di riproduzione sandbox SCF]**
-   * Fai clic su **[!UICONTROL Crea]**
+   * Clic **[!UICONTROL Crea]**
 
 1. Nel riquadro dell&#39;elenco delle cartelle selezionare la pagina creata. `/Websites/SCF Sandbox Site/SCF Sandbox`e fai clic su **[!UICONTROL Nuovo]** > **[!UICONTROL Nuova pagina]**
 
    * Titolo: `SCF Play`
    * Nome: `play`
    * Seleziona **[!UICONTROL Un modello di riproduzione sandbox SCF]**
-   * Fai clic su **[!UICONTROL Crea]**
+   * Clic **[!UICONTROL Crea]**
 
 1. Questo è il modo in cui il sito web viene ora visualizzato nella console Siti web. Le pagine figlie dell&#39;elemento selezionato nel riquadro dell&#39;elenco delle cartelle vengono visualizzate nel riquadro di destra, dove possono essere gestite.
 

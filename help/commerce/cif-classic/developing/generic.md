@@ -4,7 +4,9 @@ description: Il framework di integrazione include un livello di integrazione con
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 0%
@@ -49,7 +51,7 @@ Il framework di eCommerce può essere utilizzato con qualsiasi soluzione di eCom
 
 * Il `cq:commerceProvider` La proprietà viene utilizzata anche per fare riferimento alla definizione di commerce factory appropriata.
 
-   * Ad esempio, un `cq:commerceProvider` con il valore Geometrixx correlato alla configurazione OSGi per **Day CQ Commerce Factory per Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - dove il parametro `commerceProvider` ha anche il valore `geometrixx`.
+   * Ad esempio, un `cq:commerceProvider` con il valore Geometrixx correlato alla configurazione OSGi per **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - dove il parametro `commerceProvider` ha anche il valore `geometrixx`.
    * Qui è possibile configurare altre proprietà (quando appropriato e disponibile).
 
 In un’installazione standard AEM è necessaria un’implementazione specifica, ad esempio:

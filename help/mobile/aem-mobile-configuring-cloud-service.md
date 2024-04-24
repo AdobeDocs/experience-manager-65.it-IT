@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: d370d772-ef4d-4f38-826c-e90d07735822
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -99,6 +102,6 @@ Il gestore mobileapffers è configurato in modo diverso per le impostazioni di p
 
 Quando il contenuto viene gestito tramite l’Adobe Mobile Dashboard, il contenuto gestito viene considerato pronto per la produzione e ne viene eseguito il rendering tramite la configurazione di sincronizzazione contenuti non di sviluppo. Il rendering in questo modo fa sì che —author venga rimosso da tutti gli ID mbox e preveda che un’attività pubblicata sia disponibile sul server di Target. Prima di testare il contenuto con staging, assicurati che l’attività sia pubblicata.
 
-## Creazione del contenuto {#creating-content}
+## Creazione di contenuti {#creating-content}
 
 Ora che i servizi cloud sono stati creati e il gestore mobileapffers è stato configurato, gli autori di contenuti possono iniziare a generare esperienze mirate.

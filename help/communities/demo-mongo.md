@@ -7,7 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -144,7 +146,7 @@ Se l’AEM era in esecuzione prima dell’avvio di MongoDB, è necessario riavvi
 
 Segui le istruzioni riportate nella pagina della documentazione principale: [MSRP - Archivio comune MongoDB](msrp.md)
 
-## Prova {#test}
+## Test {#test}
 
 Per testare e verificare il Common Store MongoDB, pubblica un commento sull’istanza Publish e visualizzalo sull’istanza Autore, quindi visualizza il UGC in MongoDB e Solr:
 

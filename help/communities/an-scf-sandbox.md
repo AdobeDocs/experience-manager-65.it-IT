@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -51,17 +54,17 @@ Di seguito sono riportati alcuni collegamenti utili per sviluppatori che non han
    * [Nozioni di base](../../help/sites-developing/the-basics.md): per sviluppatori di siti web e funzionalità.
    * [Primi passaggi per gli autori](../../help/sites-authoring/first-steps.md): per l’authoring dei contenuti della pagina.
 
-## Utilizzo dell’ambiente di sviluppo di CRXDE Lite {#using-crxde-lite-development-environment}
+## Utilizzo dell’ambiente di sviluppo di CRXDE Liti {#using-crxde-lite-development-environment}
 
-Gli sviluppatori di AEM passano molto tempo nel [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) ambiente di sviluppo in un’istanza di authoring. CRXDE Lite offre un accesso meno limitato all’archivio CRX. Gli strumenti dell’interfaccia classica e le console dell’interfaccia touch forniscono un accesso più strutturato a parti specifiche dell’archivio CRX.
+Gli sviluppatori di AEM passano molto tempo nel [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md) ambiente di sviluppo in un’istanza di authoring. CRXDE Liti offre un accesso meno limitato all’archivio CRX. Gli strumenti dell’interfaccia classica e le console dell’interfaccia touch forniscono un accesso più strutturato a parti specifiche dell’archivio CRX.
 
-Dopo aver effettuato l’accesso con privilegi di amministratore, è possibile accedere a CRXDE Lite in diversi modi:
+Dopo aver effettuato l’accesso con privilegi di amministratore, è possibile accedere a CRXDE Liti in diversi modi:
 
-1. Dalla navigazione globale, seleziona navigazione **[!UICONTROL Strumenti > CRXDE Lite]**.
+1. Dalla navigazione globale, seleziona navigazione **[!UICONTROL Strumenti > CRXDE Liti]**.
 
    ![crxde-lite](assets/tools-crxde.png)
 
-2. Dalla sezione [pagina iniziale dell’interfaccia classica](http://localhost:4502/welcome.html), scorri verso il basso e fai clic su **[!UICONTROL CRXDE Lite]** nel pannello a destra.
+2. Dalla sezione [pagina iniziale dell’interfaccia classica](http://localhost:4502/welcome.html), scorri verso il basso e fai clic su **[!UICONTROL CRXDE Liti]** nel pannello a destra.
 
    ![classic-ui-crxde](assets/classic-ui-crxde.png)
 
@@ -69,13 +72,13 @@ Dopo aver effettuato l’accesso con privilegi di amministratore, è possibile a
 
    Ad esempio, in un’istanza di authoring locale: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-Per lavorare con CRXDE Lite, devi accedere con privilegi di sviluppatore o amministratore. Per l’istanza localhost predefinita, puoi accedere con
+Per lavorare con CRXDE Liti, devi accedere con privilegi di sviluppatore o amministratore. Per l’istanza localhost predefinita, puoi accedere con
 
 * `username: admin`
 * `password: admin`
 
 
-Questo login va in timeout ed è necessario effettuare nuovamente l’accesso periodicamente utilizzando il menu a discesa nell’estremità destra della barra degli strumenti di CRXDE Lite.
+Questo login va in timeout ed è necessario effettuare nuovamente l’accesso periodicamente utilizzando il menu a discesa nell’estremità destra della barra degli strumenti di CRXDE Liti.
 
 Se non hai effettuato l’accesso, non potrai navigare nell’archivio JCR o eseguire operazioni di modifica/salvataggio.
 

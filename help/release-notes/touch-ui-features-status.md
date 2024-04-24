@@ -2,9 +2,12 @@
 title: Stato delle funzioni dell’interfaccia touch
 description: Note sulla versione specifiche per [!DNL Adobe Experience Manager] Interfaccia touch.
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1076'
 ht-degree: 15%
 
 ---
@@ -43,37 +46,37 @@ Questo è un elenco delle funzionalità dell&#39;interfaccia utente classica di 
 
 | Funzione obsoleta | Stato | Commenti |
 |--- |--- |--- |
-| Naviga nella gerarchia del sito | Completa | L’AEM 6.4 ha introdotto una [visualizzazione struttura contenuto](/help/sites-authoring/basic-handling.md#content-tree). |
-| Avvia flusso di lavoro | Completa |  |
-| Crea nuova pagina | Completa |  |
-| Crea nuovo sito | Completa |  |
-| Crea nuovo lancio | Completa |  |
-| Crea nuova Live Copy | Completa |  |
-| Crea cartella | Completa |  |
-| Mostra stato pubblicazione | Completa | A partire da AEM 6.5, lo stato del flusso di lavoro viene visualizzato nella vista a elenco. |
-| Ricerca | Completa |  |
-| Copia e incolla pagina (duplicato) | Completa |  |
-| Sposta pagine | Completa |  |
-| Pubblicare le pagine | Completa |  |
-| Pubblicare pagine senza diritti di replica | Completa |  |
-| Pubblica più tardi | Completa |  |
-| Pubblica struttura | Completa |  |
-| Annullare la pubblicazione delle pagine | Completa |  |
-| Annullare la pubblicazione delle pagine senza diritti di replica | Completa |  |
-| Annulla pubblicazione più tardi | Completa |  |
-| Eliminare | Completa |  |
-| Blocca/Sblocca | Completa |  |
-| Visualizza/Modifica proprietà | Completa |  |
-| Impostare le autorizzazioni sulle pagine | Completa |  |
-| Cronologia versioni | Completa |  |
-| Ripristina versione | Completa |  |
+| Naviga nella gerarchia del sito | Completato | L’AEM 6.4 ha introdotto una [visualizzazione struttura contenuto](/help/sites-authoring/basic-handling.md#content-tree). |
+| Avvia flusso di lavoro | Completato |  |
+| Crea nuova pagina | Completato |  |
+| Crea nuovo sito | Completato |  |
+| Crea nuovo lancio | Completato |  |
+| Crea nuova Live Copy | Completato |  |
+| Crea cartella | Completato |  |
+| Mostra stato pubblicazione | Completato | A partire da AEM 6.5, lo stato del flusso di lavoro viene visualizzato nella vista a elenco. |
+| Ricerca | Completato |  |
+| Copia e incolla pagina (duplicato) | Completato |  |
+| Sposta pagine | Completato |  |
+| Pubblicare le pagine | Completato |  |
+| Pubblicare pagine senza diritti di replica | Completato |  |
+| Pubblica più tardi | Completato |  |
+| Pubblica struttura | Completato |  |
+| Annullare la pubblicazione delle pagine | Completato |  |
+| Annullare la pubblicazione delle pagine senza diritti di replica | Completato |  |
+| Annulla pubblicazione più tardi | Completato |  |
+| Eliminare | Completato |  |
+| Blocca/Sblocca | Completato |  |
+| Visualizza/Modifica proprietà | Completato |  |
+| Impostare le autorizzazioni sulle pagine | Completato |  |
+| Cronologia delle versioni | Completato |  |
+| Ripristina versione | Completato |  |
 | Ripristina struttura e ripristina pagine eliminate | Mancante | Utilizza l’interfaccia classica. |
-| Mostra differenza tra la versione precedente e quella corrente | Completa |  |
-| Azioni Live Copy (rollout) | Completa |  |
-| Vedi copie per lingua | Completa |  |
+| Mostra differenza tra la versione precedente e quella corrente | Completato |  |
+| Azioni Live Copy (rollout) | Completato |  |
+| Vedi copie per lingua | Completato |  |
 | Trova e sostituisci | Mancante | Utilizza l’interfaccia classica. |
 | Casella in entrata delle notifiche (eventi JCR) | Mancante | Utilizza l’interfaccia classica. Sostituito con un’implementazione diversa in futuro. |
-| Riferimenti | Completa | Visualizzazione dei collegamenti alle pagine in arrivo aggiunti a AEM 6.5. |
+| Riferimenti | Completato | Visualizzazione dei collegamenti alle pagine in arrivo aggiunti a AEM 6.5. |
 
 ## Stato delle funzioni: Editor pagina {#feature-status-page-editor}
 
@@ -81,27 +84,27 @@ Questo è un elenco di funzionalità dell&#39;Editor pagina per l&#39;interfacci
 
 | Funzione obsoleta | Stato | Commenti |
 |--- |--- |--- |
-| Modifica pagine Web | Completa |  |
-| Modifica pagine web per dispositivi mobili | Completa |  |
-| Modifica contenuto importato tramite Importazione progettazione | Completa |  |
-| Modifica e-mail | Completa |  |
-| Modifica app ibride per dispositivi mobili | Completa |  |
-| Modifica Forms | Completa |  |
-| Modifica offerte | Completa |  |
-| Modifica modelli flussi di lavoro | Completa |  |
-| Modalità: Modifica e Anteprima | Completa |  |
-| Anteprima reattiva | Completa |  |
-| Modalità: Modifica progettazione | Completa |  |
-| Modalità: scaffolding | Completa |  |
-| Modalità: Stato Live Copy | Completa |  |
-| Aggiungere annotazioni | Completa |  |
-| Modifica delle proprietà | Completa |  |
-| Rollout pagina | Completa |  |
-| Avvia e mostra flusso di lavoro | Completa |  |
+| Modifica pagine Web | Completato |  |
+| Modifica pagine web per dispositivi mobili | Completato |  |
+| Modifica contenuto importato tramite Importazione progettazione | Completato |  |
+| Modifica e-mail | Completato |  |
+| Modifica app ibride per dispositivi mobili | Completato |  |
+| Modifica Forms | Completato |  |
+| Modifica offerte | Completato |  |
+| Modifica modelli flussi di lavoro | Completato |  |
+| Modalità: Modifica e Anteprima | Completato |  |
+| Anteprima reattiva | Completato |  |
+| Modalità: Modifica progettazione | Completato |  |
+| Modalità: scaffolding | Completato |  |
+| Modalità: Stato Live Copy | Completato |  |
+| Aggiungere annotazioni | Completato |  |
+| Modifica proprietà | Completato |  |
+| Rollout pagina | Completato |  |
+| Avvia e mostra flusso di lavoro | Completato |  |
 | Gestione dei pacchetti del flusso di lavoro | Principalmente | Accessibile nell’interfaccia touch. Nell’interfaccia classica sono ancora presenti più payload di flusso di lavoro. |
-| Blocca/Sblocca pagina | Completa |  |
-| Pubblica pagina | Completa |  |
-| Annulla pubblicazione pagina | Completa |  |
+| Blocca/Sblocca pagina | Completato |  |
+| Pubblica pagina | Completato |  |
+| Annulla pubblicazione pagina | Completato |  |
 | Copia pagina | Rimosso | Utilizza Site Admin per [copia pagine](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
 | Sposta pagina | Rimosso | Utilizza Site Admin per [sposta pagine](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
 | Elimina pagina | Rimosso | Utilizza Site Admin per [eliminare pagine](/help/sites-authoring/managing-pages.md#deleting-a-page). |
@@ -111,16 +114,16 @@ Questo è un elenco di funzionalità dell&#39;Editor pagina per l&#39;interfacci
 | Ripristina versione | Rimosso | Utilizza Site Admin per [ripristinare le versioni](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
 | Cambia avvii | Rimosso | Utilizza Site Admin per [passare da un avvio all&#39;altro](/help/sites-authoring/launches-promoting.md). |
 | Traduci pagina | Rimosso | Utilizza Site Admin per [aggiungi pagina ai progetti di traduzione](/help/sites-administering/tc-manage.md). |
-| Timewarp (scegli la data/ora e sfoglia il sito come è apparso) | Completa |  |
-| Imposta autorizzazioni | Completa |  |
+| Timewarp (scegli la data/ora e sfoglia il sito come è apparso) | Completato |  |
+| Imposta autorizzazioni | Completato |  |
 | Interfaccia utente ClientContext | Sostituito | Utilizza il [ContextHub](/help/sites-authoring/ch-previewing.md) Interfaccia utente in corso. |
-| Finder di contenuti per i vari tipi di media | Completa |  |
-| Elenco dei componenti | Completa |  |
-| Copiare e incollare componenti | Completa |  |
+| Finder di contenuti per i vari tipi di media | Completato |  |
+| Elenco dei componenti | Completato |  |
+| Copiare e incollare componenti | Completato |  |
 | Elenco dei componenti negli Appunti | Mancante |  |
-| Annulla/Ripeti | Completa |  |
-| Trascina contenuto nel segnaposto del componente | Completa |  |
-| Trascina il contenuto direttamente nel segnaposto parsys con creazione automatica del componente | Completa |  |
+| Annulla/Ripeti | Completato |  |
+| Trascina contenuto nel segnaposto del componente | Completato |  |
+| Trascina il contenuto direttamente nel segnaposto parsys con creazione automatica del componente | Completato |  |
 
 ## Stato delle funzioni: editor di testo, tabelle e immagini {#feature-status-text-table-and-image-editors}
 
@@ -128,35 +131,35 @@ Elenco delle funzionalità dell’editor di testo, tabelle e immagini dell’int
 
 | Funzione obsoleta | Stato | Commenti |
 |--- |--- |--- |
-| Editor Rich Text | Completa | Utilizzabile sul posto, nella finestra di dialogo e a schermo intero. |
-| Abilitare/disabilitare i plug-in dell’editor Rich Text | Completa | Può essere eseguita utilizzando [Editor modelli](/help/sites-authoring/templates.md). |
-| Usa editor Rich Text per testo normale | Completa |  |
-| Plug-in RTE: collegamenti e ancoraggio | Completa |  |
-| Plug-in Editor Rich Text: Mappa caratteri | Completa |  |
-| Plug-in Editor Rich Text: Copia/Incolla | Completa |  |
-| Plug-in RTE: Incolla da Microsoft® Word | Completa |  |
-| Plug-in RTE: Trova e sostituisci | Completa |  |
-| Plug-in RTE: formati di testo (grassetto, ...) | Completa |  |
-| Plug-in RTE: secondario e apice | Completa |  |
-| Plug-in Editor Rich Text: Giustifica | Completa |  |
-| Plug-in Editor Rich Text: Elenchi (punti elenco/numeri) | Completa |  |
-| Plug-in Editor Rich Text: Formato paragrafo | Completa |  |
-| Plug-in Editor Rich Text: Stili di testo | Completa |  |
-| Plug-in Editor Rich Text: Editor origine (Modifica HTML) | Completa | Disponibile solo nella finestra di dialogo e a schermo intero. |
-| Plug-in RTE: controllo ortografico | Completa |  |
-| Plug-in RTE: tabella (Editor tabella incorporato) | Completa |  |
-| Plug-in Editor Rich Text: Annulla/Ripristina | Completa |  |
-| Plug-in RTE: Consenti immagini in linea | Completa |  |
-| Editor tabella | Completa | Utilizzabile sul posto, nella finestra di dialogo e a schermo intero. |
-| Trascina l’immagine nella cella della tabella | Completa | Utilizzabile in linea |
-| Editor immagine | Completa | Utilizzabile sul posto, nella finestra di dialogo e a schermo intero. |
-| Abilitare/disabilitare i plug-in IPE | Completa | L’AEM 6.3 ha introdotto un’interfaccia utente nella [Editor modelli](/help/sites-authoring/templates.md). |
-| Plug-in IPE: ritaglio | Completa |  |
-| Plug-in IPE: capovolgimento | Completa |  |
-| Plug-in IPE: Annulla/Ripristina | Completa |  |
-| Plug-in IPE: mappa immagine | Completa |  |
-| Plug-in IPE: rotazione | Completa |  |
-| Plug-in IPE: zoom | Completa |  |
+| Editor Rich Text | Completato | Utilizzabile sul posto, nella finestra di dialogo e a schermo intero. |
+| Abilitare/disabilitare i plug-in dell’editor Rich Text | Completato | Può essere eseguita utilizzando [Editor modelli](/help/sites-authoring/templates.md). |
+| Usa editor Rich Text per testo normale | Completato |  |
+| Plug-in RTE: collegamenti e ancoraggio | Completato |  |
+| Plug-in Editor Rich Text: Mappa caratteri | Completato |  |
+| Plug-in Editor Rich Text: Copia/Incolla | Completato |  |
+| Plug-in RTE: Incolla da Microsoft® Word | Completato |  |
+| Plug-in RTE: Trova e sostituisci | Completato |  |
+| Plug-in RTE: formati di testo (grassetto, ...) | Completato |  |
+| Plug-in RTE: secondario e apice | Completato |  |
+| Plug-in Editor Rich Text: Giustifica | Completato |  |
+| Plug-in Editor Rich Text: Elenchi (punti elenco/numeri) | Completato |  |
+| Plug-in Editor Rich Text: Formato paragrafo | Completato |  |
+| Plug-in Editor Rich Text: Stili di testo | Completato |  |
+| Plug-in Editor Rich Text: Editor origine (Modifica HTML) | Completato | Disponibile solo nella finestra di dialogo e a schermo intero. |
+| Plug-in RTE: controllo ortografico | Completato |  |
+| Plug-in RTE: tabella (Editor tabella incorporato) | Completato |  |
+| Plug-in Editor Rich Text: Annulla/Ripristina | Completato |  |
+| Plug-in RTE: Consenti immagini in linea | Completato |  |
+| Editor tabella | Completato | Utilizzabile sul posto, nella finestra di dialogo e a schermo intero. |
+| Trascina l’immagine nella cella della tabella | Completato | Utilizzabile in linea |
+| Editor immagine | Completato | Utilizzabile sul posto, nella finestra di dialogo e a schermo intero. |
+| Abilitare/disabilitare i plug-in IPE | Completato | L’AEM 6.3 ha introdotto un’interfaccia utente nella [Editor modelli](/help/sites-authoring/templates.md). |
+| Plug-in IPE: ritaglio | Completato |  |
+| Plug-in IPE: capovolgimento | Completato |  |
+| Plug-in IPE: Annulla/Ripristina | Completato |  |
+| Plug-in IPE: mappa immagine | Completato |  |
+| Plug-in IPE: rotazione | Completato |  |
+| Plug-in IPE: zoom | Completato |  |
 
 ## Stato della funzione: Strumenti {#feature-status-tools}
 
@@ -165,11 +168,11 @@ Questo è un elenco di vari strumenti di cui dispone l’interfaccia classica e 
 | Funzione obsoleta | Stato | Commenti |
 |--- |--- |--- |
 | Gestione attività | Sostituito | 6.0 ha introdotto progetti e compiti. |
-| Casella in entrata flusso di lavoro | Completa |  |
+| Casella in entrata flusso di lavoro | Completato |  |
 | Configurazione da flusso di lavoro a modello pagina (`/etc/workflow/wcm/templates.html`) | Mancante | Utilizza l’interfaccia classica. |
-| Interfaccia utente amministratore assegnazione tag | Completa |  |
-| Centro controllo MSM/blueprint | Completa |  |
-| Interfaccia utente di Gestione blueprint | Completa |  |
+| Interfaccia utente amministratore assegnazione tag | Completato |  |
+| Centro controllo MSM/blueprint | Completato |  |
+| Interfaccia utente di Gestione blueprint | Completato |  |
 | Interfaccia utente configurazione rollout | Mancante | Utilizza l’interfaccia classica. |
 | Interfaccia utente per utenti, gruppi e autorizzazioni | Principalmente completo | Per la modifica avanzata delle autorizzazioni, utilizza l’interfaccia classica. |
 | Rimuovi versioni (`/etc/versioning/purge.html`) | Mancante | Utilizza l’interfaccia classica. |

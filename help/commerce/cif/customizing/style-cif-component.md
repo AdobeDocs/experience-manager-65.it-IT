@@ -1,6 +1,6 @@
 ---
 title: Personalizzare lo stile dei componenti core CIF di Adobe Experience Manager
-description: Scopri come assegnare uno stile ai componenti core CIF di Adobe Experience Manager. Il tutorial illustra come le librerie lato client o clientlibs vengono utilizzate per distribuire e gestire CSS e JavaScript per un’implementazione Commerce di Adobe Experience Manager (AEM). Questo tutorial illustra anche come il modulo ui.frontend e un progetto Webpack vengono integrati nel processo di build end-to-end.
+description: Scopri come assegnare uno stile ai componenti core CIF di Adobe Experience Manager. Il tutorial illustra come le librerie lato client o clientlibs vengono utilizzate per distribuire e gestire CSS e JavaScript per un’implementazione Adobe Experience Manager (AEM) Commerce. Questo tutorial illustra anche come il modulo ui.frontend e un progetto Webpack vengono integrati nel processo di build end-to-end.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -10,7 +10,8 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 16%
@@ -86,7 +87,7 @@ Quindi, apporta una piccola modifica allo stile Teaser per vedere come `ui.front
 
    ![Cartella commerce ui.frontend](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
-   Si noti che sono presenti più istanze Sass (`.scss`) sotto la cartella. Si tratta degli stili specifici di Commerce per ciascuno dei componenti di Commerce.
+   Si noti che sono presenti più istanze Sass (`.scss`) sotto la cartella. Si tratta degli stili specifici di Commerce per ciascuno dei componenti Commerce.
 
 1. Apri il file `_productteaser.scss`.
 

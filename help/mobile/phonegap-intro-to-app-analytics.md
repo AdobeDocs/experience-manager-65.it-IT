@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1054'
 ht-degree: 1%
 
 ---
@@ -104,7 +107,7 @@ Fai clic sul pulsante Carica configurazione applicazione Adobe Mobile Services e
 
 Ora che l’app mobile ha accesso al file ADBMobileConfig.json, dispone delle conoscenze necessarie per comunicare con Adobe Analytics e iniziare a generare rapporti sul valore delle metriche importanti che contribuiscono al successo delle app.
 
-## Passaggio successivo? {#what-s-next}
+## Quali sono le prossime novità? {#what-s-next}
 
 1. [Avvia la mia esperienza con l’app AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Gestire il contenuto dell’app](/help/mobile/phonegap-manage-app-content.md)

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 4%
+source-wordcount: '2658'
+ht-degree: 1%
 
 ---
 
@@ -78,7 +80,7 @@ Per configurare le funzioni di Analytics for Communities, è necessario collabor
 
   L’URL del data center di Analytics per l’account.
 
-* **Suite per report**
+* **Suite di rapporti**
 
   Nome della suite di rapporti di Analytics da utilizzare.
 
@@ -108,7 +110,7 @@ Accedendo a [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/ana
 
    * Console di reporting video
 
-      * Attiva `Video Core`
+      * Abilita `Video Core`
       * Seleziona Salva
 
    * Console di misurazione Core video
@@ -208,7 +210,7 @@ La creazione iniziale di una nuova configurazione di Analytics comporta la visua
 
   Password di accesso per l&#39;utente autorizzato.
 
-* **Datacenter**
+* **Data center**
 
   Seleziona il data center di Analytics che ospita la suite di rapporti.
 
@@ -216,7 +218,7 @@ La creazione iniziale di una nuova configurazione di Analytics comporta la visua
 
   Lascia come predefinito (deselezionato).
 
-* **Usa AppMeasurement**
+* **Utilizza AppMeasurement**
 
   Lascia come predefinito (deselezionato).
 
@@ -407,20 +409,20 @@ Di seguito è riportato un esempio di mappature predefinite:
   </tr>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>eVar1</strong></td>
-   <td><strong>eVar2</strong></td>
-   <td><strong>eVar3</strong></td>
-   <td><strong>eVar4</strong></td>
-   <td><strong>eVar5</strong></td>
-   <td><strong>eVar6</strong></td>
-   <td><strong>eVar7</strong></td>
-   <td><strong>eVar8</strong></td>
-   <td><strong>eVar9</strong></td>
-   <td><strong>eVar10</strong></td>
+   <td><strong>EVAR 1</strong></td>
+   <td><strong>EVAR 2</strong></td>
+   <td><strong>EVAR 3</strong></td>
+   <td><strong>EVAR 4</strong></td>
+   <td><strong>EVAR 5</strong></td>
+   <td><strong>EVAR 6</strong></td>
+   <td><strong>EVAR 7</strong></td>
+   <td><strong>EVAR 8</strong></td>
+   <td><strong>EVAR 9</strong></td>
+   <td><strong>eVar 10</strong></td>
   </tr>
   <tr>
    <td><strong>event1<br /> Riproduzione risorse</strong></td>
-   <td><em>(a)</em></td>
+   <td><em>a) IT</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -433,79 +435,79 @@ Di seguito è riportato un esempio di mappature predefinite:
   </tr>
   <tr>
    <td><strong>event2<br /> Visualizzazione SCFV</strong></td>
-   <td><em>(a)</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>a) IT</em></td>
+   <td><em>b) IT</em></td>
+   <td><em>c) IT</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event3<br /> SCFCreate (Post)</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b) IT</em></td>
+   <td><em>c) IT</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b) IT</em></td>
+   <td><em>c) IT</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event5<br /> Scorri verso l'alto</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b) IT</em></td>
+   <td><em>c) IT</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event6<br /> ScorriInBasso</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b) IT</em></td>
+   <td><em>c) IT</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event7<br /> SCFRate</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>b) IT</em></td>
+   <td><em>c) IT</em></td>
+   <td><em>d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i) IT</em></td>
    <td><em>j)</em></td>
   </tr>

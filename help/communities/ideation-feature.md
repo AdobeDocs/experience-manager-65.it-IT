@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 10%
+source-wordcount: '1132'
+ht-degree: 0%
 
 ---
 
@@ -57,12 +60,12 @@ Seleziona la inserita `Ideation` in modo da poter accedere e selezionare `Config
 Sotto **[!UICONTROL Impostazioni]** , specificare le impostazioni per idee e commenti:
 
 * **Consenti miniatura allegato**
-* **Dimensione max miniatura allegato**
+* **Dimensione massima miniatura allegato**
 * **Dimensioni minime immagine per miniatura**
 * **Dimensione massima miniatura**
 * **Consenti membri privilegiati**
 * **Membri privilegiati consentiti**
-* **Blocca i contenuti generati dagli utenti in modalità di modifica Creazione**
+* **Blocca i contenuti generati dagli utenti in modalità Modifica autore**
 * **Titolo ideazione**
 
 * Titolo visualizzato dell&#39;idea. Il valore predefinito è `Ideation`.
@@ -70,7 +73,7 @@ Sotto **[!UICONTROL Impostazioni]** , specificare le impostazioni per idee e com
 
   Descrizione da visualizzare come sottotitolo dell&#39;idea. Il valore predefinito non è una descrizione.
 
-* **Topic per pagina**
+* **Argomenti per pagina**
 
   Definisce il numero di idee/post mostrati per pagina. Il valore predefinito è 10.
 
@@ -94,7 +97,7 @@ Sotto **[!UICONTROL Impostazioni]** , specificare le impostazioni per idee e com
 
   Se questa opzione è selezionata, consenti l&#39;aggiunta di file allegati all&#39;idea o al commento. L&#39;impostazione predefinita è deselezionata.
 
-* **Dimensione file massima**
+* **Dimensione massima file**
 
   Rilevante solo se `Allow File Uploads` è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
@@ -102,7 +105,7 @@ Sotto **[!UICONTROL Impostazioni]** , specificare le impostazioni per idee e com
 
   Rilevante solo se `Allow File Uploads` è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se sono specificati dei tipi di file, non è possibile caricare quelli non specificati. Il valore predefinito è none specificato, pertanto tutti i tipi di file sono consentiti.
 
-* **Dimensione massima per file immagine allegato**
+* **Dimensione massima file immagine allegato**
 
   Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 (2 Mb).
 
@@ -142,7 +145,7 @@ Sotto **[!UICONTROL Impostazioni]** , specificare le impostazioni per idee e com
 
 * **Abilita menzione**
 * **Max menzioni**
-* **Pattern menzioni interfaccia**
+* **Pattern menzioni interfaccia utente**
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
@@ -156,15 +159,15 @@ Sotto **[!UICONTROL Moderazione utenti]** , specificare la modalità di gestione
 
   Se questa opzione è selezionata, i moderatori membri attendibili possono chiudere un argomento per ulteriori modifiche e commenti e riaprire un argomento. L&#39;impostazione predefinita è deselezionata.
 
-* **Segnala post**
+* **Contrassegna post**
 
   Se questa opzione è selezionata, consentire ai membri di contrassegnare gli argomenti o i commenti di altri utenti come non appropriati. L&#39;impostazione predefinita è deselezionata.
 
-* **Elenco di motivi per segnalazione**
+* **Elenco motivi contrassegno**
 
   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
-* **Motivo per segnalazione personalizzato**
+* **Motivo contrassegno personalizzato**
 
   Se questa opzione è selezionata, consentire ai membri di immettere un motivo specifico per contrassegnare un argomento o un commento come non appropriato. L&#39;impostazione predefinita è deselezionata.
 
@@ -184,7 +187,7 @@ Sotto **[!UICONTROL Campo tag]** , i tag che possono essere applicati, se consen
 
   Pertinente se `Allow Tagging` è controllato nella sezione **[!UICONTROL Impostazioni]** scheda. I tag che possono essere applicati sono limitati a quelli all’interno delle categorie dello spazio dei nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. L’impostazione predefinita non è selezionata, il che significa che tutti gli spazi dei nomi sono consentiti.
 
-* **Limite di suggerimenti**
+* **Limite suggerimenti**
 
   Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Un valore di **-1** significa nessun limite. Il valore predefinito è 0.
 

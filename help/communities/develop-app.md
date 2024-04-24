@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +28,7 @@ Lo script predefinito, creato quando è stato aggiunto il componente che esegue 
 
 Il primo passaggio consiste nell’aggiungere una proprietà di super tipo della risorsa al `/apps/an-scf-sandbox/components/playpage` in modo che erediti gli script e le proprietà del super-tipo.
 
-Utilizzo di CRXDE Lite:
+Utilizzo di CRXDE Liti:
 
 1. Seleziona nodo `/apps/an-scf-sandbox/components/playpage`.
 1. Nella scheda delle proprietà, immetti una nuova proprietà con i seguenti valori:
@@ -118,7 +121,7 @@ Utilizzo di CRXDE Lite:
 
 **Visualizza la pagina in un browser in modalità di modifica:**
 
-* Interfaccia standard: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
+* Interfaccia utente standard: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 Non dovresti vedere solo l’intestazione **Community Play**, ma anche l’interfaccia utente per la modifica del contenuto della pagina.
 
@@ -152,7 +155,7 @@ Inoltre, scegli **[!UICONTROL Generale]** componenti, come
 * Immagine
 * Tabella
 * Testo
-* Titolo (Foundation)
+* Titolo (fondazione)
 
 >[!NOTE]
 >
@@ -173,9 +176,9 @@ Modifica l’URL del browser con la pagina root: `http://localhost:4502/editor.h
 * Nella scheda AVANZATE
 
    * Per la voce Reindirizza, selezionare **[!UICONTROL Siti Web]** > **[!UICONTROL Sito sandbox SCF]** > **[!UICONTROL Sandbox SCF]**
-   * Fai clic su **[!UICONTROL OK]**
+   * Clic **[!UICONTROL OK]**
 
-* Fai clic su **[!UICONTROL OK]**
+* Clic **[!UICONTROL OK]**
 
 Dopo la pubblicazione del sito, l’accesso alla pagina principale di un’istanza Publish viene reindirizzato alla pagina inglese.
 

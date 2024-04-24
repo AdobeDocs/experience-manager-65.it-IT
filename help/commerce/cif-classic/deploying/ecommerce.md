@@ -4,7 +4,8 @@ description: L’eCommerce generico AEM è disponibile come parte dell’install
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 2%
@@ -20,7 +21,7 @@ L&#39;Adobe fornisce due versioni della Commerce integration framework:
 |                         | CIF on-premise | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versioni di AEM supportate | AEM on-prem o AMS 6.x | AEM AMS 6.4 e 6.5 |
-| Back-end | - AEM, Java™ <br> - Integrazione monolitica, mappatura pre-build (modello)<br> - Archivio JCR | - ADOBE COMMERCE <br>- Java e JavaScript <br>- Nessun dato Commerce memorizzato nell’archivio JCR |
+| Back-end | - AEM, Java™ <br> - Integrazione monolitica, mappatura pre-build (modello)<br> - Archivio JCR | - ADOBE COMMERCE <br>- Java e JavaScript <br>- Nessun dato Commerce archiviato nell’archivio JCR |
 | Front-end | Pagine sottoposte a rendering lato server dell’AEM | Applicazione a pagina mista (rendering ibrido) |
 | Catalogo prodotti | - Importazione prodotti, editor, caching in AEM <br>- Cataloghi regolari con pagine AEM o proxy | - Nessuna importazione di prodotti <br>- Modelli generici <br>- Dati on-demand tramite connettore |
 | Scalabilità | - Può supportare fino a pochi milioni di prodotti (a seconda del caso d’uso) <br> - Memorizzazione in cache in Dispatcher | - Nessun limite di volume <br>- Memorizzazione in cache su Dispatcher o CDN |

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 3%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +55,7 @@ Sotto **Impostazioni** , sono disponibili le funzioni di base del gruppo:
 
   Elenco di membri da invitare al gruppo. La ricerca del tipo di anticipo fornisce suggerimenti ai membri della community da invitare.
 
-* **Nome URL del gruppo**
+* **Nome URL gruppo**
 
   Il nome della pagina del gruppo che diventa parte dell’URL.
 
@@ -60,7 +63,7 @@ Sotto **Impostazioni** , sono disponibili le funzioni di base del gruppo:
 
   Selezione `Open Group` indica che qualsiasi visitatore anonimo del sito può visualizzare il contenuto e deseleziona `Member Only Group`.
 
-* **Gruppo per soli membri**
+* **Gruppo solo membri**
 
   Selezione `Member Only Group` indica che solo i membri del gruppo possono visualizzare il contenuto e deseleziona `Open Group`.
 

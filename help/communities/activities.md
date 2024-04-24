@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ Sotto **Attività utente** , specificare le attività da visualizzare:
 
   Numero di attività da visualizzare
 
-* **Percorso risorsa del flusso**
+* **Percorso risorsa flusso**
 
   Lascia vuoto questo campo per impostare il sito community o il gruppo community come predefinito. Il percorso della risorsa del flusso identifica l’origine delle attività. Il valore predefinito è vuoto.
 
@@ -63,7 +66,7 @@ Sotto **Attività utente** , specificare le attività da visualizzare:
 
   Se questa opzione è selezionata, la pagina Attività include una scheda che filtra le attività in base a quelle generate all&#39;interno della community dal membro corrente. Il valore predefinito è selezionato.
 
-* **Visualizza la vista Tutte le attività**
+* **Visualizza tutte le attività**
 
   Se questa opzione è selezionata, la pagina delle attività include una scheda che include tutte le attività generate all&#39;interno della comunità a cui il membro corrente ha accesso. Il valore predefinito è selezionato.
 

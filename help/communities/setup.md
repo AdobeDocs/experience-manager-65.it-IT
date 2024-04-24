@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -21,8 +24,8 @@ A scopo di sviluppo e dimostrazione, è necessario eseguire un’istanza Author 
 
 Per farlo, segui il Adobe Experience Manager di base (AEM) [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) istruzioni, che comportano quanto segue:
 
-* Ambiente di authoring su [localhost:4502](Http://localhost:4502/)
-* Ambiente di pubblicazione su [localhost:4503](Http://localhost:4503/)
+* Ambiente di authoring su [localhost:4502](http://localhost:4502/)
+* Ambiente di pubblicazione su [localhost:4503](http://localhost:4503/)
 
 Per AEM Communities,
 
@@ -80,7 +83,7 @@ Crea un utente il *autore*, al quale è assegnato il ruolo di amministratore com
 
 * Sull’istanza di authoring
 
-   * Ad esempio: [http://localhost:4502/](Http://localhost:4503/)
+   * Ad esempio: [http://localhost:4502/](http://localhost:4503/)
 
 * Accedi con privilegi di amministratore
 
