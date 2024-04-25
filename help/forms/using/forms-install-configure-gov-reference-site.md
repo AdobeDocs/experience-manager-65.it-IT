@@ -5,9 +5,9 @@ contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
 workflow-type: tm+mt
-source-wordcount: '4535'
+source-wordcount: '4534'
 ht-degree: 1%
 
 ---
@@ -503,7 +503,7 @@ Il certificato creato in questa sezione verrà utilizzato per creare il servizio
 
 Se non contatti l’amministratore di Adobe, assicurati di poter creare un’integrazione all’interno del dominio di esempio.
 
-1. Accedi a [Console Adobi I/O](https://developer.adobe.com/console/).
+1. Accedi a [Console Adobe Developer](https://developer.adobe.com/console/).
 
 1. Fai clic su Create Integration (Crea integrazione).
 

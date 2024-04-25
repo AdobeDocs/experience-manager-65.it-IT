@@ -9,9 +9,9 @@ exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1603'
 ht-degree: 6%
 
 ---
@@ -127,7 +127,7 @@ Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili qui:
 >
 >Lo strumento User Sync deve essere registrato come client UMAPI di Adobe I/O seguendo la procedura descritta [qui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->È possibile trovare la documentazione della console Adobe I/O [qui](https://developer.adobe.com/developer-console/docs/guides/).
+>È possibile trovare la documentazione della console Adobe Developer [qui](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
 >Il [!DNL User Management] L&#39;API utilizzata dallo strumento User Sync viene descritta qui [posizione](https://adobe-apiplatform.github.io/umapi-documentation/en/).
