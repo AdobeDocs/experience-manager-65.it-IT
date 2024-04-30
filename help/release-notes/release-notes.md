@@ -6,9 +6,9 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
 workflow-type: tm+mt
-source-wordcount: '3735'
+source-wordcount: '3783'
 ht-degree: 2%
 
 ---
@@ -43,8 +43,7 @@ ht-degree: 2%
 
 Alcune delle funzioni e dei miglioramenti principali di questa versione includono:
 
-* Dynamic Medie ora supporta il formato immagine HEIC senza perdita di dati per Apple iOS/iPadOS. Consulta [fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html?lang=en) nell’API di server e rendering immagini di Dynamic Medie.
-
+* Dynamic Medie ora supporta il formato immagine HEIC senza perdita di dati per Apple iOS/iPadOS. Consulta [fmt](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) nell’API di server e rendering immagini di Dynamic Medie.
 * Multisite Manager (MSM) ora supporta le strutture dei frammenti di esperienza, incluse cartelle e sottocartelle, per un rollout in blocco efficiente dei frammenti di esperienza in Live Copy.
 
 ### [!DNL Forms]
@@ -145,6 +144,28 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
+* A decorrere dal 1° maggio 2024, Adobe Dynamic Medie cesserà il supporto per i seguenti elementi:
+
+   * SSL (Secure Socket Layer) 2.0
+   * SSL 3.0
+   * TLS (Transport Layer Security) 1.0 e 1.1
+   * Le seguenti crittografie deboli in TLS 1.2:
+      * TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+      * TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+      * TLS_RSA_WITH_AES_256_GCM_SHA384
+      * TLS_RSA_WITH_AES_256_CBC_SHA256
+      * TLS_RSA_WITH_AES_256_CBC_SHA
+      * TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+      * TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+      * TLS_RSA_WITH_AES_128_GCM_SHA256
+      * TLS_RSA_WITH_AES_128_CBC_SHA256
+      * TLS_RSA_WITH_AES_128_CBC_SHA
+      * TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+      * TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+      * TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+      * TLS_RSA_WITH_SDES_EDE_CBC_SHA
+
+  Vedi anche [Limitazioni di Dynamic Medie](/help/assets/limitations.md).
 * Quando una risorsa viene caricata nell’AEM, il `Update_asset` viene attivato il flusso di lavoro. Tuttavia, il flusso di lavoro non viene mai completato. Il flusso di lavoro viene completato solo fino al passaggio di caricamento del prodotto. Il passaggio successivo è il caricamento batch di Scene7, ma tale processo non viene inserito nell’AEM. (ASSETS-30443)
 * Hai bisogno di un modo migliore per gestire correttamente i video non Dynamic Medie nel componente Dynamic Medie. Questo problema causava un’istanza di eccezione `dynamicmedia_sly.js`. (ASSETS-31301)
 * L’anteprima funziona per tutte le risorse, i set di video adattivi e i video. Tuttavia, genera un errore 403 per `.m3u8` file (che, tra l&#39;altro, funzionano ancora tramite collegamenti pubblici). (ASSETS-31882)
@@ -163,7 +184,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 * Quando un utente aggiorna un’opzione esistente in un gruppo di pulsanti di scelta, vengono pubblicati valori di traduzione errati. (FORMS-12575)
 * Quando un utente aggiunge caratteri a un modulo adattivo su un dispositivo Android™, può digitare più del numero massimo definito di caratteri nel campo Testo su focus out, su dispositivi Android™. Tuttavia, funziona quando un utente seleziona il tipo di input HTML5. (FORMS-12748)
 * A causa delle etichette corrispondenti Arial® etichettate da e Arial®, gli assistenti vocali non sono in grado di distinguere tra queste due. Per risolvere il problema: l’etichetta “aria-labelledby” è sostituita da “aria-descripedby” per i campi modulo. (FORMS-12436)
-* Quando un autore utilizza il componente &quot;Forms adattivo - Incorpora (v2)&quot; per incorporare un modulo adattivo nella propria pagina Sites e il modulo incorporato contiene un componente CAPTCHA (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), la pagina del sito non viene riprodotta quando l’utente tenta di visualizzare la pagina del sito utilizzando &quot;Visualizza come pubblicato&quot; nell’istanza di authoring. Il seguente errore viene visualizzato come (FORMS-11859):
+* Un autore utilizza il componente &quot;Forms adattivo - Incorpora (v2)&quot; per incorporare un modulo adattivo nella pagina Sites. Quando il modulo incorporato contiene un componente CAPTCHA (CAPTCHA Service > reCAPTCHA, Settings > reCAPTCHA-v2), la pagina del sito non viene riprodotta. Ciò si verifica quando l’utente tenta di visualizzare la pagina del sito utilizzando &quot;Visualizza come pubblicato&quot; nell’istanza di authoring. Il seguente errore viene visualizzato come (FORMS-11859):
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * Quando un utente tenta di selezionare la data utilizzando il componente del selettore data, il valore non viene aggiornato e viene visualizzato NULL. (FORMS-12742, FORMS-12736)
@@ -202,11 +223,11 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 * In AEM Forms 6.5.18.0, quando viene pubblicato un modulo adattivo, tutte le sue dipendenze, inclusi i criteri, vengono ripubblicate, anche se non sono state apportate modifiche. (FORMS-10454)
 
-* Quando un utente seleziona &quot;Microsoft SharePoint&quot; durante l’esecuzione del gestore della configurazione in AEM Forms 6.5.19.1 con la configurazione JBoss® Turnkey, l’installazione del LiveCycle JBoss® EAR non riesce e viene visualizzato il seguente errore: (FORMS-12463)
+* Quando un utente seleziona &quot;Microsoft® SharePoint&quot; durante l’esecuzione del gestore della configurazione in AEM Forms 6.5.19.1 con JBoss® Installazione chiavi in mano, l’installazione del LiveCycle JBoss® EAR non riesce e viene visualizzato il seguente errore: (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
-* Quando un utente crea un frammento di documento utilizzando il modello dati del modulo in AEM Forms Service Pack 6.5.19.0, i nomi delle variabili appaiono non definiti nel pannello laterale, ma vengono visualizzati quando vengono rilasciati nel pannello del modulo o quando si fa clic su di essi. (FORMS-13238)
+* Quando un utente crea un frammento di documento utilizzando il modello dati del modulo in AEM Forms Service Pack 6.5.19.0, i nomi delle variabili appaiono non definiti nel pannello laterale. Tuttavia, i nomi delle variabili vengono visualizzati quando vengono rilasciati nel pannello del modulo o quando si fa clic su di essi. (FORMS-13238)
 
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
@@ -332,7 +353,7 @@ Per istruzioni sull&#39;installazione del service pack in Experience Manager For
 
 >[!NOTE]
 >
->La funzione Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html), è progettata esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms, in quanto la funzionalità Adaptive Forms richiede una licenza appropriata.
+>La funzione Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), è progettata esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms, in quanto la funzionalità Adaptive Forms richiede una licenza appropriata.
 
 ### Installare il pacchetto di indice GraphQL per frammenti di contenuto Experience Manager{#install-aem-graphql-index-add-on-package}
 
@@ -471,10 +492,10 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
 * Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. (CQDOC-21355)
 * Forms adattivo consente di utilizzare funzioni personalizzate con ECMAScript versione 5 o precedente. Quando una funzione personalizzata utilizza ECMAScript versione 6 o successiva, ad esempio le funzioni &#39;let&#39;, &#39;const&#39; o freccia, è possibile che l&#39;editor di regole non si apra correttamente.
-* Gli utenti non possono creare una lettera di Gestione della corrispondenza. Quando un utente crea una lettera, viene visualizzato un errore con la descrizione &quot;Oggetto oggetto&quot; e la lettera non viene creata. Non è possibile caricare le miniature per i layout nemmeno nella schermata di creazione della lettera. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13496)
-* Il servizio di comunicazione interattiva crea il documento PDF, ma i dati dell&#39;utente non vengono inseriti automaticamente nei campi del modulo. Il servizio di preriempimento non funziona come previsto. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13413, FORMS-13493)
-* Impossibile caricare l&#39;editor di revisione e correzione (RnC) del servizio di automated forms conversion. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13491)
-* Dopo l’aggiornamento da AEM 6.5 Forms Service Pack 18 (6.5.18.0) o AEM 6.5 Forms Service Pack 19 (6.5.19.0) a AEM 6.5 Forms Service Pack 20 (6.5.20.0), gli utenti riscontrano un errore di compilazione JSP. Non possono aprire o creare moduli adattivi e si verificano errori con altre interfacce AEM come l’editor di pagine, l’interfaccia utente di AEM Forms e l’editor di flussi di lavoro AEM. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) per risolvere il problema. (FORMS-13492)
+* Gli utenti non possono creare una lettera di Gestione della corrispondenza. Quando un utente crea una lettera, viene visualizzato un errore con la descrizione &quot;`Object Object`&quot; e la lettera non viene creata. Non è possibile caricare le miniature per i layout nemmeno nella schermata di creazione della lettera. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) per risolvere il problema. (FORMS-13496)
+* Il servizio di comunicazione interattiva crea il documento PDF, ma i dati dell&#39;utente non vengono inseriti automaticamente nei campi del modulo. Il servizio di preriempimento non funziona come previsto. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) per risolvere il problema. (FORMS-13413, FORMS-13493)
+* Impossibile caricare l&#39;editor di revisione e correzione (RnC) del servizio di automated forms conversion. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) per risolvere il problema. (FORMS-13491)
+* Dopo l’aggiornamento da AEM 6.5 Forms Service Pack 18 (6.5.18.0) o AEM 6.5 Forms Service Pack 19 (6.5.19.0) a AEM 6.5 Forms Service Pack 20 (6.5.20.0), gli utenti riscontrano un errore di compilazione JSP. Non possono aprire o creare moduli adattivi e si verificano errori con altre interfacce AEM come l’editor di pagine, l’interfaccia utente di AEM Forms e l’editor di flussi di lavoro AEM. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) per risolvere il problema. (FORMS-13492)
 
 <!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
 * [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
@@ -517,10 +538,10 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di con
 Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedervi, contatta il tuo account manager Adobe.
 
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/)
-* [Contatta l’Assistenza clienti Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [Contatta l’Assistenza clienti Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
+>* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
