@@ -6,9 +6,9 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
+source-git-commit: 4f4d5494d4e630e6f16f8a8e6a6a609925a91457
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3828'
 ht-degree: 2%
 
 ---
@@ -244,6 +244,12 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 * Quando un utente crea un XDP in AEM Forms Designer, nell’output PDF il tag Button Form non è nidificato nel tag paragrafo principale (p-tag). (LC-3921719)
 
 * Quando un utente crea un XDP in AEM Forms Designer, nell’output PDF quando un utente naviga tra i tag del modulo, viene taggato anche l’oggetto di sfondo. (LC-3921687)
+
+#### [!DNL Document Services] {#forms-document-services-6520}
+
+* (Solo AEM Forms su JEE) Il servizio PDF Generator non è in grado di enumerare i font disponibili sul server. Di conseguenza, il pannello di selezione dei font nella pagina Adobe PDF Settings (Impostazioni di Adobe Analytics) dell’interfaccia utente di amministrazione del PDFG rimane vuoto, impedendo in modo efficace di incorporare o meno i font scelti. (FORMS-12095)
+
+
 
 ### Foundation {#foundation-6520}
 
