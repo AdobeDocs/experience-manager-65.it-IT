@@ -8,7 +8,8 @@ topic-tags: document_services
 feature: Document Services
 exl-id: 62adca19-8ed0-48b3-b7eb-9dbc3d8f96c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 0%
@@ -102,7 +103,7 @@ L’alias contiene tutti i parametri richiesti da un HSM o etoken. Eseguire le i
 1. Apri **Servizio configurazione credenziali HSM** e specifica i valori per i campi seguenti:
 
    * **Alias credenziali**: specifica una stringa utilizzata per identificare l’alias. Questo valore viene utilizzato come proprietà per alcune operazioni di firma digitale, ad esempio l&#39;operazione Firma campo.
-   * **Percorso DLL**: specifica il percorso della libreria client HSM o etoken sul server. Ad esempio: `C:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster è necessario assicurarsi che tutti i server del cluster utilizzino un percorso identico.
+   * **Percorso DLL**: specifica il percorso della libreria client HSM o etoken sul server. Ad esempio, `C:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster è necessario assicurarsi che tutti i server del cluster utilizzino un percorso identico.
    * **Pin HSM**: specifica la password necessaria per accedere alla chiave del dispositivo.
    * **ID slot HSM**: specifica un identificatore di slot di tipo integer. L&#39;ID dello slot viene impostato client per client. Viene utilizzato per identificare lo slot su HSM che contiene la chiave privata per il segno/certificazione.
 

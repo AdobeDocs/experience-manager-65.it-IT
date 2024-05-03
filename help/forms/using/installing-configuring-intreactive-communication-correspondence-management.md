@@ -3,10 +3,10 @@ title: Installare e configurare le comunicazioni interattive
 description: Installa e configura AEM Forms Interactive Communications per creare corrispondenze aziendali, documenti, dichiarazioni, avvisi sui vantaggi, marketing mail, fatture e kit di benvenuto.
 topic-tags: installing
 docset: aem65
-role: Admin
+role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 1%
@@ -64,7 +64,7 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
   </tr>
   <tr>
    <td>libSM</td>
-   <td>zlib</td>
+   <td>Zlib</td>
    <td>libICE</td>
    <td>libuuide</td>
   </tr>
@@ -145,7 +145,7 @@ Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di creazione
 
 La comunicazione interattiva è l’approccio predefinito e consigliato per la creazione di comunicazioni con i clienti in Forms AEM 6.5. Se hai effettuato l’aggiornamento o la migrazione da una versione precedente e prevedi di continuare a utilizzare le lettere (Gestione corrispondenza), installa [Pacchetto di compatibilità per AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-Il pacchetto Compatibilità AEMFD consente di utilizzare le seguenti risorse da AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms su AEM 6.5 Forms:
+Il pacchetto di compatibilità per AEMFD consente di utilizzare le seguenti risorse di AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms su AEM 6.5 Forms:
 
 * Frammenti di documento
 * Lettere

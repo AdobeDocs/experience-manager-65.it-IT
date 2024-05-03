@@ -3,7 +3,9 @@ title: Panoramica dei rapporti sulle transazioni AEM Forms.
 description: Mantieni un conteggio di tutti i moduli inviati, dei documenti inviati, della comunicazione interattiva riprodotta, dei documenti convertiti in un formato e altro ancora.
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 6e5e29ef-eb90-4573-8745-1966a238bc03
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -33,5 +35,3 @@ Di seguito sono riportate istruzioni complete su come abilitare le transazioni, 
 * [Visualizzazione e comprensione dei rapporti sulle transazioni per AEM Forms su OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [Elenco delle API fatturabili per AEM Forms su OSGi](/help/forms/using/transaction-reports-billable-apis.md)
 * [Registrare una transazione per l’implementazione personalizzata per AEM Forms su OSGi](/help/forms/using/record-transaction-custom-implementation.md)
-
-

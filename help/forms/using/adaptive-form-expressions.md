@@ -7,7 +7,8 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 20fb57a51e47562a290e3608a2fe080a39774998
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 0%
@@ -70,7 +71,7 @@ Nei moduli adattivi, puoi scrivere espressioni per aggiungere comportamenti qual
 
 ### Calcola espressione {#calculate-expression}
 
-L’espressione di calcolo viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un’espressione. In genere, tali espressioni utilizzano la proprietà value di altri campi. Ad esempio: `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`, l&#39;espressione viene riattivata e il valore viene ricalcolato.
+L’espressione di calcolo viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un’espressione. In genere, tali espressioni utilizzano la proprietà value di altri campi. Ad esempio, `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`, l&#39;espressione viene riattivata e il valore viene ricalcolato.
 
 **Applicabile a**: campi
 

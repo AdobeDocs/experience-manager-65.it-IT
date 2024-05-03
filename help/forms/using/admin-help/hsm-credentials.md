@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 0%
@@ -30,7 +31,7 @@ Le firme digitali dei moduli AEM possono utilizzare le credenziali memorizzate s
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali HSM, quindi fai clic su Aggiungi.
 1. Nella casella Nome profilo digitare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni di Firma digitale, ad esempio l&#39;operazione Firma campo.
-1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Ad esempio: `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
+1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Ad esempio, `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
 1. Fare clic su Verifica connettività HSM. Se i moduli AEM sono in grado di connettersi al dispositivo HSM, viene visualizzato un messaggio che informa che il dispositivo HSM è disponibile. Fai clic su Avanti.
 1. Utilizzare il Nome token, l&#39;ID slot o l&#39;Indice elenco slot per identificare la posizione in cui sono memorizzate le credenziali nell&#39;HSM.
 
@@ -45,7 +46,7 @@ Le firme digitali dei moduli AEM possono utilizzare le credenziali memorizzate s
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione archivio fonti attendibili > Credenziali HSM, quindi fai clic su Aggiungi.
 1. Nella casella Nome profilo digitare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni di Firma digitale, ad esempio l&#39;operazione Firma campo.
-1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Ad esempio: `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
+1. Nella casella Libreria PKCS11 digitare il percorso completo della libreria client HSM sul server. Ad esempio, `c:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
 1. Selezionare la casella di controllo Creazione profilo offline. Fai clic su Avanti.
 1. Nell&#39;elenco Periferiche HSM selezionare il produttore della periferica HSM in cui sono memorizzate le credenziali.
 1. Nell&#39;elenco Tipo slot (Slot Type), selezionate ID slot (Slot Id), Indice slot (Slot Index) o Nome token (Token Name) e specificate un valore nella casella Informazioni slot (Slot Info). I moduli AEM utilizzano queste impostazioni per determinare dove vengono memorizzate le credenziali nell&#39;HSM.
