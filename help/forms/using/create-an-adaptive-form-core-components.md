@@ -8,12 +8,11 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
-exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 24%
+source-wordcount: '1794'
+ht-degree: 23%
 
 ---
 
@@ -166,6 +165,21 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
    ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo per configurare una pagina di reindirizzamento o un messaggio di ringraziamento](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
 1. Seleziona un modello di dati modulo. Apri **[!UICONTROL Base]** scheda. Nel servizio di preriempimento, seleziona **[!UICONTROL Servizio preriempimento modello dati modulo]**.
 1. Clic **[!UICONTROL Fine]**. Il modulo adattivo è ora configurato per l’utilizzo della precompilazione del modello dati del modulo. Ora è possibile utilizzare [editor di regole](rule-editor.md) per creare regole per precompilare i campi del modulo.
+
+## Come rinominare un modulo adattivo per l’AEM?{#rename-an-AEM-Adaptive-Form}
+
+Per rinominare un modulo adattivo, effettua le seguenti operazioni:
+
+1. Seleziona un modulo adattivo nell’interfaccia utente di AEM Forms.
+1. Fai clic sul pulsante **Proprietà** si trova sulla barra superiore.
+
+   ![Proprietà](/help/forms/using/assets/rename-form-properties.png)
+
+1. Modificare il nome del modulo in **Titolo** come mostrato nell’immagine seguente.
+1. Clic **Salva e chiudi**.
+
+   ![Rinominare un modulo adattivo AEM](/help/forms/using/assets/rename-form-title.png)
+
 
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}

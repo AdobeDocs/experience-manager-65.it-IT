@@ -4,11 +4,10 @@ description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience 
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
-exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1984'
 ht-degree: 6%
 
 ---
@@ -210,3 +209,18 @@ Per impostazione predefinita, l’opzione di salvataggio automatico non è abili
    >Affinché l&#39;opzione di salvataggio automatico funzioni per gli utenti anonimi, accertati di configurare il servizio Configurazione comune di Forms per consentire a tutti gli utenti di visualizzare in anteprima, verificare e firmare i moduli.
    >
    >Per configurare il servizio, vai alla pagina di configurazione della console web Adobe Experience Manager all’indirizzo `https://'[server]:[port]'system/console/configMgr` e modificare il **[!UICONTROL Servizio di configurazione comune di Forms]** per scegliere **[!UICONTROL Tutti gli utenti]** opzione in **[!UICONTROL Consenti]** e salva la configurazione.
+
+
+## Come rinominare un modulo adattivo per l’AEM? {#rename-an-AEM-Adaptive-Form}
+
+Per rinominare un modulo adattivo, effettua le seguenti operazioni:
+
+1. Seleziona un modulo adattivo nell’interfaccia utente di AEM Forms.
+1. Fai clic sul pulsante **Proprietà** si trova sulla barra superiore.
+
+   ![Proprietà](/help/forms/using/assets/rename-form-properties.png)
+
+1. Modificare il nome del modulo in **Titolo** come mostrato nell’immagine seguente.
+1. Clic **Salva e chiudi**.
+
+   ![Rinominare un modulo adattivo AEM](/help/forms/using/assets/rename-form-title.png)
