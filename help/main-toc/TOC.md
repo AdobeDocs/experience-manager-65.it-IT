@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
+source-git-commit: d5554718d663515d84878ff94555ac6cadcab891
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7408'
 ht-degree: 20%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 20%
 + Note sulla versione {#release-notes}
    + [Note sulla versione](/help/release-notes/release-notes.md)
    + Note sulle versioni precedenti {#service-pack}
+      + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
@@ -73,7 +74,7 @@ ht-degree: 20%
    + [Filtro eliminazione contenuti](/help/sites-administering/content-disposition-filter.md)
    + [Mappatura personalizzata dei gruppi di utenti in AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Supporto per i cookie dello stesso sito](/help/sites-administering/same-site-cookie-support.md)
-   + [Credenziali JWT nella console Adobe Developer obsolete](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Credenziali JWT in Adobe Developer Console obsolete](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Sites {#sites}
    + Authoring {#authoring}
       + Attività, strumenti e concetti essenziali per l’authoring AEM {#essentials}
@@ -262,7 +263,7 @@ ht-degree: 20%
          + [Best practice MSM](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - Preparazione al RGPD](/help/sites-administering/gdpr-compliance-sites.md)
          + [Gestione delle richieste RGPD per la Fondazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
-         + [AEM Commerce - Preparazione al RGPD](/help/sites-administering/gdpr-compliance-commerce.md)
+         + [AEM Commerce - Preparazione all’RGPD](/help/sites-administering/gdpr-compliance-commerce.md)
       + Gestione dei contenuti {#contentmanagement}
          + [Gestione pacchetti](/help/sites-administering/package-manager.md)
          + [Amministrazione dei tag](/help/sites-administering/tags.md)
@@ -1605,7 +1606,7 @@ ht-degree: 20%
          + [Ristrutturazione dell&#39;archivio di asset in AEM 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio Dynamic Medie nell’AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio Forms nell’AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
-         + [Ristrutturazione dell’archivio di e-commerce in AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+         + [Ristrutturazione dell&#39;archivio E-Commerce nell&#39;AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio per AEM Communities nella versione 6.5](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
       + Best practice {#practices}
          + [Implementazione delle best practice](/help/sites-deploying/best-practices.md)

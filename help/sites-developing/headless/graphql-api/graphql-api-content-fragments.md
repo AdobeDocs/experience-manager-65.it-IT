@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
 workflow-type: tm+mt
-source-wordcount: '4796'
-ht-degree: 52%
+source-wordcount: '4984'
+ht-degree: 51%
 
 ---
 
@@ -1047,6 +1047,39 @@ Ad esempio, per concedere l’accesso alle richieste con il Referrer `my.domain`
 >Tutti gli [schemi](#schema-generation) GraphQL (derivati dai modelli per frammenti di contenuto che sono stati **abilitati**) sono leggibili attraverso l’endpoint GraphQL.
 >
 >Questa funzionalità implica la necessità di assicurarsi che non siano disponibili dati sensibili, in quanto potrebbero trapelare in questo modo. Ad esempio, include informazioni che potrebbero essere presenti come nomi di campo nella definizione del modello.
+
+## Limitazioni {#limitations}
+
+Per proteggere da potenziali problemi, esistono limitazioni predefinite imposte alle query:
+
+* La query non può contenere più di 1 metro (1024 * 1024) di caratteri
+* La query non può contenere più di 15000 token
+* La query non può contenere più di 200000 token di spazio vuoto
+
+È inoltre necessario essere a conoscenza di:
+
+* Se la query GraphQL contiene campi con lo stesso nome in due o più modelli, viene restituito un errore di conflitto di campi e vengono soddisfatte le seguenti condizioni:
+
+   * Quindi dove:
+
+      * Due (o più modelli) sono utilizzati come riferimenti possibili; quando sono definiti come consentiti **Tipo di modello** nel riferimento Frammento di contenuto.
+
+     e:
+
+      * Questi due modelli hanno campi con un nome comune; ciò significa che lo stesso nome si verifica in entrambi i modelli.
+
+     e
+
+      * Tali campi sono di tipi di dati diversi.
+
+   * Ad esempio:
+
+      * Quando due (o più) frammenti hanno modelli diversi (ad esempio, `M1`, `M2`) vengono utilizzati come riferimenti possibili (Riferimento contenuto o Riferimento frammento) da un altro frammento; ad esempio, `Fragment1` `MultiField/List`
+      * E questi due frammenti con modelli diversi (`M1`, `M2`) hanno campi con lo stesso nome, ma tipi diversi.
+Per maggiore chiarezza:
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * Se la query GraphQL contiene il valore, verrà generato un errore di conflitto di campi `Title` campo.
 
 ## Autenticazione {#authentication}
 
