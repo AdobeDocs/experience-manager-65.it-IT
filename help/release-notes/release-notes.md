@@ -5,9 +5,9 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 8672eabadd50dfb5f243a162c205931704d8a6c7
+source-git-commit: 2e5754022fb40409500bb57b3b7576bf8ec9a605
 workflow-type: tm+mt
-source-wordcount: '3769'
+source-wordcount: '3770'
 ht-degree: 3%
 
 ---
@@ -79,7 +79,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Le cartelle di configurazione nidificate non erano più supportate e le cartelle dei modelli per frammenti di contenuto non erano più visibili dopo l’aggiornamento a AEM 6.5.18 o a AEM 6.5.19. (SITES-18110)
+* Le cartelle di configurazione nidificate non erano più supportate e le cartelle dei modelli di frammenti di contenuto non erano più visibili dopo l’aggiornamento a AEM 6.5.18 o a AEM 6.5.19. (SITES-18110)
 * Alcune sottocartelle non sono in grado di scegliere da modelli di frammenti di contenuto ereditati. Deve supportare le cartelle senza `jcr:content` , anche se le cartelle DAM create tramite l’interfaccia utente dispongono di tale nodo. (SITES-17943)
 
 #### [!DNL Content Fragments] - API GRAPHQL {#sites-graphql-api-6520}
@@ -98,7 +98,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 #### Back-end core{#sites-core-backend-6520}
 
 * Quando si utilizza la pubblicazione rapida di un frammento di contenuto, questo continua a essere caricato e non viene pubblicato. In altre parole, la pubblicazione rapida non funziona per i frammenti di contenuto dopo un aggiornamento del service pack da AEM 6.5.7 a AEM 6.5.17. Quando l’utente tentava di eseguire una pubblicazione gestita, questa funzionava. Tuttavia, quando hanno provato la pubblicazione rapida, non veniva pubblicata. In particolare, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` ha causato il malfunzionamento del sistema. (SITES-17311)
-* I frammenti di contenuto non possono essere serializzati con l’esportatore Jackson: il caricamento della pagina si interrompe quando in una pagina viene fatto riferimento a un frammento di contenuto (viene utilizzato il codice di esportazione Jackson) ed eventuali tag aggiunti a un frammento di contenuto. (SITES-18096)
+* I frammenti di contenuto non sono serializzabili con l’esportatore Jackson: il caricamento della pagina si interrompe quando in una pagina viene fatto riferimento a un frammento di contenuto (utilizza il codice di esportazione Jackson) e qualsiasi tag aggiunto a un frammento di contenuto. (SITES-18096)
 
 #### Componenti core{#sites-core-components-6520}
 
@@ -275,7 +275,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 
 * In seguito alla distribuzione di AEM 6.5 Service Pack 18, si è verificato un problema con la scheda Filtri nell’Editor delle regole di traduzione. Quando si seleziona un contesto, facendo clic su Modifica > Salva, alla successiva apertura dello stesso contesto viene visualizzata una virgoletta doppia come carattere HTML. In sostanza, le regole di traduzione non venivano salvate correttamente. (NPR-41624)
 * Problemi relativi alle traduzioni di frammenti di contenuto, in cui le stringhe tradotte vengono rimandate dal provider di traduzione all’AEM, ma rimangono bloccate nel `/content/projects` senza aggiornare i frammenti di contenuto. (NPR-41516)
-* Durante la creazione di una copia per lingua viene visualizzato un messaggio di errore. Si verifica in una pagina in cui è presente un frammento di contenuto a cui si fa riferimento in una proprietà della pagina, utilizzando modelli per frammenti di contenuto. (NPR-41441)
+* Durante la creazione di una copia per lingua viene visualizzato un messaggio di errore. Si verifica in una pagina in cui è presente un Frammento di contenuto a cui si fa riferimento in una proprietà della pagina, utilizzando i modelli Frammento di contenuto. (NPR-41441)
 * I collegamenti nei frammenti esperienza non vengono regolati nella lingua corretta durante la copia in lingua. Il frammento di esperienza punta invece alla lingua principale. (NPR-41343)
 
 #### Interfaccia utente{#foundation-ui-6520}
