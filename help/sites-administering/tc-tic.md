@@ -6,9 +6,9 @@ feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: b7082aaee83fba88b47447b8553563264eedb713
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1493'
 ht-degree: 41%
 
 ---
@@ -28,7 +28,7 @@ Per una panoramica delle funzioni di traduzione dei contenuti di AEM, vedi [Trad
 Crea una configurazione cloud che connette AEM al provider di servizi di traduzione. Per impostazione predefinita, AEM include la funzionalità di connessione a Microsoft Translator.
 I seguenti fornitori di servizi di traduzione forniscono un’implementazione della nuova API per i progetti di traduzione. Collegamenti per ulteriori informazioni sull’integrazione:
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
