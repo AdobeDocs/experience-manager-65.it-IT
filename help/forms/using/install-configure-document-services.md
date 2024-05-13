@@ -3,11 +3,10 @@ title: Installazione e configurazione dei servizi documentali
 description: Installa AEM Forms Document Services per creare, assemblare, distribuire, archiviare documenti PDF, aggiungere firme digitali per limitare l’accesso ai documenti e decodificare i Forms in codice a barre.
 topic-tags: installing
 role: Admin, User, Developer
-exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '5633'
+source-wordcount: '5703'
 ht-degree: 1%
 
 ---
@@ -298,6 +297,10 @@ L&#39;account utente utilizzato per avviare il server applicazioni richiede **So
 1. Aprire Editor Criteri di gruppo per Microsoft® Windows. Per aprire Editor Criteri di gruppo, fare clic su **[!UICONTROL Inizio]**, tipo **gpedit.msc** nella casella Avvia ricerca e fare clic su **[!UICONTROL Editor Criteri di gruppo]**.
 1. Accedi a **[!UICONTROL Criteri computer locale]** > **[!UICONTROL Configurazione computer]** > **[!UICONTROL Impostazioni di Windows]** > **[!UICONTROL Impostazioni di protezione]** > **[!UICONTROL Criteri locali]** > **[!UICONTROL Assegnazione diritti utente]** e modificare il **[!UICONTROL Sostituire un token a livello di processo]** e includere il gruppo Administrators.
 1. Aggiungere l&#39;utente alla voce Sostituisci token a livello di processo.
+
+>[!NOTE]
+>
+> Se il server AEM è in esecuzione come servizio in LSA, l&#39;assegnazione esplicita di questo privilegio a un utente potrebbe non essere necessaria, significa che se non sono installate altre applicazioni/componenti oltre a quella richiesta per PDFG sulla VM, non è necessario concedere ad altri account **Sostituire un token a livello di processo a destra** e solo gli account dei servizi locali e di rete devono avere il diritto.
 
 ### (Solo per Windows) Abilita il servizio PDF Generator per i non amministratori {#enable-the-pdf-generator-service-for-non-administrators}
 
