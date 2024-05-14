@@ -9,7 +9,7 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 1%
@@ -119,9 +119,7 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
    1. Seleziona Recupera o ottieni servizio dal campo Servizio di lettura nel riquadro Modifica proprietà.
    1. Seleziona l’icona a forma di matita per l’argomento del servizio di lettura per associare l’argomento a un attributo di richiesta e specifica il valore di associazione. L&#39;argomento del servizio viene associato all&#39;attributo di associazione o al valore letterale specificato, che viene passato al servizio come argomento per recuperare i dettagli associati al valore specificato dall&#39;origine dati.
 
-      <br>
-        In questo esempio, l'argomento id prende il valore dell'attributo id del profilo utente e lo trasmette come argomento al servizio di lettura. Legge e restituisce i valori delle proprietà associate dall'oggetto modello dati dipendente per l'ID specificato. Pertanto, se si specifica 00250 nel campo ID del modulo, il servizio di lettura legge i dettagli del dipendente con 00250 ID dipendente.
-        <br>
+      In questo esempio, l&#39;argomento id prende il valore dell&#39;attributo id del profilo utente e lo trasmette come argomento al servizio di lettura. Legge e restituisce i valori delle proprietà associate dall&#39;oggetto modello dati dipendente per l&#39;ID specificato. Pertanto, se si specifica 00250 nel campo ID del modulo, il servizio di lettura legge i dettagli del dipendente con 00250 ID dipendente.
 
       ![Configurare l’attributo della richiesta](assets/request-attribute.png)
 
@@ -179,7 +177,7 @@ Prima di distribuire il servlet Java™, assicurati di disporre di una comunicaz
 
 1. Accedi all’istanza dell’AEM e crea una comunicazione interattiva. Per utilizzare la comunicazione interattiva indicata nel codice di esempio riportato di seguito: [fai clic qui](assets/SimpleMediumIC.zip).
 1. [Creare e distribuire un progetto AEM con Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) sull’istanza AEM.
-1. Aggiungi [AEM Forms Client SDK versione 6.0.12 o successiva](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) nell’elenco delle dipendenze del file POM del progetto AEM. Ad esempio,
+1. Aggiungi [AEM Forms Client SDK versione 6.0.12 o successiva](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) nell’elenco delle dipendenze del file POM del progetto AEM. Ad esempio:
 
    ```xml
        <dependency>
