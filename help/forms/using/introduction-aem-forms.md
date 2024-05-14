@@ -9,7 +9,7 @@ feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 24523ac85b1ac455f4bdf32a0a725cb99e0de497
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 15%
@@ -39,7 +39,7 @@ AEM Forms fornisce strumenti di gestione dei moduli che consentono non solo di g
 >
 >La funzione Forms adattivo, disponibile in [QuickStart per AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it), è progettata esclusivamente a scopo di esplorazione e valutazione. Per l’utilizzo in produzione, è essenziale ottenere una licenza valida per AEM Forms, in quanto la funzionalità Adaptive Forms richiede una licenza appropriata.
 
-![Funzionalità dei moduli AEM](do-not-localize/4th-draft.gif)
+![Funzionalità dei moduli AEM](do-not-localize/4th-draft-updated.gif)
 
 ### Funzionalità principali {#key-capabilities}
 

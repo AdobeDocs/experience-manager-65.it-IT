@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 55421ab730382eb9aa603f898182865649f66349
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Un gruppo dinamico contiene solo utenti. Non può contenere altri gruppi. Tuttav
 
 ### Crea automaticamente gruppi dinamici basati sui domini e-mail {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati.
+1. Fai clic su Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati.
 1. In Creazione automatica gruppo dinamico selezionare la casella di controllo.
 1. Specifica quando User Manager controlla la presenza di nuovi domini e-mail. L&#39;ora deve essere successiva all&#39;ora di sincronizzazione del dominio perché la creazione di gruppi dinamici è logica solo se la sincronizzazione del dominio è stata completata.
 
