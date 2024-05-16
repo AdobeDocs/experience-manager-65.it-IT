@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 5e2799505bc6d69cd5898445a9300ad162ef74fd
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '518'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,26 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
     <td><strong>Data</strong></td>
     <td><strong>Collegamento per il download degli hotfix (collegamento per la distribuzione di software AEM)</strong></td>
     <td><strong>Problemi risolti</strong></td>
+  </tr>
+  <tr>
+    <td>venerdì 16 maggio 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1192-010.zip">Hotfix per AEM Service Pack 6.5.20.0 per Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1192-010.zip">Hotfix per AEM Service Pack 6.5.20.0 per Linux </a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1192-010.zip">Hotfix per AEM Service Pack 6.5.20.0 per Apple macOS</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>In un modulo adattivo basato su un XDP con script incorporati nelle caselle di controllo, gli script non vengono eseguiti per gli elementi che seguono tali caselle di controllo. Per questo problema è disponibile un hotfix. (FORMS-14244) </li>
+     <li> Le righe nel widget del selettore data vengono troncate quando si attraversano i mesi nel widget popup per i campi con pattern di modifica/visualizzazione. Per questo problema è disponibile un hotfix. (FORMS-13620) </li>
+     <li>L’invio dei moduli non riesce quando si tenta di utilizzare il servizio DOR (Document of Record) nel back-end. Messaggio di errore: "Impossibile completare l'azione di invio perché la risorsa del modulo non è assegnata correttamente". (FORMS-13798) </li>
+     <li>Quando un modulo adattivo viene inviato da un’istanza Adobe Experience Manager Publish a un flusso di lavoro Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati.  (FORMS-14209) </li>
+     <li> Durante l’installazione del pacchetto AEM 6.5 Forms Service Pack 20 (pacchetto del componente aggiuntivo AEM Forms per SP20), l’interfaccia utente di AEM Sites presenta un significativo deterioramento delle prestazioni.  (FORMS-13791) </li>
+     <li>Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. (CQDOC-21355)</li>
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>martedì 29 gennaio 2024</td>

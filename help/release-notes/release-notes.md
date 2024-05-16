@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: c165755c19ac64fdd253bff9163f48ddf4732623
+source-git-commit: 5e2799505bc6d69cd5898445a9300ad162ef74fd
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 2%
+source-wordcount: '3994'
+ht-degree: 3%
 
 ---
 
@@ -490,12 +490,12 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
 ### Problemi noti per AEM Forms {#known-issues-aem-forms-6520}
 
-* In un modulo adattivo basato su un XDP con script incorporati nelle caselle di controllo, gli script non vengono eseguiti per gli elementi che seguono tali caselle di controllo. (FORMS-14244)
-* Le righe nel widget del selettore data vengono troncate quando si attraversano i mesi nel widget popup per i campi con pattern di modifica/visualizzazione. (FORMS-13620)
-* L’invio dei moduli non riesce quando si tenta di utilizzare il servizio DOR (Document of Record) nel back-end. Messaggio di errore: &quot;Impossibile completare l&#39;azione di invio perché la risorsa del modulo non è assegnata correttamente&quot;. (FORMS-13798)
-* Quando un modulo adattivo viene inviato da un’istanza Adobe Experience Manager Publish a un flusso di lavoro Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati. (FORMS-14209)
-* Durante l’installazione del pacchetto AEM 6.5 Forms Service Pack 20 (pacchetto del componente aggiuntivo AEM Forms per SP20), l’interfaccia utente di AEM Sites presenta un significativo deterioramento delle prestazioni. (FORMS-13791)
-* Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. (CQDOC-21355)
+* In un modulo adattivo basato su un XDP con script incorporati nelle caselle di controllo, gli script non vengono eseguiti per gli elementi che seguono tali caselle di controllo. Per questo problema è disponibile un hotfix. Per scaricare e installare l’hotfix, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (FORMS-14244)
+* Le righe nel widget del selettore data vengono troncate quando si attraversano i mesi nel widget popup per i campi con pattern di modifica/visualizzazione. Per questo problema è disponibile un hotfix. Per scaricare e installare l’hotfix, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (FORMS-13620)
+* L’invio dei moduli non riesce quando si tenta di utilizzare il servizio DOR (Document of Record) nel back-end. Messaggio di errore: &quot;Impossibile completare l&#39;azione di invio perché la risorsa del modulo non è assegnata correttamente&quot;. Per scaricare e installare l’hotfix, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (FORMS-13798)
+* Quando un modulo adattivo viene inviato da un’istanza Adobe Experience Manager Publish a un flusso di lavoro Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati. Per scaricare e installare l’hotfix, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md)  (FORMS-14209)
+* Durante l’installazione del pacchetto AEM 6.5 Forms Service Pack 20 (pacchetto del componente aggiuntivo AEM Forms per SP20), l’interfaccia utente di AEM Sites presenta un significativo deterioramento delle prestazioni. Per scaricare e installare l’hotfix, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md)  (FORMS-13791)
+* Il servizio di precompilazione ha esito negativo con un’eccezione NPE nelle comunicazioni interattive. Per scaricare e installare l’hotfix, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (CQDOC-21355)
 * Forms adattivo consente di utilizzare funzioni personalizzate con ECMAScript versione 5 o precedente. Quando una funzione personalizzata utilizza ECMAScript versione 6 o successiva, ad esempio le funzioni &#39;let&#39;, &#39;const&#39; o freccia, è possibile che l&#39;editor di regole non si apra correttamente.
 * Gli utenti non possono creare una lettera di Gestione della corrispondenza. Quando un utente crea una lettera, viene visualizzato un errore con la descrizione &quot;`Object Object`&quot; e la lettera non viene creata. Non è possibile caricare le miniature per i layout nemmeno nella schermata di creazione della lettera. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) per risolvere il problema. (FORMS-13496)
 * Il servizio di comunicazione interattiva crea il documento PDF, ma i dati dell&#39;utente non vengono inseriti automaticamente nei campi del modulo. Il servizio di preriempimento non funziona come previsto. È possibile installare [ultimo AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) per risolvere il problema. (FORMS-13413, FORMS-13493)
@@ -530,11 +530,6 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 1. Stop the application server.
 
 -->
-* In un modulo adattivo basato su un XDP con script incorporati nelle caselle di controllo, gli script non vengono eseguiti per gli elementi che seguono tali caselle di controllo. (FORMS-14244)
-* Le righe nel widget del selettore data vengono troncate quando si attraversano i mesi nel widget popup per i campi con pattern di modifica/visualizzazione. (FORMS-13620)
-* L’invio dei moduli non riesce quando si tenta di utilizzare il servizio DOR (Document of Record) nel back-end. Messaggio di errore: &quot;Impossibile completare l&#39;azione di invio perché la risorsa del modulo non è assegnata correttamente&quot;. (FORMS-13798)
-* Quando un modulo adattivo viene inviato da un’istanza Adobe Experience Manager Publish a un flusso di lavoro Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati. (FORMS-14209)
-* Durante l’installazione del pacchetto AEM 6.5 Forms Service Pack 20 (pacchetto del componente aggiuntivo AEM Forms per SP20), l’interfaccia utente di AEM Sites presenta un significativo deterioramento delle prestazioni. (FORMS-13791)
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
