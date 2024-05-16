@@ -10,7 +10,7 @@ exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -183,13 +183,13 @@ Di seguito è riportato un esempio per la creazione di un certificato autofirmat
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-Converti la chiave privata in formato DER. Questo perché la procedura guidata SSL richiede che la chiave sia in formato DER:
+1. Converti la chiave privata in formato DER. Questo perché la procedura guidata SSL richiede che la chiave sia in formato DER:
 
-```shell
-openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
-```
+   ```shell
+   openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
+   ```
 
-Infine, carica il **localhostprivate.der** come chiave privata e **localhost.crt** come descritto all’inizio di questa pagina nel certificato SSL/TLS nel passaggio 2 della procedura guidata SSL/TLS grafica.
+1. Infine, carica il **localhostprivate.der** come chiave privata e **localhost.crt** come descritto all’inizio di questa pagina nel certificato SSL/TLS nel passaggio 2 della procedura guidata SSL/TLS grafica.
 
 ### Aggiornamento della configurazione SSL/TLS tramite cURL {#updating-the-ssl-tls-configuration-via-curl}
 
