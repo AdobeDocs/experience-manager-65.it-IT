@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2335'
 ht-degree: 19%
 
 ---
@@ -46,7 +46,7 @@ Vedi anche [Note sulla versione più recente del Service Pack di Adobe Experienc
 
 ## AEM 6.5, Service Pack 18 - 24 agosto 2023
 
-* Risorse, Dynamic Medie - [Supporto di tracce multi-sottotitolo e multi-audio per video in Dynamic Medie](/help/assets/video.md#about-msma)- È ora possibile aggiungere facilmente più sottotitoli e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
+* Risorse, Dynamic Medie - [Supporto di didascalie multiple e tracce audio per video in Dynamic Medie](/help/assets/video.md#about-msma)- È ora possibile aggiungere facilmente più sottotitoli e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
 * Risorse: dai risultati della ricerca, ora puoi passare alla posizione della cartella che contiene una risorsa per eseguire varie attività di gestione delle risorse.
 * Il selettore Polaris di Sites nei frammenti di contenuto ha migliorato le prestazioni.
 * Abilitazione dell’utente del componente Editor pagina/immagine di Sites per fare riferimento alle risorse dal Cloud Service di risorse remoto.
