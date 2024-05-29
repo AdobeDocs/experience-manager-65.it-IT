@@ -10,38 +10,14 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1438'
 ht-degree: 41%
 
 ---
 
 # Esportazione di frammenti di esperienza in Adobe Target{#exporting-experience-fragments-to-adobe-target}
-
->[!CAUTION]
->
->Alcune funzionalità in questa pagina richiedono l’applicazione della versione 6.5.3.0 (o successiva) dell’AEM.
->
->6.5.3.0:
->
->* **Domini esternalizzazione** ora è possibile selezionare.
->  **Nota:** I domini esternalizzatori sono rilevanti solo per il contenuto del Frammento di esperienza inviato a Target e non per i metadati come Visualizza contenuto offerta.
->
->6.5.2.0:
->
->* I frammenti di esperienza possono essere esportati in:
->
->   * l&#39;area di lavoro predefinita.
->   * un’area di lavoro denominata, specificata in Configurazione cloud.
->   * **Nota:** L’esportazione in aree di lavoro specifiche richiede Adobe Target Premium.
->
->* L’AEM deve essere [integrato con Adobe Target tramite IMS](/help/sites-administering/integration-target-ims.md).
->
->AEM 6.5.0.0 e 6.5.1.0:
->
->* I Frammenti di esperienza AEM vengono esportati nell’area di lavoro predefinita di Adobe Target.
->* AEM deve essere integrato con Adobe Target secondo le istruzioni contenute in [Integrazione con Adobe Target](/help/sites-administering/target.md).
 
 Puoi esportare [Frammenti esperienza](/help/sites-authoring/experience-fragments.md), creato in Adobe Experience Manager (AEM), ad Adobe Target (Target). Possono quindi essere utilizzate come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
 
@@ -51,7 +27,13 @@ Sono disponibili tre opzioni di formato per esportare un frammento di esperienza
 * JSON: supporto per la distribuzione di contenuti headless
 * HTML e JSON
 
-I Frammenti esperienza AEM possono essere esportati nell’area di lavoro predefinita in Adobe Target o in aree di lavoro definite dall’utente per Adobe Target. Questa operazione viene eseguita utilizzando la console Adobe Developer, per la quale è necessario disporre di AEM [integrato con Adobe Target tramite IMS](/help/sites-administering/integration-target-ims.md).
+I Frammenti esperienza AEM possono essere esportati nell’area di lavoro predefinita in Adobe Target o in aree di lavoro definite dall’utente per Adobe Target. Questa operazione viene eseguita utilizzando la console Adobe Developer, per la quale è necessario disporre di AEM [integrato con Adobe Target tramite IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+>[!NOTE]
+>
+>[Le integrazioni IMS ora sono configurate con OAuth S2S](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+>
+>Le configurazioni precedenti sono state effettuate con [Credenziali JWT ora obsolete nella console Adobe Developer](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -71,14 +53,17 @@ I Frammenti esperienza AEM possono essere esportati nell’area di lavoro predef
 
 ## Prerequisiti {#prerequisites}
 
->[!CAUTION]
->
->Alcune funzionalità in questa pagina richiedono l’applicazione della versione 6.5.3.0 dell’AEM.
-
 Sono necessarie diverse azioni:
 
-1. Devi [integrare AEM con Adobe Target utilizzando IMS](/help/sites-administering/integration-target-ims.md).
-2. I frammenti di esperienza vengono esportati dall’istanza di authoring dell’AEM, pertanto devi [Configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) sull’istanza di authoring per garantire che tutti i riferimenti all’interno del frammento di esperienza siano esternalizzati per la distribuzione web.
+1. Devi [integrare AEM con Adobe Target utilizzando IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+   >[!NOTE]
+   >
+   >[Le integrazioni IMS ora sono configurate con OAut S2S](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >
+   >Le configurazioni precedenti sono state effettuate con [Credenziali JWT ora obsolete nella console Adobe Developer](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+1. I frammenti di esperienza vengono esportati dall’istanza di authoring dell’AEM, pertanto devi [Configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) sull’istanza di authoring per garantire che tutti i riferimenti all’interno del frammento di esperienza siano esternalizzati per la distribuzione web.
 
    >[!NOTE]
    >

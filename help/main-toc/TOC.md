@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: 9bacc16657c83329ff7b02dc8b233908e9deb2e1
+source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7400'
 ht-degree: 20%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 20%
    + [Mappatura personalizzata dei gruppi di utenti in AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Supporto per i cookie dello stesso sito](/help/sites-administering/same-site-cookie-support.md)
    + [Credenziali JWT in Adobe Developer Console obsolete](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Configurazione delle integrazioni IMS per l’AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + Authoring {#authoring}
       + Attività, strumenti e concetti essenziali per l’authoring AEM {#essentials}
@@ -226,7 +227,6 @@ ht-degree: 20%
          + [Configurazione del tracciamento dei collegamenti per Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
          + [Mappatura dei dati dei componenti con le proprietà di Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
          + [Configurazione del tracciamento video per Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-         + [Integrazione con Adobe Analytics tramite IMS](/help/sites-administering/integration-analytics-ims.md)
          + [Domande frequenti sulla distribuzione dei contenuti HTTP2](/help/sites-administering/scene7-http2faq.md)
          + [Risoluzione dei problemi di integrazione Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
          + [Licenze del connettore SharePoint, avvisi sul copyright e liberatorie](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -250,7 +250,6 @@ ht-degree: 20%
          + [Integrazione con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
          + [Configurazione manuale dell’integrazione con Adobe Target](/help/sites-administering/target-configuring.md)
          + [Prerequisiti per l’integrazione con Adobe Target](/help/sites-administering/target-requirements.md)
-         + [Integrazione con Adobe Target tramite IMS](/help/sites-administering/integration-target-ims.md)
          + [Classificazioni Adobe](/help/sites-administering/adobeanalytics-classifications.md)
          + [Integrazione delle soluzioni](/help/sites-administering/integration.md)
          + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-administering/experience-fragments-target.md)
@@ -1292,7 +1291,7 @@ ht-degree: 20%
          + [Concetti di base dell’AEM](/help/sites-developing/the-basics.md)
          + [Struttura dell’interfaccia utente touch dell’AEM](/help/sites-developing/touch-ui-structure.md)
          + [Concetti dell’interfaccia touch dell’AEM](/help/sites-developing/touch-ui-concepts.md)
-         + [Sviluppo AEM - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md)
+         + [Sviluppo AEM: linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md)
          + [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md)
          + [Sviluppo e differenze tra pagine](/help/sites-developing/pagediff.md)
          + [Limitazioni per l’editor](/help/sites-developing/editor-limitations.md)
@@ -1488,7 +1487,7 @@ ht-degree: 20%
             + [Personalizzazione del framework Adobe Analytics](/help/sites-developing/extending-analytics-framework.md)
             + [Implementazione della denominazione delle pagine lato server per Analytics](/help/sites-developing/extending-analytics-pa-naming.md)
          + Cloud Services{#extending-cloud-services}
-            + [Configurazioni servizi cloud](/help/sites-developing/extending-cloud-config.md)
+            + [Configurazioni Cloud Service](/help/sites-developing/extending-cloud-config.md)
             + [Creazione di un Cloud Service personalizzato](/help/sites-developing/extending-cloud-config-custom-cloud.md)
          + [Creazione di estensioni personalizzate](/help/sites-developing/extending-campaign-extensions.md)
          + Forms{#extending-forms}
