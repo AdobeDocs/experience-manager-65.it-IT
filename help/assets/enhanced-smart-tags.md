@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1575'
 ht-degree: 2%
 
 ---
@@ -194,3 +194,9 @@ Puoi anche assegnare una classificazione più alta a un tag per aumentarne la ri
 * L’utilizzo di Smart Content Services è limitato a un massimo di 2 milioni di immagini con tag all’anno. Tutte le immagini duplicate che vengono elaborate e taggate vengono conteggiate come immagini taggate.
 * Se esegui il flusso di lavoro sui tag dalla timeline, puoi applicare tag a un massimo di 15 risorse alla volta.
 * I tag avanzati funzionano solo per i formati immagine PNG e JPG. Pertanto, le risorse supportate con rappresentazioni create in questi due formati vengono contrassegnate con tag avanzati.
+
+>[!MORELIKETHIS]
+>
+>* [Panoramica e modalità di formazione dei tag avanzati](enhanced-smart-tags.md)
+>* [Configurare l’assegnazione tag avanzati](config-smart-tagging.md)
+>* [Tutorial video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
