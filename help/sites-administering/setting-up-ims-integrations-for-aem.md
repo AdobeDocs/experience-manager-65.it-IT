@@ -1,21 +1,20 @@
 ---
 title: Configurazione delle integrazioni IMS per l’AEM
 description: Scopri come impostare le integrazioni IMS per l’AEM
-source-git-commit: 8540b1af3c0779f692f829d4c61112d36bd81a00
+source-git-commit: bca98907b79f12572879273ece41ec8d82fed1b8
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 90%
+source-wordcount: '438'
+ht-degree: 79%
 
 ---
 
 
 # Configurazione delle integrazioni IMS per l’AEM {#setting-up-ims-integrations-for-aem}
 
-<!--
 
 >[!NOTE]
 >
->Adobe customers use [Adobe Developer Console](https://developer.adobe.com/console) to generate credentials that enable access to various APIs. Customers select from various credential types ranging from OAuth Server-to-Server to Single-Page App. One of those credential types, Service Account (JWT) credentials, has been deprecated in favor of the OAuth Server-to-Server credentials with Service Pack 20. This change can be back ported to older Service Packs, starting with Service Pack 11 up to Service Pack 20 with the use of a hotfix that you can download here. -->
+>[Adobe Developer Console](https://developer.adobe.com/console) viene utilizzato per generare credenziali che consentano l’accesso a varie API. È possibile scegliere tra vari tipi di credenziali, da server a server OAuth ad applicazione a pagina singola. Uno di questi tipi di credenziali, le credenziali dell’account di servizio (JWT), è stato dichiarato obsoleto a favore delle credenziali server-to-server OAuth con Service Pack 20. È possibile eseguire il back port di questa modifica nei Service Pack precedenti, a partire da Service Pack 11 fino a Service Pack 20 con l&#39;utilizzo di un hotfix che è possibile scaricare [qui](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager (AEM) può essere integrato con molte altre soluzioni Adobi. Ad esempio, Adobe Target, Adobe Analytics e altre.
 
