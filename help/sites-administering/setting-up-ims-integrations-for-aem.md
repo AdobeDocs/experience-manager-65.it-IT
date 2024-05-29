@@ -1,19 +1,21 @@
 ---
 title: Configurazione delle integrazioni IMS per l’AEM
 description: Scopri come impostare le integrazioni IMS per l’AEM
-source-git-commit: ea7454fa57d503eb12efe5074c8a82ab3d8e280b
+source-git-commit: 8540b1af3c0779f692f829d4c61112d36bd81a00
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 80%
+source-wordcount: '354'
+ht-degree: 90%
 
 ---
 
 
 # Configurazione delle integrazioni IMS per l’AEM {#setting-up-ims-integrations-for-aem}
 
+<!--
+
 >[!NOTE]
 >
->[Adobe Developer Console](https://developer.adobe.com/console) viene utilizzato per generare credenziali che consentano l’accesso a varie API. È possibile scegliere tra vari tipi di credenziali, da server a server OAuth ad applicazione a pagina singola. Uno di questi tipi di credenziali, le credenziali dell’account di servizio (JWT), è stato dichiarato obsoleto a favore delle credenziali server-to-server OAuth con Service Pack 20. È possibile eseguire il porting di questa modifica nei Service Pack precedenti, a partire da Service Pack 11 fino a Service Pack 20 con l&#39;utilizzo di un hotfix che è possibile scaricare qui.
+>Adobe customers use [Adobe Developer Console](https://developer.adobe.com/console) to generate credentials that enable access to various APIs. Customers select from various credential types ranging from OAuth Server-to-Server to Single-Page App. One of those credential types, Service Account (JWT) credentials, has been deprecated in favor of the OAuth Server-to-Server credentials with Service Pack 20. This change can be back ported to older Service Packs, starting with Service Pack 11 up to Service Pack 20 with the use of a hotfix that you can download here. -->
 
 Adobe Experience Manager (AEM) può essere integrato con molte altre soluzioni Adobi. Ad esempio, Adobe Target, Adobe Analytics e altre.
 
