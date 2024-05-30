@@ -6,7 +6,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 17a8dc53d77dfbc3dc3a4dc2f2176eaba3e1cb7c
+source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 26%
@@ -338,5 +338,5 @@ Per verificare se il Servizio di contenuti avanzati è stato addestrato sui tag 
 >[!MORELIKETHIS]
 >
 >* [Panoramica e modalità di formazione dei tag avanzati](enhanced-smart-tags.md)
->* [Risoluzione dei problemi di smart tag per le credenziali OAuth](config-smart-tagging.md)
+>* [Risoluzione dei problemi di smart tag per le credenziali OAuth](config-oauth.md)
 >* [Tutorial video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
