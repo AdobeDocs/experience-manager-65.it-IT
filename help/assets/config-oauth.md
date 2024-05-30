@@ -4,9 +4,9 @@ description: Scopri come configurare l’assegnazione tag avanzati e l’assegna
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 109a608db0724050f6e505394da9138855ba992e
+source-git-commit: d8d821a64b39b312168733126de8929c04016ff1
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1034'
 ht-degree: 17%
 
 ---
@@ -41,7 +41,9 @@ Una configurazione OAuth richiede i seguenti prerequisiti:
    * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
-### Configurare OAuth per gli utenti locali {#steps-config-oauth-onprem}
+### Configurazione OAuth per gli utenti AMS esistenti e On-Prem {#steps-config-oauth-onprem}
+
+I seguenti passaggi possono essere eseguiti dall’amministratore di sistema. Il cliente AMS può contattare il rappresentante di Adobe o inviare un ticket di supporto dopo il [processo di supporto](https://experienceleague.adobe.com/?lang=it&amp;support-tab=home#support).
 
 1. Aggiungi o aggiorna le seguenti proprietà in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -52,14 +54,17 @@ Una configurazione OAuth richiede i seguenti prerequisiti:
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Aggiornare il `auth.token.provider.client.id` con l’ID client della nuova configurazione OAuth.
    * Aggiorna `auth.access.token.request` a `"https://ims-na1.adobelogin.com/ims/token/v3"`
-2. Rinomina il file in `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
-3. Effettua i passaggi seguenti in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
+1. Rinomina il file in `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+1. Effettua i passaggi seguenti in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
    * Aggiorna la proprietà auth.ims.client.secret con il segreto client dalla nuova integrazione OAuth.
    * Rinomina il file in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
-4. Salva tutte le modifiche nella console di sviluppo dell’archivio dei contenuti, ad esempio CRXDE.
-5. Accedi a `/system/console/configMgr` e sostituisci la configurazione OSGi da `.<randomnumber>` a `-<randomnumber>`.
-6. Elimina la vecchia configurazione OSGi per `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
-7. Riavvia la console.
+1. Salva tutte le modifiche nella console di sviluppo dell’archivio dei contenuti, ad esempio CRXDE.
+<!--
+1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
+1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
+-->
+1. In entrata `System/console/configMgr`, elimina le vecchie configurazioni per `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` e nome del provider del token di accesso `adobe-ims-similaritysearch`.
+1. Riavvia la console.
 
 ## Convalidare la configurazione {#validate-the-configuration}
 
