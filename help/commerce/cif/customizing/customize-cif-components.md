@@ -5,7 +5,7 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 54f2b7fda39f97c4f8a1d28ac51b7b998bf8e4a1
+source-git-commit: ddd411a5dde57cf66cbcb458578b0aa32139b649
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 11%
@@ -50,7 +50,7 @@ Clonare [Progetto Venia](https://github.com/adobe/aem-cif-guides-venia) e quindi
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Aggiungi le configurazioni OSGi necessarie per collegare l’istanza AEM a un’istanza Adobe Commerce o aggiungere le configurazioni al progetto appena creato.
@@ -392,7 +392,7 @@ In questo caso, desideri applicare un banner sopra il teaser per indicare che il
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Apri una nuova finestra del browser e passa a AEM e al **Console OSGi** > **Stato** > **Modelli Sling**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -471,7 +471,7 @@ A questo punto, la logica per la visualizzazione del **Rispettoso dell&#39;ambie
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Aggiorna a **Home page Venia** a [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) in cui è stato aggiunto il Product Teaser.
