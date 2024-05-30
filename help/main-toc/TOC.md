@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
+source-git-commit: 671d35086981b5967c28b399050aef0e070ecddf
 workflow-type: tm+mt
-source-wordcount: '7400'
+source-wordcount: '7406'
 ht-degree: 20%
 
 ---
@@ -351,6 +351,7 @@ ht-degree: 20%
       + [Anteprima delle risorse 3D](/help/assets/previewing-3d-assets.md)
       + [Esaminare raccolte e risorse delle cartelle](/help/assets/bulk-approval.md)
       + [Sono stati migliorati i tag avanzati](/help/assets/enhanced-smart-tags.md)
+      + [Risoluzione dei problemi di smart tag per le credenziali OAuth](/help/assets/config-oauth.md)
       + [Flusso di attività nella timeline](/help/assets/activity-stream.md)
       + [Elabora risorse](/help/assets/assets-workflow.md)
       + [Aggiungere mappe immagine](/help/assets/image-maps.md)
