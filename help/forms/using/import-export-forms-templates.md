@@ -8,9 +8,9 @@ docset: aem65
 role: Admin,User
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 0e2c9c911ae824c55d958180a84f23079bae8263
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2508'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Non è possibile scaricare moduli adattivi, comunicazioni interattive, frammenti
 
 Per caricare le risorse Forms e Documents:
 
->[!VIDEO](https://vimeo.com/)
+<!--[!VIDEO](https://vimeo.com/)-->
 
 1. Accedi all’istanza di AEM Forms.
 1. Seleziona Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/compass.png) icon> Forms> Forms e documenti.
