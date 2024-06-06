@@ -8,7 +8,7 @@ docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: c49bff425ccbd00480e5b17fa50ca8f25df80d2f
 workflow-type: tm+mt
 source-wordcount: '4010'
 ht-degree: 0%
@@ -545,6 +545,26 @@ Per ulteriori informazioni, vedere:
 - [Requisiti di sistema per un’implementazione AEM Forms su JEE per un singolo server](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
 - [Requisiti di sistema per un’implementazione cluster di AEM Forms su JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
+### ADOBE ACROBAT e ADOBE READER {#adobe-acrobat-and-adobe-reader}
+
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Acrobat e Adobe Reader (base)</strong></p> </th>
+   <th><p><strong>Definizioni di patch supportate</strong></p> </th>
+  </tr>
+  <tr>
+   <td>Acrobat 2020 (brano classico)</td>
+   <td>Versione 20.004.30006 o successiva<br /> </td>
+  </tr>
+
+</tbody>
+</table>
+
+>[!NOTE]
+>
+>La famiglia di prodotti Acrobat DC introduce due tracce per Acrobat e Reader che sono prodotti diversi: &quot;Classic&quot; e &quot;Continuous&quot;. Per maggiori dettagli e un confronto tra i due brani, vedere [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+
 ## Client supportati per AEM Forms su JEE {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
@@ -591,26 +611,6 @@ Per ulteriori informazioni, vedere:
 - Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 - Privilegi amministrativi per installare Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 o versione successiva), runtime a 32 bit
-
-### ADOBE ACROBAT e ADOBE READER {#adobe-acrobat-and-adobe-reader}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Acrobat e Adobe Reader (base)</strong></p> </th>
-   <th><p><strong>Definizioni di patch supportate</strong></p> </th>
-  </tr>
-  <tr>
-   <td>Acrobat 2020 (brano classico)</td>
-   <td>Versione 20.004.30006 o successiva<br /> </td>
-  </tr>
-
-</tbody>
-</table>
-
->[!NOTE]
->
->La famiglia di prodotti Acrobat DC introduce due tracce per Acrobat e Reader che sono prodotti diversi: &quot;Classic&quot; e &quot;Continuous&quot;. Per maggiori dettagli e un confronto tra i due brani, vedere [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### Browser {#browsers}
 
