@@ -10,9 +10,9 @@ role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3232'
 ht-degree: 6%
 
 ---
@@ -119,7 +119,7 @@ I componenti Dynamic Medie disponibili includono:
 
 ### Componente Dynamic Medie {#dynamic-media-component}
 
-Il componente Dynamic Medie è intelligente. Sia che si aggiunga un&#39;immagine o un video, sono disponibili varie opzioni. Il componente supporta predefiniti per immagini, visualizzatori basati su immagini come set di immagini, set 360 gradi, set di file multimediali diversi e video. Inoltre, il visualizzatore è reattivo: le dimensioni dello schermo cambiano automaticamente in base alle dimensioni sullo schermo. Tutti i visualizzatori sono visualizzatori HTML5.
+Il componente Dynamic Medie è intelligente. Sia che si aggiunga un&#39;immagine o un video, sono disponibili varie opzioni. Il componente supporta i predefiniti per immagini, i visualizzatori basati su immagini come i set di immagini, i set 360 gradi, i set di file multimediali diversi e i video. Inoltre, il visualizzatore è reattivo: le dimensioni dello schermo cambiano automaticamente in base alle dimensioni sullo schermo. Tutti i visualizzatori sono visualizzatori HTML5.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Modifica le seguenti impostazioni di Dynamic Medie selezionando **[!UICONTROL Mo
 
   Questa opzione è l&#39;unica disponibile se visualizzi set di immagini, set 360 gradi o set di file multimediali diversi. I predefiniti visualizzatore visualizzati sono intelligenti: vengono visualizzati solo i predefiniti visualizzatore rilevanti.
 
-* **[!UICONTROL Modificatori visualizzatore]** - I modificatori visualizzatore si presentano come coppia nome=valore con delimitatore &amp; e consentono di modificare i visualizzatori come descritto nella Guida di riferimento visualizzatori. Un esempio di modificatore di visualizzatore è `posterimage=img.jpg&caption=text.vtt,1` che imposta un&#39;immagine diversa per la miniatura del video e associa al video un file di sottotitoli/sottotitoli codificati.
+* **[!UICONTROL Modificatori visualizzatore]** - I modificatori visualizzatore si presentano come coppia nome=valore con delimitatore &amp; e consentono di modificare i visualizzatori come descritto nella Guida di riferimento visualizzatori. Un esempio di modificatore di visualizzatore è `posterimage=img.jpg&caption=text.vtt,1` che imposta un&#39;immagine diversa per la miniatura del video e associa al video un file di sottotitoli codificati.
 
 * **[!UICONTROL Predefinito immagine]** : seleziona un predefinito immagine esistente dal menu a discesa. Se il predefinito immagine che state cercando non è visibile, dovete renderlo visibile. Consulta Gestione dei predefiniti per immagini. Non è possibile selezionare un predefinito visualizzatore se si utilizza un predefinito immagine e viceversa.
 
@@ -187,13 +187,13 @@ Modifica le seguenti impostazioni di Dynamic Medie selezionando **[!UICONTROL Mo
 
   Questa opzione non è disponibile se visualizzi set di immagini, set 360 gradi o set di file multimediali diversi.
 
-* **[!UICONTROL URL, Apri in]** - È possibile impostare una risorsa per aprire un collegamento. Imposta l’URL e in Apri in indicano se desideri aprirlo nella stessa finestra o in una nuova finestra.
+* **[!UICONTROL URL, Apri in]** - È possibile impostare una risorsa per aprire un collegamento. Impostare l’URL e in **Apri in** indicare se si desidera aprirlo nella stessa finestra o in una nuova finestra.
 
   Questa opzione non è disponibile se visualizzi set di immagini, set 360 gradi o set di file multimediali diversi.
 
-* **[!UICONTROL Larghezza]** - Immettete il valore in pixel se desiderate che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]** - Inserisci il valore in pixel se vuoi che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]** - Immettete il valore in pixel se desiderate che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]** - Inserisci il valore in pixel se vuoi che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
 #### Quando si lavora con video {#when-working-with-video}
 
@@ -220,9 +220,9 @@ Modifica le seguenti impostazioni di Dynamic Medie selezionando **[!UICONTROL Mo
 
 * **[!UICONTROL Titolo]** - Modifica il titolo del video.
 
-* **[!UICONTROL Larghezza]** - Immettete il valore in pixel se desiderate che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]** - Inserisci il valore in pixel se vuoi che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]** - Immettete il valore in pixel se desiderate che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]** - Inserisci il valore in pixel se vuoi che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
 #### Quando si lavora con Ritaglio avanzato {#when-working-with-smart-crop}
 
@@ -250,7 +250,7 @@ Modifica la seguente impostazione di Dynamic Medie selezionando **[!UICONTROL Mo
 
   Il **[!UICONTROL Ottimizza per dispositivi ad alta risoluzione]** L&#39;opzione viene visualizzata solo quando è vero quanto segue:
 
-   * In Tipo di predefinito, **[!UICONTROL Ritaglio avanzato]** è selezionata.
+   * In Tipo di predefinito, la **[!UICONTROL Ritaglio avanzato]** è selezionata.
 
   ![impostazione delle proporzioni pixel del dispositivo per il ritaglio avanzato](/help/assets/assets-dm/dpr-smartcrop.png)
 
@@ -266,13 +266,13 @@ Modifica la seguente impostazione di Dynamic Medie selezionando **[!UICONTROL Mo
 
   Questa opzione non è disponibile se visualizzi set di immagini, set 360 gradi o set di file multimediali diversi.
 
-* **[!UICONTROL Larghezza]** - Immettete il valore in pixel se desiderate che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]** - Inserisci il valore in pixel se vuoi che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]** - Immettete il valore in pixel se desiderate che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]** - Inserisci il valore in pixel se vuoi che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
 ### Componente per contenuti multimediali interattivi {#interactive-media-component}
 
-Il componente Contenuti multimediali interattivi è destinato alle risorse che presentano interattività, come punti attivi o mappe immagine. Se hai un&#39;immagine interattiva, un video interattivo o un banner a carosello, utilizza **[!UICONTROL File multimediali interattivi]** componente.
+Il componente Contenuti multimediali interattivi è destinato alle risorse che presentano interattività, ad esempio punti attivi o mappe immagine. Se hai un&#39;immagine interattiva, un video interattivo o un banner a carosello, utilizza **[!UICONTROL File multimediali interattivi]** componente.
 
 Il componente File multimediali interattivi è intelligente. Sia che si aggiunga un&#39;immagine o un video, sono disponibili varie opzioni. Inoltre, il visualizzatore è reattivo: le dimensioni dello schermo cambiano automaticamente in base alle dimensioni sullo schermo. Tutti i visualizzatori sono visualizzatori HTML5.
 
@@ -295,17 +295,17 @@ Il componente File multimediali interattivi è intelligente. Sia che si aggiunga
 
 * **[!UICONTROL Titolo]** - Modifica il titolo del video.
 
-* **[!UICONTROL Larghezza]** - Immettete il valore in pixel se desiderate che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]** - Inserisci il valore in pixel se vuoi che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]** - Immettete il valore in pixel se desiderate che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]** - Inserisci il valore in pixel se vuoi che l&#39;immagine abbia una dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
   È possibile modificare quanto segue **[!UICONTROL Aggiungi al carrello]** impostazioni selezionando **[!UICONTROL Modifica]** nel componente.
 
-* **[!UICONTROL Mostra risorsa prodotto]** - Per impostazione predefinita, questo valore è selezionato. La risorsa prodotto mostra un’immagine del prodotto come definito nel modulo Commerce. Per non visualizzare la risorsa del prodotto, deseleziona questa opzione.
+* **[!UICONTROL Mostra risorsa prodotto]** - Per impostazione predefinita, questo valore è selezionato. La risorsa prodotto mostra un’immagine del prodotto come definito nel modulo Commerce. Deseleziona il segno di spunta in modo che la risorsa del prodotto non venga visualizzata.
 
-* **[!UICONTROL Mostra prezzo prodotto]** - Per impostazione predefinita, questo valore è selezionato. Nel campo Prezzo prodotto viene visualizzato il prezzo dell&#39;articolo definito nel modulo Commerce. Deselezionare il segno di spunta per non visualizzare il prezzo del prodotto.
+* **[!UICONTROL Mostra prezzo prodotto]** - Per impostazione predefinita, questo valore è selezionato. Nel campo Prezzo prodotto viene visualizzato il prezzo dell&#39;articolo definito nel modulo Commerce. Deselezionare il segno di spunta in modo che il prezzo del prodotto non venga visualizzato.
 
-* **[!UICONTROL Mostra modulo prodotto]** - Per impostazione predefinita, questo valore non è selezionato. Il Modulo prodotto include qualsiasi variante di prodotto, ad esempio dimensioni e colore. Deseleziona il segno di spunta per non mostrare le varianti prodotto.
+* **[!UICONTROL Mostra modulo prodotto]** - Per impostazione predefinita, questo valore non è selezionato. Il Modulo prodotto include qualsiasi variante di prodotto, ad esempio dimensioni e colore. Deseleziona il segno di spunta in modo che le varianti del prodotto non vengano visualizzate.
 
 ### Componente elemento multimediale panoramico {#panoramic-media-component}
 
@@ -333,7 +333,7 @@ Puoi modificare la seguente impostazione selezionando **[!UICONTROL Configura]**
 
 * **[!UICONTROL Predefinito visualizzatore]** - Selezionate un visualizzatore esistente dal menu a discesa Predefinito visualizzatore.
 
-Se il predefinito visualizzatore che stai cercando non è visibile, controlla che sia pubblicato. Pubblica i predefiniti visualizzatore prima di utilizzarli. Consulta [Gestione dei predefiniti per i visualizzatori](/help/assets/managing-viewer-presets.md).
+Se il predefinito visualizzatore che stavi cercando non è visibile, controlla che sia pubblicato. Pubblica i predefiniti visualizzatore prima di utilizzarli. Consulta [Gestione dei predefiniti per i visualizzatori](/help/assets/managing-viewer-presets.md).
 
 ### Componente per contenuti video 360 {#video-media-component}
 
@@ -347,13 +347,13 @@ Il visualizzatore include il supporto nativo per la distribuzione di 360 risorse
 
 Puoi modificare la seguente impostazione selezionando **[!UICONTROL Configura]** nel componente.
 
-* **[!UICONTROL Predefinito visualizzatore]** - Selezionate un visualizzatore esistente dal menu a discesa Predefinito visualizzatore. Utilizzare Video360VR per gli utenti finali che utilizzano occhiali di realtà virtuale. Include controlli di riproduzione video di base e funzioni per social media. Utilizza Video360_social, che include controlli di base per la riproduzione di video. Il rendering video viene eseguito in modalità stereo. Il controllo manuale del punto di vista è disattivato ma il controllo giroscopico è attivato. Non sono presenti funzioni per social media.
+* **[!UICONTROL Predefinito visualizzatore]** - Selezionate un visualizzatore esistente dal menu a discesa Predefinito visualizzatore. Utilizzare `Video360VR` per gli utenti finali che utilizzano gli occhiali di realtà virtuale. Include controlli di riproduzione video di base e funzioni per social media. Utilizzare `Video360_social` che include controlli di base per la riproduzione di video. Il rendering video viene eseguito in modalità stereo. Il controllo manuale del punto di vista è disattivato ma il controllo giroscopico è attivato. Non sono presenti funzioni per social media.
 
-Se il predefinito visualizzatore che stai cercando non è visibile, controlla che sia pubblicato. Assicurati di pubblicare i predefiniti visualizzatore prima di utilizzarli. Consulta [Gestione dei predefiniti per i visualizzatori](/help/assets/managing-viewer-presets.md).
+Se il predefinito visualizzatore che stavi cercando non è visibile, controlla che sia pubblicato. Assicurati di pubblicare i predefiniti visualizzatore prima di utilizzarli. Consulta [Gestione dei predefiniti per i visualizzatori](/help/assets/managing-viewer-presets.md).
 
-### Utilizzo di HTTP/2 per la distribuzione delle risorse Dynamic Medie {#using-http-to-delivery-dynamic-media-assets}
+### Utilizzo di HTTP/2 per distribuire le risorse Dynamic Medie {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui browser e server comunicano. Consente di trasferire più rapidamente le informazioni e di ridurre la potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Medie ora può avvenire tramite HTTP/2, il che fornisce tempi di risposta e di caricamento migliori.
+HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui browser e server comunicano. Consente di trasferire più rapidamente le informazioni e di ridurre la potenza di elaborazione necessaria. La consegna delle risorse Dynamic Medie ora può avvenire tramite HTTP/2, il che offre tempi di risposta e caricamento migliori.
 
 Consulta [Distribuzione HTTP2 dei contenuti](/help/assets/http2.md) per informazioni complete su come iniziare a utilizzare HTTP/2 con il tuo account Dynamic Medie.
 
@@ -362,6 +362,6 @@ Consulta [Distribuzione HTTP2 dei contenuti](/help/assets/http2.md) per informaz
 >* [Utilizzare il lettore video in Experience Manager Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
 >* [Utilizzare il video interattivo con Experience Manager Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
 >* [Comprendere il Visualizzatore risorse con Experience Manager Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
->* [Usa miniatura video personalizzata con Experience Manager Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Usa una miniatura video personalizzata con Experience Manager Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
 >* [Comprendere la gestione del colore con Experience Manager Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html)
 >* [Utilizzo della nitidezza delle immagini con Experience Manager Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)
