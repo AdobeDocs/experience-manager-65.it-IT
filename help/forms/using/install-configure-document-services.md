@@ -5,7 +5,7 @@ topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
+source-git-commit: 7b0f8222408d43a298fa2036020963721cfbd1f9
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 1%
@@ -78,8 +78,8 @@ Prima di iniziare l’installazione e la configurazione dei servizi documentali 
 
 >[!NOTE]
 >
->* In Microsoft® Windows, PDF Generator supporta le route di conversione WebKit, Acrobat WebCapture e PhantomJS per convertire i file HTML in documenti PDF.
->* Sui sistemi operativi basati su UNIX, PDF Generator supporta le route di conversione WebKit e PhantomJS per convertire i file HTML in documenti PDF.
+>* In Microsoft® Windows, PDF Generator supporta percorsi di conversione WebKit, Acrobat WebCapture e WebToPDF per convertire i file HTML in documenti PDF.
+>* Sui sistemi operativi basati su UNIX, PDF Generator supporta le route di conversione WebKit e WebToPDF per convertire i file HTML in documenti PDF.
 >
 
 ### Requisiti aggiuntivi per sistemi operativi basati su UNIX {#extrarequirements}
@@ -168,7 +168,7 @@ Se si utilizza un sistema operativo basato su UNIX, installare i seguenti pacche
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(solo PDF Generator)** Il servizio PDF Generator supporta le route WebKit e PhantomJS per convertire i file HTML in documenti PDF. Per abilitare la conversione per la route PhantomJS, installa le librerie a 64 bit elencate di seguito. In genere, queste librerie sono già installate. Se manca una libreria, installala manualmente:
+* **(solo PDF Generator)** Il servizio PDF Generator supporta le route WebKit e WebToPDF per convertire i file HTML in documenti PDF. Per abilitare la conversione per la route WebToPDF, installare le librerie a 64 bit elencate di seguito. In genere, queste librerie sono già installate. Se manca una libreria, installala manualmente:
 
    * linux-gate.so.1
    * libz.so.1
@@ -336,7 +336,7 @@ Per evitare di ricevere l&#39;errore, è possibile disattivare la segnalazione e
 
 ### (Solo Windows) Configura conversione da HTML a PDF {#configure-html-to-pdf-conversion}
 
-Il servizio PDF Generator fornisce percorsi o metodi WebKit, WebCapture e PhantomJS per convertire i file HTML in documenti PDF. In Windows, per abilitare la conversione per le route WebKit e Acrobat WebCapture, copiare il carattere Unicode nella directory %windir%\fonts.
+Il servizio PDF Generator fornisce percorsi o metodi WebKit, WebCapture e WebToPDF per convertire i file HTML in documenti PDF. In Windows, per abilitare la conversione per le route WebKit e Acrobat WebCapture, copiare il carattere Unicode nella directory %windir%\fonts.
 
 >[!NOTE]
 >
@@ -344,7 +344,7 @@ Il servizio PDF Generator fornisce percorsi o metodi WebKit, WebCapture e Phanto
 
 ### (Solo piattaforme basate su UNIX) Configurazioni aggiuntive per la conversione da HTML a PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
-Sulle piattaforme basate su UNIX, il servizio PDF Generator supporta le route WebKit e PhantomJS per convertire i file HTML in documenti PDF. Per abilitare la conversione da HTML a PDF, esegui le seguenti configurazioni, applicabili al percorso di conversione preferito:
+Sulle piattaforme basate su UNIX, il servizio PDF Generator supporta le route WebKit e WebToPDF per convertire i file HTML in documenti PDF. Per abilitare la conversione da HTML a PDF, esegui le seguenti configurazioni, applicabili al percorso di conversione preferito:
 
 ### (Solo piattaforme basate su UNIX) Abilitazione del supporto per i caratteri Unicode (solo WebKit) {#enable-support-for-unicode-fonts-webkit-only}
 
@@ -485,7 +485,7 @@ In Microsoft® Windows, il servizio PDF Generator utilizza Adobe Acrobat per con
 
 ### (Solo per Windows) Configura la route principale per la conversione da HTML a PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-Il servizio PDF Generator fornisce più percorsi per convertire i file HTML in documenti PDF: Webkit, Acrobat WebCapture (solo Windows) e PhantomJS. L’Adobe consiglia di utilizzare la route PhantomJS perché è in grado di gestire il contenuto dinamico e non ha dipendenze da librerie a 32 bit o non richiede font aggiuntivi. Inoltre, la route PhantomJS non richiede l’accesso sudo o root per eseguire la conversione.
+Il servizio PDF Generator fornisce più percorsi per convertire i file HTML in documenti PDF: Webkit, Acrobat WebCapture (solo Windows) e WebToPDF. L&#39;Adobe consiglia di utilizzare la route WebToPDF perché è in grado di gestire il contenuto dinamico e non ha dipendenze da librerie a 32 bit o non richiede font aggiuntivi. Inoltre, la route WebToPDF non richiede l&#39;accesso sudo o root per eseguire la conversione.
 
 La route principale predefinita per la conversione da HTML a PDF è Webkit. Per modificare il percorso di conversione:
 
@@ -583,7 +583,7 @@ Dopo aver installato il componente aggiuntivo AEM Forms e Microsoft® Project su
 
 1. Accedi a `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
 
-1. Esegui il comando seguente per elencare tutte le librerie che PhantomJS richiede per la conversione da HTML a PDF.
+1. Eseguire il comando seguente per elencare tutte le librerie necessarie per la conversione da HTML a PDF.
 
    `ldd phantomjs`
 
@@ -691,11 +691,11 @@ Prima di eseguire i seguenti controlli, assicurati che [Strumento di preparazion
 
 * Assicurati che le directory dei font vengano aggiunte nell’interfaccia utente di configurazione di PDF Generator.
 
-**Linux e Solaris (percorso di conversione PhantomJS)**
+**Linux e Solaris (percorso di conversione WebToPDF)**
 
-* Assicurati che la libreria a 32 bit sia disponibile (libicudata.so.42) per la conversione HTMLToPDF basata su Webkit e che le librerie a 64 bit (libicudata.so.42 siano disponibili per la conversione HTMLToPDF basata su PhantomJS.
+* Assicurati che la libreria a 32 bit sia disponibile (libicudata.so.42) per la conversione HTMLToPDF basata su Webkit e che le librerie a 64 bit (libicudata.so.42 siano disponibili per la conversione HTMLToPDF basata su WebToPDF.
 
-* Esegui il comando seguente per elencare le librerie mancanti per phantomjs:
+* Eseguire il comando seguente per elencare le librerie mancanti per WebToPDF:
 
   ```
   ldd phantomjs | grep not
