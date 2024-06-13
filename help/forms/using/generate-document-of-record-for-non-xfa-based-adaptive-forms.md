@@ -1,18 +1,17 @@
 ---
 title: Generare un documento di record per i moduli adattivi
-description: Spiega come generare un modello per un documento di record (DoR) per i moduli adattivi.
+description: Spiega come generare un documento di record (DoR) per i moduli adattivi.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
-exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
 workflow-type: tm+mt
-source-wordcount: '4256'
-ht-degree: 1%
+source-wordcount: '4308'
+ht-degree: 2%
 
 ---
 
@@ -315,47 +314,52 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 1. Seleziona ![dortab](/help/forms/using/assets/dortab.png). Viene visualizzata la scheda Documento record.
 1. Selezionare il modello predefinito o un modello personalizzato per il rendering del documento record. Se selezioni il modello predefinito, sotto il menu a discesa Modello viene visualizzata un’anteprima in miniatura del documento di record.
 
-   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplateupdate.png)
 
    Se scegli di selezionare un modello personalizzato, sfoglia e seleziona un XDP sul server AEM Forms. Se desideri utilizzare un modello che non è già presente nel server AEM Forms, devi innanzitutto caricare XDP nel server AEM Forms.
 
-1. A seconda che si selezioni un modello predefinito o personalizzato, nella scheda Documento record vengono visualizzate alcune o tutte le proprietà seguenti. Specifica questi elementi in modo appropriato:
+### Proprietà pagina master (#master-page-properties)
 
-   * **Immagine logo**: puoi scegliere di utilizzare l’immagine del logo dal modulo adattivo, sceglierne una da DAM o caricarne una dal computer.
-   * **Titolo modulo**
-   * **Testo intestazione**
-   * **Etichetta liberatoria**
-   * **Esclusione di responsabilità**
-   * **Testo liberatoria**
-   * **Colore accento**: colore con cui vengono riprodotti il testo dell’intestazione e le righe del separatore nel PDF del documento o del record
-   * **Famiglia font**: famiglia di caratteri del testo nel documento record PDF
-   * **Per i componenti Casella di controllo e Pulsante di opzione, mostra solo i valori selezionati**
-   * **Separatore per più valori selezionati**
-   * **Includi oggetti modulo non associati al modello dati**
-   * **Escludi campi nascosti dal documento record**
-   * **Nascondi descrizione pannelli**
+Se si seleziona un modello predefinito o personalizzato, nella scheda Documento record verranno visualizzate alcune o tutte le seguenti proprietà della pagina master, come illustrato nell&#39;immagine precedente. Specifica questi elementi in modo appropriato:
 
-   Se il modello XDP personalizzato selezionato include più pagine master, le proprietà di tali pagine vengono visualizzate nel **[!UICONTROL contenuto]** sezione del **[!UICONTROL Documento record]** scheda.
+* **Immagine logo**: puoi scegliere di utilizzare l’immagine del logo dal modulo adattivo, sceglierne una da DAM o caricarne una dal computer.
+* **Titolo modulo**
+* **Testo intestazione**
+* **Etichetta liberatoria**
+* **Esclusione di responsabilità**
+* **Testo liberatoria**
 
-   ![Proprietà pagina mastro](assets/master-page-properties.png)
+  <!--
+    * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
+    * **Font Family**: Font family of the text in the document of record PDF
+    * **For Check Box and Radio Button components, show only the selected values**
+    * **Separator for multiple selected value(s)**
+    * **Include form objects that are not bound to data model**
+    * **Exclude hidden fields from the document of record**
+    * **Hide description of panels**
+    -->
 
-   Le proprietà della pagina master includono l&#39;immagine del logo, il testo dell&#39;intestazione, il titolo del modulo, l&#39;etichetta della liberatoria e il testo della liberatoria. Puoi applicare le proprietà del modulo adattivo o del modello XDP al documento di record. Per impostazione predefinita, AEM Forms applica le proprietà del modello al documento di record. È inoltre possibile definire valori personalizzati per le proprietà della pagina master. Per informazioni su come applicare più pagine master in un documento di record, vedere [Applicare più pagine master a un documento record](#apply-multiple-master-pages-dor).
+  Se il modello XDP personalizzato selezionato include più pagine master, le proprietà di tali pagine vengono visualizzate nel **[!UICONTROL contenuto]** sezione del **[!UICONTROL Documento record]** scheda.
 
-   >[!NOTE]
-   >
-   >Se utilizzi un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, accertati che nel modello di modulo adattivo nel sottomodulo principale sia presente quanto segue:
+  ![Proprietà pagina mastro](assets/master-page-properties.png)
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+  Le proprietà della pagina master includono l&#39;immagine del logo, il testo dell&#39;intestazione, il titolo del modulo, l&#39;etichetta della liberatoria e il testo della liberatoria. Puoi applicare le proprietà del modulo adattivo o del modello XDP al documento di record. Per impostazione predefinita, AEM Forms applica le proprietà del modello al documento di record. È inoltre possibile definire valori personalizzati per le proprietà della pagina master. Per informazioni su come applicare più pagine master in un documento di record, vedere [Applicare più pagine master a un documento record](#apply-multiple-master-pages-dor).
+
+  >[!NOTE]
+  >
+  >Se utilizzi un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, accertati che nel modello di modulo adattivo nel sottomodulo principale sia presente quanto segue:
+
+  ```xml
+  <proto>
+  <font typeface="Arial"/>
+  <fill>
+  <color value="4,166,203"/>
+  </fill>
+  <edge>
+  <color value="4,166,203"/>
+  </edge>
+  </proto>
+  ```
 
 1. Per salvare le modifiche di branding, selezionate Fatto (Done).
 
@@ -413,8 +417,23 @@ Per informazioni su come applicare interruzioni di pagina e più pagine master i
 
 **Impostazioni livello modulo**
 
-* **Includi campi non associati nel DoR:** L’impostazione della proprietà include campi non associati da un modulo adattivo basato su schema in un documento di record. Per impostazione predefinita è true.
-* **Escludi campi dal DoR se nascosto:** Imposta la proprietà per escludere i campi nascosti da [!UICONTROL Documento record] all’invio del modulo. Quando si abilita [Riconvalida sul server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal [!UICONTROL Documento record].
+* **[!UICONTROL BASE]**
+   * **Modello:** È possibile selezionare il modello Predefinito o Personalizzato.
+     ![testo alternativo](image.png)
+   * **Colore accento:** È possibile predefinire il colore del modello [!UICONTROL Documento record].
+   * **Famiglia font:** Seleziona tipo di carattere per [!UICONTROL Documento record] testi.
+   * **Includi campi non associati nel DoR:** L’impostazione della proprietà include campi non associati dal modulo adattivo basato su schema in [!UICONTROL Documento record]. Per impostazione predefinita è true.
+   * **Escludi campi dal DoR se nascosto:** Imposta la proprietà per escludere i campi nascosti da [!UICONTROL Documento record] all’invio del modulo. Quando si abilita [Riconvalida sul server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal [!UICONTROL Documento record]
+* **[!UICONTROL PROPRIETÀ CAMPO MODULO]**
+   * Se selezioni l’opzione **Per i componenti Casella di controllo e Pulsante di opzione, mostra solo il valore selezionato**, genera l’output DoR solo con i valori selezionati.
+   * È possibile selezionare Separatore per più valori selezionati oppure scegliere qualsiasi altro tipo di separatore.
+   * Allineamento opzioni
+      * Verticale
+      * Orizzontale
+      * Come Modulo adattivo
+     >[!NOTE]
+     > L&#39;allineamento verticale e orizzontale è applicabile solo ai pulsanti di scelta e alle caselle di controllo
+* **[!UICONTROL PROPRIETÀ PAGINA MASTER]** Fai clic per ulteriori informazioni su [Proprietà pagina mastro](#master-page-properties-master-page-properties)
 
 ## Applicare un’interruzione di pagina a un documento record {#apply-page-breaks-in-dor}
 

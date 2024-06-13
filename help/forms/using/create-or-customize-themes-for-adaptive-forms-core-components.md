@@ -9,9 +9,9 @@ role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: aa8f8ea6ec3787cd1de76a72fe05f0993c2d6b22
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1939'
 ht-degree: 5%
 
 ---
@@ -35,6 +35,10 @@ L’ambiente AEM 6.5 fornisce i temi elencati di seguito per i Forms adattivi ba
 * [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema FSI](https://github.com/adobe/aem-forms-theme-fsi)
+* [Tema Healthcare](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Tema pubblico](https://github.com/adobe/aem-forms-theme-public)
+* [Tema Manufacturing](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Struttura dei temi {#understanding-structure-of-theme}
 
@@ -57,6 +61,8 @@ AEM Forms 6.5 fornisce i temi elencati di seguito per i Componenti core basati s
 * [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema pubblico](https://github.com/adobe/aem-forms-theme-public)
+* [Tema Manufacturing](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 È possibile [personalizza uno di questi temi per creare un tema](#customize-a-theme-core-components).
 
