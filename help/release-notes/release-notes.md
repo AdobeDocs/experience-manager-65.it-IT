@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 1ba2782fcc81e5090dced4eed83a3a4911676f09
+source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
 workflow-type: tm+mt
-source-wordcount: '3819'
+source-wordcount: '3825'
 ht-degree: 2%
 
 ---
@@ -199,7 +199,7 @@ Di seguito è riportato l’elenco delle correzioni di accessibilità incluse in
 
 * Quando un utente tenta di visualizzare un modulo al caricamento della pagina, il rendering non riesce. (FORMS-13594)
 * Il componente del campo di input della data non funziona correttamente in Microsoft Edge nella modalità di compatibilità di Internet Explorer. (FORMS-13170)
-* La notifica e-mail bloccata con allegato non è stata inviata quando è stata corretta la [additional-steps-to-use-email-with-attachments](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) viene eseguito sul server. (FORMS-14227)
+* La notifica e-mail bloccata con allegato non è stata inviata quando è stata corretta la [passaggi aggiuntivi per utilizzare l’e-mail con allegati](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) viene eseguito sul server. (FORMS-14227)
 * In AEM Forms Workspace su Service Pack 18 (6.5.18.0), quando un utente aggiunge un commento a un documento caricato, il file del documento viene danneggiato. (FORMS-13735)
 * In AEM Forms Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0) o Service Pack 20 (6.5.20.0), quando un utente tenta di cercare un modulo adattivo dal pannello laterale, la ricerca non riesce. (FORMS-14117)
 * Quando un utente modifica un modulo creato in tedesco e tradotto in inglese, si verifica una visualizzazione incoerente della lingua tra le modalità &quot;Anteprima&quot; e &quot;Modifica&quot;. In questo modo, i componenti RadioButton e Checkbox vengono visualizzati in inglese durante la modalità &quot;Modifica&quot;, mentre vengono visualizzati correttamente in tedesco durante la modalità &quot;Anteprima&quot;. (FORMS-13910)
@@ -212,7 +212,7 @@ Di seguito è riportato l’elenco delle correzioni di accessibilità incluse in
    * Alcuni campi non riescono a popolare i dati tradotti.
    * Alcuni campi non vengono tradotti nella nuova lingua, anche se i dati vengono salvati correttamente nel dizionario.
 
-#### [!DNL Forms Designer] {#forms-desgner-6520}
+#### [!DNL Forms Designer] {#forms-desgner-6521}
 
 * Quando un utente aggiunge una nuova tabella a un modulo esistente utilizzando AEM Forms Designer nell’ambiente AEM Forms Service Pack 19 (6.5.19.0), si verifica un arresto anomalo. (LC-3921978)
 * Quando un utente esegue il rendering di un modulo adattivo in un ambiente Linux®, si verifica uno spazio aggiuntivo tra i componenti del campo. (LC-3921957)

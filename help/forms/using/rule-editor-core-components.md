@@ -4,20 +4,19 @@ description: L’editor di regole di Forms adattivo consente di aggiungere un co
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7e9b4cc233d4040faf61241b3cbe52d26bfdba1e
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5588'
 ht-degree: 1%
 
 ---
 
 # Aggiungere regole a un componente core modulo adattivo {#adaptive-forms-rule-editor}
 
-<span class="preview"> Questo articolo contiene informazioni su alcune funzioni precedenti al rilascio. Queste funzioni pre-release sono accessibili solo tramite [canale preliminare](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Le funzioni del programma pre-release sono:
+Questo articolo contiene le funzioni più recenti dell’Editor regole di Adaptive Forms Core Components, che sono:
 * Supporto per l’implementazione di condizioni nidificate con la funzionalità When-then-else
 * Convalidare o reimpostare pannelli e moduli, inclusi i campi
 * Supporto di funzioni JavaScript moderne, come le funzioni let e arrow (supporto ES10) all’interno delle funzioni personalizzate.
-</span>
 
 La funzione Editor regole facilita la scrittura di regole su oggetti Modulo adattivo da parte di utenti aziendali e sviluppatori di Forms. Queste regole definiscono le azioni da attivare sugli oggetti modulo in base alle condizioni preimpostate, agli input dell&#39;utente e alle azioni dell&#39;utente sul modulo. Consente di semplificare ulteriormente l’esperienza di compilazione dei moduli, garantendo precisione e velocità.
 
@@ -269,27 +268,23 @@ Il **Imposta valore di** il tipo di regola non è disponibile per tutti gli ogge
 
 Imposta il valore dell&#39;oggetto A su:
 
-(stringa ABC) O
-(proprietà oggetto X dell&#39;oggetto C) O
-(valore da una funzione) O
-(valore da un&#39;espressione matematica) O
-(valore di output di un servizio di modello dati);
+(stringa ABC) OR (proprietà dell&#39;oggetto X dell&#39;oggetto C) OR (valore di una funzione) OR (valore di un&#39;espressione matematica) OR (valore di output di un servizio di modello dati);
 
 Quando (facoltativo):
 
 (Condizione 1 E Condizione 2 E Condizione 3) è VERO;
 
-L’esempio seguente seleziona il valore di `Question2` as `True` e imposta il valore di `Result` as `correct`.
+Nell&#39;esempio seguente viene selezionato il valore di `Question2` as `True` e impostato il valore di `Result` as `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-Esempio di regola Imposta valore tramite il servizio Modello dati modulo.
+Esempio di Set Valore regola mediante l&#39;utilizzo del servizio Form Data Model.
 
-### [!UICONTROL Spettacolo] {#show}
+### [!UICONTROL Mostrare] {#show}
 
 Utilizzo di **[!UICONTROL Spettacolo]** tipo di regola, è possibile scrivere una regola per mostrare o nascondere un oggetto modulo a seconda che una condizione sia soddisfatta o meno. Il tipo di regola Mostra attiva anche l’azione Nascondi se la condizione non viene soddisfatta o restituisce `False`.
 
-Un Mostra regola tipico è strutturato come segue:
+Una regola Show tipica è strutturata come segue:
 
 `Show Object A;`
 
@@ -453,25 +448,25 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. Click **[!UICONTROL Save]**.
 -->
 
-### E. Pulsanti Fine e Annulla {#done-and-cancel-buttons}
+### E. Tasti Done e cancel {#done-and-cancel-buttons}
 
-Il **[!UICONTROL pulsante Fine]** viene utilizzato per salvare un regola. È possibile salvare un regola incompleto. Tuttavia, gli incompleti vengono non valido e non vengono eseguiti. Le regole salvate in un oggetto modulo vengono elencate quando si lanciare la regola editor successiva dallo stesso oggetto modulo. È possibile gestire regole esistenti in questa visualizzazione. Per ulteriori informazioni, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
+Il **[!UICONTROL Fine]** per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, gli incompleti vengono non valido e non vengono eseguiti. Le regole salvate in un oggetto modulo vengono elencate quando si lanciare la regola editor successiva dallo stesso oggetto modulo. È possibile gestire regole esistenti in questa visualizzazione. Per ulteriori informazioni, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
 
 Il **[!UICONTROL Annulla]** pulsante elimina tutte le modifiche apportate a un regola e chiude il regola editor.
 
-## Scrivi regole {#write-rules}
+## Scrivere regole {#write-rules}
 
-Puoi scrivere regole utilizzando l’editor di regole visive <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+È possibile scrivere regole utilizzando i regola editor visivi <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Vediamo innanzitutto come scrivere regole utilizzando l’editor visivo.
 
 ### Utilizzo dell’editor visivo {#using-visual-editor}
 
-È illustrato come creare un regola in editor visivo utilizzando il seguente modulo di esempio.
+Comprendiamo come creare una regola nell’editor visivo utilizzando il seguente modulo di esempio.
 
 ![Create-rule-example](assets/create-rule-example.png)
 
-La sezione Requisiti del prestito nell&#39;esempio di modulo di domanda di prestito richiede ai richiedenti di specificare il loro stato civile, lo stipendio e, in caso di matrimonio, lo stipendio del coniuge. In base agli input dell’utente, la regola calcola l’importo di idoneità al prestito e viene visualizzata nel campo Idoneità al prestito. Per implementare lo scenario, applica le seguenti regole:
+La sezione Requisiti di prestito nel modulo di applicazione di prestito di esempio richiede ai richiedenti di specificare il proprio stato civile, lo stipendio e, se sposati, lo stipendio del coniuge. In base agli input dell’utente, la regola calcola l’importo di idoneità al prestito e viene visualizzata nel campo Idoneità al prestito. Per implementare lo scenario, applica le seguenti regole:
 
 * Il campo Stipendio coniuge viene visualizzato solo quando lo stato civile è sposato.
 * L’importo di ammissibilità al prestito è pari al 50% dello stipendio totale.
@@ -566,7 +561,7 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   Nel campo dell&#39;espressione estesa, selezionare **[!UICONTROL diviso per]** dal **[!UICONTROL campo Seleziona operatore]** e **[!UICONTROL Numero]** dal **[!UICONTROL campo Seleziona opzione]** . Quindi, specificare **[!UICONTROL 2]** nel campo numero.
+   Nel campo espressione estesa, seleziona **[!UICONTROL diviso per]** dal **[!UICONTROL Seleziona operatore]** campo e **[!UICONTROL Numero]** dal **[!UICONTROL Seleziona opzione]** campo. Quindi, specifica **[!UICONTROL 2]** nel campo numerico.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -574,9 +569,9 @@ Per scrivere le regole, effettua le seguenti operazioni:
    >
    >È possibile creare espressioni complesse utilizzando componenti, funzioni, espressioni matematiche e valori di proprietà dal campo Seleziona opzione.
 
-   Quindi, crea una condizione, che quando restituisce True, l’espressione viene eseguita.
+   Successivo, creare una condizione che, quando restituisce True, viene eseguita l&#39;espressione.
 
-1. Seleziona **[!UICONTROL Aggiungi condizione]** per aggiungere un&#39;istruzione When.
+1. Selezionare **[!UICONTROL Aggiungi condizione]** per aggiungere un&#39;istruzione Quando.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -856,7 +851,7 @@ Di seguito è riportato un esempio di regola nidificata che visualizza un messag
 
 ![Espressione complessa](assets/complexexpression.png)
 
-Puoi anche trascinare le condizioni all’interno di una regola per modificarla. Seleziona e passa il puntatore sull&#39;handle ( ![maniglia](assets/drag-handle.svg)) prima di una condizione. Una volta che il puntatore diventa il simbolo della mano, come mostrato di seguito, trascinare la condizione in un punto qualsiasi della regola. La struttura regola cambia.
+Puoi anche trascinare le condizioni all’interno di una regola per modificarla. Seleziona e passa il puntatore sull&#39;handle ( ![maniglia](assets/drag-handle.svg)) prima di una condizione. Una volta che il puntatore si trasforma nel simbolo della mano, come illustrato di seguito, trascinare e rilasciare la condizione in qualsiasi punto della regola. La struttura della regola cambia.
 
 ![Trascinamento della selezione](assets/drag-and-drop.png)
 
@@ -866,7 +861,7 @@ La regola editor consente di utilizzare i confronti di date per creare condizion
 
 Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se l&#39;ipoteca sulla casa è già stata presa, che il utente indica compilando il campo data.
 
-Quando la data del mutuo dell’immobile compilata dall’utente è nel passato, il modulo adattivo visualizza una nota relativa al calcolo del reddito. La regola seguente confronta la data compilata dall&#39;utente con la data corrente. Se la data compilata dall&#39;utente è precedente alla data corrente, nel modulo viene visualizzato il messaggio di testo Income.
+Quando la data di ipoteca dell&#39;immobile compilata dal utente è passata, il modulo adattivo visualizza una nota sul calcolo del reddito. Nella regola seguente viene confrontata la data compilata dall&#39;utente con la data corrente e se la data compilata dal utente è precedente alla data corrente, nel modulo viene visualizzato il messaggio di testo (denominato Reddito).
 
 ![Condizione espressione data](assets/dateexpressioncondition.png)
 
@@ -874,11 +869,11 @@ Quando la data di compilazione è precedente alla data corrente, nel modulo vien
 
 ![Condizione espressione data soddisfatta](assets/dateexpressionconditionmet.png)
 
-## Condizioni di confronto numerico {#number-comparison-conditions}
+## Condizioni di confronto dei numeri {#number-comparison-conditions}
 
 L’editor di regole consente di creare condizioni che confrontano due numeri.
 
-Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se il numero di mesi in cui un candidato rimane all&#39;indirizzo corrente è inferiore a 36.
+Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se il numero di mesi in cui un richiedente soggiorna all&#39;indirizzo corrente è inferiore a 36.
 
 ![Condizione di confronto dei numeri](assets/numbercomparisoncondition.png)
 

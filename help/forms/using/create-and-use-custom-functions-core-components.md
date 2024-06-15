@@ -4,22 +4,21 @@ description: AEM Forms supporta funzioni personalizzate che consentono agli uten
 keywords: Aggiungi una funzione personalizzata, utilizza una funzione personalizzata, crea una funzione personalizzata, utilizza la funzione personalizzata nell’editor di regole.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: e7ad5c0149e428265598c806421131fe74fad350
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '3394'
+source-wordcount: '3385'
 ht-degree: 0%
 
 ---
 
 # Funzioni personalizzate nei componenti core di Forms adattivi
 
-<span class="preview"> Questo articolo contiene contenuti per le funzioni incluse nel programma di adozione anticipata. Queste funzioni pre-release sono accessibili solo tramite [canale preliminare](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Le funzioni del programma pre-release sono:
-<!-- * Optional parameter support in Custom Functions-->
+Questo articolo descrive la creazione di funzioni personalizzate con il componente core Modulo adattivo più recente dotato delle funzioni più recenti, ad esempio:
 * Funzione di memorizzazione in cache per funzioni personalizzate
 * Supporto globale di oggetti di ambito e oggetti di campo per le funzioni personalizzate
 * Supporto per funzioni JavaScript moderne come le funzioni let e arrow (supporto ES10)
 
-Assicurati di impostare [versione più recente del modulo](https://github.com/adobe/aem-core-forms-components/tree/release/650) nell’ambiente dei Componenti core AEM Forms per utilizzare le funzioni pre-release di Funzioni personalizzate. </span>
+Assicurati di impostare [versione più recente del modulo](https://github.com/adobe/aem-core-forms-components/tree/release/650) nell’ambiente dei Componenti core AEM Forms per utilizzare le funzioni più recenti di Funzioni personalizzate. </span>
 
 
 | Versione | Collegamento articolo |
