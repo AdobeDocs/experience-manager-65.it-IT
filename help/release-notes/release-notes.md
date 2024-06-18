@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
+source-git-commit: 84e56b9e9552903fa210cd680a64c268d5e15626
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3823'
 ht-degree: 2%
 
 ---
@@ -527,16 +527,15 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 ### Problemi noti per AEM Forms {#known-issues-aem-forms-6521}
 
 
-* Dopo aver installato AEM Forms JEE Service Pack 21 (6.5.21.0), se sono presenti voci duplicate di file jar Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` sotto `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926).
+* Dopo aver installato AEM Forms JEE Service Pack 21 (6.5.21.0), se sono presenti voci duplicate di file jar Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` sotto `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), per risolvere il problema effettua le seguenti operazioni:
 
-  Per risolvere il problema, effettua le seguenti operazioni:
+   1. Fermate i localizzatori, se sono in esecuzione.
+   1. Arrestare il server AEM.
+   1. Vai a `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. Rimuove tutti i file patch Geode eccetto `geode-*-1.15.1.2.jar`. Conferma che solo i file jar Geode con `version 1.15.1.2` sono presenti.
+   1. Apri il prompt dei comandi in modalità amministratore.
+   1. Installare la patch Geode utilizzando `geode-*-1.15.1.2.jar` file.
 
-   1. Arrestare i localizzatori e il server nell&#39;ordine specificato, se sono in esecuzione.
-   1. Reinstallare la patch eseguendo il programma di installazione della patch in modalità amministratore (importante).
-   1. Conferma che solo i file jar Geode con `version 1.15.1.2` sono presenti.
-
-  >[!NOTE]
-  > Non è richiesta alcuna azione se solo i file jar Geode con `version 1.15.1.2` sono presenti.
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
