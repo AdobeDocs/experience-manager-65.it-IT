@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
-source-wordcount: '5504'
+source-wordcount: '5538'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Per ulteriori informazioni, consulta [Come creare progetti AEM con Apache Maven]
 Dopo aver configurato il progetto AEM, definisci la strategia per l’authoring e la personalizzazione dei modelli e dei componenti dei moduli adattivi.
 
 * Un modello di modulo adattivo è una pagina AEM specializzata che definisce la struttura e le informazioni intestazione-piè di pagina di un modulo adattivo. Un modello presenta layout, stili e struttura di base preconfigurati per un modulo adattivo. AEM Forms fornisce modelli e componenti pronti all’uso che puoi utilizzare per la creazione di moduli adattivi. Tuttavia, puoi creare modelli e componenti personalizzati in base alle tue esigenze. Si consiglia di raccogliere i requisiti per i modelli e i componenti aggiuntivi necessari nei moduli adattivi. Per ulteriori informazioni, consulta [Personalizzazione di moduli e componenti adattivi](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
+* Si consiglia di caricare i pacchetti del modulo utilizzando l’interfaccia utente di Form Manager invece dell’interfaccia utente di CRX Package Manager, in quanto il caricamento dei pacchetti tramite CRX Package Manager può talvolta causare anomalie.
 * AEM Forms consente di creare moduli adattivi basati sui seguenti modelli di moduli. I modelli di modulo fungono da interfaccia per lo scambio di dati tra un modulo e un sistema AEM e forniscono una struttura basata su XML per il flusso di dati all’interno e all’esterno di un modulo adattivo. Inoltre, i modelli di modulo impongono regole e vincoli ai moduli adattivi sotto forma di vincoli di schema e XFA.
 
    * **Nessuno**: i moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.

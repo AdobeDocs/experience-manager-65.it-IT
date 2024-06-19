@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 84e56b9e9552903fa210cd680a64c268d5e15626
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
-source-wordcount: '3823'
+source-wordcount: '3907'
 ht-degree: 2%
 
 ---
@@ -41,18 +41,22 @@ ht-degree: 2%
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+### [!DNL Forms]
+
 Alcune delle funzioni e dei miglioramenti principali di questa versione includono:
 
-* Una credenziale nuova e più semplice da utilizzare per l’autenticazione da server a server, che sostituisce la credenziale esistente dell’account di servizio (JWT). (NPR-41994)
-
-* Miglioramenti dell’editor di regole in AEM Forms:
+* **Supporto per le credenziali OAuth**: credenziali nuove e più facili da utilizzare per l’autenticazione da server a server, che sostituiscono le credenziali dell’account di servizio (JWT) esistenti. (NPR-41994)
+* **Miglioramenti dell’editor di regole in AEM Forms**:
    * Supporto per l’implementazione di condizioni nidificate con `When-then-else` funzionalità.
    * Convalidare o reimpostare pannelli e moduli, inclusi i campi.
    * Supporto di funzioni JavaScript moderne, come le funzioni let e arrow (supporto ES10) all’interno delle funzioni personalizzate.
-* API di tag automatici per l’accessibilità dei PDF: AEM Forms su OSGi ora supporta la nuova API di tag automatici per migliorare i PDF per gli standard di accessibilità aggiungendo tag: paragrafi ed elenchi. Rende i PDF più accessibili agli utenti con tecnologia assistiva.
-* Supporto PNG a 16 bit: il servizio ImageToPdf PDF Generator ora supporta la conversione di PNG con profondità colore a 16 bit.
-* Applicazione di artefatti a singoli blocchi di testo in XDP: Forms Designer ora consente agli utenti di configurare le impostazioni su singoli blocchi di testo in file XDP. Questa funzionalità consente di controllare gli elementi trattati come artefatti nei PDF risultanti. Questi elementi, come intestazioni e piè di pagina, sono resi accessibili per le tecnologie per l’accessibilità. Le funzioni chiave includono contrassegnare i blocchi di testo come artefatti e incorporare queste impostazioni nei metadati XDP. Il servizio di output di Forms applica queste impostazioni durante la generazione di PDF, garantendo l&#39;assegnazione di tag PDF/UA corretti.
-* AEM Forms Designer è certificato con `GB18030:2022` standard. Con questa certificazione, ora Forms Designer supporta il set di caratteri Unicode cinese che consente di inserire caratteri cinesi in tutti i campi e le finestre di dialogo modificabili.
+* **API AutoTag per l’accessibilità dei PDF**: AEM Forms su OSGi ora supporta la nuova API di tag automatici per migliorare le PDF per gli standard di accessibilità aggiungendo tag: paragrafi ed elenchi. Rende i PDF più accessibili agli utenti con tecnologia assistiva.
+* **Supporto PNG a 16 bit**: il servizio ImageToPdf di PDF Generator ora supporta la conversione di PNG con una profondità del colore di 16 bit.
+* **Applicare artefatti a singoli blocchi di testo in XDP**: Forms Designer ora consente agli utenti di configurare le impostazioni sui singoli blocchi di testo nei file XDP. Questa funzionalità consente di controllare gli elementi trattati come artefatti nei PDF risultanti. Questi elementi, come intestazioni e piè di pagina, sono resi accessibili per le tecnologie per l’accessibilità. Le funzioni chiave includono contrassegnare i blocchi di testo come artefatti e incorporare queste impostazioni nei metadati XDP. Il servizio di output di Forms applica queste impostazioni durante la generazione di PDF, garantendo l&#39;assegnazione di tag PDF/UA corretti.
+* **AEM Forms Designer è certificato con `GB18030:2022` standard**: con `GB18030:2022` Certificazione, ora Forms Designer supporta il set di caratteri Unicode cinese che consente di inserire caratteri cinesi in tutti i campi e le finestre di dialogo modificabili.
+* **Supporto per la route WebToPDF nel server JEE**: il servizio PDF Generator ora supporta la route WebToPDF per la conversione di file HTML in documenti PDF su JEE, oltre alle route Webkit e WebCapture (solo Windows). La route WebToPDF è già disponibile su OSGi, ma ora è stata estesa per includere anche in JEE. Su entrambe le piattaforme JEE e OSGi, il servizio PDF Generator supporta le seguenti route tra diversi sistemi operativi:
+   * **Windows**: WebKit, WebCapture, WebToPDF
+   * **Linux**: Webkit, WebToPDF
 
 
 ### [!DNL Assets]

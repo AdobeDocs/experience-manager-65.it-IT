@@ -10,7 +10,7 @@ feature: HTML5 Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 0%
@@ -173,7 +173,6 @@ Sono presenti alcune domande frequenti sul layout, sul supporto degli script e s
    Risposta: i moduli HTML5 non supportano modelli di visualizzazione per campi mobili.
 
 1. Qual è il formato del campo Data in HTML 5 Forms?
-
 Risposta: il campo Data accetta il formato ISO AAAA-MM-GG. Se si specifica una data in un altro formato, il campo Data non accetta la formattazione fino a quando l&#39;utente non esce dal campo.
 
 ### Scripting {#scripting}
