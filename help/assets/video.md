@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: aeb243421ed2212625e85c3d5b76322e4c33f1d2
+source-git-commit: 7e0f1225d5bf4de095c4a8cc042517997898a44c
 workflow-type: tm+mt
-source-wordcount: '11201'
+source-wordcount: '11203'
 ht-degree: 2%
 
 ---
@@ -592,12 +592,11 @@ Utilizza il [Guida di riferimento per i visualizzatori Dynamic Medie di Adobe](h
 
 
 
-
 ## Informazioni sul supporto di più didascalie e tracce audio per video in Dynamic Medie{#about-msma}
 
 Con la funzionalità di didascalia multipla e traccia audio in Dynamic Medie, è possibile aggiungere facilmente più sottotitoli e tracce audio a un video primario. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
 
-![Scheda Sottotitoli e tracce audio in Dynamic Medie insieme a una tabella che mostra i file di sottotitoli .VTT caricati e i file di tracce audio .MP3 caricati per un video.](assets-dm/msma-subtitle-audiotracks-tab.png)
+![Scheda Sottotitoli e tracce audio in Dynamic Medie insieme a una tabella che mostra i file di sottotitoli .VTT caricati e i file di tracce audio .MP3 caricati per un video.](assets-dm/msma-subtitle-audiotracks-tab2.png)
 
 Alcuni dei casi d’uso da considerare per aggiungere più didascalie e tracce audio al video principale sono i seguenti:
 
@@ -644,7 +643,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
    >
    >Dopo aver completato una delle attività di cui sopra, torna a questi passaggi.
 
-   ![Scheda Sottotitoli e tracce audio nella pagina Proprietà.](assets-dm/msma-audiotracks.png)*Scheda Sottotitoli e tracce audio nella pagina Proprietà del video.*
+   ![Scheda Sottotitoli e tracce audio nella pagina Proprietà.](assets-dm/msma-audiotracks2.png)*Scheda Sottotitoli e tracce audio nella pagina Proprietà del video.*
 
 1. (Facoltativo) Per aggiungere uno o più file di didascalia a un video, effettuate le seguenti operazioni:
    * Seleziona **[!UICONTROL Carica sottotitoli]**.
@@ -655,8 +654,8 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
      |--- |--- |
      | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile usare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
      | Lingua | Selezionare la lingua della didascalia. |
-     | Tipo | Selezionare il tipo di didascalia in uso.<br>**Didascalia** : il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di fondo, la differenziazione degli oratori e altre informazioni rilevanti, insieme alla traduzione o trascrizione del dialogo, rendendo il contenuto più accessibile per gli individui non udenti o ipoudenti. |
-     | Etichetta | Testo visualizzato per il nome della didascalia nella **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta corrisponde a una traccia di didascalia, come vede il cliente. Esempio: `English (CC)`. |
+     | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo** : il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di fondo, la differenziazione degli oratori e altre informazioni rilevanti, insieme alla traduzione o trascrizione del dialogo, rendendo il contenuto più accessibile per gli individui non udenti o ipoudenti. |
+     | Etichetta | Testo visualizzato per il nome della didascalia nella **[!UICONTROL Seleziona audio o sottotitolo]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
 
      Se necessario, puoi modificare i metadati dei sottotitoli in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
@@ -670,7 +669,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
      | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile usare lo stesso nome di file per file di traccia audio o di didascalia aggiuntivi. |
      | Lingua | Selezionate la lingua della traccia audio. |
      | Tipo | Selezionate il tipo di traccia audio in uso.<br>**Originale** - La traccia audio originariamente allegata al video e rappresentata come `[Original]` nell’etichetta con `English` lingua selezionata per impostazione predefinita. Mentre **[!UICONTROL Etichetta]** e **[!UICONTROL Lingua]** può essere modificato in **[!UICONTROL Modifica traccia audio]** , vengono utilizzati i valori originali se il video principale viene rielaborato.<br>**Standard** - Traccia audio aggiuntiva per una lingua diversa dall&#39;originale.<br>**Descrizione audio** - Traccia audio che include anche una narrazione descrittiva delle azioni non verbali e dei gesti nel video, rendendo il contenuto più accessibile agli utenti ipovedenti. |
-     | Etichetta | Testo visualizzato come nome della traccia audio nel **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta dell&#39;audio collegata a un video è impostata su `[Original]` per impostazione predefinita. |
+     | Etichetta | Testo visualizzato come nome della traccia audio nel **[!UICONTROL Seleziona audio o sottotitolo]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta dell&#39;audio collegata a un video è impostata su `[Original]` per impostazione predefinita. |
 
      Se necessario, potete modificare i metadati della traccia audio in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
@@ -732,7 +731,7 @@ Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o trac
 | Non riuscito | Lo stato &quot;Non riuscito&quot; indica che l&#39;elaborazione di un file di didascalia o di traccia audio non è stata completata. Elimina la didascalia o il file di traccia audio e caricalo di nuovo. |
 | La pagina di cui è stata annullata la pubblicazione   | Quando si annulla esplicitamente la pubblicazione di un video principale pubblicato, vengono annullati anche i file di didascalia o di traccia audio aggiunti al video. |
 
-![Colonna di stato evidenziata per i campi Sottotitoli e Tracce audio.](assets-dm/msma-lifecycle-status.png)*Stato del ciclo di vita di ogni didascalia e file di traccia audio caricati.*
+![Colonna di stato evidenziata per i campi Sottotitoli e Tracce audio.](assets-dm/msma-lifecycle-status2.png)*Stato del ciclo di vita di ogni didascalia e file di traccia audio caricati.*
 
 ### Impostare l&#39;audio predefinito per un video con più tracce audio
 
@@ -757,7 +756,7 @@ Tuttavia, tutti i file di traccia audio caricati possono essere impostati come a
 1. Seleziona **[!UICONTROL Imposta come predefinito]**.
 In **Imposta come predefinito** finestra di dialogo, seleziona **[!UICONTROL Sostituisci]**.
 
-   ![L&#39;intestazione Tracce audio con un nome di file di traccia audio selezionato ed evidenziato il pulsante Imposta come predefinito.](assets-dm/msma-defaultaudiotrack.png)*Impostazione della traccia audio predefinita per un video.*
+   ![L&#39;intestazione Tracce audio con un nome di file di traccia audio selezionato ed evidenziato il pulsante Imposta come predefinito.](assets-dm/msma-defaultaudiotrack2.png)*Impostazione della traccia audio predefinita per un video.*
 
 1. Nell’angolo superiore destro, seleziona **[!UICONTROL Salva e chiudi]**.
 1. Pubblica il video. Consulta [Pubblicare le risorse](publishing-dynamicmedia-assets.md).
