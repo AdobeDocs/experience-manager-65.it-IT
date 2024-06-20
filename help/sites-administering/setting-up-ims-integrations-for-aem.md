@@ -1,20 +1,22 @@
 ---
 title: Configurazione delle integrazioni IMS per l’AEM
 description: Scopri come impostare le integrazioni IMS per l’AEM
-source-git-commit: bca98907b79f12572879273ece41ec8d82fed1b8
+feature: Security
+role: Admin
+exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
+source-git-commit: c2d996586d2ec7299e856a97ae1b744245c730bb
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 79%
+source-wordcount: '433'
+ht-degree: 63%
 
 ---
-
 
 # Configurazione delle integrazioni IMS per l’AEM {#setting-up-ims-integrations-for-aem}
 
 
 >[!NOTE]
 >
->[Adobe Developer Console](https://developer.adobe.com/console) viene utilizzato per generare credenziali che consentano l’accesso a varie API. È possibile scegliere tra vari tipi di credenziali, da server a server OAuth ad applicazione a pagina singola. Uno di questi tipi di credenziali, le credenziali dell’account di servizio (JWT), è stato dichiarato obsoleto a favore delle credenziali server-to-server OAuth con Service Pack 20. È possibile eseguire il back port di questa modifica nei Service Pack precedenti, a partire da Service Pack 11 fino a Service Pack 20 con l&#39;utilizzo di un hotfix che è possibile scaricare [qui](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Adobe di clienti che utilizzano [Console Adobe Developer](https://developer.adobe.com/console) per generare credenziali che consentano l’accesso a varie API. È possibile scegliere tra vari tipi di credenziali, da server a server OAuth ad applicazione a pagina singola. Il tipo di credenziali Account di servizio (JWT) è ora obsoleto, in favore delle credenziali server-to-server OAuth con Service Pack 20. È possibile eseguire il back port di questa modifica nei Service Pack precedenti, a partire da Service Pack 11 fino a Service Pack 20 con l&#39;utilizzo di un hotfix che è possibile scaricare [qui](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager (AEM) può essere integrato con molte altre soluzioni Adobi. Ad esempio, Adobe Target, Adobe Analytics e altre.
 
@@ -38,9 +40,9 @@ Le integrazioni utilizzano un’integrazione IMS, configurata con OAuth S2S.
 
 ## Credenziali in Developer Console {#credentials-in-the-developer-console}
 
-Come primo passaggio, devi configurare le credenziali OAuth in Adobe Developer Console.
+Come primo passaggio, devi configurare le credenziali OAuth nella console Adobe Developer.
 
-Per informazioni dettagliate su come eseguire questa operazione, consulta la documentazione di Developer Console, a seconda dei requisiti:
+Per informazioni dettagliate su come eseguire questa configurazione, consulta la documentazione di Developer Console, a seconda dei requisiti:
 
 * Panoramica:
 
@@ -88,7 +90,7 @@ Per migrare un’integrazione Adobe IMS esistente basata sulle credenziali JWT:
 
    ![Seleziona una configurazione JWT](assets/ims-migrate-jwt-select-configuration.png)
 
-1. La configurazione verrà aperta in sola lettura:
+1. La configurazione si apre in sola lettura:
 
    ![Proprietà di configurazione: sola lettura](assets/ims-migrate-jwt-properties-read-only.png)
 
@@ -96,9 +98,9 @@ Per migrare un’integrazione Adobe IMS esistente basata sulle credenziali JWT:
 
    ![Seleziona tipo di autenticazione](assets/ims-migrate-jwt-authentication-type.png)
 
-1. Le proprietà disponibili verranno aggiornate. Utilizza i dettagli da Developer Console per completarli:
+1. Le proprietà disponibili vengono aggiornate. Utilizza i dettagli da Developer Console per completarli:
 
    ![Completa dettagli OAuth](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. Utilizza **Salva e chiudi** per mantenere gli aggiornamenti.
-Quando ritorni alla console, l’avvertenza **Credenziali JWT (obsolete)** non sarà più visibile.
+Quando ritorni alla console, il **Credenziali JWT (obsoleto)** l&#39;avvertenza non è più disponibile.
