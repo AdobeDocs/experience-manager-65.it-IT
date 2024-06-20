@@ -6,8 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 1%
@@ -30,7 +31,7 @@ Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server a
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Specifica la funzione da chiamare. Per cercare i moduli, imposta il valore di <code>func </code>attribuire a <code>searchForms</code>.</p> <p>Ad esempio, <code class="code">
+   <td><p>Specifica la funzione da chiamare. Per cercare i moduli, imposta il valore di <code>func </code>attribuire a <code>searchForms</code>.</p> <p>Ad esempio: <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>Nota:</strong> <em>Questo parametro è obbligatorio.</em><br /> </p> </td>
   </tr>
@@ -40,7 +41,7 @@ Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server a
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Specifica le proprietà da recuperare con le risorse. Puoi usare l’asterisco (*) per recuperare tutte le proprietà contemporaneamente. Utilizzare l'operatore pipe (|) per specificare più proprietà. </p> <p>Ad esempio, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Nota</strong>: </p>
+   <td><p>Specifica le proprietà da recuperare con le risorse. Puoi usare l’asterisco (*) per recuperare tutte le proprietà contemporaneamente. Utilizzare l'operatore pipe (|) per specificare più proprietà. </p> <p>Ad esempio: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Nota</strong>: </p>
     <ul>
      <li><em>Le proprietà come ID, percorso e nome vengono sempre recuperate. </em></li>
      <li><em>Ogni risorsa ha un set diverso di proprietà. Proprietà come formUrl, pdfUrl e guideUrl non dipendono dall’attributo cutpoints. Queste proprietà dipendono dal tipo di risorsa e vengono recuperate di conseguenza. </em></li>
@@ -69,7 +70,7 @@ Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server a
   </tr>
   <tr>
    <td>istruzioni</td>
-   <td><p>Specifica l'elenco di istruzioni. Le query vengono eseguite nell’elenco delle istruzioni specificate nel formato JSON. </p> <p>Ad esempio,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Specifica l'elenco di istruzioni. Le query vengono eseguite nell’elenco delle istruzioni specificate nel formato JSON. </p> <p>Ad esempio:</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
@@ -96,7 +97,7 @@ Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server a
   </tr>
   <tr>
    <td>ordini<br /> </td>
-   <td><p>Specifica i criteri di ordine per i risultati della ricerca. I criteri sono definiti in formato JSON. È possibile ordinare i risultati di ricerca in più campi. I risultati vengono ordinati in base all'ordine di visualizzazione dei campi nella query.</p> <p>Ad esempio,</p> <p>Per recuperare i risultati della query ordinati per proprietà titolo in ordine crescente, aggiungi il seguente parametro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Specifica i criteri di ordine per i risultati della ricerca. I criteri sono definiti in formato JSON. È possibile ordinare i risultati di ricerca in più campi. I risultati vengono ordinati in base all'ordine di visualizzazione dei campi nella query.</p> <p>Ad esempio:</p> <p>Per recuperare i risultati della query ordinati per proprietà titolo in ordine crescente, aggiungi il seguente parametro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");

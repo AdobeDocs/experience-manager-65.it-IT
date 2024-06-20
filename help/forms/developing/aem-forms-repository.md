@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '9036'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Crea una cartella utilizzando l’API del servizio Repository (Java):
 
 [Creazione di cartelle](aem-forms-repository.md#creating-folders)
 
-[Guida rapida (modalità SOAP): creazione di una cartella tramite l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[Quick Start (modalità SOAP): creazione di una cartella utilizzando l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -941,7 +941,7 @@ Crea risorse di relazione utilizzando l’API Java del servizio Repository, eseg
 
 [Creazione di relazioni tra risorse](aem-forms-repository.md#creating-resource-relationships)
 
-[Guida introduttiva (modalità SOAP): creazione di relazioni tra le risorse tramite l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[Guida rapida (modalità SOAP): creazione di relazioni tra le risorse tramite l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1142,7 +1142,7 @@ Blocca le risorse utilizzando l’API del servizio Archivio (servizio web):
 
 ## Eliminazione delle risorse {#deleting-resources}
 
-Puoi eliminare programmaticamente le risorse da una determinata posizione nell’archivio utilizzando il servizio Repository Java API (SOAP).
+Puoi eliminare programmaticamente le risorse da una determinata posizione nell’archivio utilizzando il servizio Archivio Java API (SOAP).
 
 Quando si elimina una risorsa, l&#39;eliminazione è in genere permanente, anche se in alcuni casi gli archivi ECM possono memorizzare le versioni della risorsa in base ai rispettivi meccanismi di cronologia. Pertanto, durante l’eliminazione di una risorsa, è importante assicurarsi di non averne più bisogno. I motivi comuni per l’eliminazione di una risorsa includono la necessità di aumentare lo spazio disponibile nel database. È possibile eliminare una versione di una risorsa, ma in tal caso è necessario specificare l&#39;identificatore della risorsa e non il relativo identificatore logico (LID) o percorso. Se elimini una cartella, tutti gli elementi in essa contenuti, incluse le sottocartelle e le risorse, verranno eliminati automaticamente.
 
@@ -1195,7 +1195,7 @@ Richiama il metodo del servizio Archivio per eliminare la risorsa, specificando 
 
 [Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Eliminare le risorse utilizzando API Java (SOAP) {#delete-resources-using-the-java-api-soap}
+### Eliminare le risorse utilizzando Java API (SOAP) {#delete-resources-using-the-java-api-soap}
 
 Eliminare una risorsa utilizzando l’API dell’archivio (Java):
 

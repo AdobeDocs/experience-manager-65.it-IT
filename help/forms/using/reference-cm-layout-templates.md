@@ -6,8 +6,9 @@ content-type: reference
 topic-tags: correspondence-management
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 In Gestione corrispondenza, un modello di lettera contiene campi modulo tipici, funzioni di layout come intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto.
 
-Gestione della corrispondenza fornisce modelli di lettera nella [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). È possibile personalizzare i modelli in Designer in base alle proprie esigenze di branding e aziendali. Il pacchetto include i seguenti modelli:
+Gestione della corrispondenza fornisce modelli di lettera nella [Pacchetto del componente aggiuntivo AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Puoi personalizzare i modelli in Designer in base alle tue esigenze di branding e business. Il pacchetto include i seguenti modelli:
 
 * Classico
 * Classic Semplice

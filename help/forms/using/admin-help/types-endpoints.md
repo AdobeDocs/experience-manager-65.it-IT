@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -33,9 +34,9 @@ Ai servizi è possibile aggiungere i seguenti tipi di endpoint. Non tutti i serv
 
 **Remoting:** Consente a un’applicazione creata con Flex di richiamare il servizio utilizzando i moduli AEM Remoting (obsoleti per i moduli AEM). Per ogni servizio attivato viene creato automaticamente un endpoint di comunicazione remota. Viene creata una destinazione Flex con lo stesso nome dell&#39;endpoint e i client Flex possono creare oggetti remoti che puntano a questa destinazione per richiamare operazioni sul servizio pertinente.
 
-**SOAP:** Consente a un&#39;applicazione client sviluppata utilizzando le API di programmazione dei moduli AEM di richiamare il servizio utilizzando la modalità SOAP. Per ogni servizio attivato viene creato automaticamente un endpoint SOAP.
+**SOAP:** Consente a un’applicazione client sviluppata utilizzando le API di programmazione dei moduli AEM di richiamare il servizio utilizzando la modalità SOAP. Per ogni servizio attivato viene creato automaticamente un endpoint SOAP.
 
-**nota**: *La protezione può essere rimossa dai documenti di protezione dei documenti quando si utilizza l’endpoint SOAP durante la visualizzazione dei documenti in Adobe Acrobat o Adobe Reader. Per informazioni dettagliate su come disattivare gli endpoint SOAP nei documenti LCRM, vedi [Disabilita endpoint SOAP per documenti di protezione dei documenti](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**nota**: *La protezione può essere rimossa dai documenti di protezione dei documenti quando l’endpoint SOAP viene utilizzato durante la visualizzazione dei documenti in Adobe Acrobat o Adobe Reader. Per informazioni dettagliate su come disattivare gli endpoint SOAP nei documenti LCRM, vedi [Disabilita endpoint SOAP per documenti di protezione dei documenti](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
 **EJB:** Consente a un’applicazione client sviluppata utilizzando le API di programmazione dei moduli AEM di richiamare il servizio utilizzando la modalità Enterprise JavaBeans (EJB). Per ogni servizio attivato viene creato automaticamente un endpoint EJB.
 

@@ -7,7 +7,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms, OSGI
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1882'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-AEM Forms fornisce un set di moduli per ottenere dati dall’utente finale: moduli adattivi, HTML5 Forms e PDF forms. Fornisce inoltre strumenti per elencare tutti i moduli disponibili in una pagina web, analizzare l’utilizzo dei moduli e indirizzare gli utenti in base al loro profilo. Queste funzionalità sono incluse nel pacchetto del componente aggiuntivo AEM Forms. Il pacchetto del componente aggiuntivo viene distribuito su un’istanza Author o Publish di AEM.
+AEM Forms fornisce un set di moduli per ottenere dati dall’utente finale: moduli adattivi, HTML5 Forms e PDF forms. Fornisce inoltre strumenti per elencare tutti i moduli disponibili in una pagina web, analizzare l’utilizzo dei moduli e indirizzare gli utenti in base al loro profilo. Queste funzionalità sono incluse nel pacchetto del componente aggiuntivo AEM Forms. Il pacchetto del componente aggiuntivo viene distribuito su un’istanza Author o Publish dell’AEM.
 
 **Moduli adattivi:** Questi moduli modificano l’aspetto in base alle dimensioni dello schermo del dispositivo, sono coinvolgenti e di natura interattiva. Forms adattivo può anche essere integrato con Adobe Analytics, Adobe Sign e Adobe Target. Consente di fornire agli utenti moduli personalizzati ed esperienze orientate ai processi in base alla demografia e ad altre funzioni. Puoi anche integrare i moduli adattivi con Adobe Sign.
 
@@ -30,7 +31,7 @@ AEM Forms è una potente piattaforma di classe enterprise e l’acquisizione dei
 
 ## Topologia di distribuzione {#deployment-topology}
 
-Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata nell’AEM. Per eseguire le funzionalità di acquisizione dei dati di AEM Forms è necessario disporre almeno di un’istanza Autore AEM e Pubblicazione AEM. Per eseguire le funzionalità di acquisizione dati di AEM Forms AEM Forms, si consiglia di utilizzare la topologia riportata di seguito. Per informazioni dettagliate sulla topologia, vedere [Architettura e topologie di implementazione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata nell’AEM. Per eseguire le funzionalità di acquisizione dati di AEM Forms è necessario disporre solo di almeno un’istanza di AEM Author e AEM Publish. Per eseguire le funzionalità di acquisizione dati di AEM Forms AEM Forms, si consiglia di utilizzare la topologia riportata di seguito. Per informazioni dettagliate sulla topologia, vedere [Architettura e topologie di implementazione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![recommended-topology](assets/recommended-topology.png)
 
@@ -41,7 +42,7 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione da
 * Infrastruttura hardware e software già esistente. Per un elenco dettagliato dell&#39;hardware e del software supportati, vedere [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
 * Il percorso di installazione dell’istanza AEM non contiene spazi vuoti.
-* Un’istanza AEM è operativa. Per gli utenti di Windows, installa l’istanza AEM in modalità elevata. Nella terminologia AEM, per &quot;istanza&quot; si intende una copia dell’AEM in esecuzione su un server in modalità di authoring o pubblicazione. Hai bisogno di almeno due [Istanze AEM (un autore e una pubblicazione)](/help/sites-deploying/deploy.md) per eseguire le funzionalità di acquisizione dati di AEM Forms:
+* Un’istanza AEM è operativa. Per gli utenti di Windows, installa l’istanza AEM in modalità elevata. Nella terminologia AEM, per &quot;istanza&quot; si intende una copia dell’AEM in esecuzione su un server in modalità di authoring o pubblicazione. Hai bisogno di almeno due [Istanze AEM (un autore e un Publish)](/help/sites-deploying/deploy.md) per eseguire le funzionalità di acquisizione dati di AEM Forms:
 
    * **Autore**: istanza AEM utilizzata per creare, caricare e modificare i contenuti e amministrare il sito web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
    * **Pubblica**: istanza dell’AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
@@ -124,7 +125,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
    >
    > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
-1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
+1. Ripeti i passaggi da 1 a 7 su tutte le istanze di Author e Publish.
 
 ### (Solo Windows) Installazione automatica dei ridistribuibili di Visual Studio {#automatic-installation-visual-studio-redistributables}
 
@@ -152,7 +153,7 @@ AEM Forms dispone di alcune configurazioni obbligatorie e opzionali. Le configur
 
 #### Configurare le librerie RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Per avviare le librerie, esegui i seguenti passaggi su tutte le istanze Author e Publish:
+Per avviare le librerie delegate, effettua le seguenti operazioni su tutte le istanze Author e Publish:
 
 1. Arresta l’istanza AEM sottostante.
 1. Apri `[AEM installation directory]\crx-quickstart\conf\sling.properties` file per la modifica.
@@ -166,7 +167,7 @@ Per avviare le librerie, esegui i seguenti passaggi su tutte le istanze Author e
    ```
 
 1. Salva e chiudi il file e avvia l’istanza AEM.
-1. Ripeti i passaggi 1-4 su tutte le istanze Author e Publish.
+1. Ripeti i passaggi 1-4 su tutte le istanze di Author e Publish.
 
 #### Configurare l’agente di serializzazione {#configure-the-serialization-agent}
 
@@ -174,8 +175,8 @@ Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di creazione
 
 1. Apri Gestione configurazione AEM in una finestra del browser. L’URL predefinito è `https://'[server]:[port]'/system/console/configMgr`.
 1. Cerca **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** e apri la configurazione.
-1. Aggiungi il **sun.util.calendar** pacchetto per **INSERISCO NELL&#39;ELENCO CONSENTITI DI** campo. Fai clic su **Salva**.
-1. Ripeti i passaggi 1-3 su tutte le istanze Author e Publish.
+1. Aggiungi il **sun.util.calendar** pacchetto per **inserisco nell&#39;elenco Consentiti** campo. Fai clic su **Salva**.
+1. Ripeti i passaggi 1-3 su tutte le istanze di Author e Publish.
 
 ### Configurazioni opzionali post-installazione {#optional-post-installation-configurations}
 

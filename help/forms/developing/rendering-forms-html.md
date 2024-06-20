@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '4099'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Il servizio Forms esegue il rendering dei moduli come HTML in risposta a una richiesta HTTP da un browser web. Un vantaggio del rendering di un modulo come HTML è che il computer in cui si trova il browser web client non richiede Adobe Reader, Acrobat o Flash Player (per le guide dei moduli, è obsoleto).
 
-Per eseguire il rendering di un modulo come HTML, è necessario salvare la struttura del modulo come file XDP. Non è possibile eseguire il rendering come HTML di una struttura di modulo salvata come file PDF. Durante lo sviluppo di una progettazione di moduli in Designer che verrà sottoposta a rendering come HTML, considera i seguenti criteri:
+Per eseguire il rendering di un modulo come HTML, è necessario salvare la struttura del modulo come file XDP. Non è possibile eseguire il rendering come HTML di una struttura di modulo salvata come file PDF. Quando si sviluppa in Designer una progettazione di modulo che verrà sottoposta a rendering come HTML, considera i seguenti criteri:
 
 * Non utilizzare le proprietà del bordo di un oggetto per disegnare linee, caselle o griglie nel modulo. Alcuni browser potrebbero non allineare i bordi esattamente come appaiono in un&#39;anteprima. Gli oggetti possono apparire sovrapposti o allontanare altri oggetti dalla posizione prevista.
 * È possibile utilizzare linee, rettangoli e cerchi per definire lo sfondo.
@@ -233,7 +233,7 @@ Se si esegue il rendering di un modulo HTML, si consiglia di non aggiungere una 
 
 **Rendering di un modulo HTML**
 
-Per eseguire il rendering di un modulo di HTML, specificare una struttura di modulo creata in Designer e salvata come file XDP. Selezionare un tipo di trasformazione HTML. È ad esempio possibile specificare il tipo di trasformazione HTML che esegue il rendering di un HTML dinamico per Internet Explorer 5.0 o versione successiva.
+Per eseguire il rendering di un modulo HTML, specifica una struttura di modulo creata in Designer e salvata come file XDP. Selezionare un tipo di trasformazione HTML. È ad esempio possibile specificare il tipo di trasformazione HTML che esegue il rendering di un HTML dinamico per Internet Explorer 5.0 o versione successiva.
 
 Il rendering di un modulo HTML richiede anche valori, ad esempio valori URI necessari per il rendering di altri tipi di modulo.
 
@@ -311,7 +311,7 @@ Eseguire il rendering di un modulo HTML utilizzando l’API Forms (Java):
 
 [Rendering di Forms come HTML](#rendering-forms-as-html)
 
-[Guida introduttiva (modalità SOAP): rendering di un modulo HTML tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[Quick Start (modalità SOAP): rendering di un modulo HTML tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

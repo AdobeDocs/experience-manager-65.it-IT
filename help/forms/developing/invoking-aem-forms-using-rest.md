@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
@@ -314,7 +314,7 @@ Quando viene richiamato, il processo esegue le azioni seguenti:
 
 **Richiamare il processo MyApplication/EncryptDocument da Acrobat** {#invoke-process-acrobat}
 
-È possibile richiamare un processo Forms da Acrobat utilizzando una richiesta REST. Ad esempio, puoi richiamare il *MyApplication/EncryptDocument* processo. Per richiamare un processo Forms da Acrobat, posizionare un pulsante di invio su un file XDP in Designer. (vedere [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).)
+È possibile richiamare un processo Forms da Acrobat utilizzando una richiesta REST. Ad esempio, puoi richiamare il *MyApplication/EncryptDocument* processo. Per richiamare un processo Forms da Acrobat, posiziona un pulsante di invio su un file XDP all’interno di Designer. (vedere [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_63).)
 
 Specifica l’URL da utilizzare per richiamare il processo nel file del pulsante *Invia a URL* come illustrato nella figura seguente.
 

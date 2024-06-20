@@ -1,13 +1,13 @@
 ---
 title: Personalizzazione dei servizi dati per bozze e invii
-description: Per impostazione predefinita, AEM Forms memorizza le bozze e i moduli adattivi inviati in un nodo predefinito sull’istanza Publish. Tuttavia, puoi configurare i servizi dati bozza e invio di AEM Forms per personalizzare l’archiviazione delle bozze e dei moduli adattivi inviati.
+description: Per impostazione predefinita, AEM Forms memorizza le bozze e i moduli adattivi inviati in un nodo predefinito nell’istanza Publish. Tuttavia, puoi configurare i servizi dati bozza e invio di AEM Forms per personalizzare l’archiviazione delle bozze e dei moduli adattivi inviati.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM Forms consente agli utenti di salvare un modulo adattivo come bozza. La funzionalità bozza offre agli utenti la possibilità di gestire un modulo in corso di lavorazione. L’utente può quindi completare e inviare il modulo in qualsiasi momento da qualsiasi dispositivo.
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio nell’istanza Publish in `/content/forms/fp` nodo.
+Per impostazione predefinita, AEM Forms archivia i dati utente associati alla bozza e all’invio nell’istanza Publish in `/content/forms/fp` nodo.
 
 Tuttavia, i componenti del portale AEM Forms forniscono servizi di dati che ti consentono di personalizzare l’implementazione della memorizzazione dei dati utente per le bozze e gli invii. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
 

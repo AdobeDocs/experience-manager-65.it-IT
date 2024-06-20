@@ -7,7 +7,8 @@ topic-tags: forms-manager
 role: Admin,User
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 Puoi eliminare i moduli e le risorse per rimuovere tali risorse dall’archivio. L’operazione di eliminazione funziona su tutti i tipi di risorse e le cartelle.
 
-Se elimini una risorsa dall’istanza Autore, viene eliminata anche dall’istanza Pubblica. Il server AEM Forms è costituito dalle istanze Author e Publish. L’istanza di authoring è per la creazione e la gestione delle risorse e delle risorse dei moduli. L’istanza Publish contiene le risorse dei moduli pubblicati e le risorse correlate disponibili per gli utenti finali.
+Se elimini una risorsa dall’istanza Autore, viene eliminata anche dall’istanza Publish. Il server AEM Forms è costituito dalle istanze Author e Publish. L’istanza di authoring è per la creazione e la gestione delle risorse e delle risorse dei moduli. L’istanza di Publish contiene le risorse dei moduli pubblicate e le risorse correlate disponibili per gli utenti finali.
 
 ## Come eliminare un modulo {#how-to-delete-a-form}
 

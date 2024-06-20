@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '18860'
 ht-degree: 0%
@@ -736,7 +736,7 @@ Passa un documento recuperato da Content Services (obsoleto) utilizzando il serv
 
 [Quick Start (modalità EJB): trasmissione dei documenti al servizio di output tramite l’API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Quick Start (modalità SOAP): trasferimento di documenti al servizio di output tramite l’API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[Quick Start (modalità SOAP): trasmissione dei documenti al servizio di output tramite l’API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -904,7 +904,7 @@ Passa un documento recuperato dal repository utilizzando il servizio di output e
 
 1. Recupera la progettazione del modulo dall’archivio di AEM Forms.
 
-   Richiama `ResourceRepositoryClient` dell&#39;oggetto `readResourceContent` e passa un valore stringa che specifica la posizione URI nel file XDP. Ad esempio: `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Questo valore è obbligatorio. Questo metodo restituisce un `com.adobe.idp.Document` che rappresenta il file XDP.
+   Richiama `ResourceRepositoryClient` dell&#39;oggetto `readResourceContent` e passa un valore stringa che specifica la posizione URI nel file XDP. Ad esempio, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Questo valore è obbligatorio. Questo metodo restituisce un `com.adobe.idp.Document` che rappresenta il file XDP.
 
 1. Esegui il rendering del modulo di PDF non interattivo.
 
@@ -2085,7 +2085,7 @@ Crea regole di ricerca utilizzando l’API di output (Java):
 
 [Guida rapida (modalità EJB): creazione di regole di ricerca tramite l’API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[Quick Start (modalità SOAP): creazione di regole di ricerca tramite l’API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[Quick Start (modalità SOAP): creazione di regole di ricerca utilizzando l’API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2299,7 +2299,7 @@ Appiattisci un documento PDF interattivo a un documento PDF non interattivo util
 
 [Quick Start (modalità EJB): trasformazione di un documento PDF tramite API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-[Quick Start (modalità SOAP): trasformazione di un documento PDF tramite l’API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[Quick Start (modalità SOAP): trasformazione di un documento PDF tramite API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

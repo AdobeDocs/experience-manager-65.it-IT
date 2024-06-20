@@ -6,8 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Devi archiviare il progetto Xcode per l’app AEM Forms per creare il file di in
 1. Per configurare l’identificatore del bundle per l’applicazione iOS per la tua app, fai clic su **[!UICONTROL Configurare l’ID app]**.
 1. Nella parte inferiore della pagina Web, seleziona **[!UICONTROL Attiva per protezione dei dati]**. Specificare le opzioni di protezione dei dati.
 
-   Clic **[!UICONTROL Fine]**.
+   Fai clic su **[!UICONTROL Fine]**.
 
 1. Passa a Provisioning>Distribuzione e crea un nuovo profilo utilizzando l’ID app configurato nel passaggio 3.
 1. Scarica e aggiungi il profilo di provisioning a Xcode e iPad.

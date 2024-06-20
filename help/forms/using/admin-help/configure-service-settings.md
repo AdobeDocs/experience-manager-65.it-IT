@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 0%
@@ -451,7 +452,7 @@ Per il servizio di configurazione di Microsoft SharePoint sono disponibili le im
 
 ## Impostazioni del servizio di output {#output-service-settings}
 
-Il servizio di output `(OutputService)`consente di unire i dati del modulo XML con una struttura di modulo creata in Progettazione moduli AEM per creare un flusso di output del documento in uno dei seguenti formati:
+Il servizio di output `(OutputService)`consente di unire i dati del modulo XML con una struttura di modulo creata in Designer di moduli AEM per creare un flusso di output di documenti in uno dei seguenti formati:
 
 * Flusso di output di un documento PDF o PDF/A.
 * Un flusso di output di Adobe PostScript.

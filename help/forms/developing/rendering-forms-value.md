@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
 
-In genere, la progettazione di un modulo creata in Designer viene passata tramite riferimento al servizio Forms. Le progettazioni dei moduli possono essere di grandi dimensioni e, di conseguenza, è più efficiente trasmetterle per riferimento per evitare di dover eseguire il marshalling dei byte di progettazione dei moduli in base al valore. Il servizio Forms può anche memorizzare in cache la struttura del modulo in modo che, quando viene memorizzata nella cache, non debba leggerla continuamente.
+In genere, la progettazione di un modulo creata in Designer viene passata in base al servizio Forms. Le progettazioni dei moduli possono essere di grandi dimensioni e, di conseguenza, è più efficiente trasmetterle per riferimento per evitare di dover eseguire il marshalling dei byte di progettazione dei moduli in base al valore. Il servizio Forms può anche memorizzare in cache la struttura del modulo in modo che, quando viene memorizzata nella cache, non debba leggerla continuamente.
 
 Se una progettazione di modulo contiene un attributo UUID, viene memorizzata nella cache. Il valore UUID è univoco per tutte le progettazioni di moduli e viene utilizzato per identificare in modo univoco un modulo. Quando si esegue il rendering di un modulo in base al valore, il modulo deve essere memorizzato nella cache solo se viene utilizzato ripetutamente. Tuttavia, se il modulo non viene utilizzato ripetutamente e deve essere univoco, puoi evitare di memorizzarlo in cache utilizzando le opzioni di memorizzazione in cache impostate utilizzando l’API di AEM Forms.
 

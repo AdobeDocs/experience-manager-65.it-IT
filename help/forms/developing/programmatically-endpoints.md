@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '10800'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Il servizio Registro endpoint consente di gestire gli endpoint a livello di prog
 
 >[!NOTE]
 >
->Gli endpoint di comunicazione remota SOAP, EJB e (obsoleti per i moduli AEM su JEE) vengono creati automaticamente per ogni servizio attivato. Gli endpoint SOAP ed EJB abilitano SOAP ed EJB per tutte le operazioni del servizio.
+>Gli endpoint remoti di SOAP, EJB e (obsoleti per i moduli AEM su JEE) vengono creati automaticamente per ogni servizio attivato. Gli endpoint SOAP ed EJB consentono l&#39;SOAP e l&#39;EJB per tutte le operazioni di servizio.
 
 Un endpoint remoto consente ai client Flex di richiamare le operazioni sul servizio AEM Forms a cui viene aggiunto l’endpoint. Viene creata una destinazione Flex con lo stesso nome dell&#39;endpoint e i client Flex possono creare oggetti remoti che puntano a questa destinazione per richiamare operazioni sul servizio pertinente.
 
@@ -135,7 +135,7 @@ Aggiungi un endpoint EJB utilizzando l’API Java:
    * Specifica la descrizione dell’endpoint richiamando `CreateEndpointInfo` dell&#39;oggetto `setDescription` e fornendo un valore stringa che descrive l’endpoint.
    * Specifica il nome dell’endpoint richiamando `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore stringa che specifica il nome.
    * Specifica il servizio a cui appartiene l’endpoint richiamando `CreateEndpointInfo` dell&#39;oggetto `setServiceId` e passando un valore stringa che specifica il nome del servizio.
-   * Specificare l&#39;operazione richiamata richiamando `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passare un valore stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificare un carattere jolly ( `*`), che implica tutte le operazioni.
+   * Specificare l&#39;operazione richiamata richiamando `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passare un valore stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specifica un carattere jolly ( `*`), che implica tutte le operazioni.
 
 1. Creare un endpoint EJB.
 
@@ -157,7 +157,7 @@ Aggiungi un endpoint EJB utilizzando l’API Java:
 
 ## Aggiunta di endpoint SOAP {#adding-soap-endpoints}
 
-Puoi aggiungere a livello di programmazione un endpoint SOAP a un servizio utilizzando l’API Java di AEM Forms. Aggiungendo un endpoint SOAP, si consente a un&#39;applicazione client di richiamare il servizio utilizzando la modalità SOAP. In altre parole, quando si impostano le proprietà di connessione necessarie per richiamare AEM Forms, è possibile selezionare la modalità SOAP.
+Puoi aggiungere in modo programmatico un endpoint SOAP a un servizio utilizzando l’API Java di AEM Forms. Aggiungendo un endpoint SOAP, si consente a un&#39;applicazione client di richiamare il servizio utilizzando la modalità SOAP. In altre parole, quando si impostano le proprietà di connessione necessarie per richiamare AEM Forms, è possibile selezionare la modalità SOAP.
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ Per aggiungere un endpoint SOAP a un servizio, eseguire le operazioni seguenti:
 
 1. Includi file di progetto.
 1. Creare un `EndpointRegistryClient` oggetto.
-1. Impostare gli attributi dell&#39;endpoint SOAP.
+1. Imposta gli attributi dell’endpoint SOAP.
 1. Creare un endpoint SOAP.
 1. Abilita l’endpoint.
 
@@ -202,11 +202,11 @@ Per aggiungere un endpoint SOAP a un servizio, specificare i valori seguenti:
 * **Descrizione**: specifica la descrizione dell&#39;endpoint.
 * **Nome**: specifica il nome dell&#39;endpoint.
 * **Valore dell’identificatore del servizio**: specifica il servizio a cui appartiene l&#39;endpoint.
-* **Nome operazione**: specifica il nome dell&#39;operazione richiamata tramite l&#39;endpoint. Durante la creazione di un endpoint SOAP, specifica un carattere jolly ( `*`). Tuttavia, se si desidera specificare un&#39;operazione specifica anziché richiamare tutte le operazioni di servizio, specificare il nome dell&#39;operazione anziché utilizzare il carattere jolly ( `*`).
+* **Nome operazione**: specifica il nome dell&#39;operazione richiamata tramite l&#39;endpoint. Quando crei un endpoint SOAP, specifica un carattere jolly ( `*`). Tuttavia, se si desidera specificare un&#39;operazione specifica anziché richiamare tutte le operazioni di servizio, specificare il nome dell&#39;operazione anziché utilizzare il carattere jolly ( `*`).
 
 **Creare un endpoint SOAP**
 
-Dopo aver impostato gli attributi dell&#39;endpoint SOAP, è possibile creare un endpoint SOAP.
+Dopo aver impostato gli attributi dell’endpoint SOAP, puoi creare un endpoint SOAP.
 
 **Abilita l’endpoint**
 
@@ -222,7 +222,7 @@ Dopo aver creato un endpoint, devi abilitarlo. Quando l’endpoint è abilitato,
 
 ### Aggiungere un endpoint SOAP utilizzando l’API Java {#add-a-soap-endpoint-using-the-java-api}
 
-Aggiungere un endpoint SOAP a un servizio utilizzando l’API Java:
+Aggiungi un endpoint SOAP a un servizio utilizzando l’API Java:
 
 1. Includi file di progetto.
 
@@ -233,14 +233,14 @@ Aggiungere un endpoint SOAP a un servizio utilizzando l’API Java:
    * Creare un `ServiceClientFactory` oggetto che contiene proprietà di connessione.
    * Creare un `EndpointRegistryClient` mediante il costruttore e passando il `ServiceClientFactory` oggetto.
 
-1. Impostare gli attributi dell&#39;endpoint SOAP.
+1. Imposta gli attributi dell’endpoint SOAP.
 
    * Creare un `CreateEndpointInfo` mediante il costruttore.
    * Specifica il valore dell’identificatore del connettore richiamando `CreateEndpointInfo` dell&#39;oggetto `setConnectorId` e passando il valore stringa `SOAP`.
    * Specifica la descrizione dell’endpoint richiamando `CreateEndpointInfo` dell&#39;oggetto `setDescription` e fornendo un valore stringa che descrive l’endpoint.
    * Specifica il nome dell’endpoint richiamando `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore stringa che specifica il nome.
    * Specifica il servizio a cui appartiene l’endpoint richiamando `CreateEndpointInfo` dell&#39;oggetto `setServiceId` e passando un valore stringa che specifica il nome del servizio.
-   * Specificare l&#39;operazione richiamata richiamando `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passando un valore stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificare un carattere jolly ( `*`), che implica tutte le operazioni.
+   * Specificare l&#39;operazione richiamata richiamando `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passando un valore stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specifica un carattere jolly ( `*`), che implica tutte le operazioni.
 
 1. Creare un endpoint SOAP.
 
@@ -1083,7 +1083,7 @@ Modifica un endpoint utilizzando l’API Java:
 
 ## Rimozione degli endpoint {#removing-endpoints}
 
-Puoi rimuovere in modo programmatico un endpoint da un servizio utilizzando l’API Java di AEM Forms. Dopo aver rimosso un endpoint, non è possibile richiamare il servizio utilizzando il metodo di chiamata abilitato per l&#39;endpoint. Ad esempio, se si rimuove un endpoint SOAP da un servizio, non è possibile richiamare il servizio utilizzando la modalità SOAP.
+Puoi rimuovere in modo programmatico un endpoint da un servizio utilizzando l’API Java di AEM Forms. Dopo aver rimosso un endpoint, non è possibile richiamare il servizio utilizzando il metodo di chiamata abilitato per l&#39;endpoint. Ad esempio, se rimuovi un endpoint SOAP da un servizio, non puoi richiamare il servizio utilizzando la modalità SOAP.
 
 Per dimostrare come rimuovere un endpoint da un servizio, in questa sezione viene rimosso un endpoint EJB da un servizio denominato *Crittografia documento*.
 
@@ -1214,7 +1214,7 @@ Per recuperare in modo programmatico le informazioni sul connettore dell&#39;end
 Specificare il tipo di connettore da cui recuperare le informazioni. Esistono i seguenti tipi di connettori:
 
 * **EJB**: consente a un&#39;applicazione client di richiamare un servizio utilizzando la modalità EJB.
-* **SOAP**: consente a un&#39;applicazione client di richiamare un servizio utilizzando la modalità SOAP.
+* **SOAP**: consente a un’applicazione client di richiamare un servizio utilizzando la modalità SOAP.
 * **Cartella controllata**: abilita le cartelle controllate per richiamare un servizio.
 * **E-mail**: abilita i messaggi e-mail per richiamare un servizio.
 * **Remoting**: consente a un&#39;applicazione client Flex di richiamare un servizio.

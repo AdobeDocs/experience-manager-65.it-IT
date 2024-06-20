@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 In una configurazione della distribuzione del portale incentrata sui moduli, lo sviluppo dei moduli e lo sviluppo del portale sono due attività distinte. Mentre i progettisti di moduli progettano e memorizzano i moduli in un repository, gli sviluppatori Web creano un&#39;applicazione Web per l&#39;elenco dei moduli e gestiscono gli invii. Forms viene quindi copiato sul livello web in quanto non vi è alcuna comunicazione tra l’archivio Forms e l’applicazione web.
 
-Questo causa spesso problemi nella gestione della configurazione e ritardi nella produzione. Ad esempio, se nel repository è disponibile una versione più recente di un modulo, Progettazione moduli sostituisce il modulo sul livello Web, modifica l&#39;applicazione Web e ridistribuisce il modulo sul sito pubblico. La ridistribuzione dell’applicazione web può causare tempi di inattività del server. Poiché il tempo di inattività del server è un&#39;attività pianificata, le modifiche non possono essere inviate immediatamente al sito pubblico.
+Questo causa spesso problemi nella gestione della configurazione e ritardi nella produzione. Ad esempio, se nell&#39;archivio è disponibile una versione più recente di un modulo, il modulo Designer sostituisce il modulo sul livello web, modifica l&#39;applicazione web e ridistribuisce il modulo sul sito pubblico. La ridistribuzione dell’applicazione web può causare tempi di inattività del server. Poiché il tempo di inattività del server è un&#39;attività pianificata, le modifiche non possono essere inviate immediatamente al sito pubblico.
 
 Forms Portal riduce i costi generali di gestione e i ritardi di produzione. Fornisce agli sviluppatori web i componenti necessari per creare e personalizzare un portale Forms nei siti web creati con Adobe Experience Manager (AEM).
 

@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 0%
@@ -137,7 +137,7 @@ Convalidare un documento DDX utilizzando l&#39;API del servizio Assembler (Java)
 
 [Convalida dei documenti DDX](#validating-ddx-documents)
 
-[Quick Start (modalità SOAP): convalida dei documenti DDX tramite l’API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (modalità SOAP)
+[Guida rapida (modalità SOAP): convalida dei documenti DDX tramite l’API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (modalità SOAP)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 AEM Forms su JEE consente di utilizzare un modulo adattivo in HTML Workspace.
 
-Poiché è possibile selezionare un XDP durante la progettazione del processo, è stata aggiunta la possibilità di sfogliare da un archivio AEM di un modulo adattivo esistente. Questa funzionalità consente a Process Designer di configurare un modulo adattivo in Start Point e Task.
+Poiché è possibile selezionare un XDP durante la progettazione del processo, è stata aggiunta la possibilità di sfogliare da un archivio AEM di un modulo adattivo esistente. Questa funzionalità consente a Process Designer di configurare un modulo adattivo in Start Point e in Task.
 
 ## Esperienza di progettazione del processo {#process-design-experience}
 
@@ -43,7 +44,7 @@ HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre 
 
 1. Per inviare un modulo adattivo, utilizza **Invia** o instradare le azioni disponibili, come nel caso di Mobile Forms. Qualsiasi pulsante Invia tipo di modulo adattivo è nascosto.
 
-1. **Visibilità della barra degli strumenti Globale del modulo adattivo**: se Process Designer nasconde la barra degli strumenti globale/di primo livello, la barra degli strumenti e i pulsanti non vengono visualizzati nei moduli adattivi.
+1. **Visibilità della barra degli strumenti Globale del modulo adattivo**: se Elabora Designer nasconde la barra degli strumenti globale/di primo livello, la barra degli strumenti e i pulsanti non vengono visualizzati nei moduli adattivi.
 
 1. **Controlli di navigazione di Workspace per Adaptive Forms**: i pulsanti Avanti/Indietro sono disponibili insieme ai pulsanti Salva, Invia e Inoltra azione per un modulo adattivo in HTML Workspace. Fai clic sui pulsanti Successivo/Precedente per passare ai pannelli dei moduli adattivi in HTML Workspace. I pulsanti Successivo/Precedente offrono una navigazione approfondita, simile ai controlli di navigazione nella visualizzazione Mobile dei moduli adattivi.
 

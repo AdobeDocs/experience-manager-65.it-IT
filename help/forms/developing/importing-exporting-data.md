@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 0%
@@ -345,7 +345,7 @@ Esporta i dati del modulo utilizzando l’API di integrazione dei dati del modul
 
 [Riepilogo dei passaggi](importing-exporting-data.md#summary-of-steps)
 
-[Quick Start (modalità SOAP): esportazione dei dati del modulo tramite API Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Quick Start (modalità SOAP): esportazione di dati modulo tramite API Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

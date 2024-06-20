@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms, Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +28,7 @@ Per ulteriori informazioni, consulta [Introduzione a AEM Forms Workspace](/help/
 
 ## Acquisizione di familiarità {#getting-familiar}
 
-Per avere familiarità con il processo end-to-end di creazione di un&#39;applicazione Forms per automatizzare un processo aziendale, seguire la procedura dettagliata. Dopo aver seguito la procedura dettagliata, è possibile creare, gestire e testare un&#39;applicazione utilizzando Workbench, Designer e l&#39;area di lavoro di AEM Forms. Per informazioni dettagliate sull’implementazione, consulta [Creazione della prima applicazione AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+Per avere familiarità con il processo end-to-end di creazione di un&#39;applicazione Forms per automatizzare un processo aziendale, seguire la procedura dettagliata. Dopo aver seguito la procedura dettagliata, è possibile creare, gestire e testare un&#39;applicazione utilizzando l&#39;area di lavoro Workbench, Designer e AEM Forms. Per informazioni dettagliate sull’implementazione, consulta [Creazione della prima applicazione AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Panoramica funzionale {#functional-overview}
 

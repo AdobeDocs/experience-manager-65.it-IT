@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
@@ -86,7 +87,7 @@ Prima di riavviare Forms Server dopo un ripristino, eseguire le operazioni segue
    1. Clic **Inizio** per sincronizzare le risorse dall’archivio.
 
 1. In un ambiente cluster, il nodo principale (rispetto all’AEM) deve essere posizionato prima dei nodi secondari.
-1. Accertarsi che non vengano avviati processi da origini interne o esterne, ad esempio gli iniziatori di processi Web, SOAP o EJB, fino alla convalida del normale funzionamento del sistema.
+1. Verificare che non vengano avviati processi da origini interne o esterne, quali il Web, l&#39;SOAP o gli iniziatori di processi EJB, fino alla convalida del normale funzionamento del sistema.
 
 Se il database principale dei moduli AEM viene spostato o modificato, esaminare le guide all&#39;installazione relative al server applicazioni per informazioni sull&#39;aggiornamento delle informazioni di connessione al database per le origini dati dei moduli AEM IDP_DS ed EDC_DS.
 

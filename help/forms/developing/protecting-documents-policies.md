@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '15394'
 ht-degree: 0%
@@ -261,7 +261,7 @@ Crea una policy utilizzando Document Security API (Java):
 
 Per esempi di codice con il servizio Document Security, consulta:
 
-* &quot;Guida rapida (modalità SOAP): creazione di un criterio tramite l’API Java&quot;
+* &quot;Guida rapida (modalità SOAP): creazione di una policy tramite API Java&quot;
 
 ### Creare un criterio utilizzando l’API del servizio web {#create-a-policy-using-the-web-service-api}
 
@@ -504,7 +504,7 @@ Elimina una policy utilizzando Document Security API (Java):
 
 Per esempi di codice con il servizio Document Security, consulta la sezione Quick Starts (Avvio rapido) seguente:
 
-* &quot;Guida rapida (modalità SOAP): eliminazione di un criterio tramite l’API Java&quot;
+* &quot;Guida rapida (modalità SOAP): eliminazione di un criterio utilizzando l’API Java&quot;
 
 ### Eliminare i criteri utilizzando l’API del servizio web {#delete-policies-using-the-web-service-api}
 
@@ -1695,7 +1695,7 @@ Cerca gli eventi utilizzando l’API di Rights Management (Java):
 
 Per esempi di codice relativi all&#39;utilizzo del servizio di Rights Management, vedere la Guida introduttiva seguente:
 
-* &quot;Quick Start (SOAP): ricerca di eventi tramite l’API Java&quot;
+* &quot;Guida rapida (SOAP): ricerca di eventi tramite l’API Java&quot;
 
 ### Cercare gli eventi utilizzando l’API del servizio web {#search-for-events-using-the-web-service-api}
 

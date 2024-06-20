@@ -8,7 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -56,7 +57,7 @@ La tabella seguente elenca tutti i tipi di persistenza supportati e i vari param
  </tbody>
 </table>
 
-TarMK è progettato per garantire prestazioni elevate, mentre MongoMK e RDBMK sono progettati per offrire scalabilità. L’Adobe consiglia vivamente TarMK come tecnologia di persistenza predefinita per tutti gli scenari di distribuzione di AEM Forms, sia per le istanze Author che Publish, ad eccezione dei casi di utilizzo descritti nella sezione [Scelta di Mongo o di un microkernel di database relazionale su TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+TarMK è progettato per garantire prestazioni elevate, mentre MongoMK e RDBMK sono progettati per offrire scalabilità. L’Adobe consiglia vivamente TarMK come tecnologia di persistenza predefinita per tutti gli scenari di distribuzione di AEM Forms, sia per le istanze Author che per quelle Publish, ad eccezione dei casi di utilizzo descritti nella sezione [Scelta di Mongo o di un microkernel di database relazionale su TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
 
 Per un elenco dei microkernel supportati, vedere [AEM Forms sui requisiti tecnici OSGi](/help/sites-deploying/technical-requirements.md) o [Combinazioni di piattaforme supportate da AEM Forms su JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) articoli.
 

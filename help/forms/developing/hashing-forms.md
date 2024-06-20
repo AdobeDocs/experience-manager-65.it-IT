@@ -3,8 +3,9 @@ title: Come si generano e funzionano gli hash nei PDF forms dinamici?
 description: Generazione e utilizzo degli hash nei PDF forms dinamici.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Document Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 ## Conoscenze preliminari {#prerequisite-knowledge}
 
-È necessaria una certa esperienza con AEM Forms su JEE Designer, così come la possibilità di accedere e chiamare funzioni in oggetti script.
+È necessaria una certa esperienza con AEM Forms su JEE Designer, così come la capacità di accedere e chiamare funzioni negli oggetti script.
 
 ## Livello utente {#user-level}
 

@@ -7,7 +7,7 @@ topic-tags: develop
 role: Developer
 exl-id: 82f0b6c1-ca0c-48c7-b7f6-b54704ac0830
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Per il servizio Acrobat Reader DC Extensions sono disponibili i seguenti servizi di avvio rapido.
 
-[Quick Start (modalità SOAP):Applicazione dei diritti di utilizzo tramite l’API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Quick Start (modalità SOAP):Applicazione dei diritti di utilizzo tramite API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Rimozione dei diritti di utilizzo dai documenti di PDF](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
@@ -30,7 +30,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 >
 >I Quick Starts in Programming with AEM Forms si basano sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire i percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Start (modalità SOAP):Applicazione dei diritti di utilizzo tramite l’API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## Quick Start (modalità SOAP):Applicazione dei diritti di utilizzo tramite API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito vengono applicati diritti di utilizzo a un documento PDF denominato *Loan.pdf*. Il documento PDF con abilitazione per i diritti viene salvato come file PDF denominato *LoanUsageRights.pdf*. Al documento PDF vengono applicati i seguenti diritti di utilizzo: `enabledComments`, `enabledFormFillIn`, e `enabledDigitalSignatures`. (vedere [Applicazione dei diritti di utilizzo ai documenti di PDF](/help/forms/developing/assigning-usage-rights.md).)
 

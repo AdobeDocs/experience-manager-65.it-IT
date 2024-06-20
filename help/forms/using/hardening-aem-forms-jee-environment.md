@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7608'
 ht-degree: 1%
@@ -264,7 +265,7 @@ Configuration Manager ha utilizzato un servlet distribuito sul server applicazio
 
 **Blocca accesso remoto all&#39;archivio fonti attendibili**
 
-Configuration Manager consente di caricare una credenziale di estensioni Acrobat Reader DC nell’archivio fonti attendibili di AEM Forms su JEE. L&#39;accesso al servizio credenziali dell&#39;archivio fonti attendibili tramite protocolli remoti (SOAP ed EJB) è stato abilitato per impostazione predefinita. Questo accesso non è più necessario dopo che hai caricato le credenziali dei diritti tramite Configuration Manager o se decidi di utilizzare la console di amministrazione in un secondo momento per gestire le credenziali.
+Configuration Manager consente di caricare una credenziale di estensioni Acrobat Reader DC nell’archivio fonti attendibili di AEM Forms su JEE. Ciò significa che l’accesso al servizio credenziali dell’archivio fonti attendibili tramite protocolli remoti (SOAP ed EJB) è stato abilitato per impostazione predefinita. Questo accesso non è più necessario dopo che hai caricato le credenziali dei diritti tramite Configuration Manager o se decidi di utilizzare la console di amministrazione in un secondo momento per gestire le credenziali.
 
 Per disabilitare l&#39;accesso remoto a tutti i servizi dell&#39;archivio fonti attendibili, seguire la procedura descritta nella sezione [Disattivazione dell&#39;accesso remoto non essenziale ai servizi](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
@@ -688,7 +689,7 @@ Il processo di filtro Referrer può essere descritto come segue:
    1. Se si tratta di POST, Forms Server esegue il controllo dell&#39;intestazione Referrer.
    1. Se è GET, il server Forms ignora il controllo Referrer, a meno che *CSRF_CHECK_GETS* è impostato su true, nel qual caso esegue il controllo dell’intestazione Referrer. *CSRF_CHECK_GETS* è specificato in *web.xml* per la tua applicazione.
 
-1. Il server Forms verifica se l&#39;URI richiesto esiste nel inserisco nell&#39;elenco Consentiti di:
+1. Forms Server controlla se l&#39;URI richiesto esiste nel inserisco nell&#39;elenco Consentiti di controllo dell utente:
 
    1. Se l&#39;URI viene inserito nell&#39;elenco Consentiti, il server accetta la richiesta.
    1. Se l’URI richiesto non viene inserito nell&#39;elenco Consentiti, il server recupera il Referrer della richiesta.
@@ -707,7 +708,7 @@ Il processo di filtro Referrer può essere descritto come segue:
 
 AEM Forms su JEE fornisce un filtro Referrer per specificare il Referrer che può accedere alle risorse del server. Per impostazione predefinita, il filtro Referrer non filtra le richieste che utilizzano un metodo HTTP sicuro, ad esempio GET, a meno che *CSRF_CHECK_GETS* è impostato su true. Se il numero di porta per una voce Referrer consentito è impostato su 0, AEM Forms su JEE consentirà tutte le richieste con Referrer provenienti da tale host indipendentemente dal numero di porta. Se non viene specificato alcun numero di porta, sono consentite solo le richieste dalla porta predefinita 80 (HTTP) o dalla porta 443 (HTTPS). Il filtro Referrer è disattivato se tutte le voci nell&#39;elenco Referrer consentiti vengono eliminate.
 
-Quando si installa Document Services per la prima volta, l’elenco Referenti consentiti viene aggiornato con l’indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referenti consentiti vengono restituiti dal sistema operativo host. Ad esempio, un server con un indirizzo IP di 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per tutti i nomi non qualificati restituiti dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), il inserisco nell&#39;elenco Consentiti di non viene aggiornato. Modifica l’elenco dei Referenti consentiti in base all’ambiente aziendale. Non distribuire Forms Server nell’ambiente di produzione con l’elenco dei Destinatari autorizzati predefiniti. Dopo aver modificato uno dei Referrer consentiti, le Eccezioni referente o gli URI, assicurati di riavviare il server affinché le modifiche diventino effettive.
+Quando si installa Document Services per la prima volta, l’elenco Referenti consentiti viene aggiornato con l’indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referenti consentiti vengono restituiti dal sistema operativo host. Ad esempio, un server con un indirizzo IP di 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per qualsiasi nome non qualificato restituito dal sistema operativo host (nomi che non dispongono di indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), il inserisco nell&#39;elenco Consentiti di non viene aggiornato. Modifica l’elenco dei Referenti consentiti in base all’ambiente aziendale. Non distribuire Forms Server nell’ambiente di produzione con l’elenco dei Destinatari autorizzati predefiniti. Dopo aver modificato uno dei Referrer consentiti, le Eccezioni referente o gli URI, assicurati di riavviare il server affinché le modifiche diventino effettive.
 
 **Gestione dell’elenco dei referenti consentiti**
 
@@ -836,8 +837,8 @@ Quando configuri un’architettura di rete sicura come descritto nella sezione p
     <ul> 
      <li><p>applicazioni client di servizi Web, ad esempio applicazioni .NET</p> </li> 
      <li><p>Adobe Reader® utilizza SOAP per AEM Forms sui servizi web del server JEE</p> </li> 
-     <li><p>Adobe di applicazioni Flash® che utilizzano SOAP per i servizi Web di Forms Server</p> </li> 
-     <li><p>Chiamate SDK di AEM Forms su JEE quando utilizzate in modalità SOAP</p> </li> 
+     <li><p>Adobe di applicazioni Flash® utilizza SOAP per i servizi Web di Forms Server</p> </li> 
+     <li><p>Chiamate SDK di AEM Forms su JEE se utilizzate in modalità SOAP</p> </li> 
      <li><p>Ambiente di progettazione di Workbench</p> </li> 
     </ul> </td> 
   </tr> 
@@ -954,7 +955,7 @@ Per informazioni sulle porte WebSphere richieste da AEM Forms su JEE, passare al
 
 ### Configurazione di SSL {#configuring-ssl}
 
-Con riferimento all’architettura fisica descritta nella sezione [Architettura fisica di AEM Forms su JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), è necessario configurare SSL per tutte le connessioni che si intende utilizzare. In particolare, tutte le connessioni SOAP devono essere eseguite tramite SSL per evitare l&#39;esposizione delle credenziali utente in una rete.
+Con riferimento all’architettura fisica descritta nella sezione [Architettura fisica di AEM Forms su JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), è necessario configurare SSL per tutte le connessioni che si intende utilizzare. In particolare, tutte le connessioni SOAP devono essere condotte tramite SSL per evitare l&#39;esposizione delle credenziali utente su una rete.
 
 Per istruzioni su come configurare SSL su JBoss, WebLogic e WebSphere, vedi &quot;Configurazione di SSL&quot; in [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_64).
 

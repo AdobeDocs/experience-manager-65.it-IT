@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1690'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Puoi ottimizzare la distribuzione dei contenuti PDF e migliorare la capacità del servizio Forms di gestire il carico di rete utilizzando la funzionalità di rendering lato client di Acrobat o Adobe Reader. Questo processo è noto come rendering di un modulo sul client. Per eseguire il rendering di un modulo sul client, il dispositivo client (in genere un browser web) deve utilizzare Acrobat 7.0 o Adobe Reader 7.0 o versione successiva.
 
-Le modifiche a un modulo risultanti dall’esecuzione di script lato server non vengono applicate a un modulo sottoposto a rendering nel client, a meno che il sottomodulo principale non contenga `restoreState` attributo impostato su `auto`. Per ulteriori informazioni su questo attributo, consulta [Forms Designer.](https://www.adobe.com/go/learn_aemforms_designer_63)
+Le modifiche a un modulo risultanti dall’esecuzione di script lato server non vengono applicate a un modulo sottoposto a rendering nel client, a meno che il sottomodulo principale non contenga `restoreState` attributo impostato su `auto`. Per ulteriori informazioni su questo attributo, consulta [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Impostare l&#39;opzione di rendering client in fase di esecuzione per eseguire i
 
 È possibile utilizzare Designer per creare un semplice file di PDF dinamico da utilizzare come file di PDF seed. Per eseguire questa attività sono necessari i seguenti passaggi:
 
-1. Determinare se è necessario incorporare i tipi di carattere nel file di PDF seed. Il file di seed PDF deve contenere i font aggiuntivi richiesti dal modulo sottoposto a rendering. Quando si incorporano font nel file di PDF seed, assicurarsi di non violare alcun contratto di licenza per i font. In Designer è possibile determinare se è possibile incorporare legalmente i tipi di carattere. Al momento del salvataggio, se sono presenti tipi di carattere che non è possibile incorporare nel modulo, Designer visualizza un messaggio in cui sono elencati i tipi di carattere che non è possibile incorporare. Questo messaggio non viene visualizzato in Designer per i documenti statici di PDF.
+1. Determinare se è necessario incorporare i tipi di carattere nel file di PDF seed. Il file di seed PDF deve contenere i font aggiuntivi richiesti dal modulo sottoposto a rendering. Quando si incorporano font nel file di PDF seed, assicurarsi di non violare alcun contratto di licenza per i font. In Designer, è possibile determinare se è possibile incorporare legalmente i tipi di carattere. Al momento del salvataggio, se sono presenti tipi di carattere che non è possibile incorporare nel modulo, in Designer viene visualizzato un messaggio in cui sono elencati i tipi di carattere che non è possibile incorporare. Questo messaggio non viene visualizzato in Designer per i documenti statici di PDF.
 1. Se si sta creando il file di PDF seed in Designer, è consigliabile aggiungere almeno un campo di testo contenente un messaggio. Il messaggio deve essere indirizzato agli utenti delle versioni precedenti di Adobe Reader in cui si dichiara che per visualizzare il documento è necessario Acrobat 7.0 o versione successiva oppure Adobe Reader 7.0 o versione successiva.
 1. Salvare il file di seed PDF come file di dynamic PDF con l&#39;estensione PDF.
 

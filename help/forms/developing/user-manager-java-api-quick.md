@@ -8,22 +8,22 @@ topic-tags: develop
 role: Developer
 exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
 
 ---
 
-# Guida introduttiva API Java di User Manager (SOAP) {#user-manager-java-api-quick-start-soap}
+# Guida introduttiva all’API Java di User Manager (SOAP) {#user-manager-java-api-quick-start-soap}
 
-API Java Quick Start (SOAP) è disponibile per l’API User Manager.
+Java API Quick Start (SOAP) è disponibile per l’API User Manager.
 
 [Quick Start (modalità SOAP): aggiunta di utenti utilizzando l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
 [Quick Start (modalità SOAP): eliminazione di utenti tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[Guida introduttiva (modalità SOAP): creazione di gruppi mediante l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
+[Guida rapida (modalità SOAP): creazione di gruppi tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
 
 [Quick Start (modalità SOAP): gestione di utenti e gruppi tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
 
@@ -31,7 +31,7 @@ API Java Quick Start (SOAP) è disponibile per l’API User Manager.
 
 [Quick Start (modalità SOAP): sincronizzazione programmatica degli utenti tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
 
-[Guida introduttiva (modalità SOAP): gestione programmatica dei nodi Preferences tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
+[Quick Start (modalità SOAP): gestione programmatica dei nodi delle preferenze tramite l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
@@ -747,7 +747,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente
  
 ```
 
-## Guida introduttiva (modalità SOAP): creazione di gruppi mediante l’API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
+## Guida rapida (modalità SOAP): creazione di gruppi tramite l’API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice riportato di seguito viene creato un gruppo denominato AdobeGroup in AEM Forms. (vedere [Creazione di gruppi](/help/forms/developing/users.md#creating-groups).)
 
@@ -1002,7 +1002,7 @@ public class ManagePreferences {
 }
 ```
 
-## Guida introduttiva (modalità SOAP): gestione programmatica dei nodi Preferences tramite l’API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
+## Quick Start (modalità SOAP): gestione programmatica dei nodi delle preferenze tramite l’API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
 I seguenti modelli di codice Java gestiscono i nodi delle preferenze utilizzando le API di gestione utente ( Vedi [Gestione programmatica dei nodi delle preferenze](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 

@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '9814'
 ht-degree: 0%
@@ -24,17 +24,17 @@ La maggior parte dei servizi AEM Forms nel contenitore di servizi è configurata
 * **richiesta SOAP**: inviato a un servizio Forms da un’applicazione client che richiede un’azione.
 * **Risposta SOAP**: inviato a un’applicazione client da un servizio Forms dopo l’elaborazione di una richiesta SOAP.
 
-Utilizzando i servizi web, puoi eseguire le stesse operazioni dei servizi AEM Forms possibili utilizzando l’API Java. Un vantaggio dell’utilizzo dei servizi web per richiamare i servizi AEM Forms è la possibilità di creare un’applicazione client in un ambiente di sviluppo che supporta SOAP. Un&#39;applicazione client non è associata a un ambiente di sviluppo o a un linguaggio di programmazione specifico. È ad esempio possibile creare un&#39;applicazione client utilizzando Microsoft Visual Studio .NET e C# come linguaggio di programmazione.
+Utilizzando i servizi web, puoi eseguire le stesse operazioni dei servizi AEM Forms possibili utilizzando l’API Java. Un vantaggio dell’utilizzo dei servizi web per richiamare i servizi AEM Forms è la possibilità di creare un’applicazione client in un ambiente di sviluppo che supporta l’SOAP. Un&#39;applicazione client non è associata a un ambiente di sviluppo o a un linguaggio di programmazione specifico. È ad esempio possibile creare un&#39;applicazione client utilizzando Microsoft Visual Studio .NET e C# come linguaggio di programmazione.
 
-I servizi AEM Forms sono esposti tramite il protocollo SOAP e sono compatibili con WSI Basic Profile 1.1. Web Services Interoperability (WSI) è un&#39;organizzazione di standard aperti che promuove l&#39;interoperabilità dei servizi web su più piattaforme. Per informazioni, consulta [https://www.ws-i.org/](https://www.ws-i.org).
+I servizi AEM Forms sono esposti tramite il protocollo SOAP e sono conformi al profilo di base WSI 1.1. Web Services Interoperability (WSI) è un&#39;organizzazione di standard aperti che promuove l&#39;interoperabilità dei servizi web su più piattaforme. Per informazioni, consulta [https://www.ws-i.org/](https://www.ws-i.org).
 
 AEM Forms supporta i seguenti standard di servizi web:
 
 * **Codifica**: supporta solo la codifica letterale e del documento (che è la codifica preferita in base al profilo di base WSI). (vedere [Richiamare AEM Forms utilizzando la codifica Base64](#invoking-aem-forms-using-base64-encoding).)
-* **MTOM**: rappresenta un modo per codificare gli allegati con richieste SOAP. (vedere [Richiamare AEM Forms tramite MTOM](#invoking-aem-forms-using-mtom).)
-* **SwaRef**: rappresenta un altro modo per codificare gli allegati con richieste SOAP. (vedere [Richiamare AEM Forms con SwaRef](#invoking-aem-forms-using-swaref).)
-* **SOAP con allegati**: supporta sia MIME che DIME (Direct Internet Message Encapsulation, incapsulamento diretto dei messaggi Internet). Questi protocolli sono metodi standard per l&#39;invio di allegati tramite SOAP. Le applicazioni Microsoft Visual Studio .NET utilizzano DIME. (vedere [Richiamare AEM Forms utilizzando la codifica Base64](#invoking-aem-forms-using-base64-encoding).)
-* **WS-Security**: supporta un profilo token password nome utente, che è un metodo standard per l&#39;invio di nomi utente e password come parte dell&#39;intestazione SOAP di WS Security. AEM Forms supporta anche l’autenticazione HTTP di base. s
+* **MTOM**: rappresenta un modo per codificare gli allegati con le richieste SOAP. (vedere [Richiamare AEM Forms tramite MTOM](#invoking-aem-forms-using-mtom).)
+* **SwaRef**: rappresenta un altro modo per codificare gli allegati con le richieste SOAP. (vedere [Richiamare AEM Forms con SwaRef](#invoking-aem-forms-using-swaref).)
+* **SOAP con allegati**: supporta sia MIME che DIME (Direct Internet Message Encapsulation, incapsulamento diretto dei messaggi Internet). Questi protocolli sono metodi standard per inviare allegati tramite SOAP. Le applicazioni Microsoft Visual Studio .NET utilizzano DIME. (vedere [Richiamare AEM Forms utilizzando la codifica Base64](#invoking-aem-forms-using-base64-encoding).)
+* **WS-Security**: supporta un profilo token password nome utente, che è un metodo standard per inviare nomi utente e password come parte dell’intestazione SOAP di WS Security. AEM Forms supporta anche l’autenticazione HTTP di base. s
 
 Per richiamare i servizi AEM Forms utilizzando un servizio Web, in genere si crea una libreria proxy che utilizza il servizio WSDL. Il *Richiamare AEM Forms tramite servizi Web* La sezione utilizza JAX-WS per creare classi proxy Java per richiamare i servizi. (vedere [Creazione di classi proxy Java tramite JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
@@ -226,13 +226,13 @@ Protocollo di trasmissione per restituito `BLOB` Gli oggetti dipendono da divers
 1. **L&#39;URL di destinazione specifica il protocollo di trasmissione**. Se l’URL di destinazione specificato nella chiamata SOAP contiene il parametro `blob="`*TIPO_BLOB*&quot;, then *TIPO_BLOB* determina il protocollo di trasmissione. *TIPO_BLOB* è un segnaposto per base64, dime, mime, http, mtom o swaref.
 1. **L’endpoint SOAP del servizio è Smart**. Se si verificano le seguenti condizioni, i documenti di output vengono restituiti utilizzando lo stesso protocollo di trasmissione dei documenti di input:
 
-   * Il parametro dell&#39;endpoint SOAP del servizio Default Protocol for Output Blob Objects è impostato su Smart.
+   * Il parametro dell’endpoint SOAP del servizio Default Protocol for Output Blob Objects è impostato su Smart.
 
-     Per ogni servizio con un endpoint SOAP, la console di amministrazione consente di specificare il protocollo di trasmissione per i BLOB restituiti. (vedere [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
+     Per ogni servizio con un endpoint SOAP, la console di amministrazione consente di specificare il protocollo di trasmissione per eventuali BLOB restituiti. (vedere [aiuto per l&#39;amministrazione](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
    * Il servizio AEM Forms accetta uno o più documenti come input.
 
-1. **L&#39;endpoint SOAP del servizio non è Smart**. Il protocollo configurato determina il protocollo di trasmissione del documento e i dati vengono restituiti nel corrispondente `BLOB` campo. Ad esempio, se l’endpoint SOAP è impostato su DIME, il BLOB restituito si trova in `blob.attachmentID` indipendentemente dal protocollo di trasmissione di qualsiasi documento di input.
+1. **L’endpoint SOAP del servizio non è Smart**. Il protocollo configurato determina il protocollo di trasmissione del documento e i dati vengono restituiti nel corrispondente `BLOB` campo. Ad esempio, se l’endpoint SOAP è impostato su DIME, il BLOB restituito si trova in `blob.attachmentID` indipendentemente dal protocollo di trasmissione di qualsiasi documento di input.
 1. **Altrimenti**. Se un servizio non accetta il tipo di documento come input, i documenti di output vengono restituiti nel `BLOB.remoteURL` sul protocollo HTTP.
 
 Come descritto nella prima condizione, puoi garantire il tipo di trasmissione per tutti i documenti restituiti estendendo l’URL dell’endpoint SOAP con un suffisso come segue:
@@ -259,7 +259,7 @@ Ecco la correlazione tra i tipi di trasmissione e il campo da cui si ottengono i
 
 **Trasmissione MTOM di array di byte con codifica base64**
 
-Oltre al `BLOB` MTOM supporta qualsiasi parametro di matrice di byte o campo di matrice di byte di tipo complesso. Ciò significa che i framework SOAP dei client che supportano MTOM possono inviare qualsiasi `xsd:base64Binary` come allegato MTOM (invece di un testo con codifica base64). Gli endpoint SOAP di AEM Forms possono leggere questo tipo di codifica di matrice di byte. Tuttavia, il servizio AEM Forms restituisce sempre un tipo di matrice di byte come testo con codifica base64. I parametri dell&#39;array di byte di output non supportano MTOM.
+Oltre al `BLOB` MTOM supporta qualsiasi parametro di matrice di byte o campo di matrice di byte di tipo complesso. Ciò significa che i framework SOAP client che supportano MTOM possono inviare qualsiasi `xsd:base64Binary` come allegato MTOM (invece di un testo con codifica base64). Gli endpoint SOAP di AEM Forms possono leggere questo tipo di codifica di matrice di byte. Tuttavia, il servizio AEM Forms restituisce sempre un tipo di matrice di byte come testo con codifica base64. I parametri dell&#39;array di byte di output non supportano MTOM.
 
 I servizi AEM Forms che restituiscono una grande quantità di dati binari utilizzano il tipo Document/BLOB anziché il tipo a matrice di byte. Il tipo di documento è molto più efficiente per la trasmissione di grandi quantità di dati.
 
@@ -285,11 +285,11 @@ Nella tabella seguente sono elencati i tipi di dati Java e viene visualizzato il
   </tr>
   <tr>
    <td><p><code>java.util.Date</code></p></td>
-   <td><p>Il <code>DATE</code> tipo, definito in un WSDL di servizio come segue:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se un’operazione del servizio AEM Forms richiede un <code>java.util.Date</code> come input, l'applicazione client SOAP deve trasmettere la data nel <code>DATE.date</code> campo. Impostazione di <code>DATE.calendar</code> in questo caso causa un’eccezione di runtime. Se il servizio restituisce un <code>java.util.Date</code>, la data viene restituita nel <code>DATE.date</code> campo.</p></td>
+   <td><p>Il <code>DATE</code> tipo, definito in un WSDL di servizio come segue:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se un’operazione del servizio AEM Forms richiede un <code>java.util.Date</code> come input, l’applicazione client SOAP deve trasmettere la data nel campo <code>DATE.date</code> campo. Impostazione di <code>DATE.calendar</code> in questo caso causa un’eccezione di runtime. Se il servizio restituisce un <code>java.util.Date</code>, la data viene restituita nel <code>DATE.date</code> campo.</p></td>
   </tr>
   <tr>
    <td><p><code>java.util.Calendar</code></p></td>
-   <td><p>Il <code>DATE</code> tipo, definito in un WSDL di servizio come segue:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se un’operazione del servizio AEM Forms richiede un <code>java.util.Calendar</code> come input, l'applicazione client SOAP deve trasmettere la data nel <code>DATE.caledendar</code> campo. Impostazione di <code>DATE.date</code> in questo caso causa un'eccezione di runtime. Se il servizio restituisce un <code>java.util.Calendar</code>, quindi la data viene restituita nel <code>DATE.calendar</code> campo. </p></td>
+   <td><p>Il <code>DATE</code> tipo, definito in un WSDL di servizio come segue:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se un’operazione del servizio AEM Forms richiede un <code>java.util.Calendar</code> come input, l’applicazione client SOAP deve trasmettere la data nel campo <code>DATE.caledendar</code> campo. Impostazione di <code>DATE.date</code> in questo caso causa un'eccezione di runtime. Se il servizio restituisce un <code>java.util.Calendar</code>, quindi la data viene restituita nel <code>DATE.calendar</code> campo. </p></td>
   </tr>
   <tr>
    <td><p><code>java.math.BigDecimal</code></p></td>
@@ -422,7 +422,7 @@ Nella tabella seguente sono elencati i tipi di dati Java e viene visualizzato il
     http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1
    ```
 
-1. Creare un file BAT per eseguire lo script di compilazione Ant. Il comando seguente può trovarsi all&#39;interno di un file BAT responsabile dell&#39;esecuzione dello script di generazione della formica:
+1. Crea un file BAT per eseguire lo script di generazione della formica. Il seguente comando può trovarsi all’interno di un file BAT responsabile dell’esecuzione dello script di generazione della formica:
 
    ```java
     ant -buildfile "build.xml" wsdl
@@ -505,7 +505,7 @@ Per generare i file della libreria Java Axis, effettuare le seguenti operazioni:
 
    All’interno di questo script di build della formica, tieni presente che `url` è impostata per fare riferimento al servizio di crittografia WSDL in esecuzione su localhost. Il `username` e `password` le proprietà devono essere impostate su un nome utente e una password validi per i moduli AEM.
 
-1. Creare un file BAT per eseguire lo script di compilazione Ant. Il comando seguente può trovarsi all&#39;interno di un file BAT responsabile dell&#39;esecuzione dello script di generazione della formica:
+1. Crea un file BAT per eseguire lo script di generazione della formica. Il seguente comando può trovarsi all’interno di un file BAT responsabile dell’esecuzione dello script di generazione della formica:
 
    ```java
     ant -buildfile "build.xml" encryption-wsdl2java-client
@@ -563,7 +563,7 @@ Per generare i file della libreria Java Axis, effettuare le seguenti operazioni:
 
 ## Richiamare AEM Forms utilizzando la codifica Base64 {#invoking-aem-forms-using-base64-encoding}
 
-È possibile richiamare un servizio AEM Forms utilizzando la codifica Base64. La codifica Base64 codifica gli allegati inviati con una richiesta di chiamata del servizio Web. Cioè, `BLOB` I dati sono codificati in Base64, non l&#39;intero messaggio SOAP.
+È possibile richiamare un servizio AEM Forms utilizzando la codifica Base64. La codifica Base64 codifica gli allegati inviati con una richiesta di chiamata del servizio Web. Cioè, `BLOB` I dati sono codificati in Base64, non l’intero messaggio SOAP.
 
 L’argomento &quot;Richiamare AEM Forms utilizzando la codifica Base64&quot; riguarda il richiamo del seguente processo di breve durata di AEM Forms denominato `MyApplication/EncryptDocument` utilizzando la codifica Base64.
 
@@ -715,7 +715,7 @@ Inserire l&#39;assembly client .NET appena creato nel computer in cui si sta svi
 
 ## Richiamare AEM Forms tramite MTOM {#invoking-aem-forms-using-mtom}
 
-È possibile richiamare i servizi AEM Forms utilizzando il servizio Web standard MTOM. Questo standard definisce il modo in cui i dati binari, ad esempio un documento PDF, vengono trasmessi tramite Internet o Intranet. Una caratteristica di MTOM è l&#39;utilizzo di `XOP:Include` elemento. Questo elemento è definito nella specifica XOP (XML Binary Optimized Packaging) per fare riferimento agli allegati binari di un messaggio SOAP.
+È possibile richiamare i servizi AEM Forms utilizzando il servizio Web standard MTOM. Questo standard definisce il modo in cui i dati binari, ad esempio un documento PDF, vengono trasmessi tramite Internet o Intranet. Una caratteristica di MTOM è l&#39;utilizzo di `XOP:Include` elemento. Questo elemento è definito nella specifica XOP (Binary Optimized Packaging) XML per fare riferimento agli allegati binari di un messaggio SOAP.
 
 La discussione qui riguarda l’utilizzo di MTOM per richiamare il seguente processo di breve durata di AEM Forms denominato `MyApplication/EncryptDocument`.
 
@@ -929,7 +929,7 @@ Quando viene richiamato, il processo esegue le azioni seguenti:
 
 >[!NOTE]
 >
->È consigliabile avere familiarità con la chiamata di AEM Forms tramite SOAP. (vedere [Richiamare AEM Forms tramite servizi Web](#invoking-aem-forms-using-web-services).)
+>Si consiglia di avere familiarità con la chiamata di AEM Forms tramite SOAP. (vedere [Richiamare AEM Forms tramite servizi Web](#invoking-aem-forms-using-web-services).)
 
 ### Creazione di un assembly client .NET che utilizza dati tramite HTTP {#creating-a-net-client-assembly-that-uses-data-over-http}
 
@@ -1027,7 +1027,7 @@ Puoi richiamare un servizio AEM Forms utilizzando le classi proxy Java e i dati 
 
 ## Richiamare AEM Forms utilizzando DIME {#invoking-aem-forms-using-dime}
 
-È possibile richiamare i servizi AEM Forms utilizzando SOAP con allegati. AEM Forms supporta sia gli standard di servizio web MIME che DIME. DIME consente di inviare allegati binari, ad esempio documenti PDF, insieme a richieste di chiamata anziché codificare l’allegato. Il *Richiamare AEM Forms utilizzando DIME* Questa sezione descrive come richiamare il seguente processo di breve durata di AEM Forms denominato `MyApplication/EncryptDocument` utilizzando DIME.
+È possibile richiamare i servizi AEM Forms utilizzando l’SOAP con allegati. AEM Forms supporta sia gli standard di servizio web MIME che DIME. DIME consente di inviare allegati binari, ad esempio documenti PDF, insieme a richieste di chiamata anziché codificare l’allegato. Il *Richiamare AEM Forms utilizzando DIME* Questa sezione descrive come richiamare il seguente processo di breve durata di AEM Forms denominato `MyApplication/EncryptDocument` utilizzando DIME.
 
 Quando viene richiamato, il processo esegue le azioni seguenti:
 
@@ -1232,7 +1232,7 @@ Un utente AEM forms può essere autenticato utilizzando un token SAML ottenuto. 
 
 Per rappresentare un utente specifico, richiama `AuthenticationManager.getAuthResultOnBehalfOfUser` metodo che utilizza un servizio web. Questo metodo restituisce un `AuthResult` che contiene l’asserzione SAML per tale utente.
 
-Quindi, utilizza tale asserzione SAML per richiamare qualsiasi servizio che richiede l’autenticazione. Questa azione comporta l’invio dell’asserzione come parte dell’intestazione SOAP. Quando viene effettuata una chiamata al servizio web con questa asserzione, AEM Forms identifica l’utente come quello rappresentato da tale asserzione. In altre parole, l’utente specificato nell’asserzione è l’utente che sta richiamando il servizio.
+Quindi, utilizza tale asserzione SAML per richiamare qualsiasi servizio che richiede l’autenticazione. Questa azione comporta l’invio dell’asserzione come parte dell’intestazione dell’SOAP. Quando viene effettuata una chiamata al servizio web con questa asserzione, AEM Forms identifica l’utente come quello rappresentato da tale asserzione. In altre parole, l’utente specificato nell’asserzione è l’utente che sta richiamando il servizio.
 
 ### Utilizzo delle classi dell’asse Apache e dell’autenticazione basata su SAML {#using-apache-axis-classes-and-saml-based-authentication}
 

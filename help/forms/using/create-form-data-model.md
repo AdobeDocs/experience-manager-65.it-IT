@@ -6,8 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 solution: Experience Manager, Experience Manager Forms
+feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 1%
@@ -22,7 +23,7 @@ Questo tutorial è un passaggio del [Creare il primo modulo adattivo](../../form
 
 ## Informazioni sull’esercitazione {#about-the-tutorial}
 
-AEM [!DNL Forms] il modulo di integrazione dei dati consente di creare un modello di dati modulo da diverse origini dati back-end, come il profilo utente AEM, i servizi web RESTful, i servizi web basati su SOAP, i servizi OData e i database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi del modulo adattivo sono associati alle proprietà dell’oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e riscrivere i dati del modulo inviato nell’oggetto modello dati.
+AEM [!DNL Forms] il modulo di integrazione dei dati consente di creare un modello di dati modulo da diverse origini dati back-end, come il profilo utente dell’AEM, i servizi web RESTful, i servizi web basati su SOAP, i servizi OData e i database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi del modulo adattivo sono associati alle proprietà dell’oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e riscrivere i dati del modulo inviato nell’oggetto modello dati.
 
 Per ulteriori informazioni sull’integrazione dei dati dei moduli e sul modello di dati dei moduli, consulta [Integrazione dei dati di AEM Forms](../../forms/using/data-integration.md).
 

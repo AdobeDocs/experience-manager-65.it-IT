@@ -6,7 +6,8 @@ topic-tags: author
 role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Workbench, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -61,7 +62,7 @@ Workbench è un ambiente di sviluppo integrato (IDE, Integrated Development Envi
 
 L’illustrazione seguente illustra l’installazione di Workbench, tra cui:
 * Progettazione processi tramite Workbench
-* Progettazione moduli tramite Designer
+* Progettazione moduli con Designer
 
 >[!NOTE]
 >
@@ -78,7 +79,7 @@ Questa sezione descrive i requisiti hardware e software e le piattaforme support
 **Workbench**
 Si consigliano come minimo i seguenti requisiti: Spazio su disco per l&#39;installazione:
 * 680 MB solo per Workbench.
-* 2,15 GB su un&#39;unica unità per un&#39;installazione completa di Workbench, Designer e dell&#39;assieme samples.
+* 2,15 GB su un&#39;unica unità per un&#39;installazione completa di Workbench, Designer e dell&#39;assieme sample.
 * 400 MB per le directory di installazione temporanee - 200 MB nella directory utente \temp e 200 MB nella directory temporanea di Windows.
 
 >[!NOTE]
@@ -103,7 +104,7 @@ Consulta l’elenco completo delle piattaforme supportate per Workbench all’in
 ## Considerazioni sull’installazione di Designer {#designer-installation-considerations}
 
 Per impostazione predefinita, l’installazione di Workbench include una versione di Designer corrispondente in lingua inglese. Se l&#39;applicazione di installazione di Workbench rileva una versione esistente di Designer nel computer, l&#39;installazione potrebbe terminare e prima di continuare è necessario rimuovere la versione corrente di Designer.
-La tabella seguente contiene un elenco completo dei possibili scenari di installazione di Designer che possono verificarsi e delle azioni da intraprendere durante l’installazione di Workbench.
+La tabella seguente contiene un elenco completo dei possibili scenari di installazione di Designer e delle azioni da intraprendere durante l’installazione di Workbench.
 
 <table>
  <tbody>
@@ -114,21 +115,21 @@ La tabella seguente contiene un elenco completo dei possibili scenari di install
   <tr>
    <td><p>Acrobat Pro o Acrobat Pro Extended (include Designer)</p> </td>
    <td><p>Nessuno.<br /> 
-L’installazione di Workbench rileva un’istanza di Designer sul computer installata con Acrobat Pro o Acrobat Pro Extended.<br />
-Diverse versioni di Designer possono coesistere nello stesso sistema, ad esempio Designer 6.4.x per Workbench 6.4 e Designer 6.5.0.x per Workbench 6.5. Non è necessario disinstallare la versione di Designer installata con Acrobat 10 Pro o Acrobat 10 Pro Extended o versione successiva.
+L’installazione di Workbench rileva nel computer un’istanza di Designer installata con Acrobat Pro o Acrobat Pro Extended.<br />
+Versioni diverse di Designer possono coesistere sullo stesso sistema, ad esempio Designer 6.4.x per Workbench 6.4 e Designer 6.5.0.x per Workbench 6.5. Non è necessario disinstallare la versione di Designer installata con Acrobat 10 Pro o Acrobat 10 Pro Extended o versione successiva.
 <br /></p> </td>
   </tr>
   <tr>
    <td><p>Designer (autonomo)</p> </td>
-   <td><p>Nessuno. <br />La versione di Designer inclusa in Workbench è di sola inglese. <br />Il programma di installazione di Workbench non reinstalla una nuova versione di Designer. Viene invece applicata la patch a una versione aggiornata, inclusa nel pacchetto con il programma di installazione di Workbench. Questo consente anche di utilizzare la versione localizzata di Designer all’interno di Workbench.<br /> </p> </td>
+   <td><p>Nessuno. <br />La versione di Designer inclusa in Workbench è di sola inglese. <br />Il programma di installazione di Workbench non reinstalla una nuova versione di Designer. Viene invece applicata la patch a una versione aggiornata, inclusa nel pacchetto con il programma di installazione di Workbench. Questo consente anche di utilizzare la versione localizzata di Designer in Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
 
-### Per disinstallare Designer (autonomo) su Windows 10 {#uninstall-designer-standalone-windows10}
+### Per disinstallare Designer (standalone) su Windows 10 {#uninstall-designer-standalone-windows10}
 
 1. Vai a **Pannello di controllo Campaign > Programmi > Programmi e funzionalità**
-1. Nell&#39;elenco Programmi attualmente installati selezionare **Designer Adobe**.
+1. Nell&#39;elenco Programmi attualmente installati selezionare **Adobe Designer**.
 1. Clic **Disinstalla** e quindi fare clic su **Sì**.
 
 ## Installazione di Workbench {#installing-workbench}

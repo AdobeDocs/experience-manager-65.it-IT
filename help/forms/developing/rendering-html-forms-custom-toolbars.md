@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2328'
 ht-degree: 0%
@@ -180,7 +180,7 @@ Per eseguire il rendering di un modulo HTML contenente una barra degli strumenti
 
 **Rendering di un modulo HTML**
 
-Per eseguire il rendering di un modulo di HTML, specificare una struttura di modulo creata in Designer e salvata come file XDP. Selezionate anche un tipo di trasformazione HTML. È ad esempio possibile specificare il tipo di trasformazione HTML che esegue il rendering di un HTML dinamico per Internet Explorer 5.0 o versione successiva.
+Per eseguire il rendering di un modulo HTML, specifica una struttura di modulo creata in Designer e salvata come file XDP. Selezionate anche un tipo di trasformazione HTML. È ad esempio possibile specificare il tipo di trasformazione HTML che esegue il rendering di un HTML dinamico per Internet Explorer 5.0 o versione successiva.
 
 Il rendering di un modulo HTML richiede anche valori, ad esempio valori URI per il rendering di altri tipi di modulo.
 

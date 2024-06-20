@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '6201'
 ht-degree: 0%
@@ -82,7 +82,7 @@ La tabella seguente descrive ogni passaggio del processo di autenticazione.
 
 >[!NOTE]
 >
->Se il fuso orario del server è diverso da quello del client, quando si utilizza il WSDL per il servizio AEM Forms Generate PDF in uno stack SOAP nativo utilizzando un client .NET in un cluster Application Server WebSphere, può verificarsi il seguente errore di autenticazione di User Management:
+>Se il fuso orario del server è diverso da quello del client, quando si utilizza il WSDL per il servizio AEM Forms Generate PDF su uno stack SOAP nativo utilizzando un client .NET in un cluster Application Server WebSphere, può verificarsi il seguente errore di autenticazione di User Management:
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 

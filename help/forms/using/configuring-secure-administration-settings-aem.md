@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -61,7 +62,7 @@ Eseguire questa procedura utilizzando la pagina Web Applicazioni e servizi di Ad
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Clic **Successivo** e ripetere il passaggio precedente per gli endpoint SOAP non inclusi nell&#39;elenco precedente. Prima di rimuovere gli endpoint, verificare che SOAP sia elencato nella colonna Provider.
+1. Clic **Successivo** e ripeti il passaggio precedente per gli endpoint SOAP che non sono nell’elenco precedente. Prima di rimuovere gli endpoint, accertati che SOAP sia elencato nella colonna Provider.
 
 ## Disabilitazione dell’accesso anonimo non essenziale ai servizi {#disabling-non-essential-anonymous-access-to-services}
 

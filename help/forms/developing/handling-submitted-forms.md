@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Le applicazioni basate sul Web che consentono a un utente di compilare moduli interattivi richiedono l&#39;invio dei dati al server. Tramite il servizio Forms è possibile recuperare i dati immessi dall&#39;utente in un modulo interattivo. Dopo aver recuperato i dati, è possibile elaborarli per soddisfare i requisiti aziendali. È ad esempio possibile memorizzare i dati in un database, inviarli a un&#39;altra applicazione, inviarli a un altro servizio, unire i dati in una struttura di modulo, visualizzarli in un browser Web e così via.
 
-I dati del modulo vengono inviati al servizio Forms come dati XML o PDF, un&#39;opzione impostata in Designer. Un modulo inviato come XML consente di estrarre i singoli valori dei dati dei campi. In altre parole, è possibile estrarre il valore di ogni campo modulo immesso dall&#39;utente nel modulo. Un modulo inviato come dati PDF è costituito da dati binari e non da dati XML. È possibile salvare il modulo come file PDF o inviarlo a un altro servizio. Se si desidera estrarre dati da un modulo inviato come XML e quindi utilizzare i dati del modulo per creare un documento PDF, richiamare un&#39;altra operazione AEM Forms. (vedere [Creazione di documenti PDF con i dati XML inviati](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+I dati del modulo vengono inviati al servizio Forms come dati XML o PDF, opzione impostata in Designer. Un modulo inviato come XML consente di estrarre i singoli valori dei dati dei campi. In altre parole, è possibile estrarre il valore di ogni campo modulo immesso dall&#39;utente nel modulo. Un modulo inviato come dati PDF è costituito da dati binari e non da dati XML. È possibile salvare il modulo come file PDF o inviarlo a un altro servizio. Se si desidera estrarre dati da un modulo inviato come XML e quindi utilizzare i dati del modulo per creare un documento PDF, richiamare un&#39;altra operazione AEM Forms. (vedere [Creazione di documenti PDF con i dati XML inviati](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 Il diagramma seguente mostra i dati inviati a un servlet Java denominato `HandleData` da un modulo interattivo visualizzato in un browser web.
 
@@ -106,7 +106,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma.
 
 ## Gestione dei dati URL UTF-16 inviati {#handling-submitted-url-utf-16-data}
 
-Se i dati del modulo vengono inviati come dati URL UTF-16, il computer client richiede Adobe Reader o Acrobat 8.1 o versione successiva. Inoltre, se la progettazione del modulo contiene un pulsante di invio con dati codificati in URL (HTTP Post) e l’opzione di codifica dei dati è UTF-16, la progettazione del modulo deve essere modificata in un editor di testo come Blocco note. È possibile impostare l&#39;opzione di codifica su `UTF-16LE` o `UTF-16BE` per il pulsante Invia. La finestra di progettazione non fornisce questa funzionalità.
+Se i dati del modulo vengono inviati come dati URL UTF-16, il computer client richiede Adobe Reader o Acrobat 8.1 o versione successiva. Inoltre, se la progettazione del modulo contiene un pulsante di invio con dati codificati in URL (HTTP Post) e l’opzione di codifica dei dati è UTF-16, la progettazione del modulo deve essere modificata in un editor di testo come Blocco note. È possibile impostare l&#39;opzione di codifica su `UTF-16LE` o `UTF-16BE` per il pulsante Invia. Designer non fornisce questa funzionalità.
 
 >[!NOTE]
 >
@@ -251,7 +251,7 @@ Gestisci un modulo inviato utilizzando l’API Forms (Java):
 
 **Consulta anche**
 
-[Quick Start (modalità SOAP): gestione dei PDF forms inviati come XML tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Quick Start (modalità SOAP): gestione dei PDF forms inviati come XML tramite API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
 [Quick Start (modalità SOAP): gestione dei moduli HTML inviati come XML tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 

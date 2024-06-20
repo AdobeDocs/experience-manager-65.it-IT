@@ -1,6 +1,6 @@
 ---
 title: Rendering di Forms
-description: Utilizzare il servizio Forms per creare applicazioni client di acquisizione dati interattive che convalidano, elaborano, trasformano e distribuiscono moduli generalmente creati in Designer. Gli autori di moduli possono sviluppare un singolo design di moduli eseguito dal servizio Forms in PDF, SWF o HTML in vari ambienti del browser.
+description: Utilizza il servizio Forms per creare applicazioni client di acquisizione dati interattive che convalidano, elaborano, trasformano e distribuiscono moduli generalmente creati in Designer. Gli autori di moduli possono sviluppare un singolo design di moduli eseguito dal servizio Forms in PDF, SWF o HTML in vari ambienti del browser.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/performing_service_operations_using_apis
@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+feature: Adaptive Forms
+source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%

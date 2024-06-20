@@ -8,7 +8,8 @@ topic-tags: coding
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms, Security
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1783'
 ht-degree: 0%
@@ -68,7 +69,7 @@ Il servlet di sicurezza configurato in `/um/login` risponde utilizzando `URLVari
 
 **Processo di accesso**
 
-All’avvio di un’applicazione client, puoi effettuare una richiesta POST al `/um/login` servlet di sicurezza. Ad esempio: `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
+All’avvio di un’applicazione client, puoi effettuare una richiesta POST al `/um/login` servlet di sicurezza. Ad esempio, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Quando la richiesta raggiunge il servlet di sicurezza User Manager, esegue i seguenti passaggi:
 
 1. Cerca un cookie denominato `lcAuthToken`. Se l’utente ha già effettuato l’accesso a un’altra applicazione Forms, questo cookie è presente. Se il cookie viene trovato, il suo contenuto viene convalidato.
 1. Se l&#39;SSO basato su intestazione è abilitato, il servlet cerca le intestazioni configurate per determinare l&#39;identità dell&#39;utente.

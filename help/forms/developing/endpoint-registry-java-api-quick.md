@@ -1,6 +1,6 @@
 ---
-title: Java&trade Registro endpoint; API QuickStart(SOAP)
-description: Scopri come aggiungere endpoint come EJB, SOAP, Watched Folder, Email endpoint e Remoting endpoint e come modificare, rimuovere e recuperare endpoint utilizzando Java&trade; API.
+title: Java&trade nel registro degli endpoint; API QuickStart(SOAP)
+description: Scopri come aggiungere endpoint come EJB, SOAP, cartella controllata, endpoint e-mail e endpoint remoto e come modificare, rimuovere e recuperare endpoint utilizzando Java&trade; API.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,14 @@ topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
-# Guida introduttiva API Java™ del Registro degli endpoint (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+# Guida rapida API Java™ del Registro degli endpoint (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
 Java™ API Quick Start(SOAP) è disponibile per il registro degli endpoint.
 

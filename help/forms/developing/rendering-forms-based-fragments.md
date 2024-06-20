@@ -1,6 +1,6 @@
 ---
 title: Rendering di Forms basato su frammenti
-description: Utilizzare il servizio Forms per eseguire il rendering di moduli basati su frammenti creati mediante Designer.
+description: Utilizza il servizio Forms per eseguire il rendering di moduli basati su frammenti creati con Designer.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2189'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Rendering di Forms basato su frammenti {#rendering-forms-based-on-fragments-inner}
 
-Il servizio Forms può eseguire il rendering di moduli basati su frammenti creati mediante Designer. A *frammento* è una parte riutilizzabile di un modulo e viene salvato come file XDP separato che può essere inserito in più progettazioni di moduli. Ad esempio, un frammento può includere un blocco di indirizzi o un testo legale.
+Il servizio Forms può eseguire il rendering di moduli basati su frammenti creati con Designer. A *frammento* è una parte riutilizzabile di un modulo e viene salvato come file XDP separato che può essere inserito in più progettazioni di moduli. Ad esempio, un frammento può includere un blocco di indirizzi o un testo legale.
 
 L’utilizzo di frammenti semplifica e velocizza la creazione e la manutenzione di un gran numero di moduli. Durante la creazione di un modulo, viene inserito un riferimento al frammento richiesto e il frammento viene visualizzato nel modulo. Il riferimento al frammento contiene un sottomodulo che punta al file XDP fisico. Per informazioni sulla creazione di strutture di moduli basate su frammenti, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 

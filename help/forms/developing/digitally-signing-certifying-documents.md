@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '16917'
 ht-degree: 0%
@@ -269,7 +269,7 @@ Recuperare un documento PDF contenente campi di firma.
 
 ### Recuperare i nomi dei campi della firma utilizzando l’API Java {#retrieve-signature-field-names-using-the-java-api}
 
-Recupera i nomi dei campi della firma utilizzando Signature API (Java):
+Recuperare i nomi dei campi firma utilizzando Signature API (Java):
 
 1. Includi file di progetto
 
@@ -283,7 +283,7 @@ Recupera i nomi dei campi della firma utilizzando Signature API (Java):
 1. Ottieni il documento PDF contenente i campi firma
 
    * Creare un `java.io.FileInputStream` oggetto che rappresenta il documento PDF che contiene campi firma mediante il costruttore e che trasmette un valore stringa che specifica la posizione del documento PDF.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
+   * Crea un `com.adobe.idp.Document` oggetto utilizzandone il costruttore e passandolo l&#39;oggetto `java.io.FileInputStream` .
 
 1. Recuperare i nomi dei campi firma
 
@@ -294,7 +294,7 @@ Recupera i nomi dei campi della firma utilizzando Signature API (Java):
 
 [Recupero dei nomi dei campi firma](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
-[Quick Start (modalità SOAP): recupero dei nomi dei campi della firma tramite l’API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[Quick Start (modalità SOAP): recupero dei nomi dei campi della firma utilizzando l’API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -435,9 +435,9 @@ Salvare il documento PDF contenente il campo firma modificato come file PDF in m
 
 [Firma digitale dei documenti di PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-### Modificare i campi della firma utilizzando l’API Java {#modify-signature-fields-using-the-java-api}
+### Modificare i campi firma utilizzando l&#39;API Java {#modify-signature-fields-using-the-java-api}
 
-Modifica un campo di firma utilizzando Signature API (Java):
+Modificare un campo firma utilizzando Signature API (Java):
 
 1. Includi file di progetto
 
@@ -451,7 +451,7 @@ Modifica un campo di firma utilizzando Signature API (Java):
 1. Ottiene il documento PDF contenente il campo firma da modificare
 
    * Creare un `java.io.FileInputStream` oggetto che rappresenta il documento PDF contenente il campo firma da modificare utilizzando il relativo costruttore e passando un valore stringa che specifica la posizione del documento PDF.
-   * Creare un `com.adobe.idp.Document` mediante il costruttore e passando il `java.io.FileInputStream` oggetto.
+   * Crea un `com.adobe.idp.Document` oggetto utilizzandone il costruttore e passandolo l&#39;oggetto `java.io.FileInputStream` .
 
 1. Impostare i valori del dizionario
 
@@ -608,7 +608,7 @@ Quando si certifica e firma lo stesso documento PDF, se la firma di certificazio
 
 Se tenti di firmare un modulo basato su XFA utilizzando l’API del servizio di firma, i dati potrebbero non essere presenti nel `View` `Signed` `Version` in Acrobat. Ad esempio, considera il seguente flusso di lavoro:
 
-* Utilizzando un file XDP creato mediante Designer, si unisce una struttura di modulo contenente un campo firma e dati XML contenenti dati modulo. Puoi utilizzare il servizio Forms per generare un documento interattivo di PDF.
+* Utilizzando un file XDP creato con Designer, si unisce una struttura di modulo contenente un campo firma e dati XML contenenti dati modulo. Puoi utilizzare il servizio Forms per generare un documento interattivo di PDF.
 * Firma il documento PDF utilizzando l’API del servizio di firma.
 
 ### Riepilogo dei passaggi {#summary_of_steps-3}
@@ -617,9 +617,9 @@ Per apporre una firma digitale a un documento PDF, eseguire le operazioni seguen
 
 1. Includi file di progetto.
 1. Creare un client del servizio di firma.
-1. Ottieni il documento PDF da firmare.
-1. Firma il documento di PDF.
-1. Salvare il documento PDF firmato come file PDF.
+1. Ottenere il documento PDF da firmare.
+1. Firma il documento PDF.
+1. Salva il documento PDF firmato come file PDF.
 
 **Includi file di progetto**
 
@@ -1036,8 +1036,8 @@ Firmare digitalmente un modulo interattivo utilizzando Forms e Signature API (se
    * A `BLOB` oggetto che rappresenta il documento PDF da firmare. Utilizza il `BLOB` istanza restituita dal servizio Forms.
    * Valore stringa che rappresenta il nome del campo firma firmato.
    * A `Credential` oggetto che rappresenta le credenziali utilizzate per apporre una firma digitale al documento PDF. Creare un `Credential` mediante il costruttore e specificare l&#39;alias assegnando un valore al `Credential` dell&#39;oggetto `alias` proprietà.
-   * A `HashAlgorithm` oggetto che specifica un membro dati statico che rappresenta l&#39;algoritmo hash da utilizzare per digerire il documento PDF. Ad esempio, puoi specificare `HashAlgorithm.SHA1` per utilizzare l’algoritmo SHA1.
-   * Un valore booleano che specifica se viene utilizzato l’algoritmo hash.
+   * Oggetto `HashAlgorithm` che specifica un membro dati statici che rappresenta l&#39;algoritmo hash da utilizzare per classificare il documento PDF. Ad esempio, è possibile specificare `HashAlgorithm.SHA1` di utilizzare l&#39;algoritmo SHA1.
+   * Valore booleano che specifica se viene utilizzato l&#39;algoritmo hash.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato firmato digitalmente.
    * Valore stringa che rappresenta la posizione del firmatario.
    * Valore stringa che rappresenta le informazioni di contatto del firmatario.
@@ -1185,13 +1185,13 @@ Certifica un documento PDF utilizzando Signature API (Java):
    * Valore stringa che rappresenta il nome del campo firma che conterrà la firma.
    * A `Credential` oggetto che rappresenta le credenziali utilizzate per certificare il documento PDF. Creare un `Credential` oggetto richiamando il `Credential` statico dell&#39;oggetto `getInstance` e passando un valore stringa che specifica il valore di alias corrispondente alle credenziali di sicurezza.
    * A `HashAlgorithm` oggetto che specifica un membro dati statico che rappresenta l&#39;algoritmo hash utilizzato per digerire il documento PDF. Ad esempio, puoi specificare `HashAlgorithm.SHA1` per utilizzare l’algoritmo SHA1.
-   * Valore stringa che rappresenta il motivo per cui il documento PDF è stato certificato.
+   * Valore di stringa che rappresenta il motivo per cui il documento PDF è stato certificato.
    * Valore stringa che rappresenta le informazioni di contatto del firmatario.
    * A `MDPPermissions` oggetto che specifica le azioni che possono essere eseguite sul documento PDF che invalidano la firma.
    * A `PDFSignatureAppearanceOptions` oggetto che controlla l&#39;aspetto della firma certificata. Se necessario, modificare l&#39;aspetto della firma richiamando un metodo, ad esempio `setShowDate`.
    * Valore stringa che fornisce una spiegazione delle azioni che invalidano la firma.
    * A `java.lang.Boolean` oggetto che specifica se eseguire il controllo di revoca sul certificato del firmatario. Se la verifica della revoca viene eseguita, viene incorporata nella firma. Il valore predefinito è `false`.
-   * A `java.lang.Boolean` oggetto che specifica se il campo firma da certificare è bloccato. Se il campo è bloccato, il campo firma viene contrassegnato come di sola lettura, le relative proprietà non possono essere modificate e non possono essere cancellate da utenti che non dispongono delle autorizzazioni necessarie. Il valore predefinito è `false`.
+   * Oggetto `java.lang.Boolean` che specifica se il campo firma da certificare è bloccato. Se il campo è bloccato, il campo firma viene contrassegnato come di sola lettura, le relative proprietà non possono essere modificate e non può essere cancellato da chiunque non disponga delle autorizzazioni necessarie. Il valore predefinito è `false`.
    * Un `OCSPPreferences` oggetto che memorizza le preferenze per il supporto del protocollo OCSP (Online Certificate Status Protocol). Se non viene eseguito il controllo della revoca, questo parametro non viene utilizzato ed è possibile specificare `null`. Per informazioni su questo oggetto, vedere [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * A `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoche di certificati (CRL). Se non viene eseguito il controllo della revoca, questo parametro non viene utilizzato ed è possibile specificare `null`.
    * A `TSPPreferences` oggetto che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Ad esempio, dopo aver creato un’ `TSPPreferences` dell&#39;oggetto, è possibile impostare l&#39;URL del server TSP richiamando `TSPPreferences` dell&#39;oggetto `setTspServerURL` metodo. Questo parametro è facoltativo e può essere `null`. Per ulteriori informazioni, consulta [Guida di riferimento dei servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
@@ -1207,7 +1207,7 @@ Certifica un documento PDF utilizzando Signature API (Java):
 
 [Certificazione dei documenti di PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
-[Quick Start (modalità SOAP): certificazione di un documento PDF tramite l’API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
+[Quick Start (modalità SOAP): certificazione di un documento PDF tramite API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1339,16 +1339,16 @@ Per verificare una firma utilizzata per firmare o certificare digitalmente un do
 Impostare le seguenti opzioni di runtime PKI utilizzate dal servizio di firma per la verifica delle firme in un documento PDF:
 
 * Tempo di verifica
-* Verifica della revoca
+* Controllo delle revoche
 * Valori di marca temporale
 
 L&#39;impostazione di queste opzioni consente di specificare il tempo di verifica. Ad esempio, è possibile selezionare l&#39;ora corrente (l&#39;ora nel computer del validatore), che indica di utilizzare l&#39;ora corrente. Per informazioni sui diversi valori di tempo, vedere `VerificationTime` valore di enumerazione in [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 È inoltre possibile specificare se eseguire il controllo di revoca come parte del processo di verifica. È ad esempio possibile eseguire un controllo di revoca per determinare se il certificato è stato revocato. Per informazioni sulle opzioni di controllo della revoca, vedere `RevocationCheckStyle` valore di enumerazione in [Riferimento API di AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Per eseguire il controllo di revoca su un certificato, specificare un URL di un server di elenco di revoche di certificati (CRL) utilizzando un `CRLOptionSpec` oggetto. Tuttavia, se non si specifica un URL per il server CRL, il servizio di firma ottiene l&#39;URL dal certificato.
+Per eseguire il controllo di revoca su un certificato, specificare un URL di un server di elenco di revoche di certificati (CRL) utilizzando un `CRLOptionSpec` oggetto. Tuttavia, se non si specifica una URL al server CRL, il servizio di firma ottiene il URL dal certificato.
 
-Anziché utilizzare un server CRL, è possibile utilizzare un server OCSP (Certificate Status Protocol) online durante la verifica della revoca. In genere, quando si utilizza un server OCSP anziché un server CRL, il controllo di revoca viene eseguito più rapidamente. (vedere [Protocollo per lo stato dei certificati online](https://tools.ietf.org/html/rfc2560).)
+Invece di utilizzare un server CRL, è possibile utilizzare un server OCSP (Certificate Status Protocol) online durante l&#39;esecuzione del controllo della revoca. In genere, quando si utilizza un server OCSP anziché un server CRL, il controllo della revoca viene eseguito più rapidamente. (Vedi [Certificato Stato protocollo](https://tools.ietf.org/html/rfc2560) online.)
 
 È possibile impostare l&#39;ordine dei server CRL e OCSP utilizzato dal servizio di firma utilizzando Adobe Applications and Services. Se, ad esempio, il server OCSP è impostato prima in Adobe Applications and Services, viene selezionato il server OCSP, seguito dal server CRL.
 

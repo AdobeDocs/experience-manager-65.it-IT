@@ -8,14 +8,14 @@ topic-tags: develop
 role: Developer
 exl-id: e861d848-b0b7-4ae9-a56d-c0957ec95730
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# Servizio Utilità PDF Guida introduttiva API Java (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
+# Guida introduttiva all’API Java di PDF Utilities Service (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
 Per il servizio Utilità PDF sono disponibili i seguenti servizi di avvio rapido.
 
@@ -23,7 +23,7 @@ Per il servizio Utilità PDF sono disponibili i seguenti servizi di avvio rapido
 
 [Guida rapida (modalità SOAP): conversione di un documento XDP in un documento PDF tramite l’API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api)
 
-[Guida rapida (modalità SOAP): recupero delle proprietà del documento PDF tramite l’API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api)
+[Quick Start (modalità SOAP): recupero delle proprietà del documento PDF tramite l’API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api)
 
 [Guida rapida (modalità SOAP): impostazione dello stile di salvataggio per un documento PDF tramite l’API Java](pdf-utilities-service-java-api.md#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api)
 
@@ -236,7 +236,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito un documento XDP viene c
  
 ```
 
-## Guida rapida (modalità SOAP): recupero delle proprietà del documento PDF tramite l’API Java {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
+## Quick Start (modalità SOAP): recupero delle proprietà del documento PDF tramite l’API Java {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice riportato di seguito viene determinato se il documento è un documento PDF e, in caso affermativo, la prima versione di Acrobat in grado di leggerlo. (vedere [Recupero proprietà documento PDF](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 

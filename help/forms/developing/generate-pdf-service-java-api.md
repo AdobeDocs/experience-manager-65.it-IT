@@ -8,16 +8,16 @@ topic-tags: develop
 role: Developer
 exl-id: b856a93b-91fa-47a5-9e46-6a537218fd4e
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
 
 ---
 
-# Guida introduttiva di Generate PDF Service API Java (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
+# Guida introduttiva all’API Java di PDF Service (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
 
-Per il servizio Generate PDF è disponibile Java API Quick Start (SOAP).
+Java API Quick Start (SOAP) è disponibile per il servizio Generate PDF.
 
 [Guida rapida (modalità SOAP): conversione di un documento Microsoft Word in un documento PDF tramite l’API Java](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 

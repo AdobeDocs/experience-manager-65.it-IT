@@ -8,28 +8,28 @@ topic-tags: develop
 role: Developer
 exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
-# Guida introduttiva API Java del servizio Task Manager (SOAP) {#task-manager-service-java-api-quickstart-soap}
+# Guida introduttiva all’API Java del servizio Task Manager (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
 Per il servizio Task Manager sono disponibili i seguenti Quick Start.
 
 [Guida rapida (modalità SOAP): assegnazione di attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
-[Quick Start (modalità SOAP): blocco di attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
+[Quick Start (modalità SOAP): blocco delle attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
 
-[Guida rapida (modalità SOAP): recupero delle attività assegnate agli utenti tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
+[Quick Start (modalità SOAP): recupero delle attività assegnate agli utenti tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
 
 [Quick Start (modalità SOAP): recupero dei dati del modulo dalle attività tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
 
-[Guida introduttiva (modalità SOAP): modifica dei dati dei moduli tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
+[Quick Start (modalità SOAP): modifica dei dati dei moduli tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
 
-[Guida rapida (modalità SOAP): recupero di allegati dalle attività tramite l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
+[Guida rapida (modalità SOAP): recupero di allegati dalle attività tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
 [Quick Start (modalità SOAP): recupero delle informazioni sulle attività tramite API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
@@ -176,7 +176,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene assegnata un&
  
 ```
 
-## Quick Start (modalità SOAP): blocco di attività tramite l’API Java {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Quick Start (modalità SOAP): blocco delle attività tramite l’API Java {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene bloccata un&#39;attività che corrisponde al valore 2 dell&#39;identificatore dell&#39;attività.
 
@@ -265,7 +265,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene bloccata un&#
  
 ```
 
-## Guida rapida (modalità SOAP): recupero delle attività assegnate agli utenti tramite l’API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
+## Quick Start (modalità SOAP): recupero delle attività assegnate agli utenti tramite l’API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le attività assegnate a un utente denominato *tony blue*. Si noti che questo utente è specificato nelle proprietà di connessione. Vengono visualizzate le informazioni sulle attività restituite, ad esempio il valore e la descrizione dell&#39;identificatore.
 
@@ -497,7 +497,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperati 
  
 ```
 
-## Guida introduttiva (modalità SOAP): modifica dei dati dei moduli tramite API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
+## Quick Start (modalità SOAP): modifica dei dati dei moduli tramite API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo con i dati presenti nel *FormData.xml* file.
 
@@ -607,7 +607,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un
  
 ```
 
-## Guida rapida (modalità SOAP): recupero di allegati dalle attività tramite l’API Java {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
+## Guida rapida (modalità SOAP): recupero di allegati dalle attività tramite API Java {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito vengono recuperati gli allegati. Ogni file allegato viene salvato come file TXT.
 

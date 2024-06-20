@@ -6,7 +6,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Interactive Communication
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 2%
@@ -116,7 +117,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
    >
    > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare l&#39;SDK. Il riavvio dell&#39;SDK AEM utilizzando metodi alternativi, ad esempio l&#39;arresto dei processi Java, potrebbe lead a incoerenze nell&#39;ambiente di sviluppo AEM.
 
-1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
+1. Ripeti i passaggi da 1 a 7 su tutte le istanze di Author e Publish.
 
 ## Configurazioni post-installazione {#post-installation-configurations}
 
@@ -126,7 +127,7 @@ AEM Forms dispone di alcune configurazioni obbligatorie e opzionali. Le configur
 
 #### Configurare RSA e BouncyCastle librerie  {#configure-rsa-and-bouncycastle-libraries}
 
-Per avviare le librerie, esegui i seguenti passaggi su tutte le istanze Author e Publish:
+Per avviare le librerie delegate, effettua le seguenti operazioni su tutte le istanze Author e Publish:
 
 1. Arresta l’istanza AEM sottostante.
 1. Apri [Directory di installazione AEM]File \crx-quickstart\conf\sling.properties per la modifica.
@@ -140,7 +141,7 @@ Per avviare le librerie, esegui i seguenti passaggi su tutte le istanze Author e
    ```
 
 1. Salva e chiudi il file e avvia l’istanza AEM.
-1. Ripeti i passaggi da 1 a 4 su tutte le istanze Author e Publish.
+1. Ripeti i passaggi da 1 a 4 su tutte le istanze di Author e Publish.
 
 #### Configurare l’agente di serializzazione {#configure-the-serialization-agent}
 
@@ -148,8 +149,8 @@ Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di creazione
 
 1. Apri Gestione configurazione AEM in una finestra del browser. L’URL predefinito è https://&#39;[server]:[porta]&#39;/system/console/configMgr.
 1. Cerca e apri **Configurazione firewall deserializzazione**.
-1. Aggiungi il **sun.util.calendar** pacchetto per **INSERISCO NELL&#39;ELENCO CONSENTITI DI** campo. Fai clic su Salva.
-1. Ripeti i passaggi 1-3 su tutte le istanze Author e Publish.
+1. Aggiungi il **sun.util.calendar** pacchetto per **inserisco nell&#39;elenco Consentiti** campo. Fai clic su Salva.
+1. Ripeti i passaggi 1-3 su tutte le istanze di Author e Publish.
 
 ### Configurazioni opzionali post-installazione {#optional-post-installation-configurations}
 

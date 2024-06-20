@@ -1,6 +1,6 @@
 ---
 title: Richiamare AEM Forms tramite JavaAPI
-description: Utilizzare l'API Java AEM Forms per il protocollo di trasporto RMI per la chiamata remota, il trasporto VM per la chiamata locale, SOAP per la chiamata remota, autenticazione diversa, ad esempio nome utente e password, e richieste di chiamata sincrone e asincrone.
+description: Utilizzare l'API Java AEM Forms per il protocollo di trasporto RMI per la chiamata remota, il trasporto VM per la chiamata locale, l'SOAP per la chiamata remota, diverse autenticazioni, come nome utente e password e richieste di chiamata sincrone e asincrone.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '5333'
 ht-degree: 0%
@@ -429,7 +429,7 @@ Per richiamare correttamente un servizio AEM Forms, imposta le seguenti propriet
 
    * Il valore della porta `8080` è applicabile se l&#39;applicazione J2EE è JBoss. Se il server applicazioni J2EE è IBM® WebSphere®, utilizzare la porta `9080`. Analogamente, se il server applicazioni J2EE è WebLogic, utilizzare la porta `7001`. Questi valori sono i valori di porta predefiniti. Se si modifica il valore della porta, utilizzare il numero di porta applicabile.)
 
-* **DSC_TRANSPORT_PROTOCOL**: se utilizzi la modalità di connessione EJB, specifica `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` per questo valore. Se si utilizza la modalità di connessione SOAP, specificare `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
+* **DSC_TRANSPORT_PROTOCOL**: se utilizzi la modalità di connessione EJB, specifica `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` per questo valore. Se utilizzi la modalità di connessione SOAP, specifica `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
 * **DSC_SERVER_TYPE**: specifica il server applicazioni J2EE in cui viene distribuito AEM Forms. I valori validi sono `JBoss`, `WebSphere`, `WebLogic`.
 
    * Se si imposta questa proprietà di connessione su `WebSphere`, il `java.naming.factory.initial` valore impostato su `com.ibm.ws.naming.util.WsnInitCtxFactory`.
@@ -443,7 +443,7 @@ Per richiamare correttamente un servizio AEM Forms, imposta le seguenti propriet
 
 * **DSC_CREDENTIAL_USERNAME:** Specifica il nome utente del modulo AEM. Per richiamare correttamente un servizio AEM Forms, l’utente deve disporre del ruolo Utente servizi. Un utente può anche avere un altro ruolo che include l’autorizzazione Richiesta servizio. In caso contrario, viene generata un’eccezione quando si tenta di richiamare un servizio. Se la protezione del servizio è disabilitata, non è necessario specificare questa proprietà di connessione.
 * **DSC_CREDENTIAL_PASSWORD:** Specifica il valore della password corrispondente. Se la protezione del servizio è disabilitata, non è necessario specificare questa proprietà di connessione.
-* **DSC_REQUEST_TIMEOUT:** Il limite di timeout predefinito per la richiesta SOAP è di 1200000 millisecondi (20 minuti). A volte, una richiesta può richiedere più tempo per completare l’operazione. Ad esempio, una richiesta SOAP che recupera un set di record di grandi dimensioni può richiedere un limite di timeout più lungo. È possibile utilizzare `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` per aumentare il limite di timeout della chiamata della richiesta per le richieste SOAP.
+* **DSC_REQUEST_TIMEOUT:** Il limite predefinito di timeout per la richiesta SOAP è di 1200000 millisecondi (20 minuti). A volte, una richiesta può richiedere più tempo per completare l’operazione. Ad esempio, una richiesta SOAP che recupera un set di record di grandi dimensioni può richiedere un limite di timeout più lungo. È possibile utilizzare `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` per aumentare il limite di timeout per le richieste SOAP.
 
   **nota**: solo le chiamate basate su SOAP supportano la proprietà DSC_REQUEST_TIMEOUT.
 
@@ -525,7 +525,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito vengono impostate l
 
 **Impostazione della modalità di connessione SOAP**
 
-Esempio Nell&#39;esempio di codice Java seguente le proprietà di connessione vengono impostate in modalità SOAP per richiamare AEM Forms distribuito su JBoss.
+Esempio Nell’esempio di codice Java seguente le proprietà di connessione vengono impostate in modalità SOAP per richiamare AEM Forms distribuito su JBoss.
 
 ```java
  Properties ConnectionProps = new Properties();
@@ -555,7 +555,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito vengono impostate l
 >
 >Tutti gli avvii rapidi Java associati alla programmazione con AEM Forms mostrano le impostazioni di connessione EJB e SOAP.
 
-**Impostazione della modalità di connessione SOAP con il limite di timeout della richiesta personalizzata**
+**Impostazione della modalità di connessione SOAP con limite di timeout della richiesta personalizzata**
 
 ```java
  Properties ConnectionProps = new Properties();
@@ -651,7 +651,7 @@ Nell&#39;esempio seguente viene illustrato il contenuto di un file jndi.properti
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
-**Weblogic**
+**WebLogic**
 
 L&#39;esempio seguente mostra il contenuto di un file jndi.properties utilizzato per connettersi a AEM Forms distribuito su WebLogic.
 
@@ -660,7 +660,7 @@ L&#39;esempio seguente mostra il contenuto di un file jndi.properties utilizzato
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
-**Jboss**
+**JBoss**
 
 Il seguente esempio mostra il contenuto di un file jndi.properties che viene utilizzato per connettersi a AEM Forms che viene distribuito su JBoss.
 

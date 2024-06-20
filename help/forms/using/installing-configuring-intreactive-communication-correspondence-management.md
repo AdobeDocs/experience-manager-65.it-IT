@@ -6,7 +6,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Interactive Communication
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Il modulo AEM ha la capacità di centralizzare la creazione, l’assemblaggio, la gestione e la consegna di documenti sicuri e interattivi come corrispondenza aziendale, documenti, dichiarazioni, avvisi di benefit, e-mail di marketing, fatture e kit di benvenuto. Questa funzionalità è nota come comunicazione interattiva. Questa funzionalità è inclusa nel pacchetto del componente aggiuntivo AEM Forms. Il pacchetto del componente aggiuntivo viene distribuito su un’istanza Author o Publish di AEM.
+Il modulo AEM ha la capacità di centralizzare la creazione, l’assemblaggio, la gestione e la consegna di documenti sicuri e interattivi come corrispondenza aziendale, documenti, dichiarazioni, avvisi di benefit, e-mail di marketing, fatture e kit di benvenuto. Questa funzionalità è nota come comunicazione interattiva. Questa funzionalità è inclusa nel pacchetto del componente aggiuntivo AEM Forms. Il pacchetto del componente aggiuntivo viene distribuito su un’istanza Author o Publish dell’AEM.
 
 È possibile utilizzare la funzionalità di comunicazione interattiva per produrre comunicazioni in più formati. Ad esempio, web e PDF. È possibile integrare la comunicazione interattiva con il flusso di lavoro AEM per elaborare e distribuire la comunicazione assemblata ai clienti sul canale desiderato. Ad esempio, inviando una comunicazione all’utente finale tramite e-mail.
 
@@ -64,7 +65,7 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
   </tr>
   <tr>
    <td>libSM</td>
-   <td>Zlib</td>
+   <td>zlib</td>
    <td>libICE</td>
    <td>libuuide</td>
   </tr>
@@ -104,7 +105,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
    >
    > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
-1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
+1. Ripeti i passaggi da 1 a 7 su tutte le istanze di Author e Publish.
 
 ## Configurazioni post-installazione {#post-installation-configurations}
 
@@ -114,7 +115,7 @@ AEM Forms dispone di alcune configurazioni obbligatorie e opzionali. Le configur
 
 #### Configurare le librerie RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Per avviare le librerie, esegui i seguenti passaggi su tutte le istanze Author e Publish:
+Per avviare le librerie delegate, effettua le seguenti operazioni su tutte le istanze Author e Publish:
 
 1. Arresta l’istanza AEM sottostante.
 1. Apri [Directory di installazione AEM]File \crx-quickstart\conf\sling.properties per la modifica.
@@ -128,7 +129,7 @@ Per avviare le librerie, esegui i seguenti passaggi su tutte le istanze Author e
    ```
 
 1. Salva e chiudi il file e avvia l’istanza AEM.
-1. Ripeti i passaggi da 1 a 4 su tutte le istanze Author e Publish.
+1. Ripeti i passaggi da 1 a 4 su tutte le istanze di Author e Publish.
 
 #### Configurare l’agente di serializzazione {#configure-the-serialization-agent}
 
@@ -136,8 +137,8 @@ Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di creazione
 
 1. Apri Gestione configurazione AEM in una finestra del browser. L’URL predefinito è https://&#39;[server]:[porta]&#39;/system/console/configMgr.
 1. Cerca e apri **Configurazione firewall deserializzazione**.
-1. Aggiungi il **sun.util.calendar** pacchetto per **INSERISCO NELL&#39;ELENCO CONSENTITI DI** campo. Fai clic su Salva.
-1. Ripeti i passaggi 1-3 su tutte le istanze Author e Publish.
+1. Aggiungi il **sun.util.calendar** pacchetto per **inserisco nell&#39;elenco Consentiti** campo. Fai clic su Salva.
+1. Ripeti i passaggi 1-3 su tutte le istanze di Author e Publish.
 
 ### Configurazioni opzionali post-installazione {#optional-post-installation-configurations}
 

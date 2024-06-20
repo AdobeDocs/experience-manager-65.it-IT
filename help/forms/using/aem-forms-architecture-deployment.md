@@ -8,7 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2469'
 ht-degree: 0%
@@ -38,7 +39,7 @@ L’architettura di AEM Forms include i seguenti componenti:
    * **Rendering e invio modulo front-end**: interfaccia utente finale per gli utenti finali di AEM Forms (ad esempio, i cittadini che accedono a un sito web governativo). In questo modo è possibile visualizzare la copia trasformata di un modulo (in un browser Web) e le funzionalità di invio.
    * **API REST**: JSP e servlet esportano un sottoinsieme di servizi Forms per l’utilizzo remoto da parte di client basati su HTTP, come l’SDK mobile di Forms.
 
-**AEM Forms su OSGi:** Un ambiente AEM Forms su OSGi è il pacchetto standard Autore AEM o Pubblicazione AEM con AEM Forms distribuito su di esso. Puoi eseguire AEM Forms su OSGi in un [ambiente server singolo, farm e configurazioni cluster](/help/sites-deploying/recommended-deploys.md). La configurazione del cluster è disponibile solo per le istanze di creazione AEM.
+**AEM Forms su OSGi:** Un ambiente AEM Forms su OSGi è il pacchetto standard AEM Author o AEM Publish con AEM Forms distribuito su di esso. Puoi eseguire AEM Forms su OSGi in un [ambiente server singolo, farm e configurazioni cluster](/help/sites-deploying/recommended-deploys.md). La configurazione del cluster è disponibile solo per le istanze di creazione AEM.
 
 **AEM Forms su JEE:** AEM Forms su JEE è un server AEM Forms in esecuzione sullo stack JEE. Dispone di AEM Author con pacchetti di componenti aggiuntivi AEM Forms e funzionalità AEM Forms JEE aggiuntive co-implementate in un singolo stack JEE in esecuzione su un server applicazioni. Puoi eseguire AEM Forms su JEE in configurazioni a server singolo e cluster. AEM Forms su JEE è necessario solo per eseguire la sicurezza dei documenti, la gestione dei processi e per i clienti di LiveCycle che eseguono l’aggiornamento ad AEM Forms. Di seguito sono riportati alcuni scenari aggiuntivi per utilizzare AEM Forms su JEE:
 
@@ -65,7 +66,7 @@ L’immagine seguente mostra diverse configurazioni del server AEM Form e i rela
 * **Authoring e gestione di moduli e comunicazioni interattive:** I designer e gli sviluppatori possono creare e modificare moduli adattivi e comunicazioni interattive, caricare altri tipi di moduli creati esternamente, ad esempio moduli creati in Adobe Forms Designer, e gestire queste risorse tramite la console Forms Manager.
 * **Pubblicazione di moduli e comunicazioni interattive:** Le risorse in hosting su un’istanza di authoring possono essere pubblicate su un’istanza di pubblicazione per eseguire operazioni di runtime. La pubblicazione delle risorse utilizza le funzioni di replica dell’AEM. L’Adobe consiglia di configurare un agente di replica in tutte le istanze di authoring per inviare manualmente i moduli pubblicati alle istanze di elaborazione, e di configurare un altro agente di replica per le istanze di elaborazione con *Alla ricezione* trigger abilitato per replicare automaticamente i moduli ricevuti nelle istanze di pubblicazione.
 
-**Pubblicazione:** Un’istanza di pubblicazione è un server AEM Forms in esecuzione nella modalità di esecuzione Pubblicazione standard. Le istanze di pubblicazione sono destinate agli utenti finali di applicazioni basate su moduli, ad esempio gli utenti che accedono a un sito Web pubblico e inviano moduli. Abilita le seguenti funzionalità:
+**Pubblicazione:** Un’istanza di pubblicazione è un server AEM Forms in esecuzione nella modalità di esecuzione standard di Publish. Le istanze di Publish sono destinate agli utenti finali di applicazioni basate su moduli, ad esempio gli utenti che accedono a un sito Web pubblico e inviano moduli. Abilita le seguenti funzionalità:
 
 * Rendering e invio di Forms per gli utenti finali.
 * Trasporto dei dati grezzi del modulo inviati alle istanze di elaborazione per ulteriore elaborazione e archiviazione nel sistema di registrazione finale. L’implementazione predefinita fornita in AEM Forms utilizza le funzionalità di replica inversa dell’AEM. È inoltre disponibile un’implementazione alternativa per inviare direttamente i dati del modulo ai server di elaborazione anziché salvarli prima in locale (quest’ultimo è un prerequisito per l’attivazione della replica inversa). I clienti che hanno dubbi sull’archiviazione di dati potenzialmente sensibili sulle istanze di pubblicazione possono partecipare [implementazione alternativa](/help/forms/using/configuring-draft-submission-storage.md), poiché le istanze di elaborazione si trovano in genere in un’area più sicura.
@@ -73,8 +74,8 @@ L’immagine seguente mostra diverse configurazioni del server AEM Form e i rela
 
 **Elaborazione:** Un’istanza di AEM Forms in esecuzione in modalità di esecuzione Creazione senza utenti assegnati al gruppo Forms-Manager. Puoi distribuire AEM Forms su JEE o AEM Forms su OSGi come istanza di elaborazione. Gli utenti non vengono assegnati per garantire che le attività di authoring e gestione dei moduli non vengano eseguite sull’istanza Elaborazione e si verifichino solo sull’istanza Autore. Un’istanza di elaborazione abilita le seguenti funzionalità:
 
-* **Elaborazione dei dati del modulo non elaborati in arrivo da un’istanza Publish:** Ciò si ottiene principalmente su un’istanza di elaborazione tramite flussi di lavoro AEM che si attivano quando i dati arrivano. I flussi di lavoro possono utilizzare il passaggio Modello dati modulo fornito come strumento pronto all’uso per archiviare i dati o il documento in un archivio dati appropriato.
-* **Archiviazione sicura dei dati dei moduli**: l’elaborazione fornisce un archivio dietro il firewall per i dati dei moduli non elaborati isolati dagli utenti. Né i progettisti di moduli nell’istanza Autore né gli utenti finali nell’istanza Pubblica possono accedere a questo archivio.
+* **Elaborazione dei dati del modulo non elaborati provenienti da un’istanza Publish:** Ciò si ottiene principalmente su un’istanza di elaborazione tramite flussi di lavoro AEM che si attivano quando i dati arrivano. I flussi di lavoro possono utilizzare il passaggio Modello dati modulo fornito come strumento pronto all’uso per archiviare i dati o il documento in un archivio dati appropriato.
+* **Archiviazione sicura dei dati dei moduli**: l’elaborazione fornisce un archivio dietro il firewall per i dati dei moduli non elaborati isolati dagli utenti. Né i progettisti di moduli nell’istanza di authoring né gli utenti finali nell’istanza di Publish possono accedere a questo archivio.
 
   >[!NOTE]
   >
@@ -86,8 +87,8 @@ L’immagine seguente mostra diverse configurazioni del server AEM Form e i rela
 
 Un’istanza di elaborazione è configurata per l’esecuzione in modalità di esecuzione Creazione perché:
 
-* Consente la replica inversa dei dati del modulo non elaborati da un’istanza Publish. Il gestore di archiviazione dati predefinito richiede la funzionalità di replica inversa.
-* Si consiglia di eseguire i flussi di lavoro AEM, che sono il mezzo principale di elaborazione dei dati dei moduli non elaborati provenienti da un’istanza Publish, su un sistema di tipo Author.
+* Consente la replica inversa dei dati dei moduli non elaborati da un’istanza Publish. Il gestore di archiviazione dati predefinito richiede la funzionalità di replica inversa.
+* I flussi di lavoro AEM, che rappresentano il mezzo principale di elaborazione dei dati in formato non elaborato provenienti da un’istanza di Publish, sono consigliati per l’esecuzione su un sistema di tipo Author.
 
 ## Topologie fisiche di esempio per AEM Forms su JEE {#sample-physical-topologies-for-aem-forms-on-jee}
 

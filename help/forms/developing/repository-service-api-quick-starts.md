@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Per il servizio AEM Forms Repository sono disponibili i seguenti Quick Start.
 
-[Guida rapida (modalità SOAP): creazione di una cartella tramite l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[Quick Start (modalità SOAP): creazione di una cartella utilizzando l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
 [Quick Start (modalità SOAP): scrittura di una risorsa utilizzando l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
@@ -33,7 +33,7 @@ Per il servizio AEM Forms Repository sono disponibili i seguenti Quick Start.
 
 [Quick Start (modalità SOAP): ricerca di risorse tramite API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[Guida introduttiva (modalità SOAP): creazione di relazioni tra le risorse tramite l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[Guida rapida (modalità SOAP): creazione di relazioni tra le risorse tramite l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
 [Quick Start (modalità SOAP): blocco di una risorsa tramite l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
@@ -47,7 +47,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 La maggior parte dei servizi di archivio AEM Forms inizia ad interagire rapidamente con un’applicazione denominata `Applications/FormsApplication,` come illustrato nella figura seguente.
 
-La cartella FormsFolder è una posizione nell’archivio di AEM Forms. È possibile, ad esempio, aggiungere questa cartella a livello di programmazione a `Applications/FormsApplication`. (vedere [Guida rapida (modalità SOAP): creazione di una cartella tramite l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+La cartella FormsFolder è una posizione nell’archivio di AEM Forms. È possibile, ad esempio, aggiungere questa cartella a livello di programmazione a `Applications/FormsApplication`. (vedere [Quick Start (modalità SOAP): creazione di una cartella utilizzando l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
 Il percorso di una risorsa nell’archivio AEM Forms è:
 
@@ -61,7 +61,7 @@ Il percorso di una risorsa nell’archivio AEM Forms è:
 >
 >Applications/FormsApplication non esiste per impostazione predefinita. Per seguire insieme agli avvii rapidi, crea questa applicazione utilizzando Workbench. Per informazioni sulla creazione di un’applicazione tramite Workbench, consulta [Guida introduttiva alla progettazione dei processi](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
-## Guida rapida (modalità SOAP): creazione di una cartella tramite l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
+## Quick Start (modalità SOAP): creazione di una cartella utilizzando l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
 Nell&#39;esempio di codice Java seguente viene creata una cartella denominata *FormsFolder* nella seguente posizione `/Applications/FormsApplication/1.0/`. (vedere [Creazione di cartelle](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
@@ -731,7 +731,7 @@ Il seguente esempio di codice Java cerca Loan.xdp in `Applications/FormsApplicat
  }
 ```
 
-## Guida introduttiva (modalità SOAP): creazione di relazioni tra le risorse tramite l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
+## Guida rapida (modalità SOAP): creazione di relazioni tra le risorse tramite l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene creata una relazione tra due risorse nell&#39;archivio AEM Forms. (vedere [Creazione di relazioni tra risorse](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 

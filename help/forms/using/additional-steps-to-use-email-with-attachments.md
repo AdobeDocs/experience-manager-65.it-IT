@@ -3,8 +3,9 @@ title: Passaggi aggiuntivi per ricevere e-mail con allegati
 description: Scopri come correggere l’errore quando non riesci a recuperare e-mail con allegati per AEM Forms sulle piattaforme JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Troubleshooting
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%

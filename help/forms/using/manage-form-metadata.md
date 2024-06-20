@@ -8,7 +8,8 @@ docset: aem65
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1967'
 ht-degree: 2%
@@ -113,12 +114,12 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
    <td>Valore di sola lettura che specifica l'ora dell'ultima pubblicazione del modulo.</td> 
   </tr> 
   <tr> 
-   <td>Ora di attivazione/disattivazione pubblicazione</td> 
+   <td>Ora di attivazione/disattivazione Publish</td> 
    <td>Tutto tranne la risorsa</td> 
    <td><p>Ora in cui è pianificata la pubblicazione automatica o l'annullamento della pubblicazione del modulo. L’utente imposta questo valore durante la modifica dei metadati.</p> 
     <ul> 
-     <li>L'ora di attivazione e disattivazione della pubblicazione deve essere successiva alla data corrente. </li> 
-     <li>L'ora di disattivazione della pubblicazione deve essere successiva all'ora di attivazione della pubblicazione. </li> 
+     <li>L'ora di attivazione e disattivazione del Publish deve essere successiva alla data corrente. </li> 
+     <li>L'ora di disattivazione del Publish deve essere successiva all'ora di attivazione della pubblicazione. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -242,7 +243,7 @@ Per i moduli adattivi, sono disponibili funzionalità aggiuntive che consentono 
 >* Una volta caricata o generata una nuova immagine, la miniatura viene sostituita da questa immagine e non può essere ripristinata all&#39;immagine precedente.
 >
 
-## Aggiungere metadati personalizzati {#add-custom-metadata}
+## Aggiungi metadati personalizzati {#add-custom-metadata}
 
 Oltre ai metadati forniti come predefiniti, AEM Forms supporta nuovi metadati personalizzati.
 

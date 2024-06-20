@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per l’ambiente AEM Forms su JEE.**
 
-Il servizio AEM Forms esegue il rendering dei PDF forms interattivi sui dispositivi client, in genere i browser web, per raccogliere informazioni dagli utenti. Un modulo PDF interattivo si basa su una struttura di modulo che in genere viene salvata come file XDP e creata in Designer. A partire da AEM Forms, puoi trasmettere un `com.adobe.idp.Document` oggetto che contiene la struttura del modulo per il servizio Forms. Il servizio Forms esegue quindi il rendering della progettazione del modulo in `com.adobe.idp.Document` oggetto.
+Il servizio AEM Forms esegue il rendering dei PDF forms interattivi sui dispositivi client, in genere i browser web, per raccogliere informazioni dagli utenti. Un modulo di PDF interattivo si basa su una struttura di modulo che in genere viene salvata come file XDP e creata in Designer. A partire da AEM Forms, puoi trasmettere un `com.adobe.idp.Document` oggetto che contiene la struttura del modulo per il servizio Forms. Il servizio Forms esegue quindi il rendering della progettazione del modulo in `com.adobe.idp.Document` oggetto.
 
 Il vantaggio di superare un `com.adobe.idp.Document` al servizio Forms è che altre operazioni del servizio restituiscono un `com.adobe.idp.Document` dell&#39;istanza. In altre parole, puoi ottenere un `com.adobe.idp.Document` da un&#39;altra operazione di servizio ed eseguirne il rendering. Ad esempio, si supponga che un file XDP sia memorizzato in un nodo Content Services (obsoleto) denominato `/Company Home/Form Designs`, come illustrato nella figura seguente.
 
@@ -120,7 +120,7 @@ Passa un documento ottenuto da Content Services (obsoleto) utilizzando il serviz
 
 **Consulta anche**
 
-[Quick Start (modalità SOAP): passaggio di documenti al servizio Forms utilizzando l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Quick Start (modalità SOAP): trasmissione di documenti al servizio Forms tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: 4677b9e5-3811-4de3-b4f4-9574b5898486
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -153,7 +154,7 @@ Assembla un documento PDF non interattivo utilizzando l’API del servizio Assem
    * Creare un `java.io.File` e assicurarsi che l&#39;estensione del nome file sia .pdf.
    * Richiama `Document` dell&#39;oggetto `copyToFile` metodo per copiare il contenuto del `Document` al file. Assicurati di utilizzare `Document` oggetto che `invokeOneDocument` metodo restituito.
 
-* &quot;Guida rapida (modalità SOAP): assemblaggio di un documento PDF non interattivo tramite l’API Java&quot;
+* &quot;Guida rapida (modalità SOAP): assemblaggio di un documento PDF non interattivo tramite API Java&quot;
 
 ## Assemblare un documento PDF non interattivo utilizzando l’API del servizio web {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 

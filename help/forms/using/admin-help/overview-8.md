@@ -1,14 +1,15 @@
 ---
 title: Panoramica del servizio di output
-description: L'output consente di unire i dati del modulo XML con una struttura di modulo creata in Designer per creare un flusso di output del documento in vari formati.
+description: L'output consente di unire i dati del modulo XML con una struttura di modulo creata in Designer per creare un flusso di output di documenti in vari formati.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e99b72d0-fbd5-4150-a225-1a91ad4c5867
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # Panoramica del servizio di output {#overview-of-output-service}
 
-L&#39;output consente di unire i dati del modulo XML con una struttura di modulo creata in Designer per creare un flusso di output del documento in vari formati. Il flusso di output può essere inviato a una stampante di rete, a una stampante locale o a un file su disco
+L&#39;output consente di unire i dati del modulo XML con una struttura di modulo creata in Designer per creare un flusso di output di documenti in vari formati. Il flusso di output può essere inviato a una stampante di rete, a una stampante locale o a un file su disco
 
 È possibile utilizzare la pagina Output nella console di amministrazione per amministrare il servizio di output. Le impostazioni configurate vengono utilizzate in fase di esecuzione quando le impostazioni equivalenti non sono state specificate tramite l’API dei moduli AEM. La configurazione eseguita tramite l’SDK dei moduli AEM sostituisce le impostazioni configurate utilizzando la console di amministrazione.
 

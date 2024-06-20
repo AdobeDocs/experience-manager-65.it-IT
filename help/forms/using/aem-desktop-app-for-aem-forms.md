@@ -8,7 +8,8 @@ noindex: true
 role: Admin,User
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # App desktop Adobe Experience Manager (AEM) per AEM Forms {#aem-desktop-app-for-aem-forms}
 
-L’app desktop AEM consente di mappare l’archivio Adobe Experience Manager (AEM) Assets e i file binari di AEM Forms in una directory di rete sul sistema. È possibile visualizzare le risorse sincronizzate e i file binari in un Esplora file e utilizzare varie app per modificare i file come desiderato. Oltre a visualizzare i file, puoi anche creare, caricare ed eliminare i file binari. È inoltre possibile aprire, modificare e salvare i file direttamente dal software. È ad esempio possibile aprire e modificare direttamente un file XDP da Designer. Le modifiche apportate localmente alle risorse si riflettono nell’archivio AEM Assets e nell’interfaccia utente di AEM Forms.
+L’app desktop AEM consente di mappare l’archivio Adobe Experience Manager (AEM) Assets e i file binari di AEM Forms in una directory di rete sul sistema. È possibile visualizzare le risorse sincronizzate e i file binari in un Esplora file e utilizzare varie app per modificare i file come desiderato. Oltre a visualizzare i file, puoi anche creare, caricare ed eliminare i file binari. È inoltre possibile aprire, modificare e salvare i file direttamente dal software. Ad esempio, puoi aprire e modificare direttamente un file XDP da Designer. Le modifiche apportate localmente alle risorse si riflettono nell’archivio AEM Assets e nell’interfaccia utente di AEM Forms.
 
 Puoi scaricare l’app da un’istanza AEM. Per informazioni dettagliate sul download dell’app, consulta [Note sulla versione dell’app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
 

@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # Configurazione della memorizzazione in cache per l’output  {#configuring-caching-for-output}
 
-Il servizio di output unisce i dati del modulo XML con una struttura di modulo creata in Designer per creare un flusso di output del documento in vari formati.
+Il servizio di output unisce i dati del modulo XML con una struttura di modulo creata in Designer per creare un flusso di output di documenti in vari formati.
 
 La pagina Output nella console di amministrazione contiene le impostazioni che controllano il modo in cui il servizio di output memorizza gli elementi nella cache. È possibile regolare queste impostazioni per ottimizzare le prestazioni del servizio di output.
 

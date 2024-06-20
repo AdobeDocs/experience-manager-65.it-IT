@@ -7,8 +7,9 @@ topic-tags: forms-manager, introduction
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -98,7 +99,7 @@ Il pannello strumenti dell’AEM contiene strumenti per vari componenti. Per acc
   ![Strumenti di AEM Forms](assets/aem_forms_tools_new.png)
 
 * **Configura PDF Generator:** Un amministratore può configurare l’AEM [!DNL Forms] impostazioni di PDF Generator, aggiunta di account utente e importazione o esportazione della configurazione in PDF Generator.
-* **Pubblica risorse di gestione della corrispondenza:** AEM [!DNL Forms] consente di pubblicare contemporaneamente tutte le lettere, i frammenti di documento e i dizionari di dati e le dipendenze correlate di un’istanza Autore. Le risorse pubblicate includono tutte le risorse di Gestione della corrispondenza e le relative dipendenze. Per informazioni dettagliate, consulta [Pubblicazione e annullamento della pubblicazione di moduli e documenti](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Risorse di gestione della corrispondenza Publish:** AEM [!DNL Forms] consente di pubblicare contemporaneamente tutte le lettere, i frammenti di documento e i dizionari di dati e le dipendenze correlate di un’istanza Autore. Le risorse pubblicate includono tutte le risorse di Gestione della corrispondenza e le relative dipendenze. Per informazioni dettagliate, consulta [Pubblicazione e annullamento della pubblicazione di moduli e documenti](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Esporta risorse di gestione della corrispondenza:** Puoi scaricare tutte le risorse di Gestione della corrispondenza e le relative dipendenze come pacchetto da un AEM [!DNL Forms] dell&#39;istanza. Per i passaggi dettagliati, consulta [Importazione ed esportazione di risorse in AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Elementi comuni dell’interfaccia utente {#commonelements}
