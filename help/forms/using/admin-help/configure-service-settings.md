@@ -9,9 +9,9 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
+source-git-commit: f1a18575e8b8f925f8adbe18e189f3916b5e353d
 workflow-type: tm+mt
-source-wordcount: '10828'
+source-wordcount: '10824'
 ht-degree: 0%
 
 ---
@@ -260,9 +260,9 @@ Per il servizio Generate PDF sono disponibili le impostazioni seguenti.
 
 **Convertitore di fallback per conversioni da HTML a PDF:** Se il convertitore primario non riesce, specifica il convertitore per le conversioni da HTML a PDF. Per impostazione predefinita, WebCapture (solo Windows) è selezionato.
 
-**Usa conversione immagine Acrobat (solo Windows):** Quando questa impostazione è true, il servizio Generate PDF utilizza Acrobat X Pro per tutte le conversioni da immagine a PDF. Questa impostazione è utile solo se il meccanismo di conversione Java puro predefinito non è in grado di convertire correttamente una proporzione significativa delle immagini di input. Il valore predefinito è false.
+**Usa conversione immagine Acrobat (solo Windows):** Quando questa impostazione è true, il servizio Generate PDF utilizza Acrobat per tutte le conversioni da immagine a PDF. Questa impostazione è utile solo se il meccanismo di conversione Java puro predefinito non è in grado di convertire correttamente una proporzione significativa delle immagini di input. Il valore predefinito è false.
 
-**Attiva conversioni AutoCAD basate su Acrobat (solo Windows):** Quando questa impostazione è true, il servizio Generate PDF utilizza Acrobat X Pro per tutte le conversioni da DWG a PDF. Questa impostazione è utile solo se AutoCAD non è installato sul server o se il meccanismo di conversione AutoCAD non è in grado di convertire i file.
+**Attiva conversioni AutoCAD basate su Acrobat (solo Windows):** Quando questa impostazione è true, il servizio Genera PDF utilizza Acrobat per tutte le conversioni da DWG a PDF. Questa impostazione è utile solo se AutoCAD non è installato sul server o se il meccanismo di conversione AutoCAD non è in grado di convertire i file.
 
 **Espressioni Regolari Per La Ricerca Di Caratteri Speciali Vietati Nel Nome Utente (Solo Windows):** Specifica i caratteri che interferiscono con le operazioni di Export PDF e Optimize PDF quando i caratteri vengono visualizzati nel nome di un utente.
 
