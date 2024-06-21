@@ -9,9 +9,9 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
 workflow-type: tm+mt
-source-wordcount: '10702'
+source-wordcount: '10828'
 ht-degree: 0%
 
 ---
@@ -226,7 +226,7 @@ Per il servizio Crittografia sono disponibili le impostazioni seguenti.
 >
 >Utilizza l’autenticazione semplice (nome utente e password) solo quando la connessione è protetta tramite SSL (utilizzando LDAPS).
 
-**Modalità di compatibilità:**
+<!-- **Compatibility Mode:**-->
 
 ## Impostazioni del servizio FTP {#ftp-service-settings}
 
@@ -254,7 +254,11 @@ Per il servizio Generate PDF sono disponibili le impostazioni seguenti.
 
 **Impostazioni tipo file:** Nome dell’impostazione del tipo di file preconfigurato da applicare a un processo di conversione, se tali impostazioni non sono specificate come parte dei parametri di chiamata API. Le impostazioni del tipo di file vengono configurate nella console di amministrazione facendo clic su Servizi > PDF Generator > Impostazioni tipo di file.
 
-**Usa Acrobat WebCapture (solo Windows):** Quando questa impostazione è true, il servizio Generate PDF utilizza Acrobat X Pro per tutte le conversioni da HTML a PDF. Questo può migliorare la qualità dei file PDF prodotti da HTML, anche se le prestazioni possono essere leggermente inferiori. Il valore predefinito è false.
+**Usa WebCapture (solo Windows):** Quando questa impostazione è true, il servizio Generate PDF utilizza Acrobat per tutte le conversioni da HTML a PDF. Questo può migliorare la qualità dei file PDF prodotti da HTML, anche se le prestazioni possono essere leggermente inferiori. Il valore predefinito è false.
+
+**Convertitore primario per conversioni da HTML a PDF:** Il servizio Generate PDF fornisce più percorsi per convertire i file HTML in documenti PDF: Webkit, WebCapture (solo Windows) e WebToPDF. Questa impostazione consente all&#39;utente di selezionare il convertitore primario per la conversione da HTML a PDF. Per impostazione predefinita, WebToPDF è selezionato.
+
+**Convertitore di fallback per conversioni da HTML a PDF:** Se il convertitore primario non riesce, specifica il convertitore per le conversioni da HTML a PDF. Per impostazione predefinita, WebCapture (solo Windows) è selezionato.
 
 **Usa conversione immagine Acrobat (solo Windows):** Quando questa impostazione è true, il servizio Generate PDF utilizza Acrobat X Pro per tutte le conversioni da immagine a PDF. Questa impostazione è utile solo se il meccanismo di conversione Java puro predefinito non è in grado di convertire correttamente una proporzione significativa delle immagini di input. Il valore predefinito è false.
 
@@ -268,21 +272,23 @@ Per il servizio Generate PDF sono disponibili le impostazioni seguenti.
 
 **Dimensioni pool OCR:** Dimensione del pool di PaperCaptureService utilizzato da PDF Generator per OCR. Il valore predefinito di questa impostazione (consigliato per i sistemi a processore singolo) è 3, che può essere aumentato nei sistemi a più processori. Questa impostazione è valida solo nei sistemi Windows.
 
+**Numero massimo di pagine ImageToPDF in memoria per le conversioni TIFF:** Questa impostazione determina il numero massimo di pagine di un&#39;immagine TIFF che possono rimanere in memoria prima di essere scaricate su disco durante la conversione in PDF. Il valore predefinito per questa impostazione è 500, che può essere aumentato se al processo di conversione ImageToPDF viene allocata memoria aggiuntiva.
+
 **Famiglia Di Font Di Fallback Per Conversioni Da HTML A PDF:** Nome della famiglia di caratteri da utilizzare nei documenti PDF quando il carattere utilizzato nel HTML originale non è disponibile per AEM Forms Server. Specificare una famiglia di tipi di carattere se si prevede di convertire le pagine HTML che utilizzano tipi di carattere non disponibili. Ad esempio, le pagine create in lingue regionali potrebbero utilizzare font non disponibili.
 
 **Logica dei tentativi per le conversioni native** Gestisce i nuovi tentativi di generazione di PDF se il primo tentativo di conversione non è riuscito:
 
-**Nessun nuovo tentativo**
+* **Nessun nuovo tentativo**
 
-Non ritentare la conversione PDF se il primo tentativo di conversione non è riuscito
+  Non ritentare la conversione PDF se il primo tentativo di conversione non è riuscito
 
-**Riprova**
+* **Riprova**
 
-Ritenta la conversione di PDF indipendentemente dal raggiungimento della soglia di timeout. La durata di timeout predefinita per il primo tentativo è di 270 secondi.
+  Ritenta la conversione di PDF indipendentemente dal raggiungimento della soglia di timeout. La durata di timeout predefinita per il primo tentativo è di 270 secondi.
 
-**Riprova se il tempo a disposizione lo consente**
+* **Riprova se il tempo a disposizione lo consente**
 
-Ritenta conversione PDF se il tempo impiegato per il primo tentativo di conversione è inferiore alla durata di timeout specificata. Ad esempio, se la durata del timeout è di 270 secondi e il primo tentativo ha consumato 200 secondi, PDF Generator ritenterà la conversione. Se il primo tentativo ha consumato 270 secondi, la conversione non verrà ritentata.
+  Ritenta conversione PDF se il tempo impiegato per il primo tentativo di conversione è inferiore alla durata di timeout specificata. Ad esempio, se la durata del timeout è di 270 secondi e il primo tentativo ha consumato 200 secondi, PDF Generator ritenterà la conversione. Se il primo tentativo ha consumato 270 secondi, la conversione non verrà ritentata.
 
 ## Guide ES4 Utilità impostazioni del servizio {#guides-es4-utilities-service-settings}
 
