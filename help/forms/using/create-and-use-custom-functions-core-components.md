@@ -4,7 +4,9 @@ description: AEM Forms supporta funzioni personalizzate che consentono agli uten
 keywords: Aggiungi una funzione personalizzata, utilizza una funzione personalizzata, crea una funzione personalizzata, utilizza la funzione personalizzata nell’editor di regole.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
+roles: Admin, Developer
+exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
+source-git-commit: 6c902ca08b7689e428facdc4150f443dad089bff
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 0%
@@ -14,6 +16,7 @@ ht-degree: 0%
 # Funzioni personalizzate nei componenti core di Forms adattivi
 
 Questo articolo descrive la creazione di funzioni personalizzate con il componente core Modulo adattivo più recente dotato delle funzioni più recenti, ad esempio:
+
 * Funzione di memorizzazione in cache per funzioni personalizzate
 * Supporto globale di oggetti di ambito e oggetti di campo per le funzioni personalizzate
 * Supporto per funzioni JavaScript moderne come le funzioni let e arrow (supporto ES10)
@@ -1003,5 +1006,3 @@ Se le funzioni personalizzate vengono modificate, la memorizzazione in cache vie
    * Metodi di classe
    * Parametri predefiniti
    * Parametri rimanenti
-
-
