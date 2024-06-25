@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
+source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '672'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      </td>
     <td>
     <ul>
-    <li>Le lettere bozza con dati XML si bloccano nello stato di caricamento durante l'anteprima. Per scaricare e installare l’hotfix, consulta<a href="#install-hotfix"> Scarica e installa l’hotfix per il problema della bozza di lettera</a> sezione.(FORMS-14521)</li>
+    <li>Le lettere bozza con dati XML si bloccano nello stato di caricamento durante l'anteprima. Per scaricare e installare l’aggiornamento rapido, consulta<a href="#install-hotfix"> Scarica e installa l’hotfix per il problema della bozza di lettera</a> sezione.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
