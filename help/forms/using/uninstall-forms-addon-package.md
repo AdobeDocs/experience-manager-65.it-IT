@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 975f1f580404ea1f2940aec5981f5668dced4b95
+source-git-commit: 2755e414ea23ebc1472e9c08d832eca93f28311b
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 Questo articolo illustra i passaggi necessari per disinstallare correttamente il pacchetto dei componenti aggiuntivi per AEM Forms da un’istanza SDK di AEM Forms. Segui questi passaggi per garantire la rimozione del pacchetto del componente aggiuntivo Forms, evitando potenziali problemi con l’ambiente AEM.
 
-## Prerequisiti
+## Prerequisito
 
-Assicurati di eseguire il backup di moduli e dati per evitare perdite di dati.
+Assicurati di eseguire il backup per evitare perdite di dati.
 
 ## Per disinstallare il pacchetto del componente aggiuntivo AEM Forms
 
