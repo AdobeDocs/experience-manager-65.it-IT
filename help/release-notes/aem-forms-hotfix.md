@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      </td>
     <td>
     <ul>
-    <li> Dopo l'aggiornamento a AEM Forms Service Pack 6.5.21.0, il servizio PaperCapture non è in grado di eseguire operazioni OCR (riconoscimento ottico dei caratteri) sui PDF. Per risolvere il problema, fare riferimento a <a href="/help/forms/using/papercapture-service-resolution.md"> risoluzione dei problemi</a> articolo.(CQDOC-21680) </li>
+    <li> Dopo l'aggiornamento a AEM Forms Service Pack 6.5.21.0, il servizio PaperCapture non è in grado di eseguire operazioni OCR (riconoscimento ottico dei caratteri) sui PDF. Per le istruzioni di installazione, consultare <a href="/help/forms/using/papercapture-service-resolution.md"> risoluzione dei problemi</a> articolo.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -54,7 +54,7 @@ In questo articolo sono elencate le correzioni critiche implementate per risolve
      </td>
     <td>
     <ul>
-    <li>Le lettere bozza con dati XML si bloccano nello stato di caricamento durante l'anteprima. Per scaricare e installare l’aggiornamento rapido, consulta<a href="#install-hotfix"> Scarica e installa l’hotfix per il problema della bozza di lettera</a> sezione.(FORMS-14521)</li>
+    <li>Le lettere bozza con dati XML si bloccano nello stato di caricamento durante l'anteprima. Per le istruzioni di download e installazione dell’hotfix, consulta<a href="#install-hotfix"> Scarica e installa l’hotfix per il problema della bozza di lettera</a> sezione.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
