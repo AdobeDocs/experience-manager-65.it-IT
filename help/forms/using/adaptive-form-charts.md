@@ -3,11 +3,11 @@ title: Utilizzo di grafici in un modulo adattivo.
 description: Utilizza i grafici in un modulo adattivo per rendere il modulo più informativo.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Considera di aver configurato un istogramma. Si desidera tuttavia anche fornire 
 1. Trascina un componente elenco a discesa dalla barra laterale AEM nel modulo adattivo.
 1. Seleziona il componente e tocca ![Impostazioni](cmppr1.png).
 1. Specifica un titolo per l’elenco a discesa. Selezionare ad esempio il tipo di grafico.
-1. Aggiungi i tipi di grafico supportati nella sezione Elementi, per popolare l’elenco a discesa. Clic **Fine**.
+1. Aggiungi i tipi di grafico supportati nella sezione Elementi, per popolare l’elenco a discesa. Fai clic su **Fine**.
    ![Selezione dell’elenco a discesa del grafico](chart-drop-down.png)
 
 1. Seleziona il componente a discesa e tocca ![Testo alternativo](rule_editor_icon.png). Nell’editor delle regole, scrivi una regola nell’editor delle regole visive come mostrato di seguito.

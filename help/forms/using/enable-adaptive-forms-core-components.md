@@ -6,10 +6,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 3%
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 L’abilitazione dei componenti core adattivi di Forms consente di iniziare a creare, pubblicare e distribuire [Forms adattivo basato su componenti core](create-an-adaptive-form-core-components.md) e [Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it) dall’ambiente Forms AEM 6.5.
 
-Per abilitare i componenti core Adaptive Forms nell’ambiente Forms AEM 6.5, imposta e implementa [AEM Archetipo 41 o versione successiva](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) progetto basato (con le opzioni Forms abilitate) su tutte le istanze Author e Publish.
+Per abilitare i componenti core Adaptive Forms nell’ambiente Forms AEM 6.5, imposta e implementa [AEM Archetipo 41 o versione successiva](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) progetto basato (con le opzioni forms abilitate) su tutte le istanze Author e Publish.
 
 Questo articolo fornisce istruzioni dettagliate per configurare e distribuire un progetto basato su Archetipo AEM 41 o versione successiva nell’ambiente Forms AEM 6.5 per abilitare i componenti core di Forms adattivi. Consulta l’elenco di seguito per **AEM 6.5** versioni compatibili per l’abilitazione dei componenti core di Forms:
 
@@ -43,7 +43,7 @@ Prima di abilitare i componenti core Forms adattivi in un ambiente Forms AEM 6.5
 
 ## Crea e implementa il progetto più recente basato su Archetipo AEM
 
-Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-project-archetype) basato su e distribuirlo a tutte le istanze Author e Publish:
+Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-project-archetype) basato su e implementalo in tutte le istanze Author e Publish:
 
 1. Accedi al tuo computer, ospitando ed eseguendo l’istanza Forms AEM 6.5, come amministratore.
 1. Apri il prompt dei comandi o il terminale ed esegui il seguente comando per creare un progetto Archetipo AEM (con le opzioni Forms abilitate):
@@ -114,7 +114,7 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
 
       >[!NOTE]
       >
-      >* Se imposti un’altra topologia, accertati di aggiungere l’URL di invio, il precaricamento e altri URL al inserisco nell&#39;elenco Consentiti di Dispatcher a livello di Dispatcher.
+      >* Se imposti un’altra topologia, accertati di aggiungere l’URL di invio, di precompilazione e di altro tipo al inserisco nell&#39;elenco Consentiti di Dispatcher a livello di Dispatcher.
 
    1. Salva e chiudi il file.
 
@@ -140,7 +140,7 @@ Per creare un Archetipo AEM 41 o [più tardi](https://github.com/adobe/aem-proje
 >
 >
 >
-> * Nel caso in cui si verifichino difficoltà di accesso alla finestra di dialogo di accesso in un’istanza di pubblicazione, per installare il pacchetto tramite Gestione pacchetti, prova a utilizzare l’URL: `http://[Publish Server URL]:[PORT]/system/console` per accedere. Questo consente di accedere alla pagina di accesso di un’istanza Publish, per procedere con il processo di installazione.
+> * Nel caso in cui si verifichino difficoltà di accesso alla finestra di dialogo di accesso in un’istanza di pubblicazione, per installare il pacchetto tramite Gestione pacchetti, prova a utilizzare l’URL: `http://[Publish Server URL]:[PORT]/system/console` per accedere. Questo consente di accedere alla pagina di accesso di un’istanza di Publish, per procedere con il processo di installazione.
 > * Non eliminare o eliminare il progetto Archetipo dopo averlo distribuito nell’ambiente. Il progetto Archetipo è necessario per aggiungere all’ambiente temi personalizzati e nuovi Componenti core Forms adattivi.
 
 I Componenti core sono abilitati per il tuo ambiente. Nell’ambiente vengono distribuiti un modello modulo adattivo basato su Componenti core vuoto e un tema Canvas 3.0, che consente di: [creazione di componenti core basati su Adaptive Forms](create-an-adaptive-form-core-components.md).

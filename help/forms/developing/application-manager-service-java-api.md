@@ -8,16 +8,17 @@ topic-tags: develop
 role: Developer
 exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
-# Servizio Application Manager - Guida introduttiva JavaAPI (SOAP) {#application-manager-service-javaapi-quick-start-soap}
+# Guida introduttiva di Application Manager Service JavaAPI (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
-Per il servizio Application Manager è disponibile Java API Quick Start (SOAP).
+Java API Quick Start(SOAP) è disponibile per il servizio Application Manager.
 
 [Guida introduttiva: Distribuzione di applicazioni tramite API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
@@ -31,9 +32,9 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 
 >[!NOTE]
 >
->La Guida introduttiva alle API Java (SOAP) nella programmazione con moduli AEM si basa su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La Guida introduttiva dell’API Java (SOAP) nella programmazione con moduli AEM si basa su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire i percorsi specifici di Windows con i percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazioni J2EE, assicurarsi di specificare proprietà di connessione valide. Consulta [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Start (modalità SOAP): distribuzione di applicazioni tramite l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## Quick Start (modalità SOAP): distribuzione di applicazioni tramite API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java seguente viene importata un&#39;applicazione basata su un file LCA esistente denominato *EncryptDocument.lca*.
 
@@ -135,7 +136,7 @@ Esempio Nell&#39;esempio di codice Java seguente viene importata un&#39;applicaz
  
 ```
 
-## Guida rapida (modalità SOAP): rimozione di un’applicazione tramite l’API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Quick Start (modalità SOAP): rimozione di un’applicazione tramite API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene rimossa un&#39;applicazione denominata *Crittografia documento*.
 

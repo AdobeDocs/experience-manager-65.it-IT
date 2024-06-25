@@ -4,11 +4,11 @@ description: Scopri come incorporare un modulo adattivo in una pagina web estern
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 Prima di incorporare un modulo adattivo in un sito web esterno, effettua le seguenti operazioni
 
-* Pubblica il modulo adattivo da incorporare nell’istanza Publish del server AEM Forms.
+* Publish il modulo adattivo da incorporare nell’istanza Publish del server AEM Forms.
 * Crea o identifica una pagina web sul tuo sito web in cui puoi ospitare il modulo adattivo. Assicurati che la pagina web possa [leggere i file jQuery da una rete CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) oppure dispone di una copia locale della jQuery incorporata. jQuery è necessaria per eseguire il rendering di un modulo adattivo.
 * Quando il server AEM e la pagina web si trovano su domini diversi, esegui i passaggi elencati nella sezione, [consentire ad AEM Forms di distribuire moduli adattivi a un sito tra più domini](#cross-site).
 
@@ -151,7 +151,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Se imposti un’altra topologia, accertati di aggiungere l’URL di invio, il precaricamento e altri URL al inserisco nell&#39;elenco Consentiti di Dispatcher a livello di Dispatcher.
+>Se imposti un’altra topologia, accertati di aggiungere l’URL di invio, di precompilazione e di altro tipo al inserisco nell&#39;elenco Consentiti di Dispatcher a livello di Dispatcher.
 
 ## Best practice {#best-practices}
 

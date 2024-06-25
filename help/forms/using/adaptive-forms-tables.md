@@ -4,11 +4,11 @@ description: Il componente Tabella in AEM Forms consente di creare tabelle in mo
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Il menu a discesa della riga fornisce inoltre l&#39;operazione Modifica per modi
 
 1. Seleziona la tabella e seleziona. ![cmppr](assets/cmppr.png) per visualizzarne le proprietà nella barra laterale.
 1. Specificare il riepilogo nella scheda Accessibilità.
-1. Clic **Fine**.
+1. Fai clic su **Fine**.
 
 ### Ordinare le colonne in una tabella {#sortcolumnstable}
 
@@ -143,7 +143,7 @@ Le tabelle forniscono supporto preconfigurato per l’aggiunta o l’eliminazion
 
 1. Seleziona una riga di tabella e seleziona ![cmppr](assets/cmppr.png).
 1. Nella scheda Impostazioni ripetizione, specifica i conteggi minimo e massimo per limitare il numero di righe nella tabella.
-1. Clic **Fine**.
+1. Fai clic su **Fine**.
 
 In fase di runtime, verrà visualizzato **+** e *-* per aggiungere o eliminare una riga.
 

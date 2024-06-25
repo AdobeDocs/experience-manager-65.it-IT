@@ -3,11 +3,11 @@ title: Cosa sono i frammenti di modulo adattivo?
 description: Forms adattivo fornisce un meccanismo per creare un segmento di modulo, ad esempio un pannello o un gruppo di campi, da utilizzare in qualsiasi modulo adattivo. Potete anche salvare un pannello esistente come frammento.
 topic-tags: author
 keywords: Aggiungere frammenti di modulo adattivo, frammenti di moduli adattivi, Crea frammento di modulo, aggiungere un frammento a un modulo adattivo, gestire frammenti
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 4a1ba259-8eb5-408f-8ee7-4868f98cca03
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 5%
@@ -174,7 +174,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando lâ
    <td><p>Pubblica/annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Eliminare</p> </td>
+   <td><p>Elimina</p> </td>
    <td><p>Elimina il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
  </tbody>

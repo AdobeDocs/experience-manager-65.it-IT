@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -146,7 +147,7 @@ Il seguente esempio di codice Java™ entra in modalità di backup con un’etic
  
 ```
 
-## Quick Start (modalità SOAP): abbandono della modalità di backup tramite l’API Java™ {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Guida rapida (modalità SOAP): uscire dalla modalità di backup utilizzando l’API Java™ {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
 Nell&#39;esempio di codice Java™ riportato di seguito un server Forms esce in modo esplicito dalla modalità di backup e ritorna alla rimozione dei file da Global Document Storage. (vedere [Uscita dalla modalità di backup sul server Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 

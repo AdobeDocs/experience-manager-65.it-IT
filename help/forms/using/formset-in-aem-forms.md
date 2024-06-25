@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2804'
 ht-degree: 0%
@@ -32,7 +32,7 @@ I set di moduli sono supportati anche nell’app AEM Forms, per consentire alla 
 
 ## Creazione e gestione di set di moduli {#creating-and-managing-form-set}
 
-È possibile associare diversi XDP o modelli di modulo, creati mediante Designer, a un set di moduli. I set di moduli possono quindi essere utilizzati per eseguire selettivamente il rendering degli XDP in base ai valori immessi dagli utenti nei moduli iniziali e nei relativi profili.
+È possibile associare diversi XDP o modelli di modulo, creati con Designer, a un set di moduli. I set di moduli possono quindi essere utilizzati per eseguire selettivamente il rendering degli XDP in base ai valori immessi dagli utenti nei moduli iniziali e nei relativi profili.
 
 Utilizzare [Interfaccia utente di AEM Forms](../../forms/using/introduction-managing-forms.md) per gestire tutti i moduli, i set di moduli e le risorse correlate.
 
@@ -90,7 +90,7 @@ Una volta creato un set di moduli, è possibile eseguire le azioni seguenti su t
 * Download: puoi scaricare il set di moduli con tutte le sue dipendenze.
 * Avvia/Gestisci revisione: una volta creato il set di moduli, è possibile impostarne la revisione facendo clic su Avvia revisione. Una volta avviata la revisione di un set di moduli, l’utente visualizza l’opzione Gestisci revisione. Nella schermata Gestisci revisione, puoi aggiornare/terminare la revisione. Per le revisioni aggiunte, puoi controllare la revisione e aggiungere commenti, se necessario.
 * Elimina: elimina il set di moduli completo. I moduli nel set di moduli eliminato rimangono nell’archivio.
-* Pubblica/Annulla pubblicazione: pubblica/annulla la pubblicazione del set di moduli insieme a tutti i moduli in esso contenuti e alle relative risorse.
+* Publish/Unpublish: pubblica/annulla la pubblicazione del set di moduli, insieme a tutti i moduli in esso contenuti e alle relative risorse.
 * Anteprima: Anteprima offre due opzioni: Anteprima come HTML (senza dati) e Anteprima personalizzata con dati di esempio.
 * Visualizza/Modifica proprietà: è possibile visualizzare/modificare le proprietà dei metadati di un set di moduli selezionato.
 
@@ -140,7 +140,7 @@ Un’espressione di idoneità può essere un’istruzione JavaScript valida che 
 Oltre alle funzioni JavaScript standard, il set di moduli espone anche l’API fs.valueOf che fornisce accesso al valore di un campo di un modulo in un set di moduli. Utilizza questa API per accedere al valore di un campo modulo in un set di moduli. La sintassi API è fs.valueOf (formUid, fieldSOM), dove:
 
 * formUid (stringa): ID univoco di un modulo nel set di moduli. È possibile specificarlo durante la creazione del set di moduli nell’interfaccia utente di Forms Manager. Per impostazione predefinita, corrisponde al nome del modulo.
-* fieldSOM (stringa): espressione SOM del campo nel modulo specificato da formUid. Espressione SOM o Espressione modello a oggetti di script utilizzata per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare modello a oggetti documento (DOM). Mentre il campo è selezionato, è possibile visualizzarlo in Progettazione moduli nella scheda Script.
+* fieldSOM (stringa): espressione SOM del campo nel modulo specificato da formUid. Espressione SOM o Espressione modello a oggetti di script utilizzata per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare modello a oggetti documento (DOM). Mentre il campo è selezionato, è possibile visualizzarlo in Designer modulo nella scheda Script.
 
 >[!NOTE]
 >

@@ -1,15 +1,15 @@
 ---
 title: Progettazione di modelli di modulo per moduli HTML5
-description: AEM Forms può eseguire il rendering del modello di modulo XFA nel formato HTML5. I progettisti di moduli possono progettare modelli di moduli utilizzando Designer e utilizzare la funzionalità di rendering di HTML 5.
+description: AEM Forms può eseguire il rendering del modello di modulo XFA nel formato HTML5. I progettisti di moduli possono progettare modelli di modulo utilizzando Designer e utilizzare la funzionalità di rendering di HTML5.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Per le funzioni XFA più comuni, consulta le best practice e le linee guida segu
 
 La maggior parte dei passaggi per la progettazione di un modello di modulo, ad esempio le associazioni di schema o la scrittura della logica del modulo, sono gli stessi. Tuttavia, a causa delle differenze intrinseche tra il motore di rendering e di script di un client spesso come Adobe Reader e i moduli basati su browser, vi sono alcuni consigli descritti in [best practice](/help/forms/using/design-accessible-html5-forms.md) articolo. Queste best practice consentono di progettare modelli di modulo in modo che funzionino come previsto in entrambi i formati.
 
-### Funzionalità di AEM Forms Designer per HTML5 Forms {#capabilities-in-aem-forms-designer-for-html-forms}
+### Funzionalità in AEM Forms Designer per HTML5 Forms {#capabilities-in-aem-forms-designer-for-html-forms}
 
 #### Anteprima HTML {#preview-html}
 

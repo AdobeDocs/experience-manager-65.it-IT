@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -22,7 +22,7 @@ I moduli HTML5 utilizzano lo standard di accessibilità ARIA HTML5 per generare 
 
 *Nota: la navigazione a schede non riguarda i campi protetti, ad esempio i campi di calcolo che visualizzano la somma dei valori. Affinché l’assistente vocale possa leggere il valore di un campo protetto, inserisci un campo di sola lettura vuoto sopra o accanto al campo protetto. Assegnare il valore del campo protetto al nuovo campo di sola lettura. L’assistente vocale o la navigazione a schede può scegliere questo campo di sola lettura e indicarlo come valore del campo protetto.*
 
-AEM Forms Designer include diverse opzioni di Testo parlato che possono essere passate agli assistenti vocali. Per ogni oggetto di un modulo, l’utente può specificare una delle diverse impostazioni per il testo dell’assistente vocale:
+AEM Forms Designer include diverse opzioni Speak Text che possono essere trasmesse agli assistenti vocali. Per ogni oggetto di un modulo, l’utente può specificare una delle diverse impostazioni per il testo dell’assistente vocale:
 
 * Testo personalizzato dell&#39;utilità di lettura dello schermo, che può essere impostato utilizzando la tavolozza Accessibilità. Gli autori possono annotare i nomi di pulsanti e campi e il relativo scopo.
 * Descrizioni comandi che possono essere impostate nella tavolozza Accessibilità.

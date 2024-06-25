@@ -3,9 +3,10 @@ title: Come creare un modulo adattivo
 description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience Manager Forms]. I moduli adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni. Approfondisci le modalità di creazione di un modulo adattivo basato su un modello di dati del modulo, un modello di modulo XFA e uno schema XML o JSON.
 role: User, Developer
 level: Beginner
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
+exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 6%

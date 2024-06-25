@@ -6,11 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 2%
@@ -37,7 +37,7 @@ Ogni elemento contiene classi CSS ben definite. È possibile modificare queste c
 >
 >Alcuni elementi XFA non hanno un nome. Per modificare gli stili di tali componenti, modificate tutti i componenti di quel particolare tipo.
 
-Per le pagine non denominate in AEM Forms Designer, le pagine di un modulo HTML5 vengono denominate in ordine crescente di numero. Nel caso di un modulo di HTML5 con due pagine, ad esempio, le pagine vengono denominate Pagina1, Pagina2.
+Per le pagine non denominate in AEM Forms Designer, le pagine di un modulo HTML 5 vengono denominate in ordine crescente di numero. Nel caso di un modulo di HTML5 con due pagine, ad esempio, le pagine vengono denominate Pagina1, Pagina2.
 
 ## Elemento campo {#field-element}
 
@@ -124,7 +124,7 @@ Oltre alla classe type e name, il componente field contiene anche una classe CSS
 
 ## Classi CSS per campi diversi {#css-classes-for-different-fields}
 
-AEM Forms Designer supporta diversi tipi di campi in un modulo come NumericField, DecimalField e DateField. Tutti questi campi in HTML contengono le classi CSS sopra menzionate. Contengono anche alcune classi aggiuntive a seconda del tipo di campo.
+AEM Forms Designer supporta diversi tipi di campi in un modulo, ad esempio NumericField, DecimalField e DateField. Tutti questi campi in HTML contengono le classi CSS sopra menzionate. Contengono anche alcune classi aggiuntive a seconda del tipo di campo.
 
 A ogni campo è associato un widget che rappresenta l’elemento dell’interfaccia utente. Di seguito sono elencate le classi di ciascun campo e i widget associati a ciascun campo.
 

@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-feature: Document Services
+feature: Document Services,Assembler,Barcoded Forms
 exl-id: d4b5cacd-0bac-48b5-a8a6-0f58883136d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
@@ -108,7 +108,7 @@ Quando si decodificano i codici a barre, specificare il carattere utilizzato per
 
 ### Set di caratteri specificati dall&#39;utente {#user-specified-character-sets}
 
-Quando gli autori di moduli aggiungono oggetti codice a barre ai propri moduli utilizzando Designer, possono specificare una codifica di caratteri. Le codifiche riconosciute sono UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-Five, GB-2312, UTF-16. Per impostazione predefinita, tutti i dati sono codificati nei codici a barre come UTF-8.
+Quando gli autori di moduli aggiungono oggetti codice a barre ai propri moduli utilizzando Designer, possono specificare una codifica dei caratteri. Le codifiche riconosciute sono UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-Five, GB-2312, UTF-16. Per impostazione predefinita, tutti i dati sono codificati nei codici a barre come UTF-8.
 
 Quando si decodificano i codici a barre, è possibile specificare la codifica del set di caratteri da utilizzare. Per garantire che tutti i dati vengano decodificati correttamente, specificare lo stesso set di caratteri specificato dall&#39;autore del modulo al momento della progettazione del modulo.
 

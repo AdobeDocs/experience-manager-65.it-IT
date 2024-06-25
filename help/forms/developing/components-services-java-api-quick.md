@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 Java™ API Quick Start (SOAP) è disponibile per componenti e servizi.
 
 
-[Guida rapida (modalità SOAP): distribuzione di un componente tramite Java](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
+[Quick Start (modalità SOAP): distribuzione di un componente utilizzando Java](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
 [Quick Start (modalità SOAP): impostazione del contesto di esecuzione di un servizio utilizzando Java](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
 
@@ -28,9 +29,9 @@ Java™ API Quick Start (SOAP) è disponibile per componenti e servizi.
 
 [Quick Start (modalità SOAP): avvio di un servizio utilizzando Java](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
 
-[Guida rapida (modalità SOAP): modifica dei valori di configurazione del servizio tramite Java](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
+[Quick Start (modalità SOAP): modifica dei valori di configurazione del servizio tramite Java](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
 
-[Guida rapida (modalità SOAP): rimozione di componenti tramite Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+[Quick Start (modalità SOAP): rimozione di componenti tramite Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
@@ -47,7 +48,7 @@ Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortement
 >
 >Se si dispone di un componente personalizzato e si utilizzano protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate smettono di funzionare dopo un aggiornamento, utilizzare la strategia di chiamata in-VM. Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando i protocolli SOAP o EJB.
 
-## Quick Start (modalità SOAP): distribuzione di un componente tramite l’API Java™ {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
+## Quick Start (modalità SOAP): distribuzione di un componente utilizzando l’API Java™ {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
 L’esempio Java™ seguente distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
 

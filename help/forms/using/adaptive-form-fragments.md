@@ -3,13 +3,13 @@ title: Frammenti di moduli adattivi
 description: I moduli adattivi forniscono un meccanismo per creare un segmento di modulo, ad esempio un pannello o un gruppo di campi, da utilizzare in qualsiasi modulo adattivo. Puoi anche salvare un pannello esistente come frammento.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 Anche se ogni modulo è progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni, ad esempio per fornire dettagli personali come nome e indirizzo, dettagli sulla famiglia e dettagli sul reddito. Gli sviluppatori di moduli devono creare questi segmenti comuni ogni volta che viene creato un nuovo modulo.
 
-I moduli adattivi offrono un pratico meccanismo per creare segmenti di modulo like un pannello o un gruppo di campi una sola volta e riutilizzarli in più moduli adattivi. Questi segmenti riutilizzabili e autonomi sono denominati frammenti di moduli adattivi.
+I moduli adattivi forniscono un meccanismo pratico per creare segmenti di modulo una sola volta, come un pannello o un gruppo di campi, e riutilizzarli nei moduli adattivi. Questi segmenti riutilizzabili e autonomi sono denominati frammenti di moduli adattivi.
 
 >[!NOTE]
 >
@@ -243,7 +243,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando l�
    <td><p>Pubblica/annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Eliminare</p> </td>
+   <td><p>Elimina</p> </td>
    <td><p>Elimina il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
  </tbody>

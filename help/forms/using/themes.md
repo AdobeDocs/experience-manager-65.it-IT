@@ -5,11 +5,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '6086'
 ht-degree: 1%
@@ -145,13 +145,13 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
   </tr>
   <tr>
    <td>8.</td>
-   <td>Ora di pubblicazione</td>
+   <td>Ora di attivazione Publish</td>
    <td>Sì</td>
    <td>Tempo per pubblicare automaticamente il tema.</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>Ora di disattivazione pubblicazione</td>
+   <td>Ora di disattivazione Publish</td>
    <td>Sì</td>
    <td>Tempo per annullare automaticamente la pubblicazione del tema.</td>
   </tr>
@@ -604,7 +604,7 @@ Dopo aver personalizzato il tema, applicalo al modulo o alla comunicazione inter
 
 ## Impatto su altri casi di utilizzo di moduli adattivi {#impact-on-other-adaptive-form-use-cases}
 
-* **Pubblicare/annullare la pubblicazione di un modulo:** Quando si pubblica un modulo, viene pubblicato anche il tema applicato a (se non è già pubblicato)
+* **Publish/annullamento della pubblicazione di un modulo:** Quando si pubblica un modulo, viene pubblicato anche il tema applicato a (se non è già pubblicato)
 * **Importare/esportare un modulo:** Quando si importa o si esporta un modulo, viene automaticamente importato o esportato anche il tema associato.
 * **Riferimenti di un modulo:** La sezione Riferimenti nei riferimenti del modulo contiene una voce aggiuntiva per il tema.
 * **Ora ultima modifica di un modulo:** Aggiornato quando il tema associato viene modificato.

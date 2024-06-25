@@ -4,11 +4,11 @@ description: L'articolo descrive il servizio Forms e le attività relative ai mo
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-feature: Document Services
+feature: Document Services,Forms Service,PDF Generator
 exl-id: 6580fe6f-3cdb-45ec-8ba3-51dc60d1965e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Utilizza il servizio Forms per effettuare le seguenti operazioni:
 
 ## Creazione di PDF forms  {#creating-pdf-forms-nbsp}
 
-Utilizza il servizio Form per creare PDF forms per l’acquisizione dei dati. In genere, si inizia con un modello di AEM Forms Designer. Utilizza il `renderPDFForm` (collegamento a Javadoc) operazione del servizio Forms per convertire questo modello in un modulo PDF.
+Utilizza il servizio Form per creare PDF forms per l’acquisizione dei dati. In genere, si inizia con un modello Designer di AEM Forms. Utilizza il `renderPDFForm` (collegamento a Javadoc) operazione del servizio Forms per convertire questo modello in un modulo PDF.
 
 Il primo parametro del `renderPDFForm` operation è il nome del file modello (ad esempio, `ExpenseClaim.xdp`). È possibile memorizzare il file modello in un file system locale, in un repository CRX oppure in un percorso HTTP o FTP. È possibile specificare la posizione del file modello impostando la directory principale del contenuto in `PDFFormRenderOptions` parametro di `renderPDFForm` operazione. Consulta Javadoc per i dettagli di altre opzioni che puoi specificare per il `PDFFormRenderOptions` parametro.
 

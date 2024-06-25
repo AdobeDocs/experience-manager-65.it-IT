@@ -2,14 +2,14 @@
 title: Creare o aggiungere un modulo adattivo alla pagina AEM Sites
 description: Scopri come creare o aggiungere facilmente un modulo adattivo alla pagina AEM Sites. Scopri le tecniche e le best practice passo passo per integrare moduli dinamici e personalizzabili nel tuo sito web, ottimizzando le tue esperienze digitali per il massimo impatto.
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2884'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -127,7 +127,7 @@ Per abilitare [!UICONTROL Contenitore Forms adattivo] nel criterio del modello, 
 1. Apri la pagina AEM Sites o il frammento di esperienza per la modifica. Per aprire la pagina per la modifica, selezionarla e fare clic su Modifica.
 1. Apri il modello della pagina Sites o Frammento esperienza. Per aprire il modello, passare alla [!UICONTROL Informazioni pagina] ![Informazioni pagina](/help/forms/using/assets/Smock_Properties_18_N.svg) > [!UICONTROL Modifica modello]. Apre il modello corrispondente nell’editor modelli.
 1. Nella vista Struttura, fare clic sul pulsante **[!UICONTROL Policy]** ![Policy](/help/forms/using/assets/Smock_FeedManagement_18_N.svg) nella barra dei menu. In **[!UICONTROL Componenti consentiti]** e seleziona la **[!UICONTROL Contenitore Forms adattivo]**  casella di controllo sotto **[Nome progetto archetipo AEM] - Modulo adattivo**.
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
@@ -220,7 +220,7 @@ Per configurare uno schema JSON o un modello dati modulo per il modulo:
    * Quando selezioni il **[!UICONTROL Modello modulo]** , utilizza **[!UICONTROL Seleziona modello dati modulo]** per selezionare un modello di dati modulo preconfigurato.
    * Quando selezioni il **[!UICONTROL Schema]** , utilizza **[!UICONTROL Schema]** per selezionare uno schema JSON per il modulo.
 
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 ## Configurare un servizio di precompilazione per un modulo {#configure-prefill-service-for-form}
 
@@ -238,7 +238,7 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/using/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
    ![Editor pagina per servizi di precompilazione fdm aem sites](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Seleziona un modello di dati modulo. Apri **[!UICONTROL Base]** scheda. Nel servizio di preriempimento, seleziona **[!UICONTROL Servizio preriempimento bozza di Forms Portal]**.
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 ## Reindirizza l’utente a un nuovo utente all’invio del modulo o mostra un messaggio di ringraziamento
 

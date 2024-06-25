@@ -3,10 +3,10 @@ title: Come si crea un Forms adattivo utilizzando lo schema JSON?
 description: Scopri come creare moduli adattivi utilizzando lo schema JSON come modello di modulo. Puoi utilizzare gli schemi JSON esistenti per creare moduli adattivi. Approfondisci un esempio di schema JSON, preconfigura i campi nella definizione dello schema JSON, limita i valori accettabili per un componente modulo adattivo e scopri i costrutti non supportati.
 role: User, Developer
 level: Beginner, Intermediate
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 4%
@@ -500,7 +500,7 @@ Devi essere membro del [forms-power-user group](forms-groups-privileges-tasks.md
    <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
-   <td>Scelta dell'immagine</td>
+   <td>Scelta immagine</td>
    <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>
    <td><img alt="Icona di spunta Sì" src="assets/yes_tick.png" /></td>

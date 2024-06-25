@@ -8,18 +8,19 @@ topic-tags: develop
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# Guida introduttiva API Java™ di Distiller Service (SOAP) {#distiller-service-java-api-quickstart-soap}
+# Guida introduttiva all’API Java™ di Distiller Service (SOAP) {#distiller-service-java-api-quickstart-soap}
 
 Java™ API Quick Start (SOAP) è disponibile per il servizio Distiller®:
 
-[Guida introduttiva (modalità SOAP): conversione di un file PostScript in un documento PDF tramite Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[Guida rapida (modalità SOAP): conversione di un file PostScript in un documento PDF tramite Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 

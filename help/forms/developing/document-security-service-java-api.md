@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: 76d855cf-ebfa-487a-b1c8-755e7e45dd73
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
@@ -17,11 +18,11 @@ ht-degree: 0%
 
 # Guida introduttiva all’API Java di Document Security Service (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
-È disponibile Java API Quick Start (SOAP) per il servizio di Rights Management:
+Java API Quick Start(SOAP) è disponibile per il servizio di Rights Management:
 
 [Guida rapida (modalità SOAP): creazione di un criterio utilizzando l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
-[Guida introduttiva (modalità SOAP): modificare un criterio utilizzando l’API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
+[Quick Start (modalità SOAP): modifica di un criterio utilizzando l’API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
 
 [Quick Start (modalità SOAP): eliminazione di un criterio utilizzando l’API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 [Guida rapida (modalità SOAP): ripristino dell’accesso a un documento revocato tramite l’API Java](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
 
-[Quick Start (modalità SOAP): ispezione dei documenti PDF protetti tramite policy tramite l’API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
+[Quick Start (modalità SOAP): ispezione dei documenti PDF protetti tramite policy tramite API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
 
 [Guida rapida (modalità SOAP): creazione di una filigrana tramite l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
 
@@ -178,7 +179,7 @@ Nell&#39;esempio di codice Java seguente viene creato un nuovo criterio denomina
  
 ```
 
-## Guida introduttiva (modalità SOAP): modificare un criterio utilizzando l’API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
+## Quick Start (modalità SOAP): modifica di un criterio utilizzando l’API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java seguente viene modificato un criterio denominato *Consenti copia* impostando il periodo di lease offline su 40 giorni. (vedere [Modifica dei criteri](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
@@ -698,7 +699,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene revocato un d
  
 ```
 
-## Quick Start (modalità SOAP): ispezione dei documenti PDF protetti tramite policy tramite l’API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
+## Quick Start (modalità SOAP): ispezione dei documenti PDF protetti tramite policy tramite API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene esaminato un documento PDF protetto tramite policy denominato *PolicyProtectedLoanDoc.pd* f. (cfr. [Verifica dei documenti di PDF protetti tramite policy](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
 
@@ -922,7 +923,7 @@ Esempio Nell&#39;esempio di codice Java riportato di seguito viene ripristinato 
  
 ```
 
-## Guida introduttiva (modalità SOAP): creazione di una filigrana PDF tramite l’API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
+## Guida rapida (modalità SOAP): creazione di una filigrana PDF tramite l’API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana PDF denominata &quot;Sample PDF Watermark&quot;. Questa filigrana contiene un singolo elemento (vedere [Creazione di filigrane](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
@@ -1204,7 +1205,7 @@ public class TextWatermarks {
 }
 ```
 
-## Guida rapida (modalità SOAP): modifica di una filigrana di testo tramite l’API Java {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
+## Guida introduttiva (modalità SOAP): modifica di una filigrana di testo tramite l’API Java {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificata una filigrana denominata &#39;Sample Text Watermark&#39; e l&#39;opacità del primo elemento viene impostata su 100.
 
@@ -1867,7 +1868,7 @@ public class CreateAbstractPolicySoap {
 }
 ```
 
-## Quick Start (modalità SOAP): modifica di un criterio astratto tramite API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
+## Guida rapida (modalità SOAP): modificare una policy astratta utilizzando l’API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificato un criterio astratto denominato AllowCopy. Il set di criteri in cui viene modificato il criterio è denominato Set di criteri globale. Questo set di criteri esiste per impostazione predefinita. Consulta Creazione di criteri.
 
@@ -1966,7 +1967,7 @@ public class ModifyingAbstractPolicySoap {
 }
 ```
 
-## Guida rapida (modalità SOAP): eliminazione di un criterio astratto tramite API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
+## Quick Start (modalità SOAP): eliminazione di un criterio astratto tramite API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java seguente viene eliminato un criterio astratto denominato AllowCopy. Il set di criteri da cui viene eliminato il criterio è denominato Set di criteri globale. Questo set di criteri esiste per impostazione predefinita. Consulta Creazione di criteri.
 
@@ -2161,7 +2162,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Guida introduttiva (modalità SOAP): Protect a PDF nel flusso di lavoro delle istruzioni per un nuovo utente, tramite API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Guida rapida (modalità SOAP): Protect a PDF nel flusso di lavoro delle istruzioni per un nuovo utente, utilizzando l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
 Esempio Nell&#39;esempio di codice Java riportato di seguito viene illustrato come proteggere un documento nel flusso di lavoro delle istruzioni. Si tratta di un processo in due fasi:
 

@@ -6,11 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 docset: aem65
-feature: Forms Designer
+feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Utilizzo della firma scarabocchio nei moduli di HTML5{#using-scribble-signature-in-html-forms}
 
-I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un requisito comune è il supporto delle firme. Scribing (scrittura con uno stilo o un dito) sta diventando un modo accettato di firmare moduli su dispositivi mobili. HTML5 Forms e Forms Designer ora abilitano l’opzione di avere un campo di firma scarabocchio sul modulo. Quando si esegue il rendering del modulo nel browser, è possibile firmare questi campi utilizzando uno stilo, un mouse o un tocco.
+I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un requisito comune è il supporto delle firme. Scribing (scrittura con uno stilo o un dito) sta diventando un modo accettato di firmare moduli su dispositivi mobili. HTML5 Forms e Forms Designer ora consentono di avere un campo di firma scarabocchio sul modulo. Quando si esegue il rendering del modulo nel browser, è possibile firmare questi campi utilizzando uno stilo, un mouse o un tocco.
 
 ## Progettare un modulo utilizzando il campo Firma a mano {#how-to-design-a-form-using-scribble-signature-field}
 
@@ -30,7 +30,7 @@ I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un 
 
    >[!NOTE]
    >
-   >I Dimension del campo selezionato in Forms Designer si riflettono durante il rendering del campo. Tuttavia, la dimensione della casella della firma di cui è stato eseguito il rendering viene calcolata in base alle proporzioni del campo e non alla dimensione specificata in Forms Designer.
+   >I Dimension del campo selezionato in Forms Designer vengono visualizzati durante il rendering del campo. Tuttavia, la dimensione della casella della firma sottoposta a rendering viene calcolata in base alle proporzioni del campo e non alla dimensione specificata in Forms Designer.
 
 1. Configura il campo Disegno di firma.
 

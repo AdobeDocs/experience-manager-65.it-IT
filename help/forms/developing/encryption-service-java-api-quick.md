@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # Servizio di crittografia Quick Start per API Java™ (SOAP) {#encryption-service-java-api-quickstart-soap}
 
-[Guida introduttiva (modalità SOAP): Crittografia di un documento PDF tramite Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Guida rapida (modalità SOAP): crittografia di un documento PDF tramite Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
 [Quick Start (modalità SOAP): rimozione della crittografia basata su password tramite Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
@@ -27,7 +28,7 @@ ht-degree: 0%
 
 [Guida rapida (modalità SOAP): sblocco di un documento PDF crittografato tramite Java](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
-[Quick Start (modalità SOAP): determinazione del tipo di crittografia utilizzando Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[Quick Start (modalità SOAP): determinazione del tipo di crittografia tramite Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 

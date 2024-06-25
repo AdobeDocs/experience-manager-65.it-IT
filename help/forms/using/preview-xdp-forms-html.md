@@ -1,14 +1,14 @@
 ---
 title: Generare l’anteprima HTML5 di un modulo XDP
-description: È possibile utilizzare la scheda HTML anteprima in Progettazione LiveCycli per visualizzare in anteprima i moduli così come vengono visualizzati in un browser.
+description: È possibile utilizzare la scheda Anteprima HTML in LiveCycle Designer per visualizzare in anteprima i moduli così come vengono visualizzati in un browser.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Generare l’anteprima HTML5 di un modulo XDP{#generate-html-preview-of-an-xdp-form}
 
-Durante la progettazione di un modulo in AEM Forms Designer, oltre a visualizzare l’anteprima della copia trasformata PDF di un modulo, è possibile anche visualizzarne una copia trasformata HTML 5. È possibile utilizzare **Anteprima HTML** per visualizzare in anteprima un modulo così come apparirebbe in un browser.
+Durante la progettazione di un modulo in AEM Forms Designer, oltre a visualizzare l’anteprima della copia trasformata PDF di un modulo, puoi anche visualizzarne una copia trasformata HTML 5. È possibile utilizzare **Anteprima HTML** per visualizzare in anteprima un modulo così come apparirebbe in un browser.
 
 ## Abilitare l’anteprima HTML per i moduli XDP in Designer {#html-preview-of-forms-in-forms-designer}
 
-Per consentire a Designer di generare l’anteprima HTML dei moduli XDP, esegui le seguenti configurazioni:
+Per consentire a Designer di generare un’anteprima HTML dei moduli XDP, esegui le seguenti configurazioni:
 
 * Configurare il servizio di autenticazione Apache Sling
 * Disattiva modalità protetta
@@ -72,7 +72,7 @@ Il [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attiv
    * **URL server**: URL del server AEM Forms.
 
    * **Numero porta HTTP**: porta del server AEM. Il valore predefinito è 4502.
-   * **Contesto anteprima HTML:** Percorso del profilo per il rendering dei moduli XFA. Per visualizzare in anteprima il modulo in Designer vengono utilizzati i seguenti profili predefiniti. Tuttavia, puoi anche specificare il percorso di un profilo personalizzato.
+   * **Contesto anteprima HTML:** Percorso del profilo per il rendering dei moduli XFA. I seguenti profili predefiniti vengono utilizzati per visualizzare in anteprima il modulo in Designer. Tuttavia, puoi anche specificare il percorso di un profilo personalizzato.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms su OSGi)
 
@@ -87,9 +87,9 @@ Il [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attiv
    >
    >Verifica che il server AEM Forms sia in esecuzione. L’anteprima HTML si connette al server CRX per *generare* un’anteprima.
 
-   ![Opzioni di AEM Forms Designer ](assets/server_options.png)
+   ![Opzioni AEM Forms Designer ](assets/server_options.png)
 
-   Opzioni di AEM Forms Designer
+   Opzioni AEM Forms Designer
 
 1. Per visualizzare l’anteprima di un modulo in HTML, fai clic su **Anteprima HTML** scheda.
 
@@ -105,13 +105,13 @@ Il [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attiv
 
    >[!CAUTION]
    >
-   >Per testare la reale esperienza dell’utente finale, puoi anche visualizzare in anteprima i moduli in browser esterni (Google Chrome, Microsoft Edge, Mozilla Firefox e altro). Ogni browser utilizza un motore separato per il rendering di HTML, pertanto potrebbero esserci alcune differenze nel modo in cui un modulo viene visualizzato in anteprima in Designer e nel browser esterno.
+   >Per testare la reale esperienza dell’utente finale, puoi anche visualizzare in anteprima i moduli in browser esterni (Google Chrome, Microsoft Edge, Mozilla Firefox e altro). Ogni browser utilizza un motore separato per il rendering di HTML, pertanto ci potrebbero essere alcune differenze nel modo in cui un modulo viene visualizzato in anteprima in Designer e nel browser esterno.
 
 ## Per visualizzare in anteprima un modulo utilizzando dati di esempio {#to-preview-a-form-using-sample-data}
 
 Designer consente di visualizzare in anteprima e verificare il modulo utilizzando dati XML di esempio. Si consiglia di verificare frequentemente il modulo con dati di esempio per verificare che venga eseguito correttamente il rendering.
 
-Se non si dispone di dati di esempio, Designer può crearli o può crearli personalmente. (vedere [Per generare automaticamente i dati di esempio per l&#39;anteprima del modulo](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Per creare dati di esempio per l&#39;anteprima del modulo](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Se non disponi di dati di esempio, puoi crearli direttamente in Designer. (vedere [Per generare automaticamente i dati di esempio per l&#39;anteprima del modulo](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Per creare dati di esempio per l&#39;anteprima del modulo](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 Il test del modulo tramite un&#39;origine dati di esempio assicura che i dati e i campi siano mappati e che le sottomaschere ripetute vengano ripetute come previsto. È possibile creare un layout di modulo bilanciato che fornisca lo spazio appropriato per ogni oggetto per visualizzare i dati uniti.
 

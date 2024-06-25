@@ -7,12 +7,13 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
+exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1794'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -142,7 +143,7 @@ Per configurare uno schema JSON o un modello dati modulo per il modulo:
    * Quando selezioni il **[!UICONTROL Modello modulo]** , utilizza **[!UICONTROL Seleziona modello dati modulo]** per selezionare un modello di dati modulo preconfigurato.
    * Quando selezioni il **[!UICONTROL Schema]** , utilizza **[!UICONTROL Schema]** per selezionare uno schema JSON per il modulo.
 
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 >[!NOTE]
 >

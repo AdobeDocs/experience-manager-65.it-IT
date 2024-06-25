@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-feature: Document Services
+feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Un documento può essere inviato a una stampante di rete, a una stampante locale
 
 >[!NOTE]
 >
->La progettazione di un modulo viene in genere creata mediante Designer. Per informazioni sulla creazione di progettazioni di moduli per il servizio di output, vedere la Guida di Designer.
+>La progettazione di un modulo viene in genere creata utilizzando Designer. Per informazioni sulla creazione di progettazioni di moduli per il servizio di output, vedere la Guida in linea di Designer.
 
 Quando si utilizza il servizio di output per unire i dati XML con una struttura di modulo, il risultato è un documento PDF non interattivo. Un documento PDF non interattivo non consente agli utenti di immettere dati nei relativi campi. È invece possibile utilizzare il servizio Forms per creare un modulo interattivo per PDF che consenta agli utenti di immettere dati nei relativi campi.
 
