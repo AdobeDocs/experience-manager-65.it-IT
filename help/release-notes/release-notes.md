@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e6fa020bac624c53abdebc528b5a0bf0e979b986
+source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
 workflow-type: tm+mt
-source-wordcount: '4006'
+source-wordcount: '3999'
 ht-degree: 2%
 
 ---
@@ -540,11 +540,9 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
    1. Apri il prompt dei comandi in modalità amministratore.
    1. Installare la patch Geode utilizzando `geode-*-1.15.1.2.jar` file.
 
-* Se un utente tenta di visualizzare in anteprima una bozza di lettera con dati XML salvati, l’operazione si blocca `Loading` state per alcune lettere specifiche. (FORMS-14521) Per risolvere il problema, effettua le seguenti operazioni:
-   1. Scarica il file [hotfix](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7C6fb8db1c81c84470d7ff08dc911c1e41%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638544797146701276%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=MhuthPPLjZcWuQsRAtSiwEZ2MljeNrpLumlWo6iolFI%3D&amp;reserved=0) dal portale di distribuzione software.
-   1. Carica e installa il pacchetto (.zip) utilizzando [Gestione pacchetti CRX](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+* Se un utente tenta di visualizzare in anteprima una bozza di lettera con dati XML salvati, l’operazione si blocca `Loading` state per alcune lettere specifiche. Per scaricare e installare l’aggiornamento rapido, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) articolo. (FORMS-14521)
 
-* Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.21.0, il `PaperCapture` Il servizio non riesce a eseguire operazioni OCR (Optical Character Recognition) sui PDF. Il servizio non genera output sotto forma di PDF o file di registro. Per risolvere il problema, vedere [risoluzione dei problemi](/help/forms/using/papercapture-service-resolution.md) articolo. (CQDOC-21680)
+* Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.21.0, il `PaperCapture` Il servizio non riesce a eseguire operazioni OCR (Optical Character Recognition) sui PDF. Il servizio non genera output sotto forma di PDF o file di registro. Per scaricare e installare l’aggiornamento rapido, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) articolo. (CQDOC-21680)
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
