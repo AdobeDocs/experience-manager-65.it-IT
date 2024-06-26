@@ -9,9 +9,9 @@ content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3565'
+source-wordcount: '3568'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ Se si fa clic sul nome di un pacchetto, la voce nell&#39;elenco dei pacchetti vi
 
 Ulteriori azioni sono disponibili sotto **Altro** pulsante.
 
-* [Eliminare](#deleting-packages)
+* [Elimina](#deleting-packages)
 * [Copertura](#package-coverage)
 * [Contenuti](#viewing-package-contents-and-testing-installation)
 * [Ripeti adattamento](#rewrapping-a-package)
@@ -168,18 +168,22 @@ Puoi definire una o più definizioni di filtro per un pacchetto. Utilizza più d
 
 ![Scheda Filtri](assets/edit-filter.png)
 
-Durante la creazione dei filtri, puoi definire un percorso o utilizzare un’espressione regolare per specificare tutti i nodi che desideri includere o escludere.
+Durante la creazione di regole, viene definita un&#39;espressione regolare (nota anche come espressione regex, regexp o razionale) per specificare tutti i nodi che si desidera includere o escludere.
 
 | Tipo di regola | Descrizione |
 |---|---|
-| include | L&#39;inclusione di una directory includerà la directory e tutti i file e le cartelle in essa contenuti (ovvero l&#39;intera sottostruttura), ma **non** includi altri file o cartelle dal percorso principale specificato. |
-| escludi | L’esclusione di una directory esclude tale directory e tutti i file e le cartelle in essa contenuti (ovvero l’intera sottostruttura). |
+| include | Include includerà tutti i file e le cartelle nella directory specificata che corrispondono all&#39;espressione regolare. Includi **non** includi altri file o cartelle dal percorso principale specificato. |
+| escludi | Escludi escluderà tutti i file e le cartelle che corrispondono all’espressione regolare. |
 
 I filtri dei pacchetti vengono spesso definiti al momento della prima [crea il pacchetto.](#creating-a-new-package) Tuttavia, possono anche essere modificate in un secondo momento, dopodiché il pacchetto deve essere ricompilato per aggiornarne il contenuto in base alle nuove definizioni di filtro.
 
 >[!TIP]
 >
 >Un pacchetto può contenere più definizioni di filtro in modo che i nodi di posizioni diverse possano essere facilmente combinati in un unico pacchetto.
+
+>[!TIP]
+>
+>Per informazioni di base, consulta [Apache Jackrabbit - Filtro Workspace](https://jackrabbit.apache.org/filevault/filter.html) documentazione.
 
 ### Dipendenze {#dependencies}
 
