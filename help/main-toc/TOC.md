@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: 17e10214732b25c89e0bb3f7b435fe05cd2f3595
+source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
 workflow-type: tm+mt
-source-wordcount: '7434'
+source-wordcount: '7456'
 ht-degree: 20%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 20%
    + [Gestore di autenticazione SAML 2.0](/help/sites-administering/saml-2-0-authenticationhandler.md)
    + [Gruppi di utenti chiusi in AEM](/help/sites-administering/closed-user-groups.md)
    + [Operazioni Granite: amministrazione di utenti e gruppi](/help/sites-administering/granite-user-group-admin.md)
-   + [Abilitazione di CRXDE Liti nell’AEM](/help/sites-administering/enabling-crxde-lite.md)
+   + [Abilitazione di CRXDE Lite nell’AEM](/help/sites-administering/enabling-crxde-lite.md)
    + [Configurazione di LDAP con AEM 6](/help/sites-administering/ldap-config.md)
    + [Configurare la password amministratore durante l’installazione](/help/sites-administering/security-configure-admin-password.md)
    + [Utenti di servizi in AEM](/help/sites-administering/security-service-users.md)
@@ -331,10 +331,10 @@ ht-degree: 20%
          + [Componenti di Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
          + [Targeting del tuo Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
          + [Creazione di Adobe Campaign Forms nell’AEM](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-      + Authoring di risorse nell’interfaccia classica {#assets}
+      + Authoring di Assets nell’interfaccia classica {#assets}
          + [Utilizzo delle risorse](/help/sites-classic-ui-authoring/classicui-assets.md)
-         + [Distribuzione di risorse Dynamic Medie](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
-         + [Aggiunta di risorse Dynamic Medie alle pagine](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
+         + [Distribuzione di Dynamic Medie Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
+         + [Aggiunta di Dynamic Medie Assets alle pagine](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Aggiunta di funzioni Scene7 alla pagina](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
          + [Utilizzo di Dynamic Medie](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
@@ -357,14 +357,14 @@ ht-degree: 20%
       + [Elabora risorse](/help/assets/assets-workflow.md)
       + [Aggiungere mappe immagine](/help/assets/image-maps.md)
       + [Riutilizzare le risorse con MSM](/help/assets/reuse-assets-using-msm.md)
-      + [Risorse collegate con [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [Assets connesso con [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
    + Dynamic Medie{#dynamic}
       + [Archivio newsletter per Experience League](/help/assets/dynamic-media-newsletter.md)
       + [Impostazione di Dynamic Media](/help/assets/administering-dynamic-media.md)
       + [Utilizzo di Dynamic Media](/help/assets/dynamic-media.md)
       + [Configurare Dynamic Medie - Modalità Scene7](/help/assets/config-dms7.md)
       + [Facoltativo - Configurare Dynamic Medie - Modalità Scene7, Impostazioni generali](/help/assets/dm-general-settings.md)
-      + [Facoltativo - Configurare Dynamic Medie - Modalità Scene7, Impostazione pubblicazione](/help/assets/dm-publish-settings.md)
+      + [Facoltativo - Configurare Dynamic Medie - Modalità Scene7, Installazione di Publish](/help/assets/dm-publish-settings.md)
       + [Risoluzione dei problemi di Dynamic Medie - Modalità Scene7](/help/assets/troubleshoot-dms7.md)
       + [Configurare un account alias società Dynamic Medie](/help/assets/dm-alias-account.md)
       + [Configurare Dynamic Medie - Modalità ibrida](/help/assets/config-dynamic.md)
@@ -410,7 +410,7 @@ ht-degree: 20%
       + [Invalidare la cache CDN tramite Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
       + [Installare Feature Pack 18912 per la migrazione in blocco delle risorse](/help/assets/bulk-ingest-migrate.md)
       + [Utilizzare i selettori](/help/assets/working-with-selectors.md)
-   + Estendi risorse {#extending}
+   + Estendi Assets {#extending}
       + [Personalizzare ed estendere [!DNL Assets]](/help/assets/extending-assets.md)
       + [Elaborare risorse utilizzando gestori di contenuti multimediali e flussi di lavoro](/help/assets/media-handlers.md)
       + [Estendere la funzionalità di ricerca](/help/assets/searchx.md)
@@ -425,7 +425,7 @@ ht-degree: 20%
       + [Autenticazione per query GraphQL remote sui frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [API GraphQL con frammenti di contenuto - Contenuto di esempio e query](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
       + [[!DNL Assets] sviluppo proxy](/help/assets/proxy.md)
-   + Amministrare risorse {#administer}
+   + Amministrare Assets {#administer}
       + [Formati di file supportati](/help/assets/assets-formats.md)
       + [Facet di ricerca](/help/assets/search-facets.md)
       + [Comprendere i concetti relativi ai metadati](/help/assets/metadata-concepts.md)
@@ -451,9 +451,9 @@ ht-degree: 20%
       + [Utilizza il pacchetto demo per approfondimenti risorse](/help/assets/use-demo-package-for-asset-insights.md)
       + [Configurare Adobe Asset Link](/help/assets/configure-asset-link.md)
       + [Genera rappresentazioni FPO per Adobe InDesign](/help/assets/configure-fpo-renditions.md)
-      + [Best practice per il formato dei file delle risorse](/help/assets/assets-file-format-best-practices.md)
+      + [Best practice per il formato dei file Assets](/help/assets/assets-file-format-best-practices.md)
       + [Best practice per monitorare le risorse](/help/assets/assets-monitoring-best-practices.md)
-      + [Supporto Camera Raw](/help/assets/camera-raw.md)
+      + [supporto Camera Raw](/help/assets/camera-raw.md)
       + [Rilevare il tipo MIME di risorse utilizzando Apache Tika](/help/assets/detect-asset-mime-type-with-tika.md)
       + [Libreria trascodifica immagini](/help/assets/imaging-transcoding-library.md)
       + [Multi-tenancy per raccolte, snippet e modelli di snippet](/help/assets/multi-tenancy.md)
@@ -462,8 +462,8 @@ ht-degree: 20%
    + Brand Portal {#brandportal}
       + [Configurare [!DNL Assets] con [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Pubblicare risorse su [!DNL Brand Portal]](/help/assets/brand-portal-publish-assets.md)
-      + [Pubblicare cartelle in [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
-      + [Pubblicare raccolte in [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
+      + [Cartelle Publish in [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
+      + [Raccolte Publish in [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
    + Frammenti di contenuto {#content-fragments}
       + [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
       + [Distribuzione headless con frammenti di contenuto e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -478,7 +478,7 @@ ht-degree: 20%
       + [Albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Anteprima - Rappresentazione JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [Creazione di progetti di traduzione per frammenti di contenuto](/help/assets/creating-translation-projects-for-content-fragments.md)
-   + Gestisci risorse {#managing}
+   + Gestire Assets {#managing}
       + [Gestire le risorse digitali](/help/assets/manage-assets.md)
       + [Gestire le raccolte](/help/assets/manage-collections.md)
       + [Selettore risorse](/help/assets/asset-selector.md)
@@ -489,7 +489,7 @@ ht-degree: 20%
       + [Preparare le risorse per la traduzione](/help/assets/preparing-assets-for-translation.md)
       + [Scaricare risorse da Experience Manager](/help/assets/download-assets-from-aem.md)
       + [Lightbox](/help/assets/light-box.md)
-      + [Informazioni su Assets](/help/assets/asset-insights.md)
+      + [Approfondimenti su Assets](/help/assets/asset-insights.md)
       + [Abilitare gli approfondimenti sulle risorse tramite DTM](/help/assets/use-dtm-for-asset-insights.md)
       + [Configurare informazioni approfondite sulle risorse](/help/assets/configure-asset-insights.md)
       + [Archiviare ed estrarre le risorse](/help/assets/check-out-and-submit-assets.md)
@@ -519,7 +519,7 @@ ht-degree: 20%
          + [Tutorial: creare un modello di dati modulo](/help/forms/using/create-form-data-model.md)
          + [Esercitazione: Applicare regole ai campi modulo adattivo l](/help/forms/using/apply-rules-to-adaptive-form-fields.md)
          + [Esercitazione: Personalizzare lo stile del modulo adattivo](/help/forms/using/style-your-adaptive-form.md)
-         + [Tutorial: pubblicare il modulo adattivo](/help/forms/using/publish-your-adaptive-form.md)
+         + [Tutorial: crea un Publish per il modulo adattivo](/help/forms/using/publish-your-adaptive-form.md)
       + Tutorial: crea la prima comunicazione interattiva {#create-first-interactive-communication}
          + [Tutorial: crea la tua prima comunicazione interattiva](/help/forms/using/create-your-first-interactive-communication.md)
          + [Tutorial: pianificare la comunicazione interattiva](/help/forms/using/planning-interactive-communications.md)
@@ -752,8 +752,8 @@ ht-degree: 20%
       + [Configurare il progetto Xcode e creare l’app iOS](/help/forms/using/setup-xcode-project-build-installer.md)
       + [Creazione di un’app AEM Forms sicura per iOS](/help/forms/using/building-secure-mobile-workspace-app.md)
       + [Configurare il progetto Visual Studio e creare l&#39;app Windows](/help/forms/using/setup-visual-studio-project-build-installer.md)
-      + [Configurare il progetto Android Studio e creare l’app Android](/help/forms/using/setup-android-studio-project-build-installer.md)
-      + [Creare l’app Android di AEM Forms](/help/forms/using/setup-eclipse-project-build-installer.md)
+      + [Configurare il progetto Android studio e creare l’app Android](/help/forms/using/setup-android-studio-project-build-installer.md)
+      + [Creare l’app AEM Forms Android](/help/forms/using/setup-eclipse-project-build-installer.md)
       + [Distribuire l’app AEM Forms](/help/forms/using/distribute-mobile-workspace-app.md)
       + [Personalizzazione del gesto](/help/forms/using/gesture-customization.md)
       + [Personalizzazione branding](/help/forms/using/branding-customization.md)
@@ -809,7 +809,7 @@ ht-degree: 20%
       + [Crea corrispondenza](/help/forms/using/create-correspondence.md)
       + [Funzioni remote in Expression Builder](/help/forms/using/expression-builder.md)
       + [Gestisci immagini firma agente](/help/forms/using/manage-agent-signature-images.md)
-      + [Post-elaborazione di lettere e comunicazioni interattive](/help/forms/using/submit-letter-topostprocess.md)
+      + [Elaborazione Post di lettere e comunicazioni interattive](/help/forms/using/submit-letter-topostprocess.md)
       + [Aggiungere un’azione personalizzata alla vista Elenco risorse](/help/forms/using/add-custom-action-asset-listing-view.md)
       + [Aggiungi azione/pulsante personalizzato nell’interfaccia utente per la creazione di corrispondenza](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
       + [Aggiungere proprietà personalizzate alle risorse di Gestione della corrispondenza](/help/forms/using/add-custom-properties-cm-assets.md)
@@ -831,7 +831,7 @@ ht-degree: 20%
       + [Analytics utilizzando Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
       + [Visualizzare e comprendere i rapporti di AEM Forms Analytics](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
       + [Creare e gestire test A/B per i moduli adattivi](/help/forms/using/ab-testing-adaptive-forms.md)
-   + Pubblicare ed elaborare AEM Forms {#publish-process-aem-forms}
+   + Publish ed elabora AEM Forms {#publish-process-aem-forms}
       + [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)
       + [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
       + [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md)
@@ -871,13 +871,19 @@ ht-degree: 20%
    + Forms Designer {#use-forms-designer}
       + [Guida di Forms Designer](/help/forms/using/forms-designer-help.md)
       + [Utilizzo di Designer](https://www.adobe.com/go/learn_aemforms_designer_65_it)
-      + [Tutorials di avvio rapido di Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+      + [Tutorials Designer Quick Start](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
       + [Esempi di Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
       + [Nozioni di base sugli script di Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-      + [Riferimento script di Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-      + [Riferimento FormCalc Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+      + [Riferimento script Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+      + [Riferimento Designer FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Utilizzo della firma scarabocchio nei moduli di HTML5](/help/forms/using/scribble-signature.md)
       + [Modifica del contenuto di Page Zero in Designer](/help/forms/using/changing-page-zero-content-designer.md)
+      + [Best practice per l’accessibilità]{#accessibility-best-practices}
+         + [Introduzione](/help/forms/using/introduction-accessibility-forms-designer.md)
+         + [Best practice per la creazione di moduli](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+         + [Tecniche per la verifica dell&#39;accessibilità dei moduli](/help/forms/using/techniques-for-testing-form-accessibility.md)
+         + [Mappatura tra linee guida e best practice](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+         + [Collegamenti utili](/help/forms/using/useful-links-accessibility-forms-designer.md)
    + Personalizzare AEM Forms {#customize-aem-forms}
       + [Framework di aspetto per moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md)
       + [Creazione di un modello di modulo adattivo personalizzato](/help/forms/using/custom-adaptive-forms-templates.md)
@@ -1086,7 +1092,7 @@ ht-degree: 20%
       + [Plug-in AEM per il debug dei moduli adattivi](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [Riferimento API Java di AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
       + [Riferimento API Java di AEM Forms su JEE](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
-      + [API di bridge per moduli HTML5](/help/forms/using/form-bridge-apis.md)
+      + [API Bridge per moduli HTML5](/help/forms/using/form-bridge-apis.md)
       + [Riferimento API della libreria JavaScript per Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [Servizio assemblatore e riferimento DDX](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
       + [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65)
@@ -1099,33 +1105,33 @@ ht-degree: 20%
          + Sviluppo di SPI per AEM Forms {#developing-spis-aem-forms}
             + [Creazione di un handler per l’invito di utenti esterni](/help/forms/developing/creating-invite-external-users-handler.md)
          + Guida introduttiva all’API Java: esempi di codice {#java-api-quick-start-code-examples}
-            + [Guida rapida (SOAP) di Application Manager Client JavaAPI](/help/forms/developing/application-manager-client-java-api.md)
-            + [Servizio Application Manager - Guida introduttiva JavaAPI (SOAP)](/help/forms/developing/application-manager-service-java-api.md)
-            + [Servizio assemblatore API Java QuickStart (SOAP)](/help/forms/developing/assembler-service-java-api-quick.md)
-            + [Servizio estensioni Acrobat Reader DC - Guida introduttiva API Java (SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
+            + [Guida introduttiva di Application Manager Client JavaAPI (SOAP)](/help/forms/developing/application-manager-client-java-api.md)
+            + [Guida introduttiva JavaAPI Service di Application Manager (SOAP)](/help/forms/developing/application-manager-service-java-api.md)
+            + [Servizio assemblatore QuickStart (SOAP) per API Java](/help/forms/developing/assembler-service-java-api-quick.md)
+            + [Servizio Acrobat Reader DC extensions API Java Quick Start (SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
             + [Servizio di backup e ripristino APIQuesto avvio](/help/forms/developing/backup-restore-service-api-quick.md)
-            + [Codice a barre Forms Service Java APIQuick Start (SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
-            + [Componenti e servizi Java APIQuick Start (SOAP)](/help/forms/developing/components-services-java-api-quick.md)
+            + [Codice a barre Forms Service Java APIQuick Start(SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
+            + [Componenti e servizi Java APIQuick Start(SOAP)](/help/forms/developing/components-services-java-api-quick.md)
             + [QuickStart(SOAP) per convertire l’API Java di PDF Service](/help/forms/developing/convert-pdf-service-java-api.md)
-            + [Servizio credenziali API Java QuickStart (SOAP)](/help/forms/developing/credential-service-java-api-quick.md)
+            + [Servizio credenziali - Guida rapida API Java (SOAP)](/help/forms/developing/credential-service-java-api-quick.md)
             + [Servizio Distiller QuickStart per API Java (SOAP)](/help/forms/developing/distiller-service-java-api-quick.md)
-            + [Servizio DocConverter API Java QuickStart (SOAP)](/help/forms/developing/docconverter-service-java-api-quick.md)
+            + [Servizio DocConverter API Java QuickStart(SOAP)](/help/forms/developing/docconverter-service-java-api-quick.md)
             + [Servizio Document Management (obsoleto)Guida rapida all’API Java (SOAP)](/help/forms/developing/document-management-service-deprecated-java.md)
-            + [Guida introduttiva di Document Security Service JavaAPI (SOAP)](/help/forms/developing/document-security-service-java-api.md)
+            + [Guida introduttiva JavaAPI di Document Security Service (SOAP)](/help/forms/developing/document-security-service-java-api.md)
             + [Servizio QuickStart (SOAP) per API Java del servizio di crittografia](/help/forms/developing/encryption-service-java-api-quick.md)
-            + [QuickStart (SOAP) API Java del Registro degli endpoint](/help/forms/developing/endpoint-registry-java-api-quick.md)
+            + [QuickStart(SOAP) API Java del Registro degli endpoint](/help/forms/developing/endpoint-registry-java-api-quick.md)
             + [Servizio di integrazione dei dati dei moduli Quick Start JavaAPI (SOAP)](/help/forms/developing/form-data-integration-service-java.md)
             + [Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md)
-            + [QuickStart (SOAP) per generare API Java di PDF Service](/help/forms/developing/generate-pdf-service-java-api.md)
+            + [QuickStart(SOAP) per generare l’API Java di PDF Service](/help/forms/developing/generate-pdf-service-java-api.md)
             + [Avvio rapido API di chiamata](/help/forms/developing/invocation-api-quick-starts.md)
-            + [Guida introduttiva dell’API Java LiveCycleProcess (SOAP)](/help/forms/developing/livecycleprocess-java-api-soap-quick.md)
+            + [Guida introduttiva all’API Java LiveCycleProcess (SOAP)](/help/forms/developing/livecycleprocess-java-api-soap-quick.md)
             + [Servizio di output - Guida introduttiva API Java (SOAP)](/help/forms/developing/output-service-java-api-quick.md)
-            + [Servizio Utilità PDF Java APIQuick Start (SOAP)](/help/forms/developing/pdf-utilities-service-java-api.md)
+            + [Servizio Utilità PDF Java APIQuick Start(SOAP)](/help/forms/developing/pdf-utilities-service-java-api.md)
             + [Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md)
-            + [Servizio QuickStart (SOAP) per API Java di Signature Service](/help/forms/developing/signature-service-java-api-quick.md)
-            + [Servizio Task Manager - Guida rapida API Java (SOAP)](/help/forms/developing/task-manager-service-java-api.md)
-            + [Guida introduttiva API Java di User Manager (SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
-            + [Servizio utilità XMP Java APIQuick Start (SOAP)](/help/forms/developing/xmp-utilities-service-java-api.md)
+            + [QuickStart (SOAP) per API Java di Signature Service](/help/forms/developing/signature-service-java-api-quick.md)
+            + [Guida rapida (SOAP) dell’API Java del servizio Task Manager](/help/forms/developing/task-manager-service-java-api.md)
+            + [Guida introduttiva all’API Java di User Manager (SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
+            + [Servizio di utilità XMP Java APIQuick Start(SOAP)](/help/forms/developing/xmp-utilities-service-java-api.md)
          + Richiamare AEM Forms su JEE tramite API {#invoking-aem-forms-jee-apis}
             + [Richiamare AEM Forms tramite richieste REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
             + [Richiamare AEM Forms tramite servizi Web](/help/forms/developing/invoking-aem-forms-using-web.md)
@@ -1189,7 +1195,7 @@ ht-degree: 20%
       + [Passaggi aggiuntivi per ricevere e-mail con allegato per la versione adattiva di Forms On JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
       + [Impossibile convertire file Word o Excel in PDF su Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [Impossibile aprire PDF forms basati su XFA in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer o Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
-      + [Impossibile ripristinare l’archivio CRX](/help/forms/using/restore-crx-repository.md)
+      + [Impossibile ripristinare l’archivio di CRX](/help/forms/using/restore-crx-repository.md)
       + [Errori di servizio non disponibile dopo l’installazione del service pack AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
       + [Problema di installazione del service pack AEM Forms JEE 6.5.15.0 nell’ambiente JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Elaborazione di documenti anche se il server AEM Forms non è completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
@@ -1208,7 +1214,7 @@ ht-degree: 20%
       + [Passaggio delle credenziali tramite intestazioni WS-Security](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
    + [Introduzione e panoramica](/help/commerce/cif/introduction.md)
-   + [Modifiche di rilievo apportate ai contenuti e al commercio dell’AEM](/help/commerce/cif/changes.md)
+   + [Modifiche di rilievo apportate al contenuto dell’AEM e al Commerce](/help/commerce/cif/changes.md)
    + Integrazioni {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Soluzione Commerce di terze parti](/help/commerce/cif/integrating/third-party.md)
@@ -1445,7 +1451,7 @@ ht-degree: 20%
          + [Strumenti AEM Modernization Tools](/help/sites-developing/modernization-tools.md)
          + [Editor finestre di dialogo](/help/sites-developing/dialog-editor.md)
          + [Strumento di conversione finestra di dialogo](/help/sites-developing/dialog-conversion.md)
-         + [Sviluppo con CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md)
+         + [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
          + [Gestione dei pacchetti tramite Maven](/help/sites-developing/vlt-mavenplugin.md)
          + [Come sviluppare progetti AEM utilizzando Eclipse](/help/sites-developing/howto-projects-eclipse.md)
          + [Come creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md)
@@ -1597,7 +1603,7 @@ ht-degree: 20%
          + [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md)
          + [Utilizzo dello strumento di migrazione CRX2Oak](/help/sites-deploying/using-crx2oak.md)
          + [Attività di manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Controlli post-aggiornamento e risoluzione dei problemi](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [Verifiche e risoluzione dei problemi relativi all&#39;aggiornamento di Post](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Aggiornamento del Forms di ricerca personalizzato](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Aggiornamenti sostenibili](/help/sites-deploying/sustainable-upgrades.md)
          + [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md)
@@ -1607,7 +1613,7 @@ ht-degree: 20%
          + [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md)
          + [Ristrutturazione dell’archivio comune in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio Sites in AEM 6.5](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
-         + [Ristrutturazione dell&#39;archivio di asset in AEM 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
+         + [Ristrutturazione dell’archivio Assets nell’AEM 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio Dynamic Medie nell’AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell’archivio Forms nell’AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
          + [Ristrutturazione dell&#39;archivio E-Commerce nell&#39;AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
