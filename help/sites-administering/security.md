@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5409'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ Le tabelle seguenti elencano ogni elemento insieme a:
   <tr>
    <td>collaboratore</td>
    <td>Gruppo</td>
-   <td><p>Privilegi di base che consentono all’utente di scrivere contenuti (solo come in, funzionalità ).</p> <p>Non alloca privilegi alla struttura /content. Deve essere allocato per i singoli gruppi o utenti.</p> </td>
+   <td><p>Privilegi di base che consentono all’utente di scrivere contenuti (come in, solo i privilegi richiesti per la funzionalità di base).</p> <p>Non alloca privilegi per l'accesso alla struttura /content. Questi devono essere assegnati in modo specifico per i singoli gruppi o utenti.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -179,7 +179,7 @@ Le azioni possono essere eseguite su una pagina (risorsa). Per ogni pagina della
     </ul> <p>Se <strong>modifica</strong> è negato, le sottostrutture sotto jcr:content sono escluse perché la creazione di jcr:content e dei relativi nodi secondari è considerata una modifica di pagina. Questa regola si applica solo ai nodi che definiscono un nodo figlio jcr:content.</p> </td>
   </tr>
   <tr>
-   <td>Eliminare</td>
+   <td>Elimina</td>
    <td><p>L’utente può:</p>
     <ul>
      <li>elimina i paragrafi esistenti dalla pagina o da qualsiasi pagina figlia.</li>
@@ -242,7 +242,7 @@ Gli elenchi di controllo di accesso sono costituiti dalle singole autorizzazioni
 
 Le autorizzazioni vengono applicate anche a tutte le pagine figlie.
 
-Se un&#39;autorizzazione non viene ereditata dal nodo padre ma include almeno una voce locale, alla casella di controllo vengono aggiunti i simboli seguenti. Una voce locale viene creata nell’interfaccia CRX 2.2 (attualmente è possibile creare ACL con caratteri jolly solo in CRX).
+Se un&#39;autorizzazione non viene ereditata dal nodo padre ma include almeno una voce locale, alla casella di controllo vengono aggiunti i simboli seguenti. Una voce locale viene creata nell’interfaccia di CRX 2.2 (attualmente è possibile creare ACL con caratteri jolly solo in CRX).
 
 Per un&#39;azione in un determinato percorso:
 
@@ -293,7 +293,7 @@ Di seguito sono riportati alcuni consigli sulla gestione degli elenchi di contro
 
   L’Adobe consiglia di utilizzare Consenti anziché Rifiuta visualizzazione [Best practice](#best-practices).
 
-Prima di modificare una di queste autorizzazioni, accertati di comprendere come funzionano e come si relazionano tra loro. Consulta la documentazione di CRX che illustra come WCM per AEM [valuta i diritti di accesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), e esempi sulla configurazione degli elenchi di controllo di accesso.
+Prima di modificare una di queste autorizzazioni, accertati di comprendere come funzionano e come si relazionano tra loro. Consulta la documentazione di CRX che illustra come AEM WCM [valuta i diritti di accesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), e esempi sulla configurazione degli elenchi di controllo di accesso.
 
 ### Autorizzazioni {#permissions}
 
