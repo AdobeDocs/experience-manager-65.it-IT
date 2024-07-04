@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
+source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4070'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Alcune delle funzioni e dei miglioramenti principali di questa versione includon
 * **API AutoTag per l’accessibilità dei PDF**: AEM Forms su OSGi ora supporta la nuova API di tag automatici per migliorare le PDF per gli standard di accessibilità aggiungendo tag: paragrafi ed elenchi. Rende i PDF più accessibili agli utenti con tecnologia assistiva.
 * **Supporto PNG a 16 bit**: il servizio ImageToPdf di PDF Generator ora supporta la conversione di PNG con una profondità del colore di 16 bit.
 * **Applicare artefatti a singoli blocchi di testo in XDP**: Forms Designer ora consente agli utenti di configurare le impostazioni sui singoli blocchi di testo nei file XDP. Questa funzionalità consente di controllare gli elementi trattati come artefatti nei PDF risultanti. Questi elementi, come intestazioni e piè di pagina, sono resi accessibili per le tecnologie per l’accessibilità. Le funzioni chiave includono contrassegnare i blocchi di testo come artefatti e incorporare queste impostazioni nei metadati XDP. Il servizio di output di Forms applica queste impostazioni durante la generazione di PDF, garantendo l&#39;assegnazione di tag PDF/UA corretti.
-* **AEM Forms Designer è certificato con `GB18030:2022` standard**: con `GB18030:2022` Certificazione, ora Forms Designer supporta il set di caratteri Unicode cinese che consente di inserire caratteri cinesi in tutti i campi e le finestre di dialogo modificabili.
+* **AEM Forms Designer è certificato con `GB18030:2022` standard**: con `GB18030:2022` Certificazione, ora Forms Designer supporta il set di caratteri Unicode cinesi che consente di inserire caratteri cinesi in tutti i campi e le finestre di dialogo modificabili.
 * **Supporto per la route WebToPDF nel server JEE**: il servizio PDF Generator ora supporta la route WebToPDF per la conversione di file HTML in documenti PDF su JEE, oltre alle route Webkit e WebCapture (solo Windows). La route WebToPDF è già disponibile su OSGi, ma ora è stata estesa per includere anche in JEE. Su entrambe le piattaforme JEE e OSGi, il servizio PDF Generator supporta le seguenti route tra diversi sistemi operativi:
    * **Windows**: WebKit, WebCapture, WebToPDF
    * **Linux**: Webkit, WebToPDF
@@ -152,7 +152,7 @@ Di seguito è riportato l’elenco delle correzioni di accessibilità incluse in
 ### [!DNL Assets]{#assets-6521}
 
 * Se una risorsa viene pubblicata in Brand Portal, lo stato di pubblicazione rimane incoerente. (ASSETS-36807)
-* Le risorse non vengono eliminate quando le elimini da un’istanza tramite una chiamata API. (ASSETS-35131)
+* Gli Assets non vengono eliminati quando li elimini da un’istanza utilizzando una chiamata API. (ASSETS-35131)
 * Quando tenti di importare i metadati, `question mark (?)` sostituisce l’inserimento di caratteri in lingue diverse dall’inglese.  (ASSETS-35091)
 * Quando `dc:title` viene utilizzata con una stringa del tipo di dati, la struttura del contenuto delle risorse non funziona in modo appropriato dopo l’installazione di Service Pack 6.5.19. (ASSETS-34684)
 * Se il nome di una risorsa contiene un carattere speciale, viene visualizzato un errore. (ASSETS-33248)
@@ -161,7 +161,7 @@ Di seguito è riportato l’elenco delle correzioni di accessibilità incluse in
 
 * Nell’AEM 6.5.18, non vengono visualizzati tutti gli hotspot aggiunti a una risorsa quando li modifichi. Tuttavia, tutti gli hotspot funzionano in una risorsa pubblicata, ma non puoi modificarli in un secondo momento, se necessario. (ASSETS-33609)
 * I file EPS più recenti caricati non generano miniature dopo la rielaborazione. (ASSETS-32617)
-* In Strumenti > Risorse > Impostazione pubblicazione Dynamic Medie > Scheda Attributi richiesta, gli input `Width(px)` e `Height(px)` hanno un aspetto diverso in spagnolo, italiano e portoghese. Non sono allineate tra loro per queste posizioni. (ASSETS-31896)
+* In Strumenti > Assets > Dynamic Medie Publish Configurazione > Scheda Richiedi attributi, gli input `Width(px)` e `Height(px)` hanno un aspetto diverso in spagnolo, italiano e portoghese. Non sono allineate tra loro per queste posizioni. (ASSETS-31896)
 * A decorrere dal 1° maggio 2024, Adobe Dynamic Medie ha terminato il supporto per i seguenti elementi:
    * SSL (Secure Socket Layer) 2.0
    * SSL 3.0
@@ -186,7 +186,7 @@ Di seguito è riportato l’elenco delle correzioni di accessibilità incluse in
 
 #### [!DNL Adaptive Forms] {#forms-6520}
 
-* Quando un modulo adattivo viene inviato da un’istanza Adobe Experience Manager Publish a un flusso di lavoro Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati. (FORMS-14209)
+* Quando un modulo adattivo viene inviato da un’istanza di Adobe Experience Manager Publish a un flusso di lavoro di Adobe Experience Manager, il flusso di lavoro non riesce a salvare gli allegati. (FORMS-14209)
 * Quando un utente fa clic su **Stampa su PDF** in AEM Forms Service Pack 15 (6.5.15.0) su OSGi, la convalida lato client non riesce, è evidente dai messaggi di errore visualizzati nella finestra Console strumenti di sviluppo. (FORMS-14029)
 * Quando un utente invia un modulo su AEM 6.5 Forms Service Pack 17 (6.5.17.0), o Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0), la traduzione dei messaggi di ringraziamento non funziona correttamente. Tuttavia, i messaggi vengono tradotti correttamente nel dizionario. (FORMS-13846)
 * Quando un utente visualizza l’anteprima di un modulo con un componente Selezione data, il campo del selettore data non è allineato con gli altri campi del modulo. (FORMS-13763)
@@ -202,7 +202,7 @@ Di seguito è riportato l’elenco delle correzioni di accessibilità incluse in
    * I campi obbligatori o obbligatori del modulo sono accessibili secondo lo standard ANDI. (FORMS-13097)
 
 * Quando un utente tenta di visualizzare un modulo al caricamento della pagina, il rendering non riesce. (FORMS-13594)
-* Il componente del campo di input della data non funziona correttamente in Microsoft Edge nella modalità di compatibilità di Internet Explorer. (FORMS-13170)
+* Il componente del campo di input della data non funziona correttamente in Microsoft Edge in modalità di compatibilità con Internet Explorer. (FORMS-13170)
 * La notifica e-mail bloccata con allegato non è stata inviata quando è stata corretta la [passaggi aggiuntivi per utilizzare l’e-mail con allegati](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) viene eseguito sul server. (FORMS-14227)
 * In AEM Forms Workspace su Service Pack 18 (6.5.18.0), quando un utente aggiunge un commento a un documento caricato, il file del documento viene danneggiato. (FORMS-13735)
 * In AEM Forms Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0) o Service Pack 20 (6.5.20.0), quando un utente tenta di cercare un modulo adattivo dal pannello laterale, la ricerca non riesce. (FORMS-14117)
@@ -290,7 +290,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 #### Oak {#foundation-oak-6521}
 
 * Correzione della regressione delle prestazioni: evita query di intervallo in condizioni simili. (OAK-9481)
-* La nuova versione Oak è la 1.22.20.
+* La nuova versione di Oak è 1.22.20.
 
 #### Platform{#foundation-platform-6521}
 
@@ -442,7 +442,7 @@ Consulta [Funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-fe
        `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
 
 
-* **Correlato a Oak**
+* **Correlato ad Oak**
 Da Service Pack 13 e versioni successive è stato avviato il seguente log degli errori che influisce sulla cache di persistenza:
 
   ```shell
@@ -468,7 +468,7 @@ Da Service Pack 13 e versioni successive è stato avviato il seguente log degli 
       * `cache`
       * `diff-cache`
 
-   1. Installa il Service Pack o riavvia Experience Manager as a Cloud Service.
+   1. Installa il Service Pack o riavvia l’Experience Manager as a Cloud Service.
 Nuove cartelle di `cache` e `diff-cache` vengono create automaticamente e non si verifica più un&#39;eccezione relativa a `mvstore` nel `error.log`.
 
 * Aggiorna le query GraphQL che potrebbero aver utilizzato un nome API personalizzato per il modello di contenuto in modo da utilizzare il nome predefinito del modello di contenuto.
@@ -543,6 +543,10 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 * Se un utente tenta di visualizzare in anteprima una bozza di lettera con dati XML salvati, l’operazione si blocca `Loading` state per alcune lettere specifiche. Per scaricare e installare l’aggiornamento rapido, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) articolo. (FORMS-14521)
 
 * Dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.21.0, il `PaperCapture` Il servizio non riesce a eseguire operazioni OCR (Optical Character Recognition) sui PDF. Il servizio non genera output sotto forma di PDF o file di registro. Per scaricare e installare l’aggiornamento rapido, consulta [Hotfix per Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) articolo. (CQDOC-21680)
+
+* Quando gli utenti eseguono l’aggiornamento da AEM 6.5 Forms Service Pack 18 (6.5.18.0) o AEM 6.5 Forms Service Pack 19 (6.5.19.0) a AEM 6.5 Forms Service Pack 20 (6.5.20.0) o AEM 6.5 Forms Service Pack 21 (6.5.21.0), si verifica un errore di compilazione JSP che impedisce l’apertura o la creazione di moduli adattivi e causa errori anche con altre interfacce di personalizzazione come l’editor di pagine, l’interfaccia utente di AEM AEM Forms AEM e l’editor di flussi di lavoro di. (FORMS-15256)
+
+
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 

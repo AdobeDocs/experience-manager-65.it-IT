@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 2266f67d834341715b7300ff366f93d960110dac
+source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1697'
 ht-degree: 6%
 
 ---
@@ -57,7 +57,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++1 Backup dell&#39;ambiente esistente
 
-1. Eseguire il backup del [Archivio CRX, schema di database e GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
+1. Eseguire il backup del [Archivio CRX, schema database e GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 1. Eseguire il backup di &lt;*AEM_forms_root* cartella >/deploy.
 
 >[!NOTE]
@@ -140,12 +140,9 @@ Passare alla directory appropriata e da una shell e digitare `./aem65_cfp_instal
 
 +++
 
-+++5 Installare il frammento del servlet (AEM Service Pack 6.5.14.0 o precedente) (**Installazione obbligatoria**)
++++5 Installa il frammento del servlet se non è installato (**Passaggio obbligatorio**)
 
->[!NOTE]
->
-> * Se si esegue l&#39;aggiornamento da **AEM Service Pack 6.5.15.0**, l&#39;installazione del **frammento servlet** non è obbligatorio. Per le versioni **AEM Service Pack 6.5.14.0** o prima, è **obbligatorio per l&#39;installazione** il frammento del servlet.
-
+<!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
 Per scaricare e installare il frammento del servlet:
 
