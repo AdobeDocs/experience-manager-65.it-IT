@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
+source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
 workflow-type: tm+mt
-source-wordcount: '4070'
+source-wordcount: '4099'
 ht-degree: 2%
 
 ---
@@ -546,7 +546,10 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
 * Quando gli utenti eseguono l’aggiornamento da AEM 6.5 Forms Service Pack 18 (6.5.18.0) o AEM 6.5 Forms Service Pack 19 (6.5.19.0) a AEM 6.5 Forms Service Pack 20 (6.5.20.0) o AEM 6.5 Forms Service Pack 21 (6.5.21.0), si verifica un errore di compilazione JSP che impedisce l’apertura o la creazione di moduli adattivi e causa errori anche con altre interfacce di personalizzazione come l’editor di pagine, l’interfaccia utente di AEM AEM Forms AEM e l’editor di flussi di lavoro di. (FORMS-15256)
 
-
+  In caso di problemi di questo tipo, effettua le seguenti operazioni per risolverli:
+   1. Passa alla directory `/libs/fd/aemforms/install/` in CRXDE.
+   1. Elimina il bundle con il nome `com.adobe.granite.ui.commons-5.10.26.jar`.
+   1. Riavvia il server AEM.
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
