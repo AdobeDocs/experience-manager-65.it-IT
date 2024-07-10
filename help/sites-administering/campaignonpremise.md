@@ -9,10 +9,10 @@ exl-id: a7281ca0-461f-4762-a631-6bb539596200
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 53%
+source-wordcount: '1564'
+ht-degree: 52%
 
 ---
 
@@ -89,6 +89,10 @@ Il pacchetto di integrazione crea automaticamente l’operatore `aemserver` che 
 
 1. Seleziona l’area di sicurezza appropriata e definisci la maschera IP attendibile in base alle esigenze.
 
+   >[!CAUTION]
+   >
+   >L’area di sicurezza da configurare è **Rete aziendale privata (VPN+LAN)**.
+
 1. Fai clic su **Salva**.
 
 1. Esci dal client di Adobe Campaign.
@@ -155,7 +159,7 @@ AEM adesso può comunicare con Adobe Campaign.
 >
 >Assicurati che il server di Adobe Campaign sia raggiungibile tramite Internet. L&#39;AEM non può accedere alle reti private.
 
-## Configurare la replica nell’istanza di pubblicazione AEM {#replication}
+## Configurare la replica nell’istanza Publish dell’AEM {#replication}
 
 Il contenuto della campagna viene creato dagli autori di contenuti nell’istanza di authoring AEM. In genere questa istanza è disponibile solo internamente all’interno dell’organizzazione. Affinché contenuti come immagini e risorse siano accessibili ai destinatari della campagna, devi pubblicare tali contenuti.
 
